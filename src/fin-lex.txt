@@ -1,0 +1,564 @@
+Multichar_Symbols
+ +N +A +Adv +V
+ +Pron +CS +CC +Interj +Pcle
+ +Pers +Dem +Interr +Refl +Recipr +Rel +Indef
+ +Sg +Pl +Nom +Acc +Gen +Ine +Ill +Ela +Abe +All +Abl
+ +Ess +Tra +Ins +Com +Par
+ +Comp +Superl +Clt
+ +Pass +Ind +Prs +Prt +Imp
+ +Inf  +PrsPrc +PrfPrc
+ +CLB +PUNCT +HYPH
+ p1 t1 k1
+ i2 i3 14 i5
+ %^V %^A %^O %^U
+
+ X1 X2 X3 X4 X5 X6 X7 X8 X9
+ Y1 Y2 Y3 Y4 Y5 Y6 Y7 Y8 Y9
+ Z1 Z2 Z3 Z4 Z5 Z6 Z7 Z8 Z9
+
+
+! Documenting the diacritics
+! X1 WeG
+! X2 WeG and a:0 sodissa
+! X4 WeG matto - maton
+! Y1 WeG and a:o rannoissa
+! Y2 a:0 koira - koiria
+! Y3 a:o kala - kaloja
+! Y4 ':0 parfait'n : parfait
+! Y5 m:n and i:0 lumi - lunta
+! Y6 s:t and i:e käsi - käteen
+! Y7 e:0 in cns stems käsi - kättä
+! Z1 e:i in nom.sg
+! Z2 i:0 i-stems in par,gen pl
+
+! i2 plural i of nouns
+! i3 past tense i of verbs
+! i4 superlative i of adjectives
+! i5 i in conditional isi of verbs
+! ^¤ potecting against e:i word-finally (nalle, liike)
+
+! =================================================
+! Basic lexica, pointing to the other lexicon files
+! =================================================
+  
+LEXICON Root
+ NounRoot ;
+ ProperNoun ;
+ AdjectiveRoot ;
+ VerbRoot ;
+ Adverb ;
+ Subjunction ;
+ Conjunction ;
+ Preposition ;
+ Interjection ;
+! Pronoun ;
+! Numeral ;
+! Punctuation ;
+
+! ======================
+! Sublexica for NounRoot
+! ======================
+
+
+LEXICON 1 ! valo
+ +N: strong-v-stem ;
+ +N:X4 weak-v-stem ;
+ +N: short-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 shortillpl ;
+
+LEXICON 2 ! palvelu
+ +N: strong-v-stem ;
+ +N:X4 weak-v-stem ;
+ +N: short-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:%>i2 longgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 longparpl ;
+ +N+Pl:%>i2 shortillpl ;
+
+LEXICON 3 ! valtio
+ +N: strong-v-stem ;
+ +N:X4 weak-v-stem ;
+ +N: long-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 longgenpl ;
+ +N+Pl:%>i2 longparpl ;
+ +N+Pl:%>i2 shortillpl ;
+
+LEXICON 4 ! laatikko 
+ +N: strong-v-stem ;
+ +N:X4 weak-v-stem ;
+ +N: short-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:%>i2 longgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 longparpl ;
+ +N+Pl:X4%>i2 shortillpl ; ! laatikoihin
+ +N+Pl:%>i2 shortillpl ;  ! laatikkoihin
+
+LEXICON 5 ! risti
+ +N: strong-v-stem ;
+ +N:X4 weak-v-stem ;
+ +N: short-par ;
+ +N: short-ill ;
+ +N+Pl:Z2%>i2 shortgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 shortillpl ;
+
+LEXICON 6 ! paperi, banaani
+ +N: strong-v-stem ;
+ +N:X4 weak-v-stem ;
+ +N: short-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:%>i2 longgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 longparpl ;
+ +N+Pl:%>i2 shortillpl ;
+
+LEXICON 7 ! ovi
+ +N:Z1 nom-strong ; ! 
+ +N: gae-strong ;
+ +N+Sg:%>i2 com ;
+ +N+Pl:%>i2 com ;
+ +N:X1 weak-v-stem ;
+ +N: short-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 shorterillpl ;
+
+LEXICON 8 ! nalle
+ +N:%^¤ strong-v-stem ;
+ +N:X4 weak-v-stem ;
+ +N: short-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:%>i2 oldgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 shortillpl ;
+
+LEXICON 9 ! kala
+ +N: nom-strong ;
+ +Sg+Nom: Px ;
+ +Sg+Gen: Px ;
+ +Sg+Acc: Px ;
+ +Sg+Ess:%>n%^A PxK ;
+ +Pl+Ess:Y3%>i2%>n%^A PxK ;
+ +N+Sg:Y3%>i2 com ;
+ +N+Pl:Y3%>i2 com ;
+ +N:Y1 weak-v-stem ;
+ +N: short-par ;
+ +N: short-ill ;
+ +N+Pl:Y3%>i2 shortgenpl ;
+ +N+Pl:Y3%>i2 oldgenpl ;
+ +N+Pl:Y3%>i2 shortparpl ;
+ +N+Pl:Y3%>i2 shortillpl ;
+
+
+LEXICON 10 ! koira = 9, the diff is in twol-fin
+ +N: nom-strong ;
+ +Sg+Nom: Px ;
+ +Sg+Gen: Px ;
+ +Sg+Acc: Px ;
+ +Sg+Ess:%>n%^A PxK ;
+ +Pl+Ess:Y2%>i2%>n%^A PxK ;
+ +N+Sg:Y2%>i2 com ;
+ +N+Pl:Y2%>i2 com ;
+ +N:X2 weak-v-stem ;
+ +N: short-par ;
+ +N: short-ill ;
+ +N+Pl:Y2%>i2 shortgenpl ;
+ +N+Pl:Y2%>i2 oldgenpl ;
+ +N+Pl:Y2%>i2 shortparpl ;
+ +N+Pl:Y2%>i2 shorterillpl ;
+
+LEXICON 11 ! omena
+ +N: strong-v-stem ;
+ +N:X4 weak-v-stem ;
+ +N: short-par ;
+ +N: short-ill ;
+ +N+Pl:Y2%>i2 shortgenpl ;
+ +N+Pl:Y3%>i2 longgenpl ;
+ +N+Pl:%>i2 oldgenpl ;
+ +N+Pl:Y2%>i2 shortparpl ;
+ +N+Pl:Y2%>i2 shortillpl ;
+ +N+Pl:Y3%>i2 shorterillpl ;
+
+LEXICON 12 ! kulkija
+ +N: strong-v-stem ;
+ +N:X4 weak-v-stem ;
+ +N: short-par ;
+ +N: short-ill ;
+ +N+Pl:Y3%>i2 longgenpl ;
+ +N+Pl:%>i2 oldgenpl ;
+ +N+Pl:Y3%>i2 longparpl ;
+ +N+Pl:Y3%>i2 shortillpl ;
+
+LEXICON 13 ! katiska
+ +N: strong-v-stem ;
+ +N:X4 weak-v-stem ;
+ +N: short-par ;
+ +N: short-ill ;
+ +N+Pl:Y3%>i2 shortgenpl ;
+ +N+Pl:Y3%>i2 longgenpl ;
+ +N+Pl:%>i2 oldgenpl ;
+ +N+Pl:Y3%>i2 longparpl ;
+ +N+Pl:Y3%>i2 shortparpl ;
+ +N+Pl:Y3%>i2 shortillpl ;
+
+LEXICON 18 ! maa (not complete)
+ +N: strong-v-stem ;
+ +N: weak-v-stem ;
+ +N: long-par ;
+ +N: long-ill ;
+ +N+Pl:%>i2 longgenpl ;
+ +N+Pl:%>i2 longparpl ;
+ +N+Pl:%>i2 shortillpl ;
+
+LEXICON 19 ! suo
+ +N: strong-v-stem ;
+ +N: weak-v-stem ;
+ +N: long-par ;
+ +N: long-ill ;
+ +N+Pl:%>i2 longgenpl ;
+ +N+Pl:%>i2 longparpl ;
+ +N+Pl:%>i2 shortillpl ;
+
+LEXICON 20 ! filee
+ +N: strong-v-stem ;
+ +N: weak-v-stem ;
+ +N: long-par ;
+ +N: long-ill ;
+ +N: longer-ill ;
+ +N+Pl:%>i2 longgenpl ;
+ +N+Pl:%>i2 longparpl ;
+ +N+Pl:%>i2 shortillpl ;
+ +N+Pl:%>i2 longerillpl ;
+
+LEXICON 21 ! rosé
+ +N: strong-v-stem ;
+ +N: weak-v-stem ;
+ +N: long-par ;
+ +N: long-ill ;
+ +N+Pl:%>i2 d-longgenpl ;
+ +N+Pl:%>i2 longparpl ;
+ +N+Pl:%>i2 shortillpl ;
+
+LEXICON 22 ! parfait
+ +N:'Y4 strong-v-stem ;
+ +N:' weak-v-stem ;
+ +N:' long-par ;
+ +N:' long-ill ;
+ +N+Pl:'%>i2 d-longgenpl ;
+ +N+Pl:'%>i2 longparpl ;
+ +N+Pl:'%>i2 shortillpl ;
+
+LEXICON 24 ! uni
+ +N:Z1 nom-strong ;
+ +N: gae-strong ;
+ +N+Sg:%>i2 com ;
+ +N+Pl:%>i2 com ;
+ +N:X1 weak-v-stem ;
+ +N:Y5 long-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:Y5 consgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 shorterillpl ;
+
+LEXICON 25 ! toimi
+ +N:Z1 nom-strong ;
+ +N: gae-strong ;
+ +N+Sg:%>i2 com ;
+ +N+Pl:%>i2 com ;
+ +N:X1 weak-v-stem ;
+ +N:Y5 long-par ; ! tointa
+ +N: short-par ; ! toimea
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:Y5 consgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 shorterillpl ;
+
+LEXICON 27 ! käsi
+ +N:Z1 nom-strong ; ! käsi
+ +N: gae-strong ; ! kätenä
+ +N+Sg:%>i2 com ; ! käsineen
+ +N+Pl:%>i2 com ;
+ +N:X4 weak-v-stem ; ! käden
+ +N:Y7 long-par ; ! kättä
+ +N: short-ill ; ! käteen
+ +N+Pl:%>i2 shortgenpl ; ! käsien
+ +N+Pl:Y7 consgenpl ; ! kätten
+ +N+Pl:%>i2 shortparpl ; !käsiä
+ +N+Pl:%>i2 shorterillpl ; ! käsiin
+
+
+LEXICON 28 ! kynsi
+ +N: nom-strong ;
+ +N: gae-strong ;
+ +N+Sg:%>i2 com ;
+ +N+Pl:%>i2 com ;
+ +N:X4 weak-v-stem ;
+ +N:Y7 long-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:Y5 consgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 shorterillpl ;
+
+
+LEXICON 29 ! lapsi
+ +N: nom-strong ;
+ +N: gae-strong ;
+ +N+Sg:%>i2 com ;
+ +N+Pl:%>i2 com ;
+ +N: weak-v-stem ;
+ +N:Y5 long-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:Y5 consgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 shorterillpl ;
+
+LEXICON 30 ! veitsi
+ 29 ;
+ ! why is 30 a separate lexicon?
+ ! PS has lasten, lapsien but
+ ! veitsien, veisten. Thus, the same
+ ! forms, but a different order (!)
+
+LEXICON 32 ! sisar 
+ +N: nom-strong ;
+ +N: gae-strong ;
+ +N+Sg:%>i2 com ;
+ +N+Pl:%>i2 com ;
+ +N: weak-v-stem ;
+ +N:Y5 long-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:Y5 consgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 shorterillpl ;
+
+LEXICON 33 ! kytkin
+ +N: nom-strong ;
+ +N: gae-strong ;
+ +N+Sg:%>i2 com ;
+ +N+Pl:%>i2 com ;
+ +N: weak-v-stem ;
+ +N:Y5 long-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:Y5 consgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 shorterillpl ;
+
+LEXICON 38 ! nainen
+ +N: nom-strong ;
+ +N: gae-strong ;
+ +N+Sg:%>i2 com ;
+ +N+Pl:%>i2 com ;
+ +N: weak-v-stem ;
+ +N:Y5 long-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:Y5 consgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 shorterillpl ;
+
+LEXICON 39 ! vastaus
+ +N: nom-strong ;
+ +N: gae-strong ;
+ +N+Sg:%>i2 com ;
+ +N+Pl:%>i2 com ;
+ +N: weak-v-stem ;
+ +N:Y5 long-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:Y5 consgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 shorterillpl ;
+
+
+
+
+! Basic paradigms
+! ===============
+
+! Basic vowel stems
+! -----------------
+
+LEXICON strong-v-stem
+ nom-strong ;
+ gae-strong ;
+ +Sg:%>i2 com ;
+ +Pl:%>i2 com ;
+
+LEXICON weak-v-stem
+ +Sg+Gen:%>n K ;
+ +Sg+Acc:%>n K ;
+ +Pl+Nom:%>t K ;
+ +Pl+Ins:%>i2%>n K ;
+ +Pl+Ins:%>i2 Px ;
+ +Sg: sgpl-cases ;    ! these two lexica for cases with
+ +Pl:%>i2 sgpl-cases ; ! the same affix in sg and pl
+
+
+! Sublexica for the vowel stems
+! - - - - - - - - - - - - - - - 
+
+LEXICON nom-strong
+ +Sg+Nom: K ;
+
+LEXICON gae-strong
+ +Sg+Nom: Px ;
+ +Sg+Gen: Px ;
+ +Sg+Acc: Px ;
+ +Sg+Ess:%>n%^A PxK ;
+ +Pl+Ess:%>i2%>n%^A PxK ;
+ 
+LEXICON sgpl-cases
+ +Ine:%>ss%^A PxxK ;
+ +Ela:%>st%^A PxxK ;
+ +Ade:%>ll%^A PxxK ;
+ +All:%>lle PxxK ;
+ +Abl:%>lt%^A PxxK ;
+ +Tra:%>ksi K ;
+ +Tra:%>kse Pxx ;
+ +Abe:%>tt%^A PxK ;
+
+LEXICON com
+ +Com:%>ne Pxx ; ! Not to K, since Px must be present
+                 ! Note that adjectives nave -ine without Px
+
+
+! Lexica for the non-uniform cases
+! --------------------------------
+
+LEXICON short-par
+ +Sg+Par:%>%^A PxK ;
+! does not handle valoaan vs. *salaaan
+
+LEXICON long-par
+ +Sg+Par:%>t%^A PxK ;
+
+LEXICON short-ill
+ +Sg+Ill:%>%^V n-PxK ;
+
+LEXICON long-ill
+ +Sg+Ill:%>h%^V n-PxK ;
+
+LEXICON longer-ill
+ +Sg+Ill:%>s%^V%^V n-PxK ;
+
+LEXICON oldgenpl
+ +Gen:%> n-PxK ;
+
+LEXICON shortgenpl
+ +Gen:%>e n-PxK ;
+
+LEXICON longgenpl
+ d-longgenpl ;
+ tt-longgenpl ;
+
+LEXICON d-longgenpl
+ +Gen:%>de n-PxK ;
+
+LEXICON tt-longgenpl
+ +Gen:%>tte n-PxK ;
+
+LEXICON consgenpl
+ +Gen:%>te n-PxK ;
+
+LEXICON shortparpl
+ +Par:%>%^A K ;
+
+LEXICON longparpl
+ +Par:%>%t^A K ;
+
+LEXICON shortillpl
+ +Ill:%>hi n-PxK ;
+
+LEXICON shorterillpl
+ +Ill:%>i2 n-PxK ;
+
+LEXICON longerillpl
+ +Pl+Ill:%>s%^V%^V n-PxK ;
+
+! Sublexica for possessive suffixes
+! ---------------------------------
+
+LEXICON n-PxK
+ :n K ;
+ Px ;
+
+LEXICON PxK ! only -nsA
+ K ;
+ Px ;
+
+LEXICON PxxK ! also -Vn
+ K ;
+ Px ;
+ Px-Vn ;
+
+LEXICON Pxx
+ Px ;
+ Px-Vn ;
+
+LEXICON Px
+ +PxSg1:%>ni K ;
+ +PxSg2:%>si K ;
+ +PxSg3:%>ns%^A K ;
+ +PxPl1:%>mme K ;
+ +PxPl2:%>nne K ;
+ +PxPl3:%>ns%^A K ;
+
+
+LEXICON Px-Vn
+ +PxSg3:%>%^Vn K ;
+ +PxPl3:%>%^Vn K ;
+
+LEXICON K
+ # ;
+ +Clt:%>k%^O # ;
+ +Clt:%>h%^An # ;
+ +Clt:%>p%^A # ;
+ +Clt:%>p%^As # ;
+ +Clt:%>kin # ;
+ +Clt:%>k%^A%^An # ;
+
+! =====================
+! LEXICA FOR VERB ROOTS
+! =====================
+
+
+! -----------
+! Auxiliaries
+! -----------
+
+LEXICON neg
+ +Ind:e indneg ;
+ +Imp:%^Al impneg ;
+
+LEXICON indneg
+ +Sg1:%>n K ;
+ +Sg2:%>t K ;
+ +Sg3:%>i2 K ;
+ +Pl1:%>mme K ;
+ +Pl2:%>tte K ;
+ +Pl3:%>i2v%^At K ;
+
+LEXICON impneg
+ +Sg2:%>%^A K ;
+ +Sg3:%>k%^O%^On K ;
+ +Pl1:%>k%^A%^Amme K ;
+ +Pl2:%>k%^A%^Atte K ;
+ +Pl3:%>k%^O%^Ot K ;
+
