@@ -1,0 +1,14 @@
+xfst[0]: load ../bin/fin.old
+xfst[1]: lower-side
+21.0 Kb. 387 states, 1201 arcs, 125554 paths.
+xfst[1]: define old
+Defined old: 21.0 Kb. 387 states, 1201 arcs, 125554 paths.
+xfst[0]: clear
+xfst[0]: load ../bin/fin.fst
+xfst[1]: lower-side
+21.2 Kb. 391 states, 1210 arcs, 126625 paths.
+xfst[1]: define new
+Defined new: 21.2 Kb. 391 states, 1210 arcs, 126625 paths.
+xfst[0]: regex new - old ;
+2.9 Kb. 55 states, 136 arcs, 1071 paths.
+xfst[1]: write text > words.added

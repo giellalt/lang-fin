@@ -1,0 +1,30 @@
+LEXICON Subjunction
+koska subj ;
+
+LEXICON subj
+ +CS: # ;
+
+LEXICON Conjunction
+eli conjunctiontag ;
+ja conjunctiontag ;
+tai conjunctiontag ;
+vai conjunctiontag ;
+
+
+LEXICON conjunctiontag
+ +CC: # ;
+
+LEXICON Interjection
+hyi ij ;
+
+LEXICON ij
+ +Interj: # ;
+
+!LEXICON Pronoun
+! # ;
+
+!LEXICON Numeral 
+! # ;
+
+!LEXICON Punctuation
+! # ;
