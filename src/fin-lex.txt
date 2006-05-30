@@ -5,7 +5,7 @@ Multichar_Symbols
  +Sg +Pl +Nom +Acc +Gen +Ine +Ill +Ela +Abe +All +Abl
  +Ess +Tra +Ins +Com +Par
  +Comp +Superl +Clt
- +Pass +Ind +Prs +Prt +Imp
+ +Pass +Ind +Prs +Prt +Imp +Cond +Pot
  +Inf  +PrsPrc +PrfPrc
  +CLB +PUNCT +HYPH
  p1 t1 k1
@@ -26,8 +26,8 @@ Multichar_Symbols
 ! Y3 a:o kala - kaloja
 ! Y4 ':0 parfait'n : parfait
 ! Y5 m:n and i:0 lumi - lunta
-! Y6 s:t and i:e käsi - käteen
-! Y7 e:0 in cns stems käsi - kättä
+! Y6 s:t and i:e kÃ¤si - kÃ¤teen
+! Y7 e:0 in cns stems kÃ¤si - kÃ¤ttÃ¤
 ! Z1 e:i in nom.sg
 ! Z2 i:0 i-stems in par,gen pl
 
@@ -35,7 +35,7 @@ Multichar_Symbols
 ! i3 past tense i of verbs
 ! i4 superlative i of adjectives
 ! i5 i in conditional isi of verbs
-! ^¤ potecting against e:i word-finally (nalle, liike)
+! ^Â¤ potecting against e:i word-finally (nalle, liike)
 
 ! =================================================
 ! Basic lexica, pointing to the other lexicon files
@@ -134,7 +134,7 @@ LEXICON 7 ! ovi
  +N+Pl:%>i2 shorterillpl ;
 
 LEXICON 8 ! nalle
- +N:%^¤ strong-v-stem ;
+ +N:%^Â¤ strong-v-stem ;
  +N:X4 weak-v-stem ;
  +N: short-par ;
  +N: short-ill ;
@@ -241,7 +241,7 @@ LEXICON 20 ! filee
  +N+Pl:%>i2 shortillpl ;
  +N+Pl:%>i2 longerillpl ;
 
-LEXICON 21 ! rosé
+LEXICON 21 ! rosÃ©
  +N: strong-v-stem ;
  +N: weak-v-stem ;
  +N: long-par ;
@@ -286,18 +286,18 @@ LEXICON 25 ! toimi
  +N+Pl:%>i2 shortparpl ;
  +N+Pl:%>i2 shorterillpl ;
 
-LEXICON 27 ! käsi
- +N:Z1 nom-strong ; ! käsi
- +N: gae-strong ; ! kätenä
- +N+Sg:%>i2 com ; ! käsineen
+LEXICON 27 ! kÃ¤si
+ +N:Z1 nom-strong ; ! kÃ¤si
+ +N: gae-strong ; ! kÃ¤tenÃ¤
+ +N+Sg:%>i2 com ; ! kÃ¤sineen
  +N+Pl:%>i2 com ;
- +N:X4 weak-v-stem ; ! käden
- +N:Y7 long-par ; ! kättä
- +N: short-ill ; ! käteen
- +N+Pl:%>i2 shortgenpl ; ! käsien
- +N+Pl:Y7 consgenpl ; ! kätten
- +N+Pl:%>i2 shortparpl ; !käsiä
- +N+Pl:%>i2 shorterillpl ; ! käsiin
+ +N:X4 weak-v-stem ; ! kÃ¤den
+ +N:Y7 long-par ; ! kÃ¤ttÃ¤
+ +N: short-ill ; ! kÃ¤teen
+ +N+Pl:%>i2 shortgenpl ; ! kÃ¤sien
+ +N+Pl:Y7 consgenpl ; ! kÃ¤tten
+ +N+Pl:%>i2 shortparpl ; !kÃ¤siÃ¤
+ +N+Pl:%>i2 shorterillpl ; ! kÃ¤siin
 
 
 LEXICON 28 ! kynsi
@@ -386,6 +386,39 @@ LEXICON 39 ! vastaus
  +N+Pl:%>i2 shortparpl ;
  +N+Pl:%>i2 shorterillpl ;
 
+LEXICON 40 ! kalleus
+#;
+
+!LEXICON 41 ! vieras
+
+!LEXICON 42 ! mies
+
+!LEXICON 43 ! ohut
+
+!LEXICON 44 ! kevÃ¤t
+
+!LEXICON 45 ! ! kahdeksas
+
+!LEXICON 46 ! tuhat
+
+!LEXICON 47 ! kuollut
+
+!LEXICON 48 ! hame
+
+!LEXICON 49 ! askel
+
+!LEXICON 50 ! isoÃ¤iti
+! 5 ; ! "iso" is not inflected.
+
+!LEXICON 51 ! nuoripari
+! nuorenparin
+! nuortaparia
+! nuoreenpariin
+! This is problematic, we need flags.
+
+
+
+
 
 
 
@@ -466,7 +499,7 @@ LEXICON shortgenpl
 
 LEXICON longgenpl
  d-longgenpl ;
- tt-longgenpl ;
+ tt-longgenpl ; 
 
 LEXICON d-longgenpl
  +Gen:%>de n-PxK ;
@@ -562,3 +595,22 @@ LEXICON impneg
  +Pl2:%>k%^A%^Atte K ;
  +Pl3:%>k%^O%^Ot K ;
 
+
+! -------------
+! Regular verbs
+! -------------
+
+LEXICON SA
+
+ +Ind+Prs:%> PN ;
+ +Ind+Prt:%>i%> PN ;
+ +Cond:%>isi PN ;
+ +Pot:%>ne PN ;
+
+LEXICON PN
+ +Sg1:%>X1n K ;
+ +Sg2:%>X1t K ;
+ +Sg3:%>%^V K ;
+ +Pl1:%>X1mme K ;
+ +Pl2:%>X1tte K ;
+ +Pl3:%>v%^At K ;
