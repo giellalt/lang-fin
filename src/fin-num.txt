@@ -19,12 +19,12 @@ ONES ;			! 1-9
 LEXICON HUNDREDSM
 kaksi:2  CUODIM ;
 kolme:3 CUODIM ;
-nelj‰:4 CUODIM ;
+nelj√§:4 CUODIM ;
 viisi:5 CUODIM ;
 kuusi:6 CUODIM ;
-seitsem‰n:7 CUODIM ;
+seitsem√§n:7 CUODIM ;
 kahdeksan:8 CUODIM ;
-yhdeks‰n:9 CUODIM ;
+yhdeks√§n:9 CUODIM ;
 
 LEXICON CUODIM
 sataa: HUNDREDM ;
@@ -42,43 +42,43 @@ LEXICON TEENM
 yksi:1 LOHKAIM ;
 kaksi:2 LOHKAIM ;
 kolme:3 LOHKAIM ;
-nelj‰:4 LOHKAIM ;
+nelj√§:4 LOHKAIM ;
 viisi:5 LOHKAIM ;
 kuusi:6 LOHKAIM ;
-seitsem‰n:7 LOHKAIM ;
+seitsem√§n:7 LOHKAIM ;
 kahdeksan:8 LOHKAIM ;
-yhdeks‰n:9 LOHKAIM ;
+yhdeks√§n:9 LOHKAIM ;
 
 LEXICON LOHKAIM
 toista: MILJON ;
 
 LEXICON TENSM
-kaksi:2 L≈GEVM ;
-kolme:3 L≈GEVM ;
-nelj‰:4 L≈GEVM ;
-viisi:5 L≈GEVM ;
-kuusi:6 L≈GEVM ;
-seitsem‰n:7 L≈GEVM ;
-kahdeksan:8 L≈GEVM ;
-yhdeks‰n:9 L≈GEVM ;
+kaksi:2 L√ÖGEVM ;
+kolme:3 L√ÖGEVM ;
+nelj√§:4 L√ÖGEVM ;
+viisi:5 L√ÖGEVM ;
+kuusi:6 L√ÖGEVM ;
+seitsem√§n:7 L√ÖGEVM ;
+kahdeksan:8 L√ÖGEVM ;
+yhdeks√§n:9 L√ÖGEVM ;
 
 LEXICON TENM
 kymmenen:1%0 MILJON ;
 
-LEXICON L≈GEVM
-kymment‰:%0 MILJON ;
-kymment‰: ONESM ;
+LEXICON L√ÖGEVM
+kymment√§:%0 MILJON ;
+kymment√§: ONESM ;
 
 LEXICON ONESM
 yksi% miljon% :1 OVERTHOUSANDS ;
 kaksi:2 MILJON ;
 kolme:3 MILJON ;
-nelj‰:4 MILJON ;
+nelj√§:4 MILJON ;
 viisi:5 MILJON ;
 kuusi:6 MILJON ;
-seitsem‰n:7 MILJON ;
+seitsem√§n:7 MILJON ;
 kahdeksan:8 MILJON ;
-yhdeks‰n:9 MILJON ; 
+yhdeks√§n:9 MILJON ; 
 
 LEXICON MILJON
 % millioona% : OVERTHOUSANDS ;
@@ -103,12 +103,12 @@ tuhat:%0%01 THOUSAND ;	!   1.000.000
 LEXICON HUNDREDST
 kaksi:2  CUODIT ;	! 200000-299999
 kolme:3 CUODIT ;	! 300000-399999
-nelj‰:4 CUODIT ;	! 400000-499999
+nelj√§:4 CUODIT ;	! 400000-499999
 viisi:5 CUODIT ;	! 500000-599999
 kuusi:6 CUODIT ;	! 600000-699999
-seitsem‰n:7 CUODIT ;	! 700000-799999
+seitsem√§n:7 CUODIT ;	! 700000-799999
 kahdeksan:8 CUODIT ;	! 800000-899999
-yhdeks‰n:9 CUODIT ;	! 900000-999999
+yhdeks√§n:9 CUODIT ;	! 900000-999999
 
 LEXICON CUODIT
 sataa: HUNDREDT ;	! 100000-199999
@@ -124,44 +124,44 @@ LEXICON TEENST
 :1 TEENT ;
 
 LEXICON TEENT
-kymment‰:%0 THOUSANDS ;
+kymment√§:%0 THOUSANDS ;
 yksi:1 LOHKAIT ;
 kaksi:2 LOHKAIT ;
 kolme:3 LOHKAIT ;
-nelj‰:4 LOHKAIT ;
+nelj√§:4 LOHKAIT ;
 viisi:5 LOHKAIT ;
 kuusi:6 LOHKAIT ;
-seitsem‰n:7 LOHKAIT ;
+seitsem√§n:7 LOHKAIT ;
 kahdeksan:8 LOHKAIT ;
-yhdeks‰n:9 LOHKAIT ;
+yhdeks√§n:9 LOHKAIT ;
 
 LEXICON LOHKAIT
 toista: THOUSANDS ;
 
 LEXICON TENST
-kaksi:2 L≈GEVT ;
-kolme:3 L≈GEVT ;
-nelj‰:4 L≈GEVT ;
-viisi:5 L≈GEVT ;
-kuusi:6 L≈GEVT ;
-seitsem‰n:7 L≈GEVT ;
-kahdeksan:8 L≈GEVT ;
-yhdeks‰n:9 L≈GEVT ;
+kaksi:2 L√ÖGEVT ;
+kolme:3 L√ÖGEVT ;
+nelj√§:4 L√ÖGEVT ;
+viisi:5 L√ÖGEVT ;
+kuusi:6 L√ÖGEVT ;
+seitsem√§n:7 L√ÖGEVT ;
+kahdeksan:8 L√ÖGEVT ;
+yhdeks√§n:9 L√ÖGEVT ;
 
-LEXICON L≈GEVT
-kymment‰:%0 THOUSANDS ;
-kymment‰yksituhatta:1 THOUSAND ;
-kymment‰: ONEST ;
+LEXICON L√ÖGEVT
+kymment√§:%0 THOUSANDS ;
+kymment√§yksituhatta:1 THOUSAND ;
+kymment√§: ONEST ;
 
 LEXICON ONEST
 kaksi:2 THOUSANDS ;
 kolme:3 THOUSANDS ;
-nelj‰:4 THOUSANDS ;
+nelj√§:4 THOUSANDS ;
 viisi:5 THOUSANDS ;
 kuusi:6 THOUSANDS ;
-seitsem‰n:7 THOUSANDS ;
+seitsem√§n:7 THOUSANDS ;
 kahdeksan:8 THOUSANDS ;
-yhdeks‰n:9 THOUSANDS ;
+yhdeks√§n:9 THOUSANDS ;
 
 LEXICON THOUSANDS      ! x > 1
 tuhatta: THOUSAND ;
@@ -184,12 +184,12 @@ sata:1 HUNDRED ;
 LEXICON HUNDREDS
 kaksi:2  CUODI ;
 kolme:3 CUODI ;
-nelj‰:4 CUODI ;
+nelj√§:4 CUODI ;
 viisi:5 CUODI ;
 kuusi:6 CUODI ;
-seitsem‰n:7 CUODI ;
+seitsem√§n:7 CUODI ;
 kahdeksan:8 CUODI ;
-yhdeks‰n:9 CUODI ;
+yhdeks√§n:9 CUODI ;
 
 LEXICON CUODI
 sataa: HUNDRED ;
@@ -207,39 +207,39 @@ LEXICON TEEN
 yksi:1 LOHKAI ;
 kaksi:2 LOHKAI ;
 kolme:3 LOHKAI ;
-nelj‰:4 LOHKAI ;
+nelj√§:4 LOHKAI ;
 viisi:5 LOHKAI ;
 kuusi:6 LOHKAI ;
-seitsem‰n:7 LOHKAI ;
+seitsem√§n:7 LOHKAI ;
 kahdeksan:8 LOHKAI ;
-yhdeks‰n:9 LOHKAI ;
+yhdeks√§n:9 LOHKAI ;
 
 LEXICON LOHKAI
 toista: # ;
 
 LEXICON TENS
-kymment‰:1%0 # ;
-kaksi:2 L≈GEV ;
-kolme:3 L≈GEV ;
-nelj‰:4 L≈GEV ;
-viisi:5 L≈GEV ;
-kuusi:6 L≈GEV ;
-seitsem‰n:7 L≈GEV ;
-kahdeksan:8 L≈GEV ;
-yhdeks‰n:9 L≈GEV ;
+kymment√§:1%0 # ;
+kaksi:2 L√ÖGEV ;
+kolme:3 L√ÖGEV ;
+nelj√§:4 L√ÖGEV ;
+viisi:5 L√ÖGEV ;
+kuusi:6 L√ÖGEV ;
+seitsem√§n:7 L√ÖGEV ;
+kahdeksan:8 L√ÖGEV ;
+yhdeks√§n:9 L√ÖGEV ;
 
-LEXICON L≈GEV
-kymment‰:%0 # ;
-kymment‰: ONES ;
+LEXICON L√ÖGEV
+kymment√§:%0 # ;
+kymment√§: ONES ;
 
 LEXICON ONES
 yksi:1 # ;
 kaksi:2 # ;
 kolme:3 # ;
-nelj‰:4 # ;
+nelj√§:4 # ;
 viisi:5 # ;
 kuusi:6 # ;
-seitsem‰n:7 # ;
+seitsem√§n:7 # ;
 kahdeksan:8 # ;
-yhdeks‰n:9 # ;
+yhdeks√§n:9 # ;
 

@@ -20,7 +20,7 @@ define WS [SP|NL|TAB];
 # =============================================================
 echo >>> define single character symbols
 define SINGLE [ %" | %. | %, | %; | %: | %! | %?
-| %( | %) | %[ | %] | %{ | %} | %« | %» 
+| %( | %) | %[ | %] | %{ | %} | %Â« | %Â» 
 ];
 define PUNCT [ %. %. (%.) | %' %' | %' %' | %, %, ] ;
 define Char \[ WS | SINGLE ] ;
@@ -43,9 +43,9 @@ define WORD [ Char ]+ ;
 # =============================================================
 echo >>> regular abbreviations
 define Letter [A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|
-Å|Ä|Ö|Ø|Æ|Á|É|Ó|Ú|Í|À|È|Ò|Ù|Ì|Ë|Ü|Ï|Â|Ê|Ô|Û|Î|Ã|Ý|þ|Ñ|Ð|
+Ã…|Ã„|Ã–|Ã˜|Ã†|Ã|Ã‰|Ã“|Ãš|Ã|Ã€|Ãˆ|Ã’|Ã™|ÃŒ|Ã‹|Ãœ|Ã|Ã‚|ÃŠ|Ã”|Ã›|ÃŽ|Ãƒ|Ã|Ã¾|Ã‘|Ã|
 a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z
-å|ä|ö|ø|æ|á|é|ó|ú|í|à|è|ò|ù|ì|ë|ü|ï|â|ê|ô|û|î|ã|ý|þ|ñ|ð|ç|ß];
+Ã¥|Ã¤|Ã¶|Ã¸|Ã¦|Ã¡|Ã©|Ã³|Ãº|Ã­|Ã |Ã¨|Ã²|Ã¹|Ã¬|Ã«|Ã¼|Ã¯|Ã¢|Ãª|Ã´|Ã»|Ã®|Ã£|Ã½|Ã¾|Ã±|Ã°|Ã§|ÃŸ];
 define INIT [ Letter %. ]+ ;
 
 # =============================================================
@@ -59,7 +59,7 @@ define NUM [ Digit | NumOp | NumSep]+ & $[Digit] ;
 echo >>> define tokens
 define Token [ WORD | SYMBOL | INIT ];
 # commenting out NUM in order to allow 7-bit encoding
-# commenting them in again since this is Lule Sámi
+# commenting them in again since this is Lule SÃ¡mi
 define Token [ WORD | SYMBOL | ABBR | INIT | NUM ];
 # =============================================================
 echo >>> longest match--insert a newline after each token
