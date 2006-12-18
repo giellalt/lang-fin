@@ -1,6 +1,12 @@
 # This is a makefile that builds the Northern Sami morphological parser
 # *****************************************************************
 
+LEX=fin-lex.txt adj-fin-lex.txt \
+    adv-fin-lex.txt noun-fin-lex.txt verb-fin-lex.txt \
+    closed-fin-lex.txt pp-fin-lex.txt propernoun-fin-lex.txt \
+	abbr-fin-lex.txt
+
+
 # The ultimate goal is to build ifin.fst, the generator
 # This goal depends on fin.save being up to date.
 
@@ -112,6 +118,27 @@ tok.fst: ../bin/tok.fst
 	quit \n" > /tmp/tok-script
 	@xfst < /tmp/tok-script
 	@rm -f /tmp/tok-script
+
+
+# Here we make the abbrevation file for our current preprocessor, 
+# the perl-based preprocess (located in the script catalogue)
+
+empty:=
+comma:=,
+space:=$(empty) $(empty)
+ABBRSRCS=$(subst $(space),$(comma),$(LEX))
+
+scripts=$(HOME)/gt/script
+
+abbr: ../bin/abbr.txt
+../bin/abbr.txt: $(scripts)/abbr-extract $(scripts)/langTools/Util.pm $(LEX)
+	@echo
+	@echo "*** Extracting abbreviations from abbr-fin-lex.txt to abbr.txt ***" ;
+	@echo
+	@perl -I $(scripts) $(scripts)/abbr-extract \
+		--output=$@ \
+		--abbr_lex=abbr-fin-lex.txt \
+		--lex=$(ABBRSRCS)
 
 
 # "make clean" is there to remove the binary files at will.
