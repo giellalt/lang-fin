@@ -6,7 +6,7 @@ Multichar_Symbols
  +Ess +Tra +Ins +Com +Par
  +Comp +Superl +Clt
  +Pass +Ind +Prs +Prt +Imp +Cond +Pot
- +Inf  +PrsPrc +PrfPrc
+ +Inf  +PrsPrc +PrfPrc +Inf3
  +CLB +PUNCT +HYPH
  p1 t1 k1
  i2 i3 14 i5
@@ -605,6 +605,7 @@ LEXICON 52
  +Ind+Prt:%>i%> PN ;
  +Cond:%>isi PN ;
  +Pot:%>ne PN ;
+ +Inf3:%>ma INF3 ;
 
 LEXICON 53
 52 ;
@@ -661,6 +662,7 @@ LEXICON 75
 LEXICON 76
 52 ;
 
+
 LEXICON PN
  +Sg1:%>X1n K ;
  +Sg2:%>X1t K ;
@@ -668,3 +670,11 @@ LEXICON PN
  +Pl1:%>X1mme K ;
  +Pl2:%>X1tte K ;
  +Pl3:%>v%^At K ;
+
+
+LEXICON INF3
+ +Ill:%>^An K ;
+ +Ine:%>ss^A K ;
+ +Ela:%>st^A K ;
+ +Ade:%>ll^A K ;
+ +Abe:%>tt^A K ;
