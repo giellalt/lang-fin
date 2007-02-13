@@ -1,0 +1,111 @@
+! =====================
+! LEXICA FOR VERB ROOTS
+! =====================
+
+
+! -----------
+! Auxiliaries
+! -----------
+
+LEXICON neg
+ +Ind:e indneg ;
+ +Imp:%^Al impneg ;
+
+LEXICON indneg
+ +Sg1:%>n K ;
+ +Sg2:%>t K ;
+ +Sg3:%>i2 K ;
+ +Pl1:%>mme K ;
+ +Pl2:%>tte K ;
+ +Pl3:%>i2v%^At K ;
+
+LEXICON impneg
+ +Sg2:%>%^A K ;
+ +Sg3:%>k%^O%^On K ;
+ +Pl1:%>k%^A%^Amme K ;
+ +Pl2:%>k%^A%^Atte K ;
+ +Pl3:%>k%^O%^Ot K ;
+
+
+! -------------
+! Regular verbs
+! -------------
+
+LEXICON 52
+ +Ind+Prs:%> PN ;
+ +Ind+Prt:%>i%> PN ;
+ +Cond:%>isi PN ;
+ +Pot:%>ne PN ;
+ +Inf3:%>ma INF3 ;
+
+LEXICON 53
+52 ;
+LEXICON 54
+52 ;
+LEXICON 55
+52 ;
+LEXICON 56
+52 ;
+LEXICON 57
+52 ;
+LEXICON 58
+52 ;
+LEXICON 59
+52 ;
+LEXICON 60
+52 ;
+LEXICON 61
+52 ;
+LEXICON 62
+52 ;
+LEXICON 63
+ +Inf:%>d^A K ;
+ +Ind+Prs:%> PN ;
+ +Ind+Prt:%>i%> PN ;
+ +Cond:%>isi PN ;
+ +Pot:%>ne PN ;
+
+
+LEXICON 64
+52 ;
+LEXICON 65
+52 ;
+LEXICON 66
+52 ;
+LEXICON 67
+52 ;
+LEXICON 68
+52 ;
+LEXICON 69
+52 ;
+LEXICON 70
+52 ;
+LEXICON 71
+52 ;
+LEXICON 72
+52 ;
+LEXICON 73
+52 ;
+LEXICON 74
+52 ;
+LEXICON 75
+52 ;
+LEXICON 76
+52 ;
+
+
+LEXICON PN
+ +Sg1:%>X1n K ;
+ +Sg2:%>X1t K ;
+ +Sg3:%>%^V K ;
+ +Pl1:%>X1mme K ;
+ +Pl2:%>X1tte K ;
+ +Pl3:%>v%^At K ;
+
+
+LEXICON INF3
+ +Ill:%>^An K ;
+ +Ine:%>ss^A K ;
+ +Ela:%>st^A K ;
+ +Ade:%>ll^A K ;
+ +Abe:%>tt^A K ;
