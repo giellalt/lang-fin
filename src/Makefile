@@ -21,7 +21,7 @@ ifin.fst: ../bin/ifin.fst
 	invert net \n\
 	save stack ../bin/ifin.fst \n\
 	quit \n" > /tmp/ifin-fst-script
-	@xfst < /tmp/ifin-fst-script
+	@xfst -utf8 < /tmp/ifin-fst-script
 	@rm -f /tmp/ifin-fst-script
 
  
@@ -38,7 +38,7 @@ fin.fst: ../bin/fin.fst
 	@\"../bin/caseconv.fst\" ; \n\
 	save stack ../bin/fin.fst \n\
 	quit \n" > /tmp/fin-fst-script
-	@xfst < /tmp/fin-fst-script
+	@xfst -utf8 < /tmp/fin-fst-script
 	@rm -f /tmp/fin-fst-script
 
 # The second goal is to build the caseconv.fst file
@@ -52,7 +52,7 @@ caseconv.fst: ../bin/caseconv.fst
 	@printf "read regex < case.regex \n\
 	save stack ../bin/caseconv.fst \n\
 	quit \n" > /tmp/caseconv-script
-	@xfst < /tmp/caseconv-script
+	@xfst -utf8 < /tmp/caseconv-script
 	@rm -f /tmp/caseconv-script
 
 
@@ -66,7 +66,7 @@ allcaps.fst: ../bin/allcaps.fst
 	@printf "source allcaps.regex \n\
 	save stack ../bin/allcaps.fst \n\
 	quit \n" > /tmp/tok-script
-	@xfst < /tmp/tok-script
+	@xfst -utf8 < /tmp/tok-script
 	@rm -f /tmp/tok-script
 
 
@@ -83,7 +83,7 @@ fin.save: ../bin/fin.save
 	compose-result \n\
 	save-result ../bin/fin.save \n\
 	quit \n" > /tmp/fin-save-script
-	@lexc < /tmp/fin-save-script
+	@lexc -utf8 < /tmp/fin-save-script
 	rm -f /tmp/fin-save-script
 
 
@@ -99,7 +99,7 @@ twol-fin.bin: ../bin/twol.fin.bin
 	compile \n\
 	save-binary ../bin/twol-fin.bin \n\
 	quit \n" > /tmp/twol-fin-script
-	@twolc < /tmp/twol-fin-script
+	@twolc -utf8 < /tmp/twol-fin-script
 	@rm -f /tmp/twol-fin-script
 
 # Here we include a preprocessor.
@@ -113,7 +113,7 @@ tok.fst: ../bin/tok.fst
 	@printf "source tok.txt \n\
 	save stack ../bin/tok.fst \n\
 	quit \n" > /tmp/tok-script
-	@xfst < /tmp/tok-script
+	@xfst -utf8 < /tmp/tok-script
 	@rm -f /tmp/tok-script
 
 
