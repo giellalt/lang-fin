@@ -1,9 +1,10 @@
 # This is a makefile that builds the Northern Sami morphological parser
 # *****************************************************************
 
-LEX=fin-lex.txt adj-fin-lex.txt \
-    adv-fin-lex.txt noun-fin-lex.txt verb-fin-lex.txt \
-    closed-fin-lex.txt pp-fin-lex.txt propernoun-fin-lex.txt \
+LEX = fin-lex.txt adj-fin-lex.txt \
+	adv-fin-lex.txt noun-fin-lex.txt noun-fin-morph.txt \
+	verb-fin-lex.txt verb-fin-morph.txt \
+	closed-fin-lex.txt pp-fin-lex.txt propernoun-fin-lex.txt \
 	abbr-fin-lex.txt
 
 
@@ -73,15 +74,11 @@ allcaps.fst: ../bin/allcaps.fst
 # This goal depends on twol-fin.bin and a bunch of lexicon files
 
 fin.save: ../bin/fin.save
-../bin/fin.save: ../bin/twol-fin.bin fin-lex.txt adj-fin-lex.txt \
-	adv-fin-lex.txt noun-fin-lex.txt verb-fin-lex.txt \
-	closed-fin-lex.txt pp-fin-lex.txt propernoun-fin-lex.txt
+../bin/fin.save: ../bin/twol-fin.bin $(LEX)
 	@echo
 	@echo "*** Building fin.save ***" ;
 	@echo
-	printf "compile-source fin-lex.txt adj-fin-lex.txt adv-fin-lex.txt \
-	noun-fin-lex.txt verb-fin-lex.txt closed-fin-lex.txt \
-	pp-fin-lex.txt propernoun-fin-lex.txt \n\
+	printf "compile-source $(LEX) \n\
 	read-rules ../bin/twol-fin.bin \n\
 	compose-result \n\
 	save-result ../bin/fin.save \n\
