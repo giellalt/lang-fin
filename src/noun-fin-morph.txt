@@ -91,8 +91,8 @@ LEXICON 9 ! kala
  +Sg+Nom: Px ;
  +Sg+Gen: Px ;
  +Sg+Acc: Px ;
- +Sg+Ess:%>n%^A PxK ;
- +Pl+Ess:Y3%>i2%>n%^A PxK ;
+ +Sg+Ess:%>n%^A PxxK ;
+ +Pl+Ess:Y3%>i2%>n%^A PxxK ;
  +N+Sg:Y3%>i2 com ;
  +N+Pl:Y3%>i2 com ;
  +N:Y1 weak-v-stem ;
@@ -109,8 +109,8 @@ LEXICON 10 ! koira = 9, the diff is in twol-fin
  +Sg+Nom: Px ;
  +Sg+Gen: Px ;
  +Sg+Acc: Px ;
- +Sg+Ess:%>n%^A PxK ;
- +Pl+Ess:Y2%>i2%>n%^A PxK ;
+ +Sg+Ess:%>n%^A PxxK ;
+ +Pl+Ess:Y2%>i2%>n%^A PxxK ;
  +N+Sg:Y2%>i2 com ;
  +N+Pl:Y2%>i2 com ;
  +N:X2 weak-v-stem ;
@@ -382,8 +382,10 @@ LEXICON weak-v-stem
  +Sg+Acc:%>n K ;
  +Pl+Nom:%>t K ;
  +Pl+Acc:%>t K ;
- +Pl+Ins:%>i2%>n K ;
- +Pl+Ins:%>i2 Px ;
+ +Pl+Ins:%>i2%>n K ; ! marginal case, in use only for some words.
+                     ! Todo: identify these, and remove Ins from the
+                     ! general weak-v-stem lexicon.
+!matoin??? in jáhke ahte dat lea vejolaš. Pirkko Leino giellaoahpas dat ii gávdno. Inge mun sáhte dahkat dakkára hámi. Matoin orru hirbma imaš. tein sen käsin. Loin mukavan eteisen matoin ja käsin. Leago Ins obanassige geavahuvvon? . Ii heive. Leino: vain joistakin nomineista käytetään instr. ja niistäkin "harvoin" on paha sana. muhto muđui... . Mii sáhtit a. ráhkadit Ins buot saniide, dahje b. váldit eret.. Dat lea dakkár frasalaš hápmi. Dat ii oro leamen šat produktiivalaš. No, jos válde dan mielde ja eallá dain ahte lea sánit, mat orrut imašlaččat. Muhto Px eret. Dat ii leat vejolaš. "Tein sen omin käsin/omine käsineni". Nubbihan lea jo com.
  +Sg: sgpl-cases ;    ! these two lexica for cases with
  +Pl:%>i2 sgpl-cases ; ! the same affix in sg and pl
 
@@ -395,11 +397,13 @@ LEXICON nom-strong
  +Sg+Nom: K ;
 
 LEXICON gae-strong
- +Sg+Nom: Px ;
- +Sg+Gen: Px ;
- +Sg+Acc: Px ;
- +Sg+Ess:%>n%^A PxK ;
- +Pl+Ess:%>i2%>n%^A PxK ;
+ +Sg+Nom: Px ;  ! mattoni
+ +Sg+Gen: Px ;  ! mattoni
+ +Sg+Acc: Px ;  ! mattoni
+ +Pl+Nom: Px ;  ! mattoni
+ +Pl+Acc: Px ;  ! mattoni
+ +Sg+Ess:%>n%^A PxxK ;
+ +Pl+Ess:%>i2%>n%^A PxxK ;
  
 LEXICON sgpl-cases
  +Ine:%>ss%^A PxxK ;
@@ -409,22 +413,22 @@ LEXICON sgpl-cases
  +Abl:%>lt%^A PxxK ;
  +Tra:%>ksi K ;
  +Tra:%>kse Pxx ;
- +Abe:%>tt%^A PxK ;
+ +Abe:%>tt%^A PxxK ;
 
 LEXICON com
  +Com:%>ne Pxx ; ! Not to K, since Px must be present
-                 ! Note that adjectives nave -ine without Px
+                 ! Note that adjectives have -ine without Px
 
 
 ! Lexica for the non-uniform cases
 ! --------------------------------
 
 LEXICON short-par
- +Sg+Par:%>%^A PxK ;
+ +Sg+Par:%>%^A PxxK ;
 ! does not handle valoaan vs. *salaaan
 
 LEXICON long-par
- +Sg+Par:%>t%^A PxK ;
+ +Sg+Par:%>t%^A PxxK ;
 
 LEXICON short-ill
  +Sg+Ill:%>%^V n-PxK ;
