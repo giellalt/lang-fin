@@ -38,10 +38,10 @@ LEXICON 4 ! laatikko
  +N: short-par ;
  +N: short-ill ;
  +N+Pl:%>i2 shortgenpl ;
- +N+Pl:%>i2 longgenpl ;
+ +N+Pl:X4%>i2 longgenpl ;
  +N+Pl:%>i2 shortparpl ;
- +N+Pl:%>i2 longparpl ;
- +N+Pl:X4%>i2 shortillpl ; ! laatikoihin
+ +N+Pl:%>i2 longparpl ;	
+ +N+Pl:X4%>i2 shortillpl ; ! laatikoihin   !does not work
  +N+Pl:%>i2 shortillpl ;  ! laatikkoihin
 
 LEXICON 5 ! risti
@@ -58,9 +58,9 @@ LEXICON 6 ! paperi, banaani
  +N:X4 weak-v-stem ;
  +N: short-par ;
  +N: short-ill ;
- +N+Pl:%>i2 shortgenpl ;
+! +N+Pl:%>i2 shortgenpl ; ! *paperejen
  +N+Pl:%>i2 longgenpl ;
- +N+Pl:%>i2 shortparpl ;
+! +N+Pl:%>i2 shortparpl ; ! *papereja
  +N+Pl:%>i2 longparpl ;
  +N+Pl:%>i2 shortillpl ;
 
@@ -479,7 +479,7 @@ LEXICON n-PxK
  :n K ;
  Px ;
 
-LEXICON PxK ! only -nsA
+LEXICON PxK ! only -nsA ! Currently not in use. Man dihte?
  K ;
  Px ;
 
