@@ -81,7 +81,7 @@ Rules
  i:e <=> Cns: _ ( X4:) %>:0 [ i2:i | i2:j ] %>:0 ;
 
 "i as j intervocalically in affixes"
- i2:j <=> Vow:Vow (Dummy:) %>:0 _ %>:0 Vow: ;
+ i2:j <=> [ Vow - :i ] (Dummy: | %^¤: ) %>:0 _ %>:0 Vow:Vow ; 
 ! valoien : valojen
 
 "a to 0 in front of i"
