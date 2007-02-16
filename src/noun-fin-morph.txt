@@ -58,11 +58,14 @@ LEXICON 6 ! paperi, banaani
  +N:X4 weak-v-stem ;
  +N: short-par ;
  +N: short-ill ;
-! +N+Pl:%>i2 shortgenpl ; ! *paperejen
+ +N+Pl:Z2%>i2 shortgenpl ; ! *paperejen paperien
  +N+Pl:%>i2 longgenpl ;
-! +N+Pl:%>i2 shortparpl ; ! *papereja
+ +N+Pl:%>i2 shortparpl ; ! *papereja but banaaneja
  +N+Pl:%>i2 longparpl ;
  +N+Pl:%>i2 shortillpl ;
+! PSK conflates paperi and banaani, we must thus
+! live with errouneous papereja to get banaaneja.
+
 
 LEXICON 7 ! ovi
  +N:Z1 nom-strong ; ! 
@@ -82,8 +85,8 @@ LEXICON 8 ! nalle
  +N: short-par ;
  +N: short-ill ;
  +N+Pl:%>i2 shortgenpl ;
- +N+Pl:%>i2 oldgenpl ;
- +N+Pl:%>i2 shortparpl ;
+! +N+Pl:%>i2 oldgenpl ; !nallin
+ +N+Pl:%^¤%>i2 shortparpl ;
  +N+Pl:%>i2 shortillpl ;
 
 LEXICON 9 ! kala
