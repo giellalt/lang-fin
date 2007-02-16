@@ -382,12 +382,11 @@ LEXICON weak-v-stem
  +Sg+Acc:%>n K ;
  +Pl+Nom:%>t K ;
  +Pl+Acc:%>t K ;
- +Pl+Ins:%>i2%>n K ; ! marginal case, in use only for some words.
-                     ! Todo: identify these, and remove Ins from the
-                     ! general weak-v-stem lexicon.
-!matoin??? in jáhke ahte dat lea vejolaš. Pirkko Leino giellaoahpas dat ii gávdno. Inge mun sáhte dahkat dakkára hámi. Matoin orru hirbma imaš. tein sen käsin. Loin mukavan eteisen matoin ja käsin. Leago Ins obanassige geavahuvvon? . Ii heive. Leino: vain joistakin nomineista käytetään instr. ja niistäkin "harvoin" on paha sana. muhto muđui... . Mii sáhtit a. ráhkadit Ins buot saniide, dahje b. váldit eret.. Dat lea dakkár frasalaš hápmi. Dat ii oro leamen šat produktiivalaš. No, jos válde dan mielde ja eallá dain ahte lea sánit, mat orrut imašlaččat. Muhto Px eret. Dat ii leat vejolaš. "Tein sen omin käsin/omine käsineni". Nubbihan lea jo com.
- +Sg: sgpl-cases ;    ! these two lexica for cases with
+ +Sg: sgpl-cases ;     ! these two lexica for cases with
  +Pl:%>i2 sgpl-cases ; ! the same affix in sg and pl
+ +Pl+Ins:%>i2%>n K ;   ! Marginal case, in use only for some words.
+                       ! Todo: identify these, and remove Ins from the
+                       ! general weak-v-stem lexicon.
 
 
 ! Sublexica for the vowel stems
@@ -459,16 +458,16 @@ LEXICON consgenpl
  +Gen:%>te n-PxK ;
 
 LEXICON shortparpl
- +Par:%>%^A K ;
+ +Par:%>%^A PxxK ;
 
 LEXICON longparpl
- +Par:%>%t^A K ;
+ +Par:%>%t^A PxxK ;
 
 LEXICON shortillpl
  +Ill:%>hi n-PxK ;
 
 LEXICON shorterillpl
- +Ill:%>i2 n-PxK ;
+ +Ill:%>i2 n-PxK ;		
 
 LEXICON longerillpl
  +Pl+Ill:%>s%^V%^V n-PxK ;
