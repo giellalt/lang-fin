@@ -140,19 +140,17 @@ Rules
       where Cx in Liquid ;
 
 "Weak grade of poika, aika"
-! i:j <=> #: [ p o | a ] _ k: a: WeG: ;
- i:j <=> .#. [ p o | a ] _ k: a: WeG: ;
+ i:j <=> #:0 [ p o | a ] _ k: a: WeG: ;
 
 "Weak grade of ruoka"
-! o:u => #: r u _ k: a: WeG: ; 
- o:u => .#. r u _ k: a: WeG: ; 
+ o:u => #:0 r u _ k: a: WeG: ; 
 
 
 ! Consonant alternations
 ! ----------------------
 
 "Alternation finally in consonant stems"
- m:n <=> Vow: _ i: Y5: %>:0 t ;
+ m:n <=> Vow: _ e: Y5: %>:0 t ;
  ! toimi : tointen
 
 !"s:d in susi - suden etc."
