@@ -2,6 +2,7 @@ Alphabet
 
  %^A:ä %^O:ö %^U:y ! The archiphonemes
  %>:0  %^V  %^¤:0 '
+ p1:p t1:t k1:k
 
  a b c d e f g h i j k l m n o p q
  r s t u v w x y z å ä ö ø æ 
@@ -12,7 +13,6 @@ Alphabet
  R S T U V W X Y Z Å Ä Ö Ø Æ
  Á É Ó Ú Í À È Ò Ù Ì Ë Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð
 
- p1:p t1:t k1:k
 
  X1:0 X2:0 X3:0 X4:0 X5:0 X6:0 X7:0 X8:0 X9:0   ! diacritics
  Y1:0 Y2:0 Y3:0 Y4:0 Y5:0 Y6:0 Y7:0 Y8:0 Y9:0 
@@ -22,7 +22,7 @@ Alphabet
 
 Sets
  Vow = a e i o u y ä ö å %^A %^O %^U %^V i2 i3 i4 i5 ;
- Cns = b c d f g h j k l m n p q r s t v w x z ' p1 t1 k1 %^¤;
+ Cns = b c d f g h j k l m n p q r s t v w x z ' p1  t1 k1  %^¤;
  Front = ä ö y ;
  Back = a o u ;
  Neutral = i e i2 i3 i4 i5 ;
@@ -37,7 +37,7 @@ Sets
  WeG = X1 X2 X4 Y1 ;
  HighLabial = u y ;
  Liquid = l r ;
- VclessStop = k p t k1 p1 t1 ;
+ VclessStop = k p t  ;
  Labial = p b m ;
  Velar = g k ;
  Nasal = m n ;
