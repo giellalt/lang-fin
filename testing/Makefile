@@ -11,7 +11,7 @@ SHELL = /bin/sh
 
 # Where all the perl scripts are:
 #BINDIR = ../script/testing
-BINDIR = ~/gt/script/testing
+BINDIR = ../../../gt/script/testing
 
 # Directory where all the compiled fst's are:
 FSTDIR = ../bin
