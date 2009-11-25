@@ -1,6 +1,7 @@
 LEXICON Root
 HUNDREDSM ;		! 200M
 sata:1 HUNDREDM ;	! 100M
+!JUSTTENM ;      ! 10M
 TENSM ;			! 20-99M
 TEENSM ;		! 11-19M
 TENM ;			! 10M->11M
@@ -33,10 +34,14 @@ LEXICON CUODIM
 sataa: HUNDREDM ;
 
 LEXICON HUNDREDM
+TENM ;
 TENSM ;
 TEENSM ;
 :%0 ONESM ;
 :%0%0 MILJON ;
+
+!LEXICON JUSTTENM
+!kymmenen:1%0 LOHKAIM ;
 
 LEXICON TEENSM
 :1 TEENM ;
@@ -126,8 +131,10 @@ yksi:%01 THOUSANDS ;
 LEXICON TEENST
 :1 TEENT ;
 
+LEXICON JUSTTENT
+kymmenen% tuhatta:1%0 THOUSANDS ;
+
 LEXICON TEENT
-kymmentä:%0 THOUSANDS ;
 yksi:1 LOHKAIT ;
 kaksi:2 LOHKAIT ;
 kolme:3 LOHKAIT ;
@@ -153,7 +160,7 @@ yhdeksän:9 LÅGEVT ;
 
 
 LEXICON TENT
-kymmenen:1%0 THOUSAND ;
+kymmenentuhatta:1%0 THOUSAND ;
 
 LEXICON LÅGEVT
 kymmentä:%0 THOUSANDS ;
@@ -228,6 +235,7 @@ toista: # ;
 !kymmentä:1%0 # ;
 
 LEXICON TENS
+JUSTTEN ;
 kaksi:2 LÅGEV ;
 kolme:3 LÅGEV ;
 neljä:4 LÅGEV ;
