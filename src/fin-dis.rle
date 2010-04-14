@@ -1,468 +1,442 @@
-Trond
-fincg-filen är inkluderad nedan, med reglerna för morfologisk disambiguering.
-Sänder separat ett exempel på hur inputfilen antas se ut.
-Hälsn. Fred
-
-;       ******************************************
-;      * FINCG (CONSTRAINT GRAMMAR FOR FINNISH) *
-;      * (GPL) FRED KARLSSON 1989-2000          *
-;      ******************************************
+#      ******************************************
+#      * FINCG (CONSTRAINT GRAMMAR FOR FINNISH) *
+#      * (GPL) FRED KARLSSON 1989-2000          *
+#      ******************************************
 
 
-SENTENCE-DELIMITERS
+DELIMITERS = "<$\.>" "<$!>" "<$?>" "<$END-OF-SENTENCE>" "<$ENDDOC>" "<$ENDDOCHEAD>" "<$ENDHCODE>" "<$ENDHEAD>" "<$ENDTEXT>" "<$ENDTITLE>" "<$PARAG>" "<$HEAD>" "<$END-P>";
 
-("<$\.>" "<$!>" "<$?>" "<$END-OF-SENTENCE>" "<$ENDDOC>" "<$ENDDOCHEAD>" "<$ENDHCODE>" "<$ENDHEAD>" "<$ENDTEXT>" "<$ENDTITLE>" "<$PARAG>" "<$HEAD>" "<$END-P>")
+# ("<$\.>" "<$!>" "<$?>") # "<$\:>"
 
-; ("<$\.>" "<$!>" "<$?>") ; "<$\:>"
+SETS
 
-SET-DECLARATIONS
+# LIST >>> = >>> ">>>" "<$START-P>" "<$start-p>" ; # look at BOS/EOS
+# LIST <<< = <<< "<<<" "<$END-P>" "<$end-p>" ; 
+LIST <COERCE!> = <COERCE!> ; 
+LIST UP = UP ; 
+LIST <CORRECT!> = <CORRECT!> ; 
+LIST <Del!> = <Del!> ; 
+LIST <Digit> = <Digit> ; 
+LIST <MORPH-HEUR!> = <MORPH-HEUR!> ; 
+LIST <ELA-ADVL> = <ELA-ADVL> ; 
+LIST <ELALEFT> = <ELALEFT> ; 
+LIST <ELARIGHT> = <ELARIGHT> ; 
+LIST <GENLEFT> = <GENLEFT> ; 
+LIST <GENRIGHT> = <GENRIGHT> ; 
+LIST <INF3-ELA> = <INF3-ELA> ; 
+LIST <INF3-ILL> = <INF3-ILL> ; 
+LIST <LG> = <LG> ; 
+LIST <NEC-V> = <NEC-V> ; 
+LIST <POSS> = <POSS> ; 
+LIST <PTV-OBJ> = <PTV-OBJ> ; 
+LIST <PTVLEFT> = <PTVLEFT> ; 
+LIST <PTV-OBJ> = <PTV-OBJ> ; 
+LIST <PTVRIGHT> = <PTVRIGHT> ; 
+LIST <REF> = <REF> ; 
+LIST <TIME> = <TIME> "suku_polvi" "mies_polvi" ; 
+LIST <TIME>/<MEASURE> = <TIME> <MEASURE> ; 
+LIST <Title> = <Title> ; 
+LIST <Title>/PROP = <Title> PROP ; 
+LIST <Tulos> = <Tulos> ; 
+LIST <YEAR> = <YEAR> ; 
+LIST ? = "<$\?>" ; 
+LIST ?! = "<$\?>" "<$\!>" ; 
+LIST A = A ; 
+LIST A-A/N = A A/N ; 
+LIST A-A/N-PCP = A A/N PCP1 PCP2 ; 
+LIST A-A/N-Q = A A/N Q ;   # HIEMAN, HIUKAN 
+LIST A/AD-A = A A/N AD-A AD ; 
+LIST A/AD-A/Q = A A/N AD-A AD Q ; 
+LIST A/ADV = A A/N ADV ; 
+LIST A/ADV/PCP/DET/Q = A ADV PCP1 PCP2 DET Q ; 
+LIST A/GEN = A GEN ; 
+LIST A/N = A N A/N ; 
+LIST A/N/Q/PRON = A N Q PRON A/N ; 
+LIST A/N/Q/PRON/PCP/NUM = A N Q PRON A/N PCP1 PCP2 NUM ; 
+LIST A/NUM/PRON/Q = A NUM PRON Q ; 
+LIST A/Q/PRON = A Q PRON A/N ; 
+LIST A/Q/PRON/PCP = A Q PRON A/N PCP1 PCP2 DV-MA ;  # dv-ma added 23.1.2001 
+LIST A/Q/PRON/NUM = A Q PRON A/N DV-MA NUM ;
+LIST A/Q/PRON/PCP/NUM = A Q PRON A/N PCP1 PCP2 DV-MA NUM ; 
+LIST A/PCP = A PCP1 PCP2 ; 
+LIST ABBR = ABBR ; 
+LIST ABE = ABE ; 
+LIST ABL = ABL ; 
+LIST ACT = ACT ; 
+LIST AD = AD ; 
+LIST AD/PCP = AD PCP1 PCP2 ; 
+LIST AD-A = AD-A ; 
+LIST AD-HYVIN = "aikaisin" "alas" "alhaalla" "alhaalta" "alhaalle" "harvoin"  "hiljaa" "kauan" "kauas" "kaukaa" "kaukana" "paljon" "pian" "sekaisin"  "tarkoin" "suoraan" "usein" "varhain" "yksin" "mielellään" "vähän"  "lähellä" "läheltä" "lähelle" "myöhään" ; 
+LIST AD-MILTEI = "kokonaan" "hiljaa" "suoraan" "yksin" "sekaisin" "tyystin" "täysin" ; 
+LIST AD-PALJON = "aika" "erittäin" "ihan" "hyvin" "kovin" "kyllin" "liian"  "melko" "niin" "noin" "näin" "perin" "sangen" "varsin" "ylen"  "yhtä" "jokseenkin" "kylliksi" "tarpeeksi" "vallan" "kuinka"  "miten" "oikein" ; 
+LIST AD+PCP1 = "ailahdella" "arveluttaa" "haastaa" "haavoittua" "houkutella" "huomata" "huvittaa" "ilahduttaa" "kannattaa" "raivostua" "kattaa" "kiehtoa" "kiinnostaa" "kunnioittaa" "kuulua" "kuvata" "laskelmoida" "luottaa" "luvata" "mahtailla" "mullistaa" "painaa" "paljastaa" "rasittaa" "rohkaista" "sopia" "taitaa" "valaista"  "vaatia" "vaihdella" "vakuuttaa" "uhata" "toivoa" "suositella" "suoda" "tarttua" "tavoitella" "merkitä" "uskoa" "valittaa" "luulla" "yllättää" "tuomita" ; 
+LIST AD+PCP2 = "alistaa" "ansaita" "arvostaa" "hallita" "hermostua" "huolestua" "innostua" "kiinnostua" "kiusaantua" "kokea" "loukkaantua" "masentua" "pelkistää" "pettyä" "pitää" "hillitä" "rajoittaa" "saastua" "suosia" "tyrmistyä" "vaivautua" "vakuuttua" ; 
+LIST ADE = ADE ; 
+LIST ADSET = "hyvin" "melko" "melkein" "kovin" "niin" "näin" ; 
+LIST ADV = ADV ; 
+LIST ADV/PL = ADV PL ; 
+LIST AIKA = "aika" ; 
+LIST AIVAN-IHAN = "aivan" "ihan" "melkein" ; 
+LIST ALETA = "aleta" ; 
+LIST ALL = ALL ; 
+LIST ALL-POSP = "asti" ; 
+LIST ASIA = "asia" ; 
+LIST ASTI = "asti" "saakka" ; 
+LIST ASTUA = "astua" ; 
+LIST AUX-S = "itse" "kaikki" "kumpikin" "molemmat" ; 
+LIST AVOSYLIN = "avo_syli" ; 
+LIST C = C ; 
+LIST CAP/NOCAP = CAP NOCAP ; 
+LIST C/ADV = C ADV ; 
+LIST C-ADV-ETC = C ADV >>> "<$\,>" "olla" ; 
+LIST CLB? = >>> <<< "<$\:>" "<$\#>" "<$\(>" "<$\>" "<$\'>" "<$\">" "<$\,>" REL "<$->" "kuinka" "miten" "milloin" "-" C KO PUNCT ; 
+LIST CLB?-C = >>> <<< "<$\:>" "<$\#>" "<$\(>" "<$\>" "<$\'>" "<$\">" "<$\,>"  "<$->" ; 
+LIST CLB?/NEG = >>> <<< "<$\:>" "<$\#>" "<$\(>" "<$\>" "<$\'>" "<$\">" "<$\,>"  C NEG ; 
+LIST CMP = CMP ; 
+LIST CMP-ENNEN = CMP "ennen" ; 
+LIST CMP/SUP = CMP SUP ; 
+LIST COLON = "<$\:>" ; 
+LIST COM = COM ; 
+LIST COMMA = "<$\,>" ; 
+LIST COMMA/N/PRON/Q = "<$\,>" N PRON Q ; 
+LIST COMMA/N/PRON/Q/V/SUP/>>> = "<$\,>" N PRON Q V SUP >>> "kuin" ; 
+LIST COP = COP ; 
+LIST COND = COND ; 
+LIST DA-US = DA-US ; 
+LIST DEM = DEM ; 
+LIST DER = DA-UUS DA-US DN-INEN DN-LAINEN DN-LLINEN  DN-UUS ; 
+LIST DET = DET ; 
+LIST DUMMY = DUMMY ; 
+LIST DV = DV-MINEN DV-US DV-NTA DV-TTA ; 
+LIST DV-MA = DV-MA ; 
+LIST DV-TTA = DV-TTA ; 
+LIST DV-US = DV-US ; 
+LIST EHTA = "ehta" "normaalinen" "lehtinen" "koti-ikävä" ; 
+LIST ELA = ELA ; 
+LIST ELA-POSP = "asti" "huolimatta" ; 
+LIST ELA-PREP = "huolimatta" ; 
+LIST ELA/ABL = ELA ABL ; 
+LIST ELA/TRA/ILL/ALL = ELA TRA ILL ALL ; 
+LIST ELAMA/KUOLEMA = "elämä" "kuolema" "voima" "taantuma" ; 
+LIST ELAVA-SELVA = "elää" "elävä" "selvä" ; 
+LIST ENEM-VAHEM = "enemmän" "vähemmän" "tarpeeksi" ; 
+LIST ENEMMAN = "enemmän" ; 
+LIST ENNEN = "ennen" ; 
+LIST ERI = "eri" ; 
+LIST ESIM = "esimerkiksi" ; 
+LIST ESS = ESS ; 
+LIST ETTA = "että" ; 
+LIST EXT-LOC = ADE ABL ALL ; 
+LIST GEN = GEN ; 
+LIST GEN/NUM = GEN NUM <DIGIT> ; 
+LIST GEN-PREP = "yli" "läpi" ; 
+LIST GEN-WORD = "metri" "milli_metri" "kilo_metri" "vuosi" "päivä" "kuu_kausi"  "minuutti" "sekunti" "tunti" "vuoro_kausi" "maa" "prosentti" "paras" "markka"  "penni" "dollari" "kruunu" "henkilö" "kierros" "maa" "maisema" "uutinen" "tienoo" ; 
+LIST GEN/PTV = GEN PTV ; 
+LIST GEN/PTV/ACC = GEN PTV ACC ; 
+LIST GEN/PUNCT = GEN PUNCT ; 
+LIST HARVA = "harva" "kumpikin" "suora" ; 
+LIST HARVA-SET = "asua" "tahti" "hammas" "verkko" "pensaikko" "asutus" ; 
+LIST HITTO = INTJ "hitto" "herra_jumala" "kuinka" "sinä" "te" "<\!>"  "hellanlettas" "saatana" "perkele" "vittu" "voi" ; 
+LIST HYVA = "hyvä" ; 
+LIST HYVA/HUONO = "hyvä" "huono" "ikävä" "kiva" "mukava" "hauska" "järkevä"  "vaikea" "helppo" "mahdollinen" "mahdoton" "tärkeä" "hankala"  "aiheellinen" "tarpeellinen" "välttämätön" ; 
+LIST HYVANSA = "hyvänsä" ; 
+LIST HYVIN-1 = "hyvin" ; 
+LIST HYVIN = "aikaisin" "alas" "alhaalla" "alhaalta" "alhaalle" "harvoin" "hiljaa" "kauan" "kauas" "kaukaa" "kaukana" "paljon" "pian" "sekaisin" "tarkoin" "suoraan" "usein" "varhain" "yksin" "mielellään" "vähän" "lähellä" "läheltä" "lähelle" "hyvin" "tyystin" "kovin" "monasti" "paljon" "usein" "ylhäällä" "usea" "harva" "moni" "monta" "kovaa" "hiljaa" "täynnä" ; 
+LIST ILL = ILL ; 
+LIST ILL/ALL = ILL ALL ; 
+LIST ILL/TRA = ILL TRA ; 
+LIST ILL/TRA/ALL = ILL TRA ALL ; 
+LIST ILL-POSP = "asti" ; 
+LIST ILL-VERB = "vaikuttaa" "rientää" "siirtää" "siirtyä" "pyytää" "tuoda" ; 
+LIST IMPV = IMPV ; 
+LIST INE = INE ; 
+LIST INF1 = INF1 ; 
+LIST INF123 = INF1 INF2 INF3 ; 
+LIST INF1/3 = INF1 INF3 ; 
+LIST INF1-VERB = "alkaa" "haluta" "tahtoa" "yrittää" "päättää" "saada" "voida"  "täytyä" "sallia" "luvata" "aikoa" "meinata" "pitää" "sietää" "tulla"  "tarvita" "viitsiä" "antaa" "muistaa" "unohtaa" "saattaa" "uskaltaa"  "pelätä" "kannattaa" "mahtaa" ; 
+LIST INF3 = INF3 ; 
+LIST INFV = INF1 INF2 INF3 PCP1 PCP2 ; 
+LIST INS = INS ; 
+LIST INT-LOC = INE ELA ILL ; 
+LIST INTERR = INTERR ; 
+LIST INTERR-KO = INTERR KO ; 
+LIST INTG = INTG ; 
+LIST INTJ = INTJ ; 
+LIST ITSE = "itse" ; 
+LIST JALKEEN = "jälkeen" ; 
+LIST JOHDOSTA = "johdosta" ; 
+LIST JOKA = "joka" ; 
+LIST JOKIN = "jokin" ; 
+LIST JOS/KUN/KOSKA/VAIKKA = "jos" "kun" "koska" "vaikka" ; 
+LIST JOS/VAIKKA = "jos" "vaikka" ; 
+LIST JUURI = "juuri" "koko" ; 
+LIST KAIKKI = "kaikki" ; 
+LIST KAIKKIAAN = "kaikkiaan" ; 
+LIST KANSSA = "kanssa" ; 
+LIST KAUPPA = "kauppa" ; 
+LIST KAUTTA = "kautta" ; 
+LIST KELLO = "kello" "klo" ; 
+LIST KERRAN = "kerta" ; # NB KERRAN NOT YET ADV IN FINTWOL ; 
+LIST KERTA = "kerta" "tapaus" "paikka" "puoli" "suhde" "suunta" "ainoa" "ikinen" "käänne" "lähtö" ; 
+LIST KESKUSTA = "keskusta" ; 
+LIST KIELI = "kieli" "virka_kieli" "kieli_muoto" "kieli_kunta" "kieli_kohtainen" "suku_kieli" "kieli_perhe" "opiskelu" "opiskella" "opettaa" "opetus" "tyttö_koulu" "poika_koulu" "hallinto_kieli" "yli_opisto" "korkea_koulu" "perus_koulu" "koulu" "opetus_ohjelma" ; 
+LIST KO = KO ; 
+LIST KOKO = "koko" ; 
+LIST KOOTA = "koota" "haluta" "siirtää" "siirtyä" "tulla" "mennä" "ottaa" "vetää" "sijoittaa" "majoittaa" "muuttaa" ; 
+LIST KUIN = "kuin" ; 
+LIST KUINKA-MITEN-MILLOIN = "kuinka" "miten" "milloin" ; 
+LIST KYSY = "kysyä" "kysymys" "tiedustelu" "tiedustella" KO ; 
+LIST LAILLA = "lailla" ; 
+LIST LOC-CASE = INE ELA ILL ADE ABL ALL ; 
+LIST LIIAN = "liian" ; 
+LIST LUKU = "num-luku" ; 
+LIST MAANANTAI = "maanantai" "tiistai" "keskiviikko" "torstai" "perjantai"  "lauantai" "sunnuntai" ; 
+LIST MAINV = PRES PAST IMPV ; 
+LIST MAINV/CLB? = PRES PAST IMPV >>> <<< "<$\:>" "<$\#>" "<$\(>" "<$\>" "<$\'>" "<$\">" "<$\,>" c ; 
+LIST MAKSAA = "maksaa" "tuntua" ; 
+LIST MAN = MAN ; 
+LIST ME = "me" ; 
+LIST MENNA = "mennä" ; 
+LIST MIELI = "mieli" ; 
+LIST MIKA-KUKA = "mikä" "kuka" ; 
+LIST MINA = "minä" ; 
+LIST MITTAINEN = "mittainen" "pituinen" "kokoinen" "oloinen" "tuntuinen" "näköinen" "painoinen" "kaltainen" "tapainen" "mukainen" "sorttinen" ; 
+LIST MUKAINEN = "mukainen" "tuntuinen" "oloinen"  ; 
+LIST MYOS = "myös" ; 
+LIST N = N ; 
+LIST N-A/N = N A/N ; 
+LIST N/ABBR = N ABBR ; 
+LIST N/NUM = N NUM ; 
+LIST N/PRON = N PRON ; 
+LIST N/PRON/Q = N PRON Q ; 
+LIST N/PRON/Q/A/NUM = N PRON Q A NUM ; 
+LIST N/V/A/PRON/Q = N V A A/N PRON Q ; 
+LIST N/PRON = N PRON A/N ; 
+LIST N/PRON/Q/V/SUP = N PRON Q V SUP ; 
+LIST NAIN = "näin" ; 
+LIST NEG = NEG ; 
+LIST NEG-AMBIGUOUS = "niittää" "muuttaa" "kerrata" "he" ; 
+LIST NEGV = NEGV ; 
+LIST NES = "pitää" "täytyä" "täytyy" "tulla" "pakko" ; 
+LIST NIIN = "niin" ; 
+LIST NIIN-YHA = "niin" "yhä" "yli" "ylitse" "mitä" ; 
+LIST NIIN-NOIN-NAIN = "niin" "noin" "näin" ; 
+LIST NOM = NOM ; 
+LIST NOM/GEN/PTV = NOM GEN PTV ; 
+LIST NOM/PTV = NOM PTV ; 
+LIST NOMHEAD = N PRON NUM ; 
+LIST NOMINAL-FORM = INF1 INF2 INF3 PCP1 PCP2 ; 
+LIST NONSUBJECT-CASE = ESS TRA INE ELA ILL ADE ABL ALL ABE COM INS ; 
+LIST NORJA = "norja" "suomi" ; 
+LIST NOT-GEN-CASE = NOM PTV INE ELA ILL ADE ABL ALL ESS TRA ABE COM INS ; 
+LIST NOUN+INF1 = "halu" "tahto" "yritys" "päätös" "lupa" "aikomus" "tarve" "alttius" "tavoite" "oikeus" "mahdollisuus" "velvollisuus" "valmius" "ajatus" "tarkoitus" "syy" "tapa" "määrä" "pyrkimys" "pakko" "kyky" "taito" "vara" "hanke" "vastentahtoisuus" "keino" "aika" ; 
+LIST NOUN-OF-MEASURE = "kilo" "metri" "litra" "osa" "pala" ; 
+LIST NUM = NUM ; 
+LIST NUM/C/HETI/CLB = NUM "heti" >>> <<< "<$\:>" "<$\#>" "<$\(>" "<$\>" "<$\'>" "<$\">" "<$\,>" REL "<$->" "kuinka" "miten" "milloin" "-" C KO PUNCT ; 
+LIST NUM/PRON = NUM PRON ; 
+LIST NUM-PUOLET-KOLMANNES = NUM "puoli" "kolmannes" "neljännes" "viidennes" "kuudennes" "seitsemännes" "kahdeksannes" "yhdeksännes" ; 
+LIST NUM-Q-ILL = NUM Q ILL ; 
+LIST OLLA = "olla" ; 
+LIST OLLA/TULLA = "olla" "tulla" ; 
+LIST OMIEN = "oma" "kirja" "asia" ; 
+LIST ORD = ORD ; 
+LIST OTTAA = "ottaa" ; 
+LIST OTTAA-2 = "ottaa" "omaksua" "liittää" "antaa" "siirtyä" ; 
+LIST OTTAA/KELVATA = "ottaa" "kelvata" ; 
+LIST P-3 = P-3 ; 
+LIST PAATTYA = "päättyä" "loppua" "johtaa" ; 
+LIST PARI/PUOLI = "pari" "puoli" ; 
+LIST PAASTA = "laskea" "sijoittaa" "antaa" "sallia" "tunkeutua" ; 
+LIST PALJON = "paljon" "vähän" "jonkin=verran" ; 
+LIST PALJON-MONI = "paljon" "vähän" "moni" "usea" "harva" "hyvin" "oikein" "väärin" "kovin" "tarpeeksi" ; 
+LIST PANNA = "panna" "arpi" "sakka" ; 
+LIST PAST = PAST ; 
+LIST PCP = PCP1 PCP2 ; 
+LIST PCP1 = PCP1 ; 
+LIST PCP2 = PCP2 ; 
+LIST PCP2/INF3/INF2/REF/TEMP = PCP2 INF3 INF2 REF TEMP ; 
+LIST PE4 = PE4 ; 
+LIST PERS = PERS ; 
+LIST PERSPL123 = "me" "te" "he" ; 
+LIST PIENIA/ELAA = "pieniä" "elää" "omata" "juuria" ; 
+LIST PL = PL SG/PL ; 
+LIST PL1 = PL1 ; 
+LIST PL3 = PL3 ; 
+LIST PL123 = PL1 PL2 PL3 ; 
+LIST POIKA = "poika" "mies" "veijari" "elämä" "tapa" ; 
+LIST POSS-DEL-V = "pitää" "saada" "tehdä" "menettää" "kestää" "pitää" "ummistaa" "kantaa" ; 
+LIST POSS-NOMSG = "surma" "paikka" "kaikki" "merkitys" "aika" "pinta" "silmä" "vastuu" ; 
+LIST POSS-NOMPL = "kaikki" "aika" ; 
+LIST POTN = POTN ; 
+LIST PP = PP ; 
+LIST PRES = PRES ; 
+LIST PRES/PAST = PRES PAST ; 
+LIST PRON = PRON ; 
+LIST PROP = PROP ; 
+LIST PROP/HEUR = PROP <MORPH-HEUR!> ; 
+LIST PSP = PSP ; 
+LIST PSP-CASE = GEN PTV ELA ILL ABL ALL ; 
+LIST PSS = PSS ; 
+LIST PTV = PTV ; 
+LIST PTV/GEN = PTV GEN ; 
+LIST PTV/PUNCT = PTV PUNCT ; 
+LIST PUHUA = "puhua" "käyttää" "kirjoittaa" ; 
+LIST PUNCT = PUNCT ; 
+LIST PUOLA = "puola" ; 
+LIST PUOLI = "puoli" ; 
+LIST PUOLI-KOKO-OSA = "puoli" "koko" "osa" ; 
+LIST Q = Q ; 
+LIST QUANTIFIER = Q NUM ; 
+LIST QUOTE = QUOTE ; 
+LIST REF = REF ; 
+LIST REF/TEMP = REF TEMP ; 
+LIST REF-CORR = PRES PAST INF1 INF2 INF3 PCP2 ; 
+LIST REL = REL ; 
+LIST SAADA = "saada" ; 
+LIST SAAPUA = "saapua" ; # CLASH SAAPUA/SAAVUTTAA, I.E. ACT/PASS  ; 
+LIST SANOA = "sanoa" ; 
+LIST SE = "se" ; 
+LIST SEITSEMAN = "seitsemän" "kahdeksan" "yhdeksän" "kymmenen" ; 
+LIST SG = SG SG/PL ; 
+LIST SG1 = SG1 ; 
+LIST SG2 = SG2 ; 
+LIST SG3 = SG3 ; 
+LIST SG123 = SG1 SG2 SG3 ; 
+LIST SG12PL12PSS = SG1 SG2 PL1 PL2 PSS ; 
+LIST SIIRTYA-TULLA-JOUTUA = "siirtyä" "tulla" "joutua" "siirtää" "sijoittaa" ; 
+LIST SINA = "sinä" ; 
+LIST SITTEN = "sitten" ; 
+LIST SUB = SUB ; 
+LIST SUBJECT-CASE = NOM GEN PTV ; 
+LIST SUHTEEN = "suhteen" ; 
+LIST SUP = SUP ; 
+LIST TAHANSA/VAIN = "tahansa" "vain" "hyvänsä" "mikä" "mikäkin" "missäkin" "kulloinkin" ; 
+LIST TAHANSA-2 = "tahansa" "hyvänsä" ; 
+LIST TAI = "tai" "tahi" "taikka" ; 
+LIST TALLAINEN = NUM PRON DET "tällainen" "sellainen" "semmoinen" ; 
+LIST TALVINEN = "kesäinen" "keväinen" "syksyinen" "talvinen" ; 
+LIST TAMA = "tämä" ; 
+LIST TARVITA = "tarvita" "pitää" ; 
+LIST TE = "te" ; 
+LIST TEMP = TEMP ; 
+LIST THREE = \3 ; 
+LIST TIETAA = "tietää" "kysyä" "tiedustella" ; 
+LIST TILANNE = "tilanne" "kuusi" ; 
+LIST TIME-WORD = "tunti" "viikko" "kuu_kausi" "vuosi" "vuosi_kymmen" "vuosi_sata" "kausi" "kesä" "talvi" "syksy" "kevät" "hetki" "minuutti" "sekunti" "aamu" "ilta" "päivä" "ilta_päivä" "arki_aamu" "arki_päivä" "kesä_aamu" "maanantai" "tiistai" "keski_viikko" "torstai" "perjantai" "lauantai" "sunnuntai" "yö" ; 
+LIST TOSI = "tosi" ; 
+LIST TRA = TRA ; 
+LIST TULI = "tuli" "voi" "jätti" "myy" ; 
+LIST TULLA = "tulla" ; 
+LIST TULLA/SAADA = "tulla" "saada" ; 
+LIST TULOS = "tulos" ; 
+LIST TUO = "tuo" ; 
+LIST UP = UP ; 
+LIST UUSIA = "uusia" "pieniä" ; # AS A REPRESENTATIVE OF V/A -AMB 
+LIST V = V ; 
+LIST VAIKKA/KUIN/JOS = "vaikka" "kuin" "jos" "ties" ; 
+LIST VALLAN = "vallan" ; 
+LIST VALLAN-WDS = "saada" "poliittinen" "taloudellinen" "presidentti" "edus_kunta" "kuningas" "anastaa" "pitää" "joutua" "alistaa" "alla" "ottaa" "antaa" "luovuttaa" ; 
+LIST V-PL = PL1 PL2 PL3 ; 
+LIST V-SG = SG1 SG2 SG3 ; 
+LIST VERRAN = "verta" ; 
+LIST VFIN = PRES PAST COND POTN NEGV IMPV ; 
+LIST VFIN-C = PRES PAST COND POTN NEGV IMPV C ; 
+LIST VFIN-C-MYOS = PRES PAST COND POTN NEGV IMPV C "myös" ; 
+LIST VFIN-PCP = PRES PAST COND POTN NEGV IMPV PCP1 PCP2 ; 
+LIST VFIN/PCP2 = PAST PRES COND POTN PCP2 ; 
+LIST VFIN/PCP2/INF = PAST PRES COND POTN PCP2 INF1 INF2 INF3 REF TEMP ; 
+LIST VFIN-SGPL12 = SG1 SG2 PL1 PL2 ; 
+LIST VIIME = "viime" "ensi" "vuosi" ; 
+LIST VIREILLA = "vireillä" ; 
+LIST VOI = "voida" ; 
+LIST VOIMA = "voima" ; 
+LIST VUOSI = "vuosi" "kausi" "kevät_kausi" "syys_kausi" "kesä_kausi" "talvi_kausi" "alku_kausi" "loppu_kausi" ; 
+LIST VUO/VOI = "vuo" "voi" ; 
+LIST YKSI = "yksi" ; 
+LIST YLI/ALLE = "yli" "alle" ; 
+LIST YLLATTAA = "yllättää" ; 
 
-(>>> >>> ">>>" "<$START-P>" "<$start-p>")
-(<<< <<< "<<<" "<$END-P>" "<$end-p>")
-(<COERCE!> <COERCE!>)
-(UP UP)
-(<CORRECT!> <CORRECT!>)
-(<Del!> <Del!>)
-(<Digit> <Digit>)
-(<MORPH-HEUR!> <MORPH-HEUR!>)
-(<ELA-ADVL> <ELA-ADVL>)
-(<ELALEFT> <ELALEFT>)
-(<ELARIGHT> <ELARIGHT>)
-(<GENLEFT> <GENLEFT>)
-(<GENRIGHT> <GENRIGHT>)
-(<INF3-ELA> <INF3-ELA>)
-(<INF3-ILL> <INF3-ILL>)
-(<LG> <LG>)
-(<NEC-V> <NEC-V>)
-(<POSS> <POSS>)
-(<PTV-OBJ> <PTV-OBJ>)
-(<PTVLEFT> <PTVLEFT>)
-(<PTV-OBJ> <PTV-OBJ>)
-(<PTVRIGHT> <PTVRIGHT>)
-(<REF> <REF>)
-(<TIME> <TIME> "suku_polvi" "mies_polvi")
-(<TIME>/<MEASURE> <TIME> <MEASURE>)
-(<Title> <Title>)
-(<Title>/PROP <Title> PROP)
-(<Tulos> <Tulos>)
-(<YEAR> <YEAR>)
-(? "<$\?>")
-(?! "<$\?>" "<$\!>")
-(A A)
-(A-A/N A A/N)
-(A-A/N-PCP A A/N PCP1 PCP2)
-(A-A/N-Q A A/N Q)                 ; HIEMAN, HIUKAN
-(A/AD-A A A/N AD-A AD)
-(A/AD-A/Q A A/N AD-A AD Q)
-(A/ADV A A/N ADV)
-(A/ADV/PCP/DET/Q A ADV PCP1 PCP2 DET Q)
-(A/GEN A GEN)
-(A/N A N A/N)
-(A/N/Q/PRON A N Q PRON A/N)
-(A/N/Q/PRON/PCP/NUM A N Q PRON A/N PCP1 PCP2 NUM)
-(A/NUM/PRON/Q A NUM PRON Q)
-(A/Q/PRON A Q PRON A/N)
-(A/Q/PRON/PCP A Q PRON A/N PCP1 PCP2 DV-MA) ; dv-ma added 23.1.2001
-(A/Q/PRON/NUM A Q PRON A/N DV-MA NUM)
-(A/Q/PRON/PCP/NUM A Q PRON A/N PCP1 PCP2 DV-MA NUM)
-(A/PCP A PCP1 PCP2)
-(ABBR ABBR)
-(ABE ABE)
-(ABL ABL)
-(ACT ACT)
-(AD AD)
-(AD/PCP AD PCP1 PCP2)
-(AD-A AD-A)
-(AD-HYVIN "aikaisin" "alas" "alhaalla" "alhaalta" "alhaalle" "harvoin"
- "hiljaa" "kauan" "kauas" "kaukaa" "kaukana" "paljon" "pian" "sekaisin"
- "tarkoin" "suoraan" "usein" "varhain" "yksin" "mielellään" "vähän"
- "lähellä" "läheltä" "lähelle" "myöhään")
-(AD-MILTEI "kokonaan" "hiljaa" "suoraan" "yksin" "sekaisin" "tyystin" "täysin")
-(AD-PALJON "aika" "erittäin" "ihan" "hyvin" "kovin" "kyllin" "liian"
- "melko" "niin" "noin" "näin" "perin" "sangen" "varsin" "ylen"
- "yhtä" "jokseenkin" "kylliksi" "tarpeeksi" "vallan" "kuinka"
- "miten" "oikein")
-(AD+PCP1 "ailahdella" "arveluttaa" "haastaa" "haavoittua" "houkutella"
-"huomata" "huvittaa" "ilahduttaa" "kannattaa" "raivostua"
-"kattaa" "kiehtoa" "kiinnostaa" "kunnioittaa" "kuulua" "kuvata"
-"laskelmoida" "luottaa" "luvata" "mahtailla" "mullistaa"
-"painaa" "paljastaa" "rasittaa" "rohkaista" "sopia" "taitaa"
-"valaista"  "vaatia" "vaihdella" "vakuuttaa" "uhata" "toivoa"
-"suositella" "suoda" "tarttua" "tavoitella" "merkitä"
-"uskoa" "valittaa" "luulla" "yllättää" "tuomita")
-(AD+PCP2 "alistaa" "ansaita" "arvostaa" "hallita" "hermostua"
-"huolestua" "innostua" "kiinnostua" "kiusaantua" "kokea"
-"loukkaantua" "masentua" "pelkistää" "pettyä" "pitää" "hillitä"
-"rajoittaa" "saastua" "suosia" "tyrmistyä" "vaivautua" "vakuuttua")
-(ADE ADE)
-(ADSET "hyvin" "melko" "melkein" "kovin" "niin" "näin")
-(ADV ADV)
-(ADV/PL ADV PL)
-(AIKA "aika")
-(AIVAN-IHAN "aivan" "ihan" "melkein")
-(ALETA "aleta")
-(ALL ALL)
-(ALL-POSP "asti")
-(ASIA "asia")
-(ASTI "asti" "saakka")
-(ASTUA "astua")
-(AUX-S "itse" "kaikki" "kumpikin" "molemmat")
-(AVOSYLIN "avo_syli")
-(C C)
-(CAP/NOCAP CAP NOCAP)
-(C/ADV C ADV)
-(C-ADV-ETC C ADV >>> "<$\,>" "olla")
-(CLB? >>> <<< "<$\:>" "<$\;>" "<$\(>" "<$\)>" "<$\'>" "<$\">" "<$\,>" REL "<$->" "kuinka"
-"miten" "milloin" "-" C KO PUNCT)
-(CLB?-C >>> <<< "<$\:>" "<$\;>" "<$\(>" "<$\)>" "<$\'>" "<$\">" "<$\,>"
- "<$->")
-(CLB?/NEG >>> <<< "<$\:>" "<$\;>" "<$\(>" "<$\)>" "<$\'>" "<$\">" "<$\,>"
- C NEG)
-(CMP CMP)
-(CMP-ENNEN CMP "ennen")
-(CMP/SUP CMP SUP)
-(COLON "<$\:>")
-(COM COM)
-(COMMA "<$\,>")
-(COMMA/N/PRON/Q "<$\,>" N PRON Q)
-(COMMA/N/PRON/Q/V/SUP/>>> "<$\,>" N PRON Q V SUP >>> "kuin")
-(COP COP)
-(COND COND)
-(DA-US DA-US)
-(DEM DEM)
-(DER DA-UUS DA-US DN-INEN DN-LAINEN DN-LLINEN  DN-UUS)
-(DET DET)
-(DUMMY DUMMY)
-(DV DV-MINEN DV-US DV-NTA DV-TTA)
-(DV-MA DV-MA)
-(DV-TTA DV-TTA)
-(DV-US DV-US)
-(EHTA "ehta" "normaalinen" "lehtinen" "koti-ikävä")
-(ELA ELA)
-(ELA-POSP "asti" "huolimatta")
-(ELA-PREP "huolimatta")
-(ELA/ABL ELA ABL)
-(ELA/TRA/ILL/ALL ELA TRA ILL ALL)
-(ELAMA/KUOLEMA "elämä" "kuolema" "voima" "taantuma")
-(ELAVA-SELVA "elää" "elävä" "selvä")
-(ENEM-VAHEM "enemmän" "vähemmän" "tarpeeksi")
-(ENEMMAN "enemmän")
-(ENNEN "ennen")
-(ERI "eri")
-(ESIM "esimerkiksi")
-(ESS ESS)
-(ETTA "että")
-(EXT-LOC ADE ABL ALL)
-(GEN GEN)
-(GEN/NUM GEN NUM <DIGIT>)
-(GEN-PREP "yli" "läpi")
-(GEN-WORD "metri" "milli_metri" "kilo_metri" "vuosi" "päivä" "kuu_kausi"
- "minuutti" "sekunti" "tunti" "vuoro_kausi" "maa" "prosentti" "paras" "markka"
- "penni" "dollari" "kruunu" "henkilö" "kierros" "maa" "maisema" "uutinen" "tienoo")
-(GEN/PTV GEN PTV)
-(GEN/PTV/ACC GEN PTV ACC)
-(GEN/PUNCT GEN PUNCT)
-(HARVA "harva" "kumpikin" "suora")
-(HARVA-SET "asua" "tahti" "hammas" "verkko" "pensaikko" "asutus")
-(HITTO INTJ "hitto" "herra_jumala" "kuinka" "sinä" "te" "<\!>"
- "hellanlettas" "saatana" "perkele" "vittu" "voi")
-(HYVA "hyvä")
-(HYVA/HUONO "hyvä" "huono" "ikävä" "kiva" "mukava" "hauska" "järkevä"
- "vaikea" "helppo" "mahdollinen" "mahdoton" "tärkeä" "hankala"
- "aiheellinen" "tarpeellinen" "välttämätön")
-(HYVANSA "hyvänsä")
-(HYVIN-1 "hyvin")
-(HYVIN "aikaisin" "alas" "alhaalla" "alhaalta" "alhaalle" "harvoin"
-"hiljaa" "kauan" "kauas" "kaukaa" "kaukana" "paljon" "pian" "sekaisin"
-"tarkoin" "suoraan" "usein" "varhain" "yksin" "mielellään" "vähän"
-"lähellä" "läheltä" "lähelle" "hyvin" "tyystin" "kovin" "monasti"
-"paljon" "usein" "ylhäällä" "usea" "harva" "moni" "monta" "kovaa"
-"hiljaa" "täynnä")
-(ILL ILL)
-(ILL/ALL ILL ALL)
-(ILL/TRA ILL TRA)
-(ILL/TRA/ALL ILL TRA ALL)
-(ILL-POSP "asti")
-(ILL-VERB "vaikuttaa" "rientää" "siirtää" "siirtyä" "pyytää" "tuoda")
-(IMPV IMPV)
-(INE INE)
-(INF1 INF1)
-(INF123 INF1 INF2 INF3)
-(INF1/3 INF1 INF3)
-(INF1-VERB "alkaa" "haluta" "tahtoa" "yrittää" "päättää" "saada" "voida"
- "täytyä" "sallia" "luvata" "aikoa" "meinata" "pitää" "sietää" "tulla"
- "tarvita" "viitsiä" "antaa" "muistaa" "unohtaa" "saattaa" "uskaltaa"
- "pelätä" "kannattaa" "mahtaa")
-(INF3 INF3)
-(INFV INF1 INF2 INF3 PCP1 PCP2)
-(INS INS)
-(INT-LOC INE ELA ILL)
-(INTERR INTERR)
-(INTERR-KO INTERR KO)
-(INTG INTG)
-(INTJ INTJ)
-(ITSE "itse")
-(JALKEEN "jälkeen")
-(JOHDOSTA "johdosta")
-(JOKA "joka")
-(JOKIN "jokin")
-(JOS/KUN/KOSKA/VAIKKA "jos" "kun" "koska" "vaikka")
-(JOS/VAIKKA "jos" "vaikka")
-(JUURI "juuri" "koko")
-(KAIKKI "kaikki")
-(KAIKKIAAN "kaikkiaan")
-(KANSSA "kanssa")
-(KAUPPA "kauppa")
-(KAUTTA "kautta")
-(KELLO "kello" "klo")
-(KERRAN "kerta")    ; NB KERRAN NOT YET ADV IN FINTWOL
-(KERTA "kerta" "tapaus" "paikka" "puoli" "suhde" "suunta" "ainoa" "ikinen" "käänne" "lähtö")
-(KESKUSTA "keskusta")
-(KIELI "kieli" "virka_kieli" "kieli_muoto" "kieli_kunta"
-"kieli_kohtainen" "suku_kieli" "kieli_perhe" "opiskelu"
-"opiskella" "opettaa" "opetus" "tyttö_koulu" "poika_koulu"
-"hallinto_kieli" "yli_opisto" "korkea_koulu" "perus_koulu" "koulu"
-"opetus_ohjelma")
-(KO KO)
-(KOKO "koko")
-(KOOTA "koota" "haluta" "siirtää" "siirtyä" "tulla" "mennä" "ottaa"
-"vetää" "sijoittaa" "majoittaa" "muuttaa")
-(KUIN "kuin")
-(KUINKA-MITEN-MILLOIN "kuinka" "miten" "milloin")
-(KYSY "kysyä" "kysymys" "tiedustelu" "tiedustella" KO)
-(LAILLA "lailla")
-(LOC-CASE INE ELA ILL ADE ABL ALL)
-(LIIAN "liian")
-(LUKU "num-luku")
-(MAANANTAI "maanantai" "tiistai" "keskiviikko" "torstai" "perjantai"
- "lauantai" "sunnuntai")
-(MAINV PRES PAST IMPV)
-(MAINV/CLB? PRES PAST IMPV >>> <<< "<$\:>" "<$\;>" "<$\(>" "<$\)>" "<$\'>" "<$\">" "<$\,>" c)
-(MAKSAA "maksaa" "tuntua")
-(MAN MAN)
-(ME "me")
-(MENNA "mennä")
-(MIELI "mieli")
-(MIKA-KUKA "mikä" "kuka")
-(MINA "minä")
-(MITTAINEN "mittainen" "pituinen" "kokoinen" "oloinen" "tuntuinen"
-"näköinen" "painoinen" "kaltainen" "tapainen" "mukainen" "sorttinen")
-(MUKAINEN "mukainen" "tuntuinen" "oloinen" )
-(MYOS "myös")
-(N N)
-(N-A/N N A/N)
-(N/ABBR N ABBR)
-(N/NUM N NUM)
-(N/PRON N PRON)
-(N/PRON/Q N PRON Q)
-(N/PRON/Q/A/NUM N PRON Q A NUM)
-(N/V/A/PRON/Q N V A A/N PRON Q)
-(N/PRON N PRON A/N)
-(N/PRON/Q/V/SUP N PRON Q V SUP)
-(NAIN "näin")
-(NEG NEG)
-(NEG-AMBIGUOUS "niittää" "muuttaa" "kerrata" "he")
-(NEGV NEGV)
-(NES "pitää" "täytyä" "täytyy" "tulla" "pakko")
-(NIIN "niin")
-(NIIN-YHA "niin" "yhä" "yli" "ylitse" "mitä")
-(NIIN-NOIN-NAIN "niin" "noin" "näin")
-(NOM NOM)
-(NOM/GEN/PTV NOM GEN PTV)
-(NOM/PTV NOM PTV)
-(NOMHEAD N PRON NUM)
-(NOMINAL-FORM INF1 INF2 INF3 PCP1 PCP2)
-(NONSUBJECT-CASE ESS TRA INE ELA ILL ADE ABL ALL ABE COM INS)
-(NORJA "norja" "suomi")
-(NOT-GEN-CASE NOM PTV INE ELA ILL ADE ABL ALL ESS TRA ABE COM INS)
-(NOUN+INF1 "halu" "tahto" "yritys" "päätös" "lupa" "aikomus" "tarve" "alttius"
-"tavoite" "oikeus" "mahdollisuus" "velvollisuus" "valmius" "ajatus"
-"tarkoitus" "syy" "tapa" "määrä" "pyrkimys" "pakko" "kyky" "taito" "vara"
-"hanke" "vastentahtoisuus" "keino" "aika")
-(NOUN-OF-MEASURE "kilo" "metri" "litra" "osa" "pala")
-(NUM NUM)
-(NUM/C/HETI/CLB NUM "heti" >>> <<< "<$\:>" "<$\;>" "<$\(>" "<$\)>" "<$\'>"
-"<$\">" "<$\,>" REL "<$->" "kuinka" "miten" "milloin" "-" C KO PUNCT)
-(NUM/PRON NUM PRON)
-(NUM-PUOLET-KOLMANNES NUM "puoli" "kolmannes" "neljännes" "viidennes"
-"kuudennes" "seitsemännes" "kahdeksannes" "yhdeksännes")
-(NUM-Q-ILL NUM Q ILL)
-(OLLA "olla")
-(OLLA/TULLA "olla" "tulla")
-(OMIEN "oma" "kirja" "asia")
-(ORD ORD)
-(OTTAA "ottaa")
-(OTTAA-2 "ottaa" "omaksua" "liittää" "antaa" "siirtyä")
-(OTTAA/KELVATA "ottaa" "kelvata")
-(P-3 P-3)
-(PAATTYA "päättyä" "loppua" "johtaa")
-(PARI/PUOLI "pari" "puoli")
-(PAASTA "laskea" "sijoittaa" "antaa" "sallia" "tunkeutua")
-(PALJON "paljon" "vähän" "jonkin=verran")
-(PALJON-MONI "paljon" "vähän" "moni" "usea" "harva" "hyvin" "oikein" "väärin"
-"kovin" "tarpeeksi")
-(PANNA "panna" "arpi" "sakka")
-(PAST PAST)
-(PCP PCP1 PCP2)
-(PCP1 PCP1)
-(PCP2 PCP2)
-(PCP2/INF3/INF2/REF/TEMP PCP2 INF3 INF2 REF TEMP)
-(PE4 PE4)
-(PERS PERS)
-(PERSPL123 "me" "te" "he")
-(PIENIA/ELAA "pieniä" "elää" "omata" "juuria")
-(PL PL SG/PL)
-(PL1 PL1)
-(PL3 PL3)
-(PL123 PL1 PL2 PL3)
-(POIKA "poika" "mies" "veijari" "elämä" "tapa")
-(POSS-DEL-V "pitää" "saada" "tehdä" "menettää" "kestää" "pitää" "ummistaa"
-"kantaa")
-(POSS-NOMSG "surma" "paikka" "kaikki" "merkitys" "aika" "pinta"
-"silmä" "vastuu")
-(POSS-NOMPL "kaikki" "aika")
-(POTN POTN)
-(PP PP)
-(PRES PRES)
-(PRES/PAST PRES PAST)
-(PRON PRON)
-(PROP PROP)
-(PROP/HEUR PROP <MORPH-HEUR!>)
-(PSP PSP)
-(PSP-CASE GEN PTV ELA ILL ABL ALL)
-(PSS PSS)
-(PTV PTV)
-(PTV/GEN PTV GEN)
-(PTV/PUNCT PTV PUNCT)
-(PUHUA "puhua" "käyttää" "kirjoittaa")
-(PUNCT PUNCT)
-(PUOLA "puola")
-(PUOLI "puoli")
-(PUOLI-KOKO-OSA "puoli" "koko" "osa")
-(Q Q)
-(QUANTIFIER Q NUM)
-(QUOTE QUOTE)
-(REF REF)
-(REF/TEMP REF TEMP)
-(REF-CORR PRES PAST INF1 INF2 INF3 PCP2)
-(REL REL)
-(SAADA "saada")
-(SAAPUA "saapua")     ; CLASH SAAPUA/SAAVUTTAA, I.E. ACT/PASS
-(SANOA "sanoa")
-(SE "se")
-(SEITSEMAN "seitsemän" "kahdeksan" "yhdeksän" "kymmenen")
-(SG SG SG/PL)
-(SG1 SG1)
-(SG2 SG2)
-(SG3 SG3)
-(SG123 SG1 SG2 SG3)
-(SG12PL12PSS SG1 SG2 PL1 PL2 PSS)
-(SIIRTYA-TULLA-JOUTUA "siirtyä" "tulla" "joutua" "siirtää" "sijoittaa")
-(SINA "sinä")
-(SITTEN "sitten")
-(SUB SUB)
-(SUBJECT-CASE NOM GEN PTV)
-(SUHTEEN "suhteen")
-(SUP SUP)
-(TAHANSA/VAIN "tahansa" "vain" "hyvänsä" "mikä" "mikäkin" "missäkin"
-"kulloinkin")
-(TAHANSA-2 "tahansa" "hyvänsä")
-(TAI "tai" "tahi" "taikka")
-(TALLAINEN NUM PRON DET "tällainen" "sellainen" "semmoinen")
-(TALVINEN "kesäinen" "keväinen" "syksyinen" "talvinen")
-(TAMA "tämä")
-(TARVITA "tarvita" "pitää")
-(TE "te")
-(TEMP TEMP)
-(THREE \3)
-(TIETAA "tietää" "kysyä" "tiedustella")
-(TILANNE "tilanne" "kuusi")
-(TIME-WORD "tunti" "viikko" "kuu_kausi" "vuosi" "vuosi_kymmen" "vuosi_sata"
-"kausi" "kesä" "talvi" "syksy" "kevät" "hetki" "minuutti" "sekunti" "aamu" "ilta"
-"päivä" "ilta_päivä" "arki_aamu" "arki_päivä" "kesä_aamu" "maanantai" "tiistai"
-"keski_viikko" "torstai" "perjantai" "lauantai" "sunnuntai" "yö")
-(TOSI "tosi")
-(TRA TRA)
-(TULI "tuli" "voi" "jätti" "myy")
-(TULLA "tulla")
-(TULLA/SAADA "tulla" "saada")
-(TULOS "tulos")
-(TUO "tuo")
-(UP UP)
-(UUSIA "uusia" "pieniä")     ; AS A REPRESENTATIVE OF V/A -AMB
-(V V)
-(VAIKKA/KUIN/JOS "vaikka" "kuin" "jos" "ties")
-(VALLAN "vallan")
-(VALLAN-WDS "saada" "poliittinen" "taloudellinen" "presidentti"
-"edus_kunta" "kuningas" "anastaa" "pitää" "joutua"
-"alistaa" "alla" "ottaa" "antaa" "luovuttaa")
-(V-PL PL1 PL2 PL3)
-(V-SG SG1 SG2 SG3)
-(VERRAN "verta")
-(VFIN PRES PAST COND POTN NEGV IMPV)
-(VFIN-C PRES PAST COND POTN NEGV IMPV C)
-(VFIN-C-MYOS PRES PAST COND POTN NEGV IMPV C "myös")
-(VFIN-PCP PRES PAST COND POTN NEGV IMPV PCP1 PCP2)
-(VFIN/PCP2 PAST PRES COND POTN PCP2)
-(VFIN/PCP2/INF PAST PRES COND POTN PCP2 INF1 INF2 INF3 REF TEMP)
-(VFIN-SGPL12 SG1 SG2 PL1 PL2)
-(VIIME "viime" "ensi" "vuosi")
-(VIREILLA "vireillä")
-(VOI "voida")
-(VOIMA "voima")
-(VUOSI "vuosi" "kausi" "kevät_kausi" "syys_kausi" "kesä_kausi" "talvi_kausi"
-"alku_kausi" "loppu_kausi")
-(VUO/VOI "vuo" "voi")
-(YKSI "yksi")
-(YLI/ALLE "yli" "alle")
-(YLLATTAA "yllättää")
 
-SYNTACTIC-FUNCTION-DECLARATIONS
-(@+FM @-FMN @-FMP @-FMI @+FAUX @-FAUX @-FMQ @H @S @NEC-S @NF-S @O @PC @ADVL @N> @NN> @AD-A> @<P @P> @<PN @C @OA @A> @AUX-S @AUX-O)
 
-;FORM LIST UNDER GLOBAL VARIABLE S-FUNCTIONS
 
-;@NN> added 28.4.2000 for "Linn Karlssonin",@NEC-S for gen subjs 10.7.00
-(@+FM @-FMN @-FMP @-FMI @+FAUX @-FAUX @-FMQ @H @S @NEC-S @NF-S @O @PC @ADVL @N> @NN> @AD-A> @<P @P> @<PN @C @OA @A> @AUX-S @AUX-O)
 
-PRINCIPAL-FUNCTION-DECLARATIONS
 
-(@S @O @PC)
 
-; BARRIERS in var AUP-BORDERS
-(>>> <<< "<$\:>" "<$\;>" "<$\(>" "<$\)>" "<$\'>" "<$\">" "<$\,>" REL
+
+
+
+
+
+# SYNTACTIC FUNCTION DECLARATIONS
+
+LIST @+FM = @+FM ; 
+LIST @-FMN = @-FMN ; 
+LIST @-FMP = @-FMP ; 
+LIST @-FMI = @-FMI ; 
+LIST @+FAUX = @+FAUX ; 
+LIST @-FAUX = @-FAUX ; 
+LIST @-FMQ = @-FMQ ; 
+LIST @H = @H ; 
+LIST @S = @S ; 
+LIST @NEC-S = @NEC-S ; 
+LIST @NF-S = @NF-S ; 
+LIST @O = @O ; 
+LIST @PC = @PC ; 
+LIST @ADVL = @ADVL ; 
+LIST @N> = @N> ; 
+LIST @NN> = @NN> ; 
+LIST @AD-A> = @AD-A> ; 
+LIST @<P = @<P ; 
+LIST @P> = @P> ; 
+LIST @<PN = @<PN ; 
+LIST @C = @C ; 
+LIST @OA = @OA ; 
+LIST @A> = @A> ; 
+LIST @AUX-S = @AUX-S ; 
+LIST @AUX-O = @AUX-O ; 
+
+
+LIST SYNFUNC = @+FM @-FMN @-FMP @-FMI @+FAUX @-FAUX @-FMQ @H @S @NEC-S @NF-S @O @PC @ADVL @N> @NN> @AD-A> @<P @P> @<PN @C @OA @A> @AUX-S @AUX-O ;
+
+# PRINCIPAL FUNCTION DECLARATIONS
+
+LIST PRINCIPAL-FUNCTION-DECLARATIONS = @S @O @PC ;
+
+# BARRIERS in var AUP-BORDERS
+(>>> <<< "<$\:>" "<$\#>" "<$\(>" "<$\)>" "<$\'>" "<$\">" "<$\,>" REL
  "<$->" "kuinka" "miten" "milloin" "-" C KO PUNCT)
 
-TEMPLATES
 
-MORPHOSYNTACTIC-MAPPINGS
+SECTION
 
-CLAUSE-BOUNDARY-CONSTRAINTS
+# CLAUSE BOUNDARY CONSTRAINTS
+
 (@w =**CLB (COMMA) (0 PUNCT))
 (@w =**CLB (C) (1 VFIN))
 (@w =**CLB (C) (2 VFIN))
 (@w =**CLB (C) (3 VFIN))
-;(@w =**CLB (C) (NOT 1 DUMMY))
+#(@w =**CLB (C) (NOT 1 DUMMY))
 (@w =**CLB (REL) (NOT 1 DUMMY))
 (@w =**CLB (KO) (NOT 1 DUMMY))
 (@w =**CLB (ADV) (0 KUINKA-MITEN-MILLOIN))
 
 
-DISAMBIGUATION-CONSTRAINTS
-("<puoli>" =! (NUM) (1 N) (1 PTV)) ; used to be "!!" before 7.12.2000
-  ;"=s0<PUOLI>"
-  ;       "PUOLI" NUM NOM SG (@HEAD @NOM>)
-  ;       "PUOLI" N NOM SG (@HEAD)
-  ; PUOLI VUOTTA/KILOA
+SECTION
+
+("<puoli>" =! (NUM) (1 N) (1 PTV)) # used to be "!!" before 7.12.2000
+  #"=s0<PUOLI>"
+  #       "PUOLI" NUM NOM SG (@HEAD @NOM>)
+  #       "PUOLI" N NOM SG (@HEAD)
+  # PUOLI VUOTTA/KILOA
 
 (@w =! (A INS) (1 N) (1 INS))
-  ; CASE AGREEMENT IN NP
+  # CASE AGREEMENT IN NP
 (@w =!! (PRON INS) (1 INS))
-  ; CASE AGREEMENT IN NP
+  # CASE AGREEMENT IN NP
 
-;------------------------------------------------------------
-;======================================================================
-; WORD-FORM SPECIFIC:
+# ------------------------------------------------------------
+# ======================================================================
+# WORD-FORM SPECIFIC:
 
 ("<ajan>" =! (N) (-1 GEN))
 ("<ajan>" =! (N) (-1 KOKO))
@@ -481,57 +455,57 @@ DISAMBIGUATION-CONSTRAINTS
 ("<juurikaan>" =! (ADV) (NOT 1 DUMMY))
 ("<jäljelle>" =! (ADV) (NOT 1 DUMMY))
 ("<kautta>" =! (PSP) (-1 GEN/PTV))
-("<kerrassaan>" =! (AD) (NOT 1 DUMMY))      ; NEVER N
-("<kieli>" =! (N) (*1 CLB? *L) (NOT *L ELA))   ; "KIELII JOSTAKIN"
- ; RISKY
+("<kerrassaan>" =! (AD) (NOT 1 DUMMY))      # NEVER N
+("<kieli>" =! (N) (*1 CLB? *L) (NOT *L ELA))   # "KIELII JOSTAKIN"
+ # RISKY
 ("<korvaa>" =! (V) (-1 N) (-1 NOM))
 ("<kyllin>" =! (AD) (NOT 1 DUMMY))
 ("<lainkaan>" =! (ADV) (NOT 1 DUMMY))
- ; RISKY
+ # RISKY
 ("<liiaksi>" =! (ADV) (NOT 1 DUMMY))
 ("<liikaa>" =!! (ADV) (NOT 1 PTV))
 ("<lupasi>" =! (V) (NOT 1 DUMMY))
- ; RISKY
+ # RISKY
 ("<lähetii>" =! (V) (-1C NOM) (-1 SG))
 ("<läpeensä>" =! (AD) (NOT 1 DUMMY))
 ("<merkitystä>" =! (N PTV) (NOT 1 ELA))
 ("<mikä>" =! (Q) (1C N) (1 NOM) (1 SG) (NOT -1 >>>))
-      ; RISKY SHOULD ALSO BE (NOT -2 "KYSYMYS" ETC.; ", MIKä VOI..."
+      # RISKY SHOULD ALSO BE (NOT -2 "KYSYMYS" ETC.# ", MIKä VOI..."
 ("<määrin>" =! (N INS PL)  (NOT 1 DUMMY))
-;("<niin>" =! (AD-A) (1 A/AD-A) (NOT *2 KUIN))
+#("<niin>" =! (AD-A) (1 A/AD-A) (NOT *2 KUIN))
 ("<nähden>" =!! (PSP) (-1 ILL))
 ("<oikein>" =!! (A SUP) (1 N) (1 NOM) (1 SG))
 ("<ollut>" =! (COP) (NOT 1 DUMMY))
 ("<ollenkaan>" =! (ADV) (NOT 1 DUMMY))
 ("<oman>" =! (A) (NOT 1 DUMMY))
 ("<omaan>" =! (A) (NOT 1 DUMMY))
- ; RISKY
+ # RISKY
 ("<noissa>" =! (PRON) (NOT 1 DUMMY))
 ("<näyttävä>" =! (ACT) (NOT 1 DUMMY))
 ("<pari>" =! (NUM) (1 NUM))
 ("<peräisin>" =! (ADV) (*-1 OLLA))
 ("<puolen>" =! (NUM) (1 NUM))
- ; PUOLEN MILJOONAN MK:N
+ # PUOLEN MILJOONAN MK:N
 ("<puolen>" =! (N) (1 N) (NOT 1 GEN))
- ; PORVARILLISEN PUOLEN UUSJAKO
+ # PORVARILLISEN PUOLEN UUSJAKO
 ("<puolestaan>" =! (ADV) (NOT -1 GEN) (NOT -1 ELA))
 ("<päivittäin>" =0 (DN-ITTAIN ADV) (NOT 1 DUMMY))
 ("<pääsi>" =! (V) (NOT 1 DUMMY))
- ; RISKY
+ # RISKY
 ("<sataa>" =! (NUM) (-1 NUM))
 ("<seurasi>" =! (V) (NOT 1 DUMMY))
- ; RISKY
+ # RISKY
 ("<suominen>" =! (PROP) (NOT 0 CAP/NOCAP))
 ("<se>" =! (PRON) (NOT 1 DUMMY))
 ("<se>" =! (PRON) (NOT 1 DUMMY))
 ("<sekin>" =! (PRON) (NOT 1 DUMMY))
 ("<sekin>" =! (PRON) (NOT 1 DUMMY))
- ; RISKY, CF. "SEKKI"
-("<sillä>" =! (SUB) (1 DUMMY)) ; XXXX OUT
-  ; A BIT RISKY
-("<sillä>" =! (PRON) (1 DUMMY)) ; XXXX OUT
+ # RISKY, CF. "SEKKI"
+("<sillä>" =! (SUB) (1 DUMMY)) # XXXX OUT
+  # A BIT RISKY
+("<sillä>" =! (PRON) (1 DUMMY)) # XXXX OUT
 ("<suoraan>" =! (ADV) (NOT 1 ILL))
- ; RISKY
+ # RISKY
 ("<tarpeeksi>" =0 (N) (NOT -1 TRA))
 ("<todella>" =! (ADV) (NOT 1 ADE))
 ("<toisekseen>" =! (ADV) (-2 CLB?))
@@ -542,14 +516,14 @@ DISAMBIGUATION-CONSTRAINTS
 ("<vaan>" =! (SUB) (1 NOMHEAD))
 ("<vastaan>" =! (ADV) (-1 OTTAA))
 ("<verraten>" =!! (V INF2) (-1 ILL))
-;======================================================================
+#======================================================================
 
-;; *** A ***
-;(@w =! (A NOM SG) (1C N) (1C SG) (1 NOM))
+## *** A ***
+#(@w =! (A NOM SG) (1C N) (1C SG) (1 NOM))
 
 (@w =! (A "aika") (1C N) (1 NOM/GEN/PTV))
 (@w =! (A "arvoinen") (-1 GEN))
-(@w =!! (A GEN SG "enempi") (1 DUMMY));   (1C GEN) (1 SG) (1 N))  XXXX
+(@w =!! (A GEN SG "enempi") (1 DUMMY))#   (1C GEN) (1 SG) (1 N))  XXXX
 (@w =! (A "ensi") (NOT 1 DUMMY))
 (@w =! (A "erityinen") (NOT 1 DUMMY))
 (@w =! (A "jälkeinen") (1 N))
@@ -563,13 +537,13 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =! (A PTV "perinteinen") (1 PTV))
 (@w =! (A PTV PL "pieni") (NOT 1 DUMMY))
 (@w =! (INS "puoli") (-1 INS))
-(@w =0 (A ALL SG P-3 "tarkka") (NOT 1 DUMMY))   ; TARKALLEEN
+(@w =0 (A ALL SG P-3 "tarkka") (NOT 1 DUMMY))   # TARKALLEEN
 (@w =! (A "tärkeä") (NOT 1 DUMMY))
-(@w =0 (A ELA SG P-3 "uusi") (NOT 1 DUMMY))   ; UUDESTAAN
-;(@w =! (A NOM SG "uusi") (1C N) (1C SG) (1 NOM))
-;(@w =! (A PTV PL "uusi") (1 N) (1 PTV) (1 PL))
+(@w =0 (A ELA SG P-3 "uusi") (NOT 1 DUMMY))   # UUDESTAAN
+#(@w =! (A NOM SG "uusi") (1C N) (1C SG) (1 NOM))
+#(@w =! (A PTV PL "uusi") (1 N) (1 PTV) (1 PL))
 (@w =! (A PTV PL) (1C PTV) (1 PL) (NOT 0 <POSS>) (NOT 0 HARVA))
-; OMIA TALOJA; ACTUALLY SUBSUMED BY (A PTV PL) -RULES BELOW
+# OMIA TALOJA# ACTUALLY SUBSUMED BY (A PTV PL) -RULES BELOW
 (@w =0 (A INE PL "vaalea") (NOT 1 INE))
 (@w =0 (A ELA PL "vaalea") (NOT 1 ELA))
 (@w =0 (A ILL PL "vaalea") (NOT 1 ILL))
@@ -581,12 +555,12 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =! (A GEN SG "vapaa") (-1 GEN))
 (@w =! (A "vieras") (1 DUMMY))
 (@w =0 (A "voinen") (NOT 1 DUMMY))
-(@w =! (A GEN "vähä") (1 DUMMY));  (1 GEN) (1 N))    ; VäHäN AJAN KULUTTUA
+(@w =! (A GEN "vähä") (1 DUMMY))#  (1 GEN) (1 N))    # VäHäN AJAN KULUTTUA
 (@w =! (A) (-1C AD) (NOT 0 LIIAN) (NOT 0 PALJON) (NOT 0 ADV)
 (NOT 0 HARVA))
 (@w =! (A NOM SG) (NOT 0 ADV) (1C NOM) (1 A/N) (1 SG) (NOT 0 HARVA)
-(NOT 0 TOSI) (NOT 0 PCP))  ; XXXX
-; EI "nykyisin", NOT "tosi"
+(NOT 0 TOSI) (NOT 0 PCP))  # XXXX
+# EI "nykyisin", NOT "tosi"
 (@w =! (A GEN SG) (1C GEN) (1 A/N) (1 SG) (NOT 0 ENEM-VAHEM) (NOT 0 PCP)
 (NOT 0 HARVA) (NOT 0 HYVANSA) (NOT 0 PALJON))
 (@w =! (A PTV SG) (1C PTV) (1 A/N) (1 SG) (NOT 0 PCP) (NOT 0 HARVA))
@@ -594,13 +568,13 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =! (A ELA SG) (1C ELA) (1 SG) (NOT 0 PCP) (NOT 0 HARVA))
 (@w =! (A ILL SG) (1C ILL) (1 SG) (NOT 0 PCP) (NOT 0 HARVA))
 (@w =! (A ADE SG) (1C ADE) (1 SG) (NOT 0 ADV) (NOT 0 PCP) (NOT 0 HARVA))
-; VIREILLä
+# VIREILLä
 (@w =! (A ABL SG) (1C ABL) (1 SG) (NOT 0 PCP) (NOT 0 HARVA))
 (@w =! (A ALL SG) (1C ALL) (1 SG) (NOT 0 PCP) (NOT 0 HARVA))
 (@w =! (A ESS SG) (1C ESS) (1 SG) (NOT 0 PCP) (NOT 0 HARVA))
 (@w =! (A TRA SG) (1C TRA) (1 SG) (NOT 0 PCP) (NOT 0 HARVA))
 (@w =! (A NOM PL) (1C NOM) (1 A/N) (1 PL) (NOT 0 PCP)
-(NOT 0 INS) (NOT 0 HARVA)) ; TUKEVA, NYKYISIN USEIN,NYKYISIN TULI
+(NOT 0 INS) (NOT 0 HARVA)) # TUKEVA, NYKYISIN USEIN,NYKYISIN TULI
 (@w =! (A GEN PL) (1C GEN) (1 A/N) (1 PL) (NOT 0 HARVA))
 (@w =! (A PTV PL) (1C PTV) (1 A/N) (1 PL) (NOT 0 HARVA))
 (@w =! (A INE PL) (1C INE) (1 PL) (NOT 0 HARVA))
@@ -633,62 +607,62 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =! (A/N ALL PL) (1C ALL) (1 PL))
 (@w =! (A/N ESS PL) (1C ESS) (1 PL))
 (@w =! (A/N TRA PL) (1C TRA) (1 PL))
-; *** AD-A
-(@w =! (AD) (0 ADSET) (1 AD+PCP1) (1 PCP1))  ; HYVIN VAIVAUTUNUT
-(@w =! (AD) (0 ADSET) (1 AD+PCP2) (1 PCP2))  ; KOVIN ALISTETTU
+# *** AD-A
+(@w =! (AD) (0 ADSET) (1 AD+PCP1) (1 PCP1))  # HYVIN VAIVAUTUNUT
+(@w =! (AD) (0 ADSET) (1 AD+PCP2) (1 PCP2))  # KOVIN ALISTETTU
 (@w =! (AD "aika") (1C A/ADV/PCP/DET/Q))
-(@w =0 (AD "enemmän") (1 TAI) (2 ENEM-VAHEM)) ; XXXX
+(@w =0 (AD "enemmän") (1 TAI) (2 ENEM-VAHEM)) # XXXX
 (@w =! (AD "erittäin") (NOT 1 DUMMY))
-(@w =! (AD "hieman") (1C A-A/N-Q) (NOT 1 PTV) (NOT 2 CMP))   ; <<<
-(@w =! (AD "hiukan") (1C A-A/N-Q) (NOT 1 PTV) (NOT 2 CMP))   ; <<<
+(@w =! (AD "hieman") (1C A-A/N-Q) (NOT 1 PTV) (NOT 2 CMP))   # <<<
+(@w =! (AD "hiukan") (1C A-A/N-Q) (NOT 1 PTV) (NOT 2 CMP))   # <<<
 (@w =! (AD "hyvin") (1 AD-HYVIN))
 (@w =! (AD "liian") (NOT 1 GEN))
 (@w =! (AD "ihan") (1 NIIN))
-(@w =! (AD "melkein") (1 ADV))   ; MELKEIN MISSä VAIN, MELKEIN AINA
+(@w =! (AD "melkein") (1 ADV))   # MELKEIN MISSä VAIN, MELKEIN AINA
 (@w =! (AD "miltei") (1 AD-MILTEI))
 (@w =!! (AD "mitä") (1 CMP/SUP))
-(@w =! (AD "niin") (1C A) (2 KUIN) (NOT 3 A))  ; NIIN RAJU KUIN MINä
-(@w =! (AD "niin") (1C MAN) (2 KUIN) (NOT 3 A))  ; NIIN RAJUSTI KUIN MEILLä
+(@w =! (AD "niin") (1C A) (2 KUIN) (NOT 3 A))  # NIIN RAJU KUIN MINä
+(@w =! (AD "niin") (1C MAN) (2 KUIN) (NOT 3 A))  # NIIN RAJUSTI KUIN MEILLä
 (@w =! (AD) (0 NIIN-NOIN-NAIN) (1 HYVIN))
 (@w =! (AD) (0 NIIN-NOIN-NAIN) (1C ADV) (1 MAN))
 (@w =! (AD) (0 NIIN-NOIN-NAIN) (NOT -1 COMMA) (1 A-A/N) (NOT *2 KUIN))
-; NIIN VIISAS
+# NIIN VIISAS
 (@w =! (AD) (0 NIIN-NOIN-NAIN) (1 C) (2 NIIN-NOIN-NAIN) (3 PALJON-MONI))
 (@w =0 (AD) (0 NIIN-NOIN-NAIN) (NOT 1 A-A/N) (NOT 1 ADV) (NOT 1 Q)
 (NOT 1 NUM-PUOLET-KOLMANNES))
 (@w =! (AD "noin") (1 GEN))
 (@w =! (AD "noin") (1 TIME-WORD))
-(@w =! (AD) (0 PALJON) (1 CMP))  ; PALJON JA VäHäN, xxxxx, next one not needed any more 3.12.2000,!!changed
-(@w =! (AD "vähän") (1C CMP-ENNEN)); 4.2.2001 !!->! cf.below
-(@w =! (A) (0 PALJON) (0 NOM) (0 SG) (1 N) (1 NOM) (1 SG)) ; PALJO VALITTAMINEN
+(@w =! (AD) (0 PALJON) (1 CMP))  # PALJON JA VäHäN, xxxxx, next one not needed any more 3.12.2000,!!changed
+(@w =! (AD "vähän") (1C CMP-ENNEN))# 4.2.2001 !!->! cf.below
+(@w =! (A) (0 PALJON) (0 NOM) (0 SG) (1 N) (1 NOM) (1 SG)) # PALJO VALITTAMINEN
 (@w =! (A) (0 PALJON) (0 PTV) (1 N) (1 PTV) (1 SG))
 (@w =! (A) (0 PALJON) (0 LOC-CASE) (1 N) (1 LOC-CASE) (1 SG))
-(@w =0 (A) (0 PALJON))  ; "on asetettu paljon haltijaksi"
+(@w =0 (A) (0 PALJON))  # "on asetettu paljon haltijaksi"
 (@w =! (AD "täysin") (1 AD+PCP1))
 (@w =! (AD "vallan") (1 A) (NOT *1 VALLAN-WDS)
 (NOT *-1 VALLAN-WDS))
-(@w =! (AD "vallan") (1 DUMMY))  ;   (1 PCP))
+(@w =! (AD "vallan") (1 DUMMY))  #   (1 PCP))
 (@w =0 (AD "vallan") (NOT 1 A) (NOT 1 PCP))
 (@w =! (AD "varsin") (NOT 1 DUMMY))
 (@w =!! (AD "yhä") (1C CMP))
-(@w =! (AD "yli") (1C NUM-PUOLET-KOLMANNES) (NOT 2 GEN)) ; not2genadded 9.10.2000 yli38asteen
-(@w =! (AD "yli") (NOT 1 GEN) (NOT 2 GEN) (NOT 3 GEN) (1 A-A/N))  ; XXX
-; YLI TUHATVUOTINEN VAIHE
-(@w =! (PP "yli") (1 DUMMY)) ; (NOT 1 GEN) (2 GEN)) YLI KOKO MAAN, , NOLLATTU
+(@w =! (AD "yli") (1C NUM-PUOLET-KOLMANNES) (NOT 2 GEN)) # not2genadded 9.10.2000 yli38asteen
+(@w =! (AD "yli") (NOT 1 GEN) (NOT 2 GEN) (NOT 3 GEN) (1 A-A/N))  # XXX
+# YLI TUHATVUOTINEN VAIHE
+(@w =! (PP "yli") (1 DUMMY)) # (NOT 1 GEN) (2 GEN)) YLI KOKO MAAN, , NOLLATTU
 (@w =! (AD) (NOT 0 NIIN-YHA) (NOT -1 COMMA) (1C A-A/N) (NOT 1 PTV)
-(NOT 2 CMP) (NOT 0 ENEM-VAHEM) (NOT 0 INTERR) (NOT 0 VALLAN) (NOT 0 YLI/ALLE)) ;lastcondadd9.10.2000
-; CF. HIUKAN(ADV) ENTISTÄ PITEMPI XXXX
-(@w =! (AD) (0 AD-PALJON) (1 PALJON-MONI))  ; VARSIN PALJON, VARSIN USEAT
+(NOT 2 CMP) (NOT 0 ENEM-VAHEM) (NOT 0 INTERR) (NOT 0 VALLAN) (NOT 0 YLI/ALLE)) #lastcondadd9.10.2000
+# CF. HIUKAN(ADV) ENTISTÄ PITEMPI XXXX
+(@w =! (AD) (0 AD-PALJON) (1 PALJON-MONI))  # VARSIN PALJON, VARSIN USEAT
 (@w =! (AD) (NOT 0 NIIN-YHA) (1C A/AD-A/Q) (NOT 1 PTV) (NOT 2 CMP)
  (NOT 0 ENEM-VAHEM) (NOT 0 VALLAN) (NOT 0 INTERR) (NOT 0 PALJON))
 (@w =! (AD) (NOT 0 NIIN-YHA) (1C A/AD-A/Q) (1 PTV) (NOT 2 CMP)
- (NOT 0 ENEM-VAHEM) (NOT 0 VALLAN) (NOT 0 INTERR) (NOT 0 PALJON)) ; XXXX
+ (NOT 0 ENEM-VAHEM) (NOT 0 VALLAN) (NOT 0 INTERR) (NOT 0 PALJON)) # XXXX
 (@w =0 (AD) (NOT 0 NIIN-YHA) (1C A/AD-A/Q) (1 PTV) (2 CMP))
-; HIEMAN(ADV) ENTISTÄ SUPPEAMPI
+# HIEMAN(ADV) ENTISTÄ SUPPEAMPI
 (@w =! (AD) (NOT 0 NIIN-YHA) (1C NUM-PUOLET-KOLMANNES) (NOT 0 VALLAN)
-(NOT 0 INTERR)  (NOT 0 YLI/ALLE)) ;lastcondadded9.10.2000
+(NOT 0 INTERR)  (NOT 0 YLI/ALLE)) #lastcondadded9.10.2000
 (@w =0 (AD) (NOT 1 A/AD-A/Q) (NOT 1 NUM-PUOLET-KOLMANNES)
-(NOT 1 ADV) (NOT 1 PCP) (NOT 0 AIVAN-IHAN) (NOT 1 CMP-ENNEN) (NOT 2 JALKEEN)); 4.1.2001 last2added
+(NOT 1 ADV) (NOT 1 PCP) (NOT 0 AIVAN-IHAN) (NOT 1 CMP-ENNEN) (NOT 2 JALKEEN))# 4.1.2001 last2added
 (@w =! (AD "vähemmän") (NOT -1 COMMA) (1 A-A/N-PCP) (NOT 1 PTV) (NOT 2 CMP)
 (NOT -1 C) (NOT -2 ENEM-VAHEM) (NOT 1 GEN))
 (@w =! (AD "vähemmän") (1 A-A/N-PCP) (NOT 1 PTV) (NOT 2 CMP)
@@ -696,16 +670,16 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =! (AD "vähemmän") (1 A-A/N-PCP) (1 PTV) (NOT 2 CMP) (NOT -1 C)
 (NOT -2 ENEM-VAHEM) (NOT 1 GEN))
 
-(@w =! (ADV "vähemmän") (-1 C) (-2 ENEM-VAHEM)) ; XXXX
-; *** ADV ***
-(@w =0 (ADV CMP MAN "aikainen") (NOT 1 DUMMY)) ; XX
+(@w =! (ADV "vähemmän") (-1 C) (-2 ENEM-VAHEM)) # XXXX
+# *** ADV ***
+(@w =0 (ADV CMP MAN "aikainen") (NOT 1 DUMMY)) # XX
 (@w =! (ADV "ainoastaan") (NOT 1 DUMMY))
 (@w =! (ADV "alkuaan") (NOT 1 DUMMY))
 (@w =! (ADV "alkujaan") (NOT 1 DUMMY))
 (@w =! (ADV "edelleen") (NOT -1 GEN) (NOT -2 GEN) (NOT *-1 PAASTA))
 (@w =! (ADV "edellä") (NOT *-1 NEGV) (NOT -1 GEN/PTV) (NOT 1 PTV))
 (@w =! (ADV "edestakaisin") (NOT 1 DUMMY))
-(@w =! (ADV "enemmän") (NOT 1 GEN)) ; XXXX
+(@w =! (ADV "enemmän") (NOT 1 GEN)) # XXXX
 (@w =! (ADV "enimmäkseen") (NOT 1 DUMMY))
 (@w =! (ADV "enintään") (NOT 1 DUMMY))
 (@w =! (ADV "ennakolta") (NOT 1 DUMMY))
@@ -739,11 +713,11 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =! (ADV "koolle") (NOT 1 DUMMY))
 (@w =! (ADV "korkeintaan") (NOT 1 DUMMY))
 (@w =! (ADV "kotoisin") (NOT 1 DUMMY))
-(@w =0 (ADV "kovaa") (*-1 OLLA *R) (NOT *R CLB?) (NOT -1 CLB?)) ;PELIONKOVAA(A)
+(@w =0 (ADV "kovaa") (*-1 OLLA *R) (NOT *R CLB?) (NOT -1 CLB?)) #PELIONKOVAA(A)
 (@w =! (ADV "kumminkin") (NOT 1 DUMMY))
 (@w =! (ADV "kumminkaan") (NOT 1 DUMMY))
 (@w =! (ADV "liioin") (NOT 1 DUMMY))
-(@w =! (ADV "lisäksi") (NOT -1 GEN))     ; NAISTEN LISäKSI
+(@w =! (ADV "lisäksi") (NOT -1 GEN))     # NAISTEN LISäKSI
 (@w =! (ADV "käsiksi") (NOT 1 DUMMY))
 (@w =! (ADV "lisää") (*-1C VFIN *R) (NOT *R CLB?) (*1 PTV *L) (NOT *L CLB?)
 (NOT 1 CLB?) (NOT -1 CLB?))
@@ -767,7 +741,7 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =! (ADV "niin") (1 N) (*2 KUIN *L) (NOT *L CLB?))
 (@w =! (ADV "niin") (-1 COMMA))
 (@w =! (ADV "niin") (1 TALLAINEN) (NOT 1 Q))
-(@w =0 (ADV DN-ITTAIN "nimittäin") (NOT 1 DUMMY))   ; XX
+(@w =0 (ADV DN-ITTAIN "nimittäin") (NOT 1 DUMMY))   # XX
 (@w =! (ADV "nykyisin") (NOT 1 INS))
 (@w =0 (ADV "nähden") (NOT 1 DUMMY))
 (@w =0 (ADV "nähdäkseen") (NOT -1 GEN) (NOT -1 OLLA) (NOT -2 OLLA))
@@ -802,11 +776,11 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =! (ADV "syntyisin") (NOT 1 DUMMY))
 (@w =! (ADV "syvällä") (NOT 1 ADE))
 (@w =! (ADV "takaisin") (NOT 1 DUMMY))
-(@w =! (ADV "tarpeen") (*-1 OLLA *R) (NOT *R CLB?) (NOT -1 GEN) (1 CLB?))  ; XX
+(@w =! (ADV "tarpeen") (*-1 OLLA *R) (NOT *R CLB?) (NOT -1 GEN) (1 CLB?))  # XX
 (@w =! (ADV "tietenkin") (NOT 1 DUMMY))
 (@w =! (ADV "tietenkään") (NOT 1 DUMMY))
 (@w =! (ADV "todella" KAAN) (NOT 1 DUMMY))
-(@w =! (ADV "toisin") (1 VFIN))   ; TOISIN ON SILLOIN ...
+(@w =! (ADV "toisin") (1 VFIN))   # TOISIN ON SILLOIN ...
 (@w =! (ADV "toisin") (1 C) (NOT 1 DUMMY))
 (@w =! (ADV "toisin") (-1 AIVAN-IHAN))
 (@w =! (ADV "toisinaan") (NOT 1 DUMMY))
@@ -829,9 +803,9 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =! (ADV "vireillä") (NOT 1 ADE))
 (@w =! (ADV "vähemmän") (NOT 1 A-A/N-PCP))
 (@w =! (ADV "vähintään") (NOT 1 DUMMY))
-(@w =! (ADV "vähän") (NOT 1 A) (NOT 1 CMP-ENNEN) (NOT 2 JALKEEN)); 4.1.2001
+(@w =! (ADV "vähän") (NOT 1 A) (NOT 1 CMP-ENNEN) (NOT 2 JALKEEN))# 4.1.2001
 (@w =! (ADV "välillä") (NOT -1 ADE) (NOT -1 GEN) (NOT -2 GEN)
-(NOT -3 GEN) (NOT -4 GEN))  ; XX
+(NOT -3 GEN) (NOT -4 GEN))  # XX
 (@w =! (ADV "yhdessä") (NOT 1 INE))
 (@w =! (ADV "yhteensä") (NOT 1 DUMMY))
 (@w =! (ADV "yhtään") (NOT *1 PTV))
@@ -840,15 +814,15 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =0 (ADV "yksissä") (NOT 1 DUMMY))
 (@w =! (ADV "yksistään") (NOT 1 DUMMY))
 (@w =! (ADV "öisin") (NOT 1 DUMMY))
-(@w =! (ADV <POSS> "jälkeen") (NOT -1 GEN)) ; TANKEROUS, CF. JäTTI JäLKEENSä
+(@w =! (ADV <POSS> "jälkeen") (NOT -1 GEN)) # TANKEROUS, CF. JäTTI JäLKEENSä
 (@w =! (ADV <POSS> "osaksi") (-1 SAADA))
-(@w =! (ADV) (-1C AD) (NOT 0 PP) (NOT 1 A))   ; NIIN(AD) HYVIN(ADV/AD-A)
+(@w =! (ADV) (-1C AD) (NOT 0 PP) (NOT 1 A))   # NIIN(AD) HYVIN(ADV/AD-A)
 (@w =! (ADV) (0 AIVAN-IHAN) (1 PCP2) (*-1C VFIN LR0) (LR0 OLLA))
 (@w =! (ADV) (0 AIVAN-IHAN) (1C VFIN-C))
 (@w =! (ADV) (0 AIVAN-IHAN) (1C CLB?-C))
 (@w =! (ADV) (0 AIVAN-IHAN) (1C INF1/3) (-1C VFIN))
 (@w =! (ADV) (0 AIVAN-IHAN) (1C INF1/3) (-2C VFIN))
-;(@w =! (ADV) (0 ENEM-VAHEM) (NOT 1C GEN) (NOT 1 A))
+#(@w =! (ADV) (0 ENEM-VAHEM) (NOT 1C GEN) (NOT 1 A))
 (@w =! (ADV) (0 NIIN-NOIN-NAIN) (1C ADV) (NOT 1 HYVIN) (NOT *-1 MINA)
 (NOT *-1 SG1) (*-1C VFIN *RC) (NOT *RC CLB?) (NOT -1 CLB?))
 (@w =! (ADV) (0 NIIN-NOIN-NAIN) (1C ADV) (NOT 1 HYVIN) (NOT *-1 MINA)
@@ -865,12 +839,12 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =!! (ADV <POSS> "kohdalta") (NOT -1 ABL))
 (@w =!! (ADV <POSS> "osalta") (NOT -1 ABL))
 (@w =0 (ADV) (0 AIVAN-IHAN) (NOT 1 V) (NOT 1 C) (NOT 1 ADV))
-; ** CASE
-(@w =! (ILL) (1 MENNA) (1 INE))    ; TUOHON MENNESSä
-; *** NUM ***
+# ** CASE
+(@w =! (ILL) (1 MENNA) (1 INE))    # TUOHON MENNESSä
+# *** NUM ***
 (@w =0 (ORD PL "toinen") (NOT 1 PL))
-; TOISILLE, TOISIAAN ETC.
-; *** N ***
+# TOISILLE, TOISIAAN ETC.
+# *** N ***
 (@w =! (N "aika") (1C VFIN-C))
 (@w =! (N "aika") (1 CLB?))
 (@w =0 (N DV-JA "aitoja") (NOT 1 DUMMY))
@@ -880,61 +854,61 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =! (N ELA "alku") (-1 LUKU))
 (@w =! (N ELA "alku") (-1 TIME-WORD))
 (@w =! (N ELA "alku") (1 ASTI))
-(@w =0 (N "anto") (NOT 1 DUMMY))  ; EI ANNOIN
+(@w =0 (N "anto") (NOT 1 DUMMY))  # EI ANNOIN
 (@w =0 (N "avu") (0 SG))
 (@w =0 (N PL "elämä") (0 NOM/PTV))
 (@w =! (N "hakkuu") (NOT 1 DUMMY))
 (@w =! (N "hevonen") (NOT 1 DUMMY))
 (@w =! (N "istutus") (NOT 1 DUMMY))
-(@w =! (N "joukko") (NOT 1 DUMMY))  ; JOUKON, RISKY
-(@w =! (N "kapina") (NOT 1 DUMMY))      ; NOT KAPI
-(@w =! (N PL "keksintö") (NOT 1 DUMMY)) ; EI KEKSINTä
-(@w =! (N "kieli") (1 DUMMY))  ; (0 V) (*1 CLB? *L) (*L VFIN))
+(@w =! (N "joukko") (NOT 1 DUMMY))  # JOUKON, RISKY
+(@w =! (N "kapina") (NOT 1 DUMMY))      # NOT KAPI
+(@w =! (N PL "keksintö") (NOT 1 DUMMY)) # EI KEKSINTä
+(@w =! (N "kieli") (1 DUMMY))  # (0 V) (*1 CLB? *L) (*L VFIN))
 (@w =0 (N DV-JA "kirjoja") (NOT 1 DUMMY))
 (@w =0 (N "kota") (NOT 1 DUMMY))
 (@w =! (N "kuljetus") (NOT 1 DUMMY))
 (@w =0 (N PL "kuolema") (0 NOM/PTV))
-(@w =0 (N <POSS> "kuu") (NOT 1 DUMMY)) ; KUU+SI
+(@w =0 (N <POSS> "kuu") (NOT 1 DUMMY)) # KUU+SI
 (@w =0 (N "kuuliainen") (NOT 1 DUMMY))
 (@w =0 (N "kärsä") (NOT 1 DUMMY))
 (@w =0 (N PL "ikä") (NOT 1 DUMMY))
-(@w =0 (N PL "kirjo") (NOT 1 DUMMY)) ; XX
-(@w =0 (N PL "korkki") (NOT 1 DUMMY)) ; XX
+(@w =0 (N PL "kirjo") (NOT 1 DUMMY)) # XX
+(@w =0 (N PL "korkki") (NOT 1 DUMMY)) # XX
 (@w =0 (N "lahjoja") (NOT 1 DUMMY))
-(@w =0 (N PL "laki") (NOT 1 DUMMY))    ; LAKI - LAEN - LAK+I+A, LA+I+N
+(@w =0 (N PL "laki") (NOT 1 DUMMY))    # LAKI - LAEN - LAK+I+A, LA+I+N
 (@w =0 (N "lehdes") (NOT 1 DUMMY))
-(@w =0 (N "lei") (NOT 1 DUMMY)) ; LEI+Pä
+(@w =0 (N "lei") (NOT 1 DUMMY)) # LEI+Pä
 (@w =0 (N "liika") (NOT 1 DUMMY))
-(@w =! (N PTV SG "maa") (-1 PUOLI-KOKO-OSA)) ; ERI PUOLILLA MAATA
-(@w =! (N PTV SG "maa") (1 VFIN-PCP))      ; MAATA OMISTAVA LUOKKA
+(@w =! (N PTV SG "maa") (-1 PUOLI-KOKO-OSA)) # ERI PUOLILLA MAATA
+(@w =! (N PTV SG "maa") (1 VFIN-PCP))      # MAATA OMISTAVA LUOKKA
 (@w =! (N PTV SG "muutos") (NOT 1 DUMMY))
 (@w =0 (N PL "noki") (NOT 1 DUMMY))
 (@w =0 (N PTV SG "olka") (NOT 1 DUMMY))
 (@w =! (N TRA SG "osa") (-1 TRA))
 (@w =! (N TRA SG "osa") (*-1 SIIRTYA-TULLA-JOUTUA))
-(@w =0 (N ILL SG "pelätti") (NOT 1 DUMMY))  ; XX
-(@w =! (N "perinne") (NOT 1 PTV) (NOT 1 N))   ; PERINTEISTä N+PTV
+(@w =0 (N ILL SG "pelätti") (NOT 1 DUMMY))  # XX
+(@w =! (N "perinne") (NOT 1 PTV) (NOT 1 N))   # PERINTEISTä N+PTV
 (@w =! (N "piste") (NOT 1 DUMMY))
 (@w =! (N PL "lausunto") (NOT 1 DUMMY))
-(@w =0 (N DV-JA "pitäjä") (NOT 1 DUMMY))  ; RISKY
+(@w =0 (N DV-JA "pitäjä") (NOT 1 DUMMY))  # RISKY
 (@w =! (N "puoli") (0 PUOLA))
 (@w =! (N GEN PL "puu") (NOT 1 DUMMY))
 (@w =! (N "saksa") (NOT 0 CAP/NOCAP))
 (@w =0 (N "sanoja") (NOT 1 DUMMY))
-(@w =! (N "sanoma") (NOT 0 PTV))  ; EI OLE SANOMISTA
+(@w =! (N "sanoma") (NOT 0 PTV))  # EI OLE SANOMISTA
 (@w =0 (N GEN SG "senkki") (NOT 1 DUMMY))
 (@w =! (N "siemen") (NOT 1 DUMMY))
 (@w =! (N ILL SG "sija") (-1 GEN))
 (@w =! (N ELA PL "syy") (NOT 1 DUMMY))
 (@w =! (N "taimi") (NOT 1 DUMMY))
-(@w =! (N GEN SG "tarve") (-1 GEN));   ; MUTTEREIDEN TARVE, XX
+(@w =! (N GEN SG "tarve") (-1 GEN))#   # MUTTEREIDEN TARVE, XX
 (@w =0 (N TRA "tarve") (NOT -1 TRA))
 (@w =! (N "tehtävä") (NOT 0 NOM))
 (@w =! (N NOM "tehtävä") (1C VFIN))
-(@w =0 (N PL "tee") (NOT 1 DUMMY))        ; TEIDEN
+(@w =0 (N PL "tee") (NOT 1 DUMMY))        # TEIDEN
 (@w =! (N "tilanne") (NOT 1 DUMMY))
-; A BIT RISKY
-(@w =! (N PTV PL "toimi") (-1 GEN))    ; TUTKIJAN TOIMIA
+# A BIT RISKY
+(@w =! (N PTV PL "toimi") (-1 GEN))    # TUTKIJAN TOIMIA
 (@w =! (N GEN SG <POSS> "toiminta") (*-1 VFIN *R) (NOT *R CLB?) (NOT -1 CLB?))
 (@w =! (N PL "tukki") (NOT 1 DUMMY))
 (@w =0 (N "turpa") (NOT 1 DUMMY))
@@ -947,22 +921,22 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =0 (N "vasta") (NOT 1 DUMMY))
 (@w =! (N "vieras") (1C VFIN))
 (@w =! (N PL "virka") (1 DUMMY))
-(@w =0 (N "voi" P-2SG) (NOT 1 DUMMY))           ; VOISI
+(@w =0 (N "voi" P-2SG) (NOT 1 DUMMY))           # VOISI
 (@w =! (N ILL "voima") (-1 ASTUA))
 (@w =! (N ILL "voima") (-1 TULLA))
 (@w =! (N ILL "voima") (1 PCP))
-;(@w =! (N ILL "vuosi") (1 NUM))
-;(@w =! (N ILL "vuosi") (*-1 NEGV))
-;(@w =! (N ILL "vuosi") (*1 NEGV))
-(@w =! (N NOM SG "vuosi") (NOT 1 DUMMY))  ; NB. VUODE - VUOTEEN NOW WRONG
+#(@w =! (N ILL "vuosi") (1 NUM))
+#(@w =! (N ILL "vuosi") (*-1 NEGV))
+#(@w =! (N ILL "vuosi") (*1 NEGV))
+(@w =! (N NOM SG "vuosi") (NOT 1 DUMMY))  # NB. VUODE - VUOTEEN NOW WRONG
 (@w =! (GEN PL) (1 GEN) (1 PL))
-; OMIEN TALOJEN
+# OMIEN TALOJEN
 (@w =0 (N GEN SG "hiukka") (NOT 1 DUMMY))
 (@w =! (GEN PL) (-1C GEN) (-1C PL))
-; PITKIEN JUURIEN
+# PITKIEN JUURIEN
 (@w =! (N PTV SG <POSS>) (0 ILL) (*-1 NEGV *R) (NOT *R CLB?) (NOT -1 ILL)
 (NOT -1 CLB?) (*-1 CLB? *R) (NOT *R ILL-VERB))
-; EI MENETTäNYT ASEMAANSA
+# EI MENETTäNYT ASEMAANSA
 (@w =! (N PTV SG <POSS>) (0 ILL) (-1C PTV) (NOT -1 N)
 (*-1 CLB? *R) (NOT *R ILL-VERB))
 (@w =! (N PTV SG <POSS>) (0 ILL) (*-1 <PTV-OBJ> LR0) (NOT LR0 KOOTA *R)
@@ -970,7 +944,7 @@ DISAMBIGUATION-CONSTRAINTS
 (NOT *R ILL-VERB))
 (@w =! (N PTV SG <POSS>) (0 ILL) (1C CMP) (NOT -1 ILL) (NOT -2 ILL))
 (@w =0 (N PTV SG <POSS>) (0 ILL) (1C ILL) (-1 A/Q/PRON))
-(@w =! (PTV) (-1C NUM) (-1 NOM))      ; KUUSI LASTA
+(@w =! (PTV) (-1C NUM) (-1 NOM))      # KUUSI LASTA
 (@w =! (N NOM SG) (-1C NOM) (-1 A/Q/PRON) (-1 SG) (NOT 0 <POSS>)
 (NOT 0 TULI) (NOT 1 NOM) (NOT -1 PERS) (NOT 0 JUURI))
 (@w =! (N GEN SG) (-1C GEN) (-1 A/Q/PRON) (-1 SG) (NOT 0 <POSS>)
@@ -1000,17 +974,17 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =! (N ESS PL) (-1C ESS) (-1 A/Q/PRON) (-1 PL) (NOT 1 ESS))
 (@w =! (N TRA PL) (-1C TRA) (-1 A/Q/PRON) (-1 PL) (NOT 1 TRA))
 (@w =! (N INS PL) (-1C INS) (-1 A/Q/PRON) (-1 PL) (NOT 1 INS))
-; MONIN PAIKOIN
-(@w =0 (N INS PL) (0 GEN) (0 SG) (NOT 0 AVOSYLIN))  ; RUUMIIN
-;(@w =! (N PTV PL) (-1C PTV) (-1C PL))
-;   ; PITKIä JUURIA
-; *** NUM ***
+# MONIN PAIKOIN
+(@w =0 (N INS PL) (0 GEN) (0 SG) (NOT 0 AVOSYLIN))  # RUUMIIN
+#(@w =! (N PTV PL) (-1C PTV) (-1C PL))
+#   # PITKIä JUURIA
+# *** NUM ***
 (@w =! (NUM NOM SG "kuusi") (1C PTV))
 (@w =! (NUM NOM SG "kuusi") (2C PTV))
-(@w =! (NUM GEN) (1 GEN-WORD) (0 NOM) (0 SEITSEMAN))   ; (1 GEN) deleted 7.12.2000
-; SEITSEMÄN MARKAN HINTA
-(@w =0 (NUM GEN) (0 SEITSEMAN) (NOT 1 N)) ;deleted 7.12.2000,poor (0 NOM) (NOT 1 GEN))  ; XXXX
-(@w =! (NUM NOM) (1C PTV))        ; SEITSEMÄN MIESTÄ TULI
+(@w =! (NUM GEN) (1 GEN-WORD) (0 NOM) (0 SEITSEMAN))   # (1 GEN) deleted 7.12.2000
+# SEITSEMÄN MARKAN HINTA
+(@w =0 (NUM GEN) (0 SEITSEMAN) (NOT 1 N)) #deleted 7.12.2000,poor (0 NOM) (NOT 1 GEN))  # XXXX
+(@w =! (NUM NOM) (1C PTV))        # SEITSEMÄN MIESTÄ TULI
 (@w =! (NUM "pari" ESS) (1 ESS))
 (@w =! (NUM "pari" INE) (1 INE))
 (@w =! (NUM "pari" ELA) (1 ELA))
@@ -1021,16 +995,16 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =! (NUM "pari" TRA) (1 TRA))
 (@w =! (NUM PL "sata") (NOT 1 DUMMY))
 (@w =! (NUM NOM SG) (*-1 PTV *R) (NOT *R CLB?) (NOT -1 CLB?))
-; *** ABBR ***
+# *** ABBR ***
 (@w =!! (ABBR NOM "mm") (-1 NUM))
 (@w =0 (ABBR NOM "me") (*1 PL1 *L) (NOT *L CLB?) (NOT 1 CLB?))
 (@w =0 (ABBR NOM "me") (*-1 PL1 *R) (NOT *R CLB?) (NOT -1 CLB?))
-;; *** PRONOUNS ***
+## *** PRONOUNS ***
 (@w =! (PRON "minä") (*1 SG1 *L) (NOT *L CLB?) (NOT 1 CLB?))
 (@w =! (PRON "sinä") (*1 SG2 *L) (NOT *L CLB?) (NOT 1 CLB?))
 (@w =! (PRON "minä") (*-1 SG1 *R) (NOT *R CLB?) (NOT -1 CLB?))
 (@w =! (PRON "sinä") (*-1 SG2 *R) (NOT *R CLB?) (NOT -1 CLB?))
-(@w =! (PRON PL "te") (NOT -1 GEN))  ; RISKY, CF. SUOMEN TEILLä
+(@w =! (PRON PL "te") (NOT -1 GEN))  # RISKY, CF. SUOMEN TEILLä
 (@w =! (PRON PTV SG "hän") (*-1 NEGV *R) (NOT *R CLB?) (NOT -1 CLB?))
 (@w =! (PRON PTV SG "hän") (*1 NEGV *L) (NOT *L CLB?) (NOT 1 CLB?))
 (@w =! (PRON INTG) (-1 >>>) (*1 ?!))
@@ -1040,20 +1014,20 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =! (PRON INTG) (-2 KYSY))
 (@w =! (PRON INTG) (*1C TIETAA *L) (NOT *L CLB?) (NOT 1 CLB?))
 (@w =! (PRON INTG) (*1 ?! *L) (NOT *L CLB?) (NOT 1 CLB?))
-(@w =0 (PRON INTG) (0 MIKA-KUKA) (1 DUMMY)) ; XXXX
+(@w =0 (PRON INTG) (0 MIKA-KUKA) (1 DUMMY)) # XXXX
 (@w =! (PRON Q) (0 MIKA-KUKA) (1 TAHANSA/VAIN))
 (@w =! (PRON Q) (0 MIKA-KUKA) (2 TAHANSA-2))
 (@w =! (PRON Q) (0 MIKA-KUKA) (-1 VAIKKA/KUIN/JOS))
-(@w =0 (PRON Q) (0 MIKA-KUKA) (1 DUMMY)) ; XXXX
-; M. TAHANSA/HYVäNSä/VAIN;ETTEI,SIINä;
+(@w =0 (PRON Q) (0 MIKA-KUKA) (1 DUMMY)) # XXXX
+# M. TAHANSA/HYVäNSä/VAIN#ETTEI,SIINä#
 (@w =! (PRON Q "joka") (-1 >>>))
-(@w =! (PRON Q "joka") (1 KERTA)) ; KERTA,TAPAUS,SUHDE,AINOA,IKINEN,...
+(@w =! (PRON Q "joka") (1 KERTA)) # KERTA,TAPAUS,SUHDE,AINOA,IKINEN,...
 (@w =! (PRON Q "joka") (1 TIME-WORD))
-(@w =! (PRON Q "joka") (1 ORD))  ; JOKA TOINEN
+(@w =! (PRON Q "joka") (1 ORD))  # JOKA TOINEN
 (@w =0 (PRON Q "joka") (NOT 1 DUMMY))
-(@w =! (PRON Q "jokin") (NOT 1 DUMMY)) ; JOLLA+KIN
+(@w =! (PRON Q "jokin") (NOT 1 DUMMY)) # JOLLA+KIN
 (@w =! (PRON Q "kukin") (NOT 1 DUMMY))
-(@w =! (PRON Q "kumpikin") (NOT 1 DUMMY))        ; EI *KUMMATKIN (< KUMMA)
+(@w =! (PRON Q "kumpikin") (NOT 1 DUMMY))        # EI *KUMMATKIN (< KUMMA)
 (@w =! (PRON Q PRON PL "jokin") (NOT 1 DUMMY))
 (@w =! (PRON REL) (0 MIKA-KUKA) (-1 COMMA/N/PRON/Q/V/SUP/>>>) (NOT *1 ?)
 (NOT 1 TAHANSA/VAIN) (NOT 2 TAHANSA/VAIN) (NOT -1 VAIKKA/KUIN/JOS)
@@ -1065,7 +1039,7 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =! (PRON REL "joka") (-2 N/PRON/Q) (-1 COMMA) (NOT 1 TAHANSA/VAIN))
 (@w =! (PRON REL) (0 NOM) (-1C NOM) (-1 N/PRON/Q) (NOT 1 TAHANSA/VAIN)
 (NOT 0 ESS))
-; SE JOKA; MIES JOKA
+# SE JOKA# MIES JOKA
 (@w =! (PRON REL) (0 NOM) (NOT 0 ESS) (1C VFIN) (NOT 1 TAHANSA/VAIN)
 (NOT 2 TAHANSA/VAIN) (NOT 1 KERTA))
 (@w =! (PRON REL) (0 NOM) (NOT 0 ESS) (NOT 1 NOM) (2C VFIN)
@@ -1074,9 +1048,9 @@ DISAMBIGUATION-CONSTRAINTS
 (NOT 2 TAHANSA/VAIN) (NOT 0 ESS) (NOT 1 KERTA))
 (@w =! (PRON REL) (*-1 JOKA LR0) (LR0 NOM) (-1 C) (NOT 1 TAHANSA/VAIN)
 (NOT 2 TAHANSA/VAIN) (NOT 0 ESS) (NOT 1 KERTA) (NOT 1 HYVA))
-; JOKA ... JA JOKA(REL)
-(@w =! (PRON REL PL "joka") (NOT 1 DUMMY))   ; JOISSA, JOILLA JNE.
-(@w =! (PRON REL ADE SG "joka") (NOT 1 DUMMY))   ; JOLLA
+# JOKA ... JA JOKA(REL)
+(@w =! (PRON REL PL "joka") (NOT 1 DUMMY))   # JOISSA, JOILLA JNE.
+(@w =! (PRON REL ADE SG "joka") (NOT 1 DUMMY))   # JOLLA
 (@w =! (PRON REL NOM SG "joka") (1 ADV/PL) (NOT 1 DUMMY))
 (@w =! (PRON NOM SG) (NOT 0 ITSE) (1 NOM) (1 A/N) (1 SG) (NOT 1 HARVA-SET))
 (@w =! (PRON GEN SG) (NOT 0 ITSE) (1 GEN) (1 A/N) (1 SG) (NOT 1 HARVA-SET))
@@ -1102,9 +1076,9 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =! (PRON ALL PL) (1 ALL) (1 PL) (NOT 1 HARVA-SET))
 (@w =! (PRON ESS PL) (1 ESS) (1 PL) (NOT 1 HARVA-SET))
 (@w =! (PRON TRA PL) (1 TRA) (1 PL) (NOT 1 HARVA-SET))
-(@w =! (PRON ELA SG "se") (NOT 1 DUMMY))                 ; SIITä
+(@w =! (PRON ELA SG "se") (NOT 1 DUMMY))                 # SIITä
 (@w =! (PRON DEM "tämä") (1 N) (1 ILL))
-; *** PROP
+# *** PROP
 (@w =! (PROP "kokoomus") (NOT 0 CAP/NOCAP))
 (@w =0 (<LG>) (0 PROP) (NOT *-1 PUHUA) (NOT *1 KIELI) (NOT *1 PUHUA)
 (NOT *-1 KIELI) (NOT 0 CAP/NOCAP) (NOT 0 TRA))
@@ -1113,10 +1087,10 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =0 (PROP) (0 <LG>) (*1 KIELI) (NOT -1 >>>))
 (@w =0 (PROP) (0 <LG>) (*-1 KIELI) (NOT -1 >>>))
 (@w =0 (PROP) (0 <LG>) (*-1 PUHUA *R) (NOT *R CLB?) (0 PTV) (NOT -1 >>>))
-(@w =0 (PROP) (0 <LG>) (-2C <LG>) (-1 C) (NOT -1 >>>))   ; SUOMEA JA RUOTSIA
-; LG-NAMES CANNOT BE CAPITALIZED S-INTERNALLY
+(@w =0 (PROP) (0 <LG>) (-2C <LG>) (-1 C) (NOT -1 >>>))   # SUOMEA JA RUOTSIA
+# LG-NAMES CANNOT BE CAPITALIZED S-INTERNALLY
 (@w =0 (PROP PTV SG "aino") (NOT 1 DUMMY))
-(@w =!! (PROP "johan") (1 PROP/HEUR) (NOT 0 CAP/NOCAP))   ; JOHAN BERGENSTRåHLE
+(@w =!! (PROP "johan") (1 PROP/HEUR) (NOT 0 CAP/NOCAP))   # JOHAN BERGENSTRåHLE
 (@w =! (PROP "lappi") (NOT 0 CAP/NOCAP))
 (@w =! (PROP "norja") (NOT 0 CAP/NOCAP))
 (@w =! (PROP "pariisi") (NOT 0 CAP/NOCAP))
@@ -1128,87 +1102,87 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =0 (PROP PL) (NOT 0 CAP/NOCAP))
 (@w =! (PROP SG) (1C PROP)  (NOT 0 CAP/NOCAP))
 (@w =! (PROP GEN SG) (1C N) (NOT *1 KIELI) (NOT *-1 KIELI) (NOT 1 <TIME>)
-(NOT 1 PROP) (NOT 1 PROP))      ; "martin/martti saarikangas"
-; *** POSS.SUFF *** (<POSS> <POSS>)
+(NOT 1 PROP) (NOT 1 PROP))      # "martin/martti saarikangas"
+# *** POSS.SUFF *** (<POSS> <POSS>)
 (@w =! (N NOM SG <POSS>) (-1C NOM) (-1C A/Q/PRON) (-1 SG) (NOT -1 REL)
 (NOT 0 V) (NOT 0 HYVANSA) (NOT 1 <GENLEFT>) (NOT -1 ITSE)
 (NOT 0 TILANNE))
-; HäNEN AINOA AUTONSA
+# HäNEN AINOA AUTONSA
 (@w =! (N NOM PL <POSS>) (-1C NOM) (-1C A/Q/PRON) (-1 PL) (NOT -1 REL)
 (NOT 0 V) (NOT 0 HYVANSA) (NOT 1 <GENLEFT>) (NOT 0 TILANNE))
-; HäNEN AINOAT AUTONSA
+# HäNEN AINOAT AUTONSA
 (@w =! (N GEN SG <POSS>) (-1C GEN) (-1C A/Q/PRON) (-1 SG)
 (NOT 0 V) (NOT -1 PERS) (NOT 0 HYVANSA) (NOT 0 TILANNE))
-; HäNEN AINOAN AUTONSA
+# HäNEN AINOAN AUTONSA
 (@w =! (N NOM SG <POSS>) (1C VFIN) (1 ACT) (1 V-SG)
 (NOT 0 V) (NOT 0 HYVANSA) (NOT 1 <GENLEFT>) (NOT 0 TILANNE))
-; HäNEN AUTONSA ON/TULEE; OBS "vuo+si on"
+# HäNEN AUTONSA ON/TULEE# OBS "vuo+si on"
 (@w =! (N NOM SG <POSS>) (2C VFIN) (2 ACT) (2 V-SG)
 (NOT 0 V) (NOT 1 CLB?) (NOT 1 V) (NOT 1 N) (NOT 0 HYVANSA)
 (NOT 1 <GENLEFT>) (NOT 1 PCP) (NOT 0 TILANNE))
-; HäNEN AUTONSA EHKä ON/TULEE
+# HäNEN AUTONSA EHKä ON/TULEE
 (@w =! (N NOM PL <POSS>) (1C VFIN) (1 ACT) (1 V-PL)
 (NOT 0 V) (NOT 0 HYVANSA) (NOT 1 <GENLEFT>) (NOT 0 TILANNE))
-; HäNEN AUTONSA OVAT/TULEVAT
+# HäNEN AUTONSA OVAT/TULEVAT
 (@w =! (N NOM PL <POSS>) (2C VFIN) (2 ACT) (2 V-PL)
 (NOT 0 V) (NOT 1 V) (NOT 1 N) (NOT 1 CLB?) (NOT 0 HYVANSA)
 (NOT 1 <GENLEFT>) (NOT 1 PCP) (NOT 0 TILANNE))
-; HäNEN AUTONSA EHKä OVAT/TULEVAT
+# HäNEN AUTONSA EHKä OVAT/TULEVAT
 (@w =! (N GEN SG <POSS>) (2C VFIN) (2 ACT) (NOT 0 V) (1C N) (1 DUMMY)
-(NOT 0 HYVANSA) (NOT 0 TILANNE)) ; XXXX  ???????????
-; HäNEN ISäNSä AUTO(T) HAJOSI(VAT)
+(NOT 0 HYVANSA) (NOT 0 TILANNE)) # XXXX  ???????????
+# HäNEN ISäNSä AUTO(T) HAJOSI(VAT)
 (@w =! (N GEN SG <POSS>) (3C VFIN) (3 ACT) (NOT 0 V) (1C N)
 (NOT 2 N) (NOT 2 V) (NOT 2 CLB?) (NOT 0 HYVANSA) (NOT 0 TILANNE))
-; HäNEN ISäNSä AUTO(T) EHKä HAJOSI(VAT)
+# HäNEN ISäNSä AUTO(T) EHKä HAJOSI(VAT)
 (@w =0 (N GEN SG <POSS>) (1C VFIN) (1C PSS) (NOT 0 V))
-; HäNEN AUTONSA(SG/PL) OSTETTIIN
+# HäNEN AUTONSA(SG/PL) OSTETTIIN
 (@w =0 (N GEN SG <POSS>) (2C VFIN) (2C PSS) (NOT 0 V)
 (NOT 1 V) (NOT 1 N) (NOT 1 CLB?))
-; HäNEN AUTONSA(SG/PL) EHKä OSTETTIIN
+# HäNEN AUTONSA(SG/PL) EHKä OSTETTIIN
 (@w =! (N GEN SG <POSS>) (1 PSP) (NOT 0 V) (NOT 0 HYVANSA))
 (@w =! (N GEN SG <POSS>) (1C N) (1C SG) (NOT 0 V) (1C DV)
 (NOT 1 ESS) (NOT 0 HYVANSA) (NOT 0 TILANNE))
-; TUOTANTONSA KOHOTTAMISEKSI
-; PAINOI LEIMANSA TOIMINTAAN (PL FöR STARK  ??? ZZZ)
+# TUOTANTONSA KOHOTTAMISEKSI
+# PAINOI LEIMANSA TOIMINTAAN (PL FöR STARK  ??? ZZZ)
 (@w =! (N GEN SG <POSS>) (1C N) (1C SG) (NOT 0 V) (1C PTV) (NOT 0 HYVANSA)
 (NOT 0 TILANNE))
-; NOSTI LEHTENSä LEVIKKIä
+# NOSTI LEHTENSä LEVIKKIä
 (@w =0 (N NOM PL <POSS>) (NOT 0 V) (NOT -2 ADE) (NOT -3 ADE)
 (-1 COP) (-1 V-SG) (1 N))
-; ON MAAMME TUOTANNOSSA/ MIEHEMME HAVANNASSA
+# ON MAAMME TUOTANNOSSA/ MIEHEMME HAVANNASSA
 (@w =0 (N NOM PL <POSS>) (NOT 0 V) (NOT -3 ADE) (NOT -4 ADE) (-2 COP)
 (NOT -1 CLB?) (-2 V-SG) (NOT -1 N) (NOT -1 V) (1 N) (NOT 0 TILANNE)
 (NOT -1 PCP))
-; ON EHKä MAAMME TUOTANNOSSA
+# ON EHKä MAAMME TUOTANNOSSA
 (@w =0 (N GEN SG <POSS>) (NOT 0 V) (-2 ADE) (-1 COP) (-1 V-SG)
 (-1 ACT) (NOT 1 N) (NOT 1 A/Q/PRON))
-; NIILLä ON SYYNSä.
+# NIILLä ON SYYNSä.
 (@w =0 (N GEN SG <POSS>) (NOT 0 V) (-3 ADE) (-2 COP) (-2 V-SG)
 (-2 ACT) (NOT -1 CLB?) (NOT 1 N) (NOT 1 A/Q/PRON))
-; NIILLä EHKä ON SYYNSä.
+# NIILLä EHKä ON SYYNSä.
 (@w =0 (N NOM SG <POSS>) (-1C VFIN) (-1 ACT) (-1 V-PL) (NOT 0 V)
 (NOT -2 NES))
-; OTTIVAT AUTONSA (RENKAAT/MUKAAN)
+# OTTIVAT AUTONSA (RENKAAT/MUKAAN)
 (@w =0 (N NOM SG <POSS>) (-2C VFIN) (-2 ACT) (-2 V-PL) (NOT 0 V)
 (NOT -1 CLB?) (NOT -3 NES))
-; OTTIVAT EHKä AUTONSA (RENKAAT/MUKAAN)
+# OTTIVAT EHKä AUTONSA (RENKAAT/MUKAAN)
 (@w =! (N NOM SG <POSS>) (-2C NOM) (-2 SG) (-1 COP) (-1 ACT) (-1 V-SG)
 (NOT 0 V) (NOT 1 N) (NOT 1 A/Q/PRON) (NOT 0 HYVANSA) (NOT 1 <GENLEFT>)
 (NOT 1 PCP) (NOT 0 TILANNE))
-; HäN ON MIEHENNE
+# HäN ON MIEHENNE
 (@w =! (N NOM SG <POSS>) (-3C NOM) (-3 SG) (-2 COP) (-2 ACT) (-2 V-SG)
 (NOT -1 N) (NOT -1 CLB?) (NOT 0 V) (NOT 1 N) (NOT 1 A/Q/PRON)
 (NOT 0 HYVANSA) (NOT 1 <GENLEFT>) (NOT 1 PCP) (NOT 0 TILANNE))
-; HäN ON EHKä/PITKä MIEHENNE
+# HäN ON EHKä/PITKä MIEHENNE
 (@w =! (N NOM PL <POSS>) (-2C NOM) (-2 PL) (-1 COP) (-1 ACT) (-1 V-PL)
 (NOT 0 V) (NOT 1 N) (NOT 1 A/Q/PRON) (NOT 0 HYVANSA)
 (NOT 1 <GENLEFT>) (NOT 1 PCP) (NOT 0 TILANNE))
-; HE OVAT MIEHENNE
+# HE OVAT MIEHENNE
 (@w =! (N NOM PL <POSS>) (-3C NOM) (-3 PL) (-2 COP) (-2 ACT) (-2 V-PL)
 (NOT -1 N) (NOT -1 CLB?) (NOT 0 V) (NOT 1 N) (NOT 1 A/Q/PRON)
 (NOT 0 HYVANSA) (NOT 1 <GENLEFT>) (NOT 1 PCP) (NOT 0 TILANNE))
-; HE OVAT EHKä/PITKäT MIEHENNE
-(@w =! (N GEN) (NOT 0 V) (1 MUKAINEN)) ; SG <POSS> omitted 24.1.2001
+# HE OVAT EHKä/PITKäT MIEHENNE
+(@w =! (N GEN) (NOT 0 V) (1 MUKAINEN)) # SG <POSS> omitted 24.1.2001
 (@w =! (N NOM PL <POSS>) (-1 KAIKKI) (-1 NOM) (NOT 1 <GENLEFT>))
 (@w =! (N GEN SG <POSS> "alku") (NOT 0 V) (*-1 SAADA))
 (@w =! (GEN PL) (0 OMIEN))
@@ -1217,47 +1191,47 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =! (GEN PL) (-1C GEN) (-1 PL))
 (@w =! (GEN PL) (1C TEMP))
 (@w =! (DV-MA NOM SG <POSS>) (1C NOM) (1 SG) (NOT 0 N))
-; HäNEN HYVäKSYMäNSä ESITYS
+# HäNEN HYVäKSYMäNSä ESITYS
 (@w =! (DV-MA NOM PL <POSS>) (1C NOM) (1 PL) (NOT 0 N))
 (@w =! (DV-MA GEN SG <POSS>) (1C GEN) (1 SG) (NOT 0 N))
 (@w =! (PRON GEN SG "itse" <POSS>) (-1 GEN))
 (@w =! (PRON GEN SG "itse" <POSS>) (-1C V) (*-2 NOM LR0) (LR0 SG *R)
-(NOT *R CLB?))  ; XXXX
+(NOT *R CLB?))  # XXXX
 (@w =! (PRON NOM PL "itse" <POSS>) (-1C V) (*-2 NOM LR0) (LR0 PL *R)
-(NOT *R CLB?))  ; XXXX
+(NOT *R CLB?))  # XXXX
 (@w =0 (PRON NOM SG "itse" <POSS>) (NOT 1 DUMMY))
 (@w =0 (NOM SG <POSS>) (NOT 0 V) (NOT -1 COP)
 (NOT 1 N) (NOT 1 A/Q/PRON) (NOT -1 NES) (-2C NOM) (-1C VFIN) (-1 ACT))
-; KOMITEAT JäTTI(VäT) MIETINTöNSä
+# KOMITEAT JäTTI(VäT) MIETINTöNSä
 (@w =0 (NOM SG <POSS>)  (NOT 1 N) (-1C TEMP))
 (@w =0 (NOM SG <POSS>) (-1C VFIN) (-1 ACT) (NOT -1 OLLA) (NOT -1 NES))
 (@w =0 (NOM SG <POSS>) (-2C VFIN) (-2 ACT) (NOT -2 OLLA) (NOT -1 CLB?)
 (NOT -2 NES))
 (@w =0 (GEN SG <POSS>) (-1C VFIN) (-1 ACT) (-1 OLLA) (-1 SG3) (*-2 ADE *R)
-(NOT *R CLB?)) ; XXXX
+(NOT *R CLB?)) # XXXX
 (@w =0 (GEN SG <POSS>) (-2C VFIN) (-2 ACT) (-2 SG3) (-2 OLLA) (NOT -1 CLB?)
 (*-3 ADE *R) (NOT *R CLB?))
 (@w =0 (NOM <POSS>) (*-1C NEG *L) (*L NOM LR0) (LR0 NOMHEAD *R)
-(NOT *R CLB?) (NOT -1 CLB?)) ; XXXX
+(NOT *R CLB?) (NOT -1 CLB?)) # XXXX
 (@w =! (GEN SG P-1PL <POSS> "maa") (1 N))
 (@w =! (GEN SG P-1PL <POSS> "maa") (2 N) (NOT 1 V))
 (@w =! (GEN SG P-1PL <POSS> "maa") (3 N) (NOT 1 V) (NOT 2 V))
 (@w =! (GEN SG P-1PL <POSS> "maa") (4 N) (NOT 1 V) (NOT 2 V) (NOT 3 V))
-(@w =0 (<POSS> P-2SG) (0 V) (0 PAST) (NOT -1 SINA)) ; TOTESI,KOHOSI
-(@w =! (N NOM SG <POSS>) (1C NEGV) (1 SG123) (NOT 2 TARVITA)) ; XXX
+(@w =0 (<POSS> P-2SG) (0 V) (0 PAST) (NOT -1 SINA)) # TOTESI,KOHOSI
+(@w =! (N NOM SG <POSS>) (1C NEGV) (1 SG123) (NOT 2 TARVITA)) # XXX
 (@w =! (N NOM PL <POSS>) (1C NEGV) (1 PL123) (NOT 2 TARVITA))
-;------------------------------------------------------------
-; KOORDINAATIO: N C N
-; THIS IS A TYPICAL EXAMPLE: MAKING THIS GENERALISATION FOR ALL CASES
-; WOULD NOT MAKE SENSE; ONLY PTV IS HOMONYMOUS. THIS IS A DISAMBIGUATION
-; GRAMMAR!
+#------------------------------------------------------------
+# KOORDINAATIO: N C N
+# THIS IS A TYPICAL EXAMPLE: MAKING THIS GENERALISATION FOR ALL CASES
+# WOULD NOT MAKE SENSE# ONLY PTV IS HOMONYMOUS. THIS IS A DISAMBIGUATION
+# GRAMMAR!
 (@w =! (PTV) (1 C) (2 PTV) (3 V))
-  ; PAIKKAA JA KOKOA VOIDAAN
+  # PAIKKAA JA KOKOA VOIDAAN
 (@w =! (PTV) (-2 PTV) (-1 C) (1 V))
-  ; PAIKKAA JA KOKOA VOIDAAN
-;------------------------------------------------------------
-; *** PP & PSP
-;GENLEFT,GENRIGHT,PTVLEFT,PTVRIGHT IN ISOLATION
+  # PAIKKAA JA KOKOA VOIDAAN
+#------------------------------------------------------------
+# *** PP & PSP
+#GENLEFT,GENRIGHT,PTVLEFT,PTVRIGHT IN ISOLATION
 (@w =! (PSP <GENLEFT>) (-1 GEN) (NOT 0 <GENRIGHT>) (NOT 0 <PTVRIGHT>)
 (NOT 0 <PTVLEFT>) (NOT -1 AD/PCP) (NOT 0 <POSS>) (NOT -1 KERRAN)
 (NOT 0 JOHDOSTA))
@@ -1271,7 +1245,7 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =! (PP <GENRIGHT>) (1 GEN) (NOT 0 <GENLEFT>) (NOT 0 <PTVRIGHT>)
 (NOT 0 <PTVLEFT>) (NOT 0 YLI/ALLE) (NOT 0 <POSS>) (NOT 0 JALKEEN))
 (@w =! (PP <PTVRIGHT>) (1 PTV) (NOT 0 <GENRIGHT>) (NOT 0 <GENLEFT>)
-(NOT 0 <PTVLEFT>) (NOT 0 <POSS>) (NOT 0 V))   ; CF. "ei edellä"
+(NOT 0 <PTVLEFT>) (NOT 0 <POSS>) (NOT 0 V))   # CF. "ei edellä"
 (@w =! (PP <PTVRIGHT>) (1 GEN/PUNCT) (2 PTV) (NOT 0 <GENRIGHT>)
 (NOT 0 <GENLEFT>) (NOT 0 <PTVLEFT>) (NOT 0 <POSS>))
 (@w =! (PP "ilman") (1 ETTA))
@@ -1279,7 +1253,7 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =! (PP "ilman") (2 PTV))
 (@w =! (PP "paitsi") (1 ETTA))
 (@w =! (PP "paitsi") (1 COMMA) (2 ETTA))
-;"jälkeen", "kautta" GENLEFT,GENRIGHT,PTVLEFT
+#"jälkeen", "kautta" GENLEFT,GENRIGHT,PTVLEFT
 (@w =! (PSP "jälkeen") (-1 GEN) (NOT 0 <POSS>) (NOT -1 KERRAN))
 (@w =! (PSP <GENLEFT>) (-1 PTV/GEN) (0 <GENRIGHT>) (0 <PTVLEFT>)
 (NOT 0 <PTVRIGHT>) (NOT 1 GEN) (NOT -1 AD/PCP) (NOT 0 <POSS>)
@@ -1289,16 +1263,16 @@ DISAMBIGUATION-CONSTRAINTS
 (NOT 0 JOHDOSTA))
 (@w =! (PP <GENRIGHT>) (NOT -1 PTV/GEN) (0 <GENLEFT>) (0 <PTVLEFT>)
 (NOT 0 <PTVRIGHT>) (1 GEN) (NOT 0 <POSS>) (NOT 0 JALKEEN))
-; NOW ERROR FOR "vuonna 400 jälkeen kr syntymän"
-;ENNEN,PäIN,PITKIN,PAITSI,KOHTI (PTVLEFT,PTVRIGHT)
-(@w =! (PSP "päin") (-1 ILL/ALL))   ; MEREEN-MERELLE PäIN
+# NOW ERROR FOR "vuonna 400 jälkeen kr syntymän"
+#ENNEN,PäIN,PITKIN,PAITSI,KOHTI (PTVLEFT,PTVRIGHT)
+(@w =! (PSP "päin") (-1 ILL/ALL))   # MEREEN-MERELLE PäIN
 (@w =! (PSP <PTVLEFT>) (-1C PTV) (0 <PTVRIGHT>) (NOT 0 <GENLEFT>)
 (NOT 0 <GENRIGHT>) (NOT 1 PTV) (NOT 2 PTV))
 (@w =! (PP "ennen") (1 LUKU))
 (@w =! (PP "ennen") (1 PTV))
 (@w =! (PP <PTVRIGHT>) (1 PTV) (0 <PTVLEFT>) (NOT 0 <GENLEFT>)
 (NOT 0 <GENRIGHT>) (NOT -1 PTV) (NOT -2 PTV) (NOT 0 <POSS>))
-;LäHELLä,JäLJESSä,EDELLä (PTVRIGHT,PTVLEFT,GENLEFT)
+#LäHELLä,JäLJESSä,EDELLä (PTVRIGHT,PTVLEFT,GENLEFT)
 (@w =! (PSP <GENLEFT>) (-1 PTV/GEN) (0 <PTVRIGHT>) (0 <PTVLEFT>)
 (NOT 0 <GENRIGHT>) (NOT 1 PTV) (NOT -1 AD/PCP) (NOT 0 <POSS>)
 (NOT -1 KERRAN) (NOT 0 JOHDOSTA))
@@ -1306,7 +1280,7 @@ DISAMBIGUATION-CONSTRAINTS
 (NOT 0 <GENRIGHT>) (NOT 1 PTV) (NOT -1 AD/PCP) (NOT 0 <POSS>))
 (@w =! (PP <PTVRIGHT>) (NOT -1 PTV/GEN) (0 <GENLEFT>) (0 <PTVLEFT>)
 (NOT 0 <GENRIGHT>) (1 PTV) (NOT 0 <POSS>) (NOT 0 JOHDOSTA))
-; LIKELLä,KESKELLä (PTVRIGHT,GENLEFT)
+# LIKELLä,KESKELLä (PTVRIGHT,GENLEFT)
 (@w =! (PSP <GENLEFT>) (-1 GEN) (0 <PTVRIGHT>) (NOT 0 <PTVLEFT>)
 (NOT 0 <GENRIGHT>) (NOT 1 PTV) (NOT -1 AD/PCP) (NOT 0 <POSS>)
 (NOT -1 KERRAN) (NOT 0 JOHDOSTA) (NOT 2 PTV))
@@ -1318,7 +1292,7 @@ DISAMBIGUATION-CONSTRAINTS
 (NOT -1 KERRAN) (NOT 0 JOHDOSTA) (NOT 2 PTV))
 (@w =! (PP <PTVRIGHT>) (NOT -1 GEN) (0 <GENLEFT>) (NOT 0 <PTVLEFT>)
 (NOT 0 <GENRIGHT>) (1 PTV) (NOT 0 <POSS>))
-; KESKEN (PTVRIGHT,GENRIGHT,GENLEFT)
+# KESKEN (PTVRIGHT,GENRIGHT,GENLEFT)
 (@w =! (PSP <GENLEFT>) (-1 GEN) (0 <PTVRIGHT>) (NOT 0 <PTVLEFT>)
 (0 <GENRIGHT>) (NOT 1 PTV/GEN) (NOT -1 AD/PCP) (NOT 0 <POSS>)
 (NOT -1 KERRAN) (NOT 0 JOHDOSTA) (NOT 2 PTV/GEN))
@@ -1327,7 +1301,7 @@ DISAMBIGUATION-CONSTRAINTS
 (NOT -1 KERRAN) (NOT 0 JOHDOSTA) (NOT 2 PTV/GEN))
 (@w =! (PP <PTVRIGHT>) (NOT -1 GEN) (0 <GENLEFT>) (NOT 0 <PTVLEFT>)
 (0 <GENRIGHT>) (1 PTV/GEN) (NOT 0 <POSS>))
-; ALLA (GENRIGHT,GENLEFT)
+# ALLA (GENRIGHT,GENLEFT)
 (@w =! (PSP <GENLEFT>) (-1 GEN) (NOT 0 <PTVRIGHT>) (NOT 0 <PTVLEFT>)
 (0 <GENRIGHT>) (NOT 1 GEN) (NOT -1 AD/PCP) (NOT 0 <POSS>) (NOT -1 KERRAN)
 (NOT 0 JOHDOSTA))
@@ -1336,57 +1310,57 @@ DISAMBIGUATION-CONSTRAINTS
 (NOT 0 JOHDOSTA))
 (@w =! (PP <GENRIGHT>) (NOT -1 GEN) (0 <GENLEFT>) (NOT 0 <PTVLEFT>)
 (NOT 0 <PTVRIGHT>) (1 GEN) (NOT 0 <POSS>) (NOT 0 JALKEEN))
-;DELETING SUPERFLUOUS READINGS FOR ALL COMBINATIONS
+#DELETING SUPERFLUOUS READINGS FOR ALL COMBINATIONS
 (@w =0 (PSP <GENLEFT>) (NOT -1 GEN) (NOT 0 <PTVLEFT>))
 (@w =0 (PSP <PTVLEFT>) (NOT -1 PTV) (NOT 0 <GENLEFT>))
 (@w =0 (PSP <GENLEFT>) (NOT -1 PTV/GEN) (0 <PTVLEFT>))
 (@w =0 (PP <PTVRIGHT>) (NOT 0 <GENRIGHT>) (NOT 0 <PTVLEFT>) (NOT 1 PTV)
 (NOT 2 PTV) (NOT 1 KELLO))
-(@w =0 (PP <GENRIGHT>) (NOT 0 <PTVRIGHT>) (NOT 1 GEN) (NOT 1 NUM) (NOT 2 GEN)) ;2lastcondadd9.10.2000"yli"
+(@w =0 (PP <GENRIGHT>) (NOT 0 <PTVRIGHT>) (NOT 1 GEN) (NOT 1 NUM) (NOT 2 GEN)) #2lastcondadd9.10.2000"yli"
 (@w =0 (PP <PTVRIGHT>) (0 <GENRIGHT>) (NOT 1 PTV/GEN) (NOT 2 PTV/GEN))
 (@w =! (PSP "lähtien") (-1 ELA/ABL))
-(@w =! (PSP "lähtien") (-2 ELA) (-1 NUM))  ; VUODESTA 1946 LäHTIEN
-;(@w =!! (PSP "sitten") (-1 <TIME>))  ;old one, changed 26.11.2000 to next one
-(@w =! (PSP "sitten") (-2 NUM) (-1 <TIME>) (-1 PTV))  ;also cf. below under heuristic
+(@w =! (PSP "lähtien") (-2 ELA) (-1 NUM))  # VUODESTA 1946 LäHTIEN
+#(@w =!! (PSP "sitten") (-1 <TIME>))  #old one, changed 26.11.2000 to next one
+(@w =! (PSP "sitten") (-2 NUM) (-1 <TIME>) (-1 PTV))  #also cf. below under heuristic
 (@w =! (GEN) (1C PSP) (1C <GENLEFT>) (NOT -1 AD/PCP))
 (@w =! (PTV) (1C PSP) (1C <PTVLEFT>))
 (@w =! (GEN) (-1C PP) (-1C <GENRIGHT>))
 (@w =! (PTV) (-1C PP) (-1C <PTVRIGHT>))
-;*** INTERJ ***
+#*** INTERJ ***
 (@w =0 (INTJ) (NOT -1 CLB?) (NOT 0 VOI))
-  ; INTERJECTION MAY ONLY START A SENTENCE: C + INTJ
-;; **** VERBAL ENDINGS ****
+  # INTERJECTION MAY ONLY START A SENTENCE: C + INTJ
+## **** VERBAL ENDINGS ****
 (@w =! (ACT SG3) (NOT *-1 NEGV) (-1C NOM) (-1 N/PRON/Q) (NOT -1 DV-US)
  (NOT -1 DA-US) (NOT 0 TUO) (NOT -1 NUM) (NOT 1C VFIN) (NOT 2C VFIN)
  (NOT *-1 VFIN) (NOT 0 PIENIA/ELAA) (NOT -1 NOUN+INF1) (NOT 0 COND)
  (NOT 0 PAST))
-;; *** IMPERATIVES ***
+## *** IMPERATIVES ***
 (@w =! (IMPV) (-1 >>>) (NOT *1C VFIN) (NOT 0 VOI) (NOT 0 KO))
-; NB "kysy voiko..."
-(@w =! (IMPV) (1 DUMMY))  ; (-2 CLB?) (-1 C) (*1 CLB? *L) (NOT *L VFIN)
+# NB "kysy voiko..."
+(@w =! (IMPV) (1 DUMMY))  # (-2 CLB?) (-1 C) (*1 CLB? *L) (NOT *L VFIN)
 (@w =0 (IMPV) (*1C VFIN *L) (NOT *L CLB?) (NOT 1 CLB?))
 (@w =0 (IMPV) (*-1C VFIN *R) (NOT *R CLB?) (NOT -1 CLB?))
-;; INFINITIVES
+## INFINITIVES
 (@w =! (INF1) (-2C INF1) (-1 C) (1 CLB?) (NOT 0 UUSIA))
-  ; "...voidaan käsitellä ja ylläpitää,"
-  ; THIS HANDLES COORDINATION.
+  # "...voidaan käsitellä ja ylläpitää,"
+  # THIS HANDLES COORDINATION.
 (@w =! (INF1) (-2 COP) (-1 HYVA/HUONO))
-  ; ON VAIKEA OLLA
+  # ON VAIKEA OLLA
 (@w =! (INF1) (-3 COP) (-2 ADV) (-1 A) (NOT 0 UUSIA))
-  ; ONKO SITTEN MOTIVOITUA YRITTää...
+  # ONKO SITTEN MOTIVOITUA YRITTää...
 (@w =! (INF1) (-2 COP) (-1 N) (-1 PTV) (-1 SG) (NOT 0 UUSIA))
-  ; ON SYYTä PALAUTTAA MIELEEN
+  # ON SYYTä PALAUTTAA MIELEEN
 (@w =! (INF1) (-3 COP) (-2 ADV) (-1 N) (-1 NOM/PTV) (-1 SG) (NOT 0 UUSIA))
-  ; HAMPURIN KATASTROFIN JäLKEEN AINOANA PääMääRäNä OLEVAN *ESTää*...)
+  # HAMPURIN KATASTROFIN JäLKEEN AINOANA PääMääRäNä OLEVAN *ESTää*...)
 (@w =! (INF1) (-1C INF1-VERB) (NOT 0 N) (NOT 0 UUSIA))
 (@w =! (INF1) (-2C INF1-VERB) (NOT -1 PTV) (NOT 0 N) (NOT 0 UUSIA))
 (@w =! (INF1) (-3C INF1-VERB) (NOT -1 PTV) (NOT 0 N) (NOT 0 UUSIA))
 (@w =! (INF1) (-1C NOUN+INF1) (*-1C VFIN *R) (NOT *R CLB?) (NOT 0 N))
-(@w =0 (INF1) (-1C INF1))   ; SAATTOI ALKAA OTTAA KANTAA(N)
+(@w =0 (INF1) (-1C INF1))   # SAATTOI ALKAA OTTAA KANTAA(N)
 (@w =0 (INF2) (NOT -2 GEN) (-1 GEN-PREP))
-  ; "uudistushankkeiden äänestäminen yli vaalien
+  # "uudistushankkeiden äänestäminen yli vaalien
 (@w =! (INF2) (0 POTN))
-; HIUKAN LIIOITELLEN (EI POTN)
+# HIUKAN LIIOITELLEN (EI POTN)
 (@w =! (INF3) (-1 V) (0 ADE) (NOT 0 N) (NOT 1 ADE))
 (@w =! (INF3) (-2 V) (0 ADE) (NOT 0 N) (NOT 1 ADE))
 (@w =! (INF3) (-3 V) (0 ADE) (NOT 0 N) (NOT 1 ADE))
@@ -1399,7 +1373,7 @@ DISAMBIGUATION-CONSTRAINTS
  (NOT -1 CLB?))
 (@w =! (INF3 ABE) (NOT 0 PSP) (NOT 0 ADV))
 (@w =0 (INF3 ACT INS) (NOT *-1 <NEC-V>))
-; *** DV-MA
+# *** DV-MA
 (@w =! (DV-MA INE SG) (1C INE) (1 SG))
 (@w =! (DV-MA INE PL) (1C INE) (1 PL))
 (@w =! (DV-MA ELA SG) (1C ELA) (1 SG) (NOT *-1 <INF3-ELA>))
@@ -1408,7 +1382,7 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =! (DV-MA ILL PL) (1C ILL) (1 PL) (NOT *-1 <INF3-ILL>))
 (@w =! (DV-MA ADE SG) (1C ADE) (1 SG))
 (@w =! (DV-MA ADE PL) (1C ADE) (1 PL))
-; ERROR: "ilman siirtymistä yksikielisistä kaksikielisiin ..."
+# ERROR: "ilman siirtymistä yksikielisistä kaksikielisiin ..."
 (@w =0 (DV-MA INE) (NOT 1C INE))
 (@w =0 (DV-MA ELA) (NOT 1C ELA))
 (@w =0 (DV-MA ILL) (NOT 1C ILL))
@@ -1419,46 +1393,46 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =! (DV-MA NOM) (1C NOM) (-1C GEN) (-1 N))
 (@w =! (DV-MA GEN) (1C GEN) (-1C GEN) (-1 N) (NOT 0 SANOA))
 (@w =! (DV-MA PTV) (1C PTV) (-1C GEN) (-1 N))
-;; *** NEG-FORMS
+## *** NEG-FORMS
 (@w =! (NEG) (-1 NEGV) (NOT 0 NEG-AMBIGUOUS) (NOT 1 NEG) (NOT 1 PRES)
  (0 PRES/PAST))
-  ; EI HALUTA/=!; EIKä HEITä LöYDY
-  ; BUT:     EI NIITä VOI MUUTTAA!
-  ;     EIKä MUUTA PYYDETä KUIN
-  ; THIS AD HOC WAY IS THE EASIEST.
+  # EI HALUTA/=!# EIKä HEITä LöYDY
+  # BUT:     EI NIITä VOI MUUTTAA!
+  #     EIKä MUUTA PYYDETä KUIN
+  # THIS AD HOC WAY IS THE EASIEST.
 (@w =0 (PSS NEG) (*-1 NEGV *RC) (*RC PCP2 *R) (NOT *R CLB?))
-; EI VOI JÄÄDÄ
-;     (NOT *R NEG) (NOT 0 NEG-AMBIGUOUS) (0 PRES/PAST)
-;     (NOT 0 A/N) (NOT *1 NEG) (NOT 1 NOM) (*-1 NEGV *R) (NOT *R CLB?))
-;     VAARALLINEN, NEG/N/A-HOMOGRAFIAA ESIINTYY.
-;     VRT: EI SUOMALAISTA VOI AINA KAIKESTA SYYTTää.
+# EI VOI JÄÄDÄ
+#     (NOT *R NEG) (NOT 0 NEG-AMBIGUOUS) (0 PRES/PAST)
+#     (NOT 0 A/N) (NOT *1 NEG) (NOT 1 NOM) (*-1 NEGV *R) (NOT *R CLB?))
+#     VAARALLINEN, NEG/N/A-HOMOGRAFIAA ESIINTYY.
+#     VRT: EI SUOMALAISTA VOI AINA KAIKESTA SYYTTää.
 (@w =0 (NEG) (NOT *-1 NEGV) (NOT *1 NEGV))
-  ; IF NO NEGV, THEN NO NEG IN THE SAME CLAUSE.
+  # IF NO NEGV, THEN NO NEG IN THE SAME CLAUSE.
 (@w =0 (NEG) (NOT *-1 NEGV) (*1 NEGV *RC) (*RC NEG))
-  ; IF NEGV ONLY ON THE RIGHT, AND IT IS ENGAGED, OUT WITH NEG.
+  # IF NEGV ONLY ON THE RIGHT, AND IT IS ENGAGED, OUT WITH NEG.
 (@w =0 (NEG) (*-1 NEGV R+1C) (R+1C NEG) (NOT -1 CLB?))
-(@w =! (PSS "alkaa") (0 ALETA)) ; XXXX SHOULD BE UNDER PSS
+(@w =! (PSS "alkaa") (0 ALETA)) # XXXX SHOULD BE UNDER PSS
 (@w =0 (V "juuria") (NOT 1 DUMMY))
 (@w =0 (V "eritä") (NOT 1 DUMMY))
-(@w =! (V PRES "kannattaa") (NOT 1 DUMMY))             ; (NOT *-1 TäYTYä...)
+(@w =! (V PRES "kannattaa") (NOT 1 DUMMY))             # (NOT *-1 TäYTYä...)
 (@w =! (V "karsia") (NOT 1 DUMMY))
-(@w =! (V PAST "kestää") (0 N)) ; XXXX NOT "kesti(n)"
-(@w =0 (V "niittää") (NOT 1 DUMMY))                    ; NIITä
-(@w =0 (V "nytkiä") (NOT 1 DUMMY))                     ; OK NYT+KIN
-(@w =0 (V "nähdä" SG1) (-1C VFIN) (NOT -1 CLB?))   ; CHANGED 5.9.95
+(@w =! (V PAST "kestää") (0 N)) # XXXX NOT "kesti(n)"
+(@w =0 (V "niittää") (NOT 1 DUMMY))                    # NIITä
+(@w =0 (V "nytkiä") (NOT 1 DUMMY))                     # OK NYT+KIN
+(@w =0 (V "nähdä" SG1) (-1C VFIN) (NOT -1 CLB?))   # CHANGED 5.9.95
 (@w =0 (V "nähdä" SG1) (1C VFIN) (NOT 1 CLB?))
-(@w =! (V PAST SG1 "olla") (NOT 1 DUMMY))     ; OLIN
-(@w =0 (PCP2 PSS NOM PL "olla") (NOT 1 NOM) (NOT 1 PL)) ; XXXX
+(@w =! (V PAST SG1 "olla") (NOT 1 DUMMY))     # OLIN
+(@w =0 (PCP2 PSS NOM PL "olla") (NOT 1 NOM) (NOT 1 PL)) # XXXX
 (@w =0 (PCP2 PSS NOM PL "tulla") (NOT 1 NOM) (NOT 1 PL))
 (@w =0 (PSS "pidetä") (NOT 1 DUMMY))
-(@w =! (V PRES PSS "päästä") (1 DUMMY)) ; XXXX CHECK IN LARGE CORPUS!
-(@w =! (V PRES SG3 "riittää") (1 DUMMY)) ; XXXX -"-
+(@w =! (V PRES PSS "päästä") (1 DUMMY)) # XXXX CHECK IN LARGE CORPUS!
+(@w =! (V PRES SG3 "riittää") (1 DUMMY)) # XXXX -"-
 (@w =! (V PRES SG3 "pitää") (-1C GEN))
-(@w =! (V PRES SG3 "saattaa") (1 DUMMY)) ; XXXX -"-
+(@w =! (V PRES SG3 "saattaa") (1 DUMMY)) # XXXX -"-
 (@w =0 (V "siitä") (NOT 1 DUMMY))
 (@w =0 (V "suomia") (NOT 1 DUMMY))
 (@w =0 (V "suoria") (NOT 1 DUMMY))
-(@w =! (V INF1 "taata") (NOT 1 DUMMY)) ; XXXX
+(@w =! (V INF1 "taata") (NOT 1 DUMMY)) # XXXX
 (@w =0 (V "tervehtää") (NOT 1 DUMMY))
 (@w =! (V PAST SG3 "toimia") (-1C N/PRON) (NOT *-2 VFIN) (NOT 1 VFIN)
  (NOT 2 VFIN) (NOT 3 VFIN))
@@ -1469,23 +1443,23 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =! (V PAST SG3 "tulla") (1 ADV))
 (@w =! (V PAST SG3 "tulla") (1 A) (2 N))
 (@w =! (V PAST SG3 "tulla") (*-1 VFIN *R) (*R C))
-(@w =! (V PRES PL1 "tulla") (NOT 1 DUMMY))   ; TULEMME, RISKY!
+(@w =! (V PRES PL1 "tulla") (NOT 1 DUMMY))   # TULEMME, RISKY!
 (@w =! (V PAST SG3 "tulla") (-1 ELA/TRA/ILL/ALL))
 (@w =! (V PRES PL3 "vaikuttaa") (*-1 CLB? *R) (NOT *R VFIN)
 (NOT 1 NOM) (NOT 1 PL))
 (@w =! (V PRES SG3 "vaikuttaa") (*-1 CLB? *R) (NOT *R VFIN)
 (NOT 1 NOM) (NOT 1 SG))
-(@w =0 (V PAST ACT "voida") (0 SG123)) ; XXXX
+(@w =0 (V PAST ACT "voida") (0 SG123)) # XXXX
 (@w =0 (V PAST ACT PL3 "voida") (0 PL123))
 (@w =! (V PRES ACT SG3) (*-1 CLB? LR0) (NOT LR0 VFIN *R) (NOT *R VFIN)
  (-1C NOM) (-1 SG)  (-1 N/PRON/Q) (NOT -1 NOUN+INF1)
  (NOT 0 PAST) (*1 CLB? *L) (NOT *L VFIN) (NOT -2 INF1) (NOT -3 INF1))
-; (NOT -1 VFIN) (NOT -2 VFIN) (NOT -3 VFIN) (NOT -4 VFIN)
-;   (NOT 1 VFIN) (NOT 2 VFIN) (NOT 3 VFIN) (NOT 4 VFIN))
-; JOKA LUO VARMUUDEN
+# (NOT -1 VFIN) (NOT -2 VFIN) (NOT -3 VFIN) (NOT -4 VFIN)
+#   (NOT 1 VFIN) (NOT 2 VFIN) (NOT 3 VFIN) (NOT 4 VFIN))
+# JOKA LUO VARMUUDEN
 (@w =0 (V "vastoa") (NOT 1 DUMMY))
-(@w =! (V INF2 "verrata") (-1 ILL))   ; SIIHEN VERRATEN
-(@w =0 (V S) (NOT 1 DUMMY))                ; INNOSTU+S
+(@w =! (V INF2 "verrata") (-1 ILL))   # SIIHEN VERRATEN
+(@w =0 (V S) (NOT 1 DUMMY))                # INNOSTU+S
 (@w =! (SG1) (-1C MINA) (-1 NOM))
 (@w =! (SG1) (-2C MINA) (-1 NOM))
 (@w =! (SG2) (-1C SINA) (-1 NOM))
@@ -1503,51 +1477,51 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =0 (PL1) (*1C VFIN *L) (NOT *L CLB?) (NOT 1 CLB?))
 (@w =0 (PL2) (*1C VFIN *L) (NOT *L CLB?) (NOT 1 CLB?))
 (@w =0 (SG3) (-1 NEGV))
-  ; A FINITE VERB (SG3) CANNOT FOLLOW NEGV AT POSITION 1.
+  # A FINITE VERB (SG3) CANNOT FOLLOW NEGV AT POSITION 1.
 (@w =0 (SG3) (-2 NEGV) (NOT -1 V) (NOT -1 CLB?))
 (@w =0 (SG3) (-3 NEGV) (NOT -1 V) (NOT -1 CLB?) (NOT -2 V) (NOT -2 CLB?))
 (@w =0 (SG3) (-4 NEGV) (NOT -1 V) (NOT -1 CLB?) (NOT -2 V) (NOT -2 CLB?)
- (NOT -3 V) (NOT -3 CLB?))   ; XXXX
+ (NOT -3 V) (NOT -3 CLB?))   # XXXX
 (@w =0 (SG3) (-5 NEGV) (NOT -1 V) (NOT -1 CLB?) (NOT -2 V) (NOT -2 CLB?)
- (NOT -3 V) (NOT -3 CLB?)  (NOT -4 V) (NOT -4 CLB?)) ; XXXX
-(@w =0 (NEG V) (*-1 CLB? LR0) (NOT LR0 NEGV *R) (NOT *R NEGV) (0 SG3)) ; XXXX
+ (NOT -3 V) (NOT -3 CLB?)  (NOT -4 V) (NOT -4 CLB?)) # XXXX
+(@w =0 (NEG V) (*-1 CLB? LR0) (NOT LR0 NEGV *R) (NOT *R NEGV) (0 SG3)) # XXXX
 (@w =0 (N) (0 VOI) (1 INF1))
-  ; "kayttojarjestelman voi asentaa..." GESTALT: VOI + INF
+  # "kayttojarjestelman voi asentaa..." GESTALT: VOI + INF
 (@w =0 (V) (0 INF123) (NOT -1 NOUN+INF1) (-3 CLB?) (-2 GEN) (-1 NOM))
 (@w =0 (PCP1) (NOT -1 NOUN+INF1) (-3 CLB?) (-2 GEN) (-1 NOM))
 (@w =0 (PCP2) (NOT -1 NOUN+INF1) (-3 CLB?) (-2 GEN) (-1 NOM))
-  ; "asennusohjelman ajo kestaa ..." . HEURISTIIKKA (KL).
-; TIDIGARE HETTE DENNA (@w =0 INFV ...
+  # "asennusohjelman ajo kestaa ..." . HEURISTIIKKA (KL).
+# TIDIGARE HETTE DENNA (@w =0 INFV ...
 (@w =0 (PRES) (*-1C MAINV *R) (NOT *R CLB?) (NOT -1 CLB?))
 (@w =0 (PAST) (*-1C MAINV *R) (NOT *R CLB?) (NOT -1 CLB?))
 (@w =0 (IMPV) (*-1C MAINV *R) (NOT *R CLB?) (NOT -1 CLB?))
-  ; UP FOR MORPHOLOGY! LEFT SIDE.
+  # UP FOR MORPHOLOGY! LEFT SIDE.
 (@w =0 (PRES) (*1C MAINV *L) (NOT *L CLB?) (NOT 1 CLB?) (NOT 1 VFIN))
 (@w =0 (PAST) (*1C MAINV *L) (NOT *L CLB?) (NOT 1 CLB?) (NOT 1 VFIN))
 (@w =0 (IMPV) (*1C MAINV *L) (NOT *L CLB?) (NOT 1 CLB?) (NOT 1 VFIN))
-  ; UP FOR MORPHOLOGY! RIGHT SIDE.
+  # UP FOR MORPHOLOGY! RIGHT SIDE.
 (@w =! (V PL3) (NOT *-1C VFIN) (NOT *1C VFIN) (*-1 NOM LR0) (LR0 PL))
-; *** PCP
+# *** PCP
 (@w =!! (PCP1 INS) (1 N) (1 INS))
 (@w =!! (PCP2 INS) (1 N) (1 INS))
 (@w =!  (PCP1 PSS NOM SG "tehdä") (-1 VFIN) (*-2 GEN *R) (NOT *R CLB?))
 (@w =!  (PCP1 PSS NOM SG "tehdä") (-2 VFIN) (*-3 GEN *R) (NOT *R CLB?))
 (@w =0 (PCP2 PSS <POSS>) (NOT 1 DUMMY))
-; LäHETYKSENSä "lähetä" <PTV-OBJ> PCP2 PSS POS TRA SG P-3 <POSS>
+# LäHETYKSENSä "lähetä" <PTV-OBJ> PCP2 PSS POS TRA SG P-3 <POSS>
 (@w =0 (PCP1 PL NOM) (-1C NOM) (NOT -1 A) (NOT 1 NOM) (NOT 1 PL))
-  ; "ohjeet näkyvät/=0 ...", "x-sg-nom ja y-sg-nom tulevat"
-  ; AFTER N/Q/PRON NOM PL, PCP1 = MAINVERB (MORE CHECKS)
+  # "ohjeet näkyvät/=0 ...", "x-sg-nom ja y-sg-nom tulevat"
+  # AFTER N/Q/PRON NOM PL, PCP1 = MAINVERB (MORE CHECKS)
 (@w =0 (PCP2 PSS NOM PL) (NOT 1 NOM) (NOT 1 PL) (NOT 1 NUM) (NOT -1 >>>))
 (@w =0 (PCP2 PSS "olla") (NOT 1 DUMMY))
 (@w =0 (PCP2 PSS "tulla") (NOT 1 DUMMY))
-; OLLUT,TULLUT,MääRITELLYT
-(@w =0 (PCP2 NOM PSS PL) (-1 COP));
+# OLLUT,TULLUT,MääRITELLYT
+(@w =0 (PCP2 NOM PSS PL) (-1 COP))#
 (@w =! (PCP2 ACT A POS GEN SG) (0 THREE))
 (@w =! (V REF ACT) (-1 <REF>) (-1 REF-CORR) (NOT 1 A) (NOT 1 C) (NOT 1 GEN)
  (NOT 0 YLLATTAA))
 (@w =! (V REF ACT) (-2 <REF>) (-2 REF-CORR) (NOT -1 PTV) (NOT -1 CLB?)
  (NOT 1 A) (NOT 1 C) (NOT 1 GEN) (NOT 0 YLLATTAA))
-;  ED. "ammattiin valmistavan kaksivuotisen koulun merkitystä"
+#  ED. "ammattiin valmistavan kaksivuotisen koulun merkitystä"
 (@w =! (V REF ACT) (-3 <REF>) (NOT -1 PTV) (-3 REF-CORR) (NOT -2 CLB?)
  (NOT 1 A) (NOT 1 C) (NOT 1 GEN) (NOT 0 YLLATTAA) (NOT -1 CLB?))
 (@w =! (V REF ACT) (-4 <REF>) (NOT -1 PTV) (-4 REF-CORR) (NOT -1 CLB?)
@@ -1561,17 +1535,17 @@ DISAMBIGUATION-CONSTRAINTS
  (NOT -3 CLB?) (NOT -2 CLB?) (NOT -1 CLB?))
 (@w =0 (V REF ACT) (*-1C CLB?-C *R) (NOT *R <REF>))
 (@w =! (V REF ACT) (*-1C REF *R) (*R C)  (NOT 1 A) (NOT 1 C) (NOT 1 GEN))
-; ACT ADDED AUG. 8, 95; I.E. PSS NOW NOT HANDLED, MUCH WORK NEEDED ON ALL INST
-; (NOT 1 A,GEN) ALSO ADDED, CF. RIITTÄVÄN NOPEA, HUIMAAVAN NOPEA
+# ACT ADDED AUG. 8, 95# I.E. PSS NOW NOT HANDLED, MUCH WORK NEEDED ON ALL INST
+# (NOT 1 A,GEN) ALSO ADDED, CF. RIITTÄVÄN NOPEA, HUIMAAVAN NOPEA
 (@w =! (V TEMP-PAST <POSS>)  (NOT 1 DUMMY))
-; OSTETTUAAN AUTON
-(@w =! (V TEMP-PAST) (-1 GEN) (NOT 1 PTV) (NOT -1 V))  ; OLEVAN PERUSTELTUA
+# OSTETTUAAN AUTON
+(@w =! (V TEMP-PAST) (-1 GEN) (NOT 1 PTV) (NOT -1 V))  # OLEVAN PERUSTELTUA
 (@w =0 (V TEMP-PAST) (1 PTV) (NOT -1 GEN))
 (@w =0 (V TEMP-PAST) (1 GEN) (2 PTV) (NOT -1 GEN))
 (@w =0 (V TEMP-PAST) (NOT -1 GEN) (1 CMP))
 (@w =0 (V TEMP-PAST) (-2C PTV) (-1 C))
 (@w =0 (V TEMP-PAST) (*-1 OLLA LR0) (LR0 VFIN *R) (NOT *R VFIN) (NOT -1 CLB?))
-; *** C ***
+# *** C ***
 (@w =! (C "eli") (-1 COMMA))
 (@w =! (C "eli") (-1 NOM) (1 NOM))
 (@w =! (C "eli") (-1 PTV) (1 PTV))
@@ -1586,42 +1560,42 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =! (C "vaan") (-1 COMMA))
 (@w =! (C "vaan") (1C VFIN-C-MYOS))
 (@w =0 (NOCAP) (NOT 1 DUMMY))
-; DELETES SPURIOUS PROPER N READINGS LIKE (ARVO PROP)
+# DELETES SPURIOUS PROPER N READINGS LIKE (ARVO PROP)
 (@w =0 (CAP) (NOT 1 DUMMY))
-; DELETES SPURIOUS COMMON N READINGS LIKE (ARVO PROP)
-;(@w =! (C "sillä") (-1 COMMA) (NOT 1 ADE))
+# DELETES SPURIOUS COMMON N READINGS LIKE (ARVO PROP)
+#(@w =! (C "sillä") (-1 COMMA) (NOT 1 ADE))
 (@w =! (C "sillä") (1C NOM) (2C VFIN))
 (@w =! (C "sillä") (NOT 1 CLB?) (2C NOM) (3C VFIN))
 (@w =! (C "sillä") (1 JOS/KUN/KOSKA/VAIKKA))
 (@w =! (C "sillä") (2 JOS/KUN/KOSKA/VAIKKA))
 (@w =! (PRON ADE SG "se") (-1 C/ADV))
 (@w =! (PRON ADE SG "se") (NOT -1 CLB?) (-2 C/ADV))
-;(@w =! (PRON ADE SG "se") (1C OLLA) (1 VFIN))   ; TULEE VIRHEITä LIIKAA
+#(@w =! (PRON ADE SG "se") (1C OLLA) (1 VFIN))   # TULEE VIRHEITä LIIKAA
 (@w =! (PRON ADE SG "se") (1 CLB?) (NOT 1 JOS/KUN/KOSKA/VAIKKA))
 (@w =0 (N PL "häkä")  (NOT 1 DUMMY))
-(@w =! (N GEN SG <POSS>) (-1C PCP) (-1 GEN) (-1 SG))   ; XXXX
-(@w =0 (V INF3) (0 ELAMA/KUOLEMA)) ; XXXX
-(@w =! (N PL <POSS> "vanhempi") (NOT 1 DUMMY)) ; XXXX
-(@w =0 (N TRA "vanhempi")  (NOT 1 DUMMY)) ; XXXX
-(@w =! (N "voima") (*-1 OLLA *R) (NOT *R CLB?) (NOT -1 CLB?)) ; XXXX
-(@w =0 (DV-TTA) (0 PSS) (0 PCP1) (NOT 0 N) (NOT 0 A-A/N))  ; XXX AMMUTTAVA
-(@w =! (<COERCE!>) (NOT 1 DUMMY))    ;  #843
-(@w =! (N PTV SG "vuode")  (NOT 1 DUMMY))           ; VUODETTA
-(@w =! (N GEN SG "vuode") (1 PSP) (NOT 1 ASTI))   ; VUOTEEN VIERESSä
+(@w =! (N GEN SG <POSS>) (-1C PCP) (-1 GEN) (-1 SG))   # XXXX
+(@w =0 (V INF3) (0 ELAMA/KUOLEMA)) # XXXX
+(@w =! (N PL <POSS> "vanhempi") (NOT 1 DUMMY)) # XXXX
+(@w =0 (N TRA "vanhempi")  (NOT 1 DUMMY)) # XXXX
+(@w =! (N "voima") (*-1 OLLA *R) (NOT *R CLB?) (NOT -1 CLB?)) # XXXX
+(@w =0 (DV-TTA) (0 PSS) (0 PCP1) (NOT 0 N) (NOT 0 A-A/N))  # XXX AMMUTTAVA
+(@w =! (<COERCE!>) (NOT 1 DUMMY))    #  #843
+(@w =! (N PTV SG "vuode")  (NOT 1 DUMMY))           # VUODETTA
+(@w =! (N GEN SG "vuode") (1 PSP) (NOT 1 ASTI))   # VUOTEEN VIERESSä
 (@w =! (N ILL SG "vuosi") (*1 NEGV))
 (@w =! (N ILL SG "vuosi") (*-1 NEGV))
-(@w =! (INTJ "voi") (1 HITTO))     ; #848
+(@w =! (INTJ "voi") (1 HITTO))     # #848
 (@w =0 (N NOM PL "voi") (NOT 1 DUMMY))
 (@w =! (INF1) (-1C NOUN+INF1) (*1C VFIN *L) (NOT *L CLB?))
 (@w =0 (INF1) (*-1 CLB? *R) (NOT *R VFIN) (NOT *-1 INF1) (*1 CLB? *L)
  (NOT *L VFIN) (0 VFIN) (NOT *-1 KO) (NOT *-1 NOUN+INF1)
  (NOT *-1 INF1-VERB))
-; "yritys täyttää ehdot" (ELIMINOI COORD-MAHD)
+# "yritys täyttää ehdot" (ELIMINOI COORD-MAHD)
 (@w =! (INF1) (*-1 VOI *R) (NOT *R CLB?) (*-1 VOI *R) (NOT *R INF1))
 (@w =! (V PRES SG3 "pitää") (1C INF1))
 (@w =! (V PRES SG3 "pitää") (NOT 1 CLB?) (NOT 1 VFIN) (2C INF1))
 (@w =! (V PRES PL3) (-2C N) (-2 NOM) (-2 PL) (*-1 CLB? *R) (NOT *R VFIN)
- (*1 CLB? *L) (NOT *L VFIN))  ; ARVIOT HUOMISESTA MUUTTUVAT
+ (*1 CLB? *L) (NOT *L VFIN))  # ARVIOT HUOMISESTA MUUTTUVAT
 (@w =! (V PRES PSS NEG) (*-1C NEGV *R) (NOT *R VFIN) (NOT 0 N) (NOT 0 PRON)
  (0 DV-TTA) (0 ACT) (NOT *1 NEG) (NOT *-1 NEG) (NOT *-1 NIIN)
  (NOT 0 SAAPUA))
@@ -1631,22 +1605,22 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =0 (A ELA "parka") (NOT 1 DUMMY))
 (@w =! (V PRES KO "voida") (NOT 1 DUMMY))
 (@w =!! (NUM NOM PL "puoli") (NOT -1 PL) (NOT *-1 ASIA))
-(@w =0 (N PL) (0 VUO/VOI) (NOT 1 DUMMY))   ; NB "voista" ETC
-; (@w =0 (V REF ACT) (*-1 <REF> LR0) (NOT LR0 VFIN *R) (NOT *R <REF>))
-; 11 ERRORS OUT OF 14 IN PK.ANL!!
+(@w =0 (N PL) (0 VUO/VOI) (NOT 1 DUMMY))   # NB "voista" ETC
+# (@w =0 (V REF ACT) (*-1 <REF> LR0) (NOT LR0 VFIN *R) (NOT *R <REF>))
+# 11 ERRORS OUT OF 14 IN PK.ANL!!
 (@w =! (PCP2 PSS GEN) (1C GEN))
-(@w =! (PCP1 ACT GEN "riittää") (1C A/PCP))    ; RIITTÄVÄN KALLIS
-;(@w =! PCP (0 GEN) (0 REF) (1C C) (*2 PCP LR0) (LR0 GEN *L) (NOT *L <REF>))
-; NB: ???XXX
+(@w =! (PCP1 ACT GEN "riittää") (1C A/PCP))    # RIITTÄVÄN KALLIS
+#(@w =! PCP (0 GEN) (0 REF) (1C C) (*2 PCP LR0) (LR0 GEN *L) (NOT *L <REF>))
+# NB: ???XXX
 (@w =! (N GEN "vanhempi") (1 N) (1 NOT-GEN-CASE))
 (@w =! (N GEN "vanhempi") (1 N) (1 GEN) (1 SG))
 (@w =0 (N "vanhempi") (NOT 0 GEN) (1 N) (1 NOT-GEN-CASE))
-(@w =! (ADV "puolesta") (0 <POSS>) (NOT -1 GEN))     ; PUOLESTAAN
+(@w =! (ADV "puolesta") (0 <POSS>) (NOT -1 GEN))     # PUOLESTAAN
 (@w =0 (A SUP "usea") (NOT 1 DUMMY))
-(@w =0 (A ILL) (0 ADV) (NOT 1 ILL))  ; TURHAAN, PITKääN
+(@w =0 (A ILL) (0 ADV) (NOT 1 ILL))  # TURHAAN, PITKääN
 (@w =! (N PTV SG) (-1C PTV) (-1 A/Q/PRON) (-1 SG) (NOT 1 PTV) (NOT 0 KAUTTA) (*1 CLB? *LC) (*LC VFIN))
-(@w =0 (V PRES PSS NEG "näkyä") (NOT 1 DUMMY))       ; NäYTä
-(@w =! (IMPV NEG) (*-1 IMPV LR0) (LR0 NEGV *R) (NOT *R CLB?))  ; äLä TULE
+(@w =0 (V PRES PSS NEG "näkyä") (NOT 1 DUMMY))       # NäYTä
+(@w =! (IMPV NEG) (*-1 IMPV LR0) (LR0 NEGV *R) (NOT *R CLB?))  # äLä TULE
 (@w =! (Q PRON "harva") (NOT *-1 HARVA-SET) (NOT *1 HARVA-SET)
  (NOT 0 INS) (NOT 0 INE))
 (@w =0 (INTJ "voi") (NOT *1 HITTO))
@@ -1655,11 +1629,11 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =0 (N "jää") (*-1 CLB? *RC) (*RC N LR0) (LR0 NOM LR0) (LR0 SG))
 (@w =0 (PCP2 ELA "hallita") (NOT 1 ELA))
 (@w =! (REF <POSS>)  (NOT 1 DUMMY))
-(@w =! (ADV) (0 INF3) (0 ABE))   ; VäLTTäMäTTä
-(@w =! (AD "yli") (1C NUM) (NOT 2 GEN)); not2gen added 9.10.2000, thisrule red cf above
-(@w =! (PCP2 PSS NOM PL) (1C NUM) (1 NOM))       ; ARVIOIDUT 400 KERTAA
-(@w =0 (PCP2 PSS NOM PL) (1C NOM) (1 SG))    ; ESITYSTä VALMISTELLUT RYHMä
-(@w =! (PSP "jälkeen") (-2C GEN) (-1 NUM))   ; VUODEN 1980 JÄLKEEN
+(@w =! (ADV) (0 INF3) (0 ABE))   # VäLTTäMäTTä
+(@w =! (AD "yli") (1C NUM) (NOT 2 GEN))# not2gen added 9.10.2000, thisrule red cf above
+(@w =! (PCP2 PSS NOM PL) (1C NUM) (1 NOM))       # ARVIOIDUT 400 KERTAA
+(@w =0 (PCP2 PSS NOM PL) (1C NOM) (1 SG))    # ESITYSTä VALMISTELLUT RYHMä
+(@w =! (PSP "jälkeen") (-2C GEN) (-1 NUM))   # VUODEN 1980 JÄLKEEN
 (@w =! (A INS) (1 C) (2 INS) (2 A/N))
 (@w =0 (A INS) (NOT 1 INS) (NOT 2 INS))
 (@w =! (N GEN SG "valta") (*-1 CLB? *R) (*R VALLAN-WDS))
@@ -1672,20 +1646,20 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =0 (V IMPV) (-1C INTERR-KO))
 (@w =! (A "harva") (1 HARVA-SET))
 (@w =! (A "harva") (-1 HARVA-SET))
-;FROM HERE ON, ADDED 26.8.
-(@w =! (PSP "mielestä") (0 <POSS>) (-1C GEN) (-1 PERS))  ; # 898
-;(@w =! (ADV "mielestä") (0 <POSS>) (NOT -1 GEN))
-(@w =! (PSP "mukaan") (0 <POSS>) (-1C GEN) (-1 PERS))  ;  HäNEN MUKAANSA
+#FROM HERE ON, ADDED 26.8.
+(@w =! (PSP "mielestä") (0 <POSS>) (-1C GEN) (-1 PERS))  # # 898
+#(@w =! (ADV "mielestä") (0 <POSS>) (NOT -1 GEN))
+(@w =! (PSP "mukaan") (0 <POSS>) (-1C GEN) (-1 PERS))  #  HäNEN MUKAANSA
 (@w =! (PSP <POSS> <GENLEFT>) (0 <PTVLEFT>) (0 <PTVRIGHT>) (-1C GEN)
- (NOT -1 PTV) (NOT 1 PTV))    ; KALLE OLI HäNEN EDELLääN
-(@w =0 (PP <POSS>) (NOT 1 DUMMY))       ; * EDELLääN MEITä
+ (NOT -1 PTV) (NOT 1 PTV))    # KALLE OLI HäNEN EDELLääN
+(@w =0 (PP <POSS>) (NOT 1 DUMMY))       # * EDELLääN MEITä
 (@w =0 (PSP <POSS> <GENLEFT>) (NOT -1 PERS))
 (@w =! (ADV "parhaillaan") (NOT 1 DUMMY))
 (@w =0 (ADV "töikseen") (NOT 1 DUMMY))
 (@w =! (ADV <POSS> "jälkeen") (NOT 1 DUMMY))
-(@w =0 (PROP <POSS>) (NOT 1 DUMMY))          ; ANNILTAAN
-(@w =0 (PCP1) (0 <POSS>) (NOT 1 DUMMY))          ; ANNILTAAN
-(@w =0 (PCP2) (0 <POSS>) (NOT 1 DUMMY))          ; ANNILTAAN
+(@w =0 (PROP <POSS>) (NOT 1 DUMMY))          # ANNILTAAN
+(@w =0 (PCP1) (0 <POSS>) (NOT 1 DUMMY))          # ANNILTAAN
+(@w =0 (PCP2) (0 <POSS>) (NOT 1 DUMMY))          # ANNILTAAN
 (@w =! (N PTV <POSS>) (-1 <PTV-OBJ>) (NOT -1 <ELA-ADVL>))
 (@w =! (N PTV <POSS>) (-2 <PTV-OBJ>) (-1 A) (-1 PTV) (NOT -2 <ELA-ADVL>))
 (@w =0 (NOM SG <POSS>) (0 POSS-NOMSG) (-1 POSS-DEL-V))
@@ -1694,16 +1668,16 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =0 (NOM PL <POSS>) (0 POSS-NOMPL) (-2 POSS-DEL-V))
 (@w =0 (NOM SG <POSS>) (-1 PCP2/INF3/INF2/REF/TEMP) (NOT -1 PSS))
 (@w =0 (NOM SG <POSS>) (-2 PCP2/INF3/INF2/REF/TEMP) (NOT -2 PSS))
-(@w =0 (NOM SG <POSS>) (1 PCP2) (1 ACT) (NOT *-1 VFIN))  ; AIKANSA ELäNYT
+(@w =0 (NOM SG <POSS>) (1 PCP2) (1 ACT) (NOT *-1 VFIN))  # AIKANSA ELäNYT
 (@w =0 (NOM SG <POSS>) (2 PCP2) (2 ACT) (NOT 1 VFIN) (NOT 1 CLB?)
-(NOT *-1 VFIN))    ; CF. "kotinsa hienosti hoitaneet naiset..."
+(NOT *-1 VFIN))    # CF. "kotinsa hienosti hoitaneet naiset..."
 (@w =0 (NOM SG <POSS>) (1 PCP2) (1 ACT) (-1 COMMA))
-(@w =! (GEN SG <POSS>) (1 REF/TEMP))    ; SANOI PUOLUEENSA OLEVAN
+(@w =! (GEN SG <POSS>) (1 REF/TEMP))    # SANOI PUOLUEENSA OLEVAN
 (@w =! (GEN SG <POSS>) (-1C A/NUM/PRON/Q) (-1 GEN) (-1 SG) (NOT -1 PERS))
-; TOISEN MAHDOLLISUUTENSA
+# TOISEN MAHDOLLISUUTENSA
 (@w =0 (NOM SG <POSS>) (-3C VFIN) (NOT -2 VFIN) (NOT -1 VFIN) (NOT -2 INF1)
 (NOT -1 INF1) (NOT -2 CLB?) (NOT -1 CLB?) (*-3 NOM))
-; TEKEE -STI ITSE ARVIONSA
+# TEKEE -STI ITSE ARVIONSA
 (@w =! (GEN SG <POSS>) (-2C GEN) (-2 SG) (-2 <POSS>) (-1C C))
 (@w =! (GEN SG <POSS>) (1C C) (2C GEN) (2 SG) (2 <POSS>))
 (@w =! (NOM PL <POSS>) (-2C NOM) (-2 PL) (-2 <POSS>) (-1C C))
@@ -1711,17 +1685,17 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =! (NOM SG <POSS>) (-2C NOM) (-2 SG) (-2 <POSS>) (-1C C))
 (@w =! (NOM SG <POSS>) (1C C) (2C NOM) (2 SG) (2 <POSS>))
 (@w =0 (NOM N <POSS>) (1C NOM/PTV) (1 N) (NOT 1 PROP))
-; ????? POTENTIALLY TANKEROUS
-; LAKINIPPUNSA OSIA; VIRKANSA MAHDOLLISUUKSIA
+# ????? POTENTIALLY TANKEROUS
+# LAKINIPPUNSA OSIA# VIRKANSA MAHDOLLISUUKSIA
 (@w =! (NOM SG N <POSS>) (*-1 SG123 LR0) (LR0 ACT LR0) (LR0 OLLA)
 (*-1 OLLA *L) (*L NOM LR0) (LR0 SG) (NOT *-1 INF1) (NOT *1 NOM)
 (*-1 SG123 LR0) (LR0 OLLA *R) (NOT *R PCP) (NOT 0 V) (NOT 0 TILANNE)
 (*-1 SG123 LR0) (LR0 OLLA *R) (NOT *R CLB?) )
-; SE ON EHKä AINA KOHTALONKYSYMYKSEMME
+# SE ON EHKä AINA KOHTALONKYSYMYKSEMME
 (@w =! (NOM SG N <POSS>) (NOT *-1 NOM) (*1 SG123 LR0) (LR0 ACT *L)
 (NOT *L CLB?) (*1 SG123 *L) (NOT *L NOM) (NOT 0 V) (NOT 0 TILANNE)
 (NOT 1 N) (-1 PRON) (-1 GEN) (NOT 1 PCP))
-; HäNEN EHDOTUKSENSA 4:N MUODON SUPISTAMISESTA 6:EEN ON ...
+# HäNEN EHDOTUKSENSA 4:N MUODON SUPISTAMISESTA 6:EEN ON ...
 (@w =! (NOM PL N <POSS>) (*-1 PL123 LR0) (LR0 ACT LR0) (LR0 OLLA)
 (*-1 OLLA *L) (*L NOM LR0) (LR0 PL) (NOT *-1 INF1) (NOT *1 NOM)
 (*-1 PL123 LR0) (LR0 OLLA *R) (NOT *R PCP) (NOT 0 V)
@@ -1729,11 +1703,11 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =! (NOM PL N <POSS>) (NOT *-1 NOM) (*1 PL123 LR0) (LR0 ACT *L)
 (NOT *L CLB?) (*1 PL123 *L) (NOT *L NOM) (NOT 0 V) (NOT 1 N)
 (-1 PRON) (-1 GEN) (NOT 1 PCP))
-; HäNEN EHDOTUKSENSA 4:N MUODON SUPISTAMISESTA 6:EEN OVAT ...
+# HäNEN EHDOTUKSENSA 4:N MUODON SUPISTAMISESTA 6:EEN OVAT ...
 (@w =! (NOM SG N <POSS>) (-2 NEGV) (-2 SG123) (1 NEG))
-; EIKä HäNEN KANSANSUOSIONSA OLE
+# EIKä HäNEN KANSANSUOSIONSA OLE
 (@w =0 (GEN SG N <POSS>) (-1 GEN) (-2 INF1) (-3 VFIN) (-3 OLLA))
-; TARKOITUS OLI SAADA HäNEN AUTONSA KUNTOON
+# TARKOITUS OLI SAADA HäNEN AUTONSA KUNTOON
 (@w =0 (GEN SG N <POSS>) (-1 GEN) (-2 INF1) (-4 VFIN) (-4 OLLA)
 (NOT -3 VFIN))
 (@w =! (NOM PL N <POSS>) (-2 NEGV) (-2 PL123) (1 NEG))
@@ -1742,27 +1716,27 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =0 (IMPV SG2) (-2C NOM) (NOT -1 CLB?))
 (@w =! (PSP <GENLEFT>) (-1 GEN) (-1 N) (NOT -1 KERRAN) (NOT 1 GEN/PTV)
  (NOT 0 N))
-;(@w =! (PSP) (-1 GEN))
-; "erota kokoomuksen johdosta"; (CF. "pelottavan lähellä")
+#(@w =! (PSP) (-1 GEN))
+# "erota kokoomuksen johdosta"# (CF. "pelottavan lähellä")
 (@w =! (INF1) (-4C INF1-VERB) (NOT -3 VFIN) (NOT -2 VFIN) (NOT -1 PTV)
 (NOT 0 N) (NOT 0 UUSIA) (NOT -1 CLB?) (NOT -2 CLB?) (NOT -3 CLB?)
 (NOT -1 VFIN))
 (@w =! (INF1) (-5C INF1-VERB) (NOT -4 VFIN) (NOT -1 PTV)
 (NOT 0 N) (NOT 0 UUSIA) (NOT -1 CLB?) (NOT -2 CLB?) (NOT -3 CLB?)
 (NOT -4 CLB?) (NOT -1 VFIN) (NOT -2 VFIN) (NOT -3 VFIN))
-(@w =0 (INF1) (-1 >>>))     ; KESTää AIKANSA TOIPUA.
+(@w =0 (INF1) (-1 >>>))     # KESTää AIKANSA TOIPUA.
 (@w =! (V ACT SG3) (-1C C) (-4C VFIN) (-4 SG3) (-4 ACT) (NOT -3 V)
 (NOT -3 CLB?) (NOT -2 V) (NOT -2 CLB?) (*1 CLB? *L) (NOT *L VFIN)
 (NOT -4 NES) (NOT -3 NES) (NOT -2 NES) (NOT -4 OLLA))
-; X LOPETTAA ASEILLA UHKAILUN JA ALOITTAA
+# X LOPETTAA ASEILLA UHKAILUN JA ALOITTAA
 (@w =! (INF1) (-1C C) (-4C INF1) (NOT -3 V) (NOT -3 CLB?) (NOT -2 V)
 (NOT -2 CLB?))
 (@w =! (INF1) (-1C C) (-5C INF1) (NOT -3 V) (NOT -3 CLB?) (NOT -2 V)
 (NOT -2 CLB?) (NOT -4 V) (NOT -4 CLB?))
-(@w =! (REF) (-2C <REF>) (-1C GEN) (-1 <POSS>)) ;SANONUT POIKANSA OLEVAN
-(@w =! (REF) (-1C <REF>) (1 GEN) (1 <POSS>)) ;PELäTääN SAANEEN SURMANSA
+(@w =! (REF) (-2C <REF>) (-1C GEN) (-1 <POSS>)) #SANONUT POIKANSA OLEVAN
+(@w =! (REF) (-1C <REF>) (1 GEN) (1 <POSS>)) #PELäTääN SAANEEN SURMANSA
 (@w =! (A PTV "oma") (NOT -1 NOM))
-(@w =! (NUM GEN SG "puoli") (1 GEN))   ; PUOLEN METRIN MITTAINEN
+(@w =! (NUM GEN SG "puoli") (1 GEN))   # PUOLEN METRIN MITTAINEN
 (@w =! (V PRES/IMPV ACT NEG) (*-1C NEGV *R) (NOT *R VFIN/PCP2/INF)
 (NOT 0 N) (NOT 0 PRON)
 (NOT *1 NEG) (NOT *-1 NEG) (NOT 0 PSS) (NOT *-1 NIIN) (*-1C NEGV *R)
@@ -1772,7 +1746,7 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =! (NUM GEN SG "kaksi") (2 GEN))
 (@w =0 (N "halva") (NOT 1 DUMMY))
 (@w =0 (N TRA SG "esimerkki") (NOT *-1 OTTAA/KELVATA) (NOT -1 TRA)
- (NOT *1 OTTAA/KELVATA))    ; adv "esimerkiksi"
+ (NOT *1 OTTAA/KELVATA))    # adv "esimerkiksi"
 (@w =0 (N PL "kulku") (NOT 1 DUMMY))
 (@w =0 (N PL "maksa") (NOT 1 DUMMY))
 (@w =0 (A "vakio") (NOT 1 DUMMY))
@@ -1793,8 +1767,8 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =0 (N PL "palkinta") (NOT -1 DUMMY))
 (@w =0 (N "laitto") (NOT -1 DUMMY))
 (@w =! (N NOM SG "tehtävä") (NOT -1 OLLA) (NOT -2 OLLA) (NOT -3 OLLA)
- (NOT -4 OLLA))    ; "tämä on tehtävä" on amb!
-(@w =0 (IMPV ACT SG2 "saada") (NOT -1 DUMMY))    ; saa
+ (NOT -4 OLLA))    # "tämä on tehtävä" on amb!
+(@w =0 (IMPV ACT SG2 "saada") (NOT -1 DUMMY))    # saa
 (@w =0 (IMPV ACT SG2 "haitata") (NOT -1 DUMMY))
 (@w =0 (IMPV ACT SG2 "pilata") (NOT -1 DUMMY))
 (@w =0 (IMPV ACT SG2 "uhata") (NOT -1 DUMMY))
@@ -1806,14 +1780,14 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =0 (IMPV ACT SG2 "epäröidä") (NOT -1 DUMMY))
 (@w =0 (IMPV ACT SG2 "entistää") (NOT -1 DUMMY))
 (@w =0 (ADV "mallin") (NOT 1 DUMMY))
-;(@w =0 (A "normaalinen") (NOT 1 DUMMY))
-;(@w =0 (A "lehtinen") (NOT 1 DUMMY))
+#(@w =0 (A "normaalinen") (NOT 1 DUMMY))
+#(@w =0 (A "lehtinen") (NOT 1 DUMMY))
 (@w =0 (A) (0 EHTA) (NOT 1 DUMMY))
 (@w =0 (A "kiire") (NOT 1 N))
 (@w =0 (A "koti-ikävä") (NOT 1 DUMMY))
 (@w =0 (V "arpoa") (NOT 1 DUMMY))
 (@w =0 (V "laitostaa") (NOT 1 DUMMY))
-(@w =0 (PCP1 ACT POS NOM PL P-3 <POSS>) (NOT 1 DUMMY))  ; olevansa
+(@w =0 (PCP1 ACT POS NOM PL P-3 <POSS>) (NOT 1 DUMMY))  # olevansa
 (@w =0 (N PL) (0 MAANANTAI) (NOT 1 DUMMY))
 (@w =0 (N) (0 PANNA))
 (@w =0 (N "sakka") (NOT 1 DUMMY))
@@ -1821,18 +1795,18 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =0 (N "ehtoo") (NOT 1 DUMMY))
 (@w =! (V) (0 MAKSAA) (*-1 INF1-VERB *R) (NOT *R CLB?))
 (@w =! (A "sopiva") (NOT 1 DUMMY))
-(@w =! (N "katto") (NOT 1 DUMMY))       ; stryk "katoilla" DV-ILE
+(@w =! (N "katto") (NOT 1 DUMMY))       # stryk "katoilla" DV-ILE
 (@w =0 (A "olympialainen") (NOT 1 DUMMY))
-;added Dec 29, 1996, from xac
+#added Dec 29, 1996, from xac
 (@w =! (N "uusinta") (NOT 1 PTV) (NOT 2 PTV))
 (@w =! (N "lohko") (NOT 1 DUMMY))
 (@w =! (PERS PRON PTV SG "hän") (*-1 NEGV *R) (NOT *R CLB?))
 (@w =! (PERS PRON PTV SG "hän") (*1 NEGV))
 
 (@w =0 (<MORPH-HEUR!>) (0 <CORRECT!>))
-(@w =0 (<Del!>) (NOT 1 DUMMY))      ; aisti_toiminta PL
-;(@w =0 (PROP) (NOT 0 UP))     ; handled by fn remove-cap etc. in cgp
-;next ones added April 17, 2000 ---->
+(@w =0 (<Del!>) (NOT 1 DUMMY))      # aisti_toiminta PL
+#(@w =0 (PROP) (NOT 0 UP))     # handled by fn remove-cap etc. in cgp
+#next ones added April 17, 2000 ---->
 (@w =! (N "vuosi") (-1 NUM-Q-ILL))
 (@w =! (N "vuosi") (1 NUM))
 (@w =! (N "vuosi") (-1 VIIME))
@@ -1850,15 +1824,15 @@ DISAMBIGUATION-CONSTRAINTS
 (@w =0 (A) (0 DER))
 (@w =0 (N) (0 DER))
 (@w =0 (A/N) (0 DER))
-(@w =0 (A SUP NOM) (0 TALVINEN))   ; kesäisin
-(@w =0 (N "suora") (1 N))  ; suorat(A) sijoitukset
-(@w =0 (ADV "hyvin") (1 MAN))  ; hyvinkin(AD) nopeasti
-(@w =! (ORD ELA) (1 ELA))  ; kahdeksannesta(ORD) ruudusta
-(@w =0 (ORD <Poss>) (NOT 1 DUMMY))  ; nousi kolmannekseen(N)
-(@w =0 (A) (0 LOC-CASE) (NOT 1 N)) ; nousi taivaisiin
-(@w =0 (ADV "yhdessä") (1C INE))  ; yhdessä(NUM) yössä
-(@w =! (NUM) (0 PARI/PUOLI) (0 GEN) (1 GEN) (1 GEN-WORD)) ; parin vuoden urakka
-(@w =! (PP <GENRIGHT>) (0 YLI/ALLE) (1 NUM) (2 GEN)) ; yli 38 asteen
+(@w =0 (A SUP NOM) (0 TALVINEN))   # kesäisin
+(@w =0 (N "suora") (1 N))  # suorat(A) sijoitukset
+(@w =0 (ADV "hyvin") (1 MAN))  # hyvinkin(AD) nopeasti
+(@w =! (ORD ELA) (1 ELA))  # kahdeksannesta(ORD) ruudusta
+(@w =0 (ORD <Poss>) (NOT 1 DUMMY))  # nousi kolmannekseen(N)
+(@w =0 (A) (0 LOC-CASE) (NOT 1 N)) # nousi taivaisiin
+(@w =0 (ADV "yhdessä") (1C INE))  # yhdessä(NUM) yössä
+(@w =! (NUM) (0 PARI/PUOLI) (0 GEN) (1 GEN) (1 GEN-WORD)) # parin vuoden urakka
+(@w =! (PP <GENRIGHT>) (0 YLI/ALLE) (1 NUM) (2 GEN)) # yli 38 asteen
 (@w =! (PP <GENRIGHT>) (0 YLI/ALLE) (1C GEN) (NOT 1 <TIME>/<MEASURE>) (NOT -1 GEN))
 (@w =! (AD) (0 YLI/ALLE) (1 <TIME>/<MEASURE>) )
 (@w =0 (AD) (0 YLI/ALLE) (NOT 1 A/N/Q/PRON/PCP/NUM))
@@ -1867,23 +1841,23 @@ DISAMBIGUATION-CONSTRAINTS
 HEURISTIC-DISAMBIGUATION-CONSTRAINTS
 ("<kautta>" =! (PP) (1 GEN))
 (@w =! (INF3 ADE) (0 ADE))
-;(@w =0 (A POS PTV SG) (0 N))
+#(@w =0 (A POS PTV SG) (0 N))
 (@w =0 (A POS ALL) (0 A))
-(@w =! (PRON "itse") (NOT 1 DUMMY))  ; **tankerous
+(@w =! (PRON "itse") (NOT 1 DUMMY))  # **tankerous
 (@w =! (ADV "näin") (NOT 1 DUMMY))
-(@w =! (ADV "osaksi") (NOT 1 PTV) (NOT -1 OTTAA-2) (NOT -2 OTTAA-2)); bad
+(@w =! (ADV "osaksi") (NOT 1 PTV) (NOT -1 OTTAA-2) (NOT -2 OTTAA-2))# bad
 (@w =0 (ADV "huomaan") (NOT 1 DUMMY))
-(@w =0 (V PAST ACT) (0 PRES))  ; voimme, voitte; pyrimme; **tankerous
+(@w =0 (V PAST ACT) (0 PRES))  # voimme, voitte# pyrimme# **tankerous
 (@w =0 (N NOM "häntä") (NOT -1 DUMMY))
 (@w =0 (N PTV "taus") (NOT -1 DUMMY))
 (@w =0 (N NOM "tee") (NOT -1 DUMMY))
 (@w =0 (N "voi") (NOT -1 DUMMY))
 (@w =0 (A PL "valmis") (NOT -1 DUMMY))
 (@w =0 (N PTV "edusta") (NOT -1 GEN))
-(@w =0 (V PSS "ammua") (NOT 1 DUMMY))    ; ammuttiin
+(@w =0 (V PSS "ammua") (NOT 1 DUMMY))    # ammuttiin
 (@w =0 (A "aika") (NOT 1 N) (NOT 2 N))
-(@w =! (PSP "sitten") (-1 <TIME>) (-1 PTV) (-1 PL) **CLB-C)  ;vuosia sitten, cf. above sitten-rule
-(@w =! (PSP "sitten") (-1 <TIME>) (-1 NOM) (-1 SG) **CLB-C)  ;vuosi sitten
+(@w =! (PSP "sitten") (-1 <TIME>) (-1 PTV) (-1 PL) **CLB-C)  #vuosia sitten, cf. above sitten-rule
+(@w =! (PSP "sitten") (-1 <TIME>) (-1 NOM) (-1 SG) **CLB-C)  #vuosi sitten
 (@w =0 (PSP "sitten") (NOT -1 <TIME>) (NOT -2 <TIME>) **CLB-C)
 (@w =! (PP "sitten") (NOT -1 <TIME>) (NOT -2 <TIME>) (1 <TIME>) (1 GEN) **CLB-C)
 (@w =! (PP "sitten") (NOT -1 <TIME>) (NOT -2 <TIME>) (1 GEN) (2 <TIME>) (2 GEN) **CLB-C)
@@ -1891,31 +1865,31 @@ HEURISTIC-DISAMBIGUATION-CONSTRAINTS
 (@w =! (ADV "kerran") (NOT -1 GEN))
 (@w =0 (ADV "kerran") (-1 GEN))
 (@w =! (AD "kovin") (1C A/ADV))
-(@w =! (NUM "puoli") (1 NUM)) ; puoli kahdeksan
-(@w =0 (V "päivätä") (NOT -1 NEGV))  ; xxxxx too general
-(@w =0 (V "kirjata") (NOT -1 NEGV))  ; xxxxx too general
+(@w =! (NUM "puoli") (1 NUM)) # puoli kahdeksan
+(@w =0 (V "päivätä") (NOT -1 NEGV))  # xxxxx too general
+(@w =0 (V "kirjata") (NOT -1 NEGV))  # xxxxx too general
 (@w =0 (N NOM SG "vanhempi") (NOT 1 DUMMY))
 (@w =!! (AD "vielä") (1 CMP))
-(@w =! (ADV) (0 PALJON) (NOT 1 CMP-ENNEN) (NOT 2 JALKEEN) ) ;cf.above paljon-rules
-(@w =! (PRES/IMPV ACT NEG) (-1C NEGV)); emme tunne
+(@w =! (ADV) (0 PALJON) (NOT 1 CMP-ENNEN) (NOT 2 JALKEEN) ) #cf.above paljon-rules
+(@w =! (PRES/IMPV ACT NEG) (-1C NEGV))# emme tunne
 (@w =0 (IMPV SG2) (NOT -1 >>>) (NOT -2 >>>) (NOT -1 C) (NOT -2 C))
 (@w =! (PP "ennen") (1 KELLO) (2 PTV))
 (@w =! (PP "ennen") (1 KELLO) (2 <Digit>))
-(@w =! (N "tulos") (*-1 PAATTYA)) ; päättyi tulokseen
-(@w =! (N "osinko") (NOT 1 DUMMY)) ;osinko/osa
-(@w =0 (N "osanen") (NOT 1 PTV)) ;osa/osanen (osasta)
-(@w =! (AD "vähän") (1 GEN) (2 JALKEEN)) ; 4.2.2001 !!->! cf.below
-(@w =0 (AD "vähän") (NOT 1C CMP-ENNEN) (NOT 2 JALKEEN)); 4.2.2001 !!->! cf.below
+(@w =! (N "tulos") (*-1 PAATTYA)) # päättyi tulokseen
+(@w =! (N "osinko") (NOT 1 DUMMY)) #osinko/osa
+(@w =0 (N "osanen") (NOT 1 PTV)) #osa/osanen (osasta)
+(@w =! (AD "vähän") (1 GEN) (2 JALKEEN)) # 4.2.2001 !!->! cf.below
+(@w =0 (AD "vähän") (NOT 1C CMP-ENNEN) (NOT 2 JALKEEN))# 4.2.2001 !!->! cf.below
 
 SYNTACTIC-CONSTRAINTS
 
 HEURISTIC-SYNTACTIC-CONSTRAINTS
-;not available at present!!!
-; (IF INVOKE-H-RULES? (INVOKE-HEUR-SYNT-RULES))))  eliminated July 9, 2000
+#not available at present!!!
+# (IF INVOKE-H-RULES? (INVOKE-HEUR-SYNT-RULES))))  eliminated July 9, 2000
 
 MORPHOLOGICAL-HEURISTICS
-;numerals like ("<16\:ta>"); "<16\:ta>"%n%t(<Digit> NUM PTV SG));         2 0 0 0 5 1
-;are dealt with in ftwpost.bta, 23.1.2001, and in cgp, cf "dummy" for base
+#numerals like ("<16\:ta>")# "<16\:ta>"%n%t(<Digit> NUM PTV SG))#         2 0 0 0 5 1
+#are dealt with in ftwpost.bta, 23.1.2001, and in cgp, cf "dummy" for base
 (@w =h ((ABBR GEN SG (@S @NEC-S @NF-S @O @PC @<P @P> @N>))) (@1 ($ ":n")) (@2 ":n"))
 (@w =h ((ABBR GEN SG (@S @NEC-S @NF-S @O @PC @<P @P> @N>))) (@1 ($ ":in")) (@2 ":in"))
 (@w =h ((ABBR GEN SG (@S @NEC-S @NF-S @O @PC @<P @P> @N>))) (@1 ($ "'in")) (@2 "'in"))
@@ -1938,7 +1912,7 @@ MORPHOLOGICAL-HEURISTICS
 (@w =h ((ABBR ABL SG (@ADVL))) (@1 ($ ":lta")) (@2 ":lta"))
 (@w =h ((ABBR ABL SG (@ADVL))) (@1 ($ ":ltä")) (@2 ":ltä"))
 (@w =h ((ABBR ALL SG (@ADVL))) (@1 ($ ":lle")) (@2 ":lle"))
-(@w =h ((DASH)) (@1 (^ "-") ($ "-")) (@2 NIL)) ; XXXX
+(@w =h ((DASH)) (@1 (^ "-") ($ "-")) (@2 NIL)) # XXXX
 (@w =h ((ABBR NOM SG (@S @O @PC))) (@1 (NOT * "i") (NOT * "e") (NOT * "ä")
  (NOT * "y") (NOT * "ö") (NOT * "u") (NOT * "o") (NOT * "a")
  (NOT * "I") (NOT * "E") (NOT * "[")
@@ -1992,14 +1966,14 @@ MORPHOLOGICAL-HEURISTICS
 (@w =h ((N PTV SG (@S @O @PC @<P @P> @<PN @N>))) (@1 ($ "usta")) (@2 "usta" "us"))
 (@w =h ((N PTV SG (@S @O @PC @<P @P> @<PN @N>))) (@1 ($ "ystä")) (@2 "ystä" "ys"))
 (@w =h ((N NOM PL (@S @O @PC))) (@1 ($ "kset")) (@2 "kset" "s"))
-; GENITIVES
+# GENITIVES
 (@w =h ((N GEN SG (@S @NEC-S @NF-S @O @PC @<P @P> @N>))) (@1 ($ "ksen")) (@2 "ksen" "s"))
 (@w =h ((N GEN SG (@S @NEC-S @NF-S @O @PC @<P @P> @N>))) (@1 ($ "sen")) (@2 "sen" "nen"))
 (@w =h ((N GEN SG (@S @NEC-S @NF-S @O @PC @<P @P> @N>))) (@1 ($ "sonin")) (@2 "sonin" "son"))
 (@w =h ((N GEN SG (@S @NEC-S @NF-S @O @PC @<P @P> @N>))) (@1 ($ "anin")) (@2 "in"))
 (@w =h ((N GEN SG (@S @NEC-S @NF-S @O @PC @<P @P> @N>))) (@1 ($ "enin")) (@2 "in"))
 (@w =h ((N GEN SG (@S @NEC-S @NF-S @O @PC @<P @P> @N>))) (@1 ($ "inin")) (@2 "in"))
-(@w =h ((N GEN SG (@S @NEC-S @NF-S @O @PC @<P @P> @N>))) (@1 ($ "nkin")) (@2 "nkin"))     ; SUDBURYNKIN
+(@w =h ((N GEN SG (@S @NEC-S @NF-S @O @PC @<P @P> @N>))) (@1 ($ "nkin")) (@2 "nkin"))     # SUDBURYNKIN
 (@w =h ((N GEN SG (@S @NEC-S @NF-S @O @PC @<P @P> @N>))) (@1 ($ "onin")) (@2 "in"))
 (@w =h ((N GEN SG (@S @NEC-S @NF-S @O @PC @<P @P> @N>))) (@1 ($ "oinnin")) (@2 "oinnin" "ointi"))
 (@w =h ((N GEN SG (@S @NEC-S @NF-S @O @PC @<P @P> @N>))) (@1 ($ "öinnin")) (@2 "öinnin" "öinti"))
@@ -2070,7 +2044,7 @@ MORPHOLOGICAL-HEURISTICS
 (@w =h ((ORD NUM ESS SG (@ADVL @N>))) (@1 ($ ":ntenä")) (@2 ":ntenä"))
 
 
-;GENERIC NOM SG FOR ALL OTHER INSTANCES
+#GENERIC NOM SG FOR ALL OTHER INSTANCES
 
 (@w =h ((N NOM SG (@S @O @PC @N>))) (@1 NIL) (@2 NIL))
 
