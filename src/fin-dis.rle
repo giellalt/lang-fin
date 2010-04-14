@@ -211,7 +211,7 @@ LIST N/PRON = N PRON ;
 LIST N/PRON/Q = N PRON Q ; 
 LIST N/PRON/Q/A/NUM = N PRON Q A NUM ; 
 LIST N/V/A/PRON/Q = N V A A/N PRON Q ; 
-LIST N/PRON = N PRON A/N ; 
+LIST N/PRON/A/N = N PRON A/N ; 
 LIST N/PRON/Q/V/SUP = N PRON Q V SUP ; 
 LIST NAIN = "näin" ; 
 LIST NEG = NEG ; 
@@ -402,24 +402,24 @@ LIST SYNFUNC = @+FM @-FMN @-FMP @-FMI @+FAUX @-FAUX @-FMQ @H @S @NEC-S @NF-S @O 
 
 LIST PRINCIPAL-FUNCTION-DECLARATIONS = @S @O @PC ;
 
-# BARRIERS in var AUP-BORDERS
->>> <<< "<$\:>" "<$\#>" "<$\(>" "<$\)>" "<$\'>" "<$\">" "<$\,>" REL
- "<$->" "kuinka" "miten" "milloin" "-" C KO PUNCT)
-
+### BARRIERS in var AUP-BORDERS
+### >>> <<< "<$\:>" "<$\#>" "<$\(>" "<$\)>" "<$\'>" "<$\">" "<$\,>" REL
+### "<$->" "kuinka" "miten" "milloin" "-" C KO PUNCT)
+### Do not understand these… Trond.
 
 SECTION
 
 # CLAUSE BOUNDARY CONSTRAINTS
 
-=**CLB (COMMA) (0 PUNCT)
-=**CLB (C) (1 VFIN)
-=**CLB (C) (2 VFIN)
-=**CLB (C) (3 VFIN)
-#(@w =**CLB (C) (NOT 1 DUMMY)
-=**CLB (REL) (NOT 1 DUMMY)
-=**CLB (KO) (NOT 1 DUMMY)
-=**CLB (ADV) (0 KUINKA-MITEN-MILLOIN)
-
+### =**CLB (COMMA) (0 PUNCT)
+### =**CLB (C) (1 VFIN)
+### =**CLB (C) (2 VFIN)
+### =**CLB (C) (3 VFIN)
+### #(@w =**CLB (C) (NOT 1 DUMMY)
+### =**CLB (REL) (NOT 1 DUMMY)
+### =**CLB (KO) (NOT 1 DUMMY)
+### =**CLB (ADV) (0 KUINKA-MITEN-MILLOIN)
+### Do not understand these. Trond.
 
 SECTION
 
@@ -431,7 +431,7 @@ SECTION
 
 SELECT (A INS) (1 N) (1 INS)
   # CASE AGREEMENT IN NP
-=!! (PRON INS) (1 INS)
+SELECT (PRON INS) (1C INS) # assuming 1C is =!! 1
   # CASE AGREEMENT IN NP
 
 # ------------------------------------------------------------
@@ -446,7 +446,7 @@ SELECT (A INS) (1 N) (1 INS)
 "<enemmänkin>" SELECT (ADV) (NOT 1C GEN)
 "<erään>" SELECT (Q) (1 GEN)
 "<halusi>" SELECT (V) (NOT 1 DUMMY)
-"<huolimatta>" SELECT (PSP) (NOT 1 ELA) (-1 ELA) )
+"<huolimatta>" SELECT (PSP) (NOT 1 ELA) (-1 ELA) 
 "<huolimatta>" SELECT (PP) (NOT -1 ELA) (1 ELA)
 "<huolimatta>" SELECT (PP) (NOT -1 ELA) (2 ELA)
 "<häntä>" SELECT (PRON) (-1 NEGV)
