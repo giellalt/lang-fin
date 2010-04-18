@@ -1,7 +1,9 @@
-#      ******************************************
-#      * FINCG (CONSTraINT GRAMMAR FOR FINNISH) *
-#      * (GPl) FRED KARLSSON 1989-2000          *
-#      ******************************************
+#      *******************************************
+#      * FINCG (CONSTRAINT GRAMMAR FOR FINNISH)  *
+#      * (GPl) FRED KARLSSON 1989-2000           *
+#      * Adjusted to vislcg3 and the Giellatekno *
+#      * tag conventions 2010-                   *
+#      *******************************************
 
 
 DELIMITERS = "<$\.>" "<$!>" "<$?>" "<$END-OF-SENTENCE>" "<$ENDDOC>" "<$ENDDOCHEAD>" "<$ENDHCODE>" "<$ENDHEAD>" "<$ENDTEXT>" "<$ENDTITLE>" "<$PARAG>" "<$HEAD>" "<$END-P>";
@@ -44,34 +46,34 @@ LIST ? = "<$\?>" ;
 LIST ?! = "<$\?>" "<$\!>" ; 
 LIST A = A ; 
 LIST A-A/N = A A/N ; 
-LIST A-A/N-PCP = A A/N PCP1 PCP2 ; 
+LIST A-A/N-PCP = A A/N Pcp1 Pcp2 ; 
 LIST A-A/N-Q = A A/N Q ;   # HIEMAN, HIUKAN 
 LIST A/AD-A = A A/N AD-A AD ; 
 LIST A/AD-A/Q = A A/N AD-A AD Q ; 
 LIST A/Adv = A A/N Adv ; 
-LIST A/Adv/PCP/Det/Q = A Adv PCP1 PCP2 Det Q ; 
+LIST A/Adv/PCP/Det/Q = A Adv Pcp1 Pcp2 Det Q ; 
 LIST A/Gen = A Gen ; 
 LIST A/N = A N A/N ; 
 LIST A/N/Q/Pron = A N Q Pron A/N ; 
-LIST A/N/Q/Pron/PCP/Num = A N Q Pron A/N PCP1 PCP2 Num ; 
+LIST A/N/Q/Pron/PCP/Num = A N Q Pron A/N Pcp1 Pcp2 Num ; 
 LIST A/Num/Pron/Q = A Num Pron Q ; 
 LIST A/Q/Pron = A Q Pron A/N ; 
-LIST A/Q/Pron/PCP = A Q Pron A/N PCP1 PCP2 DV-MA ;  # dv-ma added 23.1.2001 
+LIST A/Q/Pron/PCP = A Q Pron A/N Pcp1 Pcp2 DV-MA ;  # dv-ma added 23.1.2001 
 LIST A/Q/Pron/Num = A Q Pron A/N DV-MA Num ;
-LIST A/Q/Pron/PCP/Num = A Q Pron A/N PCP1 PCP2 DV-MA Num ; 
-LIST A/PCP = A PCP1 PCP2 ; 
+LIST A/Q/Pron/PCP/Num = A Q Pron A/N Pcp1 Pcp2 DV-MA Num ; 
+LIST A/PCP = A Pcp1 Pcp2 ; 
 LIST ABBR = ABBR ; 
 LIST Abe = Abe ; 
 LIST Abl = Abl ; 
 LIST ACT = ACT ; 
 LIST AD = AD ; 
-LIST AD/PCP = AD PCP1 PCP2 ; 
+LIST AD/PCP = AD Pcp1 Pcp2 ; 
 LIST AD-A = AD-A ; 
 LIST AD-HYVIN = "aikaisin" "alas" "alhaalla" "alhaalta" "alhaalle" "harvoin"  "hiljaa" "kauan" "kauas" "kaukaa" "kaukana" "paljon" "pian" "sekaisin"  "tarkoin" "suoraan" "usein" "varhain" "yksin" "mielellään" "vähän"  "lähellä" "läheltä" "lähelle" "myöhään" ; 
 LIST AD-MILTEI = "kokonaan" "hiljaa" "suoraan" "yksin" "sekaisin" "tyystin" "täysin" ; 
 LIST AD-PALJON = "aika" "erittäin" "ihan" "hyvin" "kovin" "kyllin" "liian"  "melko" "niin" "noin" "näin" "perin" "sangen" "varsin" "ylen"  "yhtä" "jokseenkin" "kylliksi" "tarpeeksi" "vallan" "kuinka"  "miten" "oikein" ; 
-LIST AD+PCP1 = "ailahdella" "arveluttaa" "haastaa" "haavoittua" "houkutella" "huomata" "huvittaa" "ilahduttaa" "kannattaa" "raivostua" "kattaa" "kiehtoa" "kiinnostaa" "kunnioittaa" "kuulua" "kuvata" "laskelmoida" "luottaa" "luvata" "mahtailla" "mullistaa" "painaa" "paljastaa" "rasittaa" "rohkaista" "sopia" "taitaa" "valaista"  "vaatia" "vaihdella" "vakuuttaa" "uhata" "toivoa" "suositella" "suoda" "tarttua" "tavoitella" "merkitä" "uskoa" "valittaa" "luulla" "yllättää" "tuomita" ; 
-LIST AD+PCP2 = "alistaa" "ansaita" "arvostaa" "hallita" "hermostua" "huolestua" "innostua" "kiinnostua" "kiusaantua" "kokea" "loukkaantua" "masentua" "pelkistää" "pettyä" "pitää" "hillitä" "rajoittaa" "saastua" "suosia" "tyrmistyä" "vaivautua" "vakuuttua" ; 
+LIST AD+Pcp1 = "ailahdella" "arveluttaa" "haastaa" "haavoittua" "houkutella" "huomata" "huvittaa" "ilahduttaa" "kannattaa" "raivostua" "kattaa" "kiehtoa" "kiinnostaa" "kunnioittaa" "kuulua" "kuvata" "laskelmoida" "luottaa" "luvata" "mahtailla" "mullistaa" "painaa" "paljastaa" "rasittaa" "rohkaista" "sopia" "taitaa" "valaista"  "vaatia" "vaihdella" "vakuuttaa" "uhata" "toivoa" "suositella" "suoda" "tarttua" "tavoitella" "merkitä" "uskoa" "valittaa" "luulla" "yllättää" "tuomita" ; 
+LIST AD+Pcp2 = "alistaa" "ansaita" "arvostaa" "hallita" "hermostua" "huolestua" "innostua" "kiinnostua" "kiusaantua" "kokea" "loukkaantua" "masentua" "pelkistää" "pettyä" "pitää" "hillitä" "rajoittaa" "saastua" "suosia" "tyrmistyä" "vaivautua" "vakuuttua" ; 
 LIST Ade = Ade ; 
 LIST ADSET = "hyvin" "melko" "melkein" "kovin" "niin" "näin" ; 
 LIST Adv = Adv ; 
@@ -119,7 +121,7 @@ LIST Ela-PREP = "huolimatta" ;
 LIST Ela/Abl = Ela Abl ; 
 LIST Ela/Tra/Ill/All = Ela Tra Ill All ; 
 LIST ELAMA/KUOLEMA = "elämä" "kuolema" "voima" "taantuma" ; 
-LIST ElaVA-SELVA = "elää" "elävä" "selvä" ; 
+LIST ELAVA-SELVA = "elää" "elävä" "selvä" ; 
 LIST ENEM-VAHEM = "enemmän" "vähemmän" "tarpeeksi" ; 
 LIST ENEMMAN = "enemmän" ; 
 LIST ENNEN = "ennen" ; 
@@ -156,7 +158,7 @@ LIST Inf123 = Inf1 Inf2 Inf3 ;
 LIST Inf1/3 = Inf1 Inf3 ; 
 LIST Inf1-VERB = "alkaa" "haluta" "tahtoa" "yrittää" "päättää" "saada" "voida"  "täytyä" "sallia" "luvata" "aikoa" "meinata" "pitää" "sietää" "tulla"  "tarvita" "viitsiä" "antaa" "muistaa" "unohtaa" "saattaa" "uskaltaa"  "pelätä" "kannattaa" "mahtaa" ; 
 LIST Inf3 = Inf3 ; 
-LIST InfV = Inf1 Inf2 Inf3 PCP1 PCP2 ; 
+LIST InfV = Inf1 Inf2 Inf3 Pcp1 Pcp2 ; 
 LIST Ins = Ins ; 
 LIST INT-LOC = INE Ela Ill ; 
 LIST INTERR = INTERR ; 
@@ -226,7 +228,7 @@ LIST Nom = Nom ;
 LIST Nom/Gen/Par = Nom Gen Par ; 
 LIST Nom/Par = Nom Par ; 
 LIST NomHEAD = N Pron Num ; 
-LIST NomINAL-FORM = Inf1 Inf2 Inf3 PCP1 PCP2 ; 
+LIST NomINAL-FORM = Inf1 Inf2 Inf3 Pcp1 Pcp2 ; 
 LIST NONSUBJECT-CASE = Ess Tra INE Ela Ill Ade Abl All Abe Com Ins ; 
 LIST NORJA = "norja" "suomi" ; 
 LIST NOT-Gen-CASE = Nom Par INE Ela Ill Ade Abl All Ess Tra Abe Com Ins ; 
@@ -252,10 +254,10 @@ LIST PALJON = "paljon" "vähän" "jonkin=verran" ;
 LIST PALJON-MONI = "paljon" "vähän" "moni" "usea" "harva" "hyvin" "oikein" "väärin" "kovin" "tarpeeksi" ; 
 LIST PANNA = "panna" "arpi" "sakka" ; 
 LIST Prt = Prt ; 
-LIST PCP = PCP1 PCP2 ; 
-LIST PCP1 = PCP1 ; 
-LIST PCP2 = PCP2 ; 
-LIST PCP2/Inf3/Inf2/REF/TEMP = PCP2 Inf3 Inf2 REF TEMP ; 
+LIST PCP = Pcp1 Pcp2 ; 
+LIST Pcp1 = Pcp1 ; 
+LIST Pcp2 = Pcp2 ; 
+LIST Pcp2/Inf3/Inf2/REF/TEMP = Pcp2 Inf3 Inf2 REF TEMP ; 
 LIST PE4 = PE4 ; 
 LIST PERS = PERS ; 
 LIST PERSPl123 = "me" "te" "he" ; 
@@ -291,7 +293,7 @@ LIST QUANTIFIER = Q Num ;
 LIST QUOTE = QUOTE ; 
 LIST REF = REF ; 
 LIST REF/TEMP = REF TEMP ; 
-LIST REF-CORR = Prs Prt Inf1 Inf2 Inf3 PCP2 ; 
+LIST REF-CORR = Prs Prt Inf1 Inf2 Inf3 Pcp2 ; 
 LIST Rel = Rel ; 
 LIST SAADA = "saada" ; 
 LIST SAAPUA = "saapua" ; # CLASH SAAPUA/SAAVUTTAA, I.E. ACT/PASS  ; 
@@ -343,9 +345,9 @@ LIST VERRAN = "verta" ;
 LIST VFIN = Prs Prt COND POTN NEGV IMPV ; 
 LIST VFIN-C = Prs Prt COND POTN NEGV IMPV C ; 
 LIST VFIN-C-MYOS = Prs Prt COND POTN NEGV IMPV C "myös" ; 
-LIST VFIN-PCP = Prs Prt COND POTN NEGV IMPV PCP1 PCP2 ; 
-LIST VFIN/PCP2 = Prt Prs COND POTN PCP2 ; 
-LIST VFIN/PCP2/Inf = Prt Prs COND POTN PCP2 Inf1 Inf2 Inf3 REF TEMP ; 
+LIST VFIN-PCP = Prs Prt COND POTN NEGV IMPV Pcp1 Pcp2 ; 
+LIST VFIN/Pcp2 = Prt Prs COND POTN Pcp2 ; 
+LIST VFIN/Pcp2/Inf = Prt Prs COND POTN Pcp2 Inf1 Inf2 Inf3 REF TEMP ; 
 LIST VFIN-SgPl12 = Sg1 Sg2 Pl1 Pl2 ; 
 LIST VIIME = "viime" "ensi" "vuosi" ; 
 LIST VIREIllA = "vireillä" ; 
@@ -451,7 +453,7 @@ SELECT (Pron Ins) (1C Ins) # assuming 1C is =!! 1
 "<huolimatta>" SELECT (PP) (NOT -1 Ela) (1 Ela)
 "<huolimatta>" SELECT (PP) (NOT -1 Ela) (2 Ela)
 "<häntä>" SELECT (Pron) (-1 NEGV)
-#!#"<ilmi>" =!! (AD) (1 ElaVA-SELVA)
+#!#"<ilmi>" =!! (AD) (1 ELAVA-SELVA)
 "<juuri>" SELECT (Adv) (NOT 1 VFIN)
 "<juurikaan>" SELECT (Adv) (NOT 1 DUMMY)
 "<jäljelle>" SELECT (Adv) (NOT 1 DUMMY)
@@ -605,8 +607,8 @@ SELECT (A/N All Pl) (1C All) (1 Pl)
 SELECT (A/N Ess Pl) (1C Ess) (1 Pl)
 SELECT (A/N Tra Pl) (1C Tra) (1 Pl)
 # *** AD-A
-SELECT (AD) (0 ADSET) (1 AD+PCP1) (1 PCP1)  # HYVIN VAIVAUTUNUT
-SELECT (AD) (0 ADSET) (1 AD+PCP2) (1 PCP2)  # KOVIN ALISTETTU
+SELECT (AD) (0 ADSET) (1 AD+Pcp1) (1 Pcp1)  # HYVIN VAIVAUTUNUT
+SELECT (AD) (0 ADSET) (1 AD+Pcp2) (1 Pcp2)  # KOVIN ALISTETTU
 SELECT (AD "aika") (1C A/Adv/PCP/Det/Q)
 REMOVE (AD "enemmän") (1 TAI) (2 ENEM-VAHEM) # XXXX
 SELECT (AD "erittäin") (NOT 1 DUMMY)
@@ -634,7 +636,7 @@ SELECT (A) (0 PALJON) (0 Nom) (0 Sg) (1 N) (1 Nom) (1 Sg) # PALJO VALITTAMINEN
 SELECT (A) (0 PALJON) (0 Par) (1 N) (1 Par) (1 Sg)
 SELECT (A) (0 PALJON) (0 LOC-CASE) (1 N) (1 LOC-CASE) (1 Sg)
 REMOVE (A) (0 PALJON)  # "on asetettu paljon haltijaksi"
-SELECT (AD "täysin") (1 AD+PCP1)
+SELECT (AD "täysin") (1 AD+Pcp1)
 SELECT (AD "vallan") (1 A) (NOT *1 VAllAN-WDS) (NOT *-1 VAllAN-WDS)
 SELECT (AD "vallan") (1 DUMMY)  #   (1 PCP)
 REMOVE (AD "vallan") (NOT 1 A) (NOT 1 PCP)
@@ -798,7 +800,7 @@ SELECT (Adv "öisin") (NOT 1 DUMMY)
 SELECT (Adv <POSS> "jälkeen") (NOT -1 Gen) # TANKEROUS, CF. JäTTI JäLKEENSä
 SELECT (Adv <POSS> "osaksi") (-1 SAADA)
 SELECT (Adv) (-1C AD) (NOT 0 PP) (NOT 1 A)   # NIIN(AD) HYVIN(Adv/AD-A)
-#?#SELECT (Adv) (0 AIVAN-IHAN) (1 PCP2) (*-1C VFIN LINK 0 OLLA) #?# means check this, and comment in.
+#?#SELECT (Adv) (0 AIVAN-IHAN) (1 Pcp2) (*-1C VFIN LINK 0 OLLA) #?# means check this, and comment in.
 SELECT (Adv) (0 AIVAN-IHAN) (1C VFIN-C)
 SELECT (Adv) (0 AIVAN-IHAN) (1C CLB?-C)
 SELECT (Adv) (0 AIVAN-IHAN) (1C Inf1/3) (-1C VFIN)
@@ -1140,7 +1142,7 @@ SELECT (N Nom Sg <POSS>) (1C NEGV) (1 Sg123) (NOT 2 TARVITA) # XXX
 SELECT (N Nom Pl <POSS>) (1C NEGV) (1 Pl123) (NOT 2 TARVITA)
 #------------------------------------------------------------
 # KOORDINAATIO: N C N
-# THIS IS A TYPICAL EXAMPlE: MAKING THIS GenERALISATION FOR All CASES
+# THIS IS A TYPICAL EXAMPlE: MAKING THIS GENERALISATION FOR All CASES
 # WOULD NOT MAKE SENSE# ONLY Par IS HOMONYMOUS. THIS IS A DISAMBIGUATION
 # GRAMMAR!
 SELECT (Par) (1 C) (2 Par) (3 V)
@@ -1274,7 +1276,7 @@ SELECT (NEG) (-1 NEGV) (NOT 0 NEG-AMBIGUOUS) (NOT 1 NEG) (NOT 1 Prs) (0 Prs/Prt)
   # BUT:     EI NIITä VOI MUUTTAA!
   #     EIKä MUUTA PYYDetä KUIN
   # THIS AD HOC WAY IS THE EASIEST.
-REMOVE (PSS NEG) (*-1 NEGV LINK *1C PCP2 LINK NOT *1 CLB?)
+REMOVE (PSS NEG) (*-1 NEGV LINK *1C Pcp2 LINK NOT *1 CLB?)
 # EI VOI JÄÄDÄ
 #     (NOT *R NEG) (NOT 0 NEG-AMBIGUOUS) (0 Prs/Prt)
 #     (NOT 0 A/N) (NOT *1 NEG) (NOT 1 Nom) (*-1 NEGV LINK NOT *1 CLB?)
@@ -1296,8 +1298,8 @@ REMOVE (V "nytkiä") (NOT 1 DUMMY)                     # OK NYT+KIN
 REMOVE (V "nähdä" Sg1) (-1C VFIN) (NOT -1 CLB?)   # CHANGED 5.9.95
 REMOVE (V "nähdä" Sg1) (1C VFIN) (NOT 1 CLB?)
 SELECT (V Prt Sg1 "olla") (NOT 1 DUMMY)     # OLIN
-REMOVE (PCP2 PSS Nom Pl "olla") (NOT 1 Nom) (NOT 1 Pl) # XXXX
-REMOVE (PCP2 PSS Nom Pl "tulla") (NOT 1 Nom) (NOT 1 Pl)
+REMOVE (Pcp2 PSS Nom Pl "olla") (NOT 1 Nom) (NOT 1 Pl) # XXXX
+REMOVE (Pcp2 PSS Nom Pl "tulla") (NOT 1 Nom) (NOT 1 Pl)
 REMOVE (PSS "pidetä") (NOT 1 DUMMY)
 SELECT (V Prs PSS "päästä") (1 DUMMY) # XXXX CHECK IN LARGE CORPUS!
 SELECT (V Prs Sg3 "riittää") (1 DUMMY) # XXXX -"-
@@ -1357,8 +1359,8 @@ REMOVE (Sg3) (-5 NEGV) (NOT -1 V) (NOT -1 CLB?) (NOT -2 V) (NOT -2 CLB?)
 REMOVE (N) (0 VOI) (1 Inf1)
   # "kayttojarjestelman voi asentaa..." GESTALT: VOI + Inf
 REMOVE (V) (0 Inf123) (NOT -1 NOUN+Inf1) (-3 CLB?) (-2 Gen) (-1 Nom)
-REMOVE (PCP1) (NOT -1 NOUN+Inf1) (-3 CLB?) (-2 Gen) (-1 Nom)
-REMOVE (PCP2) (NOT -1 NOUN+Inf1) (-3 CLB?) (-2 Gen) (-1 Nom)
+REMOVE (Pcp1) (NOT -1 NOUN+Inf1) (-3 CLB?) (-2 Gen) (-1 Nom)
+REMOVE (Pcp2) (NOT -1 NOUN+Inf1) (-3 CLB?) (-2 Gen) (-1 Nom)
   # "asennusohjelman ajo kestaa ..." . HEURISTIIKKA (KL).
 # TIDIGARE HETTE DENNA (@w REMOVE InfV ...
 REMOVE (Prs) (*-1C MAINV LINK NOT *1 CLB?) (NOT -1 CLB?)
@@ -1371,21 +1373,21 @@ REMOVE (IMPV) (*1C MAINV LINK NOT *-1 CLB?) (NOT 1 CLB?) (NOT 1 VFIN)
   # UP FOR MORPHOLOGY! RIGHT SIDE.
 SELECT (V Pl3) (NOT *-1C VFIN) (NOT *1C VFIN) (*-1 Nom LINK 0 Pl)
 # *** PCP
-#!#=!! (PCP1 Ins) (1 N) (1 Ins)
-#!#=!! (PCP2 Ins) (1 N) (1 Ins)
-SELECT  (PCP1 PSS Nom Sg "tehdä") (-1 VFIN) (*-2 Gen LINK NOT *1 CLB?)
-SELECT  (PCP1 PSS Nom Sg "tehdä") (-2 VFIN) (*-3 Gen LINK NOT *1 CLB?)
-REMOVE (PCP2 PSS <POSS>) (NOT 1 DUMMY)
-# LäHETYKSENSä "lähetä" <Par-OBJ> PCP2 PSS POS Tra Sg P-3 <POSS>
-REMOVE (PCP1 Pl Nom) (-1C Nom) (NOT -1 A) (NOT 1 Nom) (NOT 1 Pl)
+#!#=!! (Pcp1 Ins) (1 N) (1 Ins)
+#!#=!! (Pcp2 Ins) (1 N) (1 Ins)
+SELECT  (Pcp1 PSS Nom Sg "tehdä") (-1 VFIN) (*-2 Gen LINK NOT *1 CLB?)
+SELECT  (Pcp1 PSS Nom Sg "tehdä") (-2 VFIN) (*-3 Gen LINK NOT *1 CLB?)
+REMOVE (Pcp2 PSS <POSS>) (NOT 1 DUMMY)
+# LäHETYKSENSä "lähetä" <Par-OBJ> Pcp2 PSS Pos Tra Sg P-3 <POSS>
+REMOVE (Pcp1 Pl Nom) (-1C Nom) (NOT -1 A) (NOT 1 Nom) (NOT 1 Pl)
   # "ohjeet näkyvät/=0 ...", "x-sg-nom ja y-sg-nom tulevat"
-  # AFTER N/Q/Pron Nom Pl, PCP1 = MAINVERB (MORE CHECKS)
-REMOVE (PCP2 PSS Nom Pl) (NOT 1 Nom) (NOT 1 Pl) (NOT 1 Num) (NOT -1 BOS)
-REMOVE (PCP2 PSS "olla") (NOT 1 DUMMY)
-REMOVE (PCP2 PSS "tulla") (NOT 1 DUMMY)
+  # AFTER N/Q/Pron Nom Pl, Pcp1 = MAINVERB (MORE CHECKS)
+REMOVE (Pcp2 PSS Nom Pl) (NOT 1 Nom) (NOT 1 Pl) (NOT 1 Num) (NOT -1 BOS)
+REMOVE (Pcp2 PSS "olla") (NOT 1 DUMMY)
+REMOVE (Pcp2 PSS "tulla") (NOT 1 DUMMY)
 # OLLUT,TULLUT,MääRITELLYT
-REMOVE (PCP2 Nom PSS Pl) (-1 COP)#
-SELECT (PCP2 ACT A POS Gen Sg) (0 THREE)
+REMOVE (Pcp2 Nom PSS Pl) (-1 COP)#
+SELECT (Pcp2 ACT A Pos Gen Sg) (0 THREE)
 SELECT (V REF ACT) (-1 <REF>) (-1 REF-CORR) (NOT 1 A) (NOT 1 C) (NOT 1 Gen) (NOT 0 YLLATTAA)
 SELECT (V REF ACT) (-2 <REF>) (-2 REF-CORR) (NOT -1 Par) (NOT -1 CLB?) (NOT 1 A) (NOT 1 C) (NOT 1 Gen) (NOT 0 YLLATTAA)
 #  ED. "ammattiin valmistavan kaksivuotisen koulun merkitystä"
@@ -1438,7 +1440,7 @@ REMOVE (V Inf3) (0 ELAMA/KUOLEMA) # XXXX
 SELECT (N Pl <POSS> "vanhempi") (NOT 1 DUMMY) # XXXX
 REMOVE (N Tra "vanhempi")  (NOT 1 DUMMY) # XXXX
 SELECT (N "voima") (*-1 OLLA LINK NOT *1 CLB?) (NOT -1 CLB?) # XXXX
-REMOVE (DV-TTA) (0 PSS) (0 PCP1) (NOT 0 N) (NOT 0 A-A/N)  # XXX AMMUTTAVA
+REMOVE (DV-TTA) (0 PSS) (0 Pcp1) (NOT 0 N) (NOT 0 A-A/N)  # XXX AMMUTTAVA
 SELECT (<COERCE!>) (NOT 1 DUMMY)    #  #843
 SELECT (N Par Sg "vuode")  (NOT 1 DUMMY)           # VUODetTA
 SELECT (N Gen Sg "vuode") (1 PSP) (NOT 1 ASTI)   # VUOTEEN VIEREssä
@@ -1461,8 +1463,8 @@ SELECT (V Prs KO "voida") (NOT 1 DUMMY)
 REMOVE (N Pl) (0 VUO/VOI) (NOT 1 DUMMY)   # NB "voista" ETC
 # (@w REMOVE (V REF ACT) (*-1 <REF> LR0) (NOT LR0 VFIN LINK NOT *1 <REF>)
 # 11 ERRORS OUT OF 14 IN PK.ANL!!
-SELECT (PCP2 PSS Gen) (1C Gen)
-SELECT (PCP1 ACT Gen "riittää") (1C A/PCP)    # RIITTÄVÄN KAllIS
+SELECT (Pcp2 PSS Gen) (1C Gen)
+SELECT (Pcp1 ACT Gen "riittää") (1C A/PCP)    # RIITTÄVÄN KAllIS
 #(@w SELECT PCP (0 Gen) (0 REF) (1C C) (*2 PCP LINK 0 Gen LINK NOT *-1 <REF>)
 # NB: ???XXX
 SELECT (N Gen "vanhempi") (1 N) (1 NOT-Gen-CASE)
@@ -1479,12 +1481,12 @@ REMOVE (INTJ "voi") (NOT *1 HITTO)
 REMOVE (V IMPV "voida") (NOT *1 HYVIN-1)
 REMOVE (N "voi") (*-1 CLB? LINK *1C N LINK 0 Nom LINK 0 Sg)
 REMOVE (N "jää") (*-1 CLB? LINK *1C N LINK 0 Nom LINK 0 Sg)
-REMOVE (PCP2 Ela "hallita") (NOT 1 Ela)
+REMOVE (Pcp2 Ela "hallita") (NOT 1 Ela)
 SELECT (REF <POSS>)  (NOT 1 DUMMY)
 SELECT (Adv) (0 Inf3) (0 Abe)   # VäLTTäMäTTä
 SELECT (AD "yli") (1C Num) (NOT 2 Gen)# not2gen added 9.10.2000, thisrule red cf above
-SELECT (PCP2 PSS Nom Pl) (1C Num) (1 Nom)       # ARVIOIDUT 400 KERTAA
-REMOVE (PCP2 PSS Nom Pl) (1C Nom) (1 Sg)    # ESITYSTä VALMISTELLUT RYHMä
+SELECT (Pcp2 PSS Nom Pl) (1C Num) (1 Nom)       # ARVIOIDUT 400 KERTAA
+REMOVE (Pcp2 PSS Nom Pl) (1C Nom) (1 Sg)    # ESITYSTä VALMISTELLUT RYHMä
 SELECT (PSP "jälkeen") (-2C Gen) (-1 Num)   # VUODEN 1980 JÄLKEEN
 SELECT (A Ins) (1 C) (2 Ins) (2 A/N)
 REMOVE (A Ins) (NOT 1 Ins) (NOT 2 Ins)
@@ -1509,19 +1511,19 @@ SELECT (Adv "parhaillaan") (NOT 1 DUMMY)
 REMOVE (Adv "töikseen") (NOT 1 DUMMY)
 SELECT (Adv <POSS> "jälkeen") (NOT 1 DUMMY)
 REMOVE (Prop <POSS>) (NOT 1 DUMMY)          # ANNILTAAN
-REMOVE (PCP1) (0 <POSS>) (NOT 1 DUMMY)          # ANNILTAAN
-REMOVE (PCP2) (0 <POSS>) (NOT 1 DUMMY)          # ANNILTAAN
+REMOVE (Pcp1) (0 <POSS>) (NOT 1 DUMMY)          # ANNILTAAN
+REMOVE (Pcp2) (0 <POSS>) (NOT 1 DUMMY)          # ANNILTAAN
 SELECT (N Par <POSS>) (-1 <Par-OBJ>) (NOT -1 <Ela-Advl>)
 SELECT (N Par <POSS>) (-2 <Par-OBJ>) (-1 A) (-1 Par) (NOT -2 <Ela-Advl>)
 REMOVE (Nom Sg <POSS>) (0 POSS-NomSg) (-1 POSS-DEL-V)
 REMOVE (Nom Sg <POSS>) (0 POSS-NomSg) (-2 POSS-DEL-V)
 REMOVE (Nom Pl <POSS>) (0 POSS-NomPl) (-1 POSS-DEL-V)
 REMOVE (Nom Pl <POSS>) (0 POSS-NomPl) (-2 POSS-DEL-V)
-REMOVE (Nom Sg <POSS>) (-1 PCP2/Inf3/Inf2/REF/TEMP) (NOT -1 PSS)
-REMOVE (Nom Sg <POSS>) (-2 PCP2/Inf3/Inf2/REF/TEMP) (NOT -2 PSS)
-REMOVE (Nom Sg <POSS>) (1 PCP2) (1 ACT) (NOT *-1 VFIN)  # AIKANSA ELäNYT
-REMOVE (Nom Sg <POSS>) (2 PCP2) (2 ACT) (NOT 1 VFIN) (NOT 1 CLB?) (NOT *-1 VFIN)    # CF. "kotinsa hienosti hoitaneet naiset..."
-REMOVE (Nom Sg <POSS>) (1 PCP2) (1 ACT) (-1 ComMA)
+REMOVE (Nom Sg <POSS>) (-1 Pcp2/Inf3/Inf2/REF/TEMP) (NOT -1 PSS)
+REMOVE (Nom Sg <POSS>) (-2 Pcp2/Inf3/Inf2/REF/TEMP) (NOT -2 PSS)
+REMOVE (Nom Sg <POSS>) (1 Pcp2) (1 ACT) (NOT *-1 VFIN)  # AIKANSA ELäNYT
+REMOVE (Nom Sg <POSS>) (2 Pcp2) (2 ACT) (NOT 1 VFIN) (NOT 1 CLB?) (NOT *-1 VFIN)    # CF. "kotinsa hienosti hoitaneet naiset..."
+REMOVE (Nom Sg <POSS>) (1 Pcp2) (1 ACT) (-1 ComMA)
 SELECT (Gen Sg <POSS>) (1 REF/TEMP)    # SANOI PUOLUEENSA OLEVAN
 SELECT (Gen Sg <POSS>) (-1C A/Num/Pron/Q) (-1 Gen) (-1 Sg) (NOT -1 PERS)
 # TOISEN MAHDOLLISUUTENSA
@@ -1566,7 +1568,7 @@ SELECT (REF) (-2C <REF>) (-1C Gen) (-1 <POSS>) #SANONUT POIKANSA OLEVAN
 SELECT (REF) (-1C <REF>) (1 Gen) (1 <POSS>) #PELäTääN SAANEEN SURMANSA
 SELECT (A Par "oma") (NOT -1 Nom)
 SELECT (Num Gen Sg "puoli") (1 Gen)   # PUOLEN METRIN MITTAINEN
-SELECT (V Prs/IMPV ACT NEG) (*-1C NEGV LINK NOT *1 VFIN/PCP2/Inf) (NOT 0 N) (NOT 0 Pron) (NOT *1 NEG) (NOT *-1 NEG) (NOT 0 PSS) (NOT *-1 NIIN) (*-1C NEGV LINK NOT *1 CLB?) (*-1C NEGV LINK NOT 0 IMPV)
+SELECT (V Prs/IMPV ACT NEG) (*-1C NEGV LINK NOT *1 VFIN/Pcp2/Inf) (NOT 0 N) (NOT 0 Pron) (NOT *1 NEG) (NOT *-1 NEG) (NOT 0 PSS) (NOT *-1 NIIN) (*-1C NEGV LINK NOT *1 CLB?) (*-1C NEGV LINK NOT 0 IMPV)
 REMOVE (IMPV Sg2) (-1 N/V/A/Pron/Q)
 SELECT (Num Gen Sg "kaksi") (1 Gen)
 SELECT (Num Gen Sg "kaksi") (2 Gen)
@@ -1612,7 +1614,7 @@ REMOVE (A "kiire") (NOT 1 N)
 REMOVE (A "koti-ikävä") (NOT 1 DUMMY)
 REMOVE (V "arpoa") (NOT 1 DUMMY)
 REMOVE (V "laitostaa") (NOT 1 DUMMY)
-REMOVE (PCP1 ACT POS Nom Pl P-3 <POSS>) (NOT 1 DUMMY)  # olevansa
+REMOVE (Pcp1 ACT Pos Nom Pl P-3 <POSS>) (NOT 1 DUMMY)  # olevansa
 REMOVE (N Pl) (0 MAANANTAI) (NOT 1 DUMMY)
 REMOVE (N) (0 PANNA)
 REMOVE (N "sakka") (NOT 1 DUMMY)
@@ -1668,8 +1670,8 @@ SECTION
 
 "<kautta>" SELECT (PP) (1 Gen)
 SELECT (Inf3 Ade) (0 Ade)
-#(@w REMOVE (A POS Par Sg) (0 N)
-REMOVE (A POS All) (0 A)
+#(@w REMOVE (A Pos Par Sg) (0 N)
+REMOVE (A Pos All) (0 A)
 SELECT (Pron "itse") (NOT 1 DUMMY)  # **tankerous
 SELECT (Adv "näin") (NOT 1 DUMMY)
 SELECT (Adv "osaksi") (NOT 1 Par) (NOT -1 OTTAA-2) (NOT -2 OTTAA-2)# bad
@@ -1870,7 +1872,7 @@ REMOVE (AD "vähän") (NOT 1C CMP-ENNEN) (NOT 2 JALKEEN)# 4.2.2001 !!->! cf.belo
 #?# =h ((ORD Num Ess Sg (@Advl @N>)) (@1 ($ ":ntenä") (@2 ":ntenä")
 #?# 
 #?# 
-#?# #GenERIC Nom Sg FOR All OTHER InsTANCES
+#?# #GENERIC Nom Sg FOR All OTHER InsTANCES
 #?# 
 #?# =h ((N Nom Sg (@S @O @PC @N>)) (@1 NIL) (@2 NIL)
 
