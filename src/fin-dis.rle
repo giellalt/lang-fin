@@ -58,9 +58,9 @@ LIST A/N/Q/Pron = A N Q Pron A/N ;
 LIST A/N/Q/Pron/PCP/Num = A N Q Pron A/N Pcp1 Pcp2 Num ; 
 LIST A/Num/Pron/Q = A Num Pron Q ; 
 LIST A/Q/Pron = A Q Pron A/N ; 
-LIST A/Q/Pron/PCP = A Q Pron A/N Pcp1 Pcp2 DV-MA ;  # dv-ma added 23.1.2001 
-LIST A/Q/Pron/Num = A Q Pron A/N DV-MA Num ;
-LIST A/Q/Pron/PCP/Num = A Q Pron A/N Pcp1 Pcp2 DV-MA Num ; 
+LIST A/Q/Pron/PCP = A Q Pron A/N Pcp1 Pcp2 AgPcp ;  # dv-ma added 23.1.2001 
+LIST A/Q/Pron/Num = A Q Pron A/N AgPcp Num ;
+LIST A/Q/Pron/PCP/Num = A Q Pron A/N Pcp1 Pcp2 AgPcp Num ; 
 LIST A/PCP = A Pcp1 Pcp2 ; 
 LIST ABBR = ABBR ; 
 LIST Abe = Abe ; 
@@ -111,7 +111,7 @@ LIST DER = DA-UUS DA-US DN-IneN DN-LAIneN DN-LLIneN  DN-UUS ;
 LIST Det = Det ; 
 LIST DUMMY = DUMMY ; 
 LIST DV = DV-MIneN DV-US DV-NTA DV-TTA ; 
-LIST DV-MA = DV-MA ; 
+LIST AgPcp = AgPcp ; 
 LIST DV-TTA = DV-TTA ; 
 LIST DV-US = DV-US ; 
 LIST EHTA = "ehta" "normaalinen" "lehtinen" "koti-ikävä" ; 
@@ -1117,10 +1117,10 @@ SELECT (Gen Pl) (1C N) (1 Nom)
 SELECT (Gen Pl) (1C Gen) (1 Pl)
 SELECT (Gen Pl) (-1C Gen) (-1 Pl)
 SELECT (Gen Pl) (1C TEMP)
-SELECT (DV-MA Nom Sg <POSS>) (1C Nom) (1 Sg) (NOT 0 N)
+SELECT (AgPcp Nom Sg <POSS>) (1C Nom) (1 Sg) (NOT 0 N)
 # HäNEN HYVäKSYMäNSä ESITYS
-SELECT (DV-MA Nom Pl <POSS>) (1C Nom) (1 Pl) (NOT 0 N)
-SELECT (DV-MA Gen Sg <POSS>) (1C Gen) (1 Sg) (NOT 0 N)
+SELECT (AgPcp Nom Pl <POSS>) (1C Nom) (1 Pl) (NOT 0 N)
+SELECT (AgPcp Gen Sg <POSS>) (1C Gen) (1 Sg) (NOT 0 N)
 SELECT (Pron Gen Sg "itse" <POSS>) (-1 Gen)
 SELECT (Pron Gen Sg "itse" <POSS>) (-1C V) (*-2 Nom LINK 0 Sg LINK NOT *1 CLB?)  # XXXX
 SELECT (Pron Nom Pl "itse" <POSS>) (-1C V) (*-2 Nom LINK 0 Pl LINK NOT *1 CLB?)  # XXXX
@@ -1250,26 +1250,26 @@ SELECT (Inf3 Ela) (*-1 <Inf3-Ela> LINK NOT *1 CLB?) (NOT 0 ELAMA/KUOLEMA) (NOT -
 SELECT (Inf3 Ill) (*-1 <Inf3-Ill> LINK NOT *1 CLB?) (NOT 0 ELAMA/KUOLEMA) (NOT -1 CLB?)
 SELECT (Inf3 Abe) (NOT 0 PSP) (NOT 0 Adv)
 REMOVE (Inf3 ACT Ins) (NOT *-1 <NEC-V>)
-# *** DV-MA
-SELECT (DV-MA Ine Sg) (1C Ine) (1 Sg)
-SELECT (DV-MA Ine Pl) (1C Ine) (1 Pl)
-SELECT (DV-MA Ela Sg) (1C Ela) (1 Sg) (NOT *-1 <Inf3-Ela>)
-SELECT (DV-MA Ela Pl) (1C Ela) (1 Pl) (NOT *-1 <Inf3-Ela>)
-SELECT (DV-MA Ill Sg) (1C Ill) (1 Sg) (NOT *-1 <Inf3-Ill>)
-SELECT (DV-MA Ill Pl) (1C Ill) (1 Pl) (NOT *-1 <Inf3-Ill>)
-SELECT (DV-MA Ade Sg) (1C Ade) (1 Sg)
-SELECT (DV-MA Ade Pl) (1C Ade) (1 Pl)
+# *** AgPcp
+SELECT (AgPcp Ine Sg) (1C Ine) (1 Sg)
+SELECT (AgPcp Ine Pl) (1C Ine) (1 Pl)
+SELECT (AgPcp Ela Sg) (1C Ela) (1 Sg) (NOT *-1 <Inf3-Ela>)
+SELECT (AgPcp Ela Pl) (1C Ela) (1 Pl) (NOT *-1 <Inf3-Ela>)
+SELECT (AgPcp Ill Sg) (1C Ill) (1 Sg) (NOT *-1 <Inf3-Ill>)
+SELECT (AgPcp Ill Pl) (1C Ill) (1 Pl) (NOT *-1 <Inf3-Ill>)
+SELECT (AgPcp Ade Sg) (1C Ade) (1 Sg)
+SELECT (AgPcp Ade Pl) (1C Ade) (1 Pl)
 # ERROR: "ilman siirtymistä yksikielisistä kaksikielisiin ..."
-REMOVE (DV-MA Ine) (NOT 1C Ine)
-REMOVE (DV-MA Ela) (NOT 1C Ela)
-REMOVE (DV-MA Ill) (NOT 1C Ill)
-REMOVE (DV-MA Ade) (NOT 1C Ade)
-REMOVE (DV-MA Nom) (NOT 1C Nom) (NOT *-1 OLLA)
-REMOVE (DV-MA Gen) (NOT 1C Gen) (NOT *-1 OLLA)
-REMOVE (DV-MA Par) (NOT 1C Par) (NOT *-1 OLLA)
-SELECT (DV-MA Nom) (1C Nom) (-1C Gen) (-1 N)
-SELECT (DV-MA Gen) (1C Gen) (-1C Gen) (-1 N) (NOT 0 SANOA)
-SELECT (DV-MA Par) (1C Par) (-1C Gen) (-1 N)
+REMOVE (AgPcp Ine) (NOT 1C Ine)
+REMOVE (AgPcp Ela) (NOT 1C Ela)
+REMOVE (AgPcp Ill) (NOT 1C Ill)
+REMOVE (AgPcp Ade) (NOT 1C Ade)
+REMOVE (AgPcp Nom) (NOT 1C Nom) (NOT *-1 OLLA)
+REMOVE (AgPcp Gen) (NOT 1C Gen) (NOT *-1 OLLA)
+REMOVE (AgPcp Par) (NOT 1C Par) (NOT *-1 OLLA)
+SELECT (AgPcp Nom) (1C Nom) (-1C Gen) (-1 N)
+SELECT (AgPcp Gen) (1C Gen) (-1C Gen) (-1 N) (NOT 0 SANOA)
+SELECT (AgPcp Par) (1C Par) (-1C Gen) (-1 N)
 ## *** NEG-FORMS
 SELECT (NEG) (-1 NEGV) (NOT 0 NEG-AMBIGUOUS) (NOT 1 NEG) (NOT 1 Prs) (0 Prs/Prt)
   # EI HALUTA/=!# EIKä HEITä LöYDY
