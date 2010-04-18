@@ -21,14 +21,14 @@ Omorfi can be checked out from [https://gna.org/projects/omorfi gna.org/projects
 In order to use omorfi in the present context, you need to change the omorfi tags to something more Giellatekno-like. In the omorfi catalogue, you need to do the following commands. The first inverts the morphological analyser, and the second gives it a new set of tags.
 
 {{{
-hfst-invert mor-omorfi.hwfst -o foo
-hfst-substitute -F $GTHOME/kt/fin/src/giellatekno.relabel foo -o mor-omorfi-cg.hwfst
+hfst-invert mor-omorfi.hfst -o foo
+hfst-substitute -F $GTHOME/kt/fin/src/giellatekno.relabel foo -o mor-omorfi-cg.hfst
 }}}
 
 Then make an alias, call it e.g. hofin, and put it in your .bashrc file, where ''path/to'' denotes the path to your omorfi checkout.
 
 {{{
-alias hofin='hfst-lookup ~/path/to/omorfi/src/mor-omorfi-cg.hwfst'
+alias hofin='hfst-lookup ~/path/to/omorfi/src/mor-omorfi-cg.hfst'
 }}}
 
 !!The disambiguator
