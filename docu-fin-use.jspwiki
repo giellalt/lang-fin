@@ -1,0 +1,45 @@
+!!!How to use the Finnish grammatical analyser
+
+The analyser can be used online, or on your own machine.
+
+!!!Using the Finnish grammatical analyser online
+So, how can I glue in some text in Finnish and get an analysis?
+
+* On this site: Have some patience, we are not there yet.
+* On other sites: There are several online Finnish analysers.
+
+
+!!!Using the Finnish gramamtical analyser at your own machine
+Try this at home: But be sure to have a unix (linux, mac) machine.
+We also assume you have already checked out a local copy of the 
+Giellatekno svn, and that the catalogues gt, kt, st etc. are located
+in a folder we here call $GTHOME.
+
+!! Compiling omorfi
+Omorfi can be checked out from [https://gna.org/projects/omorfi gna.org/projects/omorfi], the omorfi page. Compile as described at the site and in the README and INSTALL files.
+
+In order to use omorfi in the present context, you need to change the omorfi tags to something more Giellatekno-like. In the omorfi catalogue, you need to do the following commands. The first inverts the morphological analyser, and the second gives it a new set of tags.
+
+{{{
+hfst-invert mor-omorfi.hwfst -o foo
+hfst-substitute -F $GTHOME/kt/fin/src/giellatekno.relabel foo -o mor-omorfi-cg.hwfst
+}}}
+
+Then make an alias, call it e.g. hofin, and put it in your .bashrc file, where ''path/to'' denotes the path to your omorfi checkout.
+
+{{{
+alias hofin='hfst-lookup ~/path/to/omorfi/src/mor-omorfi-cg.hwfst'
+}}}
+
+!!The disambiguator
+
+We here use a vislcg3 disambiguator for Finnish, based upon Fred Karlssons CG1 disambiguator.
+
+!!!Analysing text
+
+Text may now be analysed as follows (provided you have the Giellatekno setup in place). We assume you stand in $GTHOME/kt/fin/:
+
+{{{
+cat file.txt | preprocess | hofin | lookup2cg | vislcg3 -g src/fin-dis.rle
+}}}
+

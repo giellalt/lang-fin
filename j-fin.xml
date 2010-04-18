@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V2.0//EN" "http://forrest.apache.org/dtd/document-v20.dtd">
+<document xml:lang="en">
+  <header>
+    <title>Documentation on the Finnish analyser</title>
+    <authors>
+      <person email="trond.trosterud@hum.uit.no" name="Trond Trosterud" />
+    </authors>
+  </header>
+  <body>
+    <section>
+      <title>Documentation on the Finnish analyser</title>
+      <section>
+        <title>Finnish (fin)</title>
+        <ul>
+          <li>
+            <a href="docu-fin-background.html" >Background information on the Finnish analyser</a>
+          </li>
+          <li>
+            <a href="docu-fin-use.html" >Compiling and using the Finnish analyser</a>
+          </li>
+          <li>
+            <a href="docu-fin-tags.html" >The tagset of the Finnish analyser</a>
+          </li>
+<!--          <li>
+            <a href="docu-smn-twol.html" >** Documentation **</a> of the rule file <code>gt/smn/src/twol-smn.txt</code>
+          </li>
+          <li>
+            <a href="docu-smn-lex.html" >** Documentation **</a> of the lexicon files <ul>
+              <li>
+                the continuation lexica for N, A, V: <code>gt/smn/src/smn-lex.txt</code> , and
+              </li>
+              <li>
+                nouns: <code>gt/smn/src/noun-smn-lex.txt</code>,
+              </li>
+              <li>
+                verbs: <code>gt/smn/src/verb-smn-lex.txt</code>,
+              </li>
+              <li>
+                adverbs: <code>gt/smn/src/adv-smn-lex.txt</code>,
+              </li>
+              <li>
+                closed parts of speech: <code>gt/smn/src/closed-smn-lex.txt</code>,
+              </li>
+              <li>
+                adpositions: <code>gt/smn/src/pp-smn-lex.txt</code>,
+              </li>
+              <li>
+                punctuation marks: <code>gt/smn/src/punct-smn-lex.txt</code>.
+              </li>
+            </ul>
+          </li>
+          <li>The Inari Sámi <code>gt/smn/src/Makefile</code>.</li>
+          -->
+        </ul>
+      </section>
+      <p class="last_modified">Last modified: $Date: 2008-11-05 18:52:54 +0100 (ons, 05 nov 2008) $, by $Author: boerre $</p>
+    </section>
+  </body>
+</document>
