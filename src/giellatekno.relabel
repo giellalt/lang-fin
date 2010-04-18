@@ -163,9 +163,9 @@
 [NUM=PL]	+Pl
 [NUM=SG,PL]	@0@
 [NUM=SG]	+Sg
-[PCP=MA]	+iIPcp
-[PCP=NEG]	+NegPcp
-[PCP=NUT]	+iPcp
+[PCP=MA]	+Pcp2
+[PCP=NEG]	+Neg+Pcp1
+[PCP=NUT]	+Pcp1
 [PCP=VA]	+iIIPcp
 [POS=ABBREVIATION]	+Abbr
 [POS=ACRONYM]	+Acro
@@ -179,7 +179,7 @@
 [POS=PARTICLE]	+Part
 [POS=PREFIX]	+Pfx
 [POS=PRONOUN]	+Pron
-[POS=PROPER]	+N Prop
+[POS=PROPER]	+N+Prop
 [POS=PUNCTUATION]	+Punct
 [POSS=PL1]	+Pl1
 [POSS=PL2]	+Pl2
