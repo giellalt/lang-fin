@@ -1711,7 +1711,7 @@ SELECT (AD "vähän") (1 Gen) (2 JALKEEN) # 4.2.2001 !!->! cf.below
 REMOVE (AD "vähän") (NOT 1C CMP-ENNEN) (NOT 2 JALKEEN)# 4.2.2001 !!->! cf.below
 
 
-#h# SECTION
+ SECTION
 #h# # SYNTACTIC-CONSTRAINTS
 #h# 
 #h# #HEURISTIC-SYNTACTIC-CONSTRAINTS
@@ -1870,9 +1870,9 @@ REMOVE (AD "vähän") (NOT 1C CMP-ENNEN) (NOT 2 JALKEEN)# 4.2.2001 !!->! cf.belo
 #h# =h ((ORD Num Ela Sg (@Advl @N>)) (@1 ($ ":nnestä") (@2 ":nnestä")
 #h# =h ((ORD Num Ess Sg (@Advl @N>)) (@1 ($ ":ntenä") (@2 ":ntenä")
 #h# 
-#h# 
-#h# #GENERIC Nom Sg FOR All OTHER InsTANCES
-#h# 
+ 
+ #GENERIC Nom Sg FOR All OTHER InsTANCES
+ 
 #h# =h ((N Nom Sg (@S @O @PC @N>)) (@1 NIL) (@2 NIL)
 
 #TEXT-BASED-HEURISTICS
