@@ -132,11 +132,11 @@ ABBRSRCS=$(subst $(space),$(comma),$(LEX))
 scripts=$(HOME)/gt/script
 
 abbr: ../bin/abbr.txt
-../bin/abbr.txt: $(scripts)/abbr-extract $(scripts)/langTools/Util.pm $(LEX)
+../bin/abbr.txt: $(scripts)/abbr-extract.pl $(scripts)/langTools/Util.pm $(LEX)
 	@echo
 	@echo "*** Extracting abbreviations from abbr-fin-lex.txt to abbr.txt ***" ;
 	@echo
-	@perl -I $(scripts) $(scripts)/abbr-extract \
+	@perl -I $(scripts) $(scripts)/abbr-extract.pl \
 		--output=$@ \
 		--abbr_lex=abbr-fin-lex.txt \
 		--lex=$(ABBRSRCS)
