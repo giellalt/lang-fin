@@ -6,7 +6,7 @@
 #      *******************************************
 
 
-DELIMITERS = "<$\.>" "<$!>" "<$?>" "<$END-OF-SENTENCE>" "<$ENDDOC>" "<$ENDDOCHEAD>" "<$ENDHCODE>" "<$ENDHEAD>" "<$ENDTEXT>" "<$ENDTITLE>" "<$PARAG>" "<$HEAD>" "<$END-P>";
+DELIMITERS = "<$\.>" "<$!>" "<$?>" "<$END-OF-SENTENCE>" "<$ENDDOC>" "<$ENDDOCHEAD>" "<$ENDHCODE>" "<$ENDHEAD>" "<$ENDTEXT>" "<$ENDTITLE>" "<$PARAG>" "<$HEAD>" "<$END-P>" "<.>" "<!>" "<?>" "<...>" "<¶>" ;
 
 # ("<$\.>" "<$!>" "<$?>") # "<$\:>"
 
@@ -92,7 +92,7 @@ LIST C = C ;
 LIST CAP/NOCAP = CAP NOCAP ; 
 LIST C/Adv = C Adv ; 
 LIST C-Adv-ETC = C Adv BOS "<$\,>" "olla" ; 
-LIST CLB? = BOS EOS "<$\:>" "<$\#>" "<$\(>" "<$\>" "<$\'>" "<$\">" "<$\,>" Rel "<$->" "kuinka" "miten" "milloin" "-" C KO PUNCT ; 
+LIST CLB? = BOS EOS "<$\:>" "<$\#>" "<$\(>" "<$\>" "<$\'>" "<$\">" "<$\,>" Rel "<$->" "kuinka" "miten" "milloin" "-" C KO Punct ; 
 LIST CLB?-C = BOS EOS "<$\:>" "<$\#>" "<$\(>" "<$\>" "<$\'>" "<$\">" "<$\,>"  "<$->" ; 
 LIST CLB?/Neg = BOS EOS "<$\:>" "<$\#>" "<$\(>" "<$\>" "<$\'>" "<$\">" "<$\,>"  C Neg ; 
 LIST CMP = CMP ; 
@@ -136,7 +136,7 @@ LIST Gen-PREP = "yli" "läpi" ;
 LIST Gen-WORD = "metri" "milli_metri" "kilo_metri" "vuosi" "päivä" "kuu_kausi"  "minuutti" "sekunti" "tunti" "vuoro_kausi" "maa" "prosentti" "paras" "markka"  "penni" "dollari" "kruunu" "henkilö" "kierros" "maa" "maisema" "uutinen" "tienoo" ; 
 LIST Gen/Par = Gen Par ; 
 LIST Gen/Par/Acc = Gen Par Acc ; 
-LIST Gen/PUNCT = Gen PUNCT ; 
+LIST Gen/Punct = Gen Punct ; 
 LIST HARVA = "harva" "kumpikin" "suora" ; 
 LIST HARVA-SET = "asua" "tahti" "hammas" "verkko" "pensaikko" "asutus" ; 
 LIST HITTO = INTJ "hitto" "herra_jumala" "kuinka" "sinä" "te" "<\!>"  "hellanlettas" "saatana" "perkele" "vittu" "voi" ; 
@@ -235,7 +235,7 @@ LIST NOT-Gen-CASE = Nom Par Ine Ela Ill Ade Abl All Ess Tra Abe Com Ins ;
 LIST NOUN+Inf1 = "halu" "tahto" "yritys" "päätös" "lupa" "aikomus" "tarve" "alttius" "tavoite" "oikeus" "mahdollisuus" "velvollisuus" "valmius" "ajatus" "tarkoitus" "syy" "tapa" "määrä" "pyrkimys" "pakko" "kyky" "taito" "vara" "hanke" "vastentahtoisuus" "keino" "aika" ; 
 LIST NOUN-OF-MEASURE = "kilo" "metri" "litra" "osa" "pala" ; 
 LIST Num = Num ; 
-LIST Num/C/HETI/CLB = Num "heti" BOS EOS "<$\:>" "<$\#>" "<$\(>" "<$\>" "<$\'>" "<$\">" "<$\,>" Rel "<$->" "kuinka" "miten" "milloin" "-" C KO PUNCT ; 
+LIST Num/C/HETI/CLB = Num "heti" BOS EOS "<$\:>" "<$\#>" "<$\(>" "<$\>" "<$\'>" "<$\">" "<$\,>" Rel "<$->" "kuinka" "miten" "milloin" "-" C KO Punct ; 
 LIST Num/Pron = Num Pron ; 
 LIST Num-PUOLET-KOLMANNES = Num "puoli" "kolmannes" "neljännes" "viidennes" "kuudennes" "seitsemännes" "kahdeksannes" "yhdeksännes" ; 
 LIST Num-Q-Ill = Num Q Ill ; 
@@ -253,6 +253,7 @@ LIST PAASTA = "laskea" "sijoittaa" "antaa" "sallia" "tunkeutua" ;
 LIST PALJON = "paljon" "vähän" "jonkin=verran" ; 
 LIST PALJON-MONI = "paljon" "vähän" "moni" "usea" "harva" "hyvin" "oikein" "väärin" "kovin" "tarpeeksi" ; 
 LIST PANNA = "panna" "arpi" "sakka" ; 
+LIST Part = Part ;
 LIST Prt = Prt ; 
 LIST PCP = Pcp1 Pcp2 ; 
 LIST Pcp1 = Pcp1 ; 
@@ -282,9 +283,9 @@ LIST PSP-CASE = Gen Par Ela Ill Abl All ;
 LIST Pass = Pass ; 
 LIST Par = Par ; 
 LIST Par/Gen = Par Gen ; 
-LIST Par/PUNCT = Par PUNCT ; 
+LIST Par/Punct = Par Punct ; 
 LIST PUHUA = "puhua" "käyttää" "kirjoittaa" ; 
-LIST PUNCT = PUNCT ; 
+LIST Punct = Punct ; 
 LIST PUOLA = "puola" ; 
 LIST PUOLI = "puoli" ; 
 LIST PUOLI-KOKO-OSA = "puoli" "koko" "osa" ; 
@@ -407,14 +408,14 @@ LIST PRINCIPAL-FUNCTION-DECLARATIONS = @S @O @PC ;
 
 ### BARRIERS in var AUP-BORDERS
 ### BOS EOS "<$\:>" "<$\#>" "<$\(>" "<$\)>" "<$\'>" "<$\">" "<$\,>" Rel
-### "<$->" "kuinka" "miten" "milloin" "-" C KO PUNCT)
+### "<$->" "kuinka" "miten" "milloin" "-" C KO Punct)
 ### Do not understand these… Trond.
 
 SECTION
 
 # CLAUSE BOUNDARY CONSTRAINTS
 
-### =**CLB (ComMA) (0 PUNCT)
+### =**CLB (ComMA) (0 Punct)
 ### =**CLB (C) (1 VFIN)
 ### =**CLB (C) (2 VFIN)
 ### =**CLB (C) (3 VFIN)
@@ -423,6 +424,10 @@ SECTION
 ### =**CLB (KO) (NOT 1 DUMMY)
 ### =**CLB (Adv) (0 KUINKA-MITEN-MIllOIN)
 ### Do not understand these. Trond.
+
+## Trond
+REMOVE Part ;
+SELECT Prop IF (NOT -1 BOS OR Punct);
 
 SECTION
 
@@ -979,7 +984,7 @@ SELECT (Pron Pl "te") (NOT -1 Gen)  # RISKY, CF. SUOMEN TEIllä
 SELECT (Pron Par Sg "hän") (*-1 NEGV LINK NOT *1 CLB?) (NOT -1 CLB?)
 SELECT (Pron Par Sg "hän") (*1 NEGV LINK NOT *-1 CLB?) (NOT 1 CLB?)
 SELECT (Pron INTG) (-1 BOS) (*1 ?!)
-SELECT (Pron INTG) (-1 PUNCT) (*1 ?!)
+SELECT (Pron INTG) (-1 Punct) (*1 ?!)
 SELECT (Pron INTG) (-2 BOS) (*1 ?!)
 SELECT (Pron INTG) (-1 KYSY)
 SELECT (Pron INTG) (-2 KYSY)
@@ -1153,12 +1158,12 @@ SELECT (Par) (-2 Par) (-1 C) (1 V)
 # *** PP & PSP
 #GenLEFT,GenRIGHT,ParLEFT,ParRIGHT IN ISOLATION
 SELECT (PSP <GenLEFT>) (-1 Gen) (NOT 0 <GenRIGHT>) (NOT 0 <ParRIGHT>) (NOT 0 <ParLEFT>) (NOT -1 AD/PCP) (NOT 0 <POSS>) (NOT -1 KERRAN) (NOT 0 JOHDOSTA)
-SELECT (PSP <GenLEFT>) (-2 Gen) (-1 PUNCT) (NOT 0 <GenRIGHT>) (NOT 0 <ParRIGHT>) (NOT 0 <ParLEFT>) (NOT -1 AD/PCP) (NOT 0 <POSS>) (NOT -1 KERRAN) (NOT 0 JOHDOSTA)
+SELECT (PSP <GenLEFT>) (-2 Gen) (-1 Punct) (NOT 0 <GenRIGHT>) (NOT 0 <ParRIGHT>) (NOT 0 <ParLEFT>) (NOT -1 AD/PCP) (NOT 0 <POSS>) (NOT -1 KERRAN) (NOT 0 JOHDOSTA)
 SELECT (PSP <ParLEFT>) (-1 Par) (NOT 0 <GenRIGHT>) (NOT 0 <ParRIGHT>) (NOT 0 <GenLEFT>) (NOT 0 <POSS>)
-SELECT (PSP <ParLEFT>) (-2 Par) (-1 PUNCT) (NOT 0 <GenRIGHT>) (NOT 0 <ParRIGHT>) (NOT 0 <GenLEFT>) (NOT 0 <POSS>)
+SELECT (PSP <ParLEFT>) (-2 Par) (-1 Punct) (NOT 0 <GenRIGHT>) (NOT 0 <ParRIGHT>) (NOT 0 <GenLEFT>) (NOT 0 <POSS>)
 SELECT (PP <GenRIGHT>) (1 Gen) (NOT 0 <GenLEFT>) (NOT 0 <ParRIGHT>) (NOT 0 <ParLEFT>) (NOT 0 YLI/AllE) (NOT 0 <POSS>) (NOT 0 JALKEEN)
 SELECT (PP <ParRIGHT>) (1 Par) (NOT 0 <GenRIGHT>) (NOT 0 <GenLEFT>) (NOT 0 <ParLEFT>) (NOT 0 <POSS>) (NOT 0 V)   # CF. "ei edellä"
-SELECT (PP <ParRIGHT>) (1 Gen/PUNCT) (2 Par) (NOT 0 <GenRIGHT>) (NOT 0 <GenLEFT>) (NOT 0 <ParLEFT>) (NOT 0 <POSS>)
+SELECT (PP <ParRIGHT>) (1 Gen/Punct) (2 Par) (NOT 0 <GenRIGHT>) (NOT 0 <GenLEFT>) (NOT 0 <ParLEFT>) (NOT 0 <POSS>)
 SELECT (PP "ilman") (1 ETTA)
 SELECT (PP "ilman") (1 ComMA) (2 ETTA)
 SELECT (PP "ilman") (2 Par)
@@ -1182,16 +1187,16 @@ SELECT (PSP <GenLEFT>) (-2 Gen) (-1 Num) (0 <ParRIGHT>) (0 <ParLEFT>) (NOT 0 <Ge
 SELECT (PP <ParRIGHT>) (NOT -1 Par/Gen) (0 <GenLEFT>) (0 <ParLEFT>) (NOT 0 <GenRIGHT>) (1 Par) (NOT 0 <POSS>) (NOT 0 JOHDOSTA)
 # LIKELLä,KESKELLä (ParRIGHT,GenLEFT)
 SELECT (PSP <GenLEFT>) (-1 Gen) (0 <ParRIGHT>) (NOT 0 <ParLEFT>) (NOT 0 <GenRIGHT>) (NOT 1 Par) (NOT -1 AD/PCP) (NOT 0 <POSS>) (NOT -1 KERRAN) (NOT 0 JOHDOSTA) (NOT 2 Par)
-SELECT (PSP <GenLEFT>) (-2 Gen) (-1 PUNCT) (0 <ParRIGHT>) (NOT 0 <ParLEFT>) (NOT 0 <GenRIGHT>) (NOT 1 Par) (NOT -1 AD/PCP) (NOT 0 <POSS>) (NOT -1 KERRAN) (NOT 0 JOHDOSTA) (NOT 2 Par)
+SELECT (PSP <GenLEFT>) (-2 Gen) (-1 Punct) (0 <ParRIGHT>) (NOT 0 <ParLEFT>) (NOT 0 <GenRIGHT>) (NOT 1 Par) (NOT -1 AD/PCP) (NOT 0 <POSS>) (NOT -1 KERRAN) (NOT 0 JOHDOSTA) (NOT 2 Par)
 SELECT (PSP <GenLEFT>) (-2 Gen) (-1 Num) (0 <ParRIGHT>) (NOT 0 <ParLEFT>) (NOT 0 <GenRIGHT>) (NOT 1 Par) (NOT -1 AD/PCP) (NOT 0 <POSS>) (NOT -1 KERRAN) (NOT 0 JOHDOSTA) (NOT 2 Par)
 SELECT (PP <ParRIGHT>) (NOT -1 Gen) (0 <GenLEFT>) (NOT 0 <ParLEFT>) (NOT 0 <GenRIGHT>) (1 Par) (NOT 0 <POSS>)
 # KESKEN (ParRIGHT,GenRIGHT,GenLEFT)
 SELECT (PSP <GenLEFT>) (-1 Gen) (0 <ParRIGHT>) (NOT 0 <ParLEFT>) (0 <GenRIGHT>) (NOT 1 Par/Gen) (NOT -1 AD/PCP) (NOT 0 <POSS>) (NOT -1 KERRAN) (NOT 0 JOHDOSTA) (NOT 2 Par/Gen)
-SELECT (PSP <GenLEFT>) (-2 Gen) (-1 PUNCT) (0 <ParRIGHT>) (NOT 0 <ParLEFT>) (0 <GenRIGHT>) (NOT 1 Par/Gen) (NOT -1 AD/PCP) (NOT 0 <POSS>) (NOT -1 KERRAN) (NOT 0 JOHDOSTA) (NOT 2 Par/Gen)
+SELECT (PSP <GenLEFT>) (-2 Gen) (-1 Punct) (0 <ParRIGHT>) (NOT 0 <ParLEFT>) (0 <GenRIGHT>) (NOT 1 Par/Gen) (NOT -1 AD/PCP) (NOT 0 <POSS>) (NOT -1 KERRAN) (NOT 0 JOHDOSTA) (NOT 2 Par/Gen)
 SELECT (PP <ParRIGHT>) (NOT -1 Gen) (0 <GenLEFT>) (NOT 0 <ParLEFT>) (0 <GenRIGHT>) (1 Par/Gen) (NOT 0 <POSS>)
 # AllA (GenRIGHT,GenLEFT)
 SELECT (PSP <GenLEFT>) (-1 Gen) (NOT 0 <ParRIGHT>) (NOT 0 <ParLEFT>) (0 <GenRIGHT>) (NOT 1 Gen) (NOT -1 AD/PCP) (NOT 0 <POSS>) (NOT -1 KERRAN) (NOT 0 JOHDOSTA)
-SELECT (PSP <GenLEFT>) (-2 Gen) (-1 PUNCT) (NOT 0 <ParRIGHT>) (NOT 0 <ParLEFT>) (0 <GenRIGHT>) (NOT 1 Gen) (NOT -1 AD/PCP) (NOT 0 <POSS>) (NOT -1 KERRAN) (NOT 0 JOHDOSTA)
+SELECT (PSP <GenLEFT>) (-2 Gen) (-1 Punct) (NOT 0 <ParRIGHT>) (NOT 0 <ParLEFT>) (0 <GenRIGHT>) (NOT 1 Gen) (NOT -1 AD/PCP) (NOT 0 <POSS>) (NOT -1 KERRAN) (NOT 0 JOHDOSTA)
 SELECT (PP <GenRIGHT>) (NOT -1 Gen) (0 <GenLEFT>) (NOT 0 <ParLEFT>) (NOT 0 <ParRIGHT>) (1 Gen) (NOT 0 <POSS>) (NOT 0 JALKEEN)
 #DELETING SUPERFLUOUS READINGS FOR All ComBINATIONS
 REMOVE (PSP <GenLEFT>) (NOT -1 Gen) (NOT 0 <ParLEFT>)
@@ -1712,164 +1717,175 @@ REMOVE (AD "vähän") (NOT 1C CMP-ENNEN) (NOT 2 JALKEEN)# 4.2.2001 !!->! cf.belo
 
 
  SECTION
-#h# # SYNTACTIC-CONSTRAINTS
-#h# 
-#h# #HEURISTIC-SYNTACTIC-CONSTRAINTS
-#h# #not available at present!!!
-#h# # (IF INVOKE-H-RULES? (INVOKE-HEUR-SYNT-RULES))  eliminated July 9, 2000
-#h# 
-#h# #MORPHOLOGICAL-HEURISTICS
-#h# #numerals like ("<16\:ta>")# "<16\:ta>"%n%t(<Digit> Num Par Sg)#         2 0 0 0 5 1
-#h# #are dealt with in ftwpost.bta, 23.1.2001, and in cgp, cf "dummy" for base
-#h# =h ((ABBR Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ ":n") (@2 ":n")
-#h# =h ((ABBR Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ ":in") (@2 ":in")
-#h# =h ((ABBR Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "'in") (@2 "'in")
-#h# =h ((ABBR Par Sg (@S @O @PC @<P @P> @<PN @N>)) (@1 ($ ":tta") (@2 ":tta")
-#h# =h ((ABBR Par Sg (@S @O @PC @<P @P> @<PN @N>)) (@1 ($ ":ta") (@2 ":ta")
-#h# =h ((ABBR Par Sg (@S @O @PC @<P @P> @<PN @N>)) (@1 ($ ":ttä") (@2 ":ttä")
-#h# =h ((ABBR Par Sg (@S @O @PC @<P @P> @<PN @N>)) (@1 ($ ":tä") (@2 ":tä")
-#h# =h ((ABBR Par Sg (@S @O @PC @<P @P> @<PN @N>)) (@1 ($ ":aa") (@2 ":aa")
-#h# =h ((ABBR Par Sg (@S @O @PC @<P @P> @<PN @N>)) (@1 ($ ":a") (@2 ":a")
-#h# =h ((ABBR Par Sg (@S @O @PC @<P @P> @<PN @N>)) (@1 ($ ":ää") (@2 ":ää")
-#h# =h ((ABBR Par Sg (@S @O @PC @<P @P> @<PN @N>)) (@1 ($ ":ä") (@2 ":ä")
-#h# =h ((ABBR Ine Sg (@Advl)) (@1 ($ ":ssa") (@2 ":ssa")
-#h# =h ((ABBR Ine Sg (@Advl)) (@1 ($ ":ssä") (@2 ":ssä")
-#h# =h ((ABBR Ela Sg (@Advl)) (@1 ($ ":sta") (@2 ":sta")
-#h# =h ((ABBR Ela Sg (@Advl)) (@1 ($ ":stä") (@2 ":stä")
-#h# =h ((ABBR Ill Sg (@Advl)) (@1 ($ ":aan") (@2 ":aan")
-#h# =h ((ABBR Ill Sg (@Advl)) (@1 ($ ":ään") (@2 ":ään")
-#h# =h ((ABBR Ade Sg (@Advl)) (@1 ($ ":lla") (@2 ":lla")
-#h# =h ((ABBR Ade Sg (@Advl)) (@1 ($ ":llä") (@2 ":llä")
-#h# =h ((ABBR Abl Sg (@Advl)) (@1 ($ ":lta") (@2 ":lta")
-#h# =h ((ABBR Abl Sg (@Advl)) (@1 ($ ":ltä") (@2 ":ltä")
-#h# =h ((ABBR All Sg (@Advl)) (@1 ($ ":lle") (@2 ":lle")
-#h# =h ((DASH) (@1 (^ "-") ($ "-") (@2 NIL) # XXXX
-#h# =h ((ABBR Nom Sg (@S @O @PC)) (@1 (NOT * "i") (NOT * "e") (NOT * "ä") (NOT * "y") (NOT * "ö") (NOT * "u") (NOT * "o") (NOT * "a") (NOT * "I") (NOT * "E") (NOT * "[") (NOT * "Y") (NOT * "/") (NOT * "U") (NOT * "O") (NOT * "A") (NOT * ":") (@2 NIL)
-#h# =h ((ABBR Nom Sg (@S @O @PC)) (@1 (* ":kin") (@2 "x:kin")
-#h# =h ((N Ine Sg (@Advl)) (@1 ($ "uksessa") (@2 "uksessa" "us")
-#h# =h ((N Ine Sg (@Advl)) (@1 ($ "yksessä") (@2 "yksessä" "ys")
-#h# =h ((N Ine Sg (@Advl)) (@1 ($ "ssa") (@2 "ssa")
-#h# =h ((N Ine Sg (@Advl)) (@1 ($ "ssä") (@2 "ssä")
-#h# =h ((N Ela Sg (@Advl)) (@1 ($ "sta") (@2 "sta")
-#h# =h ((N Ela Sg (@Advl)) (@1 ($ "stä") (@2 "stä")
-#h# =h ((N Ine Sg (@Advl)) (@1 ($ "uksella") (@2 "uksella" "us")
-#h# =h ((N Ine Sg (@Advl)) (@1 ($ "yksellä") (@2 "yksellä" "ys")
-#h# =h ((N Ade Sg (@Advl)) (@1 ($ "lla") (@2 "lla")
-#h# =h ((N Ade Sg (@Advl)) (@1 ($ "llä") (@2 "llä")
-#h# =h ((N Ine Sg (@Advl)) (@1 ($ "ukselta") (@2 "ukselta" "us")
-#h# =h ((N Ine Sg (@Advl)) (@1 ($ "ykseltä") (@2 "ykseltä" "ys")
-#h# =h ((N Abl Sg (@Advl)) (@1 ($ "lta") (@2 "lta")
-#h# =h ((N Abl Sg (@Advl)) (@1 ($ "ltä") (@2 "ltä")
-#h# =h ((N Ine Sg (@Advl)) (@1 ($ "ukselle") (@2 "ukselle" "us")
-#h# =h ((N All Sg (@Advl)) (@1 ($ "lle") (@2 "lle")
-#h# =h ((N Nom Sg (@S @O @PC)) (@1 ($ "man") (@2 NIL)
-#h# =h ((N Nom Sg (@S @O @PC)) (@1 ($ "nen") (@2 NIL)
-#h# =h ((N Nom Sg (@S @O @PC)) (@1 ($ "sson") (@2 NIL)
-#h# =h ((N Nom Sg (@S @O @PC)) (@1 ($ "stein") (@2 NIL)
-#h# =h ((A Ill Pl (@Advl)) (@1 ($ "isiin") (@2 "isiin" "inen")
-#h# =h ((N Ill Pl (@Advl)) (@1 ($ "uksiin") (@2 "uksiin" "us")
-#h# =h ((N Ill Pl (@Advl)) (@1 ($ "yksiin") (@2 "yksiin" "ys")
-#h# =h ((N Ill Pl (@Advl)) (@1 ($ "eihin") (@2 "eihin" "i")
-#h# =h ((N Ill Pl (@Advl)) (@1 ($ "aihin") (@2 "aihin" "as")
-#h# =h ((N Ill Pl (@Advl)) (@1 ($ "äihin") (@2 "äihin" "äs")
-#h# =h ((N Ill Pl (@Advl)) (@1 ($ "oihin") (@2 "ihin")
-#h# =h ((N Ill Pl (@Advl)) (@1 ($ "uihin") (@2 "ihin")
-#h# =h ((N Ill Pl (@Advl)) (@1 ($ "yihin") (@2 "ihin")
-#h# =h ((N Ill Sg (@Advl)) (@1 ($ "ukseen") (@2 "ukseen" "us")
-#h# =h ((N Ill Sg (@Advl)) (@1 ($ "ykseen") (@2 "ykseen" "ys")
-#h# =h ((N Ill Sg (@Advl)) (@1 ($ "ihin") (@2 "hin")
-#h# =h ((N Ill Sg (@Advl)) (@1 ($ "ismiin") (@2 "in")
-#h# =h ((N Ill Sg (@Advl)) (@1 ($ "ointiin") (@2 "in")
-#h# =h ((N Ill Sg (@Advl)) (@1 ($ "iittiin") (@2 "in")
-#h# =h ((N Ill Sg (@Advl)) (@1 ($ "eettiin") (@2 "in")
-#h# =h ((N Ill Sg (@Advl)) (@1 ($ "aattiin") (@2 "in")
-#h# =h ((N Ill Sg (@Advl)) (@1 ($ "äättiin") (@2 "in")
-#h# =h ((N Ill Sg (@Advl)) (@1 ($ "uuttiin") (@2 "in")
-#h# =h ((N Ill Sg (@Advl)) (@1 ($ "oottiin") (@2 "in")
-#h# =h ((N Ill Sg (@Advl)) (@1 ($ "iinkin") (@2 "inkin")
-#h# =h ((N Ill Sg (@Advl)) (@1 ($ "iin") (@2 "iin")
-#h# =h ((N Ess Sg (@Advl)) (@1 ($ "uksena") (@2 "uksena" "us")
-#h# =h ((N Ess Sg (@Advl)) (@1 ($ "yksenä") (@2 "yksenä" "ys")
-#h# =h ((N Par Sg (@S @O @PC @<P @P> @<PN @N>)) (@1 ($ "usta") (@2 "usta" "us")
-#h# =h ((N Par Sg (@S @O @PC @<P @P> @<PN @N>)) (@1 ($ "ystä") (@2 "ystä" "ys")
-#h# =h ((N Nom Pl (@S @O @PC)) (@1 ($ "kset") (@2 "kset" "s")
-#h# # GenITIVES
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "ksen") (@2 "ksen" "s")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "sen") (@2 "sen" "nen")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "sonin") (@2 "sonin" "son")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "anin") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "enin") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "inin") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "nkin") (@2 "nkin")     # SUDBURYNKIN
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "onin") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "oinnin") (@2 "oinnin" "ointi")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "öinnin") (@2 "öinnin" "öinti")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "unin") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "ynin") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "otin") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "elin") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "antin") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "dtin") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "ftin") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "esin") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "asin") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "chtin") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "bin") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "cin") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "din") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "fin") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "gin") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "min") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "manin") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "mannin") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "rin") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "ttin") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "ngin") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "vin") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "win") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "zin") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "aatin") (@2 "aatin" "aatti")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "eetin") (@2 "eetin" "eetti")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "iitin") (@2 "iitin" "iitti")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "ootin") (@2 "ootin" "ootti")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "uutin") (@2 "uutin" "uutti")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "yytin") (@2 "yytin" "yytti")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "uuden") (@2 "uuden" "uus")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "yyden") (@2 "yyden" "yys")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "in") (@2 "in")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "en") (@2 "n")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "än") (@2 "n")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "yn") (@2 "n")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "ön") (@2 "n")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "un") (@2 "n")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "on") (@2 "n")
-#h# =h ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (@1 ($ "an") (@2 "n")
-#h# =h ((N Par Sg (@S @O @PC @<P @P> @<PN @N>)) (@1 ($ "aa") (@2 "a")
-#h# =h ((N Par Sg (@S @O @PC @<P @P> @<PN @N>)) (@1 ($ "ea") (@2 "a")
-#h# =h ((N Par Sg (@S @O @PC @<P @P> @<PN @N>)) (@1 ($ "oa") (@2 "a")
-#h# =h ((N Par Sg (@S @O @PC @<P @P> @<PN @N>)) (@1 ($ "ua") (@2 "a")
-#h# =h ((N Par Sg (@S @O @PC @<P @P> @<PN @N>)) (@1 ($ "ia") (@2 "a")
-#h# =h ((N Par Sg (@S @O @PC @<P @P> @<PN @N>)) (@1 ($ "ää") (@2 "ä")
-#h# =h ((N Par Sg (@S @O @PC @<P @P> @<PN @N>)) (@1 ($ "eä") (@2 "ä")
-#h# =h ((N Par Sg (@S @O @PC @<P @P> @<PN @N>)) (@1 ($ "yä") (@2 "ä")
-#h# =h ((N Par Sg (@S @O @PC @<P @P> @<PN @N>)) (@1 ($ "iä") (@2 "ä")
-#h# 
-#h# =h ((ORD Num Ade Sg (@Advl @N>)) (@1 ($ ":nnella") (@2 ":nnella")
-#h# =h ((ORD Num Abl Sg (@Advl @N>)) (@1 ($ ":nnelta") (@2 ":nnelta")
-#h# =h ((ORD Num All Sg (@Advl @N>)) (@1 ($ ":nnelle") (@2 ":nnelle")
-#h# =h ((ORD Num Ine Sg (@Advl @N>)) (@1 ($ ":nnessa") (@2 ":nnessa")
-#h# =h ((ORD Num Ela Sg (@Advl @N>)) (@1 ($ ":nnesta") (@2 ":nnesta")
-#h# =h ((ORD Num Ill Sg (@Advl @N>)) (@1 ($ ":nteen") (@2 ":nteen")
-#h# =h ((ORD Num Ess Sg (@Advl @N>)) (@1 ($ ":ntena") (@2 ":ntena")
-#h# =h ((ORD Num Tra Sg (@Advl @N>)) (@1 ($ ":nneksi") (@2 ":nneksi")
-#h# =h ((ORD Num Tra Sg (@Advl @N>)) (@1 ($ "nneksi") (@2 "nneksi")
-#h# 
-#h# =h ((ORD Num Ade Sg (@Advl @N>)) (@1 ($ ":nnellä") (@2 ":nnellä")
-#h# =h ((ORD Num Abl Sg (@Advl @N>)) (@1 ($ ":nneltä") (@2 ":nneltä")
-#h# =h ((ORD Num Ine Sg (@Advl @N>)) (@1 ($ ":nnessä") (@2 ":nnessä")
-#h# =h ((ORD Num Ela Sg (@Advl @N>)) (@1 ($ ":nnestä") (@2 ":nnestä")
-#h# =h ((ORD Num Ess Sg (@Advl @N>)) (@1 ($ ":ntenä") (@2 ":ntenä")
-#h# 
+ 
+LIST @<P = @<P ;
+LIST @<PN = @<PN ;
+LIST @Advl = @Advl ;
+LIST @N> = @N> ;
+LIST @NEC-S = @NEC-S ;
+LIST @NF-S = @NF-S ;
+LIST @O = @O ;
+LIST @P> = @P> ;
+LIST @PC = @PC ;
+LIST @S = @S ;
+ 
+# SYNTACTIC-CONSTRAINTS
+
+#HEURISTIC-SYNTACTIC-CONSTRAINTS
+#not available at present!!!
+# (IF INVOKE-H-RULES? (INVOKE-HEUR-SYNT-RULES))  eliminated July 9, 2000
+
+#MORPHOLOGICAL-HEURISTICS
+#numerals like ("<16\:ta>")# "<16\:ta>"%n%t(<Digit> Num Par Sg)#         2 0 0 0 5 1
+#are dealt with in ftwpost.bta, 23.1.2001, and in cgp, cf "dummy" for base
+ADD (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (ABBR Gen Sg) (1 ("<(.*):in>"r)) (2 ("<(.*):in>"r))
+ADD (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (ABBR Gen Sg) (1 ("<(.*)'in>"r)) (2 ("<(.*)'in>"r))
+ADD (@S @O @PC @<P @P> @<PN @N>) TARGET (ABBR Par Sg) (1 ("<(.*):tta>"r)) (2 ("<(.*):tta>"r))
+ADD (@S @O @PC @<P @P> @<PN @N>) TARGET (ABBR Par Sg) (1 ("<(.*):ta>"r)) (2 ("<(.*):ta>"r))
+ADD (@S @O @PC @<P @P> @<PN @N>) TARGET (ABBR Par Sg) (1 ("<(.*):ttä>"r)) (2 ("<(.*):ttä>"r))
+ADD (@S @O @PC @<P @P> @<PN @N>) TARGET (ABBR Par Sg) (1 ("<(.*):tä>"r)) (2 ("<(.*):tä>"r))
+ADD (@S @O @PC @<P @P> @<PN @N>) TARGET (ABBR Par Sg) (1 ("<(.*):aa>"r)) (2 ("<(.*):aa>"r))
+ADD (@S @O @PC @<P @P> @<PN @N>) TARGET (ABBR Par Sg) (1 ("<(.*):a>"r)) (2 ("<(.*):a>"r))
+ADD (@S @O @PC @<P @P> @<PN @N>) TARGET (ABBR Par Sg) (1 ("<(.*):ää>"r)) (2 ("<(.*):ää>"r))
+ADD (@S @O @PC @<P @P> @<PN @N>) TARGET (ABBR Par Sg) (1 ("<(.*):ä>"r)) (2 ("<(.*):ä>"r))
+ADD (@Advl) TARGET (ABBR Ine Sg) (1 ("<(.*):ssa>"r)) (2 ("<(.*):ssa>"r))
+ADD (@Advl) TARGET (ABBR Ine Sg) (1 ("<(.*):ssä>"r)) (2 ("<(.*):ssä>"r))
+ADD (@Advl) TARGET (ABBR Ela Sg) (1 ("<(.*):sta>"r)) (2 ("<(.*):sta>"r))
+ADD (@Advl) TARGET (ABBR Ela Sg) (1 ("<(.*):stä>"r)) (2 ("<(.*):stä>"r))
+ADD (@Advl) TARGET (ABBR Ill Sg) (1 ("<(.*):aan>"r)) (2 ("<(.*):aan>"r))
+ADD (@Advl) TARGET (ABBR Ill Sg) (1 ("<(.*):ään>"r)) (2 ("<(.*):ään>"r))
+ADD (@Advl) TARGET (ABBR Ade Sg) (1 ("<(.*):lla>"r)) (2 ("<(.*):lla>"r))
+ADD (@Advl) TARGET (ABBR Ade Sg) (1 ("<(.*):llä>"r)) (2 ("<(.*):llä>"r))
+ADD (@Advl) TARGET (ABBR Abl Sg) (1 ("<(.*):lta>"r)) (2 ("<(.*):lta>"r))
+ADD (@Advl) TARGET (ABBR Abl Sg) (1 ("<(.*):ltä>"r)) (2 ("<(.*):ltä>"r))
+ADD (@Advl) TARGET (ABBR All Sg) (1 ("<(.*):lle>"r)) (2 ("<(.*):lle>"r))
+##ADD ((DASH) (@1 (^ ("->"r)) ($ ("->"r)) (@2 NIL) # XXXX
+##ADD ((ABBR Nom Sg (@S @O @PC)) (@1 (NOT * ("i>"r)) (NOT * ("e>"r)) (NOT * ("ä>"r)) (NOT * ("y>"r)) (NOT * ("ö>"r)) (NOT * ("u>"r)) (NOT * ("o>"r)) (NOT * ("a>"r)) (NOT * ("I>"r)) (NOT * ("E>"r)) (NOT * ("[>"r)) (NOT * ("Y>"r)) (NOT * ("/>"r)) (NOT * ("U>"r)) (NOT * ("O>"r)) (NOT * ("A>"r)) (NOT * (":>"r)) (@2 NIL)
+ADD (@S @O @PC) TARGET (ABBR Nom Sg) (@1 (* (":kin>"r)) (2 ("<(.*)x:kin>"r))
+ADD (@Advl) TARGET (N Sg Ine) (1 ("<(.*)uksessa>"r)) (2 ("<(.*)uksessa" ("us>"r))
+ADD (@Advl) TARGET (N Sg Ine) (1 ("<(.*)yksessä>"r)) (2 ("<(.*)yksessä" ("ys>"r))
+ADD (@Advl) TARGET (N Sg Ine) (1 ("<(.*)ssa>"r)) (2 ("<(.*)ssa>"r))
+ADD (@Advl) TARGET (N Sg Ine) (1 ("<(.*)ssä>"r)) (2 ("<(.*)ssä>"r))
+ADD (@Advl) TARGET (N Sg Ela) (1 ("<(.*)sta>"r)) (2 ("<(.*)sta>"r))
+ADD (@Advl) TARGET (N Sg Ela) (1 ("<(.*)stä>"r)) (2 ("<(.*)stä>"r))
+ADD (@Advl) TARGET (N Sg Ine) (1 ("<(.*)uksella>"r)) (2 ("<(.*)uksella" ("us>"r))
+ADD (@Advl) TARGET (N Sg Ine) (1 ("<(.*)yksellä>"r)) (2 ("<(.*)yksellä" ("ys>"r))
+ADD (@Advl) TARGET (N Sg Ade) (1 ("<(.*)lla>"r)) (2 ("<(.*)lla>"r))
+ADD (@Advl) TARGET (N Sg Ade) (1 ("<(.*)llä>"r)) (2 ("<(.*)llä>"r))
+ADD (@Advl) TARGET (N Sg Ine) (1 ("<(.*)ukselta>"r)) (2 ("<(.*)ukselta" ("us>"r))
+ADD (@Advl) TARGET (N Sg Ine) (1 ("<(.*)ykseltä>"r)) (2 ("<(.*)ykseltä" ("ys>"r))
+ADD (@Advl) TARGET (N Sg Abl) (1 ("<(.*)lta>"r)) (2 ("<(.*)lta>"r))
+ADD (@Advl) TARGET (N Sg Abl) (1 ("<(.*)ltä>"r)) (2 ("<(.*)ltä>"r))
+ADD (@Advl) TARGET (N Sg Ine) (1 ("<(.*)ukselle>"r)) (2 ("<(.*)ukselle" ("us>"r))
+ADD (@Advl) TARGET (N Sg All) (1 ("<(.*)lle>"r)) (2 ("<(.*)lle>"r))
+### ADD (@S @O @PC) TARGET (N Nom Sg) (1 ("<(.*)man>"r)) (@2 NIL)
+### ADD (@S @O @PC) TARGET (N Nom Sg) (1 ("<(.*)nen>"r)) (@2 NIL)
+### ADD (@S @O @PC) TARGET (N Nom Sg) (1 ("<(.*)sson>"r)) (@2 NIL)
+### ADD (@S @O @PC) TARGET (N Nom Sg) (1 ("<(.*)stein>"r)) (@2 NIL)
+### ADD ((A Ill Pl (@Advl)) (1 ("<(.*)isiin>"r)) (2 ("<(.*)isiin" ("inen>"r))
+### ADD ((N Ill Pl (@Advl)) (1 ("<(.*)uksiin>"r)) (2 ("<(.*)uksiin" ("us>"r))
+### ADD ((N Ill Pl (@Advl)) (1 ("<(.*)yksiin>"r)) (2 ("<(.*)yksiin" ("ys>"r))
+### ADD ((N Ill Pl (@Advl)) (1 ("<(.*)eihin>"r)) (2 ("<(.*)eihin" ("i>"r))
+### ADD ((N Ill Pl (@Advl)) (1 ("<(.*)aihin>"r)) (2 ("<(.*)aihin" ("as>"r))
+### ADD ((N Ill Pl (@Advl)) (1 ("<(.*)äihin>"r)) (2 ("<(.*)äihin" ("äs>"r))
+### ADD ((N Ill Pl (@Advl)) (1 ("<(.*)oihin>"r)) (2 ("<(.*)ihin>"r))
+### ADD ((N Ill Pl (@Advl)) (1 ("<(.*)uihin>"r)) (2 ("<(.*)ihin>"r))
+### ADD ((N Ill Pl (@Advl)) (1 ("<(.*)yihin>"r)) (2 ("<(.*)ihin>"r))
+### ADD ((N Ill Sg (@Advl)) (1 ("<(.*)ukseen>"r)) (2 ("<(.*)ukseen" ("us>"r))
+### ADD ((N Ill Sg (@Advl)) (1 ("<(.*)ykseen>"r)) (2 ("<(.*)ykseen" ("ys>"r))
+### ADD ((N Ill Sg (@Advl)) (1 ("<(.*)ihin>"r)) (2 ("<(.*)hin>"r))
+### ADD ((N Ill Sg (@Advl)) (1 ("<(.*)ismiin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Ill Sg (@Advl)) (1 ("<(.*)ointiin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Ill Sg (@Advl)) (1 ("<(.*)iittiin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Ill Sg (@Advl)) (1 ("<(.*)eettiin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Ill Sg (@Advl)) (1 ("<(.*)aattiin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Ill Sg (@Advl)) (1 ("<(.*)äättiin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Ill Sg (@Advl)) (1 ("<(.*)uuttiin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Ill Sg (@Advl)) (1 ("<(.*)oottiin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Ill Sg (@Advl)) (1 ("<(.*)iinkin>"r)) (2 ("<(.*)inkin>"r))
+### ADD ((N Ill Sg (@Advl)) (1 ("<(.*)iin>"r)) (2 ("<(.*)iin>"r))
+### ADD ((N Ess Sg (@Advl)) (1 ("<(.*)uksena>"r)) (2 ("<(.*)uksena" ("us>"r))
+### ADD ((N Ess Sg (@Advl)) (1 ("<(.*)yksenä>"r)) (2 ("<(.*)yksenä" ("ys>"r))
+### ADD ((N Par Sg (@S @O @PC @<P @P> @<PN @N>)) (1 ("<(.*)usta>"r)) (2 ("<(.*)usta" ("us>"r))
+### ADD ((N Par Sg (@S @O @PC @<P @P> @<PN @N>)) (1 ("<(.*)ystä>"r)) (2 ("<(.*)ystä" ("ys>"r))
+### ADD ((N Nom Pl (@S @O @PC)) (1 ("<(.*)kset>"r)) (2 ("<(.*)kset" ("s>"r))
+### # GenITIVES
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)ksen>"r)) (2 ("<(.*)ksen" ("s>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)sen>"r)) (2 ("<(.*)sen" ("nen>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)sonin>"r)) (2 ("<(.*)sonin" ("son>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)anin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)enin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)inin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)nkin>"r)) (2 ("<(.*)nkin>"r))     # SUDBURYNKIN
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)onin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)oinnin>"r)) (2 ("<(.*)oinnin" ("ointi>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)öinnin>"r)) (2 ("<(.*)öinnin" ("öinti>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)unin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)ynin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)otin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)elin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)antin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)dtin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)ftin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)esin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)asin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)chtin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)bin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)cin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)din>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)fin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)gin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)min>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)manin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)mannin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)rin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)ttin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)ngin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)vin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)win>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)zin>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)aatin>"r)) (2 ("<(.*)aatin" ("aatti>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)eetin>"r)) (2 ("<(.*)eetin" ("eetti>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)iitin>"r)) (2 ("<(.*)iitin" ("iitti>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)ootin>"r)) (2 ("<(.*)ootin" ("ootti>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)uutin>"r)) (2 ("<(.*)uutin" ("uutti>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)yytin>"r)) (2 ("<(.*)yytin" ("yytti>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)uuden>"r)) (2 ("<(.*)uuden" ("uus>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)yyden>"r)) (2 ("<(.*)yyden" ("yys>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)in>"r)) (2 ("<(.*)in>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)en>"r)) (2 ("<(.*)n>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)än>"r)) (2 ("<(.*)n>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)yn>"r)) (2 ("<(.*)n>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)ön>"r)) (2 ("<(.*)n>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)un>"r)) (2 ("<(.*)n>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)on>"r)) (2 ("<(.*)n>"r))
+### ADD ((N Gen Sg (@S @NEC-S @NF-S @O @PC @<P @P> @N>)) (1 ("<(.*)an>"r)) (2 ("<(.*)n>"r))
+### ADD ((N Par Sg (@S @O @PC @<P @P> @<PN @N>)) (1 ("<(.*)aa>"r)) (2 ("<(.*)a>"r))
+### ADD ((N Par Sg (@S @O @PC @<P @P> @<PN @N>)) (1 ("<(.*)ea>"r)) (2 ("<(.*)a>"r))
+### ADD ((N Par Sg (@S @O @PC @<P @P> @<PN @N>)) (1 ("<(.*)oa>"r)) (2 ("<(.*)a>"r))
+### ADD ((N Par Sg (@S @O @PC @<P @P> @<PN @N>)) (1 ("<(.*)ua>"r)) (2 ("<(.*)a>"r))
+### ADD ((N Par Sg (@S @O @PC @<P @P> @<PN @N>)) (1 ("<(.*)ia>"r)) (2 ("<(.*)a>"r))
+### ADD ((N Par Sg (@S @O @PC @<P @P> @<PN @N>)) (1 ("<(.*)ää>"r)) (2 ("<(.*)ä>"r))
+### ADD ((N Par Sg (@S @O @PC @<P @P> @<PN @N>)) (1 ("<(.*)eä>"r)) (2 ("<(.*)ä>"r))
+### ADD ((N Par Sg (@S @O @PC @<P @P> @<PN @N>)) (1 ("<(.*)yä>"r)) (2 ("<(.*)ä>"r))
+### ADD ((N Par Sg (@S @O @PC @<P @P> @<PN @N>)) (1 ("<(.*)iä>"r)) (2 ("<(.*)ä>"r))
+### 
+### ADD ((ORD Num Ade Sg (@Advl @N>)) (1 ("<(.*):nnella>"r)) (2 ("<(.*):nnella>"r))
+### ADD ((ORD Num Abl Sg (@Advl @N>)) (1 ("<(.*):nnelta>"r)) (2 ("<(.*):nnelta>"r))
+### ADD ((ORD Num All Sg (@Advl @N>)) (1 ("<(.*):nnelle>"r)) (2 ("<(.*):nnelle>"r))
+### ADD ((ORD Num Ine Sg (@Advl @N>)) (1 ("<(.*):nnessa>"r)) (2 ("<(.*):nnessa>"r))
+### ADD ((ORD Num Ela Sg (@Advl @N>)) (1 ("<(.*):nnesta>"r)) (2 ("<(.*):nnesta>"r))
+### ADD ((ORD Num Ill Sg (@Advl @N>)) (1 ("<(.*):nteen>"r)) (2 ("<(.*):nteen>"r))
+### ADD ((ORD Num Ess Sg (@Advl @N>)) (1 ("<(.*):ntena>"r)) (2 ("<(.*):ntena>"r))
+### ADD ((ORD Num Tra Sg (@Advl @N>)) (1 ("<(.*):nneksi>"r)) (2 ("<(.*):nneksi>"r))
+### ADD ((ORD Num Tra Sg (@Advl @N>)) (1 ("<(.*)nneksi>"r)) (2 ("<(.*)nneksi>"r))
+### 
+### ADD ((ORD Num Ade Sg (@Advl @N>)) (1 ("<(.*):nnellä>"r)) (2 ("<(.*):nnellä>"r))
+### ADD ((ORD Num Abl Sg (@Advl @N>)) (1 ("<(.*):nneltä>"r)) (2 ("<(.*):nneltä>"r))
+### ADD ((ORD Num Ine Sg (@Advl @N>)) (1 ("<(.*):nnessä>"r)) (2 ("<(.*):nnessä>"r))
+### ADD ((ORD Num Ela Sg (@Advl @N>)) (1 ("<(.*):nnestä>"r)) (2 ("<(.*):nnestä>"r))
+### ADD ((ORD Num Ess Sg (@Advl @N>)) (1 ("<(.*):ntenä>"r)) (2 ("<(.*):ntenä>"r))
+
  
  #GENERIC Nom Sg FOR All OTHER InsTANCES
  
