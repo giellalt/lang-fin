@@ -1260,8 +1260,19 @@ SELECT PP + ("ilman") (2 Par)
 SELECT PP + ("ilman") (1 Par)
 SELECT PP + ("paitsi") (1 ETTA)
 SELECT PP + ("paitsi") (1 Punct) (2 ETTA)
-SELECT Adp + ("mukaan") (-1 Gen)
+# SELECT Adp + ("mukaan") (-1 Gen)
+# mahdollisesti ongelmallista: "tuolla menee isä, astuin sen jälkeen."  "tutustuin jänikseen ja sen jälkeen."
+
+# runoudessa: "muistan päivän sen, jälkeen eilisen". ; "sen mukaan"
+SELECT Adp (1 Gen)
+# ennen ja jälkeen päivän
 SELECT Adp (-1 Gen)
+SELECT Adv (1 ("ja")) (2 Adv) (3 Gen)
+SELECT Adv (-1 ("ja")) (-2 Adv) (1 Gen)
+# hmm..
+
+SELECT N + ("jälki") IF (-1 (V Act))
+SELECT N + ("jälki") IF (-1 Adv) (-2 (V Act))
 
 SELECT Adv (1 ETTA)
 SELECT Adv (1 Punct) (2 ETTA)
