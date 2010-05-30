@@ -7,14 +7,387 @@
 #      *******************************************
 
 
+
+# ========== #
+# Delimiters #
+# ========== #
+
 DELIMITERS = "<$\.>" "<$!>" "<$?>" "<$END-OF-SENTENCE>" "<$ENDDOC>" "<$ENDDOCHEAD>" "<$ENDHCODE>" "<$ENDHEAD>" "<$ENDTEXT>" "<$ENDTITLE>" "<$PARAG>" "<$HEAD>" "<$END-P>" "<.>" "<!>" "<?>" "<...>" "<¶>" ;
 
 # ("<$\.>" "<$!>" "<$?>") # "<$\:>"
+
+
+# ============= #
+# Tags and sets #
+# ============= #
 
 SETS
 
 LIST BOS = ">>>" "<$START-P>" "<$start-p>" ; # look at BOS/EOS
 LIST EOS = "<<<" "<$END-P>" "<$end-p>" ; 
+
+
+# Parts of speech
+# ---------------
+
+
+LIST N = N ; 
+LIST A = A ; 
+LIST Adv = Adv ; 
+LIST V = V ; 
+LIST Pron = Pron ; 
+ 
+LIST Adp = Adp ;
+
+LIST PP = PP Adv Adp;
+
+LIST C = C ; 
+LIST CMP = CMP ; 
+LIST DUMMY = DUMMY ; 
+ 
+LIST Com = Com ;
+LIST Dem = Dem ; 
+LIST Det = Det ; 
+
+# POS sub-categories
+# ------------------
+
+LIST COP = COP ; 
+
+
+# Morphosyntactic properties
+# --------------------------
+
+
+LIST Num = Num ; 
+
+LIST PE4 = PE4 ; 
+LIST PERS = PERS ; 
+
+LIST Pl = Pl Sg/Pl ; 
+LIST Pl1 = Pl1 ; 
+LIST Pl3 = Pl3 ; 
+LIST Pl123 = Pl1 Pl2 Pl3 ; 
+
+LIST Nom = Nom ; 
+LIST Ade = Ade ; 
+LIST Gen = Gen ; 
+LIST Part = Part ;
+LIST Ela = Ela ; 
+LIST Ess = Ess ; 
+LIST Ill = Ill ; 
+LIST Ine = Ine ; 
+LIST Tra = Tra ; 
+LIST Ins = Ins ; 
+
+LIST MINEN = minen ;
+
+LIST Prop = Prop ; 
+LIST Pass = Pass ; 
+
+LIST Sg = Sg Sg/Pl ; 
+LIST Sg1 = Sg1 ; 
+LIST Sg2 = Sg2 ; 
+LIST Sg3 = Sg3 ; 
+LIST Sg123 = Sg1 Sg2 Sg3 ; 
+LIST Sg12Pl12Pass = Sg1 Sg2 Pl1 Pl2 Pass ; 
+
+
+LIST INTERR = INTERR ; 
+LIST INTERR-KO = INTERR KO ; 
+
+# Noun Case sets
+# --------------
+
+LIST Gen/Par = Gen Par ; 
+LIST Gen/Par/Acc = Gen Par Acc ; 
+LIST Gen/Punct = Gen Punct ; 
+LIST Ela/Abl = Ela Abl ; 
+LIST Ela/Tra/Ill/All = Ela Tra Ill All ; 
+LIST LOC-CASE = Ine Ela Ill Ade Abl All ; 
+
+
+LIST Ill/All = Ill All ; 
+LIST Ill/Tra = Ill Tra ; 
+LIST Ill/Tra/All = Ill Tra All ; 
+
+LIST Nom/Gen/Par = Nom Gen Par ; 
+LIST Nom/Par = Nom Par ; 
+
+LIST NONSUBJECT-CASE = Ess Tra Ine Ela Ill Ade Abl All Abe Com Ins ; 
+LIST NOT-Gen-CASE = Nom Par Ine Ela Ill Ade Abl All Ess Tra Abe Com Ins ; 
+LIST Par = Par ; 
+LIST Par/Gen = Par Gen ; 
+LIST Par/Punct = Par Punct ; 
+LIST INT-LOC = Ine Ela Ill ; 
+LIST EXT-LOC = Ade Abl All ; 
+LIST Gen/Num = Gen Num <DIGIT> ; 
+
+
+
+# Verbal Properties 
+# -------------------
+
+LIST Neg = Neg ; 
+
+LIST NEGV = NEGV ; 
+
+LIST Prs = Prs ; 
+LIST Prt = Prt ; 
+LIST PCP = PrfPrc PrsPrc ; 
+LIST AgPcp = AgPcp ; 
+LIST PrsPrc = PrsPrc ; 
+LIST PrfPrc = PrfPcp ; # nut / PrfPcp
+LIST PrsPrc = PrsPrc ; # va / PrsPrc
+
+LIST Prs/Prt = Prs Prt ; 
+LIST PrsPrc/Inf3/Inf2/REF/TEMP = PrsPrc Inf3 Inf2 REF TEMP ; 
+
+LIST Imp = Imp ; 
+
+LIST Inf1 = Inf1 IInf; 
+LIST Inf2 = IIInf Inf2 ;
+LIST Inf3 = Inf3 ; 
+
+LIST Inf123 = Inf1 Inf2 Inf3 ; 
+LIST Inf1/3 = Inf1 Inf3 ; 
+
+LIST InfV = Inf1 Inf2 Inf3 PrfPrc PrsPrc ; 
+
+LIST ABBR = ABBR ; 
+LIST Abe = Abe ; 
+LIST Abl = Abl ; 
+LIST Act = Act ;
+LIST ACT = ACT ;
+LIST AD = AD ; 
+
+
+# Derivation
+# ----------
+
+LIST DA-US = DA-US ; 
+
+LIST DV-TTA = DV-TTA ; 
+LIST DV-US = DV-US ; 
+
+LIST DER = DA-UUS DA-US DN-IneN DN-LAIneN DN-LLIneN DN-UUS DN-MINEN Der/minen Der/u ;
+LIST DV = DV-MINEN DV-US DV-NTA DV-TTA ; 
+
+
+# Phrasal groups
+# --------------
+
+LIST AD/PCP = AD PrfPrc PrsPrc ; 
+LIST AD-A = AD-A ; 
+LIST A-A/N = A A/N ; 
+LIST A-A/N-PCP = A A/N PrfPrc PrsPrc ; 
+LIST A-A/N-Q = A A/N Q ;   # HIEMAN, HIUKAN 
+LIST A/AD-A = A A/N AD-A AD ; 
+LIST A/AD-A/Q = A A/N AD-A AD Q ; 
+LIST A/Adv = A A/N Adv ; 
+LIST A/Adv/PCP/Det/Q = A Adv PrfPrc PrsPrc Det Q ; 
+LIST A/Gen = A Gen ; 
+LIST A/N = A N A/N ; 
+LIST A/N/Q/Pron = A N Q Pron A/N ; 
+LIST A/N/Q/Pron/PCP/Num = A N Q Pron A/N PrfPrc PrsPrc Num ; 
+LIST A/Num/Pron/Q = A Num Pron Q ; 
+LIST A/Q/Pron = A Q Pron A/N ; 
+LIST A/Q/Pron/PCP = A Q Pron A/N PrfPrc PrsPrc AgPcp ;  # dv-ma added 23.1.2001 
+LIST A/Q/Pron/Num = A Q Pron A/N AgPcp Num ;
+LIST A/Q/Pron/PCP/Num = A Q Pron A/N PrfPrc PrsPrc AgPcp Num ; 
+LIST A/PCP = A PrfPrc PrsPrc ;
+LIST Adv/Pl = Adv Pl ; 
+
+LIST C/Adv = C Adv ; 
+LIST C-Adv-ETC = C Adv BOS "<$\,>" "olla" ; 
+LIST CAP/NOCAP = CAP NOCAP ; 
+
+LIST N-A/N = N A/N ; 
+LIST N/ABBR = N ABBR ; 
+LIST N/Num = N Num ; 
+LIST N/Pron = N Pron ; 
+LIST N/Pron/Q = N Pron Q ; 
+LIST N/Pron/Q/A/Num = N Pron Q A Num ; 
+LIST N/V/A/Pron/Q = N V A A/N Pron Q ; 
+LIST N/Pron/A/N = N Pron A/N ; 
+LIST N/Pron/Q/V/SUP = N Pron Q V SUP ; 
+
+
+LIST Ela-POSP = "asti" "huolimatta" ; 
+LIST Ela-PREP = "huolimatta" ; 
+
+LIST NomHEAD = N Pron Num ; 
+LIST NomINAL-FORM = Inf1 Inf2 Inf3 PrfPrc PrsPrc ; 
+
+LIST V-Pl = Pl1 Pl2 Pl3 ; 
+LIST V-Sg = Sg1 Sg2 Sg3 ; 
+LIST VFIN = Prs Prt COND POTN NEGV Imp ; 
+LIST VFIN-C = Prs Prt COND POTN NEGV Imp C ; 
+LIST VFIN-C-MYOS = Prs Prt COND POTN NEGV Imp C "myös" ; 
+LIST VFIN-PCP = Prs Prt COND POTN NEGV Imp PrfPrc PrsPrc ; 
+LIST VFIN/PrsPrc = Prt Prs COND POTN PrsPrc ; 
+LIST VFIN/PrsPrc/Inf = Prt Prs COND POTN PrsPrc Inf1 Inf2 Inf3 REF TEMP ; 
+LIST VFIN-SgPl12 = Sg1 Sg2 Pl1 Pl2 ; 
+
+# Word lists
+# ----------
+
+LIST AD-HYVIN = "aikaisin" "alas" "alhaalla" "alhaalta" "alhaalle" "harvoin"  "hiljaa" "kauan" "kauas" "kaukaa" "kaukana" "paljon" "pian" "sekaisin"  "tarkoin" "suoraan" "usein" "varhain" "yksin" "mielellään" "vähän"  "lähellä" "läheltä" "lähelle" "myöhään" ; 
+LIST AD-MILTEI = "kokonaan" "hiljaa" "suoraan" "yksin" "sekaisin" "tyystin" "täysin" ; 
+LIST AD-PALJON = "aika" "erittäin" "ihan" "hyvin" "kovin" "kyllin" "liian"  "melko" "niin" "noin" "näin" "perin" "sangen" "varsin" "ylen"  "yhtä" "jokseenkin" "kylliksi" "tarpeeksi" "vallan" "kuinka"  "miten" "oikein" ; 
+LIST AD+PrfPrc = "ailahdella" "arveluttaa" "haastaa" "haavoittua" "houkutella" "huomata" "huvittaa" "ilahduttaa" "kannattaa" "raivostua" "kattaa" "kiehtoa" "kiinnostaa" "kunnioittaa" "kuulua" "kuvata" "laskelmoida" "luottaa" "luvata" "mahtailla" "mullistaa" "painaa" "paljastaa" "rasittaa" "rohkaista" "sopia" "taitaa" "valaista"  "vaatia" "vaihdella" "vakuuttaa" "uhata" "toivoa" "suositella" "suoda" "tarttua" "tavoitella" "merkitä" "uskoa" "valittaa" "luulla" "yllättää" "tuomita" ; 
+LIST AD+PrsPrc = "alistaa" "ansaita" "arvostaa" "hallita" "hermostua" "huolestua" "innostua" "kiinnostua" "kiusaantua" "kokea" "loukkaantua" "masentua" "pelkistää" "pettyä" "pitää" "hillitä" "rajoittaa" "saastua" "suosia" "tyrmistyä" "vaivautua" "vakuuttua" ; 
+LIST ADSET = "hyvin" "melko" "melkein" "kovin" "niin" "näin" ; 
+LIST AIKA = "aika" ; 
+LIST AIVAN-IHAN = "aivan" "ihan" "melkein" ; 
+LIST ALETA = "aleta" ; 
+LIST All = All ; 
+LIST All-POSP = "asti" ; 
+LIST ASIA = "asia" ; 
+LIST ASTI = "asti" "saakka" ; 
+LIST ASTUA = "astua" ; 
+LIST AUX-S = "itse" "kaikki" "kumpikin" "molemmat" ; 
+LIST AVOSYLIN = "avo_syli" ; 
+LIST Gen-PREP = "yli" "läpi" ; 
+LIST Gen-WORD = "metri" "milli_metri" "kilo_metri" "vuosi" "päivä" "kuu_kausi"  "minuutti" "sekunti" "tunti" "vuoro_kausi" "maa" "prosentti" "paras" "markka"  "penni" "dollari" "kruunu" "henkilö" "kierros" "maa" "maisema" "uutinen" "tienoo" ;
+LIST HARVA = "harva" "kumpikin" "suora" ; 
+LIST HARVA-SET = "asua" "tahti" "hammas" "verkko" "pensaikko" "asutus" ; 
+LIST HITTO = INTJ "hitto" "herra_jumala" "kuinka" "sinä" "te" "<\!>"  "hellanlettas" "saatana" "perkele" "vittu" "voi" ; 
+LIST HYVA = "hyvä" ; 
+LIST HYVA/HUONO = "hyvä" "huono" "ikävä" "kiva" "mukava" "hauska" "järkevä"  "vaikea" "helppo" "mahdollinen" "mahdoton" "tärkeä" "hankala"  "aiheellinen" "tarpeellinen" "välttämätön" ; 
+LIST HYVANSA = "hyvänsä" ; 
+LIST HYVIN-1 = "hyvin" ; 
+LIST HYVIN = "aikaisin" "alas" "alhaalla" "alhaalta" "alhaalle" "harvoin" "hiljaa" "kauan" "kauas" "kaukaa" "kaukana" "paljon" "pian" "sekaisin" "tarkoin" "suoraan" "usein" "varhain" "yksin" "mielellään" "vähän" "lähellä" "läheltä" "lähelle" "hyvin" "tyystin" "kovin" "monasti" "paljon" "usein" "ylhäällä" "usea" "harva" "moni" "monta" "kovaa" "hiljaa" "täynnä" ; 
+LIST Ill-POSP = "asti" ; 
+LIST Ill-VERB = "vaikuttaa" "rientää" "siirtää" "siirtyä" "pyytää" "tuoda" ; 
+LIST Inf1-VERB = "alkaa" "haluta" "tahtoa" "yrittää" "päättää" "saada" "voida"  "täytyä" "sallia" "luvata" "aikoa" "meinata" "pitää" "sietää" "tulla"  "tarvita" "viitsiä" "antaa" "muistaa" "unohtaa" "saattaa" "uskaltaa"  "pelätä" "kannattaa" "mahtaa" ; 
+LIST ITSE = "itse" ; 
+LIST JALKEEN = "jälkeen" ; 
+LIST JOHDOSTA = "johdosta" ; 
+LIST JOKA = "joka" ; 
+LIST JOKIN = "jokin" ; 
+LIST JOS/KUN/KOSKA/VAIKKA = "jos" "kun" "koska" "vaikka" ; 
+LIST JOS/VAIKKA = "jos" "vaikka" ; 
+LIST JUURI = "juuri" "koko" ; 
+LIST KAIKKI = "kaikki" ; 
+LIST KAIKKIAAN = "kaikkiaan" ; 
+LIST KANSSA = "kanssa" ; 
+LIST KAUPPA = "kauppa" ; 
+LIST KAUTTA = "kautta" ; 
+LIST KELLO = "kello" "klo" ; 
+LIST KERRAN = "kerta" ; # NB KERRAN NOT YET Adv IN FINTWOL ; 
+LIST KERTA = "kerta" "tapaus" "paikka" "puoli" "suhde" "suunta" "ainoa" "ikinen" "käänne" "lähtö" ; 
+LIST KESKUSTA = "keskusta" ; 
+LIST KIELI = "kieli" "virka_kieli" "kieli_muoto" "kieli_kunta" "kieli_kohtainen" "suku_kieli" "kieli_perhe" "opiskelu" "opiskella" "opettaa" "opetus" "tyttö_koulu" "poika_koulu" "hallinto_kieli" "yli_opisto" "korkea_koulu" "perus_koulu" "koulu" "opetus_ohjelma" ; 
+LIST KO = KO ; 
+LIST KOKO = "koko" ; 
+LIST KOOTA = "koota" "haluta" "siirtää" "siirtyä" "tulla" "mennä" "ottaa" "vetää" "sijoittaa" "majoittaa" "muuttaa" ; 
+LIST KUIN = "kuin" ; 
+LIST KUINKA-MITEN-MIllOIN = "kuinka" "miten" "milloin" ; 
+LIST KYSY = "kysyä" "kysymys" "tiedustelu" "tiedustella" KO ; 
+LIST LAIllA = "lailla" ; 
+LIST MAANANTAI = "maanantai" "tiistai" "keskiviikko" "torstai" "perjantai"  "lauantai" "sunnuntai" ; 
+LIST LIIAN = "liian" ; 
+LIST LUKU = "num-luku" ; 
+LIST MAKSAA = "maksaa" "tuntua" ; 
+LIST ME = "me" ; 
+LIST MENNA = "mennä" ; 
+LIST MIELI = "mieli" ; 
+LIST MIKA-KUKA = "mikä" "kuka" ; 
+LIST MINA = "minä" ; 
+LIST MITTAIneN = "mittainen" "pituinen" "kokoinen" "oloinen" "tuntuinen" "näköinen" "painoinen" "kaltainen" "tapainen" "mukainen" "sorttinen" ; 
+LIST MUKAIneN = "mukainen" "tuntuinen" "oloinen"  ; 
+LIST MYOS = "myös" ; 
+LIST NAIN = "näin" ; 
+LIST NEG-AMBIGUOUS = "niittää" "muuttaa" "kerrata" "he" ; 
+LIST NES = "pitää" "täytyä" "täytyy" "tulla" "pakko" ; 
+LIST NIIN = "niin" ; 
+LIST NIIN-YHA = "niin" "yhä" "yli" "ylitse" "mitä" ; 
+LIST NIIN-NOIN-NAIN = "niin" "noin" "näin" ; 
+LIST NOUN+Inf1 = "halu" "tahto" "yritys" "päätös" "lupa" "aikomus" "tarve" "alttius" "tavoite" "oikeus" "mahdollisuus" "velvollisuus" "valmius" "ajatus" "tarkoitus" "syy" "tapa" "määrä" "pyrkimys" "pakko" "kyky" "taito" "vara" "hanke" "vastentahtoisuus" "keino" "aika" ; 
+LIST NOUN-OF-MEASURE = "kilo" "metri" "litra" "osa" "pala" ; 
+LIST OLLA = "olla" ; 
+LIST OLLA/TULLA = "olla" "tulla" ; 
+LIST OMIEN = "oma" "kirja" "asia" ; 
+LIST OTTAA = "ottaa" ; 
+LIST OTTAA-2 = "ottaa" "omaksua" "liittää" "antaa" "siirtyä" ; 
+LIST OTTAA/KELVATA = "ottaa" "kelvata" ; 
+LIST PAATTYA = "päättyä" "loppua" "johtaa" ; 
+LIST PARI/PUOLI = "pari" "puoli" ; 
+LIST PAASTA = "laskea" "sijoittaa" "antaa" "sallia" "tunkeutua" ; 
+LIST PALJON = "paljon" "vähän" "jonkin=verran" ; 
+LIST PALJON-MONI = "paljon" "vähän" "moni" "usea" "harva" "hyvin" "oikein" "väärin" "kovin" "tarpeeksi" ; 
+LIST PANNA = "panna" "arpi" "sakka" ; 
+LIST PERSPl123 = "me" "te" "he" ; 
+LIST PIENIA/ELAA = "pieniä" "elää" "omata" "juuria" ; 
+LIST POIKA = "poika" "mies" "veijari" "elämä" "tapa" ; 
+LIST POSS-DEL-V = "pitää" "saada" "tehdä" "menettää" "kestää" "pitää" "ummistaa" "kantaa" ; 
+LIST POSS-NomSg = "surma" "paikka" "kaikki" "merkitys" "aika" "pinta" "silmä" "vastuu" ; 
+LIST POSS-NomPl = "kaikki" "aika" ; 
+LIST PUHUA = "puhua" "käyttää" "kirjoittaa" ; 
+LIST PUOLA = "puola" ; 
+LIST PUOLI = "puoli" ; 
+LIST PUOLI-KOKO-OSA = "puoli" "koko" "osa" ; 
+LIST SAADA = "saada" ; 
+LIST SAAPUA = "saapua" ; # CLASH SAAPUA/SAAVUTTAA, I.E. ACT/PASS  ; 
+LIST SANOA = "sanoa" ; 
+LIST SE = "se" ; 
+LIST SEITSEMAN = "seitsemän" "kahdeksan" "yhdeksän" "kymmenen" ; 
+LIST SIIRTYA-TULLA-JOUTUA = "siirtyä" "tulla" "joutua" "siirtää" "sijoittaa" ; 
+LIST TAHANSA/VAIN = "tahansa" "vain" "hyvänsä" "mikä" "mikäkin" "missäkin" "kulloinkin" ; 
+LIST TAHANSA-2 = "tahansa" "hyvänsä" ; 
+LIST TAI = "tai" "tahi" "taikka" ; 
+LIST TAllAIneN = Num Pron Det "tällainen" "sellainen" "semmoinen" ; 
+LIST TALVIneN = "kesäinen" "keväinen" "syksyinen" "talvinen" ; 
+LIST TAMA = "tämä" ; 
+LIST TARVITA = "tarvita" "pitää" ; 
+LIST TE = "te" ; 
+LIST TIETAA = "tietää" "kysyä" "tiedustella" ; 
+LIST TILANNE = "tilanne" "kuusi" ; 
+LIST TIME-WORD = "tunti" "viikko" "kuu_kausi" "vuosi" "vuosi_kymmen" "vuosi_sata" "kausi" "kesä" "talvi" "syksy" "kevät" "hetki" "minuutti" "sekunti" "aamu" "ilta" "päivä" "ilta_päivä" "arki_aamu" "arki_päivä" "kesä_aamu" "maanantai" "tiistai" "keski_viikko" "torstai" "perjantai" "lauantai" "sunnuntai" "yö" ; 
+LIST TOSI = "tosi" ;
+LIST TULI = "tuli" "voi" "jätti" "myy" ; 
+LIST TULLA = "tulla" ; 
+LIST TULLA/SAADA = "tulla" "saada" ; 
+LIST TULOS = "tulos" ; 
+LIST TUO = "tuo" ; 
+LIST UUSIA = "uusia" "pieniä" ; # AS A REPrsENTATIVE OF V/A -AMB 
+LIST VAIKKA/KUIN/JOS = "vaikka" "kuin" "jos" "ties" ; 
+LIST VAllAN = "vallan" ; 
+LIST VAllAN-WDS = "saada" "poliittinen" "taloudellinen" "presidentti" "edus_kunta" "kuningas" "anastaa" "pitää" "joutua" "alistaa" "alla" "ottaa" "antaa" "luovuttaa" ; 
+LIST VERRAN = "verta" ; 
+LIST VIIME = "viime" "ensi" "vuosi" ; 
+LIST VIREIllA = "vireillä" ; 
+LIST VOI = "voida" ; 
+LIST VOIMA = "voima" ; 
+LIST VUOSI = "vuosi" "kausi" "kevät_kausi" "syys_kausi" "kesä_kausi" "talvi_kausi" "alku_kausi" "loppu_kausi" ; 
+LIST VUO/VOI = "vuo" "voi" ; 
+LIST YKSI = "yksi" ; 
+LIST YLI/AllE = "yli" "alle" ; 
+LIST YLLATTAA = "yllättää" ; 
+LIST EHTA = "ehta" "normaalinen" "lehtinen" "koti-ikävä" ; 
+LIST ELAMA/KUOLEMA = "elämä" "kuolema" "voima" "taantuma" ; 
+LIST ELAVA-SELVA = "elää" "elävä" "selvä" ; 
+LIST ENEM-VAHEM = "enemmän" "vähemmän" "tarpeeksi" ; 
+LIST ENEMMAN = "enemmän" ; 
+LIST ENNEN = "ennen" ; 
+LIST ERI = "eri" ; 
+LIST ESIM = "esimerkiksi" ; 
+LIST ETTA = "että" ; 
+
+
+
+# Punctuation 
+# -----------
+
+LIST COLON = "<$\:>" ; 
+LIST ComMA = "<$\,>" Punct ; 
+LIST ComMA/N/Pron/Q = "<$\,>" N Pron Q ; 
+LIST ComMA/N/Pron/Q/V/SUP/BOS = "<$\,>" N Pron Q V SUP BOS "kuin" ; 
+
+
+# Things to sort
+# --------------
 
 LIST <COERCE!> = <COERCE!> ; 
 LIST UP = UP ; 
@@ -45,257 +418,34 @@ LIST <Tulos> = <Tulos> ;
 LIST <YEAR> = <YEAR> ; 
 LIST ? = "<$\?>" ; 
 LIST ?! = "<$\?>" "<$\!>" ; 
-LIST A = A ; 
-LIST A-A/N = A A/N ; 
-LIST A-A/N-PCP = A A/N PrfPrc PrsPrc ; 
-LIST A-A/N-Q = A A/N Q ;   # HIEMAN, HIUKAN 
-LIST A/AD-A = A A/N AD-A AD ; 
-LIST A/AD-A/Q = A A/N AD-A AD Q ; 
-LIST A/Adv = A A/N Adv ; 
-LIST A/Adv/PCP/Det/Q = A Adv PrfPrc PrsPrc Det Q ; 
-LIST A/Gen = A Gen ; 
-LIST A/N = A N A/N ; 
-LIST A/N/Q/Pron = A N Q Pron A/N ; 
-LIST A/N/Q/Pron/PCP/Num = A N Q Pron A/N PrfPrc PrsPrc Num ; 
-LIST A/Num/Pron/Q = A Num Pron Q ; 
-LIST A/Q/Pron = A Q Pron A/N ; 
-LIST A/Q/Pron/PCP = A Q Pron A/N PrfPrc PrsPrc AgPcp ;  # dv-ma added 23.1.2001 
-LIST A/Q/Pron/Num = A Q Pron A/N AgPcp Num ;
-LIST A/Q/Pron/PCP/Num = A Q Pron A/N PrfPrc PrsPrc AgPcp Num ; 
-LIST A/PCP = A PrfPrc PrsPrc ; 
-LIST ABBR = ABBR ; 
-LIST Abe = Abe ; 
-LIST Abl = Abl ; 
-LIST Act = Act ;
-LIST ACT = ACT ;
-LIST AD = AD ; 
-LIST AD/PCP = AD PrfPrc PrsPrc ; 
-LIST AD-A = AD-A ; 
-LIST AD-HYVIN = "aikaisin" "alas" "alhaalla" "alhaalta" "alhaalle" "harvoin"  "hiljaa" "kauan" "kauas" "kaukaa" "kaukana" "paljon" "pian" "sekaisin"  "tarkoin" "suoraan" "usein" "varhain" "yksin" "mielellään" "vähän"  "lähellä" "läheltä" "lähelle" "myöhään" ; 
-LIST AD-MILTEI = "kokonaan" "hiljaa" "suoraan" "yksin" "sekaisin" "tyystin" "täysin" ; 
-LIST AD-PALJON = "aika" "erittäin" "ihan" "hyvin" "kovin" "kyllin" "liian"  "melko" "niin" "noin" "näin" "perin" "sangen" "varsin" "ylen"  "yhtä" "jokseenkin" "kylliksi" "tarpeeksi" "vallan" "kuinka"  "miten" "oikein" ; 
-LIST AD+PrfPrc = "ailahdella" "arveluttaa" "haastaa" "haavoittua" "houkutella" "huomata" "huvittaa" "ilahduttaa" "kannattaa" "raivostua" "kattaa" "kiehtoa" "kiinnostaa" "kunnioittaa" "kuulua" "kuvata" "laskelmoida" "luottaa" "luvata" "mahtailla" "mullistaa" "painaa" "paljastaa" "rasittaa" "rohkaista" "sopia" "taitaa" "valaista"  "vaatia" "vaihdella" "vakuuttaa" "uhata" "toivoa" "suositella" "suoda" "tarttua" "tavoitella" "merkitä" "uskoa" "valittaa" "luulla" "yllättää" "tuomita" ; 
-LIST AD+PrsPrc = "alistaa" "ansaita" "arvostaa" "hallita" "hermostua" "huolestua" "innostua" "kiinnostua" "kiusaantua" "kokea" "loukkaantua" "masentua" "pelkistää" "pettyä" "pitää" "hillitä" "rajoittaa" "saastua" "suosia" "tyrmistyä" "vaivautua" "vakuuttua" ; 
-LIST Ade = Ade ; 
-LIST ADSET = "hyvin" "melko" "melkein" "kovin" "niin" "näin" ; 
-LIST Adv = Adv ; 
-LIST Adv/Pl = Adv Pl ; 
-LIST AIKA = "aika" ; 
-LIST AIVAN-IHAN = "aivan" "ihan" "melkein" ; 
-LIST ALETA = "aleta" ; 
-LIST All = All ; 
-LIST All-POSP = "asti" ; 
-LIST ASIA = "asia" ; 
-LIST ASTI = "asti" "saakka" ; 
-LIST ASTUA = "astua" ; 
-LIST AUX-S = "itse" "kaikki" "kumpikin" "molemmat" ; 
-LIST AVOSYLIN = "avo_syli" ; 
-LIST C = C ; 
-LIST CAP/NOCAP = CAP NOCAP ; 
-LIST C/Adv = C Adv ; 
-LIST C-Adv-ETC = C Adv BOS "<$\,>" "olla" ; 
+
+
 LIST CLB? = BOS EOS "<$\:>" "<$\#>" "<$\(>" "<$\>" "<$\'>" "<$\">" "<$\,>" Rel "<$->" "kuinka" "miten" "milloin" "-" C KO Punct ; 
 LIST CLB?-C = BOS EOS "<$\:>" "<$\#>" "<$\(>" "<$\>" "<$\'>" "<$\">" "<$\,>"  "<$->" ; 
 LIST CLB?/Neg = BOS EOS "<$\:>" "<$\#>" "<$\(>" "<$\>" "<$\'>" "<$\">" "<$\,>"  C Neg ; 
-LIST CMP = CMP ; 
 LIST CMP-ENNEN = CMP "ennen" ; 
 LIST CMP/SUP = CMP SUP ; 
-LIST COLON = "<$\:>" ; 
-LIST Com = Com ; 
-LIST ComMA = "<$\,>" Punct ; 
-LIST ComMA/N/Pron/Q = "<$\,>" N Pron Q ; 
-LIST ComMA/N/Pron/Q/V/SUP/BOS = "<$\,>" N Pron Q V SUP BOS "kuin" ; 
-LIST COP = COP ; 
 LIST COND = COND ; 
-LIST DA-US = DA-US ; 
-LIST Dem = Dem ; 
-LIST DER = DA-UUS DA-US DN-IneN DN-LAIneN DN-LLIneN DN-UUS DN-MINEN Der/minen Der/u ;
-LIST Det = Det ; 
-LIST DUMMY = DUMMY ; 
-LIST DV = DV-MINEN DV-US DV-NTA DV-TTA ; 
-LIST AgPcp = AgPcp ; 
-LIST DV-TTA = DV-TTA ; 
-LIST DV-US = DV-US ; 
-LIST EHTA = "ehta" "normaalinen" "lehtinen" "koti-ikävä" ; 
-LIST Ela = Ela ; 
-LIST Ela-POSP = "asti" "huolimatta" ; 
-LIST Ela-PREP = "huolimatta" ; 
-LIST Ela/Abl = Ela Abl ; 
-LIST Ela/Tra/Ill/All = Ela Tra Ill All ; 
-LIST ELAMA/KUOLEMA = "elämä" "kuolema" "voima" "taantuma" ; 
-LIST ELAVA-SELVA = "elää" "elävä" "selvä" ; 
-LIST ENEM-VAHEM = "enemmän" "vähemmän" "tarpeeksi" ; 
-LIST ENEMMAN = "enemmän" ; 
-LIST ENNEN = "ennen" ; 
-LIST ERI = "eri" ; 
-LIST ESIM = "esimerkiksi" ; 
-LIST Ess = Ess ; 
-LIST ETTA = "että" ; 
-LIST EXT-LOC = Ade Abl All ; 
-LIST Gen = Gen ; 
-LIST Gen/Num = Gen Num <DIGIT> ; 
-LIST Gen-PREP = "yli" "läpi" ; 
-LIST Gen-WORD = "metri" "milli_metri" "kilo_metri" "vuosi" "päivä" "kuu_kausi"  "minuutti" "sekunti" "tunti" "vuoro_kausi" "maa" "prosentti" "paras" "markka"  "penni" "dollari" "kruunu" "henkilö" "kierros" "maa" "maisema" "uutinen" "tienoo" ; 
-LIST Gen/Par = Gen Par ; 
-LIST Gen/Par/Acc = Gen Par Acc ; 
-LIST Gen/Punct = Gen Punct ; 
-LIST HARVA = "harva" "kumpikin" "suora" ; 
-LIST HARVA-SET = "asua" "tahti" "hammas" "verkko" "pensaikko" "asutus" ; 
-LIST HITTO = INTJ "hitto" "herra_jumala" "kuinka" "sinä" "te" "<\!>"  "hellanlettas" "saatana" "perkele" "vittu" "voi" ; 
-LIST HYVA = "hyvä" ; 
-LIST HYVA/HUONO = "hyvä" "huono" "ikävä" "kiva" "mukava" "hauska" "järkevä"  "vaikea" "helppo" "mahdollinen" "mahdoton" "tärkeä" "hankala"  "aiheellinen" "tarpeellinen" "välttämätön" ; 
-LIST HYVANSA = "hyvänsä" ; 
-LIST HYVIN-1 = "hyvin" ; 
-LIST HYVIN = "aikaisin" "alas" "alhaalla" "alhaalta" "alhaalle" "harvoin" "hiljaa" "kauan" "kauas" "kaukaa" "kaukana" "paljon" "pian" "sekaisin" "tarkoin" "suoraan" "usein" "varhain" "yksin" "mielellään" "vähän" "lähellä" "läheltä" "lähelle" "hyvin" "tyystin" "kovin" "monasti" "paljon" "usein" "ylhäällä" "usea" "harva" "moni" "monta" "kovaa" "hiljaa" "täynnä" ; 
-LIST Ill = Ill ; 
-LIST Ill/All = Ill All ; 
-LIST Ill/Tra = Ill Tra ; 
-LIST Ill/Tra/All = Ill Tra All ; 
-LIST Ill-POSP = "asti" ; 
-LIST Ill-VERB = "vaikuttaa" "rientää" "siirtää" "siirtyä" "pyytää" "tuoda" ; 
-LIST Imp = Imp ; 
-LIST Ine = Ine ; 
-LIST Inf1 = Inf1 IInf; 
-LIST Inf2 = IIInf Inf2 ;
-LIST Inf123 = Inf1 Inf2 Inf3 ; 
-LIST Inf1/3 = Inf1 Inf3 ; 
-LIST Inf1-VERB = "alkaa" "haluta" "tahtoa" "yrittää" "päättää" "saada" "voida"  "täytyä" "sallia" "luvata" "aikoa" "meinata" "pitää" "sietää" "tulla"  "tarvita" "viitsiä" "antaa" "muistaa" "unohtaa" "saattaa" "uskaltaa"  "pelätä" "kannattaa" "mahtaa" ; 
-LIST Inf3 = Inf3 ; 
-LIST InfV = Inf1 Inf2 Inf3 PrfPrc PrsPrc ; 
-LIST Ins = Ins ; 
-LIST INT-LOC = Ine Ela Ill ; 
-LIST INTERR = INTERR ; 
-LIST INTERR-KO = INTERR KO ; 
+
+
 LIST INTG = INTG ; 
 LIST INTJ = INTJ ; 
-LIST ITSE = "itse" ; 
-LIST JALKEEN = "jälkeen" ; 
-LIST JOHDOSTA = "johdosta" ; 
-LIST JOKA = "joka" ; 
-LIST JOKIN = "jokin" ; 
-LIST JOS/KUN/KOSKA/VAIKKA = "jos" "kun" "koska" "vaikka" ; 
-LIST JOS/VAIKKA = "jos" "vaikka" ; 
-LIST JUURI = "juuri" "koko" ; 
-LIST KAIKKI = "kaikki" ; 
-LIST KAIKKIAAN = "kaikkiaan" ; 
-LIST KANSSA = "kanssa" ; 
-LIST KAUPPA = "kauppa" ; 
-LIST KAUTTA = "kautta" ; 
-LIST KELLO = "kello" "klo" ; 
-LIST KERRAN = "kerta" ; # NB KERRAN NOT YET Adv IN FINTWOL ; 
-LIST KERTA = "kerta" "tapaus" "paikka" "puoli" "suhde" "suunta" "ainoa" "ikinen" "käänne" "lähtö" ; 
-LIST KESKUSTA = "keskusta" ; 
-LIST KIELI = "kieli" "virka_kieli" "kieli_muoto" "kieli_kunta" "kieli_kohtainen" "suku_kieli" "kieli_perhe" "opiskelu" "opiskella" "opettaa" "opetus" "tyttö_koulu" "poika_koulu" "hallinto_kieli" "yli_opisto" "korkea_koulu" "perus_koulu" "koulu" "opetus_ohjelma" ; 
-LIST KO = KO ; 
-LIST KOKO = "koko" ; 
-LIST KOOTA = "koota" "haluta" "siirtää" "siirtyä" "tulla" "mennä" "ottaa" "vetää" "sijoittaa" "majoittaa" "muuttaa" ; 
-LIST KUIN = "kuin" ; 
-LIST KUINKA-MITEN-MIllOIN = "kuinka" "miten" "milloin" ; 
-LIST KYSY = "kysyä" "kysymys" "tiedustelu" "tiedustella" KO ; 
-LIST LAIllA = "lailla" ; 
-LIST LOC-CASE = Ine Ela Ill Ade Abl All ; 
-LIST LIIAN = "liian" ; 
-LIST LUKU = "num-luku" ; 
-LIST MAANANTAI = "maanantai" "tiistai" "keskiviikko" "torstai" "perjantai"  "lauantai" "sunnuntai" ; 
 LIST MAINV = Prs Prt Imp ; 
 LIST MAINV/CLB? = Prs Prt Imp BOS EOS "<$\:>" "<$\#>" "<$\(>" "<$\>" "<$\'>" "<$\">" "<$\,>" c ; 
-LIST MAKSAA = "maksaa" "tuntua" ; 
 LIST MAN = MAN ; 
-LIST ME = "me" ; 
-LIST MENNA = "mennä" ; 
-LIST MIELI = "mieli" ; 
-LIST MIKA-KUKA = "mikä" "kuka" ; 
-LIST MINA = "minä" ; 
-LIST MITTAIneN = "mittainen" "pituinen" "kokoinen" "oloinen" "tuntuinen" "näköinen" "painoinen" "kaltainen" "tapainen" "mukainen" "sorttinen" ; 
-LIST MUKAIneN = "mukainen" "tuntuinen" "oloinen"  ; 
-LIST MYOS = "myös" ; 
-LIST N = N ; 
-LIST N-A/N = N A/N ; 
-LIST N/ABBR = N ABBR ; 
-LIST N/Num = N Num ; 
-LIST N/Pron = N Pron ; 
-LIST N/Pron/Q = N Pron Q ; 
-LIST N/Pron/Q/A/Num = N Pron Q A Num ; 
-LIST N/V/A/Pron/Q = N V A A/N Pron Q ; 
-LIST N/Pron/A/N = N Pron A/N ; 
-LIST N/Pron/Q/V/SUP = N Pron Q V SUP ; 
-LIST NAIN = "näin" ; 
-LIST Neg = Neg ; 
-LIST NEG-AMBIGUOUS = "niittää" "muuttaa" "kerrata" "he" ; 
-LIST NEGV = NEGV ; 
-LIST NES = "pitää" "täytyä" "täytyy" "tulla" "pakko" ; 
-LIST NIIN = "niin" ; 
-LIST NIIN-YHA = "niin" "yhä" "yli" "ylitse" "mitä" ; 
-LIST NIIN-NOIN-NAIN = "niin" "noin" "näin" ; 
-LIST Nom = Nom ; 
-LIST MINEN = minen ;
-LIST Nom/Gen/Par = Nom Gen Par ; 
-LIST Nom/Par = Nom Par ; 
-LIST NomHEAD = N Pron Num ; 
-LIST NomINAL-FORM = Inf1 Inf2 Inf3 PrfPrc PrsPrc ; 
-LIST NONSUBJECT-CASE = Ess Tra Ine Ela Ill Ade Abl All Abe Com Ins ; 
+
 LIST NORJA = "norja" "suomi" ; 
-LIST NOT-Gen-CASE = Nom Par Ine Ela Ill Ade Abl All Ess Tra Abe Com Ins ; 
-LIST NOUN+Inf1 = "halu" "tahto" "yritys" "päätös" "lupa" "aikomus" "tarve" "alttius" "tavoite" "oikeus" "mahdollisuus" "velvollisuus" "valmius" "ajatus" "tarkoitus" "syy" "tapa" "määrä" "pyrkimys" "pakko" "kyky" "taito" "vara" "hanke" "vastentahtoisuus" "keino" "aika" ; 
-LIST NOUN-OF-MEASURE = "kilo" "metri" "litra" "osa" "pala" ; 
-LIST Num = Num ; 
 LIST Num/C/HETI/CLB = Num "heti" BOS EOS "<$\:>" "<$\#>" "<$\(>" "<$\>" "<$\'>" "<$\">" "<$\,>" Rel "<$->" "kuinka" "miten" "milloin" "-" C KO Punct ; 
 LIST Num/Pron = Num Pron ; 
 LIST Num-PUOLET-KOLMANNES = Num "puoli" "kolmannes" "neljännes" "viidennes" "kuudennes" "seitsemännes" "kahdeksannes" "yhdeksännes" ; 
 LIST Num-Q-Ill = Num Q Ill ; 
-LIST OLLA = "olla" ; 
-LIST OLLA/TULLA = "olla" "tulla" ; 
-LIST OMIEN = "oma" "kirja" "asia" ; 
 LIST ORD = ORD ; 
-LIST OTTAA = "ottaa" ; 
-LIST OTTAA-2 = "ottaa" "omaksua" "liittää" "antaa" "siirtyä" ; 
-LIST OTTAA/KELVATA = "ottaa" "kelvata" ; 
 LIST P-3 = P-3 ; 
-LIST PAATTYA = "päättyä" "loppua" "johtaa" ; 
-LIST PARI/PUOLI = "pari" "puoli" ; 
-LIST PAASTA = "laskea" "sijoittaa" "antaa" "sallia" "tunkeutua" ; 
-LIST PALJON = "paljon" "vähän" "jonkin=verran" ; 
-LIST PALJON-MONI = "paljon" "vähän" "moni" "usea" "harva" "hyvin" "oikein" "väärin" "kovin" "tarpeeksi" ; 
-LIST PANNA = "panna" "arpi" "sakka" ; 
-LIST Part = Part ;
-LIST Prt = Prt ; 
-LIST PCP = PrfPrc PrsPrc ; 
-LIST PrsPrc = PrsPrc ; 
-LIST PrfPrc = PrfPcp ; # nut / PrfPcp
-LIST PrsPrc = PrsPrc ; # va / PrsPrc
-LIST PrsPrc/Inf3/Inf2/REF/TEMP = PrsPrc Inf3 Inf2 REF TEMP ; 
-LIST PE4 = PE4 ; 
-LIST PERS = PERS ; 
-LIST PERSPl123 = "me" "te" "he" ; 
-LIST PIENIA/ELAA = "pieniä" "elää" "omata" "juuria" ; 
-LIST Pl = Pl Sg/Pl ; 
-LIST Pl1 = Pl1 ; 
-LIST Pl3 = Pl3 ; 
-LIST Pl123 = Pl1 Pl2 Pl3 ; 
-LIST POIKA = "poika" "mies" "veijari" "elämä" "tapa" ; 
-LIST POSS-DEL-V = "pitää" "saada" "tehdä" "menettää" "kestää" "pitää" "ummistaa" "kantaa" ; 
-LIST POSS-NomSg = "surma" "paikka" "kaikki" "merkitys" "aika" "pinta" "silmä" "vastuu" ; 
-LIST POSS-NomPl = "kaikki" "aika" ; 
 LIST POTN = POTN ;
-LIST Adv = Adv ; 
-LIST Adp = Adp ;
-LIST PP = PP Adv Adp;
-LIST Prs = Prs ; 
-LIST Prs/Prt = Prs Prt ; 
-LIST Pron = Pron ; 
-LIST Prop = Prop ; 
 LIST Prop/HEUR = Prop <MORPH-HEUR!> ; 
 LIST PSP = PSP ; 
 LIST PSP-CASE = Gen Par Ela Ill Abl All ; 
-LIST Pass = Pass ; 
-LIST Par = Par ; 
-LIST Par/Gen = Par Gen ; 
-LIST Par/Punct = Par Punct ; 
-LIST PUHUA = "puhua" "käyttää" "kirjoittaa" ; 
 LIST Punct = Punct ComMA COLON ; 
-LIST PUOLA = "puola" ; 
-LIST PUOLI = "puoli" ; 
-LIST PUOLI-KOKO-OSA = "puoli" "koko" "osa" ; 
 LIST Q = Q ; 
 LIST QUANTIFIER = Q Num ; 
 LIST QUOTE = QUOTE ; 
@@ -303,77 +453,22 @@ LIST REF = REF ;
 LIST REF/TEMP = REF TEMP ; 
 LIST REF-CORR = Prs Prt Inf1 Inf2 Inf3 PrsPrc ; 
 LIST Rel = Rel ; 
-LIST SAADA = "saada" ; 
-LIST SAAPUA = "saapua" ; # CLASH SAAPUA/SAAVUTTAA, I.E. ACT/PASS  ; 
-LIST SANOA = "sanoa" ; 
-LIST SE = "se" ; 
-LIST SEITSEMAN = "seitsemän" "kahdeksan" "yhdeksän" "kymmenen" ; 
-LIST Sg = Sg Sg/Pl ; 
-LIST Sg1 = Sg1 ; 
-LIST Sg2 = Sg2 ; 
-LIST Sg3 = Sg3 ; 
-LIST Sg123 = Sg1 Sg2 Sg3 ; 
-LIST Sg12Pl12Pass = Sg1 Sg2 Pl1 Pl2 Pass ; 
-LIST SIIRTYA-TULLA-JOUTUA = "siirtyä" "tulla" "joutua" "siirtää" "sijoittaa" ; 
 LIST SINA = "sinä" ; 
 LIST SITTEN = "sitten" ; 
 LIST Sub = Sub ; 
 LIST SUBJECT-CASE = Nom Gen Par ; 
 LIST SUHTEEN = "suhteen" ; 
 LIST SUP = SUP ; 
-LIST TAHANSA/VAIN = "tahansa" "vain" "hyvänsä" "mikä" "mikäkin" "missäkin" "kulloinkin" ; 
-LIST TAHANSA-2 = "tahansa" "hyvänsä" ; 
-LIST TAI = "tai" "tahi" "taikka" ; 
-LIST TAllAIneN = Num Pron Det "tällainen" "sellainen" "semmoinen" ; 
-LIST TALVIneN = "kesäinen" "keväinen" "syksyinen" "talvinen" ; 
-LIST TAMA = "tämä" ; 
-LIST TARVITA = "tarvita" "pitää" ; 
-LIST TE = "te" ; 
 LIST TEMP = TEMP ; 
 LIST THREE = \3 ; 
-LIST TIETAA = "tietää" "kysyä" "tiedustella" ; 
-LIST TILANNE = "tilanne" "kuusi" ; 
-LIST TIME-WORD = "tunti" "viikko" "kuu_kausi" "vuosi" "vuosi_kymmen" "vuosi_sata" "kausi" "kesä" "talvi" "syksy" "kevät" "hetki" "minuutti" "sekunti" "aamu" "ilta" "päivä" "ilta_päivä" "arki_aamu" "arki_päivä" "kesä_aamu" "maanantai" "tiistai" "keski_viikko" "torstai" "perjantai" "lauantai" "sunnuntai" "yö" ; 
-LIST TOSI = "tosi" ; 
-LIST Tra = Tra ; 
-LIST TULI = "tuli" "voi" "jätti" "myy" ; 
-LIST TULLA = "tulla" ; 
-LIST TULLA/SAADA = "tulla" "saada" ; 
-LIST TULOS = "tulos" ; 
-LIST TUO = "tuo" ; 
 LIST UP = UP ; 
-LIST UUSIA = "uusia" "pieniä" ; # AS A REPrsENTATIVE OF V/A -AMB 
-LIST V = V ; 
-LIST VAIKKA/KUIN/JOS = "vaikka" "kuin" "jos" "ties" ; 
-LIST VAllAN = "vallan" ; 
-LIST VAllAN-WDS = "saada" "poliittinen" "taloudellinen" "presidentti" "edus_kunta" "kuningas" "anastaa" "pitää" "joutua" "alistaa" "alla" "ottaa" "antaa" "luovuttaa" ; 
-LIST V-Pl = Pl1 Pl2 Pl3 ; 
-LIST V-Sg = Sg1 Sg2 Sg3 ; 
-LIST VERRAN = "verta" ; 
-LIST VFIN = Prs Prt COND POTN NEGV Imp ; 
-LIST VFIN-C = Prs Prt COND POTN NEGV Imp C ; 
-LIST VFIN-C-MYOS = Prs Prt COND POTN NEGV Imp C "myös" ; 
-LIST VFIN-PCP = Prs Prt COND POTN NEGV Imp PrfPrc PrsPrc ; 
-LIST VFIN/PrsPrc = Prt Prs COND POTN PrsPrc ; 
-LIST VFIN/PrsPrc/Inf = Prt Prs COND POTN PrsPrc Inf1 Inf2 Inf3 REF TEMP ; 
-LIST VFIN-SgPl12 = Sg1 Sg2 Pl1 Pl2 ; 
-LIST VIIME = "viime" "ensi" "vuosi" ; 
-LIST VIREIllA = "vireillä" ; 
-LIST VOI = "voida" ; 
-LIST VOIMA = "voima" ; 
-LIST VUOSI = "vuosi" "kausi" "kevät_kausi" "syys_kausi" "kesä_kausi" "talvi_kausi" "alku_kausi" "loppu_kausi" ; 
-LIST VUO/VOI = "vuo" "voi" ; 
-LIST YKSI = "yksi" ; 
-LIST YLI/AllE = "yli" "alle" ; 
-LIST YLLATTAA = "yllättää" ; 
 
 
 
+# Sets
+# ----
 
-
-
-
-
+LIST WORD = N A Adv V Pron CS CC Po Pr Interj Pcle Num ABBR ACR  \? ;
 
 
 
@@ -381,13 +476,13 @@ LIST YLLATTAA = "yllättää" ;
 # SYNTACTIC FUNCTION DECLARATIONS
 
 # The original function declarations
-# @+FM @-FMN @-FMP @-FMI @+FAUX @-FAUX @-FMQ @H @S @NEC-S @NF-S @O @PC @ADVL @N> @NN> @AD-A> @<P @P> @<PN @C @OA @A> @AUX-S @AUX-O  
+# @+FM @-FMN @-FMP @-FMI @+FAUX @-FAUX @-FMQ @H @SUBJ @NEC-S @NF-S @OBJ @PC @ADVL @N> @NN> @AD-A> @<P @P> @<PN @C @OA @A> @AUX-S @AUX-O  
 
 # These are used in nonrevised heuristic rules and therefore kept for the moment:
-LIST @S = @S ;
+LIST @SUBJ = @SUBJ ;
 LIST @NEC-S = @NEC-S ;
 LIST @NF-S = @NF-S ;
-LIST @O = @O ;
+LIST @OBJ = @OBJ ;
 LIST @PC = @PC ;
 LIST @<P = @<P ;
 LIST @P> = @P> ;
@@ -489,7 +584,7 @@ LIST ALLSYNTAG = (@+FAUXV) (@+FMAINV) (@-FAUXV) (@-FMAINV) (@-FSUBJ>)(@-FOBJ)(@-
 # PRINCIPAL FUNCTION DECLARATIONS
 
 LIST PRINCIPAL-FUNCTION-DECLARATIONS = @SUBJ @OBJ @SPRED ;
-# original set was @S @O @PC ;
+# original set was @SUBJ @OBJ @PC ;
 
 ### TODO: 
 ### BARRIERS in var AUP-BORDERS
@@ -1242,6 +1337,8 @@ SELECT (Par) (1 C) (2 Par) (3 V)
 SELECT (Par) (-2 Par) (-1 C) (1 V)
   # PAIKKAA JA KOKOA VOIDAAN
 #------------------------------------------------------------
+
+
 # *** PP & PSP
 #GenLEFT,GenRIGHT,ParLEFT,ParRIGHT IN ISOLATION
 SELECT (PSP <GenLEFT>) (-1 Gen) (NOT 0 <GenRIGHT>) (NOT 0 <ParRIGHT>) (NOT 0 <ParLEFT>) (NOT -1 AD/PCP) (NOT 0 <POSS>) (NOT -1 KERRAN) (NOT 0 JOHDOSTA)
@@ -1278,8 +1375,8 @@ SELECT Adv (1 ETTA)
 SELECT Adv (1 Punct) (2 ETTA)
 SELECT Adp ((1 Par) or (-1 (Par or Gen)) or (2 Par))
 
-# probably risky; lumi pyryttää nurkissa -> removing "lative"
-REMOVE InfV IF (-1 N)
+# risky; lumi pyryttää nurkissa -> removing "lative"
+# REMOVE InfV IF (@SUBJ)
 
 # SELECT Adp (2 Par)
 # SELECT Adp (-1 Gen)
@@ -1838,11 +1935,27 @@ REMOVE (AD "vähän") (NOT 1C CMP-ENNEN) (NOT 2 JALKEEN)# 4.2.2001 !!->! cf.belo
 
 
 SECTION
+# Subj to the left of verb
+# MAP (@SUBJ) Target Nom IF ((*1 (V Act)) OR (*-1 (V Act)))
+# MAP (@SUBJ) Target Nom (0 WORD LINK *1 (V Act))
+
+# minun pitää ostaa kirja
+MAP (@NES) TARGET NES IF (*-1 Gen)
+MAP (@SUBJ> @NEC-SUBJ) TARGET Gen IF (0 WORD LINK *1 (@NES))
+MAP (@OBJ) TARGET Nom IF (0 WORD LINK *-1 (Gen)) (*-1 NES)
+
+
+# MAP (@SUBJ @NEC-SUBJ) Target Gen (V Act Sg 3p))
+# Subj to the right of verb
+MAP (@SUBJ>) TARGET Nom (*-2 V)
+
+REMOVE InfV IF ((*-1 @<SUBJ) OR (1 @SUBJ>))
 
 # SYNTACTIC-CONSTRAINTS
 
 
 SECTION
+
 #HEURISTIC-SYNTACTIC-CONSTRAINTS
 #not available at present!!!
 # (IF INVOKE-H-RULES? (INVOKE-HEUR-SYNT-RULES))  eliminated July 9, 2000
@@ -1850,16 +1963,16 @@ SECTION
 #MORPHOLOGICAL-HEURISTICS
 #numerals like ("<16\:ta>")# "<16\:ta>"%n%t(<Digit> Num Sg Par)#         2 0 0 0 5 1
 #are dealt with in ftwpost.bta, 23.1.2001, and in cgp, cf "dummy" for base
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (ABBR Sg Gen) (1 ("<(.*):in>"r)) (2 ("<(.*):in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (ABBR Sg Gen) (1 ("<(.*)'in>"r)) (2 ("<(.*)'in>"r))
-MAP (@S @O @PC @<P @P> @<PN @N>) TARGET (ABBR Sg Par) (1 ("<(.*):tta>"r)) (2 ("<(.*):tta>"r))
-MAP (@S @O @PC @<P @P> @<PN @N>) TARGET (ABBR Sg Par) (1 ("<(.*):ta>"r)) (2 ("<(.*):ta>"r))
-MAP (@S @O @PC @<P @P> @<PN @N>) TARGET (ABBR Sg Par) (1 ("<(.*):ttä>"r)) (2 ("<(.*):ttä>"r))
-MAP (@S @O @PC @<P @P> @<PN @N>) TARGET (ABBR Sg Par) (1 ("<(.*):tä>"r)) (2 ("<(.*):tä>"r))
-MAP (@S @O @PC @<P @P> @<PN @N>) TARGET (ABBR Sg Par) (1 ("<(.*):aa>"r)) (2 ("<(.*):aa>"r))
-MAP (@S @O @PC @<P @P> @<PN @N>) TARGET (ABBR Sg Par) (1 ("<(.*):a>"r)) (2 ("<(.*):a>"r))
-MAP (@S @O @PC @<P @P> @<PN @N>) TARGET (ABBR Sg Par) (1 ("<(.*):ää>"r)) (2 ("<(.*):ää>"r))
-MAP (@S @O @PC @<P @P> @<PN @N>) TARGET (ABBR Sg Par) (1 ("<(.*):ä>"r)) (2 ("<(.*):ä>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (ABBR Sg Gen) (1 ("<(.*):in>"r)) (2 ("<(.*):in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (ABBR Sg Gen) (1 ("<(.*)'in>"r)) (2 ("<(.*)'in>"r))
+MAP (@SUBJ @OBJ @PC @<P @P> @<PN @N>) TARGET (ABBR Sg Par) (1 ("<(.*):tta>"r)) (2 ("<(.*):tta>"r))
+MAP (@SUBJ @OBJ @PC @<P @P> @<PN @N>) TARGET (ABBR Sg Par) (1 ("<(.*):ta>"r)) (2 ("<(.*):ta>"r))
+MAP (@SUBJ @OBJ @PC @<P @P> @<PN @N>) TARGET (ABBR Sg Par) (1 ("<(.*):ttä>"r)) (2 ("<(.*):ttä>"r))
+MAP (@SUBJ @OBJ @PC @<P @P> @<PN @N>) TARGET (ABBR Sg Par) (1 ("<(.*):tä>"r)) (2 ("<(.*):tä>"r))
+MAP (@SUBJ @OBJ @PC @<P @P> @<PN @N>) TARGET (ABBR Sg Par) (1 ("<(.*):aa>"r)) (2 ("<(.*):aa>"r))
+MAP (@SUBJ @OBJ @PC @<P @P> @<PN @N>) TARGET (ABBR Sg Par) (1 ("<(.*):a>"r)) (2 ("<(.*):a>"r))
+MAP (@SUBJ @OBJ @PC @<P @P> @<PN @N>) TARGET (ABBR Sg Par) (1 ("<(.*):ää>"r)) (2 ("<(.*):ää>"r))
+MAP (@SUBJ @OBJ @PC @<P @P> @<PN @N>) TARGET (ABBR Sg Par) (1 ("<(.*):ä>"r)) (2 ("<(.*):ä>"r))
 MAP (@ADVL) TARGET (ABBR Sg Ine) (1 ("<(.*):ssa>"r)) (2 ("<(.*):ssa>"r))
 MAP (@ADVL) TARGET (ABBR Sg Ine) (1 ("<(.*):ssä>"r)) (2 ("<(.*):ssä>"r))
 MAP (@ADVL) TARGET (ABBR Sg Ela) (1 ("<(.*):sta>"r)) (2 ("<(.*):sta>"r))
@@ -1872,8 +1985,8 @@ MAP (@ADVL) TARGET (ABBR Sg Abl) (1 ("<(.*):lta>"r)) (2 ("<(.*):lta>"r))
 MAP (@ADVL) TARGET (ABBR Sg Abl) (1 ("<(.*):ltä>"r)) (2 ("<(.*):ltä>"r))
 MAP (@ADVL) TARGET (ABBR Sg All) (1 ("<(.*):lle>"r)) (2 ("<(.*):lle>"r))
 ##MAP ((DASH) (@1 (^ ("->"r)) ($ ("->"r)) (@2 NIL) # XXXX
-##MAP ((ABBR Sg Nom (@S @O @PC)) (@1 (NOT * ("i>"r)) (NOT * ("e>"r)) (NOT * ("ä>"r)) (NOT * ("y>"r)) (NOT * ("ö>"r)) (NOT * ("u>"r)) (NOT * ("o>"r)) (NOT * ("a>"r)) (NOT * ("I>"r)) (NOT * ("E>"r)) (NOT * ("[>"r)) (NOT * ("Y>"r)) (NOT * ("/>"r)) (NOT * ("U>"r)) (NOT * ("O>"r)) (NOT * ("A>"r)) (NOT * (":>"r)) (@2 NIL)
-MAP (@S @O @PC) TARGET (ABBR Sg Nom) (@1 (* (":kin>"r)) (2 ("<(.*)x:kin>"r))
+##MAP ((ABBR Sg Nom (@SUBJ @OBJ @PC)) (@1 (NOT * ("i>"r)) (NOT * ("e>"r)) (NOT * ("ä>"r)) (NOT * ("y>"r)) (NOT * ("ö>"r)) (NOT * ("u>"r)) (NOT * ("o>"r)) (NOT * ("a>"r)) (NOT * ("I>"r)) (NOT * ("E>"r)) (NOT * ("[>"r)) (NOT * ("Y>"r)) (NOT * ("/>"r)) (NOT * ("U>"r)) (NOT * ("O>"r)) (NOT * ("A>"r)) (NOT * (":>"r)) (@2 NIL)
+MAP (@SUBJ @OBJ @PC) TARGET (ABBR Sg Nom) (@1 (* (":kin>"r)) (2 ("<(.*)x:kin>"r))
 MAP (@ADVL) TARGET (N Sg Ine) (1 ("<(.*)uksessa>"r)) (2 ("<(.*)uksessa" ("us>"r))
 MAP (@ADVL) TARGET (N Sg Ine) (1 ("<(.*)yksessä>"r)) (2 ("<(.*)yksessä" ("ys>"r))
 MAP (@ADVL) TARGET (N Sg Ine) (1 ("<(.*)ssa>"r)) (2 ("<(.*)ssa>"r))
@@ -1890,10 +2003,10 @@ MAP (@ADVL) TARGET (N Sg Abl) (1 ("<(.*)lta>"r)) (2 ("<(.*)lta>"r))
 MAP (@ADVL) TARGET (N Sg Abl) (1 ("<(.*)ltä>"r)) (2 ("<(.*)ltä>"r))
 MAP (@ADVL) TARGET (N Sg Ine) (1 ("<(.*)ukselle>"r)) (2 ("<(.*)ukselle" ("us>"r))
 MAP (@ADVL) TARGET (N Sg All) (1 ("<(.*)lle>"r)) (2 ("<(.*)lle>"r))
-### MAP (@S @O @PC) TARGET (N Sg Nom) (1 ("<(.*)man>"r)) (@2 NIL)
-### MAP (@S @O @PC) TARGET (N Sg Nom) (1 ("<(.*)nen>"r)) (@2 NIL)
-### MAP (@S @O @PC) TARGET (N Sg Nom) (1 ("<(.*)sson>"r)) (@2 NIL)
-### MAP (@S @O @PC) TARGET (N Sg Nom) (1 ("<(.*)stein>"r)) (@2 NIL)
+### MAP (@SUBJ @OBJ @PC) TARGET (N Sg Nom) (1 ("<(.*)man>"r)) (@2 NIL)
+### MAP (@SUBJ @OBJ @PC) TARGET (N Sg Nom) (1 ("<(.*)nen>"r)) (@2 NIL)
+### MAP (@SUBJ @OBJ @PC) TARGET (N Sg Nom) (1 ("<(.*)sson>"r)) (@2 NIL)
+### MAP (@SUBJ @OBJ @PC) TARGET (N Sg Nom) (1 ("<(.*)stein>"r)) (@2 NIL)
 MAP (@ADVL) TARGET (A Pl Ill) (1 ("<(.*)isiin>"r)) (2 ("<(.*)isiin"r) + ("<(.*)inen>"r))
 MAP (@ADVL) TARGET (N Pl Ill) (1 ("<(.*)uksiin>"r)) (2 ("<(.*)uksiin"r) + ("<(.*)us>"r))
 MAP (@ADVL) TARGET (N Pl Ill) (1 ("<(.*)yksiin>"r)) (2 ("<(.*)yksiin"r) + ("<(.*)ys>"r))
@@ -1918,69 +2031,69 @@ MAP (@ADVL) TARGET (N Sg Ill) (1 ("<(.*)iinkin>"r)) (2 ("<(.*)inkin>"r))
 MAP (@ADVL) TARGET (N Sg Ill) (1 ("<(.*)iin>"r)) (2 ("<(.*)iin>"r))
 MAP (@ADVL) TARGET (N Sg Ess) (1 ("<(.*)uksena>"r)) (2 ("<(.*)uksena"r) + ("<(.*)us>"r))
 MAP (@ADVL) TARGET (N Sg Ess) (1 ("<(.*)yksenä>"r)) (2 ("<(.*)yksenä"r) + ("<(.*)ys>"r))
-MAP (@S @O @PC @<P @P> @<PN @N>) TARGET (N Sg Par) (1 ("<(.*)usta>"r)) (2 ("<(.*)usta"r) + ("<(.*)us>"r))
-MAP (@S @O @PC @<P @P> @<PN @N>) TARGET (N Sg Par) (1 ("<(.*)ystä>"r)) (2 ("<(.*)ystä"r) + ("<(.*)ys>"r))
-MAP (@S @O @PC) TARGET (N Pl Nom) (1 ("<(.*)kset>"r)) (2 ("<(.*)kset"r) + ("<(.*)s>"r))
+MAP (@SUBJ @OBJ @PC @<P @P> @<PN @N>) TARGET (N Sg Par) (1 ("<(.*)usta>"r)) (2 ("<(.*)usta"r) + ("<(.*)us>"r))
+MAP (@SUBJ @OBJ @PC @<P @P> @<PN @N>) TARGET (N Sg Par) (1 ("<(.*)ystä>"r)) (2 ("<(.*)ystä"r) + ("<(.*)ys>"r))
+MAP (@SUBJ @OBJ @PC) TARGET (N Pl Nom) (1 ("<(.*)kset>"r)) (2 ("<(.*)kset"r) + ("<(.*)s>"r))
 # GenITIVES
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)ksen>"r)) (2 ("<(.*)ksen"r) + ("<(.*)s>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)sen>"r)) (2 ("<(.*)sen"r) + ("<(.*)nen>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)sonin>"r)) (2 ("<(.*)sonin"r) + ("<(.*)son>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)anin>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)enin>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)inin>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)nkin>"r)) (2 ("<(.*)nkin>"r))     # SUDBURYNKIN
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)onin>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)oinnin>"r)) (2 ("<(.*)oinnin"r) + ("<(.*)ointi>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)öinnin>"r)) (2 ("<(.*)öinnin"r) + ("<(.*)öinti>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)unin>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)ynin>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)otin>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)elin>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)antin>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)dtin>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)ftin>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)esin>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)asin>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)chtin>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)bin>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)cin>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)din>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)fin>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)gin>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)min>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)manin>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)mannin>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)rin>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)ttin>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)ngin>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)vin>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)win>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)zin>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)aatin>"r)) (2 ("<(.*)aatin"r) + ("<(.*)aatti>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)eetin>"r)) (2 ("<(.*)eetin"r) + ("<(.*)eetti>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)iitin>"r)) (2 ("<(.*)iitin"r) + ("<(.*)iitti>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)ootin>"r)) (2 ("<(.*)ootin"r) + ("<(.*)ootti>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)uutin>"r)) (2 ("<(.*)uutin"r) + ("<(.*)uutti>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)yytin>"r)) (2 ("<(.*)yytin"r) + ("<(.*)yytti>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)uuden>"r)) (2 ("<(.*)uuden"r) + ("<(.*)uus>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)yyden>"r)) (2 ("<(.*)yyden"r) + ("<(.*)yys>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)in>"r)) (2 ("<(.*)in>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)en>"r)) (2 ("<(.*)n>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)än>"r)) (2 ("<(.*)n>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)yn>"r)) (2 ("<(.*)n>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)ön>"r)) (2 ("<(.*)n>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)un>"r)) (2 ("<(.*)n>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)on>"r)) (2 ("<(.*)n>"r))
-MAP (@S @NEC-S @NF-S @O @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)an>"r)) (2 ("<(.*)n>"r))
-MAP (@S @O @PC @<P @P> @<PN @N>) TARGET (N Sg Par) (1 ("<(.*)aa>"r)) (2 ("<(.*)a>"r))
-MAP (@S @O @PC @<P @P> @<PN @N>) TARGET (N Sg Par) (1 ("<(.*)ea>"r)) (2 ("<(.*)a>"r))
-MAP (@S @O @PC @<P @P> @<PN @N>) TARGET (N Sg Par) (1 ("<(.*)oa>"r)) (2 ("<(.*)a>"r))
-MAP (@S @O @PC @<P @P> @<PN @N>) TARGET (N Sg Par) (1 ("<(.*)ua>"r)) (2 ("<(.*)a>"r))
-MAP (@S @O @PC @<P @P> @<PN @N>) TARGET (N Sg Par) (1 ("<(.*)ia>"r)) (2 ("<(.*)a>"r))
-MAP (@S @O @PC @<P @P> @<PN @N>) TARGET (N Sg Par) (1 ("<(.*)ää>"r)) (2 ("<(.*)ä>"r))
-MAP (@S @O @PC @<P @P> @<PN @N>) TARGET (N Sg Par) (1 ("<(.*)eä>"r)) (2 ("<(.*)ä>"r))
-MAP (@S @O @PC @<P @P> @<PN @N>) TARGET (N Sg Par) (1 ("<(.*)yä>"r)) (2 ("<(.*)ä>"r))
-MAP (@S @O @PC @<P @P> @<PN @N>) TARGET (N Sg Par) (1 ("<(.*)iä>"r)) (2 ("<(.*)ä>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)ksen>"r)) (2 ("<(.*)ksen"r) + ("<(.*)s>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)sen>"r)) (2 ("<(.*)sen"r) + ("<(.*)nen>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)sonin>"r)) (2 ("<(.*)sonin"r) + ("<(.*)son>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)anin>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)enin>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)inin>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)nkin>"r)) (2 ("<(.*)nkin>"r))     # SUDBURYNKIN
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)onin>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)oinnin>"r)) (2 ("<(.*)oinnin"r) + ("<(.*)ointi>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)öinnin>"r)) (2 ("<(.*)öinnin"r) + ("<(.*)öinti>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)unin>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)ynin>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)otin>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)elin>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)antin>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)dtin>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)ftin>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)esin>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)asin>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)chtin>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)bin>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)cin>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)din>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)fin>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)gin>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)min>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)manin>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)mannin>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)rin>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)ttin>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)ngin>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)vin>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)win>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)zin>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)aatin>"r)) (2 ("<(.*)aatin"r) + ("<(.*)aatti>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)eetin>"r)) (2 ("<(.*)eetin"r) + ("<(.*)eetti>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)iitin>"r)) (2 ("<(.*)iitin"r) + ("<(.*)iitti>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)ootin>"r)) (2 ("<(.*)ootin"r) + ("<(.*)ootti>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)uutin>"r)) (2 ("<(.*)uutin"r) + ("<(.*)uutti>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)yytin>"r)) (2 ("<(.*)yytin"r) + ("<(.*)yytti>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)uuden>"r)) (2 ("<(.*)uuden"r) + ("<(.*)uus>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)yyden>"r)) (2 ("<(.*)yyden"r) + ("<(.*)yys>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)in>"r)) (2 ("<(.*)in>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)en>"r)) (2 ("<(.*)n>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)än>"r)) (2 ("<(.*)n>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)yn>"r)) (2 ("<(.*)n>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)ön>"r)) (2 ("<(.*)n>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)un>"r)) (2 ("<(.*)n>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)on>"r)) (2 ("<(.*)n>"r))
+MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)an>"r)) (2 ("<(.*)n>"r))
+MAP (@SUBJ @OBJ @PC @<P @P> @<PN @N>) TARGET (N Sg Par) (1 ("<(.*)aa>"r)) (2 ("<(.*)a>"r))
+MAP (@SUBJ @OBJ @PC @<P @P> @<PN @N>) TARGET (N Sg Par) (1 ("<(.*)ea>"r)) (2 ("<(.*)a>"r))
+MAP (@SUBJ @OBJ @PC @<P @P> @<PN @N>) TARGET (N Sg Par) (1 ("<(.*)oa>"r)) (2 ("<(.*)a>"r))
+MAP (@SUBJ @OBJ @PC @<P @P> @<PN @N>) TARGET (N Sg Par) (1 ("<(.*)ua>"r)) (2 ("<(.*)a>"r))
+MAP (@SUBJ @OBJ @PC @<P @P> @<PN @N>) TARGET (N Sg Par) (1 ("<(.*)ia>"r)) (2 ("<(.*)a>"r))
+MAP (@SUBJ @OBJ @PC @<P @P> @<PN @N>) TARGET (N Sg Par) (1 ("<(.*)ää>"r)) (2 ("<(.*)ä>"r))
+MAP (@SUBJ @OBJ @PC @<P @P> @<PN @N>) TARGET (N Sg Par) (1 ("<(.*)eä>"r)) (2 ("<(.*)ä>"r))
+MAP (@SUBJ @OBJ @PC @<P @P> @<PN @N>) TARGET (N Sg Par) (1 ("<(.*)yä>"r)) (2 ("<(.*)ä>"r))
+MAP (@SUBJ @OBJ @PC @<P @P> @<PN @N>) TARGET (N Sg Par) (1 ("<(.*)iä>"r)) (2 ("<(.*)ä>"r))
 
 MAP (@ADVL @N>) TARGET (ORD Num Sg Ade) (1 ("<(.*):nnella>"r)) (2 ("<(.*):nnella>"r))
 MAP (@ADVL @N>) TARGET (ORD Num Sg Abl) (1 ("<(.*):nnelta>"r)) (2 ("<(.*):nnelta>"r))
@@ -2000,4 +2113,4 @@ MAP (@ADVL @N>) TARGET (ORD Num Sg Ess) (1 ("<(.*):ntenä>"r)) (2 ("<(.*):ntenä
 
  #GENERIC Sg Nom FOR All OTHER InsTANCES
  
-#h# =h ((N Sg Nom (@S @O @PC @N>)) (@1 NIL) (@2 NI
+#h# =h ((N Sg Nom (@SUBJ @OBJ @PC @N>)) (@1 NIL) (@2 NI
