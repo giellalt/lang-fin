@@ -66,7 +66,8 @@ LIST A/PCP = A Pcp1 Pcp2 ;
 LIST ABBR = ABBR ; 
 LIST Abe = Abe ; 
 LIST Abl = Abl ; 
-LIST ACT = ACT ; 
+LIST Act = Act ;
+LIST ACT = ACT ;
 LIST AD = AD ; 
 LIST AD/PCP = AD Pcp1 Pcp2 ; 
 LIST AD-A = AD-A ; 
@@ -259,8 +260,10 @@ LIST PANNA = "panna" "arpi" "sakka" ;
 LIST Part = Part ;
 LIST Prt = Prt ; 
 LIST PCP = Pcp1 Pcp2 ; 
-LIST Pcp1 = Pcp1 ; 
-LIST Pcp2 = Pcp2 ; 
+LIST PrfPcp = PrfPcp ; 
+LIST PrsPrc = PrsPrc ; 
+LIST Pcp1 = PrfPcp ; # nut / PrfPcp
+LIST Pcp2 = PrsPrc ; # va / PrsPrc
 LIST Pcp2/Inf3/Inf2/REF/TEMP = Pcp2 Inf3 Inf2 REF TEMP ; 
 LIST PE4 = PE4 ; 
 LIST PERS = PERS ; 
@@ -1574,7 +1577,8 @@ REMOVE (N Pl) (0 VUO/VOI) (NOT 1 DUMMY)   # NB "voista" ETC
 # (@w REMOVE (V REF ACT) (*-1 <REF> LINK NOT 0 VFIN LINK NOT *1 <REF>)
 # 11 ERRORS OUT OF 14 IN PK.ANL!!
 SELECT (Pcp2 Pass Gen) (1C Gen)
-SELECT (Pcp1 ACT Gen "riittää") (1C A/PCP)    # RIITTÄVÄN KAllIS
+# SELECT (Pcp1 ACT Gen "riittää") (1C A/PCP)    # RIITTÄVÄN KAllIS
+SELECT (Act PrsPrc Gen) + ("riittää") (1C A/PCP) # 
 #(@w SELECT PCP (0 Gen) (0 REF) (1C C) (*2 PCP LINK 0 Gen LINK NOT *-1 <REF>)
 # NB: ???XXX
 SELECT (N Gen "vanhempi") (1 N) (1 NOT-Gen-CASE)
