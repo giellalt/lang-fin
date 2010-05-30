@@ -1263,7 +1263,8 @@ SELECT Adv (1 ETTA)
 SELECT Adv (1 Punct) (2 ETTA)
 SELECT Adp ((1 Par) or (-1 (Par or Gen)) or (2 Par))
 
-REMOVE (V Act IInf Sg Lat) IF (-1 N)
+# probably risky; lumi pyryttää nurkissa -> removing "lative"
+REMOVE InfV IF (-1 N)
 
 # SELECT Adp (2 Par)
 # SELECT Adp (-1 Gen)
