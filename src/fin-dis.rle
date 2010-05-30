@@ -1933,7 +1933,6 @@ REMOVE (N "osanen") (NOT 1 Par) #osa/osanen (osasta)
 SELECT (AD "vähän") (1 Gen) (2 JALKEEN) # 4.2.2001 !!->! cf.below
 REMOVE (AD "vähän") (NOT 1C CMP-ENNEN) (NOT 2 JALKEEN)# 4.2.2001 !!->! cf.below
 
-
 SECTION
 # Subj to the left of verb
 # MAP (@SUBJ) Target Nom IF ((*1 (V Act)) OR (*-1 (V Act)))
