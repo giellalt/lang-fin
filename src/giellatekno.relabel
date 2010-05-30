@@ -164,9 +164,9 @@
 [NUM=SG,PL]	@0@
 [NUM=SG]	+Sg
 [PCP=MA]	+AgPcp
-[PCP=NEG]	+Neg+Pcp1
-[PCP=NUT]	+Pcp1
-[PCP=VA]	+Pcp2
+[PCP=NEG]	+Pcp+Neg
+[PCP=NUT]	+PrfPrc
+[PCP=VA]	+PrsPrc
 [POS=ABBREVIATION]	+Abbr
 [POS=ACRONYM]	+Acro
 [POS=ADJECTIVE]	+A
