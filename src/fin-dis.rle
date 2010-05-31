@@ -1943,13 +1943,41 @@ MAP (@NES) TARGET NES IF (*-1 Gen)
 MAP (@SUBJ> @NEC-SUBJ) TARGET Gen IF (0 WORD LINK *1 (@NES))
 MAP (@OBJ) TARGET Nom IF (0 WORD LINK *-1 (Gen)) (*-1 NES)
 
+# Me ostettiin kirja.
+MAP (@SUBJ>) TARGET (Pron Pl "minä") (0 Pron LINK *1 (Pe4))
+MAP (@OBJ) TARGET Nom IF (0 WORD LINK *-1 Pass) (*-1 Nom)
 
-# MAP (@SUBJ @NEC-SUBJ) Target Gen (V Act Sg 3p))
-# Subj to the right of verb
-MAP (@SUBJ>) TARGET Nom (*-2 V)
+# Jukka osti kirjan.
+MAP (@SUBJ>) TARGET Nom (0 WORD LINK *1 (Act))
+MAP (@OBJ) TARGET Gen (0 WORD LINK *-1 (Act)) (0 WORD LINK *-1 @SUBJ>)
 
-REMOVE InfV IF ((*-1 @<SUBJ) OR (1 @SUBJ>))
+# Lounas syötiin
+MAP (@OBJ) TARGET Nom (0 WORD LINK *1 (Pass))
 
+# Syötiin lounas
+MAP (@OBJ) TARGET Nom IF (0 WORD LINK *-1 Pass)
+
+
+
+# Beginning vaguely existential things
+# --------
+
+# Lumi pyryttää nurkissa.
+REMOVE (V Inf1) IF (0 WORD LINK *-1 (@SUBJ>))
+
+# Ihmisiä tungeksi kadulla.
+# This is not solved yet.
+MAP (@<ADVL @LOC) TARGET LOC-CASE (0 WORD LINK -1 (V Act Ind Prt Sg3))
+MAP (@SUBJ>) TARGET (Par) (0 WORD LINK 1 (V Sg3)) (0 WORD LINK *1 @<ADVL)
+# Currently this is tied to a subject and adverbial
+# Ideally it should be more about nonagreeing subjects
+# Also @EXIST(ENTIAL) is arguably more semantic than anything.
+# MAP (@EXIST) TARGET (V Sg3) (0 WORD LINK *1 @<ADVL) (0 WORD LINK *-1 @SUBJ>)
+
+# It seems like it would be a good idea to mark whether the subject
+# is not agreeing with the verb for person or number to better target existentials
+
+# MAP (@NONAGR) TARGET (V Sg3) (0 WORD LINK *-1 (N Pl @SUBJ>))
 # SYNTACTIC-CONSTRAINTS
 
 
