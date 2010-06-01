@@ -144,8 +144,8 @@ LIST PrsPrc = PrsPrc ; # va / PrsPrc
 
 LIST Prs/Prt = Prs Prt ; 
 LIST PrsPrc/Inf3/Inf2/REF/TEMP = PrsPrc Inf3 Inf2 REF TEMP ; 
-
-LIST Imp = Imp ; 
+LIST Imprt = Imprt ;
+LIST Imp = Imp Imprt ; 
 
 LIST Inf1 = Inf1 IInf; 
 LIST Inf2 = IIInf Inf2 ;
@@ -611,6 +611,8 @@ SECTION
 
 ## Trond
 REMOVE Part ;
+
+# Messing with imperative...
 SELECT Prop IF (NOT -1 BOS OR Punct);
 
 SECTION
