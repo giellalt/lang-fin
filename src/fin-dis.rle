@@ -35,11 +35,12 @@ LIST N = N ;
 LIST A = A ; 
 LIST Adv = Adv ; 
 LIST V = V ; 
-LIST Pron = Pron ; 
- 
+LIST Pron = Pron ;
 LIST Adp = Adp ;
 
 LIST PP = PP Adv Adp;
+
+LIST Pcle = Pcle ;
 
 LIST C = C ; 
 LIST CMP = CMP ; 
@@ -64,11 +65,6 @@ LIST Num = Num ;
 LIST PE4 = PE4 ; 
 LIST PERS = PERS ; 
 
-LIST Pl = Pl Sg/Pl ; 
-LIST Pl1 = Pl1 ; 
-LIST Pl3 = Pl3 ; 
-LIST Pl123 = Pl1 Pl2 Pl3 ; 
-
 LIST Nom = Nom ; 
 LIST Ade = Ade ; 
 LIST Gen = Gen ; 
@@ -84,6 +80,12 @@ LIST MINEN = minen ;
 
 LIST Prop = Prop ; 
 LIST Pass = Pass ; 
+
+
+LIST Pl = Pl Sg/Pl ; 
+LIST Pl1 = Pl1 ; 
+LIST Pl3 = Pl3 ; 
+LIST Pl123 = Pl1 Pl2 Pl3 ; 
 
 LIST Sg = Sg Sg/Pl ; 
 LIST Sg1 = Sg1 ; 
@@ -130,7 +132,7 @@ LIST Gen/Num = Gen Num <DIGIT> ;
 
 LIST Neg = Neg ; 
 
-LIST NEGV = NEGV ; 
+LIST NEGV = NEGV "ei" ; 
 
 LIST Prs = Prs ; 
 LIST Prt = Prt ; 
@@ -1201,7 +1203,7 @@ SELECT (Pron Rel) (*-1 JOKA LINK 0 Nom) (-1 C) (NOT 1 TAHANSA/VAIN) (NOT 2 TAHAN
 SELECT (Pron Rel Pl "joka") (NOT 1 DUMMY)   # JOISSA, JOIllA JNE.
 SELECT (Pron Rel Sg Ade "joka") (NOT 1 DUMMY)   # JOLLA
 SELECT (Pron Rel Sg Nom "joka") (1 Adv/Pl) (NOT 1 DUMMY)
-SELECT (Pron Sg Nom) (NOT 0 ITSE) (1 Nom) (1 A/N) (1 Sg) (NOT 1 HARVA-SET)
+SELECT (Pron Sg Nom) (NOT 0 ITSE) (1 Nom) (1 A/N) (1 Sg) (NOT 1 HARVA-SET) (NOT 1 (N Sg Nom)) # yksi kirja needs num still available
 SELECT (Pron Sg Gen) (NOT 0 ITSE) (1 Gen) (1 A/N) (1 Sg) (NOT 1 HARVA-SET)
 SELECT (Pron Sg Par) (NOT 0 ITSE) (1 Par) (1 A/N) (1 Sg) (NOT 0 Neg) (NOT 1 HARVA-SET)
 SELECT (Pron Sg Ine) (1 Ine) (1 Sg) (NOT 1 HARVA-SET)
@@ -1492,7 +1494,10 @@ REMOVE (AgPcp Par) (NOT 1C Par) (NOT *-1 OLLA)
 SELECT (AgPcp Nom) (1C Nom) (-1C Gen) (-1 N)
 SELECT (AgPcp Gen) (1C Gen) (-1C Gen) (-1 N) (NOT 0 SANOA)
 SELECT (AgPcp Par) (1C Par) (-1C Gen) (-1 N)
-## *** NEG-FORMS
+
+# Negative Forms
+# --------------
+
 SELECT (Neg) (-1 NEGV) (NOT 0 NEG-AMBIGUOUS) (NOT 1 Neg) (NOT 1 Prs) (0 Prs/Prt)
   # EI HALUTA/=!# EIKä HEITä LöYDY
   # BUT:     EI NIITä VOI MUUTTAA!
@@ -1509,6 +1514,12 @@ REMOVE (Neg) (NOT *-1 NEGV) (NOT *1 NEGV)
 REMOVE (Neg) (NOT *-1 NEGV) (*1 NEGV LINK *1C Neg)
   # IF NEGV ONLY ON THE RIGHT, AND IT IS ENGAGED, OUT WITH NEG.
 REMOVE (Neg) (*-1 NEGV LINK 1C Neg) (NOT -1 CLB?)
+
+# Negative coordination: ei huolia kiinnittää, in situations where kiinnittää is ambiguous
+SELECT (V Inf1) IF (0 (Ind Prs)) (-1 (V Neg))
+
+
+
 SELECT (Pass "alkaa") (0 ALETA) # XXXX SHOULD BE UNDER Pass
 REMOVE (V "juuria") (NOT 1 DUMMY)
 REMOVE (V "eritä") (NOT 1 DUMMY)
@@ -1933,6 +1944,16 @@ REMOVE (N "osanen") (NOT 1 Par) #osa/osanen (osasta)
 SELECT (AD "vähän") (1 Gen) (2 JALKEEN) # 4.2.2001 !!->! cf.below
 REMOVE (AD "vähän") (NOT 1C CMP-ENNEN) (NOT 2 JALKEEN)# 4.2.2001 !!->! cf.below
 
+# Syntactic Tags
+# --------------
+
+
+# Assigning object case difficult across clause boundaries: 
+
+# Minä en halua, että hän on minua älykkäämpi. Ostan riisiä.
+# Cannot have @OBJ on minua here.
+
+
 SECTION
 # Subj to the left of verb
 # MAP (@SUBJ) Target Nom IF ((*1 (V Act)) OR (*-1 (V Act)))
@@ -1957,18 +1978,22 @@ MAP (@OBJ) TARGET Nom (0 WORD LINK *1 (Pass))
 # Syötiin lounas
 MAP (@OBJ) TARGET Nom IF (0 WORD LINK *-1 Pass)
 
+MAP (@OBJ) TARGET Par IF (0 WORD LINK *-1 Neg) #) (NOT 0 WORD LINK *-1 (Punct) *-2 (Neg))
+
+# Big problems: 
+# Harakka vaipuu yhä syvemmälle höyheniensä sisään, ei huoli@Subj> kiinnittää huomiotaan mihinkään.
 
 
 # Beginning vaguely existential things
 # --------
-
-# Lumi pyryttää nurkissa.
-REMOVE (V Inf1) IF (0 WORD LINK *-1 (@SUBJ>))
+# ***
+# REMOVE (V Inf1) IF (0 WORD LINK *-1 (@SUBJ>))
 
 # Ihmisiä tungeksi kadulla.
 # This is not solved yet.
 MAP (@<ADVL @LOC) TARGET LOC-CASE (0 WORD LINK -1 (V Act Ind Prt Sg3))
 MAP (@SUBJ>) TARGET (Par) (0 WORD LINK 1 (V Sg3)) (0 WORD LINK *1 @<ADVL)
+
 # Currently this is tied to a subject and adverbial
 # Ideally it should be more about nonagreeing subjects
 # Also @EXIST(ENTIAL) is arguably more semantic than anything.
@@ -1980,6 +2005,12 @@ MAP (@SUBJ>) TARGET (Par) (0 WORD LINK 1 (V Sg3)) (0 WORD LINK *1 @<ADVL)
 # MAP (@NONAGR) TARGET (V Sg3) (0 WORD LINK *-1 (N Pl @SUBJ>))
 # SYNTACTIC-CONSTRAINTS
 
+MAP (@PCLE) TARGET Pcle
+
+MAP (@NUM<) TARGET (N Sg Par) (0 WORD LINK -1 (Num Card)) # kaksi kirjaa
+MAP (@NUM<) TARGET (N Sg Nom) (0 WORD LINK -1 (Num Card)) # yksi kirja
+
+SELECT (Num Card) (0 WORD LINK 1 (@NUM<)) # make sure number is selected
 
 SECTION
 
