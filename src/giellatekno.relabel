@@ -1,6 +1,9 @@
 ']	@0@
 [BOUNDARY=COMPOUND]	+# 
 [BOUNDARY=ULTIMATE]	@0@
+[CASE=NOM,ACC]	+Nom
+[CASE=GEN,ACC]	+Gen
+[CASE=LAT]	+Lat
 [CASE=ABE]	+Abe
 [CASE=ABL]	+Abl
 [CASE=ACC]	+Acc
@@ -10,13 +13,10 @@
 [CASE=DIS]	+Dis
 [CASE=ELA]	+Ela
 [CASE=ESS]	+Ess
-[CASE=GEN,ACC]	+Gen
 [CASE=GEN]	+Gen
 [CASE=ILL]	+Ill
 [CASE=INE]	+Ine
 [CASE=INS]	+Ins
-[CASE=LAT]	+Lat
-[CASE=NOM,ACC]	+Nom
 [CASE=NOM]	+Nom
 [CASE=PAR]	+Par
 [CASE=PRL]	+Prl
@@ -159,7 +159,6 @@
 [MOOD=IMPV]	+Imprt
 [MOOD=INDV]	+Ind
 [MOOD=POTN]	+Pot
-[NUM_CASE=SG_NOM,SG_GEN,SG_ACC,PL_GEN,PL_ACC]	+Sg+Nom|+Sg+Gen|+Pl+Gen
 [NUM=PL]	+Pl
 [NUM=SG,PL]	@0@
 [NUM=SG]	+Sg
@@ -201,4 +200,4 @@
 [STY=RARE]	@0@
 [TENSE=PAST]	+Prt
 [TENSE=PRES]	+Prs
-[##]	
+[##]	@0@
