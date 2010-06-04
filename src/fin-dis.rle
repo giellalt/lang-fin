@@ -431,7 +431,7 @@ LIST COND = COND ;
 
 
 LIST INTG = INTG ; 
-LIST INTJ = INTJ ; 
+LIST INTJ = Interj ;  # FMT: INTJ → Interj 
 LIST MAINV = Prs Prt Imp ; 
 LIST MAINV/CLB? = Prs Prt Imp BOS EOS "<$\:>" "<$\#>" "<$\(>" "<$\>" "<$\'>" "<$\">" "<$\,>" c ; 
 LIST MAN = MAN ; 
@@ -611,6 +611,7 @@ SECTION
 
 ## Trond
 REMOVE Pcle ;
+REMOVE INTJ ; # FMT: The above rules do not work for "Niin he jättivät kohta verkot ja seurasivat häntä" 
 
 # Messing with imperative...
 SELECT Prop IF (NOT -1 BOS OR Punct);
