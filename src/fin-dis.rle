@@ -387,6 +387,12 @@ LIST ComMA = "<$\,>" Punct ;
 LIST ComMA/N/Pron/Q = "<$\,>" N Pron Q ; 
 LIST ComMA/N/Pron/Q/V/SUP/BOS = "<$\,>" N Pron Q V SUP BOS "kuin" ; 
 
+# Clause boundaries 
+# -----------------
+
+LIST Compl = C ETTA ComMA Punct "joten" "jotta" ETTA JOS KUN KOSKA VAIKKA ; 
+
+
 
 # Things to sort
 # --------------
@@ -599,6 +605,7 @@ SECTION
 ### TODO: 
 # CLAUSE BOUNDARY CONSTRAINTS
 
+
 ### =**CLB (ComMA) (0 Punct)
 ### =**CLB (C) (1 VFIN)
 ### =**CLB (C) (2 VFIN)
@@ -608,6 +615,25 @@ SECTION
 ### =**CLB (KO) (NOT 1 DUMMY)
 ### =**CLB (Adv) (0 KUINKA-MITEN-MIllOIN)
 ### Do not understand these. Trond.
+
+# looks like = is just ADD.
+
+ADD (CLB) ComMA IF (0 (Punct)) (NOT 0 (CLB)) ;
+ADD (CLB) C IF (1 VFIN) (NOT 0 (CLB)) ;
+ADD (CLB) C IF (2 VFIN) (NOT 0 (CLB)) ;
+ADD (CLB) C IF (3 VFIN) (NOT 0 (CLB)) ;
+
+### #(@w =**CLB (C) (NOT 1 DUMMY)
+# do not understand this one - Ryan
+
+ADD (CLB) Compl IF (NOT 1 DUMMY) (NOT 0 (CLB)) ;
+ADD (CLB) (Rel) IF (NOT 1 DUMMY) (NOT 0 (CLB)) ;
+ADD (CLB) (KO) IF (NOT 1 DUMMY) (NOT 0 (CLB)) ;
+ADD (CLB) (Adv) IF (0 KUINKA-MITEN-MIllOIN) (NOT 0 (CLB)) ;
+
+
+# Including (NOT 0 (CLB)) because it adds multiple times otherwise - Ryan
+
 
 ## Trond
 REMOVE Pcle ;
