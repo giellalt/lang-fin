@@ -2081,9 +2081,10 @@ MAP (@OBJ) TARGET Par IF (0 WORD LINK *-1 Neg) #) (NOT 0 WORD LINK *-1 (Punct) *
 # Verb mappings
 # ------------- 
 
-MAP (@-FAUXV) TARGET ConNeg (-1 Neg LINK -1 Nom) ;  # (*1 (N Nom) BARRIER NPNH LINK *-1 Neg LINK -1 Nom) ; 
+MAP (@-FAUXV) TARGET ConNeg (0 WORD LINK -1 Neg) ;
+MAP (@-FAUXV) TARGET ConNeg (0 WORD LINK -1 Neg LINK -1 Nom) ;  # (*1 (N Nom) BARRIER NPNH LINK *-1 Neg LINK -1 Nom) ; 
 
-MAP (@+FAUXV) TARGET AUX ;
+MAP (@+FAUXV) TARGET AUX (NOT 0 ConNeg) ;
 MAP (@+FAUXV) TARGET ("ei") ;
 
 # Minä en ole (koskaan) soittanut Jukalle.
