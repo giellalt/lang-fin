@@ -37,7 +37,7 @@ LIST Adv = Adv ;
 LIST V = V ; 
 LIST Pron = Pron ;
 LIST Adp = Adp ;
-
+LIST Conj = Conj ;
 LIST PP = PP Adv Adp;
 
 LIST Pcle = Pcle ;
@@ -131,8 +131,8 @@ LIST Gen/Num = Gen Num <DIGIT> ;
 # -------------------
 
 LIST Neg = Neg ; 
-
-LIST NEGV = "ei" ; 
+LIST NEGV = "ei" ;
+LIST ConNeg = ConNeg ; 
 
 LIST Prs = Prs ; 
 LIST Prt = Prt ; 
@@ -268,8 +268,6 @@ LIST JALKEEN = "jälkeen" ;
 LIST JOHDOSTA = "johdosta" ; 
 LIST JOKA = "joka" ; 
 LIST JOKIN = "jokin" ; 
-LIST JOS/KUN/KOSKA/VAIKKA = "jos" "kun" "koska" "vaikka" ; 
-LIST JOS/VAIKKA = "jos" "vaikka" ; 
 LIST JUURI = "juuri" "koko" ; 
 LIST KAIKKI = "kaikki" ; 
 LIST KAIKKIAAN = "kaikkiaan" ; 
@@ -352,7 +350,6 @@ LIST TULLA/SAADA = "tulla" "saada" ;
 LIST TULOS = "tulos" ; 
 LIST TUO = "tuo" ; 
 LIST UUSIA = "uusia" "pieniä" ; # AS A REPrsENTATIVE OF V/A -AMB 
-LIST VAIKKA/KUIN/JOS = "vaikka" "kuin" "jos" "ties" ; 
 LIST VAllAN = "vallan" ; 
 LIST VAllAN-WDS = "saada" "poliittinen" "taloudellinen" "presidentti" "edus_kunta" "kuningas" "anastaa" "pitää" "joutua" "alistaa" "alla" "ottaa" "antaa" "luovuttaa" ; 
 LIST VERRAN = "verta" ; 
@@ -373,7 +370,16 @@ LIST ENEMMAN = "enemmän" ;
 LIST ENNEN = "ennen" ; 
 LIST ERI = "eri" ; 
 LIST ESIM = "esimerkiksi" ; 
+
+# Complementizers
+# ---------------
+
 LIST ETTA = "että" ; 
+LIST VAIKKA/KUIN/JOS = "vaikka" "kuin" "jos" "ties" ; 
+LIST JOS/VAIKKA = "jos" "vaikka" ; 
+LIST JOS/KUN/KOSKA/VAIKKA = "jos" "kun" "koska" "vaikka" ; 
+
+LIST Compl = C ETTA ComMA Punct "joten" "jotta" ETTA JOS KUN KOSKA VAIKKA KUIN ; 
 
 
 # Question Words
@@ -412,10 +418,6 @@ LIST ComMA = "<$\,>" Punct ;
 LIST ComMA/N/Pron/Q = "<$\,>" N Pron Q ; 
 LIST ComMA/N/Pron/Q/V/SUP/BOS = "<$\,>" N Pron Q V SUP BOS "kuin" ; 
 
-# Clause boundaries 
-# -----------------
-
-LIST Compl = C ETTA ComMA Punct "joten" "jotta" ETTA JOS KUN KOSKA VAIKKA ; 
 
 
 
@@ -655,7 +657,7 @@ ADD (CLB) Compl IF (NOT 1 DUMMY) (NOT 0 (CLB)) ;
 ADD (CLB) (Rel) IF (NOT 1 DUMMY) (NOT 0 (CLB)) ;
 ADD (CLB) (KO) IF (NOT 1 DUMMY) (NOT 0 (CLB)) ;
 ADD (CLB) (Adv) IF (0 KUINKA-MITEN-MIllOIN) (NOT 0 (CLB)) ;
-
+ADD (CLB) Conj IF (NOT 0 (CC)) (NOT 0 (CLB)) ; 
 
 # Including (NOT 0 (CLB)) because it adds multiple times otherwise - Ryan
 
@@ -664,8 +666,10 @@ ADD (CLB) (Adv) IF (0 KUINKA-MITEN-MIllOIN) (NOT 0 (CLB)) ;
 REMOVE Pcle ;
 REMOVE INTJ ; # FMT: The above rules do not work for "Niin he jättivät kohta verkot ja seurasivat häntä" 
 
-# Messing with imperative...
-SELECT Prop IF (NOT -1 BOS OR Punct);
+# This is problematic: hänen on pakko ostaa, selects prop.
+# SELECT Prop IF (NOT -1 BOS OR Punct);
+
+SELECT (V Inf1) IF (-1 (@NES)) (-2 (@+FAUXV))
 
 SECTION
 
@@ -1555,7 +1559,8 @@ SELECT (AgPcp Par) (1C Par) (-1C Gen) (-1 N)
 # Negative Forms
 # --------------
 
-SELECT (Neg) (-1 NEGV) (NOT 0 NEG-AMBIGUOUS) (NOT 1 Neg) (NOT 1 Prs) (0 Prs/Prt)
+SELECT ConNeg (-1 NEGV) (NOT 0 NEG-AMBIGUOUS) (NOT 1 Neg) (NOT 1 Prs) (0 Prs/Prt)
+
   # EI HALUTA/=!# EIKä HEITä LöYDY
   # BUT:     EI NIITä VOI MUUTTAA!
   #     EIKä MUUTA PYYDetä KUIN
@@ -2037,14 +2042,24 @@ SET BOC-PUNCT = BOC - ("-") - ("–") ;
 SET EOC = S-BOUNDARY OR EOS ;
 SET EOC2 = S-BOUNDARY2 OR EOS ;
 
+# Complementizers 
+# ---------------
+
+MAP (@CVP) TARGET CC ; 
+
+
+
+
+# Mapping subjects and objects
+# ----------------------------
+
 # Subj to the left of verb
 # MAP (@SUBJ) Target Nom IF ((*1 (V Act)) OR (*-1 (V Act)))
 # MAP (@SUBJ) Target Nom (0 WORD LINK *1 (V Act))
 
-# minun pitää ostaa kirja
-MAP (@NES) TARGET NES IF (*-1 Gen BARRIER (CLB))
-
-MAP (@SUBJ> @NEC-SUBJ) TARGET Gen IF (0 WORD LINK *1 (@NES) BARRIER (CP))
+# Jukan isä ja äiti menivät kotiin koska heidän oli pakko ostaa auto.
+# @NEC-SUBJ assigned only within clause.
+MAP (@SUBJ> @NEC-SUBJ) TARGET Gen IF (0 WORD LINK *1 (@NES) BARRIER (CLB))
 MAP (@OBJ) TARGET Nom IF (0 WORD LINK *-1 (Gen)) (*-1 NES)
 
 # Me ostettiin kirja.
@@ -2063,7 +2078,10 @@ MAP (@OBJ) TARGET Nom IF (0 WORD LINK *-1 Pass)
 MAP (@OBJ) TARGET Par IF (0 WORD LINK *-1 Neg) #) (NOT 0 WORD LINK *-1 (Punct) *-2 (Neg))
 
 
-# Auxilliaries
+# Verb mappings
+# ------------- 
+
+MAP (@-FAUXV) TARGET ConNeg (-1 Neg LINK -1 Nom) ;  # (*1 (N Nom) BARRIER NPNH LINK *-1 Neg LINK -1 Nom) ; 
 
 MAP (@+FAUXV) TARGET AUX ;
 MAP (@+FAUXV) TARGET ("ei") ;
@@ -2072,13 +2090,12 @@ MAP (@+FAUXV) TARGET ("ei") ;
 MAP (@-FAUXV) TARGET PrfPrc IF (*-1 REALCOPULAS BARRIER (CLB)) ;
 MAP (@-FAUXV) TARGET InfV IF (*-1 REALCOPULAS BARRIER (CLB)) ;
 
+# minun pitää ostaa kirja
+MAP (@NES) TARGET NES IF (*-1 Gen BARRIER (CLB))
 
-# @CVP
-MAP (@CVP) TARGET CC ; 
 
-
-# Beginning vaguely existential things
-# --------
+# Existential Sentences
+# ---------------------
 # ***
 # REMOVE (V Inf1) IF (0 WORD LINK *-1 (@SUBJ>))
 
@@ -2104,6 +2121,33 @@ MAP (@NUM<) TARGET (N Sg Par) (0 WORD LINK -1 (Num Card)) # kaksi kirjaa
 MAP (@NUM<) TARGET (N Sg Nom) (0 WORD LINK -1 (Num Card)) # yksi kirja
 
 SELECT (Num Card) (0 WORD LINK 1 (@NUM<)) # make sure number is selected
+
+
+# Habitive mappings 
+# -----------------
+	# Habitive mappings
+	# -------------------
+
+# I do not yet have the sanity to implement an animacy hierarchy ;) 
+# hän ei saa tietää, että minulla on kaksi kissaa.
+MAP (@HAB) TARGET Ade IF (0 (Pron Pers)) (1 REALCOPULAS) ;
+
+# MAP:r495 (@HAB) TARGET Loc IF (0 HAB-ACTOR)(NEGATE 0 HAB-ACTOR-NOT-HUMAN LINK *1 HUMAN BARRIER (N Nom))(1 AUX LINK *1 ("leat") BARRIER NP-HEAD OR FMAINV);
+# MAP:r496 (@HAB) TARGET Loc IF (0 HAB-ACTOR)(NEGATE 0 HAB-ACTOR-NOT-HUMAN LINK *1 HUMAN BARRIER (N Nom))(1 AUX LINK 1 Adv LINK *1 ("leat") BARRIER NOT-ADV-PCLE);
+# MAP:r497 (@HAB) TARGET Loc IF (0 HAB-ACTOR)(NEGATE 0 HAB-ACTOR-NOT-HUMAN LINK *1 HUMAN BARRIER (N Nom))(*1 ("leat") BARRIER NOT-ADV-PCLE);
+# MAP:r498 (@HAB) TARGET Loc IF (0 HAB-ACTOR)(NEGATE 0 HAB-ACTOR-NOT-HUMAN LINK *1 HUMAN BARRIER (N Nom))(1 CC LINK *1 HAB-ACTOR BARRIER NPNH LINK *1 ("leat") BARRIER NOT-ADV-PCLE);
+# MAP:r499 (@HAB) TARGET Loc IF (0 HAB-ACTOR)(NEGATE 0 HAB-ACTOR-NOT-HUMAN LINK *1 HUMAN BARRIER (N Nom))(*1 HAB-VERB BARRIER NOT-ADV-PCLE LINK *1 Nom BARRIER VFIN);
+# MAP:r500 (@HAB) TARGET Loc IF (0 HAB-ACTOR)(*-1 go BARRIER NPNH LINK -1 ("leat") LINK -1 BOC);
+# MAP (@HAB) TARGET Loc IF (0 HAB-ACTOR)(*-1 go BARRIER NPNH LINK -1 ("leat") LINK -1 V-MAIN);
+# MAP:r501 (@HAB) TARGET Ill IF (0 HAB-ACTOR LINK *-1 BOS BARRIER NPNHA)(*1 COPULAS BARRIER NOT-ADV-PCLE LINK *1 A OR N BARRIER NOT-ADV-PCLE);
+
+# MAP:r502 (@HAB) TARGET Loc IF (-1 Mal OR Fem)(0 Ord)(NEGATE 0 HAB-ACTOR-NOT-HUMAN LINK *1 HUMAN BARRIER (N Nom))(*1 ("leat") BARRIER NOT-ADV-PCLE);
+	## Heinrich njealjádis lea rikkis eamit.
+
+# before relative clause
+# MAP:r497 (@HAB) TARGET Loc IF (0 HAB-ACTOR)(NEGATE 0 HAB-ACTOR-NOT-HUMAN LINK *1 HUMAN BARRIER (N Nom))(*1 Rel BARRIER WORD LINK *1 VFIN BARRIER SV-BOUNDARY2 LINK *1 ("leat") BARRIER SV-BOUNDARY2);
+    ## Divššohasas, gii dárbbaša guhkit áiggi ja oktiiheivehuvvon dearvvašvuođabálvalusaid, lea vuoigatvuohta oažžut ráhkaduvvot oktagaslaš plána.
+
 
 SECTION
 
