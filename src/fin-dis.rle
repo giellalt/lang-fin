@@ -285,7 +285,6 @@ LIST KO = KO ;
 LIST KOKO = "koko" ; 
 LIST KOOTA = "koota" "haluta" "siirtää" "siirtyä" "tulla" "mennä" "ottaa" "vetää" "sijoittaa" "majoittaa" "muuttaa" ; 
 LIST KUIN = "kuin" ; 
-LIST KUINKA-MITEN-MIllOIN = "kuinka" "miten" "milloin" ; 
 LIST KYSY = "kysyä" "kysymys" "tiedustelu" "tiedustella" KO ; 
 LIST LAIllA = "lailla" ; 
 LIST MAANANTAI = "maanantai" "tiistai" "keskiviikko" "torstai" "perjantai"  "lauantai" "sunnuntai" ; 
@@ -294,8 +293,7 @@ LIST LUKU = "num-luku" ;
 LIST MAKSAA = "maksaa" "tuntua" ; 
 LIST ME = "me" ; 
 LIST MENNA = "mennä" ; 
-LIST MIELI = "mieli" ; 
-LIST MIKA-KUKA = "mikä" "kuka" ; 
+LIST MIELI = "mieli" ;  
 LIST MINA = "minä" ; 
 LIST MITTAIneN = "mittainen" "pituinen" "kokoinen" "oloinen" "tuntuinen" "näköinen" "painoinen" "kaltainen" "tapainen" "mukainen" "sorttinen" ; 
 LIST MUKAIneN = "mukainen" "tuntuinen" "oloinen"  ; 
@@ -376,6 +374,17 @@ LIST ENNEN = "ennen" ;
 LIST ERI = "eri" ; 
 LIST ESIM = "esimerkiksi" ; 
 LIST ETTA = "että" ; 
+
+
+# Question Words
+# --------------
+
+LIST MIKA-KUKA = "mikä" "kuka" ;
+LIST KUINKA-MITEN-MIllOIN = "kuinka" "miten" "milloin" ; 
+
+SET QWords = MIKA-KUKA OR KUINKA-MITEN-MIllOIN ;
+
+
 
 LIST REALCOPULAS = "olla" "voida" "saattaa" ;
 
@@ -2003,13 +2012,39 @@ REMOVE (AD "vähän") (NOT 1C CMP-ENNEN) (NOT 2 JALKEEN)# 4.2.2001 !!->! cf.belo
 
 
 SECTION
+# Need better clause boundaries
+
+LIST CS = CS ;
+LIST CCC = CC ;
+SET CC = CCC - ("sekä") ;
+SET CC-CS = CC OR CS ;
+
+# LIST MO-MANge = "goas" "gokko" "gos" "gosa" "govt" "makkár" "man" "manne" "mo" "mot" "mov" "movt" ("nugo" @CVP) (V Qst);
+ 
+# SET MO = MO-MANge - ("man" Foc/ge) ; 
+
+SET CP = (Pron Interr) OR (Pron Rel) OR QWords OR JOS/KUN/KOSKA/VAIKKA;
+
+# MIKA-KUKA
+
+SET S-BOUNDARY  = (Pron Interr) OR (Pron Rel) OR ("mutta") OR ("sitten" CC) OR QWords OR ("\;") OR (":") OR ("-") OR ("–") OR CS ;
+SET S-BOUNDARY1  = (Pron Interr) OR (Pron Rel) OR ("mutta") OR ("sitten" CC) OR QWords OR ("\;") OR (":") OR ("-") OR ("–") ;
+SET S-BOUNDARY2 = (Pron Interr) OR (Pron Rel) OR ("mutta") OR ("sitten" CC) OR QWords OR ("\;") OR (":") OR ("-") OR ("–") OR (@CVP) ;
+ 
+SET BOC = S-BOUNDARY OR BOS ;
+SET BOC2 = S-BOUNDARY2 OR BOS ;
+SET BOC-PUNCT = BOC - ("-") - ("–") ; 
+SET EOC = S-BOUNDARY OR EOS ;
+SET EOC2 = S-BOUNDARY2 OR EOS ;
+
 # Subj to the left of verb
 # MAP (@SUBJ) Target Nom IF ((*1 (V Act)) OR (*-1 (V Act)))
 # MAP (@SUBJ) Target Nom (0 WORD LINK *1 (V Act))
 
 # minun pitää ostaa kirja
-MAP (@NES) TARGET NES IF (*-1 Gen)
-MAP (@SUBJ> @NEC-SUBJ) TARGET Gen IF (0 WORD LINK *1 (@NES))
+MAP (@NES) TARGET NES IF (*-1 Gen BARRIER (CLB))
+
+MAP (@SUBJ> @NEC-SUBJ) TARGET Gen IF (0 WORD LINK *1 (@NES) BARRIER (CP))
 MAP (@OBJ) TARGET Nom IF (0 WORD LINK *-1 (Gen)) (*-1 NES)
 
 # Me ostettiin kirja.
@@ -2025,28 +2060,22 @@ MAP (@OBJ) TARGET Nom (0 WORD LINK *1 (Pass))
 
 # Syötiin lounas
 MAP (@OBJ) TARGET Nom IF (0 WORD LINK *-1 Pass)
-
 MAP (@OBJ) TARGET Par IF (0 WORD LINK *-1 Neg) #) (NOT 0 WORD LINK *-1 (Punct) *-2 (Neg))
 
 
 # Auxilliaries
 
-# MAP (@+FAUXV) TARGET REALCOPULAS ; 
-# MAP (@+FAUXV) TARGET ("ei") ;
-
 MAP (@+FAUXV) TARGET AUX ;
 MAP (@+FAUXV) TARGET ("ei") ;
-
-# MAP:r418:AllFauxv (@+FAUXV) TARGET VFIN IF (0 AUX);
-
 
 # Minä en ole (koskaan) soittanut Jukalle.
 MAP (@-FAUXV) TARGET PrfPrc IF (*-1 REALCOPULAS BARRIER (CLB)) ;
 MAP (@-FAUXV) TARGET InfV IF (*-1 REALCOPULAS BARRIER (CLB)) ;
 
 
-# Big problems?
-# Harakka vaipuu yhä syvemmälle höyheniensä sisään, ei huoli@Subj> kiinnittää huomiotaan mihinkään.
+# @CVP
+# map @CVP -- better barriers above depend on it 
+MAP (@CVP) TARGET CC ; 
 
 
 # Beginning vaguely existential things
