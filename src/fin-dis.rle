@@ -2074,7 +2074,6 @@ MAP (@-FAUXV) TARGET InfV IF (*-1 REALCOPULAS BARRIER (CLB)) ;
 
 
 # @CVP
-# map @CVP -- better barriers above depend on it 
 MAP (@CVP) TARGET CC ; 
 
 
