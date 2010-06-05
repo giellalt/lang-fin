@@ -132,7 +132,7 @@ LIST Gen/Num = Gen Num <DIGIT> ;
 
 LIST Neg = Neg ; 
 
-LIST NEGV = NEGV "ei" ; 
+LIST NEGV = "ei" ; 
 
 LIST Prs = Prs ; 
 LIST Prt = Prt ; 
@@ -377,6 +377,22 @@ LIST ERI = "eri" ;
 LIST ESIM = "esimerkiksi" ; 
 LIST ETTA = "että" ; 
 
+LIST REALCOPULAS = "olla" "voida" "saattaa" ;
+
+# Some things to consider from sme-dis.rle
+ # These verbs can take arguments, so they do not belong in the AUX group, 
+ # but they are nevertheless mapped to (@+FAUXV). 
+ # Halvhjelpeverb: álgit, berret, dohkket, gártat, heivet, liigut, šaddat - in some of the meanings 
+
+# LIST MOD-ASP = "bállet" "berret" "dáidit" "fertet" "galgat" "gillet" "lávet"  "sáhttit" "seahtit" "soaitit" "viggat" ;
+
+# LIST AUX-OR-MAIN = "áigut" "álgit" "beassat" "galgat" "hálidit" "háliidit" "máhttit" "nagodit" "ollit" "orrut" "sihtat" "veadjit";
+
+LIST AUX-OR-MAIN = AUX-OR-MAIN ; # "aikoa" ;
+LIST MOD-ASP = MOD-ASP ;
+LIST COPULAS = "olla" "taitaa" "saattaa"  ; 
+
+SET AUX = COPULAS OR Neg OR MOD-ASP OR AUX-OR-MAIN ;
 
 
 # Punctuation 
@@ -1408,6 +1424,9 @@ SELECT Adp ((1 Par) or (-1 (Par or Gen)) or (2 Par))
 
 # risky; lumi pyryttää nurkissa -> removing "lative"
 # REMOVE InfV IF (@SUBJ)
+# requires BOS checking, which doesn't appear to work; or assigning CLB to BOS.
+
+# REMOVE InfV IF (0 InfV) (*-1 @SUBJ>) (*-1 BOS)
 
 # SELECT Adp (2 Par)
 # SELECT Adp (-1 Gen)
@@ -2009,7 +2028,24 @@ MAP (@OBJ) TARGET Nom IF (0 WORD LINK *-1 Pass)
 
 MAP (@OBJ) TARGET Par IF (0 WORD LINK *-1 Neg) #) (NOT 0 WORD LINK *-1 (Punct) *-2 (Neg))
 
-# Big problems: 
+
+# Auxilliaries
+
+# MAP (@+FAUXV) TARGET REALCOPULAS ; 
+# MAP (@+FAUXV) TARGET ("ei") ;
+
+MAP (@+FAUXV) TARGET AUX ;
+MAP (@+FAUXV) TARGET ("ei") ;
+
+# MAP:r418:AllFauxv (@+FAUXV) TARGET VFIN IF (0 AUX);
+
+
+# Minä en ole (koskaan) soittanut Jukalle.
+MAP (@-FAUXV) TARGET PrfPrc IF (*-1 REALCOPULAS BARRIER (CLB)) ;
+MAP (@-FAUXV) TARGET InfV IF (*-1 REALCOPULAS BARRIER (CLB)) ;
+
+
+# Big problems?
 # Harakka vaipuu yhä syvemmälle höyheniensä sisään, ei huoli@Subj> kiinnittää huomiotaan mihinkään.
 
 
