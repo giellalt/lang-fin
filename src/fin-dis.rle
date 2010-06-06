@@ -2083,23 +2083,30 @@ MAP (@CVP) TARGET CC ;
 # Jukan isä ja äiti menivät kotiin koska heidän oli pakko ostaa auto.
 # @NEC-SUBJ assigned only within clause.
 MAP (@SUBJ> @NEC-SUBJ) TARGET Gen IF (0 WORD LINK *1 (@NES) BARRIER (CLB))
-MAP (@OBJ) TARGET Nom IF (0 WORD LINK *-1 (Gen)) (*-1 NES)
+MAP (@<OBJ) TARGET Nom IF (0 WORD LINK *-1 (Gen)) (*-1 NES)
 
 # Me ostettiin kirja.
 MAP (@SUBJ>) TARGET (Pron Pl "minä") (0 Pron LINK *1 (Pe4))
-MAP (@OBJ) TARGET Nom IF (0 WORD LINK *-1 Pass) (*-1 Nom)
+MAP (@<OBJ) TARGET Nom IF (0 WORD LINK *-1 Pass) (*-1 Nom)
+    # Needs barriers
 
 # Jukka osti kirjan.
 MAP (@SUBJ>) TARGET Nom (0 WORD LINK *1 (Act))
-MAP (@OBJ) TARGET Gen (0 WORD LINK *-1 (Act)) (0 WORD LINK *-1 @SUBJ>)
+MAP (@<OBJ) TARGET Gen (0 WORD LINK *-1 (Act)) (0 WORD LINK *-1 @SUBJ>)
+    # Needs barriers
 
 # Lounas syötiin
-MAP (@OBJ) TARGET Nom (0 WORD LINK *1 (Pass))
+MAP (@OBJ>) TARGET Nom (0 WORD LINK *1 (Pass))
+    # Needs barriers
 
 # Syötiin lounas
-MAP (@OBJ) TARGET Nom IF (0 WORD LINK *-1 Pass)
-MAP (@OBJ) TARGET Par IF (0 WORD LINK *-1 Neg) #) (NOT 0 WORD LINK *-1 (Punct) *-2 (Neg))
+MAP (@<OBJ) TARGET Nom IF (0 WORD LINK *-1 Pass)
+MAP (@<OBJ) TARGET Par IF (0 WORD LINK *-1 Neg) #) (NOT 0 WORD LINK *-1 (Punct) *-2 (Neg))
+    # Needs barriers
 
+
+# Hän katsoi sitä ja otti sen pois. 
+MAP (@<OBJ) TARGET Par IF (0 WORD LINK *-1 V BARRIER S-BOUNDARY2) ;
 
 # Verb mappings
 # ------------- 
