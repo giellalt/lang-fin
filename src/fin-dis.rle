@@ -270,7 +270,6 @@ LIST HYVIN-1 = "hyvin" ;
 LIST HYVIN = "aikaisin" "alas" "alhaalla" "alhaalta" "alhaalle" "harvoin" "hiljaa" "kauan" "kauas" "kaukaa" "kaukana" "paljon" "pian" "sekaisin" "tarkoin" "suoraan" "usein" "varhain" "yksin" "mielellään" "vähän" "lähellä" "läheltä" "lähelle" "hyvin" "tyystin" "kovin" "monasti" "paljon" "usein" "ylhäällä" "usea" "harva" "moni" "monta" "kovaa" "hiljaa" "täynnä" ; 
 LIST Ill-POSP = "asti" ; 
 LIST Ill-VERB = "vaikuttaa" "rientää" "siirtää" "siirtyä" "pyytää" "tuoda" ; 
-LIST Inf1-VERB = "alkaa" "haluta" "tahtoa" "yrittää" "päättää" "saada" "voida"  "täytyä" "sallia" "luvata" "aikoa" "meinata" "pitää" "sietää" "tulla"  "tarvita" "viitsiä" "antaa" "muistaa" "unohtaa" "saattaa" "uskaltaa"  "pelätä" "kannattaa" "mahtaa" ; 
 LIST ITSE = "itse" ; 
 LIST JALKEEN = "jälkeen" ; 
 LIST JOHDOSTA = "johdosta" ; 
@@ -379,6 +378,18 @@ LIST ENNEN = "ennen" ;
 LIST ERI = "eri" ; 
 LIST ESIM = "esimerkiksi" ; 
 
+# VERB LISTS
+# ----------
+
+LIST Inf1-VERB = "alkaa" "haluta" "tahtoa" "yrittää" "päättää" "saada" "voida"  "täytyä" "sallia" "luvata" "aikoa" "meinata" "pitää" "sietää" "tulla"  "tarvita" "viitsiä" "antaa" "muistaa" "unohtaa" "saattaa" "uskaltaa"  "pelätä" "kannattaa" "mahtaa" ; 
+LIST Inf3-VERB = "päästä" "alkaa" "ruveta" ; 
+LIST REALCOPULAS = "olla" "voida" "saattaa" ;
+LIST MOD-ASP = MOD-ASP ;
+LIST COPULAS = "olla" "taitaa" "saattaa"  ; 
+
+SET AUX-OR-MAIN = Inf1-VERB OR Inf3-VERB ; 
+SET AUX = COPULAS OR Neg OR MOD-ASP OR AUX-OR-MAIN ;
+
 # Complementizers
 # ---------------
 
@@ -400,8 +411,6 @@ SET QWords = MIKA-KUKA OR KUINKA-MITEN-MIllOIN ;
 
 
 
-LIST REALCOPULAS = "olla" "voida" "saattaa" ;
-
 # Some things to consider from sme-dis.rle
  # These verbs can take arguments, so they do not belong in the AUX group, 
  # but they are nevertheless mapped to (@+FAUXV). 
@@ -409,12 +418,7 @@ LIST REALCOPULAS = "olla" "voida" "saattaa" ;
 
 # LIST MOD-ASP = "bállet" "berret" "dáidit" "fertet" "galgat" "gillet" "lávet"  "sáhttit" "seahtit" "soaitit" "viggat" ;
 
-SET AUX-OR-MAIN = Inf1-VERB ; # "aikoa", etc ;
 
-LIST MOD-ASP = MOD-ASP ;
-LIST COPULAS = "olla" "taitaa" "saattaa"  ; 
-
-SET AUX = COPULAS OR Neg OR MOD-ASP OR AUX-OR-MAIN ;
 
 
 # Punctuation 
@@ -2044,10 +2048,19 @@ SET CP = (Pron Interr) OR (Pron Rel) OR QWords OR JOS/KUN/KOSKA/VAIKKA;
 
 # MIKA-KUKA
 
+# Boundaries
+# ----------
+
+SET V-MAIN = V - COPULAS - Neg - MOD-ASP OR ("orrut") ;
+
 SET S-BOUNDARY  = (Pron Interr) OR (Pron Rel) OR ("mutta") OR ("sitten" CC) OR QWords OR ("\;") OR (":") OR ("-") OR ("–") OR CS ;
 SET S-BOUNDARY1  = (Pron Interr) OR (Pron Rel) OR ("mutta") OR ("sitten" CC) OR QWords OR ("\;") OR (":") OR ("-") OR ("–") ;
 SET S-BOUNDARY2 = (Pron Interr) OR (Pron Rel) OR ("mutta") OR ("sitten" CC) OR QWords OR ("\;") OR (":") OR ("-") OR ("–") OR (@CVP) ;
- 
+
+# OR Sup
+SET SV-BOUNDARY = S-BOUNDARY OR InfV OR V-MAIN - PrsPrc ;
+
+
 SET BOC = S-BOUNDARY OR BOS ;
 SET BOC2 = S-BOUNDARY2 OR BOS ;
 SET BOC-PUNCT = BOC - ("-") - ("–") ; 
@@ -2094,6 +2107,10 @@ MAP (@OBJ) TARGET Par IF (0 WORD LINK *-1 Neg) #) (NOT 0 WORD LINK *-1 (Punct) *
 # Mostly same as sme rule, but removed (0 ("orrut")); is it worth including copulas here? Finnish doesn't quite have quite the same here
 MAP (@+FMAINV) TARGET VFIN IF (NEGATE *0 VERB BARRIER S-BOUNDARY2 OR CC) ;
 MAP (@+FMAINV) TARGET VFIN IF (0 AUX-OR-MAIN) (NEGATE *1 InfV BARRIER S-BOUNDARY2) ;
+
+MAP (@-FMAINV) TARGET InfV ;
+MAP (@-FMAINV) TARGET VFIN IF (0 InfV) (NEGATE *1 PrfPrc OR (V Inf3) BARRIER SV-BOUNDARY) ;
+
 
 MAP (@-FAUXV) TARGET ConNeg (0 WORD LINK -1 Neg) ;
 MAP (@-FAUXV) TARGET ConNeg (0 WORD LINK -1 Neg LINK -1 Nom) ;  # (*1 (N Nom) BARRIER NPNH LINK *-1 Neg LINK -1 Nom) ; 
