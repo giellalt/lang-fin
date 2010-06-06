@@ -175,6 +175,14 @@ LIST DV-US = DV-US ;
 LIST DER = DA-UUS DA-US DN-IneN DN-LAIneN DN-LLIneN DN-UUS DN-MINEN Der/minen Der/u ;
 LIST DV = DV-MINEN DV-US DV-NTA DV-TTA ; 
 
+# All derivation tags in omorfi: 
+#   +Der/inen +Der/ja +Der/lainen +Der/llinen 
+#   +Der/minen +Der/oi +Der/sti +Der/tar +Der/ton 
+#   +Der/tse +Der/ttain +Der/u +Der/vs
+
+# LIST N-DER = Der/minen Der/u Der/ja Der/tar; 
+
+# LIST V-DER = V-DER ; # 
 
 # Phrasal groups
 # --------------
@@ -401,9 +409,8 @@ LIST REALCOPULAS = "olla" "voida" "saattaa" ;
 
 # LIST MOD-ASP = "bállet" "berret" "dáidit" "fertet" "galgat" "gillet" "lávet"  "sáhttit" "seahtit" "soaitit" "viggat" ;
 
-# LIST AUX-OR-MAIN = "áigut" "álgit" "beassat" "galgat" "hálidit" "háliidit" "máhttit" "nagodit" "ollit" "orrut" "sihtat" "veadjit";
+SET AUX-OR-MAIN = Inf1-VERB ; # "aikoa", etc ;
 
-LIST AUX-OR-MAIN = AUX-OR-MAIN ; # "aikoa" ;
 LIST MOD-ASP = MOD-ASP ;
 LIST COPULAS = "olla" "taitaa" "saattaa"  ; 
 
@@ -419,6 +426,11 @@ LIST ComMA/N/Pron/Q = "<$\,>" N Pron Q ;
 LIST ComMA/N/Pron/Q/V/SUP/BOS = "<$\,>" N Pron Q V SUP BOS "kuin" ; 
 
 
+# Sets
+
+SET VERB = V - (V N);
+  # V is all readings with a V tag in them, VERB should
+            # be the ones without an N tag following the V  
 
 
 # Things to sort
@@ -2048,8 +2060,6 @@ SET EOC2 = S-BOUNDARY2 OR EOS ;
 MAP (@CVP) TARGET CC ; 
 
 
-
-
 # Mapping subjects and objects
 # ----------------------------
 
@@ -2080,6 +2090,10 @@ MAP (@OBJ) TARGET Par IF (0 WORD LINK *-1 Neg) #) (NOT 0 WORD LINK *-1 (Punct) *
 
 # Verb mappings
 # ------------- 
+
+# Mostly same as sme rule, but removed (0 ("orrut")); is it worth including copulas here? Finnish doesn't quite have quite the same here
+MAP (@+FMAINV) TARGET VFIN IF (NEGATE *0 VERB BARRIER S-BOUNDARY2 OR CC) ;
+MAP (@+FMAINV) TARGET VFIN IF (0 AUX-OR-MAIN) (NEGATE *1 InfV BARRIER S-BOUNDARY2) ;
 
 MAP (@-FAUXV) TARGET ConNeg (0 WORD LINK -1 Neg) ;
 MAP (@-FAUXV) TARGET ConNeg (0 WORD LINK -1 Neg LINK -1 Nom) ;  # (*1 (N Nom) BARRIER NPNH LINK *-1 Neg LINK -1 Nom) ; 
