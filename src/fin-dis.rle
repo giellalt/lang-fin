@@ -2345,6 +2345,10 @@ MAP (@ADVL @N>) TARGET (ORD Num Sg Ela) (1 ("<(.*):nnestä>"r)) (2 ("<(.*):nnest
 MAP (@ADVL @N>) TARGET (ORD Num Sg Ess) (1 ("<(.*):ntenä>"r)) (2 ("<(.*):ntenä>"r))
 
 
+MAP (@X) TARGET WORD ;
+
+REMOVE (@X) ;
+
  #GENERIC Sg Nom FOR All OTHER InsTANCES
  
 #h# =h ((N Sg Nom (@SUBJ @OBJ @PC @N>)) (@1 NIL) (@2 NI
