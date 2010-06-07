@@ -39,6 +39,7 @@ LIST Pron = Pron ;
 LIST Adp = Adp ;
 LIST Conj = Conj ;
 LIST PP = PP Adv Adp;
+LIST Part = Part ; # particle? still in use?
 
 LIST Pcle = Pcle ;
 
@@ -68,14 +69,14 @@ LIST PERS = PERS ;
 LIST Nom = Nom ; 
 LIST Ade = Ade ; 
 LIST Gen = Gen ; 
-LIST Part = Part ;
 LIST Ela = Ela ; 
 LIST Ess = Ess ; 
 LIST Ill = Ill ; 
 LIST Ine = Ine ; 
 LIST Tra = Tra ; 
 LIST Ins = Ins ; 
-
+LIST Par = Par ;
+LIST Acc = Acc ; 
 LIST MINEN = minen ;
 
 LIST Prop = Prop ; 
@@ -118,7 +119,6 @@ LIST Nom/Par = Nom Par ;
 
 LIST NONSUBJECT-CASE = Ess Tra Ine Ela Ill Ade Abl All Abe Com Ins ; 
 LIST NOT-Gen-CASE = Nom Par Ine Ela Ill Ade Abl All Ess Tra Abe Com Ins ; 
-LIST Par = Par ; 
 LIST Par/Gen = Par Gen ; 
 LIST Par/Punct = Par Punct ; 
 LIST INT-LOC = Ine Ela Ill ; 
@@ -399,7 +399,6 @@ LIST JOS/VAIKKA = "jos" "vaikka" ;
 LIST JOS/KUN/KOSKA/VAIKKA = "jos" "kun" "koska" "vaikka" ; 
 
 LIST Compl = C ETTA ComMA Punct "joten" "jotta" ETTA JOS KUN KOSKA VAIKKA KUIN ; 
-
 
 # Question Words
 # --------------
@@ -2070,8 +2069,10 @@ SET EOC2 = S-BOUNDARY2 OR EOS ;
 # Complementizers 
 # ---------------
 
-MAP (@CVP) TARGET CC ; 
+# Simple for now.
 
+MAP (@CVP) TARGET ("kun") ;
+MAP (@CNP) TARGET ("ja") ;
 
 # Mapping subjects and objects
 # ----------------------------
@@ -2086,13 +2087,16 @@ MAP (@SUBJ> @NEC-SUBJ) TARGET Gen IF (0 WORD LINK *1 (@NES) BARRIER (CLB))
 MAP (@<OBJ) TARGET Nom IF (0 WORD LINK *-1 (Gen)) (*-1 NES)
 
 # Me ostettiin kirja.
-MAP (@SUBJ>) TARGET (Pron Pl "minä") (0 Pron LINK *1 (Pe4))
+MAP (@SUBJ>) TARGET (Pron Pl "minä") (0 Pron LINK *1 (Pe4) BARRIER (CLB))
 MAP (@<OBJ) TARGET Nom IF (0 WORD LINK *-1 Pass) (*-1 Nom)
     # Needs barriers
 
 # Jukka osti kirjan.
-MAP (@SUBJ>) TARGET Nom (0 WORD LINK *1 (Act))
-MAP (@<OBJ) TARGET Gen (0 WORD LINK *-1 (Act)) (0 WORD LINK *-1 @SUBJ>)
+
+MAP (@SUBJ>) TARGET Nom (0 WORD LINK *1 (Act) BARRIER (CLB))
+MAP (@<OBJ) TARGET Gen (0 WORD LINK *-1 (Act)) (0 WORD LINK *-1 @SUBJ> BARRIER (CLB)) (NEGATE 0 WORD LINK *-1 REALCOPULAS BARRIER (CLB)) (NEGATE 0 WORD LINK -1 (@<OBJ));
+    # Hän käski minun tehdä sen.
+    
     # Needs barriers
 
 # Lounas syötiin
@@ -2107,6 +2111,19 @@ MAP (@<OBJ) TARGET Par IF (0 WORD LINK *-1 Neg) #) (NOT 0 WORD LINK *-1 (Punct) 
 
 # Hän katsoi sitä ja otti sen pois. 
 MAP (@<OBJ) TARGET Par IF (0 WORD LINK *-1 V BARRIER S-BOUNDARY2) ;
+
+# Hän huomasi minut.
+MAP (@<OBJ) TARGET Acc IF (0 WORD LINK *-1 V BARRIER S-BOUNDARY2) ;
+
+# Minut huomattiin.
+MAP (@OBJ>) TARGET Acc IF (0 WORD LINK *1 V BARRIER S-BOUNDARY2) ;
+
+# Possible object issues fixed by:
+#1. checking if there is anything that the Gen modifies to the right
+#2. possibly time expressions that are in Genitive that presupposes that they are TIME-words you can make a set TIME = year, month, august, tuesday etc.
+#I don't know in which other ways Gen is used in fin
+
+# IV and TV tags?
 
 # Verb mappings
 # ------------- 
@@ -2132,6 +2149,11 @@ MAP (@-FAUXV) TARGET InfV IF (*-1 REALCOPULAS BARRIER (CLB)) ;
 # minun pitää ostaa kirja
 MAP (@NES) TARGET NES IF (*-1 Gen BARRIER (CLB))
 
+# Adverbials
+# ----------
+
+# @ADVL - to do
+
 
 # Existential Sentences
 # ---------------------
@@ -2154,38 +2176,20 @@ MAP (@SUBJ>) TARGET (Par) (0 WORD LINK 1 (V Sg3)) (0 WORD LINK *1 @<ADVL)
 # MAP (@NONAGR) TARGET (V Sg3) (0 WORD LINK *-1 (N Pl @SUBJ>))
 # SYNTACTIC-CONSTRAINTS
 
-MAP (@PCLE) TARGET Pcle
+MAP (@PCLE) TARGET Pcle ;
 
-MAP (@NUM<) TARGET (N Sg Par) (0 WORD LINK -1 (Num Card)) # kaksi kirjaa
-MAP (@NUM<) TARGET (N Sg Nom) (0 WORD LINK -1 (Num Card)) # yksi kirja
+MAP (@NUM<) TARGET (N Sg Par) (0 WORD LINK -1 (Num Card)) ; # kaksi kirjaa
+MAP (@NUM<) TARGET (N Sg Nom) (0 WORD LINK -1 (Num Card)) ; # yksi kirja
 
-SELECT (Num Card) (0 WORD LINK 1 (@NUM<)) # make sure number is selected
+SELECT (Num Card) (0 WORD LINK 1 (@NUM<)) ; # make sure number is selected
 
 
 # Habitive mappings 
 # -----------------
-	# Habitive mappings
-	# -------------------
 
 # I do not yet have the sanity to implement an animacy hierarchy ;) 
 # hän ei saa tietää, että minulla on kaksi kissaa.
 MAP (@HAB) TARGET Ade IF (0 (Pron Pers)) (1 REALCOPULAS) ;
-
-# MAP:r495 (@HAB) TARGET Loc IF (0 HAB-ACTOR)(NEGATE 0 HAB-ACTOR-NOT-HUMAN LINK *1 HUMAN BARRIER (N Nom))(1 AUX LINK *1 ("leat") BARRIER NP-HEAD OR FMAINV);
-# MAP:r496 (@HAB) TARGET Loc IF (0 HAB-ACTOR)(NEGATE 0 HAB-ACTOR-NOT-HUMAN LINK *1 HUMAN BARRIER (N Nom))(1 AUX LINK 1 Adv LINK *1 ("leat") BARRIER NOT-ADV-PCLE);
-# MAP:r497 (@HAB) TARGET Loc IF (0 HAB-ACTOR)(NEGATE 0 HAB-ACTOR-NOT-HUMAN LINK *1 HUMAN BARRIER (N Nom))(*1 ("leat") BARRIER NOT-ADV-PCLE);
-# MAP:r498 (@HAB) TARGET Loc IF (0 HAB-ACTOR)(NEGATE 0 HAB-ACTOR-NOT-HUMAN LINK *1 HUMAN BARRIER (N Nom))(1 CC LINK *1 HAB-ACTOR BARRIER NPNH LINK *1 ("leat") BARRIER NOT-ADV-PCLE);
-# MAP:r499 (@HAB) TARGET Loc IF (0 HAB-ACTOR)(NEGATE 0 HAB-ACTOR-NOT-HUMAN LINK *1 HUMAN BARRIER (N Nom))(*1 HAB-VERB BARRIER NOT-ADV-PCLE LINK *1 Nom BARRIER VFIN);
-# MAP:r500 (@HAB) TARGET Loc IF (0 HAB-ACTOR)(*-1 go BARRIER NPNH LINK -1 ("leat") LINK -1 BOC);
-# MAP (@HAB) TARGET Loc IF (0 HAB-ACTOR)(*-1 go BARRIER NPNH LINK -1 ("leat") LINK -1 V-MAIN);
-# MAP:r501 (@HAB) TARGET Ill IF (0 HAB-ACTOR LINK *-1 BOS BARRIER NPNHA)(*1 COPULAS BARRIER NOT-ADV-PCLE LINK *1 A OR N BARRIER NOT-ADV-PCLE);
-
-# MAP:r502 (@HAB) TARGET Loc IF (-1 Mal OR Fem)(0 Ord)(NEGATE 0 HAB-ACTOR-NOT-HUMAN LINK *1 HUMAN BARRIER (N Nom))(*1 ("leat") BARRIER NOT-ADV-PCLE);
-	## Heinrich njealjádis lea rikkis eamit.
-
-# before relative clause
-# MAP:r497 (@HAB) TARGET Loc IF (0 HAB-ACTOR)(NEGATE 0 HAB-ACTOR-NOT-HUMAN LINK *1 HUMAN BARRIER (N Nom))(*1 Rel BARRIER WORD LINK *1 VFIN BARRIER SV-BOUNDARY2 LINK *1 ("leat") BARRIER SV-BOUNDARY2);
-    ## Divššohasas, gii dárbbaša guhkit áiggi ja oktiiheivehuvvon dearvvašvuođabálvalusaid, lea vuoigatvuohta oažžut ráhkaduvvot oktagaslaš plána.
 
 
 SECTION
@@ -2311,14 +2315,15 @@ MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)uutin>
 MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)yytin>"r)) (2 ("<(.*)yytin"r) + ("<(.*)yytti>"r))
 MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)uuden>"r)) (2 ("<(.*)uuden"r) + ("<(.*)uus>"r))
 MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)yyden>"r)) (2 ("<(.*)yyden"r) + ("<(.*)yys>"r))
-MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)in>"r)) (2 ("<(.*)in>"r))
-MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)en>"r)) (2 ("<(.*)n>"r))
-MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)än>"r)) (2 ("<(.*)n>"r))
-MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)yn>"r)) (2 ("<(.*)n>"r))
-MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)ön>"r)) (2 ("<(.*)n>"r))
-MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)un>"r)) (2 ("<(.*)n>"r))
-MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)on>"r)) (2 ("<(.*)n>"r))
-MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)an>"r)) (2 ("<(.*)n>"r))
+# Isn't this too general?
+# MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)in>"r)) (2 ("<(.*)in>"r))
+# MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)en>"r)) (2 ("<(.*)n>"r))
+# MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)än>"r)) (2 ("<(.*)n>"r))
+# MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)yn>"r)) (2 ("<(.*)n>"r))
+# MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)ön>"r)) (2 ("<(.*)n>"r))
+# MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)un>"r)) (2 ("<(.*)n>"r))
+# MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)on>"r)) (2 ("<(.*)n>"r))
+# MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @<P @P> @N>) TARGET (N Sg Gen) (1 ("<(.*)an>"r)) (2 ("<(.*)n>"r))
 MAP (@SUBJ @OBJ @PC @<P @P> @<PN @N>) TARGET (N Sg Par) (1 ("<(.*)aa>"r)) (2 ("<(.*)a>"r))
 MAP (@SUBJ @OBJ @PC @<P @P> @<PN @N>) TARGET (N Sg Par) (1 ("<(.*)ea>"r)) (2 ("<(.*)a>"r))
 MAP (@SUBJ @OBJ @PC @<P @P> @<PN @N>) TARGET (N Sg Par) (1 ("<(.*)oa>"r)) (2 ("<(.*)a>"r))
