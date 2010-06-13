@@ -685,6 +685,8 @@ REMOVE INTJ ; # FMT: The above rules do not work for "Niin he jättivät kohta v
 
 SELECT VFIN (0 VFIN) (0 (N Gen)) (NOT -1* VFIN BARRIER CLB?) (NOT 1* VFIN BARRIER CLB?); # FMT: "Asun valkeassa talossa."
 
+REMOVE Nom IF (1C Nom) (-1 BOS) (0 Nom) (0 VFIN + Sg3); # FMT: "Tuli ilta, ja tuli aamu, ensimmäinen päivä"
+
 
 # This is problematic: hänen on pakko ostaa, selects prop.
 # SELECT Prop IF (NOT -1 BOS OR Punct);
