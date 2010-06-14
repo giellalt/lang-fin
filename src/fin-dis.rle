@@ -687,6 +687,8 @@ SELECT VFIN (0 VFIN) (0 (N Gen)) (NOT -1* VFIN BARRIER CLB?) (NOT 1* VFIN BARRIE
 
 REMOVE Nom IF (-1 CLB?) (0 Nom) (0 VFIN) (1C Nom); # FMT: "Tuli ilta, ja tuli aamu, ensimmäinen päivä"
 
+REMOVE Pron IF (0 ("yks" Pron)) (0 ("yks" Num)); # FMT: "Kokoontukoot vedet, jotka ovat taivaan alla, yhteen  paikkaan, niin että kuiva tulee näkyviin"
+
 # This is problematic: hänen on pakko ostaa, selects prop.
 # SELECT Prop IF (NOT -1 BOS OR Punct);
 
