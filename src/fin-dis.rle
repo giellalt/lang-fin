@@ -680,7 +680,7 @@ ADD (CLB) Conj IF (NOT 0 (CC)) (NOT 0 (CLB)) ;
 
 
 ## Trond
-REMOVE Pcle ;
+REMOVE Pcle IF (NOT 1 Adv) ;
 REMOVE INTJ ; # FMT: The above rules do not work for "Niin he jättivät kohta verkot ja seurasivat häntä" 
 
 SELECT VFIN (0 VFIN) (0 (N Gen)) (NOT -1* VFIN BARRIER CLB?) (NOT 1* VFIN BARRIER CLB?); # FMT: "Asun valkeassa talossa."
@@ -1949,6 +1949,10 @@ SELECT (N "lohko") (NOT 1 DUMMY)
 SELECT (PERS Pron Sg Par "hän") (*-1 NEGV LINK NOT *1 CLB?)
 SELECT (PERS Pron Sg Par "hän") (*1 NEGV)
 
+SELECT (V) IF (0 N) (0 V) (0 WORD LINK *1 (N Sg Nom) BARRIER (CLB)); 
+# Ja tuli ehtoo, ja tuli aamu.
+# ... Ja tuli tuli? 
+
 REMOVE (<MORPH-HEUR!>) (0 <CORRECT!>)
 REMOVE (<Del!>) (NOT 1 DUMMY)      # aisti_toiminta Pl
 #(@w REMOVE (Prop) (NOT 0 UP)     # handled by fn remove-cap etc. in cgp
@@ -1982,6 +1986,11 @@ SELECT (PP <GenRIGHT>) (0 YLI/AllE) (1 Num) (2 Gen) # yli 38 asteen
 SELECT (PP <GenRIGHT>) (0 YLI/AllE) (1C Gen) (NOT 1 <TIME>/<MEASURE>) (NOT -1 Gen)
 SELECT (AD) (0 YLI/AllE) (1 <TIME>/<MEASURE>) 
 REMOVE (AD) (0 YLI/AllE) (NOT 1 A/N/Q/Pron/PCP/Num)
+
+# Subjunctions
+# ------------
+
+SELECT (CS) IF (0 ("että")); # All other occurrences of "että" are CSs.
 
 
 SECTION
@@ -2170,6 +2179,9 @@ MAP (@<OBJ) TARGET Par IF (0 WORD LINK *-1 Neg) #) (NOT 0 WORD LINK *-1 (Punct) 
 # Hän katsoi sitä ja otti sen pois. 
 MAP (@<OBJ) TARGET Par IF (0 WORD LINK *-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) (NEGATE 0 WORD LINK *-1 (Adp) BARRIER (Adp)) (NEGATE 0 WORD LINK 1 Par) ;
     # Minä aion lukea kirjaa ennen näitä erikoisen tyhmiä uutisia.
+
+# ??? Löytyi aika paljon materiaaleja ihan kaduilta.
+# OBJ marking
 
 # Hän huomasi minut.
 MAP (@<OBJ) TARGET Acc IF (0 WORD LINK *-1 V BARRIER S-BOUNDARY2) ;
