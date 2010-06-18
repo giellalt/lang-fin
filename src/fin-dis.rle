@@ -680,7 +680,10 @@ ADD (CLB) Conj IF (NOT 0 (CC)) (NOT 0 (CLB)) ;
 
 
 ## Trond
-REMOVE Pcle IF (NOT 1 Adv) ;
+
+# Doesn't work for 'siellä on myös pihkaa ja kiveä'. Perhaps best to leave this out until there are ambiguities? 
+
+# REMOVE Pcle IF (NOT 1 Adv) ;
 REMOVE INTJ ; # FMT: The above rules do not work for "Niin he jättivät kohta verkot ja seurasivat häntä" 
 
 SELECT VFIN (0 VFIN) (0 (N Gen)) (NOT -1* VFIN BARRIER CLB?) (NOT 1* VFIN BARRIER CLB?); # FMT: "Asun valkeassa talossa."
@@ -2134,7 +2137,7 @@ SET NPNH     = WORD - PRE-NP-HEAD OR ABBR ;
 # Simple for now.
 
 MAP (@CVP) TARGET ("kun") ;
-MAP (@CNP) TARGET ("ja") ;
+MAP (@CNP) TARGET ("ja" CC) ;
 
 # Mapping subjects and objects
 # ----------------------------
