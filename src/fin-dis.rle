@@ -231,12 +231,12 @@ LIST NomINAL-FORM = Inf1 Inf2 Inf3 PrfPrc PrsPrc ;
 
 LIST V-Pl = Pl1 Pl2 Pl3 ; 
 LIST V-Sg = Sg1 Sg2 Sg3 ; 
-LIST VFIN = Prs Prt COND POTN NEGV Imp ; 
-LIST VFIN-C = Prs Prt COND POTN NEGV Imp C ; 
-LIST VFIN-C-MYOS = Prs Prt COND POTN NEGV Imp C "myös" ; 
-LIST VFIN-PCP = Prs Prt COND POTN NEGV Imp PrfPrc PrsPrc ; 
-LIST VFIN/PrsPrc = Prt Prs COND POTN PrsPrc ; 
-LIST VFIN/PrsPrc/Inf = Prt Prs COND POTN PrsPrc Inf1 Inf2 Inf3 REF TEMP ; 
+LIST VFIN = Prs Prt Cond POTN NEGV Imp ; 
+LIST VFIN-C = Prs Prt Cond POTN NEGV Imp C ; 
+LIST VFIN-C-MYOS = Prs Prt Cond POTN NEGV Imp C "myös" ; 
+LIST VFIN-PCP = Prs Prt Cond POTN NEGV Imp PrfPrc PrsPrc ; 
+LIST VFIN/PrsPrc = Prt Prs Cond POTN PrsPrc ; 
+LIST VFIN/PrsPrc/Inf = Prt Prs Cond POTN PrsPrc Inf1 Inf2 Inf3 REF TEMP ; 
 LIST VFIN-SgPl12 = Sg1 Sg2 Pl1 Pl2 ; 
 
 # Word lists
@@ -477,7 +477,7 @@ LIST CLB?-C = BOS EOS "<$\:>" "<$\#>" "<$\(>" "<$\>" "<$\'>" "<$\">" "<$\,>"  "<
 LIST CLB?/Neg = BOS EOS "<$\:>" "<$\#>" "<$\(>" "<$\>" "<$\'>" "<$\">" "<$\,>"  C Neg ; 
 LIST CMP-ENNEN = CMP "ennen" ; 
 LIST CMP/SUP = CMP SUP ; 
-LIST COND = COND ; 
+LIST Cond = Cond ; 
 
 
 LIST INTG = INTG ; 
@@ -1521,7 +1521,7 @@ SELECT (Par) (-1C PP) (-1C <ParRIGHT>)
 REMOVE (INTJ) (NOT -1 CLB?) (NOT 0 VOI)
   # INTERJECTION MAY ONLY START A SENTENCE: C + INTJ
 ## **** VERBAL ENDINGS ****
-SELECT (ACT Sg3) (NOT *-1 NEGV) (-1C Nom) (-1 N/Pron/Q) (NOT -1 DV-US) (NOT -1 DA-US) (NOT 0 TUO) (NOT -1 Num) (NOT 1C VFIN) (NOT 2C VFIN) (NOT *-1 VFIN) (NOT 0 PIENIA/ELAA) (NOT -1 NOUN+Inf1) (NOT 0 COND) (NOT 0 Prt)
+SELECT (ACT Sg3) (NOT *-1 NEGV) (-1C Nom) (-1 N/Pron/Q) (NOT -1 DV-US) (NOT -1 DA-US) (NOT 0 TUO) (NOT -1 Num) (NOT 1C VFIN) (NOT 2C VFIN) (NOT *-1 VFIN) (NOT 0 PIENIA/ELAA) (NOT -1 NOUN+Inf1) (NOT 0 Cond) (NOT 0 Prt)
 ## *** IMPERATIVES ***
 SELECT (Imp) (-1 BOS) (NOT *1C VFIN) (NOT 0 VOI) (NOT 0 KO)
 # NB "kysy voiko..."
@@ -2165,7 +2165,7 @@ MAP (@N→) TARGET (N Sg Nom) IF (1 (N Prop)) ;
 # Jukka osti kirjan.
 
 # MAP (@SUBJ→) TARGET Nom (0 WORD LINK *1 (Act) BARRIER (CLB))
-MAP (@SUBJ→) TARGET Nom IF (NEGATE *-1 VFIN BARRIER S-BOUNDARY2) (*1 VFIN BARRIER S-BOUNDARY2 OR @SUBJ→) ;
+MAP (@SUBJ→) TARGET Nom IF (NEGATE *-1 VFIN BARRIER (CLB)) (*1 VFIN BARRIER S-BOUNDARY2 OR @SUBJ→) ;
 MAP (@SUBJ→) TARGET Nom IF (*-1 CC BARRIER NPNH LINK -1 Nom) ;
 MAP (@SUBJ→) TARGET (Rel Nom) IF (*1 VFIN BARRIER S-BOUNDARY2) ;
 
