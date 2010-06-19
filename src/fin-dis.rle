@@ -2255,10 +2255,10 @@ MAP (@SUBJ→) TARGET (Par) (0 WORD LINK 1 (V Sg3)) (0 WORD LINK *1 @←ADVL)
 
 MAP (@PCLE) TARGET Pcle ;
 
-MAP (@NUM←) TARGET (N Sg Par) (0 WORD LINK -1 (Num Card)) ; # kaksi kirjaa
-MAP (@NUM←) TARGET (N Sg Nom) (0 WORD LINK -1 (Num Card)) ; # yksi kirja
+MAP (@Num←) TARGET (N Sg Par) (0 WORD LINK -1 (Num Card)) ; # kaksi kirjaa
+MAP (@Num←) TARGET (N Sg Nom) (0 WORD LINK -1 (Num Card)) ; # yksi kirja
 
-SELECT (Num Card) (0 WORD LINK 1 (@NUM←)) ; # make sure number is selected
+SELECT (Num Card) (0 WORD LINK 1 (@Num←)) ; # make sure number is selected
 
 
 # Habitive mappings 
