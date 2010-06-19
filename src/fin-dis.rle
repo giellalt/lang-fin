@@ -685,6 +685,8 @@ ADD (CLB) Conj IF (NOT 0 (CC)) (NOT 0 (CLB)) ;
 
 # REMOVE Pcle IF (NOT 1 Adv) ;
 REMOVE Pcle IF (0 ("ja")) ;
+REMOVE Pcle IF (0 ("jos")) ;
+
 REMOVE INTJ ; # FMT: The above rules do not work for "Niin he jättivät kohta verkot ja seurasivat häntä" 
 
 SELECT VFIN (0 VFIN) (0 (N Gen)) (NOT -1* VFIN BARRIER CLB?) (NOT 1* VFIN BARRIER CLB?); # FMT: "Asun valkeassa talossa."
