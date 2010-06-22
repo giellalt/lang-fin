@@ -684,6 +684,11 @@ ADD (CLB) Conj IF (NOT 0 (CC)) (NOT 0 (CLB)) ;
 # Doesn't work for 'siellä on myös pihkaa ja kiveä'. Perhaps best to leave this out until there are ambiguities? 
 
 # REMOVE Pcle IF (NOT 1 Adv) ;
+
+# Remove particles if they have some other reading, e.g., adverb
+REMOVE Pcle IF (NEGATE 0C Pcle) ;
+# This will not remove Pcle if it is the last reading available. If particles still show up where they are expected to be adverbs, they are missing in the morphology.
+
 REMOVE Pcle IF (0 ("ja")) ;
 REMOVE Pcle IF (0 ("jos")) ;
 
@@ -2227,6 +2232,12 @@ MAP (@-FAUXV) TARGET InfV IF (*-1 REALCOPULAS BARRIER (CLB)) ;
 
 # minun pitää ostaa kirja
 MAP (@NES) TARGET NES IF (*-1 Gen BARRIER (CLB))
+
+# Adjectives
+# ----------
+
+MAP (@<SPRED) TARGET (A Pos) IF (0 WORD LINK *-1 REALCOPULAS BARRIER (CLB)) ;
+
 
 # Adverbials
 # ----------
