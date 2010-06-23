@@ -1605,11 +1605,17 @@ REMOVE (Pass Neg) (*-1 NEGV LINK *1C PrsPrc LINK NOT *1 CLB?)
 #     (NOT 0 A/N) (NOT *1 Neg) (NOT 1 Nom) (*-1 NEGV LINK NOT *1 CLB?)
 #     VAARAllIneN, NEG/N/A-HOMOGRAFIAA ESIINTYY.
 #     VRT: EI SUOMALAISTA VOI AINA KAIKESTA SYYTTää.
-REMOVE (Neg) (NOT *-1 NEGV) (NOT *1 NEGV)
+
+# Allow selecting of Neg when Conj CS exists. Does not change above example. -- Ryan
+REMOVE (Neg) (NOT *-1 NEGV) (NOT *1 NEGV) (NEGATE 0 (Conj CS))
+
   # IF NO NEGV, THEN NO Neg IN THE SAME CLAUSE.
 REMOVE (Neg) (NOT *-1 NEGV) (*1 NEGV LINK *1C Neg)
   # IF NEGV ONLY ON THE RIGHT, AND IT IS ENGAGED, OUT WITH NEG.
 REMOVE (Neg) (*-1 NEGV LINK 1C Neg) (NOT -1 CLB?)
+
+# Select Neg if there's a conj reading too.
+SELECT (Neg) IF (0 (Conj CS)) (*1 ConNeg BARRIER ConNeg) ;
 
 # Negative coordination: ei huolia kiinnittää, in situations where kiinnittää is ambiguous
 SELECT (V Inf1) IF (0 (Ind Prs)) (-1 (V Neg))
