@@ -2248,7 +2248,7 @@ MAP (@NES) TARGET NES IF (*-1 Gen BARRIER (CLB))
 # Adjectives
 # ----------
 
-MAP (@<SPRED) TARGET (A Pos) IF (0 WORD LINK *-1 REALCOPULAS BARRIER (CLB)) ;
+MAP (@←SPRED) TARGET (A Pos) IF (0 WORD LINK *-1 REALCOPULAS BARRIER (CLB)) ;
 
 
 # Adverbials
