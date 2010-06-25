@@ -44,6 +44,8 @@ LIST Part = Part ; # particle? still in use?
 LIST Pcle = Pcle ;
 
 LIST C = C ; 
+LIST CC = CC ; 
+LIST CS = CS ; 
 LIST CMP = CMP ; 
 LIST DUMMY = DUMMY ; 
  
@@ -686,13 +688,14 @@ ADD (CLB) Conj IF (NOT 0 (CC)) (NOT 0 (CLB)) ;
 # REMOVE Pcle IF (NOT 1 Adv) ;
 
 # Remove particles if they have some other reading, e.g., adverb
-REMOVE Pcle IF (NEGATE 0C Pcle) ;
+REMOVE Pcle IF (0 CC OR CS OR Adv) ;
 # This will not remove Pcle if it is the last reading available. If particles still show up where they are expected to be adverbs, they are missing in the morphology.
 
 REMOVE Pcle IF (0 ("ja")) ;
 REMOVE Pcle IF (0 ("jos")) ;
 
 REMOVE INTJ ; # FMT: The above rules do not work for "Niin he jättivät kohta verkot ja seurasivat häntä" 
+# these two rules are ad hoc rules, awaiting tag harmonisation omorfi-cg
 
 SELECT VFIN (0 VFIN) (0 (N Gen)) (NOT -1* VFIN BARRIER CLB?) (NOT 1* VFIN BARRIER CLB?); # FMT: "Asun valkeassa talossa."
 
@@ -1533,6 +1536,9 @@ SELECT (Imp) (-1 BOS) (NOT *1C VFIN) (NOT 0 VOI) (NOT 0 KO)
 SELECT (Imp) (1 DUMMY)  # (-2 CLB?) (-1 C) (*1 CLB? LINK NOT *-1 VFIN)
 REMOVE (Imp) (*1C VFIN LINK NOT *-1 CLB?) (NOT 1 CLB?)
 REMOVE (Imp) (*-1C VFIN LINK NOT *1 CLB?) (NOT -1 CLB?)
+REMOVE Imp (0 ("myös"));
+#REMOVE (Imp) (0 ("myös"));
+#REMOVE (Imp) (0 ("myös"));
 ## InfINITIVES
 SELECT (Inf1) (-2C Inf1) (-1 C) (1 CLB?) (NOT 0 UUSIA)
   # "...voidaan käsitellä ja ylläpitää,"
