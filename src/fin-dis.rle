@@ -688,7 +688,7 @@ ADD (CLB) Conj IF (NOT 0 (CC)) (NOT 0 (CLB)) ;
 # REMOVE Pcle IF (NOT 1 Adv) ;
 
 # Remove particles if they have some other reading, e.g., adverb
-REMOVE Pcle IF (0 CC OR CS OR Adv) ;
+REMOVE Pcle IF (0 CC OR CS OR Adv OR Pron) ;
 # This will not remove Pcle if it is the last reading available. If particles still show up where they are expected to be adverbs, they are missing in the morphology.
 
 REMOVE Pcle IF (0 ("ja")) ;
