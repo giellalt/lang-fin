@@ -36,9 +36,13 @@ LIST A = A ;
 LIST Adv = Adv ; 
 LIST V = V ; 
 LIST Pron = Pron ;
+
+LIST Po = Po ;
+LIST Pr = Pr ;
 LIST Adp = Adp ;
+
 LIST Conj = Conj ;
-LIST PP = PP Adv Adp;
+LIST PP = PP Adv Adp Po Pr ;
 LIST Part = Part ; # particle? still in use?
 
 LIST Pcle = Pcle ;
@@ -1458,9 +1462,23 @@ SELECT PP + ("paitsi") (1 Punct) (2 ETTA)
 # mahdollisesti ongelmallista: "tuolla menee isä, astuin sen jälkeen."  "tutustuin jänikseen ja sen jälkeen."
 
 # runoudessa: "muistan päivän sen, jälkeen eilisen". ; "sen mukaan"
-SELECT Adp (1 Gen)
+SELECT Adp (0 Po) (1 Gen) ; 
 # ennen ja jälkeen päivän
-SELECT Adp (-1 Gen)
+
+
+# CG may see these as postpositions due to the preceding partitive and gen.
+# Luin sen  ennen uutisia.
+#           ^Pr
+# Minä aion lukea kirjaa ennen näitä erikoisen tyhmiä uutisia.
+#                         ^Pr
+
+# Changed order so Prepositions are selected first; maybe that will prevent selecting objects?
+
+SELECT Pr (1 Par) ;
+SELECT Po (-1 Gen) ;
+SELECT Po (-1 Par) ;
+SELECT Po (0 Adp) (-1 Gen) ;
+
 SELECT Adv (1 ("ja")) (2 Adv) (3 Gen)
 SELECT Adv (-1 ("ja")) (-2 Adv) (1 Gen)
 # hmm..
@@ -1468,9 +1486,13 @@ SELECT Adv (-1 ("ja")) (-2 Adv) (1 Gen)
 SELECT N + ("jälki") IF (-1 (V Act))
 SELECT N + ("jälki") IF (-1 Adv) (-2 (V Act))
 
-SELECT Adv (1 ETTA)
-SELECT Adv (1 Punct) (2 ETTA)
-SELECT Adp ((1 Par) or (-1 (Par or Gen)) or (2 Par))
+SELECT Adv (1 ETTA) ; 
+SELECT Adv (1 Punct) (2 ETTA) ; 
+
+# Assuming that all prepositions are now tagged as such in omorfi -- Ryan
+# SELECT Adp ((1 Par) or (-1 (Par or Gen)) or (2 Par))
+SELECT Pr ((1 Par) or (-1 (Par or Gen)) or (2 Par))
+
 
 # risky; lumi pyryttää nurkissa -> removing "lative"
 # REMOVE InfV IF (@SUBJ)
@@ -2186,9 +2208,14 @@ MAP (@SUBJ→) TARGET Nom IF (NEGATE *-1 VFIN BARRIER (CLB)) (*1 VFIN BARRIER S-
 MAP (@SUBJ→) TARGET Nom IF (*-1 CC BARRIER NPNH LINK -1 Nom) ;
 MAP (@SUBJ→) TARGET (Rel Nom) IF (*1 VFIN BARRIER S-BOUNDARY2) ;
 
-MAP (@←OBJ) TARGET Gen IF (0 WORD LINK *-1 (Act) BARRIER (CLB)) (NEGATE 0 WORD LINK 1 (Gen)) (NEGATE 0 WORD LINK *1 @←OBJ) (NEGATE 0 WORD LINK *1 Par BARRIER (CLB)) (NEGATE 0 WORD LINK *-1 REALCOPULAS BARRIER (CLB));
+MAP (@←OBJ) TARGET Gen IF (0 WORD LINK *-1 (Act) BARRIER (CLB)) (NEGATE 0 WORD LINK 1 (Gen)) (NEGATE 0 WORD LINK *1 @←OBJ BARRIER (CLB)) (NEGATE 0 WORD LINK *1 Par BARRIER (CLB)) (NEGATE 0 WORD LINK *-1 REALCOPULAS BARRIER (CLB)) (NEGATE 0 WORD LINK 1 Po) ;
 
     # Hän käski minun tehdä sen.
+
+MAP (@←OBJ) TARGET Gen IF (0 WORD LINK -1 (Act)) (NEGATE 0 WORD LINK 1 Po) ;
+
+    # Luin sen ennen uutisia.
+    # Istuin pöydän alla. -- Do not mark @OBJ in this instance.
 
 # Lounas syötiin
 MAP (@OBJ→) TARGET Nom (0 WORD LINK *1 (Pass))
@@ -2198,10 +2225,18 @@ MAP (@OBJ→) TARGET Nom (0 WORD LINK *1 (Pass))
 MAP (@←OBJ) TARGET Nom IF (0 WORD LINK *-1 Pass)
 MAP (@←OBJ) TARGET Par IF (0 WORD LINK *-1 Neg) #) (NOT 0 WORD LINK *-1 (Punct) *-2 (Neg))
     # Needs barriers 
+    
 
 # Hän katsoi sitä ja otti sen pois. 
-MAP (@←OBJ) TARGET Par IF (0 WORD LINK *-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) (NEGATE 0 WORD LINK *-1 (Adp) BARRIER (Adp)) (NEGATE 0 WORD LINK 1 Par) ;
+
+MAP (@←OBJ) TARGET Par IF (NEGATE 0 WORD LINK *-1 PP BARRIER PP) (NEGATE 0 WORD LINK 1 Par);
+# MAP (@OMG) TARGET Par IF (NEGATE 0 WORD LINK *-1 PP BARRIER PP) ;
+
+
+MAP (@←OBJ) TARGET Par IF (0 WORD LINK *-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) (NEGATE 0 WORD LINK *-1 Pr BARRIER Pr) (NEGATE 0 WORD LINK 1 Par) ;
+
     # Minä aion lukea kirjaa ennen näitä erikoisen tyhmiä uutisia.
+    
 
 # ??? Löytyi aika paljon materiaaleja ihan kaduilta.
 # OBJ marking
