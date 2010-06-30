@@ -2212,7 +2212,7 @@ MAP (@←OBJ) TARGET Gen IF (0 WORD LINK *-1 (Act) BARRIER (CLB)) (NEGATE 0 WORD
 
     # Hän käski minun tehdä sen.
 
-MAP (@←OBJ) TARGET Gen IF (0 WORD LINK -1 (Act)) (NEGATE 0 WORD LINK 1 Po) ;
+MAP (@←OBJ) TARGET Gen IF (0 WORD LINK -1 (Act)) (NEGATE 0 WORD LINK *1 Po BARRIER Po) ;
 
     # Luin sen ennen uutisia.
     # Istuin pöydän alla. -- Do not mark @OBJ in this instance.
@@ -2316,6 +2316,7 @@ MAP (@SUBJ→) TARGET (Par) (0 WORD LINK 1 (V Sg3)) (0 WORD LINK *1 @←ADVL)
 MAP (@PCLE) TARGET Pcle ;
 
 MAP (@Num←) TARGET (N Sg Par) (0 WORD LINK -1 (Num Card)) ; # kaksi kirjaa
+
 MAP (@Num←) TARGET (N Sg Nom) (0 WORD LINK -1 (Num Card)) ; # yksi kirja
 
 SELECT (Num Card) (0 WORD LINK 1 (@Num←)) ; # make sure number is selected
@@ -2327,6 +2328,55 @@ SELECT (Num Card) (0 WORD LINK 1 (@Num←)) ; # make sure number is selected
 # I do not yet have the sanity to implement an animacy hierarchy ;) 
 # hän ei saa tietää, että minulla on kaksi kissaa.
 MAP (@HAB) TARGET Ade IF (0 (Pron Pers)) (1 REALCOPULAS) ;
+
+
+# Prepositions and Postpositions
+# ------------------------------
+
+# So far I'm only tagging the heads of NPs, apparently. E.g., lähellä tätä vanhaa metsää(@P).
+
+# Move these up 
+
+LIST TERMINATIVEPO =    "asti" 
+                        "saakka" ;
+
+LIST NPron =    N 
+                Pron ;
+
+LIST PrCase =  Par 
+                Gen ;
+
+LIST PoCase =   Ela
+                Abl
+                Par
+                Gen ;
+
+SET PRON_PO_CASE = NPron + PoCase ; 
+SET PRON_PR_CASE = NPron + PrCase ;
+
+
+   # Postposition Complements
+   # ------------------------
+   
+MAP (@→P) TARGET PRON_PO_CASE IF (1 Po) ;
+
+
+    # Preposition Complements
+    # -----------------------
+
+MAP (@←P) TARGET PRON_PR_CASE IF (0 WORD LINK *-1 Pr BARRIER Pr) ; 
+MAP (@←P) TARGET PRON_PR_CASE IF (0 WORD LINK *-1 Pr BARRIER Pr) ; 
+
+# Ennen näitä erikoisen tyhmiä uutisia.
+# ^----------------------------^
+
+# Lähellä tätä vanhaa metsää nukkuu suuri hämähäkki.
+# Tämän vanhan metsän lähellä nukkuu suuri hämähäkki.
+# Suuri hämähäkki nukkuu tämän vanhan metsän lähellä.
+# Etc.
+
+
+
 
 
 SECTION
