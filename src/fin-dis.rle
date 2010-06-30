@@ -1474,13 +1474,60 @@ SELECT Adp (0 Po) (1 Gen) ;
 
 # Changed order so Prepositions are selected first; maybe that will prevent selecting objects?
 
-SELECT Pr (1 Par) ;
-SELECT Po (-1 Gen) ;
-SELECT Po (-1 Par) ;
-SELECT Po (0 Adp) (-1 Gen) ;
 
-SELECT Adv (1 ("ja")) (2 Adv) (3 Gen)
-SELECT Adv (-1 ("ja")) (-2 Adv) (1 Gen)
+# Prepositions and Postpositions
+# ------------------------------
+
+# TODO: need to be more detailed, because not all prepositions have the same case assignment. There are some ambiguous situations, such as "Hän sanoi sen ennen" in which the current analysis selects postpositions and does not assign @OBJ, despite that no postpositions exist... As such, tying specific adpositions to cases may actually help.
+
+LIST PoCaseNonLoc = Par Gen ;
+
+LIST PoCase =   Ela
+                Abl
+                Par
+                Gen 
+                All 
+                Ill ;
+
+LIST EXTENDED_CASE = "asti" 
+                     "mennessä" 
+                     "saakka" ;
+                     # "nähden", "katsoen", etc., handled by rule below
+                     # but IFF they have Po and V analysis
+
+LIST PAR_ONLY = "ennen" 
+                "ilman" ;
+
+# LIST PAR_AND_GEN
+# LIST GEN_ONLY
+# ***
+# Following can all be Po and Pr according to morph: alkaen, alla, alle, alta, asti, ennen, huolimatta, katsomatta, keskellä, keskelle, keskeltä, kohti, koskien, liki, lähelle, läheltä, lähellä, lähtien, myötä, paitsi, pitkin, pitäen, päin, vastoin, vastapäätä, välillä, välissä, välistä, yli
+
+# is Ilman the only Pr that cannot also be a Po? Many more Po that are also Pr.
+
+
+  # Specific Po Pr rules
+SELECT Po IF (0 ("ennen")) (-1 Par) ;
+
+  # Have to exclude this for now.
+REMOVE Po IF (0 ("ennen")) (-1 Gen) ;
+
+SELECT Pr IF (0 PAR_ONLY) (1 Par) ;
+SELECT Po IF (0 EXTENDED_CASE) (-1 PoCase) ;
+
+SELECT Po IF (0 Po) (0 (V Ins)) (-1 PoCase) ;
+    # Hintoihin katsoen, hintoihin nähden
+
+  # General Po Pr rules
+SELECT Po IF (0 Po) (-1 PoCaseNonLoc) ; 
+SELECT Pr IF (0 Pr) (1 PoCaseNonLoc) ;
+
+
+# SELECT Pr IF (1 Par) ;
+# SELECT Po IF (0 Adp) (-1 Gen) ;
+
+SELECT Adv IF (1 ("ja")) (2 Adv) (3 Gen)
+SELECT Adv IF (-1 ("ja")) (-2 Adv) (1 Gen)
 # hmm..
 
 SELECT N + ("jälki") IF (-1 (V Act))
@@ -2346,10 +2393,8 @@ LIST NPron =    N
 LIST PrCase =  Par 
                 Gen ;
 
-LIST PoCase =   Ela
-                Abl
-                Par
-                Gen ;
+# Moved up, but here for reference
+# LIST PoCase =   Ela Abl Par Gen ;
 
 SET PRON_PO_CASE = NPron + PoCase ; 
 SET PRON_PR_CASE = NPron + PrCase ;
