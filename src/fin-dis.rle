@@ -2302,6 +2302,18 @@ MAP (@OBJ→) TARGET Acc IF (0 WORD LINK *1 V BARRIER S-BOUNDARY2) ;
 # IV and TV tags?
 
 
+    # Numeral and numeral complement mappings
+    # ---------------------------------------
+
+LIST @NUM← = @NUM← ;
+LIST @→NUM = @→NUM ;
+
+LIST NUMS = "yksi" 
+            Num;
+
+# Simple for now... 
+MAP (@NUM←) TARGET N IF (0 WORD LINK -1 NUMS) ;
+
 
 # Verb mappings
 # ------------- 
