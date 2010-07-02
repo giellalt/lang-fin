@@ -6,12 +6,12 @@
 ! ----------------------------------
 
 ! Splitting in 3 groups, because of the preprocessor
-! - - - - - - - - - - - - - - - - - - - - - - - - - 
+! - - - - - - - - - - - - - - - - - - - - - - - - -
 
 LEXICON Abbreviation
-        ITRAB ;     
-        TRNUMAB ;
-        TRAB ;  
+ITRAB ;
+TRNUMAB ;
+TRAB ;
 
 ! Now splitting according to POS, and according to dot or not
 ! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -30,8 +30,8 @@ ab-dot ;
 ! ab-adj ;
 
 LEXICON ab-dot-noun-adj
- ab-dot-noun ;
- ab-dot-adj ;
+ab-dot-noun ;
+ab-dot-adj ;
 
 LEXICON ab-noun
 ab-nodot-noun ;
@@ -57,76 +57,76 @@ ab-dot-num;
 
 ! Here come POS and Case tags, and no period.
 
-LEXICON ab-nodot-noun ! The bulk 
- +ABBR+N: abbrcase ;
+LEXICON ab-nodot-noun ! The bulk
++ABBR+N: abbrcase ;
 
 LEXICON abbrcase
- +Attr: # ;    ! no period, that is. 
- +Nom: # ;     ! no period, that is.
- +Acc:n # ;     ! no period, that is.
- +Gen:n # ;     ! no period, that is.
- +Ill:%:iin # ;  ! no period, that is.
- +Ine:%:ss%^A # ;  ! no period, that is
- +Ela:%:st%^A # ;  ! no period, that is.
- +Com:%:ine # ; ! no period, that is.
- +Ess:%:n%^A # ;  ! no period, that is.
- +All:%:lle # ; ! no period, that is. !SUB
- +Ade:%:ll%^A # ; ! no period, that is. !SUB
- +Abl:%:lt%^A # ;! no period, that is. !SUB
- +Tra:%:ksi # ; ! no period, that is. !SUB
++Attr: # ;    ! no period, that is.
++Nom: # ;     ! no period, that is.
++Acc:n # ;     ! no period, that is.
++Gen:n # ;     ! no period, that is.
++Ill:%:iin # ;  ! no period, that is.
++Ine:%:ss%^A # ;  ! no period, that is
++Ela:%:st%^A # ;  ! no period, that is.
++Com:%:ine # ; ! no period, that is.
++Ess:%:n%^A # ;  ! no period, that is.
++All:%:lle # ; ! no period, that is. !SUB
++Ade:%:ll%^A # ; ! no period, that is. !SUB
++Abl:%:lt%^A # ;! no period, that is. !SUB
++Tra:%:ksi # ; ! no period, that is. !SUB
 
 LEXICON ab-nodot-adj
- +ABBR+A: abbrcase ;
++ABBR+A: abbrcase ;
 
 LEXICON ab-nodot-adv
- +ABBR+Adv: # ;
- 
-  LEXICON ab-nodot-num
- +ABBR+Num: abbrcase ;
++ABBR+Adv: # ;
+
+LEXICON ab-nodot-num
++ABBR+Num: abbrcase ;
 
 
 LEXICON ab-nodot      ! default
- +ABBR+N: abbrcase ;
++ABBR+N: abbrcase ;
 
 
 ! Here come POS and Case tags, with the period added.
 
 LEXICON ab-dot        ! Default
- +ABBR:%. abbrcase ;  
++ABBR:%. abbrcase ;
 
 LEXICON ab-dot-noun   ! This is the lexicon for abbrs that must have a period.
- +ABBR+N:%. # ;  
++ABBR+N:%. # ;
 
-! The idea is that the nominal ones may have case, like e.g. P.E.N. 
+! The idea is that the nominal ones may have case, like e.g. P.E.N.
 
 LEXICON ab-dot-adj ! This is the lexicon for abbrs that must have a period.
- +ABBR+A:%. abbrcase ;  
- 
++ABBR+A:%. abbrcase ;
+
 LEXICON ab-dot-adv     ! This is the lexicon for abbrs that must have a period.
-  +ABBR+Adv:%. # ;     ! Adv without case.
- 
++ABBR+Adv:%. # ;     ! Adv without case.
+
 LEXICON ab-dot-num     ! This is the lexicon for abbrs that must have a period.
- +ABBR+Num:%. abbrcase ; 
++ABBR+Num:%. abbrcase ;
 
 LEXICON ab-dot-cc
- +ABBR+CC:%. # ;  
++ABBR+CC:%. # ;
 
 
 ! Then, as an afterthought, come our two verbs, gč. and vrd.
 
 LEXICON ab-verb ! A lexicon for "gč." and perhaps also other abbreviated verbs.
- ab-dot-verb ;
- ab-nodot-verb ;
+ab-dot-verb ;
+ab-nodot-verb ;
 
 LEXICON ab-dot-verb
- +ABBR+V:%.   # ; ! Period.
++ABBR+V:%.   # ; ! Period.
 
-LEXICON ab-nodot-verb 
- +ABBR+V:    # ; ! No period.
- 
- 
+LEXICON ab-nodot-verb
++ABBR+V:    # ; ! No period.
 
-  
+
+
+
 ! The abbreviation lexicon itself
 ! -------------------------------
 
@@ -376,7 +376,7 @@ LuW	       ab-nodot ;
 MiF	       ab-nodot ; !Musikk i Finnmark
 Med-fak	       ab-nodot-noun ;
 NgL    ab-nodot ;
-NoKTuRNL	ab-nodot ;      
+NoKTuRNL	ab-nodot ;
 Norfu		ab-nodot ;
 Or		ab-nodot-noun ;
 Rp:Rp3        ab-nodot ;
@@ -410,7 +410,7 @@ bie		ab-dot ;
 Bnr		ab-dot-noun ;                                 !
 Dnr		ab-noun ;
 Enr		ab-noun ;
-Pb              ab-noun ; ! Postbox 
+Pb              ab-noun ; ! Postbox
 Rg		ab-nodot ;
 Rt		ab-dot ;                                      !
 S.nr		ab-noun ;                                 !
@@ -448,15 +448,15 @@ vnr		ab-dot-noun ;                                 !
 ! =============================================== !
 !              Transitive abbreviations           !
 ! =============================================== !
-                              
-LEXICON TRAB                  
+
+LEXICON TRAB
 ! For abbrs that always have a constituent following it.
-                                                      
- ! from here pointing to two types of TRAB:           
- ! TRAB heads (gč. ...)      here called h-ab and h-ab-dot
- ! TRAB attributes (St. ...) here called ab and ab-dot or at-ab?
-                                                      
-                                                      !
+
+! from here pointing to two types of TRAB:
+! TRAB heads (gč. ...)      here called h-ab and h-ab-dot
+! TRAB attributes (St. ...) here called ab and ab-dot or at-ab?
+
+!
 !Od		ab-dot ;              !
 1.aman	ab-dot ;	!^C^      !1.amanuensis
 Adr	ab-dot-noun ;             !Adreassa
