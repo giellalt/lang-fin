@@ -188,6 +188,10 @@ LIST DV = DV-MINEN DV-US DV-NTA DV-TTA ;
 
 LIST N-DER = Der/minen Der/u Der/ja Der/tar; 
 
+LIST Der/sti = Der/sti ; 
+
+LIST ADV-DER = Der/sti ; 
+
 # LIST V-DER = V-DER ; # 
 
 # Phrasal groups
@@ -1303,8 +1307,8 @@ SELECT (Pron Rel Pl "joka") (NOT 1 DUMMY)   # JOISSA, JOIllA JNE.
 SELECT (Pron Rel Sg Ade "joka") (NOT 1 DUMMY)   # JOLLA
 SELECT (Pron Rel Sg Nom "joka") (1 Adv/Pl) (NOT 1 DUMMY)
 SELECT (Pron Sg Nom) (NOT 0 ITSE) (1 Nom) (1 A/N) (1 Sg) (NOT 1 HARVA-SET) (NOT 1 (N Sg Nom)) # yksi kirja needs num still available
-SELECT (Pron Sg Gen) (NOT 0 ITSE) (1 Gen) (1 A/N) (1 Sg) (NOT 1 HARVA-SET)
-SELECT (Pron Sg Par) (NOT 0 ITSE) (1 Par) (1 A/N) (1 Sg) (NOT 0 Neg) (NOT 1 HARVA-SET)
+SELECT (Pron Sg Gen) (NOT 0 ITSE) (1 Gen) (1 A/N) (1 Sg) (NOT 1 HARVA-SET) (NOT 0 (Num Card))
+SELECT (Pron Sg Par) (NOT 0 ITSE) (1 Par) (1 A/N) (1 Sg) (NOT 0 Neg) (NOT 1 HARVA-SET) (NOT 0 (Num Card))
 SELECT (Pron Sg Ine) (1 Ine) (1 Sg) (NOT 1 HARVA-SET) (NOT 0 (Num Card))
 SELECT (Pron Sg Ela) (1 Ela) (1 Sg) (NOT 1 HARVA-SET) (NOT 0 (Num Card))
 SELECT (Pron Sg Ill) (1 Ill) (1 Sg) (NOT 1 HARVA-SET) (NOT 0 (Num Card))
@@ -1652,6 +1656,12 @@ SELECT (AgPcp Pl Ade) (1C Ade) (1 Pl)
 # ERROR: "ilman siirtymistä yksikielisistä kaksikielisiin ..."
 # Derivational stuff 
 SELECT (V Der/minen) (-1 Adv)
+
+# Select adverbial non-derived adverbial if such exists
+
+# *****
+REMOVE Der/sti IF (0C Adv) ;
+
 # Remove derivational verb when nominal exists
 REMOVE DER (0 N)
 
