@@ -1214,7 +1214,7 @@ SELECT (N Sg Par <POSS>) (0 Ill) (*-1 <Par-OBJ> LINK NOT 0 KOOTA LINK NOT *1 CLB
 SELECT (N Sg Par <POSS>) (0 Ill) (1C CMP) (NOT -1 Ill) (NOT -2 Ill)
 REMOVE (N Sg Par <POSS>) (0 Ill) (1C Ill) (-1 A/Q/Pron)
 SELECT (Par) (-1C Num) (-1 Nom)      # KUUSI LASTA
-SELECT (N Sg Nom) (-1C Nom) (-1 A/Q/Pron) (-1 Sg) (NOT 0 <POSS>) (NOT 0 TULI) (NOT 1 Nom) (NOT -1 PERS) (NOT 0 JUURI)
+SELECT (N Sg Nom) (-1C Nom) (-1 A/Q/Pron) (-1 Sg) (NOT 0 <POSS>) (NOT 0 TULI) (NOT 1 Nom) (NOT -1 PERS) (NOT 0 JUURI) (NOT 0 ("kasvattaa")) 
 SELECT (N Sg Gen) (-1C Gen) (-1 A/Q/Pron) (-1 Sg) (NOT 0 <POSS>) (NOT 1 Gen) (NOT 0 SUHTEEN)
 SELECT (N Sg Par) (-1C Par) (-1 A/Q/Pron) (-1 Sg) (NOT 1 Par) (NOT 0 KAUTTA) (*-1 CLB? LINK *1C VFIN)
 SELECT (N Sg Ine) (-1C Ine) (-1 A/Q/Pron) (-1 Sg) (NOT 1 Ine)
@@ -1329,6 +1329,7 @@ SELECT (Pron Pl All) (1 All) (1 Pl) (NOT 1 HARVA-SET) (NOT 0 (Num Card))
 SELECT (Pron Pl Ess) (1 Ess) (1 Pl) (NOT 1 HARVA-SET) (NOT 0 (Num Card))
 SELECT (Pron Pl Tra) (1 Tra) (1 Pl) (NOT 1 HARVA-SET) (NOT 0 (Num Card))
 SELECT (Pron Sg Ela "se") (NOT 1 DUMMY)                 # SIITä
+SELECT Adv (0 YKSI) (1 Par) ;
 SELECT (Num Card) (0 YKSI) (1 N) ;
 SELECT (Pron Dem "tämä") (1 N) (1 Ill)
 # *** Prop
@@ -1433,6 +1434,9 @@ SELECT (Sg Gen P-1Pl <POSS> "maa") (4 N) (NOT 1 V) (NOT 2 V) (NOT 3 V)
 REMOVE (<POSS> P-2Sg) (0 V) (0 Prt) (NOT -1 SINA) # TOTESI,KOHOSI
 SELECT (N Sg Nom <POSS>) (1C NEGV) (1 Sg123) (NOT 2 TARVITA) # XXX
 SELECT (N Pl Nom <POSS>) (1C NEGV) (1 Pl123) (NOT 2 TARVITA)
+
+SELECT V IF (0 N) (NEGATE 0 WORD LINK *-1 V BARRIER (CLB)) (NEGATE 0 WORD LINK *1 V BARRIER (CLB)) ; 
+
 #------------------------------------------------------------
 # KOORDINAATIO: N C N
 # THIS IS A TYPICAL EXAMPlE: MAKING THIS GENERALISATION FOR All CASES
