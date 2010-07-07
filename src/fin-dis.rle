@@ -69,6 +69,7 @@ LIST COP = COP ;
 
 
 LIST Num = Num ; 
+LIST Card = Card ; 
 
 LIST PE4 = PE4 ; 
 LIST PERS = PERS ; 
@@ -2345,11 +2346,11 @@ MAP (@OBJ→) TARGET Acc IF (0 WORD LINK *1 V BARRIER S-BOUNDARY2) ;
 LIST @NUM← = @NUM← ;
 LIST @→NUM = @→NUM ;
 
-LIST NUMS = "yksi" 
-            Num;
+LIST NUMS = "yksi" Num;
 
 # Simple for now... 
 MAP (@NUM←) TARGET N IF (0 WORD LINK -1 NUMS) ;
+MAP (@NUM←) TARGET N IF (-1 NUMS) ;
 
 
 # Verb mappings
