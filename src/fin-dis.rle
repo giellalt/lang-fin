@@ -46,6 +46,7 @@ LIST PP = PP Adv Adp Po Pr ;
 LIST Part = Part ; # particle? still in use?
 
 LIST Pcle = Pcle ;
+LIST Acro = Acro ; 
 
 LIST C = C ; 
 LIST CC = CC ; 
@@ -142,11 +143,11 @@ LIST ConNeg = ConNeg ;
 
 LIST Prs = Prs ; 
 LIST Prt = Prt ; 
-LIST PCP = PrfPrc PrsPrc ; 
-LIST AgPcp = AgPcp ; 
-LIST PrsPrc = PrsPrc ; 
+LIST AgPcp = AgPcp ; # ma 
 LIST PrfPrc = PrfPcp ; # nut / PrfPcp
 LIST PrsPrc = PrsPrc ; # va / PrsPrc
+LIST PCP = AgPcp PrfPrc PrsPrc ; 
+
 
 LIST Prs/Prt = Prs Prt ; 
 LIST PrsPrc/Inf3/Inf2/REF/TEMP = PrsPrc Inf3 Inf2 REF TEMP ; 
@@ -437,6 +438,7 @@ SET QWords = MIKA-KUKA OR KUINKA-MITEN-MIllOIN ;
 # -----------
 
 LIST COLON = "<$\:>" ; 
+LIST COMMA = "," ;
 LIST ComMA = "<$\,>" Punct ; 
 LIST ComMA/N/Pron/Q = "<$\,>" N Pron Q ; 
 LIST ComMA/N/Pron/Q/V/SUP/BOS = "<$\,>" N Pron Q V SUP BOS "kuin" ; 
@@ -533,7 +535,10 @@ LIST UP = UP ;
 
 LIST WORD = N A Adv V Pron CS CC Po Pr Interj Pcle Num ABBR ACR  \? ;
 
+SET REALCLB = (CLB) - COMMA ; 
 
+LIST PPRON-GEN = (Sg1 Gen) (Sg2 Gen) (Sg3 Gen) (Pl1 Gen) (Pl2 Gen) (Pl3 Gen);
+SET PPRON-NOT-GEN = (Pron Pers) - PPRON-GEN ;
 
 
 # SYNTACTIC FUNCTION DECLARATIONS
@@ -2205,6 +2210,9 @@ SET EOC = S-BOUNDARY OR EOS ;
 SET EOC2 = S-BOUNDARY2 OR EOS ;
 
 
+SET NP-BOUNDARY = BOS OR EOS OR REALCLB OR VFIN OR (Inf) OR (Actio Ess) OR ConNeg OR PCP OR PPRON-NOT-GEN OR Po OR Pr OR Pcle OR CS OR CP ; # Removed VGen, Recipr, "jed", Interj
+
+
 # NP boundary xxx*
 # ----------- 
 
@@ -2280,8 +2288,8 @@ MAP (@N→) TARGET (N Sg Nom) IF (1 (N Prop)) ;
 # Jukka osti kirjan.
 
 # MAP (@SUBJ→) TARGET Nom (0 WORD LINK *1 (Act) BARRIER (CLB))
-MAP (@SUBJ→) TARGET Nom IF (NEGATE *-1 VFIN BARRIER (CLB)) (*1 VFIN BARRIER S-BOUNDARY2 OR @SUBJ→) ;
-MAP (@SUBJ→) TARGET Nom IF (*-1 CC BARRIER NPNH LINK -1 Nom) ;
+MAP (@SUBJ→) TARGET (N Nom) IF (NEGATE *-1 VFIN BARRIER (CLB)) (*1 VFIN BARRIER S-BOUNDARY2 OR @SUBJ→) ;
+MAP (@SUBJ→) TARGET (N Nom) IF (*-1 CC BARRIER NPNH LINK -1 Nom) ;
 MAP (@SUBJ→) TARGET (Rel Nom) IF (*1 VFIN BARRIER S-BOUNDARY2) ;
 
 MAP (@←OBJ) TARGET Gen IF (0 WORD LINK *-1 (Act) BARRIER (CLB)) (NEGATE 0 WORD LINK 1 (Gen)) (NEGATE 0 WORD LINK *1 @←OBJ BARRIER (CLB)) (NEGATE 0 WORD LINK *1 Par BARRIER (CLB)) (NEGATE 0 WORD LINK *-1 REALCOPULAS BARRIER (CLB)) (NEGATE 0 WORD LINK 1 Po) ;
@@ -2462,8 +2470,35 @@ MAP (@←P) TARGET PRON_PR_CASE IF (0 WORD LINK *-1 Pr BARRIER Pr) ;
 # Etc.
 
 
+# NP-internal things @→N, @N←
+# ------------------
 
 
+
+
+
+SET NAttrs = PCP OR (A Pos) OR Pron OR (Num Ord); 
+
+
+# MAP (@→N) TARGET (A Pos) IF (0 WORD LINK *1 N BARRIER N) (0 WORD LINK *1 N BARRIER (CLB));
+# MAP (@→N) TARGET (Pron) IF (0 WORD LINK *1 N BARRIER N) (0 WORD LINK *1 N BARRIER (CLB));
+
+MAP (@→N) TARGET NAttrs IF (0 WORD LINK *1 N BARRIER NP-BOUNDARY) (0 WORD LINK *1 N BARRIER (CLB)) ;
+
+    # Iso punainen talo on siellä 
+    # Se sama ongelma häiritsi häntä.
+    # Se sama iso punainen talo ... 
+
+    # Fail: Minä@→N tulen kello kolme
+
+MAP (@→N) TARGET (N Nom) IF (1 (N)) ;
+    # Fail: Ja Herra Talonmies tulee myös.
+
+MAP (@→N) TARGET Acro IF (0 Acro LINK *1 Prop BARRIER Prop); 
+    # Fail: Ja Mr. J. Tiainen tulee ... 
+    
+
+MAP (@N←) TARGET Num IF (-1 N) ;
 
 SECTION
 
