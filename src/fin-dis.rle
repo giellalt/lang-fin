@@ -1343,6 +1343,9 @@ SELECT Adv (0 YKSI) (1 Gen) (2 Par) ;
 SELECT (Num Card) (0 YKSI) (1 N) (NEGATE 0 WORD LINK 1 Gen LINK 2 Par) ;
 
 SELECT (Pron Dem "tämä") (1 N) (1 Ill)
+
+REMOVE (Pron Dem "toi") (1 Pron) ; 
+
 # *** Prop
 SELECT (Prop "kokoomus") (NOT 0 CAP/NOCAP)
 REMOVE (<LG>) (0 Prop) (NOT *-1 PUHUA) (NOT *1 KIELI) (NOT *1 PUHUA) (NOT *-1 KIELI) (NOT 0 CAP/NOCAP) (NOT 0 Tra)
@@ -2659,9 +2662,10 @@ MAP (@ADVL @N→) TARGET (ORD Num Sg Ela) (1 ("<(.*):nnestä>"r)) (2 ("<(.*):nne
 MAP (@ADVL @N→) TARGET (ORD Num Sg Ess) (1 ("<(.*):ntenä>"r)) (2 ("<(.*):ntenä>"r))
 
 
-MAP (@X) TARGET WORD ;
+# MAP (@X) TARGET WORD ;
+# SUBSTITUTE (@X) (*) TARGET WORD ;
 
-REMOVE (@X) ;
+# REMOVE (@X) ;
 
  #GENERIC Sg Nom FOR All OTHER InsTANCES
  
