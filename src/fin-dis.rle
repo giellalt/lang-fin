@@ -148,7 +148,7 @@ LIST AgPcp = AgPcp ; # ma
 LIST PrfPrc = PrfPcp ; # nut / PrfPcp
 LIST PrsPrc = PrsPrc ; # va / PrsPrc
 LIST PCP = AgPcp PrfPrc PrsPrc ; 
-
+SET PCPs = AgPcp OR PrfPrc OR PrsPrc ; 
 
 LIST Prs/Prt = Prs Prt ; 
 LIST PrsPrc/Inf3/Inf2/REF/TEMP = PrsPrc Inf3 Inf2 REF TEMP ; 
@@ -162,7 +162,8 @@ LIST Inf3 = Inf3 ;
 LIST Inf123 = Inf1 Inf2 Inf3 ; 
 LIST Inf1/3 = Inf1 Inf3 ; 
 
-LIST InfV = Inf1 Inf2 Inf3 PrfPrc PrsPrc ; 
+LIST InfV = Inf1 Inf2 Inf3 ; # Not sure I should count PrfPrc PrsPrc as  
+LIST InfV-PCPs = Inf1 Inf2 Inf3 PrfPrc PrsPrc ; 
 
 LIST ABBR = ABBR ; 
 LIST Abe = Abe ; 
@@ -1690,18 +1691,22 @@ REMOVE DER (0 N) ;
 # Remove derived adjectives if non-derived exists
 REMOVE Der/inen IF (0C (A Pos)) ;
 
+# Participles 
+# -----------
 
+REMOVE (A Pos) IF (0 (PrsPrc)) ; 
 
-REMOVE (AgPcp Ine) (NOT 1C Ine)
-REMOVE (AgPcp Ela) (NOT 1C Ela)
-REMOVE (AgPcp Ill) (NOT 1C Ill)
-REMOVE (AgPcp Ade) (NOT 1C Ade)
-REMOVE (AgPcp Nom) (NOT 1C Nom) (NOT *-1 OLLA)
-REMOVE (AgPcp Gen) (NOT 1C Gen) (NOT *-1 OLLA)
-REMOVE (AgPcp Par) (NOT 1C Par) (NOT *-1 OLLA)
-SELECT (AgPcp Nom) (1C Nom) (-1C Gen) (-1 N)
-SELECT (AgPcp Gen) (1C Gen) (-1C Gen) (-1 N) (NOT 0 SANOA)
-SELECT (AgPcp Par) (1C Par) (-1C Gen) (-1 N)
+# Participle agreement?
+REMOVE (AgPcp Ine) IF (NOT 1C Ine)
+REMOVE (AgPcp Ela) IF (NOT 1C Ela)
+REMOVE (AgPcp Ill) IF (NOT 1C Ill)
+REMOVE (AgPcp Ade) IF (NOT 1C Ade)
+REMOVE (AgPcp Nom) IF (NOT 1C Nom) (NOT *-1 OLLA)
+REMOVE (AgPcp Gen) IF (NOT 1C Gen) (NOT *-1 OLLA)
+REMOVE (AgPcp Par) IF (NOT 1C Par) (NOT *-1 OLLA)
+SELECT (AgPcp Nom) IF (1C Nom) (-1C Gen) (-1 N)
+SELECT (AgPcp Gen) IF (1C Gen) (-1C Gen) (-1 N) (NOT 0 SANOA)
+SELECT (AgPcp Par) IF (1C Par) (-1C Gen) (-1 N)
 
 # Negative Forms
 # --------------
@@ -2253,7 +2258,7 @@ SET NP-HEAD-GEN    = (Pron Gen) OR (N Gen) OR (A Gen) - Cmpnd - Dem - ("hyvä");
 # why gen?
 SET PRE-NP-HEAD = (Prop Attr) OR (Prop @→N) OR (A Attr) OR (ABBR Attr) OR ("hyvä") OR (Pron Pers Gen) OR (N Gen) OR 
          Num OR Cmpnd OR CC OR (Pron Dem) OR (Pron Refl Gen) OR (Pron Indef) OR 
-         (PrfPrc @→N) OR PrsPrc OR (A Ord) ;
+         (PrfPrc @→N) OR PrsPrc OR (A Ord) OR PCP ;
          # The strict version of items that can only be premodifiers, not parts of the predicate
  
 
@@ -2481,19 +2486,21 @@ MAP (@←P) TARGET PRON_PR_CASE IF (0 WORD LINK *-1 Pr BARRIER Pr) ;
 
 
 
-SET NAttrs = PCP OR (A Pos) OR Pron OR (Num Ord); 
+SET NAttrs = PCP OR (A Pos) OR Pron OR (Num Ord) ; 
 
 
 # MAP (@→N) TARGET (A Pos) IF (0 WORD LINK *1 N BARRIER N) (0 WORD LINK *1 N BARRIER (CLB));
 # MAP (@→N) TARGET (Pron) IF (0 WORD LINK *1 N BARRIER N) (0 WORD LINK *1 N BARRIER (CLB));
 
-MAP (@→N) TARGET NAttrs IF (0 WORD LINK *1 N BARRIER NP-BOUNDARY) (0 WORD LINK *1 N BARRIER (CLB)) ;
+MAP (@→N) TARGET NAttrs IF (0 WORD LINK *1 N BARRIER NP-BOUNDARY) ; # (0 WORD LINK *1 N BARRIER (CLB))
 
     # Iso punainen talo on siellä 
     # Se sama ongelma häiritsi häntä.
     # Se sama iso punainen talo ... 
 
     # Fail: Minä@→N tulen kello kolme
+
+MAP (@→N) TARGET PCPs IF (0 WORD LINK *1 N BARRIER NP-BOUNDARY) ;
 
 MAP (@→N) TARGET (N Nom) IF (1 (N)) ;
     # Fail: Ja Herra Talonmies tulee myös.
