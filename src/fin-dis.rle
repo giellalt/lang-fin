@@ -1646,8 +1646,10 @@ SELECT (Par) (-1C PP) (-1C <ParRIGHT>)
 #*** INTERJ ***
 REMOVE (INTJ) (NOT -1 CLB?) (NOT 0 VOI)
   # INTERJECTION MAY ONLY START A SENTENCE: C + INTJ
+
 ## **** VERBAL ENDINGS ****
-SELECT (Act Sg3) (NOT *-1 NEGV) (-1C Nom) (-1 N/Pron/Q) (NOT -1 DV-US) (NOT -1 DA-US) (NOT 0 TUO) (NOT -1 Num) (NOT 1C VFIN) (NOT 2C VFIN) (NOT *-1 VFIN) (NOT 0 PIENIA/ELAA) (NOT -1 NOUN+Inf1) (NOT 0 Cond) (NOT 0 Prt)
+SELECT (Act Sg3) (NOT *-1 NEGV BARRIER (CLB)) (-1C Nom) (-1 N/Pron/Q) (NOT -1 DV-US) (NOT -1 DA-US) (NOT 0 TUO) (NOT -1 Num) (NOT 1C VFIN) (NOT 2C VFIN) (NOT *-1 VFIN BARRIER (CLB)) (NOT 0 PIENIA/ELAA) (NOT -1 NOUN+Inf1) (NOT 0 Cond) (NOT 0 Prt)
+
 ## *** IMPERATIVES ***
 SELECT (Imp) (-1 BOS) (NOT *1C VFIN) (NOT 0 VOI) (NOT 0 KO)
 # NB "kysy voiko..."
@@ -1834,7 +1836,7 @@ REMOVE (Sg3) (-4 NEGV) (NOT -1 V) (NOT -1 CLB?) (NOT -2 V) (NOT -2 CLB?)
 REMOVE (Sg3) (-5 NEGV) (NOT -1 V) (NOT -1 CLB?) (NOT -2 V) (NOT -2 CLB?)
  (NOT -3 V) (NOT -3 CLB?)  (NOT -4 V) (NOT -4 CLB?) # XXXX
 REMOVE (Neg V) (*-1 CLB? LINK NOT 0 NEGV LINK NOT *1 NEGV) (0 Sg3) # XXXX
-REMOVE (N) (0 VOI) (1 Inf1)
+REMOVE (N) (0 VOI) (1 Inf1) ;
   # "kayttojarjestelman voi asentaa..." GESTALT: VOI + Inf
 REMOVE (V) (0 Inf123) (NOT -1 NOUN+Inf1) (-3 CLB?) (-2 Gen) (-1 Nom)
 REMOVE (PrfPrc) (NOT -1 NOUN+Inf1) (-3 CLB?) (-2 Gen) (-1 Nom)
