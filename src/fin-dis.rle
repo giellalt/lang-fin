@@ -93,6 +93,7 @@ LIST Pass = Pass ;
 
 LIST Pl = Pl Sg/Pl ; 
 LIST Pl1 = Pl1 ; 
+LIST Pl2 = Pl2 ; 
 LIST Pl3 = Pl3 ; 
 LIST Pl123 = Pl1 Pl2 Pl3 ; 
 
@@ -310,10 +311,8 @@ LIST MAANANTAI = "maanantai" "tiistai" "keskiviikko" "torstai" "perjantai"  "lau
 LIST LIIAN = "liian" ; 
 LIST LUKU = "num-luku" ; 
 LIST MAKSAA = "maksaa" "tuntua" ; 
-LIST ME = "me" ; 
 LIST MENNA = "mennä" ; 
 LIST MIELI = "mieli" ;  
-LIST MINA = "minä" ; 
 LIST MITTAIneN = "mittainen" "pituinen" "kokoinen" "oloinen" "tuntuinen" "näköinen" "painoinen" "kaltainen" "tapainen" "mukainen" "sorttinen" ; 
 LIST MUKAIneN = "mukainen" "tuntuinen" "oloinen"  ; 
 LIST MYOS = "myös" ; 
@@ -360,7 +359,6 @@ LIST TAllAIneN = Num Pron Det "tällainen" "sellainen" "semmoinen" ;
 LIST TALVIneN = "kesäinen" "keväinen" "syksyinen" "talvinen" ; 
 LIST TAMA = "tämä" ; 
 LIST TARVITA = "tarvita" "pitää" ; 
-LIST TE = "te" ; 
 LIST TIETAA = "tietää" "kysyä" "tiedustella" ; 
 LIST TILANNE = "tilanne" "kuusi" ; 
 LIST TIME-WORD = "tunti" "viikko" "kuu_kausi" "vuosi" "vuosi_kymmen" "vuosi_sata" "kausi" "kesä" "talvi" "syksy" "kevät" "hetki" "minuutti" "sekunti" "aamu" "ilta" "päivä" "ilta_päivä" "arki_aamu" "arki_päivä" "kesä_aamu" "maanantai" "tiistai" "keski_viikko" "torstai" "perjantai" "lauantai" "sunnuntai" "yö" ; 
@@ -447,11 +445,21 @@ LIST ComMA/N/Pron/Q/V/SUP/BOS = "<$\,>" N Pron Q V SUP BOS "kuin" ;
 
 
 # Sets
-
+# ----
 SET VERB = V - (V N);
   # V is all readings with a V tag in them, VERB should
             # be the ones without an N tag following the V  
 
+    # Personal Pronouns
+    # -----------------
+
+SET MINÄ = (Pron Sg "minä") ;
+SET SINÄ = (Pron Sg "sinä") ;
+SET HÄN = (Pron Sg "hän") ;
+
+SET ME = (Pron Pl "minä") ;
+SET TE = (Pron Pl "sinä") ;
+SET HE = (Pron Pl "he") ; 
 
 # Things to sort
 # --------------
@@ -520,7 +528,6 @@ LIST REF = REF ;
 LIST REF/TEMP = REF TEMP ; 
 LIST REF-CORR = Prs Prt Inf1 Inf2 Inf3 PrsPrc ; 
 LIST Rel = Rel ; 
-LIST SINA = "sinä" ; 
 LIST SITTEN = "sitten" ; 
 LIST Sub = Sub ; 
 LIST SUBJECT-CASE = Nom Gen Par ; 
@@ -1117,8 +1124,8 @@ SELECT (Adv) (0 AIVAN-IHAN) (1C CLB?-C)
 SELECT (Adv) (0 AIVAN-IHAN) (1C Inf1/3) (-1C VFIN)
 SELECT (Adv) (0 AIVAN-IHAN) (1C Inf1/3) (-2C VFIN)
 #(@w SELECT (Adv) (0 ENEM-VAHEM) (NOT 1C Gen) (NOT 1 A)
-SELECT (Adv) (0 NIIN-NOIN-NAIN) (1C Adv) (NOT 1 HYVIN) (NOT *-1 MINA) (NOT *-1 Sg1) (*-1C VFIN LINK NOT *1C CLB?) (NOT -1 CLB?)
-SELECT (Adv) (0 NIIN-NOIN-NAIN) (1C Adv) (NOT 1 HYVIN) (NOT *-1 MINA) (NOT *-1 Sg1) (*1C VFIN LINK NOT *-1C CLB?) (NOT 1 CLB?)
+SELECT (Adv) (0 NIIN-NOIN-NAIN) (1C Adv) (NOT 1 HYVIN) (NOT *-1 MINÄ) (NOT *-1 Sg1) (*-1C VFIN LINK NOT *1C CLB?) (NOT -1 CLB?)
+SELECT (Adv) (0 NIIN-NOIN-NAIN) (1C Adv) (NOT 1 HYVIN) (NOT *-1 MINÄ) (NOT *-1 Sg1) (*1C VFIN LINK NOT *-1C CLB?) (NOT 1 CLB?)
 SELECT (Adv "lujaa") (NOT 1 Par)
 SELECT (Adv "myöhään") (NOT 1 Ill)
 SELECT (Adv "samalla") (NOT 1 Ade)
@@ -1297,11 +1304,19 @@ REMOVE (Abbr Nom "me") (*-1 Pl1 LINK NOT *1 CLB?) (NOT -1 CLB?)
 # Pronouns
 # --------
 
-SELECT (Pron "minä") (*1 Sg1 LINK NOT *-1 CLB?) (NOT 1 CLB?)
-SELECT (Pron "sinä") (*1 Sg2 LINK NOT *-1 CLB?) (NOT 1 CLB?)
-SELECT (Pron "minä") (*-1 Sg1 LINK NOT *1 CLB?) (NOT -1 CLB?)
-SELECT (Pron "sinä") (*-1 Sg2 LINK NOT *1 CLB?) (NOT -1 CLB?)
-SELECT (Pron Pl "te") (NOT -1 Gen)  # RISKY, CF. SUOMEN TEIllä
+SELECT MINÄ IF (0 WORD LINK *1 Sg1 BARRIER V) ;
+SELECT SINÄ IF (0 WORD LINK *1 Sg2 BARRIER V) ;
+SELECT HÄN IF  (0 WORD LINK *1 Sg3 BARRIER V) ;
+
+SELECT ME IF (0 WORD LINK *1 Pl1 BARRIER V) ;
+SELECT TE IF (0 WORD LINK *1 Pl2 BARRIER V) ;
+SELECT HE IF (0 WORD LINK *1 Pl3 BARRIER V) ;
+
+#SELECT (Pron "minä") (*1 Sg1 LINK NOT *-1 CLB?) (NOT 1 CLB?)
+#SELECT (Pron "sinä") (*1 Sg2 LINK NOT *-1 CLB?) (NOT 1 CLB?)
+#SELECT (Pron "minä") (*-1 Sg1 LINK NOT *1 CLB?) (NOT -1 CLB?)
+#SELECT (Pron "sinä") (*-1 Sg2 LINK NOT *1 CLB?) (NOT -1 CLB?)
+#SELECT (Pron Pl "te") (NOT -1 Gen)  # RISKY, CF. SUOMEN TEIllä
 SELECT (Pron Sg Par "hän") (*-1 NEGV LINK NOT *1 CLB?) (NOT -1 CLB?)
 SELECT (Pron Sg Par "hän") (*1 NEGV LINK NOT *-1 CLB?) (NOT 1 CLB?)
 SELECT (Pron INTG) (-1 BOS) (*1 ?!)
@@ -1471,7 +1486,7 @@ SELECT (Sg Gen P-1Pl <POSS> "maa") (1 N)
 SELECT (Sg Gen P-1Pl <POSS> "maa") (2 N) (NOT 1 V)
 SELECT (Sg Gen P-1Pl <POSS> "maa") (3 N) (NOT 1 V) (NOT 2 V)
 SELECT (Sg Gen P-1Pl <POSS> "maa") (4 N) (NOT 1 V) (NOT 2 V) (NOT 3 V)
-REMOVE (<POSS> P-2Sg) (0 V) (0 Prt) (NOT -1 SINA) # TOTESI,KOHOSI
+REMOVE (<POSS> P-2Sg) (0 V) (0 Prt) (NOT -1 SINÄ) # TOTESI,KOHOSI
 SELECT (N Sg Nom <POSS>) (1C NEGV) (1 Sg123) (NOT 2 TARVITA) # XXX
 SELECT (N Pl Nom <POSS>) (1C NEGV) (1 Pl123) (NOT 2 TARVITA)
 
@@ -1811,10 +1826,13 @@ SELECT (V Prs Act Sg3) (*-1 CLB? LINK NOT 0 VFIN LINK NOT *1 VFIN) (-1C Nom) (-1
 REMOVE (V "vastoa") (NOT 1 DUMMY)
 SELECT (V Inf2 "verrata") (-1 Ill)   # SIIHEN VERRATEN
 REMOVE (V S) (NOT 1 DUMMY)                # INNOSTU+S
-SELECT (Sg1) (-1C MINA) (-1 Nom)
-SELECT (Sg1) (-2C MINA) (-1 Nom)
-SELECT (Sg2) (-1C SINA) (-1 Nom)
-SELECT (Sg2) (-2C SINA) (-1 Nom)
+
+# Person agreement
+# ----------------
+SELECT (Sg1) (-1C MINÄ) (-1 Nom)
+SELECT (Sg1) (-2C MINÄ) (-1 Nom)
+SELECT (Sg2) (-1C SINÄ) (-1 Nom)
+SELECT (Sg2) (-2C SINÄ) (-1 Nom)
 SELECT (Pl1) (-1C ME) (-1 Nom)
 SELECT (Pl1) (-2C ME) (-1 Nom)
 SELECT (Pl2) (-1C TE) (-1 Nom)
@@ -2059,7 +2077,7 @@ REMOVE (N Pl "kulku") (NOT 1 DUMMY)
 REMOVE (N Pl "maksa") (NOT 1 DUMMY)
 REMOVE (A "vakio") (NOT 1 DUMMY)
 REMOVE (V Prs Act Sg2 "loppua") (NOT 1 DUMMY)
-REMOVE (V Prs Act Sg1 "puhella") (NOT *-1 MINA) (NOT *1 ITSE)
+REMOVE (V Prs Act Sg1 "puhella") (NOT *-1 MINÄ) (NOT *1 ITSE)
 SELECT (V "soittaa") (1 Num/C/HETI/CLB)
 SELECT (V "soittaa") (2 Num/C/HETI/CLB)
 SELECT (V "soittaa") (-1 Num/C/HETI/CLB)
@@ -2163,7 +2181,7 @@ SELECT (Inf3 Ade) (0 Ade)
 #(@w REMOVE (A Pos Sg Par) (0 N)
 REMOVE (A Pos All) (0 A)
 SELECT (Pron "itse") (NOT 1 DUMMY)  # **tankerous
-SELECT (Adv "näin") (NOT 1 DUMMY)
+SELECT (Adv "näin") (NOT 1 DUMMY) (NOT -1 (Pron Pers))
 SELECT (Adv "osaksi") (NOT 1 Par) (NOT -1 OTTAA-2) (NOT -2 OTTAA-2)# bad
 REMOVE (Adv "huomaan") (NOT 1 DUMMY)
 REMOVE (V Prt ActAct) (0 Prs)  # voimme, voitte# pyrimme# **tankerous
@@ -2314,7 +2332,7 @@ MAP (@SUBJ→ @NEC-SUBJ) TARGET Gen IF (0 WORD LINK *1 (@NES) BARRIER (CLB))
 MAP (@←OBJ) TARGET Nom IF (0 WORD LINK *-1 (Gen)) (*-1 NES)
 
 # Me ostettiin kirja.
-MAP (@SUBJ→) TARGET (Pron Pl "minä") (0 Pron LINK *1 (Pe4) BARRIER (CLB))
+MAP (@SUBJ→) TARGET ME (0 Pron LINK *1 (Pe4) BARRIER (CLB)) ;
 MAP (@←OBJ) TARGET Nom IF (0 WORD LINK *-1 Pass) (*-1 Nom)
     # Needs barriers
 
