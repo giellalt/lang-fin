@@ -1880,7 +1880,7 @@ REMOVE (Imp) (*1C MAINV LINK NOT *-1 CLB?) (NOT 1 CLB?) (NOT 1 VFIN)
 
 SELECT (V Sg3) (NOT *-1C VFIN) (NOT *1C VFIN) (*-1 Nom LINK 0 Sg)
 SELECT (N Sg) IF (0 V) (0 WORD LINK 1* (V Sg3) BARRIER V) ;
-    # Tuli raivosi alueella... 
+    # Tuli raivosi alueella, jossa... 
 
 SELECT (V Pl3) (NOT *-1C VFIN) (NOT *1C VFIN) (*-1 Nom LINK 0 Pl)
 # *** PCP
