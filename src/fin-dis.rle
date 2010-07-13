@@ -1831,20 +1831,28 @@ REMOVE (V S) (NOT 1 DUMMY)                # INNOSTU+S
 # ----------------
 SELECT (Sg1) (-1C MINÄ) (-1 Nom)
 SELECT (Sg1) (-2C MINÄ) (-1 Nom)
+
 SELECT (Sg2) (-1C SINÄ) (-1 Nom)
 SELECT (Sg2) (-2C SINÄ) (-1 Nom)
+
 SELECT (Pl1) (-1C ME) (-1 Nom)
 SELECT (Pl1) (-2C ME) (-1 Nom)
+
 SELECT (Pl2) (-1C TE) (-1 Nom)
 SELECT (Pl2) (-2C TE) (-1 Nom)
+
 REMOVE (Sg1) (*-1C VFIN LINK NOT *1 CLB?) (NOT -1 CLB?)
 REMOVE (Sg2) (*-1C VFIN LINK NOT *1 CLB?) (NOT -1 CLB?)
+
 REMOVE (Pl1) (*-1C VFIN LINK NOT *1 CLB?) (NOT -1 CLB?)
 REMOVE (Pl2) (*-1C VFIN LINK NOT *1 CLB?) (NOT -1 CLB?)
+
 REMOVE (Sg1) (*1C VFIN LINK NOT *-1 CLB?) (NOT 1 CLB?)
 REMOVE (Sg2) (*1C VFIN LINK NOT *-1 CLB?) (NOT 1 CLB?)
+
 REMOVE (Pl1) (*1C VFIN LINK NOT *-1 CLB?) (NOT 1 CLB?)
 REMOVE (Pl2) (*1C VFIN LINK NOT *-1 CLB?) (NOT 1 CLB?)
+
 REMOVE (Sg3) (-1 NEGV)
   # A FINITE VERB (Sg3) CANNOT FOLLOW NEGV AT POSITION 1.
 REMOVE (Sg3) (-2 NEGV) (NOT -1 V) (NOT -1 CLB?)
@@ -1869,6 +1877,11 @@ REMOVE (Prs) (*1C MAINV LINK NOT *-1 CLB?) (NOT 1 CLB?) (NOT 1 VFIN)
 REMOVE (Prt) (*1C MAINV LINK NOT *-1 CLB?) (NOT 1 CLB?) (NOT 1 VFIN)
 REMOVE (Imp) (*1C MAINV LINK NOT *-1 CLB?) (NOT 1 CLB?) (NOT 1 VFIN)
   # UP FOR MORPHOLOGY! RIGHT SIDE.
+
+SELECT (V Sg3) (NOT *-1C VFIN) (NOT *1C VFIN) (*-1 Nom LINK 0 Sg)
+SELECT (N Sg) IF (0 V) (0 WORD LINK 1* (V Sg3) BARRIER V) ;
+    # Tuli raivosi alueella... 
+
 SELECT (V Pl3) (NOT *-1C VFIN) (NOT *1C VFIN) (*-1 Nom LINK 0 Pl)
 # *** PCP
 IFF (PrfPrc Ins) (1 N) (1 Ins)
@@ -2129,7 +2142,7 @@ SELECT (N "lohko") (NOT 1 DUMMY)
 SELECT (PERS Pron Sg Par "hän") (*-1 NEGV LINK NOT *1 CLB?)
 SELECT (PERS Pron Sg Par "hän") (*1 NEGV)
 
-SELECT (V) IF (0 N) (0 V) (0 WORD LINK *1 (N Sg Nom) BARRIER (CLB)); 
+SELECT (V) IF (0 N) (0 V) (0 WORD LINK *1 (N Sg Nom) BARRIER (CLB)) (NOT -1 (CLB)); 
 # Ja tuli ehtoo, ja tuli aamu.
 # ... Ja tuli tuli? 
 
@@ -2171,6 +2184,14 @@ REMOVE (AD) (0 YLI/AllE) (NOT 1 A/N/Q/Pron/PCP/Num)
 # ------------
 
 SELECT (CS) IF (0 ("että")); # All other occurrences of "että" are CSs.
+
+# SECTION
+# # trying out relationships
+# SET NOUNSTEST = (N Sg) OR (N Pl) ; 
+# 
+# ADDRELATION (VAgr) NOUNSTEST (-1* (N Sg Nom)) TO (1 (V Ind Sg3)) ;
+# LIST @OMG = @OMG ; 
+# MAP (@OMG) TARGET (N Sg Nom) IF (r:rel (VAgr)); 
 
 
 SECTION
