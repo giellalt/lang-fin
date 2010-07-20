@@ -480,6 +480,26 @@ SET ME = (Pron Pl "minä") ;
 SET TE = (Pron Pl "sinä") ;
 SET HE = (Pron Pl "he") ; 
 
+SET FIRST_PERSON_SG = MINÄ OR (Sg1) ;
+SET SECOND_PERSON_SG = SINÄ OR (Sg2) ;
+SET THIRD_PERSON_SG = HÄN OR (Sg3) ;
+
+SET FIRST_PERSON_PL = ME OR (Pl1) ;
+SET SECOND_PERSON_PL = TE OR (Pl2) ;
+SET THIRD_PERSON_PL = HÄN OR (Pl3) ;
+
+SET THIRD_PERSON_SG/Noun = HÄN OR (Sg3) OR (N Sg Nom) ;
+SET THIRD_PERSON_PL/Noun = HE OR (Pl3) OR (N Pl Nom) ;
+
+SET ALL_PERSON = FIRST_PERSON_SG OR
+                 FIRST_PERSON_PL OR
+                 SECOND_PERSON_SG OR
+                 SECOND_PERSON_PL OR
+                 THIRD_PERSON_SG OR
+                 THIRD_PERSON_PL OR 
+                 (N Sg Nom) OR 
+                 (N Sg Pl) ;
+
 # Things to sort
 # --------------
 
@@ -1265,7 +1285,7 @@ SELECT (N Sg Par <POSS>) (0 Ill) (*-1 <Par-OBJ> LINK NOT 0 KOOTA LINK NOT *1 CLB
 SELECT (N Sg Par <POSS>) (0 Ill) (1C CMP) (NOT -1 Ill) (NOT -2 Ill)
 REMOVE (N Sg Par <POSS>) (0 Ill) (1C Ill) (-1 A/Q/Pron)
 SELECT (Par) (-1C Num) (-1 Nom)      # KUUSI LASTA
-SELECT (N Sg Nom) (-1C Nom) (-1 A/Q/Pron) (-1 Sg) (NOT 0 <POSS>) (NOT 0 TULI) (NOT 1 Nom) (NOT -1 PERS) (NOT 0 JUURI) (NOT 0 ("kasvattaa")) 
+SELECT (N Sg Nom) (-1C Nom) (-1 A/Q/Pron) (-1 Sg) (NOT 0 <POSS>) (NOT 0 TULI) (NOT 1 Nom) (NOT -1 PERS) (NOT 0 JUURI) (NOT 0 ("kasvattaa")) (NOT 0 ("laskea")) ;
 SELECT (N Sg Gen) (-1C Gen) (-1 A/Q/Pron) (-1 Sg) (NOT 0 <POSS>) (NOT 1 Gen) (NOT 0 SUHTEEN)
 SELECT (N Sg Par) (-1C Par) (-1 A/Q/Pron) (-1 Sg) (NOT 1 Par) (NOT 0 KAUTTA) (*-1 CLB? LINK *1C VFIN)
 SELECT (N Sg Ine) (-1C Ine) (-1 A/Q/Pron) (-1 Sg) (NOT 1 Ine)
@@ -1606,6 +1626,25 @@ SELECT Po IF (0 Po) (0 (V Ins)) (-1 PoCase) ;
 SELECT Po IF (0 Po) (-1 PoCaseNonLoc) ; 
 SELECT Pr IF (0 Pr) (1 PoCaseNonLoc) ;
 
+REMOVE Adp (0 Po) ;
+REMOVE Adp (0 Pr) ;
+
+REMOVE Adv IF (0 Po) ;
+REMOVE Adv IF (0 Pr) ;
+
+# Prefer to remove rather than select, so rules have to be 'inverse': REMOVE Pl3 IF Sg3, etc.
+
+# If these rules are too destructive (originally intended for Adp and Po possessive marking), use the commented-out ones.
+REMOVE (Pl3) IF (0 (Sg3)) (0 WORD LINK *-1C THIRD_PERSON_SG BARRIER THIRD_PERSON_SG) ;
+
+REMOVE (Sg3) IF (0 (Pl3)) (0 WORD LINK *-1C THIRD_PERSON_PL BARRIER THIRD_PERSON_PL) ;
+
+# REMOVE (Po Pl3) IF (0 WORD LINK *-1 THIRD_PERSON_SG BARRIER THIRD_PERSON_SG) ;
+# REMOVE (Adv Pl3) IF (0 WORD LINK *-1 THIRD_PERSON_SG BARRIER THIRD_PERSON_SG) ;
+
+# REMOVE (Po Sg3) IF (0 WORD LINK *-1 THIRD_PERSON_PL BARRIER THIRD_PERSON_PL) ;
+# REMOVE (Adv Sg3) IF (0 WORD LINK *-1 THIRD_PERSON_PL BARRIER THIRD_PERSON_PL) ;
+
 
 # SELECT Pr IF (1 Par) ;
 # SELECT Po IF (0 Adp) (-1 Gen) ;
@@ -1630,7 +1669,6 @@ SELECT Pr ((1 Par) or (-1 (Par or Gen)) or (2 Par))
 # requires BOS checking, which doesn't appear to work; or assigning CLB to BOS.
 
 # REMOVE InfV IF (0 InfV) (*-1 @SUBJ→) (*-1 BOS)
-
 # SELECT Adp (2 Par)
 # SELECT Adp (-1 Gen)
 
@@ -1899,9 +1937,15 @@ REMOVE (Imp) (*1C MAINV LINK NOT *-1 CLB?) (NOT 1 CLB?) (NOT 1 VFIN)
   # UP FOR MORPHOLOGY! RIGHT SIDE.
 
 SELECT (V Sg3) (NOT *-1C VFIN) (NOT *1C VFIN) (*-1 Nom LINK 0 Sg)
-SELECT (N Sg) IF (0 V) (0 WORD LINK 1* (V Sg3) BARRIER V) ;
-    # Tuli raivosi alueella, jossa... 
+SELECT (N Sg) IF (0 V) (0 WORD LINK 1* (V Sg3) BARRIER (CLB)) (NEGATE 0 WORD LINK *-1 (N Nom) BARRIER (CLB)) ;
 
+SELECT (V Sg3) IF (0 N) (0 WORD LINK *-1 THIRD_PERSON_SG/Noun BARRIER (CLB)) ;
+
+SELECT (V Pl3) IF (0 N) (0 WORD LINK *-1 THIRD_PERSON_PL/Noun BARRIER (CLB)) ;
+
+    # Tuli raivosi alueella, jossa... 
+    # Problem: Mikko laski luotansa kyyhkysen nähdäksensä.
+    
 SELECT (V Pl3) (NOT *-1C VFIN) (NOT *1C VFIN) (*-1 Nom LINK 0 Pl)
 # *** PCP
 IFF (PrfPrc Ins) (1 N) (1 Ins)
@@ -2498,7 +2542,12 @@ MAP (@←SPRED) TARGET (N Nom) IF (0 WORD LINK *-1 REALCOPULAS BARRIER (CLB)) ;
 
 # @ADVL - to do
 
+SET Adp+Poss = Po + ALL_PERSON OR 
+               Pr + ALL_PERSON OR 
+               Adv + ALL_PERSON;
+
 MAP (@ADVL) TARGET (Adv) ;
+MAP (@ADVL) TARGET Adp+Poss ;
 # MAP (@ADVL) TARGET (Po) ; ?
 
 
