@@ -399,6 +399,25 @@ LIST REALCOPULAS = "olla" "voida" "saattaa" ;
 LIST MOD-ASP = MOD-ASP ;
 LIST COPULAS = "olla" "taitaa" "saattaa"  ; 
 
+    # Funky Case
+    # ----------
+
+    # Partitive
+    # ---------
+
+# Sataa lunta. Paistaa aurinkoa.
+LIST Weather-Verbs = "sataa" "tuulla" "paistaa" ;
+
+SET PART-SUBJ = Weather-Verbs ;
+
+# verbs that can potentially not have a subject. Can add to these, but this is a start now.
+
+LIST Impersonal = "kannattaa" "pitää" ;
+
+
+LIST Non-Nom-Subj = "kiinnostaa" "tuntua" ;
+
+
 SET AUX-OR-MAIN = Inf1-VERB OR Inf3-VERB ; 
 SET AUX = COPULAS OR Neg OR MOD-ASP OR AUX-OR-MAIN ;
 
@@ -2362,9 +2381,11 @@ MAP (@N→) TARGET (N Sg Nom) IF (1 (N Prop)) ;
 
 # Jukka osti kirjan.
 
+SET N_Pron_Nom = (N Nom) OR (Pron Nom) ;
+
 # MAP (@SUBJ→) TARGET Nom (0 WORD LINK *1 (Act) BARRIER (CLB))
-MAP (@SUBJ→) TARGET (N Nom) IF (NEGATE *-1 VFIN BARRIER (CLB)) (*1 VFIN BARRIER S-BOUNDARY2 OR @SUBJ→) ;
-MAP (@SUBJ→) TARGET (N Nom) IF (*-1 CC BARRIER NPNH LINK -1 Nom) ;
+MAP (@SUBJ→) TARGET N_Pron_Nom IF (NEGATE *-1 VFIN BARRIER (CLB)) (*1 VFIN BARRIER S-BOUNDARY2 OR @SUBJ→) ;
+MAP (@SUBJ→) TARGET N_Pron_Nom IF (*-1 CC BARRIER NPNH LINK -1 Nom) ;
 MAP (@SUBJ→) TARGET (Rel Nom) IF (*1 VFIN BARRIER S-BOUNDARY2) ;
 
 # Subject partitive mapping 
@@ -2373,7 +2394,10 @@ MAP (@SUBJ→) TARGET (N Par) IF (NEGATE *-1 Nom BARRIER (CLB)) (NEGATE *1 Nom B
 
 MAP (@SUBJ→) TARGET (N Par) IF (NEGATE *-1 Nom BARRIER (CLB)) (NEGATE *1 Nom BARRIER (CLB)) (0 WORD LINK *-1 REALCOPULAS BARRIER (CLB));
 
+# Siellä sataa lunta.
+MAP (@←SUBJ) TARGET Par (0 WORD LINK *-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) (NEGATE 0 WORD LINK *-1 Pr BARRIER Pr) (NEGATE 0 WORD LINK 1 Par) (0 WORD LINK *-1 PART-SUBJ) ;
 
+# Ihmisiä tungeksi torilla. 
 
 MAP (@←OBJ) TARGET Gen IF (0 WORD LINK *-1 (Act) BARRIER (CLB)) (NEGATE 0 WORD LINK 1 (Gen)) (NEGATE 0 WORD LINK *1 @←OBJ BARRIER (CLB)) (NEGATE 0 WORD LINK *1 Par BARRIER (CLB)) (NEGATE 0 WORD LINK *-1 REALCOPULAS BARRIER (CLB)) (NEGATE 0 WORD LINK 1 Po) ;
 
@@ -2397,10 +2421,12 @@ MAP (@←OBJ) TARGET Par IF (0 WORD LINK *-1 Neg) #) (NOT 0 WORD LINK *-1 (Punct
 # Hän katsoi sitä ja otti sen pois. 
 
 MAP (@←OBJ) TARGET Par IF (NEGATE 0 WORD LINK *-1 PP BARRIER PP) (NEGATE 0 WORD LINK 1 Par) (0 WORD LINK *-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) ;
-# MAP (@OMG) TARGET Par IF (NEGATE 0 WORD LINK *-1 PP BARRIER PP) ;
 
 
-MAP (@←OBJ) TARGET Par IF (0 WORD LINK *-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) (NEGATE 0 WORD LINK *-1 Pr BARRIER Pr) (NEGATE 0 WORD LINK 1 Par) ;
+# Need to not map obj in this case, rather subject or @<SPRED.
+
+MAP (@←OBJ) TARGET Par IF (0 WORD LINK *-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) (NEGATE 0 WORD LINK *-1 Pr BARRIER Pr) (NEGATE 0 WORD LINK 1 Par) (NEGATE 0 WORD LINK *-1 PART-SUBJ) ;
+
 
     # Minä aion lukea kirjaa ennen näitä erikoisen tyhmiä uutisia.
     
@@ -2459,11 +2485,12 @@ MAP (@-FAUXV) TARGET InfV IF (*-1 REALCOPULAS BARRIER (CLB)) ;
 # minun pitää ostaa kirja
 MAP (@NES) TARGET NES IF (*-1 Gen BARRIER (CLB))
 
-# Adjectives
+# Predicates
 # ----------
 
 MAP (@←SPRED) TARGET (A Pos) IF (0 WORD LINK *-1 REALCOPULAS BARRIER (CLB)) ;
 
+MAP (@←SPRED) TARGET (N Nom) IF (0 WORD LINK *-1 REALCOPULAS BARRIER (CLB)) ;
 
 # Adverbials
 # ----------
@@ -2566,13 +2593,14 @@ SET NAttrs = PCP OR (A Pos) OR Pron OR (Num Ord) ;
 # MAP (@→N) TARGET (A Pos) IF (0 WORD LINK *1 N BARRIER N) (0 WORD LINK *1 N BARRIER (CLB));
 # MAP (@→N) TARGET (Pron) IF (0 WORD LINK *1 N BARRIER N) (0 WORD LINK *1 N BARRIER (CLB));
 
-MAP (@→N) TARGET NAttrs IF (0 WORD LINK *1 N BARRIER NP-BOUNDARY) ; # (0 WORD LINK *1 N BARRIER (CLB))
+MAP (@→N) TARGET NAttrs IF (0 WORD LINK *1 N BARRIER NP-BOUNDARY) (NEGATE 0 (V PrfPrc) LINK -1 (V "olla")) ; # (0 WORD LINK *1 N BARRIER (CLB))
 
     # Iso punainen talo on siellä 
     # Se sama ongelma häiritsi häntä.
     # Se sama iso punainen talo ... 
 
     # Fail: Minä@→N tulen kello kolme
+    # Do not mark on Hän ei ole lähettänyt kirjettä.
 
 MAP (@→N) TARGET PCPs IF (0 WORD LINK *1 N BARRIER NP-BOUNDARY) ;
 
@@ -2741,6 +2769,13 @@ MAP (@ADVL @N→) TARGET (ORD Num Sg Abl) (1 ("<(.*):nneltä>"r)) (2 ("<(.*):nne
 MAP (@ADVL @N→) TARGET (ORD Num Sg Ine) (1 ("<(.*):nnessä>"r)) (2 ("<(.*):nnessä>"r))
 MAP (@ADVL @N→) TARGET (ORD Num Sg Ela) (1 ("<(.*):nnestä>"r)) (2 ("<(.*):nnestä>"r))
 MAP (@ADVL @N→) TARGET (ORD Num Sg Ess) (1 ("<(.*):ntenä>"r)) (2 ("<(.*):ntenä>"r))
+
+
+# Post-tagging disambiguation
+SECTION
+
+SELECT @←SPRED ;
+
 
 
 # MAP (@X) TARGET WORD ;
