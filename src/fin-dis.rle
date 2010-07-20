@@ -1545,7 +1545,8 @@ SELECT PP + ("paitsi") (1 Punct) (2 ETTA)
 # mahdollisesti ongelmallista: "tuolla menee isä, astuin sen jälkeen."  "tutustuin jänikseen ja sen jälkeen."
 
 # runoudessa: "muistan päivän sen, jälkeen eilisen". ; "sen mukaan"
-SELECT Adp (0 Po) (1 Gen) ; 
+# SELECT Adp (0 Po) (1 Gen) ; 
+SELECT Po IF (0 Adp) (NOT 0 Pr) (1 Gen) ;
 # ennen ja jälkeen päivän
 
 
@@ -2496,6 +2497,10 @@ MAP (@←SPRED) TARGET (N Nom) IF (0 WORD LINK *-1 REALCOPULAS BARRIER (CLB)) ;
 # ----------
 
 # @ADVL - to do
+
+MAP (@ADVL) TARGET (Adv) ;
+# MAP (@ADVL) TARGET (Po) ; ?
+
 
 
 # Existential Sentences
