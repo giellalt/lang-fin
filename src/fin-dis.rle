@@ -58,6 +58,10 @@ LIST Com = Com ;
 LIST Dem = Dem ; 
 LIST Det = Det ; 
 
+# Clitics
+LIST Qst = Qst ; # -ko/-kö
+    
+
 # POS sub-categories
 # ------------------
 
@@ -499,6 +503,7 @@ SET ALL_PERSON = FIRST_PERSON_SG OR
                  THIRD_PERSON_PL OR 
                  (N Sg Nom) OR 
                  (N Sg Pl) ;
+
 
 # Things to sort
 # --------------
@@ -1812,6 +1817,8 @@ SELECT (AgPcp Par) IF (1C Par) (-1C Gen) (-1 N)
 # --------------
 
 SELECT ConNeg (-1 NEGV) (NOT 0 NEG-AMBIGUOUS) (NOT 1 Neg) (NOT 1 Prs) (0 Prs/Prt)
+
+SELECT ConNeg (0 WORD LINK *-1 NEGV BARRIER V) (NOT 0 NEG-AMBIGUOUS) (NOT 1 Neg) (NOT 1 Prs) (0 Prs/Prt) ;
 
   # EI HALUTA/=!# EIKä HEITä LöYDY
   # BUT:     EI NIITä VOI MUUTTAA!
