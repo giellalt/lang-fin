@@ -41,7 +41,7 @@ LIST Po = Po ;
 LIST Pr = Pr ;
 LIST Adp = Adp ;
 
-LIST Conj = Conj ;
+LIST Conj = Conj CS CC ;
 LIST PP = PP Adv Adp Po Pr ;
 LIST Part = Part ; # particle? still in use?
 
@@ -60,7 +60,7 @@ LIST Det = Det ;
 
 # Clitics
 LIST Qst = Qst ; # -ko/-kö
-    
+LIST Foc/ka = Foc/ka Foc_ka ; 
 
 # POS sub-categories
 # ------------------
@@ -1819,6 +1819,10 @@ SELECT (AgPcp Par) IF (1C Par) (-1C Gen) (-1 N)
 SELECT ConNeg (-1 NEGV) (NOT 0 NEG-AMBIGUOUS) (NOT 1 Neg) (NOT 1 Prs) (0 Prs/Prt)
 
 SELECT ConNeg (0 WORD LINK *-1 NEGV BARRIER V) (NOT 0 NEG-AMBIGUOUS) (NOT 1 Neg) (NOT 1 Prs) (0 Prs/Prt) ;
+    # Enkä minä koskaan enää tuhoa kaikkea, mikä elää, niinkuin nyt olen tehnyt.
+    
+SELECT (Pron Pers) (0 WORD LINK -1 NEGV) (0 WORD LINK *1 ConNeg BARRIER (ConNeg)) (NEGATE 0 WORD LINK 1 (N Ess));
+    # Enkä minä koskaan enää tuhoa kaikkea, mikä elää, niinkuin nyt olen tehnyt.
 
   # EI HALUTA/=!# EIKä HEITä LöYDY
   # BUT:     EI NIITä VOI MUUTTAA!
@@ -1832,7 +1836,7 @@ REMOVE (Pass Neg) (*-1 NEGV LINK *1C PrsPrc LINK NOT *1 CLB?)
 #     VRT: EI SUOMALAISTA VOI AINA KAIKESTA SYYTTää.
 
 # Allow selecting of Neg when Conj CS exists. Does not change above example. -- Ryan
-REMOVE (Neg) (NOT *-1 NEGV) (NOT *1 NEGV) (NEGATE 0 (Conj CS))
+REMOVE (Neg) (NOT *-1 NEGV) (NOT *1 NEGV) (NEGATE 0 (CS))
 
   # IF NO NEGV, THEN NO Neg IN THE SAME CLAUSE.
 REMOVE (Neg) (NOT *-1 NEGV) (*1 NEGV LINK *1C Neg)
@@ -1840,7 +1844,7 @@ REMOVE (Neg) (NOT *-1 NEGV) (*1 NEGV LINK *1C Neg)
 REMOVE (Neg) (*-1 NEGV LINK 1C Neg) (NOT -1 CLB?)
 
 # Select Neg if there's a conj reading too.
-SELECT (Neg) IF (0 (Conj CS)) (*1 ConNeg BARRIER ConNeg) ;
+SELECT (Neg) IF (0 (CS)) (*1 ConNeg BARRIER ConNeg) ;
 
 # Negative coordination: ei huolia kiinnittää, in situations where kiinnittää is ambiguous
 SELECT (V Inf1) IF (0 (Ind Prs)) (-1 (V Neg))
