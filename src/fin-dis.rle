@@ -48,7 +48,8 @@ LIST Part = Part ; # particle? still in use?
 LIST Pcle = Pcle ;
 LIST Acro = Acro ; 
 
-LIST C = C ; 
+# LIST C = C ; 
+LIST C = CS CC ; 
 LIST CC = CC ; 
 LIST CS = CS ; 
 LIST CMP = CMP ; 
@@ -743,7 +744,7 @@ ADD (CLB) Compl IF (NOT 1 DUMMY) (NOT 0 (CLB)) ;
 ADD (CLB) (Rel) IF (NOT 1 DUMMY) (NOT 0 (CLB)) ;
 ADD (CLB) (KO) IF (NOT 1 DUMMY) (NOT 0 (CLB)) ;
 ADD (CLB) (Adv) IF (0 KUINKA-MITEN-MIllOIN) (NOT 0 (CLB)) ;
-ADD (CLB) Conj IF (NOT 0 (CC)) (NOT 0 (CLB)) ; 
+ADD (CLB) (Conj) IF (NOT 0 (CC)) (NOT 0 (CLB)) ; 
 
 # Including (NOT 0 (CLB)) because it adds multiple times otherwise - Ryan
 
@@ -1274,6 +1275,7 @@ REMOVE (N "voi" P-2Sg) (NOT 1 DUMMY)           # VOISI
 SELECT (N Ill "voima") (-1 ASTUA)
 SELECT (N Ill "voima") (-1 TULLA)
 SELECT (N Ill "voima") (1 PCP)
+
 #(@w SELECT (N Ill "vuosi") (1 Num)
 #(@w SELECT (N Ill "vuosi") (*-1 NEGV)
 #(@w SELECT (N Ill "vuosi") (*1 NEGV)
@@ -1627,7 +1629,7 @@ SELECT Po IF (0 EXTENDED_CASE) (-1 PoCase) ;
 SELECT Po IF (0 Po) (0 (V Ins)) (-1 PoCase) ;
     # Hintoihin katsoen, hintoihin nähden
 
-  # General Po Pr rules
+    # General Po Pr rules
 SELECT Po IF (0 Po) (-1 PoCaseNonLoc) ; 
 SELECT Pr IF (0 Pr) (1 PoCaseNonLoc) ;
 
@@ -1636,6 +1638,10 @@ REMOVE Adp (0 Pr) ;
 
 REMOVE Adv IF (0 Po) ;
 REMOVE Adv IF (0 Pr) ;
+
+    # Puolella / Puoli
+    
+SELECT (N "puoli") IF (NEGATE 0 WORD LINK -1 (N Gen)) ;
 
 # Prefer to remove rather than select, so rules have to be 'inverse': REMOVE Pl3 IF Sg3, etc.
 
@@ -2011,11 +2017,11 @@ REMOVE (NOCAP) (NOT 1 DUMMY)
 # DELETES SPURIOUS PropER N READINGS LIKE (ARVO Prop)
 REMOVE (CAP) (NOT 1 DUMMY)
 # DELETES SPURIOUS ComMON N READINGS LIKE (ARVO Prop)
-#(@w SELECT (C "sillä") (-1 ComMA) (NOT 1 Ade)
-SELECT (C "sillä") (1C Nom) (2C VFIN)
-SELECT (C "sillä") (NOT 1 CLB?) (2C Nom) (3C VFIN)
-SELECT (C "sillä") (1 JOS/KUN/KOSKA/VAIKKA)
-SELECT (C "sillä") (2 JOS/KUN/KOSKA/VAIKKA)
+#(@w SELECT (CS "sillä") (-1 ComMA) (NOT 1 Ade)
+SELECT (CS "sillä") (1C Nom) (2C VFIN)
+SELECT (CS "sillä") (NOT 1 CLB?) (2C Nom) (3C VFIN)
+SELECT (CS "sillä") (1 JOS/KUN/KOSKA/VAIKKA)
+SELECT (CS "sillä") (2 JOS/KUN/KOSKA/VAIKKA)
 SELECT (Pron Sg Ade "se") (-1 C/Adv)
 SELECT (Pron Sg Ade "se") (NOT -1 CLB?) (-2 C/Adv)
 #(@w SELECT (Pron Sg Ade "se") (1C OLLA) (1 VFIN)   # TULEE VIRHEITä LIIKAA
