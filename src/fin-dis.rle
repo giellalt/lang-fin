@@ -422,6 +422,9 @@ LIST Impersonal = "kannattaa" "pitää" ;
 
 LIST Non-Nom-Subj = "kiinnostaa" "tuntua" ;
 
+LIST AUXs = "olla" "ei" ;
+SET REAL_AUX = AUXs OR (V Neg) ; # to get ettei, ellei
+
 
 SET AUX-OR-MAIN = Inf1-VERB OR Inf3-VERB ; 
 SET AUX = COPULAS OR Neg OR MOD-ASP OR AUX-OR-MAIN ;
@@ -2548,6 +2551,9 @@ MAP (@NUM←) TARGET N IF (-1 NUMS) ;
 MAP (@+FMAINV) TARGET VFIN IF (NEGATE *0 VERB BARRIER S-BOUNDARY2 OR CC) ;
 MAP (@+FMAINV) TARGET VFIN IF (0 AUX-OR-MAIN) (NEGATE *1 InfV BARRIER S-BOUNDARY2) ;
 
+MAP (@+FMAINV) TARGET PCP IF (0 WORD LINK *-1 REAL_AUX BARRIER (CLB)) ;
+
+
 MAP (@-FMAINV) TARGET InfV IF (0 InfV) ;
 MAP (@-FMAINV) TARGET VFIN IF (0 InfV) (NEGATE *1 PrfPrc OR (V Inf3) BARRIER SV-BOUNDARY) ;
 
@@ -2555,8 +2561,11 @@ MAP (@-FMAINV) TARGET VFIN IF (0 InfV) (NEGATE *1 PrfPrc OR (V Inf3) BARRIER SV-
 MAP (@-FAUXV) TARGET ConNeg (0 WORD LINK -1 Neg) ;
 MAP (@-FAUXV) TARGET ConNeg (0 WORD LINK -1 Neg LINK -1 Nom) ;  # (*1 (N Nom) BARRIER NPNH LINK *-1 Neg LINK -1 Nom) ; 
 
-MAP (@+FAUXV) TARGET AUX (NOT 0 ConNeg) ;
-MAP (@+FAUXV) TARGET ("ei") ;
+
+MAP (@+FAUXV) TARGET REAL_AUX IF (NOT 0 ConNeg) ;
+MAP (@+FAUXV) TARGET REAL_AUX ;
+
+
 
 # Minä en ole (koskaan) soittanut Jukalle.
 MAP (@-FAUXV) TARGET PrfPrc IF (*-1 REALCOPULAS BARRIER (CLB)) ;
