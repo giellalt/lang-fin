@@ -483,7 +483,8 @@ SET HÄN = (Pron Sg "hän") ;
 
 SET ME = (Pron Pl "minä") ;
 SET TE = (Pron Pl "sinä") ;
-SET HE = (Pron Pl "he") ; 
+SET HE = (Pron Pl "hän") ; 
+    # Pron Pers instead?
 
 SET FIRST_PERSON_SG = MINÄ OR (Sg1) ;
 SET SECOND_PERSON_SG = SINÄ OR (Sg2) ;
@@ -1655,11 +1656,19 @@ REMOVE (Pl3) IF (0 (Sg3)) (0 WORD LINK *-1C THIRD_PERSON_SG BARRIER THIRD_PERSON
 
 REMOVE (Sg3) IF (0 (Pl3)) (0 WORD LINK *-1C THIRD_PERSON_PL BARRIER THIRD_PERSON_PL) ;
 
+    # Hän näki poikansa.
+    # -- works
+
+    # Hän näki heidän poikansa.
+    # -- seems not to work
+
 # REMOVE (Po Pl3) IF (0 WORD LINK *-1 THIRD_PERSON_SG BARRIER THIRD_PERSON_SG) ;
 # REMOVE (Adv Pl3) IF (0 WORD LINK *-1 THIRD_PERSON_SG BARRIER THIRD_PERSON_SG) ;
 
 # REMOVE (Po Sg3) IF (0 WORD LINK *-1 THIRD_PERSON_PL BARRIER THIRD_PERSON_PL) ;
 # REMOVE (Adv Sg3) IF (0 WORD LINK *-1 THIRD_PERSON_PL BARRIER THIRD_PERSON_PL) ;
+
+SELECT (N Gen) IF (0 (N Nom)) (0 WORD LINK *-1 Nom BARRIER (CLB)) (0 WORD LINK *-1 V BARRIER (CLB));
 
 
 # SELECT Pr IF (1 Par) ;
@@ -2434,8 +2443,8 @@ MAP (@CNP) TARGET ("ja" CC) ;
 # MAP (@SUBJ) Target Nom (0 WORD LINK *1 (V Act))
 
 # Jukan isä ja äiti menivät kotiin koska heidän oli pakko ostaa auto.
-# @NEC-SUBJ assigned only within clause.
-MAP (@SUBJ→ @NEC-SUBJ) TARGET Gen IF (0 WORD LINK *1 (@NES) BARRIER (CLB))
+# Removed @NEC-SUBJ; two tags = bad
+MAP (@SUBJ→) TARGET Gen IF (0 WORD LINK *1 (@NES) BARRIER (CLB))
 MAP (@←OBJ) TARGET Nom IF (0 WORD LINK *-1 (Gen)) (*-1 NES)
 
 # Me ostettiin kirja.
@@ -2468,14 +2477,16 @@ MAP (@←SUBJ) TARGET Par (0 WORD LINK *-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) (N
 
 # Ihmisiä tungeksi torilla. 
 
-MAP (@←OBJ) TARGET Gen IF (0 WORD LINK *-1 (Act) BARRIER (CLB)) (NEGATE 0 WORD LINK 1 (Gen)) (NEGATE 0 WORD LINK *1 @←OBJ BARRIER (CLB)) (NEGATE 0 WORD LINK *1 Par BARRIER (CLB)) (NEGATE 0 WORD LINK *-1 REALCOPULAS BARRIER (CLB)) (NEGATE 0 WORD LINK 1 Po) ;
+MAP (@←OBJ) TARGET Gen IF (0 WORD LINK *-1 (Act) BARRIER (CLB)) (NEGATE 0 WORD LINK 1 (Gen)) (NEGATE 0 WORD LINK *1 @←OBJ BARRIER (CLB)) (NEGATE 0 WORD LINK *1 Par BARRIER (CLB)) (NEGATE 0 WORD LINK *-1 REALCOPULAS BARRIER (CLB)) (NEGATE 0 WORD LINK 1 Po) (NEGATE 0 WORD LINK *-1 Neg BARRIER V);
 
     # Hän käski minun tehdä sen.
 
-MAP (@←OBJ) TARGET Gen IF (0 WORD LINK -1 (Act)) (NEGATE 0 WORD LINK *1 Po BARRIER Po) ;
+MAP (@←OBJ) TARGET Gen IF (0 WORD LINK -1 (Act)) (NEGATE 0 WORD LINK *1 Po BARRIER Po) (NEGATE 0 WORD LINK *-1 Neg BARRIER V) ;
 
     # Luin sen ennen uutisia.
     # Istuin pöydän alla. -- Do not mark @OBJ in this instance.
+    # No Gen if negative precedes.
+    # Ettei minun äidin ystävä ole tullut.
 
 # Lounas syötiin
 MAP (@OBJ→) TARGET Nom (0 WORD LINK *1 (Pass))
@@ -2665,7 +2676,7 @@ MAP (@←P) TARGET PRON_PR_CASE IF (0 WORD LINK *-1 Pr BARRIER Pr) ;
 
 
 
-SET NAttrs = PCP OR (A Pos) OR Pron OR (Num Ord) ; 
+SET NAttrs = PCP OR (A Pos) OR Pron OR (Num Ord) OR (N Gen); 
 
 
 # MAP (@→N) TARGET (A Pos) IF (0 WORD LINK *1 N BARRIER N) (0 WORD LINK *1 N BARRIER (CLB));
