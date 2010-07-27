@@ -2549,6 +2549,16 @@ MAP (@NUM←) TARGET N IF (-1 NUMS) ;
 
 # Mostly same as sme rule, but removed (0 ("orrut")); is it worth including copulas here? Finnish doesn't quite have quite the same here
 MAP (@+FMAINV) TARGET VFIN IF (NEGATE *0 VERB BARRIER S-BOUNDARY2 OR CC) ;
+
+MAP (@+FAUXV) TARGET Inf1-VERB IF (*1 Inf1 BARRIER V) ; 
+MAP (@+FAUXV) TARGET Inf3-VERB IF (*1 Inf3 BARRIER V) ; 
+    # Äidin vanha ystävä voisi kyllä yrittää.
+    # Äidin vanha ystävä voisi yrittää.
+    
+    # Äidin vanha ystävä voisi kyllä tulla käymään ensi vuonna.
+    #                  @+FAUXV      @-FMAINV @-FMAINV
+
+
 MAP (@+FMAINV) TARGET VFIN IF (0 AUX-OR-MAIN) (NEGATE *1 InfV BARRIER S-BOUNDARY2) ;
 
 MAP (@+FMAINV) TARGET PCP IF (0 WORD LINK *-1 REAL_AUX BARRIER (CLB)) ;
