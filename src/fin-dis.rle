@@ -2695,7 +2695,7 @@ MAP (@←P) TARGET PRON_PR_CASE IF (0 WORD LINK *-1 Pr BARRIER Pr) ;
 
 
 
-SET NAttrs = PCP OR (A Pos) OR Pron OR (Num Ord) OR (N Gen); 
+SET NAttrs = PCP OR (A Pos) OR Pron OR (Num Ord) OR (N Gen) or (Num Card) ; 
 
 
 # MAP (@→N) TARGET (A Pos) IF (0 WORD LINK *1 N BARRIER N) (0 WORD LINK *1 N BARRIER (CLB));
