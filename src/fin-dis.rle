@@ -420,7 +420,7 @@ SET PART-SUBJ = Weather-Verbs ;
 LIST Impersonal = "kannattaa" "pitää" ;
 
 
-LIST Non-Nom-Subj = "kiinnostaa" "tuntua" ;
+LIST Non-Nom-Subj = "kiinnostaa" "tuntua" ; # partitive too
 
 LIST AUXs = "olla" "ei" ;
 SET REAL_AUX = AUXs OR (V Neg) ; # to get ettei, ellei
@@ -790,7 +790,7 @@ SECTION
 
 SELECT (A Ins) (1 N) (1 Ins)
   # CASE AGREEMENT IN NP
-IFF (Pron Ins) (1 Ins)
+IFF (Pron Ins) (1C Ins)
   # CASE AGREEMENT IN NP
 
 # ------------------------------------------------------------
@@ -1986,6 +1986,9 @@ IFF (PrfPrc Ins) (1 N) (1 Ins)
 IFF (PrsPrc Ins) (1 N) (1 Ins)
 SELECT  (PrfPrc Pass Sg Nom "tehdä") (-1 VFIN) (*-2 Gen LINK NOT *1 CLB?)
 SELECT  (PrfPrc Pass Sg Nom "tehdä") (-2 VFIN) (*-3 Gen LINK NOT *1 CLB?)
+
+
+
 REMOVE (PrsPrc Pass <POSS>) (NOT 1 DUMMY)
 # LäHETYKSENSä "lähetä" <Par-OBJ> PrsPrc Pass Pos Sg Tra P-3 <POSS>
 REMOVE (PrfPrc Pl Nom) (-1C Nom) (NOT -1 A) (NOT 1 Nom) (NOT 1 Pl)
