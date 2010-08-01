@@ -139,7 +139,7 @@ LIST INT-LOC = Ine Ela Ill ;
 LIST EXT-LOC = Ade Abl All ; 
 LIST Gen/Num = Gen Num <DIGIT> ; 
 
-
+LIST ALLCASES = Nom Gen Acc Par Abl Ade All Ela Ill Ine Ess Tra Abe Com Ins Loc ;
 
 # Verbal Properties 
 # -------------------
@@ -1190,7 +1190,9 @@ REMOVE (Adv) (0 AIVAN-IHAN) (NOT 1 V) (NOT 1 C) (NOT 1 Adv)
 # ** CASE
 SELECT (Ill) (1 MENNA) (1 Ine)    # TUOHON MENNEssä
 
-REMOVE (Pron Dem) IF (0 Adv) (NEGATE 1 WORD LINK 2 Gen) ;
+# REMOVE (Pron Dem) IF (0 Adv) (NEGATE 1 WORD LINK 2 Gen) ;
+SELECT (Pron Dem) IF (0 Adv) (NEGATE 1 WORD LINK 2 Gen) ;
+
     # Hän rakensi siihen alttarin.
     # Better way to do this? Have to check for case mismatches, and this will get to be crazy. E.g., 1 = Ill, 2 = Gen; 1 = Gen, 2 = Ines
     # Maybe i should actually select the pronouns instead of the adverbs... This is more inline with fin-sme, anyway.
@@ -2462,7 +2464,10 @@ MAP (@←OBJ) TARGET Nom IF (0 WORD LINK *-1 Pass) (*-1 Nom)
 
 MAP (@N→) TARGET (N Sg Nom) IF (1 (N Prop)) ;
 
-MAP (@N→) TARGET (Pron Dem) IF (1 (N)) ;
+# LIST Cases = Ill Ine ; 
+# MAP (@N→) (Pron Dem) IF (1 (N)) (1 $$Cases) (0 $$Cases) ;
+
+# MAP (@N→) TARGET (Pron Dem) IF (1 (N)) ;
 MAP (@N→) TARGET (Pron Dem) IF (1 (A Pos)) (2 (N));
 
 # Jukka osti kirjan.
@@ -2705,6 +2710,11 @@ SET NAttrs = PCP OR (A Pos) OR Pron OR (Num Ord) OR (N Gen) or (Num Card) ;
 
 # MAP (@→N) TARGET (A Pos) IF (0 WORD LINK *1 N BARRIER N) (0 WORD LINK *1 N BARRIER (CLB));
 # MAP (@→N) TARGET (Pron) IF (0 WORD LINK *1 N BARRIER N) (0 WORD LINK *1 N BARRIER (CLB));
+
+    # This also checks that cases agree... Can add this to other N attrs 
+MAP (@N→) (Pron Dem) IF (1 (N)) (1 $$ALLCASES) (0 $$ALLCASES) ;
+    # Hän rakentaa siihen alttarin.
+    # Hän heitti sen siihen taloon.
 
 MAP (@→N) TARGET NAttrs IF (0 WORD LINK *1 N BARRIER NP-BOUNDARY) (NEGATE 0 (V PrfPrc) LINK -1 (V "olla")) ; # (0 WORD LINK *1 N BARRIER (CLB))
 
