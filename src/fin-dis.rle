@@ -133,6 +133,9 @@ LIST Nom/Par = Nom Par ;
 
 LIST NONSUBJECT-CASE = Ess Tra Ine Ela Ill Ade Abl All Abe Com Ins ; 
 LIST NOT-Gen-CASE = Nom Par Ine Ela Ill Ade Abl All Ess Tra Abe Com Ins ; 
+
+SET OBJ-CASEs = (Nom Pl) OR (Par) OR (Gen Sg) ;
+
 LIST Par/Gen = Par Gen ; 
 LIST Par/Punct = Par Punct ; 
 LIST INT-LOC = Ine Ela Ill ; 
@@ -2307,7 +2310,8 @@ SELECT (Inf3 Ade) (0 Ade)
 #(@w REMOVE (A Pos Sg Par) (0 N)
 REMOVE (A Pos All) (0 A)
 SELECT (Pron "itse") (NOT 1 DUMMY)  # **tankerous
-SELECT (Adv "näin") (NOT 1 DUMMY) (NOT -1 (Pron Pers))
+SELECT (Adv "näin") (NOT 1 DUMMY) (NOT -1 (Pron Pers)) (0 WORD LINK *1 V BARRIER (CLB)) ;
+SELECT (Adv "näin") (NOT 1 DUMMY) (NOT -1 (Pron Pers)) (0 WORD LINK *-1 V BARRIER (CLB)) ;
 SELECT (Adv "osaksi") (NOT 1 Par) (NOT -1 OTTAA-2) (NOT -2 OTTAA-2)# bad
 REMOVE (Adv "huomaan") (NOT 1 DUMMY)
 REMOVE (V Prt ActAct) (0 Prs)  # voimme, voitte# pyrimme# **tankerous
@@ -2475,7 +2479,16 @@ MAP (@N→) TARGET (Pron Dem) IF (1 (A Pos)) (2 (N));
 SET N_Pron_Nom = (N Nom) OR (Pron Nom) ;
 
 # MAP (@SUBJ→) TARGET Nom (0 WORD LINK *1 (Act) BARRIER (CLB))
-MAP (@SUBJ→) TARGET N_Pron_Nom IF (NEGATE *-1 VFIN BARRIER (CLB)) (*1 VFIN BARRIER S-BOUNDARY2 OR @SUBJ→) ;
+MAP (@SUBJ→) TARGET Ade IF (0 WORD LINK *1 AUXs BARRIER (CLB)) ;
+    # Kaikki sinun ystävillä@SUBJ-> on kissoja.
+
+MAP (@SUBJ→) TARGET N_Pron_Nom IF (NEGATE *-1 VFIN BARRIER (CLB)) (*1 VFIN BARRIER S-BOUNDARY2 OR @SUBJ→) (NEGATE 0 ("kaikki") LINK *1 (N Nom) BARRIER V) (NEGATE 0 ("kaikki") LINK *1 (N Nom) BARRIER V) ;
+
+
+    # Kaikki sinun ystävät@SUBJ→ ovat täällä.
+    # Kaikki@SUBJ→ on täällä.
+
+
 MAP (@SUBJ→) TARGET N_Pron_Nom IF (*-1 CC BARRIER NPNH LINK -1 Nom) ;
 MAP (@SUBJ→) TARGET (Rel Nom) IF (*1 VFIN BARRIER S-BOUNDARY2) ;
 
@@ -2513,8 +2526,9 @@ MAP (@←OBJ) TARGET Par IF (0 WORD LINK *-1 Neg) #) (NOT 0 WORD LINK *-1 (Punct
 
 # Hän katsoi sitä ja otti sen pois. 
 
-MAP (@←OBJ) TARGET Par IF (NEGATE 0 WORD LINK *-1 PP BARRIER PP) (NEGATE 0 WORD LINK 1 Par) (0 WORD LINK *-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) ;
+# MAP (@←OBJ) TARGET Par IF (NEGATE 0 WORD LINK *-1 PP BARRIER PP) (NEGATE 0 WORD LINK 1 Par) (0 WORD LINK *-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) ;
 
+MAP (@←OBJ) TARGET OBJ-CASEs IF (NEGATE 0 WORD LINK *-1 PP BARRIER PP) (NEGATE 0 WORD LINK 1 Par) (0 WORD LINK *-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) ;
 
 # Need to not map obj in this case, rather subject or @<SPRED.
 
@@ -2691,10 +2705,22 @@ SET NAttrs = PCP OR (A Pos) OR Pron OR (Num Ord) OR (N Gen) or (Num Card) ;
 # MAP (@→N) TARGET (A Pos) IF (0 WORD LINK *1 N BARRIER N) (0 WORD LINK *1 N BARRIER (CLB));
 # MAP (@→N) TARGET (Pron) IF (0 WORD LINK *1 N BARRIER N) (0 WORD LINK *1 N BARRIER (CLB));
 
+MAP (@N→) TARGET (Pron Indef "kaikki") IF (2 (N)) (2 $$ALLCASES) (1 (Pron Pers Gen)) ;
+    # Kaikki sinun ystävät ovat täällä.
+    # Täällä on kaikki sinun ystävät.
+
+
+
+MAP (@N→) TARGET (Pron Indef "kaikki") IF (3 (N)) (3 $$ALLCASES) (2 $$ALLCASES) (2 A) (1 (Pron Pers Gen)) ;
+    # Kaikki sinun vanhat ystävät ovat täällä.
+
     # This also checks that cases agree... Can add this to other N attrs 
-MAP (@N→) (Pron Dem) IF (1 (N)) (1 $$ALLCASES) (0 $$ALLCASES) ;
+MAP (@N→) TARGET (Pron Dem) IF (1 (N)) (1 $$ALLCASES) (0 $$ALLCASES) ;
     # Hän rakentaa siihen alttarin.
     # Hän heitti sen siihen taloon.
+
+MAP (@N→) TARGET (Pron Gen) IF (1 (N)) ;
+MAP (@N→) TARGET (Pron Gen) IF (2 (N)) (2 $$ALLCASES) (1 $$ALLCASES);
 
 MAP (@→N) TARGET NAttrs IF (0 WORD LINK *1 N BARRIER NP-BOUNDARY) (NEGATE 0 (V PrfPrc) LINK -1 (V "olla")) (0 $$ALLCASES LINK *1 $$ALLCASES BARRIER NP-BOUNDARY) ; # (0 WORD LINK *1 N BARRIER (CLB))
 
