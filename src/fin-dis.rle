@@ -2616,26 +2616,6 @@ MAP (@ADVL) TARGET Adp+Poss ;
 
 
 
-# Existential Sentences
-# ---------------------
-# ***
-# REMOVE (V Inf1) IF (0 WORD LINK *-1 (@SUBJ→))
-
-# Ihmisiä tungeksi kadulla.
-# This is not solved yet.
-MAP (@←ADVL @LOC) TARGET LOC-CASE (0 WORD LINK -1 (V Act Ind Prt Sg3))
-MAP (@SUBJ→) TARGET (Par) (0 WORD LINK 1 (V Sg3)) (0 WORD LINK *1 @←ADVL)
-
-# Currently this is tied to a subject and adverbial
-# Ideally it should be more about nonagreeing subjects
-# Also @EXIST(ENTIAL) is arguably more semantic than anything.
-# MAP (@EXIST) TARGET (V Sg3) (0 WORD LINK *1 @←ADVL) (0 WORD LINK *-1 @SUBJ→)
-
-# It seems like it would be a good idea to mark whether the subject
-# is not agreeing with the verb for person or number to better target existentials
-
-# MAP (@NONAGR) TARGET (V Sg3) (0 WORD LINK *-1 (N Pl @SUBJ→))
-# SYNTACTIC-CONSTRAINTS
 
 MAP (@PCLE) TARGET Pcle ;
 
@@ -2716,7 +2696,7 @@ MAP (@N→) (Pron Dem) IF (1 (N)) (1 $$ALLCASES) (0 $$ALLCASES) ;
     # Hän rakentaa siihen alttarin.
     # Hän heitti sen siihen taloon.
 
-MAP (@→N) TARGET NAttrs IF (0 WORD LINK *1 N BARRIER NP-BOUNDARY) (NEGATE 0 (V PrfPrc) LINK -1 (V "olla")) ; # (0 WORD LINK *1 N BARRIER (CLB))
+MAP (@→N) TARGET NAttrs IF (0 WORD LINK *1 N BARRIER NP-BOUNDARY) (NEGATE 0 (V PrfPrc) LINK -1 (V "olla")) (0 $$ALLCASES LINK *1 $$ALLCASES BARRIER NP-BOUNDARY) ; # (0 WORD LINK *1 N BARRIER (CLB))
 
     # Iso punainen talo on siellä 
     # Se sama ongelma häiritsi häntä.
@@ -2735,6 +2715,29 @@ MAP (@→N) TARGET Acro IF (0 Acro LINK *1 Prop BARRIER Prop);
     
 
 MAP (@N←) TARGET Num IF (-1 N) ;
+
+
+# Existential Sentences
+# ---------------------
+# ***
+# REMOVE (V Inf1) IF (0 WORD LINK *-1 (@SUBJ→))
+
+# Ihmisiä tungeksi kadulla.
+# This is not solved yet.
+MAP (@←ADVL @LOC) TARGET LOC-CASE (0 WORD LINK -1 (V Act Ind Prt Sg3))
+MAP (@SUBJ→) TARGET (Par) (0 WORD LINK 1 (V Sg3)) (0 WORD LINK *1 @←ADVL)
+
+# Currently this is tied to a subject and adverbial
+# Ideally it should be more about nonagreeing subjects
+# Also @EXIST(ENTIAL) is arguably more semantic than anything.
+# MAP (@EXIST) TARGET (V Sg3) (0 WORD LINK *1 @←ADVL) (0 WORD LINK *-1 @SUBJ→)
+
+# It seems like it would be a good idea to mark whether the subject
+# is not agreeing with the verb for person or number to better target existentials
+
+# MAP (@NONAGR) TARGET (V Sg3) (0 WORD LINK *-1 (N Pl @SUBJ→))
+# SYNTACTIC-CONSTRAINTS
+
 
 SECTION
 
