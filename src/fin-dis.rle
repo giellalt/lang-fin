@@ -1193,6 +1193,10 @@ REMOVE (Adv) (0 AIVAN-IHAN) (NOT 1 V) (NOT 1 C) (NOT 1 Adv)
 # ** CASE
 SELECT (Ill) (1 MENNA) (1 Ine)    # TUOHON MENNEssä
 
+SELECT CS IF (0 (CLB)) (-1 (CLB)) (0 (Pron Dem));
+    # Ja mies antoi vaimolleen nimen Eeva, sillä hänestä tuli kaiken  elävän äiti.
+
+
 LIST SIEL = "sieltä" "siellä" "sielle" ;
 SELECT Adv IF (0 SIEL) ;
     # Want adverbs for these, otherwise the analyses from omorfi are that sieltä, etc., derive from "se": "se" Pron Dem Sg Abl. These aren't necessarily demonstrative pronouns.
