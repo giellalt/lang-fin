@@ -109,6 +109,15 @@ LIST Sg3 = Sg3 ;
 LIST Sg123 = Sg1 Sg2 Sg3 ; 
 LIST Sg12Pl12Pass = Sg1 Sg2 Pl1 Pl2 Pass ; 
 
+LIST PxSg1 = PxPl1 ;
+LIST PxSg2 = PxPl2 ;
+LIST PxSg3 = PxPl3 ;
+
+
+LIST PxPl1 = PxPl1 ;
+LIST PxPl2 = PxPl2 ;
+LIST PxPl3 = PxPl3 ;
+
 
 LIST INTERR = INTERR ; 
 LIST INTERR-KO = INTERR KO ; 
@@ -492,16 +501,16 @@ SET TE = (Pron Pl "sinä") ;
 SET HE = (Pron Pl "hän") ; 
     # Pron Pers instead?
 
-SET FIRST_PERSON_SG = MINÄ OR (Sg1) ;
-SET SECOND_PERSON_SG = SINÄ OR (Sg2) ;
-SET THIRD_PERSON_SG = HÄN OR (Sg3) ;
+SET FIRST_PERSON_SG = MINÄ OR (Sg1)  OR (PxSg1) ;
+SET SECOND_PERSON_SG = SINÄ OR (Sg2) OR (PxSg2) ;
+SET THIRD_PERSON_SG = HÄN OR (Sg3)   OR (PxSg3) ;
 
-SET FIRST_PERSON_PL = ME OR (Pl1) ;
-SET SECOND_PERSON_PL = TE OR (Pl2) ;
-SET THIRD_PERSON_PL = HÄN OR (Pl3) ;
+SET FIRST_PERSON_PL = ME OR (Pl1)  OR (PxPl1) ;
+SET SECOND_PERSON_PL = TE OR (Pl2) OR (PxPl2) ;
+SET THIRD_PERSON_PL = HÄN OR (Pl3) OR (PxPl3) ;
 
-SET THIRD_PERSON_SG/Noun = HÄN OR (Sg3) OR (N Sg Nom) ;
-SET THIRD_PERSON_PL/Noun = HE OR (Pl3) OR (N Pl Nom) ;
+SET THIRD_PERSON_SG/Noun = HÄN OR (Sg3) OR (N Sg Nom) OR (PxSg3) ;
+SET THIRD_PERSON_PL/Noun = HE OR (Pl3) OR (N Pl Nom) OR (PxPl3) ;
 
 SET ALL_PERSON = FIRST_PERSON_SG OR
                  FIRST_PERSON_PL OR
@@ -1671,15 +1680,52 @@ SELECT (N "puoli") IF (NEGATE 0 WORD LINK -1 (N Gen)) ;
 # Prefer to remove rather than select, so rules have to be 'inverse': REMOVE Pl3 IF Sg3, etc.
 
 # If these rules are too destructive (originally intended for Adp and Po possessive marking), use the commented-out ones.
-REMOVE (Pl3) IF (0 (Sg3)) (0 WORD LINK *-1C THIRD_PERSON_SG BARRIER THIRD_PERSON_SG) ;
 
-REMOVE (Sg3) IF (0 (Pl3)) (0 WORD LINK *-1C THIRD_PERSON_PL BARRIER THIRD_PERSON_PL) ;
+# REMOVE (Pl3) IF (0 (Sg3)) (0 WORD LINK *-1C THIRD_PERSON_SG BARRIER THIRD_PERSON_SG) ;
+# REMOVE (Sg3) IF (0 (Pl3)) (0 WORD LINK *-1C THIRD_PERSON_PL BARRIER THIRD_PERSON_PL) ;
+
+SET POSS_SUFF = Pl1 OR 
+                Pl2 OR  
+                Pl3  OR 
+                Sg1  OR 
+                Sg2  OR 
+                Sg3  OR 
+                PxPl1 OR 
+                PxPl2 OR 
+                PxPl3 OR 
+                PxSg1 OR 
+                PxSg3 OR 
+                PxSg3 OR ;
+                
+
+REMOVE (PxPl3) IF (-1 (Pron Sg)) ;
+REMOVE (PxSg3) IF (-1 (Pron Pl)) ;
+
+REMOVE (PxPl3) IF (*-1 (Sg @SUBJ→)) ;
+REMOVE (PxSg3) IF (*-1 (Pl @SUBJ→)) ;
+
+# REMOVE (THIRD_PERSON_PL) IF (0 POSS_SUFF) (-1 (Pron Sg)) ;
+# REMOVE (THIRD_PERSON_SG) IF (0 POSS_SUFF) (-1 (Pron Pl)) ;
+# 
+# REMOVE (N THIRD_PERSON_PL) IF (0 POSS_SUFF) (*-1 (Sg @SUBJ→)) ;
+# REMOVE (N THIRD_PERSON_SG) IF (0 POSS_SUFF) (*-1 (Pl @SUBJ→)) ;
+
 
     # Hän näki poikansa.
     # -- works
 
     # Hän näki heidän poikansa.
     # -- seems not to work
+    
+    # Ja Jumala(j) loi ihmisen omaksi kuvaksensa(j).
+    # *Ja Jumala(j) loi ihmisen(i) omaksi kuvaksensa(i).
+    # -- Means that we do need to look over the barrier, or that this barrier can't include the obj?
+    
+    # So basically, this needs to go to the subject if there's no intervening pronoun, otherwise it goes to the pronoun if it immediately precedes... yes?
+    
+    # Jukka kertoi heille heidän ongelmistaan
+    # *minä kerroin heille ongelmistaan
+    
 
 # REMOVE (Po Pl3) IF (0 WORD LINK *-1 THIRD_PERSON_SG BARRIER THIRD_PERSON_SG) ;
 # REMOVE (Adv Pl3) IF (0 WORD LINK *-1 THIRD_PERSON_SG BARRIER THIRD_PERSON_SG) ;
