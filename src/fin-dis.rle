@@ -109,9 +109,9 @@ LIST Sg3 = Sg3 ;
 LIST Sg123 = Sg1 Sg2 Sg3 PxSg1 PxSg2 PxSg3 ; 
 LIST Sg12Pl12Pass = Sg1 Sg2 Pl1 Pl2 Pass PxPl1 PxPl2 PxPl3 ; 
 
-LIST PxSg1 = PxPl1 ;
-LIST PxSg2 = 0PxPl2 ;
-LIST PxSg3 = PxPl3 ;
+LIST PxSg1 = PxSg1 ;
+LIST PxSg2 = PxSg2 ;
+LIST PxSg3 = PxSg3 ;
 
 
 LIST PxPl1 = PxPl1 ;
@@ -730,6 +730,37 @@ LIST PRINCIPAL-FUNCTION-DECLARATIONS = @SUBJ @OBJ @SPRED ;
 ### "<$->" "kuinka" "miten" "milloin" "-" C KO Punct)
 ### Do not understand these… Trond.
 
+#Pl1 OR 
+#                Pl2 OR  
+#                Pl3  OR 
+#                Sg1  OR 
+#                Sg2  OR 
+#                Sg3  OR 
+
+SET POSS_SUFF = PxPl1 | PxPl2 | PxPl3 | PxSg1 | PxSg2 | PxSg3 ;
+                
+LIST SGPRON = (Pron Sg1) (Pron Sg2) (Pron Sg3) (Pron Sg) ; # (Pron PxSg1) (Pron PxSg2) (Pron PxSg3);
+LIST PLPRON = (Pron Pl1) (Pron Pl2) (Pron Pl3) (Pron Pl) ; # (Pron PxPl1) (Pron PxPl2) (Pron PxPl3);
+
+LIST Cmpnd = Cmpnd ;
+
+LIST N-SG-NOM = (N Sg Nom);
+LIST N-PL-NOM = (N Pl Nom);
+
+SET LEX-N = N - N-DER;
+
+LIST PROP = (N Prop);
+
+SET CNOUN = N - Prop;
+
+SET HNOUN = N - Cmpnd ;
+
+SET HNOUN-NOM = (N Nom) - Cmpnd ;
+
+SET N-NOT-GEN = N - (N Gen) ;
+
+
+
 SECTION
 
 ### TODO: 
@@ -777,6 +808,9 @@ REMOVE Pcle IF (0 CC OR CS OR Adv OR Pron) ;
 
 REMOVE Pcle IF (0 ("ja")) ;
 REMOVE Pcle IF (0 ("jos")) ;
+
+# Jumalasi on tullut.
+REMOVE Prop IF (0 CNOUN) (0 POSS_SUFF);
 
 REMOVE INTJ ; # FMT: The above rules do not work for "Niin he jättivät kohta verkot ja seurasivat häntä" 
 # these two rules are ad hoc rules, awaiting tag harmonisation omorfi-cg
@@ -1694,20 +1728,6 @@ SELECT (N "puoli") IF (NEGATE 0 WORD LINK -1 (N Gen)) ;
 # REMOVE (Pl3) IF (0 (Sg3)) (0 WORD LINK *-1C THIRD_PERSON_SG BARRIER THIRD_PERSON_SG) ;
 # REMOVE (Sg3) IF (0 (Pl3)) (0 WORD LINK *-1C THIRD_PERSON_PL BARRIER THIRD_PERSON_PL) ;
 
-SET POSS_SUFF = Pl1 OR 
-                Pl2 OR  
-                Pl3  OR 
-                Sg1  OR 
-                Sg2  OR 
-                Sg3  OR 
-                PxPl1 OR 
-                PxPl2 OR 
-                PxPl3 OR 
-                PxSg1 OR 
-                PxSg3 OR 
-                PxSg3 OR ;
-                
-
 REMOVE (PxPl3) IF (-1 (Pron Sg)) ;
 REMOVE (PxSg3) IF (-1 (Pron Pl)) ;
 
@@ -2465,26 +2485,6 @@ SET NP-BOUNDARY = BOS OR EOS OR REALCLB OR VFIN OR (Inf) OR (Actio Ess) OR ConNe
 # NP boundary xxx*
 # ----------- 
 
-LIST SGPRON = (Pron Sg1) (Pron Sg2) (Pron Sg3) (Pron Sg) ; # (Pron PxSg1) (Pron PxSg2) (Pron PxSg3);
-LIST PLPRON = (Pron Pl1) (Pron Pl2) (Pron Pl3) (Pron Pl) ; # (Pron PxPl1) (Pron PxPl2) (Pron PxPl3);
-
-LIST Cmpnd = Cmpnd ;
-
-LIST N-SG-NOM = (N Sg Nom);
-LIST N-PL-NOM = (N Pl Nom);
-
-SET LEX-N = N - N-DER;
-
-LIST PROP = (N Prop);
-
-SET CNOUN = N - Prop;
-
-SET HNOUN = N - Cmpnd ;
-
-SET HNOUN-NOM = (N Nom) - Cmpnd ;
-
-SET N-NOT-GEN = N - (N Gen) ;
-
 SET NP = N OR A ;                      # anything that can take except numerals
 SET NP-HEAD        = Pron OR HNOUN - ("hyvä") ;
 SET NP-HEAD-SG     = SGPRON OR (N Sg) OR (A Sg) - Cmpnd  - Dem - ("hyvä");
@@ -2531,7 +2531,7 @@ MAP (@SUBJ→) TARGET ME (0 Pron LINK *1 (Pe4) BARRIER (CLB)) ;
 MAP (@←OBJ) TARGET Nom IF (0 WORD LINK *-1 Pass) (*-1 Nom)
     # Needs barriers
 
-MAP (@N→) TARGET (N Sg Nom) IF (1 (N Prop)) ;
+MAP (@N→) TARGET (N Sg Nom) IF (1 PROP) ;
 
 # LIST Cases = Ill Ine ; 
 # MAP (@N→) (Pron Dem) IF (1 (N)) (1 $$Cases) (0 $$Cases) ;
@@ -3003,3 +3003,8 @@ SELECT @←SPRED ;
  #GENERIC Sg Nom FOR All OTHER InsTANCES
  
 #h# =h ((N Sg Nom (@SUBJ @OBJ @PC @N→)) (@1 NIL) (@2 NI
+
+AFTER-SECTIONS
+
+#SUBSTITUTE (+ei V Neg Act Sg3) (+ei V Neg Act Sg3 @+FAUXV) ;
+SUBSTITUTE (Cmpnd @+FAUXV) (Cmpnd) (CS Cmpnd @+FAUXV) ;
