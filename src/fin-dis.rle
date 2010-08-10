@@ -1265,6 +1265,10 @@ REMOVE (ORD Pl "toinen") (NOT 1 Pl)
 SELECT (Num Ord "toinen") (1 N) ;
 # TOISIllE, TOISIAAN ETC.
 
+REMOVE (Num Card Pl Ins "yksi") IF (0 $$ALLCASES) (NOT 1 $$ALLCASES) (0 Adv) ;
+    # Hän oli siellä yksin.
+    # Select adv, instead of num
+
 # Nouns 
 # -----
 
