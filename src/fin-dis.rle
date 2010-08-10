@@ -797,6 +797,9 @@ ADD (CLB) (Conj) IF (NOT 0 (CC)) (NOT 0 (CLB)) ;
 
 # Including (NOT 0 (CLB)) because it adds multiple times otherwise - Ryan
 
+SELECT Conj IF (-1 (Pcle "samoin")) ;
+    # samoin kuin.
+    # hackish for now 
 
 ## Trond
 
@@ -805,7 +808,7 @@ ADD (CLB) (Conj) IF (NOT 0 (CC)) (NOT 0 (CLB)) ;
 # REMOVE Pcle IF (NOT 1 Adv) ;
 
 # Remove particles if they have some other reading, e.g., adverb
-REMOVE Pcle IF (0 CC OR CS OR Adv OR Pron) ;
+REMOVE Pcle IF (0 CC OR CS OR Adv OR Pron) (NOT 1 CC) ;
 # This will not remove Pcle if it is the last reading available. If particles still show up where they are expected to be adverbs, they are missing in the morphology.
 
 REMOVE Pcle IF (0 ("ja")) ;
@@ -1258,6 +1261,12 @@ SELECT (Pron Dem) IF (0 Adv) (NEGATE 1 WORD LINK 2 Gen) ;
 SELECT (Pron Dem "tuo") IF (0 $$ALLCASES) (1 $$ALLCASES) ; 
 
 
+REMOVE (Pron Pl Ins "sama") IF (0 $$ALLCASES) (NOT 1 $$ALLCASES) (0 Adv) (NOT 1 Conj);
+
+    # Hän oli siellä yksin.
+    # Select adv, instead of num
+
+
 # Numbers
 # -------
 
@@ -1265,7 +1274,7 @@ REMOVE (ORD Pl "toinen") (NOT 1 Pl)
 SELECT (Num Ord "toinen") (1 N) ;
 # TOISIllE, TOISIAAN ETC.
 
-REMOVE (Num Card Pl Ins "yksi") IF (0 $$ALLCASES) (NOT 1 $$ALLCASES) (0 Adv) ;
+REMOVE (Num Card Pl Ins "yksi") IF (0 $$ALLCASES) (NOT 1 $$ALLCASES) (0 Adv) (NOT 1 Conj);
     # Hän oli siellä yksin.
     # Select adv, instead of num
 
