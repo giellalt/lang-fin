@@ -210,9 +210,10 @@ LIST DV = DV-MINEN DV-US DV-NTA DV-TTA ;
 LIST N-DER = Der/minen Der/u Der/ja Der/tar; 
 
 LIST Der/inen = Der/inen ; 
-LIST Der/sti = Der/sti ; 
+LIST Der/sti = Der/sti ;
+LIST Der_sti = Der_sti ; 
 
-LIST ADV-DER = Der/sti ; 
+LIST ADV-DER = Der/sti Der_sti ; 
 
 # LIST V-DER = V-DER ; # 
 
@@ -1922,6 +1923,7 @@ SELECT (V Der/minen) (-1 Adv)
 
 # *****
 REMOVE Der/sti IF (0C Adv) ;
+REMOVE ADV-DER IF (0C Adv) ;
 
 # Remove derivational verb when nominal exists
 REMOVE DER (0 N) ;
