@@ -2589,6 +2589,13 @@ MAP (@SUBJ→) TARGET (N Par) IF (NEGATE *-1 Nom BARRIER (CLB)) (NEGATE *1 Nom B
 
 MAP (@SUBJ→) TARGET (N Par) IF (NEGATE *-1 Nom BARRIER (CLB)) (NEGATE *1 Nom BARRIER (CLB)) (0 WORD LINK *-1 REALCOPULAS BARRIER (CLB));
 
+MAP (@SUBJ→) TARGET (Pron Gen) IF (1 (V Act Sg3)) (1 REAL_AUX) (2 (V Pass PrsPrc));
+    # Minun on mentävä.
+
+
+# MAP (@SUBJ→) TARGET (Pron Gen) IF (1 (V Act Sg3)) (1 REAL_AUX) (2 (V Inf1)) ;
+
+
 # Siellä sataa lunta.
 MAP (@←SUBJ) TARGET Par (0 WORD LINK *-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) (NEGATE 0 WORD LINK *-1 Pr BARRIER Pr) (NEGATE 0 WORD LINK 1 Par) (0 WORD LINK *-1 PART-SUBJ) ;
 
@@ -2818,6 +2825,9 @@ MAP (@N→) TARGET (Pron Gen) IF (1 (N)) ;
 MAP (@N→) TARGET (Pron Gen) IF (2 (N)) (2 $$ALLCASES) (1 $$ALLCASES);
 
 MAP (@→N) TARGET NAttrs IF (0 WORD LINK *1 N BARRIER NP-BOUNDARY) (NEGATE 0 (V PrfPrc) LINK -1 (V "olla")) (0 $$ALLCASES LINK *1 $$ALLCASES BARRIER NP-BOUNDARY) ; # (0 WORD LINK *1 N BARRIER (CLB))
+
+    # TODO: Need to include conjunctions
+    # Saapuneet ja käsitellyt asiat vuonna 2009.
 
     # Iso punainen talo on siellä 
     # Se sama ongelma häiritsi häntä.
