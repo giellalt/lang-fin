@@ -2589,8 +2589,20 @@ MAP (@SUBJ→) TARGET (N Par) IF (NEGATE *-1 Nom BARRIER (CLB)) (NEGATE *1 Nom B
 
 MAP (@SUBJ→) TARGET (N Par) IF (NEGATE *-1 Nom BARRIER (CLB)) (NEGATE *1 Nom BARRIER (CLB)) (0 WORD LINK *-1 REALCOPULAS BARRIER (CLB));
 
-MAP (@SUBJ→) TARGET (Pron Gen) IF (1 (V Act Sg3)) (1 REAL_AUX) (2 (V Pass PrsPrc));
+
+# Necessitive subjects
+# --------------------
+
+SET NECESSITIVE_SUBJS = (N Gen) OR (Pron Gen) ; 
+
+MAP (@SUBJ→) TARGET NECESSITIVE_SUBJS IF (1 (V Act Sg3)) (1 REAL_AUX) (2 (V Pass PrsPrc));
     # Minun on mentävä.
+
+MAP (@SUBJ→) TARGET NECESSITIVE_SUBJS IF (1 (V Act Sg3)) (2 NES) ;
+    # Minun on pakko mennä.
+    
+MAP (@SUBJ→) TARGET NECESSITIVE_SUBJS IF (1 NES) (2 (V Inf1)) ;
+    # Minun pitää mennä.
 
 
 # MAP (@SUBJ→) TARGET (Pron Gen) IF (1 (V Act Sg3)) (1 REAL_AUX) (2 (V Inf1)) ;
