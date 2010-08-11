@@ -2629,8 +2629,9 @@ MAP (@OBJ→) TARGET Nom (0 WORD LINK *1 (Pass)) (NOT 0 NES) ;
     # Needs barriers
     # Removed NES.
 
-MAP (@SPRED) TARGET ("pakko") IF (-1 REAL_AUX) ;
+MAP (@←SPRED) TARGET ("pakko") IF (-1 REAL_AUX) ;
     # pakko - @SPRED
+
 
 # Syötiin lounas
 MAP (@←OBJ) TARGET Nom IF (0 WORD LINK *-1 Pass)
@@ -2726,6 +2727,9 @@ MAP (@NES) TARGET NES IF (*-1 Gen BARRIER (CLB))
 # ----------
 
 MAP (@←SPRED) TARGET (A Pos) IF (0 WORD LINK *-1 REALCOPULAS BARRIER (CLB)) ;
+
+MAP (@SPRED) TARGET ("pakko") IF (0 WORD LINK *-1 REALCOPULAS BARRIER (CLB)) ;
+    # pakko - @SPRED
 
 MAP (@←SPRED) TARGET (N Nom) IF (0 WORD LINK *-1 REALCOPULAS BARRIER (CLB)) ;
 
@@ -3051,7 +3055,7 @@ SELECT @←SPRED ;
 
 
 
-# MAP (@X) TARGET WORD ;
+#MAP (@X) TARGET WORD ;
 # SUBSTITUTE (@X) (*) TARGET WORD ;
 
 # REMOVE (@X) ;
