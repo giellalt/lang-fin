@@ -2625,8 +2625,12 @@ MAP (@←OBJ) TARGET Gen IF (0 WORD LINK -1 (Act)) (NEGATE 0 WORD LINK *1 Po BAR
     # Ettei minun äidin ystävä ole tullut.
 
 # Lounas syötiin
-MAP (@OBJ→) TARGET Nom (0 WORD LINK *1 (Pass))
+MAP (@OBJ→) TARGET Nom (0 WORD LINK *1 (Pass)) (NOT 0 NES) ; 
     # Needs barriers
+    # Removed NES.
+
+MAP (@SPRED) TARGET ("pakko") IF (-1 REAL_AUX) ;
+    # pakko - @SPRED
 
 # Syötiin lounas
 MAP (@←OBJ) TARGET Nom IF (0 WORD LINK *-1 Pass)
