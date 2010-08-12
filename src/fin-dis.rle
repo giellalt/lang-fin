@@ -1079,6 +1079,9 @@ SELECT (AD "vähemmän") (1 A-A/N-PCP) (1 Par) (NOT 2 CMP) (NOT -1 C) (NOT -2 EN
 
 SELECT (Adv "vähemmän") (-1 C) (-2 ENEM-VAHEM) # XXXX
 
+REMOVE (Der/inen Par) ; # IF (0 (A Pos Sg Par)) (0 (N Ela)) (NOT 1 Par)
+    # Blame Trond if this doesn't work. We hope for counter examples.
+
 # Adverbs
 # ------- 
 
