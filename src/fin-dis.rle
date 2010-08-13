@@ -2697,11 +2697,11 @@ MAP (@N←) TARGET ("itse") IF (-1 Pron) (0 $$ALLCASES) (-1 $$ALLCASES) ;
 # Jukan isä ja äiti menivät kotiin koska heidän oli pakko ostaa auto.
 # Removed @NEC-SUBJ; two tags = bad
 MAP (@SUBJ→) TARGET Gen IF (0 WORD LINK *1 (@NES) BARRIER (CLB))
-MAP (@←OBJ) TARGET Nom IF (0 WORD LINK *-1 (Gen)) (*-1 NES)
+MAP (@←OBJ) TARGET (N Nom) IF (0 WORD LINK *-1 (Gen)) (*-1 NES)
 
 # Me ostettiin kirja.
 MAP (@SUBJ→) TARGET ME (0 Pron LINK *1 (Pe4) BARRIER (CLB)) ;
-MAP (@←OBJ) TARGET Nom IF (0 WORD LINK *-1 Pass) (*-1 Nom)
+MAP (@←OBJ) TARGET (N Nom) IF (0 WORD LINK *-1 Pass) (*-1 Nom)
     # Needs barriers
 
 MAP (@N→) TARGET (N Sg Nom) IF (1 PROP) ;
