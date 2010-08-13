@@ -745,6 +745,14 @@ SET POSS_SUFF = PxPl1 | PxPl2 | PxPl3 | PxSg1 | PxSg2 | PxSg3 ;
 LIST SGPRON = (Pron Sg1) (Pron Sg2) (Pron Sg3) (Pron Sg) ; # (Pron PxSg1) (Pron PxSg2) (Pron PxSg3);
 LIST PLPRON = (Pron Pl1) (Pron Pl2) (Pron Pl3) (Pron Pl) ; # (Pron PxPl1) (Pron PxPl2) (Pron PxPl3);
 
+LIST SGAGR = (V Sg1) (V Sg2) (V Sg3) ;
+LIST PLAGR = (V Pl1) (V Pl2) (V Pl3) ;
+
+LIST ALL_SGPRON = Sg1 Sg2 Sg3 Sg ;
+
+LIST ALL_PLPRON = PLPRON OR (N Pl) OR SGAGR ;
+
+
 LIST Cmpnd = Cmpnd ;
 
 LIST N-SG-NOM = (N Sg Nom);
@@ -1974,7 +1982,8 @@ REMOVE (Pass Neg) (*-1 NEGV LINK *1C PrsPrc LINK NOT *1 CLB?)
 #     VRT: EI SUOMALAISTA VOI AINA KAIKESTA SYYTTää.
 
 # Allow selecting of Neg when Conj CS exists. Does not change above example. -- Ryan
-REMOVE (Neg) (NOT *-1 NEGV) (NOT *1 NEGV) (NEGATE 0 (CS))
+
+REMOVE (Neg) (NOT *-1 NEGV) (NOT *1 NEGV) (NEGATE 0 (CS)) (NOT 1 ConNeg) (Not -1 ConNeg) ; 
 
   # IF NO NEGV, THEN NO Neg IN THE SAME CLAUSE.
 REMOVE (Neg) (NOT *-1 NEGV) (*1 NEGV LINK *1C Neg)
@@ -2306,11 +2315,35 @@ SELECT (Gen "oma") (NOT 1 WORD) (0 WORD LINK *-1 REALCOPULAS) (0C Nom) ;
     # ITSE
     # ----
     
+# want these to be really local for now.
+
 SELECT (Sg "itse") (-1 (Pron Sg)) ; 
 SELECT (Pl "itse") (-1 (Pron Pl)) ; 
 
+SELECT (Sg "itse") (-1 (N Sg)) ; 
+SELECT (Pl "itse") (-1 (N Pl)) ; 
+
 SELECT (Nom "itse") (-1 (Pron Nom)) ;
 SELECT (Gen "itse") (-1 (Pron Gen)) ;
+
+SELECT (Nom "itse") (-1 (N Nom)) ;
+SELECT (Gen "itse") (-1 (N Gen)) ;
+
+SELECT (Nom "itse") (-1 (Imprt)) ;
+SELECT (Sg Nom "itse") (-1 (Imprt Sg2)) ;
+SELECT (Pl Nom "itse") (-1 (Imprt Pl2)) ;
+
+
+SELECT (Sg "itse") (-1 (V Sg1)) ;
+SELECT (Sg "itse") (-1 (V Sg2)) ;
+SELECT (Sg "itse") (-1 (V Sg3)) ;
+
+SELECT (Pl "itse") (-1 (V Pl1)) ;
+SELECT (Pl "itse") (-1 (V Pl2)) ;
+SELECT (Pl "itse") (-1 (V Pl3)) ;
+
+
+SELECT (Pl "itse") (-1 (ALL_PLPRON)) ;
 
 SELECT (Num Sg Gen "puoli") (1 Gen)   # PUOLEN METRIN MITTAIneN
 SELECT (V Prs/Imprt Act Neg) (*-1C NEGV LINK NOT *1 VFIN/PrsPrc/Inf) (NOT 0 N) (NOT 0 Pron) (NOT *1 Neg) (NOT *-1 Neg) (NOT 0 Pass) (NOT *-1 NIIN) (*-1C NEGV LINK NOT *1 CLB?) (*-1C NEGV LINK NOT 0 Imprt)
