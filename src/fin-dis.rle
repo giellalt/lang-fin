@@ -1378,8 +1378,9 @@ SELECT (N Ill "voima") (1 PCP)
 #(@w SELECT (N Ill "vuosi") (*-1 NEGV)
 #(@w SELECT (N Ill "vuosi") (*1 NEGV)
 SELECT (N Sg Nom "vuosi") (NOT 1 DUMMY)  # NB. VUODE - VUOTEEN NOW WRONG
-SELECT (Pl Gen) (1 Gen) (1 Pl)
-# OMIEN TALOJEN
+# SELECT (Pl Gen) (1 Gen) (1 Pl)
+# # OMIEN TALOJEN
+# Commented out-- breaking things, and I think this is covered elsewhere.
 REMOVE (N Sg Gen "hiukka") (NOT 1 DUMMY)
 SELECT (Pl Gen) (-1C Gen) (-1C Pl)
 # PITKIEN JUURIEN
@@ -2289,7 +2290,11 @@ REMOVE (Sg Gen N <POSS>) (-1 Gen) (-2 Inf1) (-3 VFIN) (-3 OLLA)
 REMOVE (Sg Gen N <POSS>) (-1 Gen) (-2 Inf1) (-4 VFIN) (-4 OLLA) (NOT -3 VFIN)
 SELECT (Pl Nom N <POSS>) (-2 NEGV) (-2 Pl123) (1 Neg)
 REMOVE (Imprt Sg2) (*-1 Sub LINK NOT *1 CLB?)
-REMOVE (Imprt Sg2) (-1C Nom)
+REMOVE (Imprt Sg2) (-1C Nom) (NOT -1 (Num Card))
+    # NOTE: Hack for bible lines with numberse at the beginning.
+    # '12 Katso itse, isäni.'
+        # was different from...
+    # 'Katso itse, isäni.'
 REMOVE (Imprt Sg2) (-2C Nom) (NOT -1 CLB?)
 SELECT (PSP <GenLEFT>) (-1 Gen) (-1 N) (NOT -1 KERRAN) (NOT 1 Gen/Par) (NOT 0 N)
 #(@w SELECT (PSP) (-1 Gen)
@@ -2317,19 +2322,30 @@ SELECT (Gen "oma") (NOT 1 WORD) (0 WORD LINK *-1 REALCOPULAS) (0C Nom) ;
     
 # want these to be really local for now.
 
-SELECT (Sg "itse") (-1 (Pron Sg)) ; 
-SELECT (Pl "itse") (-1 (Pron Pl)) ; 
+SET N_P_SG = (Pron Sg) OR (N Sg) ;
+SET N_P_PL = (Pron Pl) OR (N Pl) ;
 
-SELECT (Sg "itse") (-1 (N Sg)) ; 
-SELECT (Pl "itse") (-1 (N Pl)) ; 
+SET N_P_NOM = (Pron Nom) OR (N Nom) ;
+SET N_P_GEN = (Pron Gen) OR (N Gen) ;
 
-SELECT (Nom "itse") (-1 (Pron Nom)) ;
-SELECT (Gen "itse") (-1 (Pron Gen)) ;
+SELECT (Sg "itse") (-1 N_P_SG) ; 
+SELECT (Pl "itse") (-1 N_P_PL) ; 
+    # Hän itse tulee jäljessämme.
 
-SELECT (Nom "itse") (-1 (N Nom)) ;
-SELECT (Gen "itse") (-1 (N Gen)) ;
+SELECT (Nom "itse") (-1 N_P_NOM) ;
+    # Mutta hän itse tiesi siitä.
+
+SELECT (Gen "itse") (-1 N_P_GEN) ;
+SELECT (Gen "itse") (-1 N_P_GEN) ;
+
+SELECT (Sg "itse") (1 N_P_SG) ; 
+SELECT (Pl "itse") (1 N_P_PL) ; 
+
+SELECT (Nom "itse") (1 N_P_NOM) ; 
+    # Mutta itse hän astui siihen... 
 
 SELECT (Nom "itse") (-1 (Imprt)) ;
+
 SELECT (Sg Nom "itse") (-1 (Imprt Sg2)) ;
 SELECT (Pl Nom "itse") (-1 (Imprt Pl2)) ;
 
@@ -2342,6 +2358,8 @@ SELECT (Pl "itse") (-1 (V Pl1)) ;
 SELECT (Pl "itse") (-1 (V Pl2)) ;
 SELECT (Pl "itse") (-1 (V Pl3)) ;
 
+SELECT (Gen "itse") (1 Po) (NOT 1 ALL_PERSON) ;
+SELECT (Nom "itse") (*-1 (Pron Nom) BARRIER (CLB)) ;
 
 SELECT (Pl "itse") (-1 (ALL_PLPRON)) ;
 
