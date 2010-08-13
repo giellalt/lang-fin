@@ -2587,7 +2587,7 @@ MAP (@→N) TARGET (Pron Dem) IF (1 (N)) (1 $$ALLCASES) (0 $$ALLCASES) ;
 MAP (@→N) TARGET (Pron Gen) IF (1 (N)) ;
 MAP (@→N) TARGET (Pron Gen) IF (2 (N)) (2 $$ALLCASES) (1 $$ALLCASES);
 
-MAP (@→N) TARGET NAttrs IF (0 WORD LINK *1 N BARRIER NP-BOUNDARY) (NEGATE 0 (V PrfPrc) LINK -1 (V "olla")) (0 $$ALLCASES LINK *1 $$ALLCASES BARRIER NP-BOUNDARY) ; # (0 WORD LINK *1 N BARRIER (CLB))
+MAP (@→N) TARGET NAttrs IF (0 WORD LINK *1 N BARRIER NP-BOUNDARY) (NEGATE 0 (V PrfPrc) LINK -1 (V "olla")) (0 $$ALLCASES LINK *1 $$ALLCASES BARRIER (CLB)) ; # (0 WORD LINK *1 N BARRIER (CLB))
 
     # TODO: Need to include conjunctions
     # Saapuneet ja käsitellyt asiat vuonna 2009.
