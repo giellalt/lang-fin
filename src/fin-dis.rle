@@ -2294,7 +2294,24 @@ SELECT (Inf1) (-1C C) (-4C Inf1) (NOT -3 V) (NOT -3 CLB?) (NOT -2 V) (NOT -2 CLB
 SELECT (Inf1) (-1C C) (-5C Inf1) (NOT -3 V) (NOT -3 CLB?) (NOT -2 V) (NOT -2 CLB?) (NOT -4 V) (NOT -4 CLB?)
 SELECT (REF) (-2C <REF>) (-1C Gen) (-1 <POSS>) #SANONUT POIKANSA OLEVAN
 SELECT (REF) (-1C <REF>) (1 Gen) (1 <POSS>) #PELäTääN SAANEEN SURMANSA
+
+    # OMA
+    # ---
+
 SELECT (A Par "oma") (NOT -1 Nom)
+SELECT (Sg "oma") (-1 (Pron Sg)) ;
+SELECT (Pl "oma") (-1 (Pron Pl)) ;
+SELECT (Gen "oma") (NOT 1 WORD) (0 WORD LINK *-1 REALCOPULAS) (0C Nom) ;
+
+    # ITSE
+    # ----
+    
+SELECT (Sg "itse") (-1 (Pron Sg)) ; 
+SELECT (Pl "itse") (-1 (Pron Pl)) ; 
+
+SELECT (Nom "itse") (-1 (Pron Nom)) ;
+SELECT (Gen "itse") (-1 (Pron Gen)) ;
+
 SELECT (Num Sg Gen "puoli") (1 Gen)   # PUOLEN METRIN MITTAIneN
 SELECT (V Prs/Imprt Act Neg) (*-1C NEGV LINK NOT *1 VFIN/PrsPrc/Inf) (NOT 0 N) (NOT 0 Pron) (NOT *1 Neg) (NOT *-1 Neg) (NOT 0 Pass) (NOT *-1 NIIN) (*-1C NEGV LINK NOT *1 CLB?) (*-1C NEGV LINK NOT 0 Imprt)
 REMOVE (Imprt Sg2) (-1 N/V/A/Pron/Q)
@@ -2542,6 +2559,59 @@ SET NPNH     = WORD - PRE-NP-HEAD OR Abbr ;
 
 MAP (@CVP) TARGET ("kun") ;
 MAP (@CNP) TARGET ("ja" CC) ;
+
+# NP-internal things @→N, @N←
+# ------------------
+
+
+SET NAttrs = PCP OR (A Pos) OR Pron OR (Num Ord) OR (N Gen) or (Num Card) OR UNDECL_ADJ ; 
+
+
+# MAP (@→N) TARGET (A Pos) IF (0 WORD LINK *1 N BARRIER N) (0 WORD LINK *1 N BARRIER (CLB));
+# MAP (@→N) TARGET (Pron) IF (0 WORD LINK *1 N BARRIER N) (0 WORD LINK *1 N BARRIER (CLB));
+
+MAP (@→N) TARGET (Pron Indef "kaikki") IF (2 (N)) (2 $$ALLCASES) (1 (Pron Pers Gen)) ;
+    # Kaikki sinun ystävät ovat täällä.
+    # Täällä on kaikki sinun ystävät.
+
+
+
+MAP (@→N) TARGET (Pron Indef "kaikki") IF (3 (N)) (3 $$ALLCASES) (2 $$ALLCASES) (2 A) (1 (Pron Pers Gen)) ;
+    # Kaikki sinun vanhat ystävät ovat täällä.
+
+    # This also checks that cases agree... Can add this to other N attrs 
+MAP (@→N) TARGET (Pron Dem) IF (1 (N)) (1 $$ALLCASES) (0 $$ALLCASES) ;
+    # Hän rakentaa siihen alttarin.
+    # Hän heitti sen siihen taloon.
+
+MAP (@→N) TARGET (Pron Gen) IF (1 (N)) ;
+MAP (@→N) TARGET (Pron Gen) IF (2 (N)) (2 $$ALLCASES) (1 $$ALLCASES);
+
+MAP (@→N) TARGET NAttrs IF (0 WORD LINK *1 N BARRIER NP-BOUNDARY) (NEGATE 0 (V PrfPrc) LINK -1 (V "olla")) (0 $$ALLCASES LINK *1 $$ALLCASES BARRIER NP-BOUNDARY) ; # (0 WORD LINK *1 N BARRIER (CLB))
+
+    # TODO: Need to include conjunctions
+    # Saapuneet ja käsitellyt asiat vuonna 2009.
+
+    # Iso punainen talo on siellä 
+    # Se sama ongelma häiritsi häntä.
+    # Se sama iso punainen talo ... 
+
+    # Fail: Minä@→N tulen kello kolme
+    # Do not mark on Hän ei ole lähettänyt kirjettä.
+
+MAP (@→N) TARGET PCPs IF (0 WORD LINK *1 N BARRIER NP-BOUNDARY) ;
+
+MAP (@→N) TARGET (N Nom) IF (1 (N)) ;
+    # Fail: Ja Herra Talonmies tulee myös.
+
+MAP (@→N) TARGET Acro IF (0 Acro LINK *1 Prop BARRIER Prop); 
+    # Fail: Ja Mr. J. Tiainen tulee ... 
+    
+
+MAP (@N←) TARGET Num IF (-1 N) ;
+MAP (@N←) TARGET ("itse") IF (-1 Pron) (0 $$ALLCASES) (-1 $$ALLCASES) ;
+
+
 
 # Mapping subjects and objects
 # ----------------------------
@@ -2816,59 +2886,6 @@ MAP (@←P) TARGET PRON_PR_CASE IF (0 WORD LINK *-1 Pr BARRIER Pr) ;
 # Suuri hämähäkki nukkuu tämän vanhan metsän lähellä.
 # Etc.
 
-
-# NP-internal things @→N, @N←
-# ------------------
-
-
-
-
-
-SET NAttrs = PCP OR (A Pos) OR Pron OR (Num Ord) OR (N Gen) or (Num Card) OR UNDECL_ADJ ; 
-
-
-# MAP (@→N) TARGET (A Pos) IF (0 WORD LINK *1 N BARRIER N) (0 WORD LINK *1 N BARRIER (CLB));
-# MAP (@→N) TARGET (Pron) IF (0 WORD LINK *1 N BARRIER N) (0 WORD LINK *1 N BARRIER (CLB));
-
-MAP (@N→) TARGET (Pron Indef "kaikki") IF (2 (N)) (2 $$ALLCASES) (1 (Pron Pers Gen)) ;
-    # Kaikki sinun ystävät ovat täällä.
-    # Täällä on kaikki sinun ystävät.
-
-
-
-MAP (@N→) TARGET (Pron Indef "kaikki") IF (3 (N)) (3 $$ALLCASES) (2 $$ALLCASES) (2 A) (1 (Pron Pers Gen)) ;
-    # Kaikki sinun vanhat ystävät ovat täällä.
-
-    # This also checks that cases agree... Can add this to other N attrs 
-MAP (@N→) TARGET (Pron Dem) IF (1 (N)) (1 $$ALLCASES) (0 $$ALLCASES) ;
-    # Hän rakentaa siihen alttarin.
-    # Hän heitti sen siihen taloon.
-
-MAP (@N→) TARGET (Pron Gen) IF (1 (N)) ;
-MAP (@N→) TARGET (Pron Gen) IF (2 (N)) (2 $$ALLCASES) (1 $$ALLCASES);
-
-MAP (@→N) TARGET NAttrs IF (0 WORD LINK *1 N BARRIER NP-BOUNDARY) (NEGATE 0 (V PrfPrc) LINK -1 (V "olla")) (0 $$ALLCASES LINK *1 $$ALLCASES BARRIER NP-BOUNDARY) ; # (0 WORD LINK *1 N BARRIER (CLB))
-
-    # TODO: Need to include conjunctions
-    # Saapuneet ja käsitellyt asiat vuonna 2009.
-
-    # Iso punainen talo on siellä 
-    # Se sama ongelma häiritsi häntä.
-    # Se sama iso punainen talo ... 
-
-    # Fail: Minä@→N tulen kello kolme
-    # Do not mark on Hän ei ole lähettänyt kirjettä.
-
-MAP (@→N) TARGET PCPs IF (0 WORD LINK *1 N BARRIER NP-BOUNDARY) ;
-
-MAP (@→N) TARGET (N Nom) IF (1 (N)) ;
-    # Fail: Ja Herra Talonmies tulee myös.
-
-MAP (@→N) TARGET Acro IF (0 Acro LINK *1 Prop BARRIER Prop); 
-    # Fail: Ja Mr. J. Tiainen tulee ... 
-    
-
-MAP (@N←) TARGET Num IF (-1 N) ;
 
 
 # Existential Sentences
