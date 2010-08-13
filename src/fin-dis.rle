@@ -748,7 +748,7 @@ LIST PLPRON = (Pron Pl1) (Pron Pl2) (Pron Pl3) (Pron Pl) ; # (Pron PxPl1) (Pron 
 LIST SGAGR = (V Sg1) (V Sg2) (V Sg3) ;
 LIST PLAGR = (V Pl1) (V Pl2) (V Pl3) ;
 
-LIST ALL_SGPRON = Sg1 Sg2 Sg3 Sg ;
+LIST ALL_SGPRON = Sg1 OR Sg2 OR Sg3 OR Sg ;
 
 LIST ALL_PLPRON = PLPRON OR (N Pl) OR SGAGR ;
 
@@ -2058,17 +2058,17 @@ SELECT (Pl1) (-2C ME) (-1 Nom)
 SELECT (Pl2) (-1C TE) (-1 Nom)
 SELECT (Pl2) (-2C TE) (-1 Nom)
 
-REMOVE (Sg1) (*-1C VFIN LINK NOT *1 CLB?) (NOT -1 CLB?)
-REMOVE (Sg2) (*-1C VFIN LINK NOT *1 CLB?) (NOT -1 CLB?)
+REMOVE (Sg1) (*-1C VFIN LINK NOT *1 CLB?) (NOT -1 CLB?) (NOT 0 Pcle)
+REMOVE (Sg2) (*-1C VFIN LINK NOT *1 CLB?) (NOT -1 CLB?) (NOT 0 Pcle)
 
-REMOVE (Pl1) (*-1C VFIN LINK NOT *1 CLB?) (NOT -1 CLB?)
-REMOVE (Pl2) (*-1C VFIN LINK NOT *1 CLB?) (NOT -1 CLB?)
+REMOVE (Pl1) (*-1C VFIN LINK NOT *1 CLB?) (NOT -1 CLB?) (NOT 0 Pcle)
+REMOVE (Pl2) (*-1C VFIN LINK NOT *1 CLB?) (NOT -1 CLB?) (NOT 0 Pcle)
 
-REMOVE (Sg1) (*1C VFIN LINK NOT *-1 CLB?) (NOT 1 CLB?)
-REMOVE (Sg2) (*1C VFIN LINK NOT *-1 CLB?) (NOT 1 CLB?)
+REMOVE (Sg1) (*1C VFIN LINK NOT *-1 CLB?) (NOT 1 CLB?)  (NOT 0 Pcle)
+REMOVE (Sg2) (*1C VFIN LINK NOT *-1 CLB?) (NOT 1 CLB?)  (NOT 0 Pcle) 
 
-REMOVE (Pl1) (*1C VFIN LINK NOT *-1 CLB?) (NOT 1 CLB?)
-REMOVE (Pl2) (*1C VFIN LINK NOT *-1 CLB?) (NOT 1 CLB?)
+REMOVE (Pl1) (*1C VFIN LINK NOT *-1 CLB?) (NOT 1 CLB?)  (NOT 0 Pcle)
+REMOVE (Pl2) (*1C VFIN LINK NOT *-1 CLB?) (NOT 1 CLB?)  (NOT 0 Pcle)
 
 REMOVE (Sg3) (-1 NEGV)
   # A FINITE VERB (Sg3) CANNOT FOLLOW NEGV AT POSITION 1.
@@ -2359,9 +2359,32 @@ SELECT (Pl "itse") (-1 (V Pl2)) ;
 SELECT (Pl "itse") (-1 (V Pl3)) ;
 
 SELECT (Gen "itse") (1 Po) (NOT 1 ALL_PERSON) ;
+
+# if the sg/plness matches up between the preceding verb and itse, then likely it is nom.
+
+SELECT (Nom "itse") (-1 (V Sg1)) (0C Sg) ;
+SELECT (Nom "itse") (-1 (V Sg2)) (0C Sg) ;
+SELECT (Nom "itse") (-1 (V Sg3)) (0C Sg) ;
+
+SELECT (Nom "itse") (-1 (V Pl1)) (0C Pl) ;
+SELECT (Nom "itse") (-1 (V Pl2)) (0C Pl) ;
+SELECT (Nom "itse") (-1 (V Pl3)) (0C Pl) ;
+
 SELECT (Nom "itse") (*-1 (Pron Nom) BARRIER (CLB)) ;
 
 SELECT (Pl "itse") (-1 (ALL_PLPRON)) ;
+
+# Now we spread out a bit if we haven't been successful.
+
+SELECT (Sg Nom "itse") IF (-1 ConNeg) (-2 (V Neg Sg1)) ;
+SELECT (Sg Nom "itse") IF (-1 ConNeg) (-2 (V Neg Sg2)) ;
+SELECT (Sg Nom "itse") IF (-1 ConNeg) (-2 (V Neg Sg3)) ;
+
+SELECT (Pl Nom "itse") IF (-1 ConNeg) (-2 (V Neg Pl1)) ;
+SELECT (Pl Nom "itse") IF (-1 ConNeg) (-2 (V Neg Pl2)) ;
+SELECT (Pl Nom "itse") IF (-1 ConNeg) (-2 (V Neg Pl3)) ;
+
+
 
 SELECT (Num Sg Gen "puoli") (1 Gen)   # PUOLEN METRIN MITTAIneN
 SELECT (V Prs/Imprt Act Neg) (*-1C NEGV LINK NOT *1 VFIN/PrsPrc/Inf) (NOT 0 N) (NOT 0 Pron) (NOT *1 Neg) (NOT *-1 Neg) (NOT 0 Pass) (NOT *-1 NIIN) (*-1C NEGV LINK NOT *1 CLB?) (*-1C NEGV LINK NOT 0 Imprt)
@@ -2767,7 +2790,7 @@ MAP (@←OBJ) TARGET Par IF (0 WORD LINK *-1 Neg) #) (NOT 0 WORD LINK *-1 (Punct
 
 # MAP (@←OBJ) TARGET Par IF (NEGATE 0 WORD LINK *-1 PP BARRIER PP) (NEGATE 0 WORD LINK 1 Par) (0 WORD LINK *-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) ;
 
-MAP (@←OBJ) TARGET OBJ-CASEs IF (NEGATE 0 WORD LINK *-1 PP BARRIER PP) (NEGATE 0 WORD LINK 1 Par) (0 WORD LINK *-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) ;
+MAP (@←OBJ) TARGET OBJ-CASEs IF (NEGATE 0 WORD LINK *-1 PP BARRIER PP) (NEGATE 0 WORD LINK 1 Par) (0 WORD LINK *-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) (NOT 0 (Pron Nom));
 
 # Need to not map obj in this case, rather subject or @<SPRED.
 
