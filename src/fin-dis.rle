@@ -1317,6 +1317,7 @@ REMOVE (N "kota") (NOT 1 DUMMY)
 SELECT (N "kuljetus") (NOT 1 DUMMY)
 REMOVE (N Pl "kuolema") (0 Nom/Par)
 REMOVE (N <POSS> "kuu") (NOT 1 DUMMY) # KUU+SI
+REMOVE (N Pl Ins "kuu") (-1 A) (NOT -1 (Ins)) ;
 REMOVE (N "kuuliainen") (NOT 1 DUMMY)
 REMOVE (N "kärsä") (NOT 1 DUMMY)
 REMOVE (N Pl "ikä") (NOT 1 DUMMY)
@@ -1617,8 +1618,8 @@ SELECT (N Gen) (NOT 0 V) (1 MUKAIneN) # Sg <POSS> omitted 24.1.2001
 SELECT (N Pl Nom <POSS>) (-1 KAIKKI) (-1 Nom) (NOT 1 <GenLEFT>)
 SELECT (N Sg Gen <POSS> "alku") (NOT 0 V) (*-1 SAADA)
 SELECT (Pl Gen) (0 OMIEN)
-SELECT (Pl Gen) (1C N) (1 Nom)
-SELECT (Pl Gen) (1C Gen) (1 Pl)
+SELECT (Pl Gen) (1C N) (1 Nom) (NOT 0 ("itse")) 
+SELECT (Pl Gen) (1C Gen) (1 Pl) (NOT 0 ("itse")) 
 SELECT (Pl Gen) (-1C Gen) (-1 Pl)
 SELECT (Pl Gen) (1C TEMP)
 SELECT (AgPcp Sg Nom <POSS>) (1C Nom) (1 Sg) (NOT 0 N)
@@ -2358,6 +2359,15 @@ SELECT (Pl "itse") (-1 (V Pl1)) ;
 SELECT (Pl "itse") (-1 (V Pl2)) ;
 SELECT (Pl "itse") (-1 (V Pl3)) ;
 
+SELECT (Sg "itse") (1 (V Sg1)) ;
+SELECT (Sg "itse") (1 (V Sg2)) ;
+SELECT (Sg "itse") (1 (V Sg3)) ;
+
+SELECT (Pl "itse") (1 (V Pl1)) ;
+SELECT (Pl "itse") (1 (V Pl2)) ;
+SELECT (Pl "itse") (1 (V Pl3)) ;
+
+
 SELECT (Gen "itse") (1 Po) (NOT 1 ALL_PERSON) ;
 
 # if the sg/plness matches up between the preceding verb and itse, then likely it is nom.
@@ -2369,6 +2379,14 @@ SELECT (Nom "itse") (-1 (V Sg3)) (0C Sg) ;
 SELECT (Nom "itse") (-1 (V Pl1)) (0C Pl) ;
 SELECT (Nom "itse") (-1 (V Pl2)) (0C Pl) ;
 SELECT (Nom "itse") (-1 (V Pl3)) (0C Pl) ;
+
+SELECT (Nom "itse") (1 (V Sg1)) (0C Sg) ;
+SELECT (Nom "itse") (1 (V Sg2)) (0C Sg) ;
+SELECT (Nom "itse") (1 (V Sg3)) (0C Sg) ;
+
+SELECT (Nom "itse") (1 (V Pl1)) (0C Pl) ;
+SELECT (Nom "itse") (1 (V Pl2)) (0C Pl) ;
+SELECT (Nom "itse") (1 (V Pl3)) (0C Pl) ;
 
 SELECT (Nom "itse") (*-1 (Pron Nom) BARRIER (CLB)) ;
 
@@ -2732,10 +2750,16 @@ MAP (@SUBJ→) TARGET (Rel Nom) IF (*1 VFIN BARRIER S-BOUNDARY2) ;
 
 # Subject partitive mapping 
 MAP (@SUBJ→) TARGET (N Par) IF (NEGATE *-1 Nom BARRIER (CLB)) (NEGATE *1 Nom BARRIER (CLB)) (0 WORD LINK *1 REALCOPULAS BARRIER (CLB));
+    
     # Mutta tällaisia tietosanakirjoja ei suomeksi ole.
+    # Asukkaita Tromssassa on 60 000.
 
-MAP (@SUBJ→) TARGET (N Par) IF (NEGATE *-1 Nom BARRIER (CLB)) (NEGATE *1 Nom BARRIER (CLB)) (0 WORD LINK *-1 REALCOPULAS BARRIER (CLB));
 
+MAP (@SUBJ→) TARGET (N Par) IF (NEGATE *-1 Nom BARRIER (CLB)) (NEGATE *1 Nom BARRIER (CLB)) (0 WORD LINK *-1 REALCOPULAS BARRIER (CLB)) ;
+
+MAP (@SUBJ→) TARGET (N Pl Par) IF (NOT -1 WORD) (0 WORD LINK *1 REALCOPULAS BARRIER (V)) (*1 (Num Card))  ;
+
+# MAP (@SUBJ→) TARGET (N Par) IF (NEGATE *-1 Nom BARRIER (CLB)) (NEGATE *1 Nom BARRIER (CLB)) (0 WORD LINK *-1 REALCOPULAS BARRIER (CLB)) (NOT -1 WORD) (1 REALCOPULAS) (0 WORD LINK *1 (Num Card Nom)) ;
 
 # Necessitive subjects
 # --------------------
