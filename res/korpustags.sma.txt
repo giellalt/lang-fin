@@ -127,8 +127,6 @@ Num	Numeral
 #Wordclass
 
 Prop	Propernoun
-Actio	Actio
-Actor	Actor
 Pers	Personal
 Dem	Demonstrative
 Interr	Interrogative
@@ -142,24 +140,25 @@ Ord	Ordinal
 
 Sg	Singular
 Pl	Plural
-Du	Dual
 #Number
 
 Nom	Nominative
 Gen	Genitive
 Acc	Accusative
-Par Partitive
+Par	Partitive
+All	Allative
+Abl	Ablative
+Ade	Adessive
 Ill	Illative
-Ine Inessive
-Ela Elative
+Ine	Inessive
+Ela	Elative
 Com	Comitative
 Abe	Abessive
 Ess	Essive
+Tra	Translative
+Ins	Instructive
 #Case
 
-Attr	Attribute
-Pred	Predicative
-#Attributive
 
 Comp	Comparative
 Superl	Superlative
@@ -168,9 +167,6 @@ Superl	Superlative
 PxSg1	Possessive Singular 1st Person
 PxSg2	Possessive Singular 2nd Person
 PxSg3	Possessive Singular 3rd Person
-PxDu1	Possessive Dual 1st Person
-PxDu2	Possessive Dual 2nd Person
-PxDu3	Possessive Dual 3rd Person
 PxPl1	Possessive Plural 1st Person
 PxPl2	Possessive Plural 2nd Person
 PxPl3	Possessive Plural 3rd Person
@@ -188,9 +184,9 @@ Prt	Preterite Tense
 
 Cond	Conditional
 Imprt	Imperative
-ImprtII	Second Imperative
 Ind	Indicative
 Pot	Potential
+Cond	Conditional
 #Mood
 
 Sg1	1. Person Singular
