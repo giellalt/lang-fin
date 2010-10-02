@@ -40,8 +40,10 @@ LIST Pron = Pron ;
 LIST Po = Po ;
 LIST Pr = Pr ;
 LIST Adp = Adp ;
+LIST CC = CC ; 
+LIST CS = CS ; 
 
-LIST Conj = Conj CS CC ;
+LIST Conj = CS CC ;
 LIST PP = PP Adv Adp Po Pr ;
 LIST Part = Part ; # particle? still in use?
 
@@ -50,8 +52,6 @@ LIST Acro = Acro ;
 
 # LIST C = C ; 
 LIST C = CS CC ; 
-LIST CC = CC ; 
-LIST CS = CS ; 
 LIST CMP = CMP ; 
 LIST DUMMY = DUMMY ; 
  
@@ -2584,9 +2584,7 @@ REMOVE (AD "vähän") (NOT 1C CMP-ENNEN) (NOT 2 JALKEEN)# 4.2.2001 !!->! cf.belo
 SECTION
 # Need better clause boundaries
 
-LIST CS = CS ;
-LIST CCC = CC ;
-SET CC = CCC - ("sekä") ;
+SET CCC = CC - ("sekä") ;
 SET CC-CS = CC OR CS ;
 
 # LIST MO-MANge = "goas" "gokko" "gos" "gosa" "govt" "makkár" "man" "manne" "mo" "mot" "mov" "movt" ("nugo" @CVP) (V Qst);
@@ -3017,46 +3015,49 @@ SECTION
 #MORPHOLOGICAL-HEURISTICS
 #numerals like ("<16\:ta>")# "<16\:ta>"%n%t(<Digit> Num Sg Par)#         2 0 0 0 5 1
 #are dealt with in ftwpost.bta, 23.1.2001, and in cgp, cf "dummy" for base
-MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @←P @P→ @N→) TARGET (Abbr Sg Gen) (1 ("<(.*):in>"r)) (2 ("<(.*):in>"r))
-MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @←P @P→ @N→) TARGET (Abbr Sg Gen) (1 ("<(.*)'in>"r)) (2 ("<(.*)'in>"r))
-MAP (@SUBJ @OBJ @PC @←P @P→ @←PN @N→) TARGET (Abbr Sg Par) (1 ("<(.*):tta>"r)) (2 ("<(.*):tta>"r))
-MAP (@SUBJ @OBJ @PC @←P @P→ @←PN @N→) TARGET (Abbr Sg Par) (1 ("<(.*):ta>"r)) (2 ("<(.*):ta>"r))
-MAP (@SUBJ @OBJ @PC @←P @P→ @←PN @N→) TARGET (Abbr Sg Par) (1 ("<(.*):ttä>"r)) (2 ("<(.*):ttä>"r))
-MAP (@SUBJ @OBJ @PC @←P @P→ @←PN @N→) TARGET (Abbr Sg Par) (1 ("<(.*):tä>"r)) (2 ("<(.*):tä>"r))
-MAP (@SUBJ @OBJ @PC @←P @P→ @←PN @N→) TARGET (Abbr Sg Par) (1 ("<(.*):aa>"r)) (2 ("<(.*):aa>"r))
-MAP (@SUBJ @OBJ @PC @←P @P→ @←PN @N→) TARGET (Abbr Sg Par) (1 ("<(.*):a>"r)) (2 ("<(.*):a>"r))
-MAP (@SUBJ @OBJ @PC @←P @P→ @←PN @N→) TARGET (Abbr Sg Par) (1 ("<(.*):ää>"r)) (2 ("<(.*):ää>"r))
-MAP (@SUBJ @OBJ @PC @←P @P→ @←PN @N→) TARGET (Abbr Sg Par) (1 ("<(.*):ä>"r)) (2 ("<(.*):ä>"r))
-MAP (@ADVL) TARGET (Abbr Sg Ine) (1 ("<(.*):ssa>"r)) (2 ("<(.*):ssa>"r))
-MAP (@ADVL) TARGET (Abbr Sg Ine) (1 ("<(.*):ssä>"r)) (2 ("<(.*):ssä>"r))
-MAP (@ADVL) TARGET (Abbr Sg Ela) (1 ("<(.*):sta>"r)) (2 ("<(.*):sta>"r))
-MAP (@ADVL) TARGET (Abbr Sg Ela) (1 ("<(.*):stä>"r)) (2 ("<(.*):stä>"r))
-MAP (@ADVL) TARGET (Abbr Sg Ill) (1 ("<(.*):aan>"r)) (2 ("<(.*):aan>"r))
-MAP (@ADVL) TARGET (Abbr Sg Ill) (1 ("<(.*):ään>"r)) (2 ("<(.*):ään>"r))
-MAP (@ADVL) TARGET (Abbr Sg Ade) (1 ("<(.*):lla>"r)) (2 ("<(.*):lla>"r))
-MAP (@ADVL) TARGET (Abbr Sg Ade) (1 ("<(.*):llä>"r)) (2 ("<(.*):llä>"r))
-MAP (@ADVL) TARGET (Abbr Sg Abl) (1 ("<(.*):lta>"r)) (2 ("<(.*):lta>"r))
-MAP (@ADVL) TARGET (Abbr Sg Abl) (1 ("<(.*):ltä>"r)) (2 ("<(.*):ltä>"r))
-MAP (@ADVL) TARGET (Abbr Sg All) (1 ("<(.*):lle>"r)) (2 ("<(.*):lle>"r))
-##MAP ((DASH) (@1 (^ ("->"r)) ($ ("->"r)) (@2 NIL) # XXXX
-##MAP ((Abbr Sg Nom (@SUBJ @OBJ @PC)) (@1 (NOT * ("i>"r)) (NOT * ("e>"r)) (NOT * ("ä>"r)) (NOT * ("y>"r)) (NOT * ("ö>"r)) (NOT * ("u>"r)) (NOT * ("o>"r)) (NOT * ("a>"r)) (NOT * ("I>"r)) (NOT * ("E>"r)) (NOT * ("[>"r)) (NOT * ("Y>"r)) (NOT * ("/>"r)) (NOT * ("U>"r)) (NOT * ("O>"r)) (NOT * ("A>"r)) (NOT * (":>"r)) (@2 NIL)
-MAP (@SUBJ @OBJ @PC) TARGET (Abbr Sg Nom) (@1 (* (":kin>"r)) (2 ("<(.*)x:kin>"r))
-MAP (@ADVL) TARGET (N Sg Ine) (1 ("<(.*)uksessa>"r)) (2 ("<(.*)uksessa" ("us>"r))
-MAP (@ADVL) TARGET (N Sg Ine) (1 ("<(.*)yksessä>"r)) (2 ("<(.*)yksessä" ("ys>"r))
-MAP (@ADVL) TARGET (N Sg Ine) (1 ("<(.*)ssa>"r)) (2 ("<(.*)ssa>"r))
-MAP (@ADVL) TARGET (N Sg Ine) (1 ("<(.*)ssä>"r)) (2 ("<(.*)ssä>"r))
-MAP (@ADVL) TARGET (N Sg Ela) (1 ("<(.*)sta>"r)) (2 ("<(.*)sta>"r))
-MAP (@ADVL) TARGET (N Sg Ela) (1 ("<(.*)stä>"r)) (2 ("<(.*)stä>"r))
-MAP (@ADVL) TARGET (N Sg Ine) (1 ("<(.*)uksella>"r)) (2 ("<(.*)uksella" ("us>"r))
-MAP (@ADVL) TARGET (N Sg Ine) (1 ("<(.*)yksellä>"r)) (2 ("<(.*)yksellä" ("ys>"r))
-MAP (@ADVL) TARGET (N Sg Ade) (1 ("<(.*)lla>"r)) (2 ("<(.*)lla>"r))
-MAP (@ADVL) TARGET (N Sg Ade) (1 ("<(.*)llä>"r)) (2 ("<(.*)llä>"r))
-MAP (@ADVL) TARGET (N Sg Ine) (1 ("<(.*)ukselta>"r)) (2 ("<(.*)ukselta" ("us>"r))
-MAP (@ADVL) TARGET (N Sg Ine) (1 ("<(.*)ykseltä>"r)) (2 ("<(.*)ykseltä" ("ys>"r))
-MAP (@ADVL) TARGET (N Sg Abl) (1 ("<(.*)lta>"r)) (2 ("<(.*)lta>"r))
-MAP (@ADVL) TARGET (N Sg Abl) (1 ("<(.*)ltä>"r)) (2 ("<(.*)ltä>"r))
-MAP (@ADVL) TARGET (N Sg Ine) (1 ("<(.*)ukselle>"r)) (2 ("<(.*)ukselle" ("us>"r))
-MAP (@ADVL) TARGET (N Sg All) (1 ("<(.*)lle>"r)) (2 ("<(.*)lle>"r))
+
+#$# Lines commented out with #$# due to regex compilation problems. Have a look.
+
+#$# MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @←P @P→ @N→) TARGET (Abbr Sg Gen) (1 ("<(.*):in>"r)) (2 ("<(.*):in>"r))
+#$# MAP (@SUBJ @NEC-S @NF-S @OBJ @PC @←P @P→ @N→) TARGET (Abbr Sg Gen) (1 ("<(.*)'in>"r)) (2 ("<(.*)'in>"r))
+#$# MAP (@SUBJ @OBJ @PC @←P @P→ @←PN @N→) TARGET (Abbr Sg Par) (1 ("<(.*):tta>"r)) (2 ("<(.*):tta>"r))
+#$# MAP (@SUBJ @OBJ @PC @←P @P→ @←PN @N→) TARGET (Abbr Sg Par) (1 ("<(.*):ta>"r)) (2 ("<(.*):ta>"r))
+#$# MAP (@SUBJ @OBJ @PC @←P @P→ @←PN @N→) TARGET (Abbr Sg Par) (1 ("<(.*):ttä>"r)) (2 ("<(.*):ttä>"r))
+#$# MAP (@SUBJ @OBJ @PC @←P @P→ @←PN @N→) TARGET (Abbr Sg Par) (1 ("<(.*):tä>"r)) (2 ("<(.*):tä>"r))
+#$# MAP (@SUBJ @OBJ @PC @←P @P→ @←PN @N→) TARGET (Abbr Sg Par) (1 ("<(.*):aa>"r)) (2 ("<(.*):aa>"r))
+#$# MAP (@SUBJ @OBJ @PC @←P @P→ @←PN @N→) TARGET (Abbr Sg Par) (1 ("<(.*):a>"r)) (2 ("<(.*):a>"r))
+#$# MAP (@SUBJ @OBJ @PC @←P @P→ @←PN @N→) TARGET (Abbr Sg Par) (1 ("<(.*):ää>"r)) (2 ("<(.*):ää>"r))
+#$# MAP (@SUBJ @OBJ @PC @←P @P→ @←PN @N→) TARGET (Abbr Sg Par) (1 ("<(.*):ä>"r)) (2 ("<(.*):ä>"r))
+#$# MAP (@ADVL) TARGET (Abbr Sg Ine) (1 ("<(.*):ssa>"r)) (2 ("<(.*):ssa>"r))
+#$# MAP (@ADVL) TARGET (Abbr Sg Ine) (1 ("<(.*):ssä>"r)) (2 ("<(.*):ssä>"r))
+#$# MAP (@ADVL) TARGET (Abbr Sg Ela) (1 ("<(.*):sta>"r)) (2 ("<(.*):sta>"r))
+#$# MAP (@ADVL) TARGET (Abbr Sg Ela) (1 ("<(.*):stä>"r)) (2 ("<(.*):stä>"r))
+#$# MAP (@ADVL) TARGET (Abbr Sg Ill) (1 ("<(.*):aan>"r)) (2 ("<(.*):aan>"r))
+#$# MAP (@ADVL) TARGET (Abbr Sg Ill) (1 ("<(.*):ään>"r)) (2 ("<(.*):ään>"r))
+#$# MAP (@ADVL) TARGET (Abbr Sg Ade) (1 ("<(.*):lla>"r)) (2 ("<(.*):lla>"r))
+#$# MAP (@ADVL) TARGET (Abbr Sg Ade) (1 ("<(.*):llä>"r)) (2 ("<(.*):llä>"r))
+#$# MAP (@ADVL) TARGET (Abbr Sg Abl) (1 ("<(.*):lta>"r)) (2 ("<(.*):lta>"r))
+#$# MAP (@ADVL) TARGET (Abbr Sg Abl) (1 ("<(.*):ltä>"r)) (2 ("<(.*):ltä>"r))
+#$# MAP (@ADVL) TARGET (Abbr Sg All) (1 ("<(.*):lle>"r)) (2 ("<(.*):lle>"r))
+#$# ##MAP ((DASH) (@1 (^ ("->"r)) ($ ("->"r)) (@2 NIL) # XXXX
+#$# ##MAP ((Abbr Sg Nom (@SUBJ @OBJ @PC)) (@1 (NOT * ("i>"r)) (NOT * ("e>"r)) (NOT * ("ä>"r)) (NOT * ("y>"r)) (NOT * ("ö>"r)) (NOT * ("u>"r)) (NOT * ("o>"r)) (NOT * ("a>"r)) (NOT * ("I>"r)) (NOT * ("E>"r)) (NOT * ("[>"r)) (NOT * ("Y>"r)) (NOT * ("/>"r)) (NOT * ("U>"r)) (NOT * ("O>"r)) (NOT * ("A>"r)) (NOT * (":>"r)) (@2 NIL)
+#$# MAP (@SUBJ @OBJ @PC) TARGET (Abbr Sg Nom) (@1 (* (":kin>"r)) (2 ("<(.*)x:kin>"r))
+#$# MAP (@ADVL) TARGET (N Sg Ine) (1 ("<(.*)uksessa>"r)) (2 ("<(.*)uksessa" ("us>"r))
+#$# MAP (@ADVL) TARGET (N Sg Ine) (1 ("<(.*)yksessä>"r)) (2 ("<(.*)yksessä" ("ys>"r))
+#$# MAP (@ADVL) TARGET (N Sg Ine) (1 ("<(.*)ssa>"r)) (2 ("<(.*)ssa>"r))
+#$# MAP (@ADVL) TARGET (N Sg Ine) (1 ("<(.*)ssä>"r)) (2 ("<(.*)ssä>"r))
+#$# MAP (@ADVL) TARGET (N Sg Ela) (1 ("<(.*)sta>"r)) (2 ("<(.*)sta>"r))
+#$# MAP (@ADVL) TARGET (N Sg Ela) (1 ("<(.*)stä>"r)) (2 ("<(.*)stä>"r))
+#$# MAP (@ADVL) TARGET (N Sg Ine) (1 ("<(.*)uksella>"r)) (2 ("<(.*)uksella" ("us>"r))
+#$# MAP (@ADVL) TARGET (N Sg Ine) (1 ("<(.*)yksellä>"r)) (2 ("<(.*)yksellä" ("ys>"r))
+#$# MAP (@ADVL) TARGET (N Sg Ade) (1 ("<(.*)lla>"r)) (2 ("<(.*)lla>"r))
+#$# MAP (@ADVL) TARGET (N Sg Ade) (1 ("<(.*)llä>"r)) (2 ("<(.*)llä>"r))
+#$# MAP (@ADVL) TARGET (N Sg Ine) (1 ("<(.*)ukselta>"r)) (2 ("<(.*)ukselta" ("us>"r))
+#$# MAP (@ADVL) TARGET (N Sg Ine) (1 ("<(.*)ykseltä>"r)) (2 ("<(.*)ykseltä" ("ys>"r))
+#$# MAP (@ADVL) TARGET (N Sg Abl) (1 ("<(.*)lta>"r)) (2 ("<(.*)lta>"r))
+#$# MAP (@ADVL) TARGET (N Sg Abl) (1 ("<(.*)ltä>"r)) (2 ("<(.*)ltä>"r))
+#$# MAP (@ADVL) TARGET (N Sg Ine) (1 ("<(.*)ukselle>"r)) (2 ("<(.*)ukselle" ("us>"r))
+#$# MAP (@ADVL) TARGET (N Sg All) (1 ("<(.*)lle>"r)) (2 ("<(.*)lle>"r))
 ### MAP (@SUBJ @OBJ @PC) TARGET (N Sg Nom) (1 ("<(.*)man>"r)) (@2 NIL)
 ### MAP (@SUBJ @OBJ @PC) TARGET (N Sg Nom) (1 ("<(.*)nen>"r)) (@2 NIL)
 ### MAP (@SUBJ @OBJ @PC) TARGET (N Sg Nom) (1 ("<(.*)sson>"r)) (@2 NIL)
