@@ -1,0 +1,187 @@
+Alphabet
+
+ %^A:ä %^O:ö %^U:y ! The archiphonemes
+ %>:0  %^V  %^¤:0 '
+ p1:p t1:t k1:k
+
+ a b c d e f g h i j k l m n o p q
+ r s t u v w x y z å ä ö ø æ 
+ á é ó ú í à è ò ù ì ë ü ï â ê ô û î ã ý þ ñ ð ß ª ß ç
+ i2:i i3:i i4:i i5:i
+ 
+ A B C D E F G H I J K L M N O P Q
+ R S T U V W X Y Z Å Ä Ö Ø Æ
+ Á É Ó Ú Í À È Ò Ù Ì Ë Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð
+
+
+ X1:0 X2:0 X3:0 X4:0 X5:0 X6:0 X7:0 X8:0 X9:0   ! diacritics
+ Y1:0 Y2:0 Y3:0 Y4:0 Y5:0 Y6:0 Y7:0 Y8:0 Y9:0 
+ Z1:0 Z2:0 Z3:0 Z4:0 Z5:0 Z6:0 Z7:0 Z8:0 Z9:0 
+ %^TES:0 ;
+
+
+Sets
+ Vow = a e i o u y ä ö å %^A %^O %^U %^V i2 i3 i4 i5 ;
+ Cns = b c d f g h j k l m n p q r s t v w x z ' p1  t1 k1  %^¤;
+ Front = ä ö y ;
+ Back = a o u ;
+ Neutral = i e i2 i3 i4 i5 ;
+ ArchiVow = %^A %^O %^U %^V ;
+ FrontNeutral = i e ä ö y i2 i3 i4 i5 ;
+ Dummy = %> !%#%# 
+ X1 X2 X3 X4 X5 X6 X7 X8 X9
+ Y1 Y2 Y3 Y4 Y5 Y6 Y7 Y8 Y9 
+ Z1 Z2 Z3 Z4 Z5 Z6 Z7 Z8 Z9 %^TES ; 
+ NonFront = Cns  Back Neutral Dummy ArchiVow ;
+ NonBack =  Cns Front Neutral Dummy ArchiVow ;
+ WeG = X1 X2 X4 Y1 ;
+ HighLabial = u y ;
+ Liquid = l r ;
+ VclessStop = k p t  ;
+ Labial = p b m ;
+ Velar = g k ;
+ Nasal = m n ;
+
+
+Rules
+
+! Vowel rules
+! -----------
+
+"Back harmony"
+  [  %^A:a | %^O:o | %^U:u ] <=> Back: NonFront:*
+				%>: NonFront:* _ ;
+!				%>: NonBack:* _ ;
+
+"Vowel copying"
+ %^V:Vx <=> :Vx Dummy:* %>:0 _ ;
+	where Vx in ( a e i o u y ä ö ) ;
+
+"Vowel copying in h-illative"
+ %^V:Vx <=> Vx: %>:0 [ h | s ] _ ;
+	where Vx in ( a e i o u y ä ö ) ; 
+
+"Vowel copying in s-illative"
+ %^V:Vx <=> Vx: %>:0 s %^V: _ ;
+	where Vx in ( a e i o u y ä ö ) ; 
+
+"e:i in nom.sg. of e-stems" ! ove : ovi
+ e:i <=> _ Z1: #: ;
+
+"e:0 in plural of e-stems" ! ovien
+ e:0 <=> _  (Dummy:)  %>:0 [ i2:i | i2:j ] ;
+! Y1 removed
+
+"e:0 in consonant stems"
+ e:0 <=> Cns: _ [ Y5: | Y7: ] %>:0 t ;
+
+"i:0 in par and gen pl of i-stems" ! ristien
+ i:0 <=> Cns: _ Z2: %>:0 i2:i %>:0 [ e n | %^A: ] ;
+
+"i:e in i-stems"
+ i:e <=> Cns: _ ( X4:) %>:0 [ i2:i | i2:j ] %>:0 ;
+
+"i as j intervocalically in affixes"
+ i2:j <=> [ Vow - :i ] (Dummy: | %^¤: ) %>:0 _ %>:0 Vow:Vow ; 
+! valoien : valojen
+
+"a to 0 in front of i"
+ a:0 <=> _ [ X2: | Y2: ] %>:0 i2: ;
+!a:0 <=> [ u | o ] (Neutral) Cns: Cns:* _  (Dummy:) [ X2: | Y2: ] %>: i2: ;
+ ! koiraien : koirien
+
+"a to o in front of i"
+ a:o <=> _ [ X4: | Y1: | Y3: ] %>:0 i2: ;
+!a:o <=> a Cns: Cns:*  _  (Dummy:) Y3: %>: i: ;
+ ! kalaien : kalojen
+
+! Long vowel and diphtong shortening
+! ----------------------------------
+
+"Shortening of ie, yö, uo and long vowels"
+ Vx:0 <=> _ Vy: (Dummy:) %>:0 [ i2: | i3 | i4: | i5 ] ;
+      where Vx in ( i y u a e i o u y ä ö )
+	    Vy in ( e ö o a e i o u y ä ö )
+	    matched ;
+
+! Consonant gradation
+! -------------------
+
+"Qualitative consonant gradation"
+ Cx:Cy <=>  h | Liquid | Vow: _ Vow: WeG: ;
+       where Cx in (k p t)
+             Cy in (0 v d)
+             matched ;
+
+"Quantitative consonant gradation"
+ Cx:0 <=>  Cx _ Vow: WeG: ;
+      where Cx in VclessStop ;
+
+"Assimilative"
+ Cx:Cy <=> Cz _ Vow: ( Vow ) WeG: ;
+      where Cx in ( k p t )
+	    Cy in ( g m n )
+	    Cz in ( n m n )
+	    matched ;
+
+"Gradation of k after long vowel"
+ k:' <=> Vow Vx: _ Vx: WeG: ;
+     where Vx in Vow ;
+
+"Gradation of k between u/y"
+ k:v <=> Cns: Vx _ Vx WeG: ;
+	 where Vx in HighLabial ;
+
+"Gradation of k after h or liquid"
+ k:j <=> Liquid | h _ e: WeG: ;
+
+"Gradation of t after liquids"
+ t:Cx <=> Cx _ Vow: WeG: ;
+      where Cx in Liquid ;
+
+"Weak grade of poika, aika"
+ i:j <=> #:0 [ p o | a ] _ k: a: WeG: ;
+
+"Weak grade of ruoka"
+ o:u => #:0 r u _ k: a: WeG: ; 
+
+
+! Consonant alternations
+! ----------------------
+
+"Alternation finally in consonant stems"
+ m:n <=> Vow: _ e: Y5: %>:0 t ;
+ ! toimi : tointen
+
+!"s:d in susi - suden etc."
+! s:d <=> Vow: _ i: X2: %>:0 ;
+
+!"s:t in susi - sutena etc."
+! s:t <=> [ n | Vow: ] _ i: [ Y5: | Y6: | Y7: ] %>:0 ;
+! Y7 can be replaced by Y5, I guess...
+
+!"s:n in kynsi - kynnet"
+! s:n <=> n _ i: X2: ;
+
+"p:0 and t:0 in consonant stems" ! lasten
+ Cx:0 <=> Vow: _ s e: Y5: %>:0 t ;
+      where Cx in ( p t ) ;
+
+"m:n in nonfinal positions"
+ m:n <=> Vow:Vow _ e: Dummy:* #: ;
+
+"t:s in front of different i-s"
+ t:s <=> _ e:i Z1: ;
+     <=> _ e: %^TES:0 ;
+
+"e:0 in 4-syll vowel stems"
+ e:0 <=> _ %^TES:0 ;
+
+!€ kalleute%^TES
+!€ kalleus00
+
+! Miscellanious rules
+! -------------------
+
+"Apostroph deletion for parfait"
+ ':0 <=> Cns: _ Y4: ;
