@@ -829,7 +829,7 @@ REMOVE Prop IF (0 CNOUN) (0 POSS_SUFF);
 REMOVE INTJ ; # FMT: The above rules do not work for "Niin he jättivät kohta verkot ja seurasivat häntä" 
 # these two rules are ad hoc rules, awaiting tag harmonisation omorfi-cg
 
-SELECT VFIN (0 VFIN) (0 (N Gen)) (NOT -1* VFIN BARRIER CLB?) (NOT 1* VFIN BARRIER CLB?); # FMT: "Asun valkeassa talossa."
+SELECT VFIN (0 VFIN) (0 (N Gen)) (NOT *-1 VFIN BARRIER CLB?) (NOT 1* VFIN BARRIER CLB?); # FMT: "Asun valkeassa talossa."
 
 REMOVE Nom IF (-1 CLB?) (0 Nom) (0 VFIN) (1C Nom); # FMT: "Tuli ilta, ja tuli aamu, ensimmäinen päivä"
 
@@ -1985,7 +1985,7 @@ REMOVE (Pass Neg) (*-1 NEGV LINK *1C PrsPrc LINK NOT *1 CLB?)
 
 # Allow selecting of Neg when Conj CS exists. Does not change above example. -- Ryan
 
-REMOVE (Neg) (NOT *-1 NEGV) (NOT *1 NEGV) (NEGATE 0 (CS)) (NOT 1 ConNeg) (Not -1 ConNeg) ; 
+REMOVE (Neg) (NOT *-1 NEGV) (NOT *1 NEGV) (NEGATE 0 (CS)) (NOT 1 ConNeg) (NOT -1 ConNeg) ; 
 
   # IF NO NEGV, THEN NO Neg IN THE SAME CLAUSE.
 REMOVE (Neg) (NOT *-1 NEGV) (*1 NEGV LINK *1C Neg)
@@ -2560,7 +2560,7 @@ SELECT (Prs/Imprt Act Neg) (-1C NEGV)# emme tunne
 REMOVE (Imprt Sg2) (NOT -1 BOS) (NOT -2 BOS) (NOT -1 C) (NOT -2 C) (-1 WORD) ;
 SELECT (Imprt Sg2) (NEGATE -1 WORD) (0 WORD LINK *1 (N Nom) BARRIER N) ;
     # Heitä mulle tuo kirja!
-SELECT (Imprt Sg2) (0 ConNeg) (NEGATE 0 WORD LINK *-1 Neg BARRIER V) (NEGATE 0 WORD LINK 1 Neg BARRIER V) ;
+SELECT (Imprt Sg2) (0 ConNeg) (NEGATE 0 WORD LINK *-1 Neg BARRIER V) (NEGATE 0 WORD LINK *1 Neg BARRIER V) ;
     # Laula minulle! 
 
 SELECT (PP "ennen") (1 KELLO) (2 Par)
@@ -3068,9 +3068,9 @@ MAP (@ADVL) TARGET (N Pl Ill) (1 ("<(.*)yksiin>"r)) (2 ("<(.*)yksiin"r) + ("<(.*
 MAP (@ADVL) TARGET (N Pl Ill) (1 ("<(.*)eihin>"r)) (2 ("<(.*)eihin"r) + ("<(.*)i>"r))
 MAP (@ADVL) TARGET (N Pl Ill) (1 ("<(.*)aihin>"r)) (2 ("<(.*)aihin"r) + ("<(.*)as>"r))
 MAP (@ADVL) TARGET (N Pl Ill) (1 ("<(.*)äihin>"r)) (2 ("<(.*)äihin"r) + ("<(.*)äs>"r))
-MAP (@ADVL) TARGET (N Pl Ill) (1 ("<(.*)oihin>"r)) (2 ("<(.*)ihin>"r))
-MAP (@ADVL) TARGET (N Pl Ill) (1 ("<(.*)uihin>"r)) (2 ("<(.*)ihin>"r))
-MAP (@ADVL) TARGET (N Pl Ill) (1 ("<(.*)yihin>"r)) (2 ("<(.*)ihin>"r))
+MAP (@ADVL) TARGET (N Pl Ill) (1 ("<(.*)oihin>"r)) (2 ("<(.*)oihin>"r))
+MAP (@ADVL) TARGET (N Pl Ill) (1 ("<(.*)uihin>"r)) (2 ("<(.*)uihin>"r))
+MAP (@ADVL) TARGET (N Pl Ill) (1 ("<(.*)yihin>"r)) (2 ("<(.*)yihin>"r))
 MAP (@ADVL) TARGET (N Sg Ill) (1 ("<(.*)ukseen>"r)) (2 ("<(.*)ukseen"r) + ("<(.*)us>"r))
 MAP (@ADVL) TARGET (N Sg Ill) (1 ("<(.*)ykseen>"r)) (2 ("<(.*)ykseen"r) + ("<(.*)ys>"r))
 MAP (@ADVL) TARGET (N Sg Ill) (1 ("<(.*)ihin>"r)) (2 ("<(.*)hin>"r))
