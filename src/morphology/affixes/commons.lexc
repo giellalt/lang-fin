@@ -1,0 +1,79 @@
+! Possessive/Optional implies Clitic/Optional
+LEXICON Possessive/Optional
+	Possessive/Obligatory	;
+	Clitic/Optional	;
+	Ennd	;
+
+LEXICON Possessive/Obligatory
++PxSg1:{←n~}ni	Clitic/Optional		;
++PxSg2:{←n~}si	Clitic/Optional		;
++PxSg3:{←n~}ns{aä}	Clitic/Optional		;
++PxPl1:{←n~}mme	Clitic/Optional		;
++PxPl2:{←n~}nne	Clitic/Optional		;
++PxPl3:{←n~}ns{aä}	Clitic/Optional		;
+
+LEXICON Possessive/Vn
++PxSg3:{←n~}{aeiouyäö}n	Clitic/Optional		;
++PxPl3:{←n~}{aeiouyäö}n	Clitic/Optional		;
+
+LEXICON Possessive/Optional+Vn
+	Possessive/Optional	;
+	Possessive/Vn	;
+
+LEXICON Possessive/Obligatory+Vn
+	Possessive/Obligatory	;
+	Possessive/Vn	;
+
+LEXICON Clitic/Optional
+	Clitic/Obligatory	;
+	Ennd	;
+
+LEXICON Clitic/Optional/Neg
+	Clitic/Optional/Neg	;
+	Ennd	;
+
+LEXICON Clitic/Obligatory
+	Clitic/Obligatory/Rest	;
+	Clitic/Obligatory/Neg	;
+
+LEXICON Clitic/Obligatory/Neg
++han:h{aä}n	Ennd		;
++han+kaan:h{aä}nk{aä}{aä}n	Ennd		;
++han+ko:h{aä}nk{oö}	Ennd		;
++han+pa:h{aä}np{aä}	Ennd		;
++ko:k{oö}	Ennd		;
++ko+han:k{oö}h{aä}n	Ennd		;
++ko+kaan:k{oö}k{aä}{aä}n	Ennd		;
++ko+kin:k{oö}kin	Ennd		;
++ko+pa:k{oö}p{aä}	Ennd		;
++ko+s:k{oö}s	Ennd		;
++ko+Use/Sub+s:{←t~}ks	Ennd		;
++pa:p{aä}	Ennd		;
++pa+han:p{aä}h{aä}n	Ennd		;
++pa+kaan:p{aä}k{aä}{aä}n	Ennd		;
++pa+kin:p{aä}kin	Ennd		;
++pa+ko:p{aä}k{oö}	Ennd		;
++pa+s:p{aä}s	Ennd		;
+
+LEXICON Clitic/Obligatory/Rest
++kin:kin	Ennd		;
++kin+han:kinh{aä}n	Ennd		;
++kin+kaan:kink{aä}{aä}n	Ennd		;
++kin+ko:kink{oö}	Ennd		;
++kin+pa:kinp{aä}	Ennd		;
++kaan:k{aä}{aä}n	Ennd		;
++kaan+han:k{aä}{aä}nh{aä}n	Ennd		;
++kaan+kin:k{aä}{aä}nkin	Ennd		;
++kaan+ko:k{aä}{aä}nk{oö}	Ennd		;
++kaan+pa:k{aä}{aä}np{aä}	Ennd		;
+
+
+LEXICON Particle+Clitic/Optional
+    Clitic/Optional ;
+
+LEXICON Adverb+Clitic/Optional
+    Clitic/Optional ;
+
+LEXICON Adposition+Clitic/Optional
+    Clitic/Optional ;
+

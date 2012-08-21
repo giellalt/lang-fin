@@ -1,0 +1,490 @@
+! Codifieds are inflected with a colon, depending on the last letter
+! of the word (or inflection class of the thing)
+
+LEXICON CodifiedAcroStem/Common
++Sg+Nom:	Ennd	;
+	Compounding/Dashed	;
+
+LEXICON CodifiedAcroStem/a
+	CodifiedAcroStem/A	;
+
+LEXICON CodifiedAcroStem/A
+	CodifiedAcroStem/Common	;
++Sg+Nom:%:	Possessive/Obligatory+Vn	;
++Sg+Nom:%:	Clitic/Obligatory	;
++Pl+Nom:%:t	Clitic/Optional	;
++Sg+Nom:%:n	Clitic/Optional	;
++Sg+Par:%:ta	Possessive/Optional+Vn	;
++Sg+Ill:%:han	Possessive/Optional	;
++Sg+Abe:%:tta	Possessive/Optional+Vn	;
++Sg+Abl:%:lta	Possessive/Optional+Vn	;
++Sg+Ade:%:lla	Possessive/Optional+Vn	;
++Sg+All:%:lle	Possessive/Optional+Vn	;
++Sg+Ela:%:sta	Possessive/Optional+Vn	;
++Sg+Ess:%:na	Possessive/Optional+Vn	;
++Sg+Ine:%:ssa	Possessive/Optional+Vn	;
++Sg+Tra:%:ksi	Clitic/Optional	;
++Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
++Pl+Par:%:ita	Possessive/Optional+Vn	;
++Pl+Ill:%:ihin	Possessive/Optional	;
++Pl+Abe:%:itta	Possessive/Optional+Vn	;
++Pl+Abl:%:ilta	Possessive/Optional+Vn	;
++Pl+Ade:%:illa	Possessive/Optional+Vn	;
++Pl+All:%:ille	Possessive/Optional+Vn	;
++Pl+Ess:%:ina	Possessive/Optional+Vn	;
++Cmt:%:ine	Possessive/Optional+Vn	;
++Pl+Ela:%:ista	Possessive/Optional+Vn	;
++Pl+Ine:%:issa	Possessive/Optional+Vn	;
++Pl+Ins:%:in	Clitic/Optional	;
++Pl+Tra:%:iksi	Clitic/Optional	;
++Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
+
+LEXICON CodifiedAcroStem/b
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/B
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/c
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/C
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/d
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/D
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/e
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/E
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/g
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/G
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/p
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/P
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/v
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/V
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/w
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/W
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/t
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/T
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/ee
+	CodifiedAcroStem/Common	;
++Sg+Nom:%:	Possessive/Obligatory+Vn	;
++Sg+Nom:%:	Clitic/Obligatory	;
++Pl+Nom:%:t	Clitic/Optional	;
++Sg+Nom:%:n	Clitic/Optional	;
++Sg+Par:%:tä	Possessive/Optional+Vn	;
++Sg+Ill:%:hen	Possessive/Optional	;
++Sg+Abe:%:ttä	Possessive/Optional+Vn	;
++Sg+Abl:%:ltä	Possessive/Optional+Vn	;
++Sg+Ade:%:llä	Possessive/Optional+Vn	;
++Sg+All:%:lle	Possessive/Optional+Vn	;
++Sg+Ela:%:stä	Possessive/Optional+Vn	;
++Sg+Ess:%:nä	Possessive/Optional+Vn	;
++Sg+Ine:%:ssä	Possessive/Optional+Vn	;
++Sg+Tra:%:ksi	Clitic/Optional	;
++Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
++Pl+Par:%:itä	Possessive/Optional+Vn	;
++Pl+Ill:%:ihin	Possessive/Optional	;
++Pl+Abe:%:ittä	Possessive/Optional+Vn	;
++Pl+Abl:%:iltä	Possessive/Optional+Vn	;
++Pl+Ade:%:illä	Possessive/Optional+Vn	;
++Pl+All:%:ille	Possessive/Optional+Vn	;
++Pl+Ess:%:inä	Possessive/Optional+Vn	;
++Cmt:%:ine	Possessive/Optional+Vn	;
++Pl+Ela:%:istä	Possessive/Optional+Vn	;
++Pl+Ine:%:issä	Possessive/Optional+Vn	;
++Pl+Ins:%:in	Clitic/Optional	;
++Pl+Tra:%:iksi	Clitic/Optional	;
++Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
+
+LEXICON CodifiedAcroStem/i
+	CodifiedAcroStem/ii	;
+
+LEXICON CodifiedAcroStem/I
+	CodifiedAcroStem/ii	;
+
+LEXICON CodifiedAcroStem/j
+	CodifiedAcroStem/ii	;
+
+LEXICON CodifiedAcroStem/J
+	CodifiedAcroStem/ii	;
+
+LEXICON CodifiedAcroStem/ii
+	CodifiedAcroStem/Common	;
++Sg+Nom:%:	Possessive/Obligatory+Vn	;
++Sg+Nom:%:	Clitic/Obligatory	;
++Pl+Nom:%:t	Clitic/Optional	;
++Sg+Nom:%:n	Clitic/Optional	;
++Sg+Par:%:tä	Possessive/Optional+Vn	;
++Sg+Ill:%:hin	Possessive/Optional	;
++Sg+Abe:%:ttä	Possessive/Optional+Vn	;
++Sg+Abl:%:ltä	Possessive/Optional+Vn	;
++Sg+Ade:%:llä	Possessive/Optional+Vn	;
++Sg+All:%:lle	Possessive/Optional+Vn	;
++Sg+Ela:%:stä	Possessive/Optional+Vn	;
++Sg+Ess:%:nä	Possessive/Optional+Vn	;
++Sg+Ine:%:ssä	Possessive/Optional+Vn	;
++Sg+Tra:%:ksi	Clitic/Optional	;
++Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
++Pl+Par:%:itä	Possessive/Optional+Vn	;
++Pl+Ill:%:ihin	Possessive/Optional	;
++Pl+Abe:%:ittä	Possessive/Optional+Vn	;
++Pl+Abl:%:iltä	Possessive/Optional+Vn	;
++Pl+Ade:%:illä	Possessive/Optional+Vn	;
++Pl+All:%:ille	Possessive/Optional+Vn	;
++Pl+Ess:%:inä	Possessive/Optional+Vn	;
++Cmt:%:ine	Possessive/Optional+Vn	;
++Pl+Ela:%:istä	Possessive/Optional+Vn	;
++Pl+Ine:%:issä	Possessive/Optional+Vn	;
++Pl+Ins:%:in	Clitic/Optional	;
++Pl+Tra:%:iksi	Clitic/Optional	;
++Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
+
+LEXICON CodifiedAcroStem/h
+	CodifiedAcroStem/oo	;
+
+LEXICON CodifiedAcroStem/H
+	CodifiedAcroStem/oo	;
+
+LEXICON CodifiedAcroStem/k
+	CodifiedAcroStem/oo	;
+
+LEXICON CodifiedAcroStem/K
+	CodifiedAcroStem/oo	;
+
+LEXICON CodifiedAcroStem/o
+	CodifiedAcroStem/oo	;
+
+LEXICON CodifiedAcroStem/O
+	CodifiedAcroStem/oo	;
+
+LEXICON CodifiedAcroStem/å
+	CodifiedAcroStem/oo	;
+
+LEXICON CodifiedAcroStem/Å
+	CodifiedAcroStem/oo	;
+
+LEXICON CodifiedAcroStem/oo
+	CodifiedAcroStem/Common	;
++Sg+Nom:%:	Possessive/Obligatory+Vn	;
++Sg+Nom:%:	Clitic/Obligatory	;
++Pl+Nom:%:t	Clitic/Optional	;
++Sg+Nom:%:n	Clitic/Optional	;
++Sg+Par:%:ta	Possessive/Optional+Vn	;
++Sg+Ill:%:hon	Possessive/Optional	;
++Sg+Abe:%:tta	Possessive/Optional+Vn	;
++Sg+Abl:%:lta	Possessive/Optional+Vn	;
++Sg+Ade:%:lla	Possessive/Optional+Vn	;
++Sg+All:%:lle	Possessive/Optional+Vn	;
++Sg+Ela:%:sta	Possessive/Optional+Vn	;
++Sg+Ess:%:na	Possessive/Optional+Vn	;
++Sg+Ine:%:ssa	Possessive/Optional+Vn	;
++Sg+Tra:%:ksi	Clitic/Optional	;
++Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
++Pl+Par:%:ita	Possessive/Optional+Vn	;
++Pl+Ill:%:ihin	Possessive/Optional	;
++Pl+Abe:%:itta	Possessive/Optional+Vn	;
++Pl+Abl:%:ilta	Possessive/Optional+Vn	;
++Pl+Ade:%:illa	Possessive/Optional+Vn	;
++Pl+All:%:ille	Possessive/Optional+Vn	;
++Pl+Ess:%:ina	Possessive/Optional+Vn	;
++Cmt:%:ine	Possessive/Optional+Vn	;
++Pl+Ela:%:ista	Possessive/Optional+Vn	;
++Pl+Ine:%:issa	Possessive/Optional+Vn	;
++Pl+Ins:%:in	Clitic/Optional	;
++Pl+Tra:%:iksi	Clitic/Optional	;
++Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
+
+LEXICON CodifiedAcroStem/q
+	CodifiedAcroStem/uu	;
+
+LEXICON CodifiedAcroStem/Q
+	CodifiedAcroStem/uu	;
+
+LEXICON CodifiedAcroStem/u
+	CodifiedAcroStem/uu	;
+
+LEXICON CodifiedAcroStem/U
+	CodifiedAcroStem/uu	;
+
+LEXICON CodifiedAcroStem/uu
+	CodifiedAcroStem/Common	;
++Sg+Nom:%:	Possessive/Obligatory+Vn	;
++Sg+Nom:%:	Clitic/Obligatory	;
++Pl+Nom:%:t	Clitic/Optional	;
++Sg+Nom:%:n	Clitic/Optional	;
++Sg+Par:%:ta	Possessive/Optional+Vn	;
++Sg+Ill:%:hun	Possessive/Optional	;
++Sg+Abe:%:tta	Possessive/Optional+Vn	;
++Sg+Abl:%:lta	Possessive/Optional+Vn	;
++Sg+Ade:%:lla	Possessive/Optional+Vn	;
++Sg+All:%:lle	Possessive/Optional+Vn	;
++Sg+Ela:%:sta	Possessive/Optional+Vn	;
++Sg+Ess:%:na	Possessive/Optional+Vn	;
++Sg+Ine:%:ssa	Possessive/Optional+Vn	;
++Sg+Tra:%:ksi	Clitic/Optional	;
++Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
++Pl+Par:%:ita	Possessive/Optional+Vn	;
++Pl+Ill:%:ihin	Possessive/Optional	;
++Pl+Abe:%:itta	Possessive/Optional+Vn	;
++Pl+Abl:%:ilta	Possessive/Optional+Vn	;
++Pl+Ade:%:illa	Possessive/Optional+Vn	;
++Pl+All:%:ille	Possessive/Optional+Vn	;
++Pl+Ess:%:ina	Possessive/Optional+Vn	;
++Cmt:%:ine	Possessive/Optional+Vn	;
++Pl+Ela:%:ista	Possessive/Optional+Vn	;
++Pl+Ine:%:issa	Possessive/Optional+Vn	;
++Pl+Ins:%:in	Clitic/Optional	;
++Pl+Tra:%:iksi	Clitic/Optional	;
++Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
+
+LEXICON CodifiedAcroStem/f
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/F
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/l
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/L
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/m
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/M
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/n
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/N
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/r
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/R
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/s
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/S
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/š
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/Š
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/x
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/X
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/äX
+	CodifiedAcroStem/Common	;
++Sg+Nom:%:	Possessive/Obligatory+Vn	;
++Sg+Nom:%:	Clitic/Obligatory	;
++Pl+Nom:%:t	Clitic/Optional	;
++Sg+Nom:%:n	Clitic/Optional	;
++Sg+Par:%:ää	Possessive/Optional+Vn	;
++Sg+Ill:%:ään	Possessive/Optional	;
++Sg+Abe:%:ttä	Possessive/Optional+Vn	;
++Sg+Abl:%:ltä	Possessive/Optional+Vn	;
++Sg+Ade:%:llä	Possessive/Optional+Vn	;
++Sg+All:%:lle	Possessive/Optional+Vn	;
++Sg+Ela:%:stä	Possessive/Optional+Vn	;
++Sg+Ess:%:nä	Possessive/Optional+Vn	;
++Sg+Ine:%:ssä	Possessive/Optional+Vn	;
++Sg+Tra:%:ksi	Clitic/Optional	;
++Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
++Pl+Par:%:iä	Possessive/Optional+Vn	;
++Pl+Ill:%:iin	Possessive/Optional	;
++Pl+Abe:%:ittä	Possessive/Optional+Vn	;
++Pl+Abl:%:iltä	Possessive/Optional+Vn	;
++Pl+Ade:%:illä	Possessive/Optional+Vn	;
++Pl+All:%:ille	Possessive/Optional+Vn	;
++Pl+Ess:%:inä	Possessive/Optional+Vn	;
++Cmt:%:ine	Possessive/Optional+Vn	;
++Pl+Ela:%:istä	Possessive/Optional+Vn	;
++Pl+Ine:%:issä	Possessive/Optional+Vn	;
++Pl+Ins:%:in	Clitic/Optional	;
++Pl+Tra:%:iksi	Clitic/Optional	;
++Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
+
+LEXICON CodifiedAcroStem/y
+	CodifiedAcroStem/Y	;
+
+LEXICON CodifiedAcroStem/Y
+	CodifiedAcroStem/Common	;
++Sg+Nom:%:	Possessive/Obligatory+Vn	;
++Sg+Nom:%:	Clitic/Obligatory	;
++Pl+Nom:%:t	Clitic/Optional	;
++Sg+Nom:%:n	Clitic/Optional	;
++Sg+Par:%:tä	Possessive/Optional+Vn	;
++Sg+Ill:%:hin	Possessive/Optional	;
++Sg+Abe:%:ttä	Possessive/Optional+Vn	;
++Sg+Abl:%:ltä	Possessive/Optional+Vn	;
++Sg+Ade:%:llä	Possessive/Optional+Vn	;
++Sg+All:%:lle	Possessive/Optional+Vn	;
++Sg+Ela:%:stä	Possessive/Optional+Vn	;
++Sg+Ess:%:nä	Possessive/Optional+Vn	;
++Sg+Ine:%:ssä	Possessive/Optional+Vn	;
++Sg+Tra:%:ksi	Clitic/Optional	;
++Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
++Pl+Par:%:itä	Possessive/Optional+Vn	;
++Pl+Ill:%:ihin	Possessive/Optional	;
++Pl+Abe:%:ittä	Possessive/Optional+Vn	;
++Pl+Abl:%:iltä	Possessive/Optional+Vn	;
++Pl+Ade:%:illä	Possessive/Optional+Vn	;
++Pl+All:%:ille	Possessive/Optional+Vn	;
++Pl+Ess:%:inä	Possessive/Optional+Vn	;
++Cmt:%:ine	Possessive/Optional+Vn	;
++Pl+Ela:%:istä	Possessive/Optional+Vn	;
++Pl+Ine:%:issä	Possessive/Optional+Vn	;
++Pl+Ins:%:in	Clitic/Optional	;
++Pl+Tra:%:iksi	Clitic/Optional	;
++Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
+
+LEXICON CodifiedAcroStem/ž
+    CodifiedAcroStem/Z   ;
+
+LEXICON CodifiedAcroStem/Ž
+    CodifiedAcroStem/Z   ;
+
+LEXICON CodifiedAcroStem/z
+    CodifiedAcroStem/Z   ;
+
+LEXICON CodifiedAcroStem/Z
+	CodifiedAcroStem/Common	;
++Sg+Nom:%:	Possessive/Obligatory+Vn	;
++Sg+Nom:%:	Clitic/Obligatory	;
++Pl+Nom:%:t	Clitic/Optional	;
++Sg+Nom:%:n	Clitic/Optional	;
++Sg+Par:%:aa	Possessive/Optional+Vn	;
++Sg+Ill:%:aan	Possessive/Optional	;
++Sg+Abe:%:tta	Possessive/Optional+Vn	;
++Sg+Abl:%:lta	Possessive/Optional+Vn	;
++Sg+Ade:%:lla	Possessive/Optional+Vn	;
++Sg+All:%:lle	Possessive/Optional+Vn	;
++Sg+Ela:%:sta	Possessive/Optional+Vn	;
++Sg+Ess:%:na	Possessive/Optional+Vn	;
++Sg+Ine:%:ssa	Possessive/Optional+Vn	;
++Sg+Tra:%:ksi	Clitic/Optional	;
++Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
++Pl+Par:%:ja	Possessive/Optional+Vn	;
++Pl+Ill:%:ihin	Possessive/Optional	;
++Pl+Abe:%:itta	Possessive/Optional+Vn	;
++Pl+Abl:%:ilta	Possessive/Optional+Vn	;
++Pl+Ade:%:illa	Possessive/Optional+Vn	;
++Pl+All:%:ille	Possessive/Optional+Vn	;
++Pl+Ess:%:ina	Possessive/Optional+Vn	;
++Cmt:%:ine	Possessive/Optional+Vn	;
++Pl+Ela:%:ista	Possessive/Optional+Vn	;
++Pl+Ine:%:issa	Possessive/Optional+Vn	;
++Pl+Ins:%:in	Clitic/Optional	;
++Pl+Tra:%:iksi	Clitic/Optional	;
++Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
+
+LEXICON CodifiedAcroStem/ä
+	CodifiedAcroStem/Ä	;
+
+LEXICON CodifiedAcroStem/Ä
+	CodifiedAcroStem/Common	;
++Sg+Nom:%:	Possessive/Obligatory+Vn	;
++Sg+Nom:%:	Clitic/Obligatory	;
++Pl+Nom:%:t	Clitic/Optional	;
++Sg+Nom:%:n	Clitic/Optional	;
++Sg+Par:%:tä	Possessive/Optional+Vn	;
++Sg+Ill:%:hän	Possessive/Optional	;
++Sg+Abe:%:ttä	Possessive/Optional+Vn	;
++Sg+Abl:%:ltä	Possessive/Optional+Vn	;
++Sg+Ade:%:llä	Possessive/Optional+Vn	;
++Sg+All:%:lle	Possessive/Optional+Vn	;
++Sg+Ela:%:stä	Possessive/Optional+Vn	;
++Sg+Ess:%:nä	Possessive/Optional+Vn	;
++Sg+Ine:%:ssä	Possessive/Optional+Vn	;
++Sg+Tra:%:ksi	Clitic/Optional	;
++Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
++Pl+Par:%:itä	Possessive/Optional+Vn	;
++Pl+Ill:%:ihin	Possessive/Optional	;
++Pl+Abe:%:ittä	Possessive/Optional+Vn	;
++Pl+Abl:%:iltä	Possessive/Optional+Vn	;
++Pl+Ade:%:illä	Possessive/Optional+Vn	;
++Pl+All:%:ille	Possessive/Optional+Vn	;
++Pl+Ess:%:inä	Possessive/Optional+Vn	;
++Cmt:%:ine	Possessive/Optional+Vn	;
++Pl+Ela:%:istä	Possessive/Optional+Vn	;
++Pl+Ine:%:issä	Possessive/Optional+Vn	;
++Pl+Ins:%:in	Clitic/Optional	;
++Pl+Tra:%:iksi	Clitic/Optional	;
++Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
+
+LEXICON CodifiedAcroStem/ö
+	CodifiedAcroStem/Ö	;
+
+LEXICON CodifiedAcroStem/Ö
+	CodifiedAcroStem/Common	;
++Sg+Nom:%:	Possessive/Obligatory+Vn	;
++Sg+Nom:%:	Clitic/Obligatory	;
++Pl+Nom:%:t	Clitic/Optional	;
++Sg+Nom:%:n	Clitic/Optional	;
++Sg+Par:%:tä	Possessive/Optional+Vn	;
++Sg+Ill:%:hön	Possessive/Optional	;
++Sg+Abe:%:ttä	Possessive/Optional+Vn	;
++Sg+Abl:%:ltä	Possessive/Optional+Vn	;
++Sg+Ade:%:llä	Possessive/Optional+Vn	;
++Sg+All:%:lle	Possessive/Optional+Vn	;
++Sg+Ela:%:stä	Possessive/Optional+Vn	;
++Sg+Ess:%:nä	Possessive/Optional+Vn	;
++Sg+Ine:%:ssä	Possessive/Optional+Vn	;
++Sg+Tra:%:ksi	Clitic/Optional	;
++Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
++Pl+Par:%:itä	Possessive/Optional+Vn	;
++Pl+Ill:%:ihin	Possessive/Optional	;
++Pl+Abe:%:ittä	Possessive/Optional+Vn	;
++Pl+Abl:%:iltä	Possessive/Optional+Vn	;
++Pl+Ade:%:illä	Possessive/Optional+Vn	;
++Pl+All:%:ille	Possessive/Optional+Vn	;
++Pl+Ess:%:inä	Possessive/Optional+Vn	;
++Cmt:%:ine	Possessive/Optional+Vn	;
++Pl+Ela:%:istä	Possessive/Optional+Vn	;
++Pl+Ine:%:issä	Possessive/Optional+Vn	;
++Pl+Ins:%:in	Clitic/Optional	;
++Pl+Tra:%:iksi	Clitic/Optional	;
++Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
+
+LEXICON CodifiedAbbreviation
+    Compounding/Dashed ;

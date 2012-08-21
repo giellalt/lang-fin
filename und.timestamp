@@ -1,0 +1,54 @@
+$Rev: 59870 $ 
+Include filters and indent properly, use gtcore version of editdist.py in
+spellers
+
+r59759:
+Corrected syntax error, renamed a couple of errors.
+
+r59755:
+Finally added initial uppercase to the actual analysing transducer. NB! It
+presently works only for Xerox transducers. The code for HFST looks correct to
+me, but it still doesn't work. Will have to debug this further later.
+
+r59728:
+Corrected file suffix match for xfst script files.
+
+r59707:
+Revert tests
+
+r59705:
+Test commit
+
+r59643:
+Added uppercasing compilation including proper processing for HFST. Uppercasing
+is not yet applied to the output transducers. That is coming in a second commit.
+Added a variable for hfst-xfst (and tested for its existence).
+
+r59115:
+Corrected dependency for speller transducer. Corrected filter path.
+
+r59113:
+Correct the path of merge instructions.
+
+r59079:
+Added filter compilation and processing of fst's.
+
+r58484:
+Corrected path to speller metadata files, corrected commands for them.
+
+r58482:
+Updated zhfst building according to new location of files.
+
+r58478:
+Replaced direct command calls with variables, completed and corrected a couple of commands, made the transducer commands consistent across applications.
+
+r58471:
+The timestamp file has been renamed, with corresponding changes in the Makefile.am.
+
+r58456:
+Making the echo silent for clean output.
+
+r58409:
+Renamed a couple of folders and files, moved hfst & voikko speller metadata files to a more appropriate place.
+
+Updated the top Makefile.am to properly check for changes to this file before building anything else.
