@@ -5,13 +5,20 @@
     <title>Documentation on the Finnish analyser</title>
     <authors>
       <person email="trond.trosterud@hum.uit.no" name="Trond Trosterud" />
+      <person email="tommi.pirinen@helsinki.fi" name="Tommi A Pirinen" />
     </authors>
   </header>
   <body>
     <section>
       <title>Documentation on the Finnish analyser</title>
       <section>
-        <title>Finnish (fin)</title>
+          <title>Finnish (fin)</title>
+          <p>
+              Since the analyser shares some common history with omorfi project,
+              parts of the documents have been copied over from original omorfi
+              docs at <a href="http://home.gna.org/omorfi">
+                  home.gna.org/omorfi</a>
+          </p>
         <ul>
           <li>
             <a href="docu-fin-background.html" >Background information on the Finnish analyser</a>
