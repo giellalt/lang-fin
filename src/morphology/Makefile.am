@@ -28,25 +28,24 @@ GT_LEXC_SRCS=\
 			 stems/interj.lexc \
 			 stems/noun.lexc \
 			 stems/numeral.lexc \
+			 stems/particles.lexc \
 			 stems/pp.lexc \
 			 stems/pron.lexc \
 			 stems/propernoun.lexc \
 			 stems/prefixes.lexc \
 			 stems/punct.lexc \
+			 stems/suffixes.lexc \
 			 stems/verb.lexc \
 			 stems/exceptions.lexc \
 			 stems/51.lexc \
 			 stems/altstem-adjectives.lexc \
-			 stems/altstem-digits.lexc \
 			 stems/altstem-nouns.lexc \
 			 stems/altstem-numerals.lexc \
 			 stems/altstem-proper-nouns.lexc \
 			 stems/altstem-verbs.lexc \
 			 affixes/acronyms.lexc \
 			 affixes/adjectives.lexc \
-			 affixes/digits.lexc \
 			 affixes/nouns.lexc \
-			 affixes/propernouns.lexc \
 			 affixes/verbs.lexc \
 			 affixes/commons.lexc \
 			 compounding.lexc \
