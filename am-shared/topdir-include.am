@@ -56,9 +56,7 @@ analyser.gt.hfst.tmp: raw.gt.hfst \
 	$(HFST_COMPOSE_INTERSECT) $(HFST_FLAGS) -1 $< \
 			-2 orthography/inituppercase.hfst |\
 		$(HFST_COMPOSE_INTERSECT) $(HFST_FLAGS) \
-			-2 filters/remove-morph-borders.hfst |\
-		$(HFST_PREPROCESS_FOR_OPTIMIZED_LOOKUP_FORMAT) $(HFST_FLAGS) $< |\
-		$(HFST_FST2FST) $(HFST_FLAGS) -f olw -o $@
+			-2 filters/remove-morph-borders.hfst -o $@
 
 # This is the standard generating transducer.
 generator.gt.hfst.tmp: raw.gt.hfst filters/remove-morph-borders.hfst
@@ -71,8 +69,7 @@ generator.gt.hfst.tmp: raw.gt.hfst filters/remove-morph-borders.hfst
 # This is a one-level, descriptive automaton - accepts/rejects without analysis:
 dictionary.default.hfst: raw.gt.hfst
 	$(HFST_PROJECT) $(HFST_FLAGS) --project=upper -i $< |\
-		$(HFST_MINIMIZE) $(HFST_FLAGS) |\
-		$(HFST_FST2FST) $(HFST_FLAGS) -f olw -o $@
+		$(HFST_MINIMIZE) $(HFST_FLAGS) -o $@
 
 # create generic tagset variants of analyzers
 analyser.%.hfst: analyser.gt.hfst tagsets/%.relabel

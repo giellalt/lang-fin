@@ -206,10 +206,27 @@ Multichar_Symbols
 +Der/uus
 
 ! The analyses of some words and word-forms indicate limitedness of usage.
-! This includes common mispellings, archaic words and forms, dialectal or
-! spoken language and otherwise rare words and forms.
-+Use/Sub +Use/Marg +Dial
+! This includes common mispellings, archaic words and forms
+! and otherwise rare words and forms.
++Use/Sub +Use/Marg
 +Use/Marg
+
+! The informal language use contains different Finnish than the literary
+! standard, this is marked as standard dialect: common features include
+! dropping final vowels, dropping final i components of unstressed diphtongs,
+! few other shortenings.
+! Other dialects are also sometimes written;
+! the geographical division has three levels:
+! East versus West,
+! East containing Savo and South-East (North?)
+! West containing North, perä, keski and eteläpohjalaiset, southwest and Häme
+! The third level dialect division is traditionally by town borders, be
+! cautious when adding these though.
++Dial
++Dial/East +Dial/West +Dial/Standard
++Dial/Southwest +Dial/Häme +Dial/Eteläpohjalaiset +Dial/Keskipohjalaiset
++Dial/Peräpohjalaiset +Dial/North +Dial/Savo +Dial/Southeast
+
 
 ! Some analysis include indication that word does not have a dictionary based
 ! root form, but contains a root that is generated morphologically. The
