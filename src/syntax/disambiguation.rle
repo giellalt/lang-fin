@@ -162,13 +162,14 @@ LIST ConNeg = ConNeg ;
 
 LIST Prs = Prs ; 
 LIST Prt = Prt ; 
+LIST NonPast = NonPast ;
 LIST AgPcp = AgPcp ; # ma 
 LIST PrfPrc = PrfPcp ; # nut / PrfPcp
 LIST PrsPrc = PrsPrc ; # va / PrsPrc
 LIST PCP = AgPcp PrfPrc PrsPrc ; 
 SET PCPs = AgPcp OR PrfPrc OR PrsPrc ; 
 
-LIST Prs/Prt = Prs Prt ; 
+LIST Prs/Prt = Prs Prt NonPast ; 
 LIST PrsPrc/Inf3/Inf2/REF/TEMP = PrsPrc Inf3 Inf2 REF TEMP ; 
 LIST Imprt = Imprt ;
 LIST Imp = Imp Imprt ; 
@@ -748,9 +749,9 @@ LIST PLPRON = (Pron Pl1) (Pron Pl2) (Pron Pl3) (Pron Pl) ; # (Pron PxPl1) (Pron 
 LIST SGAGR = (V Sg1) (V Sg2) (V Sg3) ;
 LIST PLAGR = (V Pl1) (V Pl2) (V Pl3) ;
 
-LIST ALL_SGPRON = Sg1 OR Sg2 OR Sg3 OR Sg ;
+SET ALL_SGPRON = Sg1 OR Sg2 OR Sg3 OR Sg ;
 
-LIST ALL_PLPRON = PLPRON OR (N Pl) OR SGAGR ;
+SET ALL_PLPRON = PLPRON OR (N Pl) OR SGAGR ;
 
 
 LIST Cmpnd = Cmpnd ;
@@ -1450,13 +1451,13 @@ REMOVE (Abbr Nom "me") (*-1 Pl1 LINK NOT *1 CLB?) (NOT -1 CLB?)
 # Pronouns
 # --------
 
-SELECT MINÄ IF (0 WORD LINK *1 Sg1 BARRIER V) ;
-SELECT SINÄ IF (0 WORD LINK *1 Sg2 BARRIER V) ;
-SELECT HÄN IF  (0 WORD LINK *1 Sg3 BARRIER V) ;
+SELECT MINÄ IF (*1 Sg1 BARRIER V) ;
+SELECT SINÄ IF (*1 Sg2 BARRIER V) ;
+SELECT HÄN IF  (*1 Sg3 BARRIER V) ;
 
-SELECT ME IF (0 WORD LINK *1 Pl1 BARRIER V) ;
-SELECT TE IF (0 WORD LINK *1 Pl2 BARRIER V) ;
-SELECT HE IF (0 WORD LINK *1 Pl3 BARRIER V) ;
+SELECT ME IF (*1 Pl1 BARRIER V) ;
+SELECT TE IF (*1 Pl2 BARRIER V) ;
+SELECT HE IF (*1 Pl3 BARRIER V) ;
 
 #SELECT (Pron "minä") (*1 Sg1 LINK NOT *-1 CLB?) (NOT 1 CLB?)
 #SELECT (Pron "sinä") (*1 Sg2 LINK NOT *-1 CLB?) (NOT 1 CLB?)
@@ -1757,8 +1758,8 @@ SELECT (N "puoli") IF (NEGATE 0 WORD LINK -1 (N Gen)) ;
 
 # If these rules are too destructive (originally intended for Adp and Po possessive marking), use the commented-out ones.
 
-# REMOVE (Pl3) IF (0 (Sg3)) (0 WORD LINK *-1C THIRD_PERSON_SG BARRIER THIRD_PERSON_SG) ;
-# REMOVE (Sg3) IF (0 (Pl3)) (0 WORD LINK *-1C THIRD_PERSON_PL BARRIER THIRD_PERSON_PL) ;
+# REMOVE (Pl3) IF (0 (Sg3)) (*-1C THIRD_PERSON_SG BARRIER THIRD_PERSON_SG) ;
+# REMOVE (Sg3) IF (0 (Pl3)) (*-1C THIRD_PERSON_PL BARRIER THIRD_PERSON_PL) ;
 
 REMOVE (PxPl3) IF (-1 (Pron Sg)) ;
 REMOVE (PxSg3) IF (-1 (Pron Pl)) ;
@@ -1789,13 +1790,13 @@ REMOVE (PxSg3) IF (*-1 (Pl @SUBJ→)) ;
     # *minä kerroin heille ongelmistaan
     
 
-# REMOVE (Po Pl3) IF (0 WORD LINK *-1 THIRD_PERSON_SG BARRIER THIRD_PERSON_SG) ;
-# REMOVE (Adv Pl3) IF (0 WORD LINK *-1 THIRD_PERSON_SG BARRIER THIRD_PERSON_SG) ;
+# REMOVE (Po Pl3) IF (*-1 THIRD_PERSON_SG BARRIER THIRD_PERSON_SG) ;
+# REMOVE (Adv Pl3) IF (*-1 THIRD_PERSON_SG BARRIER THIRD_PERSON_SG) ;
 
-# REMOVE (Po Sg3) IF (0 WORD LINK *-1 THIRD_PERSON_PL BARRIER THIRD_PERSON_PL) ;
-# REMOVE (Adv Sg3) IF (0 WORD LINK *-1 THIRD_PERSON_PL BARRIER THIRD_PERSON_PL) ;
+# REMOVE (Po Sg3) IF (*-1 THIRD_PERSON_PL BARRIER THIRD_PERSON_PL) ;
+# REMOVE (Adv Sg3) IF (*-1 THIRD_PERSON_PL BARRIER THIRD_PERSON_PL) ;
 
-SELECT (N Gen) IF (0 (N Nom)) (0 WORD LINK *-1 Nom BARRIER (CLB)) (0 WORD LINK *-1 V BARRIER (CLB));
+SELECT (N Gen) IF (0 (N Nom)) (*-1 Nom BARRIER (CLB)) (*-1 V BARRIER (CLB));
 
 
 # SELECT Pr IF (1 Par) ;
@@ -1812,9 +1813,13 @@ SELECT Adv (1 ETTA) ;
 SELECT Adv (1 Punct) (2 ETTA) ; 
 
 # Assuming that all prepositions are now tagged as such in omorfi -- Ryan
-# SELECT Adp ((1 Par) or (-1 (Par or Gen)) or (2 Par))
-SELECT Pr ((1 Par) or (-1 (Par or Gen)) or (2 Par))
-
+# SELECT Adp ((1 Par) or (-1 (Par or Gen)) or (2 Par)) # --ryan #
+# SELECT Pr ((1 Par) OR (-1 (Par OR Gen)) OR (2 Par)) ;# --trond #
+# TT: This rule was formally flawed, but it is unclear to me what it is 
+#     supposed to do. I thus comment it out.
+#     I would have said something along the lines of
+# SELECT Pr if (0 Partitive-prepositions)(*1 Par BARRIER NPNH) ;
+# but such a rule might already exist.
 
 # risky; lumi pyryttää nurkissa -> removing "lative"
 # REMOVE InfV IF (@SUBJ)
@@ -1966,10 +1971,10 @@ SELECT (AgPcp Par) IF (1C Par) (-1C Gen) (-1 N)
 
 SELECT ConNeg (-1 NEGV) (NOT 0 NEG-AMBIGUOUS) (NOT 1 Neg) (NOT 1 Prs) (0 Prs/Prt)
 
-SELECT ConNeg (0 WORD LINK *-1 NEGV BARRIER V) (NOT 0 NEG-AMBIGUOUS) (NOT 1 Neg) (NOT 1 Prs) (0 Prs/Prt) ;
+SELECT ConNeg (*-1 NEGV BARRIER V) (NOT 0 NEG-AMBIGUOUS) (NOT 1 Neg) (NOT 1 Prs) (0 Prs/Prt OR NonPast) ;
     # Enkä minä koskaan enää tuhoa kaikkea, mikä elää, niinkuin nyt olen tehnyt.
     
-SELECT (Pron Pers) (0 WORD LINK -1 NEGV) (0 WORD LINK *1 ConNeg BARRIER (ConNeg)) (NEGATE 0 WORD LINK 1 (N Ess));
+SELECT (Pron Pers) (-1 NEGV) (*1 ConNeg BARRIER (ConNeg)) (NEGATE 0 WORD LINK 1 (N Ess));
     # Enkä minä koskaan enää tuhoa kaikkea, mikä elää, niinkuin nyt olen tehnyt.
 
   # EI HALUTA/=!# EIKä HEITä LöYDY
@@ -2097,11 +2102,11 @@ REMOVE (Imprt) (*1C MAINV LINK NOT *-1 CLB?) (NOT 1 CLB?) (NOT 1 VFIN)
   # UP FOR MORPHOLOGY! RIGHT SIDE.
 
 SELECT (V Sg3) (NOT *-1C VFIN) (NOT *1C VFIN) (*-1 Nom LINK 0 Sg)
-SELECT (N Sg) IF (0 V) (0 WORD LINK 1* (V Sg3) BARRIER (CLB)) (NEGATE 0 WORD LINK *-1 (N Nom) BARRIER (CLB)) ;
+SELECT (N Sg) IF (0 V) (1* (V Sg3) BARRIER (CLB)) (NEGATE 0 WORD LINK *-1 (N Nom) BARRIER (CLB)) ;
 
-SELECT (V Sg3) IF (0 N) (0 WORD LINK *-1 THIRD_PERSON_SG/Noun BARRIER (CLB)) ;
+SELECT (V Sg3) IF (0 N) (*-1 THIRD_PERSON_SG/Noun BARRIER (CLB)) ;
 
-SELECT (V Pl3) IF (0 N) (0 WORD LINK *-1 THIRD_PERSON_PL/Noun BARRIER (CLB)) ;
+SELECT (V Pl3) IF (0 N) (*-1 THIRD_PERSON_PL/Noun BARRIER (CLB)) ;
 
     # Tuli raivosi alueella, jossa... 
     # Problem: Mikko laski luotansa kyyhkysen nähdäksensä.
@@ -2316,7 +2321,7 @@ SELECT (REF) (-1C <REF>) (1 Gen) (1 <POSS>) #PELäTääN SAANEEN SURMANSA
 SELECT (A Par "oma") (NOT -1 Nom)
 SELECT (Sg "oma") (-1 (Pron Sg)) ;
 SELECT (Pl "oma") (-1 (Pron Pl)) ;
-SELECT (Gen "oma") (NOT 1 WORD) (0 WORD LINK *-1 REALCOPULAS) (0C Nom) ;
+SELECT (Gen "oma") (NOT 1 WORD) (*-1 REALCOPULAS) (0C Nom) ;
 
     # ITSE
     # ----
@@ -2467,7 +2472,7 @@ SELECT (N "lohko") (NOT 1 DUMMY)
 SELECT (PERS Pron Sg Par "hän") (*-1 NEGV LINK NOT *1 CLB?)
 SELECT (PERS Pron Sg Par "hän") (*1 NEGV)
 
-SELECT (V) IF (0 N) (0 V) (0 WORD LINK *1 (N Sg Nom) BARRIER (CLB)) (NOT -1 (CLB)); 
+SELECT (V) IF (0 N) (0 V) (*1 (N Sg Nom) BARRIER (CLB)) (NOT -1 (CLB)); 
 # Ja tuli ehtoo, ja tuli aamu.
 # ... Ja tuli tuli? 
 
@@ -2527,8 +2532,8 @@ SELECT (Inf3 Ade) (0 Ade)
 #(@w REMOVE (A Pos Sg Par) (0 N)
 REMOVE (A Pos All) (0 A)
 SELECT (Pron "itse") (NOT 1 DUMMY)  # **tankerous
-SELECT (Adv "näin") (NOT 1 DUMMY) (NOT -1 (Pron Pers)) (0 WORD LINK *1 V BARRIER (CLB)) ;
-SELECT (Adv "näin") (NOT 1 DUMMY) (NOT -1 (Pron Pers)) (0 WORD LINK *-1 V BARRIER (CLB)) ;
+SELECT (Adv "näin") (NOT 1 DUMMY) (NOT -1 (Pron Pers)) (*1 V BARRIER (CLB)) ;
+SELECT (Adv "näin") (NOT 1 DUMMY) (NOT -1 (Pron Pers)) (*-1 V BARRIER (CLB)) ;
 SELECT (Adv "osaksi") (NOT 1 Par) (NOT -1 OTTAA-2) (NOT -2 OTTAA-2)# bad
 REMOVE (Adv "huomaan") (NOT 1 DUMMY)
 REMOVE (V Prt ActAct) (0 Prs)  # voimme, voitte# pyrimme# **tankerous
@@ -2558,9 +2563,10 @@ SELECT (Adv) (0 PALJON) (NOT 1 CMP-ENNEN) (NOT 2 JALKEEN)  #cf.above paljon-rule
 SELECT (Prs/Imprt Act Neg) (-1C NEGV)# emme tunne
 
 REMOVE (Imprt Sg2) (NOT -1 BOS) (NOT -2 BOS) (NOT -1 C) (NOT -2 C) (-1 WORD) ;
-SELECT (Imprt Sg2) (NEGATE -1 WORD) (0 WORD LINK *1 (N Nom) BARRIER N) ;
+SELECT (Imprt Sg2) (NEGATE -1 WORD) (*1 (N Nom) BARRIER N) ;
     # Heitä mulle tuo kirja!
-SELECT (Imprt Sg2) (0 ConNeg) (NEGATE 0 WORD LINK *-1 Neg BARRIER V) (NEGATE 0 WORD LINK *1 Neg BARRIER V) ;
+SELECT (Imprt Sg2) (0 ConNeg) (NOT 0* Neg BARRIER V);
+#SELECT (Imprt Sg2) (0 ConNeg) (NEGATE 0 WORD LINK *-1 Neg BARRIER V) (NEGATE 0 WORD LINK *1 Neg BARRIER V) ;
     # Laula minulle! 
 
 SELECT (PP "ennen") (1 KELLO) (2 Par)
@@ -2657,8 +2663,8 @@ MAP (@CNP) TARGET ("ja" CC) ;
 SET NAttrs = PCP OR (A Pos) OR Pron OR (Num Ord) OR (N Gen) or (Num Card) OR UNDECL_ADJ ; 
 
 
-# MAP (@→N) TARGET (A Pos) IF (0 WORD LINK *1 N BARRIER N) (0 WORD LINK *1 N BARRIER (CLB));
-# MAP (@→N) TARGET (Pron) IF (0 WORD LINK *1 N BARRIER N) (0 WORD LINK *1 N BARRIER (CLB));
+# MAP (@→N) TARGET (A Pos) IF (*1 N BARRIER N) (*1 N BARRIER (CLB));
+# MAP (@→N) TARGET (Pron) IF (*1 N BARRIER N) (*1 N BARRIER (CLB));
 
 MAP (@→N) TARGET (Pron Indef "kaikki") IF (2 (N)) (2 $$ALLCASES) (1 (Pron Pers Gen)) ;
     # Kaikki sinun ystävät ovat täällä.
@@ -2677,7 +2683,7 @@ MAP (@→N) TARGET (Pron Dem) IF (1 (N)) (1 $$ALLCASES) (0 $$ALLCASES) ;
 MAP (@→N) TARGET (Pron Gen) IF (1 (N)) ;
 MAP (@→N) TARGET (Pron Gen) IF (2 (N)) (2 $$ALLCASES) (1 $$ALLCASES);
 
-MAP (@→N) TARGET NAttrs IF (0 WORD LINK *1 N BARRIER NP-BOUNDARY) (NEGATE 0 (V PrfPrc) LINK -1 (V "olla")) (0 $$ALLCASES LINK *1 $$ALLCASES BARRIER (CLB)) ; # (0 WORD LINK *1 N BARRIER (CLB))
+MAP (@→N) TARGET NAttrs IF (*1 N BARRIER NP-BOUNDARY) (NEGATE 0 (V PrfPrc) LINK -1 (V "olla")) (0 $$ALLCASES LINK *1 $$ALLCASES BARRIER (CLB)) ; # (*1 N BARRIER (CLB))
 
     # TODO: Need to include conjunctions
     # Saapuneet ja käsitellyt asiat vuonna 2009.
@@ -2689,7 +2695,7 @@ MAP (@→N) TARGET NAttrs IF (0 WORD LINK *1 N BARRIER NP-BOUNDARY) (NEGATE 0 (V
     # Fail: Minä@→N tulen kello kolme
     # Do not mark on Hän ei ole lähettänyt kirjettä.
 
-MAP (@→N) TARGET PCPs IF (0 WORD LINK *1 N BARRIER NP-BOUNDARY) ;
+MAP (@→N) TARGET PCPs IF (*1 N BARRIER NP-BOUNDARY) ;
 
 MAP (@→N) TARGET (N Nom) IF (1 (N)) ;
     # Fail: Ja Herra Talonmies tulee myös.
@@ -2708,16 +2714,16 @@ MAP (@N←) TARGET ("itse") IF (-1 Pron) (0 $$ALLCASES) (-1 $$ALLCASES) ;
 
 # Subj to the left of verb
 # MAP (@SUBJ) Target Nom IF ((*1 (V Act)) OR (*-1 (V Act)))
-# MAP (@SUBJ) Target Nom (0 WORD LINK *1 (V Act))
+# MAP (@SUBJ) Target Nom (*1 (V Act))
 
 # Jukan isä ja äiti menivät kotiin koska heidän oli pakko ostaa auto.
 # Removed @NEC-SUBJ; two tags = bad
-MAP (@SUBJ→) TARGET Gen IF (0 WORD LINK *1 (@NES) BARRIER (CLB))
-MAP (@←OBJ) TARGET (N Nom) IF (0 WORD LINK *-1 (Gen)) (*-1 NES)
+MAP (@SUBJ→) TARGET Gen IF (*1 (@NES) BARRIER (CLB))
+MAP (@←OBJ) TARGET (N Nom) IF (*-1 (Gen)) (*-1 NES)
 
 # Me ostettiin kirja.
 MAP (@SUBJ→) TARGET ME (0 Pron LINK *1 (Pe4) BARRIER (CLB)) ;
-MAP (@←OBJ) TARGET (N Nom) IF (0 WORD LINK *-1 Pass) (*-1 Nom)
+MAP (@←OBJ) TARGET (N Nom) IF (*-1 Pass) (*-1 Nom)
     # Needs barriers
 
 MAP (@N→) TARGET (N Sg Nom) IF (1 PROP) ;
@@ -2732,8 +2738,8 @@ MAP (@N→) TARGET (Pron Dem) IF (1 (A Pos)) (2 (N));
 
 SET N_Pron_Nom = (N Nom) OR (Pron Nom) ;
 
-# MAP (@SUBJ→) TARGET Nom (0 WORD LINK *1 (Act) BARRIER (CLB))
-MAP (@SUBJ→) TARGET Ade IF (0 WORD LINK *1 AUXs BARRIER (CLB)) ;
+# MAP (@SUBJ→) TARGET Nom (*1 (Act) BARRIER (CLB))
+MAP (@SUBJ→) TARGET Ade IF (*1 AUXs BARRIER (CLB)) ;
     # Kaikki sinun ystävillä@SUBJ-> on kissoja.
 
 MAP (@SUBJ→) TARGET N_Pron_Nom IF (NEGATE *-1 VFIN BARRIER (CLB)) (*1 VFIN BARRIER S-BOUNDARY2 OR @SUBJ→) (NEGATE 0 ("kaikki") LINK *1 (N Nom) BARRIER V) (NEGATE 0 ("kaikki") LINK *1 (N Nom) BARRIER V) ;
@@ -2747,17 +2753,17 @@ MAP (@SUBJ→) TARGET N_Pron_Nom IF (*-1 CC BARRIER NPNH LINK -1 Nom) ;
 MAP (@SUBJ→) TARGET (Rel Nom) IF (*1 VFIN BARRIER S-BOUNDARY2) ;
 
 # Subject partitive mapping 
-MAP (@SUBJ→) TARGET (N Par) IF (NEGATE *-1 Nom BARRIER (CLB)) (NEGATE *1 Nom BARRIER (CLB)) (0 WORD LINK *1 REALCOPULAS BARRIER (CLB));
+MAP (@SUBJ→) TARGET (N Par) IF (NEGATE *-1 Nom BARRIER (CLB)) (NEGATE *1 Nom BARRIER (CLB)) (*1 REALCOPULAS BARRIER (CLB));
     
     # Mutta tällaisia tietosanakirjoja ei suomeksi ole.
     # Asukkaita Tromssassa on 60 000.
 
 
-MAP (@SUBJ→) TARGET (N Par) IF (NEGATE *-1 Nom BARRIER (CLB)) (NEGATE *1 Nom BARRIER (CLB)) (0 WORD LINK *-1 REALCOPULAS BARRIER (CLB)) ;
+MAP (@SUBJ→) TARGET (N Par) IF (NEGATE *-1 Nom BARRIER (CLB)) (NEGATE *1 Nom BARRIER (CLB)) (*-1 REALCOPULAS BARRIER (CLB)) ;
 
-MAP (@SUBJ→) TARGET (N Pl Par) IF (NOT -1 WORD) (0 WORD LINK *1 REALCOPULAS BARRIER (V)) (*1 (Num Card))  ;
+MAP (@SUBJ→) TARGET (N Pl Par) IF (NOT -1 WORD) (*1 REALCOPULAS BARRIER (V)) (*1 (Num Card))  ;
 
-# MAP (@SUBJ→) TARGET (N Par) IF (NEGATE *-1 Nom BARRIER (CLB)) (NEGATE *1 Nom BARRIER (CLB)) (0 WORD LINK *-1 REALCOPULAS BARRIER (CLB)) (NOT -1 WORD) (1 REALCOPULAS) (0 WORD LINK *1 (Num Card Nom)) ;
+# MAP (@SUBJ→) TARGET (N Par) IF (NEGATE *-1 Nom BARRIER (CLB)) (NEGATE *1 Nom BARRIER (CLB)) (*-1 REALCOPULAS BARRIER (CLB)) (NOT -1 WORD) (1 REALCOPULAS) (*1 (Num Card Nom)) ;
 
 # Necessitive subjects
 # --------------------
@@ -2778,15 +2784,15 @@ MAP (@SUBJ→) TARGET NECESSITIVE_SUBJS IF (1 NES) (2 (V Inf1)) ;
 
 
 # Siellä sataa lunta.
-MAP (@←SUBJ) TARGET Par (0 WORD LINK *-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) (NEGATE 0 WORD LINK *-1 Pr BARRIER Pr) (NEGATE 0 WORD LINK 1 Par) (0 WORD LINK *-1 PART-SUBJ) ;
+MAP (@←SUBJ) TARGET Par (*-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) (NEGATE 0 WORD LINK *-1 Pr BARRIER Pr) (NEGATE 0 WORD LINK 1 Par) (*-1 PART-SUBJ) ;
 
 # Ihmisiä tungeksi torilla. 
 
-MAP (@←OBJ) TARGET Gen IF (0 WORD LINK *-1 (Act) BARRIER (CLB)) (NEGATE 0 WORD LINK 1 (Gen)) (NEGATE 0 WORD LINK *1 @←OBJ BARRIER (CLB)) (NEGATE 0 WORD LINK *1 Par BARRIER (CLB)) (NEGATE 0 WORD LINK *-1 REALCOPULAS BARRIER (CLB)) (NEGATE 0 WORD LINK 1 Po) (NEGATE 0 WORD LINK *-1 Neg BARRIER V);
+MAP (@←OBJ) TARGET Gen IF (*-1 (Act) BARRIER (CLB)) (NEGATE 0 WORD LINK 1 (Gen)) (NEGATE 0 WORD LINK *1 @←OBJ BARRIER (CLB)) (NEGATE 0 WORD LINK *1 Par BARRIER (CLB)) (NEGATE 0 WORD LINK *-1 REALCOPULAS BARRIER (CLB)) (NEGATE 0 WORD LINK 1 Po) (NEGATE 0 WORD LINK *-1 Neg BARRIER V);
 
     # Hän käski minun tehdä sen.
 
-MAP (@←OBJ) TARGET Gen IF (0 WORD LINK -1 (Act)) (NEGATE 0 WORD LINK *1 Po BARRIER Po) (NEGATE 0 WORD LINK *-1 Neg BARRIER V) ;
+MAP (@←OBJ) TARGET Gen IF (-1 (Act)) (NEGATE 0 WORD LINK *1 Po BARRIER Po) (NEGATE 0 WORD LINK *-1 Neg BARRIER V) ;
 
     # Luin sen ennen uutisia.
     # Istuin pöydän alla. -- Do not mark @OBJ in this instance.
@@ -2794,7 +2800,7 @@ MAP (@←OBJ) TARGET Gen IF (0 WORD LINK -1 (Act)) (NEGATE 0 WORD LINK *1 Po BAR
     # Ettei minun äidin ystävä ole tullut.
 
 # Lounas syötiin
-MAP (@OBJ→) TARGET Nom (0 WORD LINK *1 (Pass)) (NOT 0 NES) ; 
+MAP (@OBJ→) TARGET Nom (*1 (Pass)) (NOT 0 NES) ; 
     # Needs barriers
     # Removed NES.
 
@@ -2803,20 +2809,20 @@ MAP (@←SPRED) TARGET ("pakko") IF (-1 REAL_AUX) ;
 
 
 # Syötiin lounas
-MAP (@←OBJ) TARGET Nom IF (0 WORD LINK *-1 Pass)
-MAP (@←OBJ) TARGET Par IF (0 WORD LINK *-1 Neg) #) (NOT 0 WORD LINK *-1 (Punct) *-2 (Neg))
+MAP (@←OBJ) TARGET Nom IF (*-1 Pass)
+MAP (@←OBJ) TARGET Par IF (*-1 Neg) #) (NOT 0 WORD LINK *-1 (Punct) *-2 (Neg))
     # Needs barriers 
     
 
 # Hän katsoi sitä ja otti sen pois. 
 
-# MAP (@←OBJ) TARGET Par IF (NEGATE 0 WORD LINK *-1 PP BARRIER PP) (NEGATE 0 WORD LINK 1 Par) (0 WORD LINK *-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) ;
+# MAP (@←OBJ) TARGET Par IF (NEGATE 0 WORD LINK *-1 PP BARRIER PP) (NEGATE 0 WORD LINK 1 Par) (*-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) ;
 
-MAP (@←OBJ) TARGET OBJ-CASEs IF (NEGATE 0 WORD LINK *-1 PP BARRIER PP) (NEGATE 0 WORD LINK 1 Par) (0 WORD LINK *-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) (NOT 0 (Pron Nom));
+MAP (@←OBJ) TARGET OBJ-CASEs IF (NEGATE 0 WORD LINK *-1 PP BARRIER PP) (NEGATE 0 WORD LINK 1 Par) (*-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) (NOT 0 (Pron Nom));
 
 # Need to not map obj in this case, rather subject or @<SPRED.
 
-MAP (@←OBJ) TARGET Par IF (0 WORD LINK *-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) (NEGATE 0 WORD LINK *-1 Pr BARRIER Pr) (NEGATE 0 WORD LINK 1 Par) (NEGATE 0 WORD LINK *-1 PART-SUBJ) ;
+MAP (@←OBJ) TARGET Par IF (*-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) (NEGATE 0 WORD LINK *-1 Pr BARRIER Pr) (NEGATE 0 WORD LINK 1 Par) (NEGATE 0 WORD LINK *-1 PART-SUBJ) ;
 
 
     # Minä aion lukea kirjaa ennen näitä erikoisen tyhmiä uutisia.
@@ -2826,10 +2832,10 @@ MAP (@←OBJ) TARGET Par IF (0 WORD LINK *-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) 
 # OBJ marking
 
 # Hän huomasi minut.
-MAP (@←OBJ) TARGET Acc IF (0 WORD LINK *-1 V BARRIER S-BOUNDARY2) ;
+MAP (@←OBJ) TARGET Acc IF (*-1 V BARRIER S-BOUNDARY2) ;
 
 # Minut huomattiin.
-MAP (@OBJ→) TARGET Acc IF (0 WORD LINK *1 V BARRIER S-BOUNDARY2) ;
+MAP (@OBJ→) TARGET Acc IF (*1 V BARRIER S-BOUNDARY2) ;
 
 # Possible object issues fixed by:
 #1. checking if there is anything that the Gen modifies to the right
@@ -2848,7 +2854,7 @@ LIST @→NUM = @→NUM ;
 LIST NUMS = "yksi" Num;
 
 # Simple for now... 
-MAP (@NUM←) TARGET N IF (0 WORD LINK -1 NUMS) ;
+MAP (@NUM←) TARGET N IF (-1 NUMS) ;
 MAP (@NUM←) TARGET N IF (-1 NUMS) ;
 
 
@@ -2869,15 +2875,15 @@ MAP (@+FAUXV) TARGET Inf3-VERB IF (*1 Inf3 BARRIER V) ;
 
 MAP (@+FMAINV) TARGET VFIN IF (0 AUX-OR-MAIN) (NEGATE *1 InfV BARRIER S-BOUNDARY2) ;
 
-MAP (@+FMAINV) TARGET PCP IF (0 WORD LINK *-1 REAL_AUX BARRIER (CLB)) ;
+MAP (@+FMAINV) TARGET PCP IF (*-1 REAL_AUX BARRIER (CLB)) ;
 
 
 MAP (@-FMAINV) TARGET InfV IF (0 InfV) ;
 MAP (@-FMAINV) TARGET VFIN IF (0 InfV) (NEGATE *1 PrfPrc OR (V Inf3) BARRIER SV-BOUNDARY) ;
 
 
-MAP (@-FAUXV) TARGET ConNeg (0 WORD LINK -1 Neg) ;
-MAP (@-FAUXV) TARGET ConNeg (0 WORD LINK -1 Neg LINK -1 Nom) ;  # (*1 (N Nom) BARRIER NPNH LINK *-1 Neg LINK -1 Nom) ; 
+MAP (@-FAUXV) TARGET ConNeg (-1 Neg) ;
+MAP (@-FAUXV) TARGET ConNeg (-1 Neg LINK -1 Nom) ;  # (*1 (N Nom) BARRIER NPNH LINK *-1 Neg LINK -1 Nom) ; 
 
 
 MAP (@+FAUXV) TARGET REAL_AUX IF (NOT 0 ConNeg) ;
@@ -2895,12 +2901,12 @@ MAP (@NES) TARGET NES IF (*-1 Gen BARRIER (CLB))
 # Predicates
 # ----------
 
-MAP (@←SPRED) TARGET (A Pos) IF (0 WORD LINK *-1 REALCOPULAS BARRIER (CLB)) ;
+MAP (@←SPRED) TARGET (A Pos) IF (*-1 REALCOPULAS BARRIER (CLB)) ;
 
-MAP (@SPRED) TARGET ("pakko") IF (0 WORD LINK *-1 REALCOPULAS BARRIER (CLB)) ;
+MAP (@SPRED) TARGET ("pakko") IF (*-1 REALCOPULAS BARRIER (CLB)) ;
     # pakko - @SPRED
 
-MAP (@←SPRED) TARGET (N Nom) IF (0 WORD LINK *-1 REALCOPULAS BARRIER (CLB)) ;
+MAP (@←SPRED) TARGET (N Nom) IF (*-1 REALCOPULAS BARRIER (CLB)) ;
 
     # TODO: Spred on wrong thing, obj assigment in weird places:
     # Onko mikään kansa kuullut Jumalan äänen puhuvan tulen keskeltä.
@@ -2924,11 +2930,11 @@ MAP (@ADVL) TARGET Adp+Poss ;
 
 MAP (@PCLE) TARGET Pcle ;
 
-MAP (@Num←) TARGET (N Sg Par) (0 WORD LINK -1 (Num Card)) ; # kaksi kirjaa
+MAP (@Num←) TARGET (N Sg Par) (-1 (Num Card)) ; # kaksi kirjaa
 
-MAP (@Num←) TARGET (N Sg Nom) (0 WORD LINK -1 (Num Card)) ; # yksi kirja
+MAP (@Num←) TARGET (N Sg Nom) (-1 (Num Card)) ; # yksi kirja
 
-SELECT (Num Card) (0 WORD LINK 1 (@Num←)) ; # make sure number is selected
+SELECT (Num Card) (1 (@Num←)) ; # make sure number is selected
 
 
 # Habitive mappings 
@@ -2971,8 +2977,8 @@ MAP (@→P) TARGET PRON_PO_CASE IF (1 Po) ;
     # Preposition Complements
     # -----------------------
 
-MAP (@←P) TARGET PRON_PR_CASE IF (0 WORD LINK *-1 Pr BARRIER Pr) ; 
-MAP (@←P) TARGET PRON_PR_CASE IF (0 WORD LINK *-1 Pr BARRIER Pr) ; 
+MAP (@←P) TARGET PRON_PR_CASE IF (*-1 Pr BARRIER Pr) ; 
+MAP (@←P) TARGET PRON_PR_CASE IF (*-1 Pr BARRIER Pr) ; 
 
 # Ennen näitä erikoisen tyhmiä uutisia.
 # ^----------------------------^
@@ -2987,22 +2993,22 @@ MAP (@←P) TARGET PRON_PR_CASE IF (0 WORD LINK *-1 Pr BARRIER Pr) ;
 # Existential Sentences
 # ---------------------
 # ***
-# REMOVE (V Inf1) IF (0 WORD LINK *-1 (@SUBJ→))
+# REMOVE (V Inf1) IF (*-1 (@SUBJ→))
 
 # Ihmisiä tungeksi kadulla.
 # This is not solved yet.
-MAP (@←ADVL @LOC) TARGET LOC-CASE (0 WORD LINK -1 (V Act Ind Prt Sg3))
-MAP (@SUBJ→) TARGET (Par) (0 WORD LINK 1 (V Sg3)) (0 WORD LINK *1 @←ADVL)
+MAP (@←ADVL @LOC) TARGET LOC-CASE (-1 (V Act Ind Prt Sg3))
+MAP (@SUBJ→) TARGET (Par) (1 (V Sg3)) (*1 @←ADVL)
 
 # Currently this is tied to a subject and adverbial
 # Ideally it should be more about nonagreeing subjects
 # Also @EXIST(ENTIAL) is arguably more semantic than anything.
-# MAP (@EXIST) TARGET (V Sg3) (0 WORD LINK *1 @←ADVL) (0 WORD LINK *-1 @SUBJ→)
+# MAP (@EXIST) TARGET (V Sg3) (*1 @←ADVL) (*-1 @SUBJ→)
 
 # It seems like it would be a good idea to mark whether the subject
 # is not agreeing with the verb for person or number to better target existentials
 
-# MAP (@NONAGR) TARGET (V Sg3) (0 WORD LINK *-1 (N Pl @SUBJ→))
+# MAP (@NONAGR) TARGET (V Sg3) (*-1 (N Pl @SUBJ→))
 # SYNTACTIC-CONSTRAINTS
 
 
