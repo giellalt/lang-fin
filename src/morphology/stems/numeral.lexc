@@ -1,0 +1,221 @@
+! Numerals have very special compounding and all so they are a mess.
+
+! TODO: unimpl.
+! [[2-9]*100|100]?[[[2-9]*10|10][1-9]?]|[[1-9][2.-10.]]?[1-9]]
+! [[kaksi-yhdeksän]?[sataa]|sata]
+! [?[kaksi-yhdeksän]?[kymmentä]?|[kymmenen]
+LEXICON NUMERAL
+@U.NUMGEN.CARD@@C.ALLOW@	Cardinals	;
+@U.NUMGEN.ORD@	Ordinals	;
+    misc_multiples  ;
+
+LEXICON Cardinals
+@D.MULTIPLIER@@P.MULTIPLIER.TRUE@@P.ALLOW.SGfNOM@	CardinalMultipliers	;
+@D.AGREE.SGfNOM@@D.MULTIPLIER.YKSI@@C.MULTIPLIER@	CardinalMultiplicants	;
+@D.MULTIPLIER@@P.NEED.REST@	ApproximativeMultipliers	;
+@R.AGREE.SGfNOM@@R.MULTIPLIER.TRUE@@C.MULTIPLIER@@P.ALLOW.SGfPAR@	CardinalMultiplicants	;
+@R.MULTIPLIER@@C.MULTIPLIER@	CardinalInverseMultiplicants	;
+
+LEXICON CardinalMultipliers
+@P.MULTIPLIER.YKSI@yksi+Num+Card:@P.MULTIPLIER.YKSI@y	kotus_31_NUMERAL/stemfiller	;
+kaksi+Num+Card:ka	kotus_31_NUMERAL/stemfiller	;
+kolme+Num+Card:kolme	kotus_8_NUMERAL/stemfiller	;
+neljä+Num+Card:nelj	kotus_10_NUMERAL/stemfiller	;
+viisi+Num+Card:vii	kotus_27_NUMERAL/stemfiller	;
+kuusi+Num+Card:kuu	kotus_27_NUMERAL/stemfiller	;
+seitsemän+Num+Card:seitsem	kotus_10n_NUMERAL/stemfiller	;
+seitsämän+Use/Sub+Num+Card:seitsäm	kotus_10n_NUMERAL/stemfiller	;
+kahdeksan+Num+Card:kahdeks	kotus_10n_NUMERAL/stemfiller	;
+
+yhdeksän+Num+Card:yhdeks	kotus_10n_NUMERAL/stemfiller	;
+pari+Num+Card:par kotus_5i_NUMERAL/stemfiller ;
+
+LEXICON ApproximativeMultipliers
+@P.AGREE.SGfPAR@yksisen+Num:yksisen{#}	CardinalMultiplicants	;
+@P.AGREE.SGfPAR@kaksisen+Num:kaksisen{#}	CardinalMultiplicants	;
+@P.AGREE.SGfPAR@yhtisen+Num:yhtisen{#}	CardinalMultiplicants	;
+@P.AGREE.SGfPAR@kahtisen+Num:kahtisen{#}	CardinalMultiplicants	;
+@P.AGREE.SGfPAR@kolmisen+Num:kolmisen{#}	CardinalMultiplicants	;
+@P.AGREE.SGfPAR@nelisen+Num:nelisen{#}	CardinalMultiplicants	;
+@P.AGREE.SGfPAR@viitisen+Num:viitisen{#}	CardinalMultiplicants	;
+@P.AGREE.SGfPAR@kuutisen+Num:kuutisen{#}	CardinalMultiplicants	;
+@P.AGREE.SGfPAR@seitsemisen+Num:seitsemisen{#}	CardinalMultiplicants	;
+@P.AGREE.SGfPAR@kahdeksisen+Num:kahdeksisen{#}	CardinalMultiplicants	;
+@P.AGREE.SGfPAR@yhdeksisen+Num:yhdeksisen{#}	CardinalMultiplicants	;
+
+LEXICON CardinalMultiplicants
+kymmenen+Num+Card:kymmen	kotus_32_NUMERAL/stemfiller	;
+sata+Num+Card:sa{t~~}{F}	kotus_9_NUMERAL/stemfiller	;
+tuhat+Num+Card:tuha	kotus_46_NUMERAL/stemfiller	;
+mi	ljoonat_ljardit	;
+bi	ljoonat_ljardit	;
+tri	ljoonat_ljardit	;
+kvadri	ljoonat_ljardit	;
+kvinti	ljoonat_ljardit	;
+seksti	ljoonat_ljardit	;
+okti	ljoonat_ljardit	;
+novi	ljoonat_ljardit	;
+undeki	ljoonat_ljardit	;
+duodeki	ljoonat_ljardit	;
+tredeki	ljoonat_ljardit	;
+kvattuordeki	ljoonat_ljardit	;
+kvindeki	ljoonat_ljardit	;
+sedeki	ljoonat_ljardit	;
+septendeki	ljoonat_ljardit	;
+oktodeki	ljoonat_ljardit	;
+novemdeki	ljoonat_ljardit	;
+vidingti	ljoonat_ljardit	;
+tridingti	ljoonat_ljardit	;
+senti	ljoonat_ljardit	;
+ki	ljoonat_ljardit	;
+pi	ljoonat_ljardit	;
+Googol+Num+Card:Googol	kotus_5_NUMERAL/stemfiller	;
+Googolplex+Num+Card:Googolplex	kotus_5_NUMERAL/stemfiller	;
+
+LEXICON CardinalInverseMultiplicants
+toista+Num:toista	Ennd	;
+kolmatta+Num:kolmatta	Ennd	;
+neljättä+Num:neljättä	Ennd	;
+kuudetta+Num:kuudetta	Ennd	;
+viidettä+Num:viidettä	Ennd	;
+seitsemättä+Num:seitsemättä	Ennd	;
+kahdeksatta+Num:kahdeksatta	Ennd	;
+yhdeksättä+Num:yhdeksättä	Ennd	;
+kymmenettä+Num:kymmenettä	Ennd	;
+toista+Num:toista	Ennd	;
+kolmatta+Num:kolmatta	Ennd	;
+neljättä+Num:neljättä	Ennd	;
+kuudetta+Num:kuudetta	Ennd	;
+viidettä+Num:viidettä	Ennd	;
+seitsemättä+Num:seitsemättä	Ennd	;
+kahdeksatta+Num:kahdeksatta	Ennd	;
+yhdeksättä+Num:yhdeksättä	Ennd	;
+kymmenettä+Num:kymmenettä	Ennd	;
+
+LEXICON ljoonat_ljardit
+ljoona+Num+Card:ljoon	kotus_10_NUMERAL/stemfiller	;
+ljardi+Num+Card:ljard	kotus_5i_NUMERAL/stemfiller	;
+
+LEXICON Ordinals
+@D.MULTIPLIER@@P.MULTIPLIER.TRUE@	OrdinalMultipliers	;
+@C.MULTIPLIER@	OrdinalMultiplicants	;
+@R.MULTIPLIER@@C.MULTIPLIER@	OrdinalInverseMultiplicants	;
+
+
+LEXICON OrdinalMultipliers
+ensimmäinen+Num+Ord:ensimmäi	kotus_38_NUMERAL/stemfiller	;
+yhdes+Num+Ord:yhde	kotus_45_NUMERAL/stemfiller	;
+toinen+Num+Ord:toi	kotus_38_NUMERAL/stemfiller	;
+kahdes+Num+Ord:kahde	kotus_45_NUMERAL/stemfiller	;
+kolmas+Num+Ord:kolma	kotus_45_NUMERAL/stemfiller	;
+neljäs+Num+Ord:neljä	kotus_45_NUMERAL/stemfiller	;
+viides+Num+Ord:viide	kotus_45_NUMERAL/stemfiller	;
+kuudes+Num+Ord:kuude	kotus_45_NUMERAL/stemfiller	;
+seitsemäs+Num+Ord:seitsemä	kotus_45_NUMERAL/stemfiller	;
+kahdeksas+Num+Ord:kahdeksa	kotus_45_NUMERAL/stemfiller	;
+yhdeksäs+Num+Ord:yhdeksä	kotus_45_NUMERAL/stemfiller	;
+
+LEXICON OrdinalMultiplicants
+kymmenes+Num+Ord:kymmene	kotus_45_NUMERAL/stemfiller	;
+sadas+Num+Ord:sada	kotus_45_NUMERAL/stemfiller	;
+tuhannes+Num+Ord:tuhanne	kotus_45_NUMERAL/stemfiller	;
+mi	ljoonannet_ljardinnet	;
+bi	ljoonannet_ljardinnet	;
+tri	ljoonannet_ljardinnet	;
+kvadri	ljoonannet_ljardinnet	;
+kvinti	ljoonannet_ljardinnet	;
+seksti	ljoonannet_ljardinnet	;
+okti	ljoonannet_ljardinnet	;
+novi	ljoonannet_ljardinnet	;
+undeki	ljoonannet_ljardinnet	;
+duodeki	ljoonannet_ljardinnet	;
+tredeki	ljoonannet_ljardinnet	;
+kvattuordeki	ljoonannet_ljardinnet	;
+kvindeki	ljoonannet_ljardinnet	;
+sedeki	ljoonannet_ljardinnet	;
+septendeki	ljoonannet_ljardinnet	;
+oktodeki	ljoonannet_ljardinnet	;
+novemdeki	ljoonannet_ljardinnet	;
+vidingti	ljoonannet_ljardinnet	;
+tridingti	ljoonannet_ljardinnet	;
+senti	ljoonannet_ljardinnet	;
+ki	ljoonannet_ljardinnet	;
+pi	ljoonannet_ljardinnet	;
+
+LEXICON OrdinalInverseMultiplicants
+toista+Num:toista	Ennd	;
+kolmatta+Num:kolmatta	Ennd	;
+neljättä+Num:neljättä	Ennd	;
+kuudetta+Num:kuudetta	Ennd	;
+viidettä+Num:viidettä	Ennd	;
+seitsemättä+Num:seitsemättä	Ennd	;
+kahdeksatta+Num:kahdeksatta	Ennd	;
+yhdeksättä+Num:yhdeksättä	Ennd	;
+kymmenettä+Num:kymmenettä	Ennd	;
+toista+Num:toista	Ennd	;
+kolmatta+Num:kolmatta	Ennd	;
+neljättä+Num:neljättä	Ennd	;
+kuudetta+Num:kuudetta	Ennd	;
+viidettä+Num:viidettä	Ennd	;
+seitsemättä+Num:seitsemättä	Ennd	;
+kahdeksatta+Num:kahdeksatta	Ennd	;
+yhdeksättä+Num:yhdeksättä	Ennd	;
+kymmenettä+Num:kymmenettä	Ennd	;
+
+LEXICON ljoonannet_ljardinnet
+ljoona+Num+Ord:ljoona	kotus_45_NUMERAL/stemfiller	;
+ljardi+Num+Ord:ljardi	kotus_45_NUMERAL/stemfiller	;
+LEXICON misc_multiples
+puolikymmentä+N+Pl+Abe:puolitta{#}kymmenittä Possessive/Optional+Vn ;
+puolikymmentä+N+Pl+Abl:puolilta{#}kymmeniltä Possessive/Optional+Vn ;
+puolikymmentä+N+Pl+Ade:puolilla{#}kymmenillä Possessive/Optional+Vn ;
+puolikymmentä+N+Pl+All:puolille{#}kymmenille Possessive/Optional+Vn ;
+puolikymmentä+N+Pl+Ela:puolista{#}kymmenistä Possessive/Optional+Vn ;
+puolikymmentä+N+Pl+Ess:puolina{#}kymmeninä Possessive/Optional+Vn ;
+puolikymmentä+N+Pl+Gen:puolien{#}kymmenien   Clitic/Optional ;
+puolikymmentä+N+Pl+Gen:puolten{#}kymmenien   Clitic/Optional ;
+puolikymmentä+N+Pl+Ine:puolissa{#}kymmenissä Possessive/Optional+Vn ;
+puolikymmentä+N+Pl+Nom:puolet{#}kymmenet  Clitic/Optional ;
+puolikymmentä+N+Pl+Par:puolia{#}kymmeniä     Possessive/Optional ;
+puolikymmentä+N+Pl+Tra:puoliksi{#}kymmenikse Possessive/Obligatory ;
+puolikymmentä+N+Pl+Tra:puoliksi{#}kymmeniksi Clitic/Optional ;
+puolikymmentä+N+Sg+Abe:puoletta{#}kymmennettä Possessive/Optional+Vn ;
+puolikymmentä+N+Sg+Abl:puolelta{#}kymmenneltä Possessive/Optional+Vn ;
+puolikymmentä+N+Sg+Ade:puolella{#}kymmennellä Possessive/Optional+Vn ;
+puolikymmentä+N+Sg+All:puolelle{#}kymmennelle Possessive/Optional+Vn ;
+puolikymmentä+N+Sg+Ela:puolesta{#}kymmennestä Possessive/Optional+Vn ;
+puolikymmentä+N+Sg+Ess:puolena{#}kymmennenä   Possessive/Optional+Vn ;
+puolikymmentä+N+Sg+Gen:puolen{#}kymmennen Clitic/Optional ;
+puolikymmentä+N+Sg+Ine:puolessa{#}kymmennessä Possessive/Optional+Vn ;
+puolikymmentä+N+Sg+Nom:puoli{#}kymmentä Clitic/Optional ;
+puolikymmentä+N+Sg+Nom:puoli{#}kymmentä Possessive/Optional ;
+puolikymmentä+N+Sg+Par:puolta{#}kymmentä    Possessive/Optional ;
+puolikymmentä+N+Sg+Tra:puoliksi{#}kymmennekse Possessive/Obligatory ;
+puolikymmentä+N+Sg+Tra:puoliksi{#}kymmenneksi Clitic/Optional ;
+puolisataa+N+Pl+Abe:puolitta{#}sadoitta Possessive/Optional+Vn ;
+puolisataa+N+Pl+Abl:puolilta{#}sadoilta Possessive/Optional+Vn ;
+puolisataa+N+Pl+Ade:puolilla{#}sadoilla Possessive/Optional+Vn ;
+puolisataa+N+Pl+All:puolille{#}sadoille Possessive/Optional+Vn ;
+puolisataa+N+Pl+Ela:puolista{#}sadoista Possessive/Optional+Vn ;
+puolisataa+N+Pl+Ess:puolina{#}satoina Possessive/Optional+Vn ;
+puolisataa+N+Pl+Gen:puolien{#}satojen   Clitic/Optional ;
+puolisataa+N+Pl+Gen:puolten{#}satojen   Clitic/Optional ;
+puolisataa+N+Pl+Ine:puolissa{#}sadoissa Possessive/Optional+Vn ;
+puolisataa+N+Pl+Nom:puolet{#}sadat Clitic/Optional ;
+puolisataa+N+Pl+Par:puolia{#}satoja    Possessive/Optional ;
+puolisataa+N+Pl+Tra:puoliksi{#}sadoikse Possessive/Obligatory ;
+puolisataa+N+Pl+Tra:puoliksi{#}sadoiksi Clitic/Optional ;
+puolisataa+N+Sg+Abe:puoletta{#}sadatta Possessive/Optional+Vn ;
+puolisataa+N+Sg+Abl:puolelta{#}sadalta Possessive/Optional+Vn ;
+puolisataa+N+Sg+Ade:puolella{#}sadalla Possessive/Optional+Vn ;
+puolisataa+N+Sg+All:puolelle{#}sadalle Possessive/Optional+Vn ;
+puolisataa+N+Sg+Ela:puolesta{#}sadasta Possessive/Optional+Vn ;
+puolisataa+N+Sg+Ess:puolena{#}satana   Possessive/Optional+Vn ;
+puolisataa+N+Sg+Gen:puolen{#}sadan Clitic/Optional ;
+puolisataa+N+Sg+Ine:puolessa{#}sadassa Possessive/Optional+Vn ;
+puolisataa+N+Sg+Nom:puoli{#}sataa Clitic/Optional ;
+puolisataa+N+Sg+Nom:puoli{#}sataa Possessive/Optional ;
+puolisataa+N+Sg+Par:puolta{#}sataa  Possessive/Optional ;
+puolisataa+N+Sg+Tra:puoliksi{#}sadakse Possessive/Obligatory ;
+puolisataa+N+Sg+Tra:puoliksi{#}sadaksi Clitic/Optional ;
+

@@ -1,0 +1,387 @@
+! -*- mode: lexc; coding: utf-8 -*-
+
+Multichar_Symbols
+! The morphological division of Finnish words has three classes: verbal,
+! nominal and *others*. The verbs are identified by personal, temporal,
+! modal and infinite inflection. The nominals are identified by numeral and case
+! inflection. The others are, apart from being *the rest*, identified by
+! defective or missing inflection. 
+!
+! The syntactic and semantic subdivision is also used at with POS tags.
+! The nominals consist
+! of nouns (substantiivi), adjectives, pro words and numerals. The others are
+! subdivided into adpositions, adverbs and particles.
+! |VISK s.v. sanaluokka|, |VISK 438|.
++A +Verb +N +Adv
+      +Pron
++Pcle
++Interj +Num 
+
+! In nominal analyses, the proper nouns have additional subanalysis.
+! Proper nouns are usually written with initial capitals–or more recently,
+! totally arbitrary capitalisations, such as in brand names nVidia and ATi. 
+! Proper nouns do have full inflectional morphology exactly as other nouns, but
+! work slightly differently in derivation and compounding. Some capitalised
+! nouns may also lose capitalisation in derivation. |VISK 98|
++Prop
+
+! In pronominal analyses, the semantic classes pronouns can take are shown
+! in sub analyses. |VISK 101 104|.
++Dem +Pers +Interr
++Rel +Qu +Refl
++Recipr +Indef
+
+! In numeral analyses, there are multiple sub-analysis classes.
+! The numerals have semantic subcategories |VIS 770|. The classical ordinal
+! numbers  have been adjectivised in current descriptions |VISK 771|, the
+! ordinal interpretation is still spelled out in subcategories. The numbers are
+! often  written with digits or other specific notations.
++Card +Ord 
+ 
+! In particle analysis, the whole diversity of old and new classifications is
+! pushed in the sub-analyses.
+! The particles are subcategorised syntax-wise into conjunctions for all words,
+! that govern subclauses |VISK 812|. The conjunctions are further divided,
+! whether the subclause is coordinant or subordinant to the governing clause
+! and few other syntactic types |VISK 816|. N.B. that the division to
+! subordinating and coordinating conjucntions is motivated by other systems,
+! including legacy systems, whereas the grammar presents also different
+! categorisations for conjunctions (including naming subordination adverbials).
+
++CC +CS
+! In adposition anlayses, the syntactic tendencies are shown in sub-analyses;
+! whether they appear typically before or after their heads |VISK 687|.
++Po +Pr
+! The lexical items that appear as bound morphemes before head word are 
+! classified as prefixes |VISK 172|. Prefixes are rare and mostly of foreign
+! origin. The singular forms of plurale tantums are also potential prefixes.
++Pref
+! Suffixes are typically word forms or derivations that only appear as
+! bound morphs. Other than that Finnish does not really have proper suffixes.
+! This means that suffixed words are in effect compounds of where the last
+! word just doesn't appear as free morph.
++Suff
+! The shortened forms of words are marked as abbreviation. The abbreviations
+! that use full stop do not inflect. 
+
+! Acronyms are those shortened nominals, which are made from initials and
+! have inflection. The inflection of these acronyms is formed by adding colon
+! to the acronym, and adding most of the inflectional endings after the colon.
+! The acronyms may be inflected in three ways. The inflectional endings after
+! colon may show either the inflection of last letter of the acronym, or the
+! last word of  the acronym. |VISK 169|
+
+
+! Symbols are not part of linguistic data per se so we classify them according
+! to the needs of end user applicaitons
++Punct
+ 
+ 
+
+! The analyses of nominals have case inflection marked.
+! The nominals have case inflection |VISK 81| to mark syntactic roles
+! (nominative, partitive, accusative-genitive) and semantics
+! (others, partially even syntactic cases).
++Nom +Par            +Gen
++Ine +Ela +Ill +Ade
++Abl +All +Ess +Ins
++Abe +Tra +Cmt 
+! The analyses of a infinitive short form have lative reflecting the origins
+! of the form |VISK 120|
++Lat
+! The analyses of certain nominals give explicit analysis for accusative case.
+! The accusative case has distinctive marker in few pronouns and these are only
+! cases that are analysed as accusatives. |VISK 81|
++Acc
+! The analyses of some adverbs track the historical cases.
+! The adverbs are based on marginal and extinct cases, which are also shown
+! in the full analyses. |VISK 371 385|
++Ptl +Distr +Tempr
+
+
+! The analyses of nominals show the inflection in number. Nominals inflect in
+! number, to mark plurality of the word. The number for nouns is either singular
+! or plural. |VISK 79|
++Sg +Pl
+
+! The analyses of nominals include possessive if present.
+! Posessive ending indicates ownership. The possessive can take six possible
+! values from singular and plural, first, second and third person references,
+! where third person form is always ambiguous over plurality. |VISK 95|
++PxSg1 +PxSg2 +PxSg3 +PxPl1 +PxPl2 +PxPl3 +Px3
+
+! In compound analyses, the derived compound form that is not a free morph
+! is marked with special analysis.
+! Some words have forms only appearing in compounds |VISK 406|.
++Der/s 
+! In compound analyses, the omission of compound part in coordination is 
+! marked with special analysis. On surface level the omission is always
+! indicated by a hyphen. |VISK 437|
+#
+
+! Finite verb form analyses have a reading for tense. The tense has two values.
+! For moods other than indicative the tense is not distinctive in surface form,
+! and therefore not marked in the analyses.
+!
+! The morphologically distinct forms in Finnish are only past and non-past
+! tenses, while other are created syntactically and not marked in omorfi level. 
+! |VISK 111 112|
++NonPast +Past
+
+! Finite verb form analyses have a reading for mood. Mood has four central
+! readings and few archaic and marginal. The mood is marked in analyses for
+! all finite forms, even the unmakred indicative. |VISK 115 118|
++Ind +Cond +Pot +Imprt
++Optat +Eventv
+
+! Finite verb form analyses have a reading for person. Personal ending of verb
+! defines the actors.  The person analysis has seven possible values,
+! six for the singular and plural groups of first, second and third person
+! forms, and one specifically for passive. The passive personal form is encoded 
+! as fourth person passive, which had been the common practice in past systems.
+! |VISK 106 107|
++Sg1 +Sg2 +Sg3 +Pl3 +Pl2 +Pl1
+
+
+! The analyses of verb for the forms that require negation verb have a special
+! analysis for it.
++ConNeg 
+! The suitable negation verbs have sub-analysis that can be matched to negated
+! forms on syntactic level.
++Neg
+
+! All verb analyses contain voice marking. For finite verb forms active voice
+! is tied to personal forms and passive voice to non-personal verb endings.
+! The voice is also marked in the infinite verb forms. |VISK 110|
++Act +Pss
+
+! Infinitive verb forms have infinitive or nominal derivation analyses.
+! In traditional grammars the infinitive forms were called I, II, III, IV and V
+! infinitive, the modern grammar replaces the first three with A, E and MA
+! respectively. The IV infinitive, which has *minen* suffix marker, has been
+! re-analysed as derivational and this is reflected in |omorfi|. The V
+! infinitive is also assumed to be mainly derivational, but included here for
+! reference. |VISK 120 121|
+!
+! The infinitives have limited nominal inflection. 
++InfA +InfE +InfMa +Der/minen +Der/maisilla
+
+! Participial verb forms have participle readings. There are 4 participle forms.
+! Like infinitives, participles in traditional grammars were named I and II
+! where NUT and VA are used in modern grammars.  The agent and negation
+! participle have sometimes been considered outside regular
+! inflection, but in modern Finnish grammars are alongside other participles and
+! so they are included in inflection in omorfi as well. In some grammars the NUT
+! and VA participles have been called past and present participles respectively,
+! drawing parallels from other languages, but these names are more misleading
+! and should usually be avoided. |VISK 122|
++PrfPrc +AgentPrc +PrsPrc +NegPrc
+
+! Adjective analyses are marked for comparation. Comparison has three levels
+! marked by ``CMP`` tag. In modern grammar comparison is under derivation
+! instead of regular inflection, which also makes sense for |omorfi|, since
+! each form of comparison has full set of nominal inflection. The comparative
+! suffixes precede the nominal inflection. |VISK 300|
+ +Comp +Sup
+
+! All word forms can have clitics which are analysed by their orthography.
+! Clitics are suffixes which can attach almost anywhere in the ends of words,
+! both verb forms and nominals. They also attach on end of other clitics,
+! theoretically infinite chains. In practice it is usual to see at most three in
+! one word form. Two clitics have limited use: *-s* only appears in few verb
+! forms and combined to other clitics and *-kA* only appears with few adverbs
+! and negation verb. |VISK 126 131|
++han +kaan +kin +ko +pa
++s +ka
+
+
+! In omorfi main analyses the derivations are marked as a form of their
+! original root word form. Derivation forming is experimental feature and not
+! present in all versions and applications using omorfi. The derived forms
+! should be considered guesses at best.
++Der/sti +Der/ja +Der/inen +Der/lainen +Der/tar
++Der/llinen +Der/ton +Der/tse +Der/tse +Der/vs +Der/u
++Der/ttain
++Der/ttaa +Der/tattaa +Der/tatuttaa
++Der/uus
+
+! The analyses of some words and word-forms indicate limitedness of usage.
+! This includes common mispellings, archaic words and forms
+! and otherwise rare words and forms.
++Use/Sub +Use/Marg
++Use/Marg
+
+! The informal language use contains different Finnish than the literary
+! standard, this is marked as standard dialect: common features include
+! dropping final vowels, dropping final i components of unstressed diphtongs,
+! few other shortenings.
+! Other dialects are also sometimes written;
+! the geographical division has three levels:
+! East versus West,
+! East containing Savo and South-East (North?)
+! West containing North, perä, keski and eteläpohjalaiset, southwest and Häme
+! The third level dialect division is traditionally by town borders, be
+! cautious when adding these though.
++Dial
++Dial/East +Dial/West +Dial/Standard
++Dial/Southwest +Dial/Häme +Dial/Eteläpohjalaiset +Dial/Keskipohjalaiset
++Dial/Peräpohjalaiset +Dial/North +Dial/Savo +Dial/Southeast
+
+
+! Some analysis include indication that word does not have a dictionary based
+! root form, but contains a root that is generated morphologically. The
+! guess analysis tells the system that created the new root form. 
+! Currently two processes produce new base forms, compounding and derivation. 
++Cmp 
+
+
+! The omorfi analyses mark several boundaries. The most prominent is the
+! lexical item boundary at beginning and end of each analysis. Internally the
+! word boundaries that are not lexical item boundaries are also marked. 
+
+! The cases where the morphological analyser can strongly suggest existence of
+! clause, sentence, or even paragraph boundaries can be marked with boundary
+! analysis structures on supported backends.
+ 
+  
+
+! The analyses of nouns include the allomorphic selection where applicable.
+! In omorfi tagset this can be used to create unambiguous analysis strings.
+      
+     
+    
+
+! The application specific filters can be added to analysis level. For example
+! hfst-proc does not support space characters as analysable strings.
+
+
+! The different morphemic boundaries can be marked inside lemma explicitly
+! for the applications that need these. Since these symbol sequences appear
+! in middle of LEMMA= feature, they use terse notation.
+ 
+
+! Diacritics and triggers are written in uppercase enclosed in curly brackets.
+! These are used in the morphophonological rule
+! descriptions; they are diacritical in sense of twol Diacritics; their surface
+! form is always epsilon. Many of these are temporary hacks to implement very
+! specific modifications. The present diacritic may control the
+! existence of lengthening stem in 3rd singular forms. The comparative
+! diacritic may govern the a:e variation.
+{present} {comparative}
+! The left arrow diacritics control local phonological variation; e:i
+! variation in context of ja derivation, the n deletion with possessives,
+! the t deletion in _ and the i deletion in _
+{←e~i} {←n~} {←t~} {←i~}
+! The PLT and SGT diacritics are used to finetune singular and plural forms
+! of plurale tantum words and similar, semantically restricted form sets.
+{PLT+} {PLT?} {SGT?} {SGT+}
+! The AV diacritic govern the grade of nearest leftward gradatable consonant
+{AV+} {AV-}
+! The diacritics from A to T control the quality of consonant in weak grade.
+{A} {B} {C} {D} {E} {F} {G} {H} {I} {J} {K} {L} {M} {N} {O} {P}
+{S} {T}
+! The BVL diacritic will override all vowel lengthening contexts
+{BVL}
+
+! Morphophonemic symbols are lowercase sets of characters in curly brackets.
+! They are used in morphophonological rules as morphophonemes or archiphonemes.
+! Their surface form is one of the characters in the brackets, epsilon, or
+! something in the same equivalence class.
+!
+! The a:ä, o:ö and u:y pairs are governed by vowel harmony rules. The special
+! case of a:ä:e surfaces in comparative forms of disyllabic stems.
+{aä} {oö} {uy} {aäe}
+! K, p, t, g, b and d are governed by consonant gradation rules.
+{k~~} {p~~} {t~~} {g~~} {b~~} {d~~}
+! The n:l:r:s variation is based on simple regressive assimilation rule.
+{nlrs}
+! The a:e:i:o:u:y:ä:ö:0 is abstract morphophoneme for vowel lengthening and
+! copying rules
+{aeiouyäö}
+
+! Deleted phonemes are used to record information that goes against the form
+! of the word, such as broken vowel harmony, lengthening or copying in loan
+! words. Deleted phonemes are indicated by curly brackets and a caret. The
+! rules treat deleted phonemes as they were present but delete them afterwards
+! (like twol Diacritics).
+{^a} {^e} {^i} {^o} {^u} {^y} {^ä} {^ö}
+{^front} {^back}
+
+! The word and morpheme boundaries are used to limit the effective range of
+! far-reaching rules, such as vowel harmony. The boundaries are marked by
+! curly bracketed hashes or underscores.
+{##} {#} {-} {_}
+
+! Flag diacritics for long-distance morphotactics (FIXME: document these)
+! Simple compounding control
+@P.NEED.NOMINAL@ @U.NEED.NOMINAL@ @N.NEED.NOMINAL@
+@P.NEED.NUMERAL@ @U.NEED.NUMERAL@ @N.NEED.NUMERAL@ @R.NEED.NUMERAL@
+@P.NEED.REST@ @D.NEED@
+@D.NEED.REST@
+@R.NEED.NOMINAL@
+
+! (Mostly numeral) Compound agreement
+@U.AGREE.SGfNOM@ @U.AGREE.SGfPAR@ @U.AGREE.SGfGENACC@
+@U.AGREE.SGfINE@ @U.AGREE.SGfELA@ @U.AGREE.SGfILL@
+@U.AGREE.SGfADE@ @U.AGREE.SGfABL@ @U.AGREE.SGfALL@
+@U.AGREE.SGfESS@ @U.AGREE.SGfABE@ @U.AGREE.CMT@
+@U.AGREE.SGfTRA@
+@U.AGREE.PLfNOMACC@ @U.AGREE.PLfPAR@ @U.AGREE.PLfGEN@
+@U.AGREE.PLfINE@ @U.AGREE.PLfELA@ @U.AGREE.PLfILL@
+@U.AGREE.PLfADE@ @U.AGREE.PLfABL@ @U.AGREE.PLfALL@
+@U.AGREE.PLfESS@ @U.AGREE.PLfABE@ @U.AGREE.PLfINS@
+@U.AGREE.PLfTRA@
+@P.AGREE.SGfPAR@
+@R.AGREE.SGfNOM@ @D.AGREE.SGfNOM@
+@C.AGREE@
+
+! Multiplier multiplicant chain
+@P.MULTIPLIER.TRUE@ @P.MULTIPLIER.YKSI@
+@R.MULTIPLIER@ @D.MULTIPLIER@ @R.MULTIPLIER.TRUE@ @D.MULTIPLIER.YKSI@
+@C.MULTIPLIER@
+
+! Nominative multiplier partitive multiplicant chain
+@P.ALLOW.SGfNOM@ @P.ALLOW.SGfPAR@
+@R.ALLOW.SGfNOM@ @R.ALLOW.SGfPAR@
+@D.ALLOW.SGfPAR@
+@C.ALLOW@
+
+! Numeral compound genus agreement
+@U.NUMGEN.CARD@ @U.NUMGEN.ORD@
+
+! Plurale tantum requirement
+@U.PLURALE.TANTUM@ @P.PLURALE.TANTUM@ @D.PLURALE.TANTUM@
+@C.PLURALE@
+
+! lowercase proper nouns when derived
+@P.LOWERCASED.TURE@ @C.LOWERCASED@ @D.LOWERCASED@
+
+! control some derivatin stuff through shallow semantics
+@P.SEMANTIC.LOC@ @R.SEMANTIC.LOC@
+
+! long analyses for some specific tagging schemes
+@P.LONGxANALYSIS.TURE@ @D.LONGxANALYSIS@ @C.LONGxANALYSIS@
+
+! The root lexicon is unique entry point of this morphological description.
+! This lexicon must not be used elsewhere; it contains only the markers for
+! absolute start of the transducer.
+LEXICON Root
+:{##}	Main	;
+
+! The end lexicon, named Ennd due to a bug in certain implementations of lexc,
+! is unique end point in this morphological description. This lexicon must be
+! used as only end point; it contains the markers for absolute end of the
+! transducer, but also the flag value set validation.
+LEXICON Ennd
+@D.LONGxANALYSIS@@D.LOWERCASED@:@D.LONGxANALYSIS@@D.LOWERCASED@{##}	#	;
+
+
+LEXICON Interjection+Ennd
+    Ennd    ;
+
+LEXICON Conjunction+Ennd
+    Ennd    ;
+
+LEXICON Abbreviation+Ennd
+    Ennd    ;
+
