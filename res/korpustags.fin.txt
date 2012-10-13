@@ -57,13 +57,14 @@
 % Clitic: -|Qst|Foc
 % Function:
 
-% Verb: Verb
+% Verb: V
 % Type: -|ConNeg|Neg
 % Derivation: -|Der/ttaa
+% Diathesis: Act|Pass
 % Case: -|Ill|Ine|Ela|Ade|Abe
-% Infinite: Inf|PrfPrc|PrsPrc|AgentPrc
+% Infinite: InfA|InfE|InfMa|PrfPrc|PrsPrc|AgentPrc
 % Finite mood: Ind|Pot|Cond|Imprt|ImprtII
-% PersonNumber: Sg1|Sg2|Sg3|Du1|Du2|Du3|Pl1|Pl2|Pl3
+% PersonNumber: Sg1|Sg2|Sg3|Pl1|Pl2|Pl3
 % Clitic: -|Qst|Foc
 % Function:
 
@@ -113,7 +114,7 @@
 % Initial star = not yet found in smj file
 N	Noun
 A	Adjective
-Verb	Verb
+V	Verb
 Adv	Adverb
 Pron	Pronoun
 CC	Conjunction
@@ -196,14 +197,16 @@ Pl3	3. Person Plural
 ConNeg	Negative form of the verb
 #Person-Number
 
-Pss	Passive
+Pass	Passive
 Act	Active
 #Diathesis
 
 Neg	Negative verb
 #Polarity
 
-Inf	Infinitive
+InfA	First Infinitive
+InfE	Second Infinitive
+InfMa	Third Infinitive
 PrfPrc	Perfect Participle
 PrsPrc	Present Participle
 #Infinite
