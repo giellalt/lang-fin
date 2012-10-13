@@ -13,13 +13,13 @@ LEXICON exceptions
 @D.NEED@@P.NEED.REST@olla+V+Act+InfMa+Sg+Ins:@D.NEED@@P.NEED.REST@oleman	Possessive/Optional	;
 @D.NEED@@P.NEED.REST@olla+V+Act+Imprt+Sg2+s:@D.NEED@@P.NEED.REST@oles	Ennd	;
 @D.NEED@@P.NEED.REST@olla+V+Act+Imprt+Sg2:@D.NEED@@P.NEED.REST@ole	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Ind+NonPast+Sg1:@D.NEED@@P.NEED.REST@olen	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Ind+NonPast+Sg2:@D.NEED@@P.NEED.REST@olet	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Ind+NonPast+Sg3:@D.NEED@@P.NEED.REST@on	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Ind+NonPast+Pl1:@D.NEED@@P.NEED.REST@olemme	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Ind+NonPast+Pl2:@D.NEED@@P.NEED.REST@olette	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Ind+NonPast+Pl3:@D.NEED@@P.NEED.REST@ovat	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Ind+NonPast+ConNeg:@D.NEED@@P.NEED.REST@ole	Clitic/Optional	;
+@D.NEED@@P.NEED.REST@olla+V+Act+Ind+Prs+Sg1:@D.NEED@@P.NEED.REST@olen	Clitic/Optional	;
+@D.NEED@@P.NEED.REST@olla+V+Act+Ind+Prs+Sg2:@D.NEED@@P.NEED.REST@olet	Clitic/Optional	;
+@D.NEED@@P.NEED.REST@olla+V+Act+Ind+Prs+Sg3:@D.NEED@@P.NEED.REST@on	Clitic/Optional	;
+@D.NEED@@P.NEED.REST@olla+V+Act+Ind+Prs+Pl1:@D.NEED@@P.NEED.REST@olemme	Clitic/Optional	;
+@D.NEED@@P.NEED.REST@olla+V+Act+Ind+Prs+Pl2:@D.NEED@@P.NEED.REST@olette	Clitic/Optional	;
+@D.NEED@@P.NEED.REST@olla+V+Act+Ind+Prs+Pl3:@D.NEED@@P.NEED.REST@ovat	Clitic/Optional	;
+@D.NEED@@P.NEED.REST@olla+V+Ind+Prs+ConNeg:@D.NEED@@P.NEED.REST@ole	Clitic/Optional	;
 @D.NEED@@P.NEED.REST@olla+V+Act+Cond+Sg1+Use/Sub:@D.NEED@@P.NEED.REST@oisin	Clitic/Optional	;
 @D.NEED@@P.NEED.REST@olla+V+Act+Cond+Sg2+Use/Sub:@D.NEED@@P.NEED.REST@oisit	Clitic/Optional	;
 @D.NEED@@P.NEED.REST@olla+V+Act+Cond+Sg3+Use/Sub:@D.NEED@@P.NEED.REST@ois	Clitic/Optional	;
@@ -117,22 +117,22 @@ LEXICON exceptions
 @U.NEED.NOMINAL@sankari+N+Pl+Gen:@U.NEED.NOMINAL@sankarten  Compounding ;
 
 ! few verbs have shortened forms in standard spoken Finnish
-@D.NEED@@P.NEED.REST@mennä+V+Act+Ind+NonPast+Sg1+Dial:@D.NEED@@P.NEED.REST@meen   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@mennä+V+Act+Ind+NonPast+Sg2+Dial:@D.NEED@@P.NEED.REST@meet   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@mennä+V+Act+Ind+NonPast+Pl1+Dial:@D.NEED@@P.NEED.REST@meemme   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@mennä+V+Act+Ind+NonPast+Pl2+Dial:@D.NEED@@P.NEED.REST@meette   Clitic/Optional       ;
+@D.NEED@@P.NEED.REST@mennä+V+Act+Ind+Prs+Sg1+Dial:@D.NEED@@P.NEED.REST@meen   Clitic/Optional       ;
+@D.NEED@@P.NEED.REST@mennä+V+Act+Ind+Prs+Sg2+Dial:@D.NEED@@P.NEED.REST@meet   Clitic/Optional       ;
+@D.NEED@@P.NEED.REST@mennä+V+Act+Ind+Prs+Pl1+Dial:@D.NEED@@P.NEED.REST@meemme   Clitic/Optional       ;
+@D.NEED@@P.NEED.REST@mennä+V+Act+Ind+Prs+Pl2+Dial:@D.NEED@@P.NEED.REST@meette   Clitic/Optional       ;
 @D.NEED@@P.NEED.REST@mennä+V+Act+Imprt+Sg2+Dial:@D.NEED@@P.NEED.REST@mee   Clitic/Optional       ;
 @D.NEED@@P.NEED.REST@mennä+V+Act+Imprt+Sg2+Dial+s:@D.NEED@@P.NEED.REST@mees   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@tulla+V+Act+Ind+NonPast+Sg1+Dial:@D.NEED@@P.NEED.REST@tuun   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@tulla+V+Act+Ind+NonPast+Sg2+Dial:@D.NEED@@P.NEED.REST@tuut   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@tulla+V+Act+Ind+NonPast+Pl1+Dial:@D.NEED@@P.NEED.REST@tuumme   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@tulla+V+Act+Ind+NonPast+Pl2+Dial:@D.NEED@@P.NEED.REST@tuutte   Clitic/Optional       ;
+@D.NEED@@P.NEED.REST@tulla+V+Act+Ind+Prs+Sg1+Dial:@D.NEED@@P.NEED.REST@tuun   Clitic/Optional       ;
+@D.NEED@@P.NEED.REST@tulla+V+Act+Ind+Prs+Sg2+Dial:@D.NEED@@P.NEED.REST@tuut   Clitic/Optional       ;
+@D.NEED@@P.NEED.REST@tulla+V+Act+Ind+Prs+Pl1+Dial:@D.NEED@@P.NEED.REST@tuumme   Clitic/Optional       ;
+@D.NEED@@P.NEED.REST@tulla+V+Act+Ind+Prs+Pl2+Dial:@D.NEED@@P.NEED.REST@tuutte   Clitic/Optional       ;
 @D.NEED@@P.NEED.REST@tulla+V+Act+Imprt+Sg2+Dial:@D.NEED@@P.NEED.REST@tuu   Clitic/Optional       ;
 @D.NEED@@P.NEED.REST@tulla+V+Act+Imprt+Sg2+Dial+s:@D.NEED@@P.NEED.REST@tuus   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@olla+V+Act+Ind+NonPast+Sg1+Dial:@D.NEED@@P.NEED.REST@oon   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@olla+V+Act+Ind+NonPast+Sg2+Dial:@D.NEED@@P.NEED.REST@oot   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@olla+V+Act+Ind+NonPast+Pl1+Dial:@D.NEED@@P.NEED.REST@oomme   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@olla+V+Act+Ind+NonPast+Pl2+Dial:@D.NEED@@P.NEED.REST@ootte   Clitic/Optional       ;
+@D.NEED@@P.NEED.REST@olla+V+Act+Ind+Prs+Sg1+Dial:@D.NEED@@P.NEED.REST@oon   Clitic/Optional       ;
+@D.NEED@@P.NEED.REST@olla+V+Act+Ind+Prs+Sg2+Dial:@D.NEED@@P.NEED.REST@oot   Clitic/Optional       ;
+@D.NEED@@P.NEED.REST@olla+V+Act+Ind+Prs+Pl1+Dial:@D.NEED@@P.NEED.REST@oomme   Clitic/Optional       ;
+@D.NEED@@P.NEED.REST@olla+V+Act+Ind+Prs+Pl2+Dial:@D.NEED@@P.NEED.REST@ootte   Clitic/Optional       ;
 @D.NEED@@P.NEED.REST@olla+V+Act+Imprt+Sg2+Dial:@D.NEED@@P.NEED.REST@oo   Clitic/Optional       ;
 @D.NEED@@P.NEED.REST@olla+V+Act+Imprt+Sg2+Dial+s:@D.NEED@@P.NEED.REST@oos   Clitic/Optional       ;
 
