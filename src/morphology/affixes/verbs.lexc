@@ -72,19 +72,19 @@ LEXICON VerbStem/Conditional
 @D.NEED@@P.NEED.REST@+Cond+ConNeg:@D.NEED@@P.NEED.REST@i{AV+}si	Clitic/Optional		;
 
 LEXICON VerbStem/Passive
-@D.NEED@@P.NEED.REST@+Pss+Cond:@D.NEED@@P.NEED.REST@{AV-}t{aä}isiin	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@+Pss+Cond+ConNeg:@D.NEED@@P.NEED.REST@{AV-}t{aä}isi	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@+Pss+Cond+Use/Sub+ConNeg:@D.NEED@@P.NEED.REST@{AV-}t{aä}is	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@+Pss+Imprt+ConNeg:@D.NEED@@P.NEED.REST@{AV-}t{aä}k{oö}	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@+Pss+Imprt:@D.NEED@@P.NEED.REST@{AV-}t{aä}k{oö}{oö}n	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@+Pss+InfE+Ine:@D.NEED@@P.NEED.REST@{AV-}t{aä}ess{aä}	Possessive/Optional+Vn		;
-@D.NEED@@P.NEED.REST@+Pss+InfE+Ins:@D.NEED@@P.NEED.REST@{AV-}t{aä}en	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@+Pss+InfMa+Sg+Ins:@D.NEED@@P.NEED.REST@{AV-}t{aä}m{aä}n	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@+Pss+Pot:@D.NEED@@P.NEED.REST@{AV-}t{aä}neen	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@+Pss+Pot+ConNeg:@D.NEED@@P.NEED.REST@{AV-}t{aä}ne	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@+Pss+Ind+Past:@D.NEED@@P.NEED.REST@{AV-}tiin	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@+Pss+Ind+Past+Use/Sub:@D.NEED@@P.NEED.REST@{AV-}tii	Clitic/Optional		;
-@U.NEED.NOMINAL@+Pss+PrsPrc:@U.NEED.NOMINAL@{AV-}t{aä}v	kotus_10_ADJECTIVE/stemfiller		;
+@D.NEED@@P.NEED.REST@+Pass+Cond:@D.NEED@@P.NEED.REST@{AV-}t{aä}isiin	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@+Pass+Cond+ConNeg:@D.NEED@@P.NEED.REST@{AV-}t{aä}isi	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@+Pass+Cond+Use/Sub+ConNeg:@D.NEED@@P.NEED.REST@{AV-}t{aä}is	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@+Pass+Imprt+ConNeg:@D.NEED@@P.NEED.REST@{AV-}t{aä}k{oö}	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@+Pass+Imprt:@D.NEED@@P.NEED.REST@{AV-}t{aä}k{oö}{oö}n	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@+Pass+InfE+Ine:@D.NEED@@P.NEED.REST@{AV-}t{aä}ess{aä}	Possessive/Optional+Vn		;
+@D.NEED@@P.NEED.REST@+Pass+InfE+Ins:@D.NEED@@P.NEED.REST@{AV-}t{aä}en	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@+Pass+InfMa+Sg+Ins:@D.NEED@@P.NEED.REST@{AV-}t{aä}m{aä}n	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@+Pass+Pot:@D.NEED@@P.NEED.REST@{AV-}t{aä}neen	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@+Pass+Pot+ConNeg:@D.NEED@@P.NEED.REST@{AV-}t{aä}ne	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@+Pass+Ind+Past:@D.NEED@@P.NEED.REST@{AV-}tiin	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@+Pass+Ind+Past+Use/Sub:@D.NEED@@P.NEED.REST@{AV-}tii	Clitic/Optional		;
+@U.NEED.NOMINAL@+Pass+PrsPrc:@U.NEED.NOMINAL@{AV-}t{aä}v	kotus_10_ADJECTIVE/stemfiller		;
 
 LEXICON VerbStem/Past
 @D.NEED@@P.NEED.REST@+Act+Ind+Past+Pl1:@D.NEED@@P.NEED.REST@im{AV-}me	Clitic/Optional		;
@@ -112,31 +112,31 @@ LEXICON VerbStem/Potential
 @D.NEED@@P.NEED.REST@+Act+Eventv+Use/Marg+Pl3:@D.NEED@@P.NEED.REST@{AV+}{nlrs}eisivät	Clitic/Optional		;
 
 LEXICON VerbStem/ParticiplePassive
-@D.NEED@@P.NEED.REST@+Pss+Ind+NonPast:@D.NEED@@P.NEED.REST@{aä}{aä}n{AV-}{F}{AV-}	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@+Pss+Ind+NonPast+ConNeg:@D.NEED@@P.NEED.REST@{aä}{AV-}	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@+Pass+Ind+NonPast:@D.NEED@@P.NEED.REST@{aä}{aä}n{AV-}{F}{AV-}	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@+Pass+Ind+NonPast+ConNeg:@D.NEED@@P.NEED.REST@{aä}{AV-}	Clitic/Optional		;
 
 LEXICON VerbAllomorph/NUTPassiveParticiple
-@U.NEED.NOMINAL@+Pss+PrfPrc:@U.NEED.NOMINAL@{AV-}{t~~}{uy}	kotus_1_ADJECTIVE/stemfiller		;
-@U.NEED.NOMINAL@+Pss+Ind+Past+ConNeg:@U.NEED.NOMINAL@{AV-}{t~~}{uy}	Clitic/Optional		;
-+Pss+PrfPrc+Der/vs+N:{AV-}{t~~}{uy}{uy}	kotus_40_NOUN/stemfiller		;
+@U.NEED.NOMINAL@+Pass+PrfPrc:@U.NEED.NOMINAL@{AV-}{t~~}{uy}	kotus_1_ADJECTIVE/stemfiller		;
+@U.NEED.NOMINAL@+Pass+Ind+Past+ConNeg:@U.NEED.NOMINAL@{AV-}{t~~}{uy}	Clitic/Optional		;
++Pass+PrfPrc+Der/vs+N:{AV-}{t~~}{uy}{uy}	kotus_40_NOUN/stemfiller		;
 @P.LONGxANALYSIS.TURE@{AV-}{t~~}{uy}{uy}	kotus_40_NOUN/stemfiller		;
 
 LEXICON VerbAllomorph/NUTPassiveParticiple/C
-@U.NEED.NOMINAL@+Pss+PrfPrc:@U.NEED.NOMINAL@{AV-}{t~~}{uy}{C}	kotus_1_ADJECTIVE/stemfiller		;
-@U.NEED.NOMINAL@+Pss+Ind+Past+ConNeg:@U.NEED.NOMINAL@{AV-}{t~~}{uy}	Clitic/Optional		;
-+Pss+PrfPrc+Der/vs+N:{AV-}{t~~}{uy}{uy}{C}	kotus_40_NOUN/stemfiller		;
+@U.NEED.NOMINAL@+Pass+PrfPrc:@U.NEED.NOMINAL@{AV-}{t~~}{uy}{C}	kotus_1_ADJECTIVE/stemfiller		;
+@U.NEED.NOMINAL@+Pass+Ind+Past+ConNeg:@U.NEED.NOMINAL@{AV-}{t~~}{uy}	Clitic/Optional		;
++Pass+PrfPrc+Der/vs+N:{AV-}{t~~}{uy}{uy}{C}	kotus_40_NOUN/stemfiller		;
 @P.LONGxANALYSIS.TURE@{AV-}{t~~}{uy}{uy}{C}	kotus_40_NOUN/stemfiller		;
 
 LEXICON VerbAllomorph/NUTPassiveParticiple/F
-@U.NEED.NOMINAL@+Pss+PrfPrc:@U.NEED.NOMINAL@{AV-}{t~~}{uy}{F}	kotus_1_ADJECTIVE/stemfiller		;
-@U.NEED.NOMINAL@+Pss+Ind+Past+ConNeg:@U.NEED.NOMINAL@{AV-}{t~~}{uy}	Clitic/Optional		;
-+Pss+PrfPrc+Der/vs+N:{AV-}{t~~}{uy}{uy}{F}	kotus_40_NOUN/stemfiller		;
+@U.NEED.NOMINAL@+Pass+PrfPrc:@U.NEED.NOMINAL@{AV-}{t~~}{uy}{F}	kotus_1_ADJECTIVE/stemfiller		;
+@U.NEED.NOMINAL@+Pass+Ind+Past+ConNeg:@U.NEED.NOMINAL@{AV-}{t~~}{uy}	Clitic/Optional		;
++Pass+PrfPrc+Der/vs+N:{AV-}{t~~}{uy}{uy}{F}	kotus_40_NOUN/stemfiller		;
 @P.LONGxANALYSIS.TURE@{AV-}{t~~}{uy}{uy}{F}	kotus_40_NOUN/stemfiller		;
 
 LEXICON VerbAllomorph/NUTPassiveParticiple/I
-@U.NEED.NOMINAL@+Pss+PrfPrc:@U.NEED.NOMINAL@{AV-}{t~~}{uy}{I}	kotus_1_ADJECTIVE/stemfiller		;
-@U.NEED.NOMINAL@+Pss+Ind+Past+ConNeg:@U.NEED.NOMINAL@{AV-}{t~~}{uy}	Clitic/Optional		;
-+Pss+PrfPrc+Der/vs+N:{AV-}{t~~}{uy}{uy}{I}	kotus_40_NOUN/stemfiller		;
+@U.NEED.NOMINAL@+Pass+PrfPrc:@U.NEED.NOMINAL@{AV-}{t~~}{uy}{I}	kotus_1_ADJECTIVE/stemfiller		;
+@U.NEED.NOMINAL@+Pass+Ind+Past+ConNeg:@U.NEED.NOMINAL@{AV-}{t~~}{uy}	Clitic/Optional		;
++Pass+PrfPrc+Der/vs+N:{AV-}{t~~}{uy}{uy}{I}	kotus_40_NOUN/stemfiller		;
 @P.LONGxANALYSIS.TURE@{AV-}{t~~}{uy}{uy}{I}	kotus_40_NOUN/stemfiller		;
 
 
