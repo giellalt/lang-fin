@@ -126,7 +126,8 @@ Multichar_Symbols
 ! The morphologically distinct forms in Finnish are only past and non-past
 ! tenses, while other are created syntactically and not marked in omorfi level. 
 ! |VISK 111 112|
-+NonPast +Past
+! In order to keep tagging consistent across languages we call them +Prs and +Prt
++Prs +Prt
 
 ! Finite verb form analyses have a reading for mood. Mood has four central
 ! readings and few archaic and marginal. The mood is marked in analyses for
