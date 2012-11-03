@@ -1,0 +1,495 @@
+! Proper nouns inflect in practice like regular nouns
+
+! nominatives
+LEXICON PROP_BACK_SGNOM_CLIT
++N+Prop+Sg+Nom:0   PROP_BACK_CLIT_OPT  ;
+
+LEXICON PROP_FRONT_SGNOM_CLIT
++N+Prop+Sg+Nom:0   PROP_FRONT_CLIT_OPT  ;
+
+LEXICON PROP_BACK_PLNOM_CLIT
++N+Prop+Pl+Nom:%>t     PROP_BACK_CLIT_OPT  ;
+
+LEXICON PROP_FRONT_PLNOM_CLIT
++N+Prop+Pl+Nom:%>t     PROP_FRONT_CLIT_OPT  ;
+
+! basic cases
+LEXICON PROP_BACK_WEAK_SINGULARS
+0    PROP_BACK_PLNOM_CLIT   ;
++N+Prop+Sg+Gen:%>n     PROP_BACK_CLIT_OPT   ;
++N+Prop+Sg+Abe:%>tta   PROP_BACK_POSS_AN_CLIT_OPT      ;
++N+Prop+Sg+Abl:%>lta   PROP_BACK_POSS_AN_CLIT_OPT      ;
++N+Prop+Sg+Ade:%>lla   PROP_BACK_POSS_AN_CLIT_OPT      ;
++N+Prop+Sg+All:%>lle   PROP_BACK_POSS_EN_CLIT_OPT      ;
++N+Prop+Sg+Ela:%>sta   PROP_BACK_POSS_AN_CLIT_OPT      ;
++N+Prop+Sg+Ine:%>ssa   PROP_BACK_POSS_AN_CLIT_OPT      ;
++N+Prop+Sg+Tra:%>kse   PROP_BACK_POSS_EN_CLIT_OBL       ;
++N+Prop+Sg+Tra:%>ksi   PROP_BACK_CLIT_OPT     ;
++N+Prop+Sg+Tra:%>ksi   PROP_BACK_CLIT_OPT     ;
+
+LEXICON PROP_FRONT_WEAK_SINGULARS
+0    PROP_FRONT_PLNOM_CLIT   ;
++N+Prop+Sg+Gen:%>n     PROP_FRONT_CLIT_OPT   ;
++N+Prop+Sg+Abe:%>ttä   PROP_FRONT_POSS_AN_CLIT_OPT      ;
++N+Prop+Sg+Abl:%>ltä   PROP_FRONT_POSS_AN_CLIT_OPT      ;
++N+Prop+Sg+Ade:%>llä   PROP_FRONT_POSS_AN_CLIT_OPT      ;
++N+Prop+Sg+All:%>lle   PROP_FRONT_POSS_EN_CLIT_OPT      ;
++N+Prop+Sg+Ela:%>stä   PROP_FRONT_POSS_AN_CLIT_OPT      ;
++N+Prop+Sg+Ine:%>ssä   PROP_FRONT_POSS_AN_CLIT_OPT      ;
++N+Prop+Sg+Tra:%>kse   PROP_FRONT_POSS_EN_CLIT_OBL       ;
++N+Prop+Sg+Tra:%>ksi   PROP_FRONT_CLIT_OPT     ;
++N+Prop+Sg+Tra:%>ksi   PROP_FRONT_CLIT_OPT     ;
+
+LEXICON PROP_BACK_STRONG_SINGULARS
++N+Prop+Sg+Ess:%>na PROP_BACK_POSS_AN_CLIT_OPT      ;
++N+Prop+Sg+Nom:0  PROP_BACK_POSS   ;
++N+Prop+Sg+Gen:0  PROP_BACK_POSS   ;
++N+Prop+Pl+Nom:0  PROP_BACK_POSS   ;
+
+LEXICON PROP_FRONT_STRONG_SINGULARS
++N+Prop+Sg+Ess:%>nä PROP_FRONT_POSS_AN_CLIT_OPT      ;
++N+Prop+Sg+Nom:0  PROP_FRONT_POSS   ;
++N+Prop+Sg+Gen:0  PROP_FRONT_POSS   ;
++N+Prop+Pl+Nom:0  PROP_FRONT_POSS   ;
+
+LEXICON PROP_BACK_WEAK_SINGULARS
++N+Prop+Pl+Abe:%>i%>tta   PROP_BACK_POSS_AN_CLIT_OPT      ;
++N+Prop+Pl+Abl:%>i%>lta   PROP_BACK_POSS_AN_CLIT_OPT      ;
++N+Prop+Pl+Ade:%>i%>lla   PROP_BACK_POSS_AN_CLIT_OPT      ;
++N+Prop+Pl+All:%>i%>lle  PROP_BACK_POSS_AN_CLIT_OPT      ;
++N+Prop+Pl+Ela:%>i%>sta   PROP_BACK_POSS_AN_CLIT_OPT      ;
++N+Prop+Pl+Ine:%>i%>ssa   PROP_BACK_POSS_AN_CLIT_OPT      ;
++N+Prop+Pl+Ins:%>i%>n    PROP_BACK_CLIT_OPT     ;
++N+Prop+Pl+Tra:%>i%>kse  PROP_BACK_POSS_EN_CLIT_OBL        ;
++N+Prop+Pl+Tra:%>i%>ksi  PROP_BACK_CLIT_OPT     ;
+
+LEXICON PROP_FRONT_WEAK_SINGULARS
++N+Prop+Pl+Abe:%>i%>ttä   PROP_FRONT_POSS_AN_CLIT_OPT      ;
++N+Prop+Pl+Abl:%>i%>ltä   PROP_FRONT_POSS_AN_CLIT_OPT      ;
++N+Prop+Pl+Ade:%>i%>llä   PROP_FRONT_POSS_AN_CLIT_OPT      ;
++N+Prop+Pl+All:%>i%>lle  PROP_FRONT_POSS_AN_CLIT_OPT      ;
++N+Prop+Pl+Ela:%>i%>stä   PROP_FRONT_POSS_AN_CLIT_OPT      ;
++N+Prop+Pl+Ine:%>i%>ssä   PROP_FRONT_POSS_AN_CLIT_OPT      ;
++N+Prop+Pl+Ins:%>i%>n    PROP_FRONT_CLIT_OPT     ;
++N+Prop+Pl+Tra:%>i%>kse  PROP_FRONT_POSS_EN_CLIT_OBL        ;
++N+Prop+Pl+Tra:%>i%>ksi  PROP_FRONT_CLIT_OPT     ;
+
+LEXICON PROP_FRONT_STRONG_PLURALS
++N+Prop+Pl+Ess:%>i%>nä   PROP_FRONT_POSS_AN_CLIT_OPT      ;
++N+Prop+Cmt:%>i%>ne        PROP_FRONT_POSS_AN_CLIT_OPT      ;
+
+LEXICON PROP_BACK_STRONG_PLURALS
++N+Prop+Pl+Ess:%>i%>na   PROP_BACK_POSS_AN_CLIT_OPT      ;
++N+Prop+Cmt:%>i%>ne        PROP_BACK_POSS_AN_CLIT_OPT      ;
+
+
+! allomorphs
+LEXICON PROP_BACK_PARTITIVE_A
++N+Prop+Sg+Par:%>a      PROP_BACK_POSS_CLIT_OPT      ;
+
+LEXICON PROP_FRONT_PARTITIVE_A
++N+Prop+Sg+Par:%>ä      PROP_FRONT_POSS_CLIT_OPT      ;
+
+LEXICON PROP_BACK_PARTITIVE_A_AN
++N+Prop+Sg+Par:%>a      PROP_BACK_POSS_AN_CLIT_OPT      ;
+
+LEXICON PROP_FRONT_PARTITIVE_A_AN
+0+N+Prop+Sg+Par:%>ä     PROP_FRONT_POSS_AN_CLIT_OPT     ;
+
+LEXICON PROP_BACK_PARTITIVE_TA
++N+Prop+Sg+Par:%>ta     PROP_BACK_POSS_AN_CLIT_OPT      ;
+
+LEXICON PROP_FRONT_PARTITIVE_TA
++N+Prop+Sg+Par:%>tä     PROP_FRONT_POSS_AN_CLIT_OPT      ;
+
+LEXICON PROP_BACK_ILLATIVE_HAN
++N+Prop+Sg+Ill:%>han    #         ;
++N+Prop+Sg+Ill:%>ha     PROP_BACK_POSS     ;
+
+LEXICON PROP_BACK_ILLATIVE_HEN
++N+Prop+Sg+Ill:%>hen    #         ;
++N+Prop+Sg+Ill:%>he     PROP_BACK_POSS     ;
+
+LEXICON PROP_FRONT_ILLATIVE_HEN
++N+Prop+Sg+Ill:%>hen    #         ;
++N+Prop+Sg+Ill:%>he     PROP_FRONT_POSS     ;
+
+LEXICON PROP_BACK_ILLATIVE_HIN
++N+Prop+Sg+Ill:%>hin    #         ;
++N+Prop+Sg+Ill:%>hi     PROP_BACK_POSS     ;
+
+LEXICON PROP_FRONT_ILLATIVE_HIN
++N+Prop+Sg+Ill:%>hin    #         ;
++N+Prop+Sg+Ill:%>hi     PROP_FRONT_POSS     ;
+
+LEXICON PROP_BACK_ILLATIVE_HON
++N+Prop+Sg+Ill:%>hon    #         ;
++N+Prop+Sg+Ill:%>ho     PROP_BACK_POSS     ;
+
+LEXICON PROP_BACK_ILLATIVE_HUN
++N+Prop+Sg+Ill:%>hun    #         ;
++N+Prop+Sg+Ill:%>hu     PROP_BACK_POSS     ;
+
+LEXICON PROP_FRONT_ILLATIVE_HYN
++N+Prop+Sg+Ill:%>hyn    #         ;
++N+Prop+Sg+Ill:%>hy     PROP_FRONT_POSS     ;
+
+LEXICON PROP_FRONT_ILLATIVE_HAN
++N+Prop+Sg+Ill:%>hän    #         ;
++N+Prop+Sg+Ill:%>hä     PROP_FRONT_POSS     ;
+
+LEXICON PROP_FRONT_ILLATIVE_HON
++N+Prop+Sg+Ill:%>hön    #         ;
++N+Prop+Sg+Ill:%>hö     PROP_FRONT_POSS     ;
+
+LEXICON PROP_BACK_PARTITIVE_IA
++N+Prop+Pl+Par:%>i%>a    PROP_BACK_POSS_AN_CLIT_OPT      ;
+
+LEXICON PROP_FRONT_PARTITIVE_IA
++N+Prop+Pl+Par:%>i%>ä    PROP_FRONT_POSS_AN_CLIT_OPT      ;
+
+LEXICON PROP_BACK_GENITIVE_IDEN
++N+Prop+Pl+Gen:%>i%>den    #     ;
++N+Prop+Pl+Gen:%>i%>de     PROP_BACK_POSS     ;
+
+LEXICON PROP_FRONT_GENITIVE_IDEN
++N+Prop+Pl+Gen:%>i%>den    #     ;
++N+Prop+Pl+Gen:%>i%>de     PROP_FRONT_POSS     ;
+
+LEXICON PROP_BACK_GENITIVE_IEN
++N+Prop+Pl+Gen:%>i%>en   #     ;
++N+Prop+Pl+Gen:%>i%>e    PROP_BACK_POSS     ;
+
+LEXICON PROP_FRONT_GENITIVE_IEN
++N+Prop+Pl+Gen:%>i%>en   #     ;
++N+Prop+Pl+Gen:%>i%>e    PROP_FRONT_POSS     ;
+
+LEXICON PROP_BACK_ILLATIVE_IHIN
++N+Prop+Pl+Ill:%>i%>hin   #    ;
++N+Prop+Pl+Ill:%>i%>hi    PROP_BACK_POSS     ;
+
+LEXICON PROP_FRONT_ILLATIVE_IHIN
++N+Prop+Pl+Ill:%>i%>hin   #    ;
++N+Prop+Pl+Ill:%>i%>hi    PROP_FRONT_POSS     ;
+
+LEXICON PROP_BACK_ILLATIVE_IIN
++N+Prop+Pl+Ill:%>i%>in    #     ;
++N+Prop+Pl+Ill:%>i%>i     PROP_BACK_POSS     ;
+
+LEXICON PROP_FRONT_ILLATIVE_IIN
++N+Prop+Pl+Ill:%>i%>in    #     ;
++N+Prop+Pl+Ill:%>i%>i     PROP_FRONT_POSS     ;
+
+LEXICON PROP_BACK_GENITIVE_IN
++N+Prop+Pl+Gen:%>i%>n    #     ;
++N+Prop+Pl+Gen:%>i     PROP_BACK_POSS     ;
+
+LEXICON PROP_FRONT_GENITIVE_IN
++N+Prop+Pl+Gen:%>i%>n    #     ;
++N+Prop+Pl+Gen:%>i     PROP_FRONT_POSS     ;
+
+LEXICON PROP_BACK_ILLATIVE_ISIIN
++N+Prop+Pl+Ill:%>i%>siin  #     ;
++N+Prop+Pl+Ill:%>i%>sii   PROP_BACK_POSS     ;
+
+LEXICON PROP_FRONT_ILLATIVE_ISIIN
++N+Prop+Pl+Ill:%>i%>siin  #     ;
++N+Prop+Pl+Ill:%>i%>sii   PROP_FRONT_POSS     ;
+
+LEXICON PROP_BACK_PARTITIVE_ITA
++N+Prop+Pl+Par:%>i%>ta   PROP_BACK_POSS_AN_CLIT_OPT      ;
+
+LEXICON PROP_FRONT_PARTITIVE_ITA
++N+Prop+Pl+Par:%>i%>tä   PROP_FRONT_POSS_AN_CLIT_OPT      ;
+
+LEXICON PROP_BACK_GENITIVE_ITTEN
++N+Prop+Pl+Gen:%>i%>tten     #     ;
++N+Prop+Pl+Gen:%>i%>tte      PROP_BACK_POSS     ;
+
+LEXICON PROP_FRONT_GENITIVE_ITTEN
++N+Prop+Pl+Gen:%>i%>tten     #     ;
++N+Prop+Pl+Gen:%>i%>tte      PROP_FRONT_POSS     ;
+
+LEXICON PROP_BACK_PARTITIVE_JA
++N+Prop+Pl+Par:%>j%>a     PROP_BACK_POSS_AN_CLIT_OPT      ;
+
+LEXICON PROP_FRONT_PARTITIVE_JA
++N+Prop+Pl+Par:%>j%>ä     PROP_FRONT_POSS_AN_CLIT_OPT      ;
+
+LEXICON PROP_BACK_GENITIVE_JEN
++N+Prop+Pl+Gen:%>j%>en    #     ;
++N+Prop+Pl+Gen:%>j%>e     PROP_BACK_POSS     ;
+
+LEXICON PROP_FRONT_GENITIVE_JEN
++N+Prop+Pl+Gen:%>j%>en    #     ;
++N+Prop+Pl+Gen:%>j%>e     PROP_FRONT_POSS     ;
+
+LEXICON PROP_BACK_ILLATIVE_SEEN
++N+Prop+Sg+Ill:%>seen      #     ;
++N+Prop+Sg+Ill:%>see       PROP_BACK_POSS     ;
+
+LEXICON PROP_FRONT_ILLATIVE_SEEN
++N+Prop+Sg+Ill:%>seen      #     ;
++N+Prop+Sg+Ill:%>see       PROP_FRONT_POSS     ;
+
+LEXICON PROP_BACK_GENITIVE_TEN
++N+Prop+Pl+Gen:%>ten    #     ;
++N+Prop+Pl+Gen:%>te     PROP_BACK_POSS     ;
+
+LEXICON PROP_FRONT_GENITIVE_TEN
++N+Prop+Pl+Gen:%>ten    #     ;
++N+Prop+Pl+Gen:%>te     PROP_FRONT_POSS     ;
+
+LEXICON PROP_BACK_ILLATIVE_AN
++N+Prop+Sg+Ill:%>an     #         ;
++N+Prop+Sg+Ill:%>a      PROP_BACK_POSS     ;
+
+LEXICON PROP_BACK_ILLATIVE_EN
++N+Prop+Sg+Ill:%>en     #         ;
++N+Prop+Sg+Ill:%>e      PROP_BACK_POSS     ;
+
+LEXICON PROP_FRONT_ILLATIVE_EN
++N+Prop+Sg+Ill:%>en     #         ;
++N+Prop+Sg+Ill:%>e      PROP_FRONT_POSS     ;
+
+LEXICON PROP_BACK_ILLATIVE_IN
++N+Prop+Sg+Ill:%>in     #         ;
++N+Prop+Sg+Ill:%>i      PROP_BACK_POSS     ;
+
+LEXICON PROP_FRONT_ILLATIVE_IN
++N+Prop+Sg+Ill:%>in     #         ;
++N+Prop+Sg+Ill:%>i      PROP_FRONT_POSS     ;
+
+LEXICON PROP_BACK_ILLATIVE_ON
++N+Prop+Sg+Ill:%>on     #         ;
++N+Prop+Sg+Ill:%>o      PROP_BACK_POSS     ;
+
+LEXICON PROP_BACK_ILLATIVE_UN
++N+Prop+Sg+Ill:%>un     #         ;
++N+Prop+Sg+Ill:%>u      PROP_BACK_POSS     ;
+
+LEXICON PROP_FRONT_ILLATIVE_YN
++N+Prop+Sg+Ill:%>yn     #         ;
++N+Prop+Sg+Ill:%>y      PROP_FRONT_POSS     ;
+
+LEXICON PROP_FRONT_ILLATIVE_AN
++N+Prop+Sg+Ill:%>än     #         ;
++N+Prop+Sg+Ill:%>ä      PROP_FRONT_POSS     ;
+
+LEXICON PROP_FRONT_ILLATIVE_ON
++N+Prop+Sg+Ill:%>ön     #         ;
++N+Prop+Sg+Ill:%>ö      PROP_FRONT_POSS     ;
+
+! possessives
+LEXICON PROP_FRONT_POSS
++PxSg1:%>ni  PROP_FRONT_CLIT_OPT        ;
++PxSg2:%>si  PROP_FRONT_CLIT_OPT        ;
++PxSg3:%>nsä PROP_FRONT_CLIT_OPT        ;
++PxPl1:%>mme PROP_FRONT_CLIT_OPT        ;
++PxPl2:%>nne PROP_FRONT_CLIT_OPT        ;
++PxPl3:%>nsä PROP_FRONT_CLIT_OPT        ;
+
+LEXICON PROP_BACK_POSS
++PxSg1:%>ni  PROP_BACK_CLIT_OPT        ;
++PxSg2:%>si  PROP_BACK_CLIT_OPT        ;
++PxSg3:%>nsa PROP_BACK_CLIT_OPT        ;
++PxPl1:%>mme PROP_BACK_CLIT_OPT        ;
++PxPl2:%>nne PROP_BACK_CLIT_OPT        ;
++PxPl3:%>nsa PROP_BACK_CLIT_OPT        ;
+
+LEXICON PROP_BACK_POSS_AN
++PxSg3:%>an    PROP_BACK_CLIT_OPT     ;
++PxPl3:%>an    PROP_BACK_CLIT_OPT     ;
+
+LEXICON PROP_BACK_POSS_EN
++PxSg3:%>en    PROP_BACK_CLIT_OPT     ;
++PxPl3:%>en    PROP_BACK_CLIT_OPT     ;
+
+LEXICON PROP_FRONT_POSS_EN
++PxSg3:%>en    PROP_FRONT_CLIT_OPT     ;
++PxPl3:%>en    PROP_FRONT_CLIT_OPT     ;
+
+LEXICON PROP_FRONT_POSS_AN
++PxSg3:%>än    PROP_FRONT_CLIT_OPT     ;
++PxPl3:%>än    PROP_FRONT_CLIT_OPT     ;
+
+LEXICON PROP_BACK_CLIT
++Foc/han:%>han   #        ;
++Foc/han+Foc/kaan:%>hankaan  #        ;
++Foc/han+Qst:%>hanko #        ;
++Foc/han+Foc/pa:%>hanpa #        ;
++Qst:%>ko #        ;
++Qst+Foc/han:%>kohan #        ;
++Qst+Foc/kaan:%>kokaan    #        ;
++Qst+Foc/kin:%>kokin    #        ;
++Qst+Foc/pa:%>kopa   #        ;
++Qst+Foc/s:%>kos    #        ;
++Foc/pa:%>pa #        ;
++Foc/pa+Foc/han:%>pahan #        ;
++Foc/pa+Foc/kaan:%>pakaan    #        ;
++Foc/pa+Foc/kin:%>pakin    #        ;
++Foc/pa+Qst:%>pako   #        ;
++Foc/pa+Foc/s:%>pas    #        ;
++Foc/kin:%>kin  #        ;
++Foc/kin+Foc/han:%>kinhan  #        ;
++Foc/kin+Foc/kaan:%>kinkaan #        ;
++Foc/kin+Qst:%>kinko    #        ;
++Foc/kin+Foc/pa:%>kinpa    #        ;
++Foc/kaan:%>kaan  #        ;
++Foc/kaan+Foc/han:%>kaanhan  #        ;
++Foc/kaan+Foc/kin:%>kaankin #        ;
++Foc/kaan+Qst:%>kaanko    #        ;
++Foc/kaan+Foc/pa:%>kaanpa    #        ;
+
+LEXICON PROP_FRONT_CLIT
++Foc/han:%>hän   #        ;
++Foc/han+Foc/kaan:%>hänkään  #        ;
++Foc/han+Qst:%>hänkö #        ;
++Foc/han+Foc/pa:%>hänpä #        ;
++Qst:%>kö #        ;
++Qst+Foc/han:%>köhän #        ;
++Qst+Foc/kaan:%>kökään    #        ;
++Qst+Foc/kin:%>kökin    #        ;
++Qst+Foc/pa:%>köpä   #        ;
++Qst+Foc/s:%>kös    #        ;
++Foc/pa:%>pä #        ;
++Foc/pa+Foc/han:%>pähän #        ;
++Foc/pa+Foc/kaan:%>päkään    #        ;
++Foc/pa+Foc/kin:%>päkin    #        ;
++Foc/pa+Qst:%>päkö   #        ;
++Foc/pa+Foc/s:%>päs    #        ;
++Foc/kin:%>kin  #        ;
++Foc/kin+Foc/han:%>kinhän  #        ;
++Foc/kin+Foc/kaan:%>kinkään #        ;
++Foc/kin+Qst:%>kinkö    #        ;
++Foc/kin+Foc/pa:%>kinpä    #        ;
++Foc/kaan:%>kään  #        ;
++Foc/kaan+Foc/han:%>käänhän  #        ;
++Foc/kaan+Foc/kin:%>käänkin #        ;
++Foc/kaan+Qst:%>käänkö    #        ;
++Foc/kaan+Foc/pa:%>käänpä    #        ;
+
+
+! shorthands
+
+LEXICON PROP_BACK_CLIT_OPT
+0    #   ;
+0   PROP_BACK_CLIT    ;
+
+LEXICON PROP_FRONT_CLIT_OPT
+0    #   ;
+0   PROP_FRONT_CLIT    ;
+
+LEXICON PROP_BACK_SINGULARS
+0    PROP_BACK_STRONG_SINGULARS ;
+0    PROP_BACK_WEAK_SINGULARS   ;
+
+LEXICON PROP_FRONT_SINGULARS
+0    PROP_FRONT_STRONG_SINGULARS ;
+0    PROP_FRONT_WEAK_SINGULARS   ;
+
+LEXICON PROP_BACK_CASES
+0   PROP_BACK_STRONG_PLURALS ;
+0   PROP_BACK_WEAK_SINGULARS ;
+
+LEXICON PROP_FRONT_CASES
+0   PROP_FRONT_STRONG_PLURALS ;
+0   PROP_FRONT_WEAK_SINGULARS ;
+
+LEXICON PROP_BACK_POSS_AN_CLIT_OPT
+0    PROP_BACK_POSS   ;
+0    PROP_BACK_POSS_AN ;
+0    PROP_BACK_CLIT ;
+0    #    ;
+
+LEXICON PROP_FRONT_POSS_AN_CLIT_OPT
+0    PROP_FRONT_POSS   ;
+0    PROP_FRONT_POSS_AN  ;
+0    PROP_FRONT_CLIT ;
+0    #    ;
+
+LEXICON PROP_BACK_POSS_EN_CLIT_OPT
+0    PROP_BACK_POSS   ;
+0    PROP_BACK_POSS_EN ;
+0    PROP_BACK_CLIT ;
+0    #    ;
+
+LEXICON PROP_FRONT_POSS_EN_CLIT_OPT
+0    PROP_FRONT_POSS   ;
+0    PROP_FRONT_POSS_EN  ;
+0    PROP_FRONT_CLIT ;
+0    #    ;
+
+LEXICON PROP_BACK_POSS_CLIT_OPT
+0    PROP_BACK_POSS   ;
+0    PROP_BACK_CLIT ;
+0    #    ;
+
+LEXICON PROP_FRONT_POSS_CLIT_OPT
+0    PROP_FRONT_POSS   ;
+0    PROP_FRONT_CLIT ;
+0    #    ;
+
+LEXICON PROP_BACK_POSS_EN_OBL
+0   PROP_BACK_POSS  ;
+0   PROP_BACK_POSS_EN   ;
+
+LEXICON PROP_FRONT_POSS_EN_OBL
+0   PROP_FRONT_POSS  ;
+0   PROP_FRONT_POSS_EN   ;
+
+! derivs
+!LEXICON inen-lainen+N+PropounDerivation
+!i   nen-se-s+N+Propoun+ta-en-ia-ien-ten-iin ;
+!lai nen-se-s+N+Propoun+ta-en-ia-ien-ten-iin ;
+!
+!LEXICON inen-läinen+N+PropounDerivation
+!i   nen-se-s+N+Propoun+ta-en-ia-ien-ten-iin ;
+!läi nen-se-s+N+Propoun+ta-en-ia-ien-ten-iin ;
+!
+!LEXICON tse-llinen-sti-tar-ton+N+PropounDerivations
+!tse             ko-kaan+Adverb  ;
+!lli             nen-se-s+N+Propoun+ta-en-ia-ien-ten-iin        ;
+!llisuu          s-te-de-ks-t+N+Propoun+ta-en-ia-ien-iin        ;
+!sti             ko-kaan+Adverb     ;
+!t               ar-tare-tar+N+Propoun+ta-en-ia-ien-ten-iin   ;
+!t               on-toma-tom+N+Propoun+ta-an-ia-ien-(ten)-iin ;
+!ttomuu          s-te-de-ks-t+N+Propoun+ta-en-ia-ien-iin     ;
+!
+!LEXICON itse-ittain+N+PropounDerivations
+!itse    ko-kaan+Adverb     ;
+!ittain  ko-kaan+Adverb     ;
+!
+!LEXICON itse-ittäin+N+PropounDerivations
+!itse    kö-kään+Adverb     ;
+!ittäin  kö-kään+Adverb     ;
+!
+! compounding
+LEXICON PROP_COMPOUND_0
+0   PROP_COMPOUND
+
+LEXICON PROP_COMPOUND_N
+0n:%>n               PROP_COMPOUND    ;
+
+LEXICON PROP_COMPOUND_IEN
+0ien:%>i%>en                 PROP_COMPOUND  ;
+
+LEXICON PROP_COMPOUND_IDEN
+0iden:%>i%>den                 PROP_COMPOUND  ;
+
+LEXICON PROP_COMPOUND_IN
+0in:%>i%>n                 PROP_COMPOUND     ;
+
+LEXICON PROP_COMPOUND_ITTEN
+0itten:%>i%>tten               PROP_COMPOUND     ;
+
+LEXICON PROP_COMPOUND_JEN
+0jen:%>j%>en                 PROP_COMPOUND     ;
+
+LEXICON PROP_COMPOUND_TEN
+0ten:%>ten                 PROP_COMPOUND     ;
+
+
+LEXICON PROP_COMPOUND
++Use/Circ#:0#     Nouns   ;
++Use/Circ#:0#     DeverbalNouns   ;

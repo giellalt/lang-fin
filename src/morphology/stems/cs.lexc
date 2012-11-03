@@ -1,75 +1,64 @@
-! Omorfi stubs CONJUNCTION generated from name='master.csv' mode='r' encoding='UTF-8'>]
-! date: 2012-08-21 16:25:15+EEST
-! params:  ./csv2lexc.py -v -i master.csv -o ../../src/morphology/roots -x NUMERAL -x PRONOUN
-! Entries from  master.csv
-LEXICON  CONJUNCTION
-kunpa+CC:kunpa   Conjunction+Ennd  ;
-vaikkeivät+CC:vaikkeivät   Conjunction+Ennd  ;
-joskin+CC:joskin   Conjunction+Ennd  ;
-et+CC:et   Conjunction+Ennd  ;
-jotta+CC:jotta   Conjunction+Ennd  ;
-vaikka+CC:vaikka   Conjunction+Ennd  ;
-mutta+CC:mutta   Conjunction+Ennd  ;
-mikäli+CC:mikäli   Conjunction+Ennd  ;
-tai+CC:tai   Conjunction+Ennd  ;
-saatikka+CC:saatikka   Conjunction+Ennd  ;
-koska+CC:koska   Conjunction+Ennd  ;
-vaikkette+CC:vaikkette   Conjunction+Ennd  ;
-ennenkuin+CC:ennenkuin   Conjunction+Ennd  ;
-vaikkapa+CC:vaikkapa   Conjunction+Ennd  ;
-ellemme+CC:ellemme   Conjunction+Ennd  ;
-vaikkemme+CC:vaikkemme   Conjunction+Ennd  ;
-vaikkei+CC:vaikkei   Conjunction+Ennd  ;
-että+CC:että   Conjunction+Ennd  ;
-tahi+CC:tahi   Conjunction+Ennd  ;
-ettei+CC:ettei   Conjunction+Ennd  ;
-ettet+CC:ettet   Conjunction+Ennd  ;
-ellen+CC:ellen   Conjunction+Ennd  ;
-enkä+CC:enkä   Conjunction+Ennd  ;
-joskohta+CC:joskohta   Conjunction+Ennd  ;
-ennen%%% kuin+CC:ennen% {#}kuin   Conjunction+Ennd  ;
-sekä+CC:sekä   Conjunction+Ennd  ;
-joskaan+CC:joskaan   Conjunction+Ennd  ;
-joko+CC:joko   Conjunction+Ennd  ;
-etten+CC:etten   Conjunction+Ennd  ;
-kun+CC:kun   Conjunction+Ennd  ;
-jolleivät+CC:jolleivät   Conjunction+Ennd  ;
-eli+CC:eli   Conjunction+Ennd  ;
-äläkä+CC:äläkä   Conjunction+Ennd  ;
-sitäpaitsi+CC:sitäpaitsi   Conjunction+Ennd  ;
-taikka+CC:taikka   Conjunction+Ennd  ;
-ettette+CC:ettette   Conjunction+Ennd  ;
-elleivät+CC:elleivät   Conjunction+Ennd  ;
-ellet+CC:ellet   Conjunction+Ennd  ;
-sun+CC:sun   Conjunction+Ennd  ;
-vaikkakaan+CC:vaikkakaan   Conjunction+Ennd  ;
-josko+CC:josko   Conjunction+Ennd  ;
-ettemme+CC:ettemme   Conjunction+Ennd  ;
-jahka+CC:jahka   Conjunction+Ennd  ;
-kunnes+CC:kunnes   Conjunction+Ennd  ;
-ellette+CC:ellette   Conjunction+Ennd  ;
-konsa+CC:konsa   Conjunction+Ennd  ;
-elikkä+CC:elikkä   Conjunction+Ennd  ;
-jollei+CC:jollei   Conjunction+Ennd  ;
-saati+CC:saati   Conjunction+Ennd  ;
-ellei+CC:ellei   Conjunction+Ennd  ;
-sillä+CC:sillä   Conjunction+Ennd  ;
-vaikket+CC:vaikket   Conjunction+Ennd  ;
-etteivät+CC:etteivät   Conjunction+Ennd  ;
-ynnä+CC:ynnä   Conjunction+Ennd  ;
-vaiko+CC:vaiko   Conjunction+Ennd  ;
-vai+CC:vai   Conjunction+Ennd  ;
-jos+CC:jos   Conjunction+Ennd  ;
-mut+CC:mut   Conjunction+Ennd  ;
-vaan+CC:vaan   Conjunction+Ennd  ;
-etteikö+CC:etteikö   Conjunction+Ennd  ;
-jollen+CC:jollen   Conjunction+Ennd  ;
-kuin+CC:kuin   Conjunction+Ennd  ;
-jollet+CC:jollet   Conjunction+Ennd  ;
-vaikken+CC:vaikken   Conjunction+Ennd  ;
-jollemme+CC:jollemme   Conjunction+Ennd  ;
-kuntaas+CC:kuntaas   Conjunction+Ennd  ;
-jollette+CC:jollette   Conjunction+Ennd  ;
-ja+CC:ja   Conjunction+Ennd  ;
-tahikka+CC:tahikka   Conjunction+Ennd  ;
-eikä+CC:eikä   Conjunction+Ennd  ;
+!! The adverbial conjunctions join two unequal clauses or phrases together.
+!! The traditional term for this is sub-ordinating conjunction, it is assumed
+!! here for compatibility with other languages. Adverbial conjunctions are a
+!! subset of particles, so they do not inflect at all.
+
+LEXICON  CS
+!! The adverbial conjunctions are:
+!! ellei, että, jahka, jollei, jos, joskin, jos kohta, jotta, koska, kun,
+!!  kunhan, mikäli, vaikka, (kunnes). (VISK § 818)
+!! Examples:
+!! € että
+!! € jotta
+!! € koska
+!! € kun
+!! € jos
+!! € vaikka
+ell#ei+CS:ellei                         # ;
+ell#eivät+CS:elleivät                   # ;
+ell#emme+CS:ellemme                     # ;
+ell#en+CS:ellen                         # ;
+ell#et+CS:ellet                         # ;
+ell#ette+CS:ellette                     # ;
+ennen% kuin+CS:ennen% kuin              # ;
+ennenkuin+CS+Use/Sub:ennenkuin          # ;
+et+CS+Use/sub:et                        # ;
+että#ei+CS:ettei                        # ;
+että#eikö+CS:etteikö                    # ;
+että#eivät+CS:etteivät                  # ;
+että#emme+CS:ettemme                    # ;
+että#en+CS:etten                        # ;
+että#et+CS:ettet                        # ;
+että#ette+CS:ettette                    # ;
+että+CS:että                            # ;
+jos#ei+CS:jollei                        # ;
+jos#eivät+CS:jolleivät                  # ;
+jos#emme+CS:jollemme                    # ;
+jos#en+CS:jollen                        # ;
+jos#et+CS:jollet                        # ;
+jos#ette+CS:jollette                    # ;
+jos+CS:jos                              # ;
+joskaan+CS:joskaan                      # ;
+joskin+CS:joskin                        # ;
+josko+CS:josko                          # ;
+jotta+CS:jotta                          # ;
+konsa+CS:konsa                          # ;
+koska+CS:koska                          # ;
+kun+CS:kun                              # ;
+kunnes+CS:kunnes                        # ;
+kunpa+CS:kunpa                          # ;
+mikäli+CS:mikäli                        # ;
+sillä+CS:sillä                          # ;
+sitäpaitsi+CS:sitäpaitsi                # ;
+sun+CS:sun                              # ;
+vaan+CS:vaan                            # ;
+vaikka+CS:vaikka                        # ;
+vaikkakaan+CS:vaikkakaan                # ;
+vaikkapa+CS:vaikkapa                    # ;
+vaikka#ei+CS:vaikkei                    # ;
+vaikka#eivät+CS:vaikkeivät              # ;
+vaikka#emme+CS:vaikkemme                # ;
+vaikka#en+CS:vaikken                    # ;
+vaikka#et+CS:vaikket                    # ;
+vaikka#ette+CS:vaikkette                # ;
+

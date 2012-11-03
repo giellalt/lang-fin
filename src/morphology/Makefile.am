@@ -25,6 +25,8 @@ GT_LEXC_SRCS=\
 			 stems/adj.lexc \
 			 stems/adv.lexc \
 			 stems/cc.lexc \
+			 stems/cs.lexc \
+			 stems/digits.lexc \
 			 stems/interj.lexc \
 			 stems/noun.lexc \
 			 stems/numeral.lexc \
@@ -41,15 +43,17 @@ GT_LEXC_SRCS=\
 			 stems/altstem-adjectives.lexc \
 			 stems/altstem-nouns.lexc \
 			 stems/altstem-numerals.lexc \
-			 stems/altstem-proper-nouns.lexc \
 			 stems/altstem-verbs.lexc \
 			 affixes/acronyms.lexc \
 			 affixes/adjectives.lexc \
+			 affixes/adv.lexc \
+			 affixes/digits.lexc \
 			 affixes/nouns.lexc \
-			 affixes/verbs.lexc \
-			 affixes/commons.lexc \
-			 compounding.lexc \
-			 pos.lexc
+			 affixes/numeral.lexc \
+			 affixes/pp.lexc \
+			 affixes/prefix.lexc \
+			 affixes/pron.lexc \
+			 affixes/verbs.lexc
 
 # Set this to the names of all generated lexc files, if any
 GENERATED_LEXC_SRCS=

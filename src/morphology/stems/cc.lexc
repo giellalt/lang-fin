@@ -1,73 +1,43 @@
-! Conjunctions may be classied according to their syntax... +CC or +CS
+!! Coordinating conjunctions combine equal clauses and phrases. As subset of
+!! particles, they do not inflect. The classification is solely syntactic and
+!! semantic, but it is used in this system for compatibility with other stuff.
 
-LEXICON  CONJUNCTION
-eikä+CC:eikä   Conjunction+Ennd  ;
-eli+CC:eli   Conjunction+Ennd  ;
-elikkä+CC:elikkä   Conjunction+Ennd  ;
-ellei+CC:ellei   Conjunction+Ennd  ;
-elleivät+CC:elleivät   Conjunction+Ennd  ;
-ellemme+CC:ellemme   Conjunction+Ennd  ;
-ellen+CC:ellen   Conjunction+Ennd  ;
-ellet+CC:ellet   Conjunction+Ennd  ;
-ellette+CC:ellette   Conjunction+Ennd  ;
-enkä+CC:enkä   Conjunction+Ennd  ;
-ennen% kuin+CC:ennen% {#}kuin   Conjunction+Ennd  ;
-ennenkuin+CC:ennenkuin   Conjunction+Ennd  ;
-et+CC:et   Conjunction+Ennd  ;
-ettei+CC:ettei   Conjunction+Ennd  ;
-etteikö+CC:etteikö   Conjunction+Ennd  ;
-etteivät+CC:etteivät   Conjunction+Ennd  ;
-ettemme+CC:ettemme   Conjunction+Ennd  ;
-etten+CC:etten   Conjunction+Ennd  ;
-ettet+CC:ettet   Conjunction+Ennd  ;
-ettette+CC:ettette   Conjunction+Ennd  ;
-että+CC:että   Conjunction+Ennd  ;
-ja+CC:ja   Conjunction+Ennd  ;
-jahka+CC:jahka   Conjunction+Ennd  ;
-joko+CC:joko   Conjunction+Ennd  ;
-jollei+CC:jollei   Conjunction+Ennd  ;
-jolleivät+CC:jolleivät   Conjunction+Ennd  ;
-jollemme+CC:jollemme   Conjunction+Ennd  ;
-jollen+CC:jollen   Conjunction+Ennd  ;
-jollet+CC:jollet   Conjunction+Ennd  ;
-jollette+CC:jollette   Conjunction+Ennd  ;
-jos+CC:jos   Conjunction+Ennd  ;
-joskaan+CC:joskaan   Conjunction+Ennd  ;
-joskin+CC:joskin   Conjunction+Ennd  ;
-josko+CC:josko   Conjunction+Ennd  ;
-joskohta+CC:joskohta   Conjunction+Ennd  ;
-jotta+CC:jotta   Conjunction+Ennd  ;
-konsa+CC:konsa   Conjunction+Ennd  ;
-koska+CC:koska   Conjunction+Ennd  ;
-kuin+CC:kuin   Conjunction+Ennd  ;
-kun+CC:kun   Conjunction+Ennd  ;
-kunnes+CC:kunnes   Conjunction+Ennd  ;
-kunpa+CC:kunpa   Conjunction+Ennd  ;
-kuntaas+CC:kuntaas   Conjunction+Ennd  ;
-mikäli+CC:mikäli   Conjunction+Ennd  ;
-mut+CC:mut   Conjunction+Ennd  ;
-mutta+CC:mutta   Conjunction+Ennd  ;
-saati+CC:saati   Conjunction+Ennd  ;
-saatikka+CC:saatikka   Conjunction+Ennd  ;
-sekä+CC:sekä   Conjunction+Ennd  ;
-sillä+CC:sillä   Conjunction+Ennd  ;
-sitäpaitsi+CC:sitäpaitsi   Conjunction+Ennd  ;
-sun+CC:sun   Conjunction+Ennd  ;
-tahi+CC:tahi   Conjunction+Ennd  ;
-tahikka+CC:tahikka   Conjunction+Ennd  ;
-tai+CC:tai   Conjunction+Ennd  ;
-taikka+CC:taikka   Conjunction+Ennd  ;
-vaan+CC:vaan   Conjunction+Ennd  ;
-vai+CC:vai   Conjunction+Ennd  ;
-vaikka+CC:vaikka   Conjunction+Ennd  ;
-vaikkakaan+CC:vaikkakaan   Conjunction+Ennd  ;
-vaikkapa+CC:vaikkapa   Conjunction+Ennd  ;
-vaikkei+CC:vaikkei   Conjunction+Ennd  ;
-vaikkeivät+CC:vaikkeivät   Conjunction+Ennd  ;
-vaikkemme+CC:vaikkemme   Conjunction+Ennd  ;
-vaikken+CC:vaikken   Conjunction+Ennd  ;
-vaikket+CC:vaikket   Conjunction+Ennd  ;
-vaikkette+CC:vaikkette   Conjunction+Ennd  ;
-vaiko+CC:vaiko   Conjunction+Ennd  ;
-ynnä+CC:ynnä   Conjunction+Ennd  ;
-äläkä+CC:äläkä   Conjunction+Ennd  ;
+LEXICON CC
+!! The coordinating conjunctions are: eli(kkä), ja, joko – tai, kuin – myös,
+!! ‑kä, mutta, niin – kuin ‑kin/ myös, sekä, sekä – että, sun; tai, vaan, vai,
+!! ynnä, (saati), (sillä)
+!! (VISK § 816)
+!!
+!! Examples:
+!! € eikä
+!! € ja
+eikä+CC:eikä                            # ;
+eli+CC:eli                              # ;
+elikkä+CC:elikkä                        # ;
+enkä+CC:enkä                            # ;
+että+CC:että                            # ;
+ja+CC:ja                                # ;
+joko+CC:joko                            # ;
+joskin+CC:joskin                        # ;
+jos+CC:jos                              # ;
+jos% kohta+CC:jos% kohta                # ;
+joskohta+CC+Use/sub:joskohta            # ;
+konsa+CC:konsa                          # ;
+kuin+CC:kuin                            # ;
+myös+CC:myös                            # ;
+niin+CC:niin                            # ;
+saati+CC:saati                          # ;
+sekä+CC:sekä                            # ;
+sillä+CC:sillä                          # ;
+sitä% paitsi+CC:sitä% paitsi            # ;
+sitäpaitsi+CC+Use/Sub:sitäpaitsi        # ;
+sun+CC:sun                              # ;
+tahi+CC:tahi                            # ;
+tahikka+CC:tahikka                      # ;
+tai+CC:tai                              # ;
+taikka+CC:taikka                        # ;
+vaan+CC:vaan                            # ;
+vai+CC:vai                              # ;
+vaiko+CC:vaiko                          # ;
+ynnä+CC:ynnä                            # ;
+äläkä+CC:äläkä                          # ;
