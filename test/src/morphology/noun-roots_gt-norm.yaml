@@ -1,0 +1,22 @@
+# yaml test generated from src/morphology/stems/noun.lexc with doccomments2yaml.awk
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+
+Tests:
+  N: #
+    talo+N+Sg+Nom: talo # 
+    talo+N+Sg+Par: taloa # 
+    talo+N+Sg+Ine: taloissa # 
+    talo+N+Sg+Ela+PxSg1: talostani # 
+    talo+N+Sg+Ade+Qst: talollako # 
+    talo+N+Pl+Abl+PxPl1+Foc/pa: taloiltammepa # 
+    talo+N+Sg+Par: taloa # 
+    sälö+N+Pl+Par: sälöjä # 
+    valtio+N+Pl+Par: valtioita # 
+    lepakko+N+Pl+Nom: lepakot # 
+    pata+N+Pl+Ine: padoissa # 

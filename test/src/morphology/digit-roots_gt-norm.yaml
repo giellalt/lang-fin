@@ -1,0 +1,47 @@
+# yaml test generated from src/morphology/stems/digits.lexc with doccomments2yaml.awk
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+
+Tests:
+  DIGITS: #
+    0+Num+Sg+Nom: 0 # 
+  DIGITS_INT_LOOP: #
+    13+Num+Card+Sg+Nom: 13 # 
+    100+Num+Card+Sg+Nom: 100 # 
+    0000005550000000+Num+Card+Sg+Nom: 0000005550000000 # 
+  DIGITS_ILLIARD_LOOP: #
+    1000000000+Num+Card+Sg+Nom: 1000000000 # 
+    300000000000+Num+Card+Sg+Nom: 300000000000 # 
+    123456000000000000000000+Num+Card+Sg+Nom: 123456000000000000000000 # 
+  DIGITS_ILLION_LOOP: #
+    1000000+Num+Card+Sg+Nom: 1000000 # 
+    300000000+Num+Card+Sg+Nom: 300000000 # 
+    123456000000000000000+Num+Card+Sg+Nom: 123456000000000000000 # 
+  DIGITS_DECIMAL_LOOP: #
+    1,0+Num+Sg+Nom: 1,0 # 
+    314,1+Num+Sg+Nom: 314,1 # 
+  DIGITS_DECIMAL_LOOP_FINAL: #
+    3,141+Num+Sg+Nom: 3,141 # 
+    123,345+Num+Sg+Nom: 123,345 # 
+  DIGITS_ROMANS: #
+    MM+Num+Sg+Nom: MM # 
+    MCXI+Num+Sg+Nom: MCXI # 
+    CMXIX+Num+Sg+Nom: CMXIX # 
+  DIGITS_ROMANS_THOUSANDS: #
+    MII+Num+Sg+Nom: MII # 
+    MCCCXXII+Num+Sg+Nom: MCCCXXII # 
+  DIGITS_ROMANS_HUNDREDS: #
+    CXXI+Num+Sg+Nom: CXXI # 
+    DXXIV+Num+Sg+Nom: DXXIV # 
+  DIGITS_ROMANS_TENS: #
+    XIX+Num+Sg+Nom: XIX # 
+    XXVII+Num+Sg+Nom: XXVII # 
+  DIGITS_ROMANS_ONES: #
+    IX+Num+Sg+Nom: IX # 
+    VIII+Num+Sg+Nom: VIII # 
+    II+Num+Sg+Nom: II # 
