@@ -1,0 +1,17 @@
+# yaml test generated from src/morphology/stems/adv.lexc with doccomments2yaml.awk
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+
+Tests:
+  ADV: #
+    aakkosellisesti+Adv+Foc/kin: aakkosellisesti # 
+    aakkosellisesti+Adv: aakkosellisestikin # 
+    mukaan+Adv+PxSg1: mukaani # 
+    mukaan+Adv+PxPl1: mukaamme # 
+    ajassa+Adv: ajassa # 
+    ajassa+Adv+Qst: ajassako # 

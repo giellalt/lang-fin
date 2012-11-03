@@ -1,0 +1,18 @@
+# yaml test generated from  with doccomments2yaml.awk
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+
+Tests:
+  A: #
+    aakkostettu+A+Sg+Nom: aakkostettu # 
+    aakkostettu+A+Sg+Par: aakkostettuja # 
+    aakkostettu+A+Pl+Nom: aakkostetut # 
+    aakkostettu+A+Comp+Sg+Nom: aakkostetumpi # 
+    aakkostettu+A+Comp+Sg+Ess: aakkostetumpina # 
+    aakkostettu+A+Sup+Sg+Nom: aakkostetuin # 
+    aakkostettu+A+Sup+Pl+Nom: aakkostetuimmat # 
