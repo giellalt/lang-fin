@@ -40,10 +40,6 @@ GT_LEXC_SRCS=\
 			 stems/verb.lexc \
 			 stems/exceptions.lexc \
 			 stems/51.lexc \
-			 stems/altstem-adjectives.lexc \
-			 stems/altstem-nouns.lexc \
-			 stems/altstem-numerals.lexc \
-			 stems/altstem-verbs.lexc \
 			 affixes/acronyms.lexc \
 			 affixes/adjectives.lexc \
 			 affixes/adv.lexc \
