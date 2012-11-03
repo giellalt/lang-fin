@@ -1,175 +1,580 @@
 ! Nominal inflection and derivation
 
-LEXICON NounStem/Nominative
-@U.AGREE.SGfNOM@@D.ALLOW.SGfPAR@+Sg+Nom:@U.AGREE.SGfNOM@@D.ALLOW.SGfPAR@{AV+}	Clitic/Optional		;
-@U.AGREE.SGfNOM@@D.ALLOW.SGfPAR@+Sg+Nom:@U.AGREE.SGfNOM@@D.ALLOW.SGfPAR@{AV+}	Compounding		;
-! derivation
-+Der/inen+A:{←i~}{AV+}i	kotus_38_ADJECTIVE/stemfiller		;
-@C.LOWERCASED@+Der/lainen+A:@C.LOWERCASED@l{aä}i	kotus_38_ADJECTIVE/stemfiller		;
-@P.LONGxANALYSIS.TURE@{←i~}{AV+}i	kotus_38_ADJECTIVE/stemfiller		;
-@C.LOWERCASED@@P.LONGxANALYSIS.TURE@l{aä}i	kotus_38_ADJECTIVE/stemfiller		;
+! nominatives
+LEXICON N_BACK_NOMINATIVE
+!! € talo
++Sg+Nom:0   N_BACK_CLIT_OPT  ;
 
-LEXICON NounStem/Singular
-@D.PLURALE.TANTUM@	NounStem/Singular/Strong	;
-@D.PLURALE.TANTUM@	NounStem/Singular/Weak	;
-	NounStem/Singular/Weak/Plural	;
+LEXICON N_FRONT_NOMINATIVE
+!! € pöly
++Sg+Nom:0   N_FRONT_CLIT_OPT  ;
 
-LEXICON NounStem/Plural
-	NounStem/Plural/Strong	;
-	NounStem/Plural/Weak	;
+LEXICON N_BACK_PLNOM_CLIT
+!! € sakset
++Pl+Nom:%>t     N_BACK_CLIT_OPT  ;
 
-LEXICON NounStem/Singular/Weak/Plural
-@U.AGREE.PLfNOMACC@+Pl+Nom:@U.AGREE.PLfNOMACC@{AV-}t	Clitic/Optional		;
+LEXICON N_FRONT_PLNOM_CLIT
+!! € häät
++Pl+Nom:%>t     N_FRONT_CLIT_OPT  ;
 
-LEXICON NounStem/Singular/Weak
-	NounStem/Singular/Weak/Plural	;
-@U.AGREE.SGfABE@+Sg+Abe:@U.AGREE.SGfABE@t{AV-}t{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.SGfABE@+Sg+Abe:@U.NEED.NUMERAL@@U.AGREE.SGfABE@t{AV-}t{aä}	Compounding		;
-@U.AGREE.SGfABL@+Sg+Abl:@U.AGREE.SGfABL@l{AV-}t{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.SGfABL@+Sg+Abl:@U.NEED.NUMERAL@@U.AGREE.SGfABL@l{AV-}t{aä}	Compounding		;
-@U.AGREE.SGfADE@+Sg+Ade:@U.AGREE.SGfADE@l{AV-}l{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.SGfADE@+Sg+Ade:@U.NEED.NUMERAL@@U.AGREE.SGfADE@l{AV-}l{aä}	Compounding		;
-@U.AGREE.SGfALL@+Sg+All:@U.AGREE.SGfALL@l{AV-}le	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.SGfALL@+Sg+All:@U.NEED.NUMERAL@@U.AGREE.SGfALL@l{AV-}le	Compounding		;
-@U.AGREE.SGfELA@+Sg+Ela:@U.AGREE.SGfELA@s{AV-}t{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.SGfELA@+Sg+Ela:@U.NEED.NUMERAL@@U.AGREE.SGfELA@s{AV-}t{aä}	Compounding		;
-@U.AGREE.SGfGENACC@+Sg+Gen:@U.AGREE.SGfGENACC@n{AV-}	Clitic/Optional		;
-@U.AGREE.SGfGENACC@+Sg+Gen:@U.AGREE.SGfGENACC@n{AV-}	Compounding		;
-@U.AGREE.SGfINE@+Sg+Ine:@U.AGREE.SGfINE@s{AV-}s{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.SGfINE@+Sg+Ine:@U.NEED.NUMERAL@@U.AGREE.SGfINE@s{AV-}s{aä}	Compounding		;
-@U.AGREE.SGfTRA@+Sg+Tra:@U.AGREE.SGfTRA@k{AV-}se	Possessive/Obligatory+Vn		;
-@U.AGREE.SGfTRA@+Sg+Tra:@U.AGREE.SGfTRA@k{AV-}si	Clitic/Optional		;
-@U.NEED.NUMERAL@@U.AGREE.SGfTRA@+Sg+Tra:@U.NEED.NUMERAL@@U.AGREE.SGfTRA@k{AV-}si	Clitic/Optional		;
-! derivations
-+Sg+Der/tse+Adv+Ptl:{AV-}tse	Clitic/Optional	 ;
-+Der/llinen+A:{AV-}lli	kotus_38_NOUN/stemfiller		;
-+Der/llinen+Der/vs+N:{AV-}llis{uy}{uy}	kotus_40_NOUN/stemfiller		;
-+Der/sti+Adv:{AV-}sti	Clitic/Optional		;
-+Der/tar+N:{AV-}t{t~~}{aä}r{C}	kotus_32_NOUN/stemfiller		;
-+Der/ton+A:{AV-}t{t~~}{oö}{C}	kotus_34_NOUN/stemfiller		;
-+Der/ton+Der/uus+N:{AV-}tt{oö}m{uy}{uy}   kotus_40_NOUN/stemfiller    ;
-@P.LONGxANALYSIS.TURE@{AV-}tse	Clitic/Optional	 ;
-@P.LONGxANALYSIS.TURE@{AV-}lli	kotus_38_NOUN/stemfiller		;
-@P.LONGxANALYSIS.TURE@{AV-}llis{uy}{uy}	kotus_40_NOUN/stemfiller		;
-@P.LONGxANALYSIS.TURE@{AV-}sti	Clitic/Optional		;
-@P.LONGxANALYSIS.TURE@{AV-}t{t~~}{aä}r{C}	kotus_32_NOUN/stemfiller		;
-@P.LONGxANALYSIS.TURE@{AV-}t{t~~}{oö}{C}	kotus_34_NOUN/stemfiller		;
-@P.LONGxANALYSIS.TURE@{AV-}tt{oö}m{uy}{uy}   kotus_40_NOUN/stemfiller    ;
+! basic cases
+LEXICON N_BACK_WEAK_SINGULARS
+!! € padassa
+0    N_BACK_PLNOM_CLIT   ;
++Sg+Gen:%>n     N_BACK_CLIT_OPT   ;
++Sg+Abe:%>tta   N_BACK_POSS_AN_OPT      ;
++Sg+Abl:%>lta   N_BACK_POSS_AN_OPT      ;
++Sg+Ade:%>lla   N_BACK_POSS_AN_OPT      ;
++Sg+All:%>lle   N_BACK_POSS_EN_OPT      ;
++Sg+Ela:%>sta   N_BACK_POSS_AN_OPT      ;
++Sg+Ine:%>ssa   N_BACK_POSS_AN_OPT      ;
++Sg+Tra:%>kse   N_BACK_POSS_EN_OBL       ;
++Sg+Tra:%>ksi   N_BACK_CLIT_OPT     ;
++Sg+Tra:%>ksi   N_BACK_CLIT_OPT     ;
 
-LEXICON NounStem/Singular/Strong
-@U.AGREE.SGfESS@+Sg+Ess:@U.AGREE.SGfESS@{AV+}n{aä}	Possessive/Optional+Vn		;
-@R.NEED.NUMERAL@@U.AGREE.SGfESS@+Sg+Ess:@R.NEED.NUMERAL@@U.AGREE.SGfESS@{AV+}n{aä}	Compounding		;
-+Sg+Nom:{AV+}	Possessive/Obligatory 	;
-+Sg+Gen:{AV+}	Possessive/Obligatory 	;
-+Pl+Nom:{AV+}	Possessive/Obligatory 	;
+LEXICON N_FRONT_WEAK_SINGULARS
+!! € näyssä
+0    N_FRONT_PLNOM_CLIT   ;
++Sg+Gen:%>n     N_FRONT_CLIT_OPT   ;
++Sg+Abe:%>ttä   N_FRONT_POSS_ÄN_OPT      ;
++Sg+Abl:%>ltä   N_FRONT_POSS_ÄN_OPT      ;
++Sg+Ade:%>llä   N_FRONT_POSS_ÄN_OPT      ;
++Sg+All:%>lle   N_FRONT_POSS_EN_OPT      ;
++Sg+Ela:%>stä   N_FRONT_POSS_ÄN_OPT      ;
++Sg+Ine:%>ssä   N_FRONT_POSS_ÄN_OPT      ;
++Sg+Tra:%>kse   N_FRONT_POSS_EN_OBL       ;
++Sg+Tra:%>ksi   N_FRONT_CLIT_OPT     ;
++Sg+Tra:%>ksi   N_FRONT_CLIT_OPT     ;
 
-LEXICON NounStem/Plural/Weak
-@U.AGREE.PLfABE@+Pl+Abe:@U.AGREE.PLfABE@it{AV-}t{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.PLfABE@+Pl+Abe:@U.NEED.NUMERAL@@U.AGREE.PLfABE@it{AV-}t{aä}	Compounding		;
-@U.AGREE.PLfABL@+Pl+Abl:@U.AGREE.PLfABL@il{AV-}t{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.PLfABL@+Pl+Abl:@U.NEED.NUMERAL@@U.AGREE.PLfABL@il{AV-}t{aä}	Compounding		;
-@U.AGREE.PLfADE@+Pl+Ade:@U.AGREE.PLfADE@il{AV-}l{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.PLfADE@+Pl+Ade:@U.NEED.NUMERAL@@U.AGREE.PLfADE@il{AV-}l{aä}	Compounding		;
-@U.AGREE.PLfALL@+Pl+All:@U.AGREE.PLfALL@il{AV-}le	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.PLfALL@+Pl+All:@U.NEED.NUMERAL@@U.AGREE.PLfALL@il{AV-}le	Compounding		;
-@U.AGREE.PLfELA@+Pl+Ela:@U.AGREE.PLfELA@is{AV-}t{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.PLfELA@+Pl+Ela:@U.NEED.NUMERAL@@U.AGREE.PLfELA@is{AV-}t{aä}	Compounding		;
-@U.AGREE.PLfINE@+Pl+Ine:@U.AGREE.PLfINE@is{AV-}s{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.PLfINE@+Pl+Ine:@U.NEED.NUMERAL@@U.AGREE.PLfINE@is{AV-}s{aä}	Compounding		;
-@U.AGREE.PLfINS@+Pl+Ins:@U.AGREE.PLfINS@in{AV-}	Clitic/Optional		;
-@U.NEED.NUMERAL@@U.AGREE.PLfINS@+Pl+Ins:@U.NEED.NUMERAL@@U.AGREE.PLfINS@in{AV-}	Compounding		;
-@U.AGREE.PLfTRA@+Pl+Tra:@U.AGREE.PLfTRA@ik{AV-}se	Possessive/Obligatory+Vn		;
-@U.AGREE.PLfTRA@+Pl+Tra:@U.AGREE.PLfTRA@ik{AV-}si	Clitic/Optional		;
-@U.NEED.NUMERAL@@U.AGREE.PLfTRA@+Pl+Tra:@U.NEED.NUMERAL@@U.AGREE.PLfTRA@ik{AV-}si	Compounding		;
-! derivations
-+Pl+Der/tse+Adv+Ptl:{AV-}itse	Clitic/Optional		;
-+Pl+Der/ttain+Adv+Distr:{AV-}itt{aä}in	Clitic/Optional		;
-@P.LONGxANALYSIS.TURE@{AV-}itse	Clitic/Optional		;
-@P.LONGxANALYSIS.TURE@{AV-}itt{aä}in	Clitic/Optional		;
+LEXICON N_BACK_STRONG_SINGULARS
+!! € patana
++Sg+Ess:%>na N_BACK_POSS_AN_OPT      ;
++Sg+Nom:0  N_BACK_POSS   ;
++Sg+Gen:0  N_BACK_POSS   ;
++Pl+Nom:0  N_BACK_POSS   ;
 
-LEXICON NounStem/Plural/Strong
-@U.AGREE.PLfESS@+Pl+Ess:@U.AGREE.PLfESS@{AV+}in{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.PLfESS@+Pl+Ess:@U.NEED.NUMERAL@@U.AGREE.PLfESS@{AV+}in{aä}	Compounding		;
-@U.AGREE.CMT@+Cmt:@U.AGREE.CMT@i{AV+}ne	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.CMT@+Cmt:@U.NEED.NUMERAL@@U.AGREE.CMT@i{AV+}ne	Compounding		;
+LEXICON N_FRONT_STRONG_SINGULARS
+!! € näkynä
++Sg+Ess:%>nä N_FRONT_POSS_ÄN_OPT      ;
++Sg+Nom:0  N_FRONT_POSS   ;
++Sg+Gen:0  N_FRONT_POSS   ;
++Pl+Nom:0  N_FRONT_POSS   ;
 
-LEXICON NounAllomorph/PartitiveA+Vn
-@U.AGREE.SGfPAR@+Sg+Par:@U.AGREE.SGfPAR@{aä}{AV+}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.SGfPAR@+Sg+Par:@U.NEED.NUMERAL@@U.AGREE.SGfPAR@{aä}{AV+}	Compounding		;
-@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@+Sg+Par:@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@{aä}{AV+}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@+Sg+Par:@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@{aä}{AV+}	Compounding		;
+LEXICON N_BACK_WEAK_PLURALS
+!! € padoitta
++Pl+Abe:%>i%>tta   N_BACK_POSS_AN_OPT      ;
++Pl+Abl:%>i%>lta   N_BACK_POSS_AN_OPT      ;
++Pl+Ade:%>i%>lla   N_BACK_POSS_AN_OPT      ;
++Pl+All:%>i%>lle  N_BACK_POSS_AN_OPT      ;
++Pl+Ela:%>i%>sta   N_BACK_POSS_AN_OPT      ;
++Pl+Ine:%>i%>ssa   N_BACK_POSS_AN_OPT      ;
++Pl+Ins:%>i%>n    N_BACK_CLIT_OPT     ;
++Pl+Tra:%>i%>kse  N_BACK_POSS_EN_OBL        ;
++Pl+Tra:%>i%>ksi  N_BACK_CLIT_OPT     ;
 
-LEXICON NounAllomorph/PartitiveA
-@U.AGREE.SGfPAR@+Sg+Par:@U.AGREE.SGfPAR@{aä}{AV+}	Possessive/Optional		;
-@U.NEED.NUMERAL@@U.AGREE.SGfPAR@+Sg+Par:@U.NEED.NUMERAL@@U.AGREE.SGfPAR@{aä}{AV+}	Compounding		;
-@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@+Sg+Par:@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@{aä}{AV+}	Possessive/Optional		;
-@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@+Sg+Par:@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@{aä}{AV+}	Compounding		;
+LEXICON N_FRONT_WEAK_PLURALS
+!! € näyittä
++Pl+Abe:%>i%>ttä   N_FRONT_POSS_ÄN_OPT      ;
++Pl+Abl:%>i%>ltä   N_FRONT_POSS_ÄN_OPT      ;
++Pl+Ade:%>i%>llä   N_FRONT_POSS_ÄN_OPT      ;
++Pl+All:%>i%>lle  N_FRONT_POSS_ÄN_OPT      ;
++Pl+Ela:%>i%>stä   N_FRONT_POSS_ÄN_OPT      ;
++Pl+Ine:%>i%>ssä   N_FRONT_POSS_ÄN_OPT      ;
++Pl+Ins:%>i%>n    N_FRONT_CLIT_OPT     ;
++Pl+Tra:%>i%>kse  N_FRONT_POSS_EN_OBL        ;
++Pl+Tra:%>i%>ksi  N_FRONT_CLIT_OPT     ;
 
-LEXICON NounAllomorph/PartitiveTA
-@U.AGREE.SGfPAR@+Sg+Par:@U.AGREE.SGfPAR@{AV-}t{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.SGfPAR@+Sg+Par:@U.NEED.NUMERAL@@U.AGREE.SGfPAR@{AV-}t{aä}	Compounding		;
-@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@+Sg+Par:@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@{AV-}t{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@+Sg+Par:@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@{AV-}t{aä}	Compounding		;
+LEXICON N_FRONT_STRONG_PLURALS
+!! € näkyinä
++Pl+Ess:%>i%>nä   N_FRONT_POSS_ÄN_OPT      ;
++Cmt:%>i%>ne        N_FRONT_POSS_ÄN_OPT      ;
 
-LEXICON NounAllomorph/IllativeHVN
-@U.AGREE.SGfILL@+Sg+Ill:@U.AGREE.SGfILL@{AV+}h{aeiouyäö}n	Possessive/Optional		;
-@U.NEED.NUMERAL@@U.AGREE.SGfILL@+Sg+Ill:@U.NEED.NUMERAL@@U.AGREE.SGfILL@{AV+}h{aeiouyäö}n	Compounding		;
-
-LEXICON NounAllomorph/PartitiveIA
-@U.AGREE.PLfPAR@+Pl+Par:@U.AGREE.PLfPAR@i{aä}{AV+}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.PLfPAR@+Pl+Par:@U.NEED.NUMERAL@@U.AGREE.PLfPAR@i{aä}{AV+}	Compounding		;
-
-LEXICON NounAllomorph/GenitiveIDEN
-@U.AGREE.PLfGEN@+Pl+Gen:@U.AGREE.PLfGEN@i{AV-}den	Possessive/Optional		;
-@U.AGREE.PLfGEN@+Pl+Gen:@U.AGREE.PLfGEN@i{AV-}den	Compounding		;
-
-LEXICON NounAllomorph/GenitiveIEN
-@U.AGREE.PLfGEN@+Pl+Gen:@U.AGREE.PLfGEN@i{AV+}en	Possessive/Optional		;
-@U.AGREE.PLfGEN@+Pl+Gen:@U.AGREE.PLfGEN@i{AV+}en	Compounding		;
-
-LEXICON NounAllomorph/IllativeIHIN
-@U.AGREE.PLfILL@+Pl+Ill:@U.AGREE.PLfILL@i{AV+}hin	Possessive/Optional		;
-@U.NEED.NUMERAL@@U.AGREE.PLfILL@+Pl+Ill:@U.NEED.NUMERAL@@U.AGREE.PLfILL@i{AV+}hin	Compounding		;
-
-LEXICON NounAllomorph/IllativeIIN
-@U.AGREE.PLfILL@+Pl+Ill:@U.AGREE.PLfILL@iin{AV+}	Possessive/Optional		;
-@U.NEED.NUMERAL@@U.AGREE.PLfILL@+Pl+Ill:@U.NEED.NUMERAL@@U.AGREE.PLfILL@iin{AV+}	Compounding		;
-
-LEXICON NounAllomorph/GenitiveIN
-@U.AGREE.PLfGEN@+Pl+Gen:@U.AGREE.PLfGEN@in{AV+}	Possessive/Optional		;
-@U.AGREE.PLfGEN@+Pl+Gen:@U.AGREE.PLfGEN@in{AV+}	Compounding		;
-
-LEXICON NounAllomorph/IllativeISIIN
-@U.AGREE.PLfILL@+Pl+Ill:@U.AGREE.PLfILL@i{AV+}siin	Possessive/Optional		;
-@U.NEED.NUMERAL@@U.AGREE.PLfILL@+Pl+Ill:@U.NEED.NUMERAL@@U.AGREE.PLfILL@i{AV+}siin	Compounding		;
-
-LEXICON NounAllomorph/PartitiveITA
-@U.AGREE.PLfPAR@+Pl+Par:@U.AGREE.PLfPAR@i{AV-}t{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.PLfPAR@+Pl+Par:@U.NEED.NUMERAL@@U.AGREE.PLfPAR@i{AV-}t{aä}	Compounding		;
+LEXICON N_BACK_STRONG_PLURALS
+!! € patoina
++Pl+Ess:%>i%>na   N_BACK_POSS_AN_OPT      ;
++Cmt:%>i%>ne        N_BACK_POSS_AN_OPT      ;
 
 
-LEXICON NounAllomorph/GenitiveITTEN
-@U.AGREE.PLfGEN@+Pl+Gen:@U.AGREE.PLfGEN@it{AV-}ten	Possessive/Optional		;
-@U.AGREE.PLfGEN@+Pl+Gen:@U.AGREE.PLfGEN@it{AV-}ten	Compounding		;
+! allomorphs
+LEXICON N_BACK_PARTITIVE_A
+!! € politiikkaa
+!! $ politiikkaaan
++Sg+Par:%>a      N_BACK_POSS_OPT      ;
 
-LEXICON NounAllomorph/PartitiveJA
-@U.AGREE.PLfPAR@+Pl+Par:@U.AGREE.PLfPAR@{AV+}j{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.PLfPAR@+Pl+Par:@U.NEED.NUMERAL@@U.AGREE.PLfPAR@{AV+}j{aä}	Compounding		;
+LEXICON N_FRONT_PARTITIVE_Ä
+!! € kysyntää
+!! $ kysyntäään
++Sg+Par:%>ä      N_FRONT_POSS_OPT      ;
 
-LEXICON NounAllomorph/GenitiveJEN
-@U.AGREE.PLfGEN@+Pl+Gen:@U.AGREE.PLfGEN@{AV+}jen	Possessive/Optional		;
-@U.AGREE.PLfGEN@+Pl+Gen:@U.AGREE.PLfGEN@{AV+}jen	Compounding		;
+LEXICON N_BACK_PARTITIVE_A_AN
+!! € patoa
+!! € patoaan
++Sg+Par:%>a      N_BACK_POSS_AN_OPT      ;
 
-LEXICON NounAllomorph/IllativeSEEN
-@U.AGREE.SGfILL@+Sg+Ill:@U.AGREE.SGfILL@seen	Possessive/Optional		;
-@U.NEED.NUMERAL@@U.AGREE.SGfILL@+Sg+Ill:@U.NEED.NUMERAL@@U.AGREE.SGfILL@seen	Compounding		;
+LEXICON N_FRONT_PARTITIVE_Ä_ÄN
+!! € näkyä
+!! € näkyään
+0+Sg+Par:%>ä     N_FRONT_POSS_ÄN_OPT     ;
 
-LEXICON NounAllomorph/GenitiveTEN
-@U.AGREE.PLfGEN@+Pl+Gen:@U.AGREE.PLfGEN@{AV-}ten	Possessive/Optional		;
-@U.AGREE.PLfGEN@+Pl+Gen:@U.AGREE.PLfGEN@{AV-}ten	Compounding		;
+LEXICON N_BACK_PARTITIVE_TA
+!! € taimenta
++Sg+Par:%>ta     N_BACK_POSS_AN_OPT      ;
 
-LEXICON NounAllomorph/IllativeVN
-@U.AGREE.SGfILL@+Sg+Ill:@U.AGREE.SGfILL@{AV+}{aeiouyäö}n	Possessive/Optional		;
-@U.NEED.NUMERAL@@U.AGREE.SGfILL@+Sg+Ill:@U.NEED.NUMERAL@@U.AGREE.SGfILL@{AV+}{aeiouyäö}n	Compounding		;
+LEXICON N_FRONT_PARTITIVE_TÄ
+!! € tietä
++Sg+Par:%>tä     N_FRONT_POSS_ÄN_OPT      ;
 
+LEXICON N_BACK_ILLATIVE_HAN
+!! € maahan
++Sg+Ill:%>han    #         ;
++Sg+Ill:%>ha     N_BACK_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_HEN
+!! € toffeehen
++Sg+Ill:%>hen    #         ;
++Sg+Ill:%>he     N_BACK_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_HEN
+!! € tiehen
++Sg+Ill:%>hen    #         ;
++Sg+Ill:%>he     N_FRONT_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_HIN
+!! € haihin
++Sg+Ill:%>hin    #         ;
++Sg+Ill:%>hi     N_BACK_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_HIN
+!! € piihin
++Sg+Ill:%>hin    #         ;
++Sg+Ill:%>hi     N_FRONT_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_HON
+!! € suohon
++Sg+Ill:%>hon    #         ;
++Sg+Ill:%>ho     N_BACK_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_HUN
+!! € puuhun
++Sg+Ill:%>hun    #         ;
++Sg+Ill:%>hu     N_BACK_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_HYN
+!! € pyyhyn
++Sg+Ill:%>hyn    #         ;
++Sg+Ill:%>hy     N_FRONT_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_HÄN
+!! € päähän
++Sg+Ill:%>hän    #         ;
++Sg+Ill:%>hä     N_FRONT_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_HÖN
+!! € työhön
++Sg+Ill:%>hön    #         ;
++Sg+Ill:%>hö     N_FRONT_POSS     ;
+
+LEXICON N_BACK_PARTITIVE_IA
+!! € koiria
++Pl+Par:%>i%>a    N_BACK_POSS_AN_OPT      ;
+
+LEXICON N_FRONT_PARTITIVE_IÄ
+!! € kärsiä
++Pl+Par:%>i%>ä    N_FRONT_POSS_ÄN_OPT      ;
+
+LEXICON N_BACK_GENITIVE_IDEN
+!! € lepakoiden
++Pl+Gen:%>i%>den    #     ;
++Pl+Gen:%>i%>de     N_BACK_POSS     ;
+
+LEXICON N_FRONT_GENITIVE_IDEN
+!! € kännyköiden
++Pl+Gen:%>i%>den    #     ;
++Pl+Gen:%>i%>de     N_FRONT_POSS     ;
+
+LEXICON N_BACK_GENITIVE_IEN
+!! € naisien
++Pl+Gen:%>i%>en   #     ;
++Pl+Gen:%>i%>e    N_BACK_POSS     ;
+
+LEXICON N_FRONT_GENITIVE_IEN
+!! € murhien
++Pl+Gen:%>i%>en   #     ;
++Pl+Gen:%>i%>e    N_FRONT_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_IHIN
+!! € taloihin
++Pl+Ill:%>i%>hin   #    ;
++Pl+Ill:%>i%>hi    N_BACK_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_IHIN
+!! € näkyihin
++Pl+Ill:%>i%>hin   #    ;
++Pl+Ill:%>i%>hi    N_FRONT_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_IIN
+!! € koiriin
++Pl+Ill:%>i%>in    #     ;
++Pl+Ill:%>i%>i     N_BACK_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_IIN
+!! € sieniin
++Pl+Ill:%>i%>in    #     ;
++Pl+Ill:%>i%>i     N_FRONT_POSS     ;
+
+LEXICON N_BACK_GENITIVE_IN
+!! € patain
++Pl+Gen:%>i%>n    #     ;
++Pl+Gen:%>i     N_BACK_POSS     ;
+
+LEXICON N_FRONT_GENITIVE_IN
+!! € tyrmäin
++Pl+Gen:%>i%>n    #     ;
++Pl+Gen:%>i     N_FRONT_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_ISIIN
+!! € sokeisiin
++Pl+Ill:%>i%>siin  #     ;
++Pl+Ill:%>i%>sii   N_BACK_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_ISIIN
+!! € keväisiin
++Pl+Ill:%>i%>siin  #     ;
++Pl+Ill:%>i%>sii   N_FRONT_POSS     ;
+
+LEXICON N_BACK_PARTITIVE_ITA
+!! € tienoita
++Pl+Par:%>i%>ta   N_BACK_POSS_AN_OPT      ;
+
+LEXICON N_FRONT_PARTITIVE_ITÄ
+!! € teitä
++Pl+Par:%>i%>tä   N_FRONT_POSS_ÄN_OPT      ;
+
+LEXICON N_BACK_GENITIVE_ITTEN
+!! € tienoitten
++Pl+Gen:%>i%>tten     #     ;
++Pl+Gen:%>i%>tte      N_BACK_POSS     ;
+
+LEXICON N_FRONT_GENITIVE_ITTEN
+!! € teitten
++Pl+Gen:%>i%>tten     #     ;
++Pl+Gen:%>i%>tte      N_FRONT_POSS     ;
+
+LEXICON N_BACK_PARTITIVE_JA
+!! € lepakkoja
++Pl+Par:%>j%>a     N_BACK_POSS_AN_OPT      ;
+
+LEXICON N_FRONT_PARTITIVE_JÄ
+!! € pyhäkköjä
++Pl+Par:%>j%>ä     N_FRONT_POSS_ÄN_OPT      ;
+
+LEXICON N_BACK_GENITIVE_JEN
+!! € lepakkojen
++Pl+Gen:%>j%>en    #     ;
++Pl+Gen:%>j%>e     N_BACK_POSS     ;
+
+LEXICON N_FRONT_GENITIVE_JEN
+!! € pyhäkköjen
++Pl+Gen:%>j%>en    #     ;
++Pl+Gen:%>j%>e     N_FRONT_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_SEEN
+!! € tienooseen
++Sg+Ill:%>seen      #     ;
++Sg+Ill:%>see       N_BACK_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_SEEN
+!! € miljööseen
++Sg+Ill:%>seen      #     ;
++Sg+Ill:%>see       N_FRONT_POSS     ;
+
+LEXICON N_BACK_GENITIVE_TEN
+!! € sisarten
++Pl+Gen:%>ten    #     ;
++Pl+Gen:%>te     N_BACK_POSS     ;
+
+LEXICON N_FRONT_GENITIVE_TEN
+!! € väänninten
++Pl+Gen:%>ten    #     ;
++Pl+Gen:%>te     N_FRONT_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_AN
+!! € kirjaan
++Sg+Ill:%>an     #         ;
++Sg+Ill:%>a      N_BACK_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_EN
+!! € tuleen
++Sg+Ill:%>en     #         ;
++Sg+Ill:%>e      N_BACK_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_EN
+!! € hiireen
++Sg+Ill:%>en     #         ;
++Sg+Ill:%>e      N_FRONT_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_IN
+!! € ruuviin
++Sg+Ill:%>in     #         ;
++Sg+Ill:%>i      N_BACK_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_IN
+!! € tyyliin
++Sg+Ill:%>in     #         ;
++Sg+Ill:%>i      N_FRONT_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_ON
+!! € taloon
++Sg+Ill:%>on     #         ;
++Sg+Ill:%>o      N_BACK_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_UN
+!! € nieluun
++Sg+Ill:%>un     #         ;
++Sg+Ill:%>u      N_BACK_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_YN
+!! € näkyyn
++Sg+Ill:%>yn     #         ;
++Sg+Ill:%>y      N_FRONT_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_ÄN
+!! € räkään
++Sg+Ill:%>än     #         ;
++Sg+Ill:%>ä      N_FRONT_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_ÖN
+!! € tönöön
++Sg+Ill:%>ön     #         ;
++Sg+Ill:%>ö      N_FRONT_POSS     ;
+
+! possessives
+LEXICON N_FRONT_POSS
+!! € taloni
++PxSg1:%>ni  N_FRONT_CLIT_OPT        ;
++PxSg2:%>si  N_FRONT_CLIT_OPT        ;
++PxSg3:%>nsä N_FRONT_CLIT_OPT        ;
++PxPl1:%>mme N_FRONT_CLIT_OPT        ;
++PxPl2:%>nne N_FRONT_CLIT_OPT        ;
++PxPl3:%>nsä N_FRONT_CLIT_OPT        ;
+
+LEXICON N_BACK_POSS
+!! € tönönsä
++PxSg1:%>ni  N_BACK_CLIT_OPT        ;
++PxSg2:%>si  N_BACK_CLIT_OPT        ;
++PxSg3:%>nsa N_BACK_CLIT_OPT        ;
++PxPl1:%>mme N_BACK_CLIT_OPT        ;
++PxPl2:%>nne N_BACK_CLIT_OPT        ;
++PxPl3:%>nsa N_BACK_CLIT_OPT        ;
+
+LEXICON N_BACK_POSS_AN
+!! € taloaan
++PxSg3:%>an    N_BACK_CLIT_OPT     ;
++PxPl3:%>an    N_BACK_CLIT_OPT     ;
+
+LEXICON N_BACK_POSS_EN
+!! € tienookseen
++PxSg3:%>en    N_BACK_CLIT_OPT     ;
++PxPl3:%>en    N_BACK_CLIT_OPT     ;
+
+LEXICON N_FRONT_POSS_EN
+!! € tiekseen
++PxSg3:%>en    N_FRONT_CLIT_OPT     ;
++PxPl3:%>en    N_FRONT_CLIT_OPT     ;
+
+LEXICON N_FRONT_POSS_ÄN
+!! € tönöään
++PxSg3:%>än    N_FRONT_CLIT_OPT     ;
++PxPl3:%>än    N_FRONT_CLIT_OPT     ;
+
+LEXICON N_BACK_CLIT
+!! € talohan
++Foc/han:%>han   #        ;
++Foc/han+Foc/kaan:%>hankaan  #        ;
++Foc/han+Qst:%>hanko #        ;
++Foc/han+Foc/pa:%>hanpa #        ;
++Qst:%>ko #        ;
++Qst+Foc/han:%>kohan #        ;
++Qst+Foc/kaan:%>kokaan    #        ;
++Qst+Foc/kin:%>kokin    #        ;
++Qst+Foc/pa:%>kopa   #        ;
++Qst+Foc/s:%>kos    #        ;
++Foc/pa:%>pa #        ;
++Foc/pa+Foc/han:%>pahan #        ;
++Foc/pa+Foc/kaan:%>pakaan    #        ;
++Foc/pa+Foc/kin:%>pakin    #        ;
++Foc/pa+Qst:%>pako   #        ;
++Foc/pa+Foc/s:%>pas    #        ;
++Foc/kin:%>kin  #        ;
++Foc/kin+Foc/han:%>kinhan  #        ;
++Foc/kin+Foc/kaan:%>kinkaan #        ;
++Foc/kin+Qst:%>kinko    #        ;
++Foc/kin+Foc/pa:%>kinpa    #        ;
++Foc/kaan:%>kaan  #        ;
++Foc/kaan+Foc/han:%>kaanhan  #        ;
++Foc/kaan+Foc/kin:%>kaankin #        ;
++Foc/kaan+Qst:%>kaanko    #        ;
++Foc/kaan+Foc/pa:%>kaanpa    #        ;
+
+LEXICON N_FRONT_CLIT
+!! € tönöhän
++Foc/han:%>hän   #        ;
++Foc/han+Foc/kaan:%>hänkään  #        ;
++Foc/han+Qst:%>hänkö #        ;
++Foc/han+Foc/pa:%>hänpä #        ;
++Qst:%>kö #        ;
++Qst+Foc/han:%>köhän #        ;
++Qst+Foc/kaan:%>kökään    #        ;
++Qst+Foc/kin:%>kökin    #        ;
++Qst+Foc/pa:%>köpä   #        ;
++Qst+Foc/s:%>kös    #        ;
++Foc/pa:%>pä #        ;
++Foc/pa+Foc/han:%>pähän #        ;
++Foc/pa+Foc/kaan:%>päkään    #        ;
++Foc/pa+Foc/kin:%>päkin    #        ;
++Foc/pa+Qst:%>päkö   #        ;
++Foc/pa+Foc/s:%>päs    #        ;
++Foc/kin:%>kin  #        ;
++Foc/kin+Foc/han:%>kinhän  #        ;
++Foc/kin+Foc/kaan:%>kinkään #        ;
++Foc/kin+Qst:%>kinkö    #        ;
++Foc/kin+Foc/pa:%>kinpä    #        ;
++Foc/kaan:%>kään  #        ;
++Foc/kaan+Foc/han:%>käänhän  #        ;
++Foc/kaan+Foc/kin:%>käänkin #        ;
++Foc/kaan+Qst:%>käänkö    #        ;
++Foc/kaan+Foc/pa:%>käänpä    #        ;
+
+
+! shorthands
+
+LEXICON N_BACK_CLIT_OPT
+0    #   ;
+0   N_BACK_CLIT    ;
+
+LEXICON N_FRONT_CLIT_OPT
+0    #   ;
+0   N_FRONT_CLIT    ;
+
+LEXICON N_BACK_SINGULARS
+0    N_BACK_STRONG_SINGULARS ;
+0    N_BACK_WEAK_SINGULARS   ;
+
+LEXICON N_FRONT_SINGULARS
+0    N_FRONT_STRONG_SINGULARS ;
+0    N_FRONT_WEAK_SINGULARS   ;
+
+LEXICON N_FRONT_PLURALS
+0   N_FRONT_STRONG_PLURALS ;
+0   N_FRONT_WEAK_PLURALS ;
+
+LEXICON N_BACK_PLURALS
+0   N_BACK_STRONG_PLURALS ;
+0   N_BACK_WEAK_PLURALS ;
+
+LEXICON N_BACK_POSS_AN_OPT
+0    N_BACK_POSS   ;
+0    N_BACK_POSS_AN ;
+0    N_BACK_CLIT ;
+0    #    ;
+
+LEXICON N_FRONT_POSS_ÄN_OPT
+0    N_FRONT_POSS   ;
+0    N_FRONT_POSS_ÄN  ;
+0    N_FRONT_CLIT ;
+0    #    ;
+
+LEXICON N_BACK_POSS_EN_OPT
+0    N_BACK_POSS   ;
+0    N_BACK_POSS_EN ;
+0    N_BACK_CLIT ;
+0    #    ;
+
+LEXICON N_FRONT_POSS_EN_OPT
+0    N_FRONT_POSS   ;
+0    N_FRONT_POSS_EN  ;
+0    N_FRONT_CLIT ;
+0    #    ;
+
+LEXICON N_BACK_POSS_OPT
+0    N_BACK_POSS   ;
+0    N_BACK_CLIT ;
+0    #    ;
+
+LEXICON N_FRONT_POSS_OPT
+0    N_FRONT_POSS   ;
+0    N_FRONT_CLIT ;
+0    #    ;
+
+LEXICON N_BACK_POSS_EN_OBL
+0   N_BACK_POSS  ;
+0   N_BACK_POSS_EN   ;
+
+LEXICON N_FRONT_POSS_EN_OBL
+0   N_FRONT_POSS  ;
+0   N_FRONT_POSS_EN   ;
+
+! derivs
+!LEXICON inen-lainenounDerivation
+!i   nen-se-soun+ta-en-ia-ien-ten-iin ;
+!lai nen-se-soun+ta-en-ia-ien-ten-iin ;
+!
+!LEXICON inen-läinenounDerivation
+!i   nen-se-soun+ta-en-ia-ien-ten-iin ;
+!läi nen-se-soun+ta-en-ia-ien-ten-iin ;
+!
+!LEXICON tse-llinen-sti-tar-tonounDerivations
+!tse             ko-kaan+Adverb  ;
+!lli             nen-se-soun+ta-en-ia-ien-ten-iin        ;
+!llisuu          s-te-de-ks-toun+ta-en-ia-ien-iin        ;
+!sti             ko-kaan+Adverb     ;
+!t               ar-tare-taroun+ta-en-ia-ien-ten-iin   ;
+!t               on-toma-tomoun+ta-an-ia-ien-(ten)-iin ;
+!ttomuu          s-te-de-ks-toun+ta-en-ia-ien-iin     ;
+!
+!LEXICON itse-ittainounDerivations
+!itse    ko-kaan+Adverb     ;
+!ittain  ko-kaan+Adverb     ;
+!
+!LEXICON itse-ittäinounDerivations
+!itse    kö-kään+Adverb     ;
+!ittäin  kö-kään+Adverb     ;
+!
+! compounding
+LEXICON N_COMPOUND_0
+!! € talojuttu
+0   N_COMPOUND  ;
+
+LEXICON N_COMPOUND_N
+!! € talonjuttu
+0:%>n               N_COMPOUND    ;
+
+LEXICON N_COMPOUND_IEN
+!! € naisienjuttu
+0:%>i%>en                 N_COMPOUND  ;
+
+LEXICON N_COMPOUND_IDEN
+!! € lepakoidenjuttu
+0:%>i%>den                 N_COMPOUND  ;
+
+LEXICON N_COMPOUND_IN
+!! € vanhempainjuttu
+0:%>i%>n                 N_COMPOUND     ;
+
+LEXICON N_COMPOUND_ITTEN
+!! € lepakoittenjuttu
+0:%>i%>tten               N_COMPOUND     ;
+
+LEXICON N_COMPOUND_JEN
+!! € talojenjuttu
+0:%>j%>en                 N_COMPOUND     ;
+
+LEXICON N_COMPOUND_TEN
+!! € miestenjuttu
+0:%>ten                 N_COMPOUND     ;
+
+
+LEXICON N_COMPOUND
+!! € talojuttu
++Use/Circ#:0#     NOMINAL   ;
 

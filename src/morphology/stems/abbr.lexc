@@ -1,51 +1,176 @@
-! Add shortenings that do not inflect here. With final full stop if needed.
+!! Abbreviations are shortened forms that do not inflect. They have whatever
+!! classification they would have if they were read out, and possibly additional
+!! analysis of an abbreviation.
 
-LEXICON  ABBREVIATION
-A%0+N:A%0   Abbreviation+Ennd  ;
-A1+N:A1   Abbreviation+Ennd  ;
-A2+N:A2   Abbreviation+Ennd  ;
-A3+N:A3   Abbreviation+Ennd  ;
-A4+N:A4   Abbreviation+Ennd  ;
-A5+N:A5   Abbreviation+Ennd  ;
-ab+N:ab   Abbreviation+Ennd  ;
-Ab+N:Ab   Abbreviation+Ennd  ;
-alv.+N:alv.   Abbreviation+Ennd  ;
-cm.+N:cm.   Abbreviation+Ennd  ;
-cm+N:cm   Abbreviation+Ennd  ;
-eaa.+N:eaa.   Abbreviation+Ennd  ;
-eKr.+N:eKr.   Abbreviation+Ennd  ;
-em.+N:em.   Abbreviation+Ennd  ;
-esim.+N:esim.   Abbreviation+Ennd  ;
-GTi+N:GTi   Abbreviation+Ennd  ;
-Gt+N:Gt   Abbreviation+Ennd  ;
-inc+N:inc   Abbreviation+Ennd  ;
-jne.+N:jne.   Abbreviation+Ennd  ;
-JyP+N:JyP   Abbreviation+Ennd  ;
-KalPa+N:KalPa   Abbreviation+Ennd  ;
-kcal+N:kcal   Abbreviation+Ennd  ;
-kg.+N:kg.   Abbreviation+Ennd  ;
-kg+N:kg   Abbreviation+Ennd  ;
-klo+N:klo   Abbreviation+Ennd  ;
-km/h+N:km/h   Abbreviation+Ennd  ;
-km+N:km   Abbreviation+Ennd  ;
-kok.+N:kok.   Abbreviation+Ennd  ;
-KuPS+N:KuPS   Abbreviation+Ennd  ;
-mm.+N:mm.   Abbreviation+Ennd  ;
-mm+N:mm   Abbreviation+Ennd  ;
-MyPa+N:MyPa   Abbreviation+Ennd  ;
-n.+N:n.   Abbreviation+Ennd  ;
-nro+N:nro   Abbreviation+Ennd  ;
-ns.+N:ns.   Abbreviation+Ennd  ;
-ns+N:ns   Abbreviation+Ennd  ;
-oik.+N:oik.   Abbreviation+Ennd  ;
-RoPS+N:RoPS   Abbreviation+Ennd  ;
-s.+N:s.   Abbreviation+Ennd  ;
-sov.+N:sov.   Abbreviation+Ennd  ;
-sp.+N:sp.   Abbreviation+Ennd  ;
-suom.+N:suom.   Abbreviation+Ennd  ;
-sähköp.+N:sähköp.   Abbreviation+Ennd  ;
-säv.+N:säv.   Abbreviation+Ennd  ;
-vas.+N:vas.   Abbreviation+Ennd  ;
-v.+N:v.   Abbreviation+Ennd  ;
-vv.+N:vv.   Abbreviation+Ennd  ;
-yms.+N:yms.   Abbreviation+Ennd  ;
+LEXICON  ABBR
+!! Examples:
+!! € eaa.
+!! € esim.
+!! $ esim
+A%0+N:A%0                               # ; ! Paper size
+A1+N:A1                                 # ; ! Paper size
+A2+N:A2                                 # ; ! Paper size
+A3+N:A3                                 # ; ! Paper size
+A4+N:A4                                 # ; ! Paper size
+A5+N:A5                                 # ; ! Paper size
+ab+N:ab                                 # ; ! swed. aktiebolag (LLC)
+aik.+Adp:aik.                           # ; ! aikana (during)
+akk.+N:akk.                             # ; ! akkusatiivi (accusative)
+alk.+Adp:alk.                           # ; ! alkaen (temporal from)
+alv.+N:alv.                             # ; ! arvonlisävero (VAT)
+ao.+A:ao.                               # ; ! alla/aiheena oleva (mentioned)
+ark.+N:ark.                             # ; ! arkinen (from dict. term, pedestr)
+as.+N:as.                               # ; ! 
+ay.+N:ay.                               # ; !
+dat.+N:dat.                             # ; ! datiivi (dative)
+dem.pron.+N:dem.pron.                   # ; ! demonstratiivipronomini
+eaa.+N:eaa.                             # ; ! ennen ajanlaskun alkua (BCE)
+eKr.+N:eKr.                             # ; ! ennen Kristuksen syntymää (BC)
+ekr.+N+Use/Sub:ekr.                     # ; ! ennen kristuksen syntymää
+em.+A:em.                               # ; ! edellä mainittu (abovementioned)
+em.+N:em.                               # ; ! 
+ent.+A:ent.                             # ; ! entinen (former)
+esim.+N:esim.                           # ; ! esimerkiksi (e.g.)
+evo+N:evo                               # ; ! et vaan osaa (ydkj)
+evp.+N:evp.                             # ; ! erossa vakinaisesta palveluksesta
+gen.+N:gen.                             # ; ! genetiivi (genitive)
+GTi+N:GTi                               # ; !
+hlö+N:hlö                               # ; ! henkilö (person)
+hra+N:hra                               # ; ! herra (mr.)
+huom.+N:huom.                           # ; ! huomaa (N.B.)
+hv+N:hv                                 # ; ! hyvä veli (greetz)
+ib.+N:ib.                               # ; ! ibidem
+id.+N:id.                               # ; ! id
+imperf.+N:imperf.                       # ; ! imperfect
+inc+N:inc                               # ; ! inc
+inf.+N:inf.                             # ; ! infinitive
+it.+N:it.                               # ; ! 
+jKr.+N:jKr.                             # ; ! jälkeen Kristuksen syntymän (AD)
+jllek+N:jllek                           # ; ! jollekin (for smth)
+jllk+N:jllk                             # ; ! jollakin (for smth)
+jltk+N:jltk                             # ; ! joltakin (from smth)
+jne.+N:jne.                             # ; ! ja niin edelleen (etc.)
+jnk+N:jnk                               # ; ! jonkin (of smth)
+joss+N:joss                             # ; ! jossa (somewhere)
+jssk+N:jssk                             # ; ! jossakin (somewhere)
+jstk+N:jstk                             # ; ! jostakin (from)
+jtak+N:jtak                             # ; ! jotakin (to)
+JyP+N:JyP                               # ; ! Jyväskylän pallo
+KalPa+N:KalPa                           # ; ! Kalmiston pallo
+kand.+N:kand.                           # ; ! kandidaatti (bachelor)
+ka.+N:ka.                               # ; ! keskiarvo (avg)
+kapt.+N:kapt.                           # ; ! kapteeni (captain)
+kenr.+N:kenr.                           # ; ! kenraali (general)
+kers.+N:kers.                           # ; ! kersantti (sergeant)
+kesk.+N:kesk.                           # ; ! keskusta (center party)
+khra+N:khra                             # ; ! kirkkoherra (parson)
+kk+N:kk                                 # ; ! kuukausi (month)
+kko+N:kko                               # ; ! kirkko (church)
+klo+N:klo                               # ; ! kello (time)
+k%:lo+N:k%:lo                           # ; ! kello
+k.+N:k.                                 # ; !
+kok.+N:kok.                             # ; ! kokoomus (coalition party)
+kompp.+N:kompp.                         # ; ! komppania ()
+ko.+N:ko.                               # ; ! kyseessä oleva (mentioned)
+kpl+N:kpl                               # ; ! kappale (pcs)
+krs+N:krs                               # ; ! kerros (floor)
+ks.+N:ks.                               # ; ! katso (c.f.)
+kts.+N:kts.                             # ; ! katso (c.f.)
+KuPS+N:KuPS                             # ; ! Kuopion palloseura
+kv.+N:kv.                               # ; ! 
+lis.+N:lis.                             # ; ! lisensiaatti (lic.)
+lkm.+N:lkm.                             # ; ! lukumäärä (amount)
+lk.+N:lk.                               # ; ! luokka (grade)
+l.+CC:l.                                # ; ! eli (i.e.)
+ltn.+N:ltn.                             # ; ! luutnantti (lieutenant)
+lyh.+N:lyh.                             # ; ! lyhennettynä (abbr.)
+läh.+N:läh.                             # ; ! lähes 
+ma.+N:ma.                               # ; ! 
+mlk.+N:mlk.                             # ; ! maalaiskunta (town)
+ml.+N:ml.                               # ; ! mukaan lukien (incl.)
+mm.+N:mm.                               # ; ! muun muassa (among others)
+mom.+N:mom.                             # ; ! momentti (
+mon.+N:mon.                             # ; ! monikko (pl.)
+mpy.+N:mpy.                             # ; ! 
+mt.+N:mt.                               # ; !
+mts.+N:mts.                             # ; ! mainitun tekstin sivulla (ibid)
+mv.+N:mv.                               # ; ! 
+MyPa+N:MyPa                             # ; ! Myllykosken Pallo
+n.+N:n.                                 # ; ! noin (approx.)
+N.N.+N:N.N.                             # ; ! John Doe
+nom.+N:nom.                             # ; ! nominatiivi (nominative)
+nro+N:nro                               # ; ! numero (#
+n%:ro+N:n%:ro                           # ; ! 
+ns.+N:ns.                               # ; ! niin sanottu (so-called)
+nti+N:nti                               # ; ! neiti (ms)
+nyk.+N:nyk.                             # ; ! nykyinen (currently)
+oik.+N:oik.                             # ; ! oikeammin?
+om.+N:om.                               # ; !
+o.s.+N:o.s.                             # ; ! 
+os.+N:os.                               # ; ! omaa sukuaan (née)
+par.+N:par.                             # ; ! paremmin (in dict., better)
+part.+N:part.                           # ; ! partitiivi (partitive)
+perf.+N:perf.                           # ; ! perfekti (perfect)
+pj.+N:pj.                               # ; ! puheenjohtaja (chair)
+pkt+N:pkt                               # ; ! paketti (pcs)
+pl.+N:pl.                               # ; ! plural
+pluskv.+N:pluskv.                       # ; ! pluskvamperfekti
+p.+N:p.                                 # ; ! 
+po.+N:po.                               # ; ! pitää olla (in dict., should be)
+prees.+N:prees.                         # ; ! preesens
+prof.+N:prof.                           # ; ! professori
+pron.+N:pron.                           # ; ! pronomini
+psta+N:psta                             # ; ! puolesta (on behalf of)
+pvm.+N:pvm.                             # ; ! päivämäärä (date)
+pv+N:pv                                 # ; ! 
+rek.+N:rek.                             # ; ! rekisteröity, ®
+rkl+N:rkl                               # ; ! ruokalusikka (tbsp)
+RoPS+N:RoPS                             # ; ! Rovaniemen palloseura
+rp.+N:rp.                               # ; ! 
+rva+N:rva                               # ; ! rouva (Mrs)
+ry+N:ry                                 # ; ! rekisteröity yhdistys (inc.)
+sit.+N:sit.                             # ; ! sitoutumaton (not in party)
+s.+N:s.                                 # ; ! syntynyt (birth)
+so.+N:so.                               # ; ! se on (i.e.)
+sov.+N:sov.                             # ; ! sovittanut (composer)
+sp.+N:sp.                               # ; ! 
+srk.+N:srk.                             # ; ! seurakunta (church)
+suom.+N:suom.                           # ; ! suomentanut (fi. translator)
+synt.+N:synt.                           # ; ! syntynyt (brith)
+sähköp.+N:sähköp.                       # ; ! sähkoposti (email)
+säv.+N:säv.                             # ; ! säveltänyt (composer)
+tark.+N:tark.                           # ; ! tarkistanut (editor)
+tav.+N:tav.                             # ; ! tavallisemmin (in dict, usually)
+tekn.+N:tekn.                           # ; ! tekninen (in dict., tech)
+tmi+N:tmi                               # ; ! toiminimi (
+tms.+N:tms.                             # ; ! tai muuta sellaiste (etc.)
+t.+N:t.                                 # ; ! tai (or)
+toim.% huom.+N:toim.% huom.             # ; ! toimituksen huomautus (editors nt)
+toim.+N:toim.                           # ; ! toimitus (editor)
+tri+N:tri                               # ; ! tohtori (Dr.)
+ts.+N:ts.                               # ; ! toisinsanoen (iow)
+tsto+N:tsto                             # ; ! toimisto (office)
+us.+N:us.                               # ; ! 
+vak.+N:vak.                             # ; ! 
+vanh.+N:vanh.                           # ; ! vanhastaan (in dict., earlier)
+vas.+N:vas.                             # ; ! vasemmisto (left party)
+vast.+N:vast.                           # ; ! vastaava (corresponding)
+vkl+N:vkl                               # ; ! viikonloppu (weekend)
+vklp+N:vklp                             # ; ! ''
+vko+N:vko                               # ; ! viikko (week)
+v.+N:v.                                 # ; ! vuotta (year(s))
+vpj.+N:vpj.                             # ; ! varapuheenjohtaja (vice chair)
+vrk+N:vrk                               # ; ! vuorokausi (calendar day)
+vrt.+N:vrt.                             # ; ! vertaa (c.f.)
+vs.+N:vs.                               # ; ! 
+vt.+N:vt.                               # ; ! 
+vv.+N:vv.                               # ; ! vuosina
+vänr.+N:vänr.                           # ; ! vänrikki (some military stuff)
+vääp.+N:vääp.                           # ; ! vääpeli ( more)
+yks.+N:yks.                             # ; ! yksikkö (singular)
+yl.+N:yl.                               # ; ! yleensä (in dict., usually)
+ym.+N:ym.                               # ; ! ynnä muuta (etc.)
+yms.+N:yms.                             # ; ! ynnä muuta sellaista (etc.)
+yo.+N:yo.                               # ; ! yllä oleva (aforementioned)
+yv.+N:yv.                               # ; ! 
+

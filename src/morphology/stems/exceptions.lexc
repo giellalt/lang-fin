@@ -1,138 +1,156 @@
-! This file contains all enumerated word forms that cannot reasonably be created
-! from lexical data by regular inflection
+!! Exceptions are quite strange word-forms. the ones that do not fit anywhere 
+!! else. This file contains all enumerated word forms that cannot reasonably be
+!! created from lexical data by regular inflection. Usually there should be next
+!! to none exceptions, it's always better to have a paradigm that covers only
+!! one or few words than an exception since these will not work nicely with e.g.
+!! compounding scheme or possibly many end applications.
 
-LEXICON exceptions
+LEXICON EXCEPTIONS
+!! The verb olla has very peculiar and heteroclitic inflection with lot of
+!! common short forms in standard spoken Finnish:
+!! € lie
+!! € oisin
+!! € olija
+olla+V+Act+Der/maisilla:olemaisilla             V_BACK_POSS_AN ;
+olla+V+Act+InfMa+Sg+Abe:olematta                V_BACK_POSS_AN_OPT ;
+olla+V+Act+InfMa+Sg+Ade:olemalla                V_BACK_POSS_AN_OPT ;
+olla+V+Act+InfMa+Sg+Ela:olemasta                V_BACK_POSS_AN_OPT ;
+olla+V+Act+InfMa+Sg+Ill:olemaan                 V_BACK_POSS_OPT ;
+olla+V+Act+InfMa+Sg+Ine:olemassa                V_BACK_POSS_OPT ;
+olla+V+Act+InfMa+Sg+Ins:oleman                  V_BACK_CLIT_OPT ;
+olla+V+Act+Imprt+Sg2+s:oles                     # ;
+olla+V+Act+Imprt+Sg2:ole                        V_BACK_CLIT_OPT ;
+olla+V+Act+Ind+Prs+Sg1:olen                     V_BACK_CLIT_OPT ;
+olla+V+Act+Ind+Prs+Sg2:olet                     V_BACK_CLIT_OPT ;
+olla+V+Act+Ind+Prs+Sg3:on                       V_BACK_CLIT_OPT ;
+olla+V+Act+Ind+Prs+Pl1:olemme                   V_BACK_CLIT_OPT ;
+olla+V+Act+Ind+Prs+Pl2:olette                   V_BACK_CLIT_OPT ;
+olla+V+Act+Ind+Prs+Pl3:ovat                     V_BACK_CLIT_OPT ;
+olla+V+Ind+Prs+ConNeg:ole                       V_BACK_CLIT_OPT ;
+olla+V+Act+Cond+Sg1+Dial/standard:oisin         V_BACK_CLIT_OPT ;
+olla+V+Act+Cond+Sg2+Dial/standard:oisit         V_BACK_CLIT_OPT ;
+olla+V+Act+Cond+Sg3+Dial/standard:ois           V_BACK_CLIT_OPT ;
+olla+V+Act+Cond+Pl1+Dial/standard:oisimme       V_BACK_CLIT_OPT ;
+olla+V+Act+Cond+Pl2+Dial/standard:oisitte       V_BACK_CLIT_OPT ;
+olla+V+Act+Cond+Pl3+Dial/standard:oisivat       V_BACK_CLIT_OPT ;
+olla+V+Pass+PrfPrc:ol                           A_PARANNELTU ;
+olla+V+Act+AgentPrc:olem                        A_AALTOILEVA ;
+olla+V+Act+NegPrc:olemat                        A_VIATON ;
+olla+V+Act+PrsPrc+Der/inen:olevai               A_AAKKOSELLINEN ;
+olla+V+Act+PrsPrc:olev                          A_AALTOILEVA ;
+olla+V+Der/minen:olemi                          N_AAKKOSTAMINEN ;
+olla+V+Der/ja:olij                              N_SOITTAJA ;
+olla+V+Act+PrfPrc:oll                           A_KULUNUT ;
+olla+V+Act+Pot+Sg1:lienen                       V_FRONT_CLIT_OPT ;
+olla+V+Act+Pot+Sg2:lienet                       V_FRONT_CLIT_OPT ;
+olla+V+Act+Pot+Sg3:lienee                       V_FRONT_CLIT_OPT ;
+olla+V+Act+Pot+Pl1:lienemme                     V_FRONT_CLIT_OPT ;
+olla+V+Act+Pot+Pl2:lienette                     V_FRONT_CLIT_OPT ;
+olla+V+Act+Pot+Pl3:lienevät                     V_FRONT_CLIT_OPT ;
+olla+V+Act+Pot+ConNeg:liene                     V_FRONT_CLIT_OPT ;
+olla+V+Act+Pot+ConNeg:lie                       V_FRONT_CLIT_OPT ;
 
-! present forms of olla have been pulled out from regular inflection
-@D.NEED@@P.NEED.REST@olla+V+Act+Der/maisilla:@D.NEED@@P.NEED.REST@olemaisilla	Possessive/Obligatory	;
-@D.NEED@@P.NEED.REST@olla+V+Act+InfMa+Sg+Abe:@D.NEED@@P.NEED.REST@olematta	Possessive/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+InfMa+Sg+Ade:@D.NEED@@P.NEED.REST@olemalla	Possessive/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+InfMa+Sg+Ela:@D.NEED@@P.NEED.REST@olemasta	Possessive/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+InfMa+Sg+Ill:@D.NEED@@P.NEED.REST@olemaan	Possessive/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+InfMa+Sg+Ine:@D.NEED@@P.NEED.REST@olemassa	Possessive/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+InfMa+Sg+Ins:@D.NEED@@P.NEED.REST@oleman	Possessive/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Imprt+Sg2+s:@D.NEED@@P.NEED.REST@oles	Ennd	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Imprt+Sg2:@D.NEED@@P.NEED.REST@ole	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Ind+Prs+Sg1:@D.NEED@@P.NEED.REST@olen	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Ind+Prs+Sg2:@D.NEED@@P.NEED.REST@olet	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Ind+Prs+Sg3:@D.NEED@@P.NEED.REST@on	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Ind+Prs+Pl1:@D.NEED@@P.NEED.REST@olemme	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Ind+Prs+Pl2:@D.NEED@@P.NEED.REST@olette	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Ind+Prs+Pl3:@D.NEED@@P.NEED.REST@ovat	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Ind+Prs+ConNeg:@D.NEED@@P.NEED.REST@ole	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Cond+Sg1+Use/Sub:@D.NEED@@P.NEED.REST@oisin	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Cond+Sg2+Use/Sub:@D.NEED@@P.NEED.REST@oisit	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Cond+Sg3+Use/Sub:@D.NEED@@P.NEED.REST@ois	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Cond+Pl1+Use/Sub:@D.NEED@@P.NEED.REST@oisimme	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Cond+Pl2+Use/Sub:@D.NEED@@P.NEED.REST@oisitte	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Cond+Pl3+Use/Sub:@D.NEED@@P.NEED.REST@oisivat	Clitic/Optional	;
-@U.NEED.NOMINAL@olla+V+Pass+PrfPrc:@U.NEED.NOMINAL@ol{t~~}u{I}	kotus_1_ADJECTIVE/stemfiller	;
-@U.NEED.NOMINAL@olla+V+Act+AgentPrc:@U.NEED.NOMINAL@olem	kotus_10_ADJECTIVE/stemfiller	;
-@U.NEED.NOMINAL@olla+V+Act+NegPrc:@U.NEED.NOMINAL@olemat{t~~}o{C}	kotus_34_ADJECTIVE/stemfiller	;
-@U.NEED.NOMINAL@olla+V+Act+PrsPrc+Der/inen:@U.NEED.NOMINAL@olevai	kotus_38_ADJECTIVE/stemfiller	;
-@U.NEED.NOMINAL@olla+V+Act+PrsPrc:@U.NEED.NOMINAL@olev	kotus_10_ADJECTIVE/stemfiller	;
-@U.NEED.NOMINAL@olla+V+Der/minen:@U.NEED.NOMINAL@olemi	kotus_38_NOUN/stemfiller	;
-@U.NEED.NOMINAL@olla+V+Der/ja:@U.NEED.NOMINAL@olij	kotus_12_NOUN/stemfiller	;
+!! negation verb has partial inflection:
+!! € en
+!! € älkää
+!! € älkööt
+ei+V+Neg+Act+Sg1:en             V_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Sg1+Foc/ka:enkä    V_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Sg2:et             V_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Sg2+Foc/ka:etkä    V_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Sg3:ei             V_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Sg3+Foc/ka:eikä    V_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Pl1:emme           V_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Pl1+Foc/ka:emmekä  V_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Pl2:ette           V_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Pl2+Foc/ka:ettekä  V_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Pl3:eivät          V_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Pl3+Foc/ka:eivätkä V_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Imprt+Sg2:älä                  V_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Imprt+Sg2+Foc/ka:äläkä         V_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Imprt+Sg3:älköön               V_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Imprt+Sg3+Foc/ka:älköönkä      V_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Imprt+Pl1:älkäämme             V_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Imprt+Pl1+Foc/ka:älkäämmekä    V_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Imprt+Pl2:älkää                V_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Imprt+Pl2+Foc/ka:älkääkä       V_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Imprt+Pl3:älkööt               V_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Imprt+Pl3+Foc/ka:älköötkä      V_FRONT_CLIT_OPT ;
 
-! potential forms of olla are totally heteroclitic
-@D.NEED@@P.NEED.REST@olla+V+Act+Pot+Sg1:@D.NEED@@P.NEED.REST@lienen	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Pot+Sg2:@D.NEED@@P.NEED.REST@lienet	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Pot+Sg3:@D.NEED@@P.NEED.REST@lienee	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Pot+Pl1:@D.NEED@@P.NEED.REST@lienemme	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Pot+Pl2:@D.NEED@@P.NEED.REST@lienette	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Pot+Pl3:@D.NEED@@P.NEED.REST@lienevät	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Pot+ConNeg:@D.NEED@@P.NEED.REST@liene	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@olla+V+Act+Pot+ConNeg:@D.NEED@@P.NEED.REST@lie	Clitic/Optional	;
-@U.NEED.NOMINAL@olla+V+Act+PrfPrc:@U.NEED.NOMINAL@oll	kotus_47_ADJECTIVE/stemfiller	;
-
-! negation verb has partial inflection
-@D.NEED@@P.NEED.REST@ei+V+Neg+Act+Sg1:@D.NEED@@P.NEED.REST@en	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@ei+V+Neg+Act+Sg1+ka:@D.NEED@@P.NEED.REST@enkä	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@ei+V+Neg+Act+Sg2:@D.NEED@@P.NEED.REST@et	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@ei+V+Neg+Act+Sg2+ka:@D.NEED@@P.NEED.REST@etkä	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@ei+V+Neg+Act+Sg3:@D.NEED@@P.NEED.REST@ei	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@ei+V+Neg+Act+Sg3+ka:@D.NEED@@P.NEED.REST@eikä	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@ei+V+Neg+Act+Pl1:@D.NEED@@P.NEED.REST@emme	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@ei+V+Neg+Act+Pl1+ka:@D.NEED@@P.NEED.REST@emmekä	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@ei+V+Neg+Act+Pl2:@D.NEED@@P.NEED.REST@ette	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@ei+V+Neg+Act+Pl2+ka:@D.NEED@@P.NEED.REST@ettekä	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@ei+V+Neg+Act+Pl3:@D.NEED@@P.NEED.REST@eivät	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@ei+V+Neg+Act+Pl3+ka:@D.NEED@@P.NEED.REST@eivätkä	Clitic/Optional	;
-@D.NEED@@P.NEED.REST@ei+V+Neg+Act+Imprt+Sg2:@D.NEED@@P.NEED.REST@älä	Clitic/Optional/Neg	;
-@D.NEED@@P.NEED.REST@ei+V+Neg+Act+Imprt+Sg2+ka:@D.NEED@@P.NEED.REST@äläkä	Clitic/Optional/Neg	;
-@D.NEED@@P.NEED.REST@ei+V+Neg+Act+Imprt+Sg3:@D.NEED@@P.NEED.REST@älköön	Clitic/Optional/Neg	;
-@D.NEED@@P.NEED.REST@ei+V+Neg+Act+Imprt+Sg3+ka:@D.NEED@@P.NEED.REST@älköönkä	Clitic/Optional/Neg	;
-@D.NEED@@P.NEED.REST@ei+V+Neg+Act+Imprt+Pl1:@D.NEED@@P.NEED.REST@älkäämme	Clitic/Optional/Neg	;
-@D.NEED@@P.NEED.REST@ei+V+Neg+Act+Imprt+Pl1+ka:@D.NEED@@P.NEED.REST@älkäämmekä	Clitic/Optional/Neg	;
-@D.NEED@@P.NEED.REST@ei+V+Neg+Act+Imprt+Pl2:@D.NEED@@P.NEED.REST@älkää	Clitic/Optional/Neg	;
-@D.NEED@@P.NEED.REST@ei+V+Neg+Act+Imprt+Pl2+ka:@D.NEED@@P.NEED.REST@älkääkä	Clitic/Optional/Neg	;
-@D.NEED@@P.NEED.REST@ei+V+Neg+Act+Imprt+Pl3:@D.NEED@@P.NEED.REST@älkööt	Clitic/Optional/Neg	;
-@D.NEED@@P.NEED.REST@ei+V+Neg+Act+Imprt+Pl3+ka:@D.NEED@@P.NEED.REST@älköötkä	Clitic/Optional/Neg	;
-
-! other limited verbs
-@D.NEED@@P.NEED.REST@eläköön+V:@D.NEED@@P.NEED.REST@eläköön	Ennd	;
-@D.NEED@@P.NEED.REST@jutaa+V:@D.NEED@@P.NEED.REST@jutaa	Ennd	;
-@D.NEED@@P.NEED.REST@jytää+V:@D.NEED@@P.NEED.REST@jytää	Ennd	;
-@D.NEED@@P.NEED.REST@kutiaa+V:@D.NEED@@P.NEED.REST@kutiaa	Ennd	;
-@D.NEED@@P.NEED.REST@parata+V:@D.NEED@@P.NEED.REST@parata	Ennd	;
-@D.NEED@@P.NEED.REST@paratkoon+V:@D.NEED@@P.NEED.REST@paratkoon	Ennd	;
-@D.NEED@@P.NEED.REST@sikisi+V:@D.NEED@@P.NEED.REST@sikisi	Ennd	;
-@D.NEED@@P.NEED.REST@sikiää+V:@D.NEED@@P.NEED.REST@sikiää	Ennd	;
-@D.NEED@@P.NEED.REST@taita+V:@D.NEED@@P.NEED.REST@taita	Ennd	;
-@D.NEED@@P.NEED.REST@tietä+V:@D.NEED@@P.NEED.REST@tietä	Ennd	;
-@D.NEED@@P.NEED.REST@tuta+V:@D.NEED@@P.NEED.REST@tuta	Ennd	;
-@D.NEED@@P.NEED.REST@vilkkaa+V:@D.NEED@@P.NEED.REST@vilkkaa	Ennd	;
+!! Some verbs only have few word-forms left:
+!! € kutiaa
+!! € taita
+!! € paratkoon
+!! € eläköön
+eläköön+V:eläköön       #    ;
+jutaa+V:jutaa           #    ;
+jytää+V:jytää           #    ;
+kutiaa+V:kutiaa         #    ;
+parata+V:parata         #    ;
+paratkoon+V:paratkoon   #    ;
+sikisi+V:sikisi         #    ;
+sikiää+V:sikiää         #    ;
+taita+V:taita           #    ;
+tietä+V:tietä           #    ;
+tuta+V:tuta             #    ;
+vilkkaa+V:vilkkaa       #    ;
 
 
-! some partial exceptions
-@U.NEED.NOMINAL@ruoka+N:@U.NEED.NOMINAL@ruu{k~~}{^a}{D}{aä}	NounAllomorph/PartitiveA	;
-@U.NEED.NOMINAL@ruoka+N:@U.NEED.NOMINAL@ruu{k~~}{^a}{D}{aä}	NounAllomorph/IllativeVN	;
-@U.NEED.NOMINAL@ruoka+N:@U.NEED.NOMINAL@ruu{k~~}{^a}{D}{aä}	NounAllomorph/GenitiveIN	;
-@U.NEED.NOMINAL@ruoka+N:@U.NEED.NOMINAL@ruu{k~~}{^a}{D}{aä}	NounStem/Singular	;
-@U.NEED.NOMINAL@ruoka+N:@U.NEED.NOMINAL@ruu{k~~}{^a}{D}	NounAllomorph/PartitiveIA	;
-@U.NEED.NOMINAL@ruoka+N:@U.NEED.NOMINAL@ruu{k~~}{^a}{D}	NounAllomorph/GenitiveIEN	;
-@U.NEED.NOMINAL@ruoka+N:@U.NEED.NOMINAL@ruu{k~~}{^a}{D}	NounAllomorph/IllativeIIN	;
-@U.NEED.NOMINAL@ruoka+N:@U.NEED.NOMINAL@ruu{k~~}{^a}{D}	NounStem/Plural	;
+!! The noun ruoka has irregular forms:
+!! € ruuassa
+!! € ruuilla
+ruoka+N:ruu         N_BACK_WEAK_SINGULARS   ;
+ruoka+N:ruu         N_BACK_WEAK_PLURALS ;
 
-! truly heteroclitic
-@U.NEED.NOMINAL@hyvä+A:@U.NEED.NOMINAL@pare	AdjectiveStem/Comparative	;
-@U.NEED.NOMINAL@hyvä+A+Sup:@U.NEED.NOMINAL@paras    NounStem/Nominative ;
-@U.NEED.NOMINAL@hyvä+A+Sup:@U.NEED.NOMINAL@parhaa	NounStem/Singular	;
-@U.NEED.NOMINAL@hyvä+A+Sup:@U.NEED.NOMINAL@parha	NounStem/Plural	;
-@U.NEED.NOMINAL@hyvä+A+Sup:@U.NEED.NOMINAL@paras	NounAllomorph/PartitiveTA	;
-@U.NEED.NOMINAL@hyvä+A+Sup:@U.NEED.NOMINAL@parhaa	NounAllomorph/IllativeSEEN	;
-@U.NEED.NOMINAL@hyvä+A+Sup:@U.NEED.NOMINAL@parha	NounAllomorph/GenitiveIDEN	;
-@U.NEED.NOMINAL@hyvä+A+Sup:@U.NEED.NOMINAL@parha	NounAllomorph/GenitiveITTEN	;
-@U.NEED.NOMINAL@hyvä+A+Sup:@U.NEED.NOMINAL@parha	NounAllomorph/PartitiveITA	;
-@U.NEED.NOMINAL@hyvä+A+Sup:@U.NEED.NOMINAL@parha	NounAllomorph/IllativeISIIN	;
-@U.NEED.NOMINAL@hyvä+A:@U.NEED.NOMINAL@parha	AdjectiveStem/Superlative	;
-@D.NEED@@P.NEED.REST@hyvä+A+Der/sti+Adv:@D.NEED@@P.NEED.REST@parhaiten    Clitic/Optional ;
+!! The adjective hyvä has heteroclitic comparative derivations too:
+!! € parempi
+!! € paremmissa
+!! € paras
+!! € parhaat
+hyvä+A:pare                     A_BACK_COMPARATIVE ;
+hyvä+A+Sup:paras                A_BACK_NOMINATIVE ;
+hyvä+A+Sup:parhaa               A_BACK_SINGULARS ;
+hyvä+A+Sup:parha                A_BACK_PLURALS ;
+hyvä+A+Sup:paras                A_BACK_PARTITIVE_TA ;
+hyvä+A+Sup:parhaa               A_BACK_ILLATIVE_SEEN ;
+hyvä+A+Sup:parha                A_BACK_GENITIVE_IDEN ;
+hyvä+A+Sup:parha                A_BACK_GENITIVE_ITTEN ;
+hyvä+A+Sup:parha                A_BACK_PARTITIVE_ITA ;
+hyvä+A+Sup:parha                A_BACK_ILLATIVE_ISIIN ;
+hyvä+A:parha                    A_BACK_SUPERLATIVE ;
+hyvä+A+Der/sti+Adv:parhaiten    ADV_BACK_CLIT_OPT ;
 
-! some words exhibit arcane forms as common
-@U.NEED.NOMINAL@vuosi+N+Sg+Ess:@U.NEED.NOMINAL@vuonna	Possessive/Optional	;
-@U.NEED.NOMINAL@sydän+N+Sg+Ess:@U.NEED.NOMINAL@sydännä Possessive/Optional ;
-@U.NEED.NOMINAL@jumala+N+Pl+Gen:@U.NEED.NOMINAL@jumalten	Clitic/Optional	;
-@U.NEED.NOMINAL@jumala+N+Pl+Gen:@U.NEED.NOMINAL@jumalten  Compounding ;
-@U.NEED.NOMINAL@sankari+N+Pl+Gen:@U.NEED.NOMINAL@sankarten  Clitic/Optional ;
-@U.NEED.NOMINAL@sankari+N+Pl+Gen:@U.NEED.NOMINAL@sankarten  Compounding ;
+!! Some of the nouns have archaic consonat stem forms left:
+!! € vuonna
+!! € sydännä
+!! € jumalten
+!! € sankarten
+vuosi+N+Sg+Ess:vuonna       N_BACK_POSS_AN_OPT ;
+sydän+N+Sg+Ess:sydännä      N_FRONT_POSS_ÄN_OPT ;
+jumala+N+Pl+Gen:jumalten    N_BACK_CLIT_OPT ;
+jumala+N+Pl+Gen:jumalten    N_COMPOUND ;
+sankari+N+Pl+Gen:sankarten  N_FRONT_CLIT_OPT ;
+sankari+N+Pl+Gen:sankarten  N_COMPOUND ;
 
-! few verbs have shortened forms in standard spoken Finnish
-@D.NEED@@P.NEED.REST@mennä+V+Act+Ind+Prs+Sg1+Dial:@D.NEED@@P.NEED.REST@meen   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@mennä+V+Act+Ind+Prs+Sg2+Dial:@D.NEED@@P.NEED.REST@meet   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@mennä+V+Act+Ind+Prs+Pl1+Dial:@D.NEED@@P.NEED.REST@meemme   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@mennä+V+Act+Ind+Prs+Pl2+Dial:@D.NEED@@P.NEED.REST@meette   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@mennä+V+Act+Imprt+Sg2+Dial:@D.NEED@@P.NEED.REST@mee   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@mennä+V+Act+Imprt+Sg2+Dial+s:@D.NEED@@P.NEED.REST@mees   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@tulla+V+Act+Ind+Prs+Sg1+Dial:@D.NEED@@P.NEED.REST@tuun   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@tulla+V+Act+Ind+Prs+Sg2+Dial:@D.NEED@@P.NEED.REST@tuut   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@tulla+V+Act+Ind+Prs+Pl1+Dial:@D.NEED@@P.NEED.REST@tuumme   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@tulla+V+Act+Ind+Prs+Pl2+Dial:@D.NEED@@P.NEED.REST@tuutte   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@tulla+V+Act+Imprt+Sg2+Dial:@D.NEED@@P.NEED.REST@tuu   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@tulla+V+Act+Imprt+Sg2+Dial+s:@D.NEED@@P.NEED.REST@tuus   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@olla+V+Act+Ind+Prs+Sg1+Dial:@D.NEED@@P.NEED.REST@oon   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@olla+V+Act+Ind+Prs+Sg2+Dial:@D.NEED@@P.NEED.REST@oot   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@olla+V+Act+Ind+Prs+Pl1+Dial:@D.NEED@@P.NEED.REST@oomme   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@olla+V+Act+Ind+Prs+Pl2+Dial:@D.NEED@@P.NEED.REST@ootte   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@olla+V+Act+Imprt+Sg2+Dial:@D.NEED@@P.NEED.REST@oo   Clitic/Optional       ;
-@D.NEED@@P.NEED.REST@olla+V+Act+Imprt+Sg2+Dial+s:@D.NEED@@P.NEED.REST@oos   Clitic/Optional       ;
+!! few verbs have shortened forms in standard spoken Finnish
+!! € meen
+!! € tuut
+mennä+V+Act+Ind+Prs+Sg1+Dial/standard:meen       V_FRONT_CLIT_OPT    ;
+mennä+V+Act+Ind+Prs+Sg2+Dial/standard:meet       V_FRONT_CLIT_OPT    ;
+mennä+V+Act+Ind+Prs+Pl1+Dial/standard:meemme     V_FRONT_CLIT_OPT    ;
+mennä+V+Act+Ind+Prs+Pl2+Dial/standard:meette     V_FRONT_CLIT_OPT    ;
+mennä+V+Act+Imprt+Sg2+Dial/standard:mee          V_FRONT_CLIT_OPT  ;
+mennä+V+Act+Imprt+Sg2+Dial/standard+Foc/s:mees   V_FRONT_CLIT_OPT    ;
+tulla+V+Act+Ind+Prs+Sg1+Dial/standard:tuun       V_BACK_CLIT_OPT       ;
+tulla+V+Act+Ind+Prs+Sg2+Dial/standard:tuut       V_BACK_CLIT_OPT       ;
+tulla+V+Act+Ind+Prs+Pl1+Dial/standard:tuumme     V_BACK_CLIT_OPT       ;
+tulla+V+Act+Ind+Prs+Pl2+Dial/standard:tuutte     V_BACK_CLIT_OPT       ;
+tulla+V+Act+Imprt+Sg2+Dial/standard:tuu          V_BACK_CLIT_OPT       ;
+tulla+V+Act+Imprt+Sg2+Dial/standard+Foc/s:tuus   V_BACK_CLIT_OPT       ;
+olla+V+Act+Ind+Prs+Sg1+Dial/standard:oon         V_BACK_CLIT_OPT       ;
+olla+V+Act+Ind+Prs+Sg2+Dial/standard:oot         V_BACK_CLIT_OPT       ;
+olla+V+Act+Ind+Prs+Pl1+Dial/standard:oomme       V_BACK_CLIT_OPT       ;
+olla+V+Act+Ind+Prs+Pl2+Dial/standard:ootte       V_BACK_CLIT_OPT       ;
+olla+V+Act+Imprt+Sg2+Dial/standard:oo            V_BACK_CLIT_OPT       ;
+olla+V+Act+Imprt+Sg2+Dial/standard+Foc/s:oos     V_BACK_CLIT_OPT       ;
 

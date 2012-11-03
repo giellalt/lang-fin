@@ -1,774 +1,810 @@
-! Acronyms are inflected using a colon, followed by the inflectional endings,
-! which depend on either last letter of the word or inflection class of the
-! last word of the abbreviation. The exception to the inflection scheme is the
-! singular nominative, which appears without colon.
-!
-! Pronouncable abbreviations such as aids, hiv, kela, alko etc. are actually
-! counted as regular words with regular inflection patterns.
-!
-! |VISK 169|
-
-LEXICON AcronymStem/Common
-+Sg+Nom:	Ennd	;
-	Compounding/Dashed	;
-
-LEXICON AcronymStem/1
-	AcronymStem/Common	;
-+Sg+Nom:%:	Possessive/Obligatory+Vn	;
-+Sg+Nom:%:	Clitic/Obligatory	;
-+Pl+Nom:%:t	Clitic/Optional	;
-+Sg+Nom:%:n	Clitic/Optional	;
-+Sg+Par:%:tä	Possessive/Optional+Vn	;
-+Sg+Ill:%:een	Possessive/Optional	;
-+Sg+Abe:%:ttä	Possessive/Optional+Vn	;
-+Sg+Abl:%:ltä	Possessive/Optional+Vn	;
-+Sg+Ade:%:llä	Possessive/Optional+Vn	;
-+Sg+All:%:lle	Possessive/Optional+Vn	;
-+Sg+Ela:%:stä	Possessive/Optional+Vn	;
-+Sg+Ess:%:nä	Possessive/Optional+Vn	;
-+Sg+Ine:%:ssä	Possessive/Optional+Vn	;
-+Sg+Tra:%:ksi	Clitic/Optional	;
-+Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
-+Pl+Par:%:iä	Possessive/Optional+Vn	;
-+Pl+Ill:%:iin	Possessive/Optional	;
-+Pl+Abe:%:ittä	Possessive/Optional+Vn	;
-+Pl+Abl:%:iltä	Possessive/Optional+Vn	;
-+Pl+Ade:%:illä	Possessive/Optional+Vn	;
-+Pl+All:%:ille	Possessive/Optional+Vn	;
-+Pl+Ess:%:inä	Possessive/Optional+Vn	;
-+Cmt:%:ine	Possessive/Optional+Vn	;
-+Pl+Ela:%:istä	Possessive/Optional+Vn	;
-+Pl+Ine:%:issä	Possessive/Optional+Vn	;
-+Pl+Ins:%:in	Clitic/Optional	;
-+Pl+Tra:%:iksi	Clitic/Optional	;
-+Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/2
-	AcronymStem/Common	;
-+Sg+Nom:%:	Possessive/Obligatory+Vn	;
-+Sg+Nom:%:	Clitic/Obligatory	;
-+Pl+Nom:%:t	Clitic/Optional	;
-+Sg+Nom:%:n	Clitic/Optional	;
-+Sg+Par:%:ta	Possessive/Optional+Vn	;
-+Sg+Ill:%:een	Possessive/Optional	;
-+Sg+Abe:%:tta	Possessive/Optional+Vn	;
-+Sg+Abl:%:lta	Possessive/Optional+Vn	;
-+Sg+Ade:%:lla	Possessive/Optional+Vn	;
-+Sg+All:%:lle	Possessive/Optional+Vn	;
-+Sg+Ela:%:sta	Possessive/Optional+Vn	;
-+Sg+Ess:%:na	Possessive/Optional+Vn	;
-+Sg+Ine:%:ssa	Possessive/Optional+Vn	;
-+Sg+Tra:%:ksi	Clitic/Optional	;
-+Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
-+Pl+Par:%:ia	Possessive/Optional+Vn	;
-+Pl+Ill:%:iin	Possessive/Optional	;
-+Pl+Abe:%:itta	Possessive/Optional+Vn	;
-+Pl+Abl:%:ilta	Possessive/Optional+Vn	;
-+Pl+Ade:%:illa	Possessive/Optional+Vn	;
-+Pl+All:%:ille	Possessive/Optional+Vn	;
-+Pl+Ess:%:ina	Possessive/Optional+Vn	;
-+Cmt:%:ine	Possessive/Optional+Vn	;
-+Pl+Ela:%:ista	Possessive/Optional+Vn	;
-+Pl+Ine:%:issa	Possessive/Optional+Vn	;
-+Pl+Ins:%:in	Clitic/Optional	;
-+Pl+Tra:%:iksi	Clitic/Optional	;
-+Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/3
-	AcronymStem/Common	;
-+Sg+Nom:%:	Possessive/Obligatory+Vn	;
-+Sg+Nom:%:	Clitic/Obligatory	;
-+Pl+Nom:%:t	Clitic/Optional	;
-+Sg+Nom:%:n	Clitic/Optional	;
-+Sg+Par:%:a	Possessive/Optional+Vn	;
-+Sg+Ill:%:een	Possessive/Optional	;
-+Sg+Abe:%:tta	Possessive/Optional+Vn	;
-+Sg+Abl:%:lta	Possessive/Optional+Vn	;
-+Sg+Ade:%:lla	Possessive/Optional+Vn	;
-+Sg+All:%:lle	Possessive/Optional+Vn	;
-+Sg+Ela:%:sta	Possessive/Optional+Vn	;
-+Sg+Ess:%:na	Possessive/Optional+Vn	;
-+Sg+Ine:%:ssa	Possessive/Optional+Vn	;
-+Sg+Tra:%:ksi	Clitic/Optional	;
-+Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
-+Pl+Par:%:ia	Possessive/Optional+Vn	;
-+Pl+Ill:%:iin	Possessive/Optional	;
-+Pl+Abe:%:itta	Possessive/Optional+Vn	;
-+Pl+Abl:%:ilta	Possessive/Optional+Vn	;
-+Pl+Ade:%:illa	Possessive/Optional+Vn	;
-+Pl+All:%:ille	Possessive/Optional+Vn	;
-+Pl+Ess:%:ina	Possessive/Optional+Vn	;
-+Cmt:%:ine	Possessive/Optional+Vn	;
-+Pl+Ela:%:ista	Possessive/Optional+Vn	;
-+Pl+Ine:%:issa	Possessive/Optional+Vn	;
-+Pl+Ins:%:in	Clitic/Optional	;
-+Pl+Tra:%:iksi	Clitic/Optional	;
-+Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/4
-	AcronymStem/Common	;
-+Sg+Nom:%:	Possessive/Obligatory+Vn	;
-+Sg+Nom:%:	Clitic/Obligatory	;
-+Pl+Nom:%:t	Clitic/Optional	;
-+Sg+Nom:%:n	Clitic/Optional	;
-+Sg+Par:%:ää	Possessive/Optional+Vn	;
-+Sg+Ill:%:ään	Possessive/Optional	;
-+Sg+Abe:%:ttä	Possessive/Optional+Vn	;
-+Sg+Abl:%:ltä	Possessive/Optional+Vn	;
-+Sg+Ade:%:llä	Possessive/Optional+Vn	;
-+Sg+All:%:lle	Possessive/Optional+Vn	;
-+Sg+Ela:%:stä	Possessive/Optional+Vn	;
-+Sg+Ess:%:nä	Possessive/Optional+Vn	;
-+Sg+Ine:%:ssä	Possessive/Optional+Vn	;
-+Sg+Tra:%:ksi	Clitic/Optional	;
-+Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
-+Pl+Par:%:iä	Possessive/Optional+Vn	;
-+Pl+Ill:%:iin	Possessive/Optional	;
-+Pl+Abe:%:ittä	Possessive/Optional+Vn	;
-+Pl+Abl:%:iltä	Possessive/Optional+Vn	;
-+Pl+Ade:%:illä	Possessive/Optional+Vn	;
-+Pl+All:%:ille	Possessive/Optional+Vn	;
-+Pl+Ess:%:inä	Possessive/Optional+Vn	;
-+Cmt:%:ine	Possessive/Optional+Vn	;
-+Pl+Ela:%:istä	Possessive/Optional+Vn	;
-+Pl+Ine:%:issä	Possessive/Optional+Vn	;
-+Pl+Ins:%:in	Clitic/Optional	;
-+Pl+Tra:%:iksi	Clitic/Optional	;
-+Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/5
-	AcronymStem/Common	;
-+Sg+Nom:%:	Possessive/Obligatory+Vn	;
-+Sg+Nom:%:	Clitic/Obligatory	;
-+Pl+Nom:%:t	Clitic/Optional	;
-+Sg+Nom:%:n	Clitic/Optional	;
-+Sg+Par:%:tä	Possessive/Optional+Vn	;
-+Sg+Ill:%:een	Possessive/Optional	;
-+Sg+Abe:%:ttä	Possessive/Optional+Vn	;
-+Sg+Abl:%:ltä	Possessive/Optional+Vn	;
-+Sg+Ade:%:llä	Possessive/Optional+Vn	;
-+Sg+All:%:lle	Possessive/Optional+Vn	;
-+Sg+Ela:%:stä	Possessive/Optional+Vn	;
-+Sg+Ess:%:nä	Possessive/Optional+Vn	;
-+Sg+Ine:%:ssä	Possessive/Optional+Vn	;
-+Sg+Tra:%:ksi	Clitic/Optional	;
-+Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
-+Pl+Par:%:iä	Possessive/Optional+Vn	;
-+Pl+Ill:%:iin	Possessive/Optional	;
-+Pl+Abe:%:ittä	Possessive/Optional+Vn	;
-+Pl+Abl:%:iltä	Possessive/Optional+Vn	;
-+Pl+Ade:%:illä	Possessive/Optional+Vn	;
-+Pl+All:%:ille	Possessive/Optional+Vn	;
-+Pl+Ess:%:inä	Possessive/Optional+Vn	;
-+Cmt:%:ine	Possessive/Optional+Vn	;
-+Pl+Ela:%:issä	Possessive/Optional+Vn	;
-+Pl+Ine:%:issä	Possessive/Optional+Vn	;
-+Pl+Ins:%:in	Clitic/Optional	;
-+Pl+Tra:%:iksi	Clitic/Optional	;
-+Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/6
-	AcronymStem/Common	;
-+Sg+Nom:%:	Possessive/Obligatory+Vn	;
-+Sg+Nom:%:	Clitic/Obligatory	;
-+Pl+Nom:%:t	Clitic/Optional	;
-+Sg+Nom:%:n	Clitic/Optional	;
-+Sg+Par:%:ta	Possessive/Optional+Vn	;
-+Sg+Ill:%:een	Possessive/Optional	;
-+Sg+Abe:%:tta	Possessive/Optional+Vn	;
-+Sg+Abl:%:lta	Possessive/Optional+Vn	;
-+Sg+Ade:%:lla	Possessive/Optional+Vn	;
-+Sg+All:%:lle	Possessive/Optional+Vn	;
-+Sg+Ela:%:sta	Possessive/Optional+Vn	;
-+Sg+Ess:%:na	Possessive/Optional+Vn	;
-+Sg+Ine:%:ssa	Possessive/Optional+Vn	;
-+Sg+Tra:%:ksi	Clitic/Optional	;
-+Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
-+Pl+Par:%:ia	Possessive/Optional+Vn	;
-+Pl+Ill:%:iin	Possessive/Optional	;
-+Pl+Abe:%:itta	Possessive/Optional+Vn	;
-+Pl+Abl:%:ilta	Possessive/Optional+Vn	;
-+Pl+Ade:%:illa	Possessive/Optional+Vn	;
-+Pl+All:%:ille	Possessive/Optional+Vn	;
-+Pl+Ess:%:ina	Possessive/Optional+Vn	;
-+Cmt:%:ine	Possessive/Optional+Vn	;
-+Pl+Ela:%:ista	Possessive/Optional+Vn	;
-+Pl+Ine:%:issa	Possessive/Optional+Vn	;
-+Pl+Ins:%:in	Clitic/Optional	;
-+Pl+Tra:%:iksi	Clitic/Optional	;
-+Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/7
-	AcronymStem/Common	;
-+Sg+Nom:%:	Possessive/Obligatory+Vn	;
-+Sg+Nom:%:	Clitic/Obligatory	;
-+Pl+Nom:%:t	Clitic/Optional	;
-+Sg+Nom:%:n	Clitic/Optional	;
-+Sg+Par:%:ää	Possessive/Optional+Vn	;
-+Sg+Ill:%:ään	Possessive/Optional	;
-+Sg+Abe:%:ttä	Possessive/Optional+Vn	;
-+Sg+Abl:%:ltä	Possessive/Optional+Vn	;
-+Sg+Ade:%:llä	Possessive/Optional+Vn	;
-+Sg+All:%:lle	Possessive/Optional+Vn	;
-+Sg+Ela:%:stä	Possessive/Optional+Vn	;
-+Sg+Ess:%:nä	Possessive/Optional+Vn	;
-+Sg+Ine:%:ssä	Possessive/Optional+Vn	;
-+Sg+Tra:%:ksi	Clitic/Optional	;
-+Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
-+Pl+Par:%:iä	Possessive/Optional+Vn	;
-+Pl+Ill:%:iin	Possessive/Optional	;
-+Pl+Abe:%:ittä	Possessive/Optional+Vn	;
-+Pl+Abl:%:iltä	Possessive/Optional+Vn	;
-+Pl+Ade:%:illä	Possessive/Optional+Vn	;
-+Pl+All:%:ille	Possessive/Optional+Vn	;
-+Pl+Ess:%:inä	Possessive/Optional+Vn	;
-+Cmt:%:ine	Possessive/Optional+Vn	;
-+Pl+Ela:%:istä	Possessive/Optional+Vn	;
-+Pl+Ine:%:issä	Possessive/Optional+Vn	;
-+Pl+Ins:%:in	Clitic/Optional	;
-+Pl+Tra:%:iksi	Clitic/Optional	;
-+Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/8
-	AcronymStem/Common	;
-+Sg+Nom:%:	Possessive/Obligatory+Vn	;
-+Sg+Nom:%:	Clitic/Obligatory	;
-+Pl+Nom:%:t	Clitic/Optional	;
-+Sg+Nom:%:n	Clitic/Optional	;
-+Sg+Par:%:aa	Possessive/Optional+Vn	;
-+Sg+Ill:%:aan	Possessive/Optional	;
-+Sg+Abe:%:tta	Possessive/Optional+Vn	;
-+Sg+Abl:%:lta	Possessive/Optional+Vn	;
-+Sg+Ade:%:lla	Possessive/Optional+Vn	;
-+Sg+All:%:lle	Possessive/Optional+Vn	;
-+Sg+Ela:%:sta	Possessive/Optional+Vn	;
-+Sg+Ess:%:na	Possessive/Optional+Vn	;
-+Sg+Ine:%:ssa	Possessive/Optional+Vn	;
-+Sg+Tra:%:ksi	Clitic/Optional	;
-+Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
-+Pl+Par:%:ia	Possessive/Optional+Vn	;
-+Pl+Ill:%:iin	Possessive/Optional	;
-+Pl+Abe:%:itta	Possessive/Optional+Vn	;
-+Pl+Abl:%:ilta	Possessive/Optional+Vn	;
-+Pl+Ade:%:illa	Possessive/Optional+Vn	;
-+Pl+All:%:illa	Possessive/Optional+Vn	;
-+Pl+Ess:%:ina	Possessive/Optional+Vn	;
-+Cmt:%:ine	Possessive/Optional+Vn	;
-+Pl+Ela:%:issa	Possessive/Optional+Vn	;
-+Pl+Ine:%:issa	Possessive/Optional+Vn	;
-+Pl+Ins:%:in	Clitic/Optional	;
-+Pl+Tra:%:iksi	Clitic/Optional	;
-+Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/9
-	AcronymStem/Common	;
-+Sg+Nom:%:	Possessive/Obligatory+Vn	;
-+Sg+Nom:%:	Clitic/Obligatory	;
-+Pl+Nom:%:t	Clitic/Optional	;
-+Sg+Nom:%:n	Clitic/Optional	;
-+Sg+Par:%:ää	Possessive/Optional+Vn	;
-+Sg+Ill:%:ään	Possessive/Optional	;
-+Sg+Abe:%:ttä	Possessive/Optional+Vn	;
-+Sg+Abl:%:ltä	Possessive/Optional+Vn	;
-+Sg+Ade:%:llä	Possessive/Optional+Vn	;
-+Sg+All:%:lle	Possessive/Optional+Vn	;
-+Sg+Ela:%:stä	Possessive/Optional+Vn	;
-+Sg+Ess:%:nä	Possessive/Optional+Vn	;
-+Sg+Ine:%:ssä	Possessive/Optional+Vn	;
-+Sg+Tra:%:ksi	Clitic/Optional	;
-+Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
-+Pl+Par:%:iä	Possessive/Optional+Vn	;
-+Pl+Ill:%:iin	Possessive/Optional	;
-+Pl+Abe:%:ittä	Possessive/Optional+Vn	;
-+Pl+Abl:%:iltä	Possessive/Optional+Vn	;
-+Pl+Ade:%:illä	Possessive/Optional+Vn	;
-+Pl+All:%:ille	Possessive/Optional+Vn	;
-+Pl+Ess:%:inä	Possessive/Optional+Vn	;
-+Cmt:%:ine	Possessive/Optional+Vn	;
-+Pl+Ela:%:istä	Possessive/Optional+Vn	;
-+Pl+Ine:%:issä	Possessive/Optional+Vn	;
-+Pl+Ins:%:in	Clitic/Optional	;
-+Pl+Tra:%:iksi	Clitic/Optional	;
-+Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/a
-	AcronymStem/A	;
-
-LEXICON AcronymStem/A
-	AcronymStem/Common	;
-+Sg+Nom:%:	Possessive/Obligatory+Vn	;
-+Sg+Nom:%:	Clitic/Obligatory	;
-+Pl+Nom:%:t	Clitic/Optional	;
-+Sg+Nom:%:n	Clitic/Optional	;
-+Sg+Par:%:ta	Possessive/Optional+Vn	;
-+Sg+Ill:%:han	Possessive/Optional	;
-+Sg+Abe:%:tta	Possessive/Optional+Vn	;
-+Sg+Abl:%:lta	Possessive/Optional+Vn	;
-+Sg+Ade:%:lla	Possessive/Optional+Vn	;
-+Sg+All:%:lle	Possessive/Optional+Vn	;
-+Sg+Ela:%:sta	Possessive/Optional+Vn	;
-+Sg+Ess:%:na	Possessive/Optional+Vn	;
-+Sg+Ine:%:ssa	Possessive/Optional+Vn	;
-+Sg+Tra:%:ksi	Clitic/Optional	;
-+Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
-+Pl+Par:%:ita	Possessive/Optional+Vn	;
-+Pl+Ill:%:ihin	Possessive/Optional	;
-+Pl+Abe:%:itta	Possessive/Optional+Vn	;
-+Pl+Abl:%:ilta	Possessive/Optional+Vn	;
-+Pl+Ade:%:illa	Possessive/Optional+Vn	;
-+Pl+All:%:ille	Possessive/Optional+Vn	;
-+Pl+Ess:%:ina	Possessive/Optional+Vn	;
-+Cmt:%:ine	Possessive/Optional+Vn	;
-+Pl+Ela:%:ista	Possessive/Optional+Vn	;
-+Pl+Ine:%:issa	Possessive/Optional+Vn	;
-+Pl+Ins:%:in	Clitic/Optional	;
-+Pl+Tra:%:iksi	Clitic/Optional	;
-+Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/b
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/B
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/c
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/C
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/d
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/D
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/e
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/E
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/g
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/G
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/p
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/P
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/v
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/V
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/w
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/W
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/t
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/T
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/ee
-	AcronymStem/Common	;
-+Sg+Nom:%:	Possessive/Obligatory+Vn	;
-+Sg+Nom:%:	Clitic/Obligatory	;
-+Pl+Nom:%:t	Clitic/Optional	;
-+Sg+Nom:%:n	Clitic/Optional	;
-+Sg+Par:%:tä	Possessive/Optional+Vn	;
-+Sg+Ill:%:hen	Possessive/Optional	;
-+Sg+Abe:%:ttä	Possessive/Optional+Vn	;
-+Sg+Abl:%:ltä	Possessive/Optional+Vn	;
-+Sg+Ade:%:llä	Possessive/Optional+Vn	;
-+Sg+All:%:lle	Possessive/Optional+Vn	;
-+Sg+Ela:%:stä	Possessive/Optional+Vn	;
-+Sg+Ess:%:nä	Possessive/Optional+Vn	;
-+Sg+Ine:%:ssä	Possessive/Optional+Vn	;
-+Sg+Tra:%:ksi	Clitic/Optional	;
-+Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
-+Pl+Par:%:itä	Possessive/Optional+Vn	;
-+Pl+Ill:%:ihin	Possessive/Optional	;
-+Pl+Abe:%:ittä	Possessive/Optional+Vn	;
-+Pl+Abl:%:iltä	Possessive/Optional+Vn	;
-+Pl+Ade:%:illä	Possessive/Optional+Vn	;
-+Pl+All:%:ille	Possessive/Optional+Vn	;
-+Pl+Ess:%:inä	Possessive/Optional+Vn	;
-+Cmt:%:ine	Possessive/Optional+Vn	;
-+Pl+Ela:%:istä	Possessive/Optional+Vn	;
-+Pl+Ine:%:issä	Possessive/Optional+Vn	;
-+Pl+Ins:%:in	Clitic/Optional	;
-+Pl+Tra:%:iksi	Clitic/Optional	;
-+Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/i
-	AcronymStem/ii	;
-
-LEXICON AcronymStem/I
-	AcronymStem/ii	;
-
-LEXICON AcronymStem/j
-	AcronymStem/ii	;
-
-LEXICON AcronymStem/J
-	AcronymStem/ii	;
-
-LEXICON AcronymStem/ii
-	AcronymStem/Common	;
-+Sg+Nom:%:	Possessive/Obligatory+Vn	;
-+Sg+Nom:%:	Clitic/Obligatory	;
-+Pl+Nom:%:t	Clitic/Optional	;
-+Sg+Nom:%:n	Clitic/Optional	;
-+Sg+Par:%:tä	Possessive/Optional+Vn	;
-+Sg+Ill:%:hin	Possessive/Optional	;
-+Sg+Abe:%:ttä	Possessive/Optional+Vn	;
-+Sg+Abl:%:ltä	Possessive/Optional+Vn	;
-+Sg+Ade:%:llä	Possessive/Optional+Vn	;
-+Sg+All:%:lle	Possessive/Optional+Vn	;
-+Sg+Ela:%:stä	Possessive/Optional+Vn	;
-+Sg+Ess:%:nä	Possessive/Optional+Vn	;
-+Sg+Ine:%:ssä	Possessive/Optional+Vn	;
-+Sg+Tra:%:ksi	Clitic/Optional	;
-+Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
-+Pl+Par:%:itä	Possessive/Optional+Vn	;
-+Pl+Ill:%:ihin	Possessive/Optional	;
-+Pl+Abe:%:ittä	Possessive/Optional+Vn	;
-+Pl+Abl:%:iltä	Possessive/Optional+Vn	;
-+Pl+Ade:%:illä	Possessive/Optional+Vn	;
-+Pl+All:%:ille	Possessive/Optional+Vn	;
-+Pl+Ess:%:inä	Possessive/Optional+Vn	;
-+Cmt:%:ine	Possessive/Optional+Vn	;
-+Pl+Ela:%:istä	Possessive/Optional+Vn	;
-+Pl+Ine:%:issä	Possessive/Optional+Vn	;
-+Pl+Ins:%:in	Clitic/Optional	;
-+Pl+Tra:%:iksi	Clitic/Optional	;
-+Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/h
-	AcronymStem/oo	;
-
-LEXICON AcronymStem/H
-	AcronymStem/oo	;
-
-LEXICON AcronymStem/k
-	AcronymStem/oo	;
-
-LEXICON AcronymStem/K
-	AcronymStem/oo	;
-
-LEXICON AcronymStem/o
-	AcronymStem/oo	;
-
-LEXICON AcronymStem/O
-	AcronymStem/oo	;
-
-LEXICON AcronymStem/å
-	AcronymStem/oo	;
-
-LEXICON AcronymStem/Å
-	AcronymStem/oo	;
-
-LEXICON AcronymStem/oo
-	AcronymStem/Common	;
-+Sg+Nom:%:	Possessive/Obligatory+Vn	;
-+Sg+Nom:%:	Clitic/Obligatory	;
-+Pl+Nom:%:t	Clitic/Optional	;
-+Sg+Nom:%:n	Clitic/Optional	;
-+Sg+Par:%:ta	Possessive/Optional+Vn	;
-+Sg+Ill:%:hon	Possessive/Optional	;
-+Sg+Abe:%:tta	Possessive/Optional+Vn	;
-+Sg+Abl:%:lta	Possessive/Optional+Vn	;
-+Sg+Ade:%:lla	Possessive/Optional+Vn	;
-+Sg+All:%:lle	Possessive/Optional+Vn	;
-+Sg+Ela:%:sta	Possessive/Optional+Vn	;
-+Sg+Ess:%:na	Possessive/Optional+Vn	;
-+Sg+Ine:%:ssa	Possessive/Optional+Vn	;
-+Sg+Tra:%:ksi	Clitic/Optional	;
-+Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
-+Pl+Par:%:ita	Possessive/Optional+Vn	;
-+Pl+Ill:%:ihin	Possessive/Optional	;
-+Pl+Abe:%:itta	Possessive/Optional+Vn	;
-+Pl+Abl:%:ilta	Possessive/Optional+Vn	;
-+Pl+Ade:%:illa	Possessive/Optional+Vn	;
-+Pl+All:%:ille	Possessive/Optional+Vn	;
-+Pl+Ess:%:ina	Possessive/Optional+Vn	;
-+Cmt:%:ine	Possessive/Optional+Vn	;
-+Pl+Ela:%:ista	Possessive/Optional+Vn	;
-+Pl+Ine:%:issa	Possessive/Optional+Vn	;
-+Pl+Ins:%:in	Clitic/Optional	;
-+Pl+Tra:%:iksi	Clitic/Optional	;
-+Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/q
-	AcronymStem/uu	;
-
-LEXICON AcronymStem/Q
-	AcronymStem/uu	;
-
-LEXICON AcronymStem/u
-	AcronymStem/uu	;
-
-LEXICON AcronymStem/U
-	AcronymStem/uu	;
-
-LEXICON AcronymStem/uu
-	AcronymStem/Common	;
-+Sg+Nom:%:	Possessive/Obligatory+Vn	;
-+Sg+Nom:%:	Clitic/Obligatory	;
-+Pl+Nom:%:t	Clitic/Optional	;
-+Sg+Nom:%:n	Clitic/Optional	;
-+Sg+Par:%:ta	Possessive/Optional+Vn	;
-+Sg+Ill:%:hun	Possessive/Optional	;
-+Sg+Abe:%:tta	Possessive/Optional+Vn	;
-+Sg+Abl:%:lta	Possessive/Optional+Vn	;
-+Sg+Ade:%:lla	Possessive/Optional+Vn	;
-+Sg+All:%:lle	Possessive/Optional+Vn	;
-+Sg+Ela:%:sta	Possessive/Optional+Vn	;
-+Sg+Ess:%:na	Possessive/Optional+Vn	;
-+Sg+Ine:%:ssa	Possessive/Optional+Vn	;
-+Sg+Tra:%:ksi	Clitic/Optional	;
-+Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
-+Pl+Par:%:ita	Possessive/Optional+Vn	;
-+Pl+Ill:%:ihin	Possessive/Optional	;
-+Pl+Abe:%:itta	Possessive/Optional+Vn	;
-+Pl+Abl:%:ilta	Possessive/Optional+Vn	;
-+Pl+Ade:%:illa	Possessive/Optional+Vn	;
-+Pl+All:%:ille	Possessive/Optional+Vn	;
-+Pl+Ess:%:ina	Possessive/Optional+Vn	;
-+Cmt:%:ine	Possessive/Optional+Vn	;
-+Pl+Ela:%:ista	Possessive/Optional+Vn	;
-+Pl+Ine:%:issa	Possessive/Optional+Vn	;
-+Pl+Ins:%:in	Clitic/Optional	;
-+Pl+Tra:%:iksi	Clitic/Optional	;
-+Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/f
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/F
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/l
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/L
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/m
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/M
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/n
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/N
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/r
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/R
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/s
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/S
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/š
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/Š
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/x
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/X
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/äX
-	AcronymStem/Common	;
-+Sg+Nom:%:	Possessive/Obligatory+Vn	;
-+Sg+Nom:%:	Clitic/Obligatory	;
-+Pl+Nom:%:t	Clitic/Optional	;
-+Sg+Nom:%:n	Clitic/Optional	;
-+Sg+Par:%:ää	Possessive/Optional+Vn	;
-+Sg+Ill:%:ään	Possessive/Optional	;
-+Sg+Abe:%:ttä	Possessive/Optional+Vn	;
-+Sg+Abl:%:ltä	Possessive/Optional+Vn	;
-+Sg+Ade:%:llä	Possessive/Optional+Vn	;
-+Sg+All:%:lle	Possessive/Optional+Vn	;
-+Sg+Ela:%:stä	Possessive/Optional+Vn	;
-+Sg+Ess:%:nä	Possessive/Optional+Vn	;
-+Sg+Ine:%:ssä	Possessive/Optional+Vn	;
-+Sg+Tra:%:ksi	Clitic/Optional	;
-+Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
-+Pl+Par:%:iä	Possessive/Optional+Vn	;
-+Pl+Ill:%:iin	Possessive/Optional	;
-+Pl+Abe:%:ittä	Possessive/Optional+Vn	;
-+Pl+Abl:%:iltä	Possessive/Optional+Vn	;
-+Pl+Ade:%:illä	Possessive/Optional+Vn	;
-+Pl+All:%:ille	Possessive/Optional+Vn	;
-+Pl+Ess:%:inä	Possessive/Optional+Vn	;
-+Cmt:%:ine	Possessive/Optional+Vn	;
-+Pl+Ela:%:istä	Possessive/Optional+Vn	;
-+Pl+Ine:%:issä	Possessive/Optional+Vn	;
-+Pl+Ins:%:in	Clitic/Optional	;
-+Pl+Tra:%:iksi	Clitic/Optional	;
-+Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/y
-	AcronymStem/Y	;
-
-LEXICON AcronymStem/Y
-	AcronymStem/Common	;
-+Sg+Nom:%:	Possessive/Obligatory+Vn	;
-+Sg+Nom:%:	Clitic/Obligatory	;
-+Pl+Nom:%:t	Clitic/Optional	;
-+Sg+Nom:%:n	Clitic/Optional	;
-+Sg+Par:%:tä	Possessive/Optional+Vn	;
-+Sg+Ill:%:hin	Possessive/Optional	;
-+Sg+Abe:%:ttä	Possessive/Optional+Vn	;
-+Sg+Abl:%:ltä	Possessive/Optional+Vn	;
-+Sg+Ade:%:llä	Possessive/Optional+Vn	;
-+Sg+All:%:lle	Possessive/Optional+Vn	;
-+Sg+Ela:%:stä	Possessive/Optional+Vn	;
-+Sg+Ess:%:nä	Possessive/Optional+Vn	;
-+Sg+Ine:%:ssä	Possessive/Optional+Vn	;
-+Sg+Tra:%:ksi	Clitic/Optional	;
-+Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
-+Pl+Par:%:itä	Possessive/Optional+Vn	;
-+Pl+Ill:%:ihin	Possessive/Optional	;
-+Pl+Abe:%:ittä	Possessive/Optional+Vn	;
-+Pl+Abl:%:iltä	Possessive/Optional+Vn	;
-+Pl+Ade:%:illä	Possessive/Optional+Vn	;
-+Pl+All:%:ille	Possessive/Optional+Vn	;
-+Pl+Ess:%:inä	Possessive/Optional+Vn	;
-+Cmt:%:ine	Possessive/Optional+Vn	;
-+Pl+Ela:%:istä	Possessive/Optional+Vn	;
-+Pl+Ine:%:issä	Possessive/Optional+Vn	;
-+Pl+Ins:%:in	Clitic/Optional	;
-+Pl+Tra:%:iksi	Clitic/Optional	;
-+Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/ž
-    AcronymStem/Z   ;
-
-LEXICON AcronymStem/Ž
-    AcronymStem/Z   ;
-
-LEXICON AcronymStem/z
-    AcronymStem/Z   ;
-
-LEXICON AcronymStem/Z
-	AcronymStem/Common	;
-+Sg+Nom:%:	Possessive/Obligatory+Vn	;
-+Sg+Nom:%:	Clitic/Obligatory	;
-+Pl+Nom:%:t	Clitic/Optional	;
-+Sg+Nom:%:n	Clitic/Optional	;
-+Sg+Par:%:aa	Possessive/Optional+Vn	;
-+Sg+Ill:%:aan	Possessive/Optional	;
-+Sg+Abe:%:tta	Possessive/Optional+Vn	;
-+Sg+Abl:%:lta	Possessive/Optional+Vn	;
-+Sg+Ade:%:lla	Possessive/Optional+Vn	;
-+Sg+All:%:lle	Possessive/Optional+Vn	;
-+Sg+Ela:%:sta	Possessive/Optional+Vn	;
-+Sg+Ess:%:na	Possessive/Optional+Vn	;
-+Sg+Ine:%:ssa	Possessive/Optional+Vn	;
-+Sg+Tra:%:ksi	Clitic/Optional	;
-+Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
-+Pl+Par:%:ja	Possessive/Optional+Vn	;
-+Pl+Ill:%:ihin	Possessive/Optional	;
-+Pl+Abe:%:itta	Possessive/Optional+Vn	;
-+Pl+Abl:%:ilta	Possessive/Optional+Vn	;
-+Pl+Ade:%:illa	Possessive/Optional+Vn	;
-+Pl+All:%:ille	Possessive/Optional+Vn	;
-+Pl+Ess:%:ina	Possessive/Optional+Vn	;
-+Cmt:%:ine	Possessive/Optional+Vn	;
-+Pl+Ela:%:ista	Possessive/Optional+Vn	;
-+Pl+Ine:%:issa	Possessive/Optional+Vn	;
-+Pl+Ins:%:in	Clitic/Optional	;
-+Pl+Tra:%:iksi	Clitic/Optional	;
-+Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/ä
-	AcronymStem/Ä	;
-
-LEXICON AcronymStem/Ä
-	AcronymStem/Common	;
-+Sg+Nom:%:	Possessive/Obligatory+Vn	;
-+Sg+Nom:%:	Clitic/Obligatory	;
-+Pl+Nom:%:t	Clitic/Optional	;
-+Sg+Nom:%:n	Clitic/Optional	;
-+Sg+Par:%:tä	Possessive/Optional+Vn	;
-+Sg+Ill:%:hän	Possessive/Optional	;
-+Sg+Abe:%:ttä	Possessive/Optional+Vn	;
-+Sg+Abl:%:ltä	Possessive/Optional+Vn	;
-+Sg+Ade:%:llä	Possessive/Optional+Vn	;
-+Sg+All:%:lle	Possessive/Optional+Vn	;
-+Sg+Ela:%:stä	Possessive/Optional+Vn	;
-+Sg+Ess:%:nä	Possessive/Optional+Vn	;
-+Sg+Ine:%:ssä	Possessive/Optional+Vn	;
-+Sg+Tra:%:ksi	Clitic/Optional	;
-+Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
-+Pl+Par:%:itä	Possessive/Optional+Vn	;
-+Pl+Ill:%:ihin	Possessive/Optional	;
-+Pl+Abe:%:ittä	Possessive/Optional+Vn	;
-+Pl+Abl:%:iltä	Possessive/Optional+Vn	;
-+Pl+Ade:%:illä	Possessive/Optional+Vn	;
-+Pl+All:%:ille	Possessive/Optional+Vn	;
-+Pl+Ess:%:inä	Possessive/Optional+Vn	;
-+Cmt:%:ine	Possessive/Optional+Vn	;
-+Pl+Ela:%:istä	Possessive/Optional+Vn	;
-+Pl+Ine:%:issä	Possessive/Optional+Vn	;
-+Pl+Ins:%:in	Clitic/Optional	;
-+Pl+Tra:%:iksi	Clitic/Optional	;
-+Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/ö
-	AcronymStem/Ö	;
-
-LEXICON AcronymStem/Ö
-	AcronymStem/Common	;
-+Sg+Nom:%:	Possessive/Obligatory+Vn	;
-+Sg+Nom:%:	Clitic/Obligatory	;
-+Pl+Nom:%:t	Clitic/Optional	;
-+Sg+Nom:%:n	Clitic/Optional	;
-+Sg+Par:%:tä	Possessive/Optional+Vn	;
-+Sg+Ill:%:hön	Possessive/Optional	;
-+Sg+Abe:%:ttä	Possessive/Optional+Vn	;
-+Sg+Abl:%:ltä	Possessive/Optional+Vn	;
-+Sg+Ade:%:llä	Possessive/Optional+Vn	;
-+Sg+All:%:lle	Possessive/Optional+Vn	;
-+Sg+Ela:%:stä	Possessive/Optional+Vn	;
-+Sg+Ess:%:nä	Possessive/Optional+Vn	;
-+Sg+Ine:%:ssä	Possessive/Optional+Vn	;
-+Sg+Tra:%:ksi	Clitic/Optional	;
-+Sg+Tra:%:kse	Possessive/Obligatory+Vn	;
-+Pl+Par:%:itä	Possessive/Optional+Vn	;
-+Pl+Ill:%:ihin	Possessive/Optional	;
-+Pl+Abe:%:ittä	Possessive/Optional+Vn	;
-+Pl+Abl:%:iltä	Possessive/Optional+Vn	;
-+Pl+Ade:%:illä	Possessive/Optional+Vn	;
-+Pl+All:%:ille	Possessive/Optional+Vn	;
-+Pl+Ess:%:inä	Possessive/Optional+Vn	;
-+Cmt:%:ine	Possessive/Optional+Vn	;
-+Pl+Ela:%:istä	Possessive/Optional+Vn	;
-+Pl+Ine:%:issä	Possessive/Optional+Vn	;
-+Pl+Ins:%:in	Clitic/Optional	;
-+Pl+Tra:%:iksi	Clitic/Optional	;
-+Pl+Tra:%:ikse	Possessive/Obligatory+Vn	;
-
+!! Acronyms are inflected using a colon, followed by the inflectional endings,
+!! which depend on either last letter of the word or inflection class of the
+!! last word of the abbreviation. The exception to the inflection scheme is the
+!! singular nominative, which appears without colon.
+!!
+!! Pronouncable abbreviations such as aids, hiv, kela, alko etc. are actually
+!! counted as regular words with regular inflection patterns.
+!!
+!! c.f. VISK § 169
+
+
+LEXICON ACRO_YKSI
+!! The acronyms ending in digit 1 pronounced as number:
+0  ACRO_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  ACRO_FRONT_POSS    ;
++Sg+Nom:%:  ACRO_FRONT_CLIT   ;
++Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
++Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
++Sg+Par:%:tä    ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ill:%:een   ACRO_FRONT_POSS_CLIT_OPT ;
++Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Abl:%:ltä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ade:%:llä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+All:%:lle   ACRO_FRONT_POSS_EN_OPT  ;
++Sg+Ela:%:stä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ess:%:nä    ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ine:%:ssä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Tra:%:ksi   ACRO_FRONT_CLIT_OPT ;
++Sg+Tra:%:kse   ACRO_FRONT_POSS_EN_OBL    ;
++Pl+Par:%:iä    ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ill:%:iin   ACRO_FRONT_POSS_CLIT_OPT ;
++Pl+Abe:%:ittä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Abl:%:iltä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ade:%:illä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+All:%:ille  ACRO_FRONT_POSS_EN_OPT  ;
++Pl+Ess:%:inä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Cmt:%:ine  ACRO_FRONT_POSS_EN_OPT  ;
++Pl+Ela:%:istä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ine:%:issä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ins:%:in    ACRO_FRONT_CLIT_OPT ;
++Pl+Tra:%:iksi  ACRO_FRONT_CLIT_OPT ;
++Pl+Tra:%:ikse  ACRO_FRONT_POSS_EN_OBL    ;
+
+LEXICON ACRO_KAKSI
+!! The acronyms ending in digit 2 pronounced as number
+0  ACRO_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  ACRO_BACK_POSS    ;
++Sg+Nom:%:  ACRO_BACK_CLIT   ;
++Pl+Nom:%:t ACRO_BACK_CLIT_OPT ;
++Sg+Nom:%:n ACRO_BACK_CLIT_OPT ;
++Sg+Par:%:ta    ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ill:%:een   ACRO_BACK_POSS_CLIT_OPT ;
++Sg+Abe:%:tta   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Abl:%:lta   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ade:%:lla   ACRO_BACK_POSS_AN_OPT  ;
++Sg+All:%:lle   ACRO_BACK_POSS_EN_OPT  ;
++Sg+Ela:%:sta   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ess:%:na    ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ine:%:ssa   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Tra:%:ksi   ACRO_BACK_CLIT_OPT ;
++Sg+Tra:%:kse   ACRO_BACK_POSS_EN_OBL    ;
++Pl+Par:%:ia    ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ill:%:iin   ACRO_BACK_POSS_CLIT_OPT ;
++Pl+Abe:%:itta  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Abl:%:ilta  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ade:%:illa  ACRO_BACK_POSS_AN_OPT  ;
++Pl+All:%:ille  ACRO_BACK_POSS_EN_OPT  ;
++Pl+Ess:%:ina   ACRO_BACK_POSS_AN_OPT  ;
++Cmt:%:ine  ACRO_BACK_POSS_EN_OPT  ;
++Pl+Ela:%:ista  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ine:%:issa  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ins:%:in    ACRO_BACK_CLIT_OPT ;
++Pl+Tra:%:iksi  ACRO_BACK_CLIT_OPT ;
++Pl+Tra:%:ikse  ACRO_BACK_POSS_EN_OBL    ;
+
+LEXICON ACRO_KOLME
+! The acronyms ending in digit 3 pronounced as number
+0  ACRO_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  ACRO_BACK_POSS    ;
++Sg+Nom:%:  ACRO_BACK_CLIT   ;
++Pl+Nom:%:t ACRO_BACK_CLIT_OPT ;
++Sg+Nom:%:n ACRO_BACK_CLIT_OPT ;
++Sg+Par:%:a ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ill:%:een   ACRO_BACK_POSS_CLIT_OPT ;
++Sg+Abe:%:tta   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Abl:%:lta   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ade:%:lla   ACRO_BACK_POSS_AN_OPT  ;
++Sg+All:%:lle   ACRO_BACK_POSS_EN_OPT  ;
++Sg+Ela:%:sta   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ess:%:na    ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ine:%:ssa   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Tra:%:ksi   ACRO_BACK_CLIT_OPT ;
++Sg+Tra:%:kse   ACRO_BACK_POSS_EN_OBL    ;
++Pl+Par:%:ia    ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ill:%:iin   ACRO_BACK_POSS_CLIT_OPT ;
++Pl+Abe:%:itta  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Abl:%:ilta  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ade:%:illa  ACRO_BACK_POSS_AN_OPT  ;
++Pl+All:%:ille  ACRO_BACK_POSS_EN_OPT  ;
++Pl+Ess:%:ina   ACRO_BACK_POSS_AN_OPT  ;
++Cmt:%:ine  ACRO_BACK_POSS_EN_OPT  ;
++Pl+Ela:%:ista  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ine:%:issa  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ins:%:in    ACRO_BACK_CLIT_OPT ;
++Pl+Tra:%:iksi  ACRO_BACK_CLIT_OPT ;
++Pl+Tra:%:ikse  ACRO_BACK_POSS_EN_OBL    ;
+
+LEXICON ACRO_NELJÄ
+! The acronyms ending in digit 4 pronounced as number
+0  ACRO_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  ACRO_FRONT_POSS    ;
++Sg+Nom:%:  ACRO_FRONT_CLIT   ;
++Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
++Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
++Sg+Par:%:ää    ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ill:%:ään   ACRO_FRONT_POSS_CLIT_OPT ;
++Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Abl:%:ltä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ade:%:llä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+All:%:lle   ACRO_FRONT_POSS_EN_OPT  ;
++Sg+Ela:%:stä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ess:%:nä    ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ine:%:ssä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Tra:%:ksi   ACRO_FRONT_CLIT_OPT ;
++Sg+Tra:%:kse   ACRO_FRONT_POSS_EN_OBL    ;
++Pl+Par:%:iä    ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ill:%:iin   ACRO_FRONT_POSS_CLIT_OPT ;
++Pl+Abe:%:ittä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Abl:%:iltä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ade:%:illä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+All:%:ille  ACRO_FRONT_POSS_EN_OPT  ;
++Pl+Ess:%:inä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Cmt:%:ine  ACRO_FRONT_POSS_EN_OPT  ;
++Pl+Ela:%:istä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ine:%:issä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ins:%:in    ACRO_FRONT_CLIT_OPT ;
++Pl+Tra:%:iksi  ACRO_FRONT_CLIT_OPT ;
++Pl+Tra:%:ikse  ACRO_FRONT_POSS_EN_OBL    ;
+
+LEXICON ACRO_VIISI
+! The acronyms ending in digit 5 pronounced as number
+0  ACRO_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  ACRO_FRONT_POSS    ;
++Sg+Nom:%:  ACRO_FRONT_CLIT   ;
++Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
++Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
++Sg+Par:%:tä    ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ill:%:een   ACRO_FRONT_POSS_CLIT_OPT ;
++Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Abl:%:ltä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ade:%:llä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+All:%:lle   ACRO_FRONT_POSS_EN_OPT  ;
++Sg+Ela:%:stä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ess:%:nä    ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ine:%:ssä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Tra:%:ksi   ACRO_FRONT_CLIT_OPT ;
++Sg+Tra:%:kse   ACRO_FRONT_POSS_EN_OBL    ;
++Pl+Par:%:iä    ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ill:%:iin   ACRO_FRONT_POSS_CLIT_OPT ;
++Pl+Abe:%:ittä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Abl:%:iltä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ade:%:illä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+All:%:ille  ACRO_FRONT_POSS_EN_OPT  ;
++Pl+Ess:%:inä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Cmt:%:ine  ACRO_FRONT_POSS_EN_OPT  ;
++Pl+Ela:%:issä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ine:%:issä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ins:%:in    ACRO_FRONT_CLIT_OPT ;
++Pl+Tra:%:iksi  ACRO_FRONT_CLIT_OPT ;
++Pl+Tra:%:ikse  ACRO_FRONT_POSS_EN_OBL    ;
+
+LEXICON ACRO_KUUSI
+! The acronyms ending in digit 6 pronounced as number
+0  ACRO_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  ACRO_BACK_POSS    ;
++Sg+Nom:%:  ACRO_BACK_CLIT   ;
++Pl+Nom:%:t ACRO_BACK_CLIT_OPT ;
++Sg+Nom:%:n ACRO_BACK_CLIT_OPT ;
++Sg+Par:%:ta    ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ill:%:een   ACRO_BACK_POSS_CLIT_OPT ;
++Sg+Abe:%:tta   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Abl:%:lta   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ade:%:lla   ACRO_BACK_POSS_AN_OPT  ;
++Sg+All:%:lle   ACRO_BACK_POSS_EN_OPT  ;
++Sg+Ela:%:sta   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ess:%:na    ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ine:%:ssa   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Tra:%:ksi   ACRO_BACK_CLIT_OPT ;
++Sg+Tra:%:kse   ACRO_BACK_POSS_EN_OBL    ;
++Pl+Par:%:ia    ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ill:%:iin   ACRO_BACK_POSS_CLIT_OPT ;
++Pl+Abe:%:itta  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Abl:%:ilta  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ade:%:illa  ACRO_BACK_POSS_AN_OPT  ;
++Pl+All:%:ille  ACRO_BACK_POSS_EN_OPT  ;
++Pl+Ess:%:ina   ACRO_BACK_POSS_AN_OPT  ;
++Cmt:%:ine  ACRO_BACK_POSS_EN_OPT  ;
++Pl+Ela:%:ista  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ine:%:issa  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ins:%:in    ACRO_BACK_CLIT_OPT ;
++Pl+Tra:%:iksi  ACRO_BACK_CLIT_OPT ;
++Pl+Tra:%:ikse  ACRO_BACK_POSS_EN_OBL    ;
+
+LEXICON ACRO_SEITSEMÄN
+! The acronyms ending in digit 7 pronounced as number
+0  ACRO_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  ACRO_FRONT_POSS    ;
++Sg+Nom:%:  ACRO_FRONT_CLIT   ;
++Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
++Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
++Sg+Par:%:ää    ACRO_FRONT_POSS_CLIT_OPT  ;
++Sg+Ill:%:ään   ACRO_FRONT_POSS_CLIT_OPT ;
++Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Abl:%:ltä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ade:%:llä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+All:%:lle   ACRO_FRONT_POSS_EN_OPT  ;
++Sg+Ela:%:stä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ess:%:nä    ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ine:%:ssä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Tra:%:ksi   ACRO_FRONT_CLIT_OPT ;
++Sg+Tra:%:kse   ACRO_FRONT_POSS_EN_OBL    ;
++Pl+Par:%:iä    ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ill:%:iin   ACRO_FRONT_POSS_CLIT_OPT ;
++Pl+Abe:%:ittä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Abl:%:iltä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ade:%:illä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+All:%:ille  ACRO_FRONT_POSS_EN_OPT  ;
++Pl+Ess:%:inä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Cmt:%:ine  ACRO_FRONT_POSS_EN_OPT  ;
++Pl+Ela:%:istä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ine:%:issä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ins:%:in    ACRO_FRONT_CLIT_OPT ;
++Pl+Tra:%:iksi  ACRO_FRONT_CLIT_OPT ;
++Pl+Tra:%:ikse  ACRO_FRONT_POSS_EN_OBL    ;
+
+LEXICON ACRO_KAHDEKSAN
+! The acronyms ending in digit 8 pronounced as number
+0  ACRO_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  ACRO_BACK_POSS    ;
++Sg+Nom:%:  ACRO_BACK_CLIT   ;
++Pl+Nom:%:t ACRO_BACK_CLIT_OPT ;
++Sg+Nom:%:n ACRO_BACK_CLIT_OPT ;
++Sg+Par:%:aa    ACRO_BACK_POSS_CLIT_OPT  ;
++Sg+Ill:%:aan   ACRO_BACK_POSS_CLIT_OPT ;
++Sg+Abe:%:tta   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Abl:%:lta   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ade:%:lla   ACRO_BACK_POSS_AN_OPT  ;
++Sg+All:%:lle   ACRO_BACK_POSS_EN_OPT  ;
++Sg+Ela:%:sta   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ess:%:na    ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ine:%:ssa   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Tra:%:ksi   ACRO_BACK_CLIT_OPT ;
++Sg+Tra:%:kse   ACRO_BACK_POSS_EN_OBL    ;
++Pl+Par:%:ia    ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ill:%:iin   ACRO_BACK_POSS_CLIT_OPT ;
++Pl+Abe:%:itta  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Abl:%:ilta  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ade:%:illa  ACRO_BACK_POSS_AN_OPT  ;
++Pl+All:%:illa  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ess:%:ina   ACRO_BACK_POSS_AN_OPT  ;
++Cmt:%:ine  ACRO_BACK_POSS_EN_OPT  ;
++Pl+Ela:%:issa  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ine:%:issa  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ins:%:in    ACRO_BACK_CLIT_OPT ;
++Pl+Tra:%:iksi  ACRO_BACK_CLIT_OPT ;
++Pl+Tra:%:ikse  ACRO_BACK_POSS_EN_OBL    ;
+
+LEXICON ACRO_YHDEKSÄN
+! The acronyms ending in digit 9 pronounced as number
+0  ACRO_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  ACRO_FRONT_POSS    ;
++Sg+Nom:%:  ACRO_FRONT_CLIT   ;
++Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
++Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
++Sg+Par:%:ää    ACRO_FRONT_POSS_CLIT_OPT  ;
++Sg+Ill:%:ään   ACRO_FRONT_POSS_CLIT_OPT ;
++Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Abl:%:ltä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ade:%:llä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+All:%:lle   ACRO_FRONT_POSS_EN_OPT  ;
++Sg+Ela:%:stä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ess:%:nä    ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ine:%:ssä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Tra:%:ksi   ACRO_FRONT_CLIT_OPT ;
++Sg+Tra:%:kse   ACRO_FRONT_POSS_EN_OBL    ;
++Pl+Par:%:iä    ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ill:%:iin   ACRO_FRONT_POSS_CLIT_OPT ;
++Pl+Abe:%:ittä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Abl:%:iltä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ade:%:illä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+All:%:ille  ACRO_FRONT_POSS_EN_OPT  ;
++Pl+Ess:%:inä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Cmt:%:ine  ACRO_FRONT_POSS_EN_OPT  ;
++Pl+Ela:%:istä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ine:%:issä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ins:%:in    ACRO_FRONT_CLIT_OPT ;
++Pl+Tra:%:iksi  ACRO_FRONT_CLIT_OPT ;
++Pl+Tra:%:ikse  ACRO_FRONT_POSS_EN_OBL    ;
+
+LEXICON ACRO_AA
+!! acronyms ending in 'a' pronounced as a letter:
+!! € A
+!! € A:t
+!! € A:ssa
+0  ACRO_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  ACRO_BACK_POSS    ;
++Sg+Nom:%:  ACRO_BACK_CLIT   ;
++Pl+Nom:%:t ACRO_BACK_CLIT_OPT ;
++Sg+Nom:%:n ACRO_BACK_CLIT_OPT ;
++Sg+Par:%:ta    ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ill:%:han   ACRO_BACK_POSS_CLIT_OPT ;
++Sg+Abe:%:tta   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Abl:%:lta   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ade:%:lla   ACRO_BACK_POSS_AN_OPT  ;
++Sg+All:%:lle   ACRO_BACK_POSS_EN_OPT  ;
++Sg+Ela:%:sta   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ess:%:na    ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ine:%:ssa   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Tra:%:ksi   ACRO_BACK_CLIT_OPT ;
++Sg+Tra:%:kse   ACRO_BACK_POSS_EN_OBL    ;
++Pl+Par:%:ita   ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ill:%:ihin  ACRO_BACK_POSS_CLIT_OPT ;
++Pl+Abe:%:itta  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Abl:%:ilta  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ade:%:illa  ACRO_BACK_POSS_AN_OPT  ;
++Pl+All:%:ille  ACRO_BACK_POSS_EN_OPT  ;
++Pl+Ess:%:ina   ACRO_BACK_POSS_AN_OPT  ;
++Cmt:%:ine  ACRO_BACK_POSS_EN_OPT  ;
++Pl+Ela:%:ista  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ine:%:issa  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ins:%:in    ACRO_BACK_CLIT_OPT ;
++Pl+Tra:%:iksi  ACRO_BACK_CLIT_OPT ;
++Pl+Tra:%:ikse  ACRO_BACK_POSS_EN_OBL    ;
+
+LEXICON ACRO_EE
+!! acronyms ending in 'b', 'c', 'd', 'e', 'g', 'p', 'v', 'w' or 't' pronounced
+!! as a letter:
+!! € BBC
+!! € BBC:t
+!! € BCC:ssä
+0  ACRO_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  ACRO_FRONT_POSS    ;
++Sg+Nom:%:  ACRO_FRONT_CLIT   ;
++Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
++Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
++Sg+Par:%:tä    ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ill:%:hen   ACRO_FRONT_POSS_CLIT_OPT ;
++Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Abl:%:ltä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ade:%:llä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+All:%:lle   ACRO_FRONT_POSS_EN_OPT  ;
++Sg+Ela:%:stä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ess:%:nä    ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ine:%:ssä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Tra:%:ksi   ACRO_FRONT_CLIT_OPT ;
++Sg+Tra:%:kse   ACRO_FRONT_POSS_EN_OBL    ;
++Pl+Par:%:itä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ill:%:ihin  ACRO_FRONT_POSS_CLIT_OPT ;
++Pl+Abe:%:ittä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Abl:%:iltä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ade:%:illä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+All:%:ille  ACRO_FRONT_POSS_EN_OPT  ;
++Pl+Ess:%:inä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Cmt:%:ine  ACRO_FRONT_POSS_EN_OPT  ;
++Pl+Ela:%:istä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ine:%:issä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ins:%:in    ACRO_FRONT_CLIT_OPT ;
++Pl+Tra:%:iksi  ACRO_FRONT_CLIT_OPT ;
++Pl+Tra:%:ikse  ACRO_FRONT_POSS_EN_OBL    ;
+
+LEXICON ACRO_II
+!! Acronyms that end in 'j' or 'i' pronoynced as letter:
+!! € DPI
+!! € DPI:t
+!! € DPI:ssä
+0  ACRO_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  ACRO_FRONT_POSS    ;
++Sg+Nom:%:  ACRO_FRONT_CLIT   ;
++Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
++Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
++Sg+Par:%:tä    ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ill:%:hin   ACRO_FRONT_POSS_CLIT_OPT ;
++Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Abl:%:ltä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ade:%:llä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+All:%:lle   ACRO_FRONT_POSS_EN_OPT  ;
++Sg+Ela:%:stä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ess:%:nä    ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ine:%:ssä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Tra:%:ksi   ACRO_FRONT_CLIT_OPT ;
++Sg+Tra:%:kse   ACRO_FRONT_POSS_EN_OBL    ;
++Pl+Par:%:itä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ill:%:ihin  ACRO_FRONT_POSS_CLIT_OPT ;
++Pl+Abe:%:ittä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Abl:%:iltä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ade:%:illä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+All:%:ille  ACRO_FRONT_POSS_EN_OPT  ;
++Pl+Ess:%:inä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Cmt:%:ine  ACRO_FRONT_POSS_EN_OPT  ;
++Pl+Ela:%:istä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ine:%:issä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ins:%:in    ACRO_FRONT_CLIT_OPT ;
++Pl+Tra:%:iksi  ACRO_FRONT_CLIT_OPT ;
++Pl+Tra:%:ikse  ACRO_FRONT_POSS_EN_OBL    ;
+
+LEXICON ACRO_OO
+!! Acronyms that end in 'h', 'k' or 'o' that is pronounced as a letter:
+!! € HK
+!! € HK:n
+!! € HK:lla
+0  ACRO_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  ACRO_BACK_POSS    ;
++Sg+Nom:%:  ACRO_BACK_CLIT   ;
++Pl+Nom:%:t ACRO_BACK_CLIT_OPT ;
++Sg+Nom:%:n ACRO_BACK_CLIT_OPT ;
++Sg+Par:%:ta    ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ill:%:hon   ACRO_BACK_POSS_CLIT_OPT ;
++Sg+Abe:%:tta   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Abl:%:lta   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ade:%:lla   ACRO_BACK_POSS_AN_OPT  ;
++Sg+All:%:lle   ACRO_BACK_POSS_EN_OPT  ;
++Sg+Ela:%:sta   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ess:%:na    ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ine:%:ssa   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Tra:%:ksi   ACRO_BACK_CLIT_OPT ;
++Sg+Tra:%:kse   ACRO_BACK_POSS_EN_OBL    ;
++Pl+Par:%:ita   ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ill:%:ihin  ACRO_BACK_POSS_CLIT_OPT ;
++Pl+Abe:%:itta  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Abl:%:ilta  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ade:%:illa  ACRO_BACK_POSS_AN_OPT  ;
++Pl+All:%:ille  ACRO_BACK_POSS_EN_OPT  ;
++Pl+Ess:%:ina   ACRO_BACK_POSS_AN_OPT  ;
++Cmt:%:ine  ACRO_BACK_POSS_EN_OPT  ;
++Pl+Ela:%:ista  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ine:%:issa  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ins:%:in    ACRO_BACK_CLIT_OPT ;
++Pl+Tra:%:iksi  ACRO_BACK_CLIT_OPT ;
++Pl+Tra:%:ikse  ACRO_BACK_POSS_EN_OBL    ;
+
+LEXICON ACRO_UU
+!! Acronyms that end in 'q', or 'u' pronounced as a letter:
+!! € EU
+!! € EU:t
+!! € EU:hun
+0  ACRO_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  ACRO_BACK_POSS    ;
++Sg+Nom:%:  ACRO_BACK_CLIT   ;
++Pl+Nom:%:t ACRO_BACK_CLIT_OPT ;
++Sg+Nom:%:n ACRO_BACK_CLIT_OPT ;
++Sg+Par:%:ta    ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ill:%:hun   ACRO_BACK_POSS_CLIT_OPT ;
++Sg+Abe:%:tta   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Abl:%:lta   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ade:%:lla   ACRO_BACK_POSS_AN_OPT  ;
++Sg+All:%:lle   ACRO_BACK_POSS_EN_OPT  ;
++Sg+Ela:%:sta   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ess:%:na    ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ine:%:ssa   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Tra:%:ksi   ACRO_BACK_CLIT_OPT ;
++Sg+Tra:%:kse   ACRO_BACK_POSS_EN_OBL    ;
++Pl+Par:%:ita   ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ill:%:ihin  ACRO_BACK_POSS_CLIT_OPT ;
++Pl+Abe:%:itta  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Abl:%:ilta  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ade:%:illa  ACRO_BACK_POSS_AN_OPT  ;
++Pl+All:%:ille  ACRO_BACK_POSS_EN_OPT  ;
++Pl+Ess:%:ina   ACRO_BACK_POSS_AN_OPT  ;
++Cmt:%:ine  ACRO_BACK_POSS_EN_OPT  ;
++Pl+Ela:%:ista  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ine:%:issa  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ins:%:in    ACRO_BACK_CLIT_OPT ;
++Pl+Tra:%:iksi  ACRO_BACK_CLIT_OPT ;
++Pl+Tra:%:ikse  ACRO_BACK_POSS_EN_OBL    ;
+
+LEXICON ACRO_ÄKS
+!! Acronym that ends in 'f', 'l', 'm', 'n', 'r', 's', 'š' or 'x' pronounced as
+!! a letter:
+!! € GRPS
+!! € GPRS:llä
+0  ACRO_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  ACRO_FRONT_POSS    ;
++Sg+Nom:%:  ACRO_FRONT_CLIT   ;
++Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
++Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
++Sg+Par:%:ää    ACRO_FRONT_POSS_CLIT_OPT  ;
++Sg+Ill:%:ään   ACRO_FRONT_POSS_CLIT_OPT ;
++Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Abl:%:ltä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ade:%:llä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+All:%:lle   ACRO_FRONT_POSS_EN_OPT  ;
++Sg+Ela:%:stä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ess:%:nä    ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ine:%:ssä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Tra:%:ksi   ACRO_FRONT_CLIT_OPT ;
++Sg+Tra:%:kse   ACRO_FRONT_POSS_EN_OBL    ;
++Pl+Par:%:iä    ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ill:%:iin   ACRO_FRONT_POSS_CLIT_OPT ;
++Pl+Abe:%:ittä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Abl:%:iltä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ade:%:illä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+All:%:ille  ACRO_FRONT_POSS_EN_OPT  ;
++Pl+Ess:%:inä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Cmt:%:ine  ACRO_FRONT_POSS_EN_OPT  ;
++Pl+Ela:%:istä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ine:%:issä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ins:%:in    ACRO_FRONT_CLIT_OPT ;
++Pl+Tra:%:iksi  ACRO_FRONT_CLIT_OPT ;
++Pl+Tra:%:ikse  ACRO_FRONT_POSS_EN_OBL    ;
+
+LEXICON ACRO_YY
+!! Acronym that ends in 'y' pronounced as letter
+!! € EY
+!! € EY:hyn
+0  ACRO_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  ACRO_FRONT_POSS    ;
++Sg+Nom:%:  ACRO_FRONT_CLIT   ;
++Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
++Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
++Sg+Par:%:tä    ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ill:%:hyn   ACRO_FRONT_POSS_CLIT_OPT ;
++Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Abl:%:ltä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ade:%:llä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+All:%:lle   ACRO_FRONT_POSS_EN_OPT  ;
++Sg+Ela:%:stä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ess:%:nä    ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ine:%:ssä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Tra:%:ksi   ACRO_FRONT_CLIT_OPT ;
++Sg+Tra:%:kse   ACRO_FRONT_POSS_EN_OBL    ;
++Pl+Par:%:itä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ill:%:ihin  ACRO_FRONT_POSS_CLIT_OPT ;
++Pl+Abe:%:ittä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Abl:%:iltä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ade:%:illä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+All:%:ille  ACRO_FRONT_POSS_EN_OPT  ;
++Pl+Ess:%:inä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Cmt:%:ine  ACRO_FRONT_POSS_EN_OPT  ;
++Pl+Ela:%:istä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ine:%:issä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ins:%:in    ACRO_FRONT_CLIT_OPT ;
++Pl+Tra:%:iksi  ACRO_FRONT_CLIT_OPT ;
++Pl+Tra:%:ikse  ACRO_FRONT_POSS_EN_OBL    ;
+
+LEXICON ACRO_ZET
+!! Acronyms that end in 'z' pronounced as letter
+!! € Z
+!! € Z:t
+0  ACRO_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  ACRO_BACK_POSS    ;
++Sg+Nom:%:  ACRO_BACK_CLIT   ;
++Pl+Nom:%:t ACRO_BACK_CLIT_OPT ;
++Sg+Nom:%:n ACRO_BACK_CLIT_OPT ;
++Sg+Par:%:aa    ACRO_BACK_POSS_CLIT_OPT  ;
++Sg+Ill:%:aan   ACRO_BACK_POSS_CLIT_OPT ;
++Sg+Abe:%:tta   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Abl:%:lta   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ade:%:lla   ACRO_BACK_POSS_AN_OPT  ;
++Sg+All:%:lle   ACRO_BACK_POSS_EN_OPT  ;
++Sg+Ela:%:sta   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ess:%:na    ACRO_BACK_POSS_AN_OPT  ;
++Sg+Ine:%:ssa   ACRO_BACK_POSS_AN_OPT  ;
++Sg+Tra:%:ksi   ACRO_BACK_CLIT_OPT ;
++Sg+Tra:%:kse   ACRO_BACK_POSS_EN_OBL    ;
++Pl+Par:%:ja    ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ill:%:ihin  ACRO_BACK_POSS_CLIT_OPT ;
++Pl+Abe:%:itta  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Abl:%:ilta  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ade:%:illa  ACRO_BACK_POSS_AN_OPT  ;
++Pl+All:%:ille  ACRO_BACK_POSS_EN_OPT  ;
++Pl+Ess:%:ina   ACRO_BACK_POSS_AN_OPT  ;
++Cmt:%:ine  ACRO_BACK_POSS_EN_OPT  ;
++Pl+Ela:%:ista  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ine:%:issa  ACRO_BACK_POSS_AN_OPT  ;
++Pl+Ins:%:in    ACRO_BACK_CLIT_OPT ;
++Pl+Tra:%:iksi  ACRO_BACK_CLIT_OPT ;
++Pl+Tra:%:ikse  ACRO_BACK_POSS_EN_OBL    ;
+
+LEXICON ACRO_ÄÄ
+!! Acronyms that end in 'ä' pronounced as letter
+!! € Ä
+!! € Ä:t
+0  ACRO_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  ACRO_FRONT_POSS    ;
++Sg+Nom:%:  ACRO_FRONT_CLIT   ;
++Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
++Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
++Sg+Par:%:tä    ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ill:%:hän   ACRO_FRONT_POSS_CLIT_OPT ;
++Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Abl:%:ltä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ade:%:llä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+All:%:lle   ACRO_FRONT_POSS_EN_OPT  ;
++Sg+Ela:%:stä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ess:%:nä    ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ine:%:ssä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Tra:%:ksi   ACRO_FRONT_CLIT_OPT ;
++Sg+Tra:%:kse   ACRO_FRONT_POSS_EN_OBL    ;
++Pl+Par:%:itä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ill:%:ihin  ACRO_FRONT_POSS_CLIT_OPT ;
++Pl+Abe:%:ittä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Abl:%:iltä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ade:%:illä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+All:%:ille  ACRO_FRONT_POSS_EN_OPT  ;
++Pl+Ess:%:inä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Cmt:%:ine  ACRO_FRONT_POSS_EN_OPT  ;
++Pl+Ela:%:istä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ine:%:issä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ins:%:in    ACRO_FRONT_CLIT_OPT ;
++Pl+Tra:%:iksi  ACRO_FRONT_CLIT_OPT ;
++Pl+Tra:%:ikse  ACRO_FRONT_POSS_EN_OBL    ;
+
+LEXICON ACRO_ÖÖ
+!! Acronyms that end in 'ö' pronounced as letter
+!! € Ö
+!! € Ö:t
+0  ACRO_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  ACRO_FRONT_POSS    ;
++Sg+Nom:%:  ACRO_FRONT_CLIT   ;
++Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
++Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
++Sg+Par:%:tä    ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ill:%:hön   ACRO_FRONT_POSS_CLIT_OPT ;
++Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Abl:%:ltä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ade:%:llä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+All:%:lle   ACRO_FRONT_POSS_EN_OPT  ;
++Sg+Ela:%:stä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ess:%:nä    ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Ine:%:ssä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Sg+Tra:%:ksi   ACRO_FRONT_CLIT_OPT ;
++Sg+Tra:%:kse   ACRO_FRONT_POSS_EN_OBL    ;
++Pl+Par:%:itä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ill:%:ihin  ACRO_FRONT_POSS_CLIT_OPT ;
++Pl+Abe:%:ittä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Abl:%:iltä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ade:%:illä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+All:%:ille  ACRO_FRONT_POSS_EN_OPT  ;
++Pl+Ess:%:inä   ACRO_FRONT_POSS_ÄN_OPT  ;
++Cmt:%:ine  ACRO_FRONT_POSS_EN_OPT  ;
++Pl+Ela:%:istä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ine:%:issä  ACRO_FRONT_POSS_ÄN_OPT  ;
++Pl+Ins:%:in    ACRO_FRONT_CLIT_OPT ;
++Pl+Tra:%:iksi  ACRO_FRONT_CLIT_OPT ;
++Pl+Tra:%:ikse  ACRO_FRONT_POSS_EN_OBL    ;
+
+
+! possessives
+LEXICON ACRO_FRONT_POSS
++PxSg1:%>ni  ACRO_FRONT_CLIT_OPT        ;
++PxSg2:%>si  ACRO_FRONT_CLIT_OPT        ;
++PxSg3:%>nsä ACRO_FRONT_CLIT_OPT        ;
++PxPl1:%>mme ACRO_FRONT_CLIT_OPT        ;
++PxPl2:%>nne ACRO_FRONT_CLIT_OPT        ;
++PxPl3:%>nsä ACRO_FRONT_CLIT_OPT        ;
+
+LEXICON ACRO_BACK_POSS
++PxSg1:%>ni  ACRO_BACK_CLIT_OPT        ;
++PxSg2:%>si  ACRO_BACK_CLIT_OPT        ;
++PxSg3:%>nsa ACRO_BACK_CLIT_OPT        ;
++PxPl1:%>mme ACRO_BACK_CLIT_OPT        ;
++PxPl2:%>nne ACRO_BACK_CLIT_OPT        ;
++PxPl3:%>nsa ACRO_BACK_CLIT_OPT        ;
+
+LEXICON ACRO_BACK_POSS_AN
++PxSg3:%>an    ACRO_BACK_CLIT_OPT     ;
++PxPl3:%>an    ACRO_BACK_CLIT_OPT     ;
+
+LEXICON ACRO_BACK_POSS_EN
++PxSg3:%>en    ACRO_BACK_CLIT_OPT     ;
++PxPl3:%>en    ACRO_BACK_CLIT_OPT     ;
+
+LEXICON ACRO_FRONT_POSS_EN
++PxSg3:%>en    ACRO_FRONT_CLIT_OPT     ;
++PxPl3:%>en    ACRO_FRONT_CLIT_OPT     ;
+
+LEXICON ACRO_FRONT_POSS_ÄN
++PxSg3:%>än    ACRO_FRONT_CLIT_OPT     ;
++PxPl3:%>än    ACRO_FRONT_CLIT_OPT     ;
+
+LEXICON ACRO_BACK_CLIT
++Foc/han:%>han   #        ;
++Foc/han+Foc/kaan:%>hankaan  #        ;
++Foc/han+Qst:%>hanko #        ;
++Foc/han+Foc/pa:%>hanpa #        ;
++Qst:%>ko #        ;
++Qst+Foc/han:%>kohan #        ;
++Qst+Foc/kaan:%>kokaan    #        ;
++Qst+Foc/kin:%>kokin    #        ;
++Qst+Foc/pa:%>kopa   #        ;
++Qst+Foc/s:%>kos    #        ;
++Foc/pa:%>pa #        ;
++Foc/pa+Foc/han:%>pahan #        ;
++Foc/pa+Foc/kaan:%>pakaan    #        ;
++Foc/pa+Foc/kin:%>pakin    #        ;
++Foc/pa+Qst:%>pako   #        ;
++Foc/pa+Foc/s:%>pas    #        ;
++Foc/kin:%>kin  #        ;
++Foc/kin+Foc/han:%>kinhan  #        ;
++Foc/kin+Foc/kaan:%>kinkaan #        ;
++Foc/kin+Qst:%>kinko    #        ;
++Foc/kin+Foc/pa:%>kinpa    #        ;
++Foc/kaan:%>kaan  #        ;
++Foc/kaan+Foc/han:%>kaanhan  #        ;
++Foc/kaan+Foc/kin:%>kaankin #        ;
++Foc/kaan+Qst:%>kaanko    #        ;
++Foc/kaan+Foc/pa:%>kaanpa    #        ;
+
+LEXICON ACRO_FRONT_CLIT
++Foc/han:%>hän   #        ;
++Foc/han+Foc/kaan:%>hänkään  #        ;
++Foc/han+Qst:%>hänkö #        ;
++Foc/han+Foc/pa:%>hänpä #        ;
++Qst:%>kö #        ;
++Qst+Foc/han:%>köhän #        ;
++Qst+Foc/kaan:%>kökään    #        ;
++Qst+Foc/kin:%>kökin    #        ;
++Qst+Foc/pa:%>köpä   #        ;
++Qst+Foc/s:%>kös    #        ;
++Foc/pa:%>pä #        ;
++Foc/pa+Foc/han:%>pähän #        ;
++Foc/pa+Foc/kaan:%>päkään    #        ;
++Foc/pa+Foc/kin:%>päkin    #        ;
++Foc/pa+Qst:%>päkö   #        ;
++Foc/pa+Foc/s:%>päs    #        ;
++Foc/kin:%>kin  #        ;
++Foc/kin+Foc/han:%>kinhän  #        ;
++Foc/kin+Foc/kaan:%>kinkään #        ;
++Foc/kin+Qst:%>kinkö    #        ;
++Foc/kin+Foc/pa:%>kinpä    #        ;
++Foc/kaan:%>kään  #        ;
++Foc/kaan+Foc/han:%>käänhän  #        ;
++Foc/kaan+Foc/kin:%>käänkin #        ;
++Foc/kaan+Qst:%>käänkö    #        ;
++Foc/kaan+Foc/pa:%>käänpä    #        ;
+
+
+! shorthands
+
+LEXICON ACRO_BACK_CLIT_OPT
+0    #   ;
+0   ACRO_BACK_CLIT    ;
+
+LEXICON ACRO_FRONT_CLIT_OPT
+0    #   ;
+0   ACRO_FRONT_CLIT    ;
+
+LEXICON ACRO_BACK_POSS_AN_OPT
+0    ACRO_BACK_POSS   ;
+0    ACRO_BACK_POSS_AN ;
+0    ACRO_BACK_CLIT ;
+0    #    ;
+
+LEXICON ACRO_FRONT_POSS_ÄN_OPT
+0    ACRO_FRONT_POSS   ;
+0    ACRO_FRONT_POSS_ÄN  ;
+0    ACRO_FRONT_CLIT ;
+0    #    ;
+
+LEXICON ACRO_BACK_POSS_EN_OPT
+0    ACRO_BACK_POSS   ;
+0    ACRO_BACK_POSS_EN ;
+0    ACRO_BACK_CLIT ;
+0    #    ;
+
+LEXICON ACRO_FRONT_POSS_EN_OPT
+0    ACRO_FRONT_POSS   ;
+0    ACRO_FRONT_POSS_EN  ;
+0    ACRO_FRONT_CLIT ;
+0    #    ;
+
+LEXICON ACRO_BACK_POSS_CLIT_OPT
+0    ACRO_BACK_POSS   ;
+0    ACRO_BACK_CLIT ;
+0    #    ;
+
+LEXICON ACRO_FRONT_POSS_CLIT_OPT
+0    ACRO_FRONT_POSS   ;
+0    ACRO_FRONT_CLIT ;
+0    #    ;
+
+LEXICON ACRO_BACK_POSS_EN_OBL
+0   ACRO_BACK_POSS  ;
+0   ACRO_BACK_POSS_EN   ;
+
+LEXICON ACRO_FRONT_POSS_EN_OBL
+0   ACRO_FRONT_POSS  ;
+0   ACRO_FRONT_POSS_EN   ;
+
+LEXICON ACRO_COMPOUND
++Use/Circ-:0-     NOMINAL   ;
