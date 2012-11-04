@@ -6,49 +6,6 @@
 !! compounding scheme or possibly many end applications.
 
 LEXICON EXCEPTIONS
-!! The verb olla has very peculiar and heteroclitic inflection with lot of
-!! common short forms in standard spoken Finnish:
-!! € lie
-!! € oisin
-!! € olija
-olla+V+Act+Der/maisilla:olemaisilla             V_BACK_POSS_AN ;
-olla+V+Act+InfMa+Sg+Abe:olematta                V_BACK_POSS_AN_OPT ;
-olla+V+Act+InfMa+Sg+Ade:olemalla                V_BACK_POSS_AN_OPT ;
-olla+V+Act+InfMa+Sg+Ela:olemasta                V_BACK_POSS_AN_OPT ;
-olla+V+Act+InfMa+Sg+Ill:olemaan                 V_BACK_POSS_OPT ;
-olla+V+Act+InfMa+Sg+Ine:olemassa                V_BACK_POSS_OPT ;
-olla+V+Act+InfMa+Sg+Ins:oleman                  V_BACK_CLIT_OPT ;
-olla+V+Act+Imprt+Sg2+s:oles                     # ;
-olla+V+Act+Imprt+Sg2:ole                        V_BACK_CLIT_OPT ;
-olla+V+Act+Ind+Prs+Sg1:olen                     V_BACK_CLIT_OPT ;
-olla+V+Act+Ind+Prs+Sg2:olet                     V_BACK_CLIT_OPT ;
-olla+V+Act+Ind+Prs+Sg3:on                       V_BACK_CLIT_OPT ;
-olla+V+Act+Ind+Prs+Pl1:olemme                   V_BACK_CLIT_OPT ;
-olla+V+Act+Ind+Prs+Pl2:olette                   V_BACK_CLIT_OPT ;
-olla+V+Act+Ind+Prs+Pl3:ovat                     V_BACK_CLIT_OPT ;
-olla+V+Ind+Prs+ConNeg:ole                       V_BACK_CLIT_OPT ;
-olla+V+Act+Cond+Sg1+Dial/standard:oisin         V_BACK_CLIT_OPT ;
-olla+V+Act+Cond+Sg2+Dial/standard:oisit         V_BACK_CLIT_OPT ;
-olla+V+Act+Cond+Sg3+Dial/standard:ois           V_BACK_CLIT_OPT ;
-olla+V+Act+Cond+Pl1+Dial/standard:oisimme       V_BACK_CLIT_OPT ;
-olla+V+Act+Cond+Pl2+Dial/standard:oisitte       V_BACK_CLIT_OPT ;
-olla+V+Act+Cond+Pl3+Dial/standard:oisivat       V_BACK_CLIT_OPT ;
-olla+V+Pass+PrfPrc:ol                           A_PARANNELTU ;
-olla+V+Act+AgentPrc:olem                        A_AALTOILEVA ;
-olla+V+Act+NegPrc:olemat                        A_VIATON ;
-olla+V+Act+PrsPrc+Der/inen:olevai               A_AAKKOSELLINEN ;
-olla+V+Act+PrsPrc:olev                          A_AALTOILEVA ;
-olla+V+Der/minen:olemi                          N_AAKKOSTAMINEN ;
-olla+V+Der/ja:olij                              N_SOITTAJA ;
-olla+V+Act+PrfPrc:oll                           A_KULUNUT ;
-olla+V+Act+Pot+Sg1:lienen                       V_FRONT_CLIT_OPT ;
-olla+V+Act+Pot+Sg2:lienet                       V_FRONT_CLIT_OPT ;
-olla+V+Act+Pot+Sg3:lienee                       V_FRONT_CLIT_OPT ;
-olla+V+Act+Pot+Pl1:lienemme                     V_FRONT_CLIT_OPT ;
-olla+V+Act+Pot+Pl2:lienette                     V_FRONT_CLIT_OPT ;
-olla+V+Act+Pot+Pl3:lienevät                     V_FRONT_CLIT_OPT ;
-olla+V+Act+Pot+ConNeg:liene                     V_FRONT_CLIT_OPT ;
-olla+V+Act+Pot+ConNeg:lie                       V_FRONT_CLIT_OPT ;
 
 !! negation verb has partial inflection:
 !! € en
