@@ -17777,7 +17777,6 @@ LEXICON A_HUPAKKO
 0:o    A_BACK_COMPARATIVE   ;
 0:o    A_BACK_SUPERLATIVE    ;
 
-!!
 !! Adjective stems with i:e variations
 !! ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 LEXICON A_ABNORMI
@@ -17835,11 +17834,11 @@ LEXICON A_OPAAKKI
 
 LEXICON A_PINKKI
 !! Similarly for front vowel version:
-!! € pinkki
-!! € pinkissä
-!! € pinkkeinä
-!! € pinkeistä
-!! € pinkkien
+!! € pinkki pinkki+A+Sg+Nom pink
+!! € pinkissä pinkki+A+Sg+Ine
+!! € pinkkeinä pinkki+A+Pl+Ess
+!! € pinkeistä pinkki+A+Pl+Ela
+!! € pinkkien pinkki+A+Pl+Gen
 0:i     A_FRONT_NOMINATIVE    ;
 0:i     A_FRONT_STRONG_SINGULARS    ;
 0:i     A_FRONT_WEAK_SINGULARS    ;
@@ -17853,31 +17852,14 @@ LEXICON A_PINKKI
 0:i  A_FRONT_COMPARATIVE   ;
 0:ke   A_FRONT_SUPERLATIVE    ;
 
-!LEXICON A_XXXPI
-!!! kuppi
-!!! kupissa
-!!! kuppeina
-!!! kupeista
-!!! kuppien
-!pi       A_BACK_NOMINATIVE    ;
-!pi       A_BACK_STRONG_SINGULARS    ;
-!pi:i     A_BACK_WEAK_SINGULARS    ;
-!pi:pe    A_BACK_STRONG_PLURALS   ;
-!pi:e     A_BACK_WEAK_PLURALS   ;
-!pi       A_BACK_PARTITIVE_A_AN  ;
-!pi       A_BACK_ILLATIVE_IN ;
-!pi:pe    A_BACK_PARTITIVE_JA    ;
-!pi:p     A_BACK_GENITIVE_IEN    ;
-!pi:pe    A_BACK_ILLATIVE_IHIN   ;
-!pi:i  A_BACK_COMPARATIVE   ;
-!pi:pe   A_BACK_SUPERLATIVE    ;
+!! There's no back vowel version of the bisyllabic gradating -ppi form.
 
 LEXICON A_SIPPI
-!! tyyppi
-!! tyypissä
-!! tyyppeinä
-!! tyypeistä
-!! tyyppien
+!! € sippi sippi+A+Sg+Nom   bust
+!! € sipissä sippi+A+Sg+Ine
+!! € sippeinä sippi+A+Pl+Ess
+!! € sipeistä sippi+A+Pl+Ela
+!! € sippien sippi+A+Pl+Gen
 0:i     A_FRONT_NOMINATIVE    ;
 0:i     A_FRONT_STRONG_SINGULARS    ;
 0:i     A_FRONT_WEAK_SINGULARS    ;
@@ -17892,11 +17874,11 @@ LEXICON A_SIPPI
 0:pe   A_FRONT_SUPERLATIVE    ;
 
 LEXICON A_HURTTI
-!! kortti
-!! kortissa
-!! kortteina
-!! korteista
-!! korttien
+!! € hurtti hurtti+A+Sg+Nom grunchy
+!! € hurtissa hurtti+A+Sg+Ine
+!! € hurtteina hurtti+A+Pl+Ess
+!! € hurteista hurtti+A+Pl+Ela
+!! € hurttien hurtti+A+Pl+Gen
 0:i     A_BACK_NOMINATIVE    ;
 0:i     A_BACK_STRONG_SINGULARS    ;
 0:i     A_BACK_WEAK_SINGULARS    ;
@@ -17911,11 +17893,11 @@ LEXICON A_HURTTI
 0:te   A_BACK_SUPERLATIVE    ;
 
 LEXICON A_VÄÄRTTI
-!!! skeitti
-!!! skeitissä
-!!! skeitteinä
-!!! skeiteistä
-!!! skeittien
+!! väärtti väärtti+A+Sg+Nom worthy
+!! väärtissä väärtti+A+Sg+Ine
+!! väärtteinä väärtti+A+Pl+Ess
+!! väärteistä väärtti+A+Pl+Ela
+!! väärttien väärtti+A+Pl+Gen
 0       A_FRONT_NOMINATIVE    ;
 0       A_FRONT_STRONG_SINGULARS    ;
 0:i       A_FRONT_WEAK_SINGULARS    ;
@@ -17929,38 +17911,7 @@ LEXICON A_VÄÄRTTI
 0:i  A_FRONT_COMPARATIVE   ;
 0:te   A_FRONT_SUPERLATIVE    ;
 
-!LEXICON A_XXXPI
-!!! hupi
-!!! huvissa
-!!! hupeina
-!!! huveista
-!!! hupien
-!pi       A_BACK_NOMINATIVE    ;
-!pi       A_BACK_STRONG_SINGULARS    ;
-!pi:vi     A_BACK_WEAK_SINGULARS    ;
-!pi:pe    A_BACK_STRONG_PLURALS   ;
-!pi:ve     A_BACK_WEAK_PLURALS   ;
-!pi       A_BACK_PARTITIVE_A_AN  ;
-!pi       A_BACK_ILLATIVE_IN ;
-!pi:pe    A_BACK_PARTITIVE_JA    ;
-!pi:p     A_BACK_GENITIVE_IEN    ;
-!pi:pe    A_BACK_ILLATIVE_IHIN   ;
-!pi:vi  A_BACK_COMPARATIVE   ;
-!pi:pe   A_BACK_SUPERLATIVE    ;
-
-!!LEXICON A_XXXPI
-!! No examples
-!!pi       A_FRONT_NOMINATIVE    ;
-!!pi       A_FRONT_STRONG_SINGULARS    ;
-!!pi:vi     A_FRONT_WEAK_SINGULARS    ;
-!!pi:pe    A_FRONT_STRONG_PLURALS   ;
-!!pi:ve     A_FRONT_WEAK_PLURALS   ;
-!!pi       A_FRONT_PARTITIVE_Ä_ÄN  ;
-!!pi       A_FRONT_ILLATIVE_IN ;
-!!pi:pe    A_FRONT_PARTITIVE_JÄ    ;
-!!pi:p     A_FRONT_GENITIVE_IEN    ;
-!!pi:pe    A_FRONT_ILLATIVE_IHIN   ;
-
+!! There are no bisyllabic adjectives ending in vowel and gradating -pi.
 
 LEXICON A_TUHTI
 !! tauti
@@ -21251,10 +21202,10 @@ LEXICON A_EHYT
 
 LEXICON A_KULUNUT
 !! aivokuollut
-0:t     A_BACK_NOMINATIVE    ;
+0:ut     A_BACK_NOMINATIVE    ;
 0:ee   A_BACK_SINGULARS    ;
 0:e    A_BACK_PLURALS    ;
-0:t    A_BACK_PARTITIVE_TA    ;
+0:ut    A_BACK_PARTITIVE_TA    ;
 0:ee   A_BACK_ILLATIVE_SEEN    ;
 0:e    A_BACK_PARTITIVE_ITA   ;
 0:e    A_BACK_GENITIVE_IDEN   ;
@@ -21266,10 +21217,10 @@ LEXICON A_KULUNUT
 
 LEXICON A_ÄLLISTYNYT
 !! sivistynyt
-0:t A_FRONT_NOMINATIVE    ;
+0:yt A_FRONT_NOMINATIVE    ;
 0:ee   A_FRONT_SINGULARS    ;
 0:e    A_FRONT_PLURALS    ;
-0:t    A_FRONT_PARTITIVE_TÄ    ;
+0:yt    A_FRONT_PARTITIVE_TÄ    ;
 0:ee   A_FRONT_ILLATIVE_SEEN    ;
 0:e    A_FRONT_PARTITIVE_ITÄ   ;
 0:e    A_FRONT_GENITIVE_IDEN   ;
