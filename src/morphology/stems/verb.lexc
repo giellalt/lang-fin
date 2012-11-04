@@ -14085,11 +14085,17 @@ LEXICON V_ÄHKÄÄ
 0     V_FRONT_CONDITIONAL  ;
 
 LEXICON V_OLLA
+!! The verb olla has very peculiar and heteroclitic inflection with lot of
+!! common short forms in standard spoken Finnish:
 !! € olla
+!! € lie
+!! € oisin
+!! € olija
 0:oll    V_BACK_AINF    ;
 0:oll    V_BACK_EINF    ;
 0:ole    V_BACK_WEAK_PRESENT    ;
-+Act+Prs+Sg3:on V_BACK_CLIT_OPT ;
++Act+Ind+Prs+Sg3:on V_BACK_CLIT_OPT ;
++Act+Ind+Prs+Pl3:ovat V_BACK_CLIT_OPT ;
 0:ol    V_BACK_WEAK_PAST   ;
 0:ol    V_BACK_STRONG_PAST ;
 0:ol    V_BACK_CONDITIONAL  ;
@@ -14098,4 +14104,39 @@ LEXICON V_OLLA
 0:ol   V_BACK_PASSIVE_L    ;
 0:ol  V_BACK_PASSIVE  ;
 0:ol   V_BACK_TUPCP_L    ;
+
+! these were found in exceptions.lexc, but moved here
+! in order to have all olla in one place. Pleas remove
+! doublets when detected.
+
++Act+Der/maisilla:olemaisilla             V_BACK_POSS_AN ;
++Act+InfMa+Sg+Abe:olematta                V_BACK_POSS_AN_OPT ;
++Act+InfMa+Sg+Ade:olemalla                V_BACK_POSS_AN_OPT ;
++Act+InfMa+Sg+Ela:olemasta                V_BACK_POSS_AN_OPT ;
++Act+InfMa+Sg+Ill:olemaan                 V_BACK_POSS_OPT ;
++Act+InfMa+Sg+Ine:olemassa                V_BACK_POSS_OPT ;
++Act+InfMa+Sg+Ins:oleman                  V_BACK_CLIT_OPT ;
++Act+Imprt+Sg2+s:oles                     # ;
++Act+Cond+Sg1+Dial/standard:oisin         V_BACK_CLIT_OPT ;
++Act+Cond+Sg2+Dial/standard:oisit         V_BACK_CLIT_OPT ;
++Act+Cond+Sg3+Dial/standard:ois           V_BACK_CLIT_OPT ;
++Act+Cond+Pl1+Dial/standard:oisimme       V_BACK_CLIT_OPT ;
++Act+Cond+Pl2+Dial/standard:oisitte       V_BACK_CLIT_OPT ;
++Act+Cond+Pl3+Dial/standard:oisivat       V_BACK_CLIT_OPT ;
++Pss+PrfPrc:ol                           A_PARANNELTU ;
++Act+AgentPrc:olem                        A_AALTOILEVA ;
++Act+NegPrc:olemat                        A_VIATON ;
++Act+PrsPrc+Der/inen:olevai               A_AAKKOSELLINEN ;
++Act+PrsPrc:olev                          A_AALTOILEVA ;
++Der/minen:olemi                          N_AAKKOSTAMINEN ;
++Der/ja:olij                              N_SOITTAJA ;
++Act+PrfPrc:oll                           A_KULUNUT ;
++Act+Pot+Sg1:lienen                       V_FRONT_CLIT_OPT ;
++Act+Pot+Sg2:lienet                       V_FRONT_CLIT_OPT ;
++Act+Pot+Sg3:lienee                       V_FRONT_CLIT_OPT ;
++Act+Pot+Pl1:lienemme                     V_FRONT_CLIT_OPT ;
++Act+Pot+Pl2:lienette                     V_FRONT_CLIT_OPT ;
++Act+Pot+Pl3:lienevät                     V_FRONT_CLIT_OPT ;
++Act+Pot+ConNeg:liene                     V_FRONT_CLIT_OPT ;
++Act+Pot+ConNeg:lie                       V_FRONT_CLIT_OPT ;
 
