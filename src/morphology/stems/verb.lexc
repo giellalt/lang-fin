@@ -16,12 +16,12 @@
 LEXICON  V
 !! The verbs are classified along the stem mutations suffix assimilation,
 !! and harmony:
-!! € kutoo
-!! € kudotaan
-!! € tietää
-!! € tiesit
-!! € nähnyt
-!! € juossut
+!! € kutoo kutoa+V+Act+Ind+Prt+Sg3 knit
+!! € kudotaan kutoa+V+Pss+Ind+Prt+Pe4
+!! € tietää tietää+V+Act+Ind+Prt+Sg3 know
+!! € tiesit tietää+V+Act+Ind+Pst+Sg2
+!! € nähnyt nähdä+V+Act+PrfPrc+Sg+Nom
+!! € juossut juosta+V+Act+PrfPrc+Sg+Nom
 !! The key to find unique class from verbs is to pick stems and suffixes from:
 !! indicative non-past 1st singular and 3rd singular, indicative past 1st 
 !! singular, ...
@@ -10691,18 +10691,19 @@ zoomata+V:zooma  V_ARVATA  ;
 
 LEXICON V_KAUNISTUA
 !! The u stems have no stem variation:
-!! € kaunistua
-!! € kaunistuessa
-!! € kaunistun
-!! € kaunistuu
-!! € kaunistuin
-!! € kaunistui
-!! € kaunistuisi
-!! € kaunistukaa
-!! € kaunistunen
-!! € kaunistutaan
-!! € kaunistuttiin
-!! € kaunistuttu
+!! € kaunistua kaunistua+V+Act+InfA+Sg+Lat beautify
+!! € kaunistuessa kaunistua+V+Act+InfE+Sg+Ine
+!! € kaunistun kaunistua+V+Act+Ind+Prt+Sg1
+!! € kaunistuu kaunistua+V+Act+Ind+Prt+Sg3
+!! € kaunistuin kaunistua+V+Act+Ind+Pst+Sg1
+!! € kaunistui kaunistua+V+Act+Ind+Pst+Sg3
+!! € kaunistuisi kaunistua+V+Act+Cond+Sg3
+!! € kaunistukaa kaunistua+V+Act+Imprt+Pl2
+!! € kaunistunen kaunistua+V+Act+Pot+Sg1
+!! € kaunistutaan kaunistua+V+Pss+Ind+Prt+Pe4
+!! € kaunistuttiin kaunistua+V+Pss+Ind+Pst+Pe4
+!! € kaunistuttu kaunistua+V+Pss+Ind+Pst+ConNeg
+!! € kaunistuminen kaunistua+V+Der/minen+Sg+Nom
 0    V_BACK_AINF    ;
 0    V_BACK_EINF    ;
 0    V_BACK_WEAK_PRESENT    ;
@@ -10716,6 +10717,7 @@ LEXICON V_KAUNISTUA
 0   V_BACK_PASSIVE_T    ;
 0:t   V_BACK_PASSIVE  ;
 0:t   V_BACK_TUPCP_0    ;
+0     V_BACK_DERIV_PCPS ;
 
 LEXICON V_PUNOA
 !! The o stems have no stem variation:
@@ -10744,6 +10746,7 @@ LEXICON V_PUNOA
 0   V_BACK_PASSIVE_T    ;
 0:t   V_BACK_PASSIVE  ;
 0:t   V_BACK_TUPCP_0    ;
+0     V_BACK_DERIV_PCPS ;
 
 LEXICON V_SÄILÖÄ
 !! The o stems have no stem variation:
@@ -10772,6 +10775,7 @@ LEXICON V_SÄILÖÄ
 0   V_FRONT_PASSIVE_T    ;
 0:t   V_FRONT_PASSIVE  ;
 0:t   V_FRONT_TUPCP_0    ;
+0     V_FRONT_DERIV_PCPS    ;
 
 LEXICON V_ÄLLISTYÄ
 !! The y stems have no stem variation:
@@ -10800,6 +10804,7 @@ LEXICON V_ÄLLISTYÄ
 0   V_FRONT_PASSIVE_T    ;
 0:t   V_FRONT_PASSIVE  ;
 0:t   V_FRONT_TUPCP_0    ;
+0     V_FRONT_DERIV_PCPS    ;
 
 LEXICON V_HAUKKOA
 !! € haukkoa
@@ -10816,6 +10821,7 @@ LEXICON V_HAUKKOA
 0:o   V_BACK_PASSIVE_T    ;
 0:ot   V_BACK_PASSIVE  ;
 0:ot   V_BACK_TUPCP_0    ;
+0:ko    V_BACK_DERIV_PCPS   ;
 
 LEXICON V_NUOKKUA
 !! € nuokkua
@@ -10832,6 +10838,7 @@ LEXICON V_NUOKKUA
 0:u   V_BACK_PASSIVE_T    ;
 0:ut   V_BACK_PASSIVE  ;
 0:ut   V_BACK_TUPCP_0    ;
+0:ku    V_BACK_DERIV_PCPS   ;
 
 LEXICON V_KÄRKKYÄ
 !! € kärkkyä
@@ -10848,6 +10855,7 @@ LEXICON V_KÄRKKYÄ
 0:y   V_FRONT_PASSIVE_T    ;
 0:yt   V_FRONT_PASSIVE  ;
 0:yt   V_FRONT_TUPCP_0    ;
+0:ky    V_FRONT_DERIV_PCPS  ;
 
 LEXICON V_HARPPOA
 !! € harppoa
@@ -10864,6 +10872,7 @@ LEXICON V_HARPPOA
 0:o   V_BACK_PASSIVE_T    ;
 0:ot   V_BACK_PASSIVE  ;
 0:ot   V_BACK_TUPCP_0    ;
+0:po    V_BACK_DERIV_PCPS ;
 
 LEXICON V_LOPPUA
 !! € loppua
@@ -10880,6 +10889,7 @@ LEXICON V_LOPPUA
 0:u   V_BACK_PASSIVE_T    ;
 0:ut   V_BACK_PASSIVE  ;
 0:ut   V_BACK_TUPCP_0    ;
+0:pu    V_BACK_DERIV_PCPS ;
 
 LEXICON V_LEPPYÄ
 !! € leppyä
@@ -10896,6 +10906,7 @@ LEXICON V_LEPPYÄ
 0:y   V_FRONT_PASSIVE_T    ;
 0:yt   V_FRONT_PASSIVE  ;
 0:yt   V_FRONT_TUPCP_0    ;
+0:py    V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KIVETTYÄ
 !! € kivettyä
@@ -10912,6 +10923,7 @@ LEXICON V_KIVETTYÄ
 0:y   V_FRONT_PASSIVE_T    ;
 0:yt   V_FRONT_PASSIVE  ;
 0:yt   V_FRONT_TUPCP_0    ;
+0:ty    V_FRONT_DERIV_PCPS ;
 
 LEXICON V_VIITTOA
 !! € hermottua
@@ -10928,6 +10940,7 @@ LEXICON V_VIITTOA
 0:o   V_BACK_PASSIVE_T    ;
 0:tu   V_BACK_PASSIVE  ;
 0:tu   V_BACK_TUPCP_0    ;
+0:tu    V_BACK_DERIV_PCPS ;
 
 LEXICON V_HERMOTTUA
 !! € hermottua
@@ -10944,6 +10957,7 @@ LEXICON V_HERMOTTUA
 0:u   V_BACK_PASSIVE_T    ;
 0:ut   V_BACK_PASSIVE  ;
 0:ut   V_BACK_TUPCP_0    ;
+0:tu    V_BACK_DERIV_PCPS ;
 
 LEXICON V_MÄIKYÄ
 !! € mäikyä
@@ -10960,6 +10974,7 @@ LEXICON V_MÄIKYÄ
 0:y   V_FRONT_PASSIVE_T    ;
 0:yt   V_FRONT_PASSIVE  ;
 0:yt   V_FRONT_TUPCP_0    ;
+0:ky    V_FRONT_DERIV_PCPS ;
 
 LEXICON V_TAKOA
 !! € takoa
@@ -10976,6 +10991,7 @@ LEXICON V_TAKOA
 0:o   V_BACK_PASSIVE_T    ;
 0:ot   V_BACK_PASSIVE  ;
 0:ot   V_BACK_TUPCP_0    ;
+0:ko    V_BACK_DERIV_PCPS ;
 
 LEXICON V_MAUKUA
 !! € maukua
@@ -10992,6 +11008,7 @@ LEXICON V_MAUKUA
 0:’u  V_BACK_PASSIVE_T    ;
 0:’ut  V_BACK_PASSIVE  ;
 0:’ut  V_BACK_TUPCP_0    ;
+0:ku    V_BACK_DERIV_PCPS ;
 
 LEXICON V_ELPYÄ
 !! € elpyä
@@ -11008,6 +11025,7 @@ LEXICON V_ELPYÄ
 0:vy   V_FRONT_PASSIVE_T    ;
 0:vyt   V_FRONT_PASSIVE  ;
 0:vyt   V_FRONT_TUPCP_0    ;
+0:py    V_FRONT_DERIV_PCPS ;
 
 LEXICON V_HIIPUA
 !! € hiipua
@@ -11024,6 +11042,7 @@ LEXICON V_HIIPUA
 0:vu   V_BACK_PASSIVE_T    ;
 0:vut   V_BACK_PASSIVE  ;
 0:vut   V_BACK_TUPCP_0    ;
+0:pu    V_BACK_DERIV_PCPS ;
 
 LEXICON V_SILPOA
 !! € silpoa
@@ -11040,6 +11059,7 @@ LEXICON V_SILPOA
 0:vo   V_BACK_PASSIVE_T    ;
 0:vot   V_BACK_PASSIVE  ;
 0:vot   V_BACK_TUPCP_0    ;
+0:po    V_BACK_DERIV_PCPS ;
 
 LEXICON V_KIETOA
 !! € kietoa
@@ -11056,6 +11076,7 @@ LEXICON V_KIETOA
 0:do   V_BACK_PASSIVE_T    ;
 0:dot   V_BACK_PASSIVE  ;
 0:dot   V_BACK_TUPCP_0    ;
+0:to    V_BACK_DERIV_PCPS ;
 
 LEXICON V_SILIYTYÄ
 !! € siliytyä
@@ -11072,6 +11093,7 @@ LEXICON V_SILIYTYÄ
 0:dy   V_FRONT_PASSIVE_T    ;
 0:dyt   V_FRONT_PASSIVE  ;
 0:dyt   V_FRONT_TUPCP_0    ;
+0:ty    V_FRONT_DERIV_PCPS ;
 
 LEXICON V_ROHTUA
 !! € rohtua
@@ -11088,6 +11110,7 @@ LEXICON V_ROHTUA
 0:du   V_BACK_PASSIVE_T    ;
 0:dut   V_BACK_PASSIVE  ;
 0:dut   V_BACK_TUPCP_0    ;
+0:tu    V_BACK_DERIV_PCPS ;
 
 LEXICON V_VINKUA
 !! € vinkua
@@ -11104,6 +11127,7 @@ LEXICON V_VINKUA
 0:gu   V_BACK_PASSIVE_T    ;
 0:gut   V_BACK_PASSIVE  ;
 0:gut   V_BACK_TUPCP_0    ;
+0:ku    V_BACK_DERIV_PCPS ;
 
 LEXICON V_PENKOA
 !! € penkoa
@@ -11120,6 +11144,7 @@ LEXICON V_PENKOA
 0:go   V_BACK_PASSIVE_T    ;
 0:got   V_BACK_PASSIVE  ;
 0:got   V_BACK_TUPCP_0    ;
+0:ko    V_BACK_DERIV_PCPS ;
 
 LEXICON V_TEMPOA
 !! € tempoa
@@ -11136,6 +11161,7 @@ LEXICON V_TEMPOA
 0:mo   V_BACK_PASSIVE_T    ;
 0:mot   V_BACK_PASSIVE  ;
 0:mot   V_BACK_TUPCP_0    ;
+0:po    V_BACK_DERIV_PCPS ;
 
 LEXICON V_AMPUA
 !! € ampua
@@ -11152,6 +11178,7 @@ LEXICON V_AMPUA
 0:mu   V_BACK_PASSIVE_T    ;
 0:mut   V_BACK_PASSIVE  ;
 0:mut   V_BACK_TUPCP_0    ;
+0:pu    V_BACK_DERIV_PCPS ;
 
 LEXICON V_MIELTYÄ
 !! € mieltyä
@@ -11168,6 +11195,7 @@ LEXICON V_MIELTYÄ
 0:ly   V_FRONT_PASSIVE_T    ;
 0:lyt   V_FRONT_PASSIVE  ;
 0:lyt   V_FRONT_TUPCP_0    ;
+0:ty    V_FRONT_DERIV_PCPS ;
 
 LEXICON V_HUMALTUA
 !! € humaltua
@@ -11184,6 +11212,7 @@ LEXICON V_HUMALTUA
 0:lu   V_BACK_PASSIVE_T    ;
 0:lut   V_BACK_PASSIVE  ;
 0:lut   V_BACK_TUPCP_0    ;
+0:tu    V_BACK_DERIV_PCPS ;
 
 LEXICON V_VAKAANTUA
 !! € vakaantua
@@ -11200,6 +11229,7 @@ LEXICON V_VAKAANTUA
 0:nu   V_BACK_PASSIVE_T    ;
 0:nut   V_BACK_PASSIVE  ;
 0:nut   V_BACK_TUPCP_0    ;
+0:tu    V_BACK_DERIV_PCPS ;
 
 LEXICON V_TYHJENTYÄ
 !! € tyhjentyä
@@ -11216,6 +11246,7 @@ LEXICON V_TYHJENTYÄ
 0:ny   V_FRONT_PASSIVE_T    ;
 0:nyt   V_FRONT_PASSIVE  ;
 0:nyt   V_FRONT_TUPCP_0    ;
+0:ty    V_FRONT_DERIV_PCPS ;
 
 LEXICON V_PYÖRTYÄ
 !! € pyörtyä
@@ -11232,6 +11263,7 @@ LEXICON V_PYÖRTYÄ
 0:ry   V_FRONT_PASSIVE_T    ;
 0:ryt   V_FRONT_PASSIVE  ;
 0:ryt   V_FRONT_TUPCP_0    ;
+0:ty    V_FRONT_DERIV_PCPS ;
 
 LEXICON V_VARTOA
 !! € pusertua
@@ -11248,6 +11280,7 @@ LEXICON V_VARTOA
 0:ro   V_BACK_PASSIVE_T    ;
 0:rot   V_BACK_PASSIVE  ;
 0:rot   V_BACK_TUPCP_0    ;
+0:to    V_BACK_DERIV_PCPS ;
 
 LEXICON V_PUSERTUA
 !! € pusertua
@@ -11264,6 +11297,7 @@ LEXICON V_PUSERTUA
 0:ru   V_BACK_PASSIVE_T    ;
 0:rut   V_BACK_PASSIVE  ;
 0:rut   V_BACK_TUPCP_0    ;
+0:tu    V_BACK_DERIV_PCPS ;
 
 LEXICON V_MUTRISTAA
 !! € mutristaa
@@ -11280,6 +11314,7 @@ LEXICON V_MUTRISTAA
 0:e        V_BACK_PASSIVE_T    ;
 0:et       V_BACK_PASSIVE    ;
 0:et       V_BACK_TUPCP_0   ;
+0:a    V_BACK_DERIV_PCPS ;
 
 LEXICON V_KIVISTÄÄ
 !! € kivistää
@@ -11296,6 +11331,7 @@ LEXICON V_KIVISTÄÄ
 0:e        V_FRONT_PASSIVE_T    ;
 0:et       V_FRONT_PASSIVE    ;
 0:et       V_FRONT_TUPCP_0   ;
+0:ä        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_RÄPSYTTÄÄ
 !! € räpsyttää
@@ -11312,6 +11348,7 @@ LEXICON V_RÄPSYTTÄÄ
 0:e        V_FRONT_PASSIVE_T    ;
 0:et       V_FRONT_PASSIVE    ;
 0:et       V_FRONT_TUPCP_0   ;
+0:tä        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_VIEROITTAA
 !! € vieroittaa
@@ -11328,6 +11365,7 @@ LEXICON V_VIEROITTAA
 0:e        V_BACK_PASSIVE_T    ;
 0:et       V_BACK_PASSIVE    ;
 0:et       V_BACK_TUPCP_0   ;
+0:ta    V_BACK_DERIV_PCPS ;
 
 
 LEXICON V_PURKAA
@@ -11345,6 +11383,7 @@ LEXICON V_PURKAA
 0:e        V_BACK_PASSIVE_T    ;
 0:et       V_BACK_PASSIVE    ;
 0:et       V_BACK_TUPCP_0   ;
+0:ka    V_BACK_DERIV_PCPS ;
 
 LEXICON V_YSKÄHTÄÄ
 !! € kärähtää
@@ -11361,6 +11400,7 @@ LEXICON V_YSKÄHTÄÄ
 0:de        V_FRONT_PASSIVE_T    ;
 0:det       V_FRONT_PASSIVE    ;
 0:det       V_FRONT_TUPCP_0   ;
+0:tä        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_MOJAHTAA
 !! € mojahta
@@ -11377,6 +11417,7 @@ LEXICON V_MOJAHTAA
 0:de        V_BACK_PASSIVE_T    ;
 0:det       V_BACK_PASSIVE    ;
 0:det       V_BACK_TUPCP_0   ;
+0:ta        V_BACK_DERIV_PCPS ;
 
 LEXICON V_KYNTÄÄ
 !! € kyntää
@@ -11393,6 +11434,7 @@ LEXICON V_KYNTÄÄ
 0:ne        V_FRONT_PASSIVE_T    ;
 0:net       V_FRONT_PASSIVE    ;
 0:net       V_FRONT_TUPCP_0   ;
+0:tä        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_SORTAA
 !! € sortaa
@@ -11409,6 +11451,7 @@ LEXICON V_SORTAA
 0:re        V_BACK_PASSIVE_T    ;
 0:ret       V_BACK_PASSIVE    ;
 0:ret       V_BACK_TUPCP_0   ;
+0:ta        V_BACK_DERIV_PCPS ;
 
 LEXICON V_HUUTAA
 !! € huutaa
@@ -11425,6 +11468,7 @@ LEXICON V_HUUTAA
 0:de        V_BACK_PASSIVE_T    ;
 0:det       V_BACK_PASSIVE    ;
 0:det       V_BACK_TUPCP_0   ;
+0:ta        V_BACK_DERIV_PCPS ;
 
 LEXICON V_PYYTÄÄ
 !! € pyytää
@@ -11441,6 +11485,7 @@ LEXICON V_PYYTÄÄ
 0:de        V_FRONT_PASSIVE_T    ;
 0:det       V_FRONT_PASSIVE    ;
 0:det       V_FRONT_TUPCP_0   ;
+0:tä        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_SIVALTAA
 !! € sivaltaa
@@ -11457,6 +11502,7 @@ LEXICON V_SIVALTAA
 0:le        V_BACK_PASSIVE_T    ;
 0:let       V_BACK_PASSIVE    ;
 0:let       V_BACK_TUPCP_0   ;
+0:ta        V_BACK_DERIV_PCPS ;
 
 LEXICON V_VIHELTÄÄ
 !! € viheltää
@@ -11473,6 +11519,7 @@ LEXICON V_VIHELTÄÄ
 0:le        V_FRONT_PASSIVE_T    ;
 0:let       V_FRONT_PASSIVE    ;
 0:let       V_FRONT_TUPCP_0   ;
+0:tä        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_HIVENTÄÄ
 !! € hiventää
@@ -11489,6 +11536,7 @@ LEXICON V_HIVENTÄÄ
 0:ne        V_FRONT_PASSIVE_T    ;
 0:net       V_FRONT_PASSIVE    ;
 0:net       V_FRONT_TUPCP_0   ;
+0:tä        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_HUONONTAA
 !! € huonontaa
@@ -11505,6 +11553,7 @@ LEXICON V_HUONONTAA
 0:ne        V_BACK_PASSIVE_T    ;
 0:net       V_BACK_PASSIVE    ;
 0:net       V_BACK_TUPCP_0   ;
+0:ta        V_BACK_DERIV_PCPS ;
 
 LEXICON V_KUHERTAA
 !! € kuhertaa
@@ -11521,6 +11570,7 @@ LEXICON V_KUHERTAA
 0:re        V_BACK_PASSIVE_T    ;
 0:ret       V_BACK_PASSIVE    ;
 0:ret       V_BACK_TUPCP_0   ;
+0:ta        V_BACK_DERIV_PCPS ;
 
 LEXICON V_NÄPERTÄÄ
 !! € näpertää
@@ -11537,6 +11587,9 @@ LEXICON V_NÄPERTÄÄ
 0:re        V_FRONT_PASSIVE_T    ;
 0:ret       V_FRONT_PASSIVE    ;
 0:ret       V_FRONT_TUPCP_0   ;
+0:tä        V_FRONT_DERIV_PCPS ;
+0:tä        V_FRONT_DERIV_PCPS ;
+
 
 LEXICON V_KIITÄÄ
 !! € kiitää
@@ -11555,6 +11608,7 @@ LEXICON V_KIITÄÄ
 0:de        V_FRONT_PASSIVE_T    ;
 0:det       V_FRONT_PASSIVE    ;
 0:det       V_FRONT_TUPCP_0   ;
+0:tä        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_JOUTAA
 !! € joutaa
@@ -11573,6 +11627,7 @@ LEXICON V_JOUTAA
 0:de        V_BACK_PASSIVE_T    ;
 0:det       V_BACK_PASSIVE    ;
 0:det       V_BACK_TUPCP_0   ;
+0:ta        V_BACK_DERIV_PCPS ;
 
 LEXICON V_YLTÄÄ
 !! € yltää
@@ -11591,6 +11646,7 @@ LEXICON V_YLTÄÄ
 0:le        V_FRONT_PASSIVE_T    ;
 0:let       V_FRONT_PASSIVE    ;
 0:let       V_FRONT_TUPCP_0   ;
+0:tä        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_ENTÄÄ
 !! € entää
@@ -11609,6 +11665,7 @@ LEXICON V_ENTÄÄ
 0:ne        V_FRONT_PASSIVE_T    ;
 0:net       V_FRONT_PASSIVE    ;
 0:net       V_FRONT_TUPCP_0   ;
+0:tä        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KASVAA
 !! € kasvaa
@@ -11625,6 +11682,7 @@ LEXICON V_KASVAA
 0:e        V_BACK_PASSIVE_T    ;
 0:et       V_BACK_PASSIVE    ;
 0:et       V_BACK_TUPCP_0   ;
+0:a        V_BACK_DERIV_PCPS ;
 
 LEXICON V_VIRKKAA
 !! € virkkaa jakaa
@@ -11641,6 +11699,7 @@ LEXICON V_VIRKKAA
 0:e        V_BACK_PASSIVE_T    ;
 0:et       V_BACK_PASSIVE    ;
 0:et       V_BACK_TUPCP_0   ;
+0:ka        V_BACK_DERIV_PCPS ;
 
 LEXICON V_TAPPAA
 !! € tappaa
@@ -11657,6 +11716,7 @@ LEXICON V_TAPPAA
 0:e        V_BACK_PASSIVE_T    ;
 0:et       V_BACK_PASSIVE    ;
 0:et       V_BACK_TUPCP_0   ;
+0:pa        V_BACK_DERIV_PCPS ;
 
 LEXICON V_AUTTAA
 !! € tappaa
@@ -11673,6 +11733,7 @@ LEXICON V_AUTTAA
 0:e        V_BACK_PASSIVE_T    ;
 0:et       V_BACK_PASSIVE    ;
 0:et       V_BACK_TUPCP_0   ;
+0:ta        V_BACK_DERIV_PCPS ;
 
 LEXICON V_SATAA
 !! € sataa
@@ -11689,6 +11750,7 @@ LEXICON V_SATAA
 0:de       V_BACK_PASSIVE_T    ;
 0:det      V_BACK_PASSIVE    ;
 0:det      V_BACK_TUPCP_0   ;
+0:ta        V_BACK_DERIV_PCPS ;
 
 LEXICON V_KANTAA
 !! € kantaa
@@ -11705,6 +11767,7 @@ LEXICON V_KANTAA
 0:ne       V_BACK_PASSIVE_T    ;
 0:net      V_BACK_PASSIVE    ;
 0:net      V_BACK_TUPCP_0   ;
+0:ta        V_BACK_DERIV_PCPS ;
 
 LEXICON V_KAATAA
 !! € kaataa
@@ -11723,6 +11786,7 @@ LEXICON V_KAATAA
 0:de       V_BACK_PASSIVE_T    ;
 0:det      V_BACK_PASSIVE    ;
 0:det      V_BACK_TUPCP_0   ;
+0:ta        V_BACK_DERIV_PCPS ;
 
 LEXICON V_SAARTAA
 !! € saartaa
@@ -11741,6 +11805,7 @@ LEXICON V_SAARTAA
 0:re       V_BACK_PASSIVE_T    ;
 0:ret      V_BACK_PASSIVE    ;
 0:ret      V_BACK_TUPCP_0   ;
+0:ta        V_BACK_DERIV_PCPS ;
 
 LEXICON V_KYTKEÄ
 !! € kytkeä
@@ -11757,6 +11822,7 @@ LEXICON V_KYTKEÄ
 0:e        V_FRONT_PASSIVE_T    ;
 0:et       V_FRONT_PASSIVE    ;
 0:et       V_FRONT_TUPCP_0   ;
+0:e        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_SOTKEA
 !! € sotkea
@@ -11773,6 +11839,7 @@ LEXICON V_SOTKEA
 0:e        V_BACK_PASSIVE_T    ;
 0:et       V_BACK_PASSIVE    ;
 0:et       V_BACK_TUPCP_0   ;
+0:e        V_BACK_DERIV_PCPS ;
 
 LEXICON V_PUKEA
 !! € pukea
@@ -11789,6 +11856,7 @@ LEXICON V_PUKEA
 0:e        V_BACK_PASSIVE_T    ;
 0:et       V_BACK_PASSIVE    ;
 0:et       V_BACK_TUPCP_0   ;
+0:ke        V_BACK_DERIV_PCPS ;
 
 LEXICON V_RYPEÄ
 !! € rypeä
@@ -11805,6 +11873,7 @@ LEXICON V_RYPEÄ
 0:ve        V_FRONT_PASSIVE_T    ;
 0:vet       V_FRONT_PASSIVE    ;
 0:vet       V_FRONT_TUPCP_0   ;
+0:pe        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_PÄTEÄ
 !! € päteä
@@ -11821,6 +11890,7 @@ LEXICON V_PÄTEÄ
 0:de        V_FRONT_PASSIVE_T    ;
 0:det       V_FRONT_PASSIVE    ;
 0:det       V_FRONT_TUPCP_0   ;
+0:te        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KUTEA
 !! € kutea
@@ -11837,6 +11907,7 @@ LEXICON V_KUTEA
 0:de        V_BACK_PASSIVE_T    ;
 0:det       V_BACK_PASSIVE    ;
 0:det       V_BACK_TUPCP_0   ;
+0:te        V_BACK_DERIV_PCPS ;
 
 LEXICON V_TUNKEA
 !! € tunkea
@@ -11853,6 +11924,7 @@ LEXICON V_TUNKEA
 0:ge        V_BACK_PASSIVE_T    ;
 0:get       V_BACK_PASSIVE    ;
 0:get       V_BACK_TUPCP_0   ;
+0:ke        V_BACK_DERIV_PCPS ;
 
 LEXICON V_POLKEA
 !! € polkea
@@ -11869,6 +11941,7 @@ LEXICON V_POLKEA
 0:je        V_BACK_PASSIVE_T    ;
 0:jet       V_BACK_PASSIVE    ;
 0:jet       V_BACK_TUPCP_0   ;
+0:ke        V_BACK_DERIV_PCPS ;
 
 LEXICON V_SÄRKEÄ
 !! € särkeä
@@ -11885,6 +11958,7 @@ LEXICON V_SÄRKEÄ
 0:je        V_FRONT_PASSIVE_T    ;
 0:jet       V_FRONT_PASSIVE    ;
 0:jet       V_FRONT_TUPCP_0   ;
+0:ke        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_TUNTEA
 !! € tuntea
@@ -11901,6 +11975,7 @@ LEXICON V_TUNTEA
 0:ne        V_BACK_PASSIVE_T    ;
 0:net       V_BACK_PASSIVE    ;
 0:net       V_BACK_TUPCP_0   ;
+0:te        V_BACK_DERIV_PCPS ;
 
 LEXICON V_LÄHTEÄ
 !! € lähteä
@@ -11919,6 +11994,7 @@ LEXICON V_LÄHTEÄ
 0:hde        V_FRONT_PASSIVE_T    ;
 0:hdet       V_FRONT_PASSIVE    ;
 0:hdet       V_FRONT_TUPCP_0   ;
+0:hte        V_FRONT_DERIV_PCPS ;
 
 
 LEXICON V_KOSIA
@@ -11936,6 +12012,7 @@ LEXICON V_KOSIA
 0:i        V_BACK_PASSIVE_T    ;
 0:it       V_BACK_PASSIVE    ;
 0:it       V_BACK_TUPCP_0   ;
+0:i        V_BACK_DERIV_PCPS ;
 
 LEXICON V_RYSKIÄ
 !! € ryskiä
@@ -11952,6 +12029,7 @@ LEXICON V_RYSKIÄ
 0:i        V_FRONT_PASSIVE_T    ;
 0:it       V_FRONT_PASSIVE    ;
 0:it       V_FRONT_TUPCP_0   ;
+0:i        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KUKKIA
 !! € kukkia
@@ -11968,6 +12046,7 @@ LEXICON V_KUKKIA
 0:i        V_BACK_PASSIVE_T    ;
 0:it       V_BACK_PASSIVE    ;
 0:it       V_BACK_TUPCP_0   ;
+0:ki       V_BACK_DERIV_PCPS ;
 
 LEXICON V_SÖRKKIÄ
 !! € sörkkiä
@@ -11984,6 +12063,7 @@ LEXICON V_SÖRKKIÄ
 0:i        V_FRONT_PASSIVE_T    ;
 0:it       V_FRONT_PASSIVE    ;
 0:it       V_FRONT_TUPCP_0   ;
+0:ki        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KALPPIA
 !! € kalppia
@@ -12000,6 +12080,7 @@ LEXICON V_KALPPIA
 0:i        V_BACK_PASSIVE_T    ;
 0:it       V_BACK_PASSIVE    ;
 0:it       V_BACK_TUPCP_0   ;
+0:pi        V_BACK_DERIV_PCPS ;
 
 LEXICON V_HYPPIÄ
 !! € hyppiä
@@ -12016,6 +12097,7 @@ LEXICON V_HYPPIÄ
 0:i        V_FRONT_PASSIVE_T    ;
 0:it       V_FRONT_PASSIVE    ;
 0:it       V_FRONT_TUPCP_0   ;
+0:pi        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_MOITTIA
 !! € moittia
@@ -12032,6 +12114,7 @@ LEXICON V_MOITTIA
 0:i        V_BACK_PASSIVE_T    ;
 0:it       V_BACK_PASSIVE    ;
 0:it       V_BACK_TUPCP_0   ;
+0:ti        V_BACK_DERIV_PCPS ;
 
 LEXICON V_MIETTIÄ
 !! € miettiä
@@ -12048,6 +12131,7 @@ LEXICON V_MIETTIÄ
 0:i        V_FRONT_PASSIVE_T    ;
 0:it       V_FRONT_PASSIVE    ;
 0:it       V_FRONT_TUPCP_0   ;
+0:ti        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_RIIPIÄ
 !! € riipiä
@@ -12064,6 +12148,7 @@ LEXICON V_RIIPIÄ
 0:vi       V_FRONT_PASSIVE_T    ;
 0:vit       V_FRONT_PASSIVE    ;
 0:vit       V_FRONT_TUPCP_0   ;
+0:pi        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_RAAPIA
 !! € raapia
@@ -12080,6 +12165,7 @@ LEXICON V_RAAPIA
 0:vi       V_BACK_PASSIVE_T    ;
 0:vit      V_BACK_PASSIVE    ;
 0:vit      V_BACK_TUPCP_0   ;
+0:pi        V_BACK_DERIV_PCPS ;
 
 LEXICON V_AHNEHTIA
 !! € ahnehtia
@@ -12096,6 +12182,7 @@ LEXICON V_AHNEHTIA
 0:di       V_BACK_PASSIVE_T    ;
 0:dit      V_BACK_PASSIVE    ;
 0:dit      V_BACK_TUPCP_0   ;
+0:ti        V_BACK_DERIV_PCPS ;
 
 LEXICON V_EHTIÄ
 !! € ehtiä
@@ -12112,6 +12199,7 @@ LEXICON V_EHTIÄ
 0:di       V_FRONT_PASSIVE_T    ;
 0:dit       V_FRONT_PASSIVE    ;
 0:dit       V_FRONT_TUPCP_0   ;
+0:ti        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_MÖNKIÄ
 !! € mönkiä
@@ -12128,6 +12216,7 @@ LEXICON V_MÖNKIÄ
 0:gi       V_FRONT_PASSIVE_T    ;
 0:git       V_FRONT_PASSIVE    ;
 0:git       V_FRONT_TUPCP_0   ;
+0:ki        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_ONKIA
 !! € onkia
@@ -12144,6 +12233,7 @@ LEXICON V_ONKIA
 0:gi       V_BACK_PASSIVE_T    ;
 0:git      V_BACK_PASSIVE    ;
 0:git      V_BACK_TUPCP_0   ;
+0:ki        V_BACK_DERIV_PCPS ;
 
 LEXICON V_TYMPIÄ
 !! € tympiä
@@ -12160,6 +12250,7 @@ LEXICON V_TYMPIÄ
 0:mi       V_FRONT_PASSIVE_T    ;
 0:mit       V_FRONT_PASSIVE    ;
 0:mit       V_FRONT_TUPCP_0   ;
+0:pi        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KONTIA
 !! € kontia
@@ -12176,6 +12267,7 @@ LEXICON V_KONTIA
 0:ni       V_BACK_PASSIVE_T    ;
 0:nit      V_BACK_PASSIVE    ;
 0:nit      V_BACK_TUPCP_0   ;
+0:ti        V_BACK_DERIV_PCPS ;
 
 LEXICON V_HYLKIÄ
 !! € hylkiä
@@ -12192,6 +12284,7 @@ LEXICON V_HYLKIÄ
 0:ji       V_FRONT_PASSIVE_T    ;
 0:jit       V_FRONT_PASSIVE    ;
 0:jit       V_FRONT_TUPCP_0   ;
+0:ki        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KOPIOIDA
 !! € kopioida
@@ -12208,6 +12301,7 @@ LEXICON V_KOPIOIDA
 0:i   V_BACK_PASSIVE_D    ;
 0:i   V_BACK_PASSIVE    ;
 0:i   V_BACK_TUPCP_D  ;
+0:i        V_BACK_DERIV_PCPS ;
 
 LEXICON V_ÖYKKÄRÖIDÄ
 !! € kopioida
@@ -12224,6 +12318,7 @@ LEXICON V_ÖYKKÄRÖIDÄ
 0:i   V_FRONT_PASSIVE_D    ;
 0:i   V_FRONT_PASSIVE    ;
 0:i   V_FRONT_TUPCP_D  ;
+0:i        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_SAADA
 !! € saada
@@ -12240,6 +12335,7 @@ LEXICON V_SAADA
 0:a   V_BACK_PASSIVE_D    ;
 0:a   V_BACK_PASSIVE    ;
 0:a   V_BACK_TUPCP_D  ;
+0:a        V_BACK_DERIV_PCPS ;
 
 LEXICON V_MYYDÄ
 !! € myydä
@@ -12256,6 +12352,7 @@ LEXICON V_MYYDÄ
 0:y   V_FRONT_PASSIVE_D    ;
 0:y   V_FRONT_PASSIVE    ;
 0:y   V_FRONT_TUPCP_D  ;
+0:y        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_JÄÄDÄ
 !! € jäädä
@@ -12272,6 +12369,7 @@ LEXICON V_JÄÄDÄ
 0:ä   V_FRONT_PASSIVE_D    ;
 0:ä   V_FRONT_PASSIVE    ;
 0:ä   V_FRONT_TUPCP_D  ;
+0:ä        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_VIEDÄ
 !! € viedä
@@ -12288,6 +12386,7 @@ LEXICON V_VIEDÄ
 0:ie  V_FRONT_PASSIVE_D    ;
 0:ie  V_FRONT_PASSIVE    ;
 0:ie  V_FRONT_TUPCP_D  ;
+0:ie       V_FRONT_DERIV_PCPS ;
 
 LEXICON V_TUODA
 !! € tuoda
@@ -12304,6 +12403,7 @@ LEXICON V_TUODA
 0:uo  V_BACK_PASSIVE_D    ;
 0:uo  V_BACK_PASSIVE    ;
 0:uo  V_BACK_TUPCP_D  ;
+0:uo       V_BACK_DERIV_PCPS ;
 
 LEXICON V_SYÖDÄ
 !! € syödä
@@ -12320,6 +12420,7 @@ LEXICON V_SYÖDÄ
 0:yö  V_FRONT_PASSIVE_D    ;
 0:yö  V_FRONT_PASSIVE    ;
 0:yö  V_FRONT_TUPCP_D  ;
+0:yö       V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KÄYDÄ
 !! € käydä
@@ -12336,6 +12437,7 @@ LEXICON V_KÄYDÄ
 0:y  V_FRONT_PASSIVE_D    ;
 0:y  V_FRONT_PASSIVE    ;
 0:y  V_FRONT_TUPCP_D  ;
+0:y        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_MARISTA
 !! € marista
@@ -12352,6 +12454,7 @@ LEXICON V_MARISTA
 0   V_BACK_PASSIVE_T    ;
 0   V_BACK_PASSIVE    ;
 0   V_BACK_TUPCP_STRONG  ;
+0:e        V_BACK_DERIV_PCPS ;
 
 LEXICON V_ÄRISTÄ
 !! € marista
@@ -12368,6 +12471,7 @@ LEXICON V_ÄRISTÄ
 0   V_FRONT_PASSIVE_T    ;
 0   V_FRONT_PASSIVE    ;
 0   V_FRONT_TUPCP_STRONG  ;
+0:e        V_FRONT_DERIV_PCPS ;
 
 
 LEXICON V_HÄVÄISTÄ
@@ -12385,6 +12489,7 @@ LEXICON V_HÄVÄISTÄ
 0:väis   V_FRONT_PASSIVE_T    ;
 0:väis   V_FRONT_PASSIVE    ;
 0:väis   V_FRONT_TUPCP_STRONG  ;
+0:päise  V_FRONT_DERIV_PCPS ;
 
 LEXICON V_VAVISTA
 !! € vavista
@@ -12401,6 +12506,7 @@ LEXICON V_VAVISTA
 0:vis   V_BACK_PASSIVE_T    ;
 0:vis   V_BACK_PASSIVE    ;
 0:vis   V_BACK_TUPCP_STRONG  ;
+0:pis   V_BACK_DERIV_PCPS ;
 
 LEXICON V_RANGAISTA
 !! € rangaista
@@ -12417,6 +12523,7 @@ LEXICON V_RANGAISTA
 0:gais   V_BACK_PASSIVE_T    ;
 0:gais   V_BACK_PASSIVE    ;
 0:gais   V_BACK_TUPCP_STRONG  ;
+0:kaise  V_BACK_DERIV_PCPS ;
 
 LEXICON V_PIERRÄ
 !! € pierrä
@@ -12433,11 +12540,12 @@ LEXICON V_PIERRÄ
 0   V_FRONT_PASSIVE_R    ;
 0   V_FRONT_PASSIVE  ;
 0   V_FRONT_TUPCP_R    ;
+0:e V_FRONT_DERIV_PCPS ;
 
 LEXICON V_MENNÄ
 !! € mennä
-0:l    V_FRONT_AINF    ;
-0:l    V_FRONT_EINF    ;
+0:n    V_FRONT_AINF    ;
+0:n    V_FRONT_EINF    ;
 0:e    V_FRONT_WEAK_PRESENT    ;
 0:e    V_FRONT_STRONG_PRESENT    ;
 0:e    V_FRONT_3SG_E ;
@@ -12449,6 +12557,7 @@ LEXICON V_MENNÄ
 0   V_FRONT_PASSIVE_N    ;
 0   V_FRONT_PASSIVE  ;
 0   V_FRONT_TUPCP_N    ;
+0:e V_FRONT_DERIV_PCPS ;
 
 LEXICON V_VASTAILLA
 !! € vastailla
@@ -12465,6 +12574,7 @@ LEXICON V_VASTAILLA
 0   V_BACK_PASSIVE_L    ;
 0   V_BACK_PASSIVE  ;
 0   V_BACK_TUPCP_L    ;
+0:e V_BACK_DERIV_PCPS ;
 
 LEXICON V_ÄKSYILLÄ
 !! € vastailla
@@ -12481,6 +12591,7 @@ LEXICON V_ÄKSYILLÄ
 0   V_FRONT_PASSIVE_L    ;
 0   V_FRONT_PASSIVE  ;
 0   V_FRONT_TUPCP_L    ;
+0:e V_FRONT_DERIV_PCPS ;
 
 LEXICON V_LEIKELLÄ
 !! € leikellä
@@ -12497,6 +12608,7 @@ LEXICON V_LEIKELLÄ
 0:el   V_FRONT_PASSIVE_L    ;
 0:el   V_FRONT_PASSIVE  ;
 0:el   V_FRONT_TUPCP_L    ;
+0:kele V_FRONT_DERIV_PCPS ;
 
 LEXICON V_NAKELLA
 !! € nakella
@@ -12513,6 +12625,7 @@ LEXICON V_NAKELLA
 0:el   V_BACK_PASSIVE_L    ;
 0:el   V_BACK_PASSIVE  ;
 0:el   V_BACK_TUPCP_L    ;
+0:kele V_BACK_DERIV_PCPS ;
 
 LEXICON V_TAPELLA
 !! € tapella
@@ -12529,6 +12642,7 @@ LEXICON V_TAPELLA
 0:el   V_BACK_PASSIVE_L    ;
 0:el   V_BACK_PASSIVE  ;
 0:el   V_BACK_TUPCP_L    ;
+0:pele V_BACK_DERIV_PCPS ;
 
 LEXICON V_HYPELLÄ
 !! € hypellä
@@ -12545,6 +12659,7 @@ LEXICON V_HYPELLÄ
 0:el   V_FRONT_PASSIVE_L    ;
 0:el   V_FRONT_PASSIVE  ;
 0:el   V_FRONT_TUPCP_L    ;
+0:pele V_FRONT_DERIV_PCPS ;
 
 LEXICON V_SULATELLA
 !! € sulatella
@@ -12561,7 +12676,8 @@ LEXICON V_SULATELLA
 0:el   V_BACK_PASSIVE_L    ;
 0:el   V_BACK_PASSIVE  ;
 0:el   V_BACK_TUPCP_L    ;
- 
+0:tele V_BACK_DERIV_PCPS ;
+
 LEXICON V_HERÄTELLÄ
 !! € herätellä
 0:ell    V_FRONT_AINF    ;
@@ -12577,6 +12693,7 @@ LEXICON V_HERÄTELLÄ
 0:el   V_FRONT_PASSIVE_L    ;
 0:el   V_FRONT_PASSIVE  ;
 0:el   V_FRONT_TUPCP_L    ;
+0:tele V_FRONT_DERIV_PCPS ;
 
 LEXICON V_TIPAHDELLA
 !! € tipahdella
@@ -12593,6 +12710,7 @@ LEXICON V_TIPAHDELLA
 0:del   V_BACK_PASSIVE_L    ;
 0:del   V_BACK_PASSIVE  ;
 0:del   V_BACK_TUPCP_L    ;
+0:tele  V_BACK_DERIV_PCPS ;
 
 LEXICON V_SÄPSÄHDELLÄ
 !! € säpsähdellä
@@ -12609,6 +12727,7 @@ LEXICON V_SÄPSÄHDELLÄ
 0:del   V_FRONT_PASSIVE_L    ;
 0:del   V_FRONT_PASSIVE  ;
 0:del   V_FRONT_TUPCP_L    ;
+0:tele  V_FRONT_DERIV_PCPS ;
 
 LEXICON V_OMMELLA
 !! € ommella
@@ -12625,6 +12744,7 @@ LEXICON V_OMMELLA
 0:mel   V_BACK_PASSIVE_L    ;
 0:mel   V_BACK_PASSIVE  ;
 0:mel   V_BACK_TUPCP_L    ;
+0:pele  V_BACK_DERIV_PCPS ;
 
 LEXICON V_VAELLELLA
 !! € vaellella
@@ -12641,6 +12761,7 @@ LEXICON V_VAELLELLA
 0:lel   V_BACK_PASSIVE_L    ;
 0:lel   V_BACK_PASSIVE  ;
 0:lel   V_BACK_TUPCP_L    ;
+0:tele  V_BACK_DERIV_PCPS ;
 
 LEXICON V_KIILLELLÄ
 !! € kiillellä
@@ -12657,6 +12778,7 @@ LEXICON V_KIILLELLÄ
 0:lel   V_FRONT_PASSIVE_L    ;
 0:lel   V_FRONT_PASSIVE  ;
 0:lel   V_FRONT_TUPCP_L    ;
+0:tele  V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KOMENNELLA
 !! € komennella
@@ -12673,7 +12795,8 @@ LEXICON V_KOMENNELLA
 0:nel   V_BACK_PASSIVE_L    ;
 0:nel   V_BACK_PASSIVE  ;
 0:nel   V_BACK_TUPCP_L    ;
- 
+0:tele  V_BACK_DERIV_PCPS ;
+
 LEXICON V_KÄÄNNELLÄ
 !! € käännellä
 0:nell    V_FRONT_AINF    ;
@@ -12689,6 +12812,7 @@ LEXICON V_KÄÄNNELLÄ
 0:nel   V_FRONT_PASSIVE_L    ;
 0:nel   V_FRONT_PASSIVE  ;
 0:nel   V_FRONT_TUPCP_L    ;
+0:tele  V_FRONT_DERIV_PCPS ;
 
 LEXICON V_NAKERRELLA
 !! € nakerrella
@@ -12705,7 +12829,8 @@ LEXICON V_NAKERRELLA
 0:rel   V_BACK_PASSIVE_L    ;
 0:rel   V_BACK_PASSIVE  ;
 0:rel   V_BACK_TUPCP_L    ;
- 
+0:tele  V_BACK_DERIV_PCPS ;
+
 LEXICON V_KIHERRELLÄ
 !! € kiherrellä
 0:rell    V_FRONT_AINF    ;
@@ -12721,6 +12846,7 @@ LEXICON V_KIHERRELLÄ
 0:rel   V_FRONT_PASSIVE_L    ;
 0:rel   V_FRONT_PASSIVE  ;
 0:rel   V_FRONT_TUPCP_L    ;
+0:tele  V_FRONT_DERIV_PCPS ;
 
 LEXICON V_ISÄNNÖIDÄ
 !! € isännöidä
@@ -12741,6 +12867,7 @@ LEXICON V_ISÄNNÖIDÄ
 0:i   V_FRONT_PASSIVE_D    ;
 0:i   V_FRONT_PASSIVE    ;
 0:i   V_FRONT_TUPCP_D  ;
+0:i   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_MELLAKOIDA
 !! € mellakoida
@@ -12761,7 +12888,7 @@ LEXICON V_MELLAKOIDA
 0:i   V_BACK_PASSIVE_D    ;
 0:i   V_BACK_PASSIVE    ;
 0:i   V_BACK_TUPCP_D  ;
-
+0:i   V_BACK_DERIV_PCPS ;
 
 LEXICON V_PALKITA
 !! € palkita
@@ -12777,6 +12904,7 @@ LEXICON V_PALKITA
 0   V_BACK_PASSIVE_T    ;
 0:t   V_BACK_PASSIVE    ;
 0:t   V_BACK_TUPCP_0  ;
+0:tse V_BACK_DERIV_PCPS ;
 
 LEXICON V_MERKITÄ
 !! € merkitä
@@ -12792,6 +12920,7 @@ LEXICON V_MERKITÄ
 0   V_FRONT_PASSIVE_T    ;
 0:t   V_FRONT_PASSIVE    ;
 0:t   V_FRONT_TUPCP_0  ;
+0:tse V_FRONT_DERIV_PCPS ;
 
 LEXICON V_JUOSTA
 !! € juosta
@@ -12807,7 +12936,7 @@ LEXICON V_JUOSTA
 0:s   V_BACK_PASSIVE_T    ;
 0:s   V_BACK_PASSIVE    ;
 0:s   V_BACK_TUPCP_STRONG  ;
-
+0:kse V_BACK_DERIV_PCPS ;
 
 LEXICON V_PIESTÄ
 !! € piestä
@@ -12823,6 +12952,7 @@ LEXICON V_PIESTÄ
 0:s   V_FRONT_PASSIVE_T    ;
 0:s   V_FRONT_PASSIVE    ;
 0:s   V_FRONT_TUPCP_0  ;
+0:kse V_FRONT_DERIV_PCPS ;
 
 LEXICON V_NÄHDÄ
 !! € nähdä
@@ -12838,6 +12968,7 @@ LEXICON V_NÄHDÄ
 0:h   V_FRONT_PASSIVE_D    ;
 0:h   V_FRONT_PASSIVE    ;
 0:h   V_FRONT_TUPCP_D  ;
+0:ke  V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KARHETA
 !! € karheta
@@ -12845,7 +12976,7 @@ LEXICON V_KARHETA
 0:t    V_BACK_EINF  ;
 0:ne     V_BACK_WEAK_PRESENT  ;
 0:ne   V_BACK_STRONG_PRESENT    ;
-0:nee   V_BACK_3SG_E          ;
+0:ne   V_BACK_3SG_E          ;
 0:n   V_BACK_WEAK_PAST    ;
 0:n   V_BACK_STRONG_PAST    ;
 0:t   V_BACK_IMPERATIVE   ;
@@ -12853,6 +12984,7 @@ LEXICON V_KARHETA
 0   V_BACK_PASSIVE_T    ;
 0:t   V_BACK_PASSIVE    ;
 0:t   V_BACK_TUPCP_0  ;
+0:ne    V_BACK_DERIV_PCPS ;
 
 LEXICON V_VÄHETÄ
 !! € karheta
@@ -12860,7 +12992,7 @@ LEXICON V_VÄHETÄ
 0:t    V_FRONT_EINF  ;
 0:ne     V_FRONT_WEAK_PRESENT  ;
 0:ne   V_FRONT_STRONG_PRESENT    ;
-0:nee   V_FRONT_3SG_E          ;
+0:ne   V_FRONT_3SG_E          ;
 0:n   V_FRONT_WEAK_PAST    ;
 0:n   V_FRONT_STRONG_PAST    ;
 0:t   V_FRONT_IMPERATIVE   ;
@@ -12868,6 +13000,7 @@ LEXICON V_VÄHETÄ
 0   V_FRONT_PASSIVE_T    ;
 0:t   V_FRONT_PASSIVE    ;
 0:t   V_FRONT_TUPCP_0  ;
+0:ne    V_FRONT_DERIV_PCPS ;
 
 LEXICON V_NIUKETA
 !! € niuketa
@@ -12883,6 +13016,7 @@ LEXICON V_NIUKETA
 0:e   V_BACK_PASSIVE_T    ;
 0:et   V_BACK_PASSIVE    ;
 0:et   V_BACK_TUPCP_0  ;
+0:kene  V_BACK_DERIV_PCPS ;
 
 LEXICON V_JYRKETÄ
 !! € jyrketä
@@ -12898,6 +13032,7 @@ LEXICON V_JYRKETÄ
 0:e   V_FRONT_PASSIVE_T    ;
 0:et   V_FRONT_PASSIVE    ;
 0:et   V_FRONT_TUPCP_0  ;
+0:kene  V_FRONT_DERIV_PCPS ;
 
 LEXICON V_HAPATA
 !! € hapata
@@ -12913,6 +13048,7 @@ LEXICON V_HAPATA
 0:a   V_BACK_PASSIVE_T    ;
 0:at   V_BACK_PASSIVE    ;
 0:at   V_BACK_TUPCP_0  ;
+0:pane  V_BACK_DERIV_PCPS ;
 
 LEXICON V_SUPETA
 !! € supeta
@@ -12928,6 +13064,7 @@ LEXICON V_SUPETA
 0:e   V_BACK_PASSIVE_T    ;
 0:et   V_BACK_PASSIVE    ;
 0:et   V_BACK_TUPCP_0  ;
+0:pene  V_BACK_DERIV_PCPS ;
 
 LEXICON V_TYLPETÄ
 !! € tylpetä
@@ -12943,6 +13080,7 @@ LEXICON V_TYLPETÄ
 0:e   V_FRONT_PASSIVE_T    ;
 0:et   V_FRONT_PASSIVE    ;
 0:et   V_FRONT_TUPCP_0  ;
+0:pene  V_FRONT_DERIV_PCPS ;
 
 LEXICON V_HELPOTA
 !! € helpota
@@ -12958,6 +13096,7 @@ LEXICON V_HELPOTA
 0:o   V_BACK_PASSIVE_T    ;
 0:ot   V_BACK_PASSIVE    ;
 0:ot   V_BACK_TUPCP_0  ;
+0:pone  V_BACK_DERIV_PCPS ;
 
 LEXICON V_LOITOTA
 !! € loitota
@@ -12973,6 +13112,7 @@ LEXICON V_LOITOTA
 0:o   V_BACK_PASSIVE_T    ;
 0:ot   V_BACK_PASSIVE    ;
 0:ot   V_BACK_TUPCP_0  ;
+0:tone  V_BACK_DERIV_PCPS ;
 
 LEXICON V_ULOTA
 !! € ulota
@@ -12988,6 +13128,7 @@ LEXICON V_ULOTA
 0:o   V_BACK_PASSIVE_T    ;
 0:ot   V_BACK_PASSIVE    ;
 0:ot   V_BACK_TUPCP_0  ;
+0:kone  V_BACK_DERIV_PCPS ;
 
 LEXICON V_KAVETA
 !! € kaveta
@@ -13003,6 +13144,7 @@ LEXICON V_KAVETA
 0:ve   V_BACK_PASSIVE_T    ;
 0:vet   V_BACK_PASSIVE    ;
 0:vet   V_BACK_TUPCP_0  ;
+0:pene  V_BACK_DERIV_PCPS ;
 
 LEXICON V_MÄDÄTÄ
 !! € mädätä
@@ -13018,6 +13160,7 @@ LEXICON V_MÄDÄTÄ
 0:dä   V_FRONT_PASSIVE_T    ;
 0:dät   V_FRONT_PASSIVE    ;
 0:dät   V_FRONT_TUPCP_0  ;
+0:täne  V_FRONT_DERIV_PCPS ;
 
 LEXICON V_LEUDOTA
 !! € leudota
@@ -13033,21 +13176,24 @@ LEXICON V_LEUDOTA
 0:do   V_BACK_PASSIVE_T    ;
 0:dot   V_BACK_PASSIVE    ;
 0:dot   V_BACK_TUPCP_0  ;
+0:tone  V_BACK_DERIV_PCPS ;
 
 LEXICON V_TODETA
-!! € pidetä
+!! FIXME: this is not the back form of pidetä
+!! € todeta??
 0:det    V_BACK_AINF    ;
 0:det    V_BACK_EINF  ;
-0:tene     V_BACK_WEAK_PRESENT  ;
-0:tene   V_BACK_STRONG_PRESENT    ;
-0:tene   V_BACK_3SG_E          ;
-0:ten   V_BACK_WEAK_PAST    ;
-0:ten   V_BACK_STRONG_PAST    ;
+0:tea     V_BACK_WEAK_PRESENT  ;
+0:tea    V_BACK_STRONG_PRESENT    ;
+0:tea   V_BACK_3SG_A          ;
+0:tes   V_BACK_WEAK_PAST    ;
+0:tes   V_BACK_STRONG_PAST    ;
 0:det   V_BACK_IMPERATIVE   ;
 0:den   V_BACK_POTENTIAL_N  ;
 0:de   V_BACK_PASSIVE_T    ;
 0:det   V_BACK_PASSIVE    ;
 0:det   V_BACK_TUPCP_0  ;
+0:tea   V_BACK_DERIV_PCPS ;
 
 LEXICON V_PIDETÄ
 !! € pidetä
@@ -13063,6 +13209,7 @@ LEXICON V_PIDETÄ
 0:de   V_FRONT_PASSIVE_T    ;
 0:det   V_FRONT_PASSIVE    ;
 0:det   V_FRONT_TUPCP_0  ;
+0:det   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_LÄMMETÄ
 !! € kiinnetä
@@ -13078,6 +13225,7 @@ LEXICON V_LÄMMETÄ
 0:me   V_FRONT_PASSIVE_T    ;
 0:met   V_FRONT_PASSIVE    ;
 0:met   V_FRONT_TUPCP_0  ;
+0:pene  V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KIINNETÄ
 !! € kiinnetä
@@ -13093,6 +13241,7 @@ LEXICON V_KIINNETÄ
 0:ne   V_FRONT_PASSIVE_T    ;
 0:net   V_FRONT_PASSIVE    ;
 0:net   V_FRONT_TUPCP_0  ;
+0:tene  V_FRONT_DERIV_PCPS ;
 
 LEXICON V_JULJETA
 !! € juljeta
@@ -13108,6 +13257,7 @@ LEXICON V_JULJETA
 0:je   V_BACK_PASSIVE_T    ;
 0:jet   V_BACK_PASSIVE    ;
 0:jet   V_BACK_TUPCP_0  ;
+0:kene  V_BACK_DERIV_PCPS ;
 
 !LEXICON V_ILJETÄ
 !! iljetä
@@ -13138,13 +13288,14 @@ LEXICON V_ARVATA
 0   V_BACK_PASSIVE_T    ;
 0:t   V_BACK_PASSIVE    ;
 0:t   V_BACK_TUPCP_0  ;
+0:a     V_BACK_DERIV_PCPS ;
 
 LEXICON V_YNNÄTÄ
 !! € arvata
 0:t    V_FRONT_AINF    ;
 0:t    V_FRONT_EINF  ;
-0:a     V_FRONT_WEAK_PRESENT  ;
-0:a   V_FRONT_STRONG_PRESENT    ;
+0:ä     V_FRONT_WEAK_PRESENT  ;
+0:ä   V_FRONT_STRONG_PRESENT    ;
 0   V_FRONT_3SG_Ä          ;
 0:s   V_FRONT_WEAK_PAST    ;
 0:s   V_FRONT_STRONG_PAST    ;
@@ -13153,6 +13304,7 @@ LEXICON V_YNNÄTÄ
 0   V_FRONT_PASSIVE_T    ;
 0:t   V_FRONT_PASSIVE    ;
 0:t   V_FRONT_TUPCP_0  ;
+0:ä   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_MORKATA
 !! € morkata
@@ -13168,6 +13320,7 @@ LEXICON V_MORKATA
 0:a   V_BACK_PASSIVE_T    ;
 0:at   V_BACK_PASSIVE    ;
 0:at   V_BACK_TUPCP_0  ;
+0:kaa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_YÖKÄTÄ
 !! € hylätä
@@ -13183,6 +13336,7 @@ LEXICON V_YÖKÄTÄ
 0:ä   V_FRONT_PASSIVE_T    ;
 0:ät   V_FRONT_PASSIVE    ;
 0:ät   V_FRONT_TUPCP_0  ;
+0:kää   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_SIEPATA
 !! € siepata
@@ -13198,6 +13352,7 @@ LEXICON V_SIEPATA
 0:a   V_BACK_PASSIVE_T    ;
 0:at   V_BACK_PASSIVE    ;
 0:at   V_BACK_TUPCP_0  ;
+0:paa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_VÄLPÄTÄ
 !! € välpätä
@@ -13213,6 +13368,7 @@ LEXICON V_VÄLPÄTÄ
 0:ä   V_FRONT_PASSIVE_T    ;
 0:ät   V_FRONT_PASSIVE    ;
 0:ät   V_FRONT_TUPCP_0  ;
+0:pää   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_LUNTATA
 !! € luntata
@@ -13228,6 +13384,7 @@ LEXICON V_LUNTATA
 0:a   V_BACK_PASSIVE_T    ;
 0:at   V_BACK_PASSIVE    ;
 0:at   V_BACK_TUPCP_0  ;
+0:taa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_LÄNTÄTÄ
 !! € läntätä
@@ -13243,6 +13400,7 @@ LEXICON V_LÄNTÄTÄ
 0:ä   V_FRONT_PASSIVE_T    ;
 0:ät   V_FRONT_PASSIVE    ;
 0:ät   V_FRONT_TUPCP_0  ;
+0:tää   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KAIVATA
 !! € kaivata
@@ -13258,6 +13416,7 @@ LEXICON V_KAIVATA
 0:va   V_BACK_PASSIVE_T    ;
 0:vat   V_BACK_PASSIVE    ;
 0:vat   V_BACK_TUPCP_0  ;
+0:paa   V_BACK_DERIV_PCSP ;
 
 LEXICON V_LEVÄTÄ
 !! € levätä
@@ -13273,6 +13432,7 @@ LEXICON V_LEVÄTÄ
 0:vä   V_FRONT_PASSIVE_T    ;
 0:vät   V_FRONT_PASSIVE    ;
 0:vät   V_FRONT_TUPCP_0  ;
+0:pää   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_JAHDATA
 !! € jahdata
@@ -13288,6 +13448,7 @@ LEXICON V_JAHDATA
 0:da   V_BACK_PASSIVE_T    ;
 0:dat   V_BACK_PASSIVE    ;
 0:dat   V_BACK_TUPCP_0  ;
+0:taa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_TÄHDÄTÄ
 !! € tähdätä
@@ -13303,6 +13464,7 @@ LEXICON V_TÄHDÄTÄ
 0:dä   V_FRONT_PASSIVE_T    ;
 0:dät   V_FRONT_PASSIVE    ;
 0:dät   V_FRONT_TUPCP_0  ;
+0:tää   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_VONGATA
 !! € vongata
@@ -13318,6 +13480,7 @@ LEXICON V_VONGATA
 0:ga   V_BACK_PASSIVE_T    ;
 0:gat   V_BACK_PASSIVE    ;
 0:gat   V_BACK_TUPCP_0  ;
+0:kaa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_VÄNGÄTÄ
 !! € vängätä
@@ -13333,6 +13496,7 @@ LEXICON V_VÄNGÄTÄ
 0:gä   V_FRONT_PASSIVE_T    ;
 0:gät   V_FRONT_PASSIVE    ;
 0:gät   V_FRONT_TUPCP_0  ;
+0:kää   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_TEMMATA
 !! € temmata
@@ -13348,6 +13512,7 @@ LEXICON V_TEMMATA
 0:ma   V_BACK_PASSIVE_T    ;
 0:mat   V_BACK_PASSIVE    ;
 0:mat   V_BACK_TUPCP_0  ;
+0:paa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_MULLATA
 !! € mullata
@@ -13363,6 +13528,7 @@ LEXICON V_MULLATA
 0:la   V_BACK_PASSIVE_T    ;
 0:lat   V_BACK_PASSIVE    ;
 0:lat   V_BACK_TUPCP_0  ;
+0:taa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_SUUNNATA
 !! € suunnata
@@ -13378,6 +13544,7 @@ LEXICON V_SUUNNATA
 0:na   V_BACK_PASSIVE_T    ;
 0:nat   V_BACK_PASSIVE    ;
 0:nat   V_BACK_TUPCP_0  ;
+0:taa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_RYNNÄTÄ
 !! € rynnätä
@@ -13393,6 +13560,7 @@ LEXICON V_RYNNÄTÄ
 0:nä   V_FRONT_PASSIVE_T    ;
 0:nät   V_FRONT_PASSIVE    ;
 0:nät   V_FRONT_TUPCP_0  ;
+0:tää   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_VIRRATA
 !! € virrata
@@ -13408,6 +13576,7 @@ LEXICON V_VIRRATA
 0:ra   V_BACK_PASSIVE_T    ;
 0:rat   V_BACK_PASSIVE    ;
 0:rat   V_BACK_TUPCP_0  ;
+0:taa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_HYLJÄTÄ
 !! € hyljätä
@@ -13423,6 +13592,7 @@ LEXICON V_HYLJÄTÄ
 0:jä   V_FRONT_PASSIVE_T    ;
 0:jät   V_FRONT_PASSIVE    ;
 0:jät   V_FRONT_TUPCP_0  ;
+0:tää   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_DIGATA
 !! € digata
@@ -13438,6 +13608,7 @@ LEXICON V_DIGATA
 0:a   V_BACK_PASSIVE_T    ;
 0:at   V_BACK_PASSIVE    ;
 0:at   V_BACK_TUPCP_0  ;
+0:kaa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_LOBATA
 !! € lobata
@@ -13453,6 +13624,7 @@ LEXICON V_LOBATA
 0:a   V_BACK_PASSIVE_T    ;
 0:at   V_BACK_PASSIVE    ;
 0:at   V_BACK_TUPCP_0  ;
+0:baa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_KARHUTA
 !! € karhuta
@@ -13468,6 +13640,7 @@ LEXICON V_KARHUTA
 0   V_BACK_PASSIVE_T    ;
 0:t   V_BACK_PASSIVE    ;
 0:t   V_BACK_TUPCP_0  ;
+0:a     V_BACK_DERIV_PCPS ;
 
 LEXICON V_TÄHYTÄ
 !! € tähytä
@@ -13483,6 +13656,7 @@ LEXICON V_TÄHYTÄ
 0   V_FRONT_PASSIVE_T    ;
 0:t   V_FRONT_PASSIVE    ;
 0:t   V_FRONT_TUPCP_0  ;
+0:ä     V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KAIKOTA
 !! € kaikota
@@ -13498,6 +13672,7 @@ LEXICON V_KAIKOTA
 0:o   V_BACK_PASSIVE_T    ;
 0:ot   V_BACK_PASSIVE    ;
 0:ot   V_BACK_TUPCP_0  ;
+0:koa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_POIKETA
 !! € poiketa
@@ -13513,6 +13688,7 @@ LEXICON V_POIKETA
 0:e   V_BACK_PASSIVE_T    ;
 0:et   V_BACK_PASSIVE    ;
 0:et   V_BACK_TUPCP_0  ;
+0:kea   V_BACK_DERIV_PCPS ;
 
 LEXICON V_KERETÄ
 !! € keretä
@@ -13528,6 +13704,7 @@ LEXICON V_KERETÄ
 0:e   V_FRONT_PASSIVE_T    ;
 0:et   V_FRONT_PASSIVE    ;
 0:et   V_FRONT_TUPCP_0  ;
+0:keä   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KOUKUTA
 !! € koukuta
@@ -13543,6 +13720,7 @@ LEXICON V_KOUKUTA
 0:u   V_BACK_PASSIVE_T    ;
 0:ut   V_BACK_PASSIVE    ;
 0:ut   V_BACK_TUPCP_0  ;
+0:kua   V_BACK_DERIV_PCPS ;
 
 LEXICON V_PULPUTA
 !! € pulputa
@@ -13558,6 +13736,7 @@ LEXICON V_PULPUTA
 0:u   V_BACK_PASSIVE_T    ;
 0:ut   V_BACK_PASSIVE    ;
 0:ut   V_BACK_TUPCP_0  ;
+0:pua   V_BACK_DERIV_PCPS ;
 
 LEXICON V_UPOTA
 !! € upota
@@ -13573,6 +13752,7 @@ LEXICON V_UPOTA
 0:o   V_BACK_PASSIVE_T    ;
 0:ot   V_BACK_PASSIVE    ;
 0:ot   V_BACK_TUPCP_0  ;
+0:poa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_LOTOTA
 !! € lotota
@@ -13588,6 +13768,7 @@ LEXICON V_LOTOTA
 0:o   V_BACK_PASSIVE_T    ;
 0:ot   V_BACK_PASSIVE    ;
 0:ot   V_BACK_TUPCP_0  ;
+0:toa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_LUUTUTA
 !! € luututa
@@ -13603,6 +13784,7 @@ LEXICON V_LUUTUTA
 0:u   V_BACK_PASSIVE_T    ;
 0:ut   V_BACK_PASSIVE    ;
 0:ut   V_BACK_TUPCP_0  ;
+0:tua   V_BACK_DERIV_PCPS ;
 
 LEXICON V_KIVUTA
 !! € kivuta
@@ -13618,6 +13800,7 @@ LEXICON V_KIVUTA
 0:vu   V_BACK_PASSIVE_T    ;
 0:vut   V_BACK_PASSIVE    ;
 0:vut   V_BACK_TUPCP_0  ;
+0:pua   V_BACK_DERIV_PCPS ;
 
 LEXICON V_KORVETA
 !! € korveta
@@ -13633,6 +13816,7 @@ LEXICON V_KORVETA
 0:ve   V_BACK_PASSIVE_T    ;
 0:vet   V_BACK_PASSIVE    ;
 0:vet   V_BACK_TUPCP_0  ;
+0:pea   V_BACK_DERIV_PCPS ;
 
 LEXICON V_REVETÄ
 !! € kiivetä
@@ -13648,6 +13832,7 @@ LEXICON V_REVETÄ
 0:ve   V_FRONT_PASSIVE_T    ;
 0:vet   V_FRONT_PASSIVE    ;
 0:vet   V_FRONT_TUPCP_0  ;
+0:peä   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KIRVOTA
 !! € kirvota
@@ -13663,6 +13848,7 @@ LEXICON V_KIRVOTA
 0:vo   V_BACK_PASSIVE_T    ;
 0:vot   V_BACK_PASSIVE    ;
 0:vot   V_BACK_TUPCP_0  ;
+0:poa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_KADOTA
 !! € kadota
@@ -13678,6 +13864,7 @@ LEXICON V_KADOTA
 0:do   V_BACK_PASSIVE_T    ;
 0:dot   V_BACK_PASSIVE    ;
 0:dot   V_BACK_TUPCP_0  ;
+0:toa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_TODETTU
 !! € todeta
@@ -13693,6 +13880,7 @@ LEXICON V_TODETTU
 0:de   V_BACK_PASSIVE_T    ;
 0:det   V_BACK_PASSIVE    ;
 0:det   V_BACK_TUPCP_0  ;
+0:tea   V_BACK_DERIV_PCPS ;
 
 LEXICON V_VYYHDETÄ
 !! € vyyhdetä
@@ -13708,6 +13896,7 @@ LEXICON V_VYYHDETÄ
 0:de   V_FRONT_PASSIVE_T    ;
 0:det   V_FRONT_PASSIVE    ;
 0:det   V_FRONT_TUPCP_0  ;
+0:teä   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_LIIDUTA
 !! € liiduta
@@ -13723,6 +13912,7 @@ LEXICON V_LIIDUTA
 0:du   V_BACK_PASSIVE_T    ;
 0:dut   V_BACK_PASSIVE    ;
 0:dut   V_BACK_TUPCP_0  ;
+0:tua   V_BACK_DERIV_PCPS ;
 
 LEXICON V_TUNGETA
 !! € tungeta
@@ -13738,6 +13928,7 @@ LEXICON V_TUNGETA
 0:ge   V_BACK_PASSIVE_T    ;
 0:get   V_BACK_PASSIVE    ;
 0:get   V_BACK_TUPCP_0  ;
+0:kea   V_BACK_DERIV_PCPS ;
 
 LEXICON V_PINGOTA
 !! € pingota
@@ -13753,6 +13944,7 @@ LEXICON V_PINGOTA
 0:go   V_BACK_PASSIVE_T    ;
 0:got   V_BACK_PASSIVE    ;
 0:got   V_BACK_TUPCP_0  ;
+0:koa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_ÄNGETÄ
 !! € ängetä
@@ -13768,6 +13960,7 @@ LEXICON V_ÄNGETÄ
 0:ge   V_FRONT_PASSIVE_T    ;
 0:get   V_FRONT_PASSIVE    ;
 0:get   V_FRONT_TUPCP_0  ;
+0:keä   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KUMMUTA
 !! € kummuta
@@ -13783,6 +13976,7 @@ LEXICON V_KUMMUTA
 0:mu   V_BACK_PASSIVE_T    ;
 0:mut   V_BACK_PASSIVE    ;
 0:mut   V_BACK_TUPCP_0  ;
+0:pua   V_BACK_DERIV_PCPS ;
 
 LEXICON V_KAMMETA
 !! € kammeta
@@ -13798,6 +13992,7 @@ LEXICON V_KAMMETA
 0:me   V_BACK_PASSIVE_T    ;
 0:met   V_BACK_PASSIVE    ;
 0:met   V_BACK_TUPCP_0  ;
+0:pea   V_BACK_DERIV_PCPS ;
 
 LEXICON V_SAMMOTA
 !! € sammota
@@ -13813,6 +14008,7 @@ LEXICON V_SAMMOTA
 0:mo   V_BACK_PASSIVE_T    ;
 0:mot   V_BACK_PASSIVE    ;
 0:mot   V_BACK_TUPCP_0  ;
+0:poa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_INNOTA
 !! € innota
@@ -13828,6 +14024,7 @@ LEXICON V_INNOTA
 0:no   V_BACK_PASSIVE_T    ;
 0:not   V_BACK_PASSIVE    ;
 0:not   V_BACK_TUPCP_0  ;
+0:toa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_IRROTA
 !! € irrota
@@ -13843,6 +14040,7 @@ LEXICON V_IRROTA
 0:ro   V_BACK_PASSIVE_T    ;
 0:rot   V_BACK_PASSIVE    ;
 0:rot   V_BACK_TUPCP_0  ;
+0:toa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_HALJETA
 !! € haljeta
@@ -13858,6 +14056,7 @@ LEXICON V_HALJETA
 0:je   V_BACK_PASSIVE_T    ;
 0:jet   V_BACK_PASSIVE    ;
 0:jet   V_BACK_TUPCP_0  ;
+0:kea   V_BACK_DERIV_PCPS ;
 
 LEXICON V_ILJETÄ
 !! € iljetä
@@ -13873,6 +14072,7 @@ LEXICON V_ILJETÄ
 0:je   V_FRONT_PASSIVE_T    ;
 0:jet   V_FRONT_PASSIVE    ;
 0:jet   V_FRONT_TUPCP_0  ;
+0:keä   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_MYRSKYTÄ
 !! € myrskytä
@@ -13888,6 +14088,7 @@ LEXICON V_MYRSKYTÄ
 0   V_FRONT_PASSIVE_T    ;
 0:t   V_FRONT_PASSIVE    ;
 0:t   V_FRONT_TUPCP_0  ;
+0:ä     V_FRONT_DERIV_PCPS ;
 
 LEXICON V_LASSOTA
 !! € lassota
@@ -13903,6 +14104,7 @@ LEXICON V_LASSOTA
 0   V_BACK_PASSIVE_T    ;
 0:t   V_BACK_PASSIVE    ;
 0:t   V_BACK_TUPCP_0  ;
+0:a     V_BACK_DERIV_PCPS ;
 
 LEXICON V_SELVITÄ
 !! € lämmitä
@@ -13918,6 +14120,7 @@ LEXICON V_SELVITÄ
 0   V_FRONT_PASSIVE_T    ;
 0:t   V_FRONT_PASSIVE    ;
 0:t   V_FRONT_TUPCP_0  ;
+0:ä     V_FRONT_DERIV_PCPS ;
 
 LEXICON V_RYÖPYTÄ
 !! € ryöpytä
@@ -13933,6 +14136,7 @@ LEXICON V_RYÖPYTÄ
 0:y   V_FRONT_PASSIVE_T    ;
 0:yt   V_FRONT_PASSIVE    ;
 0:yt   V_FRONT_TUPCP_0  ;
+0:py    V_FRONT_DERIV_PCPS ;
 
 LEXICON V_PEITOTA
 !! € peitota
@@ -13948,6 +14152,7 @@ LEXICON V_PEITOTA
 0:o   V_BACK_PASSIVE_T    ;
 0:ot   V_BACK_PASSIVE    ;
 0:ot   V_BACK_TUPCP_0  ;
+0:toa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_KERITÄ
 !! € keritä
@@ -13963,6 +14168,7 @@ LEXICON V_KERITÄ
 0:i   V_FRONT_PASSIVE_T    ;
 0:it   V_FRONT_PASSIVE    ;
 0:it   V_FRONT_TUPCP_0  ;
+0:kiä   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_MUODOTA
 !! € muodota
@@ -13978,6 +14184,7 @@ LEXICON V_MUODOTA
 0:do   V_BACK_PASSIVE_T    ;
 0:dot   V_BACK_PASSIVE    ;
 0:dot   V_BACK_TUPCP_0  ;
+0:toa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_LÄMMITÄ
 !! € lämmitä
@@ -13993,6 +14200,7 @@ LEXICON V_LÄMMITÄ
 0:mi   V_FRONT_PASSIVE_T    ;
 0:mit   V_FRONT_PASSIVE    ;
 0:mit   V_FRONT_TUPCP_0  ;
+0:piä   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_AALLOTA
 !! € aallota
@@ -14008,6 +14216,7 @@ LEXICON V_AALLOTA
 0:lo   V_BACK_PASSIVE_T    ;
 0:lot   V_BACK_PASSIVE    ;
 0:lot   V_BACK_TUPCP_0  ;
+0:toa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_HELLITÄ
 !! € hellitä
@@ -14023,6 +14232,7 @@ LEXICON V_HELLITÄ
 0:li   V_FRONT_PASSIVE_T    ;
 0:lit   V_FRONT_PASSIVE    ;
 0:lit   V_FRONT_TUPCP_0  ;
+0:tiä   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_TAITAA
 !! € taitaa
@@ -14038,6 +14248,7 @@ LEXICON V_TAITAA
 0:de        V_BACK_PASSIVE_T    ;
 0:det       V_BACK_PASSIVE    ;
 0:det       V_BACK_TUPCP_0   ;
+0:ta    V_BACK_DERIV_PCPS ;
 
 LEXICON V_TIETÄÄ
 !! € tietää
@@ -14053,6 +14264,7 @@ LEXICON V_TIETÄÄ
 0:de        V_FRONT_PASSIVE_T    ;
 0:det       V_FRONT_PASSIVE    ;
 0:det       V_FRONT_TUPCP_0   ;
+0:tä    V_FRONT_DERIV_PCPS ;
 
 LEXICON V_VIPAJAA
 !! € vipajaa
@@ -14061,6 +14273,7 @@ LEXICON V_VIPAJAA
 0     V_BACK_3SG_A  ;
 0     V_BACK_STRONG_PAST ;
 0     V_BACK_CONDITIONAL  ;
+0     V_BACK_DERIV_PCPS ;
 
 LEXICON V_HELÄJÄÄ
 !! € heläjää
@@ -14069,6 +14282,7 @@ LEXICON V_HELÄJÄÄ
 0     V_FRONT_3SG_Ä  ;
 0     V_FRONT_STRONG_PAST ;
 0     V_FRONT_CONDITIONAL  ;
+0     V_FRONT_DERIV_PCPS ;
 
 LEXICON V_RAIKAA
 !! € raikaa
@@ -14076,6 +14290,7 @@ LEXICON V_RAIKAA
 0     V_BACK_STRONG_PRESENT    ;
 0     V_BACK_3SG_A  ;
 0     V_BACK_CONDITIONAL  ;
+0     V_BACK_DERIV_PCPS ;
 
 LEXICON V_ÄHKÄÄ
 !! € raikaa
@@ -14083,6 +14298,7 @@ LEXICON V_ÄHKÄÄ
 0     V_FRONT_STRONG_PRESENT    ;
 0     V_FRONT_3SG_Ä  ;
 0     V_FRONT_CONDITIONAL  ;
+0     V_FRONT_DERIV_PCPS ;
 
 LEXICON V_OLLA
 !! The verb olla has very peculiar and heteroclitic inflection with lot of
@@ -14104,6 +14320,7 @@ LEXICON V_OLLA
 0:ol   V_BACK_PASSIVE_L    ;
 0:ol  V_BACK_PASSIVE  ;
 0:ol   V_BACK_TUPCP_L    ;
+0:ole   V_BACK_DERIV_PCPS ;
 
 ! these were found in exceptions.lexc, but moved here
 ! in order to have all olla in one place. Pleas remove
