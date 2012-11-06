@@ -10680,6 +10680,8 @@ zoomata+V:zooma  V_ARVATA  ;
 örähtää+V:öräh  V_YSKÄHTÄÄ  ;
 öykkäröidä+V:öykkärö  V_ÖYKKÄRÖIDÄ  ;
 öykätä+V:öyk  V_YÖKÄTÄ  ;
+
+
 !! Verbs have no allomorphic variation per se, except for some assimilation and
 !! variation of ð forms, but the stem variation is the same
 !! as in nouns. The examples for verb stems are given for each class:
@@ -10702,7 +10704,7 @@ LEXICON V_KAUNISTUA
 !! € kaunistunen kaunistua+V+Act+Pot+Sg1
 !! € kaunistutaan kaunistua+V+Pss+Ind+Prt+Pe4
 !! € kaunistuttiin kaunistua+V+Pss+Ind+Pst+Pe4
-!! € kaunistuttu kaunistua+V+Pss+Ind+Pst+ConNeg
+!! € kaunistuttu kaunistua+V+Pss+PrfPrc+Sg+Nom
 !! € kaunistuminen kaunistua+V+Der/minen+Sg+Nom
 0    V_BACK_AINF    ;
 0    V_BACK_EINF    ;
@@ -10721,23 +10723,24 @@ LEXICON V_KAUNISTUA
 
 LEXICON V_PUNOA
 !! The o stems have no stem variation:
-!! € punoa
-!! € punoessa
-!! € punon
-!! € punou
-!! € punoin
-!! € punoi
-!! € punoisi
-!! € punokaa
-!! € punonen
-!! € punotaan
-!! € punottiin
-!! € punottu
+!! € punoa punoa+V+Act+InfA+Sg+Lat bundle?
+!! € punoessa punoa+V+Act+InfE+Sg+Ine
+!! € punon punoa+V+Act+Ind+Prt+Sg1
+!! € punoo punoa+V+Act+Ind+Prt+Sg3
+!! € punoin punoa+V+Act+Ind+Pst+Sg1
+!! € punoi punoa+V+Act+Ind+Pst+Sg3
+!! € punoisi punoa+V+Act+Cond+Sg3
+!! € punokaa punoa+V+Act+Imprt+Pl2
+!! € punonen punoa+V+Act+Pot+Sg1
+!! € punotaan punoa+V+Pss+Ind+Prt+Pe4
+!! € punottiin punoa+V+Pss+Ind+Pst+Pe4
+!! € punottu punoa+V+Pss+PrfPrc+Sg+Nom
+!! € punominen punoa+V+Der/minen+Sg+Nom
 0    V_BACK_AINF    ;
 0    V_BACK_EINF    ;
 0    V_BACK_WEAK_PRESENT    ;
 0    V_BACK_STRONG_PRESENT    ;
-0    V_BACK_3SG_U  ;
+0    V_BACK_3SG_O  ;
 0    V_BACK_WEAK_PAST   ;
 0    V_BACK_STRONG_PAST ;
 0    V_BACK_CONDITIONAL  ;
@@ -10749,19 +10752,20 @@ LEXICON V_PUNOA
 0     V_BACK_DERIV_PCPS ;
 
 LEXICON V_SÄILÖÄ
-!! The o stems have no stem variation:
-!! € punoa
-!! € punoessa
-!! € punon
-!! € punou
-!! € punoin
-!! € punoi
-!! € punoisi
-!! € punokaa
-!! € punonen
-!! € punotaan
-!! € punottiin
-!! € punottu
+!! The ö stems have no stem variation:
+!! € säilöä säilöä+V+Act+InfA+Sg+Lat store
+!! € säilöessä säilöä+V+Act+InfE+Sg+Ine
+!! € säilön säilöä+V+Act+Ind+Prt+Sg1
+!! € säilöö säilöä+V+Act+Ind+Prt+Sg3
+!! € säilöin säilöä+V+Act+Ind+Pst+Sg1
+!! € säilöi säilöä+V+Act+Ind+Pst+Sg3
+!! € säilöisi säilöä+V+Act+Cond+Sg3
+!! € säilökää säilöä+V+Act+Imprt+Pl2
+!! € säilönen säilöä+V+Act+Pot+Sg1
+!! € säilötään säilöä+V+Pss+Ind+Prt+Pe4
+!! € säilöttiin säilöä+V+Pss+Ind+Pst+Pe4
+!! € säilötty säilöä+V+Pss+PrfPrc+Sg+Nom
+!! € säilöminen säilöä+V+Der/minen+Sg+Nom
 0    V_FRONT_AINF    ;
 0    V_FRONT_EINF    ;
 0    V_FRONT_WEAK_PRESENT    ;
@@ -10779,18 +10783,18 @@ LEXICON V_SÄILÖÄ
 
 LEXICON V_ÄLLISTYÄ
 !! The y stems have no stem variation:
-!! € ällistyä
-!! € ällistyessä
-!! € ällistyn
-!! € ällistyy
-!! € ällistyin
-!! € ällistyi
-!! € ällistyisi
-!! € ällistykää
-!! € ällistynen
-!! € ällistytään
-!! € ällistyttiin
-!! € ällistytty
+!! € ällistyä ällistyä+V+Act+InfA+Sg+Lat amaze
+!! € ällistyessä ällistyä+V+Act+InfE+Sg+Ine
+!! € ällistyn ällistyä+V+Act+Ind+Prt+Sg1
+!! € ällistyy ällistyä+V+Act+Ind+Prt+Sg3
+!! € ällistyin ällistyä+V+Act+Ind+Pst+Sg1
+!! € ällistyi ällistyä+V+Act+Ind+Pst+Sg3
+!! € ällistyisi ällistyä+V+Act+Cond+Sg3
+!! € ällistykää ällistyä+V+Act+Imprt+Pl2
+!! € ällistynen ällistyä+V+Act+Pot+Sg1
+!! € ällistytään ällistyä+V+Pss+Ind+Prt+Pe4
+!! € ällistyttiin ällistyä+V+Pss+Ind+Pst+Pe4
+!! € ällistytty ällistyä+V+Pss+PrfPrc+Sg+Nom
 0    V_FRONT_AINF    ;
 0    V_FRONT_EINF    ;
 0    V_FRONT_WEAK_PRESENT    ;
@@ -10807,7 +10811,7 @@ LEXICON V_ÄLLISTYÄ
 0     V_FRONT_DERIV_PCPS    ;
 
 LEXICON V_HAUKKOA
-!! € haukkoa
+!! € haukkoa haukkoa+V+Act+InfA+Sg+Lat gasp
 0:ko    V_BACK_AINF    ;
 0:ko    V_BACK_EINF    ;
 0:o    V_BACK_WEAK_PRESENT    ;
@@ -10824,7 +10828,7 @@ LEXICON V_HAUKKOA
 0:ko    V_BACK_DERIV_PCPS   ;
 
 LEXICON V_NUOKKUA
-!! € nuokkua
+!! € nuokkua nuokkua+V+Act+InfA+Sg+Lat sleep
 0:ku    V_BACK_AINF    ;
 0:ku    V_BACK_EINF    ;
 0:u    V_BACK_WEAK_PRESENT    ;
@@ -10841,7 +10845,7 @@ LEXICON V_NUOKKUA
 0:ku    V_BACK_DERIV_PCPS   ;
 
 LEXICON V_KÄRKKYÄ
-!! € kärkkyä
+!! € kärkkyä kärkkyä+V+Act+InfA+Sg+Lat steal a base
 0:ky    V_FRONT_AINF    ;
 0:ky    V_FRONT_EINF    ;
 0:y    V_FRONT_WEAK_PRESENT    ;
@@ -10858,7 +10862,7 @@ LEXICON V_KÄRKKYÄ
 0:ky    V_FRONT_DERIV_PCPS  ;
 
 LEXICON V_HARPPOA
-!! € harppoa
+!! € harppoa harppoa+V+Act+InfA+Sg+Lat walk
 0:po    V_BACK_AINF    ;
 0:po    V_BACK_EINF    ;
 0:o    V_BACK_WEAK_PRESENT    ;
@@ -10875,7 +10879,7 @@ LEXICON V_HARPPOA
 0:po    V_BACK_DERIV_PCPS ;
 
 LEXICON V_LOPPUA
-!! € loppua
+!! € loppua loppua+V+Act+InfA+Sg+Lat end
 0:pu    V_BACK_AINF    ;
 0:pu    V_BACK_EINF    ;
 0:u    V_BACK_WEAK_PRESENT    ;
@@ -10892,7 +10896,7 @@ LEXICON V_LOPPUA
 0:pu    V_BACK_DERIV_PCPS ;
 
 LEXICON V_LEPPYÄ
-!! € leppyä
+!! € leppyä leppyä+V+Act+InfA+Sg+Lat settle
 0:py    V_FRONT_AINF    ;
 0:py    V_FRONT_EINF    ;
 0:y    V_FRONT_WEAK_PRESENT    ;
@@ -10909,7 +10913,7 @@ LEXICON V_LEPPYÄ
 0:py    V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KIVETTYÄ
-!! € kivettyä
+!! € kivettyä kivettyä+V+Act+InfA+Sg+Lat stone
 0:ty    V_FRONT_AINF    ;
 0:ty    V_FRONT_EINF    ;
 0:y    V_FRONT_WEAK_PRESENT    ;
@@ -10926,7 +10930,7 @@ LEXICON V_KIVETTYÄ
 0:ty    V_FRONT_DERIV_PCPS ;
 
 LEXICON V_VIITTOA
-!! € hermottua
+!! € viittoa viittoa+V+Act+InfA+Sg+Lat sign
 0:to    V_BACK_AINF    ;
 0:to    V_BACK_EINF    ;
 0:o    V_BACK_WEAK_PRESENT    ;
@@ -10943,7 +10947,7 @@ LEXICON V_VIITTOA
 0:tu    V_BACK_DERIV_PCPS ;
 
 LEXICON V_HERMOTTUA
-!! € hermottua
+!! € hermottua hermottua+V+Act+InfA+Sg+Lat nerve
 0:tu    V_BACK_AINF    ;
 0:tu    V_BACK_EINF    ;
 0:u    V_BACK_WEAK_PRESENT    ;
@@ -10960,7 +10964,7 @@ LEXICON V_HERMOTTUA
 0:tu    V_BACK_DERIV_PCPS ;
 
 LEXICON V_MÄIKYÄ
-!! € mäikyä
+!! € mäikyä mäikyä+V+Act+InfA+Sg+Lat bong
 0:ky    V_FRONT_AINF    ;
 0:ky    V_FRONT_EINF    ;
 0:y    V_FRONT_WEAK_PRESENT    ;
@@ -10977,7 +10981,7 @@ LEXICON V_MÄIKYÄ
 0:ky    V_FRONT_DERIV_PCPS ;
 
 LEXICON V_TAKOA
-!! € takoa
+!! € takoa takoa+V+Act+InfA+Sg+Lat hammer
 0:ko    V_BACK_AINF    ;
 0:ko    V_BACK_EINF    ;
 0:o    V_BACK_WEAK_PRESENT    ;
@@ -10994,7 +10998,7 @@ LEXICON V_TAKOA
 0:ko    V_BACK_DERIV_PCPS ;
 
 LEXICON V_MAUKUA
-!! € maukua
+!! € maukua maukua+V+Act+InfA+Sg+Lat gong
 0:ku    V_BACK_AINF    ;
 0:ku    V_BACK_EINF    ;
 0:’u   V_BACK_WEAK_PRESENT    ;
@@ -11011,7 +11015,7 @@ LEXICON V_MAUKUA
 0:ku    V_BACK_DERIV_PCPS ;
 
 LEXICON V_ELPYÄ
-!! € elpyä
+!! € elpyä elpyä+V+Act+InfA+Sg+Lat rescuscitate
 0:py    V_FRONT_AINF    ;
 0:py    V_FRONT_EINF    ;
 0:vy    V_FRONT_WEAK_PRESENT    ;
@@ -11028,7 +11032,7 @@ LEXICON V_ELPYÄ
 0:py    V_FRONT_DERIV_PCPS ;
 
 LEXICON V_HIIPUA
-!! € hiipua
+!! € hiipua hiipua+V+Act+InfA+Sg+Lat fizzle
 0:pu    V_BACK_AINF    ;
 0:pu    V_BACK_EINF    ;
 0:vu    V_BACK_WEAK_PRESENT    ;
@@ -11045,7 +11049,7 @@ LEXICON V_HIIPUA
 0:pu    V_BACK_DERIV_PCPS ;
 
 LEXICON V_SILPOA
-!! € silpoa
+!! € silpoa silpoa+V+Act+InfA+Sg+Lat slash
 0:po    V_BACK_AINF    ;
 0:po    V_BACK_EINF    ;
 0:vo    V_BACK_WEAK_PRESENT    ;
@@ -11062,7 +11066,7 @@ LEXICON V_SILPOA
 0:po    V_BACK_DERIV_PCPS ;
 
 LEXICON V_KIETOA
-!! € kietoa
+!! € kietoa kietoa+V+Act+InfA+Sg+Lat entangle
 0:to    V_BACK_AINF    ;
 0:to    V_BACK_EINF    ;
 0:do    V_BACK_WEAK_PRESENT    ;
@@ -11079,7 +11083,7 @@ LEXICON V_KIETOA
 0:to    V_BACK_DERIV_PCPS ;
 
 LEXICON V_SILIYTYÄ
-!! € siliytyä
+!! € siliytyä siliytyä+V+Act+InfA+Sg+Lat iron
 0:ty    V_FRONT_AINF    ;
 0:ty    V_FRONT_EINF    ;
 0:dy    V_FRONT_WEAK_PRESENT    ;
@@ -11096,7 +11100,7 @@ LEXICON V_SILIYTYÄ
 0:ty    V_FRONT_DERIV_PCPS ;
 
 LEXICON V_ROHTUA
-!! € rohtua
+!! € rohtua rohtua+V+Act+InfA+Sg+Lat scar
 0:tu    V_BACK_AINF    ;
 0:tu    V_BACK_EINF    ;
 0:du    V_BACK_WEAK_PRESENT    ;
@@ -11113,7 +11117,7 @@ LEXICON V_ROHTUA
 0:tu    V_BACK_DERIV_PCPS ;
 
 LEXICON V_VINKUA
-!! € vinkua
+!! € vinkua vinkua+V+Act+InfA+Sg+Lat squeal
 0:ku    V_BACK_AINF    ;
 0:ku    V_BACK_EINF    ;
 0:gu    V_BACK_WEAK_PRESENT    ;
@@ -11130,7 +11134,7 @@ LEXICON V_VINKUA
 0:ku    V_BACK_DERIV_PCPS ;
 
 LEXICON V_PENKOA
-!! € penkoa
+!! € penkoa penkoa+V+Act+InfA+Sg+Lat dig
 0:ko    V_BACK_AINF    ;
 0:ko    V_BACK_EINF    ;
 0:go    V_BACK_WEAK_PRESENT    ;
@@ -11147,7 +11151,7 @@ LEXICON V_PENKOA
 0:ko    V_BACK_DERIV_PCPS ;
 
 LEXICON V_TEMPOA
-!! € tempoa
+!! € tempoa tempoa+V+Act+InfA+Sg+Lat tuck
 0:po    V_BACK_AINF    ;
 0:po    V_BACK_EINF    ;
 0:mo    V_BACK_WEAK_PRESENT    ;
@@ -11164,7 +11168,7 @@ LEXICON V_TEMPOA
 0:po    V_BACK_DERIV_PCPS ;
 
 LEXICON V_AMPUA
-!! € ampua
+!! € ampua ampua+V+Act+InfA+Sg+Lat shoot
 0:pu    V_BACK_AINF    ;
 0:pu    V_BACK_EINF    ;
 0:mu    V_BACK_WEAK_PRESENT    ;
@@ -11181,7 +11185,7 @@ LEXICON V_AMPUA
 0:pu    V_BACK_DERIV_PCPS ;
 
 LEXICON V_MIELTYÄ
-!! € mieltyä
+!! € mieltyä mieltyä+V+Act+InfA+Sg+Lat like
 0:ty    V_FRONT_AINF    ;
 0:ty    V_FRONT_EINF    ;
 0:ly    V_FRONT_WEAK_PRESENT    ;
@@ -11198,7 +11202,7 @@ LEXICON V_MIELTYÄ
 0:ty    V_FRONT_DERIV_PCPS ;
 
 LEXICON V_HUMALTUA
-!! € humaltua
+!! € humaltua humaltua+V+Act+InfA+Sg+Lat intoxicate
 0:tu    V_BACK_AINF    ;
 0:tu    V_BACK_EINF    ;
 0:lu    V_BACK_WEAK_PRESENT    ;
@@ -11215,7 +11219,7 @@ LEXICON V_HUMALTUA
 0:tu    V_BACK_DERIV_PCPS ;
 
 LEXICON V_VAKAANTUA
-!! € vakaantua
+!! € vakaantua vakaantua+V+Act+InfA+Sg+Lat stabilise
 0:tu    V_BACK_AINF    ;
 0:tu    V_BACK_EINF    ;
 0:nu    V_BACK_WEAK_PRESENT    ;
@@ -11232,7 +11236,7 @@ LEXICON V_VAKAANTUA
 0:tu    V_BACK_DERIV_PCPS ;
 
 LEXICON V_TYHJENTYÄ
-!! € tyhjentyä
+!! € tyhjentyä tyhjentyä+V+Act+InfA+Sg+Lat empty
 0:ty    V_FRONT_AINF    ;
 0:ty    V_FRONT_EINF    ;
 0:ny    V_FRONT_WEAK_PRESENT    ;
@@ -11249,7 +11253,7 @@ LEXICON V_TYHJENTYÄ
 0:ty    V_FRONT_DERIV_PCPS ;
 
 LEXICON V_PYÖRTYÄ
-!! € pyörtyä
+!! € pyörtyä pyörtyä+V+Act+InfA+Sg+Lat faint
 0:ty    V_FRONT_AINF    ;
 0:ty    V_FRONT_EINF    ;
 0:ry    V_FRONT_WEAK_PRESENT    ;
@@ -11266,7 +11270,7 @@ LEXICON V_PYÖRTYÄ
 0:ty    V_FRONT_DERIV_PCPS ;
 
 LEXICON V_VARTOA
-!! € pusertua
+!! € vartoa vartoa+V+Act+InfA+Sg+Lat wait
 0:to    V_BACK_AINF    ;
 0:to    V_BACK_EINF    ;
 0:ro    V_BACK_WEAK_PRESENT    ;
@@ -11283,7 +11287,7 @@ LEXICON V_VARTOA
 0:to    V_BACK_DERIV_PCPS ;
 
 LEXICON V_PUSERTUA
-!! € pusertua
+!! € pusertua pusertua+V+Act+InfA+Sg+Lat squeeze
 0:tu    V_BACK_AINF    ;
 0:tu    V_BACK_EINF    ;
 0:ru    V_BACK_WEAK_PRESENT    ;
@@ -11300,7 +11304,7 @@ LEXICON V_PUSERTUA
 0:tu    V_BACK_DERIV_PCPS ;
 
 LEXICON V_MUTRISTAA
-!! € mutristaa
+!! € mutristaa mutristaa+V+Act+InfA+Sg+Lat ?
 0:a      V_BACK_AINF   ;
 0:a      V_BACK_EINF  ;
 0:a      V_BACK_WEAK_PRESENT    ;
@@ -11317,7 +11321,7 @@ LEXICON V_MUTRISTAA
 0:a    V_BACK_DERIV_PCPS ;
 
 LEXICON V_KIVISTÄÄ
-!! € kivistää
+!! € kivistää kivistää+V+Act+InfA+Sg+Lat hurt
 0:ä      V_FRONT_AINF   ;
 0:ä      V_FRONT_EINF  ;
 0:ä      V_FRONT_WEAK_PRESENT    ;
@@ -11334,7 +11338,7 @@ LEXICON V_KIVISTÄÄ
 0:ä        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_RÄPSYTTÄÄ
-!! € räpsyttää
+!! € räpsyttää räpsyttää+V+Act+InfA+Sg+Lat blink
 0:tä      V_FRONT_AINF   ;
 0:tä      V_FRONT_EINF  ;
 0:ä      V_FRONT_WEAK_PRESENT    ;
@@ -11351,7 +11355,7 @@ LEXICON V_RÄPSYTTÄÄ
 0:tä        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_VIEROITTAA
-!! € vieroittaa
+!! € vieroittaa vieroittaa+V+Act+InfA+Sg+Lat 
 0:ta      V_BACK_AINF   ;
 0:ta      V_BACK_EINF  ;
 0:a      V_BACK_WEAK_PRESENT    ;
@@ -11369,7 +11373,7 @@ LEXICON V_VIEROITTAA
 
 
 LEXICON V_PURKAA
-!! € purkaa
+!! € purkaa purkaa+V+Act+InfA+Sg+Lat tear
 0:ka      V_BACK_AINF   ;
 0:ka      V_BACK_EINF  ;
 0:a      V_BACK_WEAK_PRESENT    ;
@@ -11386,7 +11390,7 @@ LEXICON V_PURKAA
 0:ka    V_BACK_DERIV_PCPS ;
 
 LEXICON V_YSKÄHTÄÄ
-!! € kärähtää
+!! € kärähtää kärähtää+V+Act+InfA+Sg+Lat fry
 0:tä      V_FRONT_AINF   ;
 0:tä      V_FRONT_EINF  ;
 0:dä      V_FRONT_WEAK_PRESENT    ;
@@ -11403,7 +11407,7 @@ LEXICON V_YSKÄHTÄÄ
 0:tä        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_MOJAHTAA
-!! € mojahta
+!! € mojahtaa mojahtaa+V+Act+InfA+Sg+Lat smack
 0:ta      V_BACK_AINF   ;
 0:ta      V_BACK_EINF  ;
 0:da      V_BACK_WEAK_PRESENT    ;
@@ -11420,7 +11424,7 @@ LEXICON V_MOJAHTAA
 0:ta        V_BACK_DERIV_PCPS ;
 
 LEXICON V_KYNTÄÄ
-!! € kyntää
+!! € kyntää kyntää+V+Act+InfA+Sg+Lat plow
 0:tä      V_FRONT_AINF   ;
 0:tä      V_FRONT_EINF  ;
 0:nä      V_FRONT_WEAK_PRESENT    ;
@@ -11437,7 +11441,7 @@ LEXICON V_KYNTÄÄ
 0:tä        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_SORTAA
-!! € sortaa
+!! € sortaa sortaa+V+Act+InfA+Sg+Lat crush
 0:ta      V_BACK_AINF   ;
 0:ta      V_BACK_EINF  ;
 0:ra      V_BACK_WEAK_PRESENT    ;
@@ -11454,7 +11458,7 @@ LEXICON V_SORTAA
 0:ta        V_BACK_DERIV_PCPS ;
 
 LEXICON V_HUUTAA
-!! € huutaa
+!! € huutaa huutaa+V+Act+InfA+Sg+Lat yell
 0:ta      V_BACK_AINF   ;
 0:ta      V_BACK_EINF  ;
 0:da      V_BACK_WEAK_PRESENT    ;
@@ -11471,7 +11475,7 @@ LEXICON V_HUUTAA
 0:ta        V_BACK_DERIV_PCPS ;
 
 LEXICON V_PYYTÄÄ
-!! € pyytää
+!! € pyytää pyytää+V+Act+InfA+Sg+Lat aks
 0:tä      V_FRONT_AINF   ;
 0:tä      V_FRONT_EINF  ;
 0:dä      V_FRONT_WEAK_PRESENT    ;
@@ -11488,7 +11492,7 @@ LEXICON V_PYYTÄÄ
 0:tä        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_SIVALTAA
-!! € sivaltaa
+!! € sivaltaa sivaltaa+V+Act+InfA+Sg+Lat slash
 0:ta      V_BACK_AINF   ;
 0:ta      V_BACK_EINF  ;
 0:la      V_BACK_WEAK_PRESENT    ;
@@ -11505,7 +11509,7 @@ LEXICON V_SIVALTAA
 0:ta        V_BACK_DERIV_PCPS ;
 
 LEXICON V_VIHELTÄÄ
-!! € viheltää
+!! € viheltää viheltää+V+Act+InfA+Sg+Lat whistle
 0:tä      V_FRONT_AINF   ;
 0:tä      V_FRONT_EINF  ;
 0:lä      V_FRONT_WEAK_PRESENT    ;
@@ -11522,7 +11526,7 @@ LEXICON V_VIHELTÄÄ
 0:tä        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_HIVENTÄÄ
-!! € hiventää
+!! € hiventää hiventää+V+Act+InfA+Sg+Lat 
 0:tä      V_FRONT_AINF   ;
 0:tä      V_FRONT_EINF  ;
 0:nä      V_FRONT_WEAK_PRESENT    ;
@@ -11539,7 +11543,7 @@ LEXICON V_HIVENTÄÄ
 0:tä        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_HUONONTAA
-!! € huonontaa
+!! € huonontaa huonontaa+V+Act+InfA+Sg+Lat worsen
 0:ta      V_BACK_AINF   ;
 0:ta      V_BACK_EINF  ;
 0:na      V_BACK_WEAK_PRESENT    ;
@@ -11556,7 +11560,7 @@ LEXICON V_HUONONTAA
 0:ta        V_BACK_DERIV_PCPS ;
 
 LEXICON V_KUHERTAA
-!! € kuhertaa
+!! € kuhertaa kuhertaa+V+Act+InfA+Sg+Lat snuggle
 0:ta      V_BACK_AINF   ;
 0:ta      V_BACK_EINF  ;
 0:ra      V_BACK_WEAK_PRESENT    ;
@@ -11573,7 +11577,7 @@ LEXICON V_KUHERTAA
 0:ta        V_BACK_DERIV_PCPS ;
 
 LEXICON V_NÄPERTÄÄ
-!! € näpertää
+!! € näpertää näpertää+V+Act+InfA+Sg+Lat twiddle
 0:tä      V_FRONT_AINF   ;
 0:tä      V_FRONT_EINF  ;
 0:rä      V_FRONT_WEAK_PRESENT    ;
@@ -11592,7 +11596,7 @@ LEXICON V_NÄPERTÄÄ
 
 
 LEXICON V_KIITÄÄ
-!! € kiitää
+!! € kiitää kiitää+V+Act+InfA+Sg+Lat rush
 0:tä      V_FRONT_AINF   ;
 0:tä      V_FRONT_EINF  ;
 0:dä      V_FRONT_WEAK_PRESENT    ;
@@ -11611,7 +11615,7 @@ LEXICON V_KIITÄÄ
 0:tä        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_JOUTAA
-!! € joutaa
+!! € joutaa joutaa+V+Act+InfA+Sg+Lat 
 0:ta      V_BACK_AINF   ;
 0:ta      V_BACK_EINF  ;
 0:da      V_BACK_WEAK_PRESENT    ;
@@ -11630,7 +11634,7 @@ LEXICON V_JOUTAA
 0:ta        V_BACK_DERIV_PCPS ;
 
 LEXICON V_YLTÄÄ
-!! € yltää
+!! € yltää yltää+V+Act+InfA+Sg+Lat reach
 0:tä      V_FRONT_AINF   ;
 0:tä      V_FRONT_EINF  ;
 0:lä      V_FRONT_WEAK_PRESENT    ;
@@ -11649,7 +11653,7 @@ LEXICON V_YLTÄÄ
 0:tä        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_ENTÄÄ
-!! € entää
+!! € entää entää+V+Act+InfA+Sg+Lat 
 0:tä      V_FRONT_AINF   ;
 0:tä      V_FRONT_EINF  ;
 0:nä      V_FRONT_WEAK_PRESENT    ;
@@ -11668,7 +11672,7 @@ LEXICON V_ENTÄÄ
 0:tä        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KASVAA
-!! € kasvaa
+!! € kasvaa kasvaa+V+Act+InfA+Sg+Lat grow
 0:a      V_BACK_AINF   ;
 0:a      V_BACK_EINF  ;
 0:a      V_BACK_WEAK_PRESENT    ;
@@ -11685,7 +11689,7 @@ LEXICON V_KASVAA
 0:a        V_BACK_DERIV_PCPS ;
 
 LEXICON V_VIRKKAA
-!! € virkkaa jakaa
+!! € jakaa jakaa+V+Act+InfA+Sg+Lat share
 0:ka      V_BACK_AINF   ;
 0:ka      V_BACK_EINF  ;
 0:a      V_BACK_WEAK_PRESENT    ;
@@ -11702,7 +11706,7 @@ LEXICON V_VIRKKAA
 0:ka        V_BACK_DERIV_PCPS ;
 
 LEXICON V_TAPPAA
-!! € tappaa
+!! € tappaa tappaa+V+Act+InfA+Sg+Lat kill
 0:pa      V_BACK_AINF   ;
 0:pa      V_BACK_EINF  ;
 0:a      V_BACK_WEAK_PRESENT    ;
@@ -11719,7 +11723,7 @@ LEXICON V_TAPPAA
 0:pa        V_BACK_DERIV_PCPS ;
 
 LEXICON V_AUTTAA
-!! € tappaa
+!! € auttaa auttaa+V+Act+InfA+Sg+Lat help
 0:ta      V_BACK_AINF   ;
 0:ta      V_BACK_EINF  ;
 0:a      V_BACK_WEAK_PRESENT    ;
@@ -11736,7 +11740,7 @@ LEXICON V_AUTTAA
 0:ta        V_BACK_DERIV_PCPS ;
 
 LEXICON V_SATAA
-!! € sataa
+!! € sataa sataa+V+Act+InfA+Sg+Lat rain
 0:ta      V_BACK_AINF   ;
 0:ta      V_BACK_EINF  ;
 0:da     V_BACK_WEAK_PRESENT    ;
@@ -11753,7 +11757,7 @@ LEXICON V_SATAA
 0:ta        V_BACK_DERIV_PCPS ;
 
 LEXICON V_KANTAA
-!! € kantaa
+!! € kantaa kantaa+V+Act+InfA+Sg+Lat carry
 0:ta      V_BACK_AINF   ;
 0:ta      V_BACK_EINF  ;
 0:na     V_BACK_WEAK_PRESENT    ;
@@ -11770,7 +11774,7 @@ LEXICON V_KANTAA
 0:ta        V_BACK_DERIV_PCPS ;
 
 LEXICON V_KAATAA
-!! € kaataa
+!! € kaataa kaataa+V+Act+InfA+Sg+Lat pour
 0:ta      V_BACK_AINF   ;
 0:ta      V_BACK_EINF  ;
 0:da     V_BACK_WEAK_PRESENT    ;
@@ -11789,7 +11793,7 @@ LEXICON V_KAATAA
 0:ta        V_BACK_DERIV_PCPS ;
 
 LEXICON V_SAARTAA
-!! € saartaa
+!! € saartaa saartaa+V+Act+InfA+Sg+Lat surround
 0:ta      V_BACK_AINF   ;
 0:ta      V_BACK_EINF  ;
 0:ra     V_BACK_WEAK_PRESENT    ;
@@ -11808,7 +11812,7 @@ LEXICON V_SAARTAA
 0:ta        V_BACK_DERIV_PCPS ;
 
 LEXICON V_KYTKEÄ
-!! € kytkeä
+!! € kytkeä kytkeä+V+Act+InfA+Sg+Lat switch
 0:e      V_FRONT_AINF   ;
 0:i      V_FRONT_EINF  ;
 0:e      V_FRONT_WEAK_PRESENT    ;
@@ -11825,7 +11829,7 @@ LEXICON V_KYTKEÄ
 0:e        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_SOTKEA
-!! € sotkea
+!! € sotkea sotkea+V+Act+InfA+Sg+Lat mess
 0:e      V_BACK_AINF   ;
 0:i      V_BACK_EINF  ;
 0:e      V_BACK_WEAK_PRESENT    ;
@@ -11842,7 +11846,7 @@ LEXICON V_SOTKEA
 0:e        V_BACK_DERIV_PCPS ;
 
 LEXICON V_PUKEA
-!! € pukea
+!! € pukea pukea+V+Act+InfA+Sg+Lat dress
 0:ke      V_BACK_AINF   ;
 0:ki      V_BACK_EINF  ;
 0:e      V_BACK_WEAK_PRESENT    ;
@@ -11859,7 +11863,7 @@ LEXICON V_PUKEA
 0:ke        V_BACK_DERIV_PCPS ;
 
 LEXICON V_RYPEÄ
-!! € rypeä
+!! € rypeä rypeä+V+Act+InfA+Sg+Lat bathe
 0:pe      V_FRONT_AINF   ;
 0:pi      V_FRONT_EINF  ;
 0:ve      V_FRONT_WEAK_PRESENT    ;
@@ -11876,7 +11880,7 @@ LEXICON V_RYPEÄ
 0:pe        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_PÄTEÄ
-!! € päteä
+!! € päteä päteä+V+Act+InfA+Sg+Lat nitpick
 0:te      V_FRONT_AINF   ;
 0:ti      V_FRONT_EINF  ;
 0:de      V_FRONT_WEAK_PRESENT    ;
@@ -11893,7 +11897,7 @@ LEXICON V_PÄTEÄ
 0:te        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KUTEA
-!! € kutea
+!! € kutea kutea+V+Act+InfA+Sg+Lat breed
 0:te      V_BACK_AINF   ;
 0:ti      V_BACK_EINF  ;
 0:de      V_BACK_WEAK_PRESENT    ;
@@ -11910,7 +11914,7 @@ LEXICON V_KUTEA
 0:te        V_BACK_DERIV_PCPS ;
 
 LEXICON V_TUNKEA
-!! € tunkea
+!! € tunkea tunkea+V+Act+InfA+Sg+Lat push
 0:ke      V_BACK_AINF   ;
 0:ki      V_BACK_EINF  ;
 0:ge      V_BACK_WEAK_PRESENT    ;
@@ -11927,7 +11931,7 @@ LEXICON V_TUNKEA
 0:ke        V_BACK_DERIV_PCPS ;
 
 LEXICON V_POLKEA
-!! € polkea
+!! € polkea polkea+V+Act+InfA+Sg+Lat stomp
 0:ke      V_BACK_AINF   ;
 0:ki      V_BACK_EINF  ;
 0:je      V_BACK_WEAK_PRESENT    ;
@@ -11944,7 +11948,7 @@ LEXICON V_POLKEA
 0:ke        V_BACK_DERIV_PCPS ;
 
 LEXICON V_SÄRKEÄ
-!! € särkeä
+!! € särkeä särkeä+V+Act+InfA+Sg+Lat break
 0:ke      V_FRONT_AINF   ;
 0:ki      V_FRONT_EINF  ;
 0:je      V_FRONT_WEAK_PRESENT    ;
@@ -11961,7 +11965,7 @@ LEXICON V_SÄRKEÄ
 0:ke        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_TUNTEA
-!! € tuntea
+!! € tuntea tuntea+V+Act+InfA+Sg+Lat feel
 0:te      V_BACK_AINF   ;
 0:ti      V_BACK_EINF  ;
 0:ne      V_BACK_WEAK_PRESENT    ;
@@ -11978,7 +11982,7 @@ LEXICON V_TUNTEA
 0:te        V_BACK_DERIV_PCPS ;
 
 LEXICON V_LÄHTEÄ
-!! € lähteä
+!! € lähteä lähteä+V+Act+InfA+Sg+Lat go
 0:hte      V_FRONT_AINF   ;
 0:hti      V_FRONT_EINF  ;
 0:hde      V_FRONT_WEAK_PRESENT    ;
@@ -11998,7 +12002,7 @@ LEXICON V_LÄHTEÄ
 
 
 LEXICON V_KOSIA
-!! € kosia
+!! € kosia kosia+V+Act+InfA+Sg+Lat propose
 0:i      V_BACK_AINF   ;
 0:i      V_BACK_EINF  ;
 0:i      V_BACK_WEAK_PRESENT    ;
@@ -12015,7 +12019,7 @@ LEXICON V_KOSIA
 0:i        V_BACK_DERIV_PCPS ;
 
 LEXICON V_RYSKIÄ
-!! € ryskiä
+!! € ryskiä ryskiä+V+Act+InfA+Sg+Lat crash
 0:i      V_FRONT_AINF   ;
 0:i      V_FRONT_EINF  ;
 0:i      V_FRONT_WEAK_PRESENT    ;
@@ -12032,7 +12036,7 @@ LEXICON V_RYSKIÄ
 0:i        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KUKKIA
-!! € kukkia
+!! € kukkia kukkia+V+Act+InfA+Sg+Lat bloom
 0:ki      V_BACK_AINF   ;
 0:ki      V_BACK_EINF  ;
 0:i      V_BACK_WEAK_PRESENT    ;
@@ -12049,7 +12053,7 @@ LEXICON V_KUKKIA
 0:ki       V_BACK_DERIV_PCPS ;
 
 LEXICON V_SÖRKKIÄ
-!! € sörkkiä
+!! € sörkkiä sörkkiä+V+Act+InfA+Sg+Lat meddle
 0:ki      V_FRONT_AINF   ;
 0:ki      V_FRONT_EINF  ;
 0:i      V_FRONT_WEAK_PRESENT    ;
@@ -12066,7 +12070,7 @@ LEXICON V_SÖRKKIÄ
 0:ki        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KALPPIA
-!! € kalppia
+!! € kalppia kalppia+V+Act+InfA+Sg+Lat 
 0:pi      V_BACK_AINF   ;
 0:pi      V_BACK_EINF  ;
 0:i      V_BACK_WEAK_PRESENT    ;
@@ -12083,7 +12087,7 @@ LEXICON V_KALPPIA
 0:pi        V_BACK_DERIV_PCPS ;
 
 LEXICON V_HYPPIÄ
-!! € hyppiä
+!! € hyppiä hyppiä+V+Act+InfA+Sg+Lat jump
 0:pi      V_FRONT_AINF   ;
 0:pi      V_FRONT_EINF  ;
 0:i      V_FRONT_WEAK_PRESENT    ;
@@ -12100,7 +12104,7 @@ LEXICON V_HYPPIÄ
 0:pi        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_MOITTIA
-!! € moittia
+!! € moittia moittia+V+Act+InfA+Sg+Lat 
 0:ti      V_BACK_AINF   ;
 0:ti      V_BACK_EINF  ;
 0:i      V_BACK_WEAK_PRESENT    ;
@@ -12117,7 +12121,7 @@ LEXICON V_MOITTIA
 0:ti        V_BACK_DERIV_PCPS ;
 
 LEXICON V_MIETTIÄ
-!! € miettiä
+!! € miettiä miettiä+V+Act+InfA+Sg+Lat ponder
 0:ti      V_FRONT_AINF   ;
 0:ti      V_FRONT_EINF  ;
 0:i      V_FRONT_WEAK_PRESENT    ;
@@ -12134,7 +12138,7 @@ LEXICON V_MIETTIÄ
 0:ti        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_RIIPIÄ
-!! € riipiä
+!! € riipiä riipiä+V+Act+InfA+Sg+Lat pull
 0:pi      V_FRONT_AINF   ;
 0:pi      V_FRONT_EINF  ;
 0:vi     V_FRONT_WEAK_PRESENT    ;
@@ -12151,7 +12155,7 @@ LEXICON V_RIIPIÄ
 0:pi        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_RAAPIA
-!! € raapia
+!! € raapia raapia+V+Act+InfA+Sg+Lat scratch
 0:pi      V_BACK_AINF   ;
 0:pi      V_BACK_EINF  ;
 0:vi     V_BACK_WEAK_PRESENT    ;
@@ -12168,7 +12172,7 @@ LEXICON V_RAAPIA
 0:pi        V_BACK_DERIV_PCPS ;
 
 LEXICON V_AHNEHTIA
-!! € ahnehtia
+!! € ahnehtia ahnehtia+V+Act+InfA+Sg+Lat greed
 0:ti      V_BACK_AINF   ;
 0:ti      V_BACK_EINF  ;
 0:di     V_BACK_WEAK_PRESENT    ;
@@ -12185,7 +12189,7 @@ LEXICON V_AHNEHTIA
 0:ti        V_BACK_DERIV_PCPS ;
 
 LEXICON V_EHTIÄ
-!! € ehtiä
+!! € ehtiä ehtiä+V+Act+InfA+Sg+Lat 
 0:ti      V_FRONT_AINF   ;
 0:ti      V_FRONT_EINF  ;
 0:di     V_FRONT_WEAK_PRESENT    ;
@@ -12202,7 +12206,7 @@ LEXICON V_EHTIÄ
 0:ti        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_MÖNKIÄ
-!! € mönkiä
+!! € mönkiä mönkiä+V+Act+InfA+Sg+Lat crawl
 0:ki      V_FRONT_AINF   ;
 0:ki      V_FRONT_EINF  ;
 0:gi     V_FRONT_WEAK_PRESENT    ;
@@ -12219,7 +12223,7 @@ LEXICON V_MÖNKIÄ
 0:ki        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_ONKIA
-!! € onkia
+!! € onkia onkia+V+Act+InfA+Sg+Lat fish
 0:ki      V_BACK_AINF   ;
 0:ki      V_BACK_EINF  ;
 0:gi     V_BACK_WEAK_PRESENT    ;
@@ -12236,7 +12240,7 @@ LEXICON V_ONKIA
 0:ki        V_BACK_DERIV_PCPS ;
 
 LEXICON V_TYMPIÄ
-!! € tympiä
+!! € tympiä tympiä+V+Act+InfA+Sg+Lat bore
 0:pi      V_FRONT_AINF   ;
 0:pi      V_FRONT_EINF  ;
 0:mi     V_FRONT_WEAK_PRESENT    ;
@@ -12270,7 +12274,7 @@ LEXICON V_KONTIA
 0:ti        V_BACK_DERIV_PCPS ;
 
 LEXICON V_HYLKIÄ
-!! € hylkiä
+!! € hylkiä hylkiä+V+Act+InfA+Sg+Lat reject
 0:ki      V_FRONT_AINF   ;
 0:ki      V_FRONT_EINF  ;
 0:ji     V_FRONT_WEAK_PRESENT    ;
@@ -12287,7 +12291,7 @@ LEXICON V_HYLKIÄ
 0:ki        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KOPIOIDA
-!! € kopioida
+!! € kopioida kopioida+V+Act+InfA+Sg+Lat copy
 0:id    V_BACK_AINF    ;
 0:id    V_BACK_EINF  ;
 0:i     V_BACK_WEAK_PRESENT  ;
@@ -12304,7 +12308,7 @@ LEXICON V_KOPIOIDA
 0:i        V_BACK_DERIV_PCPS ;
 
 LEXICON V_ÖYKKÄRÖIDÄ
-!! € kopioida
+!! € öykkäröidä öykkäröidä+V+Act+InfA+Sg+Lat bully
 0:id    V_FRONT_AINF    ;
 0:id    V_FRONT_EINF  ;
 0:i     V_FRONT_WEAK_PRESENT  ;
@@ -12321,7 +12325,7 @@ LEXICON V_ÖYKKÄRÖIDÄ
 0:i        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_SAADA
-!! € saada
+!! € saada saada+V+Act+InfA+Sg+Lat get
 0:ad    V_BACK_AINF    ;
 0:ad    V_BACK_EINF  ;
 0:a     V_BACK_WEAK_PRESENT  ;
@@ -12338,7 +12342,7 @@ LEXICON V_SAADA
 0:a        V_BACK_DERIV_PCPS ;
 
 LEXICON V_MYYDÄ
-!! € myydä
+!! € myydä myydä+V+Act+InfA+Sg+Lat sell
 0:yd    V_FRONT_AINF    ;
 0:yd    V_FRONT_EINF  ;
 0:y     V_FRONT_WEAK_PRESENT  ;
@@ -12355,7 +12359,7 @@ LEXICON V_MYYDÄ
 0:y        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_JÄÄDÄ
-!! € jäädä
+!! € jäädä jäädä+V+Act+InfA+Sg+Lat stay
 0:äd    V_FRONT_AINF    ;
 0:äd    V_FRONT_EINF  ;
 0:ä     V_FRONT_WEAK_PRESENT  ;
@@ -12372,7 +12376,7 @@ LEXICON V_JÄÄDÄ
 0:ä        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_VIEDÄ
-!! € viedä
+!! € viedä viedä+V+Act+InfA+Sg+Lat take
 0:ied   V_FRONT_AINF    ;
 0:ied   V_FRONT_EINF  ;
 0:ie    V_FRONT_WEAK_PRESENT  ;
@@ -12389,7 +12393,7 @@ LEXICON V_VIEDÄ
 0:ie       V_FRONT_DERIV_PCPS ;
 
 LEXICON V_TUODA
-!! € tuoda
+!! € tuoda tuoda+V+Act+InfA+Sg+Lat bring
 0:uod   V_BACK_AINF    ;
 0:uod   V_BACK_EINF  ;
 0:uo    V_BACK_WEAK_PRESENT  ;
@@ -12406,7 +12410,7 @@ LEXICON V_TUODA
 0:uo       V_BACK_DERIV_PCPS ;
 
 LEXICON V_SYÖDÄ
-!! € syödä
+!! € syödä syödä+V+Act+InfA+Sg+Lat eat
 0:yöd   V_FRONT_AINF    ;
 0:yöd   V_FRONT_EINF  ;
 0:yö    V_FRONT_WEAK_PRESENT  ;
@@ -12423,7 +12427,7 @@ LEXICON V_SYÖDÄ
 0:yö       V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KÄYDÄ
-!! € käydä
+!! € käydä käydä+V+Act+InfA+Sg+Lat visit
 0:yd   V_FRONT_AINF    ;
 0:yd   V_FRONT_EINF  ;
 0:y    V_FRONT_WEAK_PRESENT  ;
@@ -12440,7 +12444,7 @@ LEXICON V_KÄYDÄ
 0:y        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_MARISTA
-!! € marista
+!! € marista marista+V+Act+InfA+Sg+Lat whine
 0:t    V_BACK_AINF    ;
 0:t    V_BACK_EINF  ;
 0:e     V_BACK_WEAK_PRESENT  ;
@@ -12457,7 +12461,7 @@ LEXICON V_MARISTA
 0:e        V_BACK_DERIV_PCPS ;
 
 LEXICON V_ÄRISTÄ
-!! € marista
+!! € äristä äristä+V+Act+InfA+Sg+Lat arr
 0:t    V_FRONT_AINF    ;
 0:t    V_FRONT_EINF  ;
 0:e     V_FRONT_WEAK_PRESENT  ;
@@ -12475,7 +12479,7 @@ LEXICON V_ÄRISTÄ
 
 
 LEXICON V_HÄVÄISTÄ
-!! € häväistä
+!! € häväistä häväistä+V+Act+InfA+Sg+Lat sacrilege
 0:väist    V_FRONT_AINF    ;
 0:väist    V_FRONT_EINF  ;
 0:päise     V_FRONT_WEAK_PRESENT  ;
@@ -12492,7 +12496,7 @@ LEXICON V_HÄVÄISTÄ
 0:päise  V_FRONT_DERIV_PCPS ;
 
 LEXICON V_VAVISTA
-!! € vavista
+!! € vavista vavista+V+Act+InfA+Sg+Lat shake
 0:vist    V_BACK_AINF    ;
 0:vist    V_BACK_EINF  ;
 0:pise     V_BACK_WEAK_PRESENT  ;
@@ -12509,7 +12513,7 @@ LEXICON V_VAVISTA
 0:pis   V_BACK_DERIV_PCPS ;
 
 LEXICON V_RANGAISTA
-!! € rangaista
+!! € rangaista rangaista+V+Act+InfA+Sg+Lat punish
 0:gaist    V_BACK_AINF    ;
 0:gaist    V_BACK_EINF  ;
 0:kaise     V_BACK_WEAK_PRESENT  ;
@@ -12526,7 +12530,7 @@ LEXICON V_RANGAISTA
 0:kaise  V_BACK_DERIV_PCPS ;
 
 LEXICON V_PIERRÄ
-!! € pierrä
+!! € pierrä pierrä+V+Act+InfA+Sg+Lat fart
 0:r    V_FRONT_AINF    ;
 0:r    V_FRONT_EINF    ;
 0:e    V_FRONT_WEAK_PRESENT    ;
@@ -12543,7 +12547,7 @@ LEXICON V_PIERRÄ
 0:e V_FRONT_DERIV_PCPS ;
 
 LEXICON V_MENNÄ
-!! € mennä
+!! € mennä mennä+V+Act+InfA+Sg+Lat go
 0:n    V_FRONT_AINF    ;
 0:n    V_FRONT_EINF    ;
 0:e    V_FRONT_WEAK_PRESENT    ;
@@ -12560,7 +12564,7 @@ LEXICON V_MENNÄ
 0:e V_FRONT_DERIV_PCPS ;
 
 LEXICON V_VASTAILLA
-!! € vastailla
+!! € vastailla vastailla+V+Act+InfA+Sg+Lat answer
 0:l    V_BACK_AINF    ;
 0:l    V_BACK_EINF    ;
 0:e    V_BACK_WEAK_PRESENT    ;
@@ -12577,7 +12581,7 @@ LEXICON V_VASTAILLA
 0:e V_BACK_DERIV_PCPS ;
 
 LEXICON V_ÄKSYILLÄ
-!! € vastailla
+!! € äksyillä äksyillä+V+Act+InfA+Sg+Lat 
 0:l    V_FRONT_AINF    ;
 0:l    V_FRONT_EINF    ;
 0:e    V_FRONT_WEAK_PRESENT    ;
@@ -12594,7 +12598,7 @@ LEXICON V_ÄKSYILLÄ
 0:e V_FRONT_DERIV_PCPS ;
 
 LEXICON V_LEIKELLÄ
-!! € leikellä
+!! € leikellä leikellä+V+Act+InfA+Sg+Lat cut
 0:ell    V_FRONT_AINF    ;
 0:ell    V_FRONT_EINF    ;
 0:kele    V_FRONT_WEAK_PRESENT    ;
@@ -12611,7 +12615,7 @@ LEXICON V_LEIKELLÄ
 0:kele V_FRONT_DERIV_PCPS ;
 
 LEXICON V_NAKELLA
-!! € nakella
+!! € nakella nakella+V+Act+InfA+Sg+Lat throw
 0:ell    V_BACK_AINF    ;
 0:ell    V_BACK_EINF    ;
 0:kele    V_BACK_WEAK_PRESENT    ;
@@ -12628,7 +12632,7 @@ LEXICON V_NAKELLA
 0:kele V_BACK_DERIV_PCPS ;
 
 LEXICON V_TAPELLA
-!! € tapella
+!! € tapella tapella+V+Act+InfA+Sg+Lat fight
 0:ell    V_BACK_AINF    ;
 0:ell    V_BACK_EINF    ;
 0:pele    V_BACK_WEAK_PRESENT    ;
@@ -12645,7 +12649,7 @@ LEXICON V_TAPELLA
 0:pele V_BACK_DERIV_PCPS ;
 
 LEXICON V_HYPELLÄ
-!! € hypellä
+!! € hypellä hypellä+V+Act+InfA+Sg+Lat jump
 0:ell    V_FRONT_AINF    ;
 0:ell    V_FRONT_EINF    ;
 0:pele    V_FRONT_WEAK_PRESENT    ;
@@ -12662,7 +12666,7 @@ LEXICON V_HYPELLÄ
 0:pele V_FRONT_DERIV_PCPS ;
 
 LEXICON V_SULATELLA
-!! € sulatella
+!! € sulatella sulatella+V+Act+InfA+Sg+Lat melt
 0:ell    V_BACK_AINF    ;
 0:ell    V_BACK_EINF    ;
 0:tele    V_BACK_WEAK_PRESENT    ;
@@ -12679,7 +12683,7 @@ LEXICON V_SULATELLA
 0:tele V_BACK_DERIV_PCPS ;
 
 LEXICON V_HERÄTELLÄ
-!! € herätellä
+!! € herätellä herätellä+V+Act+InfA+Sg+Lat wake
 0:ell    V_FRONT_AINF    ;
 0:ell    V_FRONT_EINF    ;
 0:tele    V_FRONT_WEAK_PRESENT    ;
@@ -12696,7 +12700,7 @@ LEXICON V_HERÄTELLÄ
 0:tele V_FRONT_DERIV_PCPS ;
 
 LEXICON V_TIPAHDELLA
-!! € tipahdella
+!! € tipahdella tipahdella+V+Act+InfA+Sg+Lat drop
 0:dell    V_BACK_AINF    ;
 0:dell    V_BACK_EINF    ;
 0:tele    V_BACK_WEAK_PRESENT    ;
@@ -12713,7 +12717,7 @@ LEXICON V_TIPAHDELLA
 0:tele  V_BACK_DERIV_PCPS ;
 
 LEXICON V_SÄPSÄHDELLÄ
-!! € säpsähdellä
+!! € säpsähdellä säpsähdellä+V+Act+InfA+Sg+Lat wake
 0:dell    V_FRONT_AINF    ;
 0:dell    V_FRONT_EINF    ;
 0:tele    V_FRONT_WEAK_PRESENT    ;
@@ -12730,7 +12734,7 @@ LEXICON V_SÄPSÄHDELLÄ
 0:tele  V_FRONT_DERIV_PCPS ;
 
 LEXICON V_OMMELLA
-!! € ommella
+!! € ommella ommella+V+Act+InfA+Sg+Lat sow
 0:mell    V_BACK_AINF    ;
 0:mell    V_BACK_EINF    ;
 0:pele    V_BACK_WEAK_PRESENT    ;
@@ -12747,7 +12751,7 @@ LEXICON V_OMMELLA
 0:pele  V_BACK_DERIV_PCPS ;
 
 LEXICON V_VAELLELLA
-!! € vaellella
+!! € vaellella vaellella+V+Act+InfA+Sg+Lat wander
 0:lell    V_BACK_AINF    ;
 0:lell    V_BACK_EINF    ;
 0:tele    V_BACK_WEAK_PRESENT    ;
@@ -12764,7 +12768,7 @@ LEXICON V_VAELLELLA
 0:tele  V_BACK_DERIV_PCPS ;
 
 LEXICON V_KIILLELLÄ
-!! € kiillellä
+!! € kiillellä kiillellä+V+Act+InfA+Sg+Lat sparkle
 0:lell    V_FRONT_AINF    ;
 0:lell    V_FRONT_EINF    ;
 0:tele    V_FRONT_WEAK_PRESENT    ;
@@ -12781,7 +12785,7 @@ LEXICON V_KIILLELLÄ
 0:tele  V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KOMENNELLA
-!! € komennella
+!! € komennella komennella+V+Act+InfA+Sg+Lat boss
 0:nell    V_BACK_AINF    ;
 0:nell    V_BACK_EINF    ;
 0:tele    V_BACK_WEAK_PRESENT    ;
@@ -12798,7 +12802,7 @@ LEXICON V_KOMENNELLA
 0:tele  V_BACK_DERIV_PCPS ;
 
 LEXICON V_KÄÄNNELLÄ
-!! € käännellä
+!! € käännellä käännellä+V+Act+InfA+Sg+Lat turn
 0:nell    V_FRONT_AINF    ;
 0:nell    V_FRONT_EINF    ;
 0:tele    V_FRONT_WEAK_PRESENT    ;
@@ -12815,7 +12819,7 @@ LEXICON V_KÄÄNNELLÄ
 0:tele  V_FRONT_DERIV_PCPS ;
 
 LEXICON V_NAKERRELLA
-!! € nakerrella
+!! € nakerrella nakerrella+V+Act+InfA+Sg+Lat bite
 0:rell    V_BACK_AINF    ;
 0:rell    V_BACK_EINF    ;
 0:tele    V_BACK_WEAK_PRESENT    ;
@@ -12832,7 +12836,7 @@ LEXICON V_NAKERRELLA
 0:tele  V_BACK_DERIV_PCPS ;
 
 LEXICON V_KIHERRELLÄ
-!! € kiherrellä
+!! € kiherrellä kiherrellä+V+Act+InfA+Sg+Lat giggle
 0:rell    V_FRONT_AINF    ;
 0:rell    V_FRONT_EINF    ;
 0:tele    V_FRONT_WEAK_PRESENT    ;
@@ -12849,7 +12853,7 @@ LEXICON V_KIHERRELLÄ
 0:tele  V_FRONT_DERIV_PCPS ;
 
 LEXICON V_ISÄNNÖIDÄ
-!! € isännöidä
+!! € isännöidä isännöidä+V+Act+InfA+Sg+Lat host
 0:id    V_FRONT_AINF    ;
 0:id    V_FRONT_EINF  ;
 0:i     V_FRONT_WEAK_PRESENT  ;
@@ -12870,7 +12874,7 @@ LEXICON V_ISÄNNÖIDÄ
 0:i   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_MELLAKOIDA
-!! € mellakoida
+!! € mellakoida mellakoida+V+Act+InfA+Sg+Lat riot
 0:id    V_BACK_AINF    ;
 0:id    V_BACK_EINF  ;
 0:i     V_BACK_WEAK_PRESENT  ;
@@ -12891,7 +12895,7 @@ LEXICON V_MELLAKOIDA
 0:i   V_BACK_DERIV_PCPS ;
 
 LEXICON V_PALKITA
-!! € palkita
+!! € palkita palkita+V+Act+InfA+Sg+Lat reward
 0:t     V_BACK_AINF    ;
 0:t     V_BACK_EINF  ;
 0:tse     V_BACK_WEAK_PRESENT  ;
@@ -12907,7 +12911,7 @@ LEXICON V_PALKITA
 0:tse V_BACK_DERIV_PCPS ;
 
 LEXICON V_MERKITÄ
-!! € merkitä
+!! € merkitä merkitä+V+Act+InfA+Sg+Lat mark
 0:t    V_FRONT_AINF    ;
 0:t    V_FRONT_EINF  ;
 0:tse     V_FRONT_WEAK_PRESENT  ;
@@ -12923,7 +12927,7 @@ LEXICON V_MERKITÄ
 0:tse V_FRONT_DERIV_PCPS ;
 
 LEXICON V_JUOSTA
-!! € juosta
+!! € juosta juosta+V+Act+InfA+Sg+Lat run
 0:st     V_BACK_AINF    ;
 0:st     V_BACK_EINF  ;
 0:kse     V_BACK_WEAK_PRESENT  ;
@@ -12939,7 +12943,7 @@ LEXICON V_JUOSTA
 0:kse V_BACK_DERIV_PCPS ;
 
 LEXICON V_PIESTÄ
-!! € piestä
+!! € piestä piestä+V+Act+InfA+Sg+Lat spank
 0:st    V_FRONT_AINF    ;
 0:st    V_FRONT_EINF  ;
 0:kse     V_FRONT_WEAK_PRESENT  ;
@@ -12955,7 +12959,7 @@ LEXICON V_PIESTÄ
 0:kse V_FRONT_DERIV_PCPS ;
 
 LEXICON V_NÄHDÄ
-!! € nähdä
+!! € nähdä nähdä+V+Act+InfA+Sg+Lat see
 0:hd   V_FRONT_AINF    ;
 0:hd   V_FRONT_EINF  ;
 0:e       V_FRONT_WEAK_PRESENT  ;
@@ -12971,7 +12975,7 @@ LEXICON V_NÄHDÄ
 0:ke  V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KARHETA
-!! € karheta
+!! € karheta karheta+V+Act+InfA+Sg+Lat 
 0:t    V_BACK_AINF    ;
 0:t    V_BACK_EINF  ;
 0:ne     V_BACK_WEAK_PRESENT  ;
@@ -12987,7 +12991,7 @@ LEXICON V_KARHETA
 0:ne    V_BACK_DERIV_PCPS ;
 
 LEXICON V_VÄHETÄ
-!! € karheta
+!! € vähetä vähetä+V+Act+InfA+Sg+Lat lessen
 0:t    V_FRONT_AINF    ;
 0:t    V_FRONT_EINF  ;
 0:ne     V_FRONT_WEAK_PRESENT  ;
@@ -13003,7 +13007,7 @@ LEXICON V_VÄHETÄ
 0:ne    V_FRONT_DERIV_PCPS ;
 
 LEXICON V_NIUKETA
-!! € niuketa
+!! € niuketa niuketa+V+Act+InfA+Sg+Lat tighten
 0:et    V_BACK_AINF    ;
 0:et    V_BACK_EINF  ;
 0:kene     V_BACK_WEAK_PRESENT  ;
@@ -13019,7 +13023,7 @@ LEXICON V_NIUKETA
 0:kene  V_BACK_DERIV_PCPS ;
 
 LEXICON V_JYRKETÄ
-!! € jyrketä
+!! € jyrketä jyrketä+V+Act+InfA+Sg+Lat 
 0:et    V_FRONT_AINF    ;
 0:et    V_FRONT_EINF  ;
 0:kene     V_FRONT_WEAK_PRESENT  ;
@@ -13035,7 +13039,7 @@ LEXICON V_JYRKETÄ
 0:kene  V_FRONT_DERIV_PCPS ;
 
 LEXICON V_HAPATA
-!! € hapata
+!! € hapata hapata+V+Act+InfA+Sg+Lat ensour
 0:at    V_BACK_AINF    ;
 0:at    V_BACK_EINF  ;
 0:pane     V_BACK_WEAK_PRESENT  ;
@@ -13051,7 +13055,7 @@ LEXICON V_HAPATA
 0:pane  V_BACK_DERIV_PCPS ;
 
 LEXICON V_SUPETA
-!! € supeta
+!! € supeta supeta+V+Act+InfA+Sg+Lat tighten
 0:et    V_BACK_AINF    ;
 0:et    V_BACK_EINF  ;
 0:pene     V_BACK_WEAK_PRESENT  ;
@@ -13067,7 +13071,7 @@ LEXICON V_SUPETA
 0:pene  V_BACK_DERIV_PCPS ;
 
 LEXICON V_TYLPETÄ
-!! € tylpetä
+!! € tylpetä tylpetä+V+Act+InfA+Sg+Lat dull
 0:et    V_FRONT_AINF    ;
 0:et    V_FRONT_EINF  ;
 0:pene     V_FRONT_WEAK_PRESENT  ;
@@ -13083,7 +13087,7 @@ LEXICON V_TYLPETÄ
 0:pene  V_FRONT_DERIV_PCPS ;
 
 LEXICON V_HELPOTA
-!! € helpota
+!! € helpota helpota+V+Act+InfA+Sg+Lat ease
 0:ot    V_BACK_AINF    ;
 0:ot    V_BACK_EINF  ;
 0:pone     V_BACK_WEAK_PRESENT  ;
@@ -13099,7 +13103,7 @@ LEXICON V_HELPOTA
 0:pone  V_BACK_DERIV_PCPS ;
 
 LEXICON V_LOITOTA
-!! € loitota
+!! € loitota loitota+V+Act+InfA+Sg+Lat distance
 0:ot    V_BACK_AINF    ;
 0:ot    V_BACK_EINF  ;
 0:tone     V_BACK_WEAK_PRESENT  ;
@@ -13115,7 +13119,7 @@ LEXICON V_LOITOTA
 0:tone  V_BACK_DERIV_PCPS ;
 
 LEXICON V_ULOTA
-!! € ulota
+!! € ulota ulota+V+Act+InfA+Sg+Lat outen
 0:ot    V_BACK_AINF    ;
 0:ot    V_BACK_EINF  ;
 0:kone     V_BACK_WEAK_PRESENT  ;
@@ -13131,7 +13135,7 @@ LEXICON V_ULOTA
 0:kone  V_BACK_DERIV_PCPS ;
 
 LEXICON V_KAVETA
-!! € kaveta
+!! € kaveta kaveta+V+Act+InfA+Sg+Lat tighten
 0:vet    V_BACK_AINF    ;
 0:vet    V_BACK_EINF  ;
 0:pene     V_BACK_WEAK_PRESENT  ;
@@ -13147,7 +13151,7 @@ LEXICON V_KAVETA
 0:pene  V_BACK_DERIV_PCPS ;
 
 LEXICON V_MÄDÄTÄ
-!! € mädätä
+!! € mädätä mädätä+V+Act+InfA+Sg+Lat rot
 0:dät    V_FRONT_AINF    ;
 0:dät    V_FRONT_EINF  ;
 0:täne     V_FRONT_WEAK_PRESENT  ;
@@ -13163,7 +13167,7 @@ LEXICON V_MÄDÄTÄ
 0:täne  V_FRONT_DERIV_PCPS ;
 
 LEXICON V_LEUDOTA
-!! € leudota
+!! € leudota leudota+V+Act+InfA+Sg+Lat 
 0:dot    V_BACK_AINF    ;
 0:dot    V_BACK_EINF  ;
 0:tone     V_BACK_WEAK_PRESENT  ;
@@ -13180,7 +13184,7 @@ LEXICON V_LEUDOTA
 
 LEXICON V_TODETA
 !! FIXME: this is not the back form of pidetä
-!! € todeta??
+!! € todeta todeta+V+Act+InfA+Sg+Lat note
 0:det    V_BACK_AINF    ;
 0:det    V_BACK_EINF  ;
 0:tea     V_BACK_WEAK_PRESENT  ;
@@ -13196,7 +13200,7 @@ LEXICON V_TODETA
 0:tea   V_BACK_DERIV_PCPS ;
 
 LEXICON V_PIDETÄ
-!! € pidetä
+!! € pidetä pidetä+V+Act+InfA+Sg+Lat lengthen
 0:det    V_FRONT_AINF    ;
 0:det    V_FRONT_EINF  ;
 0:tene     V_FRONT_WEAK_PRESENT  ;
@@ -13212,7 +13216,7 @@ LEXICON V_PIDETÄ
 0:det   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_LÄMMETÄ
-!! € kiinnetä
+!! € lämmetä lämmetä+V+Act+InfA+Sg+Lat warm
 0:met    V_FRONT_AINF    ;
 0:met    V_FRONT_EINF  ;
 0:pene     V_FRONT_WEAK_PRESENT  ;
@@ -13228,7 +13232,7 @@ LEXICON V_LÄMMETÄ
 0:pene  V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KIINNETÄ
-!! € kiinnetä
+!! € kiinnetä kiinnetä+V+Act+InfA+Sg+Lat firm
 0:net    V_FRONT_AINF    ;
 0:net    V_FRONT_EINF  ;
 0:tene     V_FRONT_WEAK_PRESENT  ;
@@ -13244,7 +13248,7 @@ LEXICON V_KIINNETÄ
 0:tene  V_FRONT_DERIV_PCPS ;
 
 LEXICON V_JULJETA
-!! € juljeta
+!! € juljeta juljeta+V+Act+InfA+Sg+Lat dare
 0:jet    V_BACK_AINF    ;
 0:jet    V_BACK_EINF  ;
 0:kene     V_BACK_WEAK_PRESENT  ;
@@ -13275,7 +13279,7 @@ LEXICON V_JULJETA
 !0:jet   V_FRONT_TUPCP_0  ;
 
 LEXICON V_ARVATA
-!! € arvata
+!! € arvata arvata+V+Act+InfA+Sg+Lat guess
 0:t    V_BACK_AINF    ;
 0:t    V_BACK_EINF  ;
 0:a     V_BACK_WEAK_PRESENT  ;
@@ -13291,7 +13295,7 @@ LEXICON V_ARVATA
 0:a     V_BACK_DERIV_PCPS ;
 
 LEXICON V_YNNÄTÄ
-!! € arvata
+!! € ynnätä ynnätä+V+Act+InfA+Sg+Lat add
 0:t    V_FRONT_AINF    ;
 0:t    V_FRONT_EINF  ;
 0:ä     V_FRONT_WEAK_PRESENT  ;
@@ -13307,7 +13311,7 @@ LEXICON V_YNNÄTÄ
 0:ä   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_MORKATA
-!! € morkata
+!! € morkata morkata+V+Act+InfA+Sg+Lat blame
 0:at    V_BACK_AINF    ;
 0:at    V_BACK_EINF  ;
 0:kaa     V_BACK_WEAK_PRESENT  ;
@@ -13323,7 +13327,7 @@ LEXICON V_MORKATA
 0:kaa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_YÖKÄTÄ
-!! € hylätä
+!! € yökätä yökätä+V+Act+InfA+Sg+Lat yuck
 0:ät    V_FRONT_AINF    ;
 0:ät    V_FRONT_EINF  ;
 0:kää     V_FRONT_WEAK_PRESENT  ;
@@ -13339,7 +13343,7 @@ LEXICON V_YÖKÄTÄ
 0:kää   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_SIEPATA
-!! € siepata
+!! € siepata siepata+V+Act+InfA+Sg+Lat kidnap
 0:at    V_BACK_AINF    ;
 0:at    V_BACK_EINF  ;
 0:paa     V_BACK_WEAK_PRESENT  ;
@@ -13355,7 +13359,7 @@ LEXICON V_SIEPATA
 0:paa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_VÄLPÄTÄ
-!! € välpätä
+!! € välpätä välpätä+V+Act+InfA+Sg+Lat 
 0:ät    V_FRONT_AINF    ;
 0:ät    V_FRONT_EINF  ;
 0:pää     V_FRONT_WEAK_PRESENT  ;
@@ -13371,7 +13375,7 @@ LEXICON V_VÄLPÄTÄ
 0:pää   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_LUNTATA
-!! € luntata
+!! € luntata luntata+V+Act+InfA+Sg+Lat cheat
 0:at    V_BACK_AINF    ;
 0:at    V_BACK_EINF  ;
 0:taa     V_BACK_WEAK_PRESENT  ;
@@ -13387,7 +13391,7 @@ LEXICON V_LUNTATA
 0:taa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_LÄNTÄTÄ
-!! € läntätä
+!! € läntätä läntätä+V+Act+InfA+Sg+Lat splat
 0:ät    V_FRONT_AINF    ;
 0:ät    V_FRONT_EINF  ;
 0:tää     V_FRONT_WEAK_PRESENT  ;
@@ -13403,7 +13407,7 @@ LEXICON V_LÄNTÄTÄ
 0:tää   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KAIVATA
-!! € kaivata
+!! € kaivata kaivata+V+Act+InfA+Sg+Lat long
 0:vat    V_BACK_AINF    ;
 0:vat    V_BACK_EINF  ;
 0:paa     V_BACK_WEAK_PRESENT  ;
@@ -13419,7 +13423,7 @@ LEXICON V_KAIVATA
 0:paa   V_BACK_DERIV_PCSP ;
 
 LEXICON V_LEVÄTÄ
-!! € levätä
+!! € levätä levätä+V+Act+InfA+Sg+Lat rest
 0:vät    V_FRONT_AINF    ;
 0:vät    V_FRONT_EINF  ;
 0:pää     V_FRONT_WEAK_PRESENT  ;
@@ -13435,7 +13439,7 @@ LEXICON V_LEVÄTÄ
 0:pää   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_JAHDATA
-!! € jahdata
+!! € jahdata jahdata+V+Act+InfA+Sg+Lat hunt
 0:dat    V_BACK_AINF    ;
 0:dat    V_BACK_EINF  ;
 0:taa     V_BACK_WEAK_PRESENT  ;
@@ -13451,7 +13455,7 @@ LEXICON V_JAHDATA
 0:taa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_TÄHDÄTÄ
-!! € tähdätä
+!! € tähdätä tähdätä+V+Act+InfA+Sg+Lat aim
 0:dät    V_FRONT_AINF    ;
 0:dät    V_FRONT_EINF  ;
 0:tää     V_FRONT_WEAK_PRESENT  ;
@@ -13467,7 +13471,7 @@ LEXICON V_TÄHDÄTÄ
 0:tää   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_VONGATA
-!! € vongata
+!! € vongata vongata+V+Act+InfA+Sg+Lat beg
 0:gat    V_BACK_AINF    ;
 0:gat    V_BACK_EINF  ;
 0:kaa     V_BACK_WEAK_PRESENT  ;
@@ -13483,7 +13487,7 @@ LEXICON V_VONGATA
 0:kaa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_VÄNGÄTÄ
-!! € vängätä
+!! € vängätä vängätä+V+Act+InfA+Sg+Lat argue
 0:gät    V_FRONT_AINF    ;
 0:gät    V_FRONT_EINF  ;
 0:kää     V_FRONT_WEAK_PRESENT  ;
@@ -13499,7 +13503,7 @@ LEXICON V_VÄNGÄTÄ
 0:kää   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_TEMMATA
-!! € temmata
+!! € temmata temmata+V+Act+InfA+Sg+Lat pull
 0:mat    V_BACK_AINF    ;
 0:mat    V_BACK_EINF  ;
 0:paa     V_BACK_WEAK_PRESENT  ;
@@ -13515,7 +13519,7 @@ LEXICON V_TEMMATA
 0:paa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_MULLATA
-!! € mullata
+!! € mullata mullata+V+Act+InfA+Sg+Lat dirt
 0:lat    V_BACK_AINF    ;
 0:lat    V_BACK_EINF  ;
 0:taa     V_BACK_WEAK_PRESENT  ;
@@ -13531,7 +13535,7 @@ LEXICON V_MULLATA
 0:taa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_SUUNNATA
-!! € suunnata
+!! € suunnata suunnata+V+Act+InfA+Sg+Lat go
 0:nat    V_BACK_AINF    ;
 0:nat    V_BACK_EINF  ;
 0:taa     V_BACK_WEAK_PRESENT  ;
@@ -13547,7 +13551,7 @@ LEXICON V_SUUNNATA
 0:taa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_RYNNÄTÄ
-!! € rynnätä
+!! € rynnätä rynnätä+V+Act+InfA+Sg+Lat rush
 0:nät    V_FRONT_AINF    ;
 0:nät    V_FRONT_EINF  ;
 0:tää     V_FRONT_WEAK_PRESENT  ;
@@ -13563,7 +13567,7 @@ LEXICON V_RYNNÄTÄ
 0:tää   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_VIRRATA
-!! € virrata
+!! € virrata virrata+V+Act+InfA+Sg+Lat stream
 0:rat    V_BACK_AINF    ;
 0:rat    V_BACK_EINF  ;
 0:taa     V_BACK_WEAK_PRESENT  ;
@@ -13579,7 +13583,7 @@ LEXICON V_VIRRATA
 0:taa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_HYLJÄTÄ
-!! € hyljätä
+!! € hyljätä hyljätä+V+Act+InfA+Sg+Lat abandon
 0:jät    V_FRONT_AINF    ;
 0:jät    V_FRONT_EINF  ;
 0:kää     V_FRONT_WEAK_PRESENT  ;
@@ -13595,7 +13599,7 @@ LEXICON V_HYLJÄTÄ
 0:tää   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_DIGATA
-!! € digata
+!! € digata digata+V+Act+InfA+Sg+Lat dig
 0:at    V_BACK_AINF    ;
 0:at    V_BACK_EINF  ;
 0:gaa     V_BACK_WEAK_PRESENT  ;
@@ -13611,7 +13615,7 @@ LEXICON V_DIGATA
 0:kaa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_LOBATA
-!! € lobata
+!! € lobata lobata+V+Act+InfA+Sg+Lat lobby
 0:at    V_BACK_AINF    ;
 0:at    V_BACK_EINF  ;
 0:baa     V_BACK_WEAK_PRESENT  ;
@@ -13627,7 +13631,7 @@ LEXICON V_LOBATA
 0:baa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_KARHUTA
-!! € karhuta
+!! € karhuta karhuta+V+Act+InfA+Sg+Lat tax
 0:t    V_BACK_AINF    ;
 0:t    V_BACK_EINF  ;
 0:a     V_BACK_WEAK_PRESENT  ;
@@ -13643,7 +13647,7 @@ LEXICON V_KARHUTA
 0:a     V_BACK_DERIV_PCPS ;
 
 LEXICON V_TÄHYTÄ
-!! € tähytä
+!! € tähytä tähytä+V+Act+InfA+Sg+Lat periscope
 0:t    V_FRONT_AINF    ;
 0:t    V_FRONT_EINF  ;
 0:ä     V_FRONT_WEAK_PRESENT  ;
@@ -13659,7 +13663,7 @@ LEXICON V_TÄHYTÄ
 0:ä     V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KAIKOTA
-!! € kaikota
+!! € kaikota kaikota+V+Act+InfA+Sg+Lat disappear
 0:ot    V_BACK_AINF    ;
 0:ot    V_BACK_EINF  ;
 0:koa     V_BACK_WEAK_PRESENT  ;
@@ -13675,7 +13679,7 @@ LEXICON V_KAIKOTA
 0:koa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_POIKETA
-!! € poiketa
+!! € poiketa poiketa+V+Act+InfA+Sg+Lat 
 0:et    V_BACK_AINF    ;
 0:et    V_BACK_EINF  ;
 0:kea     V_BACK_WEAK_PRESENT  ;
@@ -13691,7 +13695,7 @@ LEXICON V_POIKETA
 0:kea   V_BACK_DERIV_PCPS ;
 
 LEXICON V_KERETÄ
-!! € keretä
+!! € keretä keretä+V+Act+InfA+Sg+Lat 
 0:et    V_FRONT_AINF    ;
 0:et    V_FRONT_EINF  ;
 0:keä     V_FRONT_WEAK_PRESENT  ;
@@ -13707,7 +13711,7 @@ LEXICON V_KERETÄ
 0:keä   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KOUKUTA
-!! € koukuta
+!! € koukuta koukuta+V+Act+InfA+Sg+Lat hook
 0:ut    V_BACK_AINF    ;
 0:ut    V_BACK_EINF  ;
 0:kua     V_BACK_WEAK_PRESENT  ;
@@ -13723,7 +13727,7 @@ LEXICON V_KOUKUTA
 0:kua   V_BACK_DERIV_PCPS ;
 
 LEXICON V_PULPUTA
-!! € pulputa
+!! € pulputa pulputa+V+Act+InfA+Sg+Lat pulp
 0:ut    V_BACK_AINF    ;
 0:ut    V_BACK_EINF  ;
 0:pua     V_BACK_WEAK_PRESENT  ;
@@ -13739,7 +13743,7 @@ LEXICON V_PULPUTA
 0:pua   V_BACK_DERIV_PCPS ;
 
 LEXICON V_UPOTA
-!! € upota
+!! € upota upota+V+Act+InfA+Sg+Lat sink
 0:ot    V_BACK_AINF    ;
 0:ot    V_BACK_EINF  ;
 0:poa     V_BACK_WEAK_PRESENT  ;
@@ -13755,7 +13759,7 @@ LEXICON V_UPOTA
 0:poa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_LOTOTA
-!! € lotota
+!! € lotota lotota+V+Act+InfA+Sg+Lat lotto
 0:ot    V_BACK_AINF    ;
 0:ot    V_BACK_EINF  ;
 0:toa     V_BACK_WEAK_PRESENT  ;
@@ -13771,7 +13775,7 @@ LEXICON V_LOTOTA
 0:toa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_LUUTUTA
-!! € luututa
+!! € luututa luututa+V+Act+InfA+Sg+Lat mop
 0:ut    V_BACK_AINF    ;
 0:ut    V_BACK_EINF  ;
 0:tua     V_BACK_WEAK_PRESENT  ;
@@ -13787,7 +13791,7 @@ LEXICON V_LUUTUTA
 0:tua   V_BACK_DERIV_PCPS ;
 
 LEXICON V_KIVUTA
-!! € kivuta
+!! € kivuta kivuta+V+Act+InfA+Sg+Lat climb
 0:vut    V_BACK_AINF    ;
 0:vut    V_BACK_EINF  ;
 0:pua     V_BACK_WEAK_PRESENT  ;
@@ -13803,7 +13807,7 @@ LEXICON V_KIVUTA
 0:pua   V_BACK_DERIV_PCPS ;
 
 LEXICON V_KORVETA
-!! € korveta
+!! € korveta korveta+V+Act+InfA+Sg+Lat 
 0:vet    V_BACK_AINF    ;
 0:vet    V_BACK_EINF  ;
 0:pea     V_BACK_WEAK_PRESENT  ;
@@ -13819,7 +13823,7 @@ LEXICON V_KORVETA
 0:pea   V_BACK_DERIV_PCPS ;
 
 LEXICON V_REVETÄ
-!! € kiivetä
+!! € kiivetä kiivetä+V+Act+InfA+Sg+Lat climb
 0:vet    V_FRONT_AINF    ;
 0:vet    V_FRONT_EINF  ;
 0:peä     V_FRONT_WEAK_PRESENT  ;
@@ -13835,7 +13839,7 @@ LEXICON V_REVETÄ
 0:peä   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KIRVOTA
-!! € kirvota
+!! € kirvota kirvota+V+Act+InfA+Sg+Lat loose
 0:vot    V_BACK_AINF    ;
 0:vot    V_BACK_EINF  ;
 0:poa     V_BACK_WEAK_PRESENT  ;
@@ -13851,7 +13855,7 @@ LEXICON V_KIRVOTA
 0:poa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_KADOTA
-!! € kadota
+!! € kadota kadota+V+Act+InfA+Sg+Lat disappear
 0:dot    V_BACK_AINF    ;
 0:dot    V_BACK_EINF  ;
 0:toa     V_BACK_WEAK_PRESENT  ;
@@ -13866,8 +13870,8 @@ LEXICON V_KADOTA
 0:dot   V_BACK_TUPCP_0  ;
 0:toa   V_BACK_DERIV_PCPS ;
 
-LEXICON V_TODETTU
-!! € todeta
+LEXICON V_TODETA
+!! € todeta todeta+V+Act+InfA+Sg+Lat note
 0:det    V_BACK_AINF    ;
 0:det    V_BACK_EINF  ;
 0:tea     V_BACK_WEAK_PRESENT  ;
@@ -13883,7 +13887,7 @@ LEXICON V_TODETTU
 0:tea   V_BACK_DERIV_PCPS ;
 
 LEXICON V_VYYHDETÄ
-!! € vyyhdetä
+!! € vyyhdetä vyyhdetä+V+Act+InfA+Sg+Lat entangle
 0:det    V_FRONT_AINF    ;
 0:det    V_FRONT_EINF  ;
 0:teä     V_FRONT_WEAK_PRESENT  ;
@@ -13899,7 +13903,7 @@ LEXICON V_VYYHDETÄ
 0:teä   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_LIIDUTA
-!! € liiduta
+!! € liiduta liiduta+V+Act+InfA+Sg+Lat chalk
 0:dut    V_BACK_AINF    ;
 0:dut    V_BACK_EINF  ;
 0:tua     V_BACK_WEAK_PRESENT  ;
@@ -13915,7 +13919,7 @@ LEXICON V_LIIDUTA
 0:tua   V_BACK_DERIV_PCPS ;
 
 LEXICON V_TUNGETA
-!! € tungeta
+!! € tungeta tungeta+V+Act+InfA+Sg+Lat push
 0:get    V_BACK_AINF    ;
 0:get    V_BACK_EINF  ;
 0:kea     V_BACK_WEAK_PRESENT  ;
@@ -13931,7 +13935,7 @@ LEXICON V_TUNGETA
 0:kea   V_BACK_DERIV_PCPS ;
 
 LEXICON V_PINGOTA
-!! € pingota
+!! € pingota pingota+V+Act+InfA+Sg+Lat ping
 0:got    V_BACK_AINF    ;
 0:got    V_BACK_EINF  ;
 0:koa     V_BACK_WEAK_PRESENT  ;
@@ -13947,7 +13951,7 @@ LEXICON V_PINGOTA
 0:koa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_ÄNGETÄ
-!! € ängetä
+!! € ängetä ängetä+V+Act+InfA+Sg+Lat push
 0:get    V_FRONT_AINF    ;
 0:get    V_FRONT_EINF  ;
 0:keä     V_FRONT_WEAK_PRESENT  ;
@@ -13963,7 +13967,7 @@ LEXICON V_ÄNGETÄ
 0:keä   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KUMMUTA
-!! € kummuta
+!! € kummuta kummuta+V+Act+InfA+Sg+Lat 
 0:mut    V_BACK_AINF    ;
 0:mut    V_BACK_EINF  ;
 0:pua     V_BACK_WEAK_PRESENT  ;
@@ -13979,7 +13983,7 @@ LEXICON V_KUMMUTA
 0:pua   V_BACK_DERIV_PCPS ;
 
 LEXICON V_KAMMETA
-!! € kammeta
+!! € kammeta kammeta+V+Act+InfA+Sg+Lat lever
 0:met    V_BACK_AINF    ;
 0:met    V_BACK_EINF  ;
 0:pea     V_BACK_WEAK_PRESENT  ;
@@ -13995,7 +13999,7 @@ LEXICON V_KAMMETA
 0:pea   V_BACK_DERIV_PCPS ;
 
 LEXICON V_SAMMOTA
-!! € sammota
+!! € sammota sammota+V+Act+InfA+Sg+Lat 
 0:mot    V_BACK_AINF    ;
 0:mot    V_BACK_EINF  ;
 0:poa     V_BACK_WEAK_PRESENT  ;
@@ -14011,7 +14015,7 @@ LEXICON V_SAMMOTA
 0:poa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_INNOTA
-!! € innota
+!! € innota innota+V+Act+InfA+Sg+Lat eager
 0:not    V_BACK_AINF    ;
 0:not    V_BACK_EINF  ;
 0:toa     V_BACK_WEAK_PRESENT  ;
@@ -14027,7 +14031,7 @@ LEXICON V_INNOTA
 0:toa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_IRROTA
-!! € irrota
+!! € irrota irrota+V+Act+InfA+Sg+Lat tear
 0:rot    V_BACK_AINF    ;
 0:rot    V_BACK_EINF  ;
 0:toa     V_BACK_WEAK_PRESENT  ;
@@ -14043,7 +14047,7 @@ LEXICON V_IRROTA
 0:toa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_HALJETA
-!! € haljeta
+!! € haljeta haljeta+V+Act+InfA+Sg+Lat split
 0:jet    V_BACK_AINF    ;
 0:jet    V_BACK_EINF  ;
 0:kea     V_BACK_WEAK_PRESENT  ;
@@ -14059,7 +14063,7 @@ LEXICON V_HALJETA
 0:kea   V_BACK_DERIV_PCPS ;
 
 LEXICON V_ILJETÄ
-!! € iljetä
+!! € iljetä iljetä+V+Act+InfA+Sg+Lat dare
 0:jet    V_FRONT_AINF    ;
 0:jet    V_FRONT_EINF  ;
 0:keä     V_FRONT_WEAK_PRESENT  ;
@@ -14075,7 +14079,7 @@ LEXICON V_ILJETÄ
 0:keä   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_MYRSKYTÄ
-!! € myrskytä
+!! € myrskytä myrskytä+V+Act+InfA+Sg+Lat storm
 0:t    V_FRONT_AINF    ;
 0:t    V_FRONT_EINF  ;
 0:ä     V_FRONT_WEAK_PRESENT  ;
@@ -14091,7 +14095,7 @@ LEXICON V_MYRSKYTÄ
 0:ä     V_FRONT_DERIV_PCPS ;
 
 LEXICON V_LASSOTA
-!! € lassota
+!! € lassota lassota+V+Act+InfA+Sg+Lat lasso
 0:t    V_BACK_AINF    ;
 0:t    V_BACK_EINF  ;
 0:a     V_BACK_WEAK_PRESENT  ;
@@ -14107,7 +14111,7 @@ LEXICON V_LASSOTA
 0:a     V_BACK_DERIV_PCPS ;
 
 LEXICON V_SELVITÄ
-!! € lämmitä
+!! € selvitä selvitä+V+Act+InfA+Sg+Lat manage
 0:t    V_FRONT_AINF    ;
 0:t    V_FRONT_EINF  ;
 0:ä     V_FRONT_WEAK_PRESENT  ;
@@ -14123,7 +14127,7 @@ LEXICON V_SELVITÄ
 0:ä     V_FRONT_DERIV_PCPS ;
 
 LEXICON V_RYÖPYTÄ
-!! € ryöpytä
+!! € ryöpytä ryöpytä+V+Act+InfA+Sg+Lat flood
 0:yt    V_FRONT_AINF    ;
 0:yt    V_FRONT_EINF  ;
 0:pyä     V_FRONT_WEAK_PRESENT  ;
@@ -14139,7 +14143,7 @@ LEXICON V_RYÖPYTÄ
 0:py    V_FRONT_DERIV_PCPS ;
 
 LEXICON V_PEITOTA
-!! € peitota
+!! € peitota peitota+V+Act+InfA+Sg+Lat beat
 0:ot    V_BACK_AINF    ;
 0:ot    V_BACK_EINF  ;
 0:toa     V_BACK_WEAK_PRESENT  ;
@@ -14155,7 +14159,7 @@ LEXICON V_PEITOTA
 0:toa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_KERITÄ
-!! € keritä
+!! € keritä keritä+V+Act+InfA+Sg+Lat 
 0:it    V_FRONT_AINF    ;
 0:it    V_FRONT_EINF  ;
 0:kiä     V_FRONT_WEAK_PRESENT  ;
@@ -14171,7 +14175,7 @@ LEXICON V_KERITÄ
 0:kiä   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_MUODOTA
-!! € muodota
+!! € muodota muodota+V+Act+InfA+Sg+Lat form
 0:dot    V_BACK_AINF    ;
 0:dot    V_BACK_EINF  ;
 0:toa     V_BACK_WEAK_PRESENT  ;
@@ -14187,7 +14191,7 @@ LEXICON V_MUODOTA
 0:toa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_LÄMMITÄ
-!! € lämmitä
+!! € lämmitä lämmitä+V+Act+InfA+Sg+Lat heat
 0:mit    V_FRONT_AINF    ;
 0:mit    V_FRONT_EINF  ;
 0:piä     V_FRONT_WEAK_PRESENT  ;
@@ -14203,7 +14207,7 @@ LEXICON V_LÄMMITÄ
 0:piä   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_AALLOTA
-!! € aallota
+!! € aallota aallota+V+Act+InfA+Sg+Lat wave
 0:lot    V_BACK_AINF    ;
 0:lot    V_BACK_EINF  ;
 0:toa     V_BACK_WEAK_PRESENT  ;
@@ -14219,7 +14223,7 @@ LEXICON V_AALLOTA
 0:toa   V_BACK_DERIV_PCPS ;
 
 LEXICON V_HELLITÄ
-!! € hellitä
+!! € hellitä hellitä+V+Act+InfA+Sg+Lat loose
 0:lit    V_FRONT_AINF    ;
 0:lit    V_FRONT_EINF  ;
 0:tiä     V_FRONT_WEAK_PRESENT  ;
@@ -14235,7 +14239,7 @@ LEXICON V_HELLITÄ
 0:tiä   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_TAITAA
-!! € taitaa
+!! € taitaa taitaa+V+Act+InfA+Sg+Lat can
 0:ta      V_BACK_AINF   ;
 0:ta      V_BACK_EINF  ;
 0:da      V_BACK_WEAK_PRESENT    ;
@@ -14251,7 +14255,7 @@ LEXICON V_TAITAA
 0:ta    V_BACK_DERIV_PCPS ;
 
 LEXICON V_TIETÄÄ
-!! € tietää
+!! € tietää tietää+V+Act+InfA+Sg+Lat know
 0:tä      V_FRONT_AINF   ;
 0:tä      V_FRONT_EINF  ;
 0:dä      V_FRONT_WEAK_PRESENT    ;
@@ -14267,8 +14271,8 @@ LEXICON V_TIETÄÄ
 0:tä    V_FRONT_DERIV_PCPS ;
 
 LEXICON V_VIPAJAA
-!! € vipajaa
-0     V_BACK_AINF    ;
+!! € vipajaa vipajaa+V+Act+InfA+Sg+Lat thump
+0:a   V_BACK_AINF    ;
 0     V_BACK_STRONG_PRESENT    ;
 0     V_BACK_3SG_A  ;
 0     V_BACK_STRONG_PAST ;
@@ -14276,8 +14280,8 @@ LEXICON V_VIPAJAA
 0     V_BACK_DERIV_PCPS ;
 
 LEXICON V_HELÄJÄÄ
-!! € heläjää
-0     V_FRONT_AINF    ;
+!! € heläjää heläjää+V+Act+InfA+Sg+Lat chime
+0:ä   V_FRONT_AINF    ;
 0     V_FRONT_STRONG_PRESENT    ;
 0     V_FRONT_3SG_Ä  ;
 0     V_FRONT_STRONG_PAST ;
@@ -14285,7 +14289,7 @@ LEXICON V_HELÄJÄÄ
 0     V_FRONT_DERIV_PCPS ;
 
 LEXICON V_RAIKAA
-!! € raikaa
+!! € raikaa raikaa+V+Act+InfA+Sg+Lat baum
 0     V_BACK_AINF    ;
 0     V_BACK_STRONG_PRESENT    ;
 0     V_BACK_3SG_A  ;
@@ -14293,7 +14297,7 @@ LEXICON V_RAIKAA
 0     V_BACK_DERIV_PCPS ;
 
 LEXICON V_ÄHKÄÄ
-!! € raikaa
+!! € ähkää ähkää+V+Act+InfA+Sg+Lat meh
 0     V_FRONT_AINF    ;
 0     V_FRONT_STRONG_PRESENT    ;
 0     V_FRONT_3SG_Ä  ;
@@ -14303,10 +14307,10 @@ LEXICON V_ÄHKÄÄ
 LEXICON V_OLLA
 !! The verb olla has very peculiar and heteroclitic inflection with lot of
 !! common short forms in standard spoken Finnish:
-!! € olla
-!! € lie
-!! € oisin
-!! € olija
+!! € olla olla+V+Act+InfA+Sg+Lat be
+!! € lienen olla+V+Act+Pot+Sg1
+!! € lie olla+V+Act+Pot+ConNeg
+!! € olija olla+V+Der/ja+Sg+Nom
 0:oll    V_BACK_AINF    ;
 0:oll    V_BACK_EINF    ;
 0:ole    V_BACK_WEAK_PRESENT    ;

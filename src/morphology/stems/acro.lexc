@@ -43,6 +43,7 @@ dna+N:dna   ACRO_AA  ;    ! deoxyribonucleic acid
 DNA+N:DNA   ACRO_AA  ;    ! Deoxyribo-Nucleic Acid
 d+N:d   ACRO_EE  ;
 D+N:D   ACRO_ÄKS  ;
+DJ+N:DJ     ACRO_II ;   ! Disc Jockey
 DPI+N:DPI   ACRO_II  ;    ! Dots Per Inch
 DVD+N:DVD   ACRO_ÄKS  ;   ! Digital Versatile Disc
 EEC+N:EEC   ACRO_EE  ;    ! European Economy Council
@@ -57,6 +58,7 @@ ES+N:ES   ACRO_ÄKS  ;
 ETY+N:ETY   ACRO_YY  ;    ! Euroopan Turvallisuus-Yhteisö
 EU+N:EU   ACRO_UU  ;      ! Euroopan Unioni
 EY+N:EY   ACRO_YY  ;      ! Euroopan Yhteisö
+FBI+N:FBI   ACRO_II ;     ! Federal Bureau of Investigation
 FIA+N:FIA   ACRO_AA  ;
 FIFA+N:FIFA   ACRO_AA  ;  ! Football
 f+N:f   ACRO_ÄKS  ;
@@ -113,9 +115,11 @@ MP3+N:MP3   ACRO_KOLME  ;
 MPEG+N:MPEG   ACRO_EE  ;
 MR+N:MR   ACRO_ÄKS  ;
 MTK+N:MTK   ACRO_OO  ;
+MTV+N:MTV     ACRO_EE ;    ! Music TeleVision
 MTV3+N:MTV3   ACRO_KOLME  ; ! Mainos-Tele-Visio
 NASA+N:NASA   ACRO_AA  ;    ! National Air and Space A
 NATO+N:NATO   ACRO_OO  ;    ! North-Atlantic T Organisation
+NBA+N:NBA     ACRO_AA ;    ! National Basketball Association
 netti-tv+N:netti-tv   ACRO_EE  ; ! Tele-visio
 NHL+N:NHL   ACRO_ÄKS  ; ! National Hockey League
 NL+N:NL   ACRO_ÄKS  ;   ! Neuvosto-Liitto
@@ -150,6 +154,7 @@ Q+N:Q   ACRO_UU  ;
 RAC+N:RAC   ACRO_EE  ;
 r+N:r   ACRO_ÄKS  ;
 R+N:R   ACRO_ÄKS  ;
+RNA+N:RNA   ACRO_AA ;   ! Ribonucleic Acid
 RP+N:RP   ACRO_EE  ;
 RSS+N:RSS   ACRO_ÄKS  ; ! R
 SAK+N:SAK   ACRO_OO  ;  ! Suomen Ammattiliittojen Keskusjärjestö

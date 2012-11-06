@@ -87,12 +87,12 @@ LEXICON N_FRONT_WEAK_PLURALS
 LEXICON N_FRONT_STRONG_PLURALS
 !! € näkyinä
 +Pl+Ess:%>i%>nä   N_FRONT_POSS_ÄN_OPT      ;
-+Cmt:%>i%>ne        N_FRONT_POSS_ÄN_OPT      ;
++Cmt:%>i%>ne        N_FRONT_POSS_EN_OPT      ;
 
 LEXICON N_BACK_STRONG_PLURALS
 !! € patoina
 +Pl+Ess:%>i%>na   N_BACK_POSS_AN_OPT      ;
-+Cmt:%>i%>ne        N_BACK_POSS_AN_OPT      ;
++Cmt:%>i%>ne        N_BACK_POSS_EN_OPT      ;
 
 
 ! allomorphs
@@ -515,32 +515,41 @@ LEXICON N_FRONT_POSS_EN_OBL
 0   N_FRONT_POSS_EN   ;
 
 ! derivs
-!LEXICON inen-lainenounDerivation
-!i   nen-se-soun+ta-en-ia-ien-ten-iin ;
-!lai nen-se-soun+ta-en-ia-ien-ten-iin ;
+LEXICON N_BACK_DERIV_INEN
+i   N_AAKKOSELLINEN ;
+lai N_AAKKOSELLINEN ;
+
+LEXICON N_FRONT_DERIV_INEN
+i   N_KYLKIÄINEN ;
+läi N_KYLKIÄINEN ;
+
+LEXICON N_BACK_DERIV_TONTSE
+tse             ko-kaan+Adverb  ;
+lli             nen-se-soun+ta-en-ia-ien-ten-iin        ;
+llisuu          s-te-de-ks-toun+ta-en-ia-ien-iin        ;
+sti             ko-kaan+Adverb     ;
+t               ar-tare-taroun+ta-en-ia-ien-ten-iin   ;
+t               on-toma-tomoun+ta-an-ia-ien-(ten)-iin ;
+ttomuu          s-te-de-ks-toun+ta-en-ia-ien-iin     ;
+
+LEXICON N_FRONT_DERIV_TÖNTSE
+tse             ko-kaan+Adverb  ;
+lli             nen-se-soun+ta-en-ia-ien-ten-iin        ;
+llisuu          s-te-de-ks-toun+ta-en-ia-ien-iin        ;
+sti             ko-kaan+Adverb     ;
+t               ar-tare-taroun+ta-en-ia-ien-ten-iin   ;
+t               on-toma-tomoun+ta-an-ia-ien-(ten)-iin ;
+ttomuu          s-te-de-ks-toun+ta-en-ia-ien-iin     ;
+
+LEXICON N_BACK_DERIV_ITTAIN
+itse    ko-kaan+Adverb     ;
+ittain  ko-kaan+Adverb     ;
 !
-!LEXICON inen-läinenounDerivation
-!i   nen-se-soun+ta-en-ia-ien-ten-iin ;
-!läi nen-se-soun+ta-en-ia-ien-ten-iin ;
+LEXICON N_FRONT_DERIV_ITTÄIN
+itse    kö-kään+Adverb     ;
+ittäin  kö-kään+Adverb     ;
 !
-!LEXICON tse-llinen-sti-tar-tonounDerivations
-!tse             ko-kaan+Adverb  ;
-!lli             nen-se-soun+ta-en-ia-ien-ten-iin        ;
-!llisuu          s-te-de-ks-toun+ta-en-ia-ien-iin        ;
-!sti             ko-kaan+Adverb     ;
-!t               ar-tare-taroun+ta-en-ia-ien-ten-iin   ;
-!t               on-toma-tomoun+ta-an-ia-ien-(ten)-iin ;
-!ttomuu          s-te-de-ks-toun+ta-en-ia-ien-iin     ;
-!
-!LEXICON itse-ittainounDerivations
-!itse    ko-kaan+Adverb     ;
-!ittain  ko-kaan+Adverb     ;
-!
-!LEXICON itse-ittäinounDerivations
-!itse    kö-kään+Adverb     ;
-!ittäin  kö-kään+Adverb     ;
-!
-! compounding
+! compoundingT
 LEXICON N_COMPOUND_0
 !! € talojuttu
 0   N_COMPOUND  ;
