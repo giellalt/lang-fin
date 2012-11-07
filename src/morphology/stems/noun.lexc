@@ -10,19 +10,19 @@ LEXICON  N
 !! The nominals are classified by combination of the stem variations, suffix
 !! allomorphs and the vowel harmony. The nouns have number, case, possessive
 !! and clitic suffixes:
-!! € talo
-!! € taloa
-!! € taloissa
-!! € talostani
-!! € talollako
-!! € taloiltammepa
+!! € talo talo+N+Sg+Nom house
+!! € taloa talo+N+Sg+Par
+!! € taloissa talo+N+Pl+Ine
+!! € talostani talo+N+Sg+Ela+PxSg1
+!! € talollako talo+N+Sg+Ade+Qst
+!! € taloiltammepa talo+N+Pl+Abl+PxPl1+Foc/pa
 !! The classification is based on suffix allomorphs, harmony, and the stem
 !! variation:
-!! € taloa
-!! € sälöjä
-!! € valtioita
-!! € lepakot
-!! € padoissa
+!! € taloja talo+N+Pl+Par
+!! € sälöjä sälö+N+Pl+Par splinter
+!! € valtioita valtio+N+Pl+Par state
+!! € lepakot lepakko+N+Pl+Nom bat
+!! € padoissa pato+N+Pl+Ine dam
 !! The minimal set to determine class of noun is singulars of nominative,
 !! essive and inessive, plurals of essive, elative, partitive, illative, and
 !! genitive. Find out stems and suffixes and match.
@@ -11207,6 +11207,7 @@ gulassi+N:gulass   N_RUUVI  ;
 guldeni+N:gulden   N_RUUVI  ;
 gummiitti+N:gummiit N_PORTTI  ;
 gummi+N:gumm   N_RUUVI  ;
+gundi+N:gund   N_RUUVI  ;
 gurkha+N:gurkh N_KIRJA  ;
 gurmee+N:gurme N_PATEE  ;
 gurmeeravintola+N:gurmee#ravintol N_MAKKARA  ;
@@ -96042,6 +96043,7 @@ zymogeeni+N:zymo_geen   N_RUUVI  ;
 öykkäröinti+N:öykkäröin N_VIENTI  ;
 öylätti+N:öylät N_SKEITTI  ;
 öylättirasia+N:öylätti#rasi N_MAKKARA  ;
+
 !! Noun stem variation and allomorph selection
 !! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 !! The nominal stems were classified according to what is the stem variation
@@ -96061,25 +96063,25 @@ LEXICON N_TALO
 !! The most basic noun stem does not have any stem internal variation and
 !! uses few commonest allomorphs. The words in this class are either bisyllabic
 !! or have one of common derivational suffixes sto, ...:
-!! € talo, talo, house
-!! € talona, talo, house
-!! € talossa, talo, house
-!! € taloina, talo, house
-!! € taloista, talo, house
-!! € taloa, talo, house
+!! € talo talo+N+Sg+Nom house
+!! € talona talo+N+Sg+Ess
+!! € talossa talo+N+Sg+Ine
+!! € taloina talo+N+Pl+Ess
+!! € taloista talo+N+Pl+Ela
+!! € taloa talo+N+Sg+Par
 !! $ talota
-!! € taloon, talo, house
+!! € taloon talo+N+Sg+Ill
 !! $ taloseen
-!! € taloja, talo, house
-!! $ taloita, talo, house
-!! € talojen, talo, house
+!! € taloja talo+N+Pl+Par
+!! $ taloita
+!! € talojen talo+N+Pl+Gen
 !! $ taloiden
 !! $ taloitten
-!! € taloihin, talo, house
+!! € taloihin talo+N+Pl+Gen
 !! $ taloisiin
-!! € talojuttu, talo#juttu, house thing
-!! € talonjuttu, talon#juttu, house's thing
-!! € talojenjuttu, talojen#juttu, houses' thing
+!! € talojuttu talo#juttu, house thing
+!! € talonjuttu talon#juttu, house's thing
+!! € talojenjuttu talojen#juttu, houses' thing
 0    N_BACK_NOMINATIVE    ;
 0    N_BACK_SINGULARS    ;
 0    N_BACK_PLURALS ;
