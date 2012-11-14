@@ -2506,7 +2506,7 @@ ammattinyrkkeily+N:ammatti#nyrkkeily N_VEHKEILY  ;
 ammattiopetus+N:ammatti#opetu N_VAKUUTUS  ;
 ammattiopinnot+N:ammatti#opin N_OPINNOT  ;
 ammattioppilaitos+N:ammatti#oppi#laito N_VAKUUTUS  ;
-ammattioppilaslauta'|'kunta+N:ammatti#oppilas#lauta#kun N_KUNTA  ;
+ammattioppilaslautakunta+N:ammatti#oppilas#lauta#kun N_KUNTA  ;
 ammattioppilas+N:ammatti#oppila N_PATSAS  ;
 ammattiosasto+N:ammatti#osasto N_RUIPELO  ;
 ammattipoliitikko+N:ammatti#poliitik N_UKKO  ;
@@ -3351,7 +3351,7 @@ apulainen+N:apulai   N_AAKKOSTAMINEN  ;
 apulaisjohtaja+N:apulais#johtaj N_SOITTAJA  ;
 apulaiskaupunginjohtaja+N:apulais#kaupungin#johtaj N_SOITTAJA  ;
 apulaislääkäri+N:apulais#lääkär    N_KEHVELI  ;
-apulaisoikeusasia'|'mies+N:apulais#oikeus#asia#mie   N_MIES  ;
+apulaisoikeusasiamies+N:apulais#oikeus#asia#mie   N_MIES  ;
 apulaisoikeuskansleri+N:apulais#oikeus#kansler   N_TANKKERI  ;
 apulaisopettaja+N:apulais#opettaj N_SOITTAJA  ;
 apulaispappi+N:apulais#pap N_KUPPI  ;
@@ -4022,7 +4022,7 @@ asianajosihteeri+N:asianajo#sihteer    N_KEHVELI  ;
 asianajotoimi+N:asian#ajo#toi   N_TAIMI  ;
 asianajotoimisto+N:asian#ajo#toimisto N_RUIPELO  ;
 asianajotutkinto+N:asianajo#tutkin N_TUNTO  ;
-asianajovalta'|'kirja+N:asian#ajo#valta#kirj N_KIRJA  ;
+asianajovaltakirja+N:asian#ajo#valta#kirj N_KIRJA  ;
 asia+N:asi N_MAKKARA  ;
 asianhaara+N:asian#haar N_KIRJA  ;
 asianharrastaja+N:asian#harrastaj N_SOITTAJA  ;
@@ -7150,7 +7150,7 @@ drilli+N:drill    N_TYYLI  ;
 drillipora+N:drilli#por N_SOITTAJA  ;
 drinkkilasi+N:drinkki#las   N_RUUVI  ;
 drinkki+N:drink N_HÄKKI  ;
-driveinelo'|'kuva'|'teatteri+N:drive#in#elo#kuva#teatter   N_TANKKERI  ;
+driveinelokuva'|'teatteri+N:drive#in#elo#kuva#teatter   N_TANKKERI  ;
 drivein+N:drive#in    N_ZEN  ;
 droidi+N:droid   N_RUUVI  ;
 dromaeosauri+N:dromaeosaur   N_RUUVI  ;
@@ -7745,7 +7745,7 @@ elinkaari+N:elin#kaar    N_KAARI  ;
 elinkausi+N:elin#kau   N_KAUSI  ;
 elinkautistuomio+N:elin#kautis#tuomio N_TUOMIO  ;
 elinkautisvanki+N:elin#kautis#van N_VANKI  ;
-elinkeinoasia'|'mies+N:elin#keino#asia#mie   N_MIES  ;
+elinkeinoasiamies+N:elin#keino#asia#mie   N_MIES  ;
 elinkeinoelämä+N:elin#keino#eläm N_HÖPÖTTÄJÄ  ;
 elinkeinoilmoitus+N:elin#keino#ilmoitu N_VAKUUTUS  ;
 elinkeinolupa+N:elin#keino#lu N_LUPA  ;
@@ -7787,7 +7787,7 @@ elintarvikelisäaine+N:elintarvike#lisäaine   N_ASTE  ;
 elintarvikemuovi+N:elin#tarvike#muov   N_RUUVI  ;
 elintarvikemyymälä+N:elintarvike#myymäl N_HÄKKYRÄ  ;
 elintarvike+N:elin#tarvik N_KASTIKE  ;
-elintarvikeoma'|'varaisuus+N:elin#tarvike#oma#varaisuu N_AAKKOSELLISUUS  ;
+elintarvikeomavaraisuus+N:elin#tarvike#oma#varaisuu N_AAKKOSELLISUUS  ;
 elintarviketehdas+N:elintarvike#teh N_TEHDAS  ;
 elintarviketeknologia+N:elin#tarvike#teknologi N_MAKKARA  ;
 elintarviketeollisuus+N:elin#tarvike#teollisuu N_AAKKOSELLISUUS  ;
@@ -7802,7 +7802,7 @@ elintaso+N:elin#taso N_TALO  ;
 elintasopakolainen+N:elin#taso#pakolai   N_AAKKOSTAMINEN  ;
 elintasosairaus+N:elin#taso#sairau N_AAKKOSELLISUUS  ;
 elintasosiipi+N:elin#taso#sii N_KILPI  ;
-elintasoyhteis'|'kunta+N:elin#taso#yhteis#kun N_KUNTA  ;
+elintasoyhteiskunta+N:elin#taso#yhteis#kun N_KUNTA  ;
 elintestamentti+N:elin#testament N_PORTTI  ;
 elintila+N:elin#til N_KIRJA  ;
 elintoiminta+N:elin#toimin N_KUTSUNTA  ;
@@ -7831,11 +7831,11 @@ ellotus+N:ellotu N_VAKUUTUS  ;
 elohiiri+N:elo#hiir    N_HIIRI  ;
 elohopeafulminaatti+N:elohopeafulminaat N_PORTTI  ;
 elohopeahöyrylamppu+N:elohopeahöyry#lamp N_LIPPU  ;
-elohopeailma'|'puntari+N:elo#hopea#ilma#puntar   N_TANKKERI  ;
+elohopeailmapuntari+N:elo#hopea#ilma#puntar   N_TANKKERI  ;
 elohopeakuumemittari+N:elohopea#kuumemittar   N_TANKKERI  ;
 elohopealamppu+N:elo#hopea#lamp N_LIPPU  ;
-elohopealämpö'|'mittari+N:elo#hopea#lämpö#mittar   N_TANKKERI  ;
-elohopeamilli'|'metri+N:elo#hopea#milli#metr    N_TYYLI  ;
+elohopealämpömittari+N:elo#hopea#lämpö#mittar   N_TANKKERI  ;
+elohopeamillimetri+N:elo#hopea#milli#metr    N_TYYLI  ;
 elohopeamyrkytys+N:elo#hopea#myrkyty N_RÄJÄYTYS  ;
 elohopea+N:elo#hope N_SOKEA  ;
 elohopeaparisto+N:elohopea#paristo N_RUIPELO  ;
@@ -8963,7 +8963,7 @@ erisuuruus+N:eri#suuruu N_AAKKOSELLISUUS  ;
 erisäätyisyys+N:erisäätyisyy N_KÖYHYYS  ;
 eritasoisuus+N:eritasoisuu N_AAKKOSELLISUUS  ;
 eritasoliittymä+N:eri#taso#liittym N_HÖPÖTTÄJÄ  ;
-eritasonoja'|'puut+N:eri#taso#noja#pu N_PUUT  ;
+eritasonojapuut+N:eri#taso#noja#pu N_PUUT  ;
 eritasoristeys+N:eri#taso#ristey N_RÄJÄYTYS  ;
 eritelmä+N:eritelm N_HÖPÖTTÄJÄ  ;
 erite+N:erit N_KÄSITE  ;
@@ -19738,7 +19738,7 @@ joukkotyöttömyys+N:joukko#työttömyy N_KÖYHYYS  ;
 joukkovaino+N:joukko#vaino N_TALO  ;
 joukkovakuutus+N:joukko#vakuutu N_VAKUUTUS  ;
 joukkovelkakirjakauppa+N:joukkovelkakirja#kaup N_TIPPA  ;
-joukkovelkakirja'|'laina+N:joukko#velka#kirja#lain N_KIRJA  ;
+joukkovelkakirjalaina+N:joukko#velka#kirja#lain N_KIRJA  ;
 joukkovelkakirja+N:joukko#velka#kirj N_KIRJA  ;
 joukkoviestin+N:joukko#viesti    N_ELIN  ;
 joukkoviestintä+N:joukko#viestin N_KYSYNTÄ  ;
@@ -22285,7 +22285,7 @@ kalasääksi+N:kala#sääks    N_KIVI  ;
 kalasääski+N:kala#sääsk    N_KIVI  ;
 kalatahna+N:kala#tahn N_KIRJA  ;
 kalatalous+N:kala#talou N_AAKKOSELLISUUS  ;
-kalatalousoppi'|'laitos+N:kala#talous#oppi#laito N_VAKUUTUS  ;
+kalatalousoppilaitos+N:kala#talous#oppi#laito N_VAKUUTUS  ;
 kalatie+N:kala#t   N_TIE  ;
 kalatiira+N:kala#tiir N_KIRJA  ;
 kalatiski+N:kala#tisk    N_TYYLI  ;
@@ -23186,7 +23186,7 @@ kansaneläkejärjestelmä+N:kansaneläke#järjestelm N_HÖPÖTTÄJÄ  ;
 kansaneläkeläinen+N:kansan#eläkeläi    N_KYLKIÄINEN  ;
 kansaneläkemaksu+N:kansan#eläke#maksu N_ASU  ;
 kansaneläke+N:kansan#eläk N_LÄÄKE  ;
-kansaneläkevakuutus'|'maksu+N:kansan#eläke#vakuutus#maksu N_ASU  ;
+kansaneläkevakuutusmaksu+N:kansan#eläke#vakuutus#maksu N_ASU  ;
 kansanetymologia+N:kansan#etymologi N_MAKKARA  ;
 kansanheimo+N:kansan#heimo N_TALO  ;
 kansanhiihto+N:kansan#hiih N_VETO  ;
@@ -24878,7 +24878,7 @@ katuliikenne+N:katu#liiken N_KIINNE  ;
 katulyhty+N:katu#lyh N_VETY  ;
 katulähetys+N:katu#lähety N_RÄJÄYTYS  ;
 katulähetystyö+N:katu#lähetys#t   N_YÖ  ;
-katulähetystyön'|'tekijä+N:katu#lähetys#työn#tekij N_HÄKKYRÄ  ;
+katulähetystyöntekijä+N:katu#lähetys#työn#tekij N_HÄKKYRÄ  ;
 katumaasturi+N:katu#maastur   N_TANKKERI  ;
 katumattomuus+N:katumattomuu N_AAKKOSELLISUUS  ;
 katumisoikeus+N:katumis#oikeu N_AAKKOSELLISUUS  ;
@@ -25450,7 +25450,7 @@ kehitysvammainen+N:kehitys#vammai   N_AAKKOSTAMINEN  ;
 kehitysvammaisuus+N:kehitys#vammaisuu N_AAKKOSELLISUUS  ;
 kehitysvika+N:kehitys#vi N_VIKA  ;
 kehitysvirhe+N:kehitys#virhe    N_PISTE  ;
-kehitysyhteistyö'|'ministeri+N:kehitys#yhteis#työ#minister    N_KEHVELI  ;
+kehitysyhteistyöministeri+N:kehitys#yhteis#työ#minister    N_KEHVELI  ;
 kehitysyhteistyö+N:kehitys#yhteis#t   N_YÖ  ;
 kehitysyhtiö+N:kehitys#yhtiö N_HÄIRIÖ  ;
 kehkeymä+N:kehkeym N_HÖPÖTTÄJÄ  ;
@@ -26618,7 +26618,7 @@ keskusteluyhteys+N:keskustelu#yhtey N_KÖYHYYS  ;
 keskustietokone+N:keskus#tietokone   N_ASTE  ;
 keskustoimisto+N:keskus#toimisto N_RUIPELO  ;
 keskustukimies+N:keskus#tuki#mie   N_MIES  ;
-keskusvaalilauta'|'kunta+N:keskus#vaali#lauta#kun N_KUNTA  ;
+keskusvaalilautakunta+N:keskus#vaali#lauta#kun N_KUNTA  ;
 keskusvalta+N:keskus#val N_VALTA  ;
 keskusvaltio+N:keskus#valtio N_TUOMIO  ;
 keskusvalvomo+N:keskus#valvomo N_RUIPELO  ;
@@ -27855,7 +27855,7 @@ kilotonni+N:kilo#tonn   N_RUUVI  ;
 kilovolttiampeeri+N:kilovoltti#ampeer   N_TANKKERI  ;
 kilovoltti+N:kilo#volt N_PORTTI  ;
 kilowatti+N:kilo#wat N_PORTTI  ;
-kilowattitunti'|'mittari+N:kilo#watti#tunti#mittar   N_TANKKERI  ;
+kilowattituntimittari+N:kilo#watti#tunti#mittar   N_TANKKERI  ;
 kilowattitunti+N:kilo#watti#tun N_SOINTI  ;
 kilpa-ajaja+N:kilpa-ajaj N_SOITTAJA  ;
 kilpa-ajo+N:kilpa-ajo N_TALO  ;
@@ -29868,7 +29868,7 @@ kolmivaihejärjestelmä+N:kolmi#vaihe#järjestelm N_HÖPÖTTÄJÄ  ;
 kolmivaihekytkin+N:kolmivaihe#kytki    N_ELIN  ;
 kolmivaihemoottori+N:kolmi#vaihe#moottor   N_TANKKERI  ;
 kolmivaihesähkö+N:kolmi#vaihe#sähkö N_MÖMMÖ  ;
-kolmivaihevaihto'|'virta+N:kolmi#vaihe#vaihto#vir N_KERTA  ;
+kolmivaihevaihtovirta+N:kolmi#vaihe#vaihto#vir N_KERTA  ;
 kolmivaiheverkko+N:kolmi#vaihe#verk N_UKKO  ;
 kolmivaihevirta+N:kolmi#vaihe#vir N_KERTA  ;
 kolmivaljakko+N:kolmi#valjak N_LEPAKKO  ;
@@ -30758,7 +30758,7 @@ korkea-aste+N:korkea-aste   N_ASTE  ;
 korkeajännite+N:korkea#jännite    N_PISTE  ;
 korkeakirkollisuus+N:korkea#kirkollisuu N_AAKKOSELLISUUS  ;
 korkeakouluaste+N:korkea#koulu#aste   N_ASTE  ;
-korkeakouludemo'|'kratia+N:korkea#koulu#demo#krati N_MAKKARA  ;
+korkeakouludemokratia+N:korkea#koulu#demo#krati N_MAKKARA  ;
 korkeakouluneuvosto+N:korkea#koulu#neuvosto N_RUIPELO  ;
 korkeakoulu+N:korkea#koulu N_ASU  ;
 korkeakouluopetus+N:korkea#koulu#opetu N_VAKUUTUS  ;
@@ -31368,10 +31368,10 @@ kotitalousneuvonta+N:koti#talous#neuvon N_KUTSUNTA  ;
 kotitalous+N:koti#talou N_AAKKOSELLISUUS  ;
 kotitalousopettaja+N:koti#talousopettaj N_SOITTAJA  ;
 kotitalousopetus+N:koti#talous#opetu N_VAKUUTUS  ;
-kotitalousoppi'|'laitos+N:koti#talous#oppi#laito N_VAKUUTUS  ;
+kotitalousoppilaitos+N:koti#talous#oppi#laito N_VAKUUTUS  ;
 kotitalousoppi+N:kotitalous#op N_KUPPI  ;
 kotitalousteknikko+N:koti#talous#teknik N_LEPAKKO  ;
-kotitaloustyön'|'tekijä+N:koti#talous#työn#tekij N_HÄKKYRÄ  ;
+kotitaloustyöntekijä+N:koti#talous#työn#tekij N_HÄKKYRÄ  ;
 kotitarkastus+N:koti#tarkastu N_VAKUUTUS  ;
 kotitarvekalastus+N:koti#tarve#kalastu N_VAKUUTUS  ;
 kotitarvekäyttö+N:koti#tarve#käyt N_PÖNTTÖ  ;
@@ -32676,7 +32676,7 @@ kuluttajansuojelu+N:kuluttajan#suojelu N_SEIKKAILU  ;
 kuluttajapolitiikka+N:kuluttaja#politiik N_POLITIIKKA  ;
 kuluttajatutkimus+N:kuluttaja#tutkimu N_VAKUUTUS  ;
 kuluttajavalistus+N:kuluttaja#valistu N_VAKUUTUS  ;
-kuluttajavalituslauta'|'kunta+N:kuluttaja#valitus#lauta#kun N_KUNTA  ;
+kuluttajavalituslautakunta+N:kuluttaja#valitus#lauta#kun N_KUNTA  ;
 kuluttajaväestö+N:kuluttaja#väestö N_JÄÄTELÖ  ;
 kuluttaminen+N:kuluttami   N_AAKKOSTAMINEN  ;
 kulutuselektroniikka+N:kulutus#elektroniik N_POLITIIKKA  ;
@@ -34480,7 +34480,7 @@ kynsiapina+N:kynsi#apin N_MAKKARA  ;
 kynsienhoito+N:kynsien#hoi N_VETO  ;
 kynsiharja+N:kynsi#harj N_KIRJA  ;
 kynsilakanpoiste+N:kynsi#lakan#poiste   N_ASTE  ;
-kynsilakanpoisto'|'aine+N:kynsi#lakan#poisto#aine   N_ASTE  ;
+kynsilakanpoistoaine+N:kynsi#lakan#poisto#aine   N_ASTE  ;
 kynsilakka+N:kynsi#lak N_POLITIIKKA  ;
 kynsilaukka+N:kynsi#lauk N_POLITIIKKA  ;
 kynsileikkuri+N:kynsi#leikkur   N_TANKKERI  ;
@@ -34771,9 +34771,9 @@ kädestäennustaja+N:kädestäennustaj N_SOITTAJA  ;
 kädestäennustaminen+N:kädestäennustami   N_AAKKOSTAMINEN  ;
 kädestäkatsoja+N:kädestäkatsoj N_SOITTAJA  ;
 käenkaalikasvi+N:käenkaali#kasv   N_RUUVI  ;
-käenkaalimustikka'|'tyyppi+N:käen#kaali#mustikka#tyyp N_TYYPPI  ;
+käenkaalimustikkatyyppi+N:käen#kaali#mustikka#tyyp N_TYYPPI  ;
 käenkaali+N:käen#kaal   N_RUUVI  ;
-käenkaalioravan'|'marja'|'tyyppi+N:käen#kaali#oravan#marja#tyyp N_TYYPPI  ;
+käenkaalioravanmarja'|'tyyppi+N:käen#kaali#oravan#marja#tyyp N_TYYPPI  ;
 käenkukka+N:käen#kuk N_LUOKKA  ;
 käenminttu+N:käen#mint N_TORTTU  ;
 käenmuna+N:käen#mun N_SOITTAJA  ;
@@ -35703,7 +35703,7 @@ laahustaminen+N:laahustami   N_AAKKOSTAMINEN  ;
 laahustin+N:laahusti   N_PUHELIN  ;
 laahustus+N:laahustus   #  ;
 laajakaista+N:laajakaist N_KIRJA  ;
-laajakangaselo'|'kuva+N:laaja#kangas#elo#kuv N_SOITTAJA  ;
+laajakangaselokuva+N:laaja#kangas#elo#kuv N_SOITTAJA  ;
 laajakangas+N:laaja#kan N_KANGAS  ;
 laajakantoisuus+N:laaja#kantoisuu N_AAKKOSELLISUUS  ;
 laajakulma+N:laaja#kulm N_SOITTAJA  ;
@@ -40088,7 +40088,7 @@ lomamatkailija+N:loma#matkailij N_MAKKARA  ;
 lomamatka+N:loma#matk N_KIRJA  ;
 lomamökki+N:loma#mök N_HÄKKI  ;
 loma+N:lom N_SOITTAJA  ;
-lomanmääräytymiskuu'|'kausi+N:loman#määräytymis#kuu#kau   N_KAUSI  ;
+lomanmääräytymiskuukausi+N:loman#määräytymis#kuu#kau   N_KAUSI  ;
 lomanmääräytymisvuosi+N:loman#määräytymis#vuo   N_KAUSI  ;
 lomanvietto+N:loman#viet N_HIRTTO  ;
 lomanviettopaikka+N:loman#vietto#paik N_POLITIIKKA  ;
@@ -40924,7 +40924,7 @@ luonnosvaihe+N:luonnos#vaihe   N_ASTE  ;
 luonnotar+N:luonnot N_AJATAR  ;
 luonnottomuus+N:luonnottomuu N_AAKKOSELLISUUS  ;
 luontaiselinkeino+N:luontais#elin#keino N_TALO  ;
-luontaiselinkeino'|'tila+N:luontais#elin#keino#til N_KIRJA  ;
+luontaiselinkeinotila+N:luontais#elin#keino#til N_KIRJA  ;
 luontaisetu+N:luontais#e N_KUITU  ;
 luontaishoitola+N:luontais#hoitol N_MAKKARA  ;
 luontaishoito+N:luontais#hoi N_VETO  ;
@@ -42239,10 +42239,10 @@ maailmanaika+N:maa#ilmana N_AIKA  ;
 maailmancup+N:maa#ilman#cup   N_PUNK  ;
 maailmanennätysaika+N:maa#ilman#ennätysai N_VIKA  ;
 maailmanennätysjuoksu+N:maailmanennätys#juoksu N_ASU  ;
-maailmanennätys'|'mies+N:maa#ilman#ennätys#mie   N_MIES  ;
-maailmanennätys'|'nainen+N:maa#ilman#ennätys#nai   N_AAKKOSTAMINEN  ;
+maailmanennätysmies+N:maa#ilman#ennätys#mie   N_MIES  ;
+maailmanennätysnainen+N:maa#ilman#ennätys#nai   N_AAKKOSTAMINEN  ;
 maailmanennätys+N:maa#ilman#ennäty N_RÄJÄYTYS  ;
-maailmanennätys'|'tulos+N:maa#ilman#ennätys#tulo N_VAKUUTUS  ;
+maailmanennätystulos+N:maa#ilman#ennätys#tulo N_VAKUUTUS  ;
 maailmanensi-ilta+N:maa#ilman#ensi-il N_VALTA  ;
 maailmanhistoria+N:maa#ilman#histori N_MAKKARA  ;
 maailmanjärjestys+N:maa#ilman#järjesty N_RÄJÄYTYS  ;
@@ -42271,16 +42271,16 @@ maailmanloppu+N:maa#ilman#lop N_LIPPU  ;
 maailmanluokka+N:maa#ilman#luok N_LUOKKA  ;
 maailma+N:maa#ilm N_MAKKARA  ;
 maailmanmaine+N:maa#ilman#maine   N_ASTE  ;
-maailmanmarkkina'|'hinta+N:maa#ilman#markkina#hin N_KUTSUNTA  ;
+maailmanmarkkinahinta+N:maa#ilman#markkina#hin N_KUTSUNTA  ;
 maailmanmarkkinat+N:maa#ilman#markkin N_MARKKINAT  ;
 maailmanmatkaaja+N:maa#ilman#matkaaj N_SOITTAJA  ;
 maailmanmenestys+N:maa#ilman#menesty N_RÄJÄYTYS  ;
 maailmanmestari+N:maa#ilman#mestar   N_TANKKERI  ;
-maailmanmestaruus'|'joukkue+N:maa#ilman#mestaruus#joukkue   N_ASTE  ;
-maailmanmestaruus'|'kilpailu+N:maa#ilman#mestaruus#kilpailu N_SEIKKAILU  ;
-maailmanmestaruus'|'kisa+N:maa#ilman#mestaruus#kis N_KIRJA  ;
+maailmanmestaruusjoukkue+N:maa#ilman#mestaruus#joukkue   N_ASTE  ;
+maailmanmestaruuskilpailu+N:maa#ilman#mestaruus#kilpailu N_SEIKKAILU  ;
+maailmanmestaruuskisa+N:maa#ilman#mestaruus#kis N_KIRJA  ;
 maailmanmestaruus+N:maa#ilman#mestaruu N_AAKKOSELLISUUS  ;
-maailmanmestaruus'|'ottelu+N:maa#ilman#mestaruus#ottelu N_SEIKKAILU  ;
+maailmanmestaruusottelu+N:maa#ilman#mestaruus#ottelu N_SEIKKAILU  ;
 maailmanmielisyys+N:maa#ilman#mielisyy N_KÖYHYYS  ;
 maailmanmies+N:maa#ilman#mie   N_MIES  ;
 maailmanmusiikki+N:maa#ilman#musiik N_LOKKI  ;
@@ -42290,7 +42290,7 @@ maailmannäyttely+N:maa#ilman#näyttely N_VEHKEILY  ;
 maailmanpalo+N:maa#ilman#palo N_TALO  ;
 maailmanparantaja+N:maa#ilman#parantaj N_SOITTAJA  ;
 maailmanpatsas+N:maa#ilman#patsa N_PATSAS  ;
-maailmanperintö'|'luettelo+N:maa#ilman#perintö#luettelo N_RUIPELO  ;
+maailmanperintöluettelo+N:maa#ilman#perintö#luettelo N_RUIPELO  ;
 maailmanperintö+N:maa#ilman#perin N_KÄÄNTÖ  ;
 maailmanpolitiikka+N:maa#ilman#politiik N_POLITIIKKA  ;
 maailmanpyörä+N:maa#ilman#pyör N_HÖPÖTTÄJÄ  ;
@@ -42305,7 +42305,7 @@ maailmantilasto+N:maailman#tilasto N_RUIPELO  ;
 maailmantuska+N:maa#ilman#tusk N_SOITTAJA  ;
 maailmantähti+N:maa#ilman#täh N_LEHTI  ;
 maailmanuskonto+N:maa#ilman#uskon N_TUNTO  ;
-maailmanvallan'|'kumous+N:maa#ilman#vallan#kumou N_VAKUUTUS  ;
+maailmanvallankumous+N:maa#ilman#vallan#kumou N_VAKUUTUS  ;
 maailmanvalta+N:maa#ilman#val N_VALTA  ;
 maailmanympärimatka+N:maailmanympärimatk N_KIRJA  ;
 maailmanympäripurjehdus+N:maa#ilman#ympäripurjehdu N_VAKUUTUS  ;
@@ -42612,7 +42612,7 @@ maanvaltaaja+N:maan#valtaaj N_SOITTAJA  ;
 maanvieremä+N:maan#vierem N_HÖPÖTTÄJÄ  ;
 maanviljelijä+N:maan#viljelij N_HÄKKYRÄ  ;
 maanviljelijäväestö+N:maan#viljelijä#väestö N_JÄÄTELÖ  ;
-maanviljelyelin'|'keino+N:maan#viljely#elin#keino N_TALO  ;
+maanviljelyelinkeino+N:maan#viljely#elin#keino N_TALO  ;
 maanviljelykulttuuri+N:maan#viljely#kulttuur   N_TANKKERI  ;
 maanviljelymaa+N:maan#viljely#ma N_MAA  ;
 maanviljely+N:maan#viljely N_VEHKEILY  ;
@@ -42766,8 +42766,8 @@ maatalousala+N:maa#talous#al N_KIRJA  ;
 maatalousekonomia+N:maa#talous#ekonomi N_MAKKARA  ;
 maatalouselinkeino+N:maatalous#elin#keino N_TALO  ;
 maatalouskauppa+N:maa#talous#kaup N_TIPPA  ;
-maatalouskirjan'|'pito+N:maa#talous#kirjan#pi N_VETO  ;
-maatalouskone'|'asentaja+N:maa#talous#kone#asentaj N_SOITTAJA  ;
+maatalouskirjanpito+N:maa#talous#kirjan#pi N_VETO  ;
+maatalouskoneasentaja+N:maa#talous#kone#asentaj N_SOITTAJA  ;
 maatalouskone+N:maa#talous#kone   N_ASTE  ;
 maatalouslomittaja+N:maa#talous#lomittaj N_SOITTAJA  ;
 maatalousmaa+N:maa#talous#ma N_MAA  ;
@@ -42777,7 +42777,7 @@ maatalousneuvoja+N:maa#talous#neuvoj N_SOITTAJA  ;
 maatalousneuvonta+N:maa#talous#neuvon N_KUTSUNTA  ;
 maatalous+N:maa#talou N_AAKKOSELLISUUS  ;
 maatalousnäyttely+N:maa#talous#näyttely N_VEHKEILY  ;
-maatalousoppi'|'laitos+N:maa#talous#oppi#laito N_VAKUUTUS  ;
+maatalousoppilaitos+N:maa#talous#oppi#laito N_VAKUUTUS  ;
 maatalouspolitiikka+N:maa#talous#politiik N_POLITIIKKA  ;
 maatalousseura+N:maa#talous#seur N_KIRJA  ;
 maatalousseutu+N:maa#talous#seu N_KUITU  ;
@@ -42791,7 +42791,7 @@ maataloustuote+N:maa#talous#tuot N_LAITE  ;
 maataloustuottaja+N:maa#talous#tuottaj N_SOITTAJA  ;
 maataloustyöläinen+N:maatalous#työläi    N_KYLKIÄINEN  ;
 maataloustyö+N:maa#talous#t   N_YÖ  ;
-maataloustyön'|'tekijä+N:maa#talous#työn#tekij N_HÄKKYRÄ  ;
+maataloustyöntekijä+N:maa#talous#työn#tekij N_HÄKKYRÄ  ;
 maatalousvaliokunta+N:maatalous#valio#kun N_KUNTA  ;
 maatalousväestö+N:maatalousväestö N_MÖMMÖ  ;
 maatalousväestö+N:maatalous#väestö N_JÄÄTELÖ  ;
@@ -44878,7 +44878,7 @@ merenkulkumaksu+N:meren#kulku#maksu N_ASU  ;
 merenkulkuneuvos+N:meren#kulku#neuvo N_VAKUUTUS  ;
 merenkulku+N:meren#kul N_TIKKU  ;
 merenkulkuoikeus+N:merenkulku#oikeu N_AAKKOSELLISUUS  ;
-merenkulkuoppi'|'laitos+N:meren#kulku#oppi#laito N_VAKUUTUS  ;
+merenkulkuoppilaitos+N:meren#kulku#oppi#laito N_VAKUUTUS  ;
 merenkulkusäännöt+N:meren#kulku#sään N_SÄÄNNÖT  ;
 merenkulkutaito+N:meren#kulku#tai N_VETO  ;
 merenkyntäjä+N:meren#kyntäj N_HÖPÖTTÄJÄ  ;
@@ -45804,7 +45804,7 @@ mielijohde+N:mieli#joh N_JOHDE  ;
 mielikirjailija+N:mieli#kirjailij N_MAKKARA  ;
 mielikirja+N:mieli#kirj N_KIRJA  ;
 mielikuvaelämä+N:mielikuva#eläm N_HÖPÖTTÄJÄ  ;
-mielikuvamaa'|'ilma+N:mieli#kuva#maa#ilm N_MAKKARA  ;
+mielikuvamaailma+N:mieli#kuva#maa#ilm N_MAKKARA  ;
 mielikuvamainonta+N:mieli#kuva#mainon N_KUTSUNTA  ;
 mielikuva+N:mieli#kuv N_SOITTAJA  ;
 mielikuvituksellisuus+N:mieli#kuvituksellisuu N_AAKKOSELLISUUS  ;
@@ -45812,7 +45812,7 @@ mielikuvituksettomuus+N:mielikuvituksettomuu N_AAKKOSELLISUUS  ;
 mielikuvituseläin+N:mielikuvitus#eläi    N_ELIN  ;
 mielikuvitushenkilö+N:mielikuvitus#henkilö N_JÄÄTELÖ  ;
 mielikuvitusleikki+N:mielikuvitus#leik N_HÄKKI  ;
-mielikuvitusmaa'|'ilma+N:mieli#kuvitus#maa#ilm N_MAKKARA  ;
+mielikuvitusmaailma+N:mieli#kuvitus#maa#ilm N_MAKKARA  ;
 mielikuvitus+N:mieli#kuvitu N_VAKUUTUS  ;
 mielikuvitusolento+N:mielikuvitus#olen N_TUNTO  ;
 mielinen+N:mieli    N_KYLKIÄINEN  ;
@@ -46755,7 +46755,7 @@ moolokki+N:moolok N_LOKKI  ;
 moonilainen+N:moonilai   N_AAKKOSTAMINEN  ;
 moonilaisuus+N:moonilaisuu N_AAKKOSELLISUUS  ;
 mooseksenpalavapensas+N:mooseksenpalavapensa N_PATSAS  ;
-moottoriajoneuvo'|'liikenne+N:moottori#ajo#neuvo#liiken N_KIINNE  ;
+moottoriajoneuvoliikenne+N:moottori#ajo#neuvo#liiken N_KIINNE  ;
 moottoriajoneuvo+N:moottori#ajo#neuvo N_TALO  ;
 moottorialus+N:moottori#alu N_VAKUUTUS  ;
 moottorijahti+N:moottori#jah N_TAUTI  ;
@@ -47403,7 +47403,7 @@ muotokuvamaalari+N:muoto#kuva#maalar   N_TANKKERI  ;
 muotokuvamaalaus+N:muoto#kuva#maalau N_VAKUUTUS  ;
 muotokuva+N:muoto#kuv N_SOITTAJA  ;
 muotokuvanpaljastus+N:muoto#kuvan#paljastu N_VAKUUTUS  ;
-muotokuvanpaljastus'|'tilaisuus+N:muoto#kuvan#paljastus#tilaisuu N_AAKKOSELLISUUS  ;
+muotokuvanpaljastustilaisuus+N:muoto#kuvan#paljastus#tilaisuu N_AAKKOSELLISUUS  ;
 muotokuvataide+N:muoto#kuva#tai N_JOHDE  ;
 muotolaskos+N:muoto#lasko N_VAKUUTUS  ;
 muotoleikkaus+N:muoto#leikkau N_VAKUUTUS  ;
@@ -47844,7 +47844,7 @@ mustavalkotelevisio+N:mustavalkotelevisio N_TUOMIO  ;
 mustavalkovalokuvaus+N:mustavalkovalokuvau N_VAKUUTUS  ;
 mustavaris+N:musta#vari   N_VAKUUTUS  ;
 mustavesikuume+N:mustavesi#kuume   N_ASTE  ;
-mustaviinimarja'|'mehu+N:musta#viini#marja#mehu N_ASU  ;
+mustaviinimarjamehu+N:musta#viini#marja#mehu N_ASU  ;
 mustaviinimarja+N:mustaviinimarj N_KIRJA  ;
 mustekala+N:muste#kal N_KIRJA  ;
 mustekasetti+N:muste#kaset N_PORTTI  ;
@@ -51784,15 +51784,15 @@ oikeistovoimat+N:oikeisto#voim N_JUHLAT  ;
 oikeudenala+N:oikeuden#al N_KIRJA  ;
 oikeudenhoito+N:oikeuden#hoi N_VETO  ;
 oikeudenistunto+N:oikeuden#istun N_TUNTO  ;
-oikeudenkäyntiasia'|'kirja+N:oikeuden#käynti#asia#kirj N_KIRJA  ;
-oikeudenkäyntiasia'|'mies+N:oikeuden#käynti#asia#mie   N_MIES  ;
+oikeudenkäyntiasiakirja+N:oikeuden#käynti#asia#kirj N_KIRJA  ;
+oikeudenkäyntiasiamies+N:oikeuden#käynti#asia#mie   N_MIES  ;
 oikeudenkäyntiavustaja+N:oikeuden#käynti#avustaj N_SOITTAJA  ;
 oikeudenkäyntikirjelmä+N:oikeudenkäynti#kirjelm N_HÖPÖTTÄJÄ  ;
 oikeudenkäyntikulut+N:oikeuden#käynti#kulu N_HOUSUT  ;
 oikeudenkäyntimenettely+N:oikeudenkäynti#menettely N_VEHKEILY  ;
 oikeudenkäynti+N:oikeuden#käyn N_VIENTI  ;
 oikeudenkäyntiprosessi+N:oikeudenkäynti#prosess   N_RUUVI  ;
-oikeudenkäyntivalta'|'kirja+N:oikeuden#käynti#valta#kirj N_KIRJA  ;
+oikeudenkäyntivaltakirja+N:oikeuden#käynti#valta#kirj N_KIRJA  ;
 oikeudenkäyttöalue+N:oikeudenkäyttö#alue   N_ASTE  ;
 oikeudenkäyttö+N:oikeuden#käyt N_PÖNTTÖ  ;
 oikeudenloukkaus+N:oikeuden#loukkau N_VAKUUTUS  ;
@@ -51812,7 +51812,7 @@ oikeusasia+N:oikeus#asi N_MAKKARA  ;
 oikeusaste+N:oikeus#aste   N_ASTE  ;
 oikeusavustaja+N:oikeus#avustaj N_SOITTAJA  ;
 oikeushallinto+N:oikeus#hallin N_TUNTO  ;
-oikeushammaslääke'|'tiede+N:oikeus#hammas#lääke#tie N_KIDE  ;
+oikeushammaslääketiede+N:oikeus#hammas#lääke#tie N_KIDE  ;
 oikeushenkilö+N:oikeus#henkilö N_JÄÄTELÖ  ;
 oikeushistoria+N:oikeus#histori N_MAKKARA  ;
 oikeushyvä+N:oikeus#hyv N_HÖPÖTTÄJÄ  ;
@@ -53726,7 +53726,7 @@ paineastia+N:paine#asti N_MAKKARA  ;
 paineensäädin+N:paineen#sää N_SÄÄDIN  ;
 paineentasaus+N:paineen#tasau N_VAKUUTUS  ;
 painehaava+N:paine#haav N_KIRJA  ;
-paineilmahengitys'|'laite+N:paine#ilma#hengitys#lait N_LAITE  ;
+paineilmahengityslaite+N:paine#ilma#hengitys#lait N_LAITE  ;
 paineilmajarru+N:paine#ilma#jarru N_ASU  ;
 paineilmalaite+N:paine#ilma#lait N_LAITE  ;
 paineilmanaulain+N:paine#ilma#naulai   N_PUHELIN  ;
@@ -55221,7 +55221,7 @@ paristonauhuri+N:paristo#nauhur   N_TANKKERI  ;
 paristo+N:paristo N_RUIPELO  ;
 paristoradio+N:paristo#radio N_TUOMIO  ;
 parisuhde+N:parisuh N_JOHDE  ;
-parisuhdeväki'|'valta+N:pari#suhde#väki#val N_VALTA  ;
+parisuhdeväkivalta+N:pari#suhde#väki#val N_VALTA  ;
 parisänky+N:pari#sän N_SÄNKY  ;
 paritalo+N:pari#talo N_TALO  ;
 pariteettibitti+N:pariteetti#bit N_SKEITTI  ;
@@ -56750,7 +56750,7 @@ perusturva+N:perus#turv N_SOITTAJA  ;
 perustuslaillisuus+N:perustus#laillisuu N_AAKKOSELLISUUS  ;
 perustuslakikokous+N:perustuslaki#kokou N_VAKUUTUS  ;
 perustuslaki+N:perustus#la N_LAKI  ;
-perustuslakivalio'|'kunta+N:perustus#laki#valio#kun N_KUNTA  ;
+perustuslakivaliokunta+N:perustus#laki#valio#kun N_KUNTA  ;
 perustus+N:perustu N_VAKUUTUS  ;
 perustustyö+N:perustus#t   N_YÖ  ;
 perustutkimus+N:perus#tutkimu N_VAKUUTUS  ;
@@ -59863,7 +59863,7 @@ potilaskertomus+N:potilas#kertomu N_VAKUUTUS  ;
 potilas+N:potila N_PATSAS  ;
 potilaspaikka+N:potilas#paik N_POLITIIKKA  ;
 potilasturvallisuus+N:potilasturvallisuu N_AAKKOSELLISUUS  ;
-potilasvahinkolauta'|'kunta+N:potilas#vahinko#lauta#kun N_KUNTA  ;
+potilasvahinkolautakunta+N:potilas#vahinko#lauta#kun N_KUNTA  ;
 potilasvahinko+N:potilas#vahin N_RUNKO  ;
 potilasvakuutus+N:potilas#vakuutu N_VAKUUTUS  ;
 potkaisija+N:potkaisij N_MAKKARA  ;
@@ -60986,7 +60986,7 @@ pullahiiri+N:pulla#hiir    N_HIIRI  ;
 pullajalka+N:pulla#jal N_POLITIIKKA  ;
 pullakahvi+N:pulla#kahv   N_RUUVI  ;
 pullamössö+N:pulla#mössö N_MÖMMÖ  ;
-pullamössösuku'|'polvi+N:pulla#mössö#suku#polv   N_ONNI  ;
+pullamössösukupolvi+N:pulla#mössö#suku#polv   N_ONNI  ;
 pulla+N:pull N_SOITTAJA  ;
 pullapitko+N:pulla#pitko N_TALO  ;
 pullasorsa+N:pulla#sors N_SOITTAJA  ;
@@ -62172,7 +62172,7 @@ puutarhanhoito+N:puu#tarhan#hoi N_VETO  ;
 puutarha+N:puu#tarh N_KIRJA  ;
 puutarhanviljelijä+N:puutarhan#viljelij N_HÄKKYRÄ  ;
 puutarhanviljely+N:puu#tarhan#viljely N_VEHKEILY  ;
-puutarhaoppi'|'laitos+N:puu#tarha#oppi#laito N_VAKUUTUS  ;
+puutarhaoppilaitos+N:puu#tarha#oppi#laito N_VAKUUTUS  ;
 puutarhapalsta+N:puu#tarha#palst N_KIRJA  ;
 puutarhapenkki+N:puu#tarha#penk N_HÄKKI  ;
 puutarhapöytä+N:puu#tarha#pöy N_PÖYTÄ  ;
@@ -62181,7 +62181,7 @@ puutarhasuunnittelija+N:puu#tarha#suunnittelij N_MAKKARA  ;
 puutarhatalous+N:puu#tarha#talou N_AAKKOSELLISUUS  ;
 puutarhatraktori+N:puu#tarha#traktor   N_TANKKERI  ;
 puutarhatuoli+N:puu#tarha#tuol   N_RUUVI  ;
-puutarhatyö'|'kalu+N:puu#tarha#työ#kalu N_ASU  ;
+puutarhatyökalu+N:puu#tarha#työ#kalu N_ASU  ;
 puutarhatyö+N:puu#tarha#t   N_YÖ  ;
 puutarhavadelma+N:puu#tarha#vadelm N_SOITTAJA  ;
 puutarhavattu+N:puu#tarha#vat N_TORTTU  ;
@@ -64332,7 +64332,7 @@ rakennuspiirustus+N:rakennus#piirustu N_VAKUUTUS  ;
 rakennuspohja+N:rakennus#pohj N_SOITTAJA  ;
 rakennuspuu+N:rakennus#pu N_PUU  ;
 rakennuspuuseppä+N:rakennus#puu#sep N_SEPPÄ  ;
-rakennuspuusepän'|'teollisuus+N:rakennus#puu#sepän#teollisuu N_AAKKOSELLISUUS  ;
+rakennuspuusepänteollisuus+N:rakennus#puu#sepän#teollisuu N_AAKKOSELLISUUS  ;
 rakennusrasite+N:rakennus#rasit N_LAITE  ;
 rakennusryhmä+N:rakennus#ryhm N_HÖPÖTTÄJÄ  ;
 rakennussarja+N:rakennus#sarj N_KIRJA  ;
@@ -65135,7 +65135,7 @@ rautatammi+N:rauta#tamm   N_ONNI  ;
 rautatavara+N:rauta#tavar N_MAKKARA  ;
 rautatehdas+N:rauta#teh N_TEHDAS  ;
 rautateline+N:rauta#teline    N_PISTE  ;
-rautatieaika'|'taulu+N:rauta#tie#aika#taulu N_ASU  ;
+rautatieaikataulu+N:rauta#tie#aika#taulu N_ASU  ;
 rautatieasema+N:rauta#tie#asem N_SOITTAJA  ;
 rautatiekalusto+N:rauta#tie#kalusto N_TALO  ;
 rautatiekisko+N:rautatie#kisko N_TALO  ;
@@ -67886,7 +67886,7 @@ ruumen+N:ruumen   N_JOUTSEN  ;
 ruumiillistuma+N:ruumiillistum N_SOITTAJA  ;
 ruumiillisuus+N:ruumiillisuu N_AAKKOSELLISUUS  ;
 ruumiinavaus+N:ruumiin#avau N_VAKUUTUS  ;
-ruumiinavauspöytä'|'kirja+N:ruumiin#avaus#pöytä#kirj N_KIRJA  ;
+ruumiinavauspöytäkirja+N:ruumiin#avaus#pöytä#kirj N_KIRJA  ;
 ruumiinhaju+N:ruumiin#haju N_ASU  ;
 ruumiinharjoitus+N:ruumiin#harjoitu N_VAKUUTUS  ;
 ruumiinjäsen+N:ruumiin#jäsen    N_SIEMEN  ;
@@ -68902,7 +68902,7 @@ sairaanhoitolasku+N:sairaanhoito#lasku N_ASU  ;
 sairaanhoito+N:sairaan#hoi N_VETO  ;
 sairaanhoitoväline+N:sairaanhoito#väline    N_PISTE  ;
 sairaankuljetusauto+N:sairaan#kuljetus#auto N_TALO  ;
-sairaankuljetuslento'|'kone+N:sairaan#kuljetus#lento#kone   N_ASTE  ;
+sairaankuljetuslentokone+N:sairaan#kuljetus#lento#kone   N_ASTE  ;
 sairaankuljetuslento+N:sairaan#kuljetus#len N_TUNTO  ;
 sairaankuljetus+N:sairaan#kuljetu N_VAKUUTUS  ;
 sairaansija+N:sairaan#sij N_KIRJA  ;
@@ -71164,7 +71164,7 @@ seuranäytelmä+N:seura#näytelm N_HÖPÖTTÄJÄ  ;
 seuranäyttämö+N:seura#näyttämö N_JÄÄTELÖ  ;
 seuraottelu+N:seura#ottelu N_SEIKKAILU  ;
 seurapeli+N:seura#pel    N_TYYLI  ;
-seurapiiriavio'|'liitto+N:seura#piiri#avio#liit N_HIRTTO  ;
+seurapiiriavioliitto+N:seura#piiri#avio#liit N_HIRTTO  ;
 seurapiirihai+N:seurapiiriha N_HAI  ;
 seurapiirihenkilö+N:seurapiiri#henkilö N_JÄÄTELÖ  ;
 seurapiirijulkkis+N:seurapiiri#julkki   N_VAKUUTUS  ;
@@ -71633,7 +71633,7 @@ siirtolohkare+N:siirto#lohkare   N_ASTE  ;
 siirtomaajoukot+N:siirto#maa#jouk N_JOUKOT  ;
 siirtomaa+N:siirto#ma N_MAA  ;
 siirtomaasota+N:siirto#maa#so N_SOTA  ;
-siirtomaatavara'|'kauppa+N:siirto#maa#tavara#kaup N_TIPPA  ;
+siirtomaatavarakauppa+N:siirto#maa#tavara#kaup N_TIPPA  ;
 siirtomaatavara+N:siirto#maa#tavar N_MAKKARA  ;
 siirtomaatyyli+N:siirto#maa#tyyl    N_TYYLI  ;
 siirtomaavalta+N:siirto#maa#val N_VALTA  ;
@@ -71810,7 +71810,7 @@ sikala+N:sikal N_MAKKARA  ;
 sikalauma+N:sika#laum N_KIRJA  ;
 sikamaisuus+N:sikamaisuu N_AAKKOSELLISUUS  ;
 sikamokka+N:sika#mok N_LUOKKA  ;
-sikanautajauhe'|'liha+N:sika#nauta#jauhe#lih N_KIRJA  ;
+sikanautajauheliha+N:sika#nauta#jauhe#lih N_KIRJA  ;
 sikanauta+N:sika#nau N_PATA  ;
 sika+N:si N_VIKA  ;
 sikapossu+N:sika#possu N_ASU  ;
@@ -73057,7 +73057,7 @@ sivutoimi+N:sivu#toi   N_TAIMI  ;
 sivuttaispito+N:sivuttais#pi N_VETO  ;
 sivuttaissiirtymä+N:sivuttais#siirtym N_HÖPÖTTÄJÄ  ;
 sivutulo+N:sivu#tulo N_TALO  ;
-sivutulovero'|'kortti+N:sivu#tulo#vero#kort N_PORTTI  ;
+sivutuloverokortti+N:sivu#tulo#vero#kort N_PORTTI  ;
 sivutuomari+N:sivu#tuomar   N_TANKKERI  ;
 sivutuote+N:sivu#tuot N_LAITE  ;
 sivutus+N:sivutu N_VAKUUTUS  ;
@@ -74048,7 +74048,7 @@ sotaratsu+N:sota#ratsu N_ASU  ;
 sotaretki+N:sota#retk    N_KIVI  ;
 sotarikollinen+N:sota#rikolli   N_AAKKOSTAMINEN  ;
 sotarikos+N:sota#riko N_VAKUUTUS  ;
-sotarikostuomio'|'istuin+N:sota#rikos#tuomio#istui   N_PUHELIN  ;
+sotarikostuomioistuin+N:sota#rikos#tuomio#istui   N_PUHELIN  ;
 sotaristi+N:sota#rist    N_TYYLI  ;
 sotaromaani+N:sota#romaan   N_RUUVI  ;
 sotaruno+N:sota#runo N_TALO  ;
@@ -75081,14 +75081,14 @@ suku+N:su N_LUKU  ;
 sukunäkö+N:suku#nä N_NÄKÖ  ;
 sukuoikeus+N:suku#oikeu N_AAKKOSELLISUUS  ;
 sukuperä+N:suku#per N_HÖPÖTTÄJÄ  ;
-sukupolvenvaihdos'|'eläke+N:suku#polven#vaihdos#eläk N_LÄÄKE  ;
+sukupolvenvaihdoseläke+N:suku#polven#vaihdos#eläk N_LÄÄKE  ;
 sukupolvenvaihdos+N:suku#polven#vaihdo N_VAKUUTUS  ;
 sukupolvenvuorottelu+N:suku#polven#vuorottelu N_SEIKKAILU  ;
 sukupolvi+N:suku#polv   N_ONNI  ;
 sukupuolenmääräytyminen+N:suku#puolen#määräytymi    N_KYLKIÄINEN  ;
 sukupuolenvaihdosleikkaus+N:sukupuolenvaihdos#leikkau N_VAKUUTUS  ;
 sukupuolenvaihdos+N:sukupuolen#vaihdo N_VAKUUTUS  ;
-sukupuolenvaihto'|'leikkaus+N:suku#puolen#vaihto#leikkau N_VAKUUTUS  ;
+sukupuolenvaihtoleikkaus+N:suku#puolen#vaihto#leikkau N_VAKUUTUS  ;
 sukupuolettomuus+N:sukupuolettomuu N_AAKKOSELLISUUS  ;
 sukupuoliakti+N:suku#puoli#akt   N_RUUVI  ;
 sukupuoliasiat+N:suku#puoli#asi N_MARKKINAT  ;
@@ -75431,8 +75431,8 @@ suojakerroin+N:suoja#ker N_KERROIN  ;
 suojakerros+N:suoja#kerro N_VAKUUTUS  ;
 suojakilpi+N:suoja#kil N_KILPI  ;
 suojakoroke+N:suoja#korok N_KASTIKE  ;
-suojakosketinpisto'|'rasia+N:suoja#kosketin#pisto#rasi N_MAKKARA  ;
-suojakosketinpisto'|'tulppa+N:suoja#kosketin#pisto#tulp N_KUOPPA  ;
+suojakosketinpistorasia+N:suoja#kosketin#pisto#rasi N_MAKKARA  ;
+suojakosketinpistotulppa+N:suoja#kosketin#pisto#tulp N_KUOPPA  ;
 suojakotelo+N:suoja#kotelo N_RUIPELO  ;
 suojakupu+N:suoja#ku N_APU  ;
 suojakypärä+N:suoja#kypär N_HÖPÖTTÄJÄ  ;
@@ -77296,7 +77296,7 @@ sähköpaimen+N:sähkö#paimen   N_JOUTSEN  ;
 sähköpaistinpannu+N:sähkö#paistinpannu N_ASU  ;
 sähköpari+N:sähkö#par   N_RUUVI  ;
 sähköparisto+N:sähkö#paristo N_RUIPELO  ;
-sähköparranajo'|'kone+N:sähkö#parran#ajo#kone   N_ASTE  ;
+sähköparranajokone+N:sähkö#parran#ajo#kone   N_ASTE  ;
 sähköpatteri+N:sähkö#patter   N_TANKKERI  ;
 sähköpeitto+N:sähkö#peit N_HIRTTO  ;
 sähköpiano+N:sähkö#piano N_TALO  ;
@@ -78707,7 +78707,7 @@ talonostaja+N:talon#ostaj N_SOITTAJA  ;
 talonpaikka+N:talon#paik N_POLITIIKKA  ;
 talonpito+N:talon#pi N_VETO  ;
 talonpoikaisarkkitehtuuri+N:talon#poikais#arkkitehtuur   N_RUUVI  ;
-talonpoikaishuone'|'kalu+N:talon#poikais#huone#kalu N_ASU  ;
+talonpoikaishuonekalu+N:talon#poikais#huone#kalu N_ASU  ;
 talonpoikaisjohtaja+N:talon#poikais#johtaj N_SOITTAJA  ;
 talonpoikaisjärki+N:talon#poikais#jär N_JÄRKI  ;
 talonpoikaiskapina+N:talonpoikais#kapin N_MAKKARA  ;
@@ -80327,7 +80327,7 @@ televerkko+N:tele#verk N_UKKO  ;
 televiestintä+N:tele#viestin N_KYSYNTÄ  ;
 televisioantenni+N:tele#visio#antenn   N_TANKKERI  ;
 televisioasema+N:tele#visio#asem N_SOITTAJA  ;
-televisioelo'|'kuva+N:tele#visio#elo#kuv N_SOITTAJA  ;
+televisioelokuva+N:tele#visio#elo#kuv N_SOITTAJA  ;
 televisioesiintyjä+N:tele#visio#esiintyj N_HÖPÖTTÄJÄ  ;
 televisioesiintyminen+N:tele#visio#esiintymi    N_KYLKIÄINEN  ;
 televisioevankelismi+N:televisioevankelism   N_RUUVI  ;
@@ -80374,7 +80374,7 @@ televisiouutiset+N:tele#visio#uuti N_RAPPUSET  ;
 televisiovalvonta+N:tele#visio#valvon N_KUTSUNTA  ;
 televisiovastaanotin+N:tele#visio#vastaanot N_SUODATIN  ;
 televisioverkko+N:tele#visio#verk N_UKKO  ;
-televisioväki'|'valta+N:tele#visio#väki#val N_VALTA  ;
+televisioväkivalta+N:tele#visio#väki#val N_VALTA  ;
 televisioyhtiö+N:tele#visio#yhtiö N_HÄIRIÖ  ;
 telex+N:telex    N_ZEN  ;
 teleyhteys+N:tele#yhtey N_KÖYHYYS  ;
@@ -80885,7 +80885,7 @@ teräväjärkisyys+N:terävä#järkisyy N_KÖYHYYS  ;
 teräväkatseisuus+N:terävä#katseisuu N_AAKKOSELLISUUS  ;
 teräväkielisyys+N:terävä#kielisyy N_KÖYHYYS  ;
 terävänäköisyys+N:terävä#näköisyy N_KÖYHYYS  ;
-teräväpiirtotele'|'visio+N:terävä#piirto#tele#visio N_TUOMIO  ;
+teräväpiirtotelevisio+N:terävä#piirto#tele#visio N_TUOMIO  ;
 teräväsanaisuus+N:terävä#sanaisuu N_AAKKOSELLISUUS  ;
 teräväsilmäisyys+N:terävä#silmäisyy N_KÖYHYYS  ;
 tesaurus+N:tesauru N_VAKUUTUS  ;
@@ -81231,7 +81231,7 @@ tietokonejärjestelmä+N:tietokone#järjestelm N_HÖPÖTTÄJÄ  ;
 tietokonekammo+N:tietokone#kammo N_TALO  ;
 tietokonekauppa+N:tietokone#kaup N_TIPPA  ;
 tietokonekauppias+N:tietokone#kauppia N_PATSAS  ;
-tietokonekerros'|'kuvaus+N:tieto#kone#kerros#kuvau N_VAKUUTUS  ;
+tietokonekerroskuvaus+N:tieto#kone#kerros#kuvau N_VAKUUTUS  ;
 tietokonekäsittely+N:tieto#kone#käsittely N_VEHKEILY  ;
 tietokoneladonta+N:tieto#kone#ladon N_KUTSUNTA  ;
 tietokonelaite+N:tietokone#lait N_LAITE  ;
@@ -81272,7 +81272,7 @@ tietoliikennejärjestelmä+N:tietoliikenne#järjestelm N_HÖPÖTTÄJÄ  ;
 tietoliikenne+N:tieto#liiken N_KIINNE  ;
 tietoliikenneprotokolla+N:tietoliikenne#protokoll N_SOITTAJA  ;
 tietoliikennesatelliitti+N:tieto#liikenne#satelliit N_PORTTI  ;
-tietoliikenneteko'|'kuu+N:tieto#liikenne#teko#ku N_PUU  ;
+tietoliikennetekokuu+N:tieto#liikenne#teko#ku N_PUU  ;
 tietoliikenneyhteys+N:tietoliikenne#yhtey N_KÖYHYYS  ;
 tietolähde+N:tieto#läh N_KIDE  ;
 tietomurto+N:tieto#mur N_SIIRTO  ;
@@ -82916,7 +82916,7 @@ tuhahdus+N:tuhahdu N_VAKUUTUS  ;
 tuhahtaminen+N:tuhahtami   N_AAKKOSTAMINEN  ;
 tuhahtelija+N:tuhahtelij N_MAKKARA  ;
 tuhannesbiljoonasosa+N:tuhannesbiljoonasos N_SOITTAJA  ;
-tuhannesosamilli'|'metri+N:tuhannes#osa#milli#metr    N_TYYLI  ;
+tuhannesosamillimetri+N:tuhannes#osa#milli#metr    N_TYYLI  ;
 tuhannesosa+N:tuhannes#os N_SOITTAJA  ;
 tuhaterotin+N:tuhaterot N_SUODATIN  ;
 tuhatjalkainen+N:tuhatjalkai   N_AAKKOSTAMINEN  ;
@@ -83776,7 +83776,7 @@ tuomioistuinmenettely+N:tuomio#istuin#menettely N_VEHKEILY  ;
 tuomioistuin+N:tuomio#istui   N_PUHELIN  ;
 tuomiokapituli+N:tuomio#kapitul   N_RUUVI  ;
 tuomiokirkko+N:tuomio#kirk N_UKKO  ;
-tuomiokirkkoseura'|'kunta+N:tuomio#kirkko#seura#kun N_KUNTA  ;
+tuomiokirkkoseurakunta+N:tuomio#kirkko#seura#kun N_KUNTA  ;
 tuomiokunta+N:tuomio#kun N_KUNTA  ;
 tuomioluettelo+N:tuomio#luettelo N_RUIPELO  ;
 tuomionpurku+N:tuomion#pur N_TIKKU  ;
@@ -85163,10 +85163,10 @@ työsuhdekeksintö+N:työ#suhde#keksin N_KÄÄNTÖ  ;
 työsuhde+N:työ#suh N_JOHDE  ;
 työsuhdeturva+N:työ#suhde#turv N_SOITTAJA  ;
 työsulku+N:työ#sul N_TIKKU  ;
-työsuojeluasia'|'mies+N:työ#suojelu#asia#mie   N_MIES  ;
+työsuojeluasiamies+N:työ#suojelu#asia#mie   N_MIES  ;
 työsuojelu+N:työ#suojelu N_SEIKKAILU  ;
 työsuojelupäällikkö+N:työ#suojelu#päällik N_YKSIKKÖ  ;
-työsuojelutoimi'|'kunta+N:työ#suojelu#toimi#kun N_KUNTA  ;
+työsuojelutoimikunta+N:työ#suojelu#toimi#kun N_KUNTA  ;
 työsuojeluvaltuutettu+N:työ#suojelu#valtuutet N_TORTTU  ;
 työsuoritus+N:työ#suoritu N_VAKUUTUS  ;
 työsuunnitelma+N:työ#suunnitelm N_SOITTAJA  ;
@@ -85917,7 +85917,7 @@ ulkoaopettelu+N:ulkoaopettelu N_ASU  ;
 ulkoasiainhallinto+N:ulko#asiain#hallin N_TUNTO  ;
 ulkoasiainministeri+N:ulko#asiain#minister    N_KEHVELI  ;
 ulkoasiainministeriö+N:ulko#asiain#ministeriö N_HÄIRIÖ  ;
-ulkoasiainvalio'|'kunta+N:ulko#asiain#valio#kun N_KUNTA  ;
+ulkoasiainvaliokunta+N:ulko#asiain#valio#kun N_KUNTA  ;
 ulkoasiat+N:ulko#asi N_MARKKINAT  ;
 ulkoasu+N:ulko#asu N_ASU  ;
 ulkoavaruus+N:ulko#avaruu N_AAKKOSELLISUUS  ;
@@ -86013,10 +86013,10 @@ ulkomaali+N:ulko#maal   N_RUUVI  ;
 ulkomaanapu+N:ulko#maan#a N_APU  ;
 ulkomaanedustus+N:ulko#maan#edustu N_VAKUUTUS  ;
 ulkomaanelävä+N:ulko#maan#eläv N_HÖPÖTTÄJÄ  ;
-ulkomaankauppa'|'ministeri+N:ulko#maan#kauppa#minister    N_KEHVELI  ;
+ulkomaankauppaministeri+N:ulko#maan#kauppa#minister    N_KEHVELI  ;
 ulkomaankauppa+N:ulko#maan#kaup N_TIPPA  ;
-ulkomaankauppa'|'politiikka+N:ulko#maan#kauppa#politiik N_POLITIIKKA  ;
-ulkomaankirjeen'|'vaihtaja+N:ulko#maan#kirjeen#vaihtaj N_SOITTAJA  ;
+ulkomaankauppapolitiikka+N:ulko#maan#kauppa#politiik N_POLITIIKKA  ;
+ulkomaankirjeenvaihtaja+N:ulko#maan#kirjeen#vaihtaj N_SOITTAJA  ;
 ulkomaanlehtori+N:ulko#maan#lehtor   N_TANKKERI  ;
 ulkomaanliikenne+N:ulko#maan#liiken N_KIINNE  ;
 ulkomaanmarkkinat+N:ulko#maan#markkin N_MARKKINAT  ;
@@ -86029,7 +86029,7 @@ ulkomaanraha+N:ulko#maan#rah N_KIRJA  ;
 ulkomaansuhteet+N:ulko#maan#olosuh N_SUHTEET  ;
 ulkomaantiedustelupalvelu+N:ulkomaan#tiedustelupalvelu N_SEIKKAILU  ;
 ulkomaantoimittaja+N:ulko#maan#toimittaj N_SOITTAJA  ;
-ulkomaantyön'|'tekijä+N:ulko#maan#työn#tekij N_HÄKKYRÄ  ;
+ulkomaantyöntekijä+N:ulko#maan#työn#tekij N_HÄKKYRÄ  ;
 ulkomaa+N:ulko#ma N_MAA  ;
 ulkomaanuutinen+N:ulko#maan#uuti   N_AAKKOSTAMINEN  ;
 ulkomaanvaluutta+N:ulko#maan#valuut N_MITTA  ;
@@ -86054,7 +86054,7 @@ ulkonurkka+N:ulko#nurk N_LUOKKA  ;
 ulkonäkö+N:ulko#nä N_NÄKÖ  ;
 ulko-osa+N:ulko-os N_SOITTAJA  ;
 ulko-ovi+N:ulko-ov   N_ONNI  ;
-ulkopaikallis'|'sija+N:ulko#pai#kallis#sij N_KIRJA  ;
+ulkopaikallissija+N:ulko#pai#kallis#sij N_KIRJA  ;
 ulkopaisti+N:ulko#paist   N_RUUVI  ;
 ulkopalvelus+N:ulko#palvelu N_VAKUUTUS  ;
 ulkopelaaja+N:ulko#pelaaj N_SOITTAJA  ;
@@ -87442,7 +87442,7 @@ vaihtotase+N:vaihto#tase   N_ASTE  ;
 vaihtotavara+N:vaihto#tavar N_MAKKARA  ;
 vaihtotori+N:vaihto#tor   N_RUUVI  ;
 vaihtovaate+N:vaihto#vaat N_LAITE  ;
-vaihtovelkakirja'|'laina+N:vaihto#velka#kirja#lain N_KIRJA  ;
+vaihtovelkakirjalaina+N:vaihto#velka#kirja#lain N_KIRJA  ;
 vaihtovelkakirja+N:vaihto#velka#kirj N_KIRJA  ;
 vaihtovirtageneraattori+N:vaihto#virta#generaattor   N_TANKKERI  ;
 vaihtovirtakoje+N:vaihto#virta#koje   N_ASTE  ;
@@ -87972,7 +87972,7 @@ valkokatkarapu+N:valko#katkara N_APU  ;
 valkokaulusrikollinen+N:valko#kaulus#rikolli   N_AAKKOSTAMINEN  ;
 valkokaulusrikollisuus+N:valko#kaulus#rikollisuu N_AAKKOSELLISUUS  ;
 valkokaulustyöläinen+N:valko#kaulus#työläi    N_KYLKIÄINEN  ;
-valkokaulustyön'|'tekijä+N:valko#kaulus#työn#tekij N_HÄKKYRÄ  ;
+valkokaulustyöntekijä+N:valko#kaulus#työn#tekij N_HÄKKYRÄ  ;
 valkokletra+N:valkokletr N_KIRJA  ;
 valkokonnanyrtti+N:valkokonnan#yrt N_SKEITTI  ;
 valkokulmanakkeli+N:valkokulmanakkel   N_TANKKERI  ;
@@ -88019,7 +88019,7 @@ valkosampi+N:valko#sam N_SAMPI  ;
 valkoselkäskunkki+N:valkoselkä#skunk N_LOKKI  ;
 valkoselkätikka+N:valko#selkä#tikk N_KIRJA  ;
 valkosilmäkuha+N:valkosilmä#kuh N_SOITTAJA  ;
-valkosinihome'|'juusto+N:valko#sini#home#juusto N_TALO  ;
+valkosinihomejuusto+N:valko#sini#home#juusto N_TALO  ;
 valkosipulijauhe+N:valko#sipuli#jauhe   N_ASTE  ;
 valkosipulikastike+N:valkosipuli#kastik N_KASTIKE  ;
 valkosipuliletti+N:valko#sipuli#let N_SKEITTI  ;
@@ -88488,7 +88488,7 @@ valtiotieteilijä+N:valtio#tieteilij N_HÄKKYRÄ  ;
 valtiovalta+N:valtio#val N_VALTA  ;
 valtiovarainministeri+N:valtio#varain#minister    N_KEHVELI  ;
 valtiovarainministeriö+N:valtio#varain#ministeriö N_HÄIRIÖ  ;
-valtiovarainvalio'|'kunta+N:valtio#varain#valio#kun N_KUNTA  ;
+valtiovarainvaliokunta+N:valtio#varain#valio#kun N_KUNTA  ;
 valtiovierailu+N:valtio#vierailu N_SEIKKAILU  ;
 valtioviisas+N:valtio#viisa N_PATSAS  ;
 valtioviisaus+N:valtio#viisau N_AAKKOSELLISUUS  ;
@@ -88758,7 +88758,7 @@ vapaa-ajattelija+N:vapaa-ajattelij N_MAKKARA  ;
 vapaa-ajattelu+N:vapaa-ajattelu N_ASU  ;
 vapaaehtoinen+N:vapaaehtoi   N_AAKKOSTAMINEN  ;
 vapaaehtoisjoukko+N:vapaaehtois#jouk N_UKKO  ;
-vapaaehtoistyön'|'tekijä+N:vapaa#ehtois#työn#tekij N_HÄKKYRÄ  ;
+vapaaehtoistyöntekijä+N:vapaa#ehtois#työn#tekij N_HÄKKYRÄ  ;
 vapaaehtoistyö+N:vapaa#ehtois#t   N_YÖ  ;
 vapaaehtoisuus+N:vapaa#ehtoisuu N_AAKKOSELLISUUS  ;
 vapaaheitto+N:vapaa#heit N_HIRTTO  ;
@@ -88806,7 +88806,7 @@ vapaapaini+N:vapaa#pain   N_RUUVI  ;
 vapaapainiote+N:vapaapaini#ot N_LAITE  ;
 vapaapainiottelu+N:vapaa#painiottelu N_SEIKKAILU  ;
 vapaapainirinki+N:vapaapaini#rin N_HÄMMINKI  ;
-vapaapalokunta'|'lainen+N:vapaa#palo#kunta#lai   N_AAKKOSTAMINEN  ;
+vapaapalokuntalainen+N:vapaa#palo#kunta#lai   N_AAKKOSTAMINEN  ;
 vapaapalokunta+N:vapaa#palo#kun N_KUNTA  ;
 vapaapistooliammunta+N:vapaa#pistooli#ammun N_KUTSUNTA  ;
 vapaapistooli+N:vapaa#pistool   N_TANKKERI  ;
@@ -89065,9 +89065,9 @@ varikoosi+N:varikoos   N_RUUVI  ;
 varikoseele+N:varikoseele   N_NALLE  ;
 variksenkukka+N:variksen#kuk N_LUOKKA  ;
 variksenmarjakasvi+N:variksenmarja#kasv   N_RUUVI  ;
-variksenmarjamustikka'|'tyyppi+N:variksen#marja#mustikka#tyyp N_TYYPPI  ;
+variksenmarjamustikkatyyppi+N:variksen#marja#mustikka#tyyp N_TYYPPI  ;
 variksenmarja+N:variksen#marj N_KIRJA  ;
-variksenmarjapuolukka'|'tyyppi+N:variksen#marja#puolukka#tyyp N_TYYPPI  ;
+variksenmarjapuolukkatyyppi+N:variksen#marja#puolukka#tyyp N_TYYPPI  ;
 variksenpelätin+N:variksen#pelät N_HEITIN  ;
 variksenpelätti+N:variksen#pelät N_SKEITTI  ;
 variksenpesä+N:variksen#pes N_HÖPÖTTÄJÄ  ;
@@ -89281,7 +89281,7 @@ varusmiesaika+N:varusmiesa N_AIKA  ;
 varusmiesaliupseeri+N:varus#mies#aliupseer   N_TANKKERI  ;
 varusmies+N:varus#mie   N_MIES  ;
 varusmiespalvelus+N:varus#mies#palvelu N_VAKUUTUS  ;
-varusmiestoimi'|'kunta+N:varus#mies#toimi#kun N_KUNTA  ;
+varusmiestoimikunta+N:varus#mies#toimi#kun N_KUNTA  ;
 varusnainen+N:varus#nai   N_AAKKOSTAMINEN  ;
 varus+N:varu N_VAKUUTUS  ;
 varusohjelma+N:varus#ohjelm N_SOITTAJA  ;
@@ -89485,7 +89485,7 @@ vastalahja+N:vasta#lahj N_KIRJA  ;
 vastalaskos+N:vasta#lasko N_VAKUUTUS  ;
 vastalaukaus+N:vasta#laukau N_VAKUUTUS  ;
 vastalauselakko+N:vasta#lause#lak N_UKKO  ;
-vastalausemielen'|'osoitus+N:vasta#lause#mielen#osoitu N_VAKUUTUS  ;
+vastalausemielenosoitus+N:vasta#lause#mielen#osoitu N_VAKUUTUS  ;
 vastalause+N:vasta#lause   N_ASTE  ;
 vastaleiri+N:vasta#leir    N_TYYLI  ;
 vastalevy+N:vasta#levy N_KÄRRY  ;
@@ -92723,7 +92723,7 @@ voihkija+N:voihkij N_MAKKARA  ;
 voihkina+N:voihkin N_MAKKARA  ;
 voikala+N:voi#kal N_KIRJA  ;
 voikastike+N:voi#kastik N_KASTIKE  ;
-voikasviöljy'|'seos+N:voi#kasvi#öljy#seo N_VAKUUTUS  ;
+voikasviöljyseos+N:voi#kasvi#öljy#seo N_VAKUUTUS  ;
 voikeksi+N:voi#keks    N_TYYLI  ;
 voikirnu+N:voi#kirnu N_ASU  ;
 voikka+N:voik N_LUOKKA  ;
@@ -93559,7 +93559,7 @@ väkisinmakuu+N:väkisin#maku N_LEIKKUU  ;
 väkivallantekijä+N:väki#vallan#tekij N_HÄKKYRÄ  ;
 väkivallanteko+N:väki#vallan#te N_TEKO  ;
 väkivallattomuus+N:väki#vallattomuu N_AAKKOSELLISUUS  ;
-väkivaltaelo'|'kuva+N:väki#valta#elo#kuv N_SOITTAJA  ;
+väkivaltaelokuva+N:väki#valta#elo#kuv N_SOITTAJA  ;
 väkivaltafilmi+N:väki#valta#film    N_TYYLI  ;
 väkivaltaisuus+N:väki#valtaisuu N_AAKKOSELLISUUS  ;
 väkivaltakoneisto+N:väki#valta#koneisto N_RUIPELO  ;
@@ -94414,7 +94414,7 @@ yhteistyöelin+N:yhteis#työ#eli    N_ELIN  ;
 yhteistyökykyisyys+N:yhteistyö#kykyisyy N_KÖYHYYS  ;
 yhteistyö+N:yhteis#t   N_YÖ  ;
 yhteistyösopimus+N:yhteis#työ#sopimu N_VAKUUTUS  ;
-yhteistyövaltuus'|'kunta+N:yhteis#työ#valtuus#kun N_KUNTA  ;
+yhteistyövaltuuskunta+N:yhteis#työ#valtuus#kun N_KUNTA  ;
 yhteisvaihtelu+N:yhteis#vaihtelu N_SEIKKAILU  ;
 yhteisvaikutus+N:yhteis#vaikutu N_VAKUUTUS  ;
 yhteisvalinta+N:yhteis#valin N_KUTSUNTA  ;
@@ -94749,7 +94749,7 @@ yleisurheilija+N:yleis#urheilij N_MAKKARA  ;
 yleisurheilukilpailu+N:yleis#urheilu#kilpailu N_SEIKKAILU  ;
 yleisurheilukisa+N:yleis#urheilu#kis N_KIRJA  ;
 yleisurheilulaji+N:yleis#urheilu#laj   N_RUUVI  ;
-yleisurheilumaa'|'ottelu+N:yleis#urheilu#maa#ottelu N_SEIKKAILU  ;
+yleisurheilumaaottelu+N:yleis#urheilu#maa#ottelu N_SEIKKAILU  ;
 yleisurheilu+N:yleis#urheilu N_SEIKKAILU  ;
 yleisvaikutelma+N:yleis#vaikutelm N_SOITTAJA  ;
 yleisvakuutus+N:yleis#vakuutu N_VAKUUTUS  ;
@@ -95801,7 +95801,7 @@ zymogeeni+N:zymo_geen   N_RUUVI  ;
 ääninauha+N:ääni#nauh N_KIRJA  ;
 ääninauhuri+N:ääni#nauhur   N_TANKKERI  ;
 ääni+N:ään    N_MIELI  ;
-äänioikeusikä'|'raja+N:ääni#oikeus#ikä#raj N_KIRJA  ;
+äänioikeusikäraja+N:ääni#oikeus#ikä#raj N_KIRJA  ;
 äänioikeus+N:ääni#oikeu N_AAKKOSELLISUUS  ;
 äänioikeutettu+N:ääni#oikeutet N_TORTTU  ;
 ääniopaste+N:ääni#opaste   N_ASTE  ;
@@ -96098,16 +96098,16 @@ LEXICON N_TALO
 LEXICON N_ASU
 !! The stems ending in u are also without variationm and the bisyllabic ones
 !! have the same simple allomorph pattern:
-!! € asu, asu, outfit
-!! € asua, asu, outfit
-!! € asuun, asu, outfit
-!! € asuna, asu, outfit
-!! € asussa, asu, outfit
-!! € asuja, asu, outfit
-!! € asujen, asu, outfit
-!! € asuihin, asu, outfit
-!! € asuina, asu, outfit
-!! € asussa, asu, outfit
+!! € asu asu+N+Sg+Nom outfit
+!! € asua asu+N+Sg+Par
+!! € asuun asu+N+Sg+Ill
+!! € asuna asu+N+Sg+Ess
+!! € asussa asu+N+Sg+Ine
+!! € asuja asu+N+Pl+Par
+!! € asujen asu+N+Pl+Gen
+!! € asuihin asu+N+Pl+Ill
+!! € asuina asu+N+Pl+Ess
+!! € asuissa asu+N+Pl+Ine
 0    N_BACK_NOMINATIVE    ;
 0    N_BACK_SINGULARS    ;
 0    N_BACK_PLURALS ;
@@ -96121,16 +96121,16 @@ LEXICON N_ASU
 0    N_COMPOUND_JEN ;
 
 LEXICON N_KÄRRY
-!! € kärry
-!! € kärryä
-!! € kärryun
-!! € kärrynä
-!! € kärryssä
-!! € kärryjä
-!! € kärryjen
-!! € kärryihin
-!! € kärryinä
-!! € kärryissä
+!! € kärry kärry+N+Sg+Nom cart
+!! € kärryä kärry+N+Sg+Par
+!! € kärryyn kärry+N+Sg+Ill
+!! € kärrynä kärry+N+Sg+Ess
+!! € kärryssä kärry+N+Sg+Ine
+!! € kärryjä kärry+N+Pl+Par
+!! € kärryjen kärry+N+Pl+Gen
+!! € kärryihin kärry+N+Pl+Ill
+!! € kärryinä kärry+N+Pl+Ess
+!! € kärryissä kärry+N+Pl+Ine
 0    N_FRONT_NOMINATIVE    ;
 0    N_FRONT_SINGULARS    ;
 0    N_FRONT_PLURALS ;
@@ -96144,16 +96144,16 @@ LEXICON N_KÄRRY
 0    N_COMPOUND_JEN ;
 
 LEXICON N_MÖMMÖ
-!! € mömmö
-!! € mömmöä
-!! € mömmöön
-!! € mömmönä
-!! € mömmössä
-!! € mömmöjä
-!! € mömmöjen
-!! € mömmöihin
-!! € mömmöinä
-!! € mömmöissä
+!! € mömmö mömmö+N+Sg+Nom gunk
+!! € mömmöä mömmö+N+Sg+Par
+!! € mömmöön mömmö+N+Sg+Ill
+!! € mömmönä mömmö+N+Sg+Ess
+!! € mömmössä mömmö+N+Sg+Ine
+!! € mömmöjä mömmö+N+Pl+Par
+!! € mömmöjen mömmö+N+Pl+Gen
+!! € mömmöihin mömmö+N+Pl+Ill
+!! € mömmöinä mömmö+N+Pl+Ess
+!! € mömmöissä mömmö+N+Pl+Ine
 0    N_FRONT_NOMINATIVE    ;
 0    N_FRONT_SINGULARS    ;
 0    N_FRONT_PLURALS ;
@@ -96168,11 +96168,10 @@ LEXICON N_MÖMMÖ
 
 
 LEXICON N_UKKO
-!
-!! € ukko
-!! € ukossa
-!! € ukoista
-!! € ukkoihin
+!! € ukko ukko+N+Sg+Nom geezer
+!! € ukossa ukko+N+Sg+Ine
+!! € ukoista ukko+N+Pl+Ela
+!! € ukkoihin ukko+N+Pl+Ill
 0:ko      N_BACK_NOMINATIVE    ;
 0:ko      N_BACK_STRONG_SINGULARS    ;
 0:o    N_BACK_WEAK_SINGULARS    ;
@@ -96189,11 +96188,10 @@ LEXICON N_UKKO
 
 
 LEXICON N_TIKKU
-!
-!! € tikku
-!! € tikussa
-!! € tikuista
-!! € tikkuihin
+!! € tikku tikku+N+Sg+Nom stick
+!! € tikussa tikku+N+Sg+Ine
+!! € tikuista tikku+N+Pl+Ela
+!! € tikkuihin tikku+N+Pl+Ill
 0:ku   N_BACK_NOMINATIVE    ;
 0:ku   N_BACK_STRONG_SINGULARS    ;
 0:u    N_BACK_WEAK_SINGULARS    ;
@@ -96210,11 +96208,10 @@ LEXICON N_TIKKU
 
 
 LEXICON N_MYRKKY
-!
-!! € myrkky
-!! € myrkyssä
-!! € myrkyistä
-!! € myrkkyihin
+!! € myrkky myrkky+N+Sg+Nom poison
+!! € myrkyssä myrkky+N+Sg+Ine
+!! € myrkyistä myrkky+N+Pl+Ela
+!! € myrkkyihin myrkky+N+Pl+Ill
 0:ky   N_FRONT_NOMINATIVE    ;
 0:ky   N_FRONT_STRONG_SINGULARS    ;
 0:y    N_FRONT_WEAK_SINGULARS    ;
@@ -96230,11 +96227,10 @@ LEXICON N_MYRKKY
 0:ky      N_COMPOUND_JEN ;
 
 LEXICON N_YÖKKÖ
-!
-!! € yökkö
-!! € yökössä
-!! € yököistä
-!! € yökköihin
+!! € yökkö yökkö+N+Sg+Nom nightfly
+!! € yökössä yökkö+N+Sg+Ine
+!! € yököistä yökkö+N+Pl+Ela
+!! € yökköihin yökkö+N+Pl+Ill
 0:kö   N_FRONT_NOMINATIVE    ;
 0:kö   N_FRONT_STRONG_SINGULARS    ;
 0:ö    N_FRONT_WEAK_SINGULARS    ;
@@ -96250,11 +96246,10 @@ LEXICON N_YÖKKÖ
 0:kö      N_COMPOUND_JEN ;
 
 LEXICON N_HAPPO
-!
-!! € happo
-!! € hapossa
-!! € hapoista
-!! € happoihin
+!! € happo happo+N+Sg+Nom acid
+!! € hapossa happo+N+Sg+Ine
+!! € hapoista happo+N+Pl+Ela
+!! € happoihin happo+N+Pl+Ill
 0:po      N_BACK_NOMINATIVE    ;
 0:po      N_BACK_STRONG_SINGULARS    ;
 0:o       N_BACK_WEAK_SINGULARS    ;
@@ -96271,11 +96266,10 @@ LEXICON N_HAPPO
 
 
 LEXICON N_LIPPU
-!
-!! € lippu
-!! € lipussa
-!! € lipuista
-!! € lippuihin
+!! € lippu lippu+N+Sg+Nom
+!! € lipussa lippu+N+Sg+Ine
+!! € lipuista lippu+N+Pl+Ela
+!! € lippuihin lippu+N+Pl+Ill
 0:pu   N_BACK_NOMINATIVE    ;
 0:pu   N_BACK_STRONG_SINGULARS    ;
 0:u    N_BACK_WEAK_SINGULARS    ;
@@ -96292,11 +96286,10 @@ LEXICON N_LIPPU
 
 
 LEXICON N_RYYPPY
-!
-!! € ryyppy
-!! € ryypyssä
-!! € ryypyistä
-!! € ryyppyihin
+!! € ryyppy ryyppy+N+Sg+Nom swirl
+!! € ryypyssä ryyppy+N+Sg+Ine
+!! € ryypyistä ryyppy+N+Pl+Ela
+!! € ryyppyihin ryyppy+N+Pl+Ill
 0:py   N_FRONT_NOMINATIVE    ;
 0:py   N_FRONT_STRONG_SINGULARS    ;
 0:y    N_FRONT_WEAK_SINGULARS    ;
@@ -96312,11 +96305,10 @@ LEXICON N_RYYPPY
 0:py      N_COMPOUND_JEN ;
 
 LEXICON N_TÖRPPÖ
-!
-!! € törppö
-!! € törpössä
-!! € törpöistä
-!! € törppöihin
+!! € törppö törppö+N+Sg+Nom bozo
+!! € törpössä törppö+N+Sg+Ine
+!! € törpöistä törppö+N+Pl+Ela
+!! € törppöihin törppö+N+Pl+Ill
 0:pö   N_FRONT_NOMINATIVE    ;
 0:pö   N_FRONT_STRONG_SINGULARS    ;
 0:ö    N_FRONT_WEAK_SINGULARS    ;
@@ -96332,11 +96324,10 @@ LEXICON N_TÖRPPÖ
 0:pö      N_COMPOUND_JEN ;
 
 LEXICON N_HIRTTO
-!
-!! € hirtto
-!! € hirtossa
-!! € hirtoista
-!! € hirttoihin
+!! € hirtto hirtto+N+Sg+Nom hanging
+!! € hirtossa hirtto+N+Sg+Ine
+!! € hirtoista hirtto+N+Pl+Ela
+!! € hirttoihin hirtto+N+Pl+Ill
 0:to      N_BACK_NOMINATIVE    ;
 0:to      N_BACK_STRONG_SINGULARS    ;
 0:o       N_BACK_WEAK_SINGULARS    ;
@@ -96353,11 +96344,10 @@ LEXICON N_HIRTTO
 
 
 LEXICON N_TORTTU
-!
-!! € torttu
-!! € tortussa
-!! € tortuista
-!! € torttuihin
+!! € torttu torttu+N+Sg+Nom tart
+!! € tortussa torttu+N+Sg+Ine
+!! € tortuista torttu+N+Pl+Ela
+!! € torttuihin torttu+N+Pl+Ill
 0:tu   N_BACK_NOMINATIVE    ;
 0:tu   N_BACK_STRONG_SINGULARS    ;
 0:u    N_BACK_WEAK_SINGULARS    ;
@@ -96374,11 +96364,10 @@ LEXICON N_TORTTU
 
 
 LEXICON N_PYTTY
-!
-!! € pytty
-!! € pytyssä
-!! € pytyistä
-!! € pyttyihin
+!! € pytty pytty+N+Sg+Nom cup
+!! € pytyssä pytty+N+Sg+Ine
+!! € pytyistä pytty+N+Pl+Ela
+!! € pyttyihin pytty+N+Pl+Ill
 0:ty   N_FRONT_NOMINATIVE    ;
 0:ty   N_FRONT_STRONG_SINGULARS    ;
 0:y    N_FRONT_WEAK_SINGULARS    ;
@@ -96394,11 +96383,10 @@ LEXICON N_PYTTY
 0:ty      N_COMPOUND_JEN ;
 
 LEXICON N_PÖNTTÖ
-!
-!! € pönttö
-!! € pöntössä
-!! € pöntöistä
-!! € pönttöihin
+!! € pönttö pönttö+N+Sg+Nom pot
+!! € pöntössä pönttö+N+Sg+Ine
+!! € pöntöistä pönttö+N+Pl+Ela
+!! € pönttöihin pönttö+N+Pl+Ill
 0:tö   N_FRONT_NOMINATIVE    ;
 0:tö   N_FRONT_STRONG_SINGULARS    ;
 0:ö    N_FRONT_WEAK_SINGULARS    ;
@@ -96418,9 +96406,9 @@ LEXICON N_TEKO
 !! Between two vowels, the weak grade of k is optionally an apostrophe instead.
 !! For k that is not optionally ’, use the variation class kk ~ k instead
 !! (e.g. N_UKKO).
-!! € teko
-!! € teossa
-!! € te’ossa
+!! € teko teko+N+Sg+Nom action
+!! € teossa teko+N+Sg+Ine
+!! € te’ossa teko+N+Sg+Ine
 0:ko      N_BACK_NOMINATIVE    ;
 0:ko      N_BACK_STRONG_SINGULARS    ;
 0:o       N_BACK_WEAK_SINGULARS    ;
@@ -96440,10 +96428,9 @@ LEXICON N_TEKO
 
 
 LEXICON N_MAKU
-!
-!! € maku
-!! € maussa
-!! € ma’ussa
+!! € maku maku+N+Sg+Nom taste
+!! € maussa maku+N+Sg+Ine
+!! € ma’ussa maku+N+Sg+Ine
 0:ku   N_BACK_NOMINATIVE    ;
 0:ku   N_BACK_STRONG_SINGULARS    ;
 0:u    N_BACK_WEAK_SINGULARS    ;
