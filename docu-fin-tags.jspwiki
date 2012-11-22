@@ -1,7 +1,7 @@
 !!!Documenting the tags of the Finnish analyser
 
 The tags of Finnish analysers are similar to ones in other uralic languages,
-especially Sámi languages:
+especially Saami languages:
 
     ! Tags for POS
      +N +A +Adv +V
@@ -38,7 +38,7 @@ especially Sámi languages:
     !Other tags
      +ABBR +ACR +CLB +PUNCT +LEFT +RIGHT +TV +IV
 
-Lots of meanings and rationale can be read from e.g. North Sámi docu. The rest
+Lots of meanings and rationale can be read from e.g. North Saami docu. The rest
 of this document is modified version of original omorfi docs.
 
 ----
@@ -207,7 +207,7 @@ Verbs have only one special subcategory for negation verb ei, which has partial 
 | SUBCAT | Meaning | Example
 | +Neg | negation verb | en (I don't)
 
-Note Marking negation verb as specific sub-category of verbs and the verb form that only goes along with it conneg has some history in fennistics, but I do not know the origin of the practice and it isn't in VISK. In fact this practice was added for interoperability with Sámi language morphologies, which follow the same tagging.
+Note Marking negation verb as specific sub-category of verbs and the verb form that only goes along with it conneg has some history in fennistics, but I do not know the origin of the practice and it isn't in VISK. In fact this practice was added for interoperability with Saami language morphologies, which follow the same tagging.
 
 *Finite verb inflection.* The finite inflection of verbs concerns actual verbal inflection in person, mood, tense.
 
