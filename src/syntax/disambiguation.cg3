@@ -1064,6 +1064,7 @@ IFF    ("mitä" Adv) (1 CMP/SUP)
 SELECT ("niin" Adv) (1C A) (2 KUIN) (NOT 3 A)  # NIIN RAJU KUIN MINä
 SELECT ("niin" Adv) (1C MAN) (2 KUIN) (NOT 3 A)  # NIIN RAJUSTI KUIN MEIllä
 SELECT ("noin" Adv) (1 Gen)
+SELECT ("noin" Adv Dem) (1 Num)
 SELECT ("noin" Adv) (1 TIME-WORD)
 SELECT (Adv) (0 PALJON) (1 CMP)  # PALJON JA VäHäN, xxxxx, next one not needed any more 3.12.2000,!!changed
 SELECT ("vähän" Adv) (1C CMP-ENNEN)# 4.2.2001 !!->! cf.below
@@ -1103,7 +1104,7 @@ REMOVE (Der/inen Par) ; # IF (0 (A Pos Sg Par)) (0 (N Ela)) (NOT 1 Par)
 # Adverbs
 # ------- 
 
-REMOVE Dem IF (0 Adv)(NOT 1 (N OR A OR Num));
+REMOVE Dem IF (0 Adv)(NOT 1 N OR A OR Num);
 
 
 REMOVE ("aikainen" Adv CMP MAN) (NOT 1 DUMMY) # XX
@@ -2003,6 +2004,8 @@ SELECT ConNeg (-1 NEGV) (NOT 0 NEG-AMBIGUOUS) (NOT 1 Neg) (NOT 1 Prs) (0 Prs/Prt
 
 SELECT ConNeg (*-1 NEGV BARRIER V) (NOT 0 NEG-AMBIGUOUS) (NOT 1 Neg) (NOT 1 Prs) (0 Prs/Prt OR NonPast) ;
     # Enkä minä koskaan enää tuhoa kaikkea, mikä elää, niinkuin nyt olen tehnyt.
+
+REMOVE:NoConNeg ConNeg IF (NOT *0 Neg);
     
 SELECT (Pron Pers) (-1 NEGV) (*1 ConNeg BARRIER (ConNeg)) (NEGATE 0 WORD LINK 1 (N Ess));
     # Enkä minä koskaan enää tuhoa kaikkea, mikä elää, niinkuin nyt olen tehnyt.
@@ -2552,6 +2555,7 @@ REMOVE (Adv) (0 YLI/AllE) (NOT 1 A/N/Q/Pron/PCP/Num)
 
 # kuin
 REMOVE ("kui") IF (*-1 ("niin" CC) BARRIER CS)(0 ("kuin"));
+REMOVE ("kui") IF (*-1 Neg BARRIER CS)(0 ("kuin"));
 
 # tai
 # If such a rule can be found:
@@ -2908,11 +2912,11 @@ MAP (@NUM←) TARGET N IF (-1 NUMS) ;
 
 
 # ensimmäinen
-REMOVE N + $$ALLCASES IF (0 ("ensimmäinen" Num))(1 (N + $$ALLCASES));
+REMOVE (N $$ALLCASES) IF (0 ("ensimmäinen" Num))(1 N + $$ALLCASES);
 #REMOVE N IF (0 ("ensimmäinen"  Nom))(1 (N  Nom));
 
-REMOVE ("ensimmäinen" N) IF (0 (Num + $$ALLCASES))(1 ($$ALLCASES));
-REMOVE N IF (0 ("ensimmäinen" + $$ALLCASES))(1 (A + $$ALLCASES));
+REMOVE ("ensimmäinen" N) IF (0 Num + $$ALLCASES)(1 ($$ALLCASES));
+REMOVE N IF (0 ("ensimmäinen") + $$ALLCASES)(1 A + $$ALLCASES);
 
 # Verb mappings
 # ------------- 
