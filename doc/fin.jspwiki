@@ -1,0 +1,5788 @@
+!!!Free and Open source Finnish analyser gtsvn-fi
+
+;Authors: Tommi A Pirinen
+;Software version: 2012
+;Documentation license: GNU GFDL
+;SVN Revision: $Revision: 67664 $
+;SVN Date: $Date: 2013-01-09 12:16:35 +0200 (Wed, 09 Jan 2013) $
+
+!!GTSVN-fi
+
+This is free and open source Finnish morphology. It is a stable version
+of omorfi and so on.
+
+
+Morphology
+==========
+The morphological division of Finnish words has three classes: verbal,
+nominal and *others*. The verbs are identified by personal, temporal,
+modal and infinite inflection. The nominals are identified by numeral and
+case inflection. The others are, apart from being *the rest*, identified by
+defective or missing inflection. 
+
+!!Multicharacter symbols for analyses
+The Finnish morphological implementation uses analysis symbols mainly to
+encode morphological analyses, the rest are implemented else where. Some
+non-morphological analyses or classifications are retained for
+ interoperability and historical reasons
+The syntactic and semantic subdivision is realised in POS tags.
+The nominals consist of nouns (substantiivi), adjectives, pro words
+and numerals. Verbs are non-divisible, but inlcude infinitive and particple
+forms. The others are subdivided into adpositions, adverbs and particles.
+c.f. VISK s.v. sanaluokka, § 438.
+;{{+A}}, {{+V}}, {{+N}}, {{+Adv}}
+;{{+Pron}}
+;{{+Pcle}}
+;{{+Interj}}, {{+Num}}
+
+In nominal analyses, the proper nouns have additional subanalysis.
+Proper nouns are usually written with initial capitals–or more recently,
+totally arbitrary capitalisations, such as in brand names nVidia and ATi. 
+Proper nouns do have full inflectional morphology exactly as other nouns, but
+work slightly differently in derivation and compounding. Some capitalised
+nouns may also lose capitalisation in derivation. 
+VISK § 98
+;{{+Prop}}
+
+In pronominal analyses, the semantic classes pronouns can take are shown
+in sub analyses. 
+VISK §§ 101–104.
+;{{+Dem}}, {{+Pers}}, {{+Interr}}
+;{{+Rel}}, {{+Qu}}, {{+Refl}}
+;{{+Recipr}}, {{+Indef}}
+
+In numeral analyses, there are multiple sub-analysis classes.
+The numerals have semantic subcategories (VISK §770). The classical ordinal
+numbers  have been adjectivised in current descriptions (VISK § 771), the
+ordinal interpretation is still spelled out in subcategories. The numbers are
+often  written with digits or other specific notations.
+;{{+Card}}, {{+Ord}}
+;
+The particles are subcategorised syntax-wise into conjunctions for all words,
+that govern subclauses (VISK § 812). The conjunctions are further divided,
+whether the subclause is coordinant or subordinant to the governing clause
+and few other syntactic types (VISK § 816). N.B. that the division to
+subordinating and coordinating conjucntions is motivated by other systems,
+including legacy systems, whereas the grammar presents also different
+categorisations for conjunctions (including naming subordination adverbials).
+
+;{{+CC}}, {{+CS}}
+
+In adposition anlayses, the syntactic tendencies are shown in sub-analyses;
+whether they appear typically before or after their heads |VISK 687|.
+;{{+Po}}, {{+Pr}}
+
+The lexical items that appear as bound morphemes before head word are 
+classified as prefixes (VISK § 172). Prefixes are rare and mostly of foreign
+origin. The singular forms of plurale tantums are also potential prefixes.
+;{{+Pref}}
+
+Suffixes are typically word forms or derivations that only appear as
+bound morphs. Other than that Finnish does not really have proper suffixes.
+This means that suffixed words are in effect compounds of where the last
+word just doesn't appear as free morph.
+;{{+Suff}}
+
+Symbols are not part of linguistic data per se so we classify them according
+to the needs of end user applications
+;{{+Punct}}
+
+The analyses of nominals have case inflection marked.
+The nominals have case inflection (VISK § 81) to mark syntactic roles
+(nominative, partitive, accusative-genitive) and semantics
+(others, partially even syntactic cases).
+;{{+Nom}}, {{+Par}}, {{+Gen}}
+;{{+Ine}}, {{+Ela}}, {{+Ill}}, {{+Ade}}
+;{{+Abl}}, {{+All}}, {{+Ess}}, {{+Ins}}
+;{{+Abe}}, {{+Tra}}, {{+Cmt}}
+
+The analyses of a infinitive short form have lative reflecting the origins
+of the form (VISK § 120). Some adpositions have same analysis in diachronic
+analyses.
+;{{+Lat}}
+
+The analyses of certain nominals give explicit analysis for accusative case.
+The accusative case has distinctive marker in few pronouns and these are only
+cases that are analysed as accusatives. (VISK §81). Other accusatives have
+the same case marking as genitive, and only use that analysis in synchronic
+anlyses.
+;{{+Acc}}
+Adverbs and adpositions have some special analyses in diachronic analyses.
+c.f. (VISK § 371 – 385)
+;{{+Prl}}, {{+Distr}}, {{+Tempr}}
+
+
+The analyses of nominals show the inflection in number. Nominals inflect in
+number, to mark plurality of the word. The number for nouns is either
+singular or plural.
+c.f. (VISK § 79)
+;{{+Sg}}, {{+Pl}}
+
+The analyses of nominals include possessive if present.
+Posessive ending indicates ownership. The possessive can take six possible
+values from singular and plural, first, second and third person references,
+where third person form is always ambiguous over plurality.
+c.f. (VISK § 95)
+;{{+PxSg1}}, {{+PxSg2}}, {{+PxSg3}}, {{+PxPl1}}, {{+PxPl2}}, {{+PxPl3}}, {{+Px3}}
+
+In compound analyses, the derived compound form that is not a free morph
+is marked with special analysis.  Some words have forms only appearing in
+compounds.
+c.f. (VISK § 406)
+;{{+Der/s}}
+
+Finite verb form analyses have a reading for tense. The tense has two values.
+For moods other than indicative the tense is not distinctive in surface form,
+and therefore not marked in the analyses.
+The morphologically distinct forms in Finnish are only past and non-past
+tenses, while other are created syntactically and not marked in morphological
+analyses.
+c.f. (VISK §§ 111 – 112)
+In order to keep tagging consistent across languages we call them +Prs and 
++Prt
+;{{+Prs}}, {{+Prt}}
+
+Finite verb form analyses have a reading for mood. Mood has four central
+readings and few archaic and marginal. The mood is marked in analyses for
+all finite forms, even the unmarked indicative. 
+cf. (VISK §§ 115 – 118)
+;{{+Ind}}, {{+Cond}}, {{+Pot}}, {{+Imprt}}
+;{{+Optat}}, {{+Eventv}}
+
+Finite verb form analyses have a reading for person. Personal ending of verb
+defines the actors.  The person analysis has seven possible values,
+six for the singular and plural groups of first, second and third person
+forms, and one specifically for passive. The passive personal form is encoded
+as fourth person passive, which had been the common practice in past systems.
+cf. (VISK §§ 106 – 107)
+;{{+Sg1}}, {{+Sg2}}, {{+Sg3}}, {{+Pl3}}, {{+Pl2}}, {{+Pl1}}
+
+
+The analyses of verb for the forms that require negation verb have a special
+analysis for it.
+;{{+ConNeg}}
+
+The suitable negation verbs have sub-analysis that can be matched to negated
+forms on syntactic level.
+;{{+Neg}}
+
+All verb analyses contain voice marking. For finite verb forms active voice
+is tied to personal forms and passive voice to non-personal verb endings.
+The voice is also marked in the infinite verb forms. 
+c.f. (VISK § 110)
+;{{+Act}}, {{+Pass}}
+
+Infinitive verb forms have infinitive or nominal derivation analyses.
+In traditional grammars the infinitive forms were called I, II, III, IV and V
+infinitive, the modern grammar replaces the first three with A, E and MA
+respectively. The IV infinitive, which has *minen* suffix marker, has been
+re-analysed as derivational and this is reflected in |omorfi|. The V
+infinitive is also assumed to be mainly derivational, but included here for
+reference. 
+c.f. (VISK §§ 120 – 121)
+The infinitives have limited nominal inflection. 
+;{{+InfA}}, {{+InfE}}, {{+InfMa}}, {{+Der/minen}}, {{+Der/maisilla}}
+
+Participial verb forms have participle readings. There are 4 participle 
+forms. Like infinitives, participles in traditional grammars were named 
+I and II where NUT and VA are used in modern grammars.  The agent and
+negation participle have sometimes been considered outside regular
+inflection, but in modern Finnish grammars are alongside other participles
+and so they are included in inflection in omorfi as well. In some grammars
+the NUT and VA participles have been called past and present participles 
+respectively, drawing parallels from other languages. The modern grammar
+avoids them as misleading but this description uses them
+cf. VISK § 122
+;{{+PrfPrc}}, {{+AgentPrc}}, {{+PrsPrc}}, {{+NegPrc}}
+
+Adjective and some adverbial analyses are marked for comparation. The
+non-marked forms are comparative and superlative. For adjectives, comparative
+suffixes precede the nominal inflection. 
+c.f. VISK § 300
+;{{+Comp}}, {{+Sup}}
+
+All word forms can have clitics which are analysed by their orthography.
+Clitics are suffixes which can attach almost anywhere in the ends of words,
+both verb forms and nominals. They also attach on end of other clitics,
+theoretically infinite chains. In practice it is usual to see at most three
+ in one word form. Two clitics have limited use: *-s* only appears in few 
+adverbs and negation verb. 
+VISK §§ 126 – 131
+;{{+Foc/han}}, {{+Foc/kaan}}, {{+Foc/kin}}, {{+Foc/pa}}
+;{{+Foc/s}}, {{+Foc/ka}}
+;{{+Qst}}
+
+
+The analyses the derivations are marked as a form of their
+original root word form. Derivation forming is experimental feature and not
+present in all versions and applications using omorfi. The derived forms
+should be considered guesses at best.
+;{{+Der/sti}}, {{+Der/ja}}, {{+Der/inen}}, {{+Der/lainen}}, {{+Der/tar}}
+;{{+Der/llinen}}, {{+Der/ton}}, {{+Der/tse}}, {{+Der/tse}}, {{+Der/vs}}, {{+Der/u}}
+;{{+Der/ttain}}
+;{{+Der/ttaa}}, {{+Der/tattaa}}, {{+Der/tatuttaa}}
+;{{+Der/uus}}
+
+The analyses of some words and word-forms indicate limitedness of usage.
+This includes common mispellings, archaic words and forms
+and otherwise rare words and forms.
+;{{+Use/Sub}}, {{+Use/Marg}}
+
+The informal language use contains different Finnish than the literary
+standard, this is marked as standard dialect (yleispuhekieli): 
+common features include
+dropping final vowels, dropping final i components of unstressed diphtongs,
+few other shortenings.
+Other dialects are also sometimes analysed;
+the geographical division has three levels:
+East versus West,
+East containing Savo and South-East (North?)
+West containing North, perä, keski and eteläpohjalaiset, southwest and Häme
+The third level dialect division is traditionally by town borders, be
+cautious when adding these though.
+;{{+Dial}}
+;{{+Dial/East}}, {{+Dial/West}}, {{+Dial/Standard}}
+;{{+Dial/Southwest}}, {{+Dial/Häme}}, {{+Dial/Eteläpohjalaiset}}, {{+Dial/Keskipohjalaiset}}
+;{{+Dial/Peräpohjalaiset}}, {{+Dial/North}}, {{+Dial/Savo}}, {{+Dial/Southeast}}
+
+
+The boundaries of compounds that are not lexicalised in the dictionary will
+have compound analyses, the compounds may also have usage tags. The 
+compounding analyses concern also syntagmatic melting mishmash.
+;{{+Cmp}}
+
+
+The word and morpheme boundaries are used to limit the effective range of
+far-reaching rules, such as vowel harmony. The boundaries are marked by
+curly bracketed hashes or underscores. The word boundaries are marked by
+{{{#}}},
+The lexical item boundaries by
+{{{##}}},
+the inflectional morpheme boundaries 
+by >, the derivational morpheme boundaries by », and some etymological and
+soft boundaries by {{_}}.
+{{{##}}}
+
+
+The root lexicon is unique entry point of this morphological description.
+This lexicon must not be used elsewhere; it contains only the markers for
+absolute start of the transducer.
+
+
+Noun is the part-of-speech for words which require declination in number
+and case. Additionally nouns may have optional possessive suffixes and
+clitics combined freely at the end. While some of the nouns may exhibit 
+limited comparative derivations, generally words that can undergo
+comparation must be  classified into adjectives. The proper nouns that
+are written in initial  capital letters except when derived are handled
+separately under proper nouns, but the classification is the same.
+
+The nominals are classified by combination of the stem variations, suffix
+allomorphs and the vowel harmony. The nouns have number, case, possessive
+and clitic suffixes:
+* __talo__: {{talo+N+Sg+Nom}} (house)
+* __taloa__: {{talo+N+Sg+Par}} ()
+* __taloissa__: {{talo+N+Pl+Ine}} ()
+* __talostani__: {{talo+N+Sg+Ela+PxSg1}} ()
+* __talollako__: {{talo+N+Sg+Ade+Qst}} ()
+* __taloiltammepa__: {{talo+N+Pl+Abl+PxPl1+Foc/pa}} ()
+
+The classification is based on suffix allomorphs, harmony, and the stem
+variation:
+* __taloja__: {{talo+N+Pl+Par}} ()
+* __sälöjä__: {{sälö+N+Pl+Par}} (splinter)
+* __valtioita__: {{valtio+N+Pl+Par}} (state)
+* __lepakot__: {{lepakko+N+Pl+Nom}} (bat)
+* __padoissa__: {{pato+N+Pl+Ine}} (dam)
+
+The minimal set to determine class of noun is singulars of nominative,
+essive and inessive, plurals of essive, elative, partitive, illative, and
+genitive. Find out stems and suffixes and match.
+
+Noun stem variation and allomorph selection
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The nominal stems were classified according to what is the stem variation
+and what allomorphs they select. This section lists all the possible
+variations and all their allomorph selections. Each class description gives
+the keys that can be used when classifying new words, the examples of
+inflection and negative examples for the most obvious missed allomorphs and
+singular nominative, singular essive, singular inessive, plural essive,
+plural elative, singular partitives, singular illatives, plural partitives
+plural genitives, plural illatives and the compound forms.
+
+Noun stems without stem variation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The most basic noun stem does not have any stem internal variation and
+uses few commonest allomorphs. The words in this class are either bisyllabic
+or have one of common derivational suffixes sto, ...:
+* __talo__: {{talo+N+Sg+Nom}} (house)
+* __talona__: {{talo+N+Sg+Ess}} ()
+* __talossa__: {{talo+N+Sg+Ine}} ()
+* __taloina__: {{talo+N+Pl+Ess}} ()
+* __taloista__: {{talo+N+Pl+Ela}} ()
+* __taloa__: {{talo+N+Sg+Par}} ()
+* __talota__* (is not standard language)
+* __taloon__: {{talo+N+Sg+Ill}} ()
+* __taloseen__* (is not standard language)
+* __taloja__: {{talo+N+Pl+Par}} ()
+* __taloita__* (is not standard language)
+* __talojen__: {{talo+N+Pl+Gen}} ()
+* __taloiden__* (is not standard language)
+* __taloitten__* (is not standard language)
+* __taloihin__: {{talo+N+Pl+Gen}} ()
+* __taloisiin__* (is not standard language)
+* __talojuttu__: {{talojuttu,}} (house)
+* __talonjuttu__: {{talonjuttu,}} (house's)
+* __talojenjuttu__: {{talojenjuttu,}} (houses')
+
+
+The stems ending in u are also without variationm and the bisyllabic ones
+have the same simple allomorph pattern:
+* __asu__: {{asu+N+Sg+Nom}} (outfit)
+* __asua__: {{asu+N+Sg+Par}} ()
+* __asuun__: {{asu+N+Sg+Ill}} ()
+* __asuna__: {{asu+N+Sg+Ess}} ()
+* __asussa__: {{asu+N+Sg+Ine}} ()
+* __asuja__: {{asu+N+Pl+Par}} ()
+* __asujen__: {{asu+N+Pl+Gen}} ()
+* __asuihin__: {{asu+N+Pl+Ill}} ()
+* __asuina__: {{asu+N+Pl+Ess}} ()
+* __asuissa__: {{asu+N+Pl+Ine}} ()
+
+* __kärry__: {{kärry+N+Sg+Nom}} (cart)
+* __kärryä__: {{kärry+N+Sg+Par}} ()
+* __kärryyn__: {{kärry+N+Sg+Ill}} ()
+* __kärrynä__: {{kärry+N+Sg+Ess}} ()
+* __kärryssä__: {{kärry+N+Sg+Ine}} ()
+* __kärryjä__: {{kärry+N+Pl+Par}} ()
+* __kärryjen__: {{kärry+N+Pl+Gen}} ()
+* __kärryihin__: {{kärry+N+Pl+Ill}} ()
+* __kärryinä__: {{kärry+N+Pl+Ess}} ()
+* __kärryissä__: {{kärry+N+Pl+Ine}} ()
+
+* __mömmö__: {{mömmö+N+Sg+Nom}} (gunk)
+* __mömmöä__: {{mömmö+N+Sg+Par}} ()
+* __mömmöön__: {{mömmö+N+Sg+Ill}} ()
+* __mömmönä__: {{mömmö+N+Sg+Ess}} ()
+* __mömmössä__: {{mömmö+N+Sg+Ine}} ()
+* __mömmöjä__: {{mömmö+N+Pl+Par}} ()
+* __mömmöjen__: {{mömmö+N+Pl+Gen}} ()
+* __mömmöihin__: {{mömmö+N+Pl+Ill}} ()
+* __mömmöinä__: {{mömmö+N+Pl+Ess}} ()
+* __mömmöissä__: {{mömmö+N+Pl+Ine}} ()
+
+
+* __ukko__: {{ukko+N+Sg+Nom}} (geezer)
+* __ukossa__: {{ukko+N+Sg+Ine}} ()
+* __ukoista__: {{ukko+N+Pl+Ela}} ()
+* __ukkoihin__: {{ukko+N+Pl+Ill}} ()
+
+
+* __tikku__: {{tikku+N+Sg+Nom}} (stick)
+* __tikussa__: {{tikku+N+Sg+Ine}} ()
+* __tikuista__: {{tikku+N+Pl+Ela}} ()
+* __tikkuihin__: {{tikku+N+Pl+Ill}} ()
+
+
+* __myrkky__: {{myrkky+N+Sg+Nom}} (poison)
+* __myrkyssä__: {{myrkky+N+Sg+Ine}} ()
+* __myrkyistä__: {{myrkky+N+Pl+Ela}} ()
+* __myrkkyihin__: {{myrkky+N+Pl+Ill}} ()
+
+* __yökkö__: {{yökkö+N+Sg+Nom}} (nightfly)
+* __yökössä__: {{yökkö+N+Sg+Ine}} ()
+* __yököistä__: {{yökkö+N+Pl+Ela}} ()
+* __yökköihin__: {{yökkö+N+Pl+Ill}} ()
+
+* __happo__: {{happo+N+Sg+Nom}} (acid)
+* __hapossa__: {{happo+N+Sg+Ine}} ()
+* __hapoista__: {{happo+N+Pl+Ela}} ()
+* __happoihin__: {{happo+N+Pl+Ill}} ()
+
+
+* __lippu__: {{lippu+N+Sg+Nom}} ()
+* __lipussa__: {{lippu+N+Sg+Ine}} ()
+* __lipuista__: {{lippu+N+Pl+Ela}} ()
+* __lippuihin__: {{lippu+N+Pl+Ill}} ()
+
+
+* __ryyppy__: {{ryyppy+N+Sg+Nom}} (swirl)
+* __ryypyssä__: {{ryyppy+N+Sg+Ine}} ()
+* __ryypyistä__: {{ryyppy+N+Pl+Ela}} ()
+* __ryyppyihin__: {{ryyppy+N+Pl+Ill}} ()
+
+* __törppö__: {{törppö+N+Sg+Nom}} (bozo)
+* __törpössä__: {{törppö+N+Sg+Ine}} ()
+* __törpöistä__: {{törppö+N+Pl+Ela}} ()
+* __törppöihin__: {{törppö+N+Pl+Ill}} ()
+
+* __hirtto__: {{hirtto+N+Sg+Nom}} (hanging)
+* __hirtossa__: {{hirtto+N+Sg+Ine}} ()
+* __hirtoista__: {{hirtto+N+Pl+Ela}} ()
+* __hirttoihin__: {{hirtto+N+Pl+Ill}} ()
+
+
+* __torttu__: {{torttu+N+Sg+Nom}} (tart)
+* __tortussa__: {{torttu+N+Sg+Ine}} ()
+* __tortuista__: {{torttu+N+Pl+Ela}} ()
+* __torttuihin__: {{torttu+N+Pl+Ill}} ()
+
+
+* __pytty__: {{pytty+N+Sg+Nom}} (cup)
+* __pytyssä__: {{pytty+N+Sg+Ine}} ()
+* __pytyistä__: {{pytty+N+Pl+Ela}} ()
+* __pyttyihin__: {{pytty+N+Pl+Ill}} ()
+
+* __pönttö__: {{pönttö+N+Sg+Nom}} (pot)
+* __pöntössä__: {{pönttö+N+Sg+Ine}} ()
+* __pöntöistä__: {{pönttö+N+Pl+Ela}} ()
+* __pönttöihin__: {{pönttö+N+Pl+Ill}} ()
+
+
+Between two vowels, the weak grade of k is optionally an apostrophe instead.
+For k that is not optionally ’, use the variation class kk ~ k instead
+(e.g. N_UKKO).
+* __teko__: {{teko+N+Sg+Nom}} (action)
+* __teossa__: {{teko+N+Sg+Ine}} ()
+* __te’ossa__: {{teko+N+Sg+Ine}} ()
+
+
+* __maku__: {{maku+N+Sg+Nom}} (taste)
+* __maussa__: {{maku+N+Sg+Ine}} ()
+* __ma’ussa__: {{maku+N+Sg+Ine}} ()
+
+
+* __näky__:  ()
+* __näyssä__:  ()
+* __nä’yssä__:  ()
+
+* __näkö__:  ()
+* __näössä__:  ()
+* __nä’össä__:  ()
+
+Between three vowels where k is surrounded by same vowels the k becomes
+obligatorily ’, for other cases use classes for k optionally ’ (e.g.
+N_TEKO) or kk ~ k (e.g. N_UKKO).
+* __ruoko__:  ()
+* __ruo’ossa__:  ()
+
+
+* :  ()
+* __liuku__:  ()
+* __liu’ussa__:  ()
+
+
+
+
+* __hepo__:  ()
+* __hevossa__:  ()
+* __hepoina__:  ()
+* __hevoista__:  ()
+
+
+* __apu__:  ()
+* __avussa__:  ()
+* __apuihin__:  ()
+* __avuista__:  ()
+
+
+* __käpy__:  ()
+* __kävyssä__:  ()
+* __käpyihin__:  ()
+* __kävyistä__:  ()
+
+* __löpö__:  ()
+* __lövössä__:  ()
+* __löpöihin__:  ()
+* __lövöistä__:  ()
+
+* __veto__:  ()
+* __vedossa__:  ()
+* __vetoihin__:  ()
+* __vedoista__:  ()
+
+
+* __kuitu__:  ()
+* __kuidussa__:  ()
+* __kuituihin__:  ()
+* __kuiduista__:  ()
+
+
+* __vety__:  ()
+* __vedyssä__:  ()
+* __vetyihin__:  ()
+* __vedyistä__:  ()
+
+* __häätö__:  ()
+* __häädössä__:  ()
+* __häädöistä__:  ()
+* __häätöihin__:  ()
+
+* __runko__:  ()
+* __rungossa__:  ()
+* __rungoista__:  ()
+* __runkoihin__:  ()
+
+
+* __vinku__:  ()
+* __vingussa__:  ()
+* __vinguista__:  ()
+* __vinkuihin__:  ()
+
+
+* __sänky__:  ()
+* __sängyssä__:  ()
+* __sängyistä__:  ()
+* __sänkyihin__:  ()
+
+* __ylänkö__:  ()
+* __ylängössä__:  ()
+* __ylängöistä__:  ()
+* __ylänköihin__:  ()
+
+* __sampo__:  ()
+* __sammossa__:  ()
+* __sampoina__:  ()
+* __sammoista__:  ()
+
+
+* __rumpu__:  ()
+* __rummussa__:  ()
+* __rumpuihin__:  ()
+* __rummuista__:  ()
+
+
+
+* __lämpö__:  ()
+* __lämmössä__:  ()
+* __lämpöihin__:  ()
+* __lämmöistä__:  ()
+
+* __kielto__:  ()
+* __kiellossa__:  ()
+* __kieltoihin__:  ()
+* __kielloista__:  ()
+
+
+* __huoliteltu__:  ()
+* __huolitellussa__:  ()
+* __huoliteltuihin__:  ()
+* __huolitelluista__:  ()
+
+
+* __epäilty__:  ()
+* __epäillyssä__:  ()
+* __epäiltyihin__:  ()
+* __epäillyistä__:  ()
+
+* __sisältö__:  ()
+* __sisällössä__:  ()
+* __sisällöistä__:  ()
+* __sisältöihin__:  ()
+
+* __tunto__:  ()
+* __tunnossa__:  ()
+* __tuntoihin__:  ()
+* __tunnoista__:  ()
+
+
+* __lintu__:  ()
+* __linnussa__:  ()
+* __lintuihin__:  ()
+* __linnuista__:  ()
+
+
+* __mänty__:  ()
+* __männyssä__:  ()
+* __mäntyihin__:  ()
+* __männyistä__:  ()
+
+* __kääntö__:  ()
+* __käännössä__:  ()
+* __käännöistä__:  ()
+* __kääntöihin__:  ()
+
+* __siirto__:  ()
+* __siirrossa__:  ()
+* __siirtoihin__:  ()
+* __siirroista__:  ()
+
+
+
+
+
+
+* __luku__:  ()
+* __luvussa__:  ()
+* __luvuista__:  ()
+* __lukuihin__:  ()
+
+
+* __kyky__:  ()
+* __kyvyssä__:  ()
+* __kyvyistä__:  ()
+* __kykyihin__:  ()
+
+
+The trisyllabic and longer words with stem vowel o have no stem variation
+either, but selection of suffix allomorphs for plural genitives and:
+* __ruipelo__:  ()
+* __ruipeloita__:  ()
+* __ruipeloja__:  ()
+* __ruipelojen__:  ()
+* __ruipeloiden__:  ()
+* __ruipeloitten__:  ()
+
+* __seikkailu__:  ()
+* __seikkailuja__:  ()
+* __seikkailuita__:  ()
+* __seikkailujen__:  ()
+* __seikkailuiden__:  ()
+* __seikkailuitten__:  ()
+
+* __vehkeily__:  ()
+* __vehkeilyjä__:  ()
+* __vehkeilyitä__:  ()
+* __vehkeilyjen__:  ()
+* __vehkeilyiden__:  ()
+* __vehkeilyitten__:  ()
+
+* __jäätelö__:  ()
+* __jäätelöjen__:  ()
+* __jäätelöiden__:  ()
+* __jäätelöitten__:  ()
+
+The words with stem vowel o preceded by vowels still have no more stem
+variation than other cases, but give yet another pattern of allomorphs for:
+* __tuomio__:  ()
+* __tuomioa__* (is not standard language)
+* __tuomiota__:  ()
+* __tuomioita__:  ()
+* __tuomiojen__* (is not standard language)
+* __tuomioiden__:  ()
+* __tuomioitten__:  ()
+
+* __häiriö__:  ()
+* __häiriötä__:  ()
+* __häiriöiden__:  ()
+* __häiriöitten__:  ()
+
+Similar inflection exists in limited amounts in new loan words that are
+written as pronounced (thus taking no stem variation but still ending
+* __zombie__:  ()
+* __zombieta__:  ()
+* __zombieita__:  ()
+* __zombieiden__:  ()
+* __zombieitten__:  ()
+
+Similar inflection exists in limited amounts in new loan words that are
+written as pronounced (thus taking no stem variation but still ending
+* __Bernie__:  ()
+* __Bernietä__:  ()
+* __Bernieitä__:  ()
+* __Bernieiden__:  ()
+* __Bernieitten__:  ()
+
+
+The trisyllabic words ending with gradating long k have plural illative
+* __lepakko__:  ()
+* __lepakoihin__:  ()
+* __lepakkoihin__:  ()
+
+The trisyllabic words ending with gradating long k have plural illative
+* __yksikkö__:  ()
+* __yksiköihin__:  ()
+* __yksikköihin__:  ()
+
+the i: e : 0 variation:
+* __ruuvi__:  ()
+* __ruuveina__:  ()
+* __ruuvien__:  ()
+
+* __alkyyli__:  ()
+* __alkyyleinä__:  ()
+* __alkyylien__:  ()
+
+The i stems combined with (quantitative) gradation of k will form five
+* __lokki__:  ()
+* __lokissa__:  ()
+* __lokkeina__:  ()
+* __lokeista__:  ()
+* __lokkien__:  ()
+
+* __häkki__:  ()
+* __häkissä__:  ()
+* __häkkeinä__:  ()
+* __häkeistä__:  ()
+* __häkkien__:  ()
+
+* __kuppi__:  ()
+* __kupissa__:  ()
+* __kuppeina__:  ()
+* __kupeista__:  ()
+* __kuppien__:  ()
+
+* __tyyppi__:  ()
+* __tyypissä__:  ()
+* __tyyppeinä__:  ()
+* __tyypeistä__:  ()
+* __tyyppien__:  ()
+
+* __kortti__:  ()
+* __kortissa__:  ()
+* __kortteina__:  ()
+* __korteista__:  ()
+* __korttien__:  ()
+
+
+
+* __skeitti__:  ()
+* __skeitissä__:  ()
+* __skeitteinä__:  ()
+* __skeiteistä__:  ()
+* __skeittien__:  ()
+
+* __laki__:  ()
+* __laissa__:  ()
+* __la’issa__:  ()
+* __lakeina__:  ()
+* __laeista__:  ()
+* __la’eista__:  ()
+* __lakien__:  ()
+
+* __hupi__:  ()
+* __huvissa__:  ()
+* __hupeina__:  ()
+* __huveista__:  ()
+* __hupien__:  ()
+
+
+
+* __tauti__:  ()
+* __taudissa__:  ()
+* __tauteina__:  ()
+* __taudeista__:  ()
+* __tautien__:  ()
+
+* __nihti__:  ()
+* __nihdissä__:  ()
+* __nihteinä__:  ()
+* __nihdeistä__:  ()
+* __nihtien__:  ()
+
+* __vanki__:  ()
+* __vangissa__:  ()
+* __vankeina__:  ()
+* __vangeista__:  ()
+* __vankien__:  ()
+
+* __väylinki__:  ()
+* __väylingissä__:  ()
+* __väylinkeinä__:  ()
+* __väylingeistä__:  ()
+* __väylinkien__:  ()
+
+
+* __pelti__:  ()
+* __pellissä__:  ()
+* __pelteinä__:  ()
+* __pelleistä__:  ()
+* __peltien__:  ()
+
+* __sointi__:  ()
+* __soinnissa__:  ()
+* __sointeina__:  ()
+* __soinneista__:  ()
+* __sointien__:  ()
+
+* __vienti__:  ()
+* __viennissä__:  ()
+* __vienteinä__:  ()
+* __vienneistä__:  ()
+* __vientien__:  ()
+
+New loan words ending in consonant may be inflected as i stem words
+* __punk__:  ()
+* __punkeina__:  ()
+* __punkien__:  ()
+
+New loan words ending in consonant may be inflected as i stem words
+* __zen__:  ()
+* __zeneinä__:  ()
+* __zenien__:  ()
+
+trisyllabic i : e : 0 variation:
+* __kanaali__:  ()
+* __kanaaleja__:  ()
+* __kanaaleiden__:  ()
+
+* __kehveli__:  ()
+* __kehvelejä__:  ()
+* __kehveleiden__:  ()
+
+* __stadion__:  ()
+* __stadioneja__:  ()
+* __stadioneiden__:  ()
+
+* __besserwisser__:  ()
+* __besserwisserejä__:  ()
+* __besserwissereiden__:  ()
+
+* __ovi__:  ()
+* __ovena__:  ()
+* __ovessa__:  ()
+* __ovissa__:  ()
+* __ovista__:  ()
+
+* __helmi__:  ()
+* __helmenä__:  ()
+* __helmessä__:  ()
+* __helmissä__:  ()
+* __helmistä__:  ()
+
+* __happi__:  ()
+* __hapessa__:  ()
+* __happina__:  ()
+* __hapista__:  ()
+* __happien__:  ()
+
+* __typpi__:  ()
+* __typessä__:  ()
+* __typpinä__:  ()
+* __typistä__:  ()
+* __typpien__:  ()
+
+* __noki__:  ()
+* __noessa__:  ()
+* __nokina__:  ()
+* __noista__:  ()
+* __nokien__:  ()
+
+* __käki__:  ()
+* __käessä__:  ()
+* __käkinä__:  ()
+* __käistä__:  ()
+* __käkien__:  ()
+
+* __korpi__:  ()
+* __korvessa__:  ()
+* __korpina__:  ()
+* __korvista__:  ()
+* __korpien__:  ()
+
+* __kilpi__:  ()
+* __kilvessä__:  ()
+* __kilpinä__:  ()
+* __kilvistä__:  ()
+* __kilpien__:  ()
+
+* __lahti__:  ()
+* __lahdessa__:  ()
+* __lahtina__:  ()
+* __lahdista__:  ()
+* __lahtien__:  ()
+
+* __lehti__:  ()
+* __lehdessä__:  ()
+* __lehtinä__:  ()
+* __lehdistä__:  ()
+* __lehtien__:  ()
+
+* __onki__:  ()
+* __ongessa__:  ()
+* __onkina__:  ()
+* __ongista__:  ()
+* __onkien__:  ()
+
+* __henki__:  ()
+* __hengessä__:  ()
+* __henkinä__:  ()
+* __hengistä__:  ()
+* __henkien__:  ()
+
+* __lampi__:  ()
+* __lammessa__:  ()
+* __lampina__:  ()
+* __lammista__:  ()
+* __lampien__:  ()
+
+* __rimpi__:  ()
+* __rimmessä__:  ()
+* __rimpinä__:  ()
+* __rimmistä__:  ()
+* __rimpien__:  ()
+
+* __€__: {{arki}} ()
+
+* __järki__:  ()
+* __järjessä__:  ()
+* __järkinä__:  ()
+* __järjistä__:  ()
+* __järkien__:  ()
+
+The new words with e stem have same allomorphy selection as old o, u, y, ö
+stems without variation:
+* __nalle__:  ()
+* __nallea__:  ()
+* __nalleen__:  ()
+* __nalleja__:  ()
+* __nallejen__:  ()
+* __nalleihin__:  ()
+
+Dictionary claims they also have slightly greater probability for archaic
+form of plural:
+* __nallein__:  ()
+
+
+* __nisse__:  ()
+* __nisseä__:  ()
+* __nisseen__:  ()
+* __nissejä__:  ()
+* __nissejen__:  ()
+* __nisseihin__:  ()
+
+* __nukke__:  ()
+* __nukkea__:  ()
+* __nukkeen__:  ()
+* __nukkeja__:  ()
+* __nukkejen__:  ()
+* __nukkeihin__:  ()
+
+
+* __jeppe__:  ()
+* __jeppeä__:  ()
+* __jeppeen__:  ()
+* __jeppejä__:  ()
+* __jeppejen__:  ()
+* __jeppeihin__:  ()
+
+
+* __Lotte__:  ()
+* __Lottea__:  ()
+* __Lotteen__:  ()
+* __Lotteja__:  ()
+* __Lottejen__:  ()
+* __Lotteihin__:  ()
+
+* __kirja__:  ()
+* __kirjaa__:  ()
+* __kirjana__:  ()
+* __kirjassa__:  ()
+* __kirjoina__:  ()
+* __kirjojen__:  ()
+* __kirjoihin__:  ()
+
+
+
+* __politiikka__:  ()
+* __politiikkaa__:  ()
+* __politiikkana__:  ()
+* __politiikassa__:  ()
+* __politiikkoina__:  ()
+* __politiikkojen__:  ()
+* __politiikkoihin__:  ()
+
+* __tippa__:  ()
+* __tippaa__:  ()
+* __tippana__:  ()
+* __tipassa__:  ()
+* __tippoina__:  ()
+* __tippojen__:  ()
+* __tippoihin__:  ()
+
+* __mitta__:  ()
+* __mittaa__:  ()
+* __mittana__:  ()
+* __mitassa__:  ()
+* __mittoina__:  ()
+* __mittojen__:  ()
+* __mittoihin__:  ()
+
+* __lanka__:  ()
+* __lankaa__:  ()
+* __lankana__:  ()
+* __langassa__:  ()
+* __lankoina__:  ()
+* __lankojen__:  ()
+* __lankoihin__:  ()
+
+* __lanka__:  ()
+* __lankaa__:  ()
+* __lankana__:  ()
+* __langassa__:  ()
+* __lankoina__:  ()
+* __lankojen__:  ()
+* __lankoihin__:  ()
+
+
+* __salpa__:  ()
+* __salpaa__:  ()
+* __salpana__:  ()
+* __salvassa__:  ()
+* __salpoina__:  ()
+* __salpojen__:  ()
+* __salpoihin__:  ()
+
+* __pata__:  ()
+* __pataa__:  ()
+* __patana__:  ()
+* __padassa__:  ()
+* __patoina__:  ()
+* __patojen__:  ()
+* __patoihin__:  ()
+
+* __lanka__:  ()
+* __lankaa__:  ()
+* __lankana__:  ()
+* __langassa__:  ()
+* __lankoina__:  ()
+* __lankojen__:  ()
+* __lankoihin__:  ()
+
+* __rampa__:  ()
+* __rampaa__:  ()
+* __rampana__:  ()
+* __rammassa__:  ()
+* __rampoina__:  ()
+* __rampojen__:  ()
+* __rampoihin__:  ()
+
+* __valta__:  ()
+* __valtaa__:  ()
+* __valtana__:  ()
+* __vallassa__:  ()
+* __valtoina__:  ()
+* __valtojen__:  ()
+* __valtoihin__:  ()
+
+* __kutsunta__:  ()
+* __kutsuntaa__:  ()
+* __kutsuntana__:  ()
+* __kutsunnassa__:  ()
+* __kutsuntoina__:  ()
+* __kutsuntojen__:  ()
+* __kutsuntoihin__:  ()
+
+* __kysyntä__:  ()
+* __kysyntää__:  ()
+* __kysnytänä__:  ()
+* __kysynnässä__:  ()
+* __kysyntöinä__:  ()
+* __kysyntöjen__:  ()
+* __kysyntöihin__:  ()
+
+* __kerta__:  ()
+* __kertaa__:  ()
+* __kertana__:  ()
+* __kerrassa__:  ()
+* __kertoina__:  ()
+* __kertojen__:  ()
+* __kertoihin__:  ()
+
+* __soittaja__:  ()
+* __soittajaa__:  ()
+* __soittajana__:  ()
+* __soittajassa__:  ()
+* __soittajina__:  ()
+* __soittajien__:  ()
+* __soittajiin__:  ()
+
+* __höpöttäjä__:  ()
+* __höpöttäjää__:  ()
+* __höpöttäjänä__:  ()
+* __höpöttäjässä__:  ()
+* __höpöttäjinä__:  ()
+* __höpöttäjien__:  ()
+* __höpöttäjiin__:  ()
+
+* __luokka__:  ()
+* __luokkaa__:  ()
+* __luokkana__:  ()
+* __luokassa__:  ()
+* __luokkina__:  ()
+* __luokissa__:  ()
+* __luokkien__:  ()
+
+* __hölkkä__:  ()
+* __hölkkää__:  ()
+* __hölkkänä__:  ()
+* __hölkässä__:  ()
+* __hölkkinä__:  ()
+* __hölkissä__:  ()
+* __hölkkien__:  ()
+
+* __kuoppa__:  ()
+* __kuoppaa__:  ()
+* __kuoppana__:  ()
+* __kuopassa__:  ()
+* __kuoppina__:  ()
+* __kuopissa__:  ()
+* __kuoppien__:  ()
+
+* __seppä__:  ()
+* __seppää__:  ()
+* __seppänä__:  ()
+* __sepässä__:  ()
+* __seppinä__:  ()
+* __sepissä__:  ()
+* __seppien__:  ()
+
+* __rotta__:  ()
+* __rottaa__:  ()
+* __rottana__:  ()
+* __rotassa__:  ()
+* __rottina__:  ()
+* __rotissa__:  ()
+* __rottien__:  ()
+
+* __kenttä__:  ()
+* __kenttää__:  ()
+* __kenttänä__:  ()
+* __kentässä__:  ()
+* __kenttinä__:  ()
+* __kentissä__:  ()
+* __kenttien__:  ()
+
+* __ruoka__:  ()
+* __ruokaa__:  ()
+* __ruokana__:  ()
+* __ruoassa__:  ()
+* __ruokina__:  ()
+* __ruoissa__:  ()
+* __ruokien__:  ()
+* __ruo’assa__:  ()
+* __ruo’issa__:  ()
+
+* __ikä__:  ()
+* __ikää__:  ()
+* __ikänä__:  ()
+* __iässä__:  ()
+* __i’issä__:  ()
+* __ikiin__:  ()
+
+* __reikä__:  ()
+* __reikää__:  ()
+* __reikänä__:  ()
+* __reiässä__:  ()
+* __rei’issä__:  ()
+* __reikiin__:  ()
+
+* __lupa__:  ()
+* __lupaa__:  ()
+* __lupana__:  ()
+* __luvassa__:  ()
+* __luppina__:  ()
+* __luvissa__:  ()
+* __lupien__:  ()
+
+* __leipä__:  ()
+* __leipää__:  ()
+* __leipänä__:  ()
+* __leivässä__:  ()
+* __leipinä__:  ()
+* __leivissä__:  ()
+* __leipien__:  ()
+
+* __sota__:  ()
+* __sotaa__:  ()
+* __ostana__:  ()
+* __sodassa__:  ()
+* __sotina__:  ()
+* __sodissa__:  ()
+* __sotien__:  ()
+
+* __pöytä__:  ()
+* __pöytää__:  ()
+* __pöytänä__:  ()
+* __pöydässä__:  ()
+* __pöytinä__:  ()
+* __pöydissä__:  ()
+* __pöytien__:  ()
+
+* __honka__:  ()
+* __honkaa__:  ()
+* __honkana__:  ()
+* __hongassa__:  ()
+* __honkina__:  ()
+* __hongissa__:  ()
+* __honkien__:  ()
+
+* __kenkä__:  ()
+* __kenkää__:  ()
+* __kenkänä__:  ()
+* __kengässä__:  ()
+* __kengissä__:  ()
+* __kenkiin__:  ()
+
+
+* __kompa__:  ()
+* __kompaa__:  ()
+* __kompana__:  ()
+* __kommassa__:  ()
+* __kompina__:  ()
+* __kommissa__:  ()
+* __kompien__:  ()
+
+
+* __multa__:  ()
+* __multaa__:  ()
+* __multana__:  ()
+* __mullassa__:  ()
+* __multina__:  ()
+* __mullissa__:  ()
+* __multien__:  ()
+
+* __syltä__:  ()
+* __syltää__:  ()
+* __syltänä__:  ()
+* __syllässä__:  ()
+* __syltinä__:  ()
+* __syllissä__:  ()
+* __syltien__:  ()
+
+* __kunta__:  ()
+* __kuntaa__:  ()
+* __kuntana__:  ()
+* __kunnassa__:  ()
+* __kuntina__:  ()
+* __kunnissa__:  ()
+* __kuntien__:  ()
+
+* __emäntä__:  ()
+* __emäntää__:  ()
+* __emäntänä__:  ()
+* __emännässä__:  ()
+* __emäntinä__:  ()
+* __emännissä__:  ()
+* __emäntien__:  ()
+
+
+* __selkä__:  ()
+* __selkää__:  ()
+* __selkänä__:  ()
+* __seljässä__:  ()
+* __seljissä__:  ()
+* __selkiin__:  ()
+
+
+
+Certain trisyllabic or longer a stems allow a lot of allomorphs and both
+a : o : 0 variations:
+* __probleema__:  ()
+* __probleemia__:  ()
+* __probleemoita__:  ()
+* __probleemien__:  ()
+* __probleemoiden__:  ()
+* __probleemoitten__:  ()
+* __probleemiin__:  ()
+* __probleemoihin__:  ()
+
+Also less commonly
+* __probleemojen__:  ()
+* __probleemoja__:  ()
+* __probleemain__:  ()
+
+* __käpälä__:  ()
+* __käpälää__:  ()
+* __käpälänä__:  ()
+* __käpälässä__:  ()
+* __käpälinä__:  ()
+* __käpälien__:  ()
+* __käpäliin__:  ()
+
+
+* __makkara__:  ()
+* __makkaraa__:  ()
+* __makkarana__:  ()
+* __makkaroina__:  ()
+* __makkaroita__:  ()
+* :  ()
+
+* __häkkyrä__:  ()
+* __häkkyrää__:  ()
+* __häkkyränä__:  ()
+* __häkkyröinä__:  ()
+* __häkkyröitä__:  ()
+
+
+* __mörinä__:  ()
+* __mörinää__:  ()
+* __mörinänä__:  ()
+* __mörinässä__:  ()
+
+0: o stem variation combines with trisyllabic class of special illatives
+* __lusikka__:  ()
+* __lusikkoina__:  ()
+* __lusikoissa__:  ()
+* __lusikkoihin__:  ()
+* __lusikoihin__:  ()
+
+* __kämmekkä__:  ()
+* __kämmeköihin__:  ()
+* __kämmekköihin__:  ()
+
+0: o stem variation combines with trisyllabic class of special illatives
+* __ulappa__:  ()
+* __ulappoina__:  ()
+* __ulapoissa__:  ()
+* __ulappoihin__:  ()
+* __ulapoihin__:  ()
+
+0: o stem variation combines with trisyllabic class of special illatives
+* __pohatta__:  ()
+* __pohattoina__:  ()
+* __pohatoissa__:  ()
+* __pohattoihin__:  ()
+* __pohatoihin__:  ()
+
+* __sokea__:  ()
+* __sokeana__:  ()
+* __sokeina__:  ()
+* __sokeissa__:  ()
+* __sokeihin__:  ()
+* __sokeisiin__:  ()
+
+* __lipeä__:  ()
+* __lipeänä__:  ()
+* __lipeinä__:  ()
+* __lipeissä__:  ()
+* __lipeihin__:  ()
+* __lipeisiin__:  ()
+
+* __vanhempi__:  ()
+* __vanhempana__:  ()
+* __vanhemmassa__:  ()
+* __vanhempina__:  ()
+* __vanhemmista__:  ()
+
+* __vapaa__:  ()
+
+* __tienoo__:  ()
+
+* __kerjuu__:  ()
+
+* __maa__:  ()
+
+* __tee__:  ()
+
+* __hai__:  ()
+
+* __hai__:  ()
+
+* __ookoo__:  ()
+
+* __puu__:  ()
+
+* __pyy__:  ()
+
+* __pää__:  ()
+
+* __köö__:  ()
+
+* __tie__:  ()
+
+* __suo__:  ()
+
+* __työ__:  ()
+
+* __nugaa__:  ()
+* __nugaata__:  ()
+* __nugaana__:  ()
+* __nugaahan__:  ()
+* __nugaaseen__:  ()
+* __nugaissa__:  ()
+* __nugaista__:  ()
+* __nugaaseen__:  ()
+* __nugaiden__:  ()
+* __nugaitten__:  ()
+* __nugaisiin__:  ()
+* __nugaihin__:  ()
+
+* __patee__:  ()
+* __pateeta__:  ()
+* __pateena__:  ()
+* __pateehen__:  ()
+* __pateeseen__:  ()
+* __pateissa__:  ()
+* __pateista__:  ()
+* __pateeseen__:  ()
+* __pateiden__:  ()
+* __pateitten__:  ()
+* __pateisiin__:  ()
+* __pateihin__:  ()
+
+* __bidee__:  ()
+* __bideetä__:  ()
+* __bideenä__:  ()
+* __bideehen__:  ()
+* __bideeseen__:  ()
+* __bideissä__:  ()
+* __bideistä__:  ()
+* __bideeseen__:  ()
+* __bideiden__:  ()
+* __bideitten__:  ()
+* __bideisiin__:  ()
+* __bideihin__:  ()
+
+
+* __trikoo__:  ()
+* __trikoota__:  ()
+* __trikoona__:  ()
+* __trikoissa__:  ()
+* __trikoista__:  ()
+* __trikooseen__:  ()
+* __trikoiden__:  ()
+* __trikoitten__:  ()
+* __trikoihin__:  ()
+* __trikoisiin__:  ()
+
+* __raguu__:  ()
+* __raguuta__:  ()
+* __raguuna__:  ()
+* __raguussa__:  ()
+* __raguista__:  ()
+* __raguuseen__:  ()
+* __raguiden__:  ()
+* __raguitten__:  ()
+* __raguisiin__:  ()
+* __raguihen__:  ()
+
+* __fondyy__:  ()
+* __fondyytä__:  ()
+* __fondyynä__:  ()
+* __fondyyssä__:  ()
+* __fondyistä__:  ()
+* __fondyyseen__:  ()
+* __nugaiden__:  ()
+* __nugaitten__:  ()
+* __nugaisiin__:  ()
+* __nugaihin__:  ()
+
+* __Hyvinkää__:  ()
+
+* __miljöö__:  ()
+* __miljöötä__:  ()
+* __miljoöönä__:  ()
+* __miljöössä__:  ()
+* __miljöistä__:  ()
+* __miljööseen__:  ()
+* __miljöiden__:  ()
+* __miljöitten__:  ()
+* __miljöisiin__:  ()
+* __milhjöihin__:  ()
+
+Some loan words don't end in long vowel but work like they would. The
+official dictionary says these words should avoid plural genitive itten but
+not iden, in reality they may be in absolultely free variation.
+
+* __rosé__:  ()
+
+
+* __bébé__:  ()
+
+* __brasserie__:  ()
+
+
+* __brie__:  ()
+
+* __fondue__:  ()
+* __fondueta__:  ()
+* __fonduetä__:  ()
+* __fonduena__:  ()
+* __fonduenä__:  ()
+* __fonduessa__:  ()
+* __fonduessä__:  ()
+* __fodnueina__:  ()
+* __fondueinä__:  ()
+* __fondueista__:  ()
+* __fondueistä__:  ()
+* __fondueita__:  ()
+* __fondueitä__:  ()
+* __fondueiden__:  ()
+* __fondueisiin__:  ()
+* __fondueiden__:  ()
+* __fondueitten__:  ()
+* __fondueihin__:  ()
+? fondueisiin
+
+Some loan words inflect irregularly, either more along the written form or
+the pronunciation. 
+
+Some loan words inflect irregularly, either more along the written form or
+the pronunciation. 
+
+Some loan words inflect irregularly, either more along the written form or
+
+Some loan words inflect irregularly, either more along the written form or
+
+Some loan words inflect irregularly, either more along the written form or
+
+
+
+Some loan words inflect irregularly, either more along the written form or
+
+* __nougat__:  ()
+
+* __parfait__:  ()
+
+* __beignet__:  ()
+
+* __Versailles__:  ()
+
+* __Versailles__:  ()
+
+* __bordeaux__:  ()
+
+* __show__:  ()
+
+* __Camus__:  ()
+
+* __monsieur__:  ()
+
+* __tuli__:  ()
+
+* __uni__:  ()
+
+* __uni__:  ()
+
+* __hiiri__:  ()
+
+* __kaari__:  ()
+
+* __mieli__:  ()
+
+* __luomi__:  ()
+
+* __niemi__:  ()
+
+* __kausi__:  ()
+
+* __köysi__:  ()
+
+* __kansi__:  ()
+
+* __kynsi__:  ()
+
+* __varsi__:  ()
+
+* __hirsi__:  ()
+
+* __jälsi__:  ()
+
+* __lapsi__:  ()
+
+* __uksi__:  ()
+
+* __veitsi__:  ()
+
+* __veitsi__:  ()
+
+* __haaksi__:  ()
+
+
+The consonant stems use inverted gradation if applicable, that is, the 
+nominatives have end in consonants and their gradating consonants are in
+weak form.
+
+* __ahven__:  ()
+
+* __ahven__:  ()
+
+* __siemen__:  ()
+
+* __ajatar__:  ()
+
+* __tytär__:  ()
+
+* __ien__:  ()
+
+* __puhelin__:  ()
+
+* __elin__:  ()
+
+* __heitin__:  ()
+
+* __heitin__:  ()
+
+* __puin__:  ()
+
+* __pyyhin__:  ()
+
+* __raavin__:  ()
+
+* __särvin__:  ()
+
+* __vaadin__:  ()
+
+* __vaadin__:  ()
+
+* __säädin__:  ()
+
+
+* __askellin__:  ()
+
+* __sivellin__:  ()
+
+* __käännin__:  ()
+
+* __muunnin__:  ()
+
+* __kiharrin__:  ()
+
+* __kiharrin__:  ()
+
+* __kierrin__:  ()
+
+* __poljin__:  ()
+
+
+
+* __työtön__:  ()
+
+* __sisin__:  ()
+
+* __sisin__:  ()
+
+* __vasen__:  ()
+
+* __aakkostaminen__:  ()
+
+* __kylkiäinen__:  ()
+
+* __vakuutus__:  ()
+
+* __räjäytys__:  ()
+
+* __aakkosellisuus__:  ()
+
+* __köyhyys__:  ()
+
+* __patsas__:  ()
+
+* __patsas__:  ()
+
+* __mätäs__:  ()
+
+* __patsas__:  ()
+
+* __patsas__:  ()
+
+* __patsas__:  ()
+
+* __asukas__:  ()
+
+* __asukas__:  ()
+
+* __saapas__:  ()
+
+* __rypäs__:  ()
+
+* __ratas__:  ()
+
+* __mätäs__:  ()
+
+* __mätäs__:  ()
+
+* __äes__:  ()
+
+* __varas__:  ()
+
+* __ruis__:  ()
+
+* __varvas__:  ()
+
+* __seiväs__:  ()
+
+* __tehdas__:  ()
+
+* __kangas__:  ()
+
+* __köngäs__:  ()
+
+* __hammas__:  ()
+
+* __allas__:  ()
+
+* __kinnas__:  ()
+
+* __rynnäs__:  ()
+
+* __porras__:  ()
+
+* __mies__:  ()
+
+* __olut__:  ()
+
+* __neitsyt__:  ()
+
+* __neitsyt__:  ()
+
+* __kevät__:  ()
+
+* __vuosituhat__:  ()
+
+* __aivokuollut__:  ()
+
+* __sivistynyt__:  ()
+
+* __aste__:  ()
+
+* __piste__:  ()
+
+* __kastike__:  ()
+
+* __lääke__:  ()
+
+* __ape__:  ()
+
+* __ripe__:  ()
+
+* __osoite__:  ()
+
+* __käsite__:  ()
+
+* __koe__:  ()
+
+* __pyyhe__:  ()
+
+* __tarve__:  ()
+
+* __viive__:  ()
+
+* __kide__:  ()
+
+* __luode__:  ()
+
+* __lumme__:  ()
+
+* __mielle__:  ()
+
+* __vuolle__:  ()
+
+* __rakenne__:  ()
+
+* __kiinne__:  ()
+
+* __murre__:  ()
+
+* __kierre__:  ()
+
+* __hylje__:  ()
+
+* __pohje__:  ()
+
+* __askar__:  ()
+
+* __kyynel__:  ()
+
+* __säen__:  ()
+
+* __taival__:  ()
+
+
+* __udar__:  ()
+
+* __penger__:  ()
+
+* __ommel__:  ()
+
+* __ommel__:  ()
+
+* __kinner__:  ()
+
+* __kannel__:  ()
+
+* __manner__:  ()
+
+* __manner__:  ()
+
+* __auer__:  ()
+
+* __veri__:  ()
+* __verta__:  ()
+* __vertä__* (is not standard language)
+
+* __meri__:  ()
+* __merta__:  ()
+* __mertä__* (is not standard language)
+
+* __uros__:  ()
+* __uroksen__:  ()
+* __uroon__:  ()
+
+* __veli__:  ()
+* __veljeä__:  ()
+* __veljen__:  ()
+
+* __lanka__:  ()
+* __lankaa__:  ()
+* __lankana__:  ()
+* __langassa__:  ()
+* __lankoina__:  ()
+* __lankojen__:  ()
+* __lankoihin__:  ()
+
+* __ruoka__:  ()
+* __ruokaa__:  ()
+* __ruokana__:  ()
+* __ruoassa__:  ()
+* __ruokina__:  ()
+* __ruoissa__:  ()
+* __ruokien__:  ()
+* __ruo’assa__:  ()
+* __ruo’issa__:  ()
+
+Noun forms of numerals with special inflection
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The numerals are not really nouns in this morphology, for details see
+numerals_, but some of their compounds are nouns, and the following
+classes are for those that have special stem or suffix patterns not
+available with other nouns.
+The numerals 1 and 2 are in paradigm that is currently left with one other
+noun, _haaksi_, so nominals with 2 go to that class but 1 gets a new class
+for being front vowelled. 3 Has its own paradigm, 4 is like koira, 5
+like hiisi and 6 like kausi.
+The numerals 7, 8, 9 have their own paradigm, which, other than the
+nominative having extra n at the end, is same as the tri-syllabic
+a, ä stems, similarly 10 is quite like sisar with the extra en in nominative.
+
+* __aamuyksi__:  ()
+* __aamuyhtä__:  ()
+* __aamuyhtenä__:  ()
+
+* __aamukolme__:  ()
+* __aamukolmea__:  ()
+* __aamukolmeen__:  ()
+* __aamukolmia__:  ()
+* __aamukolmien__:  ()
+* __aamukolmiin__:  ()
+
+
+* __aamukahdeksan__:  ()
+* __aamukahdeksaa__:  ()
+* __aamukahdeksana__:  ()
+* __aamukahdeksassa__:  ()
+* __aamukahdeksina__:  ()
+* __aamukahdeksien__:  ()
+* __aamukahdeksiin__:  ()
+
+* __aamuyhdeksän__:  ()
+* __aamuyhdeksää__:  ()
+* __aamuyhdeksänä__:  ()
+* __aamuyhdeksässä__:  ()
+* __aamuyhdeksinä__:  ()
+* __aamuyhdeksien__:  ()
+* __aamuyhdeksiin__:  ()
+
+
+* __aamukymmenen__:  ()
+
+Plurales tantum
+^^^^^^^^^^^^^^^
+For some words, the singular forms are rare, odd, or even deemed
+ungrammatical, these words have separate classes for them.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Proper nouns are morphologically indistinct subset of nouns. They have
+some orthographical differences, required capitalisations and compounding
+with hyphens.
+
+Examples:
+* __Kalle__:  ()
+* __Joensuu__:  ()
+
+The words in dictionary paradigm class 51 refer to old closed class of
+adjective initial compounds, which follow agreeing compound pattern same
+as numbers. The amount of these words is relatively small, so they have
+been spelled out here in full form rather than using more complex methods
+of agreeing compounding, 
+c.f. VISK § 420
+FIXME: some are still missing
+
+Examples:
+* __aavameri__:  ()
+* __aavanmeren__:  ()
+* __aavoissamerissä__:  ()
+* __Iso-Britannia__:  ()
+* __Ison-Britannian__:  ()
+* __Isoissa-Britannioissa__:  ()
+
+Adjectives are words that are inflected like nouns, with few additions. For
+adjectives, the comparative derivations are usually allowed and the
+possessive suffixes are unlikely. The syntactic adjectives that do not have
+comparative derivations are nouns_, if they have nominal inflection, or
+particles_, if they do not inflect.
+
+The classification of adjectives combines the stem changes, the final 
+allomorph selection and the harmony. See the list from:
+* __aakkostettu__:  ()
+* __aakkostettuja__:  ()
+* __aakkostetut__:  ()
+* __aakkostetumpi__:  ()
+* __aakkostetumpina__:  ()
+* __aakkostetuin__:  ()
+* __aakkostetuimmat__:  ()
+
+Adjective stem variation and allomorph selection
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Adjective stems are formed like noun stems, with similar patterns. Adjectives
+have additionally the productive comparative derivations, which may have
+their own stems, particularly an e-stem for a-stem words. The examples in
+this chapter are the same set of cases as with nouns:
+singular nominative, singular essive, singular inessive, plural essive,
+plural elative, singular partitives, singular illatives, plural partitives
+plural genitives, plural illatives and the compound forms. And also the
+comparative derivations: comparative singular nominative and superlative
+singular nominative.
+
+Adjective stems without stem variation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The most basic adjective stems do not have any stem internal variation
+and use few commonest allomorphs. The word in this class end in o and are
+bi-syllabic or end in moderative hko- suffix, and do not have gradating 
+consonants.
+* __tummahko__: {{tummahko+A+Sg+Nom}} (darkish)
+* __tummahkona__: {{tummahko+A+Sg+Ess}} ()
+* __tummahkossa__: {{tummahko+A+Sg+Ine}} ()
+* __tummahkoina__: {{tummahko+A+Pl+Ess}} ()
+* __tummahkoista__: {{tummahko+A+Pl+Ine}} ()
+* __tummahkoa__: {{tummahko+A+Sg+Par}} ()
+* __tummahkota__* (is not standard language)
+* __tummahkoon__: {{tummahko+A+Sg+Ill}} ()
+* __tummahkohon__* (is not standard language)
+* __tummahkoseen__* (is not standard language)
+* __tummahkoja__: {{tummahko+A+Pl+Par}} ()
+* __tummahkoita__* (is not standard language)
+* __tummahkojen__: {{tummahko+A+Pl+Gen}} ()
+* __tummahkoiden__* (is not standard language)
+* __tummahkoitten__* (is not standard language)
+* __tummahkoihin__: {{tummahko+A+Pl+Ill}} ()
+* __tummahkoisiin__* (is not standard language)
+
+The stems ending in u are also without variation. And the bisyllabic ones,
+as well as those formed by nut participle passive^s back vowel versions
+after s stemmed verb are in this class
+* __valkaistu__: {{valkaistu+A+Sg+Nom}} (bleached)
+* __valkaistua__: {{valkaistu+A+Sg+Par}} ()
+* __valkaistuun__: {{valkaistu+A+Sg+Ill}} ()
+* __valkaistuna__: {{valkaistu+A+Sg+Ess}} ()
+* __valkaistussa__: {{valkaistu+A+Sg+Ine}} ()
+* __valkaistuja__: {{valkaistu+A+Pl+Par}} ()
+* __valkaistujen__: {{valkaistu+A+Pl+Gen}} ()
+* __valkaistuihin__: {{valkaistu+A+Pl+Ill}} ()
+* __valkaistuina__: {{valkaistu+A+Pl+Ine}} ()
+* __valkaistuissa__: {{valkaistu+A+Pl+Ine}} ()
+
+The variationless y stems are basically fronted version of u; they
+come from bisyllabic adjectives ending in y or the nut participle^s passive
+in an s stemmed front voweled verb. The traditional dictionary class is
+* __häpäisty__: {{häpäisty+A+Sg+Nom}} (defiled)
+* __häpäistyä__: {{häpäisty+A+Sg+Par}} ()
+* __häpäistyyn__: {{häpäisty+A+Sg+Ill}} ()
+* __häpäistynä__: {{häpäisty+A+Sg+Ess}} ()
+* __häpäistyssä__: {{häpäisty+A+Sg+Ine}} ()
+* __häpäistyjä__: {{häpäisty+A+Pl+Par}} ()
+* __häpäistyjen__: {{häpäisty+A+Pl+Gen}} ()
+* __häpäistyihin__: {{häpäisty+A+Pl+Ill}} ()
+* __häpäistyinä__: {{häpäisty+A+Pl+Ess}} ()
+* __häpäistyissä__: {{häpäisty+A+Pl+Ine}} ()
+
+Likewise the variationless ö stem is fronted version of the corresponding o
+stem; bisyllabic or made with moderative hkö suffix in front voweled word.
+* __hölö__: {{hölö+A+Sg+Nom}} (blabbermouth)
+* __hölöä__: {{hölö+A+Sg+Par}} ()
+* __hölöön__: {{hölö+A+Sg+Ill}} ()
+* __hölönä__: {{hölö+A+Sg+Ess}} ()
+* __hölössä__: {{hölö+A+Sg+Ine}} ()
+* __hölöjä__: {{hölö+A+Pl+Par}} ()
+* __hölöjen__: {{hölö+A+Pl+Gen}} ()
+* __hölöihin__: {{hölö+A+Pl+Ill}} ()
+* __hölöinä__: {{hölö+A+Pl+Ess}} ()
+* __hölöissä__: {{hölö+A+Pl+Ine}} ()
+
+The new words with e stem have same allomorphy selection as old short
+unchanging bisyllabic u, y, o and ö stems, and no stem-internal variation.
+* __toope__: {{toope+A+Sg+Nom}} (doofus)
+* __toopea__: {{toope+A+Sg+Par}} ()
+* __toopeen__: {{toope+A+Sg+Ill}} ()
+* __toopeja__: {{toope+A+Pl+Par}} ()
+* __toopejen__: {{toope+A+Pl+Gen}} ()
+* __toopeihin__: {{toope+A+Pl+Ill}} ()
+
+They also have slightly greater probability for archaic form of plural
+genitive:
+* __toopein,__: {{toope+A+Pl+Gen}} ()
+
+
+As with front vowels.
+* __beige__: {{beige+A+Sg+Nom}} (beige)
+
+
+The trisyllabic and longer words with stem vowel o have no stem variation
+either, but selection of suffix allomorphs for plural genitives and
+partitives is wider than for disyllabic ones. The tradtitional dictionary
+* __tohelo__: {{tohelo+A+Sg+Nom}} (clumsy)
+* __toheloita__: {{tohelo+A+Pl+Par}} ()
+* __toheloja__: {{tohelo+A+Pl+Par}} ()
+* __tohelojen__: {{tohelo+A+Pl+Gen}} ()
+* __toheloiden__: {{tohelo+Pl+Gen}} ()
+* __toheloitten__: {{tohelo+Pl+Gen}} ()
+
+And the trisyllabic ö stem as counter part of o stem. The dictionary class
+* __löperö__: {{löperö+A+Sg+Nom}} (sloppy)
+* __löperöjen__: {{löperö+A+Pl+Gen}} ()
+* __löperöiden__: {{löperö+A+Pl+Gen}} ()
+* __löperöitten__: {{löperö+A+Pl+Gen}} ()
+
+The words with stem vowel o preceded by vowels still have no more stem
+variation than other cases, but give yet another pattern of allomorphs for
+singular and plural partitives and plural genitive. The dictionary class
+* __autio__: {{autio+A+Sg+Nom}} (deserted)
+* __autioa__* (is not standard language)
+* __autiota__: {{autio+A+Sg+Par}} ()
+* __autioita__: {{autio+A+Pl+Par}} ()
+* __autiojen__* (is not standard language)
+* __autioiden__: {{autio+A+Pl+Gen}} ()
+* __autioitten__: {{autio+A+Pl+Gen}} ()
+
+The front voweled stems with ö after vowels work like their back vowel
+* __riiviö__: {{riiviö+A+Sg+Nom}} (nasty)
+* __riiviötä__: {{riiviö+A+Sg+Par}} ()
+* __riiviöiden__: {{riiviö+A+Pl+Gen}} ()
+* __riiviöitten__: {{riiviö+A+Pl+Gen}} ()
+
+There are no examples of new loan word adjectives ending in long vowel
+Furthermore there are no examples of adjectives in other classes without
+stem variation yet.
+
+Adjective stems with Consonant gradation as only stem variation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The quantitative gradation of k in basic changes stems for locative cases:
+* __kolkko__: {{kolkko+A+Sg+Nom}} (gloomy)
+* __kolkossa__: {{kolkko+A+Sg+Ine}} ()
+* __kolkoista__: {{kolkko+A+Pl+Ela}} ()
+* __kolkkoihin__: {{kolkko+A+Pl+Ill}} ()
+
+
+Similarly for u stems with quantitative k gradation:
+* __virkku__: {{virkku+A+Sg+Nom}} (???)
+* __virkussa__: {{virkku+A+Sg+Ine}} ()
+* __virkuista__: {{virkku+A+Pl+Ela}} ()
+* __virkkuihin__: {{virkku+A+Pl+Ill}} ()
+
+
+As with y and k:
+* __säikky__: {{säikky+A+Sg+Nom}} (???)
+* __säikyssä__: {{säikky+A+Sg+Ine}} ()
+* __säikyistä__: {{säikky+A+Pl+Ela}} ()
+* __säikkyihin__: {{säikky+A+Pl+Ill}} ()
+
+And ö with k:
+* __kökkö__: {{kökkö+A+Sg+Nom}} (???)
+* __kökössä__: {{kökkö+A+Sg+Ine}} ()
+* __kököistä__: {{kökkö+A+Pl+Ela}} ()
+* __kökköihin__: {{kökkö+A+Pl+Ill}} ()
+
+there is no unvarying e final adjective with k ~ 0 gradation.
+
+The quantitative gradation of p in basic changes stems for locative cases:
+* __suippo__: {{suippo+A+Sg+Nom}} (?)
+* __suipossa__: {{suippo+A+Sg+Ine}} ()
+* __suipoista__: {{suippo+A+Pl+Ela}} ()
+* __suippoihin__: {{suippo+A+Pl+Ill}} ()
+
+
+It is only a nominal compound based adjective that ends in u and has
+p ~ 0 gradation here:
+* __ikäloppu__: {{ikäloppu+A+Sg+Nom}} (age-old)
+* __ikälopussa__: {{ikäloppu+A+Sg+Ine}} ()
+* __ikälopuista__: {{ikäloppu+A+Pl+Ela}} ()
+* __ikäloppuihin__: {{ikäloppu+A+Pl+Ill}} ()
+
+
+and none of the adjectives end in y and quantitative p gradation.
+
+And ö with p:
+* __lörppö__: {{lörppö+A+Sg+Nom}} (blabbermouth)
+* __lörpössä__: {{lörppö+A+Sg+Ine}} ()
+* __lörpöistä__: {{lörppö+A+Pl+Ela}} ()
+* __lörppöihin__: {{lörppö+A+Pl+Ill}} ()
+
+none with e finals no stem changes except p gradation.
+
+The quantitative gradation of t in basic changes stems for locative cases:
+veltto veltto+A+Sg+Nom lazy
+veltossa veltto+A+Sg+Ine
+veltoista veltto+A+Pl+Ela
+velttoihin veltto+A+Pl+Ill
+
+
+The u stems with quantitative t gradation are commonest with nut participle
+passive derivations (-ttu); those assume this paradigm even when not
+bisyllabic:
+* __vimmattu__: {{vimmattu+A+Sg+Nom}} (wicked)
+* __vimmatussa__: {{vimmattu+A+Sg+Ine}} ()
+* __vimmatuista__: {{vimmattu+A+Sg+Ill}} ()
+* __vimmattuihin__: {{vimmattu+A+Pl+Ill}} ()
+
+
+As with y and t:
+* __ylennetty__: {{ylennetty+A+Sg+Nom}} (promoted)
+* __ylennetyssä__: {{ylennetty+A+Sg+Ine}} ()
+* __ylennetyistä__: {{ylennetty+A+Pl+Ela}} ()
+* __ylennettyihin__: {{ylennetty+A+Pl+Ill}} ()
+
+And ö with t:
+* __kyyttö__: {{kyyttö+A+Sg+Nom}} (?????)
+* __kyytössä__: {{kyyttö+A+Sg+Ine}} ()
+* __kyytöistä__: {{kyyttö+A+Pl+Ela}} ()
+* __kyyttöihin__: {{kyyttö+A+Pl+Ill}} ()
+
+
+Between two vowels, the weak grade of k is optionally an apostrophe instead
+of nothing:
+* __lako__: {{lako+A+Sg+Nom}} ()
+* __laossa__: {{lako+A+Sg+Ine}} ()
+* __la’ossa__: {{lako+A+Sg+Ine}} ()
+
+
+There's no k to optional apostrophe with u.
+nor with y and k:
+nor ö with k:
+There's none with k gradating to always apostrophe either
+
+The qualitative gradation of p between vowels in o stems goes to v:
+* __kelpo__: {{kelpo+A+Sg+Nom}} (proper)
+* __kelvossa__: {{kelpo+A+Sg+Ine}} ()
+* __kelpoina__: {{kelpo+A+Pl+Ess}} ()
+* __kelvoista__: {{kelpo+A+Pl+Ela}} ()
+
+
+There are none ending in vowel + pu
+nor with y and p:
+nor ö with p:
+
+The quantitative gradation of t in basic changes stems for locative cases:
+* __mieto__: {{mieto+A+Sg+Nom}} (mild)
+* __miedossa__: {{mieto+A+Sg+Ine}} ()
+* __mietoihin__: {{mieto+A+Pl+Ill}} ()
+* __miedoista__: {{mieto+A+Pl+Ela}} ()
+
+
+The commonest t ~ d variation in u stems comes from nut participles
+passives (-tu). This follows the bisyllabic paradigm regardless of the
+syllables:
+* __viipaloitu__: {{viipaloitu+A+Sg+Nom}} (sliced)
+* __viipaloidussa__: {{viipaloitu+A+Sg+Ine}} ()
+* __viipaloituihin__: {{viipaloitu+A+Pl+Ill}} ()
+* __viipaloiduista__: {{viipaloitu+A+Pl+Ela}} ()
+
+
+As with y and t:
+* __yksilöity__: {{yksilöity+A+Sg+Nom}} (singled)
+* __yksilöidyssä__: {{yksilöity+A+Sg+Ine}} ()
+* __yksilöityihin__: {{yksilöity+A+Pl+Ill}} ()
+* __yksilöidyistä__: {{yksilöity+A+Pl+Ela}} ()
+
+And there's none with t and ö
+
+The quantitative gradation of k in basic changes stems for locative cases:
+* __lenko__: {{lenko+A+Sg+Nom}} (crooked)
+* __lengossa__: {{lenko+A+Sg+Ine}} ()
+* __lengoista__: {{lenko+A+Pl+Ela}} ()
+* __lenkoihin__: {{lenko+A+Pl+Ill}} ()
+
+
+There's no adjectives ending in nku
+nor with y and nk:
+And ö with k:
+There are no gradating p's after m's in unchanging stems
+The quantitative gradation of t after l in o stems:
+* __melto__: {{melto+A+Sg+Nom}} (?????)
+* __mellossa__: {{melto+A+Sg+Ine}} ()
+* __meltoihin__: {{melto+A+Pl+Ill}} ()
+* __melloista__: {{melto+A+Pl+Ela}} ()
+
+
+The common u stem after l is in nut participles passive (-tu):
+* __paranneltu__: {{paranneltu+A+Sg+Nom}} (embettered)
+* __parannellussa__: {{paranneltu+A+Sg+Ine}} ()
+* __paranneltuihin__: {{paranneltu+A+Pl+Ill}} ()
+* __parannelluista__: {{paranneltu+A+Pl+Ela}} ()
+
+
+As with y and t:
+* __vähätelty__: {{vähätelty+A+Sg+Nom}} (belittled)
+* __vähätellyssä__: {{vähätelty+A+Sg+Ine}} ()
+* __vähäteltyihin__: {{vähätelty+A+Pl+Ill}} ()
+* __vähätellyistä__: {{vähätelty+A+Pl+Ela}} ()
+
+There's no adjective ending -ltö
+
+The gradation of t after n in o stems:
+* __vento__: {{vento+A+Sg+Nom}} (?)
+* __vennossa__: {{vento+A+Sg+Ine}} ()
+* __ventoihin__: {{vento+A+Pl+Ill}} ()
+* __vennoista__: {{vento+A+Pl+Ela}} ()
+
+
+There are no adjectives ending in -ntu, -ntö or -nty
+
+The quantitative gradation of t after r in o stems:
+* __marto__:  ()
+* __marrossa__:  ()
+* __martoihin__:  ()
+* __marroista__:  ()
+
+
+There are no adjectives ending in -rtu, -rty or -rtö. Just as well, the
+class for UkU : UvU- is limited to few nouns we know.
+
+
+
+The trisyllabic words ending with gradating long k have plural illative
+in both strong and weak forms for o stem:
+* __hupakko,__: {{hupakko,}} (silly)
+* __hupakoihin,__: {{hupakoihin,}} (silly)
+* __hupakkoihin,__: {{hupakkoihin,}} (silly)
+
+Adjective stems with i:e variations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The i stems have i : e : 0 variation:
+* __abnormi__: {{abnormi+A+Sg+Nom}} (abnorm)
+* __abnormeina__: {{abnormi+A+Pl+Ess}} ()
+* __abnormien__: {{abnorm+A+Pl+Gen}} ()
+
+Similarly for front vowels:
+* __stydi__: {{stydi+A+Sg+Nom}} (stiff)
+* __stydeinä__: {{stydi+A+Pl+Ess}} ()
+* __stydien__: {{stydi+A+Pl+Gen}} ()
+
+The i stems combined with (quantitative) gradation of k will form five
+separate stem variants:
+* __opaakki__: {{opaakki+A+Sg+Nom}} (opaque)
+* __opaakissa__: {{opaakki+A+Sg+Ine}} ()
+* __opaakkeina__: {{opaakki+A+Pl+Ess}} ()
+* __opaakeista__: {{opaakki+A+Pl+Ela}} ()
+* __opaakkien__: {{opaakki+A+Pl+Gen}} ()
+
+Similarly for front vowel version:
+* __pinkki__: {{pinkki+A+Sg+Nom}} (pink)
+* __pinkissä__: {{pinkki+A+Sg+Ine}} ()
+* __pinkkeinä__: {{pinkki+A+Pl+Ess}} ()
+* __pinkeistä__: {{pinkki+A+Pl+Ela}} ()
+* __pinkkien__: {{pinkki+A+Pl+Gen}} ()
+
+There's no back vowel version of the bisyllabic gradating -ppi form.
+
+* __sippi__: {{sippi+A+Sg+Nom}} (bust)
+* __sipissä__: {{sippi+A+Sg+Ine}} ()
+* __sippeinä__: {{sippi+A+Pl+Ess}} ()
+* __sipeistä__: {{sippi+A+Pl+Ela}} ()
+* __sippien__: {{sippi+A+Pl+Gen}} ()
+
+* __hurtti__: {{hurtti+A+Sg+Nom}} (grunchy)
+* __hurtissa__: {{hurtti+A+Sg+Ine}} ()
+* __hurtteina__: {{hurtti+A+Pl+Ess}} ()
+* __hurteista__: {{hurtti+A+Pl+Ela}} ()
+* __hurttien__: {{hurtti+A+Pl+Gen}} ()
+
+väärtti väärtti+A+Sg+Nom worthy
+väärtissä väärtti+A+Sg+Ine
+väärtteinä väärtti+A+Pl+Ess
+väärteistä väärtti+A+Pl+Ela
+väärttien väärtti+A+Pl+Gen
+
+There are no bisyllabic adjectives ending in vowel and gradating -pi.
+
+tauti
+taudissa
+tauteina
+taudeista
+tautien
+
+nihti
+nihdissä
+nihteinä
+nihdeistä
+nihtien
+
+:vanki:vangissa:vankeina:vangeista:vankien
+:väylinki:väylingissä:väylinkeinä:väylingeistä:väylinkienNo examples
+
+:pelti:pellissä:pelteinä:pelleistä:peltien
+:sointi:soinnissa:sointeina:soinneista:sointien
+:vienti:viennissä:vienteinä:vienneistä:vientien
+:New loan words ending in consonant may be inflected as i stem words:punk:punkeina:punkien
+The i stems have i : e : 0 variation:
+kanaali
+kanaaleja
+kanaaleiden
+
+Similarly for front vowels:
+kehveli
+kehvelejä
+kehveleiden
+The i stems have i : e : 0 variation:
+stadion
+stadioneja
+stadioneiden
+Similarly for front vowels:
+besserwisser
+besserwisserejä
+besserwissereiden
+The short i stems have another i : e : 0 variation
+ovi
+ovena
+ovessa
+ovissa
+ovista
+The short i stems have another i : e : 0 variation
+helmi
+helmenä
+helmessä
+helmissä
+helmistä
+happi
+hapessa
+happina
+hapista
+happien
+typpi
+typessä
+typpinä
+typistä
+typpien
+noki
+noessa
+nokina
+noista
+nokien
+käki
+käessä
+käkinä
+käistä
+käkien
+korpi
+korvessa
+korpina
+korvista
+korpien
+kilpi
+kilvessä
+kilpinä
+kilvistä
+kilpien
+lahti
+lahdessa
+lahtina
+lahdista
+lahtien
+lehti
+lehdessä
+lehtinä
+lehdistä
+lehtien
+onki
+ongessa
+onkina
+ongista
+onkien
+henki
+hengessä
+henkinä
+hengistä
+henkien
+lampi
+lammessa
+lampina
+lammista
+lampien
+rimpi
+rimmessä
+rimpinä
+rimmistä
+rimpien
+No Examples
+järki
+järjessä
+järkinä
+järjistä
+järkien
+
+
+kirja
+kirjaa
+kirjana
+kirjassa
+kirjoina
+kirjojen
+kirjoihin
+
+politiikka
+politiikkaa
+politiikkana
+politiikassa
+politiikkoina
+politiikkojen
+politiikkoihin
+tippa
+tippaa
+tippana
+tipassa
+tippoina
+tippojen
+tippoihin
+mitta
+mittaa
+mittana
+mitassa
+mittoina
+mittojen
+mittoihin
+
+
+salpa
+salpaa
+salpana
+salvassa
+salpoina
+salpojen
+salpoihin
+
+pata
+pataa
+patana
+padassa
+patoina
+patojen
+patoihin
+
+lanka
+lankaa
+lankana
+langassa
+lankoina
+lankojen
+lankoihin
+
+rampa
+rampaa
+rampana
+rammassa
+rampoina
+rampojen
+rampoihin
+
+valta
+valtaa
+valtana
+vallassa
+valtoina
+valtojen
+valtoihin
+
+kutsunta
+kutsuntaa
+kutsuntana
+kutsunnassa
+kutsuntoina
+kutsuntojen
+kutsuntoihin
+
+kysyntä
+kysyntää
+kysnytänä
+kysynnässä
+kysyntöinä
+kysyntöjen
+kysyntöihin
+kerta
+kertaa
+kertana
+kerrassa
+kertoina
+kertojen
+kertoihin
+
+soittaja
+soittajaa
+soittajana
+soittajassa
+soittajina
+soittajien
+soittajiin
+
+höpöttäjä
+höpöttäjää
+höpöttäjänä
+höpöttäjässä
+höpöttäjinä
+höpöttäjien
+höpöttäjiin
+
+luokka
+luokkaa
+luokkana
+luokassa
+luokkina
+luokissa
+luokkien
+
+hölkkä
+hölkkää
+hölkkänä
+hölkässä
+hölkkinä
+hölkissä
+hölkkien
+
+kuoppa
+kuoppaa
+kuoppana
+kuopassa
+kuoppina
+kuopissa
+kuoppien
+
+seppä
+seppää
+seppänä
+sepässä
+seppinä
+sepissä
+seppien
+rotta
+rottaa
+rottana
+rotassa
+rottina
+rotissa
+rottien
+kenttä
+kenttää
+kenttänä
+kentässä
+kenttinä
+kentissä
+kenttien
+ruoka
+ruokaa
+ruokana
+ruoassa
+ruokina
+ruoissa
+ruokien
+But also the apostrophes:
+ruo’assa
+ruo’issa
+reikä
+reikää
+reikänä
+reiässä
+reiissä
+reikiin
+
+lupa
+lupaa
+lupana
+luvassa
+luppina
+luvissa
+lupien
+
+leipä
+leipää
+leipänä
+leivässä
+leipinä
+leivissä
+leipien
+
+sota
+sotaa
+ostana
+sodassa
+sotina
+sodissa
+sotien
+
+pöytä
+pöytää
+pöytänä
+pöydässä
+pöytinä
+pöydissä
+pöytien
+
+honka
+honkaa
+honkana
+hongassa
+honkina
+hongissa
+honkien
+
+kenkä
+kenkää
+kenkänä
+kengässä
+kengissä
+kenkiin
+
+
+kompa
+kompaa
+kompana
+kommassa
+kompina
+kommissa
+kompien
+LEXICON A_
+No examples
+multa
+multaa
+multana
+mullassa
+multina
+mullissa
+multien
+
+syltä
+syltää
+syltänä
+syllässä
+syltinä
+syllissä
+syltien
+kunta
+kuntaa
+kuntana
+kunnassa
+kuntina
+kunnissa
+kuntien
+emäntä
+emäntää
+emäntänä
+emännässä
+emäntinä
+emännissä
+emäntien
+
+syltä
+syltää
+syltänä
+syllässä
+syltinä
+syllissä
+syltien
+
+No examples
+selkä
+selkää
+selkänä
+seljässä
+seljissä
+selkiin
+Certain trisyllabic or longer a stems allow a lot of allomorphs and both
+a : o : 0 variations:
+probleema
+probleemia
+probleemoita
+probleemien
+probleemoiden
+probleemoitten
+probleemiin
+probleemoihin
+Also less commonly
+probleemojen
+probleemoja
+probleemain
+
+käpälä
+käpälää
+käpälänä
+käpälässä
+käpälinä
+käpälien
+käpäliin
+
+
+makkara
+makkaraa
+makkarana
+makkaroina
+makkaroita
+
+häkkyrä
+häkkyrää
+häkkyränä
+häkkyröinä
+häkkyröitä
+
+Certain trisyllabic or longer a stems allow a lot of allomorphs and both
+a : o : 0 variations:
+rakuuna
+rakuunoita
+rakuunoja
+rakuunoiden
+rakuunoitten
+rakuunojen
+rakuunoihin
+Also less commonly
+rakuunain
+
+mörinä
+mörinää
+mörinänä
+mörinässä
+The a : o stem variation combines with trisyllabic class of special illatives
+lusikka
+lusikkoina
+lusikoissa
+lusikkoihin
+lusikoihin
+
+kämmekkä
+kämmeköihin
+kämmekköihin
+
+
+The a : o stem variation combines with trisyllabic class of special illatives
+lusikka
+lusikkoina
+lusikoissa
+lusikkoihin
+lusikoihin
+
+The a : o stem variation combines with trisyllabic class of special illatives
+ulappa
+ulappoina
+ulapoissa
+ulappoihin
+ulapoihin
+The a : o stem variation combines with trisyllabic class of special illatives
+pohatta
+pohattoina
+pohatoissa
+pohattoihin
+pohatoihin
+
+sokea
+sokeana
+sokeina
+sokeissa
+sokeihin
+sokeisiin
+
+sokea
+sokeana
+sokeina
+sokeissa
+sokeihin
+sokeisiin
+
+lipeä
+lipeänä
+lipeinä
+lipeissä
+lipeihin
+lipeisiin
+
+vanhempi
+vanhempana
+vanhemmassa
+vanhempina
+vanhemmista
+
+vähempi
+vähempana
+vähemmassa
+vähempina
+vähemmista
+
+vapaa
+
+tienoo
+kerjuu
+maa
+
+tee
+hai
+ookoo
+puu
+
+pyy
+pää
+
+köö
+tie
+suo
+työ
+The words with at least bisyllabic stem ending in long vowel have:
+nugaa
+nugaata
+nugaana
+nugaahan
+nugaaseen
+nugaissa
+nugaista
+nugaaseen
+nugaiden
+nugaitten
+nugaisiin
+nugaihin
+The words with at least bisyllabic stem ending in long vowel have:
+patee
+pateeta
+pateena
+pateehen
+pateeseen
+pateissa
+pateista
+pateeseen
+pateiden
+pateitten
+pateisiin
+pateihin
+No examples
+The words with at least bisyllabic stem ending in long vowel have:
+trikoo
+trikoota
+trikoona
+trikoissa
+trikoista
+trikooseen
+trikoiden
+trikoitten
+trikoihin
+trikoisiin
+The words with at least bisyllabic stem ending in long vowel have:
+raguu
+raguuta
+raguuna
+raguussa
+raguista
+raguuseen
+raguiden
+raguitten
+raguisiin
+raguihen
+The words with at least bisyllabic stem ending in long vowel have:
+fondyy
+fondyytä
+fondyynä
+fondyyssä
+fondyistä
+fondyyseen
+nugaiden
+nugaitten
+nugaisiin
+nugaihin
+No examples
+The words with at least bisyllabic stem ending in long vowel have:
+miljöö
+miljöötä
+miljoöönä
+miljöössä
+miljöistä
+miljööseen
+miljöiden
+miljöitten
+miljöisiin
+milhjöihin
+Some loan words inflect irregularly, either more along the written form or
+the pronunciation, e.g. fondue is pronounced @ipa fondy: but can also be
+@ipa fondue:
+fondue
+fondueta
+fonduetä
+fonduena
+fonduenä
+fonduessa
+fonduessä
+fodnueina
+fondueinä
+fondueista
+fondueistä
+fondueita
+fondueitä
+fondueiden
+fondueisiin
+fondueiden
+fondueitten
+fondueihin
+why not fondueisiin
+Some loan words inflect irregularly, either more along the written form or
+the pronunciation. 
+Some loan words inflect irregularly, either more along the written form or
+the pronunciation:
+Some loan words inflect irregularly, either more along the written form or
+the pronunciation:
+Some loan words inflect irregularly, either more along the written form or
+the pronunciation:
+nougat
+parfait
+beignet
+no examples.
+bordeaux
+show
+no examples
+monsieur
+tuli
+uni
+hiiri
+kaari
+
+mieli
+
+luomi
+niemi
+
+kausi
+
+köysi
+
+kansi
+kynsi
+varsi
+hirsi
+jälsi
+lapsi
+uksi
+veitsi
+haaksi
+:The consonant stems use inverted gradation if applicable, that is, the :nominatives have end in consonants and their gradating consonants are in:weak form.ahven
+
+siemen
+
+ajatar
+tytär
+ien
+
+puhelin
+
+elin
+heitin
+puin
+pyyhin
+raavin
+särvin
+vaadin
+säädin
+askellin
+sivellin
+käännin
+muunnin
+kiharrin
+kierrin
+poljin
+hapan
+
+alaston
+
+viaton
+
+työtön
+
+lämmin
+
+alin
+
+ylin
+vasen
+
+aakkostaminen
+
+kylkiäinen
+
+vakuutus
+
+räjäytys
+
+aakkosellisuus
+
+köyhyys
+
+patsas
+
+kaunis
+
+työläs
+
+tsukas
+
+tsukas
+
+saapas
+
+rypäs
+
+ratas
+
+ratas
+
+mätäs
+äes
+varas
+ruis
+varvas
+seiväs
+
+tehdas
+
+kangas
+hammas
+allas
+kinnas
+rynnäs
+
+porras
+
+mies
+
+ohut
+
+ehyt
+
+kevät
+vuosituhat
+
+aivokuollut
+
+sivistynyt
+
+ahne
+
+terve
+
+kastike
+lääke
+ape
+ripe
+osoite
+käsite
+koe
+pyyhe
+tarve
+viive
+kide
+luode
+
+lumme
+mielle
+vuolle
+
+rakenne
+kiinne
+murre
+kierre
+hylje
+pohje
+kyynel
+säen
+taival
+udar
+penger
+ommel
+kinner
+kannel
+manner
+auer
+
+hölkkä
+hölkkää
+hölkkänä
+hölkässä
+hölkkinä
+hölkissä
+hölkkien
+
+Plurales tantum?
+viaton
+
+Numerals are morphologically nominals, only exception to noun inflection
+is that they form compounds with special agreeing patterns. Syntactically
+and semantically numerals are clearly separate subset of nominals. Some
+of the numerals stem variation patterns are rare to non-existent for other
+nominal types. Numerals have two subclasses, cardinals and ordinals.
+
+Numerals have been split in three sections, the compounding parts
+of cardinals and ordinals, and the non-compounding ones:
+* __kaksikymmentäkolmetuhatta__:  ()
+* __kahdessadaseneljäs__:  ()
+* __viitisen__:  ()
+
+The compounding parts of cardinals are the number multiplier words.
+* __yksi__:  ()
+* __viidelle__:  ()
+* __tuhatta__:  ()
+
+The suffixes only appear after cardinal multipliers
+* __viisikymmentä__:  ()
+* __neljäsataatuhatta__:  ()
+
+The compounding parts of ordinals are the number multiplier words.
+* __neljäs__:  ()
+* __viidennelle__:  ()
+* __tuhannetta__:  ()
+
+The suffixes only appear after cardinal multipliers
+* __viideskymmenes__:  ()
+* __neljässadastuhannes__:  ()
+
+There is a set of numbers or corresponding expressions that work like them,
+but are not basic cardinals or ordinals:
+* __viitisenkymmentä__:  ()
+* __puolikymmentä__:  ()
+
+
+* __yksi__:  ()
+* __yhteen__:  ()
+* __yhtenä__:  ()
+* __yhdessä__:  ()
+* __yhtä__:  ()
+* __yksiä__:  ()
+* __yksien__:  ()
+* __yksiin__:  ()
+* __yksinä__:  ()
+* __yksissä__:  ()
+
+* __kaksi__:  ()
+* __kahteen__:  ()
+* __kahtena__:  ()
+* __kahdessa__:  ()
+* __kahta__:  ()
+* __kaksia__:  ()
+* __kaksien__:  ()
+* __kaksiin__:  ()
+* __kaksina__:  ()
+* __kaksissa__:  ()
+
+* __kolme__:  ()
+* __kolmeen__:  ()
+* __kolmena__:  ()
+* __kolmessa__:  ()
+* __kolmea__:  ()
+* __kolmia__:  ()
+* __kolmien__:  ()
+* __kolmiin__:  ()
+* __kolmina__:  ()
+* __kolmissa__:  ()
+
+* __neljä__:  ()
+* __neljää__:  ()
+* __neljään__:  ()
+* __neljäin__:  ()
+* __neljänä__:  ()
+* __neljässä__:  ()
+* __neljiä__:  ()
+* __neljien__:  ()
+* __neljiin__:  ()
+* __neljinä__:  ()
+* __neljissä__:  ()
+
+* __viisi__:  ()
+* __viiteen__:  ()
+* __viitenä__:  ()
+* __viidessä__:  ()
+* __viisinä__:  ()
+* __viisissä__:  ()
+* __viittä__:  ()
+* __viitten__:  ()
+* __viisiä__:  ()
+* __viisien__:  ()
+* __viisiin__:  ()
+
+* __kuusi__:  ()
+* __kuutena__:  ()
+* __kuudessa__:  ()
+* __kuusina__:  ()
+* __kuusissa__:  ()
+* __kuutta__:  ()
+* __kuutten__:  ()
+* __kuusia__:  ()
+* __kuusien__:  ()
+* __kuusiin__:  ()
+
+
+* __kahdeksan__:  ()
+* __kahdeksaa__:  ()
+* __kahdeksaan__:  ()
+* __kahdeksain__:  ()
+* __kahdeksassa__:  ()
+* __kahdeksana__:  ()
+* __kahdeksia__:  ()
+* __kahdeksien__:  ()
+* __kahdeksiin__:  ()
+* __kahdeksissa__:  ()
+* __kahdeksina__:  ()
+
+* __yhdeksän__:  ()
+* __yhdeksää__:  ()
+* __yhdeksään__:  ()
+* __yhdeksäin__:  ()
+* __yhdeksässä__:  ()
+* __yhdeksänä__:  ()
+* __yhdeksiä__:  ()
+* __yhdeksien__:  ()
+* __yhdeksissä__:  ()
+* __yhdeksinä__:  ()
+
+* __kymmenen__:  ()
+* __kymmeneen__:  ()
+* __kymmenenä__:  ()
+* __kymmenessä__:  ()
+* __kymmentä__:  ()
+* __kymmenten__:  ()
+* __kymmenien__:  ()
+* __kymmeniin__:  ()
+* __kymmenissä__:  ()
+* __kymmeninä__:  ()
+
+* __sata__:  ()
+* __satana__:  ()
+* __sadassa__:  ()
+* __sataan__:  ()
+* __sataa__:  ()
+* __satojen__:  ()
+* __satoihin__:  ()
+* __sadoissa__:  ()
+* __satoina__:  ()
+
+* __tuhat__:  ()
+* __tuhanteen__:  ()
+* __tuhantena__:  ()
+* __tuhannessa__:  ()
+* __tuhansien__:  ()
+* __tuhatta__:  ()
+* __tuhansia__:  ()
+* __tuhansien__:  ()
+* __tuhansiin__:  ()
+* __tuhansina__:  ()
+* __tuhansissa__:  ()
+
+* __miljoona__:  ()
+* __miljoonana__:  ()
+* __miljoonassa__:  ()
+* __miljoonaa__:  ()
+* __miljoonaan__:  ()
+* __miljoonia__:  ()
+* __miljoonien__:  ()
+* __miljooniin__:  ()
+* __miljoonissa__:  ()
+* __miljoonina__:  ()
+
+
+* __miljardi__:  ()
+* __miljardina__:  ()
+* __miljardissa__:  ()
+* __miljardeina__:  ()
+* __miljardeissa__:  ()
+* __miljardia__:  ()
+* __miljardiin__:  ()
+* __miljardeja__:  ()
+* __miljardien__:  ()
+* __miljardeihin__:  ()
+
+
+* __Googol__:  ()
+
+* __pari__:  ()
+* __parina__:  ()
+* __parissa__:  ()
+* __pareissa__:  ()
+* __pareina__:  ()
+* __paria__:  ()
+* __pareja__:  ()
+* __parien__:  ()
+* __pareihin__:  ()
+* __pariin__:  ()
+
+
+* __ensimmäinen__:  ()
+* __ensimmäisenä__:  ()
+* __ensimmäisessä__:  ()
+* __ensimmäistä__:  ()
+* __ensimmäisten__:  ()
+* __ensimmäisiä__:  ()
+* __ensimmäisiin__:  ()
+* __ensimmäisinä__:  ()
+* __ensimmäisissä__:  ()
+
+* __toinen__:  ()
+* __toiseen__:  ()
+* __toista__:  ()
+* __toisten__:  ()
+* __toisien__:  ()
+* __toisia__:  ()
+* __toisiin__:  ()
+* __toisena__:  ()
+* __toisessa__:  ()
+* __toisissa__:  ()
+* __toisina__:  ()
+
+* __kolmas__:  ()
+* __kolmantena__:  ()
+* __kolmannessa__:  ()
+* __kolmanteen__:  ()
+* __kolmatta__:  ()
+* __kolmansia__:  ()
+* __kolmansien__:  ()
+* __kolmansissa__:  ()
+* __kolmansina__:  ()
+
+* __neljäs__:  ()
+* __neljänteen__:  ()
+* __neljäntenä__:  ()
+* __neljännessä__:  ()
+* __neljättä__:  ()
+* __neljänsiä__:  ()
+* __neljänsien__:  ()
+* __neljänsiin__:  ()
+* __neljänsissä__:  ()
+* __neljänsinä__:  ()
+
+
+Pronouns are a closed special sub class of nouns. Morphologically pronouns
+have often defective, heteroclitic or otherwise irregular inflectional
+patterns, and certain pronouns have an morphophonologically distinct
+accusative case, extinct from other noun classes (VISK §§ 100 – 104).
+Semantically ... VISK § 7XX
+
+Pronouns are subdivided into categories by semantic and syntactic means.
+Semantic categories delimit the type of referents (humane, sentient,
+object), qualification and quantification. (interrogative, quantor).
+Morphosyntactically distinct is class of proadjectives, that inflect and
+act like adjectives.
+There are six personal pronouns for the six deictic references used; first,
+second and third singular and plural. The personal pronouns have separate
+accusative cases marked by t suffix. The pronouns in standard literary
+Finnish are *minä* (I), *sinä* (you), *hän* (he), *me* (we), *te*
+(you), *he* (they). VISK § 100
+* __minä__:  ()
+* __sinut__:  ()
+* __heille__:  ()
+
+The personal pronouns are among the most dialectally varied words of the
+Finnish language. The pronouns forms are one of the factors separating
+eastern dialects from the western ones. The personal pronouns of eastern
+dialects are *mie*, *sie*, (*hää*, *hiä*), *myö*, *työ*, *hyö* resp.;
+The third singular being rare in modern use. |citation-needed|
+
+In the western dialects the pronouns are *mää*, *sää* for first and second
+singular, and more variedly *meitti*, *teitti*, *heitti* for plurals.
+
+In standard spoken Finnish, and in many cases even in written form, the
+words *mä* and *sä* are more common and preferred to longer minä and sinä
+for first and second singular respectively. In practice the distinction is
+much like between Estonian corresponding pronouns, but official norm still
+recommends only the long forms.
+For third singular the nominative form is *hän* as in standard written 
+language, however the inflection is without intervening *-ne-* part.
+In old literary Finnish and poetic language the forms *ma* and *sa* are
+still used.
+
+There are six demonstrative pronouns for six non-personal references. In
+standard written Finnish these are *tämä* (this), *tuo* (that), *se*
+(it), *nämä* (these), *nuo* (those), *ne* (those).
+VISK § 101
+
+In standard spoken Finnish the demonstrative pronouns are commonly
+*tää*, *toi*, *nää*, *noi* instead of *tämä*, *tuo*, *nämä*, *nuo*.
+
+Interrogative pronouns are used in question clauses. The basic
+interrogatives in standard written Finnish are *kuka* (who), *mikä*
+(what), *kumpi* (which); *millainen* (what kind of), *kuinka*
+(how), *miksi* (what for). VISK §734|
+
+The stem of *kuka* is shortened by from *kene* to *ke* in spoken language.
+
+Few forms of *kuka* based on *ken* stem and *ku* stem have become archaic.
+VISK §102|
+Also the short form of *mi* is archaic and limited to poetic use.
+|citation-needed|
+
+Relative pronouns are *kuka*, *joka* and *mikä* (which, whose). VISK §735|
+They are morphologically indistinct from corresponding interrogative
+pronouns.
+
+Quantor pronouns correspond to existential and universal quantifiers and
+their negations. The generic quantors are *joku*
+(someone), *jokin* (something), *jokainen* (everyone), *kaikki*
+(everything), *kukin* (each one), *kukaan* (no one), *mikään*
+(nothing), *jokunen*, *muutama*, *harva* (a few), *moni* (many)
+and *useampi* (more). The dual quantors, quantifying over set of two objects
+are *jompikumpi* (either
+or), *kumpikin*, *molemmat* (both), *kumpikaan* (neither). VISK §740|
+The quantor pronouns subsume the class of indefinite pronouns used in
+older grammar defintions. VISK §742|
+The indefinite quantifiers are classified as
+indefinite quantors for the sake of compatibility. This
+covers *joku*, *jokin*, *jompikumpi*, as well as
+specific *eräs*, *muuan* (some), *yksi* (one).  VISK §746 749|.
+
+
+
+
+Reflexive pronoun is the word *itse* refering to self, usually but not
+always coupled with possessive suffix to denote the referent. VISK §729|.
+
+
+Reciprocal pronoun is *toinen* refering to each other. It uses possessive
+suffix to delimit the reciprocal group. VISK §732
+
+
+Proadjectives are pronouns that act in place of adjectives syntactically.
+They are formed by compounds (or derivations) of pronoun and *lainen*
+or *moinen* (such as). VISK §715
+
+Proadverbs are the pronouns that have lexicalised into adverbs by their
+syntax and semantics. VISK §715
+
+forms of *jompi* may not exist as free morphs. The marginal forms
+of *monias* are extinct. Oddly enough, the semireduplicative intensifier
+monituinen is nowhere to be found in VISK either.
+
+Marginally in the pro word category are nouns, adjectives and adverbs
+refering to equivalence in comparative context since they are
+also otherwise lacking meaning like other pro words. This
+fgroup includes words *sama* (same), *eri* (different), *muu*
+(other), *toinen* (another), and their derivations. VISK §766|.
+
+In spoken language the supposedly non-inflecting *eri* has common inflected
+forms.
+The verbs' conjugation includes voice (in Finnish grammars also verbal 
+genus),  tense/mood (tempus/modus), personal endings and negation marker
+The verbs also have productive derivations to defective nouns as
+infinitives, and to adjectives as participles_, which are considered to be 
+part of inflection and thus included in most versions (VISK § 105).
+The morphology of participles and historical 4th infinitive is further
+detailed in section Deverbal nouns'  morphology.
+The analysis strings of verb are not as systematic as nouns,
+as many categories collapse together in forms, e.g. the tense and mood
+are only distinct with indicative past and non-past. This variation is
+reflected in different taggings for different versions of omorfi and
+detailed in later sections.
+
+
+The verbs are classified along the stem mutations suffix assimilation,
+and harmony:
+* __kutoo__: {{kutoa+V+Act+Ind+Prt+Sg3}} (knit)
+* __kudotaan__: {{kutoa+V+Pss+Ind+Prt+Pe4}} ()
+* __tietää__: {{tietää+V+Act+Ind+Prt+Sg3}} (know)
+* __tiesit__: {{tietää+V+Act+Ind+Pst+Sg2}} ()
+* __nähnyt__: {{nähdä+V+Act+PrfPrc+Sg+Nom}} ()
+* __juossut__: {{juosta+V+Act+PrfPrc+Sg+Nom}} ()
+
+The key to find unique class from verbs is to pick stems and suffixes from:
+indicative non-past 1st singular and 3rd singular, indicative past 1st 
+singular, ...
+
+
+Verbs have no allomorphic variation per se, except for some assimilation and
+variation of ð forms, but the stem variation is the same
+as in nouns. The examples for verb stems are given for each class:
+A infinitive's lative, e infinitive's inessive, indicative present 1st 
+singular, indicative present 3rd singular, indicative past 1st singular, 
+indicative past 3rd singular, conditional past 3rd singular, 
+imperative 2nd plural, potential 1st singular, present passive, 
+past passive, nut participle passive
+
+The u stems have no stem variation:
+* __kaunistua__: {{kaunistua+V+Act+InfA+Sg+Lat}} (beautify)
+* __kaunistuessa__: {{kaunistua+V+Act+InfE+Sg+Ine}} ()
+* __kaunistun__: {{kaunistua+V+Act+Ind+Prt+Sg1}} ()
+* __kaunistuu__: {{kaunistua+V+Act+Ind+Prt+Sg3}} ()
+* __kaunistuin__: {{kaunistua+V+Act+Ind+Pst+Sg1}} ()
+* __kaunistui__: {{kaunistua+V+Act+Ind+Pst+Sg3}} ()
+* __kaunistuisi__: {{kaunistua+V+Act+Cond+Sg3}} ()
+* __kaunistukaa__: {{kaunistua+V+Act+Imprt+Pl2}} ()
+* __kaunistunen__: {{kaunistua+V+Act+Pot+Sg1}} ()
+* __kaunistutaan__: {{kaunistua+V+Pss+Ind+Prt+Pe4}} ()
+* __kaunistuttiin__: {{kaunistua+V+Pss+Ind+Pst+Pe4}} ()
+* __kaunistuttu__: {{kaunistua+V+Pss+PrfPrc+Sg+Nom}} ()
+* __kaunistuminen__: {{kaunistua+V+Der/minen+Sg+Nom}} ()
+
+The o stems have no stem variation:
+* __punoa__: {{punoa+V+Act+InfA+Sg+Lat}} (bundle?)
+* __punoessa__: {{punoa+V+Act+InfE+Sg+Ine}} ()
+* __punon__: {{punoa+V+Act+Ind+Prt+Sg1}} ()
+* __punoo__: {{punoa+V+Act+Ind+Prt+Sg3}} ()
+* __punoin__: {{punoa+V+Act+Ind+Pst+Sg1}} ()
+* __punoi__: {{punoa+V+Act+Ind+Pst+Sg3}} ()
+* __punoisi__: {{punoa+V+Act+Cond+Sg3}} ()
+* __punokaa__: {{punoa+V+Act+Imprt+Pl2}} ()
+* __punonen__: {{punoa+V+Act+Pot+Sg1}} ()
+* __punotaan__: {{punoa+V+Pss+Ind+Prt+Pe4}} ()
+* __punottiin__: {{punoa+V+Pss+Ind+Pst+Pe4}} ()
+* __punottu__: {{punoa+V+Pss+PrfPrc+Sg+Nom}} ()
+* __punominen__: {{punoa+V+Der/minen+Sg+Nom}} ()
+
+The ö stems have no stem variation:
+* __säilöä__: {{säilöä+V+Act+InfA+Sg+Lat}} (store)
+* __säilöessä__: {{säilöä+V+Act+InfE+Sg+Ine}} ()
+* __säilön__: {{säilöä+V+Act+Ind+Prt+Sg1}} ()
+* __säilöö__: {{säilöä+V+Act+Ind+Prt+Sg3}} ()
+* __säilöin__: {{säilöä+V+Act+Ind+Pst+Sg1}} ()
+* __säilöi__: {{säilöä+V+Act+Ind+Pst+Sg3}} ()
+* __säilöisi__: {{säilöä+V+Act+Cond+Sg3}} ()
+* __säilökää__: {{säilöä+V+Act+Imprt+Pl2}} ()
+* __säilönen__: {{säilöä+V+Act+Pot+Sg1}} ()
+* __säilötään__: {{säilöä+V+Pss+Ind+Prt+Pe4}} ()
+* __säilöttiin__: {{säilöä+V+Pss+Ind+Pst+Pe4}} ()
+* __säilötty__: {{säilöä+V+Pss+PrfPrc+Sg+Nom}} ()
+* __säilöminen__: {{säilöä+V+Der/minen+Sg+Nom}} ()
+
+The y stems have no stem variation:
+* __ällistyä__: {{ällistyä+V+Act+InfA+Sg+Lat}} (amaze)
+* __ällistyessä__: {{ällistyä+V+Act+InfE+Sg+Ine}} ()
+* __ällistyn__: {{ällistyä+V+Act+Ind+Prt+Sg1}} ()
+* __ällistyy__: {{ällistyä+V+Act+Ind+Prt+Sg3}} ()
+* __ällistyin__: {{ällistyä+V+Act+Ind+Pst+Sg1}} ()
+* __ällistyi__: {{ällistyä+V+Act+Ind+Pst+Sg3}} ()
+* __ällistyisi__: {{ällistyä+V+Act+Cond+Sg3}} ()
+* __ällistykää__: {{ällistyä+V+Act+Imprt+Pl2}} ()
+* __ällistynen__: {{ällistyä+V+Act+Pot+Sg1}} ()
+* __ällistytään__: {{ällistyä+V+Pss+Ind+Prt+Pe4}} ()
+* __ällistyttiin__: {{ällistyä+V+Pss+Ind+Pst+Pe4}} ()
+* __ällistytty__: {{ällistyä+V+Pss+PrfPrc+Sg+Nom}} ()
+
+* __haukkoa__: {{haukkoa+V+Act+InfA+Sg+Lat}} (gasp)
+
+* __nuokkua__: {{nuokkua+V+Act+InfA+Sg+Lat}} (sleep)
+
+* __kärkkyä__: {{kärkkyä+V+Act+InfA+Sg+Lat}} (steal)
+
+* __harppoa__: {{harppoa+V+Act+InfA+Sg+Lat}} (walk)
+
+* __loppua__: {{loppua+V+Act+InfA+Sg+Lat}} (end)
+
+* __leppyä__: {{leppyä+V+Act+InfA+Sg+Lat}} (settle)
+
+* __kivettyä__: {{kivettyä+V+Act+InfA+Sg+Lat}} (stone)
+
+* __viittoa__: {{viittoa+V+Act+InfA+Sg+Lat}} (sign)
+
+* __hermottua__: {{hermottua+V+Act+InfA+Sg+Lat}} (nerve)
+
+* __mäikyä__: {{mäikyä+V+Act+InfA+Sg+Lat}} (bong)
+
+* __takoa__: {{takoa+V+Act+InfA+Sg+Lat}} (hammer)
+
+* __maukua__: {{maukua+V+Act+InfA+Sg+Lat}} (gong)
+
+* __elpyä__: {{elpyä+V+Act+InfA+Sg+Lat}} (rescuscitate)
+
+* __hiipua__: {{hiipua+V+Act+InfA+Sg+Lat}} (fizzle)
+
+* __silpoa__: {{silpoa+V+Act+InfA+Sg+Lat}} (slash)
+
+* __kietoa__: {{kietoa+V+Act+InfA+Sg+Lat}} (entangle)
+
+* __siliytyä__: {{siliytyä+V+Act+InfA+Sg+Lat}} (iron)
+
+* __rohtua__: {{rohtua+V+Act+InfA+Sg+Lat}} (scar)
+
+* __vinkua__: {{vinkua+V+Act+InfA+Sg+Lat}} (squeal)
+
+* __penkoa__: {{penkoa+V+Act+InfA+Sg+Lat}} (dig)
+
+* __tempoa__: {{tempoa+V+Act+InfA+Sg+Lat}} (tuck)
+
+* __ampua__: {{ampua+V+Act+InfA+Sg+Lat}} (shoot)
+
+* __mieltyä__: {{mieltyä+V+Act+InfA+Sg+Lat}} (like)
+
+* __humaltua__: {{humaltua+V+Act+InfA+Sg+Lat}} (intoxicate)
+
+* __vakaantua__: {{vakaantua+V+Act+InfA+Sg+Lat}} (stabilise)
+
+* __tyhjentyä__: {{tyhjentyä+V+Act+InfA+Sg+Lat}} (empty)
+
+* __pyörtyä__: {{pyörtyä+V+Act+InfA+Sg+Lat}} (faint)
+
+* __vartoa__: {{vartoa+V+Act+InfA+Sg+Lat}} (wait)
+
+* __pusertua__: {{pusertua+V+Act+InfA+Sg+Lat}} (squeeze)
+
+* __mutristaa__: {{mutristaa+V+Act+InfA+Sg+Lat}} (?)
+
+* __kivistää__: {{kivistää+V+Act+InfA+Sg+Lat}} (hurt)
+
+* __räpsyttää__: {{räpsyttää+V+Act+InfA+Sg+Lat}} (blink)
+
+* __vieroittaa__: {{vieroittaa+V+Act+InfA+Sg+Lat}} ()
+
+
+* __purkaa__: {{purkaa+V+Act+InfA+Sg+Lat}} (tear)
+
+* __kärähtää__: {{kärähtää+V+Act+InfA+Sg+Lat}} (fry)
+
+* __mojahtaa__: {{mojahtaa+V+Act+InfA+Sg+Lat}} (smack)
+
+* __kyntää__: {{kyntää+V+Act+InfA+Sg+Lat}} (plow)
+
+* __sortaa__: {{sortaa+V+Act+InfA+Sg+Lat}} (crush)
+
+* __huutaa__: {{huutaa+V+Act+InfA+Sg+Lat}} (yell)
+
+* __pyytää__: {{pyytää+V+Act+InfA+Sg+Lat}} (aks)
+
+* __sivaltaa__: {{sivaltaa+V+Act+InfA+Sg+Lat}} (slash)
+
+* __viheltää__: {{viheltää+V+Act+InfA+Sg+Lat}} (whistle)
+
+* __hiventää__: {{hiventää+V+Act+InfA+Sg+Lat}} ()
+
+* __huonontaa__: {{huonontaa+V+Act+InfA+Sg+Lat}} (worsen)
+
+* __kuhertaa__: {{kuhertaa+V+Act+InfA+Sg+Lat}} (snuggle)
+
+* __näpertää__: {{näpertää+V+Act+InfA+Sg+Lat}} (twiddle)
+
+
+* __kiitää__: {{kiitää+V+Act+InfA+Sg+Lat}} (rush)
+
+* __joutaa__: {{joutaa+V+Act+InfA+Sg+Lat}} ()
+
+* __yltää__: {{yltää+V+Act+InfA+Sg+Lat}} (reach)
+
+* __entää__: {{entää+V+Act+InfA+Sg+Lat}} ()
+
+* __kasvaa__: {{kasvaa+V+Act+InfA+Sg+Lat}} (grow)
+
+* __jakaa__: {{jakaa+V+Act+InfA+Sg+Lat}} (share)
+
+* __tappaa__: {{tappaa+V+Act+InfA+Sg+Lat}} (kill)
+
+* __auttaa__: {{auttaa+V+Act+InfA+Sg+Lat}} (help)
+
+* __sataa__: {{sataa+V+Act+InfA+Sg+Lat}} (rain)
+
+* __kantaa__: {{kantaa+V+Act+InfA+Sg+Lat}} (carry)
+
+* __kaataa__: {{kaataa+V+Act+InfA+Sg+Lat}} (pour)
+
+* __saartaa__: {{saartaa+V+Act+InfA+Sg+Lat}} (surround)
+
+* __kytkeä__: {{kytkeä+V+Act+InfA+Sg+Lat}} (switch)
+
+* __sotkea__: {{sotkea+V+Act+InfA+Sg+Lat}} (mess)
+
+* __pukea__: {{pukea+V+Act+InfA+Sg+Lat}} (dress)
+
+* __rypeä__: {{rypeä+V+Act+InfA+Sg+Lat}} (bathe)
+
+* __päteä__: {{päteä+V+Act+InfA+Sg+Lat}} (nitpick)
+
+* __kutea__: {{kutea+V+Act+InfA+Sg+Lat}} (breed)
+
+* __tunkea__: {{tunkea+V+Act+InfA+Sg+Lat}} (push)
+
+* __polkea__: {{polkea+V+Act+InfA+Sg+Lat}} (stomp)
+
+* __särkeä__: {{särkeä+V+Act+InfA+Sg+Lat}} (break)
+
+* __tuntea__: {{tuntea+V+Act+InfA+Sg+Lat}} (feel)
+
+* __lähteä__: {{lähteä+V+Act+InfA+Sg+Lat}} (go)
+
+
+* __kosia__: {{kosia+V+Act+InfA+Sg+Lat}} (propose)
+
+* __ryskiä__: {{ryskiä+V+Act+InfA+Sg+Lat}} (crash)
+
+* __kukkia__: {{kukkia+V+Act+InfA+Sg+Lat}} (bloom)
+
+* __sörkkiä__: {{sörkkiä+V+Act+InfA+Sg+Lat}} (meddle)
+
+* __kalppia__: {{kalppia+V+Act+InfA+Sg+Lat}} ()
+
+* __hyppiä__: {{hyppiä+V+Act+InfA+Sg+Lat}} (jump)
+
+* __moittia__: {{moittia+V+Act+InfA+Sg+Lat}} ()
+
+* __miettiä__: {{miettiä+V+Act+InfA+Sg+Lat}} (ponder)
+
+* __riipiä__: {{riipiä+V+Act+InfA+Sg+Lat}} (pull)
+
+* __raapia__: {{raapia+V+Act+InfA+Sg+Lat}} (scratch)
+
+* __ahnehtia__: {{ahnehtia+V+Act+InfA+Sg+Lat}} (greed)
+
+* __ehtiä__: {{ehtiä+V+Act+InfA+Sg+Lat}} ()
+
+* __mönkiä__: {{mönkiä+V+Act+InfA+Sg+Lat}} (crawl)
+
+* __onkia__: {{onkia+V+Act+InfA+Sg+Lat}} (fish)
+
+* __tympiä__: {{tympiä+V+Act+InfA+Sg+Lat}} (bore)
+
+* __kontia__:  ()
+
+* __hylkiä__: {{hylkiä+V+Act+InfA+Sg+Lat}} (reject)
+
+* __kopioida__: {{kopioida+V+Act+InfA+Sg+Lat}} (copy)
+
+* __öykkäröidä__: {{öykkäröidä+V+Act+InfA+Sg+Lat}} (bully)
+
+* __saada__: {{saada+V+Act+InfA+Sg+Lat}} (get)
+
+* __myydä__: {{myydä+V+Act+InfA+Sg+Lat}} (sell)
+
+* __jäädä__: {{jäädä+V+Act+InfA+Sg+Lat}} (stay)
+
+* __viedä__: {{viedä+V+Act+InfA+Sg+Lat}} (take)
+
+* __tuoda__: {{tuoda+V+Act+InfA+Sg+Lat}} (bring)
+
+* __syödä__: {{syödä+V+Act+InfA+Sg+Lat}} (eat)
+
+* __käydä__: {{käydä+V+Act+InfA+Sg+Lat}} (visit)
+
+* __marista__: {{marista+V+Act+InfA+Sg+Lat}} (whine)
+
+* __äristä__: {{äristä+V+Act+InfA+Sg+Lat}} (arr)
+
+
+* __häväistä__: {{häväistä+V+Act+InfA+Sg+Lat}} (sacrilege)
+
+* __vavista__: {{vavista+V+Act+InfA+Sg+Lat}} (shake)
+
+* __rangaista__: {{rangaista+V+Act+InfA+Sg+Lat}} (punish)
+
+* __pierrä__: {{pierrä+V+Act+InfA+Sg+Lat}} (fart)
+
+* __mennä__: {{mennä+V+Act+InfA+Sg+Lat}} (go)
+
+* __vastailla__: {{vastailla+V+Act+InfA+Sg+Lat}} (answer)
+
+* __äksyillä__: {{äksyillä+V+Act+InfA+Sg+Lat}} ()
+
+* __leikellä__: {{leikellä+V+Act+InfA+Sg+Lat}} (cut)
+
+* __nakella__: {{nakella+V+Act+InfA+Sg+Lat}} (throw)
+
+* __tapella__: {{tapella+V+Act+InfA+Sg+Lat}} (fight)
+
+* __hypellä__: {{hypellä+V+Act+InfA+Sg+Lat}} (jump)
+
+* __sulatella__: {{sulatella+V+Act+InfA+Sg+Lat}} (melt)
+
+* __herätellä__: {{herätellä+V+Act+InfA+Sg+Lat}} (wake)
+
+* __tipahdella__: {{tipahdella+V+Act+InfA+Sg+Lat}} (drop)
+
+* __säpsähdellä__: {{säpsähdellä+V+Act+InfA+Sg+Lat}} (wake)
+
+* __ommella__: {{ommella+V+Act+InfA+Sg+Lat}} (sow)
+
+* __vaellella__: {{vaellella+V+Act+InfA+Sg+Lat}} (wander)
+
+* __kiillellä__: {{kiillellä+V+Act+InfA+Sg+Lat}} (sparkle)
+
+* __komennella__: {{komennella+V+Act+InfA+Sg+Lat}} (boss)
+
+* __käännellä__: {{käännellä+V+Act+InfA+Sg+Lat}} (turn)
+
+* __nakerrella__: {{nakerrella+V+Act+InfA+Sg+Lat}} (bite)
+
+* __kiherrellä__: {{kiherrellä+V+Act+InfA+Sg+Lat}} (giggle)
+
+* __isännöidä__: {{isännöidä+V+Act+InfA+Sg+Lat}} (host)
+
+* __mellakoida__: {{mellakoida+V+Act+InfA+Sg+Lat}} (riot)
+
+* __palkita__: {{palkita+V+Act+InfA+Sg+Lat}} (reward)
+
+* __merkitä__: {{merkitä+V+Act+InfA+Sg+Lat}} (mark)
+
+* __juosta__: {{juosta+V+Act+InfA+Sg+Lat}} (run)
+
+* __piestä__: {{piestä+V+Act+InfA+Sg+Lat}} (spank)
+
+* __nähdä__: {{nähdä+V+Act+InfA+Sg+Lat}} (see)
+
+* __karheta__: {{karheta+V+Act+InfA+Sg+Lat}} ()
+
+* __vähetä__: {{vähetä+V+Act+InfA+Sg+Lat}} (lessen)
+
+* __niuketa__: {{niuketa+V+Act+InfA+Sg+Lat}} (tighten)
+
+* __jyrketä__: {{jyrketä+V+Act+InfA+Sg+Lat}} ()
+
+* __hapata__: {{hapata+V+Act+InfA+Sg+Lat}} (ensour)
+
+* __supeta__: {{supeta+V+Act+InfA+Sg+Lat}} (tighten)
+
+* __tylpetä__: {{tylpetä+V+Act+InfA+Sg+Lat}} (dull)
+
+* __helpota__: {{helpota+V+Act+InfA+Sg+Lat}} (ease)
+
+* __loitota__: {{loitota+V+Act+InfA+Sg+Lat}} (distance)
+
+* __ulota__: {{ulota+V+Act+InfA+Sg+Lat}} (outen)
+
+* __kaveta__: {{kaveta+V+Act+InfA+Sg+Lat}} (tighten)
+
+* __mädätä__: {{mädätä+V+Act+InfA+Sg+Lat}} (rot)
+
+* __leudota__: {{leudota+V+Act+InfA+Sg+Lat}} ()
+
+FIXME: this is not the back form of pidetä
+* __todeta__: {{todeta+V+Act+InfA+Sg+Lat}} (note)
+
+* __pidetä__: {{pidetä+V+Act+InfA+Sg+Lat}} (lengthen)
+
+* __lämmetä__: {{lämmetä+V+Act+InfA+Sg+Lat}} (warm)
+
+* __kiinnetä__: {{kiinnetä+V+Act+InfA+Sg+Lat}} (firm)
+
+* __juljeta__: {{juljeta+V+Act+InfA+Sg+Lat}} (dare)
+
+iljetä
+
+* __arvata__: {{arvata+V+Act+InfA+Sg+Lat}} (guess)
+
+* __ynnätä__: {{ynnätä+V+Act+InfA+Sg+Lat}} (add)
+
+* __morkata__: {{morkata+V+Act+InfA+Sg+Lat}} (blame)
+
+* __yökätä__: {{yökätä+V+Act+InfA+Sg+Lat}} (yuck)
+
+* __siepata__: {{siepata+V+Act+InfA+Sg+Lat}} (kidnap)
+
+* __välpätä__: {{välpätä+V+Act+InfA+Sg+Lat}} ()
+
+* __luntata__: {{luntata+V+Act+InfA+Sg+Lat}} (cheat)
+
+* __läntätä__: {{läntätä+V+Act+InfA+Sg+Lat}} (splat)
+
+* __kaivata__: {{kaivata+V+Act+InfA+Sg+Lat}} (long)
+
+* __levätä__: {{levätä+V+Act+InfA+Sg+Lat}} (rest)
+
+* __jahdata__: {{jahdata+V+Act+InfA+Sg+Lat}} (hunt)
+
+* __tähdätä__: {{tähdätä+V+Act+InfA+Sg+Lat}} (aim)
+
+* __vongata__: {{vongata+V+Act+InfA+Sg+Lat}} (beg)
+
+* __vängätä__: {{vängätä+V+Act+InfA+Sg+Lat}} (argue)
+
+* __temmata__: {{temmata+V+Act+InfA+Sg+Lat}} (pull)
+
+* __mullata__: {{mullata+V+Act+InfA+Sg+Lat}} (dirt)
+
+* __suunnata__: {{suunnata+V+Act+InfA+Sg+Lat}} (go)
+
+* __rynnätä__: {{rynnätä+V+Act+InfA+Sg+Lat}} (rush)
+
+* __virrata__: {{virrata+V+Act+InfA+Sg+Lat}} (stream)
+
+* __hyljätä__: {{hyljätä+V+Act+InfA+Sg+Lat}} (abandon)
+
+* __digata__: {{digata+V+Act+InfA+Sg+Lat}} (dig)
+
+* __lobata__: {{lobata+V+Act+InfA+Sg+Lat}} (lobby)
+
+* __karhuta__: {{karhuta+V+Act+InfA+Sg+Lat}} (tax)
+
+* __tähytä__: {{tähytä+V+Act+InfA+Sg+Lat}} (periscope)
+
+* __kaikota__: {{kaikota+V+Act+InfA+Sg+Lat}} (disappear)
+
+* __poiketa__: {{poiketa+V+Act+InfA+Sg+Lat}} ()
+
+* __keretä__: {{keretä+V+Act+InfA+Sg+Lat}} ()
+
+* __koukuta__: {{koukuta+V+Act+InfA+Sg+Lat}} (hook)
+
+* __pulputa__: {{pulputa+V+Act+InfA+Sg+Lat}} (pulp)
+
+* __upota__: {{upota+V+Act+InfA+Sg+Lat}} (sink)
+
+* __lotota__: {{lotota+V+Act+InfA+Sg+Lat}} (lotto)
+
+* __luututa__: {{luututa+V+Act+InfA+Sg+Lat}} (mop)
+
+* __kivuta__: {{kivuta+V+Act+InfA+Sg+Lat}} (climb)
+
+* __korveta__: {{korveta+V+Act+InfA+Sg+Lat}} ()
+
+* __kiivetä__: {{kiivetä+V+Act+InfA+Sg+Lat}} (climb)
+
+* __kirvota__: {{kirvota+V+Act+InfA+Sg+Lat}} (loose)
+
+* __kadota__: {{kadota+V+Act+InfA+Sg+Lat}} (disappear)
+
+* __todeta__: {{todeta+V+Act+InfA+Sg+Lat}} (note)
+
+* __vyyhdetä__: {{vyyhdetä+V+Act+InfA+Sg+Lat}} (entangle)
+
+* __liiduta__: {{liiduta+V+Act+InfA+Sg+Lat}} (chalk)
+
+* __tungeta__: {{tungeta+V+Act+InfA+Sg+Lat}} (push)
+
+* __pingota__: {{pingota+V+Act+InfA+Sg+Lat}} (ping)
+
+* __ängetä__: {{ängetä+V+Act+InfA+Sg+Lat}} (push)
+
+* __kummuta__: {{kummuta+V+Act+InfA+Sg+Lat}} ()
+
+* __kammeta__: {{kammeta+V+Act+InfA+Sg+Lat}} (lever)
+
+* __sammota__: {{sammota+V+Act+InfA+Sg+Lat}} ()
+
+* __innota__: {{innota+V+Act+InfA+Sg+Lat}} (eager)
+
+* __irrota__: {{irrota+V+Act+InfA+Sg+Lat}} (tear)
+
+* __haljeta__: {{haljeta+V+Act+InfA+Sg+Lat}} (split)
+
+* __iljetä__: {{iljetä+V+Act+InfA+Sg+Lat}} (dare)
+
+* __myrskytä__: {{myrskytä+V+Act+InfA+Sg+Lat}} (storm)
+
+* __lassota__: {{lassota+V+Act+InfA+Sg+Lat}} (lasso)
+
+* __selvitä__: {{selvitä+V+Act+InfA+Sg+Lat}} (manage)
+
+* __ryöpytä__: {{ryöpytä+V+Act+InfA+Sg+Lat}} (flood)
+
+* __peitota__: {{peitota+V+Act+InfA+Sg+Lat}} (beat)
+
+* __keritä__: {{keritä+V+Act+InfA+Sg+Lat}} ()
+
+* __muodota__: {{muodota+V+Act+InfA+Sg+Lat}} (form)
+
+* __lämmitä__: {{lämmitä+V+Act+InfA+Sg+Lat}} (heat)
+
+* __aallota__: {{aallota+V+Act+InfA+Sg+Lat}} (wave)
+
+* __hellitä__: {{hellitä+V+Act+InfA+Sg+Lat}} (loose)
+
+* __taitaa__: {{taitaa+V+Act+InfA+Sg+Lat}} (can)
+
+* __tietää__: {{tietää+V+Act+InfA+Sg+Lat}} (know)
+
+* __vipajaa__: {{vipajaa+V+Act+InfA+Sg+Lat}} (thump)
+
+* __heläjää__: {{heläjää+V+Act+InfA+Sg+Lat}} (chime)
+
+* __raikaa__: {{raikaa+V+Act+InfA+Sg+Lat}} (baum)
+
+* __ähkää__: {{ähkää+V+Act+InfA+Sg+Lat}} (meh)
+
+The verb olla has very peculiar and heteroclitic inflection with lot of
+common short forms in standard spoken Finnish:
+* __olla__: {{olla+V+Act+InfA+Sg+Lat}} (be)
+* __lienen__: {{olla+V+Act+Pot+Sg1}} ()
+* __lie__: {{olla+V+Act+Pot+ConNeg}} ()
+* __olija__: {{olla+V+Der/ja+Sg+Nom}} ()
+
+
+
+Adverbs are a heterogenous mass of words with defective inflectional,
+usually sourced from various forms of nominals.
+
+The classification of the adverbs in morphology goes along the possessives
+and clitics they take or require:
+* __aakkosellisesti__:  ()
+* __aakkosellisestikin__:  ()
+* __mukaani__:  ()
+* __mukaamme__:  ()
+* __ajassa__:  ()
+* __ajassako__:  ()
+
+Adpositions are morphologically nominals that have defective inflection
+patterns. Some of them come from forms of nominals that are no longer
+used. The adpositions are classified along whether they take possessives
+clitics, or not. They also have slight syntactic and semantic differences,
+the syntactic differences are coded in the analyses to be compatible with
+other languages, but for most intents and purposes all adpositions can
+appear in both syntactic positions, after and before the head word.
+
+Examples:
+* __alta__:  ()
+* __alleen__:  ()
+* __irti__:  ()
+* __irtikö__:  ()
+
+Prefixes are bound morphs that can appear in beginning of the compounds,
+mostly forms of nominals.
+
+Examples: 
+* __alabanaani__:  ()
+* __erikoistyyppi__:  ()
+
+Suffixes are bound morphs that come after nominals in compounds. 
+
+Examples:
+XXX * :  ()
+Acronyms are shortenings that inflect. They all have two inflection
+patterns, one read letter by letter, and one word-by-word. They are separate
+entries in this dictionary. For example OY will have singular illatives
+_OY:hyn_ and _OY:öön_ for _yyhyn_ and _yhtiöön_ resp., although former is
+much rarer.
+A big majority of popular acronyms in everyday use comes from English, and
+the word-based inflection is virtually non-existent and would be very
+confusing so there's no high priority for adding that.
+
+The first classification for acronyms should be along the final letter, then
+if the final word inflection is used, the class of that word.
+* __OY:hyn__:  ()
+* __OY:öön__:  ()
+
+Abbreviations are shortened forms that do not inflect. They have whatever
+classification they would have if they were read out, and possibly additional
+analysis of an abbreviation.
+
+Examples:
+* __eaa.__:  ()
+* __esim.__:  ()
+* __esim__* (is not standard language)
+
+Coordinating conjunctions combine equal clauses and phrases. As subset of
+particles, they do not inflect. The classification is solely syntactic and
+semantic, but it is used in this system for compatibility with other stuff.
+
+The coordinating conjunctions are: eli(kkä), ja, joko – tai, kuin – myös,
+‑kä, mutta, niin – kuin ‑kin/ myös, sekä, sekä – että, sun; tai, vaan, vai,
+ynnä, (saati), (sillä)
+(VISK § 816)
+Examples:
+* __eikä__:  ()
+* __ja__:  ()
+
+The adverbial conjunctions join two unequal clauses or phrases together.
+The traditional term for this is sub-ordinating conjunction, it is assumed
+here for compatibility with other languages. Adverbial conjunctions are a
+subset of particles, so they do not inflect at all.
+
+The adverbial conjunctions are:
+ellei, että, jahka, jollei, jos, joskin, jos kohta, jotta, koska, kun,
+ kunhan, mikäli, vaikka, (kunnes). (VISK § 818)
+Examples:
+* __että__:  ()
+* __jotta__:  ()
+* __koska__:  ()
+* __kun__:  ()
+* __jos__:  ()
+* __vaikka__:  ()
+
+Interjections are mainly parts of spoken language that are minimal turns
+in dialogue, curses, onomatopoeia and such. Interjections are a subset
+of particles, and do not inflect. They are quite productive kind of, though
+limited in form; they stem from arbitrary combinations of characters to
+
+Only add new interjections that are found from corpora.
+Examples:
+* __aah__:  ()
+* __äh__:  ()
+
+The particles are all words that do not inflect at all. For compatibility
+reasons subsets of particles have been set off to classes like conjunctions,
+and interjections. The ones that are not in those classes are left as
+particles.
+
+Examples:
+* __ahaa__:  ()
+* __edes__:  ()
+
+Exceptions are quite strange word-forms. the ones that do not fit anywhere 
+else. This file contains all enumerated word forms that cannot reasonably be
+created from lexical data by regular inflection. Usually there should be next
+to none exceptions, it's always better to have a paradigm that covers only
+one or few words than an exception since these will not work nicely with e.g.
+compounding scheme or possibly many end applications.
+
+
+negation verb has partial inflection:
+* __en__:  ()
+* __älkää__:  ()
+* __älkööt__:  ()
+
+Some verbs only have few word-forms left:
+* __kutiaa__:  ()
+* __taita__:  ()
+* __paratkoon__:  ()
+* __eläköön__:  ()
+
+
+The noun ruoka has irregular forms:
+* __ruuassa__:  ()
+* __ruuilla__:  ()
+
+The adjective hyvä has heteroclitic comparative derivations too:
+* __parempi__:  ()
+* __paremmissa__:  ()
+* __paras__:  ()
+* __parhaat__:  ()
+
+Some of the nouns have archaic consonat stem forms left:
+* __vuonna__:  ()
+* __sydännä__:  ()
+* __jumalten__:  ()
+* __sankarten__:  ()
+
+few verbs have shortened forms in standard spoken Finnish
+* __meen__:  ()
+* __tuut__:  ()
+
+Punctuation characters detailed here are the characters that appear commonly
+in Finnish texts, but are not part of words or linguistic content. The
+punctuations control clause and sentence level annotations, and range
+from full stops and commas to brackets. While punctuation symbols might
+have limited use as inflecting units, the ones described here refer to
+punctuation symbols as used in their primary purpose, in isolation. The
+part of language norms controlling punctuation are from orthography and
+the references of punctuation in good language use are not from the grammar
+but issues of Kielikello journal on good Finnish language use. The most
+current issue on punctuation was [KK2/2006]_.
+
+
+The primary punctuation marks are sentence final punctuation, they mark
+the end of a sentence. The most typical of these is full stop symbol, which
+ends neutral sentences. The exclamation mark and question mark end
+exclamative and questioning sentences respectively. An elliptic or unfinished
+sentence is ended with three successive full stops. In sloppy writing style
+it is common to use two, four or more full stops to mark an elliptic
+sentence. The Unicode compatibility character ellipsis has never been used
+for Finnish language and must not be used. Same applies for other
+combinations of sentence ending punctuation marks, the most common of these
+have separate analyses.
+
+The clause level punctuation marks are used in clause boundaries. The most
+typical of these is comma. The colon and semicolon are too. The clause
+boundaries do not have separate semantics needed in applications so they only
+have analyses for clause boundaries.
+
+
+The brackets are used to offset portions of text in opening and closing
+pairs. The most common pair is round brackets. Others used in Finnish are
+square, curly and angle brackets, in somewhat decreasing order of commonness.
+The angle brackets are commonly replaced by lower than symbol for opening and
+greater than symbol for closing bracket.
+The bracketed question mark is used to indicate uncertainty and bracketed
+exclamation mark to indicate surprise, both of these annotations are used
+within sentence as other bracketed constructions.
+
+The quotation marks are used to offset quotations. The typical ones in
+Finnish are the 9-shaped double quotation marks and apostrophes. Angle
+quotation marks can also be used, primarily in books and newspapers.
+It is possible to replace curly quotation marks with neutral typewriter
+ones where technology limits. It is also common to see foreign quotation
+marks or accent marks in place of quotation marks in sloppy writing style.
+
+There are two different dashes in Finnish. The hyphen is used for mainly
+word internally and won't appear as itself. The dash is used to offset
+some sentences or mark elision. The dash symbol can be either of unicode
+dash symbols or replaced with dash offset by spaces. In sloppy writing,
+two hyphens are often used in place of dashes.
+
+The space is used to separate words. For most applications the space has
+separate meaning so it rarely gets used as a symbol in applications of
+
+Less used symbols that appear in the Finnish texts; these do not have 
+special analyses. A slash can be used as a replacement of the meaning 'or',
+as a division slash or as a separator of verses in poem. 
+Backslash is used only in computer systems.
+Underscore is used only in computer systems.
+The pipe is used in dictionaries as morhpeme boundary, and computer systems.
+At sign is used only in computer systems.
+An ampersand can be used as a replacement of the meaning 'and'.
+Percent symbol is used after numeric expressions meaning 0.01 multiplier.
+Permille symbol is used after numeric expressions meaning 0.001 multiplier.
+§ sign is used for numbering sections etc.
+Degree sign is used with measurements. The second and minute signs can be
+used in conjunction with degree sign.
+The plus sign, specific minus sign and plus-minus signs are used in
+numeric expressions. The multiplication sign is used in numeric expressions.
+The equals sign is used in formulae. The asterisk is used as a marker
+for ungrammatical constructions and computer and other expressions.
+Registered and trademark symbols are rarely used. Copyright symbol is
+rarely used. Hash sign is used in phones and computer systems.
+The doubled § sign has been used as chapter range sign. The pilcrow
+sign can be used to mark chapters.
+The currency signs for euro, dollar, pound sterling, cent and yen can be
+used. I don't think anyone uses the currency sign ever.
+The lines below this one are not from any referenced source
+Digit-strings are used in place of numerals. They inflect with colon, like
+acronyms, and compound with hyphen only.
+
+Digits are constructed as several cyclic structures: integers, decimals or
+roman numerals.
+Zero alone works quite differently:
+* __0__:  ()
+
+Integers can be constructed from any number of digits, ending in
+1-9, followed by any number of 0's. Initial 0's are rare, but not totally
+unexpected:
+* __13__:  ()
+* __100__:  ()
+* __0000005550000000__:  ()
+
+The digit strings that end in 10 to 12 + 6n 0's are inflected alike:
+* __1000000000__:  ()
+* __300000000000__:  ()
+* __123456000000000000000000__:  ()
+
+The digit strings that end in 6 to 9 + 6n 0's are inflected alike:
+* __1000000__:  ()
+* __300000000__:  ()
+* __123456000000000000000__:  ()
+
+Decimal digit strings start with any number of digits 0 to 9, followed
+by decimal separator comma. The decimal dot may be allowed as substandard
+variant.
+* __1,0__:  ()
+* __314,1__:  ()
+
+
+The decimal digit strings end in any number of digits 0 to 9, inflected
+along the last part.
+* __3,141__:  ()
+* __123,345__:  ()
+
+The decimal digit strings with dot may be allowed as sub-standard option
+with respective analysis.
+
+Roman numerals are composed the symbols M, D, C, L, X, V, I in ascending
+scale and some combinations, they denote ordinal numbers and inflect like
+ones.
+* __MM__:  ()
+* __MCXI__:  ()
+* __CMXCIX__:  ()
+
+Thousands can be followed by any of other parts
+* __MII__:  ()
+* __MCCCXXII__:  ()
+
+
+Hundreds can be followed by anything but thousands:
+* __CXXI__:  ()
+* __DXXIV__:  ()
+
+Tens can be followed by ones:
+* __XIX__:  ()
+* __XXVII__:  ()
+
+Ones come alone
+* __IX__:  ()
+* __VIII__:  ()
+* __II__:  ()
+
+
+* __talo__:  ()
+
+* __pöly__:  ()
+
+* __sakset__:  ()
+
+* __häät__:  ()
+
+* __padassa__:  ()
+
+* __näyssä__:  ()
+
+* __patana__:  ()
+
+* __näkynä__:  ()
+
+* __padoitta__:  ()
+
+* __näyittä__:  ()
+
+* __näkyinä__:  ()
+
+* __patoina__:  ()
+
+
+* __politiikkaa__:  ()
+* __politiikkaaan__* (is not standard language)
+
+* __kysyntää__:  ()
+* __kysyntäään__* (is not standard language)
+
+* __patoa__:  ()
+* __patoaan__:  ()
+
+* __näkyä__:  ()
+* __näkyään__:  ()
+
+* __taimenta__:  ()
+
+* __tietä__:  ()
+
+* __maahan__:  ()
+
+* __toffeehen__:  ()
+
+* __tiehen__:  ()
+
+* __haihin__:  ()
+
+* __piihin__:  ()
+
+* __suohon__:  ()
+
+* __puuhun__:  ()
+
+* __pyyhyn__:  ()
+
+* __päähän__:  ()
+
+* __työhön__:  ()
+
+* __koiria__:  ()
+
+* __kärsiä__:  ()
+
+* __lepakoiden__:  ()
+
+* __kännyköiden__:  ()
+
+* __naisien__:  ()
+
+* __murhien__:  ()
+
+* __taloihin__:  ()
+
+* __näkyihin__:  ()
+
+* __koiriin__:  ()
+
+* __sieniin__:  ()
+
+* __patain__:  ()
+
+* __tyrmäin__:  ()
+
+* __sokeisiin__:  ()
+
+* __keväisiin__:  ()
+
+* __tienoita__:  ()
+
+* __teitä__:  ()
+
+* __tienoitten__:  ()
+
+* __teitten__:  ()
+
+* __lepakkoja__:  ()
+
+* __pyhäkköjä__:  ()
+
+* __lepakkojen__:  ()
+
+* __pyhäkköjen__:  ()
+
+* __tienooseen__:  ()
+
+* __miljööseen__:  ()
+
+* __sisarten__:  ()
+
+* __väänninten__:  ()
+
+* __kirjaan__:  ()
+
+* __tuleen__:  ()
+
+* __hiireen__:  ()
+
+* __ruuviin__:  ()
+
+* __tyyliin__:  ()
+
+* __taloon__:  ()
+
+* __nieluun__:  ()
+
+* __näkyyn__:  ()
+
+* __räkään__:  ()
+
+* __tönöön__:  ()
+
+* __taloni__:  ()
+
+* __tönönsä__:  ()
+
+* __taloaan__:  ()
+
+* __tienookseen__:  ()
+
+* __tiekseen__:  ()
+
+* __tönöään__:  ()
+
+* __talohan__:  ()
+
+* __tönöhän__:  ()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* __talojuttu__:  ()
+
+* __talonjuttu__:  ()
+
+* __naisienjuttu__:  ()
+
+* __lepakoidenjuttu__:  ()
+
+* __vanhempainjuttu__:  ()
+
+* __lepakoittenjuttu__:  ()
+
+* __talojenjuttu__:  ()
+
+* __miestenjuttu__:  ()
+
+
+* __talojuttu__:  ()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The adjectives are inflected like regular nouns. The only morphological
+difference in adjectives compared to other nouns is higher likelihood of
+comparative derivations–they are fully productive. For adjectives that do
+not compare, use qualifiers classification instead.
+VISK § 300
+
+The superlative derivation is formed by *in* suffix, which creates a new
+adjective baseform. This baseform is handled separately to avoid double
+superlatives.
+* __rumin__:  ()
+
+
+* __tyhmin__:  ()
+
+The comparative derivation is formed by *mpi* suffix, which creates a new
+adjective baseform. This adjective is handled separately
+to avoid double comparative forms.
+* __rumempi__:  ()
+
+* __tyhmempi__:  ()
+
+
+This inflectional part attached to adjective comparative stems to avoid
+circularity in comparative derivations:
+* __nopeampi__:  ()
+* __nopeammampi__* (is not standard language)
+* __nopeammammampi__* (is not standard language)
+
+* __tyhmempi__:  ()
+
+This inflectional part is attached to adjective superlative stems to avoid
+circularity in superlative  derivations:
+* __nopein__:  ()
+* __nopeimmin__* (is not standard language)
+* __nopeimmimmin__* (is not standard language)
+
+* __tyhmin__:  ()
+* __tyhmimmin__* (is not standard language)
+
+
+
+
+* __ruma__:  ()
+
+* __tyhmä__:  ()
+
+* __rumat__:  ()
+
+* __tyhmät__:  ()
+
+* __rumako__:  ()
+* __ruman__:  ()
+* __rumatta__:  ()
+
+* __tyhmäkö__:  ()
+* __tyhmän__:  ()
+* __tyhmättä__:  ()
+
+* __rumana__:  ()
+* __rumani__:  ()
+
+* __tyhmänä__:  ()
+* __tyhmäni__:  ()
+
+* __heikoitta__:  ()
+* __heikoilta__:  ()
+
+* __jäykittä__:  ()
+* __jäykiltä__:  ()
+
+* __jäykkinä__:  ()
+* __jäykkine__:  ()
+
+* __heikkoina__:  ()
+* __heikkoine__:  ()
+
+* __tarkka__:  ()
+* __tarkkaaan__* (is not standard language)
+
+* __tyhmää__:  ()
+* __tyhmäään__* (is not standard language)
+
+* __jaloa__:  ()
+* __jaloaan__:  ()
+
+* __hölöä__:  ()
+* __hölöään__:  ()
+
+* __vapaata__:  ()
+
+* __pientä__:  ()
+
+* __peeaahan__:  ()
+
+* __gayhin__:  ()
+
+
+* __muuhun__:  ()
+
+* __gayhyn__:  ()
+
+* __syypäähän__:  ()
+
+
+* __rumia__:  ()
+
+* __tyhmiä__:  ()
+
+* __tanakoiden__:  ()
+
+* __hömpäköiden__:  ()
+
+* __rumien__:  ()
+
+* __tyhmien__:  ()
+
+* __pahoihin__:  ()
+
+* __hölmöihin__:  ()
+
+* __punaisiin__:  ()
+
+* __sinisiin__:  ()
+
+* __rumain__:  ()
+
+* __tyhmäin__:  ()
+
+* __korkeisiin__:  ()
+
+* __järeisiin__:  ()
+
+* __korkeita__:  ()
+
+* __järeitä__:  ()
+
+* __nopeitten__:  ()
+
+* __järeitten__:  ()
+
+* __vahvoja__:  ()
+
+* __hölmöjä__:  ()
+
+* __vahvojen__:  ()
+
+* __hölmöjen__:  ()
+
+* __vapaaseen__:  ()
+
+* __työlääseen__:  ()
+
+* __raskasten__:  ()
+
+työlästen
+
+* __rumaan__:  ()
+
+
+* __suureen__:  ()
+
+* __pieneen__:  ()
+
+* __tuhtiin__:  ()
+
+* __rehtiin__:  ()
+
+* __huonoon__:  ()
+
+* __fiksuun__:  ()
+
+* __häijyyn__:  ()
+
+* __tyhmään__:  ()
+
+* __hölmöön__:  ()
+
+
+* __tyhmäni__:  ()
+
+* __rumani__:  ()
+
+* __kieroaan__:  ()
+
+* __hölmöään__:  ()
+
+* __rumalleen__:  ()
+
+* __tyhmälleen__:  ()
+
+* __rumahan__:  ()
+
+* __tyhmähän__:  ()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Acronyms are inflected using a colon, followed by the inflectional endings,
+which depend on either last letter of the word or inflection class of the
+last word of the abbreviation. The exception to the inflection scheme is the
+singular nominative, which appears without colon.
+Pronouncable abbreviations such as aids, hiv, kela, alko etc. are actually
+counted as regular words with regular inflection patterns.
+c.f. VISK § 169
+
+
+The acronyms ending in digit 1 pronounced as number:
+
+The acronyms ending in digit 2 pronounced as number
+
+
+
+
+
+
+
+
+acronyms ending in 'a' pronounced as a letter:
+* __A__:  ()
+* __A:t__:  ()
+* __A:ssa__:  ()
+
+acronyms ending in 'b', 'c', 'd', 'e', 'g', 'p', 'v', 'w' or 't' pronounced
+as a letter:
+* __BBC__:  ()
+* __BBC:t__:  ()
+* __BCC:ssä__:  ()
+
+Acronyms that end in 'j' or 'i' pronoynced as letter:
+* __DPI__:  ()
+* __DPI:t__:  ()
+* __DPI:ssä__:  ()
+
+Acronyms that end in 'h', 'k' or 'o' that is pronounced as a letter:
+* __HK__:  ()
+* __HK:n__:  ()
+* __HK:lla__:  ()
+
+Acronyms that end in 'q', or 'u' pronounced as a letter:
+* __EU__:  ()
+* __EU:t__:  ()
+* __EU:hun__:  ()
+
+Acronym that ends in 'f', 'l', 'm', 'n', 'r', 's', 'š' or 'x' pronounced as
+a letter:
+* __GRPS__:  ()
+* __GPRS:llä__:  ()
+
+Acronym that ends in 'y' pronounced as letter
+* __EY__:  ()
+* __EY:hyn__:  ()
+
+Acronyms that end in 'z' pronounced as letter
+* __Z__:  ()
+* __Z:t__:  ()
+
+Acronyms that end in 'ä' pronounced as letter
+* __Ä__:  ()
+* __Ä:t__:  ()
+
+Acronyms that end in 'ö' pronounced as letter
+* __Ö__:  ()
+* __Ö:t__:  ()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Most adverbs are morphologically either sti-derivations of adjectives or
+some specific form of an existing or archaic noun, and they have limited
+inflection in form of possessives and clitics carried over.
+
+* __edessäni__:  ()
+
+* __takanani__:  ()
+
+* __takanaan__:  ()
+
+* __jalkeilleen__:  ()
+
+* __keskelleen__:  ()
+
+* __edessään__:  ()
+
+* __nopeastihan__:  ()
+
+* __tyhmästihän__:  ()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Digit strings inflect with colons, lot like abbreviations.
+
+The digit strings ending in digit 1 pronounced as number
+* __1__:  ()
+* __1:t__:  ()
+* __1:ssä__:  ()
+
+The digit strings ending in digit 2 pronounced as number
+* __2__:  ()
+* __2:t__:  ()
+* __2:ssa__:  ()
+
+The digit strings ending in digit 3 pronounced as number
+* __3__:  ()
+* __3:t__:  ()
+* __3:ssa__:  ()
+
+The digit strings ending in digit 4 pronounced as number
+* __4__:  ()
+* __4:t__:  ()
+* __4:ssä__:  ()
+
+The digit strings ending in digit 5 pronounced as number
+* __5__:  ()
+* __5:t__:  ()
+* __5:ssä__:  ()
+
+The digit strings ending in digit 6 pronounced as number
+* __6__:  ()
+* __6:t__:  ()
+* __6:ss__:  ()
+
+The digit strings ending in digit 7 pronounced as number
+* __7__:  ()
+* __7:t__:  ()
+* __7:ssä__:  ()
+
+The digit strings ending in digit 8 pronounced as number
+* __8__:  ()
+* __8:t__:  ()
+* __8:ssa__:  ()
+
+
+The digit strings ending in digit 9 pronounced as number
+* __9__:  ()
+* __9:t__:  ()
+* __9:ssä__:  ()
+
+The digit strings ending in digit 0 pronounced as number
+* __0__:  ()
+* __0:t__:  ()
+* __0:aa__:  ()
+
+The digit string ending in 0 pronounced as tens
+* __10__:  ()
+* __10:t__:  ()
+* __10:tä__:  ()
+
+The digit string ending in 00 pronounced as hundreds
+* __100__:  ()
+* __100:t__:  ()
+* __100:aa__:  ()
+
+The digit string ending in 000 pronounced as thousands
+* __1000__:  ()
+* __1000:t__:  ()
+* __1000:ta__:  ()
+
+The digit string ending in 0's pronounced as millions
+* __1000000__:  ()
+* __1000000:t__:  ()
+* __1000000:aa__:  ()
+
+The digit string ending in 0's pronounced as milliards
+* __1000000000__:  ()
+* __1000000000:t__:  ()
+* __1000000000:a__:  ()
+
+The digit string ending in 1. pronounced as first
+* __1.__:  ()
+* __1:nen__:  ()
+* __1:stä__:  ()
+
+The digit string ending in 2. pronounced as second
+* __2.__:  ()
+* __2:nen__:  ()
+* __2:sta__:  ()
+
+The digit string ending in 3, 6, 8, 00 or 2 pronounced as ordinal
+* __3.__:  ()
+* __3:s__:  ()
+* __3:tta__:  ()
+
+The digit string ending in 4, 5, 7, 9, 0, or 1. pronounced as ordinal
+* __4.__:  ()
+* __4:s__:  ()
+* __4:ttä__:  ()
+
+The roman digit string ending in II, III, VI, VIII, C, L or M
+* __II__:  ()
+* __II:ta__:  ()
+
+The roman digit string ending in I, IV, V, VII, IX, X or 
+* __I__:  ()
+* __I:tä__:  ()
+
+* __1:nsä__:  ()
+
+* __2:nsa__:  ()
+
+* __3:aan__:  ()
+
+* __2:kseen__:  ()
+
+* __1:kseen__:  ()
+
+* __5:ttään__:  ()
+
+* __2:han__:  ()
+
+* __4:hän__:  ()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Numeral inflection is like nominal, except that numerals compound in all
+forms which requires great amount of care in the inflection patterns.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
