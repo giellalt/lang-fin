@@ -251,18 +251,16 @@ have compound analyses, the compounds may also have usage tags. The
 compounding analyses concern also syntagmatic melting mishmash.
 ;{{+Cmp}}
 
-
+{{{
 The word and morpheme boundaries are used to limit the effective range of
 far-reaching rules, such as vowel harmony. The boundaries are marked by
-curly bracketed hashes or underscores. The word boundaries are marked by
-{{{#}}},
-The lexical item boundaries by
-{{{##}}},
+curly bracketed hashes or underscores. The word boundaries are marked by {{#}},
+The lexical item boundaries by {{##}},
 the inflectional morpheme boundaries 
 by >, the derivational morpheme boundaries by », and some etymological and
 soft boundaries by {{_}}.
-{{{##}}}
-
+{{##}}
+}}}
 
 The root lexicon is unique entry point of this morphological description.
 This lexicon must not be used elsewhere; it contains only the markers for
@@ -441,7 +439,7 @@ have the same simple allomorph pattern:
 
 Between two vowels, the weak grade of k is optionally an apostrophe instead.
 For k that is not optionally ’, use the variation class kk ~ k instead
-(e.g. N_UKKO).
+(e.g. {{N_UKKO}}).
 * __teko__: {{teko+N+Sg+Nom}} (action)
 * __teossa__: {{teko+N+Sg+Ine}} ()
 * __te’ossa__: {{teko+N+Sg+Ine}} ()
@@ -462,7 +460,7 @@ For k that is not optionally ’, use the variation class kk ~ k instead
 
 Between three vowels where k is surrounded by same vowels the k becomes
 obligatorily ’, for other cases use classes for k optionally ’ (e.g.
-N_TEKO) or kk ~ k (e.g. N_UKKO).
+{{N_TEKO}}) or kk ~ k (e.g. {{N_UKKO}}).
 * __ruoko__:  ()
 * __ruo’ossa__:  ()
 
@@ -1835,11 +1833,11 @@ weak form.
 Noun forms of numerals with special inflection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The numerals are not really nouns in this morphology, for details see
-numerals_, but some of their compounds are nouns, and the following
+[numerals], but some of their compounds are nouns, and the following
 classes are for those that have special stem or suffix patterns not
 available with other nouns.
 The numerals 1 and 2 are in paradigm that is currently left with one other
-noun, _haaksi_, so nominals with 2 go to that class but 1 gets a new class
+noun, __haaksi__, so nominals with 2 go to that class but 1 gets a new class
 for being front vowelled. 3 Has its own paradigm, 4 is like koira, 5
 like hiisi and 6 like kausi.
 The numerals 7, 8, 9 have their own paradigm, which, other than the
@@ -2397,8 +2395,8 @@ Examples:
 Adjectives are words that are inflected like nouns, with few additions. For
 adjectives, the comparative derivations are usually allowed and the
 possessive suffixes are unlikely. The syntactic adjectives that do not have
-comparative derivations are nouns_, if they have nominal inflection, or
-particles_, if they do not inflect.
+comparative derivations are __nouns__, if they have nominal inflection, or
+__particles__, if they do not inflect.
 
 The classification of adjectives combines the stem changes, the final 
 allomorph selection and the harmony. See the list from:
@@ -3125,8 +3123,11 @@ kommassa
 kompina
 kommissa
 kompien
-LEXICON A_
+
+__LEXICON A__
+
 No examples
+
 multa
 multaa
 multana
@@ -3943,7 +3944,7 @@ forms.
 The verbs' conjugation includes voice (in Finnish grammars also verbal 
 genus),  tense/mood (tempus/modus), personal endings and negation marker
 The verbs also have productive derivations to defective nouns as
-infinitives, and to adjectives as participles_, which are considered to be 
+infinitives, and to adjectives as __participles__, which are considered to be 
 part of inflection and thus included in most versions (VISK § 105).
 The morphology of participles and historical 4th infinitive is further
 detailed in section Deverbal nouns'  morphology.
@@ -4512,7 +4513,7 @@ XXX * :  ()
 Acronyms are shortenings that inflect. They all have two inflection
 patterns, one read letter by letter, and one word-by-word. They are separate
 entries in this dictionary. For example OY will have singular illatives
-_OY:hyn_ and _OY:öön_ for _yyhyn_ and _yhtiöön_ resp., although former is
+__OY:hyn__ and __OY:öön__ for __yyhyn__ and __yhtiöön__ resp., although former is
 much rarer.
 A big majority of popular acronyms in everyday use comes from English, and
 the word-based inflection is virtually non-existent and would be very
@@ -4628,7 +4629,7 @@ punctuation symbols as used in their primary purpose, in isolation. The
 part of language norms controlling punctuation are from orthography and
 the references of punctuation in good language use are not from the grammar
 but issues of Kielikello journal on good Finnish language use. The most
-current issue on punctuation was [KK2/2006]_.
+current issue on punctuation was [KK2/2006].
 
 
 The primary punctuation marks are sentence final punctuation, they mark
