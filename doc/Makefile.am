@@ -2,6 +2,8 @@
 ## Copyright: Sámediggi/Divvun/UiT
 ## Licence: GPL v3+
 
+if CAN_DOCC
+
 # INSTALL these files:
 doc_DATA=fin.rst fin.html fin.tex fin.jspwiki
 
@@ -15,18 +17,18 @@ LATEX=xelatex
 fin.jspwiki: preamble.jspwiki doc-comments.conf
 	-rm -f $@
 	cat $(srcdir)/preamble.jspwiki > $@
-	cat `grep -v '^#' doc-comments.conf | sed -e 's:^:$(top_srcdir)/src/:'` | awk -f $(DOCC2JSPWIKI) >> $@
+	cat `grep -v '^#' doc-comments.conf | sed -e 's:^:$(top_srcdir)/src/:'` | $(AWK) -f $(DOCC2JSPWIKI) >> $@
 
 fin.tex: preamble.tex doc-comments.conf
 	-rm -f $@
 	cat $(srcdir)/preamble.tex > $@
-	cat `grep -v '^#'  doc-comments.conf | sed -e 's:^:$(top_srcdir)/src/:'` | awk -f $(DOCC2TEX) >> $@
+	cat `grep -v '^#'  doc-comments.conf | sed -e 's:^:$(top_srcdir)/src/:'` | $(AWK) -f $(DOCC2TEX) >> $@
 
 
 fin.rst: preamble.rst doc-comments.conf
 	-rm -f $@
 	cat $(srcdir)/preamble.rst > $@
-	cat `grep -v '^#' doc-comments.conf | sed -e 's:^:$(top_srcdir)/src/:'` | awk -f $(DOCC2RST) >> $@
+	cat `grep -v '^#' doc-comments.conf | sed -e 's:^:$(top_srcdir)/src/:'` | $(AWK) -f $(DOCC2RST) >> $@
 
 %.html: %.rst
 	$(RST2HTML) < $< > $@
@@ -36,3 +38,4 @@ fin.rst: preamble.rst doc-comments.conf
 	$(LATEX) $<
 	$(LATEX) $<
 
+endif # CAN_DOCC
