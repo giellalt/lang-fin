@@ -26,11 +26,21 @@ BEGIN {
     {
         LEXNAME = $2;
     }
-    else
+    else if ($0 ~ /^ *[^!]/)
     {
+        if ($0 ~ /!! \|/)
+        {
+            # table form
+            printf("| ");
+        }
+        else
+        {
+            # definition list
+            printf(";");
+        }
         for (i = 1; i <= NF; i++)
         {
-            if ($i ~ /^!/)
+            if ($i ~ /^!!/)
             {
                 break;
             }
@@ -63,6 +73,11 @@ BEGIN {
 }
 /^!! !/ {print(gensub("@LEXNAME@", LEXNAME, "g", gensub("!! ", "", ""))); }
 /^!! [^$€!]/ {print(gensub("!! ", "", "")); }
+/..*!! \|/ {print(gensub(".*!! ", "", "")); }
+/..*!! [^|]/ {printf(gensub(".*!! ", ":", "")); }
 /^LEXICON / {
     LEXNAME=$2;
+}
+/^"[^"]*"/ {
+    RULENAME=gensub("!.*", "", "", gensub("\"", "", "g"));
 }
