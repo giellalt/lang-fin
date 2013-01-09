@@ -46,19 +46,19 @@ BEGIN {
             }
             else if ((i == 1) && (NF == 1))
             {
-                printf("{{{%s}}}\n", $i);
+                printf("{{%s}}\n", $i);
             }
             else if (i == 1)
             {
-                printf("{{{%s}}}", $i);
+                printf("{{%s}}", $i);
             }
             else if (i == NF)
             {
-                printf(", {{{%s}}}\n", $i);
+                printf(", {{%s}}\n", $i);
             }
             else
             {
-                printf(", {{{%s}}}", $i);
+                printf(", {{%s}}", $i);
             }
         }
     }
@@ -66,7 +66,7 @@ BEGIN {
 /^[[:space:]]*$/ {printf("\n");}
 /^!! [€$][^ ]/ {printf("(subsequent examples are for *%s*)\n", $3);}
 /^!! € / {
-    printf("* __%s__: {{{%s}}} (%s)\n", $3, $4, $5);
+    printf("* __%s__: {{%s}} (%s)\n", $3, $4, $5);
 }
 /^!! \$ / {
     printf("* *__%s__ (is not standard language)\n", $3);
