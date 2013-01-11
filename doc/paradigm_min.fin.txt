@@ -1,0 +1,60 @@
+# Paradigm grammar
+#
+# Used in paradigm generator.
+# List the tag groups in the order they are given to generator.
+# The names of the tag groups are listed in korpustags.sma.txt
+# "?" marks the optionality of the tag.
+# It is not possible to mark alternation of the different tags.
+#
+# $Id: paradigm.sma.txt 43118 2011-06-03 13:20:48Z lene $
+#
+	
+N+Sg+Nom
+N+Sg+Gen
+N+Sg+Ill
+A+Grade?+Number+Nom
+A+Grade?+Number+Gen
+A+Grade?+Number+Ill
+A+Ord+Number+Nom
+A+Ord+Number+Gen
+A+Ord+Number+Ill
+V+Inf
+V+PrfPrc
+V+Ind+Prs+Sg1
+V+Ind+Prs+Sg3
+V+Ind+Prt+3
+Num+Number+Case+Nom
+Pron+Subclass?+Sg+Nom
+Pron+Subclass?+Sg+Gen
+Pron+Subclass?+Sg+Acc
+Pron+Subclass?+Pl+Nom
+Pron+Subclass?+Pl+Gen
+Pron+Subclass?+Pl+Acc
+Pron+Refl+Nom+PxSg1
+Pron+Refl+Gen+PxSg1
+Pron+Refl+Acc+PxSg1
+Pron+Refl+Ill+PxSg1
+Pron+Subclass?+Number?+Person-Number+Nom
+Pron+Subclass?+Number?+Person-Number+Gen
+Pron+Subclass?+Number?+Person-Number+Acc
+Pron+Subclass?+Number?+Person-Number+Ill
+Adv+Grade?
+Adv+Cmpnd
+CS
+CC
+Interj
+Pcle
+Apd+Possessive?
+Po+Possessive?
+Pr+Possessive?
+N+ABBR+Case?+Mood?
+A+ABBR+Case?+Mood?
+N+ABBR+Attr
+A+ABBR+Attr
+Adv+ABBR
+Num+ABBR+Case?
+V+ABBR+IV+PrfPrc
+V+ABBR+TV+Imprt
+#ABBR+Wordclass?+Case?+Mood?
+#ABBR+N+Attr
+

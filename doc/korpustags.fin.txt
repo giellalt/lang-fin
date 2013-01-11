@@ -1,0 +1,332 @@
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+%                                                                              %
+%    List of morphological and syntactic tags used in the Finnish corpus    %
+%                                                                              %
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+
+%     Table of contents
+%  0. A short explanation
+%  1. Structure of the different POS (the details of sect. 1 are just the sme ones)
+%  2. List of the tags, and their internal distribution (these lists are the smj ones)
+
+
+
+% The Document has two parts. 
+% The first part outlines the internal structure of
+% the complex POS, these should be built as boxes or panes.
+% The last part is a list over the different morphosyntactic categories.
+
+% The tags are in complementary distribution within each tag column.
+
+% (incomplete) morphotactic survey
+% ROOT + DER + POS + SUBPOS + ATTR + GRADE + NUM + CASE + PX + CLT  % noun
+% ROOT + DER + POL + VN + MOOD + TNS + PN + CLT               % finite verb
+% ROOT + DER + POL + VN + CASE + PX + CLT                     % infinite verb
+
+
+% 1. Structure of the different POS
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Note!!! The tag grouping under this section is not up to date (but based upon sme!
+% Contact Trond or Thomas for an update when (or: slightly before)
+% they are needed! (The lists in section 2 are up to date , though)
+
+% Tag syntax for the larger POS
+% (this is an attempt at clarification, the list themselves come under 2.):
+% Not all combinations within each box are possibe.
+
+% "-" indicates optionality. It is perhaps not needed. "|" means "OR".
+% The Function: list is listed below, and not indicated here.
+
+% The name of these boxes are now legible, rather than the tags (tags in parentheses?)
+% Noun: N
+% Subtype: -|Prop|Prop Attr|Actio|Actor|ACR|ABBR
+% Derivation: -|Der/Dimin|Der/amoš|Der/eaddji|Der/eamoš|Der/eapmi|Der/easti|Der/muš|Der/n|Der/supmi|Der/upmi|Der/vuohta
+% Number: Sg|Pl
+% Case: Nom|Gen|Acc|Par|Ill|Ine|Ela|All|Ade|Abl|Tra|Com|Ess|Abe
+% Possessive: -|PxSg1|PxSg2|PxSg3|PxPl1|PxPl2|PxPl3
+% Semantic: Ani|Fem|Mal|Obj|Org|Plc|Sur|Tit
+% Clitic: -|Qst|Foc
+% Function:
+
+% Adjective: A
+% Subtype: -|Attr
+% Number: Sg|Pl
+% Case: Nom|Gen|Acc|Par|Ill|Ine|Ela|All|Ade|Abl|Tra|Com|Ess|Abe
+% Possessive: -|PxSg1|PxSg2|PxSg3|PxPl1|PxPl2|PxPl3
+% Clitic: -|Qst|Foc
+% Function:
+
+% Verb: V
+% Type: -|ConNeg|Neg
+% Derivation: -|Der/ttaa
+% Diathesis: Act|Pass
+% Case: -|Ill|Ine|Ela|Ade|Abe
+% Infinite: InfA|InfE|InfMa|PrfPrc|PrsPrc|AgentPrc
+% Finite mood: Ind|Pot|Cond|Imprt|ImprtII
+% PersonNumber: Sg1|Sg2|Sg3|Pl1|Pl2|Pl3
+% Clitic: -|Qst|Foc
+% Function:
+
+% Adverb: Adv
+% Number: Sg|Pl
+% Case: Nom|Gen|Acc|Ill|Loc|Com|Ess
+% Clitic: -|Qst|Foc
+% Function:
+
+% Pronoun: Pron
+% Subtype: Pers|Dem|Interr|Refl|Recipr|Rel|Indef
+% Subtype: -|Attr
+% Number: Sg|Du|Pl
+% PersonNumber: Sg1|Sg2|Sg3|Du1|Du2|Du3|Pl1|Pl2|Pl3
+% Case: Nom|Gen|Acc|Ill|Ine|Ela|Com|Ess
+% PX: -|PxSg1|PxSg2|PxSg3|PxDu1|PxDu2|PxDu3|PxPl1|PxPl2|PxPl3
+% Clitic: -|Qst|Foc
+% Function:
+
+% Postposition: Po
+% Possessive: -|PxSg1|PxSg2|PxSg3|PxDu1|PxDu2|PxDu3|PxPl1|PxPl2|PxPl3
+% Clitic: -|Qst|Foc
+% Function:
+
+% Preposition: Pr
+% Clitic: -|Qst|Foc
+% Function:
+
+% Numeral: Num
+% Subtype: -|Attr|Cmpnd
+% Ordinality: -|Card|Ord
+% NUM: -|Sg|Pl
+% Case: -|Nom|Gen|Acc|Ill|Ine|Ela|Com|Ess
+% Clitic: -|Qst|Foc
+% Semantic: -|Date
+% Semantic: -|Range
+% Function:
+
+% DerivedRoot
+% Comment: These are tags for what the words have been at an earlier stage
+% in the derivation. They are syntactically irrelevant.
+
+
+% 2.  List of the tags, and their internal distribution
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Initial star = not yet found in smj file
+N	Noun
+A	Adjective
+V	Verb
+Adv	Adverb
+Pron	Pronoun
+CC	Conjunction
+Po	Postposition
+Pr	Preposition
+Interj	Interjection
+Pcle	Particle
+Num	Numeral
+#Wordclass
+
+Prop	Propernoun
+Pers	Personal
+Dem	Demonstrative
+Interr	Interrogative
+Refl	Reflexive
+Recipr	Reciprocal
+Rel	Relative
+Indef	Indefinite
+Card	Cardinal
+Ord	Ordinal
+#Subclass
+
+Sg	Singular
+Pl	Plural
+#Number
+
+Nom	Nominative
+Gen	Genitive
+Acc	Accusative
+Par	Partitive
+All	Allative
+Abl	Ablative
+Ade	Adessive
+Ill	Illative
+Ine	Inessive
+Ela	Elative
+Com	Comitative
+Abe	Abessive
+Ess	Essive
+Tra	Translative
+Ins	Instructive
+#Case
+
+
+Comp	Comparative
+Superl	Superlative
+#Grade
+
+PxSg1	Possessive Singular 1st Person
+PxSg2	Possessive Singular 2nd Person
+PxSg3	Possessive Singular 3rd Person
+PxPl1	Possessive Plural 1st Person
+PxPl2	Possessive Plural 2nd Person
+PxPl3	Possessive Plural 3rd Person
+#Possessive
+
+SgCmp
+SgNomCmp
+SgGenCmp
+PlGenCmp
+#Compound
+
+Prs	Present Tense
+Prt	Preterite Tense
+#Tense
+
+Cond	Conditional
+Imprt	Imperative
+Ind	Indicative
+Pot	Potential
+Cond	Conditional
+#Mood
+
+Sg1	1. Person Singular
+Sg2	2. Person Singular
+Sg3	3. Person Singular
+Pl1	1. Person Plural
+Pl2	2. Person Plural
+Pl3	3. Person Plural
+ConNeg	Negative form of the verb
+#Person-Number
+
+Pass	Passive
+Act	Active
+#Diathesis
+
+Neg	Negative verb
+#Polarity
+
+InfA	First Infinitive
+InfE	Second Infinitive
+InfMa	Third Infinitive
+PrfPrc	Perfect Participle
+PrsPrc	Present Participle
+#Infinite
+
+Qst	Question Particle
+Foc	Focus Particle
+#Clitic
+
+ABBR	Abbreviation
+ACR	Acronym
+CLB	Clause boundary
+PUNCT	Punctuation mark
+LEFT	Left 
+RIGHT	Right
+#Punctuation
+
+Ani	Animal
+Fem	Female
+Mal	Male
+Obj	Object
+Org	Organisation
+Plc	Place
+Sur	Surname
+Tit	Title
+#Nametype
+
+Date  Date
+Range Range
+#Numeraltype
+
+@+FAUXV	Finite auxiliary verb
+@+FMAINV	Finite main verb
+@-FAUXV	Infinite auxiliary verb
+@-FMAINV	Infinite main verb
+@-FSUBJ	Subject of finite verb
+@ADV-A	Adverb modifying an adjective
+@ADV-ADV	Adverb modifying an adverb
+@ADVL	Adverbial
+@AN>	Prenominal adjective modifier
+@APP	Postnominal apposition
+@ActioN>	Actio Nominative
+@CC-NP	Phrase conjuction
+@CC-VP	Sentential conjuction
+@CMPND	Syntactic parallel of morfoloCompound
+@CS	Subjunction
+@CS-COMPL	Complement of subjunction
+@CS-NP	Phrase subjuction
+@CS-VP	Sentential subjunction
+@DN>	Prenominal determiner
+@GA>	Preadijectival genitive modifier
+@GN>	Prenominal genitive modifier
+@GP<	Genitive complement of postposition
+@GP>	Genitive complement of preposition
+@HNOUN	Stray noun in sentence fragments
+@INTERJ	Interjection
+@NNum>	Nominal attributes of numerals
+@NPron<	Noun modifying pronouns to the left
+@NQ<	Noun modifying quantifier to the left
+@NUM-PRON	Numerals modifying pronouns to the left
+@NUMBER	Stray numeral
+@NumN<	Nominal attributes of numerals
+@NumQ<	Nominal attributes of quantifiers
+@OBJ	Direct object
+@OPRED	Object predicative
+@PCLE	Particle
+@PROP>	Proper noun attributes
+@PrcN>	Present participle modifying noun to the right
+@PronN<	Pronoun modifying a noun to the left
+@PronN>Pronoun modifying a noun to the right
+@QN<	Postnominal quantifier
+@QN>	Quantifier modifying noun to the right
+@SPRED	Subject predicative
+@SUBJ	Subject
+@SUBJ-QH	Subject with a quantifier head
+@X	No tag
+#Syntax
+
++Der/Dimin	+Der/Dimin
++Der/Pass	+Der/Pass
++Der/adda	+Der/adda
++Der/ahkes	+Der/ahkes
++Der/ahtes	+Der/ahtes
++Der/ahtes	+Der/ahtes
++Der/ahtte	+Der/ahtte
++Der/alla	+Der/alla
++Der/asste	+Der/asste
++Der/d	+Der/d
++Der/dahka	+Der/dahka
++Der/dahtte	+Der/dahtte
++Der/dalla	+Der/dalla
++Der/dasste	+Der/dasste
++Der/dibme	+Der/dibme
++Der/duhtte	+Der/duhtte
++Der/duvva	+Der/duvva
++Der/gielak	+Der/gielak
++Der/goahte	+Der/goahte
++Der/ibme	+Der/ibme
++Der/k	+Der/k
++Der/l	+Der/l
++Der/ladda	+Der/ladda
++Der/lahtte	+Der/lahtte
++Der/lasj	+Der/lasj
++Der/lasste	+Der/lasste
++Der/lis	+Der/lis
++Der/lágán	+Der/lágán
++Der/lágásj	+Der/lágásj
++Der/m	+Der/m
++Der/mus	+Der/mus
++Der/r	+Der/r
++Der/st	+Der/st
++Der/stahtte	+Der/stahtte
++Der/stalla	+Der/stalla
++Der/stasste	+Der/stasste
++Der/u/a/åd	+Der/u/a/åd
++Der/vuohta	+Der/vuohta
++Der/vuohta	+Der/vuohta
+#Derivation
+
+
+V*	Verb stem
+N*	Noun stem
+A*	Adjective stem
+#DerivedRoot
