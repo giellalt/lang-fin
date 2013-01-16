@@ -36,7 +36,7 @@ BEGIN {
         else
         {
             # definition list
-            printf(";");
+            printf("#;");
         }
         for (i = 1; i <= NF; i++)
         {
@@ -69,7 +69,7 @@ BEGIN {
     printf("* __%s__: {{%s}} (%s)\n", $3, $4, $5);
 }
 /^!! \$ / {
-    printf("* *__%s__ (is not standard language)\n", $3);
+    printf("* __%s__* (is not standard language)\n", $3);
 }
 /^!! !/ {print(gensub("@LEXNAME@", LEXNAME, "g", gensub("!! ", "", ""))); }
 /^!! [^$€!]/ {print(gensub("!! ", "", "")); }
