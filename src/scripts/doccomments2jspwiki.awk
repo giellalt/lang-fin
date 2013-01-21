@@ -19,6 +19,7 @@ BEGIN {
     LEXNAME="@OUTSIDE_LEXICONS@";
     RULENAME="@OUTSIDE RULES@";
     CODE="@NO CODE@";
+    SOMETHING_WRONG="TRUE";
 }
 function expand_variables(s) {
     # expand all our doc comment variables
@@ -64,9 +65,16 @@ function expand_variables(s) {
     print(expand_variables(gensub(".*!!≈", "", "")));
 }
 /.*!! / {print(expand_variables(gensub(".*!! ", "", ""))); }
+/!!/ {SOMETHING_WRONG="FALSE";}
 /^LEXICON / {
     LEXNAME=$2;
 }
 /^"[^"]*"/ {
     RULENAME=gensub("!.*", "", "", gensub("\"", "", "g"));
+}
+END {
+    if (SOMETHING_WRONG=="TRUE") {
+        print("There was no content!");
+        exit(1);
+    }
 }
