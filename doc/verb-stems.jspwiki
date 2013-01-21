@@ -1,0 +1,531 @@
+The verbs' conjugation includes voice (in Finnish grammars also verbal 
+genus),  tense/mood (tempus/modus), personal endings and negation marker
+The verbs also have productive derivations to defective nouns as
+infinitives, and to adjectives as participles_, which are considered to be 
+part of inflection and thus included in most versions (VISK § 105).
+The morphology of participles and historical 4th infinitive is further
+detailed in section Deverbal nouns'  morphology.
+The analysis strings of verb are not as systematic as nouns,
+as many categories collapse together in forms, e.g. the tense and mood
+are only distinct with indicative past and non-past. This variation is
+reflected in different taggings for different versions of omorfi and
+detailed in later sections.
+
+
+The verbs are classified along the stem mutations suffix assimilation,
+and harmony:
+€ kutoo kutoa+V+Act+Ind+Prt+Sg3 knit
+€ kudotaan kutoa+V+Pss+Ind+Prt+Pe4
+€ tietää tietää+V+Act+Ind+Prt+Sg3 know
+€ tiesit tietää+V+Act+Ind+Pst+Sg2
+€ nähnyt nähdä+V+Act+PrfPrc+Sg+Nom
+€ juossut juosta+V+Act+PrfPrc+Sg+Nom
+The key to find unique class from verbs is to pick stems and suffixes from:
+indicative non-past 1st singular and 3rd singular, indicative past 1st 
+singular, ...
+
+
+Verbs have no allomorphic variation per se, except for some assimilation and
+variation of ð forms, but the stem variation is the same
+as in nouns. The examples for verb stems are given for each class:
+A infinitive's lative, e infinitive's inessive, indicative present 1st 
+singular, indicative present 3rd singular, indicative past 1st singular, 
+indicative past 3rd singular, conditional past 3rd singular, 
+imperative 2nd plural, potential 1st singular, present passive, 
+past passive, nut participle passive
+
+The u stems have no stem variation:
+€ kaunistua kaunistua+V+Act+InfA+Sg+Lat beautify
+€ kaunistuessa kaunistua+V+Act+InfE+Sg+Ine
+€ kaunistun kaunistua+V+Act+Ind+Prt+Sg1
+€ kaunistuu kaunistua+V+Act+Ind+Prt+Sg3
+€ kaunistuin kaunistua+V+Act+Ind+Pst+Sg1
+€ kaunistui kaunistua+V+Act+Ind+Pst+Sg3
+€ kaunistuisi kaunistua+V+Act+Cond+Sg3
+€ kaunistukaa kaunistua+V+Act+Imprt+Pl2
+€ kaunistunen kaunistua+V+Act+Pot+Sg1
+€ kaunistutaan kaunistua+V+Pss+Ind+Prt+Pe4
+€ kaunistuttiin kaunistua+V+Pss+Ind+Pst+Pe4
+€ kaunistuttu kaunistua+V+Pss+PrfPrc+Sg+Nom
+€ kaunistuminen kaunistua+V+Der/minen+Sg+Nom
+
+The o stems have no stem variation:
+€ punoa punoa+V+Act+InfA+Sg+Lat bundle?
+€ punoessa punoa+V+Act+InfE+Sg+Ine
+€ punon punoa+V+Act+Ind+Prt+Sg1
+€ punoo punoa+V+Act+Ind+Prt+Sg3
+€ punoin punoa+V+Act+Ind+Pst+Sg1
+€ punoi punoa+V+Act+Ind+Pst+Sg3
+€ punoisi punoa+V+Act+Cond+Sg3
+€ punokaa punoa+V+Act+Imprt+Pl2
+€ punonen punoa+V+Act+Pot+Sg1
+€ punotaan punoa+V+Pss+Ind+Prt+Pe4
+€ punottiin punoa+V+Pss+Ind+Pst+Pe4
+€ punottu punoa+V+Pss+PrfPrc+Sg+Nom
+€ punominen punoa+V+Der/minen+Sg+Nom
+
+The ö stems have no stem variation:
+€ säilöä säilöä+V+Act+InfA+Sg+Lat store
+€ säilöessä säilöä+V+Act+InfE+Sg+Ine
+€ säilön säilöä+V+Act+Ind+Prt+Sg1
+€ säilöö säilöä+V+Act+Ind+Prt+Sg3
+€ säilöin säilöä+V+Act+Ind+Pst+Sg1
+€ säilöi säilöä+V+Act+Ind+Pst+Sg3
+€ säilöisi säilöä+V+Act+Cond+Sg3
+€ säilökää säilöä+V+Act+Imprt+Pl2
+€ säilönen säilöä+V+Act+Pot+Sg1
+€ säilötään säilöä+V+Pss+Ind+Prt+Pe4
+€ säilöttiin säilöä+V+Pss+Ind+Pst+Pe4
+€ säilötty säilöä+V+Pss+PrfPrc+Sg+Nom
+€ säilöminen säilöä+V+Der/minen+Sg+Nom
+
+The y stems have no stem variation:
+€ ällistyä ällistyä+V+Act+InfA+Sg+Lat amaze
+€ ällistyessä ällistyä+V+Act+InfE+Sg+Ine
+€ ällistyn ällistyä+V+Act+Ind+Prt+Sg1
+€ ällistyy ällistyä+V+Act+Ind+Prt+Sg3
+€ ällistyin ällistyä+V+Act+Ind+Pst+Sg1
+€ ällistyi ällistyä+V+Act+Ind+Pst+Sg3
+€ ällistyisi ällistyä+V+Act+Cond+Sg3
+€ ällistykää ällistyä+V+Act+Imprt+Pl2
+€ ällistynen ällistyä+V+Act+Pot+Sg1
+€ ällistytään ällistyä+V+Pss+Ind+Prt+Pe4
+€ ällistyttiin ällistyä+V+Pss+Ind+Pst+Pe4
+€ ällistytty ällistyä+V+Pss+PrfPrc+Sg+Nom
+
+€ haukkoa haukkoa+V+Act+InfA+Sg+Lat gasp
+
+€ nuokkua nuokkua+V+Act+InfA+Sg+Lat sleep
+
+€ kärkkyä kärkkyä+V+Act+InfA+Sg+Lat steal a base
+
+€ harppoa harppoa+V+Act+InfA+Sg+Lat walk
+
+€ loppua loppua+V+Act+InfA+Sg+Lat end
+
+€ leppyä leppyä+V+Act+InfA+Sg+Lat settle
+
+€ kivettyä kivettyä+V+Act+InfA+Sg+Lat stone
+
+€ viittoa viittoa+V+Act+InfA+Sg+Lat sign
+
+€ hermottua hermottua+V+Act+InfA+Sg+Lat nerve
+
+€ mäikyä mäikyä+V+Act+InfA+Sg+Lat bong
+
+€ takoa takoa+V+Act+InfA+Sg+Lat hammer
+
+€ maukua maukua+V+Act+InfA+Sg+Lat gong
+
+€ elpyä elpyä+V+Act+InfA+Sg+Lat rescuscitate
+
+€ hiipua hiipua+V+Act+InfA+Sg+Lat fizzle
+
+€ silpoa silpoa+V+Act+InfA+Sg+Lat slash
+
+€ kietoa kietoa+V+Act+InfA+Sg+Lat entangle
+
+€ siliytyä siliytyä+V+Act+InfA+Sg+Lat iron
+
+€ rohtua rohtua+V+Act+InfA+Sg+Lat scar
+
+€ vinkua vinkua+V+Act+InfA+Sg+Lat squeal
+
+€ penkoa penkoa+V+Act+InfA+Sg+Lat dig
+
+€ tempoa tempoa+V+Act+InfA+Sg+Lat tuck
+
+€ ampua ampua+V+Act+InfA+Sg+Lat shoot
+
+€ mieltyä mieltyä+V+Act+InfA+Sg+Lat like
+
+€ humaltua humaltua+V+Act+InfA+Sg+Lat intoxicate
+
+€ vakaantua vakaantua+V+Act+InfA+Sg+Lat stabilise
+
+€ tyhjentyä tyhjentyä+V+Act+InfA+Sg+Lat empty
+
+€ pyörtyä pyörtyä+V+Act+InfA+Sg+Lat faint
+
+€ vartoa vartoa+V+Act+InfA+Sg+Lat wait
+
+€ pusertua pusertua+V+Act+InfA+Sg+Lat squeeze
+
+€ mutristaa mutristaa+V+Act+InfA+Sg+Lat ?
+
+€ kivistää kivistää+V+Act+InfA+Sg+Lat hurt
+
+€ räpsyttää räpsyttää+V+Act+InfA+Sg+Lat blink
+
+€ vieroittaa vieroittaa+V+Act+InfA+Sg+Lat 
+
+
+€ purkaa purkaa+V+Act+InfA+Sg+Lat tear
+
+€ kärähtää kärähtää+V+Act+InfA+Sg+Lat fry
+
+€ mojahtaa mojahtaa+V+Act+InfA+Sg+Lat smack
+
+€ kyntää kyntää+V+Act+InfA+Sg+Lat plow
+
+€ sortaa sortaa+V+Act+InfA+Sg+Lat crush
+
+€ huutaa huutaa+V+Act+InfA+Sg+Lat yell
+
+€ pyytää pyytää+V+Act+InfA+Sg+Lat aks
+
+€ sivaltaa sivaltaa+V+Act+InfA+Sg+Lat slash
+
+€ viheltää viheltää+V+Act+InfA+Sg+Lat whistle
+
+€ hiventää hiventää+V+Act+InfA+Sg+Lat 
+
+€ huonontaa huonontaa+V+Act+InfA+Sg+Lat worsen
+
+€ kuhertaa kuhertaa+V+Act+InfA+Sg+Lat snuggle
+
+€ näpertää näpertää+V+Act+InfA+Sg+Lat twiddle
+
+
+€ kiitää kiitää+V+Act+InfA+Sg+Lat rush
+
+€ joutaa joutaa+V+Act+InfA+Sg+Lat 
+
+€ yltää yltää+V+Act+InfA+Sg+Lat reach
+
+€ entää entää+V+Act+InfA+Sg+Lat 
+
+€ kasvaa kasvaa+V+Act+InfA+Sg+Lat grow
+
+€ jakaa jakaa+V+Act+InfA+Sg+Lat share
+
+€ tappaa tappaa+V+Act+InfA+Sg+Lat kill
+
+€ auttaa auttaa+V+Act+InfA+Sg+Lat help
+
+€ sataa sataa+V+Act+InfA+Sg+Lat rain
+
+€ kantaa kantaa+V+Act+InfA+Sg+Lat carry
+
+€ kaataa kaataa+V+Act+InfA+Sg+Lat pour
+
+€ saartaa saartaa+V+Act+InfA+Sg+Lat surround
+
+€ kytkeä kytkeä+V+Act+InfA+Sg+Lat switch
+
+€ sotkea sotkea+V+Act+InfA+Sg+Lat mess
+
+€ pukea pukea+V+Act+InfA+Sg+Lat dress
+
+€ rypeä rypeä+V+Act+InfA+Sg+Lat bathe
+
+€ päteä päteä+V+Act+InfA+Sg+Lat nitpick
+
+€ kutea kutea+V+Act+InfA+Sg+Lat breed
+
+€ tunkea tunkea+V+Act+InfA+Sg+Lat push
+
+€ polkea polkea+V+Act+InfA+Sg+Lat stomp
+
+€ särkeä särkeä+V+Act+InfA+Sg+Lat break
+
+€ tuntea tuntea+V+Act+InfA+Sg+Lat feel
+
+€ lähteä lähteä+V+Act+InfA+Sg+Lat go
+
+
+€ kosia kosia+V+Act+InfA+Sg+Lat propose
+
+€ ryskiä ryskiä+V+Act+InfA+Sg+Lat crash
+
+€ kukkia kukkia+V+Act+InfA+Sg+Lat bloom
+
+€ sörkkiä sörkkiä+V+Act+InfA+Sg+Lat meddle
+
+€ kalppia kalppia+V+Act+InfA+Sg+Lat 
+
+€ hyppiä hyppiä+V+Act+InfA+Sg+Lat jump
+
+€ moittia moittia+V+Act+InfA+Sg+Lat 
+
+€ miettiä miettiä+V+Act+InfA+Sg+Lat ponder
+
+€ riipiä riipiä+V+Act+InfA+Sg+Lat pull
+
+€ raapia raapia+V+Act+InfA+Sg+Lat scratch
+
+€ ahnehtia ahnehtia+V+Act+InfA+Sg+Lat greed
+
+€ ehtiä ehtiä+V+Act+InfA+Sg+Lat 
+
+€ mönkiä mönkiä+V+Act+InfA+Sg+Lat crawl
+
+€ onkia onkia+V+Act+InfA+Sg+Lat fish
+
+€ tympiä tympiä+V+Act+InfA+Sg+Lat bore
+
+€ kontia
+
+€ hylkiä hylkiä+V+Act+InfA+Sg+Lat reject
+
+€ kopioida kopioida+V+Act+InfA+Sg+Lat copy
+
+€ öykkäröidä öykkäröidä+V+Act+InfA+Sg+Lat bully
+
+€ saada saada+V+Act+InfA+Sg+Lat get
+
+€ myydä myydä+V+Act+InfA+Sg+Lat sell
+
+€ jäädä jäädä+V+Act+InfA+Sg+Lat stay
+
+€ viedä viedä+V+Act+InfA+Sg+Lat take
+
+€ tuoda tuoda+V+Act+InfA+Sg+Lat bring
+
+€ syödä syödä+V+Act+InfA+Sg+Lat eat
+
+€ käydä käydä+V+Act+InfA+Sg+Lat visit
+
+€ marista marista+V+Act+InfA+Sg+Lat whine
+
+€ äristä äristä+V+Act+InfA+Sg+Lat arr
+
+
+€ häväistä häväistä+V+Act+InfA+Sg+Lat sacrilege
+
+€ vavista vavista+V+Act+InfA+Sg+Lat shake
+
+€ rangaista rangaista+V+Act+InfA+Sg+Lat punish
+
+€ pierrä pierrä+V+Act+InfA+Sg+Lat fart
+
+€ mennä mennä+V+Act+InfA+Sg+Lat go
+
+€ vastailla vastailla+V+Act+InfA+Sg+Lat answer
+
+€ äksyillä äksyillä+V+Act+InfA+Sg+Lat 
+
+€ leikellä leikellä+V+Act+InfA+Sg+Lat cut
+
+€ nakella nakella+V+Act+InfA+Sg+Lat throw
+
+€ tapella tapella+V+Act+InfA+Sg+Lat fight
+
+€ hypellä hypellä+V+Act+InfA+Sg+Lat jump
+
+€ sulatella sulatella+V+Act+InfA+Sg+Lat melt
+
+€ herätellä herätellä+V+Act+InfA+Sg+Lat wake
+
+€ tipahdella tipahdella+V+Act+InfA+Sg+Lat drop
+
+€ säpsähdellä säpsähdellä+V+Act+InfA+Sg+Lat wake
+
+€ ommella ommella+V+Act+InfA+Sg+Lat sow
+
+€ vaellella vaellella+V+Act+InfA+Sg+Lat wander
+
+€ kiillellä kiillellä+V+Act+InfA+Sg+Lat sparkle
+
+€ komennella komennella+V+Act+InfA+Sg+Lat boss
+
+€ käännellä käännellä+V+Act+InfA+Sg+Lat turn
+
+€ nakerrella nakerrella+V+Act+InfA+Sg+Lat bite
+
+€ kiherrellä kiherrellä+V+Act+InfA+Sg+Lat giggle
+
+€ isännöidä isännöidä+V+Act+InfA+Sg+Lat host
+
+€ mellakoida mellakoida+V+Act+InfA+Sg+Lat riot
+
+€ palkita palkita+V+Act+InfA+Sg+Lat reward
+
+€ merkitä merkitä+V+Act+InfA+Sg+Lat mark
+
+€ juosta juosta+V+Act+InfA+Sg+Lat run
+
+€ piestä piestä+V+Act+InfA+Sg+Lat spank
+
+€ nähdä nähdä+V+Act+InfA+Sg+Lat see
+
+€ karheta karheta+V+Act+InfA+Sg+Lat 
+
+€ vähetä vähetä+V+Act+InfA+Sg+Lat lessen
+
+€ niuketa niuketa+V+Act+InfA+Sg+Lat tighten
+
+€ jyrketä jyrketä+V+Act+InfA+Sg+Lat 
+
+€ hapata hapata+V+Act+InfA+Sg+Lat ensour
+
+€ supeta supeta+V+Act+InfA+Sg+Lat tighten
+
+€ tylpetä tylpetä+V+Act+InfA+Sg+Lat dull
+
+€ helpota helpota+V+Act+InfA+Sg+Lat ease
+
+€ loitota loitota+V+Act+InfA+Sg+Lat distance
+
+€ ulota ulota+V+Act+InfA+Sg+Lat outen
+
+€ kaveta kaveta+V+Act+InfA+Sg+Lat tighten
+
+€ mädätä mädätä+V+Act+InfA+Sg+Lat rot
+
+€ leudota leudota+V+Act+InfA+Sg+Lat 
+
+FIXME: this is not the back form of pidetä
+€ todeta todeta+V+Act+InfA+Sg+Lat note
+
+€ pidetä pidetä+V+Act+InfA+Sg+Lat lengthen
+
+€ lämmetä lämmetä+V+Act+InfA+Sg+Lat warm
+
+€ kiinnetä kiinnetä+V+Act+InfA+Sg+Lat firm
+
+€ juljeta juljeta+V+Act+InfA+Sg+Lat dare
+
+iljetä
+
+€ arvata arvata+V+Act+InfA+Sg+Lat guess
+
+€ ynnätä ynnätä+V+Act+InfA+Sg+Lat add
+
+€ morkata morkata+V+Act+InfA+Sg+Lat blame
+
+€ yökätä yökätä+V+Act+InfA+Sg+Lat yuck
+
+€ siepata siepata+V+Act+InfA+Sg+Lat kidnap
+
+€ välpätä välpätä+V+Act+InfA+Sg+Lat 
+
+€ luntata luntata+V+Act+InfA+Sg+Lat cheat
+
+€ läntätä läntätä+V+Act+InfA+Sg+Lat splat
+
+€ kaivata kaivata+V+Act+InfA+Sg+Lat long
+
+€ levätä levätä+V+Act+InfA+Sg+Lat rest
+
+€ jahdata jahdata+V+Act+InfA+Sg+Lat hunt
+
+€ tähdätä tähdätä+V+Act+InfA+Sg+Lat aim
+
+€ vongata vongata+V+Act+InfA+Sg+Lat beg
+
+€ vängätä vängätä+V+Act+InfA+Sg+Lat argue
+
+€ temmata temmata+V+Act+InfA+Sg+Lat pull
+
+€ mullata mullata+V+Act+InfA+Sg+Lat dirt
+
+€ suunnata suunnata+V+Act+InfA+Sg+Lat go
+
+€ rynnätä rynnätä+V+Act+InfA+Sg+Lat rush
+
+€ virrata virrata+V+Act+InfA+Sg+Lat stream
+
+€ hyljätä hyljätä+V+Act+InfA+Sg+Lat abandon
+
+€ digata digata+V+Act+InfA+Sg+Lat dig
+
+€ lobata lobata+V+Act+InfA+Sg+Lat lobby
+
+€ karhuta karhuta+V+Act+InfA+Sg+Lat tax
+
+€ tähytä tähytä+V+Act+InfA+Sg+Lat periscope
+
+€ kaikota kaikota+V+Act+InfA+Sg+Lat disappear
+
+€ poiketa poiketa+V+Act+InfA+Sg+Lat 
+
+€ keretä keretä+V+Act+InfA+Sg+Lat 
+
+€ koukuta koukuta+V+Act+InfA+Sg+Lat hook
+
+€ pulputa pulputa+V+Act+InfA+Sg+Lat pulp
+
+€ upota upota+V+Act+InfA+Sg+Lat sink
+
+€ lotota lotota+V+Act+InfA+Sg+Lat lotto
+
+€ luututa luututa+V+Act+InfA+Sg+Lat mop
+
+€ kivuta kivuta+V+Act+InfA+Sg+Lat climb
+
+€ korveta korveta+V+Act+InfA+Sg+Lat 
+
+€ kiivetä kiivetä+V+Act+InfA+Sg+Lat climb
+
+€ kirvota kirvota+V+Act+InfA+Sg+Lat loose
+
+€ kadota kadota+V+Act+InfA+Sg+Lat disappear
+
+€ todeta todeta+V+Act+InfA+Sg+Lat note
+
+€ vyyhdetä vyyhdetä+V+Act+InfA+Sg+Lat entangle
+
+€ liiduta liiduta+V+Act+InfA+Sg+Lat chalk
+
+€ tungeta tungeta+V+Act+InfA+Sg+Lat push
+
+€ pingota pingota+V+Act+InfA+Sg+Lat ping
+
+€ ängetä ängetä+V+Act+InfA+Sg+Lat push
+
+€ kummuta kummuta+V+Act+InfA+Sg+Lat 
+
+€ kammeta kammeta+V+Act+InfA+Sg+Lat lever
+
+€ sammota sammota+V+Act+InfA+Sg+Lat 
+
+€ innota innota+V+Act+InfA+Sg+Lat eager
+
+€ irrota irrota+V+Act+InfA+Sg+Lat tear
+
+€ haljeta haljeta+V+Act+InfA+Sg+Lat split
+
+€ iljetä iljetä+V+Act+InfA+Sg+Lat dare
+
+€ myrskytä myrskytä+V+Act+InfA+Sg+Lat storm
+
+€ lassota lassota+V+Act+InfA+Sg+Lat lasso
+
+€ selvitä selvitä+V+Act+InfA+Sg+Lat manage
+
+€ ryöpytä ryöpytä+V+Act+InfA+Sg+Lat flood
+
+€ peitota peitota+V+Act+InfA+Sg+Lat beat
+
+€ keritä keritä+V+Act+InfA+Sg+Lat 
+
+€ muodota muodota+V+Act+InfA+Sg+Lat form
+
+€ lämmitä lämmitä+V+Act+InfA+Sg+Lat heat
+
+€ aallota aallota+V+Act+InfA+Sg+Lat wave
+
+€ hellitä hellitä+V+Act+InfA+Sg+Lat loose
+
+€ taitaa taitaa+V+Act+InfA+Sg+Lat can
+
+€ tietää tietää+V+Act+InfA+Sg+Lat know
+
+€ vipajaa vipajaa+V+Act+InfA+Sg+Lat thump
+
+€ heläjää heläjää+V+Act+InfA+Sg+Lat chime
+
+€ raikaa raikaa+V+Act+InfA+Sg+Lat baum
+
+€ ähkää ähkää+V+Act+InfA+Sg+Lat meh
+
+The verb olla has very peculiar and heteroclitic inflection with lot of
+common short forms in standard spoken Finnish:
+€ olla olla+V+Act+InfA+Sg+Lat be
+€ lienen olla+V+Act+Pot+Sg1
+€ lie olla+V+Act+Pot+ConNeg
+€ olija olla+V+Der/ja+Sg+Nom
+
+
+
