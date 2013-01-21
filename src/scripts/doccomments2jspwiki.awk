@@ -14,67 +14,56 @@
 #   is used to denote an example, and a test case
 # - a doc comment starting with $ or € without space is used to change test
 #   settings
-BEGIN { 
+BEGIN {
+    # Initialise the referable variables
     LEXNAME="@OUTSIDE_LEXICONS@";
+    RULENAME="@OUTSIDE RULES@";
+    CODE="@NO CODE@";
 }
-/Multichar_Symbols/,/LEXICON/ {
-    if ($1 ~ /Multichar_Symbols/)
-    {
-        print("!!Multicharacter symbols for analyses");
+function expand_variables(s) {
+    # expand all our doc comment variables
+    return gensub("@CODE@", "CODE", "g", 
+              gensub("@RULNAME@", RULENAME, "g",
+                     gensub("@LEXNAME@", LEXNAME, "g", s)));
+}
+/^[[:space:]]*$/ {
+    # retaining empty lines of code will greatly help excessive squeezing
+    # of subsequent paragraphs
+    printf("\n");
+}
+/^!![€$][^ ]/ {printf("(subsequent examples are for *%s*)\n", $3);}
+/^!!€ / {
+    if (NF >= 4) {
+        printf("* __%s__: {{%s}} (engl.", $2, $3);
+        for (i = 4; i <= NF; i++) {
+            printf(" %s", $i);
+        }
+        printf(")\n");
     }
-    else if ($1 ~ /LEXICON/)
-    {
-        LEXNAME = $2;
+    else if (NF == 3) {
+        printf("* __%s__: {{%s}}\n", $2, $3);
     }
-    else if ($0 ~ /^ *[^!]/)
-    {
-        if ($0 ~ /!! \|/)
-        {
-            # table form
-            printf("| ");
-        }
-        else
-        {
-            # definition list
-            printf("#;");
-        }
-        for (i = 1; i <= NF; i++)
-        {
-            if ($i ~ /^!!/)
-            {
-                break;
-            }
-            else if ((i == 1) && (NF == 1))
-            {
-                printf("{{%s}}\n", $i);
-            }
-            else if (i == 1)
-            {
-                printf("{{%s}}", $i);
-            }
-            else if (i == NF)
-            {
-                printf(", {{%s}}\n", $i);
-            }
-            else
-            {
-                printf(", {{%s}}", $i);
-            }
-        }
+    else if (NF == 2) {
+        printf("* __%s__\n", $2);
+    }
+    else {
+        print("* ???");
     }
 }
-/^[[:space:]]*$/ {printf("\n");}
-/^!! [€$][^ ]/ {printf("(subsequent examples are for *%s*)\n", $3);}
-/^!! € / {
-    printf("* __%s__: {{%s}} (%s)\n", $3, $4, $5);
+/^!!\$ / {
+    print("* ★__%s__ (is not standard language)\n", $2);
 }
-/^!! \$ / {
-    printf("* __%s__* (is not standard language)\n", $3);
+/.*!!= / {
+    CODE=gensub("!!=.*", "", "");
+    print(expand_variables(gensub(".*!!=", "", "")));
 }
-/^!! !/ {print(gensub("@LEXNAME@", LEXNAME, "g", gensub("!! ", "", ""))); }
-/^!! [^$€!]/ {print(gensub("!! ", "", "")); }
-/..*!! \|/ {print(gensub(".*!! ", "", "")); }
-/..*!! [^|]/ {printf(gensub(".*!! ", ":", "")); }
+/.*!!≈ / {
+    CODE=gensub("  *", " ", "g",
+           gensub("^ *", "", "",
+           gensub(" *!!≈.*", "", "")));
+    print(expand_variables(gensub(".*!!≈", "", "")));
+}
+/.*!! / {print(expand_variables(gensub(".*!! ", "", ""))); }
 /^LEXICON / {
     LEXNAME=$2;
 }
