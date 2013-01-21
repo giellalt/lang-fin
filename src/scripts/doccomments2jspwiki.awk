@@ -23,7 +23,7 @@ BEGIN {
 }
 function expand_variables(s) {
     # expand all our doc comment variables
-    return gensub("@CODE@", "CODE", "g", 
+    return gensub("@CODE@", CODE, "g", 
               gensub("@RULNAME@", RULENAME, "g",
                      gensub("@LEXNAME@", LEXNAME, "g", s)));
 }
@@ -56,13 +56,28 @@ function expand_variables(s) {
 }
 /.*!!= / {
     CODE=gensub("!!=.*", "", "");
-    print(expand_variables(gensub(".*!!=", "", "")));
+    if ($0 ~ /@CODE@/)
+    {
+        print(expand_variables(gensub(".*!!=", "", "")));
+    }
+    else
+    {
+        print(expand_variables(gensub("!!=", " ", "")));
+    }
 }
 /.*!!≈ / {
     CODE=gensub("  *", " ", "g",
            gensub("^ *", "", "",
            gensub(" *!!≈.*", "", "")));
-    print(expand_variables(gensub(".*!!≈", "", "")));
+    if ($0 ~ /@CODE@/)
+    {
+        print(expand_variables(gensub(".*!!≈", "", "")));
+    }
+    else
+    {
+        printf("%s ", CODE);
+        print(expand_variables(gensub("!!≈", " ", "")));
+    }
 }
 /.*!! / {print(expand_variables(gensub(".*!! ", "", ""))); }
 /!!/ {SOMETHING_WRONG="FALSE";}
