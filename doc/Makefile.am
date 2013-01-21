@@ -5,7 +5,7 @@
 if CAN_DOCC
 
 # INSTALL these files:
-JSP_PAGES=root.jspwiki\
+JSP_PAGES=root-all.jspwiki\
           51-stems.jspwiki \
           abbr-stems.jspwiki \
           acro-stems.jspwiki \
@@ -50,7 +50,7 @@ DOCC2JSPWIKI=$(top_srcdir)/src/scripts/doccomments2jspwiki.awk
 RST2HTML=rst2html
 LATEX=xelatex
 
-root.jspwiki: $(top_srcdir)/src/morphology/root.lexc
+%-all.jspwiki: $(top_srcdir)/src/morphology/%.lexc
 	$(AWK) -f $(DOCC2JSPWIKI) < $< > $@
 
 %-stems.jspwiki: $(top_srcdir)/src/morphology/stems/%.lexc
