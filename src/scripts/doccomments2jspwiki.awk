@@ -52,7 +52,7 @@ function expand_variables(s) {
     }
 }
 /^!!\$ / {
-    print("* ★__%s__ (is not standard language)\n", $2);
+    print("* __*%s__ (is not standard language)\n", $2);
 }
 /.*!!= / {
     CODE=gensub("!!=.*", "", "");
