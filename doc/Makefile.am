@@ -6,38 +6,41 @@ if CAN_DOCC
 
 # INSTALL these files:
 JSP_PAGES=root.jspwiki\
-          noun-stems.jspwiki \
-          propernoun-stems.jspwiki \
           51-stems.jspwiki \
-          adj-stems.jspwiki \
-          numeral-stems.jspwiki \
-          pron-stems.jspwiki \
-          verb-stems.jspwiki \
-          adv-stems.jspwiki \
-          pp-stems.jspwiki \
-          prefixes-stems.jspwiki \
-          suffixes-stems.jspwiki \
-          acro-stems.jspwiki \
           abbr-stems.jspwiki \
+          acro-stems.jspwiki \
+          adj-stems.jspwiki \
+          adv-stems.jspwiki \
           cc-stems.jspwiki \
           cs-stems.jspwiki \
-          interj-stems.jspwiki \
-          particles-stems.jspwiki \
-          exceptions-stems.jspwiki \
-          punct-stems.jspwiki \
           digits-stems.jspwiki \
-          nouns-affixes.jspwiki \
-          propernouns-affixes.jspwiki \
-          pron-affixes.jspwiki \
-          adjectives-affixes.jspwiki \
-          verbs-affixes.jspwiki \
+          exceptions-stems.jspwiki \
+          interj-stems.jspwiki \
+          noun-stems.jspwiki \
+          numeral-stems.jspwiki \
+          particles-stems.jspwiki \
+          pp-stems.jspwiki \
+          prefixes-stems.jspwiki \
+          pron-stems.jspwiki \
+          propernoun-stems.jspwiki \
+          punct-stems.jspwiki \
+          suffixes-stems.jspwiki \
+          verb-stems.jspwiki \
           acronyms-affixes.jspwiki \
+          adjectives-affixes.jspwiki \
           adv-affixes.jspwiki \
-          codifieds-affixes.jspwiki \
           digits-affixes.jspwiki \
-          numeral-affixes.jspwiki \
-          pp-affixes.jspwiki \
-          prefix-affixes.jspwiki
+          nouns-affixes.jspwiki \
+          numeral-affixes.jspwiki
+
+# Files with no document content:
+#          codifieds-affixes.jspwiki \
+#          pp-affixes.jspwiki \
+#          prefix-affixes.jspwiki \
+#          pron-affixes.jspwiki \
+#          propernouns-affixes.jspwiki \
+#          verbs-affixes.jspwiki
+
 doc_DATA=$(JSP_PAGES) fin.jspwiki
 
 DOCC2RST=$(top_srcdir)/src/scripts/doccomments2rst.awk
