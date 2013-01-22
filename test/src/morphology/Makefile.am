@@ -9,7 +9,7 @@ TESTS=generate-noun-lemmas.sh
 
 # Add your shell scripts for running python-based tests here:
 if CAN_YAML_TEST
-DOCC2YAML=$(top_srcdir)/src/scripts/doccomments2yaml.awk
+DOCC2YAML=$(GTCORE)/scripts/doccomments2yaml.awk
 YAML_COMMENTS=roots_gt-norm.yaml \
 			  noun-stems_gt-norm.yaml \
 			  adj-stems_gt-norm.yaml \
@@ -36,7 +36,7 @@ roots_gt-desc.yaml: $(top_srcdir)/src/morphology/root.lexc
 	$(AWK) -f $(DOCC2YAML) --assign=TYPE=gt-desc < $< > $@
 
 TESTS+=run-gt-norm-yaml-testcases.sh run-gt-desc-yaml-testcases.sh
-endif
+endif # CAN_YAML_TEST
 
 # List tests that are presently (expected) failures here, ie things that should
 # be fixed *later*, but is not critical at the moment:
