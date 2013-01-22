@@ -2,10 +2,14 @@
 ## Copyright: Sámediggi/Divvun/UiT
 ## Licence: GPL v3+
 
+# List all jspwiki files that should be created from source files in the
+# JSP_PAGES variable. The filename pattern is as follows:
+#
+# dir/filename.lexc => filename-dir.jspwiki
+
 if CAN_DOCC
 
-# INSTALL these files:
-JSP_PAGES=root-all.jspwiki\
+JSP_PAGES=root-morphology.jspwiki\
           51-stems.jspwiki \
           abbr-stems.jspwiki \
           acro-stems.jspwiki \
@@ -33,51 +37,8 @@ JSP_PAGES=root-all.jspwiki\
           nouns-affixes.jspwiki \
           numeral-affixes.jspwiki
 
-# Files with no document content:
-#          codifieds-affixes.jspwiki \
-#          pp-affixes.jspwiki \
-#          prefix-affixes.jspwiki \
-#          pron-affixes.jspwiki \
-#          propernouns-affixes.jspwiki \
-#          verbs-affixes.jspwiki
-
-doc_DATA=$(JSP_PAGES) fin.jspwiki
-
-DOCC2RST=$(GTCORE)/scripts/doccomments2rst.awk
-DOCC2TEX=$(GTCORE)/scripts/doccomments2tex.awk
-DOCC2JSPWIKI=$(GTCORE)/scripts/doccomments2jspwiki.awk
-
-RST2HTML=rst2html
-LATEX=xelatex
-
-%-all.jspwiki: $(top_srcdir)/src/morphology/%.lexc
-	$(AWK) -f $(DOCC2JSPWIKI) < $< > $@
-
-%-stems.jspwiki: $(top_srcdir)/src/morphology/stems/%.lexc
-	$(AWK) -f $(DOCC2JSPWIKI) < $< > $@
-
-%-affixes.jspwiki: $(top_srcdir)/src/morphology/affixes/%.lexc
-	$(AWK) -f $(DOCC2JSPWIKI) < $< > $@
-
-fin.jspwiki: preamble.jspwiki $(JSP_PAGES)
-	-rm -f $@
-	cat $(srcdir)/preamble.jspwiki $(JSP_PAGES) > $@
-
-fin.tex: preamble.tex doc-comments.conf
-	-rm -f $@
-	cat $(srcdir)/preamble.tex > $@
-
-
-fin.rst: preamble.rst doc-comments.conf
-	-rm -f $@
-	cat $(srcdir)/preamble.rst > $@
-
-%.html: %.rst
-	$(RST2HTML) < $< > $@
-
-%.pdf: %.tex
-	$(LATEX) $<
-	$(LATEX) $<
-	$(LATEX) $<
+ALLINONE_JSP_PAGE=$(GTLANG).jspwiki
 
 endif # CAN_DOCC
+
+include $(top_srcdir)/am-shared/doc-include.am
