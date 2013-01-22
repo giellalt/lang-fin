@@ -43,9 +43,9 @@ JSP_PAGES=root-all.jspwiki\
 
 doc_DATA=$(JSP_PAGES) fin.jspwiki
 
-DOCC2RST=$(top_srcdir)/src/scripts/doccomments2rst.awk
-DOCC2TEX=$(top_srcdir)/src/scripts/doccomments2tex.awk
-DOCC2JSPWIKI=$(top_srcdir)/src/scripts/doccomments2jspwiki.awk
+DOCC2RST=$(GTCORE)/scripts/doccomments2rst.awk
+DOCC2TEX=$(GTCORE)/scripts/doccomments2tex.awk
+DOCC2JSPWIKI=$(GTCORE)/scripts/doccomments2jspwiki.awk
 
 RST2HTML=rst2html
 LATEX=xelatex
