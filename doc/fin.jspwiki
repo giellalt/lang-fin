@@ -1,15 +1,10 @@
 !!!Free and Open source Finnish analyser gtsvn-fi
 
-#;Authors
-##: Tommi A Pirinen
-#;Software version
-##: 2012
-#;Documentation license
-##: GNU GFDL
-#;SVN Revision
-##: $Revision: 68217 $
-#;SVN Date
-##: $Date: 2013-01-16 10:31:33 +0100 (Wed, 16 Jan 2013) $
+;Authors: Tommi A Pirinen
+;Software version: 2012
+;Documentation license: GNU GFDL
+;SVN Revision: $Revision: 68789 $
+;SVN Date: $Date: 2013-01-23 17:14:04 +0100 (Wed, 23 Jan 2013) $
 
 !!!GTSVN-fi
 
@@ -243,8 +238,8 @@ classification they would have if they were read out, and possibly additional
 analysis of an abbreviation.
 
 Examples:
-€ eaa.
-€ esim.
+* __eaa.__
+* __esim.__
 $ esim
 
 Acronyms are shortenings that inflect. They all have two inflection
@@ -258,8 +253,8 @@ confusing so there's no high priority for adding that.
 
 The first classification for acronyms should be along the final letter, then
 if the final word inflection is used, the class of that word.
-€ OY:hyn 
-€ OY:öön
+* __OY:hyn__
+* __OY:öön__
 Adjectives are words that are inflected like nouns, with few additions. For
 adjectives, the comparative derivations are usually allowed and the
 possessive suffixes are unlikely. The syntactic adjectives that do not have
@@ -268,13 +263,13 @@ particles_, if they do not inflect.
 
 The classification of adjectives combines the stem changes, the final 
 allomorph selection and the harmony. See the list from:
-€ aakkostettu
-€ aakkostettuja
-€ aakkostetut
-€ aakkostetumpi
-€ aakkostetumpina
-€ aakkostetuin
-€ aakkostetuimmat
+* __aakkostettu__
+* __aakkostettuja__
+* __aakkostetut__
+* __aakkostetumpi__
+* __aakkostetumpina__
+* __aakkostetuin__
+* __aakkostetuimmat__
 
 Adjective stem variation and allomorph selection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -294,114 +289,114 @@ The most basic adjective stems do not have any stem internal variation
 and use few commonest allomorphs. The word in this class end in o and are
 bi-syllabic or end in moderative hko- suffix, and do not have gradating 
 consonants.
-€ tummahko tummahko+A+Sg+Nom darkish
-€ tummahkona tummahko+A+Sg+Ess
-€ tummahkossa tummahko+A+Sg+Ine
-€ tummahkoina tummahko+A+Pl+Ess
-€ tummahkoista tummahko+A+Pl+Ine
-€ tummahkoa tummahko+A+Sg+Par
+* __tummahko__: {{tummahko+A+Sg+Nom}} (Eng. darkish)
+* __tummahkona__: {{tummahko+A+Sg+Ess}}
+* __tummahkossa__: {{tummahko+A+Sg+Ine}}
+* __tummahkoina__: {{tummahko+A+Pl+Ess}}
+* __tummahkoista__: {{tummahko+A+Pl+Ine}}
+* __tummahkoa__: {{tummahko+A+Sg+Par}}
 $ tummahkota
-€ tummahkoon tummahko+A+Sg+Ill
+* __tummahkoon__: {{tummahko+A+Sg+Ill}}
 $ tummahkohon
 $ tummahkoseen
-€ tummahkoja tummahko+A+Pl+Par
+* __tummahkoja__: {{tummahko+A+Pl+Par}}
 $ tummahkoita
-€ tummahkojen tummahko+A+Pl+Gen
+* __tummahkojen__: {{tummahko+A+Pl+Gen}}
 $ tummahkoiden
 $ tummahkoitten
-€ tummahkoihin tummahko+A+Pl+Ill
+* __tummahkoihin__: {{tummahko+A+Pl+Ill}}
 $ tummahkoisiin
 
 The stems ending in u are also without variation. And the bisyllabic ones,
 as well as those formed by nut participle passive^s back vowel versions
 after s stemmed verb are in this class
-€ valkaistu valkaistu+A+Sg+Nom bleached
-€ valkaistua valkaistu+A+Sg+Par
-€ valkaistuun valkaistu+A+Sg+Ill
-€ valkaistuna valkaistu+A+Sg+Ess
-€ valkaistussa valkaistu+A+Sg+Ine
-€ valkaistuja valkaistu+A+Pl+Par
-€ valkaistujen valkaistu+A+Pl+Gen
-€ valkaistuihin valkaistu+A+Pl+Ill
-€ valkaistuina valkaistu+A+Pl+Ine
-€ valkaistuissa valkaistu+A+Pl+Ine
+* __valkaistu__: {{valkaistu+A+Sg+Nom}} (Eng. bleached)
+* __valkaistua__: {{valkaistu+A+Sg+Par}}
+* __valkaistuun__: {{valkaistu+A+Sg+Ill}}
+* __valkaistuna__: {{valkaistu+A+Sg+Ess}}
+* __valkaistussa__: {{valkaistu+A+Sg+Ine}}
+* __valkaistuja__: {{valkaistu+A+Pl+Par}}
+* __valkaistujen__: {{valkaistu+A+Pl+Gen}}
+* __valkaistuihin__: {{valkaistu+A+Pl+Ill}}
+* __valkaistuina__: {{valkaistu+A+Pl+Ine}}
+* __valkaistuissa__: {{valkaistu+A+Pl+Ine}}
 
 The variationless y stems are basically fronted version of u; they
 come from bisyllabic adjectives ending in y or the nut participle^s passive
 in an s stemmed front voweled verb. The traditional dictionary class is
-€ häpäisty häpäisty+A+Sg+Nom defiled
-€ häpäistyä häpäisty+A+Sg+Par
-€ häpäistyyn häpäisty+A+Sg+Ill
-€ häpäistynä häpäisty+A+Sg+Ess
-€ häpäistyssä häpäisty+A+Sg+Ine
-€ häpäistyjä häpäisty+A+Pl+Par
-€ häpäistyjen häpäisty+A+Pl+Gen
-€ häpäistyihin häpäisty+A+Pl+Ill
-€ häpäistyinä häpäisty+A+Pl+Ess
-€ häpäistyissä häpäisty+A+Pl+Ine
+* __häpäisty__: {{häpäisty+A+Sg+Nom}} (Eng. defiled)
+* __häpäistyä__: {{häpäisty+A+Sg+Par}}
+* __häpäistyyn__: {{häpäisty+A+Sg+Ill}}
+* __häpäistynä__: {{häpäisty+A+Sg+Ess}}
+* __häpäistyssä__: {{häpäisty+A+Sg+Ine}}
+* __häpäistyjä__: {{häpäisty+A+Pl+Par}}
+* __häpäistyjen__: {{häpäisty+A+Pl+Gen}}
+* __häpäistyihin__: {{häpäisty+A+Pl+Ill}}
+* __häpäistyinä__: {{häpäisty+A+Pl+Ess}}
+* __häpäistyissä__: {{häpäisty+A+Pl+Ine}}
 
 Likewise the variationless ö stem is fronted version of the corresponding o
 stem; bisyllabic or made with moderative hkö suffix in front voweled word.
-€ hölö hölö+A+Sg+Nom blabbermouth
-€ hölöä hölö+A+Sg+Par
-€ hölöön hölö+A+Sg+Ill
-€ hölönä hölö+A+Sg+Ess
-€ hölössä hölö+A+Sg+Ine
-€ hölöjä hölö+A+Pl+Par
-€ hölöjen hölö+A+Pl+Gen
-€ hölöihin hölö+A+Pl+Ill
-€ hölöinä hölö+A+Pl+Ess
-€ hölöissä hölö+A+Pl+Ine
+* __hölö__: {{hölö+A+Sg+Nom}} (Eng. blabbermouth)
+* __hölöä__: {{hölö+A+Sg+Par}}
+* __hölöön__: {{hölö+A+Sg+Ill}}
+* __hölönä__: {{hölö+A+Sg+Ess}}
+* __hölössä__: {{hölö+A+Sg+Ine}}
+* __hölöjä__: {{hölö+A+Pl+Par}}
+* __hölöjen__: {{hölö+A+Pl+Gen}}
+* __hölöihin__: {{hölö+A+Pl+Ill}}
+* __hölöinä__: {{hölö+A+Pl+Ess}}
+* __hölöissä__: {{hölö+A+Pl+Ine}}
 
 The new words with e stem have same allomorphy selection as old short
 unchanging bisyllabic u, y, o and ö stems, and no stem-internal variation.
-€ toope toope+A+Sg+Nom doofus
-€ toopea toope+A+Sg+Par
-€ toopeen toope+A+Sg+Ill
-€ toopeja toope+A+Pl+Par
-€ toopejen toope+A+Pl+Gen
-€ toopeihin toope+A+Pl+Ill
+* __toope__: {{toope+A+Sg+Nom}} (Eng. doofus)
+* __toopea__: {{toope+A+Sg+Par}}
+* __toopeen__: {{toope+A+Sg+Ill}}
+* __toopeja__: {{toope+A+Pl+Par}}
+* __toopejen__: {{toope+A+Pl+Gen}}
+* __toopeihin__: {{toope+A+Pl+Ill}}
 They also have slightly greater probability for archaic form of plural
 genitive:
-€ toopein, toope+A+Pl+Gen
+* __toopein,__: {{toope+A+Pl+Gen}}
 
 
 As with front vowels.
-€ beige beige+A+Sg+Nom beige
+* __beige__: {{beige+A+Sg+Nom}} (Eng. beige)
 
 
 The trisyllabic and longer words with stem vowel o have no stem variation
 either, but selection of suffix allomorphs for plural genitives and
 partitives is wider than for disyllabic ones. The tradtitional dictionary
-€ tohelo tohelo+A+Sg+Nom clumsy
-€ toheloita tohelo+A+Pl+Par
-€ toheloja tohelo+A+Pl+Par
-€ tohelojen tohelo+A+Pl+Gen
-€ toheloiden tohelo+Pl+Gen
-€ toheloitten tohelo+Pl+Gen
+* __tohelo__: {{tohelo+A+Sg+Nom}} (Eng. clumsy)
+* __toheloita__: {{tohelo+A+Pl+Par}}
+* __toheloja__: {{tohelo+A+Pl+Par}}
+* __tohelojen__: {{tohelo+A+Pl+Gen}}
+* __toheloiden__: {{tohelo+Pl+Gen}}
+* __toheloitten__: {{tohelo+Pl+Gen}}
 
 And the trisyllabic ö stem as counter part of o stem. The dictionary class
-€ löperö löperö+A+Sg+Nom sloppy
-€ löperöjen löperö+A+Pl+Gen
-€ löperöiden löperö+A+Pl+Gen
-€ löperöitten löperö+A+Pl+Gen
+* __löperö__: {{löperö+A+Sg+Nom}} (Eng. sloppy)
+* __löperöjen__: {{löperö+A+Pl+Gen}}
+* __löperöiden__: {{löperö+A+Pl+Gen}}
+* __löperöitten__: {{löperö+A+Pl+Gen}}
 
 The words with stem vowel o preceded by vowels still have no more stem
 variation than other cases, but give yet another pattern of allomorphs for
 singular and plural partitives and plural genitive. The dictionary class
-€ autio autio+A+Sg+Nom deserted
+* __autio__: {{autio+A+Sg+Nom}} (Eng. deserted)
 $ autioa
-€ autiota autio+A+Sg+Par
-€ autioita autio+A+Pl+Par
+* __autiota__: {{autio+A+Sg+Par}}
+* __autioita__: {{autio+A+Pl+Par}}
 $ autiojen
-€ autioiden autio+A+Pl+Gen
-€ autioitten autio+A+Pl+Gen
+* __autioiden__: {{autio+A+Pl+Gen}}
+* __autioitten__: {{autio+A+Pl+Gen}}
 
 The front voweled stems with ö after vowels work like their back vowel
-€ riiviö riiviö+A+Sg+Nom nasty
-€ riiviötä riiviö+A+Sg+Par
-€ riiviöiden riiviö+A+Pl+Gen
-€ riiviöitten riiviö+A+Pl+Gen
+* __riiviö__: {{riiviö+A+Sg+Nom}} (Eng. nasty)
+* __riiviötä__: {{riiviö+A+Sg+Par}}
+* __riiviöiden__: {{riiviö+A+Pl+Gen}}
+* __riiviöitten__: {{riiviö+A+Pl+Gen}}
 
 There are no examples of new loan word adjectives ending in long vowel
 Furthermore there are no examples of adjectives in other classes without
@@ -410,55 +405,55 @@ stem variation yet.
 Adjective stems with Consonant gradation as only stem variation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The quantitative gradation of k in basic changes stems for locative cases:
-€ kolkko kolkko+A+Sg+Nom gloomy
-€ kolkossa kolkko+A+Sg+Ine
-€ kolkoista kolkko+A+Pl+Ela
-€ kolkkoihin kolkko+A+Pl+Ill
+* __kolkko__: {{kolkko+A+Sg+Nom}} (Eng. gloomy)
+* __kolkossa__: {{kolkko+A+Sg+Ine}}
+* __kolkoista__: {{kolkko+A+Pl+Ela}}
+* __kolkkoihin__: {{kolkko+A+Pl+Ill}}
 
 
 Similarly for u stems with quantitative k gradation:
-€ virkku virkku+A+Sg+Nom ???
-€ virkussa virkku+A+Sg+Ine
-€ virkuista virkku+A+Pl+Ela
-€ virkkuihin virkku+A+Pl+Ill
+* __virkku__: {{virkku+A+Sg+Nom}} (Eng. ???)
+* __virkussa__: {{virkku+A+Sg+Ine}}
+* __virkuista__: {{virkku+A+Pl+Ela}}
+* __virkkuihin__: {{virkku+A+Pl+Ill}}
 
 
 As with y and k:
-€ säikky säikky+A+Sg+Nom ???
-€ säikyssä säikky+A+Sg+Ine
-€ säikyistä säikky+A+Pl+Ela
-€ säikkyihin säikky+A+Pl+Ill
+* __säikky__: {{säikky+A+Sg+Nom}} (Eng. ???)
+* __säikyssä__: {{säikky+A+Sg+Ine}}
+* __säikyistä__: {{säikky+A+Pl+Ela}}
+* __säikkyihin__: {{säikky+A+Pl+Ill}}
 
 And ö with k:
-€ kökkö kökkö+A+Sg+Nom ???
-€ kökössä kökkö+A+Sg+Ine
-€ kököistä kökkö+A+Pl+Ela
-€ kökköihin kökkö+A+Pl+Ill
+* __kökkö__: {{kökkö+A+Sg+Nom}} (Eng. ???)
+* __kökössä__: {{kökkö+A+Sg+Ine}}
+* __kököistä__: {{kökkö+A+Pl+Ela}}
+* __kökköihin__: {{kökkö+A+Pl+Ill}}
 
 there is no unvarying e final adjective with k ~ 0 gradation.
 
 The quantitative gradation of p in basic changes stems for locative cases:
-€ suippo suippo+A+Sg+Nom ?
-€ suipossa suippo+A+Sg+Ine
-€ suipoista suippo+A+Pl+Ela
-€ suippoihin suippo+A+Pl+Ill
+* __suippo__: {{suippo+A+Sg+Nom}} (Eng. ?)
+* __suipossa__: {{suippo+A+Sg+Ine}}
+* __suipoista__: {{suippo+A+Pl+Ela}}
+* __suippoihin__: {{suippo+A+Pl+Ill}}
 
 
 It is only a nominal compound based adjective that ends in u and has
 p ~ 0 gradation here:
-€ ikäloppu ikäloppu+A+Sg+Nom age-old
-€ ikälopussa ikäloppu+A+Sg+Ine
-€ ikälopuista ikäloppu+A+Pl+Ela
-€ ikäloppuihin ikäloppu+A+Pl+Ill
+* __ikäloppu__: {{ikäloppu+A+Sg+Nom}} (Eng. age-old)
+* __ikälopussa__: {{ikäloppu+A+Sg+Ine}}
+* __ikälopuista__: {{ikäloppu+A+Pl+Ela}}
+* __ikäloppuihin__: {{ikäloppu+A+Pl+Ill}}
 
 
 and none of the adjectives end in y and quantitative p gradation.
 
 And ö with p:
-€ lörppö lörppö+A+Sg+Nom blabbermouth
-€ lörpössä lörppö+A+Sg+Ine
-€ lörpöistä lörppö+A+Pl+Ela
-€ lörppöihin lörppö+A+Pl+Ill
+* __lörppö__: {{lörppö+A+Sg+Nom}} (Eng. blabbermouth)
+* __lörpössä__: {{lörppö+A+Sg+Ine}}
+* __lörpöistä__: {{lörppö+A+Pl+Ela}}
+* __lörppöihin__: {{lörppö+A+Pl+Ill}}
 
 none with e finals no stem changes except p gradation.
 
@@ -472,30 +467,30 @@ velttoihin veltto+A+Pl+Ill
 The u stems with quantitative t gradation are commonest with nut participle
 passive derivations (-ttu); those assume this paradigm even when not
 bisyllabic:
-€ vimmattu vimmattu+A+Sg+Nom wicked
-€ vimmatussa vimmattu+A+Sg+Ine
-€ vimmatuista vimmattu+A+Sg+Ill
-€ vimmattuihin vimmattu+A+Pl+Ill
+* __vimmattu__: {{vimmattu+A+Sg+Nom}} (Eng. wicked)
+* __vimmatussa__: {{vimmattu+A+Sg+Ine}}
+* __vimmatuista__: {{vimmattu+A+Sg+Ill}}
+* __vimmattuihin__: {{vimmattu+A+Pl+Ill}}
 
 
 As with y and t:
-€ ylennetty ylennetty+A+Sg+Nom promoted
-€ ylennetyssä ylennetty+A+Sg+Ine
-€ ylennetyistä ylennetty+A+Pl+Ela
-€ ylennettyihin ylennetty+A+Pl+Ill
+* __ylennetty__: {{ylennetty+A+Sg+Nom}} (Eng. promoted)
+* __ylennetyssä__: {{ylennetty+A+Sg+Ine}}
+* __ylennetyistä__: {{ylennetty+A+Pl+Ela}}
+* __ylennettyihin__: {{ylennetty+A+Pl+Ill}}
 
 And ö with t:
-€ kyyttö kyyttö+A+Sg+Nom ?????
-€ kyytössä kyyttö+A+Sg+Ine
-€ kyytöistä kyyttö+A+Pl+Ela
-€ kyyttöihin kyyttö+A+Pl+Ill
+* __kyyttö__: {{kyyttö+A+Sg+Nom}} (Eng. ?????)
+* __kyytössä__: {{kyyttö+A+Sg+Ine}}
+* __kyytöistä__: {{kyyttö+A+Pl+Ela}}
+* __kyyttöihin__: {{kyyttö+A+Pl+Ill}}
 
 
 Between two vowels, the weak grade of k is optionally an apostrophe instead
 of nothing:
-€ lako lako+A+Sg+Nom
-€ laossa lako+A+Sg+Ine
-€ la’ossa lako+A+Sg+Ine
+* __lako__: {{lako+A+Sg+Nom}}
+* __laossa__: {{lako+A+Sg+Ine}}
+* __la’ossa__: {{lako+A+Sg+Ine}}
 
 
 There's no k to optional apostrophe with u.
@@ -504,10 +499,10 @@ nor ö with k:
 There's none with k gradating to always apostrophe either
 
 The qualitative gradation of p between vowels in o stems goes to v:
-€ kelpo kelpo+A+Sg+Nom proper
-€ kelvossa kelpo+A+Sg+Ine
-€ kelpoina kelpo+A+Pl+Ess
-€ kelvoista kelpo+A+Pl+Ela
+* __kelpo__: {{kelpo+A+Sg+Nom}} (Eng. proper)
+* __kelvossa__: {{kelpo+A+Sg+Ine}}
+* __kelpoina__: {{kelpo+A+Pl+Ess}}
+* __kelvoista__: {{kelpo+A+Pl+Ela}}
 
 
 There are none ending in vowel + pu
@@ -515,34 +510,34 @@ nor with y and p:
 nor ö with p:
 
 The quantitative gradation of t in basic changes stems for locative cases:
-€ mieto mieto+A+Sg+Nom mild
-€ miedossa mieto+A+Sg+Ine
-€ mietoihin mieto+A+Pl+Ill
-€ miedoista mieto+A+Pl+Ela
+* __mieto__: {{mieto+A+Sg+Nom}} (Eng. mild)
+* __miedossa__: {{mieto+A+Sg+Ine}}
+* __mietoihin__: {{mieto+A+Pl+Ill}}
+* __miedoista__: {{mieto+A+Pl+Ela}}
 
 
 The commonest t ~ d variation in u stems comes from nut participles
 passives (-tu). This follows the bisyllabic paradigm regardless of the
 syllables:
-€ viipaloitu viipaloitu+A+Sg+Nom sliced
-€ viipaloidussa viipaloitu+A+Sg+Ine
-€ viipaloituihin viipaloitu+A+Pl+Ill
-€ viipaloiduista viipaloitu+A+Pl+Ela
+* __viipaloitu__: {{viipaloitu+A+Sg+Nom}} (Eng. sliced)
+* __viipaloidussa__: {{viipaloitu+A+Sg+Ine}}
+* __viipaloituihin__: {{viipaloitu+A+Pl+Ill}}
+* __viipaloiduista__: {{viipaloitu+A+Pl+Ela}}
 
 
 As with y and t:
-€ yksilöity yksilöity+A+Sg+Nom singled
-€ yksilöidyssä yksilöity+A+Sg+Ine
-€ yksilöityihin yksilöity+A+Pl+Ill
-€ yksilöidyistä yksilöity+A+Pl+Ela
+* __yksilöity__: {{yksilöity+A+Sg+Nom}} (Eng. singled)
+* __yksilöidyssä__: {{yksilöity+A+Sg+Ine}}
+* __yksilöityihin__: {{yksilöity+A+Pl+Ill}}
+* __yksilöidyistä__: {{yksilöity+A+Pl+Ela}}
 
 And there's none with t and ö
 
 The quantitative gradation of k in basic changes stems for locative cases:
-€ lenko lenko+A+Sg+Nom crooked
-€ lengossa lenko+A+Sg+Ine
-€ lengoista lenko+A+Pl+Ela
-€ lenkoihin lenko+A+Pl+Ill
+* __lenko__: {{lenko+A+Sg+Nom}} (Eng. crooked)
+* __lengossa__: {{lenko+A+Sg+Ine}}
+* __lengoista__: {{lenko+A+Pl+Ela}}
+* __lenkoihin__: {{lenko+A+Pl+Ill}}
 
 
 There's no adjectives ending in nku
@@ -550,41 +545,41 @@ nor with y and nk:
 And ö with k:
 There are no gradating p's after m's in unchanging stems
 The quantitative gradation of t after l in o stems:
-€ melto melto+A+Sg+Nom ?????
-€ mellossa melto+A+Sg+Ine
-€ meltoihin melto+A+Pl+Ill
-€ melloista melto+A+Pl+Ela
+* __melto__: {{melto+A+Sg+Nom}} (Eng. ?????)
+* __mellossa__: {{melto+A+Sg+Ine}}
+* __meltoihin__: {{melto+A+Pl+Ill}}
+* __melloista__: {{melto+A+Pl+Ela}}
 
 
 The common u stem after l is in nut participles passive (-tu):
-€ paranneltu paranneltu+A+Sg+Nom embettered
-€ parannellussa paranneltu+A+Sg+Ine
-€ paranneltuihin paranneltu+A+Pl+Ill
-€ parannelluista paranneltu+A+Pl+Ela
+* __paranneltu__: {{paranneltu+A+Sg+Nom}} (Eng. embettered)
+* __parannellussa__: {{paranneltu+A+Sg+Ine}}
+* __paranneltuihin__: {{paranneltu+A+Pl+Ill}}
+* __parannelluista__: {{paranneltu+A+Pl+Ela}}
 
 
 As with y and t:
-€ vähätelty vähätelty+A+Sg+Nom belittled
-€ vähätellyssä vähätelty+A+Sg+Ine
-€ vähäteltyihin vähätelty+A+Pl+Ill
-€ vähätellyistä vähätelty+A+Pl+Ela
+* __vähätelty__: {{vähätelty+A+Sg+Nom}} (Eng. belittled)
+* __vähätellyssä__: {{vähätelty+A+Sg+Ine}}
+* __vähäteltyihin__: {{vähätelty+A+Pl+Ill}}
+* __vähätellyistä__: {{vähätelty+A+Pl+Ela}}
 
 There's no adjective ending -ltö
 
 The gradation of t after n in o stems:
-€ vento vento+A+Sg+Nom ?
-€ vennossa vento+A+Sg+Ine
-€ ventoihin vento+A+Pl+Ill
-€ vennoista vento+A+Pl+Ela
+* __vento__: {{vento+A+Sg+Nom}} (Eng. ?)
+* __vennossa__: {{vento+A+Sg+Ine}}
+* __ventoihin__: {{vento+A+Pl+Ill}}
+* __vennoista__: {{vento+A+Pl+Ela}}
 
 
 There are no adjectives ending in -ntu, -ntö or -nty
 
 The quantitative gradation of t after r in o stems:
-€ marto
-€ marrossa
-€ martoihin
-€ marroista
+* __marto__
+* __marrossa__
+* __martoihin__
+* __marroista__
 
 
 There are no adjectives ending in -rtu, -rty or -rtö. Just as well, the
@@ -594,50 +589,50 @@ class for UkU : UvU- is limited to few nouns we know.
 
 The trisyllabic words ending with gradating long k have plural illative
 in both strong and weak forms for o stem:
-€ hupakko, hupakko, silly girl
-€ hupakoihin, hupakoihin, silly girl
-€ hupakkoihin, hupakkoihin, silly girl
+* __hupakko,__: {{hupakko,}} (Eng. silly girl)
+* __hupakoihin,__: {{hupakoihin,}} (Eng. silly girl)
+* __hupakkoihin,__: {{hupakkoihin,}} (Eng. silly girl)
 
 Adjective stems with i:e variations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The i stems have i : e : 0 variation:
-€ abnormi abnormi+A+Sg+Nom abnorm
-€ abnormeina abnormi+A+Pl+Ess
-€ abnormien abnorm+A+Pl+Gen
+* __abnormi__: {{abnormi+A+Sg+Nom}} (Eng. abnorm)
+* __abnormeina__: {{abnormi+A+Pl+Ess}}
+* __abnormien__: {{abnorm+A+Pl+Gen}}
 
 Similarly for front vowels:
-€ stydi stydi+A+Sg+Nom stiff
-€ stydeinä stydi+A+Pl+Ess
-€ stydien stydi+A+Pl+Gen
+* __stydi__: {{stydi+A+Sg+Nom}} (Eng. stiff)
+* __stydeinä__: {{stydi+A+Pl+Ess}}
+* __stydien__: {{stydi+A+Pl+Gen}}
 
 The i stems combined with (quantitative) gradation of k will form five
 separate stem variants:
-€ opaakki opaakki+A+Sg+Nom opaque
-€ opaakissa opaakki+A+Sg+Ine
-€ opaakkeina opaakki+A+Pl+Ess
-€ opaakeista opaakki+A+Pl+Ela
-€ opaakkien opaakki+A+Pl+Gen
+* __opaakki__: {{opaakki+A+Sg+Nom}} (Eng. opaque)
+* __opaakissa__: {{opaakki+A+Sg+Ine}}
+* __opaakkeina__: {{opaakki+A+Pl+Ess}}
+* __opaakeista__: {{opaakki+A+Pl+Ela}}
+* __opaakkien__: {{opaakki+A+Pl+Gen}}
 
 Similarly for front vowel version:
-€ pinkki pinkki+A+Sg+Nom pink
-€ pinkissä pinkki+A+Sg+Ine
-€ pinkkeinä pinkki+A+Pl+Ess
-€ pinkeistä pinkki+A+Pl+Ela
-€ pinkkien pinkki+A+Pl+Gen
+* __pinkki__: {{pinkki+A+Sg+Nom}} (Eng. pink)
+* __pinkissä__: {{pinkki+A+Sg+Ine}}
+* __pinkkeinä__: {{pinkki+A+Pl+Ess}}
+* __pinkeistä__: {{pinkki+A+Pl+Ela}}
+* __pinkkien__: {{pinkki+A+Pl+Gen}}
 
 There's no back vowel version of the bisyllabic gradating -ppi form.
 
-€ sippi sippi+A+Sg+Nom   bust
-€ sipissä sippi+A+Sg+Ine
-€ sippeinä sippi+A+Pl+Ess
-€ sipeistä sippi+A+Pl+Ela
-€ sippien sippi+A+Pl+Gen
+* __sippi__: {{sippi+A+Sg+Nom}} (Eng. bust)
+* __sipissä__: {{sippi+A+Sg+Ine}}
+* __sippeinä__: {{sippi+A+Pl+Ess}}
+* __sipeistä__: {{sippi+A+Pl+Ela}}
+* __sippien__: {{sippi+A+Pl+Gen}}
 
-€ hurtti hurtti+A+Sg+Nom grunchy
-€ hurtissa hurtti+A+Sg+Ine
-€ hurtteina hurtti+A+Pl+Ess
-€ hurteista hurtti+A+Pl+Ela
-€ hurttien hurtti+A+Pl+Gen
+* __hurtti__: {{hurtti+A+Sg+Nom}} (Eng. grunchy)
+* __hurtissa__: {{hurtti+A+Sg+Ine}}
+* __hurtteina__: {{hurtti+A+Pl+Ess}}
+* __hurteista__: {{hurtti+A+Pl+Ela}}
+* __hurttien__: {{hurtti+A+Pl+Gen}}
 
 väärtti väärtti+A+Sg+Nom worthy
 väärtissä väärtti+A+Sg+Ine
@@ -1494,12 +1489,12 @@ usually sourced from various forms of nominals.
 
 The classification of the adverbs in morphology goes along the possessives
 and clitics they take or require:
-€ aakkosellisesti
-€ aakkosellisestikin
-€ mukaani
-€ mukaamme
-€ ajassa
-€ ajassako
+* __aakkosellisesti__
+* __aakkosellisestikin__
+* __mukaani__
+* __mukaamme__
+* __ajassa__
+* __ajassako__
 Coordinating conjunctions combine equal clauses and phrases. As subset of
 particles, they do not inflect. The classification is solely syntactic and
 semantic, but it is used in this system for compatibility with other stuff.
@@ -1509,8 +1504,8 @@ The coordinating conjunctions are: eli(kkä), ja, joko – tai, kuin – myös,
 ynnä, (saati), (sillä)
 (VISK § 816)
 Examples:
-€ eikä
-€ ja
+* __eikä__
+* __ja__
 The adverbial conjunctions join two unequal clauses or phrases together.
 The traditional term for this is sub-ordinating conjunction, it is assumed
 here for compatibility with other languages. Adverbial conjunctions are a
@@ -1520,12 +1515,12 @@ The adverbial conjunctions are:
 ellei, että, jahka, jollei, jos, joskin, jos kohta, jotta, koska, kun,
  kunhan, mikäli, vaikka, (kunnes). (VISK § 818)
 Examples:
-€ että
-€ jotta
-€ koska
-€ kun
-€ jos
-€ vaikka
+* __että__
+* __jotta__
+* __koska__
+* __kun__
+* __jos__
+* __vaikka__
 
 Digit-strings are used in place of numerals. They inflect with colon, like
 acronyms, and compound with hyphen only.
@@ -1533,36 +1528,36 @@ acronyms, and compound with hyphen only.
 Digits are constructed as several cyclic structures: integers, decimals or
 roman numerals.
 Zero alone works quite differently:
-€ 0
+* __0__
 
 Integers can be constructed from any number of digits, ending in
 1-9, followed by any number of 0's. Initial 0's are rare, but not totally
 unexpected:
-€ 13
-€ 100
-€ 0000005550000000
+* __13__
+* __100__
+* __0000005550000000__
 
 The digit strings that end in 10 to 12 + 6n 0's are inflected alike:
-€ 1000000000
-€ 300000000000
-€ 123456000000000000000000
+* __1000000000__
+* __300000000000__
+* __123456000000000000000000__
 
 The digit strings that end in 6 to 9 + 6n 0's are inflected alike:
-€ 1000000
-€ 300000000
-€ 123456000000000000000
+* __1000000__
+* __300000000__
+* __123456000000000000000__
 
 Decimal digit strings start with any number of digits 0 to 9, followed
 by decimal separator comma. The decimal dot may be allowed as substandard
 variant.
-€ 1,0
-€ 314,1
+* __1,0__
+* __314,1__
 
 
 The decimal digit strings end in any number of digits 0 to 9, inflected
 along the last part.
-€ 3,141
-€ 123,345
+* __3,141__
+* __123,345__
 
 The decimal digit strings with dot may be allowed as sub-standard option
 with respective analysis.
@@ -1570,27 +1565,27 @@ with respective analysis.
 Roman numerals are composed the symbols M, D, C, L, X, V, I in ascending
 scale and some combinations, they denote ordinal numbers and inflect like
 ones.
-€ MM
-€ MCXI
-€ CMXCIX
+* __MM__
+* __MCXI__
+* __CMXCIX__
 
 Thousands can be followed by any of other parts
-€ MII
-€ MCCCXXII
+* __MII__
+* __MCCCXXII__
 
 
 Hundreds can be followed by anything but thousands:
-€ CXXI
-€ DXXIV
+* __CXXI__
+* __DXXIV__
 
 Tens can be followed by ones:
-€ XIX
-€ XXVII
+* __XIX__
+* __XXVII__
 
 Ones come alone
-€ IX
-€ VIII
-€ II
+* __IX__
+* __VIII__
+* __II__
 
 Exceptions are quite strange word-forms. the ones that do not fit anywhere 
 else. This file contains all enumerated word forms that cannot reasonably be
@@ -1601,36 +1596,36 @@ compounding scheme or possibly many end applications.
 
 
 negation verb has partial inflection:
-€ en
-€ älkää
-€ älkööt
+* __en__
+* __älkää__
+* __älkööt__
 
 Some verbs only have few word-forms left:
-€ kutiaa
-€ taita
-€ paratkoon
-€ eläköön
+* __kutiaa__
+* __taita__
+* __paratkoon__
+* __eläköön__
 
 
 The noun ruoka has irregular forms:
-€ ruuassa
-€ ruuilla
+* __ruuassa__
+* __ruuilla__
 
 The adjective hyvä has heteroclitic comparative derivations too:
-€ parempi
-€ paremmissa
-€ paras
-€ parhaat
+* __parempi__
+* __paremmissa__
+* __paras__
+* __parhaat__
 
 Some of the nouns have archaic consonat stem forms left:
-€ vuonna
-€ sydännä
-€ jumalten
-€ sankarten
+* __vuonna__
+* __sydännä__
+* __jumalten__
+* __sankarten__
 
 few verbs have shortened forms in standard spoken Finnish
-€ meen
-€ tuut
+* __meen__
+* __tuut__
 
 Interjections are mainly parts of spoken language that are minimal turns
 in dialogue, curses, onomatopoeia and such. Interjections are a subset
@@ -1640,8 +1635,8 @@ limited in form; they stem from arbitrary combinations of characters to
 
 Only add new interjections that are found from corpora.
 Examples:
-€ aah
-€ äh
+* __aah__
+* __äh__
 
 Noun is the part-of-speech for words which require declination in number
 and case. Additionally nouns may have optional possessive suffixes and
@@ -1654,19 +1649,19 @@ separately under proper nouns, but the classification is the same.
 The nominals are classified by combination of the stem variations, suffix
 allomorphs and the vowel harmony. The nouns have number, case, possessive
 and clitic suffixes:
-€ talo talo+N+Sg+Nom house
-€ taloa talo+N+Sg+Par
-€ taloissa talo+N+Pl+Ine
-€ talostani talo+N+Sg+Ela+PxSg1
-€ talollako talo+N+Sg+Ade+Qst
-€ taloiltammepa talo+N+Pl+Abl+PxPl1+Foc/pa
+* __talo__: {{talo+N+Sg+Nom}} (Eng. house)
+* __taloa__: {{talo+N+Sg+Par}}
+* __taloissa__: {{talo+N+Pl+Ine}}
+* __talostani__: {{talo+N+Sg+Ela+PxSg1}}
+* __talollako__: {{talo+N+Sg+Ade+Qst}}
+* __taloiltammepa__: {{talo+N+Pl+Abl+PxPl1+Foc/pa}}
 The classification is based on suffix allomorphs, harmony, and the stem
 variation:
-€ taloja talo+N+Pl+Par
-€ sälöjä sälö+N+Pl+Par splinter
-€ valtioita valtio+N+Pl+Par state
-€ lepakot lepakko+N+Pl+Nom bat
-€ padoissa pato+N+Pl+Ine dam
+* __taloja__: {{talo+N+Pl+Par}}
+* __sälöjä__: {{sälö+N+Pl+Par}} (Eng. splinter)
+* __valtioita__: {{valtio+N+Pl+Par}} (Eng. state)
+* __lepakot__: {{lepakko+N+Pl+Nom}} (Eng. bat)
+* __padoissa__: {{pato+N+Pl+Ine}} (Eng. dam)
 The minimal set to determine class of noun is singulars of nominative,
 essive and inessive, plurals of essive, elative, partitive, illative, and
 genitive. Find out stems and suffixes and match.
@@ -1688,1192 +1683,1192 @@ Noun stems without stem variation
 The most basic noun stem does not have any stem internal variation and
 uses few commonest allomorphs. The words in this class are either bisyllabic
 or have one of common derivational suffixes sto, ...:
-€ talo talo+N+Sg+Nom house
-€ talona talo+N+Sg+Ess
-€ talossa talo+N+Sg+Ine
-€ taloina talo+N+Pl+Ess
-€ taloista talo+N+Pl+Ela
-€ taloa talo+N+Sg+Par
+* __talo__: {{talo+N+Sg+Nom}} (Eng. house)
+* __talona__: {{talo+N+Sg+Ess}}
+* __talossa__: {{talo+N+Sg+Ine}}
+* __taloina__: {{talo+N+Pl+Ess}}
+* __taloista__: {{talo+N+Pl+Ela}}
+* __taloa__: {{talo+N+Sg+Par}}
 $ talota
-€ taloon talo+N+Sg+Ill
+* __taloon__: {{talo+N+Sg+Ill}}
 $ taloseen
-€ taloja talo+N+Pl+Par
+* __taloja__: {{talo+N+Pl+Par}}
 $ taloita
-€ talojen talo+N+Pl+Gen
+* __talojen__: {{talo+N+Pl+Gen}}
 $ taloiden
 $ taloitten
-€ taloihin talo+N+Pl+Gen
+* __taloihin__: {{talo+N+Pl+Gen}}
 $ taloisiin
-€ talojuttu talo#juttu, house thing
-€ talonjuttu talon#juttu, house's thing
-€ talojenjuttu talojen#juttu, houses' thing
+* __talojuttu__: {{talo#juttu,}} (Eng. house thing)
+* __talonjuttu__: {{talon#juttu,}} (Eng. house's thing)
+* __talojenjuttu__: {{talojen#juttu,}} (Eng. houses' thing)
 
 
 The stems ending in u are also without variationm and the bisyllabic ones
 have the same simple allomorph pattern:
-€ asu asu+N+Sg+Nom outfit
-€ asua asu+N+Sg+Par
-€ asuun asu+N+Sg+Ill
-€ asuna asu+N+Sg+Ess
-€ asussa asu+N+Sg+Ine
-€ asuja asu+N+Pl+Par
-€ asujen asu+N+Pl+Gen
-€ asuihin asu+N+Pl+Ill
-€ asuina asu+N+Pl+Ess
-€ asuissa asu+N+Pl+Ine
+* __asu__: {{asu+N+Sg+Nom}} (Eng. outfit)
+* __asua__: {{asu+N+Sg+Par}}
+* __asuun__: {{asu+N+Sg+Ill}}
+* __asuna__: {{asu+N+Sg+Ess}}
+* __asussa__: {{asu+N+Sg+Ine}}
+* __asuja__: {{asu+N+Pl+Par}}
+* __asujen__: {{asu+N+Pl+Gen}}
+* __asuihin__: {{asu+N+Pl+Ill}}
+* __asuina__: {{asu+N+Pl+Ess}}
+* __asuissa__: {{asu+N+Pl+Ine}}
 
-€ kärry kärry+N+Sg+Nom cart
-€ kärryä kärry+N+Sg+Par
-€ kärryyn kärry+N+Sg+Ill
-€ kärrynä kärry+N+Sg+Ess
-€ kärryssä kärry+N+Sg+Ine
-€ kärryjä kärry+N+Pl+Par
-€ kärryjen kärry+N+Pl+Gen
-€ kärryihin kärry+N+Pl+Ill
-€ kärryinä kärry+N+Pl+Ess
-€ kärryissä kärry+N+Pl+Ine
+* __kärry__: {{kärry+N+Sg+Nom}} (Eng. cart)
+* __kärryä__: {{kärry+N+Sg+Par}}
+* __kärryyn__: {{kärry+N+Sg+Ill}}
+* __kärrynä__: {{kärry+N+Sg+Ess}}
+* __kärryssä__: {{kärry+N+Sg+Ine}}
+* __kärryjä__: {{kärry+N+Pl+Par}}
+* __kärryjen__: {{kärry+N+Pl+Gen}}
+* __kärryihin__: {{kärry+N+Pl+Ill}}
+* __kärryinä__: {{kärry+N+Pl+Ess}}
+* __kärryissä__: {{kärry+N+Pl+Ine}}
 
-€ mömmö mömmö+N+Sg+Nom gunk
-€ mömmöä mömmö+N+Sg+Par
-€ mömmöön mömmö+N+Sg+Ill
-€ mömmönä mömmö+N+Sg+Ess
-€ mömmössä mömmö+N+Sg+Ine
-€ mömmöjä mömmö+N+Pl+Par
-€ mömmöjen mömmö+N+Pl+Gen
-€ mömmöihin mömmö+N+Pl+Ill
-€ mömmöinä mömmö+N+Pl+Ess
-€ mömmöissä mömmö+N+Pl+Ine
-
-
-€ ukko ukko+N+Sg+Nom geezer
-€ ukossa ukko+N+Sg+Ine
-€ ukoista ukko+N+Pl+Ela
-€ ukkoihin ukko+N+Pl+Ill
+* __mömmö__: {{mömmö+N+Sg+Nom}} (Eng. gunk)
+* __mömmöä__: {{mömmö+N+Sg+Par}}
+* __mömmöön__: {{mömmö+N+Sg+Ill}}
+* __mömmönä__: {{mömmö+N+Sg+Ess}}
+* __mömmössä__: {{mömmö+N+Sg+Ine}}
+* __mömmöjä__: {{mömmö+N+Pl+Par}}
+* __mömmöjen__: {{mömmö+N+Pl+Gen}}
+* __mömmöihin__: {{mömmö+N+Pl+Ill}}
+* __mömmöinä__: {{mömmö+N+Pl+Ess}}
+* __mömmöissä__: {{mömmö+N+Pl+Ine}}
 
 
-€ tikku tikku+N+Sg+Nom stick
-€ tikussa tikku+N+Sg+Ine
-€ tikuista tikku+N+Pl+Ela
-€ tikkuihin tikku+N+Pl+Ill
+* __ukko__: {{ukko+N+Sg+Nom}} (Eng. geezer)
+* __ukossa__: {{ukko+N+Sg+Ine}}
+* __ukoista__: {{ukko+N+Pl+Ela}}
+* __ukkoihin__: {{ukko+N+Pl+Ill}}
 
 
-€ myrkky myrkky+N+Sg+Nom poison
-€ myrkyssä myrkky+N+Sg+Ine
-€ myrkyistä myrkky+N+Pl+Ela
-€ myrkkyihin myrkky+N+Pl+Ill
-
-€ yökkö yökkö+N+Sg+Nom nightfly
-€ yökössä yökkö+N+Sg+Ine
-€ yököistä yökkö+N+Pl+Ela
-€ yökköihin yökkö+N+Pl+Ill
-
-€ happo happo+N+Sg+Nom acid
-€ hapossa happo+N+Sg+Ine
-€ hapoista happo+N+Pl+Ela
-€ happoihin happo+N+Pl+Ill
+* __tikku__: {{tikku+N+Sg+Nom}} (Eng. stick)
+* __tikussa__: {{tikku+N+Sg+Ine}}
+* __tikuista__: {{tikku+N+Pl+Ela}}
+* __tikkuihin__: {{tikku+N+Pl+Ill}}
 
 
-€ lippu lippu+N+Sg+Nom
-€ lipussa lippu+N+Sg+Ine
-€ lipuista lippu+N+Pl+Ela
-€ lippuihin lippu+N+Pl+Ill
+* __myrkky__: {{myrkky+N+Sg+Nom}} (Eng. poison)
+* __myrkyssä__: {{myrkky+N+Sg+Ine}}
+* __myrkyistä__: {{myrkky+N+Pl+Ela}}
+* __myrkkyihin__: {{myrkky+N+Pl+Ill}}
+
+* __yökkö__: {{yökkö+N+Sg+Nom}} (Eng. nightfly)
+* __yökössä__: {{yökkö+N+Sg+Ine}}
+* __yököistä__: {{yökkö+N+Pl+Ela}}
+* __yökköihin__: {{yökkö+N+Pl+Ill}}
+
+* __happo__: {{happo+N+Sg+Nom}} (Eng. acid)
+* __hapossa__: {{happo+N+Sg+Ine}}
+* __hapoista__: {{happo+N+Pl+Ela}}
+* __happoihin__: {{happo+N+Pl+Ill}}
 
 
-€ ryyppy ryyppy+N+Sg+Nom swirl
-€ ryypyssä ryyppy+N+Sg+Ine
-€ ryypyistä ryyppy+N+Pl+Ela
-€ ryyppyihin ryyppy+N+Pl+Ill
-
-€ törppö törppö+N+Sg+Nom bozo
-€ törpössä törppö+N+Sg+Ine
-€ törpöistä törppö+N+Pl+Ela
-€ törppöihin törppö+N+Pl+Ill
-
-€ hirtto hirtto+N+Sg+Nom hanging
-€ hirtossa hirtto+N+Sg+Ine
-€ hirtoista hirtto+N+Pl+Ela
-€ hirttoihin hirtto+N+Pl+Ill
+* __lippu__: {{lippu+N+Sg+Nom}}
+* __lipussa__: {{lippu+N+Sg+Ine}}
+* __lipuista__: {{lippu+N+Pl+Ela}}
+* __lippuihin__: {{lippu+N+Pl+Ill}}
 
 
-€ torttu torttu+N+Sg+Nom tart
-€ tortussa torttu+N+Sg+Ine
-€ tortuista torttu+N+Pl+Ela
-€ torttuihin torttu+N+Pl+Ill
+* __ryyppy__: {{ryyppy+N+Sg+Nom}} (Eng. swirl)
+* __ryypyssä__: {{ryyppy+N+Sg+Ine}}
+* __ryypyistä__: {{ryyppy+N+Pl+Ela}}
+* __ryyppyihin__: {{ryyppy+N+Pl+Ill}}
+
+* __törppö__: {{törppö+N+Sg+Nom}} (Eng. bozo)
+* __törpössä__: {{törppö+N+Sg+Ine}}
+* __törpöistä__: {{törppö+N+Pl+Ela}}
+* __törppöihin__: {{törppö+N+Pl+Ill}}
+
+* __hirtto__: {{hirtto+N+Sg+Nom}} (Eng. hanging)
+* __hirtossa__: {{hirtto+N+Sg+Ine}}
+* __hirtoista__: {{hirtto+N+Pl+Ela}}
+* __hirttoihin__: {{hirtto+N+Pl+Ill}}
 
 
-€ pytty pytty+N+Sg+Nom cup
-€ pytyssä pytty+N+Sg+Ine
-€ pytyistä pytty+N+Pl+Ela
-€ pyttyihin pytty+N+Pl+Ill
+* __torttu__: {{torttu+N+Sg+Nom}} (Eng. tart)
+* __tortussa__: {{torttu+N+Sg+Ine}}
+* __tortuista__: {{torttu+N+Pl+Ela}}
+* __torttuihin__: {{torttu+N+Pl+Ill}}
 
-€ pönttö pönttö+N+Sg+Nom pot
-€ pöntössä pönttö+N+Sg+Ine
-€ pöntöistä pönttö+N+Pl+Ela
-€ pönttöihin pönttö+N+Pl+Ill
+
+* __pytty__: {{pytty+N+Sg+Nom}} (Eng. cup)
+* __pytyssä__: {{pytty+N+Sg+Ine}}
+* __pytyistä__: {{pytty+N+Pl+Ela}}
+* __pyttyihin__: {{pytty+N+Pl+Ill}}
+
+* __pönttö__: {{pönttö+N+Sg+Nom}} (Eng. pot)
+* __pöntössä__: {{pönttö+N+Sg+Ine}}
+* __pöntöistä__: {{pönttö+N+Pl+Ela}}
+* __pönttöihin__: {{pönttö+N+Pl+Ill}}
 
 
 Between two vowels, the weak grade of k is optionally an apostrophe instead.
 For k that is not optionally ’, use the variation class kk ~ k instead
 (e.g. N_UKKO).
-€ teko teko+N+Sg+Nom action
-€ teossa teko+N+Sg+Ine
-€ te’ossa teko+N+Sg+Ine
+* __teko__: {{teko+N+Sg+Nom}} (Eng. action)
+* __teossa__: {{teko+N+Sg+Ine}}
+* __te’ossa__: {{teko+N+Sg+Ine}}
 
 
-€ maku maku+N+Sg+Nom taste
-€ maussa maku+N+Sg+Ine
-€ ma’ussa maku+N+Sg+Ine
+* __maku__: {{maku+N+Sg+Nom}} (Eng. taste)
+* __maussa__: {{maku+N+Sg+Ine}}
+* __ma’ussa__: {{maku+N+Sg+Ine}}
 
 
-€ näky
-€ näyssä
-€ nä’yssä
+* __näky__
+* __näyssä__
+* __nä’yssä__
 
-€ näkö
-€ näössä
-€ nä’össä
+* __näkö__
+* __näössä__
+* __nä’össä__
 
 Between three vowels where k is surrounded by same vowels the k becomes
 obligatorily ’, for other cases use classes for k optionally ’ (e.g.
 N_TEKO) or kk ~ k (e.g. N_UKKO).
-€ ruoko
-€ ruo’ossa
+* __ruoko__
+* __ruo’ossa__
 
 
-€ 
-€ liuku
-€ liu’ussa
-
-
-
-
-€ hepo
-€ hevossa
-€ hepoina
-€ hevoista
-
-
-€ apu
-€ avussa
-€ apuihin
-€ avuista
-
-
-€ käpy
-€ kävyssä
-€ käpyihin
-€ kävyistä
-
-€ löpö
-€ lövössä
-€ löpöihin
-€ lövöistä
-
-€ veto
-€ vedossa
-€ vetoihin
-€ vedoista
-
-
-€ kuitu
-€ kuidussa
-€ kuituihin
-€ kuiduista
-
-
-€ vety
-€ vedyssä
-€ vetyihin
-€ vedyistä
-
-€ häätö
-€ häädössä
-€ häädöistä
-€ häätöihin
-
-€ runko
-€ rungossa
-€ rungoista
-€ runkoihin
-
-
-€ vinku
-€ vingussa
-€ vinguista
-€ vinkuihin
-
-
-€ sänky
-€ sängyssä
-€ sängyistä
-€ sänkyihin
-
-€ ylänkö
-€ ylängössä
-€ ylängöistä
-€ ylänköihin
-
-€ sampo
-€ sammossa
-€ sampoina
-€ sammoista
-
-
-€ rumpu
-€ rummussa
-€ rumpuihin
-€ rummuista
-
-
-
-€ lämpö
-€ lämmössä
-€ lämpöihin
-€ lämmöistä
-
-€ kielto
-€ kiellossa
-€ kieltoihin
-€ kielloista
-
-
-€ huoliteltu
-€ huolitellussa
-€ huoliteltuihin
-€ huolitelluista
-
-
-€ epäilty
-€ epäillyssä
-€ epäiltyihin
-€ epäillyistä
-
-€ sisältö
-€ sisällössä
-€ sisällöistä
-€ sisältöihin
-
-€ tunto
-€ tunnossa
-€ tuntoihin
-€ tunnoista
-
-
-€ lintu
-€ linnussa
-€ lintuihin
-€ linnuista
-
-
-€ mänty
-€ männyssä
-€ mäntyihin
-€ männyistä
-
-€ kääntö
-€ käännössä
-€ käännöistä
-€ kääntöihin
-
-€ siirto
-€ siirrossa
-€ siirtoihin
-€ siirroista
+* ???
+* __liuku__
+* __liu’ussa__
 
 
 
 
+* __hepo__
+* __hevossa__
+* __hepoina__
+* __hevoista__
 
 
-€ luku
-€ luvussa
-€ luvuista
-€ lukuihin
+* __apu__
+* __avussa__
+* __apuihin__
+* __avuista__
 
 
-€ kyky
-€ kyvyssä
-€ kyvyistä
-€ kykyihin
+* __käpy__
+* __kävyssä__
+* __käpyihin__
+* __kävyistä__
+
+* __löpö__
+* __lövössä__
+* __löpöihin__
+* __lövöistä__
+
+* __veto__
+* __vedossa__
+* __vetoihin__
+* __vedoista__
+
+
+* __kuitu__
+* __kuidussa__
+* __kuituihin__
+* __kuiduista__
+
+
+* __vety__
+* __vedyssä__
+* __vetyihin__
+* __vedyistä__
+
+* __häätö__
+* __häädössä__
+* __häädöistä__
+* __häätöihin__
+
+* __runko__
+* __rungossa__
+* __rungoista__
+* __runkoihin__
+
+
+* __vinku__
+* __vingussa__
+* __vinguista__
+* __vinkuihin__
+
+
+* __sänky__
+* __sängyssä__
+* __sängyistä__
+* __sänkyihin__
+
+* __ylänkö__
+* __ylängössä__
+* __ylängöistä__
+* __ylänköihin__
+
+* __sampo__
+* __sammossa__
+* __sampoina__
+* __sammoista__
+
+
+* __rumpu__
+* __rummussa__
+* __rumpuihin__
+* __rummuista__
+
+
+
+* __lämpö__
+* __lämmössä__
+* __lämpöihin__
+* __lämmöistä__
+
+* __kielto__
+* __kiellossa__
+* __kieltoihin__
+* __kielloista__
+
+
+* __huoliteltu__
+* __huolitellussa__
+* __huoliteltuihin__
+* __huolitelluista__
+
+
+* __epäilty__
+* __epäillyssä__
+* __epäiltyihin__
+* __epäillyistä__
+
+* __sisältö__
+* __sisällössä__
+* __sisällöistä__
+* __sisältöihin__
+
+* __tunto__
+* __tunnossa__
+* __tuntoihin__
+* __tunnoista__
+
+
+* __lintu__
+* __linnussa__
+* __lintuihin__
+* __linnuista__
+
+
+* __mänty__
+* __männyssä__
+* __mäntyihin__
+* __männyistä__
+
+* __kääntö__
+* __käännössä__
+* __käännöistä__
+* __kääntöihin__
+
+* __siirto__
+* __siirrossa__
+* __siirtoihin__
+* __siirroista__
+
+
+
+
+
+
+* __luku__
+* __luvussa__
+* __luvuista__
+* __lukuihin__
+
+
+* __kyky__
+* __kyvyssä__
+* __kyvyistä__
+* __kykyihin__
 
 
 The trisyllabic and longer words with stem vowel o have no stem variation
 either, but selection of suffix allomorphs for plural genitives and:
-€ ruipelo
-€ ruipeloita
-€ ruipeloja
-€ ruipelojen
-€ ruipeloiden
-€ ruipeloitten
+* __ruipelo__
+* __ruipeloita__
+* __ruipeloja__
+* __ruipelojen__
+* __ruipeloiden__
+* __ruipeloitten__
 
-€ seikkailu
-€ seikkailuja
-€ seikkailuita
-€ seikkailujen
-€ seikkailuiden
-€ seikkailuitten
+* __seikkailu__
+* __seikkailuja__
+* __seikkailuita__
+* __seikkailujen__
+* __seikkailuiden__
+* __seikkailuitten__
 
-€ vehkeily
-€ vehkeilyjä
-€ vehkeilyitä
-€ vehkeilyjen
-€ vehkeilyiden
-€ vehkeilyitten
+* __vehkeily__
+* __vehkeilyjä__
+* __vehkeilyitä__
+* __vehkeilyjen__
+* __vehkeilyiden__
+* __vehkeilyitten__
 
-€ jäätelö
-€ jäätelöjen
-€ jäätelöiden
-€ jäätelöitten
+* __jäätelö__
+* __jäätelöjen__
+* __jäätelöiden__
+* __jäätelöitten__
 
 The words with stem vowel o preceded by vowels still have no more stem
 variation than other cases, but give yet another pattern of allomorphs for:
-€ tuomio
+* __tuomio__
 $ tuomioa
-€ tuomiota
-€ tuomioita
+* __tuomiota__
+* __tuomioita__
 $ tuomiojen
-€ tuomioiden
-€ tuomioitten
+* __tuomioiden__
+* __tuomioitten__
 
-€ häiriö
-€ häiriötä
-€ häiriöiden
-€ häiriöitten
-
-Similar inflection exists in limited amounts in new loan words that are
-written as pronounced (thus taking no stem variation but still ending
-€ zombie
-€ zombieta
-€ zombieita
-€ zombieiden
-€ zombieitten
+* __häiriö__
+* __häiriötä__
+* __häiriöiden__
+* __häiriöitten__
 
 Similar inflection exists in limited amounts in new loan words that are
 written as pronounced (thus taking no stem variation but still ending
-€ Bernie
-€ Bernietä
-€ Bernieitä
-€ Bernieiden
-€ Bernieitten
+* __zombie__
+* __zombieta__
+* __zombieita__
+* __zombieiden__
+* __zombieitten__
+
+Similar inflection exists in limited amounts in new loan words that are
+written as pronounced (thus taking no stem variation but still ending
+* __Bernie__
+* __Bernietä__
+* __Bernieitä__
+* __Bernieiden__
+* __Bernieitten__
 
 
 The trisyllabic words ending with gradating long k have plural illative
-€ lepakko
-€ lepakoihin
-€ lepakkoihin
+* __lepakko__
+* __lepakoihin__
+* __lepakkoihin__
 
 The trisyllabic words ending with gradating long k have plural illative
-€ yksikkö
-€ yksiköihin
-€ yksikköihin
+* __yksikkö__
+* __yksiköihin__
+* __yksikköihin__
 
 the i: e : 0 variation:
-€ ruuvi
-€ ruuveina
-€ ruuvien
+* __ruuvi__
+* __ruuveina__
+* __ruuvien__
 
-€ alkyyli
-€ alkyyleinä
-€ alkyylien
+* __alkyyli__
+* __alkyyleinä__
+* __alkyylien__
 
 The i stems combined with (quantitative) gradation of k will form five
-€ lokki
-€ lokissa
-€ lokkeina
-€ lokeista
-€ lokkien
+* __lokki__
+* __lokissa__
+* __lokkeina__
+* __lokeista__
+* __lokkien__
 
-€ häkki
-€ häkissä
-€ häkkeinä
-€ häkeistä
-€ häkkien
+* __häkki__
+* __häkissä__
+* __häkkeinä__
+* __häkeistä__
+* __häkkien__
 
-€ kuppi
-€ kupissa
-€ kuppeina
-€ kupeista
-€ kuppien
+* __kuppi__
+* __kupissa__
+* __kuppeina__
+* __kupeista__
+* __kuppien__
 
-€ tyyppi
-€ tyypissä
-€ tyyppeinä
-€ tyypeistä
-€ tyyppien
+* __tyyppi__
+* __tyypissä__
+* __tyyppeinä__
+* __tyypeistä__
+* __tyyppien__
 
-€ kortti
-€ kortissa
-€ kortteina
-€ korteista
-€ korttien
-
-
-
-€ skeitti
-€ skeitissä
-€ skeitteinä
-€ skeiteistä
-€ skeittien
-
-€ laki
-€ laissa
-€ la’issa
-€ lakeina
-€ laeista
-€ la’eista
-€ lakien
-
-€ hupi
-€ huvissa
-€ hupeina
-€ huveista
-€ hupien
+* __kortti__
+* __kortissa__
+* __kortteina__
+* __korteista__
+* __korttien__
 
 
 
-€ tauti
-€ taudissa
-€ tauteina
-€ taudeista
-€ tautien
+* __skeitti__
+* __skeitissä__
+* __skeitteinä__
+* __skeiteistä__
+* __skeittien__
 
-€ nihti
-€ nihdissä
-€ nihteinä
-€ nihdeistä
-€ nihtien
+* __laki__
+* __laissa__
+* __la’issa__
+* __lakeina__
+* __laeista__
+* __la’eista__
+* __lakien__
 
-€ vanki
-€ vangissa
-€ vankeina
-€ vangeista
-€ vankien
-
-€ väylinki
-€ väylingissä
-€ väylinkeinä
-€ väylingeistä
-€ väylinkien
+* __hupi__
+* __huvissa__
+* __hupeina__
+* __huveista__
+* __hupien__
 
 
-€ pelti
-€ pellissä
-€ pelteinä
-€ pelleistä
-€ peltien
 
-€ sointi
-€ soinnissa
-€ sointeina
-€ soinneista
-€ sointien
+* __tauti__
+* __taudissa__
+* __tauteina__
+* __taudeista__
+* __tautien__
 
-€ vienti
-€ viennissä
-€ vienteinä
-€ vienneistä
-€ vientien
+* __nihti__
+* __nihdissä__
+* __nihteinä__
+* __nihdeistä__
+* __nihtien__
 
-New loan words ending in consonant may be inflected as i stem words
-€ punk
-€ punkeina
-€ punkien
+* __vanki__
+* __vangissa__
+* __vankeina__
+* __vangeista__
+* __vankien__
+
+* __väylinki__
+* __väylingissä__
+* __väylinkeinä__
+* __väylingeistä__
+* __väylinkien__
+
+
+* __pelti__
+* __pellissä__
+* __pelteinä__
+* __pelleistä__
+* __peltien__
+
+* __sointi__
+* __soinnissa__
+* __sointeina__
+* __soinneista__
+* __sointien__
+
+* __vienti__
+* __viennissä__
+* __vienteinä__
+* __vienneistä__
+* __vientien__
 
 New loan words ending in consonant may be inflected as i stem words
-€ zen
-€ zeneinä
-€ zenien
+* __punk__
+* __punkeina__
+* __punkien__
+
+New loan words ending in consonant may be inflected as i stem words
+* __zen__
+* __zeneinä__
+* __zenien__
 
 trisyllabic i : e : 0 variation:
-€ kanaali
-€ kanaaleja
-€ kanaaleiden
+* __kanaali__
+* __kanaaleja__
+* __kanaaleiden__
 
-€ kehveli
-€ kehvelejä
-€ kehveleiden
+* __kehveli__
+* __kehvelejä__
+* __kehveleiden__
 
-€ stadion
-€ stadioneja
-€ stadioneiden
+* __stadion__
+* __stadioneja__
+* __stadioneiden__
 
-€ besserwisser
-€ besserwisserejä
-€ besserwissereiden
+* __besserwisser__
+* __besserwisserejä__
+* __besserwissereiden__
 
-€ ovi
-€ ovena
-€ ovessa
-€ ovissa
-€ ovista
+* __ovi__
+* __ovena__
+* __ovessa__
+* __ovissa__
+* __ovista__
 
-€ helmi
-€ helmenä
-€ helmessä
-€ helmissä
-€ helmistä
+* __helmi__
+* __helmenä__
+* __helmessä__
+* __helmissä__
+* __helmistä__
 
-€ happi
-€ hapessa
-€ happina
-€ hapista
-€ happien
+* __happi__
+* __hapessa__
+* __happina__
+* __hapista__
+* __happien__
 
-€ typpi
-€ typessä
-€ typpinä
-€ typistä
-€ typpien
+* __typpi__
+* __typessä__
+* __typpinä__
+* __typistä__
+* __typpien__
 
-€ noki
-€ noessa
-€ nokina
-€ noista
-€ nokien
+* __noki__
+* __noessa__
+* __nokina__
+* __noista__
+* __nokien__
 
-€ käki
-€ käessä
-€ käkinä
-€ käistä
-€ käkien
+* __käki__
+* __käessä__
+* __käkinä__
+* __käistä__
+* __käkien__
 
-€ korpi
-€ korvessa
-€ korpina
-€ korvista
-€ korpien
+* __korpi__
+* __korvessa__
+* __korpina__
+* __korvista__
+* __korpien__
 
-€ kilpi
-€ kilvessä
-€ kilpinä
-€ kilvistä
-€ kilpien
+* __kilpi__
+* __kilvessä__
+* __kilpinä__
+* __kilvistä__
+* __kilpien__
 
-€ lahti
-€ lahdessa
-€ lahtina
-€ lahdista
-€ lahtien
+* __lahti__
+* __lahdessa__
+* __lahtina__
+* __lahdista__
+* __lahtien__
 
-€ lehti
-€ lehdessä
-€ lehtinä
-€ lehdistä
-€ lehtien
+* __lehti__
+* __lehdessä__
+* __lehtinä__
+* __lehdistä__
+* __lehtien__
 
-€ onki
-€ ongessa
-€ onkina
-€ ongista
-€ onkien
+* __onki__
+* __ongessa__
+* __onkina__
+* __ongista__
+* __onkien__
 
-€ henki
-€ hengessä
-€ henkinä
-€ hengistä
-€ henkien
+* __henki__
+* __hengessä__
+* __henkinä__
+* __hengistä__
+* __henkien__
 
-€ lampi
-€ lammessa
-€ lampina
-€ lammista
-€ lampien
+* __lampi__
+* __lammessa__
+* __lampina__
+* __lammista__
+* __lampien__
 
-€ rimpi
-€ rimmessä
-€ rimpinä
-€ rimmistä
-€ rimpien
+* __rimpi__
+* __rimmessä__
+* __rimpinä__
+* __rimmistä__
+* __rimpien__
 
-€ € arki
+* __€__: {{arki}}
 
-€ järki
-€ järjessä
-€ järkinä
-€ järjistä
-€ järkien
+* __järki__
+* __järjessä__
+* __järkinä__
+* __järjistä__
+* __järkien__
 
 The new words with e stem have same allomorphy selection as old o, u, y, ö
 stems without variation:
-€ nalle
-€ nallea
-€ nalleen
-€ nalleja
-€ nallejen
-€ nalleihin
+* __nalle__
+* __nallea__
+* __nalleen__
+* __nalleja__
+* __nallejen__
+* __nalleihin__
 Dictionary claims they also have slightly greater probability for archaic
 form of plural:
-€ nallein
+* __nallein__
 
 
-€ nisse
-€ nisseä
-€ nisseen
-€ nissejä
-€ nissejen
-€ nisseihin
+* __nisse__
+* __nisseä__
+* __nisseen__
+* __nissejä__
+* __nissejen__
+* __nisseihin__
 
-€ nukke
-€ nukkea
-€ nukkeen
-€ nukkeja
-€ nukkejen
-€ nukkeihin
-
-
-€ jeppe
-€ jeppeä
-€ jeppeen
-€ jeppejä
-€ jeppejen
-€ jeppeihin
+* __nukke__
+* __nukkea__
+* __nukkeen__
+* __nukkeja__
+* __nukkejen__
+* __nukkeihin__
 
 
-€ Lotte
-€ Lottea
-€ Lotteen
-€ Lotteja
-€ Lottejen
-€ Lotteihin
-
-€ kirja
-€ kirjaa
-€ kirjana
-€ kirjassa
-€ kirjoina
-€ kirjojen
-€ kirjoihin
+* __jeppe__
+* __jeppeä__
+* __jeppeen__
+* __jeppejä__
+* __jeppejen__
+* __jeppeihin__
 
 
+* __Lotte__
+* __Lottea__
+* __Lotteen__
+* __Lotteja__
+* __Lottejen__
+* __Lotteihin__
 
-€ politiikka
-€ politiikkaa
-€ politiikkana
-€ politiikassa
-€ politiikkoina
-€ politiikkojen
-€ politiikkoihin
-
-€ tippa
-€ tippaa
-€ tippana
-€ tipassa
-€ tippoina
-€ tippojen
-€ tippoihin
-
-€ mitta
-€ mittaa
-€ mittana
-€ mitassa
-€ mittoina
-€ mittojen
-€ mittoihin
-
-€ lanka
-€ lankaa
-€ lankana
-€ langassa
-€ lankoina
-€ lankojen
-€ lankoihin
-
-€ lanka
-€ lankaa
-€ lankana
-€ langassa
-€ lankoina
-€ lankojen
-€ lankoihin
+* __kirja__
+* __kirjaa__
+* __kirjana__
+* __kirjassa__
+* __kirjoina__
+* __kirjojen__
+* __kirjoihin__
 
 
-€ salpa
-€ salpaa
-€ salpana
-€ salvassa
-€ salpoina
-€ salpojen
-€ salpoihin
 
-€ pata
-€ pataa
-€ patana
-€ padassa
-€ patoina
-€ patojen
-€ patoihin
+* __politiikka__
+* __politiikkaa__
+* __politiikkana__
+* __politiikassa__
+* __politiikkoina__
+* __politiikkojen__
+* __politiikkoihin__
 
-€ lanka
-€ lankaa
-€ lankana
-€ langassa
-€ lankoina
-€ lankojen
-€ lankoihin
+* __tippa__
+* __tippaa__
+* __tippana__
+* __tipassa__
+* __tippoina__
+* __tippojen__
+* __tippoihin__
 
-€ rampa
-€ rampaa
-€ rampana
-€ rammassa
-€ rampoina
-€ rampojen
-€ rampoihin
+* __mitta__
+* __mittaa__
+* __mittana__
+* __mitassa__
+* __mittoina__
+* __mittojen__
+* __mittoihin__
 
-€ valta
-€ valtaa
-€ valtana
-€ vallassa
-€ valtoina
-€ valtojen
-€ valtoihin
+* __lanka__
+* __lankaa__
+* __lankana__
+* __langassa__
+* __lankoina__
+* __lankojen__
+* __lankoihin__
 
-€ kutsunta
-€ kutsuntaa
-€ kutsuntana
-€ kutsunnassa
-€ kutsuntoina
-€ kutsuntojen
-€ kutsuntoihin
-
-€ kysyntä
-€ kysyntää
-€ kysnytänä
-€ kysynnässä
-€ kysyntöinä
-€ kysyntöjen
-€ kysyntöihin
-
-€ kerta
-€ kertaa
-€ kertana
-€ kerrassa
-€ kertoina
-€ kertojen
-€ kertoihin
-
-€ soittaja
-€ soittajaa
-€ soittajana
-€ soittajassa
-€ soittajina
-€ soittajien
-€ soittajiin
-
-€ höpöttäjä
-€ höpöttäjää
-€ höpöttäjänä
-€ höpöttäjässä
-€ höpöttäjinä
-€ höpöttäjien
-€ höpöttäjiin
-
-€ luokka
-€ luokkaa
-€ luokkana
-€ luokassa
-€ luokkina
-€ luokissa
-€ luokkien
-
-€ hölkkä
-€ hölkkää
-€ hölkkänä
-€ hölkässä
-€ hölkkinä
-€ hölkissä
-€ hölkkien
-
-€ kuoppa
-€ kuoppaa
-€ kuoppana
-€ kuopassa
-€ kuoppina
-€ kuopissa
-€ kuoppien
-
-€ seppä
-€ seppää
-€ seppänä
-€ sepässä
-€ seppinä
-€ sepissä
-€ seppien
-
-€ rotta
-€ rottaa
-€ rottana
-€ rotassa
-€ rottina
-€ rotissa
-€ rottien
-
-€ kenttä
-€ kenttää
-€ kenttänä
-€ kentässä
-€ kenttinä
-€ kentissä
-€ kenttien
-
-€ ruoka
-€ ruokaa
-€ ruokana
-€ ruoassa
-€ ruokina
-€ ruoissa
-€ ruokien
-€ ruo’assa
-€ ruo’issa
-
-€ ikä
-€ ikää
-€ ikänä
-€ iässä
-€ i’issä
-€ ikiin
-
-€ reikä
-€ reikää
-€ reikänä
-€ reiässä
-€ rei’issä
-€ reikiin
-
-€ lupa
-€ lupaa
-€ lupana
-€ luvassa
-€ luppina
-€ luvissa
-€ lupien
-
-€ leipä
-€ leipää
-€ leipänä
-€ leivässä
-€ leipinä
-€ leivissä
-€ leipien
-
-€ sota
-€ sotaa
-€ ostana
-€ sodassa
-€ sotina
-€ sodissa
-€ sotien
-
-€ pöytä
-€ pöytää
-€ pöytänä
-€ pöydässä
-€ pöytinä
-€ pöydissä
-€ pöytien
-
-€ honka
-€ honkaa
-€ honkana
-€ hongassa
-€ honkina
-€ hongissa
-€ honkien
-
-€ kenkä
-€ kenkää
-€ kenkänä
-€ kengässä
-€ kengissä
-€ kenkiin
+* __lanka__
+* __lankaa__
+* __lankana__
+* __langassa__
+* __lankoina__
+* __lankojen__
+* __lankoihin__
 
 
-€ kompa
-€ kompaa
-€ kompana
-€ kommassa
-€ kompina
-€ kommissa
-€ kompien
+* __salpa__
+* __salpaa__
+* __salpana__
+* __salvassa__
+* __salpoina__
+* __salpojen__
+* __salpoihin__
+
+* __pata__
+* __pataa__
+* __patana__
+* __padassa__
+* __patoina__
+* __patojen__
+* __patoihin__
+
+* __lanka__
+* __lankaa__
+* __lankana__
+* __langassa__
+* __lankoina__
+* __lankojen__
+* __lankoihin__
+
+* __rampa__
+* __rampaa__
+* __rampana__
+* __rammassa__
+* __rampoina__
+* __rampojen__
+* __rampoihin__
+
+* __valta__
+* __valtaa__
+* __valtana__
+* __vallassa__
+* __valtoina__
+* __valtojen__
+* __valtoihin__
+
+* __kutsunta__
+* __kutsuntaa__
+* __kutsuntana__
+* __kutsunnassa__
+* __kutsuntoina__
+* __kutsuntojen__
+* __kutsuntoihin__
+
+* __kysyntä__
+* __kysyntää__
+* __kysnytänä__
+* __kysynnässä__
+* __kysyntöinä__
+* __kysyntöjen__
+* __kysyntöihin__
+
+* __kerta__
+* __kertaa__
+* __kertana__
+* __kerrassa__
+* __kertoina__
+* __kertojen__
+* __kertoihin__
+
+* __soittaja__
+* __soittajaa__
+* __soittajana__
+* __soittajassa__
+* __soittajina__
+* __soittajien__
+* __soittajiin__
+
+* __höpöttäjä__
+* __höpöttäjää__
+* __höpöttäjänä__
+* __höpöttäjässä__
+* __höpöttäjinä__
+* __höpöttäjien__
+* __höpöttäjiin__
+
+* __luokka__
+* __luokkaa__
+* __luokkana__
+* __luokassa__
+* __luokkina__
+* __luokissa__
+* __luokkien__
+
+* __hölkkä__
+* __hölkkää__
+* __hölkkänä__
+* __hölkässä__
+* __hölkkinä__
+* __hölkissä__
+* __hölkkien__
+
+* __kuoppa__
+* __kuoppaa__
+* __kuoppana__
+* __kuopassa__
+* __kuoppina__
+* __kuopissa__
+* __kuoppien__
+
+* __seppä__
+* __seppää__
+* __seppänä__
+* __sepässä__
+* __seppinä__
+* __sepissä__
+* __seppien__
+
+* __rotta__
+* __rottaa__
+* __rottana__
+* __rotassa__
+* __rottina__
+* __rotissa__
+* __rottien__
+
+* __kenttä__
+* __kenttää__
+* __kenttänä__
+* __kentässä__
+* __kenttinä__
+* __kentissä__
+* __kenttien__
+
+* __ruoka__
+* __ruokaa__
+* __ruokana__
+* __ruoassa__
+* __ruokina__
+* __ruoissa__
+* __ruokien__
+* __ruo’assa__
+* __ruo’issa__
+
+* __ikä__
+* __ikää__
+* __ikänä__
+* __iässä__
+* __i’issä__
+* __ikiin__
+
+* __reikä__
+* __reikää__
+* __reikänä__
+* __reiässä__
+* __rei’issä__
+* __reikiin__
+
+* __lupa__
+* __lupaa__
+* __lupana__
+* __luvassa__
+* __luppina__
+* __luvissa__
+* __lupien__
+
+* __leipä__
+* __leipää__
+* __leipänä__
+* __leivässä__
+* __leipinä__
+* __leivissä__
+* __leipien__
+
+* __sota__
+* __sotaa__
+* __ostana__
+* __sodassa__
+* __sotina__
+* __sodissa__
+* __sotien__
+
+* __pöytä__
+* __pöytää__
+* __pöytänä__
+* __pöydässä__
+* __pöytinä__
+* __pöydissä__
+* __pöytien__
+
+* __honka__
+* __honkaa__
+* __honkana__
+* __hongassa__
+* __honkina__
+* __hongissa__
+* __honkien__
+
+* __kenkä__
+* __kenkää__
+* __kenkänä__
+* __kengässä__
+* __kengissä__
+* __kenkiin__
 
 
-€ multa
-€ multaa
-€ multana
-€ mullassa
-€ multina
-€ mullissa
-€ multien
-
-€ syltä
-€ syltää
-€ syltänä
-€ syllässä
-€ syltinä
-€ syllissä
-€ syltien
-
-€ kunta
-€ kuntaa
-€ kuntana
-€ kunnassa
-€ kuntina
-€ kunnissa
-€ kuntien
-
-€ emäntä
-€ emäntää
-€ emäntänä
-€ emännässä
-€ emäntinä
-€ emännissä
-€ emäntien
+* __kompa__
+* __kompaa__
+* __kompana__
+* __kommassa__
+* __kompina__
+* __kommissa__
+* __kompien__
 
 
-€ selkä
-€ selkää
-€ selkänä
-€ seljässä
-€ seljissä
-€ selkiin
+* __multa__
+* __multaa__
+* __multana__
+* __mullassa__
+* __multina__
+* __mullissa__
+* __multien__
+
+* __syltä__
+* __syltää__
+* __syltänä__
+* __syllässä__
+* __syltinä__
+* __syllissä__
+* __syltien__
+
+* __kunta__
+* __kuntaa__
+* __kuntana__
+* __kunnassa__
+* __kuntina__
+* __kunnissa__
+* __kuntien__
+
+* __emäntä__
+* __emäntää__
+* __emäntänä__
+* __emännässä__
+* __emäntinä__
+* __emännissä__
+* __emäntien__
+
+
+* __selkä__
+* __selkää__
+* __selkänä__
+* __seljässä__
+* __seljissä__
+* __selkiin__
 
 
 
 Certain trisyllabic or longer a stems allow a lot of allomorphs and both
 a : o : 0 variations:
-€ probleema
-€ probleemia
-€ probleemoita
-€ probleemien
-€ probleemoiden
-€ probleemoitten
-€ probleemiin
-€ probleemoihin
+* __probleema__
+* __probleemia__
+* __probleemoita__
+* __probleemien__
+* __probleemoiden__
+* __probleemoitten__
+* __probleemiin__
+* __probleemoihin__
 Also less commonly
-€ probleemojen
-€ probleemoja
-€ probleemain
+* __probleemojen__
+* __probleemoja__
+* __probleemain__
 
-€ käpälä
-€ käpälää
-€ käpälänä
-€ käpälässä
-€ käpälinä
-€ käpälien
-€ käpäliin
-
-
-€ makkara
-€ makkaraa
-€ makkarana
-€ makkaroina
-€ makkaroita
-€ 
-
-€ häkkyrä
-€ häkkyrää
-€ häkkyränä
-€ häkkyröinä
-€ häkkyröitä
+* __käpälä__
+* __käpälää__
+* __käpälänä__
+* __käpälässä__
+* __käpälinä__
+* __käpälien__
+* __käpäliin__
 
 
-€ mörinä
-€ mörinää
-€ mörinänä
-€ mörinässä
+* __makkara__
+* __makkaraa__
+* __makkarana__
+* __makkaroina__
+* __makkaroita__
+* ???
 
-0: o stem variation combines with trisyllabic class of special illatives
-€ lusikka
-€ lusikkoina
-€ lusikoissa
-€ lusikkoihin
-€ lusikoihin
+* __häkkyrä__
+* __häkkyrää__
+* __häkkyränä__
+* __häkkyröinä__
+* __häkkyröitä__
 
-€ kämmekkä
-€ kämmeköihin
-€ kämmekköihin
+
+* __mörinä__
+* __mörinää__
+* __mörinänä__
+* __mörinässä__
 
 0: o stem variation combines with trisyllabic class of special illatives
-€ ulappa
-€ ulappoina
-€ ulapoissa
-€ ulappoihin
-€ ulapoihin
+* __lusikka__
+* __lusikkoina__
+* __lusikoissa__
+* __lusikkoihin__
+* __lusikoihin__
+
+* __kämmekkä__
+* __kämmeköihin__
+* __kämmekköihin__
 
 0: o stem variation combines with trisyllabic class of special illatives
-€ pohatta
-€ pohattoina
-€ pohatoissa
-€ pohattoihin
-€ pohatoihin
+* __ulappa__
+* __ulappoina__
+* __ulapoissa__
+* __ulappoihin__
+* __ulapoihin__
 
-€ sokea
-€ sokeana
-€ sokeina
-€ sokeissa
-€ sokeihin
-€ sokeisiin
+0: o stem variation combines with trisyllabic class of special illatives
+* __pohatta__
+* __pohattoina__
+* __pohatoissa__
+* __pohattoihin__
+* __pohatoihin__
 
-€ lipeä
-€ lipeänä
-€ lipeinä
-€ lipeissä
-€ lipeihin
-€ lipeisiin
+* __sokea__
+* __sokeana__
+* __sokeina__
+* __sokeissa__
+* __sokeihin__
+* __sokeisiin__
 
-€ vanhempi
-€ vanhempana
-€ vanhemmassa
-€ vanhempina
-€ vanhemmista
+* __lipeä__
+* __lipeänä__
+* __lipeinä__
+* __lipeissä__
+* __lipeihin__
+* __lipeisiin__
 
-€ vapaa
+* __vanhempi__
+* __vanhempana__
+* __vanhemmassa__
+* __vanhempina__
+* __vanhemmista__
 
-€ tienoo
+* __vapaa__
 
-€ kerjuu
+* __tienoo__
 
-€ maa
+* __kerjuu__
 
-€ tee
+* __maa__
 
-€ hai
+* __tee__
 
-€ hai
+* __hai__
 
-€ ookoo
+* __hai__
 
-€ puu
+* __ookoo__
 
-€ pyy
+* __puu__
 
-€ pää
+* __pyy__
 
-€ köö
+* __pää__
 
-€ tie
+* __köö__
 
-€ suo
+* __tie__
 
-€ työ
+* __suo__
 
-€ nugaa
-€ nugaata
-€ nugaana
-€ nugaahan
-€ nugaaseen
-€ nugaissa
-€ nugaista
-€ nugaaseen
-€ nugaiden
-€ nugaitten
-€ nugaisiin
-€ nugaihin
+* __työ__
 
-€ patee
-€ pateeta
-€ pateena
-€ pateehen
-€ pateeseen
-€ pateissa
-€ pateista
-€ pateeseen
-€ pateiden
-€ pateitten
-€ pateisiin
-€ pateihin
+* __nugaa__
+* __nugaata__
+* __nugaana__
+* __nugaahan__
+* __nugaaseen__
+* __nugaissa__
+* __nugaista__
+* __nugaaseen__
+* __nugaiden__
+* __nugaitten__
+* __nugaisiin__
+* __nugaihin__
 
-€ bidee
-€ bideetä
-€ bideenä
-€ bideehen
-€ bideeseen
-€ bideissä
-€ bideistä
-€ bideeseen
-€ bideiden
-€ bideitten
-€ bideisiin
-€ bideihin
+* __patee__
+* __pateeta__
+* __pateena__
+* __pateehen__
+* __pateeseen__
+* __pateissa__
+* __pateista__
+* __pateeseen__
+* __pateiden__
+* __pateitten__
+* __pateisiin__
+* __pateihin__
+
+* __bidee__
+* __bideetä__
+* __bideenä__
+* __bideehen__
+* __bideeseen__
+* __bideissä__
+* __bideistä__
+* __bideeseen__
+* __bideiden__
+* __bideitten__
+* __bideisiin__
+* __bideihin__
 
 
-€ trikoo
-€ trikoota
-€ trikoona
-€ trikoissa
-€ trikoista
-€ trikooseen
-€ trikoiden
-€ trikoitten
-€ trikoihin
-€ trikoisiin
+* __trikoo__
+* __trikoota__
+* __trikoona__
+* __trikoissa__
+* __trikoista__
+* __trikooseen__
+* __trikoiden__
+* __trikoitten__
+* __trikoihin__
+* __trikoisiin__
 
-€ raguu
-€ raguuta
-€ raguuna
-€ raguussa
-€ raguista
-€ raguuseen
-€ raguiden
-€ raguitten
-€ raguisiin
-€ raguihen
+* __raguu__
+* __raguuta__
+* __raguuna__
+* __raguussa__
+* __raguista__
+* __raguuseen__
+* __raguiden__
+* __raguitten__
+* __raguisiin__
+* __raguihen__
 
-€ fondyy
-€ fondyytä
-€ fondyynä
-€ fondyyssä
-€ fondyistä
-€ fondyyseen
-€ nugaiden
-€ nugaitten
-€ nugaisiin
-€ nugaihin
+* __fondyy__
+* __fondyytä__
+* __fondyynä__
+* __fondyyssä__
+* __fondyistä__
+* __fondyyseen__
+* __nugaiden__
+* __nugaitten__
+* __nugaisiin__
+* __nugaihin__
 
-€ Hyvinkää
+* __Hyvinkää__
 
-€ miljöö
-€ miljöötä
-€ miljoöönä
-€ miljöössä
-€ miljöistä
-€ miljööseen
-€ miljöiden
-€ miljöitten
-€ miljöisiin
-€ milhjöihin
+* __miljöö__
+* __miljöötä__
+* __miljoöönä__
+* __miljöössä__
+* __miljöistä__
+* __miljööseen__
+* __miljöiden__
+* __miljöitten__
+* __miljöisiin__
+* __milhjöihin__
 
 Some loan words don't end in long vowel but work like they would. The
 official dictionary says these words should avoid plural genitive itten but
 not iden, in reality they may be in absolultely free variation.
 
-€ rosé
+* __rosé__
 
 
-€ bébé
+* __bébé__
 
-€ brasserie
+* __brasserie__
 
 
-€ brie
+* __brie__
 
-€ fondue
-€ fondueta
-€ fonduetä
-€ fonduena
-€ fonduenä
-€ fonduessa
-€ fonduessä
-€ fodnueina
-€ fondueinä
-€ fondueista
-€ fondueistä
-€ fondueita
-€ fondueitä
-€ fondueiden
-€ fondueisiin
-€ fondueiden
-€ fondueitten
-€ fondueihin
+* __fondue__
+* __fondueta__
+* __fonduetä__
+* __fonduena__
+* __fonduenä__
+* __fonduessa__
+* __fonduessä__
+* __fodnueina__
+* __fondueinä__
+* __fondueista__
+* __fondueistä__
+* __fondueita__
+* __fondueitä__
+* __fondueiden__
+* __fondueisiin__
+* __fondueiden__
+* __fondueitten__
+* __fondueihin__
 ? fondueisiin
 
 Some loan words inflect irregularly, either more along the written form or
@@ -2892,316 +2887,316 @@ Some loan words inflect irregularly, either more along the written form or
 
 Some loan words inflect irregularly, either more along the written form or
 
-€ nougat
+* __nougat__
 
-€ parfait
+* __parfait__
 
-€ beignet
+* __beignet__
 
-€ Versailles
+* __Versailles__
 
-€ Versailles
+* __Versailles__
 
-€ bordeaux
+* __bordeaux__
 
-€ show
+* __show__
 
-€ Camus 
+* __Camus__
 
-€ monsieur
+* __monsieur__
 
-€ tuli
+* __tuli__
 
-€ uni
+* __uni__
 
-€ uni
+* __uni__
 
-€ hiiri
+* __hiiri__
 
-€ kaari
+* __kaari__
 
-€ mieli
+* __mieli__
 
-€ luomi
+* __luomi__
 
-€ niemi
+* __niemi__
 
-€ kausi
+* __kausi__
 
-€ köysi
+* __köysi__
 
-€ kansi
+* __kansi__
 
-€ kynsi
+* __kynsi__
 
-€ varsi
+* __varsi__
 
-€ hirsi
+* __hirsi__
 
-€ jälsi
+* __jälsi__
 
-€ lapsi
+* __lapsi__
 
-€ uksi
+* __uksi__
 
-€ veitsi
+* __veitsi__
 
-€ veitsi
+* __veitsi__
 
-€ haaksi
+* __haaksi__
 
 
 The consonant stems use inverted gradation if applicable, that is, the 
 nominatives have end in consonants and their gradating consonants are in
 weak form.
 
-€ ahven
+* __ahven__
 
-€ ahven
+* __ahven__
 
-€ siemen
+* __siemen__
 
-€ ajatar
+* __ajatar__
 
-€ tytär
+* __tytär__
 
-€ ien
+* __ien__
 
-€ puhelin
+* __puhelin__
 
-€ elin
+* __elin__
 
-€ heitin
+* __heitin__
 
-€ heitin
+* __heitin__
 
-€ puin
+* __puin__
 
-€ pyyhin
+* __pyyhin__
 
-€ raavin
+* __raavin__
 
-€ särvin
+* __särvin__
 
-€ vaadin
+* __vaadin__
 
-€ vaadin
+* __vaadin__
 
-€ säädin
+* __säädin__
 
 
-€ askellin
+* __askellin__
 
-€ sivellin
+* __sivellin__
 
-€ käännin
+* __käännin__
 
-€ muunnin
+* __muunnin__
 
-€ kiharrin
+* __kiharrin__
 
-€ kiharrin
+* __kiharrin__
 
-€ kierrin
+* __kierrin__
 
-€ poljin
+* __poljin__
 
 
 
-€ työtön
+* __työtön__
 
-€ sisin
+* __sisin__
 
-€ sisin
+* __sisin__
 
-€ vasen
+* __vasen__
 
-€ aakkostaminen
+* __aakkostaminen__
 
-€ kylkiäinen
+* __kylkiäinen__
 
-€ vakuutus
+* __vakuutus__
 
-€ räjäytys
+* __räjäytys__
 
-€ aakkosellisuus
+* __aakkosellisuus__
 
-€ köyhyys
+* __köyhyys__
 
-€ patsas
+* __patsas__
 
-€ patsas
+* __patsas__
 
-€ mätäs
+* __mätäs__
 
-€ patsas
+* __patsas__
 
-€ patsas
+* __patsas__
 
-€ patsas
+* __patsas__
 
-€ asukas
+* __asukas__
 
-€ asukas
+* __asukas__
 
-€ saapas
+* __saapas__
 
-€ rypäs
+* __rypäs__
 
-€ ratas
+* __ratas__
 
-€ mätäs
+* __mätäs__
 
-€ mätäs
+* __mätäs__
 
-€ äes
+* __äes__
 
-€ varas
+* __varas__
 
-€ ruis
+* __ruis__
 
-€ varvas
+* __varvas__
 
-€ seiväs
+* __seiväs__
 
-€ tehdas
+* __tehdas__
 
-€ kangas
+* __kangas__
 
-€ köngäs
+* __köngäs__
 
-€ hammas
+* __hammas__
 
-€ allas
+* __allas__
 
-€ kinnas
+* __kinnas__
 
-€ rynnäs
+* __rynnäs__
 
-€ porras
+* __porras__
 
-€ mies
+* __mies__
 
-€ olut
+* __olut__
 
-€ neitsyt
+* __neitsyt__
 
-€ neitsyt
+* __neitsyt__
 
-€ kevät
+* __kevät__
 
-€ vuosituhat
+* __vuosituhat__
 
-€ aivokuollut
+* __aivokuollut__
 
-€ sivistynyt
+* __sivistynyt__
 
-€ aste
+* __aste__
 
-€ piste
+* __piste__
 
-€ kastike
+* __kastike__
 
-€ lääke
+* __lääke__
 
-€ ape
+* __ape__
 
-€ ripe
+* __ripe__
 
-€ osoite
+* __osoite__
 
-€ käsite
+* __käsite__
 
-€ koe
+* __koe__
 
-€ pyyhe
+* __pyyhe__
 
-€ tarve
+* __tarve__
 
-€ viive
+* __viive__
 
-€ kide
+* __kide__
 
-€ luode
+* __luode__
 
-€ lumme
+* __lumme__
 
-€ mielle
+* __mielle__
 
-€ vuolle
+* __vuolle__
 
-€ rakenne
+* __rakenne__
 
-€ kiinne
+* __kiinne__
 
-€ murre
+* __murre__
 
-€ kierre
+* __kierre__
 
-€ hylje
+* __hylje__
 
-€ pohje
+* __pohje__
 
-€ askar
+* __askar__
 
-€ kyynel
+* __kyynel__
 
-€ säen
+* __säen__
 
-€ taival
+* __taival__
 
 
-€ udar
+* __udar__
 
-€ penger
+* __penger__
 
-€ ommel
+* __ommel__
 
-€ ommel
+* __ommel__
 
-€ kinner
+* __kinner__
 
-€ kannel
+* __kannel__
 
-€ manner
+* __manner__
 
-€ manner
+* __manner__
 
-€ auer
+* __auer__
 
-€ veri
-€ verta
+* __veri__
+* __verta__
 $ vertä
 
-€ meri
-€ merta
+* __meri__
+* __merta__
 $ mertä
 
-€ uros
-€ uroksen
-€ uroon
+* __uros__
+* __uroksen__
+* __uroon__
 
-€ veli
-€ veljeä
-€ veljen
+* __veli__
+* __veljeä__
+* __veljen__
 
-€ lanka
-€ lankaa
-€ lankana
-€ langassa
-€ lankoina
-€ lankojen
-€ lankoihin
+* __lanka__
+* __lankaa__
+* __lankana__
+* __langassa__
+* __lankoina__
+* __lankojen__
+* __lankoihin__
 
-€ ruoka
-€ ruokaa
-€ ruokana
-€ ruoassa
-€ ruokina
-€ ruoissa
-€ ruokien
-€ ruo’assa
-€ ruo’issa
+* __ruoka__
+* __ruokaa__
+* __ruokana__
+* __ruoassa__
+* __ruokina__
+* __ruoissa__
+* __ruokien__
+* __ruo’assa__
+* __ruo’issa__
 
 Noun forms of numerals with special inflection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -3217,36 +3212,36 @@ The numerals 7, 8, 9 have their own paradigm, which, other than the
 nominative having extra n at the end, is same as the tri-syllabic
 a, ä stems, similarly 10 is quite like sisar with the extra en in nominative.
 
-€ aamuyksi
-€ aamuyhtä
-€ aamuyhtenä
+* __aamuyksi__
+* __aamuyhtä__
+* __aamuyhtenä__
 
-€ aamukolme
-€ aamukolmea
-€ aamukolmeen
-€ aamukolmia
-€ aamukolmien
-€ aamukolmiin
-
-
-€ aamukahdeksan
-€ aamukahdeksaa
-€ aamukahdeksana
-€ aamukahdeksassa
-€ aamukahdeksina
-€ aamukahdeksien
-€ aamukahdeksiin
-
-€ aamuyhdeksän
-€ aamuyhdeksää
-€ aamuyhdeksänä
-€ aamuyhdeksässä
-€ aamuyhdeksinä
-€ aamuyhdeksien
-€ aamuyhdeksiin
+* __aamukolme__
+* __aamukolmea__
+* __aamukolmeen__
+* __aamukolmia__
+* __aamukolmien__
+* __aamukolmiin__
 
 
-€ aamukymmenen
+* __aamukahdeksan__
+* __aamukahdeksaa__
+* __aamukahdeksana__
+* __aamukahdeksassa__
+* __aamukahdeksina__
+* __aamukahdeksien__
+* __aamukahdeksiin__
+
+* __aamuyhdeksän__
+* __aamuyhdeksää__
+* __aamuyhdeksänä__
+* __aamuyhdeksässä__
+* __aamuyhdeksinä__
+* __aamuyhdeksien__
+* __aamuyhdeksiin__
+
+
+* __aamukymmenen__
 
 Plurales tantum
 ^^^^^^^^^^^^^^^
@@ -3749,239 +3744,239 @@ nominal types. Numerals have two subclasses, cardinals and ordinals.
 
 Numerals have been split in three sections, the compounding parts
 of cardinals and ordinals, and the non-compounding ones:
-€ kaksikymmentäkolmetuhatta
-€ kahdessadaseneljäs
-€ viitisen
+* __kaksikymmentäkolmetuhatta__
+* __kahdessadaseneljäs__
+* __viitisen__
 
 The compounding parts of cardinals are the number multiplier words.
-€ yksi
-€ viidelle
-€ tuhatta
+* __yksi__
+* __viidelle__
+* __tuhatta__
 
 The suffixes only appear after cardinal multipliers
-€ viisikymmentä
-€ neljäsataatuhatta
+* __viisikymmentä__
+* __neljäsataatuhatta__
 
 The compounding parts of ordinals are the number multiplier words.
-€ neljäs
-€ viidennelle
-€ tuhannetta
+* __neljäs__
+* __viidennelle__
+* __tuhannetta__
 
 The suffixes only appear after cardinal multipliers
-€ viideskymmenes
-€ neljässadastuhannes
+* __viideskymmenes__
+* __neljässadastuhannes__
 
 There is a set of numbers or corresponding expressions that work like them,
 but are not basic cardinals or ordinals:
-€ viitisenkymmentä
-€ puolikymmentä
+* __viitisenkymmentä__
+* __puolikymmentä__
 
 
-€ yksi
-€ yhteen
-€ yhtenä
-€ yhdessä
-€ yhtä
-€ yksiä
-€ yksien
-€ yksiin
-€ yksinä
-€ yksissä
+* __yksi__
+* __yhteen__
+* __yhtenä__
+* __yhdessä__
+* __yhtä__
+* __yksiä__
+* __yksien__
+* __yksiin__
+* __yksinä__
+* __yksissä__
 
-€ kaksi
-€ kahteen
-€ kahtena
-€ kahdessa
-€ kahta
-€ kaksia
-€ kaksien
-€ kaksiin
-€ kaksina
-€ kaksissa
+* __kaksi__
+* __kahteen__
+* __kahtena__
+* __kahdessa__
+* __kahta__
+* __kaksia__
+* __kaksien__
+* __kaksiin__
+* __kaksina__
+* __kaksissa__
 
-€ kolme
-€ kolmeen
-€ kolmena
-€ kolmessa
-€ kolmea
-€ kolmia
-€ kolmien
-€ kolmiin
-€ kolmina
-€ kolmissa
+* __kolme__
+* __kolmeen__
+* __kolmena__
+* __kolmessa__
+* __kolmea__
+* __kolmia__
+* __kolmien__
+* __kolmiin__
+* __kolmina__
+* __kolmissa__
 
-€ neljä
-€ neljää
-€ neljään
-€ neljäin
-€ neljänä
-€ neljässä
-€ neljiä
-€ neljien
-€ neljiin
-€ neljinä
-€ neljissä
+* __neljä__
+* __neljää__
+* __neljään__
+* __neljäin__
+* __neljänä__
+* __neljässä__
+* __neljiä__
+* __neljien__
+* __neljiin__
+* __neljinä__
+* __neljissä__
 
-€ viisi
-€ viiteen
-€ viitenä
-€ viidessä
-€ viisinä
-€ viisissä
-€ viittä
-€ viitten
-€ viisiä
-€ viisien
-€ viisiin
+* __viisi__
+* __viiteen__
+* __viitenä__
+* __viidessä__
+* __viisinä__
+* __viisissä__
+* __viittä__
+* __viitten__
+* __viisiä__
+* __viisien__
+* __viisiin__
 
-€ kuusi
-€ kuutena
-€ kuudessa
-€ kuusina
-€ kuusissa
-€ kuutta
-€ kuutten
-€ kuusia
-€ kuusien
-€ kuusiin
-
-
-€ kahdeksan
-€ kahdeksaa
-€ kahdeksaan
-€ kahdeksain
-€ kahdeksassa
-€ kahdeksana
-€ kahdeksia
-€ kahdeksien
-€ kahdeksiin
-€ kahdeksissa
-€ kahdeksina
-
-€ yhdeksän
-€ yhdeksää
-€ yhdeksään
-€ yhdeksäin
-€ yhdeksässä
-€ yhdeksänä
-€ yhdeksiä
-€ yhdeksien
-€ yhdeksissä
-€ yhdeksinä
-
-€ kymmenen
-€ kymmeneen
-€ kymmenenä
-€ kymmenessä
-€ kymmentä
-€ kymmenten
-€ kymmenien
-€ kymmeniin
-€ kymmenissä
-€ kymmeninä
-
-€ sata
-€ satana
-€ sadassa
-€ sataan
-€ sataa
-€ satojen
-€ satoihin
-€ sadoissa
-€ satoina
-
-€ tuhat
-€ tuhanteen
-€ tuhantena
-€ tuhannessa
-€ tuhansien
-€ tuhatta
-€ tuhansia
-€ tuhansien
-€ tuhansiin
-€ tuhansina
-€ tuhansissa
-
-€ miljoona
-€ miljoonana
-€ miljoonassa
-€ miljoonaa
-€ miljoonaan
-€ miljoonia
-€ miljoonien
-€ miljooniin
-€ miljoonissa
-€ miljoonina
+* __kuusi__
+* __kuutena__
+* __kuudessa__
+* __kuusina__
+* __kuusissa__
+* __kuutta__
+* __kuutten__
+* __kuusia__
+* __kuusien__
+* __kuusiin__
 
 
-€ miljardi
-€ miljardina
-€ miljardissa
-€ miljardeina
-€ miljardeissa
-€ miljardia
-€ miljardiin
-€ miljardeja
-€ miljardien
-€ miljardeihin
+* __kahdeksan__
+* __kahdeksaa__
+* __kahdeksaan__
+* __kahdeksain__
+* __kahdeksassa__
+* __kahdeksana__
+* __kahdeksia__
+* __kahdeksien__
+* __kahdeksiin__
+* __kahdeksissa__
+* __kahdeksina__
+
+* __yhdeksän__
+* __yhdeksää__
+* __yhdeksään__
+* __yhdeksäin__
+* __yhdeksässä__
+* __yhdeksänä__
+* __yhdeksiä__
+* __yhdeksien__
+* __yhdeksissä__
+* __yhdeksinä__
+
+* __kymmenen__
+* __kymmeneen__
+* __kymmenenä__
+* __kymmenessä__
+* __kymmentä__
+* __kymmenten__
+* __kymmenien__
+* __kymmeniin__
+* __kymmenissä__
+* __kymmeninä__
+
+* __sata__
+* __satana__
+* __sadassa__
+* __sataan__
+* __sataa__
+* __satojen__
+* __satoihin__
+* __sadoissa__
+* __satoina__
+
+* __tuhat__
+* __tuhanteen__
+* __tuhantena__
+* __tuhannessa__
+* __tuhansien__
+* __tuhatta__
+* __tuhansia__
+* __tuhansien__
+* __tuhansiin__
+* __tuhansina__
+* __tuhansissa__
+
+* __miljoona__
+* __miljoonana__
+* __miljoonassa__
+* __miljoonaa__
+* __miljoonaan__
+* __miljoonia__
+* __miljoonien__
+* __miljooniin__
+* __miljoonissa__
+* __miljoonina__
 
 
-€ Googol
-
-€ pari
-€ parina
-€ parissa
-€ pareissa
-€ pareina
-€ paria
-€ pareja
-€ parien
-€ pareihin
-€ pariin
+* __miljardi__
+* __miljardina__
+* __miljardissa__
+* __miljardeina__
+* __miljardeissa__
+* __miljardia__
+* __miljardiin__
+* __miljardeja__
+* __miljardien__
+* __miljardeihin__
 
 
-€ ensimmäinen
-€ ensimmäisenä
-€ ensimmäisessä
-€ ensimmäistä
-€ ensimmäisten
-€ ensimmäisiä
-€ ensimmäisiin
-€ ensimmäisinä
-€ ensimmäisissä
+* __Googol__
 
-€ toinen
-€ toiseen
-€ toista
-€ toisten
-€ toisien
-€ toisia
-€ toisiin
-€ toisena
-€ toisessa
-€ toisissa
-€ toisina
+* __pari__
+* __parina__
+* __parissa__
+* __pareissa__
+* __pareina__
+* __paria__
+* __pareja__
+* __parien__
+* __pareihin__
+* __pariin__
 
-€ kolmas
-€ kolmantena
-€ kolmannessa
-€ kolmanteen
-€ kolmatta
-€ kolmansia
-€ kolmansien
-€ kolmansissa
-€ kolmansina
 
-€ neljäs
-€ neljänteen
-€ neljäntenä
-€ neljännessä
-€ neljättä
-€ neljänsiä
-€ neljänsien
-€ neljänsiin
-€ neljänsissä
-€ neljänsinä
+* __ensimmäinen__
+* __ensimmäisenä__
+* __ensimmäisessä__
+* __ensimmäistä__
+* __ensimmäisten__
+* __ensimmäisiä__
+* __ensimmäisiin__
+* __ensimmäisinä__
+* __ensimmäisissä__
+
+* __toinen__
+* __toiseen__
+* __toista__
+* __toisten__
+* __toisien__
+* __toisia__
+* __toisiin__
+* __toisena__
+* __toisessa__
+* __toisissa__
+* __toisina__
+
+* __kolmas__
+* __kolmantena__
+* __kolmannessa__
+* __kolmanteen__
+* __kolmatta__
+* __kolmansia__
+* __kolmansien__
+* __kolmansissa__
+* __kolmansina__
+
+* __neljäs__
+* __neljänteen__
+* __neljäntenä__
+* __neljännessä__
+* __neljättä__
+* __neljänsiä__
+* __neljänsien__
+* __neljänsiin__
+* __neljänsissä__
+* __neljänsinä__
 
 
 The particles are all words that do not inflect at all. For compatibility
@@ -3990,8 +3985,8 @@ and interjections. The ones that are not in those classes are left as
 particles.
 
 Examples:
-€ ahaa
-€ edes
+* __ahaa__
+* __edes__
 
 Adpositions are morphologically nominals that have defective inflection
 patterns. Some of them come from forms of nominals that are no longer
@@ -4002,17 +3997,17 @@ other languages, but for most intents and purposes all adpositions can
 appear in both syntactic positions, after and before the head word.
 
 Examples:
-€ alta
-€ alleen
-€ irti
-€ irtikö
+* __alta__
+* __alleen__
+* __irti__
+* __irtikö__
 
 Prefixes are bound morphs that can appear in beginning of the compounds,
 mostly forms of nominals.
 
 Examples: 
-€ alabanaani
-€ erikoistyyppi
+* __alabanaani__
+* __erikoistyyppi__
 Pronouns are a closed special sub class of nouns. Morphologically pronouns
 have often defective, heteroclitic or otherwise irregular inflectional
 patterns, and certain pronouns have an morphophonologically distinct
@@ -4029,9 +4024,9 @@ second and third singular and plural. The personal pronouns have separate
 accusative cases marked by t suffix. The pronouns in standard literary
 Finnish are *minä* (I), *sinä* (you), *hän* (he), *me* (we), *te* (you),
 *he* (they). VISK § 100
-€ minä
-€ sinut
-€ heille
+* __minä__
+* __sinut__
+* __heille__
 
 The personal pronouns are among the most dialectally varied words of the
 Finnish language. The pronouns forms are one of the factors separating
@@ -4125,8 +4120,8 @@ some orthographical differences, required capitalisations and compounding
 with hyphens.
 
 Examples:
-€ Kalle
-€ Joensuu
+* __Kalle__
+* __Joensuu__
 
 Punctuation characters detailed here are the characters that appear commonly
 in Finnish texts, but are not part of words or linguistic content. The
@@ -4209,7 +4204,7 @@ The lines below this one are not from any referenced source
 Suffixes are bound morphs that come after nominals in compounds. 
 
 Examples:
-€ 
+* ???
 The verbs' conjugation includes voice (in Finnish grammars also verbal 
 genus),  tense/mood (tempus/modus), personal endings and negation marker
 The verbs also have productive derivations to defective nouns as
@@ -4226,12 +4221,12 @@ detailed in later sections.
 
 The verbs are classified along the stem mutations suffix assimilation,
 and harmony:
-€ kutoo kutoa+V+Act+Ind+Prt+Sg3 knit
-€ kudotaan kutoa+V+Pss+Ind+Prt+Pe4
-€ tietää tietää+V+Act+Ind+Prt+Sg3 know
-€ tiesit tietää+V+Act+Ind+Pst+Sg2
-€ nähnyt nähdä+V+Act+PrfPrc+Sg+Nom
-€ juossut juosta+V+Act+PrfPrc+Sg+Nom
+* __kutoo__: {{kutoa+V+Act+Ind+Prt+Sg3}} (Eng. knit)
+* __kudotaan__: {{kutoa+V+Pss+Ind+Prt+Pe4}}
+* __tietää__: {{tietää+V+Act+Ind+Prt+Sg3}} (Eng. know)
+* __tiesit__: {{tietää+V+Act+Ind+Pst+Sg2}}
+* __nähnyt__: {{nähdä+V+Act+PrfPrc+Sg+Nom}}
+* __juossut__: {{juosta+V+Act+PrfPrc+Sg+Nom}}
 The key to find unique class from verbs is to pick stems and suffixes from:
 indicative non-past 1st singular and 3rd singular, indicative past 1st 
 singular, ...
@@ -4247,566 +4242,591 @@ imperative 2nd plural, potential 1st singular, present passive,
 past passive, nut participle passive
 
 The u stems have no stem variation:
-€ kaunistua kaunistua+V+Act+InfA+Sg+Lat beautify
-€ kaunistuessa kaunistua+V+Act+InfE+Sg+Ine
-€ kaunistun kaunistua+V+Act+Ind+Prt+Sg1
-€ kaunistuu kaunistua+V+Act+Ind+Prt+Sg3
-€ kaunistuin kaunistua+V+Act+Ind+Pst+Sg1
-€ kaunistui kaunistua+V+Act+Ind+Pst+Sg3
-€ kaunistuisi kaunistua+V+Act+Cond+Sg3
-€ kaunistukaa kaunistua+V+Act+Imprt+Pl2
-€ kaunistunen kaunistua+V+Act+Pot+Sg1
-€ kaunistutaan kaunistua+V+Pss+Ind+Prt+Pe4
-€ kaunistuttiin kaunistua+V+Pss+Ind+Pst+Pe4
-€ kaunistuttu kaunistua+V+Pss+PrfPrc+Sg+Nom
-€ kaunistuminen kaunistua+V+Der/minen+Sg+Nom
+* __kaunistua__: {{kaunistua+V+Act+InfA+Sg+Lat}} (Eng. beautify)
+* __kaunistuessa__: {{kaunistua+V+Act+InfE+Sg+Ine}}
+* __kaunistun__: {{kaunistua+V+Act+Ind+Prt+Sg1}}
+* __kaunistuu__: {{kaunistua+V+Act+Ind+Prt+Sg3}}
+* __kaunistuin__: {{kaunistua+V+Act+Ind+Pst+Sg1}}
+* __kaunistui__: {{kaunistua+V+Act+Ind+Pst+Sg3}}
+* __kaunistuisi__: {{kaunistua+V+Act+Cond+Sg3}}
+* __kaunistukaa__: {{kaunistua+V+Act+Imprt+Pl2}}
+* __kaunistunen__: {{kaunistua+V+Act+Pot+Sg1}}
+* __kaunistutaan__: {{kaunistua+V+Pss+Ind+Prt+Pe4}}
+* __kaunistuttiin__: {{kaunistua+V+Pss+Ind+Pst+Pe4}}
+* __kaunistuttu__: {{kaunistua+V+Pss+PrfPrc+Sg+Nom}}
+* __kaunistuminen__: {{kaunistua+V+Der/minen+Sg+Nom}}
 
 The o stems have no stem variation:
-€ punoa punoa+V+Act+InfA+Sg+Lat bundle?
-€ punoessa punoa+V+Act+InfE+Sg+Ine
-€ punon punoa+V+Act+Ind+Prt+Sg1
-€ punoo punoa+V+Act+Ind+Prt+Sg3
-€ punoin punoa+V+Act+Ind+Pst+Sg1
-€ punoi punoa+V+Act+Ind+Pst+Sg3
-€ punoisi punoa+V+Act+Cond+Sg3
-€ punokaa punoa+V+Act+Imprt+Pl2
-€ punonen punoa+V+Act+Pot+Sg1
-€ punotaan punoa+V+Pss+Ind+Prt+Pe4
-€ punottiin punoa+V+Pss+Ind+Pst+Pe4
-€ punottu punoa+V+Pss+PrfPrc+Sg+Nom
-€ punominen punoa+V+Der/minen+Sg+Nom
+* __punoa__: {{punoa+V+Act+InfA+Sg+Lat}} (Eng. bundle?)
+* __punoessa__: {{punoa+V+Act+InfE+Sg+Ine}}
+* __punon__: {{punoa+V+Act+Ind+Prt+Sg1}}
+* __punoo__: {{punoa+V+Act+Ind+Prt+Sg3}}
+* __punoin__: {{punoa+V+Act+Ind+Pst+Sg1}}
+* __punoi__: {{punoa+V+Act+Ind+Pst+Sg3}}
+* __punoisi__: {{punoa+V+Act+Cond+Sg3}}
+* __punokaa__: {{punoa+V+Act+Imprt+Pl2}}
+* __punonen__: {{punoa+V+Act+Pot+Sg1}}
+* __punotaan__: {{punoa+V+Pss+Ind+Prt+Pe4}}
+* __punottiin__: {{punoa+V+Pss+Ind+Pst+Pe4}}
+* __punottu__: {{punoa+V+Pss+PrfPrc+Sg+Nom}}
+* __punominen__: {{punoa+V+Der/minen+Sg+Nom}}
 
 The ö stems have no stem variation:
-€ säilöä säilöä+V+Act+InfA+Sg+Lat store
-€ säilöessä säilöä+V+Act+InfE+Sg+Ine
-€ säilön säilöä+V+Act+Ind+Prt+Sg1
-€ säilöö säilöä+V+Act+Ind+Prt+Sg3
-€ säilöin säilöä+V+Act+Ind+Pst+Sg1
-€ säilöi säilöä+V+Act+Ind+Pst+Sg3
-€ säilöisi säilöä+V+Act+Cond+Sg3
-€ säilökää säilöä+V+Act+Imprt+Pl2
-€ säilönen säilöä+V+Act+Pot+Sg1
-€ säilötään säilöä+V+Pss+Ind+Prt+Pe4
-€ säilöttiin säilöä+V+Pss+Ind+Pst+Pe4
-€ säilötty säilöä+V+Pss+PrfPrc+Sg+Nom
-€ säilöminen säilöä+V+Der/minen+Sg+Nom
+* __säilöä__: {{säilöä+V+Act+InfA+Sg+Lat}} (Eng. store)
+* __säilöessä__: {{säilöä+V+Act+InfE+Sg+Ine}}
+* __säilön__: {{säilöä+V+Act+Ind+Prt+Sg1}}
+* __säilöö__: {{säilöä+V+Act+Ind+Prt+Sg3}}
+* __säilöin__: {{säilöä+V+Act+Ind+Pst+Sg1}}
+* __säilöi__: {{säilöä+V+Act+Ind+Pst+Sg3}}
+* __säilöisi__: {{säilöä+V+Act+Cond+Sg3}}
+* __säilökää__: {{säilöä+V+Act+Imprt+Pl2}}
+* __säilönen__: {{säilöä+V+Act+Pot+Sg1}}
+* __säilötään__: {{säilöä+V+Pss+Ind+Prt+Pe4}}
+* __säilöttiin__: {{säilöä+V+Pss+Ind+Pst+Pe4}}
+* __säilötty__: {{säilöä+V+Pss+PrfPrc+Sg+Nom}}
+* __säilöminen__: {{säilöä+V+Der/minen+Sg+Nom}}
 
 The y stems have no stem variation:
-€ ällistyä ällistyä+V+Act+InfA+Sg+Lat amaze
-€ ällistyessä ällistyä+V+Act+InfE+Sg+Ine
-€ ällistyn ällistyä+V+Act+Ind+Prt+Sg1
-€ ällistyy ällistyä+V+Act+Ind+Prt+Sg3
-€ ällistyin ällistyä+V+Act+Ind+Pst+Sg1
-€ ällistyi ällistyä+V+Act+Ind+Pst+Sg3
-€ ällistyisi ällistyä+V+Act+Cond+Sg3
-€ ällistykää ällistyä+V+Act+Imprt+Pl2
-€ ällistynen ällistyä+V+Act+Pot+Sg1
-€ ällistytään ällistyä+V+Pss+Ind+Prt+Pe4
-€ ällistyttiin ällistyä+V+Pss+Ind+Pst+Pe4
-€ ällistytty ällistyä+V+Pss+PrfPrc+Sg+Nom
+* __ällistyä__: {{ällistyä+V+Act+InfA+Sg+Lat}} (Eng. amaze)
+* __ällistyessä__: {{ällistyä+V+Act+InfE+Sg+Ine}}
+* __ällistyn__: {{ällistyä+V+Act+Ind+Prt+Sg1}}
+* __ällistyy__: {{ällistyä+V+Act+Ind+Prt+Sg3}}
+* __ällistyin__: {{ällistyä+V+Act+Ind+Pst+Sg1}}
+* __ällistyi__: {{ällistyä+V+Act+Ind+Pst+Sg3}}
+* __ällistyisi__: {{ällistyä+V+Act+Cond+Sg3}}
+* __ällistykää__: {{ällistyä+V+Act+Imprt+Pl2}}
+* __ällistynen__: {{ällistyä+V+Act+Pot+Sg1}}
+* __ällistytään__: {{ällistyä+V+Pss+Ind+Prt+Pe4}}
+* __ällistyttiin__: {{ällistyä+V+Pss+Ind+Pst+Pe4}}
+* __ällistytty__: {{ällistyä+V+Pss+PrfPrc+Sg+Nom}}
 
-€ haukkoa haukkoa+V+Act+InfA+Sg+Lat gasp
+* __haukkoa__: {{haukkoa+V+Act+InfA+Sg+Lat}} (Eng. gasp)
 
-€ nuokkua nuokkua+V+Act+InfA+Sg+Lat sleep
+* __nuokkua__: {{nuokkua+V+Act+InfA+Sg+Lat}} (Eng. sleep)
 
-€ kärkkyä kärkkyä+V+Act+InfA+Sg+Lat steal a base
+* __kärkkyä__: {{kärkkyä+V+Act+InfA+Sg+Lat}} (Eng. steal a base)
 
-€ harppoa harppoa+V+Act+InfA+Sg+Lat walk
+* __harppoa__: {{harppoa+V+Act+InfA+Sg+Lat}} (Eng. walk)
 
-€ loppua loppua+V+Act+InfA+Sg+Lat end
+* __loppua__: {{loppua+V+Act+InfA+Sg+Lat}} (Eng. end)
 
-€ leppyä leppyä+V+Act+InfA+Sg+Lat settle
+* __leppyä__: {{leppyä+V+Act+InfA+Sg+Lat}} (Eng. settle)
 
-€ kivettyä kivettyä+V+Act+InfA+Sg+Lat stone
+* __kivettyä__: {{kivettyä+V+Act+InfA+Sg+Lat}} (Eng. stone)
 
-€ viittoa viittoa+V+Act+InfA+Sg+Lat sign
+* __viittoa__: {{viittoa+V+Act+InfA+Sg+Lat}} (Eng. sign)
 
-€ hermottua hermottua+V+Act+InfA+Sg+Lat nerve
+* __hermottua__: {{hermottua+V+Act+InfA+Sg+Lat}} (Eng. nerve)
 
-€ mäikyä mäikyä+V+Act+InfA+Sg+Lat bong
+* __mäikyä__: {{mäikyä+V+Act+InfA+Sg+Lat}} (Eng. bong)
 
-€ takoa takoa+V+Act+InfA+Sg+Lat hammer
+* __takoa__: {{takoa+V+Act+InfA+Sg+Lat}} (Eng. hammer)
 
-€ maukua maukua+V+Act+InfA+Sg+Lat gong
+* __maukua__: {{maukua+V+Act+InfA+Sg+Lat}} (Eng. gong)
 
-€ elpyä elpyä+V+Act+InfA+Sg+Lat rescuscitate
+* __elpyä__: {{elpyä+V+Act+InfA+Sg+Lat}} (Eng. rescuscitate)
 
-€ hiipua hiipua+V+Act+InfA+Sg+Lat fizzle
+* __hiipua__: {{hiipua+V+Act+InfA+Sg+Lat}} (Eng. fizzle)
 
-€ silpoa silpoa+V+Act+InfA+Sg+Lat slash
+* __silpoa__: {{silpoa+V+Act+InfA+Sg+Lat}} (Eng. slash)
 
-€ kietoa kietoa+V+Act+InfA+Sg+Lat entangle
+* __kietoa__: {{kietoa+V+Act+InfA+Sg+Lat}} (Eng. entangle)
 
-€ siliytyä siliytyä+V+Act+InfA+Sg+Lat iron
+* __siliytyä__: {{siliytyä+V+Act+InfA+Sg+Lat}} (Eng. iron)
 
-€ rohtua rohtua+V+Act+InfA+Sg+Lat scar
+* __rohtua__: {{rohtua+V+Act+InfA+Sg+Lat}} (Eng. scar)
 
-€ vinkua vinkua+V+Act+InfA+Sg+Lat squeal
+* __vinkua__: {{vinkua+V+Act+InfA+Sg+Lat}} (Eng. squeal)
 
-€ penkoa penkoa+V+Act+InfA+Sg+Lat dig
+* __penkoa__: {{penkoa+V+Act+InfA+Sg+Lat}} (Eng. dig)
 
-€ tempoa tempoa+V+Act+InfA+Sg+Lat tuck
+* __tempoa__: {{tempoa+V+Act+InfA+Sg+Lat}} (Eng. tuck)
 
-€ ampua ampua+V+Act+InfA+Sg+Lat shoot
+* __ampua__: {{ampua+V+Act+InfA+Sg+Lat}} (Eng. shoot)
 
-€ mieltyä mieltyä+V+Act+InfA+Sg+Lat like
+* __mieltyä__: {{mieltyä+V+Act+InfA+Sg+Lat}} (Eng. like)
 
-€ humaltua humaltua+V+Act+InfA+Sg+Lat intoxicate
+* __humaltua__: {{humaltua+V+Act+InfA+Sg+Lat}} (Eng. intoxicate)
 
-€ vakaantua vakaantua+V+Act+InfA+Sg+Lat stabilise
+* __vakaantua__: {{vakaantua+V+Act+InfA+Sg+Lat}} (Eng. stabilise)
 
-€ tyhjentyä tyhjentyä+V+Act+InfA+Sg+Lat empty
+* __tyhjentyä__: {{tyhjentyä+V+Act+InfA+Sg+Lat}} (Eng. empty)
 
-€ pyörtyä pyörtyä+V+Act+InfA+Sg+Lat faint
+* __pyörtyä__: {{pyörtyä+V+Act+InfA+Sg+Lat}} (Eng. faint)
 
-€ vartoa vartoa+V+Act+InfA+Sg+Lat wait
+* __vartoa__: {{vartoa+V+Act+InfA+Sg+Lat}} (Eng. wait)
 
-€ pusertua pusertua+V+Act+InfA+Sg+Lat squeeze
+* __pusertua__: {{pusertua+V+Act+InfA+Sg+Lat}} (Eng. squeeze)
 
-€ mutristaa mutristaa+V+Act+InfA+Sg+Lat ?
+* __mutristaa__: {{mutristaa+V+Act+InfA+Sg+Lat}} (Eng. ?)
 
-€ kivistää kivistää+V+Act+InfA+Sg+Lat hurt
+* __kivistää__: {{kivistää+V+Act+InfA+Sg+Lat}} (Eng. hurt)
 
-€ räpsyttää räpsyttää+V+Act+InfA+Sg+Lat blink
+* __räpsyttää__: {{räpsyttää+V+Act+InfA+Sg+Lat}} (Eng. blink)
 
-€ vieroittaa vieroittaa+V+Act+InfA+Sg+Lat 
+* __vieroittaa__: {{vieroittaa+V+Act+InfA+Sg+Lat}}
 
 
-€ purkaa purkaa+V+Act+InfA+Sg+Lat tear
+* __purkaa__: {{purkaa+V+Act+InfA+Sg+Lat}} (Eng. tear)
 
-€ kärähtää kärähtää+V+Act+InfA+Sg+Lat fry
+* __kärähtää__: {{kärähtää+V+Act+InfA+Sg+Lat}} (Eng. fry)
 
-€ mojahtaa mojahtaa+V+Act+InfA+Sg+Lat smack
+* __mojahtaa__: {{mojahtaa+V+Act+InfA+Sg+Lat}} (Eng. smack)
 
-€ kyntää kyntää+V+Act+InfA+Sg+Lat plow
+* __kyntää__: {{kyntää+V+Act+InfA+Sg+Lat}} (Eng. plow)
 
-€ sortaa sortaa+V+Act+InfA+Sg+Lat crush
+* __sortaa__: {{sortaa+V+Act+InfA+Sg+Lat}} (Eng. crush)
 
-€ huutaa huutaa+V+Act+InfA+Sg+Lat yell
+* __huutaa__: {{huutaa+V+Act+InfA+Sg+Lat}} (Eng. yell)
 
-€ pyytää pyytää+V+Act+InfA+Sg+Lat aks
+* __pyytää__: {{pyytää+V+Act+InfA+Sg+Lat}} (Eng. aks)
 
-€ sivaltaa sivaltaa+V+Act+InfA+Sg+Lat slash
+* __sivaltaa__: {{sivaltaa+V+Act+InfA+Sg+Lat}} (Eng. slash)
 
-€ viheltää viheltää+V+Act+InfA+Sg+Lat whistle
+* __viheltää__: {{viheltää+V+Act+InfA+Sg+Lat}} (Eng. whistle)
 
-€ hiventää hiventää+V+Act+InfA+Sg+Lat 
+* __hiventää__: {{hiventää+V+Act+InfA+Sg+Lat}}
 
-€ huonontaa huonontaa+V+Act+InfA+Sg+Lat worsen
+* __huonontaa__: {{huonontaa+V+Act+InfA+Sg+Lat}} (Eng. worsen)
 
-€ kuhertaa kuhertaa+V+Act+InfA+Sg+Lat snuggle
+* __kuhertaa__: {{kuhertaa+V+Act+InfA+Sg+Lat}} (Eng. snuggle)
 
-€ näpertää näpertää+V+Act+InfA+Sg+Lat twiddle
+* __näpertää__: {{näpertää+V+Act+InfA+Sg+Lat}} (Eng. twiddle)
 
 
-€ kiitää kiitää+V+Act+InfA+Sg+Lat rush
+* __kiitää__: {{kiitää+V+Act+InfA+Sg+Lat}} (Eng. rush)
 
-€ joutaa joutaa+V+Act+InfA+Sg+Lat 
+* __joutaa__: {{joutaa+V+Act+InfA+Sg+Lat}}
 
-€ yltää yltää+V+Act+InfA+Sg+Lat reach
+* __yltää__: {{yltää+V+Act+InfA+Sg+Lat}} (Eng. reach)
 
-€ entää entää+V+Act+InfA+Sg+Lat 
+* __entää__: {{entää+V+Act+InfA+Sg+Lat}}
 
-€ kasvaa kasvaa+V+Act+InfA+Sg+Lat grow
+* __kasvaa__: {{kasvaa+V+Act+InfA+Sg+Lat}} (Eng. grow)
 
-€ jakaa jakaa+V+Act+InfA+Sg+Lat share
+* __jakaa__: {{jakaa+V+Act+InfA+Sg+Lat}} (Eng. share)
 
-€ tappaa tappaa+V+Act+InfA+Sg+Lat kill
+* __tappaa__: {{tappaa+V+Act+InfA+Sg+Lat}} (Eng. kill)
 
-€ auttaa auttaa+V+Act+InfA+Sg+Lat help
+* __auttaa__: {{auttaa+V+Act+InfA+Sg+Lat}} (Eng. help)
 
-€ sataa sataa+V+Act+InfA+Sg+Lat rain
+* __sataa__: {{sataa+V+Act+InfA+Sg+Lat}} (Eng. rain)
 
-€ kantaa kantaa+V+Act+InfA+Sg+Lat carry
+* __kantaa__: {{kantaa+V+Act+InfA+Sg+Lat}} (Eng. carry)
 
-€ kaataa kaataa+V+Act+InfA+Sg+Lat pour
+* __kaataa__: {{kaataa+V+Act+InfA+Sg+Lat}} (Eng. pour)
 
-€ saartaa saartaa+V+Act+InfA+Sg+Lat surround
+* __saartaa__: {{saartaa+V+Act+InfA+Sg+Lat}} (Eng. surround)
 
-€ kytkeä kytkeä+V+Act+InfA+Sg+Lat switch
+* __kytkeä__: {{kytkeä+V+Act+InfA+Sg+Lat}} (Eng. switch)
 
-€ sotkea sotkea+V+Act+InfA+Sg+Lat mess
+* __sotkea__: {{sotkea+V+Act+InfA+Sg+Lat}} (Eng. mess)
 
-€ pukea pukea+V+Act+InfA+Sg+Lat dress
+* __pukea__: {{pukea+V+Act+InfA+Sg+Lat}} (Eng. dress)
 
-€ rypeä rypeä+V+Act+InfA+Sg+Lat bathe
+* __rypeä__: {{rypeä+V+Act+InfA+Sg+Lat}} (Eng. bathe)
 
-€ päteä päteä+V+Act+InfA+Sg+Lat nitpick
+* __päteä__: {{päteä+V+Act+InfA+Sg+Lat}} (Eng. nitpick)
 
-€ kutea kutea+V+Act+InfA+Sg+Lat breed
+* __kutea__: {{kutea+V+Act+InfA+Sg+Lat}} (Eng. breed)
 
-€ tunkea tunkea+V+Act+InfA+Sg+Lat push
+* __tunkea__: {{tunkea+V+Act+InfA+Sg+Lat}} (Eng. push)
 
-€ polkea polkea+V+Act+InfA+Sg+Lat stomp
+* __polkea__: {{polkea+V+Act+InfA+Sg+Lat}} (Eng. stomp)
 
-€ särkeä särkeä+V+Act+InfA+Sg+Lat break
+* __särkeä__: {{särkeä+V+Act+InfA+Sg+Lat}} (Eng. break)
 
-€ tuntea tuntea+V+Act+InfA+Sg+Lat feel
+* __tuntea__: {{tuntea+V+Act+InfA+Sg+Lat}} (Eng. feel)
 
-€ lähteä lähteä+V+Act+InfA+Sg+Lat go
+* __lähteä__: {{lähteä+V+Act+InfA+Sg+Lat}} (Eng. go)
 
 
-€ kosia kosia+V+Act+InfA+Sg+Lat propose
+* __kosia__: {{kosia+V+Act+InfA+Sg+Lat}} (Eng. propose)
 
-€ ryskiä ryskiä+V+Act+InfA+Sg+Lat crash
+* __ryskiä__: {{ryskiä+V+Act+InfA+Sg+Lat}} (Eng. crash)
 
-€ kukkia kukkia+V+Act+InfA+Sg+Lat bloom
+* __kukkia__: {{kukkia+V+Act+InfA+Sg+Lat}} (Eng. bloom)
 
-€ sörkkiä sörkkiä+V+Act+InfA+Sg+Lat meddle
+* __sörkkiä__: {{sörkkiä+V+Act+InfA+Sg+Lat}} (Eng. meddle)
 
-€ kalppia kalppia+V+Act+InfA+Sg+Lat 
+* __kalppia__: {{kalppia+V+Act+InfA+Sg+Lat}}
 
-€ hyppiä hyppiä+V+Act+InfA+Sg+Lat jump
+* __hyppiä__: {{hyppiä+V+Act+InfA+Sg+Lat}} (Eng. jump)
 
-€ moittia moittia+V+Act+InfA+Sg+Lat 
+* __moittia__: {{moittia+V+Act+InfA+Sg+Lat}}
 
-€ miettiä miettiä+V+Act+InfA+Sg+Lat ponder
+* __miettiä__: {{miettiä+V+Act+InfA+Sg+Lat}} (Eng. ponder)
 
-€ riipiä riipiä+V+Act+InfA+Sg+Lat pull
+* __riipiä__: {{riipiä+V+Act+InfA+Sg+Lat}} (Eng. pull)
 
-€ raapia raapia+V+Act+InfA+Sg+Lat scratch
+* __raapia__: {{raapia+V+Act+InfA+Sg+Lat}} (Eng. scratch)
 
-€ ahnehtia ahnehtia+V+Act+InfA+Sg+Lat greed
+* __ahnehtia__: {{ahnehtia+V+Act+InfA+Sg+Lat}} (Eng. greed)
 
-€ ehtiä ehtiä+V+Act+InfA+Sg+Lat 
+* __ehtiä__: {{ehtiä+V+Act+InfA+Sg+Lat}}
 
-€ mönkiä mönkiä+V+Act+InfA+Sg+Lat crawl
+* __mönkiä__: {{mönkiä+V+Act+InfA+Sg+Lat}} (Eng. crawl)
 
-€ onkia onkia+V+Act+InfA+Sg+Lat fish
+* __onkia__: {{onkia+V+Act+InfA+Sg+Lat}} (Eng. fish)
 
-€ tympiä tympiä+V+Act+InfA+Sg+Lat bore
+* __tympiä__: {{tympiä+V+Act+InfA+Sg+Lat}} (Eng. bore)
 
-€ kontia
+* __kontia__
 
-€ hylkiä hylkiä+V+Act+InfA+Sg+Lat reject
+* __hylkiä__: {{hylkiä+V+Act+InfA+Sg+Lat}} (Eng. reject)
 
-€ kopioida kopioida+V+Act+InfA+Sg+Lat copy
+* __kopioida__: {{kopioida+V+Act+InfA+Sg+Lat}} (Eng. copy)
 
-€ öykkäröidä öykkäröidä+V+Act+InfA+Sg+Lat bully
+* __öykkäröidä__: {{öykkäröidä+V+Act+InfA+Sg+Lat}} (Eng. bully)
 
-€ saada saada+V+Act+InfA+Sg+Lat get
+* __saada__: {{saada+V+Act+InfA+Sg+Lat}} (Eng. get)
 
-€ myydä myydä+V+Act+InfA+Sg+Lat sell
+* __myydä__: {{myydä+V+Act+InfA+Sg+Lat}} (Eng. sell)
 
-€ jäädä jäädä+V+Act+InfA+Sg+Lat stay
+* __jäädä__: {{jäädä+V+Act+InfA+Sg+Lat}} (Eng. stay)
 
-€ viedä viedä+V+Act+InfA+Sg+Lat take
+* __viedä__: {{viedä+V+Act+InfA+Sg+Lat}} (Eng. take)
 
-€ tuoda tuoda+V+Act+InfA+Sg+Lat bring
+* __tuoda__: {{tuoda+V+Act+InfA+Sg+Lat}} (Eng. bring)
 
-€ syödä syödä+V+Act+InfA+Sg+Lat eat
+* __syödä__: {{syödä+V+Act+InfA+Sg+Lat}} (Eng. eat)
 
-€ käydä käydä+V+Act+InfA+Sg+Lat visit
+* __käydä__: {{käydä+V+Act+InfA+Sg+Lat}} (Eng. visit)
 
-€ marista marista+V+Act+InfA+Sg+Lat whine
+* __marista__: {{marista+V+Act+InfA+Sg+Lat}} (Eng. whine)
 
-€ äristä äristä+V+Act+InfA+Sg+Lat arr
+* __äristä__: {{äristä+V+Act+InfA+Sg+Lat}} (Eng. arr)
 
 
-€ häväistä häväistä+V+Act+InfA+Sg+Lat sacrilege
+* __häväistä__: {{häväistä+V+Act+InfA+Sg+Lat}} (Eng. sacrilege)
 
-€ vavista vavista+V+Act+InfA+Sg+Lat shake
+* __vavista__: {{vavista+V+Act+InfA+Sg+Lat}} (Eng. shake)
 
-€ rangaista rangaista+V+Act+InfA+Sg+Lat punish
+* __rangaista__: {{rangaista+V+Act+InfA+Sg+Lat}} (Eng. punish)
 
-€ pierrä pierrä+V+Act+InfA+Sg+Lat fart
+* __pierrä__: {{pierrä+V+Act+InfA+Sg+Lat}} (Eng. fart)
 
-€ mennä mennä+V+Act+InfA+Sg+Lat go
+* __mennä__: {{mennä+V+Act+InfA+Sg+Lat}} (Eng. go)
 
-€ vastailla vastailla+V+Act+InfA+Sg+Lat answer
+* __vastailla__: {{vastailla+V+Act+InfA+Sg+Lat}} (Eng. answer)
 
-€ äksyillä äksyillä+V+Act+InfA+Sg+Lat 
+* __äksyillä__: {{äksyillä+V+Act+InfA+Sg+Lat}}
 
-€ leikellä leikellä+V+Act+InfA+Sg+Lat cut
+* __leikellä__: {{leikellä+V+Act+InfA+Sg+Lat}} (Eng. cut)
 
-€ nakella nakella+V+Act+InfA+Sg+Lat throw
+* __nakella__: {{nakella+V+Act+InfA+Sg+Lat}} (Eng. throw)
 
-€ tapella tapella+V+Act+InfA+Sg+Lat fight
+* __tapella__: {{tapella+V+Act+InfA+Sg+Lat}} (Eng. fight)
 
-€ hypellä hypellä+V+Act+InfA+Sg+Lat jump
+* __hypellä__: {{hypellä+V+Act+InfA+Sg+Lat}} (Eng. jump)
 
-€ sulatella sulatella+V+Act+InfA+Sg+Lat melt
+* __sulatella__: {{sulatella+V+Act+InfA+Sg+Lat}} (Eng. melt)
 
-€ herätellä herätellä+V+Act+InfA+Sg+Lat wake
+* __herätellä__: {{herätellä+V+Act+InfA+Sg+Lat}} (Eng. wake)
 
-€ tipahdella tipahdella+V+Act+InfA+Sg+Lat drop
+* __tipahdella__: {{tipahdella+V+Act+InfA+Sg+Lat}} (Eng. drop)
 
-€ säpsähdellä säpsähdellä+V+Act+InfA+Sg+Lat wake
+* __säpsähdellä__: {{säpsähdellä+V+Act+InfA+Sg+Lat}} (Eng. wake)
 
-€ ommella ommella+V+Act+InfA+Sg+Lat sow
+* __ommella__: {{ommella+V+Act+InfA+Sg+Lat}} (Eng. sow)
 
-€ vaellella vaellella+V+Act+InfA+Sg+Lat wander
+* __vaellella__: {{vaellella+V+Act+InfA+Sg+Lat}} (Eng. wander)
 
-€ kiillellä kiillellä+V+Act+InfA+Sg+Lat sparkle
+* __kiillellä__: {{kiillellä+V+Act+InfA+Sg+Lat}} (Eng. sparkle)
 
-€ komennella komennella+V+Act+InfA+Sg+Lat boss
+* __komennella__: {{komennella+V+Act+InfA+Sg+Lat}} (Eng. boss)
 
-€ käännellä käännellä+V+Act+InfA+Sg+Lat turn
+* __käännellä__: {{käännellä+V+Act+InfA+Sg+Lat}} (Eng. turn)
 
-€ nakerrella nakerrella+V+Act+InfA+Sg+Lat bite
+* __nakerrella__: {{nakerrella+V+Act+InfA+Sg+Lat}} (Eng. bite)
 
-€ kiherrellä kiherrellä+V+Act+InfA+Sg+Lat giggle
+* __kiherrellä__: {{kiherrellä+V+Act+InfA+Sg+Lat}} (Eng. giggle)
 
-€ isännöidä isännöidä+V+Act+InfA+Sg+Lat host
+* __isännöidä__: {{isännöidä+V+Act+InfA+Sg+Lat}} (Eng. host)
 
-€ mellakoida mellakoida+V+Act+InfA+Sg+Lat riot
+* __mellakoida__: {{mellakoida+V+Act+InfA+Sg+Lat}} (Eng. riot)
 
-€ palkita palkita+V+Act+InfA+Sg+Lat reward
+* __palkita__: {{palkita+V+Act+InfA+Sg+Lat}} (Eng. reward)
 
-€ merkitä merkitä+V+Act+InfA+Sg+Lat mark
+* __merkitä__: {{merkitä+V+Act+InfA+Sg+Lat}} (Eng. mark)
 
-€ juosta juosta+V+Act+InfA+Sg+Lat run
+* __juosta__: {{juosta+V+Act+InfA+Sg+Lat}} (Eng. run)
 
-€ piestä piestä+V+Act+InfA+Sg+Lat spank
+* __piestä__: {{piestä+V+Act+InfA+Sg+Lat}} (Eng. spank)
 
-€ nähdä nähdä+V+Act+InfA+Sg+Lat see
+* __nähdä__: {{nähdä+V+Act+InfA+Sg+Lat}} (Eng. see)
 
-€ karheta karheta+V+Act+InfA+Sg+Lat 
+* __karheta__: {{karheta+V+Act+InfA+Sg+Lat}}
 
-€ vähetä vähetä+V+Act+InfA+Sg+Lat lessen
+* __vähetä__: {{vähetä+V+Act+InfA+Sg+Lat}} (Eng. lessen)
 
-€ niuketa niuketa+V+Act+InfA+Sg+Lat tighten
+* __niuketa__: {{niuketa+V+Act+InfA+Sg+Lat}} (Eng. tighten)
 
-€ jyrketä jyrketä+V+Act+InfA+Sg+Lat 
+* __jyrketä__: {{jyrketä+V+Act+InfA+Sg+Lat}}
 
-€ hapata hapata+V+Act+InfA+Sg+Lat ensour
+* __hapata__: {{hapata+V+Act+InfA+Sg+Lat}} (Eng. ensour)
 
-€ supeta supeta+V+Act+InfA+Sg+Lat tighten
+* __supeta__: {{supeta+V+Act+InfA+Sg+Lat}} (Eng. tighten)
 
-€ tylpetä tylpetä+V+Act+InfA+Sg+Lat dull
+* __tylpetä__: {{tylpetä+V+Act+InfA+Sg+Lat}} (Eng. dull)
 
-€ helpota helpota+V+Act+InfA+Sg+Lat ease
+* __helpota__: {{helpota+V+Act+InfA+Sg+Lat}} (Eng. ease)
 
-€ loitota loitota+V+Act+InfA+Sg+Lat distance
+* __loitota__: {{loitota+V+Act+InfA+Sg+Lat}} (Eng. distance)
 
-€ ulota ulota+V+Act+InfA+Sg+Lat outen
+* __ulota__: {{ulota+V+Act+InfA+Sg+Lat}} (Eng. outen)
 
-€ kaveta kaveta+V+Act+InfA+Sg+Lat tighten
+* __kaveta__: {{kaveta+V+Act+InfA+Sg+Lat}} (Eng. tighten)
 
-€ mädätä mädätä+V+Act+InfA+Sg+Lat rot
+* __mädätä__: {{mädätä+V+Act+InfA+Sg+Lat}} (Eng. rot)
 
-€ leudota leudota+V+Act+InfA+Sg+Lat 
+* __leudota__: {{leudota+V+Act+InfA+Sg+Lat}}
 
 FIXME: this is not the back form of pidetä
-€ todeta todeta+V+Act+InfA+Sg+Lat note
+* __todeta__: {{todeta+V+Act+InfA+Sg+Lat}} (Eng. note)
 
-€ pidetä pidetä+V+Act+InfA+Sg+Lat lengthen
+* __pidetä__: {{pidetä+V+Act+InfA+Sg+Lat}} (Eng. lengthen)
 
-€ lämmetä lämmetä+V+Act+InfA+Sg+Lat warm
+* __lämmetä__: {{lämmetä+V+Act+InfA+Sg+Lat}} (Eng. warm)
 
-€ kiinnetä kiinnetä+V+Act+InfA+Sg+Lat firm
+* __kiinnetä__: {{kiinnetä+V+Act+InfA+Sg+Lat}} (Eng. firm)
 
-€ juljeta juljeta+V+Act+InfA+Sg+Lat dare
+* __juljeta__: {{juljeta+V+Act+InfA+Sg+Lat}} (Eng. dare)
 
 iljetä
 
-€ arvata arvata+V+Act+InfA+Sg+Lat guess
+* __arvata__: {{arvata+V+Act+InfA+Sg+Lat}} (Eng. guess)
 
-€ ynnätä ynnätä+V+Act+InfA+Sg+Lat add
+* __ynnätä__: {{ynnätä+V+Act+InfA+Sg+Lat}} (Eng. add)
 
-€ morkata morkata+V+Act+InfA+Sg+Lat blame
+* __morkata__: {{morkata+V+Act+InfA+Sg+Lat}} (Eng. blame)
 
-€ yökätä yökätä+V+Act+InfA+Sg+Lat yuck
+* __yökätä__: {{yökätä+V+Act+InfA+Sg+Lat}} (Eng. yuck)
 
-€ siepata siepata+V+Act+InfA+Sg+Lat kidnap
+* __siepata__: {{siepata+V+Act+InfA+Sg+Lat}} (Eng. kidnap)
 
-€ välpätä välpätä+V+Act+InfA+Sg+Lat 
+* __välpätä__: {{välpätä+V+Act+InfA+Sg+Lat}}
 
-€ luntata luntata+V+Act+InfA+Sg+Lat cheat
+* __luntata__: {{luntata+V+Act+InfA+Sg+Lat}} (Eng. cheat)
 
-€ läntätä läntätä+V+Act+InfA+Sg+Lat splat
+* __läntätä__: {{läntätä+V+Act+InfA+Sg+Lat}} (Eng. splat)
 
-€ kaivata kaivata+V+Act+InfA+Sg+Lat long
+* __kaivata__: {{kaivata+V+Act+InfA+Sg+Lat}} (Eng. long)
 
-€ levätä levätä+V+Act+InfA+Sg+Lat rest
+* __levätä__: {{levätä+V+Act+InfA+Sg+Lat}} (Eng. rest)
 
-€ jahdata jahdata+V+Act+InfA+Sg+Lat hunt
+* __jahdata__: {{jahdata+V+Act+InfA+Sg+Lat}} (Eng. hunt)
 
-€ tähdätä tähdätä+V+Act+InfA+Sg+Lat aim
+* __tähdätä__: {{tähdätä+V+Act+InfA+Sg+Lat}} (Eng. aim)
 
-€ vongata vongata+V+Act+InfA+Sg+Lat beg
+* __vongata__: {{vongata+V+Act+InfA+Sg+Lat}} (Eng. beg)
 
-€ vängätä vängätä+V+Act+InfA+Sg+Lat argue
+* __vängätä__: {{vängätä+V+Act+InfA+Sg+Lat}} (Eng. argue)
 
-€ temmata temmata+V+Act+InfA+Sg+Lat pull
+* __temmata__: {{temmata+V+Act+InfA+Sg+Lat}} (Eng. pull)
 
-€ mullata mullata+V+Act+InfA+Sg+Lat dirt
+* __mullata__: {{mullata+V+Act+InfA+Sg+Lat}} (Eng. dirt)
 
-€ suunnata suunnata+V+Act+InfA+Sg+Lat go
+* __suunnata__: {{suunnata+V+Act+InfA+Sg+Lat}} (Eng. go)
 
-€ rynnätä rynnätä+V+Act+InfA+Sg+Lat rush
+* __rynnätä__: {{rynnätä+V+Act+InfA+Sg+Lat}} (Eng. rush)
 
-€ virrata virrata+V+Act+InfA+Sg+Lat stream
+* __virrata__: {{virrata+V+Act+InfA+Sg+Lat}} (Eng. stream)
 
-€ hyljätä hyljätä+V+Act+InfA+Sg+Lat abandon
+* __hyljätä__: {{hyljätä+V+Act+InfA+Sg+Lat}} (Eng. abandon)
 
-€ digata digata+V+Act+InfA+Sg+Lat dig
+* __digata__: {{digata+V+Act+InfA+Sg+Lat}} (Eng. dig)
 
-€ lobata lobata+V+Act+InfA+Sg+Lat lobby
+* __lobata__: {{lobata+V+Act+InfA+Sg+Lat}} (Eng. lobby)
 
-€ karhuta karhuta+V+Act+InfA+Sg+Lat tax
+* __karhuta__: {{karhuta+V+Act+InfA+Sg+Lat}} (Eng. tax)
 
-€ tähytä tähytä+V+Act+InfA+Sg+Lat periscope
+* __tähytä__: {{tähytä+V+Act+InfA+Sg+Lat}} (Eng. periscope)
 
-€ kaikota kaikota+V+Act+InfA+Sg+Lat disappear
+* __kaikota__: {{kaikota+V+Act+InfA+Sg+Lat}} (Eng. disappear)
 
-€ poiketa poiketa+V+Act+InfA+Sg+Lat 
+* __poiketa__: {{poiketa+V+Act+InfA+Sg+Lat}}
 
-€ keretä keretä+V+Act+InfA+Sg+Lat 
+* __keretä__: {{keretä+V+Act+InfA+Sg+Lat}}
 
-€ koukuta koukuta+V+Act+InfA+Sg+Lat hook
+* __koukuta__: {{koukuta+V+Act+InfA+Sg+Lat}} (Eng. hook)
 
-€ pulputa pulputa+V+Act+InfA+Sg+Lat pulp
+* __pulputa__: {{pulputa+V+Act+InfA+Sg+Lat}} (Eng. pulp)
 
-€ upota upota+V+Act+InfA+Sg+Lat sink
+* __upota__: {{upota+V+Act+InfA+Sg+Lat}} (Eng. sink)
 
-€ lotota lotota+V+Act+InfA+Sg+Lat lotto
+* __lotota__: {{lotota+V+Act+InfA+Sg+Lat}} (Eng. lotto)
 
-€ luututa luututa+V+Act+InfA+Sg+Lat mop
+* __luututa__: {{luututa+V+Act+InfA+Sg+Lat}} (Eng. mop)
 
-€ kivuta kivuta+V+Act+InfA+Sg+Lat climb
+* __kivuta__: {{kivuta+V+Act+InfA+Sg+Lat}} (Eng. climb)
 
-€ korveta korveta+V+Act+InfA+Sg+Lat 
+* __korveta__: {{korveta+V+Act+InfA+Sg+Lat}}
 
-€ kiivetä kiivetä+V+Act+InfA+Sg+Lat climb
+* __kiivetä__: {{kiivetä+V+Act+InfA+Sg+Lat}} (Eng. climb)
 
-€ kirvota kirvota+V+Act+InfA+Sg+Lat loose
+* __kirvota__: {{kirvota+V+Act+InfA+Sg+Lat}} (Eng. loose)
 
-€ kadota kadota+V+Act+InfA+Sg+Lat disappear
+* __kadota__: {{kadota+V+Act+InfA+Sg+Lat}} (Eng. disappear)
 
-€ todeta todeta+V+Act+InfA+Sg+Lat note
+* __todeta__: {{todeta+V+Act+InfA+Sg+Lat}} (Eng. note)
 
-€ vyyhdetä vyyhdetä+V+Act+InfA+Sg+Lat entangle
+* __vyyhdetä__: {{vyyhdetä+V+Act+InfA+Sg+Lat}} (Eng. entangle)
 
-€ liiduta liiduta+V+Act+InfA+Sg+Lat chalk
+* __liiduta__: {{liiduta+V+Act+InfA+Sg+Lat}} (Eng. chalk)
 
-€ tungeta tungeta+V+Act+InfA+Sg+Lat push
+* __tungeta__: {{tungeta+V+Act+InfA+Sg+Lat}} (Eng. push)
 
-€ pingota pingota+V+Act+InfA+Sg+Lat ping
+* __pingota__: {{pingota+V+Act+InfA+Sg+Lat}} (Eng. ping)
 
-€ ängetä ängetä+V+Act+InfA+Sg+Lat push
+* __ängetä__: {{ängetä+V+Act+InfA+Sg+Lat}} (Eng. push)
 
-€ kummuta kummuta+V+Act+InfA+Sg+Lat 
+* __kummuta__: {{kummuta+V+Act+InfA+Sg+Lat}}
 
-€ kammeta kammeta+V+Act+InfA+Sg+Lat lever
+* __kammeta__: {{kammeta+V+Act+InfA+Sg+Lat}} (Eng. lever)
 
-€ sammota sammota+V+Act+InfA+Sg+Lat 
+* __sammota__: {{sammota+V+Act+InfA+Sg+Lat}}
 
-€ innota innota+V+Act+InfA+Sg+Lat eager
+* __innota__: {{innota+V+Act+InfA+Sg+Lat}} (Eng. eager)
 
-€ irrota irrota+V+Act+InfA+Sg+Lat tear
+* __irrota__: {{irrota+V+Act+InfA+Sg+Lat}} (Eng. tear)
 
-€ haljeta haljeta+V+Act+InfA+Sg+Lat split
+* __haljeta__: {{haljeta+V+Act+InfA+Sg+Lat}} (Eng. split)
 
-€ iljetä iljetä+V+Act+InfA+Sg+Lat dare
+* __iljetä__: {{iljetä+V+Act+InfA+Sg+Lat}} (Eng. dare)
 
-€ myrskytä myrskytä+V+Act+InfA+Sg+Lat storm
+* __myrskytä__: {{myrskytä+V+Act+InfA+Sg+Lat}} (Eng. storm)
 
-€ lassota lassota+V+Act+InfA+Sg+Lat lasso
+* __lassota__: {{lassota+V+Act+InfA+Sg+Lat}} (Eng. lasso)
 
-€ selvitä selvitä+V+Act+InfA+Sg+Lat manage
+* __selvitä__: {{selvitä+V+Act+InfA+Sg+Lat}} (Eng. manage)
 
-€ ryöpytä ryöpytä+V+Act+InfA+Sg+Lat flood
+* __ryöpytä__: {{ryöpytä+V+Act+InfA+Sg+Lat}} (Eng. flood)
 
-€ peitota peitota+V+Act+InfA+Sg+Lat beat
+* __peitota__: {{peitota+V+Act+InfA+Sg+Lat}} (Eng. beat)
 
-€ keritä keritä+V+Act+InfA+Sg+Lat 
+* __keritä__: {{keritä+V+Act+InfA+Sg+Lat}}
 
-€ muodota muodota+V+Act+InfA+Sg+Lat form
+* __muodota__: {{muodota+V+Act+InfA+Sg+Lat}} (Eng. form)
 
-€ lämmitä lämmitä+V+Act+InfA+Sg+Lat heat
+* __lämmitä__: {{lämmitä+V+Act+InfA+Sg+Lat}} (Eng. heat)
 
-€ aallota aallota+V+Act+InfA+Sg+Lat wave
+* __aallota__: {{aallota+V+Act+InfA+Sg+Lat}} (Eng. wave)
 
-€ hellitä hellitä+V+Act+InfA+Sg+Lat loose
+* __hellitä__: {{hellitä+V+Act+InfA+Sg+Lat}} (Eng. loose)
 
-€ taitaa taitaa+V+Act+InfA+Sg+Lat can
+* __taitaa__: {{taitaa+V+Act+InfA+Sg+Lat}} (Eng. can)
 
-€ tietää tietää+V+Act+InfA+Sg+Lat know
+* __tietää__: {{tietää+V+Act+InfA+Sg+Lat}} (Eng. know)
 
-€ vipajaa vipajaa+V+Act+InfA+Sg+Lat thump
+* __vipajaa__: {{vipajaa+V+Act+InfA+Sg+Lat}} (Eng. thump)
 
-€ heläjää heläjää+V+Act+InfA+Sg+Lat chime
+* __heläjää__: {{heläjää+V+Act+InfA+Sg+Lat}} (Eng. chime)
 
-€ raikaa raikaa+V+Act+InfA+Sg+Lat baum
+* __raikaa__: {{raikaa+V+Act+InfA+Sg+Lat}} (Eng. baum)
 
-€ ähkää ähkää+V+Act+InfA+Sg+Lat meh
+* __ähkää__: {{ähkää+V+Act+InfA+Sg+Lat}} (Eng. meh)
 
 The verb olla has very peculiar and heteroclitic inflection with lot of
 common short forms in standard spoken Finnish:
-€ olla olla+V+Act+InfA+Sg+Lat be
-€ lienen olla+V+Act+Pot+Sg1
-€ lie olla+V+Act+Pot+ConNeg
-€ olija olla+V+Der/ja+Sg+Nom
+* __olla__: {{olla+V+Act+InfA+Sg+Lat}} (Eng. be)
+* __lienen__: {{olla+V+Act+Pot+Sg1}}
+* __lie__: {{olla+V+Act+Pot+ConNeg}}
+* __olija__: {{olla+V+Der/ja+Sg+Nom}}
 
 
 
+!!Acronym inflection
 Acronyms are inflected using a colon, followed by the inflectional endings,
 which depend on either last letter of the word or inflection class of the
 last word of the abbreviation. The exception to the inflection scheme is the
 singular nominative, which appears without colon.
 Pronouncable abbreviations such as aids, hiv, kela, alko etc. are actually
 counted as regular words with regular inflection patterns.
-c.f. VISK § 169
+c.f. [VISK § 169|http://scripta.kotus.fi/visk/sisallys.php?p=169]
 
 
+!Acronyms ending in numbers inflect like the numbers are pronounced.
 The acronyms ending in digit 1 pronounced as number:
+(subsequent examples are *Number-final acronyms*)
+* __A1__: {{A1+N+Sg+Nom}} (Eng. A1 paper)
+* __A1:een__: {{A1+N+Sg+Ill}}
 
 The acronyms ending in digit 2 pronounced as number
+* __A2__: {{A2+N+Sg+Nom}} (Eng. A2 paper)
+* __A2:een__: {{A2+N+Sg+Ill}}
 
+The acronyms ending in digit 3 pronounced as number
+* __A3__: {{A3+N+Sg+Nom}} (Eng. A3 paper)
+* __A3:een__: {{A1+N+Sg+Ill}}
 
+The acronyms ending in digit 4 pronounced as number
+* __A4__: {{A4+N+Sg+Nom}} (Eng. A4 paper)
+* __A4:ään__: {{A4+N+Sg+Ill}}
 
+The acronyms ending in digit 5 pronounced as number
+* __A5__: {{A5+N+Sg+Nom}} (Eng. A5 paper)
+* __A5:een__: {{A5+N+Sg+Ill}}
 
+The acronyms ending in digit 6 pronounced as number
 
+The acronyms ending in digit 7 pronounced as number
 
+The acronyms ending in digit 8 pronounced as number
 
+The acronyms ending in digit 9 pronounced as number
+
+!Acronyms ending in letters
+Acronyms ending in regular alphabet may be inflected like the last letter is
+pronounced.
 
 acronyms ending in 'a' pronounced as a letter:
-€ A
-€ A:t
-€ A:ssa
+(subsequent examples are *Alphabet-final acronyms*)
+* __A__: {{A+N+Sg+Nom}} (Eng. A)
+* __A:t__: {{A+N+Pl+Nom}}
+* __A:ssa__: {{A+N+Sg+Ine}}
 
 acronyms ending in 'b', 'c', 'd', 'e', 'g', 'p', 'v', 'w' or 't' pronounced
 as a letter:
-€ BBC
-€ BBC:t
-€ BCC:ssä
+* __BBC__: {{BBC+N+Sg+Nom}} (Eng. British Broadcasting Company)
+* __BBC:t__: {{BBC+N+Pl+Nom}}
+* __BCC:ssä__: {{BBC+N+Sg+Ine}}
 
 Acronyms that end in 'j' or 'i' pronoynced as letter:
-€ DPI
-€ DPI:t
-€ DPI:ssä
+* __DPI__
+* __DPI:t__
+* __DPI:ssä__
 
 Acronyms that end in 'h', 'k' or 'o' that is pronounced as a letter:
-€ HK
-€ HK:n
-€ HK:lla
+* __HK__
+* __HK:n__
+* __HK:lla__
 
 Acronyms that end in 'q', or 'u' pronounced as a letter:
-€ EU
-€ EU:t
-€ EU:hun
+* __EU__
+* __EU:t__
+* __EU:hun__
 
 Acronym that ends in 'f', 'l', 'm', 'n', 'r', 's', 'š' or 'x' pronounced as
 a letter:
-€ GRPS
-€ GPRS:llä
+* __GRPS__
+* __GPRS:llä__
 
 Acronym that ends in 'y' pronounced as letter
-€ EY
-€ EY:hyn
+* __EY__
+* __EY:hyn__
 
 Acronyms that end in 'z' pronounced as letter
-€ Z
-€ Z:t
+* __Z__
+* __Z:t__
 
 Acronyms that end in 'ä' pronounced as letter
-€ Ä
-€ Ä:t
+* __Ä__
+* __Ä:t__
 
 Acronyms that end in 'ö' pronounced as letter
-€ Ö
-€ Ö:t
+* __Ö__
+* __Ö:t__
 
 
 
@@ -4838,190 +4858,190 @@ VISK § 300
 The superlative derivation is formed by *in* suffix, which creates a new
 adjective baseform. This baseform is handled separately to avoid double
 superlatives.
-€ rumin
+* __rumin__
 
 
-€ tyhmin
+* __tyhmin__
 
 The comparative derivation is formed by *mpi* suffix, which creates a new
 adjective baseform. This adjective is handled separately
 to avoid double comparative forms.
-€ rumempi
+* __rumempi__
 
-€ tyhmempi
+* __tyhmempi__
 
 
 This inflectional part attached to adjective comparative stems to avoid
 circularity in comparative derivations:
-€ nopeampi
+* __nopeampi__
 $ nopeammampi
 $ nopeammammampi
 
-€ tyhmempi
+* __tyhmempi__
 
 This inflectional part is attached to adjective superlative stems to avoid
 circularity in superlative  derivations:
-€ nopein
+* __nopein__
 $ nopeimmin
 $ nopeimmimmin
 
-€ tyhmin
+* __tyhmin__
 $ tyhmimmin
 
 
 
 
-€ ruma
+* __ruma__
 
-€ tyhmä
+* __tyhmä__
 
-€ rumat
+* __rumat__
 
-€ tyhmät
+* __tyhmät__
 
-€ rumako
-€ ruman
-€ rumatta
+* __rumako__
+* __ruman__
+* __rumatta__
 
-€ tyhmäkö
-€ tyhmän
-€ tyhmättä
+* __tyhmäkö__
+* __tyhmän__
+* __tyhmättä__
 
-€ rumana
-€ rumani
+* __rumana__
+* __rumani__
 
-€ tyhmänä
-€ tyhmäni
+* __tyhmänä__
+* __tyhmäni__
 
-€ heikoitta
-€ heikoilta
+* __heikoitta__
+* __heikoilta__
 
-€ jäykittä
-€ jäykiltä
+* __jäykittä__
+* __jäykiltä__
 
-€ jäykkinä
-€ jäykkine
+* __jäykkinä__
+* __jäykkine__
 
-€ heikkoina
-€ heikkoine
+* __heikkoina__
+* __heikkoine__
 
-€ tarkka
+* __tarkka__
 $ tarkkaaan
 
-€ tyhmää
+* __tyhmää__
 $ tyhmäään
 
-€ jaloa
-€ jaloaan
+* __jaloa__
+* __jaloaan__
 
-€ hölöä
-€ hölöään
+* __hölöä__
+* __hölöään__
 
-€ vapaata
+* __vapaata__
 
-€ pientä
+* __pientä__
 
-€ peeaahan
+* __peeaahan__
 
-€ gayhin
-
-
-€ muuhun
-
-€ gayhyn
-
-€ syypäähän
+* __gayhin__
 
 
-€ rumia
+* __muuhun__
 
-€ tyhmiä
+* __gayhyn__
 
-€ tanakoiden
+* __syypäähän__
 
-€ hömpäköiden
 
-€ rumien
+* __rumia__
 
-€ tyhmien
+* __tyhmiä__
 
-€ pahoihin
+* __tanakoiden__
 
-€ hölmöihin
+* __hömpäköiden__
 
-€ punaisiin
+* __rumien__
 
-€ sinisiin
+* __tyhmien__
 
-€ rumain
+* __pahoihin__
 
-€ tyhmäin
+* __hölmöihin__
 
-€ korkeisiin
+* __punaisiin__
 
-€ järeisiin
+* __sinisiin__
 
-€ korkeita
+* __rumain__
 
-€ järeitä
+* __tyhmäin__
 
-€ nopeitten
+* __korkeisiin__
 
-€ järeitten
+* __järeisiin__
 
-€ vahvoja
+* __korkeita__
 
-€ hölmöjä
+* __järeitä__
 
-€ vahvojen
+* __nopeitten__
 
-€ hölmöjen
+* __järeitten__
 
-€ vapaaseen
+* __vahvoja__
 
-€ työlääseen
+* __hölmöjä__
 
-€ raskasten
+* __vahvojen__
+
+* __hölmöjen__
+
+* __vapaaseen__
+
+* __työlääseen__
+
+* __raskasten__
 
 työlästen
 
-€ rumaan
+* __rumaan__
 
 
-€ suureen
+* __suureen__
 
-€ pieneen
+* __pieneen__
 
-€ tuhtiin
+* __tuhtiin__
 
-€ rehtiin
+* __rehtiin__
 
-€ huonoon
+* __huonoon__
 
-€ fiksuun
+* __fiksuun__
 
-€ häijyyn
+* __häijyyn__
 
-€ tyhmään
+* __tyhmään__
 
-€ hölmöön
+* __hölmöön__
 
 
-€ tyhmäni
+* __tyhmäni__
 
-€ rumani
+* __rumani__
 
-€ kieroaan
+* __kieroaan__
 
-€ hölmöään
+* __hölmöään__
 
-€ rumalleen
+* __rumalleen__
 
-€ tyhmälleen
+* __tyhmälleen__
 
-€ rumahan
+* __rumahan__
 
-€ tyhmähän
+* __tyhmähän__
 
 
 
@@ -5046,21 +5066,21 @@ Most adverbs are morphologically either sti-derivations of adjectives or
 some specific form of an existing or archaic noun, and they have limited
 inflection in form of possessives and clitics carried over.
 
-€ edessäni
+* __edessäni__
 
-€ takanani
+* __takanani__
 
-€ takanaan
+* __takanaan__
 
-€ jalkeilleen
+* __jalkeilleen__
 
-€ keskelleen
+* __keskelleen__
 
-€ edessään
+* __edessään__
 
-€ nopeastihan
+* __nopeastihan__
 
-€ tyhmästihän
+* __tyhmästihän__
 
 
 
@@ -5077,124 +5097,124 @@ inflection in form of possessives and clitics carried over.
 Digit strings inflect with colons, lot like abbreviations.
 
 The digit strings ending in digit 1 pronounced as number
-€ 1
-€ 1:t
-€ 1:ssä
+* __1__
+* __1:t__
+* __1:ssä__
 
 The digit strings ending in digit 2 pronounced as number
-€ 2
-€ 2:t
-€ 2:ssa
+* __2__
+* __2:t__
+* __2:ssa__
 
 The digit strings ending in digit 3 pronounced as number
-€ 3
-€ 3:t
-€ 3:ssa
+* __3__
+* __3:t__
+* __3:ssa__
 
 The digit strings ending in digit 4 pronounced as number
-€ 4
-€ 4:t
-€ 4:ssä
+* __4__
+* __4:t__
+* __4:ssä__
 
 The digit strings ending in digit 5 pronounced as number
-€ 5
-€ 5:t
-€ 5:ssä
+* __5__
+* __5:t__
+* __5:ssä__
 
 The digit strings ending in digit 6 pronounced as number
-€ 6
-€ 6:t
-€ 6:ss
+* __6__
+* __6:t__
+* __6:ss__
 
 The digit strings ending in digit 7 pronounced as number
-€ 7
-€ 7:t
-€ 7:ssä
+* __7__
+* __7:t__
+* __7:ssä__
 
 The digit strings ending in digit 8 pronounced as number
-€ 8
-€ 8:t
-€ 8:ssa
+* __8__
+* __8:t__
+* __8:ssa__
 
 
 The digit strings ending in digit 9 pronounced as number
-€ 9
-€ 9:t
-€ 9:ssä
+* __9__
+* __9:t__
+* __9:ssä__
 
 The digit strings ending in digit 0 pronounced as number
-€ 0
-€ 0:t
-€ 0:aa
+* __0__
+* __0:t__
+* __0:aa__
 
 The digit string ending in 0 pronounced as tens
-€ 10
-€ 10:t
-€ 10:tä
+* __10__
+* __10:t__
+* __10:tä__
 
 The digit string ending in 00 pronounced as hundreds
-€ 100
-€ 100:t
-€ 100:aa
+* __100__
+* __100:t__
+* __100:aa__
 
 The digit string ending in 000 pronounced as thousands
-€ 1000
-€ 1000:t
-€ 1000:ta
+* __1000__
+* __1000:t__
+* __1000:ta__
 
 The digit string ending in 0's pronounced as millions
-€ 1000000
-€ 1000000:t
-€ 1000000:aa
+* __1000000__
+* __1000000:t__
+* __1000000:aa__
 
 The digit string ending in 0's pronounced as milliards
-€ 1000000000
-€ 1000000000:t
-€ 1000000000:a
+* __1000000000__
+* __1000000000:t__
+* __1000000000:a__
 
 The digit string ending in 1. pronounced as first
-€ 1.
-€ 1:nen
-€ 1:stä
+* __1.__
+* __1:nen__
+* __1:stä__
 
 The digit string ending in 2. pronounced as second
-€ 2.
-€ 2:nen
-€ 2:sta
+* __2.__
+* __2:nen__
+* __2:sta__
 
 The digit string ending in 3, 6, 8, 00 or 2 pronounced as ordinal
-€ 3.
-€ 3:s
-€ 3:tta
+* __3.__
+* __3:s__
+* __3:tta__
 
 The digit string ending in 4, 5, 7, 9, 0, or 1. pronounced as ordinal
-€ 4.
-€ 4:s
-€ 4:ttä
+* __4.__
+* __4:s__
+* __4:ttä__
 
 The roman digit string ending in II, III, VI, VIII, C, L or M
-€ II
-€ II:ta
+* __II__
+* __II:ta__
 
 The roman digit string ending in I, IV, V, VII, IX, X or 
-€ I
-€ I:tä
+* __I__
+* __I:tä__
 
-€ 1:nsä
+* __1:nsä__
 
-€ 2:nsa
+* __2:nsa__
 
-€ 3:aan
+* __3:aan__
 
-€ 2:kseen
+* __2:kseen__
 
-€ 1:kseen
+* __1:kseen__
 
-€ 5:ttään
+* __5:ttään__
 
-€ 2:han
+* __2:han__
 
-€ 4:hän
+* __4:hän__
 
 
 
