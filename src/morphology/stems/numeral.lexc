@@ -11,18 +11,18 @@
 LEXICON NUM
 !! Numerals have been split in three sections, the compounding parts
 !! of cardinals and ordinals, and the non-compounding ones:
-!! € kaksikymmentäkolmetuhatta
-!! € kahdessadaseneljäs
-!! € viitisen
+!!€ kaksikymmentäkolmetuhatta
+!!€ kahdessadaseneljäs
+!!€ viitisen
 0    NUM_CARD_ALL    ;
 0    NUM_ORD_ALL ;
 0    NUM_OTHERS  ;
 
 LEXICON NUM_CARD_ALL
 !! The compounding parts of cardinals are the number multiplier words.
-!! € yksi
-!! € viidelle
-!! € tuhatta
+!!€ yksi
+!!€ viidelle
+!!€ tuhatta
 yksi+Num+Card:y             NUM_YKSI  ;
 kaksi+Num+Card:ka           NUM_KAKSI ;
 kolme+Num+Card:kolm         NUM_KOLME ;
@@ -85,8 +85,8 @@ seitsämän+Use/Sub+Num+Card:seitsäm  NUM_YHDEKSÄN    ;
 
 LEXICON NUM_CARD_SUFFIX
 !! The suffixes only appear after cardinal multipliers
-!! € viisikymmentä
-!! € neljäsataatuhatta
+!!€ viisikymmentä
+!!€ neljäsataatuhatta
 kymmentä    #   ;
 sataa       #   ;
 tuhatta     #   ;
@@ -148,9 +148,9 @@ kymmenettä      #    ;
 
 LEXICON NUM_ORD_ALL
 !! The compounding parts of ordinals are the number multiplier words.
-!! € neljäs
-!! € viidennelle
-!! € tuhannetta
+!!€ neljäs
+!!€ viidennelle
+!!€ tuhannetta
 ensimmäinen+Num+Ord:ensimmäi    NUM_ENSIMMÄINEN ;
 yhdes+Num+Ord:yhde              NUM_NELJÄS ;
 toinen+Num+Ord:toi              NUM_TOINEN ;
@@ -212,8 +212,8 @@ piljardis+Num+Ord:piljardi  NUM_KOLMAS   ;
 
 LEXICON NUM_ORD_SUFFIX
 !! The suffixes only appear after cardinal multipliers
-!! € viideskymmenes
-!! € neljässadastuhannes
+!!€ viideskymmenes
+!!€ neljässadastuhannes
 kymmenes # ;
 sadas # ;
 tuhannes # ;
@@ -283,8 +283,8 @@ kymmenettä # ;
 LEXICON NUM_OTHERS
 !! There is a set of numbers or corresponding expressions that work like them,
 !! but are not basic cardinals or ordinals:
-!! € viitisenkymmentä
-!! € puolikymmentä
+!!€ viitisenkymmentä
+!!€ puolikymmentä
 yksisen+Num:yksisen#  NUM_CARD_SUFFIX   ;
 kaksisen+Num:kaksisen#    NUM_CARD_SUFFIX   ;
 yhtisen+Num:yhtisen#  NUM_CARD_SUFFIX   ;
@@ -352,16 +352,16 @@ puolisataa+Num+Sg+Tra:puoleksi#sadaksi  NUM_FRONT_CLIT_OPT ;
 
 
 LEXICON NUM_YKSI
-!! € yksi
-!! € yhteen
-!! € yhtenä
-!! € yhdessä
-!! € yhtä
-!! € yksiä
-!! € yksien
-!! € yksiin
-!! € yksinä
-!! € yksissä
+!!€ yksi
+!!€ yhteen
+!!€ yhtenä
+!!€ yhdessä
+!!€ yhtä
+!!€ yksiä
+!!€ yksien
+!!€ yksiin
+!!€ yksinä
+!!€ yksissä
 0:ksi   NUM_FRONT_NOMINATIVE ;
 0:hte   NUM_FRONT_ILLATIVE_EN    ;
 0:hte   NUM_FRONT_STRONG_SINGULARS   ;
@@ -373,16 +373,16 @@ LEXICON NUM_YKSI
 0:ks    NUM_FRONT_PLURALS ;
 
 LEXICON NUM_KAKSI
-!! € kaksi
-!! € kahteen
-!! € kahtena
-!! € kahdessa
-!! € kahta
-!! € kaksia
-!! € kaksien
-!! € kaksiin
-!! € kaksina
-!! € kaksissa
+!!€ kaksi
+!!€ kahteen
+!!€ kahtena
+!!€ kahdessa
+!!€ kahta
+!!€ kaksia
+!!€ kaksien
+!!€ kaksiin
+!!€ kaksina
+!!€ kaksissa
 0:ksi   NUM_BACK_NOMINATIVE ;
 0:hte   NUM_BACK_ILLATIVE_EN    ;
 0:hte   NUM_BACK_STRONG_SINGULARS   ;
@@ -394,16 +394,16 @@ LEXICON NUM_KAKSI
 0:ks    NUM_BACK_PLURALS ;
 
 LEXICON NUM_KOLME
-!! € kolme
-!! € kolmeen
-!! € kolmena
-!! € kolmessa
-!! € kolmea
-!! € kolmia
-!! € kolmien
-!! € kolmiin
-!! € kolmina
-!! € kolmissa
+!!€ kolme
+!!€ kolmeen
+!!€ kolmena
+!!€ kolmessa
+!!€ kolmea
+!!€ kolmia
+!!€ kolmien
+!!€ kolmiin
+!!€ kolmina
+!!€ kolmissa
 0:e     NUM_BACK_NOMINATIVE  ;
 0:e     NUM_BACK_ILLATIVE_EN    ;
 0:e     NUM_BACK_SINGULARS  ;
@@ -414,17 +414,17 @@ LEXICON NUM_KOLME
 0       NUM_BACK_PLURALS ; 
 
 LEXICON NUM_NELJÄ
-!! € neljä
-!! € neljää
-!! € neljään
-!! € neljäin
-!! € neljänä
-!! € neljässä
-!! € neljiä
-!! € neljien
-!! € neljiin
-!! € neljinä
-!! € neljissä
+!!€ neljä
+!!€ neljää
+!!€ neljään
+!!€ neljäin
+!!€ neljänä
+!!€ neljässä
+!!€ neljiä
+!!€ neljien
+!!€ neljiin
+!!€ neljinä
+!!€ neljissä
 0:ä  NUM_FRONT_NOMINATIVE ;
 0:ä  NUM_FRONT_PARTITIVE_Ä    ;
 0:ä  NUM_FRONT_ILLATIVE_ÄN    ;
@@ -436,17 +436,17 @@ LEXICON NUM_NELJÄ
 0    NUM_FRONT_PLURALS ;
 
 LEXICON NUM_VIISI
-!! € viisi
-!! € viiteen
-!! € viitenä
-!! € viidessä
-!! € viisinä
-!! € viisissä
-!! € viittä
-!! € viitten
-!! € viisiä
-!! € viisien
-!! € viisiin
+!!€ viisi
+!!€ viiteen
+!!€ viitenä
+!!€ viidessä
+!!€ viisinä
+!!€ viisissä
+!!€ viittä
+!!€ viitten
+!!€ viisiä
+!!€ viisien
+!!€ viisiin
 0:si    NUM_FRONT_NOMINATIVE ;
 0:te    NUM_FRONT_ILLATIVE_EN    ;
 0:te    NUM_FRONT_STRONG_SINGULARS   ;
@@ -459,16 +459,16 @@ LEXICON NUM_VIISI
 0:s     NUM_FRONT_ILLATIVE_IIN   ;
 
 LEXICON NUM_KUUSI
-!! € kuusi
-!! € kuutena
-!! € kuudessa
-!! € kuusina
-!! € kuusissa
-!! € kuutta
-!! € kuutten
-!! € kuusia
-!! € kuusien
-!! € kuusiin
+!!€ kuusi
+!!€ kuutena
+!!€ kuudessa
+!!€ kuusina
+!!€ kuusissa
+!!€ kuutta
+!!€ kuutten
+!!€ kuusia
+!!€ kuusien
+!!€ kuusiin
 0:si    NUM_BACK_NOMINATIVE ;
 0:te    NUM_BACK_ILLATIVE_EN    ;
 0:te    NUM_BACK_STRONG_SINGULARS   ;
@@ -482,17 +482,17 @@ LEXICON NUM_KUUSI
 
 
 LEXICON NUM_KAHDEKSAN
-!! € kahdeksan
-!! € kahdeksaa
-!! € kahdeksaan
-!! € kahdeksain
-!! € kahdeksassa
-!! € kahdeksana
-!! € kahdeksia
-!! € kahdeksien
-!! € kahdeksiin
-!! € kahdeksissa
-!! € kahdeksina
+!!€ kahdeksan
+!!€ kahdeksaa
+!!€ kahdeksaan
+!!€ kahdeksain
+!!€ kahdeksassa
+!!€ kahdeksana
+!!€ kahdeksia
+!!€ kahdeksien
+!!€ kahdeksiin
+!!€ kahdeksissa
+!!€ kahdeksina
 0:an    NUM_BACK_NOMINATIVE  ;
 0:a     NUM_BACK_PARTITIVE_A    ;
 0:a     NUM_BACK_ILLATIVE_AN    ;
@@ -504,16 +504,16 @@ LEXICON NUM_KAHDEKSAN
 0       NUM_BACK_PLURALS ;
 
 LEXICON NUM_YHDEKSÄN
-!! € yhdeksän
-!! € yhdeksää
-!! € yhdeksään
-!! € yhdeksäin
-!! € yhdeksässä
-!! € yhdeksänä
-!! € yhdeksiä
-!! € yhdeksien
-!! € yhdeksissä
-!! € yhdeksinä
+!!€ yhdeksän
+!!€ yhdeksää
+!!€ yhdeksään
+!!€ yhdeksäin
+!!€ yhdeksässä
+!!€ yhdeksänä
+!!€ yhdeksiä
+!!€ yhdeksien
+!!€ yhdeksissä
+!!€ yhdeksinä
 0:än    NUM_FRONT_NOMINATIVE  ;
 0:ä     NUM_FRONT_PARTITIVE_Ä    ;
 0:ä     NUM_FRONT_ILLATIVE_ÄN    ;
@@ -525,16 +525,16 @@ LEXICON NUM_YHDEKSÄN
 0       NUM_FRONT_PLURALS ;
 
 LEXICON NUM_KYMMENEN
-!! € kymmenen
-!! € kymmeneen
-!! € kymmenenä
-!! € kymmenessä
-!! € kymmentä
-!! € kymmenten
-!! € kymmenien
-!! € kymmeniin
-!! € kymmenissä
-!! € kymmeninä
+!!€ kymmenen
+!!€ kymmeneen
+!!€ kymmenenä
+!!€ kymmenessä
+!!€ kymmentä
+!!€ kymmenten
+!!€ kymmenien
+!!€ kymmeniin
+!!€ kymmenissä
+!!€ kymmeninä
 0:en    NUM_FRONT_NOMINATIVE ;
 0:e     NUM_FRONT_ILLATIVE_EN    ;
 0:e     NUM_FRONT_SINGULARS   ;
@@ -546,15 +546,15 @@ LEXICON NUM_KYMMENEN
 0       NUM_FRONT_PLURALS ;
 
 LEXICON NUM_SATA
-!! € sata
-!! € satana
-!! € sadassa
-!! € sataan
-!! € sataa
-!! € satojen
-!! € satoihin
-!! € sadoissa
-!! € satoina
+!!€ sata
+!!€ satana
+!!€ sadassa
+!!€ sataan
+!!€ sataa
+!!€ satojen
+!!€ satoihin
+!!€ sadoissa
+!!€ satoina
 0:ta    NUM_BACK_NOMINATIVE ;
 0:da    NUM_BACK_WEAK_SINGULARS ;
 0:ta    NUM_BACK_STRONG_SINGULARS   ;
@@ -568,17 +568,17 @@ LEXICON NUM_SATA
 0:to    NUM_BACK_ILLATIVE_IHIN  ;
 
 LEXICON NUM_TUHAT
-!! € tuhat
-!! € tuhanteen
-!! € tuhantena
-!! € tuhannessa
-!! € tuhansien
-!! € tuhatta
-!! € tuhansia
-!! € tuhansien
-!! € tuhansiin
-!! € tuhansina
-!! € tuhansissa
+!!€ tuhat
+!!€ tuhanteen
+!!€ tuhantena
+!!€ tuhannessa
+!!€ tuhansien
+!!€ tuhatta
+!!€ tuhansia
+!!€ tuhansien
+!!€ tuhansiin
+!!€ tuhansina
+!!€ tuhansissa
 0:s     NUM_BACK_NOMINATIVE ;
 0:nte   NUM_BACK_ILLATIVE_EN    ;
 0:nte   NUM_BACK_STRONG_SINGULARS   ;
@@ -591,16 +591,16 @@ LEXICON NUM_TUHAT
 0:ns    NUM_BACK_PLURALS ;
 
 LEXICON NUM_MILJOONA
-!! € miljoona
-!! € miljoonana
-!! € miljoonassa
-!! € miljoonaa
-!! € miljoonaan
-!! € miljoonia
-!! € miljoonien
-!! € miljooniin
-!! € miljoonissa
-!! € miljoonina
+!!€ miljoona
+!!€ miljoonana
+!!€ miljoonassa
+!!€ miljoonaa
+!!€ miljoonaan
+!!€ miljoonia
+!!€ miljoonien
+!!€ miljooniin
+!!€ miljoonissa
+!!€ miljoonina
 0:a     NUM_BACK_NOMINATIVE    ;
 0:a     NUM_BACK_SINGULARS    ;
 0       NUM_BACK_PLURALS  ;
@@ -613,16 +613,16 @@ LEXICON NUM_MILJOONA
 
 
 LEXICON NUM_MILJARDI
-!! € miljardi
-!! € miljardina
-!! € miljardissa
-!! € miljardeina
-!! € miljardeissa
-!! € miljardia
-!! € miljardiin
-!! € miljardeja
-!! € miljardien
-!! € miljardeihin
+!!€ miljardi
+!!€ miljardina
+!!€ miljardissa
+!!€ miljardeina
+!!€ miljardeissa
+!!€ miljardia
+!!€ miljardiin
+!!€ miljardeja
+!!€ miljardien
+!!€ miljardeihin
 0:i NUM_BACK_NOMINATIVE ;
 0:i NUM_BACK_SINGULARS   ;
 0:e NUM_BACK_PLURALS ;
@@ -634,7 +634,7 @@ LEXICON NUM_MILJARDI
 
 
 LEXICON NUM_GOOGOL
-!! € Googol
+!!€ Googol
 0   NUM_BACK_NOMINATIVE ;
 0:i NUM_BACK_SINGULARS   ;
 0:e NUM_BACK_PLURALS ;
@@ -645,16 +645,16 @@ LEXICON NUM_GOOGOL
 0   NUM_BACK_GENITIVE_IEN   ;
 
 LEXICON NUM_PARI
-!! € pari
-!! € parina
-!! € parissa
-!! € pareissa
-!! € pareina
-!! € paria
-!! € pareja
-!! € parien
-!! € pareihin
-!! € pariin
+!!€ pari
+!!€ parina
+!!€ parissa
+!!€ pareissa
+!!€ pareina
+!!€ paria
+!!€ pareja
+!!€ parien
+!!€ pareihin
+!!€ pariin
 0:i     NUM_BACK_NOMINATIVE    ;
 0:i     NUM_BACK_SINGULARS    ;
 0:e     NUM_BACK_PLURALS   ;
@@ -666,15 +666,15 @@ LEXICON NUM_PARI
 
 
 LEXICON NUM_ENSIMMÄINEN
-!! € ensimmäinen
-!! € ensimmäisenä
-!! € ensimmäisessä
-!! € ensimmäistä
-!! € ensimmäisten
-!! € ensimmäisiä
-!! € ensimmäisiin
-!! € ensimmäisinä
-!! € ensimmäisissä
+!!€ ensimmäinen
+!!€ ensimmäisenä
+!!€ ensimmäisessä
+!!€ ensimmäistä
+!!€ ensimmäisten
+!!€ ensimmäisiä
+!!€ ensimmäisiin
+!!€ ensimmäisinä
+!!€ ensimmäisissä
 0:nen   NUM_FRONT_NOMINATIVE ;
 0:se    NUM_FRONT_ILLATIVE_EN    ;
 0:se    NUM_FRONT_SINGULARS   ;
@@ -687,17 +687,17 @@ LEXICON NUM_ENSIMMÄINEN
 +Der/s:s    N_COMPOUND     ;
 
 LEXICON NUM_TOINEN
-!! € toinen
-!! € toiseen
-!! € toista
-!! € toisten
-!! € toisien
-!! € toisia
-!! € toisiin
-!! € toisena
-!! € toisessa
-!! € toisissa
-!! € toisina
+!!€ toinen
+!!€ toiseen
+!!€ toista
+!!€ toisten
+!!€ toisien
+!!€ toisia
+!!€ toisiin
+!!€ toisena
+!!€ toisessa
+!!€ toisissa
+!!€ toisina
 0:nen   NUM_BACK_NOMINATIVE ;
 0:se    NUM_BACK_ILLATIVE_EN    ;
 0:se    NUM_BACK_SINGULARS   ;
@@ -710,15 +710,15 @@ LEXICON NUM_TOINEN
 +Der/s:s    N_COMPOUND     ;
 
 LEXICON NUM_KOLMAS
-!! € kolmas
-!! € kolmantena
-!! € kolmannessa
-!! € kolmanteen
-!! € kolmatta
-!! € kolmansia
-!! € kolmansien
-!! € kolmansissa
-!! € kolmansina
+!!€ kolmas
+!!€ kolmantena
+!!€ kolmannessa
+!!€ kolmanteen
+!!€ kolmatta
+!!€ kolmansia
+!!€ kolmansien
+!!€ kolmansissa
+!!€ kolmansina
 0:s     NUM_BACK_NOMINATIVE ;
 0:nte   NUM_BACK_ILLATIVE_EN    ;
 0:nte   NUM_BACK_STRONG_SINGULARS   ;
@@ -730,16 +730,16 @@ LEXICON NUM_KOLMAS
 0:ns    NUM_BACK_PLURALS ;
 
 LEXICON NUM_NELJÄS
-!! € neljäs
-!! € neljänteen
-!! € neljäntenä
-!! € neljännessä
-!! € neljättä
-!! € neljänsiä
-!! € neljänsien
-!! € neljänsiin
-!! € neljänsissä
-!! € neljänsinä
+!!€ neljäs
+!!€ neljänteen
+!!€ neljäntenä
+!!€ neljännessä
+!!€ neljättä
+!!€ neljänsiä
+!!€ neljänsien
+!!€ neljänsiin
+!!€ neljänsissä
+!!€ neljänsinä
 0:s     NUM_FRONT_NOMINATIVE ;
 0:nte   NUM_FRONT_ILLATIVE_EN    ;
 0:nte   NUM_FRONT_STRONG_SINGULARS   ;

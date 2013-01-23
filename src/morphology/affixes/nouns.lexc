@@ -2,24 +2,31 @@
 
 ! nominatives
 LEXICON N_BACK_NOMINATIVE
-!! € talo
+!!€gt-norm: nominatives
+!!€ talo talo+N+Sg+Nom a house
+!!€ taloko talo+N+Sg+Nom+Qst
+!!$ talopä talo+N+Sg+Nom+Foc/pa
+!!¥ talo+N+Sg+Nom+Foc/han: [talohan, ~talohän]
 +Sg+Nom:0   N_BACK_CLIT_OPT  ;
 
 LEXICON N_FRONT_NOMINATIVE
-!! € pöly
+!!€ pöly pöly+N+Sg+Nom dust
+!!$ pölyko pöly+N+Sg+Nom+Qst
 +Sg+Nom:0   N_FRONT_CLIT_OPT  ;
 
 LEXICON N_BACK_PLNOM_CLIT
-!! € sakset
+!!€not-finished: The test below this line are not done yet
+!!€ sakset sakset+N+Pl+Nom scissors
+!!¥ sakset+N+Pl+Nom+Foc/pa: [saksetpa, ~saksetpä]
 +Pl+Nom:%>t     N_BACK_CLIT_OPT  ;
 
 LEXICON N_FRONT_PLNOM_CLIT
-!! € häät
+!!€ häät häät+N+Pl+Non # wedding
 +Pl+Nom:%>t     N_FRONT_CLIT_OPT  ;
 
 ! basic cases
 LEXICON N_BACK_WEAK_SINGULARS
-!! € padassa
+!!€ padassa
 0    N_BACK_PLNOM_CLIT   ;
 +Sg+Gen:%>n     N_BACK_CLIT_OPT   ;
 +Sg+Abe:%>tta   N_BACK_POSS_AN_OPT      ;
@@ -33,7 +40,7 @@ LEXICON N_BACK_WEAK_SINGULARS
 +Sg+Tra:%>ksi   N_BACK_CLIT_OPT     ;
 
 LEXICON N_FRONT_WEAK_SINGULARS
-!! € näyssä
+!!€ näyssä
 0    N_FRONT_PLNOM_CLIT   ;
 +Sg+Gen:%>n     N_FRONT_CLIT_OPT   ;
 +Sg+Abe:%>ttä   N_FRONT_POSS_ÄN_OPT      ;
@@ -47,21 +54,21 @@ LEXICON N_FRONT_WEAK_SINGULARS
 +Sg+Tra:%>ksi   N_FRONT_CLIT_OPT     ;
 
 LEXICON N_BACK_STRONG_SINGULARS
-!! € patana
+!!€ patana
 +Sg+Ess:%>na N_BACK_POSS_AN_OPT      ;
 +Sg+Nom:0  N_BACK_POSS   ;
 +Sg+Gen:0  N_BACK_POSS   ;
 +Pl+Nom:0  N_BACK_POSS   ;
 
 LEXICON N_FRONT_STRONG_SINGULARS
-!! € näkynä
+!!€ näkynä
 +Sg+Ess:%>nä N_FRONT_POSS_ÄN_OPT      ;
 +Sg+Nom:0  N_FRONT_POSS   ;
 +Sg+Gen:0  N_FRONT_POSS   ;
 +Pl+Nom:0  N_FRONT_POSS   ;
 
 LEXICON N_BACK_WEAK_PLURALS
-!! € padoitta
+!!€ padoitta
 +Pl+Abe:%>i%>tta   N_BACK_POSS_AN_OPT      ;
 +Pl+Abl:%>i%>lta   N_BACK_POSS_AN_OPT      ;
 +Pl+Ade:%>i%>lla   N_BACK_POSS_AN_OPT      ;
@@ -73,7 +80,7 @@ LEXICON N_BACK_WEAK_PLURALS
 +Pl+Tra:%>i%>ksi  N_BACK_CLIT_OPT     ;
 
 LEXICON N_FRONT_WEAK_PLURALS
-!! € näyittä
+!!€ näyittä
 +Pl+Abe:%>i%>ttä   N_FRONT_POSS_ÄN_OPT      ;
 +Pl+Abl:%>i%>ltä   N_FRONT_POSS_ÄN_OPT      ;
 +Pl+Ade:%>i%>llä   N_FRONT_POSS_ÄN_OPT      ;
@@ -85,272 +92,272 @@ LEXICON N_FRONT_WEAK_PLURALS
 +Pl+Tra:%>i%>ksi  N_FRONT_CLIT_OPT     ;
 
 LEXICON N_FRONT_STRONG_PLURALS
-!! € näkyinä
+!!€ näkyinä
 +Pl+Ess:%>i%>nä   N_FRONT_POSS_ÄN_OPT      ;
 +Cmt:%>i%>ne        N_FRONT_POSS_EN_OPT      ;
 
 LEXICON N_BACK_STRONG_PLURALS
-!! € patoina
+!!€ patoina
 +Pl+Ess:%>i%>na   N_BACK_POSS_AN_OPT      ;
 +Cmt:%>i%>ne        N_BACK_POSS_EN_OPT      ;
 
 
 ! allomorphs
 LEXICON N_BACK_PARTITIVE_A
-!! € politiikkaa
+!!€ politiikkaa
 !! $ politiikkaaan
 +Sg+Par:%>a      N_BACK_POSS_OPT      ;
 
 LEXICON N_FRONT_PARTITIVE_Ä
-!! € kysyntää
+!!€ kysyntää
 !! $ kysyntäään
 +Sg+Par:%>ä      N_FRONT_POSS_OPT      ;
 
 LEXICON N_BACK_PARTITIVE_A_AN
-!! € patoa
-!! € patoaan
+!!€ patoa
+!!€ patoaan
 +Sg+Par:%>a      N_BACK_POSS_AN_OPT      ;
 
 LEXICON N_FRONT_PARTITIVE_Ä_ÄN
-!! € näkyä
-!! € näkyään
+!!€ näkyä
+!!€ näkyään
 0+Sg+Par:%>ä     N_FRONT_POSS_ÄN_OPT     ;
 
 LEXICON N_BACK_PARTITIVE_TA
-!! € taimenta
+!!€ taimenta
 +Sg+Par:%>ta     N_BACK_POSS_AN_OPT      ;
 
 LEXICON N_FRONT_PARTITIVE_TÄ
-!! € tietä
+!!€ tietä
 +Sg+Par:%>tä     N_FRONT_POSS_ÄN_OPT      ;
 
 LEXICON N_BACK_ILLATIVE_HAN
-!! € maahan
+!!€ maahan
 +Sg+Ill:%>han    #         ;
 +Sg+Ill:%>ha     N_BACK_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_HEN
-!! € toffeehen
+!!€ toffeehen
 +Sg+Ill:%>hen    #         ;
 +Sg+Ill:%>he     N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_HEN
-!! € tiehen
+!!€ tiehen
 +Sg+Ill:%>hen    #         ;
 +Sg+Ill:%>he     N_FRONT_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_HIN
-!! € haihin
+!!€ haihin
 +Sg+Ill:%>hin    #         ;
 +Sg+Ill:%>hi     N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_HIN
-!! € piihin
+!!€ piihin
 +Sg+Ill:%>hin    #         ;
 +Sg+Ill:%>hi     N_FRONT_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_HON
-!! € suohon
+!!€ suohon
 +Sg+Ill:%>hon    #         ;
 +Sg+Ill:%>ho     N_BACK_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_HUN
-!! € puuhun
+!!€ puuhun
 +Sg+Ill:%>hun    #         ;
 +Sg+Ill:%>hu     N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_HYN
-!! € pyyhyn
+!!€ pyyhyn
 +Sg+Ill:%>hyn    #         ;
 +Sg+Ill:%>hy     N_FRONT_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_HÄN
-!! € päähän
+!!€ päähän
 +Sg+Ill:%>hän    #         ;
 +Sg+Ill:%>hä     N_FRONT_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_HÖN
-!! € työhön
+!!€ työhön
 +Sg+Ill:%>hön    #         ;
 +Sg+Ill:%>hö     N_FRONT_POSS     ;
 
 LEXICON N_BACK_PARTITIVE_IA
-!! € koiria
+!!€ koiria
 +Pl+Par:%>i%>a    N_BACK_POSS_AN_OPT      ;
 
 LEXICON N_FRONT_PARTITIVE_IÄ
-!! € kärsiä
+!!€ kärsiä
 +Pl+Par:%>i%>ä    N_FRONT_POSS_ÄN_OPT      ;
 
 LEXICON N_BACK_GENITIVE_IDEN
-!! € lepakoiden
+!!€ lepakoiden
 +Pl+Gen:%>i%>den    #     ;
 +Pl+Gen:%>i%>de     N_BACK_POSS     ;
 
 LEXICON N_FRONT_GENITIVE_IDEN
-!! € kännyköiden
+!!€ kännyköiden
 +Pl+Gen:%>i%>den    #     ;
 +Pl+Gen:%>i%>de     N_FRONT_POSS     ;
 
 LEXICON N_BACK_GENITIVE_IEN
-!! € naisien
+!!€ naisien
 +Pl+Gen:%>i%>en   #     ;
 +Pl+Gen:%>i%>e    N_BACK_POSS     ;
 
 LEXICON N_FRONT_GENITIVE_IEN
-!! € murhien
+!!€ murhien
 +Pl+Gen:%>i%>en   #     ;
 +Pl+Gen:%>i%>e    N_FRONT_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_IHIN
-!! € taloihin
+!!€ taloihin
 +Pl+Ill:%>i%>hin   #    ;
 +Pl+Ill:%>i%>hi    N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_IHIN
-!! € näkyihin
+!!€ näkyihin
 +Pl+Ill:%>i%>hin   #    ;
 +Pl+Ill:%>i%>hi    N_FRONT_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_IIN
-!! € koiriin
+!!€ koiriin
 +Pl+Ill:%>i%>in    #     ;
 +Pl+Ill:%>i%>i     N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_IIN
-!! € sieniin
+!!€ sieniin
 +Pl+Ill:%>i%>in    #     ;
 +Pl+Ill:%>i%>i     N_FRONT_POSS     ;
 
 LEXICON N_BACK_GENITIVE_IN
-!! € patain
+!!€ patain
 +Pl+Gen:%>i%>n    #     ;
 +Pl+Gen:%>i     N_BACK_POSS     ;
 
 LEXICON N_FRONT_GENITIVE_IN
-!! € tyrmäin
+!!€ tyrmäin
 +Pl+Gen:%>i%>n    #     ;
 +Pl+Gen:%>i     N_FRONT_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_ISIIN
-!! € sokeisiin
+!!€ sokeisiin
 +Pl+Ill:%>i%>siin  #     ;
 +Pl+Ill:%>i%>sii   N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_ISIIN
-!! € keväisiin
+!!€ keväisiin
 +Pl+Ill:%>i%>siin  #     ;
 +Pl+Ill:%>i%>sii   N_FRONT_POSS     ;
 
 LEXICON N_BACK_PARTITIVE_ITA
-!! € tienoita
+!!€ tienoita
 +Pl+Par:%>i%>ta   N_BACK_POSS_AN_OPT      ;
 
 LEXICON N_FRONT_PARTITIVE_ITÄ
-!! € teitä
+!!€ teitä
 +Pl+Par:%>i%>tä   N_FRONT_POSS_ÄN_OPT      ;
 
 LEXICON N_BACK_GENITIVE_ITTEN
-!! € tienoitten
+!!€ tienoitten
 +Pl+Gen:%>i%>tten     #     ;
 +Pl+Gen:%>i%>tte      N_BACK_POSS     ;
 
 LEXICON N_FRONT_GENITIVE_ITTEN
-!! € teitten
+!!€ teitten
 +Pl+Gen:%>i%>tten     #     ;
 +Pl+Gen:%>i%>tte      N_FRONT_POSS     ;
 
 LEXICON N_BACK_PARTITIVE_JA
-!! € lepakkoja
+!!€ lepakkoja
 +Pl+Par:%>j%>a     N_BACK_POSS_AN_OPT      ;
 
 LEXICON N_FRONT_PARTITIVE_JÄ
-!! € pyhäkköjä
+!!€ pyhäkköjä
 +Pl+Par:%>j%>ä     N_FRONT_POSS_ÄN_OPT      ;
 
 LEXICON N_BACK_GENITIVE_JEN
-!! € lepakkojen
+!!€ lepakkojen
 +Pl+Gen:%>j%>en    #     ;
 +Pl+Gen:%>j%>e     N_BACK_POSS     ;
 
 LEXICON N_FRONT_GENITIVE_JEN
-!! € pyhäkköjen
+!!€ pyhäkköjen
 +Pl+Gen:%>j%>en    #     ;
 +Pl+Gen:%>j%>e     N_FRONT_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_SEEN
-!! € tienooseen
+!!€ tienooseen
 +Sg+Ill:%>seen      #     ;
 +Sg+Ill:%>see       N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_SEEN
-!! € miljööseen
+!!€ miljööseen
 +Sg+Ill:%>seen      #     ;
 +Sg+Ill:%>see       N_FRONT_POSS     ;
 
 LEXICON N_BACK_GENITIVE_TEN
-!! € sisarten
+!!€ sisarten
 +Pl+Gen:%>ten    #     ;
 +Pl+Gen:%>te     N_BACK_POSS     ;
 
 LEXICON N_FRONT_GENITIVE_TEN
-!! € väänninten
+!!€ väänninten
 +Pl+Gen:%>ten    #     ;
 +Pl+Gen:%>te     N_FRONT_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_AN
-!! € kirjaan
+!!€ kirjaan
 +Sg+Ill:%>an     #         ;
 +Sg+Ill:%>a      N_BACK_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_EN
-!! € tuleen
+!!€ tuleen
 +Sg+Ill:%>en     #         ;
 +Sg+Ill:%>e      N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_EN
-!! € hiireen
+!!€ hiireen
 +Sg+Ill:%>en     #         ;
 +Sg+Ill:%>e      N_FRONT_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_IN
-!! € ruuviin
+!!€ ruuviin
 +Sg+Ill:%>in     #         ;
 +Sg+Ill:%>i      N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_IN
-!! € tyyliin
+!!€ tyyliin
 +Sg+Ill:%>in     #         ;
 +Sg+Ill:%>i      N_FRONT_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_ON
-!! € taloon
+!!€ taloon
 +Sg+Ill:%>on     #         ;
 +Sg+Ill:%>o      N_BACK_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_UN
-!! € nieluun
+!!€ nieluun
 +Sg+Ill:%>un     #         ;
 +Sg+Ill:%>u      N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_YN
-!! € näkyyn
+!!€ näkyyn
 +Sg+Ill:%>yn     #         ;
 +Sg+Ill:%>y      N_FRONT_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_ÄN
-!! € räkään
+!!€ räkään
 +Sg+Ill:%>än     #         ;
 +Sg+Ill:%>ä      N_FRONT_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_ÖN
-!! € tönöön
+!!€ tönöön
 +Sg+Ill:%>ön     #         ;
 +Sg+Ill:%>ö      N_FRONT_POSS     ;
 
 ! possessives
 LEXICON N_FRONT_POSS
-!! € taloni
+!!€ taloni
 +PxSg1:%>ni  N_FRONT_CLIT_OPT        ;
 +PxSg2:%>si  N_FRONT_CLIT_OPT        ;
 +PxSg3:%>nsä N_FRONT_CLIT_OPT        ;
@@ -359,7 +366,7 @@ LEXICON N_FRONT_POSS
 +PxPl3:%>nsä N_FRONT_CLIT_OPT        ;
 
 LEXICON N_BACK_POSS
-!! € tönönsä
+!!€ tönönsä
 +PxSg1:%>ni  N_BACK_CLIT_OPT        ;
 +PxSg2:%>si  N_BACK_CLIT_OPT        ;
 +PxSg3:%>nsa N_BACK_CLIT_OPT        ;
@@ -368,27 +375,27 @@ LEXICON N_BACK_POSS
 +PxPl3:%>nsa N_BACK_CLIT_OPT        ;
 
 LEXICON N_BACK_POSS_AN
-!! € taloaan
+!!€ taloaan
 +PxSg3:%>an    N_BACK_CLIT_OPT     ;
 +PxPl3:%>an    N_BACK_CLIT_OPT     ;
 
 LEXICON N_BACK_POSS_EN
-!! € tienookseen
+!!€ tienookseen
 +PxSg3:%>en    N_BACK_CLIT_OPT     ;
 +PxPl3:%>en    N_BACK_CLIT_OPT     ;
 
 LEXICON N_FRONT_POSS_EN
-!! € tiekseen
+!!€ tiekseen
 +PxSg3:%>en    N_FRONT_CLIT_OPT     ;
 +PxPl3:%>en    N_FRONT_CLIT_OPT     ;
 
 LEXICON N_FRONT_POSS_ÄN
-!! € tönöään
+!!€ tönöään
 +PxSg3:%>än    N_FRONT_CLIT_OPT     ;
 +PxPl3:%>än    N_FRONT_CLIT_OPT     ;
 
 LEXICON N_BACK_CLIT
-!! € talohan
+!!€ talohan
 +Foc/han:%>han   #        ;
 +Foc/han+Foc/kaan:%>hankaan  #        ;
 +Foc/han+Qst:%>hanko #        ;
@@ -417,7 +424,7 @@ LEXICON N_BACK_CLIT
 +Foc/kaan+Foc/pa:%>kaanpa    #        ;
 
 LEXICON N_FRONT_CLIT
-!! € tönöhän
+!!€ tönöhän
 +Foc/han:%>hän   #        ;
 +Foc/han+Foc/kaan:%>hänkään  #        ;
 +Foc/han+Qst:%>hänkö #        ;
@@ -551,39 +558,39 @@ ittäin  kö-kään+Adverb     ;
 !
 ! compoundingT
 LEXICON N_COMPOUND_0
-!! € talojuttu
+!!€ talojuttu
 0   N_COMPOUND  ;
 
 LEXICON N_COMPOUND_N
-!! € talonjuttu
+!!€ talonjuttu
 0:%>n               N_COMPOUND    ;
 
 LEXICON N_COMPOUND_IEN
-!! € naisienjuttu
+!!€ naisienjuttu
 0:%>i%>en                 N_COMPOUND  ;
 
 LEXICON N_COMPOUND_IDEN
-!! € lepakoidenjuttu
+!!€ lepakoidenjuttu
 0:%>i%>den                 N_COMPOUND  ;
 
 LEXICON N_COMPOUND_IN
-!! € vanhempainjuttu
+!!€ vanhempainjuttu
 0:%>i%>n                 N_COMPOUND     ;
 
 LEXICON N_COMPOUND_ITTEN
-!! € lepakoittenjuttu
+!!€ lepakoittenjuttu
 0:%>i%>tten               N_COMPOUND     ;
 
 LEXICON N_COMPOUND_JEN
-!! € talojenjuttu
+!!€ talojenjuttu
 0:%>j%>en                 N_COMPOUND     ;
 
 LEXICON N_COMPOUND_TEN
-!! € miestenjuttu
+!!€ miestenjuttu
 0:%>ten                 N_COMPOUND     ;
 
 
 LEXICON N_COMPOUND
-!! € talojuttu
+!!€ talojuttu
 +Use/Circ#:0#     NOMINAL   ;
 

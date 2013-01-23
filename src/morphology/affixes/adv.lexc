@@ -4,7 +4,7 @@
 
 ! possessives
 LEXICON ADV_FRONT_POSS
-!! € edessäni
+!!€ edessäni
 +PxSg1:%>ni  ADV_FRONT_CLIT_OPT        ;
 +PxSg2:%>si  ADV_FRONT_CLIT_OPT        ;
 +PxSg3:%>nsä ADV_FRONT_CLIT_OPT        ;
@@ -13,7 +13,7 @@ LEXICON ADV_FRONT_POSS
 +PxPl3:%>nsä ADV_FRONT_CLIT_OPT        ;
 
 LEXICON ADV_BACK_POSS
-!! € takanani
+!!€ takanani
 +PxSg1:%>ni  ADV_BACK_CLIT_OPT        ;
 +PxSg2:%>si  ADV_BACK_CLIT_OPT        ;
 +PxSg3:%>nsa ADV_BACK_CLIT_OPT        ;
@@ -22,27 +22,27 @@ LEXICON ADV_BACK_POSS
 +PxPl3:%>nsa ADV_BACK_CLIT_OPT        ;
 
 LEXICON ADV_BACK_POSS_AN
-!! € takanaan
+!!€ takanaan
 +PxSg3:%>an    ADV_BACK_CLIT_OPT     ;
 +PxPl3:%>an    ADV_BACK_CLIT_OPT     ;
 
 LEXICON ADV_BACK_POSS_EN
-!! € jalkeilleen
+!!€ jalkeilleen
 +PxSg3:%>en    ADV_BACK_CLIT_OPT     ;
 +PxPl3:%>en    ADV_BACK_CLIT_OPT     ;
 
 LEXICON ADV_FRONT_POSS_EN
-!! € keskelleen
+!!€ keskelleen
 +PxSg3:%>en    ADV_FRONT_CLIT_OPT     ;
 +PxPl3:%>en    ADV_FRONT_CLIT_OPT     ;
 
 LEXICON ADV_FRONT_POSS_ÄN
-!! € edessään
+!!€ edessään
 +PxSg3:%>än    ADV_FRONT_CLIT_OPT     ;
 +PxPl3:%>än    ADV_FRONT_CLIT_OPT     ;
 
 LEXICON ADV_BACK_CLIT
-!! € nopeastihan
+!!€ nopeastihan
 +Foc/han:%>han   #        ;
 +Foc/han+Foc/kaan:%>hankaan  #        ;
 +Foc/han+Qst:%>hanko #        ;
@@ -71,7 +71,7 @@ LEXICON ADV_BACK_CLIT
 +Foc/kaan+Foc/pa:%>kaanpa    #        ;
 
 LEXICON ADV_FRONT_CLIT
-!! € tyhmästihän
+!!€ tyhmästihän
 +Foc/han:%>hän   #        ;
 +Foc/han+Foc/kaan:%>hänkään  #        ;
 +Foc/han+Qst:%>hänkö #        ;
