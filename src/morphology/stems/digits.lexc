@@ -5,7 +5,7 @@ LEXICON DIGITS
 !! Digits are constructed as several cyclic structures: integers, decimals or
 !! roman numerals.
 !! Zero alone works quite differently:
-!! € 0
+!!€ 0
 0    DIGITS_INT_LOOP ;
 0    DIGITS_DECIMAL_LOOP ;
 0    DIGITS_ROMANS   ;
@@ -15,9 +15,9 @@ LEXICON DIGITS_INT_LOOP
 !! Integers can be constructed from any number of digits, ending in
 !! 1-9, followed by any number of 0's. Initial 0's are rare, but not totally
 !! unexpected:
-!! € 13
-!! € 100
-!! € 0000005550000000
+!!€ 13
+!!€ 100
+!!€ 0000005550000000
 %0  DIGITS_INT_LOOP ;
 1   DIGITS_INT_LOOP ;
 2   DIGITS_INT_LOOP ;
@@ -195,18 +195,18 @@ LEXICON DIGITS_INT_LOOP
 
 LEXICON DIGITS_ILLIARD_LOOP
 !! The digit strings that end in 10 to 12 + 6n 0's are inflected alike:
-!! € 1000000000
-!! € 300000000000
-!! € 123456000000000000000000
+!!€ 1000000000
+!!€ 300000000000
+!!€ 123456000000000000000000
 %0%0%0%0%0%0    DIGITS_ILLIARD_LOOP ;
 +Num+Card:0    DIGITS_MILJARDI ;
 +Num+Ord:0    DIGITS_KOLMAS ;
 
 LEXICON DIGITS_ILLION_LOOP
 !! The digit strings that end in 6 to 9 + 6n 0's are inflected alike:
-!! € 1000000
-!! € 300000000
-!! € 123456000000000000000
+!!€ 1000000
+!!€ 300000000
+!!€ 123456000000000000000
 %0%0%0%0%0%0    DIGITS_ILLION_LOOP  ;
 +Num+Card:0    DIGITS_MILJOONA ;
 +Num+Ord:0    DIGITS_KOLMAS ;
@@ -215,8 +215,8 @@ LEXICON DIGITS_DECIMAL_LOOP
 !! Decimal digit strings start with any number of digits 0 to 9, followed
 !! by decimal separator comma. The decimal dot may be allowed as substandard
 !! variant.
-!! € 1,0
-!! € 314,1
+!!€ 1,0
+!!€ 314,1
 %0  DIGITS_DECIMAL_LOOP ;
 1   DIGITS_DECIMAL_LOOP ;
 2   DIGITS_DECIMAL_LOOP ;
@@ -234,8 +234,8 @@ LEXICON DIGITS_DECIMAL_LOOP
 LEXICON DIGITS_DECIMAL_LOOP_FINAL
 !! The decimal digit strings end in any number of digits 0 to 9, inflected
 !! along the last part.
-!! € 3,141
-!! € 123,345
+!!€ 3,141
+!!€ 123,345
 %0  DIGITS_DECIMAL_LOOP_FINAL ;
 1   DIGITS_DECIMAL_LOOP_FINAL ;
 2   DIGITS_DECIMAL_LOOP_FINAL ;
@@ -286,9 +286,9 @@ LEXICON DIGITS_ROMANS
 !! Roman numerals are composed the symbols M, D, C, L, X, V, I in ascending
 !! scale and some combinations, they denote ordinal numbers and inflect like
 !! ones.
-!! € MM
-!! € MCXI
-!! € CMXCIX
+!!€ MM
+!!€ MCXI
+!!€ CMXCIX
 0    DIGITS_ROMANS_THOUSANDS ;
 0    DIGITS_ROMANS_HUNDREDS  ;
 0    DIGITS_ROMANS_TENS      ;
@@ -296,8 +296,8 @@ LEXICON DIGITS_ROMANS
 
 LEXICON DIGITS_ROMANS_THOUSANDS
 !! Thousands can be followed by any of other parts
-!! € MII
-!! € MCCCXXII
+!!€ MII
+!!€ MCCCXXII
 MMMM    DIGITS_ROMANS_HUNDREDS  ;
 MMM     DIGITS_ROMANS_HUNDREDS  ;
 MM      DIGITS_ROMANS_HUNDREDS  ;
@@ -318,8 +318,8 @@ M+Num:M       DIGITS_ROMANS_TOINEN  ;
 
 LEXICON DIGITS_ROMANS_HUNDREDS
 !! Hundreds can be followed by anything but thousands:
-!! € CXXI
-!! € DXXIV
+!!€ CXXI
+!!€ DXXIV
 CM      DIGITS_ROMANS_TENS  ;
 DCCC    DIGITS_ROMANS_TENS  ;
 DCC     DIGITS_ROMANS_TENS  ;
@@ -350,8 +350,8 @@ C+Num+Ord:C       DIGITS_ROMANS_TOINEN  ;
 
 LEXICON DIGITS_ROMANS_TENS
 !! Tens can be followed by ones:
-!! € XIX
-!! € XXVII
+!!€ XIX
+!!€ XXVII
 XC      DIGITS_ROMANS_ONES  ;
 LXXX    DIGITS_ROMANS_ONES  ;
 LXX     DIGITS_ROMANS_ONES  ;
@@ -373,9 +373,9 @@ X+Num+Ord:X       DIGITS_ROMANS_ENSIMMÄINEN  ;
 
 LEXICON DIGITS_ROMANS_ONES
 !! Ones come alone
-!! € IX
-!! € VIII
-!! € II
+!!€ IX
+!!€ VIII
+!!€ II
 IX+Num+Ord:IX      DIGITS_ROMANS_ENSIMMÄINEN   ;
 VIII+Num+Ord:VIII    DIGITS_ROMANS_TOINEN        ;
 VII+Num+Ord:VII     DIGITS_ROMANS_ENSIMMÄINEN   ;

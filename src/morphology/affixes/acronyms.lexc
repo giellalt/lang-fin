@@ -1,3 +1,4 @@
+!! !!Acronym inflection
 !! Acronyms are inflected using a colon, followed by the inflectional endings,
 !! which depend on either last letter of the word or inflection class of the
 !! last word of the abbreviation. The exception to the inflection scheme is the
@@ -6,11 +7,15 @@
 !! Pronouncable abbreviations such as aids, hiv, kela, alko etc. are actually
 !! counted as regular words with regular inflection patterns.
 !!
-!! c.f. VISK § 169
+!! c.f. [VISK § 169|http://scripta.kotus.fi/visk/sisallys.php?p=169]
 
 
+!! !Acronyms ending in numbers inflect like the numbers are pronounced.
 LEXICON ACRO_YKSI
 !! The acronyms ending in digit 1 pronounced as number:
+!!€gt-norm: Number-final acronyms
+!!€ A1 A1+N+Sg+Nom A1 paper
+!!€ A1:een A1+N+Sg+Ill
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_FRONT_POSS    ;
@@ -44,6 +49,8 @@ LEXICON ACRO_YKSI
 
 LEXICON ACRO_KAKSI
 !! The acronyms ending in digit 2 pronounced as number
+!!€ A2 A2+N+Sg+Nom A2 paper
+!!€ A2:een A2+N+Sg+Ill
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_BACK_POSS    ;
@@ -76,7 +83,9 @@ LEXICON ACRO_KAKSI
 +Pl+Tra:%:ikse  ACRO_BACK_POSS_EN_OBL    ;
 
 LEXICON ACRO_KOLME
-! The acronyms ending in digit 3 pronounced as number
+!! The acronyms ending in digit 3 pronounced as number
+!!€ A3 A3+N+Sg+Nom A3 paper
+!!€ A3:een A1+N+Sg+Ill
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_BACK_POSS    ;
@@ -109,7 +118,9 @@ LEXICON ACRO_KOLME
 +Pl+Tra:%:ikse  ACRO_BACK_POSS_EN_OBL    ;
 
 LEXICON ACRO_NELJÄ
-! The acronyms ending in digit 4 pronounced as number
+!! The acronyms ending in digit 4 pronounced as number
+!!€ A4 A4+N+Sg+Nom A4 paper
+!!€ A4:ään A4+N+Sg+Ill
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_FRONT_POSS    ;
@@ -142,7 +153,9 @@ LEXICON ACRO_NELJÄ
 +Pl+Tra:%:ikse  ACRO_FRONT_POSS_EN_OBL    ;
 
 LEXICON ACRO_VIISI
-! The acronyms ending in digit 5 pronounced as number
+!! The acronyms ending in digit 5 pronounced as number
+!!€ A5 A5+N+Sg+Nom A5 paper
+!!€ A5:een A5+N+Sg+Ill
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_FRONT_POSS    ;
@@ -175,7 +188,7 @@ LEXICON ACRO_VIISI
 +Pl+Tra:%:ikse  ACRO_FRONT_POSS_EN_OBL    ;
 
 LEXICON ACRO_KUUSI
-! The acronyms ending in digit 6 pronounced as number
+!! The acronyms ending in digit 6 pronounced as number
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_BACK_POSS    ;
@@ -208,7 +221,7 @@ LEXICON ACRO_KUUSI
 +Pl+Tra:%:ikse  ACRO_BACK_POSS_EN_OBL    ;
 
 LEXICON ACRO_SEITSEMÄN
-! The acronyms ending in digit 7 pronounced as number
+!! The acronyms ending in digit 7 pronounced as number
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_FRONT_POSS    ;
@@ -241,7 +254,7 @@ LEXICON ACRO_SEITSEMÄN
 +Pl+Tra:%:ikse  ACRO_FRONT_POSS_EN_OBL    ;
 
 LEXICON ACRO_KAHDEKSAN
-! The acronyms ending in digit 8 pronounced as number
+!! The acronyms ending in digit 8 pronounced as number
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_BACK_POSS    ;
@@ -274,7 +287,7 @@ LEXICON ACRO_KAHDEKSAN
 +Pl+Tra:%:ikse  ACRO_BACK_POSS_EN_OBL    ;
 
 LEXICON ACRO_YHDEKSÄN
-! The acronyms ending in digit 9 pronounced as number
+!! The acronyms ending in digit 9 pronounced as number
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_FRONT_POSS    ;
@@ -306,11 +319,16 @@ LEXICON ACRO_YHDEKSÄN
 +Pl+Tra:%:iksi  ACRO_FRONT_CLIT_OPT ;
 +Pl+Tra:%:ikse  ACRO_FRONT_POSS_EN_OBL    ;
 
+!! !Acronyms ending in letters
+!! Acronyms ending in regular alphabet may be inflected like the last letter is
+!! pronounced.
+
 LEXICON ACRO_AA
 !! acronyms ending in 'a' pronounced as a letter:
-!! € A
-!! € A:t
-!! € A:ssa
+!!€gt-norm: Alphabet-final acronyms
+!!€ A A+N+Sg+Nom A
+!!€ A:t A+N+Pl+Nom
+!!€ A:ssa A+N+Sg+Ine
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_BACK_POSS    ;
@@ -345,9 +363,9 @@ LEXICON ACRO_AA
 LEXICON ACRO_EE
 !! acronyms ending in 'b', 'c', 'd', 'e', 'g', 'p', 'v', 'w' or 't' pronounced
 !! as a letter:
-!! € BBC
-!! € BBC:t
-!! € BCC:ssä
+!!€ BBC BBC+N+Sg+Nom British Broadcasting Company
+!!€ BBC:t BBC+N+Pl+Nom
+!!€ BCC:ssä BBC+N+Sg+Ine
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_FRONT_POSS    ;
@@ -381,9 +399,9 @@ LEXICON ACRO_EE
 
 LEXICON ACRO_II
 !! Acronyms that end in 'j' or 'i' pronoynced as letter:
-!! € DPI
-!! € DPI:t
-!! € DPI:ssä
+!!€ DPI
+!!€ DPI:t
+!!€ DPI:ssä
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_FRONT_POSS    ;
@@ -417,9 +435,9 @@ LEXICON ACRO_II
 
 LEXICON ACRO_OO
 !! Acronyms that end in 'h', 'k' or 'o' that is pronounced as a letter:
-!! € HK
-!! € HK:n
-!! € HK:lla
+!!€ HK
+!!€ HK:n
+!!€ HK:lla
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_BACK_POSS    ;
@@ -453,9 +471,9 @@ LEXICON ACRO_OO
 
 LEXICON ACRO_UU
 !! Acronyms that end in 'q', or 'u' pronounced as a letter:
-!! € EU
-!! € EU:t
-!! € EU:hun
+!!€ EU
+!!€ EU:t
+!!€ EU:hun
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_BACK_POSS    ;
@@ -490,8 +508,8 @@ LEXICON ACRO_UU
 LEXICON ACRO_ÄKS
 !! Acronym that ends in 'f', 'l', 'm', 'n', 'r', 's', 'š' or 'x' pronounced as
 !! a letter:
-!! € GRPS
-!! € GPRS:llä
+!!€ GRPS
+!!€ GPRS:llä
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_FRONT_POSS    ;
@@ -525,8 +543,8 @@ LEXICON ACRO_ÄKS
 
 LEXICON ACRO_YY
 !! Acronym that ends in 'y' pronounced as letter
-!! € EY
-!! € EY:hyn
+!!€ EY
+!!€ EY:hyn
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_FRONT_POSS    ;
@@ -560,8 +578,8 @@ LEXICON ACRO_YY
 
 LEXICON ACRO_ZET
 !! Acronyms that end in 'z' pronounced as letter
-!! € Z
-!! € Z:t
+!!€ Z
+!!€ Z:t
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_BACK_POSS    ;
@@ -595,8 +613,8 @@ LEXICON ACRO_ZET
 
 LEXICON ACRO_ÄÄ
 !! Acronyms that end in 'ä' pronounced as letter
-!! € Ä
-!! € Ä:t
+!!€ Ä
+!!€ Ä:t
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_FRONT_POSS    ;
@@ -630,8 +648,8 @@ LEXICON ACRO_ÄÄ
 
 LEXICON ACRO_ÖÖ
 !! Acronyms that end in 'ö' pronounced as letter
-!! € Ö
-!! € Ö:t
+!!€ Ö
+!!€ Ö:t
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_FRONT_POSS    ;

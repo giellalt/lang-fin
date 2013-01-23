@@ -8,30 +8,30 @@ LEXICON A_BACK_SUPERLATIVE
 !! The superlative derivation is formed by *in* suffix, which creates a new
 !! adjective baseform. This baseform is handled separately to avoid double
 !! superlatives.
-!! € rumin
+!!€ rumin
 +Sup:i  A_BACK_SUPERLATIVE_STEMS ;
 
 
 LEXICON A_FRONT_SUPERLATIVE
-!! € tyhmin
+!!€ tyhmin
 +Sup:i  A_FRONT_SUPERLATIVE_STEMS ;
 
 LEXICON A_BACK_COMPARATIVE
 !! The comparative derivation is formed by *mpi* suffix, which creates a new
 !! adjective baseform. This adjective is handled separately
 !! to avoid double comparative forms.
-!! € rumempi
+!!€ rumempi
 +Comp:m     A_BACK_COMPARATIVE_STEMS ;
 
 LEXICON A_FRONT_COMPARATIVE
-!! € tyhmempi
+!!€ tyhmempi
 +Comp:m     A_FRONT_COMPARATIVE_STEMS ;
 
 
 LEXICON A_BACK_COMPARATIVE_STEMS
 !! This inflectional part attached to adjective comparative stems to avoid
 !! circularity in comparative derivations:
-!! € nopeampi
+!!€ nopeampi
 !! $ nopeammampi
 !! $ nopeammammampi
 0:pi  A_BACK_NOMINATIVE    ;
@@ -47,7 +47,7 @@ LEXICON A_BACK_COMPARATIVE_STEMS
 0:p    A_BACK_ILLATIVE_IIN    ;
 
 LEXICON A_FRONT_COMPARATIVE_STEMS
-!! € tyhmempi
+!!€ tyhmempi
 0:pi  A_FRONT_NOMINATIVE    ;
 0:pa  A_FRONT_STRONG_SINGULARS    ;
 0:ma  A_FRONT_WEAK_SINGULARS    ;
@@ -63,7 +63,7 @@ LEXICON A_FRONT_COMPARATIVE_STEMS
 LEXICON A_BACK_SUPERLATIVE_STEMS
 !! This inflectional part is attached to adjective superlative stems to avoid
 !! circularity in superlative  derivations:
-!! € nopein
+!!€ nopein
 !! $ nopeimmin
 !! $ nopeimmimmin
 0:n   A_BACK_NOMINATIVE    ;
@@ -80,7 +80,7 @@ LEXICON A_BACK_SUPERLATIVE_STEMS
 0:mp    A_BACK_ILLATIVE_IIN    ;
 
 LEXICON A_FRONT_SUPERLATIVE_STEMS
-!! € tyhmin
+!!€ tyhmin
 !! $ tyhmimmin
 0:n   A_FRONT_NOMINATIVE    ;
 0:mpä   A_FRONT_STRONG_SINGULARS    ;
@@ -101,26 +101,26 @@ LEXICON A_FRONT_SUPERLATIVE_STEMS
 
 ! nominatives
 LEXICON A_BACK_NOMINATIVE
-!! € ruma
+!!€ ruma
 +Sg+Nom:0   A_BACK_CLIT_OPT  ;
 
 LEXICON A_FRONT_NOMINATIVE
-!! € tyhmä
+!!€ tyhmä
 +Sg+Nom:0   A_FRONT_CLIT_OPT  ;
 
 LEXICON A_BACK_PLNOM_CLIT
-!! € rumat
+!!€ rumat
 +Pl+Nom:t     A_BACK_CLIT_OPT  ;
 
 LEXICON A_FRONT_PLNOM_CLIT
-!! € tyhmät
+!!€ tyhmät
 +Pl+Nom:t     A_FRONT_CLIT_OPT  ;
 
 ! basic cases
 LEXICON A_BACK_WEAK_SINGULARS
-!! € rumako
-!! € ruman
-!! € rumatta
+!!€ rumako
+!!€ ruman
+!!€ rumatta
 0    A_BACK_PLNOM_CLIT   ;
 +Sg+Gen:n     A_BACK_CLIT_OPT   ;
 +Sg+Abe:tta   A_BACK_POSS_AN_CLIT_OPT      ;
@@ -134,9 +134,9 @@ LEXICON A_BACK_WEAK_SINGULARS
 +Sg+Tra:ksi   A_BACK_CLIT_OPT     ;
 
 LEXICON A_FRONT_WEAK_SINGULARS
-!! € tyhmäkö
-!! € tyhmän
-!! € tyhmättä
+!!€ tyhmäkö
+!!€ tyhmän
+!!€ tyhmättä
 0    A_FRONT_PLNOM_CLIT   ;
 +Sg+Gen:n     A_FRONT_CLIT_OPT   ;
 +Sg+Abe:ttä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
@@ -150,24 +150,24 @@ LEXICON A_FRONT_WEAK_SINGULARS
 +Sg+Tra:ksi   A_FRONT_CLIT_OPT     ;
 
 LEXICON A_BACK_STRONG_SINGULARS
-!! € rumana
-!! € rumani
+!!€ rumana
+!!€ rumani
 +Sg+Ess:na A_BACK_POSS_AN_CLIT_OPT      ;
 +Sg+Nom:0  A_BACK_POSS   ;
 +Sg+Gen:0  A_BACK_POSS   ;
 +Pl+Nom:0  A_BACK_POSS   ;
 
 LEXICON A_FRONT_STRONG_SINGULARS
-!! € tyhmänä
-!! € tyhmäni
+!!€ tyhmänä
+!!€ tyhmäni
 +Sg+Ess:nä A_FRONT_POSS_ÄN_CLIT_OPT      ;
 +Sg+Nom:0  A_FRONT_POSS   ;
 +Sg+Gen:0  A_FRONT_POSS   ;
 +Pl+Nom:0  A_FRONT_POSS   ;
 
 LEXICON A_BACK_WEAK_PLURALS
-!! € heikoitta
-!! € heikoilta
+!!€ heikoitta
+!!€ heikoilta
 +Pl+Abe:itta   A_BACK_POSS_AN_CLIT_OPT      ;
 +Pl+Abl:ilta   A_BACK_POSS_AN_CLIT_OPT      ;
 +Pl+Ade:illa   A_BACK_POSS_AN_CLIT_OPT      ;
@@ -179,8 +179,8 @@ LEXICON A_BACK_WEAK_PLURALS
 +Pl+Tra:iksi  A_BACK_CLIT_OPT     ;
 
 LEXICON A_FRONT_WEAK_PLURALS
-!! € jäykittä
-!! € jäykiltä
+!!€ jäykittä
+!!€ jäykiltä
 +Pl+Abe:ittä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
 +Pl+Abl:iltä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
 +Pl+Ade:illä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
@@ -192,48 +192,48 @@ LEXICON A_FRONT_WEAK_PLURALS
 +Pl+Tra:iksi  A_FRONT_CLIT_OPT     ;
 
 LEXICON A_FRONT_STRONG_PLURALS
-!! € jäykkinä
-!! € jäykkine
+!!€ jäykkinä
+!!€ jäykkine
 +Pl+Ess:inä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
 +Cmt:ine        A_FRONT_POSS_ÄN_CLIT_OPT      ;
 
 LEXICON A_BACK_STRONG_PLURALS
-!! € heikkoina
-!! € heikkoine
+!!€ heikkoina
+!!€ heikkoine
 +Pl+Ess:ina   A_BACK_POSS_AN_CLIT_OPT      ;
 +Cmt:ine        A_BACK_POSS_AN_CLIT_OPT      ;
 
 ! allomorphs
 LEXICON A_BACK_PARTITIVE_A
-!! € tarkka
+!!€ tarkka
 !! $ tarkkaaan
 +Sg+Par:a      A_BACK_POSS_CLIT_OPT      ;
 
 LEXICON A_FRONT_PARTITIVE_Ä
-!! € tyhmää
+!!€ tyhmää
 !! $ tyhmäään
 +Sg+Par:ä      A_FRONT_POSS_CLIT_OPT      ;
 
 LEXICON A_BACK_PARTITIVE_A_AN
-!! € jaloa
-!! € jaloaan
+!!€ jaloa
+!!€ jaloaan
 +Sg+Par:a      A_BACK_POSS_AN_CLIT_OPT      ;
 
 LEXICON A_FRONT_PARTITIVE_Ä_ÄN
-!! € hölöä
-!! € hölöään
+!!€ hölöä
+!!€ hölöään
 0+Sg+Par:ä     A_FRONT_POSS_ÄN_CLIT_OPT     ;
 
 LEXICON A_BACK_PARTITIVE_TA
-!! € vapaata
+!!€ vapaata
 +Sg+Par:ta     A_BACK_POSS_AN_CLIT_OPT      ;
 
 LEXICON A_FRONT_PARTITIVE_TÄ
-!! € pientä
+!!€ pientä
 +Sg+Par:tä     A_FRONT_POSS_ÄN_CLIT_OPT      ;
 
 LEXICON A_BACK_ILLATIVE_HAN
-!! € peeaahan
+!!€ peeaahan
 +Sg+Ill:han    #         ;
 +Sg+Ill:ha     A_BACK_POSS     ;
 
@@ -250,7 +250,7 @@ LEXICON A_BACK_ILLATIVE_HAN
 !+Sg+Ill:hi     A_BACK_POSS     ;
 !
 LEXICON A_FRONT_ILLATIVE_HIN
-!! € gayhin
+!!€ gayhin
 +Sg+Ill:hin    #         ;
 +Sg+Ill:hi     A_FRONT_POSS     ;
 
@@ -259,17 +259,17 @@ LEXICON A_FRONT_ILLATIVE_HIN
 !+Sg+Ill:ho     A_BACK_POSS     ;
 
 LEXICON A_BACK_ILLATIVE_HUN
-!! € muuhun
+!!€ muuhun
 +Sg+Ill:hun    #         ;
 +Sg+Ill:hu     A_BACK_POSS     ;
 
 LEXICON A_FRONT_ILLATIVE_HYN
-!! € gayhyn
+!!€ gayhyn
 +Sg+Ill:hyn    #         ;
 +Sg+Ill:hy     A_FRONT_POSS     ;
 
 LEXICON A_FRONT_ILLATIVE_HÄN
-!! € syypäähän
+!!€ syypäähän
 +Sg+Ill:hän    #         ;
 +Sg+Ill:hä     A_FRONT_POSS     ;
 
@@ -278,121 +278,121 @@ LEXICON A_FRONT_ILLATIVE_HÄN
 !+Sg+Ill:hö     A_FRONT_POSS     ;
 
 LEXICON A_BACK_PARTITIVE_IA
-!! € rumia
+!!€ rumia
 +Pl+Par:ia    A_BACK_POSS_AN_CLIT_OPT      ;
 
 LEXICON A_FRONT_PARTITIVE_IÄ
-!! € tyhmiä
+!!€ tyhmiä
 +Pl+Par:iä    A_FRONT_POSS_ÄN_CLIT_OPT      ;
 
 LEXICON A_BACK_GENITIVE_IDEN
-!! € tanakoiden
+!!€ tanakoiden
 +Pl+Gen:iden    #     ;
 +Pl+Gen:ide     A_BACK_POSS     ;
 
 LEXICON A_FRONT_GENITIVE_IDEN
-!! € hömpäköiden
+!!€ hömpäköiden
 +Pl+Gen:iden    #     ;
 +Pl+Gen:ide     A_FRONT_POSS     ;
 
 LEXICON A_BACK_GENITIVE_IEN
-!! € rumien
+!!€ rumien
 +Pl+Gen:ien   #     ;
 +Pl+Gen:ie    A_BACK_POSS     ;
 
 LEXICON A_FRONT_GENITIVE_IEN
-!! € tyhmien
+!!€ tyhmien
 +Pl+Gen:ien   #     ;
 +Pl+Gen:ie    A_FRONT_POSS     ;
 
 LEXICON A_BACK_ILLATIVE_IHIN
-!! € pahoihin
+!!€ pahoihin
 +Pl+Ill:ihin   #    ;
 +Pl+Ill:ihi    A_BACK_POSS     ;
 
 LEXICON A_FRONT_ILLATIVE_IHIN
-!! € hölmöihin
+!!€ hölmöihin
 +Pl+Ill:ihin   #    ;
 +Pl+Ill:ihi    A_FRONT_POSS     ;
 
 LEXICON A_BACK_ILLATIVE_IIN
-!! € punaisiin
+!!€ punaisiin
 +Pl+Ill:iin    #     ;
 +Pl+Ill:ii     A_BACK_POSS     ;
 
 LEXICON A_FRONT_ILLATIVE_IIN
-!! € sinisiin
+!!€ sinisiin
 +Pl+Ill:iin    #     ;
 +Pl+Ill:ii     A_FRONT_POSS     ;
 
 LEXICON A_BACK_GENITIVE_IN
-!! € rumain
+!!€ rumain
 +Pl+Gen:in    #     ;
 +Pl+Gen:i     A_BACK_POSS     ;
 
 LEXICON A_FRONT_GENITIVE_IN
-!! € tyhmäin
+!!€ tyhmäin
 +Pl+Gen:in    #     ;
 +Pl+Gen:i     A_FRONT_POSS     ;
 
 LEXICON A_BACK_ILLATIVE_ISIIN
-!! € korkeisiin
+!!€ korkeisiin
 +Pl+Ill:isiin  #     ;
 +Pl+Ill:isii   A_BACK_POSS     ;
 
 LEXICON A_FRONT_ILLATIVE_ISIIN
-!! € järeisiin
+!!€ järeisiin
 +Pl+Ill:isiin  #     ;
 +Pl+Ill:isii   A_FRONT_POSS     ;
 
 LEXICON A_BACK_PARTITIVE_ITA
-!! € korkeita
+!!€ korkeita
 +Pl+Par:ita   A_BACK_POSS_AN_CLIT_OPT      ;
 
 LEXICON A_FRONT_PARTITIVE_ITÄ
-!! € järeitä
+!!€ järeitä
 +Pl+Par:itä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
 
 LEXICON A_BACK_GENITIVE_ITTEN
-!! € nopeitten
+!!€ nopeitten
 +Pl+Gen:itten     #     ;
 +Pl+Gen:itte      A_BACK_POSS     ;
 
 LEXICON A_FRONT_GENITIVE_ITTEN
-!! € järeitten
+!!€ järeitten
 +Pl+Gen:itten     #     ;
 +Pl+Gen:itte      A_FRONT_POSS     ;
 
 LEXICON A_BACK_PARTITIVE_JA
-!! € vahvoja
+!!€ vahvoja
 +Pl+Par:ja     A_BACK_POSS_AN_CLIT_OPT      ;
 
 LEXICON A_FRONT_PARTITIVE_JÄ
-!! € hölmöjä
+!!€ hölmöjä
 +Pl+Par:jä     A_FRONT_POSS_ÄN_CLIT_OPT      ;
 
 LEXICON A_BACK_GENITIVE_JEN
-!! € vahvojen
+!!€ vahvojen
 +Pl+Gen:jen    #     ;
 +Pl+Gen:je     A_BACK_POSS     ;
 
 LEXICON A_FRONT_GENITIVE_JEN
-!! € hölmöjen
+!!€ hölmöjen
 +Pl+Gen:jen    #     ;
 +Pl+Gen:je     A_FRONT_POSS     ;
 
 LEXICON A_BACK_ILLATIVE_SEEN
-!! € vapaaseen
+!!€ vapaaseen
 +Sg+Ill:seen      #     ;
 +Sg+Ill:see       A_BACK_POSS     ;
 
 LEXICON A_FRONT_ILLATIVE_SEEN
-!! € työlääseen
+!!€ työlääseen
 +Sg+Ill:seen      #     ;
 +Sg+Ill:see       A_FRONT_POSS     ;
 
 LEXICON A_BACK_GENITIVE_TEN
-!! € raskasten
+!!€ raskasten
 +Pl+Gen:ten    #     ;
 +Pl+Gen:te     A_BACK_POSS     ;
 
@@ -402,60 +402,60 @@ LEXICON A_FRONT_GENITIVE_TEN
 +Pl+Gen:te     A_FRONT_POSS     ;
 
 LEXICON A_BACK_ILLATIVE_AN
-!! € rumaan
+!!€ rumaan
 +Sg+Ill:an     #         ;
 +Sg+Ill:a      A_BACK_POSS     ;
 
 
 LEXICON A_BACK_ILLATIVE_EN
-!! € suureen
+!!€ suureen
 +Sg+Ill:en     #         ;
 +Sg+Ill:e      A_BACK_POSS     ;
 
 LEXICON A_FRONT_ILLATIVE_EN
-!! € pieneen
+!!€ pieneen
 +Sg+Ill:en     #         ;
 +Sg+Ill:e      A_FRONT_POSS     ;
 
 LEXICON A_BACK_ILLATIVE_IN
-!! € tuhtiin
+!!€ tuhtiin
 +Sg+Ill:in     #         ;
 +Sg+Ill:i      A_BACK_POSS     ;
 
 LEXICON A_FRONT_ILLATIVE_IN
-!! € rehtiin
+!!€ rehtiin
 +Sg+Ill:in     #         ;
 +Sg+Ill:i      A_FRONT_POSS     ;
 
 LEXICON A_BACK_ILLATIVE_ON
-!! € huonoon
+!!€ huonoon
 +Sg+Ill:on     #         ;
 +Sg+Ill:o      A_BACK_POSS     ;
 
 LEXICON A_BACK_ILLATIVE_UN
-!! € fiksuun
+!!€ fiksuun
 +Sg+Ill:un     #         ;
 +Sg+Ill:u      A_BACK_POSS     ;
 
 LEXICON A_FRONT_ILLATIVE_YN
-!! € häijyyn
+!!€ häijyyn
 +Sg+Ill:yn     #         ;
 +Sg+Ill:y      A_FRONT_POSS     ;
 
 LEXICON A_FRONT_ILLATIVE_ÄN
-!! € tyhmään
+!!€ tyhmään
 +Sg+Ill:än     #         ;
 +Sg+Ill:ä      A_FRONT_POSS     ;
 
 LEXICON A_FRONT_ILLATIVE_ÖN
-!! € hölmöön
+!!€ hölmöön
 +Sg+Ill:ön     #         ;
 +Sg+Ill:ö      A_FRONT_POSS     ;
 
 
 ! Possessives
 LEXICON A_FRONT_POSS
-!! € tyhmäni
+!!€ tyhmäni
 +PxSg1:ni  A_FRONT_CLIT_OPT        ;
 +PxSg2:si  A_FRONT_CLIT_OPT        ;
 +PxSg3:nsä A_FRONT_CLIT_OPT        ;
@@ -464,7 +464,7 @@ LEXICON A_FRONT_POSS
 +PxPl3:nsä A_FRONT_CLIT_OPT        ;
 
 LEXICON A_BACK_POSS
-!! € rumani
+!!€ rumani
 +PxSg1:ni  A_BACK_CLIT_OPT        ;
 +PxSg2:si  A_BACK_CLIT_OPT        ;
 +PxSg3:nsa A_BACK_CLIT_OPT        ;
@@ -473,27 +473,27 @@ LEXICON A_BACK_POSS
 +PxPl3:nsa A_BACK_CLIT_OPT        ;
 
 LEXICON A_BACK_POSS_AN
-!! € kieroaan
+!!€ kieroaan
 +PxSg3:an    A_BACK_CLIT_OPT     ;
 +PxPl3:an    A_BACK_CLIT_OPT     ;
 
 LEXICON A_BACK_POSS_EN
-!! € hölmöään
+!!€ hölmöään
 +PxSg3:en    A_BACK_CLIT_OPT     ;
 +PxPl3:en    A_BACK_CLIT_OPT     ;
 
 LEXICON A_FRONT_POSS_EN
-!! € rumalleen
+!!€ rumalleen
 +PxSg3:en    A_FRONT_CLIT_OPT     ;
 +PxPl3:en    A_FRONT_CLIT_OPT     ;
 
 LEXICON A_FRONT_POSS_ÄN
-!! € tyhmälleen
+!!€ tyhmälleen
 +PxSg3:än    A_FRONT_CLIT_OPT     ;
 +PxPl3:än    A_FRONT_CLIT_OPT     ;
 
 LEXICON A_BACK_CLIT
-!! € rumahan
+!!€ rumahan
 +Foc/han:han   #        ;
 +Foc/han+Foc/kaan:hankaan  #        ;
 +Foc/han+Qst:hanko #        ;
@@ -522,7 +522,7 @@ LEXICON A_BACK_CLIT
 +Foc/kaan+Foc/pa:kaanpa    #        ;
 
 LEXICON A_FRONT_CLIT
-!! € tyhmähän
+!!€ tyhmähän
 +Foc/han:hän   #        ;
 +Foc/han+Foc/kaan:hänkään  #        ;
 +Foc/han+Qst:hänkö #        ;

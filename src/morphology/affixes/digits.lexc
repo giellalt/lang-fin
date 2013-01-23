@@ -2,9 +2,9 @@
 
 LEXICON DIGITS_YKSI
 !! The digit strings ending in digit 1 pronounced as number
-!! € 1
-!! € 1:t
-!! € 1:ssä
+!!€ 1
+!!€ 1:t
+!!€ 1:ssä
 0  DIGITS_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  DIGITS_FRONT_POSS    ;
@@ -38,9 +38,9 @@ LEXICON DIGITS_YKSI
 
 LEXICON DIGITS_KAKSI
 !! The digit strings ending in digit 2 pronounced as number
-!! € 2
-!! € 2:t
-!! € 2:ssa
+!!€ 2
+!!€ 2:t
+!!€ 2:ssa
 0  DIGITS_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  DIGITS_BACK_POSS    ;
@@ -74,9 +74,9 @@ LEXICON DIGITS_KAKSI
 
 LEXICON DIGITS_KOLME
 !! The digit strings ending in digit 3 pronounced as number
-!! € 3
-!! € 3:t
-!! € 3:ssa
+!!€ 3
+!!€ 3:t
+!!€ 3:ssa
 0  DIGITS_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  DIGITS_BACK_POSS    ;
@@ -110,9 +110,9 @@ LEXICON DIGITS_KOLME
 
 LEXICON DIGITS_NELJÄ
 !! The digit strings ending in digit 4 pronounced as number
-!! € 4
-!! € 4:t
-!! € 4:ssä
+!!€ 4
+!!€ 4:t
+!!€ 4:ssä
 0  DIGITS_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  DIGITS_FRONT_POSS    ;
@@ -146,9 +146,9 @@ LEXICON DIGITS_NELJÄ
 
 LEXICON DIGITS_VIISI
 !! The digit strings ending in digit 5 pronounced as number
-!! € 5
-!! € 5:t
-!! € 5:ssä
+!!€ 5
+!!€ 5:t
+!!€ 5:ssä
 0  DIGITS_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  DIGITS_FRONT_POSS    ;
@@ -182,9 +182,9 @@ LEXICON DIGITS_VIISI
 
 LEXICON DIGITS_KUUSI
 !! The digit strings ending in digit 6 pronounced as number
-!! € 6
-!! € 6:t
-!! € 6:ss
+!!€ 6
+!!€ 6:t
+!!€ 6:ss
 0  DIGITS_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  DIGITS_BACK_POSS    ;
@@ -218,9 +218,9 @@ LEXICON DIGITS_KUUSI
 
 LEXICON DIGITS_SEITSEMÄN
 !! The digit strings ending in digit 7 pronounced as number
-!! € 7
-!! € 7:t
-!! € 7:ssä
+!!€ 7
+!!€ 7:t
+!!€ 7:ssä
 0  DIGITS_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  DIGITS_FRONT_POSS    ;
@@ -254,9 +254,9 @@ LEXICON DIGITS_SEITSEMÄN
 
 LEXICON DIGITS_KAHDEKSAN
 !! The digit strings ending in digit 8 pronounced as number
-!! € 8
-!! € 8:t
-!! € 8:ssa
+!!€ 8
+!!€ 8:t
+!!€ 8:ssa
 
 0  DIGITS_COMPOUND   ;
 +Sg+Nom:0    #   ;
@@ -291,9 +291,9 @@ LEXICON DIGITS_KAHDEKSAN
 
 LEXICON DIGITS_YHDEKSÄN
 !! The digit strings ending in digit 9 pronounced as number
-!! € 9
-!! € 9:t
-!! € 9:ssä
+!!€ 9
+!!€ 9:t
+!!€ 9:ssä
 0  DIGITS_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  DIGITS_FRONT_POSS    ;
@@ -327,9 +327,9 @@ LEXICON DIGITS_YHDEKSÄN
 
 LEXICON DIGITS_NOLLA
 !! The digit strings ending in digit 0 pronounced as number
-!! € 0
-!! € 0:t
-!! € 0:aa
+!!€ 0
+!!€ 0:t
+!!€ 0:aa
 0  DIGITS_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  DIGITS_BACK_POSS    ;
@@ -363,9 +363,9 @@ LEXICON DIGITS_NOLLA
 
 LEXICON DIGITS_KYMMENEN
 !! The digit string ending in 0 pronounced as tens
-!! € 10
-!! € 10:t
-!! € 10:tä
+!!€ 10
+!!€ 10:t
+!!€ 10:tä
 0  DIGITS_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  DIGITS_FRONT_POSS    ;
@@ -399,9 +399,9 @@ LEXICON DIGITS_KYMMENEN
 
 LEXICON DIGITS_SATA
 !! The digit string ending in 00 pronounced as hundreds
-!! € 100
-!! € 100:t
-!! € 100:aa
+!!€ 100
+!!€ 100:t
+!!€ 100:aa
 0  DIGITS_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  DIGITS_BACK_POSS    ;
@@ -435,9 +435,9 @@ LEXICON DIGITS_SATA
 
 LEXICON DIGITS_TUHAT
 !! The digit string ending in 000 pronounced as thousands
-!! € 1000
-!! € 1000:t
-!! € 1000:ta
+!!€ 1000
+!!€ 1000:t
+!!€ 1000:ta
 0  DIGITS_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  DIGITS_BACK_POSS    ;
@@ -471,9 +471,9 @@ LEXICON DIGITS_TUHAT
 
 LEXICON DIGITS_MILJOONA
 !! The digit string ending in 0's pronounced as millions
-!! € 1000000
-!! € 1000000:t
-!! € 1000000:aa
+!!€ 1000000
+!!€ 1000000:t
+!!€ 1000000:aa
 0  DIGITS_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  DIGITS_BACK_POSS    ;
@@ -507,9 +507,9 @@ LEXICON DIGITS_MILJOONA
 
 LEXICON DIGITS_MILJARDI
 !! The digit string ending in 0's pronounced as milliards
-!! € 1000000000
-!! € 1000000000:t
-!! € 1000000000:a
+!!€ 1000000000
+!!€ 1000000000:t
+!!€ 1000000000:a
 0  DIGITS_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  DIGITS_BACK_POSS    ;
@@ -543,9 +543,9 @@ LEXICON DIGITS_MILJARDI
 
 LEXICON DIGITS_ENSIMMÄINEN
 !! The digit string ending in 1. pronounced as first
-!! € 1.
-!! € 1:nen
-!! € 1:stä
+!!€ 1.
+!!€ 1:nen
+!!€ 1:stä
 +Sg+Nom:.    #   ;
 +Sg+Nom:%:nen  DIGITS_FRONT_POSS_OPT    ;
 +Pl+Nom:%:set DIGITS_FRONT_CLIT_OPT ;
@@ -577,9 +577,9 @@ LEXICON DIGITS_ENSIMMÄINEN
 
 LEXICON DIGITS_TOINEN
 !! The digit string ending in 2. pronounced as second
-!! € 2.
-!! € 2:nen
-!! € 2:sta
+!!€ 2.
+!!€ 2:nen
+!!€ 2:sta
 +Sg+Nom:.    #   ;
 +Sg+Nom:%:nen  DIGITS_BACK_POSS_OPT    ;
 +Pl+Nom:%:set DIGITS_BACK_CLIT_OPT ;
@@ -611,9 +611,9 @@ LEXICON DIGITS_TOINEN
 
 LEXICON DIGITS_KOLMAS
 !! The digit string ending in 3, 6, 8, 00 or 2 pronounced as ordinal
-!! € 3.
-!! € 3:s
-!! € 3:tta
+!!€ 3.
+!!€ 3:s
+!!€ 3:tta
 +Sg+Nom:.    #   ;
 +Sg+Nom:%:s  DIGITS_BACK_POSS_OPT    ;
 +Pl+Nom:%:nnet DIGITS_BACK_CLIT_OPT ;
@@ -645,9 +645,9 @@ LEXICON DIGITS_KOLMAS
 
 LEXICON DIGITS_NELJÄS
 !! The digit string ending in 4, 5, 7, 9, 0, or 1. pronounced as ordinal
-!! € 4.
-!! € 4:s
-!! € 4:ttä
+!!€ 4.
+!!€ 4:s
+!!€ 4:ttä
 +Sg+Nom:.    #   ;
 +Sg+Nom:%:s  DIGITS_FRONT_POSS_OPT    ;
 +Pl+Nom:%:nnet DIGITS_FRONT_CLIT_OPT ;
@@ -679,8 +679,8 @@ LEXICON DIGITS_NELJÄS
 
 LEXICON DIGITS_ROMANS_TOINEN
 !! The roman digit string ending in II, III, VI, VIII, C, L or M
-!! € II
-!! € II:ta
+!!€ II
+!!€ II:ta
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  DIGITS_BACK_POSS    ;
 +Pl+Nom:%:  DIGITS_BACK_CLIT ;
@@ -711,8 +711,8 @@ LEXICON DIGITS_ROMANS_TOINEN
 
 LEXICON DIGITS_ROMANS_ENSIMMÄINEN
 !! The roman digit string ending in I, IV, V, VII, IX, X or 
-!! € I
-!! € I:tä
+!!€ I
+!!€ I:tä
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:s  DIGITS_FRONT_POSS_OPT    ;
 +Pl+Nom:%:nnet DIGITS_FRONT_CLIT_OPT ;
@@ -744,7 +744,7 @@ LEXICON DIGITS_ROMANS_ENSIMMÄINEN
 
 ! possessives
 LEXICON DIGITS_FRONT_POSS
-!! € 1:nsä
+!!€ 1:nsä
 +PxSg1:%>ni  DIGITS_FRONT_CLIT_OPT        ;
 +PxSg2:%>si  DIGITS_FRONT_CLIT_OPT        ;
 +PxSg3:%>nsä DIGITS_FRONT_CLIT_OPT        ;
@@ -753,7 +753,7 @@ LEXICON DIGITS_FRONT_POSS
 +PxPl3:%>nsä DIGITS_FRONT_CLIT_OPT        ;
 
 LEXICON DIGITS_BACK_POSS
-!! € 2:nsa
+!!€ 2:nsa
 +PxSg1:%>ni  DIGITS_BACK_CLIT_OPT        ;
 +PxSg2:%>si  DIGITS_BACK_CLIT_OPT        ;
 +PxSg3:%>nsa DIGITS_BACK_CLIT_OPT        ;
@@ -762,27 +762,27 @@ LEXICON DIGITS_BACK_POSS
 +PxPl3:%>nsa DIGITS_BACK_CLIT_OPT        ;
 
 LEXICON DIGITS_BACK_POSS_AN
-!! € 3:aan
+!!€ 3:aan
 +PxSg3:%>an    DIGITS_BACK_CLIT_OPT     ;
 +PxPl3:%>an    DIGITS_BACK_CLIT_OPT     ;
 
 LEXICON DIGITS_BACK_POSS_EN
-!! € 2:kseen
+!!€ 2:kseen
 +PxSg3:%>en    DIGITS_BACK_CLIT_OPT     ;
 +PxPl3:%>en    DIGITS_BACK_CLIT_OPT     ;
 
 LEXICON DIGITS_FRONT_POSS_EN
-!! € 1:kseen
+!!€ 1:kseen
 +PxSg3:%>en    DIGITS_FRONT_CLIT_OPT     ;
 +PxPl3:%>en    DIGITS_FRONT_CLIT_OPT     ;
 
 LEXICON DIGITS_FRONT_POSS_ÄN
-!! € 5:ttään
+!!€ 5:ttään
 +PxSg3:%>än    DIGITS_FRONT_CLIT_OPT     ;
 +PxPl3:%>än    DIGITS_FRONT_CLIT_OPT     ;
 
 LEXICON DIGITS_BACK_CLIT
-!! € 2:han
+!!€ 2:han
 +Foc/han:%>han   #        ;
 +Foc/han+Foc/kaan:%>hankaan  #        ;
 +Foc/han+Qst:%>hanko #        ;
@@ -811,7 +811,7 @@ LEXICON DIGITS_BACK_CLIT
 +Foc/kaan+Foc/pa:%>kaanpa    #        ;
 
 LEXICON DIGITS_FRONT_CLIT
-!! € 4:hän
+!!€ 4:hän
 +Foc/han:%>hän   #        ;
 +Foc/han+Foc/kaan:%>hänkään  #        ;
 +Foc/han+Qst:%>hänkö #        ;

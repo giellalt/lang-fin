@@ -10,19 +10,19 @@ LEXICON  N
 !! The nominals are classified by combination of the stem variations, suffix
 !! allomorphs and the vowel harmony. The nouns have number, case, possessive
 !! and clitic suffixes:
-!! € talo talo+N+Sg+Nom house
-!! € taloa talo+N+Sg+Par
-!! € taloissa talo+N+Pl+Ine
-!! € talostani talo+N+Sg+Ela+PxSg1
-!! € talollako talo+N+Sg+Ade+Qst
-!! € taloiltammepa talo+N+Pl+Abl+PxPl1+Foc/pa
+!!€ talo talo+N+Sg+Nom house
+!!€ taloa talo+N+Sg+Par
+!!€ taloissa talo+N+Pl+Ine
+!!€ talostani talo+N+Sg+Ela+PxSg1
+!!€ talollako talo+N+Sg+Ade+Qst
+!!€ taloiltammepa talo+N+Pl+Abl+PxPl1+Foc/pa
 !! The classification is based on suffix allomorphs, harmony, and the stem
 !! variation:
-!! € taloja talo+N+Pl+Par
-!! € sälöjä sälö+N+Pl+Par splinter
-!! € valtioita valtio+N+Pl+Par state
-!! € lepakot lepakko+N+Pl+Nom bat
-!! € padoissa pato+N+Pl+Ine dam
+!!€ taloja talo+N+Pl+Par
+!!€ sälöjä sälö+N+Pl+Par splinter
+!!€ valtioita valtio+N+Pl+Par state
+!!€ lepakot lepakko+N+Pl+Nom bat
+!!€ padoissa pato+N+Pl+Ine dam
 !! The minimal set to determine class of noun is singulars of nominative,
 !! essive and inessive, plurals of essive, elative, partitive, illative, and
 !! genitive. Find out stems and suffixes and match.
@@ -96064,25 +96064,25 @@ LEXICON N_TALO
 !! The most basic noun stem does not have any stem internal variation and
 !! uses few commonest allomorphs. The words in this class are either bisyllabic
 !! or have one of common derivational suffixes sto, ...:
-!! € talo talo+N+Sg+Nom house
-!! € talona talo+N+Sg+Ess
-!! € talossa talo+N+Sg+Ine
-!! € taloina talo+N+Pl+Ess
-!! € taloista talo+N+Pl+Ela
-!! € taloa talo+N+Sg+Par
+!!€ talo talo+N+Sg+Nom house
+!!€ talona talo+N+Sg+Ess
+!!€ talossa talo+N+Sg+Ine
+!!€ taloina talo+N+Pl+Ess
+!!€ taloista talo+N+Pl+Ela
+!!€ taloa talo+N+Sg+Par
 !! $ talota
-!! € taloon talo+N+Sg+Ill
+!!€ taloon talo+N+Sg+Ill
 !! $ taloseen
-!! € taloja talo+N+Pl+Par
+!!€ taloja talo+N+Pl+Par
 !! $ taloita
-!! € talojen talo+N+Pl+Gen
+!!€ talojen talo+N+Pl+Gen
 !! $ taloiden
 !! $ taloitten
-!! € taloihin talo+N+Pl+Gen
+!!€ taloihin talo+N+Pl+Gen
 !! $ taloisiin
-!! € talojuttu talo#juttu, house thing
-!! € talonjuttu talon#juttu, house's thing
-!! € talojenjuttu talojen#juttu, houses' thing
+!!€ talojuttu talo#juttu, house thing
+!!€ talonjuttu talon#juttu, house's thing
+!!€ talojenjuttu talojen#juttu, houses' thing
 0    N_BACK_NOMINATIVE    ;
 0    N_BACK_SINGULARS    ;
 0    N_BACK_PLURALS ;
@@ -96099,16 +96099,16 @@ LEXICON N_TALO
 LEXICON N_ASU
 !! The stems ending in u are also without variationm and the bisyllabic ones
 !! have the same simple allomorph pattern:
-!! € asu asu+N+Sg+Nom outfit
-!! € asua asu+N+Sg+Par
-!! € asuun asu+N+Sg+Ill
-!! € asuna asu+N+Sg+Ess
-!! € asussa asu+N+Sg+Ine
-!! € asuja asu+N+Pl+Par
-!! € asujen asu+N+Pl+Gen
-!! € asuihin asu+N+Pl+Ill
-!! € asuina asu+N+Pl+Ess
-!! € asuissa asu+N+Pl+Ine
+!!€ asu asu+N+Sg+Nom outfit
+!!€ asua asu+N+Sg+Par
+!!€ asuun asu+N+Sg+Ill
+!!€ asuna asu+N+Sg+Ess
+!!€ asussa asu+N+Sg+Ine
+!!€ asuja asu+N+Pl+Par
+!!€ asujen asu+N+Pl+Gen
+!!€ asuihin asu+N+Pl+Ill
+!!€ asuina asu+N+Pl+Ess
+!!€ asuissa asu+N+Pl+Ine
 0    N_BACK_NOMINATIVE    ;
 0    N_BACK_SINGULARS    ;
 0    N_BACK_PLURALS ;
@@ -96122,16 +96122,16 @@ LEXICON N_ASU
 0    N_COMPOUND_JEN ;
 
 LEXICON N_KÄRRY
-!! € kärry kärry+N+Sg+Nom cart
-!! € kärryä kärry+N+Sg+Par
-!! € kärryyn kärry+N+Sg+Ill
-!! € kärrynä kärry+N+Sg+Ess
-!! € kärryssä kärry+N+Sg+Ine
-!! € kärryjä kärry+N+Pl+Par
-!! € kärryjen kärry+N+Pl+Gen
-!! € kärryihin kärry+N+Pl+Ill
-!! € kärryinä kärry+N+Pl+Ess
-!! € kärryissä kärry+N+Pl+Ine
+!!€ kärry kärry+N+Sg+Nom cart
+!!€ kärryä kärry+N+Sg+Par
+!!€ kärryyn kärry+N+Sg+Ill
+!!€ kärrynä kärry+N+Sg+Ess
+!!€ kärryssä kärry+N+Sg+Ine
+!!€ kärryjä kärry+N+Pl+Par
+!!€ kärryjen kärry+N+Pl+Gen
+!!€ kärryihin kärry+N+Pl+Ill
+!!€ kärryinä kärry+N+Pl+Ess
+!!€ kärryissä kärry+N+Pl+Ine
 0    N_FRONT_NOMINATIVE    ;
 0    N_FRONT_SINGULARS    ;
 0    N_FRONT_PLURALS ;
@@ -96145,16 +96145,16 @@ LEXICON N_KÄRRY
 0    N_COMPOUND_JEN ;
 
 LEXICON N_MÖMMÖ
-!! € mömmö mömmö+N+Sg+Nom gunk
-!! € mömmöä mömmö+N+Sg+Par
-!! € mömmöön mömmö+N+Sg+Ill
-!! € mömmönä mömmö+N+Sg+Ess
-!! € mömmössä mömmö+N+Sg+Ine
-!! € mömmöjä mömmö+N+Pl+Par
-!! € mömmöjen mömmö+N+Pl+Gen
-!! € mömmöihin mömmö+N+Pl+Ill
-!! € mömmöinä mömmö+N+Pl+Ess
-!! € mömmöissä mömmö+N+Pl+Ine
+!!€ mömmö mömmö+N+Sg+Nom gunk
+!!€ mömmöä mömmö+N+Sg+Par
+!!€ mömmöön mömmö+N+Sg+Ill
+!!€ mömmönä mömmö+N+Sg+Ess
+!!€ mömmössä mömmö+N+Sg+Ine
+!!€ mömmöjä mömmö+N+Pl+Par
+!!€ mömmöjen mömmö+N+Pl+Gen
+!!€ mömmöihin mömmö+N+Pl+Ill
+!!€ mömmöinä mömmö+N+Pl+Ess
+!!€ mömmöissä mömmö+N+Pl+Ine
 0    N_FRONT_NOMINATIVE    ;
 0    N_FRONT_SINGULARS    ;
 0    N_FRONT_PLURALS ;
@@ -96169,10 +96169,10 @@ LEXICON N_MÖMMÖ
 
 
 LEXICON N_UKKO
-!! € ukko ukko+N+Sg+Nom geezer
-!! € ukossa ukko+N+Sg+Ine
-!! € ukoista ukko+N+Pl+Ela
-!! € ukkoihin ukko+N+Pl+Ill
+!!€ ukko ukko+N+Sg+Nom geezer
+!!€ ukossa ukko+N+Sg+Ine
+!!€ ukoista ukko+N+Pl+Ela
+!!€ ukkoihin ukko+N+Pl+Ill
 0:ko      N_BACK_NOMINATIVE    ;
 0:ko      N_BACK_STRONG_SINGULARS    ;
 0:o    N_BACK_WEAK_SINGULARS    ;
@@ -96189,10 +96189,10 @@ LEXICON N_UKKO
 
 
 LEXICON N_TIKKU
-!! € tikku tikku+N+Sg+Nom stick
-!! € tikussa tikku+N+Sg+Ine
-!! € tikuista tikku+N+Pl+Ela
-!! € tikkuihin tikku+N+Pl+Ill
+!!€ tikku tikku+N+Sg+Nom stick
+!!€ tikussa tikku+N+Sg+Ine
+!!€ tikuista tikku+N+Pl+Ela
+!!€ tikkuihin tikku+N+Pl+Ill
 0:ku   N_BACK_NOMINATIVE    ;
 0:ku   N_BACK_STRONG_SINGULARS    ;
 0:u    N_BACK_WEAK_SINGULARS    ;
@@ -96209,10 +96209,10 @@ LEXICON N_TIKKU
 
 
 LEXICON N_MYRKKY
-!! € myrkky myrkky+N+Sg+Nom poison
-!! € myrkyssä myrkky+N+Sg+Ine
-!! € myrkyistä myrkky+N+Pl+Ela
-!! € myrkkyihin myrkky+N+Pl+Ill
+!!€ myrkky myrkky+N+Sg+Nom poison
+!!€ myrkyssä myrkky+N+Sg+Ine
+!!€ myrkyistä myrkky+N+Pl+Ela
+!!€ myrkkyihin myrkky+N+Pl+Ill
 0:ky   N_FRONT_NOMINATIVE    ;
 0:ky   N_FRONT_STRONG_SINGULARS    ;
 0:y    N_FRONT_WEAK_SINGULARS    ;
@@ -96228,10 +96228,10 @@ LEXICON N_MYRKKY
 0:ky      N_COMPOUND_JEN ;
 
 LEXICON N_YÖKKÖ
-!! € yökkö yökkö+N+Sg+Nom nightfly
-!! € yökössä yökkö+N+Sg+Ine
-!! € yököistä yökkö+N+Pl+Ela
-!! € yökköihin yökkö+N+Pl+Ill
+!!€ yökkö yökkö+N+Sg+Nom nightfly
+!!€ yökössä yökkö+N+Sg+Ine
+!!€ yököistä yökkö+N+Pl+Ela
+!!€ yökköihin yökkö+N+Pl+Ill
 0:kö   N_FRONT_NOMINATIVE    ;
 0:kö   N_FRONT_STRONG_SINGULARS    ;
 0:ö    N_FRONT_WEAK_SINGULARS    ;
@@ -96247,10 +96247,10 @@ LEXICON N_YÖKKÖ
 0:kö      N_COMPOUND_JEN ;
 
 LEXICON N_HAPPO
-!! € happo happo+N+Sg+Nom acid
-!! € hapossa happo+N+Sg+Ine
-!! € hapoista happo+N+Pl+Ela
-!! € happoihin happo+N+Pl+Ill
+!!€ happo happo+N+Sg+Nom acid
+!!€ hapossa happo+N+Sg+Ine
+!!€ hapoista happo+N+Pl+Ela
+!!€ happoihin happo+N+Pl+Ill
 0:po      N_BACK_NOMINATIVE    ;
 0:po      N_BACK_STRONG_SINGULARS    ;
 0:o       N_BACK_WEAK_SINGULARS    ;
@@ -96267,10 +96267,10 @@ LEXICON N_HAPPO
 
 
 LEXICON N_LIPPU
-!! € lippu lippu+N+Sg+Nom
-!! € lipussa lippu+N+Sg+Ine
-!! € lipuista lippu+N+Pl+Ela
-!! € lippuihin lippu+N+Pl+Ill
+!!€ lippu lippu+N+Sg+Nom
+!!€ lipussa lippu+N+Sg+Ine
+!!€ lipuista lippu+N+Pl+Ela
+!!€ lippuihin lippu+N+Pl+Ill
 0:pu   N_BACK_NOMINATIVE    ;
 0:pu   N_BACK_STRONG_SINGULARS    ;
 0:u    N_BACK_WEAK_SINGULARS    ;
@@ -96287,10 +96287,10 @@ LEXICON N_LIPPU
 
 
 LEXICON N_RYYPPY
-!! € ryyppy ryyppy+N+Sg+Nom swirl
-!! € ryypyssä ryyppy+N+Sg+Ine
-!! € ryypyistä ryyppy+N+Pl+Ela
-!! € ryyppyihin ryyppy+N+Pl+Ill
+!!€ ryyppy ryyppy+N+Sg+Nom swirl
+!!€ ryypyssä ryyppy+N+Sg+Ine
+!!€ ryypyistä ryyppy+N+Pl+Ela
+!!€ ryyppyihin ryyppy+N+Pl+Ill
 0:py   N_FRONT_NOMINATIVE    ;
 0:py   N_FRONT_STRONG_SINGULARS    ;
 0:y    N_FRONT_WEAK_SINGULARS    ;
@@ -96306,10 +96306,10 @@ LEXICON N_RYYPPY
 0:py      N_COMPOUND_JEN ;
 
 LEXICON N_TÖRPPÖ
-!! € törppö törppö+N+Sg+Nom bozo
-!! € törpössä törppö+N+Sg+Ine
-!! € törpöistä törppö+N+Pl+Ela
-!! € törppöihin törppö+N+Pl+Ill
+!!€ törppö törppö+N+Sg+Nom bozo
+!!€ törpössä törppö+N+Sg+Ine
+!!€ törpöistä törppö+N+Pl+Ela
+!!€ törppöihin törppö+N+Pl+Ill
 0:pö   N_FRONT_NOMINATIVE    ;
 0:pö   N_FRONT_STRONG_SINGULARS    ;
 0:ö    N_FRONT_WEAK_SINGULARS    ;
@@ -96325,10 +96325,10 @@ LEXICON N_TÖRPPÖ
 0:pö      N_COMPOUND_JEN ;
 
 LEXICON N_HIRTTO
-!! € hirtto hirtto+N+Sg+Nom hanging
-!! € hirtossa hirtto+N+Sg+Ine
-!! € hirtoista hirtto+N+Pl+Ela
-!! € hirttoihin hirtto+N+Pl+Ill
+!!€ hirtto hirtto+N+Sg+Nom hanging
+!!€ hirtossa hirtto+N+Sg+Ine
+!!€ hirtoista hirtto+N+Pl+Ela
+!!€ hirttoihin hirtto+N+Pl+Ill
 0:to      N_BACK_NOMINATIVE    ;
 0:to      N_BACK_STRONG_SINGULARS    ;
 0:o       N_BACK_WEAK_SINGULARS    ;
@@ -96345,10 +96345,10 @@ LEXICON N_HIRTTO
 
 
 LEXICON N_TORTTU
-!! € torttu torttu+N+Sg+Nom tart
-!! € tortussa torttu+N+Sg+Ine
-!! € tortuista torttu+N+Pl+Ela
-!! € torttuihin torttu+N+Pl+Ill
+!!€ torttu torttu+N+Sg+Nom tart
+!!€ tortussa torttu+N+Sg+Ine
+!!€ tortuista torttu+N+Pl+Ela
+!!€ torttuihin torttu+N+Pl+Ill
 0:tu   N_BACK_NOMINATIVE    ;
 0:tu   N_BACK_STRONG_SINGULARS    ;
 0:u    N_BACK_WEAK_SINGULARS    ;
@@ -96365,10 +96365,10 @@ LEXICON N_TORTTU
 
 
 LEXICON N_PYTTY
-!! € pytty pytty+N+Sg+Nom cup
-!! € pytyssä pytty+N+Sg+Ine
-!! € pytyistä pytty+N+Pl+Ela
-!! € pyttyihin pytty+N+Pl+Ill
+!!€ pytty pytty+N+Sg+Nom cup
+!!€ pytyssä pytty+N+Sg+Ine
+!!€ pytyistä pytty+N+Pl+Ela
+!!€ pyttyihin pytty+N+Pl+Ill
 0:ty   N_FRONT_NOMINATIVE    ;
 0:ty   N_FRONT_STRONG_SINGULARS    ;
 0:y    N_FRONT_WEAK_SINGULARS    ;
@@ -96384,10 +96384,10 @@ LEXICON N_PYTTY
 0:ty      N_COMPOUND_JEN ;
 
 LEXICON N_PÖNTTÖ
-!! € pönttö pönttö+N+Sg+Nom pot
-!! € pöntössä pönttö+N+Sg+Ine
-!! € pöntöistä pönttö+N+Pl+Ela
-!! € pönttöihin pönttö+N+Pl+Ill
+!!€ pönttö pönttö+N+Sg+Nom pot
+!!€ pöntössä pönttö+N+Sg+Ine
+!!€ pöntöistä pönttö+N+Pl+Ela
+!!€ pönttöihin pönttö+N+Pl+Ill
 0:tö   N_FRONT_NOMINATIVE    ;
 0:tö   N_FRONT_STRONG_SINGULARS    ;
 0:ö    N_FRONT_WEAK_SINGULARS    ;
@@ -96407,9 +96407,9 @@ LEXICON N_TEKO
 !! Between two vowels, the weak grade of k is optionally an apostrophe instead.
 !! For k that is not optionally ’, use the variation class kk ~ k instead
 !! (e.g. N_UKKO).
-!! € teko teko+N+Sg+Nom action
-!! € teossa teko+N+Sg+Ine
-!! € te’ossa teko+N+Sg+Ine
+!!€ teko teko+N+Sg+Nom action
+!!€ teossa teko+N+Sg+Ine
+!!€ te’ossa teko+N+Sg+Ine
 0:ko      N_BACK_NOMINATIVE    ;
 0:ko      N_BACK_STRONG_SINGULARS    ;
 0:o       N_BACK_WEAK_SINGULARS    ;
@@ -96429,9 +96429,9 @@ LEXICON N_TEKO
 
 
 LEXICON N_MAKU
-!! € maku maku+N+Sg+Nom taste
-!! € maussa maku+N+Sg+Ine
-!! € ma’ussa maku+N+Sg+Ine
+!!€ maku maku+N+Sg+Nom taste
+!!€ maussa maku+N+Sg+Ine
+!!€ ma’ussa maku+N+Sg+Ine
 0:ku   N_BACK_NOMINATIVE    ;
 0:ku   N_BACK_STRONG_SINGULARS    ;
 0:u    N_BACK_WEAK_SINGULARS    ;
@@ -96452,9 +96452,9 @@ LEXICON N_MAKU
 
 LEXICON N_NÄKY
 !
-!! € näky
-!! € näyssä
-!! € nä’yssä
+!!€ näky
+!!€ näyssä
+!!€ nä’yssä
 0:ky   N_FRONT_NOMINATIVE    ;
 0:ky   N_FRONT_STRONG_SINGULARS    ;
 0:y    N_FRONT_WEAK_SINGULARS    ;
@@ -96474,9 +96474,9 @@ LEXICON N_NÄKY
 
 LEXICON N_NÄKÖ
 !
-!! € näkö
-!! € näössä
-!! € nä’össä
+!!€ näkö
+!!€ näössä
+!!€ nä’össä
 0:kö   N_FRONT_NOMINATIVE    ;
 0:kö   N_FRONT_STRONG_SINGULARS    ;
 0:ö    N_FRONT_WEAK_SINGULARS    ;
@@ -96498,8 +96498,8 @@ LEXICON N_RUOKO
 !! Between three vowels where k is surrounded by same vowels the k becomes
 !! obligatorily ’, for other cases use classes for k optionally ’ (e.g.
 !! N_TEKO) or kk ~ k (e.g. N_UKKO).
-!! € ruoko
-!! € ruo’ossa
+!!€ ruoko
+!!€ ruo’ossa
 0:ko      N_BACK_NOMINATIVE    ;
 0:ko      N_BACK_STRONG_SINGULARS    ;
 0:’o      N_BACK_WEAK_SINGULARS    ;
@@ -96516,9 +96516,9 @@ LEXICON N_RUOKO
 
 
 LEXICON N_LIUKU
-!! € 
-!! € liuku
-!! € liu’ussa
+!!€ 
+!!€ liuku
+!!€ liu’ussa
 0:ku   N_BACK_NOMINATIVE    ;
 0:ku   N_BACK_STRONG_SINGULARS    ;
 0:’u   N_BACK_WEAK_SINGULARS    ;
@@ -96568,10 +96568,10 @@ LEXICON N_LIUKU
 
 LEXICON N_HEPO
 !
-!! € hepo
-!! € hevossa
-!! € hepoina
-!! € hevoista
+!!€ hepo
+!!€ hevossa
+!!€ hepoina
+!!€ hevoista
 0:po      N_BACK_NOMINATIVE    ;
 0:po      N_BACK_STRONG_SINGULARS    ;
 0:vo       N_BACK_WEAK_SINGULARS    ;
@@ -96589,10 +96589,10 @@ LEXICON N_HEPO
 
 LEXICON N_APU
 !
-!! € apu
-!! € avussa
-!! € apuihin
-!! € avuista
+!!€ apu
+!!€ avussa
+!!€ apuihin
+!!€ avuista
 0:pu   N_BACK_NOMINATIVE    ;
 0:pu   N_BACK_STRONG_SINGULARS    ;
 0:vu    N_BACK_WEAK_SINGULARS    ;
@@ -96610,10 +96610,10 @@ LEXICON N_APU
 
 LEXICON N_KÄPY
 !
-!! € käpy
-!! € kävyssä
-!! € käpyihin
-!! € kävyistä
+!!€ käpy
+!!€ kävyssä
+!!€ käpyihin
+!!€ kävyistä
 0:py   N_FRONT_NOMINATIVE    ;
 0:py   N_FRONT_STRONG_SINGULARS    ;
 0:vy    N_FRONT_WEAK_SINGULARS    ;
@@ -96630,10 +96630,10 @@ LEXICON N_KÄPY
 
 LEXICON N_LÖPÖ
 !
-!! € löpö
-!! € lövössä
-!! € löpöihin
-!! € lövöistä
+!!€ löpö
+!!€ lövössä
+!!€ löpöihin
+!!€ lövöistä
 0:pö   N_FRONT_NOMINATIVE    ;
 0:pö   N_FRONT_STRONG_SINGULARS    ;
 0:vö    N_FRONT_WEAK_SINGULARS    ;
@@ -96650,10 +96650,10 @@ LEXICON N_LÖPÖ
 
 LEXICON N_VETO
 !
-!! € veto
-!! € vedossa
-!! € vetoihin
-!! € vedoista
+!!€ veto
+!!€ vedossa
+!!€ vetoihin
+!!€ vedoista
 0:to      N_BACK_NOMINATIVE    ;
 0:to      N_BACK_STRONG_SINGULARS    ;
 0:do       N_BACK_WEAK_SINGULARS    ;
@@ -96671,10 +96671,10 @@ LEXICON N_VETO
 
 LEXICON N_KUITU
 !
-!! € kuitu
-!! € kuidussa
-!! € kuituihin
-!! € kuiduista
+!!€ kuitu
+!!€ kuidussa
+!!€ kuituihin
+!!€ kuiduista
 0:tu   N_BACK_NOMINATIVE    ;
 0:tu   N_BACK_STRONG_SINGULARS    ;
 0:du    N_BACK_WEAK_SINGULARS    ;
@@ -96692,10 +96692,10 @@ LEXICON N_KUITU
 
 LEXICON N_VETY
 !
-!! € vety
-!! € vedyssä
-!! € vetyihin
-!! € vedyistä
+!!€ vety
+!!€ vedyssä
+!!€ vetyihin
+!!€ vedyistä
 0:ty   N_FRONT_NOMINATIVE    ;
 0:ty   N_FRONT_STRONG_SINGULARS    ;
 0:dy    N_FRONT_WEAK_SINGULARS    ;
@@ -96712,10 +96712,10 @@ LEXICON N_VETY
 
 LEXICON N_HÄÄTÖ
 !
-!! € häätö
-!! € häädössä
-!! € häädöistä
-!! € häätöihin
+!!€ häätö
+!!€ häädössä
+!!€ häädöistä
+!!€ häätöihin
 0:tö   N_FRONT_NOMINATIVE    ;
 0:tö   N_FRONT_STRONG_SINGULARS    ;
 0:dö    N_FRONT_WEAK_SINGULARS    ;
@@ -96732,10 +96732,10 @@ LEXICON N_HÄÄTÖ
 
 LEXICON N_RUNKO
 !
-!! € runko
-!! € rungossa
-!! € rungoista
-!! € runkoihin
+!!€ runko
+!!€ rungossa
+!!€ rungoista
+!!€ runkoihin
 0:ko      N_BACK_NOMINATIVE    ;
 0:ko      N_BACK_STRONG_SINGULARS    ;
 0:go    N_BACK_WEAK_SINGULARS    ;
@@ -96753,10 +96753,10 @@ LEXICON N_RUNKO
 
 LEXICON N_VINKU
 !
-!! € vinku
-!! € vingussa
-!! € vinguista
-!! € vinkuihin
+!!€ vinku
+!!€ vingussa
+!!€ vinguista
+!!€ vinkuihin
 0:ku   N_BACK_NOMINATIVE    ;
 0:ku   N_BACK_STRONG_SINGULARS    ;
 0:gu    N_BACK_WEAK_SINGULARS    ;
@@ -96774,10 +96774,10 @@ LEXICON N_VINKU
 
 LEXICON N_SÄNKY
 !
-!! € sänky
-!! € sängyssä
-!! € sängyistä
-!! € sänkyihin
+!!€ sänky
+!!€ sängyssä
+!!€ sängyistä
+!!€ sänkyihin
 0:ky   N_FRONT_NOMINATIVE    ;
 0:ky   N_FRONT_STRONG_SINGULARS    ;
 0:gy    N_FRONT_WEAK_SINGULARS    ;
@@ -96794,10 +96794,10 @@ LEXICON N_SÄNKY
 
 LEXICON N_YLÄNKÖ
 !
-!! € ylänkö
-!! € ylängössä
-!! € ylängöistä
-!! € ylänköihin
+!!€ ylänkö
+!!€ ylängössä
+!!€ ylängöistä
+!!€ ylänköihin
 0:kö   N_FRONT_NOMINATIVE    ;
 0:kö   N_FRONT_STRONG_SINGULARS    ;
 0:gö    N_FRONT_WEAK_SINGULARS    ;
@@ -96814,10 +96814,10 @@ LEXICON N_YLÄNKÖ
 
 LEXICON N_SAMPO
 !
-!! € sampo
-!! € sammossa
-!! € sampoina
-!! € sammoista
+!!€ sampo
+!!€ sammossa
+!!€ sampoina
+!!€ sammoista
 0:po      N_BACK_NOMINATIVE    ;
 0:po      N_BACK_STRONG_SINGULARS    ;
 0:mo       N_BACK_WEAK_SINGULARS    ;
@@ -96835,10 +96835,10 @@ LEXICON N_SAMPO
 
 LEXICON N_RUMPU
 !
-!! € rumpu
-!! € rummussa
-!! € rumpuihin
-!! € rummuista
+!!€ rumpu
+!!€ rummussa
+!!€ rumpuihin
+!!€ rummuista
 0:pu   N_BACK_NOMINATIVE    ;
 0:pu   N_BACK_STRONG_SINGULARS    ;
 0:mu    N_BACK_WEAK_SINGULARS    ;
@@ -96872,10 +96872,10 @@ LEXICON N_RUMPU
 
 LEXICON N_LÄMPÖ
 !
-!! € lämpö
-!! € lämmössä
-!! € lämpöihin
-!! € lämmöistä
+!!€ lämpö
+!!€ lämmössä
+!!€ lämpöihin
+!!€ lämmöistä
 0:pö   N_FRONT_NOMINATIVE    ;
 0:pö   N_FRONT_STRONG_SINGULARS    ;
 0:mö    N_FRONT_WEAK_SINGULARS    ;
@@ -96892,10 +96892,10 @@ LEXICON N_LÄMPÖ
 
 LEXICON N_KIELTO
 !
-!! € kielto
-!! € kiellossa
-!! € kieltoihin
-!! € kielloista
+!!€ kielto
+!!€ kiellossa
+!!€ kieltoihin
+!!€ kielloista
 0:to      N_BACK_NOMINATIVE    ;
 0:to      N_BACK_STRONG_SINGULARS    ;
 0:lo       N_BACK_WEAK_SINGULARS    ;
@@ -96913,10 +96913,10 @@ LEXICON N_KIELTO
 
 LEXICON N_HUOLITELTU
 !
-!! € huoliteltu
-!! € huolitellussa
-!! € huoliteltuihin
-!! € huolitelluista
+!!€ huoliteltu
+!!€ huolitellussa
+!!€ huoliteltuihin
+!!€ huolitelluista
 0:tu   N_BACK_NOMINATIVE    ;
 0:tu   N_BACK_STRONG_SINGULARS    ;
 0:lu    N_BACK_WEAK_SINGULARS    ;
@@ -96934,10 +96934,10 @@ LEXICON N_HUOLITELTU
 
 LEXICON N_EPÄILTY
 !
-!! € epäilty
-!! € epäillyssä
-!! € epäiltyihin
-!! € epäillyistä
+!!€ epäilty
+!!€ epäillyssä
+!!€ epäiltyihin
+!!€ epäillyistä
 0:ty   N_FRONT_NOMINATIVE    ;
 0:ty   N_FRONT_STRONG_SINGULARS    ;
 0:ly    N_FRONT_WEAK_SINGULARS    ;
@@ -96954,10 +96954,10 @@ LEXICON N_EPÄILTY
 
 LEXICON N_SISÄLTÖ
 !
-!! € sisältö
-!! € sisällössä
-!! € sisällöistä
-!! € sisältöihin
+!!€ sisältö
+!!€ sisällössä
+!!€ sisällöistä
+!!€ sisältöihin
 0:tö   N_FRONT_NOMINATIVE    ;
 0:tö   N_FRONT_STRONG_SINGULARS    ;
 0:lö    N_FRONT_WEAK_SINGULARS    ;
@@ -96974,10 +96974,10 @@ LEXICON N_SISÄLTÖ
 
 LEXICON N_TUNTO
 !
-!! € tunto
-!! € tunnossa
-!! € tuntoihin
-!! € tunnoista
+!!€ tunto
+!!€ tunnossa
+!!€ tuntoihin
+!!€ tunnoista
 0:to      N_BACK_NOMINATIVE    ;
 0:to      N_BACK_STRONG_SINGULARS    ;
 0:no       N_BACK_WEAK_SINGULARS    ;
@@ -96995,10 +96995,10 @@ LEXICON N_TUNTO
 
 LEXICON N_LINTU
 !
-!! € lintu
-!! € linnussa
-!! € lintuihin
-!! € linnuista
+!!€ lintu
+!!€ linnussa
+!!€ lintuihin
+!!€ linnuista
 0:tu   N_BACK_NOMINATIVE    ;
 0:tu   N_BACK_STRONG_SINGULARS    ;
 0:nu    N_BACK_WEAK_SINGULARS    ;
@@ -97016,10 +97016,10 @@ LEXICON N_LINTU
 
 LEXICON N_MÄNTY
 !
-!! € mänty
-!! € männyssä
-!! € mäntyihin
-!! € männyistä
+!!€ mänty
+!!€ männyssä
+!!€ mäntyihin
+!!€ männyistä
 0:ty   N_FRONT_NOMINATIVE    ;
 0:ty   N_FRONT_STRONG_SINGULARS    ;
 0:ny    N_FRONT_WEAK_SINGULARS    ;
@@ -97036,10 +97036,10 @@ LEXICON N_MÄNTY
 
 LEXICON N_KÄÄNTÖ
 !
-!! € kääntö
-!! € käännössä
-!! € käännöistä
-!! € kääntöihin
+!!€ kääntö
+!!€ käännössä
+!!€ käännöistä
+!!€ kääntöihin
 0:tö   N_FRONT_NOMINATIVE    ;
 0:tö   N_FRONT_STRONG_SINGULARS    ;
 0:nö    N_FRONT_WEAK_SINGULARS    ;
@@ -97056,10 +97056,10 @@ LEXICON N_KÄÄNTÖ
 
 LEXICON N_SIIRTO
 !
-!! € siirto
-!! € siirrossa
-!! € siirtoihin
-!! € siirroista
+!!€ siirto
+!!€ siirrossa
+!!€ siirtoihin
+!!€ siirroista
 0:to      N_BACK_NOMINATIVE    ;
 0:to      N_BACK_STRONG_SINGULARS    ;
 0:ro       N_BACK_WEAK_SINGULARS    ;
@@ -97130,10 +97130,10 @@ LEXICON N_SIIRTO
 
 LEXICON N_LUKU
 !
-!! € luku
-!! € luvussa
-!! € luvuista
-!! € lukuihin
+!!€ luku
+!!€ luvussa
+!!€ luvuista
+!!€ lukuihin
 0:ku   N_BACK_NOMINATIVE    ;
 0:ku   N_BACK_STRONG_SINGULARS    ;
 0:vu    N_BACK_WEAK_SINGULARS    ;
@@ -97151,10 +97151,10 @@ LEXICON N_LUKU
 
 LEXICON N_KYKY
 !
-!! € kyky
-!! € kyvyssä
-!! € kyvyistä
-!! € kykyihin
+!!€ kyky
+!!€ kyvyssä
+!!€ kyvyistä
+!!€ kykyihin
 0:ky   N_FRONT_NOMINATIVE    ;
 0:ky   N_FRONT_STRONG_SINGULARS    ;
 0:vy    N_FRONT_WEAK_SINGULARS    ;
@@ -97173,12 +97173,12 @@ LEXICON N_KYKY
 LEXICON N_RUIPELO
 !! The trisyllabic and longer words with stem vowel o have no stem variation
 !! either, but selection of suffix allomorphs for plural genitives and:
-!! € ruipelo
-!! € ruipeloita
-!! € ruipeloja
-!! € ruipelojen
-!! € ruipeloiden
-!! € ruipeloitten
+!!€ ruipelo
+!!€ ruipeloita
+!!€ ruipeloja
+!!€ ruipelojen
+!!€ ruipeloiden
+!!€ ruipeloitten
 0    N_BACK_NOMINATIVE    ;
 0    N_BACK_SINGULARS    ;
 0    N_BACK_PLURALS ;
@@ -97198,12 +97198,12 @@ LEXICON N_RUIPELO
 
 LEXICON N_SEIKKAILU
 !
-!! € seikkailu
-!! € seikkailuja
-!! € seikkailuita
-!! € seikkailujen
-!! € seikkailuiden
-!! € seikkailuitten
+!!€ seikkailu
+!!€ seikkailuja
+!!€ seikkailuita
+!!€ seikkailujen
+!!€ seikkailuiden
+!!€ seikkailuitten
 0    N_BACK_NOMINATIVE    ;
 0    N_BACK_SINGULARS    ;
 0    N_BACK_PLURALS ;
@@ -97223,12 +97223,12 @@ LEXICON N_SEIKKAILU
 
 LEXICON N_VEHKEILY
 !
-!! € vehkeily
-!! € vehkeilyjä
-!! € vehkeilyitä
-!! € vehkeilyjen
-!! € vehkeilyiden
-!! € vehkeilyitten
+!!€ vehkeily
+!!€ vehkeilyjä
+!!€ vehkeilyitä
+!!€ vehkeilyjen
+!!€ vehkeilyiden
+!!€ vehkeilyitten
 0    N_FRONT_NOMINATIVE    ;
 0    N_FRONT_SINGULARS    ;
 0    N_FRONT_PLURALS ;
@@ -97248,10 +97248,10 @@ LEXICON N_VEHKEILY
 
 LEXICON N_JÄÄTELÖ
 !
-!! € jäätelö
-!! € jäätelöjen
-!! € jäätelöiden
-!! € jäätelöitten
+!!€ jäätelö
+!!€ jäätelöjen
+!!€ jäätelöiden
+!!€ jäätelöitten
 0    N_FRONT_NOMINATIVE    ;
 0    N_FRONT_SINGULARS    ;
 0    N_FRONT_PLURALS ;
@@ -97272,13 +97272,13 @@ LEXICON N_JÄÄTELÖ
 LEXICON N_TUOMIO
 !! The words with stem vowel o preceded by vowels still have no more stem
 !! variation than other cases, but give yet another pattern of allomorphs for:
-!! € tuomio
+!!€ tuomio
 !! $ tuomioa
-!! € tuomiota
-!! € tuomioita
+!!€ tuomiota
+!!€ tuomioita
 !! $ tuomiojen
-!! € tuomioiden
-!! € tuomioitten
+!!€ tuomioiden
+!!€ tuomioitten
 0    N_BACK_NOMINATIVE    ;
 0    N_BACK_SINGULARS    ;
 0    N_BACK_PLURALS ;
@@ -97295,10 +97295,10 @@ LEXICON N_TUOMIO
 
 LEXICON N_HÄIRIÖ
 !
-!! € häiriö
-!! € häiriötä
-!! € häiriöiden
-!! € häiriöitten
+!!€ häiriö
+!!€ häiriötä
+!!€ häiriöiden
+!!€ häiriöitten
 0    N_BACK_NOMINATIVE    ;
 0    N_FRONT_SINGULARS    ;
 0    N_FRONT_PLURALS ;
@@ -97317,11 +97317,11 @@ LEXICON N_ZOMBIE
 !! Similar inflection exists in limited amounts in new loan words that are
 !! written as pronounced (thus taking no stem variation but still ending
 !
-!! € zombie
-!! € zombieta
-!! € zombieita
-!! € zombieiden
-!! € zombieitten
+!!€ zombie
+!!€ zombieta
+!!€ zombieita
+!!€ zombieiden
+!!€ zombieitten
 0    N_BACK_NOMINATIVE    ;
 0    N_BACK_SINGULARS    ;
 0    N_BACK_PLURALS ;
@@ -97340,11 +97340,11 @@ LEXICON N_BERNIE
 !! Similar inflection exists in limited amounts in new loan words that are
 !! written as pronounced (thus taking no stem variation but still ending
 !
-!! € Bernie
-!! € Bernietä
-!! € Bernieitä
-!! € Bernieiden
-!! € Bernieitten
+!!€ Bernie
+!!€ Bernietä
+!!€ Bernieitä
+!!€ Bernieiden
+!!€ Bernieitten
 0    N_FRONT_NOMINATIVE    ;
 0    N_FRONT_SINGULARS    ;
 0    N_FRONT_PLURALS ;
@@ -97363,9 +97363,9 @@ LEXICON N_BERNIE
 LEXICON N_LEPAKKO
 !! The trisyllabic words ending with gradating long k have plural illative
 !
-!! € lepakko
-!! € lepakoihin
-!! € lepakkoihin
+!!€ lepakko
+!!€ lepakoihin
+!!€ lepakkoihin
 0:ko      N_BACK_NOMINATIVE    ;
 0:ko      N_BACK_STRONG_SINGULARS    ;
 0:o    N_BACK_WEAK_SINGULARS    ;
@@ -97389,9 +97389,9 @@ LEXICON N_LEPAKKO
 LEXICON N_YKSIKKÖ
 !! The trisyllabic words ending with gradating long k have plural illative
 !
-!! € yksikkö
-!! € yksiköihin
-!! € yksikköihin
+!!€ yksikkö
+!!€ yksiköihin
+!!€ yksikköihin
 0:kö      N_FRONT_NOMINATIVE    ;
 0:kö      N_FRONT_STRONG_SINGULARS    ;
 0:ö    N_FRONT_WEAK_SINGULARS    ;
@@ -97411,9 +97411,9 @@ LEXICON N_YKSIKKÖ
 
 LEXICON N_RUUVI
 !! the i: e : 0 variation:
-!! € ruuvi
-!! € ruuveina
-!! € ruuvien
+!!€ ruuvi
+!!€ ruuveina
+!!€ ruuvien
 0:i       N_BACK_NOMINATIVE    ;
 0:i       N_BACK_SINGULARS    ;
 0:e     N_BACK_PLURALS   ;
@@ -97428,9 +97428,9 @@ LEXICON N_RUUVI
 
 LEXICON N_TYYLI
 !
-!! € alkyyli
-!! € alkyyleinä
-!! € alkyylien
+!!€ alkyyli
+!!€ alkyyleinä
+!!€ alkyylien
 0:i       N_FRONT_NOMINATIVE    ;
 0:i       N_FRONT_SINGULARS    ;
 0:e     N_FRONT_PLURALS   ;
@@ -97446,11 +97446,11 @@ LEXICON N_TYYLI
 LEXICON N_LOKKI
 !! The i stems combined with (quantitative) gradation of k will form five
 !
-!! € lokki
-!! € lokissa
-!! € lokkeina
-!! € lokeista
-!! € lokkien
+!!€ lokki
+!!€ lokissa
+!!€ lokkeina
+!!€ lokeista
+!!€ lokkien
 0:ki       N_BACK_NOMINATIVE    ;
 0:ki       N_BACK_STRONG_SINGULARS    ;
 0:i     N_BACK_WEAK_SINGULARS    ;
@@ -97467,11 +97467,11 @@ LEXICON N_LOKKI
 
 LEXICON N_HÄKKI
 !
-!! € häkki
-!! € häkissä
-!! € häkkeinä
-!! € häkeistä
-!! € häkkien
+!!€ häkki
+!!€ häkissä
+!!€ häkkeinä
+!!€ häkeistä
+!!€ häkkien
 0:ki       N_FRONT_NOMINATIVE    ;
 0:ki       N_FRONT_STRONG_SINGULARS    ;
 0:i     N_FRONT_WEAK_SINGULARS    ;
@@ -97487,11 +97487,11 @@ LEXICON N_HÄKKI
 0:k        N_COMPOUND_IEN ;
 
 LEXICON N_KUPPI
-!! € kuppi
-!! € kupissa
-!! € kuppeina
-!! € kupeista
-!! € kuppien
+!!€ kuppi
+!!€ kupissa
+!!€ kuppeina
+!!€ kupeista
+!!€ kuppien
 0:pi       N_BACK_NOMINATIVE    ;
 0:pi       N_BACK_STRONG_SINGULARS    ;
 0:i     N_BACK_WEAK_SINGULARS    ;
@@ -97507,11 +97507,11 @@ LEXICON N_KUPPI
 0:p        N_COMPOUND_IEN ;
 
 LEXICON N_TYYPPI
-!! € tyyppi
-!! € tyypissä
-!! € tyyppeinä
-!! € tyypeistä
-!! € tyyppien
+!!€ tyyppi
+!!€ tyypissä
+!!€ tyyppeinä
+!!€ tyypeistä
+!!€ tyyppien
 0:pi       N_FRONT_NOMINATIVE    ;
 0:pi       N_FRONT_STRONG_SINGULARS    ;
 0:i     N_FRONT_WEAK_SINGULARS    ;
@@ -97527,11 +97527,11 @@ LEXICON N_TYYPPI
 0:p        N_COMPOUND_IEN ;
 
 LEXICON N_PORTTI
-!! € kortti
-!! € kortissa
-!! € kortteina
-!! € korteista
-!! € korttien
+!!€ kortti
+!!€ kortissa
+!!€ kortteina
+!!€ korteista
+!!€ korttien
 0:ti       N_BACK_NOMINATIVE    ;
 0:ti       N_BACK_STRONG_SINGULARS    ;
 0:i     N_BACK_WEAK_SINGULARS    ;
@@ -97549,11 +97549,11 @@ LEXICON N_PORTTI
 
 
 LEXICON N_SKEITTI
-!! € skeitti
-!! € skeitissä
-!! € skeitteinä
-!! € skeiteistä
-!! € skeittien
+!!€ skeitti
+!!€ skeitissä
+!!€ skeitteinä
+!!€ skeiteistä
+!!€ skeittien
 0:ti       N_FRONT_NOMINATIVE    ;
 0:ti       N_FRONT_STRONG_SINGULARS    ;
 0:i       N_FRONT_WEAK_SINGULARS    ;
@@ -97569,13 +97569,13 @@ LEXICON N_SKEITTI
 0:t       N_COMPOUND_IEN ;
 
 LEXICON N_LAKI
-!! € laki
-!! € laissa
-!! € la’issa
-!! € lakeina
-!! € laeista
-!! € la’eista
-!! € lakien
+!!€ laki
+!!€ laissa
+!!€ la’issa
+!!€ lakeina
+!!€ laeista
+!!€ la’eista
+!!€ lakien
 0:ki       N_BACK_NOMINATIVE    ;
 0:ki       N_BACK_STRONG_SINGULARS    ;
 0:i     N_BACK_WEAK_SINGULARS    ;
@@ -97592,11 +97592,11 @@ LEXICON N_LAKI
 0:k        N_COMPOUND_IEN ;
 
 LEXICON N_HUPI
-!! € hupi
-!! € huvissa
-!! € hupeina
-!! € huveista
-!! € hupien
+!!€ hupi
+!!€ huvissa
+!!€ hupeina
+!!€ huveista
+!!€ hupien
 0:pi       N_BACK_NOMINATIVE    ;
 0:pi       N_BACK_STRONG_SINGULARS    ;
 0:vi     N_BACK_WEAK_SINGULARS    ;
@@ -97629,11 +97629,11 @@ LEXICON N_HUPI
 
 
 LEXICON N_TAUTI
-!! € tauti
-!! € taudissa
-!! € tauteina
-!! € taudeista
-!! € tautien
+!!€ tauti
+!!€ taudissa
+!!€ tauteina
+!!€ taudeista
+!!€ tautien
 0:ti       N_BACK_NOMINATIVE    ;
 0:ti       N_BACK_STRONG_SINGULARS    ;
 0:di     N_BACK_WEAK_SINGULARS    ;
@@ -97649,11 +97649,11 @@ LEXICON N_TAUTI
 0:t        N_COMPOUND_IEN ;
 
 LEXICON N_NIHTI
-!! € nihti
-!! € nihdissä
-!! € nihteinä
-!! € nihdeistä
-!! € nihtien
+!!€ nihti
+!!€ nihdissä
+!!€ nihteinä
+!!€ nihdeistä
+!!€ nihtien
 0:ti       N_FRONT_NOMINATIVE    ;
 0:ti       N_FRONT_STRONG_SINGULARS    ;
 0:di     N_FRONT_WEAK_SINGULARS    ;
@@ -97669,11 +97669,11 @@ LEXICON N_NIHTI
 0:t        N_COMPOUND_IEN ;
 
 LEXICON N_VANKI
-!! € vanki
-!! € vangissa
-!! € vankeina
-!! € vangeista
-!! € vankien
+!!€ vanki
+!!€ vangissa
+!!€ vankeina
+!!€ vangeista
+!!€ vankien
 0:ki       N_BACK_NOMINATIVE    ;
 0:ki       N_BACK_STRONG_SINGULARS    ;
 0:gi     N_BACK_WEAK_SINGULARS    ;
@@ -97689,11 +97689,11 @@ LEXICON N_VANKI
 0:k        N_COMPOUND_IEN ;
 
 LEXICON N_HÄMMINKI
-!! € väylinki
-!! € väylingissä
-!! € väylinkeinä
-!! € väylingeistä
-!! € väylinkien
+!!€ väylinki
+!!€ väylingissä
+!!€ väylinkeinä
+!!€ väylingeistä
+!!€ väylinkien
 0:ki       N_FRONT_NOMINATIVE    ;
 0:ki       N_FRONT_STRONG_SINGULARS    ;
 0:gi     N_FRONT_WEAK_SINGULARS    ;
@@ -97725,11 +97725,11 @@ LEXICON N_HÄMMINKI
 !0:t        N_COMPOUND_IEN ;
 
 LEXICON N_PELTI
-!! € pelti
-!! € pellissä
-!! € pelteinä
-!! € pelleistä
-!! € peltien
+!!€ pelti
+!!€ pellissä
+!!€ pelteinä
+!!€ pelleistä
+!!€ peltien
 0:ti       N_FRONT_NOMINATIVE    ;
 0:ti       N_FRONT_STRONG_SINGULARS    ;
 0:li     N_FRONT_WEAK_SINGULARS    ;
@@ -97745,11 +97745,11 @@ LEXICON N_PELTI
 0:t        N_COMPOUND_IEN ;
 
 LEXICON N_SOINTI
-!! € sointi
-!! € soinnissa
-!! € sointeina
-!! € soinneista
-!! € sointien
+!!€ sointi
+!!€ soinnissa
+!!€ sointeina
+!!€ soinneista
+!!€ sointien
 0:ti       N_BACK_NOMINATIVE    ;
 0:ti       N_BACK_STRONG_SINGULARS    ;
 0:ni     N_BACK_WEAK_SINGULARS    ;
@@ -97765,11 +97765,11 @@ LEXICON N_SOINTI
 0:t        N_COMPOUND_IEN ;
 
 LEXICON N_VIENTI
-!! € vienti
-!! € viennissä
-!! € vienteinä
-!! € vienneistä
-!! € vientien
+!!€ vienti
+!!€ viennissä
+!!€ vienteinä
+!!€ vienneistä
+!!€ vientien
 0:ti       N_FRONT_NOMINATIVE    ;
 0:ti       N_FRONT_STRONG_SINGULARS    ;
 0:ni     N_FRONT_WEAK_SINGULARS    ;
@@ -97786,9 +97786,9 @@ LEXICON N_VIENTI
 
 LEXICON N_PUNK
 !! New loan words ending in consonant may be inflected as i stem words
-!! € punk
-!! € punkeina
-!! € punkien
+!!€ punk
+!!€ punkeina
+!!€ punkien
 0        N_BACK_NOMINATIVE    ;
 0:i       N_BACK_SINGULARS    ;
 0:e     N_BACK_PLURALS   ;
@@ -97803,9 +97803,9 @@ LEXICON N_PUNK
 
 LEXICON N_ZEN
 !! New loan words ending in consonant may be inflected as i stem words
-!! € zen
-!! € zeneinä
-!! € zenien
+!!€ zen
+!!€ zeneinä
+!!€ zenien
 0        N_FRONT_NOMINATIVE    ;
 0:i       N_FRONT_SINGULARS    ;
 0:e     N_FRONT_PLURALS   ;
@@ -97820,9 +97820,9 @@ LEXICON N_ZEN
 
 LEXICON N_TANKKERI
 !! trisyllabic i : e : 0 variation:
-!! € kanaali
-!! € kanaaleja
-!! € kanaaleiden
+!!€ kanaali
+!!€ kanaaleja
+!!€ kanaaleiden
 0:i       N_BACK_NOMINATIVE    ;
 0:i       N_BACK_SINGULARS    ;
 0:e     N_BACK_PLURALS   ;
@@ -97842,9 +97842,9 @@ LEXICON N_TANKKERI
 
 LEXICON N_KEHVELI
 !
-!! € kehveli
-!! € kehvelejä
-!! € kehveleiden
+!!€ kehveli
+!!€ kehvelejä
+!!€ kehveleiden
 0:i       N_FRONT_NOMINATIVE    ;
 0:i       N_FRONT_SINGULARS    ;
 0:e     N_FRONT_PLURALS   ;
@@ -97863,9 +97863,9 @@ LEXICON N_KEHVELI
 0:e       N_COMPOUND_ITTEN ;
 
 LEXICON N_STADION
-!! € stadion
-!! € stadioneja
-!! € stadioneiden
+!!€ stadion
+!!€ stadioneja
+!!€ stadioneiden
 0       N_BACK_NOMINATIVE    ;
 0:i       N_BACK_SINGULARS    ;
 0:e     N_BACK_PLURALS   ;
@@ -97885,9 +97885,9 @@ LEXICON N_STADION
 
 LEXICON N_BESSERWISSER
 !
-!! € besserwisser
-!! € besserwisserejä
-!! € besserwissereiden
+!!€ besserwisser
+!!€ besserwisserejä
+!!€ besserwissereiden
 0       N_FRONT_NOMINATIVE    ;
 0:i       N_FRONT_SINGULARS    ;
 0:e     N_FRONT_PLURALS   ;
@@ -97906,11 +97906,11 @@ LEXICON N_BESSERWISSER
 0:e       N_COMPOUND_ITTEN ;
 
 LEXICON N_ONNI
-!! € ovi
-!! € ovena
-!! € ovessa
-!! € ovissa
-!! € ovista
+!!€ ovi
+!!€ ovena
+!!€ ovessa
+!!€ ovissa
+!!€ ovista
 0:i       N_BACK_NOMINATIVE    ;
 0:e       N_BACK_SINGULARS    ;
 0     N_BACK_PLURALS   ;
@@ -97924,11 +97924,11 @@ LEXICON N_ONNI
 0       N_COMPOUND_IEN ;
 
 LEXICON N_KIVI
-!! € helmi
-!! € helmenä
-!! € helmessä
-!! € helmissä
-!! € helmistä
+!!€ helmi
+!!€ helmenä
+!!€ helmessä
+!!€ helmissä
+!!€ helmistä
 0:i       N_FRONT_NOMINATIVE    ;
 0:e       N_FRONT_SINGULARS    ;
 0     N_FRONT_PLURALS   ;
@@ -97942,11 +97942,11 @@ LEXICON N_KIVI
 0       N_COMPOUND_IEN ;
 
 LEXICON N_HAPPI
-!! € happi
-!! € hapessa
-!! € happina
-!! € hapista
-!! € happien
+!!€ happi
+!!€ hapessa
+!!€ happina
+!!€ hapista
+!!€ happien
 0:pi       N_BACK_NOMINATIVE    ;
 0:pe    N_BACK_STRONG_SINGULARS    ;
 0:e     N_BACK_WEAK_SINGULARS    ;
@@ -97962,11 +97962,11 @@ LEXICON N_HAPPI
 0:p        N_COMPOUND_IEN ;
 
 LEXICON N_TYPPI
-!! € typpi
-!! € typessä
-!! € typpinä
-!! € typistä
-!! € typpien
+!!€ typpi
+!!€ typessä
+!!€ typpinä
+!!€ typistä
+!!€ typpien
 0:pi       N_FRONT_NOMINATIVE    ;
 0:pe    N_FRONT_STRONG_SINGULARS    ;
 0:e     N_FRONT_WEAK_SINGULARS    ;
@@ -97982,11 +97982,11 @@ LEXICON N_TYPPI
 0:p        N_COMPOUND_IEN ;
 
 LEXICON N_NOKI
-!! € noki
-!! € noessa
-!! € nokina
-!! € noista
-!! € nokien
+!!€ noki
+!!€ noessa
+!!€ nokina
+!!€ noista
+!!€ nokien
 0:ki       N_BACK_NOMINATIVE    ;
 0:ke    N_BACK_STRONG_SINGULARS    ;
 0:e     N_BACK_WEAK_SINGULARS    ;
@@ -98002,11 +98002,11 @@ LEXICON N_NOKI
 0:k        N_COMPOUND_IEN ;
 
 LEXICON N_KÄKI
-!! € käki
-!! € käessä
-!! € käkinä
-!! € käistä
-!! € käkien
+!!€ käki
+!!€ käessä
+!!€ käkinä
+!!€ käistä
+!!€ käkien
 0:ki       N_FRONT_NOMINATIVE    ;
 0:ke    N_FRONT_STRONG_SINGULARS    ;
 0:e     N_FRONT_WEAK_SINGULARS    ;
@@ -98022,11 +98022,11 @@ LEXICON N_KÄKI
 0:k        N_COMPOUND_IEN ;
 
 LEXICON N_KORPI
-!! € korpi
-!! € korvessa
-!! € korpina
-!! € korvista
-!! € korpien
+!!€ korpi
+!!€ korvessa
+!!€ korpina
+!!€ korvista
+!!€ korpien
 0:pi       N_BACK_NOMINATIVE    ;
 0:pe    N_BACK_STRONG_SINGULARS    ;
 0:ve    N_BACK_WEAK_SINGULARS    ;
@@ -98042,11 +98042,11 @@ LEXICON N_KORPI
 0:p        N_COMPOUND_IEN ;
 
 LEXICON N_KILPI
-!! € kilpi
-!! € kilvessä
-!! € kilpinä
-!! € kilvistä
-!! € kilpien
+!!€ kilpi
+!!€ kilvessä
+!!€ kilpinä
+!!€ kilvistä
+!!€ kilpien
 0:pi       N_FRONT_NOMINATIVE    ;
 0:pe    N_FRONT_STRONG_SINGULARS    ;
 0:ve    N_FRONT_WEAK_SINGULARS    ;
@@ -98062,11 +98062,11 @@ LEXICON N_KILPI
 0:p        N_COMPOUND_IEN ;
 
 LEXICON N_LAHTI
-!! € lahti
-!! € lahdessa
-!! € lahtina
-!! € lahdista
-!! € lahtien
+!!€ lahti
+!!€ lahdessa
+!!€ lahtina
+!!€ lahdista
+!!€ lahtien
 0:ti       N_BACK_NOMINATIVE    ;
 0:te    N_BACK_STRONG_SINGULARS    ;
 0:de    N_BACK_WEAK_SINGULARS    ;
@@ -98082,11 +98082,11 @@ LEXICON N_LAHTI
 0:t        N_COMPOUND_IEN ;
 
 LEXICON N_LEHTI
-!! € lehti
-!! € lehdessä
-!! € lehtinä
-!! € lehdistä
-!! € lehtien
+!!€ lehti
+!!€ lehdessä
+!!€ lehtinä
+!!€ lehdistä
+!!€ lehtien
 0:ti       N_FRONT_NOMINATIVE    ;
 0:te    N_FRONT_STRONG_SINGULARS    ;
 0:de    N_FRONT_WEAK_SINGULARS    ;
@@ -98102,11 +98102,11 @@ LEXICON N_LEHTI
 0:t        N_COMPOUND_IEN ;
 
 LEXICON N_ONKI
-!! € onki
-!! € ongessa
-!! € onkina
-!! € ongista
-!! € onkien
+!!€ onki
+!!€ ongessa
+!!€ onkina
+!!€ ongista
+!!€ onkien
 0:ki       N_BACK_NOMINATIVE    ;
 0:ke    N_BACK_STRONG_SINGULARS    ;
 0:ge    N_BACK_WEAK_SINGULARS    ;
@@ -98122,11 +98122,11 @@ LEXICON N_ONKI
 0:k        N_COMPOUND_IEN ;
 
 LEXICON N_HENKI
-!! € henki
-!! € hengessä
-!! € henkinä
-!! € hengistä
-!! € henkien
+!!€ henki
+!!€ hengessä
+!!€ henkinä
+!!€ hengistä
+!!€ henkien
 0:ki       N_FRONT_NOMINATIVE    ;
 0:ke    N_FRONT_STRONG_SINGULARS    ;
 0:ge    N_FRONT_WEAK_SINGULARS    ;
@@ -98142,11 +98142,11 @@ LEXICON N_HENKI
 0:k        N_COMPOUND_IEN ;
 
 LEXICON N_SAMPI
-!! € lampi
-!! € lammessa
-!! € lampina
-!! € lammista
-!! € lampien
+!!€ lampi
+!!€ lammessa
+!!€ lampina
+!!€ lammista
+!!€ lampien
 0:pi       N_BACK_NOMINATIVE    ;
 0:pe    N_BACK_STRONG_SINGULARS    ;
 0:me    N_BACK_WEAK_SINGULARS    ;
@@ -98162,11 +98162,11 @@ LEXICON N_SAMPI
 0:p        N_COMPOUND_IEN ;
 
 LEXICON N_RIMPI
-!! € rimpi
-!! € rimmessä
-!! € rimpinä
-!! € rimmistä
-!! € rimpien
+!!€ rimpi
+!!€ rimmessä
+!!€ rimpinä
+!!€ rimmistä
+!!€ rimpien
 0:pi       N_FRONT_NOMINATIVE    ;
 0:pe    N_FRONT_STRONG_SINGULARS    ;
 0:me    N_FRONT_WEAK_SINGULARS    ;
@@ -98182,7 +98182,7 @@ LEXICON N_RIMPI
 0:p        N_COMPOUND_IEN ;
 
 LEXICON N_ARKI
-!! € € arki
+!!€ € arki
 0:ki       N_BACK_NOMINATIVE    ;
 0:ke    N_BACK_STRONG_SINGULARS    ;
 0:je    N_BACK_WEAK_SINGULARS    ;
@@ -98198,11 +98198,11 @@ LEXICON N_ARKI
 0:k        N_COMPOUND_IEN ;
 
 LEXICON N_JÄRKI
-!! € järki
-!! € järjessä
-!! € järkinä
-!! € järjistä
-!! € järkien
+!!€ järki
+!!€ järjessä
+!!€ järkinä
+!!€ järjistä
+!!€ järkien
 0:ki       N_FRONT_NOMINATIVE    ;
 0:ke    N_FRONT_STRONG_SINGULARS    ;
 0:je    N_FRONT_WEAK_SINGULARS    ;
@@ -98220,15 +98220,15 @@ LEXICON N_JÄRKI
 LEXICON N_NALLE
 !! The new words with e stem have same allomorphy selection as old o, u, y, ö
 !! stems without variation:
-!! € nalle
-!! € nallea
-!! € nalleen
-!! € nalleja
-!! € nallejen
-!! € nalleihin
+!!€ nalle
+!!€ nallea
+!!€ nalleen
+!!€ nalleja
+!!€ nallejen
+!!€ nalleihin
 !! Dictionary claims they also have slightly greater probability for archaic
 !! form of plural:
-!! € nallein
+!!€ nallein
 0    N_BACK_NOMINATIVE    ;
 0    N_BACK_SINGULARS    ;
 0    N_BACK_PLURALS ;
@@ -98245,12 +98245,12 @@ LEXICON N_NALLE
 
 
 LEXICON N_NISSE
-!! € nisse
-!! € nisseä
-!! € nisseen
-!! € nissejä
-!! € nissejen
-!! € nisseihin
+!!€ nisse
+!!€ nisseä
+!!€ nisseen
+!!€ nissejä
+!!€ nissejen
+!!€ nisseihin
 0    N_FRONT_NOMINATIVE    ;
 0    N_FRONT_SINGULARS    ;
 0    N_FRONT_PLURALS ;
@@ -98265,12 +98265,12 @@ LEXICON N_NISSE
 0    N_COMPOUND_JEN ;
 
 LEXICON N_NUKKE
-!! € nukke
-!! € nukkea
-!! € nukkeen
-!! € nukkeja
-!! € nukkejen
-!! € nukkeihin
+!!€ nukke
+!!€ nukkea
+!!€ nukkeen
+!!€ nukkeja
+!!€ nukkejen
+!!€ nukkeihin
 0:ke    N_BACK_NOMINATIVE    ;
 0:ke    N_BACK_STRONG_SINGULARS    ;
 0:e    N_BACK_WEAK_SINGULARS   ;
@@ -98289,12 +98289,12 @@ LEXICON N_NUKKE
 
 
 LEXICON N_JEPPE
-!! € jeppe
-!! € jeppeä
-!! € jeppeen
-!! € jeppejä
-!! € jeppejen
-!! € jeppeihin
+!!€ jeppe
+!!€ jeppeä
+!!€ jeppeen
+!!€ jeppejä
+!!€ jeppejen
+!!€ jeppeihin
 0:pe    N_FRONT_NOMINATIVE    ;
 0:pe    N_FRONT_STRONG_SINGULARS    ;
 0:e    N_FRONT_WEAK_SINGULARS   ;
@@ -98313,12 +98313,12 @@ LEXICON N_JEPPE
 
 
 LEXICON N_LOTTE
-!! € Lotte
-!! € Lottea
-!! € Lotteen
-!! € Lotteja
-!! € Lottejen
-!! € Lotteihin
+!!€ Lotte
+!!€ Lottea
+!!€ Lotteen
+!!€ Lotteja
+!!€ Lottejen
+!!€ Lotteihin
 0:te    N_BACK_NOMINATIVE    ;
 0:te    N_BACK_STRONG_SINGULARS    ;
 0:e    N_BACK_WEAK_SINGULARS   ;
@@ -98336,13 +98336,13 @@ LEXICON N_LOTTE
 0:te    N_COMPOUND_IN ;
 
 LEXICON N_KIRJA
-!! € kirja
-!! € kirjaa
-!! € kirjana
-!! € kirjassa
-!! € kirjoina
-!! € kirjojen
-!! € kirjoihin
+!!€ kirja
+!!€ kirjaa
+!!€ kirjana
+!!€ kirjassa
+!!€ kirjoina
+!!€ kirjojen
+!!€ kirjoihin
 0:a   N_BACK_NOMINATIVE    ;
 0:a   N_BACK_SINGULARS    ;
 0:o   N_BACK_PLURALS  ;
@@ -98374,13 +98374,13 @@ LEXICON N_KIRJA
 
 
 LEXICON N_POLITIIKKA
-!! € politiikka
-!! € politiikkaa
-!! € politiikkana
-!! € politiikassa
-!! € politiikkoina
-!! € politiikkojen
-!! € politiikkoihin
+!!€ politiikka
+!!€ politiikkaa
+!!€ politiikkana
+!!€ politiikassa
+!!€ politiikkoina
+!!€ politiikkojen
+!!€ politiikkoihin
 0:ka  N_BACK_NOMINATIVE    ;
 0:ka  N_BACK_STRONG_SINGULARS    ;
 0:a   N_BACK_WEAK_SINGULARS   ;
@@ -98398,13 +98398,13 @@ LEXICON N_POLITIIKKA
 0:ka   N_COMPOUND_IN  ;
 
 LEXICON N_TIPPA
-!! € tippa
-!! € tippaa
-!! € tippana
-!! € tipassa
-!! € tippoina
-!! € tippojen
-!! € tippoihin
+!!€ tippa
+!!€ tippaa
+!!€ tippana
+!!€ tipassa
+!!€ tippoina
+!!€ tippojen
+!!€ tippoihin
 0:pa  N_BACK_NOMINATIVE    ;
 0:pa  N_BACK_STRONG_SINGULARS    ;
 0:a   N_BACK_WEAK_SINGULARS   ;
@@ -98422,13 +98422,13 @@ LEXICON N_TIPPA
 0:pa   N_COMPOUND_IN  ;
 
 LEXICON N_MITTA
-!! € mitta
-!! € mittaa
-!! € mittana
-!! € mitassa
-!! € mittoina
-!! € mittojen
-!! € mittoihin
+!!€ mitta
+!!€ mittaa
+!!€ mittana
+!!€ mitassa
+!!€ mittoina
+!!€ mittojen
+!!€ mittoihin
 0:ta  N_BACK_NOMINATIVE    ;
 0:ta  N_BACK_STRONG_SINGULARS    ;
 0:a   N_BACK_WEAK_SINGULARS   ;
@@ -98446,13 +98446,13 @@ LEXICON N_MITTA
 0:ta   N_COMPOUND_IN  ;
 
 LEXICON N_VIKA
-!! € lanka
-!! € lankaa
-!! € lankana
-!! € langassa
-!! € lankoina
-!! € lankojen
-!! € lankoihin
+!!€ lanka
+!!€ lankaa
+!!€ lankana
+!!€ langassa
+!!€ lankoina
+!!€ lankojen
+!!€ lankoihin
 0:ka  N_BACK_NOMINATIVE    ;
 0:ka  N_BACK_STRONG_SINGULARS    ;
 0:’a  N_BACK_WEAK_SINGULARS   ;
@@ -98472,13 +98472,13 @@ LEXICON N_VIKA
 0:ka   N_COMPOUND_IN  ;
 
 LEXICON N_VAAKA
-!! € lanka
-!! € lankaa
-!! € lankana
-!! € langassa
-!! € lankoina
-!! € lankojen
-!! € lankoihin
+!!€ lanka
+!!€ lankaa
+!!€ lankana
+!!€ langassa
+!!€ lankoina
+!!€ lankojen
+!!€ lankoihin
 0:ka  N_BACK_NOMINATIVE    ;
 0:ka  N_BACK_STRONG_SINGULARS    ;
 0:’a  N_BACK_WEAK_SINGULARS   ;
@@ -98498,13 +98498,13 @@ LEXICON N_VAAKA
 
 
 LEXICON N_SALPA
-!! € salpa
-!! € salpaa
-!! € salpana
-!! € salvassa
-!! € salpoina
-!! € salpojen
-!! € salpoihin
+!!€ salpa
+!!€ salpaa
+!!€ salpana
+!!€ salvassa
+!!€ salpoina
+!!€ salpojen
+!!€ salpoihin
 0:pa  N_BACK_NOMINATIVE    ;
 0:pa  N_BACK_STRONG_SINGULARS    ;
 0:va  N_BACK_WEAK_SINGULARS   ;
@@ -98522,13 +98522,13 @@ LEXICON N_SALPA
 0:pa   N_COMPOUND_IN  ;
 
 LEXICON N_PATA
-!! € pata
-!! € pataa
-!! € patana
-!! € padassa
-!! € patoina
-!! € patojen
-!! € patoihin
+!!€ pata
+!!€ pataa
+!!€ patana
+!!€ padassa
+!!€ patoina
+!!€ patojen
+!!€ patoihin
 0:ta  N_BACK_NOMINATIVE    ;
 0:ta  N_BACK_STRONG_SINGULARS    ;
 0:da  N_BACK_WEAK_SINGULARS   ;
@@ -98546,13 +98546,13 @@ LEXICON N_PATA
 0:ta   N_COMPOUND_IN  ;
 
 LEXICON N_LANKA
-!! € lanka
-!! € lankaa
-!! € lankana
-!! € langassa
-!! € lankoina
-!! € lankojen
-!! € lankoihin
+!!€ lanka
+!!€ lankaa
+!!€ lankana
+!!€ langassa
+!!€ lankoina
+!!€ lankojen
+!!€ lankoihin
 0:ka  N_BACK_NOMINATIVE    ;
 0:ka  N_BACK_STRONG_SINGULARS    ;
 0:ga  N_BACK_WEAK_SINGULARS   ;
@@ -98570,13 +98570,13 @@ LEXICON N_LANKA
 0:ka   N_COMPOUND_IN  ;
 
 LEXICON N_RAMPA
-!! € rampa
-!! € rampaa
-!! € rampana
-!! € rammassa
-!! € rampoina
-!! € rampojen
-!! € rampoihin
+!!€ rampa
+!!€ rampaa
+!!€ rampana
+!!€ rammassa
+!!€ rampoina
+!!€ rampojen
+!!€ rampoihin
 0:pa  N_BACK_NOMINATIVE    ;
 0:pa  N_BACK_STRONG_SINGULARS    ;
 0:ma  N_BACK_WEAK_SINGULARS   ;
@@ -98594,13 +98594,13 @@ LEXICON N_RAMPA
 0:pa   N_COMPOUND_IN  ;
 
 LEXICON N_VALTA
-!! € valta
-!! € valtaa
-!! € valtana
-!! € vallassa
-!! € valtoina
-!! € valtojen
-!! € valtoihin
+!!€ valta
+!!€ valtaa
+!!€ valtana
+!!€ vallassa
+!!€ valtoina
+!!€ valtojen
+!!€ valtoihin
 0:ta  N_BACK_NOMINATIVE    ;
 0:ta  N_BACK_STRONG_SINGULARS    ;
 0:la  N_BACK_WEAK_SINGULARS   ;
@@ -98618,13 +98618,13 @@ LEXICON N_VALTA
 0:ta   N_COMPOUND_IN  ;
 
 LEXICON N_KUTSUNTA
-!! € kutsunta
-!! € kutsuntaa
-!! € kutsuntana
-!! € kutsunnassa
-!! € kutsuntoina
-!! € kutsuntojen
-!! € kutsuntoihin
+!!€ kutsunta
+!!€ kutsuntaa
+!!€ kutsuntana
+!!€ kutsunnassa
+!!€ kutsuntoina
+!!€ kutsuntojen
+!!€ kutsuntoihin
 0:ta  N_BACK_NOMINATIVE    ;
 0:ta  N_BACK_STRONG_SINGULARS    ;
 0:na  N_BACK_WEAK_SINGULARS   ;
@@ -98642,13 +98642,13 @@ LEXICON N_KUTSUNTA
 0:ta   N_COMPOUND_IN  ;
 
 LEXICON N_KYSYNTÄ
-!! € kysyntä
-!! € kysyntää
-!! € kysnytänä
-!! € kysynnässä
-!! € kysyntöinä
-!! € kysyntöjen
-!! € kysyntöihin
+!!€ kysyntä
+!!€ kysyntää
+!!€ kysnytänä
+!!€ kysynnässä
+!!€ kysyntöinä
+!!€ kysyntöjen
+!!€ kysyntöihin
 0:tä  N_FRONT_NOMINATIVE    ;
 0:tä  N_FRONT_STRONG_SINGULARS    ;
 0:nä  N_FRONT_WEAK_SINGULARS   ;
@@ -98666,13 +98666,13 @@ LEXICON N_KYSYNTÄ
 0:tä   N_COMPOUND_IN  ;
 
 LEXICON N_KERTA
-!! € kerta
-!! € kertaa
-!! € kertana
-!! € kerrassa
-!! € kertoina
-!! € kertojen
-!! € kertoihin
+!!€ kerta
+!!€ kertaa
+!!€ kertana
+!!€ kerrassa
+!!€ kertoina
+!!€ kertojen
+!!€ kertoihin
 0:ta  N_BACK_NOMINATIVE    ;
 0:ta  N_BACK_STRONG_SINGULARS    ;
 0:ra  N_BACK_WEAK_SINGULARS   ;
@@ -98690,13 +98690,13 @@ LEXICON N_KERTA
 0:ta   N_COMPOUND_IN  ;
 
 LEXICON N_SOITTAJA
-!! € soittaja
-!! € soittajaa
-!! € soittajana
-!! € soittajassa
-!! € soittajina
-!! € soittajien
-!! € soittajiin
+!!€ soittaja
+!!€ soittajaa
+!!€ soittajana
+!!€ soittajassa
+!!€ soittajina
+!!€ soittajien
+!!€ soittajiin
 0:a   N_BACK_NOMINATIVE    ;
 0:a   N_BACK_SINGULARS    ;
 0   N_BACK_PLURALS  ;
@@ -98712,13 +98712,13 @@ LEXICON N_SOITTAJA
 0:a   N_COMPOUND_IN  ;
 
 LEXICON N_HÖPÖTTÄJÄ
-!! € höpöttäjä
-!! € höpöttäjää
-!! € höpöttäjänä
-!! € höpöttäjässä
-!! € höpöttäjinä
-!! € höpöttäjien
-!! € höpöttäjiin
+!!€ höpöttäjä
+!!€ höpöttäjää
+!!€ höpöttäjänä
+!!€ höpöttäjässä
+!!€ höpöttäjinä
+!!€ höpöttäjien
+!!€ höpöttäjiin
 0:ä   N_FRONT_NOMINATIVE    ;
 0:ä   N_FRONT_SINGULARS    ;
 0   N_FRONT_PLURALS  ;
@@ -98734,13 +98734,13 @@ LEXICON N_HÖPÖTTÄJÄ
 0:ä   N_COMPOUND_IN  ;
 
 LEXICON N_LUOKKA
-!! € luokka
-!! € luokkaa
-!! € luokkana
-!! € luokassa
-!! € luokkina
-!! € luokissa
-!! € luokkien
+!!€ luokka
+!!€ luokkaa
+!!€ luokkana
+!!€ luokassa
+!!€ luokkina
+!!€ luokissa
+!!€ luokkien
 0:ka   N_BACK_NOMINATIVE    ;
 0:ka   N_BACK_STRONG_SINGULARS    ;
 0:a    N_BACK_WEAK_SINGULARS   ;
@@ -98758,13 +98758,13 @@ LEXICON N_LUOKKA
 0:ka   N_COMPOUND_IN  ;
 
 LEXICON N_HÖLKKÄ
-!! € hölkkä
-!! € hölkkää
-!! € hölkkänä
-!! € hölkässä
-!! € hölkkinä
-!! € hölkissä
-!! € hölkkien
+!!€ hölkkä
+!!€ hölkkää
+!!€ hölkkänä
+!!€ hölkässä
+!!€ hölkkinä
+!!€ hölkissä
+!!€ hölkkien
 0:kä   N_FRONT_NOMINATIVE    ;
 0:kä   N_FRONT_STRONG_SINGULARS    ;
 0:ä    N_FRONT_WEAK_SINGULARS   ;
@@ -98782,13 +98782,13 @@ LEXICON N_HÖLKKÄ
 0:kä   N_COMPOUND_IN  ;
 
 LEXICON N_KUOPPA
-!! € kuoppa
-!! € kuoppaa
-!! € kuoppana
-!! € kuopassa
-!! € kuoppina
-!! € kuopissa
-!! € kuoppien
+!!€ kuoppa
+!!€ kuoppaa
+!!€ kuoppana
+!!€ kuopassa
+!!€ kuoppina
+!!€ kuopissa
+!!€ kuoppien
 0:pa   N_BACK_NOMINATIVE    ;
 0:pa   N_BACK_STRONG_SINGULARS    ;
 0:a    N_BACK_WEAK_SINGULARS   ;
@@ -98806,13 +98806,13 @@ LEXICON N_KUOPPA
 0:pa   N_COMPOUND_IN  ;
 
 LEXICON N_SEPPÄ
-!! € seppä
-!! € seppää
-!! € seppänä
-!! € sepässä
-!! € seppinä
-!! € sepissä
-!! € seppien
+!!€ seppä
+!!€ seppää
+!!€ seppänä
+!!€ sepässä
+!!€ seppinä
+!!€ sepissä
+!!€ seppien
 0:pä   N_FRONT_NOMINATIVE    ;
 0:pä   N_FRONT_STRONG_SINGULARS    ;
 0:ä    N_FRONT_WEAK_SINGULARS   ;
@@ -98830,13 +98830,13 @@ LEXICON N_SEPPÄ
 0:pä   N_COMPOUND_IN  ;
 
 LEXICON N_ROTTA
-!! € rotta
-!! € rottaa
-!! € rottana
-!! € rotassa
-!! € rottina
-!! € rotissa
-!! € rottien
+!!€ rotta
+!!€ rottaa
+!!€ rottana
+!!€ rotassa
+!!€ rottina
+!!€ rotissa
+!!€ rottien
 0:ta   N_BACK_NOMINATIVE    ;
 0:ta   N_BACK_STRONG_SINGULARS    ;
 0:a    N_BACK_WEAK_SINGULARS   ;
@@ -98854,13 +98854,13 @@ LEXICON N_ROTTA
 0:ta   N_COMPOUND_IN  ;
 
 LEXICON N_KENTTÄ
-!! € kenttä
-!! € kenttää
-!! € kenttänä
-!! € kentässä
-!! € kenttinä
-!! € kentissä
-!! € kenttien
+!!€ kenttä
+!!€ kenttää
+!!€ kenttänä
+!!€ kentässä
+!!€ kenttinä
+!!€ kentissä
+!!€ kenttien
 0:tä   N_FRONT_NOMINATIVE    ;
 0:tä   N_FRONT_STRONG_SINGULARS    ;
 0:ä    N_FRONT_WEAK_SINGULARS   ;
@@ -98878,16 +98878,16 @@ LEXICON N_KENTTÄ
 0:tä   N_COMPOUND_IN  ;
 
 LEXICON N_VUOKA
-!! € ruoka
-!! € ruokaa
-!! € ruokana
-!! € ruoassa
-!! € ruokina
-!! € ruoissa
-!! € ruokien
+!!€ ruoka
+!!€ ruokaa
+!!€ ruokana
+!!€ ruoassa
+!!€ ruokina
+!!€ ruoissa
+!!€ ruokien
 !
-!! € ruo’assa
-!! € ruo’issa
+!!€ ruo’assa
+!!€ ruo’issa
 0:ka   N_BACK_NOMINATIVE    ;
 0:ka   N_BACK_STRONG_SINGULARS    ;
 0:a    N_BACK_WEAK_SINGULARS   ;
@@ -98908,12 +98908,12 @@ LEXICON N_VUOKA
 0:ka   N_COMPOUND_IN  ;
 
 LEXICON N_IKÄ
-!! € ikä
-!! € ikää
-!! € ikänä
-!! € iässä
-!! € i’issä
-!! € ikiin
+!!€ ikä
+!!€ ikää
+!!€ ikänä
+!!€ iässä
+!!€ i’issä
+!!€ ikiin
 0:kä   N_FRONT_NOMINATIVE    ;
 0:kä   N_FRONT_STRONG_SINGULARS    ;
 0:ä    N_FRONT_WEAK_SINGULARS   ;
@@ -98934,12 +98934,12 @@ LEXICON N_IKÄ
 0:kä   N_COMPOUND_IN  ;
 
 LEXICON N_REIKÄ
-!! € reikä
-!! € reikää
-!! € reikänä
-!! € reiässä
-!! € rei’issä
-!! € reikiin
+!!€ reikä
+!!€ reikää
+!!€ reikänä
+!!€ reiässä
+!!€ rei’issä
+!!€ reikiin
 0:kä   N_FRONT_NOMINATIVE    ;
 0:kä   N_FRONT_STRONG_SINGULARS    ;
 0:ä    N_FRONT_WEAK_SINGULARS   ;
@@ -98959,13 +98959,13 @@ LEXICON N_REIKÄ
 0:kä   N_COMPOUND_IN  ;
 
 LEXICON N_LUPA
-!! € lupa
-!! € lupaa
-!! € lupana
-!! € luvassa
-!! € luppina
-!! € luvissa
-!! € lupien
+!!€ lupa
+!!€ lupaa
+!!€ lupana
+!!€ luvassa
+!!€ luppina
+!!€ luvissa
+!!€ lupien
 0:pa   N_BACK_NOMINATIVE    ;
 0:pa   N_BACK_STRONG_SINGULARS    ;
 0:va    N_BACK_WEAK_SINGULARS   ;
@@ -98983,13 +98983,13 @@ LEXICON N_LUPA
 0:pa   N_COMPOUND_IN  ;
 
 LEXICON N_LEIPÄ
-!! € leipä
-!! € leipää
-!! € leipänä
-!! € leivässä
-!! € leipinä
-!! € leivissä
-!! € leipien
+!!€ leipä
+!!€ leipää
+!!€ leipänä
+!!€ leivässä
+!!€ leipinä
+!!€ leivissä
+!!€ leipien
 0:pä   N_FRONT_NOMINATIVE    ;
 0:pä   N_FRONT_STRONG_SINGULARS    ;
 0:vä    N_FRONT_WEAK_SINGULARS   ;
@@ -99007,13 +99007,13 @@ LEXICON N_LEIPÄ
 0:pä   N_COMPOUND_IN  ;
 
 LEXICON N_SOTA
-!! € sota
-!! € sotaa
-!! € ostana
-!! € sodassa
-!! € sotina
-!! € sodissa
-!! € sotien
+!!€ sota
+!!€ sotaa
+!!€ ostana
+!!€ sodassa
+!!€ sotina
+!!€ sodissa
+!!€ sotien
 0:ta   N_BACK_NOMINATIVE    ;
 0:ta   N_BACK_STRONG_SINGULARS    ;
 0:da    N_BACK_WEAK_SINGULARS   ;
@@ -99031,13 +99031,13 @@ LEXICON N_SOTA
 0:ta   N_COMPOUND_IN  ;
 
 LEXICON N_PÖYTÄ
-!! € pöytä
-!! € pöytää
-!! € pöytänä
-!! € pöydässä
-!! € pöytinä
-!! € pöydissä
-!! € pöytien
+!!€ pöytä
+!!€ pöytää
+!!€ pöytänä
+!!€ pöydässä
+!!€ pöytinä
+!!€ pöydissä
+!!€ pöytien
 0:tä   N_FRONT_NOMINATIVE    ;
 0:tä   N_FRONT_STRONG_SINGULARS    ;
 0:dä    N_FRONT_WEAK_SINGULARS   ;
@@ -99055,13 +99055,13 @@ LEXICON N_PÖYTÄ
 0:tä   N_COMPOUND_IN  ;
 
 LEXICON N_HONKA
-!! € honka
-!! € honkaa
-!! € honkana
-!! € hongassa
-!! € honkina
-!! € hongissa
-!! € honkien
+!!€ honka
+!!€ honkaa
+!!€ honkana
+!!€ hongassa
+!!€ honkina
+!!€ hongissa
+!!€ honkien
 0:ka   N_BACK_NOMINATIVE    ;
 0:ka   N_BACK_STRONG_SINGULARS    ;
 0:ga    N_BACK_WEAK_SINGULARS   ;
@@ -99079,12 +99079,12 @@ LEXICON N_HONKA
 0:ka   N_COMPOUND_IN  ;
 
 LEXICON N_KENKÄ
-!! € kenkä
-!! € kenkää
-!! € kenkänä
-!! € kengässä
-!! € kengissä
-!! € kenkiin
+!!€ kenkä
+!!€ kenkää
+!!€ kenkänä
+!!€ kengässä
+!!€ kengissä
+!!€ kenkiin
 0:kä   N_FRONT_NOMINATIVE    ;
 0:kä   N_FRONT_STRONG_SINGULARS    ;
 0:gä    N_FRONT_WEAK_SINGULARS   ;
@@ -99103,13 +99103,13 @@ LEXICON N_KENKÄ
 
 
 LEXICON N_KOMPA
-!! € kompa
-!! € kompaa
-!! € kompana
-!! € kommassa
-!! € kompina
-!! € kommissa
-!! € kompien
+!!€ kompa
+!!€ kompaa
+!!€ kompana
+!!€ kommassa
+!!€ kompina
+!!€ kommissa
+!!€ kompien
 0:pa   N_BACK_NOMINATIVE    ;
 0:pa   N_BACK_STRONG_SINGULARS    ;
 0:ma    N_BACK_WEAK_SINGULARS   ;
@@ -99145,13 +99145,13 @@ LEXICON N_KOMPA
 !0:pä   N_COMPOUND_IN  ;
 
 LEXICON N_MULTA
-!! € multa
-!! € multaa
-!! € multana
-!! € mullassa
-!! € multina
-!! € mullissa
-!! € multien
+!!€ multa
+!!€ multaa
+!!€ multana
+!!€ mullassa
+!!€ multina
+!!€ mullissa
+!!€ multien
 0:ta   N_BACK_NOMINATIVE    ;
 0:ta   N_BACK_STRONG_SINGULARS    ;
 0:la    N_BACK_WEAK_SINGULARS   ;
@@ -99169,13 +99169,13 @@ LEXICON N_MULTA
 0:ta   N_COMPOUND_IN  ;
 
 LEXICON N_SYLTÄ
-!! € syltä
-!! € syltää
-!! € syltänä
-!! € syllässä
-!! € syltinä
-!! € syllissä
-!! € syltien
+!!€ syltä
+!!€ syltää
+!!€ syltänä
+!!€ syllässä
+!!€ syltinä
+!!€ syllissä
+!!€ syltien
 0:tä   N_FRONT_NOMINATIVE    ;
 0:tä   N_FRONT_STRONG_SINGULARS    ;
 0:lä    N_FRONT_WEAK_SINGULARS   ;
@@ -99193,13 +99193,13 @@ LEXICON N_SYLTÄ
 0:tä   N_COMPOUND_IN  ;
 
 LEXICON N_KUNTA
-!! € kunta
-!! € kuntaa
-!! € kuntana
-!! € kunnassa
-!! € kuntina
-!! € kunnissa
-!! € kuntien
+!!€ kunta
+!!€ kuntaa
+!!€ kuntana
+!!€ kunnassa
+!!€ kuntina
+!!€ kunnissa
+!!€ kuntien
 0:ta   N_BACK_NOMINATIVE    ;
 0:ta   N_BACK_STRONG_SINGULARS    ;
 0:na    N_BACK_WEAK_SINGULARS   ;
@@ -99217,13 +99217,13 @@ LEXICON N_KUNTA
 0:ta   N_COMPOUND_IN  ;
 
 LEXICON N_EMÄNTÄ
-!! € emäntä
-!! € emäntää
-!! € emäntänä
-!! € emännässä
-!! € emäntinä
-!! € emännissä
-!! € emäntien
+!!€ emäntä
+!!€ emäntää
+!!€ emäntänä
+!!€ emännässä
+!!€ emäntinä
+!!€ emännissä
+!!€ emäntien
 0:tä   N_FRONT_NOMINATIVE    ;
 0:tä   N_FRONT_STRONG_SINGULARS    ;
 0:nä    N_FRONT_WEAK_SINGULARS   ;
@@ -99259,12 +99259,12 @@ LEXICON N_EMÄNTÄ
 !0:ka   N_COMPOUND_IN  ;
 
 LEXICON N_SELKÄ
-!! € selkä
-!! € selkää
-!! € selkänä
-!! € seljässä
-!! € seljissä
-!! € selkiin
+!!€ selkä
+!!€ selkää
+!!€ selkänä
+!!€ seljässä
+!!€ seljissä
+!!€ selkiin
 0:kä   N_FRONT_NOMINATIVE    ;
 0:kä   N_FRONT_STRONG_SINGULARS    ;
 0:jä    N_FRONT_WEAK_SINGULARS   ;
@@ -99286,18 +99286,18 @@ LEXICON N_SELKÄ
 LEXICON N_PROBLEEMA
 !! Certain trisyllabic or longer a stems allow a lot of allomorphs and both
 !! a : o : 0 variations:
-!! € probleema
-!! € probleemia
-!! € probleemoita
-!! € probleemien
-!! € probleemoiden
-!! € probleemoitten
-!! € probleemiin
-!! € probleemoihin
+!!€ probleema
+!!€ probleemia
+!!€ probleemoita
+!!€ probleemien
+!!€ probleemoiden
+!!€ probleemoitten
+!!€ probleemiin
+!!€ probleemoihin
 !! Also less commonly
-!! € probleemojen
-!! € probleemoja
-!! € probleemain
+!!€ probleemojen
+!!€ probleemoja
+!!€ probleemain
 0:a   N_BACK_NOMINATIVE    ;
 0:a   N_BACK_SINGULARS    ;
 0:o   N_BACK_PLURALS  ;
@@ -99323,13 +99323,13 @@ LEXICON N_PROBLEEMA
 0:a   N_COMPOUND_IN  ;
 
 LEXICON N_KÄPÄLÄ
-!! € käpälä
-!! € käpälää
-!! € käpälänä
-!! € käpälässä
-!! € käpälinä
-!! € käpälien
-!! € käpäliin
+!!€ käpälä
+!!€ käpälää
+!!€ käpälänä
+!!€ käpälässä
+!!€ käpälinä
+!!€ käpälien
+!!€ käpäliin
 0:ä   N_FRONT_NOMINATIVE    ;
 0:ä   N_FRONT_SINGULARS    ;
 0   N_FRONT_PLURALS  ;
@@ -99355,12 +99355,12 @@ LEXICON N_KÄPÄLÄ
 
 
 LEXICON N_MAKKARA
-!! € makkara
-!! € makkaraa
-!! € makkarana
-!! € makkaroina
-!! € makkaroita
-!! € 
+!!€ makkara
+!!€ makkaraa
+!!€ makkarana
+!!€ makkaroina
+!!€ makkaroita
+!!€ 
 0:a   N_BACK_NOMINATIVE    ;
 0:a   N_BACK_SINGULARS    ;
 0:o   N_BACK_PLURALS  ;
@@ -99378,11 +99378,11 @@ LEXICON N_MAKKARA
 0:a   N_COMPOUND_IN  ;
 
 LEXICON N_HÄKKYRÄ
-!! € häkkyrä
-!! € häkkyrää
-!! € häkkyränä
-!! € häkkyröinä
-!! € häkkyröitä
+!!€ häkkyrä
+!!€ häkkyrää
+!!€ häkkyränä
+!!€ häkkyröinä
+!!€ häkkyröitä
 0:ä   N_FRONT_NOMINATIVE    ;
 0:ä   N_FRONT_SINGULARS    ;
 0:ö   N_FRONT_PLURALS  ;
@@ -99432,10 +99432,10 @@ LEXICON N_HÄKKYRÄ
 !0:a   N_COMPOUND_IN  ;
 
 LEXICON N_SIIVILÄ
-!! € mörinä
-!! € mörinää
-!! € mörinänä
-!! € mörinässä
+!!€ mörinä
+!!€ mörinää
+!!€ mörinänä
+!!€ mörinässä
 0:ä   N_FRONT_NOMINATIVE    ;
 0:ä   N_FRONT_SINGULARS    ;
 0:ö   N_FRONT_PLURALS  ;
@@ -99456,11 +99456,11 @@ LEXICON N_SIIVILÄ
 
 LEXICON N_LUSIKKA
 !! 0: o stem variation combines with trisyllabic class of special illatives
-!! € lusikka
-!! € lusikkoina
-!! € lusikoissa
-!! € lusikkoihin
-!! € lusikoihin
+!!€ lusikka
+!!€ lusikkoina
+!!€ lusikoissa
+!!€ lusikkoihin
+!!€ lusikoihin
 0:ka   N_BACK_NOMINATIVE    ;
 0:ka   N_BACK_STRONG_SINGULARS    ;
 0:a   N_BACK_WEAK_SINGULARS    ;
@@ -99484,9 +99484,9 @@ LEXICON N_LUSIKKA
 0:ka   N_COMPOUND_IN  ;
 
 LEXICON N_KÄMMEKKÄ
-!! € kämmekkä
-!! € kämmeköihin
-!! € kämmekköihin
+!!€ kämmekkä
+!!€ kämmeköihin
+!!€ kämmekköihin
 0:kä   N_FRONT_NOMINATIVE    ;
 0:kä   N_FRONT_STRONG_SINGULARS    ;
 0:ä   N_FRONT_WEAK_SINGULARS    ;
@@ -99510,11 +99510,11 @@ LEXICON N_KÄMMEKKÄ
 
 LEXICON N_ULAPPA
 !! 0: o stem variation combines with trisyllabic class of special illatives
-!! € ulappa
-!! € ulappoina
-!! € ulapoissa
-!! € ulappoihin
-!! € ulapoihin
+!!€ ulappa
+!!€ ulappoina
+!!€ ulapoissa
+!!€ ulappoihin
+!!€ ulapoihin
 0:pa   N_BACK_NOMINATIVE    ;
 0:pa   N_BACK_STRONG_SINGULARS    ;
 0:a   N_BACK_WEAK_SINGULARS    ;
@@ -99539,11 +99539,11 @@ LEXICON N_ULAPPA
 
 LEXICON N_POHATTA
 !! 0: o stem variation combines with trisyllabic class of special illatives
-!! € pohatta
-!! € pohattoina
-!! € pohatoissa
-!! € pohattoihin
-!! € pohatoihin
+!!€ pohatta
+!!€ pohattoina
+!!€ pohatoissa
+!!€ pohattoihin
+!!€ pohatoihin
 0:ta   N_BACK_NOMINATIVE    ;
 0:ta   N_BACK_STRONG_SINGULARS    ;
 0:a   N_BACK_WEAK_SINGULARS    ;
@@ -99567,12 +99567,12 @@ LEXICON N_POHATTA
 0:ta   N_COMPOUND_IN  ;
 
 LEXICON N_SOKEA
-!! € sokea
-!! € sokeana
-!! € sokeina
-!! € sokeissa
-!! € sokeihin
-!! € sokeisiin
+!!€ sokea
+!!€ sokeana
+!!€ sokeina
+!!€ sokeissa
+!!€ sokeihin
+!!€ sokeisiin
 0:a   N_BACK_NOMINATIVE    ;
 0:a   N_BACK_SINGULARS    ;
 0   N_BACK_PLURALS  ;
@@ -99591,12 +99591,12 @@ LEXICON N_SOKEA
 0:a   N_COMPOUND_IN  ;
 
 LEXICON N_LIPEÄ
-!! € lipeä
-!! € lipeänä
-!! € lipeinä
-!! € lipeissä
-!! € lipeihin
-!! € lipeisiin
+!!€ lipeä
+!!€ lipeänä
+!!€ lipeinä
+!!€ lipeissä
+!!€ lipeihin
+!!€ lipeisiin
 0:ä   N_FRONT_NOMINATIVE    ;
 0:ä   N_FRONT_SINGULARS    ;
 0   N_FRONT_PLURALS  ;
@@ -99615,11 +99615,11 @@ LEXICON N_LIPEÄ
 0:ä   N_COMPOUND_IN  ;
 
 LEXICON N_VANHEMPI
-!! € vanhempi
-!! € vanhempana
-!! € vanhemmassa
-!! € vanhempina
-!! € vanhemmista
+!!€ vanhempi
+!!€ vanhempana
+!!€ vanhemmassa
+!!€ vanhempina
+!!€ vanhemmista
 0:pi  N_BACK_NOMINATIVE    ;
 0:pa  N_BACK_STRONG_SINGULARS    ;
 0:ma  N_BACK_WEAK_SINGULARS    ;
@@ -99638,7 +99638,7 @@ LEXICON N_VANHEMPI
 0:pa  N_COMPOUND_IN  ;
 
 LEXICON N_VAINAA
-!! € vapaa
+!!€ vapaa
 0:a   N_BACK_NOMINATIVE    ;
 0:a   N_BACK_SINGULARS ;
 0   N_BACK_PLURALS    ;
@@ -99655,7 +99655,7 @@ LEXICON N_VAINAA
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_TIENOO
-!! € tienoo
+!!€ tienoo
 0:o   N_BACK_NOMINATIVE    ;
 0:o   N_BACK_SINGULARS ;
 0   N_BACK_PLURALS    ;
@@ -99672,7 +99672,7 @@ LEXICON N_TIENOO
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_LEIKKUU
-!! € kerjuu
+!!€ kerjuu
 0:u   N_BACK_NOMINATIVE    ;
 0:u   N_BACK_SINGULARS ;
 0   N_BACK_PLURALS    ;
@@ -99689,7 +99689,7 @@ LEXICON N_LEIKKUU
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_MAA
-!! € maa
+!!€ maa
 0:a   N_BACK_NOMINATIVE    ;
 0:a   N_BACK_SINGULARS    ;
 0 N_BACK_PLURALS    ;
@@ -99705,7 +99705,7 @@ LEXICON N_MAA
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_TEE
-!! € tee
+!!€ tee
 0:e   N_FRONT_NOMINATIVE    ;
 0:e   N_FRONT_SINGULARS    ;
 0 N_FRONT_PLURALS    ;
@@ -99721,7 +99721,7 @@ LEXICON N_TEE
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_HAI
-!! € hai
+!!€ hai
 0:i   N_BACK_NOMINATIVE    ;
 0:i   N_BACK_SINGULARS    ;
 0 N_BACK_PLURALS    ;
@@ -99737,7 +99737,7 @@ LEXICON N_HAI
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_PII
-!! € hai
+!!€ hai
 0:i   N_FRONT_NOMINATIVE    ;
 0:i   N_FRONT_SINGULARS    ;
 0 N_FRONT_PLURALS    ;
@@ -99753,7 +99753,7 @@ LEXICON N_PII
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_OOKOO
-!! € ookoo
+!!€ ookoo
 0:o   N_BACK_NOMINATIVE    ;
 0:o   N_BACK_SINGULARS    ;
 0 N_BACK_PLURALS    ;
@@ -99769,7 +99769,7 @@ LEXICON N_OOKOO
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_PUU
-!! € puu
+!!€ puu
 0:u   N_BACK_NOMINATIVE    ;
 0:u   N_BACK_SINGULARS    ;
 0 N_BACK_PLURALS    ;
@@ -99785,7 +99785,7 @@ LEXICON N_PUU
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_PYY
-!! € pyy
+!!€ pyy
 0:y   N_FRONT_NOMINATIVE    ;
 0:y   N_FRONT_SINGULARS    ;
 0 N_FRONT_PLURALS    ;
@@ -99801,7 +99801,7 @@ LEXICON N_PYY
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_PÄÄ
-!! € pää
+!!€ pää
 0:ä   N_FRONT_NOMINATIVE    ;
 0:ä   N_FRONT_SINGULARS    ;
 0 N_FRONT_PLURALS    ;
@@ -99817,7 +99817,7 @@ LEXICON N_PÄÄ
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_KÖÖ
-!! € köö
+!!€ köö
 0:ö   N_FRONT_NOMINATIVE    ;
 0:ö   N_FRONT_SINGULARS    ;
 0 N_FRONT_PLURALS    ;
@@ -99833,7 +99833,7 @@ LEXICON N_KÖÖ
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_TIE
-!! € tie
+!!€ tie
 0:ie  N_FRONT_NOMINATIVE    ;
 0:ie  N_FRONT_SINGULARS    ;
 0:e    N_FRONT_PLURALS    ;
@@ -99849,7 +99849,7 @@ LEXICON N_TIE
 0:e   N_COMPOUND_ITTEN   ;
 
 LEXICON N_VUO
-!! € suo
+!!€ suo
 0:uo  N_BACK_NOMINATIVE    ;
 0:uo  N_BACK_SINGULARS    ;
 0:o    N_BACK_PLURALS    ;
@@ -99865,7 +99865,7 @@ LEXICON N_VUO
 0:o   N_COMPOUND_ITTEN   ;
 
 LEXICON N_YÖ
-!! € työ
+!!€ työ
 0:yö  N_FRONT_NOMINATIVE    ;
 0:yö  N_FRONT_SINGULARS    ;
 0:ö    N_FRONT_PLURALS    ;
@@ -99882,18 +99882,18 @@ LEXICON N_YÖ
 
 LEXICON N_NUGAA
 !
-!! € nugaa
-!! € nugaata
-!! € nugaana
-!! € nugaahan
-!! € nugaaseen
-!! € nugaissa
-!! € nugaista
-!! € nugaaseen
-!! € nugaiden
-!! € nugaitten
-!! € nugaisiin
-!! € nugaihin
+!!€ nugaa
+!!€ nugaata
+!!€ nugaana
+!!€ nugaahan
+!!€ nugaaseen
+!!€ nugaissa
+!!€ nugaista
+!!€ nugaaseen
+!!€ nugaiden
+!!€ nugaitten
+!!€ nugaisiin
+!!€ nugaihin
 0:a   N_BACK_NOMINATIVE    ;
 0:a   N_BACK_SINGULARS    ;
 0 N_BACK_PLURALS  ;
@@ -99912,18 +99912,18 @@ LEXICON N_NUGAA
 
 LEXICON N_PATEE
 !
-!! € patee
-!! € pateeta
-!! € pateena
-!! € pateehen
-!! € pateeseen
-!! € pateissa
-!! € pateista
-!! € pateeseen
-!! € pateiden
-!! € pateitten
-!! € pateisiin
-!! € pateihin
+!!€ patee
+!!€ pateeta
+!!€ pateena
+!!€ pateehen
+!!€ pateeseen
+!!€ pateissa
+!!€ pateista
+!!€ pateeseen
+!!€ pateiden
+!!€ pateitten
+!!€ pateisiin
+!!€ pateihin
 0:e   N_BACK_NOMINATIVE    ;
 0:e   N_BACK_SINGULARS    ;
 0 N_BACK_PLURALS  ;
@@ -99942,18 +99942,18 @@ LEXICON N_PATEE
 
 LEXICON N_BIDEE
 !
-!! € bidee
-!! € bideetä
-!! € bideenä
-!! € bideehen
-!! € bideeseen
-!! € bideissä
-!! € bideistä
-!! € bideeseen
-!! € bideiden
-!! € bideitten
-!! € bideisiin
-!! € bideihin
+!!€ bidee
+!!€ bideetä
+!!€ bideenä
+!!€ bideehen
+!!€ bideeseen
+!!€ bideissä
+!!€ bideistä
+!!€ bideeseen
+!!€ bideiden
+!!€ bideitten
+!!€ bideisiin
+!!€ bideihin
 0:e   N_FRONT_NOMINATIVE    ;
 0:e   N_FRONT_SINGULARS    ;
 0 N_FRONT_PLURALS  ;
@@ -99990,16 +99990,16 @@ LEXICON N_BIDEE
 
 LEXICON N_TRIKOO
 !
-!! € trikoo
-!! € trikoota
-!! € trikoona
-!! € trikoissa
-!! € trikoista
-!! € trikooseen
-!! € trikoiden
-!! € trikoitten
-!! € trikoihin
-!! € trikoisiin
+!!€ trikoo
+!!€ trikoota
+!!€ trikoona
+!!€ trikoissa
+!!€ trikoista
+!!€ trikooseen
+!!€ trikoiden
+!!€ trikoitten
+!!€ trikoihin
+!!€ trikoisiin
 0:o   N_BACK_NOMINATIVE    ;
 0:o   N_BACK_SINGULARS    ;
 0 N_BACK_PLURALS  ;
@@ -100018,16 +100018,16 @@ LEXICON N_TRIKOO
 
 LEXICON N_RAGUU
 !
-!! € raguu
-!! € raguuta
-!! € raguuna
-!! € raguussa
-!! € raguista
-!! € raguuseen
-!! € raguiden
-!! € raguitten
-!! € raguisiin
-!! € raguihen
+!!€ raguu
+!!€ raguuta
+!!€ raguuna
+!!€ raguussa
+!!€ raguista
+!!€ raguuseen
+!!€ raguiden
+!!€ raguitten
+!!€ raguisiin
+!!€ raguihen
 0:u   N_BACK_NOMINATIVE    ;
 0:u   N_BACK_SINGULARS    ;
 0 N_BACK_PLURALS  ;
@@ -100046,16 +100046,16 @@ LEXICON N_RAGUU
 
 LEXICON N_FONDYY
 !
-!! € fondyy
-!! € fondyytä
-!! € fondyynä
-!! € fondyyssä
-!! € fondyistä
-!! € fondyyseen
-!! € nugaiden
-!! € nugaitten
-!! € nugaisiin
-!! € nugaihin
+!!€ fondyy
+!!€ fondyytä
+!!€ fondyynä
+!!€ fondyyssä
+!!€ fondyistä
+!!€ fondyyseen
+!!€ nugaiden
+!!€ nugaitten
+!!€ nugaisiin
+!!€ nugaihin
 0:y   N_FRONT_NOMINATIVE    ;
 0:y   N_FRONT_SINGULARS    ;
 0 N_FRONT_PLURALS  ;
@@ -100073,7 +100073,7 @@ LEXICON N_FONDYY
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_HYVINKÄÄ
-!! € Hyvinkää
+!!€ Hyvinkää
 0:ä   N_FRONT_NOMINATIVE    ;
 0:ä   N_FRONT_SINGULARS    ;
 0   N_FRONT_PLURALS  ;
@@ -100091,16 +100091,16 @@ LEXICON N_HYVINKÄÄ
 
 LEXICON N_MILJÖÖ
 !
-!! € miljöö
-!! € miljöötä
-!! € miljoöönä
-!! € miljöössä
-!! € miljöistä
-!! € miljööseen
-!! € miljöiden
-!! € miljöitten
-!! € miljöisiin
-!! € milhjöihin
+!!€ miljöö
+!!€ miljöötä
+!!€ miljoöönä
+!!€ miljöössä
+!!€ miljöistä
+!!€ miljööseen
+!!€ miljöiden
+!!€ miljöitten
+!!€ miljöisiin
+!!€ milhjöihin
 0:ö   N_FRONT_NOMINATIVE    ;
 0:ö   N_FRONT_SINGULARS    ;
 0 N_FRONT_PLURALS  ;
@@ -100121,7 +100121,7 @@ LEXICON N_MILJÖÖ
 !! not iden, in reality they may be in absolultely free variation.
 
 LEXICON N_ROSÉ
-!! € rosé
+!!€ rosé
 
 0   N_BACK_NOMINATIVE    ;
 0   N_BACK_SINGULARS    ;
@@ -100140,7 +100140,7 @@ LEXICON N_ROSÉ
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_BÉBÉ
-!! € bébé
+!!€ bébé
 0   N_FRONT_NOMINATIVE    ;
 0   N_FRONT_SINGULARS    ;
 0   N_FRONT_PLURALS  ;
@@ -100158,7 +100158,7 @@ LEXICON N_BÉBÉ
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_BRASSERIE
-!! € brasserie
+!!€ brasserie
 0   N_BACK_NOMINATIVE    ;
 0   N_FRONT_NOMINATIVE    ;
 0   N_BACK_SINGULARS    ;
@@ -100181,7 +100181,7 @@ LEXICON N_BRASSERIE
 
 
 LEXICON N_BRIE
-!! € brie
+!!€ brie
 0   N_FRONT_NOMINATIVE    ;
 0   N_FRONT_SINGULARS    ;
 0   N_FRONT_PLURALS    ;
@@ -100195,24 +100195,24 @@ LEXICON N_BRIE
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_FONDUE
-!! € fondue
-!! € fondueta
-!! € fonduetä
-!! € fonduena
-!! € fonduenä
-!! € fonduessa
-!! € fonduessä
-!! € fodnueina
-!! € fondueinä
-!! € fondueista
-!! € fondueistä
-!! € fondueita
-!! € fondueitä
-!! € fondueiden
-!! € fondueisiin
-!! € fondueiden
-!! € fondueitten
-!! € fondueihin
+!!€ fondue
+!!€ fondueta
+!!€ fonduetä
+!!€ fonduena
+!!€ fonduenä
+!!€ fonduessa
+!!€ fonduessä
+!!€ fodnueina
+!!€ fondueinä
+!!€ fondueista
+!!€ fondueistä
+!!€ fondueita
+!!€ fondueitä
+!!€ fondueiden
+!!€ fondueisiin
+!!€ fondueiden
+!!€ fondueitten
+!!€ fondueihin
 !! ? fondueisiin
 0   N_BACK_NOMINATIVE    ;
 0   N_FRONT_NOMINATIVE    ;
@@ -100372,7 +100372,7 @@ LEXICON N_CHACHACHA
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_NOUGAT
-!! € nougat
+!!€ nougat
 0   N_BACK_NOMINATIVE    ;
 0:’   N_BACK_SINGULARS    ;
 0:’   N_BACK_PLURALS    ;
@@ -100386,7 +100386,7 @@ LEXICON N_NOUGAT
 0:’   N_COMPOUND_IDEN    ;
 
 LEXICON N_PARFAIT
-!! € parfait
+!!€ parfait
 0   N_BACK_NOMINATIVE    ;
 0:’   N_BACK_SINGULARS    ;
 0:’   N_BACK_PLURALS    ;
@@ -100400,7 +100400,7 @@ LEXICON N_PARFAIT
 0:’   N_COMPOUND_IDEN    ;
 
 LEXICON N_BEIGNET
-!! € beignet
+!!€ beignet
 0   N_FRONT_NOMINATIVE    ;
 0:’   N_FRONT_SINGULARS    ;
 0:’   N_FRONT_PLURALS    ;
@@ -100414,7 +100414,7 @@ LEXICON N_BEIGNET
 0:’   N_COMPOUND_IDEN    ;
 
 LEXICON N_VERSAILLES
-!! € Versailles
+!!€ Versailles
 0   N_BACK_NOMINATIVE    ;
 0:’   N_BACK_SINGULARS    ;
 0:’   N_BACK_PLURALS    ;
@@ -100428,7 +100428,7 @@ LEXICON N_VERSAILLES
 0:’   N_COMPOUND_IDEN    ;
 
 LEXICON N_SERGEJ
-!! € Versailles
+!!€ Versailles
 0   N_FRONT_NOMINATIVE    ;
 0:’   N_FRONT_SINGULARS    ;
 0:’   N_FRONT_PLURALS    ;
@@ -100442,7 +100442,7 @@ LEXICON N_SERGEJ
 0:’   N_COMPOUND_IDEN    ;
 
 LEXICON N_BORDEAUX
-!! € bordeaux
+!!€ bordeaux
 0   N_BACK_NOMINATIVE    ;
 0:’   N_BACK_SINGULARS    ;
 0:’   N_BACK_PLURALS    ;
@@ -100456,7 +100456,7 @@ LEXICON N_BORDEAUX
 0:’   N_COMPOUND_IDEN    ;
 
 LEXICON N_SHOW
-!! € show
+!!€ show
 0   N_BACK_NOMINATIVE    ;
 0:’   N_BACK_SINGULARS    ;
 0:’   N_BACK_PLURALS    ;
@@ -100470,7 +100470,7 @@ LEXICON N_SHOW
 0:’   N_COMPOUND_IDEN    ;
 
 LEXICON N_CAMUS
-!! € Camus 
+!!€ Camus 
 0   N_FRONT_NOMINATIVE    ;
 0:’   N_FRONT_SINGULARS    ;
 0:’   N_FRONT_PLURALS    ;
@@ -100484,7 +100484,7 @@ LEXICON N_CAMUS
 0:’   N_COMPOUND_IDEN    ;
 
 LEXICON N_MONSIEUR
-!! € monsieur
+!!€ monsieur
 0   N_FRONT_NOMINATIVE    ;
 0:’   N_FRONT_SINGULARS    ;
 0:’   N_FRONT_PLURALS    ;
@@ -100498,7 +100498,7 @@ LEXICON N_MONSIEUR
 0:’   N_COMPOUND_IDEN    ;
 
 LEXICON N_TULI
-!! € tuli
+!!€ tuli
 0:i   N_BACK_NOMINATIVE    ;
 0:e N_BACK_SINGULARS    ;
 0 N_BACK_PLURALS    ;
@@ -100512,7 +100512,7 @@ LEXICON N_TULI
 0   N_COMPOUND_IEN ;
 
 LEXICON N_VUOHI
-!! € uni
+!!€ uni
 0:i   N_BACK_NOMINATIVE    ;
 0:e N_BACK_SINGULARS    ;
 0 N_BACK_PLURALS    ;
@@ -100527,7 +100527,7 @@ LEXICON N_VUOHI
 0   N_COMPOUND_IEN ;
 
 LEXICON N_RUUHI
-!! € uni
+!!€ uni
 0:i   N_BACK_NOMINATIVE    ;
 0:e N_BACK_SINGULARS    ;
 0 N_BACK_PLURALS    ;
@@ -100542,7 +100542,7 @@ LEXICON N_RUUHI
 0   N_COMPOUND_IEN ;
 
 LEXICON N_HIIRI
-!! € hiiri
+!!€ hiiri
 0:i   N_FRONT_NOMINATIVE    ;
 0:e N_FRONT_SINGULARS    ;
 0 N_FRONT_PLURALS    ;
@@ -100557,7 +100557,7 @@ LEXICON N_HIIRI
 0   N_COMPOUND_IEN ;
  
 LEXICON N_KAARI
-!! € kaari
+!!€ kaari
 0:i   N_BACK_NOMINATIVE    ;
 0:e N_BACK_SINGULARS    ;
 0 N_BACK_PLURALS    ;
@@ -100572,7 +100572,7 @@ LEXICON N_KAARI
 0   N_COMPOUND_IEN ;
 
 LEXICON N_MIELI
-!! € mieli
+!!€ mieli
 0:i   N_FRONT_NOMINATIVE    ;
 0:e N_FRONT_SINGULARS    ;
 0 N_FRONT_PLURALS    ;
@@ -100587,7 +100587,7 @@ LEXICON N_MIELI
 0   N_COMPOUND_IEN ;
 
 LEXICON N_TAIMI
-!! € luomi
+!!€ luomi
 0:mi   N_BACK_NOMINATIVE    ;
 0:me N_BACK_SINGULARS    ;
 0:m N_BACK_PLURALS    ;
@@ -100602,7 +100602,7 @@ LEXICON N_TAIMI
 0:m   N_COMPOUND_IEN ;
 
 LEXICON N_LIEMI
-!! € niemi
+!!€ niemi
 0:mi   N_FRONT_NOMINATIVE    ;
 0:me N_FRONT_SINGULARS    ;
 0:m N_FRONT_PLURALS    ;
@@ -100617,7 +100617,7 @@ LEXICON N_LIEMI
 0:m   N_COMPOUND_IEN ;
 
 LEXICON N_KAUSI
-!! € kausi
+!!€ kausi
 0:si   N_BACK_NOMINATIVE    ;
 0:te N_BACK_STRONG_SINGULARS    ;
 0:de N_BACK_WEAK_SINGULARS    ;
@@ -100634,7 +100634,7 @@ LEXICON N_KAUSI
 0:t   N_COMPOUND_TEN ;
 
 LEXICON N_KÖYSI
-!! € köysi
+!!€ köysi
 0:si   N_FRONT_NOMINATIVE    ;
 0:te N_FRONT_STRONG_SINGULARS    ;
 0:de N_FRONT_WEAK_SINGULARS    ;
@@ -100651,7 +100651,7 @@ LEXICON N_KÖYSI
 0:t   N_COMPOUND_TEN ;
 
 LEXICON N_PONSI
-!! € kansi
+!!€ kansi
 0:si   N_BACK_NOMINATIVE    ;
 0:te N_BACK_STRONG_SINGULARS    ;
 0:ne N_BACK_WEAK_SINGULARS    ;
@@ -100668,7 +100668,7 @@ LEXICON N_PONSI
 0:t   N_COMPOUND_TEN ;
 
 LEXICON N_LÄNSI
-!! € kynsi
+!!€ kynsi
 0:si   N_FRONT_NOMINATIVE    ;
 0:te N_FRONT_STRONG_SINGULARS    ;
 0:ne N_FRONT_WEAK_SINGULARS    ;
@@ -100685,7 +100685,7 @@ LEXICON N_LÄNSI
 0:t   N_COMPOUND_TEN ;
 
 LEXICON N_VARSI
-!! € varsi
+!!€ varsi
 0:si   N_BACK_NOMINATIVE    ;
 0:te N_BACK_STRONG_SINGULARS    ;
 0:re N_BACK_WEAK_SINGULARS    ;
@@ -100702,7 +100702,7 @@ LEXICON N_VARSI
 0:t   N_COMPOUND_TEN ;
 
 LEXICON N_VIRSI
-!! € hirsi
+!!€ hirsi
 0:si   N_FRONT_NOMINATIVE    ;
 0:te N_FRONT_STRONG_SINGULARS    ;
 0:re N_FRONT_WEAK_SINGULARS    ;
@@ -100719,7 +100719,7 @@ LEXICON N_VIRSI
 0:t   N_COMPOUND_TEN ;
 
 LEXICON N_JÄLSI
-!! € jälsi
+!!€ jälsi
 0:si   N_FRONT_NOMINATIVE    ;
 0:te N_FRONT_STRONG_SINGULARS    ;
 0:le N_FRONT_WEAK_SINGULARS    ;
@@ -100736,7 +100736,7 @@ LEXICON N_JÄLSI
 0:t   N_COMPOUND_TEN ;
 
 LEXICON N_LAPSI
-!! € lapsi
+!!€ lapsi
 0:psi   N_BACK_NOMINATIVE    ;
 0:pse N_BACK_SINGULARS    ;
 0:ps N_BACK_PLURALS    ;
@@ -100752,7 +100752,7 @@ LEXICON N_LAPSI
 0:s   N_COMPOUND_TEN ;
 
 LEXICON N_UKSI
-!! € uksi
+!!€ uksi
 0:ksi   N_BACK_NOMINATIVE    ;
 0:kse N_BACK_SINGULARS    ;
 0:ks N_BACK_PLURALS    ;
@@ -100768,7 +100768,7 @@ LEXICON N_UKSI
 0:s   N_COMPOUND_TEN ;
 
 LEXICON N_PEITSI
-!! € veitsi
+!!€ veitsi
 0:tsi   N_FRONT_NOMINATIVE    ;
 0:tse N_FRONT_SINGULARS    ;
 0:ts N_FRONT_PLURALS    ;
@@ -100784,7 +100784,7 @@ LEXICON N_PEITSI
 0:s   N_COMPOUND_TEN ;
  
 LEXICON N_VEITSI
-!! € veitsi
+!!€ veitsi
 0:tsi   N_FRONT_NOMINATIVE    ;
 0:tse N_FRONT_SINGULARS    ;
 0:ts N_FRONT_PLURALS    ;
@@ -100800,7 +100800,7 @@ LEXICON N_VEITSI
 0:s   N_COMPOUND_TEN ;
  
 LEXICON N_HAAKSI
-!! € haaksi
+!!€ haaksi
 0:ksi   N_BACK_NOMINATIVE    ;
 0:hte N_BACK_STRONG_SINGULARS    ;
 0:hde N_BACK_WEAK_SINGULARS    ;
@@ -100820,7 +100820,7 @@ LEXICON N_HAAKSI
 !! weak form.
 
 LEXICON N_AHVEN
-!! € ahven
+!!€ ahven
 0   N_BACK_NOMINATIVE    ;
 0:e N_BACK_SINGULARS    ;
 0   N_BACK_PLURALS  ;
@@ -100836,7 +100836,7 @@ LEXICON N_AHVEN
 0   N_COMPOUND_TEN ;
 
 LEXICON N_JOUTSEN
-!! € ahven
+!!€ ahven
 0   N_BACK_NOMINATIVE    ;
 0:e N_BACK_SINGULARS    ;
 0   N_BACK_PLURALS  ;
@@ -100852,7 +100852,7 @@ LEXICON N_JOUTSEN
 0   N_COMPOUND_TEN ;
 
 LEXICON N_SIEMEN
-!! € siemen
+!!€ siemen
 0   N_FRONT_NOMINATIVE    ;
 0:e N_FRONT_SINGULARS    ;
 0   N_FRONT_PLURALS  ;
@@ -100868,7 +100868,7 @@ LEXICON N_SIEMEN
 0   N_COMPOUND_TEN ;
 
 LEXICON N_AJATAR
-!! € ajatar
+!!€ ajatar
 0:ar   N_BACK_NOMINATIVE    ;
 0:tare    N_BACK_SINGULARS ;
 0:tar     N_BACK_PLURALS ;
@@ -100884,7 +100884,7 @@ LEXICON N_AJATAR
 0:ar  N_COMPOUND_TEN ;
 
 LEXICON N_TYTÄR
-!! € tytär
+!!€ tytär
 0:är   N_FRONT_NOMINATIVE    ;
 0:täre    N_FRONT_SINGULARS ;
 0:tär     N_FRONT_PLURALS ;
@@ -100900,7 +100900,7 @@ LEXICON N_TYTÄR
 0:är  N_COMPOUND_TEN ;
 
 LEXICON N_IEN
-!! € ien
+!!€ ien
 0:en   N_FRONT_NOMINATIVE    ;
 0:kene    N_FRONT_SINGULARS ;
 0:ken     N_FRONT_PLURALS ;
@@ -100916,7 +100916,7 @@ LEXICON N_IEN
 0:en  N_COMPOUND_TEN ;
 
 LEXICON N_PUHELIN
-!! € puhelin
+!!€ puhelin
 0:n   N_BACK_NOMINATIVE    ;
 0:me    N_BACK_SINGULARS    ;
 0:m     N_BACK_PLURALS    ;
@@ -100932,7 +100932,7 @@ LEXICON N_PUHELIN
 0:n   N_COMPOUND_TEN ;
 
 LEXICON N_ELIN
-!! € elin
+!!€ elin
 0:n   N_FRONT_NOMINATIVE    ;
 0:me    N_FRONT_SINGULARS    ;
 0:m     N_FRONT_PLURALS    ;
@@ -100948,7 +100948,7 @@ LEXICON N_ELIN
 0:n   N_COMPOUND_TEN ;
 
 LEXICON N_SUODATIN
-!! € heitin
+!!€ heitin
 0:in   N_BACK_NOMINATIVE    ;
 0:time    N_BACK_SINGULARS    ;
 0:tim     N_BACK_PLURALS    ;
@@ -100964,7 +100964,7 @@ LEXICON N_SUODATIN
 0:in   N_COMPOUND_TEN ;
 
 LEXICON N_HEITIN
-!! € heitin
+!!€ heitin
 0:in   N_FRONT_NOMINATIVE    ;
 0:time    N_FRONT_SINGULARS    ;
 0:tim     N_FRONT_PLURALS    ;
@@ -100980,7 +100980,7 @@ LEXICON N_HEITIN
 0:in   N_COMPOUND_TEN ;
 
 LEXICON N_PUIN
-!! € puin
+!!€ puin
 0:in   N_BACK_NOMINATIVE    ;
 0:kime    N_BACK_SINGULARS    ;
 0:kim     N_BACK_PLURALS    ;
@@ -100996,7 +100996,7 @@ LEXICON N_PUIN
 0:in   N_COMPOUND_TEN ;
 
 LEXICON N_PYYHIN
-!! € pyyhin
+!!€ pyyhin
 0:in   N_FRONT_NOMINATIVE    ;
 0:kime    N_FRONT_SINGULARS    ;
 0:kim     N_FRONT_PLURALS    ;
@@ -101012,7 +101012,7 @@ LEXICON N_PYYHIN
 0:in   N_COMPOUND_TEN ;
 
 LEXICON N_KAAVIN
-!! € raavin
+!!€ raavin
 0:vin   N_BACK_NOMINATIVE    ;
 0:pime    N_BACK_SINGULARS    ;
 0:pim     N_BACK_PLURALS    ;
@@ -101028,7 +101028,7 @@ LEXICON N_KAAVIN
 0:vin   N_COMPOUND_TEN ;
 
 LEXICON N_SÄRVIN
-!! € särvin
+!!€ särvin
 0:vin   N_FRONT_NOMINATIVE    ;
 0:pime    N_FRONT_SINGULARS    ;
 0:pim     N_FRONT_PLURALS    ;
@@ -101044,7 +101044,7 @@ LEXICON N_SÄRVIN
 0:vin   N_COMPOUND_TEN ;
 
 LEXICON N_VAADIN
-!! € vaadin
+!!€ vaadin
 0:din   N_BACK_NOMINATIVE    ;
 0:time    N_BACK_SINGULARS    ;
 0:tim     N_BACK_PLURALS    ;
@@ -101060,7 +101060,7 @@ LEXICON N_VAADIN
 0:din   N_COMPOUND_TEN ;
 
 LEXICON N_LAIDUN
-!! € vaadin
+!!€ vaadin
 0:dun   N_BACK_NOMINATIVE    ;
 0:tume    N_BACK_SINGULARS    ;
 0:tum     N_BACK_PLURALS    ;
@@ -101076,7 +101076,7 @@ LEXICON N_LAIDUN
 0:dun   N_COMPOUND_TEN ;
 
 LEXICON N_SÄÄDIN
-!! € säädin
+!!€ säädin
 0:din   N_FRONT_NOMINATIVE    ;
 0:time    N_FRONT_SINGULARS    ;
 0:tim     N_FRONT_PLURALS    ;
@@ -101093,7 +101093,7 @@ LEXICON N_SÄÄDIN
 
 
 LEXICON N_ASKELLIN
-!! € askellin
+!!€ askellin
 0:lin   N_BACK_NOMINATIVE    ;
 0:time    N_BACK_SINGULARS    ;
 0:tim     N_BACK_PLURALS    ;
@@ -101109,7 +101109,7 @@ LEXICON N_ASKELLIN
 0:lin   N_COMPOUND_TEN ;
 
 LEXICON N_SIVELLIN
-!! € sivellin
+!!€ sivellin
 0:lin   N_FRONT_NOMINATIVE    ;
 0:time    N_FRONT_SINGULARS    ;
 0:tim     N_FRONT_PLURALS    ;
@@ -101125,7 +101125,7 @@ LEXICON N_SIVELLIN
 0:lin   N_COMPOUND_TEN ;
 
 LEXICON N_KÄÄNNIN
-!! € käännin
+!!€ käännin
 0:nin   N_FRONT_NOMINATIVE    ;
 0:time    N_FRONT_SINGULARS    ;
 0:tim     N_FRONT_PLURALS    ;
@@ -101141,7 +101141,7 @@ LEXICON N_KÄÄNNIN
 0:nin   N_COMPOUND_TEN ;
 
 LEXICON N_MUUNNIN
-!! € muunnin
+!!€ muunnin
 0:nin   N_BACK_NOMINATIVE    ;
 0:time    N_BACK_SINGULARS    ;
 0:tim     N_BACK_PLURALS    ;
@@ -101157,7 +101157,7 @@ LEXICON N_MUUNNIN
 0:nin   N_COMPOUND_TEN ;
 
 LEXICON N_KIHARRIN
-!! € kiharrin
+!!€ kiharrin
 0:rin   N_BACK_NOMINATIVE    ;
 0:time    N_BACK_SINGULARS    ;
 0:tim     N_BACK_PLURALS    ;
@@ -101173,7 +101173,7 @@ LEXICON N_KIHARRIN
 0:rin   N_COMPOUND_TEN ;
 
 LEXICON N_KERROIN
-!! € kiharrin
+!!€ kiharrin
 0:roin   N_BACK_NOMINATIVE    ;
 0:toime    N_BACK_SINGULARS    ;
 0:toim     N_BACK_PLURALS    ;
@@ -101189,7 +101189,7 @@ LEXICON N_KERROIN
 0:roin   N_COMPOUND_TEN ;
 
 LEXICON N_KIERRIN
-!! € kierrin
+!!€ kierrin
 0:rin   N_FRONT_NOMINATIVE    ;
 0:time    N_FRONT_SINGULARS    ;
 0:tim     N_FRONT_PLURALS    ;
@@ -101205,7 +101205,7 @@ LEXICON N_KIERRIN
 0:rin   N_COMPOUND_TEN ;
 
 LEXICON N_POLJIN
-!! € poljin
+!!€ poljin
 0:jin   N_BACK_NOMINATIVE    ;
 0:kime    N_BACK_SINGULARS    ;
 0:kim     N_BACK_PLURALS    ;
@@ -101253,7 +101253,7 @@ LEXICON N_OSATON
 0:on  N_COMPOUND_TEN ;
 
 LEXICON N_NIMETÖN
-!! € työtön
+!!€ työtön
 0:ön  N_FRONT_NOMINATIVE    ;
 0:tömä    N_FRONT_SINGULARS    ;
 0:töm     N_FRONT_PLURALS    ;
@@ -101269,7 +101269,7 @@ LEXICON N_NIMETÖN
 0:ön  N_COMPOUND_TEN ;
 
 LEXICON N_VANHIN
-!! € sisin
+!!€ sisin
 0:n   N_BACK_NOMINATIVE    ;
 0:mpa   N_BACK_STRONG_SINGULARS    ;
 0:mma   N_BACK_WEAK_SINGULARS   ;
@@ -101289,7 +101289,7 @@ LEXICON N_VANHIN
 0:mpa N_COMPOUND_IN  ;
 
 LEXICON N_LÄHIN
-!! € sisin
+!!€ sisin
 0:n   N_FRONT_NOMINATIVE    ;
 0:mpä   N_FRONT_STRONG_SINGULARS    ;
 0:mmä   N_FRONT_WEAK_SINGULARS   ;
@@ -101309,7 +101309,7 @@ LEXICON N_LÄHIN
 0:mpä N_COMPOUND_IN  ;
 
 LEXICON N_VASEN
-!! € vasen
+!!€ vasen
 0:n   N_BACK_NOMINATIVE    ;
 0:mpa   N_BACK_STRONG_SINGULARS    ;
 0:mma   N_BACK_WEAK_SINGULARS   ;
@@ -101330,7 +101330,7 @@ LEXICON N_VASEN
 0:mpa N_COMPOUND_IN  ;
 
 LEXICON N_AAKKOSTAMINEN
-!! € aakkostaminen
+!!€ aakkostaminen
 0:nen     N_BACK_NOMINATIVE    ;
 0:se  N_BACK_SINGULARS    ;
 0:s   N_BACK_PLURALS  ;
@@ -101346,7 +101346,7 @@ LEXICON N_AAKKOSTAMINEN
 0:s       N_COMPOUND_TEN ;
 
 LEXICON N_KYLKIÄINEN
-!! € kylkiäinen
+!!€ kylkiäinen
 0:nen     N_FRONT_NOMINATIVE    ;
 0:se  N_FRONT_SINGULARS    ;
 0:s   N_FRONT_PLURALS  ;
@@ -101362,7 +101362,7 @@ LEXICON N_KYLKIÄINEN
 0:s       N_COMPOUND_TEN ;
 
 LEXICON N_VAKUUTUS
-!! € vakuutus
+!!€ vakuutus
 0:s   N_BACK_NOMINATIVE    ;
 0:kse   N_BACK_SINGULARS    ;
 0:ks    N_BACK_PLURALS    ;
@@ -101378,7 +101378,7 @@ LEXICON N_VAKUUTUS
 0:s   N_COMPOUND_TEN  ;
 
 LEXICON N_RÄJÄYTYS
-!! € räjäytys
+!!€ räjäytys
 0:s   N_FRONT_NOMINATIVE    ;
 0:kse   N_FRONT_SINGULARS    ;
 0:ks    N_FRONT_PLURALS    ;
@@ -101394,7 +101394,7 @@ LEXICON N_RÄJÄYTYS
 0:s   N_COMPOUND_TEN  ;
 
 LEXICON N_AAKKOSELLISUUS
-!! € aakkosellisuus
+!!€ aakkosellisuus
 0:s   N_BACK_NOMINATIVE    ;
 0:te   N_BACK_STRONG_SINGULARS    ;
 0:de   N_BACK_WEAK_SINGULARS    ;
@@ -101409,7 +101409,7 @@ LEXICON N_AAKKOSELLISUUS
 0:ks  N_COMPOUND_IEN ;
 
 LEXICON N_KÖYHYYS
-!! € köyhyys
+!!€ köyhyys
 0:s   N_FRONT_NOMINATIVE    ;
 0:te   N_FRONT_STRONG_SINGULARS    ;
 0:de   N_FRONT_WEAK_SINGULARS    ;
@@ -101424,7 +101424,7 @@ LEXICON N_KÖYHYYS
 0:ks  N_COMPOUND_IEN ;
 
 LEXICON N_PATSAS
-!! € patsas
+!!€ patsas
 0:s   N_BACK_NOMINATIVE    ;
 0:a N_BACK_SINGULARS    ;
 0 N_BACK_PLURALS    ;
@@ -101441,7 +101441,7 @@ LEXICON N_PATSAS
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_RUUMIS
-!! € patsas
+!!€ patsas
 0:s   N_BACK_NOMINATIVE    ;
 0:i N_BACK_SINGULARS    ;
 0 N_BACK_PLURALS    ;
@@ -101458,7 +101458,7 @@ LEXICON N_RUUMIS
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_ILMATIIVIS
-!! € mätäs
+!!€ mätäs
 0:s N_FRONT_NOMINATIVE    ;
 0:i N_FRONT_SINGULARS    ;
 0   N_FRONT_PLURALS    ;
@@ -101475,7 +101475,7 @@ LEXICON N_ILMATIIVIS
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_ARISTOTELES
-!! € patsas
+!!€ patsas
 0:s   N_BACK_NOMINATIVE    ;
 0:e N_BACK_SINGULARS    ;
 0 N_BACK_PLURALS    ;
@@ -101492,7 +101492,7 @@ LEXICON N_ARISTOTELES
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_KIRVES
-!! € patsas
+!!€ patsas
 0:s   N_FRONT_NOMINATIVE    ;
 0:e N_FRONT_SINGULARS    ;
 0 N_FRONT_PLURALS    ;
@@ -101509,7 +101509,7 @@ LEXICON N_KIRVES
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_ÄYRÄS
-!! € patsas
+!!€ patsas
 0:s   N_FRONT_NOMINATIVE    ;
 0:ä N_FRONT_SINGULARS    ;
 0 N_FRONT_PLURALS    ;
@@ -101526,7 +101526,7 @@ LEXICON N_ÄYRÄS
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_ASUKAS
-!! € asukas
+!!€ asukas
 0:as   N_BACK_NOMINATIVE    ;
 0:kaa N_BACK_SINGULARS    ;
 0:ka N_BACK_PLURALS    ;
@@ -101543,7 +101543,7 @@ LEXICON N_ASUKAS
 0:ka   N_COMPOUND_ITTEN   ;
 
 LEXICON N_KÄRSÄKÄS
-!! € asukas
+!!€ asukas
 0:äs   N_FRONT_NOMINATIVE    ;
 0:kää N_FRONT_SINGULARS    ;
 0:kä N_FRONT_PLURALS    ;
@@ -101560,7 +101560,7 @@ LEXICON N_KÄRSÄKÄS
 0:kä   N_COMPOUND_ITTEN   ;
 
 LEXICON N_SAAPAS
-!! € saapas
+!!€ saapas
 0:as   N_BACK_NOMINATIVE    ;
 0:paa N_BACK_SINGULARS    ;
 0:pa N_BACK_PLURALS    ;
@@ -101577,7 +101577,7 @@ LEXICON N_SAAPAS
 0:pa   N_COMPOUND_ITTEN   ;
 
 LEXICON N_RYPÄS
-!! € rypäs
+!!€ rypäs
 0:äs   N_FRONT_NOMINATIVE    ;
 0:kää N_FRONT_SINGULARS    ;
 0:kä N_FRONT_PLURALS    ;
@@ -101594,7 +101594,7 @@ LEXICON N_RYPÄS
 0:pä   N_COMPOUND_ITTEN   ;
 
 LEXICON N_RATAS
-!! € ratas
+!!€ ratas
 0:as   N_BACK_NOMINATIVE    ;
 0:taa N_BACK_SINGULARS    ;
 0:ta N_BACK_PLURALS    ;
@@ -101611,7 +101611,7 @@ LEXICON N_RATAS
 0:ta   N_COMPOUND_ITTEN   ;
 
 LEXICON N_MÄTÄS
-!! € mätäs
+!!€ mätäs
 0:äs   N_FRONT_NOMINATIVE    ;
 0:tää N_FRONT_SINGULARS    ;
 0:tä N_FRONT_PLURALS    ;
@@ -101628,7 +101628,7 @@ LEXICON N_MÄTÄS
 0:tä   N_COMPOUND_ITTEN   ;
 
 LEXICON N_KELTIS
-!! € mätäs
+!!€ mätäs
 0:is   N_FRONT_NOMINATIVE    ;
 0:tii N_FRONT_SINGULARS    ;
 0:ti N_FRONT_PLURALS    ;
@@ -101645,7 +101645,7 @@ LEXICON N_KELTIS
 0:ti   N_COMPOUND_ITTEN   ;
 
 LEXICON N_IES
-!! € äes
+!!€ äes
 0:es   N_FRONT_NOMINATIVE    ;
 0:kee N_FRONT_SINGULARS    ;
 0:ke N_FRONT_PLURALS    ;
@@ -101662,7 +101662,7 @@ LEXICON N_IES
 0:ke   N_COMPOUND_ITTEN   ;
 
 LEXICON N_VARAS
-!! € varas
+!!€ varas
 0:as   N_BACK_NOMINATIVE    ;
 0:kaa N_BACK_SINGULARS    ;
 0:ka N_BACK_PLURALS    ;
@@ -101679,7 +101679,7 @@ LEXICON N_VARAS
 0:ka   N_COMPOUND_ITTEN   ;
 
 LEXICON N_RUIS
-!! € ruis
+!!€ ruis
 0:is   N_BACK_NOMINATIVE    ;
 0:kii N_BACK_SINGULARS    ;
 0:ki N_BACK_PLURALS    ;
@@ -101696,7 +101696,7 @@ LEXICON N_RUIS
 0:ki   N_COMPOUND_ITTEN   ;
 
 LEXICON N_VARVAS
-!! € varvas
+!!€ varvas
 0:vas   N_BACK_NOMINATIVE    ;
 0:paa N_BACK_SINGULARS    ;
 0:pa N_BACK_PLURALS    ;
@@ -101713,7 +101713,7 @@ LEXICON N_VARVAS
 0:pa   N_COMPOUND_ITTEN   ;
 
 LEXICON N_SEIVÄS
-!! € seiväs
+!!€ seiväs
 0:väs   N_FRONT_NOMINATIVE    ;
 0:pää N_FRONT_SINGULARS    ;
 0:pä N_FRONT_PLURALS    ;
@@ -101730,7 +101730,7 @@ LEXICON N_SEIVÄS
 0:pä   N_COMPOUND_ITTEN   ;
 
 LEXICON N_TEHDAS
-!! € tehdas
+!!€ tehdas
 0:das   N_BACK_NOMINATIVE    ;
 0:taa N_BACK_SINGULARS    ;
 0:ta N_BACK_PLURALS    ;
@@ -101747,7 +101747,7 @@ LEXICON N_TEHDAS
 0:ta   N_COMPOUND_ITTEN   ;
 
 LEXICON N_KANGAS
-!! € kangas
+!!€ kangas
 0:gas   N_BACK_NOMINATIVE    ;
 0:kaa N_BACK_SINGULARS    ;
 0:ka N_BACK_PLURALS    ;
@@ -101764,7 +101764,7 @@ LEXICON N_KANGAS
 0:ka   N_COMPOUND_ITTEN   ;
 
 LEXICON N_KÖNGÄS
-!! € köngäs
+!!€ köngäs
 0:gäs   N_FRONT_NOMINATIVE    ;
 0:kää N_FRONT_SINGULARS    ;
 0:kä N_FRONT_PLURALS    ;
@@ -101781,7 +101781,7 @@ LEXICON N_KÖNGÄS
 0:kä   N_COMPOUND_ITTEN   ;
 
 LEXICON N_HAMMAS
-!! € hammas
+!!€ hammas
 0:mas   N_BACK_NOMINATIVE    ;
 0:paa N_BACK_SINGULARS    ;
 0:pa N_BACK_PLURALS    ;
@@ -101798,7 +101798,7 @@ LEXICON N_HAMMAS
 0:pa   N_COMPOUND_ITTEN   ;
 
 LEXICON N_ALLAS
-!! € allas
+!!€ allas
 0:las   N_BACK_NOMINATIVE    ;
 0:taa N_BACK_SINGULARS    ;
 0:ta N_BACK_PLURALS    ;
@@ -101815,7 +101815,7 @@ LEXICON N_ALLAS
 0:ta   N_COMPOUND_ITTEN   ;
 
 LEXICON N_KINNAS
-!! € kinnas
+!!€ kinnas
 0:nas   N_BACK_NOMINATIVE    ;
 0:taa N_BACK_SINGULARS    ;
 0:ta N_BACK_PLURALS    ;
@@ -101832,7 +101832,7 @@ LEXICON N_KINNAS
 0:ta   N_COMPOUND_ITTEN   ;
 
 LEXICON N_RYNNÄS
-!! € rynnäs
+!!€ rynnäs
 0:näs   N_FRONT_NOMINATIVE    ;
 0:tää N_FRONT_SINGULARS    ;
 0:tä N_FRONT_PLURALS    ;
@@ -101849,7 +101849,7 @@ LEXICON N_RYNNÄS
 0:tä   N_COMPOUND_ITTEN   ;
 
 LEXICON N_PORRAS
-!! € porras
+!!€ porras
 0:ras   N_BACK_NOMINATIVE    ;
 0:taa N_BACK_SINGULARS    ;
 0:ta N_BACK_PLURALS    ;
@@ -101866,7 +101866,7 @@ LEXICON N_PORRAS
 0:ta   N_COMPOUND_ITTEN   ;
 
 LEXICON N_MIES
-!! € mies
+!!€ mies
 0:s   N_FRONT_NOMINATIVE    ;
 0:he    N_FRONT_SINGULARS    ;
 0:h     N_FRONT_PLURALS    ;
@@ -101882,7 +101882,7 @@ LEXICON N_MIES
 0:h   N_COMPOUND_IEN ;
 
 LEXICON N_OLUT
-!! € olut
+!!€ olut
 0:t   N_BACK_NOMINATIVE    ;
 0:e N_BACK_SINGULARS    ;
 0 N_BACK_PLURALS    ;
@@ -101899,7 +101899,7 @@ LEXICON N_OLUT
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_NEITSYT
-!! € neitsyt
+!!€ neitsyt
 0:t   N_FRONT_NOMINATIVE    ;
 0:e N_FRONT_SINGULARS    ;
 0 N_FRONT_PLURALS    ;
@@ -101916,7 +101916,7 @@ LEXICON N_NEITSYT
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_IMMYT
-!! € neitsyt
+!!€ neitsyt
 0:myt   N_FRONT_NOMINATIVE    ;
 0:pye N_FRONT_SINGULARS    ;
 0:py N_FRONT_PLURALS    ;
@@ -101933,7 +101933,7 @@ LEXICON N_IMMYT
 0:mpy   N_COMPOUND_ITTEN   ;
 
 LEXICON N_KEVÄT
-!! € kevät
+!!€ kevät
 0:t   N_FRONT_NOMINATIVE    ;
 0:ä N_FRONT_SINGULARS    ;
 0 N_FRONT_PLURALS    ;
@@ -101950,7 +101950,7 @@ LEXICON N_KEVÄT
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_VUOSITUHAT
-!! € vuosituhat
+!!€ vuosituhat
 0:t   N_BACK_NOMINATIVE    ;
 0:nte N_BACK_STRONG_SINGULARS    ;
 0:nne N_BACK_WEAK_SINGULARS    ;
@@ -101965,7 +101965,7 @@ LEXICON N_VUOSITUHAT
 0:ns   N_COMPOUND_IEN    ;
 
 LEXICON N_AIVOKUOLLUT
-!! € aivokuollut
+!!€ aivokuollut
 0:ut  N_BACK_NOMINATIVE    ;
 0:ee   N_BACK_SINGULARS    ;
 0:e    N_BACK_PLURALS    ;
@@ -101982,7 +101982,7 @@ LEXICON N_AIVOKUOLLUT
 0:e   N_COMPOUND_ITTEN   ;
 
 LEXICON N_SIVISTYNYT
-!! € sivistynyt
+!!€ sivistynyt
 0:yt  N_FRONT_NOMINATIVE    ;
 0:ee   N_FRONT_SINGULARS    ;
 0:e    N_FRONT_PLURALS    ;
@@ -101999,7 +101999,7 @@ LEXICON N_SIVISTYNYT
 0:e   N_COMPOUND_ITTEN   ;
 
 LEXICON N_ASTE
-!! € aste
+!!€ aste
 0   N_BACK_NOMINATIVE    ;
 0:e N_BACK_SINGULARS    ;
 0   N_BACK_PLURALS    ;
@@ -102016,7 +102016,7 @@ LEXICON N_ASTE
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_PISTE
-!! € piste
+!!€ piste
 0   N_FRONT_NOMINATIVE    ;
 0:e N_FRONT_SINGULARS    ;
 0   N_FRONT_PLURALS    ;
@@ -102033,7 +102033,7 @@ LEXICON N_PISTE
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_KASTIKE
-!! € kastike
+!!€ kastike
 0:e       N_BACK_NOMINATIVE    ;
 0:kee   N_BACK_SINGULARS    ;
 0:ke    N_BACK_PLURALS    ;
@@ -102050,7 +102050,7 @@ LEXICON N_KASTIKE
 0:ke  N_COMPOUND_ITTEN   ;
 
 LEXICON N_LÄÄKE
-!! € lääke
+!!€ lääke
 0:e       N_FRONT_NOMINATIVE    ;
 0:kee   N_FRONT_SINGULARS    ;
 0:ke    N_FRONT_PLURALS    ;
@@ -102067,7 +102067,7 @@ LEXICON N_LÄÄKE
 0:ke      N_COMPOUND_ITTEN   ;
 
 LEXICON N_APE
-!! € ape
+!!€ ape
 0:e       N_BACK_NOMINATIVE    ;
 0:pee   N_BACK_SINGULARS    ;
 0:pe    N_BACK_PLURALS    ;
@@ -102084,7 +102084,7 @@ LEXICON N_APE
 0:pe  N_COMPOUND_ITTEN   ;
 
 LEXICON N_RIPE
-!! € ripe
+!!€ ripe
 0:e       N_FRONT_NOMINATIVE    ;
 0:pee   N_FRONT_SINGULARS    ;
 0:pe    N_FRONT_PLURALS    ;
@@ -102101,7 +102101,7 @@ LEXICON N_RIPE
 0:pe      N_COMPOUND_ITTEN   ;
 
 LEXICON N_LAITE
-!! € osoite
+!!€ osoite
 0:e       N_BACK_NOMINATIVE    ;
 0:tee   N_BACK_SINGULARS    ;
 0:te    N_BACK_PLURALS    ;
@@ -102118,7 +102118,7 @@ LEXICON N_LAITE
 0:te  N_COMPOUND_ITTEN   ;
 
 LEXICON N_KÄSITE
-!! € käsite
+!!€ käsite
 0:e       N_FRONT_NOMINATIVE    ;
 0:tee   N_FRONT_SINGULARS    ;
 0:te    N_FRONT_PLURALS    ;
@@ -102135,7 +102135,7 @@ LEXICON N_KÄSITE
 0:te      N_COMPOUND_ITTEN   ;
 
 LEXICON N_KOE
-!! € koe
+!!€ koe
 0:e       N_BACK_NOMINATIVE    ;
 0:kee   N_BACK_SINGULARS    ;
 0:ke    N_BACK_PLURALS    ;
@@ -102152,7 +102152,7 @@ LEXICON N_KOE
 0:ke  N_COMPOUND_ITTEN   ;
 
 LEXICON N_PYYHE
-!! € pyyhe
+!!€ pyyhe
 0:e       N_FRONT_NOMINATIVE    ;
 0:kee   N_FRONT_SINGULARS    ;
 0:ke    N_FRONT_PLURALS    ;
@@ -102169,7 +102169,7 @@ LEXICON N_PYYHE
 0:ke      N_COMPOUND_ITTEN   ;
 
 LEXICON N_TARVE
-!! € tarve
+!!€ tarve
 0:ve       N_BACK_NOMINATIVE    ;
 0:pee   N_BACK_SINGULARS    ;
 0:pe    N_BACK_PLURALS    ;
@@ -102186,7 +102186,7 @@ LEXICON N_TARVE
 0:pe  N_COMPOUND_ITTEN   ;
 
 LEXICON N_VIIVE
-!! € viive
+!!€ viive
 0:ve       N_FRONT_NOMINATIVE    ;
 0:pee   N_FRONT_SINGULARS    ;
 0:pe    N_FRONT_PLURALS    ;
@@ -102203,7 +102203,7 @@ LEXICON N_VIIVE
 0:pe      N_COMPOUND_ITTEN   ;
 
 LEXICON N_KIDE
-!! € kide
+!!€ kide
 0:de       N_FRONT_NOMINATIVE    ;
 0:tee   N_FRONT_SINGULARS    ;
 0:te    N_FRONT_PLURALS    ;
@@ -102220,7 +102220,7 @@ LEXICON N_KIDE
 0:te      N_COMPOUND_ITTEN   ;
 
 LEXICON N_JOHDE
-!! € luode
+!!€ luode
 0:de       N_BACK_NOMINATIVE    ;
 0:tee   N_BACK_SINGULARS    ;
 0:te    N_BACK_PLURALS    ;
@@ -102237,7 +102237,7 @@ LEXICON N_JOHDE
 0:te  N_COMPOUND_ITTEN   ;
 
 LEXICON N_LUMME
-!! € lumme
+!!€ lumme
 0:me       N_BACK_NOMINATIVE    ;
 0:pee   N_BACK_SINGULARS    ;
 0:pe    N_BACK_PLURALS    ;
@@ -102254,7 +102254,7 @@ LEXICON N_LUMME
 0:pe  N_COMPOUND_ITTEN   ;
 
 LEXICON N_MIELLE
-!! € mielle
+!!€ mielle
 0:le       N_FRONT_NOMINATIVE    ;
 0:tee   N_FRONT_SINGULARS    ;
 0:te    N_FRONT_PLURALS    ;
@@ -102271,7 +102271,7 @@ LEXICON N_MIELLE
 0:te      N_COMPOUND_ITTEN   ;
 
 LEXICON N_VUOLLE
-!! € vuolle
+!!€ vuolle
 0:le       N_BACK_NOMINATIVE    ;
 0:tee   N_BACK_SINGULARS    ;
 0:te    N_BACK_PLURALS    ;
@@ -102288,7 +102288,7 @@ LEXICON N_VUOLLE
 0:te  N_COMPOUND_ITTEN   ;
 
 LEXICON N_RAKENNE
-!! € rakenne
+!!€ rakenne
 0:ne       N_BACK_NOMINATIVE    ;
 0:tee   N_BACK_SINGULARS    ;
 0:te    N_BACK_PLURALS    ;
@@ -102305,7 +102305,7 @@ LEXICON N_RAKENNE
 0:te  N_COMPOUND_ITTEN   ;
 
 LEXICON N_KIINNE
-!! € kiinne
+!!€ kiinne
 0:ne       N_FRONT_NOMINATIVE    ;
 0:tee   N_FRONT_SINGULARS    ;
 0:te    N_FRONT_PLURALS    ;
@@ -102322,7 +102322,7 @@ LEXICON N_KIINNE
 0:te      N_COMPOUND_ITTEN   ;
 
 LEXICON N_AARRE
-!! € murre
+!!€ murre
 0:re       N_BACK_NOMINATIVE    ;
 0:tee   N_BACK_SINGULARS    ;
 0:te    N_BACK_PLURALS    ;
@@ -102339,7 +102339,7 @@ LEXICON N_AARRE
 0:te  N_COMPOUND_ITTEN   ;
 
 LEXICON N_KIERRE
-!! € kierre
+!!€ kierre
 0:re       N_FRONT_NOMINATIVE    ;
 0:tee   N_FRONT_SINGULARS    ;
 0:te    N_FRONT_PLURALS    ;
@@ -102356,7 +102356,7 @@ LEXICON N_KIERRE
 0:te      N_COMPOUND_ITTEN   ;
 
 LEXICON N_HYLJE
-!! € hylje
+!!€ hylje
 0:je       N_FRONT_NOMINATIVE    ;
 0:kee   N_FRONT_SINGULARS    ;
 0:ke    N_FRONT_PLURALS    ;
@@ -102373,7 +102373,7 @@ LEXICON N_HYLJE
 0:ke      N_COMPOUND_ITTEN   ;
 
 LEXICON N_POHJE
-!! € pohje
+!!€ pohje
 0:je       N_BACK_NOMINATIVE    ;
 0:kee   N_BACK_SINGULARS    ;
 0:ke    N_BACK_PLURALS    ;
@@ -102390,7 +102390,7 @@ LEXICON N_POHJE
 0:ke  N_COMPOUND_ITTEN   ;
 
 LEXICON N_ASKAR
-!! € askar
+!!€ askar
 0       N_BACK_NOMINATIVE    ;
 0:e    N_BACK_NOMINATIVE    ;
 0:e    N_BACK_SINGULARS    ;
@@ -102419,7 +102419,7 @@ LEXICON N_ASKAR
 0:e      N_COMPOUND_ITTEN   ;
 
 LEXICON N_KYYNEL
-!! € kyynel
+!!€ kyynel
 0       N_FRONT_NOMINATIVE    ;
 0:e    N_FRONT_NOMINATIVE    ;
 0:e    N_FRONT_SINGULARS    ;
@@ -102448,7 +102448,7 @@ LEXICON N_KYYNEL
 0:e      N_COMPOUND_ITTEN   ;
 
 LEXICON N_SÄEN
-!! € säen
+!!€ säen
 0:en       N_FRONT_NOMINATIVE    ;
 0:kene    N_FRONT_NOMINATIVE    ;
 0:kene    N_FRONT_SINGULARS    ;
@@ -102477,7 +102477,7 @@ LEXICON N_SÄEN
 0:kene      N_COMPOUND_ITTEN   ;
 
 LEXICON N_TAIVAL
-!! € taival
+!!€ taival
 0:val       N_BACK_NOMINATIVE    ;
 0:pale    N_BACK_NOMINATIVE    ;
 0:pale    N_BACK_SINGULARS    ;
@@ -102507,7 +102507,7 @@ LEXICON N_TAIVAL
 
 
 LEXICON N_UDAR
-!! € udar
+!!€ udar
 0:dar       N_BACK_NOMINATIVE    ;
 0:tare    N_BACK_NOMINATIVE    ;
 0:tare    N_BACK_SINGULARS    ;
@@ -102536,7 +102536,7 @@ LEXICON N_UDAR
 0:tare      N_COMPOUND_ITTEN   ;
 
 LEXICON N_PENGER
-!! € penger
+!!€ penger
 0:ger       N_BACK_NOMINATIVE    ;
 0:kere    N_BACK_NOMINATIVE    ;
 0:kere    N_BACK_SINGULARS    ;
@@ -102565,7 +102565,7 @@ LEXICON N_PENGER
 0:kere      N_COMPOUND_ITTEN   ;
 
 LEXICON N_OMMEL
-!! € ommel
+!!€ ommel
 0:mel       N_BACK_NOMINATIVE    ;
 0:pele    N_BACK_NOMINATIVE    ;
 0:pele    N_BACK_SINGULARS    ;
@@ -102594,7 +102594,7 @@ LEXICON N_OMMEL
 0:pele      N_COMPOUND_ITTEN   ;
 
 LEXICON N_VEMMEL
-!! € ommel
+!!€ ommel
 0:mel       N_FRONT_NOMINATIVE    ;
 0:pele    N_FRONT_NOMINATIVE    ;
 0:pele    N_FRONT_SINGULARS    ;
@@ -102623,7 +102623,7 @@ LEXICON N_VEMMEL
 0:pele      N_COMPOUND_ITTEN   ;
 
 LEXICON N_KINNER
-!! € kinner
+!!€ kinner
 0:ner       N_BACK_NOMINATIVE    ;
 0:tere    N_BACK_NOMINATIVE    ;
 0:tere    N_BACK_SINGULARS    ;
@@ -102652,7 +102652,7 @@ LEXICON N_KINNER
 0:tere      N_COMPOUND_ITTEN   ;
 
 LEXICON N_KANNEL
-!! € kannel
+!!€ kannel
 0:nel       N_BACK_NOMINATIVE    ;
 0:tele    N_BACK_NOMINATIVE    ;
 0:tele    N_BACK_SINGULARS    ;
@@ -102681,7 +102681,7 @@ LEXICON N_KANNEL
 0:tele      N_COMPOUND_ITTEN   ;
 
 LEXICON N_MANNER
-!! € manner
+!!€ manner
 0:ner       N_BACK_NOMINATIVE    ;
 0:tere    N_BACK_NOMINATIVE    ;
 0:tere    N_BACK_SINGULARS    ;
@@ -102710,7 +102710,7 @@ LEXICON N_MANNER
 0:tere      N_COMPOUND_ITTEN   ;
 
 LEXICON N_PIENNAR
-!! € manner
+!!€ manner
 0:nar       N_BACK_NOMINATIVE    ;
 0:tare    N_BACK_NOMINATIVE    ;
 0:tare    N_BACK_SINGULARS    ;
@@ -102739,7 +102739,7 @@ LEXICON N_PIENNAR
 0:tere      N_COMPOUND_ITTEN   ;
 
 LEXICON N_AUER
-!! € auer
+!!€ auer
 0:er       N_BACK_NOMINATIVE    ;
 0:tere    N_BACK_NOMINATIVE    ;
 0:tere    N_BACK_SINGULARS    ;
@@ -102768,8 +102768,8 @@ LEXICON N_AUER
 0:tere     N_COMPOUND_ITTEN   ;
 
 LEXICON N_VERI
-!! € veri
-!! € verta
+!!€ veri
+!!€ verta
 !! $ vertä
 0:i       N_FRONT_NOMINATIVE    ;
 0:e       N_FRONT_SINGULARS    ;
@@ -102784,8 +102784,8 @@ LEXICON N_VERI
 0       N_COMPOUND_IEN ;
 
 LEXICON N_MERI
-!! € meri
-!! € merta
+!!€ meri
+!!€ merta
 !! $ mertä
 0:i   N_FRONT_NOMINATIVE    ;
 0:e N_FRONT_SINGULARS    ;
@@ -102801,9 +102801,9 @@ LEXICON N_MERI
 0   N_COMPOUND_IEN ;
 
 LEXICON N_UROS
-!! € uros
-!! € uroksen
-!! € uroon
+!!€ uros
+!!€ uroksen
+!!€ uroon
 0:s   N_BACK_NOMINATIVE    ;
 0:kse   N_BACK_SINGULARS    ;
 0:o     N_BACK_SINGULARS    ;
@@ -102829,9 +102829,9 @@ LEXICON N_UROS
 0:s   N_COMPOUND_TEN  ;
 
 LEXICON N_VELI
-!! € veli
-!! € veljeä
-!! € veljen
+!!€ veli
+!!€ veljeä
+!!€ veljen
 0:i       N_FRONT_NOMINATIVE    ;
 0:je       N_FRONT_SINGULARS    ;
 0     N_FRONT_PLURALS   ;
@@ -102845,13 +102845,13 @@ LEXICON N_VELI
 0       N_COMPOUND_IEN ;
 
 LEXICON N_AIKA
-!! € lanka
-!! € lankaa
-!! € lankana
-!! € langassa
-!! € lankoina
-!! € lankojen
-!! € lankoihin
+!!€ lanka
+!!€ lankaa
+!!€ lankana
+!!€ langassa
+!!€ lankoina
+!!€ lankojen
+!!€ lankoihin
 0:ika  N_BACK_NOMINATIVE    ;
 0:ika  N_BACK_STRONG_SINGULARS    ;
 0:ja  N_BACK_WEAK_SINGULARS   ;
@@ -102869,16 +102869,16 @@ LEXICON N_AIKA
 0:ika   N_COMPOUND_IN  ;
 
 LEXICON N_POIKA
-!! € ruoka
-!! € ruokaa
-!! € ruokana
-!! € ruoassa
-!! € ruokina
-!! € ruoissa
-!! € ruokien
+!!€ ruoka
+!!€ ruokaa
+!!€ ruokana
+!!€ ruoassa
+!!€ ruokina
+!!€ ruoissa
+!!€ ruokien
 !
-!! € ruo’assa
-!! € ruo’issa
+!!€ ruo’assa
+!!€ ruo’issa
 0:ika   N_BACK_NOMINATIVE    ;
 0:ika   N_BACK_STRONG_SINGULARS    ;
 0:ja    N_BACK_WEAK_SINGULARS   ;
@@ -102911,9 +102911,9 @@ LEXICON N_POIKA
 !! a, ä stems, similarly 10 is quite like sisar with the extra en in nominative.
 
 LEXICON N_AAMUYKSI
-!! € aamuyksi
-!! € aamuyhtä
-!! € aamuyhtenä
+!!€ aamuyksi
+!!€ aamuyhtä
+!!€ aamuyhtenä
 0:ksi   N_FRONT_NOMINATIVE    ;
 0:hte N_FRONT_STRONG_SINGULARS    ;
 0:hde N_FRONT_WEAK_SINGULARS    ;
@@ -102928,12 +102928,12 @@ LEXICON N_AAMUYKSI
 0:ks   N_COMPOUND_IEN ;
 
 LEXICON N_AAMUKOLME
-!! € aamukolme
-!! € aamukolmea
-!! € aamukolmeen
-!! € aamukolmia
-!! € aamukolmien
-!! € aamukolmiin
+!!€ aamukolme
+!!€ aamukolmea
+!!€ aamukolmeen
+!!€ aamukolmia
+!!€ aamukolmien
+!!€ aamukolmiin
 0:e    N_BACK_NOMINATIVE    ;
 0:e    N_BACK_SINGULARS    ;
 0    N_BACK_PLURALS ;
@@ -102950,13 +102950,13 @@ LEXICON N_AAMUKOLME
 
 
 LEXICON N_AAMUKAHDEKSAN
-!! € aamukahdeksan
-!! € aamukahdeksaa
-!! € aamukahdeksana
-!! € aamukahdeksassa
-!! € aamukahdeksina
-!! € aamukahdeksien
-!! € aamukahdeksiin
+!!€ aamukahdeksan
+!!€ aamukahdeksaa
+!!€ aamukahdeksana
+!!€ aamukahdeksassa
+!!€ aamukahdeksina
+!!€ aamukahdeksien
+!!€ aamukahdeksiin
 0:an   N_BACK_NOMINATIVE    ;
 0:a   N_BACK_SINGULARS    ;
 0   N_BACK_PLURALS  ;
@@ -102972,13 +102972,13 @@ LEXICON N_AAMUKAHDEKSAN
 0:a   N_COMPOUND_IN  ;
 
 LEXICON N_AAMUYHDEKSÄN
-!! € aamuyhdeksän
-!! € aamuyhdeksää
-!! € aamuyhdeksänä
-!! € aamuyhdeksässä
-!! € aamuyhdeksinä
-!! € aamuyhdeksien
-!! € aamuyhdeksiin
+!!€ aamuyhdeksän
+!!€ aamuyhdeksää
+!!€ aamuyhdeksänä
+!!€ aamuyhdeksässä
+!!€ aamuyhdeksinä
+!!€ aamuyhdeksien
+!!€ aamuyhdeksiin
 0:än   N_FRONT_NOMINATIVE    ;
 0:ä   N_FRONT_SINGULARS    ;
 0   N_FRONT_PLURALS  ;
@@ -102995,7 +102995,7 @@ LEXICON N_AAMUYHDEKSÄN
 
 
 LEXICON N_AAMUKYMMENEN
-!! € aamukymmenen
+!!€ aamukymmenen
 0:en    N_FRONT_NOMINATIVE    ;
 0:e     N_FRONT_SINGULARS    ;
 0       N_FRONT_PLURALS  ;
