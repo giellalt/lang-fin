@@ -4,36 +4,36 @@ acronyms, and compound with hyphen only.
 Digits are constructed as several cyclic structures: integers, decimals or
 roman numerals.
 Zero alone works quite differently:
-€ 0
+* __0__
 
 Integers can be constructed from any number of digits, ending in
 1-9, followed by any number of 0's. Initial 0's are rare, but not totally
 unexpected:
-€ 13
-€ 100
-€ 0000005550000000
+* __13__
+* __100__
+* __0000005550000000__
 
 The digit strings that end in 10 to 12 + 6n 0's are inflected alike:
-€ 1000000000
-€ 300000000000
-€ 123456000000000000000000
+* __1000000000__
+* __300000000000__
+* __123456000000000000000000__
 
 The digit strings that end in 6 to 9 + 6n 0's are inflected alike:
-€ 1000000
-€ 300000000
-€ 123456000000000000000
+* __1000000__
+* __300000000__
+* __123456000000000000000__
 
 Decimal digit strings start with any number of digits 0 to 9, followed
 by decimal separator comma. The decimal dot may be allowed as substandard
 variant.
-€ 1,0
-€ 314,1
+* __1,0__
+* __314,1__
 
 
 The decimal digit strings end in any number of digits 0 to 9, inflected
 along the last part.
-€ 3,141
-€ 123,345
+* __3,141__
+* __123,345__
 
 The decimal digit strings with dot may be allowed as sub-standard option
 with respective analysis.
@@ -41,25 +41,25 @@ with respective analysis.
 Roman numerals are composed the symbols M, D, C, L, X, V, I in ascending
 scale and some combinations, they denote ordinal numbers and inflect like
 ones.
-€ MM
-€ MCXI
-€ CMXCIX
+* __MM__
+* __MCXI__
+* __CMXCIX__
 
 Thousands can be followed by any of other parts
-€ MII
-€ MCCCXXII
+* __MII__
+* __MCCCXXII__
 
 
 Hundreds can be followed by anything but thousands:
-€ CXXI
-€ DXXIV
+* __CXXI__
+* __DXXIV__
 
 Tens can be followed by ones:
-€ XIX
-€ XXVII
+* __XIX__
+* __XXVII__
 
 Ones come alone
-€ IX
-€ VIII
-€ II
+* __IX__
+* __VIII__
+* __II__
 
