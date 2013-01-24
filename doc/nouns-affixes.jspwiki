@@ -1,152 +1,326 @@
+!!Noun inflection and derivation
+Nouns and other nominals inflect in number, cases, possessives and with
+clitics, in that order. Combinations that this regular inflection can form
+is approximately 2×15×5×26=4900, so we do not show all variants in test cases
+and examples, but just central ones that are interesting and potential to
+break.
+
+!Nominatives
+Singular nominative is the dictionary reference form for most of the words.
+
+(subsequent examples are *Noun nominatives*)
+* __talo__: {{talo+N+Sg+Nom}} (Eng. a house)
+* __taloko__: {{talo+N+Sg+Nom+Qst}}
+* __*talopä__: {{talo+N+Sg+Nom+Foc/pa}} (is not standard language)
+; {{talo+N+Sg+Nom+Foc/han}}: __talohan,__ __*talohän__ 
+
+* __pöly__: {{pöly+N+Sg+Nom}} (Eng. dust)
+* __*pölyko__: {{pöly+N+Sg+Nom+Qst}} (is not standard language)
+
+The plural nominative attaches to singular stem. For plural words it is also
+the form that is used for dictionary lookups:
+
+* __talot__: {{talo+N+Pl+Nom}}
+* __sakset__: {{sakset+N+Pl+Nom}} (Eng. scissors)
+; {{sakset+N+Pl+Nom+Foc/pa}}: __saksetpa,__ __*saksetpä__ 
+
+* __pölyt__: {{pöly+N+Pl+Nom}}
+* __häät__: {{häät+N+Pl+Nom}} (Eng. wedding)
+
+!Singular case inflection
+The nouns can inflect in 15 regular cases. Most of the cases have one or two
+case endings, with only varying part being the harmony vowel. For nouns with
+direct consonant gradation, the most of the singular case suffixes attach
+to the weak singular stem:
+
+(subsequent examples are *Noun basic singular cases*)
+* __pata__: {{pata+N+Sg+Nom}} (Eng. pot)
+* __padan__: {{pata+N+Sg+Gen}}
+* __padassa__: {{pata+N+Sg+Ine}}
+* __padasta__: {{pata+N+Sg+Ela}}
+* __padalla__: {{pata+N+Sg+Ade}}
+* __padalta__: {{pata+N+Sg+Abl}}
+* __padalle__: {{pata+N+Sg+All}}
+* __padaksi__: {{pata+N+Sg+Tra}}
+* __padatta__: {{pata+N+Sg+Abe}}
+
+* __näky__: {{näky+N+Sg+Nom}} (Eng. vision)
+* __näyn__: {{näky+N+Sg+Gen}}
+* __näyssä__: {{näky+N+Sg+Ine}}
+* __näystä__: {{näky+N+Sg+Ela}}
+* __näyllä__: {{näky+N+Sg+Ade}}
+* __näyltä__: {{näky+N+Sg+Abl}}
+* __näylle__: {{näky+N+Sg+All}}
+* __näyksi__: {{näky+N+Sg+Tra}}
+* __näyttä__: {{näky+N+Sg+Abe}}
+
+For words with direct gradation the only forms that attach to strong singular
+stem may be essive and possessive's of nominative or genitive:
+
+* __patana__: {{pata+N+Sg+Ess}}
+* __patani__: {{pata+N+Sg+Nom+PxSg1}}
+* __patasi__: {{pata+N+Sg+Gen+PxSg2}}
+
+* __näkynä__: {{näky+N+Sg+Ess}}
+* __näkyni__: {{näky+N+Sg+Nom+PxSg1}}
+* __näkysi__: {{näky+N+Sg+Gen+PxSg2}}
+
+!Plural inflection
+
+(subsequent examples are *Noun basic plural cases*)
+* __padoilta__: {{pata+N+Pl+Abl}}
+* __padoilla__: {{pata+N+Pl+Ade}}
+* __padoille__: {{pata+N+Pl+All}}
+* __padoista__: {{pata+N+Pl+Ela}}
+* __padoissa__: {{pata+N+Pl+Ine}}
+* __padoiksi__: {{pata+N+Pl+Tra}}
+* __padoitta__: {{pata+N+Pl+Abe}}
+* __padoin__: {{pata+N+Pl+Ins}}
+
+* __näyillä__: {{näky+N+Pl+Ade}}
+* __näyiltä__: {{näky+N+Pl+Abl}}
+* __näyille__: {{näky+N+Pl+All}}
+* __näyissä__: {{näky+N+Pl+Ine}}
+* __näyistä__: {{näky+N+Pl+Ela}}
+* __näyiksi__: {{näky+N+Pl+Tra}}
+* __näyittä__: {{näky+N+Pl+Abe}}
+* __näyin__: {{näky+N+Pl+Ins}}
+
+The strong plural stem of words with direct gradation contains only essive
+and comitative:
+
+* __patoina__: {{pata+N+Pl+Ess}}
+* __patoine__: {{pata+N+Cmt}}
+
+* __näkyinä__: {{näky+N+Pl+Ess}}
+* __näkyine__: {{näky+N+Cmt}}
+
+!Cases with allomorphic variation
+The nominal cases which can take several different suffixes are singular
+and plural partitives, singular and plural illatives and plural genitives.
+After stem variation the selection of these allomorphs is the main factor
+of morphological classification of nouns.
 
-€ talo
+The reconstructed historical suffix for partitives of Finnish is ða, ðä, the
+current variants according to that theory would be the different
+realisations of extinct ð. 
 
-€ pöly
+For basic vowel stems the partitive suffix is a, ä.
+(subsequent examples are *Noun singular partitives*)
+* __politiikka__: {{politiikka+N+Sg+Nom}} (Eng. politics)
+* __politiikkaa__: {{politiikka+N+Sg+Par}}
 
-€ sakset
+* __kysyntä__: {{kysyntä+N+Sg+Nom}} (Eng. demand)
+* __kysyntää__: {{kysyntä+N+Sg+Par}}
 
-€ häät
+In stems other than -a, -ä stems, the 3rd possessive suffix may appear in
+-an, -än form after the partitive suffix.
+* __pato__: {{pato+N+Sg+Nom}} (Eng. dam)
+* __patoa__: {{pato+N+Sg+Par}}
+* __patoaan__: {{pato+N+Sg+Par+PxSg3}}
 
-€ padassa
+* __näkyä__: {{näky+N+Sg+Par}}
+* __näkyään__: {{näky+N+Sg+Par+PxSg3}}
 
-€ näyssä
+The consonant stems and long vowel stems regularly take -ta, -tä suffix 
+for singular partitives. It is up to interpretation whether the partitive
+suffix of the -e^ stem is considered to be -tta, -ttä, or just -ta, -tä.
+In principle the consonant that disappeared from -e^ stems could be from
+that.
 
-€ patana
+* __taimen__: {{taimen+N+Sg+Nom}} (Eng. trout)
+* __taimenta__: {{taimen+N+Sg+Par}}
 
-€ näkynä
+* __tie__: {{tie+N+Sg+Nom}} (Eng. road)
+* __tietä__: {{tie+N+Sg+Par}}
+* __vene__: {{vene+N+Sg+Nom}} (Eng. boat)
+* __venettä__: {{vene+N+Sg+Par}}
 
-€ padoitta
+The singular illatives have more variants.
 
-€ näyittä
+The variant with intervening h attaches to long vowel stems:
+(subsequent examples are *Noun singular illatives*)
+* __maa__: {{maa+N+Sg+Nom}} (Eng. earth)
+* __maahan__: {{maa+N+Sg+Ill}}
+* __maahansa__: {{maa+N+Sg+Ill+PxSg3}}
 
-€ näkyinä
+* __toffee__: {{toffee+N+Sg+Nom}} (Eng. taffy)
+* __toffeehen__: {{toffee+N+Sg+Ill}}
 
-€ patoina
+* __tiehen__: {{tie+N+Sg+Ill}}
 
+* __hai__: {{hai+N+Sg+Nom}} (Eng. shark)
+* __haihin__: {{hai+N+Sg+Ill}}
 
-€ politiikkaa
-$ politiikkaaan
+* __pii__: {{pii+N+Sg+Nom}} (Eng. silica)
+* __piihin__: {{pii+N+Sg+Ill}}
 
-€ kysyntää
-$ kysyntäään
+* __suo__: {{suo+N+Sg+Nom}} (Eng. swamp)
+* __suohon__: {{suo+N+Sg+Ill}}
 
-€ patoa
-€ patoaan
+* __puu__: {{puu+N+Sg+Nom}} (Eng. tree)
+* __puuhun__: {{puu+N+Sg+Ill}}
 
-€ näkyä
-€ näkyään
+* __pyy__: {{pyy+N+Sg+Nom}} (Eng. kind of a bird)
+* __pyyhyn__: {{pyy+N+Sg+Ill}}
 
-€ taimenta
+* __pää__: {{pää+N+Sg+Nom}} (Eng. head)
+* __päähän__: {{pää+N+Sg+Ill}}
 
-€ tietä
+* __työ__: {{työ+N+Sg+Nom}} (Eng. job)
+* __työhön__: {{työ+N+Sg+Ill}}
 
-€ maahan
+The stems with short vowel do not have the intervening h.
 
-€ toffeehen
+* __kirja__: {{kirja+N+Sg+Nom}} (Eng. book)
+* __kirjaan__: {{kirja+N+Sg+Ill}}
 
-€ tiehen
+* __tuli__: {{tuli+N+Sg+Nom}} (Eng. fire)
+* __tuleen__: {{tuli+N+Sg+Ill}}
 
-€ haihin
+* __hiiri__: {{hiiri+N+Sg+Nom}} (Eng. mouse)
+* __hiireen__: {{hiiri+N+Sg+Ill}}
 
-€ piihin
+* __ruuvi__: {{ruuvi+N+Sg+Nom}} (Eng. screw)
+* __ruuviin__: {{ruuvi+N+Sg+Ill}}
 
-€ suohon
+* __tyyli__: {{tyyli+N+Sg+Nom}} (Eng. style)
+* __tyyliin__: {{tyyli+N+Sg+Ill}}
 
-€ puuhun
+* __taloon__: {{talo+N+Sg+Ill}}
 
-€ pyyhyn
+* __nielu__: {{nielu+N+Sg+Nom}} (Eng. throat)
+* __nieluun__: {{nielu+N+Sg+Ill}}
 
-€ päähän
+* __näkyyn__: {{näky+N+Sg+Ill}}
 
-€ työhön
+* __räkä__: {{räkä+N+Sg+Nom}} (Eng. booger)
+* __räkään__: {{räkä+N+Sg+Ill}}
 
-€ koiria
+* __tönö__: {{tönö+N+Sg+Nom}} (Eng. shack)
+* __tönöön__: {{tönö+N+Sg+Ill}}
 
-€ kärsiä
+Bisyllabic long vowel stems have illative suffix of *-seen*.
+* __tienoo__: {{tienoo+N+Sg+Nom}} (Eng. neighbourhood)
+* __tienooseen__: {{tienoo+N+Sg+Ill}}
 
-€ lepakoiden
+* __miljöö__: {{miljöö+N+Sg+Nom}} (Eng. millieu)
+* __miljööseen__: {{miljöö+N+Sg+Ill}}
 
-€ kännyköiden
+Plural genitives have the most variants. Especially, many words have more or
+less free variation between handful of choices.
+(subsequent examples are *Noun plural genitives*)
+* __lepakko__: {{lepakko+N+Sg+Nom}} (Eng. bat)
+* __lepakoiden__: {{lepakko+N+Pl+Gen}}
 
-€ naisien
+* __kännykkä__: {{kännykkä+N+Sg+Nom}} (Eng. mobile phone)
+* __kännyköiden__: {{kännykkä+N+Pl+Gen}}
 
-€ murhien
+* __tienoitten__: {{tienoo+N+Pl+Gen}}
 
-€ taloihin
+* __teitten__: {{tie+N+Pl+Gen}}
 
-€ näkyihin
+* __nainen__: {{nainen+N+Sg+Nom}} (Eng. woman)
+* __naisien__: {{nainen+N+Pl+Gen}}
 
-€ koiriin
+* __murha__: {{murha+N+Sg+Nom}} (Eng. murder)
+* __murhien__: {{murha+N+Pl+Gen}}
 
-€ sieniin
+* __lepakkojen__: {{lepakko+N+Pl+Gen}}
 
-€ patain
+* __pyhäkkö__: {{pyhäkkö+N+Sg+Nom}} (Eng. sanctum)
+* __pyhäkköjen__: {{pyhäkkö+N+Pl+Gen}}
 
-€ tyrmäin
+* __sisar__: {{sisar+N+Sg+Nom}} (Eng. sister)
+* __sisarten__: {{sisar+N+Pl+Gen}}
 
-€ sokeisiin
+* __väännin__: {{väännin+N+Sg+Nom}} (Eng. turner)
+* __väänninten__: {{väännin+N+Pl+Gen}}
 
-€ keväisiin
+The -in suffix for plural genitive that goes with singular stem is always
+markedly archaic. Most commonly it appears in compound words.
 
-€ tienoita
+(subsequent examples are *Noun plural genitives, rarer ones*)
+* __patain__: {{pata+N+Pl+Gen+Use/Rare}}
 
-€ teitä
+* __tyrmä__: {{tyrmä+N+Sg+Nom}} (Eng. prison)
+* __tyrmäin__: {{tyrmä+N+Pl+Gen+Use/Rare}}
 
-€ tienoitten
+Plural partitive has a few variants:
 
-€ teitten
+(subsequent examples are *Noun plural partitives*)
+* __koiria__: {{koira+N+Pl+Par}}
 
-€ lepakkoja
+* __kärsä__: {{kärsä+N+Sg+Nom}} (Eng. trunk)
+* __kärsiä__: {{kärsä+N+Pl+Par}}
 
-€ pyhäkköjä
+* __tienoita__: {{tienoo+N+Pl+Par}}
 
-€ lepakkojen
+* __teitä__: {{tie+N+Pl+Par}}
 
-€ pyhäkköjen
+* __lepakkoja__: {{lepakko+N+Pl+Par}}
 
-€ tienooseen
+* __pyhäkköjä__: {{pyhäkkö+N+Pl+Par}}
 
-€ miljööseen
+And plural illative has few variants:
 
-€ sisarten
+(subsequent examples are *Noun plural illatives*)
+* __taloihin__: {{talo+N+Pl+Ill}}
 
-€ väänninten
+* __näkyihin__: {{näky+N+Pl+Ill}}
 
-€ kirjaan
+* __koiriin__: {{koira+N+Pl+Ill}}
 
-€ tuleen
+* __sieni__: {{sieni+N+Sg+Nom}} (Eng. mushroom)
+* __sieniin__: {{sieni+N+Pl+Ill}}
 
-€ hiireen
+* __sokea__: {{sokea+N+Sg+Nom}}
+* __sokeisiin__: {{sokea+N+Pl+Ill}}
 
-€ ruuviin
+* __kevät__: {{kevät+N+Sg+Nom}} (Eng. spring)
+* __keväisiin__: {{kevät+N+Pl+Ill}}
 
-€ tyyliin
+!Possessive suffixes
+Possessives come optionally after the case suffixes. For consonant final
+cases the possessives assimilate or eat the final part of the case ending
+or stem.
+(subsequent examples are *Noun possessive suffixes*)
+* __taloni__: {{talo+N+Sg+Nom+PxSg1}}
+* __talosi__: {{talo+N+Sg+Nom+PxSg2}}
+* __talonsa__: {{talo+N+Sg+Nom+PxSg3}}
+* __talomme__: {{talo+N+Sg+Nom+PxPl1}}
+* __talonne__: {{talo+N+Sg+Nom+PxPl2}}
 
-€ taloon
+* __tönöni__: {{tönö+N+Sg+Nom+PxSg1}}
+* __tönösi__: {{tönö+N+Sg+Nom+PxSg2}}
+* __tönönsä__: {{tönö+N+Sg+Nom+PxSg3}}
+* __tönömme__: {{tönö+N+Sg+Nom+PxPl1}}
+* __tönönne__: {{tönö+N+Sg+Nom+PxPl2}}
 
-€ nieluun
+The possessive suffix of form *-an*, *-än*, attaches to some long vowel 
+stems:
 
-€ näkyyn
+* __taloaan__: {{talo+N+Sg+Par+PxPl3}}
 
-€ räkään
+* __tienookseen__: {{tienoo+N+Sg+Tra+PxSg3}}
 
-€ tönöön
+* __tiekseen__: {{tie+N+Sg+Tra+PxSg3}}
 
-€ taloni
+* __tönöään__: {{tönö+N+Sg+Par+PxPl3}}
 
-€ tönönsä
+!Noun clitics
+Clitics can attach to any word-form, including one that already has a clitic.
+Clitics do not modify the form they attach to and are simply concatenated to
+the end.
 
-€ taloaan
+(subsequent examples are *Noun clitics*)
+* __talokaan__: {{talo+N+Sg+Nom+Foc/kaan}}
 
-€ tienookseen
+* __tönökään__: {{tönö+N+Sg+Nom+Foc/kaan}}
 
-€ tiekseen
 
-€ tönöään
 
-€ talohan
 
-€ tönöhän
 
 
 
@@ -160,30 +334,28 @@ $ kysyntäään
 
 
 
+!Noun compounding
+Nouns form compounds productively. The non-final parts of regular compounds
+are singular nominatives, or singular or plural genitives of nouns. The final
+parts are nominals and inflect regularly.
 
+(subsequent examples are *Noun compounds*)
+* __talojuttu__: {{talo+N+Sg+Nom+Use/Circ#juttu+N+Sg+Nom}}
 
+* __talonjuttu__: {{talo+N+Sg+Gen+Use/Circ#juttu+N+Sg+Nom}}
 
+* __naisienjuttu__: {{nainen+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom}}
 
+* __lepakoidenjuttu__: {{lepakko+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom}}
 
+* __vanhempainjuttu__: {{vanhempi+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom}}
 
+* __lepakoittenjuttu__: {{lepakko+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom}}
 
+* __talojenjuttu__: {{talo+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom}}
 
-€ talojuttu
+* __miestenjuttu__: {{mies+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom}}
 
-€ talonjuttu
 
-€ naisienjuttu
-
-€ lepakoidenjuttu
-
-€ vanhempainjuttu
-
-€ lepakoittenjuttu
-
-€ talojenjuttu
-
-€ miestenjuttu
-
-
-€ talojuttu
+* __talojuttu__: {{talo+N+Sg+Nom+Use/Circ#juttu+N+Sg+Nom}}
 
