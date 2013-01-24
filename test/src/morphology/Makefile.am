@@ -15,9 +15,10 @@ if CAN_DOCC
 #
 # The fst-name is specified in the test data in the source file.
 
-SOURCE_CODE_YAML_TESTS=nouns-affixes_gt-norm.yaml
+SOURCE_CODE_YAML_TESTS=nouns-affixes_gt-norm.yaml \
+					   root-morphology_gt-norm.yaml \
+					   noun-stems_gt-norm.yaml
 #					   adjectives-affixes_gt-norm.yaml \
-#					   root-morphology_gt-norm.yaml    \
 #					   noun-stems_gt-norm.yaml         \
 #					   adj-stems_gt-norm.yaml
 endif # CAN_DOCC
