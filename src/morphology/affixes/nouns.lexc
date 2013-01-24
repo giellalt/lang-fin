@@ -1,8 +1,15 @@
-! Nominal inflection and derivation
+!! !!Noun inflection and derivation
+!! Nouns and other nominals inflect in number, cases, possessives and with
+!! clitics, in that order. Combinations that this regular inflection can form
+!! is approximately 2×15×5×26=4900, so we do not show all variants in test cases
+!! and examples, but just central ones that are interesting and potential to
+!! break.
 
-! nominatives
+!! !Nominatives
+!! Singular nominative is the dictionary reference form for most of the words.
+
 LEXICON N_BACK_NOMINATIVE
-!!€gt-norm: nominatives
+!!€gt-norm: Noun nominatives
 !!€ talo talo+N+Sg+Nom a house
 !!€ taloko talo+N+Sg+Nom+Qst
 !!$ talopä talo+N+Sg+Nom+Foc/pa
@@ -14,19 +21,37 @@ LEXICON N_FRONT_NOMINATIVE
 !!$ pölyko pöly+N+Sg+Nom+Qst
 +Sg+Nom:0   N_FRONT_CLIT_OPT  ;
 
+!! The plural nominative attaches to singular stem. For plural words it is also
+!! the form that is used for dictionary lookups:
+
 LEXICON N_BACK_PLNOM_CLIT
-!!€not-finished: The test below this line are not done yet
+!!€ talot talo+N+Pl+Nom 
 !!€ sakset sakset+N+Pl+Nom scissors
 !!¥ sakset+N+Pl+Nom+Foc/pa: [saksetpa, ~saksetpä]
 +Pl+Nom:%>t     N_BACK_CLIT_OPT  ;
 
 LEXICON N_FRONT_PLNOM_CLIT
-!!€ häät häät+N+Pl+Non # wedding
+!!€ pölyt pöly+N+Pl+Nom
+!!€ häät häät+N+Pl+Nom  wedding
 +Pl+Nom:%>t     N_FRONT_CLIT_OPT  ;
 
-! basic cases
+!! !Singular case inflection
+!! The nouns can inflect in 15 regular cases. Most of the cases have one or two
+!! case endings, with only varying part being the harmony vowel. For nouns with
+!! direct consonant gradation, the most of the singular case suffixes attach
+!! to the weak singular stem:
+
 LEXICON N_BACK_WEAK_SINGULARS
-!!€ padassa
+!!€gt-norm: Noun basic singular cases
+!!€ pata pata+N+Sg+Nom pot
+!!€ padan pata+N+Sg+Gen
+!!€ padassa pata+N+Sg+Ine
+!!€ padasta pata+N+Sg+Ela
+!!€ padalla pata+N+Sg+Ade
+!!€ padalta pata+N+Sg+Abl
+!!€ padalle pata+N+Sg+All
+!!€ padaksi pata+N+Sg+Tra
+!!€ padatta pata+N+Sg+Abe
 0    N_BACK_PLNOM_CLIT   ;
 +Sg+Gen:%>n     N_BACK_CLIT_OPT   ;
 +Sg+Abe:%>tta   N_BACK_POSS_AN_OPT      ;
@@ -40,7 +65,15 @@ LEXICON N_BACK_WEAK_SINGULARS
 +Sg+Tra:%>ksi   N_BACK_CLIT_OPT     ;
 
 LEXICON N_FRONT_WEAK_SINGULARS
-!!€ näyssä
+!!€ näky näky+N+Sg+Nom vision
+!!€ näyn näky+N+Sg+Gen
+!!€ näyssä näky+N+Sg+Ine
+!!€ näystä näky+N+Sg+Ela
+!!€ näyllä näky+N+Sg+Ade
+!!€ näyltä näky+N+Sg+Abl
+!!€ näylle näky+N+Sg+All
+!!€ näyksi näky+N+Sg+Tra
+!!€ näyttä näky+N+Sg+Abe
 0    N_FRONT_PLNOM_CLIT   ;
 +Sg+Gen:%>n     N_FRONT_CLIT_OPT   ;
 +Sg+Abe:%>ttä   N_FRONT_POSS_ÄN_OPT      ;
@@ -53,22 +86,39 @@ LEXICON N_FRONT_WEAK_SINGULARS
 +Sg+Tra:%>ksi   N_FRONT_CLIT_OPT     ;
 +Sg+Tra:%>ksi   N_FRONT_CLIT_OPT     ;
 
+!! For words with direct gradation the only forms that attach to strong singular
+!! stem may be essive and possessive's of nominative or genitive:
+
 LEXICON N_BACK_STRONG_SINGULARS
-!!€ patana
+!!€ patana pata+N+Sg+Ess
+!!€ patani pata+N+Sg+Nom+PxSg1
+!!€ patasi pata+N+Sg+Gen+PxSg2
 +Sg+Ess:%>na N_BACK_POSS_AN_OPT      ;
 +Sg+Nom:0  N_BACK_POSS   ;
 +Sg+Gen:0  N_BACK_POSS   ;
 +Pl+Nom:0  N_BACK_POSS   ;
 
 LEXICON N_FRONT_STRONG_SINGULARS
-!!€ näkynä
+!!€ näkynä näky+N+Sg+Ess
+!!€ näkyni näky+N+Sg+Nom+PxSg1
+!!€ näkysi näky+N+Sg+Gen+PxSg2
 +Sg+Ess:%>nä N_FRONT_POSS_ÄN_OPT      ;
 +Sg+Nom:0  N_FRONT_POSS   ;
 +Sg+Gen:0  N_FRONT_POSS   ;
 +Pl+Nom:0  N_FRONT_POSS   ;
 
+!! !Plural inflection
+
 LEXICON N_BACK_WEAK_PLURALS
-!!€ padoitta
+!!€gt-norm: Noun basic plural cases
+!!€ padoilta pata+N+Pl+Abl
+!!€ padoilla pata+N+Pl+Ade
+!!€ padoille pata+N+Pl+All
+!!€ padoista pata+N+Pl+Ela
+!!€ padoissa pata+N+Pl+Ine
+!!€ padoiksi pata+N+Pl+Tra
+!!€ padoitta pata+N+Pl+Abe
+!!€ padoin pata+N+Pl+Ins
 +Pl+Abe:%>i%>tta   N_BACK_POSS_AN_OPT      ;
 +Pl+Abl:%>i%>lta   N_BACK_POSS_AN_OPT      ;
 +Pl+Ade:%>i%>lla   N_BACK_POSS_AN_OPT      ;
@@ -80,7 +130,14 @@ LEXICON N_BACK_WEAK_PLURALS
 +Pl+Tra:%>i%>ksi  N_BACK_CLIT_OPT     ;
 
 LEXICON N_FRONT_WEAK_PLURALS
-!!€ näyittä
+!!€ näyillä näky+N+Pl+Ade
+!!€ näyiltä näky+N+Pl+Abl
+!!€ näyille näky+N+Pl+All
+!!€ näyissä näky+N+Pl+Ine
+!!€ näyistä näky+N+Pl+Ela
+!!€ näyiksi näky+N+Pl+Tra
+!!€ näyittä näky+N+Pl+Abe
+!!€ näyin näky+N+Pl+Ins
 +Pl+Abe:%>i%>ttä   N_FRONT_POSS_ÄN_OPT      ;
 +Pl+Abl:%>i%>ltä   N_FRONT_POSS_ÄN_OPT      ;
 +Pl+Ade:%>i%>llä   N_FRONT_POSS_ÄN_OPT      ;
@@ -91,282 +148,361 @@ LEXICON N_FRONT_WEAK_PLURALS
 +Pl+Tra:%>i%>kse  N_FRONT_POSS_EN_OBL        ;
 +Pl+Tra:%>i%>ksi  N_FRONT_CLIT_OPT     ;
 
-LEXICON N_FRONT_STRONG_PLURALS
-!!€ näkyinä
-+Pl+Ess:%>i%>nä   N_FRONT_POSS_ÄN_OPT      ;
-+Cmt:%>i%>ne        N_FRONT_POSS_EN_OPT      ;
+!! The strong plural stem of words with direct gradation contains only essive
+!! and comitative:
 
 LEXICON N_BACK_STRONG_PLURALS
-!!€ patoina
+!!€ patoina pata+N+Pl+Ess
+!!€ patoine pata+N+Cmt
 +Pl+Ess:%>i%>na   N_BACK_POSS_AN_OPT      ;
 +Cmt:%>i%>ne        N_BACK_POSS_EN_OPT      ;
 
+LEXICON N_FRONT_STRONG_PLURALS
+!!€ näkyinä näky+N+Pl+Ess
+!!€ näkyine näky+N+Cmt
++Pl+Ess:%>i%>nä   N_FRONT_POSS_ÄN_OPT      ;
++Cmt:%>i%>ne        N_FRONT_POSS_EN_OPT      ;
 
-! allomorphs
+!! !Cases with allomorphic variation
+!! The nominal cases which can take several different suffixes are singular
+!! and plural partitives, singular and plural illatives and plural genitives.
+!! After stem variation the selection of these allomorphs is the main factor
+!! of morphological classification of nouns.
+
+!! The reconstructed historical suffix for partitives of Finnish is ða, ðä, the
+!! current variants according to that theory would be the different
+!! realisations of extinct ð. 
+
+!! For basic vowel stems the partitive suffix is a, ä.
 LEXICON N_BACK_PARTITIVE_A
-!!€ politiikkaa
-!! $ politiikkaaan
+!!€gt-norm: Noun singular partitives
+!!€ politiikka politiikka+N+Sg+Nom politics
+!!€ politiikkaa politiikka+N+Sg+Par
 +Sg+Par:%>a      N_BACK_POSS_OPT      ;
 
 LEXICON N_FRONT_PARTITIVE_Ä
-!!€ kysyntää
-!! $ kysyntäään
+!!€ kysyntä kysyntä+N+Sg+Nom demand
+!!€ kysyntää kysyntä+N+Sg+Par
 +Sg+Par:%>ä      N_FRONT_POSS_OPT      ;
 
+!! In stems other than -a, -ä stems, the 3rd possessive suffix may appear in
+!! -an, -än form after the partitive suffix.
 LEXICON N_BACK_PARTITIVE_A_AN
-!!€ patoa
-!!€ patoaan
+!!€ pato pato+N+Sg+Nom dam
+!!€ patoa pato+N+Sg+Par
+!!€ patoaan pato+N+Sg+Par+PxSg3
 +Sg+Par:%>a      N_BACK_POSS_AN_OPT      ;
 
 LEXICON N_FRONT_PARTITIVE_Ä_ÄN
-!!€ näkyä
-!!€ näkyään
+!!€ näkyä näky+N+Sg+Par
+!!€ näkyään näky+N+Sg+Par+PxSg3
 0+Sg+Par:%>ä     N_FRONT_POSS_ÄN_OPT     ;
 
+!! The consonant stems and long vowel stems regularly take -ta, -tä suffix 
+!! for singular partitives. It is up to interpretation whether the partitive
+!! suffix of the -e^ stem is considered to be -tta, -ttä, or just -ta, -tä.
+!! In principle the consonant that disappeared from -e^ stems could be from
+!! that.
+
 LEXICON N_BACK_PARTITIVE_TA
-!!€ taimenta
+!!€ taimen taimen+N+Sg+Nom trout
+!!€ taimenta taimen+N+Sg+Par
 +Sg+Par:%>ta     N_BACK_POSS_AN_OPT      ;
 
 LEXICON N_FRONT_PARTITIVE_TÄ
-!!€ tietä
+!!€ tie tie+N+Sg+Nom road
+!!€ tietä tie+N+Sg+Par
+!!€ vene vene+N+Sg+Nom boat
+!!€ venettä vene+N+Sg+Par
 +Sg+Par:%>tä     N_FRONT_POSS_ÄN_OPT      ;
 
+!! The singular illatives have more variants.
+
+!! The variant with intervening h attaches to long vowel stems:
 LEXICON N_BACK_ILLATIVE_HAN
-!!€ maahan
+!!€gt-norm: Noun singular illatives
+!!€ maa maa+N+Sg+Nom earth
+!!€ maahan maa+N+Sg+Ill
+!!€ maahansa maa+N+Sg+Ill+PxSg3
 +Sg+Ill:%>han    #         ;
 +Sg+Ill:%>ha     N_BACK_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_HEN
-!!€ toffeehen
+!!€ toffee toffee+N+Sg+Nom taffy
+!!€ toffeehen toffee+N+Sg+Ill
 +Sg+Ill:%>hen    #         ;
 +Sg+Ill:%>he     N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_HEN
-!!€ tiehen
+!!€ tiehen tie+N+Sg+Ill
 +Sg+Ill:%>hen    #         ;
 +Sg+Ill:%>he     N_FRONT_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_HIN
-!!€ haihin
+!!€ hai hai+N+Sg+Nom shark
+!!€ haihin hai+N+Sg+Ill
 +Sg+Ill:%>hin    #         ;
 +Sg+Ill:%>hi     N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_HIN
-!!€ piihin
+!!€ pii pii+N+Sg+Nom silica
+!!€ piihin pii+N+Sg+Ill
 +Sg+Ill:%>hin    #         ;
 +Sg+Ill:%>hi     N_FRONT_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_HON
-!!€ suohon
+!!€ suo suo+N+Sg+Nom swamp
+!!€ suohon suo+N+Sg+Ill
 +Sg+Ill:%>hon    #         ;
 +Sg+Ill:%>ho     N_BACK_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_HUN
-!!€ puuhun
+!!€ puu puu+N+Sg+Nom tree
+!!€ puuhun puu+N+Sg+Ill
 +Sg+Ill:%>hun    #         ;
 +Sg+Ill:%>hu     N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_HYN
-!!€ pyyhyn
+!!€ pyy pyy+N+Sg+Nom kind of a bird
+!!€ pyyhyn pyy+N+Sg+Ill
 +Sg+Ill:%>hyn    #         ;
 +Sg+Ill:%>hy     N_FRONT_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_HÄN
-!!€ päähän
+!!€ pää pää+N+Sg+Nom head
+!!€ päähän pää+N+Sg+Ill
 +Sg+Ill:%>hän    #         ;
 +Sg+Ill:%>hä     N_FRONT_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_HÖN
-!!€ työhön
+!!€ työ työ+N+Sg+Nom job
+!!€ työhön työ+N+Sg+Ill
 +Sg+Ill:%>hön    #         ;
 +Sg+Ill:%>hö     N_FRONT_POSS     ;
 
-LEXICON N_BACK_PARTITIVE_IA
-!!€ koiria
-+Pl+Par:%>i%>a    N_BACK_POSS_AN_OPT      ;
-
-LEXICON N_FRONT_PARTITIVE_IÄ
-!!€ kärsiä
-+Pl+Par:%>i%>ä    N_FRONT_POSS_ÄN_OPT      ;
-
-LEXICON N_BACK_GENITIVE_IDEN
-!!€ lepakoiden
-+Pl+Gen:%>i%>den    #     ;
-+Pl+Gen:%>i%>de     N_BACK_POSS     ;
-
-LEXICON N_FRONT_GENITIVE_IDEN
-!!€ kännyköiden
-+Pl+Gen:%>i%>den    #     ;
-+Pl+Gen:%>i%>de     N_FRONT_POSS     ;
-
-LEXICON N_BACK_GENITIVE_IEN
-!!€ naisien
-+Pl+Gen:%>i%>en   #     ;
-+Pl+Gen:%>i%>e    N_BACK_POSS     ;
-
-LEXICON N_FRONT_GENITIVE_IEN
-!!€ murhien
-+Pl+Gen:%>i%>en   #     ;
-+Pl+Gen:%>i%>e    N_FRONT_POSS     ;
-
-LEXICON N_BACK_ILLATIVE_IHIN
-!!€ taloihin
-+Pl+Ill:%>i%>hin   #    ;
-+Pl+Ill:%>i%>hi    N_BACK_POSS     ;
-
-LEXICON N_FRONT_ILLATIVE_IHIN
-!!€ näkyihin
-+Pl+Ill:%>i%>hin   #    ;
-+Pl+Ill:%>i%>hi    N_FRONT_POSS     ;
-
-LEXICON N_BACK_ILLATIVE_IIN
-!!€ koiriin
-+Pl+Ill:%>i%>in    #     ;
-+Pl+Ill:%>i%>i     N_BACK_POSS     ;
-
-LEXICON N_FRONT_ILLATIVE_IIN
-!!€ sieniin
-+Pl+Ill:%>i%>in    #     ;
-+Pl+Ill:%>i%>i     N_FRONT_POSS     ;
-
-LEXICON N_BACK_GENITIVE_IN
-!!€ patain
-+Pl+Gen:%>i%>n    #     ;
-+Pl+Gen:%>i     N_BACK_POSS     ;
-
-LEXICON N_FRONT_GENITIVE_IN
-!!€ tyrmäin
-+Pl+Gen:%>i%>n    #     ;
-+Pl+Gen:%>i     N_FRONT_POSS     ;
-
-LEXICON N_BACK_ILLATIVE_ISIIN
-!!€ sokeisiin
-+Pl+Ill:%>i%>siin  #     ;
-+Pl+Ill:%>i%>sii   N_BACK_POSS     ;
-
-LEXICON N_FRONT_ILLATIVE_ISIIN
-!!€ keväisiin
-+Pl+Ill:%>i%>siin  #     ;
-+Pl+Ill:%>i%>sii   N_FRONT_POSS     ;
-
-LEXICON N_BACK_PARTITIVE_ITA
-!!€ tienoita
-+Pl+Par:%>i%>ta   N_BACK_POSS_AN_OPT      ;
-
-LEXICON N_FRONT_PARTITIVE_ITÄ
-!!€ teitä
-+Pl+Par:%>i%>tä   N_FRONT_POSS_ÄN_OPT      ;
-
-LEXICON N_BACK_GENITIVE_ITTEN
-!!€ tienoitten
-+Pl+Gen:%>i%>tten     #     ;
-+Pl+Gen:%>i%>tte      N_BACK_POSS     ;
-
-LEXICON N_FRONT_GENITIVE_ITTEN
-!!€ teitten
-+Pl+Gen:%>i%>tten     #     ;
-+Pl+Gen:%>i%>tte      N_FRONT_POSS     ;
-
-LEXICON N_BACK_PARTITIVE_JA
-!!€ lepakkoja
-+Pl+Par:%>j%>a     N_BACK_POSS_AN_OPT      ;
-
-LEXICON N_FRONT_PARTITIVE_JÄ
-!!€ pyhäkköjä
-+Pl+Par:%>j%>ä     N_FRONT_POSS_ÄN_OPT      ;
-
-LEXICON N_BACK_GENITIVE_JEN
-!!€ lepakkojen
-+Pl+Gen:%>j%>en    #     ;
-+Pl+Gen:%>j%>e     N_BACK_POSS     ;
-
-LEXICON N_FRONT_GENITIVE_JEN
-!!€ pyhäkköjen
-+Pl+Gen:%>j%>en    #     ;
-+Pl+Gen:%>j%>e     N_FRONT_POSS     ;
-
-LEXICON N_BACK_ILLATIVE_SEEN
-!!€ tienooseen
-+Sg+Ill:%>seen      #     ;
-+Sg+Ill:%>see       N_BACK_POSS     ;
-
-LEXICON N_FRONT_ILLATIVE_SEEN
-!!€ miljööseen
-+Sg+Ill:%>seen      #     ;
-+Sg+Ill:%>see       N_FRONT_POSS     ;
-
-LEXICON N_BACK_GENITIVE_TEN
-!!€ sisarten
-+Pl+Gen:%>ten    #     ;
-+Pl+Gen:%>te     N_BACK_POSS     ;
-
-LEXICON N_FRONT_GENITIVE_TEN
-!!€ väänninten
-+Pl+Gen:%>ten    #     ;
-+Pl+Gen:%>te     N_FRONT_POSS     ;
+!! The stems with short vowel do not have the intervening h.
 
 LEXICON N_BACK_ILLATIVE_AN
-!!€ kirjaan
+!!€ kirja kirja+N+Sg+Nom book
+!!€ kirjaan kirja+N+Sg+Ill
 +Sg+Ill:%>an     #         ;
 +Sg+Ill:%>a      N_BACK_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_EN
-!!€ tuleen
+!!€ tuli tuli+N+Sg+Nom fire
+!!€ tuleen tuli+N+Sg+Ill
 +Sg+Ill:%>en     #         ;
 +Sg+Ill:%>e      N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_EN
-!!€ hiireen
+!!€ hiiri hiiri+N+Sg+Nom mouse
+!!€ hiireen hiiri+N+Sg+Ill
 +Sg+Ill:%>en     #         ;
 +Sg+Ill:%>e      N_FRONT_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_IN
-!!€ ruuviin
+!!€ ruuvi ruuvi+N+Sg+Nom screw
+!!€ ruuviin ruuvi+N+Sg+Ill
 +Sg+Ill:%>in     #         ;
 +Sg+Ill:%>i      N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_IN
-!!€ tyyliin
+!!€ tyyli tyyli+N+Sg+Nom style
+!!€ tyyliin tyyli+N+Sg+Ill
 +Sg+Ill:%>in     #         ;
 +Sg+Ill:%>i      N_FRONT_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_ON
-!!€ taloon
+!!€ taloon talo+N+Sg+Ill
 +Sg+Ill:%>on     #         ;
 +Sg+Ill:%>o      N_BACK_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_UN
-!!€ nieluun
+!!€ nielu nielu+N+Sg+Nom throat
+!!€ nieluun nielu+N+Sg+Ill
 +Sg+Ill:%>un     #         ;
 +Sg+Ill:%>u      N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_YN
-!!€ näkyyn
+!!€ näkyyn näky+N+Sg+Ill
 +Sg+Ill:%>yn     #         ;
 +Sg+Ill:%>y      N_FRONT_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_ÄN
-!!€ räkään
+!!€ räkä räkä+N+Sg+Nom booger
+!!€ räkään räkä+N+Sg+Ill
 +Sg+Ill:%>än     #         ;
 +Sg+Ill:%>ä      N_FRONT_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_ÖN
-!!€ tönöön
+!!€ tönö tönö+N+Sg+Nom shack
+!!€ tönöön tönö+N+Sg+Ill
 +Sg+Ill:%>ön     #         ;
 +Sg+Ill:%>ö      N_FRONT_POSS     ;
 
-! possessives
-LEXICON N_FRONT_POSS
-!!€ taloni
-+PxSg1:%>ni  N_FRONT_CLIT_OPT        ;
-+PxSg2:%>si  N_FRONT_CLIT_OPT        ;
-+PxSg3:%>nsä N_FRONT_CLIT_OPT        ;
-+PxPl1:%>mme N_FRONT_CLIT_OPT        ;
-+PxPl2:%>nne N_FRONT_CLIT_OPT        ;
-+PxPl3:%>nsä N_FRONT_CLIT_OPT        ;
+!! Bisyllabic long vowel stems have illative suffix of *-seen*.
+LEXICON N_BACK_ILLATIVE_SEEN
+!!€ tienoo tienoo+N+Sg+Nom neighbourhood
+!!€ tienooseen tienoo+N+Sg+Ill
++Sg+Ill:%>seen      #     ;
++Sg+Ill:%>see       N_BACK_POSS     ;
 
+LEXICON N_FRONT_ILLATIVE_SEEN
+!!€ miljöö miljöö+N+Sg+Nom millieu
+!!€ miljööseen miljöö+N+Sg+Ill
++Sg+Ill:%>seen      #     ;
++Sg+Ill:%>see       N_FRONT_POSS     ;
+
+!! Plural genitives have the most variants. Especially, many words have more or
+!! less free variation between handful of choices.
+LEXICON N_BACK_GENITIVE_IDEN
+!!€gt-norm: Noun plural genitives
+!!€ lepakko lepakko+N+Sg+Nom bat
+!!€ lepakoiden lepakko+N+Pl+Gen
++Pl+Gen:%>i%>den    #     ;
++Pl+Gen:%>i%>de     N_BACK_POSS     ;
+
+LEXICON N_FRONT_GENITIVE_IDEN
+!!€ kännykkä kännykkä+N+Sg+Nom mobile phone
+!!€ kännyköiden kännykkä+N+Pl+Gen
++Pl+Gen:%>i%>den    #     ;
++Pl+Gen:%>i%>de     N_FRONT_POSS     ;
+
+LEXICON N_BACK_GENITIVE_ITTEN
+!!€ tienoitten tienoo+N+Pl+Gen
++Pl+Gen:%>i%>tten     #     ;
++Pl+Gen:%>i%>tte      N_BACK_POSS     ;
+
+LEXICON N_FRONT_GENITIVE_ITTEN
+!!€ teitten tie+N+Pl+Gen
++Pl+Gen:%>i%>tten     #     ;
++Pl+Gen:%>i%>tte      N_FRONT_POSS     ;
+
+LEXICON N_BACK_GENITIVE_IEN
+!!€ nainen nainen+N+Sg+Nom woman
+!!€ naisien nainen+N+Pl+Gen
++Pl+Gen:%>i%>en   #     ;
++Pl+Gen:%>i%>e    N_BACK_POSS     ;
+
+LEXICON N_FRONT_GENITIVE_IEN
+!!€ murha murha+N+Sg+Nom murder
+!!€ murhien murha+N+Pl+Gen
++Pl+Gen:%>i%>en   #     ;
++Pl+Gen:%>i%>e    N_FRONT_POSS     ;
+
+LEXICON N_BACK_GENITIVE_JEN
+!!€ lepakkojen lepakko+N+Pl+Gen
++Pl+Gen:%>j%>en    #     ;
++Pl+Gen:%>j%>e     N_BACK_POSS     ;
+
+LEXICON N_FRONT_GENITIVE_JEN
+!!€ pyhäkkö pyhäkkö+N+Sg+Nom sanctum
+!!€ pyhäkköjen pyhäkkö+N+Pl+Gen
++Pl+Gen:%>j%>en    #     ;
++Pl+Gen:%>j%>e     N_FRONT_POSS     ;
+
+LEXICON N_BACK_GENITIVE_TEN
+!!€ sisar sisar+N+Sg+Nom sister
+!!€ sisarten sisar+N+Pl+Gen
++Pl+Gen:%>ten    #     ;
++Pl+Gen:%>te     N_BACK_POSS     ;
+
+LEXICON N_FRONT_GENITIVE_TEN
+!!€ väännin väännin+N+Sg+Nom turner
+!!€ väänninten väännin+N+Pl+Gen
++Pl+Gen:%>ten    #     ;
++Pl+Gen:%>te     N_FRONT_POSS     ;
+
+!! The -in suffix for plural genitive that goes with singular stem is always
+!! markedly archaic. Most commonly it appears in compound words.
+
+LEXICON N_BACK_GENITIVE_IN
+!!€gt-desc: Noun plural genitives, rarer ones
+!!€ patain pata+N+Pl+Gen+Use/Rare
++Pl+Gen+Use/Rare:%>i%>n    #     ;
++Pl+Gen+Use/Rare:%>i     N_BACK_POSS     ;
+
+LEXICON N_FRONT_GENITIVE_IN
+!!€ tyrmä tyrmä+N+Sg+Nom prison
+!!€ tyrmäin tyrmä+N+Pl+Gen+Use/Rare
++Pl+Gen+Use/Rare:%>i%>n    #     ;
++Pl+Gen+Use/Rare:%>i     N_FRONT_POSS     ;
+
+!! Plural partitive has a few variants:
+
+LEXICON N_BACK_PARTITIVE_IA
+!!€gt-norm: Noun plural partitives
+!!€ koiria koira+N+Pl+Par
++Pl+Par:%>i%>a    N_BACK_POSS_AN_OPT      ;
+
+LEXICON N_FRONT_PARTITIVE_IÄ
+!!€ kärsä kärsä+N+Sg+Nom trunk
+!!€ kärsiä kärsä+N+Pl+Par
++Pl+Par:%>i%>ä    N_FRONT_POSS_ÄN_OPT      ;
+
+LEXICON N_BACK_PARTITIVE_ITA
+!!€ tienoita tienoo+N+Pl+Par
++Pl+Par:%>i%>ta   N_BACK_POSS_AN_OPT      ;
+
+LEXICON N_FRONT_PARTITIVE_ITÄ
+!!€ teitä tie+N+Pl+Par
++Pl+Par:%>i%>tä   N_FRONT_POSS_ÄN_OPT      ;
+
+LEXICON N_BACK_PARTITIVE_JA
+!!€ lepakkoja lepakko+N+Pl+Par
++Pl+Par:%>j%>a     N_BACK_POSS_AN_OPT      ;
+
+LEXICON N_FRONT_PARTITIVE_JÄ
+!!€ pyhäkköjä pyhäkkö+N+Pl+Par
++Pl+Par:%>j%>ä     N_FRONT_POSS_ÄN_OPT      ;
+
+!! And plural illative has few variants:
+
+LEXICON N_BACK_ILLATIVE_IHIN
+!!€gt-norm: Noun plural illatives
+!!€ taloihin talo+N+Pl+Ill
++Pl+Ill:%>i%>hin   #    ;
++Pl+Ill:%>i%>hi    N_BACK_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_IHIN
+!!€ näkyihin näky+N+Pl+Ill
++Pl+Ill:%>i%>hin   #    ;
++Pl+Ill:%>i%>hi    N_FRONT_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_IIN
+!!€ koiriin koira+N+Pl+Ill
++Pl+Ill:%>i%>in    #     ;
++Pl+Ill:%>i%>i     N_BACK_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_IIN
+!!€ sieni sieni+N+Sg+Nom mushroom
+!!€ sieniin sieni+N+Pl+Ill
++Pl+Ill:%>i%>in    #     ;
++Pl+Ill:%>i%>i     N_FRONT_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_ISIIN
+!!€ sokea sokea+N+Sg+Nom
+!!€ sokeisiin sokea+N+Pl+Ill
++Pl+Ill:%>i%>siin  #     ;
++Pl+Ill:%>i%>sii   N_BACK_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_ISIIN
+!!€ kevät kevät+N+Sg+Nom spring
+!!€ keväisiin kevät+N+Pl+Ill
++Pl+Ill:%>i%>siin  #     ;
++Pl+Ill:%>i%>sii   N_FRONT_POSS     ;
+
+!! !Possessive suffixes
+!! Possessives come optionally after the case suffixes. For consonant final
+!! cases the possessives assimilate or eat the final part of the case ending
+!! or stem.
 LEXICON N_BACK_POSS
-!!€ tönönsä
+!!€gt-norm: Noun possessive suffixes
+!!€ taloni talo+N+Sg+Nom+PxSg1
+!!€ talosi talo+N+Sg+Nom+PxSg2
+!!€ talonsa talo+N+Sg+Nom+PxSg3
+!!€ talomme talo+N+Sg+Nom+PxPl1
+!!€ talonne talo+N+Sg+Nom+PxPl2
 +PxSg1:%>ni  N_BACK_CLIT_OPT        ;
 +PxSg2:%>si  N_BACK_CLIT_OPT        ;
 +PxSg3:%>nsa N_BACK_CLIT_OPT        ;
@@ -374,28 +510,50 @@ LEXICON N_BACK_POSS
 +PxPl2:%>nne N_BACK_CLIT_OPT        ;
 +PxPl3:%>nsa N_BACK_CLIT_OPT        ;
 
+LEXICON N_FRONT_POSS
+!!€ tönöni tönö+N+Sg+Nom+PxSg1
+!!€ tönösi tönö+N+Sg+Nom+PxSg2
+!!€ tönönsä tönö+N+Sg+Nom+PxSg3
+!!€ tönömme tönö+N+Sg+Nom+PxPl1
+!!€ tönönne tönö+N+Sg+Nom+PxPl2
++PxSg1:%>ni  N_FRONT_CLIT_OPT        ;
++PxSg2:%>si  N_FRONT_CLIT_OPT        ;
++PxSg3:%>nsä N_FRONT_CLIT_OPT        ;
++PxPl1:%>mme N_FRONT_CLIT_OPT        ;
++PxPl2:%>nne N_FRONT_CLIT_OPT        ;
++PxPl3:%>nsä N_FRONT_CLIT_OPT        ;
+
+!! The possessive suffix of form *-an*, *-än*, attaches to some long vowel 
+!! stems:
+
 LEXICON N_BACK_POSS_AN
-!!€ taloaan
+!!€ taloaan talo+N+Sg+Par+PxPl3
 +PxSg3:%>an    N_BACK_CLIT_OPT     ;
 +PxPl3:%>an    N_BACK_CLIT_OPT     ;
 
 LEXICON N_BACK_POSS_EN
-!!€ tienookseen
+!!€ tienookseen tienoo+N+Sg+Tra+PxSg3
 +PxSg3:%>en    N_BACK_CLIT_OPT     ;
 +PxPl3:%>en    N_BACK_CLIT_OPT     ;
 
 LEXICON N_FRONT_POSS_EN
-!!€ tiekseen
+!!€ tiekseen tie+N+Sg+Tra+PxSg3
 +PxSg3:%>en    N_FRONT_CLIT_OPT     ;
 +PxPl3:%>en    N_FRONT_CLIT_OPT     ;
 
 LEXICON N_FRONT_POSS_ÄN
-!!€ tönöään
+!!€ tönöään tönö+N+Sg+Par+PxPl3
 +PxSg3:%>än    N_FRONT_CLIT_OPT     ;
 +PxPl3:%>än    N_FRONT_CLIT_OPT     ;
 
+!! !Noun clitics
+!! Clitics can attach to any word-form, including one that already has a clitic.
+!! Clitics do not modify the form they attach to and are simply concatenated to
+!! the end.
+
 LEXICON N_BACK_CLIT
-!!€ talohan
+!!€gt-norm: Noun clitics
+!!€ talokaan talo+N+Sg+Nom+Foc/kaan
 +Foc/han:%>han   #        ;
 +Foc/han+Foc/kaan:%>hankaan  #        ;
 +Foc/han+Qst:%>hanko #        ;
@@ -424,7 +582,7 @@ LEXICON N_BACK_CLIT
 +Foc/kaan+Foc/pa:%>kaanpa    #        ;
 
 LEXICON N_FRONT_CLIT
-!!€ tönöhän
+!!€ tönökään tönö+N+Sg+Nom+Foc/kaan
 +Foc/han:%>hän   #        ;
 +Foc/han+Foc/kaan:%>hänkään  #        ;
 +Foc/han+Qst:%>hänkö #        ;
@@ -453,7 +611,7 @@ LEXICON N_FRONT_CLIT
 +Foc/kaan+Foc/pa:%>käänpä    #        ;
 
 
-! shorthands
+! shorthands (could have tests as well...)
 
 LEXICON N_BACK_CLIT_OPT
 0    #   ;
@@ -522,75 +680,81 @@ LEXICON N_FRONT_POSS_EN_OBL
 0   N_FRONT_POSS_EN   ;
 
 ! derivs
-LEXICON N_BACK_DERIV_INEN
-i   N_AAKKOSELLINEN ;
-lai N_AAKKOSELLINEN ;
-
-LEXICON N_FRONT_DERIV_INEN
-i   N_KYLKIÄINEN ;
-läi N_KYLKIÄINEN ;
-
-LEXICON N_BACK_DERIV_TONTSE
-tse             ko-kaan+Adverb  ;
-lli             nen-se-soun+ta-en-ia-ien-ten-iin        ;
-llisuu          s-te-de-ks-toun+ta-en-ia-ien-iin        ;
-sti             ko-kaan+Adverb     ;
-t               ar-tare-taroun+ta-en-ia-ien-ten-iin   ;
-t               on-toma-tomoun+ta-an-ia-ien-(ten)-iin ;
-ttomuu          s-te-de-ks-toun+ta-en-ia-ien-iin     ;
-
-LEXICON N_FRONT_DERIV_TÖNTSE
-tse             ko-kaan+Adverb  ;
-lli             nen-se-soun+ta-en-ia-ien-ten-iin        ;
-llisuu          s-te-de-ks-toun+ta-en-ia-ien-iin        ;
-sti             ko-kaan+Adverb     ;
-t               ar-tare-taroun+ta-en-ia-ien-ten-iin   ;
-t               on-toma-tomoun+ta-an-ia-ien-(ten)-iin ;
-ttomuu          s-te-de-ks-toun+ta-en-ia-ien-iin     ;
-
-LEXICON N_BACK_DERIV_ITTAIN
-itse    ko-kaan+Adverb     ;
-ittain  ko-kaan+Adverb     ;
+!LEXICON N_BACK_DERIV_INEN
+!i   N_AAKKOSELLINEN ;
+!lai N_AAKKOSELLINEN ;
 !
-LEXICON N_FRONT_DERIV_ITTÄIN
-itse    kö-kään+Adverb     ;
-ittäin  kö-kään+Adverb     ;
+!LEXICON N_FRONT_DERIV_INEN
+!i   N_KYLKIÄINEN ;
+!läi N_KYLKIÄINEN ;
 !
-! compoundingT
+!LEXICON N_BACK_DERIV_TONTSE
+!tse             ko-kaan+Adverb  ;
+!lli             nen-se-soun+ta-en-ia-ien-ten-iin        ;
+!llisuu          s-te-de-ks-toun+ta-en-ia-ien-iin        ;
+!sti             ko-kaan+Adverb     ;
+!t               ar-tare-taroun+ta-en-ia-ien-ten-iin   ;
+!t               on-toma-tomoun+ta-an-ia-ien-(ten)-iin ;
+!ttomuu          s-te-de-ks-toun+ta-en-ia-ien-iin     ;
+!
+!LEXICON N_FRONT_DERIV_TÖNTSE
+!tse             ko-kaan+Adverb  ;
+!lli             nen-se-soun+ta-en-ia-ien-ten-iin        ;
+!llisuu          s-te-de-ks-toun+ta-en-ia-ien-iin        ;
+!sti             ko-kaan+Adverb     ;
+!t               ar-tare-taroun+ta-en-ia-ien-ten-iin   ;
+!t               on-toma-tomoun+ta-an-ia-ien-(ten)-iin ;
+!ttomuu          s-te-de-ks-toun+ta-en-ia-ien-iin     ;
+!
+!LEXICON N_BACK_DERIV_ITTAIN
+!itse    ko-kaan+Adverb     ;
+!ittain  ko-kaan+Adverb     ;
+!!
+!LEXICON N_FRONT_DERIV_ITTÄIN
+!itse    kö-kään+Adverb     ;
+!ittäin  kö-kään+Adverb     ;
+!
+!! !Noun compounding
+!! Nouns form compounds productively. The non-final parts of regular compounds
+!! are singular nominatives, or singular or plural genitives of nouns. The final
+!! parts are nominals and inflect regularly.
+
 LEXICON N_COMPOUND_0
-!!€ talojuttu
-0   N_COMPOUND  ;
+!!€gt-norm: Noun compounds
+!!€ talojuttu talo+N+Sg+Nom+Use/Circ#juttu+N+Sg+Nom
++Sg+Nom:0   N_COMPOUND  ;
 
 LEXICON N_COMPOUND_N
-!!€ talonjuttu
-0:%>n               N_COMPOUND    ;
+!!€ talonjuttu talo+N+Sg+Gen+Use/Circ#juttu+N+Sg+Nom
++Sg+Gen:%>n               N_COMPOUND    ;
 
 LEXICON N_COMPOUND_IEN
-!!€ naisienjuttu
-0:%>i%>en                 N_COMPOUND  ;
+!!€ naisienjuttu nainen+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom
++Pl+Gen:%>i%>en                 N_COMPOUND  ;
 
 LEXICON N_COMPOUND_IDEN
-!!€ lepakoidenjuttu
-0:%>i%>den                 N_COMPOUND  ;
+!!€ lepakoidenjuttu lepakko+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom
++Pl+Gen:%>i%>den                 N_COMPOUND  ;
 
 LEXICON N_COMPOUND_IN
-!!€ vanhempainjuttu
-0:%>i%>n                 N_COMPOUND     ;
+!!€ vanhempainjuttu vanhempi+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom
++Pl+Gen:%>i%>n                 N_COMPOUND     ;
 
 LEXICON N_COMPOUND_ITTEN
-!!€ lepakoittenjuttu
-0:%>i%>tten               N_COMPOUND     ;
+!!€ lepakoittenjuttu lepakko+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom
++Pl+Gen:%>i%>tten               N_COMPOUND     ;
 
 LEXICON N_COMPOUND_JEN
-!!€ talojenjuttu
-0:%>j%>en                 N_COMPOUND     ;
+!!€ talojenjuttu talo+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom
++Pl+Gen:%>j%>en                 N_COMPOUND     ;
 
 LEXICON N_COMPOUND_TEN
-!!€ miestenjuttu
-0:%>ten                 N_COMPOUND     ;
+!!€ miestenjuttu mies+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom
++Pl+Gen:%>ten                 N_COMPOUND     ;
 
 
 LEXICON N_COMPOUND
-!!€ talojuttu
+!!€ talojuttu talo+N+Sg+Nom+Use/Circ#juttu+N+Sg+Nom
 +Use/Circ#:0#     NOMINAL   ;
 
+!vim: set ft=xfst-lexc:
