@@ -6,7 +6,7 @@ modal and infinite inflection. The nominals are identified by numeral and
 case inflection. The others are, apart from being *the rest*, identified by
 defective or missing inflection. 
 
-!!Symbols used for analysis {{@OUTSIDE_LEXICONS@}}
+!!Symbols used for analysis {{Multichar_Symbols}}
 The Finnish morphological implementation uses analysis symbols mainly to
 encode morphological analyses, the rest are implemented else where. Some
 non-morphological analyses or classifications are retained for
@@ -17,10 +17,10 @@ and numerals. Verbs are non-divisible, but inlcude infinitive and particple
 forms. The others are subdivided into adpositions, adverbs and particles.
 c.f. [VISK s.v. sanaluokka|http://scripta.kotus.fi/visk/visk_termit.cgi?h_id=sCABBIDAI],
 [VISK § 438|http://scripta.kotus.fi/visk/sisallys.php?p=438].
- {{+A +V +N +Adv  } open parts of speech: Adjective, Verb, Noun, Adverb
- {{      +Pron    } pronoun
- {{+Interj +Pcle  } Interjections, Particles
- {{+Num           } Numerals
++A +V +N +Adv    open parts of speech: Adjective, Verb, Noun, Adverb
+      +Pron      pronoun
++Interj +Pcle    Interjections, Particles
++Num             Numerals
 
 In nominal analyses, the proper nouns have additional subanalysis.
 Proper nouns are usually written with initial capitals–or more recently,
@@ -264,10 +264,10 @@ dictionaries, prefix or hyphenated suffix
 (subsequent examples are *Parts-of-speech*)
 * __talo__: {{talo+N+Sg+Nom}} (Eng. house)
 * __nopea__: {{nopea+A+Sg+Nom}} (Eng. fast)
-* __kutoa__: {{kutoa+V+InfA+Sg+Lat}} (Eng. to knit)
+* __kutoa__: {{kutoa+V+Act+InfA+Sg+Lat}} (Eng. to knit)
 
 The compound part sub-set {{NOMINAL}}
 The nominal forms can be used as non-initial parts of typical compounds
 (subsequent examples are *Nominals*)
-* __talonjuttu__: {{talo+N+Sg+Gen+Cmp#juttu+N+Sg+Nom}} (Eng. house thing)
+* __talonjuttu__: {{talo+N+Sg+Gen+Use/Circ#juttu+N+Sg+Nom}} (Eng. house thing)
 
