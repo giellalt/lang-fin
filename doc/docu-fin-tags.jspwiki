@@ -3,14 +3,16 @@
 The tags of Finnish analysers are similar to ones in other uralic languages,
 especially Saami languages:
 
-    ! Tags for POS
+!!Tag overview:
+
+! Tags for POS
      +N +A +Adv +V
      +Pron +CS +CC +Po +Pr +Interj +Pcle +Num 
 
-    ! Tags for sub-POS
+! Tags for sub-POS
      +Prop +Pers +Dem +Interr +Refl +Recipr +Rel +Indef
 
-    ! Tags for Inflection
+! Tags for Inflection
      +Sg +Pl
      +Nom +Gen +Acc +Par
      +Ine +Ela +Ill +Ade +Abl +All
@@ -25,17 +27,17 @@ especially Saami languages:
      +ConNeg +Neg 
      +PrsPrc +PrfPrc +AgentPrc +NegPrc
 
-     ! Question and Focus particles:
+! Question and Focus particles:
      +Qst +Foc/pa +Foc/s +Foc/ka +Foc/han +Foc/kin  +Foc/kaan 
      +Foc/ka +Foc/s
 
 
-    !Tags for Derivation
+!Tags for Derivation
      +Der/minen +Der/maisilla +Der/ja
      +Der/tar +Der/ttaa +Der/tattaa +Der/tatuttaa +Der/u
      +Der/inen +Der/llinen
 
-    !Other tags
+!Other tags
      +ABBR +ACR +CLB +PUNCT +LEFT +RIGHT +TV +IV
 
 Lots of meanings and rationale can be read from e.g. North Saami docu. The rest
@@ -69,15 +71,17 @@ Nominal parts of speech have common nominal declination consisting 16 cases in s
 
 Examples of nouns in tables of this section are given with forms of word valo (light), which does not have any stem variation in inflection.
 
-*Number.* Nominals inflect in number, to mark plurality of the word. NUM for nouns is either singular or plural, or in some cases underspecified. Numeral ending comes first after word stem, but is often more or less combined with case ending, and usually causes stem variation:
+!Number
+Nominals inflect in number, to mark plurality of the word. NUM for nouns is either singular or plural, or in some cases underspecified. Numeral ending comes first after word stem, but is often more or less combined with case ending, and usually causes stem variation:
 
 || NUM || Meaning || Example
 | +Sg | Singular | valo (light)
 | +Pl | Plural | valot (lights)
 
-Note: VISK § 79–80 [http://scripta.kotus.fi/visk/sisallys.php?p=79>
+Note: VISK § 79–80 [http://scripta.kotus.fi/visk/sisallys.php?p=79]
 
-*Case.* CASE for nominals has 16 possible values, the cases of Finnish nominals mark syntactic roles (nominative, partitive, accusative-genitive) and semantics (others, partially even syntactic cases). The syntactic designation or semantic gloss is given in the meaning column, the traslations in example column are approximate since there's no 1:1 correspondence between semantic cases of Finnish and prepositions of English.
+!Case
+CASE for nominals has 16 possible values, the cases of Finnish nominals mark syntactic roles (nominative, partitive, accusative-genitive) and semantics (others, partially even syntactic cases). The syntactic designation or semantic gloss is given in the meaning column, the traslations in example column are approximate since there's no 1:1 correspondence between semantic cases of Finnish and prepositions of English.
 
 While many of cases have only one distinct ending, some combinations of plurality and case endings can exhibit up to 6 distinct case markers.
 
@@ -200,7 +204,7 @@ For participles the part after VOICE is the same as nominal declination. For inf
 
 Note: VISK § 105 [http://scripta.kotus.fi/visk/sisallys.php?p=105]
 
-*Verb subcategories*
+!!Verb subcategories
 
 Verbs have only one special subcategory for negation verb ei, which has partial inflection:
 
@@ -238,7 +242,7 @@ Note: VISK § 109 [http://scripta.kotus.fi/visk/sisallys.php?p=109]
 | +Act | active | kudon (I knit)
 | +Pass | passive | kudotaan (knitting)
 
-Note: VISK § 110 [http://scripta.kotus.fi/visk/sisallys.php?p=110>, of passive
+Note: VISK § 110 [http://scripta.kotus.fi/visk/sisallys.php?p=110], of passive
 
 *Tempus (tense).* Verbs may inflect to mark up tense. TENSE has two values. For moods other than indicative the tense is not distinctive in surface form, and therefore not marked in the analyses. The morphologically distinct forms in Finnish form only distinctions between past and non-past tenses, which should be noted since some historical systems have talked about imperfect and present.
 
@@ -378,6 +382,6 @@ Many lexical sources seem to record notes of style or area of usage with the wor
 
 | VALUE | Meaning | Example
 | +Use/Sub | non-standard | seitsämän → seitsemän (seven)
-| +Use/Marg | rare | 
+| +Use/Marg | rare | -
 | +Dial | dialectal | mie (I)
-| +Use/Old | archaic | 
+| +Use/Old | archaic | -
