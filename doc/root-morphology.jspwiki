@@ -1,12 +1,12 @@
 
-Morphology
-==========
+!!!Morphology
 The morphological division of Finnish words has three classes: verbal,
 nominal and *others*. The verbs are identified by personal, temporal,
 modal and infinite inflection. The nominals are identified by numeral and
 case inflection. The others are, apart from being *the rest*, identified by
 defective or missing inflection. 
 
+!!Symbols used for analysis {{@OUTSIDE_LEXICONS@}}
 The Finnish morphological implementation uses analysis symbols mainly to
 encode morphological analyses, the rest are implemented else where. Some
 non-morphological analyses or classifications are retained for
@@ -15,7 +15,12 @@ The syntactic and semantic subdivision is realised in POS tags.
 The nominals consist of nouns (substantiivi), adjectives, pro words
 and numerals. Verbs are non-divisible, but inlcude infinitive and particple
 forms. The others are subdivided into adpositions, adverbs and particles.
-c.f. VISK s.v. sanaluokka, § 438.
+c.f. [VISK s.v. sanaluokka|http://scripta.kotus.fi/visk/visk_termit.cgi?h_id=sCABBIDAI],
+[VISK § 438|http://scripta.kotus.fi/visk/sisallys.php?p=438].
+ {{+A +V +N +Adv  } open parts of speech: Adjective, Verb, Noun, Adverb
+ {{      +Pron    } pronoun
+ {{+Interj +Pcle  } Interjections, Particles
+ {{+Num           } Numerals
 
 In nominal analyses, the proper nouns have additional subanalysis.
 Proper nouns are usually written with initial capitals–or more recently,
@@ -23,75 +28,104 @@ totally arbitrary capitalisations, such as in brand names nVidia and ATi.
 Proper nouns do have full inflectional morphology exactly as other nouns, but
 work slightly differently in derivation and compounding. Some capitalised
 nouns may also lose capitalisation in derivation. 
-VISK § 98
+[VISK § 98|http://scripta.kotus.fi/visk/sisallys.php?p=98]
++Prop   Propers
 
 In pronominal analyses, the semantic classes pronouns can take are shown
 in sub analyses. 
-VISK §§ 101–104.
+[VISK § 101|http://scripta.kotus.fi/visk/sisallys.php?p=101]–104.
++Dem +Pers +Interr   Pronoun classes
++Rel +Qu +Refl       Pronoun classes
++Recipr +Indef       Pronoun classes
 
 In numeral analyses, there are multiple sub-analysis classes.
-The numerals have semantic subcategories (VISK §770). The classical ordinal
-numbers  have been adjectivised in current descriptions (VISK § 771), the
-ordinal interpretation is still spelled out in subcategories. The numbers are
-often  written with digits or other specific notations.
+The numerals have semantic subcategories 
+([VISK § 770|http://scripta.kotus.fi/visk/sisallys.php?p=770]).
+The classical ordinal  numbers  have been adjectivised in current 
+descriptions ([VISK § 771|http://scripta.kotus.fi/visk/sisallys.php?p=771]),
+the  ordinal interpretation is still spelled out in subcategories. The
+numbers are often  written with digits or other specific notations.
++Card +Ord   numeral classes
 
 The particles are subcategorised syntax-wise into conjunctions for all words,
-that govern subclauses (VISK § 812). The conjunctions are further divided,
-whether the subclause is coordinant or subordinant to the governing clause
-and few other syntactic types (VISK § 816). N.B. that the division to
-subordinating and coordinating conjucntions is motivated by other systems,
-including legacy systems, whereas the grammar presents also different
-categorisations for conjunctions (including naming subordination adverbials).
-
+that govern subclauses 
+([VISK § 812|http://scripta.kotus.fi/visk/sisallys.php?p=812]). The
+conjunctions are further divided, whether the subclause is coordinant or 
+subordinant to the governing clause and few other syntactic types 
+([VISK § 816|http://scripta.kotus.fi/visk/sisallys.php?p=816]). _N.B._ that 
+subordinating and coordinating conjucntions is motivated
+by other systems, including legacy systems, whereas the grammar presents
+also different  categorisations for conjunctions (including naming
+subordination adverbials).
++CC +CS   conjunctions
 
 In adposition anlayses, the syntactic tendencies are shown in sub-analyses;
-whether they appear typically before or after their heads |VISK 687|.
+whether they appear typically before or after their heads 
+[VISK § 687|http://scripta.kotus.fi/visk/sisallys.php?p=687].
++Po +Pr   adposition classes
 
 The lexical items that appear as bound morphemes before head word are 
-classified as prefixes (VISK § 172). Prefixes are rare and mostly of foreign
+classified as prefixes (VISK [VISK § 172|http://scripta.kotus.fi/visk/sisallys.php?p=172]). Prefixes are rare and mostly of foreign
 origin. The singular forms of plurale tantums are also potential prefixes.
++Pref   Prefix
 
 Suffixes are typically word forms or derivations that only appear as
 bound morphs. Other than that Finnish does not really have proper suffixes.
 This means that suffixed words are in effect compounds of where the last
 word just doesn't appear as free morph.
++Suff   Suffix
 
 Symbols are not part of linguistic data per se so we classify them according
 to the needs of end user applications
++Punct   any punctuation
 
 The analyses of nominals have case inflection marked.
-The nominals have case inflection (VISK § 81) to mark syntactic roles
+The nominals have case inflection 
+([VISK § 81|http://scripta.kotus.fi/visk/sisallys.php?p=81]) 
+to mark syntactic roles
 (nominative, partitive, accusative-genitive) and semantics
 (others, partially even syntactic cases).
++Nom +Par            +Gen   Syntactic cases
++Ine +Ela +Ill +Ade         Locative cases
++Abl +All +Ess +Ins         Locative cases
++Abe +Tra +Cmt              Marginal cases
 
 The analyses of a infinitive short form have lative reflecting the origins
-of the form (VISK § 120). Some adpositions have same analysis in diachronic
-analyses.
+of the form ([VISK § 120|http://scripta.kotus.fi/visk/sisallys.php?p=120]).
+Some adpositions have same analysis in diachronic analyses.
++Lat   Lative case
 
 The analyses of certain nominals give explicit analysis for accusative case.
 The accusative case has distinctive marker in few pronouns and these are only
-cases that are analysed as accusatives. (VISK §81). Other accusatives have
+cases that are analysed as accusatives. 
+([VISK § 81|http://scripta.kotus.fi/visk/sisallys.php?p=81]). 
+Other accusatives have
 the same case marking as genitive, and only use that analysis in synchronic
 anlyses.
++Acc   Explicit accusative
 Adverbs and adpositions have some special analyses in diachronic analyses.
-c.f. (VISK § 371 – 385)
+c.f. ([VISK § 371|http://scripta.kotus.fi/visk/sisallys.php?p=371] – 385)
++Prl +Distr +Tempr   Adverbial cases
 
 
 The analyses of nominals show the inflection in number. Nominals inflect in
 number, to mark plurality of the word. The number for nouns is either
 singular or plural.
-c.f. (VISK § 79)
+c.f. ([VISK § 79|http://scripta.kotus.fi/visk/sisallys.php?p=79])
++Sg +Pl   number
 
 The analyses of nominals include possessive if present.
 Posessive ending indicates ownership. The possessive can take six possible
 values from singular and plural, first, second and third person references,
 where third person form is always ambiguous over plurality.
-c.f. (VISK § 95)
+c.f. ([VISK § 95|http://scripta.kotus.fi/visk/sisallys.php?p=95])
++PxSg1 +PxSg2 +PxSg3 +PxPl1 +PxPl2 +PxPl3 +Px3   Possessives
 
 In compound analyses, the derived compound form that is not a free morph
 is marked with special analysis.  Some words have forms only appearing in
 compounds.
-c.f. (VISK § 406)
+c.f. ([VISK § 406|http://scripta.kotus.fi/visk/sisallys.php?p=406])
++Der/s   Compound form
 
 Finite verb form analyses have a reading for tense. The tense has two values.
 For moods other than indicative the tense is not distinctive in surface form,
@@ -100,33 +134,40 @@ The morphologically distinct forms in Finnish are only past and non-past
 tenses, while other are created syntactically and not marked in morphological
 analyses.
 
-c.f. (VISK §§ 111 – 112)
+c.f. (§[VISK § 111|http://scripta.kotus.fi/visk/sisallys.php?p=111] – 112)
 In order to keep tagging consistent across languages we call them +Prs and 
 +Prt
++Prs +Prt   Temporal forms
 
 Finite verb form analyses have a reading for mood. Mood has four central
 readings and few archaic and marginal. The mood is marked in analyses for
 all finite forms, even the unmarked indicative. 
-cf. (VISK §§ 115 – 118)
+cf. (§[VISK § 115|http://scripta.kotus.fi/visk/sisallys.php?p=115] – 118)
++Ind +Cond +Pot +Imprt   Common moods
++Optat +Eventv           Archaic moods
 
 Finite verb form analyses have a reading for person. Personal ending of verb
 defines the actors.  The person analysis has seven possible values,
 six for the singular and plural groups of first, second and third person
 forms, and one specifically for passive. The passive personal form is encoded
 as fourth person passive, which had been the common practice in past systems.
-cf. (VISK §§ 106 – 107)
+cf. (§[VISK § 106|http://scripta.kotus.fi/visk/sisallys.php?p=106] – 107)
++Sg1 +Sg2 +Sg3 +Pl3 +Pl2 +Pl1   Personal forms
 
 
 The analyses of verb for the forms that require negation verb have a special
 analysis for it.
++ConNeg   Connegative form
 
 The suitable negation verbs have sub-analysis that can be matched to negated
 forms on syntactic level.
++Neg   Negation verb
 
 All verb analyses contain voice marking. For finite verb forms active voice
 is tied to personal forms and passive voice to non-personal verb endings.
 The voice is also marked in the infinite verb forms. 
-c.f. (VISK § 110)
+c.f. ([VISK § 110|http://scripta.kotus.fi/visk/sisallys.php?p=110])
++Act +Pass   Voice
 
 Infinitive verb forms have infinitive or nominal derivation analyses.
 In traditional grammars the infinitive forms were called I, II, III, IV and V
@@ -135,8 +176,9 @@ respectively. The IV infinitive, which has *minen* suffix marker, has been
 re-analysed as derivational and this is reflected in |omorfi|. The V
 infinitive is also assumed to be mainly derivational, but included here for
 reference. 
-c.f. (VISK §§ 120 – 121)
+c.f. ([VISK § 120|http://scripta.kotus.fi/visk/sisallys.php?p=120] – 121)
 The infinitives have limited nominal inflection. 
++InfA +InfE +InfMa +Der/minen +Der/maisilla   Infinitives (of old grammars)
 
 Participial verb forms have participle readings. There are 4 participle 
 forms. Like infinitives, participles in traditional grammars were named 
@@ -147,30 +189,42 @@ and so they are included in inflection in omorfi as well. In some grammars
 the NUT and VA participles have been called past and present participles 
 respectively, drawing parallels from other languages. The modern grammar
 avoids them as misleading but this description uses them
-cf. VISK § 122
+c.f. [VISK § 122|http://scripta.kotus.fi/visk/sisallys.php?p=122]
++PrfPrc +AgentPrc +PrsPrc +NegPrc   Participles
 
 Adjective and some adverbial analyses are marked for comparation. The
 non-marked forms are comparative and superlative. For adjectives, comparative
 suffixes precede the nominal inflection. 
-c.f. VISK § 300
+c.f. [VISK § 300|http://scripta.kotus.fi/visk/sisallys.php?p=300]
+ +Comp +Sup   Comparison of ad-words
 
 All word forms can have clitics which are analysed by their orthography.
 Clitics are suffixes which can attach almost anywhere in the ends of words,
 both verb forms and nominals. They also attach on end of other clitics,
 theoretically infinite chains. In practice it is usual to see at most three
- in one word form. Two clitics have limited use: *-s* only appears in few 
+in one word form. Two clitics have limited use: *-s* only appears in few 
+verb forms and combined to other clitics and *-kA* only appears with few 
 adverbs and negation verb. 
-VISK §§ 126 – 131
+[VISK § 126|http://scripta.kotus.fi/visk/sisallys.php?p=126] – 131
++Foc/han +Foc/kaan +Foc/kin +Foc/pa   Focus particles
++Foc/s +Foc/ka                        Focus particles
++Qst                                  Question focus
 
 
 The analyses the derivations are marked as a form of their
 original root word form. Derivation forming is experimental feature and not
 present in all versions and applications using omorfi. The derived forms
 should be considered guesses at best.
++Der/sti +Der/ja +Der/inen +Der/lainen +Der/tar   Common derivations
++Der/llinen +Der/ton +Der/tse +Der/tse +Der/vs +Der/u   Common derivations
++Der/ttain                                        Adverbial derivations
++Der/ttaa +Der/tattaa +Der/tatuttaa               Reflexive loop
++Der/uus                                          Common derivations
 
 The analyses of some words and word-forms indicate limitedness of usage.
 This includes common mispellings, archaic words and forms
 and otherwise rare words and forms.
++Use/Sub +Use/Marg    Usage notes
 
 The informal language use contains different Finnish than the literary
 standard, this is marked as standard dialect (yleispuhekieli): 
@@ -184,11 +238,15 @@ East containing Savo and South-East (North?)
 West containing North, perä, keski and eteläpohjalaiset, southwest and Häme
 The third level dialect division is traditionally by town borders, be
 cautious when adding these though.
++Dial     Unclassified dialect
++Dial/East +Dial/West +Dial/Standard   Main dialects
++Dial/Peräpohjalaiset +Dial/North +Dial/Savo +Dial/Southeast   Local dialects
 
 
 The boundaries of compounds that are not lexicalised in the dictionary will
 have compound analyses, the compounds may also have usage tags. The 
 compounding analyses concern also syntagmatic melting mishmash.
++Cmp      Compound boundary
 
 
 The word and morpheme boundaries are used to limit the effective range of
@@ -197,10 +255,19 @@ curly bracketed hashes or underscores. The word boundaries are marked by #,
 The lexical item boundaries by ##, the inflectional morpheme boundaries 
 by >, the derivational morpheme boundaries by », and some etymological and
 soft boundaries by _.
+##   Lexical boundary
 
 
-The root lexicon is unique entry point of this morphological description.
-This lexicon must not be used elsewhere; it contains only the markers for
-absolute start of the transducer.
+The start of the dictionary {{Root}}
+The Finnish morphological description starts from any of the parts of speech
+dictionaries, prefix or hyphenated suffix
+(subsequent examples are *Parts-of-speech*)
+* __talo__: {{talo+N+Sg+Nom}} (Eng. house)
+* __nopea__: {{nopea+A+Sg+Nom}} (Eng. fast)
+* __kutoa__: {{kutoa+V+InfA+Sg+Lat}} (Eng. to knit)
 
+The compound part sub-set {{NOMINAL}}
+The nominal forms can be used as non-initial parts of typical compounds
+(subsequent examples are *Nominals*)
+* __talonjuttu__: {{talo+N+Sg+Gen+Cmp#juttu+N+Sg+Nom}} (Eng. house thing)
 
