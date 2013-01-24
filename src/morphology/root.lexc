@@ -23,10 +23,10 @@ Multichar_Symbols
 !!
 !! c.f. [VISK s.v. sanaluokka|http://scripta.kotus.fi/visk/visk_termit.cgi?h_id=sCABBIDAI],
 !! [VISK § 438|http://scripta.kotus.fi/visk/sisallys.php?p=438].
-+A +V +N +Adv  !!= {{@CODE@} open parts of speech: Adjective, Verb, Noun, Adverb
-      +Pron    !!= {{@CODE@} pronoun
-+Interj +Pcle  !!= {{@CODE@} Interjections, Particles
-+Num           !!= {{@CODE@} Numerals
++A +V +N +Adv  !!= open parts of speech: Adjective, Verb, Noun, Adverb
+      +Pron    !!= pronoun
++Interj +Pcle  !!= Interjections, Particles
++Num           !!= Numerals
 
 !! In nominal analyses, the proper nouns have additional subanalysis.
 !! Proper nouns are usually written with initial capitals–or more recently,
@@ -294,7 +294,7 @@ LEXICON Root
 !!€gt-norm: Parts-of-speech
 !!€ talo talo+N+Sg+Nom house
 !!€ nopea nopea+A+Sg+Nom fast
-!!€ kutoa kutoa+V+InfA+Sg+Lat to knit
+!!€ kutoa kutoa+V+Act+InfA+Sg+Lat to knit
 0   N           ;
 0   A           ;
 0   V           ;
@@ -320,7 +320,7 @@ LEXICON NOMINAL
 !! !! The compound part sub-set {{@LEXNAME@}}
 !! The nominal forms can be used as non-initial parts of typical compounds
 !!€gt-norm: Nominals
-!!€ talonjuttu talo+N+Sg+Gen+Cmp#juttu+N+Sg+Nom house thing
+!!€ talonjuttu talo+N+Sg+Gen+Use/Circ#juttu+N+Sg+Nom house thing
 0   N           ;
 0   A           ;
 0   51          ;
