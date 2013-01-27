@@ -12,7 +12,7 @@
 
 
 ###### Variables: #######
-sourcefile=${srcdir}/../../../src/morphology/stems/nouns.lexc
+sourcefile=${srcdir}/../../../src/morphology/stems/noun.lexc
 lemmas=${srcdir}/nouns.txt
 generatedlemmas=${srcdir}/gen-nouns
 failedlemmas=${srcdir}/fail-lemmas
