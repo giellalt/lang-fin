@@ -1,3 +1,4 @@
+!!!Adjective inflection
 The adjectives are inflected like regular nouns. The only morphological
 difference in adjectives compared to other nouns is higher likelihood of
 comparative derivations–they are fully productive. For adjectives that do
@@ -7,190 +8,202 @@ VISK § 300
 The superlative derivation is formed by *in* suffix, which creates a new
 adjective baseform. This baseform is handled separately to avoid double
 superlatives.
-* __rumin__
+(subsequent examples are *Adjective superlatives*)
+* __rumin__: {{ruma+A+Sup+Sg+Nom}} (Eng. ugliest)
 
 
-* __tyhmin__
+* __tyhmin__: {{tyhmä+A+Sup+Sg+Nom}} (Eng. stupidest)
 
 The comparative derivation is formed by *mpi* suffix, which creates a new
 adjective baseform. This adjective is handled separately
 to avoid double comparative forms.
-* __rumempi__
+(subsequent examples are *Adjective comparatives*)
+* __rumempi__: {{ruma+A+Comp+Sg+Nom}}
 
-* __tyhmempi__
+* __tyhmempi__: {{tyhmä+A+Comp+Sg+Nom}}
 
 
 This inflectional part attached to adjective comparative stems to avoid
 circularity in comparative derivations:
-* __nopeampi__
-$ nopeammampi
-$ nopeammammampi
+(subsequent examples are *Adjective comparative inflection*)
+* __nopeampi__: {{nopea+A+Comp+Sg+Nom}} (Eng. faster)
+* __*nopeammampi__: {{nopea+A+Comp+Comp+Sg+Nom}} (is not standard language)
+* __*nopeammammampi__: {{nopea+A+Comp+Comp+Comp+Sg+Nom}} (is not standard language)
 
-* __tyhmempi__
+* __tyhmempänä__: {{tyhmä+A+Comp+Sg+Ess}}
+* __*tyhmemmämpi__: {{tyhmä+A+Comp+Comp+Sg+Nom}} (is not standard language)
 
 This inflectional part is attached to adjective superlative stems to avoid
 circularity in superlative  derivations:
-* __nopein__
-$ nopeimmin
-$ nopeimmimmin
+(subsequent examples are *Adjective superlative inflection*)
+* __nopein__: {{nopea+A+Sup+Sg+Nom}}
+* __*nopeimmin__: {{nopea+A+Sup+Sup+Sg+Nom}} (is not standard language)
+* __*nopeimmimmin__: {{nopea+A+Sup+Sup+Sup+Sg+Nom}} (is not standard language)
 
-* __tyhmin__
-$ tyhmimmin
+* __tyhmin__: {{tyhmä+A+Sup+Sg+Nom}}
+* __*tyhmimmin__: {{tyhmä+A+Sup+Sup+Sg+Nom}} (is not standard language)
 
 
+!!Regular adjective inflection
+The adjective inflection apart from the comparative and superlative
+derivations is same as with nouns. I will only show examples here.
 
+(subsequent examples are *Adjective nominatives*)
+* __rumapa__: {{ruma+A+Sg+Nom+Foc/pa}}
 
-* __ruma__
+* __tyhmäpä__: {{tyhmä+A+Sg+Nom+Foc/pa}}
 
-* __tyhmä__
+* __rumat__: {{ruma+A+Pl+Nom}}
 
-* __rumat__
+* __tyhmät__: {{tyhmä+A+Pl+Nom}}
 
-* __tyhmät__
+(subsequent examples are *Adjective regular singulars*)
+* __ruman__: {{ruma+A+Sg+Gen}}
+* __rumatta__: {{ruma+A+Sg+Abe}}
 
-* __rumako__
-* __ruman__
-* __rumatta__
+* __tyhmän__: {{tyhmä+A+Sg+Gen}}
+* __tyhmättä__: {{tyhmä+A+Sg+Abe}}
 
-* __tyhmäkö__
-* __tyhmän__
-* __tyhmättä__
+* __rumana__: {{ruma+A+Sg+Ess}}
+* __rumani__: {{ruma+A+Sg+Nom+PxSg1}}
 
-* __rumana__
-* __rumani__
+* __tyhmänä__: {{tyhmä+A+Sg+Ess}}
+* __tyhmäni__: {{tyhmä+A+Sg+Nom+PxSg1}}
 
-* __tyhmänä__
-* __tyhmäni__
 
-* __heikoitta__
-* __heikoilta__
+(subsequent examples are *Adjective regular plurals*)
+* __heikoitta__: {{heikko+A+Pl+Abe}}
+* __heikoilta__: {{heikko+A+Pl+Abl}}
 
-* __jäykittä__
-* __jäykiltä__
+* __jäykittä__: {{jäykkä+A+Pl+Abe}}
+* __jäykiltä__: {{jäykkä+A+Pl+Abl}}
 
-* __jäykkinä__
-* __jäykkine__
+* __jäykkinä__: {{jäykkä+A+Pl+Ess}}
+* __jäykkine__: {{jäykkä+A+Cmt}}
 
-* __heikkoina__
-* __heikkoine__
+* __heikkoina__: {{heikko+A+Pl+Ess}}
+* __heikkoine__: {{heikko+A+Cmt}}
 
-* __tarkka__
-$ tarkkaaan
+(subsequent examples are *Adjective singular partitives*)
+* __tarkkaa__: {{tarkka+A+Sg+Par}}
+* __*tarkkaaan__: {{tarkka+A+Sg+Par+PxSg3}} (is not standard language)
 
-* __tyhmää__
-$ tyhmäään
+* __tyhmää__: {{tyhmä+A+Sg+Par}}
+* __*tyhmäään__: {{tyhmä+A+Sg+Par+PxSg3}} (is not standard language)
 
-* __jaloa__
-* __jaloaan__
+* __jaloa__: {{jalo+A+Sg+Par}}
+* __jaloaan__: {{jalo+A+Sg+Par+PxSg3}}
 
-* __hölöä__
-* __hölöään__
+* __hölöä__: {{hölö+A+Sg+Par}}
+* __hölöään__: {{hölö+A+Sg+Par+PxSg3}}
 
-* __vapaata__
+* __vapaata__: {{vapaa+A+Sg+Par}}
 
-* __pientä__
+* __pientä__: {{pieni+A+Sg+Par}}
 
-* __peeaahan__
+(subsequent examples are *Adjective singular illatives*)
+* __peeaahan__: {{peeaa+A+Sg+Ill}}
 
-* __gayhin__
+* __gayhin__: {{gay+A+Sg+Ill}}
 
+* __muuhun__: {{muu+A+Sg+Ill}}
 
-* __muuhun__
+* __gayhynpä__: {{gay+A+Sg+Ill+Foc/pa}}
 
-* __gayhyn__
+* __syypäähän__: {{syypää+A+Sg+Ill}}
 
-* __syypäähän__
+* __vapaaseen__: {{vapaa+A+Sg+Ill}}
 
+* __työlääseen__: {{työläs+A+Sg+Ill}}
 
-* __rumia__
+* __rumaan__: {{ruma+A+Sg+Ill}}
 
-* __tyhmiä__
 
-* __tanakoiden__
+* __suureen__: {{suuri+A+Sg+Ill}}
 
-* __hömpäköiden__
+* __pieneen__: {{pieni+A+Sg+Ill}}
 
-* __rumien__
+* __tuhtiin__: {{tuhti+A+Sg+Ill}}
 
-* __tyhmien__
+* __rehtiin__: {{rehti+A+Sg+Ill}}
 
-* __pahoihin__
+* __huonoon__: {{huono+A+Sg+Ill}}
 
-* __hölmöihin__
+* __fiksuun__: {{fiksu+A+Sg+Ill}}
 
-* __punaisiin__
+* __häijyyn__: {{häijy+A+Sg+Ill}}
 
-* __sinisiin__
+* __tyhmään__: {{tyhmä+A+Sg+Ill}}
 
-* __rumain__
+* __hölmöön__: {{hölmö+A+Sg+Ill}}
 
-* __tyhmäin__
+(subsequent examples are *Adjective plural partitives*)
+* __rumia__: {{ruma+A+Pl+Par}}
 
-* __korkeisiin__
+* __tyhmiä__: {{tyhmä+A+Pl+Par}}
 
-* __järeisiin__
+* __korkeita__: {{korkea+A+Pl+Par}}
 
-* __korkeita__
+* __järeitä__: {{järeä+A+Pl+Par}}
 
-* __järeitä__
+* __vahvoja__: {{vahva+A+Pl+Par}}
 
-* __nopeitten__
+* __hölmöjä__: {{hölmö+A+Pl+Par}}
 
-* __järeitten__
+(subsequent examples are *Adjective plural genitives*)
+* __tanakoiden__: {{tanakka+A+Pl+Gen}}
 
-* __vahvoja__
+* __räväköiden__: {{räväkkä+A+Pl+Gen}}
 
-* __hölmöjä__
+* __rumien__: {{ruma+A+Pl+Gen}}
 
-* __vahvojen__
+* __tyhmien__: {{tyhmä+A+Pl+Gen}}
 
-* __hölmöjen__
+* __nopeitten__: {{nopea+A+Pl+Gen}}
 
-* __vapaaseen__
+* __järeitten__: {{järeä+A+Pl+Gen}}
 
-* __työlääseen__
+* __vahvojen__: {{vahva+A+Pl+Gen}}
 
-* __raskasten__
+* __hölmöjen__: {{hölmö+A+Pl+Gen}}
 
-työlästen
+* __suurten__: {{suuri+A+Pl+Gen}}
 
-* __rumaan__
+* __pienten__: {{pieni+A+Pl+Gen}}
 
+* __rumain__: {{ruma+A+Pl+Gen+Use/Rare}}
 
-* __suureen__
+* __tyhmäin__: {{tyhmä+A+Pl+Gen+Use/Rare}}
 
-* __pieneen__
+(subsequent examples are *Adjective plural illatives*)
+* __pahoihin__: {{paha+A+Pl+Ill}}
 
-* __tuhtiin__
+* __hölmöihin__: {{hölmö+A+Pl+Ill}}
 
-* __rehtiin__
+* __punaisiin__: {{punainen+A+Pl+Ill}}
 
-* __huonoon__
+* __sinisiin__: {{sininen+A+Pl+Ill}}
 
-* __fiksuun__
+* __korkeisiin__: {{korkea+A+Pl+Ill}}
 
-* __häijyyn__
+* __järeisiin__: {{järeä+A+Pl+Ill}}
 
-* __tyhmään__
+* __tyhmäni__: {{tyhmä+A+Sg+Nom+PxSg1}}
 
-* __hölmöön__
+* __rumani__: {{ruma+A+Sg+Nom+PxSg1}}
 
+* __kieroaan__: {{kiero+A+Sg+Par+PxSg3}}
 
-* __tyhmäni__
+* __rumalleen__: {{ruma+A+Sg+All+PxSg3}}
 
-* __rumani__
+* __tyhmälleen__: {{tyhmä+A+Sg+All+PxSg3}}
 
-* __kieroaan__
+* __hölmöään__: {{hölmö+A+Sg+Par+PxSg3}}
 
-* __hölmöään__
+(subsequent examples are *Adjective clitics*)
+* __rumahan__: {{ruma+A+Sg+Nom+Foc/han}}
 
-* __rumalleen__
-
-* __tyhmälleen__
-
-* __rumahan__
-
-* __tyhmähän__
+* __tyhmähän__: {{tyhmä+A+Sg+Nom+Foc/han}}
 
 
 
