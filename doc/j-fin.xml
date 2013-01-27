@@ -9,10 +9,24 @@
     </authors>
   </header>
   <body>
-    <section>
-      <title>Documentation on the Finnish analyser</title>
       <section>
-          <title>Finnish (fin)</title>
+         <title>Dynamic documentation</title>
+   <ul>
+    <li><a href="Links.html">Links to generated source file documentation</a></li>
+    <li>Source files: 
+        <a href="https://victorio.uit.no/langtech/trunk/langs/fin/src/morphology/stems/">stems</a> /    
+        <a href="https://victorio.uit.no/langtech/trunk/langs/fin/src/morphology/affixes/">affixes</a> /  
+        <a href="https://victorio.uit.no/langtech/trunk/langs/fin/src/phonology/fin-phon.twolc">twolc</a> /    
+        <a href="https://victorio.uit.no/langtech/trunk/langs/fin/test/src/morphology/">yaml</a> </li>
+     <li>Generation of: 
+        <a href="http://giellatekno.uit.no/cgi/p-fin.fin.html">paradigms</a> / 
+        <a href="http://giellatekno.uit.no/cgi/d-fin.fin.html">text</a> / 
+     </li>
+   </ul>
+      </section>
+
+    <section>
+      <title>General documentation</title>
           <p>
               Since the analyser shares some common history with omorfi project,
               parts of the documents have been copied over from original omorfi
@@ -23,49 +37,13 @@
           <li>
             <a href="docu-fin-background.html" >Background information on the Finnish analyser</a>
           </li>
-         <li><strong><a href="fin.html">New documentation</a> (all-in-one)</strong> of <a href="https://victorio.uit.no/langtech/trunk/langs/fin/src/morphology/">the lexicon files</a>
-            <ul>
-               <li>A <a href="Links.html">list of links</a> to the documentation for each individual source file.</li>
-            </ul>
-         </li>
           <li>
             <a href="docu-fin-use.html" >Compiling and using the Finnish analyser</a>
           </li>
           <li>
             <a href="docu-fin-tags.html" >The tagset of the Finnish analyser</a>
           </li>
-<!--          <li>
-            <a href="docu-smn-twol.html" >** Documentation **</a> of the rule file <code>gt/smn/src/twol-smn.txt</code>
-          </li>
-          <li>
-            <a href="docu-smn-lex.html" >** Documentation **</a> of the lexicon files <ul>
-              <li>
-                the continuation lexica for N, A, V: <code>gt/smn/src/smn-lex.txt</code> , and
-              </li>
-              <li>
-                nouns: <code>gt/smn/src/noun-smn-lex.txt</code>,
-              </li>
-              <li>
-                verbs: <code>gt/smn/src/verb-smn-lex.txt</code>,
-              </li>
-              <li>
-                adverbs: <code>gt/smn/src/adv-smn-lex.txt</code>,
-              </li>
-              <li>
-                closed parts of speech: <code>gt/smn/src/closed-smn-lex.txt</code>,
-              </li>
-              <li>
-                adpositions: <code>gt/smn/src/pp-smn-lex.txt</code>,
-              </li>
-              <li>
-                punctuation marks: <code>gt/smn/src/punct-smn-lex.txt</code>.
-              </li>
-            </ul>
-          </li>
-          <li>The Inari Saami <code>gt/smn/src/Makefile</code>.</li>
-          -->
         </ul>
-      </section>
       <p class="last_modified">Last modified: $Date: 2008-11-05 18:52:54 +0100 (ons, 05 nov 2008) $, by $Author: boerre $</p>
     </section>
   </body>
