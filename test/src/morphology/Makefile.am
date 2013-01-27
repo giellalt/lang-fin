@@ -20,7 +20,8 @@ SOURCE_CODE_YAML_TESTS=root-morphology_gt-norm.yaml \
 					   adjectives-affixes_gt-norm.yaml \
 					   noun-stems_gt-norm.yaml \
 					   nouns-affixes_gt-norm.yaml \
-					   verb-stems_gt-norm.yaml
+					   verb-stems_gt-norm.yaml \
+					   verbs-affixes_gt-norm.yaml
 #					   noun-stems_gt-norm.yaml
 endif # CAN_DOCC
 

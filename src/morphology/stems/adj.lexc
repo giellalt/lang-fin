@@ -7986,6 +7986,7 @@ menstruaalinen+A:menstruaali   A_AAKKOSELLINEN  ;
 mentaalihygieeninen+A:mentaalihygieeni   A_AAKKOSELLINEN  ;
 mentaalinen+A:mentaali   A_AAKKOSELLINEN  ;
 mentolipitoinen+A:mentoli#pitoi   A_AAKKOSELLINEN  ;
+menty+A:men A_MENTY ;
 merellinen+A:merelli    A_KYLMÄJÄRKINEN  ;
 merenalainen+A:meren#alai   A_AAKKOSELLINEN  ;
 merenpuoleinen+A:meren#puolei   A_AAKKOSELLINEN  ;
@@ -9779,6 +9780,7 @@ panssariposkinen+A:panssari#poski   A_AAKKOSELLINEN  ;
 panssaroitu+A:panssaroi A_VIIPALOITU  ;
 panteistinen+A:panteisti   A_AAKKOSELLINEN  ;
 pantrooppinen+A:pantrooppi   A_AAKKOSELLINEN  ;
+pantu+A:pan A_PANTU ;
 paperikielinen+A:paperi#kieli    A_KYLMÄJÄRKINEN  ;
 paperimainen+A:paperimai   A_AAKKOSELLINEN  ;
 paperinen+A:paperi   A_AAKKOSELLINEN  ;
@@ -17719,8 +17721,45 @@ LEXICON A_VENTO
 0:no       A_BACK_COMPARATIVE ;
 0:no       A_BACK_SUPERLATIVE ;
 
+LEXICON A_PANTU
+!! The common u stem after n is in nut participles passive (-tu):
+!!€ pantu pantu+A+Sg+Nom embettered
+!!€ pannussa pantu+A+Sg+Ine
+!!€ pantuihin pantu+A+Pl+Ill
+!!€ pannuista pantu+A+Pl+Ela
+0:tu       A_BACK_NOMINATIVE ;
+0:tu       A_BACK_STRONG_SINGULARS ;
+0:nu       A_BACK_WEAK_SINGULARS ;
+0:tu       A_BACK_STRONG_PLURALS ;
+0:nu       A_BACK_WEAK_PLURALS ;
+0:tu       A_BACK_PARTITIVE_A_AN ;
+0:tu       A_BACK_ILLATIVE_UN ;
+0:tu       A_BACK_PARTITIVE_JA ;
+0:tu       A_BACK_GENITIVE_JEN ;
+0:tu       A_BACK_ILLATIVE_IHIN ;
+0:nu       A_BACK_COMPARATIVE ;
+0:nu       A_BACK_SUPERLATIVE ;
 
-!! There are no adjectives ending in -ntu, -ntö or -nty
+LEXICON A_MENTY
+!! As with y and t:
+!!€ menty menty+A+Sg+Nom belittled
+!!€ mennyssä menty+A+Sg+Ine
+!!€ mentyihin menty+A+Pl+Ill
+!!€ mennyistä menty+A+Pl+Ela
+0:ty       A_FRONT_NOMINATIVE ;
+0:ty       A_FRONT_STRONG_SINGULARS ;
+0:ny       A_FRONT_WEAK_SINGULARS ;
+0:ty       A_FRONT_STRONG_PLURALS ;
+0:ny       A_FRONT_WEAK_PLURALS ;
+0:ty       A_FRONT_PARTITIVE_Ä_ÄN ;
+0:ty       A_FRONT_ILLATIVE_YN ;
+0:ty       A_FRONT_PARTITIVE_JÄ ;
+0:ty       A_FRONT_GENITIVE_JEN ;
+0:ty       A_FRONT_ILLATIVE_IHIN ;
+0:ny       A_FRONT_COMPARATIVE ;
+0:ny       A_FRONT_SUPERLATIVE ;
+
+!! There are no adjectives ending in -ntö
 
 LEXICON A_MARTO
 !! The quantitative gradation of t after r in o stems:
@@ -17742,7 +17781,45 @@ LEXICON A_MARTO
 0:ro   A_BACK_SUPERLATIVE   ;
 
 
-!! There are no adjectives ending in -rtu, -rty or -rtö. Just as well, the
+LEXICON A_PURTU
+!! The common u stem after r is in nut participles passive (-tu):
+!!€ purtu purtu+A+Sg+Nom embettered
+!!€ purrussa purtu+A+Sg+Ine
+!!€ purtuihin purtu+A+Pl+Ill
+!!€ purruista purtu+A+Pl+Ela
+0:tu       A_BACK_NOMINATIVE ;
+0:tu       A_BACK_STRONG_SINGULARS ;
+0:ru       A_BACK_WEAK_SINGULARS ;
+0:tu       A_BACK_STRONG_PLURALS ;
+0:ru       A_BACK_WEAK_PLURALS ;
+0:tu       A_BACK_PARTITIVE_A_AN ;
+0:tu       A_BACK_ILLATIVE_UN ;
+0:tu       A_BACK_PARTITIVE_JA ;
+0:tu       A_BACK_GENITIVE_JEN ;
+0:tu       A_BACK_ILLATIVE_IHIN ;
+0:ru       A_BACK_COMPARATIVE ;
+0:ru       A_BACK_SUPERLATIVE ;
+
+LEXICON A_PIERTY
+!! As with y and t:
+!!€ pierty pierty+A+Sg+Nom belittled
+!!€ pierryssä pierty+A+Sg+Ine
+!!€ piertyihin pierty+A+Pl+Ill
+!!€ piernyistä pierty+A+Pl+Ela
+0:ty       A_FRONT_NOMINATIVE ;
+0:ty       A_FRONT_STRONG_SINGULARS ;
+0:ry       A_FRONT_WEAK_SINGULARS ;
+0:ty       A_FRONT_STRONG_PLURALS ;
+0:ry       A_FRONT_WEAK_PLURALS ;
+0:ty       A_FRONT_PARTITIVE_Ä_ÄN ;
+0:ty       A_FRONT_ILLATIVE_YN ;
+0:ty       A_FRONT_PARTITIVE_JÄ ;
+0:ty       A_FRONT_GENITIVE_JEN ;
+0:ty       A_FRONT_ILLATIVE_IHIN ;
+0:ry       A_FRONT_COMPARATIVE ;
+0:ry       A_FRONT_SUPERLATIVE ;
+
+!! There are no adjectives ending in -rtö. Just as well, the
 !! class for UkU : UvU- is limited to few nouns we know.
 
 
