@@ -27,7 +27,8 @@ SOURCE_CODE_YAML_TESTS=root-morphology_gt-norm.yaml \
 					   adv-stems_gt-norm.yaml \
 					   cc-stems_gt-norm.yaml \
 					   cs-stems_gt-norm.yaml \
-					   51-stems_gt-norm.yaml
+					   51-stems_gt-norm.yaml \
+					   digits-stems_gt-norm.yaml
 #					   noun-stems_gt-norm.yaml
 endif # CAN_DOCC
 
