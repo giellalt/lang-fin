@@ -35,6 +35,7 @@ JSP_PAGES=root-morphology.jspwiki\
           adv-affixes.jspwiki \
           digits-affixes.jspwiki \
           nouns-affixes.jspwiki \
+          verbs-affixes.jspwiki \
           numeral-affixes.jspwiki
 
 ALLINONE_JSP_PAGE=$(GTLANG).jspwiki
