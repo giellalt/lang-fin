@@ -1,30 +1,33 @@
+!! !!!Verbs and their classification
 !! The verbs' conjugation includes voice (in Finnish grammars also verbal 
 !! genus),  tense/mood (tempus/modus), personal endings and negation marker
 !! The verbs also have productive derivations to defective nouns as
-!! infinitives, and to adjectives as participles_, which are considered to be 
-!! part of inflection and thus included in most versions (VISK § 105).
+!! infinitives, and to adjectives as participles, which are considered to be 
+!! part of inflection and thus included in most versions 
+!! ([VISK § 105|http://scripta.kotus.fi/visk/sisalto.php?p?105]).
 !! The morphology of participles and historical 4th infinitive is further
 !! detailed in section Deverbal nouns'  morphology.
 !!
 !! The analysis strings of verb are not as systematic as nouns,
 !! as many categories collapse together in forms, e.g. the tense and mood
-!! are only distinct with indicative past and non-past. This variation is
-!! reflected in different taggings for different versions of omorfi and
-!! detailed in later sections.
+!! are only distinct with indicative past and non-past, otherwise mood implies
+!! tense in semantic sense.
+!!
+!! The key to find unique class for a verb is to pick stems and suffixes from:
+!! indicative non-past 1st singular and 3rd singular, indicative past 1st 
+!! singular, ...
 
 
 LEXICON  V
 !! The verbs are classified along the stem mutations suffix assimilation,
 !! and harmony:
+!!€gt-norm: Verb basic examples
 !!€ kutoo kutoa+V+Act+Ind+Prt+Sg3 knit
 !!€ kudotaan kutoa+V+Pss+Ind+Prt+Pe4
 !!€ tietää tietää+V+Act+Ind+Prt+Sg3 know
 !!€ tiesit tietää+V+Act+Ind+Pst+Sg2
-!!€ nähnyt nähdä+V+Act+PrfPrc+Sg+Nom
-!!€ juossut juosta+V+Act+PrfPrc+Sg+Nom
-!! The key to find unique class from verbs is to pick stems and suffixes from:
-!! indicative non-past 1st singular and 3rd singular, indicative past 1st 
-!! singular, ...
+!!€ nähnyt nähdä+V+Act+PrfPrc+Sg+Nom see
+!!€ juossut juosta+V+Act+PrfPrc+Sg+Nom run
 aakkostaa+V:aakkost  V_MUTRISTAA  ;
 aallota+V:aal  V_AALLOTA  ;
 aallottaa+V:aallot  V_VIEROITTAA  ;
@@ -10682,8 +10685,9 @@ zoomata+V:zooma  V_ARVATA  ;
 öykätä+V:öyk  V_YÖKÄTÄ  ;
 
 
-!! Verbs have no allomorphic variation per se, except for some assimilation and
-!! variation of ð forms, but the stem variation is the same
+!! !!Verb stem variation
+!! Verbs have no allomorphic variation per se, except for some assimilation
+!! and variation of ð forms, but the stem variation is the same
 !! as in nouns. The examples for verb stems are given for each class:
 !! A infinitive's lative, e infinitive's inessive, indicative present 1st 
 !! singular, indicative present 3rd singular, indicative past 1st singular, 
@@ -10691,8 +10695,11 @@ zoomata+V:zooma  V_ARVATA  ;
 !! imperative 2nd plural, potential 1st singular, present passive, 
 !! past passive, nut participle passive
 
+!! !Verb stems without stem variation
+
 LEXICON V_KAUNISTUA
 !! The u stems have no stem variation:
+!!€gt-norm: Verbs 52
 !!€ kaunistua kaunistua+V+Act+InfA+Sg+Lat beautify
 !!€ kaunistuessa kaunistua+V+Act+InfE+Sg+Ine
 !!€ kaunistun kaunistua+V+Act+Ind+Prt+Sg1
@@ -10810,7 +10817,10 @@ LEXICON V_ÄLLISTYÄ
 0:t   V_FRONT_TUPCP_0    ;
 0     V_FRONT_DERIV_PCPS    ;
 
+!! !Verb stems with only gradation
+
 LEXICON V_HAUKKOA
+!!€gt-norm: Verbs gradations
 !!€ haukkoa haukkoa+V+Act+InfA+Sg+Lat gasp
 0:ko    V_BACK_AINF    ;
 0:ko    V_BACK_EINF    ;
@@ -11303,7 +11313,11 @@ LEXICON V_PUSERTUA
 0:rut   V_BACK_TUPCP_0    ;
 0:tu    V_BACK_DERIV_PCPS ;
 
+!! !Verbs with -a stems
+!! 
+
 LEXICON V_MUTRISTAA
+!!€gt-norm: Verbs 53
 !!€ mutristaa mutristaa+V+Act+InfA+Sg+Lat ?
 0:a      V_BACK_AINF   ;
 0:a      V_BACK_EINF  ;
@@ -11457,7 +11471,10 @@ LEXICON V_SORTAA
 0:ret       V_BACK_TUPCP_0   ;
 0:ta        V_BACK_DERIV_PCPS ;
 
+!! Some of the a stems have t:s in past stems by ti>si variation.
+
 LEXICON V_HUUTAA
+!!€gt-norm: Verbs 54
 !!€ huutaa huutaa+V+Act+InfA+Sg+Lat yell
 0:ta      V_BACK_AINF   ;
 0:ta      V_BACK_EINF  ;
@@ -11594,8 +11611,11 @@ LEXICON V_NÄPERTÄÄ
 0:tä        V_FRONT_DERIV_PCPS ;
 0:tä        V_FRONT_DERIV_PCPS ;
 
+!! In some cases t:s variation is optionally alongside the regular gradation:
+
 
 LEXICON V_KIITÄÄ
+!!€gt-norm: Verbs 55
 !!€ kiitää kiitää+V+Act+InfA+Sg+Lat rush
 0:tä      V_FRONT_AINF   ;
 0:tä      V_FRONT_EINF  ;
@@ -11671,7 +11691,10 @@ LEXICON V_ENTÄÄ
 0:net       V_FRONT_TUPCP_0   ;
 0:tä        V_FRONT_DERIV_PCPS ;
 
+!! Other a stems undergo a:o variation
+
 LEXICON V_KASVAA
+!!€gt-norm: Verbs 56
 !!€ kasvaa kasvaa+V+Act+InfA+Sg+Lat grow
 0:a      V_BACK_AINF   ;
 0:a      V_BACK_EINF  ;
@@ -11773,7 +11796,10 @@ LEXICON V_KANTAA
 0:net      V_BACK_TUPCP_0   ;
 0:ta        V_BACK_DERIV_PCPS ;
 
+!! In some of the a:o variations the t:s variant is also possible.
+
 LEXICON V_KAATAA
+!!€gt-norm: Verbs 57
 !!€ kaataa kaataa+V+Act+InfA+Sg+Lat pour
 0:ta      V_BACK_AINF   ;
 0:ta      V_BACK_EINF  ;
@@ -11811,7 +11837,10 @@ LEXICON V_SAARTAA
 0:ret      V_BACK_TUPCP_0   ;
 0:ta        V_BACK_DERIV_PCPS ;
 
+!! !Verbs with e stems
+
 LEXICON V_KYTKEÄ
+!!€gt-norm: Verbs 58
 !!€ kytkeä kytkeä+V+Act+InfA+Sg+Lat switch
 0:e      V_FRONT_AINF   ;
 0:i      V_FRONT_EINF  ;
@@ -11964,7 +11993,10 @@ LEXICON V_SÄRKEÄ
 0:jet       V_FRONT_TUPCP_0   ;
 0:ke        V_FRONT_DERIV_PCPS ;
 
+!! Some of the e stems allow for optional t:s variation in past form.
+
 LEXICON V_TUNTEA
+!!€gt-norm: Verbs 59
 !!€ tuntea tuntea+V+Act+InfA+Sg+Lat feel
 0:te      V_BACK_AINF   ;
 0:ti      V_BACK_EINF  ;
@@ -11981,7 +12013,10 @@ LEXICON V_TUNTEA
 0:net       V_BACK_TUPCP_0   ;
 0:te        V_BACK_DERIV_PCPS ;
 
+!! The rare ht:ks kind of variation is also possible.
+
 LEXICON V_LÄHTEÄ
+!!€gt-norm: Verbs 60
 !!€ lähteä lähteä+V+Act+InfA+Sg+Lat go
 0:hte      V_FRONT_AINF   ;
 0:hti      V_FRONT_EINF  ;
@@ -12000,8 +12035,10 @@ LEXICON V_LÄHTEÄ
 0:hdet       V_FRONT_TUPCP_0   ;
 0:hte        V_FRONT_DERIV_PCPS ;
 
+!! !Verbs with i stems
 
 LEXICON V_KOSIA
+!!€gt-norm: Verbs 61
 !!€ kosia kosia+V+Act+InfA+Sg+Lat propose
 0:i      V_BACK_AINF   ;
 0:i      V_BACK_EINF  ;
@@ -12257,7 +12294,7 @@ LEXICON V_TYMPIÄ
 0:pi        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_KONTIA
-!!€ kontia
+!!€ kontia kontia+V+Act+InfA+Sg+Lat mole
 0:ti      V_BACK_AINF   ;
 0:ti      V_BACK_EINF  ;
 0:ni     V_BACK_WEAK_PRESENT    ;
@@ -12290,7 +12327,11 @@ LEXICON V_HYLKIÄ
 0:jit       V_FRONT_TUPCP_0   ;
 0:ki        V_FRONT_DERIV_PCPS ;
 
+!! !Verbs with long vowel stem
+!! These verbs also have da variant of a infinitive forms.
+
 LEXICON V_KOPIOIDA
+!!€gt-norm: Verbs 62
 !!€ kopioida kopioida+V+Act+InfA+Sg+Lat copy
 0:id    V_BACK_AINF    ;
 0:id    V_BACK_EINF  ;
@@ -12325,6 +12366,7 @@ LEXICON V_ÖYKKÄRÖIDÄ
 0:i        V_FRONT_DERIV_PCPS ;
 
 LEXICON V_SAADA
+!!€gt-norm: Verbs 63
 !!€ saada saada+V+Act+InfA+Sg+Lat get
 0:ad    V_BACK_AINF    ;
 0:ad    V_BACK_EINF  ;
@@ -12375,7 +12417,12 @@ LEXICON V_JÄÄDÄ
 0:ä   V_FRONT_TUPCP_D  ;
 0:ä        V_FRONT_DERIV_PCPS ;
 
+!! !Monosyllabic verbs with widening diphthong
+!! Widening diphthongs are simplified before past and conditional suffix i's
+!! by removal of first component. 
+
 LEXICON V_VIEDÄ
+!!€gt-norm: Verbs 64
 !!€ viedä viedä+V+Act+InfA+Sg+Lat take
 0:ied   V_FRONT_AINF    ;
 0:ied   V_FRONT_EINF  ;
@@ -12426,8 +12473,12 @@ LEXICON V_SYÖDÄ
 0:yö  V_FRONT_TUPCP_D  ;
 0:yö       V_FRONT_DERIV_PCPS ;
 
+!! In past and conditional forms of käydä, the glide before suffix is marked
+!! even in normative orthography.
+
 LEXICON V_KÄYDÄ
-!!€ käydä käydä+V+Act+InfA+Sg+Lat visit
+!!€gt-norm: Verbs 65
+!!€ käydä käydä+V+Act+InfA+Sg+Lat visit, go for
 0:yd   V_FRONT_AINF    ;
 0:yd   V_FRONT_EINF  ;
 0:y    V_FRONT_WEAK_PRESENT  ;
@@ -12443,7 +12494,12 @@ LEXICON V_KÄYDÄ
 0:y  V_FRONT_TUPCP_D  ;
 0:y        V_FRONT_DERIV_PCPS ;
 
+!! !Verbs with consonant stems
+
+!! Verbs with momentane derivation are common consonant stems.
+
 LEXICON V_MARISTA
+!!gt-norm: Verbs 66
 !!€ marista marista+V+Act+InfA+Sg+Lat whine
 0:t    V_BACK_AINF    ;
 0:t    V_BACK_EINF  ;
@@ -12529,7 +12585,11 @@ LEXICON V_RANGAISTA
 0:gais   V_BACK_TUPCP_STRONG  ;
 0:kaise  V_BACK_DERIV_PCPS ;
 
+!! !Verbs with n, r, l, s stems
+!! Notably, the a infinitive forms d assimilates to preceding consonant.
+
 LEXICON V_PIERRÄ
+!!€gt-norm: Verbs 67
 !!€ pierrä pierrä+V+Act+InfA+Sg+Lat fart
 0:r    V_FRONT_AINF    ;
 0:r    V_FRONT_EINF    ;
@@ -12562,6 +12622,8 @@ LEXICON V_MENNÄ
 0   V_FRONT_PASSIVE  ;
 0   V_FRONT_TUPCP_N    ;
 0:e V_FRONT_DERIV_PCPS ;
+
+!! Frequentative derivations are most common source of l stemmed verbs.
 
 LEXICON V_VASTAILLA
 !!€ vastailla vastailla+V+Act+InfA+Sg+Lat answer
@@ -12852,7 +12914,11 @@ LEXICON V_KIHERRELLÄ
 0:rel   V_FRONT_TUPCP_L    ;
 0:tele  V_FRONT_DERIV_PCPS ;
 
+!! !tse stuff
+!! Some verbs have possible optional heteroclitic indicative stems:
+
 LEXICON V_ISÄNNÖIDÄ
+!!€gt-norm: Verbs 68
 !!€ isännöidä isännöidä+V+Act+InfA+Sg+Lat host
 0:id    V_FRONT_AINF    ;
 0:id    V_FRONT_EINF  ;
@@ -12894,7 +12960,10 @@ LEXICON V_MELLAKOIDA
 0:i   V_BACK_TUPCP_D  ;
 0:i   V_BACK_DERIV_PCPS ;
 
+!! In these stems the tse formed stem is only one.
+
 LEXICON V_PALKITA
+!!€gt-norm: Verbs 69
 !!€ palkita palkita+V+Act+InfA+Sg+Lat reward
 0:t     V_BACK_AINF    ;
 0:t     V_BACK_EINF  ;
@@ -12926,7 +12995,10 @@ LEXICON V_MERKITÄ
 0:t   V_FRONT_TUPCP_0  ;
 0:tse V_FRONT_DERIV_PCPS ;
 
+!! Few words have special consonant cluster simplification for ks forms.
+
 LEXICON V_JUOSTA
+!!€gt-norm: Verbs 70
 !!€ juosta juosta+V+Act+InfA+Sg+Lat run
 0:st     V_BACK_AINF    ;
 0:st     V_BACK_EINF  ;
@@ -12958,7 +13030,10 @@ LEXICON V_PIESTÄ
 0:s   V_FRONT_TUPCP_0  ;
 0:kse V_FRONT_DERIV_PCPS ;
 
+!! nähdä has special h:k variation.
+
 LEXICON V_NÄHDÄ
+!!€gt-norm: Verbs 71
 !!€ nähdä nähdä+V+Act+InfA+Sg+Lat see
 0:hd   V_FRONT_AINF    ;
 0:hd   V_FRONT_EINF  ;
@@ -12974,7 +13049,10 @@ LEXICON V_NÄHDÄ
 0:h   V_FRONT_TUPCP_D  ;
 0:ke  V_FRONT_DERIV_PCPS ;
 
+!! !Verbs with -ne- stems
+
 LEXICON V_KARHETA
+!!€gt-norm: Verbs 72
 !!€ karheta karheta+V+Act+InfA+Sg+Lat 
 0:t    V_BACK_AINF    ;
 0:t    V_BACK_EINF  ;
@@ -13182,23 +13260,6 @@ LEXICON V_LEUDOTA
 0:dot   V_BACK_TUPCP_0  ;
 0:tone  V_BACK_DERIV_PCPS ;
 
-LEXICON V_TODETA
-!! FIXME: this is not the back form of pidetä
-!!€ todeta todeta+V+Act+InfA+Sg+Lat note
-0:det    V_BACK_AINF    ;
-0:det    V_BACK_EINF  ;
-0:tea     V_BACK_WEAK_PRESENT  ;
-0:tea    V_BACK_STRONG_PRESENT    ;
-0:tea   V_BACK_3SG_A          ;
-0:tes   V_BACK_WEAK_PAST    ;
-0:tes   V_BACK_STRONG_PAST    ;
-0:det   V_BACK_IMPERATIVE   ;
-0:den   V_BACK_POTENTIAL_N  ;
-0:de   V_BACK_PASSIVE_T    ;
-0:det   V_BACK_PASSIVE    ;
-0:det   V_BACK_TUPCP_0  ;
-0:tea   V_BACK_DERIV_PCPS ;
-
 LEXICON V_PIDETÄ
 !!€ pidetä pidetä+V+Act+InfA+Sg+Lat lengthen
 0:det    V_FRONT_AINF    ;
@@ -13263,22 +13324,10 @@ LEXICON V_JULJETA
 0:jet   V_BACK_TUPCP_0  ;
 0:kene  V_BACK_DERIV_PCPS ;
 
-!LEXICON V_ILJETÄ
-!! iljetä
-!0:jet    V_FRONT_AINF    ;
-!0:jet    V_FRONT_EINF  ;
-!0:kene     V_FRONT_WEAK_PRESENT  ;
-!0:kene   V_FRONT_STRONG_PRESENT    ;
-!0:kene   V_FRONT_3SG_E          ;
-!0:ken   V_FRONT_WEAK_PAST    ;
-!0:ken   V_FRONT_STRONG_PAST    ;
-!0:jet   V_FRONT_IMPERATIVE   ;
-!0:jen   V_FRONT_POTENTIAL_N  ;
-!0:je   V_FRONT_PASSIVE_T    ;
-!0:jet   V_FRONT_PASSIVE    ;
-!0:jet   V_FRONT_TUPCP_0  ;
+!! !Vowel lengthening(?) stems
 
 LEXICON V_ARVATA
+!!€gt-norm: Verbs 73
 !!€ arvata arvata+V+Act+InfA+Sg+Lat guess
 0:t    V_BACK_AINF    ;
 0:t    V_BACK_EINF  ;
@@ -14079,6 +14128,7 @@ LEXICON V_ILJETÄ
 0:keä   V_FRONT_DERIV_PCPS ;
 
 LEXICON V_MYRSKYTÄ
+!!€gt-norm: Verbs 75
 !!€ myrskytä myrskytä+V+Act+InfA+Sg+Lat storm
 0:t    V_FRONT_AINF    ;
 0:t    V_FRONT_EINF  ;
@@ -14238,7 +14288,10 @@ LEXICON V_HELLITÄ
 0:lit   V_FRONT_TUPCP_0  ;
 0:tiä   V_FRONT_DERIV_PCPS ;
 
+!! !Vowel stems with t:s variation
+
 LEXICON V_TAITAA
+!!€gt-norm: Verbs 76
 !!€ taitaa taitaa+V+Act+InfA+Sg+Lat can
 0:ta      V_BACK_AINF   ;
 0:ta      V_BACK_EINF  ;
@@ -14270,7 +14323,11 @@ LEXICON V_TIETÄÄ
 0:det       V_FRONT_TUPCP_0   ;
 0:tä    V_FRONT_DERIV_PCPS ;
 
+!! !Verbs with defective paradigms
+!! For some verbs, the normative inflection does not allow full set of forms:
+
 LEXICON V_VIPAJAA
+!!€gt-norm: Verbs 77
 !!€ vipajaa vipajaa+V+Act+InfA+Sg+Lat thump
 0:a   V_BACK_AINF    ;
 0     V_BACK_STRONG_PRESENT    ;
@@ -14289,6 +14346,7 @@ LEXICON V_HELÄJÄÄ
 0     V_FRONT_DERIV_PCPS ;
 
 LEXICON V_RAIKAA
+!!€gt-norm: Verbs 78
 !!€ raikaa raikaa+V+Act+InfA+Sg+Lat baum
 0     V_BACK_AINF    ;
 0     V_BACK_STRONG_PRESENT    ;
@@ -14304,9 +14362,14 @@ LEXICON V_ÄHKÄÄ
 0     V_FRONT_CONDITIONAL  ;
 0     V_FRONT_DERIV_PCPS ;
 
+!! !Verbs with exceptional inflection patterns
+!! There is a handful of verbs that does not fit to the patterns of old
+!! dictionaries.
+
 LEXICON V_OLLA
 !! The verb olla has very peculiar and heteroclitic inflection with lot of
 !! common short forms in standard spoken Finnish:
+!!€gt-norm: Verb olla
 !!€ olla olla+V+Act+InfA+Sg+Lat be
 !!€ lienen olla+V+Act+Pot+Sg1
 !!€ lie olla+V+Act+Pot+ConNeg
