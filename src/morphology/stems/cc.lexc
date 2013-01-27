@@ -1,3 +1,4 @@
+!! !!! Coordinating conjunctions
 !! Coordinating conjunctions combine equal clauses and phrases. As subset of
 !! particles, they do not inflect. The classification is solely syntactic and
 !! semantic, but it is used in this system for compatibility with other stuff.
@@ -6,11 +7,12 @@ LEXICON CC
 !! The coordinating conjunctions are: eli(kkä), ja, joko – tai, kuin – myös,
 !! ‑kä, mutta, niin – kuin ‑kin/ myös, sekä, sekä – että, sun; tai, vaan, vai,
 !! ynnä, (saati), (sillä)
-!! (VISK § 816)
 !!
-!! Examples:
-!!€ eikä
-!!€ ja
+!! Further reading: [VISK § 816|http://scripta.kotus.fi/visk/sisalto.php?p=816])
+!!
+!!€gt-norm: Coordinating conjunctions
+!!€ eikä eikä+CC
+!!€ ja ja+CC
 eikä+CC:eikä                            # ;
 eli+CC:eli                              # ;
 elikkä+CC:elikkä                        # ;
