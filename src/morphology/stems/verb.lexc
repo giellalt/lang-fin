@@ -1,17 +1,10 @@
 !! !!!Verbs and their classification
-!! The verbs' conjugation includes voice (in Finnish grammars also verbal 
-!! genus),  tense/mood (tempus/modus), personal endings and negation marker
-!! The verbs also have productive derivations to defective nouns as
-!! infinitives, and to adjectives as participles, which are considered to be 
-!! part of inflection and thus included in most versions 
-!! ([VISK § 105|http://scripta.kotus.fi/visk/sisalto.php?p?105]).
-!! The morphology of participles and historical 4th infinitive is further
-!! detailed in section Deverbal nouns'  morphology.
-!!
-!! The analysis strings of verb are not as systematic as nouns,
-!! as many categories collapse together in forms, e.g. the tense and mood
-!! are only distinct with indicative past and non-past, otherwise mood implies
-!! tense in semantic sense.
+!! Verbs are the words that inflect in tense, mood, personal suffixes, and
+!! clitics, but verbs also have s.c. infinite inflection pattern which is
+!! basically nominal derivations. The dictionary entries of verbs are
+!! A-infinitive forms, there are no verbs in dictionary that do not end in
+!! a or ä. Verbs are very distinct from other classes, their classification
+!! is not difficult.
 !!
 !! The key to find unique class for a verb is to pick stems and suffixes from:
 !! indicative non-past 1st singular and 3rd singular, indicative past 1st 
@@ -663,7 +656,7 @@ esillehuutaa+V:esillehuu  V_HUUTAA  ;
 esillenostaa+V:esillenost  V_MUTRISTAA  ;
 esillenousta+V:esillenous  V_MARISTA  ;
 esilleottaa+V:esilleot  V_VIEROITTAA  ;
-esillepanna+V:esillepan  V_VASTAILLA  ;
+esillepanna+V:esillepan  V_PANNA  ;
 esillepilkahtaa+V:esillepilkah  V_MOJAHTAA  ;
 esillepuristaa+V:esillepurist  V_MUTRISTAA  ;
 esillepursua+V:esillepursu  V_KAUNISTUA  ;
@@ -2104,7 +2097,7 @@ juljeta+V:jul  V_HALJETA  ;
 juljeta+V:jul  V_JULJETA  ;
 julkaista+V:julkais  V_MARISTA  ;
 julkilausua+V:julkilausu  V_KAUNISTUA  ;
-julkipanna+V:julkipan  V_VASTAILLA  ;
+julkipanna+V:julkipan  V_PANNA  ;
 julkistaa+V:julkist  V_MUTRISTAA  ;
 julkituoda+V:julkit  V_TUODA  ;
 julmentaa+V:julmen  V_HUONONTAA  ;
@@ -3163,7 +3156,7 @@ koketeerata+V:koketeera  V_ARVATA  ;
 kokkailla+V:kokkail  V_VASTAILLA  ;
 kokkaroitua+V:kokkaroi  V_ROHTUA  ;
 kokoilla+V:kokoil  V_VASTAILLA  ;
-kokoonpanna+V:kokoonpan  V_VASTAILLA  ;
+kokoonpanna+V:kokoonpan  V_PANNA  ;
 kokoontua+V:kokoon  V_VAKAANTUA  ;
 kokoustaa+V:kokoust  V_MUTRISTAA  ;
 kokoutua+V:kokou  V_ROHTUA  ;
@@ -3528,7 +3521,7 @@ kunnossapitää+V:kunnossapi  V_YSKÄHTÄÄ  ;
 kunnostaa+V:kunnost  V_MUTRISTAA  ;
 kunnostautua+V:kunnostau  V_ROHTUA  ;
 kuntoilla+V:kuntoil  V_VASTAILLA  ;
-kuntoonpanna+V:kuntoonpan  V_VASTAILLA  ;
+kuntoonpanna+V:kuntoonpan  V_PANNA  ;
 kuntouttaa+V:kuntout  V_VIEROITTAA  ;
 kuntoutua+V:kuntou  V_ROHTUA  ;
 kuohahdella+V:kuohah  V_TIPAHDELLA  ;
@@ -4243,7 +4236,7 @@ liikata+V:liik  V_MORKATA  ;
 liikauttaa+V:liikaut  V_VIEROITTAA  ;
 liikehtiä+V:liikeh  V_EHTIÄ  ;
 liikennöidä+V:liikennö  V_ISÄNNÖIDÄ  ;
-liikkeellepanna+V:liikkeellepan  V_VASTAILLA  ;
+liikkeellepanna+V:liikkeellepan  V_PANNA  ;
 liikkua+V:liik  V_NUOKKUA  ;
 liikuskella+V:liikuskel  V_VASTAILLA  ;
 liikutella+V:liikut  V_SULATELLA  ;
@@ -4803,7 +4796,7 @@ maksella+V:maksel  V_VASTAILLA  ;
 maksimoida+V:maksimo  V_KOPIOIDA  ;
 maksoittua+V:maksoit  V_HERMOTTUA  ;
 maksullistaa+V:maksullist  V_MUTRISTAA  ;
-maksuunpanna+V:maksuunpan  V_VASTAILLA  ;
+maksuunpanna+V:maksuunpan  V_PANNA  ;
 makuloida+V:makulo  V_KOPIOIDA  ;
 makustella+V:makustel  V_VASTAILLA  ;
 makuuttaa+V:makuut  V_VIEROITTAA  ;
@@ -5067,7 +5060,7 @@ muistaa+V:muist  V_MUTRISTAA  ;
 muistella+V:muistel  V_VASTAILLA  ;
 muistiinkirjoittaa+V:muistiinkirjoit  V_VIEROITTAA  ;
 muistiinmerkitä+V:muistiinmerki  V_MERKITÄ  ;
-muistiinpanna+V:muistiinpan  V_VASTAILLA  ;
+muistiinpanna+V:muistiinpan  V_PANNA  ;
 muistua+V:muistu  V_KAUNISTUA  ;
 muistutella+V:muistut  V_SULATELLA  ;
 muistuttaa+V:muistut  V_VIEROITTAA  ;
@@ -5984,7 +5977,7 @@ panetella+V:panet  V_SULATELLA  ;
 panettaa+V:panet  V_VIEROITTAA  ;
 paneutua+V:paneu  V_ROHTUA  ;
 panikoida+V:paniko  V_KOPIOIDA  ;
-panna+V:pan  V_VASTAILLA  ;
+panna+V:pan  V_PANNA  ;
 panoroida+V:panoro  V_KOPIOIDA  ;
 panostaa+V:panost  V_MUTRISTAA  ;
 panssaroida+V:panssaro  V_KOPIOIDA  ;
@@ -8452,7 +8445,7 @@ surkutella+V:surkut  V_SULATELLA  ;
 surmata+V:surma  V_ARVATA  ;
 surmauttaa+V:surmaut  V_VIEROITTAA  ;
 surrata+V:surra  V_ARVATA  ;
-surra+V:sur  V_VASTAILLA  ;
+surra+V:sur  V_SURRA  ;
 suruliputtaa+V:suruliput  V_VIEROITTAA  ;
 survaista+V:survais  V_MARISTA  ;
 survoa+V:survo  V_PUNOA  ;
@@ -9052,7 +9045,7 @@ tohtoroida+V:tohtoro  V_KOPIOIDA  ;
 tohtoroitua+V:tohtoroi  V_ROHTUA  ;
 toikkaroida+V:toikkaro  V_KOPIOIDA  ;
 toilailla+V:toilail  V_VASTAILLA  ;
-toimeenpanna+V:toimeenpan  V_VASTAILLA  ;
+toimeenpanna+V:toimeenpan  V_PANNA  ;
 toimia+V:toim  V_KOSIA  ;
 toimitella+V:toimit  V_SULATELLA  ;
 toimittaa+V:toimit  V_VIEROITTAA  ;
@@ -9523,7 +9516,7 @@ täyteläistää+V:täyteläist  V_KIVISTÄÄ  ;
 täyttyä+V:täyt  V_KIVETTYÄ  ;
 täyttää+V:täyt  V_RÄPSYTTÄÄ  ;
 täytyä+V:täy  V_SILIYTYÄ  ;
-täytäntöönpanna+V:täytäntöönpan  V_VASTAILLA  ;
+täytäntöönpanna+V:täytäntöönpan  V_PANNA  ;
 töherrellä+V:töher  V_KIHERRELLÄ  ;
 töhertää+V:töher  V_NÄPERTÄÄ  ;
 töhriintyä+V:töhriin  V_TYHJENTYÄ  ;
@@ -10254,7 +10247,7 @@ vipistä+V:vipis  V_ÄRISTÄ  ;
 vippailla+V:vippail  V_VASTAILLA  ;
 virallistaa+V:virallist  V_MUTRISTAA  ;
 virallistua+V:virallistu  V_KAUNISTUA  ;
-vireillepanna+V:vireillepan  V_VASTAILLA  ;
+vireillepanna+V:vireillepan  V_PANNA  ;
 vireyttää+V:vireyt  V_RÄPSYTTÄÄ  ;
 vireytyä+V:virey  V_SILIYTYÄ  ;
 viritellä+V:virit  V_HERÄTELLÄ  ;
@@ -12588,8 +12581,25 @@ LEXICON V_RANGAISTA
 !! !Verbs with n, r, l, s stems
 !! Notably, the a infinitive forms d assimilates to preceding consonant.
 
-LEXICON V_PIERRÄ
+LEXICON V_SURRA
 !!€gt-norm: Verbs 67
+!!€ surra pierrä+V+Act+InfA+Sg+Lat meh
+0:r    V_BACK_AINF    ;
+0:r    V_BACK_EINF    ;
+0:e    V_BACK_WEAK_PRESENT    ;
+0:e    V_BACK_STRONG_PRESENT    ;
+0:e    V_BACK_3SG_E ;
+0    V_BACK_WEAK_PAST   ;
+0    V_BACK_STRONG_PAST ;
+0    V_BACK_CONDITIONAL  ;
+0   V_BACK_IMPERATIVE ;
+0   V_BACK_POTENTIAL_R ;
+0   V_BACK_PASSIVE_R    ;
+0   V_BACK_PASSIVE  ;
+0   V_BACK_TUPCP_R    ;
+0:e V_BACK_DERIV_PCPS ;
+
+LEXICON V_PIERRÄ
 !!€ pierrä pierrä+V+Act+InfA+Sg+Lat fart
 0:r    V_FRONT_AINF    ;
 0:r    V_FRONT_EINF    ;
@@ -12605,6 +12615,23 @@ LEXICON V_PIERRÄ
 0   V_FRONT_PASSIVE  ;
 0   V_FRONT_TUPCP_R    ;
 0:e V_FRONT_DERIV_PCPS ;
+
+LEXICON V_PANNA
+!!€ panna panna+V+Act+InfA+Sg+Lat put
+0:n    V_BACK_AINF    ;
+0:n    V_BACK_EINF    ;
+0:e    V_BACK_WEAK_PRESENT    ;
+0:e    V_BACK_STRONG_PRESENT    ;
+0:e    V_BACK_3SG_E ;
+0    V_BACK_WEAK_PAST   ;
+0    V_BACK_STRONG_PAST ;
+0    V_BACK_CONDITIONAL  ;
+0   V_BACK_IMPERATIVE ;
+0   V_BACK_POTENTIAL_N ;
+0   V_BACK_PASSIVE_N    ;
+0   V_BACK_PASSIVE  ;
+0   V_BACK_TUPCP_N    ;
+0:e V_BACK_DERIV_PCPS ;
 
 LEXICON V_MENNÄ
 !!€ mennä mennä+V+Act+InfA+Sg+Lat go
