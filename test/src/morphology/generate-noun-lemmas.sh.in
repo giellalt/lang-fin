@@ -60,8 +60,11 @@ for f in $fsttype; do
 	fi
 	if [ -f "$generatorfile.$f" ]; then
 		let "transducer_found += 1"
-		sed 's/$/+N+Sg+Nom/' $lemmas | \
-				$lookuptool $generatorfile.$f > $generatedlemmas.$f.txt
+		sed 's/$/+N+Sg+Nom/' $lemmas \
+				| $lookuptool $generatorfile.$f > $generatedlemmas.$f.txt
+		fgrep '?' $generatedlemmas.$f.txt > $failedlemmas.$f.txt
+		cut -d'+' -f1 < $failedlemmas.$f.txt | sed 's/$/+N+Pl+Nom/' \
+				| $lookuptool $generatorfile.$f > $generatedlemmas.$f.txt
 		fgrep '?' $generatedlemmas.$f.txt > $failedlemmas.$f.txt
 		if [ $(wc -l $failedlemmas.$f.txt | tr -s ' ' | sed 's/^ //' \
 				| cut -d' ' -f1) -gt 0 ]; then
