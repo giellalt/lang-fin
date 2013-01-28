@@ -13,7 +13,8 @@ Tests:
     viisi+Num+Card+Sg+All: viidelle # 
     tuhat+Num+Card+Sg+Par: tuhatta # 
   NUM_CARD_SUFFIX: #
-    kaksi+Num+Card+Sg+Nom+Use/Circ: viisikymmentä # 
+    viisi+Num+Card+Sg+Nom+Use/Circ#kymmenen+Num+Card+Sg+Par: viisikymmentä # 
+    viisi+Num+Card+Sg+Nom+Use/Circ#kymmentä: viisikymmentä # 
     neljä+Num+Card+Sg+Nom+Use/Circ#sata+Num+Card+Sg+Par+Use/Circ#tuhatta: neljäsataatuhatta # 
   NUM_ORD_ALL: #
     neljäs+Num+Ord+Sg+Nom: neljäs # 
