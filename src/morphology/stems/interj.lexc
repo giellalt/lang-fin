@@ -1,3 +1,4 @@
+!! !!!Interjections
 !! Interjections are mainly parts of spoken language that are minimal turns
 !! in dialogue, curses, onomatopoeia and such. Interjections are a subset
 !! of particles, and do not inflect. They are quite productive kind of, though
@@ -6,9 +7,9 @@
 
 LEXICON  INTERJ
 !! Only add new interjections that are found from corpora.
-!! Examples:
-!!€ aah
-!!€ äh
+!!€gt-norm: Interjections
+!!€ aah aah+Interj
+!!€ äh äh+Interj
 aah+Interj:aah                          # ;
 aa+Interj:aa                            # ;
 ahaa+Interj:ahaa                        # ;
