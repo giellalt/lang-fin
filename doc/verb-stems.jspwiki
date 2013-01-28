@@ -1,32 +1,29 @@
-The verbs' conjugation includes voice (in Finnish grammars also verbal 
-genus),  tense/mood (tempus/modus), personal endings and negation marker
-The verbs also have productive derivations to defective nouns as
-infinitives, and to adjectives as participles_, which are considered to be 
-part of inflection and thus included in most versions (VISK § 105).
-The morphology of participles and historical 4th infinitive is further
-detailed in section Deverbal nouns'  morphology.
-The analysis strings of verb are not as systematic as nouns,
-as many categories collapse together in forms, e.g. the tense and mood
-are only distinct with indicative past and non-past. This variation is
-reflected in different taggings for different versions of omorfi and
-detailed in later sections.
-
-
-The verbs are classified along the stem mutations suffix assimilation,
-and harmony:
-* __kutoo__: {{kutoa+V+Act+Ind+Prt+Sg3}} (Eng. knit)
-* __kudotaan__: {{kutoa+V+Pss+Ind+Prt+Pe4}}
-* __tietää__: {{tietää+V+Act+Ind+Prt+Sg3}} (Eng. know)
-* __tiesit__: {{tietää+V+Act+Ind+Pst+Sg2}}
-* __nähnyt__: {{nähdä+V+Act+PrfPrc+Sg+Nom}}
-* __juossut__: {{juosta+V+Act+PrfPrc+Sg+Nom}}
-The key to find unique class from verbs is to pick stems and suffixes from:
+!!!Verbs and their classification
+Verbs are the words that inflect in tense, mood, personal suffixes, and
+clitics, but verbs also have s.c. infinite inflection pattern which is
+basically nominal derivations. The dictionary entries of verbs are
+A-infinitive forms, there are no verbs in dictionary that do not end in
+a or ä. Verbs are very distinct from other classes, their classification
+is not difficult.
+The key to find unique class for a verb is to pick stems and suffixes from:
 indicative non-past 1st singular and 3rd singular, indicative past 1st 
 singular, ...
 
 
-Verbs have no allomorphic variation per se, except for some assimilation and
-variation of ð forms, but the stem variation is the same
+The verbs are classified along the stem mutations suffix assimilation,
+and harmony:
+(subsequent examples are *Verb basic examples*)
+* __kutoo__: {{kutoa+V+Act+Ind+Prt+Sg3}} (Eng. knit)
+* __kudotaan__: {{kutoa+V+Pss+Ind+Prt+Pe4}}
+* __tietää__: {{tietää+V+Act+Ind+Prt+Sg3}} (Eng. know)
+* __tiesit__: {{tietää+V+Act+Ind+Pst+Sg2}}
+* __nähnyt__: {{nähdä+V+Act+PrfPrc+Sg+Nom}} (Eng. see)
+* __juossut__: {{juosta+V+Act+PrfPrc+Sg+Nom}} (Eng. run)
+
+
+!!Verb stem variation
+Verbs have no allomorphic variation per se, except for some assimilation
+and variation of ð forms, but the stem variation is the same
 as in nouns. The examples for verb stems are given for each class:
 A infinitive's lative, e infinitive's inessive, indicative present 1st 
 singular, indicative present 3rd singular, indicative past 1st singular, 
@@ -34,7 +31,10 @@ indicative past 3rd singular, conditional past 3rd singular,
 imperative 2nd plural, potential 1st singular, present passive, 
 past passive, nut participle passive
 
+!Verb stems without stem variation
+
 The u stems have no stem variation:
+(subsequent examples are *Verbs 52*)
 * __kaunistua__: {{kaunistua+V+Act+InfA+Sg+Lat}} (Eng. beautify)
 * __kaunistuessa__: {{kaunistua+V+Act+InfE+Sg+Ine}}
 * __kaunistun__: {{kaunistua+V+Act+Ind+Prt+Sg1}}
@@ -93,6 +93,9 @@ The y stems have no stem variation:
 * __ällistyttiin__: {{ällistyä+V+Pss+Ind+Pst+Pe4}}
 * __ällistytty__: {{ällistyä+V+Pss+PrfPrc+Sg+Nom}}
 
+!Verb stems with only gradation
+
+(subsequent examples are *Verbs gradations*)
 * __haukkoa__: {{haukkoa+V+Act+InfA+Sg+Lat}} (Eng. gasp)
 
 * __nuokkua__: {{nuokkua+V+Act+InfA+Sg+Lat}} (Eng. sleep)
@@ -151,6 +154,10 @@ The y stems have no stem variation:
 
 * __pusertua__: {{pusertua+V+Act+InfA+Sg+Lat}} (Eng. squeeze)
 
+!Verbs with -a stems
+
+
+(subsequent examples are *Verbs 53*)
 * __mutristaa__: {{mutristaa+V+Act+InfA+Sg+Lat}} (Eng. ?)
 
 * __kivistää__: {{kivistää+V+Act+InfA+Sg+Lat}} (Eng. hurt)
@@ -170,6 +177,9 @@ The y stems have no stem variation:
 
 * __sortaa__: {{sortaa+V+Act+InfA+Sg+Lat}} (Eng. crush)
 
+Some of the a stems have t:s in past stems by ti>si variation.
+
+(subsequent examples are *Verbs 54*)
 * __huutaa__: {{huutaa+V+Act+InfA+Sg+Lat}} (Eng. yell)
 
 * __pyytää__: {{pyytää+V+Act+InfA+Sg+Lat}} (Eng. aks)
@@ -186,7 +196,10 @@ The y stems have no stem variation:
 
 * __näpertää__: {{näpertää+V+Act+InfA+Sg+Lat}} (Eng. twiddle)
 
+In some cases t:s variation is optionally alongside the regular gradation:
 
+
+(subsequent examples are *Verbs 55*)
 * __kiitää__: {{kiitää+V+Act+InfA+Sg+Lat}} (Eng. rush)
 
 * __joutaa__: {{joutaa+V+Act+InfA+Sg+Lat}}
@@ -195,6 +208,9 @@ The y stems have no stem variation:
 
 * __entää__: {{entää+V+Act+InfA+Sg+Lat}}
 
+Other a stems undergo a:o variation
+
+(subsequent examples are *Verbs 56*)
 * __kasvaa__: {{kasvaa+V+Act+InfA+Sg+Lat}} (Eng. grow)
 
 * __jakaa__: {{jakaa+V+Act+InfA+Sg+Lat}} (Eng. share)
@@ -207,10 +223,16 @@ The y stems have no stem variation:
 
 * __kantaa__: {{kantaa+V+Act+InfA+Sg+Lat}} (Eng. carry)
 
+In some of the a:o variations the t:s variant is also possible.
+
+(subsequent examples are *Verbs 57*)
 * __kaataa__: {{kaataa+V+Act+InfA+Sg+Lat}} (Eng. pour)
 
 * __saartaa__: {{saartaa+V+Act+InfA+Sg+Lat}} (Eng. surround)
 
+!Verbs with e stems
+
+(subsequent examples are *Verbs 58*)
 * __kytkeä__: {{kytkeä+V+Act+InfA+Sg+Lat}} (Eng. switch)
 
 * __sotkea__: {{sotkea+V+Act+InfA+Sg+Lat}} (Eng. mess)
@@ -229,11 +251,19 @@ The y stems have no stem variation:
 
 * __särkeä__: {{särkeä+V+Act+InfA+Sg+Lat}} (Eng. break)
 
+Some of the e stems allow for optional t:s variation in past form.
+
+(subsequent examples are *Verbs 59*)
 * __tuntea__: {{tuntea+V+Act+InfA+Sg+Lat}} (Eng. feel)
 
+The rare ht:ks kind of variation is also possible.
+
+(subsequent examples are *Verbs 60*)
 * __lähteä__: {{lähteä+V+Act+InfA+Sg+Lat}} (Eng. go)
 
+!Verbs with i stems
 
+(subsequent examples are *Verbs 61*)
 * __kosia__: {{kosia+V+Act+InfA+Sg+Lat}} (Eng. propose)
 
 * __ryskiä__: {{ryskiä+V+Act+InfA+Sg+Lat}} (Eng. crash)
@@ -264,27 +294,45 @@ The y stems have no stem variation:
 
 * __tympiä__: {{tympiä+V+Act+InfA+Sg+Lat}} (Eng. bore)
 
-* __kontia__
+* __kontia__: {{kontia+V+Act+InfA+Sg+Lat}} (Eng. mole)
 
 * __hylkiä__: {{hylkiä+V+Act+InfA+Sg+Lat}} (Eng. reject)
 
+!Verbs with long vowel stem
+These verbs also have da variant of a infinitive forms.
+
+(subsequent examples are *Verbs 62*)
 * __kopioida__: {{kopioida+V+Act+InfA+Sg+Lat}} (Eng. copy)
 
 * __öykkäröidä__: {{öykkäröidä+V+Act+InfA+Sg+Lat}} (Eng. bully)
 
+(subsequent examples are *Verbs 63*)
 * __saada__: {{saada+V+Act+InfA+Sg+Lat}} (Eng. get)
 
 * __myydä__: {{myydä+V+Act+InfA+Sg+Lat}} (Eng. sell)
 
 * __jäädä__: {{jäädä+V+Act+InfA+Sg+Lat}} (Eng. stay)
 
+!Monosyllabic verbs with widening diphthong
+Widening diphthongs are simplified before past and conditional suffix i's
+by removal of first component. 
+
+(subsequent examples are *Verbs 64*)
 * __viedä__: {{viedä+V+Act+InfA+Sg+Lat}} (Eng. take)
 
 * __tuoda__: {{tuoda+V+Act+InfA+Sg+Lat}} (Eng. bring)
 
 * __syödä__: {{syödä+V+Act+InfA+Sg+Lat}} (Eng. eat)
 
-* __käydä__: {{käydä+V+Act+InfA+Sg+Lat}} (Eng. visit)
+In past and conditional forms of käydä, the glide before suffix is marked
+even in normative orthography.
+
+(subsequent examples are *Verbs 65*)
+* __käydä__: {{käydä+V+Act+InfA+Sg+Lat}} (Eng. visit, go for)
+
+!Verbs with consonant stems
+
+Verbs with momentane derivation are common consonant stems.
 
 * __marista__: {{marista+V+Act+InfA+Sg+Lat}} (Eng. whine)
 
@@ -297,9 +345,19 @@ The y stems have no stem variation:
 
 * __rangaista__: {{rangaista+V+Act+InfA+Sg+Lat}} (Eng. punish)
 
+!Verbs with n, r, l, s stems
+Notably, the a infinitive forms d assimilates to preceding consonant.
+
+(subsequent examples are *Verbs 67*)
+* __surra__: {{pierrä+V+Act+InfA+Sg+Lat}} (Eng. meh)
+
 * __pierrä__: {{pierrä+V+Act+InfA+Sg+Lat}} (Eng. fart)
 
+* __panna__: {{panna+V+Act+InfA+Sg+Lat}} (Eng. put)
+
 * __mennä__: {{mennä+V+Act+InfA+Sg+Lat}} (Eng. go)
+
+Frequentative derivations are most common source of l stemmed verbs.
 
 * __vastailla__: {{vastailla+V+Act+InfA+Sg+Lat}} (Eng. answer)
 
@@ -335,20 +393,36 @@ The y stems have no stem variation:
 
 * __kiherrellä__: {{kiherrellä+V+Act+InfA+Sg+Lat}} (Eng. giggle)
 
+!tse stuff
+Some verbs have possible optional heteroclitic indicative stems:
+
+(subsequent examples are *Verbs 68*)
 * __isännöidä__: {{isännöidä+V+Act+InfA+Sg+Lat}} (Eng. host)
 
 * __mellakoida__: {{mellakoida+V+Act+InfA+Sg+Lat}} (Eng. riot)
 
+In these stems the tse formed stem is only one.
+
+(subsequent examples are *Verbs 69*)
 * __palkita__: {{palkita+V+Act+InfA+Sg+Lat}} (Eng. reward)
 
 * __merkitä__: {{merkitä+V+Act+InfA+Sg+Lat}} (Eng. mark)
 
+Few words have special consonant cluster simplification for ks forms.
+
+(subsequent examples are *Verbs 70*)
 * __juosta__: {{juosta+V+Act+InfA+Sg+Lat}} (Eng. run)
 
 * __piestä__: {{piestä+V+Act+InfA+Sg+Lat}} (Eng. spank)
 
+nähdä has special h:k variation.
+
+(subsequent examples are *Verbs 71*)
 * __nähdä__: {{nähdä+V+Act+InfA+Sg+Lat}} (Eng. see)
 
+!Verbs with -ne- stems
+
+(subsequent examples are *Verbs 72*)
 * __karheta__: {{karheta+V+Act+InfA+Sg+Lat}}
 
 * __vähetä__: {{vähetä+V+Act+InfA+Sg+Lat}} (Eng. lessen)
@@ -375,9 +449,6 @@ The y stems have no stem variation:
 
 * __leudota__: {{leudota+V+Act+InfA+Sg+Lat}}
 
-FIXME: this is not the back form of pidetä
-* __todeta__: {{todeta+V+Act+InfA+Sg+Lat}} (Eng. note)
-
 * __pidetä__: {{pidetä+V+Act+InfA+Sg+Lat}} (Eng. lengthen)
 
 * __lämmetä__: {{lämmetä+V+Act+InfA+Sg+Lat}} (Eng. warm)
@@ -386,8 +457,9 @@ FIXME: this is not the back form of pidetä
 
 * __juljeta__: {{juljeta+V+Act+InfA+Sg+Lat}} (Eng. dare)
 
-iljetä
+!Vowel lengthening(?) stems
 
+(subsequent examples are *Verbs 73*)
 * __arvata__: {{arvata+V+Act+InfA+Sg+Lat}} (Eng. guess)
 
 * __ynnätä__: {{ynnätä+V+Act+InfA+Sg+Lat}} (Eng. add)
@@ -488,6 +560,7 @@ iljetä
 
 * __iljetä__: {{iljetä+V+Act+InfA+Sg+Lat}} (Eng. dare)
 
+(subsequent examples are *Verbs 75*)
 * __myrskytä__: {{myrskytä+V+Act+InfA+Sg+Lat}} (Eng. storm)
 
 * __lassota__: {{lassota+V+Act+InfA+Sg+Lat}} (Eng. lasso)
@@ -508,20 +581,33 @@ iljetä
 
 * __hellitä__: {{hellitä+V+Act+InfA+Sg+Lat}} (Eng. loose)
 
+!Vowel stems with t:s variation
+
+(subsequent examples are *Verbs 76*)
 * __taitaa__: {{taitaa+V+Act+InfA+Sg+Lat}} (Eng. can)
 
 * __tietää__: {{tietää+V+Act+InfA+Sg+Lat}} (Eng. know)
 
+!Verbs with defective paradigms
+For some verbs, the normative inflection does not allow full set of forms:
+
+(subsequent examples are *Verbs 77*)
 * __vipajaa__: {{vipajaa+V+Act+InfA+Sg+Lat}} (Eng. thump)
 
 * __heläjää__: {{heläjää+V+Act+InfA+Sg+Lat}} (Eng. chime)
 
+(subsequent examples are *Verbs 78*)
 * __raikaa__: {{raikaa+V+Act+InfA+Sg+Lat}} (Eng. baum)
 
 * __ähkää__: {{ähkää+V+Act+InfA+Sg+Lat}} (Eng. meh)
 
+!Verbs with exceptional inflection patterns
+There is a handful of verbs that does not fit to the patterns of old
+dictionaries.
+
 The verb olla has very peculiar and heteroclitic inflection with lot of
 common short forms in standard spoken Finnish:
+(subsequent examples are *Verb olla*)
 * __olla__: {{olla+V+Act+InfA+Sg+Lat}} (Eng. be)
 * __lienen__: {{olla+V+Act+Pot+Sg1}}
 * __lie__: {{olla+V+Act+Pot+ConNeg}}
