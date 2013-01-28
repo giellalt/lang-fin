@@ -290,30 +290,200 @@ adjective initial compounds, which follow agreeing compound pattern same
 as numbers. The amount of these words is relatively small, so they have
 been spelled out here in full form rather than using more complex methods
 of agreeing compounding, 
-c.f. VISK § 420
+Further reading: [VISK § 420|http://scripta.kotus.fi/visk/sisalto.php?p=420]
 FIXME: some are still missing
 
 Examples:
-* __aavameri__
-* __aavanmeren__
-* __aavoissamerissä__
-* __Iso-Britannia__
-* __Ison-Britannian__
-* __Isoissa-Britannioissa__
+(subsequent examples are *Old A+N compounds 51*)
+* __aavameri__: {{aavameri+N+Sg+Nom}} (Eng. wide open ocean)
+* __aavanmeren__: {{aavameri+N+Sg+Gen}}
+* __aavoissamerissä__: {{aavameri+N+Pl+Ine}}
+* __Iso-Britannia__: {{Iso-Britannia+N+Prop+Sg+Nom}} (Eng. Great Britain)
+* __Ison-Britannian__: {{Iso-Britannia+N+Prop+Sg+Gen}}
+* __Isoissa-Britannioissa__: {{Iso-Britannia+N+Prop+Pl+Ine}}
 
+!!!Abbreviations
 Abbreviations are shortened forms that do not inflect. They have whatever
-classification they would have if they were read out, and possibly additional
-analysis of an abbreviation.
+classification they would have if they were read out, mostly that of nouns.
+Lot of abbreviations end in a full stop, which may complicate analysis and
+tokenisation in real-world applications
 
-Examples:
-* __eaa.__
-* __esim.__
-$ esim
+(subsequent examples are *Abbreviations*)
+* __eaa.__: {{eaa.+N}}
+* __esim.__: {{esim.+N}}
+* __*esim__: {{esim+N}} (is not standard language)
+ {{A%0+N:A%0                               # ; }}: Paper size
+ {{A1+N:A1                                 # ; }}: Paper size
+ {{A2+N:A2                                 # ; }}: Paper size
+ {{A3+N:A3                                 # ; }}: Paper size
+ {{A4+N:A4                                 # ; }}: Paper size
+ {{A5+N:A5                                 # ; }}: Paper size
+ {{ab+N:ab                                 # ; }}: swed. aktiebolag (LLC)
+ {{aik.+Adp:aik.                           # ; }}: aikana (during)
+ {{akk.+N:akk.                             # ; }}: akkusatiivi (accusative)
+ {{alk.+Adp:alk.                           # ; }}: alkaen (temporal from)
+ {{alv.+N:alv.                             # ; }}: arvonlisävero (VAT)
+ {{ao.+A:ao.                               # ; }}: alla/aiheena oleva (mentioned)
+ {{ark.+N:ark.                             # ; }}: arkinen (from dict. term, pedestr)
+ {{as.+N:as.                               # ; }}: 
+ {{ay.+N:ay.                               # ; }}:
+ {{dat.+N:dat.                             # ; }}: datiivi (dative)
+ {{dem.pron.+N:dem.pron.                   # ; }}: demonstratiivipronomini
+ {{eaa.+N:eaa.                             # ; }}: ennen ajanlaskun alkua (BCE)
+ {{eKr.+N:eKr.                             # ; }}: ennen Kristuksen syntymää (BC)
+ {{ekr.+N+Use/Sub:ekr.                     # ; }}: ennen kristuksen syntymää
+ {{em.+A:em.                               # ; }}: edellä mainittu (abovementioned)
+ {{em.+N:em.                               # ; }}: 
+ {{ent.+A:ent.                             # ; }}: entinen (former)
+ {{esim.+N:esim.                           # ; }}: esimerkiksi (e.g.)
+ {{evo+N:evo                               # ; }}: et vaan osaa (ydkj)
+ {{evp.+N:evp.                             # ; }}: erossa vakinaisesta palveluksesta
+ {{gen.+N:gen.                             # ; }}: genetiivi (genitive)
+ {{GTi+N:GTi                               # ; }}:
+ {{hlö+N:hlö                               # ; }}: henkilö (person)
+ {{hra+N:hra                               # ; }}: herra (mr.)
+ {{huom.+N:huom.                           # ; }}: huomaa (N.B.)
+ {{hv+N:hv                                 # ; }}: hyvä veli (greetz)
+ {{ib.+N:ib.                               # ; }}: ibidem
+ {{id.+N:id.                               # ; }}: id
+ {{imperf.+N:imperf.                       # ; }}: imperfect
+ {{inc+N:inc                               # ; }}: inc
+ {{inf.+N:inf.                             # ; }}: infinitive
+ {{it.+N:it.                               # ; }}: 
+ {{jKr.+N:jKr.                             # ; }}: jälkeen Kristuksen syntymän (AD)
+ {{jllek+N:jllek                           # ; }}: jollekin (for smth)
+ {{jllk+N:jllk                             # ; }}: jollakin (for smth)
+ {{jltk+N:jltk                             # ; }}: joltakin (from smth)
+ {{jne.+N:jne.                             # ; }}: ja niin edelleen (etc.)
+ {{jnk+N:jnk                               # ; }}: jonkin (of smth)
+ {{joss+N:joss                             # ; }}: jossa (somewhere)
+ {{jssk+N:jssk                             # ; }}: jossakin (somewhere)
+ {{jstk+N:jstk                             # ; }}: jostakin (from)
+ {{jtak+N:jtak                             # ; }}: jotakin (to)
+ {{JyP+N:JyP                               # ; }}: Jyväskylän pallo
+ {{KalPa+N:KalPa                           # ; }}: Kalmiston pallo
+ {{kand.+N:kand.                           # ; }}: kandidaatti (bachelor)
+ {{ka.+N:ka.                               # ; }}: keskiarvo (avg)
+ {{kapt.+N:kapt.                           # ; }}: kapteeni (captain)
+ {{kenr.+N:kenr.                           # ; }}: kenraali (general)
+ {{kers.+N:kers.                           # ; }}: kersantti (sergeant)
+ {{kesk.+N:kesk.                           # ; }}: keskusta (center party)
+ {{khra+N:khra                             # ; }}: kirkkoherra (parson)
+ {{kk+N:kk                                 # ; }}: kuukausi (month)
+ {{kko+N:kko                               # ; }}: kirkko (church)
+ {{klo+N:klo                               # ; }}: kello (time)
+ {{k%:lo+N:k%:lo                           # ; }}: kello
+ {{k.+N:k.                                 # ; }}:
+ {{kok.+N:kok.                             # ; }}: kokoomus (coalition party)
+ {{kompp.+N:kompp.                         # ; }}: komppania ()
+ {{ko.+N:ko.                               # ; }}: kyseessä oleva (mentioned)
+ {{kpl+N:kpl                               # ; }}: kappale (pcs)
+ {{krs+N:krs                               # ; }}: kerros (floor)
+ {{ks.+N:ks.                               # ; }}: katso (c.f.)
+ {{kts.+N:kts.                             # ; }}: katso (c.f.)
+ {{KuPS+N:KuPS                             # ; }}: Kuopion palloseura
+ {{kv.+N:kv.                               # ; }}: 
+ {{lis.+N:lis.                             # ; }}: lisensiaatti (lic.)
+ {{lkm.+N:lkm.                             # ; }}: lukumäärä (amount)
+ {{lk.+N:lk.                               # ; }}: luokka (grade)
+ {{l.+CC:l.                                # ; }}: eli (i.e.)
+ {{ltn.+N:ltn.                             # ; }}: luutnantti (lieutenant)
+ {{lyh.+N:lyh.                             # ; }}: lyhennettynä (abbr.)
+ {{läh.+N:läh.                             # ; }}: lähes 
+ {{ma.+N:ma.                               # ; }}: 
+ {{mlk.+N:mlk.                             # ; }}: maalaiskunta (town)
+ {{ml.+N:ml.                               # ; }}: mukaan lukien (incl.)
+ {{mm.+N:mm.                               # ; }}: muun muassa (among others)
+ {{mom.+N:mom.                             # ; }}: momentti (
+ {{mon.+N:mon.                             # ; }}: monikko (pl.)
+ {{mpy.+N:mpy.                             # ; }}: 
+ {{mt.+N:mt.                               # ; }}:
+ {{mts.+N:mts.                             # ; }}: mainitun tekstin sivulla (ibid)
+ {{mv.+N:mv.                               # ; }}: 
+ {{MyPa+N:MyPa                             # ; }}: Myllykosken Pallo
+ {{n.+N:n.                                 # ; }}: noin (approx.)
+ {{N.N.+N:N.N.                             # ; }}: John Doe
+ {{nom.+N:nom.                             # ; }}: nominatiivi (nominative)
+ {{nro+N:nro                               # ; }}: numero (#
+ {{n%:ro+N:n%:ro                           # ; }}: 
+ {{ns.+N:ns.                               # ; }}: niin sanottu (so-called)
+ {{nti+N:nti                               # ; }}: neiti (ms)
+ {{nyk.+N:nyk.                             # ; }}: nykyinen (currently)
+ {{oik.+N:oik.                             # ; }}: oikeammin?
+ {{om.+N:om.                               # ; }}:
+ {{o.s.+N:o.s.                             # ; }}: 
+ {{os.+N:os.                               # ; }}: omaa sukuaan (née)
+ {{par.+N:par.                             # ; }}: paremmin (in dict., better)
+ {{part.+N:part.                           # ; }}: partitiivi (partitive)
+ {{perf.+N:perf.                           # ; }}: perfekti (perfect)
+ {{pj.+N:pj.                               # ; }}: puheenjohtaja (chair)
+ {{pkt+N:pkt                               # ; }}: paketti (pcs)
+ {{pl.+N:pl.                               # ; }}: plural
+ {{pluskv.+N:pluskv.                       # ; }}: pluskvamperfekti
+ {{p.+N:p.                                 # ; }}: 
+ {{po.+N:po.                               # ; }}: pitää olla (in dict., should be)
+ {{prees.+N:prees.                         # ; }}: preesens
+ {{prof.+N:prof.                           # ; }}: professori
+ {{pron.+N:pron.                           # ; }}: pronomini
+ {{psta+N:psta                             # ; }}: puolesta (on behalf of)
+ {{pvm.+N:pvm.                             # ; }}: päivämäärä (date)
+ {{pv+N:pv                                 # ; }}: 
+ {{rek.+N:rek.                             # ; }}: rekisteröity, ®
+ {{rkl+N:rkl                               # ; }}: ruokalusikka (tbsp)
+ {{RoPS+N:RoPS                             # ; }}: Rovaniemen palloseura
+ {{rp.+N:rp.                               # ; }}: 
+ {{rva+N:rva                               # ; }}: rouva (Mrs)
+ {{ry+N:ry                                 # ; }}: rekisteröity yhdistys (inc.)
+ {{sit.+N:sit.                             # ; }}: sitoutumaton (not in party)
+ {{s.+N:s.                                 # ; }}: syntynyt (birth)
+ {{so.+N:so.                               # ; }}: se on (i.e.)
+ {{sov.+N:sov.                             # ; }}: sovittanut (composer)
+ {{sp.+N:sp.                               # ; }}: 
+ {{srk.+N:srk.                             # ; }}: seurakunta (church)
+ {{suom.+N:suom.                           # ; }}: suomentanut (fi. translator)
+ {{synt.+N:synt.                           # ; }}: syntynyt (brith)
+ {{sähköp.+N:sähköp.                       # ; }}: sähkoposti (email)
+ {{säv.+N:säv.                             # ; }}: säveltänyt (composer)
+ {{tark.+N:tark.                           # ; }}: tarkistanut (editor)
+ {{tav.+N:tav.                             # ; }}: tavallisemmin (in dict, usually)
+ {{tekn.+N:tekn.                           # ; }}: tekninen (in dict., tech)
+ {{tmi+N:tmi                               # ; }}: toiminimi (
+ {{tms.+N:tms.                             # ; }}: tai muuta sellaiste (etc.)
+ {{t.+N:t.                                 # ; }}: tai (or)
+ {{toim.% huom.+N:toim.% huom.             # ; }}: toimituksen huomautus (editors nt)
+ {{toim.+N:toim.                           # ; }}: toimitus (editor)
+ {{tri+N:tri                               # ; }}: tohtori (Dr.)
+ {{ts.+N:ts.                               # ; }}: toisinsanoen (iow)
+ {{tsto+N:tsto                             # ; }}: toimisto (office)
+ {{us.+N:us.                               # ; }}: 
+ {{vak.+N:vak.                             # ; }}: 
+ {{vanh.+N:vanh.                           # ; }}: vanhastaan (in dict., earlier)
+ {{vas.+N:vas.                             # ; }}: vasemmisto (left party)
+ {{vast.+N:vast.                           # ; }}: vastaava (corresponding)
+ {{vkl+N:vkl                               # ; }}: viikonloppu (weekend)
+ {{vklp+N:vklp                             # ; }}: ''
+ {{vko+N:vko                               # ; }}: viikko (week)
+ {{v.+N:v.                                 # ; }}: vuotta (year(s))
+ {{vpj.+N:vpj.                             # ; }}: varapuheenjohtaja (vice chair)
+ {{vrk+N:vrk                               # ; }}: vuorokausi (calendar day)
+ {{vrt.+N:vrt.                             # ; }}: vertaa (c.f.)
+ {{vs.+N:vs.                               # ; }}: 
+ {{vt.+N:vt.                               # ; }}: 
+ {{vv.+N:vv.                               # ; }}: vuosina
+ {{vänr.+N:vänr.                           # ; }}: vänrikki (some military stuff)
+ {{vääp.+N:vääp.                           # ; }}: vääpeli ( more)
+ {{yks.+N:yks.                             # ; }}: yksikkö (singular)
+ {{yl.+N:yl.                               # ; }}: yleensä (in dict., usually)
+ {{ym.+N:ym.                               # ; }}: ynnä muuta (etc.)
+ {{yms.+N:yms.                             # ; }}: ynnä muuta sellaista (etc.)
+ {{yo.+N:yo.                               # ; }}: yllä oleva (aforementioned)
+ {{yv.+N:yv.                               # ; }}: 
 
+!Acronym classification
 Acronyms are shortenings that inflect. They all have two inflection
 patterns, one read letter by letter, and one word-by-word. They are separate
 entries in this dictionary. For example OY will have singular illatives
-_OY:hyn_ and _OY:öön_ for _yyhyn_ and _yhtiöön_ resp., although former is
+_OY:hyn_ and _OY:öön_ for _yyhyn_ and _yhtiöön_ resp., although latter is
 much rarer.
 A big majority of popular acronyms in everyday use comes from English, and
 the word-based inflection is virtually non-existent and would be very
@@ -321,8 +491,117 @@ confusing so there's no high priority for adding that.
 
 The first classification for acronyms should be along the final letter, then
 if the final word inflection is used, the class of that word.
-* __OY:hyn__
-* __OY:öön__
+(subsequent examples are *Acronyms*)
+* __OY:hyn__: {{OY+N+Sg+Ill}}
+ {{ADSL+N:ADSL   ACRO_ÄKS  ; }} Asymmetric Digital Subscriber Line
+ {{AKT+N:AKT   ACRO_EE  ;    }}
+ {{API+N:API   ACRO_II  ;    }} Application Programming Interface
+ {{atk+N:atk   ACRO_OO  ;    }} automaattinen tekstinkäsittely
+ {{BBC+N:BBC   ACRO_EE  ;    }} British Broadcasting Company
+ {{BKT+N:BKT   ACRO_EE  ;    }} Brutto-Kansan-Tuote
+ {{BMW+N:BMW   ACRO_EE  ;    }} Bayerische Motor W
+ {{BSE+N:BSE   ACRO_EE  ;    }} 
+ {{cd+N:cd   ACRO_EE  ;      }} compact disc
+ {{CD+N:CD   ACRO_ÄKS  ;     }} Compact Disc
+ {{CD-R+N:CD-R   ACRO_ÄKS  ; }} --   ''   -- Read-Only
+ {{CD-RW+N:CD-RW   ACRO_EE  ;}}              Read-Write
+ {{CIA+N:CIA   ACRO_AA  ;    }} Central Intelligence Agency
+ {{DDR+N:DDR   ACRO_ÄKS  ;   }} Deutsches Democratische Republic
+ {{DE+N:DE   ACRO_EE  ;      }} 
+ {{DFI+N:DFI   ACRO_II  ;    }}
+ {{dna+N:dna   ACRO_AA  ;    }} deoxyribonucleic acid
+ {{DNA+N:DNA   ACRO_AA  ;    }} Deoxyribo-Nucleic Acid
+ {{DJ+N:DJ     ACRO_II ;   }} Disc Jockey
+ {{DPI+N:DPI   ACRO_II  ;    }} Dots Per Inch
+ {{DVD+N:DVD   ACRO_ÄKS  ;   }} Digital Versatile Disc
+ {{EEC+N:EEC   ACRO_EE  ;    }} European Economy Council
+ {{EKP+N:EKP   ACRO_EE  ;    }} Euroopan Keskus-Pankki
+ {{EMU+N:EMU   ACRO_UU  ;    }} European Monetary Union
+ {{ETY+N:ETY   ACRO_YY  ;    }} Euroopan Turvallisuus-Yhteisö
+ {{EU+N:EU   ACRO_UU  ;      }} Euroopan Unioni
+ {{EY+N:EY   ACRO_YY  ;      }} Euroopan Yhteisö
+ {{FBI+N:FBI   ACRO_II ;     }} Federal Bureau of Investigation
+ {{FIFA+N:FIFA   ACRO_AA  ;  }} Football
+ {{FTP+N:FTP   ACRO_EE  ;    }} File Transfer Protocol
+ {{GM+N:GM   ACRO_ÄKS  ;     }} General Motors
+ {{GPRS+N:GPRS   ACRO_ÄKS  ; }} 
+ {{HIFK+N:HIFK   ACRO_OO  ;  }} Helsingfors 
+ {{HIV+N:HIV   ACRO_EE  ;    }} ... Immunodeficiency Virus
+ {{HJK+N:HJK   ACRO_OO  ;    }} Helsingin Jalkapallo-Klubi
+ {{HKL+N:HKL   ACRO_ÄKS  ;   }} Helsingin Kaupungin Liikenne
+ {{HK+N:HK   ACRO_OO  ;      }} 
+ {{HS+N:HS   ACRO_ÄKS  ;     }} Helsingin Sanomat
+ {{HTML+N:HTML   ACRO_ÄKS  ; }} Hyper-Text Markup Language
+ {{HTTP+N:HTTP   ACRO_EE  ;  }} Hyper-Text Transfer Protocol
+ {{IBM+N:IBM   ACRO_ÄKS  ;   }} International Business Machines
+ {{internet-tv+N:internet-tv   ACRO_EE  ; }} Tele-Visio
+ {{IP+N:IP   ACRO_EE  ;    }} Internet Protocol
+ {{IRC+N:IRC   ACRO_EE  ;  }} Internet Relay Chat
+ {{ISBN+N:ISBN   ACRO_ÄKS  ;   }} International Serial Book Number
+ {{IT+N:IT   ACRO_EE  ;    }} Informaatio-Teknologia
+ {{KHO+N:KHO   ACRO_OO  ; }} Korkein Hovi-Oikeus
+ {{KOP+N:KOP   ACRO_EE  ;  }} Kansallis-Osake-Pankki
+ {{lehtiö-pc+N:lehtiö-pc   ACRO_EE  ; }} Personal Computer
+ {{media-pc+N:media-pc   ACRO_EE  ; }} Personal Computer
+ {{MTV+N:MTV     ACRO_EE ;    }} Music TeleVision
+ {{MTV3+N:MTV3   ACRO_KOLME  ; }} Mainos-Tele-Visio
+ {{NASA+N:NASA   ACRO_AA  ;    }} National Air and Space A
+ {{NATO+N:NATO   ACRO_OO  ;    }} North-Atlantic T Organisation
+ {{NBA+N:NBA     ACRO_AA ;    }} National Basketball Association
+ {{netti-tv+N:netti-tv   ACRO_EE  ; }} Tele-visio
+ {{NHL+N:NHL   ACRO_ÄKS  ; }} National Hockey League
+ {{NL+N:NL   ACRO_ÄKS  ;   }} Neuvosto-Liitto
+ {{NPC+N:NPC   ACRO_EE  ;  }} Non-Player Character
+ {{OK+N:OK   ACRO_OO  ;    }} not pronounced in words
+ {{oyj+N:oyj   ACRO_II  ;  }} Julkinen Osake-Yhtiö (!)
+ {{OY+N:OY   ACRO_YY  ;    }} Osake-Yhtiö
+ {{oy+N:oy   ACRO_YY  ;    }} Osake-Yhtiö
+ {{paneeli-pc+N:paneeli-pc   ACRO_EE  ;    }} Personal Computer
+ {{PDF+N:PDF   ACRO_ÄKS  ; }} Portable Document Format
+ {{pH+N:pH   ACRO_OO  ;    }} per Hydrogen
+ {{pien-pc+N:pien-pc   ACRO_EE  ;  }} Personal Computer
+ {{pinta-WWW+N:pinta-WWW   ACRO_EE  ;  }} World Wide Web
+ {{PPI+N:PPI   ACRO_II  ;  }} Points Per Inch
+ {{PR+N:PR   ACRO_ÄKS  ;   }} Public Relations
+ {{RNA+N:RNA   ACRO_AA ;   }} Ribonucleic Acid
+ {{RSS+N:RSS   ACRO_ÄKS  ; }} R
+ {{SAK+N:SAK   ACRO_OO  ;  }} Suomen Ammattiliittojen Keskusjärjestö
+ {{SDP+N:SDP   ACRO_EE  ;  }} Sosiali-Demokraattinen Puolue 
+ {{SGML+N:SGML   ACRO_ÄKS  ;   }} Standardised General Markup Language
+ {{SKDL+N:SKDL   ACRO_ÄKS  ; }} Suomen Kristillis-Demokraattien Liitto
+ {{Skp+N:Skp   ACRO_EE  ; }} Suomen keskuspankki
+ {{SOK+N:SOK   ACRO_OO  ;  }} Suomen Osuus-Kauppa
+ {{SPR+N:SPR   ACRO_ÄKS  ; }} Suomen Punainen Risti
+ {{SQL+N:SQL   ACRO_ÄKS  ; }} Structured Query Language
+ {{STT+N:STT   ACRO_EE  ;  }} Suomen Tieto-Toimisto
+ {{SUL+N:SUL   ACRO_ÄKS  ; }} Suomen Urheilu-Liitto
+ {{TCP/IP+N:TCP/IP   ACRO_EE  ; }} Transmission Control Protocol / Internet Protocol
+ {{TCP+N:TCP   ACRO_EE  ;  }} Transmission Control Protocol
+ {{TI+N:TI   ACRO_II  ;    }} Texas Instruments
+ {{TM+N:TM   ACRO_ÄKS  ;   }} Tekniikan Maailma
+ {{TPS+N:TPS   ACRO_ÄKS  ; }} Turun Pallo-Seura
+ {{TS+N:TS   ACRO_ÄKS  ;   }} Turun Sanomat
+ {{tv+N:tv   ACRO_EE  ;    }} tele-visio
+ {{URL+N:URL   ACRO_ÄKS  ; }} Uniform Resource Locator
+ {{USA+N:USA   ACRO_AA  ;  }} United States of America
+ {{VIP+N:VIP   ACRO_EE  ;  }} Very Important Person
+ {{VR+N:VR   ACRO_ÄKS  ;   }} Valtion Rautatiet
+ {{VTT+N:VTT   ACRO_EE  ;  }} 
+ {{VW+N:VW   ACRO_EE  ;    }} Volks Wagen
+ {{WAP+N:WAP   ACRO_EE  ;  }} Wireles Application Protocol
+ {{WC+N:WC   ACRO_EE  ;    }} Water Closet
+ {{WHO+N:WHO   ACRO_OO  ;  }} World Health Organisation
+ {{WSOY+N:WSOY ACRO_YY ;   }} Werner-Söderström Osake-Yhtiö
+ {{WTO+N:WTO   ACRO_OO  ;  }} World Trade Organisation
+ {{WWF+N:WWF   ACRO_ÄKS  ; }} World Wildlife Foundation
+ {{www+N:www   ACRO_EE  ;  }} world wide web
+ {{WWW+N:WWW   ACRO_EE  ;  }} World Wide Web
+ {{XML+N:XML   ACRO_ÄKS  ; }} Extensible Markup Language
+ {{Y2K+N:Y2K   ACRO_OO  ;  }} not spelled out
+ {{YK+N:YK   ACRO_OO  ;    }} Yhdistyneet Kansakunnat
+ {{YMP+N:YMP   ACRO_EE  ;  }} 
+ {{YT+N:YT   ACRO_EE  ;    }} Yhteistyö?
+ {{ÄO+N:ÄO   ACRO_OO  ;    }} Älykkyysosamäärä
 !!!Adjective classification
 Adjectives are words that are inflected like nouns, with few additions. For
 adjectives, the comparative derivations are usually allowed and the
@@ -633,8 +912,19 @@ The gradation of t after n in o stems:
 * __ventoihin__: {{vento+A+Pl+Ill}}
 * __vennoista__: {{vento+A+Pl+Ela}}
 
+The common u stem after n is in nut participles passive (-tu):
+* __pantu__: {{pantu+A+Sg+Nom}} (Eng. embettered)
+* __pannussa__: {{pantu+A+Sg+Ine}}
+* __pantuihin__: {{pantu+A+Pl+Ill}}
+* __pannuista__: {{pantu+A+Pl+Ela}}
 
-There are no adjectives ending in -ntu, -ntö or -nty
+As with y and t:
+* __menty__: {{menty+A+Sg+Nom}} (Eng. belittled)
+* __mennyssä__: {{menty+A+Sg+Ine}}
+* __mentyihin__: {{menty+A+Pl+Ill}}
+* __mennyistä__: {{menty+A+Pl+Ela}}
+
+There are no adjectives ending in -ntö
 
 The quantitative gradation of t after r in o stems:
 * __marto__: {{marto+A+Sg+Nom}} (Eng. ???)
@@ -643,7 +933,19 @@ The quantitative gradation of t after r in o stems:
 * __marroista__: {{marto+A+Pl+Ela}}
 
 
-There are no adjectives ending in -rtu, -rty or -rtö. Just as well, the
+The common u stem after r is in nut participles passive (-tu):
+* __purtu__: {{purtu+A+Sg+Nom}} (Eng. embettered)
+* __purrussa__: {{purtu+A+Sg+Ine}}
+* __purtuihin__: {{purtu+A+Pl+Ill}}
+* __purruista__: {{purtu+A+Pl+Ela}}
+
+As with y and t:
+* __pierty__: {{pierty+A+Sg+Nom}} (Eng. belittled)
+* __pierryssä__: {{pierty+A+Sg+Ine}}
+* __piertyihin__: {{pierty+A+Pl+Ill}}
+* __piernyistä__: {{pierty+A+Pl+Ela}}
+
+There are no adjectives ending in -rtö. Just as well, the
 class for UkU : UvU- is limited to few nouns we know.
 
 
@@ -1220,17 +1522,23 @@ dictionaries.
 (subsequent examples are *Adjective plurales*)
 * __leuattomat__: {{leuattomat+A+Pl+Nom}} (Eng. ?)
 
+!!!Adverb classification
 Adverbs are a heterogenous mass of words with defective inflectional,
-usually sourced from various forms of nominals.
+usually sourced from various forms of nominals. It would be possible to
+classify adverbs along etymology and semantics, but we do not yet use such
+classification. Only the morphology is recorded in the continuation classes
+and analyses.
 
 The classification of the adverbs in morphology goes along the possessives
 and clitics they take or require:
-* __aakkosellisesti__
-* __aakkosellisestikin__
-* __mukaani__
-* __mukaamme__
-* __ajassa__
-* __ajassako__
+(subsequent examples are *Adverbs*)
+* __aakkosellisesti__: {{aakkosellisesti+Adv}}
+* __aakkosellisestikin__: {{aakkosellisesti+Adv+Foc/kin}}
+* __mukaani__: {{mukaan+Adv+PxSg1}}
+* __mukaamme__: {{mukaan+Adv+PxPl1}}
+* __ajassa__: {{ajassa+Adv}}
+* __ajassako__: {{ajassa+Adv+Qst}}
+Coordinating conjunctions
 Coordinating conjunctions combine equal clauses and phrases. As subset of
 particles, they do not inflect. The classification is solely syntactic and
 semantic, but it is used in this system for compatibility with other stuff.
@@ -1238,10 +1546,11 @@ semantic, but it is used in this system for compatibility with other stuff.
 The coordinating conjunctions are: eli(kkä), ja, joko – tai, kuin – myös,
 ‑kä, mutta, niin – kuin ‑kin/ myös, sekä, sekä – että, sun; tai, vaan, vai,
 ynnä, (saati), (sillä)
-(VISK § 816)
-Examples:
-* __eikä__
-* __ja__
+Further reading: [VISK § 816|http://scripta.kotus.fi/visk/sisalto.php?p=816])
+(subsequent examples are *Coordinating conjunctions*)
+* __eikä__: {{eikä+CC}}
+* __ja__: {{ja+CC}}
+!!!Adverbial conjunctions
 The adverbial conjunctions join two unequal clauses or phrases together.
 The traditional term for this is sub-ordinating conjunction, it is assumed
 here for compatibility with other languages. Adverbial conjunctions are a
@@ -1249,51 +1558,55 @@ subset of particles, so they do not inflect at all.
 
 The adverbial conjunctions are:
 ellei, että, jahka, jollei, jos, joskin, jos kohta, jotta, koska, kun,
- kunhan, mikäli, vaikka, (kunnes). (VISK § 818)
-Examples:
-* __että__
-* __jotta__
-* __koska__
-* __kun__
-* __jos__
-* __vaikka__
+ kunhan, mikäli, vaikka, (kunnes). 
+Further reading: [VISK § 818|http://scripta.kotus.fi/visk/sisalto.php?p=818]
+(subsequent examples are *Adverbial conjunctions*)
+* __että__: {{että+CS}}
+* __jotta__: {{jotta+CS}}
+* __koska__: {{koska+CS}}
+* __kun__: {{kun+CS}}
+* __jos__: {{jos+CS}}
+* __vaikka__: {{vaikka+CS}}
 
+!!!Digits and such expressions
 Digit-strings are used in place of numerals. They inflect with colon, like
 acronyms, and compound with hyphen only.
 
 Digits are constructed as several cyclic structures: integers, decimals or
 roman numerals.
 Zero alone works quite differently:
-* __0__
+(subsequent examples are *Digits basic*)
+* __"0"__: {{0+Num+Sg+Nom}}
 
 Integers can be constructed from any number of digits, ending in
 1-9, followed by any number of 0's. Initial 0's are rare, but not totally
 unexpected:
-* __13__
-* __100__
-* __0000005550000000__
+* __"13"__: {{13+Num+Card+Sg+Nom}}
+* __"100"__: {{100+Num+Card+Sg+Nom}}
+* __"0000005550000000"__: {{0000005550000000+Num+Card+Sg+Nom}}
 
 The digit strings that end in 10 to 12 + 6n 0's are inflected alike:
-* __1000000000__
-* __300000000000__
-* __123456000000000000000000__
+* __"1000000000"__: {{1000000000+Num+Card+Sg+Nom}}
+* __"300000000000"__: {{300000000000+Num+Card+Sg+Nom}}
+* __"123456000000000000000000"__: {{123456000000000000000000+Num+Card+Sg+Nom}}
 
 The digit strings that end in 6 to 9 + 6n 0's are inflected alike:
-* __1000000__
-* __300000000__
-* __123456000000000000000__
+* __"1000000"__: {{1000000+Num+Card+Sg+Nom}}
+* __"300000000"__: {{300000000+Num+Card+Sg+Nom}}
+* __"123456000000000000000"__: {{123456000000000000000+Num+Card+Sg+Nom}}
 
 Decimal digit strings start with any number of digits 0 to 9, followed
 by decimal separator comma. The decimal dot may be allowed as substandard
 variant.
-* __1,0__
-* __314,1__
+(subsequent examples are *Digits decimal strings*)
+* __"1,0"__: {{1,0+Num+Sg+Nom}}
+* __"314,1"__: {{314,1+Num+Sg+Nom}}
 
 
 The decimal digit strings end in any number of digits 0 to 9, inflected
 along the last part.
-* __3,141__
-* __123,345__
+* __"3,141"__: {{3,141+Num+Sg+Nom}}
+* __"123,345"__: {{123,345+Num+Sg+Nom}}
 
 The decimal digit strings with dot may be allowed as sub-standard option
 with respective analysis.
@@ -1301,27 +1614,28 @@ with respective analysis.
 Roman numerals are composed the symbols M, D, C, L, X, V, I in ascending
 scale and some combinations, they denote ordinal numbers and inflect like
 ones.
-* __MM__
-* __MCXI__
-* __CMXCIX__
+(subsequent examples are *Digits romans*)
+* __MM__: {{MM+Num+Ord+Sg+Nom}}
+* __MCXI__: {{MCXI+Num+Ord+Sg+Nom}}
+* __CMXCIX__: {{CMXCIX+Num+Ord+Sg+Nom}}
 
 Thousands can be followed by any of other parts
-* __MII__
-* __MCCCXXII__
+* __MII__: {{MII+Num+Ord+Sg+Nom}}
+* __MCCCXXII__: {{MCCCXXII+Num+Ord+Sg+Nom}}
 
 
 Hundreds can be followed by anything but thousands:
-* __CXXI__
-* __DXXIV__
+* __CXXI__: {{CXXI+Num+Ord+Sg+Nom}}
+* __DXXIV__: {{DXXIV+Num+Ord+Sg+Nom}}
 
 Tens can be followed by ones:
-* __XIX__
-* __XXVII__
+* __XIX__: {{XIX+Num+Ord+Sg+Nom}}
+* __XXVII__: {{XXVII+Num+Ord+Sg+Nom}}
 
 Ones come alone
-* __IX__
-* __VIII__
-* __II__
+* __IX__: {{IX+Num+Ord+Sg+Nom}}
+* __VIII__: {{VIII+Num+Ord+Sg+Nom}}
+* __II__: {{II+Num+Ord+Sg+Nom}}
 
 Exceptions are quite strange word-forms. the ones that do not fit anywhere 
 else. This file contains all enumerated word forms that cannot reasonably be
@@ -4103,35 +4417,32 @@ Suffixes are bound morphs that come after nominals in compounds.
 
 Examples:
 * ???
-The verbs' conjugation includes voice (in Finnish grammars also verbal 
-genus),  tense/mood (tempus/modus), personal endings and negation marker
-The verbs also have productive derivations to defective nouns as
-infinitives, and to adjectives as participles_, which are considered to be 
-part of inflection and thus included in most versions (VISK § 105).
-The morphology of participles and historical 4th infinitive is further
-detailed in section Deverbal nouns'  morphology.
-The analysis strings of verb are not as systematic as nouns,
-as many categories collapse together in forms, e.g. the tense and mood
-are only distinct with indicative past and non-past. This variation is
-reflected in different taggings for different versions of omorfi and
-detailed in later sections.
-
-
-The verbs are classified along the stem mutations suffix assimilation,
-and harmony:
-* __kutoo__: {{kutoa+V+Act+Ind+Prt+Sg3}} (Eng. knit)
-* __kudotaan__: {{kutoa+V+Pss+Ind+Prt+Pe4}}
-* __tietää__: {{tietää+V+Act+Ind+Prt+Sg3}} (Eng. know)
-* __tiesit__: {{tietää+V+Act+Ind+Pst+Sg2}}
-* __nähnyt__: {{nähdä+V+Act+PrfPrc+Sg+Nom}}
-* __juossut__: {{juosta+V+Act+PrfPrc+Sg+Nom}}
-The key to find unique class from verbs is to pick stems and suffixes from:
+!!!Verbs and their classification
+Verbs are the words that inflect in tense, mood, personal suffixes, and
+clitics, but verbs also have s.c. infinite inflection pattern which is
+basically nominal derivations. The dictionary entries of verbs are
+A-infinitive forms, there are no verbs in dictionary that do not end in
+a or ä. Verbs are very distinct from other classes, their classification
+is not difficult.
+The key to find unique class for a verb is to pick stems and suffixes from:
 indicative non-past 1st singular and 3rd singular, indicative past 1st 
 singular, ...
 
 
-Verbs have no allomorphic variation per se, except for some assimilation and
-variation of ð forms, but the stem variation is the same
+The verbs are classified along the stem mutations suffix assimilation,
+and harmony:
+(subsequent examples are *Verb basic examples*)
+* __kutoo__: {{kutoa+V+Act+Ind+Prt+Sg3}} (Eng. knit)
+* __kudotaan__: {{kutoa+V+Pss+Ind+Prt+Pe4}}
+* __tietää__: {{tietää+V+Act+Ind+Prt+Sg3}} (Eng. know)
+* __tiesit__: {{tietää+V+Act+Ind+Pst+Sg2}}
+* __nähnyt__: {{nähdä+V+Act+PrfPrc+Sg+Nom}} (Eng. see)
+* __juossut__: {{juosta+V+Act+PrfPrc+Sg+Nom}} (Eng. run)
+
+
+!!Verb stem variation
+Verbs have no allomorphic variation per se, except for some assimilation
+and variation of ð forms, but the stem variation is the same
 as in nouns. The examples for verb stems are given for each class:
 A infinitive's lative, e infinitive's inessive, indicative present 1st 
 singular, indicative present 3rd singular, indicative past 1st singular, 
@@ -4139,7 +4450,10 @@ indicative past 3rd singular, conditional past 3rd singular,
 imperative 2nd plural, potential 1st singular, present passive, 
 past passive, nut participle passive
 
+!Verb stems without stem variation
+
 The u stems have no stem variation:
+(subsequent examples are *Verbs 52*)
 * __kaunistua__: {{kaunistua+V+Act+InfA+Sg+Lat}} (Eng. beautify)
 * __kaunistuessa__: {{kaunistua+V+Act+InfE+Sg+Ine}}
 * __kaunistun__: {{kaunistua+V+Act+Ind+Prt+Sg1}}
@@ -4198,6 +4512,9 @@ The y stems have no stem variation:
 * __ällistyttiin__: {{ällistyä+V+Pss+Ind+Pst+Pe4}}
 * __ällistytty__: {{ällistyä+V+Pss+PrfPrc+Sg+Nom}}
 
+!Verb stems with only gradation
+
+(subsequent examples are *Verbs gradations*)
 * __haukkoa__: {{haukkoa+V+Act+InfA+Sg+Lat}} (Eng. gasp)
 
 * __nuokkua__: {{nuokkua+V+Act+InfA+Sg+Lat}} (Eng. sleep)
@@ -4256,6 +4573,10 @@ The y stems have no stem variation:
 
 * __pusertua__: {{pusertua+V+Act+InfA+Sg+Lat}} (Eng. squeeze)
 
+!Verbs with -a stems
+
+
+(subsequent examples are *Verbs 53*)
 * __mutristaa__: {{mutristaa+V+Act+InfA+Sg+Lat}} (Eng. ?)
 
 * __kivistää__: {{kivistää+V+Act+InfA+Sg+Lat}} (Eng. hurt)
@@ -4275,6 +4596,9 @@ The y stems have no stem variation:
 
 * __sortaa__: {{sortaa+V+Act+InfA+Sg+Lat}} (Eng. crush)
 
+Some of the a stems have t:s in past stems by ti>si variation.
+
+(subsequent examples are *Verbs 54*)
 * __huutaa__: {{huutaa+V+Act+InfA+Sg+Lat}} (Eng. yell)
 
 * __pyytää__: {{pyytää+V+Act+InfA+Sg+Lat}} (Eng. aks)
@@ -4291,7 +4615,10 @@ The y stems have no stem variation:
 
 * __näpertää__: {{näpertää+V+Act+InfA+Sg+Lat}} (Eng. twiddle)
 
+In some cases t:s variation is optionally alongside the regular gradation:
 
+
+(subsequent examples are *Verbs 55*)
 * __kiitää__: {{kiitää+V+Act+InfA+Sg+Lat}} (Eng. rush)
 
 * __joutaa__: {{joutaa+V+Act+InfA+Sg+Lat}}
@@ -4300,6 +4627,9 @@ The y stems have no stem variation:
 
 * __entää__: {{entää+V+Act+InfA+Sg+Lat}}
 
+Other a stems undergo a:o variation
+
+(subsequent examples are *Verbs 56*)
 * __kasvaa__: {{kasvaa+V+Act+InfA+Sg+Lat}} (Eng. grow)
 
 * __jakaa__: {{jakaa+V+Act+InfA+Sg+Lat}} (Eng. share)
@@ -4312,10 +4642,16 @@ The y stems have no stem variation:
 
 * __kantaa__: {{kantaa+V+Act+InfA+Sg+Lat}} (Eng. carry)
 
+In some of the a:o variations the t:s variant is also possible.
+
+(subsequent examples are *Verbs 57*)
 * __kaataa__: {{kaataa+V+Act+InfA+Sg+Lat}} (Eng. pour)
 
 * __saartaa__: {{saartaa+V+Act+InfA+Sg+Lat}} (Eng. surround)
 
+!Verbs with e stems
+
+(subsequent examples are *Verbs 58*)
 * __kytkeä__: {{kytkeä+V+Act+InfA+Sg+Lat}} (Eng. switch)
 
 * __sotkea__: {{sotkea+V+Act+InfA+Sg+Lat}} (Eng. mess)
@@ -4334,11 +4670,19 @@ The y stems have no stem variation:
 
 * __särkeä__: {{särkeä+V+Act+InfA+Sg+Lat}} (Eng. break)
 
+Some of the e stems allow for optional t:s variation in past form.
+
+(subsequent examples are *Verbs 59*)
 * __tuntea__: {{tuntea+V+Act+InfA+Sg+Lat}} (Eng. feel)
 
+The rare ht:ks kind of variation is also possible.
+
+(subsequent examples are *Verbs 60*)
 * __lähteä__: {{lähteä+V+Act+InfA+Sg+Lat}} (Eng. go)
 
+!Verbs with i stems
 
+(subsequent examples are *Verbs 61*)
 * __kosia__: {{kosia+V+Act+InfA+Sg+Lat}} (Eng. propose)
 
 * __ryskiä__: {{ryskiä+V+Act+InfA+Sg+Lat}} (Eng. crash)
@@ -4369,27 +4713,45 @@ The y stems have no stem variation:
 
 * __tympiä__: {{tympiä+V+Act+InfA+Sg+Lat}} (Eng. bore)
 
-* __kontia__
+* __kontia__: {{kontia+V+Act+InfA+Sg+Lat}} (Eng. mole)
 
 * __hylkiä__: {{hylkiä+V+Act+InfA+Sg+Lat}} (Eng. reject)
 
+!Verbs with long vowel stem
+These verbs also have da variant of a infinitive forms.
+
+(subsequent examples are *Verbs 62*)
 * __kopioida__: {{kopioida+V+Act+InfA+Sg+Lat}} (Eng. copy)
 
 * __öykkäröidä__: {{öykkäröidä+V+Act+InfA+Sg+Lat}} (Eng. bully)
 
+(subsequent examples are *Verbs 63*)
 * __saada__: {{saada+V+Act+InfA+Sg+Lat}} (Eng. get)
 
 * __myydä__: {{myydä+V+Act+InfA+Sg+Lat}} (Eng. sell)
 
 * __jäädä__: {{jäädä+V+Act+InfA+Sg+Lat}} (Eng. stay)
 
+!Monosyllabic verbs with widening diphthong
+Widening diphthongs are simplified before past and conditional suffix i's
+by removal of first component. 
+
+(subsequent examples are *Verbs 64*)
 * __viedä__: {{viedä+V+Act+InfA+Sg+Lat}} (Eng. take)
 
 * __tuoda__: {{tuoda+V+Act+InfA+Sg+Lat}} (Eng. bring)
 
 * __syödä__: {{syödä+V+Act+InfA+Sg+Lat}} (Eng. eat)
 
-* __käydä__: {{käydä+V+Act+InfA+Sg+Lat}} (Eng. visit)
+In past and conditional forms of käydä, the glide before suffix is marked
+even in normative orthography.
+
+(subsequent examples are *Verbs 65*)
+* __käydä__: {{käydä+V+Act+InfA+Sg+Lat}} (Eng. visit, go for)
+
+!Verbs with consonant stems
+
+Verbs with momentane derivation are common consonant stems.
 
 * __marista__: {{marista+V+Act+InfA+Sg+Lat}} (Eng. whine)
 
@@ -4402,9 +4764,19 @@ The y stems have no stem variation:
 
 * __rangaista__: {{rangaista+V+Act+InfA+Sg+Lat}} (Eng. punish)
 
+!Verbs with n, r, l, s stems
+Notably, the a infinitive forms d assimilates to preceding consonant.
+
+(subsequent examples are *Verbs 67*)
+* __surra__: {{pierrä+V+Act+InfA+Sg+Lat}} (Eng. meh)
+
 * __pierrä__: {{pierrä+V+Act+InfA+Sg+Lat}} (Eng. fart)
 
+* __panna__: {{panna+V+Act+InfA+Sg+Lat}} (Eng. put)
+
 * __mennä__: {{mennä+V+Act+InfA+Sg+Lat}} (Eng. go)
+
+Frequentative derivations are most common source of l stemmed verbs.
 
 * __vastailla__: {{vastailla+V+Act+InfA+Sg+Lat}} (Eng. answer)
 
@@ -4440,20 +4812,36 @@ The y stems have no stem variation:
 
 * __kiherrellä__: {{kiherrellä+V+Act+InfA+Sg+Lat}} (Eng. giggle)
 
+!tse stuff
+Some verbs have possible optional heteroclitic indicative stems:
+
+(subsequent examples are *Verbs 68*)
 * __isännöidä__: {{isännöidä+V+Act+InfA+Sg+Lat}} (Eng. host)
 
 * __mellakoida__: {{mellakoida+V+Act+InfA+Sg+Lat}} (Eng. riot)
 
+In these stems the tse formed stem is only one.
+
+(subsequent examples are *Verbs 69*)
 * __palkita__: {{palkita+V+Act+InfA+Sg+Lat}} (Eng. reward)
 
 * __merkitä__: {{merkitä+V+Act+InfA+Sg+Lat}} (Eng. mark)
 
+Few words have special consonant cluster simplification for ks forms.
+
+(subsequent examples are *Verbs 70*)
 * __juosta__: {{juosta+V+Act+InfA+Sg+Lat}} (Eng. run)
 
 * __piestä__: {{piestä+V+Act+InfA+Sg+Lat}} (Eng. spank)
 
+nähdä has special h:k variation.
+
+(subsequent examples are *Verbs 71*)
 * __nähdä__: {{nähdä+V+Act+InfA+Sg+Lat}} (Eng. see)
 
+!Verbs with -ne- stems
+
+(subsequent examples are *Verbs 72*)
 * __karheta__: {{karheta+V+Act+InfA+Sg+Lat}}
 
 * __vähetä__: {{vähetä+V+Act+InfA+Sg+Lat}} (Eng. lessen)
@@ -4480,9 +4868,6 @@ The y stems have no stem variation:
 
 * __leudota__: {{leudota+V+Act+InfA+Sg+Lat}}
 
-FIXME: this is not the back form of pidetä
-* __todeta__: {{todeta+V+Act+InfA+Sg+Lat}} (Eng. note)
-
 * __pidetä__: {{pidetä+V+Act+InfA+Sg+Lat}} (Eng. lengthen)
 
 * __lämmetä__: {{lämmetä+V+Act+InfA+Sg+Lat}} (Eng. warm)
@@ -4491,8 +4876,9 @@ FIXME: this is not the back form of pidetä
 
 * __juljeta__: {{juljeta+V+Act+InfA+Sg+Lat}} (Eng. dare)
 
-iljetä
+!Vowel lengthening(?) stems
 
+(subsequent examples are *Verbs 73*)
 * __arvata__: {{arvata+V+Act+InfA+Sg+Lat}} (Eng. guess)
 
 * __ynnätä__: {{ynnätä+V+Act+InfA+Sg+Lat}} (Eng. add)
@@ -4593,6 +4979,7 @@ iljetä
 
 * __iljetä__: {{iljetä+V+Act+InfA+Sg+Lat}} (Eng. dare)
 
+(subsequent examples are *Verbs 75*)
 * __myrskytä__: {{myrskytä+V+Act+InfA+Sg+Lat}} (Eng. storm)
 
 * __lassota__: {{lassota+V+Act+InfA+Sg+Lat}} (Eng. lasso)
@@ -4613,20 +5000,33 @@ iljetä
 
 * __hellitä__: {{hellitä+V+Act+InfA+Sg+Lat}} (Eng. loose)
 
+!Vowel stems with t:s variation
+
+(subsequent examples are *Verbs 76*)
 * __taitaa__: {{taitaa+V+Act+InfA+Sg+Lat}} (Eng. can)
 
 * __tietää__: {{tietää+V+Act+InfA+Sg+Lat}} (Eng. know)
 
+!Verbs with defective paradigms
+For some verbs, the normative inflection does not allow full set of forms:
+
+(subsequent examples are *Verbs 77*)
 * __vipajaa__: {{vipajaa+V+Act+InfA+Sg+Lat}} (Eng. thump)
 
 * __heläjää__: {{heläjää+V+Act+InfA+Sg+Lat}} (Eng. chime)
 
+(subsequent examples are *Verbs 78*)
 * __raikaa__: {{raikaa+V+Act+InfA+Sg+Lat}} (Eng. baum)
 
 * __ähkää__: {{ähkää+V+Act+InfA+Sg+Lat}} (Eng. meh)
 
+!Verbs with exceptional inflection patterns
+There is a handful of verbs that does not fit to the patterns of old
+dictionaries.
+
 The verb olla has very peculiar and heteroclitic inflection with lot of
 common short forms in standard spoken Finnish:
+(subsequent examples are *Verb olla*)
 * __olla__: {{olla+V+Act+InfA+Sg+Lat}} (Eng. be)
 * __lienen__: {{olla+V+Act+Pot+Sg1}}
 * __lie__: {{olla+V+Act+Pot+ConNeg}}
@@ -5503,6 +5903,258 @@ parts are nominals and inflect regularly.
 
 
 * __talojuttu__: {{talo+N+Sg+Nom+Use/Circ#juttu+N+Sg+Nom}}
+
+!!!Verb inflection and derivation
+The verbs' conjugation includes voice (in Finnish grammars also verbal 
+genus),  tense/mood (tempus/modus), personal endings and negation marker
+The verbs also have productive derivations to defective nouns as
+infinitives, and to adjectives as participles, which are considered to be 
+part of inflection and thus included in most versions 
+([VISK § 105|http://scripta.kotus.fi/visk/sisalto.php?p?105]).
+The morphology of participles and historical 4th infinitive is further
+detailed in section Deverbal nouns'  morphology.
+The analysis strings of verb are not as systematic as nouns,
+as many categories collapse together in forms, e.g. the tense and mood
+are only distinct with indicative past and non-past, otherwise mood implies
+tense in semantic sense.
+
+!!Present vowel stems
+
+* __kutoa__: {{kutoa+V+Act+InfA+Sg+Lat}} (Eng. knit)
+* __kudon__: {{kutoa+V+Act+Ind+Prt+Sg1}}
+
+* __yltää__: {{yltää+V+Act+InfA+Sg+Lat}} (Eng. reach)
+* __yllän__: {{yltää+V+Act+Ind+Prt+Sg1}}
+
+The strong form of present indicative endings in strong stems and ma 
+infinitive, and maisilla derivation (nee infinitive).
+(subsequent examples are *Verbs strong present forms*)
+* __kutovat__: {{kutoa+V+Act+Ind+Prt+Pl3}}
+* __kutomatta__: {{kutoa+V+Act+InfMa+Sg+Abe}}
+
+* __yltävät__: {{yltää+V+Act+Ind+Prt+Pl3}}
+* __yltämättä__: {{yltää+V+Act+InfMa+Sg+Abe}}
+
+!Verb 3rd singular forms
+The third singular form of present tense has few allomorphs according to
+preceding vowel context, either lengthening or zero after long vowel stem:
+
+* __rakentaa__: {{rakentaa+V+Act+Prt+Sg3}} (Eng. builds)
+
+* __tulee__: {{tulla+V+Act+Prt+Sg3}} (Eng. comes)
+
+* __menee__: {{mennä+V+Act+Prt+Sg3}} (Eng. goes)
+
+* __munii__: {{munia+V+Act+Prt+Sg3}} (Eng. lays eggs)
+
+* __rämpii__: {{rämpiä+V+Act+Prt+Sg3}} (Eng. hikes)
+
+* __kutoo__: {{kutoa+V+Act+Prt+Sg3}}
+
+* __viruu__: {{virua+V+Act+Prt+Sg3}} (Eng. stretches)
+
+* __kääntyy__: {{kääntyä+V+Act+Prt+Sg3}} (Eng. turns)
+
+* __säilöö__: {{säilöä+V+Act+Prt+Sg3}} (Eng. conserves)
+
+* __vääntää__: {{vääntää+V+Act+Prt+Sg3}} (Eng. twist)
+
+!Past forms
+
+(subsequent examples are *Verb past forms*)
+* __kudoin__: {{kutoa+V+Act+Ind+Pst+Sg1}}
+
+* __ylsin__: {{yltää+V+Act+Ind+Pst+Sg1}}
+
+* __kutoivat__: {{kutoa+V+Act+Ind+Pst+Pl3}}
+
+* __ylsivät__: {{yltää+V+Act+Ind+Pst+Pl3}}
+
+!Imperatives
+
+(subsequent examples are *Verb imperatives*)
+* __kutokaa__: {{kutoa+V+Act+Imprt+Pl2}}
+
+* __yltäkää__: {{yltää+V+Act+Imprt+Pl2}}
+
+!Conditionals
+
+(subsequent examples are *Verb conditionals*)
+* __kutoisin__: {{kutoa+V+Act+Cond+Sg1}}
+
+* __yltäisin__: {{yltää+V+Act+Cond+Sg1}}
+
+!Potentials
+
+(subsequent examples are *Verb potentials*)
+* __kutonen__: {{kutoa+V+Act+Pot+Sg1}}
+
+* __yltänen__: {{yltää+V+Act+Pot+Sg1}}
+
+* __juossen__: {{juosta+V+Act+Pot+Sg1}} (Eng. I might run)
+
+* __päässen__: {{päästä+V+Act+Pot+Sg1}} (Eng. I might be able to)
+
+* __tullen__: {{tulla+V+Act+Pot+Sg1}}
+
+* __kävellen__: {{kävellä+V+Act+Pot+Sg1}} (Eng. I might walk)
+
+* __surren__: {{surra+V+Act+Pot+Sg1}} (Eng. I might be sad)
+
+* __pierren__: {{pierrä+V+Act+Pot+Sg1}} (Eng. I might fart)
+
+!!Passive forms
+The passive forms usually contain -ta-, -tä-, -da-, -dä-, element in them.
+The variation between the realisations is one key factor of determining the
+classification of the verb roots.
+
+(subsequent examples are *Verb passives*)
+* __kudottiin__: {{kutoa+V+Pss+Ind+Pst+Pe4}}
+* __juostiin__: {{juosta+V+Pss+Ind+Pst+Pe4}}
+
+* __nähtiin__: {{nähdä+V+Pss+Ind+Pst+Pe4}}
+
+
+The form of present passive assimilates leftwards, varying between
+-ta, -tä, -da, -dä, -la, -lä, -ra, -rä, -na, -nä.
+
+* __juostaan__: {{juosta+V+Pss+Ind+Prt+Pe4}}
+
+* __ylletään__: {{yltää+V+Pss+Ind+Prt+Pe4}}
+
+* __kopioidaan__: {{kopioida+V+Pss+Ind+Prt+Pe4}} (Eng. copy-passive)
+
+* __nähdään__: {{nähdä+V+Pss+Ind+Prt+Pe4}}
+
+* __vuollaan__: {{vuolla+V+Pss+Ind+Prt+Pe4}} (Eng. carve wood-passive)
+
+* __niellään__: {{niellä+V+Pss+Ind+Prt+Pe4}} (Eng. swallow-passive)
+
+* __pierrään__: {{pierrä+V+Pss+Ind+Prt+Pe4}} (Eng. fart-passive)
+
+* __pannaan__: {{panna+V+Pss+Ind+Prt+Pe4}} (Eng. put-passive)
+
+* __mennään__: {{mennä+V+Pss+Ind+Prt+Pe4}}
+
+
+!!Infinite verb forms
+
+(subsequent examples are *Verb a infinitives*)
+* __juoda__: {{juoda+V+Act+InfA+Sg+Lat}} (Eng. drink)
+
+* __nähdä__: {{nähdä+V+Act+InfA+Sg+Lat}}
+
+(subsequent examples are *Verb E infinitives*)
+* __kutoessa__: {{kutoa+V+Act+InfE+Sg+Ine}}
+
+* __yltäessä__: {{yltää+V+Act+InfE+Sg+Ine}}
+
+!Participles
+
+(subsequent examples are *Verb nut participle passives*)
+* __valkaistu__: {{valkaista+V+Pss+PrfPrc+Sg+Nom}} (Eng. bleached)
+
+* __häpäisty__: {{häpäistä+V+Pss+PrfPrc+Sg+Nom}} (Eng. sacrileged)
+
+* __huudettu__: {{huutaa+V+Pss+PrfPrc+Sg+Nom}} (Eng. yelled)
+
+* __ylennetty__: {{ylentää+V+Pss+PrfPrc+Sg+Nom}} (Eng. promoted)
+
+* __viipaloitu__: {{viipaloida+V+Pss+PrfPrc+Sg+Nom}} (Eng. sliced)
+
+* __yksilöity__: {{yksilöidä+V+Pss+PrfPrc+Sg+Nom}} (Eng. singled out)
+
+* __paranneltu__: {{parannella+V+Pss+PrfPrc+Sg+Nom}} (Eng. embettered)
+
+* __vähätelty__: {{vähätellä+V+Pss+PrfPrc+Sg+Nom}} (Eng. belittled)
+
+* __pantu__: {{panna+V+Pss+PrfPrc+Sg+Nom}} (Eng. put)
+
+* __menty__: {{mennä+V+Pss+PrfPrc+Sg+Nom}} (Eng. went)
+
+* __purtu__: {{purra+V+Pss+PrfPrc+Sg+Nom}} (Eng. bitten)
+
+* __pierty__: {{pierrä+V+Pss+PrfPrc+Sg+Nom}}
+
+!Possessives for infinite verb forms
+(subsequent examples are *Verb possessives*)
+* __kutoakseni__: {{kutoa+V+Act+InfA+Sg+Tra+PxSg1}}
+* __kutoessasi__: {{kutoa+V+Act+InfE+Sg+Ine+PxSg2}}
+
+* __nähdäkseni__: {{nähdä+V+Act+InfA+Sg+Tra+PxSg1}}
+* __nähdessäsi__: {{nähdä+V+Act+InfE+Sg+Ine+PxSg2}}
+
+* __kutomattaan__: {{kutoa+V+Act+InfMa+Sg+Abe+PxSg3}}
+
+* __kutoakseen__: {{kutoa+V+Act+InfA+Sg+Tra+PxPl3}}
+
+* __nähdäkseen__: {{nähdä+V+Act+InfA+Sg+Tra+PxPl3}}
+
+* __näkemättään__: {{nähdä+V+Act+InfMa+Sg+Abe+PxSg3}}
+
+!Verb clitics
+
+(subsequent examples are *Verbs clitics*)
+* __kudonhan__: {{kutoa+V+Act+Ind+Prt+Sg1+Foc/han}}
+* __kudotko__: {{kutoa+V+Act+Ind+Prt+Sg2+Qst}}
+
+* __näenhän__: {{nähdä+V+Act+Ind+Prt+Sg1+Foc/han}}
+* __näetkö__: {{nähdä+V+Act+Ind+Prt+Sg2+Qst}}
+
+
+
+
+
+
+
+
+
+
+
+!!Deverbal derivations
+Part of the deverbal derivation system in Finnish is so regular that it has
+been included as part of inflectional morphology in many traditional systems.
+These derivations are treated as inflection in our system as well.
+
+!-minen, "Fourth infinitive"
+
+(subsequent examples are *Verbs minen derivations*)
+* __aakkostaminen__: {{aakkostaa+V+Der/minen+Sg+Nom}}
+
+* __näkeminen__: {{nähdä+V+Der/minen+Sg+Nom}}
+
+!Participles
+
+(subsequent examples are *Verbs participles*)
+* __kutomani__: {{kutoa+V+AgPrc+Sg+Nom+PxSg1}}
+* __kutomaton__: {{kutoa+V+AgPrc+Der/ton+Sg+Nom}}
+* __kutova__: {{kutoa+V+PrsPrc+Sg+Nom}}
+
+* __näkemäni__: {{nähdä+V+AgPrc+Sg+Nom+PxSg1}}
+* __näkemätön__: {{nähdä+V+AgPrc+Der/ton+Sg+Nom}}
+* __näkevä__: {{nähdä+V+PrsPrc+Sg+Nom}}
+
+!Other derivations
+Not used in inflectional morphology, yet.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Numeral inflection is like nominal, except that numerals compound in all
 forms which requires great amount of care in the inflection patterns.
