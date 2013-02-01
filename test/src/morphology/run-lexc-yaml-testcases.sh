@@ -9,6 +9,8 @@ transducer=gt-norm
 
 # source ./run-yaml-testcases.sh $transducer
 
+lexcfail=0
+
 for file in ${srcdir}/../../../src/morphology/*.lexc \
 			${srcdir}/../../../src/morphology/*/*.lexc; do
 	fsts=$(grep '^\!\!€[^ :]' $file | cut -d'€' -f2 | cut -d':' -f1 | sort -u)
@@ -19,13 +21,18 @@ for file in ${srcdir}/../../../src/morphology/*.lexc \
 		echo "doesn't contain any tests - SKIPPED"
 		echo
 	elif [ "$fsts" == "" -a ! "$tests" == "" ]; then
-		echo "$file has tests, but no fst specified - defaulting to gt-norm."
+#		echo "$file has tests, but no fst specified - defaulting to gt-norm."
 		echo "$file has tests, but no fst specified - SKIPPED"
 #		source ./run-yaml-testcases.sh $transducer $file
 	else
 		for fst in $fsts; do
-			echo "$file - $fst"
 			source ./run-yaml-testcases.sh $fst $file
+			let "lexcfail += $Fail"
 		done
 	fi
 done
+
+# At least one of the Xerox or HFST tests failed:
+if [ "$lexcfail" -ge "1" ]; then
+    exit 1
+fi
