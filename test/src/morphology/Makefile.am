@@ -36,8 +36,8 @@ endif # CAN_DOCC
 if CAN_YAML_TEST
 # Add your shell scripts for running python-based tests here:
 TESTS+=run-gt-norm-yaml-testcases.sh \
-	   run-gt-desc-yaml-testcases.sh
-#	   run-lexc-yaml-testcases.sh
+	   run-gt-desc-yaml-testcases.sh \
+	   run-lexc-yaml-testcases.sh
 endif # CAN_YAML_TEST
 
 # List tests that are presently (expected) failures here, ie things that should
