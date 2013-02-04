@@ -1,4 +1,4 @@
-!! !!Acronym inflection
+!! !!!Acronym inflection
 !! Acronyms are inflected using a colon, followed by the inflectional endings,
 !! which depend on either last letter of the word or inflection class of the
 !! last word of the abbreviation. The exception to the inflection scheme is the
@@ -10,77 +10,77 @@
 !! c.f. [VISK § 169|http://scripta.kotus.fi/visk/sisallys.php?p=169]
 
 
-!! !Acronyms ending in numbers inflect like the numbers are pronounced.
-LEXICON ACRO_YKSI
-!! The acronyms ending in digit 1 pronounced as number:
+!! !!Acronyms ending in numbers inflect like the numbers are pronounced.
+!LEXICON ACRO_YKSI
+! The acronyms ending in digit 1 pronounced as number:
 !!€gt-norm: Number-final acronyms
-!!€ A1 A1+N+Sg+Nom A1 paper
-!!€ A1:een A1+N+Sg+Ill
-0  ACRO_COMPOUND   ;
-+Sg+Nom:0    #   ;
-+Sg+Nom:%:  ACRO_FRONT_POSS    ;
-+Sg+Nom:%:  ACRO_FRONT_CLIT   ;
-+Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
-+Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
-+Sg+Par:%:tä    ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+Ill:%:een   ACRO_FRONT_POSS_CLIT_OPT ;
-+Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+Abl:%:ltä   ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+Ade:%:llä   ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+All:%:lle   ACRO_FRONT_POSS_EN_OPT  ;
-+Sg+Ela:%:stä   ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+Ess:%:nä    ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+Ine:%:ssä   ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+Tra:%:ksi   ACRO_FRONT_CLIT_OPT ;
-+Sg+Tra:%:kse   ACRO_FRONT_POSS_EN_OBL    ;
-+Pl+Par:%:iä    ACRO_FRONT_POSS_ÄN_OPT  ;
-+Pl+Ill:%:iin   ACRO_FRONT_POSS_CLIT_OPT ;
-+Pl+Abe:%:ittä  ACRO_FRONT_POSS_ÄN_OPT  ;
-+Pl+Abl:%:iltä  ACRO_FRONT_POSS_ÄN_OPT  ;
-+Pl+Ade:%:illä  ACRO_FRONT_POSS_ÄN_OPT  ;
-+Pl+All:%:ille  ACRO_FRONT_POSS_EN_OPT  ;
-+Pl+Ess:%:inä   ACRO_FRONT_POSS_ÄN_OPT  ;
-+Cmt:%:ine  ACRO_FRONT_POSS_EN_OPT  ;
-+Pl+Ela:%:istä  ACRO_FRONT_POSS_ÄN_OPT  ;
-+Pl+Ine:%:issä  ACRO_FRONT_POSS_ÄN_OPT  ;
-+Pl+Ins:%:in    ACRO_FRONT_CLIT_OPT ;
-+Pl+Tra:%:iksi  ACRO_FRONT_CLIT_OPT ;
-+Pl+Tra:%:ikse  ACRO_FRONT_POSS_EN_OBL    ;
+!€ A1 A1+N+Sg+Nom A1 paper
+!€ A1:een A1+N+Sg+Ill
+!0  ACRO_COMPOUND   ;
+!+Sg+Nom:0    #   ;
+!+Sg+Nom:%:  ACRO_FRONT_POSS    ;
+!+Sg+Nom:%:  ACRO_FRONT_CLIT   ;
+!+Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
+!+Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
+!+Sg+Par:%:tä    ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+Ill:%:een   ACRO_FRONT_POSS_CLIT_OPT ;
+!+Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+Abl:%:ltä   ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+Ade:%:llä   ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+All:%:lle   ACRO_FRONT_POSS_EN_OPT  ;
+!+Sg+Ela:%:stä   ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+Ess:%:nä    ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+Ine:%:ssä   ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+Tra:%:ksi   ACRO_FRONT_CLIT_OPT ;
+!+Sg+Tra:%:kse   ACRO_FRONT_POSS_EN_OBL    ;
+!+Pl+Par:%:iä    ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Pl+Ill:%:iin   ACRO_FRONT_POSS_CLIT_OPT ;
+!+Pl+Abe:%:ittä  ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Pl+Abl:%:iltä  ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Pl+Ade:%:illä  ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Pl+All:%:ille  ACRO_FRONT_POSS_EN_OPT  ;
+!+Pl+Ess:%:inä   ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Cmt:%:ine  ACRO_FRONT_POSS_EN_OPT  ;
+!+Pl+Ela:%:istä  ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Pl+Ine:%:issä  ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Pl+Ins:%:in    ACRO_FRONT_CLIT_OPT ;
+!+Pl+Tra:%:iksi  ACRO_FRONT_CLIT_OPT ;
+!+Pl+Tra:%:ikse  ACRO_FRONT_POSS_EN_OBL    ;
 
-LEXICON ACRO_KAKSI
-!! The acronyms ending in digit 2 pronounced as number
-!!€ A2 A2+N+Sg+Nom A2 paper
-!!€ A2:een A2+N+Sg+Ill
-0  ACRO_COMPOUND   ;
-+Sg+Nom:0    #   ;
-+Sg+Nom:%:  ACRO_BACK_POSS    ;
-+Sg+Nom:%:  ACRO_BACK_CLIT   ;
-+Pl+Nom:%:t ACRO_BACK_CLIT_OPT ;
-+Sg+Nom:%:n ACRO_BACK_CLIT_OPT ;
-+Sg+Par:%:ta    ACRO_BACK_POSS_AN_OPT  ;
-+Sg+Ill:%:een   ACRO_BACK_POSS_CLIT_OPT ;
-+Sg+Abe:%:tta   ACRO_BACK_POSS_AN_OPT  ;
-+Sg+Abl:%:lta   ACRO_BACK_POSS_AN_OPT  ;
-+Sg+Ade:%:lla   ACRO_BACK_POSS_AN_OPT  ;
-+Sg+All:%:lle   ACRO_BACK_POSS_EN_OPT  ;
-+Sg+Ela:%:sta   ACRO_BACK_POSS_AN_OPT  ;
-+Sg+Ess:%:na    ACRO_BACK_POSS_AN_OPT  ;
-+Sg+Ine:%:ssa   ACRO_BACK_POSS_AN_OPT  ;
-+Sg+Tra:%:ksi   ACRO_BACK_CLIT_OPT ;
-+Sg+Tra:%:kse   ACRO_BACK_POSS_EN_OBL    ;
-+Pl+Par:%:ia    ACRO_BACK_POSS_AN_OPT  ;
-+Pl+Ill:%:iin   ACRO_BACK_POSS_CLIT_OPT ;
-+Pl+Abe:%:itta  ACRO_BACK_POSS_AN_OPT  ;
-+Pl+Abl:%:ilta  ACRO_BACK_POSS_AN_OPT  ;
-+Pl+Ade:%:illa  ACRO_BACK_POSS_AN_OPT  ;
-+Pl+All:%:ille  ACRO_BACK_POSS_EN_OPT  ;
-+Pl+Ess:%:ina   ACRO_BACK_POSS_AN_OPT  ;
-+Cmt:%:ine  ACRO_BACK_POSS_EN_OPT  ;
-+Pl+Ela:%:ista  ACRO_BACK_POSS_AN_OPT  ;
-+Pl+Ine:%:issa  ACRO_BACK_POSS_AN_OPT  ;
-+Pl+Ins:%:in    ACRO_BACK_CLIT_OPT ;
-+Pl+Tra:%:iksi  ACRO_BACK_CLIT_OPT ;
-+Pl+Tra:%:ikse  ACRO_BACK_POSS_EN_OBL    ;
+!LEXICON ACRO_KAKSI
+! The acronyms ending in digit 2 pronounced as number
+!€ A2 A2+N+Sg+Nom A2 paper
+!€ A2:een A2+N+Sg+Ill
+!0  ACRO_COMPOUND   ;
+!+Sg+Nom:0    #   ;
+!+Sg+Nom:%:  ACRO_BACK_POSS    ;
+!+Sg+Nom:%:  ACRO_BACK_CLIT   ;
+!+Pl+Nom:%:t ACRO_BACK_CLIT_OPT ;
+!+Sg+Nom:%:n ACRO_BACK_CLIT_OPT ;
+!+Sg+Par:%:ta    ACRO_BACK_POSS_AN_OPT  ;
+!+Sg+Ill:%:een   ACRO_BACK_POSS_CLIT_OPT ;
+!+Sg+Abe:%:tta   ACRO_BACK_POSS_AN_OPT  ;
+!+Sg+Abl:%:lta   ACRO_BACK_POSS_AN_OPT  ;
+!+Sg+Ade:%:lla   ACRO_BACK_POSS_AN_OPT  ;
+!+Sg+All:%:lle   ACRO_BACK_POSS_EN_OPT  ;
+!+Sg+Ela:%:sta   ACRO_BACK_POSS_AN_OPT  ;
+!+Sg+Ess:%:na    ACRO_BACK_POSS_AN_OPT  ;
+!+Sg+Ine:%:ssa   ACRO_BACK_POSS_AN_OPT  ;
+!+Sg+Tra:%:ksi   ACRO_BACK_CLIT_OPT ;
+!+Sg+Tra:%:kse   ACRO_BACK_POSS_EN_OBL    ;
+!+Pl+Par:%:ia    ACRO_BACK_POSS_AN_OPT  ;
+!+Pl+Ill:%:iin   ACRO_BACK_POSS_CLIT_OPT ;
+!+Pl+Abe:%:itta  ACRO_BACK_POSS_AN_OPT  ;
+!+Pl+Abl:%:ilta  ACRO_BACK_POSS_AN_OPT  ;
+!+Pl+Ade:%:illa  ACRO_BACK_POSS_AN_OPT  ;
+!+Pl+All:%:ille  ACRO_BACK_POSS_EN_OPT  ;
+!+Pl+Ess:%:ina   ACRO_BACK_POSS_AN_OPT  ;
+!+Cmt:%:ine  ACRO_BACK_POSS_EN_OPT  ;
+!+Pl+Ela:%:ista  ACRO_BACK_POSS_AN_OPT  ;
+!+Pl+Ine:%:issa  ACRO_BACK_POSS_AN_OPT  ;
+!+Pl+Ins:%:in    ACRO_BACK_CLIT_OPT ;
+!+Pl+Tra:%:iksi  ACRO_BACK_CLIT_OPT ;
+!+Pl+Tra:%:ikse  ACRO_BACK_POSS_EN_OBL    ;
 
 LEXICON ACRO_KOLME
 !! The acronyms ending in digit 3 pronounced as number
@@ -117,40 +117,40 @@ LEXICON ACRO_KOLME
 +Pl+Tra:%:iksi  ACRO_BACK_CLIT_OPT ;
 +Pl+Tra:%:ikse  ACRO_BACK_POSS_EN_OBL    ;
 
-LEXICON ACRO_NELJÄ
-!! The acronyms ending in digit 4 pronounced as number
-!!€ A4 A4+N+Sg+Nom A4 paper
-!!€ A4:ään A4+N+Sg+Ill
-0  ACRO_COMPOUND   ;
-+Sg+Nom:0    #   ;
-+Sg+Nom:%:  ACRO_FRONT_POSS    ;
-+Sg+Nom:%:  ACRO_FRONT_CLIT   ;
-+Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
-+Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
-+Sg+Par:%:ää    ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+Ill:%:ään   ACRO_FRONT_POSS_CLIT_OPT ;
-+Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+Abl:%:ltä   ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+Ade:%:llä   ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+All:%:lle   ACRO_FRONT_POSS_EN_OPT  ;
-+Sg+Ela:%:stä   ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+Ess:%:nä    ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+Ine:%:ssä   ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+Tra:%:ksi   ACRO_FRONT_CLIT_OPT ;
-+Sg+Tra:%:kse   ACRO_FRONT_POSS_EN_OBL    ;
-+Pl+Par:%:iä    ACRO_FRONT_POSS_ÄN_OPT  ;
-+Pl+Ill:%:iin   ACRO_FRONT_POSS_CLIT_OPT ;
-+Pl+Abe:%:ittä  ACRO_FRONT_POSS_ÄN_OPT  ;
-+Pl+Abl:%:iltä  ACRO_FRONT_POSS_ÄN_OPT  ;
-+Pl+Ade:%:illä  ACRO_FRONT_POSS_ÄN_OPT  ;
-+Pl+All:%:ille  ACRO_FRONT_POSS_EN_OPT  ;
-+Pl+Ess:%:inä   ACRO_FRONT_POSS_ÄN_OPT  ;
-+Cmt:%:ine  ACRO_FRONT_POSS_EN_OPT  ;
-+Pl+Ela:%:istä  ACRO_FRONT_POSS_ÄN_OPT  ;
-+Pl+Ine:%:issä  ACRO_FRONT_POSS_ÄN_OPT  ;
-+Pl+Ins:%:in    ACRO_FRONT_CLIT_OPT ;
-+Pl+Tra:%:iksi  ACRO_FRONT_CLIT_OPT ;
-+Pl+Tra:%:ikse  ACRO_FRONT_POSS_EN_OBL    ;
+!LEXICON ACRO_NELJÄ
+! The acronyms ending in digit 4 pronounced as number
+!€ A4 A4+N+Sg+Nom A4 paper
+!€ A4:ään A4+N+Sg+Ill
+!0  ACRO_COMPOUND   ;
+!+Sg+Nom:0    #   ;
+!+Sg+Nom:%:  ACRO_FRONT_POSS    ;
+!+Sg+Nom:%:  ACRO_FRONT_CLIT   ;
+!+Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
+!+Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
+!+Sg+Par:%:ää    ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+Ill:%:ään   ACRO_FRONT_POSS_CLIT_OPT ;
+!+Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+Abl:%:ltä   ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+Ade:%:llä   ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+All:%:lle   ACRO_FRONT_POSS_EN_OPT  ;
+!+Sg+Ela:%:stä   ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+Ess:%:nä    ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+Ine:%:ssä   ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+Tra:%:ksi   ACRO_FRONT_CLIT_OPT ;
+!+Sg+Tra:%:kse   ACRO_FRONT_POSS_EN_OBL    ;
+!+Pl+Par:%:iä    ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Pl+Ill:%:iin   ACRO_FRONT_POSS_CLIT_OPT ;
+!+Pl+Abe:%:ittä  ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Pl+Abl:%:iltä  ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Pl+Ade:%:illä  ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Pl+All:%:ille  ACRO_FRONT_POSS_EN_OPT  ;
+!+Pl+Ess:%:inä   ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Cmt:%:ine  ACRO_FRONT_POSS_EN_OPT  ;
+!+Pl+Ela:%:istä  ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Pl+Ine:%:issä  ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Pl+Ins:%:in    ACRO_FRONT_CLIT_OPT ;
+!+Pl+Tra:%:iksi  ACRO_FRONT_CLIT_OPT ;
+!+Pl+Tra:%:ikse  ACRO_FRONT_POSS_EN_OBL    ;
 
 LEXICON ACRO_VIISI
 !! The acronyms ending in digit 5 pronounced as number
@@ -187,137 +187,137 @@ LEXICON ACRO_VIISI
 +Pl+Tra:%:iksi  ACRO_FRONT_CLIT_OPT ;
 +Pl+Tra:%:ikse  ACRO_FRONT_POSS_EN_OBL    ;
 
-LEXICON ACRO_KUUSI
-!! The acronyms ending in digit 6 pronounced as number
-0  ACRO_COMPOUND   ;
-+Sg+Nom:0    #   ;
-+Sg+Nom:%:  ACRO_BACK_POSS    ;
-+Sg+Nom:%:  ACRO_BACK_CLIT   ;
-+Pl+Nom:%:t ACRO_BACK_CLIT_OPT ;
-+Sg+Nom:%:n ACRO_BACK_CLIT_OPT ;
-+Sg+Par:%:ta    ACRO_BACK_POSS_AN_OPT  ;
-+Sg+Ill:%:een   ACRO_BACK_POSS_CLIT_OPT ;
-+Sg+Abe:%:tta   ACRO_BACK_POSS_AN_OPT  ;
-+Sg+Abl:%:lta   ACRO_BACK_POSS_AN_OPT  ;
-+Sg+Ade:%:lla   ACRO_BACK_POSS_AN_OPT  ;
-+Sg+All:%:lle   ACRO_BACK_POSS_EN_OPT  ;
-+Sg+Ela:%:sta   ACRO_BACK_POSS_AN_OPT  ;
-+Sg+Ess:%:na    ACRO_BACK_POSS_AN_OPT  ;
-+Sg+Ine:%:ssa   ACRO_BACK_POSS_AN_OPT  ;
-+Sg+Tra:%:ksi   ACRO_BACK_CLIT_OPT ;
-+Sg+Tra:%:kse   ACRO_BACK_POSS_EN_OBL    ;
-+Pl+Par:%:ia    ACRO_BACK_POSS_AN_OPT  ;
-+Pl+Ill:%:iin   ACRO_BACK_POSS_CLIT_OPT ;
-+Pl+Abe:%:itta  ACRO_BACK_POSS_AN_OPT  ;
-+Pl+Abl:%:ilta  ACRO_BACK_POSS_AN_OPT  ;
-+Pl+Ade:%:illa  ACRO_BACK_POSS_AN_OPT  ;
-+Pl+All:%:ille  ACRO_BACK_POSS_EN_OPT  ;
-+Pl+Ess:%:ina   ACRO_BACK_POSS_AN_OPT  ;
-+Cmt:%:ine  ACRO_BACK_POSS_EN_OPT  ;
-+Pl+Ela:%:ista  ACRO_BACK_POSS_AN_OPT  ;
-+Pl+Ine:%:issa  ACRO_BACK_POSS_AN_OPT  ;
-+Pl+Ins:%:in    ACRO_BACK_CLIT_OPT ;
-+Pl+Tra:%:iksi  ACRO_BACK_CLIT_OPT ;
-+Pl+Tra:%:ikse  ACRO_BACK_POSS_EN_OBL    ;
+!LEXICON ACRO_KUUSI
+! The acronyms ending in digit 6 pronounced as number
+!0  ACRO_COMPOUND   ;
+!+Sg+Nom:0    #   ;
+!+Sg+Nom:%:  ACRO_BACK_POSS    ;
+!+Sg+Nom:%:  ACRO_BACK_CLIT   ;
+!+Pl+Nom:%:t ACRO_BACK_CLIT_OPT ;
+!+Sg+Nom:%:n ACRO_BACK_CLIT_OPT ;
+!+Sg+Par:%:ta    ACRO_BACK_POSS_AN_OPT  ;
+!+Sg+Ill:%:een   ACRO_BACK_POSS_CLIT_OPT ;
+!+Sg+Abe:%:tta   ACRO_BACK_POSS_AN_OPT  ;
+!+Sg+Abl:%:lta   ACRO_BACK_POSS_AN_OPT  ;
+!+Sg+Ade:%:lla   ACRO_BACK_POSS_AN_OPT  ;
+!+Sg+All:%:lle   ACRO_BACK_POSS_EN_OPT  ;
+!+Sg+Ela:%:sta   ACRO_BACK_POSS_AN_OPT  ;
+!+Sg+Ess:%:na    ACRO_BACK_POSS_AN_OPT  ;
+!+Sg+Ine:%:ssa   ACRO_BACK_POSS_AN_OPT  ;
+!+Sg+Tra:%:ksi   ACRO_BACK_CLIT_OPT ;
+!+Sg+Tra:%:kse   ACRO_BACK_POSS_EN_OBL    ;
+!+Pl+Par:%:ia    ACRO_BACK_POSS_AN_OPT  ;
+!+Pl+Ill:%:iin   ACRO_BACK_POSS_CLIT_OPT ;
+!+Pl+Abe:%:itta  ACRO_BACK_POSS_AN_OPT  ;
+!+Pl+Abl:%:ilta  ACRO_BACK_POSS_AN_OPT  ;
+!+Pl+Ade:%:illa  ACRO_BACK_POSS_AN_OPT  ;
+!+Pl+All:%:ille  ACRO_BACK_POSS_EN_OPT  ;
+!+Pl+Ess:%:ina   ACRO_BACK_POSS_AN_OPT  ;
+!+Cmt:%:ine  ACRO_BACK_POSS_EN_OPT  ;
+!+Pl+Ela:%:ista  ACRO_BACK_POSS_AN_OPT  ;
+!+Pl+Ine:%:issa  ACRO_BACK_POSS_AN_OPT  ;
+!+Pl+Ins:%:in    ACRO_BACK_CLIT_OPT ;
+!+Pl+Tra:%:iksi  ACRO_BACK_CLIT_OPT ;
+!+Pl+Tra:%:ikse  ACRO_BACK_POSS_EN_OBL    ;
 
-LEXICON ACRO_SEITSEMÄN
-!! The acronyms ending in digit 7 pronounced as number
-0  ACRO_COMPOUND   ;
-+Sg+Nom:0    #   ;
-+Sg+Nom:%:  ACRO_FRONT_POSS    ;
-+Sg+Nom:%:  ACRO_FRONT_CLIT   ;
-+Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
-+Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
-+Sg+Par:%:ää    ACRO_FRONT_POSS_CLIT_OPT  ;
-+Sg+Ill:%:ään   ACRO_FRONT_POSS_CLIT_OPT ;
-+Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+Abl:%:ltä   ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+Ade:%:llä   ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+All:%:lle   ACRO_FRONT_POSS_EN_OPT  ;
-+Sg+Ela:%:stä   ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+Ess:%:nä    ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+Ine:%:ssä   ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+Tra:%:ksi   ACRO_FRONT_CLIT_OPT ;
-+Sg+Tra:%:kse   ACRO_FRONT_POSS_EN_OBL    ;
-+Pl+Par:%:iä    ACRO_FRONT_POSS_ÄN_OPT  ;
-+Pl+Ill:%:iin   ACRO_FRONT_POSS_CLIT_OPT ;
-+Pl+Abe:%:ittä  ACRO_FRONT_POSS_ÄN_OPT  ;
-+Pl+Abl:%:iltä  ACRO_FRONT_POSS_ÄN_OPT  ;
-+Pl+Ade:%:illä  ACRO_FRONT_POSS_ÄN_OPT  ;
-+Pl+All:%:ille  ACRO_FRONT_POSS_EN_OPT  ;
-+Pl+Ess:%:inä   ACRO_FRONT_POSS_ÄN_OPT  ;
-+Cmt:%:ine  ACRO_FRONT_POSS_EN_OPT  ;
-+Pl+Ela:%:istä  ACRO_FRONT_POSS_ÄN_OPT  ;
-+Pl+Ine:%:issä  ACRO_FRONT_POSS_ÄN_OPT  ;
-+Pl+Ins:%:in    ACRO_FRONT_CLIT_OPT ;
-+Pl+Tra:%:iksi  ACRO_FRONT_CLIT_OPT ;
-+Pl+Tra:%:ikse  ACRO_FRONT_POSS_EN_OBL    ;
+!LEXICON ACRO_SEITSEMÄN
+! The acronyms ending in digit 7 pronounced as number
+!0  ACRO_COMPOUND   ;
+!+Sg+Nom:0    #   ;
+!+Sg+Nom:%:  ACRO_FRONT_POSS    ;
+!+Sg+Nom:%:  ACRO_FRONT_CLIT   ;
+!+Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
+!+Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
+!+Sg+Par:%:ää    ACRO_FRONT_POSS_CLIT_OPT  ;
+!+Sg+Ill:%:ään   ACRO_FRONT_POSS_CLIT_OPT ;
+!+Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+Abl:%:ltä   ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+Ade:%:llä   ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+All:%:lle   ACRO_FRONT_POSS_EN_OPT  ;
+!+Sg+Ela:%:stä   ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+Ess:%:nä    ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+Ine:%:ssä   ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+Tra:%:ksi   ACRO_FRONT_CLIT_OPT ;
+!+Sg+Tra:%:kse   ACRO_FRONT_POSS_EN_OBL    ;
+!+Pl+Par:%:iä    ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Pl+Ill:%:iin   ACRO_FRONT_POSS_CLIT_OPT ;
+!+Pl+Abe:%:ittä  ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Pl+Abl:%:iltä  ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Pl+Ade:%:illä  ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Pl+All:%:ille  ACRO_FRONT_POSS_EN_OPT  ;
+!+Pl+Ess:%:inä   ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Cmt:%:ine  ACRO_FRONT_POSS_EN_OPT  ;
+!+Pl+Ela:%:istä  ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Pl+Ine:%:issä  ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Pl+Ins:%:in    ACRO_FRONT_CLIT_OPT ;
+!+Pl+Tra:%:iksi  ACRO_FRONT_CLIT_OPT ;
+!+Pl+Tra:%:ikse  ACRO_FRONT_POSS_EN_OBL    ;
 
-LEXICON ACRO_KAHDEKSAN
-!! The acronyms ending in digit 8 pronounced as number
-0  ACRO_COMPOUND   ;
-+Sg+Nom:0    #   ;
-+Sg+Nom:%:  ACRO_BACK_POSS    ;
-+Sg+Nom:%:  ACRO_BACK_CLIT   ;
-+Pl+Nom:%:t ACRO_BACK_CLIT_OPT ;
-+Sg+Nom:%:n ACRO_BACK_CLIT_OPT ;
-+Sg+Par:%:aa    ACRO_BACK_POSS_CLIT_OPT  ;
-+Sg+Ill:%:aan   ACRO_BACK_POSS_CLIT_OPT ;
-+Sg+Abe:%:tta   ACRO_BACK_POSS_AN_OPT  ;
-+Sg+Abl:%:lta   ACRO_BACK_POSS_AN_OPT  ;
-+Sg+Ade:%:lla   ACRO_BACK_POSS_AN_OPT  ;
-+Sg+All:%:lle   ACRO_BACK_POSS_EN_OPT  ;
-+Sg+Ela:%:sta   ACRO_BACK_POSS_AN_OPT  ;
-+Sg+Ess:%:na    ACRO_BACK_POSS_AN_OPT  ;
-+Sg+Ine:%:ssa   ACRO_BACK_POSS_AN_OPT  ;
-+Sg+Tra:%:ksi   ACRO_BACK_CLIT_OPT ;
-+Sg+Tra:%:kse   ACRO_BACK_POSS_EN_OBL    ;
-+Pl+Par:%:ia    ACRO_BACK_POSS_AN_OPT  ;
-+Pl+Ill:%:iin   ACRO_BACK_POSS_CLIT_OPT ;
-+Pl+Abe:%:itta  ACRO_BACK_POSS_AN_OPT  ;
-+Pl+Abl:%:ilta  ACRO_BACK_POSS_AN_OPT  ;
-+Pl+Ade:%:illa  ACRO_BACK_POSS_AN_OPT  ;
-+Pl+All:%:illa  ACRO_BACK_POSS_AN_OPT  ;
-+Pl+Ess:%:ina   ACRO_BACK_POSS_AN_OPT  ;
-+Cmt:%:ine  ACRO_BACK_POSS_EN_OPT  ;
-+Pl+Ela:%:issa  ACRO_BACK_POSS_AN_OPT  ;
-+Pl+Ine:%:issa  ACRO_BACK_POSS_AN_OPT  ;
-+Pl+Ins:%:in    ACRO_BACK_CLIT_OPT ;
-+Pl+Tra:%:iksi  ACRO_BACK_CLIT_OPT ;
-+Pl+Tra:%:ikse  ACRO_BACK_POSS_EN_OBL    ;
-
-LEXICON ACRO_YHDEKSÄN
-!! The acronyms ending in digit 9 pronounced as number
-0  ACRO_COMPOUND   ;
-+Sg+Nom:0    #   ;
-+Sg+Nom:%:  ACRO_FRONT_POSS    ;
-+Sg+Nom:%:  ACRO_FRONT_CLIT   ;
-+Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
-+Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
-+Sg+Par:%:ää    ACRO_FRONT_POSS_CLIT_OPT  ;
-+Sg+Ill:%:ään   ACRO_FRONT_POSS_CLIT_OPT ;
-+Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+Abl:%:ltä   ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+Ade:%:llä   ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+All:%:lle   ACRO_FRONT_POSS_EN_OPT  ;
-+Sg+Ela:%:stä   ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+Ess:%:nä    ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+Ine:%:ssä   ACRO_FRONT_POSS_ÄN_OPT  ;
-+Sg+Tra:%:ksi   ACRO_FRONT_CLIT_OPT ;
-+Sg+Tra:%:kse   ACRO_FRONT_POSS_EN_OBL    ;
-+Pl+Par:%:iä    ACRO_FRONT_POSS_ÄN_OPT  ;
-+Pl+Ill:%:iin   ACRO_FRONT_POSS_CLIT_OPT ;
-+Pl+Abe:%:ittä  ACRO_FRONT_POSS_ÄN_OPT  ;
-+Pl+Abl:%:iltä  ACRO_FRONT_POSS_ÄN_OPT  ;
-+Pl+Ade:%:illä  ACRO_FRONT_POSS_ÄN_OPT  ;
-+Pl+All:%:ille  ACRO_FRONT_POSS_EN_OPT  ;
-+Pl+Ess:%:inä   ACRO_FRONT_POSS_ÄN_OPT  ;
-+Cmt:%:ine  ACRO_FRONT_POSS_EN_OPT  ;
-+Pl+Ela:%:istä  ACRO_FRONT_POSS_ÄN_OPT  ;
-+Pl+Ine:%:issä  ACRO_FRONT_POSS_ÄN_OPT  ;
-+Pl+Ins:%:in    ACRO_FRONT_CLIT_OPT ;
-+Pl+Tra:%:iksi  ACRO_FRONT_CLIT_OPT ;
-+Pl+Tra:%:ikse  ACRO_FRONT_POSS_EN_OBL    ;
+!LEXICON ACRO_KAHDEKSAN
+! The acronyms ending in digit 8 pronounced as number
+!0  ACRO_COMPOUND   ;
+!+Sg+Nom:0    #   ;
+!+Sg+Nom:%:  ACRO_BACK_POSS    ;
+!+Sg+Nom:%:  ACRO_BACK_CLIT   ;
+!+Pl+Nom:%:t ACRO_BACK_CLIT_OPT ;
+!+Sg+Nom:%:n ACRO_BACK_CLIT_OPT ;
+!+Sg+Par:%:aa    ACRO_BACK_POSS_CLIT_OPT  ;
+!+Sg+Ill:%:aan   ACRO_BACK_POSS_CLIT_OPT ;
+!+Sg+Abe:%:tta   ACRO_BACK_POSS_AN_OPT  ;
+!+Sg+Abl:%:lta   ACRO_BACK_POSS_AN_OPT  ;
+!+Sg+Ade:%:lla   ACRO_BACK_POSS_AN_OPT  ;
+!+Sg+All:%:lle   ACRO_BACK_POSS_EN_OPT  ;
+!+Sg+Ela:%:sta   ACRO_BACK_POSS_AN_OPT  ;
+!+Sg+Ess:%:na    ACRO_BACK_POSS_AN_OPT  ;
+!+Sg+Ine:%:ssa   ACRO_BACK_POSS_AN_OPT  ;
+!+Sg+Tra:%:ksi   ACRO_BACK_CLIT_OPT ;
+!+Sg+Tra:%:kse   ACRO_BACK_POSS_EN_OBL    ;
+!+Pl+Par:%:ia    ACRO_BACK_POSS_AN_OPT  ;
+!+Pl+Ill:%:iin   ACRO_BACK_POSS_CLIT_OPT ;
+!+Pl+Abe:%:itta  ACRO_BACK_POSS_AN_OPT  ;
+!+Pl+Abl:%:ilta  ACRO_BACK_POSS_AN_OPT  ;
+!+Pl+Ade:%:illa  ACRO_BACK_POSS_AN_OPT  ;
+!+Pl+All:%:illa  ACRO_BACK_POSS_AN_OPT  ;
+!+Pl+Ess:%:ina   ACRO_BACK_POSS_AN_OPT  ;
+!+Cmt:%:ine  ACRO_BACK_POSS_EN_OPT  ;
+!+Pl+Ela:%:issa  ACRO_BACK_POSS_AN_OPT  ;
+!+Pl+Ine:%:issa  ACRO_BACK_POSS_AN_OPT  ;
+!+Pl+Ins:%:in    ACRO_BACK_CLIT_OPT ;
+!+Pl+Tra:%:iksi  ACRO_BACK_CLIT_OPT ;
+!+Pl+Tra:%:ikse  ACRO_BACK_POSS_EN_OBL    ;
+!
+!LEXICON ACRO_YHDEKSÄN
+! The acronyms ending in digit 9 pronounced as number
+!0  ACRO_COMPOUND   ;
+!+Sg+Nom:0    #   ;
+!+Sg+Nom:%:  ACRO_FRONT_POSS    ;
+!+Sg+Nom:%:  ACRO_FRONT_CLIT   ;
+!+Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
+!+Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
+!+Sg+Par:%:ää    ACRO_FRONT_POSS_CLIT_OPT  ;
+!+Sg+Ill:%:ään   ACRO_FRONT_POSS_CLIT_OPT ;
+!+Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+Abl:%:ltä   ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+Ade:%:llä   ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+All:%:lle   ACRO_FRONT_POSS_EN_OPT  ;
+!+Sg+Ela:%:stä   ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+Ess:%:nä    ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+Ine:%:ssä   ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Sg+Tra:%:ksi   ACRO_FRONT_CLIT_OPT ;
+!+Sg+Tra:%:kse   ACRO_FRONT_POSS_EN_OBL    ;
+!+Pl+Par:%:iä    ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Pl+Ill:%:iin   ACRO_FRONT_POSS_CLIT_OPT ;
+!+Pl+Abe:%:ittä  ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Pl+Abl:%:iltä  ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Pl+Ade:%:illä  ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Pl+All:%:ille  ACRO_FRONT_POSS_EN_OPT  ;
+!+Pl+Ess:%:inä   ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Cmt:%:ine  ACRO_FRONT_POSS_EN_OPT  ;
+!+Pl+Ela:%:istä  ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Pl+Ine:%:issä  ACRO_FRONT_POSS_ÄN_OPT  ;
+!+Pl+Ins:%:in    ACRO_FRONT_CLIT_OPT ;
+!+Pl+Tra:%:iksi  ACRO_FRONT_CLIT_OPT ;
+!+Pl+Tra:%:ikse  ACRO_FRONT_POSS_EN_OBL    ;
 
 !! !Acronyms ending in letters
 !! Acronyms ending in regular alphabet may be inflected like the last letter is

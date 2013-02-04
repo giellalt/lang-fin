@@ -70,7 +70,7 @@ LEXICON A_BACK_SUPERLATIVE_STEMS
 !! circularity in superlative  derivations:
 !!€gt-norm: Adjective superlative inflection
 !!€ nopein nopea+A+Sup+Sg+Nom
-!!$ nopeimmin nopea+A+Sup+Sup+Sg+Nom
+!!$ nopeimmimpia nopea+A+Sup+Sup+Sg+Par
 !!$ nopeimmimmin nopea+A+Sup+Sup+Sup+Sg+Nom
 0:n   A_BACK_NOMINATIVE    ;
 0:mpa   A_BACK_STRONG_SINGULARS    ;
@@ -87,7 +87,7 @@ LEXICON A_BACK_SUPERLATIVE_STEMS
 
 LEXICON A_FRONT_SUPERLATIVE_STEMS
 !!€ tyhmin tyhmä+A+Sup+Sg+Nom
-!!$ tyhmimmin tyhmä+A+Sup+Sup+Sg+Nom
+!!$ tyhmimmimpiä tyhmä+A+Sup+Sup+Sg+Par
 0:n   A_FRONT_NOMINATIVE    ;
 0:mpä   A_FRONT_STRONG_SINGULARS    ;
 0:mmä   A_FRONT_WEAK_SINGULARS   ;
@@ -213,12 +213,12 @@ LEXICON A_BACK_STRONG_PLURALS
 LEXICON A_BACK_PARTITIVE_A
 !!€gt-norm: Adjective singular partitives
 !!€ tarkkaa tarkka+A+Sg+Par
-!!$ tarkkaaan tarkka+A+Sg+Par+PxSg3
+!!€ tarkkaansa tarkka+A+Sg+Par+PxSg3
 +Sg+Par:a      A_BACK_POSS_CLIT_OPT      ;
 
 LEXICON A_FRONT_PARTITIVE_Ä
 !!€ tyhmää tyhmä+A+Sg+Par
-!!$ tyhmäään tyhmä+A+Sg+Par+PxSg3
+!!€ tyhmäänsä tyhmä+A+Sg+Par+PxSg3
 +Sg+Par:ä      A_FRONT_POSS_CLIT_OPT      ;
 
 LEXICON A_BACK_PARTITIVE_A_AN
@@ -308,7 +308,7 @@ LEXICON A_BACK_ILLATIVE_ON
 
 LEXICON A_BACK_ILLATIVE_UN
 !!€ fiksuun fiksu+A+Sg+Ill
-+Sg+Ill:un     A_BAC_CLIT_OPT         ;
++Sg+Ill:un     A_BACK_CLIT_OPT         ;
 +Sg+Ill:u      A_BACK_POSS     ;
 
 LEXICON A_FRONT_ILLATIVE_YN

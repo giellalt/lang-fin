@@ -12,13 +12,11 @@ LEXICON N_BACK_NOMINATIVE
 !!€gt-norm: Noun nominatives
 !!€ talo talo+N+Sg+Nom a house
 !!€ taloko talo+N+Sg+Nom+Qst
-!!$ talopä talo+N+Sg+Nom+Foc/pa
 !!¥ talo+N+Sg+Nom+Foc/han: [talohan, ~talohän]
 +Sg+Nom:0   N_BACK_CLIT_OPT  ;
 
 LEXICON N_FRONT_NOMINATIVE
 !!€ pöly pöly+N+Sg+Nom dust
-!!$ pölyko pöly+N+Sg+Nom+Qst
 +Sg+Nom:0   N_FRONT_CLIT_OPT  ;
 
 !! The plural nominative attaches to singular stem. For plural words it is also
@@ -153,15 +151,15 @@ LEXICON N_FRONT_WEAK_PLURALS
 
 LEXICON N_BACK_STRONG_PLURALS
 !!€ patoina pata+N+Pl+Ess
-!!€ patoine pata+N+Cmt
+!!€ patoine pata+N+Com
 +Pl+Ess:%>i%>na   N_BACK_POSS_AN_OPT      ;
-+Cmt:%>i%>ne        N_BACK_POSS_EN_OPT      ;
++Com:%>i%>ne        N_BACK_POSS_EN_OPT      ;
 
 LEXICON N_FRONT_STRONG_PLURALS
 !!€ näkyinä näky+N+Pl+Ess
-!!€ näkyine näky+N+Cmt
+!!€ näkyine näky+N+Com
 +Pl+Ess:%>i%>nä   N_FRONT_POSS_ÄN_OPT      ;
-+Cmt:%>i%>ne        N_FRONT_POSS_EN_OPT      ;
++Com:%>i%>ne        N_FRONT_POSS_EN_OPT      ;
 
 !! !Cases with allomorphic variation
 !! The nominal cases which can take several different suffixes are singular
@@ -721,40 +719,44 @@ LEXICON N_FRONT_POSS_EN_OBL
 
 LEXICON N_COMPOUND_0
 !!€gt-norm: Noun compounds
-!!€ talojuttu talo+N+Sg+Nom+Use/Circ#juttu+N+Sg+Nom
+!!€ talojuttu talo+N+Sg+Nom#juttu+N+Sg+Nom
 +Sg+Nom:0   N_COMPOUND  ;
 
 LEXICON N_COMPOUND_N
-!!€ talonjuttu talo+N+Sg+Gen+Use/Circ#juttu+N+Sg+Nom
+!!€ talonjuttu talo+N+Sg+Gen#juttu+N+Sg+Nom
 +Sg+Gen:%>n               N_COMPOUND    ;
 
 LEXICON N_COMPOUND_IEN
-!!€ naisienjuttu nainen+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom
+!!€ naisienjuttu nainen+N+Pl+Gen#juttu+N+Sg+Nom
 +Pl+Gen:%>i%>en                 N_COMPOUND  ;
 
 LEXICON N_COMPOUND_IDEN
-!!€ lepakoidenjuttu lepakko+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom
+!!€ lepakoidenjuttu lepakko+N+Pl+Gen#juttu+N+Sg+Nom
 +Pl+Gen:%>i%>den                 N_COMPOUND  ;
 
 LEXICON N_COMPOUND_IN
-!!€ vanhempainjuttu vanhempi+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom
+!!€ vanhempainjuttu vanhempi+N+Pl+Gen#juttu+N+Sg+Nom
 +Pl+Gen:%>i%>n                 N_COMPOUND     ;
 
 LEXICON N_COMPOUND_ITTEN
-!!€ lepakoittenjuttu lepakko+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom
+!!€ lepakoittenjuttu lepakko+N+Pl+Gen#juttu+N+Sg+Nom
 +Pl+Gen:%>i%>tten               N_COMPOUND     ;
 
 LEXICON N_COMPOUND_JEN
-!!€ talojenjuttu talo+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom
+!!€ talojenjuttu talo+N+Pl+Gen#juttu+N+Sg+Nom
 +Pl+Gen:%>j%>en                 N_COMPOUND     ;
 
 LEXICON N_COMPOUND_TEN
-!!€ miestenjuttu mies+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom
+!!€ miestenjuttu mies+N+Pl+Gen#juttu+N+Sg+Nom
 +Pl+Gen:%>ten                 N_COMPOUND     ;
 
 
+LEXICON N_COMPOUND_S
+!!€ aakkostamisjuttu aakkostaminen+N+Der/s#juttu+N+Sg+Nom
++Der/s:»s                   N_COMPOUND  ;
+
 LEXICON N_COMPOUND
-!!€ talojuttu talo+N+Sg+Nom+Use/Circ#juttu+N+Sg+Nom
+!!€ talojuttu talo+N+Sg+Nom#juttu+N+Sg+Nom
 +Use/Circ#:0#     NOMINAL   ;
 
 !vim: set ft=xfst-lexc:

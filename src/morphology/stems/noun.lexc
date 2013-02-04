@@ -96079,10 +96079,10 @@ LEXICON N_TALO
 !!¥ talo+N+Sg+Ill: [taloon, ~taloseen]
 !!¥ talo+N+Pl+Par: [taloja, ~taloita]
 !!¥ talo+N+Pl+Gen: [talojen, ~taloiden, ~taloitten]
-!!¥ talo+N+Pl+Ill: [taloihin, ~taloisiin]
-!!€ talojuttu talo+N+Sg+Nom+Use/Circ#juttu+N+Sg+Nom house thing
-!!€ talonjuttu talo+N+Sg+Gen+Use/Circ#juttu+N+Sg+Nom house's thing
-!!€ talojenjuttu talo+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom houses' thing
+!!€ taloihin talo+N+Pl+Ill
+!!€ talojuttu talo+N+Sg+Nom#juttu+N+Sg+Nom house thing
+!!€ talonjuttu talo+N+Sg+Gen#juttu+N+Sg+Nom house's thing
+!!€ talojenjuttu talo+N+Pl+Gen#juttu+N+Sg+Nom houses' thing
 0    N_BACK_NOMINATIVE    ;
 0    N_BACK_SINGULARS    ;
 0    N_BACK_PLURALS ;
@@ -97146,7 +97146,7 @@ LEXICON N_TUOMIO
 !!€gt-norm: Nouns 3
 !!€ tuomio tuomio+N+Sg+Nom judgment
 !!¥ tuomio+N+Sg+Par: [tuomiota, ~tuomioa]
-!!¥ tuomio+N+Pl+Par: [tuomioita, ~tuomioja]
+!!€ tuomioita tuomio+N+Pl+Par
 !!¥ tuomio+N+Pl+Gen: [tuomioiden, tuomioitten, ~tuomiojen]
 0    N_BACK_NOMINATIVE    ;
 0    N_BACK_SINGULARS    ;
@@ -99093,8 +99093,9 @@ LEXICON N_PROBLEEMA
 !!¥ probleema+N+Pl+Gen: [probleemien, probleemoiden, probleemoitten]
 !!¥ probleema+N+Pl+Ill: [probleemiin, probleemoihin]
 !! Also less commonly:
-!!¥ probleema+N+Pl+Gen+Use/Rare: [probleemojen, probleemain]
-!!€ probleemoja probleema+N+Sg+Par+Use/Rare
+!!€ probleemain probleema+N+Pl+Gen+Use/Rare
+!!€ probleemojen probleema+N+Use/Rare+Pl+Gen
+!!€ probleemoja probleema+N+Use/Rare+Pl+Par
 0:a   N_BACK_NOMINATIVE    ;
 0:a   N_BACK_SINGULARS    ;
 0:o   N_BACK_PLURALS  ;
@@ -99103,11 +99104,9 @@ LEXICON N_PROBLEEMA
 0:a   N_BACK_ILLATIVE_AN     ;
 0   N_BACK_PARTITIVE_IA    ;
 0:o   N_BACK_PARTITIVE_ITA ;
-0:o   N_BACK_PARTITIVE_JA ;
 0   N_BACK_GENITIVE_IEN    ;
 0:o     N_BACK_GENITIVE_IDEN   ;
 0:o     N_BACK_GENITIVE_ITTEN  ;
-0:o     N_BACK_GENITIVE_JEN    ;
 0:a   N_BACK_GENITIVE_IN     ;
 0   N_BACK_ILLATIVE_IIN   ;
 0:o   N_BACK_ILLATIVE_IHIN    ;
@@ -99118,6 +99117,8 @@ LEXICON N_PROBLEEMA
 0:o   N_COMPOUND_ITTEN   ;
 0:o   N_COMPOUND_JEN ;
 0:a   N_COMPOUND_IN  ;
++Use/Rare:o   N_BACK_PARTITIVE_JA ;
++Use/Rare:o     N_BACK_GENITIVE_JEN    ;
 
 LEXICON N_KÄPÄLÄ
 !!€ käpälä käpälä+N+Sg+Nom paw
@@ -99869,6 +99870,7 @@ LEXICON N_HYVINKÄÄ
 0:ä   N_FRONT_SINGULARS    ;
 0   N_FRONT_PLURALS  ;
 0:ä   N_FRONT_PARTITIVE_TÄ    ;
+0:ä   N_FRONT_ILLATIVE_HÄN   ;
 0:ä   N_FRONT_ILLATIVE_SEEN   ;
 0   N_FRONT_PARTITIVE_ITÄ   ;
 0    N_FRONT_GENITIVE_IEN   ;
@@ -101278,7 +101280,7 @@ LEXICON N_AAKKOSTAMINEN
 0:s   N_BACK_GENITIVE_IEN    ;
 0:s   N_BACK_GENITIVE_TEN    ;
 0:s   N_BACK_ILLATIVE_IIN    ;
-0:s       N_COMPOUND_0   ;
+0         N_COMPOUND_S   ;
 0:se      N_COMPOUND_N   ;
 0:s       N_COMPOUND_IEN ;
 0:s       N_COMPOUND_TEN ;
@@ -101295,7 +101297,7 @@ LEXICON N_KYLKIÄINEN
 0:s   N_FRONT_GENITIVE_IEN    ;
 0:s   N_FRONT_GENITIVE_TEN    ;
 0:s   N_FRONT_ILLATIVE_IIN    ;
-0:s       N_COMPOUND_0   ;
+0         N_COMPOUND_S   ;
 0:se      N_COMPOUND_N   ;
 0:s       N_COMPOUND_IEN ;
 0:s       N_COMPOUND_TEN ;
@@ -102581,11 +102583,11 @@ LEXICON N_PENGER
 0:keree   N_FRONT_SINGULARS    ;
 0:ker       N_FRONT_PLURALS  ;
 0:kere    N_FRONT_PLURALS    ;
-0:ger       N_FRONT_PARTITIVE_TA    ;
+0:ger       N_FRONT_PARTITIVE_TÄ    ;
 0:kere    N_FRONT_ILLATIVE_EN ;
 0:keree   N_FRONT_ILLATIVE_SEEN   ;
-0:ker       N_FRONT_PARTITIVE_IA    ;
-0:kere    N_FRONT_PARTITIVE_ITA   ;
+0:ker       N_FRONT_PARTITIVE_IÄ    ;
+0:kere    N_FRONT_PARTITIVE_ITÄ   ;
 0:ger       N_FRONT_GENITIVE_TEN    ;
 0:ker       N_FRONT_GENITIVE_IEN    ;
 0:kere    N_FRONT_GENITIVE_IDEN   ;
@@ -102671,11 +102673,11 @@ LEXICON N_KINNER
 0:teree   N_FRONT_SINGULARS    ;
 0:ter       N_FRONT_PLURALS  ;
 0:tere    N_FRONT_PLURALS    ;
-0:ner       N_FRONT_PARTITIVE_TA    ;
+0:ner       N_FRONT_PARTITIVE_TÄ    ;
 0:tere    N_FRONT_ILLATIVE_EN ;
 0:teree   N_FRONT_ILLATIVE_SEEN   ;
-0:ter       N_FRONT_PARTITIVE_IA    ;
-0:tere    N_FRONT_PARTITIVE_ITA   ;
+0:ter       N_FRONT_PARTITIVE_IÄ    ;
+0:tere    N_FRONT_PARTITIVE_ITÄ   ;
 0:ner       N_FRONT_GENITIVE_TEN    ;
 0:ter       N_FRONT_GENITIVE_IEN    ;
 0:tere    N_FRONT_GENITIVE_IDEN   ;
@@ -102822,7 +102824,7 @@ LEXICON N_AUER
 LEXICON N_VERI
 !!€gt-norm: Nouns veri~meri
 !!€ veri veri+N+Sg+Nom blood
-!!¥ veri+N+Sg+Par: [verta, vertä]
+!!¥ veri+N+Sg+Par: [verta, ~vertä]
 0:i       N_FRONT_NOMINATIVE    ;
 0:e       N_FRONT_SINGULARS    ;
 0:e     N_FRONT_PLURALS   ;
@@ -102837,7 +102839,7 @@ LEXICON N_VERI
 
 LEXICON N_MERI
 !!€ meri meri+N+Sg+Nom sea
-!!¥ meri+N+Sg+Par: [merta, mertä]
+!!¥ meri+N+Sg+Par: [merta, ~mertä]
 0:i   N_FRONT_NOMINATIVE    ;
 0:e N_FRONT_SINGULARS    ;
 0 N_FRONT_PLURALS    ;
@@ -103848,6 +103850,7 @@ LEXICON N_ITÄMAAT
 LEXICON N_PUUT
 !!€ puut puut+N+Pl+Nom trees
 !!$ puu puut+N+Sg+Nom
+0 N_BACK_PLNOM_CLIT  ;
 0 N_BACK_PLURALS    ;
 0 N_BACK_PARTITIVE_ITA   ;
 0 N_BACK_GENITIVE_IDEN   ;
@@ -103861,6 +103864,7 @@ LEXICON N_PUUT
 LEXICON N_HÄÄT
 !!€ häät häät+N+Pl+Nom wedding
 !!$ hää häät+N+Sg+Nom
+0:ä N_FRONT_PLNOM_CLIT    ;
 0 N_FRONT_PLURALS    ;
 0 N_FRONT_PARTITIVE_ITÄ   ;
 0 N_FRONT_GENITIVE_IDEN   ;
@@ -103968,7 +103972,7 @@ LEXICON N_HÖYHENET
 LEXICON N_ATERIMET
 !!€ aterimet aterimet+N+Pl+Nom cutlery
 !!$ aterin aterimet+N+Sg+Nom
-0:me    N_BACK_PLNOM_CLIt ;
+0:me    N_BACK_PLNOM_CLIT ;
 0:m     N_BACK_PLURALS    ;
 0:m N_BACK_PARTITIVE_IA    ;
 0:m N_BACK_GENITIVE_IEN    ;
