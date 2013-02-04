@@ -1,8 +1,12 @@
+!! !!!Pronouns
 !! Pronouns are a closed special sub class of nouns. Morphologically pronouns
 !! have often defective, heteroclitic or otherwise irregular inflectional
 !! patterns, and certain pronouns have an morphophonologically distinct
-!! accusative case, extinct from other noun classes (VISK §§ 100 – 104).
-!! Semantically ... VISK § 7XX
+!! accusative case, extinct from other noun classes 
+!!
+!! Further reading: [VISK §§ 
+!! 100|http://scripta.kotus.fi/visk/sisalto.php?p=100] – 104, Semantics ...
+!! [VISK § 7XX|http://scripta.kotus.fi/visk/sisalto.php?p=7XX]
 ! FIXME: pronouns have stem variations and inflections listed, it doesn't
 ! matter a big deal but might as well do it the same way as rest of the things
 ! to get systematic benefits from lexicon <=> morph structure.
@@ -18,10 +22,14 @@ LEXICON PRON
 !! second and third singular and plural. The personal pronouns have separate
 !! accusative cases marked by t suffix. The pronouns in standard literary
 !! Finnish are *minä* (I), *sinä* (you), *hän* (he), *me* (we), *te* (you),
-!! *he* (they). VISK § 100
-!!€ minä
-!!€ sinut
-!!€ heille
+!! *he* (they). 
+!!
+!! Further reading: [VISK § 100|http://scripta.kotus.fi/visk/sisalto.php?p=100]
+!!
+!!€gt-norm: Personal pronouns
+!!€ minä minä+Pron+Pers+Sg+Nom me
+!!€ sinut sinä+Pron+Pers+Sg+Acc
+!!€ heille he+Pron+Pers+Pl+All
 minä+Pron+Pers+Sg+Abe:minutta    PRON_BACK_CLIT_OPT ;
 minä+Pron+Pers+Sg+Abl:minulta    PRON_BACK_CLIT_OPT ;
 minä+Pron+Pers+Sg+Acc:minut  PRON_BACK_CLIT_OPT ;
@@ -253,7 +261,12 @@ sa+Pron+Pers+Sg+Nom+Use/Marg:sa  PRON_BACK_CLIT_OPT ;
 !! There are six demonstrative pronouns for six non-personal references. In
 !! standard written Finnish these are *tämä* (this), *tuo* (that), *se* (it),
 !! *nämä* (these), *nuo* (those), *ne* (those).
-!! VISK § 101
+
+!! Further reading: [VISK § 101|http://scripta.kotus.fi/visk/sisalto.php?p=101]
+!!
+!!€gt-norm: Demonstrative pronouns
+!!€ tämä tämä+Pron+Dem+Sg+Nom
+!!€ tuolle tuo+Pron+Dem+Sg+All
 tämä+Pron+Dem+Sg+Abe:tättä    PRON_FRONT_CLIT_OPT ;
 tämä+Pron+Dem+Sg+Abl:tältä    PRON_FRONT_CLIT_OPT ;
 tämä+Pron+Dem+Sg+Ade:tällä    PRON_FRONT_CLIT_OPT ;
@@ -371,7 +384,14 @@ noi+Pron+Dem+Pl+Nom:noi  PRON_BACK_CLIT_OPT ;
 !! Interrogative pronouns are used in question clauses. The basic
 !! interrogatives in standard written Finnish are *kuka* (who), *mikä* (what),
 !! *kumpi* (which); *millainen* (what kind of), *kuinka* (how),
-!! *miksi* (what for). VISK §734|
+!! *miksi* (what for). 
+!!
+!! Further reading: [VISK §734|http://scripta.kotus.fi/visk/sisalto.php?p=734]
+!!
+!!€gt-norm: Interrogative pronouns
+!!€ kuka kuka+Pron+Interr+Sg+Nom who
+!!€ ketä kuka+Pron+Interr+Sg+Par
+!!€ kenet kuka+Pron+Interr+Sg+Acc
 kuka+Pron+Interr+Pl+Abe:keittä    PRON_FRONT_CLIT_OPT ;
 kuka+Pron+Interr+Pl+Abe:keittäkäs     PRON_FRONT_CLIT_OPT ;
 kuka+Pron+Interr+Pl+Abl:keiltä    PRON_FRONT_CLIT_OPT ;
@@ -582,7 +602,9 @@ kuka+Pron+Interr+Sg+Ess+Dial/Standard:kenä    PRON_FRONT_CLIT_OPT ;
 kuka+Pron+Interr+Sg+Ess+Dial/Standard:kenäkäs     PRON_FRONT_CLIT_OPT ;
 
 !! Few forms of *kuka* based on *ken* stem and *ku* stem have become archaic.
-!! VISK §102|
+!!
+!! Fuhrer reading: [VISK §102|http://scripta.kotus.fi/visk/sisalto.php?p=102]
+!!
 !! Also the short form of *mi* is archaic and limited to poetic use.
 !! |citation-needed|
 ken+Pron+Interr+Sg+Nom+Use/Marg:ken   PRON_FRONT_CLIT_OPT ;
@@ -601,6 +623,8 @@ mi+Pron+Interr+Sg+Nom+Use/Marg:mi     PRON_FRONT_CLIT_OPT ;
 !! Relative pronouns are *kuka*, *joka* and *mikä* (which, whose). VISK §735|
 !! They are morphologically indistinct from corresponding interrogative
 !! pronouns.
+!!€gt-norm: Relative pronouns
+!!€ kuka kuka+Pron+Rel+Sg+Nom
 kuka+Pron+Rel+Pl+Abe:keittä   PRON_FRONT_CLIT_OPT ;
 kuka+Pron+Rel+Pl+Abe:keittäkäs    PRON_FRONT_CLIT_OPT ;
 kuka+Pron+Rel+Pl+Abl:keiltä   PRON_FRONT_CLIT_OPT ;
@@ -779,13 +803,20 @@ mikä+Pron+Rel+Sg+Tra:miksikäs     PRON_FRONT_CLIT_OPT ;
 !! *kukin* (each one), *kukaan* (no one), *mikään* (nothing), *jokunen*,
 !! *muutama*, *harva* (a few), *moni* (many) and *useampi* (more). The
 !! dual quantors, quantifying over set of two objects are *jompikumpi* (either
-!! or), *kumpikin*, *molemmat* (both), *kumpikaan* (neither). VISK §740|
+!! or), *kumpikin*, *molemmat* (both), *kumpikaan* (neither). 
+!! [VISK §740|http://scripta.kotus.fi/visk/sisalto.php?p=740]
 !! The quantor pronouns subsume the class of indefinite pronouns used in
-!! older grammar defintions. VISK §742|
+!! older grammar defintions. 
+!! [VISK §742|http://scripta.kotus.fi/visk/sisalto.php?p=742]
 !! The indefinite quantifiers are classified as
 !! indefinite quantors for the sake of compatibility. This covers *joku*,
 !! *jokin*, *jompikumpi*, as well as specific
-!! *eräs*, *muuan* (some), *yksi* (one).  VISK §746 749|.
+!! *eräs*, *muuan* (some), *yksi* (one).  
+!! Further reading [VISK §746|http://scripta.kotus.fi/visk/sisalto.php?p=746]
+!! – 749.
+!!€gt-norm: Quantor pronouns
+!!€ joku joku+Pron+Qu+Indef+Sg+Nom
+!!€ jotkut joku+Pron+Qu+Indef+Pl+Nom
 joku+Pron+Qu+Indef+Pl+Abe:joittakuitta   PRON_BACK_CLIT_OPT ;
 joku+Pron+Qu+Indef+Pl+Abl:joiltakuilta   PRON_BACK_CLIT_OPT ;
 joku+Pron+Qu+Indef+Pl+Ade:joillakuilla   PRON_BACK_CLIT_OPT ;
@@ -1395,7 +1426,11 @@ yks+Pron+Qu+Indef+Sg+Tra:yheksi   PRON_FRONT_CLIT_OPT ;
 joka+Pron+Qu+Indef+Sg+Nom:joka   PRON_BACK_CLIT_OPT ;
 
 !! Reflexive pronoun is the word *itse* refering to self, usually but not
-!! always coupled with possessive suffix to denote the referent. VISK §729|.
+!! always coupled with possessive suffix to denote the referent. 
+!!
+!! Further reading: [VISK §729|http://scripta.kotus.fi/visk/sisalto.php?p=729]
+!!€gt-norm: Reflexive pronouns
+!!€ itse itse+Pron+Refl+Sg+Nom
 itse+Pron+Refl+Pl+Abl+Dial/Standard:iteiltä  PRON_FRONT_POSS_ÄN_OPT    ;
 itse+Pron+Refl+Pl+Ade+Dial/Standard:iteillä  PRON_FRONT_POSS_ÄN_OPT    ;
 itse+Pron+Refl+Pl+All+Dial/Standard:iteille  PRON_FRONT_POSS_EN_OPT    ;
@@ -1454,9 +1489,12 @@ itse+Pron+Refl+Sg+Par:itseä  PRON_FRONT_POSS_ÄN_OPT    ;
 itse+Pron+Refl+Sg+Tra:itsekse  PRON_FRONT_POSS_EN_OPT    ;
 itse+Pron+Refl+Sg+Tra:itseksi   PRON_FRONT_CLIT   ;
 
-
 !! Reciprocal pronoun is *toinen* refering to each other. It uses possessive
-!! suffix to delimit the reciprocal group. VISK §732
+!! suffix to delimit the reciprocal group. 
+!!
+!! Further reading: [VISK §732|http://scripta.kotus.fi/visk/sisalto.php?p=732]
+!!€gt-norm: Reciprocal pronouns
+!!€ toisiamme toinen+Pron+Recipr+Pl+Par+PxPl1
 toinen+Pron+Recipr+Pl+Abe:toisitta  PRON_BACK_POSS_OPT ;
 toinen+Pron+Recipr+Pl+Abl:toisilta  PRON_BACK_POSS_OPT ;
 toinen+Pron+Recipr+Pl+Ade:toisilla  PRON_BACK_POSS_OPT ;
@@ -1485,10 +1523,14 @@ toinen+Pron+Recipr+Sg+Nom:toisen    PRON_BACK_POSS_OPT ;
 toinen+Pron+Recipr+Sg+Par:toista    PRON_BACK_POSS_AN_OPT ;
 toinen+Pron+Recipr+Sg+Tra:toisekse  PRON_BACK_POSS_EN_OPT ;
 
-
 !! Proadjectives are pronouns that act in place of adjectives syntactically.
 !! They are formed by compounds (or derivations) of pronoun and *lainen* or
-!! *moinen* (such as). VISK §715
+!! *moinen* (such as). 
+!!
+!! Further reading: [VISK §715|http://scripta.kotus.fi/visk/sisalto.php?p=715]
+!!
+!!€gt-norm: Proadjectives
+!!€ jollainen jollainen+A+Rel+Sg+Nom
 jollainen+A+Rel+Pl+Abe:jollaisitta   A_BACK_CLIT_OPT ;
 jollainen+A+Rel+Pl+Abl:jollaisilta   A_BACK_CLIT_OPT ;
 jollainen+A+Rel+Pl+Ade:jollaisilla   A_BACK_CLIT_OPT ;
@@ -1984,7 +2026,12 @@ muunlainen+A:muunlai  A_AAKKOSELLINEN ;
 vastaava+A:vastaav{^a}  A_AALTOILEVA ; 
 
 !! Proadverbs are the pronouns that have lexicalised into adverbs by their
-!! syntax and semantics. VISK §715
+!! syntax and semantics. 
+!!
+!! Further reading: [VISK §715|http://scripta.kotus.fi/visk/sisalto.php?p=715]
+!!
+!!€gt-norm: Proadverbs
+!!€ missä missä+Adv+Interr+Ine
 missä+Adv+Interr+Ine:missä   ADV_FRONT_CLIT_OPT ;
 mistä+Adv+Interr+Ela:mistä   ADV_FRONT_CLIT_OPT ;
 minne+Adv+Interr+Ill:minne   ADV_FRONT_CLIT_OPT ;
@@ -2132,7 +2179,9 @@ monituinen+Pron+Sg+Tra:monituiseksi  PRON_BACK_CLIT_OPT ;
 !! refering to equivalence in comparative context since they are
 !! also otherwise lacking meaning like other pro words. This
 !! fgroup includes words *sama* (same), *eri* (different), *muu* (other),
-!! *toinen* (another), and their derivations. VISK §766|.
+!! *toinen* (another), and their derivations. 
+!!
+!! Further reading: [VISK §766|http://scripta.kotus.fi/visk/sisalto.php?p=766]
 sama+Pron+Pl+Abe:samoitta    PRON_BACK_CLIT_OPT ;
 sama+Pron+Pl+Abl:samoilta    PRON_BACK_CLIT_OPT ;
 sama+Pron+Pl+Ade:samoilla    PRON_BACK_CLIT_OPT ;

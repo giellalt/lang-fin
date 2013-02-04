@@ -1,11 +1,13 @@
+!! !!!Proper nouns
 !! Proper nouns are morphologically indistinct subset of nouns. They have
 !! some orthographical differences, required capitalisations and compounding
-!! with hyphens.
+!! with hyphens. The derivations may lowercase. They may be classified 
+!! semantically to match other giellatekno things in the future.
 
 LEXICON  PROPER
-!! Examples:
-!!€ Kalle
-!!€ Joensuu
+!!€gt-norm: Proper nouns
+!!€ Kalle Kalle+N+Prop+Sg+Nom
+!!€ Joensuu Joensuu+N+Prop+Sg+Nom
 7% päivää+N+Prop:7% päivää                         # ;
 Aabel+N+Prop:Aabel                         N_STADION ;
 Aabraham+N+Prop:Aabraham                      N_PUNK ;
@@ -6227,4 +6229,5 @@ Zola+N+Prop:Zola                                   # ;
 Öllölä+N+Prop:Öllöl                         N_KÄPÄLÄ ;
 Öölanti+N+Prop:Öölan                        N_SOINTI ;
 
-! The proper classes are currently in nouns.lexc
+!! The proper nouns are classified and inflected along noun patterns, for 
+!! details see [noun-stems.html].
