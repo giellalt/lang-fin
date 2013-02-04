@@ -31,8 +31,11 @@ SOURCE_CODE_YAML_TESTS=root-morphology_gt-norm.yaml \
 					   particles-stems_gt-norm.yaml \
 					   pp-stems_gt-norm.yaml \
 					   prefixes-stems_gt-norm.yaml \
+					   pron-stems_gt-norm.yaml \
+					   propernoun-stems_gt-norm.yaml \
 					   51-stems_gt-norm.yaml \
-					   digits-stems_gt-norm.yaml
+					   digits-stems_gt-norm.yaml \
+					   punct-stems_gt-norm.yaml
 #					   noun-stems_gt-norm.yaml
 endif # CAN_DOCC
 
