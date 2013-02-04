@@ -1,3 +1,4 @@
+!! !!!Adpositions
 !! Adpositions are morphologically nominals that have defective inflection
 !! patterns. Some of them come from forms of nominals that are no longer
 !! used. The adpositions are classified along whether they take possessives
@@ -8,10 +9,11 @@
 
 LEXICON  ADP
 !! Examples:
-!!€ alta
-!!€ alleen
-!!€ irti
-!!€ irtikö
+!!€gt-norm: Adpositions
+!!€ alta alta+Po
+!!€ alleen alle+Po+PxSg3
+!!€ irti irti+Pr
+!!€ irtikö irti+Pr+Qst
 aikaan+Po:aikaan        ADP_BACK_CLIT_OPT ;
 ali+Po:ali              ADP_BACK_CLIT_OPT ;
 alitse+Po:alitse        ADP_BACK_POSS_EN_OPT ;
@@ -50,7 +52,7 @@ hännille+Po:hännille        ADP_FRONT_CLIT_OPT ;
 hännillä+Po:hännillä        ADP_FRONT_CLIT_OPT ;
 hänniltä+Po:hänniltä        ADP_FRONT_CLIT_OPT ;
 ilman+Po:ilman              ADP_BACK_CLIT_OPT ;
-irti+Po:irti                ADP_FRONT_CLIT_OPT ;
+irti+Pr:irti                ADP_FRONT_CLIT_OPT ;
 jalkoihin+Po:jalkoihin      ADP_BACK_CLIT_OPT ;
 jaloissa+Po:jaloissa        ADP_FRONT_POSS_ÄN_OPT ;
 jaloista+Po:jaloista        ADP_FRONT_POSS_ÄN_OPT ;

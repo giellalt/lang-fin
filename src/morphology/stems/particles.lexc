@@ -1,12 +1,14 @@
+!! !!!Particles
 !! The particles are all words that do not inflect at all. For compatibility
 !! reasons subsets of particles have been set off to classes like conjunctions,
-!! and interjections. The ones that are not in those classes are left as
+!! and interjections. The ones that are *not* in those classes are left here as
 !! particles.
 
 LEXICON  PCLE
 !! Examples:
-!!€ ahaa
-!!€ edes
+!!€gt-norm: Particles
+!!€ ahaa ahaa+Pcle
+!!€ edes edes+Pcle
 aamen+Pcle:aamen                        # ;
 ahaa+Pcle:ahaa                          # ;
 aha+Pcle:aha                            # ;
