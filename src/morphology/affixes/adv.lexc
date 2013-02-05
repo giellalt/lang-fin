@@ -1,19 +1,14 @@
+!! !!!Adverb inflection
 !! Most adverbs are morphologically either sti-derivations of adjectives or
 !! some specific form of an existing or archaic noun, and they have limited
-!! inflection in form of possessives and clitics carried over.
+!! inflection in form of possessives and clitics carried over. According to
+!! modern dictionaries different forms of same root are separate adverbs,
+!! so they are not inflected here, but listed in roots.
 
 ! possessives
-LEXICON ADV_FRONT_POSS
-!!€ edessäni
-+PxSg1:%>ni  ADV_FRONT_CLIT_OPT        ;
-+PxSg2:%>si  ADV_FRONT_CLIT_OPT        ;
-+PxSg3:%>nsä ADV_FRONT_CLIT_OPT        ;
-+PxPl1:%>mme ADV_FRONT_CLIT_OPT        ;
-+PxPl2:%>nne ADV_FRONT_CLIT_OPT        ;
-+PxPl3:%>nsä ADV_FRONT_CLIT_OPT        ;
-
 LEXICON ADV_BACK_POSS
-!!€ takanani
+!!€gt-norm: Adverbs possessives
+!!€ takanani takana+Adv+PxSg1 behind me
 +PxSg1:%>ni  ADV_BACK_CLIT_OPT        ;
 +PxSg2:%>si  ADV_BACK_CLIT_OPT        ;
 +PxSg3:%>nsa ADV_BACK_CLIT_OPT        ;
@@ -21,28 +16,38 @@ LEXICON ADV_BACK_POSS
 +PxPl2:%>nne ADV_BACK_CLIT_OPT        ;
 +PxPl3:%>nsa ADV_BACK_CLIT_OPT        ;
 
+LEXICON ADV_FRONT_POSS
+!!€ edessäni edessä+Adv+PxSg1 in front of me
++PxSg1:%>ni  ADV_FRONT_CLIT_OPT        ;
++PxSg2:%>si  ADV_FRONT_CLIT_OPT        ;
++PxSg3:%>nsä ADV_FRONT_CLIT_OPT        ;
++PxPl1:%>mme ADV_FRONT_CLIT_OPT        ;
++PxPl2:%>nne ADV_FRONT_CLIT_OPT        ;
++PxPl3:%>nsä ADV_FRONT_CLIT_OPT        ;
+
 LEXICON ADV_BACK_POSS_AN
-!!€ takanaan
+!!€ takanaan takana+Adv+PxSg3
 +PxSg3:%>an    ADV_BACK_CLIT_OPT     ;
 +PxPl3:%>an    ADV_BACK_CLIT_OPT     ;
 
 LEXICON ADV_BACK_POSS_EN
-!!€ jalkeilleen
+!!€ jalkeilleen jalkeille+Adv+PxSg3 he awakened
 +PxSg3:%>en    ADV_BACK_CLIT_OPT     ;
 +PxPl3:%>en    ADV_BACK_CLIT_OPT     ;
 
 LEXICON ADV_FRONT_POSS_EN
-!!€ keskelleen
+!!€ keskelleen keskelle+Adv+PxPl3 amidst them
 +PxSg3:%>en    ADV_FRONT_CLIT_OPT     ;
 +PxPl3:%>en    ADV_FRONT_CLIT_OPT     ;
 
 LEXICON ADV_FRONT_POSS_ÄN
-!!€ edessään
+!!€ edessään edessä+Adv+PxSg3
 +PxSg3:%>än    ADV_FRONT_CLIT_OPT     ;
 +PxPl3:%>än    ADV_FRONT_CLIT_OPT     ;
 
 LEXICON ADV_BACK_CLIT
-!!€ nopeastihan
+!!€gt-norm Adverbs clitics
+!!€ nopeastihan nopeasti+Adv+Foc/han fast
 +Foc/han:%>han   #        ;
 +Foc/han+Foc/kaan:%>hankaan  #        ;
 +Foc/han+Qst:%>hanko #        ;
@@ -71,7 +76,7 @@ LEXICON ADV_BACK_CLIT
 +Foc/kaan+Foc/pa:%>kaanpa    #        ;
 
 LEXICON ADV_FRONT_CLIT
-!!€ tyhmästihän
+!!€ tyhmästihän tyhmästi+Adv+Foc/han stupidly
 +Foc/han:%>hän   #        ;
 +Foc/han+Foc/kaan:%>hänkään  #        ;
 +Foc/han+Qst:%>hänkö #        ;

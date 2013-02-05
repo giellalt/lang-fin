@@ -1,22 +1,37 @@
+!! !!!Numeral inflection
 !! Numeral inflection is like nominal, except that numerals compound in all
 !! forms which requires great amount of care in the inflection patterns.
 ! FIXME: compounding
 
 ! nominatives
 LEXICON NUM_BACK_NOMINATIVE
+!!€gt-norm: Numeral nominatives
+!!€ kaksi kaksi+Num+Card+Sg+Nom two
 +Sg+Nom:0   NUM_BACK_CLIT_OPT  ;
 
 LEXICON NUM_FRONT_NOMINATIVE
+!!€ yksi yksi+Num+Card+Sg+Nom one
 +Sg+Nom:0   NUM_FRONT_CLIT_OPT  ;
 
 LEXICON NUM_BACK_PLNOM_CLIT
+!!€ kahdet kaksi+Num+Card+Pl+Nom
 +Pl+Nom:%>t     NUM_BACK_CLIT_OPT  ;
 
 LEXICON NUM_FRONT_PLNOM_CLIT
+!!€ yhdet yksi+Num+Card+Pl+Nom
 +Pl+Nom:%>t     NUM_FRONT_CLIT_OPT  ;
 
 ! basic cases
 LEXICON NUM_BACK_WEAK_SINGULARS
+!!€gt-norm: Numeral weak singulars
+!!€ kahden kaksi+Num+Card+Sg+Gen
+!!€ kahdella kaksi+Num+Card+Sg+Ade
+!!€ kahdelta kaksi+Num+Card+Sg+Abl
+!!€ kahdelle kaksi+Num+Card+Sg+All
+!!€ kahdessa kaksi+Num+Card+Sg+Ine
+!!€ kahdesta kaksi+Num+Card+Sg+Ela
+!!€ kahdeksi kaksi+Num+Card+Sg+Tra
+!!€ kahdetta kaksi+Num+Card+Sg+Abe
 0    NUM_BACK_PLNOM_CLIT   ;
 +Sg+Gen:%>n     NUM_BACK_CLIT_OPT   ;
 +Sg+Abe:%>tta   NUM_BACK_POSS_AN_OPT      ;
@@ -30,6 +45,14 @@ LEXICON NUM_BACK_WEAK_SINGULARS
 +Sg+Tra:%>ksi   NUM_BACK_CLIT_OPT     ;
 
 LEXICON NUM_FRONT_WEAK_SINGULARS
+!!€ yhden yksi+Num+Card+Sg+Gen
+!!€ yhdellä yksi+Num+Card+Sg+Ade
+!!€ yhdeltä yksi+Num+Card+Sg+Abl
+!!€ yhdelle yksi+Num+Card+Sg+All
+!!€ yhdessä yksi+Num+Card+Sg+Ine
+!!€ yhdestä yksi+Num+Card+Sg+Ela
+!!€ yhdeksi yksi+Num+Card+Sg+Tra
+!!€ yhdettä yksi+Num+Card+Sg+Abe
 0    NUM_FRONT_PLNOM_CLIT   ;
 +Sg+Gen:%>n     NUM_FRONT_CLIT_OPT   ;
 +Sg+Abe:%>ttä   NUM_FRONT_POSS_ÄN_OPT      ;
@@ -43,18 +66,29 @@ LEXICON NUM_FRONT_WEAK_SINGULARS
 +Sg+Tra:%>ksi   NUM_FRONT_CLIT_OPT     ;
 
 LEXICON NUM_BACK_STRONG_SINGULARS
+!!€gt-norm: Numeral strong singulars-
+!!€ kahtena kaksi+Num+Card+Sg+Ess
 +Sg+Ess:%>na NUM_BACK_POSS_AN_OPT      ;
 +Sg+Nom:0  NUM_BACK_POSS   ;
 +Sg+Gen:0  NUM_BACK_POSS   ;
 +Pl+Nom:0  NUM_BACK_POSS   ;
 
 LEXICON NUM_FRONT_STRONG_SINGULARS
+!!€ yhtenä yksi+Num+Card+Sg+Ess
 +Sg+Ess:%>nä NUM_FRONT_POSS_ÄN_OPT      ;
 +Sg+Nom:0  NUM_FRONT_POSS   ;
 +Sg+Gen:0  NUM_FRONT_POSS   ;
 +Pl+Nom:0  NUM_FRONT_POSS   ;
 
 LEXICON NUM_BACK_WEAK_PLURALS
+!!€gt-norm: Numeral weak plurals
+!!€ kaksilla kaksi+Num+Card+Pl+Ade
+!!€ kaksilta kaksi+Num+Card+Pl+Abl
+!!€ kaksille kaksi+Num+Card+Pl+All
+!!€ kaksissa kaksi+Num+Card+Pl+Ine
+!!€ kaksista kaksi+Num+Card+Pl+Ela
+!!€ kaksiksi kaksi+Num+Card+Pl+Tra
+!!€ kaksitta kaksi+Num+Card+Pl+Abe
 +Pl+Abe:%>i%>tta   NUM_BACK_POSS_AN_OPT      ;
 +Pl+Abl:%>i%>lta   NUM_BACK_POSS_AN_OPT      ;
 +Pl+Ade:%>i%>lla   NUM_BACK_POSS_AN_OPT      ;
@@ -66,6 +100,13 @@ LEXICON NUM_BACK_WEAK_PLURALS
 +Pl+Tra:%>i%>ksi  NUM_BACK_CLIT_OPT     ;
 
 LEXICON NUM_FRONT_WEAK_PLURALS
+!!€ yksillä yksi+Num+Card+Pl+Ade
+!!€ yksiltä yksi+Num+Card+Pl+Abl
+!!€ yksille yksi+Num+Card+Pl+All
+!!€ yksissä yksi+Num+Card+Pl+Ine
+!!€ yksistä yksi+Num+Card+Pl+Ela
+!!€ yksiksi yksi+Num+Card+Pl+Tra
+!!€ yksittä yksi+Num+Card+Pl+Abe
 +Pl+Abe:%>i%>ttä   NUM_FRONT_POSS_ÄN_OPT      ;
 +Pl+Abl:%>i%>ltä   NUM_FRONT_POSS_ÄN_OPT      ;
 +Pl+Ade:%>i%>llä   NUM_FRONT_POSS_ÄN_OPT      ;
@@ -77,109 +118,136 @@ LEXICON NUM_FRONT_WEAK_PLURALS
 +Pl+Tra:%>i%>ksi  NUM_FRONT_CLIT_OPT     ;
 
 LEXICON NUM_FRONT_STRONG_PLURALS
+!!€ kaksina kaksi+Num+Card+Pl+Ess
+!!€ kaksine kaksi+Num+Card+Com
 +Pl+Ess:%>i%>nä   NUM_FRONT_POSS_ÄN_OPT      ;
-+Cmt:%>i%>ne        NUM_FRONT_POSS_ÄN_OPT      ;
++Com:%>i%>ne        NUM_FRONT_POSS_ÄN_OPT      ;
 
 LEXICON NUM_BACK_STRONG_PLURALS
+!!€ yksinä yksi+Num+Card+Pl+Ess
+!!€ yksine yksi+Num+Card+Com
 +Pl+Ess:%>i%>na   NUM_BACK_POSS_AN_OPT      ;
-+Cmt:%>i%>ne        NUM_BACK_POSS_AN_OPT      ;
++Com:%>i%>ne        NUM_BACK_POSS_AN_OPT      ;
 
 
 ! allomorphs
 LEXICON NUM_BACK_PARTITIVE_A
+!!€gt-norm: Numeral singular partitive allomorphs
+!!€ kahdeksaa kahdeksan+Num+Card+Sg+Par eight
 +Sg+Par:%>a      NUM_BACK_POSS_OPT      ;
 
 LEXICON NUM_FRONT_PARTITIVE_Ä
+!!€ neljää neljä+Num+Card+Sg+Par four
 +Sg+Par:%>ä      NUM_FRONT_POSS_OPT      ;
 
 LEXICON NUM_BACK_PARTITIVE_A_AN
+!!€ kolmea kolme+Num+Card+Sg+Par three
 +Sg+Par:%>a      NUM_BACK_POSS_AN_OPT      ;
 
 LEXICON NUM_BACK_PARTITIVE_TA
+!!€ kuutta kuusi+Num+Card+Sg+Par six
 +Sg+Par:%>ta     NUM_BACK_POSS_AN_OPT      ;
 
 LEXICON NUM_FRONT_PARTITIVE_TÄ
+!!€ viittä viisi+Num+Card+Sg+Par five
 +Sg+Par:%>tä     NUM_FRONT_POSS_ÄN_OPT      ;
 
-LEXICON NUM_BACK_PARTITIVE_IA
-+Pl+Par:%>i%>a    NUM_BACK_POSS_AN_OPT      ;
-
-LEXICON NUM_FRONT_PARTITIVE_IÄ
-+Pl+Par:%>i%>ä    NUM_FRONT_POSS_ÄN_OPT      ;
-
-LEXICON NUM_BACK_GENITIVE_IEN
-+Pl+Gen:%>i%>en   #     ;
-+Pl+Gen:%>i%>e    NUM_BACK_POSS     ;
-
-LEXICON NUM_FRONT_GENITIVE_IEN
-+Pl+Gen:%>i%>en   #     ;
-+Pl+Gen:%>i%>e    NUM_FRONT_POSS     ;
-
-LEXICON NUM_BACK_ILLATIVE_IHIN
-+Pl+Ill:%>i%>hin   #    ;
-+Pl+Ill:%>i%>hi    NUM_BACK_POSS     ;
-
-LEXICON NUM_BACK_ILLATIVE_IIN
-+Pl+Ill:%>i%>in    #     ;
-+Pl+Ill:%>i%>i     NUM_BACK_POSS     ;
-
-LEXICON NUM_FRONT_ILLATIVE_IIN
-+Pl+Ill:%>i%>in    #     ;
-+Pl+Ill:%>i%>i     NUM_FRONT_POSS     ;
-
-LEXICON NUM_BACK_GENITIVE_IN
-+Pl+Gen:%>i%>n    #     ;
-+Pl+Gen:%>i     NUM_BACK_POSS     ;
-
-LEXICON NUM_FRONT_GENITIVE_IN
-+Pl+Gen:%>i%>n    #     ;
-+Pl+Gen:%>i     NUM_FRONT_POSS     ;
-
-LEXICON NUM_BACK_PARTITIVE_JA
-+Pl+Par:%>j%>a     NUM_BACK_POSS_AN_OPT      ;
-
-LEXICON NUM_BACK_GENITIVE_JEN
-+Pl+Gen:%>j%>en    #     ;
-+Pl+Gen:%>j%>e     NUM_BACK_POSS     ;
-
-LEXICON NUM_BACK_GENITIVE_TEN
-+Pl+Gen:%>ten    #     ;
-+Pl+Gen:%>te     NUM_BACK_POSS     ;
-
-LEXICON NUM_FRONT_GENITIVE_TEN
-+Pl+Gen:%>ten    #     ;
-+Pl+Gen:%>te     NUM_FRONT_POSS     ;
-
 LEXICON NUM_BACK_ILLATIVE_AN
+!!€gt-norm: Numeral singular illative allomorphs
+!!€ kahdeksaan kahdeksan+Num+Card+Sg+Ill
 +Sg+Ill:%>an     #         ;
 +Sg+Ill:%>a      NUM_BACK_POSS     ;
 
 LEXICON NUM_BACK_ILLATIVE_EN
+!!€ kolmeen kolme+Num+Card+Sg+Ill
 +Sg+Ill:%>en     #         ;
 +Sg+Ill:%>e      NUM_BACK_POSS     ;
 
 LEXICON NUM_FRONT_ILLATIVE_EN
+!!€ viiteen viisi+Num+Card+Sg+Ill
 +Sg+Ill:%>en     #         ;
 +Sg+Ill:%>e      NUM_FRONT_POSS     ;
 
 LEXICON NUM_BACK_ILLATIVE_IN
+!!€ miljardiin miljardi+Num+Card+Sg+Ill billion
 +Sg+Ill:%>in     #         ;
 +Sg+Ill:%>i      NUM_BACK_POSS     ;
 
 LEXICON NUM_FRONT_ILLATIVE_ÄN
+!!€ neljään neljä+Num+Card+Sg+Ill
 +Sg+Ill:%>än     #         ;
 +Sg+Ill:%>ä      NUM_FRONT_POSS     ;
 
-! possessives
-LEXICON NUM_FRONT_POSS
-+PxSg1:%>ni  NUM_FRONT_CLIT_OPT        ;
-+PxSg2:%>si  NUM_FRONT_CLIT_OPT        ;
-+PxSg3:%>nsä NUM_FRONT_CLIT_OPT        ;
-+PxPl1:%>mme NUM_FRONT_CLIT_OPT        ;
-+PxPl2:%>nne NUM_FRONT_CLIT_OPT        ;
-+PxPl3:%>nsä NUM_FRONT_CLIT_OPT        ;
+LEXICON NUM_BACK_PARTITIVE_IA
+!!€gt-norm: Numeral plural partitives
+!!€ kaksia kaksi+Num+Card+Pl+Par
++Pl+Par:%>i%>a    NUM_BACK_POSS_AN_OPT      ;
 
+LEXICON NUM_FRONT_PARTITIVE_IÄ
+!!€ neljiä neljä+Num+Card+Pl+Par
++Pl+Par:%>i%>ä    NUM_FRONT_POSS_ÄN_OPT      ;
+
+LEXICON NUM_BACK_PARTITIVE_JA
+!!€ miljardeja miljardi+Num+Card+Pl+Par
++Pl+Par:%>j%>a     NUM_BACK_POSS_AN_OPT      ;
+
+LEXICON NUM_BACK_GENITIVE_IEN
+!!€gt-norm: Numeral plural genitive allomorphs
+!!€ kaksien kaksi+Num+Card+Pl+Gen
++Pl+Gen:%>i%>en   #     ;
++Pl+Gen:%>i%>e    NUM_BACK_POSS     ;
+
+LEXICON NUM_FRONT_GENITIVE_IEN
+!!€ yksien yksi+Num+Card+Pl+Gen
++Pl+Gen:%>i%>en   #     ;
++Pl+Gen:%>i%>e    NUM_FRONT_POSS     ;
+
+LEXICON NUM_BACK_GENITIVE_JEN
+!!€ satojen sata+Num+Card+Pl+Gen hundred
++Pl+Gen:%>j%>en    #     ;
++Pl+Gen:%>j%>e     NUM_BACK_POSS     ;
+
+LEXICON NUM_BACK_GENITIVE_TEN
+!!€ kuutten kuusi+Num+Card+Pl+Gen
++Pl+Gen:%>ten    #     ;
++Pl+Gen:%>te     NUM_BACK_POSS     ;
+
+LEXICON NUM_FRONT_GENITIVE_TEN
+!!€ viitten viisi+Num+Card+Pl+Gen
++Pl+Gen:%>ten    #     ;
++Pl+Gen:%>te     NUM_FRONT_POSS     ;
+
+LEXICON NUM_BACK_GENITIVE_IN
+!!€ yhdeksäin yhdeksän+Num+Card+Pl+Gen+Use/Rare
++Pl+Gen+Use/Rare:%>i%>n    #     ;
++Pl+Gen+Use/Rare:%>i     NUM_BACK_POSS     ;
+
+LEXICON NUM_FRONT_GENITIVE_IN
+!!€ neljäin neljä+Num+Card+Pl+Gen+Use/Rare
++Pl+Gen+Use/Rare:%>i%>n    #     ;
++Pl+Gen+Use/Rare:%>i     NUM_FRONT_POSS     ;
+
+LEXICON NUM_BACK_ILLATIVE_IHIN
+!!€gt-norm: Numeral plural illaive allomorphs
+!!€ miljardeihin miljardi+Num+Card+Pl+Ill
++Pl+Ill:%>i%>hin   #    ;
++Pl+Ill:%>i%>hi    NUM_BACK_POSS     ;
+
+LEXICON NUM_BACK_ILLATIVE_IIN
+!!€ kaksiin kaksi+Num+Card+Pl+Ill
++Pl+Ill:%>i%>in    #     ;
++Pl+Ill:%>i%>i     NUM_BACK_POSS     ;
+
+LEXICON NUM_FRONT_ILLATIVE_IIN
+!!€ yksiin yksi+Num+Card+Pl+Ill
++Pl+Ill:%>i%>in    #     ;
++Pl+Ill:%>i%>i     NUM_FRONT_POSS     ;
+
+
+! possessives
 LEXICON NUM_BACK_POSS
+!!€gt-norm: Numeral possessives
+!!€ kahteni kaksi+Num+Card+Sg+Nom+PxSg1
 +PxSg1:%>ni  NUM_BACK_CLIT_OPT        ;
 +PxSg2:%>si  NUM_BACK_CLIT_OPT        ;
 +PxSg3:%>nsa NUM_BACK_CLIT_OPT        ;
@@ -187,23 +255,38 @@ LEXICON NUM_BACK_POSS
 +PxPl2:%>nne NUM_BACK_CLIT_OPT        ;
 +PxPl3:%>nsa NUM_BACK_CLIT_OPT        ;
 
+LEXICON NUM_FRONT_POSS
+!!€ yhteni yksi+Num+Card+Sg+Nom+PxSg1
++PxSg1:%>ni  NUM_FRONT_CLIT_OPT        ;
++PxSg2:%>si  NUM_FRONT_CLIT_OPT        ;
++PxSg3:%>nsä NUM_FRONT_CLIT_OPT        ;
++PxPl1:%>mme NUM_FRONT_CLIT_OPT        ;
++PxPl2:%>nne NUM_FRONT_CLIT_OPT        ;
++PxPl3:%>nsä NUM_FRONT_CLIT_OPT        ;
+
 LEXICON NUM_BACK_POSS_AN
+!!€ kolmeaan kolme+Num+Card+Sg+Par+PxSg3
 +PxSg3:%>an    NUM_BACK_CLIT_OPT     ;
 +PxPl3:%>an    NUM_BACK_CLIT_OPT     ;
 
 LEXICON NUM_BACK_POSS_EN
+!!€ kahdekseen kaksi+Num+Card+Sg+Tra+PxSg3
 +PxSg3:%>en    NUM_BACK_CLIT_OPT     ;
 +PxPl3:%>en    NUM_BACK_CLIT_OPT     ;
 
 LEXICON NUM_FRONT_POSS_EN
+!!€ neljäkseen neljä+Num+Card+Sg+Tra+PxSg3
 +PxSg3:%>en    NUM_FRONT_CLIT_OPT     ;
 +PxPl3:%>en    NUM_FRONT_CLIT_OPT     ;
 
 LEXICON NUM_FRONT_POSS_ÄN
+!!€ viittään viisi+Num+Card+Sg+Par+PxSg3
 +PxSg3:%>än    NUM_FRONT_CLIT_OPT     ;
 +PxPl3:%>än    NUM_FRONT_CLIT_OPT     ;
 
 LEXICON NUM_BACK_CLIT
+!!€gt-norm: Numeral clitics
+!!€ kaksihan kaksi+Num+Card+Sg+Nom+Foc/han
 +Foc/han:%>han   #        ;
 +Foc/han+Foc/kaan:%>hankaan  #        ;
 +Foc/han+Qst:%>hanko #        ;
@@ -232,6 +315,7 @@ LEXICON NUM_BACK_CLIT
 +Foc/kaan+Foc/pa:%>kaanpa    #        ;
 
 LEXICON NUM_FRONT_CLIT
+!!€ yksihän yksi+Num+Card+Sg+Nom+Foc/han
 +Foc/han:%>hän   #        ;
 +Foc/han+Foc/kaan:%>hänkään  #        ;
 +Foc/han+Qst:%>hänkö #        ;
