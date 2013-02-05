@@ -1,3 +1,4 @@
+!! !!!Numerals
 !! Numerals are morphologically nominals, only exception to noun inflection
 !! is that they form compounds with special agreeing patterns. Syntactically
 !! and semantically numerals are clearly separate subset of nominals. Some
@@ -11,18 +12,20 @@
 LEXICON NUM
 !! Numerals have been split in three sections, the compounding parts
 !! of cardinals and ordinals, and the non-compounding ones:
-!!€ kaksikymmentäkolmetuhatta
-!!€ kahdessadaseneljäs
-!!€ viitisen
+!!€gt-norm: Numeral basic examples
+!!€ kaksikymmentäkolmetuhatta kaksi+Num+Card+Sg+Nom#kymmenen+Num+Card+Sg+Par#kolme+Num+Card+Sg+Nom#tuhat+Num+Card+Sg+Par 23,000
+!!€ kahdessadasneljäs kahdes+Num+Ord+Sg+Nom#sadas+Num+Ord+Sg+Nom#neljäs+Num+Ord+Sg+Nom 204rd
+!!€ viitisenkymmentä viitisen+Num#kymmentä 50-ish
 0    NUM_CARD_ALL    ;
 0    NUM_ORD_ALL ;
 0    NUM_OTHERS  ;
 
 LEXICON NUM_CARD_ALL
 !! The compounding parts of cardinals are the number multiplier words.
-!!€ yksi
-!!€ viidelle
-!!€ tuhatta
+!!€gt-norm: Numeral cardinals
+!!€ yksi yksi+Num+Card+Sg+Nom one
+!!€ viidelle viisi+Num+Card+Sg+All five
+!!€ tuhatta tuhat+Num+Card+Sg+Par thousand
 yksi+Num+Card:y             NUM_YKSI  ;
 kaksi+Num+Card:ka           NUM_KAKSI ;
 kolme+Num+Card:kolm         NUM_KOLME ;
@@ -85,8 +88,9 @@ seitsämän+Use/Sub+Num+Card:seitsäm  NUM_YHDEKSÄN    ;
 
 LEXICON NUM_CARD_SUFFIX
 !! The suffixes only appear after cardinal multipliers
-!!€ viisikymmentä
-!!€ neljäsataatuhatta
+!!€gt-norm: Cardinal multiplicants
+!!€ viisikymmentä viisi+Num+Card+Sg+Nom#kymmentä
+!!€ neljäsataatuhatta neljä+Num+Card+Sg+Nom#sata+Num+Card+Sg+Par#tuhatta
 kymmentä    #   ;
 sataa       #   ;
 tuhatta     #   ;
@@ -148,9 +152,10 @@ kymmenettä      #    ;
 
 LEXICON NUM_ORD_ALL
 !! The compounding parts of ordinals are the number multiplier words.
-!!€ neljäs
-!!€ viidennelle
-!!€ tuhannetta
+!!€gt-norm: Ordinal numerals
+!!€ neljäs neljäs+Num+Ord+Sg+Nom
+!!€ viidennelle viides+Num+Ord+Sg+All
+!!€ tuhannetta tuhannes+Num+Ord+Sg+Par
 ensimmäinen+Num+Ord:ensimmäi    NUM_ENSIMMÄINEN ;
 yhdes+Num+Ord:yhde              NUM_NELJÄS ;
 toinen+Num+Ord:toi              NUM_TOINEN ;
@@ -212,8 +217,9 @@ piljardis+Num+Ord:piljardi  NUM_KOLMAS   ;
 
 LEXICON NUM_ORD_SUFFIX
 !! The suffixes only appear after cardinal multipliers
-!!€ viideskymmenes
-!!€ neljässadastuhannes
+!!€gt-norm: Ordinal multiplicants
+!!€ viideskymmenes viides+Num+Ord+Sg+Nom#kymmenes
+!!€ neljässadastuhannes neljäs+Num+Ord+Sg+Nom#sadas+Num+Ord+Sg+Nom#tuhannes
 kymmenes # ;
 sadas # ;
 tuhannes # ;
@@ -283,19 +289,20 @@ kymmenettä # ;
 LEXICON NUM_OTHERS
 !! There is a set of numbers or corresponding expressions that work like them,
 !! but are not basic cardinals or ordinals:
-!!€ viitisenkymmentä
-!!€ puolikymmentä
-yksisen+Num:yksisen#  NUM_CARD_SUFFIX   ;
-kaksisen+Num:kaksisen#    NUM_CARD_SUFFIX   ;
-yhtisen+Num:yhtisen#  NUM_CARD_SUFFIX   ;
-kahtisen+Num:kahtisen#    NUM_CARD_SUFFIX   ;
-kolmisen+Num:kolmisen#    NUM_CARD_SUFFIX   ;
-nelisen+Num:nelisen#  NUM_CARD_SUFFIX   ;
-viitisen+Num:viitisen#    NUM_CARD_SUFFIX   ;
-kuutisen+Num:kuutisen#    NUM_CARD_SUFFIX   ;
-seitsemisen+Num:seitsemisen#  NUM_CARD_SUFFIX   ;
-kahdeksisen+Num:kahdeksisen#  NUM_CARD_SUFFIX   ;
-yhdeksisen+Num:yhdeksisen#    NUM_CARD_SUFFIX   ;
+!!€gt-norm: Numeral others
+!!€ viitisenkymmentä viitisen+Num#kymmentä
+!!€ puolikymmentä puolikymmentä+Num+Sg+Nom
+yksisen+Num#:yksisen#  NUM_CARD_SUFFIX   ;
+kaksisen+Num#:kaksisen#    NUM_CARD_SUFFIX   ;
+yhtisen+Num#:yhtisen#  NUM_CARD_SUFFIX   ;
+kahtisen+Num#:kahtisen#    NUM_CARD_SUFFIX   ;
+kolmisen+Num#:kolmisen#    NUM_CARD_SUFFIX   ;
+nelisen+Num#:nelisen#  NUM_CARD_SUFFIX   ;
+viitisen+Num#:viitisen#    NUM_CARD_SUFFIX   ;
+kuutisen+Num#:kuutisen#    NUM_CARD_SUFFIX   ;
+seitsemisen+Num#:seitsemisen#  NUM_CARD_SUFFIX   ;
+kahdeksisen+Num#:kahdeksisen#  NUM_CARD_SUFFIX   ;
+yhdeksisen+Num#:yhdeksisen#    NUM_CARD_SUFFIX   ;
 pari+Num+Card:par           NUM_PARI ;
 puolikymmentä+Num+Pl+Abe:puolitta#kymmenittä  NUM_FRONT_POSS_ÄN ;
 puolikymmentä+Num+Pl+Abl:puolilta#kymmeniltä  NUM_FRONT_POSS_ÄN ;
@@ -352,16 +359,17 @@ puolisataa+Num+Sg+Tra:puoleksi#sadaksi  NUM_FRONT_CLIT_OPT ;
 
 
 LEXICON NUM_YKSI
-!!€ yksi
-!!€ yhteen
-!!€ yhtenä
-!!€ yhdessä
-!!€ yhtä
-!!€ yksiä
-!!€ yksien
-!!€ yksiin
-!!€ yksinä
-!!€ yksissä
+!!€gt-norm: Numerals 31
+!!€ yksi yksi+Num+Card+Sg+Nom
+!!€ yhteen yksi+Num+Card+Sg+Ill
+!!€ yhtenä yksi+Num+Card+Sg+Ess
+!!€ yhdessä yksi+Num+Card+Sg+Ine
+!!€ yhtä yksi+Num+Card+Sg+Par
+!!€ yksiä yksi+Num+Card+Pl+Par
+!!€ yksien yksi+Num+Card+Pl+Gen
+!!€ yksiin yksi+Num+Card+Pl+Ill
+!!€ yksinä yksi+Num+Card+Pl+Ess
+!!€ yksissä yksi+Num+Card+Pl+Ine
 0:ksi   NUM_FRONT_NOMINATIVE ;
 0:hte   NUM_FRONT_ILLATIVE_EN    ;
 0:hte   NUM_FRONT_STRONG_SINGULARS   ;
@@ -373,16 +381,16 @@ LEXICON NUM_YKSI
 0:ks    NUM_FRONT_PLURALS ;
 
 LEXICON NUM_KAKSI
-!!€ kaksi
-!!€ kahteen
-!!€ kahtena
-!!€ kahdessa
-!!€ kahta
-!!€ kaksia
-!!€ kaksien
-!!€ kaksiin
-!!€ kaksina
-!!€ kaksissa
+!!€ kaksi kaksi+Num+Card+Sg+Nom
+!!€ kahteen kaksi+Num+Card+Sg+Ill
+!!€ kahtena kaksi+Num+Card+Sg+Ess
+!!€ kahdessa kaksi+Num+Card+Sg+Ine
+!!€ kahta kaksi+Num+Card+Sg+Par
+!!€ kaksia kaksi+Num+Card+Pl+Par
+!!€ kaksien kaksi+Num+Card+Pl+Gen
+!!€ kaksiin kaksi+Num+Card+Pl+Ill
+!!€ kaksina kaksi+Num+Card+Pl+Ess
+!!€ kaksissa kaksi+Num+Card+Pl+Ine
 0:ksi   NUM_BACK_NOMINATIVE ;
 0:hte   NUM_BACK_ILLATIVE_EN    ;
 0:hte   NUM_BACK_STRONG_SINGULARS   ;
@@ -394,37 +402,39 @@ LEXICON NUM_KAKSI
 0:ks    NUM_BACK_PLURALS ;
 
 LEXICON NUM_KOLME
-!!€ kolme
-!!€ kolmeen
-!!€ kolmena
-!!€ kolmessa
-!!€ kolmea
-!!€ kolmia
-!!€ kolmien
-!!€ kolmiin
-!!€ kolmina
-!!€ kolmissa
+!!€gt-norm: Numerals 8~5
+!!€ kolme kolme+Num+Card+Sg+Nom
+!!€ kolmeen kolme+Num+Card+Sg+Ill
+!!€ kolmena kolme+Num+Card+Sg+Ess
+!!€ kolmessa kolme+Num+Card+Sg+Ine
+!!€ kolmea kolme+Num+Card+Sg+Par
+!!€ kolmia kolme+Num+Card+Pl+Par
+!!€ kolmien kolme+Num+Card+Pl+Gen
+!!€ kolmiin kolme+Num+Card+Pl+Ill
+!!€ kolmina kolme+Num+Card+Pl+Ess
+!!€ kolmissa kolme+Num+Card+Pl+Ine
 0:e     NUM_BACK_NOMINATIVE  ;
 0:e     NUM_BACK_ILLATIVE_EN    ;
 0:e     NUM_BACK_SINGULARS  ;
-0:e     NUM_BACK_PARTITIVE_A ;
+0:e     NUM_BACK_PARTITIVE_A_AN ;
 0       NUM_BACK_PARTITIVE_IA ;
 0       NUM_BACK_GENITIVE_IEN ;
 0       NUM_BACK_ILLATIVE_IIN ;
 0       NUM_BACK_PLURALS ; 
 
 LEXICON NUM_NELJÄ
-!!€ neljä
-!!€ neljää
-!!€ neljään
-!!€ neljäin
-!!€ neljänä
-!!€ neljässä
-!!€ neljiä
-!!€ neljien
-!!€ neljiin
-!!€ neljinä
-!!€ neljissä
+!!€gt-norm: Numerals 10
+!!€ neljä neljä+Num+Card+Sg+Nom
+!!€ neljää neljä+Num+Card+Sg+Par
+!!€ neljään neljä+Num+Card+Sg+Ill
+!!€ neljänä neljä+Num+Card+Sg+Ess
+!!€ neljässä neljä+Num+Card+Sg+Ine
+!!€ neljiä neljä+Num+Card+Pl+Par
+!!€ neljien neljä+Num+Card+Pl+Gen
+!!€ neljiin neljä+Num+Card+Pl+Ill
+!!€ neljinä neljä+Num+Card+Pl+Ess
+!!€ neljissä neljä+Num+Card+Pl+Ine
+!!€ neljäin neljä+Num+Card+Pl+Gen+Use/Rare
 0:ä  NUM_FRONT_NOMINATIVE ;
 0:ä  NUM_FRONT_PARTITIVE_Ä    ;
 0:ä  NUM_FRONT_ILLATIVE_ÄN    ;
@@ -436,17 +446,18 @@ LEXICON NUM_NELJÄ
 0    NUM_FRONT_PLURALS ;
 
 LEXICON NUM_VIISI
-!!€ viisi
-!!€ viiteen
-!!€ viitenä
-!!€ viidessä
-!!€ viisinä
-!!€ viisissä
-!!€ viittä
-!!€ viitten
-!!€ viisiä
-!!€ viisien
-!!€ viisiin
+!!€gt-norm: Numerals 27
+!!€ viisi viisi+Num+Card+Sg+Nom
+!!€ viiteen viisi+Num+Card+Sg+Ill
+!!€ viitenä viisi+Num+Card+Sg+Ess
+!!€ viidessä viisi+Num+Card+Sg+Ine
+!!€ viisinä viisi+Num+Card+Pl+Ess
+!!€ viisissä viisi+Num+Card+Pl+Ine
+!!€ viittä viisi+Num+Card+Sg+Par
+!!€ viitten viisi+Num+Card+Pl+Gen
+!!€ viisiä viisi+Num+Card+Pl+Par
+!!€ viisien viisi+Num+Card+Pl+Gen
+!!€ viisiin viisi+Num+Card+Pl+Ill
 0:si    NUM_FRONT_NOMINATIVE ;
 0:te    NUM_FRONT_ILLATIVE_EN    ;
 0:te    NUM_FRONT_STRONG_SINGULARS   ;
@@ -459,16 +470,16 @@ LEXICON NUM_VIISI
 0:s     NUM_FRONT_ILLATIVE_IIN   ;
 
 LEXICON NUM_KUUSI
-!!€ kuusi
-!!€ kuutena
-!!€ kuudessa
-!!€ kuusina
-!!€ kuusissa
-!!€ kuutta
-!!€ kuutten
-!!€ kuusia
-!!€ kuusien
-!!€ kuusiin
+!!€ kuusi kuusi+Num+Card+Sg+Nom
+!!€ kuutena kuusi+Num+Card+Sg+Ess
+!!€ kuudessa kuusi+Num+Card+Sg+Ine
+!!€ kuusina kuusi+Num+Card+Pl+Ess
+!!€ kuusissa kuusi+Num+Card+Pl+Ine
+!!€ kuutta kuusi+Num+Card+Sg+Par
+!!€ kuutten kuusi+Num+Card+Pl+Gen
+!!€ kuusia kuusi+Num+Card+Pl+Par
+!!€ kuusien kuusi+Num+Card+Pl+Gen
+!!€ kuusiin kuusi+Num+Card+Pl+Ill
 0:si    NUM_BACK_NOMINATIVE ;
 0:te    NUM_BACK_ILLATIVE_EN    ;
 0:te    NUM_BACK_STRONG_SINGULARS   ;
@@ -482,17 +493,18 @@ LEXICON NUM_KUUSI
 
 
 LEXICON NUM_KAHDEKSAN
-!!€ kahdeksan
-!!€ kahdeksaa
-!!€ kahdeksaan
-!!€ kahdeksain
-!!€ kahdeksassa
-!!€ kahdeksana
-!!€ kahdeksia
-!!€ kahdeksien
-!!€ kahdeksiin
-!!€ kahdeksissa
-!!€ kahdeksina
+!!€gt-norm: Numerals 10n
+!!€ kahdeksan kahdeksan+Num+Card+Sg+Nom
+!!€ kahdeksaa kahdeksan+Num+Card+Sg+Par
+!!€ kahdeksaan kahdeksan+Num+Card+Sg+Ill
+!!€ kahdeksassa kahdeksan+Num+Card+Sg+Ine
+!!€ kahdeksana kahdeksan+Num+Card+Sg+Ess
+!!€ kahdeksia kahdeksan+Num+Card+Pl+Par
+!!€ kahdeksien kahdeksan+Num+Card+Pl+Gen
+!!€ kahdeksiin kahdeksan+Num+Card+Pl+Ill
+!!€ kahdeksissa kahdeksan+Num+Card+Pl+Ine
+!!€ kahdeksina kahdeksan+Num+Card+Pl+Ess
+!!€ kahdeksain kahdeksan+Num+Card+Pl+Gen+Use/Rare
 0:an    NUM_BACK_NOMINATIVE  ;
 0:a     NUM_BACK_PARTITIVE_A    ;
 0:a     NUM_BACK_ILLATIVE_AN    ;
@@ -504,16 +516,16 @@ LEXICON NUM_KAHDEKSAN
 0       NUM_BACK_PLURALS ;
 
 LEXICON NUM_YHDEKSÄN
-!!€ yhdeksän
-!!€ yhdeksää
-!!€ yhdeksään
-!!€ yhdeksäin
-!!€ yhdeksässä
-!!€ yhdeksänä
-!!€ yhdeksiä
-!!€ yhdeksien
-!!€ yhdeksissä
-!!€ yhdeksinä
+!!€ yhdeksän yhdeksän+Num+Card+Sg+Nom
+!!€ yhdeksää yhdeksän+Num+Card+Sg+Par
+!!€ yhdeksään yhdeksän+Num+Card+Sg+Ill
+!!€ yhdeksässä yhdeksän+Num+Card+Sg+Ine
+!!€ yhdeksänä yhdeksän+Num+Card+Sg+Ess
+!!€ yhdeksiä yhdeksän+Num+Card+Pl+Par
+!!€ yhdeksien yhdeksän+Num+Card+Pl+Gen
+!!€ yhdeksissä yhdeksän+Num+Card+Pl+Ine
+!!€ yhdeksinä yhdeksän+Num+Card+Pl+Ess
+!!€ yhdeksäin yhdeksän+Num+Card+Pl+Gen+Use/Rare
 0:än    NUM_FRONT_NOMINATIVE  ;
 0:ä     NUM_FRONT_PARTITIVE_Ä    ;
 0:ä     NUM_FRONT_ILLATIVE_ÄN    ;
@@ -525,16 +537,17 @@ LEXICON NUM_YHDEKSÄN
 0       NUM_FRONT_PLURALS ;
 
 LEXICON NUM_KYMMENEN
-!!€ kymmenen
-!!€ kymmeneen
-!!€ kymmenenä
-!!€ kymmenessä
-!!€ kymmentä
-!!€ kymmenten
-!!€ kymmenien
-!!€ kymmeniin
-!!€ kymmenissä
-!!€ kymmeninä
+!!€gt-norm: Numerals 32
+!!€ kymmenen kymmenen+Num+Card+Sg+Nom
+!!€ kymmeneen kymmenen+Num+Card+Sg+Ill
+!!€ kymmenenä kymmenen+Num+Card+Sg+Ess
+!!€ kymmenessä kymmenen+Num+Card+Sg+Ine
+!!€ kymmentä kymmenen+Num+Card+Sg+Par
+!!€ kymmenten kymmenen+Num+Card+Pl+Gen
+!!€ kymmenien kymmenen+Num+Card+Pl+Gen
+!!€ kymmeniin kymmenen+Num+Card+Pl+Ill
+!!€ kymmenissä kymmenen+Num+Card+Pl+Ine
+!!€ kymmeninä kymmenen+Num+Card+Pl+Ess
 0:en    NUM_FRONT_NOMINATIVE ;
 0:e     NUM_FRONT_ILLATIVE_EN    ;
 0:e     NUM_FRONT_SINGULARS   ;
@@ -546,15 +559,16 @@ LEXICON NUM_KYMMENEN
 0       NUM_FRONT_PLURALS ;
 
 LEXICON NUM_SATA
-!!€ sata
-!!€ satana
-!!€ sadassa
-!!€ sataan
-!!€ sataa
-!!€ satojen
-!!€ satoihin
-!!€ sadoissa
-!!€ satoina
+!!€gt-norm: Numerals 9
+!!€ sata sata+Num+Card+Sg+Nom
+!!€ satana sata+Num+Card+Sg+Ess
+!!€ sadassa sata+Num+Card+Sg+Ine
+!!€ sataan sata+Num+Card+Sg+Ill
+!!€ sataa sata+Num+Card+Sg+Par
+!!€ satojen sata+Num+Card+Pl+Gen
+!!€ satoihin sata+Num+Card+Pl+Ill
+!!€ sadoissa sata+Num+Card+Pl+Ine
+!!€ satoina sata+Num+Card+Pl+Ess
 0:ta    NUM_BACK_NOMINATIVE ;
 0:da    NUM_BACK_WEAK_SINGULARS ;
 0:ta    NUM_BACK_STRONG_SINGULARS   ;
@@ -568,18 +582,19 @@ LEXICON NUM_SATA
 0:to    NUM_BACK_ILLATIVE_IHIN  ;
 
 LEXICON NUM_TUHAT
-!!€ tuhat
-!!€ tuhanteen
-!!€ tuhantena
-!!€ tuhannessa
-!!€ tuhansien
-!!€ tuhatta
-!!€ tuhansia
-!!€ tuhansien
-!!€ tuhansiin
-!!€ tuhansina
-!!€ tuhansissa
-0:s     NUM_BACK_NOMINATIVE ;
+!!€gt-norm: Numerals 46
+!!€ tuhat tuhat+Num+Card+Sg+Nom
+!!€ tuhanteen tuhat+Num+Card+Sg+Ill
+!!€ tuhantena tuhat+Num+Card+Sg+Ess
+!!€ tuhannessa tuhat+Num+Card+Sg+Ine
+!!€ tuhansien tuhat+Num+Card+Pl+Gen
+!!€ tuhatta tuhat+Num+Card+Sg+Par
+!!€ tuhansia tuhat+Num+Card+Pl+Par
+!!€ tuhansien tuhat+Num+Card+Pl+Gen
+!!€ tuhansiin tuhat+Num+Card+Pl+Ill
+!!€ tuhansina tuhat+Num+Card+Pl+Ess
+!!€ tuhansissa tuhat+Num+Card+Pl+Ine
+0:t     NUM_BACK_NOMINATIVE ;
 0:nte   NUM_BACK_ILLATIVE_EN    ;
 0:nte   NUM_BACK_STRONG_SINGULARS   ;
 0:nne   NUM_BACK_WEAK_SINGULARS   ;
@@ -591,16 +606,17 @@ LEXICON NUM_TUHAT
 0:ns    NUM_BACK_PLURALS ;
 
 LEXICON NUM_MILJOONA
-!!€ miljoona
-!!€ miljoonana
-!!€ miljoonassa
-!!€ miljoonaa
-!!€ miljoonaan
-!!€ miljoonia
-!!€ miljoonien
-!!€ miljooniin
-!!€ miljoonissa
-!!€ miljoonina
+!!€gt-norm: Numerals 10
+!!€ miljoona miljoona+Num+Card+Sg+Nom
+!!€ miljoonana miljoona+Num+Card+Sg+Ess
+!!€ miljoonassa miljoona+Num+Card+Sg+Ine
+!!€ miljoonaa miljoona+Num+Card+Sg+Par
+!!€ miljoonaan miljoona+Num+Card+Sg+Ill
+!!€ miljoonia miljoona+Num+Card+Pl+Par
+!!€ miljoonien miljoona+Num+Card+Pl+Gen
+!!€ miljooniin miljoona+Num+Card+Pl+Ill
+!!€ miljoonissa miljoona+Num+Card+Pl+Ine
+!!€ miljoonina miljoona+Num+Card+Pl+Ess
 0:a     NUM_BACK_NOMINATIVE    ;
 0:a     NUM_BACK_SINGULARS    ;
 0       NUM_BACK_PLURALS  ;
@@ -613,16 +629,17 @@ LEXICON NUM_MILJOONA
 
 
 LEXICON NUM_MILJARDI
-!!€ miljardi
-!!€ miljardina
-!!€ miljardissa
-!!€ miljardeina
-!!€ miljardeissa
-!!€ miljardia
-!!€ miljardiin
-!!€ miljardeja
-!!€ miljardien
-!!€ miljardeihin
+!!€gt-norm: Numerals 5
+!!€ miljardi miljardi+Num+Card+Sg+Nom
+!!€ miljardina miljardi+Num+Card+Sg+Ess
+!!€ miljardissa miljardi+Num+Card+Sg+Ine
+!!€ miljardeina miljardi+Num+Card+Pl+Ess
+!!€ miljardeissa miljardi+Num+Card+Pl+Ine
+!!€ miljardia miljardi+Num+Card+Sg+Par
+!!€ miljardiin miljardi+Num+Card+Sg+Ill
+!!€ miljardeja miljardi+Num+Card+Pl+Par
+!!€ miljardien miljardi+Num+Card+Pl+Gen
+!!€ miljardeihin miljardi+Num+Card+Pl+Ill
 0:i NUM_BACK_NOMINATIVE ;
 0:i NUM_BACK_SINGULARS   ;
 0:e NUM_BACK_PLURALS ;
@@ -634,7 +651,7 @@ LEXICON NUM_MILJARDI
 
 
 LEXICON NUM_GOOGOL
-!!€ Googol
+!!€ Googol Googol+Num+Card+Sg+Nom
 0   NUM_BACK_NOMINATIVE ;
 0:i NUM_BACK_SINGULARS   ;
 0:e NUM_BACK_PLURALS ;
@@ -645,16 +662,16 @@ LEXICON NUM_GOOGOL
 0   NUM_BACK_GENITIVE_IEN   ;
 
 LEXICON NUM_PARI
-!!€ pari
-!!€ parina
-!!€ parissa
-!!€ pareissa
-!!€ pareina
-!!€ paria
-!!€ pareja
-!!€ parien
-!!€ pareihin
-!!€ pariin
+!!€ pari pari+Num+Card+Sg+Nom
+!!€ parina pari+Num+Card+Sg+Ess
+!!€ parissa pari+Num+Card+Sg+Ine
+!!€ pareissa pari+Num+Card+Pl+Ine
+!!€ pareina pari+Num+Card+Pl+Ess
+!!€ paria pari+Num+Card+Sg+Par
+!!€ pareja pari+Num+Card+Pl+Par
+!!€ parien pari+Num+Card+Pl+Gen
+!!€ pareihin pari+Num+Card+Pl+Ill
+!!€ pariin pari+Num+Card+Sg+Ill
 0:i     NUM_BACK_NOMINATIVE    ;
 0:i     NUM_BACK_SINGULARS    ;
 0:e     NUM_BACK_PLURALS   ;
@@ -666,15 +683,16 @@ LEXICON NUM_PARI
 
 
 LEXICON NUM_ENSIMMÄINEN
-!!€ ensimmäinen
-!!€ ensimmäisenä
-!!€ ensimmäisessä
-!!€ ensimmäistä
-!!€ ensimmäisten
-!!€ ensimmäisiä
-!!€ ensimmäisiin
-!!€ ensimmäisinä
-!!€ ensimmäisissä
+!!€gt-norm: Numerals 38
+!!€ ensimmäinen ensimmäinen+Num+Ord+Sg+Nom
+!!€ ensimmäisenä ensimmäinen+Num+Ord+Sg+Ess
+!!€ ensimmäisessä ensimmäinen+Num+Ord+Sg+Ine
+!!€ ensimmäistä ensimmäinen+Num+Ord+Sg+Par
+!!€ ensimmäisten ensimmäinen+Num+Ord+Pl+Gen
+!!€ ensimmäisiä ensimmäinen+Num+Ord+Pl+Par
+!!€ ensimmäisiin ensimmäinen+Num+Ord+Pl+Ill
+!!€ ensimmäisinä ensimmäinen+Num+Ord+Pl+Ess
+!!€ ensimmäisissä ensimmäinen+Num+Ord+Pl+Ine
 0:nen   NUM_FRONT_NOMINATIVE ;
 0:se    NUM_FRONT_ILLATIVE_EN    ;
 0:se    NUM_FRONT_SINGULARS   ;
@@ -687,17 +705,17 @@ LEXICON NUM_ENSIMMÄINEN
 +Der/s:s    N_COMPOUND     ;
 
 LEXICON NUM_TOINEN
-!!€ toinen
-!!€ toiseen
-!!€ toista
-!!€ toisten
-!!€ toisien
-!!€ toisia
-!!€ toisiin
-!!€ toisena
-!!€ toisessa
-!!€ toisissa
-!!€ toisina
+!!€ toinen toinen+Num+Ord+Sg+Nom
+!!€ toiseen toinen+Num+Ord+Sg+Ill
+!!€ toista toinen+Num+Ord+Sg+Par
+!!€ toisten toinen+Num+Ord+Pl+Gen
+!!€ toisien toinen+Num+Ord+Pl+Gen
+!!€ toisia toinen+Num+Ord+Pl+Par
+!!€ toisiin toinen+Num+Ord+Pl+Ill
+!!€ toisena toinen+Num+Ord+Sg+Ess
+!!€ toisessa toinen+Num+Ord+Sg+Ine
+!!€ toisissa toinen+Num+Ord+Pl+Ine
+!!€ toisina toinen+Num+Ord+Pl+Ess
 0:nen   NUM_BACK_NOMINATIVE ;
 0:se    NUM_BACK_ILLATIVE_EN    ;
 0:se    NUM_BACK_SINGULARS   ;
@@ -710,15 +728,16 @@ LEXICON NUM_TOINEN
 +Der/s:s    N_COMPOUND     ;
 
 LEXICON NUM_KOLMAS
-!!€ kolmas
-!!€ kolmantena
-!!€ kolmannessa
-!!€ kolmanteen
-!!€ kolmatta
-!!€ kolmansia
-!!€ kolmansien
-!!€ kolmansissa
-!!€ kolmansina
+!!€gt-norm: Numerals 45
+!!€ kolmas kolmas+Num+Ord+Sg+Nom
+!!€ kolmantena kolmas+Num+Ord+Sg+Ess
+!!€ kolmannessa kolmas+Num+Ord+Sg+Ine
+!!€ kolmanteen kolmas+Num+Ord+Sg+Ill
+!!€ kolmatta kolmas+Num+Ord+Sg+Par
+!!€ kolmansia kolmas+Num+Ord+Pl+Par
+!!€ kolmansien kolmas+Num+Ord+Pl+Gen
+!!€ kolmansissa kolmas+Num+Ord+Pl+Ine
+!!€ kolmansina kolmas+Num+Ord+Pl+Ess
 0:s     NUM_BACK_NOMINATIVE ;
 0:nte   NUM_BACK_ILLATIVE_EN    ;
 0:nte   NUM_BACK_STRONG_SINGULARS   ;
@@ -730,16 +749,16 @@ LEXICON NUM_KOLMAS
 0:ns    NUM_BACK_PLURALS ;
 
 LEXICON NUM_NELJÄS
-!!€ neljäs
-!!€ neljänteen
-!!€ neljäntenä
-!!€ neljännessä
-!!€ neljättä
-!!€ neljänsiä
-!!€ neljänsien
-!!€ neljänsiin
-!!€ neljänsissä
-!!€ neljänsinä
+!!€ neljäs neljäs+Num+Ord+Sg+Nom
+!!€ neljänteen neljäs+Num+Ord+Sg+Ill
+!!€ neljäntenä neljäs+Num+Ord+Sg+Ess
+!!€ neljännessä neljäs+Num+Ord+Sg+Ine
+!!€ neljättä neljäs+Num+Ord+Sg+Par
+!!€ neljänsiä neljäs+Num+Ord+Pl+Par
+!!€ neljänsien neljäs+Num+Ord+Pl+Gen
+!!€ neljänsiin neljäs+Num+Ord+Pl+Ill
+!!€ neljänsissä neljäs+Num+Ord+Pl+Ine
+!!€ neljänsinä neljäs+Num+Ord+Pl+Ess
 0:s     NUM_FRONT_NOMINATIVE ;
 0:nte   NUM_FRONT_ILLATIVE_EN    ;
 0:nte   NUM_FRONT_STRONG_SINGULARS   ;
