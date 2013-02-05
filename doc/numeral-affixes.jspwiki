@@ -1,49 +1,133 @@
+!!!Numeral inflection
 Numeral inflection is like nominal, except that numerals compound in all
 forms which requires great amount of care in the inflection patterns.
 
+(subsequent examples are *Numeral nominatives*)
+* __kaksi__: {{kaksi+Num+Card+Sg+Nom}} (Eng. two)
+
+* __yksi__: {{yksi+Num+Card+Sg+Nom}} (Eng. one)
+
+* __kahdet__: {{kaksi+Num+Card+Pl+Nom}}
+
+* __yhdet__: {{yksi+Num+Card+Pl+Nom}}
+
+(subsequent examples are *Numeral weak singulars*)
+* __kahden__: {{kaksi+Num+Card+Sg+Gen}}
+* __kahdella__: {{kaksi+Num+Card+Sg+Ade}}
+* __kahdelta__: {{kaksi+Num+Card+Sg+Abl}}
+* __kahdelle__: {{kaksi+Num+Card+Sg+All}}
+* __kahdessa__: {{kaksi+Num+Card+Sg+Ine}}
+* __kahdesta__: {{kaksi+Num+Card+Sg+Ela}}
+* __kahdeksi__: {{kaksi+Num+Card+Sg+Tra}}
+* __kahdetta__: {{kaksi+Num+Card+Sg+Abe}}
+
+* __yhden__: {{yksi+Num+Card+Sg+Gen}}
+* __yhdellä__: {{yksi+Num+Card+Sg+Ade}}
+* __yhdeltä__: {{yksi+Num+Card+Sg+Abl}}
+* __yhdelle__: {{yksi+Num+Card+Sg+All}}
+* __yhdessä__: {{yksi+Num+Card+Sg+Ine}}
+* __yhdestä__: {{yksi+Num+Card+Sg+Ela}}
+* __yhdeksi__: {{yksi+Num+Card+Sg+Tra}}
+* __yhdettä__: {{yksi+Num+Card+Sg+Abe}}
+
+(subsequent examples are *Numeral strong singulars-*)
+* __kahtena__: {{kaksi+Num+Card+Sg+Ess}}
+
+* __yhtenä__: {{yksi+Num+Card+Sg+Ess}}
+
+(subsequent examples are *Numeral weak plurals*)
+* __kaksilla__: {{kaksi+Num+Card+Pl+Ade}}
+* __kaksilta__: {{kaksi+Num+Card+Pl+Abl}}
+* __kaksille__: {{kaksi+Num+Card+Pl+All}}
+* __kaksissa__: {{kaksi+Num+Card+Pl+Ine}}
+* __kaksista__: {{kaksi+Num+Card+Pl+Ela}}
+* __kaksiksi__: {{kaksi+Num+Card+Pl+Tra}}
+* __kaksitta__: {{kaksi+Num+Card+Pl+Abe}}
+
+* __yksillä__: {{yksi+Num+Card+Pl+Ade}}
+* __yksiltä__: {{yksi+Num+Card+Pl+Abl}}
+* __yksille__: {{yksi+Num+Card+Pl+All}}
+* __yksissä__: {{yksi+Num+Card+Pl+Ine}}
+* __yksistä__: {{yksi+Num+Card+Pl+Ela}}
+* __yksiksi__: {{yksi+Num+Card+Pl+Tra}}
+* __yksittä__: {{yksi+Num+Card+Pl+Abe}}
+
+* __kaksina__: {{kaksi+Num+Card+Pl+Ess}}
+* __kaksine__: {{kaksi+Num+Card+Com}}
+
+* __yksinä__: {{yksi+Num+Card+Pl+Ess}}
+* __yksine__: {{yksi+Num+Card+Com}}
 
 
+(subsequent examples are *Numeral singular partitive allomorphs*)
+* __kahdeksaa__: {{kahdeksan+Num+Card+Sg+Par}} (Eng. eight)
+
+* __neljää__: {{neljä+Num+Card+Sg+Par}} (Eng. four)
+
+* __kolmea__: {{kolme+Num+Card+Sg+Par}} (Eng. three)
+
+* __kuutta__: {{kuusi+Num+Card+Sg+Par}} (Eng. six)
+
+* __viittä__: {{viisi+Num+Card+Sg+Par}} (Eng. five)
+
+(subsequent examples are *Numeral singular illative allomorphs*)
+* __kahdeksaan__: {{kahdeksan+Num+Card+Sg+Ill}}
+
+* __kolmeen__: {{kolme+Num+Card+Sg+Ill}}
+
+* __viiteen__: {{viisi+Num+Card+Sg+Ill}}
+
+* __miljardiin__: {{miljardi+Num+Card+Sg+Ill}} (Eng. billion)
+
+* __neljään__: {{neljä+Num+Card+Sg+Ill}}
+
+(subsequent examples are *Numeral plural partitives*)
+* __kaksia__: {{kaksi+Num+Card+Pl+Par}}
+
+* __neljiä__: {{neljä+Num+Card+Pl+Par}}
+
+* __miljardeja__: {{miljardi+Num+Card+Pl+Par}}
+
+(subsequent examples are *Numeral plural genitive allomorphs*)
+* __kaksien__: {{kaksi+Num+Card+Pl+Gen}}
+
+* __yksien__: {{yksi+Num+Card+Pl+Gen}}
+
+* __satojen__: {{sata+Num+Card+Pl+Gen}} (Eng. hundred)
+
+* __kuutten__: {{kuusi+Num+Card+Pl+Gen}}
+
+* __viitten__: {{viisi+Num+Card+Pl+Gen}}
+
+* __yhdeksäin__: {{yhdeksän+Num+Card+Pl+Gen+Use/Rare}}
+
+* __neljäin__: {{neljä+Num+Card+Pl+Gen+Use/Rare}}
+
+(subsequent examples are *Numeral plural illaive allomorphs*)
+* __miljardeihin__: {{miljardi+Num+Card+Pl+Ill}}
+
+* __kaksiin__: {{kaksi+Num+Card+Pl+Ill}}
+
+* __yksiin__: {{yksi+Num+Card+Pl+Ill}}
 
 
+(subsequent examples are *Numeral possessives*)
+* __kahteni__: {{kaksi+Num+Card+Sg+Nom+PxSg1}}
 
+* __yhteni__: {{yksi+Num+Card+Sg+Nom+PxSg1}}
 
+* __kolmeaan__: {{kolme+Num+Card+Sg+Par+PxSg3}}
 
+* __kahdekseen__: {{kaksi+Num+Card+Sg+Tra+PxSg3}}
 
+* __neljäkseen__: {{neljä+Num+Card+Sg+Tra+PxSg3}}
 
+* __viittään__: {{viisi+Num+Card+Sg+Par+PxSg3}}
 
+(subsequent examples are *Numeral clitics*)
+* __kaksihan__: {{kaksi+Num+Card+Sg+Nom+Foc/han}}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* __yksihän__: {{yksi+Num+Card+Sg+Nom+Foc/han}}
 
 
 

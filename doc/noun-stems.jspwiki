@@ -57,10 +57,10 @@ illative suffix and therefore exact classification:
 ; {{talo+N+Sg+Ill}}: __taloon,__ __*taloseen__ 
 ; {{talo+N+Pl+Par}}: __taloja,__ __*taloita__ 
 ; {{talo+N+Pl+Gen}}: __talojen,__ __*taloiden,__ __*taloitten__ 
-; {{talo+N+Pl+Ill}}: __taloihin,__ __*taloisiin__ 
-* __talojuttu__: {{talo+N+Sg+Nom+Use/Circ#juttu+N+Sg+Nom}} (Eng. house thing)
-* __talonjuttu__: {{talo+N+Sg+Gen+Use/Circ#juttu+N+Sg+Nom}} (Eng. house's thing)
-* __talojenjuttu__: {{talo+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom}} (Eng. houses' thing)
+* __taloihin__: {{talo+N+Pl+Ill}}
+* __talojuttu__: {{talo+N+Sg+Nom#juttu+N+Sg+Nom}} (Eng. house thing)
+* __talonjuttu__: {{talo+N+Sg+Gen#juttu+N+Sg+Nom}} (Eng. house’s thing)
+* __talojenjuttu__: {{talo+N+Pl+Gen#juttu+N+Sg+Nom}} (Eng. houses’ thing)
 
 
 The stems ending in u are also without variationm and the bisyllabic ones
@@ -379,7 +379,7 @@ allomorphs for plural partitives and genitives:
 (subsequent examples are *Nouns 3*)
 * __tuomio__: {{tuomio+N+Sg+Nom}} (Eng. judgment)
 ; {{tuomio+N+Sg+Par}}: __tuomiota,__ __*tuomioa__ 
-; {{tuomio+N+Pl+Par}}: __tuomioita,__ __*tuomioja__ 
+* __tuomioita__: {{tuomio+N+Pl+Par}}
 ; {{tuomio+N+Pl+Gen}}: __tuomioiden,__ __tuomioitten,__ __*tuomiojen__ 
 
 * __häiriö__: {{häiriö+N+Sg+Nom}} (Eng. disruption)
@@ -1013,8 +1013,9 @@ forms.
 ; {{probleema+N+Pl+Gen}}: __probleemien,__ __probleemoiden,__ __probleemoitten__ 
 ; {{probleema+N+Pl+Ill}}: __probleemiin,__ __probleemoihin__ 
 Also less commonly:
-; {{probleema+N+Pl+Gen+Use/Rare}}: __probleemojen,__ __probleemain__ 
-* __probleemoja__: {{probleema+N+Sg+Par+Use/Rare}}
+* __probleemain__: {{probleema+N+Pl+Gen+Use/Rare}}
+* __probleemojen__: {{probleema+N+Use/Rare+Pl+Gen}}
+* __probleemoja__: {{probleema+N+Use/Rare+Pl+Par}}
 
 * __käpälä__: {{käpälä+N+Sg+Nom}} (Eng. paw)
 * __käpälää__: {{käpälä+N+Sg+Par}}
@@ -1042,7 +1043,7 @@ Some a stems with a:o variation have slightly different set of allomorphs
 There is a possible class for further variation of a:o
 in the old dictionary dictionary that is worth re-evaluating.
 
-There's one more allomorph pattern.
+There’s one more allomorph pattern.
 
 * __mörinä__: {{mörinä+N+Sg+Nom}} (Eng. murr)
 * __mörinää__: {{mörinä+N+Sg+Par}}
@@ -1178,7 +1179,7 @@ N_ZOMBIE).
 
 !Newer loan words
 The loan words that end in long vowel, and have been modified to Finnish
-orthography, have combination of long vowel stem's allomorphs for e.g
+orthography, have combination of long vowel stem’s allomorphs for e.g
 illatives. Sometimes rules for these classes of words are vague.
 
 (subsequent examples are *Nouns 20*)
@@ -1209,7 +1210,7 @@ illatives. Sometimes rules for these classes of words are vague.
 ; {{bidee+N+Pl+Gen}}: __bideiden,__ __bideitten__ 
 ; {{bidee+N+Pl+Ill}}: __bideisiin,__ __bideihin__ 
 
-There's a gap in *-ii* final loan stems.
+There’s a gap in *-ii* final loan stems.
 
 * __trikoo__: {{trikoo+N+Sg+Nom}} (Eng. tights)
 * __trikoota__: {{trikoo+N+Sg+Par}}
@@ -1250,7 +1251,7 @@ There's a gap in *-ii* final loan stems.
 ; {{miljöö+N+Pl+Gen}}: __miljöiden,__ __miljöitten__ 
 ; {{miljöö+N+Pl+Ill}}: __miljöisiin,__ __miljöihin__ 
 
-Some loan words don't end in long vowel but work like they would. The
+Some loan words don’t end in long vowel but work like they would. The
 official dictionary says these words should avoid plural genitive itten
 but not iden, in reality they may be in absolutely free variation.
 In general the rules for loan words are vague and do not always seem to
@@ -1869,10 +1870,10 @@ described here.
 Two words have exceptions in their vowel harmony patterns:
 (subsequent examples are *Nouns veri~meri*)
 * __veri__: {{veri+N+Sg+Nom}} (Eng. blood)
-; {{veri+N+Sg+Par}}: __verta,__ __vertä__ 
+; {{veri+N+Sg+Par}}: __verta,__ __*vertä__ 
 
 * __meri__: {{meri+N+Sg+Nom}} (Eng. sea)
-; {{meri+N+Sg+Par}}: __merta,__ __mertä__ 
+; {{meri+N+Sg+Par}}: __merta,__ __*mertä__ 
 
 
 (subsequent examples are *Noun uros*)
@@ -1952,7 +1953,7 @@ words to commonly be in this class are events like *häät* (wedding),
 like clothes with two somethings (as with English): *farkut* (jeans),
 *housut* (pants). It is noteworthy, that sometimes dictionaries classify
 common words as plurale tantum for semantic reasons: *joukot* (troops)
-versus *joukko* (group). We don't need that at this point.
+versus *joukko* (group). We don’t need that at this point.
 The compounds of plurale tantum words are made from singular forms:
 *farkku*kangas (jean fabric), *hää*juhla (wedding party).
 

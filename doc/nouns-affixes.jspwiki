@@ -1,21 +1,19 @@
-!!Noun inflection and derivation
+!!!Noun inflection and derivation
 Nouns and other nominals inflect in number, cases, possessives and with
 clitics, in that order. Combinations that this regular inflection can form
 is approximately 2×15×5×26=4900, so we do not show all variants in test cases
 and examples, but just central ones that are interesting and potential to
 break.
 
-!Nominatives
+!!Nominatives
 Singular nominative is the dictionary reference form for most of the words.
 
 (subsequent examples are *Noun nominatives*)
 * __talo__: {{talo+N+Sg+Nom}} (Eng. a house)
 * __taloko__: {{talo+N+Sg+Nom+Qst}}
-* __*talopä__: {{talo+N+Sg+Nom+Foc/pa}} (is not standard language)
 ; {{talo+N+Sg+Nom+Foc/han}}: __talohan,__ __*talohän__ 
 
 * __pöly__: {{pöly+N+Sg+Nom}} (Eng. dust)
-* __*pölyko__: {{pöly+N+Sg+Nom+Qst}} (is not standard language)
 
 The plural nominative attaches to singular stem. For plural words it is also
 the form that is used for dictionary lookups:
@@ -27,7 +25,7 @@ the form that is used for dictionary lookups:
 * __pölyt__: {{pöly+N+Pl+Nom}}
 * __häät__: {{häät+N+Pl+Nom}} (Eng. wedding)
 
-!Singular case inflection
+!!Singular case inflection
 The nouns can inflect in 15 regular cases. Most of the cases have one or two
 case endings, with only varying part being the harmony vowel. For nouns with
 direct consonant gradation, the most of the singular case suffixes attach
@@ -65,7 +63,7 @@ stem may be essive and possessive's of nominative or genitive:
 * __näkyni__: {{näky+N+Sg+Nom+PxSg1}}
 * __näkysi__: {{näky+N+Sg+Gen+PxSg2}}
 
-!Plural inflection
+!!Plural inflection
 
 (subsequent examples are *Noun basic plural cases*)
 * __padoilta__: {{pata+N+Pl+Abl}}
@@ -90,12 +88,12 @@ The strong plural stem of words with direct gradation contains only essive
 and comitative:
 
 * __patoina__: {{pata+N+Pl+Ess}}
-* __patoine__: {{pata+N+Cmt}}
+* __patoine__: {{pata+N+Com}}
 
 * __näkyinä__: {{näky+N+Pl+Ess}}
-* __näkyine__: {{näky+N+Cmt}}
+* __näkyine__: {{näky+N+Com}}
 
-!Cases with allomorphic variation
+!!Cases with allomorphic variation
 The nominal cases which can take several different suffixes are singular
 and plural partitives, singular and plural illatives and plural genitives.
 After stem variation the selection of these allomorphs is the main factor
@@ -280,7 +278,7 @@ And plural illative has few variants:
 * __kevät__: {{kevät+N+Sg+Nom}} (Eng. spring)
 * __keväisiin__: {{kevät+N+Pl+Ill}}
 
-!Possessive suffixes
+!!Possessive suffixes
 Possessives come optionally after the case suffixes. For consonant final
 cases the possessives assimilate or eat the final part of the case ending
 or stem.
@@ -308,7 +306,7 @@ stems:
 
 * __tönöään__: {{tönö+N+Sg+Par+PxPl3}}
 
-!Noun clitics
+!!Noun clitics
 Clitics can attach to any word-form, including one that already has a clitic.
 Clitics do not modify the form they attach to and are simply concatenated to
 the end.
@@ -334,28 +332,30 @@ the end.
 
 
 
-!Noun compounding
+!!Noun compounding
 Nouns form compounds productively. The non-final parts of regular compounds
 are singular nominatives, or singular or plural genitives of nouns. The final
 parts are nominals and inflect regularly.
 
 (subsequent examples are *Noun compounds*)
-* __talojuttu__: {{talo+N+Sg+Nom+Use/Circ#juttu+N+Sg+Nom}}
+* __talojuttu__: {{talo+N+Sg+Nom#juttu+N+Sg+Nom}}
 
-* __talonjuttu__: {{talo+N+Sg+Gen+Use/Circ#juttu+N+Sg+Nom}}
+* __talonjuttu__: {{talo+N+Sg+Gen#juttu+N+Sg+Nom}}
 
-* __naisienjuttu__: {{nainen+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom}}
+* __naisienjuttu__: {{nainen+N+Pl+Gen#juttu+N+Sg+Nom}}
 
-* __lepakoidenjuttu__: {{lepakko+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom}}
+* __lepakoidenjuttu__: {{lepakko+N+Pl+Gen#juttu+N+Sg+Nom}}
 
-* __vanhempainjuttu__: {{vanhempi+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom}}
+* __vanhempainjuttu__: {{vanhempi+N+Pl+Gen#juttu+N+Sg+Nom}}
 
-* __lepakoittenjuttu__: {{lepakko+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom}}
+* __lepakoittenjuttu__: {{lepakko+N+Pl+Gen#juttu+N+Sg+Nom}}
 
-* __talojenjuttu__: {{talo+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom}}
+* __talojenjuttu__: {{talo+N+Pl+Gen#juttu+N+Sg+Nom}}
 
-* __miestenjuttu__: {{mies+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom}}
+* __miestenjuttu__: {{mies+N+Pl+Gen#juttu+N+Sg+Nom}}
 
 
-* __talojuttu__: {{talo+N+Sg+Nom+Use/Circ#juttu+N+Sg+Nom}}
+* __aakkostamisjuttu__: {{aakkostaminen+N+Der/s#juttu+N+Sg+Nom}}
+
+* __talojuttu__: {{talo+N+Sg+Nom#juttu+N+Sg+Nom}}
 
