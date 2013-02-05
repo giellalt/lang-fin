@@ -23,18 +23,41 @@ defective or missing inflection.
 The Finnish morphological implementation uses analysis symbols mainly to
 encode morphological analyses, the rest are implemented else where. Some
 non-morphological analyses or classifications are retained for
- interoperability and historical reasons
+interoperability and historical reasons. There are further details and 
+examples of this classification in other parts of this documents; this page
+merely summarises the codes used in this version of the system.
+!Parts-of-speech
+The main morphological division of words is merely: Verbs, Nominals,
+Rest.
 The syntactic and semantic subdivision is realised in POS tags.
 The nominals consist of nouns (substantiivi), adjectives, pro words
-and numerals. Verbs are non-divisible, but inlcude infinitive and particple
+and numerals. Verbs are non-divisible, but include infinitive and particple
 forms. The others are subdivided into adpositions, adverbs and particles.
-c.f. [VISK s.v. sanaluokka|http://scripta.kotus.fi/visk/visk_termit.cgi?h_id=sCABBIDAI],
+Further reading: [VISK s.v.
+sanaluokka|http://scripta.kotus.fi/visk/visk_termit.cgi?h_id=sCABBIDAI],
 [VISK § 438|http://scripta.kotus.fi/visk/sisallys.php?p=438].
-+A +V +N +Adv    open parts of speech: Adjective, Verb, Noun, Adverb
-      +Pron      pronoun
-+Interj +Pcle    Interjections, Particles
-+Num             Numerals
+The codes:
+ * {{+V }}: Verb
+ * {{+N }}: Noun
+ * {{+A }}: Adjective
+ * {{+Num }}: Numerals
+ * {{+Adv }}: Adverb
+ * {{+Pron }}: Pronoun
+ * {{+Pcle  }}: Particle, except:
+ * {{+Interj }}: Interjection
 
+The part-of-speech analyses are typically the first:
+(subsequent examples are *Analysis examples*)
+* __kutoo__: {{kutoa+V+Act+Ind+Prs+Sg3}} (Eng. knits)
+* __talo__: {{talo+N+Sg+Nom}} (Eng. house)
+* __nopea__: {{nopea+A+Sg+Nom}} (Eng. fast)
+* __yksi__: {{yksi+Num+Card+Sg+Nom}} (Eng. one)
+* __nopeasti__: {{nopeasti+Adv}} (Eng. fast)
+* __hän__: {{hän+Pron+Pers+Sg+Nom}} (Eng. he)
+* __ahaa__: {{ahaa+Pcle}} (Eng. ah)
+* __äh__: {{äh+Interj}} (Eng. uh)
+
+!Nouns
 In nominal analyses, the proper nouns have additional subanalysis.
 Proper nouns are usually written with initial capitals–or more recently,
 totally arbitrary capitalisations, such as in brand names nVidia and ATi. 
@@ -42,55 +65,118 @@ Proper nouns do have full inflectional morphology exactly as other nouns, but
 work slightly differently in derivation and compounding. Some capitalised
 nouns may also lose capitalisation in derivation. 
 [VISK § 98|http://scripta.kotus.fi/visk/sisallys.php?p=98]
-+Prop   Propers
 
-In pronominal analyses, the semantic classes pronouns can take are shown
-in sub analyses. 
+The code for proper nouns:
+ * {{+Prop }}: Proper noun
+
+Proper noun tag follows noun analysis:
+* __Pekka__: {{Pekka+N+Prop+Sg+Nom}} (Eng. Pekka)
+
+!Pronouns
+Pronominal analyses have some semantic classes.
 [VISK § 101|http://scripta.kotus.fi/visk/sisallys.php?p=101]–104.
-+Dem +Pers +Interr   Pronoun classes
-+Rel +Qu +Refl       Pronoun classes
-+Recipr +Indef       Pronoun classes
+Codes for various semantic classes:
+ * {{+Pers  }}: Personal
+ * {{+Dem }}: Demonstrative
+ * {{+Interr }}: Interrogative
+ * {{+Rel }}: Relative
+ * {{+Qu }}: Quantor
+ * {{+Refl }}: Reflexive
+ * {{+Recipr }}: Reciprocal
+ * {{+Indef }}: Indefinite
 
-In numeral analyses, there are multiple sub-analysis classes.
+Semantic tags follow pronoun analyses:
+* __minä__: {{minä+Pron+Pers+Sg+Nom}} (Eng. I)
+* __tämä__: {{tämä+Pron+Dem+Sg+Nom}} (Eng. this)
+* __kuka__: {{kuka+Pron+Interr+Sg+Nom}} (Eng. who)
+* __joka__: {{joka+Pron+Rel+Sg+Nom}} (Eng. which)
+* __kaikki__: {{kaikki+Pron+Qu+Sg+Nom}} (Eng. every)
+* __itse__: {{itse+Pron+Refl+Sg+Nom}} (Eng. self)
+* __toistaan__: {{toinen+Pron+Recipr+Sg+Par+PxSg3}} (Eng. each other)
+* __joku__: {{joku+Pron+Qu+Indef+Sg+Nom}} (Eng. someone)
+
+!Numerals
+In numeral analyses, there are multiple analyses.
 The numerals have semantic subcategories 
 ([VISK § 770|http://scripta.kotus.fi/visk/sisallys.php?p=770]).
 The classical ordinal  numbers  have been adjectivised in current 
 descriptions ([VISK § 771|http://scripta.kotus.fi/visk/sisallys.php?p=771]),
 the  ordinal interpretation is still spelled out in subcategories. The
 numbers are often  written with digits or other specific notations.
-+Card +Ord   numeral classes
+Numeral class tags:
+ * {{+Card  }}: Cardinal
+ * {{+Ord }}: Ordinals
 
+* __kolme__: {{kolme+Num+Card+Sg+Nom}} (Eng. three)
+* __kolmas__: {{kolmas+Num+Ord+Sg+Nom}} (Eng. third)
+
+!Particles
 The particles are subcategorised syntax-wise into conjunctions for all words,
 that govern subclauses 
 ([VISK § 812|http://scripta.kotus.fi/visk/sisallys.php?p=812]). The
 conjunctions are further divided, whether the subclause is coordinant or 
 subordinant to the governing clause and few other syntactic types 
 ([VISK § 816|http://scripta.kotus.fi/visk/sisallys.php?p=816]). _N.B._ that 
-subordinating and coordinating conjucntions is motivated
+the division to subordinating and coordinating conjucntions is motivated
 by other systems, including legacy systems, whereas the grammar presents
 also different  categorisations for conjunctions (including naming
 subordination adverbials).
-+CC +CS   conjunctions
+Conjunction syntax tags:
+ * {{+CC }}: Coordinating
+ * {{+CS }}: Adverbial
 
+The conjunction tags take place of part-of-speech tags for legacy reasons:
+* __ja__: {{ja+CC}}
+* __vaikka__: {{vaikka+CS}}
+
+!Adpositions
 In adposition anlayses, the syntactic tendencies are shown in sub-analyses;
 whether they appear typically before or after their heads 
 [VISK § 687|http://scripta.kotus.fi/visk/sisallys.php?p=687].
-+Po +Pr   adposition classes
 
+Adposition syntax tags:
+ * {{+Po }}: Postposition
+ * {{+Pr }}: Preposition
+
+Adpositions are tagged in POS position:
+* __läpi__: {{läpi+Po}}
+
+!Bound root morphs
 The lexical items that appear as bound morphemes before head word are 
-classified as prefixes (VISK [VISK § 172|http://scripta.kotus.fi/visk/sisallys.php?p=172]). Prefixes are rare and mostly of foreign
-origin. The singular forms of plurale tantums are also potential prefixes.
-+Pref   Prefix
+classified as prefixes ([VISK § 
+172|http://scripta.kotus.fi/visk/sisallys.php?p=172]). Prefixes are rare and
+mostly of foreign  origin. The singular forms of plurale tantums are also
+potential prefixes.
+
+ * {{+Pref }}: Prefixes
 
 Suffixes are typically word forms or derivations that only appear as
 bound morphs. Other than that Finnish does not really have proper suffixes.
 This means that suffixed words are in effect compounds of where the last
 word just doesn't appear as free morph.
-+Suff   Suffix
+ * {{+Suff }}: Suffixes
 
+!Symbols
 Symbols are not part of linguistic data per se so we classify them according
 to the needs of end user applications
-+Punct   any punctuation
+
+ * {{+Punct }}: any punctuation
+
+The analyses for symbols are like POSes:
+* __.__: {{.+Punct}} (Eng. .)
+
+!Nominal analyses
+The analyses of nominals show the inflection in number. Nominals inflect in
+number, to mark plurality of the word. The number for nouns is either
+singular or plural.
+Further reading: [VISK § 79|http://scripta.kotus.fi/visk/sisallys.php?p=79]
+Number tags:
+ * {{+Sg }}: Singular
+ * {{+Pl }}: Plural
+
+Number tags are next to POSes in nominal analyses, and in order of morphs:
+* __padassa__: {{pata+N+Sg+Ine}} (Eng. pot)
+* __padoissa__: {{pata+N+Pl+Ine}}
 
 The analyses of nominals have case inflection marked.
 The nominals have case inflection 
@@ -98,47 +184,102 @@ The nominals have case inflection
 to mark syntactic roles
 (nominative, partitive, accusative-genitive) and semantics
 (others, partially even syntactic cases).
-+Nom +Par            +Gen   Syntactic cases
-+Ine +Ela +Ill +Ade         Locative cases
-+Abl +All +Ess +Ins         Locative cases
-+Abe +Tra +Cmt              Marginal cases
+ * {{+Nom }}: (Mostly) Syntactic cases: Nominative
+ * {{+Par }}: Partitive
+ * {{+Gen }}: Genitive
+ * {{+Ine }}: Inner Locative cases: Inessive
+ * {{+Ela }}: Elative
+ * {{+Ill }}: Illative
+ * {{+Ade }}: Outer locative cases: Adessive
+ * {{+Abl }}: Ablative
+ * {{+All }}: Allative
+ * {{+Ess }}: Others, semantic, marginal: Essive
+ * {{+Ins }}: Instructive
+ * {{+Abe }}: Abessive
+ * {{+Tra }}: Translative
+ * {{+Com }}: Comitative
 
-The analyses of a infinitive short form have lative reflecting the origins
-of the form ([VISK § 120|http://scripta.kotus.fi/visk/sisallys.php?p=120]).
-Some adpositions have same analysis in diachronic analyses.
-+Lat   Lative case
+The case is next to number and last obligatory analysis in nominals:
+* __taloa__: {{talo+N+Sg+Par}}
+* __talon__: {{talo+N+Sg+Gen}}
+* __talossa__: {{talo+N+Sg+Ine}}
+* __talosta__: {{talo+N+Sg+Ela}}
+* __taloon__: {{talo+N+Sg+Ill}}
+* __talolla__: {{talo+N+Sg+Ade}}
+* __talolta__: {{talo+N+Sg+Abl}}
+* __talolle__: {{talo+N+Sg+All}}
+* __talona__: {{talo+N+Sg+Ess}}
+* __taloin__: {{talo+N+Pl+Ins}}
+* __talotta__: {{talo+N+Sg+Abe}}
+* __taloksi__: {{talo+N+Sg+Tra}}
+* __taloine__: {{talo+N+Com}}
+
+The analyses of a infinitive short form have lative ending; this is largely
+historical ([VISK § 120|http://scripta.kotus.fi/visk/sisallys.php?p=120]).
+Some adpositions might have same analysis in diachronic analyses.
+
+ * {{+Lat }}: Lative case
 
 The analyses of certain nominals give explicit analysis for accusative case.
 The accusative case has distinctive marker in few pronouns and these are only
-cases that are analysed as accusatives. 
+cases that are analysed as accusatives.
 ([VISK § 81|http://scripta.kotus.fi/visk/sisallys.php?p=81]). 
-Other accusatives have
-the same case marking as genitive, and only use that analysis in synchronic
-anlyses.
-+Acc   Explicit accusative
-Adverbs and adpositions have some special analyses in diachronic analyses.
-c.f. ([VISK § 371|http://scripta.kotus.fi/visk/sisallys.php?p=371] – 385)
-+Prl +Distr +Tempr   Adverbial cases
+Other accusatives have the same case marking as genitive form, and only use
+that analysis in synchronic analyses.
+
+ * {{+Acc }}: Explicit accusative analysis
+
+* __hänet__: {{hän+Pron+Pers+Sg+Acc}}
+
+Adverbs and adpositions may have some special analyses in diachronic 
+analyses.
+Further reading: [VISK §
+371|http://scripta.kotus.fi/visk/sisallys.php?p=371] – 385
+
+ * {{+Prl }}: Adverbial cases: Prolative
+ * {{+Distr }}: Distributive
+ * {{+Tempr }}: Temporal
 
 
-The analyses of nominals show the inflection in number. Nominals inflect in
-number, to mark plurality of the word. The number for nouns is either
-singular or plural.
-c.f. ([VISK § 79|http://scripta.kotus.fi/visk/sisallys.php?p=79])
-+Sg +Pl   number
-
+!Possessives
 The analyses of nominals include possessive if present.
 Posessive ending indicates ownership. The possessive can take six possible
 values from singular and plural, first, second and third person references,
 where third person form is always ambiguous over plurality.
-c.f. ([VISK § 95|http://scripta.kotus.fi/visk/sisallys.php?p=95])
-+PxSg1 +PxSg2 +PxSg3 +PxPl1 +PxPl2 +PxPl3 +Px3   Possessives
+Further reading: [VISK § 95|http://scripta.kotus.fi/visk/sisallys.php?p=95]
+ * {{+PxSg1 }}: Possessives: First singular (mine)
+ * {{+PxSg2 }}: Second singular (yours)
+ * {{+PxSg3 }}: Third singular (his)
+ * {{+PxPl1 }}: First plural (ours)
+ * {{+PxPl2 }}: Second plural (yours)
+ * {{+PxPl3 }}: Third plural (theirs)
+ * {{+Px3 }}: Third ambiguous (his/theirs)
 
+* __taloni__: {{talo+N+Sg+Nom+PxSg1}}
+* __talosi__: {{talo+N+Sg+Nom+PxSg2}}
+* __talonsa__: {{talo+N+Sg+Nom+PxSg3}}
+* __talomme__: {{talo+N+Sg+Nom+PxPl1}}
+* __talonne__: {{talo+N+Sg+Nom+PxPl2}}
+
+!Compound forms
 In compound analyses, the derived compound form that is not a free morph
 is marked with special analysis.  Some words have forms only appearing in
 compounds.
-c.f. ([VISK § 406|http://scripta.kotus.fi/visk/sisallys.php?p=406])
+Further reading: [VISK § 406|http://scripta.kotus.fi/visk/sisallys.php?p=406]
 +Der/s   Compound form
+
+* __naisien__: {{nainen+N+Der/s#ien+N+Sg+Nom}} (Eng. female gum)
+
+!Finite verbs
+All verb analyses contain voice marking. For finite verb forms active voice
+is tied to personal forms and passive voice to non-personal verb endings.
+The voice is also marked in the infinite verb forms. 
+Further reading: [VISK § 110|http://scripta.kotus.fi/visk/sisallys.php?p=110]
+ * {{+Act }}: Active voice
+ * {{+Pass }}: Passive voice
+
+It is the first analysis of verb strings:
+* __kudot__: {{kutoa+V+Act+Ind+Prs+Sg2}}
 
 Finite verb form analyses have a reading for tense. The tense has two values.
 For moods other than indicative the tense is not distinctive in surface form,
@@ -147,41 +288,66 @@ The morphologically distinct forms in Finnish are only past and non-past
 tenses, while other are created syntactically and not marked in morphological
 analyses.
 
-c.f. (§[VISK § 111|http://scripta.kotus.fi/visk/sisallys.php?p=111] – 112)
-In order to keep tagging consistent across languages we call them +Prs and 
-+Prt
-+Prs +Prt   Temporal forms
+Further reading: [VISK § 111|http://scripta.kotus.fi/visk/sisallys.php?p=111]
+– 112
+ * {{+Prs }}: Non-past (present)
+ * {{+Prt }}: Past (preterite)
+
+The tense is marked in indicative forms after mood:
+* __kudon__: {{kutoa+V+Act+Ind+Prs+Sg1}}
+* __kudoin__: {{kutoa+V+Act+Ind+Prt+Sg1}}
 
 Finite verb form analyses have a reading for mood. Mood has four central
 readings and few archaic and marginal. The mood is marked in analyses for
 all finite forms, even the unmarked indicative. 
-cf. (§[VISK § 115|http://scripta.kotus.fi/visk/sisallys.php?p=115] – 118)
-+Ind +Cond +Pot +Imprt   Common moods
-+Optat +Eventv           Archaic moods
+Further reading: [VISK § 115|http://scripta.kotus.fi/visk/sisallys.php?p=115]
+– 118
+ * {{+Ind }}: Common moods: Indicative
+ * {{+Cond }}: Conditional
+ * {{+Pot }}: Potential
+ * {{+Imprt }}: Imperative
+ * {{+Optat }}: Archaic moods: Optative
+ * {{+Eventv }}: Eventive
+
+The mood is after voice in the analysis string and in morph order:
+* __kutonen__: {{kutoa+V+Act+Pot+Sg1}}
 
 Finite verb form analyses have a reading for person. Personal ending of verb
 defines the actors.  The person analysis has seven possible values,
 six for the singular and plural groups of first, second and third person
 forms, and one specifically for passive. The passive personal form is encoded
 as fourth person passive, which had been the common practice in past systems.
-cf. (§[VISK § 106|http://scripta.kotus.fi/visk/sisallys.php?p=106] – 107)
-+Sg1 +Sg2 +Sg3 +Pl3 +Pl2 +Pl1   Personal forms
+Further reading: [VISK § 106|http://scripta.kotus.fi/visk/sisallys.php?p=106]
+– 107
+ * {{+Sg1 }}: First singular
+ * {{+Sg2 }}: Second singular
+ * {{+Sg3 }}: Third singular
+ * {{+Pl1 }}: First plural
+ * {{+Pl2 }}: Second plural
+ * {{+Pl3 }}: Third plural
 
+The person is the last required analysis for verbs, after the mood:
+* __kudon__: {{kutoa+V+Act+Ind+Prs+Sg1}}
+* __kudot__: {{kutoa+V+Act+Ind+Prs+Sg2}}
+* __kutoo__: {{kutoa+V+Act+Ind+Prs+Sg3}}
+* __kudomme__: {{kutoa+V+Act+Ind+Prs+Pl1}}
+* __kudotte__: {{kutoa+V+Act+Ind+Prs+Pl2}}
+* __kutovat__: {{kutoa+V+Act+Ind+Prs+Pl3}}
 
+!Negation and verbs
 The analyses of verb for the forms that require negation verb have a special
 analysis for it.
-+ConNeg   Connegative form
+ * {{+ConNeg }}: Connegative form
+
+* __kudo__: {{kutoa+V+Ind+Prs+ConNeg}}
 
 The suitable negation verbs have sub-analysis that can be matched to negated
 forms on syntactic level.
-+Neg   Negation verb
+ * {{+Neg }}: Negation verb
 
-All verb analyses contain voice marking. For finite verb forms active voice
-is tied to personal forms and passive voice to non-personal verb endings.
-The voice is also marked in the infinite verb forms. 
-c.f. ([VISK § 110|http://scripta.kotus.fi/visk/sisallys.php?p=110])
-+Act +Pass   Voice
+* __ei__: {{ei+V+Neg+Act+Sg3}}
 
+!Infinite verb forms
 Infinitive verb forms have infinitive or nominal derivation analyses.
 In traditional grammars the infinitive forms were called I, II, III, IV and V
 infinitive, the modern grammar replaces the first three with A, E and MA
@@ -189,10 +355,23 @@ respectively. The IV infinitive, which has *minen* suffix marker, has been
 re-analysed as derivational and this is reflected in |omorfi|. The V
 infinitive is also assumed to be mainly derivational, but included here for
 reference. 
-c.f. ([VISK § 120|http://scripta.kotus.fi/visk/sisallys.php?p=120] – 121)
-The infinitives have limited nominal inflection. 
-+InfA +InfE +InfMa +Der/minen +Der/maisilla   Infinitives (of old grammars)
+Further reading: [VISK § 120|http://scripta.kotus.fi/visk/sisallys.php?p=120]
+– 121
+The infinitives have limited nominal inflection.
+ * {{+InfA }}: A infinitive (first)
+ * {{+InfE }}: E infinitive (second)
+ * {{+InfMa }}: MA infinitive (third)
+ * {{+Der/minen }}: minen derivation (fourth)
+ * {{+Der/maisilla }}: maisilla derivation (fifth)
 
+Infinitive analysis comes after voice, followed by nominal analyses:
+* __kutoa__: {{kutoa+V+Act+InfA+Sg+Lat}}
+* __kutoessa__: {{kutoa+V+Act+InfE+Sg+Ine}}
+* __kutomatta__: {{kutoa+V+Act+InfMa+Sg+Abe}}
+* __kutominen__: {{kutoa+V+Der/minen+Sg+Nom}}
+* __kutomaisillani__: {{kutoa+V+Act+Der/maisilla+PxSg1}}
+
+!Participles
 Participial verb forms have participle readings. There are 4 participle 
 forms. Like infinitives, participles in traditional grammars were named 
 I and II where NUT and VA are used in modern grammars.  The agent and
@@ -202,15 +381,35 @@ and so they are included in inflection in omorfi as well. In some grammars
 the NUT and VA participles have been called past and present participles 
 respectively, drawing parallels from other languages. The modern grammar
 avoids them as misleading but this description uses them
-c.f. [VISK § 122|http://scripta.kotus.fi/visk/sisallys.php?p=122]
-+PrfPrc +AgentPrc +PrsPrc +NegPrc   Participles
+Further reading: [VISK § 122|http://scripta.kotus.fi/visk/sisallys.php?p=122]
+ * {{+PrfPrc }}: NUT participle (first, perfect)
+ * {{+PrsPrc }}: VA participle (second, present)
+ * {{+NegPrc }}: Negation participle
+ * {{+AgPrc }}: Agent partiicple
 
+Participle analyses are right after voice, followed by adjectival analyses:
+* __kutonut__: {{kutoa+V+Act+PrfPrc+Sg+Nom}}
+* __kutova__: {{kutoa+V+Act+PrsPrc+Sg+Nom}}
+* __kutomaton__: {{kutoa+V+NegPrc+Sg+Nom}}
+* __kutomani__: {{kutoa+V+AgPrc+Sg+Nom+PxSg1}}
+
+There are number of implementations that mix up MA infinitives and Agent
+participles, and they share part of the same forms but no semantics and very
+little of syntax.
+
+!Comparation
 Adjective and some adverbial analyses are marked for comparation. The
 non-marked forms are comparative and superlative. For adjectives, comparative
 suffixes precede the nominal inflection. 
 c.f. [VISK § 300|http://scripta.kotus.fi/visk/sisallys.php?p=300]
- +Comp +Sup   Comparison of ad-words
+ * {{+Comp }}: Comparative
+ * {{+Sup }}: Superlative
 
+The comparison analysis occupies derivation spot, after POS:
+* __nopeampi__: {{nopea+A+Comp+Sg+Nom}}
+* __nopein__: {{nopea+A+Sup+Sg+Nom}}
+
+!Enclitic focus particles
 All word forms can have clitics which are analysed by their orthography.
 Clitics are suffixes which can attach almost anywhere in the ends of words,
 both verb forms and nominals. They also attach on end of other clitics,
@@ -219,26 +418,48 @@ in one word form. Two clitics have limited use: *-s* only appears in few
 verb forms and combined to other clitics and *-kA* only appears with few 
 adverbs and negation verb. 
 [VISK § 126|http://scripta.kotus.fi/visk/sisallys.php?p=126] – 131
-+Foc/han +Foc/kaan +Foc/kin +Foc/pa   Focus particles
-+Foc/s +Foc/ka                        Focus particles
-+Qst                                  Question focus
+ * {{+Foc/han }}: *-hAn*; affirmative etc.
+ * {{+Foc/kaan }}: *-kAAn*; "neither"
+ * {{+Foc/kin }}: *-kin*; "also"
+ * {{+Foc/pa }}: *-pA*; "indeed"
+ * {{+Foc/s }}: *-s*; polite?
+ * {{+Foc/ka }}: *-kA*; "nor"
+ * {{+Qst }}: *-kO*: Question focus
 
+!Derivation
+The derivation is not a central feature of this morphology, it is mainly
+used to collect new roots for dictionaries. This is roughly in order of
+perceived productivity already:
+ * {{+Der/sti }}: Common derivations: A→Adv (in A manner)
+ * {{+Der/ja }}: V→N (doer of V)
+ * {{+Der/inen }}: N→A (containing N)
+ * {{+Der/lainen }}: N→A (style of N)
+ * {{+Der/tar }}: N→N (feminine N)
+ * {{+Der/llinen }}: N→N (consisting of N)
+ * {{+Der/ton }}: N→A (without N)
+ * {{+Der/tse }}: N→Adp (via N)
+ * {{+Der/vs }}: A→N (quality of A)
+ * {{+Der/u }}: V→N (act of V)
+ * {{+Der/ttain }}: N→Adv (by amounts of N)
+ * {{+Der/ttaa }}: V→V (make someone do V)
+ * {{+Der/tattaa }}: V→V (make someone do V; "first indirection")
+ * {{+Der/tatuttaa }}: V→V (make someone do V; "second indirection")
+ * {{+Der/uus }}: A→N (A-ness)
 
-The analyses the derivations are marked as a form of their
-original root word form. Derivation forming is experimental feature and not
-present in all versions and applications using omorfi. The derived forms
-should be considered guesses at best.
-+Der/sti +Der/ja +Der/inen +Der/lainen +Der/tar   Common derivations
-+Der/llinen +Der/ton +Der/tse +Der/tse +Der/vs +Der/u   Common derivations
-+Der/ttain                                        Adverbial derivations
-+Der/ttaa +Der/tattaa +Der/tatuttaa               Reflexive loop
-+Der/uus                                          Common derivations
-
+!Usage
 The analyses of some words and word-forms indicate limitedness of usage.
 This includes common mispellings, archaic words and forms
-and otherwise rare words and forms.
-+Use/Sub +Use/Marg    Usage notes
+and otherwise rare words and forms. Especially, the forms that are in
+parentheses in lexical sources and word-forms that had the usage annotation
+in there have been carried over.
+ * {{+Use/Sub }}: Sub-standard usage
+ * {{+Use/Marg }}: Marginal
+ * {{+Use/Rare  }}: Rare
 
+Usage tags are pushed wherever appropriate:
+* __nallein__: {{nalle+N+Pl+Gen+Use/Rare}}
+
+!Dialects
 The informal language use contains different Finnish than the literary
 standard, this is marked as standard dialect (yleispuhekieli): 
 common features include
@@ -249,18 +470,28 @@ the geographical division has three levels:
 East versus West,
 East containing Savo and South-East (North?)
 West containing North, perä, keski and eteläpohjalaiset, southwest and Häme
-The third level dialect division is traditionally by town borders, be
-cautious when adding these though.
-+Dial     Unclassified dialect
-+Dial/East +Dial/West +Dial/Standard   Main dialects
-+Dial/Peräpohjalaiset +Dial/North +Dial/Savo +Dial/Southeast   Local dialects
+The third level dialect division is traditionally by "town" borders, be
+cautious when adding these though; it's not the main target of this
+mrophology.
 
+ * {{+Dial }}: any unclassified dialect
+ * {{+Dial/Standard }}: standard spoken Finnish
+ * {{+Dial/East }}: Eastern dialects
+ * {{+Dial/West }}: Western dialects
+ * {{+Dial/Southwest }}: South-western dialects
+ * {{+Dial/Häme }}: Tavastian dialects
+ * {{+Dial/Eteläpohjalaiset }}: South Osthrobotnian dialects
+ * {{+Dial/Keskipohjalaiset }}: Middle Osthrobotnian dialects
+ * {{+Dial/Peräpohjalaiset }}: North Osthrobotnian dialects
+ * {{+Dial/North }}: North Finnish dialects
+ * {{+Dial/Savo }}: Savonian dialects
+ * {{+Dial/Southeast }}: South-eastern dialects
 
+!Others
 The boundaries of compounds that are not lexicalised in the dictionary will
 have compound analyses, the compounds may also have usage tags. The 
 compounding analyses concern also syntagmatic melting mishmash.
-+Cmp      Compound boundary
-
++Use/Circ      Compound boundary
 
 The word and morpheme boundaries are used to limit the effective range of
 far-reaching rules, such as vowel harmony. The boundaries are marked by
@@ -268,8 +499,11 @@ curly bracketed hashes or underscores. The word boundaries are marked by #,
 The lexical item boundaries by ##, the inflectional morpheme boundaries 
 by >, the derivational morpheme boundaries by », and some etymological and
 soft boundaries by _.
-##   Lexical boundary
-
+ * {{## }}: Lexical boundary
+* {{#}} word boundary
+* {{>}} inflectional morph boundary
+* {{»}} derivational morph boundary
+* {{_}} weak boundary
 
 The start of the dictionary {{Root}}
 The Finnish morphological description starts from any of the parts of speech
@@ -282,8 +516,7 @@ dictionaries, prefix or hyphenated suffix
 The compound part sub-set {{NOMINAL}}
 The nominal forms can be used as non-initial parts of typical compounds
 (subsequent examples are *Nominals*)
-* __talonjuttu__: {{talo+N+Sg+Gen+Use/Circ#juttu+N+Sg+Nom}} (Eng. house thing)
-
+* __talonjuttu__: {{talo+N+Sg+Gen#juttu+N+Sg+Nom}} (Eng. house thing)
 Adjective-initial Compounds with Agreeing Inflection
 The words in dictionary paradigm class 51 refer to old closed class of
 adjective initial compounds, which follow agreeing compound pattern same
@@ -479,7 +712,7 @@ tokenisation in real-world applications
  {{yo.+N:yo.                               # ; }}: yllä oleva (aforementioned)
  {{yv.+N:yv.                               # ; }}: 
 
-!Acronym classification
+!!!Acronym classification
 Acronyms are shortenings that inflect. They all have two inflection
 patterns, one read letter by letter, and one word-by-word. They are separate
 entries in this dictionary. For example OY will have singular illatives
@@ -648,7 +881,7 @@ consonants.
 ; {{tummahko+A+Sg+Ill}}: __tummahkoon,__ __*tummahkohon,__ __*tummahkoseen__ 
 ; {{tummahko+A+Pl+Par}}: __tummahkoja,__ __*tummahkoita__ 
 ; {{tummahko+A+Pl+Gen}}: __tummahkojen,__ __*tummahkoiden,__ __*tummahkoitten__ 
-; {{tummahko+A+Pl+Ill}}: __tummahkoihin,__ __tummahkoisiin__ 
+; {{tummahko+A+Pl+Ill}}: __tummahkoihin,__ __*tummahkoisiin__ 
 
 The stems ending in u are also without variation. And the bisyllabic ones,
 as well as those formed by nut participle passive^s back vowel versions
@@ -795,13 +1028,13 @@ And ö with p:
 * __lörpöistä__: {{lörppö+A+Pl+Ela}}
 * __lörppöihin__: {{lörppö+A+Pl+Ill}}
 
-none with e finals no stem changes except p gradation.
+none with o finals no stem changes except p gradation.
 
 The quantitative gradation of t in basic changes stems for locative cases:
-veltto veltto+A+Sg+Nom lazy
-veltossa veltto+A+Sg+Ine
-veltoista veltto+A+Pl+Ela
-velttoihin veltto+A+Pl+Ill
+* __veltto__: {{veltto+A+Sg+Nom}} (Eng. lazy)
+* __veltossa__: {{veltto+A+Sg+Ine}}
+* __veltoista__: {{veltto+A+Pl+Ela}}
+* __velttoihin__: {{veltto+A+Pl+Ill}}
 
 
 The u stems with quantitative t gradation are commonest with nut participle
@@ -943,7 +1176,7 @@ As with y and t:
 * __pierty__: {{pierty+A+Sg+Nom}} (Eng. belittled)
 * __pierryssä__: {{pierty+A+Sg+Ine}}
 * __piertyihin__: {{pierty+A+Pl+Ill}}
-* __piernyistä__: {{pierty+A+Pl+Ela}}
+* __pierryistä__: {{pierty+A+Pl+Ela}}
 
 There are no adjectives ending in -rtö. Just as well, the
 class for UkU : UvU- is limited to few nouns we know.
@@ -1259,7 +1492,7 @@ a : o : 0 variations:
 Also less commonly
 * __haperojen__: {{hapera+A+Use/Rare+Pl+Gen}}
 * __haperoja__: {{hapera+A+Use/Rare+Pl+Par}}
-* __haperain__: {{hapera+A+Use/Rare+Pl+Par}}
+* __haperain__: {{hapera+A+Pl+Gen+Use/Rare}}
 
 * __höppänä__: {{höppänä+A+Sg+Nom}} (Eng. senile)
 * __höppänää__: {{höppänä+A+Sg+Par}}
@@ -1748,10 +1981,10 @@ illative suffix and therefore exact classification:
 ; {{talo+N+Sg+Ill}}: __taloon,__ __*taloseen__ 
 ; {{talo+N+Pl+Par}}: __taloja,__ __*taloita__ 
 ; {{talo+N+Pl+Gen}}: __talojen,__ __*taloiden,__ __*taloitten__ 
-; {{talo+N+Pl+Ill}}: __taloihin,__ __*taloisiin__ 
-* __talojuttu__: {{talo+N+Sg+Nom+Use/Circ#juttu+N+Sg+Nom}} (Eng. house thing)
-* __talonjuttu__: {{talo+N+Sg+Gen+Use/Circ#juttu+N+Sg+Nom}} (Eng. house's thing)
-* __talojenjuttu__: {{talo+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom}} (Eng. houses' thing)
+* __taloihin__: {{talo+N+Pl+Ill}}
+* __talojuttu__: {{talo+N+Sg+Nom#juttu+N+Sg+Nom}} (Eng. house thing)
+* __talonjuttu__: {{talo+N+Sg+Gen#juttu+N+Sg+Nom}} (Eng. house’s thing)
+* __talojenjuttu__: {{talo+N+Pl+Gen#juttu+N+Sg+Nom}} (Eng. houses’ thing)
 
 
 The stems ending in u are also without variationm and the bisyllabic ones
@@ -2070,7 +2303,7 @@ allomorphs for plural partitives and genitives:
 (subsequent examples are *Nouns 3*)
 * __tuomio__: {{tuomio+N+Sg+Nom}} (Eng. judgment)
 ; {{tuomio+N+Sg+Par}}: __tuomiota,__ __*tuomioa__ 
-; {{tuomio+N+Pl+Par}}: __tuomioita,__ __*tuomioja__ 
+* __tuomioita__: {{tuomio+N+Pl+Par}}
 ; {{tuomio+N+Pl+Gen}}: __tuomioiden,__ __tuomioitten,__ __*tuomiojen__ 
 
 * __häiriö__: {{häiriö+N+Sg+Nom}} (Eng. disruption)
@@ -2704,8 +2937,9 @@ forms.
 ; {{probleema+N+Pl+Gen}}: __probleemien,__ __probleemoiden,__ __probleemoitten__ 
 ; {{probleema+N+Pl+Ill}}: __probleemiin,__ __probleemoihin__ 
 Also less commonly:
-; {{probleema+N+Pl+Gen+Use/Rare}}: __probleemojen,__ __probleemain__ 
-* __probleemoja__: {{probleema+N+Sg+Par+Use/Rare}}
+* __probleemain__: {{probleema+N+Pl+Gen+Use/Rare}}
+* __probleemojen__: {{probleema+N+Use/Rare+Pl+Gen}}
+* __probleemoja__: {{probleema+N+Use/Rare+Pl+Par}}
 
 * __käpälä__: {{käpälä+N+Sg+Nom}} (Eng. paw)
 * __käpälää__: {{käpälä+N+Sg+Par}}
@@ -2733,7 +2967,7 @@ Some a stems with a:o variation have slightly different set of allomorphs
 There is a possible class for further variation of a:o
 in the old dictionary dictionary that is worth re-evaluating.
 
-There's one more allomorph pattern.
+There’s one more allomorph pattern.
 
 * __mörinä__: {{mörinä+N+Sg+Nom}} (Eng. murr)
 * __mörinää__: {{mörinä+N+Sg+Par}}
@@ -2869,7 +3103,7 @@ N_ZOMBIE).
 
 !Newer loan words
 The loan words that end in long vowel, and have been modified to Finnish
-orthography, have combination of long vowel stem's allomorphs for e.g
+orthography, have combination of long vowel stem’s allomorphs for e.g
 illatives. Sometimes rules for these classes of words are vague.
 
 (subsequent examples are *Nouns 20*)
@@ -2900,7 +3134,7 @@ illatives. Sometimes rules for these classes of words are vague.
 ; {{bidee+N+Pl+Gen}}: __bideiden,__ __bideitten__ 
 ; {{bidee+N+Pl+Ill}}: __bideisiin,__ __bideihin__ 
 
-There's a gap in *-ii* final loan stems.
+There’s a gap in *-ii* final loan stems.
 
 * __trikoo__: {{trikoo+N+Sg+Nom}} (Eng. tights)
 * __trikoota__: {{trikoo+N+Sg+Par}}
@@ -2941,7 +3175,7 @@ There's a gap in *-ii* final loan stems.
 ; {{miljöö+N+Pl+Gen}}: __miljöiden,__ __miljöitten__ 
 ; {{miljöö+N+Pl+Ill}}: __miljöisiin,__ __miljöihin__ 
 
-Some loan words don't end in long vowel but work like they would. The
+Some loan words don’t end in long vowel but work like they would. The
 official dictionary says these words should avoid plural genitive itten
 but not iden, in reality they may be in absolutely free variation.
 In general the rules for loan words are vague and do not always seem to
@@ -3560,10 +3794,10 @@ described here.
 Two words have exceptions in their vowel harmony patterns:
 (subsequent examples are *Nouns veri~meri*)
 * __veri__: {{veri+N+Sg+Nom}} (Eng. blood)
-; {{veri+N+Sg+Par}}: __verta,__ __vertä__ 
+; {{veri+N+Sg+Par}}: __verta,__ __*vertä__ 
 
 * __meri__: {{meri+N+Sg+Nom}} (Eng. sea)
-; {{meri+N+Sg+Par}}: __merta,__ __mertä__ 
+; {{meri+N+Sg+Par}}: __merta,__ __*mertä__ 
 
 
 (subsequent examples are *Noun uros*)
@@ -3643,7 +3877,7 @@ words to commonly be in this class are events like *häät* (wedding),
 like clothes with two somethings (as with English): *farkut* (jeans),
 *housut* (pants). It is noteworthy, that sometimes dictionaries classify
 common words as plurale tantum for semantic reasons: *joukot* (troops)
-versus *joukko* (group). We don't need that at this point.
+versus *joukko* (group). We don’t need that at this point.
 The compounds of plurale tantum words are made from singular forms:
 *farkku*kangas (jean fabric), *hää*juhla (wedding party).
 
@@ -3949,6 +4183,7 @@ The compounds of plurale tantum words are made from singular forms:
 
 
 
+!!!Numerals
 Numerals are morphologically nominals, only exception to noun inflection
 is that they form compounds with special agreeing patterns. Syntactically
 and semantically numerals are clearly separate subset of nominals. Some
@@ -3957,250 +4192,273 @@ nominal types. Numerals have two subclasses, cardinals and ordinals.
 
 Numerals have been split in three sections, the compounding parts
 of cardinals and ordinals, and the non-compounding ones:
-* __kaksikymmentäkolmetuhatta__
-* __kahdessadaseneljäs__
-* __viitisen__
+(subsequent examples are *Numeral basic examples*)
+* __kaksikymmentäkolmetuhatta__: {{kaksi+Num+Card+Sg+Nom#kymmenen+Num+Card+Sg+Par#kolme+Num+Card+Sg+Nom#tuhat+Num+Card+Sg+Par}} (Eng. 23,000)
+* __kahdessadasneljäs__: {{kahdes+Num+Ord+Sg+Nom#sadas+Num+Ord+Sg+Nom#neljäs+Num+Ord+Sg+Nom}} (Eng. 204rd)
+* __viitisenkymmentä__: {{viitisen+Num#kymmentä}} (Eng. 50-ish)
 
 The compounding parts of cardinals are the number multiplier words.
-* __yksi__
-* __viidelle__
-* __tuhatta__
+(subsequent examples are *Numeral cardinals*)
+* __yksi__: {{yksi+Num+Card+Sg+Nom}} (Eng. one)
+* __viidelle__: {{viisi+Num+Card+Sg+All}} (Eng. five)
+* __tuhatta__: {{tuhat+Num+Card+Sg+Par}} (Eng. thousand)
 
 The suffixes only appear after cardinal multipliers
-* __viisikymmentä__
-* __neljäsataatuhatta__
+(subsequent examples are *Cardinal multiplicants*)
+* __viisikymmentä__: {{viisi+Num+Card+Sg+Nom#kymmentä}}
+* __neljäsataatuhatta__: {{neljä+Num+Card+Sg+Nom#sata+Num+Card+Sg+Par#tuhatta}}
 
 The compounding parts of ordinals are the number multiplier words.
-* __neljäs__
-* __viidennelle__
-* __tuhannetta__
+(subsequent examples are *Ordinal numerals*)
+* __neljäs__: {{neljäs+Num+Ord+Sg+Nom}}
+* __viidennelle__: {{viides+Num+Ord+Sg+All}}
+* __tuhannetta__: {{tuhannes+Num+Ord+Sg+Par}}
 
 The suffixes only appear after cardinal multipliers
-* __viideskymmenes__
-* __neljässadastuhannes__
+(subsequent examples are *Ordinal multiplicants*)
+* __viideskymmenes__: {{viides+Num+Ord+Sg+Nom#kymmenes}}
+* __neljässadastuhannes__: {{neljäs+Num+Ord+Sg+Nom#sadas+Num+Ord+Sg+Nom#tuhannes}}
 
 There is a set of numbers or corresponding expressions that work like them,
 but are not basic cardinals or ordinals:
-* __viitisenkymmentä__
-* __puolikymmentä__
+(subsequent examples are *Numeral others*)
+* __viitisenkymmentä__: {{viitisen+Num#kymmentä}}
+* __puolikymmentä__: {{puolikymmentä+Num+Sg+Nom}}
+
+!!Numeral stem variation
+Numerals follow the same stem variation patterns as nouns, some of these
+being very rare to extinct for nouns. 
+(subsequent examples are *Numerals 31*)
+* __yksi__: {{yksi+Num+Card+Sg+Nom}}
+* __yhteen__: {{yksi+Num+Card+Sg+Ill}}
+* __yhtenä__: {{yksi+Num+Card+Sg+Ess}}
+* __yhdessä__: {{yksi+Num+Card+Sg+Ine}}
+* __yhtä__: {{yksi+Num+Card+Sg+Par}}
+* __yksiä__: {{yksi+Num+Card+Pl+Par}}
+* __yksien__: {{yksi+Num+Card+Pl+Gen}}
+* __yksiin__: {{yksi+Num+Card+Pl+Ill}}
+* __yksinä__: {{yksi+Num+Card+Pl+Ess}}
+* __yksissä__: {{yksi+Num+Card+Pl+Ine}}
+
+* __kaksi__: {{kaksi+Num+Card+Sg+Nom}}
+* __kahteen__: {{kaksi+Num+Card+Sg+Ill}}
+* __kahtena__: {{kaksi+Num+Card+Sg+Ess}}
+* __kahdessa__: {{kaksi+Num+Card+Sg+Ine}}
+* __kahta__: {{kaksi+Num+Card+Sg+Par}}
+* __kaksia__: {{kaksi+Num+Card+Pl+Par}}
+* __kaksien__: {{kaksi+Num+Card+Pl+Gen}}
+* __kaksiin__: {{kaksi+Num+Card+Pl+Ill}}
+* __kaksina__: {{kaksi+Num+Card+Pl+Ess}}
+* __kaksissa__: {{kaksi+Num+Card+Pl+Ine}}
+
+(subsequent examples are *Numerals 8~5*)
+* __kolme__: {{kolme+Num+Card+Sg+Nom}}
+* __kolmeen__: {{kolme+Num+Card+Sg+Ill}}
+* __kolmena__: {{kolme+Num+Card+Sg+Ess}}
+* __kolmessa__: {{kolme+Num+Card+Sg+Ine}}
+* __kolmea__: {{kolme+Num+Card+Sg+Par}}
+* __kolmia__: {{kolme+Num+Card+Pl+Par}}
+* __kolmien__: {{kolme+Num+Card+Pl+Gen}}
+* __kolmiin__: {{kolme+Num+Card+Pl+Ill}}
+* __kolmina__: {{kolme+Num+Card+Pl+Ess}}
+* __kolmissa__: {{kolme+Num+Card+Pl+Ine}}
+
+(subsequent examples are *Numerals 10*)
+* __neljä__: {{neljä+Num+Card+Sg+Nom}}
+* __neljää__: {{neljä+Num+Card+Sg+Par}}
+* __neljään__: {{neljä+Num+Card+Sg+Ill}}
+* __neljänä__: {{neljä+Num+Card+Sg+Ess}}
+* __neljässä__: {{neljä+Num+Card+Sg+Ine}}
+* __neljiä__: {{neljä+Num+Card+Pl+Par}}
+* __neljien__: {{neljä+Num+Card+Pl+Gen}}
+* __neljiin__: {{neljä+Num+Card+Pl+Ill}}
+* __neljinä__: {{neljä+Num+Card+Pl+Ess}}
+* __neljissä__: {{neljä+Num+Card+Pl+Ine}}
+* __neljäin__: {{neljä+Num+Card+Pl+Gen+Use/Rare}}
+
+(subsequent examples are *Numerals 27*)
+* __viisi__: {{viisi+Num+Card+Sg+Nom}}
+* __viiteen__: {{viisi+Num+Card+Sg+Ill}}
+* __viitenä__: {{viisi+Num+Card+Sg+Ess}}
+* __viidessä__: {{viisi+Num+Card+Sg+Ine}}
+* __viisinä__: {{viisi+Num+Card+Pl+Ess}}
+* __viisissä__: {{viisi+Num+Card+Pl+Ine}}
+* __viittä__: {{viisi+Num+Card+Sg+Par}}
+* __viitten__: {{viisi+Num+Card+Pl+Gen}}
+* __viisiä__: {{viisi+Num+Card+Pl+Par}}
+* __viisien__: {{viisi+Num+Card+Pl+Gen}}
+* __viisiin__: {{viisi+Num+Card+Pl+Ill}}
+
+* __kuusi__: {{kuusi+Num+Card+Sg+Nom}}
+* __kuutena__: {{kuusi+Num+Card+Sg+Ess}}
+* __kuudessa__: {{kuusi+Num+Card+Sg+Ine}}
+* __kuusina__: {{kuusi+Num+Card+Pl+Ess}}
+* __kuusissa__: {{kuusi+Num+Card+Pl+Ine}}
+* __kuutta__: {{kuusi+Num+Card+Sg+Par}}
+* __kuutten__: {{kuusi+Num+Card+Pl+Gen}}
+* __kuusia__: {{kuusi+Num+Card+Pl+Par}}
+* __kuusien__: {{kuusi+Num+Card+Pl+Gen}}
+* __kuusiin__: {{kuusi+Num+Card+Pl+Ill}}
 
 
-* __yksi__
-* __yhteen__
-* __yhtenä__
-* __yhdessä__
-* __yhtä__
-* __yksiä__
-* __yksien__
-* __yksiin__
-* __yksinä__
-* __yksissä__
+(subsequent examples are *Numerals 10n*)
+* __kahdeksan__: {{kahdeksan+Num+Card+Sg+Nom}}
+* __kahdeksaa__: {{kahdeksan+Num+Card+Sg+Par}}
+* __kahdeksaan__: {{kahdeksan+Num+Card+Sg+Ill}}
+* __kahdeksassa__: {{kahdeksan+Num+Card+Sg+Ine}}
+* __kahdeksana__: {{kahdeksan+Num+Card+Sg+Ess}}
+* __kahdeksia__: {{kahdeksan+Num+Card+Pl+Par}}
+* __kahdeksien__: {{kahdeksan+Num+Card+Pl+Gen}}
+* __kahdeksiin__: {{kahdeksan+Num+Card+Pl+Ill}}
+* __kahdeksissa__: {{kahdeksan+Num+Card+Pl+Ine}}
+* __kahdeksina__: {{kahdeksan+Num+Card+Pl+Ess}}
+* __kahdeksain__: {{kahdeksan+Num+Card+Pl+Gen+Use/Rare}}
 
-* __kaksi__
-* __kahteen__
-* __kahtena__
-* __kahdessa__
-* __kahta__
-* __kaksia__
-* __kaksien__
-* __kaksiin__
-* __kaksina__
-* __kaksissa__
+* __yhdeksän__: {{yhdeksän+Num+Card+Sg+Nom}}
+* __yhdeksää__: {{yhdeksän+Num+Card+Sg+Par}}
+* __yhdeksään__: {{yhdeksän+Num+Card+Sg+Ill}}
+* __yhdeksässä__: {{yhdeksän+Num+Card+Sg+Ine}}
+* __yhdeksänä__: {{yhdeksän+Num+Card+Sg+Ess}}
+* __yhdeksiä__: {{yhdeksän+Num+Card+Pl+Par}}
+* __yhdeksien__: {{yhdeksän+Num+Card+Pl+Gen}}
+* __yhdeksissä__: {{yhdeksän+Num+Card+Pl+Ine}}
+* __yhdeksinä__: {{yhdeksän+Num+Card+Pl+Ess}}
+* __yhdeksäin__: {{yhdeksän+Num+Card+Pl+Gen+Use/Rare}}
 
-* __kolme__
-* __kolmeen__
-* __kolmena__
-* __kolmessa__
-* __kolmea__
-* __kolmia__
-* __kolmien__
-* __kolmiin__
-* __kolmina__
-* __kolmissa__
+(subsequent examples are *Numerals 32*)
+* __kymmenen__: {{kymmenen+Num+Card+Sg+Nom}}
+* __kymmeneen__: {{kymmenen+Num+Card+Sg+Ill}}
+* __kymmenenä__: {{kymmenen+Num+Card+Sg+Ess}}
+* __kymmenessä__: {{kymmenen+Num+Card+Sg+Ine}}
+* __kymmentä__: {{kymmenen+Num+Card+Sg+Par}}
+* __kymmenten__: {{kymmenen+Num+Card+Pl+Gen}}
+* __kymmenien__: {{kymmenen+Num+Card+Pl+Gen}}
+* __kymmeniin__: {{kymmenen+Num+Card+Pl+Ill}}
+* __kymmenissä__: {{kymmenen+Num+Card+Pl+Ine}}
+* __kymmeninä__: {{kymmenen+Num+Card+Pl+Ess}}
 
-* __neljä__
-* __neljää__
-* __neljään__
-* __neljäin__
-* __neljänä__
-* __neljässä__
-* __neljiä__
-* __neljien__
-* __neljiin__
-* __neljinä__
-* __neljissä__
+(subsequent examples are *Numerals 9*)
+* __sata__: {{sata+Num+Card+Sg+Nom}}
+* __satana__: {{sata+Num+Card+Sg+Ess}}
+* __sadassa__: {{sata+Num+Card+Sg+Ine}}
+* __sataan__: {{sata+Num+Card+Sg+Ill}}
+* __sataa__: {{sata+Num+Card+Sg+Par}}
+* __satojen__: {{sata+Num+Card+Pl+Gen}}
+* __satoihin__: {{sata+Num+Card+Pl+Ill}}
+* __sadoissa__: {{sata+Num+Card+Pl+Ine}}
+* __satoina__: {{sata+Num+Card+Pl+Ess}}
 
-* __viisi__
-* __viiteen__
-* __viitenä__
-* __viidessä__
-* __viisinä__
-* __viisissä__
-* __viittä__
-* __viitten__
-* __viisiä__
-* __viisien__
-* __viisiin__
+(subsequent examples are *Numerals 46*)
+* __tuhat__: {{tuhat+Num+Card+Sg+Nom}}
+* __tuhanteen__: {{tuhat+Num+Card+Sg+Ill}}
+* __tuhantena__: {{tuhat+Num+Card+Sg+Ess}}
+* __tuhannessa__: {{tuhat+Num+Card+Sg+Ine}}
+* __tuhansien__: {{tuhat+Num+Card+Pl+Gen}}
+* __tuhatta__: {{tuhat+Num+Card+Sg+Par}}
+* __tuhansia__: {{tuhat+Num+Card+Pl+Par}}
+* __tuhansien__: {{tuhat+Num+Card+Pl+Gen}}
+* __tuhansiin__: {{tuhat+Num+Card+Pl+Ill}}
+* __tuhansina__: {{tuhat+Num+Card+Pl+Ess}}
+* __tuhansissa__: {{tuhat+Num+Card+Pl+Ine}}
 
-* __kuusi__
-* __kuutena__
-* __kuudessa__
-* __kuusina__
-* __kuusissa__
-* __kuutta__
-* __kuutten__
-* __kuusia__
-* __kuusien__
-* __kuusiin__
-
-
-* __kahdeksan__
-* __kahdeksaa__
-* __kahdeksaan__
-* __kahdeksain__
-* __kahdeksassa__
-* __kahdeksana__
-* __kahdeksia__
-* __kahdeksien__
-* __kahdeksiin__
-* __kahdeksissa__
-* __kahdeksina__
-
-* __yhdeksän__
-* __yhdeksää__
-* __yhdeksään__
-* __yhdeksäin__
-* __yhdeksässä__
-* __yhdeksänä__
-* __yhdeksiä__
-* __yhdeksien__
-* __yhdeksissä__
-* __yhdeksinä__
-
-* __kymmenen__
-* __kymmeneen__
-* __kymmenenä__
-* __kymmenessä__
-* __kymmentä__
-* __kymmenten__
-* __kymmenien__
-* __kymmeniin__
-* __kymmenissä__
-* __kymmeninä__
-
-* __sata__
-* __satana__
-* __sadassa__
-* __sataan__
-* __sataa__
-* __satojen__
-* __satoihin__
-* __sadoissa__
-* __satoina__
-
-* __tuhat__
-* __tuhanteen__
-* __tuhantena__
-* __tuhannessa__
-* __tuhansien__
-* __tuhatta__
-* __tuhansia__
-* __tuhansien__
-* __tuhansiin__
-* __tuhansina__
-* __tuhansissa__
-
-* __miljoona__
-* __miljoonana__
-* __miljoonassa__
-* __miljoonaa__
-* __miljoonaan__
-* __miljoonia__
-* __miljoonien__
-* __miljooniin__
-* __miljoonissa__
-* __miljoonina__
+(subsequent examples are *Numerals 10*)
+* __miljoona__: {{miljoona+Num+Card+Sg+Nom}}
+* __miljoonana__: {{miljoona+Num+Card+Sg+Ess}}
+* __miljoonassa__: {{miljoona+Num+Card+Sg+Ine}}
+* __miljoonaa__: {{miljoona+Num+Card+Sg+Par}}
+* __miljoonaan__: {{miljoona+Num+Card+Sg+Ill}}
+* __miljoonia__: {{miljoona+Num+Card+Pl+Par}}
+* __miljoonien__: {{miljoona+Num+Card+Pl+Gen}}
+* __miljooniin__: {{miljoona+Num+Card+Pl+Ill}}
+* __miljoonissa__: {{miljoona+Num+Card+Pl+Ine}}
+* __miljoonina__: {{miljoona+Num+Card+Pl+Ess}}
 
 
-* __miljardi__
-* __miljardina__
-* __miljardissa__
-* __miljardeina__
-* __miljardeissa__
-* __miljardia__
-* __miljardiin__
-* __miljardeja__
-* __miljardien__
-* __miljardeihin__
+(subsequent examples are *Numerals 5*)
+* __miljardi__: {{miljardi+Num+Card+Sg+Nom}}
+* __miljardina__: {{miljardi+Num+Card+Sg+Ess}}
+* __miljardissa__: {{miljardi+Num+Card+Sg+Ine}}
+* __miljardeina__: {{miljardi+Num+Card+Pl+Ess}}
+* __miljardeissa__: {{miljardi+Num+Card+Pl+Ine}}
+* __miljardia__: {{miljardi+Num+Card+Sg+Par}}
+* __miljardiin__: {{miljardi+Num+Card+Sg+Ill}}
+* __miljardeja__: {{miljardi+Num+Card+Pl+Par}}
+* __miljardien__: {{miljardi+Num+Card+Pl+Gen}}
+* __miljardeihin__: {{miljardi+Num+Card+Pl+Ill}}
 
 
-* __Googol__
+* __Googol__: {{Googol+Num+Card+Sg+Nom}}
 
-* __pari__
-* __parina__
-* __parissa__
-* __pareissa__
-* __pareina__
-* __paria__
-* __pareja__
-* __parien__
-* __pareihin__
-* __pariin__
-
-
-* __ensimmäinen__
-* __ensimmäisenä__
-* __ensimmäisessä__
-* __ensimmäistä__
-* __ensimmäisten__
-* __ensimmäisiä__
-* __ensimmäisiin__
-* __ensimmäisinä__
-* __ensimmäisissä__
-
-* __toinen__
-* __toiseen__
-* __toista__
-* __toisten__
-* __toisien__
-* __toisia__
-* __toisiin__
-* __toisena__
-* __toisessa__
-* __toisissa__
-* __toisina__
-
-* __kolmas__
-* __kolmantena__
-* __kolmannessa__
-* __kolmanteen__
-* __kolmatta__
-* __kolmansia__
-* __kolmansien__
-* __kolmansissa__
-* __kolmansina__
-
-* __neljäs__
-* __neljänteen__
-* __neljäntenä__
-* __neljännessä__
-* __neljättä__
-* __neljänsiä__
-* __neljänsien__
-* __neljänsiin__
-* __neljänsissä__
-* __neljänsinä__
+* __pari__: {{pari+Num+Card+Sg+Nom}}
+* __parina__: {{pari+Num+Card+Sg+Ess}}
+* __parissa__: {{pari+Num+Card+Sg+Ine}}
+* __pareissa__: {{pari+Num+Card+Pl+Ine}}
+* __pareina__: {{pari+Num+Card+Pl+Ess}}
+* __paria__: {{pari+Num+Card+Sg+Par}}
+* __pareja__: {{pari+Num+Card+Pl+Par}}
+* __parien__: {{pari+Num+Card+Pl+Gen}}
+* __pareihin__: {{pari+Num+Card+Pl+Ill}}
+* __pariin__: {{pari+Num+Card+Sg+Ill}}
 
 
+(subsequent examples are *Numerals 38*)
+* __ensimmäinen__: {{ensimmäinen+Num+Ord+Sg+Nom}}
+* __ensimmäisenä__: {{ensimmäinen+Num+Ord+Sg+Ess}}
+* __ensimmäisessä__: {{ensimmäinen+Num+Ord+Sg+Ine}}
+* __ensimmäistä__: {{ensimmäinen+Num+Ord+Sg+Par}}
+* __ensimmäisten__: {{ensimmäinen+Num+Ord+Pl+Gen}}
+* __ensimmäisiä__: {{ensimmäinen+Num+Ord+Pl+Par}}
+* __ensimmäisiin__: {{ensimmäinen+Num+Ord+Pl+Ill}}
+* __ensimmäisinä__: {{ensimmäinen+Num+Ord+Pl+Ess}}
+* __ensimmäisissä__: {{ensimmäinen+Num+Ord+Pl+Ine}}
+
+* __toinen__: {{toinen+Num+Ord+Sg+Nom}}
+* __toiseen__: {{toinen+Num+Ord+Sg+Ill}}
+* __toista__: {{toinen+Num+Ord+Sg+Par}}
+* __toisten__: {{toinen+Num+Ord+Pl+Gen}}
+* __toisien__: {{toinen+Num+Ord+Pl+Gen}}
+* __toisia__: {{toinen+Num+Ord+Pl+Par}}
+* __toisiin__: {{toinen+Num+Ord+Pl+Ill}}
+* __toisena__: {{toinen+Num+Ord+Sg+Ess}}
+* __toisessa__: {{toinen+Num+Ord+Sg+Ine}}
+* __toisissa__: {{toinen+Num+Ord+Pl+Ine}}
+* __toisina__: {{toinen+Num+Ord+Pl+Ess}}
+
+(subsequent examples are *Numerals 45*)
+* __kolmas__: {{kolmas+Num+Ord+Sg+Nom}}
+* __kolmantena__: {{kolmas+Num+Ord+Sg+Ess}}
+* __kolmannessa__: {{kolmas+Num+Ord+Sg+Ine}}
+* __kolmanteen__: {{kolmas+Num+Ord+Sg+Ill}}
+* __kolmatta__: {{kolmas+Num+Ord+Sg+Par}}
+* __kolmansia__: {{kolmas+Num+Ord+Pl+Par}}
+* __kolmansien__: {{kolmas+Num+Ord+Pl+Gen}}
+* __kolmansissa__: {{kolmas+Num+Ord+Pl+Ine}}
+* __kolmansina__: {{kolmas+Num+Ord+Pl+Ess}}
+
+* __neljäs__: {{neljäs+Num+Ord+Sg+Nom}}
+* __neljänteen__: {{neljäs+Num+Ord+Sg+Ill}}
+* __neljäntenä__: {{neljäs+Num+Ord+Sg+Ess}}
+* __neljännessä__: {{neljäs+Num+Ord+Sg+Ine}}
+* __neljättä__: {{neljäs+Num+Ord+Sg+Par}}
+* __neljänsiä__: {{neljäs+Num+Ord+Pl+Par}}
+* __neljänsien__: {{neljäs+Num+Ord+Pl+Gen}}
+* __neljänsiin__: {{neljäs+Num+Ord+Pl+Ill}}
+* __neljänsissä__: {{neljäs+Num+Ord+Pl+Ine}}
+* __neljänsinä__: {{neljäs+Num+Ord+Pl+Ess}}
+
+
+!!!Particles
 The particles are all words that do not inflect at all. For compatibility
 reasons subsets of particles have been set off to classes like conjunctions,
-and interjections. The ones that are not in those classes are left as
+and interjections. The ones that are *not* in those classes are left here as
 particles.
 
 Examples:
-* __ahaa__
-* __edes__
+(subsequent examples are *Particles*)
+* __ahaa__: {{ahaa+Pcle}}
+* __edes__: {{edes+Pcle}}
 
+!!!Adpositions
 Adpositions are morphologically nominals that have defective inflection
 patterns. Some of them come from forms of nominals that are no longer
 used. The adpositions are classified along whether they take possessives
@@ -4210,22 +4468,28 @@ other languages, but for most intents and purposes all adpositions can
 appear in both syntactic positions, after and before the head word.
 
 Examples:
-* __alta__
-* __alleen__
-* __irti__
-* __irtikö__
+(subsequent examples are *Adpositions*)
+* __alta__: {{alta+Po}}
+* __alleen__: {{alle+Po+PxSg3}}
+* __irti__: {{irti+Pr}}
+* __irtikö__: {{irti+Pr+Qst}}
 
+!!!Prefixes
 Prefixes are bound morphs that can appear in beginning of the compounds,
-mostly forms of nominals.
+mostly forms of nominals. Finnish does not have almost any real prefix 
+morphemes.
 
-Examples: 
-* __alabanaani__
-* __erikoistyyppi__
+(subsequent examples are *Prefixes*)
+* __alabanaani__: {{ala+N+Pref#banaani+N+Sg+Nom}} (Eng. lower banana)
+* __erikoistyyppi__: {{erikois+N+Pref#tyyppi+N+Sg+Nom}} (Eng. special guy)
+!!!Pronouns
 Pronouns are a closed special sub class of nouns. Morphologically pronouns
 have often defective, heteroclitic or otherwise irregular inflectional
 patterns, and certain pronouns have an morphophonologically distinct
-accusative case, extinct from other noun classes (VISK §§ 100 – 104).
-Semantically ... VISK § 7XX
+accusative case, extinct from other noun classes 
+Further reading: [VISK §§ 
+100|http://scripta.kotus.fi/visk/sisalto.php?p=100] – 104, Semantics ...
+[VISK § 7XX|http://scripta.kotus.fi/visk/sisalto.php?p=7XX]
 
 Pronouns are subdivided into categories by semantic and syntactic means.
 Semantic categories delimit the type of referents (humane, sentient,
@@ -4236,10 +4500,12 @@ There are six personal pronouns for the six deictic references used; first,
 second and third singular and plural. The personal pronouns have separate
 accusative cases marked by t suffix. The pronouns in standard literary
 Finnish are *minä* (I), *sinä* (you), *hän* (he), *me* (we), *te* (you),
-*he* (they). VISK § 100
-* __minä__
-* __sinut__
-* __heille__
+*he* (they). 
+Further reading: [VISK § 100|http://scripta.kotus.fi/visk/sisalto.php?p=100]
+(subsequent examples are *Personal pronouns*)
+* __minä__: {{minä+Pron+Pers+Sg+Nom}} (Eng. me)
+* __sinut__: {{sinä+Pron+Pers+Sg+Acc}}
+* __heille__: {{he+Pron+Pers+Pl+All}}
 
 The personal pronouns are among the most dialectally varied words of the
 Finnish language. The pronouns forms are one of the factors separating
@@ -4263,7 +4529,11 @@ still used.
 There are six demonstrative pronouns for six non-personal references. In
 standard written Finnish these are *tämä* (this), *tuo* (that), *se* (it),
 *nämä* (these), *nuo* (those), *ne* (those).
-VISK § 101
+
+Further reading: [VISK § 101|http://scripta.kotus.fi/visk/sisalto.php?p=101]
+(subsequent examples are *Demonstrative pronouns*)
+* __tämä__: {{tämä+Pron+Dem+Sg+Nom}}
+* __tuolle__: {{tuo+Pron+Dem+Sg+All}}
 
 In standard spoken Finnish the demonstrative pronouns are commonly
 *tää*, *toi*, *nää*, *noi* instead of *tämä*, *tuo*, *nämä*, *nuo*.
@@ -4271,18 +4541,25 @@ In standard spoken Finnish the demonstrative pronouns are commonly
 Interrogative pronouns are used in question clauses. The basic
 interrogatives in standard written Finnish are *kuka* (who), *mikä* (what),
 *kumpi* (which); *millainen* (what kind of), *kuinka* (how),
-*miksi* (what for). VISK §734|
+*miksi* (what for). 
+Further reading: [VISK §734|http://scripta.kotus.fi/visk/sisalto.php?p=734]
+(subsequent examples are *Interrogative pronouns*)
+* __kuka__: {{kuka+Pron+Interr+Sg+Nom}} (Eng. who)
+* __ketä__: {{kuka+Pron+Interr+Sg+Par}}
+* __kenet__: {{kuka+Pron+Interr+Sg+Acc}}
 
 The stem of *kuka* is shortened by from *kene* to *ke* in spoken language.
 
 Few forms of *kuka* based on *ken* stem and *ku* stem have become archaic.
-VISK §102|
+Fuhrer reading: [VISK §102|http://scripta.kotus.fi/visk/sisalto.php?p=102]
 Also the short form of *mi* is archaic and limited to poetic use.
 |citation-needed|
 
 Relative pronouns are *kuka*, *joka* and *mikä* (which, whose). VISK §735|
 They are morphologically indistinct from corresponding interrogative
 pronouns.
+(subsequent examples are *Relative pronouns*)
+* __kuka__: {{kuka+Pron+Rel+Sg+Nom}}
 
 Quantor pronouns correspond to existential and universal quantifiers and
 their negations. The generic quantors are *joku* (someone),
@@ -4290,31 +4567,48 @@ their negations. The generic quantors are *joku* (someone),
 *kukin* (each one), *kukaan* (no one), *mikään* (nothing), *jokunen*,
 *muutama*, *harva* (a few), *moni* (many) and *useampi* (more). The
 dual quantors, quantifying over set of two objects are *jompikumpi* (either
-or), *kumpikin*, *molemmat* (both), *kumpikaan* (neither). VISK §740|
+or), *kumpikin*, *molemmat* (both), *kumpikaan* (neither). 
+[VISK §740|http://scripta.kotus.fi/visk/sisalto.php?p=740]
 The quantor pronouns subsume the class of indefinite pronouns used in
-older grammar defintions. VISK §742|
+older grammar defintions. 
+[VISK §742|http://scripta.kotus.fi/visk/sisalto.php?p=742]
 The indefinite quantifiers are classified as
 indefinite quantors for the sake of compatibility. This covers *joku*,
 *jokin*, *jompikumpi*, as well as specific
-*eräs*, *muuan* (some), *yksi* (one).  VISK §746 749|.
+*eräs*, *muuan* (some), *yksi* (one).  
+Further reading [VISK §746|http://scripta.kotus.fi/visk/sisalto.php?p=746]
+– 749.
+(subsequent examples are *Quantor pronouns*)
+* __joku__: {{joku+Pron+Qu+Indef+Sg+Nom}}
+* __jotkut__: {{joku+Pron+Qu+Indef+Pl+Nom}}
 
 
 
 
 Reflexive pronoun is the word *itse* refering to self, usually but not
-always coupled with possessive suffix to denote the referent. VISK §729|.
-
+always coupled with possessive suffix to denote the referent. 
+Further reading: [VISK §729|http://scripta.kotus.fi/visk/sisalto.php?p=729]
+(subsequent examples are *Reflexive pronouns*)
+* __itse__: {{itse+Pron+Refl+Sg+Nom}}
 
 Reciprocal pronoun is *toinen* refering to each other. It uses possessive
-suffix to delimit the reciprocal group. VISK §732
-
+suffix to delimit the reciprocal group. 
+Further reading: [VISK §732|http://scripta.kotus.fi/visk/sisalto.php?p=732]
+(subsequent examples are *Reciprocal pronouns*)
+* __toisiamme__: {{toinen+Pron+Recipr+Pl+Par+PxPl1}}
 
 Proadjectives are pronouns that act in place of adjectives syntactically.
 They are formed by compounds (or derivations) of pronoun and *lainen* or
-*moinen* (such as). VISK §715
+*moinen* (such as). 
+Further reading: [VISK §715|http://scripta.kotus.fi/visk/sisalto.php?p=715]
+(subsequent examples are *Proadjectives*)
+* __jollainen__: {{jollainen+A+Rel+Sg+Nom}}
 
 Proadverbs are the pronouns that have lexicalised into adverbs by their
-syntax and semantics. VISK §715
+syntax and semantics. 
+Further reading: [VISK §715|http://scripta.kotus.fi/visk/sisalto.php?p=715]
+(subsequent examples are *Proadverbs*)
+* __missä__: {{missä+Adv+Interr+Ine}}
 
 forms of *jompi* may not exist as free morphs. The marginal forms of
 *monias* are extinct. Oddly enough, the semireduplicative intensifier
@@ -4324,18 +4618,24 @@ Marginally in the pro word category are nouns, adjectives and adverbs
 refering to equivalence in comparative context since they are
 also otherwise lacking meaning like other pro words. This
 fgroup includes words *sama* (same), *eri* (different), *muu* (other),
-*toinen* (another), and their derivations. VISK §766|.
+*toinen* (another), and their derivations. 
+Further reading: [VISK §766|http://scripta.kotus.fi/visk/sisalto.php?p=766]
 
 In spoken language the supposedly non-inflecting *eri* has common inflected
 forms.
+!!!Proper nouns
 Proper nouns are morphologically indistinct subset of nouns. They have
 some orthographical differences, required capitalisations and compounding
-with hyphens.
+with hyphens. The derivations may lowercase. They may be classified 
+semantically to match other giellatekno things in the future.
 
-Examples:
-* __Kalle__
-* __Joensuu__
+(subsequent examples are *Proper nouns*)
+* __Kalle__: {{Kalle+N+Prop+Sg+Nom}}
+* __Joensuu__: {{Joensuu+N+Prop+Sg+Nom}}
 
+The proper nouns are classified and inflected along noun patterns, for 
+details see [noun-stems.html].
+!!!Other symbols
 Punctuation characters detailed here are the characters that appear commonly
 in Finnish texts, but are not part of words or linguistic content. The
 punctuations control clause and sentence level annotations, and range
@@ -4345,7 +4645,9 @@ punctuation symbols as used in their primary purpose, in isolation. The
 part of language norms controlling punctuation are from orthography and
 the references of punctuation in good language use are not from the grammar
 but issues of Kielikello journal on good Finnish language use. The most
-current issue on punctuation was [KK2/2006]_.
+current issue on punctuation was [Kielikello 
+2/2006|http://arkisto.kielikello.fi/index.php?mid=2&pid=12&maid=110] (N.B.
+you may need to buy subscription or route through university servers).
 
 
 The primary punctuation marks are sentence final punctuation, they mark
@@ -4358,6 +4660,8 @@ sentence. The Unicode compatibility character ellipsis has never been used
 for Finnish language and must not be used. Same applies for other
 combinations of sentence ending punctuation marks, the most common of these
 have separate analyses.
+(subsequent examples are *Punctuation and symbols*)
+* __.__: {{.+Punct}} (Eng. full stop)
 
 The clause level punctuation marks are used in clause boundaries. The most
 typical of these is comma. The colon and semicolon are too. The clause
@@ -4412,12 +4716,15 @@ rarely used. Hash sign is used in phones and computer systems.
 The doubled § sign has been used as chapter range sign. The pilcrow
 sign can be used to mark chapters.
 The currency signs for euro, dollar, pound sterling, cent and yen can be
-used. I don't think anyone uses the currency sign ever.
+used. I don't think anyone uses the currency sign ¤ ever.
 The lines below this one are not from any referenced source
-Suffixes are bound morphs that come after nominals in compounds. 
+!!!Suffixes
+Suffixes are bound morphs that come after nominals in compounds. Finnish 
+doesn't quite have real suffixes, these are mostly compound parts.
 
 Examples:
-* ???
+(subsequent examples are *Suffixes*)
+* __banaaniaaltoinen__: {{banaani+N+Sg+Nom#aaltoinen+A+Sg+Nom}} (Eng. banana waveful)
 !!!Verbs and their classification
 Verbs are the words that inflect in tense, mood, personal suffixes, and
 clitics, but verbs also have s.c. infinite inflection pattern which is
@@ -4433,10 +4740,10 @@ singular, ...
 The verbs are classified along the stem mutations suffix assimilation,
 and harmony:
 (subsequent examples are *Verb basic examples*)
-* __kutoo__: {{kutoa+V+Act+Ind+Prt+Sg3}} (Eng. knit)
-* __kudotaan__: {{kutoa+V+Pss+Ind+Prt+Pe4}}
-* __tietää__: {{tietää+V+Act+Ind+Prt+Sg3}} (Eng. know)
-* __tiesit__: {{tietää+V+Act+Ind+Pst+Sg2}}
+* __kutoo__: {{kutoa+V+Act+Ind+Prs+Sg3}} (Eng. knit)
+* __kudotaan__: {{kutoa+V+Pss+Ind+Prs+Pe4}}
+* __tietää__: {{tietää+V+Act+Ind+Prs+Sg3}} (Eng. know)
+* __tiesit__: {{tietää+V+Act+Ind+Prt+Sg2}}
 * __nähnyt__: {{nähdä+V+Act+PrfPrc+Sg+Nom}} (Eng. see)
 * __juossut__: {{juosta+V+Act+PrfPrc+Sg+Nom}} (Eng. run)
 
@@ -4457,60 +4764,60 @@ The u stems have no stem variation:
 (subsequent examples are *Verbs 52*)
 * __kaunistua__: {{kaunistua+V+Act+InfA+Sg+Lat}} (Eng. beautify)
 * __kaunistuessa__: {{kaunistua+V+Act+InfE+Sg+Ine}}
-* __kaunistun__: {{kaunistua+V+Act+Ind+Prt+Sg1}}
-* __kaunistuu__: {{kaunistua+V+Act+Ind+Prt+Sg3}}
-* __kaunistuin__: {{kaunistua+V+Act+Ind+Pst+Sg1}}
-* __kaunistui__: {{kaunistua+V+Act+Ind+Pst+Sg3}}
+* __kaunistun__: {{kaunistua+V+Act+Ind+Prs+Sg1}}
+* __kaunistuu__: {{kaunistua+V+Act+Ind+Prs+Sg3}}
+* __kaunistuin__: {{kaunistua+V+Act+Ind+Prt+Sg1}}
+* __kaunistui__: {{kaunistua+V+Act+Ind+Prt+Sg3}}
 * __kaunistuisi__: {{kaunistua+V+Act+Cond+Sg3}}
 * __kaunistukaa__: {{kaunistua+V+Act+Imprt+Pl2}}
 * __kaunistunen__: {{kaunistua+V+Act+Pot+Sg1}}
-* __kaunistutaan__: {{kaunistua+V+Pss+Ind+Prt+Pe4}}
-* __kaunistuttiin__: {{kaunistua+V+Pss+Ind+Pst+Pe4}}
+* __kaunistutaan__: {{kaunistua+V+Pss+Ind+Prs+Pe4}}
+* __kaunistuttiin__: {{kaunistua+V+Pss+Ind+Prt+Pe4}}
 * __kaunistuttu__: {{kaunistua+V+Pss+PrfPrc+Sg+Nom}}
 * __kaunistuminen__: {{kaunistua+V+Der/minen+Sg+Nom}}
 
 The o stems have no stem variation:
 * __punoa__: {{punoa+V+Act+InfA+Sg+Lat}} (Eng. bundle?)
 * __punoessa__: {{punoa+V+Act+InfE+Sg+Ine}}
-* __punon__: {{punoa+V+Act+Ind+Prt+Sg1}}
-* __punoo__: {{punoa+V+Act+Ind+Prt+Sg3}}
-* __punoin__: {{punoa+V+Act+Ind+Pst+Sg1}}
-* __punoi__: {{punoa+V+Act+Ind+Pst+Sg3}}
+* __punon__: {{punoa+V+Act+Ind+Prs+Sg1}}
+* __punoo__: {{punoa+V+Act+Ind+Prs+Sg3}}
+* __punoin__: {{punoa+V+Act+Ind+Prt+Sg1}}
+* __punoi__: {{punoa+V+Act+Ind+Prt+Sg3}}
 * __punoisi__: {{punoa+V+Act+Cond+Sg3}}
 * __punokaa__: {{punoa+V+Act+Imprt+Pl2}}
 * __punonen__: {{punoa+V+Act+Pot+Sg1}}
-* __punotaan__: {{punoa+V+Pss+Ind+Prt+Pe4}}
-* __punottiin__: {{punoa+V+Pss+Ind+Pst+Pe4}}
+* __punotaan__: {{punoa+V+Pss+Ind+Prs+Pe4}}
+* __punottiin__: {{punoa+V+Pss+Ind+Prt+Pe4}}
 * __punottu__: {{punoa+V+Pss+PrfPrc+Sg+Nom}}
 * __punominen__: {{punoa+V+Der/minen+Sg+Nom}}
 
 The ö stems have no stem variation:
 * __säilöä__: {{säilöä+V+Act+InfA+Sg+Lat}} (Eng. store)
 * __säilöessä__: {{säilöä+V+Act+InfE+Sg+Ine}}
-* __säilön__: {{säilöä+V+Act+Ind+Prt+Sg1}}
-* __säilöö__: {{säilöä+V+Act+Ind+Prt+Sg3}}
-* __säilöin__: {{säilöä+V+Act+Ind+Pst+Sg1}}
-* __säilöi__: {{säilöä+V+Act+Ind+Pst+Sg3}}
+* __säilön__: {{säilöä+V+Act+Ind+Prs+Sg1}}
+* __säilöö__: {{säilöä+V+Act+Ind+Prs+Sg3}}
+* __säilöin__: {{säilöä+V+Act+Ind+Prt+Sg1}}
+* __säilöi__: {{säilöä+V+Act+Ind+Prt+Sg3}}
 * __säilöisi__: {{säilöä+V+Act+Cond+Sg3}}
 * __säilökää__: {{säilöä+V+Act+Imprt+Pl2}}
 * __säilönen__: {{säilöä+V+Act+Pot+Sg1}}
-* __säilötään__: {{säilöä+V+Pss+Ind+Prt+Pe4}}
-* __säilöttiin__: {{säilöä+V+Pss+Ind+Pst+Pe4}}
+* __säilötään__: {{säilöä+V+Pss+Ind+Prs+Pe4}}
+* __säilöttiin__: {{säilöä+V+Pss+Ind+Prt+Pe4}}
 * __säilötty__: {{säilöä+V+Pss+PrfPrc+Sg+Nom}}
 * __säilöminen__: {{säilöä+V+Der/minen+Sg+Nom}}
 
 The y stems have no stem variation:
 * __ällistyä__: {{ällistyä+V+Act+InfA+Sg+Lat}} (Eng. amaze)
 * __ällistyessä__: {{ällistyä+V+Act+InfE+Sg+Ine}}
-* __ällistyn__: {{ällistyä+V+Act+Ind+Prt+Sg1}}
-* __ällistyy__: {{ällistyä+V+Act+Ind+Prt+Sg3}}
-* __ällistyin__: {{ällistyä+V+Act+Ind+Pst+Sg1}}
-* __ällistyi__: {{ällistyä+V+Act+Ind+Pst+Sg3}}
+* __ällistyn__: {{ällistyä+V+Act+Ind+Prs+Sg1}}
+* __ällistyy__: {{ällistyä+V+Act+Ind+Prs+Sg3}}
+* __ällistyin__: {{ällistyä+V+Act+Ind+Prt+Sg1}}
+* __ällistyi__: {{ällistyä+V+Act+Ind+Prt+Sg3}}
 * __ällistyisi__: {{ällistyä+V+Act+Cond+Sg3}}
 * __ällistykää__: {{ällistyä+V+Act+Imprt+Pl2}}
 * __ällistynen__: {{ällistyä+V+Act+Pot+Sg1}}
-* __ällistytään__: {{ällistyä+V+Pss+Ind+Prt+Pe4}}
-* __ällistyttiin__: {{ällistyä+V+Pss+Ind+Pst+Pe4}}
+* __ällistytään__: {{ällistyä+V+Pss+Ind+Prs+Pe4}}
+* __ällistyttiin__: {{ällistyä+V+Pss+Ind+Prt+Pe4}}
 * __ällistytty__: {{ällistyä+V+Pss+PrfPrc+Sg+Nom}}
 
 !Verb stems with only gradation
@@ -5035,7 +5342,7 @@ common short forms in standard spoken Finnish:
 
 
 
-!!Acronym inflection
+!!!Acronym inflection
 Acronyms are inflected using a colon, followed by the inflectional endings,
 which depend on either last letter of the word or inflection class of the
 last word of the abbreviation. The exception to the inflection scheme is the
@@ -5045,35 +5352,21 @@ counted as regular words with regular inflection patterns.
 c.f. [VISK § 169|http://scripta.kotus.fi/visk/sisallys.php?p=169]
 
 
-!Acronyms ending in numbers inflect like the numbers are pronounced.
-The acronyms ending in digit 1 pronounced as number:
+!!Acronyms ending in numbers inflect like the numbers are pronounced.
 (subsequent examples are *Number-final acronyms*)
-* __A1__: {{A1+N+Sg+Nom}} (Eng. A1 paper)
-* __A1:een__: {{A1+N+Sg+Ill}}
 
-The acronyms ending in digit 2 pronounced as number
-* __A2__: {{A2+N+Sg+Nom}} (Eng. A2 paper)
-* __A2:een__: {{A2+N+Sg+Ill}}
 
 The acronyms ending in digit 3 pronounced as number
 * __A3__: {{A3+N+Sg+Nom}} (Eng. A3 paper)
 * __A3:een__: {{A1+N+Sg+Ill}}
 
-The acronyms ending in digit 4 pronounced as number
-* __A4__: {{A4+N+Sg+Nom}} (Eng. A4 paper)
-* __A4:ään__: {{A4+N+Sg+Ill}}
 
 The acronyms ending in digit 5 pronounced as number
 * __A5__: {{A5+N+Sg+Nom}} (Eng. A5 paper)
 * __A5:een__: {{A5+N+Sg+Ill}}
 
-The acronyms ending in digit 6 pronounced as number
 
-The acronyms ending in digit 7 pronounced as number
 
-The acronyms ending in digit 8 pronounced as number
-
-The acronyms ending in digit 9 pronounced as number
 
 !Acronyms ending in letters
 Acronyms ending in regular alphabet may be inflected like the last letter is
@@ -5187,11 +5480,11 @@ This inflectional part is attached to adjective superlative stems to avoid
 circularity in superlative  derivations:
 (subsequent examples are *Adjective superlative inflection*)
 * __nopein__: {{nopea+A+Sup+Sg+Nom}}
-* __*nopeimmin__: {{nopea+A+Sup+Sup+Sg+Nom}} (is not standard language)
+* __*nopeimmimpia__: {{nopea+A+Sup+Sup+Sg+Par}} (is not standard language)
 * __*nopeimmimmin__: {{nopea+A+Sup+Sup+Sup+Sg+Nom}} (is not standard language)
 
 * __tyhmin__: {{tyhmä+A+Sup+Sg+Nom}}
-* __*tyhmimmin__: {{tyhmä+A+Sup+Sup+Sg+Nom}} (is not standard language)
+* __*tyhmimmimpiä__: {{tyhmä+A+Sup+Sup+Sg+Par}} (is not standard language)
 
 
 !!Regular adjective inflection
@@ -5236,10 +5529,10 @@ derivations is same as with nouns. I will only show examples here.
 
 (subsequent examples are *Adjective singular partitives*)
 * __tarkkaa__: {{tarkka+A+Sg+Par}}
-* __*tarkkaaan__: {{tarkka+A+Sg+Par+PxSg3}} (is not standard language)
+* __tarkkaansa__: {{tarkka+A+Sg+Par+PxSg3}}
 
 * __tyhmää__: {{tyhmä+A+Sg+Par}}
-* __*tyhmäään__: {{tyhmä+A+Sg+Par+PxSg3}} (is not standard language)
+* __tyhmäänsä__: {{tyhmä+A+Sg+Par+PxSg3}}
 
 * __jaloa__: {{jalo+A+Sg+Par}}
 * __jaloaan__: {{jalo+A+Sg+Par+PxSg3}}
@@ -5374,25 +5667,30 @@ derivations is same as with nouns. I will only show examples here.
 
 
 
+!!!Adverb inflection
 Most adverbs are morphologically either sti-derivations of adjectives or
 some specific form of an existing or archaic noun, and they have limited
-inflection in form of possessives and clitics carried over.
+inflection in form of possessives and clitics carried over. According to
+modern dictionaries different forms of same root are separate adverbs,
+so they are not inflected here, but listed in roots.
 
-* __edessäni__
+(subsequent examples are *Adverbs possessives*)
+* __takanani__: {{takana+Adv+PxSg1}} (Eng. behind me)
 
-* __takanani__
+* __edessäni__: {{edessä+Adv+PxSg1}} (Eng. in front of me)
 
-* __takanaan__
+* __takanaan__: {{takana+Adv+PxSg3}}
 
-* __jalkeilleen__
+* __jalkeilleen__: {{jalkeille+Adv+PxSg3}} (Eng. he awakened)
 
-* __keskelleen__
+* __keskelleen__: {{keskelle+Adv+PxPl3}} (Eng. amidst them)
 
-* __edessään__
+* __edessään__: {{edessä+Adv+PxSg3}}
 
-* __nopeastihan__
+(subsequent examples are *Adverbs clitics*)
+* __nopeastihan__: {{nopeasti+Adv+Foc/han}} (Eng. fast)
 
-* __tyhmästihän__
+* __tyhmästihän__: {{tyhmästi+Adv+Foc/han}} (Eng. stupidly)
 
 
 
@@ -5544,24 +5842,22 @@ The roman digit string ending in I, IV, V, VII, IX, X or
 
 
 
-!!Noun inflection and derivation
+!!!Noun inflection and derivation
 Nouns and other nominals inflect in number, cases, possessives and with
 clitics, in that order. Combinations that this regular inflection can form
 is approximately 2×15×5×26=4900, so we do not show all variants in test cases
 and examples, but just central ones that are interesting and potential to
 break.
 
-!Nominatives
+!!Nominatives
 Singular nominative is the dictionary reference form for most of the words.
 
 (subsequent examples are *Noun nominatives*)
 * __talo__: {{talo+N+Sg+Nom}} (Eng. a house)
 * __taloko__: {{talo+N+Sg+Nom+Qst}}
-* __*talopä__: {{talo+N+Sg+Nom+Foc/pa}} (is not standard language)
 ; {{talo+N+Sg+Nom+Foc/han}}: __talohan,__ __*talohän__ 
 
 * __pöly__: {{pöly+N+Sg+Nom}} (Eng. dust)
-* __*pölyko__: {{pöly+N+Sg+Nom+Qst}} (is not standard language)
 
 The plural nominative attaches to singular stem. For plural words it is also
 the form that is used for dictionary lookups:
@@ -5573,7 +5869,7 @@ the form that is used for dictionary lookups:
 * __pölyt__: {{pöly+N+Pl+Nom}}
 * __häät__: {{häät+N+Pl+Nom}} (Eng. wedding)
 
-!Singular case inflection
+!!Singular case inflection
 The nouns can inflect in 15 regular cases. Most of the cases have one or two
 case endings, with only varying part being the harmony vowel. For nouns with
 direct consonant gradation, the most of the singular case suffixes attach
@@ -5611,7 +5907,7 @@ stem may be essive and possessive's of nominative or genitive:
 * __näkyni__: {{näky+N+Sg+Nom+PxSg1}}
 * __näkysi__: {{näky+N+Sg+Gen+PxSg2}}
 
-!Plural inflection
+!!Plural inflection
 
 (subsequent examples are *Noun basic plural cases*)
 * __padoilta__: {{pata+N+Pl+Abl}}
@@ -5636,12 +5932,12 @@ The strong plural stem of words with direct gradation contains only essive
 and comitative:
 
 * __patoina__: {{pata+N+Pl+Ess}}
-* __patoine__: {{pata+N+Cmt}}
+* __patoine__: {{pata+N+Com}}
 
 * __näkyinä__: {{näky+N+Pl+Ess}}
-* __näkyine__: {{näky+N+Cmt}}
+* __näkyine__: {{näky+N+Com}}
 
-!Cases with allomorphic variation
+!!Cases with allomorphic variation
 The nominal cases which can take several different suffixes are singular
 and plural partitives, singular and plural illatives and plural genitives.
 After stem variation the selection of these allomorphs is the main factor
@@ -5826,7 +6122,7 @@ And plural illative has few variants:
 * __kevät__: {{kevät+N+Sg+Nom}} (Eng. spring)
 * __keväisiin__: {{kevät+N+Pl+Ill}}
 
-!Possessive suffixes
+!!Possessive suffixes
 Possessives come optionally after the case suffixes. For consonant final
 cases the possessives assimilate or eat the final part of the case ending
 or stem.
@@ -5854,7 +6150,7 @@ stems:
 
 * __tönöään__: {{tönö+N+Sg+Par+PxPl3}}
 
-!Noun clitics
+!!Noun clitics
 Clitics can attach to any word-form, including one that already has a clitic.
 Clitics do not modify the form they attach to and are simply concatenated to
 the end.
@@ -5880,30 +6176,32 @@ the end.
 
 
 
-!Noun compounding
+!!Noun compounding
 Nouns form compounds productively. The non-final parts of regular compounds
 are singular nominatives, or singular or plural genitives of nouns. The final
 parts are nominals and inflect regularly.
 
 (subsequent examples are *Noun compounds*)
-* __talojuttu__: {{talo+N+Sg+Nom+Use/Circ#juttu+N+Sg+Nom}}
+* __talojuttu__: {{talo+N+Sg+Nom#juttu+N+Sg+Nom}}
 
-* __talonjuttu__: {{talo+N+Sg+Gen+Use/Circ#juttu+N+Sg+Nom}}
+* __talonjuttu__: {{talo+N+Sg+Gen#juttu+N+Sg+Nom}}
 
-* __naisienjuttu__: {{nainen+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom}}
+* __naisienjuttu__: {{nainen+N+Pl+Gen#juttu+N+Sg+Nom}}
 
-* __lepakoidenjuttu__: {{lepakko+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom}}
+* __lepakoidenjuttu__: {{lepakko+N+Pl+Gen#juttu+N+Sg+Nom}}
 
-* __vanhempainjuttu__: {{vanhempi+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom}}
+* __vanhempainjuttu__: {{vanhempi+N+Pl+Gen#juttu+N+Sg+Nom}}
 
-* __lepakoittenjuttu__: {{lepakko+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom}}
+* __lepakoittenjuttu__: {{lepakko+N+Pl+Gen#juttu+N+Sg+Nom}}
 
-* __talojenjuttu__: {{talo+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom}}
+* __talojenjuttu__: {{talo+N+Pl+Gen#juttu+N+Sg+Nom}}
 
-* __miestenjuttu__: {{mies+N+Pl+Gen+Use/Circ#juttu+N+Sg+Nom}}
+* __miestenjuttu__: {{mies+N+Pl+Gen#juttu+N+Sg+Nom}}
 
 
-* __talojuttu__: {{talo+N+Sg+Nom+Use/Circ#juttu+N+Sg+Nom}}
+* __aakkostamisjuttu__: {{aakkostaminen+N+Der/s#juttu+N+Sg+Nom}}
+
+* __talojuttu__: {{talo+N+Sg+Nom#juttu+N+Sg+Nom}}
 
 !!!Verb inflection and derivation
 The verbs' conjugation includes voice (in Finnish grammars also verbal 
@@ -5922,54 +6220,54 @@ tense in semantic sense.
 !!Present vowel stems
 
 * __kutoa__: {{kutoa+V+Act+InfA+Sg+Lat}} (Eng. knit)
-* __kudon__: {{kutoa+V+Act+Ind+Prt+Sg1}}
+* __kudon__: {{kutoa+V+Act+Ind+Prs+Sg1}}
 
 * __yltää__: {{yltää+V+Act+InfA+Sg+Lat}} (Eng. reach)
-* __yllän__: {{yltää+V+Act+Ind+Prt+Sg1}}
+* __yllän__: {{yltää+V+Act+Ind+Prs+Sg1}}
 
 The strong form of present indicative endings in strong stems and ma 
 infinitive, and maisilla derivation (nee infinitive).
 (subsequent examples are *Verbs strong present forms*)
-* __kutovat__: {{kutoa+V+Act+Ind+Prt+Pl3}}
+* __kutovat__: {{kutoa+V+Act+Ind+Prs+Pl3}}
 * __kutomatta__: {{kutoa+V+Act+InfMa+Sg+Abe}}
 
-* __yltävät__: {{yltää+V+Act+Ind+Prt+Pl3}}
+* __yltävät__: {{yltää+V+Act+Ind+Prs+Pl3}}
 * __yltämättä__: {{yltää+V+Act+InfMa+Sg+Abe}}
 
 !Verb 3rd singular forms
 The third singular form of present tense has few allomorphs according to
 preceding vowel context, either lengthening or zero after long vowel stem:
 
-* __rakentaa__: {{rakentaa+V+Act+Prt+Sg3}} (Eng. builds)
+* __rakentaa__: {{rakentaa+V+Act+Ind+Prs+Sg3}} (Eng. builds)
 
-* __tulee__: {{tulla+V+Act+Prt+Sg3}} (Eng. comes)
+* __tulee__: {{tulla+V+Act+Ind+Prs+Sg3}} (Eng. comes)
 
-* __menee__: {{mennä+V+Act+Prt+Sg3}} (Eng. goes)
+* __menee__: {{mennä+V+Act+Ind+Prs+Sg3}} (Eng. goes)
 
-* __munii__: {{munia+V+Act+Prt+Sg3}} (Eng. lays eggs)
+* __munii__: {{munia+V+Act+Ind+Prs+Sg3}} (Eng. lays eggs)
 
-* __rämpii__: {{rämpiä+V+Act+Prt+Sg3}} (Eng. hikes)
+* __rämpii__: {{rämpiä+V+Act+Ind+Prs+Sg3}} (Eng. hikes)
 
-* __kutoo__: {{kutoa+V+Act+Prt+Sg3}}
+* __kutoo__: {{kutoa+V+Act+Ind+Prs+Sg3}}
 
-* __viruu__: {{virua+V+Act+Prt+Sg3}} (Eng. stretches)
+* __viruu__: {{virua+V+Act+Ind+Prs+Sg3}} (Eng. stretches)
 
-* __kääntyy__: {{kääntyä+V+Act+Prt+Sg3}} (Eng. turns)
+* __kääntyy__: {{kääntyä+V+Act+Ind+Prs+Sg3}} (Eng. turns)
 
-* __säilöö__: {{säilöä+V+Act+Prt+Sg3}} (Eng. conserves)
+* __säilöö__: {{säilöä+V+Act+Ind+Prs+Sg3}} (Eng. conserves)
 
-* __vääntää__: {{vääntää+V+Act+Prt+Sg3}} (Eng. twist)
+* __vääntää__: {{vääntää+V+Act+Ind+Prs+Sg3}} (Eng. twist)
 
 !Past forms
 
 (subsequent examples are *Verb past forms*)
-* __kudoin__: {{kutoa+V+Act+Ind+Pst+Sg1}}
+* __kudoin__: {{kutoa+V+Act+Ind+Prt+Sg1}}
 
-* __ylsin__: {{yltää+V+Act+Ind+Pst+Sg1}}
+* __ylsin__: {{yltää+V+Act+Ind+Prt+Sg1}}
 
-* __kutoivat__: {{kutoa+V+Act+Ind+Pst+Pl3}}
+* __kutoivat__: {{kutoa+V+Act+Ind+Prt+Pl3}}
 
-* __ylsivät__: {{yltää+V+Act+Ind+Pst+Pl3}}
+* __ylsivät__: {{yltää+V+Act+Ind+Prt+Pl3}}
 
 !Imperatives
 
@@ -6010,32 +6308,34 @@ The variation between the realisations is one key factor of determining the
 classification of the verb roots.
 
 (subsequent examples are *Verb passives*)
-* __kudottiin__: {{kutoa+V+Pss+Ind+Pst+Pe4}}
-* __juostiin__: {{juosta+V+Pss+Ind+Pst+Pe4}}
+* __kudottiin__: {{kutoa+V+Pss+Ind+Prt+Pe4}}
+* __juostiin__: {{juosta+V+Pss+Ind+Prt+Pe4}}
 
-* __nähtiin__: {{nähdä+V+Pss+Ind+Pst+Pe4}}
+* __nähtiin__: {{nähdä+V+Pss+Ind+Prt+Pe4}}
 
 
 The form of present passive assimilates leftwards, varying between
 -ta, -tä, -da, -dä, -la, -lä, -ra, -rä, -na, -nä.
 
-* __juostaan__: {{juosta+V+Pss+Ind+Prt+Pe4}}
+* __juostaan__: {{juosta+V+Pss+Ind+Prs+Pe4}}
 
-* __ylletään__: {{yltää+V+Pss+Ind+Prt+Pe4}}
+* __ylletään__: {{yltää+V+Pss+Ind+Prs+Pe4}}
 
-* __kopioidaan__: {{kopioida+V+Pss+Ind+Prt+Pe4}} (Eng. copy-passive)
+* __kopioidaan__: {{kopioida+V+Pss+Ind+Prs+Pe4}} (Eng. copy-passive)
 
-* __nähdään__: {{nähdä+V+Pss+Ind+Prt+Pe4}}
+* __nähdään__: {{nähdä+V+Pss+Ind+Prs+Pe4}}
 
-* __vuollaan__: {{vuolla+V+Pss+Ind+Prt+Pe4}} (Eng. carve wood-passive)
+* __vuollaan__: {{vuolla+V+Pss+Ind+Prs+Pe4}} (Eng. carve wood-passive)
 
-* __niellään__: {{niellä+V+Pss+Ind+Prt+Pe4}} (Eng. swallow-passive)
+* __niellään__: {{niellä+V+Pss+Ind+Prs+Pe4}} (Eng. swallow-passive)
 
-* __pierrään__: {{pierrä+V+Pss+Ind+Prt+Pe4}} (Eng. fart-passive)
+* __surraan__: {{surra+V+Pss+Ind+Prs+Pe4}} (Eng. sorrow-passive)
 
-* __pannaan__: {{panna+V+Pss+Ind+Prt+Pe4}} (Eng. put-passive)
+* __pierrään__: {{pierrä+V+Pss+Ind+Prs+Pe4}} (Eng. fart-passive)
 
-* __mennään__: {{mennä+V+Pss+Ind+Prt+Pe4}}
+* __pannaan__: {{panna+V+Pss+Ind+Prs+Pe4}} (Eng. put-passive)
+
+* __mennään__: {{mennä+V+Pss+Ind+Prs+Pe4}}
 
 
 !!Infinite verb forms
@@ -6096,11 +6396,11 @@ The form of present passive assimilates leftwards, varying between
 !Verb clitics
 
 (subsequent examples are *Verbs clitics*)
-* __kudonhan__: {{kutoa+V+Act+Ind+Prt+Sg1+Foc/han}}
-* __kudotko__: {{kutoa+V+Act+Ind+Prt+Sg2+Qst}}
+* __kudonhan__: {{kutoa+V+Act+Ind+Prs+Sg1+Foc/han}}
+* __kudotko__: {{kutoa+V+Act+Ind+Prs+Sg2+Qst}}
 
-* __näenhän__: {{nähdä+V+Act+Ind+Prt+Sg1+Foc/han}}
-* __näetkö__: {{nähdä+V+Act+Ind+Prt+Sg2+Qst}}
+* __näenhän__: {{nähdä+V+Act+Ind+Prs+Sg1+Foc/han}}
+* __näetkö__: {{nähdä+V+Act+Ind+Prs+Sg2+Qst}}
 
 
 
@@ -6119,21 +6419,18 @@ These derivations are treated as inflection in our system as well.
 
 !-minen, "Fourth infinitive"
 
-(subsequent examples are *Verbs minen derivations*)
-* __aakkostaminen__: {{aakkostaa+V+Der/minen+Sg+Nom}}
 
-* __näkeminen__: {{nähdä+V+Der/minen+Sg+Nom}}
 
 !Participles
 
 (subsequent examples are *Verbs participles*)
 * __kutomani__: {{kutoa+V+AgPrc+Sg+Nom+PxSg1}}
-* __kutomaton__: {{kutoa+V+AgPrc+Der/ton+Sg+Nom}}
-* __kutova__: {{kutoa+V+PrsPrc+Sg+Nom}}
+* __kutomaton__: {{kutoa+V+NegPrc+Sg+Nom}}
+* __kutova__: {{kutoa+V+Act+PrsPrc+Sg+Nom}}
 
 * __näkemäni__: {{nähdä+V+AgPrc+Sg+Nom+PxSg1}}
-* __näkemätön__: {{nähdä+V+AgPrc+Der/ton+Sg+Nom}}
-* __näkevä__: {{nähdä+V+PrsPrc+Sg+Nom}}
+* __näkemätön__: {{nähdä+V+NegPrc+Sg+Nom}}
+* __näkevä__: {{nähdä+V+Act+PrsPrc+Sg+Nom}}
 
 !Other derivations
 Not used in inflectional morphology, yet.
@@ -6157,52 +6454,136 @@ Not used in inflectional morphology, yet.
 
 
 
+!!!Numeral inflection
 Numeral inflection is like nominal, except that numerals compound in all
 forms which requires great amount of care in the inflection patterns.
 
+(subsequent examples are *Numeral nominatives*)
+* __kaksi__: {{kaksi+Num+Card+Sg+Nom}} (Eng. two)
+
+* __yksi__: {{yksi+Num+Card+Sg+Nom}} (Eng. one)
+
+* __kahdet__: {{kaksi+Num+Card+Pl+Nom}}
+
+* __yhdet__: {{yksi+Num+Card+Pl+Nom}}
+
+(subsequent examples are *Numeral weak singulars*)
+* __kahden__: {{kaksi+Num+Card+Sg+Gen}}
+* __kahdella__: {{kaksi+Num+Card+Sg+Ade}}
+* __kahdelta__: {{kaksi+Num+Card+Sg+Abl}}
+* __kahdelle__: {{kaksi+Num+Card+Sg+All}}
+* __kahdessa__: {{kaksi+Num+Card+Sg+Ine}}
+* __kahdesta__: {{kaksi+Num+Card+Sg+Ela}}
+* __kahdeksi__: {{kaksi+Num+Card+Sg+Tra}}
+* __kahdetta__: {{kaksi+Num+Card+Sg+Abe}}
+
+* __yhden__: {{yksi+Num+Card+Sg+Gen}}
+* __yhdellä__: {{yksi+Num+Card+Sg+Ade}}
+* __yhdeltä__: {{yksi+Num+Card+Sg+Abl}}
+* __yhdelle__: {{yksi+Num+Card+Sg+All}}
+* __yhdessä__: {{yksi+Num+Card+Sg+Ine}}
+* __yhdestä__: {{yksi+Num+Card+Sg+Ela}}
+* __yhdeksi__: {{yksi+Num+Card+Sg+Tra}}
+* __yhdettä__: {{yksi+Num+Card+Sg+Abe}}
+
+(subsequent examples are *Numeral strong singulars-*)
+* __kahtena__: {{kaksi+Num+Card+Sg+Ess}}
+
+* __yhtenä__: {{yksi+Num+Card+Sg+Ess}}
+
+(subsequent examples are *Numeral weak plurals*)
+* __kaksilla__: {{kaksi+Num+Card+Pl+Ade}}
+* __kaksilta__: {{kaksi+Num+Card+Pl+Abl}}
+* __kaksille__: {{kaksi+Num+Card+Pl+All}}
+* __kaksissa__: {{kaksi+Num+Card+Pl+Ine}}
+* __kaksista__: {{kaksi+Num+Card+Pl+Ela}}
+* __kaksiksi__: {{kaksi+Num+Card+Pl+Tra}}
+* __kaksitta__: {{kaksi+Num+Card+Pl+Abe}}
+
+* __yksillä__: {{yksi+Num+Card+Pl+Ade}}
+* __yksiltä__: {{yksi+Num+Card+Pl+Abl}}
+* __yksille__: {{yksi+Num+Card+Pl+All}}
+* __yksissä__: {{yksi+Num+Card+Pl+Ine}}
+* __yksistä__: {{yksi+Num+Card+Pl+Ela}}
+* __yksiksi__: {{yksi+Num+Card+Pl+Tra}}
+* __yksittä__: {{yksi+Num+Card+Pl+Abe}}
+
+* __kaksina__: {{kaksi+Num+Card+Pl+Ess}}
+* __kaksine__: {{kaksi+Num+Card+Com}}
+
+* __yksinä__: {{yksi+Num+Card+Pl+Ess}}
+* __yksine__: {{yksi+Num+Card+Com}}
 
 
+(subsequent examples are *Numeral singular partitive allomorphs*)
+* __kahdeksaa__: {{kahdeksan+Num+Card+Sg+Par}} (Eng. eight)
+
+* __neljää__: {{neljä+Num+Card+Sg+Par}} (Eng. four)
+
+* __kolmea__: {{kolme+Num+Card+Sg+Par}} (Eng. three)
+
+* __kuutta__: {{kuusi+Num+Card+Sg+Par}} (Eng. six)
+
+* __viittä__: {{viisi+Num+Card+Sg+Par}} (Eng. five)
+
+(subsequent examples are *Numeral singular illative allomorphs*)
+* __kahdeksaan__: {{kahdeksan+Num+Card+Sg+Ill}}
+
+* __kolmeen__: {{kolme+Num+Card+Sg+Ill}}
+
+* __viiteen__: {{viisi+Num+Card+Sg+Ill}}
+
+* __miljardiin__: {{miljardi+Num+Card+Sg+Ill}} (Eng. billion)
+
+* __neljään__: {{neljä+Num+Card+Sg+Ill}}
+
+(subsequent examples are *Numeral plural partitives*)
+* __kaksia__: {{kaksi+Num+Card+Pl+Par}}
+
+* __neljiä__: {{neljä+Num+Card+Pl+Par}}
+
+* __miljardeja__: {{miljardi+Num+Card+Pl+Par}}
+
+(subsequent examples are *Numeral plural genitive allomorphs*)
+* __kaksien__: {{kaksi+Num+Card+Pl+Gen}}
+
+* __yksien__: {{yksi+Num+Card+Pl+Gen}}
+
+* __satojen__: {{sata+Num+Card+Pl+Gen}} (Eng. hundred)
+
+* __kuutten__: {{kuusi+Num+Card+Pl+Gen}}
+
+* __viitten__: {{viisi+Num+Card+Pl+Gen}}
+
+* __yhdeksäin__: {{yhdeksän+Num+Card+Pl+Gen+Use/Rare}}
+
+* __neljäin__: {{neljä+Num+Card+Pl+Gen+Use/Rare}}
+
+(subsequent examples are *Numeral plural illaive allomorphs*)
+* __miljardeihin__: {{miljardi+Num+Card+Pl+Ill}}
+
+* __kaksiin__: {{kaksi+Num+Card+Pl+Ill}}
+
+* __yksiin__: {{yksi+Num+Card+Pl+Ill}}
 
 
+(subsequent examples are *Numeral possessives*)
+* __kahteni__: {{kaksi+Num+Card+Sg+Nom+PxSg1}}
 
+* __yhteni__: {{yksi+Num+Card+Sg+Nom+PxSg1}}
 
+* __kolmeaan__: {{kolme+Num+Card+Sg+Par+PxSg3}}
 
+* __kahdekseen__: {{kaksi+Num+Card+Sg+Tra+PxSg3}}
 
+* __neljäkseen__: {{neljä+Num+Card+Sg+Tra+PxSg3}}
 
+* __viittään__: {{viisi+Num+Card+Sg+Par+PxSg3}}
 
+(subsequent examples are *Numeral clitics*)
+* __kaksihan__: {{kaksi+Num+Card+Sg+Nom+Foc/han}}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* __yksihän__: {{yksi+Num+Card+Sg+Nom+Foc/han}}
 
 
 

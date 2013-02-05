@@ -1,3 +1,4 @@
+!!!Numerals
 Numerals are morphologically nominals, only exception to noun inflection
 is that they form compounds with special agreeing patterns. Syntactically
 and semantically numerals are clearly separate subset of nominals. Some
@@ -6,238 +7,258 @@ nominal types. Numerals have two subclasses, cardinals and ordinals.
 
 Numerals have been split in three sections, the compounding parts
 of cardinals and ordinals, and the non-compounding ones:
-* __kaksikymmentäkolmetuhatta__
-* __kahdessadaseneljäs__
-* __viitisen__
+(subsequent examples are *Numeral basic examples*)
+* __kaksikymmentäkolmetuhatta__: {{kaksi+Num+Card+Sg+Nom#kymmenen+Num+Card+Sg+Par#kolme+Num+Card+Sg+Nom#tuhat+Num+Card+Sg+Par}} (Eng. 23,000)
+* __kahdessadasneljäs__: {{kahdes+Num+Ord+Sg+Nom#sadas+Num+Ord+Sg+Nom#neljäs+Num+Ord+Sg+Nom}} (Eng. 204rd)
+* __viitisenkymmentä__: {{viitisen+Num#kymmentä}} (Eng. 50-ish)
 
 The compounding parts of cardinals are the number multiplier words.
-* __yksi__
-* __viidelle__
-* __tuhatta__
+(subsequent examples are *Numeral cardinals*)
+* __yksi__: {{yksi+Num+Card+Sg+Nom}} (Eng. one)
+* __viidelle__: {{viisi+Num+Card+Sg+All}} (Eng. five)
+* __tuhatta__: {{tuhat+Num+Card+Sg+Par}} (Eng. thousand)
 
 The suffixes only appear after cardinal multipliers
-* __viisikymmentä__
-* __neljäsataatuhatta__
+(subsequent examples are *Cardinal multiplicants*)
+* __viisikymmentä__: {{viisi+Num+Card+Sg+Nom#kymmentä}}
+* __neljäsataatuhatta__: {{neljä+Num+Card+Sg+Nom#sata+Num+Card+Sg+Par#tuhatta}}
 
 The compounding parts of ordinals are the number multiplier words.
-* __neljäs__
-* __viidennelle__
-* __tuhannetta__
+(subsequent examples are *Ordinal numerals*)
+* __neljäs__: {{neljäs+Num+Ord+Sg+Nom}}
+* __viidennelle__: {{viides+Num+Ord+Sg+All}}
+* __tuhannetta__: {{tuhannes+Num+Ord+Sg+Par}}
 
 The suffixes only appear after cardinal multipliers
-* __viideskymmenes__
-* __neljässadastuhannes__
+(subsequent examples are *Ordinal multiplicants*)
+* __viideskymmenes__: {{viides+Num+Ord+Sg+Nom#kymmenes}}
+* __neljässadastuhannes__: {{neljäs+Num+Ord+Sg+Nom#sadas+Num+Ord+Sg+Nom#tuhannes}}
 
 There is a set of numbers or corresponding expressions that work like them,
 but are not basic cardinals or ordinals:
-* __viitisenkymmentä__
-* __puolikymmentä__
+(subsequent examples are *Numeral others*)
+* __viitisenkymmentä__: {{viitisen+Num#kymmentä}}
+* __puolikymmentä__: {{puolikymmentä+Num+Sg+Nom}}
+
+!!Numeral stem variation
+Numerals follow the same stem variation patterns as nouns, some of these
+being very rare to extinct for nouns. 
+(subsequent examples are *Numerals 31*)
+* __yksi__: {{yksi+Num+Card+Sg+Nom}}
+* __yhteen__: {{yksi+Num+Card+Sg+Ill}}
+* __yhtenä__: {{yksi+Num+Card+Sg+Ess}}
+* __yhdessä__: {{yksi+Num+Card+Sg+Ine}}
+* __yhtä__: {{yksi+Num+Card+Sg+Par}}
+* __yksiä__: {{yksi+Num+Card+Pl+Par}}
+* __yksien__: {{yksi+Num+Card+Pl+Gen}}
+* __yksiin__: {{yksi+Num+Card+Pl+Ill}}
+* __yksinä__: {{yksi+Num+Card+Pl+Ess}}
+* __yksissä__: {{yksi+Num+Card+Pl+Ine}}
+
+* __kaksi__: {{kaksi+Num+Card+Sg+Nom}}
+* __kahteen__: {{kaksi+Num+Card+Sg+Ill}}
+* __kahtena__: {{kaksi+Num+Card+Sg+Ess}}
+* __kahdessa__: {{kaksi+Num+Card+Sg+Ine}}
+* __kahta__: {{kaksi+Num+Card+Sg+Par}}
+* __kaksia__: {{kaksi+Num+Card+Pl+Par}}
+* __kaksien__: {{kaksi+Num+Card+Pl+Gen}}
+* __kaksiin__: {{kaksi+Num+Card+Pl+Ill}}
+* __kaksina__: {{kaksi+Num+Card+Pl+Ess}}
+* __kaksissa__: {{kaksi+Num+Card+Pl+Ine}}
+
+(subsequent examples are *Numerals 8~5*)
+* __kolme__: {{kolme+Num+Card+Sg+Nom}}
+* __kolmeen__: {{kolme+Num+Card+Sg+Ill}}
+* __kolmena__: {{kolme+Num+Card+Sg+Ess}}
+* __kolmessa__: {{kolme+Num+Card+Sg+Ine}}
+* __kolmea__: {{kolme+Num+Card+Sg+Par}}
+* __kolmia__: {{kolme+Num+Card+Pl+Par}}
+* __kolmien__: {{kolme+Num+Card+Pl+Gen}}
+* __kolmiin__: {{kolme+Num+Card+Pl+Ill}}
+* __kolmina__: {{kolme+Num+Card+Pl+Ess}}
+* __kolmissa__: {{kolme+Num+Card+Pl+Ine}}
+
+(subsequent examples are *Numerals 10*)
+* __neljä__: {{neljä+Num+Card+Sg+Nom}}
+* __neljää__: {{neljä+Num+Card+Sg+Par}}
+* __neljään__: {{neljä+Num+Card+Sg+Ill}}
+* __neljänä__: {{neljä+Num+Card+Sg+Ess}}
+* __neljässä__: {{neljä+Num+Card+Sg+Ine}}
+* __neljiä__: {{neljä+Num+Card+Pl+Par}}
+* __neljien__: {{neljä+Num+Card+Pl+Gen}}
+* __neljiin__: {{neljä+Num+Card+Pl+Ill}}
+* __neljinä__: {{neljä+Num+Card+Pl+Ess}}
+* __neljissä__: {{neljä+Num+Card+Pl+Ine}}
+* __neljäin__: {{neljä+Num+Card+Pl+Gen+Use/Rare}}
+
+(subsequent examples are *Numerals 27*)
+* __viisi__: {{viisi+Num+Card+Sg+Nom}}
+* __viiteen__: {{viisi+Num+Card+Sg+Ill}}
+* __viitenä__: {{viisi+Num+Card+Sg+Ess}}
+* __viidessä__: {{viisi+Num+Card+Sg+Ine}}
+* __viisinä__: {{viisi+Num+Card+Pl+Ess}}
+* __viisissä__: {{viisi+Num+Card+Pl+Ine}}
+* __viittä__: {{viisi+Num+Card+Sg+Par}}
+* __viitten__: {{viisi+Num+Card+Pl+Gen}}
+* __viisiä__: {{viisi+Num+Card+Pl+Par}}
+* __viisien__: {{viisi+Num+Card+Pl+Gen}}
+* __viisiin__: {{viisi+Num+Card+Pl+Ill}}
+
+* __kuusi__: {{kuusi+Num+Card+Sg+Nom}}
+* __kuutena__: {{kuusi+Num+Card+Sg+Ess}}
+* __kuudessa__: {{kuusi+Num+Card+Sg+Ine}}
+* __kuusina__: {{kuusi+Num+Card+Pl+Ess}}
+* __kuusissa__: {{kuusi+Num+Card+Pl+Ine}}
+* __kuutta__: {{kuusi+Num+Card+Sg+Par}}
+* __kuutten__: {{kuusi+Num+Card+Pl+Gen}}
+* __kuusia__: {{kuusi+Num+Card+Pl+Par}}
+* __kuusien__: {{kuusi+Num+Card+Pl+Gen}}
+* __kuusiin__: {{kuusi+Num+Card+Pl+Ill}}
 
 
-* __yksi__
-* __yhteen__
-* __yhtenä__
-* __yhdessä__
-* __yhtä__
-* __yksiä__
-* __yksien__
-* __yksiin__
-* __yksinä__
-* __yksissä__
+(subsequent examples are *Numerals 10n*)
+* __kahdeksan__: {{kahdeksan+Num+Card+Sg+Nom}}
+* __kahdeksaa__: {{kahdeksan+Num+Card+Sg+Par}}
+* __kahdeksaan__: {{kahdeksan+Num+Card+Sg+Ill}}
+* __kahdeksassa__: {{kahdeksan+Num+Card+Sg+Ine}}
+* __kahdeksana__: {{kahdeksan+Num+Card+Sg+Ess}}
+* __kahdeksia__: {{kahdeksan+Num+Card+Pl+Par}}
+* __kahdeksien__: {{kahdeksan+Num+Card+Pl+Gen}}
+* __kahdeksiin__: {{kahdeksan+Num+Card+Pl+Ill}}
+* __kahdeksissa__: {{kahdeksan+Num+Card+Pl+Ine}}
+* __kahdeksina__: {{kahdeksan+Num+Card+Pl+Ess}}
+* __kahdeksain__: {{kahdeksan+Num+Card+Pl+Gen+Use/Rare}}
 
-* __kaksi__
-* __kahteen__
-* __kahtena__
-* __kahdessa__
-* __kahta__
-* __kaksia__
-* __kaksien__
-* __kaksiin__
-* __kaksina__
-* __kaksissa__
+* __yhdeksän__: {{yhdeksän+Num+Card+Sg+Nom}}
+* __yhdeksää__: {{yhdeksän+Num+Card+Sg+Par}}
+* __yhdeksään__: {{yhdeksän+Num+Card+Sg+Ill}}
+* __yhdeksässä__: {{yhdeksän+Num+Card+Sg+Ine}}
+* __yhdeksänä__: {{yhdeksän+Num+Card+Sg+Ess}}
+* __yhdeksiä__: {{yhdeksän+Num+Card+Pl+Par}}
+* __yhdeksien__: {{yhdeksän+Num+Card+Pl+Gen}}
+* __yhdeksissä__: {{yhdeksän+Num+Card+Pl+Ine}}
+* __yhdeksinä__: {{yhdeksän+Num+Card+Pl+Ess}}
+* __yhdeksäin__: {{yhdeksän+Num+Card+Pl+Gen+Use/Rare}}
 
-* __kolme__
-* __kolmeen__
-* __kolmena__
-* __kolmessa__
-* __kolmea__
-* __kolmia__
-* __kolmien__
-* __kolmiin__
-* __kolmina__
-* __kolmissa__
+(subsequent examples are *Numerals 32*)
+* __kymmenen__: {{kymmenen+Num+Card+Sg+Nom}}
+* __kymmeneen__: {{kymmenen+Num+Card+Sg+Ill}}
+* __kymmenenä__: {{kymmenen+Num+Card+Sg+Ess}}
+* __kymmenessä__: {{kymmenen+Num+Card+Sg+Ine}}
+* __kymmentä__: {{kymmenen+Num+Card+Sg+Par}}
+* __kymmenten__: {{kymmenen+Num+Card+Pl+Gen}}
+* __kymmenien__: {{kymmenen+Num+Card+Pl+Gen}}
+* __kymmeniin__: {{kymmenen+Num+Card+Pl+Ill}}
+* __kymmenissä__: {{kymmenen+Num+Card+Pl+Ine}}
+* __kymmeninä__: {{kymmenen+Num+Card+Pl+Ess}}
 
-* __neljä__
-* __neljää__
-* __neljään__
-* __neljäin__
-* __neljänä__
-* __neljässä__
-* __neljiä__
-* __neljien__
-* __neljiin__
-* __neljinä__
-* __neljissä__
+(subsequent examples are *Numerals 9*)
+* __sata__: {{sata+Num+Card+Sg+Nom}}
+* __satana__: {{sata+Num+Card+Sg+Ess}}
+* __sadassa__: {{sata+Num+Card+Sg+Ine}}
+* __sataan__: {{sata+Num+Card+Sg+Ill}}
+* __sataa__: {{sata+Num+Card+Sg+Par}}
+* __satojen__: {{sata+Num+Card+Pl+Gen}}
+* __satoihin__: {{sata+Num+Card+Pl+Ill}}
+* __sadoissa__: {{sata+Num+Card+Pl+Ine}}
+* __satoina__: {{sata+Num+Card+Pl+Ess}}
 
-* __viisi__
-* __viiteen__
-* __viitenä__
-* __viidessä__
-* __viisinä__
-* __viisissä__
-* __viittä__
-* __viitten__
-* __viisiä__
-* __viisien__
-* __viisiin__
+(subsequent examples are *Numerals 46*)
+* __tuhat__: {{tuhat+Num+Card+Sg+Nom}}
+* __tuhanteen__: {{tuhat+Num+Card+Sg+Ill}}
+* __tuhantena__: {{tuhat+Num+Card+Sg+Ess}}
+* __tuhannessa__: {{tuhat+Num+Card+Sg+Ine}}
+* __tuhansien__: {{tuhat+Num+Card+Pl+Gen}}
+* __tuhatta__: {{tuhat+Num+Card+Sg+Par}}
+* __tuhansia__: {{tuhat+Num+Card+Pl+Par}}
+* __tuhansien__: {{tuhat+Num+Card+Pl+Gen}}
+* __tuhansiin__: {{tuhat+Num+Card+Pl+Ill}}
+* __tuhansina__: {{tuhat+Num+Card+Pl+Ess}}
+* __tuhansissa__: {{tuhat+Num+Card+Pl+Ine}}
 
-* __kuusi__
-* __kuutena__
-* __kuudessa__
-* __kuusina__
-* __kuusissa__
-* __kuutta__
-* __kuutten__
-* __kuusia__
-* __kuusien__
-* __kuusiin__
-
-
-* __kahdeksan__
-* __kahdeksaa__
-* __kahdeksaan__
-* __kahdeksain__
-* __kahdeksassa__
-* __kahdeksana__
-* __kahdeksia__
-* __kahdeksien__
-* __kahdeksiin__
-* __kahdeksissa__
-* __kahdeksina__
-
-* __yhdeksän__
-* __yhdeksää__
-* __yhdeksään__
-* __yhdeksäin__
-* __yhdeksässä__
-* __yhdeksänä__
-* __yhdeksiä__
-* __yhdeksien__
-* __yhdeksissä__
-* __yhdeksinä__
-
-* __kymmenen__
-* __kymmeneen__
-* __kymmenenä__
-* __kymmenessä__
-* __kymmentä__
-* __kymmenten__
-* __kymmenien__
-* __kymmeniin__
-* __kymmenissä__
-* __kymmeninä__
-
-* __sata__
-* __satana__
-* __sadassa__
-* __sataan__
-* __sataa__
-* __satojen__
-* __satoihin__
-* __sadoissa__
-* __satoina__
-
-* __tuhat__
-* __tuhanteen__
-* __tuhantena__
-* __tuhannessa__
-* __tuhansien__
-* __tuhatta__
-* __tuhansia__
-* __tuhansien__
-* __tuhansiin__
-* __tuhansina__
-* __tuhansissa__
-
-* __miljoona__
-* __miljoonana__
-* __miljoonassa__
-* __miljoonaa__
-* __miljoonaan__
-* __miljoonia__
-* __miljoonien__
-* __miljooniin__
-* __miljoonissa__
-* __miljoonina__
+(subsequent examples are *Numerals 10*)
+* __miljoona__: {{miljoona+Num+Card+Sg+Nom}}
+* __miljoonana__: {{miljoona+Num+Card+Sg+Ess}}
+* __miljoonassa__: {{miljoona+Num+Card+Sg+Ine}}
+* __miljoonaa__: {{miljoona+Num+Card+Sg+Par}}
+* __miljoonaan__: {{miljoona+Num+Card+Sg+Ill}}
+* __miljoonia__: {{miljoona+Num+Card+Pl+Par}}
+* __miljoonien__: {{miljoona+Num+Card+Pl+Gen}}
+* __miljooniin__: {{miljoona+Num+Card+Pl+Ill}}
+* __miljoonissa__: {{miljoona+Num+Card+Pl+Ine}}
+* __miljoonina__: {{miljoona+Num+Card+Pl+Ess}}
 
 
-* __miljardi__
-* __miljardina__
-* __miljardissa__
-* __miljardeina__
-* __miljardeissa__
-* __miljardia__
-* __miljardiin__
-* __miljardeja__
-* __miljardien__
-* __miljardeihin__
+(subsequent examples are *Numerals 5*)
+* __miljardi__: {{miljardi+Num+Card+Sg+Nom}}
+* __miljardina__: {{miljardi+Num+Card+Sg+Ess}}
+* __miljardissa__: {{miljardi+Num+Card+Sg+Ine}}
+* __miljardeina__: {{miljardi+Num+Card+Pl+Ess}}
+* __miljardeissa__: {{miljardi+Num+Card+Pl+Ine}}
+* __miljardia__: {{miljardi+Num+Card+Sg+Par}}
+* __miljardiin__: {{miljardi+Num+Card+Sg+Ill}}
+* __miljardeja__: {{miljardi+Num+Card+Pl+Par}}
+* __miljardien__: {{miljardi+Num+Card+Pl+Gen}}
+* __miljardeihin__: {{miljardi+Num+Card+Pl+Ill}}
 
 
-* __Googol__
+* __Googol__: {{Googol+Num+Card+Sg+Nom}}
 
-* __pari__
-* __parina__
-* __parissa__
-* __pareissa__
-* __pareina__
-* __paria__
-* __pareja__
-* __parien__
-* __pareihin__
-* __pariin__
+* __pari__: {{pari+Num+Card+Sg+Nom}}
+* __parina__: {{pari+Num+Card+Sg+Ess}}
+* __parissa__: {{pari+Num+Card+Sg+Ine}}
+* __pareissa__: {{pari+Num+Card+Pl+Ine}}
+* __pareina__: {{pari+Num+Card+Pl+Ess}}
+* __paria__: {{pari+Num+Card+Sg+Par}}
+* __pareja__: {{pari+Num+Card+Pl+Par}}
+* __parien__: {{pari+Num+Card+Pl+Gen}}
+* __pareihin__: {{pari+Num+Card+Pl+Ill}}
+* __pariin__: {{pari+Num+Card+Sg+Ill}}
 
 
-* __ensimmäinen__
-* __ensimmäisenä__
-* __ensimmäisessä__
-* __ensimmäistä__
-* __ensimmäisten__
-* __ensimmäisiä__
-* __ensimmäisiin__
-* __ensimmäisinä__
-* __ensimmäisissä__
+(subsequent examples are *Numerals 38*)
+* __ensimmäinen__: {{ensimmäinen+Num+Ord+Sg+Nom}}
+* __ensimmäisenä__: {{ensimmäinen+Num+Ord+Sg+Ess}}
+* __ensimmäisessä__: {{ensimmäinen+Num+Ord+Sg+Ine}}
+* __ensimmäistä__: {{ensimmäinen+Num+Ord+Sg+Par}}
+* __ensimmäisten__: {{ensimmäinen+Num+Ord+Pl+Gen}}
+* __ensimmäisiä__: {{ensimmäinen+Num+Ord+Pl+Par}}
+* __ensimmäisiin__: {{ensimmäinen+Num+Ord+Pl+Ill}}
+* __ensimmäisinä__: {{ensimmäinen+Num+Ord+Pl+Ess}}
+* __ensimmäisissä__: {{ensimmäinen+Num+Ord+Pl+Ine}}
 
-* __toinen__
-* __toiseen__
-* __toista__
-* __toisten__
-* __toisien__
-* __toisia__
-* __toisiin__
-* __toisena__
-* __toisessa__
-* __toisissa__
-* __toisina__
+* __toinen__: {{toinen+Num+Ord+Sg+Nom}}
+* __toiseen__: {{toinen+Num+Ord+Sg+Ill}}
+* __toista__: {{toinen+Num+Ord+Sg+Par}}
+* __toisten__: {{toinen+Num+Ord+Pl+Gen}}
+* __toisien__: {{toinen+Num+Ord+Pl+Gen}}
+* __toisia__: {{toinen+Num+Ord+Pl+Par}}
+* __toisiin__: {{toinen+Num+Ord+Pl+Ill}}
+* __toisena__: {{toinen+Num+Ord+Sg+Ess}}
+* __toisessa__: {{toinen+Num+Ord+Sg+Ine}}
+* __toisissa__: {{toinen+Num+Ord+Pl+Ine}}
+* __toisina__: {{toinen+Num+Ord+Pl+Ess}}
 
-* __kolmas__
-* __kolmantena__
-* __kolmannessa__
-* __kolmanteen__
-* __kolmatta__
-* __kolmansia__
-* __kolmansien__
-* __kolmansissa__
-* __kolmansina__
+(subsequent examples are *Numerals 45*)
+* __kolmas__: {{kolmas+Num+Ord+Sg+Nom}}
+* __kolmantena__: {{kolmas+Num+Ord+Sg+Ess}}
+* __kolmannessa__: {{kolmas+Num+Ord+Sg+Ine}}
+* __kolmanteen__: {{kolmas+Num+Ord+Sg+Ill}}
+* __kolmatta__: {{kolmas+Num+Ord+Sg+Par}}
+* __kolmansia__: {{kolmas+Num+Ord+Pl+Par}}
+* __kolmansien__: {{kolmas+Num+Ord+Pl+Gen}}
+* __kolmansissa__: {{kolmas+Num+Ord+Pl+Ine}}
+* __kolmansina__: {{kolmas+Num+Ord+Pl+Ess}}
 
-* __neljäs__
-* __neljänteen__
-* __neljäntenä__
-* __neljännessä__
-* __neljättä__
-* __neljänsiä__
-* __neljänsien__
-* __neljänsiin__
-* __neljänsissä__
-* __neljänsinä__
+* __neljäs__: {{neljäs+Num+Ord+Sg+Nom}}
+* __neljänteen__: {{neljäs+Num+Ord+Sg+Ill}}
+* __neljäntenä__: {{neljäs+Num+Ord+Sg+Ess}}
+* __neljännessä__: {{neljäs+Num+Ord+Sg+Ine}}
+* __neljättä__: {{neljäs+Num+Ord+Sg+Par}}
+* __neljänsiä__: {{neljäs+Num+Ord+Pl+Par}}
+* __neljänsien__: {{neljäs+Num+Ord+Pl+Gen}}
+* __neljänsiin__: {{neljäs+Num+Ord+Pl+Ill}}
+* __neljänsissä__: {{neljäs+Num+Ord+Pl+Ine}}
+* __neljänsinä__: {{neljäs+Num+Ord+Pl+Ess}}
 
 
