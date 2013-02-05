@@ -1,11 +1,11 @@
-!! !!Noun inflection and derivation
+!! !!!Noun inflection and derivation
 !! Nouns and other nominals inflect in number, cases, possessives and with
 !! clitics, in that order. Combinations that this regular inflection can form
 !! is approximately 2×15×5×26=4900, so we do not show all variants in test cases
 !! and examples, but just central ones that are interesting and potential to
 !! break.
 
-!! !Nominatives
+!! !!Nominatives
 !! Singular nominative is the dictionary reference form for most of the words.
 
 LEXICON N_BACK_NOMINATIVE
@@ -33,7 +33,7 @@ LEXICON N_FRONT_PLNOM_CLIT
 !!€ häät häät+N+Pl+Nom  wedding
 +Pl+Nom:%>t     N_FRONT_CLIT_OPT  ;
 
-!! !Singular case inflection
+!! !!Singular case inflection
 !! The nouns can inflect in 15 regular cases. Most of the cases have one or two
 !! case endings, with only varying part being the harmony vowel. For nouns with
 !! direct consonant gradation, the most of the singular case suffixes attach
@@ -105,7 +105,7 @@ LEXICON N_FRONT_STRONG_SINGULARS
 +Sg+Gen:0  N_FRONT_POSS   ;
 +Pl+Nom:0  N_FRONT_POSS   ;
 
-!! !Plural inflection
+!! !!Plural inflection
 
 LEXICON N_BACK_WEAK_PLURALS
 !!€gt-norm: Noun basic plural cases
@@ -161,7 +161,7 @@ LEXICON N_FRONT_STRONG_PLURALS
 +Pl+Ess:%>i%>nä   N_FRONT_POSS_ÄN_OPT      ;
 +Com:%>i%>ne        N_FRONT_POSS_EN_OPT      ;
 
-!! !Cases with allomorphic variation
+!! !!Cases with allomorphic variation
 !! The nominal cases which can take several different suffixes are singular
 !! and plural partitives, singular and plural illatives and plural genitives.
 !! After stem variation the selection of these allomorphs is the main factor
@@ -490,7 +490,7 @@ LEXICON N_FRONT_ILLATIVE_ISIIN
 +Pl+Ill:%>i%>siin  #     ;
 +Pl+Ill:%>i%>sii   N_FRONT_POSS     ;
 
-!! !Possessive suffixes
+!! !!Possessive suffixes
 !! Possessives come optionally after the case suffixes. For consonant final
 !! cases the possessives assimilate or eat the final part of the case ending
 !! or stem.
@@ -544,7 +544,7 @@ LEXICON N_FRONT_POSS_ÄN
 +PxSg3:%>än    N_FRONT_CLIT_OPT     ;
 +PxPl3:%>än    N_FRONT_CLIT_OPT     ;
 
-!! !Noun clitics
+!! !!Noun clitics
 !! Clitics can attach to any word-form, including one that already has a clitic.
 !! Clitics do not modify the form they attach to and are simply concatenated to
 !! the end.
@@ -712,7 +712,7 @@ LEXICON N_FRONT_POSS_EN_OBL
 !itse    kö-kään+Adverb     ;
 !ittäin  kö-kään+Adverb     ;
 !
-!! !Noun compounding
+!! !!Noun compounding
 !! Nouns form compounds productively. The non-final parts of regular compounds
 !! are singular nominatives, or singular or plural genitives of nouns. The final
 !! parts are nominals and inflect regularly.
