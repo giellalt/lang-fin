@@ -6,11 +6,9 @@
 
 ###### Variables: #######
 transducer=gt-norm
+Fail=0
 
 # source ./run-yaml-testcases.sh $transducer
-
-lexcfail=0
-nonexisting_fsts=""
 
 for file in ${srcdir}/../../../src/morphology/*.lexc \
 			${srcdir}/../../../src/morphology/*/*.lexc; do
@@ -18,13 +16,12 @@ for file in ${srcdir}/../../../src/morphology/*.lexc \
 	tests=$(grep '^\!\!€ ' $file)
 	if [ "$fsts" == "" -a "$tests" == "" ]; then
 		echo
-		echo "* WARNING: the LexC file"
-		echo "$file"
+		echo "* WARNING: the LexC file $file"
 		echo "doesn't contain any tests - SKIPPED"
 		echo
 	elif [ "$fsts" == "" -a ! "$tests" == "" ]; then
 #		echo "$file has tests, but no fst specified - defaulting to gt-norm."
-#		source ./run-yaml-testcases.sh gt-norm $file
+#		source ./run-yaml-testcases.sh $transducer $file
 		echo
 		echo "$file has tests, but no fst specified - SKIPPED"
 		echo
@@ -35,7 +32,6 @@ for file in ${srcdir}/../../../src/morphology/*.lexc \
 		    echo "LexC subtest $i: Testing $file using fst: $fst"
 		    echo
 			source ./run-morph-tester.sh $fst $file
-			let "lexcfail += $Fail"
 		done
 	fi
 done
