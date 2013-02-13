@@ -7,36 +7,6 @@
 # List here (space separated) all test scripts that should be run:
 TESTS=generate-noun-lemmas.sh
 
-if CAN_DOCC
-# Add test files that should be generated from source code to the
-# SOURCE_CODE_YAML_TESTS variable. The filename pattern is as follows:
-#
-# dir/filename.lexc => filename-dir_fst-name.yaml
-#
-# The fst-name is specified in the test data in the source file.
-
-SOURCE_CODE_YAML_TESTS=root-morphology_gt-norm.yaml \
-					   adj-stems_gt-norm.yaml adjectives-affixes_gt-norm.yaml \
-					   noun-stems_gt-norm.yaml nouns-affixes_gt-norm.yaml \
-					   verb-stems_gt-norm.yaml verbs-affixes_gt-norm.yaml \
-					   acro-stems_gt-norm.yaml acronyms-affixes_gt-norm.yaml \
-					   adv-stems_gt-norm.yaml adv-affixes_gt-norm.yaml \
-					   numeral-stems_gt-norm.yaml numeral-affixes_gt-norm.yaml \
-					   abbr-stems_gt-norm.yaml \
-					   cc-stems_gt-norm.yaml \
-					   cs-stems_gt-norm.yaml \
-					   interj-stems_gt-norm.yaml \
-					   particles-stems_gt-norm.yaml \
-					   pp-stems_gt-norm.yaml \
-					   prefixes-stems_gt-norm.yaml \
-					   suffixes-stems_gt-norm.yaml \
-					   pron-stems_gt-norm.yaml \
-					   propernoun-stems_gt-norm.yaml \
-					   51-stems_gt-norm.yaml \
-					   digits-stems_gt-norm.yaml \
-					   punct-stems_gt-norm.yaml
-endif # CAN_DOCC
-
 if CAN_YAML_TEST
 # Add your shell scripts for running python-based tests here:
 TESTS+=run-gt-norm-yaml-testcases.sh \
