@@ -87,5 +87,11 @@ for f in $fsttype; do
 		echo "using transducer: $analyserfile.$f"
 		echo
 		run_tests
+	else
+	    Fail=1
+		echo "FAIL: Transducer not found! $analyserfile.$f"
+		echo "Referenced by: $testfile"
+	    echo
+	    continue
 	fi
 done
