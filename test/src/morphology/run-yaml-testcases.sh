@@ -28,6 +28,7 @@ fi
 
 ###### Variables: #######
 transducer=$1
+Fail=0
 
 testfiles=$(find ${srcdir} -name "*_$transducer.yaml")
 if [ "$testfiles" == "" ]; then

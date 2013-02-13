@@ -47,13 +47,17 @@ if [ "$fsttype" == "" ]; then
 fi
 
 function run_tests() {
-	$runtests -c -C -i -S $section \
+	$runtests \
+		--colour \
+		--compact \
+		--ignore-extra-analyses \
+		--section $section \
 	    --app $lookuptool \
 	    --gen $generatorfile.$f \
 	    --morph $analyserfile.$f \
 	    $testfile
 	if [ $? -gt 0 ]; then
-	    Fail=1
+	    let "Fail += 1"
 	    echo
 	    echo "Test failed. To rerun with more details, please do:"
 	    echo
@@ -64,7 +68,6 @@ function run_tests() {
 
 ###### Start testing: #######
 transducer_found=0
-Fail=0
 
 # Loop over the transducer types first - we test both hfst and xfst if found:
 for f in $fsttype; do
@@ -75,7 +78,7 @@ for f in $fsttype; do
 		lookuptool="@HFST_LOOKUP@"
 		section="hfst"
 	else
-	    Fail=1
+	    let "Fail += 1"
 		echo "Unknown fst type! FST=$f"
 	    echo "$f - FAIL"
 	    continue
@@ -88,7 +91,7 @@ for f in $fsttype; do
 		echo
 		run_tests
 	else
-	    Fail=1
+	    let "Fail += 1"
 		echo "FAIL: Transducer not found! $analyserfile.$f"
 		echo "Referenced by: $testfile"
 	    echo
