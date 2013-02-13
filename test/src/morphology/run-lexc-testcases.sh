@@ -24,8 +24,10 @@ for file in ${srcdir}/../../../src/morphology/*.lexc \
 		echo
 	elif [ "$fsts" == "" -a ! "$tests" == "" ]; then
 #		echo "$file has tests, but no fst specified - defaulting to gt-norm."
+#		source ./run-yaml-testcases.sh gt-norm $file
+		echo
 		echo "$file has tests, but no fst specified - SKIPPED"
-#		source ./run-yaml-testcases.sh $transducer $file
+		echo
 	else
 		for fst in $fsts; do
 		    (( i += 1 ))
