@@ -14,8 +14,8 @@ nonexisting_fsts=""
 
 for file in ${srcdir}/../../../src/morphology/*.lexc \
 			${srcdir}/../../../src/morphology/*/*.lexc; do
-	fsts=$(grep '^\!\!€[^ :]' $file | cut -d'€' -f2 | cut -d':' -f1 | sort -u)
-	tests=$(grep '^\!\!€ ' $file | cut -d'€' -f2 | cut -d':' -f1 | sort -u)
+	fsts=$(grep '^\!\!€[^ :]' $file | sed 's/.*€\([a-z-]*\)\:.*/\1/' | sort -u)
+	tests=$(grep '^\!\!€ ' $file)
 	if [ "$fsts" == "" -a "$tests" == "" ]; then
 		echo
 		echo "* WARNING: the LexC file"
