@@ -21,7 +21,7 @@
 !+Sg+Nom:%:  ACRO_FRONT_POSS    ;
 !+Sg+Nom:%:  ACRO_FRONT_CLIT   ;
 !+Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
-!+Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
+!+Sg+Gen:%:n ACRO_FRONT_CLIT_OPT ;
 !+Sg+Par:%:tä    ACRO_FRONT_POSS_ÄN_OPT  ;
 !+Sg+Ill:%:een   ACRO_FRONT_POSS_CLIT_OPT ;
 !+Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
@@ -56,7 +56,7 @@
 !+Sg+Nom:%:  ACRO_BACK_POSS    ;
 !+Sg+Nom:%:  ACRO_BACK_CLIT   ;
 !+Pl+Nom:%:t ACRO_BACK_CLIT_OPT ;
-!+Sg+Nom:%:n ACRO_BACK_CLIT_OPT ;
+!+Sg+Gen:%:n ACRO_BACK_CLIT_OPT ;
 !+Sg+Par:%:ta    ACRO_BACK_POSS_AN_OPT  ;
 !+Sg+Ill:%:een   ACRO_BACK_POSS_CLIT_OPT ;
 !+Sg+Abe:%:tta   ACRO_BACK_POSS_AN_OPT  ;
@@ -84,14 +84,14 @@
 
 LEXICON ACRO_KOLME
 !! The acronyms ending in digit 3 pronounced as number
-!!€ A3 A3+N+Sg+Nom A3 paper
-!!€ A3:een A1+N+Sg+Ill
+!!€ MP3 MP3+N+Sg+Nom mp3 music file
+!!€ MP3:een MP3+N+Sg+Ill
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_BACK_POSS    ;
 +Sg+Nom:%:  ACRO_BACK_CLIT   ;
 +Pl+Nom:%:t ACRO_BACK_CLIT_OPT ;
-+Sg+Nom:%:n ACRO_BACK_CLIT_OPT ;
++Sg+Gen:%:n ACRO_BACK_CLIT_OPT ;
 +Sg+Par:%:a ACRO_BACK_POSS_AN_OPT  ;
 +Sg+Ill:%:een   ACRO_BACK_POSS_CLIT_OPT ;
 +Sg+Abe:%:tta   ACRO_BACK_POSS_AN_OPT  ;
@@ -126,7 +126,7 @@ LEXICON ACRO_KOLME
 !+Sg+Nom:%:  ACRO_FRONT_POSS    ;
 !+Sg+Nom:%:  ACRO_FRONT_CLIT   ;
 !+Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
-!+Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
+!+Sg+Gen:%:n ACRO_FRONT_CLIT_OPT ;
 !+Sg+Par:%:ää    ACRO_FRONT_POSS_ÄN_OPT  ;
 !+Sg+Ill:%:ään   ACRO_FRONT_POSS_CLIT_OPT ;
 !+Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
@@ -154,14 +154,14 @@ LEXICON ACRO_KOLME
 
 LEXICON ACRO_VIISI
 !! The acronyms ending in digit 5 pronounced as number
-!!€ A5 A5+N+Sg+Nom A5 paper
-!!€ A5:een A5+N+Sg+Ill
+!€ A5 A5+N+Sg+Nom A5 paper
+!€ A5:een A5+N+Sg+Ill
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_FRONT_POSS    ;
 +Sg+Nom:%:  ACRO_FRONT_CLIT   ;
 +Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
-+Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
++Sg+Gen:%:n ACRO_FRONT_CLIT_OPT ;
 +Sg+Par:%:tä    ACRO_FRONT_POSS_ÄN_OPT  ;
 +Sg+Ill:%:een   ACRO_FRONT_POSS_CLIT_OPT ;
 +Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
@@ -194,7 +194,7 @@ LEXICON ACRO_VIISI
 !+Sg+Nom:%:  ACRO_BACK_POSS    ;
 !+Sg+Nom:%:  ACRO_BACK_CLIT   ;
 !+Pl+Nom:%:t ACRO_BACK_CLIT_OPT ;
-!+Sg+Nom:%:n ACRO_BACK_CLIT_OPT ;
+!+Sg+Gen:%:n ACRO_BACK_CLIT_OPT ;
 !+Sg+Par:%:ta    ACRO_BACK_POSS_AN_OPT  ;
 !+Sg+Ill:%:een   ACRO_BACK_POSS_CLIT_OPT ;
 !+Sg+Abe:%:tta   ACRO_BACK_POSS_AN_OPT  ;
@@ -227,7 +227,7 @@ LEXICON ACRO_VIISI
 !+Sg+Nom:%:  ACRO_FRONT_POSS    ;
 !+Sg+Nom:%:  ACRO_FRONT_CLIT   ;
 !+Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
-!+Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
+!+Sg+Gen:%:n ACRO_FRONT_CLIT_OPT ;
 !+Sg+Par:%:ää    ACRO_FRONT_POSS_CLIT_OPT  ;
 !+Sg+Ill:%:ään   ACRO_FRONT_POSS_CLIT_OPT ;
 !+Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
@@ -260,7 +260,7 @@ LEXICON ACRO_VIISI
 !+Sg+Nom:%:  ACRO_BACK_POSS    ;
 !+Sg+Nom:%:  ACRO_BACK_CLIT   ;
 !+Pl+Nom:%:t ACRO_BACK_CLIT_OPT ;
-!+Sg+Nom:%:n ACRO_BACK_CLIT_OPT ;
+!+Sg+Gen:%:n ACRO_BACK_CLIT_OPT ;
 !+Sg+Par:%:aa    ACRO_BACK_POSS_CLIT_OPT  ;
 !+Sg+Ill:%:aan   ACRO_BACK_POSS_CLIT_OPT ;
 !+Sg+Abe:%:tta   ACRO_BACK_POSS_AN_OPT  ;
@@ -293,7 +293,7 @@ LEXICON ACRO_VIISI
 !+Sg+Nom:%:  ACRO_FRONT_POSS    ;
 !+Sg+Nom:%:  ACRO_FRONT_CLIT   ;
 !+Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
-!+Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
+!+Sg+Gen:%:n ACRO_FRONT_CLIT_OPT ;
 !+Sg+Par:%:ää    ACRO_FRONT_POSS_CLIT_OPT  ;
 !+Sg+Ill:%:ään   ACRO_FRONT_POSS_CLIT_OPT ;
 !+Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
@@ -334,7 +334,7 @@ LEXICON ACRO_AA
 +Sg+Nom:%:  ACRO_BACK_POSS    ;
 +Sg+Nom:%:  ACRO_BACK_CLIT   ;
 +Pl+Nom:%:t ACRO_BACK_CLIT_OPT ;
-+Sg+Nom:%:n ACRO_BACK_CLIT_OPT ;
++Sg+Gen:%:n ACRO_BACK_CLIT_OPT ;
 +Sg+Par:%:ta    ACRO_BACK_POSS_AN_OPT  ;
 +Sg+Ill:%:han   ACRO_BACK_POSS_CLIT_OPT ;
 +Sg+Abe:%:tta   ACRO_BACK_POSS_AN_OPT  ;
@@ -365,13 +365,13 @@ LEXICON ACRO_EE
 !! as a letter:
 !!€ BBC BBC+N+Sg+Nom British Broadcasting Company
 !!€ BBC:t BBC+N+Pl+Nom
-!!€ BCC:ssä BBC+N+Sg+Ine
+!!€ BBC:ssä BBC+N+Sg+Ine
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_FRONT_POSS    ;
 +Sg+Nom:%:  ACRO_FRONT_CLIT   ;
 +Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
-+Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
++Sg+Gen:%:n ACRO_FRONT_CLIT_OPT ;
 +Sg+Par:%:tä    ACRO_FRONT_POSS_ÄN_OPT  ;
 +Sg+Ill:%:hen   ACRO_FRONT_POSS_CLIT_OPT ;
 +Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
@@ -399,15 +399,15 @@ LEXICON ACRO_EE
 
 LEXICON ACRO_II
 !! Acronyms that end in 'j' or 'i' pronoynced as letter:
-!!€ DPI
-!!€ DPI:t
-!!€ DPI:ssä
+!!€ DPI DPI+N+Sg+Nom
+!!€ DPI:t DPI+N+Pl+Nom
+!!€ DPI:ssä DPI+N+Sg+Ine
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_FRONT_POSS    ;
 +Sg+Nom:%:  ACRO_FRONT_CLIT   ;
 +Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
-+Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
++Sg+Gen:%:n ACRO_FRONT_CLIT_OPT ;
 +Sg+Par:%:tä    ACRO_FRONT_POSS_ÄN_OPT  ;
 +Sg+Ill:%:hin   ACRO_FRONT_POSS_CLIT_OPT ;
 +Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
@@ -435,15 +435,15 @@ LEXICON ACRO_II
 
 LEXICON ACRO_OO
 !! Acronyms that end in 'h', 'k' or 'o' that is pronounced as a letter:
-!!€ HK
-!!€ HK:n
-!!€ HK:lla
+!!€ HK HK+N+Sg+Nom
+!!€ HK:n HK+N+Sg+Gen
+!!€ HK:lla HK+N+Sg+Ade
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_BACK_POSS    ;
 +Sg+Nom:%:  ACRO_BACK_CLIT   ;
 +Pl+Nom:%:t ACRO_BACK_CLIT_OPT ;
-+Sg+Nom:%:n ACRO_BACK_CLIT_OPT ;
++Sg+Gen:%:n ACRO_BACK_CLIT_OPT ;
 +Sg+Par:%:ta    ACRO_BACK_POSS_AN_OPT  ;
 +Sg+Ill:%:hon   ACRO_BACK_POSS_CLIT_OPT ;
 +Sg+Abe:%:tta   ACRO_BACK_POSS_AN_OPT  ;
@@ -471,15 +471,15 @@ LEXICON ACRO_OO
 
 LEXICON ACRO_UU
 !! Acronyms that end in 'q', or 'u' pronounced as a letter:
-!!€ EU
-!!€ EU:t
-!!€ EU:hun
+!!€ EU EU+N+Sg+Nom
+!!€ EU:t EU+N+Pl+Nom
+!!€ EU:hun EU+N+Sg+Ill
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_BACK_POSS    ;
 +Sg+Nom:%:  ACRO_BACK_CLIT   ;
 +Pl+Nom:%:t ACRO_BACK_CLIT_OPT ;
-+Sg+Nom:%:n ACRO_BACK_CLIT_OPT ;
++Sg+Gen:%:n ACRO_BACK_CLIT_OPT ;
 +Sg+Par:%:ta    ACRO_BACK_POSS_AN_OPT  ;
 +Sg+Ill:%:hun   ACRO_BACK_POSS_CLIT_OPT ;
 +Sg+Abe:%:tta   ACRO_BACK_POSS_AN_OPT  ;
@@ -508,14 +508,14 @@ LEXICON ACRO_UU
 LEXICON ACRO_ÄKS
 !! Acronym that ends in 'f', 'l', 'm', 'n', 'r', 's', 'š' or 'x' pronounced as
 !! a letter:
-!!€ GRPS
-!!€ GPRS:llä
+!!€ GPRS GPRS+N+Sg+Nom
+!!€ GPRS:llä GPRS+N+Sg+Ade
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_FRONT_POSS    ;
 +Sg+Nom:%:  ACRO_FRONT_CLIT   ;
 +Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
-+Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
++Sg+Gen:%:n ACRO_FRONT_CLIT_OPT ;
 +Sg+Par:%:ää    ACRO_FRONT_POSS_CLIT_OPT  ;
 +Sg+Ill:%:ään   ACRO_FRONT_POSS_CLIT_OPT ;
 +Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
@@ -543,14 +543,14 @@ LEXICON ACRO_ÄKS
 
 LEXICON ACRO_YY
 !! Acronym that ends in 'y' pronounced as letter
-!!€ EY
-!!€ EY:hyn
+!!€ EY EY+N+Sg+Nom
+!!€ EY:hyn EY+N+Sg+Ill
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_FRONT_POSS    ;
 +Sg+Nom:%:  ACRO_FRONT_CLIT   ;
 +Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
-+Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
++Sg+Gen:%:n ACRO_FRONT_CLIT_OPT ;
 +Sg+Par:%:tä    ACRO_FRONT_POSS_ÄN_OPT  ;
 +Sg+Ill:%:hyn   ACRO_FRONT_POSS_CLIT_OPT ;
 +Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
@@ -578,14 +578,14 @@ LEXICON ACRO_YY
 
 LEXICON ACRO_ZET
 !! Acronyms that end in 'z' pronounced as letter
-!!€ Z
-!!€ Z:t
+!!€ Z Z+N+Sg+Nom
+!!€ Z:t Z+N+Pl+Nom
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_BACK_POSS    ;
 +Sg+Nom:%:  ACRO_BACK_CLIT   ;
 +Pl+Nom:%:t ACRO_BACK_CLIT_OPT ;
-+Sg+Nom:%:n ACRO_BACK_CLIT_OPT ;
++Sg+Gen:%:n ACRO_BACK_CLIT_OPT ;
 +Sg+Par:%:aa    ACRO_BACK_POSS_CLIT_OPT  ;
 +Sg+Ill:%:aan   ACRO_BACK_POSS_CLIT_OPT ;
 +Sg+Abe:%:tta   ACRO_BACK_POSS_AN_OPT  ;
@@ -613,14 +613,14 @@ LEXICON ACRO_ZET
 
 LEXICON ACRO_ÄÄ
 !! Acronyms that end in 'ä' pronounced as letter
-!!€ Ä
-!!€ Ä:t
+!!€ Ä Ä+N+Sg+Nom
+!!€ Ä:t Ä+N+Pl+Nom
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_FRONT_POSS    ;
 +Sg+Nom:%:  ACRO_FRONT_CLIT   ;
 +Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
-+Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
++Sg+Gen:%:n ACRO_FRONT_CLIT_OPT ;
 +Sg+Par:%:tä    ACRO_FRONT_POSS_ÄN_OPT  ;
 +Sg+Ill:%:hän   ACRO_FRONT_POSS_CLIT_OPT ;
 +Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
@@ -648,14 +648,14 @@ LEXICON ACRO_ÄÄ
 
 LEXICON ACRO_ÖÖ
 !! Acronyms that end in 'ö' pronounced as letter
-!!€ Ö
-!!€ Ö:t
+!!€ Ö Ö+N+Sg+Nom
+!!€ Ö:t Ö+N+Pl+Nom
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  ACRO_FRONT_POSS    ;
 +Sg+Nom:%:  ACRO_FRONT_CLIT   ;
 +Pl+Nom:%:t ACRO_FRONT_CLIT_OPT ;
-+Sg+Nom:%:n ACRO_FRONT_CLIT_OPT ;
++Sg+Gen:%:n ACRO_FRONT_CLIT_OPT ;
 +Sg+Par:%:tä    ACRO_FRONT_POSS_ÄN_OPT  ;
 +Sg+Ill:%:hön   ACRO_FRONT_POSS_CLIT_OPT ;
 +Sg+Abe:%:ttä   ACRO_FRONT_POSS_ÄN_OPT  ;
