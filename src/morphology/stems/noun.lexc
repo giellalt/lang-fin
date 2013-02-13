@@ -97619,7 +97619,7 @@ LEXICON N_VIENTI
 LEXICON N_PUNK
 !! New loan words ending in consonant may be inflected as i stem words
 !!€ punk punk+N+Sg+Nom punk
-!!€ punkeina punk+N+Pl+Gen
+!!€ punkeina punk+N+Pl+Ess
 !!€ punkien punk+N+Pl+Gen
 0        N_BACK_NOMINATIVE    ;
 0:i       N_BACK_SINGULARS    ;
@@ -100589,7 +100589,7 @@ LEXICON N_VIRSI
 !!€ hirtenä hirsi+N+Sg+Ess
 !!€ hirressä hirsi+N+Sg+Ine
 !!€ hirttä hirsi+N+Sg+Par
-!!€ hirsiin hirsi+N+Sg+Ill
+!!€ hirsiin hirsi+N+Pl+Ill
 0:si   N_FRONT_NOMINATIVE    ;
 0:te N_FRONT_STRONG_SINGULARS    ;
 0:re N_FRONT_WEAK_SINGULARS    ;
@@ -101198,8 +101198,8 @@ LEXICON N_NIMETÖN
 
 LEXICON N_VANHIN
 !!€gt-norm: Nouns 35
-!!€ vanhin vanhin+N+Sg+Nom elder
-!!€ vanhimpana vanhin+N+Sg+Ess
+!!€ kylänvanhin kylänvanhin+N+Sg+Nom elder
+!!€ kylänvanhimpana kylänvanhin+N+Sg+Ess
 0:n   N_BACK_NOMINATIVE    ;
 0:mpa   N_BACK_STRONG_SINGULARS    ;
 0:mma   N_BACK_WEAK_SINGULARS   ;
