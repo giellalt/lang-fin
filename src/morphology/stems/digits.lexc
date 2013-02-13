@@ -7,7 +7,7 @@ LEXICON DIGITS
 !! roman numerals.
 !! Zero alone works quite differently:
 !!€gt-norm: Digits basic
-!!€ "0" 0+Num+Sg+Nom
+!!€ 0 0+Num+Sg+Nom
 0    DIGITS_INT_LOOP ;
 0    DIGITS_DECIMAL_LOOP ;
 0    DIGITS_ROMANS   ;
@@ -17,9 +17,9 @@ LEXICON DIGITS_INT_LOOP
 !! Integers can be constructed from any number of digits, ending in
 !! 1-9, followed by any number of 0's. Initial 0's are rare, but not totally
 !! unexpected:
-!!€ "13" 13+Num+Card+Sg+Nom
-!!€ "100" 100+Num+Card+Sg+Nom
-!!€ "0000005550000000" 0000005550000000+Num+Card+Sg+Nom
+!!€ 13 13+Num+Card+Sg+Nom
+!!€ 100 100+Num+Card+Sg+Nom
+!!€ 0000005550000000 0000005550000000+Num+Card+Sg+Nom
 %0  DIGITS_INT_LOOP ;
 1   DIGITS_INT_LOOP ;
 2   DIGITS_INT_LOOP ;
@@ -197,18 +197,18 @@ LEXICON DIGITS_INT_LOOP
 
 LEXICON DIGITS_ILLIARD_LOOP
 !! The digit strings that end in 10 to 12 + 6n 0's are inflected alike:
-!!€ "1000000000"   1000000000+Num+Card+Sg+Nom
-!!€ "300000000000" 300000000000+Num+Card+Sg+Nom
-!!€ "123456000000000000000000" 123456000000000000000000+Num+Card+Sg+Nom
+!!€ 1000000000   1000000000+Num+Card+Sg+Nom
+!!€ 300000000000 300000000000+Num+Card+Sg+Nom
+!!€ 123456000000000000000000 123456000000000000000000+Num+Card+Sg+Nom
 %0%0%0%0%0%0    DIGITS_ILLIARD_LOOP ;
 +Num+Card:0    DIGITS_MILJARDI ;
 +Num+Ord:0    DIGITS_KOLMAS ;
 
 LEXICON DIGITS_ILLION_LOOP
 !! The digit strings that end in 6 to 9 + 6n 0's are inflected alike:
-!!€ "1000000"   1000000+Num+Card+Sg+Nom
-!!€ "300000000" 300000000+Num+Card+Sg+Nom
-!!€ "123456000000000000000" 123456000000000000000+Num+Card+Sg+Nom
+!!€ 1000000   1000000+Num+Card+Sg+Nom
+!!€ 300000000 300000000+Num+Card+Sg+Nom
+!!€ 123456000000000000000 123456000000000000000+Num+Card+Sg+Nom
 %0%0%0%0%0%0    DIGITS_ILLION_LOOP  ;
 +Num+Card:0    DIGITS_MILJOONA ;
 +Num+Ord:0    DIGITS_KOLMAS ;
@@ -218,8 +218,8 @@ LEXICON DIGITS_DECIMAL_LOOP
 !! by decimal separator comma. The decimal dot may be allowed as substandard
 !! variant.
 !!€gt-norm: Digits decimal strings
-!!€ "1,0" 1,0+Num+Sg+Nom
-!!€ "314,1" 314,1+Num+Sg+Nom
+!!€ 1,0 1,0+Num+Sg+Nom
+!!€ 314,1 314,1+Num+Sg+Nom
 %0  DIGITS_DECIMAL_LOOP ;
 1   DIGITS_DECIMAL_LOOP ;
 2   DIGITS_DECIMAL_LOOP ;
@@ -237,8 +237,8 @@ LEXICON DIGITS_DECIMAL_LOOP
 LEXICON DIGITS_DECIMAL_LOOP_FINAL
 !! The decimal digit strings end in any number of digits 0 to 9, inflected
 !! along the last part.
-!!€ "3,141" 3,141+Num+Sg+Nom
-!!€ "123,345" 123,345+Num+Sg+Nom
+!!€ 3,141 3,141+Num+Sg+Nom
+!!€ 123,345 123,345+Num+Sg+Nom
 %0  DIGITS_DECIMAL_LOOP_FINAL ;
 1   DIGITS_DECIMAL_LOOP_FINAL ;
 2   DIGITS_DECIMAL_LOOP_FINAL ;
