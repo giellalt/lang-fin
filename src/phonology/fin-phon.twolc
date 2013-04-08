@@ -9,9 +9,8 @@ A B C D E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž Å Ä Ö
 %# %_ %> »
 ! Boundaries to kill
 
-%#:0 %_:0 %>:0 »:0
 %#:%-
-
+%#:%#
 ;
 
 Sets
@@ -23,8 +22,5 @@ Rules
 
 "Force hyphen between vowels"
 %#:%- <= VV _ VV ; where VV in Vowels ;
-
-"Disallow punct disappearance iff same as stuff"
-Punct:0 /<= # _ # ; where Punct in MeaningfulPunct ;
 
 ! vim:set ft=xfst-twol:
