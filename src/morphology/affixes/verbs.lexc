@@ -19,22 +19,22 @@ LEXICON V_BACK_WEAK_PRESENT
 !!gt-norm: Verbs weak present forms
 !!€ kutoa kutoa+V+Act+InfA+Sg+Lat knit
 !!€ kudon kutoa+V+Act+Ind+Prs+Sg1
-+Act+Ind+Prs+Sg1:n V_BACK_CLIT_OPT     ;
-+Act+Ind+Prs+Sg2:t V_BACK_CLIT_OPT     ;
-+Act+Ind+Prs+Pl1:mme   V_BACK_CLIT_OPT     ;
-+Act+Ind+Prs+Pl2:tte   V_BACK_CLIT_OPT     ;
-+Ind+Prs+ConNeg:0    V_BACK_CLIT_OPT     ;
-+Act+Imprt+Sg2:0    V_BACK_CLIT_OPT     ;
++Act+Ind+Prs+Sg1:%>n V_BACK_CLIT_OPT     ;
++Act+Ind+Prs+Sg2:%>t V_BACK_CLIT_OPT     ;
++Act+Ind+Prs+Pl1:%>mme   V_BACK_CLIT_OPT     ;
++Act+Ind+Prs+Pl2:%>tte   V_BACK_CLIT_OPT     ;
++Ind+Prs+ConNeg:%>0    V_BACK_CLIT_OPT     ;
++Act+Imprt+Sg2:%>0    V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_WEAK_PRESENT
 !!€ yltää yltää+V+Act+InfA+Sg+Lat reach
 !!€ yllän yltää+V+Act+Ind+Prs+Sg1
-+Act+Ind+Prs+Sg1:n V_FRONT_CLIT_OPT     ;
-+Act+Ind+Prs+Sg2:t V_FRONT_CLIT_OPT     ;
-+Act+Ind+Prs+Pl1:mme   V_FRONT_CLIT_OPT     ;
-+Act+Ind+Prs+Pl2:tte   V_FRONT_CLIT_OPT     ;
-+Ind+Prs+ConNeg:0    V_FRONT_CLIT_OPT     ;
-+Act+Imprt+Sg2:0    V_FRONT_CLIT_OPT     ;
++Act+Ind+Prs+Sg1:%>n V_FRONT_CLIT_OPT     ;
++Act+Ind+Prs+Sg2:%>t V_FRONT_CLIT_OPT     ;
++Act+Ind+Prs+Pl1:%>mme   V_FRONT_CLIT_OPT     ;
++Act+Ind+Prs+Pl2:%>tte   V_FRONT_CLIT_OPT     ;
++Ind+Prs+ConNeg:%>0    V_FRONT_CLIT_OPT     ;
++Act+Imprt+Sg2:%>0    V_FRONT_CLIT_OPT     ;
 
 !! The strong form of present indicative endings in strong stems and ma 
 !! infinitive, and maisilla derivation (nee infinitive).
@@ -42,26 +42,26 @@ LEXICON V_BACK_STRONG_PRESENT
 !!€gt-norm: Verbs strong present forms
 !!€ kutovat kutoa+V+Act+Ind+Prs+Pl3
 !!€ kutomatta kutoa+V+Act+InfMa+Sg+Abe
-+Act+Ind+Prs+Pl3:vat   V_BACK_CLIT_OPT     ;
-+Act+InfMa+Sg+Abe:matta   V_BACK_POSS_AN_OPT      ;
-+Act+InfMa+Sg+Ade:malla   V_BACK_CLIT_OPT     ;
-+Act+InfMa+Sg+Ela:masta   V_BACK_CLIT_OPT     ;
-+Act+InfMa+Sg+Ill:maan    V_BACK_CLIT_OPT     ;
-+Act+InfMa+Sg+Ine:massa   V_BACK_CLIT_OPT     ;
-+Act+InfMa+Sg+Ins:man    V_BACK_CLIT_OPT     ;
-+Act+Der/maisilla:maisilla   V_BACK_POSS_AN_OBL        ;
++Act+Ind+Prs+Pl3:%>vat   V_BACK_CLIT_OPT     ;
++Act+InfMa+Sg+Abe:%>ma%>tta   V_BACK_POSS_AN_OPT      ;
++Act+InfMa+Sg+Ade:%>ma%>lla   V_BACK_CLIT_OPT     ;
++Act+InfMa+Sg+Ela:%>ma%>sta   V_BACK_CLIT_OPT     ;
++Act+InfMa+Sg+Ill:%>ma%>an    V_BACK_CLIT_OPT     ;
++Act+InfMa+Sg+Ine:%>ma%>ssa   V_BACK_CLIT_OPT     ;
++Act+InfMa+Sg+Ins:%>ma%>n    V_BACK_CLIT_OPT     ;
++Act+Der/maisilla:%>ma»isi%>lla   V_BACK_POSS_AN_OBL        ;
 
 LEXICON V_FRONT_STRONG_PRESENT
 !!€ yltävät yltää+V+Act+Ind+Prs+Pl3
 !!€ yltämättä yltää+V+Act+InfMa+Sg+Abe
-+Act+Ind+Prs+Pl3:vät   V_FRONT_CLIT_OPT     ;
-+Act+InfMa+Sg+Abe:mättä   V_FRONT_POSS_AN_OPT      ;
-+Act+InfMa+Sg+Ade:mällä   V_FRONT_CLIT_OPT     ;
-+Act+InfMa+Sg+Ela:mästä   V_FRONT_CLIT_OPT     ;
-+Act+InfMa+Sg+Ill:mään    V_FRONT_CLIT_OPT     ;
-+Act+InfMa+Sg+Ine:mässä   V_FRONT_CLIT_OPT     ;
-+Act+InfMa+Sg+Ins:män    V_FRONT_CLIT_OPT     ;
-+Act+Der/maisilla:mäisillä   V_FRONT_POSS_AN_OBL        ;
++Act+Ind+Prs+Pl3:%>vät   V_FRONT_CLIT_OPT     ;
++Act+InfMa+Sg+Abe:%>mä%>ttä   V_FRONT_POSS_AN_OPT      ;
++Act+InfMa+Sg+Ade:%>mä%>llä   V_FRONT_CLIT_OPT     ;
++Act+InfMa+Sg+Ela:%>mä%>stä   V_FRONT_CLIT_OPT     ;
++Act+InfMa+Sg+Ill:%>mä%>än    V_FRONT_CLIT_OPT     ;
++Act+InfMa+Sg+Ine:%>mä%>ssä   V_FRONT_CLIT_OPT     ;
++Act+InfMa+Sg+Ins:%>mä%>n    V_FRONT_CLIT_OPT     ;
++Act+Der/maisilla:%>mä»isi%>llä   V_FRONT_POSS_AN_OBL        ;
 
 !! !Verb 3rd singular forms
 !! The third singular form of present tense has few allomorphs according to
@@ -69,213 +69,213 @@ LEXICON V_FRONT_STRONG_PRESENT
 
 LEXICON V_BACK_3SG_A
 !!€ rakentaa rakentaa+V+Act+Ind+Prs+Sg3 builds
-+Act+Ind+Prs+Sg3:a V_BACK_CLIT_OPT     ;
++Act+Ind+Prs+Sg3:%>a V_BACK_CLIT_OPT     ;
 
 LEXICON V_BACK_3SG_E
 !!€ tulee tulla+V+Act+Ind+Prs+Sg3 comes
-+Act+Ind+Prs+Sg3:e V_BACK_CLIT_OPT     ;
++Act+Ind+Prs+Sg3:%>e V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_3SG_E
 !!€ menee mennä+V+Act+Ind+Prs+Sg3 goes
-+Act+Ind+Prs+Sg3:e V_FRONT_CLIT_OPT     ;
++Act+Ind+Prs+Sg3:%>e V_FRONT_CLIT_OPT     ;
 
 LEXICON V_BACK_3SG_I
 !!€ munii munia+V+Act+Ind+Prs+Sg3 lays eggs
-+Act+Ind+Prs+Sg3:i V_BACK_CLIT_OPT     ;
++Act+Ind+Prs+Sg3:%>i V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_3SG_I
 !!€ rämpii rämpiä+V+Act+Ind+Prs+Sg3 hikes
-+Act+Ind+Prs+Sg3:i V_FRONT_CLIT_OPT     ;
++Act+Ind+Prs+Sg3:%>i V_FRONT_CLIT_OPT     ;
 
 LEXICON V_BACK_3SG_O
 !!€ kutoo kutoa+V+Act+Ind+Prs+Sg3
-+Act+Ind+Prs+Sg3:o V_BACK_CLIT_OPT     ;
++Act+Ind+Prs+Sg3:%>o V_BACK_CLIT_OPT     ;
 
 LEXICON V_BACK_3SG_U
 !!€ viruu virua+V+Act+Ind+Prs+Sg3 stretches
-+Act+Ind+Prs+Sg3:u V_BACK_CLIT_OPT     ;
++Act+Ind+Prs+Sg3:%>u V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_3SG_Y
 !!€ kääntyy kääntyä+V+Act+Ind+Prs+Sg3 turns
-+Act+Ind+Prs+Sg3:y V_FRONT_CLIT_OPT     ;
++Act+Ind+Prs+Sg3:%>y V_FRONT_CLIT_OPT     ;
 
 LEXICON V_FRONT_3SG_Ö
 !!€ säilöö säilöä+V+Act+Ind+Prs+Sg3 conserves
-+Act+Ind+Prs+Sg3:ö V_FRONT_CLIT_OPT     ;
++Act+Ind+Prs+Sg3:%>ö V_FRONT_CLIT_OPT     ;
 
 LEXICON V_FRONT_3SG_Ä
 !!€ vääntää vääntää+V+Act+Ind+Prs+Sg3 twist
-+Act+Ind+Prs+Sg3:ä V_FRONT_CLIT_OPT     ;
++Act+Ind+Prs+Sg3:%>ä V_FRONT_CLIT_OPT     ;
 
 !! !Past forms
 
 LEXICON V_BACK_WEAK_PAST
 !!€gt-norm: Verb past forms
 !!€ kudoin kutoa+V+Act+Ind+Prt+Sg1
-+Act+Ind+Prt+Sg1:in   V_BACK_CLIT_OPT     ;
-+Act+Ind+Prt+Sg2:it   V_BACK_CLIT_OPT     ;
-+Act+Ind+Prt+Pl1:imme V_BACK_CLIT_OPT     ;
-+Act+Ind+Prt+Pl2:itte V_BACK_CLIT_OPT     ;
++Act+Ind+Prt+Sg1:%>i%>n   V_BACK_CLIT_OPT     ;
++Act+Ind+Prt+Sg2:%>i%>t   V_BACK_CLIT_OPT     ;
++Act+Ind+Prt+Pl1:%>i%>mme V_BACK_CLIT_OPT     ;
++Act+Ind+Prt+Pl2:%>i%>tte V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_WEAK_PAST
 !!€ ylsin yltää+V+Act+Ind+Prt+Sg1
-+Act+Ind+Prt+Sg1:in   V_FRONT_CLIT_OPT     ;
-+Act+Ind+Prt+Sg2:it   V_FRONT_CLIT_OPT     ;
-+Act+Ind+Prt+Pl1:imme V_FRONT_CLIT_OPT     ;
-+Act+Ind+Prt+Pl2:itte V_FRONT_CLIT_OPT     ;
++Act+Ind+Prt+Sg1:%>i%>n   V_FRONT_CLIT_OPT     ;
++Act+Ind+Prt+Sg2:%>i%>t   V_FRONT_CLIT_OPT     ;
++Act+Ind+Prt+Pl1:%>i%>mme V_FRONT_CLIT_OPT     ;
++Act+Ind+Prt+Pl2:%>i%>tte V_FRONT_CLIT_OPT     ;
 
 LEXICON V_BACK_STRONG_PAST
 !!€ kutoivat kutoa+V+Act+Ind+Prt+Pl3
-+Act+Ind+Prt+Sg3:i    V_BACK_CLIT_OPT     ;
-+Act+Ind+Prt+Pl3:ivat  V_BACK_CLIT_OPT     ;
++Act+Ind+Prt+Sg3:%>i    V_BACK_CLIT_OPT     ;
++Act+Ind+Prt+Pl3:%>i%>vat  V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_STRONG_PAST
 !!€ ylsivät yltää+V+Act+Ind+Prt+Pl3
-+Act+Ind+Prt+Pl3:ivät  V_FRONT_CLIT_OPT     ;
-+Act+Ind+Prt+Sg3:i    V_FRONT_CLIT_OPT     ;
++Act+Ind+Prt+Pl3:%>i%>vät  V_FRONT_CLIT_OPT     ;
++Act+Ind+Prt+Sg3:%>i    V_FRONT_CLIT_OPT     ;
 
 !! !Imperatives
 
 LEXICON V_BACK_IMPERATIVE
 !!€gt-norm: Verb imperatives
 !!€ kutokaa kutoa+V+Act+Imprt+Pl2
-+Act+Imprt+Pl1:kaamme   V_BACK_CLIT_OPT     ;
-+Act+Imprt+Pl2+Foc/s:kaas  V_BACK_CLIT_OPT     ;
-+Act+Imprt+Pl2:kaa  V_BACK_CLIT_OPT     ;
-+Act+Imprt+Pl3:koot V_BACK_CLIT_OPT     ;
-+Act+Imprt+Sg3:kon V_BACK_CLIT_OPT     ;
-+Imprt+ConNeg:ko   V_BACK_CLIT_OPT     ;
++Act+Imprt+Pl1:%>kaamme   V_BACK_CLIT_OPT     ;
++Act+Imprt+Pl2+Foc/s:%>kaas  V_BACK_CLIT_OPT     ;
++Act+Imprt+Pl2:%>kaa  V_BACK_CLIT_OPT     ;
++Act+Imprt+Pl3:%>koot V_BACK_CLIT_OPT     ;
++Act+Imprt+Sg3:%>kon V_BACK_CLIT_OPT     ;
++Imprt+ConNeg:%>ko   V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_IMPERATIVE
 !!€ yltäkää yltää+V+Act+Imprt+Pl2
-+Act+Imprt+Pl1:käämme   V_FRONT_CLIT_OPT     ;
-+Act+Imprt+Pl2+Foc/s:kääs  V_FRONT_CLIT_OPT     ;
-+Act+Imprt+Pl2:kää  V_FRONT_CLIT_OPT     ;
-+Act+Imprt+Pl3:kööt V_FRONT_CLIT_OPT     ;
-+Act+Imprt+Sg3:kön V_FRONT_CLIT_OPT     ;
-+Imprt+ConNeg:kö   V_FRONT_CLIT_OPT     ;
++Act+Imprt+Pl1:%>käämme   V_FRONT_CLIT_OPT     ;
++Act+Imprt+Pl2+Foc/s:%>kääs  V_FRONT_CLIT_OPT     ;
++Act+Imprt+Pl2:%>kää  V_FRONT_CLIT_OPT     ;
++Act+Imprt+Pl3:%>kööt V_FRONT_CLIT_OPT     ;
++Act+Imprt+Sg3:%>kön V_FRONT_CLIT_OPT     ;
++Imprt+ConNeg:%>kö   V_FRONT_CLIT_OPT     ;
 
 !! !Conditionals
 
 LEXICON V_BACK_CONDITIONAL
 !!€gt-norm: Verb conditionals
 !!€ kutoisin kutoa+V+Act+Cond+Sg1
-+Act+Cond+Pl1:isimme V_BACK_CLIT_OPT     ;
-+Act+Cond+Pl2:isitte V_BACK_CLIT_OPT     ;
-+Act+Cond+Pl3:isivat  V_BACK_CLIT_OPT     ;
-+Act+Cond+Sg1:isin   V_BACK_CLIT_OPT     ;
-+Act+Cond+Sg2:isit   V_BACK_CLIT_OPT     ;
-+Act+Cond+Sg3:isi    V_BACK_CLIT_OPT     ;
-+Cond+ConNeg:isi V_BACK_CLIT_OPT     ;
++Act+Cond+Pl1:%>isi%>mme V_BACK_CLIT_OPT     ;
++Act+Cond+Pl2:%>isi%>tte V_BACK_CLIT_OPT     ;
++Act+Cond+Pl3:%>isi%>vat  V_BACK_CLIT_OPT     ;
++Act+Cond+Sg1:%>isi%>n   V_BACK_CLIT_OPT     ;
++Act+Cond+Sg2:%>isi%>t   V_BACK_CLIT_OPT     ;
++Act+Cond+Sg3:%>isi%>    V_BACK_CLIT_OPT     ;
++Cond+ConNeg:%>isi V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_CONDITIONAL
 !!€ yltäisin yltää+V+Act+Cond+Sg1
-+Act+Cond+Pl1:isimme V_FRONT_CLIT_OPT     ;
-+Act+Cond+Pl2:isitte V_FRONT_CLIT_OPT     ;
-+Act+Cond+Pl3:isivät  V_FRONT_CLIT_OPT     ;
-+Act+Cond+Sg1:isin   V_FRONT_CLIT_OPT     ;
-+Act+Cond+Sg2:isit   V_FRONT_CLIT_OPT     ;
-+Act+Cond+Sg3:isi    V_FRONT_CLIT_OPT     ;
-+Cond+ConNeg:isi V_FRONT_CLIT_OPT     ;
++Act+Cond+Pl1:%>isi%>mme V_FRONT_CLIT_OPT     ;
++Act+Cond+Pl2:%>isi%>tte V_FRONT_CLIT_OPT     ;
++Act+Cond+Pl3:%>isi%>vät  V_FRONT_CLIT_OPT     ;
++Act+Cond+Sg1:%>isi%>n   V_FRONT_CLIT_OPT     ;
++Act+Cond+Sg2:%>isi%>t   V_FRONT_CLIT_OPT     ;
++Act+Cond+Sg3:%>isi%>    V_FRONT_CLIT_OPT     ;
++Cond+ConNeg:%>isi V_FRONT_CLIT_OPT     ;
 
 !! !Potentials
 
 LEXICON V_BACK_POTENTIAL_N
 !!€gt-norm: Verb potentials
 !!€ kutonen kutoa+V+Act+Pot+Sg1
-+Act+Pot+Pl1:nemme V_BACK_CLIT_OPT     ;
-+Act+Pot+Pl2:nette V_BACK_CLIT_OPT     ;
-+Act+Pot+Pl3:nevat  V_BACK_CLIT_OPT     ;
-+Act+Pot+Sg1:nen   V_BACK_CLIT_OPT     ;
-+Act+Pot+Sg2:net   V_BACK_CLIT_OPT     ;
-+Act+Pot+Sg3:nee   V_BACK_CLIT_OPT     ;
-+Pot+ConNeg:ne V_BACK_CLIT_OPT     ;
-+Act+PrfPrc:n   A_KULUNUT       ;
-+Act+Ind+Prt+ConNeg:nut  V_BACK_CLIT_OPT     ;
++Act+Pot+Pl1:%>ne%>mme V_BACK_CLIT_OPT     ;
++Act+Pot+Pl2:%>ne%>tte V_BACK_CLIT_OPT     ;
++Act+Pot+Pl3:%>ne%>vat  V_BACK_CLIT_OPT     ;
++Act+Pot+Sg1:%>ne%>n   V_BACK_CLIT_OPT     ;
++Act+Pot+Sg2:%>ne%>t   V_BACK_CLIT_OPT     ;
++Act+Pot+Sg3:%>ne%>e   V_BACK_CLIT_OPT     ;
++Pot+ConNeg:%>ne V_BACK_CLIT_OPT     ;
++Act+PrfPrc:%>n   A_KULUNUT       ;
++Act+Ind+Prt+ConNeg:%>nut  V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_POTENTIAL_N
 !!€ yltänen yltää+V+Act+Pot+Sg1
-+Act+Pot+Pl1:nemme V_FRONT_CLIT_OPT     ;
-+Act+Pot+Pl2:nette V_FRONT_CLIT_OPT     ;
-+Act+Pot+Pl3:nevät  V_FRONT_CLIT_OPT     ;
-+Act+Pot+Sg1:nen   V_FRONT_CLIT_OPT     ;
-+Act+Pot+Sg2:net   V_FRONT_CLIT_OPT     ;
-+Act+Pot+Sg3:nee   V_FRONT_CLIT_OPT     ;
-+Pot+ConNeg:ne V_FRONT_CLIT_OPT     ;
-+Act+PrfPrc:n   A_ÄLLISTYNYT     ;
-+Act+Ind+Prt+ConNeg:nyt  V_FRONT_CLIT_OPT     ;
++Act+Pot+Pl1:%>ne%>mme V_FRONT_CLIT_OPT     ;
++Act+Pot+Pl2:%>ne%>tte V_FRONT_CLIT_OPT     ;
++Act+Pot+Pl3:%>ne%>vät  V_FRONT_CLIT_OPT     ;
++Act+Pot+Sg1:%>ne%>n   V_FRONT_CLIT_OPT     ;
++Act+Pot+Sg2:%>ne%>t   V_FRONT_CLIT_OPT     ;
++Act+Pot+Sg3:%>ne%>e   V_FRONT_CLIT_OPT     ;
++Pot+ConNeg:%>ne V_FRONT_CLIT_OPT     ;
++Act+PrfPrc:%>n   A_ÄLLISTYNYT     ;
++Act+Ind+Prt+ConNeg:%>nyt  V_FRONT_CLIT_OPT     ;
 
 LEXICON V_BACK_POTENTIAL_S
 !!€ juossen juosta+V+Act+Pot+Sg1 I might run
-+Act+Pot+Pl1:semme V_BACK_CLIT_OPT     ;
-+Act+Pot+Pl2:sette V_BACK_CLIT_OPT     ;
-+Act+Pot+Pl3:sevat  V_BACK_CLIT_OPT     ;
-+Act+Pot+Sg1:sen   V_BACK_CLIT_OPT     ;
-+Act+Pot+Sg2:set   V_BACK_CLIT_OPT     ;
-+Act+Pot+Sg3:see   V_BACK_CLIT_OPT     ;
-+Pot+ConNeg:se V_BACK_CLIT_OPT     ;
-+Act+PrfPrc:s   A_KULUNUT       ;
-+Act+Ind+Prt+ConNeg:sut  V_BACK_CLIT_OPT     ;
++Act+Pot+Pl1:%>se%>mme V_BACK_CLIT_OPT     ;
++Act+Pot+Pl2:%>se%>tte V_BACK_CLIT_OPT     ;
++Act+Pot+Pl3:%>se%>vat  V_BACK_CLIT_OPT     ;
++Act+Pot+Sg1:%>se%>n   V_BACK_CLIT_OPT     ;
++Act+Pot+Sg2:%>se%>t   V_BACK_CLIT_OPT     ;
++Act+Pot+Sg3:%>se%>e   V_BACK_CLIT_OPT     ;
++Pot+ConNeg:%>se V_BACK_CLIT_OPT     ;
++Act+PrfPrc:%>s   A_KULUNUT       ;
++Act+Ind+Prt+ConNeg:%>sut  V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_POTENTIAL_S
 !!€ päässen päästä+V+Act+Pot+Sg1 I might be able to
-+Act+Pot+Pl1:semme V_FRONT_CLIT_OPT     ;
-+Act+Pot+Pl2:sette V_FRONT_CLIT_OPT     ;
-+Act+Pot+Pl3:sevät  V_FRONT_CLIT_OPT     ;
-+Act+Pot+Sg1:sen   V_FRONT_CLIT_OPT     ;
-+Act+Pot+Sg2:set   V_FRONT_CLIT_OPT     ;
-+Act+Pot+Sg3:see   V_FRONT_CLIT_OPT     ;
-+Pot+ConNeg:se V_FRONT_CLIT_OPT     ;
-+Act+PrfPrc:s A_ÄLLISTYNYT      ;
-+Act+Ind+Prt+ConNeg:syt  V_FRONT_CLIT_OPT     ;
++Act+Pot+Pl1:%>se%>mme V_FRONT_CLIT_OPT     ;
++Act+Pot+Pl2:%>se%>tte V_FRONT_CLIT_OPT     ;
++Act+Pot+Pl3:%>se%>vät  V_FRONT_CLIT_OPT     ;
++Act+Pot+Sg1:%>se%>n   V_FRONT_CLIT_OPT     ;
++Act+Pot+Sg2:%>se%>t   V_FRONT_CLIT_OPT     ;
++Act+Pot+Sg3:%>se%>e   V_FRONT_CLIT_OPT     ;
++Pot+ConNeg:%>se V_FRONT_CLIT_OPT     ;
++Act+PrfPrc:%>s A_ÄLLISTYNYT      ;
++Act+Ind+Prt+ConNeg:%>syt  V_FRONT_CLIT_OPT     ;
 
 LEXICON V_BACK_POTENTIAL_L
 !!€ tullen tulla+V+Act+Pot+Sg1
-+Act+Pot+Pl1:lemme V_BACK_CLIT_OPT     ;
-+Act+Pot+Pl2:lette V_BACK_CLIT_OPT     ;
-+Act+Pot+Pl3:levat  V_BACK_CLIT_OPT     ;
-+Act+Pot+Sg1:len   V_BACK_CLIT_OPT     ;
-+Act+Pot+Sg2:let   V_BACK_CLIT_OPT     ;
-+Act+Pot+Sg3:lee   V_BACK_CLIT_OPT     ;
-+Pot+ConNeg:le V_BACK_CLIT_OPT     ;
-+Act+PrfPrc:l  A_KULUNUT      ;
-+Act+Ind+Prt+ConNeg:lut  V_BACK_CLIT_OPT     ;
++Act+Pot+Pl1:%>le%>mme V_BACK_CLIT_OPT     ;
++Act+Pot+Pl2:%>le%>tte V_BACK_CLIT_OPT     ;
++Act+Pot+Pl3:%>le%>vat  V_BACK_CLIT_OPT     ;
++Act+Pot+Sg1:%>le%>n   V_BACK_CLIT_OPT     ;
++Act+Pot+Sg2:%>le%>t   V_BACK_CLIT_OPT     ;
++Act+Pot+Sg3:%>le%>e   V_BACK_CLIT_OPT     ;
++Pot+ConNeg:%>le V_BACK_CLIT_OPT     ;
++Act+PrfPrc:%>l  A_KULUNUT      ;
++Act+Ind+Prt+ConNeg:%>lut  V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_POTENTIAL_L
 !!€ kävellen kävellä+V+Act+Pot+Sg1 I might walk
-+Act+Pot+Pl1:lemme V_FRONT_CLIT_OPT     ;
-+Act+Pot+Pl2:lette V_FRONT_CLIT_OPT     ;
-+Act+Pot+Pl3:levät  V_FRONT_CLIT_OPT     ;
-+Act+Pot+Sg1:len   V_FRONT_CLIT_OPT     ;
-+Act+Pot+Sg2:let   V_FRONT_CLIT_OPT     ;
-+Act+Pot+Sg3:lee   V_FRONT_CLIT_OPT     ;
-+Pot+ConNeg:le V_FRONT_CLIT_OPT     ;
-+Act+PrfPrc:l  A_ÄLLISTYNYT  ;
-+Act+Ind+Prt+ConNeg:lyt  V_FRONT_CLIT_OPT     ;
++Act+Pot+Pl1:%>le%>mme V_FRONT_CLIT_OPT     ;
++Act+Pot+Pl2:%>le%>tte V_FRONT_CLIT_OPT     ;
++Act+Pot+Pl3:%>le%>vät  V_FRONT_CLIT_OPT     ;
++Act+Pot+Sg1:%>le%>n   V_FRONT_CLIT_OPT     ;
++Act+Pot+Sg2:%>le%>t   V_FRONT_CLIT_OPT     ;
++Act+Pot+Sg3:%>le%>e   V_FRONT_CLIT_OPT     ;
++Pot+ConNeg:%>le V_FRONT_CLIT_OPT     ;
++Act+PrfPrc:%>l  A_ÄLLISTYNYT  ;
++Act+Ind+Prt+ConNeg:%>lyt  V_FRONT_CLIT_OPT     ;
 
 LEXICON V_BACK_POTENTIAL_R
 !!€ surren surra+V+Act+Pot+Sg1 I might be sad
-+Act+Pot+Pl1:remme V_BACK_CLIT_OPT     ;
-+Act+Pot+Pl2:rette V_BACK_CLIT_OPT     ;
-+Act+Pot+Pl3:revat  V_BACK_CLIT_OPT     ;
-+Act+Pot+Sg1:ren   V_BACK_CLIT_OPT     ;
-+Act+Pot+Sg2:ret   V_BACK_CLIT_OPT     ;
-+Act+Pot+Sg3:ree   V_BACK_CLIT_OPT     ;
-+Pot+ConNeg:re V_BACK_CLIT_OPT     ;
-+Act+PrfPrc:r  A_KULUNUT      ;
-+Act+Ind+Prt+ConNeg:rut  V_BACK_CLIT_OPT     ;
++Act+Pot+Pl1:%>re%>mme V_BACK_CLIT_OPT     ;
++Act+Pot+Pl2:%>re%>tte V_BACK_CLIT_OPT     ;
++Act+Pot+Pl3:%>re%>vat  V_BACK_CLIT_OPT     ;
++Act+Pot+Sg1:%>re%>n   V_BACK_CLIT_OPT     ;
++Act+Pot+Sg2:%>re%>t   V_BACK_CLIT_OPT     ;
++Act+Pot+Sg3:%>re%>e   V_BACK_CLIT_OPT     ;
++Pot+ConNeg:%>re V_BACK_CLIT_OPT     ;
++Act+PrfPrc:%>r  A_KULUNUT      ;
++Act+Ind+Prt+ConNeg:%>rut  V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_POTENTIAL_R
 !!€ pierren pierrä+V+Act+Pot+Sg1 I might fart
-+Act+Pot+Pl1:remme V_FRONT_CLIT_OPT     ;
-+Act+Pot+Pl2:rette V_FRONT_CLIT_OPT     ;
-+Act+Pot+Pl3:revät  V_FRONT_CLIT_OPT     ;
-+Act+Pot+Sg1:ren   V_FRONT_CLIT_OPT     ;
-+Act+Pot+Sg2:ret   V_FRONT_CLIT_OPT     ;
-+Act+Pot+Sg3:ree   V_FRONT_CLIT_OPT     ;
-+Pot+ConNeg:re V_FRONT_CLIT_OPT     ;
-+Act+PrfPrc:r  A_ÄLLISTYNYT  ;
-+Act+Ind+Prt+ConNeg:ryt  V_FRONT_CLIT_OPT     ;
++Act+Pot+Pl1:%>re%>mme V_FRONT_CLIT_OPT     ;
++Act+Pot+Pl2:%>re%>tte V_FRONT_CLIT_OPT     ;
++Act+Pot+Pl3:%>re%>vät  V_FRONT_CLIT_OPT     ;
++Act+Pot+Sg1:%>re%>n   V_FRONT_CLIT_OPT     ;
++Act+Pot+Sg2:%>re%>t   V_FRONT_CLIT_OPT     ;
++Act+Pot+Sg3:%>re%>e   V_FRONT_CLIT_OPT     ;
++Pot+ConNeg:%>re V_FRONT_CLIT_OPT     ;
++Act+PrfPrc:%>r  A_ÄLLISTYNYT  ;
++Act+Ind+Prt+ConNeg:%>ryt  V_FRONT_CLIT_OPT     ;
 
 !! !!Passive forms
 !! The passive forms usually contain -ta-, -tä-, -da-, -dä-, element in them.
@@ -286,31 +286,31 @@ LEXICON V_BACK_PASSIVE
 !!€gt-norm: Verb passives
 !!€ kudottiin kutoa+V+Pss+Ind+Prt+Pe4
 !!€ juostiin juosta+V+Pss+Ind+Prt+Pe4
-+Pss+Cond+Pe4:taisiin V_BACK_CLIT_OPT     ;
-+Pss+Cond+Pe4+ConNeg:taisi  V_BACK_CLIT_OPT     ;
-+Pss+Imprt+Pe4+ConNeg:tako    V_BACK_CLIT_OPT     ;
-+Pss+Imprt+Pe4:takoon    V_BACK_CLIT_OPT     ;
-+Pss+InfE+Ine:taessa  V_BACK_CLIT_OPT      ;
-+Pss+InfE+Ins:taen   V_BACK_CLIT_OPT     ;
-+Pss+InfMa+Sg+Ins:taman  V_BACK_CLIT_OPT     ;
-+Pss+Pot+Pe4:taneen  V_BACK_CLIT_OPT     ;
-+Pss+Pot+Pe4+ConNeg:tane   V_BACK_CLIT_OPT     ;
++Pss+Cond+Pe4:%>ta%>isiin V_BACK_CLIT_OPT     ;
++Pss+Cond+Pe4+ConNeg:%>ta%>isi  V_BACK_CLIT_OPT     ;
++Pss+Imprt+Pe4+ConNeg:%>ta%>ko    V_BACK_CLIT_OPT     ;
++Pss+Imprt+Pe4:%>ta%>koon    V_BACK_CLIT_OPT     ;
++Pss+InfE+Ine:%>ta%>essa  V_BACK_CLIT_OPT      ;
++Pss+InfE+Ins:%>ta%>en   V_BACK_CLIT_OPT     ;
++Pss+InfMa+Sg+Ins:%>ta%>man  V_BACK_CLIT_OPT     ;
++Pss+Pot+Pe4:%>ta%>neen  V_BACK_CLIT_OPT     ;
++Pss+Pot+Pe4+ConNeg:%>ta%>ne   V_BACK_CLIT_OPT     ;
 +Pss+Ind+Prt+Pe4:tiin V_BACK_CLIT_OPT     ;
-+Pss+PrsPrc:tav    N_SOITTAJA   ;
++Pss+PrsPrc:%>ta%>v    N_SOITTAJA   ;
 
 LEXICON V_FRONT_PASSIVE
 !!€ nähtiin nähdä+V+Pss+Ind+Prt+Pe4
-+Pss+Cond+Pe4:täisiin V_FRONT_CLIT_OPT     ;
-+Pss+Cond+Pe4+ConNeg:täisi  V_FRONT_CLIT_OPT     ;
-+Pss+Imprt+Pe4+ConNeg:täkö    V_FRONT_CLIT_OPT     ;
-+Pss+Imprt+Pe4:täköön    V_FRONT_CLIT_OPT     ;
-+Pss+InfE+Ine:täessa  V_FRONT_CLIT_OPT      ;
-+Pss+InfE+Ins:täen   V_FRONT_CLIT_OPT     ;
-+Pss+InfMa+Ins:tämän  V_FRONT_CLIT_OPT     ;
-+Pss+Pot+Pe4:täneen  V_FRONT_CLIT_OPT     ;
-+Pss+Pot+Pe4+ConNeg:täne   V_FRONT_CLIT_OPT     ;
++Pss+Cond+Pe4:%>tä%>isiin V_FRONT_CLIT_OPT     ;
++Pss+Cond+Pe4+ConNeg:%>tä%>isi  V_FRONT_CLIT_OPT     ;
++Pss+Imprt+Pe4+ConNeg:%>tä%>kö    V_FRONT_CLIT_OPT     ;
++Pss+Imprt+Pe4:%>tä%>köön    V_FRONT_CLIT_OPT     ;
++Pss+InfE+Ine:%>tä%>essa  V_FRONT_CLIT_OPT      ;
++Pss+InfE+Ins:%>tä%>en   V_FRONT_CLIT_OPT     ;
++Pss+InfMa+Ins:%>tä%>män  V_FRONT_CLIT_OPT     ;
++Pss+Pot+Pe4:%>tä%>neen  V_FRONT_CLIT_OPT     ;
++Pss+Pot+Pe4+ConNeg:%>tä%>ne   V_FRONT_CLIT_OPT     ;
 +Pss+Ind+Prt+Pe4:tiin V_FRONT_CLIT_OPT     ;
-+Pss+PrsPrc:täv    A_TYÖLLISTETTÄVÄ ;
++Pss+PrsPrc:%>tä%>v    A_TYÖLLISTETTÄVÄ ;
 
 
 !! The form of present passive assimilates leftwards, varying between
@@ -318,43 +318,43 @@ LEXICON V_FRONT_PASSIVE
 
 LEXICON V_BACK_PASSIVE_T
 !!€ juostaan juosta+V+Pss+Ind+Prs+Pe4
-+Pss+Ind+Prs+Pe4:taan    V_BACK_CLIT_OPT     ;
-+Pss+Ind+Prs+Pe4+ConNeg:ta    V_BACK_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4:%>ta%>an    V_BACK_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:%>ta    V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_PASSIVE_T
 !!€ ylletään yltää+V+Pss+Ind+Prs+Pe4
-+Pss+Ind+Prs+Pe4:tään    V_FRONT_CLIT_OPT     ;
-+Pss+Ind+Prs+Pe4+ConNeg:tä    V_FRONT_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4:%>tä%>än    V_FRONT_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:%>tä    V_FRONT_CLIT_OPT     ;
 
 LEXICON V_BACK_PASSIVE_D
 !!€ kopioidaan kopioida+V+Pss+Ind+Prs+Pe4 copy-passive
-+Pss+Ind+Prs+Pe4:daan    V_BACK_CLIT_OPT     ;
-+Pss+Ind+Prs+Pe4+ConNeg:da    V_BACK_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4:%>da%>an    V_BACK_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:%>da    V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_PASSIVE_D
 !!€ nähdään nähdä+V+Pss+Ind+Prs+Pe4
-+Pss+Ind+Prs+Pe4:dään    V_FRONT_CLIT_OPT     ;
-+Pss+Ind+Prs+Pe4+ConNeg:dä    V_FRONT_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4:%>dä%>än    V_FRONT_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:%>dä    V_FRONT_CLIT_OPT     ;
 
 LEXICON V_BACK_PASSIVE_L
 !!€ vuollaan vuolla+V+Pss+Ind+Prs+Pe4 carve wood-passive
-+Pss+Ind+Prs+Pe4:laan    V_BACK_CLIT_OPT     ;
-+Pss+Ind+Prs+Pe4+ConNeg:la    V_BACK_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4:%>la%>an    V_BACK_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:%>la    V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_PASSIVE_L
 !!€ niellään niellä+V+Pss+Ind+Prs+Pe4 swallow-passive
-+Pss+Ind+Prs+Pe4:lään    V_FRONT_CLIT_OPT     ;
-+Pss+Ind+Prs+Pe4+ConNeg:lä    V_FRONT_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4:%>lä%>än    V_FRONT_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:%>lä    V_FRONT_CLIT_OPT     ;
 
 LEXICON V_BACK_PASSIVE_R
 !!€ surraan surra+V+Pss+Ind+Prs+Pe4 sorrow-passive
-+Pss+Ind+Prs+Pe4:raan    V_FRONT_CLIT_OPT     ;
-+Pss+Ind+Prs+Pe4+ConNeg:ra    V_FRONT_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4:%>ra%>an    V_FRONT_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:%>ra    V_FRONT_CLIT_OPT     ;
 
 LEXICON V_FRONT_PASSIVE_R
 !!€ pierrään pierrä+V+Pss+Ind+Prs+Pe4 fart-passive
-+Pss+Ind+Prs+Pe4:rään    V_FRONT_CLIT_OPT     ;
-+Pss+Ind+Prs+Pe4+ConNeg:rä    V_FRONT_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4:%>rä%>än    V_FRONT_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:%>rä    V_FRONT_CLIT_OPT     ;
 
 LEXICON V_BACK_PASSIVE_N
 !!€ pannaan panna+V+Pss+Ind+Prs+Pe4 put-passive
