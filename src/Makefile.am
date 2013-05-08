@@ -59,24 +59,6 @@ endif # WANT_OAHPA
 
 #### BEGIN: Add local processing instructions BELOW this line ####
 
-morpher-gt-desc.hfst: analyser-raw-gt-desc.hfst \
-					 orthography/inituppercase.hfst \
-					 orthography/spellrelax.hfst \
-					 filters/remove-morph-borders.hfst
-	$(AM_V_GEN)$(HFST_COMPOSE) $(HFST_FLAGS) -F -1 $< \
-					-2 orthography/inituppercase.hfst \
-			| $(HFST_MINIMIZE) $(HFST_FLAGS) \
-			| $(HFST_COMPOSE) $(HFST_FLAGS) -F \
-					-2 orthography/spellrelax.hfst \
-			| $(HFST_MINIMIZE) $(HFST_FLAGS) \
-			| $(HFST_PROJECT) $(HFST_FLAGS) -p lower \
-			| $(HFST_MINIMIZE) $(HFST_FLAGS) \
-			| $(HFST_COMPOSE) $(HFST_FLAGS) -F \
-					-2 filters/remove-morph-borders.hfst \
-			| $(HFST_INVERT) $(HFST_FLAGS) \
-			| $(HFST_MINIMIZE) $(HFST_FLAGS) \
-			| $(HFST_FST2FST) $(HFST_FLAGS) -f olw -o $@
-
 #### END: Add local processing instructions ABOVE this line ######
 
 #### HFST transducer fallback target:
