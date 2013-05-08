@@ -96069,7 +96069,7 @@ LEXICON N_TALO
 !! bisyllabic or have one of common derivational suffixes: sto, ....
 !! The nouns in this class end in o, u, y or ö, which determines their 
 !! illative suffix and therefore exact classification:
-!!€gt-norm: Nouns 1
+!!€gt-norm: Nouns 1o
 !!€ talo talo+N+Sg+Nom house
 !!€ talona talo+N+Sg+Ess
 !!€ talossa talo+N+Sg+Ine
@@ -96094,11 +96094,16 @@ LEXICON N_TALO
 0    N_COMPOUND_0    ;
 0    N_COMPOUND_N ;
 0    N_COMPOUND_JEN ;
-
+!!€gt-desc: Nouns 1o non-standard
+!!€ taloin talo+N+Use/Rare+Pl+Gen
+!!€ talohon talo+N+Use/Sub+Sg+Ill 
++Use/Rare:0  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:0   N_BACK_ILLATIVE_HON ; ! in NS's intro prose
 
 LEXICON N_ASU
 !! The stems ending in u are also without variationm and the bisyllabic ones
 !! have the same simple allomorph pattern:
+!!€gt-norm: Nouns 1u
 !!€ asu asu+N+Sg+Nom outfit
 !!€ asua asu+N+Sg+Par
 !!€ asuun asu+N+Sg+Ill
@@ -96120,8 +96125,14 @@ LEXICON N_ASU
 0    N_COMPOUND_0    ;
 0    N_COMPOUND_N ;
 0    N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1u non-standard
+!!€ asuin asu+N+Use/Rare+Pl+Gen
+!!€ asuhun asu+N+Use/Sub+Sg+Ill 
++Use/Rare:0  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:0   N_BACK_ILLATIVE_HUN ; ! in NS's intro prose
 
 LEXICON N_KÄRRY
+!!€gt-norm: Nouns 1y
 !!€ kärry kärry+N+Sg+Nom cart
 !!€ kärryä kärry+N+Sg+Par
 !!€ kärryyn kärry+N+Sg+Ill
@@ -96143,8 +96154,14 @@ LEXICON N_KÄRRY
 0    N_COMPOUND_0    ;
 0    N_COMPOUND_N ;
 0    N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1y non-standard
+!!€ kärryin kärry+N+Use/Rare+Pl+Gen
+!!€ kärryhyn kärry+N+Use/Sub+Sg+Ill 
++Use/Rare:0  N_FRONT_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:0   N_FRONT_ILLATIVE_HYN ; ! in NS's intro prose
 
 LEXICON N_MÖMMÖ
+!!€gt-norm: Nouns 1ö
 !!€ mömmö mömmö+N+Sg+Nom gunk
 !!€ mömmöä mömmö+N+Sg+Par
 !!€ mömmöön mömmö+N+Sg+Ill
@@ -96166,10 +96183,16 @@ LEXICON N_MÖMMÖ
 0    N_COMPOUND_0    ;
 0    N_COMPOUND_N ;
 0    N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1ö non-standard
+!!€ mömmöin mömmö+N+Use/Rare+Pl+Gen
+!!€ mömmöhön mömmö+N+Use/Sub+Sg+Ill 
++Use/Rare:0  N_FRONT_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:0   N_FRONT_ILLATIVE_HÖN ; ! in NS's intro prose
 
 !! !Basic gradation cases
 !! The basic stems without variations other than consonant gradation.
 LEXICON N_UKKO
+!!€gt-norm: Nouns 1ko
 !!€ ukko ukko+N+Sg+Nom geezer
 !!€ ukossa ukko+N+Sg+Ine
 !!€ ukoista ukko+N+Pl+Ela
@@ -96187,9 +96210,15 @@ LEXICON N_UKKO
 0:ko      N_COMPOUND_0    ;
 0:o       N_COMPOUND_N ;
 0:ko      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1ko non-standard
+!!€ ukkoin ukko+N+Use/Rare+Pl+Gen
+!!€ ukkohon ukko+N+Use/Sub+Sg+Ill 
++Use/Rare:ko  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:ko   N_BACK_ILLATIVE_HON ; ! in NS's intro prose
 
 
 LEXICON N_TIKKU
+!!€gt-norm: Nouns 1ku
 !!€ tikku tikku+N+Sg+Nom stick
 !!€ tikussa tikku+N+Sg+Ine
 !!€ tikuista tikku+N+Pl+Ela
@@ -96207,9 +96236,15 @@ LEXICON N_TIKKU
 0:ku      N_COMPOUND_0    ;
 0:u       N_COMPOUND_N ;
 0:ku      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1ku non-standard
+!!€ tikkuin tikku+N+Use/Rare+Pl+Gen
+!!€ tikkuhun tikku+N+Use/Sub+Sg+Ill 
++Use/Rare:ku  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:ku   N_BACK_ILLATIVE_HUN ; ! in NS's intro prose
 
 
 LEXICON N_MYRKKY
+!!€gt-norm: Nouns 1ky
 !!€ myrkky myrkky+N+Sg+Nom poison
 !!€ myrkyssä myrkky+N+Sg+Ine
 !!€ myrkyistä myrkky+N+Pl+Ela
@@ -96227,8 +96262,14 @@ LEXICON N_MYRKKY
 0:ky      N_COMPOUND_0    ;
 0:y       N_COMPOUND_N ;
 0:ky      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1ky non-standard
+!!€ myrkkyin myrkky+N+Use/Rare+Pl+Gen
+!!€ myrkkyhyn myrkky+N+Use/Sub+Sg+Ill 
++Use/Rare:ky  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:ky   N_BACK_ILLATIVE_HYN ; ! in NS's intro prose
 
 LEXICON N_YÖKKÖ
+!!€gt-norm: Nouns 1kö
 !!€ yökkö yökkö+N+Sg+Nom nightfly
 !!€ yökössä yökkö+N+Sg+Ine
 !!€ yököistä yökkö+N+Pl+Ela
@@ -96246,8 +96287,14 @@ LEXICON N_YÖKKÖ
 0:kö      N_COMPOUND_0    ;
 0:ö       N_COMPOUND_N ;
 0:kö      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1kö non-standard
+!!€ yökköin yökkö+N+Use/Rare+Pl+Gen
+!!€ yökköhön yökkö+N+Use/Sub+Sg+Ill 
++Use/Rare:kö  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:kö   N_BACK_ILLATIVE_HÖN ; ! in NS's intro prose
 
 LEXICON N_HAPPO
+!!€gt-norm: Nouns 1po
 !!€ happo happo+N+Sg+Nom acid
 !!€ hapossa happo+N+Sg+Ine
 !!€ hapoista happo+N+Pl+Ela
@@ -96265,9 +96312,15 @@ LEXICON N_HAPPO
 0:po      N_COMPOUND_0    ;
 0:o       N_COMPOUND_N ;
 0:po      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1po non-standard
+!!€ happoin happo+N+Use/Rare+Pl+Gen
+!!€ happohon happo+N+Use/Sub+Sg+Ill 
++Use/Rare:po  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:po   N_BACK_ILLATIVE_HON ; ! in NS's intro prose
 
 
 LEXICON N_LIPPU
+!!€gt-norm: Nouns 1pu
 !!€ lippu lippu+N+Sg+Nom
 !!€ lipussa lippu+N+Sg+Ine
 !!€ lipuista lippu+N+Pl+Ela
@@ -96285,9 +96338,15 @@ LEXICON N_LIPPU
 0:pu      N_COMPOUND_0    ;
 0:u       N_COMPOUND_N ;
 0:pu      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1pu non-standard
+!!€ lippuin lippu+N+Use/Rare+Pl+Gen
+!!€ lippuhun lippu+N+Use/Sub+Sg+Ill 
++Use/Rare:pu  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:pu   N_BACK_ILLATIVE_HUN ; ! in NS's intro prose
 
 
 LEXICON N_RYYPPY
+!!€gt-norm: Nouns 1py
 !!€ ryyppy ryyppy+N+Sg+Nom swirl
 !!€ ryypyssä ryyppy+N+Sg+Ine
 !!€ ryypyistä ryyppy+N+Pl+Ela
@@ -96305,8 +96364,14 @@ LEXICON N_RYYPPY
 0:py      N_COMPOUND_0    ;
 0:y       N_COMPOUND_N ;
 0:py      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1py non-standard
+!!€ ryyppyin ryyppy+N+Use/Rare+Pl+Gen
+!!€ ryyppyhyn ryyppy+N+Use/Sub+Sg+Ill 
++Use/Rare:py  N_FRONT_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:py   N_FRONT_ILLATIVE_HYN ; ! in NS's intro prose
 
 LEXICON N_TÖRPPÖ
+!!€gt-norm: Nouns 1pö
 !!€ törppö törppö+N+Sg+Nom bozo
 !!€ törpössä törppö+N+Sg+Ine
 !!€ törpöistä törppö+N+Pl+Ela
@@ -96324,8 +96389,14 @@ LEXICON N_TÖRPPÖ
 0:pö      N_COMPOUND_0    ;
 0:ö       N_COMPOUND_N ;
 0:pö      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1pö non-standard
+!!€ törppöin törppö+N+Use/Rare+Pl+Gen
+!!€ törppöhön törppö+N+Use/Sub+Sg+Ill 
++Use/Rare:pö  N_FRONT_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:pö   N_FRONT_ILLATIVE_HÖN ; ! in NS's intro prose
 
 LEXICON N_HIRTTO
+!!€gt-norm: Nouns 1to
 !!€ hirtto hirtto+N+Sg+Nom hanging
 !!€ hirtossa hirtto+N+Sg+Ine
 !!€ hirtoista hirtto+N+Pl+Ela
@@ -96343,9 +96414,15 @@ LEXICON N_HIRTTO
 0:to      N_COMPOUND_0    ;
 0:o       N_COMPOUND_N ;
 0:to      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1to non-standard
+!!€ hirttoin hirtto+N+Use/Rare+Pl+Gen
+!!€ hirttohon hirtto+N+Use/Sub+Sg+Ill 
++Use/Rare:to  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:to   N_BACK_ILLATIVE_HON ; ! in NS's intro prose
 
 
 LEXICON N_TORTTU
+!!€gt-norm: Nouns 1tu
 !!€ torttu torttu+N+Sg+Nom tart
 !!€ tortussa torttu+N+Sg+Ine
 !!€ tortuista torttu+N+Pl+Ela
@@ -96363,9 +96440,15 @@ LEXICON N_TORTTU
 0:tu      N_COMPOUND_0    ;
 0:u       N_COMPOUND_N ;
 0:tu      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1tu non-standard
+!!€ torttuin torttu+N+Use/Rare+Pl+Gen
+!!€ torttuhon torttu+N+Use/Sub+Sg+Ill 
++Use/Rare:tu  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:tu   N_BACK_ILLATIVE_HUN ; ! in NS's intro prose
 
 
 LEXICON N_PYTTY
+!!€gt-norm: Nouns 1ty
 !!€ pytty pytty+N+Sg+Nom cup
 !!€ pytyssä pytty+N+Sg+Ine
 !!€ pytyistä pytty+N+Pl+Ela
@@ -96383,8 +96466,14 @@ LEXICON N_PYTTY
 0:ty      N_COMPOUND_0    ;
 0:y       N_COMPOUND_N ;
 0:ty      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1ty non-standard
+!!€ pyttyin pytty+N+Use/Rare+Pl+Gen
+!!€ pyttyhyn pytty+N+Use/Sub+Sg+Ill 
++Use/Rare:ty  N_FRONT_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:ty   N_FRONT_ILLATIVE_HYN ; ! in NS's intro prose
 
 LEXICON N_PÖNTTÖ
+!!€gt-norm: Nouns 1tö
 !!€ pönttö pönttö+N+Sg+Nom pot
 !!€ pöntössä pönttö+N+Sg+Ine
 !!€ pöntöistä pönttö+N+Pl+Ela
@@ -96402,12 +96491,18 @@ LEXICON N_PÖNTTÖ
 0:tö      N_COMPOUND_0    ;
 0:ö       N_COMPOUND_N ;
 0:tö      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1tö non-standard
+!!€ pönttöin pönttö+N+Use/Rare+Pl+Gen
+!!€ pönttöhön pönttö+N+Use/Sub+Sg+Ill 
++Use/Rare:tö  N_FRONT_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:tö   N_FRONT_ILLATIVE_HÖN ; ! in NS's intro prose
 
 
 LEXICON N_TEKO
 !! Between two vowels, the weak grade of k is optionally an apostrophe
 !! instead. For k that is not optionally ’, for example when it is after a
 !! consonant other than s, the variation is k ~ 0 instead (e.g. N_UKKO).
+!!€gt-norm: Nouns 1ko
 !!€ teko teko+N+Sg+Nom action
 !!€ teossa teko+N+Sg+Ine
 !!€ te’ossa teko+N+Sg+Ine
@@ -96427,9 +96522,15 @@ LEXICON N_TEKO
 0:’o      N_COMPOUND_N ;
 0:o       N_COMPOUND_N ;
 0:ko      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1ko non-standard
+!!€ tekoin teko+N+Use/Rare+Pl+Gen
+!!€ tekohon teko+N+Use/Sub+Sg+Ill 
++Use/Rare:ko  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:ko   N_BACK_ILLATIVE_HON ; ! in NS's intro prose
 
 
 LEXICON N_MAKU
+!!€gt-norm: Nouns 1ku
 !!€ maku maku+N+Sg+Nom taste
 !!€ maussa maku+N+Sg+Ine
 !!€ ma’ussa maku+N+Sg+Ine
@@ -96449,9 +96550,15 @@ LEXICON N_MAKU
 0:’u      N_COMPOUND_N ;
 0:u       N_COMPOUND_N ;
 0:ku      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1ku non-standard
+!!€ makuin maku+N+Use/Rare+Pl+Gen
+!!€ makuhon maku+N+Use/Sub+Sg+Ill 
++Use/Rare:ku  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:ku   N_BACK_ILLATIVE_HUN ; ! in NS's intro prose
 
 
 LEXICON N_NÄKY
+!!€gt-norm: Nouns 1ky
 !!€ näky näky+N+Sg+Nom vision
 !!€ näyssä näky+N+Sg+Ine
 !!€ nä’yssä näky+N+Sg+Ine
@@ -96471,8 +96578,14 @@ LEXICON N_NÄKY
 0:’y      N_COMPOUND_N ;
 0:y       N_COMPOUND_N ;
 0:ky      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1ky non-standard
+!!€ näkyin näky+N+Use/Rare+Pl+Gen
+!!€ näkyhyn näky+N+Use/Sub+Sg+Ill 
++Use/Rare:ky  N_FRONT_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:ky   N_FRONT_ILLATIVE_HYN ; ! in NS's intro prose
 
 LEXICON N_NÄKÖ
+!!€gt-norm: Nouns 1kö
 !!€ näkö näkö+N+Sg+Nom eyesight
 !!€ näössä näkö+N+Sg+Ine
 !!€ nä’össä näkö+N+Sg+Ine
@@ -96492,12 +96605,18 @@ LEXICON N_NÄKÖ
 0:’ö      N_COMPOUND_N ;
 0:ö       N_COMPOUND_N ;
 0:kö      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1kö non-standard
+!!€ näköin näkö+N+Use/Rare+Pl+Gen
+!!€ näköhön näkö+N+Use/Sub+Sg+Ill 
++Use/Rare:kö  N_FRONT_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:kö   N_FRONT_ILLATIVE_HÖN ; ! in NS's intro prose
 
 LEXICON N_RUOKO
 !! Between three vowels where k is surrounded by same vowels the k becomes
 !! obligatorily ’. When the vowels are different, it becomes optionally
 !! ’ (as in N_TEKO), and after consonant other than s it is k ~ 0 
 !! (as in N_UKKO).
+!!€gt-norm: Nouns 1ko
 !!€ ruoko ruoko+N+Sg+Nom straw
 !!€ ruo’ossa ruoko+N+Sg+Ine
 0:ko      N_BACK_NOMINATIVE    ;
@@ -96513,9 +96632,15 @@ LEXICON N_RUOKO
 0:ko      N_COMPOUND_0    ;
 0:’o      N_COMPOUND_N ;
 0:ko      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1ko non-standard
+!!€ ruokoin ruoko+N+Use/Rare+Pl+Gen
+!!€ ruokohon ruoko+N+Use/Sub+Sg+Ill 
++Use/Rare:ko  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:ko   N_BACK_ILLATIVE_HON ; ! in NS's intro prose
 
 
 LEXICON N_LIUKU
+!!€gt-norm: Nouns 1ko
 !!€ liuku liuku+N+Sg+Nom slide
 !!€ liu’ussa liuku+N+Sg+Ine
 0:ku   N_BACK_NOMINATIVE    ;
@@ -96531,11 +96656,17 @@ LEXICON N_LIUKU
 0:ku      N_COMPOUND_0    ;
 0:’u      N_COMPOUND_N ;
 0:ku      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1ku non-standard
+!!€ liukuin liuku+N+Use/Rare+Pl+Gen
+!!€ liukuhun liuku+N+Use/Sub+Sg+Ill 
++Use/Rare:ku  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:ku   N_BACK_ILLATIVE_HUN ; ! in NS's intro prose
 
 !! There is a gap in paradigms in y and ö finals of k:’
 
 !! Other gradations can be more easily caught from the preceding context.
 LEXICON N_HEPO
+!!€gt-norm: Nouns 1po
 !!€ hepo hepo+N+Sg+Nom horse
 !!€ hevossa hepo+N+Sg+Ine
 !!€ hepoina hepo+N+Pl+Ess
@@ -96553,9 +96684,15 @@ LEXICON N_HEPO
 0:po      N_COMPOUND_0    ;
 0:vo      N_COMPOUND_N ;
 0:po      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1ku non-standard
+!!€ hepoin hepo+N+Use/Rare+Pl+Gen
+!!€ hepohon hepo+N+Use/Sub+Sg+Ill 
++Use/Rare:po  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:po   N_BACK_ILLATIVE_HON ; ! in NS's intro prose
 
 
 LEXICON N_APU
+!!€gt-norm: Nouns 1pu
 !!€ apu apu+N+Sg+Nom help
 !!€ avussa apu+N+Sg+Ine
 !!€ apuihin apu+N+Pl+Ill
@@ -96573,9 +96710,15 @@ LEXICON N_APU
 0:pu      N_COMPOUND_0    ;
 0:vu       N_COMPOUND_N ;
 0:pu      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1pu non-standard
+!!€ apuin apu+N+Use/Rare+Pl+Gen
+!!€ apuhun apu+N+Use/Sub+Sg+Ill 
++Use/Rare:pu  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:pu   N_BACK_ILLATIVE_HUN ; ! in NS's intro prose
 
 
 LEXICON N_KÄPY
+!!€gt-norm: Nouns 1py
 !!€ käpy käpy+N+Sg+Nom pinecone
 !!€ kävyssä käpy+N+Sg+Ine
 !!€ käpyihin käpy+N+Pl+Ill
@@ -96593,8 +96736,14 @@ LEXICON N_KÄPY
 0:py      N_COMPOUND_0    ;
 0:vy       N_COMPOUND_N ;
 0:py      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1py non-standard
+!!€ käpyin käpy+N+Use/Rare+Pl+Gen
+!!€ käpyhyn käpy+N+Use/Sub+Sg+Ill 
++Use/Rare:py  N_FRONT_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:py   N_FRONT_ILLATIVE_HYN ; ! in NS's intro prose
 
 LEXICON N_LÖPÖ
+!!€gt-norm: Nouns 1pö
 !!€ löpö löpö+N+Sg+Nom gasoline
 !!€ lövössä löpö+N+Sg+Ine
 !!€ löpöihin löpö+N+Pl+Ill
@@ -96612,8 +96761,14 @@ LEXICON N_LÖPÖ
 0:pö      N_COMPOUND_0    ;
 0:vö       N_COMPOUND_N ;
 0:pö      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1pö non-standard
+!!€ löpöin löpö+N+Use/Rare+Pl+Gen
+!!€ löpöhyn löpö+N+Use/Sub+Sg+Ill 
++Use/Rare:pö  N_FRONT_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:pö   N_FRONT_ILLATIVE_HÖN ; ! in NS's intro prose
 
 LEXICON N_VETO
+!!€gt-norm: Nouns 1to
 !!€ veto veto+N+Sg+Nom draft
 !!€ vedossa veto+N+Sg+Ine
 !!€ vetoihin veto+N+Pl+Ill
@@ -96631,9 +96786,15 @@ LEXICON N_VETO
 0:to      N_COMPOUND_0    ;
 0:do       N_COMPOUND_N ;
 0:to      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1to non-standard
+!!€ vetoin veto+N+Use/Rare+Pl+Gen
+!!€ vetohon veto+N+Use/Sub+Sg+Ill 
++Use/Rare:to  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:to   N_BACK_ILLATIVE_HON ; ! in NS's intro prose
 
 
 LEXICON N_KUITU
+!!€gt-norm: Nouns 1to
 !!€ kuitu kuitu+N+Sg+Nom fiber
 !!€ kuidussa kuitu+N+Sg+Ine
 !!€ kuituihin kuitu+N+Pl+Ill
@@ -96651,9 +96812,15 @@ LEXICON N_KUITU
 0:tu      N_COMPOUND_0    ;
 0:du       N_COMPOUND_N ;
 0:tu      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1tu non-standard
+!!€ kuituin kuitu+N+Use/Rare+Pl+Gen
+!!€ kuituhon kuitu+N+Use/Sub+Sg+Ill 
++Use/Rare:tu  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:tu   N_BACK_ILLATIVE_HUN ; ! in NS's intro prose
 
 
 LEXICON N_VETY
+!!€gt-norm: Nouns 1ty
 !!€ vety vety+N+Sg+Nom hydrogen
 !!€ vedyssä vety+N+Sg+Ine
 !!€ vetyihin vety+N+Pl+Ill
@@ -96671,8 +96838,14 @@ LEXICON N_VETY
 0:ty      N_COMPOUND_0    ;
 0:dy       N_COMPOUND_N ;
 0:ty      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1ty non-standard
+!!€ vetyin vety+N+Use/Rare+Pl+Gen
+!!€ vetyhyn vety+N+Use/Sub+Sg+Ill 
++Use/Rare:ty  N_FRONT_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:ty   N_FRONT_ILLATIVE_HYN ; ! in NS's intro prose
 
 LEXICON N_HÄÄTÖ
+!!€gt-norm: Nouns 1tö
 !!€ häätö häätö+N+Sg+Nom evictment
 !!€ häädössä häätö+N+Sg+Ine
 !!€ häädöistä häätö+N+Pl+Ela
@@ -96690,8 +96863,14 @@ LEXICON N_HÄÄTÖ
 0:tö      N_COMPOUND_0    ;
 0:dö       N_COMPOUND_N ;
 0:tö      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1tö non-standard
+!!€ häätöin häätö+N+Use/Rare+Pl+Gen
+!!€ häätöhön häätö+N+Use/Sub+Sg+Ill 
++Use/Rare:tö  N_FRONT_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:tö   N_FRONT_ILLATIVE_HÖN ; ! in NS's intro prose
 
 LEXICON N_RUNKO
+!!€gt-norm: Nouns 1nko
 !!€ runko runko+N+Sg+Nom body
 !!€ rungossa runko+N+Sg+Ine
 !!€ rungoista runko+N+Pl+Ela
@@ -96709,9 +96888,15 @@ LEXICON N_RUNKO
 0:ko      N_COMPOUND_0    ;
 0:go       N_COMPOUND_N ;
 0:ko      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1nko non-standard
+!!€ runkoin runko+N+Use/Rare+Pl+Gen
+!!€ runkohon runko+N+Use/Sub+Sg+Ill 
++Use/Rare:ko  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:ko   N_BACK_ILLATIVE_HON ; ! in NS's intro prose
 
 
 LEXICON N_VINKU
+!!€gt-norm: Nouns 1nku
 !!€ vinku vinku+N+Sg+Nom squeal
 !!€ vingussa vinku+N+Sg+Ine
 !!€ vinguista vinku+N+Pl+Ela
@@ -96729,9 +96914,15 @@ LEXICON N_VINKU
 0:ku      N_COMPOUND_0    ;
 0:gu       N_COMPOUND_N ;
 0:ku      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1nku non-standard
+!!€ vinkuin vinku+N+Use/Rare+Pl+Gen
+!!€ vinkuhun vinku+N+Use/Sub+Sg+Ill 
++Use/Rare:ku  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:ku   N_BACK_ILLATIVE_HUN ; ! in NS's intro prose
 
 
 LEXICON N_SÄNKY
+!!€gt-norm: Nouns 1nky
 !!€ sänky sänky+N+Sg+Nom bed
 !!€ sängyssä sänky+N+Sg+Ine
 !!€ sängyistä sänky+N+Pl+Ela
@@ -96741,7 +96932,6 @@ LEXICON N_SÄNKY
 0:gy    N_FRONT_WEAK_SINGULARS    ;
 0:ky   N_FRONT_STRONG_PLURALS ;
 0:gy    N_FRONT_WEAK_PLURALS ;
-
 0:ky   N_FRONT_PARTITIVE_Ä_ÄN ;
 0:ky   N_FRONT_ILLATIVE_YN    ;
 0:ky   N_FRONT_PARTITIVE_JÄ    ;
@@ -96750,8 +96940,14 @@ LEXICON N_SÄNKY
 0:ky      N_COMPOUND_0    ;
 0:gy       N_COMPOUND_N ;
 0:ky      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1nky non-standard
+!!€ sänkyin sänky+N+Use/Rare+Pl+Gen
+!!€ sänkyhyn sänky+N+Use/Sub+Sg+Ill 
++Use/Rare:ky  N_FRONT_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:ky   N_FRONT_ILLATIVE_HYN ; ! in NS's intro prose
 
 LEXICON N_YLÄNKÖ
+!!€gt-norm: Nouns 1nkö
 !!€ ylänkö ylänkö+N+Sg+Nom highlands
 !!€ ylängössä ylänkö+N+Sg+Ine
 !!€ ylängöistä ylänkö+N+Pl+Ela
@@ -96769,8 +96965,14 @@ LEXICON N_YLÄNKÖ
 0:kö      N_COMPOUND_0    ;
 0:gö       N_COMPOUND_N ;
 0:kö      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1nkö non-standard
+!!€ ylänköin ylänkö+N+Use/Rare+Pl+Gen
+!!€ ylänköhön ylänkö+N+Use/Sub+Sg+Ill 
++Use/Rare:kö  N_FRONT_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:kö   N_FRONT_ILLATIVE_HÖN ; ! in NS's intro prose
 
 LEXICON N_SAMPO
+!!€gt-norm: Nouns 1mpo
 !!€ sampo sampo+N+Sg+Nom sampo
 !!€ sammossa sampo+N+Sg+Ine
 !!€ sampoina sampo+N+Pl+Ess
@@ -96788,9 +96990,15 @@ LEXICON N_SAMPO
 0:po      N_COMPOUND_0    ;
 0:mo      N_COMPOUND_N ;
 0:po      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1mpo non-standard
+!!€ sampoin sampo+N+Use/Rare+Pl+Gen
+!!€ sampohon sampo+N+Use/Sub+Sg+Ill 
++Use/Rare:po  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:po   N_BACK_ILLATIVE_HON ; ! in NS's intro prose
 
 
 LEXICON N_RUMPU
+!!€gt-norm: Nouns 1mpu
 !!€ rumpu rumpu+N+Sg+Nom drum
 !!€ rummussa rumpu+N+Sg+Ine
 !!€ rumpuihin rumpu+N+Pl+Ill
@@ -96808,11 +97016,16 @@ LEXICON N_RUMPU
 0:pu      N_COMPOUND_0    ;
 0:mu       N_COMPOUND_N ;
 0:pu      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1mpu non-standard
+!!€ rumpuin rumpu+N+Use/Rare+Pl+Gen
+!!€ rumpuhun rumpu+N+Use/Sub+Sg+Ill 
++Use/Rare:pu  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:pu   N_BACK_ILLATIVE_HUN ; ! in NS's intro prose
 
 !! There is a gap in paradigms in y finals with p:m variation
 
 LEXICON N_LÄMPÖ
-!
+!!€gt-norm: Nouns 1mpö
 !!€ lämpö lämpö+N+Sg+Nom warmth
 !!€ lämmössä lämpö+N+Sg+Ine
 !!€ lämpöihin lämpö+N+Pl+Ill
@@ -96830,8 +97043,14 @@ LEXICON N_LÄMPÖ
 0:pö      N_COMPOUND_0    ;
 0:mö       N_COMPOUND_N ;
 0:pö      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1mpö non-standard
+!!€ lämpöin lämpö+N+Use/Rare+Pl+Gen
+!!€ lämpöhön lämpö+N+Use/Sub+Sg+Ill 
++Use/Rare:pö  N_FRONT_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:pö   N_FRONT_ILLATIVE_HÖN ; ! in NS's intro prose
 
 LEXICON N_KIELTO
+!!€gt-norm: Nouns 1lto
 !!€ kielto kielto+N+Sg+Nom denial
 !!€ kiellossa kielto+N+Sg+Ine
 !!€ kieltoihin kielto+N+Pl+Ill
@@ -96849,9 +97068,15 @@ LEXICON N_KIELTO
 0:to      N_COMPOUND_0    ;
 0:lo       N_COMPOUND_N ;
 0:to      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1lto non-standard
+!!€ kieltoin kielto+N+Use/Rare+Pl+Gen
+!!€ kieltohon kielto+N+Use/Sub+Sg+Ill 
++Use/Rare:to  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:to   N_BACK_ILLATIVE_HON ; ! in NS's intro prose
 
 
 LEXICON N_HUOLITELTU
+!!€gt-norm: Nouns 1ltu
 !!€ huoliteltu huoliteltu+N+Sg+Nom neat
 !!€ huolitellussa huoliteltu+N+Sg+Ine
 !!€ huoliteltuihin huoliteltu+N+Pl+Ill
@@ -96869,9 +97094,15 @@ LEXICON N_HUOLITELTU
 0:tu      N_COMPOUND_0    ;
 0:lu       N_COMPOUND_N ;
 0:tu      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1ltu non-standard
+!!€ huoliteltuin huoliteltu+N+Use/Rare+Pl+Gen
+!!€ huoliteltuhun huoliteltu+N+Use/Sub+Sg+Ill 
++Use/Rare:tu  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:tu   N_BACK_ILLATIVE_HUN ; ! in NS's intro prose
 
 
 LEXICON N_EPÄILTY
+!!€gt-norm: Nouns 1lty
 !!€ epäilty epäilty+N+Sg+Nom suspect
 !!€ epäillyssä epäilty+N+Sg+Ine
 !!€ epäiltyihin epäilty+N+Pl+Ill
@@ -96889,8 +97120,14 @@ LEXICON N_EPÄILTY
 0:ty      N_COMPOUND_0    ;
 0:ly       N_COMPOUND_N ;
 0:ty      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1lty non-standard
+!!€ epäiltyin epäilty+N+Use/Rare+Pl+Gen
+!!€ epäiltyhyn epäilty+N+Use/Sub+Sg+Ill 
++Use/Rare:ty  N_FRONT_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:ty   N_FRONT_ILLATIVE_HYN ; ! in NS's intro prose
 
 LEXICON N_SISÄLTÖ
+!!€gt-norm: Nouns 1ltö
 !!€ sisältö sisältö+N+Sg+Nom content
 !!€ sisällössä sisältö+N+Sg+Ine
 !!€ sisällöistä sisältö+N+Pl+Ela
@@ -96908,8 +97145,14 @@ LEXICON N_SISÄLTÖ
 0:tö      N_COMPOUND_0    ;
 0:lö       N_COMPOUND_N ;
 0:tö      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1ltö non-standard
+!!€ sisältöin sisältö+N+Use/Rare+Pl+Gen
+!!€ sisältöhön sisältö+N+Use/Sub+Sg+Ill 
++Use/Rare:tö  N_FRONT_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:tö   N_FRONT_ILLATIVE_HÖN ; ! in NS's intro prose
 
 LEXICON N_TUNTO
+!!€gt-norm: Nouns 1nto
 !!€ tunto tunto+N+Sg+Nom sense
 !!€ tunnossa  tunto+N+Sg+Ine
 !!€ tuntoihin tunto+N+Pl+Ill
@@ -96927,9 +97170,15 @@ LEXICON N_TUNTO
 0:to      N_COMPOUND_0    ;
 0:no       N_COMPOUND_N ;
 0:to      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1nto non-standard
+!!€ tuntoin tunto+N+Use/Rare+Pl+Gen
+!!€ tuntohon tunto+N+Use/Sub+Sg+Ill 
++Use/Rare:to  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:to   N_BACK_ILLATIVE_HON ; ! in NS's intro prose
 
 
 LEXICON N_LINTU
+!!€gt-norm: Nouns 1ntu
 !!€ lintu lintu+N+Sg+Nom bird
 !!€ linnussa lintu+N+Sg+Ine
 !!€ lintuihin lintu+N+Pl+Ill
@@ -96947,9 +97196,15 @@ LEXICON N_LINTU
 0:tu      N_COMPOUND_0    ;
 0:nu       N_COMPOUND_N ;
 0:tu      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1ntu non-standard
+!!€ lintuin lintu+N+Use/Rare+Pl+Gen
+!!€ lintuhon lintu+N+Use/Sub+Sg+Ill 
++Use/Rare:tu  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:tu   N_BACK_ILLATIVE_HUN ; ! in NS's intro prose
 
 
 LEXICON N_MÄNTY
+!!€gt-norm: Nouns 1nty
 !!€ mänty mänty+N+Sg+Nom pine tree
 !!€ männyssä mänty+N+Sg+Ine
 !!€ mäntyihin mänty+N+Pl+Ill
@@ -96967,8 +97222,14 @@ LEXICON N_MÄNTY
 0:ty      N_COMPOUND_0    ;
 0:ny       N_COMPOUND_N ;
 0:ty      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1nty non-standard
+!!€ mäntyin mänty+N+Use/Rare+Pl+Gen
+!!€ mäntyhyn mänty+N+Use/Sub+Sg+Ill 
++Use/Rare:ty  N_FRONT_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:ty   N_FRONT_ILLATIVE_HYN ; ! in NS's intro prose
 
 LEXICON N_KÄÄNTÖ
+!!€gt-norm: Nouns 1ntö
 !!€ kääntö kääntö+N+Sg+Nom turn
 !!€ käännössä kääntö+N+Sg+Ine
 !!€ käännöistä kääntö+N+Pl+Ela
@@ -96986,8 +97247,14 @@ LEXICON N_KÄÄNTÖ
 0:tö      N_COMPOUND_0    ;
 0:nö       N_COMPOUND_N ;
 0:tö      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1ntö non-standard
+!!€ kääntöin kääntö+N+Use/Rare+Pl+Gen
+!!€ kääntöhön kääntö+N+Use/Sub+Sg+Ill 
++Use/Rare:tö  N_FRONT_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:tö   N_FRONT_ILLATIVE_HÖN ; ! in NS's intro prose
 
 LEXICON N_SIIRTO
+!!€gt-norm: Nouns 1rto
 !!€ siirto siirto+N+Sg+Nom move
 !!€ siirrossa siirto+N+Sg+Ine
 !!€ siirtoihin siirto+N+Pl+Ill
@@ -97005,6 +97272,11 @@ LEXICON N_SIIRTO
 0:to      N_COMPOUND_0    ;
 0:ro       N_COMPOUND_N ;
 0:to      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1rto non-standard
+!!€ siirtoin siirto+N+Use/Rare+Pl+Gen
+!!€ siirtohon siirto+N+Use/Sub+Sg+Ill 
++Use/Rare:to  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:to   N_BACK_ILLATIVE_HON ; ! in NS's intro prose
 
 
 !! There is a gap that misses all other stem vowels of r:t variation except
@@ -97013,6 +97285,7 @@ LEXICON N_SIIRTO
 !! The k:v variation is unique to handful of words of form CUkU, such as
 
 LEXICON N_LUKU
+!!€gt-norm: Nouns 1cuku
 !!€ luku luku+N+Sg+Nom figure
 !!€ luvussa luku+N+Sg+Ine
 !!€ luvuista luku+N+Pl+Ela
@@ -97030,9 +97303,15 @@ LEXICON N_LUKU
 0:ku      N_COMPOUND_0    ;
 0:vu       N_COMPOUND_N ;
 0:ku      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1cuku non-standard
+!!€ lukuin luku+N+Use/Rare+Pl+Gen
+!!€ lukuhun luku+N+Use/Sub+Sg+Ill 
++Use/Rare:ku  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:ku   N_BACK_ILLATIVE_HUN ; ! in NS's intro prose
 
 
 LEXICON N_KYKY
+!!€gt-norm: Nouns 1cyky
 !!€ kyky kyky+N+Sg+Nom skill
 !!€ kyvyssä kyky+N+Sg+Ine
 !!€ kyvyistä kyky+N+Pl+Ela
@@ -97050,13 +97329,18 @@ LEXICON N_KYKY
 0:ky      N_COMPOUND_0    ;
 0:vy       N_COMPOUND_N ;
 0:ky      N_COMPOUND_JEN ;
+!!€gt-desc: Nouns 1cyky non-standard
+!!€ kykyin kyky+N+Use/Rare+Pl+Gen
+!!€ kykyhyn kyky+N+Use/Sub+Sg+Ill 
++Use/Rare:ky  N_FRONT_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:ky   N_FRONT_ILLATIVE_HYN ; ! in NS's intro prose
 
 
 LEXICON N_RUIPELO
 !! The trisyllabic and longer words with stem vowels o, u, y, ö
 !! have no stem variation either, but selection of suffix allomorphs for
 !! plural genitives and partitives is different:
-!!€gt-norm: Noun 2
+!!€gt-norm: Noun 2o
 !!€ ruipelo ruipelo+N+Sg+Nom squirt
 !!¥ ruipelo+N+Pl+Par: [ruipeloita, ruipeloja]
 !!¥ ruipelo+N+Pl+Gen: [ruipelojen, ruipeloiden, ruipeloitten]
@@ -97076,8 +97360,14 @@ LEXICON N_RUIPELO
 0    N_COMPOUND_JEN ;
 0    N_COMPOUND_IDEN ;
 0    N_COMPOUND_ITTEN ;
+!!€gt-desc: Nouns 2o non-standard
+!!€ ruipeloin ruipelo+N+Use/Rare+Pl+Gen
+!!€ ruipelohon ruipelo+N+Use/Sub+Sg+Ill 
++Use/Rare:0  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:0   N_BACK_ILLATIVE_HON ; ! in NS's intro prose
 
 LEXICON N_SEIKKAILU
+!!€gt-norm: Noun 2u
 !!€ seikkailu seikkailu+N+Sg+Nom adventure
 !!¥ seikkailu+N+Pl+Par: [seikkailuja, seikkailuita]
 !!¥ seikkailu+N+Pl+Gen: [seikkailujen, seikkailuiden, seikkailuitten]
@@ -97097,8 +97387,14 @@ LEXICON N_SEIKKAILU
 0    N_COMPOUND_JEN ;
 0    N_COMPOUND_IDEN ;
 0    N_COMPOUND_ITTEN ;
+!!€gt-desc: Nouns 2u non-standard
+!!€ seikkailuin seikkailu+N+Use/Rare+Pl+Gen
+!!€ seikkailuhun seikkailu+N+Use/Sub+Sg+Ill 
++Use/Rare:0  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:0   N_BACK_ILLATIVE_HUN ; ! in NS's intro prose
 
 LEXICON N_VEHKEILY
+!!€gt-norm: Noun 2y
 !!€ vehkeily vehkeily+N+Sg+Nom mutiny
 !!¥ vehkeily+N+Pl+Par: [vehkeilyjä, vehkeilyitä]
 !!¥ vehkeily+N+Pl+Gen: [vehkeilyjen, vehkeilyiden, vehkeilyitten]
@@ -97118,8 +97414,14 @@ LEXICON N_VEHKEILY
 0    N_COMPOUND_JEN ;
 0    N_COMPOUND_IDEN ;
 0    N_COMPOUND_ITTEN ;
+!!€gt-desc: Nouns 2y non-standard
+!!€ vehkeilyin vehkeily+N+Use/Rare+Pl+Gen
+!!€ vehkeilyhyn vehkeily+N+Use/Sub+Sg+Ill 
++Use/Rare:0  N_FRONT_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:0   N_FRONT_ILLATIVE_HYN ; ! in NS's intro prose
 
 LEXICON N_JÄÄTELÖ
+!!€gt-norm: Noun 2ö
 !!€ jäätelö jäätelö+N+Sg+Nom iced cream
 !!¥ jäätelö+N+Pl+Gen: [jäätelöjen, jäätelöiden, jäätelöitten]
 0    N_FRONT_NOMINATIVE    ;
@@ -97138,12 +97440,17 @@ LEXICON N_JÄÄTELÖ
 0    N_COMPOUND_JEN ;
 0    N_COMPOUND_IDEN ;
 0    N_COMPOUND_ITTEN ;
+!!€gt-desc: Nouns 2ö non-standard
+!!€ jäätelöin jäätelö+N+Use/Rare+Pl+Gen
+!!€ jäätelöhön jäätelö+N+Use/Sub+Sg+Ill 
++Use/Rare:0  N_FRONT_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:0   N_FRONT_ILLATIVE_HÖN ; ! in NS's intro prose
 
 LEXICON N_TUOMIO
 !! The words with stem vowel o, u, y, ö preceded by vowels still have no
 !! more stem  variation than other cases, but give yet another pattern of 
 !! allomorphs for plural partitives and genitives:
-!!€gt-norm: Nouns 3
+!!€gt-norm: Nouns 3o
 !!€ tuomio tuomio+N+Sg+Nom judgment
 !!¥ tuomio+N+Sg+Par: [tuomiota, ~tuomioa]
 !!€ tuomioita tuomio+N+Pl+Par
@@ -97161,8 +97468,22 @@ LEXICON N_TUOMIO
 0    N_COMPOUND_N ;
 0    N_COMPOUND_IDEN ;
 0    N_COMPOUND_ITTEN ;
+!! There's plenty of imaginable non-standard allomorph forms after long
+!! vowels:
+!!€gt-desc: Nouns 3o non-standard
+!!€ tuomioa tuomio+N+Use/Rare+Pl+Par
+!!€ tuomioin tuomio+N+Use/Rare+Pl+Gen
+!!€ tuomiohon tuomio+N+Use/Sub+Sg+Ill
+!!€ tuomioja tuomio+N+Use/Sub+Sg+Par
+!!€ tuomiojen tuomio+N+Use/Sub+Sg+Gen 
++Use/Rare:0  N_BACK_PARTITIVE_A ; ! in NS parenthesised
++Use/Rare:0  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:0   N_BACK_ILLATIVE_HON ; ! in NS's intro prose
++Use/Sub:0   N_BACK_PARTITIVE_JA ; ! not documented
++Use/Sub:0   N_BACK_GENITIVE_JEN ; ! not documented
 
 LEXICON N_HÄIRIÖ
+!!€gt-norm: Nouns 3ö
 !!€ häiriö häiriö+N+Sg+Nom disruption
 !!€ häiriötä häiriö+N+Sg+Par
 !!¥ häiriö+N+Pl+Gen: [häiriöiden, häiriöitten]
@@ -97179,11 +97500,23 @@ LEXICON N_HÄIRIÖ
 0    N_COMPOUND_N ;
 0    N_COMPOUND_IDEN ;
 0    N_COMPOUND_ITTEN ;
+!!€gt-desc: Nouns 3ö non-standard
+!!€ häiriöä häiriö+N+Use/Rare+Pl+Par
+!!€ häiriöin häiriö+N+Use/Rare+Pl+Gen
+!!€ häiriöhön häiriö+N+Use/Sub+Sg+Ill
+!!€ häiriöjä häiriö+N+Use/Sub+Sg+Par
+!!€ häiriöjen häiriö+N+Use/Sub+Sg+Gen 
++Use/Rare:0  N_FRONT_PARTITIVE_Ä ; ! in NS parenthesised
++Use/Rare:0  N_FRONT_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:0   N_FRONT_ILLATIVE_HÖN ; ! in NS's intro prose
++Use/Sub:0   N_FRONT_PARTITIVE_JÄ ; ! not documented
++Use/Sub:0   N_FRONT_GENITIVE_JEN ; ! not documented
 
 LEXICON N_ZOMBIE
 !! Similar inflection exists in limited amounts in new loan words that are
 !! written as pronounced (thus taking no stem variation but still ending
 !! with long vowels with a syllable boundary):
+!!€gt-norm: Nouns 3eta
 !!€ zombie zombie+N+Sg+Nom zombie
 !!€ zombieta zombie+N+Sg+Par
 !!€ zombieita zombie+N+Pl+Par
@@ -97201,9 +97534,21 @@ LEXICON N_ZOMBIE
 0    N_COMPOUND_N ;
 0    N_COMPOUND_IDEN ;
 0    N_COMPOUND_ITTEN ;
+!!€gt-desc: Nouns 3eta non-standard
+!!€ zombiea zombie+N+Use/Rare+Pl+Par
+!!€ zombiein zombie+N+Use/Rare+Pl+Gen
+!!€ zombiehen zombie+N+Use/Sub+Sg+Ill
+!!€ zombieja zombie+N+Use/Sub+Sg+Par
+!!€ zombiejen zombie+N+Use/Sub+Sg+Gen 
++Use/Rare:0  N_BACK_PARTITIVE_A ; ! in NS parenthesised
++Use/Rare:0  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:0   N_BACK_ILLATIVE_HEN ; ! in NS's intro prose
++Use/Sub:0   N_BACK_PARTITIVE_JA ; ! not documented
++Use/Sub:0   N_BACK_GENITIVE_JEN ; ! not documented
 
 LEXICON N_BERNIE
 !! This class includes a set of new proper nouns that get nativised a bit:
+!!€gt-norm: Nouns 3etä
 !!€ Bernie Bernie+N+Prop+Sg+Nom Bernie
 !!€ Bernietä Bernie+N+Prop+Sg+Par
 !!€ Bernieitä Bernie+N+Prop+Pl+Par
@@ -97221,6 +97566,17 @@ LEXICON N_BERNIE
 0    N_COMPOUND_N ;
 0    N_COMPOUND_IDEN ;
 0    N_COMPOUND_ITTEN ;
+!!€gt-desc: Nouns 3etä non-standard
+!!€ Berniea Bernie+N+Use/Rare+Pl+Par
+!!€ Berniein Bernie+N+Use/Rare+Pl+Gen
+!!€ Berniehen Bernie+N+Use/Sub+Sg+Ill
+!!€ Bernieja Bernie+N+Use/Sub+Sg+Par
+!!€ Berniejen Bernie+N+Use/Sub+Sg+Gen 
++Use/Rare:0  N_FRONT_PARTITIVE_Ä ; ! in NS parenthesised
++Use/Rare:0  N_FRONT_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:0   N_FRONT_ILLATIVE_HEN ; ! in NS's intro prose
++Use/Sub:0   N_FRONT_PARTITIVE_JÄ ; ! not documented
++Use/Sub:0   N_FRONT_GENITIVE_JEN ; ! not documented
 
 !! !Optional gradation with illatives
 !! In some trisyllabic words ending with quantitative consonant gradation, 
@@ -97250,6 +97606,11 @@ LEXICON N_LEPAKKO
 0:ko      N_COMPOUND_JEN ;
 0:o       N_COMPOUND_IDEN ;
 0:o       N_COMPOUND_ITTEN ;
+!!€gt-desc: Nouns 4ko non-standard
+!!€ lepakkoin lepakko+N+Use/Rare+Pl+Gen
+!!€ lepakkohon lepakko+N+Use/Sub+Sg+Ill 
++Use/Rare:ko  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:ko   N_BACK_ILLATIVE_HON ; ! in NS's intro prose
 
 LEXICON N_YKSIKKÖ
 !!€ yksikkö yksikkö+N+Sg+Nom unit
@@ -97263,6 +97624,8 @@ LEXICON N_YKSIKKÖ
 0:kö      N_FRONT_ILLATIVE_ÖN    ;
 0:kö      N_FRONT_PARTITIVE_JÄ    ;
 0:kö      N_FRONT_GENITIVE_JEN    ;
+0:ö      N_FRONT_GENITIVE_IDEN    ;
+0:ö      N_FRONT_GENITIVE_ITTEN    ;
 0:kö      N_FRONT_ILLATIVE_IHIN   ;
 0:ö    N_FRONT_ILLATIVE_IHIN   ;
 0:kö      N_COMPOUND_0    ;
@@ -97270,13 +97633,18 @@ LEXICON N_YKSIKKÖ
 0:kö      N_COMPOUND_JEN ;
 0:ö       N_COMPOUND_IDEN ;
 0:ö       N_COMPOUND_ITTEN ;
+!!€gt-desc: Nouns 4ko non-standard
+!!€ yksikköin yksikkö+N+Use/Rare+Pl+Gen
+!!€ yksikköhön yksikkö+N+Use/Sub+Sg+Ill 
++Use/Rare:kö  N_FRONT_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:kö   N_FRONT_ILLATIVE_HÖN ; ! in NS's intro prose
 
 !! !I final stems
 !! The basic variation of stem final *i* in nominative is that it becomes
 !! *e* in plural stems. In plural genitive form, the stem vowel disappears
 !! making suffix allomorph *-ien*, instead of *-jen*.
 LEXICON N_RUUVI
-!!€gt-norm: Nouns 5
+!!€gt-norm: Nouns 5F
 !!€ ruuvi ruuvi+N+Sg+Nom screw
 !!€ ruuveina ruuvi+N+Pl+Ess
 !!€ ruuvien ruuvi+N+Pl+Gen
@@ -97291,6 +97659,13 @@ LEXICON N_RUUVI
 0:i       N_COMPOUND_0   ;
 0:i       N_COMPOUND_N   ;
 0       N_COMPOUND_IEN ;
+!!€gt-desc: Nouns 5F non-standard
+!!€ ruuvein ruuvi+N+Use/Rare+Pl+Gen
+!!€ ruuvihin ruuvi+N+Use/Sub+Sg+Ill
+!!€ ruuvejen ruuvi+N+Use/Sub+Pl+Gen
++Use/Rare:e  N_BACK_GENITIVE_IN ; ! in NS parenthesised
++Use/Sub:i   N_BACK_ILLATIVE_HIN ; ! in NS's intro prose
++Use/Sub:e  N_BACK_GENITIVE_JEN ; ! not documented
 
 LEXICON N_TYYLI
 !!€ tyyli tyyli+N+Sg+Nom style
