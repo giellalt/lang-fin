@@ -37,6 +37,9 @@ LIST Adv = Adv ;
 LIST V = V ; 
 LIST Pron = Pron ;
 
+LIST Comp = Comp ; # comparative of adj
+LIST Sup = Sup ; # superlative of adj
+
 LIST Po = Po ;
 LIST Pr = Pr ;
 LIST Adp = Adp ;
@@ -970,7 +973,7 @@ SELECT ("koko") (1 A/N/Q/Pron/PCP/Num)
 IFF ("liika" A) (NOT 0 Par/Gen) (NOT 0 Pl) (1C N)
 SELECT ("nuori" A Pl) (NOT 1 DUMMY)
 REMOVE ( "nykyinen" A SUP) (NOT 1 DUMMY)
-REMOVE ("täysi" A SUP Sg Nom ) (NOT 1 DUMMY)
+REMOVE ("täysi" A Sup Sg Nom ) (NOT 1 DUMMY)
 SELECT ( "perinteinen" A Par) (1 Par)
 SELECT ("pieni" A Pl Par) (NOT 1 DUMMY)
 SELECT ("puoli" Ins ) (-1 Ins)
@@ -2535,7 +2538,7 @@ SELECT (Prop) (0 UP) (NOT -1 BOS)
 REMOVE (A) (0 DER)
 REMOVE (N) (0 DER)
 REMOVE (A/N) (0 DER)
-REMOVE (A SUP Nom) (0 TALVIneN)   # kesäisin
+REMOVE (A Sup Nom) (0 TALVIneN)   # kesäisin
 REMOVE ("suora" N) (1 N)  # suorat(A) sijoitukset
 REMOVE ("hyvin" Adv) (1 MAN)  # hyvinkin(Adv) nopeasti
 SELECT (ORD Ela) (1 Ela)  # kahdeksannesta(ORD) ruudusta
