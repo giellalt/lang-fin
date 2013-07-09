@@ -20,7 +20,7 @@ MeaningfulPunct = %# %_ %> » ;
 
 Rules
 
-"Force hyphen between vowels"
+"Force hyphen between vowels" !!= * @CODE@  
 %#:%- <= VV _ VV ; where VV in Vowels ;
 
 ! vim:set ft=xfst-twol:
