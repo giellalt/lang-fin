@@ -9,7 +9,8 @@
 
 if CAN_DOCC
 
-JSP_PAGES=root-morphology.jspwiki\
+JSP_PAGES=root-morphology.jspwiki  \
+		  fin-phon-phonology.jspwiki \
           51-stems.jspwiki \
           abbr-stems.jspwiki \
           acro-stems.jspwiki \
