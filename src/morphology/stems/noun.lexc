@@ -98314,6 +98314,16 @@ LEXICON N_LEHTI
 0:de       N_COMPOUND_N   ;
 0:t        N_COMPOUND_IEN ;
 
+LEXICON N_LEHDET
+!!€ lehtinä lehti+N+Pl+Ess
+!!€ lehdistä lehti+N+Pl+Ela
+!!€ lehtien lehti+N+Pl+Gen
+0:t     N_FRONT_STRONG_PLURALS   ;
+0:d     N_FRONT_WEAK_PLURALS   ;
+0:t     N_FRONT_GENITIVE_IEN    ;
+0:t     N_FRONT_ILLATIVE_IIN   ;
+0:t        N_COMPOUND_IEN ;
+
 LEXICON N_ONKI
 !!€ onki onki+N+Sg+Nom fishing rod
 !!€ ongessa onki+N+Sg+Ine
