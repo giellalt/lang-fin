@@ -96131,6 +96131,12 @@ LEXICON N_ASU
 +Use/Rare:0  N_BACK_GENITIVE_IN ; ! in NS parenthesised
 +Use/Sub:0   N_BACK_ILLATIVE_HUN ; ! in NS's intro prose
 
+
+LEXICON N_HORTA
+N_TALO ;
+! This is experimental, I do not know
+! whether it is correct, TT.
+
 LEXICON N_KÄRRY
 !!€gt-norm: Nouns 1y
 !!€ kärry kärry+N+Sg+Nom cart
@@ -104905,6 +104911,28 @@ LEXICON N_POJAT
 0:ja   N_COMPOUND_N   ;
 0:ik   N_COMPOUND_IEN ;
 0:ika   N_COMPOUND_IN  ;
+
+LEXICON N_KYNNET
+!!€ kynsiin kynsi+N+Pl+Ill
+0:ne N_FRONT_PLNOM_CLIT  ;
+0:s N_FRONT_PLURALS    ;
+0:s N_FRONT_PARTITIVE_IÄ    ;
+0:s N_FRONT_GENITIVE_IEN   ;
+0:t N_FRONT_GENITIVE_TEN   ;
+0:s N_FRONT_ILLATIVE_IIN    ;
+0:s   N_COMPOUND_IEN ;
+0:t   N_COMPOUND_TEN ;
+
+LEXICON N_VARPAAT
+0:pa N_BACK_PLNOM_CLIT  ;
+0:pa N_BACK_PLURALS    ;
+0:pa N_BACK_PARTITIVE_ITA   ;
+0:pa N_BACK_GENITIVE_IDEN   ;
+0:pa N_BACK_GENITIVE_ITTEN  ;
+0:pa N_BACK_ILLATIVE_ISIIN  ;
+0:pa N_BACK_ILLATIVE_IHIN   ;
+0:pa   N_COMPOUND_IDEN    ;
+0:pa   N_COMPOUND_ITTEN   ;
 
 
 
