@@ -96075,10 +96075,15 @@ LEXICON N_TALO
 !!€ talossa talo+N+Sg+Ine
 !!€ taloina talo+N+Pl+Ess
 !!€ taloista talo+N+Pl+Ela
-!!¥ talo+N+Sg+Par: [taloa, ~talota]
-!!¥ talo+N+Sg+Ill: [taloon, ~taloseen]
-!!¥ talo+N+Pl+Par: [taloja, ~taloita]
-!!¥ talo+N+Pl+Gen: [talojen, ~taloiden, ~taloitten]
+!!€ taloa talo+N+Sg+Par
+!!$ talota talo+N+Sg+Par
+!!€ taloon talo+N+Sg+Ill
+!!$ taloseen talo+N+Sg+Ill
+!!€ taloja talo+N+Pl+Par
+!!$ taloita talo+N+Pl+Par
+!!€ talojen talo+N+Pl+Gen
+!!$ taloiden talo+N+Pl+Gen
+!!$ taloitten talo+N+Pl+Gen
 !!€ taloihin talo+N+Pl+Ill
 !!€ talojuttu talo+N+Sg+Nom#juttu+N+Sg+Nom house thing
 !!€ talonjuttu talo+N+Sg+Gen#juttu+N+Sg+Nom house’s thing
@@ -97348,8 +97353,11 @@ LEXICON N_RUIPELO
 !! plural genitives and partitives is different:
 !!€gt-norm: Noun 2o
 !!€ ruipelo ruipelo+N+Sg+Nom squirt
-!!¥ ruipelo+N+Pl+Par: [ruipeloita, ruipeloja]
-!!¥ ruipelo+N+Pl+Gen: [ruipelojen, ruipeloiden, ruipeloitten]
+!!€ ruipeloita ruipelo+N+Pl+Par
+!!€ ruipeloja ruipelo+N+Pl+Par
+!!€ ruipelojen ruipelo+N+Pl+Gen
+!!€ ruipeloiden ruipelo+N+Pl+Gen
+!!€ ruipeloitten ruipelo+N+Pl+Gen
 0    N_BACK_NOMINATIVE    ;
 0    N_BACK_SINGULARS    ;
 0    N_BACK_PLURALS ;
@@ -97375,8 +97383,11 @@ LEXICON N_RUIPELO
 LEXICON N_SEIKKAILU
 !!€gt-norm: Noun 2u
 !!€ seikkailu seikkailu+N+Sg+Nom adventure
-!!¥ seikkailu+N+Pl+Par: [seikkailuja, seikkailuita]
-!!¥ seikkailu+N+Pl+Gen: [seikkailujen, seikkailuiden, seikkailuitten]
+!!€ seikkailuja seikkailu+N+Pl+Par
+!!€ seikkailuita seikkailu+N+Pl+Par
+!!€ seikkailujen seikkailu+N+Pl+Gen
+!!€ seikkailuiden seikkailu+N+Pl+Gen
+!!€ seikkailuitten seikkailu+N+Pl+Gen
 0    N_BACK_NOMINATIVE    ;
 0    N_BACK_SINGULARS    ;
 0    N_BACK_PLURALS ;
@@ -97402,8 +97413,11 @@ LEXICON N_SEIKKAILU
 LEXICON N_VEHKEILY
 !!€gt-norm: Noun 2y
 !!€ vehkeily vehkeily+N+Sg+Nom mutiny
-!!¥ vehkeily+N+Pl+Par: [vehkeilyjä, vehkeilyitä]
-!!¥ vehkeily+N+Pl+Gen: [vehkeilyjen, vehkeilyiden, vehkeilyitten]
+!!€ vehkeilyjä vehkeily+N+Pl+Par
+!!€ vehkeilyitä vehkeily+N+Pl+Par
+!!€ vehkeilyjen vehkeily+N+Pl+Gen
+!!€ vehkeilyitten vehkeily+N+Pl+Gen
+!!€ vehkeilyiden vehkeily+N+Pl+Gen
 0    N_FRONT_NOMINATIVE    ;
 0    N_FRONT_SINGULARS    ;
 0    N_FRONT_PLURALS ;
@@ -97429,7 +97443,9 @@ LEXICON N_VEHKEILY
 LEXICON N_JÄÄTELÖ
 !!€gt-norm: Noun 2ö
 !!€ jäätelö jäätelö+N+Sg+Nom iced cream
-!!¥ jäätelö+N+Pl+Gen: [jäätelöjen, jäätelöiden, jäätelöitten]
+!!€ jäätelöjen jäätelö+N+Pl+Gen
+!!€ jäätelöiden jäätelö+N+Pl+Gen
+!!€ jäätelöitten jäätelö+N+Pl+Gen
 0    N_FRONT_NOMINATIVE    ;
 0    N_FRONT_SINGULARS    ;
 0    N_FRONT_PLURALS ;
@@ -97458,9 +97474,12 @@ LEXICON N_TUOMIO
 !! allomorphs for plural partitives and genitives:
 !!€gt-norm: Nouns 3o
 !!€ tuomio tuomio+N+Sg+Nom judgment
-!!¥ tuomio+N+Sg+Par: [tuomiota, ~tuomioa]
+!!€ tuomiota tuomio+N+Sg+Par
+!!$ tuomioa tuomio+N+Sg+Par
 !!€ tuomioita tuomio+N+Pl+Par
-!!¥ tuomio+N+Pl+Gen: [tuomioiden, tuomioitten, ~tuomiojen]
+!!€ tuomioiden tuomio+N+Pl+Gen
+!!€ tuomioitten tuomio+N+Pl+Gen
+!!$ tuomiojen tuomio+N+Pl+Gen
 0    N_BACK_NOMINATIVE    ;
 0    N_BACK_SINGULARS    ;
 0    N_BACK_PLURALS ;
@@ -97492,7 +97511,8 @@ LEXICON N_HÄIRIÖ
 !!€gt-norm: Nouns 3ö
 !!€ häiriö häiriö+N+Sg+Nom disruption
 !!€ häiriötä häiriö+N+Sg+Par
-!!¥ häiriö+N+Pl+Gen: [häiriöiden, häiriöitten]
+!!€ häiriöiden häiriö+N+Pl+Gen
+!!€ häiriöitten häiriö+N+Pl+Gen
 0    N_BACK_NOMINATIVE    ;
 0    N_FRONT_SINGULARS    ;
 0    N_FRONT_PLURALS ;
@@ -97526,7 +97546,8 @@ LEXICON N_ZOMBIE
 !!€ zombie zombie+N+Sg+Nom zombie
 !!€ zombieta zombie+N+Sg+Par
 !!€ zombieita zombie+N+Pl+Par
-!!¥ zombie+N+Pl+Gen: [zombieiden, zombieitten]
+!!€ zombieiden zombie+N+Pl+Gen
+!!€ zombieitten zombie+N+Pl+Gen
 0    N_BACK_NOMINATIVE    ;
 0    N_BACK_SINGULARS    ;
 0    N_BACK_PLURALS ;
@@ -97558,7 +97579,8 @@ LEXICON N_BERNIE
 !!€ Bernie Bernie+N+Prop+Sg+Nom Bernie
 !!€ Bernietä Bernie+N+Prop+Sg+Par
 !!€ Bernieitä Bernie+N+Prop+Pl+Par
-!!¥ Bernie+N+Prop+Pl+Gen: [Bernieiden, Bernieitten]
+!!€ Bernieiden Bernie+N+Prop+Pl+Gen
+!!€ Bernieitten Bernie+N+Prop+Pl+Gen
 0    N_FRONT_NOMINATIVE    ;
 0    N_FRONT_SINGULARS    ;
 0    N_FRONT_PLURALS ;
@@ -97592,7 +97614,8 @@ LEXICON N_BERNIE
 LEXICON N_LEPAKKO
 !!€gt-norm: Noun 4
 !!€ lepakko lepakko+N+Sg+Nom bat
-!!¥ lepakko+N+Pl+Ill: [lepakoihin, lepakkoihin]
+!!€ lepakoihin lepakko+N+Pl+Ill
+!!€ lepakkoihin lepakko+N+Pl+Ill
 0:ko      N_BACK_NOMINATIVE    ;
 0:ko      N_BACK_STRONG_SINGULARS    ;
 0:o    N_BACK_WEAK_SINGULARS    ;
@@ -97620,7 +97643,8 @@ LEXICON N_LEPAKKO
 
 LEXICON N_YKSIKKÖ
 !!€ yksikkö yksikkö+N+Sg+Nom unit
-!!¥ yksikkö+N+Pl+Ill: [yksiköihin, yksikköihin]
+!!€ yksiköihin yksikkö+N+Pl+Ill
+!!€ yksikköihin yksikkö+N+Pl+Ill
 0:kö      N_FRONT_NOMINATIVE    ;
 0:kö      N_FRONT_STRONG_SINGULARS    ;
 0:ö    N_FRONT_WEAK_SINGULARS    ;
@@ -97813,9 +97837,11 @@ LEXICON N_SKEITTI
 
 LEXICON N_LAKI
 !!€ laki laki+N+Sg+Nom law
-!!¥ laki+N+Sg+Ine: [laissa, la’issa]
+!!€ laissa laki+N+Sg+Ine
+!!€ la’issa laki+N+Sg+Ine
 !!€ lakeina laki+N+Pl+Ess
-!!¥ laki+N+Pl+Ela: [laeista, la’eista]
+!!€ laeista laki+N+Pl+Ela
+!!€ la’eista laki+N+Pl+Ela
 !!€ lakien laki+N+Pl+Gen
 0:ki       N_BACK_NOMINATIVE    ;
 0:ki       N_BACK_STRONG_SINGULARS    ;
@@ -98037,8 +98063,11 @@ LEXICON N_ZEN
 LEXICON N_TANKKERI
 !!€gt-norm: Nouns 6
 !!€ kanaali kanaali+N+Sg+Nom canal
-!!¥ kanaali+N+Pl+Par: [kanaaleja, kanaaleita]
-!!¥ kanaali+N+Pl+Gen: [kanaalien, kanaaleiden, kanaaleiden]
+!!€ kanaaleja kanaali+N+Pl+Par
+!!€ kanaaleita kanaali+N+Pl+Par
+!!€ kanaalien kanaali+N+Pl+Gen
+!!€ kanaaleiden kanaali+N+Pl+Gen
+!!€ kanaaleitten kanaali+N+Pl+Gen
 0:i       N_BACK_NOMINATIVE    ;
 0:i       N_BACK_SINGULARS    ;
 0:e     N_BACK_PLURALS   ;
@@ -98058,8 +98087,11 @@ LEXICON N_TANKKERI
 
 LEXICON N_KEHVELI
 !!€ kehveli kehveli+N+Sg+Nom hoodlum
-!!¥ kehveli+N+Pl+Par: [kehvelejä, kehveleitä]
-!!¥ kehveli+N+Pl+Gen: [kehvelien, kehveleiden, kehveleitten]
+!!€ kehvelejä kehveli+N+Pl+Par
+!!€ kehveleitä kehveli+N+Pl+Par
+!!€ kehvelien kehveli+N+Pl+Gen
+!!€ kehveleiden kehveli+N+Pl+Gen
+!!€ kehveleitten kehveli+N+Pl+Gen
 0:i       N_FRONT_NOMINATIVE    ;
 0:i       N_FRONT_SINGULARS    ;
 0:e     N_FRONT_PLURALS   ;
@@ -98079,8 +98111,11 @@ LEXICON N_KEHVELI
 
 LEXICON N_STADION
 !!€ stadion stadion+N+Sg+Nom stadium
-!!¥ stadion+N+Pl+Par: [stadioneja, stadioneita]
-!!¥ stadion+N+Pl+Gen: [stadionien, stadioneiden, stadioneitten]
+!!€ stadioneja stadion+N+Pl+Par
+!!€ stadioneita stadion+N+Pl+Par
+!!€ stadionien stadion+N+Pl+Gen
+!!€ stadioneiden stadion+N+Pl+Gen
+!!€ stadioneitten stadion+N+Pl+Gen
 0       N_BACK_NOMINATIVE    ;
 0:i       N_BACK_SINGULARS    ;
 0:e     N_BACK_PLURALS   ;
@@ -98100,8 +98135,11 @@ LEXICON N_STADION
 
 LEXICON N_BESSERWISSER
 !!€ besserwisser besserwisser+N+Sg+Nom besserwisser
-!!¥ besserwisser+N+Pl+Par: [besserwisserejä, besserwissereitä]
-!!¥ besserwisser+N+Pl+Gen: [besserwisserien, besserwissereiden, besserwissereiden]
+!!€ besserwisserejä besserwisser+N+Pl+Par
+!!€ besserwissereitä besserwisser+N+Pl+Par
+!!€ besserwisserien besserwisser+N+Pl+Gen
+!!€ besserwissereiden besserwisser+N+Pl+Gen
+!!€ besserwissereitten besserwisser+N+Pl+Gen
 0       N_FRONT_NOMINATIVE    ;
 0:i       N_FRONT_SINGULARS    ;
 0:e     N_FRONT_PLURALS   ;
@@ -98675,7 +98713,8 @@ LEXICON N_MITTA
 LEXICON N_VIKA
 !!€ vika vika+N+Sg+Nom error
 !!€ vikana vika+N+Sg+Ess
-!!¥ vika+N+Sg+Ine: [viassa, vi’assa]
+!!€ viassa vika+N+Sg+Ine
+!!€ vi’assa vika+N+Sg+Ine
 !!€ vikoina vika+N+Pl+Ess
 !!€ vikojen vika+N+Pl+Gen
 !!€ vikoihin vika+N+Pl+Ill
@@ -98701,7 +98740,8 @@ LEXICON N_VAAKA
 !!€ vaaka vaaka+N+Sg+Nom scale
 !!€ vaakana vaaka+N+Sg+Ess
 !!€ vaa’assa vaaka+N+Sg+Ine
-!!¥ vaaka+N+Pl+Ine: [vaaoissa, vaa’oissa]
+!!€ vaaoissa vaaka+N+Pl+Ine
+!!€ vaa’oissa vaaka+N+Pl+Ine
 0:ka  N_BACK_NOMINATIVE    ;
 0:ka  N_BACK_STRONG_SINGULARS    ;
 0:’a  N_BACK_WEAK_SINGULARS   ;
@@ -99109,9 +99149,11 @@ LEXICON N_VUOKA
 !!€ vuoka vuoka+N+Sg+Nom baking tray
 !!€ vuokaa vuoka+N+Sg+Par
 !!€ vuokana vuoka+N+Sg+Ess
-!!¥ vuoka+N+Sg+Ine: [vuoassa, vuo’assa]
+!!€ vuoassa vuoka+N+Sg+Ine
+!!€ vuo’assa vuoka+N+Sg+Ine
 !!€ vuokina vuoka+N+Pl+Ess
-!!¥ vuoka+N+Pl+Ine: [vuoissa, vuo’issa]
+!!€ vuoissa vuoka+N+Pl+Ine
+!!€ vuo’issa vuoka+N+Pl+Ine
 !!€ vuokien vuoka+N+Pl+Gen
 0:ka   N_BACK_NOMINATIVE    ;
 0:ka   N_BACK_STRONG_SINGULARS    ;
@@ -99480,9 +99522,13 @@ LEXICON N_SELKÄ
 LEXICON N_PROBLEEMA
 !!€gt-norm: Noun 11
 !!€ probleema probleema+N+Sg+Nom problem
-!!¥ probleema+N+Pl+Par: [probleemia, probleemoita]
-!!¥ probleema+N+Pl+Gen: [probleemien, probleemoiden, probleemoitten]
-!!¥ probleema+N+Pl+Ill: [probleemiin, probleemoihin]
+!!€ probleemia probleema+N+Pl+Par
+!!€ probleemoita probleema+N+Pl+Par
+!!€ probleemien probleema+N+Pl+Gen
+!!€ probleemoitten probleema+N+Pl+Gen
+!!€ probleemoiden probleema+N+Pl+Gen
+!!€ probleemiin probleema+N+Pl+Ill
+!!€ probleemoihin probleema+N+Pl+Ill
 !! Also less commonly:
 !!€ probleemain probleema+N+Pl+Gen+Use/Rare
 !!€ probleemojen probleema+N+Use/Rare+Pl+Gen
@@ -99626,7 +99672,8 @@ LEXICON N_LUSIKKA
 !!€ lusikka lusikka+N+Sg+Nom spoon
 !!€ lusikkoina lusikka+N+Pl+Ess
 !!€ lusikoissa lusikka+N+Pl+Ine
-!!¥ lusikka+N+Pl+Ill: [lusikkoihin, lusikoihin]
+!!€ lusikoihin lusikka+N+Pl+Ill
+!!€ lusikkoihin lusikka+N+Pl+Ill
 0:ka   N_BACK_NOMINATIVE    ;
 0:ka   N_BACK_STRONG_SINGULARS    ;
 0:a   N_BACK_WEAK_SINGULARS    ;
@@ -99651,7 +99698,8 @@ LEXICON N_LUSIKKA
 
 LEXICON N_KÄMMEKKÄ
 !!€ kämmekkä kämmekkä+N+Sg+Nom handy
-!!¥ kämmekkä+N+Pl+Ill: [kämmeköihin, kämmekköihin]
+!!€ kämmeköihin kämmekkä+N+Pl+Ill
+!!€ kämmekköihin kämmekkä+N+Pl+Ill
 0:kä   N_FRONT_NOMINATIVE    ;
 0:kä   N_FRONT_STRONG_SINGULARS    ;
 0:ä   N_FRONT_WEAK_SINGULARS    ;
@@ -99677,7 +99725,8 @@ LEXICON N_ULAPPA
 !!€ ulappa ulappa+N+Sg+Nom horizon
 !!€ ulappoina ulappa+N+Pl+Ess
 !!€ ulapoissa ulappa+N+Pl+Ine
-!!¥ ulappa+N+Pl+Ill: [ulappoihin, ulapoihin]
+!!€ ulapoihin ulappa+N+Pl+Ill
+!!€ ulappoihin ulappa+N+Pl+Ill
 0:pa   N_BACK_NOMINATIVE    ;
 0:pa   N_BACK_STRONG_SINGULARS    ;
 0:a   N_BACK_WEAK_SINGULARS    ;
@@ -99704,7 +99753,8 @@ LEXICON N_POHATTA
 !!€ pohatta pohatta+N+Sg+Nom shark
 !!€ pohattoina pohatta+N+Pl+Ess
 !!€ pohatoissa pohatta+N+Pl+Ine
-!!¥ pohatta+N+Pl+Ill: [pohattoihin, pohatoihin]
+!!€ pohattoihin pohatta+N+Pl+Ill
+!!€ pohatoihin pohatta+N+Pl+Ill
 0:ta   N_BACK_NOMINATIVE    ;
 0:ta   N_BACK_STRONG_SINGULARS    ;
 0:a   N_BACK_WEAK_SINGULARS    ;
@@ -99736,7 +99786,8 @@ LEXICON N_SOKEA
 !!€ sokeana sokea+N+Sg+Ess
 !!€ sokeina sokea+N+Pl+Ess
 !!€ sokeissa sokea+N+Pl+Ine
-!!¥ sokea+N+Pl+Ill: [sokeihin, sokeisiin]
+!!€ sokeihin sokea+N+Pl+Ill
+!!€ sokeisiin sokea+N+Pl+Ill
 0:a   N_BACK_NOMINATIVE    ;
 0:a   N_BACK_SINGULARS    ;
 0   N_BACK_PLURALS  ;
@@ -99759,7 +99810,8 @@ LEXICON N_LIPEÄ
 !!€ lipeänä lipeä+N+Sg+Ess
 !!€ lipeinä lipeä+N+Pl+Ess
 !!€ lipeissä lipeä+N+Pl+Ine
-!!¥ lipeä+N+Pl+Ill: [lipeihin, lipeisiin]
+!!€ lipeihin lipeä+N+Pl+Ill
+!!€ lipeisiin lipeä+N+Pl+Ill
 0:ä   N_FRONT_NOMINATIVE    ;
 0:ä   N_FRONT_SINGULARS    ;
 0   N_FRONT_PLURALS  ;
@@ -100106,11 +100158,14 @@ LEXICON N_NUGAA
 !!€ nugaa nugaa+N+Sg+Nom nougat
 !!€ nugaata nugaa+N+Sg+Par
 !!€ nugaana nugaa+N+Sg+Ess
-!!¥ nugaa+N+Sg+Ill: [nugaahan, nugaaseen]
+!!€ nugaahan nugaa+N+Sg+Ill
+!!€ nugaaseen nugaa+N+Sg+Ill
 !!€ nugaissa nugaa+N+Pl+Ine
 !!€ nugaista nugaa+N+Pl+Ela
-!!¥ nugaa+N+Pl+Gen: [nugaiden, nugaitten]
-!!¥ nugaa+N+Pl+Ill: [nugaisiin, nugaihin]
+!!€ nugaiden nugaa+N+Pl+Gen
+!!€ nugaitten nugaa+N+Pl+Gen
+!!€ nugaisiin nugaa+N+Pl+Ill
+!!€ nugaihin nugaa+N+Pl+Ill
 0:a   N_BACK_NOMINATIVE    ;
 0:a   N_BACK_SINGULARS    ;
 0 N_BACK_PLURALS  ;
@@ -100131,11 +100186,14 @@ LEXICON N_PATEE
 !!€ patee patee+N+Sg+Nom paté
 !!€ pateeta patee+N+Sg+Par
 !!€ pateena patee+N+Sg+Ess
-!!¥ patee+N+Sg+Ill: [pateehen, pateeseen]
+!!€ pateehen patee+N+Sg+Ill
+!!€ pateeseen patee+N+Sg+Ill
 !!€ pateissa patee+N+Pl+Ine
 !!€ pateista patee+N+Pl+Ela
-!!¥ patee+N+Pl+Gen: [pateiden, pateitten]
-!!¥ patee+N+Pl+Ill: [pateisiin, pateihin]
+!!€ pateiden patee+N+Pl+Gen
+!!€ pateitten patee+N+Pl+Gen
+!!€ pateisiin patee+N+Pl+Ill
+!!€ pateihin patee+N+Pl+Ill
 0:e   N_BACK_NOMINATIVE    ;
 0:e   N_BACK_SINGULARS    ;
 0 N_BACK_PLURALS  ;
@@ -100156,11 +100214,14 @@ LEXICON N_BIDEE
 !!€ bidee bidee+N+Sg+Nom bidet
 !!€ bideetä bidee+N+Sg+Par
 !!€ bideenä bidee+N+Sg+Ess
-!!¥ bidee+N+Sg+Ill: [bideehen, bideeseen]
+!!€ bideehen bidee+N+Sg+Ill
+!!€ bideeseen bidee+N+Sg+Ill
 !!€ bideissä bidee+N+Pl+Ine
 !!€ bideistä bidee+N+Pl+Ela
-!!¥ bidee+N+Pl+Gen: [bideiden, bideitten]
-!!¥ bidee+N+Pl+Ill: [bideisiin, bideihin]
+!!€ bideiden bidee+N+Pl+Gen
+!!€ bideitten bidee+N+Pl+Gen
+!!€ bideisiin bidee+N+Pl+Ill
+!!€ bideihin bidee+N+Pl+Ill
 0:e   N_FRONT_NOMINATIVE    ;
 0:e   N_FRONT_SINGULARS    ;
 0 N_FRONT_PLURALS  ;
@@ -100186,8 +100247,10 @@ LEXICON N_TRIKOO
 !!€ trikoissa trikoo+N+Pl+Ine
 !!€ trikoista trikoo+N+Pl+Ela
 !!€ trikooseen trikoo+N+Sg+Ill
-!!¥ trikoo+N+Pl+Gen: [trikoiden, trikoitten]
-!!¥ trikoo+N+Pl+Ill: [trikoihin, trikoisiin]
+!!€ trikoiden trikoo+N+Pl+Gen
+!!€ trikoitten trikoo+N+Pl+Gen
+!!€ trikoihin trikoo+N+Pl+Ill
+!!€ trikoisiin trikoo+N+Pl+Ill
 0:o   N_BACK_NOMINATIVE    ;
 0:o   N_BACK_SINGULARS    ;
 0 N_BACK_PLURALS  ;
@@ -100211,8 +100274,10 @@ LEXICON N_RAGUU
 !!€ raguussa raguu+N+Sg+Ine
 !!€ raguista raguu+N+Pl+Ela
 !!€ raguuseen raguu+N+Sg+Ill
-!!¥ raguu+N+Pl+Gen: [raguiden, raguitten]
-!!¥ raguu+N+Pl+Ill: [raguisiin, raguihin]
+!!€ raguiden raguu+N+Pl+Gen
+!!€ raguiden raguu+N+Pl+Gen
+!!€ raguisiin raguu+N+Pl+Ill
+!!€ raguihin raguu+N+Pl+Ill
 0:u   N_BACK_NOMINATIVE    ;
 0:u   N_BACK_SINGULARS    ;
 0 N_BACK_PLURALS  ;
@@ -100235,8 +100300,10 @@ LEXICON N_FONDYY
 !!€ fondyynä fondyy+N+Sg+Ess
 !!€ fondyyssä fondyy+N+Sg+Ine
 !!€ fondyistä fondyy+N+Pl+Ela
-!!¥ fondyy+N+Sg+Ill: [fondyyseen, fondyyhyn]
-!!¥ fondyy+N+Pl+Gen: [fondyiden, fondyitten]
+!!€ fonduuseen fondyy+N+Sg+Ill
+!!€ fondyyhyn fondyy+N+Sg+Ill
+!!€ fondyiden fondyy+N+Pl+Gen
+!!€ fondyitten fondyy+N+Pl+Gen
 0:y   N_FRONT_NOMINATIVE    ;
 0:y   N_FRONT_SINGULARS    ;
 0 N_FRONT_PLURALS  ;
@@ -100256,7 +100323,8 @@ LEXICON N_FONDYY
 LEXICON N_HYVINKÄÄ
 !!€ Hyvinkää Hyvinkää+N+Prop+Sg+Nom Hyvinkää
 !!€ Hyvinkäätä Hyvinkää+N+Prop+Sg+Par
-!!¥ Hyvinkää+N+Prop+Sg+Ill: [Hyvinkäähän, Hyvinkääseen]
+!!€ Hyvinkäähän Hyvinkää+N+Prop+Sg+Ill
+!!€ Hyvinkääseen Hyvinkää+N+Prop+Sg+Ill
 0:ä   N_FRONT_NOMINATIVE    ;
 0:ä   N_FRONT_SINGULARS    ;
 0   N_FRONT_PLURALS  ;
@@ -100280,8 +100348,10 @@ LEXICON N_MILJÖÖ
 !!€ miljöössä miljöö+N+Sg+Ine
 !!€ miljöistä miljöö+N+Pl+Ela
 !!€ miljööseen miljöö+N+Sg+Ill
-!!¥ miljöö+N+Pl+Gen: [miljöiden, miljöitten]
-!!¥ miljöö+N+Pl+Ill: [miljöisiin, miljöihin]
+!!€ miljöiden miljöö+N+Pl+Gen
+!!€ miljöitten miljöö+N+Pl+Gen
+!!€ miljöihin miljöö+N+Pl+Ill
+!!€ miljöisiin miljöö+N+Pl+Ill
 0:ö   N_FRONT_NOMINATIVE    ;
 0:ö   N_FRONT_SINGULARS    ;
 0 N_FRONT_PLURALS  ;
@@ -100307,7 +100377,8 @@ LEXICON N_ROSÉ
 !!€gt-norm: Nouns 21
 !!€ rosé rosé+N+Sg+Nom rosé
 !!€ roséta rosé+N+Sg+Par
-!!¥ rosé+N+Sg+Ill: [roséhen, roséseen]
+!!€ roséhen rosé+N+Sg+Ill
+!!€ roséseen rosé+N+Sg+Ill
 0   N_BACK_NOMINATIVE    ;
 0   N_BACK_SINGULARS    ;
 0   N_BACK_PLURALS  ;
@@ -100327,7 +100398,8 @@ LEXICON N_ROSÉ
 LEXICON N_BÉBÉ
 !!€ bébé bébé+N+Sg+Nom bébé
 !!€ bébétä bébé+N+Sg+Par
-!!¥ bébé+N+Sg+Ill: [bébéhen, bébéseen]
+!!€ bébéhen bébé+N+Sg+Ill
+!!€ bébéseen bébé+N+Sg+Ill
 0   N_FRONT_NOMINATIVE    ;
 0   N_FRONT_SINGULARS    ;
 0   N_FRONT_PLURALS  ;
@@ -100352,8 +100424,10 @@ LEXICON N_BÉBÉ
 
 LEXICON N_BRASSERIE
 !!€ brasserie brasserie+N+Sg+Nom brasserie
-!!¥ brasserie+N+Sg+Par: [brasserieta, brasserietä]
-!!¥ brasserie+N+Sg+Ill: [brasseriehen, brasseriehin]
+!!€ brasserieta brasserie+N+Sg+Par
+!!€ brasserietä brasserie+N+Sg+Par
+!!€ brasseriehen brasserie+N+Sg+Ill
+!!€ brasseriehin brasserie+N+Sg+Ill
 0   N_BACK_NOMINATIVE    ;
 0   N_FRONT_NOMINATIVE    ;
 0   N_BACK_SINGULARS    ;
@@ -100393,11 +100467,16 @@ LEXICON N_BRIE
 
 LEXICON N_FONDUE
 !!€ fondue fondue+N+Sg+Nom fondue
-!!¥ fondue+N+Sg+Par: [fondueta, fonduetä]
-!!¥ fondue+N+Sg+Ess: [fonduena, fonduenä]
-!!¥ fondue+N+Sg+Ine: [fonduessa, fonduessä]
-!!¥ fondue+N+Pl+Ess: [fondueina, fondueinä]
-!!¥ fondue+N+Pl+Gen: [fondueiden, fondueitten]
+!!€ fondueta fondue+N+Sg+Par
+!!€ fonduetä fondue+N+Sg+Par
+!!€ fonduena fondue+N+Sg+Ess
+!!€ fonduenä fondue+N+Sg+Ess
+!!€ fonduessa fondue+N+Sg+Ine
+!!€ fonduessä fondue+N+Sg+Ine
+!!€ fondueina fondue+N+Pl+Ess
+!!€ fondueinä fondue+N+Pl+Ess
+!!€ fondueiden fondue+N+Pl+Gen
+!!€ fondueitten fondue+N+Pl+Gen
 0   N_BACK_NOMINATIVE    ;
 0   N_FRONT_NOMINATIVE    ;
 0   N_BACK_SINGULARS    ;
@@ -100420,7 +100499,9 @@ LEXICON N_FONDUE
 
 LEXICON N_JOCKEY
 !!€ jockey jockey+N+Sg+Nom jockey
-!!¥ jockey+N+Sg+Par: [jockeytä, jockeyta, jockeya]
+!!€ jockeyta jockey+N+Sg+Par
+!!€ jockeytä jockey+N+Sg+Par
+!!€ jockeya jockey+N+Sg+Par
 0   N_BACK_NOMINATIVE    ;
 0   N_FRONT_NOMINATIVE    ;
 0   N_BACK_SINGULARS    ;
@@ -100446,7 +100527,8 @@ LEXICON N_JOCKEY
 
 LEXICON N_COWBOY
 !!€ cowboy cowboy+N+Sg+Nom cowboy
-!!¥ cowboy+N+Sg+Par: [cowboytä, cowboyta]
+!!€ cowboytä cowboy+N+Sg+Par
+!!€ cowboyta cowboy+N+Sg+Par
 0   N_BACK_NOMINATIVE    ;
 0   N_FRONT_NOMINATIVE    ;
 0   N_BACK_SINGULARS    ;
@@ -100490,7 +100572,8 @@ LEXICON N_KUNGFU
 
 LEXICON N_GAY
 !!€ gay gay+N+Sg+Nom gay
-!!¥ gay+N+Sg+Ill: [gayhin, gayhyn]
+!!€ gayhin gay+N+Sg+Ill
+!!€ gayhyn gay+N+Sg+Ill
 0   N_BACK_NOMINATIVE    ;
 0   N_FRONT_NOMINATIVE    ;
 0   N_BACK_SINGULARS    ;
@@ -100737,7 +100820,8 @@ LEXICON N_TULI
 LEXICON N_VUOHI
 !!€ vuohi vuohi+N+Sg+Nom goat
 !!€ vuohessa vuohi+N+Sg+Ine
-!!¥ vuohi+N+Sg+Par: [vuohta, vuohea]
+!!€ vuohea vuohi+N+Sg+Par
+!!€ vuohta vuohi+N+Sg+Par
 !!€ vuohien vuohi+N+Pl+Gen
 0:i   N_BACK_NOMINATIVE    ;
 0:e N_BACK_SINGULARS    ;
@@ -100758,7 +100842,8 @@ LEXICON N_RUUHI
 !!€ ruuhi ruuhi+N+Sg+Nom boat
 !!€ ruuhessa ruuhi+N+Sg+Ine
 !!€ ruuhta ruuhi+N+Sg+Par
-!!¥ ruuhi+N+Pl+Gen: [ruuhien, ruuhten]
+!!€ ruuhien ruuhi+N+Pl+Gen
+!!€ ruuhten ruuhi+N+Pl+Gen
 0:i   N_BACK_NOMINATIVE    ;
 0:e N_BACK_SINGULARS    ;
 0 N_BACK_PLURALS    ;
@@ -100776,7 +100861,8 @@ LEXICON N_HIIRI
 !!€ hiiri hiiri+N+Sg+Nom mouse
 !!€ hiiressä hiiri+N+Sg+Ine
 !!€ hiirtä hiiri+N+Sg+Par
-!!¥ hiiri+N+Pl+Gen: [hiirten, hiirien]
+!!€ hiirten hiiri+N+Pl+Gen
+!!€ hiirien hiiri+N+Pl+Gen
 0:i   N_FRONT_NOMINATIVE    ;
 0:e N_FRONT_SINGULARS    ;
 0 N_FRONT_PLURALS    ;
@@ -100830,8 +100916,10 @@ LEXICON N_MIELI
 LEXICON N_TAIMI
 !!€gt-norm: Nouns 25
 !!€ luomi luomi+N+Sg+Nom mole
-!!¥ luomi+N+Sg+Par: [luomea, luonta]
-!!¥ luomi+N+Pl+Gen: [luomien, luonten]
+!!€ luomea luomi+N+Sg+Par
+!!€ luonta luomi+N+Sg+Par
+!!€ luomien luomi+N+Pl+Gen
+!!€ luonten luomi+N+Pl+Gen
 0:mi   N_BACK_NOMINATIVE    ;
 0:me N_BACK_SINGULARS    ;
 0:m N_BACK_PLURALS    ;
@@ -100848,8 +100936,10 @@ LEXICON N_TAIMI
 
 LEXICON N_LIEMI
 !!€ liemi liemi+N+Sg+Nom sauce
-!!¥ liemi+N+Sg+Par: [liemeä, lientä]
-!!¥ liemi+N+Pl+Gen: [liemien, lienten]
+!!€ liemeä liemi+N+Sg+Par
+!!€ lientä liemi+N+Sg+Par
+!!€ liemien liemi+N+Pl+Gen
+!!€ lienten liemi+N+Pl+Gen
 0:mi   N_FRONT_NOMINATIVE    ;
 0:me N_FRONT_SINGULARS    ;
 0:m N_FRONT_PLURALS    ;
@@ -102815,8 +102905,10 @@ LEXICON N_POHJE
 
 LEXICON N_ASKAR
 !!€gt-norm: Nouns 49
-!!¥ askar+N+Sg+Nom: [askar, askare] # chore
-!!¥ askar+N+Sg+Ess: [askarena, askareena]
+!!€ askar askar+N+Sg+Nom # chore
+!!€ askare askar+N+Sg+Nom
+!!€ askarena askar+N+Sg+Ess
+!!€ askareena askar+N+Sg+Ess
 0       N_BACK_NOMINATIVE    ;
 0:e    N_BACK_NOMINATIVE    ;
 0:e    N_BACK_SINGULARS    ;
@@ -102845,8 +102937,10 @@ LEXICON N_ASKAR
 0:e      N_COMPOUND_ITTEN   ;
 
 LEXICON N_KYYNEL
-!!¥ kyynel+N+Sg+Nom: [kyynel, kyynele] # tear
-!!¥ kyynel+N+Sg+Ess: [kyynelenä, kyyneleenä]
+!!€ kyynel kyynel+N+Sg+Nom # tear
+!!€ kyynele kyynel+N+Sg+Nom
+!!€ kyynelenä kyynel+N+Sg+Ess
+!!€ kyyneleenä kyynel+N+Sg+Ess
 0       N_FRONT_NOMINATIVE    ;
 0:e    N_FRONT_NOMINATIVE    ;
 0:e    N_FRONT_SINGULARS    ;
@@ -102875,8 +102969,10 @@ LEXICON N_KYYNEL
 0:e      N_COMPOUND_ITTEN   ;
 
 LEXICON N_SÄEN
-!!¥ säen+N+Sg+Nom: [säen, säkene] # spark
-!!¥ säen+N+Sg+Ess: [säkenenä, säkeneenä]
+!!€ säen säen+N+Sg+Nom # spark
+!!€ säkene säen+N+Sg+Nom
+!!€ säkenenä säen+N+Sg+Ess
+!!€ säkeneenä säen+N+Sg+Ess
 0:en       N_FRONT_NOMINATIVE    ;
 0:kene    N_FRONT_NOMINATIVE    ;
 0:kene    N_FRONT_SINGULARS    ;
@@ -102905,8 +103001,10 @@ LEXICON N_SÄEN
 0:kene      N_COMPOUND_ITTEN   ;
 
 LEXICON N_TAIVAL
-!!¥ taival+N+Sg+Nom: [taival, taipale] # hike
-!!¥ taival+N+Sg+Ess: [taipalena, taipaleena]
+!!€ taival taival+N+Sg+Nom # hike
+!!€ taipale taival+N+Sg+Nom
+!!€ taipalena taival+N+Sg+Ess
+!!€ taipaleena taival+N+Sg+Ess
 0:val       N_BACK_NOMINATIVE    ;
 0:pale    N_BACK_NOMINATIVE    ;
 0:pale    N_BACK_SINGULARS    ;
@@ -102936,8 +103034,10 @@ LEXICON N_TAIVAL
 
 
 LEXICON N_UDAR
-!!¥ udar+N+Sg+Nom: [udar, utare] # teat
-!!¥ udar+N+Sg+Ess: [utarena, utareena]
+!!€ udar udar+N+Sg+Nom # teat
+!!€ utare udar+N+Sg+Nom
+!!€ utarena udar+N+Sg+Ess
+!!€ utareena udar+N+Sg+Ess
 0:dar       N_BACK_NOMINATIVE    ;
 0:tare    N_BACK_NOMINATIVE    ;
 0:tare    N_BACK_SINGULARS    ;
@@ -102966,8 +103066,10 @@ LEXICON N_UDAR
 0:tare      N_COMPOUND_ITTEN   ;
 
 LEXICON N_PENGER
-!!¥ penger+N+Sg+Nom: [penger, penkere] # bank
-!!¥ penger+N+Sg+Ess: [penkerenä, penkereenä]
+!!€ penger penger+N+Sg+Nom # bank
+!!€ penkere penger+N+Sg+Nom
+!!€ penkerenä penger+N+Sg+Ess
+!!€ penkereenä penger+N+Sg+Ess
 0:ger       N_FRONT_NOMINATIVE    ;
 0:kere    N_FRONT_NOMINATIVE    ;
 0:kere    N_FRONT_SINGULARS    ;
@@ -102996,8 +103098,10 @@ LEXICON N_PENGER
 0:kere      N_COMPOUND_ITTEN   ;
 
 LEXICON N_OMMEL
-!!¥ ommel+N+Sg+Nom: [ommel, ompele] # stitch
-!!¥ ommel+N+Sg+Ess: [ompelena, ompeleena]
+!!€ ommel ommel+N+Sg+Nom # stitch
+!!€ ompele ommel+N+Sg+Nom
+!!€ ompelena ommel+N+Sg+Ess
+!!€ ompeleena ommel+N+Sg+Ess
 0:mel       N_BACK_NOMINATIVE    ;
 0:pele    N_BACK_NOMINATIVE    ;
 0:pele    N_BACK_SINGULARS    ;
@@ -103026,8 +103130,10 @@ LEXICON N_OMMEL
 0:pele      N_COMPOUND_ITTEN   ;
 
 LEXICON N_VEMMEL
-!!¥ vemmel+N+Sg+Nom: [vemmel, vempele]
-!!¥ vemmel+N+Sg+Ess: [vempelenä, vempeleenä]
+!!€ vemmel vemmel+N+Sg+Nom
+!!€ vempele vemmel+N+Sg+Nom
+!!€ vempelenä vemmel+N+Sg+Ess
+!!€ vempeleenä vemmel+N+Sg+Ess
 0:mel       N_FRONT_NOMINATIVE    ;
 0:pele    N_FRONT_NOMINATIVE    ;
 0:pele    N_FRONT_SINGULARS    ;
@@ -103056,8 +103162,10 @@ LEXICON N_VEMMEL
 0:pele      N_COMPOUND_ITTEN   ;
 
 LEXICON N_KINNER
-!!¥ kinner+N+Sg+Nom: [kinner, kintere] # heel
-!!¥ kinner+N+Sg+Ess: [kinterenä, kintereenä]
+!!€ kinner kinner+N+Sg+Nom # heel
+!!€ kintere kinner+N+Sg+Nom
+!!€ kinterenä kinner+N+Sg+Ess
+!!€ kintereenä kinner+N+Sg+Ess
 0:ner       N_FRONT_NOMINATIVE    ;
 0:tere    N_FRONT_NOMINATIVE    ;
 0:tere    N_FRONT_SINGULARS    ;
@@ -103086,8 +103194,10 @@ LEXICON N_KINNER
 0:tere      N_COMPOUND_ITTEN   ;
 
 LEXICON N_KANNEL
-!!¥ kannel+N+Sg+Nom: [kannel, kantele] # kantele
-!!¥ kannel+N+Sg+Ess: [kantelena, kanteleena]
+!!€ kannel kannel+N+Sg+Nom # kantele
+!!€ kantele kannel+N+Sg+Nom
+!!€ kantelena kannel+N+Sg+Ess
+!!€ kanteleena kannel+N+Sg+Ess
 0:nel       N_BACK_NOMINATIVE    ;
 0:tele    N_BACK_NOMINATIVE    ;
 0:tele    N_BACK_SINGULARS    ;
@@ -103116,8 +103226,10 @@ LEXICON N_KANNEL
 0:tele      N_COMPOUND_ITTEN   ;
 
 LEXICON N_MANNER
-!!¥ manner+N+Sg+Nom: [manner, mantere] # continent
-!!¥ manner+N+Sg+Ess: [manterena, mantereena]
+!!€ manner manner+N+Sg+Nom # continent
+!!€ mantere manner+N+Sg+Nom
+!!€ manterena manner+N+Sg+Ess
+!!€ mantereena manner+N+Sg+Ess
 0:ner       N_BACK_NOMINATIVE    ;
 0:tere    N_BACK_NOMINATIVE    ;
 0:tere    N_BACK_SINGULARS    ;
@@ -103146,8 +103258,10 @@ LEXICON N_MANNER
 0:tere      N_COMPOUND_ITTEN   ;
 
 LEXICON N_PIENNAR
-!!¥ piennar+N+Sg+Nom: [piennar, pientare] # curb
-!!¥ piennar+N+Sg+Ess: [pientarena, pientareena]
+!!€ piennar piennar+N+Sg+Nom # curb
+!!€ pientare piennar+N+Sg+Nom
+!!€ pientarena piennar+N+Sg+Ess
+!!€ pientareena piennar+N+Sg+Ess
 0:nar       N_BACK_NOMINATIVE    ;
 0:tare    N_BACK_NOMINATIVE    ;
 0:tare    N_BACK_SINGULARS    ;
@@ -103176,8 +103290,10 @@ LEXICON N_PIENNAR
 0:tere      N_COMPOUND_ITTEN   ;
 
 LEXICON N_AUER
-!!¥ auer+N+Sg+Nom: [auer, autere] # morning mist
-!!¥ auer+N+Sg+Ess: [auterena, autereena]
+!!€ auer auer+N+Sg+Nom # morning mist
+!!€ autere auer+N+Sg+Nom
+!!€ auterena auer+N+Sg+Ess
+!!€ autereena auer+N+Sg+Ess
 0:er       N_BACK_NOMINATIVE    ;
 0:tere    N_BACK_NOMINATIVE    ;
 0:tere    N_BACK_SINGULARS    ;
@@ -103215,7 +103331,8 @@ LEXICON N_AUER
 LEXICON N_VERI
 !!€gt-norm: Nouns veri~meri
 !!€ veri veri+N+Sg+Nom blood
-!!¥ veri+N+Sg+Par: [verta, ~vertä]
+!!€ verta veri+N+Sg+Par
+!!$ vertä veri+N+Sg+Par
 0:i       N_FRONT_NOMINATIVE    ;
 0:e       N_FRONT_SINGULARS    ;
 0:e     N_FRONT_PLURALS   ;
@@ -103230,7 +103347,8 @@ LEXICON N_VERI
 
 LEXICON N_MERI
 !!€ meri meri+N+Sg+Nom sea
-!!¥ meri+N+Sg+Par: [merta, ~mertä]
+!!€ merta meri+N+Sg+Par
+!!$ mertä meri+N+Sg+Par
 0:i   N_FRONT_NOMINATIVE    ;
 0:e N_FRONT_SINGULARS    ;
 0 N_FRONT_PLURALS    ;
@@ -103250,7 +103368,8 @@ LEXICON N_MERI
 LEXICON N_UROS
 !!€gt-norm: Noun uros
 !!€ uros uros+N+Sg+Nom male
-!!¥ uros+N+Sg+Gen: [uroksen, uroon]
+!!€ uroksen uros+N+Sg+Gen
+!!€ uroon uros+N+Sg+Gen
 0:s   N_BACK_NOMINATIVE    ;
 0:kse   N_BACK_SINGULARS    ;
 0:o     N_BACK_SINGULARS    ;
