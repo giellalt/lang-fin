@@ -12,7 +12,8 @@ LEXICON N_BACK_NOMINATIVE
 !!€gt-norm: Noun nominatives
 !!€ talo talo+N+Sg+Nom a house
 !!€ taloko talo+N+Sg+Nom+Qst
-!!¥ talo+N+Sg+Nom+Foc/han: [talohan, ~talohän]
+!!€ talohan talo+N+Sg+Nom+Foc/han
+!!$ talohän talo+N+Sg+Nom+Foc/han
 +Sg+Nom:0   N_BACK_CLIT_OPT  ;
 
 LEXICON N_FRONT_NOMINATIVE
@@ -25,7 +26,8 @@ LEXICON N_FRONT_NOMINATIVE
 LEXICON N_BACK_PLNOM_CLIT
 !!€ talot talo+N+Pl+Nom 
 !!€ sakset sakset+N+Pl+Nom scissors
-!!¥ sakset+N+Pl+Nom+Foc/pa: [saksetpa, ~saksetpä]
+!!€ saksetpa sakset+N+Pl+Nom+Foc/pa
+!!$ saksetpä sakset+N+Pl+Nom+Foc/pa
 +Pl+Nom:%>t     N_BACK_CLIT_OPT  ;
 
 LEXICON N_FRONT_PLNOM_CLIT
