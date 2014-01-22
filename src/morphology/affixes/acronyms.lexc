@@ -84,7 +84,8 @@
 
 LEXICON ACRO_KOLME
 !! The acronyms ending in digit 3 pronounced as number
-!!€ MP3 MP3+N+Sg+Nom mp3 music file
+!!€gt-norm: mp3
+!!€ MP3 MP3+N+Sg+Nom # mp3 music file
 !!€ MP3:een MP3+N+Sg+Ill
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
@@ -154,8 +155,9 @@ LEXICON ACRO_KOLME
 
 LEXICON ACRO_VIISI
 !! The acronyms ending in digit 5 pronounced as number
-!€ A5 A5+N+Sg+Nom A5 paper
-!€ A5:een A5+N+Sg+Ill
+!!€gt-norm: Acronyms 5
+!!€ A5 A5+N+Sg+Nom A5 paper
+!!€ A5:een A5+N+Sg+Ill
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%>%:  ACRO_FRONT_POSS    ;
@@ -363,6 +365,7 @@ LEXICON ACRO_AA
 LEXICON ACRO_EE
 !! acronyms ending in 'b', 'c', 'd', 'e', 'g', 'p', 'v', 'w' or 't' pronounced
 !! as a letter:
+!!€gt-norm: Acronyms E
 !!€ BBC BBC+N+Sg+Nom British Broadcasting Company
 !!€ BBC:t BBC+N+Pl+Nom
 !!€ BBC:ssä BBC+N+Sg+Ine
@@ -399,6 +402,7 @@ LEXICON ACRO_EE
 
 LEXICON ACRO_II
 !! Acronyms that end in 'j' or 'i' pronoynced as letter:
+!!€gt-norm: Acronyms I
 !!€ DPI DPI+N+Sg+Nom
 !!€ DPI:t DPI+N+Pl+Nom
 !!€ DPI:ssä DPI+N+Sg+Ine
@@ -435,6 +439,7 @@ LEXICON ACRO_II
 
 LEXICON ACRO_OO
 !! Acronyms that end in 'h', 'k' or 'o' that is pronounced as a letter:
+!!€gt-norm: Acronyms O
 !!€ HK HK+N+Sg+Nom
 !!€ HK:n HK+N+Sg+Gen
 !!€ HK:lla HK+N+Sg+Ade
@@ -471,6 +476,7 @@ LEXICON ACRO_OO
 
 LEXICON ACRO_UU
 !! Acronyms that end in 'q', or 'u' pronounced as a letter:
+!!€gt-norm: Acronyms U
 !!€ EU EU+N+Sg+Nom
 !!€ EU:t EU+N+Pl+Nom
 !!€ EU:hun EU+N+Sg+Ill
@@ -508,6 +514,7 @@ LEXICON ACRO_UU
 LEXICON ACRO_ÄKS
 !! Acronym that ends in 'f', 'l', 'm', 'n', 'r', 's', 'š' or 'x' pronounced as
 !! a letter:
+!!€gt-norm: Acronyms X
 !!€ GPRS GPRS+N+Sg+Nom
 !!€ GPRS:llä GPRS+N+Sg+Ade
 0  ACRO_COMPOUND   ;
@@ -543,6 +550,7 @@ LEXICON ACRO_ÄKS
 
 LEXICON ACRO_YY
 !! Acronym that ends in 'y' pronounced as letter
+!!€gt-norm: Acronyms Y
 !!€ EY EY+N+Sg+Nom
 !!€ EY:hyn EY+N+Sg+Ill
 0  ACRO_COMPOUND   ;
@@ -578,6 +586,7 @@ LEXICON ACRO_YY
 
 LEXICON ACRO_ZET
 !! Acronyms that end in 'z' pronounced as letter
+!!€gt-norm: Acronyms Z
 !!€ Z Z+N+Sg+Nom
 !!€ Z:t Z+N+Pl+Nom
 0  ACRO_COMPOUND   ;
@@ -613,6 +622,7 @@ LEXICON ACRO_ZET
 
 LEXICON ACRO_ÄÄ
 !! Acronyms that end in 'ä' pronounced as letter
+!!€gt-norm: Acronyms Ä
 !!€ Ä Ä+N+Sg+Nom
 !!€ Ä:t Ä+N+Pl+Nom
 0  ACRO_COMPOUND   ;
@@ -648,6 +658,7 @@ LEXICON ACRO_ÄÄ
 
 LEXICON ACRO_ÖÖ
 !! Acronyms that end in 'ö' pronounced as letter
+!!€gt-norm: Acronyms Ö
 !!€ Ö Ö+N+Sg+Nom
 !!€ Ö:t Ö+N+Pl+Nom
 0  ACRO_COMPOUND   ;
