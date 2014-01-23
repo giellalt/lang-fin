@@ -5,22 +5,29 @@ acronyms, and compound with hyphen only.
 Digits are constructed as several cyclic structures: integers, decimals or
 roman numerals.
 Zero alone works quite differently:
-(subsequent examples are *Digits basic*)
+
+__Digit zero examples:__
 * __0__: {{0+Num+Sg+Nom}}
 
 Integers can be constructed from any number of digits, ending in
 1-9, followed by any number of 0's. Initial 0's are rare, but not totally
 unexpected:
+
+__int digit loop examples:__
 * __13__: {{13+Num+Card+Sg+Nom}}
 * __100__: {{100+Num+Card+Sg+Nom}}
 * __0000005550000000__: {{0000005550000000+Num+Card+Sg+Nom}}
 
 The digit strings that end in 10 to 12 + 6n 0's are inflected alike:
+
+__int digit milliard loop examples:__
 * __1000000000__: {{1000000000+Num+Card+Sg+Nom}}
 * __300000000000__: {{300000000000+Num+Card+Sg+Nom}}
 * __123456000000000000000000__: {{123456000000000000000000+Num+Card+Sg+Nom}}
 
 The digit strings that end in 6 to 9 + 6n 0's are inflected alike:
+
+__int digit million loop examples:__
 * __1000000__: {{1000000+Num+Card+Sg+Nom}}
 * __300000000__: {{300000000+Num+Card+Sg+Nom}}
 * __123456000000000000000__: {{123456000000000000000+Num+Card+Sg+Nom}}
@@ -28,13 +35,16 @@ The digit strings that end in 6 to 9 + 6n 0's are inflected alike:
 Decimal digit strings start with any number of digits 0 to 9, followed
 by decimal separator comma. The decimal dot may be allowed as substandard
 variant.
-(subsequent examples are *Digits decimal strings*)
+
+__decimal digit loop examples:__
 * __1,0__: {{1,0+Num+Sg+Nom}}
 * __314,1__: {{314,1+Num+Sg+Nom}}
 
 
 The decimal digit strings end in any number of digits 0 to 9, inflected
 along the last part.
+
+__decimal digit loop more examples:__
 * __3,141__: {{3,141+Num+Sg+Nom}}
 * __123,345__: {{123,345+Num+Sg+Nom}}
 
@@ -44,25 +54,34 @@ with respective analysis.
 Roman numerals are composed the symbols M, D, C, L, X, V, I in ascending
 scale and some combinations, they denote ordinal numbers and inflect like
 ones.
-(subsequent examples are *Digits romans*)
+
+__roman numeral examples:__
 * __MM__: {{MM+Num+Ord+Sg+Nom}}
 * __MCXI__: {{MCXI+Num+Ord+Sg+Nom}}
 * __CMXCIX__: {{CMXCIX+Num+Ord+Sg+Nom}}
 
 Thousands can be followed by any of other parts
+
+__roman numeral thousand examples:__
 * __MII__: {{MII+Num+Ord+Sg+Nom}}
 * __MCCCXXII__: {{MCCCXXII+Num+Ord+Sg+Nom}}
 
 
 Hundreds can be followed by anything but thousands:
+
+__roman numeral hundred examples:__
 * __CXXI__: {{CXXI+Num+Ord+Sg+Nom}}
 * __DXXIV__: {{DXXIV+Num+Ord+Sg+Nom}}
 
 Tens can be followed by ones:
+
+__roman numeral ten examples:__
 * __XIX__: {{XIX+Num+Ord+Sg+Nom}}
 * __XXVII__: {{XXVII+Num+Ord+Sg+Nom}}
 
 Ones come alone
+
+__roman numerals one to nine examples:__
 * __IX__: {{IX+Num+Ord+Sg+Nom}}
 * __VIII__: {{VIII+Num+Ord+Sg+Nom}}
 * __II__: {{II+Num+Ord+Sg+Nom}}

@@ -2,16 +2,24 @@
 Numeral inflection is like nominal, except that numerals compound in all
 forms which requires great amount of care in the inflection patterns.
 
-(subsequent examples are *Numeral nominatives*)
+
+__Numeral nominative back examples:__
 * __kaksi__: {{kaksi+Num+Card+Sg+Nom}} (Eng. two)
 
+
+__Numeral nominative front examples:__
 * __yksi__: {{yksi+Num+Card+Sg+Nom}} (Eng. one)
 
+
+__Numeral nominative plural back examples:__
 * __kahdet__: {{kaksi+Num+Card+Pl+Nom}}
 
+
+__Numeral nominative plural front examples:__
 * __yhdet__: {{yksi+Num+Card+Pl+Nom}}
 
-(subsequent examples are *Numeral weak singulars*)
+
+__Numeral weak singular back examples:__
 * __kahden__: {{kaksi+Num+Card+Sg+Gen}}
 * __kahdella__: {{kaksi+Num+Card+Sg+Ade}}
 * __kahdelta__: {{kaksi+Num+Card+Sg+Abl}}
@@ -21,6 +29,8 @@ forms which requires great amount of care in the inflection patterns.
 * __kahdeksi__: {{kaksi+Num+Card+Sg+Tra}}
 * __kahdetta__: {{kaksi+Num+Card+Sg+Abe}}
 
+
+__Numeral weak singular front examples:__
 * __yhden__: {{yksi+Num+Card+Sg+Gen}}
 * __yhdellä__: {{yksi+Num+Card+Sg+Ade}}
 * __yhdeltä__: {{yksi+Num+Card+Sg+Abl}}
@@ -30,12 +40,16 @@ forms which requires great amount of care in the inflection patterns.
 * __yhdeksi__: {{yksi+Num+Card+Sg+Tra}}
 * __yhdettä__: {{yksi+Num+Card+Sg+Abe}}
 
-(subsequent examples are *Numeral strong singulars-*)
+
+__Numeral strong singular back examples:__
 * __kahtena__: {{kaksi+Num+Card+Sg+Ess}}
 
+
+__Numeral strong singular front examples:__
 * __yhtenä__: {{yksi+Num+Card+Sg+Ess}}
 
-(subsequent examples are *Numeral weak plurals*)
+
+__Numeral weak plural back examples:__
 * __kaksilla__: {{kaksi+Num+Card+Pl+Ade}}
 * __kaksilta__: {{kaksi+Num+Card+Pl+Abl}}
 * __kaksille__: {{kaksi+Num+Card+Pl+All}}
@@ -44,6 +58,8 @@ forms which requires great amount of care in the inflection patterns.
 * __kaksiksi__: {{kaksi+Num+Card+Pl+Tra}}
 * __kaksitta__: {{kaksi+Num+Card+Pl+Abe}}
 
+
+__Numeral weak plural front examples:__
 * __yksillä__: {{yksi+Num+Card+Pl+Ade}}
 * __yksiltä__: {{yksi+Num+Card+Pl+Abl}}
 * __yksille__: {{yksi+Num+Card+Pl+All}}
@@ -52,81 +68,140 @@ forms which requires great amount of care in the inflection patterns.
 * __yksiksi__: {{yksi+Num+Card+Pl+Tra}}
 * __yksittä__: {{yksi+Num+Card+Pl+Abe}}
 
+
+__Numeral weak plural back strong examples:__
 * __kaksina__: {{kaksi+Num+Card+Pl+Ess}}
 * __kaksine__: {{kaksi+Num+Card+Com}}
 
+
+__Numeral weak plural front strong examples:__
 * __yksinä__: {{yksi+Num+Card+Pl+Ess}}
 * __yksine__: {{yksi+Num+Card+Com}}
 
 
-(subsequent examples are *Numeral singular partitive allomorphs*)
+
+__Numeral singular partitive a examples:__
 * __kahdeksaa__: {{kahdeksan+Num+Card+Sg+Par}} (Eng. eight)
 
+
+__Numeral singular partitive ä examples:__
 * __neljää__: {{neljä+Num+Card+Sg+Par}} (Eng. four)
 
+
+__Numeral singular partitive a poss aan examples:__
 * __kolmea__: {{kolme+Num+Card+Sg+Par}} (Eng. three)
 
+
+__Numeral singular partitive ta examples:__
 * __kuutta__: {{kuusi+Num+Card+Sg+Par}} (Eng. six)
 
+
+__Numeral singular partitive tä examples:__
 * __viittä__: {{viisi+Num+Card+Sg+Par}} (Eng. five)
 
-(subsequent examples are *Numeral singular illative allomorphs*)
+
+__Numeral singular illative an examples:__
 * __kahdeksaan__: {{kahdeksan+Num+Card+Sg+Ill}}
 
+
+__Numeral singular illative en back examples:__
 * __kolmeen__: {{kolme+Num+Card+Sg+Ill}}
 
+
+__Numeral singular illative en front examples:__
 * __viiteen__: {{viisi+Num+Card+Sg+Ill}}
 
+
+__Numeral singular illative in back examples:__
 * __miljardiin__: {{miljardi+Num+Card+Sg+Ill}} (Eng. billion)
 
+
+__Numeral singular illative än examples:__
 * __neljään__: {{neljä+Num+Card+Sg+Ill}}
 
-(subsequent examples are *Numeral plural partitives*)
+
+__Numeral plural partitive ia examples:__
 * __kaksia__: {{kaksi+Num+Card+Pl+Par}}
 
+
+__Numeral plural partitive iä examples:__
 * __neljiä__: {{neljä+Num+Card+Pl+Par}}
 
+
+__Numeral plural partitive ja examples:__
 * __miljardeja__: {{miljardi+Num+Card+Pl+Par}}
 
-(subsequent examples are *Numeral plural genitive allomorphs*)
+
+__Numeral plural genitive ien back examples:__
 * __kaksien__: {{kaksi+Num+Card+Pl+Gen}}
 
+
+__Numeral plural genitive ien front examples:__
 * __yksien__: {{yksi+Num+Card+Pl+Gen}}
 
+
+__Numeral plural genitive jen back examples:__
 * __satojen__: {{sata+Num+Card+Pl+Gen}} (Eng. hundred)
 
+
+__Numeral plural genitive ten back examples:__
 * __kuutten__: {{kuusi+Num+Card+Pl+Gen}}
 
+
+__Numeral plural genitive ten front examples:__
 * __viitten__: {{viisi+Num+Card+Pl+Gen}}
 
+
+__Numeral plural genitive in back examples:__
 * __yhdeksäin__: {{yhdeksän+Num+Card+Pl+Gen+Use/Rare}}
 
+
+__Numeral plural genitive in front examples:__
 * __neljäin__: {{neljä+Num+Card+Pl+Gen+Use/Rare}}
 
-(subsequent examples are *Numeral plural illaive allomorphs*)
+
+__Numeral plural illaive ihin bavk examples:__
 * __miljardeihin__: {{miljardi+Num+Card+Pl+Ill}}
 
+
+__Numeral plural illaive iin back examples:__
 * __kaksiin__: {{kaksi+Num+Card+Pl+Ill}}
 
+
+__Numeral plural illaive iin front examples:__
 * __yksiin__: {{yksi+Num+Card+Pl+Ill}}
 
 
-(subsequent examples are *Numeral possessives*)
+
+__Numeral possessive back examples:__
 * __kahteni__: {{kaksi+Num+Card+Sg+Nom+PxSg1}}
 
+
+__Numeral possessive front examples:__
 * __yhteni__: {{yksi+Num+Card+Sg+Nom+PxSg1}}
 
+
+__Numeral possessive back aan examples:__
 * __kolmeaan__: {{kolme+Num+Card+Sg+Par+PxSg3}}
 
+
+__Numeral possessive back eenback examples:__
 * __kahdekseen__: {{kaksi+Num+Card+Sg+Tra+PxSg3}}
 
+
+__Numeral possessive back een front examples:__
 * __neljäkseen__: {{neljä+Num+Card+Sg+Tra+PxSg3}}
 
+
+__Numeral possessive back ään examples:__
 * __viittään__: {{viisi+Num+Card+Sg+Par+PxSg3}}
 
-(subsequent examples are *Numeral clitics*)
+
+__Numeral clitic back examples:__
 * __kaksihan__: {{kaksi+Num+Card+Sg+Nom+Foc/han}}
 
+
+__Numeral clitic front examples:__
 * __yksihän__: {{yksi+Num+Card+Sg+Nom+Foc/han}}
 
 
