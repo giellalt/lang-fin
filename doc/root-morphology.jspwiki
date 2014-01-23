@@ -1,9 +1,9 @@
 
 !!!Morphology
 The morphological division of Finnish words has three classes: verbal,
-nominal and *others*. The verbs are identified by personal, temporal,
+nominal and others. The verbs are identified by personal, temporal,
 modal and infinite inflection. The nominals are identified by numeral and
-case inflection. The others are, apart from being *the rest*, identified by
+case inflection. The others are, apart from being the rest, identified by
 defective or missing inflection. 
 
 !!Symbols used for analysis {{Multichar_Symbols}}
@@ -34,7 +34,8 @@ The codes:
  * {{+Interj }}: Interjection
 
 The part-of-speech analyses are typically the first:
-(subsequent examples are *Analysis examples*)
+
+__Analysis examples examples:__
 * __kutoo__: {{kutoa+V+Act+Ind+Prs+Sg3}} (Eng. knits)
 * __talo__: {{talo+N+Sg+Nom}} (Eng. house)
 * __nopea__: {{nopea+A+Sg+Nom}} (Eng. fast)
@@ -401,17 +402,17 @@ All word forms can have clitics which are analysed by their orthography.
 Clitics are suffixes which can attach almost anywhere in the ends of words,
 both verb forms and nominals. They also attach on end of other clitics,
 theoretically infinite chains. In practice it is usual to see at most three
-in one word form. Two clitics have limited use: *-s* only appears in few 
-verb forms and combined to other clitics and *-kA* only appears with few 
+in one word form. Two clitics have limited use: -s only appears in few 
+verb forms and combined to other clitics and -kA only appears with few 
 adverbs and negation verb. 
 [VISK § 126|http://scripta.kotus.fi/visk/sisallys.php?p=126] – 131
- * {{+Foc/han }}: *-hAn*; affirmative etc.
- * {{+Foc/kaan }}: *-kAAn*; "neither"
- * {{+Foc/kin }}: *-kin*; "also"
- * {{+Foc/pa }}: *-pA*; "indeed"
- * {{+Foc/s }}: *-s*; polite?
- * {{+Foc/ka }}: *-kA*; "nor"
- * {{+Qst }}: *-kO*: Question focus
+ * {{+Foc/han }}: -hAn; affirmative etc.
+ * {{+Foc/kaan }}: -kAAn; "neither"
+ * {{+Foc/kin }}: -kin; "also"
+ * {{+Foc/pa }}: -pA; "indeed"
+ * {{+Foc/s }}: -s; polite?
+ * {{+Foc/ka }}: -kA; "nor"
+ * {{+Qst }}: -kO: Question focus
 
 !Derivation
 The derivation is not a central feature of this morphology, it is mainly
@@ -495,12 +496,14 @@ soft boundaries by _.
 The start of the dictionary {{Root}}
 The Finnish morphological description starts from any of the parts of speech
 dictionaries, prefix or hyphenated suffix
-(subsequent examples are *Parts-of-speech*)
+
+__Parts-of-speech examples:__
 * __talo__: {{talo+N+Sg+Nom}} (Eng. house)
 * __nopea__: {{nopea+A+Sg+Nom}} (Eng. fast)
 * __kutoa__: {{kutoa+V+Act+InfA+Sg+Lat}} (Eng. to knit)
 
 The compound part sub-set {{NOMINAL}}
 The nominal forms can be used as non-initial parts of typical compounds
-(subsequent examples are *Nominals*)
+
+__Nominals examples:__
 * __talonjuttu__: {{talo+N+Sg+Gen#juttu+N+Sg+Nom}} (Eng. house thing)
