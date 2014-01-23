@@ -11,7 +11,7 @@ LEXICON  N
 !! The nominals are classified by combination of the stem variations, suffix
 !! allomorphs and the vowel harmony. The nouns have number, case, possessive
 !! and clitic suffixes:
-!!€gt-norm: Basic noun examples
+!!€gt-norm: Noun
 !!€ talo talo+N+Sg+Nom house
 !!€ taloa talo+N+Sg+Par
 !!€ taloissa talo+N+Pl+Ine
@@ -96069,7 +96069,7 @@ LEXICON N_TALO
 !! bisyllabic or have one of common derivational suffixes: sto, ....
 !! The nouns in this class end in o, u, y or ö, which determines their 
 !! illative suffix and therefore exact classification:
-!!€gt-norm: Nouns 1o
+!!€gt-norm: Noun 1o
 !!€ talo talo+N+Sg+Nom house
 !!€ talona talo+N+Sg+Ess
 !!€ talossa talo+N+Sg+Ine
@@ -96108,7 +96108,7 @@ LEXICON N_TALO
 LEXICON N_ASU
 !! The stems ending in u are also without variationm and the bisyllabic ones
 !! have the same simple allomorph pattern:
-!!€gt-norm: Nouns 1u
+!!€gt-norm: Noun 1u
 !!€ asu asu+N+Sg+Nom outfit
 !!€ asua asu+N+Sg+Par
 !!€ asuun asu+N+Sg+Ill
@@ -96143,7 +96143,7 @@ N_TALO ;
 ! whether it is correct, TT.
 
 LEXICON N_KÄRRY
-!!€gt-norm: Nouns 1y
+!!€gt-norm: Noun 1y
 !!€ kärry kärry+N+Sg+Nom cart
 !!€ kärryä kärry+N+Sg+Par
 !!€ kärryyn kärry+N+Sg+Ill
@@ -97612,7 +97612,7 @@ LEXICON N_BERNIE
 !! standard written Finnish. Otherwise words in this class behave like other
 !! trisyllabic stems.
 LEXICON N_LEPAKKO
-!!€gt-norm: Noun 4
+!!€gt-norm: Noun 4 kko
 !!€ lepakko lepakko+N+Sg+Nom bat
 !!€ lepakoihin lepakko+N+Pl+Ill
 !!€ lepakkoihin lepakko+N+Pl+Ill
@@ -97642,6 +97642,7 @@ LEXICON N_LEPAKKO
 +Use/Sub:ko   N_BACK_ILLATIVE_HON ; ! in NS's intro prose
 
 LEXICON N_YKSIKKÖ
+!!€gt-norm: Noun 4 kkö
 !!€ yksikkö yksikkö+N+Sg+Nom unit
 !!€ yksiköihin yksikkö+N+Pl+Ill
 !!€ yksikköihin yksikkö+N+Pl+Ill
@@ -97670,11 +97671,11 @@ LEXICON N_YKSIKKÖ
 +Use/Sub:kö   N_FRONT_ILLATIVE_HÖN ; ! in NS's intro prose
 
 !! !I final stems
-!! The basic variation of stem final *i* in nominative is that it becomes
-!! *e* in plural stems. In plural genitive form, the stem vowel disappears
-!! making suffix allomorph *-ien*, instead of *-jen*.
+!! The basic variation of stem final i in nominative is that it becomes
+!! e in plural stems. In plural genitive form, the stem vowel disappears
+!! making suffix allomorph -ien, instead of -jen.
 LEXICON N_RUUVI
-!!€gt-norm: Nouns 5F
+!!€gt-norm: Nouns 5 back
 !!€ ruuvi ruuvi+N+Sg+Nom screw
 !!€ ruuveina ruuvi+N+Pl+Ess
 !!€ ruuvien ruuvi+N+Pl+Gen
@@ -97698,6 +97699,7 @@ LEXICON N_RUUVI
 +Use/Sub:e  N_BACK_GENITIVE_JEN ; ! not documented
 
 LEXICON N_TYYLI
+!!€gt-norm: Nouns 5 front
 !!€ tyyli tyyli+N+Sg+Nom style
 !!€ tyyleinä tyyli+N+Pl+Ess
 !!€ tyylien tyyli+N+Pl+Gen
@@ -97714,6 +97716,7 @@ LEXICON N_TYYLI
 0       N_COMPOUND_IEN ;
 
 LEXICON N_LOKKI
+!!€gt-norm: Nouns 5 back k~0
 !!€ lokki lokki+N+Sg+Nom seagull
 !!€ lokissa lokki+N+Sg+Ine
 !!€ lokkeina lokki+N+Pl+Ess
@@ -97734,6 +97737,7 @@ LEXICON N_LOKKI
 0:k        N_COMPOUND_IEN ;
 
 LEXICON N_HÄKKI
+!!€gt-norm: Nouns 5 front k~0
 !!€ häkki häkki+N+Sg+Nom cage
 !!€ häkissä häkki+N+Sg+Ine
 !!€ häkkeinä häkki+N+Pl+Ess
@@ -97754,6 +97758,7 @@ LEXICON N_HÄKKI
 0:k        N_COMPOUND_IEN ;
 
 LEXICON N_KUPPI
+!!€gt-norm: Nouns 5 back p~0
 !!€ kuppi kuppi+N+Sg+Nom cup
 !!€ kupissa kuppi+N+Sg+Ine
 !!€ kuppeina kuppi+N+Pl+Ess
@@ -97774,6 +97779,7 @@ LEXICON N_KUPPI
 0:p        N_COMPOUND_IEN ;
 
 LEXICON N_TYYPPI
+!!€gt-norm: Nouns 5 front p~0
 !!€ tyyppi tyyppi+N+Sg+Nom type
 !!€ tyypissä tyyppi+N+Sg+Ine
 !!€ tyyppeinä tyyppi+N+Pl+Ess
@@ -97794,6 +97800,7 @@ LEXICON N_TYYPPI
 0:p        N_COMPOUND_IEN ;
 
 LEXICON N_PORTTI
+!!€gt-norm: Nouns 5 back t~0
 !!€ kortti kortti+N+Sg+Nom card
 !!€ kortissa kortti+N+Sg+Ine
 !!€ kortteina kortti+N+Pl+Ess
@@ -97816,6 +97823,7 @@ LEXICON N_PORTTI
 
 
 LEXICON N_SKEITTI
+!!€gt-norm: Nouns 5 front t~0
 !!€ skeitti skeitti+N+Sg+Nom skate
 !!€ skeitissä skeitti+N+Sg+Ine
 !!€ skeitteinä skeitti+N+Pl+Ess
@@ -97836,6 +97844,7 @@ LEXICON N_SKEITTI
 0:t       N_COMPOUND_IEN ;
 
 LEXICON N_LAKI
+!!€gt-norm: Nouns 5 back k~’~0
 !!€ laki laki+N+Sg+Nom law
 !!€ laissa laki+N+Sg+Ine
 !!€ la’issa laki+N+Sg+Ine
@@ -97860,6 +97869,7 @@ LEXICON N_LAKI
 0:k        N_COMPOUND_IEN ;
 
 LEXICON N_HUPI
+!!€gt-norm: Nouns 5 back p~v
 !!€ hupi hupi+N+Sg+Nom fun
 !!€ huvissa hupi+N+Sg+Ine
 !!€ hupeina hupi+N+Pl+Ess
@@ -97882,6 +97892,7 @@ LEXICON N_HUPI
 !! There is a gap in i final words for p:v variation and front harmony
 
 LEXICON N_TAUTI
+!!€gt-norm: Nouns 5 back t~d
 !!€ tauti tauti+N+Sg+Nom disease
 !!€ taudissa tauti+N+Sg+Ine
 !!€ tauteina tauti+N+Pl+Ess
@@ -97902,6 +97913,7 @@ LEXICON N_TAUTI
 0:t        N_COMPOUND_IEN ;
 
 LEXICON N_NIHTI
+!!€gt-norm: Nouns 5 front t~d
 !!€ nihti nihti+N+Sg+Nom knight
 !!€ nihdissä nihti+N+Sg+Ine
 !!€ nihteinä nihti+N+Pl+Ess
@@ -97922,6 +97934,7 @@ LEXICON N_NIHTI
 0:t        N_COMPOUND_IEN ;
 
 LEXICON N_VANKI
+!!€gt-norm: Nouns 5 back k~g
 !!€ vanki vanki+N+Sg+Nom prisoner
 !!€ vangissa vanki+N+Sg+Ine
 !!€ vankeina vanki+N+Pl+Ess
@@ -97942,6 +97955,7 @@ LEXICON N_VANKI
 0:k        N_COMPOUND_IEN ;
 
 LEXICON N_HÄMMINKI
+!!€gt-norm: Nouns 5 front k~g
 !!€ väylinki väylinki+N+Sg+Nom ???
 !!€ väylingissä väylinki+N+Sg+Ine
 !!€ väylinkeinä väylinki+N+Pl+Ess
@@ -97964,6 +97978,7 @@ LEXICON N_HÄMMINKI
 !! There is a gap in i final paradigm with t:l variation and back vowels.
 
 LEXICON N_PELTI
+!!€gt-norm: Nouns 5 front t~l
 !!€ pelti pelti+N+Sg+Nom sheet metal
 !!€ pellissä pelti+N+Sg+Ine
 !!€ pelteinä pelti+N+Pl+Ess
@@ -97984,6 +97999,7 @@ LEXICON N_PELTI
 0:t        N_COMPOUND_IEN ;
 
 LEXICON N_SOINTI
+!!€gt-norm: Nouns 5 back t~n
 !!€ sointi sointi+N+Sg+Nom sound
 !!€ soinnissa sointi+N+Sg+Ine
 !!€ sointeina sointi+N+Pl+Ess
@@ -98004,6 +98020,7 @@ LEXICON N_SOINTI
 0:t        N_COMPOUND_IEN ;
 
 LEXICON N_VIENTI
+!!€gt-norm: Nouns 5 front t~n
 !!€ vienti vienti+N+Sg+Nom export
 !!€ viennissä vienti+N+Sg+Ine
 !!€ vienteinä vienti+N+Pl+Ess
@@ -98025,6 +98042,7 @@ LEXICON N_VIENTI
 
 LEXICON N_PUNK
 !! New loan words ending in consonant may be inflected as i stem words
+!!€gt-norm: Nouns 5 back no i
 !!€ punk punk+N+Sg+Nom punk
 !!€ punkeina punk+N+Pl+Ess
 !!€ punkien punk+N+Pl+Gen
@@ -98041,6 +98059,7 @@ LEXICON N_PUNK
 0       N_COMPOUND_IEN ;
 
 LEXICON N_ZEN
+!!€gt-norm: Nouns 5 front no i
 !!€ zen zen+N+Sg+Nom zen
 !!€ zeneinä zen+N+Pl+Ess
 !!€ zenien zen+N+Pl+Gen
@@ -98056,12 +98075,12 @@ LEXICON N_ZEN
 0:i       N_COMPOUND_N   ;
 0       N_COMPOUND_IEN ;
 
-!! The trisyllabic *-i* final stems work like their o, u, y. ö counterparts;
+!! The trisyllabic -i final stems work like their o, u, y. ö counterparts;
 !! they combine the e:i and e:0 variation to the additional allomorphs for
 !! plural partitive and genitive:
 
 LEXICON N_TANKKERI
-!!€gt-norm: Nouns 6
+!!€gt-norm: Nouns 6 back
 !!€ kanaali kanaali+N+Sg+Nom canal
 !!€ kanaaleja kanaali+N+Pl+Par
 !!€ kanaaleita kanaali+N+Pl+Par
@@ -98086,6 +98105,7 @@ LEXICON N_TANKKERI
 0:e       N_COMPOUND_ITTEN   ;
 
 LEXICON N_KEHVELI
+!!€gt-norm: Nouns 6 front
 !!€ kehveli kehveli+N+Sg+Nom hoodlum
 !!€ kehvelejä kehveli+N+Pl+Par
 !!€ kehveleitä kehveli+N+Pl+Par
@@ -98110,6 +98130,7 @@ LEXICON N_KEHVELI
 0:e       N_COMPOUND_ITTEN ;
 
 LEXICON N_STADION
+!!€gt-norm: Nouns 6 back no i
 !!€ stadion stadion+N+Sg+Nom stadium
 !!€ stadioneja stadion+N+Pl+Par
 !!€ stadioneita stadion+N+Pl+Par
@@ -98134,6 +98155,7 @@ LEXICON N_STADION
 0:e       N_COMPOUND_ITTEN   ;
 
 LEXICON N_BESSERWISSER
+!!€gt-norm: Nouns 6 front no i
 !!€ besserwisser besserwisser+N+Sg+Nom besserwisser
 !!€ besserwisserejä besserwisser+N+Pl+Par
 !!€ besserwissereitä besserwisser+N+Pl+Par
@@ -98162,7 +98184,7 @@ LEXICON N_BESSERWISSER
 !! singular stem, and i:0 for whole plural stems:
 
 LEXICON N_ONNI
-!!€gt-norm: Noun 7
+!!€gt-norm: Noun 7 back
 !!€ onni onni+N+Sg+Nom happiness
 !!€ onnena onni+N+Sg+Ess
 !!€ onnessa onni+N+Sg+Ine
@@ -98181,6 +98203,7 @@ LEXICON N_ONNI
 0       N_COMPOUND_IEN ;
 
 LEXICON N_KIVI
+!!€gt-norm: Noun 7 front
 !!€ helmi helmi+N+Sg+Nom pearl
 !!€ helmenä helmi+N+Sg+Ess
 !!€ helmessä helmi+N+Sg+Ine
@@ -98199,6 +98222,7 @@ LEXICON N_KIVI
 0       N_COMPOUND_IEN ;
 
 LEXICON N_HAPPI
+!!€gt-norm: Noun 7 back p~0
 !!€ happi happi+N+Sg+Nom oxygen
 !!€ hapessa happi+N+Sg+Ine
 !!€ happina happi+N+Pl+Ess
@@ -98219,6 +98243,7 @@ LEXICON N_HAPPI
 0:p        N_COMPOUND_IEN ;
 
 LEXICON N_TYPPI
+!!€gt-norm: Noun 7 front p~0
 !!€ typpi typpi+N+Sg+Nom nitrogen
 !!€ typessä typpi+N+Sg+Ine
 !!€ typpinä typpi+N+Pl+Ess
@@ -98239,6 +98264,7 @@ LEXICON N_TYPPI
 0:p        N_COMPOUND_IEN ;
 
 LEXICON N_NOKI
+!!€gt-norm: Noun 7 back k~0
 !!€ noki noki+N+Sg+Nom coal
 !!€ noessa noki+N+Sg+Ine
 !!€ nokina noki+N+Pl+Ess
@@ -98259,6 +98285,7 @@ LEXICON N_NOKI
 0:k        N_COMPOUND_IEN ;
 
 LEXICON N_KÄKI
+!!€gt-norm: Noun 7 front k~0
 !!€ käki käki+N+Sg+Nom cuccoo
 !!€ käessä käki+N+Sg+Ine
 !!€ käkinä käki+N+Pl+Ess
@@ -98279,6 +98306,7 @@ LEXICON N_KÄKI
 0:k        N_COMPOUND_IEN ;
 
 LEXICON N_KORPI
+!!€gt-norm: Noun 7 back p~v
 !!€ korpi korpi+N+Sg+Nom wilderness
 !!€ korvessa korpi+N+Sg+Ine
 !!€ korpina korpi+N+Pl+Ess
@@ -98299,6 +98327,7 @@ LEXICON N_KORPI
 0:p        N_COMPOUND_IEN ;
 
 LEXICON N_KILPI
+!!€gt-norm: Noun 7 front p~v
 !!€ kilpi kilpi+N+Sg+Nom shield
 !!€ kilvessä kilpi+N+Sg+Ine
 !!€ kilpinä kilpi+N+Pl+Ess
@@ -98319,6 +98348,7 @@ LEXICON N_KILPI
 0:p        N_COMPOUND_IEN ;
 
 LEXICON N_LAHTI
+!!€gt-norm: Noun 7 back t~d
 !!€ lahti lahti+N+Sg+Nom peninsula
 !!€ lahdessa lahti+N+Sg+Ine
 !!€ lahtina lahti+N+Pl+Ess
@@ -98339,6 +98369,7 @@ LEXICON N_LAHTI
 0:t        N_COMPOUND_IEN ;
 
 LEXICON N_LEHTI
+!!€gt-norm: Noun 7 front t~d
 !!€ lehti lehti+N+Sg+Nom leaf
 !!€ lehdessä lehti+N+Sg+Ine
 !!€ lehtinä lehti+N+Pl+Ess
@@ -98358,17 +98389,8 @@ LEXICON N_LEHTI
 0:de       N_COMPOUND_N   ;
 0:t        N_COMPOUND_IEN ;
 
-LEXICON N_LEHDET
-!!€ lehtinä lehti+N+Pl+Ess
-!!€ lehdistä lehti+N+Pl+Ela
-!!€ lehtien lehti+N+Pl+Gen
-0:t     N_FRONT_STRONG_PLURALS   ;
-0:d     N_FRONT_WEAK_PLURALS   ;
-0:t     N_FRONT_GENITIVE_IEN    ;
-0:t     N_FRONT_ILLATIVE_IIN   ;
-0:t        N_COMPOUND_IEN ;
-
 LEXICON N_ONKI
+!!€gt-norm: Noun 7 back k~g
 !!€ onki onki+N+Sg+Nom fishing rod
 !!€ ongessa onki+N+Sg+Ine
 !!€ onkina onki+N+Pl+Ess
@@ -98389,6 +98411,7 @@ LEXICON N_ONKI
 0:k        N_COMPOUND_IEN ;
 
 LEXICON N_HENKI
+!!€gt-norm: Noun 7 front k~g
 !!€ henki henki+N+Sg+Nom person
 !!€ hengessä  henki+N+Sg+Ine
 !!€ henkinä henki+N+Pl+Ess
@@ -98409,6 +98432,7 @@ LEXICON N_HENKI
 0:k        N_COMPOUND_IEN ;
 
 LEXICON N_SAMPI
+!!€gt-norm: Noun 7 back p~m
 !!€ lampi lampi+N+Sg+Nom pond
 !!€ lammessa lampi+N+Sg+Ine
 !!€ lampina lampi+N+Pl+Ess
@@ -98429,6 +98453,7 @@ LEXICON N_SAMPI
 0:p        N_COMPOUND_IEN ;
 
 LEXICON N_RIMPI
+!!€gt-norm: Noun 7 front p~m
 !!€ rimpi rimpi+N+Sg+Nom ???
 !!€ rimmessä rimpi+N+Sg+Ine
 !!€ rimpinä rimpi+N+Pl+Ess
@@ -98449,6 +98474,7 @@ LEXICON N_RIMPI
 0:p        N_COMPOUND_IEN ;
 
 LEXICON N_ARKI
+!!€gt-norm: Noun 7 back k~j
 !!€ arki arki+N+Sg+Nom weekday
 !!€ arjessa arki+N+Sg+Ine
 !!€ arkina arki+N+Pl+Ess
@@ -98469,6 +98495,7 @@ LEXICON N_ARKI
 0:k        N_COMPOUND_IEN ;
 
 LEXICON N_JÄRKI
+!!€gt-norm: Noun 7 front k~j
 !!€ järki järki+N+Sg+Nom sanity
 !!€ järjessä järki+N+Sg+Ine
 !!€ järkinä järki+N+Pl+Ess
@@ -98494,7 +98521,7 @@ LEXICON N_JÄRKI
 !! recognised from singular illative then:
 
 LEXICON N_NALLE
-!!€gt-norm: Noun 8
+!!€gt-norm: Noun 8 back
 !!€ nalle nalle+N+Sg+Nom teddy
 !!€ nallea nalle+N+Sg+Par
 !!€ nalleen nalle+N+Sg+Ill
@@ -98520,6 +98547,7 @@ LEXICON N_NALLE
 
 
 LEXICON N_NISSE
+!!€gt-norm: Noun 8 front
 !!€ nisse nisse+N+Sg+Nom bellhop
 !!€ nisseä nisse+N+Sg+Par
 !!€ nisseen nisse+N+Sg+Ill
@@ -98540,6 +98568,7 @@ LEXICON N_NISSE
 0    N_COMPOUND_JEN ;
 
 LEXICON N_NUKKE
+!!€gt-norm: Noun 8 k~0 back
 !!€ nukke nukke+N+Sg+Nom doll
 !!€ nukkea nukke+N+Sg+Par
 !!€ nukkeen nukke+N+Sg+Ill
@@ -98564,6 +98593,7 @@ LEXICON N_NUKKE
 
 
 LEXICON N_JEPPE
+!!€gt-norm: Noun 8 p~0 front
 !!€ jeppe jeppe+N+Sg+Nom chap
 !!€ jeppeä jeppe+N+Sg+Par
 !!€ jeppeen jeppe+N+Sg+Ill
@@ -98588,6 +98618,7 @@ LEXICON N_JEPPE
 
 
 LEXICON N_LOTTE
+!!€gt-norm: Noun 8 t~0 back
 !!€ Lotte Lotte+N+Prop+Sg+Nom Lotte
 !!€ Lottea Lotte+N+Prop+Sg+Par
 !!€ Lotteen Lotte+N+Prop+Sg+Ill
@@ -98639,6 +98670,7 @@ LEXICON N_KIRJA
 !! Notably, the basic a:o paradigm does not support many ä:ö cases.
 
 LEXICON N_POLITIIKKA
+!!€gt-norm: Noun 9 k~0
 !!€ politiikka politiikka+N+Sg+Nom politics
 !!€ politiikkaa politiikka+N+Sg+Par
 !!€ politiikkana politiikka+N+Sg+Ess
@@ -98663,6 +98695,7 @@ LEXICON N_POLITIIKKA
 0:ka   N_COMPOUND_IN  ;
 
 LEXICON N_TIPPA
+!!€gt-norm: Noun 9 p~0
 !!€ tippa tippa+N+Sg+Nom drop
 !!€ tippaa tippa+N+Sg+Par
 !!€ tippana tippa+N+Sg+Ess
@@ -98687,6 +98720,7 @@ LEXICON N_TIPPA
 0:pa   N_COMPOUND_IN  ;
 
 LEXICON N_MITTA
+!!€gt-norm: Noun 9 t~0
 !!€ mitta mitta+N+Sg+Nom measure
 !!€ mittaa mitta+N+Sg+Par
 !!€ mittana mitta+N+Sg+Ess
@@ -98711,6 +98745,7 @@ LEXICON N_MITTA
 0:ta   N_COMPOUND_IN  ;
 
 LEXICON N_VIKA
+!!€gt-norm: Noun 9 k~’~0
 !!€ vika vika+N+Sg+Nom error
 !!€ vikana vika+N+Sg+Ess
 !!€ viassa vika+N+Sg+Ine
@@ -98737,6 +98772,7 @@ LEXICON N_VIKA
 0:ka   N_COMPOUND_IN  ;
 
 LEXICON N_VAAKA
+!!€gt-norm: Noun 9 k~’
 !!€ vaaka vaaka+N+Sg+Nom scale
 !!€ vaakana vaaka+N+Sg+Ess
 !!€ vaa’assa vaaka+N+Sg+Ine
@@ -98761,6 +98797,7 @@ LEXICON N_VAAKA
 
 
 LEXICON N_SALPA
+!!€gt-norm: Noun 9 p~v
 !!€ salpa salpa+N+Sg+Nom bolt
 !!€ salpaa salpa+N+Sg+Par
 !!€ salpana salpa+N+Sg+Ess
@@ -98785,6 +98822,7 @@ LEXICON N_SALPA
 0:pa   N_COMPOUND_IN  ;
 
 LEXICON N_PATA
+!!€gt-norm: Noun 9 t~d
 !!€ pata pata+N+Sg+Nom kettle
 !!€ pataa pata+N+Sg+Par
 !!€ patana pata+N+Sg+Ess
@@ -98809,6 +98847,7 @@ LEXICON N_PATA
 0:ta   N_COMPOUND_IN  ;
 
 LEXICON N_LANKA
+!!€gt-norm: Noun 9 k~g
 !!€ lanka lanka+N+Sg+Nom yarn
 !!€ lankaa lanka+N+Sg+Par
 !!€ lankana lanka+N+Sg+Ess
@@ -98833,6 +98872,7 @@ LEXICON N_LANKA
 0:ka   N_COMPOUND_IN  ;
 
 LEXICON N_RAMPA
+!!€gt-norm: Noun 9 p~m
 !!€ rampa rampa+N+Sg+Nom cripple
 !!€ rampaa rampa+N+Sg+Par
 !!€ rampana rampa+N+Sg+Ess
@@ -98857,6 +98897,7 @@ LEXICON N_RAMPA
 0:pa   N_COMPOUND_IN  ;
 
 LEXICON N_VALTA
+!!€gt-norm: Noun 9 t~l
 !!€ valta valta+N+Sg+Nom power
 !!€ valtaa valta+N+Sg+Par
 !!€ valtana valta+N+Sg+Ess
@@ -98881,6 +98922,7 @@ LEXICON N_VALTA
 0:ta   N_COMPOUND_IN  ;
 
 LEXICON N_KUTSUNTA
+!!€gt-norm: Noun 9 t~n
 !!€ kutsunta kutsunta+N+Sg+Nom drafts
 !!€ kutsuntaa kutsunta+N+Sg+Par
 !!€ kutsuntana kutsunta+N+Sg+Ess
@@ -98905,6 +98947,7 @@ LEXICON N_KUTSUNTA
 0:ta   N_COMPOUND_IN  ;
 
 LEXICON N_KYSYNTÄ
+!!€gt-norm: Noun 9 t~n front
 !!€ kysyntä kysyntä+N+Sg+Nom demand
 !!€ kysyntää kysyntä+N+Sg+Par
 !!€ kysyntänä kysyntä+N+Sg+Ess
@@ -98929,6 +98972,7 @@ LEXICON N_KYSYNTÄ
 0:tä   N_COMPOUND_IN  ;
 
 LEXICON N_KERTA
+!!€gt-norm: Noun 9 t~r
 !!€ kerta kerta+N+Sg+Nom pcs
 !!€ kertaa kerta+N+Sg+Par
 !!€ kertana kerta+N+Sg+Ess
@@ -98952,12 +98996,12 @@ LEXICON N_KERTA
 0:to   N_COMPOUND_JEN ;
 0:ta   N_COMPOUND_IN  ;
 
-!! Some *-A* stems do not have the a:o variation, exhibiting a:0 variation for
-!! plural stems instead. This class notably contains all the *-jA* suffixed
+!! Some -A stems do not have the a:o variation, exhibiting a:0 variation for
+!! plural stems instead. This class notably contains all the -jA suffixed
 !! deverbal nouns.
 
 LEXICON N_SOITTAJA
-!!€gt-norm: Noun 10
+!!€gt-norm: Noun 10 back
 !!€ soittaja soittaja+N+Sg+Nom player
 !!€ soittajaa soittaja+N+Sg+Par
 !!€ soittajana soittaja+N+Sg+Ess
@@ -98980,6 +99024,7 @@ LEXICON N_SOITTAJA
 0:a   N_COMPOUND_IN  ;
 
 LEXICON N_HÖPÖTTÄJÄ
+!!€gt-norm: Noun 10 front
 !!€ hiihtäjä hiihtäjä+N+Sg+Nom skier
 !!€ hiihtäjää hiihtäjä+N+Sg+Par
 !!€ hiihtäjänä hiihtäjä+N+Sg+Ess
@@ -99002,6 +99047,7 @@ LEXICON N_HÖPÖTTÄJÄ
 0:ä   N_COMPOUND_IN  ;
 
 LEXICON N_LUOKKA
+!!€gt-norm: Noun 10 back k̃~0
 !!€ luokka luokka+N+Sg+Nom class
 !!€ luokkaa luokka+N+Sg+Par
 !!€ luokkana luokka+N+Sg+Ess
@@ -99026,6 +99072,7 @@ LEXICON N_LUOKKA
 0:ka   N_COMPOUND_IN  ;
 
 LEXICON N_HÖLKKÄ
+!!€gt-norm: Noun 10 front k̃~0
 !!€ hölkkä hölkkä+N+Sg+Nom jog
 !!€ hölkkää hölkkä+N+Sg+Par
 !!€ hölkkänä hölkkä+N+Sg+Ess
@@ -99050,6 +99097,7 @@ LEXICON N_HÖLKKÄ
 0:kä   N_COMPOUND_IN  ;
 
 LEXICON N_KUOPPA
+!!€gt-norm: Noun 10 back p~0
 !!€ kuoppa kuoppa+N+Sg+Nom pothole
 !!€ kuoppaa kuoppa+N+Sg+Par
 !!€ kuoppana kuoppa+N+Sg+Ess
@@ -99074,6 +99122,7 @@ LEXICON N_KUOPPA
 0:pa   N_COMPOUND_IN  ;
 
 LEXICON N_SEPPÄ
+!!€gt-norm: Noun 10 front p~0
 !!€ seppä seppä+N+Sg+Nom blacksmith
 !!€ seppää seppä+N+Sg+Par
 !!€ seppänä seppä+N+Sg+Ess
@@ -99098,6 +99147,7 @@ LEXICON N_SEPPÄ
 0:pä   N_COMPOUND_IN  ;
 
 LEXICON N_ROTTA
+!!€gt-norm: Noun 10 back t~0
 !!€ rotta rotta+N+Sg+Nom rat
 !!€ rottaa rotta+N+Sg+Par
 !!€ rottana rotta+N+Sg+Ess
@@ -99122,6 +99172,7 @@ LEXICON N_ROTTA
 0:ta   N_COMPOUND_IN  ;
 
 LEXICON N_KENTTÄ
+!!€gt-norm: Noun 10 front t~0
 !!€ kenttä kenttä+N+Sg+Nom field
 !!€ kenttää kenttä+N+Sg+Par
 !!€ kenttänä kenttä+N+Sg+Ess
@@ -99146,6 +99197,7 @@ LEXICON N_KENTTÄ
 0:tä   N_COMPOUND_IN  ;
 
 LEXICON N_VUOKA
+!!€gt-norm: Noun 10 back k~’~0
 !!€ vuoka vuoka+N+Sg+Nom baking tray
 !!€ vuokaa vuoka+N+Sg+Par
 !!€ vuokana vuoka+N+Sg+Ess
@@ -99175,6 +99227,7 @@ LEXICON N_VUOKA
 0:ka   N_COMPOUND_IN  ;
 
 LEXICON N_IKÄ
+!!€gt-norm: Noun 10 front k~’~0
 !!€ ikä ikä+N+Sg+Nom age
 !!€ ikää ikä+N+Sg+Par
 !!€ ikänä ikä+N+Sg+Ess
@@ -99201,6 +99254,7 @@ LEXICON N_IKÄ
 0:kä   N_COMPOUND_IN  ;
 
 LEXICON N_REIKÄ
+!!€gt-norm: Noun 10 back k~’~0
 !!€ reikä reikä+N+Sg+Nom hole
 !!€ reikää reikä+N+Sg+Par
 !!€ reikänä reikä+N+Sg+Ess
@@ -99226,6 +99280,7 @@ LEXICON N_REIKÄ
 0:kä   N_COMPOUND_IN  ;
 
 LEXICON N_LUPA
+!!€gt-norm: Noun 10 back p~v
 !!€ lupa lupa+N+Sg+Nom permit
 !!€ lupaa lupa+N+Sg+Par
 !!€ lupana lupa+N+Sg+Ess
@@ -99250,6 +99305,7 @@ LEXICON N_LUPA
 0:pa   N_COMPOUND_IN  ;
 
 LEXICON N_LEIPÄ
+!!€gt-norm: Noun 10 front p~v
 !!€ leipä leipä+N+Sg+Nom bread
 !!€ leipää leipä+N+Sg+Par
 !!€ leipänä leipä+N+Sg+Ess
@@ -99274,6 +99330,7 @@ LEXICON N_LEIPÄ
 0:pä   N_COMPOUND_IN  ;
 
 LEXICON N_SOTA
+!!€gt-norm: Noun 10 back t~d
 !!€ sota sota+N+Sg+Nom war
 !!€ sotaa sota+N+Sg+Par
 !!€ sotana sota+N+Sg+Ess
@@ -99298,6 +99355,7 @@ LEXICON N_SOTA
 0:ta   N_COMPOUND_IN  ;
 
 LEXICON N_PÖYTÄ
+!!€gt-norm: Noun 10 front t~d
 !!€ pöytä pöytä+N+Sg+Nom table
 !!€ pöytää pöytä+N+Sg+Par
 !!€ pöytänä pöytä+N+Sg+Ess
@@ -99322,6 +99380,7 @@ LEXICON N_PÖYTÄ
 0:tä   N_COMPOUND_IN  ;
 
 LEXICON N_HONKA
+!!€gt-norm: Noun 10 back k~g
 !!€ honka honka+N+Sg+Nom kind of a tree
 !!€ honkaa honka+N+Sg+Par
 !!€ honkana honka+N+Sg+Ess
@@ -99346,6 +99405,7 @@ LEXICON N_HONKA
 0:ka   N_COMPOUND_IN  ;
 
 LEXICON N_KENKÄ
+!!€gt-norm: Noun 10 frot k~g
 !!€ kenkä kenkä+N+Sg+Nom shoe
 !!€ kenkää kenkä+N+Sg+Par
 !!€ kenkänä kenkä+N+Sg+Ess
@@ -99370,6 +99430,7 @@ LEXICON N_KENKÄ
 
 
 LEXICON N_KOMPA
+!!€gt-norm: Noun 10 back p~m
 !!€ kompa kompa+N+Sg+Nom trick question
 !!€ kompaa kompa+N+Sg+Par
 !!€ kompana kompa+N+Sg+Ess
@@ -99396,6 +99457,7 @@ LEXICON N_KOMPA
 !! There is a gap for ä-final word with p:m variation
 
 LEXICON N_MULTA
+!!€gt-norm: Noun 10 back t~l
 !!€ multa multa+N+Sg+Nom dirt
 !!€ multaa multa+N+Sg+Par
 !!€ multana multa+N+Sg+Ess
@@ -99420,6 +99482,7 @@ LEXICON N_MULTA
 0:ta   N_COMPOUND_IN  ;
 
 LEXICON N_SYLTÄ
+!!€gt-norm: Noun 10 front t~l
 !!€ syltä syltä+N+Sg+Nom ???
 !!€ syltää syltä+N+Sg+Par
 !!€ syltänä syltä+N+Sg+Ess
@@ -99444,6 +99507,7 @@ LEXICON N_SYLTÄ
 0:tä   N_COMPOUND_IN  ;
 
 LEXICON N_KUNTA
+!!€gt-norm: Noun 10 back t~n
 !!€ kunta kunta+N+Sg+Nom municipality
 !!€ kuntaa kunta+N+Sg+Par
 !!€ kuntana kunta+N+Sg+Ess
@@ -99468,6 +99532,7 @@ LEXICON N_KUNTA
 0:ta   N_COMPOUND_IN  ;
 
 LEXICON N_EMÄNTÄ
+!!€gt-norm: Noun 10 front t~n
 !!€ emäntä emäntä+N+Sg+Nom hostess
 !!€ emäntää emäntä+N+Sg+Par
 !!€ emäntänä emäntä+N+Sg+Ess
@@ -99494,6 +99559,7 @@ LEXICON N_EMÄNTÄ
 !! There is a gap for k:j gradation in a-final stems.
 
 LEXICON N_SELKÄ
+!!€gt-norm: Noun 10 front k~j
 !!€ selkä selkä+N+Sg+Nom back
 !!€ selkää selkä+N+Sg+Par
 !!€ selkänä selkä+N+Sg+Ess
@@ -99520,7 +99586,7 @@ LEXICON N_SELKÄ
 !! Certain trisyllabic stems allow both variations of a:o and a:0 for plural
 !! forms.
 LEXICON N_PROBLEEMA
-!!€gt-norm: Noun 11
+!!€gt-norm: Noun 11 back
 !!€ probleema probleema+N+Sg+Nom problem
 !!€ probleemia probleema+N+Pl+Par
 !!€ probleemoita probleema+N+Pl+Par
@@ -99558,6 +99624,7 @@ LEXICON N_PROBLEEMA
 +Use/Rare:o     N_BACK_GENITIVE_JEN    ;
 
 LEXICON N_KÄPÄLÄ
+!!€gt-norm: Noun 11 front
 !!€ käpälä käpälä+N+Sg+Nom paw
 !!€ käpälää käpälä+N+Sg+Par
 !!€ käpälänä käpälä+N+Sg+Ess
@@ -99591,7 +99658,7 @@ LEXICON N_KÄPÄLÄ
 !! Some a stems with a:o variation have slightly different set of allomorphs
 
 LEXICON N_MAKKARA
-!!€gt-norm: Nouns 12
+!!€gt-norm: Nouns 12 back
 !!€ makkara makkara+N+Sg+Nom sausage
 !!€ makkaraa makkara+N+Sg+Par
 !!€ makkarana makkara+N+Sg+Ess
@@ -99614,6 +99681,7 @@ LEXICON N_MAKKARA
 0:a   N_COMPOUND_IN  ;
 
 LEXICON N_HÄKKYRÄ
+!!€gt-norm: Nouns 12 front
 !!€ häkkyrä häkkyrä+N+Sg+Nom thingie
 !!€ häkkyrää häkkyrä+N+Sg+Par
 !!€ häkkyränä häkkyrä+N+Sg+Ess
@@ -99642,6 +99710,7 @@ LEXICON N_HÄKKYRÄ
 !! There’s one more allomorph pattern.
 
 LEXICON N_SIIVILÄ
+!!€gt-norm: Nouns 12++ front
 !!€ mörinä mörinä+N+Sg+Nom murr
 !!€ mörinää mörinä+N+Sg+Par
 !!€ mörinänä mörinä+N+Sg+Ess
@@ -99668,7 +99737,7 @@ LEXICON N_SIIVILÄ
 !! same illative variation as o, u, y, and ö finals described earlier.
 
 LEXICON N_LUSIKKA
-!!€gt-norm: Nouns 14
+!!€gt-norm: Nouns 14 back
 !!€ lusikka lusikka+N+Sg+Nom spoon
 !!€ lusikkoina lusikka+N+Pl+Ess
 !!€ lusikoissa lusikka+N+Pl+Ine
@@ -99697,6 +99766,7 @@ LEXICON N_LUSIKKA
 0:ka   N_COMPOUND_IN  ;
 
 LEXICON N_KÄMMEKKÄ
+!!€gt-norm: Nouns 14 front
 !!€ kämmekkä kämmekkä+N+Sg+Nom handy
 !!€ kämmeköihin kämmekkä+N+Pl+Ill
 !!€ kämmekköihin kämmekkä+N+Pl+Ill
@@ -99722,6 +99792,7 @@ LEXICON N_KÄMMEKKÄ
 0:kä   N_COMPOUND_IN  ;
 
 LEXICON N_ULAPPA
+!!€gt-norm: Nouns 14 back p̃0
 !!€ ulappa ulappa+N+Sg+Nom horizon
 !!€ ulappoina ulappa+N+Pl+Ess
 !!€ ulapoissa ulappa+N+Pl+Ine
@@ -99750,6 +99821,7 @@ LEXICON N_ULAPPA
 0:pa   N_COMPOUND_IN  ;
 
 LEXICON N_POHATTA
+!!€gt-norm: Nouns 14 back t0
 !!€ pohatta pohatta+N+Sg+Nom shark
 !!€ pohattoina pohatta+N+Pl+Ess
 !!€ pohatoissa pohatta+N+Pl+Ine
@@ -99781,7 +99853,7 @@ LEXICON N_POHATTA
 !! variation and more allomorphs for plyral genitive or illative.
 
 LEXICON N_SOKEA
-!!€gt-norm: Nouns 15
+!!€gt-norm: Nouns 15 ea
 !!€ sokea sokea+N+Sg+Nom blind
 !!€ sokeana sokea+N+Sg+Ess
 !!€ sokeina sokea+N+Pl+Ess
@@ -99806,6 +99878,7 @@ LEXICON N_SOKEA
 0:a   N_COMPOUND_IN  ;
 
 LEXICON N_LIPEÄ
+!!€gt-norm: Nouns 15 eä
 !!€ lipeä lipeä+N+Sg+Nom sodium hydroxide
 !!€ lipeänä lipeä+N+Sg+Ess
 !!€ lipeinä lipeä+N+Pl+Ess
@@ -99862,10 +99935,10 @@ LEXICON N_VANHEMPI
 !! The long vowel stems have shortening variation in plural inflection, and
 !! special singular illatives, partitives. 
 
-!! Bisyllabic and longer stems with long vowels have *-seen* illative suffix.
+!! Bisyllabic and longer stems with long vowels have -seen illative suffix.
 !! This class has some of the old -UU derivations.
 LEXICON N_VAINAA
-!!€gt-norm: Nouns 17
+!!€gt-norm: Nouns 17 a
 !!€ vapaa vapaa+N+Sg+Nom free
 !!€ vapaata vapaa+N+Sg+Par
 !!€ vapaaseen vapaa+N+Sg+Ill
@@ -99885,6 +99958,7 @@ LEXICON N_VAINAA
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_TIENOO
+!!€gt-norm: Nouns 17 o
 !!€ tienoo tienoo+N+Sg+Nom neighborhood
 !!€ tienoota tienoo+N+Sg+Par
 !!€ tienooseen tienoo+N+Sg+Ill
@@ -99904,6 +99978,7 @@ LEXICON N_TIENOO
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_LEIKKUU
+!!€gt-norm: Nouns 17 u
 !!€ kerjuu kerjuu+N+Sg+Nom begging
 !!€ kerjuuta kerjuu+N+Sg+Par
 !!€ kerjuuseen kerjuu+N+Sg+Ill
@@ -99925,7 +100000,7 @@ LEXICON N_LEIKKUU
 !! Monosyllabic long vowel stems have illative suffixes of form -hVn.
 
 LEXICON N_MAA
-!!€gt-norm: Nouns 18
+!!€gt-norm: Nouns 18 a
 !!€ maa maa+N+Sg+Nom earth
 !!€ maata maa+N+Sg+Par
 !!€ maahan maa+N+Sg+Ill
@@ -99944,6 +100019,7 @@ LEXICON N_MAA
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_TEE
+!!€gt-norm: Nouns 18 e
 !!€ tee tee+N+Sg+Nom tea
 !!€ teetä tee+N+Sg+Par
 !!€ teehen tee+N+Sg+Ill
@@ -99962,6 +100038,7 @@ LEXICON N_TEE
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_HAI
+!!€gt-norm: Nouns 18 i back
 !!€ hai hai+N+Sg+Nom shark
 !!€ haita hai+N+Sg+Par
 !!€ haihin hai+N+Sg+Ill
@@ -99980,6 +100057,7 @@ LEXICON N_HAI
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_PII
+!!€gt-norm: Nouns 18 i
 !!€ pii pii+N+Sg+Nom silica
 !!€ piitä pii+N+Sg+Par
 !!€ piihin pii+N+Sg+Ill
@@ -99998,6 +100076,7 @@ LEXICON N_PII
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_OOKOO
+!!€gt-norm: Nouns 18 o
 !!€ ookoo ookoo+N+Sg+Nom OK
 !!€ ookoota ookoo+N+Sg+Par
 !!€ ookoohon ookoo+N+Sg+Ill
@@ -100016,6 +100095,7 @@ LEXICON N_OOKOO
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_PUU
+!!€gt-norm: Nouns 18 u
 !!€ puu puu+N+Sg+Nom tree
 !!€ puuta puu+N+Sg+Par
 !!€ puuhun puu+N+Sg+Ill
@@ -100034,6 +100114,7 @@ LEXICON N_PUU
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_PYY
+!!€gt-norm: Nouns 18 y
 !!€ pyy pyy+N+Sg+Nom kind of a bird
 !!€ pyytä pyy+N+Sg+Par
 !!€ pyyhyn pyy+N+Sg+Ill
@@ -100052,6 +100133,7 @@ LEXICON N_PYY
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_PÄÄ
+!!€gt-norm: Nouns 18 ä
 !!€ pää pää+N+Sg+Nom head
 !!€ päätä pää+N+Sg+Par
 !!€ päähän pää+N+Sg+Ill
@@ -100070,6 +100152,7 @@ LEXICON N_PÄÄ
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_KÖÖ
+!!€gt-norm: Nouns 18 ö
 !!€ köö köö+N+Sg+Nom pool/billiard stick
 !!€ köötä köö+N+Sg+Par
 !!€ kööhön köö+N+Sg+Ill
@@ -100094,7 +100177,7 @@ LEXICON N_KÖÖ
 !! N_ZOMBIE).
 
 LEXICON N_TIE
-!!€gt-norm: Nouns 19
+!!€gt-norm: Nouns 19 ie
 !!€ tie tie+N+Sg+Nom road
 !!€ tietä tie+N+Sg+Par
 !!€ teitä tie+N+Pl+Par
@@ -100113,6 +100196,7 @@ LEXICON N_TIE
 0:e   N_COMPOUND_ITTEN   ;
 
 LEXICON N_VUO
+!!€gt-norm: Nouns 19 uo
 !!€ suo suo+N+Sg+Nom swamp
 !!€ suota suo+N+Sg+Par
 !!€ soita suo+N+Pl+Par
@@ -100131,6 +100215,7 @@ LEXICON N_VUO
 0:o   N_COMPOUND_ITTEN   ;
 
 LEXICON N_YÖ
+!!€gt-norm: Nouns 19 yö
 !!€ työ työ+N+Sg+Nom work
 !!€ työtä työ+N+Sg+Par
 !!€ töitä työ+N+Pl+Par
@@ -100154,7 +100239,7 @@ LEXICON N_YÖ
 !! illatives. Sometimes rules for these classes of words are vague.
 
 LEXICON N_NUGAA
-!!€gt-norm: Nouns 20
+!!€gt-norm: Nouns 20 a
 !!€ nugaa nugaa+N+Sg+Nom nougat
 !!€ nugaata nugaa+N+Sg+Par
 !!€ nugaana nugaa+N+Sg+Ess
@@ -100183,6 +100268,7 @@ LEXICON N_NUGAA
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_PATEE
+!!€gt-norm: Nouns 20 e
 !!€ patee patee+N+Sg+Nom paté
 !!€ pateeta patee+N+Sg+Par
 !!€ pateena patee+N+Sg+Ess
@@ -100211,6 +100297,7 @@ LEXICON N_PATEE
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_BIDEE
+!!€gt-norm: Nouns 20 e front
 !!€ bidee bidee+N+Sg+Nom bidet
 !!€ bideetä bidee+N+Sg+Par
 !!€ bideenä bidee+N+Sg+Ess
@@ -100238,9 +100325,10 @@ LEXICON N_BIDEE
 0   N_COMPOUND_IDEN    ;
 0   N_COMPOUND_ITTEN   ;
 
-!! There’s a gap in *-ii* final loan stems.
+!! There’s a gap in -ii final loan stems.
 
 LEXICON N_TRIKOO
+!!€gt-norm: Nouns 20 o
 !!€ trikoo trikoo+N+Sg+Nom tights
 !!€ trikoota trikoo+N+Sg+Par
 !!€ trikoona trikoo+N+Sg+Ess
@@ -100268,6 +100356,7 @@ LEXICON N_TRIKOO
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_RAGUU
+!!€gt-norm: Nouns 20 u
 !!€ raguu raguu+N+Sg+Nom ragout
 !!€ raguuta raguu+N+Sg+Par
 !!€ raguuna raguu+N+Sg+Ess
@@ -100295,6 +100384,7 @@ LEXICON N_RAGUU
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_FONDYY
+!!€gt-norm: Nouns 20 y
 !!€ fondyy fondyy+N+Sg+Nom fondue
 !!€ fondyytä fondyy+N+Sg+Par
 !!€ fondyynä fondyy+N+Sg+Ess
@@ -100321,6 +100411,7 @@ LEXICON N_FONDYY
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_HYVINKÄÄ
+!!€gt-norm: Nouns 20 ä
 !!€ Hyvinkää Hyvinkää+N+Prop+Sg+Nom Hyvinkää
 !!€ Hyvinkäätä Hyvinkää+N+Prop+Sg+Par
 !!€ Hyvinkäähän Hyvinkää+N+Prop+Sg+Ill
@@ -100342,6 +100433,7 @@ LEXICON N_HYVINKÄÄ
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_MILJÖÖ
+!!€gt-norm: Nouns 20 ö
 !!€ miljöö miljöö+N+Sg+Nom milieu
 !!€ miljöötä miljöö+N+Sg+Par
 !!€ miljöönä miljöö+N+Sg+Ess
@@ -100374,7 +100466,7 @@ LEXICON N_MILJÖÖ
 !! work.
 
 LEXICON N_ROSÉ
-!!€gt-norm: Nouns 21
+!!€gt-norm: Nouns 21 e back
 !!€ rosé rosé+N+Sg+Nom rosé
 !!€ roséta rosé+N+Sg+Par
 !!€ roséhen rosé+N+Sg+Ill
@@ -100396,6 +100488,7 @@ LEXICON N_ROSÉ
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_BÉBÉ
+!!€gt-norm: Nouns 21 e front
 !!€ bébé bébé+N+Sg+Nom bébé
 !!€ bébétä bébé+N+Sg+Par
 !!€ bébéhen bébé+N+Sg+Ill
@@ -100423,6 +100516,7 @@ LEXICON N_BÉBÉ
 !! (to me, some of the forms on that normative guide are just bizarre).
 
 LEXICON N_BRASSERIE
+!!€gt-norm: Nouns 21 i back
 !!€ brasserie brasserie+N+Sg+Nom brasserie
 !!€ brasserieta brasserie+N+Sg+Par
 !!€ brasserietä brasserie+N+Sg+Par
@@ -100450,6 +100544,7 @@ LEXICON N_BRASSERIE
 
 
 LEXICON N_BRIE
+!!€gt-norm: Nouns 21 i front
 !!€ brie brie+N+Sg+Nom brie
 !!€ brietä brie+N+Sg+Par
 !!€ briehen brie+N+Sg+Ill
@@ -100466,6 +100561,7 @@ LEXICON N_BRIE
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_FONDUE
+!!€gt-norm: Nouns 21 ye
 !!€ fondue fondue+N+Sg+Nom fondue
 !!€ fondueta fondue+N+Sg+Par
 !!€ fonduetä fondue+N+Sg+Par
@@ -100498,6 +100594,7 @@ LEXICON N_FONDUE
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_JOCKEY
+!!€gt-norm: Nouns 21 yi
 !!€ jockey jockey+N+Sg+Nom jockey
 !!€ jockeyta jockey+N+Sg+Par
 !!€ jockeytä jockey+N+Sg+Par
@@ -100526,6 +100623,7 @@ LEXICON N_JOCKEY
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_COWBOY
+!!€gt-norm: Nouns 21 iy
 !!€ cowboy cowboy+N+Sg+Nom cowboy
 !!€ cowboytä cowboy+N+Sg+Par
 !!€ cowboyta cowboy+N+Sg+Par
@@ -100553,6 +100651,7 @@ LEXICON N_COWBOY
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_KUNGFU
+!!€gt-norm: Nouns 21 u back
 !!€ kungfu kungfu+N+Sg+Nom kung-fu
 !!€ kungfuta kungfu+N+Sg+Par
 0   N_BACK_NOMINATIVE    ;
@@ -100571,6 +100670,7 @@ LEXICON N_KUNGFU
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_GAY
+!!€gt-norm: Nouns 21 yi
 !!€ gay gay+N+Sg+Nom gay
 !!€ gayhin gay+N+Sg+Ill
 !!€ gayhyn gay+N+Sg+Ill
@@ -100598,6 +100698,7 @@ LEXICON N_GAY
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_KENTUCKY
+!!€gt-norm: Nouns 21 yi
 !!€ Kentucky Kentucky+N+Prop+Sg+Nom Kentucky
 0   N_BACK_NOMINATIVE    ;
 0   N_FRONT_NOMINATIVE    ;
@@ -100625,6 +100726,7 @@ LEXICON N_KENTUCKY
 
 
 LEXICON N_CHACHACHA
+!!€gt-norm: Nouns 21 a
 !!€ chachacha chachacha+N+Sg+Nom cha cha cha
 !!€ chachachata chachacha+N+Sg+Par
 0   N_BACK_NOMINATIVE    ;
@@ -100646,7 +100748,7 @@ LEXICON N_CHACHACHA
 !! rule is a bit shaky, but officially apostrophe is the only way.
 
 LEXICON N_NOUGAT
-!!€gt-norm: Nouns 22
+!!€gt-norm: Nouns 22 a
 !!€ nougat nougat+N+Sg+Nom nougat
 !!€ nougat’ta nougat+N+Sg+Par
 !!€ nougat’han nougat+N+Sg+Ill
@@ -100663,6 +100765,7 @@ LEXICON N_NOUGAT
 0:’   N_COMPOUND_IDEN    ;
 
 LEXICON N_PARFAIT
+!!€gt-norm: Nouns 22 e
 !!€ parfait parfait+N+Sg+Nom parfait
 !!€ parfait’ta parfait+N+Sg+Par
 !!€ parfait’hen parfait+N+Sg+Ill
@@ -100679,6 +100782,7 @@ LEXICON N_PARFAIT
 0:’   N_COMPOUND_IDEN    ;
 
 LEXICON N_BEIGNET
+!!€gt-norm: Nouns 22 e front
 !!€ beignet beignet+N+Sg+Nom beignet
 !!€ beignet’tä beignet+N+Sg+Par
 !!€ beignet’hen beignet+N+Sg+Ill
@@ -100695,6 +100799,7 @@ LEXICON N_BEIGNET
 0:’   N_COMPOUND_IDEN    ;
 
 LEXICON N_VERSAILLES
+!!€gt-norm: Nouns 22 i back
 !!€ Versailles Versailles+N+Prop+Sg+Nom Versailles
 !!€ Versailles’ta Versailles+N+Prop+Sg+Par
 !!€ Versailles’hin Versailles+N+Prop+Sg+Ill
@@ -100711,6 +100816,7 @@ LEXICON N_VERSAILLES
 0:’   N_COMPOUND_IDEN    ;
 
 LEXICON N_SERGEJ
+!!€gt-norm: Nouns 22 i front
 !!€ Sergej Sergej+N+Prop+Sg+Nom Sergej
 !!€ Sergej’tä Sergej+N+Prop+Sg+Par
 !!€ Sergej’hin Sergej+N+Prop+Sg+Ill
@@ -100727,6 +100833,7 @@ LEXICON N_SERGEJ
 0:’   N_COMPOUND_IDEN    ;
 
 LEXICON N_BORDEAUX
+!!€gt-norm: Nouns 22 o
 !!€ bordeaux bordeaux+N+Sg+Nom bordeaux
 !!€ bordeaux’ta bordeaux+N+Sg+Par
 !!€ bordeaux’hon bordeaux+N+Sg+Ill
@@ -100743,6 +100850,7 @@ LEXICON N_BORDEAUX
 0:’   N_COMPOUND_IDEN    ;
 
 LEXICON N_SHOW
+!!€gt-norm: Nouns 22 u
 !!€ show show+N+Sg+Nom show
 !!€ show’ta show+N+Sg+Par
 !!€ show’hun show+N+Sg+Ill
@@ -100759,6 +100867,7 @@ LEXICON N_SHOW
 0:’   N_COMPOUND_IDEN    ;
 
 LEXICON N_CAMUS
+!!€gt-norm: Nouns 22 y
 !!€ Camus Camus+N+Prop+Sg+Nom Camus
 !!€ Camus’tä Camus+N+Prop+Sg+Par
 !!€ Camus’hyn Camus+N+Prop+Sg+Ill
@@ -100775,6 +100884,7 @@ LEXICON N_CAMUS
 0:’   N_COMPOUND_IDEN    ;
 
 LEXICON N_MONSIEUR
+!!€gt-norm: Nouns 22 ö
 !!€ monsieur monsieur+N+Sg+Nom monsieur
 !!€ monsieur’tä monsieur+N+Sg+Par
 !!€ monsieur’hön monsieur+N+Sg+Ill
@@ -100791,8 +100901,8 @@ LEXICON N_MONSIEUR
 0:’   N_COMPOUND_IDEN    ;
 
 !! !I-final stems (old e stems)
-!! Some i-final stems have i:e variation in *singular* forms, as they are
-!! originated from *-e forms, only nominative has *-i*. They also have
+!! Some i-final stems have i:e variation in singular forms, as they are
+!! originated from -e forms, only nominative has -i. They also have
 !! some consonant stem forms that are archaic for other classes of words.
 !! The difference between these classes are in the selection of singular
 !! partitives and plural genitives (but the boundaries of norm are not
@@ -100818,6 +100928,7 @@ LEXICON N_TULI
 0   N_COMPOUND_IEN ;
 
 LEXICON N_VUOHI
+!!€gt-norm: Nouns 23++
 !!€ vuohi vuohi+N+Sg+Nom goat
 !!€ vuohessa vuohi+N+Sg+Ine
 !!€ vuohea vuohi+N+Sg+Par
@@ -100838,7 +100949,7 @@ LEXICON N_VUOHI
 0   N_COMPOUND_IEN ;
 
 LEXICON N_RUUHI
-!!€gt-norm: Nouns 24
+!!€gt-norm: Nouns 24 back
 !!€ ruuhi ruuhi+N+Sg+Nom boat
 !!€ ruuhessa ruuhi+N+Sg+Ine
 !!€ ruuhta ruuhi+N+Sg+Par
@@ -100858,6 +100969,7 @@ LEXICON N_RUUHI
 0   N_COMPOUND_IEN ;
 
 LEXICON N_HIIRI
+!!€gt-norm: Nouns 24 front
 !!€ hiiri hiiri+N+Sg+Nom mouse
 !!€ hiiressä hiiri+N+Sg+Ine
 !!€ hiirtä hiiri+N+Sg+Par
@@ -100881,7 +100993,7 @@ LEXICON N_HIIRI
 !! be retained in future versions.
 
 LEXICON N_KAARI
-!!€gt-norm: Nouns 26
+!!€gt-norm: Nouns 26 back
 !!€ kaari kaari+N+Sg+Nom arc
 0:i   N_BACK_NOMINATIVE    ;
 0:e N_BACK_SINGULARS    ;
@@ -100897,6 +101009,7 @@ LEXICON N_KAARI
 0   N_COMPOUND_IEN ;
 
 LEXICON N_MIELI
+!!€gt-norm: Nouns 24 front
 !!€ mieli mieli+N+Sg+Nom mind
 0:i   N_FRONT_NOMINATIVE    ;
 0:e N_FRONT_SINGULARS    ;
@@ -100911,10 +101024,10 @@ LEXICON N_MIELI
 0:e   N_COMPOUND_N   ;
 0   N_COMPOUND_IEN ;
 
-!! The *-mi* stems will rarely undego m:n variation for consonant stem forms.
+!! The -mi stems will rarely undego m:n variation for consonant stem forms.
 
 LEXICON N_TAIMI
-!!€gt-norm: Nouns 25
+!!€gt-norm: Nouns 25 back
 !!€ luomi luomi+N+Sg+Nom mole
 !!€ luomea luomi+N+Sg+Par
 !!€ luonta luomi+N+Sg+Par
@@ -100935,6 +101048,7 @@ LEXICON N_TAIMI
 0:m   N_COMPOUND_IEN ;
 
 LEXICON N_LIEMI
+!!€gt-norm: Nouns 25 front
 !!€ liemi liemi+N+Sg+Nom sauce
 !!€ liemeä liemi+N+Sg+Par
 !!€ lientä liemi+N+Sg+Par
@@ -100954,13 +101068,13 @@ LEXICON N_LIEMI
 0:me   N_COMPOUND_N   ;
 0:m   N_COMPOUND_IEN ;
 
-!! The *-si* words that originate from old *-te* stems have the consonant
+!! The -si words that originate from old -te stems have the consonant
 !! gradation patterns left in their stems. The si is only in nominative stem
 !! and this class mainly concerns stems that are old enough to have undergone
 !! ti>si transformation. 
 
 LEXICON N_KAUSI
-!!€gt-norm: Nouns 27
+!!€gt-norm: Nouns 27 back
 !!€ kausi kausi+N+Sg+Nom term
 !!€ kautena kausi+N+Sg+Ess
 !!€ kaudessa kausi+N+Sg+Ine
@@ -100982,6 +101096,7 @@ LEXICON N_KAUSI
 0:t   N_COMPOUND_TEN ;
 
 LEXICON N_KÖYSI
+!!€gt-norm: Nouns 27 front
 !!€ köysi köysi+N+Sg+Nom rope
 !!€ köytenä köysi+N+Sg+Ess
 !!€ köydessä köysi+N+Sg+Ine
@@ -101003,6 +101118,7 @@ LEXICON N_KÖYSI
 0:t   N_COMPOUND_TEN ;
 
 LEXICON N_PONSI
+!!€gt-norm: Nouns 27 back t~n
 !!€ ponsi ponsi+N+Sg+Nom straw
 !!€ pontena ponsi+N+Sg+Ess
 !!€ ponnessa ponsi+N+Sg+Ine
@@ -101024,6 +101140,7 @@ LEXICON N_PONSI
 0:t   N_COMPOUND_TEN ;
 
 LEXICON N_LÄNSI
+!!€gt-norm: Nouns 27 front t~n
 !!€ kynsi kynsi+N+Sg+Nom nail
 !!€ kyntenä kynsi+N+Sg+Ess
 !!€ kynnessä kynsi+N+Sg+Ine
@@ -101045,6 +101162,7 @@ LEXICON N_LÄNSI
 0:t   N_COMPOUND_TEN ;
 
 LEXICON N_VARSI
+!!€gt-norm: Nouns 27 back t~r
 !!€ varsi varsi+N+Sg+Nom stem
 !!€ vartena varsi+N+Sg+Ess
 !!€ varressa varsi+N+Sg+Ine
@@ -101066,6 +101184,7 @@ LEXICON N_VARSI
 0:t   N_COMPOUND_TEN ;
 
 LEXICON N_VIRSI
+!!€gt-norm: Nouns 27 front t~r
 !!€ hirsi hirsi+N+Sg+Nom timber
 !!€ hirtenä hirsi+N+Sg+Ess
 !!€ hirressä hirsi+N+Sg+Ine
@@ -101087,6 +101206,7 @@ LEXICON N_VIRSI
 0:t   N_COMPOUND_TEN ;
 
 LEXICON N_JÄLSI
+!!€gt-norm: Nouns 27 front t~l
 !!€ jälsi jälsi+N+Sg+Nom bark
 !!€ jältenä jälsi+N+Sg+Ess
 !!€ jällessä jälsi+N+Sg+Ine
@@ -101107,12 +101227,12 @@ LEXICON N_JÄLSI
 0:s   N_COMPOUND_IEN ;
 0:t   N_COMPOUND_TEN ;
 
-!! A few *-psi*, *-ksi*, *-tsi* stems have consonant simplification for
+!! A few -psi, -ksi, -tsi stems have consonant simplification for
 !! consonant stems. Other variation with these stems is the selection of
 !! plural genitive allomorphs.
 
 LEXICON N_LAPSI
-!!€gt-norm: Nouns 27
+!!€gt-norm: Nouns 27 psi
 !!€ lapsi lapsi+N+Sg+Nom child
 !!€ lapsena lapsi+N+Sg+Ess
 !!€ lasta lapsi+N+Sg+Par
@@ -101131,6 +101251,7 @@ LEXICON N_LAPSI
 0:s   N_COMPOUND_TEN ;
 
 LEXICON N_UKSI
+!!€gt-norm: Nouns 27 ksi
 !!€ uksi uksi+N+Sg+Nom door
 !!€ uksena uksi+N+Sg+Ess
 !!€ usta uksi+N+Sg+Par
@@ -101149,6 +101270,7 @@ LEXICON N_UKSI
 0:s   N_COMPOUND_TEN ;
 
 LEXICON N_PEITSI
+!!€gt-norm: Nouns 27 tsi back
 !!€ peitsi peitsi+N+Sg+Nom lance
 !!€ peistä peitsi+N+Sg+Par
 0:tsi   N_FRONT_NOMINATIVE    ;
@@ -101166,6 +101288,7 @@ LEXICON N_PEITSI
 0:s   N_COMPOUND_TEN ;
  
 LEXICON N_VEITSI
+!!€gt-norm: Nouns 27 tsi front
 !!€ veitsi veitsi+N+Sg+Nom knife
 0:tsi   N_FRONT_NOMINATIVE    ;
 0:tse N_FRONT_SINGULARS    ;
@@ -101181,9 +101304,10 @@ LEXICON N_VEITSI
 0:ts   N_COMPOUND_IEN ;
 0:s   N_COMPOUND_TEN ;
 
-!! The *-ksi* stem in *haaksi* includes k:h variation.
+!! The -ksi stem in haaksi includes k:h variation.
  
 LEXICON N_HAAKSI
+!!€gt-norm: Nouns 27 ksi
 !!€ haaksi haaksi+N+Sg+Nom boat
 !!€ haahtena haaksi+N+Sg+Ess
 !!€ haahdessa haaksi+N+Sg+Ine
@@ -101207,7 +101331,7 @@ LEXICON N_HAAKSI
 !! The singular forms of consonant final words have intervening e before
 !! suffixes. The basic consonant final words have no stem modifications.
 LEXICON N_AHVEN
-!!€gt-norm: Nouns 32
+!!€gt-norm: Nouns 32 back
 !!€ ahven ahven+N+Sg+Nom berch
 !!€ ahvenessa ahven+N+Sg+Ine
 !!€ ahvenina ahven+N+Pl+Ess
@@ -101226,6 +101350,7 @@ LEXICON N_AHVEN
 0   N_COMPOUND_TEN ;
 
 LEXICON N_JOUTSEN
+!!€gt-norm: Nouns 32 back
 !!€ joutsen joutsen+N+Sg+Nom swan
 0   N_BACK_NOMINATIVE    ;
 0:e N_BACK_SINGULARS    ;
@@ -101242,6 +101367,7 @@ LEXICON N_JOUTSEN
 0   N_COMPOUND_TEN ;
 
 LEXICON N_SIEMEN
+!!€gt-norm: Nouns 32 front
 !!€ siemen siemen+N+Sg+Nom seed
 !!€ siemenenä siemen+N+Sg+Ess
 0   N_FRONT_NOMINATIVE    ;
@@ -101259,6 +101385,7 @@ LEXICON N_SIEMEN
 0   N_COMPOUND_TEN ;
 
 LEXICON N_AJATAR
+!!€gt-norm: Nouns 32 tar
 !!€ ajatar ajatar+N+Sg+Nom mythological creature
 !!€ ajattarena ajatar+N+Sg+Ess
 0:ar   N_BACK_NOMINATIVE    ;
@@ -101276,6 +101403,7 @@ LEXICON N_AJATAR
 0:ar  N_COMPOUND_TEN ;
 
 LEXICON N_TYTÄR
+!!€gt-norm: Nouns 32 tär
 !!€ tytär tytär+N+Sg+Nom daughter
 !!€ tyttärenä tytär+N+Sg+Ess
 0:är   N_FRONT_NOMINATIVE    ;
@@ -101293,6 +101421,7 @@ LEXICON N_TYTÄR
 0:är  N_COMPOUND_TEN ;
 
 LEXICON N_IEN
+!!€gt-norm: Nouns 32 ien
 !!€ ien ien+N+Sg+Nom gum
 !!€ ikenenä ien+N+Sg+Ess
 0:en   N_FRONT_NOMINATIVE    ;
@@ -101312,7 +101441,7 @@ LEXICON N_IEN
 !! Some of the n-final stems have n:m variation.
 
 LEXICON N_PUHELIN
-!!€gt-norm: Nouns 33
+!!€gt-norm: Nouns 33 back
 !!€ puhelin puhelin+N+Sg+Nom
 !!€ puhelimena puhelin+N+Sg+Ess
 0:n   N_BACK_NOMINATIVE    ;
@@ -101330,6 +101459,7 @@ LEXICON N_PUHELIN
 0:n   N_COMPOUND_TEN ;
 
 LEXICON N_ELIN
+!!€gt-norm: Nouns 33 front
 !!€ elin elin+N+Sg+Nom
 !!€ elimenä elin+N+Sg+Ess
 0:n   N_FRONT_NOMINATIVE    ;
@@ -101347,6 +101477,7 @@ LEXICON N_ELIN
 0:n   N_COMPOUND_TEN ;
 
 LEXICON N_SUODATIN
+!!€gt-norm: Nouns 33 back tin
 !!€ suodatin suodatin+N+Sg+Nom filter
 !!€ suodattimena suodatin+N+Sg+Ess
 0:in   N_BACK_NOMINATIVE    ;
@@ -101364,6 +101495,7 @@ LEXICON N_SUODATIN
 0:in   N_COMPOUND_TEN ;
 
 LEXICON N_HEITIN
+!!€gt-norm: Nouns 33 front tin
 !!€ heitin heitin+N+Sg+Nom thrower
 !!€ heittimenä heitin+N+Sg+Ess
 0:in   N_FRONT_NOMINATIVE    ;
@@ -101381,6 +101513,7 @@ LEXICON N_HEITIN
 0:in   N_COMPOUND_TEN ;
 
 LEXICON N_PUIN
+!!€gt-norm: Nouns 33 back k~in
 !!€ puin puin+N+Sg+Nom cloth
 !!€ pukimena puin+N+Sg+Ess
 0:in   N_BACK_NOMINATIVE    ;
@@ -101398,6 +101531,7 @@ LEXICON N_PUIN
 0:in   N_COMPOUND_TEN ;
 
 LEXICON N_PYYHIN
+!!€gt-norm: Nouns 33 front k~in
 !!€ pyyhin pyyhin+N+Sg+Nom eraser
 !!€ pyyhkimenä pyyhin+N+Sg+Ess
 0:in   N_FRONT_NOMINATIVE    ;
@@ -101415,6 +101549,7 @@ LEXICON N_PYYHIN
 0:in   N_COMPOUND_TEN ;
 
 LEXICON N_KAAVIN
+!!€gt-norm: Nouns 33 back vin
 !!€ raavin raavin+N+Sg+Nom
 !!€ raapimena raavin+N+Sg+Ess
 0:vin   N_BACK_NOMINATIVE    ;
@@ -101432,6 +101567,7 @@ LEXICON N_KAAVIN
 0:vin   N_COMPOUND_TEN ;
 
 LEXICON N_SÄRVIN
+!!€gt-norm: Nouns 33 front vin
 !!€ särvin särvin+N+Sg+Nom foodstuff
 !!€ särpimenä särvin+N+Sg+Ess
 0:vin   N_FRONT_NOMINATIVE    ;
@@ -101449,6 +101585,7 @@ LEXICON N_SÄRVIN
 0:vin   N_COMPOUND_TEN ;
 
 LEXICON N_VAADIN
+!!€gt-norm: Nouns 33 back din
 !!€ vaadin vaadin+N+Sg+Nom female moose
 !!€ vaatimena vaadin+N+Sg+Ess
 0:din   N_BACK_NOMINATIVE    ;
@@ -101466,6 +101603,7 @@ LEXICON N_VAADIN
 0:din   N_COMPOUND_TEN ;
 
 LEXICON N_LAIDUN
+!!€gt-norm: Nouns 33 back dun
 !!€ laidun laidun+N+Sg+Nom meadows
 !!€ laitumena laidun+N+Sg+Ess
 0:dun   N_BACK_NOMINATIVE    ;
@@ -101483,6 +101621,7 @@ LEXICON N_LAIDUN
 0:dun   N_COMPOUND_TEN ;
 
 LEXICON N_SÄÄDIN
+!!€gt-norm: Nouns 33 fron din
 !!€ säädin säädin+N+Sg+Nom controller
 !!€ säätimenä säädin+N+Sg+Ess
 0:din   N_FRONT_NOMINATIVE    ;
@@ -101501,6 +101640,7 @@ LEXICON N_SÄÄDIN
 
 
 LEXICON N_ASKELLIN
+!!€gt-norm: Nouns 33 back lin
 !!€ askellin askellin+N+Sg+Nom stepper
 !!€ askeltimena askellin+N+Sg+Ess
 0:lin   N_BACK_NOMINATIVE    ;
@@ -101518,6 +101658,7 @@ LEXICON N_ASKELLIN
 0:lin   N_COMPOUND_TEN ;
 
 LEXICON N_SIVELLIN
+!!€gt-norm: Nouns 33 frontlin
 !!€ sivellin sivellin+N+Sg+Nom paint-brush
 !!€ siveltimenä sivellin+N+Sg+Ess
 0:lin   N_FRONT_NOMINATIVE    ;
@@ -101535,6 +101676,7 @@ LEXICON N_SIVELLIN
 0:lin   N_COMPOUND_TEN ;
 
 LEXICON N_KÄÄNNIN
+!!€gt-norm: Nouns 33 frpnt nin
 !!€ käännin käännin+N+Sg+Nom turner
 !!€ kääntimenä käännin+N+Sg+Ess
 0:nin   N_FRONT_NOMINATIVE    ;
@@ -101552,6 +101694,7 @@ LEXICON N_KÄÄNNIN
 0:nin   N_COMPOUND_TEN ;
 
 LEXICON N_MUUNNIN
+!!€gt-norm: Nouns 33 back nin
 !!€ muunnin muunnin+N+Sg+Nom adapter
 !!€ muuntimena muunnin+N+Sg+Ess
 0:nin   N_BACK_NOMINATIVE    ;
@@ -101569,6 +101712,7 @@ LEXICON N_MUUNNIN
 0:nin   N_COMPOUND_TEN ;
 
 LEXICON N_KIHARRIN
+!!€gt-norm: Nouns 33 back rin
 !!€ kiharrin kiharrin+N+Sg+Nom curler
 !!€ kihartimena kiharrin+N+Sg+Ess
 0:rin   N_BACK_NOMINATIVE    ;
@@ -101586,6 +101730,7 @@ LEXICON N_KIHARRIN
 0:rin   N_COMPOUND_TEN ;
 
 LEXICON N_KERROIN
+!!€gt-norm: Nouns 33 back roin
 !!€ kerroin kerroin+N+Sg+Nom multiplier
 !!€ kertoimena kerroin+N+Sg+Ess
 0:roin   N_BACK_NOMINATIVE    ;
@@ -101603,6 +101748,7 @@ LEXICON N_KERROIN
 0:roin   N_COMPOUND_TEN ;
 
 LEXICON N_KIERRIN
+!!€gt-norm: Nouns 33 fron rin
 !!€ kierrin kierrin+N+Sg+Nom turner
 !!€ kiertimenä kierrin+N+Sg+Ess
 0:rin   N_FRONT_NOMINATIVE    ;
@@ -101620,6 +101766,7 @@ LEXICON N_KIERRIN
 0:rin   N_COMPOUND_TEN ;
 
 LEXICON N_POLJIN
+!!€gt-norm: Nouns 33 back jin
 !!€ poljin poljin+N+Sg+Nom pedal
 !!€ polkimena poljin+N+Sg+Ess
 0:jin   N_BACK_NOMINATIVE    ;
@@ -101640,7 +101787,7 @@ LEXICON N_POLJIN
 !! The caritive suffix -ton inflects with A before the singular suffixes.
 
 LEXICON N_OSATON
-!!€gt-norm: Nouns 34
+!!€gt-norm: Nouns 34 ton
 !!€ viaton viaton+N+Sg+Nom innocent
 !!€ viattomana viaton+N+Sg+Ess
 0:on  N_BACK_NOMINATIVE    ;
@@ -101658,6 +101805,7 @@ LEXICON N_OSATON
 0:on  N_COMPOUND_TEN ;
 
 LEXICON N_NIMETÖN
+!!€gt-norm: Nouns 34 tän
 !!€ nimetön nimetön+N+Sg+Nom unnamed
 !!€ nimettömänä nimetön+N+Sg+Ess
 0:ön  N_FRONT_NOMINATIVE    ;
@@ -101678,7 +101826,7 @@ LEXICON N_NIMETÖN
 !! The lexicalised superlatives have special inflection pattern.
 
 LEXICON N_VANHIN
-!!€gt-norm: Nouns 35
+!!€gt-norm: Nouns 35 back
 !!€ kylänvanhin kylänvanhin+N+Sg+Nom elder
 !!€ kylänvanhimpana kylänvanhin+N+Sg+Ess
 0:n   N_BACK_NOMINATIVE    ;
@@ -101700,6 +101848,7 @@ LEXICON N_VANHIN
 0:mpa N_COMPOUND_IN  ;
 
 LEXICON N_LÄHIN
+!!€gt-norm: Nouns 35 front
 !!€ lähin lähin+N+Sg+Nom relative
 !!€ lähimpänä lähin+N+Sg+Ess
 0:n   N_FRONT_NOMINATIVE    ;
@@ -101720,7 +101869,7 @@ LEXICON N_LÄHIN
 0:n   N_COMPOUND_TEN    ;
 0:mpä N_COMPOUND_IN  ;
 
-!! *Vasen* inflects almost like superlative:
+!! Vasen inflects almost like superlative:
 
 LEXICON N_VASEN
 !!€gt-norm: Nouns 35
@@ -101749,7 +101898,7 @@ LEXICON N_VASEN
 !! Number of derivations end in -nen, that has special alternation pattern.
 
 LEXICON N_AAKKOSTAMINEN
-!!€gt-norm: Nouns 38
+!!€gt-norm: Nouns 38 back
 !!€ aakkostaminen aakkostaminen+N+Sg+Nom alphabetising
 !!€ aakkostamisena aakkostaminen+N+Sg+Ess
 0:nen     N_BACK_NOMINATIVE    ;
@@ -101767,6 +101916,7 @@ LEXICON N_AAKKOSTAMINEN
 0:s       N_COMPOUND_TEN ;
 
 LEXICON N_KYLKIÄINEN
+!!€gt-norm: Nouns 38 front
 !!€ kylkiäinen kylkiäinen+N+Sg+Nom add-on
 !!€ kylkiäisenä kylkiäinen+N+Sg+Ess
 0:nen     N_FRONT_NOMINATIVE    ;
@@ -101789,7 +101939,7 @@ LEXICON N_KYLKIÄINEN
 
 !! The basic variation is s:ks, with e before the singular suffixes.
 LEXICON N_VAKUUTUS
-!!€gt-norm: Nouns 39
+!!€gt-norm: Nouns 39 back
 !!€ vakuutus vakuutus+N+Sg+Nom insurance
 !!€ vakuutuksena vakuutus+N+Sg+Ess
 0:s   N_BACK_NOMINATIVE    ;
@@ -101807,6 +101957,7 @@ LEXICON N_VAKUUTUS
 0:s   N_COMPOUND_TEN  ;
 
 LEXICON N_RÄJÄYTYS
+!!€gt-norm: Nouns 39 front
 !!€ räjäytys räjäytys+N+Sg+Nom explosion
 !!€ räjäytyksenä räjäytys+N+Sg+Ess
 0:s   N_FRONT_NOMINATIVE    ;
@@ -101827,6 +101978,7 @@ LEXICON N_RÄJÄYTYS
 !! stems. Most notably, the UUs derivations are in this class.
 
 LEXICON N_AAKKOSELLISUUS
+!!€gt-norm: Nouns 40 back
 !!€ aakkosellisuus aakkosellisuus+N+Sg+Nom alphabetificationness
 !!€ aakkosellisuutena aakkosellisuus+N+Sg+Ess
 !!€ aakkosellisuudessa aakkosellisuus+N+Sg+Ine
@@ -101845,6 +101997,7 @@ LEXICON N_AAKKOSELLISUUS
 0:ks  N_COMPOUND_IEN ;
 
 LEXICON N_KÖYHYYS
+!!€gt-norm: Nouns 40 front
 !!€ köyhyys köyhyys+N+Sg+Nom poverty
 !!€ köyhyytenä köyhyys+N+Sg+Ess
 !!€ köyhyydessä köyhyys+N+Sg+Ine
@@ -101864,6 +102017,7 @@ LEXICON N_KÖYHYYS
 !! Some s final words have special lengthening inflection.
 
 LEXICON N_PATSAS
+!!€gt-norm: Nouns 41 as
 !!€ patsas patsas+N+Sg+Nom statue
 !!€ patsaana patsas+N+Sg+Ess
 !!€ patsaissa patsas+N+Pl+Ine
@@ -101883,6 +102037,7 @@ LEXICON N_PATSAS
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_RUUMIS
+!!€gt-norm: Nouns 41 is
 !!€ ruumis ruumis+N+Sg+Nom body
 !!€ ruumiina ruumis+N+Sg+Ess
 !!€ ruumiissa ruumis+N+Pl+Ine
@@ -101902,6 +102057,7 @@ LEXICON N_RUUMIS
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_ILMATIIVIS
+!!€gt-norm: Nouns 41 is front
 !!€ ilmatiivis ilmatiivis+N+Sg+Nom airtight
 !!€ ilmatiiviinä ilmatiivis+N+Sg+Ess
 0:s N_FRONT_NOMINATIVE    ;
@@ -101920,6 +102076,7 @@ LEXICON N_ILMATIIVIS
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_ARISTOTELES
+!!€gt-norm: Nouns 41 es back
 !!€ Aristoteles Aristoteles+N+Prop+Sg+Nom Aristotle
 !!€ Aristoteleena Aristoteles+N+Prop+Sg+Ess
 0:s   N_BACK_NOMINATIVE    ;
@@ -101938,6 +102095,7 @@ LEXICON N_ARISTOTELES
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_KIRVES
+!!€gt-norm: Nouns 41 es front
 !!€ kirves kirves+N+Sg+Nom ax
 !!€ kirveenä kirves+N+Sg+Ess
 0:s   N_FRONT_NOMINATIVE    ;
@@ -101956,6 +102114,7 @@ LEXICON N_KIRVES
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_ÄYRÄS
+!!€gt-norm: Nouns 41 äs
 !!€ äyräs äyräs+N+Sg+Nom wavetop
 !!€ äyräänä äyräs+N+Sg+Ess
 0:s   N_FRONT_NOMINATIVE    ;
@@ -101974,6 +102133,7 @@ LEXICON N_ÄYRÄS
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_ASUKAS
+!!€gt-norm: Nouns 41 kas
 !!€ asukas asukas+N+Sg+Nom inhabitant
 !!€ asukkaana asukas+N+Sg+Ess
 0:as   N_BACK_NOMINATIVE    ;
@@ -101992,6 +102152,7 @@ LEXICON N_ASUKAS
 0:ka   N_COMPOUND_ITTEN   ;
 
 LEXICON N_KÄRSÄKÄS
+!!€gt-norm: Nouns 41 käs
 !!€ kärsäkäs kärsäkäs+N+Sg+Nom elephant
 !!€ kärsäkkäänä kärsäkäs+N+Sg+Ess
 0:äs   N_FRONT_NOMINATIVE    ;
@@ -102010,6 +102171,7 @@ LEXICON N_KÄRSÄKÄS
 0:kä   N_COMPOUND_ITTEN   ;
 
 LEXICON N_SAAPAS
+!!€gt-norm: Nouns 41 pas
 !!€ saapas saapas+N+Sg+Nom boot
 !!€ saappaana saapas+N+Sg+Ess
 0:as   N_BACK_NOMINATIVE    ;
@@ -102028,6 +102190,7 @@ LEXICON N_SAAPAS
 0:pa   N_COMPOUND_ITTEN   ;
 
 LEXICON N_RYPÄS
+!!€gt-norm: Nouns 41 päs
 !!€ rypäs rypäs+N+Sg+Nom cluster
 !!€ ryppäänä rypäs+N+Sg+Ess
 0:äs   N_FRONT_NOMINATIVE    ;
@@ -102046,6 +102209,7 @@ LEXICON N_RYPÄS
 0:pä   N_COMPOUND_ITTEN   ;
 
 LEXICON N_RATAS
+!!€gt-norm: Nouns 41 tas
 !!€ ratas ratas+N+Sg+Nom cog
 !!€ rattaana ratas+N+Sg+Ess
 0:as   N_BACK_NOMINATIVE    ;
@@ -102064,6 +102228,7 @@ LEXICON N_RATAS
 0:ta   N_COMPOUND_ITTEN   ;
 
 LEXICON N_MÄTÄS
+!!€gt-norm: Nouns 41 täs
 !!€ mätäs mätäs+N+Sg+Nom mound
 !!€ mättäänä mätäs+N+Sg+Ess
 0:äs   N_FRONT_NOMINATIVE    ;
@@ -102082,6 +102247,7 @@ LEXICON N_MÄTÄS
 0:tä   N_COMPOUND_ITTEN   ;
 
 LEXICON N_KELTIS
+!!€gt-norm: Nouns 41 tis
 !!€ amerikankeltis amerikankeltis+N+Sg+Nom kind of a bird
 !!€ amerikankelttiinä amerikankeltis+N+Sg+Ess
 0:is   N_FRONT_NOMINATIVE    ;
@@ -102100,6 +102266,7 @@ LEXICON N_KELTIS
 0:ti   N_COMPOUND_ITTEN   ;
 
 LEXICON N_IES
+!!€gt-norm: Nouns 41 ies
 !!€ ies ies+N+Sg+Nom ???
 !!€ ikeenä ies+N+Sg+Ess
 0:es   N_FRONT_NOMINATIVE    ;
@@ -102118,6 +102285,7 @@ LEXICON N_IES
 0:ke   N_COMPOUND_ITTEN   ;
 
 LEXICON N_VARAS
+!!€gt-norm: Nouns 41 as
 !!€ varas varas+N+Sg+Nom thief
 !!€ varkaana varas+N+Sg+Ess
 0:as   N_BACK_NOMINATIVE    ;
@@ -102136,6 +102304,7 @@ LEXICON N_VARAS
 0:ka   N_COMPOUND_ITTEN   ;
 
 LEXICON N_RUIS
+!!€gt-norm: Nouns 41 is
 !!€ ruis ruis+N+Sg+Nom rye
 !!€ rukiina ruis+N+Sg+Ess
 0:is   N_BACK_NOMINATIVE    ;
@@ -102154,6 +102323,7 @@ LEXICON N_RUIS
 0:ki   N_COMPOUND_ITTEN   ;
 
 LEXICON N_VARVAS
+!!€gt-norm: Nouns 41 vas
 !!€ varvas varvas+N+Sg+Nom toe
 !!€ varpaana varvas+N+Sg+Ess
 0:vas   N_BACK_NOMINATIVE    ;
@@ -102172,6 +102342,7 @@ LEXICON N_VARVAS
 0:pa   N_COMPOUND_ITTEN   ;
 
 LEXICON N_SEIVÄS
+!!€gt-norm: Nouns 41 väs
 !!€ seiväs seiväs+N+Sg+Nom pole
 !!€ seipäänä seiväs+N+Sg+Ess
 0:väs   N_FRONT_NOMINATIVE    ;
@@ -102190,6 +102361,7 @@ LEXICON N_SEIVÄS
 0:pä   N_COMPOUND_ITTEN   ;
 
 LEXICON N_TEHDAS
+!!€gt-norm: Nouns 41 das
 !!€ tehdas tehdas+N+Sg+Nom factory
 !!€ tehtaana tehdas+N+Sg+Ess
 0:das   N_BACK_NOMINATIVE    ;
@@ -102208,6 +102380,7 @@ LEXICON N_TEHDAS
 0:ta   N_COMPOUND_ITTEN   ;
 
 LEXICON N_KANGAS
+!!€gt-norm: Nouns 41 gas
 !!€ kangas kangas+N+Sg+Nom fabric
 !!€ kankaana kangas+N+Sg+Ess
 0:gas   N_BACK_NOMINATIVE    ;
@@ -102226,6 +102399,7 @@ LEXICON N_KANGAS
 0:ka   N_COMPOUND_ITTEN   ;
 
 LEXICON N_KÖNGÄS
+!!€gt-norm: Nouns 41 gäs
 !!€ köngäs köngäs+N+Sg+Nom moor
 !!€ könkäänä köngäs+N+Sg+Ess
 0:gäs   N_FRONT_NOMINATIVE    ;
@@ -102244,6 +102418,7 @@ LEXICON N_KÖNGÄS
 0:kä   N_COMPOUND_ITTEN   ;
 
 LEXICON N_HAMMAS
+!!€gt-norm: Nouns 41 mas
 !!€ hammas hammas+N+Sg+Nom tooth
 !!€ hampaana hammas+N+Sg+Ess
 0:mas   N_BACK_NOMINATIVE    ;
@@ -102262,6 +102437,7 @@ LEXICON N_HAMMAS
 0:pa   N_COMPOUND_ITTEN   ;
 
 LEXICON N_ALLAS
+!!€gt-norm: Nouns 41 las
 !!€ allas allas+N+Sg+Nom pool
 !!€ altaana allas+N+Sg+Ess
 0:las   N_BACK_NOMINATIVE    ;
@@ -102280,6 +102456,7 @@ LEXICON N_ALLAS
 0:ta   N_COMPOUND_ITTEN   ;
 
 LEXICON N_KINNAS
+!!€gt-norm: Nouns 41 nas
 !!€ kinnas kinnas+N+Sg+Nom mitten
 !!€ kintaana kinnas+N+Sg+Ess
 0:nas   N_BACK_NOMINATIVE    ;
@@ -102298,6 +102475,7 @@ LEXICON N_KINNAS
 0:ta   N_COMPOUND_ITTEN   ;
 
 LEXICON N_RYNNÄS
+!!€gt-norm: Nouns 41 näs
 !!€ rynnäs rynnäs+N+Sg+Nom breast
 !!€ ryntäänä rynnäs+N+Sg+Ess
 0:näs   N_FRONT_NOMINATIVE    ;
@@ -102316,6 +102494,7 @@ LEXICON N_RYNNÄS
 0:tä   N_COMPOUND_ITTEN   ;
 
 LEXICON N_PORRAS
+!!€gt-norm: Nouns 41 ras
 !!€ porras porras+N+Sg+Nom step
 !!€ portaana porras+N+Sg+Ess
 0:ras   N_BACK_NOMINATIVE    ;
@@ -102333,9 +102512,10 @@ LEXICON N_PORRAS
 0:ta   N_COMPOUND_IDEN    ;
 0:ta   N_COMPOUND_ITTEN   ;
 
-!! The word *mies* has special s:h variation pattern.
+!! The word mies has special s:h variation pattern.
 
 LEXICON N_MIES
+!!€gt-norm: Nouns 42
 !!€ mies mies+N+Sg+Nom man
 !!€ miehenä mies+N+Sg+Ess
 0:s   N_FRONT_NOMINATIVE    ;
@@ -102359,7 +102539,7 @@ LEXICON N_MIES
 
 
 LEXICON N_OLUT
-!!€gt-norm: Nouns 43
+!!€gt-norm: Nouns 43 back
 !!€ olut olut+N+Sg+Nom beer
 !!€ oluena olut+N+Sg+Ess
 !!€ oluen olut+N+Sg+Gen
@@ -102380,6 +102560,7 @@ LEXICON N_OLUT
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_NEITSYT
+!!€gt-norm: Nouns 43 front
 !!€ neitsyt neitsyt+N+Sg+Nom virgin
 !!€ neitsyeen neitsyt+N+Sg+Ill
 0:t   N_FRONT_NOMINATIVE    ;
@@ -102398,6 +102579,7 @@ LEXICON N_NEITSYT
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_IMMYT
+!!€gt-norm: Nouns 43 myt
 !!€ immyt immyt+N+Sg+Nom old wife
 !!€ impyenä immyt+N+Sg+Ess
 !!€ impyeen immyt+N+Sg+Ill
@@ -102440,7 +102622,7 @@ LEXICON N_KEVÄT
 !! Nominalised nut participles have special inflection just as well.
 
 LEXICON N_AIVOKUOLLUT
-!!€gt-norm: Nouns 47
+!!€gt-norm: Nouns 47 back
 !!€ aivokuollut aivokuollut+N+Sg+Nom braindead
 !!€ aivokuolleena aivokuollut+N+Sg+Ess
 0:ut  N_BACK_NOMINATIVE    ;
@@ -102459,6 +102641,7 @@ LEXICON N_AIVOKUOLLUT
 0:e   N_COMPOUND_ITTEN   ;
 
 LEXICON N_SIVISTYNYT
+!!€gt-norm: Nouns 47 front
 !!€ sivistynyt sivistynyt+N+Sg+Nom civilised
 !!€ sivistyneenä sivistynyt+N+Sg+Ess
 0:yt  N_FRONT_NOMINATIVE    ;
@@ -102482,7 +102665,7 @@ LEXICON N_SIVISTYNYT
 !! includes all deverbal -e suffixed nouns.
 
 LEXICON N_ASTE
-!!€gt-norm: Nouns 48
+!!€gt-norm: Nouns 48 back
 !!€ aste aste+N+Sg+Nom grade
 !!€ asteena aste+N+Sg+Ess
 0   N_BACK_NOMINATIVE    ;
@@ -102501,6 +102684,7 @@ LEXICON N_ASTE
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_PISTE
+!!€gt-norm: Nouns 48 Front
 !!€ piste piste+N+Sg+Nom full stop
 !!€ pisteenä piste+N+Sg+Ess
 0   N_FRONT_NOMINATIVE    ;
@@ -102519,6 +102703,7 @@ LEXICON N_PISTE
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_KASTIKE
+!!€gt-norm: Nouns 48 back ke
 !!€ kastike kastike+N+Sg+Nom sauce
 !!€ kastikkeena kastike+N+Sg+Ess
 0:e       N_BACK_NOMINATIVE    ;
@@ -102537,6 +102722,7 @@ LEXICON N_KASTIKE
 0:ke  N_COMPOUND_ITTEN   ;
 
 LEXICON N_LÄÄKE
+!!€gt-norm: Nouns 48 front ke
 !!€ lääke lääke+N+Sg+Nom medicine
 !!€ lääkkeenä lääke+N+Sg+Ess
 0:e       N_FRONT_NOMINATIVE    ;
@@ -102555,6 +102741,7 @@ LEXICON N_LÄÄKE
 0:ke      N_COMPOUND_ITTEN   ;
 
 LEXICON N_APE
+!!€gt-norm: Nouns 48 back pe
 !!€ ape ape+N+Sg+Nom grub
 !!€ appeena ape+N+Sg+Ess
 0:e       N_BACK_NOMINATIVE    ;
@@ -102573,6 +102760,7 @@ LEXICON N_APE
 0:pe  N_COMPOUND_ITTEN   ;
 
 LEXICON N_RIPE
+!!€gt-norm: Nouns 48 front pe
 !!€ ripe ripe+N+Sg+Nom leftovers
 !!€ rippeenä ripe+N+Sg+Ess
 0:e       N_FRONT_NOMINATIVE    ;
@@ -102591,6 +102779,7 @@ LEXICON N_RIPE
 0:pe      N_COMPOUND_ITTEN   ;
 
 LEXICON N_LAITE
+!!€gt-norm: Nouns 48 back te
 !!€ laite laite+N+Sg+Nom machine
 !!€ laitteena laite+N+Sg+Ess
 0:e       N_BACK_NOMINATIVE    ;
@@ -102609,6 +102798,7 @@ LEXICON N_LAITE
 0:te  N_COMPOUND_ITTEN   ;
 
 LEXICON N_KÄSITE
+!!€gt-norm: Nouns 48 front te
 !!€ käsite käsite+N+Sg+Nom concept
 !!€ käsitteenä käsite+N+Sg+Ess
 0:e       N_FRONT_NOMINATIVE    ;
@@ -102627,6 +102817,7 @@ LEXICON N_KÄSITE
 0:te      N_COMPOUND_ITTEN   ;
 
 LEXICON N_KOE
+!!€gt-norm: Nouns 48 back 0k
 !!€ koe koe+N+Sg+Nom test
 !!€ kokeena koe+N+Sg+Ess
 0:e       N_BACK_NOMINATIVE    ;
@@ -102645,6 +102836,7 @@ LEXICON N_KOE
 0:ke  N_COMPOUND_ITTEN   ;
 
 LEXICON N_PYYHE
+!!€gt-norm: Nouns 48 front 0k
 !!€ pyyhe pyyhe+N+Sg+Nom towel
 !!€ pyyhkeenä pyyhe+N+Sg+Ess
 0:e       N_FRONT_NOMINATIVE    ;
@@ -102663,6 +102855,7 @@ LEXICON N_PYYHE
 0:ke      N_COMPOUND_ITTEN   ;
 
 LEXICON N_TARVE
+!!€gt-norm: Nouns 48 back ve
 !!€ tarve tarve+N+Sg+Nom need
 !!€ tarpeena tarve+N+Sg+Ess
 0:ve       N_BACK_NOMINATIVE    ;
@@ -102681,6 +102874,7 @@ LEXICON N_TARVE
 0:pe  N_COMPOUND_ITTEN   ;
 
 LEXICON N_VIIVE
+!!€gt-norm: Nouns 48 front ve
 !!€ lieve lieve+N+Sg+Nom tux tail
 !!€ liepeenä lieve+N+Sg+Ess
 0:ve       N_FRONT_NOMINATIVE    ;
@@ -102699,6 +102893,7 @@ LEXICON N_VIIVE
 0:pe      N_COMPOUND_ITTEN   ;
 
 LEXICON N_KIDE
+!!€gt-norm: Nouns 48 front de
 !!€ kide kide+N+Sg+Nom crystal
 !!€ kiteenä kide+N+Sg+Ess
 0:de       N_FRONT_NOMINATIVE    ;
@@ -102717,6 +102912,7 @@ LEXICON N_KIDE
 0:te      N_COMPOUND_ITTEN   ;
 
 LEXICON N_JOHDE
+!!€gt-norm: Nouns 48 back de
 !!€ johde johde+N+Sg+Nom electrode
 !!€ johteena johde+N+Sg+Ess
 0:de       N_BACK_NOMINATIVE    ;
@@ -102735,6 +102931,7 @@ LEXICON N_JOHDE
 0:te  N_COMPOUND_ITTEN   ;
 
 LEXICON N_LUMME
+!!€gt-norm: Nouns 48 back me
 !!€ lumme lumme+N+Sg+Nom pond leaf
 !!€ lumpeena lumme+N+Sg+Ess
 0:me       N_BACK_NOMINATIVE    ;
@@ -102753,6 +102950,7 @@ LEXICON N_LUMME
 0:pe  N_COMPOUND_ITTEN   ;
 
 LEXICON N_MIELLE
+!!€gt-norm: Nouns 48 front le
 !!€ mielle mielle+N+Sg+Nom thought
 !!€ mielteenä mielle+N+Sg+Ess
 0:le       N_FRONT_NOMINATIVE    ;
@@ -102771,6 +102969,7 @@ LEXICON N_MIELLE
 0:te      N_COMPOUND_ITTEN   ;
 
 LEXICON N_VUOLLE
+!!€gt-norm: Nouns 48 back le
 !!€ vuolle vuolle+N+Sg+Nom woodcut
 !!€ vuolteena vuolle+N+Sg+Ess
 0:le       N_BACK_NOMINATIVE    ;
@@ -102789,6 +102988,7 @@ LEXICON N_VUOLLE
 0:te  N_COMPOUND_ITTEN   ;
 
 LEXICON N_RAKENNE
+!!€gt-norm: Nouns 48 back ne
 !!€ rakenne rakenne+N+Sg+Nom construct
 !!€ rakenteena rakenne+N+Sg+Ess
 0:ne       N_BACK_NOMINATIVE    ;
@@ -102807,6 +103007,7 @@ LEXICON N_RAKENNE
 0:te  N_COMPOUND_ITTEN   ;
 
 LEXICON N_KIINNE
+!!€gt-norm: Nouns 48 front ne
 !!€ kiinne kiinne+N+Sg+Nom hairspray
 !!€ kiinteenä kiinne+N+Sg+Ess
 0:ne       N_FRONT_NOMINATIVE    ;
@@ -102825,6 +103026,7 @@ LEXICON N_KIINNE
 0:te      N_COMPOUND_ITTEN   ;
 
 LEXICON N_AARRE
+!!€gt-norm: Nouns 48 back re
 !!€ aarre aarre+N+Sg+Nom treasure
 !!€ aarteena aarre+N+Sg+Ess
 0:re       N_BACK_NOMINATIVE    ;
@@ -102843,6 +103045,7 @@ LEXICON N_AARRE
 0:te  N_COMPOUND_ITTEN   ;
 
 LEXICON N_KIERRE
+!!€gt-norm: Nouns 48 fron re
 !!€ kierre kierre+N+Sg+Nom spin
 !!€ kierteenä kierre+N+Sg+Ess
 0:re       N_FRONT_NOMINATIVE    ;
@@ -102861,6 +103064,7 @@ LEXICON N_KIERRE
 0:te      N_COMPOUND_ITTEN   ;
 
 LEXICON N_HYLJE
+!!€gt-norm: Nouns 48 front je
 !!€ hylje hylje+N+Sg+Nom
 !!€ hylkeenä hylje+N+Sg+Ess
 0:je       N_FRONT_NOMINATIVE    ;
@@ -102879,6 +103083,7 @@ LEXICON N_HYLJE
 0:ke      N_COMPOUND_ITTEN   ;
 
 LEXICON N_POHJE
+!!€gt-norm: Nouns 48 back je
 !!€ pohje pohje+N+Sg+Nom thigh
 !!€ pohkeena pohje+N+Sg+Ess
 0:je       N_BACK_NOMINATIVE    ;
@@ -102904,7 +103109,7 @@ LEXICON N_POHJE
 !! is consonant final, and may have inverse gradation.
 
 LEXICON N_ASKAR
-!!€gt-norm: Nouns 49
+!!€gt-norm: Nouns 49 ar
 !!€ askar askar+N+Sg+Nom # chore
 !!€ askare askar+N+Sg+Nom
 !!€ askarena askar+N+Sg+Ess
@@ -102937,6 +103142,7 @@ LEXICON N_ASKAR
 0:e      N_COMPOUND_ITTEN   ;
 
 LEXICON N_KYYNEL
+!!€gt-norm: Nouns 49 el
 !!€ kyynel kyynel+N+Sg+Nom # tear
 !!€ kyynele kyynel+N+Sg+Nom
 !!€ kyynelenä kyynel+N+Sg+Ess
@@ -102969,6 +103175,7 @@ LEXICON N_KYYNEL
 0:e      N_COMPOUND_ITTEN   ;
 
 LEXICON N_SÄEN
+!!€gt-norm: Nouns 49 en
 !!€ säen säen+N+Sg+Nom # spark
 !!€ säkene säen+N+Sg+Nom
 !!€ säkenenä säen+N+Sg+Ess
@@ -103001,6 +103208,7 @@ LEXICON N_SÄEN
 0:kene      N_COMPOUND_ITTEN   ;
 
 LEXICON N_TAIVAL
+!!€gt-norm: Nouns 49 val
 !!€ taival taival+N+Sg+Nom # hike
 !!€ taipale taival+N+Sg+Nom
 !!€ taipalena taival+N+Sg+Ess
@@ -103034,6 +103242,7 @@ LEXICON N_TAIVAL
 
 
 LEXICON N_UDAR
+!!€gt-norm: Nouns 49 dar
 !!€ udar udar+N+Sg+Nom # teat
 !!€ utare udar+N+Sg+Nom
 !!€ utarena udar+N+Sg+Ess
@@ -103066,6 +103275,7 @@ LEXICON N_UDAR
 0:tare      N_COMPOUND_ITTEN   ;
 
 LEXICON N_PENGER
+!!€gt-norm: Nouns 49 ger
 !!€ penger penger+N+Sg+Nom # bank
 !!€ penkere penger+N+Sg+Nom
 !!€ penkerenä penger+N+Sg+Ess
@@ -103098,6 +103308,7 @@ LEXICON N_PENGER
 0:kere      N_COMPOUND_ITTEN   ;
 
 LEXICON N_OMMEL
+!!€gt-norm: Nouns 49 mel
 !!€ ommel ommel+N+Sg+Nom # stitch
 !!€ ompele ommel+N+Sg+Nom
 !!€ ompelena ommel+N+Sg+Ess
@@ -103130,6 +103341,7 @@ LEXICON N_OMMEL
 0:pele      N_COMPOUND_ITTEN   ;
 
 LEXICON N_VEMMEL
+!!€gt-norm: Nouns 49 mel
 !!€ vemmel vemmel+N+Sg+Nom
 !!€ vempele vemmel+N+Sg+Nom
 !!€ vempelenä vemmel+N+Sg+Ess
@@ -103162,6 +103374,7 @@ LEXICON N_VEMMEL
 0:pele      N_COMPOUND_ITTEN   ;
 
 LEXICON N_KINNER
+!!€gt-norm: Nouns 49 ner
 !!€ kinner kinner+N+Sg+Nom # heel
 !!€ kintere kinner+N+Sg+Nom
 !!€ kinterenä kinner+N+Sg+Ess
@@ -103194,6 +103407,7 @@ LEXICON N_KINNER
 0:tere      N_COMPOUND_ITTEN   ;
 
 LEXICON N_KANNEL
+!!€gt-norm: Nouns 49 nel
 !!€ kannel kannel+N+Sg+Nom # kantele
 !!€ kantele kannel+N+Sg+Nom
 !!€ kantelena kannel+N+Sg+Ess
@@ -103226,6 +103440,7 @@ LEXICON N_KANNEL
 0:tele      N_COMPOUND_ITTEN   ;
 
 LEXICON N_MANNER
+!!€gt-norm: Nouns 49 ner
 !!€ manner manner+N+Sg+Nom # continent
 !!€ mantere manner+N+Sg+Nom
 !!€ manterena manner+N+Sg+Ess
@@ -103258,6 +103473,7 @@ LEXICON N_MANNER
 0:tere      N_COMPOUND_ITTEN   ;
 
 LEXICON N_PIENNAR
+!!€gt-norm: Nouns 49 nar
 !!€ piennar piennar+N+Sg+Nom # curb
 !!€ pientare piennar+N+Sg+Nom
 !!€ pientarena piennar+N+Sg+Ess
@@ -103290,6 +103506,7 @@ LEXICON N_PIENNAR
 0:tere      N_COMPOUND_ITTEN   ;
 
 LEXICON N_AUER
+!!€gt-norm: Nouns 49 auer
 !!€ auer auer+N+Sg+Nom # morning mist
 !!€ autere auer+N+Sg+Nom
 !!€ auterena auer+N+Sg+Ess
@@ -103329,7 +103546,7 @@ LEXICON N_AUER
 
 !! Two words have exceptions in their vowel harmony patterns:
 LEXICON N_VERI
-!!€gt-norm: Nouns veri~meri
+!!€gt-norm: Nouns veri
 !!€ veri veri+N+Sg+Nom blood
 !!€ verta veri+N+Sg+Par
 !!$ vertä veri+N+Sg+Par
@@ -103346,6 +103563,7 @@ LEXICON N_VERI
 0       N_COMPOUND_IEN ;
 
 LEXICON N_MERI
+!!€gt-norm: Nouns meri
 !!€ meri meri+N+Sg+Nom sea
 !!€ merta meri+N+Sg+Par
 !!$ mertä meri+N+Sg+Par
@@ -103418,7 +103636,7 @@ LEXICON N_VELI
 !! written as j in normative orthography.
 
 LEXICON N_AIKA
-!!€gt-norm: Nouns aika poika
+!!€gt-norm: Nouns aika
 !!€ aika aika+N+Sg+Nom time
 !!€ ajassa aika+N+Sg+Ine
 0:ika  N_BACK_NOMINATIVE    ;
@@ -103438,6 +103656,7 @@ LEXICON N_AIKA
 0:ika   N_COMPOUND_IN  ;
 
 LEXICON N_POIKA
+!!€gt-norm: Nouns poika
 !!€ poika poika+N+Sg+Nom boy
 !!€ pojassa poika+N+Sg+Ine
 0:ika   N_BACK_NOMINATIVE    ;
@@ -103471,7 +103690,7 @@ LEXICON N_POIKA
 !! a, ä stems, similarly 10 is quite like sisar with the extra en in nominative.
 
 LEXICON N_AAMUYKSI
-!!gt-norm: Nouns from numerals
+!!€gt-norm: Nouns from numerals yksi
 !!€ aamuyksi aamuyksi+N+Sg+Nom 1 a.m.
 !!€ aamuyhtä aamuyksi+N+Sg+Par
 !!€ aamuyhtenä aamuyksi+N+Sg+Ess
@@ -103489,6 +103708,7 @@ LEXICON N_AAMUYKSI
 0:ks   N_COMPOUND_IEN ;
 
 LEXICON N_AAMUKOLME
+!!€gt-norm: Nouns from numerals kolme
 !!€ aamukolme aamukolme+N+Sg+Nom 3 a.m.
 !!€ aamukolmea aamukolme+N+Sg+Par
 !!€ aamukolmeen aamukolme+N+Sg+Ill
@@ -103511,6 +103731,7 @@ LEXICON N_AAMUKOLME
 
 
 LEXICON N_AAMUKAHDEKSAN
+!!€gt-norm: Nouns from numerals 8
 !!€ aamukahdeksan aamukahdeksan+N+Sg+Nom 8 a.m.
 !!€ aamukahdeksaa aamukahdeksan+N+Sg+Par
 !!€ aamukahdeksana aamukahdeksan+N+Sg+Ess
@@ -103533,6 +103754,7 @@ LEXICON N_AAMUKAHDEKSAN
 0:a   N_COMPOUND_IN  ;
 
 LEXICON N_AAMUYHDEKSÄN
+!!€gt-norm: Nouns from numerals 9
 !!€ aamuyhdeksän aamuyhdeksän+N+Sg+Nom 9 a.m.
 !!€ aamuyhdeksää aamuyhdeksän+N+Sg+Par
 !!€ aamuyhdeksänä aamuyhdeksän+N+Sg+Ess
@@ -103556,6 +103778,7 @@ LEXICON N_AAMUYHDEKSÄN
 
 
 LEXICON N_AAMUKYMMENEN
+!!€gt-norm: Nouns from numerals 10
 !!€ aamukymmenen aamukymmenen+N+Sg+Nom 10 a.m.
 0:en    N_FRONT_NOMINATIVE    ;
 0:e     N_FRONT_SINGULARS    ;
@@ -103572,6 +103795,7 @@ LEXICON N_AAMUKYMMENEN
 0       N_COMPOUND_TEN ;
 
 LEXICON N_VUOSITUHAT
+!!€gt-norm: Nouns from numerals 1000
 !!€ vuosituhat vuosituhat+N+Sg+Nom millennium
 !!€ vuosituhantena vuosituhat+N+Sg+Ess
 0:t   N_BACK_NOMINATIVE    ;
@@ -103590,17 +103814,17 @@ LEXICON N_VUOSITUHAT
 !! !Plurales tantum
 !! For some words, the singular forms are rare, odd, or even deemed
 !! ungrammatical, these words have separate classes for them. In Finnish
-!! words to commonly be in this class are events like *häät* (wedding),
-!! *juhlat* (party), etc. then all things that are semantically coupled,
-!! like clothes with two somethings (as with English): *farkut* (jeans),
-!! *housut* (pants). It is noteworthy, that sometimes dictionaries classify
-!! common words as plurale tantum for semantic reasons: *joukot* (troops)
-!! versus *joukko* (group). We don’t need that at this point.
+!! words to commonly be in this class are events like häät (wedding),
+!! juhlat (party), etc. then all things that are semantically coupled,
+!! like clothes with two somethings (as with English): farkut (jeans),
+!! housut (pants). It is noteworthy, that sometimes dictionaries classify
+!! common words as plurale tantum for semantic reasons: joukot (troops)
+!! versus joukko (group). We don’t need that at this point.
 !! The compounds of plurale tantum words are made from singular forms:
-!! *farkku*kangas (jean fabric), *hää*juhla (wedding party).
+!! farkkukangas (jean fabric), hääjuhla (wedding party).
 
 LEXICON N_AIVOT
-!!€gt-unfinished: Nouns plurale tantum
+!!€gt-norm: Noun 1o plurt
 !!€ aivot aivot+N+Pl+Nom brains
 !!$ aivo aivot+N+Sg+Nom
 0    N_BACK_PLNOM_CLIT   ;
@@ -103613,6 +103837,7 @@ LEXICON N_AIVOT
 0    N_COMPOUND_JEN ;
 
 LEXICON N_PÖKSYT
+!!€gt-norm: Noun 1y plurt
 !!€ pöksyt pöksyt+N+Pl+Nom pants
 !!$ pöksy pöksyt+N+Sg+Nom
 0    N_FRONT_PLNOM_CLIT ;
@@ -103625,6 +103850,7 @@ LEXICON N_PÖKSYT
 0    N_COMPOUND_JEN ;
 
 LEXICON N_HOUSUT
+!!€gt-norm: Noun 1u plurt
 !!€ housut housut+N+Pl+Nom pants
 !!$ housu housut+N+Sg+Nom
 0    N_BACK_PLNOM_CLIT  ;
@@ -103637,6 +103863,7 @@ LEXICON N_HOUSUT
 0    N_COMPOUND_JEN ;
 
 LEXICON N_JOUKOT
+!!€gt-norm: Noun 1ko plurt
 !!€ huoltojoukot huolto#joukot+N+Pl+Nom troops
 !!$ huoltojoukko huolto#joukot+N+Sg+Nom
 0:o       N_BACK_PLNOM_CLIT ;
@@ -103650,6 +103877,7 @@ LEXICON N_JOUKOT
 0:ko      N_COMPOUND_JEN ;
 
 LEXICON N_FARKUT
+!!€gt-norm: Noun 1ku plurt
 !!€ farkut farkut+N+Pl+Nom jeans
 !!$ farkku farkut+N+Sg+Nom
 0:u       N_BACK_PLNOM_CLIT ;
@@ -103664,6 +103892,7 @@ LEXICON N_FARKUT
 
 
 LEXICON N_TIEDOT
+!!€gt-norm: Noun 1dot plurt
 !!€ perustiedot perus#tiedot+N+Pl+Nom knowledge (in school grades)
 !!$ perustieto perus#tiedot+N+Sg+Nom
 0:do      N_BACK_PLNOM_CLIT ;
@@ -103677,6 +103906,7 @@ LEXICON N_TIEDOT
 0:to      N_COMPOUND_JEN ;
 
 LEXICON N_TYTÖT
+!!€gt-norm: Noun 1töt plurt
 !!€ kaksostytöt kaksos#tytöt+N+Pl+Nom girls ?
 !!$ kaksostyttö kaksos#tytöt+N+Sg+Nom
 0:ö    N_FRONT_PLNOM_CLIT   ;
@@ -103690,6 +103920,7 @@ LEXICON N_TYTÖT
 0:tö      N_COMPOUND_JEN ;
 
 LEXICON N_PIDOT
+!!€gt-norm: Noun 1ot plurt
 !!€ pidot pidot+N+Pl+Nom bacchanalia
 !!$ pito pidot+N+Sg+Nom
 0:do    N_BACK_PLNOM_CLIT   ;
@@ -103703,6 +103934,7 @@ LEXICON N_PIDOT
 0:to      N_COMPOUND_JEN ;
 
 LEXICON N_RAVUT
+!!€gt-norm: Noun 1vut plurt
 !!€ ravut ravut+N+Pl+Nom crabs ??
 !!$ rapu ravut+N+Sg+Nom
 0:vu    N_BACK_PLNOM_CLIT   ;
@@ -103716,6 +103948,7 @@ LEXICON N_RAVUT
 0:pu      N_COMPOUND_JEN ;
 
 LEXICON N_URUT
+!!€gt-norm: Noun 1ut plurt
 !!€ urut urut+N+Pl+Nom organs
 !!$ urku urut+N+Sg+Nom
 0:u    N_BACK_PLNOM_CLIT ;
@@ -103729,6 +103962,7 @@ LEXICON N_URUT
 0:ku      N_COMPOUND_JEN ;
 
 LEXICON N_RAPUT
+!!€gt-norm: Noun 1put plurt
 !!€ raput raput+N+Pl+Nom stairs
 !!$ rappu raput+N+Sg+Nom
 0:u    N_BACK_PLNOM_CLIT    ;
@@ -103747,6 +103981,7 @@ LEXICON N_RAPUT
 0:pu      N_COMPOUND_JEN ;
 
 LEXICON N_KÄÄDYT
+!!€gt-norm: Noun 1dyt plurt
 !!€ käädyt käädyt+N+Pl+Nom necklace
 !!$ kääty käädyt+N+Sg+Nom
 0:dy    N_FRONT_PLNOM_CLIT  ;
@@ -103760,6 +103995,7 @@ LEXICON N_KÄÄDYT
 0:ty      N_COMPOUND_JEN ;
 
 LEXICON N_AALLOT
+!!€gt-norm: Noun 1lot plurt
 !!€ aallot aallot+N+Pl+Nom waves
 !!$ aalto aallot+N+Sg+Nom
 0:lo      N_BACK_PLNOM_CLIT ;
@@ -103773,6 +104009,7 @@ LEXICON N_AALLOT
 0:to      N_COMPOUND_JEN ;
 
 LEXICON N_OPINNOT
+!!€gt-norm: Noun 1not plurt
 !!€ opinnot opinnot+N+Pl+Nom studies
 !!$ opinto opinnot+N+Sg+Nom
 0:no      N_BACK_PLNOM_CLIT ;
@@ -103786,6 +104023,7 @@ LEXICON N_OPINNOT
 0:to      N_COMPOUND_JEN ;
 
 LEXICON N_RAUNIOT
+!!€gt-norm: Noun 2iot plurt
 !!€ rauniot rauniot+N+Pl+Nom ruins
 !!$ raunio rauniot+N+Sg+Nom
 0   N_BACK_PLNOM_CLIT   ;
@@ -103801,6 +104039,7 @@ LEXICON N_RAUNIOT
 
 
 LEXICON N_PIPPALOT
+!!€gt-norm: Noun 3iot plurt
 !!€ pippalot pippalot+N+Pl+Nom party
 !!$ pippalo pippalot+N+Sg+Nom
 0         N_BACK_PLNOM_CLIT ;
@@ -103814,6 +104053,7 @@ LEXICON N_PIPPALOT
 0         N_COMPOUND_JEN ;
 
 LEXICON N_NEUVOTTELUT
+!!€gt-norm: Noun 3lut plurt
 !!€ neuvottelut neuvottelut+N+Pl+Nom negotiation
 !!$ neuvottelu neuvottelut+N+Sg+Nom
 0    N_BACK_PLNOM_CLIT ;
@@ -103831,6 +104071,7 @@ LEXICON N_NEUVOTTELUT
 0    N_COMPOUND_ITTEN ;
 
 LEXICON N_SÄÄNNÖT
+!!€gt-norm: Noun 1nöt plurt
 !!€ säännöt säännöt+N+Pl+Nom rules
 !!$ sääntö säännöt+N+Sg+Nom
 0:nö    N_FRONT_PLNOM_CLIT ;
@@ -103843,7 +104084,19 @@ LEXICON N_SÄÄNNÖT
 0:nö       N_COMPOUND_N ;
 0:tö      N_COMPOUND_JEN ;
 
+LEXICON N_LEHDET
+!!€gt-norm: Noun 7 front t~d plurt
+!!€ lehtinä lehti+N+Pl+Ess
+!!€ lehdistä lehti+N+Pl+Ela
+!!€ lehtien lehti+N+Pl+Gen
+0:t     N_FRONT_STRONG_PLURALS   ;
+0:d     N_FRONT_WEAK_PLURALS   ;
+0:t     N_FRONT_GENITIVE_IEN    ;
+0:t     N_FRONT_ILLATIVE_IIN   ;
+0:t        N_COMPOUND_IEN ;
+
 LEXICON N_TUNNIT
+!!€gt-norm: Noun 7 back t~n plurt
 !!€ tunnit tunnit+N+Pl+Nom classes
 !!$ tunti tunnit+N+Sg+Nom
 0:ni    N_BACK_PLNOM_CLIT   ;
@@ -103857,6 +104110,7 @@ LEXICON N_TUNNIT
 0:t        N_COMPOUND_IEN ;
 
 LEXICON N_SUKAT
+!!€gt-norm: Noun xxx a front k0 plurt
 !!€ sukat sukat+N+Pl+Nom socks
 !!$ sukka sukat+N+Sg+Nom
 0:k   N_BACK_STRONG_PLURALS  ;
@@ -103871,6 +104125,7 @@ LEXICON N_SUKAT
 0:ka   N_COMPOUND_IN  ;
 
 LEXICON N_KENGÄT
+!!€gt-norm: Noun xxx a front kg plurt
 !!€ kengät kengät+N+Pl+Nom shoes
 !!$ kenkä kengät+N+Sg+Nom
 0:gä    N_FRONT_PLNOM_CLIT  ;
@@ -103886,6 +104141,7 @@ LEXICON N_KENGÄT
 0:kä   N_COMPOUND_IN  ;
 
 LEXICON N_RAVET
+!!€gt-norm: Noun 8 plurt
 !!€ ravet ravet+N+Pl+Nom rave
 !!$ rave ravet+N+Sg+Nom
 0    N_BACK_PLNOM_CLIT  ;
@@ -103900,6 +104156,7 @@ LEXICON N_RAVET
 0    N_COMPOUND_IN ;
 
 LEXICON N_BÄNET
+!!€gt-norm: Noun 8  front  plurt
 !!€ bänet bänet+N+Pl+Nom breakup
 !!$ bäne bänet+N+Sg+Nom
 0    N_FRONT_PLNOM_CLIT ;
@@ -103913,6 +104170,7 @@ LEXICON N_BÄNET
 0    N_COMPOUND_JEN ;
 
 LEXICON N_MARKKINAT
+!!€gt-norm: Noun xxx a front plurt
 !!€ markkinat markkinat+N+Pl+Nom market
 !!$ markkina markkinat+N+Sg+Nom
 0:a   N_BACK_PLNOM_CLIT ;
@@ -103929,6 +104187,7 @@ LEXICON N_MARKKINAT
 0:a   N_COMPOUND_IN  ;
 
 LEXICON N_HIPAT
+!!€gt-norm: Noun xxx a front pp plurt
 !!€ hipat hipat+N+Pl+Nom party
 !!$ hippa hipat+N+Sg+Nom
 0:po N_BACK_STRONG_PLURALS  ;
@@ -103943,6 +104202,7 @@ LEXICON N_HIPAT
 0:pa   N_COMPOUND_IN  ;
 
 LEXICON N_KUOPAT
+!!€gt-norm: Noun xxx a back p plurt
 !!€ kuopat kuopat+N+Pl+Nom holes ?
 !!$ kuoppa kuopat+N+Sg+Nom
 0:pa    N_BACK_PLNOM_CLIT   ;
@@ -103958,6 +104218,7 @@ LEXICON N_KUOPAT
 0:pa   N_COMPOUND_IN  ;
 
 LEXICON N_RAUDAT
+!!€gt-norm: Noun xxx dat plurt
 !!€ raudat raudat+N+Pl+Nom irons
 !!$ rauta raudat+Sg+Nom
 0:da    N_BACK_PLNOM_CLIT   ;
@@ -103973,6 +104234,7 @@ LEXICON N_RAUDAT
 0:ta   N_COMPOUND_IN  ;
 
 LEXICON N_TAVAT
+!!€gt-norm: Noun xxx vat plurt
 !!€ tavat tavat+N+Pl+Nom manners
 !!$ tapa tavat+N+Sg+Nom
 0:va    N_BACK_PLNOM_CLIT   ;
@@ -103988,6 +104250,7 @@ LEXICON N_TAVAT
 0:pa   N_COMPOUND_IN  ;
 
 LEXICON N_VALLAT
+!!€gt-norm: Noun xxx lat plurt
 !!$ vallat vallat+N+Pl+Nom states
 !!€ valta vallat+N+Sg+Nom
 0:la    N_BACK_PLNOM_CLIT   ;
@@ -104003,6 +104266,7 @@ LEXICON N_VALLAT
 0:ta   N_COMPOUND_IN  ;
 
 LEXICON N_VARAT
+!!€gt-norm: Noun xxx rrt plurt
 !!€ varat varat+N+Pl+Nom budget
 !!$ vara varat+N+Sg+Nom
 0:a   N_BACK_PLNOM_CLIT ;
@@ -104017,6 +104281,7 @@ LEXICON N_VARAT
 0:a   N_COMPOUND_IN  ;
 
 LEXICON N_JUHLAT
+!!€gt-norm: Noun xxx t plurt
 !!€ juhlat juhlat+N+Pl+Nom party
 !!$ juhla juhlat+N+Sg+Nom
 0:a N_BACK_PLNOM_CLIT   ;
@@ -104031,6 +104296,7 @@ LEXICON N_JUHLAT
 0:a   N_COMPOUND_IN  ;
 
 LEXICON N_KIHARAT
+!!€gt-norm: Noun xxxihi t plurt
 !!€ kiharat kiharat+N+Pl+Nom curls
 !!$ kihara kiharat+N+Sg+Nom
 0:a N_BACK_PLNOM_CLIT ;
@@ -104055,6 +104321,7 @@ LEXICON N_KIHARAT
 0:a   N_COMPOUND_IN  ;
 
 LEXICON N_KÄRÄJÄT
+!!€gt-norm: Nounäjäm xxx t plurt
 !!€ käräjät käräjät+N+Pl+Nom court
 !!$ käräjä käräjät+N+Sg+Nom
 0   N_FRONT_PLNOM_CLIT  ;
@@ -104069,6 +104336,7 @@ LEXICON N_KÄRÄJÄT
 0:ä   N_COMPOUND_IN  ;
 
 LEXICON N_PAIKAT
+!!€gt-norm: Noun xxx kAt plurt
 !!€ paikat paikat+N+Pl+Nom body parts
 !!$ paikka paikat+N+Sg+Nom
 0:ka    N_BACK_PLNOM_CLIT   ;
@@ -104090,6 +104358,7 @@ LEXICON N_PAIKAT
 0:ka   N_COMPOUND_IN  ;
 
 LEXICON N_SILAKAT
+!!€gt-norm: Noun 14 kat plurt
 !!€ silakat silakat+N+Pl+Nom kinds of a fish
 !!$ silakka silakat+N+Sg+Nom
 0:ka    N_BACK_PLNOM_CLIT   ;
@@ -104111,6 +104380,7 @@ LEXICON N_SILAKAT
 0:ka   N_COMPOUND_IN  ;
 
 LEXICON N_RINTSIKAT
+!!€gt-norm: Noun 14 kat2 plurt
 !!€ rintsikat rintsikat+N+Pl+Nom bra
 !!$ rintsikka rintsikat+N+Sg+Nom
 0:ka    N_BACK_PLNOM_CLIT ;
@@ -104132,8 +104402,10 @@ LEXICON N_RINTSIKAT
 0:ka   N_COMPOUND_IN  ;
 
 LEXICON N_TIETEET
+!!€gt-norm: Noun xxx teet plurt
 !!€ tieteet tieteet+N+Pl+Nom sciences
 !!$ tiede tieteet+N+Sg+Nom
+!!€gt-norm: Noun xxx t plurt
 0:tee   N_FRONT_PLNOM_CLIT  ;
 0:te    N_FRONT_PLURALS    ;
 0:te    N_FRONT_PARTITIVE_ITÄ   ;
@@ -104147,6 +104419,7 @@ LEXICON N_TIETEET
 0:te      N_COMPOUND_ITTEN   ;
 
 LEXICON N_FARMARIT
+!!€gt-norm: Noun xxx it plurt
 !!€ farmarit farmarit+N+Pl+Nom jeans
 !!$ farmari farmarit+N+Sg+Nom
 0:i     N_BACK_PLNOM_CLIT   ;
@@ -104164,6 +104437,7 @@ LEXICON N_FARMARIT
 0:e       N_COMPOUND_ITTEN   ;
 
 LEXICON N_KASTANJETIT
+!!€gt-norm: Noun xxx tit plurt
 !!€ kastanjetit kastanjetit+N+Pl+Nom kind of an instrumemt
 !!$ kastanjetti kastanjetit+N+Sg+Nom
 0:i     N_BACK_PLNOM_CLIT   ;
@@ -104179,6 +104453,7 @@ LEXICON N_KASTANJETIT
 0:t        N_COMPOUND_IEN ;
 
 LEXICON N_TAUDIT
+!!€gt-norm: Noun xxx dit plurt
 !!€ taudit taudit+N+Pl+Nom  diseases
 !!$ tauti taudit+N+Sg+Nom
 0:di    N_BACK_PLNOM_CLIT   ;
@@ -104192,6 +104467,7 @@ LEXICON N_TAUDIT
 0:t        N_COMPOUND_IEN ;
 
 LEXICON N_PIHDIT
+!!€gt-norm: Noun xxx dit front plurt
 !!€ pihdit pihdit+N+Pl+Nom jaws
 !!$ pihti pihdit+N+Sg+Nom
 0:di    N_FRONT_PLNOM_CLIT ;
@@ -104205,6 +104481,7 @@ LEXICON N_PIHDIT
 0:t        N_COMPOUND_IEN ;
 
 LEXICON N_TONGIT
+!!€gt-norm: Noun xxx git plurt
 !!€ tongit tongit+N+Pl+Nom pliers
 !!$ tonki tongit+N+Sg+Nom
 0:gi    N_BACK_PLNOM_CLIT   ;
@@ -104218,6 +104495,7 @@ LEXICON N_TONGIT
 0:k        N_COMPOUND_IEN ;
 
 LEXICON N_SYÖMINGIT
+!!€gt-norm: Noun xxx git fornt plurt
 !!€ syömingit syömingit+N+Pl+Nom eating party
 !!$ syöminki syöminki+N+Sg+Nom
 0:gi    N_FRONT_PLNOM_CLIT  ;
@@ -104231,6 +104509,7 @@ LEXICON N_SYÖMINGIT
 0:k        N_COMPOUND_IEN ;
 
 LEXICON N_LÄNGET
+!!€gt-norm: Noun xxx get plurt
 !!€ länget länget+N+Pl+Nom some cowboy accessory thing
 !!$ länki länget+N+Sg+Nom
 0:ge    N_FRONT_PLNOM_CLIT  ;
@@ -104246,6 +104525,7 @@ LEXICON N_LÄNGET
 0:k        N_COMPOUND_IEN ;
 
 LEXICON N_LASIT
+!!€gt-norm: Noun xxx sit plurt
 !!€ lasit lasit+N+Pl+Nom glasses
 !!$ lasi lasit+N+Sg+Nom
 0:i     N_BACK_PLNOM_CLIT   ;
@@ -104259,6 +104539,7 @@ LEXICON N_LASIT
 
 
 LEXICON N_BIKINIT
+!!€gt-norm: Noun xxx nit plurt
 !!€ bikinit bikinit+N+Pl+Nom bikini
 !!$ bikini bikinit+N+Sg+Nom
 0:i     N_FRONT_PLNOM_CLIT  ;
@@ -104271,6 +104552,7 @@ LEXICON N_BIKINIT
 0       N_COMPOUND_IEN ;
 
 LEXICON N_LIIVIT
+!!€gt-norm: Noun xxx iiiit plurt
 !!€ liivit liivit+N+Pl+Nom vest
 !!$ liivi liivit+N+Sg+Nom
 0:i     N_FRONT_PLNOM_CLIT  ;
@@ -104283,6 +104565,7 @@ LEXICON N_LIIVIT
 0       N_COMPOUND_IEN ;
 
 LEXICON N_HOPEAT
+!!€gt-norm: Noun xxx eat plurt
 !!€ hopeat hopeat+N+Pl+Nom cutlery (silvers)
 !!$ hopea hopeat+N+Sg+Nom
 0   N_BACK_PLNOM_CLIT   ;
@@ -104300,6 +104583,7 @@ LEXICON N_HOPEAT
 0:a   N_COMPOUND_IN  ;
 
 LEXICON N_TIET
+!!€gt-norm: Noun 15 tiet plurt
 !!€ tiet tiet+N+Pl+Nom roads
 !!$ tie tiet+N+Sg+Nom
 0:ie    N_FRONT_PLNOM_CLIT  ;
@@ -104314,6 +104598,7 @@ LEXICON N_TIET
 0:e   N_COMPOUND_ITTEN   ;
 
 LEXICON N_TYÖT
+!!€gt-norm: Noun xxx työt plurt
 !!€ työt työt+N+Pl+Nom employment
 !!$ työ työt+N+Sg+Nom
 0:yö    N_FRONT_PLNOM_CLIT  ;
@@ -104328,6 +104613,7 @@ LEXICON N_TYÖT
 0:ö   N_COMPOUND_ITTEN   ;
 
 LEXICON N_VANHEMMAT
+!!€gt-norm: Noun xxx matt plurt
 !!€ vanhemmat vanhemmat+N+Pl+Nom parents
 !!$ vanhempi vanhemmat+N+Sg+Nom
 0:mma   N_BACK_PLNOM_CLIT   ;
@@ -104344,6 +104630,7 @@ LEXICON N_VANHEMMAT
 0:pa  N_COMPOUND_IN  ;
 
 LEXICON N_ITÄMAAT
+!!€gt-norm: Noun xxx maat plurt
 !!€ itämaat itämaat+N+Pl+Nom near east
 !!$ itämaa itämaat+N+Sg+Nom
 0:a N_BACK_PLNOM_CLIT   ;
@@ -104358,6 +104645,7 @@ LEXICON N_ITÄMAAT
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_PUUT
+!!€gt-norm: Noun xx puu t plurt
 !!€ puut puut+N+Pl+Nom trees
 !!$ puu puut+N+Sg+Nom
 0 N_BACK_PLNOM_CLIT  ;
@@ -104372,6 +104660,7 @@ LEXICON N_PUUT
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_HÄÄT
+!!€gt-norm: Noun xxx äät plurt
 !!€ häät häät+N+Pl+Nom wedding
 !!$ hää häät+N+Sg+Nom
 0:ä N_FRONT_PLNOM_CLIT    ;
@@ -104386,6 +104675,7 @@ LEXICON N_HÄÄT
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_TALKOOT
+!!€gt-norm: Noun xxx kooot plurt
 !!€ talkoot talkoot+N+Pl+Nom house party
 !!$ talkoo talkoot+N+Sg+Nom
 0:o N_BACK_PLNOM_CLIT   ;
@@ -104401,6 +104691,7 @@ LEXICON N_TALKOOT
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_SAKSET
+!!€gt-norm: Noun xxx sakset plurt
 !!€ sakset sakset+N+Pl+Nom scissors
 !!$ saksi sakset+N+Sg+Nom  
 0:e   N_BACK_PLNOM_CLIT ;
@@ -104413,6 +104704,7 @@ LEXICON N_SAKSET
 0       N_COMPOUND_IEN ;
 
 LEXICON N_RIPSET
+!!€gt-norm: Noun xxx ripset plurt
 !!€ ripset ripset+N+Pl+Nom eyebrows
 !!$ ripsi ripset+N+Sg+Nom
 0:e N_FRONT_PLNOM_CLIT  ;
@@ -104425,6 +104717,7 @@ LEXICON N_RIPSET
 0       N_COMPOUND_IEN ;
 
 LEXICON N_KANNET
+!!€gt-norm: Noun xxx nnet plurt
 !!€ kannet kannet+N+Pl+Nom covers
 !!$ kansi kannet+N+Sg+Nom
 0:ne    N_BACK_PLNOM_CLIT   ;
@@ -104439,6 +104732,7 @@ LEXICON N_KANNET
 0:t   N_COMPOUND_TEN ;
 
 LEXICON N_VUODET
+!!€gt-norm: Noun 27 det plurt
 !!€ vuodet vuodet+N+Pl+Nom years
 !!$ vuosi vuodet+N+Sg+Nom
 0:de    N_BACK_PLNOM_CLIT   ;
@@ -104453,6 +104747,7 @@ LEXICON N_VUODET
 0:t   N_COMPOUND_TEN ;
 
 LEXICON N_TOIMET
+!!€gt-norm: Noun 25 t plurt
 !!€ toimet toimet+N+Pl+Nom actions
 !!$ toimi toimet+N+Sg+Nom
 0:me    N_BACK_PLNOM_CLIT ;
@@ -104466,6 +104761,7 @@ LEXICON N_TOIMET
 0:m   N_COMPOUND_IEN ;
 
 LEXICON N_HÖYHENET
+!!€gt-norm: Noun 32 t plurt
 !!€ höyhenet höyhen+N+Pl+Nom feathers
 !!$ höyhen höyhenet+N+Sg+Nom
 0:e N_FRONT_PLNOM_CLIT  ;
@@ -104480,6 +104776,7 @@ LEXICON N_HÖYHENET
 0   N_COMPOUND_TEN ;
 
 LEXICON N_ATERIMET
+!!€gt-norm: Noun 31 t plurt
 !!€ aterimet aterimet+N+Pl+Nom cutlery
 !!$ aterin aterimet+N+Sg+Nom
 0:me    N_BACK_PLNOM_CLIT ;
@@ -104494,6 +104791,7 @@ LEXICON N_ATERIMET
 0:n   N_COMPOUND_TEN ;
 
 LEXICON N_KERITSIMET
+!!€gt-norm: Noun 31 t fr plurt
 !!€ keritsimet keritsimet+N+Pl+Nom sheep razor thing
 !!$ keritsin keritsimet+N+Sg+Nom
 0:me    N_FRONT_PLNOM_CLIT  ;
@@ -104509,6 +104807,7 @@ LEXICON N_KERITSIMET
 
 
 LEXICON N_ANTIMET
+!!€gt-norm: Noun 31 nnin plurt
 !!€ antimet antimet+N+Pl+Nom offerings
 !!$ annin antimet+N+Sg+Nom
 0:time  N_BACK_PLNOM_CLIT   ;
@@ -104523,6 +104822,7 @@ LEXICON N_ANTIMET
 0:nin   N_COMPOUND_TEN ;
 
 LEXICON N_HOKSOTTIMET
+!!€gt-norm: Noun 31 tin plurt
 !!€ hoksottimet hoksottimet+N+Pl+Nom smarts
 !!$ hoksotin hoksottimet+N+Sg+Nom
 0:time  N_BACK_PLNOM_CLIT   ;
@@ -104537,6 +104837,7 @@ LEXICON N_HOKSOTTIMET
 0:in   N_COMPOUND_TEN ;
 
 LEXICON N_SYNNYTTIMET
+!!€gt-norm: Noun 31 tin front plurt
 !!€ synnyttimet synnyttimet+N+Pl+Nom ovaries
 !!$ synnytin synnyttimet+N+Sg+Nom
 0:time  N_FRONT_PLNOM_CLIT  ;
@@ -104551,6 +104852,7 @@ LEXICON N_SYNNYTTIMET
 0:in   N_COMPOUND_TEN ;
 
 LEXICON N_PUKIMET
+!!€gt-norm: Noun 31 puin plurt
 !!€ pukimet pukimet+N+Pl+Nom clothes
 !!$ puin pukimet+N+Sg+Nom
 0:kime  N_BACK_PLNOM_CLIT   ;
@@ -104565,6 +104867,7 @@ LEXICON N_PUKIMET
 0:in   N_COMPOUND_TEN ;
 
 LEXICON N_IKENET
+!!€gt-norm: Noun 31 ien plurt
 !!€ ikenet ikenet+N+Pl+Nom gums
 !!$ ien ikenet+N+Sg+Nom
 0:kene  N_FRONT_PLNOM_CLIT    ;
@@ -104580,6 +104883,7 @@ LEXICON N_IKENET
 0:en  N_COMPOUND_TEN ;
 
 LEXICON N_LIITTOUTUNEET
+!!€gt-norm: Noun  nut plurt
 !!€ liittoutuneet liittoutuneet+N+Pl+Nom allied
 !!$ liittoutunut liittoutunut+N+Sg+Nom
 0:ee    N_BACK_PLNOM_CLIT   ;
@@ -104595,6 +104899,7 @@ LEXICON N_LIITTOUTUNEET
 0:e   N_COMPOUND_ITTEN   ;
 
 LEXICON N_RAPPUSET
+!!€gt-norm: Noun 38 nen plurt
 !!€ rappuset rappuset+N+Pl+Nom stairs
 !!$ rappunen rappuset+N+Sg+Nom
 0:se    N_BACK_PLNOM_CLIT   ;
@@ -104609,6 +104914,7 @@ LEXICON N_RAPPUSET
 0:s       N_COMPOUND_TEN ;
 
 LEXICON N_VIHKIÄISET
+!!€gt-norm: Noun 38 nen fornt plurt
 !!€ vihkiäiset vihkiäiset+N+Pl+Nom engagement
 !!$ vihkiäinen vihkiäiset+N+Sg+Nom
 0:se    N_FRONT_PLNOM_CLIT  ;
@@ -104623,6 +104929,7 @@ LEXICON N_VIHKIÄISET
 0:s       N_COMPOUND_TEN ;
 
 LEXICON N_VALJAAT
+!!€gt-norm: Noun  jaat plurt
 !!€ valjaat valjaat+N+Pl+Nom strap
 !!$ valjas valjaat+N+Sg+Nom
 0 N_BACK_PLURALS    ;
@@ -104637,6 +104944,7 @@ LEXICON N_VALJAAT
 0   N_COMPOUND_ITTEN   ;
 
 LEXICON N_TIKKAAT
+!!€gt-norm: Noun  kaat plurt
 !!€ tikkaat tikkaat+N+Pl+Nom ladders
 !!$ tikas tikkaat+N+Sg+Nom
 0:kaa   N_BACK_PLNOM_CLIT   ;
@@ -104652,6 +104960,7 @@ LEXICON N_TIKKAAT
 0:ka   N_COMPOUND_ITTEN   ;
 
 LEXICON N_RATTAAT
+!!€gt-norm: Noun  taat plurt
 !!€ rattaat rattaat+N+Pl+Nom stroller
 !!$ ratas rattaat+N+Sg+Nom
 0:taa   N_BACK_PLNOM_CLIT   ;
@@ -104667,6 +104976,7 @@ LEXICON N_RATTAAT
 0:ta   N_COMPOUND_ITTEN   ;
 
 LEXICON N_RENKAAT
+!!€gt-norm: Noun  gaat plurt
 !!€ renkaat renkaat+N+Pl+Nom tires
 !!$ rengas renkaat+N+Sg+Nom
 0:kaa   N_BACK_PLNOM_CLIT   ;
@@ -104682,6 +104992,7 @@ LEXICON N_RENKAAT
 0:ka   N_COMPOUND_ITTEN   ;
 
 LEXICON N_RYNTÄÄT
+!!€gt-norm: Noun  ntääaat plurt
 !!€ ryntäät ryntäät+N+Pl+Nom breasts
 !!$ rynnäs ryntäät+N+Sg+Nom
 0:tää   N_FRONT_PLNOM_CLIT  ;
@@ -104697,6 +105008,7 @@ LEXICON N_RYNTÄÄT
 0:tä   N_COMPOUND_ITTEN   ;
 
 LEXICON N_HYNTTYYT
+!!€gt-norm: Noun  ntyyaat plurt
 !!€ hynttyyt hynttyyt+N+Pl+Nom clothes
 !!$ hyntys hynttyyt+N+Sg+Nom
 0:tyy   N_FRONT_PLNOM_CLIT ;
@@ -104713,6 +105025,7 @@ LEXICON N_HYNTTYYT
 
 
 LEXICON N_RYNTTYYT
+!!€gt-norm: Noun  ntyyt plurt
 !!€ rynttyyt rynttyyt+N+Pl+Nom rags
 !!$ ryntys rynttyyt+N+Sg+Nom
 0:tyy N_FRONT_PLNOM_CLIT    ;
@@ -104728,6 +105041,7 @@ LEXICON N_RYNTTYYT
 0:ty   N_COMPOUND_ITTEN   ;
 
 LEXICON N_MALTAAT
+!!€gt-norm: Noun  ltaat plurt
 !!€ maltaat maltaat+N+Pl+Nom hops
 !!$ mallas maltaat+N+Sg+Nom
 0:taa   N_BACK_PLNOM_CLIT   ;
@@ -104743,6 +105057,7 @@ LEXICON N_MALTAAT
 0:ta   N_COMPOUND_ITTEN   ;
 
 LEXICON N_PORTAAT
+!!€gt-norm: Noun  rtaat plurt
 !!€ portaat portaat+N+Pl+Nom stairs
 !!$ porras portaat+N+Sg+Nom
 0:taa   N_BACK_PLNOM_CLIT   ;
@@ -104758,6 +105073,7 @@ LEXICON N_PORTAAT
 0:ta   N_COMPOUND_ITTEN   ;
 
 LEXICON N_SERKUKSET
+!!€gt-norm: Noun  kset plurt
 !!€ serkukset serkukset+N+Pl+Nom cousins
 !!$ serkus serkukset+N+Sg+Nom
 0:kse   N_BACK_PLNOM_CLIT   ;
@@ -104772,6 +105088,7 @@ LEXICON N_SERKUKSET
 0:s   N_COMPOUND_TEN  ;
 
 LEXICON N_YSTÄVYKSET
+!!€gt-norm: Noun  kset fr plurt
 !!€ ystävykset ystävykset+N+Pl+Nom friends
 !!$ ystävys ystävykset+N+Sg+Nom
 0:kse   N_FRONT_PLNOM_CLIT  ;
@@ -104786,6 +105103,7 @@ LEXICON N_YSTÄVYKSET
 0:s   N_COMPOUND_TEN  ;
 
 LEXICON N_OIKEUDET
+!!€gt-norm: Noun  sdet plurt
 !!€ oikeudet oikeudet+N+Pl+Nom rights
 !!$ oikeus oikeudet+N+Sg+Nom
 0:de    N_BACK_PLNOM_CLIT   ;
@@ -104798,6 +105116,7 @@ LEXICON N_OIKEUDET
 0:ks  N_COMPOUND_IEN ;
 
 LEXICON N_KAMPPEET
+!!€gt-norm: Noun  mppt plurt
 !!€ kamppeet kamppeet+N+Pl+Nom equipment
 !!$ kampe kamppeet+N+Sg+Nom
 0:pee   N_BACK_PLNOM_CLIT   ;
@@ -104813,6 +105132,7 @@ LEXICON N_KAMPPEET
 0:pe  N_COMPOUND_ITTEN   ;
 
 LEXICON N_HYNTTEET
+!!€gt-norm: Noun  ntteet plurt
 !!€ hyntteet hyntteet+N+Pl+Nom clothes
 !!$ hynte hyntteet+N+Sg+Nom
 0:tee   N_FRONT_PLNOM_CLIT  ;
@@ -104828,6 +105148,7 @@ LEXICON N_HYNTTEET
 0:te      N_COMPOUND_ITTEN   ;
 
 LEXICON N_PUKEET
+!!€gt-norm: Noun  ukeet plurt
 !!€ pukeet pukeet+N+Pl+Nom clothes
 !!$ pue pukeet+N+Sg+Nom
 0:kee   N_BACK_PLNOM_CLIT   ;
@@ -104843,6 +105164,7 @@ LEXICON N_PUKEET
 0:ke  N_COMPOUND_ITTEN   ;
 
 LEXICON N_KUULOKKEET
+!!€gt-norm: Noun  kkkeeet plurt
 !!€ kuulokkeet kuulokkeet+N+Pl+Nom earphones
 !!$ kuuloke kuulokkeet+N+Sg+Nom
 0:kee   N_BACK_PLNOM_CLIT   ;
@@ -104858,6 +105180,7 @@ LEXICON N_KUULOKKEET
 0:ke  N_COMPOUND_ITTEN   ;
 
 LEXICON N_VAATTEET
+!!€gt-norm: Noun  teeeeet plurt
 !!€ vaatteet vaatteet+N+Pl+Nom clothes
 !!$ vaate vaatteet+N+Sg+Nom
 0:tee   N_BACK_PLNOM_CLIT   ;
@@ -104873,6 +105196,7 @@ LEXICON N_VAATTEET
 0:te  N_COMPOUND_ITTEN   ;
 
 LEXICON N_PEITTEET
+!!€gt-norm: Noun  taateee plurt
 !!€ peitteet peitteet+N+Pl+Nom covers
 !!$ peite peitteet+N+Sg+Nom
 0:tee   N_FRONT_PLNOM_CLIT  ;
@@ -104888,6 +105212,7 @@ LEXICON N_PEITTEET
 0:te      N_COMPOUND_ITTEN   ;
 
 LEXICON N_SUHTEET
+!!€gt-norm: Noun  taad plurt
 !!€ suhteet suhteet+N+Pl+Nom relations
 !!$ suhde suhteet+N+Sg+Nom
 0:tee   N_BACK_PLNOM_CLIT   ;
@@ -104903,6 +105228,7 @@ LEXICON N_SUHTEET
 0:te  N_COMPOUND_ITTEN   ;
 
 LEXICON N_LAUTEET
+!!€gt-norm: Noun  daat plurt
 !!€ lauteet lauteet+N+Pl+Nom sitting bench in sauna
 !!$ laude lauteet+N+Sg+Nom
 0:tee   N_BACK_PLNOM_CLIT   ;
@@ -104918,6 +105244,7 @@ LEXICON N_LAUTEET
 0:te  N_COMPOUND_ITTEN   ;
 
 LEXICON N_SÄTEET
+!!€gt-norm: Noun  daat plurt
 !!€ säteet säteet+N+Pl+Nom rays
 !!$ säde säteet+N+Sg+Nom
 0:tee   N_FRONT_PLNOM_CLIT  ;
@@ -104933,6 +105260,7 @@ LEXICON N_SÄTEET
 0:te      N_COMPOUND_ITTEN   ;
 
 LEXICON N_SITEET
+!!€gt-norm: Noun  trate plurt
 !!€ siteet siteet+N+Pl+Nom restraints
 !!$ side siteet+N+Sg+Nom
 0:tee   N_FRONT_PLNOM_CLIT  ;
@@ -104948,6 +105276,7 @@ LEXICON N_SITEET
 0:te      N_COMPOUND_ITTEN   ;
 
 LEXICON N_TARPEET
+!!€gt-norm: Noun  veat plurt
 !!€ tarpeet tarpeet+N+Pl+Nom necessities
 !!$ tarve tarpeet+N+Sg+Nom
 0:pee   N_BACK_PLNOM_CLIT ;
@@ -104963,6 +105292,7 @@ LEXICON N_TARPEET
 0:pe  N_COMPOUND_ITTEN   ;
 
 LEXICON N_HIUTALEET
+!!€gt-norm: Noun  leat plurt
 !!€ hiutaleet hiutaleet+N+Pl+Nom flakes
 !!$ hiutale hiutaleet+N+Sg+Nom
 0:e     N_BACK_PLNOM_CLIT   ;
@@ -104987,6 +105317,7 @@ LEXICON N_HIUTALEET
 0:e      N_COMPOUND_ITTEN   ;
 
 LEXICON N_ALKEET
+!!€gt-norm: Noun  jeet plurt
 !!€ alkeet alkeet+N+Pl+Nom basics
 !!$ alje alkeet+N+Sg+Nom    
 0:kee   N_BACK_PLNOM_CLIT   ;
@@ -105002,6 +105333,7 @@ LEXICON N_ALKEET
 0:ke      N_COMPOUND_ITTEN   ;
 
 LEXICON N_PERKEET
+!!€gt-norm: Noun  jeat plurt
 !!€ perkeet perkeet+N+Pl+Nom fish scales and guts
 !!$ perje perkeet+N+Sg+Nom
 0:kee   N_FRONT_PLNOM_CLIT  ;
@@ -105017,6 +105349,7 @@ LEXICON N_PERKEET
 0:ke      N_COMPOUND_ITTEN   ;
 
 LEXICON N_POJAT
+!!€gt-norm: Noun pojat plurt
 !!€ pojat pojat+N+Pl+Nom boys
 !!$ poika pojat+N+Sg+Nom
 0:ja    N_BACK_PLNOM_CLIT   ;
@@ -105043,7 +105376,6 @@ LEXICON N_POJAT
 ! here, so look into this. Trond.
 
 LEXICON N_KYNNET
-!!€ kynsiin kynsi+N+Pl+Ill
 0:ne N_FRONT_PLNOM_CLIT  ;
 0:s N_FRONT_PLURALS    ;
 0:s N_FRONT_PARTITIVE_IÄ    ;

@@ -6,13 +6,10 @@
 !! nominal types. Numerals have two subclasses, cardinals and ordinals.
 
 ! TODO: unimpl.
-! [[2-9]*100|100]?[[[2-9]*10|10][1-9]?]|[[1-9][2.-10.]]?[1-9]]
-! [[kaksi-yhdeksän]?[sataa]|sata]
-! [?[kaksi-yhdeksän]?[kymmentä]?|[kymmenen]
 LEXICON NUM
 !! Numerals have been split in three sections, the compounding parts
 !! of cardinals and ordinals, and the non-compounding ones:
-!!€gt-norm: Numeral basic examples
+!!€gt-norm: Numeral
 !!€ kaksikymmentäkolmetuhatta kaksi+Num+Card+Sg+Nom#kymmenen+Num+Card+Sg+Par#kolme+Num+Card+Sg+Nom#tuhat+Num+Card+Sg+Par 23,000
 !!€ kahdessadasneljäs kahdes+Num+Ord+Sg+Nom#sadas+Num+Ord+Sg+Nom#neljäs+Num+Ord+Sg+Nom 204rd
 !!€ viitisenkymmentä viitisen+Num#kymmentä 50-ish
@@ -22,7 +19,7 @@ LEXICON NUM
 
 LEXICON NUM_CARD_ALL
 !! The compounding parts of cardinals are the number multiplier words.
-!!€gt-norm: Numeral cardinals
+!!€gt-norm: cardinal
 !!€ yksi yksi+Num+Card+Sg+Nom one
 !!€ viidelle viisi+Num+Card+Sg+All five
 !!€ tuhatta tuhat+Num+Card+Sg+Par thousand
@@ -383,6 +380,7 @@ LEXICON NUM_YKSI
 0:ks    NUM_FRONT_PLURALS ;
 
 LEXICON NUM_KAKSI
+!!€gt-norm: Numerals 31 back§
 !!€ kaksi kaksi+Num+Card+Sg+Nom
 !!€ kahteen kaksi+Num+Card+Sg+Ill
 !!€ kahtena kaksi+Num+Card+Sg+Ess
@@ -448,7 +446,7 @@ LEXICON NUM_NELJÄ
 0    NUM_FRONT_PLURALS ;
 
 LEXICON NUM_VIISI
-!!€gt-norm: Numerals 27
+!!€gt-norm: Numerals 27 front
 !!€ viisi viisi+Num+Card+Sg+Nom
 !!€ viiteen viisi+Num+Card+Sg+Ill
 !!€ viitenä viisi+Num+Card+Sg+Ess
@@ -472,6 +470,7 @@ LEXICON NUM_VIISI
 0:s     NUM_FRONT_ILLATIVE_IIN   ;
 
 LEXICON NUM_KUUSI
+!!€gt-norm: Numerals 27 back
 !!€ kuusi kuusi+Num+Card+Sg+Nom
 !!€ kuutena kuusi+Num+Card+Sg+Ess
 !!€ kuudessa kuusi+Num+Card+Sg+Ine
@@ -518,6 +517,7 @@ LEXICON NUM_KAHDEKSAN
 0       NUM_BACK_PLURALS ;
 
 LEXICON NUM_YHDEKSÄN
+!!€gt-norm: Numerals 10n front
 !!€ yhdeksän yhdeksän+Num+Card+Sg+Nom
 !!€ yhdeksää yhdeksän+Num+Card+Sg+Par
 !!€ yhdeksään yhdeksän+Num+Card+Sg+Ill
@@ -653,6 +653,7 @@ LEXICON NUM_MILJARDI
 
 
 LEXICON NUM_GOOGOL
+!!€gt-norm: Numerals 5 more
 !!€ Googol Googol+Num+Card+Sg+Nom
 0   NUM_BACK_NOMINATIVE ;
 0:i NUM_BACK_SINGULARS   ;
@@ -664,6 +665,7 @@ LEXICON NUM_GOOGOL
 0   NUM_BACK_GENITIVE_IEN   ;
 
 LEXICON NUM_PARI
+!!€gt-norm: Numerals 5 moremore
 !!€ pari pari+Num+Card+Sg+Nom
 !!€ parina pari+Num+Card+Sg+Ess
 !!€ parissa pari+Num+Card+Sg+Ine
@@ -707,6 +709,7 @@ LEXICON NUM_ENSIMMÄINEN
 +Der/s:s    N_COMPOUND     ;
 
 LEXICON NUM_TOINEN
+!!€gt-norm: Numerals 38 back
 !!€ toinen toinen+Num+Ord+Sg+Nom
 !!€ toiseen toinen+Num+Ord+Sg+Ill
 !!€ toista toinen+Num+Ord+Sg+Par
@@ -751,6 +754,7 @@ LEXICON NUM_KOLMAS
 0:ns    NUM_BACK_PLURALS ;
 
 LEXICON NUM_NELJÄS
+!!€gt-norm: Numerals 45 fron
 !!€ neljäs neljäs+Num+Ord+Sg+Nom
 !!€ neljänteen neljäs+Num+Ord+Sg+Ill
 !!€ neljäntenä neljäs+Num+Ord+Sg+Ess
