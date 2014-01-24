@@ -499,7 +499,7 @@ LEXICON A_FRONT_ILLATIVE_ISIIN
 +Pl+Ill:%>i%>sii   A_FRONT_POSS     ;
 
 LEXICON A_FRONT_POSS
-!!gt-norm: Adjective possessive back
+!!€gt-norm: Adjective possessive back
 !!€ tyhmäni tyhmä+A+Sg+Nom+PxSg1
 +PxSg1:%>ni  A_FRONT_CLIT_OPT        ;
 +PxSg2:%>si  A_FRONT_CLIT_OPT        ;
@@ -509,7 +509,7 @@ LEXICON A_FRONT_POSS
 +PxPl3:%>nsä A_FRONT_CLIT_OPT        ;
 
 LEXICON A_BACK_POSS
-!!gt-norm: Adjective possessive front
+!!€gt-norm: Adjective possessive front
 !!€ rumani ruma+A+Sg+Nom+PxSg1
 +PxSg1:%>ni  A_BACK_CLIT_OPT        ;
 +PxSg2:%>si  A_BACK_CLIT_OPT        ;
@@ -519,25 +519,25 @@ LEXICON A_BACK_POSS
 +PxPl3:%>nsa A_BACK_CLIT_OPT        ;
 
 LEXICON A_BACK_POSS_AN
-!!gt-norm: Adjective possessive an
+!!€gt-norm: Adjective possessive an
 !!€ kieroaan kiero+A+Sg+Par+PxSg3
 +PxSg3:%>an    A_BACK_CLIT_OPT     ;
 +PxPl3:%>an    A_BACK_CLIT_OPT     ;
 
 LEXICON A_BACK_POSS_EN
-!!gt-norm: Adjective possessive en back
+!!€gt-norm: Adjective possessive en back
 !!€ rumalleen ruma+A+Sg+All+PxSg3
 +PxSg3:%>en    A_BACK_CLIT_OPT     ;
 +PxPl3:%>en    A_BACK_CLIT_OPT     ;
 
 LEXICON A_FRONT_POSS_EN
-!!gt-norm: Adjective possessive en front
+!!€gt-norm: Adjective possessive en front
 !!€ tyhmälleen tyhmä+A+Sg+All+PxSg3
 +PxSg3:%>en    A_FRONT_CLIT_OPT     ;
 +PxPl3:%>en    A_FRONT_CLIT_OPT     ;
 
 LEXICON A_FRONT_POSS_ÄN
-!!gt-norm: Adjective possessive än
+!!€gt-norm: Adjective possessive än
 !!€ hölmöään hölmö+A+Sg+Par+PxSg3
 +PxSg3:%>än    A_FRONT_CLIT_OPT     ;
 +PxPl3:%>än    A_FRONT_CLIT_OPT     ;
