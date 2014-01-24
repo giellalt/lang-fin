@@ -2,9 +2,10 @@
 
 LEXICON DIGITS_YKSI
 !! The digit strings ending in digit 1 pronounced as number
-!!€ 1
-!!€ 1:t
-!!€ 1:ssä
+!!€gt-norm:
+!!€ 1       1+Num+Card+Sg+Nom
+!!€ 1:t     1+Num+Card+Pl+Nom
+!!€ 1:ssä   1+Num+Card+Sg+Ine
 0  DIGITS_COMPOUND   ;
 +Sg+Nom:0    #   ;
 +Sg+Nom:%:  DIGITS_FRONT_POSS    ;
