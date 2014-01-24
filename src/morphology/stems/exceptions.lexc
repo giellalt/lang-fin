@@ -8,9 +8,10 @@
 LEXICON EXCEPTIONS
 
 !! negation verb has partial inflection:
-!!€ en
-!!€ älkää
-!!€ älkööt
+!!€gt-norm: 
+!!€ en      ei+V+Neg+Act+Sg1
+!!€ älkää   ei+V+Neg+Act+Imprt+Pl2
+!!€ älkööt  ei+V+Neg+Act+Imprt+Pl3
 ei+V+Neg+Act+Sg1:en             V_FRONT_CLIT_OPT ;
 ei+V+Neg+Act+Sg1+Foc/ka:enkä    V_FRONT_CLIT_OPT ;
 ei+V+Neg+Act+Sg2:et             V_FRONT_CLIT_OPT ;
