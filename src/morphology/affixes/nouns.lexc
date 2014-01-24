@@ -391,9 +391,9 @@ LEXICON N_FRONT_ILLATIVE_SEEN
 !! Plural genitives have the most variants. Especially, many words have more or
 !! less free variation between handful of choices.
 LEXICON N_BACK_GENITIVE_IDEN
-!!€gt-norm: Noun plural genitive iden back
-!!€ lepakko lepakko+N+Sg+Nom bat
-!!€ lepakoiden lepakko+N+Pl+Gen
+!!€gt-norm:     Noun plural genitive iden back
+!!€ lepakko     lepakko+N+Sg+Nom bat
+!! € lepakoiden  lepakko+N+Pl+Gen
 +Pl+Gen:%>i%>den    N_BACK_CLIT_OPT     ;
 +Pl+Gen:%>i%>de     N_BACK_POSS     ;
 
@@ -781,44 +781,53 @@ LEXICON N_FRONT_POSS_EN_OBL
 !! parts are nominals and inflect regularly.
 
 LEXICON N_COMPOUND_0
-!!€gt-norm: Noun compounds
+!!€gt-norm:
 !!€ talojuttu talo+N+Sg+Nom#juttu+N+Sg+Nom
 +Sg+Nom:0   N_COMPOUND  ;
 
 LEXICON N_COMPOUND_N
+!!€gt-norm:
 !!€ talonjuttu talo+N+Sg+Gen#juttu+N+Sg+Nom
 +Sg+Gen:%>n               N_COMPOUND    ;
 
 LEXICON N_COMPOUND_IEN
+!!€gt-norm:
 !!€ naisienjuttu nainen+N+Pl+Gen#juttu+N+Sg+Nom
 +Pl+Gen:%>i%>en                 N_COMPOUND  ;
 
 LEXICON N_COMPOUND_IDEN
+!!€gt-norm: 
 !!€ lepakoidenjuttu lepakko+N+Pl+Gen#juttu+N+Sg+Nom
 +Pl+Gen:%>i%>den                 N_COMPOUND  ;
 
 LEXICON N_COMPOUND_IN
+!!€gt-norm:
 !!€ vanhempainjuttu vanhempi+N+Pl+Gen#juttu+N+Sg+Nom
 +Pl+Gen:%>i%>n                 N_COMPOUND     ;
 
 LEXICON N_COMPOUND_ITTEN
+!!€gt-norm:
 !!€ lepakoittenjuttu lepakko+N+Pl+Gen#juttu+N+Sg+Nom
 +Pl+Gen:%>i%>tten               N_COMPOUND     ;
 
 LEXICON N_COMPOUND_JEN
+!!€gt-norm:
 !!€ talojenjuttu talo+N+Pl+Gen#juttu+N+Sg+Nom
 +Pl+Gen:%>j%>en                 N_COMPOUND     ;
 
 LEXICON N_COMPOUND_TEN
+!!€gt-norm:
 !!€ miestenjuttu mies+N+Pl+Gen#juttu+N+Sg+Nom
 +Pl+Gen:%>ten                 N_COMPOUND     ;
 
 
 LEXICON N_COMPOUND_S
+!!€gt-norm:
 !!€ aakkostamisjuttu aakkostaminen+N+Der/s#juttu+N+Sg+Nom
 +Der/s:»s                   N_COMPOUND  ;
 
 LEXICON N_COMPOUND
+!!€gt-norm:
 !!€ talojuttu talo+N+Sg+Nom#juttu+N+Sg+Nom
 +Use/Circ#:0#     NOMINAL   ;
 
