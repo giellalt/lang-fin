@@ -51,6 +51,7 @@ surfweights.%.hfst: %.texts
 		-e 's/\([[:alpha:]]\)\([],:;(){}[] \)/\1 \2/g' \
 		-e 's/\([[:alpha:]]\)\([.!?]\ \+\)\([[:upper:]]\)/\1 \2\3/g' \
 		-e 's/[].:;,(){}!?[]$$/ \0/g' -e 's/^[].:;,(){}!?[]/\0 /g' |\
+		egrep -v '^[[:punct:][:digit:]]*$$' |\
 		tr -s ' ' '\n' |\
 		sort > $*.sorted
 	$(AM_V_at)wc -l < $*.sorted > $*.wordcount
