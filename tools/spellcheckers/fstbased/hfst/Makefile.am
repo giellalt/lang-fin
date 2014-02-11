@@ -63,8 +63,8 @@ surfweights.%.hfst: %.texts
 		-e "s/	/ + ($(ALPHA) */" -e "s/$$/))/" |\
 		bc > unitweight
 	$(AM_V_GEN)cat $*.uniqed |\
-		$(AWK) -v CS=`cat $*.wordcount` -v ALPHA=$(ALPHA) \
-		-v DS=`cat $*.typecount` -f uniqc2tropical.awk |\
+		$(AWK) -v CS="$$(cat $*.wordcount)" -v ALPHA=$(ALPHA) \
+		-v DS="$$(cat $*.typecount)" -f uniqc2tropical.awk |\
 		$(HFST_STRINGS2FST) -j $(HFST_FLAGS) -f openfst-tropical -o $@
 
 # OR: Just copy (no modification):
@@ -72,13 +72,19 @@ surfweights.%.hfst: %.texts
 #	$(AM_V_GEN)cp -f $< $@
 
 $(GT_SPELLER_HFST): ../$(GT_SPELLER_HFST) $(SURFWEIGHTS) $(TAGWEIGHTS)
-	$(AM_V_at)$(HFST_REWEIGHT) $(HFST_FLAGS) -e -a `cat unitweight` \
-		../$(GT_SPELLER_HFST) -o unitweighted.hfst
-	$(AM_V_GEN)$(HFST_COMPOSE) $(HFST_FLAGS) \
-		../$(GT_SPELLER_HFST) $(SURFWEIGHTS) |\
-		$(HFST_REWEIGHT) $(HFST_FLAGS) -T $(TAGWEIGHTS) |\
-		$(HFST_DISJUNCT) $(HFST_FLAGS) - unitweighted.hfst |\
-		$(HFST_MINIMIZE) $(HFST_FLAGS) -o $@
+	$(AM_V_at)$(HFST_REWEIGHT) $(HFST_FLAGS) -e -a $$(cat unitweight) $< \
+		-o unitweighted.hfst
+	$(AM_V_GEN)$(HFST_COMPOSE) $(HFST_FLAGS) $< $(SURFWEIGHTS) \
+		| $(HFST_DISJUNCT) $(HFST_FLAGS) - unitweighted.hfst \
+		| $(HFST_MINIMIZE) $(HFST_FLAGS) -o $@
+
+#$(GT_SPELLER_HFST): ../$(GT_SPELLER_HFST) $(SURFWEIGHTS) $(TAGWEIGHTS)
+#	$(AM_V_at)$(HFST_REWEIGHT) $(HFST_FLAGS) -e -a $$(cat unitweight) $< \
+#		-o unitweighted.hfst
+#	$(AM_V_GEN)$(HFST_COMPOSE) $(HFST_FLAGS) $< $(SURFWEIGHTS) \
+#		$(HFST_REWEIGHT) $(HFST_FLAGS) -T $(TAGWEIGHTS) |\
+#		$(HFST_DISJUNCT) $(HFST_FLAGS) - unitweighted.hfst |\
+#		$(HFST_MINIMIZE) $(HFST_FLAGS) -o $@
 
 include $(top_srcdir)/am-shared/tools-spellcheckers-fstbased-hfst-include.am
 
