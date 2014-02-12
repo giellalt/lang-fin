@@ -106,6 +106,9 @@ $(GT_SPELLER_HFST): ../$(GT_SPELLER_HFST) $(SURFWEIGHTS) \
 	$(AM_V_GEN)$(HFST_COMPOSE) $(HFST_FLAGS) $< $(SURFWEIGHTS) \
 		| $(HFST_DISJUNCT) $(HFST_FLAGS) - unitweighted.hfst \
 		| $(HFST_SUBSTITUTE) $(HFST_FLAGS) -F word-boundary.relabel \
+		| $(HFST_REMOVE_EPSILONS) $(HFST_FLAGS) \
+		| $(HFST_PUSH_WEIGHTS) $(HFST_FLAGS) --push=end \
+		| $(HFST_DETERMINIZE) $(HFST_FLAGS) \
 		| $(HFST_MINIMIZE) $(HFST_FLAGS) -o $@
 
 #$(GT_SPELLER_HFST): ../$(GT_SPELLER_HFST) $(SURFWEIGHTS) \
@@ -113,6 +116,10 @@ $(GT_SPELLER_HFST): ../$(GT_SPELLER_HFST) $(SURFWEIGHTS) \
 #	$(AM_V_GEN)$(HFST_COMPOSE) $(HFST_FLAGS) $< $(SURFWEIGHTS) \
 #		| $(HFST_REWEIGHT) $(HFST_FLAGS) -T $(TAGWEIGHTS) \
 #		| $(HFST_DISJUNCT) $(HFST_FLAGS) - unitweighted.hfst \
+#		| $(HFST_SUBSTITUTE) $(HFST_FLAGS) -F word-boundary.relabel \
+#		| $(HFST_REMOVE_EPSILONS) $(HFST_FLAGS) \
+#		| $(HFST_PUSH_WEIGHTS) $(HFST_FLAGS) --push=end \
+#		| $(HFST_DETERMINIZE) $(HFST_FLAGS) \
 #		| $(HFST_MINIMIZE) $(HFST_FLAGS) -o $@
 
 # OR: Just copy (no modification):
