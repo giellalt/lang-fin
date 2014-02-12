@@ -42,9 +42,12 @@
 #		| $(HFST_MINIMIZE) $(HFST_FLAGS) \
 #		-o $@
 
+# Use: surfweights.CORPUSNAME.hfst and CORPUSNAME.unitweight
 SURFWEIGHTS=surfweights.test.hfst
 UNITWEIGHT=test.unitweight
+# TSV file defining weights per tag
 TAGWEIGHTS=tags.reweight
+# ALPHA for additive smoothing, ]0, 1.0] seems good
 ALPHA=1.0
 
 %.cleaned: %.texts
