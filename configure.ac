@@ -58,6 +58,12 @@ AC_ARG_ENABLE([yamltests],
               [enable_yamltests=$enableval],
               [enable_yamltests=check])
 
+AC_ARG_ENABLE([minimised-spellers],
+              [AS_HELP_STRING([--enable-minimised-spellers],
+                              [minimise hfst spellers @<:@default=no@:>@])],
+              [enable_minimised_spellers=$enableval],
+              [enable_minimised_spellers=no])
+
 AS_IF([test "x$enable_yamltests" = "xcheck"], 
      [AM_PATH_PYTHON([3.1],, [:])
      AX_PYTHON_MODULE(yaml)
@@ -107,6 +113,9 @@ gt_PROG_SCRIPTS_PATHS
 # Tests and sets up HFST
 gt_PROG_HFST
 
+AS_IF([test "x$enable_minimised_spellers" = "xno"],
+      [AC_SUBST([HFST_MINIMIZE_SPELLER], $ac_cv_path_HFST_REMOVE_EPSILONS)],
+      [AC_SUBST([HFST_MINIMIZE_SPELLER], $ac_cv_path_HFST_MINIMIZE)])
 # Tests and sets up XFST
 gt_PROG_XFST
 
