@@ -48,13 +48,14 @@ TAGWEIGHTS=tags.reweight
 ALPHA=1.0
 
 %.cleaned: %.texts
-	$(AM_V_GEN)cat $< |\
-		sed -e 's/\( [].:;,(){}!?[]\)\([[:alpha:]]\)/\1 \2/g' \
-		-e 's/\([[:alpha:]]\)\([],:;(){}[] \)/\1 \2/g' \
-		-e 's/\([[:alpha:]]\)\([.!?]\ \+\)\([[:upper:]]\)/\1 \2\3/g' \
-		-e 's/[].:;,(){}!?[]$$/ \0/g' -e 's/^[].:;,(){}!?[]/\0 /g' |\
-		egrep -v '^[[:punct:][:digit:]]*$$' |\
-		tr -s ' ' '\n' > $@
+	$(AM_V_GEN)cat $< \
+		| sed -e 's/\( [].:;,(){}!?[]\)\([[:alpha:]]\)/\1 \2/g' \
+			-e 's/\([[:alpha:]]\)\([],:;(){}[] \)/\1 \2/g' \
+			-e 's/\([[:alpha:]]\)\([.!?]\ \+\)\([[:upper:]]\)/\1 \2\3/g' \
+			-e 's/[].:;,(){}!?[]$$/ \0/g' -e 's/^[].:;,(){}!?[]/\0 /g' \
+		| tr -s ' ' '\n' \
+		| egrep -v '^[[:punct:][:digit:]]*$$' \
+		> $@
 
 %.sorted: %.cleaned
 	$(AM_V_GEN)sort < $< > $@
@@ -79,18 +80,29 @@ ALPHA=1.0
 		$(AWK) -v CS="$$(cat $*.wordcount)" -v ALPHA=$(ALPHA) \
 		-v DS="$$(cat $*.typecount)" -f uniqc2tropical.awk > $@
 
-surfweights.%.hfst: %.tropical
+%.surfs.hfst: %.tropical
 	$(AM_V_GEN)cat $< |\
 		$(HFST_STRINGS2FST) -j $(HFST_FLAGS) -f openfst-tropical -o $@
 
-unitweighted.hfst: ../$(GT_SPELLER_HFST) $(UNITWEIGHT)
+%.hfst: %.att
+	$(AM_V_GEN)$(HFST_TXT2FST) $(HFST_FLAGS) -f openfst-tropical $< -o $@
+
+surfweights.%.hfst: %.surfs.hfst word-boundary.hfst
+	$(AM_V_GEN)$(HFST_CONCATENATE) $(HFST_FLAGS) word-boundary.hfst $< \
+		| $(HFST_REPEAT) $(HFST_FLAGS) -f 0 -t inf \
+		| $(HFST_CONCATENATE) $< - \
+		| $(HFST_MINIMIZE) -o $@
+
+unitweighted.hfst: ../$(GT_SPELLER_HFST) $(UNITWEIGHT) word-boundary
 	$(AM_V_GEN)$(HFST_REWEIGHT) $(HFST_FLAGS) -e -a $$(cat $(UNITWEIGHT)) $< \
-		-o unitweighted.hfst
+		| $(HFST_REWEIGHT) $(HFST_FLAGS) -S $$(cat word-boundary) \
+		-a $$(cat $(UNITWEIGHT)) -o unitweighted.hfst
 
 $(GT_SPELLER_HFST): ../$(GT_SPELLER_HFST) $(SURFWEIGHTS) \
 					$(TAGWEIGHTS) unitweighted.hfst
 	$(AM_V_GEN)$(HFST_COMPOSE) $(HFST_FLAGS) $< $(SURFWEIGHTS) \
 		| $(HFST_DISJUNCT) $(HFST_FLAGS) - unitweighted.hfst \
+		| $(HFST_SUBSTITUTE) $(HFST_FLAGS) -F word-boundary.relabel \
 		| $(HFST_MINIMIZE) $(HFST_FLAGS) -o $@
 
 #$(GT_SPELLER_HFST): ../$(GT_SPELLER_HFST) $(SURFWEIGHTS) \
