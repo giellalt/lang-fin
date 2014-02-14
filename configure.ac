@@ -132,6 +132,7 @@ AC_CONFIG_FILES([Makefile \
                  tools/shellscripts/Makefile \
                  tools/spellcheckers/Makefile \
                  tools/spellcheckers/fstbased/Makefile \
+                 tools/spellcheckers/fstbased/data/Makefile \
                  tools/spellcheckers/fstbased/hfst/Makefile \
                  tools/spellcheckers/fstbased/foma/Makefile \
                  tools/spellcheckers/listbased/Makefile])

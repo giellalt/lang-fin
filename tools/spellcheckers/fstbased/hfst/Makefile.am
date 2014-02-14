@@ -42,50 +42,16 @@
 #		| $(HFST_MINIMIZE) $(HFST_FLAGS) \
 #		-o $@
 
+# Name of speller corpus sans suffix:
+CORPUSNAME=spellercorpus
+
 # Use: surfweights.CORPUSNAME.hfst and CORPUSNAME.unitweight
-SURFWEIGHTS=surfweights.test.hfst
-UNITWEIGHT=test.unitweight
+SURFWEIGHTS=surfweights.$(CORPUSNAME).hfst
+UNITWEIGHT=$(CORPUSNAME).unitweight.txt
 # TSV file defining weights per tag
 TAGWEIGHTS=tags.reweight
-# ALPHA for additive smoothing, ]0, 1.0] seems good
+# ALPHA for additive smoothing, [0, 1.0] seems good
 ALPHA=1.0
-
-%.cleaned: %.texts
-	$(AM_V_GEN)cat $< \
-		| sed -e 's/\( [].:;,(){}!?[]\)\([[:alpha:]]\)/\1 \2/g' \
-			-e 's/\([[:alpha:]]\)\([],:;(){}[] \)/\1 \2/g' \
-			-e 's/\([[:alpha:]]\)\([.!?]\ \+\)\([[:upper:]]\)/\1 \2\3/g' \
-			-e 's/[].:;,(){}!?[]$$/ \0/g' -e 's/^[].:;,(){}!?[]/\0 /g' \
-		| tr -s ' ' '\n' \
-		| egrep -v '^[[:punct:][:digit:]]*$$' \
-		> $@
-
-%.sorted: %.cleaned
-	$(AM_V_GEN)sort < $< > $@
-
-%.wordcount: %.sorted
-	$(AM_V_GEN)wc -l < $< > $@
-
-%.uniqed: %.sorted
-	$(AM_V_at)uniq -c < $< > $@
-
-%.typecount: %.uniqed
-	$(AM_V_GEN)wc -l < $< > $@
-
-%.unitweight: %.wordcount %.typecount
-	$(AM_V_GEN)paste $*.wordcount $*.typecount |\
-		sed -e "s/^/scale=5; -l($(ALPHA)\/(/" \
-		-e "s/	/ + ($(ALPHA) */" -e "s/$$/)))/" |\
-		bc -l > $@
-
-%.tropical: %.uniqed %.wordcount %.typecount
-	$(AM_V_GEN)cat $*.uniqed |\
-		$(AWK) -v CS="$$(cat $*.wordcount)" -v ALPHA=$(ALPHA) \
-		-v DS="$$(cat $*.typecount)" -f uniqc2tropical.awk > $@
-
-%.surfs.hfst: %.tropical
-	$(AM_V_GEN)cat $< |\
-		$(HFST_STRINGS2FST) -j $(HFST_FLAGS) -f openfst-tropical -o $@
 
 %.hfst: %.att
 	$(AM_V_GEN)$(HFST_TXT2FST) $(HFST_FLAGS) -f openfst-tropical $< -o $@
