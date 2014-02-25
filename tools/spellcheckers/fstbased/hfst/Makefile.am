@@ -53,49 +53,6 @@ TAGWEIGHTS=tags.reweight
 # ALPHA for additive smoothing, [0, 1.0] seems good
 ALPHA=1.0
 
-OXT_FILES=
-
-if CAN_LOCALSYNC
-OXT_ROOT_DIR=$(GTHOME)/prooftools/toollibs
-OXT_WIN_SRC_DIR=win/LibreOffice-voikko
-OXT_MAC_SRC_DIR=mac/LibreOffice-voikko
-
-#### LO versions and bit width, valid values: ####
-# 3.6 (actually 3.6-4.0, implicitly 32-bit, both LO and OOo)
-# 4.1 (actually 4.1+,    implicitly 32-bit, LO only)
-#
-# These values corresponds to the version ID in the dir name of
-# the oxt template
-LO_VERSIONS=3.6 4.1
-
-# List of platforms supported by the build (Linux excluded, because the
-# oxt is distributed via package managers instead):
-LO_PLATFORMS=mac win
-
-OXT_FILES+=$(GTLANG2)_LO_$(LO_VERSION)-voikko_win.oxt \
-           $(GTLANG2)_LO_$(LO_VERSION)-voikko-32bit_mac.oxt
-endif # CAN_LOCALSYNC
-
-# Build receipt for OXT:
-# mkdir build dir
-# rsync into build/subdir
-# cp zhfst
-# modify oxt index file
-# zip build/subdir
-# copy to ./
-%.oxt: $(GT_SPELLING_HFST)
-	$(AM_V_GEN)rm -f $@ && \
-		$(MKDIR_P) && \
-		cd build/$* && \
-		$(RSYNC) -av $(OXT_ROOT_DIR)/
-		$(ZIP) $(ZIPFLAGS) *
-
-# Create tmp build dir, and copy all needed files into it:
-: $(GT_SPELLING_HFST)
-	$(AM_V_GEN)$(MKDIR_P) && \
-		cd build/$* && \
-		$(RSYNC) -av $(OXT_ROOT_DIR)/
-
 %.hfst: %.att
 	$(AM_V_GEN)$(HFST_TXT2FST) $(HFST_FLAGS) -f openfst-tropical $< -o $@
 
