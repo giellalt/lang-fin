@@ -20,7 +20,7 @@ GT_SPELLER_ACCEPTOR=acceptor.default.hfst
 
 # This is how we zip files to work with hfst-ospell and libvoikko
 # (=max compression, working from 28.1.2014 for all platforms):
-ZIPFLAGS=-9
+ZIPFLAGS=-9 -r
 
 ####### Automake targets: ########
 
@@ -52,7 +52,7 @@ endif # WANT_VOIKKO
 endif # CAN_HFST
 endif # WANT_SPELLERS
 
-noinst_DATA=$(GT_ERRMODELS)
+noinst_DATA=$(GT_ERRMODELS) $(OXT_FILES)
 
 ###################################
 ####### HFST build rules: #########
@@ -178,6 +178,68 @@ $(GT_SPELLING_HFST): index.xml \
 	$(AM_V_GEN)rm -f $@ && $(ZIP) $(ZIPFLAGS) $@ $^ && \
 		$(MKDIR_P) 3 && \
 		cp -f $@ 3/
+
+####### *.oxt files: #######
+# Hard-coded paths for the time being - to be generalised later.
+
+OXT_FILES=
+
+if CAN_LOCALSYNC
+
+OXT_FILES+=$(GTLANG2)_LO-voikko-3.6-32b-win.oxt \
+           $(GTLANG2)_LO-voikko-4.1-32b-mac.oxt
+
+endif # CAN_LOCALSYNC
+
+#### LO versions and bit width, valid values: ####
+# 3.6 (actually 3.6-4.0, implicitly 32-bit, both LO and OOo)
+# 4.1 (actually 4.1+,    implicitly 32-bit, LO only)
+#
+# These values corresponds to the version ID in the dir name of
+# the oxt template
+LO_VERSIONS=3.6 4.1
+
+# List of platforms supported by the build (Linux excluded, because the
+# oxt is distributed via package managers instead):
+LO_PLATFORMS=mac win
+
+# Bitness:
+LO_BITNESS=32b 64b
+
+#$(GTLANG2)_LO-voikko-$(LO_VERSION)-32b-win.oxt
+#OXT_FILES+=$(addsuffix .oxt, \
+#            $(addprefix \
+#                $(addprefix $(GTLANG2)_LO-voikko-,$(LO_VERSIONS)), \
+#                    $(addprefix $(GTLANG2)_LO-voikko-,$(LO_BITNESS)), \
+#                        $(LO_PLATFORMS)))
+#
+#LO_BIT_PLATFORMS=$(addprefix ,$(addprefix -,$(LO_PLATFORMS)))
+
+OXT_ROOT_DIR=$(GTHOME)/prooftools/toollibs/LibreOffice-voikko
+
+# Build receipt for OXT:
+# mkdir build dir
+# rsync into build/subdir
+# cp zhfst
+# modify oxt index file
+# zip build/subdir
+# copy to ./
+$(GTLANG2)_LO-voikko-4.1-32b-mac.oxt: $(GT_SPELLING_HFST)
+	$(AM_V_GEN)rm -f $@ && \
+		$(MKDIR_P) build/mac/ && \
+		cd build/mac && \
+		$(RSYNC) -av $(OXT_ROOT_DIR)/4.1-32b-mac/ ./ && \
+		cp ../../$< 3/ && \
+		$(ZIP) $(ZIPFLAGS) ../../$@ *
+
+$(GTLANG2)_LO-voikko-3.6-32b-win.oxt: $(GT_SPELLING_HFST)
+	$(AM_V_GEN)rm -f $@ && \
+		$(MKDIR_P) build/win/ && \
+		cd build/win && \
+		$(RSYNC) -av $(OXT_ROOT_DIR)/3.6-32b-win/ ./ && \
+		cp ../../$< 3/ && \
+		$(ZIP) $(ZIPFLAGS) ../../$@ *
+
 
 ####### Other targets: ###########
 clean-local:
