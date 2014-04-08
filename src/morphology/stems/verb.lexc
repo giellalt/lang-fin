@@ -12419,6 +12419,7 @@ LEXICON V_KOPIOIDA
 0:i   V_BACK_PASSIVE    ;
 0:i   V_BACK_TUPCP_D  ;
 0:i        V_BACK_DERIV_PCPS ;
+!0:i        V_BACK_DERIV_NTI ;
 
 LEXICON V_ÖYKKÄRÖIDÄ
 !!€gt-norm: Verbs 62 front
@@ -12437,6 +12438,7 @@ LEXICON V_ÖYKKÄRÖIDÄ
 0:i   V_FRONT_PASSIVE    ;
 0:i   V_FRONT_TUPCP_D  ;
 0:i        V_FRONT_DERIV_PCPS ;
+!0:i        V_FRONT_DERIV_NTI ;
 
 LEXICON V_SAADA
 !!€gt-norm: Verbs 63 a
@@ -12455,6 +12457,7 @@ LEXICON V_SAADA
 0:a   V_BACK_PASSIVE    ;
 0:a   V_BACK_TUPCP_D  ;
 0:a        V_BACK_DERIV_PCPS ;
+!0:a        V_BACK_DERIV_NTI ;
 
 LEXICON V_MYYDÄ
 !!€gt-norm: Verbs 63 y
@@ -12473,6 +12476,7 @@ LEXICON V_MYYDÄ
 0:y   V_FRONT_PASSIVE    ;
 0:y   V_FRONT_TUPCP_D  ;
 0:y        V_FRONT_DERIV_PCPS ;
+!0:y        V_FRONT_DERIV_NTI ;
 
 LEXICON V_JÄÄDÄ
 !!€gt-norm: Verbs 63 ä
@@ -12491,6 +12495,7 @@ LEXICON V_JÄÄDÄ
 0:ä   V_FRONT_PASSIVE    ;
 0:ä   V_FRONT_TUPCP_D  ;
 0:ä        V_FRONT_DERIV_PCPS ;
+!0:ä        V_FRONT_DERIV_NTI ;
 
 !! !Monosyllabic verbs with widening diphthong
 !! Widening diphthongs are simplified before past and conditional suffix i's
@@ -12513,6 +12518,7 @@ LEXICON V_VIEDÄ
 0:ie  V_FRONT_PASSIVE    ;
 0:ie  V_FRONT_TUPCP_D  ;
 0:ie       V_FRONT_DERIV_PCPS ;
+!0:ie        V_FRONT_DERIV_NTI ;
 
 LEXICON V_TUODA
 !!€gt-norm: Verbs 64 uo
@@ -12531,6 +12537,7 @@ LEXICON V_TUODA
 0:uo  V_BACK_PASSIVE    ;
 0:uo  V_BACK_TUPCP_D  ;
 0:uo       V_BACK_DERIV_PCPS ;
+!0:uo        V_BACK_DERIV_NTI ;
 
 LEXICON V_SYÖDÄ
 !!€gt-norm: Verbs 64 yö
@@ -12549,6 +12556,7 @@ LEXICON V_SYÖDÄ
 0:yö  V_FRONT_PASSIVE    ;
 0:yö  V_FRONT_TUPCP_D  ;
 0:yö       V_FRONT_DERIV_PCPS ;
+!0:yö        V_FRONT_DERIV_NTI ;
 
 !! In past and conditional forms of käydä, the glide before suffix is marked
 !! even in normative orthography.
@@ -12570,6 +12578,7 @@ LEXICON V_KÄYDÄ
 0:y  V_FRONT_PASSIVE    ;
 0:y  V_FRONT_TUPCP_D  ;
 0:y        V_FRONT_DERIV_PCPS ;
+!0:y        V_FRONT_DERIV_NTI ;
 
 !! !Verbs with consonant stems
 
