@@ -1,10 +1,12 @@
 prefix=@prefix@
 exec_prefix=${prefix}
 libdir=@libdir@
-dir=@libdir@/giella/fin
-srcdir=@datarootdir@/giella/fin
+datadir=@datarootdir@
+gtlang=fin
+dir=${datadir}/giella/${gtlang}
+srcdir=${datadir}/giella/${gtlang}
 
 Name: giella-fin
-Description: Finite-state transducers and other language processing tools for Finnish, developed by the Giellatekno and Divvun groups at UiT The Arctic University of Norway, in cooperation with the language communities.
-URL: 
+Description: Finite-state language processing tools for Finnish
+URL: http://giellatekno.uit.no/doc/index.html
 Version: @VERSION@
