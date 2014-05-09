@@ -24,7 +24,7 @@
 # third is email address for bug reports
 # fourth is name of packages made by make dist, excluding .tar.gz
 # fifth is the project web address
-AC_INIT([gtlangs-fin], [20120821], [flammie@iki.fi], [gtlangs-fin],
+AC_INIT([giella-fin], [20120821], [flammie@iki.fi], [giella-fin],
         [http://code.google.com/p/omorfi])
 # AC_REVISION is used to get SVN revision into bug reports
 AC_REVISION([$Revision$])
@@ -118,6 +118,7 @@ gt_ENABLE_TARGETS
 
 # List all non-script files processed by Autoconf.
 AC_CONFIG_FILES([Makefile \
+                 giella-fin.pc \
                  src/Makefile \
                  src/filters/Makefile \
                  src/hyphenation/Makefile \
