@@ -62,16 +62,16 @@ surfweights.%.hfst: %.surfs.hfst word-boundary.hfst
 		| $(HFST_CONCATENATE) $< - \
 		| $(HFST_MINIMIZE) -o $@
 
-unitweighted.hfst: ../$(GT_SPELLER_HFST) $(UNITWEIGHT) word-boundary
+unitweighted.hfst: ../$(GT_SPELLER_HFST) $(UNITWEIGHT) $(srcdir)/word-boundary
 	$(AM_V_GEN)$(HFST_REWEIGHT) $(HFST_FLAGS) -e -a $$(cat $(UNITWEIGHT)) $< \
-		| $(HFST_REWEIGHT) $(HFST_FLAGS) -S $$(cat word-boundary) \
+		| $(HFST_REWEIGHT) $(HFST_FLAGS) -S $$(cat $(srcdir)/word-boundary) \
 		-a $$(cat $(UNITWEIGHT)) -o unitweighted.hfst
 
 $(GT_SPELLER_HFST): ../$(GT_SPELLER_HFST) $(SURFWEIGHTS) \
 					$(TAGWEIGHTS) unitweighted.hfst
-	$(AM_V_GEN)$(HFST_COMPOSE) $(HFST_FLAGS) $< $(SURFWEIGHTS) \
+	$(AM_V_GEN)$(HFST_COMPOSE) $(HFST_FLAGS) -F $< $(SURFWEIGHTS) \
 		| $(HFST_DISJUNCT) $(HFST_FLAGS) unitweighted.hfst \
-		| $(HFST_SUBSTITUTE) $(HFST_FLAGS) -F word-boundary.relabel \
+		| $(HFST_SUBSTITUTE) $(HFST_FLAGS) -F $(srcdir)/word-boundary.relabel \
 		| $(HFST_MINIMIZE_SPELLER) $(HFST_FLAGS) -o $@
 
 #$(GT_SPELLER_HFST): ../$(GT_SPELLER_HFST) $(SURFWEIGHTS) \
