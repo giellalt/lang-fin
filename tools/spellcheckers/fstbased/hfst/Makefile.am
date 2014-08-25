@@ -72,7 +72,7 @@ $(GT_SPELLER_HFST): ../$(GT_SPELLER_HFST) $(SURFWEIGHTS) \
 	$(AM_V_GEN)$(HFST_COMPOSE) $(HFST_FLAGS) -F $< $(SURFWEIGHTS) \
 		| $(HFST_DISJUNCT) $(HFST_FLAGS) unitweighted.hfst \
 		| $(HFST_SUBSTITUTE) $(HFST_FLAGS) -F $(srcdir)/word-boundary.relabel \
-		| $(HFST_MINIMIZE_SPELLER) $(HFST_FLAGS) -o $@
+		| $(HFST_REMOVE_EPSILONS) $(HFST_FLAGS) -o $@
 
 #$(GT_SPELLER_HFST): ../$(GT_SPELLER_HFST) $(SURFWEIGHTS) \
 #					$(TAGWEIGHTS) unitweighted.hfst
