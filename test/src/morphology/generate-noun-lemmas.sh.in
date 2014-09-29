@@ -54,25 +54,27 @@ Fail=0
 for f in $fsttype; do
 	if [ $f == "xfst" ]; then
 		lookuptool="@LOOKUP@ -q -flags mbTT"
+		suffix="xfst"
 	elif [ $f == "hfst" ]; then
 		lookuptool="@HFST_LOOKUP@ -q"
+		suffix="hfstol"
 	else
 	    Fail=1
 		printf "ERROR: Unknown fst type! "
 	    echo "$f - FAIL"
 	    continue
 	fi
-	if [ -f "$generatorfile.$f" ]; then
+	if [ -f "$generatorfile.$suffix" ]; then
 
 ###### Test non-comopunds: #######
 		# Regular nouns:
-		sed 's/$/+N+Sg+Nom/' $lemmas | $lookuptool $generatorfile.$f \
+		sed 's/$/+N+Sg+Nom/' $lemmas | $lookuptool $generatorfile.$suffix \
 			| cut -f2 | fgrep -v "+N+Sg" | grep -v "^$" | sort -u \
 			> $generatedlemmas.$f.txt 
 		# Plural nouns:
-		sed 's/$/+N+Sg+Nom/' $lemmas | $lookuptool $generatorfile.$f \
+		sed 's/$/+N+Sg+Nom/' $lemmas | $lookuptool $generatorfile.$suffix \
 			| cut -f2 | grep "N+" | cut -d "+" -f1 | sed 's/$/+N+Pl+Nom/' \
-			| $lookuptool $generatorfile.$f | cut -f2 \
+			| $lookuptool $generatorfile.$suffix | cut -f2 \
 			| grep -v "^$" >> $generatedlemmas.$f.txt 
 		# uninflected nouns:
 		sed 's/$/+N+Sg+Nom/' $lemmas | $lookuptool $generatorfile.$f \
