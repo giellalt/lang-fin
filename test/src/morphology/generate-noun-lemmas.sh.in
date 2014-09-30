@@ -77,11 +77,11 @@ for f in $fsttype; do
 			| $lookuptool $generatorfile.$suffix | cut -f2 \
 			| grep -v "^$" >> $generatedlemmas.$f.txt 
 		# uninflected nouns:
-		sed 's/$/+N+Sg+Nom/' $lemmas | $lookuptool $generatorfile.$f \
+		sed 's/$/+N+Sg+Nom/' $lemmas | $lookuptool $generatorfile.$suffix \
 			| cut -f2 | grep "N+" | cut -d "+" -f1 | sed 's/$/+N+Pl+Nom/' \
-			| $lookuptool $generatorfile.$f | cut -f2 \
+			| $lookuptool $generatorfile.$suffix | cut -f2 \
 			| cut -f2 | grep "N+" | cut -d "+" -f1 | sed 's/$/+N/' \
-			| $lookuptool $generatorfile.$f | cut -f2 \
+			| $lookuptool $generatorfile.$suffix | cut -f2 \
 			| grep -v "^$" >> $generatedlemmas.$f.txt 
 
 ###### Collect results: #######
