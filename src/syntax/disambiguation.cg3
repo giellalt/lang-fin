@@ -1923,6 +1923,10 @@ REMOVE (Imprt) (*-1C VFIN LINK NOT *1 CLB?) (NOT -1 CLB?)
 REMOVE Imprt (0 ("myös"));
 #REMOVE (Imprt) (0 ("myös"));
 #REMOVE (Imprt) (0 ("myös"));
+
+## The following two rules match the Impr analysis of "tule", tt, hjk
+REMOVE:NegImprt (Ind) (*-1 Neg + Act + Imprt)(0 Imprt)
+REMOVE:NegInd (Imprt) (*-1 Neg + Act LINK NOT 0 Imprt)(0 Ind)
 ## InfINITIVES
 SELECT (InfA) (-2C InfA) (-1 C) (1 CLB?) (NOT 0 UUSIA)
   # "...voidaan käsitellä ja ylläpitää,"
