@@ -24,6 +24,7 @@ LEXICON V_BACK_WEAK_PRESENT
 +Act+Ind+Prs+Pl1:%>mme   V_BACK_CLIT_OPT     ;
 +Act+Ind+Prs+Pl2:%>tte   V_BACK_CLIT_OPT     ;
 +Ind+Prs+ConNeg:%>0    V_BACK_CLIT_OPT     ;
++Imprt+Prs+ConNeg:%>0    V_BACK_CLIT_OPT     ;
 +Act+Imprt+Sg2:%>0    V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_WEAK_PRESENT
@@ -35,6 +36,7 @@ LEXICON V_FRONT_WEAK_PRESENT
 +Act+Ind+Prs+Pl1:%>mme   V_FRONT_CLIT_OPT     ;
 +Act+Ind+Prs+Pl2:%>tte   V_FRONT_CLIT_OPT     ;
 +Ind+Prs+ConNeg:%>0    V_FRONT_CLIT_OPT     ;
++Imprt+Prs+ConNeg:%>0    V_FRONT_CLIT_OPT     ;
 +Act+Imprt+Sg2:%>0    V_FRONT_CLIT_OPT     ;
 
 !! The strong form of present indicative endings in strong stems and ma 
