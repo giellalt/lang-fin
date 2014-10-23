@@ -6,7 +6,7 @@
 TAGSET_SRCS=apertium.est.relabel
 
 # List reorder regex source files here:
-REGEX_SRCS=modify-tags.est.regex
+REGEX_SRCS=modify-tags.regex
 
 ####### Other targets: ###########
 
