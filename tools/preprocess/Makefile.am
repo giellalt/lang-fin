@@ -19,7 +19,7 @@ if CAN_XFST
 GENERATOR=generator-gt-desc.xfst
 else
 if CAN_HFST
-GENERATOR=generator-gt-desc.hfst
+GENERATOR=generator-gt-desc.hfstol
 else
 GENERATOR=false
 endif # CAN_HFST
@@ -35,11 +35,11 @@ SCRIPTDIR=$(GTCORE)/scripts
 
 abbr: abbr.txt
 abbr.txt: \
-		$(top_srcdir)/src/morphology/stems/abbreviations.lexc \
+		$(top_srcdir)/src/morphology/stems/abbr.lexc \
 		$(top_srcdir)/test/data/paradigm.$(GTLANG).txt        \
 		$(top_srcdir)/test/data/korpustags.$(GTLANG).txt      \
 		$(SRCS) \
-		../../src/$(GENERATOR)
+		$(top_builddir)/src/$(GENERATOR)
 	$(AM_V_GEN)perl -I $(SCRIPTDIR) $(SCRIPTDIR)/extract-abbr.pl  \
 		--paradigm=$(top_srcdir)/test/data/paradigm.$(GTLANG).txt \
 		--tags=$(top_srcdir)/test/data/korpustags.$(GTLANG).txt   \
