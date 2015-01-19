@@ -75,7 +75,8 @@ LIST Rel = Rel ;
 LIST Refl = Refl ;
 LIST Recipr = Recipr ;
 LIST Indef = Indef ;
-LIST Qu = Qu ; # Check whether this is Interr
+LIST Qu = Qu ; # Check whether this is Interr or Quantifier
+      
 
 # Morphosyntactic properties
 # --------------------------
@@ -217,7 +218,7 @@ LIST DA-US = DA-US ;
 LIST DV-TTA = DV-TTA ; 
 LIST DV-US = DV-US ; 
 
-LIST DER = DA-UUS DA-US DN-IneN DN-LAIneN DN-LLIneN DN-UUS DN-MINEN Der/minen Der/u ;
+LIST DER = DA-UUS DA-US DN-IneN DN-LAIneN DN-LLIneN DN-UUS DN-MINEN Der/minen Der/u Der_minen ; # Added with _
 LIST DV = DV-MINEN DV-US DV-NTA DV-TTA ; 
 
 # All derivation tags in omorfi: 
@@ -282,7 +283,7 @@ LIST NomINAL-FORM = InfA InfE InfMa PrfPrc PrsPrc ;
 
 LIST V-Pl = Pl1 Pl2 Pl3 ; 
 LIST V-Sg = Sg1 Sg2 Sg3 ; 
-LIST VFIN = Prs Prt Cond POTN NEGV Imprt ; 
+LIST VFIN = Prs Prt Cond POTN Neg Imprt ; 
 LIST VFIN-C = Prs Prt Cond POTN NEGV Imprt C ; 
 LIST VFIN-C-MYOS = Prs Prt Cond POTN NEGV Imprt C "myös" ; 
 LIST VFIN-PCP = Prs Prt Cond POTN NEGV Imprt PrfPrc PrsPrc ; 
@@ -311,7 +312,7 @@ LIST AUX-S = "itse" "kaikki" "kumpikin" "molemmat" ;
 LIST AVOSYLIN = "avo_syli" ; 
 LIST Gen-PREP = "yli" "läpi" ; 
 LIST Gen-WORD = "metri" "milli_metri" "kilo_metri" "vuosi" "päivä" "kuu_kausi"  "minuutti" "sekunti" "tunti" "vuoro_kausi" "maa" "prosentti" "paras" "markka"  "penni" "dollari" "kruunu" "henkilö" "kierros" "maa" "maisema" "uutinen" "tienoo" ;
-LIST HARVA = "harva" "kumpikin" "suora" ; 
+LIST HARVA = "harva" "kumpikin" "suora" "enin" ; # "enin" added 19.01.2015 -FMT+KM
 LIST HARVA-SET = "asua" "tahti" "hammas" "verkko" "pensaikko" "asutus" ; 
 LIST HITTO = INTJ "hitto" "herra_jumala" "kuinka" "sinä" "te" "<\!>"  "hellanlettas" "saatana" "perkele" "vittu" "voi" ; 
 LIST HYVA = "hyvä" ; 
@@ -1277,8 +1278,13 @@ SELECT (Adv) (0 NIIN-NOIN-NAIN) (1C Adv) (1 MAN)
 SELECT (Adv) (0 NIIN-NOIN-NAIN) (NOT -1 ComMA) (1 A-A_N) (NOT *2 KUIN)
 # NIIN VIISAS
 SELECT (Adv) (0 NIIN-NOIN-NAIN) (1 C) (2 NIIN-NOIN-NAIN) (3 PALJON-MONI)
-REMOVE (Adv) (0 NIIN-NOIN-NAIN) (NOT 1 A-A_N) (NOT 1 Adv) (NOT 1 Qu) (NOT 1 Num-PUOLET-KOLMANNES)
-REMOVE (Adv) (NOT 1 A_AD-A_Q) (NOT 1 Num-PUOLET-KOLMANNES) (NOT 1 Adv) (NOT 1 PCP) (NOT 0 AIVAN-IHAN) (NOT 1 CMP-ENNEN) (NOT 2 JALKEEN)# 4.1.2001 last2added
+
+# last condition added 19.01.2015 -FMT+KM
+REMOVE (Adv) (0 NIIN-NOIN-NAIN) (NOT 1 A-A_N) (NOT 1 Adv) (NOT 1 Qu) (NOT 1 Num-PUOLET-KOLMANNES) (NOT 1C VFIN) ;
+    # Näin äänestät.
+
+# commented out Mon Jan 19 15:18:37 CET 2015 (FMT + estonians)
+#REMOVE (Adv) (NOT 1 A_AD-A_Q) (NOT 1 Num-PUOLET-KOLMANNES) (NOT 1 Adv) (NOT 1 PCP) (NOT 0 AIVAN-IHAN) (NOT 1 CMP-ENNEN) (NOT 2 JALKEEN)# 4.1.2001 last2added
 
 
 # Case
@@ -1559,7 +1565,7 @@ SELECT (Pron Pl Ess) (1 Ess) (1 Pl) (NOT 1 HARVA-SET) (NOT 0 (Num Card))
 SELECT (Pron Pl Tra) (1 Tra) (1 Pl) (NOT 1 HARVA-SET) (NOT 0 (Num Card))
 SELECT ("se" Pron Sg Ela) (NOT 1 DUMMY)                 # SIITä
 
-SELECT Adv (0 YKSI) (1 Par)  ;
+SELECT Adv (0 YKSI) (1 Par) (NOT 0 Par) ;
 SELECT Adv (0 YKSI) (1 Gen) (2 Par) ; 
 SELECT (Num Card) (0 YKSI) (1 N) (NEGATE 0 WORD LINK 1 Gen LINK 2 Par) ;
 
@@ -1576,7 +1582,8 @@ REMOVE (Pron Rel) IF (0 ("jotta")) (0 CS) (0 CLB?) (NEGATE -1 WORD) ;
 # Proper nouns
 # ------------
 
-SELECT:r1885 Prop IF (NEGATE *-1 BOS OR (":") OR (PUNCT LEFT) OR (Num Nom) BARRIER WORD); 
+# Commented out Mon Jan 19 15:24:03 CET 2015 (FMT + Estonians)
+#SELECT:r1885 Prop IF (NEGATE *-1 BOS OR (":") OR (PUNCT LEFT) OR (Num Nom) BARRIER WORD); 
 
 # *** Prop
 SELECT ("kokoomus" Prop) (NOT 0 CAP_NOCAP)
@@ -1681,7 +1688,8 @@ REMOVE (<POSS> P-2Sg) (0 V) (0 Prt) (NOT -1 SINÄ) # TOTESI,KOHOSI
 SELECT (N Sg Nom <POSS>) (1C NEGV) (1 Sg123) (NOT 2 TARVITA) # XXX
 SELECT (N Pl Nom <POSS>) (1C NEGV) (1 Pl123) (NOT 2 TARVITA)
 
-SELECT V IF (0 N) (NEGATE 0 WORD LINK *-1 V BARRIER (CLB)) (NEGATE 0 WORD LINK *1 V BARRIER (CLB)) ; 
+# added (NOT 0 DER)  . Mon Jan 19 15:33:50 CET 2015 (FMT + KM)
+SELECT V IF (0 N) (NEGATE 0 WORD LINK *-1 V BARRIER (CLB)) (NEGATE 0 WORD LINK *1 V BARRIER (CLB)) (NOT 0 DER) ; 
 
 #------------------------------------------------------------
 # KOORDINAATIO: N C N
@@ -1754,6 +1762,7 @@ LIST EXTENDED_CASE = "asti"
 LIST PAR_ONLY = "ennen" 
                 "ilman" ;
 
+
 # LIST PAR_AND_GEN
 # LIST GEN_ONLY
 # ***
@@ -1769,7 +1778,9 @@ SELECT Po IF (0 ("ennen")) (-1 Par) ;
 REMOVE Po IF (0 ("ennen")) (-1 Gen) ;
 
 SELECT Pr IF (0 PAR_ONLY) (1 Par) ;
-SELECT Po IF (0 EXTENDED_CASE) (-1 PoCase) ;
+
+# commented out - 19.01.2015 - FMT+TT+KM
+#SELECT Po IF (0 EXTENDED_CASE) (-1 PoCase) ;
 
 SELECT Po IF (0 Po) (0 (V Ins)) (-1 PoCase) ;
     # Hintoihin katsoen, hintoihin nähden
@@ -2012,7 +2023,7 @@ SELECT ConNeg (-1 NEGV) (NOT 0 NEG-AMBIGUOUS) (NOT 1 Neg) (NOT 1 Prs) (0 Prs_Prt
 SELECT ConNeg (*-1 NEGV BARRIER V) (NOT 0 NEG-AMBIGUOUS) (NOT 1 Neg) (NOT 1 Prs) (0 Prs_Prt OR NonPast) ;
     # Enkä minä koskaan enää tuhoa kaikkea, mikä elää, niinkuin nyt olen tehnyt.
 
-REMOVE:NoConNeg ConNeg IF (NOT -1* Neg); # FMT
+#REMOVE:NoConNeg ConNeg IF (NOT -1* Neg); # FMT
 
 REMOVE:NoConNeg ConNeg IF (NOT *0 Neg);
     
@@ -2138,13 +2149,22 @@ REMOVE (Prs) (*-1C MAINV LINK NOT *1 CLB?) (NOT -1 CLB?)
 REMOVE (Prt) (*-1C MAINV LINK NOT *1 CLB?) (NOT -1 CLB?)
 REMOVE (Imprt) (*-1C MAINV LINK NOT *1 CLB?) (NOT -1 CLB?)
   # UP FOR MORPHOLOGY! LEFT SIDE.
-REMOVE (Prs) (*1C MAINV LINK NOT *-1 CLB?) (NOT 1 CLB?) (NOT 1 VFIN)
+
+  # commented out  Mon Jan 19 16:01:05 CET 2015 -FMT+KM
+#REMOVE (Prs) (*1C MAINV LINK NOT *-1 CLB?) (NOT 1 CLB?) (NOT 1 VFIN)
+  # Kunnallisvaaleissa voivat äänestää ja asettua ehdolle ...
+
 REMOVE (Prt) (*1C MAINV LINK NOT *-1 CLB?) (NOT 1 CLB?) (NOT 1 VFIN)
 REMOVE (Imprt) (*1C MAINV LINK NOT *-1 CLB?) (NOT 1 CLB?) (NOT 1 VFIN)
   # UP FOR MORPHOLOGY! RIGHT SIDE.
 
-SELECT (V Sg3) (NOT *-1C VFIN) (NOT *1C VFIN) (*-1 Nom LINK 0 Sg)
-SELECT (N Sg) IF (0 V) (1* (V Sg3) BARRIER (CLB)) (NEGATE 0 WORD LINK *-1 (N Nom) BARRIER (CLB)) ;
+  # Barrier for Nom added and C for Nom also 19.01.2015 - FMT+KM
+SELECT (V Sg3) (NOT *-1C VFIN) (NOT *1C VFIN) (*-1C Nom + Sg BARRIER REALCLB) ;
+  # 4) Vie lippu ...
+
+  # Sg3 verb made C 19.01.2015 - FMT+KM
+SELECT (N Sg) IF (0 V) (1C* (V Sg3) BARRIER (CLB)) (NEGATE 0 WORD LINK *-1 (N Nom) BARRIER (CLB)) ;
+  # 1) Todista henkilöllisyytesi vaalivirkailijalle eli näytä passi ...
 
 SELECT (V Sg3) IF (0 N) (*-1 THIRD_PERSON_SG_Noun BARRIER (CLB)) ;
 
@@ -2585,6 +2605,16 @@ SELECT (CS) IF (0 ("että")); # All other occurrences of "että" are CSs.
 # LIST @OMG = @OMG ; 
 # MAP (@OMG) TARGET (N Sg Nom) IF (r:rel (VAgr)); 
 
+# Verbs 
+# ------------
+
+# added 19.01.2015 - FMT+KM
+REMOVE VFIN IF (-1C VFIN) ;
+  # Kuntien tehtävänä on järjestää asukkaille monia palveluja.
+
+# added 19.01.2015 - FMT+KM
+REMOVE VFIN IF (1C* VFIN BARRIER REALCLB LINK NOT 1* VFIN) (NOT -1* VFIN);
+  # Seuraavat kunnallisvaalit ovat sunnuntaina 28.10.2012.
 
 SECTION
 # HEURISTIC-DISAMBIGUATION-CONSTRAINTS
@@ -2721,8 +2751,8 @@ MAP (@CNP) TARGET ("ja" CC) ;
 # NP-internal things @→N, @N←
 # ------------------
 
-
-SET NAttrs = PCP OR (A Pos) OR Pron OR (Num Ord) OR (N Gen) or (Num Card) OR UNDECL_ADJ ; 
+# (A Pos) changed to (A) - 19.01.2015 -FMT+KM
+SET NAttrs = PCP OR (A) OR Pron OR (Num Ord) OR (N Gen) or (Num Card) OR UNDECL_ADJ ; 
 
 
 # MAP (@→N) TARGET (A Pos) IF (*1 N BARRIER N) (*1 N BARRIER (CLB));
@@ -2801,7 +2831,7 @@ MAP (@N→) TARGET (Pron Dem) IF (1 (A Pos)) (2 (N));
 SET N_Pron_Nom = (N Nom) OR (Pron Nom) ;
 
 # MAP (@SUBJ→) TARGET Nom (*1 (Act) BARRIER (CLB))
-MAP (@SUBJ→) TARGET Ade IF (*1 AUXs BARRIER (CLB)) ;
+# MAP (@SUBJ→) TARGET Ade IF (*1 AUXs BARRIER (CLB)) ;
     # Kaikki sinun ystävillä@SUBJ-> on kissoja.
 
 MAP (@SUBJ→) TARGET N_Pron_Nom IF (NEGATE *-1 VFIN BARRIER (CLB)) (*1 VFIN BARRIER S-BOUNDARY2 OR @SUBJ→) (NEGATE 0 ("kaikki") LINK *1 (N Nom) BARRIER V) (NEGATE 0 ("kaikki") LINK *1 (N Nom) BARRIER V) ;
@@ -3255,7 +3285,8 @@ MAP (@X) TARGET WORD ;
 #SUBSTITUTE (@X) (*) TARGET WORD ;
 
 #!! * __REMOVE X__ removes X whenever there is any other tag.
-REMOVE (@X) ;
+# Commented out, may be useful at a later stage, but at the moment may hide ambiguities - 19.01.2015 -FMT+KM
+#REMOVE (@X) ;
 
  #GENERIC Sg Nom FOR All OTHER InsTANCES
  
