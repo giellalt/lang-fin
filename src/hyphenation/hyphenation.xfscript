@@ -1,6 +1,8 @@
 ! =============================== !
-! Hyphenator for West Greenlandic !
+! Hyphenator for Finnish
 ! =============================== !
+
+! Still quite West Greenlandic !
 
 echo << defining Cns and Vow... >>
 
@@ -9,19 +11,26 @@ define Vow	[ a | á | e | i | o | u | y | æ | ø | å | ä | ö |
 é | ó | ú | í | à | è | ò | ù | ì | ë | ü | ï | â | ê | ô | û | î | ã | ý |
 É | Ó | Ú | Í | À | È | Ò | Ù | Ì | Ë | Ü | Ï | Â | Ê | Ô | Û | Î | Ã | Ý ] ;
 
-define KalVow [ a | e | i | o | u | A | E | I | O | U ] ;
 
-define ForVow [ Vow - KalVow ] ;
 
 define LongVow [ a a | A a | A A | e e | E e | E E | i i | I i | I I |
                  o o | O o | O O | u u | U u | U U | a i | A i | A I ] ;
 
+define Diphth   [ i e | I e | y ö | Y ö | u o | U o |
+                  e i | E i | ä i | Ä i | ö i | Ö i | 
+                  a i | A i | o i | O i | u i | U i | y i | Y i |
+                  a u | A u | o u | O u | e u | E u | 
+                  ä y | Ä y | ö y | Ö y ] ;
 
-define A2 [ a | A | i | I ] ;
-define E2 [ e | E ] ;
-define I2 [ i | I ] ;
-define O2 [ o | O ] ;
-define U2 [ u | U ] ;
+define A2 [ a | A | i | I | u | U ] ;
+define E2 [ e | E | i | I ] ;
+define I2 [ i | I | e | E ] ;
+define O2 [ o | O | u | U ] ;
+define U2 [ u | U | o | O ] ;
+define Y2 [ y | Y | ö | ö ] ;
+define Ä2 [ ä | Ä | i | I | y | Y ] ;
+define Ö2 [ ö | Ö | i | I ] ;
+
 
 define Cns [ b | c | č | d | đ | ð | f | g | h | j | k | l | m | n | ŋ | 
              B | C | Č | D | Đ | Ð | F | G | H | J | K | L | M | N | Ŋ | 
@@ -46,10 +55,14 @@ define sC          [..] -> %-  || Vow S Cns*    _ Cns Vow ;
 define Css         [..] -> %-  || Vow Cns S     _ S ;
 define CCV         [..] -> %-  || Vow Cnss+     _ Cns Vow ;  !il-lu, Matt-hæ-u-sip
 define CsCV        [..] -> %-  || Vow Cnss+     _ S Cnss Vow ; !Kron-stadt, Kris-tus
-define keep       [..] -> %^K || [a|A]         _ A2 ,
+define syll        [..] -> %-  || Vow Cnss+     _ S Cnss Vow ; !Kron-stadt, Kris-tus
+define keep       [..] -> %^K ||  [a|A]         _ A2 ,
                                   [e|E]         _ E2 ,
                                   [i|I]         _ I2 ,
                                   [o|O]         _ O2 ,
+                                  [ö|Ö]         _ Ö2 ,
+                                  [y|Y]         _ Y2 ,
+                                  [ä|Ä]         _ Ä2 ,
                                   [u|U]         _ U2 ; 
 define VV          [..] -> %-  || Vow           _ Vow ;      !Matt-hæ-u-sip
 
