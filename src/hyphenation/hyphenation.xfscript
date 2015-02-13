@@ -14,7 +14,8 @@ define Vow	[ a | á | e | i | o | u | y | æ | ø | å | ä | ö |
 
 
 define LongVow [ a a | A a | A A | e e | E e | E E | i i | I i | I I |
-                 o o | O o | O O | u u | U u | U U | a i | A i | A I ] ;
+                 o o | O o | O O | u u | U u | U U | a i | A i | A I |
+                 ä ä | Ä ä | Ä Ä | ö ö | Ö ö | Ö Ö | y y | Y y | Y Y ] ;
 
 define Diphth   [ i e | I e | y ö | Y ö | u o | U o |
                   e i | E i | ä i | Ä i | ö i | Ö i | 
@@ -23,13 +24,13 @@ define Diphth   [ i e | I e | y ö | Y ö | u o | U o |
                   ä y | Ä y | ö y | Ö y ] ;
 
 define A2 [ a | A | i | I | u | U ] ;
-define E2 [ e | E | i | I ] ;
+define E2 [ e | E | i | I | u | U ] ;
 define I2 [ i | I | e | E ] ;
 define O2 [ o | O | u | U | i | I ] ;
 define U2 [ u | U | o | O | i | I ] ;
 define Y2 [ y | Y | ö | ö | i | I ] ;
 define Ä2 [ ä | Ä | i | I | y | Y ] ;
-define Ö2 [ ö | Ö | i | I ] ;
+define Ö2 [ ö | Ö | y | Y | Ö | i | I ] ;
 
 
 define Cns [ b | c | č | d | đ | ð | f | g | h | j | k | l | m | n | ŋ | 
