@@ -25,9 +25,9 @@ define Diphth   [ i e | I e | y ö | Y ö | u o | U o |
 define A2 [ a | A | i | I | u | U ] ;
 define E2 [ e | E | i | I ] ;
 define I2 [ i | I | e | E ] ;
-define O2 [ o | O | u | U ] ;
-define U2 [ u | U | o | O ] ;
-define Y2 [ y | Y | ö | ö ] ;
+define O2 [ o | O | u | U | i | I ] ;
+define U2 [ u | U | o | O | i | I ] ;
+define Y2 [ y | Y | ö | ö | i | I ] ;
 define Ä2 [ ä | Ä | i | I | y | Y ] ;
 define Ö2 [ ö | Ö | i | I ] ;
 
@@ -75,8 +75,9 @@ define clean  Dummy -> 0 ;
 echo <<Combining...>>
 
 read regex [
-    NG
-.o. beforeCV
+!    NG
+!.o. beforeCV
+beforeCV
 .o. sC
 .o. Css
 .o. CCV
