@@ -59,32 +59,41 @@ ALPHA=1.0
 %.hfst: %.att
 	$(AM_V_GEN)$(HFST_TXT2FST) $(HFST_FLAGS) -f openfst-tropical $< -o $@
 
-surfweights.%.hfst: %.surfs.hfst word-boundary.hfst
+surfweights.%.hfst: %.surfs.hfst \
+                    word-boundary.hfst
 	$(AM_V_GEN)$(HFST_CONCATENATE) $(HFST_FLAGS) word-boundary.hfst $< \
 		| $(HFST_REPEAT) $(HFST_FLAGS) -f 0 -t inf \
 		| $(HFST_CONCATENATE) $< - \
 		| $(HFST_MINIMIZE) -o $@
 
-unitweighted.hfst: ../$(GT_SPELLER_HFST) $(UNITWEIGHT) $(srcdir)/word-boundary
+unitweighted.hfst: ../$(GT_SPELLER_HFST) \
+                   $(UNITWEIGHT)         \
+                   $(srcdir)/word-boundary
 	$(AM_V_GEN)$(HFST_REWEIGHT) $(HFST_FLAGS) -e -a $$(cat $(UNITWEIGHT)) $< \
 		| $(HFST_REWEIGHT) $(HFST_FLAGS) -S $$(cat $(srcdir)/word-boundary) \
 		-a $$(cat $(UNITWEIGHT)) -o unitweighted.hfst
 
-$(GT_SPELLER_HFST): ../$(GT_SPELLER_HFST) $(SURFWEIGHTS) \
-					$(TAGWEIGHTS) unitweighted.hfst
-	$(AM_V_GEN)$(HFST_COMPOSE) $(HFST_FLAGS) -F $< $(SURFWEIGHTS) \
-		| $(HFST_DISJUNCT) $(HFST_FLAGS) unitweighted.hfst \
-		| $(HFST_SUBSTITUTE) $(HFST_FLAGS) -F $(srcdir)/word-boundary.relabel \
-		| $(HFST_REMOVE_EPSILONS) $(HFST_FLAGS) -o $@
-
-#$(GT_SPELLER_HFST): ../$(GT_SPELLER_HFST) $(SURFWEIGHTS) \
-#					$(TAGWEIGHTS) unitweighted.hfst
+# If tagweights are defined, use that to add morphology-based tags in addition
+# to the frequency weights:
+#$(GT_SPELLER_HFST): ../$(GT_SPELLER_HFST) \
+#                   $(SURFWEIGHTS)         \
+#					$(TAGWEIGHTS)         \
+#                   unitweighted.hfst
 #	$(AM_V_GEN)$(HFST_COMPOSE) $(HFST_FLAGS) $< $(SURFWEIGHTS) \
 #		| $(HFST_REWEIGHT) $(HFST_FLAGS) -T $(TAGWEIGHTS) \
 #		| $(HFST_DISJUNCT) $(HFST_FLAGS) - unitweighted.hfst \
 #		| $(HFST_MINIMIZE) $(HFST_FLAGS) -o $@
 
-# OR: Just copy (no modification):
+# With a spellercorpus but no tagweight file, do without tagweights:
+$(GT_SPELLER_HFST): ../$(GT_SPELLER_HFST) \
+                    $(SURFWEIGHTS)        \
+					unitweighted.hfst
+	$(AM_V_GEN)$(HFST_COMPOSE) $(HFST_FLAGS) -F $< $(SURFWEIGHTS) \
+		| $(HFST_DISJUNCT) $(HFST_FLAGS) unitweighted.hfst \
+		| $(HFST_SUBSTITUTE) $(HFST_FLAGS) -F $(srcdir)/word-boundary.relabel \
+		| $(HFST_REMOVE_EPSILONS) $(HFST_FLAGS) -o $@
+
+# If no dependencies are available, just copy (no weighting):
 #$(GT_SPELLER_HFST): ../$(GT_SPELLER_HFST)
 #	$(AM_V_GEN)cp -f $< $@
 
