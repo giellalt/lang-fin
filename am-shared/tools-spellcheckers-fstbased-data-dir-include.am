@@ -22,12 +22,12 @@ noinst_DATA=$(GT_CLEAN_SPELLER_CORPUS)
 endif # WANT_SPELLERS
 
 # Clean the corpus data if only raw data is found:
-$(srcdir)/%.clean.txt: $(srcdir)/%.raw.txt
+%.clean.txt: %.raw.txt
 	$(AM_V_GEN)cat $< \
-		| sed -e 's/\( [].:;,(){}!?[]\)\([[:alpha:]]\)/\1 \2/g' \
-			-e 's/\([[:alpha:]]\)\([],:;(){}[] \)/\1 \2/g' \
-			-e 's/\([[:alpha:]]\)\([.!?]\ \+\)\([[:upper:]]\)/\1 \2\3/g' \
-			-e 's/[].:;,(){}!?[]$$/ \0/g' -e 's/^[].:;,(){}!?[]/\0 /g' \
+		| sed -e 's/\( [].:;,(){}!?[]\)\([[:alpha:]]\)/\1 \2/g'            \
+			  -e 's/\([[:alpha:]]\)\([],:;(){}[] \)/\1 \2/g'               \
+			  -e 's/\([[:alpha:]]\)\([.!?]\ \+\)\([[:upper:]]\)/\1 \2\3/g' \
+			  -e 's/[].:;,(){}!?[]$$/ \0/g' -e 's/^[].:;,(){}!?[]/\0 /g'   \
 		| tr -s ' ' '\n' \
 		| egrep -v '^[[:punct:][:digit:]]*$$' \
 		> $@
