@@ -31,10 +31,10 @@ LEXICON PUNCT
 %!+Punct:%!      #        ;
 ?+Punct:?        #        ;
 ...+Punct:...    #    ;
-..+Err/Sub+Punct:..  #    ;
-....+Err/Sub+Punct:.... # ;
-%!?+Err/Sub+Punct:%!?    #    ;
-?%!+Err/Sub+Punct:?%!    #    ;
+..+Err/Orth+Punct:..  #    ;
+....+Err/Orth+Punct:.... # ;
+%!?+Err/Orth+Punct:%!?    #    ;
+?%!+Err/Orth+Punct:?%!    #    ;
 %#:%#    #    ;
 
 !! The clause level punctuation marks are used in clause boundaries. The most
