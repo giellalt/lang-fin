@@ -277,16 +277,16 @@ LEXICON DIGITS_DECIMAL_LOOP_FINAL_SUB
 7   DIGITS_DECIMAL_LOOP_FINAL_SUB ;
 8   DIGITS_DECIMAL_LOOP_FINAL_SUB ;
 9   DIGITS_DECIMAL_LOOP_FINAL_SUB ;
-%0+Num+Err/Sub:%0   DIGITS_NOLLA ;
-1+Num+Err/Sub:1   DIGITS_YKSI  ;
-2+Num+Err/Sub:2   DIGITS_KAKSI ;
-3+Num+Err/Sub:3   DIGITS_KOLME ;
-4+Num+Err/Sub:4   DIGITS_NELJÄ ;
-5+Num+Err/Sub:5   DIGITS_VIISI ;
-6+Num+Err/Sub:6   DIGITS_KUUSI ;
-7+Num+Err/Sub:7   DIGITS_SEITSEMÄN ;
-8+Num+Err/Sub:8   DIGITS_KAHDEKSAN ;
-9+Num+Err/Sub:9   DIGITS_YHDEKSÄN  ;
+%0+Num+Err/Orth:%0   DIGITS_NOLLA ;
+1+Num+Err/Orth:1   DIGITS_YKSI  ;
+2+Num+Err/Orth:2   DIGITS_KAKSI ;
+3+Num+Err/Orth:3   DIGITS_KOLME ;
+4+Num+Err/Orth:4   DIGITS_NELJÄ ;
+5+Num+Err/Orth:5   DIGITS_VIISI ;
+6+Num+Err/Orth:6   DIGITS_KUUSI ;
+7+Num+Err/Orth:7   DIGITS_SEITSEMÄN ;
+8+Num+Err/Orth:8   DIGITS_KAHDEKSAN ;
+9+Num+Err/Orth:9   DIGITS_YHDEKSÄN  ;
 
 ! Roman numerals with inflection
 LEXICON DIGITS_ROMANS
