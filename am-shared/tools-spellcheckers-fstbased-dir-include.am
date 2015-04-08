@@ -56,7 +56,7 @@ generator-fstspeller-gt-norm-comp_restricted.hfst: ../$(GT_SPELLER_SRC_HFST) \
 	$(AM_V_GEN)$(HFST_COMPOSE) $(HFST_FLAGS) $< $(SURFWEIGHTS) \
 		| $(HFST_DISJUNCT) $(HFST_FLAGS) - unitweighted.hfst \
 		| $(HFST_SUBSTITUTE) $(HFST_FLAGS) -F $(srcdir)/word-boundary.relabel \
-		| $(HFST_REMOVE_EPSILONS) $(HFST_FLAGS) \
+		| $(HFST_REMOVE_EPSILONS)     $(HFST_FLAGS) \
 		| $(HFST_PUSH_WEIGHTS) -p end $(HFST_FLAGS) \
 		| $(HFST_DETERMINIZE)  -E     $(HFST_FLAGS) \
 		| $(HFST_MINIMIZE)     -E     $(HFST_FLAGS) \
