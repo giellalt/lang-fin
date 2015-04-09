@@ -51,11 +51,13 @@ generator-fstspeller-gt-norm-comp_restricted.hfst: ../$(GT_SPELLER_SRC_HFST) \
 # A. If we have corpus weights, use that:
 %-weighted.hfst: %-comp_restricted.hfst  \
 				 $(SURFWEIGHTS)          \
-				 $(srcdir)/$(TAGWEIGHTS) \
+				 $(srcdir)/weighting/$(TAGWEIGHTS) \
+				 $(srcdir)/weighting/word-boundary.relabel \
                  unitweighted.hfst
 	$(AM_V_GEN)$(HFST_COMPOSE) $(HFST_FLAGS) $< $(SURFWEIGHTS) \
 		| $(HFST_DISJUNCT) $(HFST_FLAGS) - unitweighted.hfst \
-		| $(HFST_SUBSTITUTE) $(HFST_FLAGS) -F $(srcdir)/word-boundary.relabel \
+		| $(HFST_SUBSTITUTE) $(HFST_FLAGS) \
+			-F $(srcdir)/weighting/word-boundary.relabel \
 		| $(HFST_REMOVE_EPSILONS)     $(HFST_FLAGS) \
 		| $(HFST_PUSH_WEIGHTS) -p end $(HFST_FLAGS) \
 		| $(HFST_DETERMINIZE)  -E     $(HFST_FLAGS) \
@@ -65,7 +67,7 @@ generator-fstspeller-gt-norm-comp_restricted.hfst: ../$(GT_SPELLER_SRC_HFST) \
 # There is a bug in hfst-reweight blocking us from using a TSV reweight file.
 # When it is fixed, add the following to the block above, between compose and
 # disjunct (ie as the second command):
-# $(HFST_REWEIGHT) $(HFST_FLAGS) -T $(srcdir)/$(TAGWEIGHTS)
+# $(HFST_REWEIGHT) $(HFST_FLAGS) -T $(srcdir)/weighting/$(TAGWEIGHTS)
 
 # Assumptions:
 # 1. There is always a tags.reweight file (at least a toy one)

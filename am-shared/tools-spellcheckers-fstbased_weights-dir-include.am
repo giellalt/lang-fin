@@ -17,7 +17,7 @@
 
 ####### Add corpus-based weights: #######
 # Use: surfweights.CORPUSNAME.hfst and CORPUSNAME.unitweight
-SURFWEIGHTS=surfweights.$(CORPUSNAME).hfst
+SURFWEIGHTS=$(CORPUSNAME).surfweights.hfst
 UNITWEIGHT=$(CORPUSNAME).unitweight.txt
 # Use this as the source lexical fst for unit weighting, it contains correct
 # surface forms except for the word boundary #, which is still present, and
@@ -28,12 +28,12 @@ TAGWEIGHTS=tags.reweight
 # ALPHA for additive smoothing, [0, 1.0] seems good
 ALPHA=1.0
 
-%.hfst: %.att
+%.hfst: weighting/%.att
 	$(AM_V_GEN)$(HFST_TXT2FST) $(HFST_FLAGS) -f openfst-tropical $< -o $@
 
 # copy cleaned corpus into the local dir:
 $(CORPUSNAME).clean.txt: \
-	weight_corpus/$(CORPUSNAME).clean.txt
+	weighting/$(CORPUSNAME).clean.txt
 	$(AM_V_CP)cp -f $< $@
 
 # sort the clean corpus:
@@ -62,8 +62,11 @@ $(CORPUSNAME).clean.txt: \
 # add tropical weights to the corpus:
 %.tropical.txt: %.uniq.txt %.wordcount.txt %.typecount.txt
 	$(AM_V_GEN)cat $< |\
-		$(GAWK) -v CS="$$(cat $*.wordcount.txt)" -v ALPHA=$(ALPHA) \
-		-v DS="$$(cat $*.typecount.txt)" -f $(srcdir)/uniqc2tropical.awk > $@
+		$(GAWK) -v CS="$$(cat $*.wordcount.txt)" \
+				-v DS="$$(cat $*.typecount.txt)" \
+				-v ALPHA=$(ALPHA)                \
+				-f $(GTCORE)/scripts/uniq_count2tropical_weight.awk \
+				> $@
 
 # build an fst of surface forms with tropical weights for each word form:
 %.surfs.hfst: %.tropical.txt
@@ -71,7 +74,7 @@ $(CORPUSNAME).clean.txt: \
 		$(HFST_STRINGS2FST) -j $(HFST_FLAGS) -f openfst-tropical -o $@
 
 # Build an fst with surface form weights that also handles compounds:
-surfweights.%.hfst: %.surfs.hfst \
+%.surfweights.hfst: %.surfs.hfst \
                     word-boundary.hfst
 	$(AM_V_GEN)$(HFST_CONCATENATE) $(HFST_FLAGS) word-boundary.hfst $< \
 		| $(HFST_REPEAT) $(HFST_FLAGS) -f 0 -t inf \
@@ -81,10 +84,10 @@ surfweights.%.hfst: %.surfs.hfst \
 # Add the unit weight to each unit in compounds, both dynamic and lexical:
 unitweighted.hfst: $(UW_SPELLER_SRC) \
                    $(UNITWEIGHT)         \
-                   $(srcdir)/word-boundary.txt
+                   $(srcdir)/weighting/word-boundary.txt
 	$(AM_V_GEN)$(HFST_REWEIGHT) $(HFST_FLAGS) -e -a $$(cat $(UNITWEIGHT)) $< \
 		| $(HFST_REWEIGHT) $(HFST_FLAGS) \
-			-S $$(cat $(srcdir)/word-boundary.txt) \
+			-S $$(cat $(srcdir)/weighting/word-boundary.txt) \
 			-a $$(cat $(UNITWEIGHT)) -o $@
 
 # Keep these intermediate targets when building using --debug:
