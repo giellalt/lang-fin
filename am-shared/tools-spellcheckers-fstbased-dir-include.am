@@ -47,8 +47,7 @@ generator-fstspeller-gt-norm-comp_restricted.hfst: ../$(GT_SPELLER_SRC_HFST) \
 		 save stack $@\n\
 		 quit\n" | $(HFST_XFST) -p $(VERBOSITY)
 
-#### 2. Add weights:
-# A. If we have corpus weights, use that:
+#### 2. Add corpus-based weights:
 %-weighted.hfst: %-comp_restricted.hfst  \
 				 $(SURFWEIGHTS)          \
 				 $(srcdir)/weighting/$(TAGWEIGHTS) \
