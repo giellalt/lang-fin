@@ -14,13 +14,13 @@ CORPUSNAME=spellercorpus
 generator-fstspeller-gt-norm.tmp.hfst: \
 		generator-fstspeller-gt-norm-weighted.hfst
 	$(AM_V_GEN)cat $< \
-		| $(HFST_REWEIGHT) -a 0.1 -S +Cmp   \
-		| $(HFST_REWEIGHT) -a 0.2 -S +PxSg1 \
-		| $(HFST_REWEIGHT) -a 0.2 -S +PxSg2 \
-		| $(HFST_REWEIGHT) -a 0.2 -S +PxSg3 \
-		| $(HFST_REWEIGHT) -a 0.2 -S +PxPl1 \
-		| $(HFST_REWEIGHT) -a 0.2 -S +PxPl2 \
-		| $(HFST_REWEIGHT) -a 0.2 -S +PxPl3 \
+		| $(HFST_REWEIGHT) -a 1.0 -S +Cmp   \
+		| $(HFST_REWEIGHT) -a 2.0 -S +PxSg1 \
+		| $(HFST_REWEIGHT) -a 2.0 -S +PxSg2 \
+		| $(HFST_REWEIGHT) -a 2.0 -S +PxSg3 \
+		| $(HFST_REWEIGHT) -a 2.0 -S +PxPl1 \
+		| $(HFST_REWEIGHT) -a 2.0 -S +PxPl2 \
+		| $(HFST_REWEIGHT) -a 2.0 -S +PxPl3 \
 		| $(HFST_REMOVE_EPSILONS)     $(HFST_FLAGS) \
 		| $(HFST_PUSH_WEIGHTS) -p end $(HFST_FLAGS) \
 		| $(HFST_DETERMINIZE)  -E     $(HFST_FLAGS) \
