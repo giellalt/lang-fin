@@ -27,9 +27,9 @@ LEXICON PRON
 !! Further reading: [VISK § 100|http://scripta.kotus.fi/visk/sisalto.php?p=100]
 !!
 !!€gt-norm: Personal pronouns
-!!€ minä minä+Pron+Pers+Sg+Nom me
-!!€ sinut sinä+Pron+Pers+Sg+Acc
-!!€ heille he+Pron+Pers+Pl+All
+!!€ minä: minä+Pron+Pers+Sg+Nom me
+!!€ sinut: sinä+Pron+Pers+Sg+Acc
+!!€ heille: he+Pron+Pers+Pl+All
 minä+Pron+Pers+Sg+Abe:minutta    PRON_BACK_CLIT_OPT ;
 minä+Pron+Pers+Sg+Abl:minulta    PRON_BACK_CLIT_OPT ;
 minä+Pron+Pers+Sg+Acc:minut  PRON_BACK_CLIT_OPT ;
@@ -265,8 +265,8 @@ sa+Pron+Pers+Sg+Nom+Use/Marg:sa  PRON_BACK_CLIT_OPT ;
 !! Further reading: [VISK § 101|http://scripta.kotus.fi/visk/sisalto.php?p=101]
 !!
 !!€gt-norm: Demonstrative pronouns
-!!€ tämä tämä+Pron+Dem+Sg+Nom
-!!€ tuolle tuo+Pron+Dem+Sg+All
+!!€ tämä: tämä+Pron+Dem+Sg+Nom
+!!€ tuolle: tuo+Pron+Dem+Sg+All
 tämä+Pron+Dem+Sg+Abe:tättä    PRON_FRONT_CLIT_OPT ;
 tämä+Pron+Dem+Sg+Abl:tältä    PRON_FRONT_CLIT_OPT ;
 tämä+Pron+Dem+Sg+Ade:tällä    PRON_FRONT_CLIT_OPT ;
@@ -389,9 +389,9 @@ noi+Pron+Dem+Pl+Nom:noi  PRON_BACK_CLIT_OPT ;
 !! Further reading: [VISK §734|http://scripta.kotus.fi/visk/sisalto.php?p=734]
 !!
 !!€gt-norm: Interrogative pronouns
-!!€ kuka kuka+Pron+Interr+Sg+Nom who
-!!€ ketä kuka+Pron+Interr+Sg+Par
-!!€ kenet kuka+Pron+Interr+Sg+Acc
+!!€ kuka: kuka+Pron+Interr+Sg+Nom who
+!!€ ketä: kuka+Pron+Interr+Sg+Par
+!!€ kenet: kuka+Pron+Interr+Sg+Acc
 kuka+Pron+Interr+Pl+Abe:keittä    PRON_FRONT_CLIT_OPT ;
 kuka+Pron+Interr+Pl+Abe:keittäkäs     PRON_FRONT_CLIT_OPT ;
 kuka+Pron+Interr+Pl+Abl:keiltä    PRON_FRONT_CLIT_OPT ;
@@ -624,7 +624,7 @@ mi+Pron+Interr+Sg+Nom+Use/Marg:mi     PRON_FRONT_CLIT_OPT ;
 !! They are morphologically indistinct from corresponding interrogative
 !! pronouns.
 !!€gt-norm: Relative pronouns
-!!€ kuka kuka+Pron+Rel+Sg+Nom
+!!€ kuka: kuka+Pron+Rel+Sg+Nom
 kuka+Pron+Rel+Pl+Abe:keittä   PRON_FRONT_CLIT_OPT ;
 kuka+Pron+Rel+Pl+Abe:keittäkäs    PRON_FRONT_CLIT_OPT ;
 kuka+Pron+Rel+Pl+Abl:keiltä   PRON_FRONT_CLIT_OPT ;
@@ -815,8 +815,8 @@ mikä+Pron+Rel+Sg+Tra:miksikäs     PRON_FRONT_CLIT_OPT ;
 !! Further reading [VISK §746|http://scripta.kotus.fi/visk/sisalto.php?p=746]
 !! – 749.
 !!€gt-norm: Quantor pronouns
-!!€ joku joku+Pron+Qu+Indef+Sg+Nom
-!!€ jotkut joku+Pron+Qu+Indef+Pl+Nom
+!!€ joku: joku+Pron+Qu+Indef+Sg+Nom
+!!€ jotkut: joku+Pron+Qu+Indef+Pl+Nom
 joku+Pron+Qu+Indef+Pl+Abe:joittakuitta   PRON_BACK_CLIT_OPT ;
 joku+Pron+Qu+Indef+Pl+Abl:joiltakuilta   PRON_BACK_CLIT_OPT ;
 joku+Pron+Qu+Indef+Pl+Ade:joillakuilla   PRON_BACK_CLIT_OPT ;
@@ -1430,7 +1430,7 @@ joka+Pron+Qu+Indef+Sg+Nom:joka   PRON_BACK_CLIT_OPT ;
 !!
 !! Further reading: [VISK §729|http://scripta.kotus.fi/visk/sisalto.php?p=729]
 !!€gt-norm: Reflexive pronouns
-!!€ itse itse+Pron+Refl+Sg+Nom
+!!€ itse: itse+Pron+Refl+Sg+Nom
 itse+Pron+Refl+Pl+Abl+Dial/Standard:iteiltä  PRON_FRONT_POSS_ÄN_OPT    ;
 itse+Pron+Refl+Pl+Ade+Dial/Standard:iteillä  PRON_FRONT_POSS_ÄN_OPT    ;
 itse+Pron+Refl+Pl+All+Dial/Standard:iteille  PRON_FRONT_POSS_EN_OPT    ;
@@ -1494,7 +1494,7 @@ itse+Pron+Refl+Sg+Tra:itseksi   PRON_FRONT_CLIT   ;
 !!
 !! Further reading: [VISK §732|http://scripta.kotus.fi/visk/sisalto.php?p=732]
 !!€gt-norm: Reciprocal pronouns
-!!€ toisiamme toinen+Pron+Recipr+Pl+Par+PxPl1
+!!€ toisiamme: toinen+Pron+Recipr+Pl+Par+PxPl1
 toinen+Pron+Recipr+Pl+Abe:toisitta  PRON_BACK_POSS_OPT ;
 toinen+Pron+Recipr+Pl+Abl:toisilta  PRON_BACK_POSS_OPT ;
 toinen+Pron+Recipr+Pl+Ade:toisilla  PRON_BACK_POSS_OPT ;
@@ -1530,7 +1530,7 @@ toinen+Pron+Recipr+Sg+Tra:toisekse  PRON_BACK_POSS_EN_OPT ;
 !! Further reading: [VISK §715|http://scripta.kotus.fi/visk/sisalto.php?p=715]
 !!
 !!€gt-norm: Proadjectives
-!!€ jollainen jollainen+A+Rel+Sg+Nom
+!!€ jollainen: jollainen+A+Rel+Sg+Nom
 jollainen+A+Rel+Pl+Abe:jollaisitta   A_BACK_CLIT_OPT ;
 jollainen+A+Rel+Pl+Abl:jollaisilta   A_BACK_CLIT_OPT ;
 jollainen+A+Rel+Pl+Ade:jollaisilla   A_BACK_CLIT_OPT ;
@@ -2031,7 +2031,7 @@ vastaava+A:vastaav{^a}  A_AALTOILEVA ;
 !! Further reading: [VISK §715|http://scripta.kotus.fi/visk/sisalto.php?p=715]
 !!
 !!€gt-norm: Proadverbs
-!!€ missä missä+Adv+Interr+Ine
+!!€ missä: missä+Adv+Interr+Ine
 missä+Adv+Interr+Ine:missä   ADV_FRONT_CLIT_OPT ;
 mistä+Adv+Interr+Ela:mistä   ADV_FRONT_CLIT_OPT ;
 minne+Adv+Interr+Ill:minne   ADV_FRONT_CLIT_OPT ;

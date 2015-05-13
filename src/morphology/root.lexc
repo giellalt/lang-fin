@@ -43,14 +43,14 @@ Multichar_Symbols
 
 !! The part-of-speech analyses are typically the first:
 !!€gt-norm: Analysis examples
-!!€ kutoo kutoa+V+Act+Ind+Prs+Sg3 knits
-!!€ talo talo+N+Sg+Nom house
-!!€ nopea nopea+A+Sg+Nom fast
-!!€ yksi yksi+Num+Card+Sg+Nom one
-!!€ nopeasti nopeasti+Adv fast
-!!€ hän hän+Pron+Pers+Sg+Nom he
-!!€ ahaa ahaa+Pcle ah
-!!€ äh äh+Interj uh
+!!€ kutoo: kutoa+V+Act+Ind+Prs+Sg3 knits
+!!€ talo: talo+N+Sg+Nom house
+!!€ nopea: nopea+A+Sg+Nom fast
+!!€ yksi: yksi+Num+Card+Sg+Nom one
+!!€ nopeasti: nopeasti+Adv fast
+!!€ hän: hän+Pron+Pers+Sg+Nom he
+!!€ ahaa: ahaa+Pcle ah
+!!€ äh: äh+Interj uh
 
 !! !Nouns
 !! In nominal analyses, the proper nouns have additional subanalysis.
@@ -66,7 +66,7 @@ Multichar_Symbols
 +Prop !!= * {{@CODE@}}: Proper noun
 
 !! Proper noun tag follows noun analysis:
-!!€ Pekka Pekka+N+Prop+Sg+Nom Pekka
+!!€ Pekka: Pekka+N+Prop+Sg+Nom Pekka
 
 !! !Pronouns
 !! Pronominal analyses have some semantic classes.
@@ -84,14 +84,14 @@ Multichar_Symbols
 +Indef !!= * {{@CODE@}}: Indefinite
 
 !! Semantic tags follow pronoun analyses:
-!!€ minä minä+Pron+Pers+Sg+Nom I
-!!€ tämä tämä+Pron+Dem+Sg+Nom this
-!!€ kuka kuka+Pron+Interr+Sg+Nom who
-!!€ joka joka+Pron+Rel+Sg+Nom which
-!!€ kaikki kaikki+Pron+Qu+Sg+Nom every
-!!€ itse itse+Pron+Refl+Sg+Nom self
-!!€ toistaan toinen+Pron+Recipr+Sg+Par+PxSg3 each other
-!!€ joku joku+Pron+Qu+Indef+Sg+Nom someone
+!!€ minä: minä+Pron+Pers+Sg+Nom I
+!!€ tämä: tämä+Pron+Dem+Sg+Nom this
+!!€ kuka: kuka+Pron+Interr+Sg+Nom who
+!!€ joka: joka+Pron+Rel+Sg+Nom which
+!!€ kaikki: kaikki+Pron+Qu+Sg+Nom every
+!!€ itse: itse+Pron+Refl+Sg+Nom self
+!!€ toistaan: toinen+Pron+Recipr+Sg+Par+PxSg3 each other
+!!€ joku: joku+Pron+Qu+Indef+Sg+Nom someone
 
 !! !Numerals
 !! In numeral analyses, there are multiple analyses.
@@ -106,8 +106,8 @@ Multichar_Symbols
 +Card  !!= * {{@CODE@}}: Cardinal
 +Ord !!= * {{@CODE@}}: Ordinals
 
-!!€ kolme kolme+Num+Card+Sg+Nom three
-!!€ kolmas kolmas+Num+Ord+Sg+Nom third
+!!€ kolme: kolme+Num+Card+Sg+Nom three
+!!€ kolmas: kolmas+Num+Ord+Sg+Nom third
 
 !! !Particles
 !! The particles are subcategorised syntax-wise into conjunctions for all words,
@@ -126,8 +126,8 @@ Multichar_Symbols
 +CS !!= * {{@CODE@}}: Adverbial
 
 !! The conjunction tags take place of part-of-speech tags for legacy reasons:
-!!€ ja ja+CC
-!!€ vaikka vaikka+CS
+!!€ ja: ja+CC
+!!€ vaikka: vaikka+CS
 
 !! !Adpositions
 !! In adposition anlayses, the syntactic tendencies are shown in sub-analyses;
@@ -139,7 +139,7 @@ Multichar_Symbols
 +Pr !!= * {{@CODE@}}: Preposition
 
 !! Adpositions are tagged in POS position:
-!!€ läpi läpi+Po
+!!€ läpi: läpi+Po
 
 !! !Bound root morphs
 !! The lexical items that appear as bound morphemes before head word are
@@ -163,7 +163,7 @@ Multichar_Symbols
 +Punct !!= * {{@CODE@}}: any punctuation
 
 !! The analyses for symbols are like POSes:
-!!€ . .+Punct .
+!!€ .: .+Punct .
 
 !! !Nominal analyses
 !!
@@ -178,8 +178,8 @@ Multichar_Symbols
 +Pl !!= * {{@CODE@}}: Plural
 
 !! Number tags are next to POSes in nominal analyses, and in order of morphs:
-!!€ padassa pata+N+Sg+Ine pot
-!!€ padoissa pata+N+Pl+Ine
+!!€ padassa: pata+N+Sg+Ine pot
+!!€ padoissa: pata+N+Pl+Ine
 
 !! The analyses of nominals have case inflection marked.
 !! The nominals have case inflection
@@ -203,19 +203,19 @@ Multichar_Symbols
 +Com !!= * {{@CODE@}}: Comitative
 
 !! The case is next to number and last obligatory analysis in nominals:
-!!€ taloa talo+N+Sg+Par
-!!€ talon talo+N+Sg+Gen
-!!€ talossa talo+N+Sg+Ine
-!!€ talosta talo+N+Sg+Ela
-!!€ taloon talo+N+Sg+Ill
-!!€ talolla talo+N+Sg+Ade
-!!€ talolta talo+N+Sg+Abl
-!!€ talolle talo+N+Sg+All
-!!€ talona talo+N+Sg+Ess
-!!€ taloin talo+N+Pl+Ins
-!!€ talotta talo+N+Sg+Abe
-!!€ taloksi talo+N+Sg+Tra
-!!€ taloine talo+N+Com
+!!€ taloa: talo+N+Sg+Par
+!!€ talon: talo+N+Sg+Gen
+!!€ talossa: talo+N+Sg+Ine
+!!€ talosta: talo+N+Sg+Ela
+!!€ taloon: talo+N+Sg+Ill
+!!€ talolla: talo+N+Sg+Ade
+!!€ talolta: talo+N+Sg+Abl
+!!€ talolle: talo+N+Sg+All
+!!€ talona: talo+N+Sg+Ess
+!!€ taloin: talo+N+Pl+Ins
+!!€ talotta: talo+N+Sg+Abe
+!!€ taloksi: talo+N+Sg+Tra
+!!€ taloine: talo+N+Com
 
 !! The analyses of a infinitive short form have lative ending; this is largely
 !! historical ([VISK § 120|http://scripta.kotus.fi/visk/sisallys.php?p=120]).
@@ -232,7 +232,7 @@ Multichar_Symbols
 
 +Acc !!= * {{@CODE@}}: Explicit accusative analysis
 
-!!€ hänet hän+Pron+Pers+Sg+Acc
+!!€ hänet: hän+Pron+Pers+Sg+Acc
 
 !! Adverbs and adpositions may have some special analyses in diachronic
 !! analyses.
@@ -260,11 +260,11 @@ Multichar_Symbols
 +PxPl3 !!= * {{@CODE@}}: Third plural (theirs)
 +Px3 !!= * {{@CODE@}}: Third ambiguous (his/theirs)
 
-!!€ taloni talo+N+Sg+Nom+PxSg1
-!!€ talosi talo+N+Sg+Nom+PxSg2
-!!€ talonsa talo+N+Sg+Nom+PxSg3
-!!€ talomme talo+N+Sg+Nom+PxPl1
-!!€ talonne talo+N+Sg+Nom+PxPl2
+!!€ taloni: talo+N+Sg+Nom+PxSg1
+!!€ talosi: talo+N+Sg+Nom+PxSg2
+!!€ talonsa: talo+N+Sg+Nom+PxSg3
+!!€ talomme: talo+N+Sg+Nom+PxPl1
+!!€ talonne: talo+N+Sg+Nom+PxPl2
 
 !! !Compound forms
 !! In compound analyses, the derived compound form that is not a free morph
@@ -274,7 +274,7 @@ Multichar_Symbols
 !! Further reading: [VISK § 406|http://scripta.kotus.fi/visk/sisallys.php?p=406]
 +Der/s !!= Compound form
 
-!!€ naisien nainen+N+Der/s#ien+N+Sg+Nom female gum
+!!€ naisien: nainen+N+Der/s#ien+N+Sg+Nom female gum
 
 !! !Finite verbs
 !! All verb analyses contain voice marking. For finite verb forms active voice
@@ -286,7 +286,7 @@ Multichar_Symbols
 +Pass !!= * {{@CODE@}}: Passive voice
 
 !! It is the first analysis of verb strings:
-!!€ kudot kutoa+V+Act+Ind+Prs+Sg2
+!!€ kudot: kutoa+V+Act+Ind+Prs+Sg2
 
 !! Finite verb form analyses have a reading for tense. The tense has two values.
 !! For moods other than indicative the tense is not distinctive in surface form,
@@ -303,8 +303,8 @@ Multichar_Symbols
 +Prt !!= * {{@CODE@}}: Past (preterite)
 
 !! The tense is marked in indicative forms after mood:
-!!€ kudon kutoa+V+Act+Ind+Prs+Sg1
-!!€ kudoin kutoa+V+Act+Ind+Prt+Sg1
+!!€ kudon: kutoa+V+Act+Ind+Prs+Sg1
+!!€ kudoin: kutoa+V+Act+Ind+Prt+Sg1
 
 !! Finite verb form analyses have a reading for mood. Mood has four central
 !! readings and few archaic and marginal. The mood is marked in analyses for
@@ -320,7 +320,7 @@ Multichar_Symbols
 +Eventv !!= * {{@CODE@}}: Eventive
 
 !! The mood is after voice in the analysis string and in morph order:
-!!€ kutonen kutoa+V+Act+Pot+Sg1
+!!€ kutonen: kutoa+V+Act+Pot+Sg1
 
 !! Finite verb form analyses have a reading for person. Personal ending of verb
 !! defines the actors.  The person analysis has seven possible values,
@@ -338,25 +338,25 @@ Multichar_Symbols
 +Pl3 !!= * {{@CODE@}}: Third plural
 
 !! The person is the last required analysis for verbs, after the mood:
-!!€ kudon kutoa+V+Act+Ind+Prs+Sg1
-!!€ kudot kutoa+V+Act+Ind+Prs+Sg2
-!!€ kutoo kutoa+V+Act+Ind+Prs+Sg3
-!!€ kudomme kutoa+V+Act+Ind+Prs+Pl1
-!!€ kudotte kutoa+V+Act+Ind+Prs+Pl2
-!!€ kutovat kutoa+V+Act+Ind+Prs+Pl3
+!!€ kudon: kutoa+V+Act+Ind+Prs+Sg1
+!!€ kudot: kutoa+V+Act+Ind+Prs+Sg2
+!!€ kutoo: kutoa+V+Act+Ind+Prs+Sg3
+!!€ kudomme: kutoa+V+Act+Ind+Prs+Pl1
+!!€ kudotte: kutoa+V+Act+Ind+Prs+Pl2
+!!€ kutovat: kutoa+V+Act+Ind+Prs+Pl3
 
 !! !Negation and verbs
 !! The analyses of verb for the forms that require negation verb have a special
 !! analysis for it.
 +ConNeg !!= * {{@CODE@}}: Connegative form
 
-!!€ kudo kutoa+V+Ind+Prs+ConNeg
+!!€ kudo: kutoa+V+Ind+Prs+ConNeg
 
 !! The suitable negation verbs have sub-analysis that can be matched to negated
 !! forms on syntactic level.
 +Neg !!= * {{@CODE@}}: Negation verb
 
-!!€ ei ei+V+Neg+Act+Sg3
+!!€ ei: ei+V+Neg+Act+Sg3
 
 !! !Infinite verb forms
 !! Infinitive verb forms have infinitive or nominal derivation analyses.
@@ -378,11 +378,11 @@ Multichar_Symbols
 +Der/maisilla !!= * {{@CODE@}}: maisilla derivation (fifth)
 
 !! Infinitive analysis comes after voice, followed by nominal analyses:
-!!€ kutoa kutoa+V+Act+InfA+Sg+Lat
-!!€ kutoessa kutoa+V+Act+InfE+Sg+Ine
-!!€ kutomatta kutoa+V+Act+InfMa+Sg+Abe
-!!€ kutominen kutoa+V+Der/minen+Sg+Nom
-!!€ kutomaisillani kutoa+V+Act+Der/maisilla+PxSg1
+!!€ kutoa: kutoa+V+Act+InfA+Sg+Lat
+!!€ kutoessa: kutoa+V+Act+InfE+Sg+Ine
+!!€ kutomatta: kutoa+V+Act+InfMa+Sg+Abe
+!!€ kutominen: kutoa+V+Der/minen+Sg+Nom
+!!€ kutomaisillani: kutoa+V+Act+Der/maisilla+PxSg1
 
 !! !Participles
 !! Participial verb forms have participle readings. There are 4 participle
@@ -402,10 +402,10 @@ Multichar_Symbols
 +AgPrc !!= * {{@CODE@}}: Agent partiicple
 
 !! Participle analyses are right after voice, followed by adjectival analyses:
-!!€ kutonut kutoa+V+Act+PrfPrc+Sg+Nom
-!!€ kutova kutoa+V+Act+PrsPrc+Sg+Nom
-!!€ kutomaton kutoa+V+NegPrc+Sg+Nom
-!!€ kutomani kutoa+V+AgPrc+Sg+Nom+PxSg1
+!!€ kutonut: kutoa+V+Act+PrfPrc+Sg+Nom
+!!€ kutova: kutoa+V+Act+PrsPrc+Sg+Nom
+!!€ kutomaton: kutoa+V+NegPrc+Sg+Nom
+!!€ kutomani: kutoa+V+AgPrc+Sg+Nom+PxSg1
 
 !! There are number of implementations that mix up MA infinitives and Agent
 !! participles, and they share part of the same forms but no semantics and very
@@ -421,8 +421,8 @@ Multichar_Symbols
 +Sup !!= * {{@CODE@}}: Superlative
 
 !! The comparison analysis occupies derivation spot, after POS:
-!!€ nopeampi nopea+A+Comp+Sg+Nom
-!!€ nopein nopea+A+Sup+Sg+Nom
+!!€ nopeampi: nopea+A+Comp+Sg+Nom
+!!€ nopein: nopea+A+Sup+Sg+Nom
 
 !! !Enclitic focus particles
 !! All word forms can have clitics which are analysed by their orthography.
@@ -474,7 +474,7 @@ Multichar_Symbols
 +Use/Rare  !!= * {{@CODE@}}: Rare
 
 !! Usage tags are pushed wherever appropriate:
-!!€ nallein nalle+N+Pl+Gen+Use/Rare
+!!€ nallein: nalle+N+Pl+Gen+Use/Rare
 
 !! !Dialects
 !! The informal language use contains different Finnish than the literary
@@ -561,9 +561,9 @@ LEXICON Root
 !! The Finnish morphological description starts from any of the parts of speech
 !! dictionaries, prefix or hyphenated suffix
 !!€gt-norm: Parts-of-speech
-!!€ talo talo+N+Sg+Nom house
-!!€ nopea nopea+A+Sg+Nom fast
-!!€ kutoa kutoa+V+Act+InfA+Sg+Lat to knit
+!!€ talo: talo+N+Sg+Nom house
+!!€ nopea: nopea+A+Sg+Nom fast
+!!€ kutoa: kutoa+V+Act+InfA+Sg+Lat to knit
 0   N           ;
 0   A           ;
 0   V           ;
@@ -589,7 +589,7 @@ LEXICON NOMINAL
 !! !! The compound part sub-set {{@LEXNAME@}}
 !! The nominal forms can be used as non-initial parts of typical compounds
 !!€gt-norm: Nominals
-!!€ talonjuttu talo+N+Sg+Gen#juttu+N+Sg+Nom house thing
+!!€ talonjuttu: talo+N+Sg+Gen#juttu+N+Sg+Nom house thing
 0   N           ;
 0   A           ;
 0   51          ;

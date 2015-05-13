@@ -9,9 +9,9 @@ LEXICON EXCEPTIONS
 
 !! negation verb has partial inflection:
 !!€gt-norm: 
-!!€ en      ei+V+Neg+Act+Sg1
-!!€ älkää   ei+V+Neg+Act+Imprt+Pl2
-!!€ älkööt  ei+V+Neg+Act+Imprt+Pl3
+!!€ en:      ei+V+Neg+Act+Sg1
+!!€ älkää:   ei+V+Neg+Act+Imprt+Pl2
+!!€ älkööt:  ei+V+Neg+Act+Imprt+Pl3
 ei+V+Neg+Act+Sg1:en             V_FRONT_CLIT_OPT ;
 ei+V+Neg+Act+Sg1+Foc/ka:enkä    V_FRONT_CLIT_OPT ;
 ei+V+Neg+Act+Sg2:et             V_FRONT_CLIT_OPT ;
@@ -36,10 +36,10 @@ ei+V+Neg+Act+Imprt+Pl3:älkööt               V_FRONT_CLIT_OPT ;
 ei+V+Neg+Act+Imprt+Pl3+Foc/ka:älköötkä      V_FRONT_CLIT_OPT ;
 
 !! Some verbs only have few word-forms left:
-!!€ kutiaa
-!!€ taita
-!!€ paratkoon
-!!€ eläköön
+!!€ kutiaa:
+!!€ taita:
+!!€ paratkoon:
+!!€ eläköön:
 eläköön+V:eläköön       #    ;
 jutaa+V:jutaa           #    ;
 jytää+V:jytää           #    ;
@@ -55,16 +55,16 @@ vilkkaa+V:vilkkaa       #    ;
 
 
 !! The noun ruoka has irregular forms:
-!!€ ruuassa
-!!€ ruuilla
+!!€ ruuassa:
+!!€ ruuilla:
 ruoka+N:ruua        N_BACK_WEAK_SINGULARS   ;
 ruoka+N:ruu         N_BACK_WEAK_PLURALS ;
 
 !! The adjective hyvä has heteroclitic comparative derivations too:
-!!€ parempi
-!!€ paremmissa
-!!€ paras
-!!€ parhaat
+!!€ parempi:
+!!€ paremmissa:
+!!€ paras:
+!!€ parhaat:
 hyvä+A:pare                     A_BACK_COMPARATIVE ;
 hyvä+A+Sup:paras                A_BACK_NOMINATIVE ;
 hyvä+A+Sup:parhaa               A_BACK_SINGULARS ;
@@ -79,10 +79,10 @@ hyvä+A:parha                    A_BACK_SUPERLATIVE ;
 hyvä+A+Der/sti+Adv:parhaiten    ADV_BACK_CLIT_OPT ;
 
 !! Some of the nouns have archaic consonat stem forms left:
-!!€ vuonna
-!!€ sydännä
-!!€ jumalten
-!!€ sankarten
+!!€ vuonna:
+!!€ sydännä:
+!!€ jumalten:
+!!€ sankarten:
 vuosi+N+Sg+Ess:vuonna       N_BACK_POSS_AN_OPT ;
 sydän+N+Sg+Ess:sydännä      N_FRONT_POSS_ÄN_OPT ;
 jumala+N+Pl+Gen:jumalten    N_BACK_CLIT_OPT ;
@@ -91,8 +91,8 @@ sankari+N+Pl+Gen:sankarten  N_FRONT_CLIT_OPT ;
 sankari+N+Pl+Gen:sankarten  N_COMPOUND ;
 
 !! few verbs have shortened forms in standard spoken Finnish
-!!€ meen
-!!€ tuut
+!!€ meen:
+!!€ tuut:
 mennä+V+Act+Ind+Prs+Sg1+Dial/standard:meen       V_FRONT_CLIT_OPT    ;
 mennä+V+Act+Ind+Prs+Sg2+Dial/standard:meet       V_FRONT_CLIT_OPT    ;
 mennä+V+Act+Ind+Prs+Pl1+Dial/standard:meemme     V_FRONT_CLIT_OPT    ;

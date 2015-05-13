@@ -8,7 +8,7 @@
 ! possessives
 LEXICON ADV_BACK_POSS
 !!€gt-norm: Adverb possessive back
-!!€ takanani takana+Adv+PxSg1 behind me
+!!€ takanani: takana+Adv+PxSg1 behind me
 +PxSg1:%>ni  ADV_BACK_CLIT_OPT        ;
 +PxSg2:%>si  ADV_BACK_CLIT_OPT        ;
 +PxSg3:%>nsa ADV_BACK_CLIT_OPT        ;
@@ -18,7 +18,7 @@ LEXICON ADV_BACK_POSS
 
 LEXICON ADV_FRONT_POSS
 !!€gt-norm: Adverb possessive front
-!!€ edessäni edessä+Adv+PxSg1 in front of me
+!!€ edessäni: edessä+Adv+PxSg1 in front of me
 +PxSg1:%>ni  ADV_FRONT_CLIT_OPT        ;
 +PxSg2:%>si  ADV_FRONT_CLIT_OPT        ;
 +PxSg3:%>nsä ADV_FRONT_CLIT_OPT        ;
@@ -28,31 +28,31 @@ LEXICON ADV_FRONT_POSS
 
 LEXICON ADV_BACK_POSS_AN
 !!€gt-norm: Adverb possessive back an
-!!€ takanaan takana+Adv+PxSg3
+!!€ takanaan: takana+Adv+PxSg3
 +PxSg3:%>an    ADV_BACK_CLIT_OPT     ;
 +PxPl3:%>an    ADV_BACK_CLIT_OPT     ;
 
 LEXICON ADV_BACK_POSS_EN
 !!€gt-norm: Adverb possessive back en
-!!€ jalkeilleen jalkeille+Adv+PxSg3 he awakened
+!!€ jalkeilleen: jalkeille+Adv+PxSg3 he awakened
 +PxSg3:%>en    ADV_BACK_CLIT_OPT     ;
 +PxPl3:%>en    ADV_BACK_CLIT_OPT     ;
 
 LEXICON ADV_FRONT_POSS_EN
 !!€gt-norm: Adverb possessive front en
-!!€ keskelleen keskelle+Adv+PxPl3 amidst them
+!!€ keskelleen: keskelle+Adv+PxPl3 amidst them
 +PxSg3:%>en    ADV_FRONT_CLIT_OPT     ;
 +PxPl3:%>en    ADV_FRONT_CLIT_OPT     ;
 
 LEXICON ADV_FRONT_POSS_ÄN
 !!€gt-norm: Adverb possessive front än
-!!€ edessään edessä+Adv+PxSg3
+!!€ edessään: edessä+Adv+PxSg3
 +PxSg3:%>än    ADV_FRONT_CLIT_OPT     ;
 +PxPl3:%>än    ADV_FRONT_CLIT_OPT     ;
 
 LEXICON ADV_BACK_CLIT
 !!€gt-norm: Adverb clitic back
-!!€ nopeastihan nopeasti+Adv+Foc/han fast
+!!€ nopeastihan: nopeasti+Adv+Foc/han fast
 +Foc/han:%>han   #        ;
 +Foc/han+Foc/kaan:%>han%>kaan  #        ;
 +Foc/han+Qst:%>han%>ko #        ;
@@ -82,7 +82,7 @@ LEXICON ADV_BACK_CLIT
 
 LEXICON ADV_FRONT_CLIT
 !!€gt-norm: Adverb clitic front
-!!€ tyhmästihän tyhmästi+Adv+Foc/han stupidly
+!!€ tyhmästihän: tyhmästi+Adv+Foc/han stupidly
 +Foc/han:%>hän   #        ;
 +Foc/han+Foc/kaan:%>hän%>kään  #        ;
 +Foc/han+Qst:%>hän%>kö #        ;

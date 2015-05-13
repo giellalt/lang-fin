@@ -10,13 +10,13 @@ LEXICON A_BACK_SUPERLATIVE
 !! adjective baseform. This baseform is handled separately to avoid double
 !! superlatives.
 !!€gt-norm: Adjective superlative front
-!!€ rumin ruma+A+Sup+Sg+Nom ugliest
+!!€ rumin: ruma+A+Sup+Sg+Nom ugliest
 +Sup:»i  A_BACK_SUPERLATIVE_STEMS ;
 
 
 LEXICON A_FRONT_SUPERLATIVE
 !!€gt-norm: Adjective superlative back
-!!€ tyhmin tyhmä+A+Sup+Sg+Nom stupidest
+!!€ tyhmin: tyhmä+A+Sup+Sg+Nom stupidest
 +Sup:»i  A_FRONT_SUPERLATIVE_STEMS ;
 
 LEXICON A_BACK_COMPARATIVE
@@ -24,12 +24,12 @@ LEXICON A_BACK_COMPARATIVE
 !! adjective baseform. This adjective is handled separately
 !! to avoid double comparative forms.
 !!€gt-norm: Adjective comparative front
-!!€ rumempi ruma+A+Comp+Sg+Nom
+!!€ rumempi: ruma+A+Comp+Sg+Nom
 +Comp:»m     A_BACK_COMPARATIVE_STEMS ;
 
 LEXICON A_FRONT_COMPARATIVE
 !!€gt-norm: Adjective comparative back
-!!€ tyhmempi tyhmä+A+Comp+Sg+Nom
+!!€ tyhmempi: tyhmä+A+Comp+Sg+Nom
 +Comp:»m     A_FRONT_COMPARATIVE_STEMS ;
 
 
@@ -37,9 +37,9 @@ LEXICON A_BACK_COMPARATIVE_STEMS
 !! This inflectional part attached to adjective comparative stems to avoid
 !! circularity in comparative derivations:
 !!€gt-norm: Adjective comparative inflection back
-!!€ nopeampi nopea+A+Comp+Sg+Nom faster
-!!$ nopeammampi nopea+A+Comp+Comp+Sg+Nom 
-!!$ nopeammammampi nopea+A+Comp+Comp+Comp+Sg+Nom
+!!€ nopeampi: nopea+A+Comp+Sg+Nom faster
+!!$ nopeammampi: nopea+A+Comp+Comp+Sg+Nom 
+!!$ nopeammammampi: nopea+A+Comp+Comp+Comp+Sg+Nom
 0:pi  A_BACK_NOMINATIVE    ;
 0:pa  A_BACK_STRONG_SINGULARS    ;
 0:ma  A_BACK_WEAK_SINGULARS    ;
@@ -54,8 +54,8 @@ LEXICON A_BACK_COMPARATIVE_STEMS
 
 LEXICON A_FRONT_COMPARATIVE_STEMS
 !!€gt-norm: Adjective comparative inflection front
-!!€ tyhmempänä tyhmä+A+Comp+Sg+Ess
-!!$ tyhmemmämpi tyhmä+A+Comp+Comp+Sg+Nom
+!!€ tyhmempänä: tyhmä+A+Comp+Sg+Ess
+!!$ tyhmemmämpi: tyhmä+A+Comp+Comp+Sg+Nom
 0:pi  A_FRONT_NOMINATIVE    ;
 0:pä  A_FRONT_STRONG_SINGULARS    ;
 0:mä  A_FRONT_WEAK_SINGULARS    ;
@@ -72,9 +72,9 @@ LEXICON A_BACK_SUPERLATIVE_STEMS
 !! This inflectional part is attached to adjective superlative stems to avoid
 !! circularity in superlative  derivations:
 !!€gt-norm: Adjective superlative inflection back
-!!€ nopein nopea+A+Sup+Sg+Nom
-!!$ nopeimmimpia nopea+A+Sup+Sup+Sg+Par
-!!$ nopeimmimmin nopea+A+Sup+Sup+Sup+Sg+Nom
+!!€ nopein: nopea+A+Sup+Sg+Nom
+!!$ nopeimmimpia: nopea+A+Sup+Sup+Sg+Par
+!!$ nopeimmimmin: nopea+A+Sup+Sup+Sup+Sg+Nom
 0:n   A_BACK_NOMINATIVE    ;
 0:mpa   A_BACK_STRONG_SINGULARS    ;
 0:mma   A_BACK_WEAK_SINGULARS   ;
@@ -90,8 +90,8 @@ LEXICON A_BACK_SUPERLATIVE_STEMS
 
 LEXICON A_FRONT_SUPERLATIVE_STEMS
 !!€gt-norm: Adjective superlative inflection front
-!!€ tyhmin tyhmä+A+Sup+Sg+Nom
-!!$ tyhmimmimpiä tyhmä+A+Sup+Sup+Sg+Par
+!!€ tyhmin: tyhmä+A+Sup+Sg+Nom
+!!$ tyhmimmimpiä: tyhmä+A+Sup+Sup+Sg+Par
 0:n   A_FRONT_NOMINATIVE    ;
 0:mpä   A_FRONT_STRONG_SINGULARS    ;
 0:mmä   A_FRONT_WEAK_SINGULARS   ;
@@ -112,28 +112,28 @@ LEXICON A_FRONT_SUPERLATIVE_STEMS
 
 LEXICON A_BACK_NOMINATIVE
 !!€gt-norm: Adjective nominative back
-!!€ rumapa ruma+A+Sg+Nom+Foc/pa
+!!€ rumapa: ruma+A+Sg+Nom+Foc/pa
 +Sg+Nom:0   A_BACK_CLIT_OPT  ;
 
 LEXICON A_FRONT_NOMINATIVE
 !!€gt-norm: Adjective nominative front
-!!€ tyhmäpä tyhmä+A+Sg+Nom+Foc/pa
+!!€ tyhmäpä: tyhmä+A+Sg+Nom+Foc/pa
 +Sg+Nom:0   A_FRONT_CLIT_OPT  ;
 
 LEXICON A_BACK_PLNOM_CLIT
 !!€gt-norm: Adjective pl tant back
-!!€ rumat ruma+A+Pl+Nom
+!!€ rumat: ruma+A+Pl+Nom
 +Pl+Nom:t     A_BACK_CLIT_OPT  ;
 
 LEXICON A_FRONT_PLNOM_CLIT
 !!€gt-norm: Adjective pl tant front
-!!€ tyhmät tyhmä+A+Pl+Nom
+!!€ tyhmät: tyhmä+A+Pl+Nom
 +Pl+Nom:t     A_FRONT_CLIT_OPT  ;
 
 LEXICON A_BACK_WEAK_SINGULARS
 !!€gt-norm: Adjective regular singular back
-!!€ ruman ruma+A+Sg+Gen
-!!€ rumatta ruma+A+Sg+Abe
+!!€ ruman: ruma+A+Sg+Gen
+!!€ rumatta: ruma+A+Sg+Abe
 0    A_BACK_PLNOM_CLIT   ;
 +Sg+Gen:%>n     A_BACK_CLIT_OPT   ;
 +Sg+Abe:%>tta   A_BACK_POSS_AN_CLIT_OPT      ;
@@ -148,8 +148,8 @@ LEXICON A_BACK_WEAK_SINGULARS
 
 LEXICON A_FRONT_WEAK_SINGULARS
 !!€gt-norm: Adjective regular singular front
-!!€ tyhmän tyhmä+A+Sg+Gen
-!!€ tyhmättä tyhmä+A+Sg+Abe
+!!€ tyhmän: tyhmä+A+Sg+Gen
+!!€ tyhmättä: tyhmä+A+Sg+Abe
 0    A_FRONT_PLNOM_CLIT   ;
 +Sg+Gen:%>n     A_FRONT_CLIT_OPT   ;
 +Sg+Abe:%>ttä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
@@ -164,8 +164,8 @@ LEXICON A_FRONT_WEAK_SINGULARS
 
 LEXICON A_BACK_STRONG_SINGULARS
 !!€gt-norm: Adjective regular singular back strongs
-!!€ rumana ruma+A+Sg+Ess
-!!€ rumani ruma+A+Sg+Nom+PxSg1
+!!€ rumana: ruma+A+Sg+Ess
+!!€ rumani: ruma+A+Sg+Nom+PxSg1
 +Sg+Ess:%>na A_BACK_POSS_AN_CLIT_OPT      ;
 +Sg+Nom:0  A_BACK_POSS   ;
 +Sg+Gen:0  A_BACK_POSS   ;
@@ -173,8 +173,8 @@ LEXICON A_BACK_STRONG_SINGULARS
 
 LEXICON A_FRONT_STRONG_SINGULARS
 !!€gt-norm: Adjective regular singular front strongs
-!!€ tyhmänä tyhmä+A+Sg+Ess
-!!€ tyhmäni tyhmä+A+Sg+Nom+PxSg1
+!!€ tyhmänä: tyhmä+A+Sg+Ess
+!!€ tyhmäni: tyhmä+A+Sg+Nom+PxSg1
 +Sg+Ess:%>nä A_FRONT_POSS_ÄN_CLIT_OPT      ;
 +Sg+Nom:0  A_FRONT_POSS   ;
 +Sg+Gen:0  A_FRONT_POSS   ;
@@ -183,8 +183,8 @@ LEXICON A_FRONT_STRONG_SINGULARS
 
 LEXICON A_BACK_WEAK_PLURALS
 !!€gt-norm: Adjective regular plural back
-!!€ heikoitta heikko+A+Pl+Abe
-!!€ heikoilta heikko+A+Pl+Abl
+!!€ heikoitta: heikko+A+Pl+Abe
+!!€ heikoilta: heikko+A+Pl+Abl
 +Pl+Abe:%>i%>tta   A_BACK_POSS_AN_CLIT_OPT      ;
 +Pl+Abl:%>i%>lta   A_BACK_POSS_AN_CLIT_OPT      ;
 +Pl+Ade:%>i%>lla   A_BACK_POSS_AN_CLIT_OPT      ;
@@ -197,8 +197,8 @@ LEXICON A_BACK_WEAK_PLURALS
 
 LEXICON A_FRONT_WEAK_PLURALS
 !!€gt-norm: Adjective regular plural front
-!!€ jäykittä jäykkä+A+Pl+Abe
-!!€ jäykiltä jäykkä+A+Pl+Abl
+!!€ jäykittä: jäykkä+A+Pl+Abe
+!!€ jäykiltä: jäykkä+A+Pl+Abl
 +Pl+Abe:%>i%>ttä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
 +Pl+Abl:%>i%>ltä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
 +Pl+Ade:%>i%>llä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
@@ -211,296 +211,296 @@ LEXICON A_FRONT_WEAK_PLURALS
 
 LEXICON A_FRONT_STRONG_PLURALS
 !!€gt-norm: Adjective regular plural back strong
-!!€ jäykkinä jäykkä+A+Pl+Ess
-!!€ jäykkine jäykkä+A+Cmt
+!!€ jäykkinä: jäykkä+A+Pl+Ess
+!!€ jäykkine: jäykkä+A+Cmt
 +Pl+Ess:%>i%>nä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
 +Cmt:%>i%>ne        A_FRONT_POSS_ÄN_CLIT_OPT      ;
 
 LEXICON A_BACK_STRONG_PLURALS
 !!€gt-norm: Adjective regular plural front strong
-!!€ heikkoina heikko+A+Pl+Ess
-!!€ heikkoine heikko+A+Cmt
+!!€ heikkoina: heikko+A+Pl+Ess
+!!€ heikkoine: heikko+A+Cmt
 +Pl+Ess:%>i%>na   A_BACK_POSS_AN_CLIT_OPT      ;
 +Cmt:%>i%>ne        A_BACK_POSS_AN_CLIT_OPT      ;
 
 LEXICON A_BACK_PARTITIVE_A
 !!€gt-norm: Adjective singular partitive a
-!!€ tarkkaa tarkka+A+Sg+Par
-!!€ tarkkaansa tarkka+A+Sg+Par+PxSg3
+!!€ tarkkaa: tarkka+A+Sg+Par
+!!€ tarkkaansa: tarkka+A+Sg+Par+PxSg3
 +Sg+Par:%>a      A_BACK_POSS_CLIT_OPT      ;
 
 LEXICON A_FRONT_PARTITIVE_Ä
 !!€gt-norm: Adjective singular partitive ä
-!!€ tyhmää tyhmä+A+Sg+Par
-!!€ tyhmäänsä tyhmä+A+Sg+Par+PxSg3
+!!€ tyhmää: tyhmä+A+Sg+Par
+!!€ tyhmäänsä: tyhmä+A+Sg+Par+PxSg3
 +Sg+Par:%>ä      A_FRONT_POSS_CLIT_OPT      ;
 
 LEXICON A_BACK_PARTITIVE_A_AN
 !!€gt-norm: Adjective singular partitive a poss aan
-!!€ jaloa jalo+A+Sg+Par
-!!€ jaloaan jalo+A+Sg+Par+PxSg3
+!!€ jaloa: jalo+A+Sg+Par
+!!€ jaloaan: jalo+A+Sg+Par+PxSg3
 +Sg+Par:%>a      A_BACK_POSS_AN_CLIT_OPT      ;
 
 LEXICON A_FRONT_PARTITIVE_Ä_ÄN
 !!€gt-norm: Adjective singular partitive ä poss ään
-!!€ hölöä hölö+A+Sg+Par
-!!€ hölöään hölö+A+Sg+Par+PxSg3
+!!€ hölöä: hölö+A+Sg+Par
+!!€ hölöään: hölö+A+Sg+Par+PxSg3
 0+Sg+Par:%>ä     A_FRONT_POSS_ÄN_CLIT_OPT     ;
 
 LEXICON A_BACK_PARTITIVE_TA
 !!€gt-norm: Adjective singular partitive ta
-!!€ vapaata vapaa+A+Sg+Par
+!!€ vapaata: vapaa+A+Sg+Par
 +Sg+Par:ta     A_BACK_POSS_AN_CLIT_OPT      ;
 
 LEXICON A_FRONT_PARTITIVE_TÄ
 !!€gt-norm: Adjective singular partitive tä
-!!€ pientä pieni+A+Sg+Par
+!!€ pientä: pieni+A+Sg+Par
 +Sg+Par:%>tä     A_FRONT_POSS_ÄN_CLIT_OPT      ;
 
 LEXICON A_BACK_ILLATIVE_HAN
 !!€gt-norm: Adjective singular illative han
-!!€ peeaahan peeaa+A+Sg+Ill
+!!€ peeaahan: peeaa+A+Sg+Ill
 +Sg+Ill:%>han    A_BACK_CLIT_OPT         ;
 +Sg+Ill:%>ha     A_BACK_POSS     ;
 
 LEXICON A_FRONT_ILLATIVE_HIN
 !!€gt-norm: Adjective singular illative hin
-!!€ gayhin gay+A+Sg+Ill
+!!€ gayhin: gay+A+Sg+Ill
 +Sg+Ill:%>hin    A_FRONT_CLIT_OPT        ;
 +Sg+Ill:%>hi     A_FRONT_POSS     ;
 
 LEXICON A_BACK_ILLATIVE_HUN
 !!€gt-norm: Adjective singular illative hun
-!!€ muuhun muu+A+Sg+Ill
+!!€ muuhun: muu+A+Sg+Ill
 +Sg+Ill:%>hun    A_BACK_CLIT_OPT        ;
 +Sg+Ill:%>hu     A_BACK_POSS     ;
 
 LEXICON A_FRONT_ILLATIVE_HYN
 !!€gt-norm: Adjective singular illative hyn
-!!€ gayhynpä gay+A+Sg+Ill+Foc/pa
+!!€ gayhynpä: gay+A+Sg+Ill+Foc/pa
 +Sg+Ill:%>hyn    A_FRONT_CLIT_OPT         ;
 +Sg+Ill:%>hy     A_FRONT_POSS     ;
 
 LEXICON A_FRONT_ILLATIVE_HÄN
 !!€gt-norm: Adjective singular illative hän
-!!€ syypäähän syypää+A+Sg+Ill
+!!€ syypäähän: syypää+A+Sg+Ill
 +Sg+Ill:%>hän    A_FRONT_CLIT_OPT         ;
 +Sg+Ill:%>hä     A_FRONT_POSS     ;
 
 LEXICON A_BACK_ILLATIVE_SEEN
 !!€gt-norm: Adjective singular illative seen back
-!!€ vapaaseen vapaa+A+Sg+Ill
+!!€ vapaaseen: vapaa+A+Sg+Ill
 +Sg+Ill:%>seen      A_BACK_CLIT_OPT     ;
 +Sg+Ill:%>see       A_BACK_POSS     ;
 
 LEXICON A_FRONT_ILLATIVE_SEEN
 !!€gt-norm: Adjective singular illative seen front
-!!€ työlääseen työläs+A+Sg+Ill
+!!€ työlääseen: työläs+A+Sg+Ill
 +Sg+Ill:%>seen      A_FRONT_CLIT_OPT     ;
 +Sg+Ill:%>see       A_FRONT_POSS     ;
 
 LEXICON A_BACK_ILLATIVE_AN
 !!€gt-norm: Adjective singular illative an
-!!€ rumaan ruma+A+Sg+Ill
+!!€ rumaan: ruma+A+Sg+Ill
 +Sg+Ill:%>an     A_BACK_CLIT_OPT         ;
 +Sg+Ill:%>a      A_BACK_POSS     ;
 
 
 LEXICON A_BACK_ILLATIVE_EN
 !!€gt-norm: Adjective singular illative en back
-!!€ suureen suuri+A+Sg+Ill
+!!€ suureen: suuri+A+Sg+Ill
 +Sg+Ill:%>en     A_BACK_CLIT_OPT         ;
 +Sg+Ill:%>e      A_BACK_POSS     ;
 
 LEXICON A_FRONT_ILLATIVE_EN
 !!€gt-norm: Adjective singular illative en front
-!!€ pieneen pieni+A+Sg+Ill
+!!€ pieneen: pieni+A+Sg+Ill
 +Sg+Ill:%>en     A_FRONT_CLIT_OPT         ;
 +Sg+Ill:%>e      A_FRONT_POSS     ;
 
 LEXICON A_BACK_ILLATIVE_IN
 !!€gt-norm: Adjective singular illative in back
-!!€ tuhtiin tuhti+A+Sg+Ill
+!!€ tuhtiin: tuhti+A+Sg+Ill
 +Sg+Ill:%>in     A_BACK_CLIT_OPT         ;
 +Sg+Ill:%>i      A_BACK_POSS     ;
 
 LEXICON A_FRONT_ILLATIVE_IN
 !!€gt-norm: Adjective singular illative in front
-!!€ rehtiin rehti+A+Sg+Ill
+!!€ rehtiin: rehti+A+Sg+Ill
 +Sg+Ill:%>in     A_FRONT_CLIT_OPT         ;
 +Sg+Ill:%>i      A_FRONT_POSS     ;
 
 LEXICON A_BACK_ILLATIVE_ON
 !!€gt-norm: Adjective singular illative on
-!!€ huonoon huono+A+Sg+Ill
+!!€ huonoon: huono+A+Sg+Ill
 +Sg+Ill:%>on     A_BACK_CLIT_OPT         ;
 +Sg+Ill:%>o      A_BACK_POSS     ;
 
 LEXICON A_BACK_ILLATIVE_UN
 !!€gt-norm: Adjective singular illative un
-!!€ fiksuun fiksu+A+Sg+Ill
+!!€ fiksuun: fiksu+A+Sg+Ill
 +Sg+Ill:%>un     A_BACK_CLIT_OPT         ;
 +Sg+Ill:%>u      A_BACK_POSS     ;
 
 LEXICON A_FRONT_ILLATIVE_YN
 !!€gt-norm: Adjective singular illative yn
-!!€ häijyyn häijy+A+Sg+Ill
+!!€ häijyyn: häijy+A+Sg+Ill
 +Sg+Ill:%>yn     A_FRONT_CLIT_OPT         ;
 +Sg+Ill:%>y      A_FRONT_POSS     ;
 
 LEXICON A_FRONT_ILLATIVE_ÄN
 !!€gt-norm: Adjective singular illative än
-!!€ tyhmään tyhmä+A+Sg+Ill
+!!€ tyhmään: tyhmä+A+Sg+Ill
 +Sg+Ill:%>än     A_FRONT_CLIT_OPT         ;
 +Sg+Ill:%>ä      A_FRONT_POSS     ;
 
 LEXICON A_FRONT_ILLATIVE_ÖN
 !!€gt-norm: Adjective singular illative ön
-!!€ hölmöön hölmö+A+Sg+Ill
+!!€ hölmöön: hölmö+A+Sg+Ill
 +Sg+Ill:%>ön     A_FRONT_CLIT_OPT         ;
 +Sg+Ill:%>ö      A_FRONT_POSS     ;
 
 LEXICON A_BACK_PARTITIVE_IA
 !!€gt-norm: Adjective plural partitive ia
-!!€ rumia ruma+A+Pl+Par
+!!€ rumia: ruma+A+Pl+Par
 +Pl+Par:%>i%>a    A_BACK_POSS_AN_CLIT_OPT      ;
 
 LEXICON A_FRONT_PARTITIVE_IÄ
 !!€gt-norm: Adjective plural partitive iä
-!!€ tyhmiä tyhmä+A+Pl+Par
+!!€ tyhmiä: tyhmä+A+Pl+Par
 +Pl+Par:%>i%>ä    A_FRONT_POSS_ÄN_CLIT_OPT      ;
 
 LEXICON A_BACK_PARTITIVE_ITA
 !!€gt-norm: Adjective plural partitive ita
-!!€ korkeita korkea+A+Pl+Par
+!!€ korkeita: korkea+A+Pl+Par
 +Pl+Par:%>i%>ta   A_BACK_POSS_AN_CLIT_OPT      ;
 
 LEXICON A_FRONT_PARTITIVE_ITÄ
 !!€gt-norm: Adjective plural partitive itä
-!!€ järeitä järeä+A+Pl+Par
+!!€ järeitä: järeä+A+Pl+Par
 +Pl+Par:%>i%>tä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
 
 LEXICON A_BACK_PARTITIVE_JA
 !!€gt-norm: Adjective plural partitive ja
-!!€ vahvoja vahva+A+Pl+Par
+!!€ vahvoja: vahva+A+Pl+Par
 +Pl+Par:%>j%>a     A_BACK_POSS_AN_CLIT_OPT      ;
 
 LEXICON A_FRONT_PARTITIVE_JÄ
 !!€gt-norm: Adjective plural partitive jä
-!!€ hölmöjä hölmö+A+Pl+Par
+!!€ hölmöjä: hölmö+A+Pl+Par
 +Pl+Par:%>j%>ä     A_FRONT_POSS_ÄN_CLIT_OPT      ;
 
 LEXICON A_BACK_GENITIVE_IDEN
 !!€gt-norm: Adjective plural genitive iden back
-!!€ tanakoiden tanakka+A+Pl+Gen
+!!€ tanakoiden: tanakka+A+Pl+Gen
 +Pl+Gen:%>i%>den    A_BACK_CLIT_OPT     ;
 +Pl+Gen:%>i%>de     A_BACK_POSS     ;
 
 LEXICON A_FRONT_GENITIVE_IDEN
 !!€gt-norm: Adjective plural genitive iden front
-!!€ räväköiden räväkkä+A+Pl+Gen
+!!€ räväköiden: räväkkä+A+Pl+Gen
 +Pl+Gen:%>i%>den    A_FRONT_CLIT_OPT     ;
 +Pl+Gen:%>i%>de     A_FRONT_POSS     ;
 
 LEXICON A_BACK_GENITIVE_IEN
 !!€gt-norm: Adjective plural genitive ien back
-!!€ rumien ruma+A+Pl+Gen
+!!€ rumien: ruma+A+Pl+Gen
 +Pl+Gen:%>i%>en   A_BACK_CLIT_OPT     ;
 +Pl+Gen:%>i%>e    A_BACK_POSS     ;
 
 LEXICON A_FRONT_GENITIVE_IEN
 !!€gt-norm: Adjective plural genitive ien front
-!!€ tyhmien tyhmä+A+Pl+Gen
+!!€ tyhmien: tyhmä+A+Pl+Gen
 +Pl+Gen:%>i%>en   A_FRONT_CLIT_OPT     ;
 +Pl+Gen:%>i%>e    A_FRONT_POSS     ;
 
 LEXICON A_BACK_GENITIVE_ITTEN
 !!€gt-norm: Adjective plural genitive itten back
-!!€ nopeitten nopea+A+Pl+Gen
+!!€ nopeitten: nopea+A+Pl+Gen
 +Pl+Gen:%>i%>tten     A_BACK_CLIT_OPT     ;
 +Pl+Gen:%>i%>tte      A_BACK_POSS     ;
 
 LEXICON A_FRONT_GENITIVE_ITTEN
 !!€gt-norm: Adjective plural genitive itten front
-!!€ järeitten järeä+A+Pl+Gen
+!!€ järeitten: järeä+A+Pl+Gen
 +Pl+Gen:%>i%>tten     A_FRONT_CLIT_OPT     ;
 +Pl+Gen:%>i%>tte      A_FRONT_POSS     ;
 
 LEXICON A_BACK_GENITIVE_JEN
 !!€gt-norm: Adjective plural genitive jen back
-!!€ vahvojen vahva+A+Pl+Gen
+!!€ vahvojen: vahva+A+Pl+Gen
 +Pl+Gen:%>j%>en    A_BACK_CLIT_OPT     ;
 +Pl+Gen:%>j%>e     A_BACK_POSS     ;
 
 LEXICON A_FRONT_GENITIVE_JEN
 !!€gt-norm: Adjective plural genitive jen front
-!!€ hölmöjen hölmö+A+Pl+Gen
+!!€ hölmöjen: hölmö+A+Pl+Gen
 +Pl+Gen:%>j%>en    A_FRONT_CLIT_OPT     ;
 +Pl+Gen:%>j%>e     A_FRONT_POSS     ;
 
 LEXICON A_BACK_GENITIVE_TEN
 !!€gt-norm: Adjective plural genitive ten back
-!!€ suurten suuri+A+Pl+Gen
+!!€ suurten: suuri+A+Pl+Gen
 +Pl+Gen:%>ten    A_BACK_CLIT_OPT     ;
 +Pl+Gen:%>te     A_BACK_POSS     ;
 
 LEXICON A_FRONT_GENITIVE_TEN
 !!€gt-norm: Adjective plural genitive ten front
-!!€ pienten pieni+A+Pl+Gen
+!!€ pienten: pieni+A+Pl+Gen
 +Pl+Gen:%>ten    A_FRONT_CLIT_OPT     ;
 +Pl+Gen:%>te     A_FRONT_POSS     ;
 
 LEXICON A_BACK_GENITIVE_IN
 !!€gt-norm: Adjective plural genitive in back
-!!€ rumain ruma+A+Pl+Gen+Use/Rare
+!!€ rumain: ruma+A+Pl+Gen+Use/Rare
 +Pl+Gen+Use/Rare:%>i%>n    A_BACK_CLIT_OPT     ;
 +Pl+Gen+Use/Rare:%>i%>     A_BACK_POSS     ;
 
 LEXICON A_FRONT_GENITIVE_IN
 !!€gt-norm: Adjective plural genitive in front
-!!€ tyhmäin tyhmä+A+Pl+Gen+Use/Rare
+!!€ tyhmäin: tyhmä+A+Pl+Gen+Use/Rare
 +Pl+Gen+Use/Rare:%>i%>n    A_FRONT_CLIT_OPT     ;
 +Pl+Gen+Use/Rare:%>i%>     A_FRONT_POSS     ;
 
 LEXICON A_BACK_ILLATIVE_IHIN
 !!€gt-norm: Adjective plural illative ihin bacl
-!!€ pahoihin paha+A+Pl+Ill
+!!€ pahoihin: paha+A+Pl+Ill
 +Pl+Ill:%>i%>hin   A_BACK_CLIT_OPT    ;
 +Pl+Ill:%>i%>hi    A_BACK_POSS     ;
 
 LEXICON A_FRONT_ILLATIVE_IHIN
 !!€gt-norm: Adjective plural illative ihin front
-!!€ hölmöihin hölmö+A+Pl+Ill
+!!€ hölmöihin: hölmö+A+Pl+Ill
 +Pl+Ill:%>i%>hin   A_FRONT_CLIT_OPT    ;
 +Pl+Ill:%>i%>hi    A_FRONT_POSS     ;
 
 LEXICON A_BACK_ILLATIVE_IIN
 !!€gt-norm: Adjective plural illative iin back
-!!€ punaisiin punainen+A+Pl+Ill
+!!€ punaisiin: punainen+A+Pl+Ill
 +Pl+Ill:%>i%>in    A_BACK_CLIT_OPT     ;
 +Pl+Ill:%>i%>i     A_BACK_POSS     ;
 
 LEXICON A_FRONT_ILLATIVE_IIN
 !!€gt-norm: Adjective plural illative iin front
-!!€ sinisiin sininen+A+Pl+Ill
+!!€ sinisiin: sininen+A+Pl+Ill
 +Pl+Ill:%>i%>in    A_FRONT_CLIT_OPT     ;
 +Pl+Ill:%>i%>i     A_FRONT_POSS     ;
 
 LEXICON A_BACK_ILLATIVE_ISIIN
 !!€gt-norm: Adjective plural illative isiin back
-!!€ korkeisiin korkea+A+Pl+Ill
+!!€ korkeisiin: korkea+A+Pl+Ill
 +Pl+Ill:%>i%>siin  A_BACK_CLIT_OPT     ;
 +Pl+Ill:%>i%>sii   A_BACK_POSS     ;
 
 LEXICON A_FRONT_ILLATIVE_ISIIN
 !!€gt-norm: Adjective plural illative isiin front
-!!€ järeisiin järeä+A+Pl+Ill
+!!€ järeisiin: järeä+A+Pl+Ill
 +Pl+Ill:%>i%>siin  A_FRONT_CLIT_OPT     ;
 +Pl+Ill:%>i%>sii   A_FRONT_POSS     ;
 
 LEXICON A_FRONT_POSS
 !!€gt-norm: Adjective possessive back
-!!€ tyhmäni tyhmä+A+Sg+Nom+PxSg1
+!!€ tyhmäni: tyhmä+A+Sg+Nom+PxSg1
 +PxSg1:%>ni  A_FRONT_CLIT_OPT        ;
 +PxSg2:%>si  A_FRONT_CLIT_OPT        ;
 +PxSg3:%>nsä A_FRONT_CLIT_OPT        ;
@@ -510,7 +510,7 @@ LEXICON A_FRONT_POSS
 
 LEXICON A_BACK_POSS
 !!€gt-norm: Adjective possessive front
-!!€ rumani ruma+A+Sg+Nom+PxSg1
+!!€ rumani: ruma+A+Sg+Nom+PxSg1
 +PxSg1:%>ni  A_BACK_CLIT_OPT        ;
 +PxSg2:%>si  A_BACK_CLIT_OPT        ;
 +PxSg3:%>nsa A_BACK_CLIT_OPT        ;
@@ -520,31 +520,31 @@ LEXICON A_BACK_POSS
 
 LEXICON A_BACK_POSS_AN
 !!€gt-norm: Adjective possessive an
-!!€ kieroaan kiero+A+Sg+Par+PxSg3
+!!€ kieroaan: kiero+A+Sg+Par+PxSg3
 +PxSg3:%>an    A_BACK_CLIT_OPT     ;
 +PxPl3:%>an    A_BACK_CLIT_OPT     ;
 
 LEXICON A_BACK_POSS_EN
 !!€gt-norm: Adjective possessive en back
-!!€ rumalleen ruma+A+Sg+All+PxSg3
+!!€ rumalleen: ruma+A+Sg+All+PxSg3
 +PxSg3:%>en    A_BACK_CLIT_OPT     ;
 +PxPl3:%>en    A_BACK_CLIT_OPT     ;
 
 LEXICON A_FRONT_POSS_EN
 !!€gt-norm: Adjective possessive en front
-!!€ tyhmälleen tyhmä+A+Sg+All+PxSg3
+!!€ tyhmälleen: tyhmä+A+Sg+All+PxSg3
 +PxSg3:%>en    A_FRONT_CLIT_OPT     ;
 +PxPl3:%>en    A_FRONT_CLIT_OPT     ;
 
 LEXICON A_FRONT_POSS_ÄN
 !!€gt-norm: Adjective possessive än
-!!€ hölmöään hölmö+A+Sg+Par+PxSg3
+!!€ hölmöään: hölmö+A+Sg+Par+PxSg3
 +PxSg3:%>än    A_FRONT_CLIT_OPT     ;
 +PxPl3:%>än    A_FRONT_CLIT_OPT     ;
 
 LEXICON A_BACK_CLIT
 !!€gt-norm: Adjective clitic back
-!!€ rumahan ruma+A+Sg+Nom+Foc/han
+!!€ rumahan: ruma+A+Sg+Nom+Foc/han
 +Foc/han:%>han   #        ;
 +Foc/han+Foc/kaan:%>han%>kaan  #        ;
 +Foc/han+Qst:%>han%>ko #        ;
@@ -574,7 +574,7 @@ LEXICON A_BACK_CLIT
 
 LEXICON A_FRONT_CLIT
 !!€gt-norm: Adjective clitic front
-!!€ tyhmähän tyhmä+A+Sg+Nom+Foc/han
+!!€ tyhmähän: tyhmä+A+Sg+Nom+Foc/han
 +Foc/han:%>hä%>n   #        ;
 +Foc/han+Foc/kaan:%>hän%>kään  #        ;
 +Foc/han+Qst:%>hän%>kö #        ;
