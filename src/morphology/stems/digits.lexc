@@ -7,7 +7,7 @@ LEXICON DIGITS
 !! roman numerals.
 !! Zero alone works quite differently:
 !!€gt-norm: Digit zero
-!!€ 0 0+Num+Sg+Nom
+!!€ 0: 0+Num+Sg+Nom
 0    DIGITS_INT_LOOP ;
 0    DIGITS_DECIMAL_LOOP ;
 0    DIGITS_ROMANS   ;
@@ -18,9 +18,9 @@ LEXICON DIGITS_INT_LOOP
 !! 1-9, followed by any number of 0's. Initial 0's are rare, but not totally
 !! unexpected:
 !!€gt-norm: int digit loop
-!!€ 13 13+Num+Card+Sg+Nom
-!!€ 100 100+Num+Card+Sg+Nom
-!!€ 0000005550000000 0000005550000000+Num+Card+Sg+Nom
+!!€ 13: 13+Num+Card+Sg+Nom
+!!€ 100: 100+Num+Card+Sg+Nom
+!!€ 0000005550000000: 0000005550000000+Num+Card+Sg+Nom
 %0  DIGITS_INT_LOOP ;
 1   DIGITS_INT_LOOP ;
 2   DIGITS_INT_LOOP ;
@@ -199,9 +199,9 @@ LEXICON DIGITS_INT_LOOP
 LEXICON DIGITS_ILLIARD_LOOP
 !! The digit strings that end in 10 to 12 + 6n 0's are inflected alike:
 !!€gt-norm: int digit milliard loop
-!!€ 1000000000   1000000000+Num+Card+Sg+Nom
-!!€ 300000000000 300000000000+Num+Card+Sg+Nom
-!!€ 123456000000000000000000 123456000000000000000000+Num+Card+Sg+Nom
+!!€ 1000000000:   1000000000+Num+Card+Sg+Nom
+!!€ 300000000000: 300000000000+Num+Card+Sg+Nom
+!!€ 123456000000000000000000: 123456000000000000000000+Num+Card+Sg+Nom
 %0%0%0%0%0%0    DIGITS_ILLIARD_LOOP ;
 +Num+Card:0    DIGITS_MILJARDI ;
 +Num+Ord:0    DIGITS_KOLMAS ;
@@ -209,9 +209,9 @@ LEXICON DIGITS_ILLIARD_LOOP
 LEXICON DIGITS_ILLION_LOOP
 !! The digit strings that end in 6 to 9 + 6n 0's are inflected alike:
 !!€gt-norm: int digit million loop
-!!€ 1000000   1000000+Num+Card+Sg+Nom
-!!€ 300000000 300000000+Num+Card+Sg+Nom
-!!€ 123456000000000000000 123456000000000000000+Num+Card+Sg+Nom
+!!€ 1000000:   1000000+Num+Card+Sg+Nom
+!!€ 300000000: 300000000+Num+Card+Sg+Nom
+!!€ 123456000000000000000: 123456000000000000000+Num+Card+Sg+Nom
 %0%0%0%0%0%0    DIGITS_ILLION_LOOP  ;
 +Num+Card:0    DIGITS_MILJOONA ;
 +Num+Ord:0    DIGITS_KOLMAS ;
@@ -221,8 +221,8 @@ LEXICON DIGITS_DECIMAL_LOOP
 !! by decimal separator comma. The decimal dot may be allowed as substandard
 !! variant.
 !!€gt-norm: decimal digit loop
-!!€ 1,0 1,0+Num+Sg+Nom
-!!€ 314,1 314,1+Num+Sg+Nom
+!!€ 1,0: 1,0+Num+Sg+Nom
+!!€ 314,1: 314,1+Num+Sg+Nom
 %0  DIGITS_DECIMAL_LOOP ;
 1   DIGITS_DECIMAL_LOOP ;
 2   DIGITS_DECIMAL_LOOP ;
@@ -241,8 +241,8 @@ LEXICON DIGITS_DECIMAL_LOOP_FINAL
 !! The decimal digit strings end in any number of digits 0 to 9, inflected
 !! along the last part.
 !!€gt-norm: decimal digit loop more
-!!€ 3,141 3,141+Num+Sg+Nom
-!!€ 123,345 123,345+Num+Sg+Nom
+!!€ 3,141: 3,141+Num+Sg+Nom
+!!€ 123,345: 123,345+Num+Sg+Nom
 %0  DIGITS_DECIMAL_LOOP_FINAL ;
 1   DIGITS_DECIMAL_LOOP_FINAL ;
 2   DIGITS_DECIMAL_LOOP_FINAL ;
@@ -294,9 +294,9 @@ LEXICON DIGITS_ROMANS
 !! scale and some combinations, they denote ordinal numbers and inflect like
 !! ones.
 !!€gt-norm: roman numeral
-!!€ MM MM+Num+Ord+Sg+Nom
-!!€ MCXI MCXI+Num+Ord+Sg+Nom
-!!€ CMXCIX CMXCIX+Num+Ord+Sg+Nom
+!!€ MM: MM+Num+Ord+Sg+Nom
+!!€ MCXI: MCXI+Num+Ord+Sg+Nom
+!!€ CMXCIX: CMXCIX+Num+Ord+Sg+Nom
 0    DIGITS_ROMANS_THOUSANDS ;
 0    DIGITS_ROMANS_HUNDREDS  ;
 0    DIGITS_ROMANS_TENS      ;
@@ -305,8 +305,8 @@ LEXICON DIGITS_ROMANS
 LEXICON DIGITS_ROMANS_THOUSANDS
 !! Thousands can be followed by any of other parts
 !!€gt-norm: roman numeral thousand
-!!€ MII MII+Num+Ord+Sg+Nom
-!!€ MCCCXXII MCCCXXII+Num+Ord+Sg+Nom
+!!€ MII: MII+Num+Ord+Sg+Nom
+!!€ MCCCXXII: MCCCXXII+Num+Ord+Sg+Nom
 MMMM    DIGITS_ROMANS_HUNDREDS  ;
 MMM     DIGITS_ROMANS_HUNDREDS  ;
 MM      DIGITS_ROMANS_HUNDREDS  ;
@@ -328,8 +328,8 @@ M+Num+Ord:M       DIGITS_ROMANS_TOINEN  ;
 LEXICON DIGITS_ROMANS_HUNDREDS
 !! Hundreds can be followed by anything but thousands:
 !!€gt-norm: roman numeral hundred
-!!€ CXXI CXXI+Num+Ord+Sg+Nom
-!!€ DXXIV DXXIV+Num+Ord+Sg+Nom
+!!€ CXXI: CXXI+Num+Ord+Sg+Nom
+!!€ DXXIV: DXXIV+Num+Ord+Sg+Nom
 CM      DIGITS_ROMANS_TENS  ;
 DCCC    DIGITS_ROMANS_TENS  ;
 DCC     DIGITS_ROMANS_TENS  ;
@@ -361,8 +361,8 @@ C+Num+Ord:C       DIGITS_ROMANS_TOINEN  ;
 LEXICON DIGITS_ROMANS_TENS
 !! Tens can be followed by ones:
 !!€gt-norm: roman numeral ten
-!!€ XIX XIX+Num+Ord+Sg+Nom
-!!€ XXVII XXVII+Num+Ord+Sg+Nom
+!!€ XIX: XIX+Num+Ord+Sg+Nom
+!!€ XXVII: XXVII+Num+Ord+Sg+Nom
 XC      DIGITS_ROMANS_ONES  ;
 LXXX    DIGITS_ROMANS_ONES  ;
 LXX     DIGITS_ROMANS_ONES  ;
@@ -385,9 +385,9 @@ X+Num+Ord:X       DIGITS_ROMANS_ENSIMMÄINEN  ;
 LEXICON DIGITS_ROMANS_ONES
 !! Ones come alone
 !!€gt-norm: roman numerals one to nine
-!!€ IX IX+Num+Ord+Sg+Nom
-!!€ VIII VIII+Num+Ord+Sg+Nom
-!!€ II II+Num+Ord+Sg+Nom
+!!€ IX: IX+Num+Ord+Sg+Nom
+!!€ VIII: VIII+Num+Ord+Sg+Nom
+!!€ II: II+Num+Ord+Sg+Nom
 IX+Num+Ord:IX      DIGITS_ROMANS_ENSIMMÄINEN   ;
 VIII+Num+Ord:VIII    DIGITS_ROMANS_TOINEN        ;
 VII+Num+Ord:VII     DIGITS_ROMANS_ENSIMMÄINEN   ;
