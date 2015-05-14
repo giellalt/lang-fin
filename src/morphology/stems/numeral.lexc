@@ -10,9 +10,9 @@ LEXICON NUM
 !! Numerals have been split in three sections, the compounding parts
 !! of cardinals and ordinals, and the non-compounding ones:
 !!€gt-norm: Numeral
-!!€ kaksikymmentäkolmetuhatta: kaksi+Num+Card+Sg+Nom#kymmenen+Num+Card+Sg+Par#kolme+Num+Card+Sg+Nom#tuhat+Num+Card+Sg+Par 23,000
-!!€ kahdessadasneljäs: kahdes+Num+Ord+Sg+Nom#sadas+Num+Ord+Sg+Nom#neljäs+Num+Ord+Sg+Nom 204rd
-!!€ viitisenkymmentä: viitisen+Num#kymmentä 50-ish
+!!€ kaksikymmentäkolmetuhatta: kaksi+Num+Card+Sg+Nom#kymmenen+Num+Card+Sg+Par#kolme+Num+Card+Sg+Nom#tuhat+Num+Card+Sg+Par # 23,000
+!!€ kahdessadasneljäs: kahdes+Num+Ord+Sg+Nom#sadas+Num+Ord+Sg+Nom#neljäs+Num+Ord+Sg+Nom # 204rd
+!!€ viitisenkymmentä: viitisen+Num#kymmentä # 50-ish
 0    NUM_CARD_ALL    ;
 0    NUM_ORD_ALL ;
 0    NUM_OTHERS  ;
@@ -20,9 +20,9 @@ LEXICON NUM
 LEXICON NUM_CARD_ALL
 !! The compounding parts of cardinals are the number multiplier words.
 !!€gt-norm: cardinal
-!!€ yksi: yksi+Num+Card+Sg+Nom one
-!!€ viidelle: viisi+Num+Card+Sg+All five
-!!€ tuhatta: tuhat+Num+Card+Sg+Par thousand
+!!€ yksi: yksi+Num+Card+Sg+Nom # one
+!!€ viidelle: viisi+Num+Card+Sg+All # five
+!!€ tuhatta: tuhat+Num+Card+Sg+Par # thousand
 yksi+Num+Card:y             NUM_YKSI  ;
 kaksi+Num+Card:ka           NUM_KAKSI ;
 kolme+Num+Card:kolm         NUM_KOLME ;
