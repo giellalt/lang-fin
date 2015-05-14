@@ -43,14 +43,14 @@ Multichar_Symbols
 
 !! The part-of-speech analyses are typically the first:
 !!€gt-norm: Analysis examples
-!!€ kutoo: kutoa+V+Act+Ind+Prs+Sg3 knits
-!!€ talo: talo+N+Sg+Nom house
-!!€ nopea: nopea+A+Sg+Nom fast
-!!€ yksi: yksi+Num+Card+Sg+Nom one
-!!€ nopeasti: nopeasti+Adv fast
-!!€ hän: hän+Pron+Pers+Sg+Nom he
-!!€ ahaa: ahaa+Pcle ah
-!!€ äh: äh+Interj uh
+!!€ kutoo: kutoa+V+Act+Ind+Prs+Sg3 # knits
+!!€ talo: talo+N+Sg+Nom # house
+!!€ nopea: nopea+A+Sg+Nom # fast
+!!€ yksi: yksi+Num+Card+Sg+Nom # one
+!!€ nopeasti: nopeasti+Adv # fast
+!!€ hän: hän+Pron+Pers+Sg+Nom # he
+!!€ ahaa: ahaa+Pcle # ah
+!!€ äh: äh+Interj # uh
 
 !! !Nouns
 !! In nominal analyses, the proper nouns have additional subanalysis.
@@ -66,7 +66,7 @@ Multichar_Symbols
 +Prop !!= * {{@CODE@}}: Proper noun
 
 !! Proper noun tag follows noun analysis:
-!!€ Pekka: Pekka+N+Prop+Sg+Nom Pekka
+!!€ Pekka: Pekka+N+Prop+Sg+Nom # Pekka
 
 !! !Pronouns
 !! Pronominal analyses have some semantic classes.
@@ -84,14 +84,14 @@ Multichar_Symbols
 +Indef !!= * {{@CODE@}}: Indefinite
 
 !! Semantic tags follow pronoun analyses:
-!!€ minä: minä+Pron+Pers+Sg+Nom I
-!!€ tämä: tämä+Pron+Dem+Sg+Nom this
-!!€ kuka: kuka+Pron+Interr+Sg+Nom who
-!!€ joka: joka+Pron+Rel+Sg+Nom which
-!!€ kaikki: kaikki+Pron+Qu+Sg+Nom every
-!!€ itse: itse+Pron+Refl+Sg+Nom self
-!!€ toistaan: toinen+Pron+Recipr+Sg+Par+PxSg3 each other
-!!€ joku: joku+Pron+Qu+Indef+Sg+Nom someone
+!!€ minä: minä+Pron+Pers+Sg+Nom # I
+!!€ tämä: tämä+Pron+Dem+Sg+Nom # this
+!!€ kuka: kuka+Pron+Interr+Sg+Nom # who
+!!€ joka: joka+Pron+Rel+Sg+Nom # which
+!!€ kaikki: kaikki+Pron+Qu+Sg+Nom # every
+!!€ itse: itse+Pron+Refl+Sg+Nom # self
+!!€ toistaan: toinen+Pron+Recipr+Sg+Par+PxSg3 # each other
+!!€ joku: joku+Pron+Qu+Indef+Sg+Nom # someone
 
 !! !Numerals
 !! In numeral analyses, there are multiple analyses.
@@ -106,8 +106,8 @@ Multichar_Symbols
 +Card  !!= * {{@CODE@}}: Cardinal
 +Ord !!= * {{@CODE@}}: Ordinals
 
-!!€ kolme: kolme+Num+Card+Sg+Nom three
-!!€ kolmas: kolmas+Num+Ord+Sg+Nom third
+!!€ kolme: kolme+Num+Card+Sg+Nom # three
+!!€ kolmas: kolmas+Num+Ord+Sg+Nom # third
 
 !! !Particles
 !! The particles are subcategorised syntax-wise into conjunctions for all words,
@@ -163,7 +163,7 @@ Multichar_Symbols
 +Punct !!= * {{@CODE@}}: any punctuation
 
 !! The analyses for symbols are like POSes:
-!!€ .: .+Punct .
+!!€ .: .+Punct # .
 
 !! !Nominal analyses
 !!
@@ -178,7 +178,7 @@ Multichar_Symbols
 +Pl !!= * {{@CODE@}}: Plural
 
 !! Number tags are next to POSes in nominal analyses, and in order of morphs:
-!!€ padassa: pata+N+Sg+Ine pot
+!!€ padassa: pata+N+Sg+Ine # pot
 !!€ padoissa: pata+N+Pl+Ine
 
 !! The analyses of nominals have case inflection marked.
@@ -274,7 +274,7 @@ Multichar_Symbols
 !! Further reading: [VISK § 406|http://scripta.kotus.fi/visk/sisallys.php?p=406]
 +Der/s !!= Compound form
 
-!!€ naisien: nainen+N+Der/s#ien+N+Sg+Nom female gum
+!!€ naisien: nainen+N+Der/s#ien+N+Sg+Nom # female gum
 
 !! !Finite verbs
 !! All verb analyses contain voice marking. For finite verb forms active voice
@@ -561,9 +561,9 @@ LEXICON Root
 !! The Finnish morphological description starts from any of the parts of speech
 !! dictionaries, prefix or hyphenated suffix
 !!€gt-norm: Parts-of-speech
-!!€ talo: talo+N+Sg+Nom house
-!!€ nopea: nopea+A+Sg+Nom fast
-!!€ kutoa: kutoa+V+Act+InfA+Sg+Lat to knit
+!!€ talo: talo+N+Sg+Nom # house
+!!€ nopea: nopea+A+Sg+Nom # fast
+!!€ kutoa: kutoa+V+Act+InfA+Sg+Lat # to knit
 0   N           ;
 0   A           ;
 0   V           ;
@@ -589,7 +589,7 @@ LEXICON NOMINAL
 !! !! The compound part sub-set {{@LEXNAME@}}
 !! The nominal forms can be used as non-initial parts of typical compounds
 !!€gt-norm: Nominals
-!!€ talonjuttu: talo+N+Sg+Gen#juttu+N+Sg+Nom house thing
+!!€ talonjuttu: talo+N+Sg+Gen#juttu+N+Sg+Nom # house thing
 0   N           ;
 0   A           ;
 0   51          ;

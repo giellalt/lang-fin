@@ -10,13 +10,13 @@ LEXICON A_BACK_SUPERLATIVE
 !! adjective baseform. This baseform is handled separately to avoid double
 !! superlatives.
 !!€gt-norm: Adjective superlative front
-!!€ rumin: ruma+A+Sup+Sg+Nom ugliest
+!!€ rumin: ruma+A+Sup+Sg+Nom # ugliest
 +Sup:»i  A_BACK_SUPERLATIVE_STEMS ;
 
 
 LEXICON A_FRONT_SUPERLATIVE
 !!€gt-norm: Adjective superlative back
-!!€ tyhmin: tyhmä+A+Sup+Sg+Nom stupidest
+!!€ tyhmin: tyhmä+A+Sup+Sg+Nom # stupidest
 +Sup:»i  A_FRONT_SUPERLATIVE_STEMS ;
 
 LEXICON A_BACK_COMPARATIVE
@@ -37,7 +37,7 @@ LEXICON A_BACK_COMPARATIVE_STEMS
 !! This inflectional part attached to adjective comparative stems to avoid
 !! circularity in comparative derivations:
 !!€gt-norm: Adjective comparative inflection back
-!!€ nopeampi: nopea+A+Comp+Sg+Nom faster
+!!€ nopeampi: nopea+A+Comp+Sg+Nom # faster
 !!$ nopeammampi: nopea+A+Comp+Comp+Sg+Nom 
 !!$ nopeammammampi: nopea+A+Comp+Comp+Comp+Sg+Nom
 0:pi  A_BACK_NOMINATIVE    ;

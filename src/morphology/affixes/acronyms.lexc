@@ -14,7 +14,7 @@
 !LEXICON ACRO_YKSI
 ! The acronyms ending in digit 1 pronounced as number:
 !!€gt-norm: Number-final acronyms
-!!€ A1: A1+N+Sg+Nom A1 # paper
+!!€ A1: A1+N+Sg+Nom # A1 paper
 !!€ A1:een: A1+N+Sg+Ill
 !0  ACRO_COMPOUND   ;
 !+Sg+Nom:0    #   ;
@@ -156,7 +156,7 @@ LEXICON ACRO_KOLME
 LEXICON ACRO_VIISI
 !! The acronyms ending in digit 5 pronounced as number
 !!€gt-norm: Acronyms 5
-!!€ A5: A5+N+Sg+Nom A5 paper
+!!€ A5: A5+N+Sg+Nom # A5 paper
 !!€ A5:een: A5+N+Sg+Ill
 0  ACRO_COMPOUND   ;
 +Sg+Nom:0    #   ;
@@ -328,7 +328,7 @@ LEXICON ACRO_VIISI
 LEXICON ACRO_AA
 !! acronyms ending in 'a' pronounced as a letter:
 !!€gt-norm: Alphabet-final acronyms
-!!€ A: A+N+Sg+Nom A
+!!€ A: A+N+Sg+Nom # A
 !!€ A:t: A+N+Pl+Nom
 !!€ A:ssa: A+N+Sg+Ine
 0  ACRO_COMPOUND   ;
@@ -366,7 +366,7 @@ LEXICON ACRO_EE
 !! acronyms ending in 'b', 'c', 'd', 'e', 'g', 'p', 'v', 'w' or 't' pronounced
 !! as a letter:
 !!€gt-norm: Acronyms E
-!!€ BBC: BBC+N+Sg+Nom British Broadcasting Company
+!!€ BBC: BBC+N+Sg+Nom # British Broadcasting Company
 !!€ BBC:t: BBC+N+Pl+Nom
 !!€ BBC:ssä: BBC+N+Sg+Ine
 0  ACRO_COMPOUND   ;

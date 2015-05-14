@@ -6,12 +6,12 @@
 ! nominatives
 LEXICON NUM_BACK_NOMINATIVE
 !!€gt-norm: Numeral nominative back
-!!€ kaksi: kaksi+Num+Card+Sg+Nom two
+!!€ kaksi: kaksi+Num+Card+Sg+Nom # two
 +Sg+Nom:0   NUM_BACK_CLIT_OPT  ;
 
 LEXICON NUM_FRONT_NOMINATIVE
 !!€gt-norm: Numeral nominative front
-!!€ yksi: yksi+Num+Card+Sg+Nom one
+!!€ yksi: yksi+Num+Card+Sg+Nom # one
 +Sg+Nom:0   NUM_FRONT_CLIT_OPT  ;
 
 LEXICON NUM_BACK_PLNOM_CLIT
@@ -141,27 +141,27 @@ LEXICON NUM_BACK_STRONG_PLURALS
 ! allomorphs
 LEXICON NUM_BACK_PARTITIVE_A
 !!€gt-norm: Numeral singular partitive a
-!!€ kahdeksaa: kahdeksan+Num+Card+Sg+Par eight
+!!€ kahdeksaa: kahdeksan+Num+Card+Sg+Par # eight
 +Sg+Par:%>a      NUM_BACK_POSS_OPT      ;
 
 LEXICON NUM_FRONT_PARTITIVE_Ä
 !!€gt-norm: Numeral singular partitive ä
-!!€ neljää: neljä+Num+Card+Sg+Par four
+!!€ neljää: neljä+Num+Card+Sg+Par # four
 +Sg+Par:%>ä      NUM_FRONT_POSS_OPT      ;
 
 LEXICON NUM_BACK_PARTITIVE_A_AN
 !!€gt-norm: Numeral singular partitive a poss aan
-!!€ kolmea: kolme+Num+Card+Sg+Par three
+!!€ kolmea: kolme+Num+Card+Sg+Par # three
 +Sg+Par:%>a      NUM_BACK_POSS_AN_OPT      ;
 
 LEXICON NUM_BACK_PARTITIVE_TA
 !!€gt-norm: Numeral singular partitive ta
-!!€ kuutta: kuusi+Num+Card+Sg+Par six
+!!€ kuutta: kuusi+Num+Card+Sg+Par # six
 +Sg+Par:%>ta     NUM_BACK_POSS_AN_OPT      ;
 
 LEXICON NUM_FRONT_PARTITIVE_TÄ
 !!€gt-norm: Numeral singular partitive tä
-!!€ viittä: viisi+Num+Card+Sg+Par five
+!!€ viittä: viisi+Num+Card+Sg+Par # five
 +Sg+Par:%>tä     NUM_FRONT_POSS_ÄN_OPT      ;
 
 LEXICON NUM_BACK_ILLATIVE_AN
@@ -184,7 +184,7 @@ LEXICON NUM_FRONT_ILLATIVE_EN
 
 LEXICON NUM_BACK_ILLATIVE_IN
 !!€gt-norm: Numeral singular illative in back
-!!€ miljardiin: miljardi+Num+Card+Sg+Ill billion
+!!€ miljardiin: miljardi+Num+Card+Sg+Ill # billion
 +Sg+Ill:%>in     #         ;
 +Sg+Ill:%>i      NUM_BACK_POSS     ;
 
@@ -223,7 +223,7 @@ LEXICON NUM_FRONT_GENITIVE_IEN
 
 LEXICON NUM_BACK_GENITIVE_JEN
 !!€gt-norm: Numeral plural genitive jen back
-!!€ satojen: sata+Num+Card+Pl+Gen hundred
+!!€ satojen: sata+Num+Card+Pl+Gen # hundred
 +Pl+Gen:%>j%>en    #     ;
 +Pl+Gen:%>j%>e     NUM_BACK_POSS     ;
 
