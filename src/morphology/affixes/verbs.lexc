@@ -17,7 +17,7 @@
 
 LEXICON V_BACK_WEAK_PRESENT
 !!gt-norm: Verb weak present back
-!!€ kutoa: kutoa+V+Act+InfA+Sg+Lat knit
+!!€ kutoa: kutoa+V+Act+InfA+Sg+Lat # knit
 !!€ kudon: kutoa+V+Act+Ind+Prs+Sg1
 +Act+Ind+Prs+Sg1:%>n V_BACK_CLIT_OPT     ;
 +Act+Ind+Prs+Sg2:%>t V_BACK_CLIT_OPT     ;
@@ -29,7 +29,7 @@ LEXICON V_BACK_WEAK_PRESENT
 
 LEXICON V_FRONT_WEAK_PRESENT
 !!gt-norm: Verb weak present front
-!!€ yltää: yltää+V+Act+InfA+Sg+Lat reach
+!!€ yltää: yltää+V+Act+InfA+Sg+Lat # reach
 !!€ yllän: yltää+V+Act+Ind+Prs+Sg1
 +Act+Ind+Prs+Sg1:%>n V_FRONT_CLIT_OPT     ;
 +Act+Ind+Prs+Sg2:%>t V_FRONT_CLIT_OPT     ;
@@ -73,27 +73,27 @@ LEXICON V_FRONT_STRONG_PRESENT
 
 LEXICON V_BACK_3SG_A
 !!€gt-norm: Verb 3rd singular a
-!!€ rakentaa: rakentaa+V+Act+Ind+Prs+Sg3 builds
+!!€ rakentaa: rakentaa+V+Act+Ind+Prs+Sg3 # builds
 +Act+Ind+Prs+Sg3:%>a V_BACK_CLIT_OPT     ;
 
 LEXICON V_BACK_3SG_E
 !!€gt-norm: Verb 3rd singular e back
-!!€ tulee: tulla+V+Act+Ind+Prs+Sg3 comes
+!!€ tulee: tulla+V+Act+Ind+Prs+Sg3 # comes
 +Act+Ind+Prs+Sg3:%>e V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_3SG_E
 !!€gt-norm: Verb 3rd singular e front
-!!€ menee: mennä+V+Act+Ind+Prs+Sg3 goes
+!!€ menee: mennä+V+Act+Ind+Prs+Sg3 # goes
 +Act+Ind+Prs+Sg3:%>e V_FRONT_CLIT_OPT     ;
 
 LEXICON V_BACK_3SG_I
 !!€gt-norm: Verb 3rd singular i back
-!!€ munii: munia+V+Act+Ind+Prs+Sg3 lays eggs
+!!€ munii: munia+V+Act+Ind+Prs+Sg3 # lays eggs
 +Act+Ind+Prs+Sg3:%>i V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_3SG_I
 !!€gt-norm: Verb 3rd singular e front
-!!€ rämpii: rämpiä+V+Act+Ind+Prs+Sg3 hikes
+!!€ rämpii: rämpiä+V+Act+Ind+Prs+Sg3 # hikes
 +Act+Ind+Prs+Sg3:%>i V_FRONT_CLIT_OPT     ;
 
 LEXICON V_BACK_3SG_O
@@ -103,22 +103,22 @@ LEXICON V_BACK_3SG_O
 
 LEXICON V_BACK_3SG_U
 !!€gt-norm: Verb 3rd singular u back
-!!€ viruu: virua+V+Act+Ind+Prs+Sg3 stretches
+!!€ viruu: virua+V+Act+Ind+Prs+Sg3 # stretches
 +Act+Ind+Prs+Sg3:%>u V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_3SG_Y
 !!€gt-norm: Verb 3rd singular y
-!!€ kääntyy: kääntyä+V+Act+Ind+Prs+Sg3 turns
+!!€ kääntyy: kääntyä+V+Act+Ind+Prs+Sg3 # turns
 +Act+Ind+Prs+Sg3:%>y V_FRONT_CLIT_OPT     ;
 
 LEXICON V_FRONT_3SG_Ö
 !!€gt-norm: Verb 3rd singular ö
-!!€ säilöö: säilöä+V+Act+Ind+Prs+Sg3 conserves
+!!€ säilöö: säilöä+V+Act+Ind+Prs+Sg3 # conserves
 +Act+Ind+Prs+Sg3:%>ö V_FRONT_CLIT_OPT     ;
 
 LEXICON V_FRONT_3SG_Ä
 !!€gt-norm: Verb 3rd singular ä
-!!€ vääntää: vääntää+V+Act+Ind+Prs+Sg3 twist
+!!€ vääntää: vääntää+V+Act+Ind+Prs+Sg3 # twist
 +Act+Ind+Prs+Sg3:%>ä V_FRONT_CLIT_OPT     ;
 
 !! !Past forms
@@ -227,7 +227,7 @@ LEXICON V_FRONT_POTENTIAL_N
 
 LEXICON V_BACK_POTENTIAL_S
 !!€gt-norm: Verb potential s back
-!!€ juossen: juosta+V+Act+Pot+Sg1 I might run
+!!€ juossen: juosta+V+Act+Pot+Sg1 # I might run
 +Act+Pot+Pl1:%>se%>mme V_BACK_CLIT_OPT     ;
 +Act+Pot+Pl2:%>se%>tte V_BACK_CLIT_OPT     ;
 +Act+Pot+Pl3:%>se%>vat  V_BACK_CLIT_OPT     ;
@@ -240,7 +240,7 @@ LEXICON V_BACK_POTENTIAL_S
 
 LEXICON V_FRONT_POTENTIAL_S
 !!€gt-norm: Verb potential s front
-!!€ päässen: päästä+V+Act+Pot+Sg1 I might be able to
+!!€ päässen: päästä+V+Act+Pot+Sg1 # I might be able to
 +Act+Pot+Pl1:%>se%>mme V_FRONT_CLIT_OPT     ;
 +Act+Pot+Pl2:%>se%>tte V_FRONT_CLIT_OPT     ;
 +Act+Pot+Pl3:%>se%>vät  V_FRONT_CLIT_OPT     ;
@@ -266,7 +266,7 @@ LEXICON V_BACK_POTENTIAL_L
 
 LEXICON V_FRONT_POTENTIAL_L
 !!€gt-norm: Verb potential l front
-!!€ kävellen: kävellä+V+Act+Pot+Sg1 I might walk
+!!€ kävellen: kävellä+V+Act+Pot+Sg1 # I might walk
 +Act+Pot+Pl1:%>le%>mme V_FRONT_CLIT_OPT     ;
 +Act+Pot+Pl2:%>le%>tte V_FRONT_CLIT_OPT     ;
 +Act+Pot+Pl3:%>le%>vät  V_FRONT_CLIT_OPT     ;
@@ -279,7 +279,7 @@ LEXICON V_FRONT_POTENTIAL_L
 
 LEXICON V_BACK_POTENTIAL_R
 !!€gt-norm: Verb potential r back
-!!€ surren: surra+V+Act+Pot+Sg1 I might be sad
+!!€ surren: surra+V+Act+Pot+Sg1 # I might be sad
 +Act+Pot+Pl1:%>re%>mme V_BACK_CLIT_OPT     ;
 +Act+Pot+Pl2:%>re%>tte V_BACK_CLIT_OPT     ;
 +Act+Pot+Pl3:%>re%>vat  V_BACK_CLIT_OPT     ;
@@ -292,7 +292,7 @@ LEXICON V_BACK_POTENTIAL_R
 
 LEXICON V_FRONT_POTENTIAL_R
 !!€gt-norm: Verb potential r front
-!!€ pierren: pierrä+V+Act+Pot+Sg1 I might fart
+!!€ pierren: pierrä+V+Act+Pot+Sg1 # I might fart
 +Act+Pot+Pl1:%>re%>mme V_FRONT_CLIT_OPT     ;
 +Act+Pot+Pl2:%>re%>tte V_FRONT_CLIT_OPT     ;
 +Act+Pot+Pl3:%>re%>vät  V_FRONT_CLIT_OPT     ;
@@ -357,7 +357,7 @@ LEXICON V_FRONT_PASSIVE_T
 
 LEXICON V_BACK_PASSIVE_D
 !!€gt-norm: Verb passive back d
-!!€ kopioidaan: kopioida+V+Pss+Ind+Prs+Pe4 copy-passive
+!!€ kopioidaan: kopioida+V+Pss+Ind+Prs+Pe4 # copy-passive
 +Pss+Ind+Prs+Pe4:%>da%>an    V_BACK_CLIT_OPT     ;
 +Pss+Ind+Prs+Pe4+ConNeg:%>da    V_BACK_CLIT_OPT     ;
 
@@ -369,31 +369,31 @@ LEXICON V_FRONT_PASSIVE_D
 
 LEXICON V_BACK_PASSIVE_L
 !!€gt-norm: Verb passive back l
-!!€ vuollaan: vuolla+V+Pss+Ind+Prs+Pe4 carve wood-passive
+!!€ vuollaan: vuolla+V+Pss+Ind+Prs+Pe4 # carve wood-passive
 +Pss+Ind+Prs+Pe4:%>la%>an    V_BACK_CLIT_OPT     ;
 +Pss+Ind+Prs+Pe4+ConNeg:%>la    V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_PASSIVE_L
 !!€gt-norm: Verb passive front l
-!!€ niellään: niellä+V+Pss+Ind+Prs+Pe4 swallow-passive
+!!€ niellään: niellä+V+Pss+Ind+Prs+Pe4 # swallow-passive
 +Pss+Ind+Prs+Pe4:%>lä%>än    V_FRONT_CLIT_OPT     ;
 +Pss+Ind+Prs+Pe4+ConNeg:%>lä    V_FRONT_CLIT_OPT     ;
 
 LEXICON V_BACK_PASSIVE_R
 !!€gt-norm: Verb passive back r
-!!€ surraan: surra+V+Pss+Ind+Prs+Pe4 sorrow-passive
+!!€ surraan: surra+V+Pss+Ind+Prs+Pe4 # sorrow-passive
 +Pss+Ind+Prs+Pe4:%>ra%>an    V_FRONT_CLIT_OPT     ;
 +Pss+Ind+Prs+Pe4+ConNeg:%>ra    V_FRONT_CLIT_OPT     ;
 
 LEXICON V_FRONT_PASSIVE_R
 !!€gt-norm: Verb passive front r
-!!€ pierrään: pierrä+V+Pss+Ind+Prs+Pe4 fart-passive
+!!€ pierrään: pierrä+V+Pss+Ind+Prs+Pe4 # fart-passive
 +Pss+Ind+Prs+Pe4:%>rä%>än    V_FRONT_CLIT_OPT     ;
 +Pss+Ind+Prs+Pe4+ConNeg:%>rä    V_FRONT_CLIT_OPT     ;
 
 LEXICON V_BACK_PASSIVE_N
 !!€gt-norm: Verb passive back n
-!!€ pannaan: panna+V+Pss+Ind+Prs+Pe4 put-passive
+!!€ pannaan: panna+V+Pss+Ind+Prs+Pe4 # put-passive
 +Pss+Ind+Prs+Pe4:naan    V_BACK_CLIT_OPT     ;
 +Pss+Ind+Prs+Pe4+ConNeg:na    V_BACK_CLIT_OPT     ;
 
@@ -408,7 +408,7 @@ LEXICON V_FRONT_PASSIVE_N
 
 LEXICON V_BACK_AINF
 !!€gt-norm: Verb a infinitive
-!!€ juoda: juoda+V+Act+InfA+Sg+Lat drink
+!!€ juoda: juoda+V+Act+InfA+Sg+Lat # drink
 +Act+InfA+Sg+Lat:a     V_BACK_CLIT_OPT     ;
 +Act+InfA+Sg+Tra:akse  V_BACK_POSS_EN_OBL        ;
 
@@ -434,67 +434,67 @@ LEXICON V_FRONT_EINF
 
 LEXICON V_BACK_TUPCP_STRONG
 !!€gt-norm: Verb nut participle passive tu
-!!€ valkaistu: valkaista+V+Pss+PrfPrc+Sg+Nom bleached
+!!€ valkaistu: valkaista+V+Pss+PrfPrc+Sg+Nom # bleached
 +Pss+PrfPrc:tu            A_VALKAISTU        ;
 +Pss+Ind+Prt+ConNeg:tu    V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_TUPCP_STRONG
 !!€gt-norm: Verb nut participle passive ty
-!!€ häpäisty: häpäistä+V+Pss+PrfPrc+Sg+Nom sacrileged
+!!€ häpäisty: häpäistä+V+Pss+PrfPrc+Sg+Nom # sacrileged
 +Pss+PrfPrc:ty            A_HÄPÄISTY     ;
 +Pss+Ind+Prt+ConNeg:ty    V_FRONT_CLIT_OPT     ;
 
 LEXICON V_BACK_TUPCP_0
 !!€gt-norm: Verb nut participle passive tu~u
-!!€ huudettu: huutaa+V+Pss+PrfPrc+Sg+Nom yelled
+!!€ huudettu: huutaa+V+Pss+PrfPrc+Sg+Nom # yelled
 +Pss+PrfPrc:0             A_VIMMATTU      ;
 +Pss+Ind+Prt+ConNeg:tu    V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_TUPCP_0
 !!€gt-norm: Verb nut participle passive ty~y
-!!€ ylennetty: ylentää+V+Pss+PrfPrc+Sg+Nom promoted
+!!€ ylennetty: ylentää+V+Pss+PrfPrc+Sg+Nom # promoted
 +Pss+PrfPrc:0             A_YLENNETTY       ;
 +Pss+Ind+Prt+ConNeg:ty    V_FRONT_CLIT_OPT     ;
 
 LEXICON V_BACK_TUPCP_D
 !!€gt-norm: Verb nut participle passive tu~du
-!!€ viipaloitu: viipaloida+V+Pss+PrfPrc+Sg+Nom sliced
+!!€ viipaloitu: viipaloida+V+Pss+PrfPrc+Sg+Nom # sliced
 +Pss+PrfPrc:0             A_VIIPALOITU    ;
 +Pss+Ind+Prt+ConNeg:tu    V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_TUPCP_D
 !!€gt-norm: Verb nut participle passive ty~dy
-!!€ yksilöity: yksilöidä+V+Pss+PrfPrc+Sg+Nom singled out
+!!€ yksilöity: yksilöidä+V+Pss+PrfPrc+Sg+Nom # singled out
 +Pss+PrfPrc:0             A_YKSILÖITY        ;
 +Pss+Ind+Prt+ConNeg:ty    V_FRONT_CLIT_OPT     ;
 
 LEXICON V_BACK_TUPCP_L
 !!€gt-norm: Verb nut participle passive tu~lu
-!!€ paranneltu: parannella+V+Pss+PrfPrc+Sg+Nom embettered
+!!€ paranneltu: parannella+V+Pss+PrfPrc+Sg+Nom # embettered
 +Pss+PrfPrc:0             A_PARANNELTU  ;
 +Pss+Ind+Prt+ConNeg:tu    V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_TUPCP_L
 !!€gt-norm: Verb nut participle passive ty~ly
-!!€ vähätelty: vähätellä+V+Pss+PrfPrc+Sg+Nom belittled
+!!€ vähätelty: vähätellä+V+Pss+PrfPrc+Sg+Nom # belittled
 +Pss+PrfPrc:0             A_VÄHÄTELTY        ;
 +Pss+Ind+Prt+ConNeg:ty    V_FRONT_CLIT_OPT     ;
 
 LEXICON V_BACK_TUPCP_N
 !!€gt-norm: Verb nut participle passive tu~nu
-!!€ pantu: panna+V+Pss+PrfPrc+Sg+Nom put
+!!€ pantu: panna+V+Pss+PrfPrc+Sg+Nom # put
 +Pss+PrfPrc:0             A_PANTU  ;
 +Pss+Ind+Prt+ConNeg:tu    V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_TUPCP_N
 !!€gt-norm: Verb nut participle passive ty~ny
-!!€ menty: mennä+V+Pss+PrfPrc+Sg+Nom went
+!!€ menty: mennä+V+Pss+PrfPrc+Sg+Nom # went
 +Pss+PrfPrc:0             A_MENTY        ;
 +Pss+Ind+Prt+ConNeg:ty    V_FRONT_CLIT_OPT     ;
 
 LEXICON V_BACK_TUPCP_R
 !!€gt-norm: Verb nut participle passive tu~ru
-!!€ purtu: purra+V+Pss+PrfPrc+Sg+Nom bitten
+!!€ purtu: purra+V+Pss+PrfPrc+Sg+Nom # bitten
 +Pss+PrfPrc:0             A_PURTU ;
 +Pss+Ind+Prt+ConNeg:tu    V_BACK_CLIT_OPT     ;
 
