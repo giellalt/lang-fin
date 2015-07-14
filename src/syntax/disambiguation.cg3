@@ -1955,17 +1955,17 @@ REMOVE Rel IF (0 ("jotta")) (0 CS) (0 CLB?) (NEGATE -1 WORD) ;
 #REMOVE Prop (0 <LG>) (-2C <LG>) (-1 Conj) (NOT -1 BOS)   # SUOMEA JA RUOTSIA
 # LG-NAMES CANNOT BE CAPITALIZED S-INTERNAllY
 
-SELECT ("kokoomus") + Prop (NOT 0 CAP_NOCAP)
-REMOVE ("aino" Prop Sg Par) ;
-IFF ("johan") + Prop (1 Prop) (NOT 0 CAP_NOCAP)   # JOHAN BERGenSTRåHLE
-SELECT ("lappi") + Prop (NOT 0 CAP_NOCAP)
-SELECT ("norja") + Prop (NOT 0 CAP_NOCAP)
-SELECT ("pariisi") + Prop (NOT 0 CAP_NOCAP)
-SELECT ("pori") + Prop (NOT 0 CAP_NOCAP)
-REMOVE ("per") + Prop (NOT 0 CAP_NOCAP)
-REMOVE ("olle") + Prop (NOT 0 CAP_NOCAP)
-REMOVE ("pia") + Prop (NOT 0 CAP_NOCAP)
-SELECT ("urho") + Prop (NOT 0 CAP_NOCAP)
+SELECT ("Kokoomus") + Prop (NOT 0 CAP_NOCAP)
+REMOVE ("Aino" Prop Sg Par) ;
+IFF ("Johan") + Prop (1 Prop) (NOT 0 CAP_NOCAP)   # JOHAN BERGenSTRåHLE
+SELECT ("Lappi") + Prop (NOT 0 CAP_NOCAP)
+SELECT ("Norja") + Prop (NOT 0 CAP_NOCAP)
+SELECT ("Pariisi") + Prop (NOT 0 CAP_NOCAP)
+SELECT ("Pori") + Prop (NOT 0 CAP_NOCAP)
+REMOVE ("Per") + Prop (NOT 0 CAP_NOCAP)
+REMOVE ("Olle") + Prop (NOT 0 CAP_NOCAP)
+REMOVE ("Pia") + Prop (NOT 0 CAP_NOCAP)
+SELECT ("Urho") + Prop (NOT 0 CAP_NOCAP)
 REMOVE Prop + Pl (NOT 0 CAP_NOCAP)
 
 SELECT Prop (0 CAP_NOCAP) (NOT -1 OM) ;
