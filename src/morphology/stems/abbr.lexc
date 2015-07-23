@@ -1,178 +1,663 @@
-!! !!!Abbreviations
-!! Abbreviations are shortened forms that do not inflect. They have whatever
-!! classification they would have if they were read out, mostly that of nouns.
-!! Lot of abbreviations end in a full stop, which may complicate analysis and
-!! tokenisation in real-world applications
+!!  !!!Abbreviations
+!!  Abbreviations are shortened forms that do not inflect. They have whatever
+!!  classification they would have if they were read out, mostly that of nouns.
+!!  Lot of abbreviations end in a full stop, which may complicate analysis and
+!!  tokenisation in real-world applications
 
-LEXICON  ABBR
-!!€gt-norm: Abbreviations
-!!€ eaa.: eaa.+N
-!!€ esim.: esim.+N
-!!$ esim: esim+N
-A%0+N:A%0                               # ; !!= * {{@CODE@}}: Paper size
-A1+N:A1                                 # ; !!= * {{@CODE@}}: Paper size
-A2+N:A2                                 # ; !!= * {{@CODE@}}: Paper size
-A3+N:A3                                 # ; !!= * {{@CODE@}}: Paper size
-A4+N:A4                                 # ; !!= * {{@CODE@}}: Paper size
-A5+N:A5                                 # ; !!= * {{@CODE@}}: Paper size
-ab+N:ab                                 # ; !!= * {{@CODE@}}: swed. aktiebolag (LLC)
-aik.+Adp:aik.                           # ; !!= * {{@CODE@}}: aikana (during)
-akk.+N:akk.                             # ; !!= * {{@CODE@}}: akkusatiivi (accusative)
-alk.+Adp:alk.                           # ; !!= * {{@CODE@}}: alkaen (temporal from)
-alv.+N:alv.                             # ; !!= * {{@CODE@}}: arvonlisävero (VAT)
-ao.+A:ao.                               # ; !!= * {{@CODE@}}: alla/aiheena oleva (mentioned)
-ark.+N:ark.                             # ; !!= * {{@CODE@}}: arkinen (from dict. term, pedestr)
-as.+N:as.                               # ; !!= * {{@CODE@}}: 
-ay.+N:ay.                               # ; !!= * {{@CODE@}}:
-dat.+N:dat.                             # ; !!= * {{@CODE@}}: datiivi (dative)
-dem.pron.+N:dem.pron.                   # ; !!= * {{@CODE@}}: demonstratiivipronomini
-eaa.+N:eaa.                             # ; !!= * {{@CODE@}}: ennen ajanlaskun alkua (BCE)
-eKr.+N:eKr.                             # ; !!= * {{@CODE@}}: ennen Kristuksen syntymää (BC)
-ekr.+N+Err/Orth:ekr.                     # ; !!= * {{@CODE@}}: ennen kristuksen syntymää
-em.+A:em.                               # ; !!= * {{@CODE@}}: edellä mainittu (abovementioned)
-em.+N:em.                               # ; !!= * {{@CODE@}}: 
-ent.+A:ent.                             # ; !!= * {{@CODE@}}: entinen (former)
-esim.+N:esim.                           # ; !!= * {{@CODE@}}: esimerkiksi (e.g.)
-evo+N:evo                               # ; !!= * {{@CODE@}}: et vaan osaa (ydkj)
-evp.+N:evp.                             # ; !!= * {{@CODE@}}: erossa vakinaisesta palveluksesta
-gen.+N:gen.                             # ; !!= * {{@CODE@}}: genetiivi (genitive)
-GTi+N:GTi                               # ; !!= * {{@CODE@}}:
-hlö+N:hlö                               # ; !!= * {{@CODE@}}: henkilö (person)
-hra+N:hra                               # ; !!= * {{@CODE@}}: herra (mr.)
-huom.+N:huom.                           # ; !!= * {{@CODE@}}: huomaa (N.B.)
-hv+N:hv                                 # ; !!= * {{@CODE@}}: hyvä veli (greetz)
-ib.+N:ib.                               # ; !!= * {{@CODE@}}: ibidem
-id.+N:id.                               # ; !!= * {{@CODE@}}: id
-imperf.+N:imperf.                       # ; !!= * {{@CODE@}}: imperfect
-inc+N:inc                               # ; !!= * {{@CODE@}}: inc
-inf.+N:inf.                             # ; !!= * {{@CODE@}}: infinitive
-it.+N:it.                               # ; !!= * {{@CODE@}}: 
-jKr.+N:jKr.                             # ; !!= * {{@CODE@}}: jälkeen Kristuksen syntymän (AD)
-jllek+N:jllek                           # ; !!= * {{@CODE@}}: jollekin (for smth)
-jllk+N:jllk                             # ; !!= * {{@CODE@}}: jollakin (for smth)
-jltk+N:jltk                             # ; !!= * {{@CODE@}}: joltakin (from smth)
-jne.+N:jne.                             # ; !!= * {{@CODE@}}: ja niin edelleen (etc.)
-jnk+N:jnk                               # ; !!= * {{@CODE@}}: jonkin (of smth)
-joss+N:joss                             # ; !!= * {{@CODE@}}: jossa (somewhere)
-jssk+N:jssk                             # ; !!= * {{@CODE@}}: jossakin (somewhere)
-jstk+N:jstk                             # ; !!= * {{@CODE@}}: jostakin (from)
-jtak+N:jtak                             # ; !!= * {{@CODE@}}: jotakin (to)
-JyP+N:JyP                               # ; !!= * {{@CODE@}}: Jyväskylän pallo
-KalPa+N:KalPa                           # ; !!= * {{@CODE@}}: Kalmiston pallo
-kand.+N:kand.                           # ; !!= * {{@CODE@}}: kandidaatti (bachelor)
-ka.+N:ka.                               # ; !!= * {{@CODE@}}: keskiarvo (avg)
-kapt.+N:kapt.                           # ; !!= * {{@CODE@}}: kapteeni (captain)
-kenr.+N:kenr.                           # ; !!= * {{@CODE@}}: kenraali (general)
-kers.+N:kers.                           # ; !!= * {{@CODE@}}: kersantti (sergeant)
-kesk.+N:kesk.                           # ; !!= * {{@CODE@}}: keskusta (center party)
-khra+N:khra                             # ; !!= * {{@CODE@}}: kirkkoherra (parson)
-kk+N:kk                                 # ; !!= * {{@CODE@}}: kuukausi (month)
-kko+N:kko                               # ; !!= * {{@CODE@}}: kirkko (church)
-klo+N:klo                               # ; !!= * {{@CODE@}}: kello (time)
-k%:lo+N:k%:lo                           # ; !!= * {{@CODE@}}: kello
-k.+N:k.                                 # ; !!= * {{@CODE@}}:
-kok.+N:kok.                             # ; !!= * {{@CODE@}}: kokoomus (coalition party)
-kompp.+N:kompp.                         # ; !!= * {{@CODE@}}: komppania ()
-ko.+N:ko.                               # ; !!= * {{@CODE@}}: kyseessä oleva (mentioned)
-kpl+N:kpl                               # ; !!= * {{@CODE@}}: kappale (pcs)
-krs+N:krs                               # ; !!= * {{@CODE@}}: kerros (floor)
-ks.+N:ks.                               # ; !!= * {{@CODE@}}: katso (c.f.)
-kts.+N:kts.                             # ; !!= * {{@CODE@}}: katso (c.f.)
-KuPS+N:KuPS                             # ; !!= * {{@CODE@}}: Kuopion palloseura
-kv.+N:kv.                               # ; !!= * {{@CODE@}}: 
-lis.+N:lis.                             # ; !!= * {{@CODE@}}: lisensiaatti (lic.)
-lkm.+N:lkm.                             # ; !!= * {{@CODE@}}: lukumäärä (amount)
-lk.+N:lk.                               # ; !!= * {{@CODE@}}: luokka (grade)
-l.+CC:l.                                # ; !!= * {{@CODE@}}: eli (i.e.)
-ltn.+N:ltn.                             # ; !!= * {{@CODE@}}: luutnantti (lieutenant)
-lyh.+N:lyh.                             # ; !!= * {{@CODE@}}: lyhennettynä (abbr.)
-läh.+N:läh.                             # ; !!= * {{@CODE@}}: lähes 
-ma.+N:ma.                               # ; !!= * {{@CODE@}}: 
-mlk.+N:mlk.                             # ; !!= * {{@CODE@}}: maalaiskunta (town)
-ml.+N:ml.                               # ; !!= * {{@CODE@}}: mukaan lukien (incl.)
-mm.+N:mm.                               # ; !!= * {{@CODE@}}: muun muassa (among others)
-mom.+N:mom.                             # ; !!= * {{@CODE@}}: momentti (
-mon.+N:mon.                             # ; !!= * {{@CODE@}}: monikko (pl.)
-mpy.+N:mpy.                             # ; !!= * {{@CODE@}}: 
-mt.+N:mt.                               # ; !!= * {{@CODE@}}:
-mts.+N:mts.                             # ; !!= * {{@CODE@}}: mainitun tekstin sivulla (ibid)
-mv.+N:mv.                               # ; !!= * {{@CODE@}}: 
-MyPa+N:MyPa                             # ; !!= * {{@CODE@}}: Myllykosken Pallo
-n.+N:n.                                 # ; !!= * {{@CODE@}}: noin (approx.)
-N.N.+N:N.N.                             # ; !!= * {{@CODE@}}: John Doe
-nom.+N:nom.                             # ; !!= * {{@CODE@}}: nominatiivi (nominative)
-nro+N:nro                               # ; !!= * {{@CODE@}}: numero (#
-n%:ro+N:n%:ro                           # ; !!= * {{@CODE@}}: 
-ns.+N:ns.                               # ; !!= * {{@CODE@}}: niin sanottu (so-called)
-nti+N:nti                               # ; !!= * {{@CODE@}}: neiti (ms)
-nyk.+N:nyk.                             # ; !!= * {{@CODE@}}: nykyinen (currently)
-oik.+N:oik.                             # ; !!= * {{@CODE@}}: oikeammin?
-om.+N:om.                               # ; !!= * {{@CODE@}}:
-o.s.+N:o.s.                             # ; !!= * {{@CODE@}}: 
-os.+N:os.                               # ; !!= * {{@CODE@}}: omaa sukuaan (née)
-par.+N:par.                             # ; !!= * {{@CODE@}}: paremmin (in dict., better)
-part.+N:part.                           # ; !!= * {{@CODE@}}: partitiivi (partitive)
-perf.+N:perf.                           # ; !!= * {{@CODE@}}: perfekti (perfect)
-pj.+N:pj.                               # ; !!= * {{@CODE@}}: puheenjohtaja (chair)
-pkt+N:pkt                               # ; !!= * {{@CODE@}}: paketti (pcs)
-pl.+N:pl.                               # ; !!= * {{@CODE@}}: plural
-pluskv.+N:pluskv.                       # ; !!= * {{@CODE@}}: pluskvamperfekti
-p.+N:p.                                 # ; !!= * {{@CODE@}}: 
-po.+N:po.                               # ; !!= * {{@CODE@}}: pitää olla (in dict., should be)
-prees.+N:prees.                         # ; !!= * {{@CODE@}}: preesens
-prof.+N:prof.                           # ; !!= * {{@CODE@}}: professori
-pron.+N:pron.                           # ; !!= * {{@CODE@}}: pronomini
-psta+N:psta                             # ; !!= * {{@CODE@}}: puolesta (on behalf of)
-pvm.+N:pvm.                             # ; !!= * {{@CODE@}}: päivämäärä (date)
-pv+N:pv                                 # ; !!= * {{@CODE@}}: 
-rek.+N:rek.                             # ; !!= * {{@CODE@}}: rekisteröity, ®
-rkl+N:rkl                               # ; !!= * {{@CODE@}}: ruokalusikka (tbsp)
-RoPS+N:RoPS                             # ; !!= * {{@CODE@}}: Rovaniemen palloseura
-rp.+N:rp.                               # ; !!= * {{@CODE@}}: 
-rva+N:rva                               # ; !!= * {{@CODE@}}: rouva (Mrs)
-ry+N:ry                                 # ; !!= * {{@CODE@}}: rekisteröity yhdistys (inc.)
-sit.+N:sit.                             # ; !!= * {{@CODE@}}: sitoutumaton (not in party)
-s.+N:s.                                 # ; !!= * {{@CODE@}}: syntynyt (birth)
-so.+N:so.                               # ; !!= * {{@CODE@}}: se on (i.e.)
-sov.+N:sov.                             # ; !!= * {{@CODE@}}: sovittanut (composer)
-sp.+N:sp.                               # ; !!= * {{@CODE@}}: 
-srk.+N:srk.                             # ; !!= * {{@CODE@}}: seurakunta (church)
-suom.+N:suom.                           # ; !!= * {{@CODE@}}: suomentanut (fi. translator)
-synt.+N:synt.                           # ; !!= * {{@CODE@}}: syntynyt (brith)
-sähköp.+N:sähköp.                       # ; !!= * {{@CODE@}}: sähkoposti (email)
-säv.+N:säv.                             # ; !!= * {{@CODE@}}: säveltänyt (composer)
-tark.+N:tark.                           # ; !!= * {{@CODE@}}: tarkistanut (editor)
-tav.+N:tav.                             # ; !!= * {{@CODE@}}: tavallisemmin (in dict, usually)
-tekn.+N:tekn.                           # ; !!= * {{@CODE@}}: tekninen (in dict., tech)
-tmi+N:tmi                               # ; !!= * {{@CODE@}}: toiminimi (
-tms.+N:tms.                             # ; !!= * {{@CODE@}}: tai muuta sellaiste (etc.)
-t.+N:t.                                 # ; !!= * {{@CODE@}}: tai (or)
-toim.% huom.+N:toim.% huom.             # ; !!= * {{@CODE@}}: toimituksen huomautus (editors nt)
-toim.+N:toim.                           # ; !!= * {{@CODE@}}: toimitus (editor)
-tri+N:tri                               # ; !!= * {{@CODE@}}: tohtori (Dr.)
-ts.+N:ts.                               # ; !!= * {{@CODE@}}: toisinsanoen (iow)
-tsto+N:tsto                             # ; !!= * {{@CODE@}}: toimisto (office)
-us.+N:us.                               # ; !!= * {{@CODE@}}: 
-vak.+N:vak.                             # ; !!= * {{@CODE@}}: 
-vanh.+N:vanh.                           # ; !!= * {{@CODE@}}: vanhastaan (in dict., earlier)
-vas.+N:vas.                             # ; !!= * {{@CODE@}}: vasemmisto (left party)
-vast.+N:vast.                           # ; !!= * {{@CODE@}}: vastaava (corresponding)
-vkl+N:vkl                               # ; !!= * {{@CODE@}}: viikonloppu (weekend)
-vklp+N:vklp                             # ; !!= * {{@CODE@}}: 
-vko+N:vko                               # ; !!= * {{@CODE@}}: viikko (week)
-v.+N:v.                                 # ; !!= * {{@CODE@}}: vuotta (year(s))
-vpj.+N:vpj.                             # ; !!= * {{@CODE@}}: varapuheenjohtaja (vice chair)
-vrk+N:vrk                               # ; !!= * {{@CODE@}}: vuorokausi (calendar day)
-vrt.+N:vrt.                             # ; !!= * {{@CODE@}}: vertaa (c.f.)
-vs.+N:vs.                               # ; !!= * {{@CODE@}}: 
-vt.+N:vt.                               # ; !!= * {{@CODE@}}: 
-vv.+N:vv.                               # ; !!= * {{@CODE@}}: vuosina
-vänr.+N:vänr.                           # ; !!= * {{@CODE@}}: vänrikki (some military stuff)
-vääp.+N:vääp.                           # ; !!= * {{@CODE@}}: vääpeli ( more)
-yks.+N:yks.                             # ; !!= * {{@CODE@}}: yksikkö (singular)
-yl.+N:yl.                               # ; !!= * {{@CODE@}}: yleensä (in dict., usually)
-ym.+N:ym.                               # ; !!= * {{@CODE@}}: ynnä muuta (etc.)
-yms.+N:yms.                             # ; !!= * {{@CODE@}}: ynnä muuta sellaista (etc.)
-yo.+N:yo.                               # ; !!= * {{@CODE@}}: yllä oleva (aforementioned)
-yv.+N:yv.                               # ; !!= * {{@CODE@}}: 
+LEXICON  ABBREVIATION
+!!€gt-norm:  Abbreviations
+!!€  eaa.: eaa.+N
+!!€  esim.: esim.+N
+!!$  esim: esim+N
+!!  Some ar less classified
+!!€ ab: ab+ABBR
 
+A%0+N:A%0  #  ; !!= * {{@CODE@}}: Paper size
+A1+N:A1  #  ; !!= * {{@CODE@}}: Paper size
+A2+N:A2  #  ; !!= * {{@CODE@}}: Paper size
+A3+N:A3  #  ; !!= * {{@CODE@}}: Paper size
+A4+N:A4  #  ; !!= * {{@CODE@}}: Paper size
+A5+N:A5  #  ; !!= * {{@CODE@}}: Paper size
+ab+N:ab  #  ; !!= * {{@CODE@}}: swed. aktiebolag (LLC)
+ab+ABBR:ab  PCLE_VAAN  ;
+Ab+ABBR:Ab  PCLE_VAAN  ;
+agrol.+ABBR:agrol.  PCLE_VAAN  ;
+agron.+ABBR:agron.  PCLE_VAAN  ;
+aik.+Adp:aik.  #  ; !!= * {{@CODE@}}: aikana (during)
+aik.+ABBR:aik.  PCLE_VAAN  ;
+akat.+ABBR:akat.  PCLE_VAAN  ;
+akk.+N:akk.  #  ; !!= * {{@CODE@}}: akkusatiivi (accusative)
+alik.+ABBR:alik.  PCLE_VAAN  ;
+alil.+ABBR:alil.  PCLE_VAAN  ;
+alk.+Adp:alk.  #  ; !!= * {{@CODE@}}: alkaen (temporal from)
+alk.+ABBR:alk.  PCLE_VAAN  ;
+al.+ABBR:al.  PCLE_VAAN  ;
+alv.+N:alv.  #  ; !!= * {{@CODE@}}: arvonlisävero (VAT)
+alv.+ABBR:alv.  PCLE_VAAN  ;
+amir.+ABBR:amir.  PCLE_VAAN  ;
+a.m.+ABBR:a.m.  PCLE_VAAN  ;
+anon.+ABBR:anon.  PCLE_VAAN  ;
+ao.+A:ao.  #  ; !!= * {{@CODE@}}: alla/aiheena oleva (mentioned)
+ao.+ABBR:ao.  PCLE_VAAN  ;
+ap.+ABBR:ap.  PCLE_VAAN  ;
+apul.+ABBR:apul.  PCLE_VAAN  ;
+apul.prof.+ABBR:apul.prof.  PCLE_VAAN  ;
+arkkit.+ABBR:arkkit.  PCLE_VAAN  ;
+ark.+N:ark.  #  ; !!= * {{@CODE@}}: arkinen (from dict. term, pedestr)
+ark.+ABBR:ark.  PCLE_VAAN  ;
+art.+ABBR:art.  PCLE_VAAN  ;
+arv.+ABBR:arv.  PCLE_VAAN  ;
+as.+N:as.  #  ; !!= * {{@CODE@}}: 
+as.oy.+ABBR:as.oy.  PCLE_VAAN  ;
+as.+ABBR:as.  PCLE_VAAN  ;
+assist.+ABBR:assist.  PCLE_VAAN  ;
+ass.+ABBR:ass.  PCLE_VAAN  ;
+at+ABBR:at  PCLE_VAAN  ;
+au.+ABBR:au.  PCLE_VAAN  ;
+ausk.+ABBR:ausk.  PCLE_VAAN  ;
+ay.+N:ay.  #  ; !!= * {{@CODE@}}:
+ay.+ABBR:ay.  PCLE_VAAN  ;
+B.A.+ABBR:B.A.  PCLE_VAAN  ;
+bar+ABBR:bar  PCLE_VAAN  ;
+br.+ABBR:br.  PCLE_VAAN  ;
+B.Sc.+ABBR:B.Sc.  PCLE_VAAN  ;
+B.S.+ABBR:B.S.  PCLE_VAAN  ;
+c%:a+ABBR:c%:a  PCLE_VAAN  ;
+ca+ABBR:ca  PCLE_VAAN  ;
+cf.+ABBR:cf.  PCLE_VAAN  ;
+c/o+ABBR:c/o  PCLE_VAAN  ;
+Co.+ABBR:Co.  PCLE_VAAN  ;
+Corp.+ABBR:Corp.  PCLE_VAAN  ;
+dat.+N:dat.  #  ; !!= * {{@CODE@}}: datiivi (dative)
+dem.+ABBR:dem.  PCLE_VAAN  ;
+dem.pron.+N:dem.pron.  #  ; !!= * {{@CODE@}}: demonstratiivipronomini
+dipl.arkkit.+ABBR:dipl.arkkit.  PCLE_VAAN  ;
+dipl.ekon.+ABBR:dipl.ekon.  PCLE_VAAN  ;
+dipl.ins.+ABBR:dipl.ins.  PCLE_VAAN  ;
+dipl.kielenk.+ABBR:dipl.kielenk.  PCLE_VAAN  ;
+dipl.kirjeenv.+ABBR:dipl.kirjeenv.  PCLE_VAAN  ;
+dipl.kosm.+ABBR:dipl.kosm.  PCLE_VAAN  ;
+dipl.+ABBR:dipl.  PCLE_VAAN  ;
+dipl.urk.+ABBR:dipl.urk.  PCLE_VAAN  ;
+dir.% cant.+ABBR:dir.% cant.  PCLE_VAAN  ;
+div.+ABBR:div.  PCLE_VAAN  ;
+dos.+ABBR:dos.  PCLE_VAAN  ;
+Dr.+ABBR:Dr.  PCLE_VAAN  ;
+eaa.+N:eaa.  #  ; !!= * {{@CODE@}}: ennen ajanlaskun alkua (BCE)
+eaa.+ABBR:eaa.  PCLE_VAAN  ;
+eaa+ABBR:eaa  PCLE_VAAN  ;
+ed.+ABBR:ed.  PCLE_VAAN  ;
+e.g.+ABBR:e.g.  PCLE_VAAN  ;
+eht.+ABBR:eht.  PCLE_VAAN  ;
+ekon.+ABBR:ekon.  PCLE_VAAN  ;
+eKr.+N:eKr.  #  ; !!= * {{@CODE@}}: ennen Kristuksen syntymää (BC)
+ekr.+N+Err/Orth:ekr.  #  ; !!= * {{@CODE@}}: ennen kristuksen syntymää
+eKr.+ABBR:eKr.  PCLE_VAAN  ;
+eKr+ABBR:eKr  PCLE_VAAN  ;
+elintarviket.+ABBR:elintarviket.  PCLE_VAAN  ;
+el.lääk.+ABBR:el.lääk.  PCLE_VAAN  ;
+eläinl.+ABBR:eläinl.  PCLE_VAAN  ;
+eläinlääket.+ABBR:eläinlääket.  PCLE_VAAN  ;
+eläk.+ABBR:eläk.  PCLE_VAAN  ;
+em.+A:em.  #  ; !!= * {{@CODE@}}: edellä mainittu (abovementioned)
+em.+N:em.  #  ; !!= * {{@CODE@}}: 
+em.+ABBR:em.  PCLE_VAAN  ;
+emt.+ABBR:emt.  PCLE_VAAN  ;
+ent.+A:ent.  #  ; !!= * {{@CODE@}}: entinen (former)
+ent.+ABBR:ent.  PCLE_VAAN  ;
+eos.+ABBR:eos.  PCLE_VAAN  ;
+e.+ABBR:e.  PCLE_VAAN  ;
+erikoiseläinl.+ABBR:erikoiseläinl.  PCLE_VAAN  ;
+erikoishammasl.+ABBR:erikoishammasl.  PCLE_VAAN  ;
+erikoisl.+ABBR:erikoisl.  PCLE_VAAN  ;
+erikoist.+ABBR:erikoist.  PCLE_VAAN  ;
+esik.+ABBR:esik.  PCLE_VAAN  ;
+esim.+N:esim.  #  ; !!= * {{@CODE@}}: esimerkiksi (e.g.)
+esim.+ABBR:esim.  PCLE_VAAN  ;
+esim+ABBR:esim  PCLE_VAAN  ;
+esitt.+ABBR:esitt.  PCLE_VAAN  ;
+est.+ABBR:est.  PCLE_VAAN  ;
+et% al.+ABBR:et% al.  PCLE_VAAN  ;
+etc.+ABBR:etc.  PCLE_VAAN  ;
+etc+ABBR:etc  PCLE_VAAN  ;
+et.+ABBR:et.  PCLE_VAAN  ;
+ev.lut.+ABBR:ev.lut.  PCLE_VAAN  ;
+ev.luutn.+ABBR:ev.luutn.  PCLE_VAAN  ;
+evo+N:evo  #  ; !!= * {{@CODE@}}: et vaan osaa (ydkj)
+ev.+ABBR:ev.  PCLE_VAAN  ;
+evp.+N:evp.  #  ; !!= * {{@CODE@}}: erossa vakinaisesta palveluksesta
+evp.+ABBR:evp.  PCLE_VAAN  ;
+farmas.+ABBR:farmas.  PCLE_VAAN  ;
+farm.+ABBR:farm.  PCLE_VAAN  ;
+fil.+ABBR:fil.  PCLE_VAAN  ;
+f.+ABBR:f.  PCLE_VAAN  ;
+ft.+ABBR:ft.  PCLE_VAAN  ;
+gen.+N:gen.  #  ; !!= * {{@CODE@}}: genetiivi (genitive)
+GTi+N:GTi  #  ; !!= * {{@CODE@}}:
+GTi+ABBR:GTi  PCLE_VAAN  ;
+Gt+ABBR:Gt  PCLE_VAAN  ;
+hallinton.+ABBR:hallinton.  PCLE_VAAN  ;
+hallintot.+ABBR:hallintot.  PCLE_VAAN  ;
+hammaslääket.+ABBR:hammaslääket.  PCLE_VAAN  ;
+h.c.+ABBR:h.c.  PCLE_VAAN  ;
+hl.+ABBR:hl.  PCLE_VAAN  ;
+hlö+N:hlö  #  ; !!= * {{@CODE@}}: henkilö (person)
+hovioik.+ABBR:hovioik.  PCLE_VAAN  ;
+hp.+ABBR:hp.  PCLE_VAAN  ;
+hra+N:hra  #  ; !!= * {{@CODE@}}: herra (mr.)
+hum.+ABBR:hum.  PCLE_VAAN  ;
+huom.+N:huom.  #  ; !!= * {{@CODE@}}: huomaa (N.B.)
+huom.+ABBR:huom.  PCLE_VAAN  ;
+huom+ABBR:huom  PCLE_VAAN  ;
+hv+N:hv  #  ; !!= * {{@CODE@}}: hyvä veli (greetz)
+H.V.+ABBR:H.V.  PCLE_VAAN  ;
+ibid.+ABBR:ibid.  PCLE_VAAN  ;
+ib.+N:ib.  #  ; !!= * {{@CODE@}}: ibidem
+ib.+ABBR:ib.  PCLE_VAAN  ;
+id.+N:id.  #  ; !!= * {{@CODE@}}: id
+id.+ABBR:id.  PCLE_VAAN  ;
+i.e.+ABBR:i.e.  PCLE_VAAN  ;
+ilm.+ABBR:ilm.  PCLE_VAAN  ;
+imperf.+N:imperf.  #  ; !!= * {{@CODE@}}: imperfect
+inc+N:inc  #  ; !!= * {{@CODE@}}: inc
+inc.+ABBR:inc.  PCLE_VAAN  ;
+inf.+N:inf.  #  ; !!= * {{@CODE@}}: infinitive
+in.+ABBR:in.  PCLE_VAAN  ;
+in+ABBR:in  PCLE_VAAN  ;
+ins.+ABBR:ins.  PCLE_VAAN  ;
+ip.+ABBR:ip.  PCLE_VAAN  ;
+it.+N:it.  #  ; !!= * {{@CODE@}}: 
+it.+ABBR:it.  PCLE_VAAN  ;
+i.v.+ABBR:i.v.  PCLE_VAAN  ;
+jaa.+ABBR:jaa.  PCLE_VAAN  ;
+jaa+ABBR:jaa  PCLE_VAAN  ;
+jatk.+ABBR:jatk.  PCLE_VAAN  ;
+Jk.+ABBR:Jk.  PCLE_VAAN  ;
+jKr.+N:jKr.  #  ; !!= * {{@CODE@}}: jälkeen Kristuksen syntymän (AD)
+jKr.+ABBR:jKr.  PCLE_VAAN  ;
+jKr+ABBR:jKr  PCLE_VAAN  ;
+jllek+N:jllek  #  ; !!= * {{@CODE@}}: jollekin (for smth)
+jllk+N:jllk  #  ; !!= * {{@CODE@}}: jollakin (for smth)
+jltk+N:jltk  #  ; !!= * {{@CODE@}}: joltakin (from smth)
+jms.+ABBR:jms.  PCLE_VAAN  ;
+jms+ABBR:jms  PCLE_VAAN  ;
+jne.+N:jne.  #  ; !!= * {{@CODE@}}: ja niin edelleen (etc.)
+jne.+ABBR:jne.  PCLE_VAAN  ;
+jne+ABBR:jne  PCLE_VAAN  ;
+jnk+N:jnk  #  ; !!= * {{@CODE@}}: jonkin (of smth)
+joht.+ABBR:joht.  PCLE_VAAN  ;
+joss+N:joss  #  ; !!= * {{@CODE@}}: jossa (somewhere)
+jr.+ABBR:jr.  PCLE_VAAN  ;
+jssk+N:jssk  #  ; !!= * {{@CODE@}}: jossakin (somewhere)
+jstk+N:jstk  #  ; !!= * {{@CODE@}}: jostakin (from)
+jtak+N:jtak  #  ; !!= * {{@CODE@}}: jotakin (to)
+julk.+ABBR:julk.  PCLE_VAAN  ;
+JyP+N:JyP  #  ; !!= * {{@CODE@}}: Jyväskylän pallo
+jälj.+ABBR:jälj.  PCLE_VAAN  ;
+jääk.+ABBR:jääk.  PCLE_VAAN  ;
+kad.+ABBR:kad.  PCLE_VAAN  ;
+KalPa+N:KalPa  #  ; !!= * {{@CODE@}}: Kalmiston pallo
+kal.+ABBR:kal.  PCLE_VAAN  ;
+kamr.+ABBR:kamr.  PCLE_VAAN  ;
+kand.+N:kand.  #  ; !!= * {{@CODE@}}: kandidaatti (bachelor)
+kand.+ABBR:kand.  PCLE_VAAN  ;
+ka.+N:ka.  #  ; !!= * {{@CODE@}}: keskiarvo (avg)
+kansaned.+ABBR:kansaned.  PCLE_VAAN  ;
+kantt.+ABBR:kantt.  PCLE_VAAN  ;
+ka.+ABBR:ka.  PCLE_VAAN  ;
+kappal.+ABBR:kappal.  PCLE_VAAN  ;
+kapt.luutn.+ABBR:kapt.luutn.  PCLE_VAAN  ;
+kapt.+N:kapt.  #  ; !!= * {{@CODE@}}: kapteeni (captain)
+kapt.+ABBR:kapt.  PCLE_VAAN  ;
+kasvatust.+ABBR:kasvatust.  PCLE_VAAN  ;
+kat.+ABBR:kat.  PCLE_VAAN  ;
+kats.+ABBR:kats.  PCLE_VAAN  ;
+kauppat.+ABBR:kauppat.  PCLE_VAAN  ;
+kcal+ABBR:kcal  PCLE_VAAN  ;
+kd.+ABBR:kd.  PCLE_VAAN  ;
+kenr.luutn.+ABBR:kenr.luutn.  PCLE_VAAN  ;
+kenr.maj.+ABBR:kenr.maj.  PCLE_VAAN  ;
+kenr.+N:kenr.  #  ; !!= * {{@CODE@}}: kenraali (general)
+kenr.+ABBR:kenr.  PCLE_VAAN  ;
+ke+ABBR:ke  PCLE_VAAN  ;
+kers.+N:kers.  #  ; !!= * {{@CODE@}}: kersantti (sergeant)
+kers.+ABBR:kers.  PCLE_VAAN  ;
+kesk.+N:kesk.  #  ; !!= * {{@CODE@}}: keskusta (center party)
+kesk.+ABBR:kesk.  PCLE_VAAN  ;
+Kesk.+ABBR:Kesk.  PCLE_VAAN  ;
+kh.+ABBR:kh.  PCLE_VAAN  ;
+khra+N:khra  #  ; !!= * {{@CODE@}}: kirkkoherra (parson)
+kiint.oy.+ABBR:kiint.oy.  PCLE_VAAN  ;
+kiir.+ABBR:kiir.  PCLE_VAAN  ;
+kirjeenv.+ABBR:kirjeenv.  PCLE_VAAN  ;
+kirj.+ABBR:kirj.  PCLE_VAAN  ;
+kir.+ABBR:kir.  PCLE_VAAN  ;
+kj.+ABBR:kj.  PCLE_VAAN  ;
+kk+N:kk  #  ; !!= * {{@CODE@}}: kuukausi (month)
+kko+N:kko  #  ; !!= * {{@CODE@}}: kirkko (church)
+kk.+ABBR:kk.  PCLE_VAAN  ;
+k%:lo+N:k%:lo  #  ; !!= * {{@CODE@}}: kello
+klo+N:klo  #  ; !!= * {{@CODE@}}: kello (time)
+kl.+ABBR:kl.  PCLE_VAAN  ;
+km/h+ABBR:km/h  PCLE_VAAN  ;
+k.+N:k.  #  ; !!= * {{@CODE@}}:
+kok.+N:kok.  #  ; !!= * {{@CODE@}}: kokoomus (coalition party)
+kok.+ABBR:kok.  PCLE_VAAN  ;
+Kok.+ABBR:Kok.  PCLE_VAAN  ;
+kom.kapt.+ABBR:kom.kapt.  PCLE_VAAN  ;
+komm.+ABBR:komm.  PCLE_VAAN  ;
+kom.+ABBR:kom.  PCLE_VAAN  ;
+kompp.+N:kompp.  #  ; !!= * {{@CODE@}}: komppania ()
+kompp.+ABBR:kompp.  PCLE_VAAN  ;
+ko.+N:ko.  #  ; !!= * {{@CODE@}}: kyseessä oleva (mentioned)
+konst.+ABBR:konst.  PCLE_VAAN  ;
+ko.+ABBR:ko.  PCLE_VAAN  ;
+korpr.+ABBR:korpr.  PCLE_VAAN  ;
+kotital.op.+ABBR:kotital.op.  PCLE_VAAN  ;
+kotiteoll.op.+ABBR:kotiteoll.op.  PCLE_VAAN  ;
+k.+ABBR:k.  PCLE_VAAN  ;
+kpl+N:kpl  #  ; !!= * {{@CODE@}}: kappale (pcs)
+kp.+ABBR:kp.  PCLE_VAAN  ;
+krist.+ABBR:krist.  PCLE_VAAN  ;
+krs+N:krs  #  ; !!= * {{@CODE@}}: kerros (floor)
+ks.+N:ks.  #  ; !!= * {{@CODE@}}: katso (c.f.)
+ks.+ABBR:ks.  PCLE_VAAN  ;
+kts.+N:kts.  #  ; !!= * {{@CODE@}}: katso (c.f.)
+kumpp.+ABBR:kumpp.  PCLE_VAAN  ;
+KuPS+N:KuPS  #  ; !!= * {{@CODE@}}: Kuopion palloseura
+kuv.op.+ABBR:kuv.op.  PCLE_VAAN  ;
+kuv.+ABBR:kuv.  PCLE_VAAN  ;
+kv.+N:kv.  #  ; !!= * {{@CODE@}}: 
+kv.+ABBR:kv.  PCLE_VAAN  ;
+ky.+ABBR:ky.  PCLE_VAAN  ;
+käsit.op.+ABBR:käsit.op.  PCLE_VAAN  ;
+lakit.+ABBR:lakit.  PCLE_VAAN  ;
+la+ABBR:la  PCLE_VAAN  ;
+lastent.op.+ABBR:lastent.op.  PCLE_VAAN  ;
+l.+CC:l.  #  ; !!= * {{@CODE@}}: eli (i.e.)
+leht.+ABBR:leht.  PCLE_VAAN  ;
+liikuntak.+ABBR:liikuntak.  PCLE_VAAN  ;
+liikuntat.+ABBR:liikuntat.  PCLE_VAAN  ;
+lis.+N:lis.  #  ; !!= * {{@CODE@}}: lisensiaatti (lic.)
+lis.+ABBR:lis.  PCLE_VAAN  ;
+lkm.+N:lkm.  #  ; !!= * {{@CODE@}}: lukumäärä (amount)
+lkm.+ABBR:lkm.  PCLE_VAAN  ;
+lk.+N:lk.  #  ; !!= * {{@CODE@}}: luokka (grade)
+lk.+ABBR:lk.  PCLE_VAAN  ;
+lkv.+ABBR:lkv.  PCLE_VAAN  ;
+lky.+ABBR:lky.  PCLE_VAAN  ;
+ll.+ABBR:ll.  PCLE_VAAN  ;
+lm.+ABBR:lm.  PCLE_VAAN  ;
+l.+ABBR:l.  PCLE_VAAN  ;
+ltd.+ABBR:ltd.  PCLE_VAAN  ;
+ltk.+ABBR:ltk.  PCLE_VAAN  ;
+ltn.+N:ltn.  #  ; !!= * {{@CODE@}}: luutnantti (lieutenant)
+luonnont.+ABBR:luonnont.  PCLE_VAAN  ;
+lut.+ABBR:lut.  PCLE_VAAN  ;
+luutn.+ABBR:luutn.  PCLE_VAAN  ;
+lv.+ABBR:lv.  PCLE_VAAN  ;
+lvv.+ABBR:lvv.  PCLE_VAAN  ;
+lyh.+N:lyh.  #  ; !!= * {{@CODE@}}: lyhennettynä (abbr.)
+lyh.+ABBR:lyh.  PCLE_VAAN  ;
+läh.+N:läh.  #  ; !!= * {{@CODE@}}: lähes 
+läh.+ABBR:läh.  PCLE_VAAN  ;
+länt.+ABBR:länt.  PCLE_VAAN  ;
+lääket.+ABBR:lääket.  PCLE_VAAN  ;
+lääk.+ABBR:lääk.  PCLE_VAAN  ;
+maan.+ABBR:maan.  PCLE_VAAN  ;
+maat.+ABBR:maat.  PCLE_VAAN  ;
+maist.+ABBR:maist.  PCLE_VAAN  ;
+maj.+ABBR:maj.  PCLE_VAAN  ;
+maks.+ABBR:maks.  PCLE_VAAN  ;
+ma.+N:ma.  #  ; !!= * {{@CODE@}}: 
+ma.+ABBR:ma.  PCLE_VAAN  ;
+ma+ABBR:ma  PCLE_VAAN  ;
+M.A.+ABBR:M.A.  PCLE_VAAN  ;
+matr.+ABBR:matr.  PCLE_VAAN  ;
+MBA.+ABBR:MBA.  PCLE_VAAN  ;
+merkon.+ABBR:merkon.  PCLE_VAAN  ;
+metsänhoit.+ABBR:metsänhoit.  PCLE_VAAN  ;
+metsät.+ABBR:metsät.  PCLE_VAAN  ;
+mhy.+ABBR:mhy.  PCLE_VAAN  ;
+miel.+ABBR:miel.  PCLE_VAAN  ;
+milj.+ABBR:milj.  PCLE_VAAN  ;
+min.+ABBR:min.  PCLE_VAAN  ;
+Miss+ABBR:Miss  PCLE_VAAN  ;
+mlk.+N:mlk.  #  ; !!= * {{@CODE@}}: maalaiskunta (town)
+mlk.+ABBR:mlk.  PCLE_VAAN  ;
+Mlle+ABBR:Mlle  PCLE_VAAN  ;
+ml.+N:ml.  #  ; !!= * {{@CODE@}}: mukaan lukien (incl.)
+ml.+ABBR:ml.  PCLE_VAAN  ;
+Mme+ABBR:Mme  PCLE_VAAN  ;
+mm.+N:mm.  #  ; !!= * {{@CODE@}}: muun muassa (among others)
+mm.+ABBR:mm.  PCLE_VAAN  ;
+mm+ABBR:mm  PCLE_VAAN  ;
+mom.+N:mom.  #  ; !!= * {{@CODE@}}: momentti (
+mom.+ABBR:mom.  PCLE_VAAN  ;
+mon.+N:mon.  #  ; !!= * {{@CODE@}}: monikko (pl.)
+mot.+ABBR:mot.  PCLE_VAAN  ;
+mot+ABBR:mot  PCLE_VAAN  ;
+M.+ABBR:M.  PCLE_VAAN  ;
+mpm.+ABBR:mpm.  PCLE_VAAN  ;
+mpm+ABBR:mpm  PCLE_VAAN  ;
+mp.+ABBR:mp.  PCLE_VAAN  ;
+mpy.+N:mpy.  #  ; !!= * {{@CODE@}}: 
+mpy.+ABBR:mpy.  PCLE_VAAN  ;
+mrd.+ABBR:mrd.  PCLE_VAAN  ;
+Mr.+ABBR:Mr.  PCLE_VAAN  ;
+Mr+ABBR:Mr  PCLE_VAAN  ;
+Mrs+ABBR:Mrs  PCLE_VAAN  ;
+M.Sc.+ABBR:M.Sc.  PCLE_VAAN  ;
+Ms+ABBR:Ms  PCLE_VAAN  ;
+msrk.+ABBR:msrk.  PCLE_VAAN  ;
+mt.+N:mt.  #  ; !!= * {{@CODE@}}:
+mt.+ABBR:mt.  PCLE_VAAN  ;
+mts.+N:mts.  #  ; !!= * {{@CODE@}}: mainitun tekstin sivulla (ibid)
+mts.+ABBR:mts.  PCLE_VAAN  ;
+mus.op.+ABBR:mus.op.  PCLE_VAAN  ;
+mus.+ABBR:mus.  PCLE_VAAN  ;
+mv.+N:mv.  #  ; !!= * {{@CODE@}}: 
+mv.+ABBR:mv.  PCLE_VAAN  ;
+mvs.+ABBR:mvs.  PCLE_VAAN  ;
+MyPa+N:MyPa  #  ; !!= * {{@CODE@}}: Myllykosken Pallo
+myöh.+ABBR:myöh.  PCLE_VAAN  ;
+NA% f.+ABBR:NA% f.    PCLE_VAAN  ;
+N.B.+ABBR:N.B.  PCLE_VAAN  ;
+neuv.+ABBR:neuv.  PCLE_VAAN  ;
+nid.+ABBR:nid.  PCLE_VAAN  ;
+nimim.+ABBR:nimim.  PCLE_VAAN  ;
+nim.+ABBR:nim.  PCLE_VAAN  ;
+nk.+ABBR:nk.  PCLE_VAAN  ;
+n.+N:n.  #  ; !!= * {{@CODE@}}: noin (approx.)
+N.N.+N:N.N.  #  ; !!= * {{@CODE@}}: John Doe
+N.N.+ABBR:N.N.  PCLE_VAAN  ;
+nom.+N:nom.  #  ; !!= * {{@CODE@}}: nominatiivi (nominative)
+n.+ABBR:n.  PCLE_VAAN  ;
+n%:ro+N:n%:ro  #  ; !!= * {{@CODE@}}: 
+nro+N:nro  #  ; !!= * {{@CODE@}}: numero (#
+nro+ABBR:nro  PCLE_VAAN  ;
+ns.+N:ns.  #  ; !!= * {{@CODE@}}: niin sanottu (so-called)
+ns.+ABBR:ns.  PCLE_VAAN  ;
+ns+ABBR:ns  PCLE_VAAN  ;
+nti+N:nti  #  ; !!= * {{@CODE@}}: neiti (ms)
+nti+ABBR:nti  PCLE_VAAN  ;
+nyk.+N:nyk.  #  ; !!= * {{@CODE@}}: nykyinen (currently)
+nyk.+ABBR:nyk.  PCLE_VAAN  ;
+oa.+ABBR:oa.  PCLE_VAAN  ;
+obs.+ABBR:obs.  PCLE_VAAN  ;
+obs+ABBR:obs  PCLE_VAAN  ;
+oh.+ABBR:oh.  PCLE_VAAN  ;
+oikeust.+ABBR:oikeust.  PCLE_VAAN  ;
+oik.+N:oik.  #  ; !!= * {{@CODE@}}: oikeammin?
+oik.+ABBR:oik.  PCLE_VAAN  ;
+ok.+ABBR:ok.  PCLE_VAAN  ;
+ok+ABBR:ok  PCLE_VAAN  ;
+om.+N:om.  #  ; !!= * {{@CODE@}}:
+om.+ABBR:om.  PCLE_VAAN  ;
+om.p.+ABBR:om.p.  PCLE_VAAN  ;
+opett.+ABBR:opett.  PCLE_VAAN  ;
+op.+ABBR:op.  PCLE_VAAN  ;
+opp.+ABBR:opp.  PCLE_VAAN  ;
+ork.+ABBR:ork.  PCLE_VAAN  ;
+ortod.+ABBR:ortod.  PCLE_VAAN  ;
+osk.+ABBR:osk.  PCLE_VAAN  ;
+o.s.+N:o.s.  #  ; !!= * {{@CODE@}}: 
+os.+N:os.  #  ; !!= * {{@CODE@}}: omaa sukuaan (née)
+o.s.+ABBR:o.s.  PCLE_VAAN  ;
+os.+ABBR:os.  PCLE_VAAN  ;
+oto.+ABBR:oto.  PCLE_VAAN  ;
+ovh.+ABBR:ovh.  PCLE_VAAN  ;
+oyj.+ABBR:oyj.  PCLE_VAAN  ;
+oy.+ABBR:oy.  PCLE_VAAN  ;
+oz.+ABBR:oz.  PCLE_VAAN  ;
+pa.+ABBR:pa.  PCLE_VAAN  ;
+par.+N:par.  #  ; !!= * {{@CODE@}}: paremmin (in dict., better)
+par.+ABBR:par.  PCLE_VAAN  ;
+part.+N:part.  #  ; !!= * {{@CODE@}}: partitiivi (partitive)
+past.+ABBR:past.  PCLE_VAAN  ;
+patl.+ABBR:patl.  PCLE_VAAN  ;
+pat.+ABBR:pat.  PCLE_VAAN  ;
+/+ABBR:/  PCLE_VAAN  ;
+&+ABBR:&  PCLE_VAAN  ;
+++ABBR:+  PCLE_VAAN  ;
+pe+ABBR:pe  PCLE_VAAN  ;
+perf.+N:perf.  #  ; !!= * {{@CODE@}}: perfekti (perfect)
+perj.+ABBR:perj.  PCLE_VAAN  ;
+per.+ABBR:per.  PCLE_VAAN  ;
+perusk.op.+ABBR:perusk.op.  PCLE_VAAN  ;
+Ph.D.+ABBR:Ph.D.  PCLE_VAAN  ;
+ph.+ABBR:ph.  PCLE_VAAN  ;
+pion.+ABBR:pion.  PCLE_VAAN  ;
+pit.+ABBR:pit.  PCLE_VAAN  ;
+pj.+N:pj.  #  ; !!= * {{@CODE@}}: puheenjohtaja (chair)
+pj.+ABBR:pj.  PCLE_VAAN  ;
+pk.+ABBR:pk.  PCLE_VAAN  ;
+pkt+N:pkt  #  ; !!= * {{@CODE@}}: paketti (pcs)
+pl.+N:pl.  #  ; !!= * {{@CODE@}}: plural
+pl.+ABBR:pl.  PCLE_VAAN  ;
+pluskv.+N:pluskv.  #  ; !!= * {{@CODE@}}: pluskvamperfekti
+p.m.+ABBR:p.m.  PCLE_VAAN  ;
+pm.+ABBR:pm.  PCLE_VAAN  ;
+p.+N:p.  #  ; !!= * {{@CODE@}}: 
+pnä+ABBR:pnä  PCLE_VAAN  ;
+pohj.+ABBR:pohj.  PCLE_VAAN  ;
+po.+N:po.  #  ; !!= * {{@CODE@}}: pitää olla (in dict., should be)
+po.+ABBR:po.  PCLE_VAAN  ;
+p.+ABBR:p.  PCLE_VAAN  ;
+pp.+ABBR:pp.  PCLE_VAAN  ;
+prees.+N:prees.  #  ; !!= * {{@CODE@}}: preesens
+prik.+ABBR:prik.  PCLE_VAAN  ;
+prof.+N:prof.  #  ; !!= * {{@CODE@}}: professori
+prof.+ABBR:prof.  PCLE_VAAN  ;
+prok.+ABBR:prok.  PCLE_VAAN  ;
+pron.+N:pron.  #  ; !!= * {{@CODE@}}: pronomini
+prov.+ABBR:prov.  PCLE_VAAN  ;
+ps.+ABBR:ps.  PCLE_VAAN  ;
+P.S.+ABBR:P.S.  PCLE_VAAN  ;
+psta+N:psta  #  ; !!= * {{@CODE@}}: puolesta (on behalf of)
+psta+ABBR:psta  PCLE_VAAN  ;
+psykol.+ABBR:psykol.  PCLE_VAAN  ;
+ptk.+ABBR:ptk.  PCLE_VAAN  ;
+puh.joht.+ABBR:puh.joht.  PCLE_VAAN  ;
+puh.+ABBR:puh.  PCLE_VAAN  ;
+pursim.+ABBR:pursim.  PCLE_VAAN  ;
+puutarhaop.+ABBR:puutarhaop.  PCLE_VAAN  ;
+pvm.+N:pvm.  #  ; !!= * {{@CODE@}}: päivämäärä (date)
+pvm.+ABBR:pvm.  PCLE_VAAN  ;
+pv+N:pv  #  ; !!= * {{@CODE@}}: 
+pv.+ABBR:pv.  PCLE_VAAN  ;
+pääll.+ABBR:pääll.  PCLE_VAAN  ;
+rak.mest.+ABBR:rak.mest.  PCLE_VAAN  ;
+rak.+ABBR:rak.  PCLE_VAAN  ;
+reht.+ABBR:reht.  PCLE_VAAN  ;
+rek.+N:rek.  #  ; !!= * {{@CODE@}}: rekisteröity, ®
+rek.+ABBR:rek.  PCLE_VAAN  ;
+Re.+ABBR:Re.  PCLE_VAAN  ;
+res.+ABBR:res.  PCLE_VAAN  ;
+rkl+N:rkl  #  ; !!= * {{@CODE@}}: ruokalusikka (tbsp)
+rkm.+ABBR:rkm.  PCLE_VAAN  ;
+RoPS+N:RoPS  #  ; !!= * {{@CODE@}}: Rovaniemen palloseura
+rov.+ABBR:rov.  PCLE_VAAN  ;
+r.+ABBR:r.  PCLE_VAAN  ;
+rp.+N:rp.  #  ; !!= * {{@CODE@}}: 
+rp.+ABBR:rp.  PCLE_VAAN  ;
+Rs.+ABBR:Rs.  PCLE_VAAN  ;
+R.S.V.P.+ABBR:R.S.V.P.  PCLE_VAAN  ;
+rtg.+ABBR:rtg.  PCLE_VAAN  ;
+rva+N:rva  #  ; !!= * {{@CODE@}}: rouva (Mrs)
+rykm.+ABBR:rykm.  PCLE_VAAN  ;
+ry+N:ry  #  ; !!= * {{@CODE@}}: rekisteröity yhdistys (inc.)
+ry.+ABBR:ry.  PCLE_VAAN  ;
+sacr.% min.% kand.+ABBR:sacr.% min.% kand. PCLE_VAAN  ;
+sairaanh.op.+ABBR:sairaanh.op.  PCLE_VAAN  ;
+sair.hoit.+ABBR:sair.hoit.  PCLE_VAAN  ;
+s%:a+ABBR:s%:a  PCLE_VAAN  ;
+s.% d.+ABBR:s.% d.    PCLE_VAAN  ;
+s.d.+ABBR:s.d.  PCLE_VAAN  ;
+sd.+ABBR:sd.  PCLE_VAAN  ;
+sh.+ABBR:sh.  PCLE_VAAN  ;
+S.H.T.+ABBR:S.H.T.  PCLE_VAAN  ;
+sid.+ABBR:sid.  PCLE_VAAN  ;
+siht.+ABBR:siht.  PCLE_VAAN  ;
+sit.+N:sit.  #  ; !!= * {{@CODE@}}: sitoutumaton (not in party)
+sit.+ABBR:sit.  PCLE_VAAN  ;
+sl.+ABBR:sl.  PCLE_VAAN  ;
+s.+N:s.  #  ; !!= * {{@CODE@}}: syntynyt (birth)
+so.+N:so.  #  ; !!= * {{@CODE@}}: se on (i.e.)
+so.+ABBR:so.  PCLE_VAAN  ;
+sos.dem.+ABBR:sos.dem.  PCLE_VAAN  ;
+So.% Sh.+ABBR:So.% Sh.    PCLE_VAAN  ;
+sos.+ABBR:sos.  PCLE_VAAN  ;
+sotat.+ABBR:sotat.  PCLE_VAAN  ;
+sot.+ABBR:sot.  PCLE_VAAN  ;
+sov.+N:sov.  #  ; !!= * {{@CODE@}}: sovittanut (composer)
+sov.+ABBR:sov.  PCLE_VAAN  ;
+s.+ABBR:s.  PCLE_VAAN  ;
+sp.+N:sp.  #  ; !!= * {{@CODE@}}: 
+sp.+ABBR:sp.  PCLE_VAAN  ;
+srk.+N:srk.  #  ; !!= * {{@CODE@}}: seurakunta (church)
+srk.+ABBR:srk.  PCLE_VAAN  ;
+sr.+ABBR:sr.  PCLE_VAAN  ;
+stm.+ABBR:stm.  PCLE_VAAN  ;
+st.+ABBR:st.  PCLE_VAAN  ;
+sunn.+ABBR:sunn.  PCLE_VAAN  ;
+suom.+N:suom.  #  ; !!= * {{@CODE@}}: suomentanut (fi. translator)
+suom.+ABBR:suom.  PCLE_VAAN  ;
+su+ABBR:su  PCLE_VAAN  ;
+svh.+ABBR:svh.  PCLE_VAAN  ;
+s.v.+ABBR:s.v.  PCLE_VAAN  ;
+synt.+N:synt.  #  ; !!= * {{@CODE@}}: syntynyt (brith)
+synt.+ABBR:synt.  PCLE_VAAN  ;
+sähköp.+N:sähköp.  #  ; !!= * {{@CODE@}}: sähkoposti (email)
+sähköp.+ABBR:sähköp.  PCLE_VAAN  ;
+säv.+N:säv.  #  ; !!= * {{@CODE@}}: säveltänyt (composer)
+säv.+ABBR:säv.  PCLE_VAAN  ;
+tait.+ABBR:tait.  PCLE_VAAN  ;
+tal.hoit.+ABBR:tal.hoit.  PCLE_VAAN  ;
+taloust.+ABBR:taloust.  PCLE_VAAN  ;
+tanssit.+ABBR:tanssit.  PCLE_VAAN  ;
+tark.+N:tark.  #  ; !!= * {{@CODE@}}: tarkistanut (editor)
+tark.+ABBR:tark.  PCLE_VAAN  ;
+tav.+N:tav.  #  ; !!= * {{@CODE@}}: tavallisemmin (in dict, usually)
+tb.+ABBR:tb.  PCLE_VAAN  ;
+teatt.+ABBR:teatt.  PCLE_VAAN  ;
+tekn.+N:tekn.  #  ; !!= * {{@CODE@}}: tekninen (in dict., tech)
+tekn.+ABBR:tekn.  PCLE_VAAN  ;
+teoll.+ABBR:teoll.  PCLE_VAAN  ;
+teol.+ABBR:teol.  PCLE_VAAN  ;
+terveydenh.+ABBR:terveydenh.  PCLE_VAAN  ;
+terveystiet.+ABBR:terveystiet.  PCLE_VAAN  ;
+th.+ABBR:th.  PCLE_VAAN  ;
+tiist.+ABBR:tiist.  PCLE_VAAN  ;
+til.+ABBR:til.  PCLE_VAAN  ;
+ti+ABBR:ti  PCLE_VAAN  ;
+tj.+ABBR:tj.  PCLE_VAAN  ;
+tjs.+ABBR:tjs.  PCLE_VAAN  ;
+tjs+ABBR:tjs  PCLE_VAAN  ;
+tjsp+ABBR:tjsp  PCLE_VAAN  ;
+tk.+ABBR:tk.  PCLE_VAAN  ;
+tlk.+ABBR:tlk.  PCLE_VAAN  ;
+tmi+N:tmi  #  ; !!= * {{@CODE@}}: toiminimi (
+tmi+ABBR:tmi  PCLE_VAAN  ;
+tm.+ABBR:tm.  PCLE_VAAN  ;
+tms.+N:tms.  #  ; !!= * {{@CODE@}}: tai muuta sellaiste (etc.)
+tms.+ABBR:tms.  PCLE_VAAN  ;
+tms+ABBR:tms  PCLE_VAAN  ;
+tmv.+ABBR:tmv.  PCLE_VAAN  ;
+tmv+ABBR:tmv  PCLE_VAAN  ;
+t.+N:t.  #  ; !!= * {{@CODE@}}: tai (or)
+toht.+ABBR:toht.  PCLE_VAAN  ;
+toim.apul.+ABBR:toim.apul.  PCLE_VAAN  ;
+toim.% huom.+N:toim.% huom.             #  ; !!= * {{@CODE@}}: toimituksen huomautus (editors nt)
+toim.joht.+ABBR:toim.joht.  PCLE_VAAN  ;
+toim.+N:toim.  #  ; !!= * {{@CODE@}}: toimitus (editor)
+toim.+ABBR:toim.  PCLE_VAAN  ;
+toim.siht.+ABBR:toim.siht.  PCLE_VAAN  ;
+to+ABBR:to  PCLE_VAAN  ;
+torst.+ABBR:torst.  PCLE_VAAN  ;
+t.+ABBR:t.  PCLE_VAAN  ;
+tp.+ABBR:tp.  PCLE_VAAN  ;
+tri+N:tri  #  ; !!= * {{@CODE@}}: tohtori (Dr.)
+ts.+N:ts.  #  ; !!= * {{@CODE@}}: toisinsanoen (iow)
+ts.+ABBR:ts.  PCLE_VAAN  ;
+tsto+N:tsto  #  ; !!= * {{@CODE@}}: toimisto (office)
+tuom.+ABBR:tuom.  PCLE_VAAN  ;
+ups.+ABBR:ups.  PCLE_VAAN  ;
+urk.+ABBR:urk.  PCLE_VAAN  ;
+us.+N:us.  #  ; !!= * {{@CODE@}}: 
+us.+ABBR:us.  PCLE_VAAN  ;
+Vaiht.+ABBR:Vaiht.  PCLE_VAAN  ;
+vak.+N:vak.  #  ; !!= * {{@CODE@}}: 
+valtiot.+ABBR:valtiot.  PCLE_VAAN  ;
+valt.+ABBR:valt.  PCLE_VAAN  ;
+vanh.+N:vanh.  #  ; !!= * {{@CODE@}}: vanhastaan (in dict., earlier)
+va.+ABBR:va.  PCLE_VAAN  ;
+varan.+ABBR:varan.  PCLE_VAAN  ;
+varat.+ABBR:varat.  PCLE_VAAN  ;
+var.+ABBR:var.  PCLE_VAAN  ;
+vas.+N:vas.  #  ; !!= * {{@CODE@}}: vasemmisto (left party)
+vas.+ABBR:vas.  PCLE_VAAN  ;
+Vas.+ABBR:Vas.  PCLE_VAAN  ;
+vast.+N:vast.  #  ; !!= * {{@CODE@}}: vastaava (corresponding)
+vast.+ABBR:vast.  PCLE_VAAN  ;
+vht+ABBR:vht  PCLE_VAAN  ;
+vihr.+ABBR:vihr.  PCLE_VAAN  ;
+Vihr.+ABBR:Vihr.  PCLE_VAAN  ;
+virk.+ABBR:virk.  PCLE_VAAN  ;
+vkl+N:vkl  #  ; !!= * {{@CODE@}}: viikonloppu (weekend)
+vklp+N:vklp  #  ; !!= * {{@CODE@}}: 
+vko+N:vko  #  ; !!= * {{@CODE@}}: viikko (week)
+vk.+ABBR:vk.  PCLE_VAAN  ;
+vm.+ABBR:vm.  PCLE_VAAN  ;
+VNp.+ABBR:VNp.  PCLE_VAAN  ;
+v.+N:v.  #  ; !!= * {{@CODE@}}: vuotta (year(s))
+voim.op.+ABBR:voim.op.  PCLE_VAAN  ;
+V.O.+ABBR:V.O.  PCLE_VAAN  ;
+v.+ABBR:v.  PCLE_VAAN  ;
+vpj.+N:vpj.  #  ; !!= * {{@CODE@}}: varapuheenjohtaja (vice chair)
+vpj.+ABBR:vpj.  PCLE_VAAN  ;
+Vp.+ABBR:Vp.  PCLE_VAAN  ;
+vrk+N:vrk  #  ; !!= * {{@CODE@}}: vuorokausi (calendar day)
+vrt.+N:vrt.  #  ; !!= * {{@CODE@}}: vertaa (c.f.)
+vrt.+ABBR:vrt.  PCLE_VAAN  ;
+vsk.+ABBR:vsk.  PCLE_VAAN  ;
+vs.+N:vs.  #  ; !!= * {{@CODE@}}: 
+V.S.O.+ABBR:V.S.O.  PCLE_VAAN  ;
+V.S.O.P.+ABBR:V.S.O.P.  PCLE_VAAN  ;
+vs.+ABBR:vs.  PCLE_VAAN  ;
+vs+ABBR:vs  PCLE_VAAN  ;
+vt.+N:vt.  #  ; !!= * {{@CODE@}}: 
+vt.+ABBR:vt.  PCLE_VAAN  ;
+vv.+N:vv.  #  ; !!= * {{@CODE@}}: vuosina
+vv.+ABBR:vv.  PCLE_VAAN  ;
+vänr.+N:vänr.  #  ; !!= * {{@CODE@}}: vänrikki (some military stuff)
+vänr.+ABBR:vänr.  PCLE_VAAN  ;
+vääp.+N:vääp.  #  ; !!= * {{@CODE@}}: vääpeli ( more)
+vääp.+ABBR:vääp.  PCLE_VAAN  ;
+ye.ups.+ABBR:ye.ups.  PCLE_VAAN  ;
+yhd.+ABBR:yhd.  PCLE_VAAN  ;
+yhteiskuntat.+ABBR:yhteiskuntat.  PCLE_VAAN  ;
+yht.+ABBR:yht.  PCLE_VAAN  ;
+yks.+N:yks.  #  ; !!= * {{@CODE@}}: yksikkö (singular)
+ylik.+ABBR:ylik.  PCLE_VAAN  ;
+ylil.+ABBR:ylil.  PCLE_VAAN  ;
+ylimatr.+ABBR:ylimatr.  PCLE_VAAN  ;
+ylim.+ABBR:ylim.  PCLE_VAAN  ;
+yliop.+ABBR:yliop.  PCLE_VAAN  ;
+yliopp.+ABBR:yliopp.  PCLE_VAAN  ;
+ylip.+ABBR:ylip.  PCLE_VAAN  ;
+yliv.+ABBR:yliv.  PCLE_VAAN  ;
+yl.+N:yl.  #  ; !!= * {{@CODE@}}: yleensä (in dict., usually)
+yl.+ABBR:yl.  PCLE_VAAN  ;
+ym.+N:ym.  #  ; !!= * {{@CODE@}}: ynnä muuta (etc.)
+ym.+ABBR:ym.  PCLE_VAAN  ;
+ym+ABBR:ym  PCLE_VAAN  ;
+yms.+N:yms.  #  ; !!= * {{@CODE@}}: ynnä muuta sellaista (etc.)
+yms.+ABBR:yms.  PCLE_VAAN  ;
+yms+ABBR:yms  PCLE_VAAN  ;
+yo.merk.+ABBR:yo.merk.  PCLE_VAAN  ;
+yo.+N:yo.  #  ; !!= * {{@CODE@}}: yllä oleva (aforementioned)
+yo.+ABBR:yo.  PCLE_VAAN  ;
+yp.+ABBR:yp.  PCLE_VAAN  ;
+yv.+N:yv.  #  ; !!= * {{@CODE@}}: 
+yv.+ABBR:yv.  PCLE_VAAN  ;

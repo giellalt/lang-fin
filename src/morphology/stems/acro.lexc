@@ -1,237 +1,4290 @@
-!! !!!Acronym classification
-!! Acronyms are shortenings that inflect. They all have two inflection
-!! patterns, one read letter by letter, and one word-by-word. They are separate
-!! entries in this dictionary. For example OY will have singular illatives
-!! _OY:hyn_ and _OY:öön_ for _yyhyn_ and _yhtiöön_ resp., although latter is
-!! much rarer.
+!!  !!!Acronym classification
+!!  Acronyms are shortenings that inflect. They all have two inflection
+!!  patterns, one read letter by letter, and one word-by-word. They are separate
+!!  entries in this dictionary. For example OY will have singular illatives
+!!  _OY:hyn_ and _OY:öön_ for _yyhyn_ and _yhtiöön_ resp., although latter is
+!!  much rarer.
 !!
-!! A big majority of popular acronyms in everyday use comes from English, and
-!! the word-based inflection is virtually non-existent and would be very
-!! confusing so there's no high priority for adding that.
+!!  A big majority of popular acronyms in everyday use comes from English, and
+!!  the word-based inflection is virtually non-existent and would be very
+!!  confusing so there's no high priority for adding that.
 
-LEXICON  ACRO
-!! The first classification for acronyms should be along the final letter, then
-!! if the final word inflection is used, the class of that word.
-!!€gt-norm: Acronyms
-!!€ OY:hyn: OY+N+Sg+Ill
-!€  OY:öön 
-ABC+N:ABC   ACRO_EE  ; 
-ADSL+N:ADSL   ACRO_ÄKS  ; !!= * {{@CODE@}} Asymmetric Digital Subscriber Line
-AKT+N:AKT   ACRO_EE  ;    !!= * {{@CODE@}}
-AM+N:AM   ACRO_ÄKS  ;
-a+N:a   ACRO_AA  ;
-A+N:A   ACRO_AA  ;
-API+N:API   ACRO_II  ;    !!= * {{@CODE@}} Application Programming Interface
-atk+N:atk   ACRO_OO  ;    !!= * {{@CODE@}} automaattinen tekstinkäsittely
-BBC+N:BBC   ACRO_EE  ;    !!= * {{@CODE@}} British Broadcasting Company
-BKT+N:BKT   ACRO_EE  ;    !!= * {{@CODE@}} Brutto-Kansan-Tuote
-BMW+N:BMW   ACRO_EE  ;    !!= * {{@CODE@}} Bayerische Motor W
-b+N:b   ACRO_EE  ;
-B+N:B   ACRO_EE  ;
-BSE+N:BSE   ACRO_EE  ;    !!= * {{@CODE@}} 
-cd+N:cd   ACRO_EE  ;      !!= * {{@CODE@}} compact disc
-CD+N:CD   ACRO_ÄKS  ;     !!= * {{@CODE@}} Compact Disc
-CD-R+N:CD-R   ACRO_ÄKS  ; !!= * {{@CODE@}} Compact Disc Read-Only
-CD-RW+N:CD-RW   ACRO_EE  ;!!= * {{@CODE@}} Compact Disc Read-Write
-CIA+N:CIA   ACRO_AA  ;    !!= * {{@CODE@}} Central Intelligence Agency
-c+N:c   ACRO_EE  ;
-C+N:C   ACRO_EE  ;
-CNS+N:CNS   ACRO_ÄKS  ;
-COD+N:COD   ACRO_ÄKS  ;
-DDR+N:DDR   ACRO_ÄKS  ;   !!= * {{@CODE@}} Deutsches Democratische Republic
-DE+N:DE   ACRO_EE  ;      !!= * {{@CODE@}} 
-DFI+N:DFI   ACRO_II  ;    !!= * {{@CODE@}}
-dna+N:dna   ACRO_AA  ;    !!= * {{@CODE@}} deoxyribonucleic acid
-DNA+N:DNA   ACRO_AA  ;    !!= * {{@CODE@}} Deoxyribo-Nucleic Acid
-d+N:d   ACRO_EE  ;
-D+N:D   ACRO_ÄKS  ;
-DJ+N:DJ     ACRO_II ;   !!= * {{@CODE@}} Disc Jockey
-DPI+N:DPI   ACRO_II  ;    !!= * {{@CODE@}} Dots Per Inch
-DVD+N:DVD   ACRO_ÄKS  ;   !!= * {{@CODE@}} Digital Versatile Disc
-EEC+N:EEC   ACRO_EE  ;    !!= * {{@CODE@}} European Economy Council
-EIP+N:EIP   ACRO_EE  ;
-EKP+N:EKP   ACRO_EE  ;    !!= * {{@CODE@}} Euroopan Keskus-Pankki
-ELDR+N:ELDR   ACRO_ÄKS  ;
-EMU+N:EMU   ACRO_UU  ;    !!= * {{@CODE@}} European Monetary Union
-e+N:e   ACRO_EE  ;
-E+N:E   ACRO_EE  ;
-EP+N:EP   ACRO_EE  ;
-ES+N:ES   ACRO_ÄKS  ;
-ETY+N:ETY   ACRO_YY  ;    !!= * {{@CODE@}} Euroopan Turvallisuus-Yhteisö
-EU+N:EU   ACRO_UU  ;      !!= * {{@CODE@}} Euroopan Unioni
-EY+N:EY   ACRO_YY  ;      !!= * {{@CODE@}} Euroopan Yhteisö
-FBI+N:FBI   ACRO_II ;     !!= * {{@CODE@}} Federal Bureau of Investigation
-FIA+N:FIA   ACRO_AA  ;
-FIFA+N:FIFA   ACRO_AA  ;  !!= * {{@CODE@}} Football
-f+N:f   ACRO_ÄKS  ;
-F+N:F   ACRO_ÄKS  ;
-FR+N:FR   ACRO_ÄKS  ;
-FTP+N:FTP   ACRO_EE  ;    !!= * {{@CODE@}} File Transfer Protocol
-GB+N:GB   ACRO_EE  ;
-GM+N:GM   ACRO_ÄKS  ;     !!= * {{@CODE@}} General Motors
-GMO+N:GMO   ACRO_OO  ;
-g+N:g   ACRO_EE  ;
-G+N:G   ACRO_EE  ;
-GPRS+N:GPRS   ACRO_ÄKS  ; !!= * {{@CODE@}} 
-GTi+N:GTi   ACRO_II  ;
-GUE+N:GUE   ACRO_EE  ;
-HIFK+N:HIFK   ACRO_OO  ;  !!= * {{@CODE@}} Helsingfors 
-HIV+N:HIV   ACRO_EE  ;    !!= * {{@CODE@}} ... Immunodeficiency Virus
-HJK+N:HJK   ACRO_OO  ;    !!= * {{@CODE@}} Helsingin Jalkapallo-Klubi
-HKL+N:HKL   ACRO_ÄKS  ;   !!= * {{@CODE@}} Helsingin Kaupungin Liikenne
-HK+N:HK   ACRO_OO  ;      !!= * {{@CODE@}} 
-h+N:h   ACRO_OO  ;
-H+N:H   ACRO_OO  ;
-HS+N:HS   ACRO_ÄKS  ;     !!= * {{@CODE@}} Helsingin Sanomat
-HTML+N:HTML   ACRO_ÄKS  ; !!= * {{@CODE@}} Hyper-Text Markup Language
-HTTP+N:HTTP   ACRO_EE  ;  !!= * {{@CODE@}} Hyper-Text Transfer Protocol
-HVK+N:HVK   ACRO_OO  ;    
-IATA+N:IATA   ACRO_AA  ;
-IBM+N:IBM   ACRO_ÄKS  ;   !!= * {{@CODE@}} International Business Machines
-IFK+N:IFK   ACRO_OO  ;
-i+N:i   ACRO_II  ;
-I+N:I   ACRO_II  ;
-internet-tv+N:internet-tv   ACRO_EE  ; !!= * {{@CODE@}} Tele-Visio
-IP+N:IP   ACRO_EE  ;    !!= * {{@CODE@}} Internet Protocol
-IRC+N:IRC   ACRO_EE  ;  !!= * {{@CODE@}} Internet Relay Chat
-ISBN+N:ISBN   ACRO_ÄKS  ;   !!= * {{@CODE@}} International Serial Book Number
-IT+N:IT   ACRO_EE  ;    !!= * {{@CODE@}} Informaatio-Teknologia
-j+N:j   ACRO_II  ;
-J+N:J   ACRO_II  ;
-JVC+N:JVC   ACRO_EE  ;
-KHO+N:KHO   ACRO_OO  ; !!= * {{@CODE@}} Korkein Hovi-Oikeus
-k+N:k   ACRO_OO  ;
-K+N:K   ACRO_OO  ;
-KOM+N:KOM   ACRO_ÄKS  ;
-KOP+N:KOP   ACRO_EE  ;  !!= * {{@CODE@}} Kansallis-Osake-Pankki
-KTP+N:KTP   ACRO_EE  ;
-lehtiö-pc+N:lehtiö-pc   ACRO_EE  ; !!= * {{@CODE@}} Personal Computer
-l+N:l   ACRO_ÄKS  ;
-L+N:L   ACRO_ÄKS  ;
-LPI+N:LPI   ACRO_II  ;
-LSO+N:LSO   ACRO_OO  ;
-media-pc+N:media-pc   ACRO_EE  ; !!= * {{@CODE@}} Personal Computer
-m+N:m   ACRO_ÄKS  ;
-M+N:M   ACRO_ÄKS  ;
-MP3+N:MP3   ACRO_KOLME  ;
-MPEG+N:MPEG   ACRO_EE  ;
-MR+N:MR   ACRO_ÄKS  ;
-MTK+N:MTK   ACRO_OO  ;
-MTV+N:MTV     ACRO_EE ;    !!= * {{@CODE@}} Music TeleVision
-MTV3+N:MTV3   ACRO_KOLME  ; !!= * {{@CODE@}} Mainos-Tele-Visio
-NASA+N:NASA   ACRO_AA  ;    !!= * {{@CODE@}} National Air and Space A
-NATO+N:NATO   ACRO_OO  ;    !!= * {{@CODE@}} North-Atlantic T Organisation
-NBA+N:NBA     ACRO_AA ;    !!= * {{@CODE@}} National Basketball Association
-netti-tv+N:netti-tv   ACRO_EE  ; !!= * {{@CODE@}} Tele-visio
-NHL+N:NHL   ACRO_ÄKS  ; !!= * {{@CODE@}} National Hockey League
-NL+N:NL   ACRO_ÄKS  ;   !!= * {{@CODE@}} Neuvosto-Liitto
-n+N:n   ACRO_ÄKS  ;
-N+N:N   ACRO_ÄKS  ;
-NPC+N:NPC   ACRO_EE  ;  !!= * {{@CODE@}} Non-Player Character
-NRW+N:NRW   ACRO_EE  ;
-OECD+N:OECD   ACRO_ÄKS  ;
-OK+N:OK   ACRO_OO  ;    !!= * {{@CODE@}} not pronounced in words
-OLAF+N:OLAF   ACRO_ÄKS  ;
-o+N:o   ACRO_OO  ;
-O+N:O   ACRO_OO  ;
-oyj+N:oyj   ACRO_II  ;  !!= * {{@CODE@}} Julkinen Osake-Yhtiö (!)
-OY+N:OY   ACRO_YY  ;    !!= * {{@CODE@}} Osake-Yhtiö
-oy+N:oy   ACRO_YY  ;    !!= * {{@CODE@}} Osake-Yhtiö
-paneeli-pc+N:paneeli-pc   ACRO_EE  ;    !!= * {{@CODE@}} Personal Computer
-PDF+N:PDF   ACRO_ÄKS  ; !!= * {{@CODE@}} Portable Document Format
-pH+N:pH   ACRO_OO  ;    !!= * {{@CODE@}} per Hydrogen
-pien-pc+N:pien-pc   ACRO_EE  ;  !!= * {{@CODE@}} Personal Computer
-pinta-WWW+N:pinta-WWW   ACRO_EE  ;  !!= * {{@CODE@}} World Wide Web
-PLO+N:PLO   ACRO_OO  ;  
-p+N:p   ACRO_EE  ;
-P+N:P   ACRO_EE  ;
-PPE-DE+N:PPE-DE   ACRO_EE  ;
-PPE+N:PPE   ACRO_EE  ;
-PPI+N:PPI   ACRO_II  ;  !!= * {{@CODE@}} Points Per Inch
-PP+N:PP   ACRO_EE  ;
-PR+N:PR   ACRO_ÄKS  ;   !!= * {{@CODE@}} Public Relations
-PSE+N:PSE   ACRO_EE  ;
-PT+N:PT   ACRO_EE  ;
-q+N:q   ACRO_UU  ;
-Q+N:Q   ACRO_UU  ;
-RAC+N:RAC   ACRO_EE  ;
-r+N:r   ACRO_ÄKS  ;
-R+N:R   ACRO_ÄKS  ;
-RNA+N:RNA   ACRO_AA ;   !!= * {{@CODE@}} Ribonucleic Acid
-RP+N:RP   ACRO_EE  ;
-RSS+N:RSS   ACRO_ÄKS  ; !!= * {{@CODE@}} R
-SAK+N:SAK   ACRO_OO  ;  !!= * {{@CODE@}} Suomen Ammattiliittojen Keskusjärjestö
-SAS+N:SAS   ACRO_ÄKS  ;
-SDP+N:SDP   ACRO_EE  ;  !!= * {{@CODE@}} Sosiali-Demokraattinen Puolue 
-SGML+N:SGML   ACRO_ÄKS  ;   !!= * {{@CODE@}} Standardised General Markup Language
-SKDL+N:SKDL   ACRO_ÄKS  ; !!= * {{@CODE@}} Suomen Kristillis-Demokraattien Liitto
-SKL+N:SKL   ACRO_ÄKS  ;
-SK+N:SK   ACRO_OO  ;
-Skp+N:Skp   ACRO_EE  ; !!= * {{@CODE@}} Suomen keskuspankki
-s+N:s   ACRO_ÄKS  ;
-S+N:S   ACRO_ÄKS  ;
-š+N:š   ACRO_ÄKS  ;
-Š+N:Š   ACRO_ÄKS  ;
-SOAP+N:SOAP   ACRO_EE  ;
-SOK+N:SOK   ACRO_OO  ;  !!= * {{@CODE@}} Suomen Osuus-Kauppa
-SPR+N:SPR   ACRO_ÄKS  ; !!= * {{@CODE@}} Suomen Punainen Risti
-SQL+N:SQL   ACRO_ÄKS  ; !!= * {{@CODE@}} Structured Query Language
-STTK+N:STTK   ACRO_OO  ;
-STT+N:STT   ACRO_EE  ;  !!= * {{@CODE@}} Suomen Tieto-Toimisto
-SUL+N:SUL   ACRO_ÄKS  ; !!= * {{@CODE@}} Suomen Urheilu-Liitto
-SV+N:SV   ACRO_EE  ;
-SVUL+N:SVUL   ACRO_ÄKS  ;
-TB+N:TB   ACRO_EE  ;
-TCP/IP+N:TCP/IP   ACRO_EE  ; !!= * {{@CODE@}} Transmission Control Protocol / Internet Protocol
-TCP+N:TCP   ACRO_EE  ;  !!= * {{@CODE@}} Transmission Control Protocol
-TI+N:TI   ACRO_II  ;    !!= * {{@CODE@}} Texas Instruments
-TM+N:TM   ACRO_ÄKS  ;   !!= * {{@CODE@}} Tekniikan Maailma
-t+N:t   ACRO_EE  ;
-T+N:T   ACRO_EE  ;
-TPS+N:TPS   ACRO_ÄKS  ; !!= * {{@CODE@}} Turun Pallo-Seura
-TS+N:TS   ACRO_ÄKS  ;   !!= * {{@CODE@}} Turun Sanomat
-TTKK+N:TTKK   ACRO_OO  ;  
-tv+N:tv   ACRO_EE  ;    !!= * {{@CODE@}} tele-visio
-u+N:u   ACRO_UU  ;
-U+N:U   ACRO_UU  ;
-URL+N:URL   ACRO_ÄKS  ; !!= * {{@CODE@}} Uniform Resource Locator
-USA+N:USA   ACRO_AA  ;  !!= * {{@CODE@}} United States of America
-VIP+N:VIP   ACRO_EE  ;  !!= * {{@CODE@}} Very Important Person
-v+N:v   ACRO_EE  ;
-V+N:V   ACRO_EE  ;
-VPS+N:VPS   ACRO_ÄKS  ;
-VR+N:VR   ACRO_ÄKS  ;   !!= * {{@CODE@}} Valtion Rautatiet
-VTT+N:VTT   ACRO_EE  ;  !!= * {{@CODE@}} 
-VW+N:VW   ACRO_EE  ;    !!= * {{@CODE@}} Volks Wagen
-WAP+N:WAP   ACRO_EE  ;  !!= * {{@CODE@}} Wireles Application Protocol
-WC+N:WC   ACRO_EE  ;    !!= * {{@CODE@}} Water Closet
-WHO+N:WHO   ACRO_OO  ;  !!= * {{@CODE@}} World Health Organisation
+LEXICON  ACRONYM
+!!  The first classification for acronyms should be along the final letter, then
+!!  if the final word inflection is used, the class of that word.
+!!€gt-norm:  Acronyms
+!!€  OY:hyn: OY+N+Sg+Ill
+!!€  OY:öön  OY+N+Sg+Ill
+
+358+ACR+Prop+Sem%/Org:358  ACRO_KAHDEKSAN  ;
+3% Step% IT+ACR+Prop+Sem%/Org:3% Step% IT  ACRO_EE  ;
+4F+ACR+Prop+Sem%/Org:4F  ACRO_ÄKS  ;
+A%0+ACR:A0  ACRO_NOLLA  ;
+A1+ACR:A1  ACRO_YKSI  ;
+A2+ACR:A2  ACRO_KAKSI  ;
+A3+ACR:A3  ACRO_KOLME  ;
+A4+ACR:A4  ACRO_NELJÄ  ;
+A5+ACR:A5  ACRO_VIISI  ;
+aA+ACR:aA  ACRO_AA  ;
+AA+ACR:AA  ACRO_AA  ;
+aA+ACR:aA  ACRO_DOLLARI  ;
+AA+ACR:AA  ACRO_OHMI  ;
+a+ACR:a  ACRO_AA  ;
+$A+ACR:$A  ACRO_AA  ;
+A+ACR:A  ACRO_AA  ;
+$A+ACR:$A  ACRO_DOLLARI  ;
+A+ACR:A  ACRO_DOLLARI  ;
+a+ACR:a  ACRO_OHMI  ;
+AAL+ACR+Prop+Sem%/Org:AAL  ACRO_ÄKS  ;
+AAP+ACR+Prop+Sem%/Org:AAP  ACRO_EE  ;
+AAP+ACR+Prop+Sem%/Org:AAP  ACRO_OHMI  ;
+ab+ACR:ab  ACRO_DOLLARI  ;
+ab+ACR:ab  ACRO_EE  ;
+ABB+ACR+Prop+Sem%/Org:ABB  ACRO_EE  ;
+ABC+ACR+Prop+Sem%/Org:ABC  ACRO_EE  ;
+ABC+N:ABC  ACRO_EE  ; 
+ABN% AMRO+ACR+Prop+Sem%/Org:ABN% AMRO ACRO_OO  ;
+abp+ACR:abp  ACRO_EE  ;
+aBq+ACR:aBq  ACRO_OHMI  ;
+aBq+ACR:aBq  ACRO_UU  ;
+ABS+ACR:ABS  ACRO_ÄKS  ;
+a°C+ACR:a°C  ACRO_CELSIUS  ;
+a°C+ACR:a°C  ACRO_EE  ;
+aC+ACR:aC  ACRO_EE  ;
+AC+ACR:AC  ACRO_EE  ;
+aC+ACR:aC  ACRO_OHMI  ;
+acd+ACR:acd  ACRO_EE  ;
+acd+ACR:acd  ACRO_KANDELA  ;
+AC/DC+ACR+Prop+Sem/Human:AC/DC  ACRO_EE  ;
+±+ACR:±  ACRO_CELSIUS  ;
+−+ACR:−  ACRO_CELSIUS  ;
+$+ACR:$  ACRO_DOLLARI  ;
+€+ACR:€  ACRO_EURO  ;
+_+ACR:_  ACRO_GRAMMA  ;
+\+ACR:\  ACRO_GRAMMA  ;
+‰+ACR:‰  ACRO_JOULE  ;
+¥+ACR:¥  ACRO_METRI  ;
+§§+ACR:§§  ACRO_OHMI  ;
+%%%%+ACR:%% ACRO_OHMI  ;
+′+ACR:′  ACRO_OHMI  ;
+£+ACR:£  ACRO_PUNTA  ;
+₤+ACR:₤  ACRO_PUNTA  ;
+++ACR:+  ACRO_PUNTA  ;
+§+ACR:§  ACRO_PYKÄLÄ  ;
+×+ACR:×  ACRO_SENTTI  ;
+·+ACR:·  ACRO_SENTTI  ;
+®+ACR:®  ACRO_SENTTI  ;
+™+ACR:™  ACRO_SENTTI  ;
+@+ACR:@  ACRO_SENTTI  ;
+¤+ACR:¤  ACRO_SENTTI  ;
+¢+ACR:¢  ACRO_SENTTI  ;
+¥+ACR:¥  ACRO_SENTTI  ;
+*+ACR:*  ACRO_SENTTI  ;
+#+ACR:#  ACRO_SENTTI  ;
+€+ACR:€  ACRO_TALO  ;
+°+ACR:°  ACRO_TUOTE  ;
+©+ACR:©  ACRO_WEBER  ;
+$+ACR:$  ACRO_WEBER  ;
+ADAC+ACR+Prop+Sem%/Org:ADAC  ACRO_EE  ;
+ad+ACR:ad  ACRO_EE  ;
+ad+ACR:ad  ACRO_OHMI  ;
+adhd+ACR:adhd  ACRO_EE  ;
+adhd+ACR:adhd  ACRO_OHMI  ;
+ADP+ACR+Prop+Sem%/Org:ADP  ACRO_EE  ;
+ADSL+ACR:ADSL  ACRO_OHMI  ;
+ADSL+ACR:ADSL  ACRO_ÄKS  ;
+ADSL+N:ADSL  ACRO_ÄKS  ; !!= * {{@CODE@}} Asymmetric Digital Subscriber Line
+ADT+ACR:ADT  ACRO_EE  ;
+AdultTV+ACR+Prop+Sem%/Org:AdultTV  ACRO_EE  ;
+AED+ACR:AED  ACRO_EE  ;
+AEGEE+ACR+Prop+Sem%/Org:AEGEE  ACRO_EE  ;
+AEK+ACR+Prop+Sem%/Org:AEK  ACRO_OO  ;
+AFA+ACR:AFA  ACRO_AA  ;
+aF+ACR:aF  ACRO_OHMI  ;
+aF+ACR:aF  ACRO_ÄKS  ;
+Af+ACR:Af  ACRO_ÄKS  ;
+AFN+ACR:AFN  ACRO_ÄKS  ;
+AFP+ACR+Prop:AFP  ACRO_EE  ;
+AFP+ACR+Prop+Sem%/Org:AFP  ACRO_EE  ;
+AFS+ACR+Prop+Sem%/Org:AFS  ACRO_ÄKS  ;
+AFTA+ACR+Prop+Sem%/Org:AFTA  ACRO_AA  ;
+ag+ACR:ag  ACRO_EE  ;
+AG+ACR:AG  ACRO_EE  ;
+AGEA+ACR:AGEA  ACRO_AA  ;
+AGEA+ACR:AGEA  ACRO_SAIRAALA  ;
+aGy+ACR:aGy  ACRO_GRAY  ;
+aGy+ACR:aGy  ACRO_YY  ;
+aH+ACR:aH  ACRO_OHMI  ;
+aH+ACR:aH  ACRO_OO  ;
+Ah+ACR:Ah  ACRO_OO  ;
+AHKA+ACR+Prop+Sem%/Org:AHKA  ACRO_AA  ;
+aHz+ACR:aHz  ACRO_OHMI  ;
+aHz+ACR:aHz  ACRO_ZET  ;
+AIA+ACR+Prop+Sem%/Org:AIA  ACRO_AA  ;
+AICA+ACR+Prop+Sem%/Org:AICA  ACRO_AA  ;
+aids+ACR:aids  ACRO_ÄKS  ;
+AIECE+ACR+Prop+Sem%/Org:AIECE  ACRO_EE  ;
+AIESEC+ACR+Prop+Sem%/Org:AIESEC  ACRO_EE  ;
+AIG+ACR+Prop+Sem%/Org:AIG  ACRO_EE  ;
+Air1%0%0+ACR+Prop+Sem%/Org:Air100  ACRO_NOLLA  ;
+Airbnb+ACR+Prop+Sem%/Org:Airbnb  ACRO_EE  ;
+Air% France-KLM+ACR+Prop+Sem%/Org:Air% France-KLM ACRO_ÄKS  ;
+AIV+ACR:AIV  ACRO_EE  ;
+aJ+ACR:aJ  ACRO_II  ;
+aJ+ACR:aJ  ACRO_JOULE  ;
+aK+ACR:aK  ACRO_OHMI  ;
+aK+ACR:aK  ACRO_OO  ;
+akat+ACR:akat  ACRO_EE  ;
+akat+ACR:akat  ACRO_OHMI  ;
+AKAVA+ACR+Prop+Sem%/Org:AKAVA  ACRO_AA  ;
+AKE+ACR+Prop+Sem%/Org:AKE  ACRO_EE  ;
+AKL+ACR+Prop+Sem%/Org:AKL  ACRO_ÄKS  ;
+AKS+ACR+Prop+Sem%/Org:AKS  ACRO_ÄKS  ;
+AKT+ACR+Prop+Sem%/Org:AKT  ACRO_EE  ;
+AKT+N:AKT  ACRO_EE  ;    !!= * {{@CODE@}}
+AL+ACR:AL  ACRO_TALO  ;
+AL+ACR+Prop+Sem%/Org:AL  ACRO_LEHTI  ;
+AL+ACR+Prop+Sem%/Org:AL  ACRO_ÄKS  ;
+ALBA+ACR+Prop+Sem%/Org:ALBA  ACRO_AA  ;
+Aleksi% 13+ACR+Prop+Sem%/Org:Aleksi% 13   ACRO_KOLME  ;
+ALK+ACR:ALK  ACRO_OO  ;
+ALL+ACR:ALL  ACRO_ÄKS  ;
+alm+ACR:alm  ACRO_OHMI  ;
+alm+ACR:alm  ACRO_ÄKS  ;
+ALS+ACR:ALS  ACRO_ÄKS  ;
+alv+ACR:alv  ACRO_EE  ;
+alv+ACR:alv  ACRO_TALO  ;
+alx+ACR:alx  ACRO_OHMI  ;
+alx+ACR:alx  ACRO_ÄKS  ;
+am+ACR:am  ACRO_OHMI  ;
+am+ACR:am  ACRO_ÄKS  ;
+AM+ACR+Prop:AM  ACRO_ÄKS  ;
+AMD+ACR+Prop+Sem%/Org:AMD  ACRO_DOLLARI  ;
+AMD+ACR+Prop+Sem%/Org:AMD  ACRO_EE  ;
+amk+ACR:amk  ACRO_OO  ;
+amk+ACR:amk  ACRO_TALO  ;
+AM+N:AM  ACRO_ÄKS  ;
+amol+ACR:amol  ACRO_OHMI  ;
+amol+ACR:amol  ACRO_ÄKS  ;
+AMR+ACR+Prop+Sem%/Org:AMR  ACRO_ÄKS  ;
+a+N:a  ACRO_AA  ;
+A+N:A  ACRO_AA  ;
+aN+ACR:aN  ACRO_OHMI  ;
+aN+ACR:aN  ACRO_ÄKS  ;
+Analyse2+ACR+Prop+Sem%/Org:Analyse2  ACRO_KAKSI  ;
+ANC+ACR+Prop+Sem%/Org:ANC  ACRO_EE  ;
+ANG+ACR:ANG  ACRO_EE  ;
+ANP+ACR+Prop:ANP  ACRO_EE  ;
+ANP+ACR+Prop+Sem%/Org:ANP  ACRO_EE  ;
+ANSI+ACR+Prop+Sem%/Org:ANSI  ACRO_DOLLARI  ;
+ANSI+ACR+Prop+Sem%/Org:ANSI  ACRO_II  ;
+ANWR+ACR+Prop+Sem%/Org:ANWR  ACRO_ÄKS  ;
+AOA+ACR:AOA  ACRO_AA  ;
+AO+ACR:AO  ACRO_OO  ;
+AO+ACR:AO  ACRO_PUNTA  ;
+AOK+ACR:AOK  ACRO_OO  ;
+AOL+ACR+Prop+Sem%/Org:AOL  ACRO_ÄKS  ;
+AON+ACR:AON  ACRO_ÄKS  ;
+AOR+ACR:AOR  ACRO_OHMI  ;
+AOR+ACR:AOR  ACRO_ÄKS  ;
+AOVA+ACR+Prop+Sem%/Org:AOVA  ACRO_AA  ;
+aPa+ACR:aPa  ACRO_AA  ;
+aPa+ACR:aPa  ACRO_OHMI  ;
+AP+ACR+Prop:AP  ACRO_EE  ;
+AP+ACR+Prop+Sem%/Org:AP  ACRO_EE  ;
+APEC+ACR+Prop+Sem%/Org:APEC  ACRO_EE  ;
+API+ACR:API  ACRO_II  ;
+API+ACR:API  ACRO_OHMI  ;
+API+N:API  ACRO_II  ;    !!= * {{@CODE@}} Application Programming Interface
+ARA+ACR+Prop+Sem%/Org:ARA  ACRO_AA  ;
+arad+ACR:arad  ACRO_DOLLARI  ;
+arad+ACR:arad  ACRO_EE  ;
+ARENE+ACR+Prop+Sem%/Org:ARENE  ACRO_EE  ;
+Arg$+ACR:Arg$  ACRO_DOLLARI  ;
+ark+ACR:ark  ACRO_OO  ;
+ARK+ACR+Prop+Sem%/Org:ARK  ACRO_OO  ;
+ARL+ACR:ARL  ACRO_ÄKS  ;
+ARM+ACR+Prop+Sem%/Org:ARM  ACRO_ÄKS  ;
+ARP+ACR:ARP  ACRO_EE  ;
+ARS+ACR:ARS  ACRO_ÄKS  ;
+ASA+ACR:ASA  ACRO_AA  ;
+as+ACR:as  ACRO_OHMI  ;
+aS+ACR:aS  ACRO_OHMI  ;
+as+ACR:as  ACRO_ÄKS  ;
+aS+ACR:aS  ACRO_ÄKS  ;
+A/S+ACR:A/S  ACRO_ÄKS  ;
+AS+ACR:AS  ACRO_ÄKS  ;
+ascii+ACR:ascii  ACRO_II  ;
+ascii+ACR:ascii  ACRO_OHMI  ;
+ASEAN+3+ACR+Prop+Sem%/Org:ASEAN+3  ACRO_KOLME  ;
+ASEAN+ACR+Prop+Sem%/Org:ASEAN  ACRO_ÄKS  ;
+ASEM+ACR+Prop+Sem%/Org:ASEM  ACRO_ÄKS  ;
+as.oy+ACR:as.oy  ACRO_GRAY  ;
+as.oy+ACR:as.oy  ACRO_YY  ;
+AsOYL+ACR:AsOYL  ACRO_OHMI  ;
+AsOYL+ACR:AsOYL  ACRO_ÄKS  ;
+ASP+ACR:ASP  ACRO_EE  ;
+asr+ACR:asr  ACRO_DOLLARI  ;
+asr+ACR:asr  ACRO_ÄKS  ;
+aSv+ACR:aSv  ACRO_EE  ;
+aSv+ACR:aSv  ACRO_OHMI  ;
+ASX+ACR+Prop+Sem%/Org:ASX  ACRO_ÄKS  ;
+aT+ACR:aT  ACRO_EE  ;
+aT+ACR:aT  ACRO_GRAMMA  ;
+A&T+ACR+Prop+Sem%/Org:A&T  ACRO_EE  ;
+atk+ACR:atk  ACRO_JÄRJESTÖ  ;
+atk+ACR:atk  ACRO_OO  ;
+atk+ACR:atk  ACRO_TALO  ;
+atk+N:atk  ACRO_OO  ;    !!= * {{@CODE@}} automaattinen tekstinkäsittely
+ATL+ACR+Prop+Sem%/Org:ATL  ACRO_ÄKS  ;
+atm+ACR:atm  ACRO_ÄKS  ;
+ATS+ACR:ATS  ACRO_ÄKS  ;
+ATTAC+ACR+Prop+Sem%/Org:ATTAC  ACRO_EE  ;
+AT&T+ACR+Prop+Sem%/Org:AT&T  ACRO_EE  ;
+AU$+ACR:AU$  ACRO_DOLLARI  ;
+AU+ACR+Prop+Sem%/Org:AU  ACRO_UU  ;
+AUD+ACR:AUD  ACRO_DOLLARI  ;
+AUD+ACR:AUD  ACRO_EE  ;
+AUK+ACR:AUK  ACRO_OHMI  ;
+AUK+ACR:AUK  ACRO_OO  ;
+av+ACR:av  ACRO_EE  ;
+aV+ACR:aV  ACRO_EE  ;
+av+ACR:av  ACRO_JÄRJESTÖ  ;
+aV+ACR:aV  ACRO_OHMI  ;
+AVEA+ACR+Prop+Sem%/Org:AVEA  ACRO_AA  ;
+AVI+ACR:AVI  ACRO_II  ;
+aW+ACR:aW  ACRO_EE  ;
+aW+ACR:aW  ACRO_OHMI  ;
+aWb+ACR:aWb  ACRO_EE  ;
+aWb+ACR:aWb  ACRO_WEBER  ;
+AWG+ACR:AWG  ACRO_EE  ;
+ay+ACR:ay  ACRO_YHDISTYS  ;
+ay+ACR:ay  ACRO_YY  ;
+AYO+ACR+Prop+Sem%/Org:AYO  ACRO_OO  ;
+AZM+ACR:AZM  ACRO_ÄKS  ;
+AZN+ACR:AZN  ACRO_ÄKS  ;
+aΩ+ACR:aΩ  ACRO_OHMI  ;
+B9+ACR+Prop+Sem%/Org:B9  ACRO_YHDEKSÄN  ;
+BAA+ACR+Prop+Sem%/Org:BAA  ACRO_AA  ;
+BA+ACR:BA  ACRO_AA  ;
+b+ACR:b  ACRO_EE  ;
+B+ACR:B  ACRO_EE  ;
+B+ACR:B  ACRO_METRI  ;
+BAD+ACR:BAD  ACRO_EE  ;
+BAE+ACR+Prop+Sem%/Org:BAE  ACRO_EE  ;
+BAIC+ACR+Prop+Sem%/Org:BAIC  ACRO_EE  ;
+BAM+ACR:BAM  ACRO_ÄKS  ;
+BAN+ACR:BAN  ACRO_ÄKS  ;
+Banco% BPI+ACR+Prop+Sem%/Org:Banco% BPI   ACRO_II  ;
+Bank% Zadhodni% WBK+ACR+Prop+Sem%/Org:Bank% Zadhodni% WBK  ACRO_OO  ;
+BASF+ACR+Prop+Sem%/Org:BASF  ACRO_ÄKS  ;
+BATS+ACR+Prop+Sem%/Org:BATS  ACRO_ÄKS  ;
+BayernLB+ACR+Prop+Sem%/Org:BayernLB  ACRO_EE  ;
+B&B+ACR:B&B  ACRO_EE  ;
+B% &% B+ACR:B% &% B  ACRO_EE  ;
+B&B+ACR:B&B  ACRO_WEBER  ;
+BBC+ACR+Prop+Sem%/Org:BBC  ACRO_EE  ;
+BBC+ACR+Prop+Sem%/Org:BBC  ACRO_WEBER  ;
+BBC+N:BBC  ACRO_EE  ;    !!= * {{@CODE@}} British Broadcasting Company
+BBD+ACR:BBD  ACRO_EE  ;
+BB&T+ACR+Prop+Sem%/Org:BB&T  ACRO_EE  ;
+BBVA+ACR+Prop+Sem%/Org:BBVA  ACRO_AA  ;
+BD+ACR:BD  ACRO_EE  ;
+BD+ACR:BD  ACRO_METRI  ;
+BDS$+ACR:BDS$  ACRO_DOLLARI  ;
+BDS$+ACR:BDS$  ACRO_WEBER  ;
+BDT+ACR:BDT  ACRO_EE  ;
+BEA+ACR:BEA  ACRO_AA  ;
+BEA+ACR:BEA  ACRO_GRAMMA  ;
+Be+ACR:Be  ACRO_EE  ;
+BE+ACR+Prop+Sem%/Org:BE  ACRO_EE  ;
+BEC+ACR:BEC  ACRO_EE  ;
+BEF+ACR:BEF  ACRO_ÄKS  ;
+BEL+ACR:BEL  ACRO_ÄKS  ;
+Ber$+ACR:Ber$  ACRO_DOLLARI  ;
+Ber$+ACR:Ber$  ACRO_WEBER  ;
+BF+ACR:BF  ACRO_ÄKS  ;
+BGL+ACR:BGL  ACRO_ÄKS  ;
+BGM+ACR:BGM  ACRO_ÄKS  ;
+BGN+ACR:BGN  ACRO_ÄKS  ;
+BGO+ACR:BGO  ACRO_OO  ;
+BHD+ACR:BHD  ACRO_EE  ;
+BHP+ACR+Prop+Sem%/Org:BHP  ACRO_EE  ;
+BIF+ACR:BIF  ACRO_ÄKS  ;
+BIS+ACR+Prop+Sem%/Org:BIS  ACRO_ÄKS  ;
+BKK+ACR+Prop+Sem%/Org:BKK  ACRO_OO  ;
+bkt+ACR:bkt  ACRO_EE  ;
+BKT+ACR:BKT  ACRO_EE  ;
+bkt+ACR:bkt  ACRO_TUOTE  ;
+BKT+ACR:BKT  ACRO_TUOTE  ;
+bktl+ACR:bktl  ACRO_ÄKS  ;
+BKT+N:BKT  ACRO_EE  ;    !!= * {{@CODE@}} Brutto-Kansan-Tuote
+Blue1+ACR+Prop+Sem%/Org:Blue1  ACRO_YKSI  ;
+BMD+ACR:BMD  ACRO_EE  ;
+BMI+ACR+Prop+Sem%/Org:BMI  ACRO_II  ;
+BMW+ACR+Prop+Sem%/Org:BMW  ACRO_EE  ;
+BMWi+ACR+Prop+Sem%/Org:BMWi  ACRO_II  ;
+BMW+N:BMW  ACRO_EE  ;    !!= * {{@CODE@}} Bayerische Motor W
+b+N:b  ACRO_EE  ;
+B+N:B  ACRO_EE  ;
+BND+ACR:BND  ACRO_EE  ;
+BOA+ACR+Prop+Sem%/Org:BOA  ACRO_AA  ;
+BOB+ACR:BOB  ACRO_EE  ;
+B.o.B+ACR+Prop+Sem/Human:B.o.B  ACRO_EE  ;
+BOJ+ACR+Prop+Sem%/Org:BOJ  ACRO_II  ;
+BOL+ACR:BOL  ACRO_ÄKS  ;
+BOP+ACR:BOP  ACRO_EE  ;
+BOV+ACR:BOV  ACRO_EE  ;
+BP+ACR+Prop+Sem%/Org:BP  ACRO_EE  ;
+Bq+ACR:Bq  ACRO_UU  ;
+Bq+ACR:Bq  ACRO_WEBER  ;
+Br+ACR:Br  ACRO_ÄKS  ;
+BRB+ACR:BRB  ACRO_EE  ;
+BRC+ACR:BRC  ACRO_EE  ;
+BRE+ACR:BRE  ACRO_EE  ;
+BRL+ACR:BRL  ACRO_ÄKS  ;
+BRN+ACR:BRN  ACRO_ÄKS  ;
+BRR+ACR:BRR  ACRO_ÄKS  ;
+brt+ACR:brt  ACRO_EE  ;
+BRZ+ACR:BRZ  ACRO_ZET  ;
+Bs+ACR:Bs  ACRO_ÄKS  ;
+BSc+ACR:BSc  ACRO_EE  ;
+BSc+ACR:BSc  ACRO_METRI  ;
+BSD+ACR:BSD  ACRO_EE  ;
+BSE+ACR:BSE  ACRO_EE  ;
+BSE+N:BSE  ACRO_EE  ;    !!= * {{@CODE@}} 
+BSkyB+ACR+Prop+Sem%/Org:BSkyB  ACRO_EE  ;
+BT+ACR+Prop+Sem%/Org:BT  ACRO_EE  ;
+BTIG+ACR+Prop+Sem%/Org:BTIG  ACRO_EE  ;
+BTN+ACR:BTN  ACRO_ÄKS  ;
+BUK+ACR:BUK  ACRO_OO  ;
+Bureau% ICE+ACR+Prop+Sem%/Org:Bureau% ICE ACRO_EE  ;
+BWP+ACR:BWP  ACRO_EE  ;
+BYB+ACR:BYB  ACRO_EE  ;
+BYD+ACR+Prop+Sem%/Org:BYD  ACRO_EE  ;
+BYR+ACR:BYR  ACRO_ÄKS  ;
+BZA+ACR+Prop+Sem%/Org:BZA  ACRO_AA  ;
+BZ$+ACR:BZ$  ACRO_DOLLARI  ;
+BZ$+ACR:BZ$  ACRO_WEBER  ;
+BZD+ACR:BZD  ACRO_EE  ;
+cA+ACR:cA  ACRO_AA  ;
+cA+ACR:cA  ACRO_DOLLARI  ;
+CA$+ACR:CA$  ACRO_DOLLARI  ;
+C&A+ACR+Prop+Sem%/Org:C&A  ACRO_AA  ;
+c+ACR:c  ACRO_EE  ;
+£C+ACR:£C  ACRO_EE  ;
+C+ACR:C  ACRO_EE  ;
+c+ACR:c  ACRO_METRI  ;
+£C+ACR:£C  ACRO_PUNTA  ;
+CAD+ACR:CAD  ACRO_EE  ;
+CAF+ACR+Prop+Sem%/Org:CAF  ACRO_ÄKS  ;
+cal+ACR:cal  ACRO_DOLLARI  ;
+cal+ACR:cal  ACRO_ÄKS  ;
+Call99577+ACR:Call99577  ACRO_SEITSEMÄN  ;
+CAM+ACR:CAM  ACRO_ÄKS  ;
+Can$+ACR:Can$  ACRO_DOLLARI  ;
+Canal++ACR+Prop+Sem%/Org:Canal+  ACRO_PUNTA  ;
+Carl’s% Jr+ACR+Prop+Sem%/Org:Carl’s% Jr   ACRO_ÄKS  ;
+CAT+ACR:CAT  ACRO_EE  ;
+cBq+ACR:cBq  ACRO_METRI  ;
+cBq+ACR:cBq  ACRO_UU  ;
+CBS+ACR+Prop+Sem%/Org:CBS  ACRO_ÄKS  ;
+c°C+ACR:c°C  ACRO_CELSIUS  ;
+cc+ACR:cc  ACRO_EE  ;
+c°C+ACR:c°C  ACRO_EE  ;
+cC+ACR:cC  ACRO_EE  ;
+cc+ACR:cc  ACRO_GRAMMA  ;
+cC+ACR:cC  ACRO_METRI  ;
+CCCP+ACR+Prop+Sem%/Geo:CCCP  ACRO_EE  ;
+ccd+ACR:ccd  ACRO_EE  ;
+ccd+ACR:ccd  ACRO_KANDELA  ;
+cd+ACR:cd  ACRO_EE  ;
+CD+ACR:CD  ACRO_EE  ;
+cd+ACR:cd  ACRO_KANDELA  ;
+CD+ACR:CD  ACRO_METRI  ;
+CDF+ACR:CDF  ACRO_ÄKS  ;
+cdma+ACR:cdma  ACRO_AA  ;
+cd+N:cd  ACRO_EE  ;      !!= * {{@CODE@}} compact disc
+CD+N:CD  ACRO_ÄKS  ;     !!= * {{@CODE@}} Compact Disc
+CD-R+ACR:CD-R  ACRO_JOULE  ;
+CD-R+ACR:CD-R  ACRO_ÄKS  ;
+CD-R+N:CD-R  ACRO_ÄKS  ; !!= * {{@CODE@}} Compact Disc Read-Only
+CD-ROM+ACR:CD-ROM  ACRO_DOLLARI  ;
+CD-ROM+ACR:CD-ROM  ACRO_ÄKS  ;
+CD-RW+ACR:CD-RW  ACRO_EE  ;
+CD-RW+ACR:CD-RW  ACRO_JOULE  ;
+CD-RW+N:CD-RW  ACRO_EE  ;!!= * {{@CODE@}} Compact Disc Read-Write
+CEA+ACR:CEA  ACRO_AA  ;
+CE+ACR:CE  ACRO_EE  ;
+CECA+ACR+Prop+Sem%/Org:CECA  ACRO_AA  ;
+CECA+ACR+Prop+Sem%/Org:CECA  ACRO_GRAMMA  ;
+CEFTA+ACR+Prop+Sem%/Org:CEFTA  ACRO_AA  ;
+CEN+ACR+Prop+Sem%/Org:CEN  ACRO_ÄKS  ;
+CENTO+ACR+Prop+Sem%/Org:CENTO  ACRO_OO  ;
+CEP+ACR+Prop+Sem%/Org:CEP  ACRO_EE  ;
+CEPS+ACR+Prop+Sem%/Org:CEPS  ACRO_ÄKS  ;
+CERN+ACR+Prop+Sem%/Org:CERN  ACRO_ÄKS  ;
+CEVA/EGL+ACR+Prop+Sem%/Org:CEVA/EGL  ACRO_ÄKS  ;
+cF+ACR:cF  ACRO_METRI  ;
+cF+ACR:cF  ACRO_ÄKS  ;
+CF+ACR:CF  ACRO_ÄKS  ;
+CFPF+ACR:CFPF  ACRO_ÄKS  ;
+cg+ACR:cg  ACRO_EE  ;
+cg+ACR:cg  ACRO_GRAMMA  ;
+CGI+ACR+Prop+Sem%/Org:CGI  ACRO_II  ;
+cGy+ACR:cGy  ACRO_GRAY  ;
+cGy+ACR:cGy  ACRO_YY  ;
+Ch$+ACR:Ch$  ACRO_DOLLARI  ;
+cH+ACR:cH  ACRO_METRI  ;
+cH+ACR:cH  ACRO_OO  ;
+Ch$+ACR:Ch$  ACRO_WEBER  ;
+CHE+ACR:CHE  ACRO_EE  ;
+CHF+ACR:CHF  ACRO_ÄKS  ;
+CHW+ACR:CHW  ACRO_EE  ;
+cHz+ACR:cHz  ACRO_METRI  ;
+cHz+ACR:cHz  ACRO_ZET  ;
+CIA+ACR+Prop+Sem%/Org:CIA  ACRO_AA  ;
+CIA+ACR+Prop+Sem%/Org:CIA  ACRO_OHMI  ;
+CIA+N:CIA  ACRO_AA  ;    !!= * {{@CODE@}} Central Intelligence Agency
+CICA+ACR+Prop+Sem%/Org:CICA  ACRO_AA  ;
+CIE+ACR+Prop+Sem%/Org:CIE  ACRO_EE  ;
+CIHEC+ACR+Prop+Sem%/Org:CIHEC  ACRO_EE  ;
+CIMO+ACR+Prop+Sem%/Org:CIMO  ACRO_OO  ;
+CINT+ACR+Prop+Sem%/Org:CINT  ACRO_EE  ;
+CIOFF+ACR+Prop+Sem%/Org:CIOFF  ACRO_ÄKS  ;
+CIPD+ACR+Prop+Sem%/Org:CIPD  ACRO_EE  ;
+CISV+ACR+Prop+Sem%/Org:CISV  ACRO_EE  ;
+CIT+ACR+Prop+Sem%/Org:CIT  ACRO_EE  ;
+cJ+ACR:cJ  ACRO_II  ;
+cJ+ACR:cJ  ACRO_JOULE  ;
+cK+ACR:cK  ACRO_METRI  ;
+cK+ACR:cK  ACRO_OO  ;
+ckat+ACR:ckat  ACRO_EE  ;
+ckat+ACR:ckat  ACRO_OHMI  ;
+cl+ACR:cl  ACRO_GRAMMA  ;
+Cl+ACR:Cl  ACRO_METRI  ;
+cl+ACR:cl  ACRO_ÄKS  ;
+Cl+ACR:Cl  ACRO_ÄKS  ;
+CLE+ACR:CLE  ACRO_EE  ;
+CLF+ACR:CLF  ACRO_ÄKS  ;
+clm+ACR:clm  ACRO_METRI  ;
+clm+ACR:clm  ACRO_ÄKS  ;
+CLP+ACR:CLP  ACRO_EE  ;
+clx+ACR:clx  ACRO_METRI  ;
+clx+ACR:clx  ACRO_ÄKS  ;
+CMA% CGM+ACR+Prop+Sem%/Org:CMA% CGM   ACRO_ÄKS  ;
+cm+ACR:cm  ACRO_METRI  ;
+cm+ACR:cm  ACRO_ÄKS  ;
+cmol+ACR:cmol  ACRO_OHMI  ;
+cmol+ACR:cmol  ACRO_ÄKS  ;
+cN+ACR:cN  ACRO_METRI  ;
+cN+ACR:cN  ACRO_ÄKS  ;
+CN+ACR:CN  ACRO_ÄKS  ;
+CNBC+ACR+Prop+Sem%/Org:CNBC  ACRO_EE  ;
+c+N:c  ACRO_EE  ;
+C+N:C  ACRO_EE  ;
+CNN+ACR+Prop:CNN  ACRO_ÄKS  ;
+CNN+ACR+Prop+Sem%/Org:CNN  ACRO_ÄKS  ;
+CNPC+ACR+Prop+Sem%/Org:CNPC  ACRO_EE  ;
+CNS+ACR:CNS  ACRO_ÄKS  ;
+CNS+N:CNS  ACRO_ÄKS  ;
+CNX+ACR:CNX  ACRO_ÄKS  ;
+CNY+ACR:CNY  ACRO_YY  ;
+Co+ACR:Co  ACRO_DOLLARI  ;
+Co+ACR:Co  ACRO_OO  ;
+CO+ACR:CO  ACRO_OO  ;
+COD+ACR:COD  ACRO_EE  ;
+COD+N:COD  ACRO_ÄKS  ;
+Col$+ACR:Col$  ACRO_DOLLARI  ;
+Commerce% Guys% S.A.S+ACR+Prop+Sem%/Org:Commerce% Guys% S.A.S  ACRO_ÄKS  ;
+COMP+ACR:COMP  ACRO_EE  ;
+COP+ACR:COP  ACRO_EE  ;
+Corp+ACR:Corp  ACRO_DOLLARI  ;
+Corp+ACR:Corp  ACRO_EE  ;
+COU+ACR:COU  ACRO_UU  ;
+cPa+ACR:cPa  ACRO_AA  ;
+cPa+ACR:cPa  ACRO_DOLLARI  ;
+cp+ACR:cp  ACRO_EE  ;
+CPM+ACR+Prop+Sem%/Org:CPM  ACRO_ÄKS  ;
+CPW+ACR+Prop+Sem%/Org:CPW  ACRO_EE  ;
+CRA+ACR+Prop+Sem%/Org:CRA  ACRO_AA  ;
+CR+ACR:CR  ACRO_ÄKS  ;
+crad+ACR:crad  ACRO_DOLLARI  ;
+crad+ACR:crad  ACRO_EE  ;
+CRC+ACR:CRC  ACRO_EE  ;
+CRC+ACR:CRC  ACRO_METRI  ;
+CRH+ACR+Prop+Sem%/Org:CRH  ACRO_OO  ;
+CSA+ACR+Prop+Sem%/Org:CSA  ACRO_AA  ;
+cs+ACR:cs  ACRO_METRI  ;
+cS+ACR:cS  ACRO_METRI  ;
+cs+ACR:cs  ACRO_ÄKS  ;
+cS+ACR:cS  ACRO_ÄKS  ;
+CSD+ACR:CSD  ACRO_EE  ;
+CSK+ACR:CSK  ACRO_OO  ;
+csr+ACR:csr  ACRO_WEBER  ;
+csr+ACR:csr  ACRO_ÄKS  ;
+CSR+ACR+Prop+Sem%/Org:CSR  ACRO_ÄKS  ;
+cSv+ACR:cSv  ACRO_EE  ;
+cSv+ACR:cSv  ACRO_METRI  ;
+cT+ACR:cT  ACRO_EE  ;
+CT+ACR:CT  ACRO_EE  ;
+cT+ACR:cT  ACRO_GRAMMA  ;
+CT+ACR:CT  ACRO_GRAMMA  ;
+CTIA+ACR+Prop+Sem%/Org:CTIA  ACRO_AA  ;
+Cu+ACR:Cu  ACRO_UU  ;
+CUC+ACR:CUC  ACRO_EE  ;
+CUP+ACR:CUP  ACRO_EE  ;
+cv+ACR:cv  ACRO_EE  ;
+cV+ACR:cV  ACRO_EE  ;
+CV+ACR:CV  ACRO_EE  ;
+cv+ACR:cv  ACRO_GRAY  ;
+CV+ACR:CV  ACRO_GRAY  ;
+cV+ACR:cV  ACRO_OHMI  ;
+CVE+ACR:CVE  ACRO_EE  ;
+CVEsc+ACR:CVEsc  ACRO_EE  ;
+cW+ACR:cW  ACRO_EE  ;
+cW+ACR:cW  ACRO_OHMI  ;
+cWb+ACR:cWb  ACRO_EE  ;
+cWb+ACR:cWb  ACRO_WEBER  ;
+CYP+ACR:CYP  ACRO_EE  ;
+CZ+ACR:CZ  ACRO_ZET  ;
+CZK+ACR:CZK  ACRO_OO  ;
+cΩ+ACR:cΩ  ACRO_METRI  ;
+cΩ+ACR:cΩ  ACRO_OHMI  ;
+daA+ACR:daA  ACRO_AA  ;
+daA+ACR:daA  ACRO_DOLLARI  ;
+dA+ACR:dA  ACRO_AA  ;
+DA+ACR:DA  ACRO_AA  ;
+dA+ACR:dA  ACRO_DOLLARI  ;
+DA+ACR:DA  ACRO_DOLLARI  ;
+DAB+ACR:DAB  ACRO_EE  ;
+daBq+ACR:daBq  ACRO_OHMI  ;
+daBq+ACR:daBq  ACRO_UU  ;
+da°C+ACR:da°C  ACRO_CELSIUS  ;
+da°C+ACR:da°C  ACRO_EE  ;
+daC+ACR:daC  ACRO_EE  ;
+daC+ACR:daC  ACRO_OHMI  ;
+dacd+ACR:dacd  ACRO_EE  ;
+dacd+ACR:dacd  ACRO_KANDELA  ;
+d+ACR:d  ACRO_EE  ;
+daF+ACR:daF  ACRO_OHMI  ;
+daF+ACR:daF  ACRO_ÄKS  ;
+dag+ACR:dag  ACRO_EE  ;
+dag+ACR:dag  ACRO_GRAMMA  ;
+daGy+ACR:daGy  ACRO_GRAY  ;
+daGy+ACR:daGy  ACRO_YY  ;
+daH+ACR:daH  ACRO_OHMI  ;
+daH+ACR:daH  ACRO_OO  ;
+daHz+ACR:daHz  ACRO_OHMI  ;
+daHz+ACR:daHz  ACRO_ZET  ;
+daJ+ACR:daJ  ACRO_II  ;
+daJ+ACR:daJ  ACRO_JOULE  ;
+daK+ACR:daK  ACRO_OHMI  ;
+daK+ACR:daK  ACRO_OO  ;
+dakat+ACR:dakat  ACRO_EE  ;
+dakat+ACR:dakat  ACRO_OHMI  ;
+dalm+ACR:dalm  ACRO_OHMI  ;
+dalm+ACR:dalm  ACRO_ÄKS  ;
+dalx+ACR:dalx  ACRO_OHMI  ;
+dalx+ACR:dalx  ACRO_ÄKS  ;
+DAMA+ACR+Prop+Sem%/Org:DAMA  ACRO_AA  ;
+dam+ACR:dam  ACRO_OHMI  ;
+dam+ACR:dam  ACRO_ÄKS  ;
+damol+ACR:damol  ACRO_OHMI  ;
+damol+ACR:damol  ACRO_ÄKS  ;
+daN+ACR:daN  ACRO_OHMI  ;
+daN+ACR:daN  ACRO_ÄKS  ;
+Daniel% Stewart% &% Co+ACR+Prop+Sem%/Org:Daniel% Stewart% &% Co ACRO_OO  ;
+daPa+ACR:daPa  ACRO_AA  ;
+daPa+ACR:daPa  ACRO_DOLLARI  ;
+darad+ACR:darad  ACRO_DOLLARI  ;
+darad+ACR:darad  ACRO_EE  ;
+das+ACR:das  ACRO_OHMI  ;
+daS+ACR:daS  ACRO_OHMI  ;
+das+ACR:das  ACRO_ÄKS  ;
+daS+ACR:daS  ACRO_ÄKS  ;
+dasr+ACR:dasr  ACRO_DOLLARI  ;
+dasr+ACR:dasr  ACRO_ÄKS  ;
+daSv+ACR:daSv  ACRO_EE  ;
+daSv+ACR:daSv  ACRO_OHMI  ;
+daT+ACR:daT  ACRO_EE  ;
+daT+ACR:daT  ACRO_GRAMMA  ;
+DAT+ACR+Prop+Sem%/Org:DAT  ACRO_EE  ;
+daV+ACR:daV  ACRO_EE  ;
+daV+ACR:daV  ACRO_OHMI  ;
+daW+ACR:daW  ACRO_EE  ;
+daW+ACR:daW  ACRO_OHMI  ;
+daWb+ACR:daWb  ACRO_EE  ;
+daWb+ACR:daWb  ACRO_WEBER  ;
+daΩ+ACR:daΩ  ACRO_OHMI  ;
+dB+ACR:dB  ACRO_EE  ;
+Db+ACR:Db  ACRO_EE  ;
+dB+ACR:dB  ACRO_METRI  ;
+Db+ACR:Db  ACRO_METRI  ;
+dBq+ACR:dBq  ACRO_METRI  ;
+dBq+ACR:dBq  ACRO_UU  ;
+DBRS+ACR+Prop+Sem%/Org:DBRS  ACRO_ÄKS  ;
+d°C+ACR:d°C  ACRO_CELSIUS  ;
+d°C+ACR:d°C  ACRO_EE  ;
+dC+ACR:dC  ACRO_EE  ;
+DC+ACR:DC  ACRO_EE  ;
+dC+ACR:dC  ACRO_METRI  ;
+dcd+ACR:dcd  ACRO_EE  ;
+dcd+ACR:dcd  ACRO_KANDELA  ;
+DDB+ACR+Prop+Sem%/Org:DDB  ACRO_EE  ;
+DDM+ACR:DDM  ACRO_ÄKS  ;
+DDR+ACR+Prop+Sem%/Geo:DDR  ACRO_ÄKS  ;
+DDR+N:DDR  ACRO_ÄKS  ;   !!= * {{@CODE@}} Deutsches Democratische Republic
+DDT+ACR:DDT  ACRO_EE  ;
+DE+ACR:DE  ACRO_EE  ;
+DEM+ACR:DEM  ACRO_ÄKS  ;
+den+ACR:den  ACRO_WEBER  ;
+den+ACR:den  ACRO_ÄKS  ;
+DE+N:DE  ACRO_EE  ;      !!= * {{@CODE@}} 
+dF+ACR:dF  ACRO_METRI  ;
+dF+ACR:dF  ACRO_ÄKS  ;
+DF+ACR:DF  ACRO_ÄKS  ;
+DFI+ACR:DFI  ACRO_II  ;
+DFI+N:DFI  ACRO_II  ;    !!= * {{@CODE@}}
+dg+ACR:dg  ACRO_EE  ;
+dg+ACR:dg  ACRO_GRAMMA  ;
+DGB+ACR+Prop+Sem%/Org:DGB  ACRO_EE  ;
+dGy+ACR:dGy  ACRO_GRAY  ;
+dGy+ACR:dGy  ACRO_YY  ;
+dH+ACR:dH  ACRO_METRI  ;
+dH+ACR:dH  ACRO_OO  ;
+DHL+ACR+Prop+Sem%/Org:DHL  ACRO_ÄKS  ;
+dHz+ACR:dHz  ACRO_METRI  ;
+dHz+ACR:dHz  ACRO_ZET  ;
+DI+ACR:DI  ACRO_II  ;
+DI+ACR:DI  ACRO_METRI  ;
+DIN+ACR+Prop+Sem%/Org:DIN  ACRO_ÄKS  ;
+dj+ACR:dj  ACRO_II  ;
+dJ+ACR:dJ  ACRO_II  ;
+dJ+ACR:dJ  ACRO_JOULE  ;
+DJF+ACR:DJF  ACRO_ÄKS  ;
+DJ+N:DJ  ACRO_II  ;   !!= * {{@CODE@}} Disc Jockey
+dK+ACR:dK  ACRO_METRI  ;
+dK+ACR:dK  ACRO_OO  ;
+DK+ACR:DK  ACRO_OO  ;
+dkat+ACR:dkat  ACRO_EE  ;
+dkat+ACR:dkat  ACRO_OHMI  ;
+DKK+ACR:DKK  ACRO_OO  ;
+DKr+ACR:DKr  ACRO_ÄKS  ;
+DLA+ACR+Prop+Sem%/Org:DLA  ACRO_AA  ;
+dl+ACR:dl  ACRO_GRAMMA  ;
+dl+ACR:dl  ACRO_ÄKS  ;
+dlm+ACR:dlm  ACRO_METRI  ;
+dlm+ACR:dlm  ACRO_ÄKS  ;
+dlx+ACR:dlx  ACRO_METRI  ;
+dlx+ACR:dlx  ACRO_ÄKS  ;
+DMA+ACR:DMA  ACRO_AA  ;
+dm+ACR:dm  ACRO_METRI  ;
+dm+ACR:dm  ACRO_ÄKS  ;
+dmol+ACR:dmol  ACRO_OHMI  ;
+dmol+ACR:dmol  ACRO_ÄKS  ;
+dna+ACR:dna  ACRO_AA  ;
+DNA+ACR+Prop+Sem%/Org:DNA  ACRO_AA  ;
+DNA+ACR+Prop+Sem%/Org:DNA  ACRO_OHMI  ;
+dN+ACR:dN  ACRO_METRI  ;
+dN+ACR:dN  ACRO_ÄKS  ;
+dna+N:dna  ACRO_AA  ;    !!= * {{@CODE@}} deoxyribonucleic acid
+DNA+N:DNA  ACRO_AA  ;    !!= * {{@CODE@}} Deoxyribo-Nucleic Acid
+DNB+ACR+Prop+Sem%/Org:DNB  ACRO_EE  ;
+DnB% NOR+ACR+Prop+Sem%/Org:DnB% NOR   ACRO_ÄKS  ;
+d+N:d  ACRO_EE  ;
+D+N:D  ACRO_ÄKS  ;
+do+ACR:do  ACRO_OO  ;
+DOP+ACR:DOP  ACRO_EE  ;
+DOS+ACR+Prop:DOS  ACRO_ÄKS  ;
+dPa+ACR:dPa  ACRO_AA  ;
+DPA+ACR:DPA  ACRO_AA  ;
+dPa+ACR:dPa  ACRO_DOLLARI  ;
+DPI+ACR:DPI  ACRO_II  ;
+DPI+ACR:DPI  ACRO_METRI  ;
+DPI+N:DPI  ACRO_II  ;    !!= * {{@CODE@}} Dots Per Inch
+drad+ACR:drad  ACRO_DOLLARI  ;
+drad+ACR:drad  ACRO_EE  ;
+DRAM+ACR:DRAM  ACRO_DOLLARI  ;
+DRAM+ACR:DRAM  ACRO_ÄKS  ;
+Dream% Works% SKG+ACR+Prop+Sem%/Org:Dream% Works% SKG  ACRO_EE  ;
+ds+ACR:ds  ACRO_METRI  ;
+dS+ACR:dS  ACRO_METRI  ;
+ds+ACR:ds  ACRO_ÄKS  ;
+dS+ACR:dS  ACRO_ÄKS  ;
+dsr+ACR:dsr  ACRO_WEBER  ;
+dsr+ACR:dsr  ACRO_ÄKS  ;
+dSv+ACR:dSv  ACRO_EE  ;
+dSv+ACR:dSv  ACRO_METRI  ;
+DSV% Air% &% Sea% SAS+ACR+Prop+Sem%/Org:DSV% Air% &% Sea% SAS    ACRO_ÄKS  ;
+dT+ACR:dT  ACRO_EE  ;
+dT+ACR:dT  ACRO_GRAMMA  ;
+DU+ACR:DU  ACRO_UU  ;
+dV+ACR:dV  ACRO_EE  ;
+dV+ACR:dV  ACRO_OHMI  ;
+dvd+ACR:dvd  ACRO_EE  ;
+DVD+ACR:DVD  ACRO_EE  ;
+dvd+ACR:dvd  ACRO_METRI  ;
+DVD+ACR:DVD  ACRO_METRI  ;
+DVD+N:DVD  ACRO_ÄKS  ;   !!= * {{@CODE@}} Digital Versatile Disc
+dW+ACR:dW  ACRO_EE  ;
+dW+ACR:dW  ACRO_OHMI  ;
+dWb+ACR:dWb  ACRO_EE  ;
+dWb+ACR:dWb  ACRO_WEBER  ;
+DZD+ACR:DZD  ACRO_EE  ;
+dΩ+ACR:dΩ  ACRO_METRI  ;
+dΩ+ACR:dΩ  ACRO_OHMI  ;
+EA+ACR+Prop+Sem%/Org:EA  ACRO_AA  ;
+EA+ACR+Prop+Sem%/Org:EA  ACRO_DOLLARI  ;
+e+ACR:e  ACRO_EE  ;
+E+ACR:E  ACRO_EE  ;
+E+ACR:E  ACRO_PUNTA  ;
+EADS+ACR+Prop+Sem%/Org:EADS  ACRO_ÄKS  ;
+EAN+ACR:EAN  ACRO_TALO  ;
+EAN+ACR:EAN  ACRO_ÄKS  ;
+EARTO+ACR+Prop+Sem%/Org:EARTO  ACRO_OO  ;
+EAY+ACR+Prop+Sem%/Org:EAY  ACRO_YY  ;
+EBF+ACR+Prop+Sem%/Org:EBF  ACRO_ÄKS  ;
+EBq+ACR:EBq  ACRO_METRI  ;
+EBq+ACR:EBq  ACRO_UU  ;
+EBRD+ACR+Prop+Sem%/Org:EBRD  ACRO_EE  ;
+EBS+ACR+Prop+Sem%/Org:EBS  ACRO_ÄKS  ;
+EBU+ACR+Prop+Sem%/Org:EBU  ACRO_UU  ;
+ECA+ACR+Prop+Sem%/Org:ECA  ACRO_AA  ;
+E°C+ACR:E°C  ACRO_CELSIUS  ;
+EC$+ACR:EC$  ACRO_DOLLARI  ;
+E°C+ACR:E°C  ACRO_EE  ;
+EC+ACR:EC  ACRO_EE  ;
+EC+ACR:EC  ACRO_METRI  ;
+EC$+ACR:EC$  ACRO_WEBER  ;
+ECADI+ACR+Prop+Sem%/Org:ECADI  ACRO_II  ;
+Ecd+ACR:Ecd  ACRO_EE  ;
+Ecd+ACR:Ecd  ACRO_KANDELA  ;
+Ecosoc+ACR+Prop+Sem%/Org:Ecosoc  ACRO_EE  ;
+ECR+ACR+Prop+Sem%/Org:ECR  ACRO_ÄKS  ;
+ECRI+ACR+Prop+Sem%/Org:ECRI  ACRO_II  ;
+ECS+ACR:ECS  ACRO_ÄKS  ;
+ECSC+ACR+Prop+Sem%/Org:ECSC  ACRO_EE  ;
+ECU+ACR:ECU  ACRO_UU  ;
+ECV+ACR:ECV  ACRO_EE  ;
+EDF+ACR+Prop+Sem%/Org:EDF  ACRO_ÄKS  ;
+EDI+ACR:EDI  ACRO_II  ;
+EE+ACR:EE  ACRO_EE  ;
+EEC+ACR+Prop:EEC  ACRO_EE  ;
+EEC+N:EEC  ACRO_EE  ;    !!= * {{@CODE@}} European Economy Council
+eeg+ACR:eeg  ACRO_EE  ;
+EEK+ACR:EEK  ACRO_OO  ;
+EELA+ACR+Prop+Sem%/Org:EELA  ACRO_AA  ;
+EF+ACR:EF  ACRO_METRI  ;
+EF+ACR:EF  ACRO_ÄKS  ;
+EFF+ACR+Prop+Sem%/Org:EFF  ACRO_ÄKS  ;
+EFTA+ACR+Prop+Sem%/Org:EFTA  ACRO_AA  ;
+Eg+ACR:Eg  ACRO_EE  ;
+Eg+ACR:Eg  ACRO_GRAMMA  ;
+EGP+ACR:EGP  ACRO_EE  ;
+EGy+ACR:EGy  ACRO_GRAY  ;
+EGy+ACR:EGy  ACRO_YY  ;
+EH+ACR:EH  ACRO_METRI  ;
+EH+ACR:EH  ACRO_OO  ;
+EHEC+ACR:EHEC  ACRO_EE  ;
+EHTY+ACR:EHTY  ACRO_YY  ;
+Ehty+ACR+Prop+Sem%/Org:Ehty  ACRO_YY  ;
+EHz+ACR:EHz  ACRO_METRI  ;
+EHz+ACR:EHz  ACRO_ZET  ;
+EICTA+ACR+Prop+Sem%/Org:EICTA  ACRO_AA  ;
+EIP+ACR:EIP  ACRO_EE  ;
+EIP+N:EIP  ACRO_EE  ;
+EJ+ACR:EJ  ACRO_II  ;
+EJ+ACR:EJ  ACRO_JOULE  ;
+Ejustite.fr+ACR+Prop+Sem%/Org:Ejustite.fr  ACRO_ÄKS  ;
+EK+ACR+Prop+Sem%/Org:EK  ACRO_METRI  ;
+EK+ACR+Prop+Sem%/Org:EK  ACRO_OO  ;
+Ekat+ACR:Ekat  ACRO_EE  ;
+Ekat+ACR:Ekat  ACRO_OHMI  ;
+ekg+ACR:ekg  ACRO_EE  ;
+EKK+ACR+Prop+Sem%/Org:EKK  ACRO_OO  ;
+EKL+ACR+Prop+Sem%/Org:EKL  ACRO_ÄKS  ;
+EKP+ACR+Prop+Sem%/Org:EKP  ACRO_EE  ;
+EKP+N:EKP  ACRO_EE  ;    !!= * {{@CODE@}} Euroopan Keskus-Pankki
+EKR+ACR:EKR  ACRO_ÄKS  ;
+EL+ACR+Prop:EL  ACRO_ÄKS  ;
+ELDR+ACR:ELDR  ACRO_ÄKS  ;
+ELDR+N:ELDR  ACRO_ÄKS  ;
+Elektroni.fi+ACR+Prop+Sem%/Org:Elektroni.fi  ACRO_II  ;
+ELK+ACR:ELK  ACRO_OHMI  ;
+ELK+ACR:ELK  ACRO_OO  ;
+ELL+ACR:ELL  ACRO_OHMI  ;
+ELL+ACR:ELL  ACRO_ÄKS  ;
+Elm+ACR:Elm  ACRO_METRI  ;
+Elm+ACR:Elm  ACRO_ÄKS  ;
+ELT+ACR:ELT  ACRO_EE  ;
+ELTO+ACR:ELTO  ACRO_OO  ;
+Elx+ACR:Elx  ACRO_METRI  ;
+Elx+ACR:Elx  ACRO_ÄKS  ;
+Em+ACR:Em  ACRO_METRI  ;
+Em+ACR:Em  ACRO_ÄKS  ;
+EM+ACR+Prop+Sem%/Org:EM  ACRO_METRI  ;
+EM+ACR+Prop+Sem%/Org:EM  ACRO_ÄKS  ;
+EMC+ACR+Prop+Sem%/Org:EMC  ACRO_EE  ;
+EMEA+ACR+Prop:EMEA  ACRO_AA  ;
+EMG+ACR:EMG  ACRO_EE  ;
+EMI+ACR+Prop+Sem%/Org:EMI  ACRO_II  ;
+Emol+ACR:Emol  ACRO_OHMI  ;
+Emol+ACR:Emol  ACRO_ÄKS  ;
+EMS+ACR:EMS  ACRO_ÄKS  ;
+EMU+ACR+Prop:EMU  ACRO_UU  ;
+Emu+ACR+Prop+Sem%/Org:Emu  ACRO_UU  ;
+EMU+N:EMU  ACRO_UU  ;    !!= * {{@CODE@}} European Monetary Union
+EMW+ACR+Prop+Sem%/Org:EMW  ACRO_EE  ;
+EN+ACR+Prop+Sem%/Org:EN  ACRO_METRI  ;
+EN+ACR+Prop+Sem%/Org:EN  ACRO_ÄKS  ;
+ENEA+ACR+Prop+Sem%/Org:ENEA  ACRO_AA  ;
+ENEA+ACR+Prop+Sem%/Org:ENEA  ACRO_KANDELA  ;
+e+N:e  ACRO_EE  ;
+E+N:E  ACRO_EE  ;
+EOA+ACR:EOA  ACRO_AA  ;
+EOAK+ACR:EOAK  ACRO_OO  ;
+E.ON+ACR+Prop+Sem%/Org:E.ON  ACRO_ÄKS  ;
+EOS+ACR:EOS  ACRO_ÄKS  ;
+EPa+ACR:EPa  ACRO_AA  ;
+EPa+ACR:EPa  ACRO_DOLLARI  ;
+EP+ACR+Prop+Sem%/Org:EP  ACRO_EE  ;
+EP+N:EP  ACRO_EE  ;
+EPO+ACR+Prop+Sem%/Org:EPO  ACRO_OO  ;
+eQ+ACR+Prop+Sem%/Org:eQ  ACRO_UU  ;
+EQ+ACR+Prop+Sem%/Org:EQ  ACRO_UU  ;
+EQT+ACR+Prop+Sem%/Org:EQT  ACRO_EE  ;
+Erad+ACR:Erad  ACRO_DOLLARI  ;
+Erad+ACR:Erad  ACRO_EE  ;
+ERM+ACR+Prop+Sem%/Org:ERM  ACRO_ÄKS  ;
+ERN+ACR:ERN  ACRO_ÄKS  ;
+ERTO+ACR+Prop+Sem%/Org:ERTO  ACRO_OO  ;
+ERVV+ACR+Prop+Sem%/Org:ERVV  ACRO_EE  ;
+Eräjärven% SP+ACR+Prop+Sem%/Org:Eräjärven% SP ACRO_EE  ;
+ESA+ACR+Prop+Sem%/Org:ESA  ACRO_AA  ;
+ES+ACR:ES  ACRO_METRI  ;
+ES+ACR:ES  ACRO_ÄKS  ;
+Es+ACR+Prop+Sem%/Human:Es  ACRO_METRI  ;
+Es+ACR+Prop+Sem%/Human:Es  ACRO_ÄKS  ;
+ESB+ACR:ESB  ACRO_EE  ;
+ESMA+ACR+Prop+Sem%/Org:ESMA  ACRO_AA  ;
+ES+N:ES  ACRO_ÄKS  ;
+ESO+ACR+Prop+Sem%/Org:ESO  ACRO_OO  ;
+ESP+ACR:ESP  ACRO_EE  ;
+Esr+ACR:Esr  ACRO_WEBER  ;
+Esr+ACR:Esr  ACRO_ÄKS  ;
+ESR+ACR+Prop+Sem%/Org:ESR  ACRO_ÄKS  ;
+ESTIEM+ACR+Prop+Sem%/Org:ESTIEM  ACRO_ÄKS  ;
+ESv+ACR:ESv  ACRO_EE  ;
+ESv+ACR:ESv  ACRO_METRI  ;
+ESY+ACR:ESY  ACRO_YY  ;
+ETA+ACR+Prop+Sem%/Org:ETA  ACRO_AA  ;
+ET+ACR:ET  ACRO_EE  ;
+ET+ACR:ET  ACRO_GRAMMA  ;
+ETB+ACR:ETB  ACRO_EE  ;
+ETK+ACR:ETK  ACRO_OHMI  ;
+ETK+ACR+Prop+Sem%/Org:ETK  ACRO_OO  ;
+ETLA+ACR+Prop+Sem%/Org:ETLA  ACRO_AA  ;
+ETL+ACR:ETL  ACRO_OHMI  ;
+ETL+ACR+Prop+Sem%/Org:ETL  ACRO_ÄKS  ;
+ETM+ACR:ETM  ACRO_DOLLARI  ;
+ETM+ACR:ETM  ACRO_ÄKS  ;
+ETSI+ACR+Prop+Sem%/Org:ETSI  ACRO_II  ;
+ETSK+ACR:ETSK  ACRO_OO  ;
+ETTA+ACR+Prop+Sem%/Org:ETTA  ACRO_AA  ;
+ETT+ACR+Prop+Sem%/Org:ETT  ACRO_EE  ;
+ETY+ACR+Prop+Sem%/Org:ETY  ACRO_JÄRJESTÖ  ;
+ETY+ACR+Prop+Sem%/Org:ETY  ACRO_YY  ;
+ETYJ+ACR+Prop+Sem%/Org:ETYJ  ACRO_II  ;
+ETYK+ACR+Prop+Sem%/Org:ETYK  ACRO_OO  ;
+ETY+N:ETY  ACRO_YY  ;    !!= * {{@CODE@}} Euroopan Turvallisuus-Yhteisö
+EU% 27+ACR+Prop+Sem%/Org:EU% 27   ACRO_SEITSEMÄN  ;
+EU27+ACR+Prop+Sem%/Org:EU27  ACRO_SEITSEMÄN  ;
+EU+ACR+Prop+Sem%/Org:EU  ACRO_DOLLARI  ;
+EU+ACR+Prop+Sem%/Org:EU  ACRO_UU  ;
+EU+N:EU  ACRO_UU  ;      !!= * {{@CODE@}} Euroopan Unioni
+EUR+ACR:EUR  ACRO_TALO  ;
+EUR+ACR:EUR  ACRO_ÄKS  ;
+Euro% RSCG+ACR+Prop+Sem%/Org:Euro% RSCG   ACRO_EE  ;
+EUSTORY+ACR+Prop+Sem%/Org:EUSTORY  ACRO_YY  ;
+EUVL+ACR:EUVL  ACRO_ÄKS  ;
+EVA+ACR+Prop+Sem%/Org:EVA  ACRO_AA  ;
+eV+ACR:eV  ACRO_EE  ;
+EV+ACR:EV  ACRO_EE  ;
+eV+ACR:eV  ACRO_OHMI  ;
+EV+ACR:EV  ACRO_OHMI  ;
+EveryDNS+ACR+Prop+Sem%/Org:EveryDNS  ACRO_ÄKS  ;
+EVM+ACR+Prop+Sem%/Org:EVM  ACRO_ÄKS  ;
+EVR+ACR+Prop+Sem%/Org:EVR  ACRO_ÄKS  ;
+EVVK+ACR:EVVK  ACRO_OO  ;
+EW+ACR:EW  ACRO_EE  ;
+EW+ACR:EW  ACRO_OHMI  ;
+EWb+ACR:EWb  ACRO_EE  ;
+EWb+ACR:EWb  ACRO_WEBER  ;
+EY+ACR+Prop+Sem%/Org:EY  ACRO_JÄRJESTÖ  ;
+EY+ACR+Prop+Sem%/Org:EY  ACRO_YY  ;
+EY+N:EY  ACRO_YY  ;      !!= * {{@CODE@}} Euroopan Yhteisö
+EYVL+ACR+Prop:EYVL  ACRO_ÄKS  ;
+EΩ+ACR:EΩ  ACRO_METRI  ;
+EΩ+ACR:EΩ  ACRO_OHMI  ;
+fa+ACR:fa  ACRO_AA  ;
+fA+ACR:fA  ACRO_AA  ;
+fA+ACR:fA  ACRO_DOLLARI  ;
+F$+ACR:F$  ACRO_DOLLARI  ;
+F+ACR:F  ACRO_METRI  ;
+F$+ACR:F$  ACRO_WEBER  ;
+f+ACR:f  ACRO_ÄKS  ;
+F+ACR:F  ACRO_ÄKS  ;
+FaK+ACR:FaK  ACRO_OHMI  ;
+FaK+ACR:FaK  ACRO_OO  ;
+FaL+ACR:FaL  ACRO_OHMI  ;
+FaL+ACR:FaL  ACRO_ÄKS  ;
+FaM+ACR:FaM  ACRO_DOLLARI  ;
+FaM+ACR:FaM  ACRO_ÄKS  ;
+FAO+ACR+Prop+Sem%/Org:FAO  ACRO_OO  ;
+FAQ+ACR:FAQ  ACRO_UU  ;
+FaT+ACR:FaT  ACRO_DOLLARI  ;
+FaT+ACR:FaT  ACRO_EE  ;
+FBI+ACR+Prop+Sem%/Org:FBI  ACRO_II  ;
+FBI+N:FBI  ACRO_II  ;     !!= * {{@CODE@}} Federal Bureau of Investigation
+fBq+ACR:fBq  ACRO_METRI  ;
+fBq+ACR:fBq  ACRO_UU  ;
+Fbu+ACR:Fbu  ACRO_UU  ;
+f°C+ACR:f°C  ACRO_CELSIUS  ;
+f°C+ACR:f°C  ACRO_EE  ;
+fC+ACR:fC  ACRO_EE  ;
+fC+ACR:fC  ACRO_METRI  ;
+F&C+ACR+Prop+Sem%/Org:F&C  ACRO_EE  ;
+fcd+ACR:fcd  ACRO_EE  ;
+fcd+ACR:fcd  ACRO_KANDELA  ;
+FCMA+ACR+Prop+Sem%/Org:FCMA  ACRO_AA  ;
+FDIC+ACR+Prop+Sem%/Org:FDIC  ACRO_EE  ;
+FEPCO% 1+ACR+Prop+Sem%/Org:FEPCO% 1   ACRO_YKSI  ;
+fF+ACR:fF  ACRO_METRI  ;
+fF+ACR:fF  ACRO_ÄKS  ;
+fg+ACR:fg  ACRO_EE  ;
+fg+ACR:fg  ACRO_GRAMMA  ;
+FGBMFI+ACR+Prop+Sem%/Org:FGBMFI  ACRO_II  ;
+fGy+ACR:fGy  ACRO_GRAY  ;
+fGy+ACR:fGy  ACRO_YY  ;
+fH+ACR:fH  ACRO_METRI  ;
+fH+ACR:fH  ACRO_OO  ;
+fHz+ACR:fHz  ACRO_METRI  ;
+fHz+ACR:fHz  ACRO_ZET  ;
+FIA+ACR+Prop+Sem%/Org:FIA  ACRO_AA  ;
+FI+ACR+Prop+Sem%/Geo:FI  ACRO_II  ;
+FIA+N:FIA  ACRO_AA  ;
+Fiat% SpA+ACR+Prop+Sem%/Org:Fiat% SpA ACRO_AA  ;
+FICIX+ACR+Prop+Sem%/Org:FICIX  ACRO_ÄKS  ;
+FIFA+ACR+Prop+Sem%/Org:FIFA  ACRO_AA  ;
+FIFA+N:FIFA  ACRO_AA  ;  !!= * {{@CODE@}} Football
+FILE+ACR:FILE  ACRO_EE  ;
+FILI+ACR+Prop+Sem%/Org:FILI  ACRO_II  ;
+FIM+ACR:FIM  ACRO_ÄKS  ;
+FIMECC+ACR+Prop+Sem%/Org:FIMECC  ACRO_EE  ;
+FIMIC+ACR+Prop+Sem%/Org:FIMIC  ACRO_EE  ;
+FiMUG+ACR+Prop+Sem%/Org:FiMUG  ACRO_EE  ;
+FIN+ACR+Prop+Sem%/Geo:FIN  ACRO_ÄKS  ;
+FIT+ACR+Prop+Sem%/Org:FIT  ACRO_EE  ;
+fJ+ACR:fJ  ACRO_II  ;
+fJ+ACR:fJ  ACRO_JOULE  ;
+FJD+ACR:FJD  ACRO_EE  ;
+fK+ACR:fK  ACRO_METRI  ;
+FK+ACR:FK  ACRO_OHMI  ;
+fK+ACR:fK  ACRO_OO  ;
+FK+ACR:FK  ACRO_OO  ;
+fkat+ACR:fkat  ACRO_EE  ;
+fkat+ACR:fkat  ACRO_OHMI  ;
+FKP+ACR:FKP  ACRO_EE  ;
+fl+ACR:fl  ACRO_GRAMMA  ;
+FL+ACR:FL  ACRO_OHMI  ;
+fl+ACR:fl  ACRO_ÄKS  ;
+FL+ACR:FL  ACRO_ÄKS  ;
+flm+ACR:flm  ACRO_METRI  ;
+flm+ACR:flm  ACRO_ÄKS  ;
+flx+ACR:flx  ACRO_METRI  ;
+flx+ACR:flx  ACRO_ÄKS  ;
+FM+ACR:FM  ACRO_DOLLARI  ;
+fm+ACR:fm  ACRO_METRI  ;
+fm+ACR:fm  ACRO_ÄKS  ;
+FM+ACR:FM  ACRO_ÄKS  ;
+fmol+ACR:fmol  ACRO_OHMI  ;
+fmol+ACR:fmol  ACRO_ÄKS  ;
+fN+ACR:fN  ACRO_METRI  ;
+fN+ACR:fN  ACRO_ÄKS  ;
+f+N:f  ACRO_ÄKS  ;
+F+N:F  ACRO_ÄKS  ;
+Fonderie47+ACR+Prop+Sem%/Org:Fonderie47  ACRO_SEITSEMÄN  ;
+Forum% 18+ACR+Prop+Sem%/Org:Forum% 18 ACRO_KAHDEKSAN  ;
+fPa+ACR:fPa  ACRO_AA  ;
+fPa+ACR:fPa  ACRO_DOLLARI  ;
+fr+ACR:fr  ACRO_ÄKS  ;
+FR+ACR:FR  ACRO_ÄKS  ;
+frad+ACR:frad  ACRO_DOLLARI  ;
+frad+ACR:frad  ACRO_EE  ;
+FRF+ACR:FRF  ACRO_ÄKS  ;
+FR+N:FR  ACRO_ÄKS  ;
+fs+ACR:fs  ACRO_METRI  ;
+fS+ACR:fS  ACRO_METRI  ;
+fs+ACR:fs  ACRO_ÄKS  ;
+fS+ACR:fS  ACRO_ÄKS  ;
+fsr+ACR:fsr  ACRO_WEBER  ;
+fsr+ACR:fsr  ACRO_ÄKS  ;
+fSv+ACR:fSv  ACRO_EE  ;
+fSv+ACR:fSv  ACRO_METRI  ;
+FTAA+ACR+Prop+Sem%/Org:FTAA  ACRO_AA  ;
+fT+ACR:fT  ACRO_EE  ;
+Ft+ACR:Ft  ACRO_EE  ;
+FT+ACR:FT  ACRO_EE  ;
+fT+ACR:fT  ACRO_GRAMMA  ;
+FT+ACR:FT  ACRO_WEBER  ;
+FTP+ACR:FTP  ACRO_EE  ;
+FTP+ACR:FTP  ACRO_WEBER  ;
+FTP+N:FTP  ACRO_EE  ;    !!= * {{@CODE@}} File Transfer Protocol
+FUNET+ACR:FUNET  ACRO_EE  ;
+FUUG+ACR+Prop+Sem%/Org:FUUG  ACRO_EE  ;
+fV+ACR:fV  ACRO_EE  ;
+fV+ACR:fV  ACRO_OHMI  ;
+fW+ACR:fW  ACRO_EE  ;
+fW+ACR:fW  ACRO_OHMI  ;
+fWb+ACR:fWb  ACRO_EE  ;
+fWb+ACR:fWb  ACRO_WEBER  ;
+fΩ+ACR:fΩ  ACRO_METRI  ;
+fΩ+ACR:fΩ  ACRO_OHMI  ;
+G2%0+ACR+Prop+Sem%/Org:G20  ACRO_NOLLA  ;
+G4S+ACR+Prop+Sem%/Org:G4S  ACRO_ÄKS  ;
+G77+ACR+Prop+Sem%/Org:G77  ACRO_SEITSEMÄN  ;
+G8+ACR+Prop+Sem%/Org:G8  ACRO_KAHDEKSAN  ;
+GA+ACR:GA  ACRO_AA  ;
+GA+ACR:GA  ACRO_DOLLARI  ;
+G$+ACR:G$  ACRO_DOLLARI  ;
+g+ACR:g  ACRO_EE  ;
+g+ACR:g  ACRO_GRAMMA  ;
+G$+ACR:G$  ACRO_WEBER  ;
+G+ACR+Prop:G  ACRO_EE  ;
+G+ACR+Prop+Sem%/Geo:G  ACRO_EE  ;
+G+ACR+Prop+Sem%/Human:G  ACRO_EE  ;
+G+ACR+Prop+Sem%/Org:G  ACRO_EE  ;
+gal+ACR:gal  ACRO_PUNTA  ;
+gal+ACR:gal  ACRO_ÄKS  ;
+GATT+ACR:GATT  ACRO_EE  ;
+GB+ACR:GB  ACRO_EE  ;
+GB+N:GB  ACRO_EE  ;
+GBP+ACR:GBP  ACRO_EE  ;
+GBq+ACR:GBq  ACRO_METRI  ;
+GBq+ACR:GBq  ACRO_UU  ;
+G°C+ACR:G°C  ACRO_CELSIUS  ;
+G°C+ACR:G°C  ACRO_EE  ;
+GC+ACR:GC  ACRO_EE  ;
+GC+ACR:GC  ACRO_METRI  ;
+Gcd+ACR:Gcd  ACRO_EE  ;
+Gcd+ACR:Gcd  ACRO_KANDELA  ;
+GCHQ+ACR+Prop+Sem%/Org:GCHQ  ACRO_UU  ;
+GEA+ACR:GEA  ACRO_AA  ;
+GEA+ACR:GEA  ACRO_GRAMMA  ;
+GEK+ACR:GEK  ACRO_OO  ;
+GEL+ACR:GEL  ACRO_ÄKS  ;
+General% Motors% Co+ACR+Prop+Sem%/Org:General% Motors% Co  ACRO_OO  ;
+GEYSIR+ACR+Prop+Sem%/Org:GEYSIR  ACRO_ÄKS  ;
+GF+ACR:GF  ACRO_METRI  ;
+GF+ACR:GF  ACRO_ÄKS  ;
+GfK+ACR+Prop+Sem%/Org:GfK  ACRO_OO  ;
+Gg+ACR:Gg  ACRO_EE  ;
+Gg+ACR:Gg  ACRO_GRAMMA  ;
+GGy+ACR:GGy  ACRO_GRAY  ;
+GGy+ACR:GGy  ACRO_YY  ;
+GH+ACR:GH  ACRO_METRI  ;
+GH+ACR:GH  ACRO_OO  ;
+GHC+ACR:GHC  ACRO_EE  ;
+GHS+ACR:GHS  ACRO_ÄKS  ;
+GHz+ACR:GHz  ACRO_METRI  ;
+GHz+ACR:GHz  ACRO_ZET  ;
+GIP+ACR:GIP  ACRO_EE  ;
+GJ+ACR:GJ  ACRO_II  ;
+GJ+ACR:GJ  ACRO_JOULE  ;
+GK+ACR:GK  ACRO_METRI  ;
+GK+ACR:GK  ACRO_OO  ;
+Gkat+ACR:Gkat  ACRO_EE  ;
+Gkat+ACR:Gkat  ACRO_OHMI  ;
+GL+ACR:GL  ACRO_GRAMMA  ;
+GL+ACR+Prop+Sem%/Org:GL  ACRO_ÄKS  ;
+GLG+ACR+Prop+Sem%/Org:GLG  ACRO_EE  ;
+Glm+ACR:Glm  ACRO_METRI  ;
+Glm+ACR:Glm  ACRO_ÄKS  ;
+Global% Gaming% Factory% X+ACR+Prop+Sem%/Org:Global% Gaming% Factory% X ACRO_ÄKS  ;
+Glx+ACR:Glx  ACRO_METRI  ;
+Glx+ACR:Glx  ACRO_ÄKS  ;
+gm+ACR:gm  ACRO_METRI  ;
+Gm+ACR:Gm  ACRO_METRI  ;
+gm+ACR:gm  ACRO_ÄKS  ;
+Gm+ACR:Gm  ACRO_ÄKS  ;
+GM+ACR+Prop+Sem%/Org:GM  ACRO_ÄKS  ;
+Gmbh+ACR:Gmbh  ACRO_OO  ;
+GmbH+ACR:GmbH  ACRO_OO  ;
+GMD+ACR:GMD  ACRO_EE  ;
+GM+N:GM  ACRO_ÄKS  ;     !!= * {{@CODE@}} General Motors
+gmo+ACR:gmo  ACRO_OO  ;
+GMO+ACR+Prop+Sem%/Org:GMO  ACRO_OO  ;
+Gmol+ACR:Gmol  ACRO_OHMI  ;
+Gmol+ACR:Gmol  ACRO_ÄKS  ;
+GMO+N:GMO  ACRO_OO  ;
+GN+ACR:GN  ACRO_METRI  ;
+GN+ACR:GN  ACRO_ÄKS  ;
+GNF+ACR:GNF  ACRO_ÄKS  ;
+g+N:g  ACRO_EE  ;
+G+N:G  ACRO_EE  ;
+GNS+ACR:GNS  ACRO_ÄKS  ;
+GodFm+ACR+Prop+Sem/Human:GodFm  ACRO_ÄKS  ;
+gon+ACR:gon  ACRO_ÄKS  ;
+GPa+ACR:GPa  ACRO_AA  ;
+GPa+ACR:GPa  ACRO_DOLLARI  ;
+GP+ACR:GP  ACRO_EE  ;
+GPRS+ACR:GPRS  ACRO_ÄKS  ;
+GPRS+N:GPRS  ACRO_ÄKS  ; !!= * {{@CODE@}} 
+GQE+ACR:GQE  ACRO_EE  ;
+Grad+ACR:Grad  ACRO_DOLLARI  ;
+Grad+ACR:Grad  ACRO_EE  ;
+GRD+ACR:GRD  ACRO_EE  ;
+Groupe% BPCE+ACR+Prop+Sem%/Org:Groupe% BPCE   ACRO_EE  ;
+Gs+ACR:Gs  ACRO_METRI  ;
+GS+ACR:GS  ACRO_METRI  ;
+Gs+ACR:Gs  ACRO_ÄKS  ;
+GS+ACR:GS  ACRO_ÄKS  ;
+GSM+ACR:GSM  ACRO_ÄKS  ;
+Gsr+ACR:Gsr  ACRO_WEBER  ;
+Gsr+ACR:Gsr  ACRO_ÄKS  ;
+GSv+ACR:GSv  ACRO_EE  ;
+GSv+ACR:GSv  ACRO_METRI  ;
+GT+ACR:GT  ACRO_EE  ;
+GT+ACR:GT  ACRO_GRAMMA  ;
+GTi+ACR+Prop:GTi  ACRO_II  ;
+GTi+N:GTi  ACRO_II  ;
+GTK+ACR+Prop+Sem%/Org:GTK  ACRO_OO  ;
+GTQ+ACR:GTQ  ACRO_UU  ;
+GUAM+ACR+Prop+Sem%/Org:GUAM  ACRO_ÄKS  ;
+GUE+ACR:GUE  ACRO_EE  ;
+GUE+N:GUE  ACRO_EE  ;
+GV+ACR:GV  ACRO_EE  ;
+GV+ACR:GV  ACRO_OHMI  ;
+GW+ACR:GW  ACRO_EE  ;
+GW+ACR:GW  ACRO_OHMI  ;
+GWb+ACR:GWb  ACRO_EE  ;
+GWb+ACR:GWb  ACRO_WEBER  ;
+GWE+ACR:GWE  ACRO_EE  ;
+GWP+ACR:GWP  ACRO_EE  ;
+Gy+ACR:Gy  ACRO_GRAY  ;
+Gy+ACR:Gy  ACRO_YY  ;
+GYD+ACR:GYD  ACRO_EE  ;
+GΩ+ACR:GΩ  ACRO_METRI  ;
+GΩ+ACR:GΩ  ACRO_OHMI  ;
+ha+ACR:ha  ACRO_AA  ;
+hA+ACR:hA  ACRO_AA  ;
+HA+ACR:HA  ACRO_AA  ;
+hA+ACR:hA  ACRO_DOLLARI  ;
+h+ACR:h  ACRO_METRI  ;
+H+ACR:H  ACRO_METRI  ;
+h+ACR:h  ACRO_OO  ;
+H+ACR:H  ACRO_OO  ;
+HAO+ACR:HAO  ACRO_OO  ;
+Harri% Savunen% &% Co+ACR+Prop+Sem%/Org:Harri% Savunen% &% Co   ACRO_OO  ;
+HAUS+ACR+Prop+Sem%/Org:HAUS  ACRO_ÄKS  ;
+Hb+ACR:Hb  ACRO_EE  ;
+HBL+ACR+Prop:HBL  ACRO_ÄKS  ;
+HBO+ACR+Prop+Sem%/Org:HBO  ACRO_OO  ;
+HBOS+ACR+Prop+Sem%/Org:HBOS  ACRO_ÄKS  ;
+hBq+ACR:hBq  ACRO_METRI  ;
+hBq+ACR:hBq  ACRO_UU  ;
+h°C+ACR:h°C  ACRO_CELSIUS  ;
+h°C+ACR:h°C  ACRO_EE  ;
+hC+ACR:hC  ACRO_EE  ;
+hC+ACR:hC  ACRO_METRI  ;
+hcd+ACR:hcd  ACRO_EE  ;
+hcd+ACR:hcd  ACRO_KANDELA  ;
+HCL+ACR+Prop+Sem%/Org:HCL  ACRO_ÄKS  ;
+hdtv+ACR:hdtv  ACRO_EE  ;
+hdtv+ACR:hdtv  ACRO_GRAY  ;
+HE+ACR:HE  ACRO_EE  ;
+Heinolan% Palloilijat% -47+ACR+Prop+Sem%/Org:Heinolan% Palloilijat% -47    ACRO_SEITSEMÄN  ;
+Helsingin% Kiri% -6%0+ACR+Prop+Sem%/Org:Helsingin% Kiri% -60   ACRO_NOLLA  ;
+Helsingin% NMKY+ACR+Prop+Sem%/Org:Helsingin% NMKY ACRO_YY  ;
+Helsingin% OP+ACR+Prop+Sem%/Org:Helsingin% OP ACRO_EE  ;
+Helsingin% OPKK+ACR+Prop+Sem%/Org:Helsingin% OPKK ACRO_OO  ;
+HEPA+ACR:HEPA  ACRO_AA  ;
+HETKY+ACR+Prop+Sem%/Org:HETKY  ACRO_YY  ;
+HEUNI+ACR+Prop+Sem%/Org:HEUNI  ACRO_II  ;
+hF+ACR:hF  ACRO_METRI  ;
+hF+ACR:hF  ACRO_ÄKS  ;
+HFU+ACR+Prop+Sem%/Org:HFU  ACRO_UU  ;
+hg+ACR:hg  ACRO_EE  ;
+Hg+ACR:Hg  ACRO_EE  ;
+hg+ACR:hg  ACRO_GRAMMA  ;
+Hg+ACR:Hg  ACRO_KANDELA  ;
+hGy+ACR:hGy  ACRO_GRAY  ;
+hGy+ACR:hGy  ACRO_YY  ;
+hH+ACR:hH  ACRO_METRI  ;
+hh+ACR:hh  ACRO_OO  ;
+hH+ACR:hH  ACRO_OO  ;
+hHz+ACR:hHz  ACRO_METRI  ;
+hHz+ACR:hHz  ACRO_ZET  ;
+HIFK+ACR+Prop+Sem%/Org:HIFK  ACRO_OO  ;
+HIFK+N:HIFK  ACRO_OO  ;  !!= * {{@CODE@}} Helsingfors 
+HIIT+ACR+Prop+Sem%/Org:HIIT  ACRO_EE  ;
+HIM+ACR:HIM  ACRO_METRI  ;
+HIM+ACR+Prop+Sem/Human:HIM  ACRO_ÄKS  ;
+HITAS+ACR:HITAS  ACRO_ÄKS  ;
+HIV+ACR:HIV  ACRO_EE  ;
+HIV+ACR:HIV  ACRO_YHDISTYS  ;
+HIV+N:HIV  ACRO_EE  ;    !!= * {{@CODE@}} ... Immunodeficiency Virus
+hJ+ACR:hJ  ACRO_II  ;
+hJ+ACR:hJ  ACRO_JOULE  ;
+HJK+ACR+Prop+Sem%/Org:HJK  ACRO_OO  ;
+HJK+N:HJK  ACRO_OO  ;    !!= * {{@CODE@}} Helsingin Jalkapallo-Klubi
+HK$+ACR:HK$  ACRO_DOLLARI  ;
+hK+ACR:hK  ACRO_METRI  ;
+HK+ACR:HK  ACRO_OHMI  ;
+hK+ACR:hK  ACRO_OO  ;
+HK$+ACR:HK$  ACRO_WEBER  ;
+HK+ACR+Prop+Sem%/Org:HK  ACRO_OO  ;
+hkat+ACR:hkat  ACRO_EE  ;
+hkat+ACR:hkat  ACRO_OHMI  ;
+HKD+ACR:HKD  ACRO_EE  ;
+HKL+ACR:HKL  ACRO_TUOTE  ;
+HKL+ACR+Prop+Sem%/Org:HKL  ACRO_ÄKS  ;
+HKL+N:HKL  ACRO_ÄKS  ;   !!= * {{@CODE@}} Helsingin Kaupungin Liikenne
+HK+N:HK  ACRO_OO  ;      !!= * {{@CODE@}} 
+hl+ACR:hl  ACRO_GRAMMA  ;
+HL+ACR:HL  ACRO_GRAMMA  ;
+HL+ACR:HL  ACRO_PUNTA  ;
+hl+ACR:hl  ACRO_ÄKS  ;
+HL+ACR+Prop+Sem%/Org:HL  ACRO_ÄKS  ;
+HLK+ACR:HLK  ACRO_OHMI  ;
+HLK+ACR:HLK  ACRO_OO  ;
+HLL+ACR:HLL  ACRO_OHMI  ;
+HLL+ACR:HLL  ACRO_ÄKS  ;
+hlm+ACR:hlm  ACRO_METRI  ;
+hlm+ACR:hlm  ACRO_ÄKS  ;
+HLT+ACR:HLT  ACRO_DOLLARI  ;
+HLT+ACR:HLT  ACRO_EE  ;
+hlx+ACR:hlx  ACRO_METRI  ;
+hlx+ACR:hlx  ACRO_ÄKS  ;
+HM+ACR:HM  ACRO_DOLLARI  ;
+hm+ACR:hm  ACRO_METRI  ;
+hm+ACR:hm  ACRO_ÄKS  ;
+HM+ACR:HM  ACRO_ÄKS  ;
+H&M+ACR+Prop+Sem%/Org:H&M  ACRO_ÄKS  ;
+hmol+ACR:hmol  ACRO_OHMI  ;
+hmol+ACR:hmol  ACRO_ÄKS  ;
+HMV+ACR+Prop+Sem%/Org:HMV  ACRO_EE  ;
+hN+ACR:hN  ACRO_METRI  ;
+HN+ACR:HN  ACRO_METRI  ;
+hN+ACR:hN  ACRO_ÄKS  ;
+HN+ACR:HN  ACRO_ÄKS  ;
+h+N:h  ACRO_OO  ;
+H+N:H  ACRO_OO  ;
+HNL+ACR:HNL  ACRO_ÄKS  ;
+HO+ACR:HO  ACRO_OIKEUS  ;
+HO+ACR+Prop+Sem%/Org:HO  ACRO_OO  ;
+HOAS+ACR+Prop+Sem%/Org:HOAS  ACRO_ÄKS  ;
+hojks+ACR:hojks  ACRO_ÄKS  ;
+HOK+ACR:HOK  ACRO_PUNTA  ;
+HOK+ACR+Prop+Sem%/Org:HOK  ACRO_OO  ;
+Hollolan% Urheilijat% -46+ACR+Prop+Sem%/Org:Hollolan% Urheilijat% -46  ACRO_KUUSI  ;
+HOP+ACR+Prop+Sem%/Org:HOP  ACRO_EE  ;
+HOPS+ACR:HOPS  ACRO_GRAMMA  ;
+HOPS+ACR:HOPS  ACRO_ÄKS  ;
+hPa+ACR:hPa  ACRO_AA  ;
+hPa+ACR:hPa  ACRO_DOLLARI  ;
+HP+ACR+Prop+Sem%/Org:HP  ACRO_EE  ;
+HPE+ACR:HPE  ACRO_EE  ;
+HQ+ACR+Prop+Sem%/Org:HQ  ACRO_UU  ;
+hrad+ACR:hrad  ACRO_DOLLARI  ;
+hrad+ACR:hrad  ACRO_EE  ;
+HRD+ACR:HRD  ACRO_EE  ;
+HRK+ACR:HRK  ACRO_OO  ;
+HRL+ACR:HRL  ACRO_OHMI  ;
+HRL+ACR:HRL  ACRO_ÄKS  ;
+hs+ACR:hs  ACRO_METRI  ;
+hS+ACR:hS  ACRO_METRI  ;
+HS+ACR:HS  ACRO_PUNTA  ;
+hs+ACR:hs  ACRO_ÄKS  ;
+hS+ACR:hS  ACRO_ÄKS  ;
+HS+ACR+Prop:HS  ACRO_ÄKS  ;
+HSBC+ACR+Prop+Sem%/Org:HSBC  ACRO_EE  ;
+HSE+ACR+Prop+Sem%/Org:HSE  ACRO_EE  ;
+HSL+ACR:HSL  ACRO_TUOTE  ;
+HSL+ACR+Prop+Sem%/Org:HSL  ACRO_ÄKS  ;
+HS+N:HS  ACRO_ÄKS  ;     !!= * {{@CODE@}} Helsingin Sanomat
+hsr+ACR:hsr  ACRO_WEBER  ;
+hsr+ACR:hsr  ACRO_ÄKS  ;
+HST+ACR:HST  ACRO_EE  ;
+hSv+ACR:hSv  ACRO_EE  ;
+hSv+ACR:hSv  ACRO_METRI  ;
+hT+ACR:hT  ACRO_EE  ;
+hT+ACR:hT  ACRO_GRAMMA  ;
+HT+ACR+Prop:HT  ACRO_EE  ;
+HTC+ACR+Prop+Sem%/Org:HTC  ACRO_EE  ;
+HTG+ACR:HTG  ACRO_EE  ;
+HTK+ACR:HTK  ACRO_OHMI  ;
+HTK+ACR:HTK  ACRO_OO  ;
+htkk+ACR:htkk  ACRO_OO  ;
+HTL+ACR:HTL  ACRO_OHMI  ;
+HTL+ACR:HTL  ACRO_ÄKS  ;
+HTM+ACR:HTM  ACRO_DOLLARI  ;
+HTM+ACR:HTM  ACRO_ÄKS  ;
+HTML+ACR:HTML  ACRO_ÄKS  ;
+HTML+N:HTML  ACRO_ÄKS  ; !!= * {{@CODE@}} Hyper-Text Markup Language
+HTT+ACR:HTT  ACRO_DOLLARI  ;
+HTT+ACR:HTT  ACRO_EE  ;
+HTTP+ACR:HTTP  ACRO_EE  ;
+HTTP+N:HTTP  ACRO_EE  ;  !!= * {{@CODE@}} Hyper-Text Transfer Protocol
+htv+ACR:htv  ACRO_EE  ;
+HUF+ACR:HUF  ACRO_ÄKS  ;
+HuK+ACR:HuK  ACRO_OHMI  ;
+HuK+ACR:HuK  ACRO_OO  ;
+HUS+ACR+Prop+Sem%/Org:HUS  ACRO_ÄKS  ;
+HUUGO+ACR+Prop+Sem%/Org:HUUGO  ACRO_OO  ;
+hv+ACR:hv  ACRO_EE  ;
+hV+ACR:hV  ACRO_EE  ;
+hv+ACR:hv  ACRO_GRAMMA  ;
+hV+ACR:hV  ACRO_OHMI  ;
+HVK+ACR+Prop+Sem%/Org:HVK  ACRO_OO  ;
+HVK+N:HVK  ACRO_OO  ;    
+HVT+ACR:HVT  ACRO_EE  ;
+hW+ACR:hW  ACRO_EE  ;
+hW+ACR:hW  ACRO_OHMI  ;
+hWb+ACR:hWb  ACRO_EE  ;
+hWb+ACR:hWb  ACRO_WEBER  ;
+HY+ACR+Prop+Sem%/Org:HY  ACRO_YY  ;
+HYK+ACR+Prop+Sem%/Org:HYK  ACRO_OO  ;
+HYKS+ACR:HYKS  ACRO_SAIRAALA  ;
+HYKS+ACR+Prop+Sem%/Org:HYKS  ACRO_ÄKS  ;
+HYLA+ACR:HYLA  ACRO_AA  ;
+HYY+ACR+Prop+Sem%/Org:HYY  ACRO_YY  ;
+Hz+ACR:Hz  ACRO_METRI  ;
+Hz+ACR:Hz  ACRO_ZET  ;
+HögforsGST+ACR+Prop+Sem%/Org:HögforsGST  ACRO_EE  ;
+hΩ+ACR:hΩ  ACRO_METRI  ;
+hΩ+ACR:hΩ  ACRO_OHMI  ;
+IAAF+ACR+Prop+Sem%/Org:IAAF  ACRO_ÄKS  ;
+i+ACR:i  ACRO_II  ;
+I+ACR:I  ACRO_II  ;
+i+ACR:i  ACRO_WEBER  ;
+IAEA+ACR+Prop+Sem%/Org:IAEA  ACRO_AA  ;
+IARC+ACR+Prop+Sem%/Org:IARC  ACRO_EE  ;
+IATA+ACR+Prop+Sem%/Org:IATA  ACRO_AA  ;
+IATA+N:IATA  ACRO_AA  ;
+IAU+ACR+Prop+Sem%/Org:IAU  ACRO_UU  ;
+IB+ACR:IB  ACRO_EE  ;
+IBBY+ACR+Prop+Sem%/Org:IBBY  ACRO_YY  ;
+IBM+ACR+Prop+Sem%/Org:IBM  ACRO_ÄKS  ;
+IBM+N:IBM  ACRO_ÄKS  ;   !!= * {{@CODE@}} International Business Machines
+IBRD+ACR+Prop+Sem%/Org:IBRD  ACRO_EE  ;
+ICAP+ACR+Prop+Sem%/Org:ICAP  ACRO_EE  ;
+ICCROM+ACR+Prop+Sem%/Org:ICCROM  ACRO_ÄKS  ;
+ICOMOS+ACR+Prop+Sem%/Org:ICOMOS  ACRO_ÄKS  ;
+ict+ACR:ict  ACRO_EE  ;
+ID+ACR:ID  ACRO_EE  ;
+IDC+ACR+Prop+Sem%/Org:IDC  ACRO_EE  ;
+IDR+ACR:IDR  ACRO_ÄKS  ;
+IEA+ACR+Prop+Sem%/Org:IEA  ACRO_AA  ;
+IEC+ACR:IEC  ACRO_EE  ;
+IEEE+ACR+Prop+Sem%/Org:IEEE  ACRO_EE  ;
+IEP+ACR:IEP  ACRO_EE  ;
+IFA+ACR+Prop+Sem%/Org:IFA  ACRO_AA  ;
+IFK+ACR+Prop+Sem%/Org:IFK  ACRO_OO  ;
+IFK+N:IFK  ACRO_OO  ;
+IHEYO+ACR+Prop+Sem%/Org:IHEYO  ACRO_OO  ;
+IIF+ACR+Prop+Sem%/Org:IIF  ACRO_ÄKS  ;
+IKB+ACR+Prop+Sem%/Org:IKB  ACRO_EE  ;
+IKI+ACR+Prop+Sem%/Org:IKI  ACRO_II  ;
+IKL+ACR+Prop+Sem%/Org:IKL  ACRO_ÄKS  ;
+ikt+ACR:ikt  ACRO_EE  ;
+IL+ACR:IL  ACRO_LEHTI  ;
+IL+ACR+Prop+Sem%/Org:IL  ACRO_ÄKS  ;
+ILL+ACR+Prop+Sem%/Org:ILL  ACRO_ÄKS  ;
+ilmavE+ACR:ilmavE  ACRO_EE  ;
+ILO+ACR+Prop+Sem%/Org:ILO  ACRO_OO  ;
+ILP+ACR:ILP  ACRO_EE  ;
+ILR+ACR:ILR  ACRO_ÄKS  ;
+ILS+ACR:ILS  ACRO_ÄKS  ;
+IMEKO+ACR+Prop+Sem%/Org:IMEKO  ACRO_OO  ;
+IMF+ACR+Prop+Sem%/Org:IMF  ACRO_ÄKS  ;
+IMI+ACR+Prop+Sem%/Org:IMI  ACRO_II  ;
+inc+ACR:inc  ACRO_EE  ;
+ING+ACR+Prop+Sem%/Org:ING  ACRO_EE  ;
+i+N:i  ACRO_II  ;
+I+N:I  ACRO_II  ;
+INR+ACR:INR  ACRO_ÄKS  ;
+INRI+ACR:INRI  ACRO_II  ;
+internet-tv+ACR:internet-tv  ACRO_EE  ;
+internet-tv+N:internet-tv  ACRO_EE  ; !!= * {{@CODE@}} Tele-Visio
+IPA+ACR:IPA  ACRO_AA  ;
+IP+ACR:IP  ACRO_EE  ;
+IPEM+ACR+Prop+Sem%/Org:IPEM  ACRO_ÄKS  ;
+IP+N:IP  ACRO_EE  ;    !!= * {{@CODE@}} Internet Protocol
+IPU+ACR+Prop+Sem%/Org:IPU  ACRO_UU  ;
+IQD+ACR:IQD  ACRO_EE  ;
+IRA+ACR+Prop+Sem%/Org:IRA  ACRO_AA  ;
+IR£+ACR:IR£  ACRO_GRAMMA  ;
+IR£+ACR:IR£  ACRO_PUNTA  ;
+IRC+ACR:IRC  ACRO_EE  ;
+IRC+N:IRC  ACRO_EE  ;  !!= * {{@CODE@}} Internet Relay Chat
+IRR+ACR:IRR  ACRO_ÄKS  ;
+IS+ACR:IS  ACRO_PUNTA  ;
+IS+ACR+Prop:IS  ACRO_ÄKS  ;
+ISAI+ACR+Prop+Sem%/Org:ISAI  ACRO_II  ;
+ISBN+ACR:ISBN  ACRO_ÄKS  ;
+ISBN+N:ISBN  ACRO_ÄKS  ;   !!= * {{@CODE@}} International Serial Book Number
+ISDN+ACR:ISDN  ACRO_ÄKS  ;
+ISEC+ACR+Prop+Sem%/Org:ISEC  ACRO_EE  ;
+ISJ+ACR:ISJ  ACRO_II  ;
+ISK+ACR:ISK  ACRO_OO  ;
+ISM+ACR+Prop+Sem%/Org:ISM  ACRO_ÄKS  ;
+ISMN+ACR:ISMN  ACRO_ÄKS  ;
+ISO+ACR+Prop+Sem%/Org:ISO  ACRO_OO  ;
+ISSN+ACR:ISSN  ACRO_ÄKS  ;
+ISY+ACR+Prop+Sem%/Org:ISY  ACRO_YY  ;
+it+ACR:it  ACRO_EE  ;
+IT+ACR:IT  ACRO_EE  ;
+IT+ACR:IT  ACRO_KANDELA  ;
+ITC+ACR+Prop+Sem%/Org:ITC  ACRO_EE  ;
+ITE+ACR:ITE  ACRO_EE  ;
+ITL+ACR:ITL  ACRO_ÄKS  ;
+IT+N:IT  ACRO_EE  ;    !!= * {{@CODE@}} Informaatio-Teknologia
+ITT+ACR+Prop+Sem%/Org:ITT  ACRO_EE  ;
+ITU+ACR+Prop+Sem%/Org:ITU  ACRO_UU  ;
+IU+ACR:IU  ACRO_UU  ;
+IVO+ACR+Prop+Sem%/Org:IVO  ACRO_OO  ;
+IVY+ACR+Prop+Sem%/Org:IVY  ACRO_YY  ;
+IZT+ACR+Prop+Sem%/Org:IZT  ACRO_EE  ;
+J$+ACR:J$  ACRO_DOLLARI  ;
+j+ACR:j  ACRO_II  ;
+J+ACR:J  ACRO_II  ;
+J+ACR:J  ACRO_JOULE  ;
+J$+ACR:J$  ACRO_WEBER  ;
+JBL+ACR+Prop+Sem%/Org:JBL  ACRO_ÄKS  ;
+JC+ACR+Prop+Sem%/Org:JC  ACRO_EE  ;
+JD+ACR:JD  ACRO_EE  ;
+JHL+ACR+Prop+Sem%/Org:JHL  ACRO_ÄKS  ;
+JHTT+ACR:JHTT  ACRO_EE  ;
+JIT+ACR:JIT  ACRO_EE  ;
+JK+ACR:JK  ACRO_METRI  ;
+JK+ACR:JK  ACRO_OO  ;
+jm+ACR:jm  ACRO_ÄKS  ;
+JM+ACR+Prop+Sem%/Org:JM  ACRO_ÄKS  ;
+JMD+ACR:JMD  ACRO_EE  ;
+j+N:j  ACRO_II  ;
+J+N:J  ACRO_II  ;
+JOD+ACR:JOD  ACRO_EE  ;
+JOT+ACR:JOT  ACRO_EE  ;
+JoY+ACR:JoY  ACRO_JÄRJESTÖ  ;
+JoY+ACR+Prop+Sem%/Org:JoY  ACRO_YY  ;
+JP% Morgan% Chase% &% Co+ACR+Prop+Sem%/Org:JP% Morgan% Chase% &% Co  ACRO_OO  ;
+JPMorgan% Chase% &% Co+ACR+Prop+Sem%/Org:JPMorgan% Chase% &% Co ACRO_OO  ;
+JPY+ACR:JPY  ACRO_YY  ;
+JS+ACR:JS  ACRO_ÄKS  ;
+JSN+ACR:JSN  ACRO_JÄRJESTÖ  ;
+JSN+ACR+Prop+Sem%/Org:JSN  ACRO_ÄKS  ;
+JSW+ACR+Prop+Sem%/Org:JSW  ACRO_EE  ;
+JVC+ACR+Prop+Sem%/Org:JVC  ACRO_EE  ;
+JVC+N:JVC  ACRO_EE  ;
+JVG+ACR+Prop+Sem/Human:JVG  ACRO_EE  ;
+JY+ACR:JY  ACRO_JÄRJESTÖ  ;
+JY+ACR+Prop+Sem%/Org:JY  ACRO_YY  ;
+JyP+ACR+Prop+Sem%/Org+ABBR:JyP  ACRO_EE  ;
+JYP+ACR+Prop+Sem%/Org:JYP  ACRO_EE  ;
+K12+ACR:K12  ACRO_KAKSI  ;
+K13+ACR:K13  ACRO_KOLME  ;
+K15+ACR:K15  ACRO_VIISI  ;
+K16+ACR:K16  ACRO_KUUSI  ;
+K18+ACR:K18  ACRO_KAHDEKSAN  ;
+K1+ACR+Prop+Sem%/Org:K1  ACRO_YKSI  ;
+ka+ACR:ka  ACRO_AA  ;
+kA+ACR:kA  ACRO_AA  ;
+kA+ACR:kA  ACRO_DOLLARI  ;
+ka+ACR:ka  ACRO_TALO  ;
+KA+ACR+Prop+Sem%/Org:KA  ACRO_AA  ;
+K+ACR:K  ACRO_METRI  ;
+k+ACR:k  ACRO_OO  ;
+K+ACR:K  ACRO_OO  ;
+KadK+ACR+Prop+Sem%/Org:KadK  ACRO_OO  ;
+Kangasala% SK+ACR+Prop+Sem%/Org:Kangasala% SK ACRO_OO  ;
+KAT+ACR:KAT  ACRO_EE  ;
+KATTI+ACR+Prop+Sem%/Org:KATTI  ACRO_II  ;
+kb+ACR:kb  ACRO_EE  ;
+kB+ACR:kB  ACRO_EE  ;
+kb+ACR:kb  ACRO_METRI  ;
+kB+ACR:kB  ACRO_TALO  ;
+KBC+ACR+Prop+Sem%/Org:KBC  ACRO_EE  ;
+kBq+ACR:kBq  ACRO_METRI  ;
+kBq+ACR:kBq  ACRO_UU  ;
+k°C+ACR:k°C  ACRO_CELSIUS  ;
+k°C+ACR:k°C  ACRO_EE  ;
+kC+ACR:kC  ACRO_EE  ;
+kC+ACR:kC  ACRO_METRI  ;
+kcal+ACR:kcal  ACRO_DOLLARI  ;
+kcd+ACR:kcd  ACRO_EE  ;
+kcd+ACR:kcd  ACRO_KANDELA  ;
+KD+ACR:KD  ACRO_EE  ;
+KD+ACR+Prop+Sem%/Org:KD  ACRO_EE  ;
+KEDO+ACR+Prop+Sem%/Org:KEDO  ACRO_OO  ;
+KEHO+ACR+Prop+Sem%/Org:KEHO  ACRO_OO  ;
+KELA+ACR+Prop+Sem%/Org:KELA  ACRO_AA  ;
+KEL+ACR:KEL  ACRO_OHMI  ;
+KEL+ACR:KEL  ACRO_ÄKS  ;
+Kenttäurheilijat-58+ACR+Prop+Sem%/Org:Kenttäurheilijat-58  ACRO_KAHDEKSAN  ;
+KEPA+ACR+Prop+Sem%/Org:KEPA  ACRO_AA  ;
+Keravan% Kori-8%0+ACR+Prop+Sem%/Org:Keravan% Kori-80  ACRO_NOLLA  ;
+KES+ACR:KES  ACRO_ÄKS  ;
+KeuPa% HT+ACR+Prop+Sem%/Org:KeuPa% HT ACRO_EE  ;
+kF+ACR:kF  ACRO_METRI  ;
+kF+ACR:kF  ACRO_ÄKS  ;
+KFC+ACR+Prop+Sem%/Org:KFC  ACRO_EE  ;
+KFOR+ACR+Prop+Sem%/Org:KFOR  ACRO_ÄKS  ;
+kg+ACR:kg  ACRO_EE  ;
+kg+ACR:kg  ACRO_GRAMMA  ;
+KGB+ACR+Prop+Sem%/Org:KGB  ACRO_EE  ;
+KGS+ACR:KGS  ACRO_ÄKS  ;
+kGy+ACR:kGy  ACRO_GRAY  ;
+kGy+ACR:kGy  ACRO_YY  ;
+kH+ACR:kH  ACRO_METRI  ;
+kh+ACR:kh  ACRO_OO  ;
+kH+ACR:kH  ACRO_OO  ;
+KHK+ACR:KHK  ACRO_OO  ;
+KHO+ACR+Prop+Sem%/Org:KHO  ACRO_OO  ;
+KHO+N:KHO  ACRO_OO  ; !!= * {{@CODE@}} Korkein Hovi-Oikeus
+KHR+ACR:KHR  ACRO_ÄKS  ;
+KHT+ACR:KHT  ACRO_EE  ;
+kHz+ACR:kHz  ACRO_METRI  ;
+kHz+ACR:kHz  ACRO_ZET  ;
+KIE+ACR+Prop+Sem%/Geo:KIE  ACRO_EE  ;
+KiEL+ACR:KiEL  ACRO_OHMI  ;
+KiEL+ACR:KiEL  ACRO_ÄKS  ;
+kiint.oy+ACR:kiint.oy  ACRO_GRAY  ;
+kiint.oy+ACR:kiint.oy  ACRO_YY  ;
+KiSV+ACR+Prop+Sem%/Org:KiSV  ACRO_EE  ;
+Kiteen% Pallo% -9%0+ACR+Prop+Sem%/Org:Kiteen% Pallo% -90   ACRO_NOLLA  ;
+KIVI+ACR+Prop+Sem%/Org:KIVI  ACRO_II  ;
+kJ+ACR:kJ  ACRO_II  ;
+kJ+ACR:kJ  ACRO_JOULE  ;
+kK+ACR:kK  ACRO_METRI  ;
+KK+ACR:KK  ACRO_OHMI  ;
+kk+ACR:kk  ACRO_OO  ;
+kK+ACR:kK  ACRO_OO  ;
+KK+ACR:KK  ACRO_OO  ;
+kk+ACR:kk  ACRO_VUOSI  ;
+kkat+ACR:kkat  ACRO_EE  ;
+kkat+ACR:kkat  ACRO_OHMI  ;
+KKH+ACR+Prop+Sem%/Org:KKH  ACRO_OO  ;
+KKK+ACR+Prop+Sem%/Org:KKK  ACRO_OO  ;
+KKO+ACR:KKO  ACRO_OIKEUS  ;
+kko+ACR:kko  ACRO_OO  ;
+KKO+ACR:KKO  ACRO_OO  ;
+kko+ACR:kko  ACRO_TALO  ;
+KKOY+ACR+Prop+Sem%/Org:KKOY  ACRO_YY  ;
+kkp+ACR:kkp  ACRO_EE  ;
+KKR+ACR+Prop+Sem%/Org:KKR  ACRO_ÄKS  ;
+KL+ACR:KL  ACRO_OHMI  ;
+KL+ACR:KL  ACRO_ÄKS  ;
+Klinikka% 22+ACR+Prop+Sem%/Org:Klinikka% 22   ACRO_KAKSI  ;
+klm+ACR:klm  ACRO_METRI  ;
+klm+ACR:klm  ACRO_ÄKS  ;
+KLM+ACR+Prop+Sem%/Org:KLM  ACRO_ÄKS  ;
+KLT+ACR:KLT  ACRO_EE  ;
+klx+ACR:klx  ACRO_METRI  ;
+klx+ACR:klx  ACRO_ÄKS  ;
+k-m²+ACR:k-m²  ACRO_METRI  ;
+k-m²+ACR:k-m²  ACRO_ÄKS  ;
+k-m³+ACR:k-m³  ACRO_METRI  ;
+k-m³+ACR:k-m³  ACRO_ÄKS  ;
+km+ACR:km  ACRO_METRI  ;
+km+ACR:km  ACRO_ÄKS  ;
+KM+ACR:KM  ACRO_ÄKS  ;
+KMF+ACR:KMF  ACRO_ÄKS  ;
+KMN+ACR+Prop+Sem%/Org:KMN  ACRO_ÄKS  ;
+kmol+ACR:kmol  ACRO_OHMI  ;
+kmol+ACR:kmol  ACRO_ÄKS  ;
+kN+ACR:kN  ACRO_METRI  ;
+kN+ACR:kN  ACRO_ÄKS  ;
+Knight% Frank% LLP+ACR+Prop+Sem%/Org:Knight% Frank% LLP    ACRO_EE  ;
+k+N:k  ACRO_OO  ;
+K+N:K  ACRO_OO  ;
+KO+ACR+Prop+Sem%/Org:KO  ACRO_OO  ;
+KOK+ACR:KOK  ACRO_OIKEUS  ;
+KOK+ACR+Prop+Sem%/Org:KOK  ACRO_OO  ;
+kokonais-DNA+ACR:kokonais-DNA  ACRO_AA  ;
+KOM+ACR:KOM  ACRO_ÄKS  ;
+KOM+N:KOM  ACRO_ÄKS  ;
+KoMu% HT+ACR+Prop+Sem%/Org:KoMu% HT   ACRO_EE  ;
+kop+ACR:kop  ACRO_EE  ;
+KOP+ACR+Prop+Sem%/Org:KOP  ACRO_EE  ;
+KOP+N:KOP  ACRO_EE  ;  !!= * {{@CODE@}} Kansallis-Osake-Pankki
+Korutrahaksi.fi+ACR+Prop+Sem%/Org:Korutrahaksi.fi  ACRO_II  ;
+KOY+ACR:KOY  ACRO_GRAY  ;
+KOY+ACR:KOY  ACRO_YY  ;
+kPa+ACR:kPa  ACRO_AA  ;
+kPa+ACR:kPa  ACRO_DOLLARI  ;
+kp+ACR:kp  ACRO_EE  ;
+kpl+ACR:kpl  ACRO_TUOTE  ;
+kpl+ACR:kpl  ACRO_ÄKS  ;
+kpm+ACR:kpm  ACRO_ÄKS  ;
+KPMG+ACR+Prop+Sem%/Org:KPMG  ACRO_EE  ;
+KPN+ACR+Prop+Sem%/Org:KPN  ACRO_ÄKS  ;
+KPT+ACR+Prop+Sem%/Org:KPT  ACRO_EE  ;
+KPW+ACR:KPW  ACRO_EE  ;
+kr+ACR:kr  ACRO_ÄKS  ;
+krad+ACR:krad  ACRO_DOLLARI  ;
+krad+ACR:krad  ACRO_EE  ;
+KRH+ACR:KRH  ACRO_OO  ;
+krj+ACR:krj  ACRO_II  ;
+KRO+ACR:KRO  ACRO_OO  ;
+KRP+ACR:KRP  ACRO_EE  ;
+krs+ACR:krs  ACRO_YHDISTYS  ;
+krs+ACR:krs  ACRO_ÄKS  ;
+KRW+ACR:KRW  ACRO_EE  ;
+ks+ACR:ks  ACRO_METRI  ;
+kS+ACR:kS  ACRO_METRI  ;
+ks+ACR:ks  ACRO_ÄKS  ;
+kS+ACR:kS  ACRO_ÄKS  ;
+K% Sh+ACR:K% Sh ACRO_OO  ;
+KSO+ACR+Prop+Sem%/Org:KSO  ACRO_OO  ;
+ksr+ACR:ksr  ACRO_WEBER  ;
+ksr+ACR:ksr  ACRO_ÄKS  ;
+kSv+ACR:kSv  ACRO_EE  ;
+kSv+ACR:kSv  ACRO_METRI  ;
+kt+ACR:kt  ACRO_EE  ;
+kT+ACR:kT  ACRO_EE  ;
+kT+ACR:kT  ACRO_GRAMMA  ;
+kt+ACR:kt  ACRO_TALO  ;
+KT+ACR:KT  ACRO_WEBER  ;
+KT+ACR+Prop+Sem%/Org:KT  ACRO_EE  ;
+KtaO+ACR:KtaO  ACRO_OO  ;
+KteO+ACR:KteO  ACRO_OO  ;
+KTK+ACR:KTK  ACRO_OHMI  ;
+KTK+ACR+Prop+Sem%/Org:KTK  ACRO_OO  ;
+KTL+ACR:KTL  ACRO_OHMI  ;
+KTL+ACR+Prop+Sem%/Org:KTL  ACRO_ÄKS  ;
+KTM+ACR:KTM  ACRO_DOLLARI  ;
+KTM+ACR:KTM  ACRO_ÄKS  ;
+KTP+ACR+Prop+Sem%/Org:KTP  ACRO_EE  ;
+KTP+N:KTP  ACRO_EE  ;
+KTS+ACR:KTS  ACRO_ÄKS  ;
+KTT+ACR:KTT  ACRO_EE  ;
+KTT+ACR:KTT  ACRO_WEBER  ;
+KTTO+ACR+Prop+Sem%/Org:KTTO  ACRO_OO  ;
+KTV+ACR+Prop+Sem%/Org:KTV  ACRO_EE  ;
+KtyO+ACR:KtyO  ACRO_OO  ;
+KUA+ACR:KUA  ACRO_AA  ;
+KU+ACR+Prop:KU  ACRO_UU  ;
+Kultarahaksi.fi+ACR+Prop+Sem%/Org:Kultarahaksi.fi  ACRO_II  ;
+Kuntien% Tekniset% KTK+ACR+Prop+Sem%/Org:Kuntien% Tekniset% KTK    ACRO_OO  ;
+KuPS+ACR+Prop+Sem%/Org+ABBR:KuPS  ACRO_ÄKS  ;
+Kurikan% OP+ACR+Prop+Sem%/Org:Kurikan% OP ACRO_EE  ;
+Kustaa% III+ACR:Kustaa% III ACRO_KOLMAS  ;
+KuvA+ACR+Prop+Sem%/Org:KuvA  ACRO_AA  ;
+KUV+ACR+Prop+Sem%/Org:KUV  ACRO_EE  ;
+KuvO+ACR:KuvO  ACRO_OO  ;
+kV+ACR:kV  ACRO_EE  ;
+kV+ACR:kV  ACRO_OHMI  ;
+KVL+ACR+Prop+Sem%/Org:KVL  ACRO_ÄKS  ;
+KVT+ACR:KVT  ACRO_EE  ;
+KVTEL+ACR:KVTEL  ACRO_OHMI  ;
+KVTEL+ACR:KVTEL  ACRO_ÄKS  ;
+kvv+ACR:kvv  ACRO_EE  ;
+kW+ACR:kW  ACRO_EE  ;
+kW+ACR:kW  ACRO_OHMI  ;
+kWb+ACR:kWb  ACRO_EE  ;
+kWb+ACR:kWb  ACRO_WEBER  ;
+KWD+ACR:KWD  ACRO_EE  ;
+kWh+ACR:kWh  ACRO_METRI  ;
+kWh+ACR:kWh  ACRO_OO  ;
+KWH+ACR+Prop+Sem%/Org:KWH  ACRO_OO  ;
+ky+ACR:ky  ACRO_JÄRJESTÖ  ;
+ky+ACR:ky  ACRO_YY  ;
+KYD+ACR:KYD  ACRO_EE  ;
+KyO+ACR+Prop+Sem%/Org:KyO  ACRO_OO  ;
+KYS+ACR+Prop+Sem%/Org:KYS  ACRO_ÄKS  ;
+KZT+ACR:KZT  ACRO_EE  ;
+KäO+ACR:KäO  ACRO_OO  ;
+kΩ+ACR:kΩ  ACRO_METRI  ;
+kΩ+ACR:kΩ  ACRO_OHMI  ;
+L2+ACR:L2  ACRO_KAKSI  ;
+la+ACR:la  ACRO_AA  ;
+LA+ACR:LA  ACRO_AA  ;
+l+ACR:l  ACRO_GRAMMA  ;
+L+ACR:L  ACRO_GRAMMA  ;
+l+ACR:l  ACRO_ÄKS  ;
+L+ACR:L  ACRO_ÄKS  ;
+LAFTA+ACR+Prop+Sem%/Org:LAFTA  ACRO_AA  ;
+Lahden% Suunnistajat% -37+ACR+Prop+Sem%/Org:Lahden% Suunnistajat% -37  ACRO_SEITSEMÄN  ;
+LaK+ACR:LaK  ACRO_OHMI  ;
+LaK+ACR:LaK  ACRO_OO  ;
+LAK+ACR:LAK  ACRO_OO  ;
+LaL+ACR:LaL  ACRO_OHMI  ;
+LaL+ACR:LaL  ACRO_ÄKS  ;
+Lappeenrannan% NMKY+ACR+Prop+Sem%/Org:Lappeenrannan% NMKY ACRO_YY  ;
+LaT+ACR:LaT  ACRO_DOLLARI  ;
+LaT+ACR:LaT  ACRO_EE  ;
+LBP+ACR:LBP  ACRO_EE  ;
+LD+ACR:LD  ACRO_EE  ;
+lehtiö-pc+ACR:lehtiö-pc  ACRO_EE  ;
+lehtiö-pc+N:lehtiö-pc  ACRO_EE  ; !!= * {{@CODE@}} Personal Computer
+LEL+ACR:LEL  ACRO_OHMI  ;
+LEL+ACR:LEL  ACRO_ÄKS  ;
+LEOPS+ACR:LEOPS  ACRO_ÄKS  ;
+Levi% Strauss% &% Co+ACR+Prop+Sem%/Org:Levi% Strauss% &% Co ACRO_OO  ;
+LG+ACR+Prop+Sem%/Org:LG  ACRO_EE  ;
+LGT+ACR+Prop+Sem%/Org:LGT  ACRO_EE  ;
+LH+ACR:LH  ACRO_OO  ;
+LIA+ACR+Prop+Sem%/Org:LIA  ACRO_AA  ;
+LI+ACR:LI  ACRO_II  ;
+LiK+ACR:LiK  ACRO_OHMI  ;
+LiK+ACR:LiK  ACRO_OO  ;
+LitK+ACR:LitK  ACRO_OHMI  ;
+LitK+ACR:LitK  ACRO_OO  ;
+LitL+ACR:LitL  ACRO_OHMI  ;
+LitL+ACR:LitL  ACRO_ÄKS  ;
+LitM+ACR:LitM  ACRO_DOLLARI  ;
+LitM+ACR:LitM  ACRO_ÄKS  ;
+LitT+ACR:LitT  ACRO_EE  ;
+LitT+ACR:LitT  ACRO_WEBER  ;
+LKAB+ACR+Prop+Sem%/Org:LKAB  ACRO_EE  ;
+LK+ACR:LK  ACRO_OHMI  ;
+LK+ACR:LK  ACRO_OO  ;
+LKH+ACR:LKH  ACRO_OO  ;
+LKK+ACR+Prop+Sem%/Org:LKK  ACRO_OO  ;
+LKP+ACR+Prop+Sem%/Org:LKP  ACRO_EE  ;
+LKR+ACR:LKR  ACRO_ÄKS  ;
+LKT+ACR:LKT  ACRO_EE  ;
+LKV+ACR:LKV  ACRO_EE  ;
+lky+ACR:lky  ACRO_YY  ;
+LL+ACR:LL  ACRO_OHMI  ;
+ll+ACR:ll  ACRO_ÄKS  ;
+LL+ACR:LL  ACRO_ÄKS  ;
+LLC+ACR+Prop+Sem%/Org:LLC  ACRO_EE  ;
+Lloyds% TSB+ACR+Prop+Sem%/Org:Lloyds% TSB ACRO_EE  ;
+lm+ACR:lm  ACRO_METRI  ;
+lm+ACR:lm  ACRO_ÄKS  ;
+Lm+ACR:Lm  ACRO_ÄKS  ;
+LMFAO+ACR:LMFAO  ACRO_TALO  ;
+LMFAO+ACR+Prop+Sem/Human:LMFAO  ACRO_OO  ;
+l+N:l  ACRO_ÄKS  ;
+L+N:L  ACRO_ÄKS  ;
+LO+ACR+Prop+Sem%/Org:LO  ACRO_OO  ;
+LOGY+ACR+Prop+Sem%/Org:LOGY  ACRO_YY  ;
+LOK+ACR:LOK  ACRO_OHMI  ;
+LOK+ACR:LOK  ACRO_OO  ;
+Lp+ACR:Lp  ACRO_EE  ;
+LP+ACR:LP  ACRO_EE  ;
+LPI+ACR:LPI  ACRO_II  ;
+LPI+N:LPI  ACRO_II  ;
+LRD+ACR:LRD  ACRO_EE  ;
+LS+ACR:LS  ACRO_ÄKS  ;
+lsd+ACR:lsd  ACRO_EE  ;
+LSL+ACR:LSL  ACRO_ÄKS  ;
+LSO+ACR+Prop+Sem%/Org:LSO  ACRO_OO  ;
+LSO+N:LSO  ACRO_OO  ;
+LT+ACR+Prop+Sem%/Org:LT  ACRO_EE  ;
+LTCM+ACR+Prop+Sem%/Org:LTCM  ACRO_ÄKS  ;
+LTE+ACR+Prop+Sem%/Org:LTE  ACRO_EE  ;
+ltk+ACR:ltk  ACRO_OO  ;
+LTL+ACR:LTL  ACRO_ÄKS  ;
+LTO+ACR:LTO  ACRO_OO  ;
+LTS+ACR:LTS  ACRO_ÄKS  ;
+LTT+ACR+Prop+Sem%/Org:LTT  ACRO_EE  ;
+LTY+ACR+Prop+Sem%/Org:LTY  ACRO_YY  ;
+LUC+ACR:LUC  ACRO_EE  ;
+LUF+ACR+Prop:LUF  ACRO_ÄKS  ;
+LuK+ACR:LuK  ACRO_OHMI  ;
+LuK+ACR:LuK  ACRO_OO  ;
+LUL+ACR:LUL  ACRO_ÄKS  ;
+LUMA+ACR:LUMA  ACRO_AA  ;
+LUTU+ACR:LUTU  ACRO_UU  ;
+lvi+ACR:lvi  ACRO_II  ;
+lvi+ACR:lvi  ACRO_WEBER  ;
+LVL+ACR:LVL  ACRO_ÄKS  ;
+LVM+ACR:LVM  ACRO_ÄKS  ;
+LVMH+ACR+Prop+Sem%/Org:LVMH  ACRO_OO  ;
+LVR+ACR:LVR  ACRO_ÄKS  ;
+lx+ACR:lx  ACRO_METRI  ;
+lx+ACR:lx  ACRO_ÄKS  ;
+ly+ACR:ly  ACRO_YY  ;
+LY+ACR+Prop+Sem%/Org:LY  ACRO_YY  ;
+LYD+ACR:LYD  ACRO_EE  ;
+LYHKI+ACR:LYHKI  ACRO_II  ;
+m²+ACR:m²  ACRO_METRI  ;
+m²+ACR:m²  ACRO_ÄKS  ;
+m³+ACR:m³  ACRO_METRI  ;
+m³+ACR:m³  ACRO_ÄKS  ;
+ma+ACR:ma  ACRO_AA  ;
+mA+ACR:mA  ACRO_AA  ;
+MA+ACR:MA  ACRO_AA  ;
+mA+ACR:mA  ACRO_DOLLARI  ;
+m€+ACR:m€  ACRO_EURO  ;
+M€+ACR:M€  ACRO_EURO  ;
+µm+ACR:µm  ACRO_METRI  ;
+m+ACR:m  ACRO_METRI  ;
+m€+ACR:m€  ACRO_TALO  ;
+M€+ACR:M€  ACRO_TALO  ;
+µm+ACR:µm  ACRO_ÄKS  ;
+m+ACR:m  ACRO_ÄKS  ;
+M+ACR:M  ACRO_ÄKS  ;
+MAD+ACR:MAD  ACRO_EE  ;
+MAF+ACR:MAF  ACRO_ÄKS  ;
+MAI+ACR:MAI  ACRO_II  ;
+Mail.ru+ACR+Prop+Sem%/Org:Mail.ru  ACRO_UU  ;
+Mainostoimisto% 96+ACR+Prop+Sem%/Org:Mainostoimisto% 96   ACRO_KUUSI  ;
+MAMU+ACR:MAMU  ACRO_UU  ;
+MAN+ACR+Prop+Sem%/Org:MAN  ACRO_ÄKS  ;
+Manse% PP+ACR+Prop+Sem%/Org:Manse% PP ACRO_EE  ;
+MaO+ACR:MaO  ACRO_OO  ;
+MAOL+ACR+Prop+Sem%/Org:MAOL  ACRO_ÄKS  ;
+MAT+ACR:MAT  ACRO_EE  ;
+M.B.A+ACR:M.B.A  ACRO_AA  ;
+MBA+ACR:MBA  ACRO_AA  ;
+Mb+ACR:Mb  ACRO_EE  ;
+MB+ACR:MB  ACRO_EE  ;
+Mb+ACR:Mb  ACRO_METRI  ;
+MB+ACR:MB  ACRO_TALO  ;
+MBD+ACR:MBD  ACRO_EE  ;
+Mbit+ACR:Mbit  ACRO_EE  ;
+Mbit+ACR:Mbit  ACRO_METRI  ;
+Mbit/s+ACR:Mbit/s  ACRO_METRI  ;
+Mbit/s+ACR:Mbit/s  ACRO_ÄKS  ;
+MBO+ACR:MBO  ACRO_OO  ;
+Mbps+ACR:Mbps  ACRO_METRI  ;
+Mbps+ACR:Mbps  ACRO_ÄKS  ;
+mBq+ACR:mBq  ACRO_METRI  ;
+MBq+ACR:MBq  ACRO_METRI  ;
+mBq+ACR:mBq  ACRO_UU  ;
+MBq+ACR:MBq  ACRO_UU  ;
+Mb/s+ACR:Mb/s  ACRO_METRI  ;
+Mb/s+ACR:Mb/s  ACRO_ÄKS  ;
+m°C+ACR:m°C  ACRO_CELSIUS  ;
+M°C+ACR:M°C  ACRO_CELSIUS  ;
+m°C+ACR:m°C  ACRO_EE  ;
+mC+ACR:mC  ACRO_EE  ;
+M°C+ACR:M°C  ACRO_EE  ;
+MC+ACR:MC  ACRO_EE  ;
+mC+ACR:mC  ACRO_METRI  ;
+MC+ACR:MC  ACRO_METRI  ;
+mcd+ACR:mcd  ACRO_EE  ;
+Mcd+ACR:Mcd  ACRO_EE  ;
+mcd+ACR:mcd  ACRO_KANDELA  ;
+Mcd+ACR:Mcd  ACRO_KANDELA  ;
+MCF+ACR:MCF  ACRO_ÄKS  ;
+MDC+ACR:MDC  ACRO_EE  ;
+MDen+ACR:MDen  ACRO_ÄKS  ;
+MDL+ACR:MDL  ACRO_ÄKS  ;
+MDU+ACR+Prop+Sem%/Org:MDU  ACRO_UU  ;
+ME+ACR:ME  ACRO_EE  ;
+media-pc+ACR:media-pc  ACRO_EE  ;
+media-pc+N:media-pc  ACRO_EE  ; !!= * {{@CODE@}} Personal Computer
+Medi-It+ACR+Prop+Sem%/Org:Medi-It  ACRO_EE  ;
+MEK+ACR+Prop+Sem%/Org:MEK  ACRO_OO  ;
+MEL+ACR:MEL  ACRO_OHMI  ;
+MEL+ACR:MEL  ACRO_ÄKS  ;
+MEMC+ACR+Prop+Sem%/Org:MEMC  ACRO_EE  ;
+MEP+ACR:MEP  ACRO_EE  ;
+Mercedes-AMG+ACR+Prop+Sem%/Org:Mercedes-AMG  ACRO_EE  ;
+MerivE+ACR+Prop+Sem%/Org:MerivE  ACRO_EE  ;
+METLA+ACR+Prop+Sem%/Org:METLA  ACRO_AA  ;
+METO+ACR+Prop+Sem%/Org:METO  ACRO_OO  ;
+MetroPCS+ACR+Prop+Sem%/Org:MetroPCS  ACRO_ÄKS  ;
+MEUR+ACR:MEUR  ACRO_ÄKS  ;
+MEX$+ACR:MEX$  ACRO_DOLLARI  ;
+MEX$+ACR:MEX$  ACRO_WEBER  ;
+mF+ACR:mF  ACRO_METRI  ;
+MF+ACR:MF  ACRO_METRI  ;
+mF+ACR:mF  ACRO_ÄKS  ;
+MF+ACR:MF  ACRO_ÄKS  ;
+MF% Global% Finance% USA+ACR+Prop+Sem%/Org:MF% Global% Finance% USA ACRO_AA  ;
+MGA+ACR:MGA  ACRO_AA  ;
+mg+ACR:mg  ACRO_EE  ;
+Mg+ACR:Mg  ACRO_EE  ;
+mg+ACR:mg  ACRO_GRAMMA  ;
+Mg+ACR:Mg  ACRO_GRAMMA  ;
+MG+ACR+Prop+Sem%/Org:MG  ACRO_EE  ;
+MGF+ACR:MGF  ACRO_ÄKS  ;
+MGM+ACR+Prop+Sem%/Org:MGM  ACRO_ÄKS  ;
+mGy+ACR:mGy  ACRO_GRAY  ;
+MGy+ACR:MGy  ACRO_GRAY  ;
+mGy+ACR:mGy  ACRO_YY  ;
+MGy+ACR:MGy  ACRO_YY  ;
+mH+ACR:mH  ACRO_METRI  ;
+MH+ACR:MH  ACRO_METRI  ;
+mH+ACR:mH  ACRO_OO  ;
+MH+ACR+Prop+Sem%/Org:MH  ACRO_OO  ;
+mHz+ACR:mHz  ACRO_METRI  ;
+MHz+ACR:MHz  ACRO_METRI  ;
+mHz+ACR:mHz  ACRO_ZET  ;
+MHz+ACR:MHz  ACRO_ZET  ;
+mi+ACR:mi  ACRO_II  ;
+MI+ACR:MI  ACRO_II  ;
+MIGRI+ACR+Prop+Sem%/Org:MIGRI  ACRO_II  ;
+MIKES+ACR+Prop+Sem%/Org:MIKES  ACRO_ÄKS  ;
+min+ACR:min  ACRO_ÄKS  ;
+Mirgor% SACIFIA+ACR+Prop+Sem%/Org:Mirgor% SACIFIA ACRO_AA  ;
+MIT+ACR+Prop+Sem%/Org:MIT  ACRO_EE  ;
+Mitsubishi% UFJ+ACR+Prop+Sem%/Org:Mitsubishi% UFJ ACRO_II  ;
+Mitsui% &% Co+ACR+Prop+Sem%/Org:Mitsui% &% Co  ACRO_OO  ;
+mJ+ACR:mJ  ACRO_II  ;
+MJ+ACR:MJ  ACRO_II  ;
+mJ+ACR:mJ  ACRO_JOULE  ;
+MJ+ACR:MJ  ACRO_JOULE  ;
+mk+ACR:mk  ACRO_GRAMMA  ;
+mK+ACR:mK  ACRO_METRI  ;
+MK+ACR:MK  ACRO_METRI  ;
+mk+ACR:mk  ACRO_OO  ;
+mK+ACR:mK  ACRO_OO  ;
+MK+ACR:MK  ACRO_OO  ;
+mkat+ACR:mkat  ACRO_EE  ;
+Mkat+ACR:Mkat  ACRO_EE  ;
+mkat+ACR:mkat  ACRO_OHMI  ;
+Mkat+ACR:Mkat  ACRO_OHMI  ;
+MKD+ACR:MKD  ACRO_EE  ;
+MKH+ACR+Prop+Sem%/Org:MKH  ACRO_OO  ;
+MKL+ACR+Prop+Sem%/Org:MKL  ACRO_ÄKS  ;
+MKN+ACR:MKN  ACRO_ÄKS  ;
+MKT+ACR:MKT  ACRO_EE  ;
+ml+ACR:ml  ACRO_GRAMMA  ;
+ml+ACR:ml  ACRO_ÄKS  ;
+ML+ACR+Prop+Sem%/Org:ML  ACRO_ÄKS  ;
+MLF+ACR:MLF  ACRO_ÄKS  ;
+mlm+ACR:mlm  ACRO_METRI  ;
+Mlm+ACR:Mlm  ACRO_METRI  ;
+mlm+ACR:mlm  ACRO_ÄKS  ;
+Mlm+ACR:Mlm  ACRO_ÄKS  ;
+mlx+ACR:mlx  ACRO_METRI  ;
+Mlx+ACR:Mlx  ACRO_METRI  ;
+mlx+ACR:mlx  ACRO_ÄKS  ;
+Mlx+ACR:Mlx  ACRO_ÄKS  ;
+mm+ACR:mm  ACRO_METRI  ;
+Mm+ACR:Mm  ACRO_METRI  ;
+MM+ACR:MM  ACRO_WEBER  ;
+mm+ACR:mm  ACRO_ÄKS  ;
+Mm+ACR:Mm  ACRO_ÄKS  ;
+MM+ACR:MM  ACRO_ÄKS  ;
+mmHg+ACR:mmHg  ACRO_EE  ;
+mmHg+ACR:mmHg  ACRO_GRAMMA  ;
+Mmk+ACR:Mmk  ACRO_GRAMMA  ;
+MMK+ACR:MMK  ACRO_GRAMMA  ;
+Mmk+ACR:Mmk  ACRO_OO  ;
+MMK+ACR:MMK  ACRO_OO  ;
+MML+ACR:MML  ACRO_OHMI  ;
+MML+ACR+Prop+Sem%/Org:MML  ACRO_ÄKS  ;
+MMM+ACR:MMM  ACRO_DOLLARI  ;
+MMM+ACR:MMM  ACRO_ÄKS  ;
+mmol+ACR:mmol  ACRO_OHMI  ;
+Mmol+ACR:Mmol  ACRO_OHMI  ;
+mmol+ACR:mmol  ACRO_ÄKS  ;
+Mmol+ACR:Mmol  ACRO_ÄKS  ;
+MMT+ACR:MMT  ACRO_DOLLARI  ;
+MMT+ACR:MMT  ACRO_EE  ;
+MMYL+ACR+Prop+Sem%/Org:MMYL  ACRO_ÄKS  ;
+mN+ACR:mN  ACRO_METRI  ;
+MN+ACR:MN  ACRO_METRI  ;
+mN+ACR:mN  ACRO_ÄKS  ;
+MN+ACR:MN  ACRO_ÄKS  ;
+m+N:m  ACRO_ÄKS  ;
+M+N:M  ACRO_ÄKS  ;
+MNT+ACR:MNT  ACRO_EE  ;
+MO+ACR:MO  ACRO_OO  ;
+MOEX% Offshore% 2%0%07+ACR+Prop+Sem%/Org:MOEX% Offshore% 2007  ACRO_SEITSEMÄN  ;
+mol+ACR:mol  ACRO_OHMI  ;
+mol+ACR:mol  ACRO_ÄKS  ;
+MOP+ACR:MOP  ACRO_EE  ;
+mp3+ACR:mp3  ACRO_KOLME  ;
+MP3+ACR:MP3  ACRO_KOLME  ;
+MP3+N:MP3  ACRO_KOLME  ;
+mPa+ACR:mPa  ACRO_AA  ;
+MPa+ACR:MPa  ACRO_AA  ;
+mPa+ACR:mPa  ACRO_DOLLARI  ;
+MPa+ACR:MPa  ACRO_DOLLARI  ;
+MPEG+ACR:MPEG  ACRO_EE  ;
+MPEG+N:MPEG  ACRO_EE  ;
+mpk+ACR:mpk  ACRO_OO  ;
+MpKK+ACR+Prop+Sem%/Org:MpKK  ACRO_OO  ;
+MpO+ACR+Prop+Sem%/Org:MpO  ACRO_OO  ;
+MPS+ACR+Prop+Sem%/Org:MPS  ACRO_ÄKS  ;
+Mpx+ACR:Mpx  ACRO_ÄKS  ;
+MQ+ACR+Prop+Sem%/Org:MQ  ACRO_UU  ;
+MR+ACR+Prop:MR  ACRO_ÄKS  ;
+mrad+ACR:mrad  ACRO_DOLLARI  ;
+Mrad+ACR:Mrad  ACRO_DOLLARI  ;
+mrad+ACR:mrad  ACRO_EE  ;
+Mrad+ACR:Mrad  ACRO_EE  ;
+MR+N:MR  ACRO_ÄKS  ;
+MRO+ACR:MRO  ACRO_OO  ;
+m/s+ACR:m/s  ACRO_METRI  ;
+ms+ACR:ms  ACRO_METRI  ;
+mS+ACR:mS  ACRO_METRI  ;
+Ms+ACR:Ms  ACRO_WEBER  ;
+m/s+ACR:m/s  ACRO_ÄKS  ;
+ms+ACR:ms  ACRO_ÄKS  ;
+mS+ACR:mS  ACRO_ÄKS  ;
+Ms+ACR:Ms  ACRO_ÄKS  ;
+MS+ACR:MS  ACRO_ÄKS  ;
+MSB+ACR+Prop+Sem%/Org:MSB  ACRO_EE  ;
+MSc+ACR:MSc  ACRO_EE  ;
+MSCI+ACR+Prop+Sem%/Org:MSCI  ACRO_II  ;
+MSD+ACR+Prop+Sem%/Org:MSD  ACRO_EE  ;
+MSK+ACR+Prop+Sem%/Org:MSK  ACRO_OO  ;
+msr+ACR:msr  ACRO_WEBER  ;
+Msr+ACR:Msr  ACRO_WEBER  ;
+msr+ACR:msr  ACRO_ÄKS  ;
+Msr+ACR:Msr  ACRO_ÄKS  ;
+mSv+ACR:mSv  ACRO_EE  ;
+MSv+ACR:MSv  ACRO_EE  ;
+mSv+ACR:mSv  ACRO_METRI  ;
+MSv+ACR:MSv  ACRO_METRI  ;
+mT+ACR:mT  ACRO_EE  ;
+Mt+ACR:Mt  ACRO_EE  ;
+MT+ACR:MT  ACRO_EE  ;
+mT+ACR:mT  ACRO_GRAMMA  ;
+MT+ACR:MT  ACRO_GRAMMA  ;
+Mt+ACR:Mt  ACRO_TALO  ;
+MTI+ACR:MTI  ACRO_II  ;
+MTK+ACR+Prop+Sem%/Org:MTK  ACRO_OO  ;
+MTK+N:MTK  ACRO_OO  ;
+MTL+ACR+Prop+Sem%/Org:MTL  ACRO_ÄKS  ;
+MTN+ACR+Prop+Sem%/Org:MTN  ACRO_ÄKS  ;
+MTP+ACR:MTP  ACRO_EE  ;
+Mt/s+ACR:Mt/s  ACRO_METRI  ;
+Mt/s+ACR:Mt/s  ACRO_ÄKS  ;
+MTS+ACR+Prop+Sem%/Org:MTS  ACRO_ÄKS  ;
+MTT+ACR+Prop+Sem%/Org:MTT  ACRO_EE  ;
+MTV3+ACR+Prop+Sem%/Org:MTV3  ACRO_KOLME  ;
+MTV3+N:MTV3  ACRO_KOLME  ; !!= * {{@CODE@}} Mainos-Tele-Visio
+MTV+ACR:MTV  ACRO_WEBER  ;
+MTV+ACR+Prop:MTV  ACRO_EE  ;
+MTV+N:MTV  ACRO_EE  ;    !!= * {{@CODE@}} Music TeleVision
+MuK+ACR:MuK  ACRO_OHMI  ;
+MuK+ACR:MuK  ACRO_OO  ;
+MuL+ACR:MuL  ACRO_OHMI  ;
+MuL+ACR:MuL  ACRO_ÄKS  ;
+MuM+ACR:MuM  ACRO_DOLLARI  ;
+MuM+ACR:MuM  ACRO_ÄKS  ;
+Munsala% IK+ACR+Prop+Sem%/Org:Munsala% IK ACRO_OO  ;
+MUR+ACR:MUR  ACRO_ÄKS  ;
+MuT+ACR:MuT  ACRO_DOLLARI  ;
+MuT+ACR:MuT  ACRO_EE  ;
+Muutos% 2%011+ACR+Prop+Sem%/Org:Muutos% 2011  ACRO_YKSI  ;
+mV+ACR:mV  ACRO_EE  ;
+mV+ACR:mV  ACRO_OHMI  ;
+MV+ACR:MV  ACRO_OHMI  ;
+MV+ACR+Prop+Sem%/Org:MV  ACRO_EE  ;
+MVR+ACR:MVR  ACRO_ÄKS  ;
+mW+ACR:mW  ACRO_EE  ;
+MW+ACR:MW  ACRO_EE  ;
+mW+ACR:mW  ACRO_OHMI  ;
+MW+ACR:MW  ACRO_OHMI  ;
+mWb+ACR:mWb  ACRO_EE  ;
+MWb+ACR:MWb  ACRO_EE  ;
+mWb+ACR:mWb  ACRO_WEBER  ;
+MWb+ACR:MWb  ACRO_WEBER  ;
+MWh+ACR:MWh  ACRO_METRI  ;
+MWh+ACR:MWh  ACRO_OO  ;
+MWK+ACR:MWK  ACRO_OO  ;
+MXN+ACR:MXN  ACRO_ÄKS  ;
+MXP+ACR:MXP  ACRO_EE  ;
+MXV+ACR:MXV  ACRO_EE  ;
+MYEL+ACR:MYEL  ACRO_OHMI  ;
+MYEL+ACR:MYEL  ACRO_ÄKS  ;
+Mynämäen% Suunnistajat% -52+ACR+Prop+Sem%/Org:Mynämäen% Suunnistajat% -52  ACRO_KAKSI  ;
+MYR+ACR:MYR  ACRO_ÄKS  ;
+MySQL+ACR+Prop+Sem%/Org:MySQL  ACRO_ÄKS  ;
+MYY+ACR+Prop+Sem%/Org:MYY  ACRO_YY  ;
+MZE+ACR:MZE  ACRO_EE  ;
+MZM+ACR:MZM  ACRO_ÄKS  ;
+MZN+ACR:MZN  ACRO_ÄKS  ;
+mΩ+ACR:mΩ  ACRO_METRI  ;
+MΩ+ACR:MΩ  ACRO_METRI  ;
+mΩ+ACR:mΩ  ACRO_OHMI  ;
+MΩ+ACR:MΩ  ACRO_OHMI  ;
+nA+ACR:nA  ACRO_AA  ;
+nA+ACR:nA  ACRO_DOLLARI  ;
+N$+ACR:N$  ACRO_DOLLARI  ;
+N+ACR:N  ACRO_METRI  ;
+N$+ACR:N$  ACRO_WEBER  ;
+n+ACR:n  ACRO_ÄKS  ;
+N+ACR:N  ACRO_ÄKS  ;
+NAD+ACR:NAD  ACRO_EE  ;
+NAFTA+ACR+Prop+Sem%/Org:NAFTA  ACRO_AA  ;
+NASA+ACR+Prop+Sem%/Org:NASA  ACRO_AA  ;
+NASA+N:NASA  ACRO_AA  ;    !!= * {{@CODE@}} National Air and Space A
+Nasdaq% OMX+ACR+Prop+Sem%/Org:Nasdaq% OMX ACRO_ÄKS  ;
+NATO+ACR+Prop+Sem%/Org:NATO  ACRO_OO  ;
+NATO+N:NATO  ACRO_OO  ;    !!= * {{@CODE@}} North-Atlantic T Organisation
+NBA+N:NBA  ACRO_AA  ;    !!= * {{@CODE@}} National Basketball Association
+NBC+ACR+Prop+Sem%/Org:NBC  ACRO_EE  ;
+NBG+ACR+Prop+Sem%/Org:NBG  ACRO_EE  ;
+nBq+ACR:nBq  ACRO_METRI  ;
+nBq+ACR:nBq  ACRO_UU  ;
+n°C+ACR:n°C  ACRO_CELSIUS  ;
+n°C+ACR:n°C  ACRO_EE  ;
+nC+ACR:nC  ACRO_EE  ;
+nC+ACR:nC  ACRO_METRI  ;
+NCC+ACR+Prop+Sem%/Org:NCC  ACRO_EE  ;
+ncd+ACR:ncd  ACRO_EE  ;
+ncd+ACR:ncd  ACRO_KANDELA  ;
+NDX+ACR+Prop+Sem%/Org:NDX  ACRO_ÄKS  ;
+NEA+ACR+Prop+Sem%/Org:NEA  ACRO_AA  ;
+NEC+ACR+Prop+Sem%/Org:NEC  ACRO_EE  ;
+NESU-KY+ACR+Prop+Sem%/Org:NESU-KY  ACRO_YY  ;
+netti-tv+ACR:netti-tv  ACRO_EE  ;
+netti-tv+ACR:netti-tv  ACRO_GRAY  ;
+netti-tv+N:netti-tv  ACRO_EE  ; !!= * {{@CODE@}} Tele-visio
+nF+ACR:nF  ACRO_METRI  ;
+nF+ACR:nF  ACRO_ÄKS  ;
+ng+ACR:ng  ACRO_EE  ;
+ng+ACR:ng  ACRO_GRAMMA  ;
+NGN+ACR:NGN  ACRO_ÄKS  ;
+nGy+ACR:nGy  ACRO_GRAY  ;
+nGy+ACR:nGy  ACRO_YY  ;
+nH+ACR:nH  ACRO_METRI  ;
+nH+ACR:nH  ACRO_OO  ;
+NHL+ACR+Prop+Sem%/Org:NHL  ACRO_ÄKS  ;
+NHL+N:NHL  ACRO_ÄKS  ; !!= * {{@CODE@}} National Hockey League
+nHz+ACR:nHz  ACRO_METRI  ;
+nHz+ACR:nHz  ACRO_ZET  ;
+NIB+ACR+Prop+Sem%/Org:NIB  ACRO_EE  ;
+NIC+ACR:NIC  ACRO_EE  ;
+NIO+ACR:NIO  ACRO_OO  ;
+nJ+ACR:nJ  ACRO_II  ;
+nJ+ACR:nJ  ACRO_JOULE  ;
+nK+ACR:nK  ACRO_METRI  ;
+nK+ACR:nK  ACRO_OO  ;
+nkat+ACR:nkat  ACRO_EE  ;
+nkat+ACR:nkat  ACRO_OHMI  ;
+NKP+ACR+Prop+Sem%/Org:NKP  ACRO_EE  ;
+Nkr+ACR:Nkr  ACRO_ÄKS  ;
+NKr+ACR:NKr  ACRO_ÄKS  ;
+NKT+ACR:NKT  ACRO_EE  ;
+NL+ACR+Prop+Sem%/Geo:NL  ACRO_ÄKS  ;
+NLG+ACR:NLG  ACRO_EE  ;
+nlm+ACR:nlm  ACRO_METRI  ;
+nlm+ACR:nlm  ACRO_ÄKS  ;
+NL+N:NL  ACRO_ÄKS  ;   !!= * {{@CODE@}} Neuvosto-Liitto
+NLP+ACR:NLP  ACRO_EE  ;
+nlx+ACR:nlx  ACRO_METRI  ;
+nlx+ACR:nlx  ACRO_ÄKS  ;
+nm+ACR:nm  ACRO_METRI  ;
+Nm+ACR:Nm  ACRO_METRI  ;
+nm+ACR:nm  ACRO_ÄKS  ;
+Nm+ACR:Nm  ACRO_ÄKS  ;
+NMKY+ACR:NMKY  ACRO_YHDISTYS  ;
+NMKY+ACR+Prop+Sem%/Org:NMKY  ACRO_YY  ;
+nmol+ACR:nmol  ACRO_OHMI  ;
+nmol+ACR:nmol  ACRO_ÄKS  ;
+NMT+ACR:NMT  ACRO_EE  ;
+nN+ACR:nN  ACRO_METRI  ;
+nN+ACR:nN  ACRO_ÄKS  ;
+NN+ACR+Prop+Sem%/Org:NN  ACRO_ÄKS  ;
+NNKY+ACR:NNKY  ACRO_YHDISTYS  ;
+NNKY+ACR+Prop+Sem%/Org:NNKY  ACRO_YY  ;
+n+N:n  ACRO_ÄKS  ;
+N+N:N  ACRO_ÄKS  ;
+NOK+ACR:NOK  ACRO_OO  ;
+Norcar-BSB+ACR+Prop+Sem%/Org:Norcar-BSB  ACRO_EE  ;
+NordLB+ACR+Prop+Sem%/Org:NordLB  ACRO_EE  ;
+Nova% KBM+ACR+Prop+Sem%/Org:Nova% KBM ACRO_ÄKS  ;
+nPa+ACR:nPa  ACRO_AA  ;
+nPa+ACR:nPa  ACRO_DOLLARI  ;
+NPC+ACR+Prop:NPC  ACRO_EE  ;
+NPC+N:NPC  ACRO_EE  ;  !!= * {{@CODE@}} Non-Player Character
+NPR+ACR:NPR  ACRO_ÄKS  ;
+NRA+ACR+Prop+Sem%/Org:NRA  ACRO_AA  ;
+nrad+ACR:nrad  ACRO_DOLLARI  ;
+nrad+ACR:nrad  ACRO_EE  ;
+Nrs+ACR:Nrs  ACRO_ÄKS  ;
+nrt+ACR:nrt  ACRO_EE  ;
+NRW+ACR+Prop:NRW  ACRO_EE  ;
+NRW+N:NRW  ACRO_EE  ;
+NSA+ACR+Prop+Sem%/Org:NSA  ACRO_AA  ;
+ns+ACR:ns  ACRO_METRI  ;
+nS+ACR:nS  ACRO_METRI  ;
+ns+ACR:ns  ACRO_ÄKS  ;
+nS+ACR:nS  ACRO_ÄKS  ;
+NSN+ACR+Prop+Sem%/Org:NSN  ACRO_ÄKS  ;
+nsr+ACR:nsr  ACRO_WEBER  ;
+nsr+ACR:nsr  ACRO_ÄKS  ;
+nSv+ACR:nSv  ACRO_EE  ;
+nSv+ACR:nSv  ACRO_METRI  ;
+NT$+ACR:NT$  ACRO_DOLLARI  ;
+nT+ACR:nT  ACRO_EE  ;
+nT+ACR:nT  ACRO_GRAMMA  ;
+NT$+ACR:NT$  ACRO_WEBER  ;
+NTB+ACR+Prop+Sem%/Org:NTB  ACRO_EE  ;
+NTP+ACR+Prop+Sem%/Org:NTP  ACRO_EE  ;
+Nu+ACR:Nu  ACRO_UU  ;
+Nurmon% Urheilijat% -99+ACR+Prop+Sem%/Org:Nurmon% Urheilijat% -99  ACRO_YHDEKSÄN  ;
+NUVA+ACR+Prop+Sem%/Org:NUVA  ACRO_AA  ;
+nV+ACR:nV  ACRO_EE  ;
+NV+ACR:NV  ACRO_EE  ;
+nV+ACR:nV  ACRO_OHMI  ;
+NVL+ACR+Prop+Sem%/Org:NVL  ACRO_ÄKS  ;
+nW+ACR:nW  ACRO_EE  ;
+nW+ACR:nW  ACRO_OHMI  ;
+nWb+ACR:nWb  ACRO_EE  ;
+nWb+ACR:nWb  ACRO_WEBER  ;
+NZ$+ACR:NZ$  ACRO_DOLLARI  ;
+$NZ+ACR:$NZ  ACRO_WEBER  ;
+NZ$+ACR:NZ$  ACRO_WEBER  ;
+$NZ+ACR:$NZ  ACRO_ZET  ;
+NZD+ACR:NZD  ACRO_EE  ;
+nΩ+ACR:nΩ  ACRO_METRI  ;
+nΩ+ACR:nΩ  ACRO_OHMI  ;
+O2+ACR+Prop+Sem%/Org:O2  ACRO_KAKSI  ;
+o+ACR:o  ACRO_OO  ;
+O+ACR:O  ACRO_OO  ;
+OAJ+ACR:OAJ  ACRO_JÄRJESTÖ  ;
+OAJ+ACR+Prop+Sem%/Org:OAJ  ACRO_II  ;
+OAS+ACR+Prop+Sem%/Org:OAS  ACRO_ÄKS  ;
+OECD+ACR+Prop+Sem%/Org:OECD  ACRO_EE  ;
+OECD+N:OECD  ACRO_ÄKS  ;
+OEEC+ACR+Prop+Sem%/Org:OEEC  ACRO_EE  ;
+OIE+ACR+Prop+Sem%/Org:OIE  ACRO_EE  ;
+OIKOS+ACR+Prop+Sem%/Org:OIKOS  ACRO_ÄKS  ;
+OK+ACR:OK  ACRO_OK  ;
+ok+ACR:ok  ACRO_OO  ;
+OK+ACR:OK  ACRO_OO  ;
+OKM+ACR:OKM  ACRO_ÄKS  ;
+OK+N:OK  ACRO_OO  ;    !!= * {{@CODE@}} not pronounced in words
+OKV+ACR+Prop+Sem%/Org:OKV  ACRO_EE  ;
+OLAF+ACR:OLAF  ACRO_ÄKS  ;
+OLAF+N:OLAF  ACRO_ÄKS  ;
+OLL+ACR+Prop+Sem%/Org:OLL  ACRO_ÄKS  ;
+OLPC+ACR+Prop+Sem%/Org:OLPC  ACRO_EE  ;
+OM+ACR:OM  ACRO_ÄKS  ;
+OMD+ACR+Prop+Sem%/Org:OMD  ACRO_EE  ;
+OMR+ACR:OMR  ACRO_ÄKS  ;
+OMX+ACR+Prop+Sem%/Org:OMX  ACRO_ÄKS  ;
+o+N:o  ACRO_OO  ;
+O+N:O  ACRO_OO  ;
+op+ACR:op  ACRO_EE  ;
+OPEC+ACR+Prop+Sem%/Org:OPEC  ACRO_EE  ;
+OPH+ACR+Prop+Sem%/Org:OPH  ACRO_OO  ;
+OPK+ACR+Prop+Sem%/Org:OPK  ACRO_OO  ;
+OPKK+ACR+Prop+Sem%/Org:OPKK  ACRO_OO  ;
+OPKO+ACR+Prop+Sem%/Org:OPKO  ACRO_OO  ;
+OPM+ACR:OPM  ACRO_ÄKS  ;
+OPO+ACR:OPO  ACRO_OO  ;
+OPS+ACR:OPS  ACRO_ÄKS  ;
+OPTL+ACR+Prop+Sem%/Org:OPTL  ACRO_ÄKS  ;
+Oriola-KD+ACR+Prop+Sem%/Org:Oriola-KD  ACRO_EE  ;
+OS+ACR:OS  ACRO_ÄKS  ;
+osk+ACR:osk  ACRO_OO  ;
+OSKE+ACR+Prop+Sem%/Org:OSKE  ACRO_EE  ;
+OSMA+ACR:OSMA  ACRO_AA  ;
+OSMA+ACR:OSMA  ACRO_DOLLARI  ;
+OSTIV+ACR+Prop+Sem%/Org:OSTIV  ACRO_EE  ;
+OTC+ACR:OTC  ACRO_EE  ;
+OTE+ACR+Prop+Sem%/Org:OTE  ACRO_EE  ;
+OTK+ACR:OTK  ACRO_OHMI  ;
+OTK+ACR:OTK  ACRO_OO  ;
+OTL+ACR:OTL  ACRO_OHMI  ;
+OTL+ACR:OTL  ACRO_ÄKS  ;
+oto+ACR:oto  ACRO_OO  ;
+OTT+ACR:OTT  ACRO_DOLLARI  ;
+OTT+ACR:OTT  ACRO_EE  ;
+Oulun% NMKY+ACR+Prop+Sem%/Org:Oulun% NMKY ACRO_YY  ;
+ov+ACR:ov  ACRO_EE  ;
+ovh+ACR:ovh  ACRO_GRAMMA  ;
+ovh+ACR:ovh  ACRO_OO  ;
+OVT+ACR:OVT  ACRO_EE  ;
+oy+ACR:oy  ACRO_JÄRJESTÖ  ;
+OY+ACR:OY  ACRO_OPISTO  ;
+oy+ACR:oy  ACRO_YY  ;
+OÜ+ACR:OÜ  ACRO_YY  ;
+OY+ACR+Prop+Sem%/Org:OY  ACRO_YY  ;
+oyj+ACR:oyj  ACRO_II  ;
+oyj+ACR:oyj  ACRO_JÄRJESTÖ  ;
+oyj+N:oyj  ACRO_II  ;  !!= * {{@CODE@}} Julkinen Osake-Yhtiö (!)
+oy+N:oy  ACRO_YY  ;    !!= * {{@CODE@}} Osake-Yhtiö
+OY+N:OY  ACRO_YY  ;    !!= * {{@CODE@}} Osake-Yhtiö
+OYS+ACR+Prop+Sem%/Org:OYS  ACRO_ÄKS  ;
+pA+ACR:pA  ACRO_AA  ;
+Pa+ACR:Pa  ACRO_AA  ;
+PA+ACR:PA  ACRO_AA  ;
+pA+ACR:pA  ACRO_DOLLARI  ;
+Pa+ACR:Pa  ACRO_DOLLARI  ;
+PAB+ACR:PAB  ACRO_EE  ;
+p+ACR:p  ACRO_EE  ;
+P+ACR:P  ACRO_EE  ;
+PAH+ACR:PAH  ACRO_OO  ;
+pak+ACR:pak  ACRO_OO  ;
+pakk+ACR:pakk  ACRO_OO  ;
+PAM+ACR+Prop+Sem%/Org:PAM  ACRO_ÄKS  ;
+PAND+ACR+Prop+Sem%/Org:PAND  ACRO_EE  ;
+paneeli-pc+ACR:paneeli-pc  ACRO_EE  ;
+paneeli-pc+N:paneeli-pc  ACRO_EE  ;    !!= * {{@CODE@}} Personal Computer
+PAU+ACR+Prop+Sem%/Org:PAU  ACRO_UU  ;
+Paulson% &% Co+ACR+Prop+Sem%/Org:Paulson% &% Co    ACRO_OO  ;
+PAV+ACR:PAV  ACRO_EE  ;
+PAY+ACR+Prop+Sem%/Org:PAY  ACRO_YY  ;
+pBq+ACR:pBq  ACRO_METRI  ;
+PBq+ACR:PBq  ACRO_METRI  ;
+pBq+ACR:pBq  ACRO_UU  ;
+PBq+ACR:PBq  ACRO_UU  ;
+p°C+ACR:p°C  ACRO_CELSIUS  ;
+P°C+ACR:P°C  ACRO_CELSIUS  ;
+pc+ACR:pc  ACRO_EE  ;
+p°C+ACR:p°C  ACRO_EE  ;
+pC+ACR:pC  ACRO_EE  ;
+P°C+ACR:P°C  ACRO_EE  ;
+PC+ACR:PC  ACRO_EE  ;
+pC+ACR:pC  ACRO_METRI  ;
+PC+ACR:PC  ACRO_METRI  ;
+PCB+ACR:PCB  ACRO_EE  ;
+pcd+ACR:pcd  ACRO_EE  ;
+Pcd+ACR:Pcd  ACRO_EE  ;
+pcd+ACR:pcd  ACRO_KANDELA  ;
+Pcd+ACR:Pcd  ACRO_KANDELA  ;
+PCUF+ACR+Prop+Sem%/Org:PCUF  ACRO_ÄKS  ;
+pda+ACR:pda  ACRO_AA  ;
+PDA+ACR:PDA  ACRO_AA  ;
+pdf+ACR:pdf  ACRO_ÄKS  ;
+PDF+ACR:PDF  ACRO_ÄKS  ;
+PDF+N:PDF  ACRO_ÄKS  ; !!= * {{@CODE@}} Portable Document Format
+PDT+ACR:PDT  ACRO_EE  ;
+PDVSA+ACR+Prop+Sem%/Org:PDVSA  ACRO_AA  ;
+pe+ACR:pe  ACRO_EE  ;
+PE+ACR:PE  ACRO_EE  ;
+PEI+ACR:PEI  ACRO_II  ;
+Pellervon% taloustutkimus% PTT+ACR+Prop+Sem%/Org:Pellervon% taloustutkimus% PTT    ACRO_EE  ;
+PEN+ACR:PEN  ACRO_ÄKS  ;
+PES+ACR:PES  ACRO_ÄKS  ;
+PET+ACR:PET  ACRO_EE  ;
+pF+ACR:pF  ACRO_METRI  ;
+PF+ACR:PF  ACRO_METRI  ;
+pF+ACR:pF  ACRO_ÄKS  ;
+PF+ACR:PF  ACRO_ÄKS  ;
+pg+ACR:pg  ACRO_EE  ;
+Pg+ACR:Pg  ACRO_EE  ;
+pg+ACR:pg  ACRO_GRAMMA  ;
+Pg+ACR:Pg  ACRO_GRAMMA  ;
+PGE+ACR+Prop+Sem%/Org:PGE  ACRO_EE  ;
+PGK+ACR:PGK  ACRO_OO  ;
+pGy+ACR:pGy  ACRO_GRAY  ;
+PGy+ACR:PGy  ACRO_GRAY  ;
+pGy+ACR:pGy  ACRO_YY  ;
+PGy+ACR:PGy  ACRO_YY  ;
+PH+ACR:PH  ACRO_METRI  ;
+pH+ACR:pH  ACRO_OO  ;
+PH+ACR:PH  ACRO_OO  ;
+PhD+ACR:PhD  ACRO_EE  ;
+Phillips% 66+ACR+Prop+Sem%/Org:Phillips% 66   ACRO_KUUSI  ;
+pH+N:pH  ACRO_OO  ;    !!= * {{@CODE@}} per Hydrogen
+PHP+ACR:PHP  ACRO_EE  ;
+PHS+ACR+Prop+Sem%/Org:PHS  ACRO_ÄKS  ;
+PHS/TBWA+ACR+Prop+Sem%/Org:PHS/TBWA  ACRO_AA  ;
+pHz+ACR:pHz  ACRO_METRI  ;
+PHz+ACR:PHz  ACRO_METRI  ;
+pHz+ACR:pHz  ACRO_ZET  ;
+PHz+ACR:PHz  ACRO_ZET  ;
+pien-pc+ACR:pien-pc  ACRO_EE  ;
+pien-pc+N:pien-pc  ACRO_EE  ;  !!= * {{@CODE@}} Personal Computer
+PIN+ACR:PIN  ACRO_ÄKS  ;
+pinta-WWW+ACR:pinta-WWW  ACRO_EE  ;
+pinta-WWW+ACR:pinta-WWW  ACRO_METRI  ;
+pinta-WWW+N:pinta-WWW  ACRO_EE  ;  !!= * {{@CODE@}} World Wide Web
+PISA+ACR:PISA  ACRO_AA  ;
+pj+ACR:pj  ACRO_II  ;
+pJ+ACR:pJ  ACRO_II  ;
+PJ+ACR:PJ  ACRO_II  ;
+pJ+ACR:pJ  ACRO_JOULE  ;
+PJ+ACR:PJ  ACRO_JOULE  ;
+pj+ACR:pj  ACRO_PUNTA  ;
+pK+ACR:pK  ACRO_METRI  ;
+PK+ACR:PK  ACRO_METRI  ;
+pK+ACR:pK  ACRO_OO  ;
+PK+ACR:PK  ACRO_OO  ;
+pkat+ACR:pkat  ACRO_EE  ;
+Pkat+ACR:Pkat  ACRO_EE  ;
+pkat+ACR:pkat  ACRO_OHMI  ;
+Pkat+ACR:Pkat  ACRO_OHMI  ;
+PKC+ACR+Prop+Sem%/Org:PKC  ACRO_EE  ;
+PkO+ACR:PkO  ACRO_OO  ;
+PKR+ACR:PKR  ACRO_ÄKS  ;
+pkt+ACR:pkt  ACRO_EE  ;
+pkt+ACR:pkt  ACRO_WEBER  ;
+pl+ACR:pl  ACRO_ÄKS  ;
+PL+ACR:PL  ACRO_ÄKS  ;
+plc+ACR:plc  ACRO_EE  ;
+plm+ACR:plm  ACRO_METRI  ;
+Plm+ACR:Plm  ACRO_METRI  ;
+plm+ACR:plm  ACRO_ÄKS  ;
+Plm+ACR:Plm  ACRO_ÄKS  ;
+PLM+ACR:PLM  ACRO_ÄKS  ;
+PLN+ACR:PLN  ACRO_ÄKS  ;
+PLO+ACR+Prop+Sem%/Org:PLO  ACRO_OO  ;
+PLO+N:PLO  ACRO_OO  ;  
+plx+ACR:plx  ACRO_METRI  ;
+Plx+ACR:Plx  ACRO_METRI  ;
+plx+ACR:plx  ACRO_ÄKS  ;
+Plx+ACR:Plx  ACRO_ÄKS  ;
+PLZ+ACR:PLZ  ACRO_ZET  ;
+pm+ACR:pm  ACRO_METRI  ;
+Pm+ACR:Pm  ACRO_METRI  ;
+pm+ACR:pm  ACRO_ÄKS  ;
+Pm+ACR:Pm  ACRO_ÄKS  ;
+PM+ACR:PM  ACRO_ÄKS  ;
+PMI+ACR+Prop+Sem%/Org:PMI  ACRO_II  ;
+pmm+ACR:pmm  ACRO_ÄKS  ;
+PMMP+ACR+Prop+Sem/Human:PMMP  ACRO_EE  ;
+pmol+ACR:pmol  ACRO_OHMI  ;
+Pmol+ACR:Pmol  ACRO_OHMI  ;
+pmol+ACR:pmol  ACRO_ÄKS  ;
+Pmol+ACR:Pmol  ACRO_ÄKS  ;
+pms+ACR:pms  ACRO_ÄKS  ;
+pN+ACR:pN  ACRO_METRI  ;
+PN+ACR:PN  ACRO_METRI  ;
+pN+ACR:pN  ACRO_ÄKS  ;
+PN+ACR+Prop+Sem%/Org:PN  ACRO_ÄKS  ;
+pnk+ACR:pnk  ACRO_OO  ;
+p+N:p  ACRO_EE  ;
+P+N:P  ACRO_EE  ;
+Polamk+ACR+Prop+Sem%/Org:Polamk  ACRO_OO  ;
+POP+ACR+Prop+Sem%/Org:POP  ACRO_EE  ;
+pPa+ACR:pPa  ACRO_AA  ;
+PPa+ACR:PPa  ACRO_AA  ;
+pPa+ACR:pPa  ACRO_DOLLARI  ;
+PPa+ACR:PPa  ACRO_DOLLARI  ;
+PP+ACR:PP  ACRO_EE  ;
+PPE+ACR:PPE  ACRO_EE  ;
+PPE-DE+ACR:PPE-DE  ACRO_EE  ;
+PPE-DE+N:PPE-DE  ACRO_EE  ;
+PPE+N:PPE  ACRO_EE  ;
+PPI+ACR:PPI  ACRO_II  ;
+PPI+N:PPI  ACRO_II  ;  !!= * {{@CODE@}} Points Per Inch
+ppm+ACR:ppm  ACRO_TALO  ;
+ppm+ACR:ppm  ACRO_ÄKS  ;
+PP+N:PP  ACRO_EE  ;
+PPO+ACR+Prop+Sem%/Org:PPO  ACRO_OO  ;
+PPR+ACR+Prop+Sem%/Org:PPR  ACRO_ÄKS  ;
+Pra+ACR:Pra  ACRO_AA  ;
+PR+ACR:PR  ACRO_METRI  ;
+pr+ACR:pr  ACRO_ÄKS  ;
+PR+ACR:PR  ACRO_ÄKS  ;
+prad+ACR:prad  ACRO_DOLLARI  ;
+Prad+ACR:Prad  ACRO_DOLLARI  ;
+prad+ACR:prad  ACRO_EE  ;
+Prad+ACR:Prad  ACRO_EE  ;
+PRH+ACR:PRH  ACRO_YHDISTYS  ;
+PRH+ACR+Prop+Sem%/Org:PRH  ACRO_OO  ;
+prk+ACR:prk  ACRO_OO  ;
+prk+ACR:prk  ACRO_YHDISTYS  ;
+PR+N:PR  ACRO_ÄKS  ;   !!= * {{@CODE@}} Public Relations
+ProSiebenSat1+ACR+Prop+Sem%/Org:ProSiebenSat1  ACRO_YKSI  ;
+PRT+ACR+Prop+Sem%/Org:PRT  ACRO_EE  ;
+PSA+ACR+Prop+Sem%/Org:PSA  ACRO_AA  ;
+PS+ACR+Prop+Sem%/Org:PS  ACRO_ÄKS  ;
+ps+ACR:ps  ACRO_METRI  ;
+pS+ACR:pS  ACRO_METRI  ;
+Ps+ACR:Ps  ACRO_METRI  ;
+PS+ACR:PS  ACRO_METRI  ;
+ps+ACR:ps  ACRO_ÄKS  ;
+pS+ACR:pS  ACRO_ÄKS  ;
+Ps+ACR:Ps  ACRO_ÄKS  ;
+PSE+ACR:PSE  ACRO_EE  ;
+PSE+N:PSE  ACRO_EE  ;
+PsK+ACR:PsK  ACRO_OHMI  ;
+PsK+ACR:PsK  ACRO_OO  ;
+PsL+ACR:PsL  ACRO_OHMI  ;
+PsL+ACR:PsL  ACRO_ÄKS  ;
+PsM+ACR:PsM  ACRO_DOLLARI  ;
+PsM+ACR:PsM  ACRO_ÄKS  ;
+PSOAS+ACR+Prop+Sem%/Org:PSOAS  ACRO_ÄKS  ;
+PSOP+ACR+Prop+Sem%/Org:PSOP  ACRO_EE  ;
+PSP+ACR+Prop+Sem%/Org:PSP  ACRO_EE  ;
+psr+ACR:psr  ACRO_WEBER  ;
+Psr+ACR:Psr  ACRO_WEBER  ;
+psr+ACR:psr  ACRO_ÄKS  ;
+Psr+ACR:Psr  ACRO_ÄKS  ;
+PsT+ACR:PsT  ACRO_DOLLARI  ;
+PsT+ACR:PsT  ACRO_EE  ;
+pSv+ACR:pSv  ACRO_EE  ;
+PSv+ACR:PSv  ACRO_EE  ;
+pSv+ACR:pSv  ACRO_METRI  ;
+PSv+ACR:PSv  ACRO_METRI  ;
+PT+ACR+Prop+Sem%/Org:PT  ACRO_EE  ;
+pT+ACR:pT  ACRO_EE  ;
+pT+ACR:pT  ACRO_GRAMMA  ;
+PT+ACR:PT  ACRO_GRAMMA  ;
+PTE+ACR:PTE  ACRO_EE  ;
+PT+N:PT  ACRO_EE  ;
+PTO+ACR:PTO  ACRO_OO  ;
+PTS+ACR:PTS  ACRO_ÄKS  ;
+PTT+ACR+Prop+Sem%/Org:PTT  ACRO_EE  ;
+Purcell% &% Co+ACR+Prop+Sem%/Org:Purcell% &% Co    ACRO_OO  ;
+pv+ACR:pv  ACRO_EE  ;
+pV+ACR:pV  ACRO_EE  ;
+PV+ACR:PV  ACRO_EE  ;
+pV+ACR:pV  ACRO_OHMI  ;
+PV+ACR:PV  ACRO_OHMI  ;
+pvc+ACR:pvc  ACRO_EE  ;
+pvc+ACR:pvc  ACRO_WEBER  ;
+PvTK+ACR+Prop+Sem%/Org:PvTK  ACRO_OO  ;
+pW+ACR:pW  ACRO_EE  ;
+PW+ACR:PW  ACRO_EE  ;
+pW+ACR:pW  ACRO_OHMI  ;
+PW+ACR:PW  ACRO_OHMI  ;
+pWb+ACR:pWb  ACRO_EE  ;
+PWb+ACR:PWb  ACRO_EE  ;
+pWb+ACR:pWb  ACRO_WEBER  ;
+PWb+ACR:PWb  ACRO_WEBER  ;
+PwC+ACR+Prop+Sem%/Org:PwC  ACRO_EE  ;
+PYG+ACR:PYG  ACRO_EE  ;
+Pöyry% CM+ACR+Prop+Sem%/Org:Pöyry% CM ACRO_ÄKS  ;
+pΩ+ACR:pΩ  ACRO_METRI  ;
+PΩ+ACR:PΩ  ACRO_METRI  ;
+pΩ+ACR:pΩ  ACRO_OHMI  ;
+PΩ+ACR:PΩ  ACRO_OHMI  ;
+q+ACR:q  ACRO_UU  ;
+Q+ACR:Q  ACRO_UU  ;
+QAR+ACR:QAR  ACRO_ÄKS  ;
+q+N:q  ACRO_UU  ;
+Q+N:Q  ACRO_UU  ;
+QR+ACR:QR  ACRO_ÄKS  ;
+RAC+ACR+Prop:RAC  ACRO_EE  ;
+RAC+N:RAC  ACRO_EE  ;
+R$+ACR:R$  ACRO_DOLLARI  ;
+R$+ACR:R$  ACRO_WEBER  ;
+r+ACR:r  ACRO_ÄKS  ;
+R+ACR:R  ACRO_ÄKS  ;
+rad+ACR:rad  ACRO_DOLLARI  ;
+rad+ACR:rad  ACRO_EE  ;
+Rahastoyhtiö% Seligson% &% Co+ACR+Prop+Sem%/Org:Rahastoyhtiö% Seligson% &% Co   ACRO_OO  ;
+Rakennusteollisuus% RT+ACR+Prop+Sem%/Org:Rakennusteollisuus% RT   ACRO_EE  ;
+RAKLI+ACR+Prop+Sem%/Org:RAKLI  ACRO_II  ;
+RAM+ACR:RAM  ACRO_ÄKS  ;
+RAY+ACR:RAY  ACRO_YHDISTYS  ;
+RAY+ACR:RAY  ACRO_YY  ;
+RBC+ACR+Prop+Sem%/Org:RBC  ACRO_EE  ;
+Rbl+ACR:Rbl  ACRO_ÄKS  ;
+RBS+ACR+Prop+Sem%/Org:RBS  ACRO_ÄKS  ;
+RD$+ACR:RD$  ACRO_DOLLARI  ;
+RD$+ACR:RD$  ACRO_WEBER  ;
+re+ACR:re  ACRO_EE  ;
+rek.nro+ACR:rek.nro  ACRO_JÄRJESTÖ  ;
+rek.nro+ACR:rek.nro  ACRO_OO  ;
+rek.tn+ACR:rek.tn  ACRO_METRI  ;
+rek.tn+ACR:rek.tn  ACRO_ÄKS  ;
+REM+ACR:REM  ACRO_ÄKS  ;
+Repsol-YPF+ACR+Prop+Sem%/Org:Repsol-YPF  ACRO_ÄKS  ;
+RFSU+ACR+Prop+Sem%/Org:RFSU  ACRO_UU  ;
+RHD+ACR:RHD  ACRO_EE  ;
+RHJ+ACR+Prop+Sem%/Org:RHJ  ACRO_II  ;
+Rhythm% Watch% Co+ACR+Prop+Sem%/Org:Rhythm% Watch% Co  ACRO_OO  ;
+RI+ACR+Prop+Sem%/Org:RI  ACRO_II  ;
+R&I+ACR:R&I  ACRO_II  ;
+RIM+ACR+Prop+Sem%/Org:RIM  ACRO_ÄKS  ;
+rkl+ACR:rkl  ACRO_LUSIKKA  ;
+rkl+ACR:rkl  ACRO_ÄKS  ;
+RKP+ACR+Prop+Sem%/Org:RKP  ACRO_EE  ;
+RKP+ACR:RKP  ACRO_TUOTE  ;
+Rkr+ACR:Rkr  ACRO_ÄKS  ;
+RKT+ACR:RKT  ACRO_EE  ;
+RKTL+ACR+Prop+Sem%/Org:RKTL  ACRO_ÄKS  ;
+RL+ACR:RL  ACRO_OHMI  ;
+rl+ACR:rl  ACRO_ÄKS  ;
+RL+ACR:RL  ACRO_ÄKS  ;
+RM+ACR:RM  ACRO_ÄKS  ;
+rna+ACR:rna  ACRO_AA  ;
+RNA+N:RNA  ACRO_AA  ;   !!= * {{@CODE@}} Ribonucleic Acid
+r+N:r  ACRO_ÄKS  ;
+R+N:R  ACRO_ÄKS  ;
+RO+ACR+Prop+Sem%/Org:RO  ACRO_OO  ;
+ROL+ACR:ROL  ACRO_ÄKS  ;
+ROM+ACR:ROM  ACRO_ÄKS  ;
+RON+ACR:RON  ACRO_ÄKS  ;
+RoPS+ACR+Prop+Sem%/Org:RoPS  ACRO_ÄKS  ;
+RP+ACR+Prop:RP  ACRO_EE  ;
+Rp+ACR:Rp  ACRO_EE  ;
+rpl+ACR:rpl  ACRO_ÄKS  ;
+RP+N:RP  ACRO_EE  ;
+RSA+ACR:RSA  ACRO_AA  ;
+r/s+ACR:r/s  ACRO_METRI  ;
+rs+ACR:rs  ACRO_METRI  ;
+r/s+ACR:r/s  ACRO_ÄKS  ;
+rs+ACR:rs  ACRO_ÄKS  ;
+RSD+ACR:RSD  ACRO_EE  ;
+rsi+ACR:rsi  ACRO_II  ;
+RSS+ACR:RSS  ACRO_ÄKS  ;
+RSS+N:RSS  ACRO_ÄKS  ; !!= * {{@CODE@}} R
+rt+ACR:rt  ACRO_EE  ;
+RTE+ACR+Prop+Sem%/Org:RTE  ACRO_EE  ;
+rtg+ACR:rtg  ACRO_EE  ;
+RTL+ACR+Prop+Sem%/Org:RTL  ACRO_ÄKS  ;
+RTS+ACR+Prop+Sem%/Org:RTS  ACRO_ÄKS  ;
+RU+ACR+Prop+Sem%/Geo:RU  ACRO_UU  ;
+RUB+ACR:RUB  ACRO_EE  ;
+RUK+ACR+Prop+Sem%/Org:RUK  ACRO_OO  ;
+RUR+ACR:RUR  ACRO_ÄKS  ;
+RUS+ACR+Prop+Sem%/Geo:RUS  ACRO_ÄKS  ;
+RVL+ACR+Prop+Sem%/Org:RVL  ACRO_ÄKS  ;
+RVLE+ACR:RVLE  ACRO_EE  ;
+RWE+ACR+Prop+Sem%/Org:RWE  ACRO_EE  ;
+RWF+ACR:RWF  ACRO_ÄKS  ;
+RWI+ACR+Prop+Sem%/Org:RWI  ACRO_II  ;
+ry+ACR:ry  ACRO_YY  ;
+s2+ACR:s2  ACRO_KAKSI  ;
+SAAB+ACR+Prop+Sem%/Org:SAAB  ACRO_EE  ;
+Saab% Parts% GB+ACR+Prop+Sem%/Org:Saab% Parts% GB  ACRO_EE  ;
+SA+ACR+Prop+Sem%/Org:SA  ACRO_AA  ;
+SA+ACR:SA  ACRO_PUNTA  ;
+SaaS+ACR:SaaS  ACRO_ÄKS  ;
+S$+ACR:S$  ACRO_DOLLARI  ;
+s+ACR:s  ACRO_METRI  ;
+S+ACR:S  ACRO_METRI  ;
+S$+ACR:S$  ACRO_WEBER  ;
+s+ACR:s  ACRO_ÄKS  ;
+S+ACR:S  ACRO_ÄKS  ;
+š+ACR:š  ACRO_ÄKS  ;
+Š+ACR:Š  ACRO_ÄKS  ;
+SAE+ACR+Prop+Sem%/Org:SAE  ACRO_EE  ;
+SAFA+ACR+Prop+Sem%/Org:SAFA  ACRO_AA  ;
+SAIC+ACR+Prop+Sem%/Org:SAIC  ACRO_EE  ;
+SAJ+ACR+Prop+Sem%/Org:SAJ  ACRO_II  ;
+SAK+ACR+Prop+Sem%/Org:SAK  ACRO_OO  ;
+SAK+ACR:SAK  ACRO_JÄRJESTÖ  ;
+SAK+N:SAK  ACRO_OO  ;  !!= * {{@CODE@}} Suomen Ammattiliittojen Keskusjärjestö
+S.A.L.I+ACR+Prop+Sem%/Org:S.A.L.I  ACRO_II  ;
+SAMOK+ACR+Prop+Sem%/Org:SAMOK  ACRO_OO  ;
+Santander% BR+ACR+Prop+Sem%/Org:Santander% BR ACRO_ÄKS  ;
+SAP+ACR+Prop+Sem%/Org:SAP  ACRO_EE  ;
+SAR+ACR:SAR  ACRO_ÄKS  ;
+SAS+ACR+Prop+Sem%/Org:SAS  ACRO_ÄKS  ;
+SASK+ACR:SASK  ACRO_CELSIUS  ;
+SASK+ACR:SASK  ACRO_OO  ;
+SAS+N:SAS  ACRO_ÄKS  ;
+SatKS+ACR+Prop+Sem%/Org:SatKS  ACRO_ÄKS  ;
+SatO+ACR+Prop+Sem%/Org:SatO  ACRO_OO  ;
+SATS+ACR+Prop+Sem%/Org:SATS  ACRO_ÄKS  ;
+SATU+ACR+Prop+Sem%/Org:SATU  ACRO_UU  ;
+SavO+ACR+Prop+Sem%/Org:SavO  ACRO_OO  ;
+SBAB+ACR+Prop+Sem%/Org:SBAB  ACRO_EE  ;
+SBD+ACR:SBD  ACRO_EE  ;
+SBS+ACR+Prop+Sem%/Org:SBS  ACRO_ÄKS  ;
+SCA+ACR+Prop+Sem%/Org:SCA  ACRO_AA  ;
+SCR+ACR:SCR  ACRO_ÄKS  ;
+SDD+ACR:SDD  ACRO_EE  ;
+SDG+ACR:SDG  ACRO_EE  ;
+Sdp+ACR+Prop+Sem%/Org:Sdp  ACRO_EE  ;
+SDP+ACR+Prop+Sem%/Org:SDP  ACRO_EE  ;
+Sdp+ACR:Sdp  ACRO_TUOTE  ;
+SDP+ACR:SDP  ACRO_TUOTE  ;
+SDP+N:SDP  ACRO_EE  ;  !!= * {{@CODE@}} Sosiali-Demokraattinen Puolue 
+SEA+ACR+Prop+Sem%/Org:SEA  ACRO_AA  ;
+SE+ACR:SE  ACRO_EE  ;
+Seat24+ACR+Prop+Sem%/Org:Seat24  ACRO_NELJÄ  ;
+SEB+ACR+Prop+Sem%/Org:SEB  ACRO_EE  ;
+SEC+ACR+Prop+Sem%/Org:SEC  ACRO_EE  ;
+SEFE+ACR+Prop+Sem%/Org:SEFE  ACRO_EE  ;
+SEK+ACR:SEK  ACRO_OO  ;
+SEL+ACR+Prop+Sem%/Org:SEL  ACRO_ÄKS  ;
+Seligson% &% Co+ACR+Prop+Sem%/Org:Seligson% &% Co  ACRO_OO  ;
+SELMU+ACR+Prop+Sem%/Org:SELMU  ACRO_UU  ;
+SEPA+ACR:SEPA  ACRO_AA  ;
+SESKO+ACR+Prop+Sem%/Org:SESKO  ACRO_OO  ;
+SETA+ACR+Prop+Sem%/Org:SETA  ACRO_AA  ;
+SETA+ACR:SETA  ACRO_TALO  ;
+SEV+ACR+Prop+Sem%/Org:SEV  ACRO_EE  ;
+SEY+ACR+Prop+Sem%/Org:SEY  ACRO_YY  ;
+Sf+ACR:Sf  ACRO_ÄKS  ;
+Sfr+ACR:Sfr  ACRO_ÄKS  ;
+SFS+ACR+Prop+Sem%/Org:SFS  ACRO_ÄKS  ;
+SGD+ACR:SGD  ACRO_EE  ;
+SGML+ACR:SGML  ACRO_ÄKS  ;
+SGML+N:SGML  ACRO_ÄKS  ;   !!= * {{@CODE@}} Standardised General Markup Language
+SGN+ACR+Prop+Sem%/Org:SGN  ACRO_ÄKS  ;
+SHH+ACR+Prop+Sem%/Org:SHH  ACRO_OO  ;
+SHO+ACR:SHO  ACRO_OO  ;
+SHP+ACR:SHP  ACRO_EE  ;
+sia+ACR:sia  ACRO_AA  ;
+SI$+ACR:SI$  ACRO_DOLLARI  ;
+SI+ACR:SI  ACRO_II  ;
+SI$+ACR:SI$  ACRO_WEBER  ;
+SibA+ACR+Prop+Sem%/Org:SibA  ACRO_AA  ;
+SibA+ACR:SibA  ACRO_KANDELA  ;
+SIT+ACR:SIT  ACRO_EE  ;
+SITRA+ACR+Prop+Sem%/Org:SITRA  ACRO_AA  ;
+SK+ACR+Prop:SK  ACRO_OO  ;
+SK+ACR:SK  ACRO_LEHTI  ;
+SK+ACR:SK  ACRO_OHMI  ;
+Sk+ACR:Sk  ACRO_OO  ;
+SKAL+ACR+Prop+Sem%/Org:SKAL  ACRO_ÄKS  ;
+SKDL+ACR+Prop+Sem%/Org:SKDL  ACRO_ÄKS  ;
+SKDL+N:SKDL  ACRO_ÄKS  ; !!= * {{@CODE@}} Suomen Kristillis-Demokraattien Liitto
+SKK+ACR:SKK  ACRO_OO  ;
+SKL+ACR+Prop+Sem%/Org:SKL  ACRO_ÄKS  ;
+SKL+N:SKL  ACRO_ÄKS  ;
+SK+N:SK  ACRO_OO  ;
+SKOP+ACR+Prop+Sem%/Org:SKOP  ACRO_EE  ;
+Skp+ACR+Prop+Sem%/Org:Skp  ACRO_EE  ;
+SKP+ACR+Prop+Sem%/Org:SKP  ACRO_EE  ;
+Skp+ACR:Skp  ACRO_TUOTE  ;
+SKP+ACR:SKP  ACRO_TUOTE  ;
+Skp+N:Skp  ACRO_EE  ; !!= * {{@CODE@}} Suomen keskuspankki
+SKr+ACR:SKr  ACRO_ÄKS  ;
+SKS+ACR+Prop+Sem%/Org:SKS  ACRO_ÄKS  ;
+SKS+ACR:SKS  ACRO_GRAMMA  ;
+SKV+ACR+Prop+Sem%/Org:SKV  ACRO_EE  ;
+SLA+ACR:SLA  ACRO_AA  ;
+SLL+ACR+Prop+Sem%/Org:SLL  ACRO_ÄKS  ;
+SLL+ACR:SLL  ACRO_JÄRJESTÖ  ;
+SL% Re+ACR:SL% Re   ACRO_EE  ;
+SLS+ACR+Prop+Sem%/Org:SLS  ACRO_ÄKS  ;
+SLSY+ACR+Prop+Sem%/Org:SLSY  ACRO_YY  ;
+SLU+ACR+Prop+Sem%/Org:SLU  ACRO_UU  ;
+SM+ACR:SM  ACRO_WEBER  ;
+SM+ACR:SM  ACRO_ÄKS  ;
+SMP+ACR+Prop+Sem%/Org:SMP  ACRO_EE  ;
+SMP+ACR:SMP  ACRO_TUOTE  ;
+SMRT+ACR+Prop+Sem%/Org:SMRT  ACRO_EE  ;
+SMS+ACR:SMS  ACRO_ÄKS  ;
+s+N:s  ACRO_ÄKS  ;
+S+N:S  ACRO_ÄKS  ;
+š+N:š  ACRO_ÄKS  ;
+Š+N:Š  ACRO_ÄKS  ;
+SNS+ACR+Prop+Sem%/Org:SNS  ACRO_ÄKS  ;
+snt+ACR:snt  ACRO_EE  ;
+SNT+ACR:SNT  ACRO_EE  ;
+snt+ACR:snt  ACRO_METRI  ;
+SNTL+ACR+Prop+Sem%/Geo:SNTL  ACRO_ÄKS  ;
+SOA+ACR+Prop+Sem%/Org:SOA  ACRO_AA  ;
+so+ACR:so  ACRO_OO  ;
+SOAP+ACR:SOAP  ACRO_EE  ;
+SOAP+N:SOAP  ACRO_EE  ;
+SOK+ACR:SOK  ACRO_GRAMMA  ;
+SOK+ACR:SOK  ACRO_OO  ;
+SOK+N:SOK  ACRO_OO  ;  !!= * {{@CODE@}} Suomen Osuus-Kauppa
+SOOL+ACR+Prop+Sem%/Org:SOOL  ACRO_ÄKS  ;
+sora-r+ACR:sora-r  ACRO_ÄKS  ;
+SOS+ACR:SOS  ACRO_ÄKS  ;
+SOTE+ACR:SOTE  ACRO_EE  ;
+SP+ACR+Prop+Sem%/Org:SP  ACRO_EE  ;
+S&P+ACR:S&P  ACRO_EE  ;
+SPAL+ACR+Prop+Sem%/Org:SPAL  ACRO_ÄKS  ;
+SPR+ACR+Prop+Sem%/Org:SPR  ACRO_ÄKS  ;
+SPR+N:SPR  ACRO_ÄKS  ; !!= * {{@CODE@}} Suomen Punainen Risti
+SQL+ACR:SQL  ACRO_ÄKS  ;
+SQL+N:SQL  ACRO_ÄKS  ; !!= * {{@CODE@}} Structured Query Language
+sr+ACR:sr  ACRO_WEBER  ;
+sr+ACR:sr  ACRO_ÄKS  ;
+SR+ACR:SR  ACRO_ÄKS  ;
+SRD+ACR:SRD  ACRO_EE  ;
+SRG+ACR:SRG  ACRO_EE  ;
+srk+ACR:srk  ACRO_GRAMMA  ;
+srk+ACR:srk  ACRO_OO  ;
+SRl+ACR:SRl  ACRO_ÄKS  ;
+SRMY+ACR+Prop+Sem%/Org:SRMY  ACRO_YY  ;
+SRV+ACR+Prop+Sem%/Org:SRV  ACRO_EE  ;
+SSA+ACR:SSA  ACRO_AA  ;
+SSKH+ACR+Prop+Sem%/Org:SSKH  ACRO_OO  ;
+SSP+ACR+Prop:SSP  ACRO_EE  ;
+SSSR+ACR+Prop+Sem%/Geo:SSSR  ACRO_ÄKS  ;
+ST+ACR:ST  ACRO_EE  ;
+Stakes+ACR+Prop+Sem%/Org:Stakes  ACRO_ÄKS  ;
+START+ACR:START  ACRO_EE  ;
+std+ACR:std  ACRO_EE  ;
+STD+ACR:STD  ACRO_EE  ;
+STHL+ACR+Prop+Sem%/Org:STHL  ACRO_ÄKS  ;
+STK+ACR+Prop+Sem%/Org:STK  ACRO_OO  ;
+STM+ACR:STM  ACRO_ÄKS  ;
+STS+ACR+Prop+Sem%/Org:STS  ACRO_ÄKS  ;
+STT+ACR+Prop+Sem%/Org:STT  ACRO_EE  ;
+STT+ACR:STT  ACRO_JÄRJESTÖ  ;
+STTK+ACR+Prop+Sem%/Org:STTK  ACRO_OO  ;
+STTK+N:STTK  ACRO_OO  ;
+STT+N:STT  ACRO_EE  ;  !!= * {{@CODE@}} Suomen Tieto-Toimisto
+STTV+ACR+Prop+Sem%/Org:STTV  ACRO_EE  ;
+STUK+ACR+Prop+Sem%/Org:STUK  ACRO_OO  ;
+STX+ACR+Prop+Sem%/Org:STX  ACRO_ÄKS  ;
+STX% OSV+ACR+Prop+Sem%/Org:STX% OSV   ACRO_EE  ;
+SUB+ACR+Prop+Sem%/Org:SUB  ACRO_EE  ;
+SubTV+ACR+Prop+Sem%/Org:SubTV  ACRO_EE  ;
+SUKOL+ACR+Prop+Sem%/Org:SUKOL  ACRO_ÄKS  ;
+SUL+ACR+Prop+Sem%/Org:SUL  ACRO_ÄKS  ;
+SUL+N:SUL  ACRO_ÄKS  ; !!= * {{@CODE@}} Suomen Urheilu-Liitto
+Suomen% UNICEF+ACR+Prop+Sem%/Org:Suomen% UNICEF   ACRO_ÄKS  ;
+Suomi24+ACR+Prop+Sem%/Org:Suomi24  ACRO_NELJÄ  ;
+Suomi-Soffa% SSF+ACR+Prop+Sem%/Org:Suomi-Soffa% SSF   ACRO_ÄKS  ;
+SuomiTV+ACR+Prop+Sem%/Org:SuomiTV  ACRO_EE  ;
+SUPO+ACR:SUPO  ACRO_DOLLARI  ;
+SUPO+ACR:SUPO  ACRO_OO  ;
+SUR+ACR:SUR  ACRO_ÄKS  ;
+SUVA+ACR:SUVA  ACRO_AA  ;
+sv+ACR:sv  ACRO_EE  ;
+Sv+ACR:Sv  ACRO_EE  ;
+SV+ACR:SV  ACRO_EE  ;
+Sv+ACR:Sv  ACRO_METRI  ;
+SVAL+ACR+Prop+Sem%/Org:SVAL  ACRO_ÄKS  ;
+SVC+ACR:SVC  ACRO_EE  ;
+Svenska.nu+ACR+Prop+Sem%/Org:Svenska.nu  ACRO_UU  ;
+SVL+ACR:SVL  ACRO_OHMI  ;
+SVL+ACR:SVL  ACRO_ÄKS  ;
+SV+N:SV  ACRO_EE  ;
+SVT+ACR+Prop+Sem%/Org:SVT  ACRO_EE  ;
+SVUL+ACR+Prop+Sem%/Org:SVUL  ACRO_ÄKS  ;
+SVUL+ACR:SVUL  ACRO_TALO  ;
+SVUL+N:SVUL  ACRO_ÄKS  ;
+SVVK+ACR+Prop+Sem%/Org:SVVK  ACRO_OO  ;
+SWE+ACR+Prop+Sem%/Geo:SWE  ACRO_EE  ;
+Sweco% PM+ACR+Prop+Sem%/Org:Sweco% PM ACRO_ÄKS  ;
+SwF+ACR:SwF  ACRO_ÄKS  ;
+SYKE+ACR+Prop+Sem%/Org:SYKE  ACRO_EE  ;
+SYL+ACR+Prop+Sem%/Org:SYL  ACRO_ÄKS  ;
+SYP+ACR+Prop+Sem%/Org:SYP  ACRO_EE  ;
+SYTY+ACR+Prop+Sem%/Org:SYTY  ACRO_YY  ;
+SZL+ACR:SZL  ACRO_ÄKS  ;
+T/A+ACR:T/A  ACRO_AA  ;
+TA+ACR:TA  ACRO_AA  ;
+T$+ACR:T$  ACRO_DOLLARI  ;
+t+ACR:t  ACRO_EE  ;
+T+ACR:T  ACRO_EE  ;
+T+ACR:T  ACRO_GRAMMA  ;
+T$+ACR:T$  ACRO_WEBER  ;
+TAE+ACR:TAE  ACRO_EE  ;
+TaEL+ACR:TaEL  ACRO_OHMI  ;
+TaEL+ACR:TaEL  ACRO_ÄKS  ;
+TaK+ACR:TaK  ACRO_OHMI  ;
+TaK+ACR:TaK  ACRO_OO  ;
+TaL+ACR:TaL  ACRO_OHMI  ;
+TaL+ACR:TaL  ACRO_ÄKS  ;
+TALK+ACR:TALK  ACRO_OO  ;
+TaM+ACR:TaM  ACRO_DOLLARI  ;
+TaM+ACR:TaM  ACRO_ÄKS  ;
+Tampereen% Urheilijat% -38+ACR+Prop+Sem%/Org:Tampereen% Urheilijat% -38    ACRO_KAHDEKSAN  ;
+TANE+ACR+Prop+Sem%/Org:TANE  ACRO_EE  ;
+TAO+ACR:TAO  ACRO_OO  ;
+TAP+ACR+Prop+Sem%/Org:TAP  ACRO_EE  ;
+TAPRI+ACR+Prop+Sem%/Org:TAPRI  ACRO_II  ;
+TASKU+ACR+Prop+Sem%/Org:TASKU  ACRO_UU  ;
+TaT+ACR:TaT  ACRO_DOLLARI  ;
+TaT+ACR:TaT  ACRO_EE  ;
+TaY+ACR+Prop+Sem%/Org:TaY  ACRO_YY  ;
+TaY+ACR:TaY  ACRO_JÄRJESTÖ  ;
+TAYS+ACR+Prop+Sem%/Org:TAYS  ACRO_ÄKS  ;
+TAYS+ACR:TAYS  ACRO_GRAMMA  ;
+TB+ACR:TB  ACRO_EE  ;
+TB+N:TB  ACRO_EE  ;
+TBq+ACR:TBq  ACRO_METRI  ;
+TBq+ACR:TBq  ACRO_UU  ;
+TBWA+ACR+Prop+Sem%/Org:TBWA  ACRO_AA  ;
+T°C+ACR:T°C  ACRO_CELSIUS  ;
+T°C+ACR:T°C  ACRO_EE  ;
+TC+ACR:TC  ACRO_EE  ;
+Tcd+ACR:Tcd  ACRO_EE  ;
+Tcd+ACR:Tcd  ACRO_KANDELA  ;
+TCL+ACR+Prop+Sem%/Org:TCL  ACRO_ÄKS  ;
+TCP+ACR:TCP  ACRO_EE  ;
+TCP/IP+ACR:TCP/IP  ACRO_EE  ;
+TCP/IP+N:TCP/IP  ACRO_EE  ; !!= * {{@CODE@}} Transmission Control Protocol / Internet Protocol
+TCP+N:TCP  ACRO_EE  ;  !!= * {{@CODE@}} Transmission Control Protocol
+TDC+ACR+Prop+Sem%/Org:TDC  ACRO_EE  ;
+TDF+ACR+Prop+Sem%/Org:TDF  ACRO_ÄKS  ;
+TE+ACR:TE  ACRO_EE  ;
+TeaK+ACR:TeaK  ACRO_OO  ;
+TeaK+ACR:TeaK  ACRO_TALO  ;
+TEAM+ACR+Prop+Sem%/Org:TEAM  ACRO_ÄKS  ;
+TEK+ACR+Prop+Sem%/Org:TEK  ACRO_OO  ;
+TeK+ACR:TeK  ACRO_OO  ;
+TeK+ACR:TeK  ACRO_WEBER  ;
+TEKEL+ACR+Prop+Sem%/Org:TEKEL  ACRO_ÄKS  ;
+Teknologian% tutkimuskeskus% VTT+ACR+Prop+Sem%/Org:Teknologian% tutkimuskeskus% VTT    ACRO_EE  ;
+TELA+ACR+Prop+Sem%/Org:TELA  ACRO_AA  ;
+TEL+ACR:TEL  ACRO_OHMI  ;
+TeL+ACR:TeL  ACRO_WEBER  ;
+TeL+ACR:TeL  ACRO_ÄKS  ;
+TEL+ACR:TEL  ACRO_ÄKS  ;
+Tele2+ACR+Prop+Sem%/Org:Tele2  ACRO_KAKSI  ;
+TEM+ACR+Prop+Sem%/Org:TEM  ACRO_ÄKS  ;
+TeM+ACR:TeM  ACRO_METRI  ;
+TeM+ACR:TeM  ACRO_ÄKS  ;
+TEO+ACR+Prop+Sem%/Org:TEO  ACRO_OO  ;
+TEO% LT+ACR+Prop+Sem%/Org:TEO% LT ACRO_EE  ;
+TES+ACR:TES  ACRO_YHDISTYS  ;
+TES+ACR:TES  ACRO_ÄKS  ;
+TeT+ACR:TeT  ACRO_EE  ;
+TET+ACR:TET  ACRO_EE  ;
+TeT+ACR:TeT  ACRO_WEBER  ;
+TEVA+ACR:TEVA  ACRO_AA  ;
+TF+ACR+Prop+Sem%/Org:TF  ACRO_METRI  ;
+TF+ACR+Prop+Sem%/Org:TF  ACRO_ÄKS  ;
+Tg+ACR:Tg  ACRO_EE  ;
+Tg+ACR:Tg  ACRO_GRAMMA  ;
+TGC-1%0+ACR+Prop+Sem%/Org:TGC-10  ACRO_NOLLA  ;
+TGK-5+ACR+Prop+Sem%/Org:TGK-5  ACRO_VIISI  ;
+TGV+ACR:TGV  ACRO_EE  ;
+TGy+ACR:TGy  ACRO_GRAY  ;
+TGy+ACR:TGy  ACRO_YY  ;
+TH+ACR+Prop+Sem%/Org:TH  ACRO_OO  ;
+TH+ACR:TH  ACRO_METRI  ;
+THB+ACR:THB  ACRO_EE  ;
+THL+ACR+Prop+Sem%/Org:THL  ACRO_ÄKS  ;
+THz+ACR:THz  ACRO_METRI  ;
+THz+ACR:THz  ACRO_ZET  ;
+TI+ACR+Prop:TI  ACRO_II  ;
+ti+ACR:ti  ACRO_II  ;
+TIF+ACR:TIF  ACRO_ÄKS  ;
+TIFF+ACR:TIFF  ACRO_ÄKS  ;
+Tiffany% &% Co+ACR+Prop+Sem%/Org:Tiffany% &% Co    ACRO_OO  ;
+TIKE+ACR+Prop+Sem%/Org:TIKE  ACRO_EE  ;
+TI+N:TI  ACRO_II  ;    !!= * {{@CODE@}} Texas Instruments
+TIR+ACR:TIR  ACRO_ÄKS  ;
+TIVIT+ACR+Prop+Sem%/Org:TIVIT  ACRO_EE  ;
+TJ+ACR:TJ  ACRO_II  ;
+TJ+ACR:TJ  ACRO_JOULE  ;
+TJR+ACR:TJR  ACRO_ÄKS  ;
+TJS+ACR:TJS  ACRO_ÄKS  ;
+TK+ACR+Prop+Sem%/Org:TK  ACRO_OO  ;
+TK+ACR:TK  ACRO_METRI  ;
+t&k+ACR:t&k  ACRO_OO  ;
+Tk+ACR:Tk  ACRO_OO  ;
+Tkat+ACR:Tkat  ACRO_EE  ;
+Tkat+ACR:Tkat  ACRO_OHMI  ;
+TKK+ACR+Prop+Sem%/Org:TKK  ACRO_OO  ;
+TkK+ACR:TkK  ACRO_OHMI  ;
+TkK+ACR:TkK  ACRO_OO  ;
+TKK+ACR:TKK  ACRO_TALO  ;
+TKL+ACR+Prop+Sem%/Org:TKL  ACRO_ÄKS  ;
+TkL+ACR:TkL  ACRO_OHMI  ;
+TkL+ACR:TkL  ACRO_ÄKS  ;
+Tkr+ACR:Tkr  ACRO_ÄKS  ;
+TkT+ACR:TkT  ACRO_DOLLARI  ;
+TkT+ACR:TkT  ACRO_EE  ;
+TKT+ACR:TKT  ACRO_EE  ;
+TLAB+ACR+Prop+Sem%/Org:TLAB  ACRO_EE  ;
+TL+ACR:TL  ACRO_OHMI  ;
+tl+ACR:tl  ACRO_ÄKS  ;
+TL+ACR:TL  ACRO_ÄKS  ;
+tlk+ACR:tlk  ACRO_LUSIKKA  ;
+tlk+ACR:tlk  ACRO_OO  ;
+Tlm+ACR:Tlm  ACRO_METRI  ;
+Tlm+ACR:Tlm  ACRO_ÄKS  ;
+Tlx+ACR:Tlx  ACRO_METRI  ;
+Tlx+ACR:Tlx  ACRO_ÄKS  ;
+TMA+ACR+Prop+Sem%/Org:TMA  ACRO_AA  ;
+TM+ACR+Prop:TM  ACRO_DOLLARI  ;
+TM+ACR+Prop:TM  ACRO_ÄKS  ;
+Tm+ACR:Tm  ACRO_METRI  ;
+Tm+ACR:Tm  ACRO_ÄKS  ;
+TMB+ACR+Prop+Sem%/Org:TMB  ACRO_EE  ;
+tmk+ACR:tmk  ACRO_OO  ;
+TMK+ACR:TMK  ACRO_OO  ;
+TMM+ACR:TMM  ACRO_ÄKS  ;
+TM+N:TM  ACRO_ÄKS  ;   !!= * {{@CODE@}} Tekniikan Maailma
+T-Mobile% USA+ACR+Prop+Sem%/Org:T-Mobile% USA ACRO_AA  ;
+Tmol+ACR:Tmol  ACRO_OHMI  ;
+Tmol+ACR:Tmol  ACRO_ÄKS  ;
+TMT+ACR:TMT  ACRO_EE  ;
+TN+ACR:TN  ACRO_METRI  ;
+tn+ACR:tn  ACRO_ÄKS  ;
+TN+ACR:TN  ACRO_ÄKS  ;
+TND+ACR:TND  ACRO_EE  ;
+TNK-BP+ACR+Prop+Sem%/Org:TNK-BP  ACRO_EE  ;
+t+N:t  ACRO_EE  ;
+T+N:T  ACRO_EE  ;
+TOAS+ACR+Prop+Sem%/Org:TOAS  ACRO_ÄKS  ;
+TOKYO+ACR+Prop+Sem%/Org:TOKYO  ACRO_OO  ;
+TOP+ACR:TOP  ACRO_EE  ;
+TopK+ACR+Prop+Sem%/Org:TopK  ACRO_OO  ;
+Tornion% Lentis% –88+ACR+Prop+Sem%/Org:Tornion% Lentis% –88    ACRO_KAHDEKSAN  ;
+TPa+ACR:TPa  ACRO_AA  ;
+TPa+ACR:TPa  ACRO_DOLLARI  ;
+TPE+ACR:TPE  ACRO_EE  ;
+TPG+ACR+Prop+Sem%/Org:TPG  ACRO_EE  ;
+TPK+ACR+Prop+Sem%/Org:TPK  ACRO_OO  ;
+TPS+ACR+Prop+Sem%/Org:TPS  ACRO_ÄKS  ;
+TPS+N:TPS  ACRO_ÄKS  ; !!= * {{@CODE@}} Turun Pallo-Seura
+Trad+ACR:Trad  ACRO_DOLLARI  ;
+Trad+ACR:Trad  ACRO_EE  ;
+TRL+ACR:TRL  ACRO_ÄKS  ;
+TRY+ACR:TRY  ACRO_YY  ;
+TS+ACR+Prop:TS  ACRO_ÄKS  ;
+Ts+ACR:Ts  ACRO_METRI  ;
+TS+ACR:TS  ACRO_METRI  ;
+Ts+ACR:Ts  ACRO_ÄKS  ;
+TSEMPPI+ACR+Prop+Sem%/Org:TSEMPPI  ACRO_II  ;
+T% Sh+ACR:T% Sh ACRO_OO  ;
+TSK+ACR+Prop+Sem%/Org:TSK  ACRO_OO  ;
+TSL+ACR+Prop+Sem%/Org:TSL  ACRO_ÄKS  ;
+TS+N:TS  ACRO_ÄKS  ;   !!= * {{@CODE@}} Turun Sanomat
+Tsr+ACR:Tsr  ACRO_WEBER  ;
+Tsr+ACR:Tsr  ACRO_ÄKS  ;
+TSv+ACR:TSv  ACRO_EE  ;
+TSv+ACR:TSv  ACRO_METRI  ;
+TT+ACR+Prop+Sem%/Org:TT  ACRO_EE  ;
+TT$+ACR:TT$  ACRO_DOLLARI  ;
+TT+ACR:TT  ACRO_GRAMMA  ;
+TT$+ACR:TT$  ACRO_WEBER  ;
+TTD+ACR:TTD  ACRO_EE  ;
+TTK+ACR+Prop+Sem%/Org:TTK  ACRO_OO  ;
+TtK+ACR:TtK  ACRO_OHMI  ;
+TTK+ACR:TTK  ACRO_OHMI  ;
+TtK+ACR:TtK  ACRO_OO  ;
+TTKK+ACR+Prop+Sem%/Org:TTKK  ACRO_OO  ;
+TTKK+ACR:TTKK  ACRO_TALO  ;
+TTKK+N:TTKK  ACRO_OO  ;  
+TTL+ACR+Prop+Sem%/Org:TTL  ACRO_ÄKS  ;
+TtL+ACR:TtL  ACRO_OHMI  ;
+TTL+ACR:TTL  ACRO_OHMI  ;
+TtL+ACR:TtL  ACRO_ÄKS  ;
+TtM+ACR:TtM  ACRO_DOLLARI  ;
+TTM+ACR:TTM  ACRO_DOLLARI  ;
+TtM+ACR:TtM  ACRO_ÄKS  ;
+TTM+ACR:TTM  ACRO_ÄKS  ;
+TTS+ACR:TTS  ACRO_ÄKS  ;
+TTT+ACR:TTT  ACRO_DOLLARI  ;
+TtT+ACR:TtT  ACRO_EE  ;
+TTT+ACR:TTT  ACRO_EE  ;
+TtT+ACR:TtT  ACRO_WEBER  ;
+TTY+ACR+Prop+Sem%/Org:TTY  ACRO_YY  ;
+TTY+ACR:TTY  ACRO_JÄRJESTÖ  ;
+TU+ACR+Prop+Sem%/Org:TU  ACRO_UU  ;
+Tug+ACR:Tug  ACRO_EE  ;
+TUI+ACR+Prop+Sem%/Org:TUI  ACRO_II  ;
+TUKES+ACR+Prop+Sem%/Org:TUKES  ACRO_ÄKS  ;
+TuKKK+ACR+Prop+Sem%/Org:TuKKK  ACRO_OO  ;
+TUL+ACR+Prop+Sem%/Org:TUL  ACRO_ÄKS  ;
+TULE+ACR:TULE  ACRO_EE  ;
+Turun% NMKY+ACR+Prop+Sem%/Org:Turun% NMKY ACRO_YY  ;
+tus+ACR:tus  ACRO_ÄKS  ;
+TV1+ACR+Prop+Sem%/Org:TV1  ACRO_YKSI  ;
+TV2+ACR+Prop+Sem%/Org:TV2  ACRO_KAKSI  ;
+tv+ACR:tv  ACRO_EE  ;
+TV+ACR:TV  ACRO_EE  ;
+tv+ACR:tv  ACRO_GRAY  ;
+TV+ACR:TV  ACRO_OHMI  ;
+TVK+ACR+Prop+Sem%/Org:TVK  ACRO_OO  ;
+tv+N:tv  ACRO_EE  ;    !!= * {{@CODE@}} tele-visio
+TVO+ACR+Prop+Sem%/Org:TVO  ACRO_OO  ;
+tvt+ACR:tvt  ACRO_EE  ;
+tvt+ACR:tvt  ACRO_LUSIKKA  ;
+TW+ACR:TW  ACRO_EE  ;
+TW+ACR:TW  ACRO_OHMI  ;
+TWb+ACR:TWb  ACRO_EE  ;
+TWb+ACR:TWb  ACRO_WEBER  ;
+TWD+ACR:TWD  ACRO_EE  ;
+TY+ACR+Prop+Sem%/Org:TY  ACRO_YY  ;
+TY+ACR:TY  ACRO_JÄRJESTÖ  ;
+ty+ACR:ty  ACRO_YY  ;
+TYK+ACR+Prop+Sem%/Org:TYK  ACRO_OO  ;
+TYKS+ACR+Prop+Sem%/Org:TYKS  ACRO_ÄKS  ;
+TYKS+ACR:TYKS  ACRO_GRAMMA  ;
+TYKY+ACR:TYKY  ACRO_YY  ;
+TYS+ACR+Prop+Sem%/Org:TYS  ACRO_ÄKS  ;
+TZS+ACR:TZS  ACRO_ÄKS  ;
+TΩ+ACR:TΩ  ACRO_METRI  ;
+TΩ+ACR:TΩ  ACRO_OHMI  ;
+U2+ACR+Prop+Sem/Human:U2  ACRO_KAKSI  ;
+U2+ACR+Prop+Sem%/Org:U2  ACRO_KAKSI  ;
+u+ACR:u  ACRO_UU  ;
+U+ACR:U  ACRO_UU  ;
+UAH+ACR:UAH  ACRO_OO  ;
+UAK+ACR:UAK  ACRO_OO  ;
+UAZ+ACR+Prop+Sem%/Org:UAZ  ACRO_ZET  ;
+UBS+ACR+Prop+Sem%/Org:UBS  ACRO_ÄKS  ;
+UEF+ACR+Prop+Sem%/Org:UEF  ACRO_ÄKS  ;
+UFO+ACR:UFO  ACRO_OO  ;
+UGS+ACR:UGS  ACRO_ÄKS  ;
+UGX+ACR:UGX  ACRO_ÄKS  ;
+UHT+ACR:UHT  ACRO_EE  ;
+UIL+ACR+Prop+Sem%/Org:UIL  ACRO_ÄKS  ;
+UK+ACR:UK  ACRO_OO  ;
+ukg+ACR:ukg  ACRO_EE  ;
+UKK+ACR:UKK  ACRO_OO  ;
+ula+ACR:ula  ACRO_AA  ;
+ula+ACR:ula  ACRO_TALO  ;
+ULI+ACR+Prop+Sem%/Org:ULI  ACRO_II  ;
+UM+ACR:UM  ACRO_ÄKS  ;
+UMO+ACR+Prop+Sem%/Org:UMO  ACRO_OO  ;
+umts+ACR:umts  ACRO_ÄKS  ;
+UNCED+ACR:UNCED  ACRO_EE  ;
+UNCTAD+ACR:UNCTAD  ACRO_EE  ;
+UNDP+ACR:UNDP  ACRO_EE  ;
+UNEP+ACR+Prop+Sem%/Org:UNEP  ACRO_EE  ;
+UNESCO+ACR+Prop+Sem%/Org:UNESCO  ACRO_OO  ;
+UNFPA+ACR+Prop+Sem%/Org:UNFPA  ACRO_AA  ;
+UNHCR+ACR+Prop+Sem%/Org:UNHCR  ACRO_ÄKS  ;
+UNICEF+ACR+Prop+Sem%/Org:UNICEF  ACRO_ÄKS  ;
+UNIDO+ACR+Prop+Sem%/Org:UNIDO  ACRO_OO  ;
+UNIFIL+ACR+Prop+Sem%/Org:UNIFIL  ACRO_ÄKS  ;
+UNITAR+ACR+Prop+Sem%/Org:UNITAR  ACRO_ÄKS  ;
+u+N:u  ACRO_UU  ;
+U+N:U  ACRO_UU  ;
+UNU+ACR+Prop+Sem%/Org:UNU  ACRO_UU  ;
+UNU-WIDER+ACR+Prop+Sem%/Org:UNU-WIDER  ACRO_ÄKS  ;
+UPA+ACR:UPA  ACRO_AA  ;
+UPI+ACR+Prop+Sem%/Org:UPI  ACRO_II  ;
+UPM+ACR+Prop+Sem%/Org:UPM  ACRO_ÄKS  ;
+UPS+ACR+Prop+Sem%/Org:UPS  ACRO_ÄKS  ;
+UPU+ACR+Prop+Sem%/Org:UPU  ACRO_UU  ;
+Ur$+ACR:Ur$  ACRO_DOLLARI  ;
+UrhoTV+ACR+Prop+Sem%/Org:UrhoTV  ACRO_EE  ;
+URHOtv+ACR+Prop+Sem%/Org:URHOtv  ACRO_EE  ;
+url+ACR:url  ACRO_ÄKS  ;
+URL+ACR:URL  ACRO_ÄKS  ;
+URL+N:URL  ACRO_ÄKS  ; !!= * {{@CODE@}} Uniform Resource Locator
+USA+ACR+Prop+Sem%/Geo:USA  ACRO_AA  ;
+US$+ACR:US$  ACRO_DOLLARI  ;
+USA+N:USA  ACRO_AA  ;  !!= * {{@CODE@}} United States of America
+USB+ACR:USB  ACRO_EE  ;
+USD+ACR:USD  ACRO_EE  ;
+USD+ACR:USD  ACRO_GRAMMA  ;
+U% Sh+ACR:U% Sh ACRO_OO  ;
+USN+ACR:USN  ACRO_ÄKS  ;
+USS+ACR:USS  ACRO_ÄKS  ;
+UT+ACR:UT  ACRO_EE  ;
+UTi+ACR+Prop+Sem%/Org:UTi  ACRO_II  ;
+UTVA+ACR:UTVA  ACRO_AA  ;
+UudPr+ACR+Prop+Sem%/Org:UudPr  ACRO_ÄKS  ;
+uv+ACR:uv  ACRO_DOLLARI  ;
+uv+ACR:uv  ACRO_EE  ;
+UVI+ACR+Prop+Sem%/Org:UVI  ACRO_II  ;
+UYI+ACR:UYI  ACRO_II  ;
+UYP+ACR:UYP  ACRO_EE  ;
+UYU+ACR:UYU  ACRO_UU  ;
+UZS+ACR:UZS  ACRO_ÄKS  ;
+uä+ACR:uä  ACRO_METRI  ;
+uä+ACR:uä  ACRO_ÄÄ  ;
+VA+ACR:VA  ACRO_AA  ;
+v+ACR:v  ACRO_EE  ;
+V+ACR:V  ACRO_EE  ;
+V+ACR:V  ACRO_OHMI  ;
+v+ACR:v  ACRO_VUOSI  ;
+VAG+ACR+Prop+Sem%/Org:VAG  ACRO_EE  ;
+VAHO+ACR+Prop+Sem%/Org:VAHO  ACRO_OO  ;
+VAK+ACR+Prop+Sem%/Org:VAK  ACRO_OO  ;
+VaKK+ACR+Prop+Sem%/Org:VaKK  ACRO_OO  ;
+VakO+ACR:VakO  ACRO_OO  ;
+Valvira+ACR+Prop+Sem%/Org:Valvira  ACRO_AA  ;
+VAMP+ACR+Prop+Sem%/Org:VAMP  ACRO_EE  ;
+VankO+ACR:VankO  ACRO_OO  ;
+VASEK+ACR+Prop+Sem%/Org:VASEK  ACRO_OO  ;
+VATT+ACR+Prop+Sem%/Org:VATT  ACRO_EE  ;
+VAV+ACR+Prop+Sem%/Org:VAV  ACRO_EE  ;
+VEB+ACR:VEB  ACRO_EE  ;
+VEF+ACR:VEF  ACRO_ÄKS  ;
+VEL+ACR:VEL  ACRO_OHMI  ;
+VEL+ACR:VEL  ACRO_ÄKS  ;
+VELL+ACR+Prop+Sem%/Org:VELL  ACRO_ÄKS  ;
+VEO+ACR+Prop+Sem%/Org:VEO  ACRO_OO  ;
+VES+ACR:VES  ACRO_ÄKS  ;
+VET+ACR+Prop+Sem%/Org:VET  ACRO_EE  ;
+VG-62+ACR+Prop+Sem%/Org:VG-62  ACRO_KAKSI  ;
+VGA+ACR:VGA  ACRO_AA  ;
+VH+ACR+Prop+Sem%/Org:VH  ACRO_OO  ;
+VHF+ACR:VHF  ACRO_ÄKS  ;
+VHKK+ACR+Prop+Sem%/Org:VHKK  ACRO_OO  ;
+VHL+ACR:VHL  ACRO_ÄKS  ;
+VHT+ACR:VHT  ACRO_EE  ;
+VI+ACR:VI  ACRO_II  ;
+Viestintäyhdistys% A&O+ACR+Prop+Sem%/Org:Viestintäyhdistys% A&O   ACRO_OO  ;
+Vihdin% Lentopallo-9%0+ACR+Prop+Sem%/Org:Vihdin% Lentopallo-90    ACRO_NOLLA  ;
+VIP+ACR:VIP  ACRO_EE  ;
+VIP+ACR:VIP  ACRO_METRI  ;
+VIP+N:VIP  ACRO_EE  ;  !!= * {{@CODE@}} Very Important Person
+VJ+ACR:VJ  ACRO_II  ;
+VK+ACR+Prop+Sem%/Org:VK  ACRO_OO  ;
+vk+ACR:vk  ACRO_OO  ;
+vk+ACR:vk  ACRO_TALO  ;
+VKL+ACR+Prop+Sem%/Org:VKL  ACRO_ÄKS  ;
+vkl+ACR:vkl  ACRO_TALO  ;
+vkl+ACR:vkl  ACRO_ÄKS  ;
+VKS+ACR:VKS  ACRO_ÄKS  ;
+VKSV+ACR+Prop+Sem%/Org:VKSV  ACRO_EE  ;
+VLP+ACR+Prop+Sem%/Org:VLP  ACRO_EE  ;
+VM+ACR:VM  ACRO_ÄKS  ;
+VMP+ACR+Prop+Sem%/Org:VMP  ACRO_EE  ;
+VN+ACR+Prop+Sem%/Org:VN  ACRO_ÄKS  ;
+VN+ACR:VN  ACRO_ÄKS  ;
+VND+ACR:VND  ACRO_EE  ;
+VNK+ACR:VNK  ACRO_OO  ;
+VNN+ACR:VNN  ACRO_ÄKS  ;
+v+N:v  ACRO_EE  ;
+V+N:V  ACRO_EE  ;
+VO+ACR:VO  ACRO_OO  ;
+Voimaosakeyhtiö% SF+ACR+Prop+Sem%/Org:Voimaosakeyhtiö% SF ACRO_ÄKS  ;
+Vola.ro% Student% Adventure% SRL+ACR+Prop+Sem%/Org:Vola.ro% Student% Adventure% SRL ACRO_ÄKS  ;
+Volvo% IT+ACR+Prop+Sem%/Org:Volvo% IT ACRO_EE  ;
+VOO+ACR+Prop+Sem%/Org:VOO  ACRO_OO  ;
+vpj+ACR:vpj  ACRO_II  ;
+vpj+ACR:vpj  ACRO_PUNTA  ;
+vpk+ACR:vpk  ACRO_OO  ;
+vpk+ACR:vpk  ACRO_PUNTA  ;
+VPS+ACR+Prop+Sem%/Org:VPS  ACRO_ÄKS  ;
+VPS+N:VPS  ACRO_ÄKS  ;
+VR+ACR+Prop+Sem%/Org:VR  ACRO_ÄKS  ;
+VRK+ACR+Prop+Sem%/Org:VRK  ACRO_OO  ;
+vrk+ACR:vrk  ACRO_OO  ;
+vrk+ACR:vrk  ACRO_VUOSI  ;
+VR+N:VR  ACRO_ÄKS  ;   !!= * {{@CODE@}} Valtion Rautatiet
+VSO+ACR+Prop+Sem%/Org:VSO  ACRO_OO  ;
+vt+ACR:vt  ACRO_EE  ;
+VT+ACR:VT  ACRO_EE  ;
+VTB+ACR+Prop+Sem%/Org:VTB  ACRO_EE  ;
+VTK+ACR:VTK  ACRO_OHMI  ;
+VTK+ACR:VTK  ACRO_OO  ;
+VTL+ACR:VTL  ACRO_OHMI  ;
+VTL+ACR:VTL  ACRO_ÄKS  ;
+VTM+ACR+Prop+Sem%/Org:VTM  ACRO_ÄKS  ;
+VTM+ACR:VTM  ACRO_DOLLARI  ;
+VTML+ACR+Prop+Sem%/Org:VTML  ACRO_ÄKS  ;
+VTT+ACR+Prop+Sem%/Org:VTT  ACRO_EE  ;
+VTT+ACR:VTT  ACRO_CELSIUS  ;
+VTT+ACR:VTT  ACRO_DOLLARI  ;
+VTT+N:VTT  ACRO_EE  ;  !!= * {{@CODE@}} 
+VTV+ACR+Prop+Sem%/Org:VTV  ACRO_EE  ;
+VTY+ACR+Prop+Sem%/Org:VTY  ACRO_YY  ;
+VUV+ACR:VUV  ACRO_EE  ;
+VVO+ACR+Prop+Sem%/Org:VVO  ACRO_OO  ;
+VVR+ACR+Prop+Sem%/Org:VVR  ACRO_ÄKS  ;
+VVV+ACR+Prop+Sem%/Org:VVV  ACRO_EE  ;
+VW+ACR+Prop:VW  ACRO_EE  ;
+VW+ACR:VW  ACRO_WEBER  ;
+VW+N:VW  ACRO_EE  ;    !!= * {{@CODE@}} Volks Wagen
+VY+ACR+Prop+Sem%/Org:VY  ACRO_YY  ;
+VYO+ACR:VYO  ACRO_OO  ;
+w+ACR:w  ACRO_EE  ;
+W+ACR:W  ACRO_EE  ;
+W+ACR:W  ACRO_OHMI  ;
+WADA+ACR+Prop+Sem%/Org:WADA  ACRO_AA  ;
+Walt% Disney% Co+ACR+Prop+Sem%/Org:Walt% Disney% Co    ACRO_OO  ;
+WAP+ACR:WAP  ACRO_EE  ;
+WAP+N:WAP  ACRO_EE  ;  !!= * {{@CODE@}} Wireless Application Protocol
+Wb+ACR:Wb  ACRO_EE  ;
+Wb+ACR:Wb  ACRO_WEBER  ;
+wc+ACR:wc  ACRO_EE  ;
+WC+ACR:WC  ACRO_EE  ;
+WC+ACR:WC  ACRO_METRI  ;
+WCC+ACR+Prop+Sem%/Org:WCC  ACRO_EE  ;
+WC+N:WC  ACRO_EE  ;    !!= * {{@CODE@}} Water Closet
+WELMU+ACR+Prop+Sem%/Org:WELMU  ACRO_UU  ;
+Westend% ICT+ACR+Prop+Sem%/Org:Westend% ICT   ACRO_EE  ;
+WestLB+ACR+Prop+Sem%/Org:WestLB  ACRO_EE  ;
+WEU+ACR+Prop+Sem%/Org:WEU  ACRO_UU  ;
+Wh+ACR:Wh  ACRO_OO  ;
+WHO+ACR+Prop+Sem%/Org:WHO  ACRO_OO  ;
+WHO+N:WHO  ACRO_OO  ;  !!= * {{@CODE@}} World Health Organisation
+WIDER+ACR+Prop+Sem%/Org:WIDER  ACRO_ÄKS  ;
+Windows% 95+ACR:Windows% 95 ACRO_VIISI  ;
 Windows% 95+N:Windows% 95   ACRO_VIISI  ;
-w+N:w   ACRO_EE  ;
-W+N:W   ACRO_EE  ;
-WSOY+N:WSOY ACRO_YY ;   !!= * {{@CODE@}} Werner-Söderström Osake-Yhtiö
-WTO+N:WTO   ACRO_OO  ;  !!= * {{@CODE@}} World Trade Organisation
-WWF+N:WWF   ACRO_ÄKS  ; !!= * {{@CODE@}} World Wildlife Foundation
-www+N:www   ACRO_EE  ;  !!= * {{@CODE@}} world wide web
-WWW+N:WWW   ACRO_EE  ;  !!= * {{@CODE@}} World Wide Web
-XML+N:XML   ACRO_ÄKS  ; !!= * {{@CODE@}} Extensible Markup Language
-x+N:x   ACRO_ÄKS  ;
-X+N:X   ACRO_ÄKS  ;
-Y2K+N:Y2K   ACRO_OO  ;  !!= * {{@CODE@}} not spelled out
-YK+N:YK   ACRO_OO  ;    !!= * {{@CODE@}} Yhdistyneet Kansakunnat
-YMP+N:YMP   ACRO_EE  ;  !!= * {{@CODE@}} 
-y+N:y   ACRO_YY  ;
-Y+N:Y   ACRO_YY  ;
-YT+N:YT   ACRO_EE  ;    !!= * {{@CODE@}} Yhteistyö?
-YUTP+N:YUTP   ACRO_EE  ;
-z+N:z   ACRO_ZET  ;
-Z+N:Z   ACRO_ZET  ;
-ž+N:ž   ACRO_ZET  ;
-Ž+N:Ž   ACRO_ZET  ;
-å+N:å   ACRO_OO  ;
-Å+N:Å   ACRO_OO  ;
-ä+N:ä   ACRO_ÄÄ  ;
-Ä+N:Ä   ACRO_ÄÄ  ;
-ÄO+N:ÄO   ACRO_OO  ;    !!= * {{@CODE@}} Älykkyysosamäärä
-ö+N:ö   ACRO_ÖÖ  ;
-Ö+N:Ö   ACRO_ÖÖ  ;
+WiO+ACR+Prop+Sem%/Org:WiO  ACRO_OO  ;
+WIPO+ACR+Prop+Sem%/Org:WIPO  ACRO_OO  ;
+WLAN+ACR:WLAN  ACRO_ÄKS  ;
+w+N:w  ACRO_EE  ;
+W+N:W  ACRO_EE  ;
+WPP+ACR+Prop+Sem%/Org:WPP  ACRO_EE  ;
+WRP+ACR+Prop+Sem%/Org:WRP  ACRO_EE  ;
+Ws+ACR:Ws  ACRO_ÄKS  ;
+WSOY+ACR+Prop+Sem%/Org:WSOY  ACRO_YY  ;
+WSOY+N:WSOY  ACRO_YY  ;   !!= * {{@CODE@}} Werner-Söderström Osake-Yhtiö
+WST+ACR:WST  ACRO_EE  ;
+WTO+ACR+Prop+Sem%/Org:WTO  ACRO_OO  ;
+WTO+N:WTO  ACRO_OO  ;  !!= * {{@CODE@}} World Trade Organisation
+WWF+ACR+Prop+Sem%/Org:WWF  ACRO_ÄKS  ;
+WWF+N:WWF  ACRO_ÄKS  ; !!= * {{@CODE@}} World Wildlife Foundation
+www+ACR:www  ACRO_EE  ;
+WWW+ACR:WWW  ACRO_EE  ;
+www+ACR:www  ACRO_METRI  ;
+WWW+ACR:WWW  ACRO_METRI  ;
+www+N:www  ACRO_EE  ;  !!= * {{@CODE@}} world wide web
+WWW+N:WWW  ACRO_EE  ;  !!= * {{@CODE@}} World Wide Web
+x+ACR:x  ACRO_ÄKS  ;
+X+ACR:X  ACRO_ÄKS  ;
+XAF+ACR:XAF  ACRO_ÄKS  ;
+XAG+ACR:XAG  ACRO_EE  ;
+XAU+ACR:XAU  ACRO_UU  ;
+XBA+ACR:XBA  ACRO_AA  ;
+XBB+ACR:XBB  ACRO_EE  ;
+XBC+ACR:XBC  ACRO_EE  ;
+XBD+ACR:XBD  ACRO_EE  ;
+XCD+ACR:XCD  ACRO_EE  ;
+XDR+ACR:XDR  ACRO_ÄKS  ;
+XEU+ACR:XEU  ACRO_UU  ;
+XFO+ACR:XFO  ACRO_OO  ;
+XFU+ACR:XFU  ACRO_UU  ;
+XL+ACR:XL  ACRO_ÄKS  ;
+XML+ACR:XML  ACRO_ÄKS  ;
+XML+N:XML  ACRO_ÄKS  ; !!= * {{@CODE@}} Extensible Markup Language
+x+N:x  ACRO_ÄKS  ;
+X+N:X  ACRO_ÄKS  ;
+XOF+ACR:XOF  ACRO_ÄKS  ;
+XPD+ACR:XPD  ACRO_EE  ;
+XPF+ACR:XPF  ACRO_ÄKS  ;
+XPT+ACR:XPT  ACRO_EE  ;
+XRE+ACR:XRE  ACRO_EE  ;
+XS+ACR:XS  ACRO_ÄKS  ;
+XTS+ACR:XTS  ACRO_ÄKS  ;
+XXX+ACR:XXX  ACRO_ÄKS  ;
+Y2K+ACR:Y2K  ACRO_OO  ;
+Y2K+N:Y2K  ACRO_OO  ;  !!= * {{@CODE@}} not spelled out
+yA+ACR:yA  ACRO_AA  ;
+YA+ACR:YA  ACRO_AA  ;
+yA+ACR:yA  ACRO_DOLLARI  ;
+YA+ACR:YA  ACRO_DOLLARI  ;
+y+ACR:y  ACRO_YY  ;
+Y+ACR:Y  ACRO_YY  ;
+YAD+ACR+Prop+Sem%/Org:YAD  ACRO_EE  ;
+yBq+ACR:yBq  ACRO_METRI  ;
+YBq+ACR:YBq  ACRO_METRI  ;
+yBq+ACR:yBq  ACRO_UU  ;
+YBq+ACR:YBq  ACRO_UU  ;
+y°C+ACR:y°C  ACRO_CELSIUS  ;
+Y°C+ACR:Y°C  ACRO_CELSIUS  ;
+y°C+ACR:y°C  ACRO_EE  ;
+yC+ACR:yC  ACRO_EE  ;
+Y°C+ACR:Y°C  ACRO_EE  ;
+YC+ACR:YC  ACRO_EE  ;
+yC+ACR:yC  ACRO_METRI  ;
+YC+ACR:YC  ACRO_METRI  ;
+ycd+ACR:ycd  ACRO_EE  ;
+Ycd+ACR:Ycd  ACRO_EE  ;
+ycd+ACR:ycd  ACRO_KANDELA  ;
+Ycd+ACR:Ycd  ACRO_KANDELA  ;
+YDD+ACR:YDD  ACRO_EE  ;
+YEL+ACR:YEL  ACRO_OHMI  ;
+YEL+ACR:YEL  ACRO_ÄKS  ;
+YER+ACR:YER  ACRO_ÄKS  ;
+yF+ACR:yF  ACRO_METRI  ;
+YF+ACR:YF  ACRO_METRI  ;
+yF+ACR:yF  ACRO_ÄKS  ;
+YF+ACR:YF  ACRO_ÄKS  ;
+yg+ACR:yg  ACRO_EE  ;
+Yg+ACR:Yg  ACRO_EE  ;
+yg+ACR:yg  ACRO_GRAMMA  ;
+Yg+ACR:Yg  ACRO_GRAMMA  ;
+yGy+ACR:yGy  ACRO_GRAY  ;
+YGy+ACR:YGy  ACRO_GRAY  ;
+yGy+ACR:yGy  ACRO_YY  ;
+YGy+ACR:YGy  ACRO_YY  ;
+yH+ACR:yH  ACRO_METRI  ;
+YH+ACR:YH  ACRO_METRI  ;
+yH+ACR:yH  ACRO_OO  ;
+YH+ACR:YH  ACRO_OO  ;
+Yhdistys% 9+ACR+Prop+Sem%/Org:Yhdistys% 9 ACRO_YHDEKSÄN  ;
+yHz+ACR:yHz  ACRO_METRI  ;
+YHz+ACR:YHz  ACRO_METRI  ;
+yHz+ACR:yHz  ACRO_ZET  ;
+YHz+ACR:YHz  ACRO_ZET  ;
+YIT+ACR+Prop+Sem%/Org:YIT  ACRO_EE  ;
+yJ+ACR:yJ  ACRO_II  ;
+YJ+ACR:YJ  ACRO_II  ;
+yJ+ACR:yJ  ACRO_JOULE  ;
+YJ+ACR:YJ  ACRO_JOULE  ;
+YK+ACR+Prop+Sem%/Org:YK  ACRO_OO  ;
+yK+ACR:yK  ACRO_METRI  ;
+YK+ACR:YK  ACRO_METRI  ;
+yK+ACR:yK  ACRO_OO  ;
+ykat+ACR:ykat  ACRO_EE  ;
+Ykat+ACR:Ykat  ACRO_EE  ;
+ykat+ACR:ykat  ACRO_OHMI  ;
+Ykat+ACR:Ykat  ACRO_OHMI  ;
+YKI+ACR:YKI  ACRO_II  ;
+YK+N:YK  ACRO_OO  ;    !!= * {{@CODE@}} Yhdistyneet Kansakunnat
+YL+ACR+Prop+Sem%/Org:YL  ACRO_ÄKS  ;
+YLE+ACR+Prop+Sem%/Org:YLE  ACRO_EE  ;
+YLE+ACR+Prop:YLE  ACRO_EE  ;
+ylm+ACR:ylm  ACRO_METRI  ;
+Ylm+ACR:Ylm  ACRO_METRI  ;
+ylm+ACR:ylm  ACRO_ÄKS  ;
+Ylm+ACR:Ylm  ACRO_ÄKS  ;
+ylx+ACR:ylx  ACRO_METRI  ;
+Ylx+ACR:Ylx  ACRO_METRI  ;
+ylx+ACR:ylx  ACRO_ÄKS  ;
+Ylx+ACR:Ylx  ACRO_ÄKS  ;
+ym+ACR:ym  ACRO_METRI  ;
+Ym+ACR:Ym  ACRO_METRI  ;
+ym+ACR:ym  ACRO_ÄKS  ;
+Ym+ACR:Ym  ACRO_ÄKS  ;
+YM+ACR:YM  ACRO_ÄKS  ;
+YMCA+ACR+Prop+Sem%/Org:YMCA  ACRO_AA  ;
+ymol+ACR:ymol  ACRO_OHMI  ;
+Ymol+ACR:Ymol  ACRO_OHMI  ;
+ymol+ACR:ymol  ACRO_ÄKS  ;
+Ymol+ACR:Ymol  ACRO_ÄKS  ;
+YMP+ACR:YMP  ACRO_EE  ;
+YMP+N:YMP  ACRO_EE  ;  !!= * {{@CODE@}} 
+yN+ACR:yN  ACRO_METRI  ;
+YN+ACR:YN  ACRO_METRI  ;
+yN+ACR:yN  ACRO_ÄKS  ;
+YN+ACR:YN  ACRO_ÄKS  ;
+y+N:y  ACRO_YY  ;
+Y+N:Y  ACRO_YY  ;
+yo+ACR:yo  ACRO_OO  ;
+yo+ACR:yo  ACRO_OPPILAS  ;
+yPa+ACR:yPa  ACRO_AA  ;
+YPa+ACR:YPa  ACRO_AA  ;
+yPa+ACR:yPa  ACRO_DOLLARI  ;
+YPa+ACR:YPa  ACRO_DOLLARI  ;
+YPF+ACR+Prop+Sem%/Org:YPF  ACRO_ÄKS  ;
+yrad+ACR:yrad  ACRO_DOLLARI  ;
+Yrad+ACR:Yrad  ACRO_DOLLARI  ;
+yrad+ACR:yrad  ACRO_EE  ;
+Yrad+ACR:Yrad  ACRO_EE  ;
+YRl+ACR:YRl  ACRO_ÄKS  ;
+ys+ACR:ys  ACRO_METRI  ;
+yS+ACR:yS  ACRO_METRI  ;
+Ys+ACR:Ys  ACRO_METRI  ;
+YS+ACR:YS  ACRO_METRI  ;
+ys+ACR:ys  ACRO_ÄKS  ;
+yS+ACR:yS  ACRO_ÄKS  ;
+Ys+ACR:Ys  ACRO_ÄKS  ;
+YS+ACR:YS  ACRO_ÄKS  ;
+ysr+ACR:ysr  ACRO_WEBER  ;
+Ysr+ACR:Ysr  ACRO_WEBER  ;
+ysr+ACR:ysr  ACRO_ÄKS  ;
+Ysr+ACR:Ysr  ACRO_ÄKS  ;
+ySv+ACR:ySv  ACRO_EE  ;
+YSv+ACR:YSv  ACRO_EE  ;
+ySv+ACR:ySv  ACRO_METRI  ;
+YSv+ACR:YSv  ACRO_METRI  ;
+YT+ACR+Prop+Sem%/Org:YT  ACRO_EE  ;
+yt+ACR:yt  ACRO_EE  ;
+yT+ACR:yT  ACRO_EE  ;
+yT+ACR:yT  ACRO_GRAMMA  ;
+YT+ACR:YT  ACRO_OK  ;
+YTE+ACR:YTE  ACRO_EE  ;
+YTJ+ACR:YTJ  ACRO_II  ;
+YTK+ACR:YTK  ACRO_OHMI  ;
+YTK+ACR:YTK  ACRO_OO  ;
+YTL+ACR:YTL  ACRO_OHMI  ;
+YTL+ACR:YTL  ACRO_ÄKS  ;
+YTM+ACR:YTM  ACRO_DOLLARI  ;
+YTM+ACR:YTM  ACRO_ÄKS  ;
+YTN+ACR+Prop+Sem%/Org:YTN  ACRO_ÄKS  ;
+YT+N:YT  ACRO_EE  ;    !!= * {{@CODE@}} Yhteistyö?
+YTT+ACR:YTT  ACRO_DOLLARI  ;
+YTT+ACR:YTT  ACRO_EE  ;
+YTV+ACR+Prop+Sem%/Org:YTV  ACRO_EE  ;
+YUD+ACR:YUD  ACRO_EE  ;
+YUM+ACR:YUM  ACRO_ÄKS  ;
+YUN+ACR:YUN  ACRO_ÄKS  ;
+YUR+ACR:YUR  ACRO_ÄKS  ;
+YUTP+ACR:YUTP  ACRO_EE  ;
+YUTP+N:YUTP  ACRO_EE  ;
+YVA+ACR:YVA  ACRO_AA  ;
+yV+ACR:yV  ACRO_EE  ;
+YV+ACR:YV  ACRO_EE  ;
+yV+ACR:yV  ACRO_OHMI  ;
+YV+ACR:YV  ACRO_OHMI  ;
+yW+ACR:yW  ACRO_EE  ;
+YW+ACR:YW  ACRO_EE  ;
+yW+ACR:yW  ACRO_OHMI  ;
+YW+ACR:YW  ACRO_OHMI  ;
+yWb+ACR:yWb  ACRO_EE  ;
+YWb+ACR:YWb  ACRO_EE  ;
+yWb+ACR:yWb  ACRO_WEBER  ;
+YWb+ACR:YWb  ACRO_WEBER  ;
+YYA+ACR:YYA  ACRO_AA  ;
+yΩ+ACR:yΩ  ACRO_METRI  ;
+YΩ+ACR:YΩ  ACRO_METRI  ;
+yΩ+ACR:yΩ  ACRO_OHMI  ;
+YΩ+ACR:YΩ  ACRO_OHMI  ;
+zA+ACR:zA  ACRO_AA  ;
+ZA+ACR:ZA  ACRO_AA  ;
+zA+ACR:zA  ACRO_DOLLARI  ;
+ZA+ACR:ZA  ACRO_DOLLARI  ;
+Z$+ACR:Z$  ACRO_DOLLARI  ;
+Z$+ACR:Z$  ACRO_WEBER  ;
+z+ACR:z  ACRO_ZET  ;
+Z+ACR:Z  ACRO_ZET  ;
+ž+ACR:ž  ACRO_ÄKS  ;
+Ž+ACR:Ž  ACRO_ÄKS  ;
+ZAL+ACR:ZAL  ACRO_ÄKS  ;
+ZAR+ACR:ZAR  ACRO_ÄKS  ;
+ZBD+ACR+Prop+Sem%/Org:ZBD  ACRO_EE  ;
+zBq+ACR:zBq  ACRO_METRI  ;
+ZBq+ACR:ZBq  ACRO_METRI  ;
+zBq+ACR:zBq  ACRO_UU  ;
+ZBq+ACR:ZBq  ACRO_UU  ;
+z°C+ACR:z°C  ACRO_CELSIUS  ;
+Z°C+ACR:Z°C  ACRO_CELSIUS  ;
+z°C+ACR:z°C  ACRO_EE  ;
+zC+ACR:zC  ACRO_EE  ;
+Z°C+ACR:Z°C  ACRO_EE  ;
+ZC+ACR:ZC  ACRO_EE  ;
+zC+ACR:zC  ACRO_METRI  ;
+ZC+ACR:ZC  ACRO_METRI  ;
+zcd+ACR:zcd  ACRO_EE  ;
+Zcd+ACR:Zcd  ACRO_EE  ;
+zcd+ACR:zcd  ACRO_KANDELA  ;
+Zcd+ACR:Zcd  ACRO_KANDELA  ;
+ZDF+ACR+Prop+Sem%/Org:ZDF  ACRO_ÄKS  ;
+zF+ACR:zF  ACRO_METRI  ;
+ZF+ACR:ZF  ACRO_METRI  ;
+zF+ACR:zF  ACRO_ÄKS  ;
+ZF+ACR:ZF  ACRO_ÄKS  ;
+zg+ACR:zg  ACRO_EE  ;
+Zg+ACR:Zg  ACRO_EE  ;
+zg+ACR:zg  ACRO_GRAMMA  ;
+Zg+ACR:Zg  ACRO_GRAMMA  ;
+zGy+ACR:zGy  ACRO_GRAY  ;
+ZGy+ACR:ZGy  ACRO_GRAY  ;
+zGy+ACR:zGy  ACRO_YY  ;
+ZGy+ACR:ZGy  ACRO_YY  ;
+zH+ACR:zH  ACRO_METRI  ;
+ZH+ACR:ZH  ACRO_METRI  ;
+zH+ACR:zH  ACRO_OO  ;
+ZH+ACR:ZH  ACRO_OO  ;
+zHz+ACR:zHz  ACRO_METRI  ;
+ZHz+ACR:ZHz  ACRO_METRI  ;
+zHz+ACR:zHz  ACRO_ZET  ;
+ZHz+ACR:ZHz  ACRO_ZET  ;
+zJ+ACR:zJ  ACRO_II  ;
+ZJ+ACR:ZJ  ACRO_II  ;
+zJ+ACR:zJ  ACRO_JOULE  ;
+ZJ+ACR:ZJ  ACRO_JOULE  ;
+zK+ACR:zK  ACRO_METRI  ;
+ZK+ACR:ZK  ACRO_METRI  ;
+zK+ACR:zK  ACRO_OO  ;
+ZK+ACR:ZK  ACRO_OO  ;
+zkat+ACR:zkat  ACRO_EE  ;
+Zkat+ACR:Zkat  ACRO_EE  ;
+zkat+ACR:zkat  ACRO_OHMI  ;
+Zkat+ACR:Zkat  ACRO_OHMI  ;
+Zl+ACR:Zl  ACRO_ÄKS  ;
+zlm+ACR:zlm  ACRO_METRI  ;
+Zlm+ACR:Zlm  ACRO_METRI  ;
+zlm+ACR:zlm  ACRO_ÄKS  ;
+Zlm+ACR:Zlm  ACRO_ÄKS  ;
+zlx+ACR:zlx  ACRO_METRI  ;
+Zlx+ACR:Zlx  ACRO_METRI  ;
+zlx+ACR:zlx  ACRO_ÄKS  ;
+Zlx+ACR:Zlx  ACRO_ÄKS  ;
+zm+ACR:zm  ACRO_METRI  ;
+Zm+ACR:Zm  ACRO_METRI  ;
+zm+ACR:zm  ACRO_ÄKS  ;
+Zm+ACR:Zm  ACRO_ÄKS  ;
+ZMK+ACR:ZMK  ACRO_OO  ;
+zmol+ACR:zmol  ACRO_OHMI  ;
+Zmol+ACR:Zmol  ACRO_OHMI  ;
+zmol+ACR:zmol  ACRO_ÄKS  ;
+Zmol+ACR:Zmol  ACRO_ÄKS  ;
+ZMW+ACR:ZMW  ACRO_EE  ;
+zN+ACR:zN  ACRO_METRI  ;
+ZN+ACR:ZN  ACRO_METRI  ;
+zN+ACR:zN  ACRO_ÄKS  ;
+ZN+ACR:ZN  ACRO_ÄKS  ;
+z+N:z  ACRO_ZET  ;
+Z+N:Z  ACRO_ZET  ;
+ž+N:ž  ACRO_ZET  ;
+Ž+N:Ž  ACRO_ZET  ;
+zPa+ACR:zPa  ACRO_AA  ;
+ZPa+ACR:ZPa  ACRO_AA  ;
+zPa+ACR:zPa  ACRO_DOLLARI  ;
+ZPa+ACR:ZPa  ACRO_DOLLARI  ;
+zrad+ACR:zrad  ACRO_DOLLARI  ;
+Zrad+ACR:Zrad  ACRO_DOLLARI  ;
+zrad+ACR:zrad  ACRO_EE  ;
+Zrad+ACR:Zrad  ACRO_EE  ;
+ZRN+ACR:ZRN  ACRO_ÄKS  ;
+ZRZ+ACR:ZRZ  ACRO_ZET  ;
+zs+ACR:zs  ACRO_METRI  ;
+zS+ACR:zS  ACRO_METRI  ;
+Zs+ACR:Zs  ACRO_METRI  ;
+ZS+ACR:ZS  ACRO_METRI  ;
+zs+ACR:zs  ACRO_ÄKS  ;
+zS+ACR:zS  ACRO_ÄKS  ;
+Zs+ACR:Zs  ACRO_ÄKS  ;
+ZS+ACR:ZS  ACRO_ÄKS  ;
+zsr+ACR:zsr  ACRO_WEBER  ;
+Zsr+ACR:Zsr  ACRO_WEBER  ;
+zsr+ACR:zsr  ACRO_ÄKS  ;
+Zsr+ACR:Zsr  ACRO_ÄKS  ;
+zSv+ACR:zSv  ACRO_EE  ;
+ZSv+ACR:ZSv  ACRO_EE  ;
+zSv+ACR:zSv  ACRO_METRI  ;
+ZSv+ACR:ZSv  ACRO_METRI  ;
+zT+ACR:zT  ACRO_EE  ;
+ZT+ACR:ZT  ACRO_EE  ;
+zT+ACR:zT  ACRO_GRAMMA  ;
+ZT+ACR:ZT  ACRO_GRAMMA  ;
+ZTE+ACR+Prop+Sem%/Org:ZTE  ACRO_EE  ;
+zV+ACR:zV  ACRO_EE  ;
+ZV+ACR:ZV  ACRO_EE  ;
+zV+ACR:zV  ACRO_OHMI  ;
+ZV+ACR:ZV  ACRO_OHMI  ;
+zW+ACR:zW  ACRO_EE  ;
+ZW+ACR:ZW  ACRO_EE  ;
+zW+ACR:zW  ACRO_OHMI  ;
+ZW+ACR:ZW  ACRO_OHMI  ;
+zWb+ACR:zWb  ACRO_EE  ;
+ZWb+ACR:ZWb  ACRO_EE  ;
+zWb+ACR:zWb  ACRO_WEBER  ;
+ZWb+ACR:ZWb  ACRO_WEBER  ;
+ZWD+ACR:ZWD  ACRO_EE  ;
+ZWL+ACR:ZWL  ACRO_ÄKS  ;
+ZWR+ACR:ZWR  ACRO_ÄKS  ;
+zΩ+ACR:zΩ  ACRO_METRI  ;
+ZΩ+ACR:ZΩ  ACRO_METRI  ;
+zΩ+ACR:zΩ  ACRO_OHMI  ;
+ZΩ+ACR:ZΩ  ACRO_OHMI  ;
+ÅA+ACR+Prop+Sem%/Org:ÅA  ACRO_AA  ;
+ÅA+ACR:ÅA  ACRO_DOLLARI  ;
+å+ACR:å  ACRO_OO  ;
+Å+ACR:Å  ACRO_OO  ;
+å+ACR:å  ACRO_WEBER  ;
+Å+ACR:Å  ACRO_WEBER  ;
+ÅN+ACR+Prop+Sem%/Org:ÅN  ACRO_ÄKS  ;
+å+N:å  ACRO_OO  ;
+Å+N:Å  ACRO_OO  ;
+ä+ACR:ä  ACRO_ÄÄ  ;
+Ä+ACR:Ä  ACRO_ÄÄ  ;
+ÄI+ACR:ÄI  ACRO_II  ;
+ÄKT+ACR+Prop+Sem%/Org:ÄKT  ACRO_EE  ;
+ä+N:ä  ACRO_ÄÄ  ;
+Ä+N:Ä  ACRO_ÄÄ  ;
+äo+ACR:äo  ACRO_GRAMMA  ;
+äo+ACR:äo  ACRO_OO  ;
+ÄO+ACR:ÄO  ACRO_OO  ;
+ÄO+ACR:ÄO  ACRO_PUNTA  ;
+ÄOL+ACR+Prop+Sem%/Org:ÄOL  ACRO_ÄKS  ;
+ÄOL+ACR:ÄOL  ACRO_TALO  ;
+ÄO+N:ÄO  ACRO_OO  ;    !!= * {{@CODE@}} Älykkyysosamäärä
+Ö+ACR+Prop+Sem%/Human:Ö  ACRO_ÖÖ  ;
+ö+ACR:ö  ACRO_ÖÖ  ;
+ÖFN+ACR+Prop+Sem%/Org:ÖFN  ACRO_ÄKS  ;
+ö+N:ö  ACRO_ÖÖ  ;
+Ö+N:Ö  ACRO_ÖÖ  ;
+μA+ACR:μA  ACRO_AA  ;
+μA+ACR:μA  ACRO_DOLLARI  ;
+μBq+ACR:μBq  ACRO_METRI  ;
+μBq+ACR:μBq  ACRO_UU  ;
+μ°C+ACR:μ°C  ACRO_CELSIUS  ;
+μ°C+ACR:μ°C  ACRO_EE  ;
+μC+ACR:μC  ACRO_EE  ;
+μC+ACR:μC  ACRO_METRI  ;
+μcd+ACR:μcd  ACRO_EE  ;
+μcd+ACR:μcd  ACRO_KANDELA  ;
+μF+ACR:μF  ACRO_METRI  ;
+μF+ACR:μF  ACRO_ÄKS  ;
+μg+ACR:μg  ACRO_EE  ;
+μg+ACR:μg  ACRO_GRAMMA  ;
+μGy+ACR:μGy  ACRO_GRAY  ;
+μGy+ACR:μGy  ACRO_YY  ;
+μH+ACR:μH  ACRO_METRI  ;
+μH+ACR:μH  ACRO_OO  ;
+μHz+ACR:μHz  ACRO_METRI  ;
+μHz+ACR:μHz  ACRO_ZET  ;
+μJ+ACR:μJ  ACRO_II  ;
+μJ+ACR:μJ  ACRO_JOULE  ;
+μK+ACR:μK  ACRO_METRI  ;
+μK+ACR:μK  ACRO_OO  ;
+μkat+ACR:μkat  ACRO_EE  ;
+μkat+ACR:μkat  ACRO_OHMI  ;
+μlm+ACR:μlm  ACRO_METRI  ;
+μlm+ACR:μlm  ACRO_ÄKS  ;
+μlx+ACR:μlx  ACRO_METRI  ;
+μlx+ACR:μlx  ACRO_ÄKS  ;
+μm+ACR:μm  ACRO_METRI  ;
+μm+ACR:μm  ACRO_ÄKS  ;
+μmol+ACR:μmol  ACRO_OHMI  ;
+μmol+ACR:μmol  ACRO_ÄKS  ;
+μN+ACR:μN  ACRO_METRI  ;
+μN+ACR:μN  ACRO_ÄKS  ;
+μPa+ACR:μPa  ACRO_AA  ;
+μPa+ACR:μPa  ACRO_DOLLARI  ;
+μrad+ACR:μrad  ACRO_DOLLARI  ;
+μrad+ACR:μrad  ACRO_EE  ;
+μs+ACR:μs  ACRO_METRI  ;
+μS+ACR:μS  ACRO_METRI  ;
+μs+ACR:μs  ACRO_ÄKS  ;
+μS+ACR:μS  ACRO_ÄKS  ;
+μsr+ACR:μsr  ACRO_WEBER  ;
+μsr+ACR:μsr  ACRO_ÄKS  ;
+μSv+ACR:μSv  ACRO_EE  ;
+μSv+ACR:μSv  ACRO_METRI  ;
+μT+ACR:μT  ACRO_EE  ;
+μT+ACR:μT  ACRO_GRAMMA  ;
+μV+ACR:μV  ACRO_EE  ;
+μV+ACR:μV  ACRO_OHMI  ;
+μW+ACR:μW  ACRO_EE  ;
+μW+ACR:μW  ACRO_OHMI  ;
+μWb+ACR:μWb  ACRO_EE  ;
+μWb+ACR:μWb  ACRO_WEBER  ;
+μΩ+ACR:μΩ  ACRO_METRI  ;
+μΩ+ACR:μΩ  ACRO_OHMI  ;
+Ω+ACR:Ω  ACRO_METRI  ;
+Ω+ACR:Ω  ACRO_OHMI  ;
+
+LEXICON  ACRO_AA
+
+:%:  ACRO_BACK_CASES  ;
+:%:  ACRO_BACK_ILLATIVE_HAN  ;
+:%:  ACRO_BACK_PARTITIVE_ITA  ;
+:%:  ACRO_BACK_GENITIVE_IDEN  ;
+:%:  ACRO_BACK_GENITIVE_ITTEN  ;
+:%:  ACRO_BACK_POSS  ;
+
+:  ACRO_COMPOUND  ;
+:  ACRO_BACK_SG_NOM  ;
+
+
+LEXICON  ACRO_CELSIUS
+
+:  ACRO_KUUSI  ;
+
+
+LEXICON  ACRO_DOLLARI
+
+:%:  ACRO_BACK_CASES  ;
+:%:  ACRO_BACK_ILLATIVE_IN  ;
+:%:  ACRO_BACK_PARTITIVE_ITA  ;
+:%:  ACRO_BACK_PARTITIVE_JA  ;
+:%:  ACRO_BACK_GENITIVE_JEN  ;
+:%:  ACRO_BACK_GENITIVE_IEN  ;
+:%:  ACRO_BACK_GENITIVE_IDEN  ;
+:%:  ACRO_BACK_GENITIVE_ITTEN  ;
+:%:  ACRO_BACK_POSS  ;
+
+:  ACRO_COMPOUND  ;
+:  ACRO_BACK_SG_NOM  ;
+
+
+LEXICON  ACRO_EE
+
+:  ACRO_COMPOUND  ;
+:  ACRO_BACK_SG_NOM  ;
+
+:%:  ACRO_FRONT_CASES  ;
+:%:  ACRO_FRONT_ILLATIVE_HEN  ;
+:%:  ACRO_FRONT_PARTITIVE_ITÄ  ;
+:%:  ACRO_FRONT_GENITIVE_IDEN  ;
+:%:  ACRO_FRONT_GENITIVE_ITTEN  ;
+:%:  ACRO_FRONT_POSS  ;
+
+
+LEXICON  ACRO_EURO
+
+:%:  ACRO_BACK_CASES  ;
+:%:  ACRO_BACK_ILLATIVE_ON  ;
+:%:  ACRO_BACK_PARTITIVE_JA  ;
+:%:  ACRO_BACK_GENITIVE_JEN  ;
+:%:  ACRO_BACK_POSS  ;
+
+:  ACRO_COMPOUND  ;
+:  ACRO_BACK_SG_NOM  ;
+
+
+LEXICON  ACRO_GRAMMA
+
+:%:  ACRO_BACK_CASES  ;
+:%:  ACRO_BACK_ILLATIVE_AN  ;
+:%:  ACRO_BACK_PARTITIVE_JA  ;
+:%:  ACRO_BACK_GENITIVE_JEN  ;
+:%:  ACRO_BACK_POSS  ;
+
+:  ACRO_COMPOUND  ;
+:  ACRO_BACK_SG_NOM  ;
+
+
+LEXICON  ACRO_GRAY
+
+:  ACRO_COMPOUND  ;
+:  ACRO_FRONT_SG_NOM  ;
+
+:%:  ACRO_FRONT_CASES  ;
+:%:  ACRO_FRONT_ILLATIVE_HYN  ;
+:%:  ACRO_FRONT_ILLATIVE_HIN  ;
+:%:  ACRO_FRONT_PARTITIVE_ITÄ  ;
+:%:  ACRO_FRONT_GENITIVE_IDEN  ;
+:%:  ACRO_FRONT_GENITIVE_ITTEN  ;
+:%:  ACRO_FRONT_POSS  ;
+:%:  ACRO_BACK_CASES  ;
+:%:  ACRO_BACK_PARTITIVE_ITA  ;
+:%:  ACRO_BACK_GENITIVE_IDEN  ;
+:%:  ACRO_BACK_GENITIVE_ITTEN  ;
+:%:  ACRO_BACK_POSS  ;
+
+
+LEXICON  ACRO_II
+
+:  ACRO_COMPOUND  ;
+:  ACRO_FRONT_SG_NOM  ;
+
+:%:  ACRO_FRONT_CASES  ;
+:%:  ACRO_FRONT_ILLATIVE_HIN  ;
+:%:  ACRO_FRONT_GENITIVE_IDEN  ;
+:%:  ACRO_FRONT_GENITIVE_ITTEN  ;
+:%:  ACRO_FRONT_PARTITIVE_ITÄ  ;
+:%:  ACRO_FRONT_PARTITIVE_TÄ  ;
+:%:  ACRO_FRONT_POSS  ;
+
+
+LEXICON  ACRO_JOULE
+
+:%:  ACRO_BACK_CASES  ;
+:%:  ACRO_BACK_ILLATIVE_EN  ;
+:%:  ACRO_BACK_PARTITIVE_A  ;
+:%:  ACRO_BACK_GENITIVE_JEN  ;
+:%:  ACRO_BACK_PARTITIVE_JA  ;
+:%:  ACRO_BACK_POSS  ;
+:%:  ACRO_BACK_CLIT  ;
+
+:  ACRO_COMPOUND  ;
+:  ACRO_BACK_SG_NOM  ;
+
+
+LEXICON  ACRO_JÄRJESTÖ
+
+:  ACRO_COMPOUND  ;
+:  ACRO_FRONT_SG_NOM  ;
+
+:%:  ACRO_FRONT_CASES  ;
+:%:  ACRO_FRONT_ILLATIVE_ÖN  ;
+:%:  ACRO_FRONT_PARTITIVE_Ä  ;
+:%:  ACRO_FRONT_GENITIVE_JEN  ;
+:%:  ACRO_FRONT_GENITIVE_IDEN  ;
+:%:  ACRO_FRONT_GENITIVE_ITTEN  ;
+:%:  ACRO_FRONT_PARTITIVE_JÄ  ;
+:%:  ACRO_FRONT_PARTITIVE_ITÄ  ;
+:%:  ACRO_FRONT_POSS  ;
+:%:  ACRO_FRONT_CLIT  ;
+
+
+LEXICON  ACRO_KAHDEKSAN
+
+:%:  ACRO_BACK_CASES  ;
+:%:  ACRO_BACK_ILLATIVE_AN  ;
+:%:  ACRO_BACK_PARTITIVE_A  ;
+:%:  ACRO_BACK_GENITIVE_IEN  ;
+:%:  ACRO_BACK_PARTITIVE_IA  ;
+:%:  ACRO_BACK_ILLATIVE_IIN  ;
+:%:  ACRO_BACK_POSS  ;
+:%:  ACRO_BACK_CLIT  ;
+
+:  ACRO_COMPOUND  ;
+:  ACRO_BACK_SG_NOM  ;
+
+
+LEXICON  ACRO_KAKSI
+
+:%:  ACRO_BACK_CASES  ;
+:%:  ACRO_BACK_ILLATIVE_EN  ;
+:%:  ACRO_BACK_PARTITIVE_TA  ;
+:%:  ACRO_BACK_GENITIVE_IEN  ;
+:%:  ACRO_BACK_PARTITIVE_IA  ;
+:%:  ACRO_BACK_ILLATIVE_IIN  ;
+:%:  ACRO_BACK_POSS  ;
+:%:  ACRO_BACK_CLIT  ;
+
+:  ACRO_COMPOUND  ;
+:  ACRO_BACK_SG_NOM  ;
+
+
+LEXICON  ACRO_KANDELA
+
+:%:  ACRO_BACK_CASES  ;
+:%:  ACRO_BACK_ILLATIVE_AN  ;
+:%:  ACRO_BACK_PARTITIVE_A  ;
+:%:  ACRO_BACK_GENITIVE_IDEN  ;
+:%:  ACRO_BACK_GENITIVE_ITTEN  ;
+:%:  ACRO_BACK_PARTITIVE_ITA  ;
+:%:  ACRO_BACK_POSS  ;
+:%:  ACRO_BACK_CLIT  ;
+
+:  ACRO_COMPOUND  ;
+:  ACRO_BACK_SG_NOM  ;
+
+
+LEXICON  ACRO_KOLMAS
+
+:  ACRO_KUUSI  ;
+
+
+LEXICON  ACRO_KOLME
+
+:%:  ACRO_BACK_POSS_AN_OPT  ;
+:%:  ACRO_BACK_ILLATIVE_EN  ;
+:%:  ACRO_BACK_PARTITIVE_A  ;
+:%:  ACRO_BACK_GENITIVE_IEN  ;
+:%:  ACRO_BACK_PARTITIVE_IA  ;
+:%:  ACRO_BACK_ILLATIVE_IIN  ;
+:%:  ACRO_BACK_POSS  ;
+:%:  ACRO_BACK_CLIT  ;
+
+:  ACRO_COMPOUND  ;
+:  ACRO_BACK_SG_NOM  ;
+
+
+LEXICON  ACRO_KUUSI
+
+:%:  ACRO_BACK_CASES  ;
+:%:  ACRO_BACK_ILLATIVE_EN  ;
+:%:  ACRO_BACK_PARTITIVE_TA  ;
+:%:  ACRO_BACK_GENITIVE_IEN  ;
+:%:  ACRO_BACK_PARTITIVE_IA  ;
+:%:  ACRO_BACK_ILLATIVE_IIN  ;
+:%:  ACRO_BACK_POSS  ;
+:%:  ACRO_BACK_CLIT  ;
+
+:  ACRO_COMPOUND  ;
+:  ACRO_BACK_SG_NOM  ;
+
+
+LEXICON  ACRO_LEHTI
+
+:  ACRO_COMPOUND  ;
+
+:%:  ACRO_FRONT_CASES  ;
+:%:  ACRO_FRONT_ILLATIVE_EN  ;
+:%:  ACRO_FRONT_PARTITIVE_Ä  ;
+:%:  ACRO_FRONT_GENITIVE_IEN  ;
+:%:  ACRO_FRONT_PARTITIVE_IÄ  ;
+:%:  ACRO_FRONT_ILLATIVE_IIN  ;
+:%:  ACRO_FRONT_POSS  ;
+:%:  ACRO_FRONT_CLIT  ;
+
+
+LEXICON  ACRO_LUSIKKA
+
+:  ACRO_SAIRAALA  ;
+
+
+LEXICON  ACRO_METRI
+
+:  ACRO_SENTTI  ;
+
+
+LEXICON  ACRO_NELJÄ
+
+:  ACRO_COMPOUND  ;
+:  ACRO_FRONT_SG_NOM  ;
+
+:%:  ACRO_FRONT_CASES  ;
+:%:  ACRO_FRONT_ILLATIVE_ÄN  ;
+:%:  ACRO_FRONT_PARTITIVE_Ä  ;
+:%:  ACRO_FRONT_GENITIVE_IEN  ;
+:%:  ACRO_FRONT_PARTITIVE_IÄ  ;
+:%:  ACRO_FRONT_ILLATIVE_IIN  ;
+:%:  ACRO_FRONT_POSS  ;
+:%:  ACRO_FRONT_CLIT  ;
+
+
+LEXICON  ACRO_NOLLA
+
+:  ACRO_KAHDEKSAN  ;
+
+
+LEXICON  ACRO_OHMI
+
+:%:  ACRO_BACK_CASES  ;
+:%:  ACRO_BACK_ILLATIVE_IN  ;
+:%:  ACRO_BACK_PARTITIVE_A  ;
+:%:  ACRO_BACK_GENITIVE_IEN  ;
+:%:  ACRO_BACK_PARTITIVE_JA  ;
+:%:  ACRO_BACK_POSS  ;
+:%:  ACRO_BACK_CLIT  ;
+
+:  ACRO_COMPOUND  ;
+:  ACRO_BACK_SG_NOM  ;
+
+:%:e  ACRO_BACK_PLURALS  ;
+
+
+LEXICON  ACRO_OIKEUS
+
+:  ACRO_KUUSI  ;
+
+
+LEXICON  ACRO_OK
+
+:%:  ACRO_BACK_CASES  ;
+:%:  ACRO_BACK_ILLATIVE_HON  ;
+:%:  ACRO_BACK_PARTITIVE_TA  ;
+:%:  ACRO_BACK_GENITIVE_IDEN  ;
+:%:  ACRO_BACK_GENITIVE_ITTEN  ;
+:%:  ACRO_BACK_PARTITIVE_ITA  ;
+:%:  ACRO_BACK_POSS  ;
+:%:  ACRO_BACK_CLIT  ;
+
+:  ACRO_COMPOUND  ;
+:  ACRO_BACK_SG_NOM  ;
+
+
+LEXICON  ACRO_OO
+
+:%:  ACRO_BACK_CASES  ;
+:%:  ACRO_BACK_ILLATIVE_HON  ;
+:%:  ACRO_BACK_PARTITIVE_TA  ;
+:%:  ACRO_BACK_GENITIVE_IDEN  ;
+:%:  ACRO_BACK_GENITIVE_ITTEN  ;
+:%:  ACRO_BACK_PARTITIVE_ITA  ;
+:%:  ACRO_BACK_POSS  ;
+:%:  ACRO_BACK_CLIT  ;
+
+:  ACRO_COMPOUND  ;
+:  ACRO_BACK_SG_NOM  ;
+
+
+LEXICON  ACRO_OPISTO
+
+:%:  ACRO_BACK_CASES  ;
+:%:  ACRO_BACK_ILLATIVE_ON  ;
+:%:  ACRO_BACK_PARTITIVE_A  ;
+:%:  ACRO_BACK_PARTITIVE_JA  ;
+:%:  ACRO_BACK_GENITIVE_JEN  ;
+:%:  ACRO_BACK_GENITIVE_IDEN  ;
+:%:  ACRO_BACK_GENITIVE_ITTEN  ;
+:%:  ACRO_BACK_POSS  ;
+
+:  ACRO_COMPOUND  ;
+:  ACRO_BACK_SG_NOM  ;
+
+
+LEXICON  ACRO_OPPILAS
+
+:  ACRO_TUOTE  ;
+
+
+LEXICON  ACRO_PUNTA
+
+:%:  ACRO_BACK_CASES  ;
+:%:  ACRO_BACK_ILLATIVE_AN  ;
+:%:  ACRO_BACK_PARTITIVE_A  ;
+:%:  ACRO_BACK_GENITIVE_IEN  ;
+:%:  ACRO_BACK_PARTITIVE_IA  ;
+:%:  ACRO_BACK_ILLATIVE_IIN  ;
+:%:  ACRO_BACK_POSS  ;
+:%:  ACRO_BACK_CLIT  ;
+
+:  ACRO_COMPOUND  ;
+:  ACRO_BACK_SG_NOM  ;
+
+
+LEXICON  ACRO_PYKÄLÄ
+
+:  ACRO_NELJÄ  ;
+
+
+LEXICON  ACRO_SAIRAALA
+
+:%:  ACRO_BACK_CASES  ;
+:%:  ACRO_BACK_ILLATIVE_AN  ;
+:%:  ACRO_BACK_PARTITIVE_A  ;
+:%:  ACRO_BACK_GENITIVE_JEN  ;
+:%:  ACRO_BACK_GENITIVE_IDEN  ;
+:%:  ACRO_BACK_GENITIVE_ITTEN  ;
+:%:  ACRO_BACK_PARTITIVE_JA  ;
+:%:  ACRO_BACK_PARTITIVE_ITA  ;
+:%:  ACRO_BACK_POSS  ;
+:%:  ACRO_BACK_CLIT  ;
+
+:  ACRO_COMPOUND  ;
+:  ACRO_BACK_SG_NOM  ;
+
+
+LEXICON  ACRO_SEITSEMÄN
+
+:  ACRO_COMPOUND  ;
+:  ACRO_FRONT_SG_NOM  ;
+
+:%:  ACRO_FRONT_CASES  ;
+:%:  ACRO_FRONT_ILLATIVE_ÄN  ;
+:%:  ACRO_FRONT_PARTITIVE_Ä  ;
+:%:  ACRO_FRONT_GENITIVE_IEN  ;
+:%:  ACRO_FRONT_PARTITIVE_IÄ  ;
+:%:  ACRO_FRONT_ILLATIVE_IIN  ;
+:%:  ACRO_FRONT_POSS  ;
+:%:  ACRO_FRONT_CLIT  ;
+
+
+LEXICON  ACRO_SENTTI
+
+:  ACRO_COMPOUND  ;
+:  ACRO_FRONT_SG_NOM  ;
+
+:%:  ACRO_FRONT_CASES  ;
+:%:  ACRO_FRONT_ILLATIVE_IN  ;
+:%:  ACRO_FRONT_PARTITIVE_Ä  ;
+:%:  ACRO_FRONT_GENITIVE_IEN  ;
+:%:  ACRO_FRONT_PARTITIVE_IÄ  ;
+:%:  ACRO_FRONT_POSS  ;
+:%:  ACRO_FRONT_CLIT  ;
+
+:%:e  ACRO_FRONT_PLURALS  ;
+
+
+LEXICON  ACRO_TALO
+
+:  ACRO_EURO  ;
+
+
+LEXICON  ACRO_TUOTE
+
+:%:  ACRO_BACK_CASES  ;
+:%:  ACRO_BACK_ILLATIVE_SEEN  ;
+:%:  ACRO_BACK_PARTITIVE_TA  ;
+:%:  ACRO_BACK_GENITIVE_IDEN  ;
+:%:  ACRO_BACK_GENITIVE_ITTEN  ;
+:%:  ACRO_BACK_PARTITIVE_ITA  ;
+:%:  ACRO_BACK_ILLATIVE_IIN  ;
+:%:  ACRO_BACK_POSS  ;
+:%:  ACRO_BACK_CLIT  ;
+
+:  ACRO_COMPOUND  ;
+:  ACRO_BACK_SG_NOM  ;
+
+
+LEXICON  ACRO_UU
+
+:%:  ACRO_BACK_CASES  ;
+:%:  ACRO_BACK_ILLATIVE_HUN  ;
+:%:  ACRO_BACK_PARTITIVE_TA  ;
+:%:  ACRO_BACK_GENITIVE_IDEN  ;
+:%:  ACRO_BACK_GENITIVE_ITTEN  ;
+:%:  ACRO_BACK_PARTITIVE_ITA  ;
+:%:  ACRO_BACK_POSS  ;
+:%:  ACRO_BACK_CLIT  ;
+
+:  ACRO_COMPOUND  ;
+:  ACRO_BACK_SG_NOM  ;
+
+
+LEXICON  ACRO_VIISI
+
+:  ACRO_COMPOUND  ;
+:  ACRO_FRONT_SG_NOM  ;
+
+:%:  ACRO_FRONT_CASES  ;
+:%:  ACRO_FRONT_ILLATIVE_EN  ;
+:%:  ACRO_FRONT_PARTITIVE_TÄ  ;
+:%:  ACRO_FRONT_GENITIVE_IEN  ;
+:%:  ACRO_FRONT_PARTITIVE_IÄ  ;
+:%:  ACRO_FRONT_ILLATIVE_IIN  ;
+:%:  ACRO_FRONT_POSS  ;
+:%:  ACRO_FRONT_CLIT  ;
+
+
+LEXICON  ACRO_VUOSI
+
+:  ACRO_KUUSI  ;
+
+
+LEXICON  ACRO_WEBER
+
+:  ACRO_COMPOUND  ;
+:  ACRO_FRONT_SG_NOM  ;
+
+:%:  ACRO_FRONT_CASES  ;
+:%:  ACRO_FRONT_ILLATIVE_IN  ;
+:%:  ACRO_FRONT_PARTITIVE_Ä  ;
+:%:  ACRO_FRONT_GENITIVE_IEN  ;
+:%:  ACRO_FRONT_GENITIVE_IDEN  ;
+:%:  ACRO_FRONT_GENITIVE_ITTEN  ;
+:%:  ACRO_FRONT_POSS  ;
+:%:  ACRO_FRONT_CLIT  ;
+
+
+LEXICON  ACRO_YHDEKSÄN
+
+:  ACRO_COMPOUND  ;
+:  ACRO_FRONT_SG_NOM  ;
+
+:%:  ACRO_FRONT_CASES  ;
+:%:  ACRO_FRONT_ILLATIVE_ÄN  ;
+:%:  ACRO_FRONT_PARTITIVE_Ä  ;
+:%:  ACRO_FRONT_GENITIVE_IEN  ;
+:%:  ACRO_FRONT_PARTITIVE_IÄ  ;
+:%:  ACRO_FRONT_ILLATIVE_IIN  ;
+:%:  ACRO_FRONT_POSS  ;
+:%:  ACRO_FRONT_CLIT  ;
+
+
+LEXICON  ACRO_YHDISTYS
+
+:  ACRO_VIISI  ;
+
+
+LEXICON  ACRO_YKSI
+
+:  ACRO_COMPOUND  ;
+:  ACRO_FRONT_SG_NOM  ;
+
+:%:  ACRO_FRONT_CASES  ;
+:%:  ACRO_FRONT_ILLATIVE_EN  ;
+:%:  ACRO_FRONT_PARTITIVE_TÄ  ;
+:%:  ACRO_FRONT_GENITIVE_IEN  ;
+:%:  ACRO_FRONT_ILLATIVE_IIN  ;
+:%:  ACRO_FRONT_POSS  ;
+:%:  ACRO_FRONT_CLIT  ;
+
+
+LEXICON  ACRO_YY
+
+:  ACRO_COMPOUND  ;
+:  ACRO_FRONT_SG_NOM  ;
+
+:%:  ACRO_FRONT_CASES  ;
+:%:  ACRO_FRONT_ILLATIVE_HYN  ;
+:%:  ACRO_FRONT_PARTITIVE_TÄ  ;
+:%:  ACRO_FRONT_GENITIVE_IDEN  ;
+:%:  ACRO_FRONT_GENITIVE_ITTEN  ;
+:%:  ACRO_FRONT_PARTITIVE_ITÄ  ;
+:%:  ACRO_FRONT_POSS  ;
+:%:  ACRO_FRONT_CLIT  ;
+
+
+LEXICON  ACRO_ZET
+
+:%:  ACRO_BACK_CASES  ;
+:%:  ACRO_BACK_ILLATIVE_AN  ;
+:%:  ACRO_BACK_PARTITIVE_A  ;
+:%:  ACRO_BACK_GENITIVE_JEN  ;
+:%:  ACRO_BACK_PARTITIVE_JA  ;
+:%:  ACRO_BACK_POSS  ;
+:%:  ACRO_BACK_CLIT  ;
+
+:  ACRO_COMPOUND  ;
+:  ACRO_BACK_SG_NOM  ;
+
+
+LEXICON  ACRO_ÄKS
+
+:  ACRO_COMPOUND  ;
+:  ACRO_FRONT_SG_NOM  ;
+
+:%:  ACRO_FRONT_CASES  ;
+:%:  ACRO_FRONT_ILLATIVE_ÄN  ;
+:%:  ACRO_FRONT_PARTITIVE_Ä  ;
+:%:  ACRO_FRONT_GENITIVE_IEN  ;
+:%:  ACRO_FRONT_PARTITIVE_IÄ  ;
+:%:  ACRO_FRONT_ILLATIVE_IIN  ;
+:%:  ACRO_FRONT_POSS  ;
+:%:  ACRO_FRONT_CLIT  ;
+
+
+LEXICON  ACRO_ÄÄ
+
+:  ACRO_COMPOUND  ;
+:  ACRO_FRONT_SG_NOM  ;
+
+:%:  ACRO_FRONT_CASES  ;
+:%:  ACRO_FRONT_ILLATIVE_HÄN  ;
+:%:  ACRO_FRONT_PARTITIVE_TÄ  ;
+:%:  ACRO_FRONT_GENITIVE_IDEN  ;
+:%:  ACRO_FRONT_GENITIVE_ITTEN  ;
+:%:  ACRO_FRONT_PARTITIVE_ITÄ  ;
+:%:  ACRO_FRONT_POSS  ;
+:%:  ACRO_FRONT_CLIT  ;
+
+
+LEXICON  ACRO_ÖÖ
+
+:  ACRO_COMPOUND  ;
+:  ACRO_FRONT_SG_NOM  ;
+
+:%:  ACRO_FRONT_CASES  ;
+:%:  ACRO_FRONT_ILLATIVE_HÖN  ;
+:%:  ACRO_FRONT_PARTITIVE_TÄ  ;
+:%:  ACRO_FRONT_GENITIVE_IDEN  ;
+:%:  ACRO_FRONT_GENITIVE_ITTEN  ;
+:%:  ACRO_FRONT_PARTITIVE_ITÄ  ;
+:%:  ACRO_FRONT_POSS  ;
+:%:  ACRO_FRONT_CLIT  ;
+
+

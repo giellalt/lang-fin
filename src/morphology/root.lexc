@@ -1,5 +1,9 @@
 ! -*- mode: lexc; coding: utf-8 -*-
 
+! This semi-automatically generated lexc data is merged from 
+! omorfi database. Last merge: 2015-07-18
+! Copyright (c) 2015 Omorfi contributors
+
 !! !!!Morphology
 !!
 !! The morphological division of Finnish words has three classes: verbal,
@@ -564,33 +568,32 @@ LEXICON Root
 !!€ talo: talo+N+Sg+Nom # house
 !!€ nopea: nopea+A+Sg+Nom # fast
 !!€ kutoa: kutoa+V+Act+InfA+Sg+Lat # to knit
-0   N           ;
-0   A           ;
-0   V           ;
-0   ABBR        ;
-0   ACRO        ;
-0   ADV         ;
-0   CC          ;
-0   CS          ;
-0   DIGITS      ;
-0   INTERJ      ;
-0   NUM         ;
-0   PCLE        ;
-0   PROPER      ;
-0   ADP         ;
-0   PRON        ;
-0   PUNCT       ;
+0   NOUN ;
+0   ADJECTIVE ;
+0   VERB    ;
+0   NUMERAL ;
+0   DIGITS ;
+0   ACRONYM ;
+0   PRONOUN    ;
+0   PARTICLE    ;
+0   INTERJECTION ;
+0   PUNCTUATION ;
+0   CONJUNCTIONVERB ;
 0   PREFIX      ;
 -   SUFFIX      ; ! suffixes may stand stranded in co-ordination
-0   51          ;
 0   EXCEPTIONS  ;
+0   CC ;
+0   CS ;
+0   PROPER ;
+0   ABBREVIATION ;
+0   ADPOSITION ;
+0   ADVERB ;
 
 LEXICON NOMINAL
 !! !! The compound part sub-set {{@LEXNAME@}}
 !! The nominal forms can be used as non-initial parts of typical compounds
 !!€gt-norm: Nominals
 !!€ talonjuttu: talo+N+Sg+Gen#juttu+N+Sg+Nom # house thing
-0   N           ;
-0   A           ;
-0   51          ;
+0   NOUN           ;
+0   ADJECTIVE           ;
 0   SUFFIX      ;
