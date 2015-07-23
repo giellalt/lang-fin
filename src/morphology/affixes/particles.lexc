@@ -1,0 +1,286 @@
+LEXICON PCLE_BACK_CLIT
+
+%+Foc%_hAn:{MB}han	# ;
+
+%+Foc%_hAn%+Foc%_kAAn:{MB}han{MB}kaan	# ;
+
+%+Foc%_hAn%+Foc%_kO:{MB}han{MB}ko	# ;
+
+%+Foc%_hAn%+Foc%_pA:{MB}han{MB}pa	# ;
+
+%+Foc%_kAAn:{MB}kaan	# ;
+
+%+Foc%_kAAn%+Foc%_hAn:{MB}kaan{MB}han	# ;
+
+%+Foc%_kAAn%+Foc%_kin:{MB}kaan{MB}kin	# ;
+
+%+Foc%_kAAn%+Foc%_kO:{MB}kaan{MB}ko	# ;
+
+%+Foc%_kAAn%+Foc%_pA:{MB}kaan{MB}pa	# ;
+
+%+Foc%_kin:{MB}kin	# ;
+
+%+Foc%_kin%+Foc%_hAn:{MB}kin{MB}han	# ;
+
+%+Foc%_kin%+Foc%_kAAn:{MB}kin{MB}kaan	# ;
+
+%+Foc%_kin%+Foc%_kO:{MB}kin{MB}ko	# ;
+
+%+Foc%_kin%+Foc%_pA:{MB}kin{MB}pa	# ;
+
+%+Foc%_kO:{MB}ko	# ;
+
+%+Foc%_kO%+Foc%_hAn:{MB}ko{MB}han	# ;
+
+%+Foc%_kO%+Foc%_kAAn:{MB}ko{MB}kaan	# ;
+
+%+Foc%_kO%+Foc%_kin:{MB}ko{MB}kin	# ;
+
+%+Foc%_kO%+Foc%_pA:{MB}ko{MB}pa	# ;
+
+%+Foc%_kO%+Foc%_s:{MB}ko{MB}s	# ;
+
+%+Foc%_pA:{MB}pa	# ;
+
+%+Foc%_pA%+Foc%_hAn:{MB}pa{MB}han	# ;
+
+%+Foc%_pA%+Foc%_kAAn:{MB}pa{MB}kaan	# ;
+
+%+Foc%_pA%+Foc%_kin:{MB}pa{MB}kin	# ;
+
+%+Foc%_pA%+Foc%_kO:{MB}pa{MB}ko	# ;
+
+%+Foc%_pA%+Foc%_s:{MB}pa{MB}s	# ;
+
+
+LEXICON PCLE_BACK_CLIT_KA
+
+%+Foc%_kA:{MB}ka	# ;
+
+
+LEXICON PCLE_BACK_CLIT_KA_S
+
+%+Foc%_kA:{MB}ka	# ;
+
+%+Foc%_kA%+Foc%_hAn:{MB}ka{MB}han	# ;
+
+%+Foc%_kA%+Foc%_pA:{MB}kapa	# ;
+
+%+Foc%_kA%+Foc%_pA%+Foc%_hAn:{MB}ka{MB}pa{MB}han	# ;
+
+%+Foc%_kA%+Foc%_pA%+Foc%_s:{MB}ka{MB}pa{MB}s	# ;
+
+%+Foc%_kA%+Foc%_s:{MB}ka{MB}s	# ;
+
+%+Foc%_s:{MB}s	# ;
+
+
+LEXICON PCLE_BACK_CLIT_KO
+
+%+Foc%_kO:{MB}ko	# ;
+
+%+Foc%_kO%+Foc%_hAn:{MB}ko{MB}han	# ;
+
+%+Foc%_kO%+Foc%_s:{MB}ko{MB}s	# ;
+
+
+LEXICON PCLE_BACK_CLIT_OPT
+
+:	# ;
+:	PCLE_BACK_CLIT ;
+
+
+LEXICON PCLE_BACK_POSS
+
+%+Px3:{MB}nsa	PCLE_BACK_CLIT_OPT ;
+
+%+PxPl1:{MB}mme	PCLE_BACK_CLIT_OPT ;
+
+%+PxPl2:{MB}nne	PCLE_BACK_CLIT_OPT ;
+
+%+PxSg1:{MB}ni	PCLE_BACK_CLIT_OPT ;
+
+%+PxSg2:{MB}si	PCLE_BACK_CLIT_OPT ;
+
+
+LEXICON PCLE_BACK_POSS_AN
+
+%+Px3:{MB}an	PCLE_BACK_CLIT_OPT ;
+
+
+LEXICON PCLE_BACK_POSS_AN_OBL
+
+:	PCLE_BACK_POSS ;
+:	PCLE_BACK_POSS_AN ;
+
+
+LEXICON PCLE_BACK_POSS_AN_OPT
+
+:	PCLE_BACK_POSS ;
+:	PCLE_BACK_POSS_AN ;
+:	PCLE_BACK_CLIT ;
+:	# ;
+
+
+LEXICON PCLE_BACK_POSS_EN
+
+%+Px3:{MB}en	PCLE_BACK_CLIT_OPT ;
+
+
+LEXICON PCLE_BACK_POSS_EN_OBL
+
+:	PCLE_BACK_POSS ;
+:	PCLE_BACK_POSS_EN ;
+
+
+LEXICON PCLE_BACK_POSS_EN_OPT
+
+:	PCLE_BACK_POSS ;
+:	PCLE_BACK_POSS_EN ;
+:	PCLE_BACK_CLIT ;
+:	# ;
+
+
+LEXICON PCLE_COMPOUND_INTERJ
+
+#:-	INTERJECTION ;
+
+#:	INTERJECTION ;
+
+
+LEXICON PCLE_FRONT_CLIT
+
+%+Foc%_hAn:{MB}hän	# ;
+
+%+Foc%_hAn%+Foc%_kAAn:{MB}hän{MB}kään	# ;
+
+%+Foc%_hAn%+Foc%_kO:{MB}hän{MB}kö	# ;
+
+%+Foc%_hAn%+Foc%_pA:{MB}hän{MB}pä	# ;
+
+%+Foc%_kAAn:{MB}kään	# ;
+
+%+Foc%_kAAn%+Foc%_hAn:{MB}kään{MB}hän	# ;
+
+%+Foc%_kAAn%+Foc%_kin:{MB}kään{MB}kin	# ;
+
+%+Foc%_kAAn%+Foc%_kO:{MB}kään{MB}kö	# ;
+
+%+Foc%_kAAn%+Foc%_pA:{MB}kään{MB}pä	# ;
+
+%+Foc%_kin:{MB}kin	# ;
+
+%+Foc%_kin%+Foc%_hAn:{MB}kin{MB}hän	# ;
+
+%+Foc%_kin%+Foc%_kAAn:{MB}kin{MB}kään	# ;
+
+%+Foc%_kin%+Foc%_kO:{MB}kin{MB}kö	# ;
+
+%+Foc%_kin%+Foc%_pA:{MB}kin{MB}pä	# ;
+
+%+Foc%_kO:{MB}kö	# ;
+
+%+Foc%_kO%+Foc%_hAn:{MB}kö{MB}hän	# ;
+
+%+Foc%_kO%+Foc%_kAAn:{MB}kö{MB}kään	# ;
+
+%+Foc%_kO%+Foc%_kin:{MB}kö{MB}kin	# ;
+
+%+Foc%_kO%+Foc%_pA:{MB}kö{MB}pä	# ;
+
+%+Foc%_kO%+Foc%_s:{MB}kö{MB}s	# ;
+
+%+Foc%_pA:{MB}pä	# ;
+
+%+Foc%_pA%+Foc%_hAn:{MB}pä{MB}hän	# ;
+
+%+Foc%_pA%+Foc%_kAAn:{MB}pä{MB}kään	# ;
+
+%+Foc%_pA%+Foc%_kin:{MB}pä{MB}kin	# ;
+
+%+Foc%_pA%+Foc%_kO:{MB}pä{MB}kö	# ;
+
+%+Foc%_pA%+Foc%_s:{MB}pä{MB}s	# ;
+
+
+LEXICON PCLE_FRONT_CLIT_KA_S
+
+%+Foc%_kA:{MB}kä	# ;
+
+%+Foc%_kA%+Foc%_hAn:{MB}kä{MB}hän	# ;
+
+%+Foc%_kA%+Foc%_pA:{MB}kä{MB}pä	# ;
+
+%+Foc%_kA%+Foc%_pA%+Foc%_hAn:{MB}kä{MB}pä{MB}hän	# ;
+
+%+Foc%_kA%+Foc%_pA%+Foc%_s:{MB}kä{MB}pä{MB}s	# ;
+
+%+Foc%_kA%+Foc%_s:{MB}kä{MB}s	# ;
+
+%+Foc%_s:{MB}s	# ;
+
+
+LEXICON PCLE_FRONT_CLIT_OPT
+
+:	# ;
+:	PCLE_FRONT_CLIT ;
+
+
+LEXICON PCLE_FRONT_POSS
+
+%+Px3:{MB}nsä	PCLE_FRONT_CLIT_OPT ;
+
+%+PxPl1:{MB}mme	PCLE_FRONT_CLIT_OPT ;
+
+%+PxPl2:{MB}nne	PCLE_FRONT_CLIT_OPT ;
+
+%+PxSg1:{MB}ni	PCLE_FRONT_CLIT_OPT ;
+
+%+PxSg2:{MB}si	PCLE_FRONT_CLIT_OPT ;
+
+
+LEXICON PCLE_FRONT_POSS_EN
+
+%+Px3:{MB}en	PCLE_FRONT_CLIT_OPT ;
+
+
+LEXICON PCLE_FRONT_POSS_EN_OBL
+
+:	PCLE_FRONT_POSS ;
+:	PCLE_FRONT_POSS_EN ;
+
+
+LEXICON PCLE_FRONT_POSS_EN_OPT
+
+:	PCLE_FRONT_POSS ;
+:	PCLE_FRONT_POSS_EN ;
+:	PCLE_FRONT_CLIT ;
+:	# ;
+
+
+LEXICON PCLE_FRONT_POSS_OPT
+
+:	PCLE_FRONT_POSS ;
+:	PCLE_FRONT_CLIT ;
+:	# ;
+
+
+LEXICON PCLE_FRONT_POSS_ÄN
+
+%+Px3:{MB}än	PCLE_FRONT_CLIT_OPT ;
+
+
+LEXICON PCLE_FRONT_POSS_ÄN_OBL
+
+:	PCLE_FRONT_POSS ;
+:	PCLE_FRONT_POSS_ÄN ;
+
+
+LEXICON PCLE_FRONT_POSS_ÄN_OPT
+
+:	PCLE_FRONT_POSS ;
+:	PCLE_FRONT_POSS_ÄN ;
+:	PCLE_FRONT_CLIT ;
+:	# ;
+
+
