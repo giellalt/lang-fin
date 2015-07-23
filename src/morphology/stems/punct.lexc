@@ -13,7 +13,7 @@
 !! 2/2006|http://arkisto.kielikello.fi/index.php?mid=2&pid=12&maid=110] (N.B.
 !! you may need to buy subscription or route through university servers).
 
-LEXICON PUNCT
+LEXICON PUNCTUATION
 
 !! The primary punctuation marks are sentence final punctuation, they mark
 !! the end of a sentence. The most typical of these is full stop symbol, which
@@ -96,7 +96,7 @@ LEXICON PUNCT
 
 !! The space is used to separate words. For most applications the space has
 !! separate meaning so it rarely gets used as a symbol in applications of
-!% +Punct:%   #    ; ! ASCII space
+!% +Punct:%  #    ; ! ASCII space
  +Punct:     #    ; ! NBSP
 
 !! Less used symbols that appear in the Finnish texts; these do not have 
@@ -128,7 +128,7 @@ _+Punct:_  #    ;
 |+Punct:|  #    ;
 @+Punct:@  #    ;
 &+Punct:&   #   ;
-%%+Punct:%%    #    ;
+%%+Punct:%%   #    ;
 ‰+Punct:‰      #    ;
 §+Punct:§   #   ;
 °+Punct:°  #    ;
@@ -152,3 +152,440 @@ $+Punct:$  #    ;
 ¥+Punct:¥  #    ;
 ¢+Punct:¢  #    ;
 ¤+Punct:¤ #    ;
+
+¼%+Punct:¼  SYMBOL_PISTE    ;
+¹%+Punct:¹  SYMBOL_PISTE    ;
+²%+Punct:²  SYMBOL_PISTE    ;
+³%+Punct:³  SYMBOL_PISTE    ;
+%!%+Punct:%! PUNCT_NONSTD_EXCL_LOOP  ;
+?%+Punct:?  PUNCT_NONSTD_EXCL_LOOP  ;
+%%%+Punct:%% SYMBOL_PILKKU   ;
+,%+Punct:,  SYMBOL_PILKKU   ;
+≤%+Punct:≤  SYMBOL_PISTE    ;
+=%+Punct:=  SYMBOL_PISTE    ;
+≥%+Punct:≥  SYMBOL_PISTE    ;
+µ%+Punct:µ  SYMBOL_PISTE    ;
+/%+Punct:/  SYMBOL_PISTE    ;
+#%+Punct:#  SYMBOL_PISTE    ;
+→%+Punct:→  SYMBOL_PISTE    ;
+%;%+Punct:%; SYMBOL_PISTE    ;
+%:%+Punct:%: SYMBOL_PISTE    ;
+--%+Punct%+Dash:--  SYMBOL_PISTE    ;
+-%+Punct%+Dash:-    SYMBOL_PISTE    ;
+–%+Punct%+Dash:–    SYMBOL_PISTE    ;
+—%+Punct%+Dash:—    SYMBOL_PISTE    ;
+˗%+Punct%+Dash:˗    SYMBOL_PISTE    ;
+%>%+Punct:%> SYMBOL_PISTE    ;
+)%+Punct:)  SYMBOL_PISTE    ;
+]%+Punct:]  SYMBOL_PISTE    ;
+}%+Punct:}  SYMBOL_PISTE    ;
+›%+Punct:›  SYMBOL_PISTE    ;
+’%+Punct%+Quote:’   SYMBOL_PISTE    ;
+%"%+Punct%+Quote:%"  SYMBOL_PISTE    ;
+”%+Punct%+Quote:”   SYMBOL_PISTE    ;
+»%+Punct%+Quote:»   SYMBOL_PISTE    ;
+%<%+Punct:%< SYMBOL_PISTE    ;
+(%+Punct:(  SYMBOL_PISTE    ;
+[%+Punct:[  SYMBOL_PISTE    ;
+{%+Punct:{  SYMBOL_PISTE    ;
+‹%+Punct:‹  SYMBOL_PISTE    ;
+’%+Punct%+Quote:’   SYMBOL_PISTE    ;
+%"%+Punct%+Quote:%"  SYMBOL_PISTE    ;
+”%+Punct%+Quote:”   SYMBOL_PISTE    ;
+»%+Punct%+Quote:»   SYMBOL_PISTE    ;
+...%+Punct:...  SYMBOL_PISTE    ;
+.%+Punct:.  SYMBOL_PISTE    ;
+(%!)%+Punct:(%!) SYMBOL_PISTE    ;
+(?)%+Punct:(?)  SYMBOL_PISTE    ;
+‥%+Punct:‥  SYMBOL_PISTE    ;
+…%+Punct:…  SYMBOL_PISTE    ;
+%!%+Punct:%! SYMBOL_PISTE    ;
+?%+Punct:?  SYMBOL_PISTE    ;
+--------------------------------------------------%+Punct:------------------------------------------------- SYMBOL_PISTE    ;
+´%+Punct%+Quote:´   SYMBOL_PISTE    ;
+`%+Punct%+Quote:`   SYMBOL_PISTE    ;
+'%+Punct%+Quote:'   SYMBOL_PISTE    ;
+«%+Punct%+Quote:«   SYMBOL_PISTE    ;
+´%+Punct%+Quote:´   SYMBOL_PISTE    ;
+`%+Punct%+Quote:`   SYMBOL_PISTE    ;
+'%+Punct%+Quote:'   SYMBOL_PISTE    ;
+«%+Punct%+Quote:«   SYMBOL_PISTE    ;
+....%+Punct:....    SYMBOL_PISTE    ;
+..%+Punct:..    SYMBOL_PISTE    ;
+ %+Punct:   SYMBOL_PISTE    ;
+
+LEXICON PUNCT_NONSTD_EXCL_LOOP
+
+:?	PUNCT_NONSTD_EXCL_LOOP ;
+
+:%%%!	PUNCT_NONSTD_EXCL_LOOP ;
+
+%+Err/Orth:?	# ;
+
+%+Err/Orth:%%%!	# ;
+
+
+LEXICON SYMBOL_PILKKU
+
+:	# ;
+
+%+Pl%+Abe:%:{MB}i{MB}tta	SYMBOL_BACK_POSS_AN_OPT ;
+
+%+Pl%+Abl:%:{MB}i{MB}lta	SYMBOL_BACK_POSS_AN_OPT ;
+
+%+Pl%+Ade:%:{MB}i{MB}lla	SYMBOL_BACK_POSS_AN_OPT ;
+
+%+Pl%+All:%:{MB}i{MB}lle	SYMBOL_BACK_POSS_EN_OPT ;
+
+%+Pl%+Ela:%:{MB}i{MB}sta	SYMBOL_BACK_POSS_AN_OPT ;
+
+%+Pl%+Ess:%:{MB}i{MB}na	SYMBOL_BACK_POSS_AN_OPT ;
+
+%+Pl%+Gen:%:{MB}i{MB}den	SYMBOL_BACK_POSS_CLIT_OPT ;
+
+%+Pl%+Ill:%:{MB}i{MB}hin	SYMBOL_BACK_POSS_CLIT_OPT ;
+
+%+Pl%+Ine:%:{MB}i{MB}ssa	SYMBOL_BACK_POSS_AN_OPT ;
+
+%+Pl%+Ins:%:{MB}i{MB}n	SYMBOL_BACK_CLIT_OPT ;
+
+%+Pl%+Nom:%:{MB}t	SYMBOL_BACK_CLIT_OPT ;
+
+%+Pl%+Par:%:{MB}i{MB}ta	SYMBOL_BACK_POSS_AN_OPT ;
+
+%+Pl%+Tra:%:{MB}i{MB}kse	SYMBOL_BACK_POSS_EN_OBL ;
+
+%+Pl%+Tra:%:{MB}i{MB}ksi	SYMBOL_BACK_CLIT_OPT ;
+
+%+Sg%+Abe:%:{MB}tta	SYMBOL_BACK_POSS_AN_OPT ;
+
+%+Sg%+Abl:%:{MB}lta	SYMBOL_BACK_POSS_AN_OPT ;
+
+%+Sg%+Ade:%:{MB}lla	SYMBOL_BACK_POSS_AN_OPT ;
+
+%+Sg%+All:%:{MB}lle	SYMBOL_BACK_POSS_EN_OPT ;
+
+%+Sg%+Ela:%:{MB}sta	SYMBOL_BACK_POSS_AN_OPT ;
+
+%+Sg%+Ess:%:{MB}na	SYMBOL_BACK_POSS_AN_OPT ;
+
+%+Sg%+Gen:%:{MB}n	SYMBOL_BACK_CLIT_OPT ;
+
+%+Sg%+Ill:%:{MB}seen	SYMBOL_BACK_POSS_CLIT_OPT ;
+
+%+Sg%+Ine:%:{MB}ssa	SYMBOL_BACK_POSS_AN_OPT ;
+
+%+Sg%+Nom:%:	SYMBOL_BACK_POSS ;
+%+Sg%+Nom:%:	SYMBOL_BACK_CLIT ;
+
+%+Sg%+Par:%:{MB}tta	SYMBOL_BACK_POSS_AN_OPT ;
+
+%+Sg%+Tra:%:{MB}kse	SYMBOL_BACK_POSS_EN_OBL ;
+
+%+Sg%+Tra:%:{MB}ksi	SYMBOL_BACK_CLIT_OPT ;
+
+:	SYMBOL_COMPOUND ;
+
+%+Com:%:{MB}i{MB}ne	SYMBOL_BACK_POSS_EN_OPT ;
+
+
+LEXICON SYMBOL_PISTE
+
+:	# ;
+
+%+Pl%+Abe:%:{MB}i{MB}ttä	SYMBOL_FRONT_POSS_ÄN_OPT ;
+
+%+Pl%+Abl:%:{MB}i{MB}ltä	SYMBOL_FRONT_POSS_ÄN_OPT ;
+
+%+Pl%+Ade:%:{MB}i{MB}llä	SYMBOL_FRONT_POSS_ÄN_OPT ;
+
+%+Pl%+All:%:{MB}i{MB}lle	SYMBOL_FRONT_POSS_EN_OPT ;
+
+%+Pl%+Ela:%:{MB}i{MB}stä	SYMBOL_FRONT_POSS_ÄN_OPT ;
+
+%+Pl%+Ess:%:{MB}i{MB}nä	SYMBOL_FRONT_POSS_ÄN_OPT ;
+
+%+Pl%+Gen:%:{MB}i{MB}den	SYMBOL_FRONT_POSS_CLIT_OPT ;
+
+%+Pl%+Ill:%:{MB}i{MB}hin	SYMBOL_FRONT_POSS_CLIT_OPT ;
+
+%+Pl%+Ine:%:{MB}i{MB}ssä	SYMBOL_FRONT_POSS_ÄN_OPT ;
+
+%+Pl%+Ins:%:{MB}i{MB}n	SYMBOL_FRONT_CLIT_OPT ;
+
+%+Pl%+Nom:%:{MB}t	SYMBOL_FRONT_CLIT_OPT ;
+
+%+Pl%+Par:%:{MB}i{MB}tä	SYMBOL_FRONT_POSS_ÄN_OPT ;
+
+%+Pl%+Tra:%:{MB}i{MB}kse	SYMBOL_FRONT_POSS_EN_OBL ;
+
+%+Pl%+Tra:%:{MB}i{MB}ksi	SYMBOL_FRONT_CLIT_OPT ;
+
+%+Sg%+Abe:%:{MB}ttä	SYMBOL_FRONT_POSS_ÄN_OPT ;
+
+%+Sg%+Abl:%:{MB}ltä	SYMBOL_FRONT_POSS_ÄN_OPT ;
+
+%+Sg%+Ade:%:{MB}llä	SYMBOL_FRONT_POSS_ÄN_OPT ;
+
+%+Sg%+All:%:{MB}lle	SYMBOL_FRONT_POSS_EN_OPT ;
+
+%+Sg%+Ela:%:{MB}stä	SYMBOL_FRONT_POSS_ÄN_OPT ;
+
+%+Sg%+Ess:%:{MB}nä	SYMBOL_FRONT_POSS_ÄN_OPT ;
+
+%+Sg%+Gen:%:{MB}n	SYMBOL_FRONT_CLIT_OPT ;
+
+%+Sg%+Ill:%:{MB}seen	SYMBOL_FRONT_POSS_CLIT_OPT ;
+
+%+Sg%+Ine:%:{MB}ssä	SYMBOL_FRONT_POSS_ÄN_OPT ;
+
+%+Sg%+Nom:%:	SYMBOL_FRONT_POSS ;
+%+Sg%+Nom:%:	SYMBOL_FRONT_CLIT ;
+
+%+Sg%+Par:%:{MB}ttä	SYMBOL_FRONT_POSS_ÄN_OPT ;
+
+%+Sg%+Tra:%:{MB}kse	SYMBOL_FRONT_POSS_EN_OBL ;
+
+%+Sg%+Tra:%:{MB}ksi	SYMBOL_FRONT_CLIT_OPT ;
+
+:	SYMBOL_COMPOUND ;
+
+%+Com:%:{MB}i{MB}ne	SYMBOL_FRONT_POSS_EN_OPT ;
+
+
+
+LEXICON SYMBOL_BACK_CLIT
+
+%+Foc%_hAn:{MB}han	# ;
+
+%+Foc%_hAn%+Foc%_kAAn:{MB}han{MB}kaan	# ;
+
+%+Foc%_hAn%+Foc%_kO:{MB}han{MB}ko	# ;
+
+%+Foc%_hAn%+Foc%_pA:{MB}han{MB}pa	# ;
+
+%+Foc%_kAAn:{MB}kaan	# ;
+
+%+Foc%_kAAn%+Foc%_hAn:{MB}kaan{MB}han	# ;
+
+%+Foc%_kAAn%+Foc%_kin:{MB}kaan{MB}kin	# ;
+
+%+Foc%_kAAn%+Foc%_kO:{MB}kaan{MB}ko	# ;
+
+%+Foc%_kAAn%+Foc%_pA:{MB}kaan{MB}pa	# ;
+
+%+Foc%_kin:{MB}kin	# ;
+
+%+Foc%_kin%+Foc%_hAn:{MB}kin{MB}han	# ;
+
+%+Foc%_kin%+Foc%_kAAn:{MB}kin{MB}kaan	# ;
+
+%+Foc%_kin%+Foc%_kO:{MB}kin{MB}ko	# ;
+
+%+Foc%_kin%+Foc%_pA:{MB}kin{MB}pa	# ;
+
+%+Foc%_kO:{MB}ko	# ;
+
+%+Foc%_kO%+Foc%_hAn:{MB}ko{MB}han	# ;
+
+%+Foc%_kO%+Foc%_kAAn:{MB}ko{MB}kaan	# ;
+
+%+Foc%_kO%+Foc%_kin:{MB}ko{MB}kin	# ;
+
+%+Foc%_kO%+Foc%_pA:{MB}ko{MB}pa	# ;
+
+%+Foc%_kO%+Foc%_s:{MB}ko{MB}s	# ;
+
+%+Foc%_pA:{MB}pa	# ;
+
+%+Foc%_pA%+Foc%_hAn:{MB}pa{MB}han	# ;
+
+%+Foc%_pA%+Foc%_kAAn:{MB}pa{MB}kaan	# ;
+
+%+Foc%_pA%+Foc%_kin:{MB}pa{MB}kin	# ;
+
+%+Foc%_pA%+Foc%_kO:{MB}pa{MB}ko	# ;
+
+%+Foc%_pA%+Foc%_s:{MB}pa{MB}s	# ;
+
+
+LEXICON SYMBOL_BACK_CLIT_OPT
+
+:	# ;
+:	SYMBOL_BACK_CLIT ;
+
+
+LEXICON SYMBOL_BACK_POSS
+
+%+Px3:{MB}nsa	SYMBOL_BACK_CLIT_OPT ;
+
+%+PxPl1:{MB}mme	SYMBOL_BACK_CLIT_OPT ;
+
+%+PxPl2:{MB}nne	SYMBOL_BACK_CLIT_OPT ;
+
+%+PxSg1:{MB}ni	SYMBOL_BACK_CLIT_OPT ;
+
+%+PxSg2:{MB}si	SYMBOL_BACK_CLIT_OPT ;
+
+
+LEXICON SYMBOL_BACK_POSS_AN
+
+%+Px3:{MB}an	SYMBOL_BACK_CLIT_OPT ;
+
+
+LEXICON SYMBOL_BACK_POSS_AN_OPT
+
+:	SYMBOL_BACK_POSS ;
+:	SYMBOL_BACK_POSS_AN ;
+:	SYMBOL_BACK_CLIT ;
+:	# ;
+
+
+LEXICON SYMBOL_BACK_POSS_CLIT_OPT
+
+:	SYMBOL_BACK_POSS ;
+:	SYMBOL_BACK_CLIT ;
+:	# ;
+
+
+LEXICON SYMBOL_BACK_POSS_EN
+
+%+Px3:{MB}en	SYMBOL_BACK_CLIT_OPT ;
+
+
+LEXICON SYMBOL_BACK_POSS_EN_OBL
+
+:	SYMBOL_BACK_POSS ;
+:	SYMBOL_BACK_POSS_EN ;
+
+
+LEXICON SYMBOL_BACK_POSS_EN_OPT
+
+:	SYMBOL_BACK_POSS ;
+:	SYMBOL_BACK_POSS_EN ;
+:	SYMBOL_BACK_CLIT ;
+:	# ;
+
+
+LEXICON SYMBOL_COMPOUND
+
+%+TruncPrefix:-	# ;
+
+#:-	NOUN ;
+#:-	ADJECTIVE ;
+#:-	SUFFIX ;
+
+
+LEXICON SYMBOL_FRONT_CLIT
+
+%+Foc%_hAn:{MB}hän	# ;
+
+%+Foc%_hAn%+Foc%_kAAn:{MB}hän{MB}kään	# ;
+
+%+Foc%_hAn%+Foc%_kO:{MB}hän{MB}kö	# ;
+
+%+Foc%_hAn%+Foc%_pA:{MB}hän{MB}pä	# ;
+
+%+Foc%_kAAn:{MB}kään	# ;
+
+%+Foc%_kAAn%+Foc%_hAn:{MB}kään{MB}hän	# ;
+
+%+Foc%_kAAn%+Foc%_kin:{MB}kään{MB}kin	# ;
+
+%+Foc%_kAAn%+Foc%_kO:{MB}kään{MB}kö	# ;
+
+%+Foc%_kAAn%+Foc%_pA:{MB}kään{MB}pä	# ;
+
+%+Foc%_kin:{MB}kin	# ;
+
+%+Foc%_kin%+Foc%_hAn:{MB}kin{MB}hän	# ;
+
+%+Foc%_kin%+Foc%_kAAn:{MB}kin{MB}kään	# ;
+
+%+Foc%_kin%+Foc%_kO:{MB}kin{MB}kö	# ;
+
+%+Foc%_kin%+Foc%_pA:{MB}kin{MB}pä	# ;
+
+%+Foc%_kO:{MB}kö	# ;
+
+%+Foc%_kO%+Foc%_hAn:{MB}kö{MB}hän	# ;
+
+%+Foc%_kO%+Foc%_kAAn:{MB}kö{MB}kään	# ;
+
+%+Foc%_kO%+Foc%_kin:{MB}kö{MB}kin	# ;
+
+%+Foc%_kO%+Foc%_pA:{MB}kö{MB}pä	# ;
+
+%+Foc%_kO%+Foc%_s:{MB}kö{MB}s	# ;
+
+%+Foc%_pA:{MB}pä	# ;
+
+%+Foc%_pA%+Foc%_hAn:{MB}pä{MB}hän	# ;
+
+%+Foc%_pA%+Foc%_kAAn:{MB}pä{MB}kään	# ;
+
+%+Foc%_pA%+Foc%_kin:{MB}pä{MB}kin	# ;
+
+%+Foc%_pA%+Foc%_kO:{MB}pä{MB}kö	# ;
+
+%+Foc%_pA%+Foc%_s:{MB}pä{MB}s	# ;
+
+
+LEXICON SYMBOL_FRONT_CLIT_OPT
+
+:	# ;
+:	SYMBOL_FRONT_CLIT ;
+
+
+LEXICON SYMBOL_FRONT_POSS
+
+%+Px3:{MB}nsä	SYMBOL_FRONT_CLIT_OPT ;
+
+%+PxPl1:{MB}mme	SYMBOL_FRONT_CLIT_OPT ;
+
+%+PxPl2:{MB}nne	SYMBOL_FRONT_CLIT_OPT ;
+
+%+PxSg1:{MB}ni	SYMBOL_FRONT_CLIT_OPT ;
+
+%+PxSg2:{MB}si	SYMBOL_FRONT_CLIT_OPT ;
+
+
+LEXICON SYMBOL_FRONT_POSS_CLIT_OPT
+
+:	SYMBOL_FRONT_POSS ;
+:	SYMBOL_FRONT_CLIT ;
+:	# ;
+
+
+LEXICON SYMBOL_FRONT_POSS_EN
+
+%+Px3:{MB}en	SYMBOL_FRONT_CLIT_OPT ;
+
+
+LEXICON SYMBOL_FRONT_POSS_EN_OBL
+
+:	SYMBOL_FRONT_POSS ;
+:	SYMBOL_FRONT_POSS_EN ;
+
+
+LEXICON SYMBOL_FRONT_POSS_EN_OPT
+
+:	SYMBOL_FRONT_POSS ;
+:	SYMBOL_FRONT_POSS_EN ;
+:	SYMBOL_FRONT_CLIT ;
+:	# ;
+
+
+LEXICON SYMBOL_FRONT_POSS_ÄN
+
+%+Px3:{MB}än	SYMBOL_FRONT_CLIT_OPT ;
+
+
+LEXICON SYMBOL_FRONT_POSS_ÄN_OPT
+
+:	SYMBOL_FRONT_POSS ;
+:	SYMBOL_FRONT_POSS_ÄN ;
+:	SYMBOL_FRONT_CLIT ;
+:	# ;
+
+

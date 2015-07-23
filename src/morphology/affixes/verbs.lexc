@@ -698,95 +698,82 @@ LEXICON V_FRONT_DERIV_PCPS
 +Der/minen:mi      N_KYLKIÄINEN        ;
 +Act+PrsPrc+Der/inen:väi     N_KYLKIÄINEN  ;
 
-!! !Other derivations
-!LEXICON N_BACK_DERIV_NTI
-!+Der/nti:n N_SOINTI ;
-!LEXICON N_FRONT_DERIV_NTI
-!+Der/nti:n N_VIENTI ;
 
-!! Not used in inflectional morphology, yet.
+LEXICON V_BACK_OPTATIVE_0_ARCHAIC
 
-!LEXICON N_BACK_DERIV_VAINEN
-!+PrsPrc+Der/inen:vai  N_AAKKOSTAMINEN ;
+%+Act%+Opt%+Sg1:{MB}on	V_BACK_CLIT_OPT ;
 
-!LEXICON N_FRONT_DERIV_VÄINEN
-!+PrsPrc+Der/inen:väi    N_KYLKIÄINEN   ;
+%+Act%+Opt%+Sg2:{MB}os	V_BACK_CLIT_OPT ;
 
-!LEXICON N_BACK_DERIV_JA
-!+Der/ja:j     N_MAKKARA    ;
 
-!LEXICON N_FRONT_DERIV_JÄ
-!+Der/ja:j     N_HÄKKYRÄ ;
+LEXICON V_BACK_OPTATIVE_K_ARCHAIC
 
-!LEXICON N_BACK_DERIV_VUUS
-!+PrsPrc+Drv/uus:vuu     N_AAKKOSELLISUUS  ;
+%+Act%+Opt%+Sg1:kon	V_BACK_CLIT_OPT ;
 
-!LEXICON N_FRONT_DERIV_VUUS
-!+PrsPrc+Drv/uus:vyy   N_KÖYHYYS ;
+%+Act%+Opt%+Sg2:kos	V_BACK_CLIT_OPT ;
 
-!LEXICON V_BACK_DERIV_CAUSATIVE
-!+Der/ttaa:t       V_VIEROITTAA ;
-!+Der/tattaa:tat     V_VIEROITTAA ;
-!+Der/tatuttaa:tatut   V_VIEROITTAA ;
 
-!LEXICON V_FRONT_DERIV_CAUSATIVE
-!+Der/ttaa:t       V_RÄPSYTTÄÄ ;
-!+Der/tattaa:tat     V_RÄPSYTTÄÄ ;
-!+Der/tatuttaa:tatut   V_RÄPSYTTÄÄ ;
+LEXICON V_BACK_OPTATIVE_R_ARCHAIC
 
-!LEXICON V_BACK_DERIV_TUUS
-!0:tuu     N_AAKKOSELLISUUS        ;
+%+Act%+Opt%+Sg1:ron	V_BACK_CLIT_OPT ;
 
-!LEXICON V_FRONT_DERIV_TYYS
-!0:tyy   N_KÖYHYYS   ;
+%+Act%+Opt%+Sg2:ros	V_BACK_CLIT_OPT ;
 
-! Spoken
-!LEXICON V_BACK_CONDITIONAL_DIAL
-!+Act+Cond+Sg1+Qst+Dial/Standard:inks V_BACK_CLIT_OPT ;
-!+Act+Cond+Sg2+Qst+Dial/Standard:iks V_BACK_CLIT_OPT ;
-!+Act+Cond+Sg3+Dial/Standard:is  V_BACK_CLIT_OPT     ;
 
-!LEXICON V_BACK_PASSIVE_DIAL
-!+Pss+Cond+Pe4+ConNeg+Dial/Standard:tais    V_BACK_CLIT_OPT     ;
-!+Pss+Ind+Prt+Pe4+Dial/Standard:tii   V_BACK_CLIT_OPT     ;
+LEXICON V_BACK_OPTATIVE_S_ARCHAIC
 
-! Archaisms
-!LEXICON V_BACK_IMPERATIVE_ARCHAIC
-! The first singular imperative, the long forms of the second plural imperatives
-! and the optatives are rare, poetic, archaic, etc:
-!+Act+Imprt+Sg1+Use/Rare:kaani    V_BACK_CLIT_OPT     ;
-!+Act+Imprt+Sg1+Use/Rare:kaami    V_BACK_CLIT_OPT     ;
-!+Act+Imprt+Pl2+Use/Rare:kaatte   V_BACK_CLIT_OPT     ;
-!+Act+Imprt+Pl2+Use/Rare:kaatten  V_BACK_CLIT_OPT     ;
-!+Act+Optat+Sg2+Use/Rare:kootte  V_BACK_CLIT_OPT     ;
-!+Act+Optat+Pl1+Use/Rare:koomme  V_BACK_CLIT_OPT     ;
-!+Act+Optat+Pl2+Use/Rare:kaa  V_BACK_CLIT_OPT     ;
+%+Act%+Opt%+Sg1:son	V_BACK_CLIT_OPT ;
 
-!LEXICON V_FRONT_IMPERATIVE_ARCHAIC
-! The first singular imperative, the long forms of the second plural imperatives
-! and the optatives are rare, poetic, archaic, etc:
-!+Act+Imprt+Sg1+Use/Rare:kaani    V_FRONT_CLIT_OPT     ;
-!+Act+Imprt+Sg1+Use/Rare:käämi    V_FRONT_CLIT_OPT     ;
-!+Act+Imprt+Pl2+Use/Rare:käätte   V_FRONT_CLIT_OPT     ;
-!+Act+Imprt+Pl2+Use/Rare:käätten  V_FRONT_CLIT_OPT     ;
-!+Act+Optat+Sg2+Use/Rare:köötte  V_FRONT_CLIT_OPT     ;
-!+Act+Optat+Pl1+Use/Rare:köömme  V_FRONT_CLIT_OPT     ;
-!+Act+Optat+Pl2+Use/Rare:kää  V_FRONT_CLIT_OPT     ;
+%+Act%+Opt%+Sg2:sos	V_BACK_CLIT_OPT ;
 
-!LEXICON V_BACK_OPTATIVE_0_ARCHAIC
-!+Act+Optat+Sg1+Use/Rare:on   V_BACK_CLIT_OPT     ;
-!+Act+Optat+Sg2+Use/Rare:os    V_BACK_CLIT_OPT     ;
 
-!LEXICON V_FRONT_OPTATIVE_0_ARCHAIC
-!+Act+Optat+Sg1+Use/Rare:ön   V_FRONT_CLIT_OPT     ;
-!+Act+Optat+Sg2+Use/Rare:ös    V_FRONT_CLIT_OPT     ;
 
-!LEXICON V_BACK_OPTATIVE_N_ARCHAIC
-!+Act+Optat+Sg1+Use/Rare:non   V_BACK_CLIT_OPT     ;
-!+Act+Optat+Sg2+Use/Rare:nos    V_BACK_CLIT_OPT     ;
+LEXICON V_FRONT_OPTATIVE_0_ARCHAIC
 
-!LEXICON V_FRONT_OPTATIVE_N_ARCHAIC
-!+Act+Optat+Sg1+Use/Rare:nön   V_FRONT_CLIT_OPT     ;
-!+Act+Optat+Sg2+Use/Rare:nös    V_FRONT_CLIT_OPT     ;
+%+Act%+Opt%+Sg1:{MB}ön	V_FRONT_CLIT_OPT ;
+
+%+Act%+Opt%+Sg2:{MB}ös	V_FRONT_CLIT_OPT ;
+
+
+LEXICON V_FRONT_OPTATIVE_K_ARCHAIC
+
+%+Act%+Opt%+Sg1:{MB}kön	V_FRONT_CLIT_OPT ;
+
+%+Act%+Opt%+Sg2:{MB}kös	V_FRONT_CLIT_OPT ;
+
+
+LEXICON V_FRONT_OPTATIVE_L_ARCHAIC
+
+%+Act%+Opt%+Sg1:{MB}lön	V_FRONT_CLIT_OPT ;
+
+%+Act%+Opt%+Sg2:{MB}lös	V_FRONT_CLIT_OPT ;
+
+
+LEXICON V_FRONT_OPTATIVE_R_ARCHAIC
+
+%+Act%+Opt%+Sg1:rön	V_FRONT_CLIT_OPT ;
+
+%+Act%+Opt%+Sg2:rös	V_FRONT_CLIT_OPT ;
+
+
+LEXICON V_FRONT_OPTATIVE_S_ARCHAIC
+
+%+Act%+Opt%+Sg1:sön	V_FRONT_CLIT_OPT ;
+
+%+Act%+Opt%+Sg2:sös	V_FRONT_CLIT_OPT ;
+
+LEXICON V_FRONT_IMPERATIVE_ARCHAIC
+
+%+Act%+Impv%+Pl2:{MB}kää{MB}tten	V_FRONT_CLIT_OPT ;
+
+%+Act%+Impv%+Pl2:{MB}kää{MB}tte	V_FRONT_CLIT_OPT ;
+
+%+Act%+Impv%+Sg1:{MB}kää{MB}mi	V_FRONT_CLIT_OPT ;
+
+%+Act%+Impv%+Sg1:{MB}kää{MB}ni	V_FRONT_CLIT_OPT ;
+
+%+Act%+Opt%+Pl1:{MB}köö{MB}mme	V_FRONT_CLIT_OPT ;
+
+%+Act%+Opt%+Sg2:{MB}köö{MB}tte	V_FRONT_CLIT_OPT ;
 
 

@@ -11,6 +11,16 @@ A B C D E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž Å Ä Ö
 %_:0
 %#:%-
 %#:%#
+
+! these may leak from omorfi conversion...
+%{DB%}:0
+%{hyph%?%}:0 %{hyph%}:%-
+%{MB%}:0
+%{WB%}:0
+%{STUB%}:0
+%{wB%}:0
+%{XB%}:0
+
 ;
 
 Sets
