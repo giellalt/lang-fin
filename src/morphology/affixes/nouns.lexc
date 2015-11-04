@@ -835,7 +835,8 @@ LEXICON N_COMPOUND_S
 LEXICON N_COMPOUND
 !!€gt-norm:
 !!€ talojuttu: talo+N+Sg+Nom#juttu+N+Sg+Nom
-+Use/Circ#:0#     NOMINAL   ;
++Use/Circ+Use/NoHyphens#:0    NOMINAL   ; 
++Use/Circ+Use/Hyphen+Use/NG#:0#    NOMINAL   ; 
 
 
 LEXICON N_BACK_GENITIVE_TEN_ARCHAIC
