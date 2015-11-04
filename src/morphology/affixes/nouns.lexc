@@ -840,27 +840,27 @@ LEXICON N_COMPOUND
 
 LEXICON N_BACK_GENITIVE_TEN_ARCHAIC
 
-%+Pl%+Gen:{MB}te	N_BACK_POSS ;
+%+Pl%+Gen:%>te	N_BACK_POSS ;
 
-%+Pl%+Gen:{MB}ten	N_BACK_CLIT_OPT ;
-%+Pl%+Gen:{MB}ten	N_COMPOUND ;
+%+Pl%+Gen:%>ten	N_BACK_CLIT_OPT ;
+%+Pl%+Gen:%>ten	N_COMPOUND ;
 
 
 LEXICON N_BACK_H_PLURALS_ARCHAIC
 
-%+Pl%+Gen:h{MB}i{MB}e	N_BACK_POSS ;
+%+Pl%+Gen:h%>i%>e	N_BACK_POSS ;
 
-%+Pl%+Gen:h{MB}i{MB}en	N_BACK_CLIT_OPT ;
+%+Pl%+Gen:h%>i%>en	N_BACK_CLIT_OPT ;
 
-%+Pl%+Gen:h{MB}i{MB}tte	N_BACK_POSS ;
+%+Pl%+Gen:h%>i%>tte	N_BACK_POSS ;
 
-%+Pl%+Gen:h{MB}i{MB}tten	N_BACK_CLIT_OPT ;
+%+Pl%+Gen:h%>i%>tten	N_BACK_CLIT_OPT ;
 
-%+Pl%+Ill:h{MB}i{MB}si	N_BACK_POSS ;
+%+Pl%+Ill:h%>i%>si	N_BACK_POSS ;
 
-%+Pl%+Ill:h{MB}i{MB}sin	N_BACK_CLIT_OPT ;
+%+Pl%+Ill:h%>i%>sin	N_BACK_CLIT_OPT ;
 
-%+Pl%+Par:h{MB}i{MB}a	N_BACK_POSS_AN_OPT ;
+%+Pl%+Par:h%>i%>a	N_BACK_POSS_AN_OPT ;
 
 :h	N_BACK_PLURALS ;
 
@@ -872,12 +872,12 @@ LEXICON N_BACK_NOMINATIVE_ARCHAIC
 
 LEXICON N_BACK_PARTITIVE_TA_ARCHAIC
 
-%+Sg%+Par:{MB}ta	N_BACK_POSS_AN_OPT ;
+%+Sg%+Par:%>ta	N_BACK_POSS_AN_OPT ;
 
 
 LEXICON N_BACK_PLNOM_ARCHAIC_CLIT
 
-%+Pl%+Nom:{MB}t	N_BACK_CLIT_OPT ;
+%+Pl%+Nom:%>t	N_BACK_CLIT_OPT ;
 
 
 LEXICON N_BACK_PLNOM_ARCHAIC_POSS
@@ -886,81 +886,81 @@ LEXICON N_BACK_PLNOM_ARCHAIC_POSS
 
 LEXICON N_BACK_SINGULARS_ARCHAIC
 
-%+Pl%+Nom:{MB}t	N_BACK_CLIT_OPT ;
+%+Pl%+Nom:%>t	N_BACK_CLIT_OPT ;
 
 %+Pl%+Nom:	N_BACK_POSS ;
 
-%+Sg%+Abe:{MB}tta	N_BACK_POSS_AN_OPT ;
+%+Sg%+Abe:%>tta	N_BACK_POSS_AN_OPT ;
 
-%+Sg%+Abl:{MB}lta	N_BACK_POSS_AN_OPT ;
+%+Sg%+Abl:%>lta	N_BACK_POSS_AN_OPT ;
 
-%+Sg%+Ade:{MB}lla	N_BACK_POSS_AN_OPT ;
+%+Sg%+Ade:%>lla	N_BACK_POSS_AN_OPT ;
 
-%+Sg%+All:{MB}lle	N_BACK_POSS_EN_OPT ;
+%+Sg%+All:%>lle	N_BACK_POSS_EN_OPT ;
 
-%+Sg%+Ela:{MB}sta	N_BACK_POSS_AN_OPT ;
+%+Sg%+Ela:%>sta	N_BACK_POSS_AN_OPT ;
 
-%+Sg%+Ess:{MB}na	N_BACK_POSS_AN_OPT ;
+%+Sg%+Ess:%>na	N_BACK_POSS_AN_OPT ;
 
-%+Sg%+Gen:{MB}n	N_BACK_CLIT_OPT ;
+%+Sg%+Gen:%>n	N_BACK_CLIT_OPT ;
 
 %+Sg%+Gen:	N_BACK_POSS ;
 
-%+Sg%+Ill:{MB}sen	N_BACK_CLIT_OPT ;
+%+Sg%+Ill:%>sen	N_BACK_CLIT_OPT ;
 
-%+Sg%+Ine:{MB}ssa	N_BACK_POSS_AN_OPT ;
+%+Sg%+Ine:%>ssa	N_BACK_POSS_AN_OPT ;
 
 %+Sg%+Nom:	N_BACK_POSS ;
 
-%+Sg%+Tra:{MB}kse	N_BACK_POSS_EN_OBL ;
+%+Sg%+Tra:%>kse	N_BACK_POSS_EN_OBL ;
 
-%+Sg%+Tra:{MB}ksi	N_BACK_CLIT_OPT ;
-%+Sg%+Tra:{MB}ksi	N_BACK_CLIT_OPT ;
+%+Sg%+Tra:%>ksi	N_BACK_CLIT_OPT ;
+%+Sg%+Tra:%>ksi	N_BACK_CLIT_OPT ;
 
 
 LEXICON N_FRONT_ESSIVE_NÄ_ARCHAIC
 
-%+Sg%+Ess:{MB}nä	N_FRONT_POSS_ÄN_OPT ;
+%+Sg%+Ess:%>nä	N_FRONT_POSS_ÄN_OPT ;
 
 
 LEXICON N_FRONT_ESSIVE_SÄ_ARCHAIC
 
-%+Sg%+Ess:{MB}sä	N_FRONT_POSS_ÄN_OPT ;
+%+Sg%+Ess:%>sä	N_FRONT_POSS_ÄN_OPT ;
 
 
 LEXICON N_FRONT_GENITIVE_TEN_ARCHAIC
 
-%+Pl%+Gen:{MB}te	N_FRONT_POSS ;
+%+Pl%+Gen:%>te	N_FRONT_POSS ;
 
-%+Pl%+Gen:{MB}ten	N_FRONT_CLIT_OPT ;
-%+Pl%+Gen:{MB}ten	N_COMPOUND ;
+%+Pl%+Gen:%>ten	N_FRONT_CLIT_OPT ;
+%+Pl%+Gen:%>ten	N_COMPOUND ;
 
 
 LEXICON N_FRONT_H_PLURALS_ARCHAIC
 
-%+Pl%+Gen:h{MB}i{MB}e	N_FRONT_POSS ;
+%+Pl%+Gen:h%>i%>e	N_FRONT_POSS ;
 
-%+Pl%+Gen:h{MB}i{MB}en	N_FRONT_CLIT_OPT ;
+%+Pl%+Gen:h%>i%>en	N_FRONT_CLIT_OPT ;
 
-%+Pl%+Gen:h{MB}i{MB}tte	N_FRONT_POSS ;
+%+Pl%+Gen:h%>i%>tte	N_FRONT_POSS ;
 
-%+Pl%+Gen:h{MB}i{MB}tten	N_FRONT_CLIT_OPT ;
+%+Pl%+Gen:h%>i%>tten	N_FRONT_CLIT_OPT ;
 
-%+Pl%+Ill:h{MB}i{MB}si	N_FRONT_POSS ;
+%+Pl%+Ill:h%>i%>si	N_FRONT_POSS ;
 
-%+Pl%+Ill:h{MB}i{MB}sin	N_FRONT_CLIT_OPT ;
+%+Pl%+Ill:h%>i%>sin	N_FRONT_CLIT_OPT ;
 
-%+Pl%+Par:h{MB}i{MB}ä	N_FRONT_POSS_ÄN_OPT ;
+%+Pl%+Par:h%>i%>ä	N_FRONT_POSS_ÄN_OPT ;
 
 :h	N_FRONT_PLURALS ;
 
 LEXICON N_FRONT_PARTITIVE_TÄ_ARCHAIC
 
-%+Sg%+Par:{MB}tä	N_FRONT_POSS_ÄN_OPT ;
+%+Sg%+Par:%>tä	N_FRONT_POSS_ÄN_OPT ;
 
 LEXICON N_FRONT_PLNOM_ARCHAIC_CLIT
 
-%+Pl%+Nom:{MB}t	N_FRONT_CLIT_OPT ;
+%+Pl%+Nom:%>t	N_FRONT_CLIT_OPT ;
 
 
 LEXICON N_FRONT_PLNOM_ARCHAIC_POSS
@@ -969,44 +969,44 @@ LEXICON N_FRONT_PLNOM_ARCHAIC_POSS
 
 LEXICON N_FRONT_SINGULARS_ARCHAIC
 
-%+Pl%+Nom:{MB}t	N_FRONT_CLIT_OPT ;
+%+Pl%+Nom:%>t	N_FRONT_CLIT_OPT ;
 
 %+Pl%+Nom:	N_FRONT_POSS ;
 
-%+Sg%+Abe:{MB}ttä	N_FRONT_POSS_ÄN_OPT ;
+%+Sg%+Abe:%>ttä	N_FRONT_POSS_ÄN_OPT ;
 
-%+Sg%+Abl:{MB}ltä	N_FRONT_POSS_ÄN_OPT ;
+%+Sg%+Abl:%>ltä	N_FRONT_POSS_ÄN_OPT ;
 
-%+Sg%+Ade:{MB}llä	N_FRONT_POSS_ÄN_OPT ;
+%+Sg%+Ade:%>llä	N_FRONT_POSS_ÄN_OPT ;
 
-%+Sg%+All:{MB}lle	N_FRONT_POSS_EN_OPT ;
+%+Sg%+All:%>lle	N_FRONT_POSS_EN_OPT ;
 
-%+Sg%+Ela:{MB}stä	N_FRONT_POSS_ÄN_OPT ;
+%+Sg%+Ela:%>stä	N_FRONT_POSS_ÄN_OPT ;
 
-%+Sg%+Ess:{MB}nä	N_FRONT_POSS_ÄN_OPT ;
+%+Sg%+Ess:%>nä	N_FRONT_POSS_ÄN_OPT ;
 
-%+Sg%+Gen:{MB}n	N_FRONT_CLIT_OPT ;
+%+Sg%+Gen:%>n	N_FRONT_CLIT_OPT ;
 
 %+Sg%+Gen:	N_FRONT_POSS ;
 
-%+Sg%+Ill:{MB}sen	N_FRONT_CLIT_OPT ;
+%+Sg%+Ill:%>sen	N_FRONT_CLIT_OPT ;
 
-%+Sg%+Ine:{MB}ssä	N_FRONT_POSS_ÄN_OPT ;
+%+Sg%+Ine:%>ssä	N_FRONT_POSS_ÄN_OPT ;
 
 %+Sg%+Nom:	N_FRONT_POSS ;
 
-%+Sg%+Tra:{MB}kse	N_FRONT_POSS_EN_OBL ;
+%+Sg%+Tra:%>kse	N_FRONT_POSS_EN_OBL ;
 
-%+Sg%+Tra:{MB}ksi	N_FRONT_CLIT_OPT ;
-%+Sg%+Tra:{MB}ksi	N_FRONT_CLIT_OPT ;
+%+Sg%+Tra:%>ksi	N_FRONT_CLIT_OPT ;
+%+Sg%+Tra:%>ksi	N_FRONT_CLIT_OPT ;
 
 LEXICON N_FRONT_PARTITIVE_Ä_NONSTD
 
-%+Sg%+Par%+Err/Orth:{MB}ä	N_FRONT_POSS_OPT ;
+%+Sg%+Par%+Err/Orth:%>ä	N_FRONT_POSS_OPT ;
 
 LEXICON N_BACK_PARTITIVE_A_NONSTD
 
-%+Sg%+Par%+Err/Orth:{MB}a	N_BACK_POSS_OPT ;
+%+Sg%+Par%+Err/Orth:%>a	N_BACK_POSS_OPT ;
 
 LEXICON N_BACK_PLNOM_POSS
 
