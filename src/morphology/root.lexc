@@ -287,7 +287,7 @@ Multichar_Symbols
 !!
 !! Further reading: [VISK § 110|http://scripta.kotus.fi/visk/sisallys.php?p=110]
 +Act !!= * {{@CODE@}}: Active voice
-+Pass !!= * {{@CODE@}}: Passive voice
++Pss !!= * {{@CODE@}}: Passive voice
 
 !! It is the first analysis of verb strings:
 !!€ kudot: kutoa+V+Act+Ind+Prs+Sg2
@@ -340,6 +340,7 @@ Multichar_Symbols
 +Pl1 !!= * {{@CODE@}}: First plural
 +Pl2 !!= * {{@CODE@}}: Second plural
 +Pl3 !!= * {{@CODE@}}: Third plural
++Pe4 !!FIXME
 
 !! The person is the last required analysis for verbs, after the mood:
 !!€ kudon: kutoa+V+Act+Ind+Prs+Sg1
@@ -556,6 +557,8 @@ Multichar_Symbols
 !! given the proper use of these flags.
  @U.Cap.Obl@        !!≈ | @CODE@ | Allowing downcasing of derived names: deatnulasj.
  @U.Cap.Opt@        !!≈ | @CODE@ | Allowing downcasing of derived names: deatnulasj.
+
+% 
 
 ! The root lexicon is unique entry point of this morphological description.
 ! This lexicon must not be used elsewhere; it contains only the markers for
