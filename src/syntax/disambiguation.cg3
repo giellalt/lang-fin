@@ -2083,7 +2083,7 @@ SELECT Par (-2 Par) (-1 Conj) (1 V)
 
 # *** PP & PSP
 
-SUBSTITUTE Adv Po TARGET Adv + GenLeft (-1C Gen) ;
+# SUBSTITUTE Adv Po TARGET Adv + GenLeft (-1C Gen) ;
 # jälkeen don't have postposition reading
 
 #GenLEFT,GenRIGHT,ParLEFT,ParRIGHT IN ISOLATION
