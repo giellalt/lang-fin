@@ -7,6 +7,7 @@
 #      *******************************************
 
 
+SUBREADINGS = LTR ;
 
 # ========== #
 # Delimiters #
@@ -703,7 +704,7 @@ LIST PAR_ONLY = "ennen"
 
 LIST NUMS = "yksi" Num;
 
-
+LIST VOISIKO = "<voisiko>"i ;
 
 
 # Things to sort
@@ -3674,6 +3675,9 @@ SELECT ("Matti") + Prop (>*1C ("Matti") + Prop) ; # generalize to any prop!
 SELECT ("Matti") + Prop (<*-1C ("Matti") + Prop) ;
 SELECT ("kello") + CNOUN ;
 SELECT Num (*-1 ("kello")) ;
+
+# First rule of voisiko is that it is never "your butters"
+REMOVE N IF (0 VOISIKO) ;
 
 # Need to add handling of "väsynyt" verbs , modals, ..
 #"<,>"
