@@ -23,8 +23,8 @@ LEXICON V_BACK_WEAK_PRESENT
 +Act+Ind+Prs+Sg2:%>t V_BACK_CLIT_OPT     ;
 +Act+Ind+Prs+Pl1:%>mme   V_BACK_CLIT_OPT     ;
 +Act+Ind+Prs+Pl2:%>tte   V_BACK_CLIT_OPT     ;
-+Ind+Prs+ConNeg:%>0    V_BACK_CLIT_OPT     ;
-+Imprt+Prs+ConNeg:%>0    V_BACK_CLIT_OPT     ;
++Act+Ind+Prs+ConNeg:%>0    V_BACK_CLIT_OPT     ;
++Act+Imprt+Prs+ConNeg+Sg2:%>0    V_BACK_CLIT_OPT     ;
 +Act+Imprt+Sg2:%>0    V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_WEAK_PRESENT
@@ -35,8 +35,8 @@ LEXICON V_FRONT_WEAK_PRESENT
 +Act+Ind+Prs+Sg2:%>t V_FRONT_CLIT_OPT     ;
 +Act+Ind+Prs+Pl1:%>mme   V_FRONT_CLIT_OPT     ;
 +Act+Ind+Prs+Pl2:%>tte   V_FRONT_CLIT_OPT     ;
-+Ind+Prs+ConNeg:%>0    V_FRONT_CLIT_OPT     ;
-+Imprt+Prs+ConNeg:%>0    V_FRONT_CLIT_OPT     ;
++Act+Ind+Prs+ConNeg:%>0    V_FRONT_CLIT_OPT     ;
++Act+Imprt+Prs+ConNeg+Sg2:%>0    V_FRONT_CLIT_OPT     ;
 +Act+Imprt+Sg2:%>0    V_FRONT_CLIT_OPT     ;
 
 !! The strong form of present indicative endings in strong stems and ma 
@@ -161,7 +161,7 @@ LEXICON V_BACK_IMPERATIVE
 +Act+Imprt+Pl2:%>kaa  V_BACK_CLIT_OPT     ;
 +Act+Imprt+Pl3:%>koot V_BACK_CLIT_OPT     ;
 +Act+Imprt+Sg3:%>koon V_BACK_CLIT_OPT     ;
-+Imprt+ConNeg:%>ko   V_BACK_CLIT_OPT     ;
++Act+Imprt+ConNeg:%>ko   V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_IMPERATIVE
 !!€gt-norm: Verb imperative front
@@ -171,7 +171,7 @@ LEXICON V_FRONT_IMPERATIVE
 +Act+Imprt+Pl2:%>kää  V_FRONT_CLIT_OPT     ;
 +Act+Imprt+Pl3:%>kööt V_FRONT_CLIT_OPT     ;
 +Act+Imprt+Sg3:%>köön V_FRONT_CLIT_OPT     ;
-+Imprt+ConNeg:%>kö   V_FRONT_CLIT_OPT     ;
++Act+Imprt+ConNeg:%>kö   V_FRONT_CLIT_OPT     ;
 
 !! !Conditionals
 
@@ -184,7 +184,7 @@ LEXICON V_BACK_CONDITIONAL
 +Act+Cond+Sg1:%>isi%>n   V_BACK_CLIT_OPT     ;
 +Act+Cond+Sg2:%>isi%>t   V_BACK_CLIT_OPT     ;
 +Act+Cond+Sg3:%>isi%>    V_BACK_CLIT_OPT     ;
-+Cond+ConNeg:%>isi V_BACK_CLIT_OPT     ;
++Act+Cond+ConNeg:%>isi V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_CONDITIONAL
 !!€gt-norm: Verb conditional front
@@ -195,7 +195,7 @@ LEXICON V_FRONT_CONDITIONAL
 +Act+Cond+Sg1:%>isi%>n   V_FRONT_CLIT_OPT     ;
 +Act+Cond+Sg2:%>isi%>t   V_FRONT_CLIT_OPT     ;
 +Act+Cond+Sg3:%>isi%>    V_FRONT_CLIT_OPT     ;
-+Cond+ConNeg:%>isi V_FRONT_CLIT_OPT     ;
++Act+Cond+ConNeg:%>isi V_FRONT_CLIT_OPT     ;
 
 !! !Potentials
 
@@ -208,9 +208,10 @@ LEXICON V_BACK_POTENTIAL_N
 +Act+Pot+Sg1:%>ne%>n   V_BACK_CLIT_OPT     ;
 +Act+Pot+Sg2:%>ne%>t   V_BACK_CLIT_OPT     ;
 +Act+Pot+Sg3:%>ne%>e   V_BACK_CLIT_OPT     ;
-+Pot+ConNeg:%>ne V_BACK_CLIT_OPT     ;
++Act+Pot+ConNeg:%>ne V_BACK_CLIT_OPT     ;
 +Act+PrfPrc:%>n   A_KULUNUT       ;
-+Act+Ind+Prt+ConNeg:%>nut  V_BACK_CLIT_OPT     ;
++Act+Ind+Prt+ConNeg+Sg:%>nut  V_BACK_CLIT_OPT     ;
++Act+Ind+Prt+ConNeg+Pl:%>neet V_BACK_CLIT_OPT ;
 
 LEXICON V_FRONT_POTENTIAL_N
 !!€gt-norm: Verb potential n front
@@ -221,10 +222,10 @@ LEXICON V_FRONT_POTENTIAL_N
 +Act+Pot+Sg1:%>ne%>n   V_FRONT_CLIT_OPT     ;
 +Act+Pot+Sg2:%>ne%>t   V_FRONT_CLIT_OPT     ;
 +Act+Pot+Sg3:%>ne%>e   V_FRONT_CLIT_OPT     ;
-+Pot+ConNeg:%>ne V_FRONT_CLIT_OPT     ;
++Act+Pot+ConNeg:%>ne V_FRONT_CLIT_OPT     ;
 +Act+PrfPrc:%>n   A_ÄLLISTYNYT     ;
-+Act+Ind+Prt+ConNeg:%>nyt  V_FRONT_CLIT_OPT     ;
-
++Act+Ind+Prt+ConNeg+Sg:%>nyt  V_FRONT_CLIT_OPT     ;
++Act+Ind+Prt+ConNeg+Pl:%>neet  V_FRONT_CLIT_OPT ;
 LEXICON V_BACK_POTENTIAL_S
 !!€gt-norm: Verb potential s back
 !!€ juossen: juosta+V+Act+Pot+Sg1 # I might run
@@ -234,9 +235,10 @@ LEXICON V_BACK_POTENTIAL_S
 +Act+Pot+Sg1:%>se%>n   V_BACK_CLIT_OPT     ;
 +Act+Pot+Sg2:%>se%>t   V_BACK_CLIT_OPT     ;
 +Act+Pot+Sg3:%>se%>e   V_BACK_CLIT_OPT     ;
-+Pot+ConNeg:%>se V_BACK_CLIT_OPT     ;
++Act+Pot+ConNeg:%>se V_BACK_CLIT_OPT     ;
 +Act+PrfPrc:%>s   A_KULUNUT       ;
-+Act+Ind+Prt+ConNeg:%>sut  V_BACK_CLIT_OPT     ;
++Act+Ind+Prt+ConNeg+Sg:%>sut  V_BACK_CLIT_OPT     ;
++Act+Ind+Prt+ConNeg+Pl:%>seet  V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_POTENTIAL_S
 !!€gt-norm: Verb potential s front
@@ -247,9 +249,10 @@ LEXICON V_FRONT_POTENTIAL_S
 +Act+Pot+Sg1:%>se%>n   V_FRONT_CLIT_OPT     ;
 +Act+Pot+Sg2:%>se%>t   V_FRONT_CLIT_OPT     ;
 +Act+Pot+Sg3:%>se%>e   V_FRONT_CLIT_OPT     ;
-+Pot+ConNeg:%>se V_FRONT_CLIT_OPT     ;
++Act+Pot+ConNeg:%>se V_FRONT_CLIT_OPT     ;
 +Act+PrfPrc:%>s A_ÄLLISTYNYT      ;
-+Act+Ind+Prt+ConNeg:%>syt  V_FRONT_CLIT_OPT     ;
++Act+Ind+Prt+ConNeg+Sg:%>syt  V_FRONT_CLIT_OPT     ;
++Act+Ind+Prt+ConNeg+Pl:%>seet  V_FRONT_CLIT_OPT     ;
 
 LEXICON V_BACK_POTENTIAL_L
 !!€gt-norm: Verb potential l back
@@ -260,9 +263,10 @@ LEXICON V_BACK_POTENTIAL_L
 +Act+Pot+Sg1:%>le%>n   V_BACK_CLIT_OPT     ;
 +Act+Pot+Sg2:%>le%>t   V_BACK_CLIT_OPT     ;
 +Act+Pot+Sg3:%>le%>e   V_BACK_CLIT_OPT     ;
-+Pot+ConNeg:%>le V_BACK_CLIT_OPT     ;
++Act+Pot+ConNeg:%>le V_BACK_CLIT_OPT     ;
 +Act+PrfPrc:%>l  A_KULUNUT      ;
-+Act+Ind+Prt+ConNeg:%>lut  V_BACK_CLIT_OPT     ;
++Act+Ind+Prt+ConNeg+Sg:%>lut  V_BACK_CLIT_OPT     ;
++Act+Ind+Prt+ConNeg+Pl:%>leet  V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_POTENTIAL_L
 !!€gt-norm: Verb potential l front
@@ -273,9 +277,10 @@ LEXICON V_FRONT_POTENTIAL_L
 +Act+Pot+Sg1:%>le%>n   V_FRONT_CLIT_OPT     ;
 +Act+Pot+Sg2:%>le%>t   V_FRONT_CLIT_OPT     ;
 +Act+Pot+Sg3:%>le%>e   V_FRONT_CLIT_OPT     ;
-+Pot+ConNeg:%>le V_FRONT_CLIT_OPT     ;
++Act+Pot+ConNeg:%>le V_FRONT_CLIT_OPT     ;
 +Act+PrfPrc:%>l  A_ÄLLISTYNYT  ;
-+Act+Ind+Prt+ConNeg:%>lyt  V_FRONT_CLIT_OPT     ;
++Act+Ind+Prt+ConNeg+Sg:%>lyt  V_FRONT_CLIT_OPT     ;
++Act+Ind+Prt+ConNeg+Pl:%>leet  V_FRONT_CLIT_OPT     ;
 
 LEXICON V_BACK_POTENTIAL_R
 !!€gt-norm: Verb potential r back
@@ -286,9 +291,10 @@ LEXICON V_BACK_POTENTIAL_R
 +Act+Pot+Sg1:%>re%>n   V_BACK_CLIT_OPT     ;
 +Act+Pot+Sg2:%>re%>t   V_BACK_CLIT_OPT     ;
 +Act+Pot+Sg3:%>re%>e   V_BACK_CLIT_OPT     ;
-+Pot+ConNeg:%>re V_BACK_CLIT_OPT     ;
++Act+Pot+ConNeg:%>re V_BACK_CLIT_OPT     ;
 +Act+PrfPrc:%>r  A_KULUNUT      ;
-+Act+Ind+Prt+ConNeg:%>rut  V_BACK_CLIT_OPT     ;
++Act+Ind+Prt+ConNeg+Sg:%>rut  V_BACK_CLIT_OPT     ;
++Act+Ind+Prt+ConNeg+Pl:%>reet  V_BACK_CLIT_OPT     ;
 
 LEXICON V_FRONT_POTENTIAL_R
 !!€gt-norm: Verb potential r front
@@ -299,9 +305,10 @@ LEXICON V_FRONT_POTENTIAL_R
 +Act+Pot+Sg1:%>re%>n   V_FRONT_CLIT_OPT     ;
 +Act+Pot+Sg2:%>re%>t   V_FRONT_CLIT_OPT     ;
 +Act+Pot+Sg3:%>re%>e   V_FRONT_CLIT_OPT     ;
-+Pot+ConNeg:%>re V_FRONT_CLIT_OPT     ;
++Act+Pot+ConNeg:%>re V_FRONT_CLIT_OPT     ;
 +Act+PrfPrc:%>r  A_ÄLLISTYNYT  ;
-+Act+Ind+Prt+ConNeg:%>ryt  V_FRONT_CLIT_OPT     ;
++Act+Ind+Prt+ConNeg+Sg:%>ryt  V_FRONT_CLIT_OPT     ;
++Act+Ind+Prt+ConNeg+Pl:%>reet  V_FRONT_CLIT_OPT     ;
 
 !! !!Passive forms
 !! The passive forms usually contain -ta-, -tä-, -da-, -dä-, element in them.
