@@ -1,4 +1,5 @@
 
+
 !!!Morphology
 The morphological division of Finnish words has three classes: verbal,
 nominal and others. The verbs are identified by personal, temporal,
@@ -36,14 +37,14 @@ The codes:
 The part-of-speech analyses are typically the first:
 
 __Analysis examples examples:__
-* __kutoo:__ {{kutoa+V+Act+Ind+Prs+Sg3}} (Eng. knits)
-* __talo:__ {{talo+N+Sg+Nom}} (Eng. house)
-* __nopea:__ {{nopea+A+Sg+Nom}} (Eng. fast)
-* __yksi:__ {{yksi+Num+Card+Sg+Nom}} (Eng. one)
-* __nopeasti:__ {{nopeasti+Adv}} (Eng. fast)
-* __hän:__ {{hän+Pron+Pers+Sg+Nom}} (Eng. he)
-* __ahaa:__ {{ahaa+Pcle}} (Eng. ah)
-* __äh:__ {{äh+Interj}} (Eng. uh)
+* __kutoo:__ {{kutoa+V+Act+Ind+Prs+Sg3}} (Eng. # knits)
+* __talo:__ {{talo+N+Sg+Nom}} (Eng. # house)
+* __nopea:__ {{nopea+A+Sg+Nom}} (Eng. # fast)
+* __yksi:__ {{yksi+Num+Card+Sg+Nom}} (Eng. # one)
+* __nopeasti:__ {{nopeasti+Adv}} (Eng. # fast)
+* __hän:__ {{hän+Pron+Pers+Sg+Nom}} (Eng. # he)
+* __ahaa:__ {{ahaa+Pcle}} (Eng. # ah)
+* __äh:__ {{äh+Interj}} (Eng. # uh)
 
 !Nouns
 In nominal analyses, the proper nouns have additional subanalysis.
@@ -58,7 +59,7 @@ The code for proper nouns:
  * {{+Prop }}: Proper noun
 
 Proper noun tag follows noun analysis:
-* __Pekka:__ {{Pekka+N+Prop+Sg+Nom}} (Eng. Pekka)
+* __Pekka:__ {{Pekka+N+Prop+Sg+Nom}} (Eng. # Pekka)
 
 !Pronouns
 Pronominal analyses have some semantic classes.
@@ -74,14 +75,14 @@ Codes for various semantic classes:
  * {{+Indef }}: Indefinite
 
 Semantic tags follow pronoun analyses:
-* __minä:__ {{minä+Pron+Pers+Sg+Nom}} (Eng. I)
-* __tämä:__ {{tämä+Pron+Dem+Sg+Nom}} (Eng. this)
-* __kuka:__ {{kuka+Pron+Interr+Sg+Nom}} (Eng. who)
-* __joka:__ {{joka+Pron+Rel+Sg+Nom}} (Eng. which)
-* __kaikki:__ {{kaikki+Pron+Qu+Sg+Nom}} (Eng. every)
-* __itse:__ {{itse+Pron+Refl+Sg+Nom}} (Eng. self)
-* __toistaan:__ {{toinen+Pron+Recipr+Sg+Par+PxSg3}} (Eng. each other)
-* __joku:__ {{joku+Pron+Qu+Indef+Sg+Nom}} (Eng. someone)
+* __minä:__ {{minä+Pron+Pers+Sg+Nom}} (Eng. # I)
+* __tämä:__ {{tämä+Pron+Dem+Sg+Nom}} (Eng. # this)
+* __kuka:__ {{kuka+Pron+Interr+Sg+Nom}} (Eng. # who)
+* __joka:__ {{joka+Pron+Rel+Sg+Nom}} (Eng. # which)
+* __kaikki:__ {{kaikki+Pron+Qu+Sg+Nom}} (Eng. # every)
+* __itse:__ {{itse+Pron+Refl+Sg+Nom}} (Eng. # self)
+* __toistaan:__ {{toinen+Pron+Recipr+Sg+Par+PxSg3}} (Eng. # each other)
+* __joku:__ {{joku+Pron+Qu+Indef+Sg+Nom}} (Eng. # someone)
 
 !Numerals
 In numeral analyses, there are multiple analyses.
@@ -95,8 +96,8 @@ Numeral class tags:
  * {{+Card  }}: Cardinal
  * {{+Ord }}: Ordinals
 
-* __kolme:__ {{kolme+Num+Card+Sg+Nom}} (Eng. three)
-* __kolmas:__ {{kolmas+Num+Ord+Sg+Nom}} (Eng. third)
+* __kolme:__ {{kolme+Num+Card+Sg+Nom}} (Eng. # three)
+* __kolmas:__ {{kolmas+Num+Ord+Sg+Nom}} (Eng. # third)
 
 !Particles
 The particles are subcategorised syntax-wise into conjunctions for all words,
@@ -151,7 +152,7 @@ to the needs of end user applications
  * {{+Punct }}: any punctuation
 
 The analyses for symbols are like POSes:
-* __.:__ {{.+Punct}} (Eng. .)
+* __.:__ {{.+Punct}} (Eng. # .)
 
 !Nominal analyses
 The analyses of nominals show the inflection in number. Nominals inflect in
@@ -163,7 +164,7 @@ Number tags:
  * {{+Pl }}: Plural
 
 Number tags are next to POSes in nominal analyses, and in order of morphs:
-* __padassa:__ {{pata+N+Sg+Ine}} (Eng. pot)
+* __padassa:__ {{pata+N+Sg+Ine}} (Eng. # pot)
 * __padoissa:__ {{pata+N+Pl+Ine}}
 
 The analyses of nominals have case inflection marked.
@@ -256,7 +257,7 @@ compounds.
 Further reading: [VISK § 406|http://scripta.kotus.fi/visk/sisallys.php?p=406]
 +Der/s   Compound form
 
-* __naisien:__ {{nainen+N+Der/s#ien+N+Sg+Nom}} (Eng. female gum)
+* __naisien:__ {{nainen+N+Der/s#ien+N+Sg+Nom}} (Eng. # female gum)
 
 !Finite verbs
 All verb analyses contain voice marking. For finite verb forms active voice
@@ -264,7 +265,7 @@ is tied to personal forms and passive voice to non-personal verb endings.
 The voice is also marked in the infinite verb forms.
 Further reading: [VISK § 110|http://scripta.kotus.fi/visk/sisallys.php?p=110]
  * {{+Act }}: Active voice
- * {{+Pass }}: Passive voice
+ * {{+Pss }}: Passive voice
 
 It is the first analysis of verb strings:
 * __kudot:__ {{kutoa+V+Act+Ind+Prs+Sg2}}
@@ -521,17 +522,18 @@ given the proper use of these flags.
  | @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
  | @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
 
+
 The start of the dictionary {{Root}}
 The Finnish morphological description starts from any of the parts of speech
 dictionaries, prefix or hyphenated suffix
 
 __Parts-of-speech examples:__
-* __talo:__ {{talo+N+Sg+Nom}} (Eng. house)
-* __nopea:__ {{nopea+A+Sg+Nom}} (Eng. fast)
-* __kutoa:__ {{kutoa+V+Act+InfA+Sg+Lat}} (Eng. to knit)
+* __talo:__ {{talo+N+Sg+Nom}} (Eng. # house)
+* __nopea:__ {{nopea+A+Sg+Nom}} (Eng. # fast)
+* __kutoa:__ {{kutoa+V+Act+InfA+Sg+Lat}} (Eng. # to knit)
 
 The compound part sub-set {{NOMINAL}}
 The nominal forms can be used as non-initial parts of typical compounds
 
 __Nominals examples:__
-* __talonjuttu:__ {{talo+N+Sg+Gen#juttu+N+Sg+Nom}} (Eng. house thing)
+* __talonjuttu:__ {{talo+N+Sg+Gen#juttu+N+Sg+Nom}} (Eng. # house thing)
