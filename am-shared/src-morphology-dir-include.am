@@ -17,7 +17,7 @@
 
 ########### Variables: ###########
 
-HFST_LEXC_FLAGS=
+HFST_LEXC_FLAGS=--Werror
 
 if WANT_HYPERMINIMISATION
 HFST_LEXC_FLAGS+=--withFlags --minimizeFlags
