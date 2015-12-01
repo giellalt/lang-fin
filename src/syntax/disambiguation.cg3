@@ -39,7 +39,7 @@ LIST >>> = >>> ;
 # ---------------
 
 
-LIST N = N ; 
+LIST N = N (V Der/minen) ; 
 LIST A = A ; 
 LIST Adv = Adv ; 
 LIST V = V ; 
@@ -51,6 +51,7 @@ LIST CMP_SUP = Comp Sup ;
 
 LIST Po = Po ;
 LIST Pr = Pr ;
+LIST Adpp = Adp ;
 LIST Adp = Adp Po Pr ;
 LIST PP = Adv Adp Po Pr ; # replaced PP->Pr, PSP->Po 
 #LIST PSP = PSP ; # PP preP, PSP postP 
@@ -659,8 +660,8 @@ LIST KUINKA-MITEN-MIllOIN = "kuinka" "miten" "milloin" ;
 # Punctuation 
 # -----------
 
-LIST COLON = "<:>" ; 
-LIST COMMA = "<,>" ;
+LIST COLON = ":" ; 
+LIST COMMA = "," ;
 LIST ComMA = "<,>" Punct ; 
 LIST ComMA_N_Pron_Q = "<,>" N Pron Qu ; 
 LIST ComMA_N_Pron_Q_V_SUP_BOS = "<,>" N Pron Qu V Sup >>> "kuin" ; 
@@ -761,7 +762,8 @@ LIST CMP-ENNEN = Comp "ennen" ;
 LIST MAINV = Prs Prt Imprt ; 
 #LIST MAINV_CLB? = Prs Prt Imprt  >>> <<< "<:>" "<#>" "<(>" "<>" "<'>" "<">" "<,>" CS CC ; not used
 
-LIST Punct = Punct "<,>" "<:>" ; # ?? now Punct is for all punctuation marks
+LIST Punct = Punct ; 
+LIST QUOTE = Quote ; 
 
 #LIST MAN = MAN ; # erityisesti hyvinkin; -mmin, -kin, -sti A / ADV; Inf2 katsoen, pitäen, luovien -- don't have this special tag (only Foc/kin), removed!
 
@@ -770,7 +772,6 @@ LIST Num-Q-Ill = Num Qu Ill ;
 
 #LIST Prop_HEUR = Prop <MORPH-HEUR!> ; not used
 #LIST QUANTIFIER = Qu Num ; not used
-#LIST QUOTE = QUOTE ; not used
 #LIST REF = REF ; - obsolete tag for: V Act/Pss PrfPrc/PrsPrc Sg Gen - moved to SETs
 #LIST REF_TEMP = REF TEMP ;  # don't have these tags! zero example of such wordform in text_cg1.txt - changed in one rule to REF (was about REF-form) ;
 
@@ -792,12 +793,20 @@ LIST PLAGR = VPl1 VPl2 VPl3 ;
 
 LIST Cmpnd = Cmpnd ;
 
-LIST Compounds = Pref (N A) (N V) (A V) (Sg Pl) (Nom Gen) (Nom Par) (Gen Par) (Nom Ess) (Gen Ess) (Nom Tra) (Gen Tra) (Nom Ine) (Gen Ine) (Nom Ela) (Gen Ela) (Nom Ill) (Gen Ill) (Nom Ade) (Gen Ade) (Nom Abl) (Gen Abl) (Nom All) (Gen All) (Nom Abe) (Gen Abe) (Nom Com) (Gen Com) (Nom Ins) (Gen Ins) ;
+#LIST Compounds = Pref (N A) (N V) (A V) (Sg Pl) (Nom Gen) (Nom Par) (Gen Par) (Nom Ess) (Gen Ess) (Nom Tra) (Gen Tra) (Nom Ine) (Gen Ine) (Nom Ela) (Gen Ela) (Nom Ill) (Gen Ill) (Nom Ade) (Gen Ade) (Nom Abl) (Gen Abl) (Nom All) (Gen All) (Nom Abe) (Gen Abe) (Nom Com) (Gen Com) (Nom Ins) (Gen Ins) ; # was before changes in morph
 #LIST NONSUBJECT-CASE = Ess Tra Ine Ela Ill Ade Abl All Abe Com Ins ; 
+#LIST VN = (V N); # V and N tag in one reading (compound) ; # was before changes in morph
+#LIST AN = (A N); # A and N tag in one reading (compound) ; # was before changes in morph
 
-LIST VN = (V N); # V and N tag in one reading (compound) ;
-LIST AN = (A N); # A and N tag in one reading (compound) ;
+LIST Hauskaa = ("hauska" Par) ;
 
+LIST Täytyy = ("<täytyy>") ;
+
+LIST AdvAdds = Ade All Dem Der/Sti Foc/pa Ine Interr Qnt Qu Rel ;
+
+LIST Sem = Sem/Human Sem/Geo Sem/Org ;
+
+LIST W0 = <W:0> ;
 
 # ========================================================================
 
@@ -808,7 +817,7 @@ LIST AN = (A N); # A and N tag in one reading (compound) ;
 
 # Sets
 # ----
-SET VERB = V - VN;
+SET VERB = V - DER;
   # V is all readings with a V tag in them, VERB should
             # be the ones without an N tag following the V (compound) ;
 
@@ -1103,6 +1112,9 @@ SECTION
 ### TODO: 
 # CLAUSE BOUNDARY CONSTRAINTS
 
+# First rule of voisiko is that it is never "your butters"
+REMOVE N IF (0 VOISIKO) ;
+
 
 ### =**CLB (ComMA) (0 Punct) ;
 ### =**CLB (C) (1 VFIN) ;
@@ -1114,32 +1126,35 @@ SECTION
 ### =**CLB Adv (0 KUINKA-MITEN-MIllOIN) ;
 ### Do not understand these. Trond.
 
+SELECT COLON;
+SELECT QUOTE;
+
 # looks like = is just ADD.
 
-ADD UP (*) IF (0 ("<[ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÜÕÆØ¢ı¥ŠŽ](.*)>"r)) (NOT 0 UP) ;
+ADD UP (*) IF (0 ("<[ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÜÕÆØ¢ı¥ŠŽ](.*)>"r)) (NEGATE 0 UP) ;
 # siis saab n up vahetada np vastu
 
-ADD CLB ComMA IF (0 Punct) (NOT 0 CLB) ;
-ADD CLB Conj IF (1 VFIN) (NOT 0 CLB)(NOT -1 CLB) ;
-ADD CLB Conj IF (2 VFIN) (NOT 0 CLB)(NOT -1 CLB) ;
-ADD CLB Conj IF (3 VFIN) (NOT 0 CLB)(NOT -1 CLB) ;
+ADD CLB ComMA IF (0 Punct) (NEGATE 0 CLB) ;
+ADD CLB Conj IF (1 VFIN) (NEGATE 0 CLB)(NEGATE -1 CLB) ;
+ADD CLB Conj IF (2 VFIN) (NEGATE 0 CLB)(NEGATE -1 CLB) ;
+ADD CLB Conj IF (3 VFIN) (NEGATE 0 CLB)(NEGATE -1 CLB) ;
 
 ### #(@w =**CLB (C) ;
 # do not understand this one - Ryan
 
-ADD CLB Compl IF (NOT 0 CLB)(NOT -1 CLB) ;
-ADD CLB Rel IF (NOT 0 CLB)(NOT -1 CLB) ;
+ADD CLB Compl IF (NEGATE 0 CLB)(NEGATE -1 CLB) ;
+ADD CLB Rel IF (NEGATE 0 CLB)(NEGATE -1 CLB) ;
 # Problematic because we don't have CLB for this in gold corpus - 20.01.2015 - FMT+KM 
-#ADD CLB Qst IF (NOT 0 CLB)(NOT -1 CLB) ;
+#ADD CLB Qst IF (NEGATE 0 CLB)(NEGATE -1 CLB) ;
 
-ADD CLB Adv IF (0 KUINKA-MITEN-MIllOIN) (NOT 0 CLB)(NOT -1 CLB) ;
-ADD CLB Conj IF (NOT 0 CC) (NOT 0 CLB)(NOT -1 CLB) ; 
+ADD CLB Adv IF (0 KUINKA-MITEN-MIllOIN) (NEGATE 0 CLB)(NEGATE -1 CLB) ;
+ADD CLB Conj IF (NEGATE 0 CC) (NEGATE 0 CLB)(NEGATE -1 CLB) ; 
 
-# Including (NOT 0 CLB) because it adds multiple times otherwise - Ryan
+# Including (NEGATE 0 CLB) because it adds multiple times otherwise - Ryan
 
-ADD Cmpnd (*) IF (0 Compounds) (NOT 0 Cmpnd) ; # have to get it from somewhere 
-REMOVE Compounds ;
-REMOVE Adv + Dem ;
+REMOVE SUB:1 W0 ;
+ADD Cmpnd (*) IF (0/1 W0) (NEGATE 0 Cmpnd) ; # have to get it from subreading 
+REMOVE Adv + AdvAdds (0 Adv - AdvAdds) ;
 
 
 SELECT Conj IF (-1 ("samoin") + Pcle) ;
@@ -1150,10 +1165,10 @@ SELECT Conj IF (-1 ("samoin") + Pcle) ;
 
 # Doesn't work for 'siellä on myös pihkaa ja kiveä'. Perhaps best to leave this out until there are ambiguities? 
 
-# REMOVE Pcle IF (NOT 1 Adv) ;
+# REMOVE Pcle IF (NEGATE 1 Adv) ;
 
 # Remove particles if they have some other reading, e.g., adverb
-REMOVE Pcle IF (0 CC OR CS OR Adv OR Pron) (NOT 1 CC) ;
+REMOVE Pcle IF (0 CC OR CS OR Adv OR Pron) (NEGATE 1 CC) ;
 # This will not remove Pcle if it is the last reading available. If particles still show up where they are expected to be adverbs, they are missing in the morphology.
 
 REMOVE Pcle IF (0 ("ja")) ;
@@ -1165,14 +1180,14 @@ REMOVE Prop IF (0 CNOUN) (0 POSS_SUFF);
 REMOVE Interj ; # FMT: The above rules do not work for "Niin he jättivät kohta verkot ja seurasivat häntä" 
 # these two rules are ad hoc rules, awaiting tag harmonisation omorfi-cg
 
-SELECT VFIN (0 VFIN) (0 NGen) (NOT *-1 VFIN BARRIER CLB?) (NOT 1* VFIN BARRIER CLB?); # FMT: "Asun valkeassa talossa."
+SELECT VFIN (0 VFIN) (0 NGen) (NEGATE *-1 VFIN BARRIER CLB?) (NEGATE 1* VFIN BARRIER CLB?); # FMT: "Asun valkeassa talossa."
 
-REMOVE Nom IF (-1 CLB?) (0 Nom) (0 VFIN) (1C Nom); # FMT: "Tuli ilta, ja tuli aamu, ensimmäinen päivä"
+REMOVE Nom IF (-1 CLB?) (0 Nom) (0 VFIN) (1C Nom)(NEGATE 1* VFIN BARRIER CLB?); # FMT: "Tuli ilta, ja tuli aamu, ensimmäinen päivä"
 
 REMOVE Pron IF (0 ("yks") + Pron) (0 ("yks") + Num); # FMT: "Kokoontukoot vedet, jotka ovat taivaan alla, yhteen  paikkaan, niin että kuiva tulee näkyviin"
 
 # This is problematic: hänen on pakko ostaa, selects prop.
-# SELECT Prop IF (NOT -1 BOS OR Punct);
+# SELECT Prop IF (NEGATE -1 BOS OR Punct);
 
 SELECT InfA IF (-1 (@NES)) (-2 (@+FAUXV)) ;
 
@@ -1199,18 +1214,18 @@ IFF Pron + Ins (1C Ins) ;
 
 "<ajan>" SELECT N (-1 Gen) ;
 "<ajan>" SELECT N (-1 KOKO) ;
-"<ajoissa>" SELECT Adv (NOT -1 Gen) ;
+"<ajoissa>" SELECT Adv (NEGATE -1 Gen) ;
 "<alustaa>" SELECT InfA (-1 V) (1 N) ;
 "<asti>" SELECT Po (-1 Ill_Tra_All) ;
-"<enemmänkin>" SELECT Adv (NOT 1C Gen) ;
+"<enemmänkin>" SELECT Adv (NEGATE 1C Gen) ;
 "<erään>" SELECT Qu (1 Gen) ;
 "<halusi>" SELECT V ;
-"<huolimatta>" SELECT Po (NOT 1 Ela) (-1 Ela) ;
-"<huolimatta>" SELECT Pr (NOT -1 Ela) (1 Ela) ;
-"<huolimatta>" SELECT Pr (NOT -1 Ela) (2 Ela) ;
+"<huolimatta>" SELECT Po (NEGATE 1 Ela) (-1 Ela) ;
+"<huolimatta>" SELECT Pr (NEGATE -1 Ela) (1 Ela) ;
+"<huolimatta>" SELECT Pr (NEGATE -1 Ela) (2 Ela) ;
 "<häntä>" SELECT Pron (-1 NEGV) ;
 "<ilmi>" IFF Adv (1 ELAVA-SELVA) ;
-"<juuri>" SELECT Adv (NOT 1 VFIN) ;
+"<juuri>" SELECT Adv (NEGATE 1 VFIN) ;
 "<juurikaan>" SELECT Adv ;
 "<jäljelle>" SELECT Adv ;
 "<kautta>" SELECT Po (-1 Gen_Par) ;
@@ -1222,16 +1237,17 @@ IFF Pron + Ins (1C Ins) ;
 "<lainkaan>" SELECT Adv ;
  # RISKY
 "<liiaksi>" SELECT Adv ;
-"<liikaa>" IFF Adv (NOT 1 Par) ;
+"<liikaa>" IFF Adv (NEGATE 1 Par) ;
 "<lupasi>" SELECT V ;
  # RISKY
 "<lähetii>" SELECT V (-1C Nom) (-1 Sg) ;
 "<läpeensä>" SELECT Adv ;
-"<merkitystä>" SELECT NPar (NOT 1 Ela) ;
-"<mikä>" SELECT Qu (1C N) (1 Nom) (1 Sg) (NOT -1 BOS) ;
-      # RISKY SHOULD ALSO BE (NOT -2 "KYSYMYS" ETC.# ", MIKä VOI..."
+"<merkitystä>" SELECT NPar (NEGATE 1 Ela) ;
+SELECT ("molemmat") + Pron ;
+"<mikä>" SELECT Qu (1C N) (1 Nom) (1 Sg) (NEGATE -1 BOS) ;
+      # RISKY SHOULD ALSO BE (NEGATE -2 "KYSYMYS" ETC.# ", MIKä VOI..."
 "<määrin>" SELECT NPlIns  ;
-#("<niin>" SELECT (AD-A) (1 A_AD-A) (NOT *2 KUIN) ;
+#("<niin>" SELECT (AD-A) (1 A_AD-A) (NEGATE *2 KUIN) ;
 "<nähden>" IFF Po (-1 Ill) ;
 "<oikein>" IFF A + Sup (1 N) (1 Nom) (1 Sg) ;
 "<ollut>" SELECT COP ;
@@ -1245,16 +1261,16 @@ IFF Pron + Ins (1C Ins) ;
 "<peräisin>" SELECT Adv (*-1 OLLA) ;
 "<puolen>" SELECT Num (1 Num) ;
  # PUOLEN MILJOONAN MK:N
-"<puolen>" SELECT N (1 N) (NOT 1 Gen) ;
+"<puolen>" SELECT N (1 N) (NEGATE 1 Gen) ;
  # PORVARIllISEN PUOLEN UUSJAKO
-"<puolestaan>" SELECT Adv (NOT -1 Gen) (NOT -1 Ela) ;
+"<puolestaan>" SELECT Adv (NEGATE -1 Gen) (NEGATE -1 Ela) ;
 "<päivittäin>" REMOVE Adv (0 ("(.*)ittain"r)) ; # DN-ITTAIN 
 "<pääsi>" SELECT V ;
  # RISKY
 "<sataa>" SELECT Num (-1 Num) ;
 "<seurasi>" SELECT V ;
  # RISKY
-"<suominen>" SELECT Prop (NOT 0 CAP_NOCAP) ;
+"<suominen>" SELECT Prop (NEGATE 0 CAP_NOCAP) ;
 "<se>" SELECT Pron ;
 "<se>" SELECT Pron ;
 "<sekin>" SELECT Pron ;
@@ -1263,15 +1279,15 @@ IFF Pron + Ins (1C Ins) ;
 "<sillä>" SELECT CS ; # XXXX OUT
   # A BIT RISKY
 "<sillä>" SELECT Pron ; # XXXX OUT
-"<suoraan>" SELECT Adv (NOT 1 Ill) ;
+"<suoraan>" SELECT Adv (NEGATE 1 Ill) ;
  # RISKY
-"<tarpeeksi>" REMOVE N (NOT -1 Tra) ;
-"<todella>" SELECT Adv (NOT 1 Ade) ;
+"<tarpeeksi>" REMOVE N (NEGATE -1 Tra) ;
+"<todella>" SELECT Adv (NEGATE 1 Ade) ;
 "<toisekseen>" SELECT Adv (-2 CLB?) ;
 "<totta>" REMOVE Adv ;
 "<tuntumassa>" SELECT N ;
-"<tuo>" SELECT Pron (-1 KAIKKI) (NOT -2 Pron) ;
-"<täyteen>" SELECT Adv (NOT 1 Ill) ;
+"<tuo>" SELECT Pron (-1 KAIKKI) (NEGATE -2 Pron) ;
+"<täyteen>" SELECT Adv (NEGATE 1 Ill) ;
 "<vaan>" SELECT CS (1 NomHEAD) ;
 "<vastaan>" SELECT Adv (-1 OTTAA) ;
 "<verraten>" IFF InfE (-1 Ill) ;
@@ -1286,6 +1302,8 @@ IFF Pron + Ins (1C Ins) ;
 SELECT A IF (0C A OR N) (-1 AD-PALJON) ;
   # Mutta eilen oli erittäin kylmää!
 
+REMOVE Prop (0 CC OR CS OR Pr OR Adv OR Pron)(-1 BOS OR QUOTE) ;
+
 # added 20.01.2015 - FMT+KM
 SELECT A + Gen IF (0C A OR N) (1 COMMA LINK 1C A + Gen) ;
   # Jaakko juoksee nopeasti ison, vanhan puun luokse ...
@@ -1298,10 +1316,10 @@ SELECT ("ensi") + A ;
 SELECT ("erityinen") + A ;
 SELECT ("jälkeinen") + A (1 N) ;
 SELECT ("kallis") + A ;
-REMOVE ("kiire") + A (NOT 0 Nom) ;
+REMOVE ("kiire") + A (NEGATE 0 Nom) ;
 
 SELECT ("koko") (1 A_N_Q_Pron_PCP_Num) ;
-IFF ("liika") + A (NOT 0 Par_Gen) (NOT 0 Pl) (1C N) ;
+IFF ("liika") + A (NEGATE 0 Par_Gen) (NEGATE 0 Pl) (1C N) ;
 SELECT ("nuori") + A + Pl ;
 REMOVE ("nykyinen") + A + Sup ;
 REMOVE ("täysi") + ASgNom + Sup ;
@@ -1313,50 +1331,51 @@ SELECT ("tärkeä") + A ;
 REMOVE ("uusi") + ASgEla + PxSg3 ;   # UUDESTAAN
 #(@w SELECT (A Sg Nom "uusi") (1C N) (1C Sg) (1 Nom) ;
 #(@w SELECT (A Pl Par "uusi") (1 N) (1 Par) (1 Pl) ;
-SELECT APlPar (1C Par) (1 Pl) (NOT 0 POSS_SUFF) (NOT 0 HARVA) ;
+SELECT APlPar (1C Par) (1 Pl) (NEGATE 0 POSS_SUFF) (NEGATE 0 HARVA) ;
 # OMIA TALOJA# ACTUAllY SubSUMED BY APlPar -RULES BELOW
-REMOVE ("vaalea") + APlIne (NOT 1 Ine) ;
-REMOVE ("vaalea") + APlEla (NOT 1 Ela) ;
-REMOVE ("vaalea") + APlIll (NOT 1 Ill) ;
-REMOVE ("vaalea") + APlAde (NOT 1 Ade) ;
+REMOVE ("vaalea") + APlIne (NEGATE 1 Ine) ;
+REMOVE ("vaalea") + APlEla (NEGATE 1 Ela) ;
+REMOVE ("vaalea") + APlIll (NEGATE 1 Ill) ;
+REMOVE ("vaalea") + APlAde (NEGATE 1 Ade) ;
 
 SELECT ("kulta") + ASgNom (1 Nom) ;
 SELECT ("kulta") + ASgNom (2 Nom) ;
-SELECT ("kulta") + ASgNom (*-1 Nom LINK NOT *1 CLB?) (NOT -1 CLB?) ;
+SELECT ("kulta") + ASgNom (*-1 Nom LINK NOT *1 CLB?) (NEGATE -1 CLB?) ;
 
 SELECT ("vapaa") + ASgNom (1 Nom) ;
 SELECT ("vapaa") + ASgNom (2 Nom) ;
-SELECT ("vapaa") + ASgNom (*-1 Nom LINK NOT *1 CLB?) (NOT -1 CLB?) ;
+SELECT ("vapaa") + ASgNom (*-1 Nom LINK NOT *1 CLB?) (NEGATE -1 CLB?) ;
 SELECT ("vapaa") + ASgGen (1 Gen) ;
 SELECT ("vapaa") + ASgGen (-1 Gen) ;
 SELECT ("vieras") + A ;
 REMOVE ("voinen") + A ;
+REMOVE ("vähä") + A + Gen (1 N) (NEGATE 1 Gen) ; # vähän vettä (Par) ?
 SELECT ("vähä") + A + Gen ;#  (1 Gen) (1 N) ; # VäHäN AJAN KULUTTUA
-SELECT A (-1C Adv OR Pcle) (NOT 0 LIIAN) (NOT 0 PALJON) (NOT 0 Adv) (NOT 0 HARVA) ;
-SELECT ASgNom (NOT 0 Adv) (1C Nom) (1 A_N) (1 Sg) (NOT 0 HARVA) (NOT 0 TOSI) (NOT 0 PCP) ; # XXXX
+SELECT A (-1C Adv OR Pcle) (NEGATE 0 LIIAN) (NEGATE 0 PALJON) (NEGATE 0 Adv) (NEGATE 0 HARVA) ;
+SELECT ASgNom (NEGATE 0 Adv) (1C Nom) (1 A_N) (1 Sg) (NEGATE 0 HARVA) (NEGATE 0 TOSI) (NEGATE 0 PCP) ; # XXXX
 # EI "nykyisin", NOT "tosi"
-SELECT ASgGen (1C Gen) (1 A_N) (1 Sg) (NOT 0 ENEM-VAHEM) (NOT 0 PCP) (NOT 0 HARVA) (NOT 0 HYVANSA) (NOT 0 PALJON) ;
-SELECT ASgPar (1C Par) (1 A_N) (1 Sg) (NOT 0 PCP) (NOT 0 HARVA) ;
-SELECT ASgIne (1C Ine) (1 Sg) (NOT 0 PCP) (NOT 0 HARVA) ;
-SELECT ASgEla (1C Ela) (1 Sg) (NOT 0 PCP) (NOT 0 HARVA) ;
-SELECT ASgIll (1C Ill) (1 Sg) (NOT 0 PCP) (NOT 0 HARVA) ;
-SELECT ASgAde (1C Ade) (1 Sg) (NOT 0 Adv) (NOT 0 PCP) (NOT 0 HARVA) ;
+SELECT ASgGen (1C Gen) (1 A_N) (1 Sg) (NEGATE 0 ENEM-VAHEM) (NEGATE 0 PCP) (NEGATE 0 HARVA) (NEGATE 0 HYVANSA) (NEGATE 0 PALJON) ;
+SELECT ASgPar (1C Par) (1 A_N) (1 Sg) (NEGATE 0 PCP) (NEGATE 0 HARVA) ;
+SELECT ASgIne (1C Ine) (1 Sg) (NEGATE 0 PCP) (NEGATE 0 HARVA) ;
+SELECT ASgEla (1C Ela) (1 Sg) (NEGATE 0 PCP) (NEGATE 0 HARVA) ;
+SELECT ASgIll (1C Ill) (1 Sg) (NEGATE 0 PCP) (NEGATE 0 HARVA) ;
+SELECT ASgAde (1C Ade) (1 Sg) (NEGATE 0 Adv) (NEGATE 0 PCP) (NEGATE 0 HARVA) ;
 # VIREIllä
-SELECT ASgAbl (1C Abl) (1 Sg) (NOT 0 PCP) (NOT 0 HARVA) ;
-SELECT ASgAll (1C All) (1 Sg) (NOT 0 PCP) (NOT 0 HARVA) ;
-SELECT ASgEss (1C Ess) (1 Sg) (NOT 0 PCP) (NOT 0 HARVA) ;
-SELECT ASgTra (1C Tra) (1 Sg) (NOT 0 PCP) (NOT 0 HARVA) ;
-SELECT APlNom (1C Nom) (1 A_N) (1 Pl) (NOT 0 PCP) (NOT 0 Ins) (NOT 0 HARVA) ; # TUKEVA, NYKYISIN USEIN,NYKYISIN TULI
-SELECT APlGen (1C Gen) (1 A_N) (1 Pl) (NOT 0 HARVA) ;
-SELECT APlPar (1C Par) (1 A_N) (1 Pl) (NOT 0 HARVA) ;
-SELECT APlIne (1C Ine) (1 Pl) (NOT 0 HARVA) ;
-SELECT APlEla (1C Ela) (1 Pl) (NOT 0 HARVA) ;
-SELECT APlIll (1C Ill) (1 Pl) (NOT 0 HARVA) ;
-SELECT APlAde (1C Ade) (1 Pl) (NOT 0 VIREIllA) (NOT 0 HARVA) ;
-SELECT APlAbl (1C Abl) (1 Pl) (NOT 0 HARVA) ;
-SELECT APlAll (1C All) (1 Pl) (NOT 0 HARVA) ;
-SELECT APlEss (1C Ess) (1 Pl) (NOT 0 HARVA) ;
-SELECT APlTra (1C Tra) (1 Pl) (NOT 0 HARVA) ;
+SELECT ASgAbl (1C Abl) (1 Sg) (NEGATE 0 PCP) (NEGATE 0 HARVA) ;
+SELECT ASgAll (1C All) (1 Sg) (NEGATE 0 PCP) (NEGATE 0 HARVA) ;
+SELECT ASgEss (1C Ess) (1 Sg) (NEGATE 0 PCP) (NEGATE 0 HARVA) ;
+SELECT ASgTra (1C Tra) (1 Sg) (NEGATE 0 PCP) (NEGATE 0 HARVA) ;
+SELECT APlNom (1C Nom) (1 A_N) (1 Pl) (NEGATE 0 PCP) (NEGATE 0 Ins) (NEGATE 0 HARVA) ; # TUKEVA, NYKYISIN USEIN,NYKYISIN TULI
+SELECT APlGen (1C Gen) (1 A_N) (1 Pl) (NEGATE 0 HARVA) ;
+SELECT APlPar (1C Par) (1 A_N) (1 Pl) (NEGATE 0 HARVA) ;
+SELECT APlIne (1C Ine) (1 Pl) (NEGATE 0 HARVA) ;
+SELECT APlEla (1C Ela) (1 Pl) (NEGATE 0 HARVA) ;
+SELECT APlIll (1C Ill) (1 Pl) (NEGATE 0 HARVA) ;
+SELECT APlAde (1C Ade) (1 Pl) (NEGATE 0 VIREIllA) (NEGATE 0 HARVA) ;
+SELECT APlAbl (1C Abl) (1 Pl) (NEGATE 0 HARVA) ;
+SELECT APlAll (1C All) (1 Pl) (NEGATE 0 HARVA) ;
+SELECT APlEss (1C Ess) (1 Pl) (NEGATE 0 HARVA) ;
+SELECT APlTra (1C Tra) (1 Pl) (NEGATE 0 HARVA) ;
 
 # A_N > N
 SELECT NSgNom (1C Nom) (1 A_N) (1 Sg) ;
@@ -1389,11 +1408,11 @@ SELECT NPlTra (1C Tra) (1 Pl) ;
 SELECT ("aika") + Adv (1C A_Adv_PCP_Det_Q) ;
 REMOVE ("enemmän") + Adv (1 TAI) (2 ENEM-VAHEM) ; # XXXX
 SELECT ("erittäin") + Adv ;
-SELECT ("hieman") + Adv (1C A-A_N-Q) (NOT 1 Par) (NOT 2 Comp) ; # EOS
-SELECT ("hiukan") + Adv (1C A-A_N-Q) (NOT 1 Par) (NOT 2 Comp) ; # EOS
+SELECT ("hieman") + Adv (1C A-A_N-Q) (NEGATE 1 Par) (NEGATE 2 Comp) ; # EOS
+SELECT ("hiukan") + Adv (1C A-A_N-Q) (NEGATE 1 Par) (NEGATE 2 Comp) ; # EOS
 SELECT ("hyvin") + Adv (1 AD-HYVIN) ;
 SELECT ("hyvin") + Adv (-1 AD-HYVIN) ;
-SELECT ("liian") + Adv (NOT 1 Gen) ;
+SELECT ("liian") + Adv (NEGATE 1 Gen) ;
 SELECT ("ihan") + Adv (1 NIIN) ;
 SELECT ("melkein") + Adv (1 Adv) ; # MELKEIN MISSä VAIN, MELKEIN AINA
 SELECT ("miltei") + Adv (1 AD-MILTEI) ;
@@ -1401,8 +1420,8 @@ SELECT ("miltei") + Adv (1 AD-MILTEI) ;
 IFF ("mitä") + Adv IF (1 CMP_SUP) ;
   # Entä mitä Jaakko tekee puun lähellä?
 
-SELECT ("niin") + Adv (1C A) (2 KUIN) (NOT 3 A) ; # NIIN RAJU KUIN MINä
-SELECT ("niin") + Adv (1C Adv) (2 KUIN) (NOT 3 A) ; # NIIN RAJUSTI KUIN MEIllä, was (1C MAN) ;
+SELECT ("niin") + Adv (1C A) (2 KUIN) (NEGATE 3 A) ; # NIIN RAJU KUIN MINä
+SELECT ("niin") + Adv (1C Adv) (2 KUIN) (NEGATE 3 A) ; # NIIN RAJUSTI KUIN MEIllä, was (1C MAN) ;
 SELECT ("noin") + Adv (1 Gen) ;
 SELECT ("noin") + Adv + Dem (1 Num) ;
 SELECT ("noin") + Adv (1 TIME-WORD) ;
@@ -1413,41 +1432,41 @@ SELECT A (0 PALJON) (0 Par) (1 N) (1 Par) (1 Sg) ;
 SELECT A (0 PALJON) (0 LOC-CASE) (1 N) (1 LOC-CASE) (1 Sg) ;
 REMOVE A (0 PALJON) ; # "on asetettu paljon haltijaksi"
 SELECT ("täysin") + Adv (1 AD+PrfPrc) ;
-SELECT ("vallan") + Adv (1 A) (NOT *1 VAllAN-WDS) (NOT *-1 VAllAN-WDS) ;
+SELECT ("vallan") + Adv (1 A) (NEGATE *1 VAllAN-WDS) (NEGATE *-1 VAllAN-WDS) ;
 SELECT ("vallan") + Adv ;  #   (1 PCP) ;
-REMOVE ("vallan") + Adv (NOT 1 A) (NOT 1 PCP) ;
+REMOVE ("vallan") + Adv (NEGATE 1 A) (NEGATE 1 PCP) ;
 SELECT ("varsin") + Adv ;
 IFF ("yhä") + Adv (1C Comp) ;
-SELECT ("yli") + Adv (1C Num-PUOLET-KOLMANNES) (NOT 2 Gen) ; # not2genadded 9.10.2000 yli38asteen
-SELECT ("yli") + Adv (NOT 1 Gen) (NOT 2 Gen) (NOT 3 Gen) (1 A) ; # XXX
+SELECT ("yli") + Adv (1C Num-PUOLET-KOLMANNES) (NEGATE 2 Gen) ; # not2genadded 9.10.2000 yli38asteen
+SELECT ("yli") + Adv (NEGATE 1 Gen) (NEGATE 2 Gen) (NEGATE 3 Gen) (1 A) ; # XXX
 # YLI TUHATVUOTIneN VAIHE
-SELECT ("yli") + Pr ; # (NOT 1 Gen) (2 Gen) YLI KOKO MAAN, , NOLLATTU
-SELECT Adv (NOT 0 NIIN-YHA) (NOT -1 ComMA) (1C A) (NOT 1 Par) (NOT 2 Comp) (NOT 0 ENEM-VAHEM) (NOT 0 Interr) (NOT 0 VAllAN) (NOT 0 YLI_AllE) ; #lastcondadd9.10.2000
+SELECT ("yli") + Pr ; # (NEGATE 1 Gen) (2 Gen) YLI KOKO MAAN, , NOLLATTU
+SELECT Adv (NEGATE 0 NIIN-YHA) (NEGATE -1 ComMA) (1C A) (NEGATE 1 Par) (NEGATE 2 Comp) (NEGATE 0 ENEM-VAHEM) (NEGATE 0 Interr) (NEGATE 0 VAllAN) (NEGATE 0 YLI_AllE) ; #lastcondadd9.10.2000
 # CF. HIUKANAdv ENTISTÄ PITEMPI XXXX
 SELECT Adv (0 AD-PALJON) (1 PALJON-MONI) ; # VARSIN PALJON, VARSIN USEAT
-SELECT Adv (NOT 0 NIIN-YHA) (1C A_AD-A_Q) (NOT 1 Par) (NOT 2 Comp) 
- (NOT 0 ENEM-VAHEM) (NOT 0 VAllAN) (NOT 0 Interr) (NOT 0 PALJON) ;
-SELECT Adv (NOT 0 NIIN-YHA) (1C A_AD-A_Q) (1 Par) (NOT 2 Comp) 
- (NOT 0 ENEM-VAHEM) (NOT 0 VAllAN) (NOT 0 Interr) (NOT 0 PALJON) ; # XXXX
-REMOVE Adv (NOT 0 NIIN-YHA) (1C A_AD-A_Q) (1 Par) (2 Comp) ;
+SELECT Adv (NEGATE 0 NIIN-YHA) (1C A_AD-A_Q) (NEGATE 1 Par) (NEGATE 2 Comp) 
+ (NEGATE 0 ENEM-VAHEM) (NEGATE 0 VAllAN) (NEGATE 0 Interr) (NEGATE 0 PALJON) ;
+SELECT Adv (NEGATE 0 NIIN-YHA) (1C A_AD-A_Q) (1 Par) (NEGATE 2 Comp) 
+ (NEGATE 0 ENEM-VAHEM) (NEGATE 0 VAllAN) (NEGATE 0 Interr) (NEGATE 0 PALJON) ; # XXXX
+REMOVE Adv (NEGATE 0 NIIN-YHA) (1C A_AD-A_Q) (1 Par) (2 Comp) ;
 # HIEMANAdv ENTISTÄ SUPPEAMPI
-SELECT Adv (NOT 0 NIIN-YHA) (1C Num-PUOLET-KOLMANNES) (NOT 0 VAllAN) (NOT 0 Interr)  (NOT 0 YLI_AllE) ; #lastcondadded9.10.2000
-SELECT ("vähemmän") + Adv (NOT -1 ComMA) (1 A-A_N-PCP) (NOT 1 Par) (NOT 2 Comp) (NOT -1 Conj) (NOT -2 ENEM-VAHEM) (NOT 1 Gen) ;
-SELECT ("vähemmän") + Adv (1 A-A_N-PCP) (NOT 1 Par) (NOT 2 Comp) (NOT -1 Conj) (NOT -2 ENEM-VAHEM) (NOT 1 Gen) ;
-SELECT ("vähemmän") + Adv (1 A-A_N-PCP) (1 Par) (NOT 2 Comp) (NOT -1 Conj) (NOT -2 ENEM-VAHEM) (NOT 1 Gen) ;
+SELECT Adv (NEGATE 0 NIIN-YHA) (1C Num-PUOLET-KOLMANNES) (NEGATE 0 VAllAN) (NEGATE 0 Interr)  (NEGATE 0 YLI_AllE) ; #lastcondadded9.10.2000
+SELECT ("vähemmän") + Adv (NEGATE -1 ComMA) (1 A-A_N-PCP) (NEGATE 1 Par) (NEGATE 2 Comp) (NEGATE -1 Conj) (NEGATE -2 ENEM-VAHEM) (NEGATE 1 Gen) ;
+SELECT ("vähemmän") + Adv (1 A-A_N-PCP) (NEGATE 1 Par) (NEGATE 2 Comp) (NEGATE -1 Conj) (NEGATE -2 ENEM-VAHEM) (NEGATE 1 Gen) ;
+SELECT ("vähemmän") + Adv (1 A-A_N-PCP) (1 Par) (NEGATE 2 Comp) (NEGATE -1 Conj) (NEGATE -2 ENEM-VAHEM) (NEGATE 1 Gen) ;
 
 SELECT ("vähemmän") + Adv (-1 Conj) (-2 ENEM-VAHEM) ; # XXXX
 
-REMOVE Der_inen + Par ; # IF (0 (A Pos Sg Par)) (0 N + Ela) (NOT 1 Par) ;
+REMOVE Der_inen + Par ; # IF (0 (A Pos Sg Par)) (0 N + Ela) (NEGATE 1 Par) ;
     # Blame Trond if this doesn't work. We hope for counter examples.
 
 # Adverbs
 # ------- 
 
-REMOVE Dem IF (0 Adv)(NOT 1 N OR A OR Num);
+REMOVE Dem IF (0 Adv)(NEGATE 1 N OR A OR Num);
 
 # added 20.01.2015 - FMT+KM
-SELECT Adv IF (0 HYVIN-1) (0 Adv OR A) (NOT -1* OLLA BARRIER CLB) (NOT 1* Nom) ;
+SELECT Adv IF (0 HYVIN-1) (0 Adv OR A) (NEGATE -1* OLLA BARRIER CLB) (NEGATE 1* Nom) ;
   # Nyt hän voi kuulla sen hyvin.
 
 # added 20.01.2015 - FMT+KM
@@ -1458,10 +1477,10 @@ REMOVE ("aikainen") + Adv ; # XX  MAN
 SELECT ("ainoastaan") + Adv ;
 SELECT ("alkuaan") + Adv ;
 SELECT ("alkujaan") + Adv ;
-SELECT ("edelleen") + Adv (NOT -1 Gen) (NOT -2 Gen) (NOT *-1 PAASTA) ;
-SELECT ("edellä") + Adv (NOT *-1 NEGV) (NOT -1 Gen_Par) (NOT 1 Par) ;
+SELECT ("edelleen") + Adv (NEGATE -1 Gen) (NEGATE -2 Gen) (NEGATE *-1 PAASTA) ;
+SELECT ("edellä") + Adv (NEGATE *-1 NEGV) (NEGATE -1 Gen_Par) (NEGATE 1 Par) ;
 SELECT ("edestakaisin") + Adv ;
-SELECT ("enemmän") + Adv (NOT 1 Gen) ; # XXXX
+SELECT ("enemmän") + Adv (NEGATE 1 Gen) ; # XXXX
 SELECT ("enimmäkseen") + Adv ;
 SELECT ("enintään") + Adv ;
 SELECT ("ennakolta") + Adv ;
@@ -1482,33 +1501,33 @@ SELECT ("ikinä") + Adv ;
 REMOVE ("johtuen") + Adv ;
 SELECT ("jotenkin") + Adv ;
 SELECT ("jäljellä") + Adv ;
-SELECT ("kahden") + Adv (NOT 1 Gen) (NOT 2 Gen) (NOT 3 Gen) (NOT 4 Gen) (NOT 1 KAUPPA) ;
-SELECT ("kai") + Adv (NOT 1 Prop) ;
+SELECT ("kahden") + Adv (NEGATE 1 Gen) (NEGATE 2 Gen) (NEGATE 3 Gen) (NEGATE 4 Gen) (NEGATE 1 KAUPPA) ;
+SELECT ("kai") + Adv (NEGATE 1 Prop) ;
 SELECT ("kaikkiaan") + Adv ;
-SELECT ("kauemmaksi") + Adv (NOT 1 Tra) ;
-SELECT ("kauempaa") + Adv (NOT 1 Par) ;
-SELECT ("kauempana") + Adv (NOT 1 Ess) ;
+SELECT ("kauemmaksi") + Adv (NEGATE 1 Tra) ;
+SELECT ("kauempaa") + Adv (NEGATE 1 Par) ;
+SELECT ("kauempana") + Adv (NEGATE 1 Ess) ;
 SELECT ("kohta") + Adv (-1 JOS_VAIKKA) ;
 SELECT ("kokonaan") + Adv ;
-SELECT ("koolla") + Adv (*-1 OLLA LINK NOT *1 CLB?) (NOT -1 Ade) (NOT -1 CLB?) ;
+SELECT ("koolla") + Adv (*-1 OLLA LINK NOT *1 CLB?) (NEGATE -1 Ade) (NEGATE -1 CLB?) ;
 SELECT ("koolle") + Adv ;
 SELECT ("korkeintaan") + Adv ;
 SELECT ("kotoisin") + Adv ;
-REMOVE ("kovaa") + Adv (*-1 OLLA LINK NOT *1 CLB?) (NOT -1 CLB?) ; #PELIONKOVAAA
+REMOVE ("kovaa") + Adv (*-1 OLLA LINK NOT *1 CLB?) (NEGATE -1 CLB?) ; #PELIONKOVAAA
 SELECT ("kumminkin") + Adv ;
 SELECT ("kumminkaan") + Adv ;
 SELECT ("liioin") + Adv ;
-SELECT ("lisäksi") + Adv (NOT -1 Gen) ; # NAISTEN LISäKSI
+SELECT ("lisäksi") + Adv (NEGATE -1 Gen) ; # NAISTEN LISäKSI
 SELECT ("käsiksi") + Adv ;
-SELECT ("lisää") + Adv (*-1C VFIN LINK NOT *1 CLB?) (*1 Par LINK NOT *-1 CLB?) (NOT 1 CLB?) (NOT -1 CLB?) ;
-SELECT ("lisää") + Adv (*-1C VFIN LINK NOT *1 CLB?) (*-1 Par LINK NOT *1 CLB?) (NOT -1 CLB?) ;
-SELECT ("lisää") + Adv (*1C VFIN LINK NOT *-1 CLB?) (*1 Par LINK NOT *-1 CLB?) (NOT 1 CLB?) ;
-SELECT ("lisää") + Adv (*-1C VFIN LINK NOT *1 CLB?) (*1 Par LINK NOT *-1 CLB?) (NOT 1 CLB?) (NOT -1 CLB?) ;
-SELECT ("lähemmäksi") + Adv (NOT 1 Tra) ;
-SELECT ("lähempänä") + Adv (NOT 1 Ess) ;
-SELECT ("lähimmäksi") + Adv (NOT 1 Tra) ;
+SELECT ("lisää") + Adv (*-1C VFIN LINK NOT *1 CLB?) (*1 Par LINK NOT *-1 CLB?) (NEGATE 1 CLB?) (NEGATE -1 CLB?) ;
+SELECT ("lisää") + Adv (*-1C VFIN LINK NOT *1 CLB?) (*-1 Par LINK NOT *1 CLB?) (NEGATE -1 CLB?) ;
+SELECT ("lisää") + Adv (*1C VFIN LINK NOT *-1 CLB?) (*1 Par LINK NOT *-1 CLB?) (NEGATE 1 CLB?) ;
+SELECT ("lisää") + Adv (*-1C VFIN LINK NOT *1 CLB?) (*1 Par LINK NOT *-1 CLB?) (NEGATE 1 CLB?) (NEGATE -1 CLB?) ;
+SELECT ("lähemmäksi") + Adv (NEGATE 1 Tra) ;
+SELECT ("lähempänä") + Adv (NEGATE 1 Ess) ;
+SELECT ("lähimmäksi") + Adv (NEGATE 1 Tra) ;
 SELECT ("mielellään") + Adv ;
-SELECT ("mielestä") + Adv (0 POSS_SUFF) (NOT -1 Gen) ;
+SELECT ("mielestä") + Adv (0 POSS_SUFF) (NEGATE -1 Gen) ;
 SELECT ("mieliksi") + Adv ;
 SELECT ("miten") + Adv (1 TAHANSA_VAIN) ;
 SELECT ("muutoin") + Adv ;
@@ -1517,12 +1536,12 @@ SELECT ("naimisiin") + Adv ;
 SELECT ("naimisissa") + Adv ;
 SELECT ("niin") + Adv (1 N) (*2 KUIN LINK NOT *-1 CLB?) ;
 SELECT ("niin") + Adv (-1 ComMA) ;
-SELECT ("niin") + Adv (1 TAllAIneN) (NOT 1 Qu) ;
+SELECT ("niin") + Adv (1 TAllAIneN) (NEGATE 1 Qu) ;
 REMOVE ("niin") + Adv (0 CC)(*1 ("kuin") + CC BARRIER CS);
 REMOVE ("nimittäin" Adv DN-ITTAIN) ;   # XX
-SELECT ("nykyisin") + Adv (NOT 1 Ins) ;
+SELECT ("nykyisin") + Adv (NEGATE 1 Ins) ;
 REMOVE ("nähden") + Adv ;
-REMOVE ("nähdäkseen") + Adv (NOT -1 Gen) (NOT -1 OLLA) (NOT -2 OLLA) ;
+REMOVE ("nähdäkseen") + Adv (NEGATE -1 Gen) (NEGATE -1 OLLA) (NEGATE -2 OLLA) ;
 SELECT ("nähdäkseen") + Adv (-1 OLLA) ;
 SELECT ("nähdäkseen") + Adv (-1 Gen) ;
 SELECT ("näin") + Adv (-2 NIIN) (-1 TAI) ;
@@ -1530,31 +1549,31 @@ SELECT ("näin") + Adv (1 ESIM) ;
 SELECT ("näköjään") + Adv ;
 SELECT ("oikeastaan") + Adv ;
 SELECT ("osaksi") + Adv (-1 C-Adv-ETC) ;
-SELECT ("paikoin") + Adv (NOT -1 Ins) ;
+SELECT ("paikoin") + Adv (NEGATE -1 Ins) ;
 SELECT ("parhaimmillaan") + Adv ;
 SELECT ("pelkästään") + Adv ;
 SELECT ("periksi") + Adv ;
 SELECT ("perille") + Adv ;
 SELECT ("perillä") + Adv ;
-SELECT ("pitkään") + Adv (NOT 1 Ill) ;
+SELECT ("pitkään") + Adv (NEGATE 1 Ill) ;
 SELECT ("pystyssä") + Adv ;
 SELECT ("pystyyn") + Adv ;
 SELECT ("rinnan") + Adv (*1 KANSSA) ;
 SELECT ("selin") + Adv ;
-SELECT ("siksi") + Adv (-1 BOS) (NOT 1 Tra) ;
+SELECT ("siksi") + Adv (-1 BOS) (NEGATE 1 Tra) ;
 SELECT ("silloin") + Adv ;
 SELECT ("suinkin") + Adv ;
 SELECT ("suinkaan") + Adv ;
-SELECT ("suoraan") + Adv (NOT 1 Ill) ;
+SELECT ("suoraan") + Adv (NEGATE 1 Ill) ;
 SELECT ("suorastaan") + Adv ;
 SELECT ("suotta") + Adv ;
 SELECT ("suunnilleen") + Adv ;
 SELECT ("suunnitteilla") + Adv ;
 SELECT ("syksyisin") + Adv ;
 SELECT ("syntyisin") + Adv ;
-SELECT ("syvällä") + Adv (NOT 1 Ade) ;
+SELECT ("syvällä") + Adv (NEGATE 1 Ade) ;
 SELECT ("takaisin") + Adv ;
-SELECT ("tarpeen") + Adv (*-1 OLLA LINK NOT *1 CLB?) (NOT -1 Gen) (1 CLB?) ; # XX
+SELECT ("tarpeen") + Adv (*-1 OLLA LINK NOT *1 CLB?) (NEGATE -1 Gen) (1 CLB?) ; # XX
 SELECT ("tietenkin") + Adv ;
 SELECT ("tietenkään") + Adv ;
 SELECT ("<todellakaan>") + Adv ;
@@ -1562,73 +1581,73 @@ SELECT ("toisin") + Adv (1 VFIN) ; # TOISIN ON SIllOIN ...
 SELECT ("toisin") + Adv (1 Conj) ;
 SELECT ("toisin") + Adv (-1 AIVAN-IHAN) ;
 SELECT ("toisinaan") + Adv ;
-SELECT ("toistamiseen") + Adv (NOT -1 Gen) ;
+SELECT ("toistamiseen") + Adv (NEGATE -1 Gen) ;
 SELECT ("tosiaan") + Adv ;
 SELECT ("tuskin") + Adv ;
 REMOVE ("työkseen") + Adv ;
 SELECT ("usein") + Adv ;
 SELECT ("uudelleen") + Adv ;
 SELECT ("vaan") + Adv (1 CLB?) ;
-SELECT ("vallan") + Adv (-1 JOKIN) (1 Par) (NOT *1 VAllAN-WDS) (NOT *-1 VAllAN-WDS) ;
-SELECT ("vallan") + Adv (1 JOKIN) (2 Par)  (NOT *1 VAllAN-WDS) (NOT *-1 VAllAN-WDS) ;
+SELECT ("vallan") + Adv (-1 JOKIN) (1 Par) (NEGATE *1 VAllAN-WDS) (NEGATE *-1 VAllAN-WDS) ;
+SELECT ("vallan") + Adv (1 JOKIN) (2 Par)  (NEGATE *1 VAllAN-WDS) (NEGATE *-1 VAllAN-WDS) ;
 REMOVE ("vallan") + Adv ;
 SELECT ("vanhastaan") + Adv ;
 SELECT ("vasta") + Adv ;
 SELECT ("vihdoin") + Adv ;
 SELECT ("viimeistään") + Adv ;
-SELECT ("vireillä") + Adv (NOT 1 Ade) ;
-SELECT ("vähemmän") + Adv (NOT 1 A-A_N-PCP) ;
+SELECT ("vireillä") + Adv (NEGATE 1 Ade) ;
+SELECT ("vähemmän") + Adv (NEGATE 1 A-A_N-PCP) ;
 SELECT ("vähintään") + Adv ;
-SELECT ("vähän") + Adv (NOT 1 A) (NOT 1 CMP-ENNEN) (NOT 2 JALKEEN) ; # 4.1.2001
-SELECT ("välillä") + Adv (NOT -1 Ade) (NOT -1 Gen) (NOT -2 Gen) (NOT -3 Gen) (NOT -4 Gen) ; # XX
-SELECT ("yhdessä") + Adv (NOT 1 Ine) ;
+SELECT ("vähän") + Adv (NEGATE 1 A) (NEGATE 1 CMP-ENNEN) (NEGATE 2 JALKEEN) ; # 4.1.2001
+SELECT ("välillä") + Adv (NEGATE -1 Ade) (NEGATE -1 Gen) (NEGATE -2 Gen) (NEGATE -3 Gen) (NEGATE -4 Gen) ; # XX
+SELECT ("yhdessä") + Adv (NEGATE 1 Ine) ;
 SELECT ("yhteensä") + Adv ;
-SELECT ("yhtään") + Adv (NOT *1 Par) ;
-IFF ("yksiin") + Adv (NOT 1 Ill) (NOT 1 Pl) ;
+SELECT ("yhtään") + Adv (NEGATE *1 Par) ;
+IFF ("yksiin") + Adv (NEGATE 1 Ill) (NEGATE 1 Pl) ;
 SELECT ("yksinään") + Adv ;
 REMOVE ("yksissä") + Adv ;
 SELECT ("yksistään") + Adv ;
 SELECT ("öisin") + Adv ;
-SELECT ("jälkeen") + Adv + POSS_SUFF (NOT -1 Gen) ; # TANKEROUS, CF. JäTTI JäLKEENSä
+SELECT ("jälkeen") + Adv + POSS_SUFF (NEGATE -1 Gen) ; # TANKEROUS, CF. JäTTI JäLKEENSä
 SELECT ("osaksi") + Adv + POSS_SUFF (-1 SAADA) ;
-SELECT Adv (-1C Adv OR Pcle) (NOT 0 Adp) (NOT 1 A) ; # NIINAdv HYVIN(Adv_AD-A) ;
+SELECT Adv (-1C Adv OR Pcle) (NEGATE 0 Adp) (NEGATE 1 A) ; # NIINAdv HYVIN(Adv_AD-A) ;
 SELECT Adv (0 AIVAN-IHAN) (1 PrsPrc) (*-1C VFIN LINK 0 OLLA) ;
 SELECT Adv (0 AIVAN-IHAN) (1C VFIN-C) ;
 SELECT Adv (0 AIVAN-IHAN) (1C CLB?-C) ;
 SELECT Adv (0 AIVAN-IHAN) (1C InfA_3) (-1C VFIN) ;
 SELECT Adv (0 AIVAN-IHAN) (1C InfA_3) (-2C VFIN) ;
-#(@w SELECT Adv (0 ENEM-VAHEM) (NOT 1C Gen) (NOT 1 A) ;
-SELECT Adv (0 NIIN-NOIN-NAIN) (1C Adv) (NOT 1 HYVIN) (NOT *-1 MINÄ) (NOT *-1 Sg1) (*-1C VFIN LINK NOT *1C CLB?) (NOT -1 CLB?) ;
-SELECT Adv (0 NIIN-NOIN-NAIN) (1C Adv) (NOT 1 HYVIN) (NOT *-1 MINÄ) (NOT *-1 Sg1) (*1C VFIN LINK NOT *-1C CLB?) (NOT 1 CLB?) ;
-SELECT ("lujaa") + Adv (NOT 1 Par) ;
-SELECT ("myöhään") + Adv (NOT 1 Ill) ;
-SELECT ("samalla") + Adv (NOT 1 Ade) ;
-SELECT ("pitkällä") + Adv (NOT 1 Ade) ;
-IFF ("tavallaan") + Adv (NOT -1 Pron) (NOT -1 Ade) ;
-SELECT ("turhaan") + Adv (NOT 1 Ill) ;
-SELECT ("varmaan") + Adv (NOT 1 Ill) ;
-SELECT ("vinossa") + Adv (NOT 1 Ine) ;
-IFF ("yhteen") + Adv (NOT 1 Ill) (NOT 2 Ill) ;
-IFF ("kohdalta") + Adv + POSS_SUFF (NOT -1 Abl) ;
-IFF ("osalta") + Adv + POSS_SUFF (NOT -1 Abl) ;
-REMOVE Adv (0 AIVAN-IHAN) (NOT 1 V) (NOT 1 Conj) (NOT 1 Adv) ;
+#(@w SELECT Adv (0 ENEM-VAHEM) (NEGATE 1C Gen) (NEGATE 1 A) ;
+SELECT Adv (0 NIIN-NOIN-NAIN) (1C Adv) (NEGATE 1 HYVIN) (NEGATE *-1 MINÄ) (NEGATE *-1 Sg1) (*-1C VFIN LINK NOT *1C CLB?) (NEGATE -1 CLB?) ;
+SELECT Adv (0 NIIN-NOIN-NAIN) (1C Adv) (NEGATE 1 HYVIN) (NEGATE *-1 MINÄ) (NEGATE *-1 Sg1) (*1C VFIN LINK NOT *-1C CLB?) (NEGATE 1 CLB?) ;
+SELECT ("lujaa") + Adv (NEGATE 1 Par) ;
+SELECT ("myöhään") + Adv (NEGATE 1 Ill) ;
+SELECT ("samalla") + Adv (NEGATE 1 Ade) ;
+SELECT ("pitkällä") + Adv (NEGATE 1 Ade) ;
+IFF ("tavallaan") + Adv (NEGATE -1 Pron) (NEGATE -1 Ade) ;
+SELECT ("turhaan") + Adv (NEGATE 1 Ill) ;
+SELECT ("varmaan") + Adv (NEGATE 1 Ill) ;
+SELECT ("vinossa") + Adv (NEGATE 1 Ine) ;
+IFF ("yhteen") + Adv (NEGATE 1 Ill) (NEGATE 2 Ill) ;
+IFF ("kohdalta") + Adv + POSS_SUFF (NEGATE -1 Abl) ;
+IFF ("osalta") + Adv + POSS_SUFF (NEGATE -1 Abl) ;
+REMOVE Adv (0 AIVAN-IHAN) (NEGATE 1 V) (NEGATE 1 Conj) (NEGATE 1 Adv) ;
 
 
 SELECT Adv (0 ADSET) (1 AD+PrfPrc) (1 PrfPrc) ; # HYVIN VAIVAUTUNUT
 SELECT Adv (0 ADSET) (1 AD+PrsPrc) (1 PrsPrc) ; # KOVIN ALISTETTU
 SELECT Adv (0 NIIN-NOIN-NAIN) (1 HYVIN) ;
 SELECT Adv (0 NIIN-NOIN-NAIN) (1C Adv) ; # was (1 MAN) ;
-SELECT Adv (0 NIIN-NOIN-NAIN) (NOT -1 ComMA) (1 A) (NOT *2 KUIN) ;
+SELECT Adv (0 NIIN-NOIN-NAIN) (NEGATE -1 ComMA) (1 A) (NEGATE *2 KUIN) ;
 # NIIN VIISAS
 SELECT Adv (0 NIIN-NOIN-NAIN) (1 Conj) (2 NIIN-NOIN-NAIN) (3 PALJON-MONI) ;
 
 # last condition added 19.01.2015 -FMT+KM
-REMOVE Adv + Dem IF (0 NIIN-NOIN-NAIN) (NOT 1 A) (NOT 1 Adv) (NOT 1 Qu) (NOT 1 Num-PUOLET-KOLMANNES) (NOT 1C VFIN) ;
+REMOVE Adv + Dem IF (0 NIIN-NOIN-NAIN) (NEGATE 1 A) (NEGATE 1 Adv) (NEGATE 1 Qu) (NEGATE 1 Num-PUOLET-KOLMANNES) (NEGATE 1C VFIN) ;
     # Näin äänestät.
     # Miksi hän tekee niin?
 
 # commented out Mon Jan 19 15:18:37 CET 2015 (FMT + estonians) ;
-#REMOVE Adv (NOT 1 A_AD-A_Q) (NOT 1 Num-PUOLET-KOLMANNES) (NOT 1 Adv) (NOT 1 PCP) (NOT 0 AIVAN-IHAN) (NOT 1 CMP-ENNEN) (NOT 2 JALKEEN) ; # 4.1.2001 last2added
+#REMOVE Adv (NEGATE 1 A_AD-A_Q) (NEGATE 1 Num-PUOLET-KOLMANNES) (NEGATE 1 Adv) (NEGATE 1 PCP) (NEGATE 0 AIVAN-IHAN) (NEGATE 1 CMP-ENNEN) (NEGATE 2 JALKEEN) ; # 4.1.2001 last2added
 
 
 # Case
@@ -1656,7 +1675,7 @@ SELECT Pron + Dem IF (0 Adv) (NEGATE 1 WORD LINK 2 Gen) ;
 SELECT ("tuo") + Pron + Dem IF (0 $$ALLCASES) (1 $$ALLCASES) ; 
 
 
-REMOVE ("sama") + Pron + Pl + Ins IF (0 $$ALLCASES) (NOT 1 $$ALLCASES) (0 Adv) (NOT 1 Conj);
+REMOVE ("sama") + Pron + Pl + Ins IF (0 $$ALLCASES) (NEGATE 1 $$ALLCASES) (0 Adv) (NEGATE 1 Conj);
 
     # Hän oli siellä yksin.
     # Select adv, instead of num
@@ -1665,11 +1684,11 @@ REMOVE ("sama") + Pron + Pl + Ins IF (0 $$ALLCASES) (NOT 1 $$ALLCASES) (0 Adv) (
 # Numbers
 # -------
 
-REMOVE ("toinen") + Ord + Pl (NOT 1 Pl) ;
+REMOVE ("toinen") + Ord + Pl (NEGATE 1 Pl) ;
 SELECT ("toinen") + Num + Ord (1 N) ;
 # TOISIllE, TOISIAAN ETC.
 
-REMOVE ("yksi") + Num + Card + Pl + Ins IF (0 $$ALLCASES) (NOT 1 $$ALLCASES) (0 Adv) (NOT 1 Conj);
+REMOVE ("yksi") + Num + Card + Pl + Ins IF (0 $$ALLCASES) (NEGATE 1 $$ALLCASES) (0 Adv) (NEGATE 1 Conj);
     # Hän oli siellä yksin.
     # Select adv, instead of num
 
@@ -1700,7 +1719,7 @@ REMOVE ("kota") + N ;
 SELECT ("kuljetus") + N ;
 REMOVE ("kuolema") + N + Pl (0 Nom_Par) ;
 REMOVE ("kuu") + N + POSS_SUFF ; # KUU+SI
-REMOVE ("kuu") + NPlIns (-1 A) (NOT -1 Ins) ;
+REMOVE ("kuu") + NPlIns (-1 A) (NEGATE -1 Ins) ;
 REMOVE ("kuuliainen") + N ;
 REMOVE ("kärsä") + N ;
 REMOVE ("ikä") + N + Pl ;
@@ -1719,36 +1738,36 @@ REMOVE ("olka") + NSgPar ;
 SELECT ("osa") + NSgTra (-1 Tra) ;
 SELECT ("osa") + NSgTra (*-1 SIIRTYA-TULLA-JOUTUA) ;
 REMOVE ("pelätti") + N + Sg + Ill ;  # XX
-SELECT ("perinne") + N (NOT 1 Par) (NOT 1 N) ; # PERINTEISTä N+Par
+SELECT ("perinne") + N (NEGATE 1 Par) (NEGATE 1 N) ; # PERINTEISTä N+Par
 SELECT ("piste") + N ;
 SELECT ("lausunto") + N + Pl ;
 REMOVE ("pitäjä") + N ;  # RISKY
 SELECT ("puoli") + N (0 PUOLA) ;
 SELECT ("puu") + NPlGen ;
-SELECT ("saksa") + N (NOT 0 CAP_NOCAP) ;
+SELECT ("saksa") + N (NEGATE 0 CAP_NOCAP) ;
 REMOVE ("sanoja") + N ;
-SELECT ("sanoma") + N (NOT 0 Par) ; # EI OLE SANomISTA
+SELECT ("sanoma") + N (NEGATE 0 Par) ; # EI OLE SANomISTA
 REMOVE ("senkki") + NSgGen ;
 SELECT ("siemen") + N ;
 SELECT ("sija") + NSgIll (-1 Gen) ;
 SELECT ("syy") + NPlEla ;
 SELECT ("taimi") + N ;
 SELECT ("tarve") + NSgGen (-1 Gen) ;   # MUTTEREIDEN TARVE, XX
-REMOVE ("tarve") + N + Tra (NOT -1 Tra) ;
-SELECT ("tehtävä") + N (NOT 0 Nom) ;
+REMOVE ("tarve") + N + Tra (NEGATE -1 Tra) ;
+SELECT ("tehtävä") + N (NEGATE 0 Nom) ;
 SELECT ("tehtävä") + NNom (1C VFIN) ;
 REMOVE ("tee") + N + Pl ;        # TEIDEN
 SELECT ("tilanne") + N ;
 # A BIT RISKY
 SELECT ("toimi") + NPlPar (-1 Gen) ; # TUTKIJAN TOIMIA
-SELECT ("toiminta" N Sg Gen POSS_SUFF ) (*-1 VFIN LINK NOT *1 CLB?) (NOT -1 CLB?) ;
+SELECT ("toiminta" N Sg Gen POSS_SUFF ) (*-1 VFIN LINK NOT *1 CLB?) (NEGATE -1 CLB?) ;
 SELECT ("tukki") + N + Pl ;
 REMOVE ("turpa") + N ;
 REMOVE ("tutkinta") + N + Pl ;
 REMOVE ("tyyli") + N ;
 REMOVE ("täky") + N ;
 SELECT ("valinta") + N ;
-SELECT ("vanhempi") + N (NOT 1 N) (NOT 2 N) ;
+SELECT ("vanhempi") + N (NEGATE 1 N) (NEGATE 2 N) ;
 REMOVE ("varoja") + N ;
 REMOVE ("vasta") + N ;
 SELECT ("vieras") + N (1C VFIN) ;
@@ -1768,42 +1787,42 @@ SELECT ("vuosi") + NSgNom ;  # NB. VUODE - VUOTEEN NOW WRONG
 REMOVE ("hiukka") + NSgGen ;
 SELECT Pl + Gen (-1C Gen) (-1C Pl) ;
 # PITKIEN JUURIEN
-SELECT NSgPar + POSS_SUFF (0 Ill) (*-1 NEGV LINK NOT *1 CLB?) (NOT -1 Ill) (NOT -1 CLB?) (*-1 CLB? LINK NOT *1 Ill-VERB) ;
+SELECT NSgPar + POSS_SUFF (0 Ill) (*-1 NEGV LINK NOT *1 CLB?) (NEGATE -1 Ill) (NEGATE -1 CLB?) (*-1 CLB? LINK NOT *1 Ill-VERB) ;
 # EI MENETTäNYT ASEMAANSA
-SELECT NSgPar + POSS_SUFF (0 Ill) (-1C Par) (NOT -1 N) (*-1 CLB? LINK NOT *1 Ill-VERB) ;
-SELECT NSgPar + POSS_SUFF (0 Ill) (*-1 Par-OBJ LINK NOT 0 KOOTA LINK NOT *1 CLB?) (NOT -1 Ill) (NOT 0 KESKUSTA) (*-1 CLB? LINK NOT *1 Ill-VERB) ;
-SELECT NSgPar + POSS_SUFF (0 Ill) (1C Comp) (NOT -1 Ill) (NOT -2 Ill) ;
+SELECT NSgPar + POSS_SUFF (0 Ill) (-1C Par) (NEGATE -1 N) (*-1 CLB? LINK NOT *1 Ill-VERB) ;
+SELECT NSgPar + POSS_SUFF (0 Ill) (*-1 Par-OBJ LINK NOT 0 KOOTA LINK NOT *1 CLB?) (NEGATE -1 Ill) (NEGATE 0 KESKUSTA) (*-1 CLB? LINK NOT *1 Ill-VERB) ;
+SELECT NSgPar + POSS_SUFF (0 Ill) (1C Comp) (NEGATE -1 Ill) (NEGATE -2 Ill) ;
 REMOVE NSgPar + POSS_SUFF (0 Ill) (1C Ill) (-1 A_Q_Pron) ;
 SELECT Par (-1C Num) (-1 Nom) ; # KUUSI LASTA
-SELECT NSgNom (-1C Nom) (-1 A_Q_Pron) (-1 Sg) (NOT 0 POSS_SUFF) (NOT 0 TULI) (NOT 1 Nom) (NOT -1 Pers) (NOT 0 JUURI) (NOT 0 ("kasvattaa")) (NOT 0 ("laskea")) ;
+SELECT NSgNom (-1C Nom) (-1 A_Q_Pron) (-1 Sg) (NEGATE 0 POSS_SUFF) (NEGATE 0 TULI) (NEGATE 1 Nom) (NEGATE -1 Pers) (NEGATE 0 JUURI) (NEGATE 0 ("kasvattaa")) (NEGATE 0 ("laskea")) ;
 
 # replaced POSS_SUFF with POSS_SUFF - 20.01.2015 -FMT+KM
-SELECT NSgGen IF (-1C Gen) (-1 A_Q_Pron) (-1 Sg) (NOT 0 POSS_SUFF) (NOT 1 Gen) (NOT 0 SUHTEEN) ;
+SELECT NSgGen IF (-1C Gen) (-1 A_Q_Pron) (-1 Sg) (NEGATE 0 POSS_SUFF) (NEGATE 1 Gen) (NEGATE 0 SUHTEEN) ;
   # 
 
-SELECT NSgPar (-1C Par) (-1 A_Q_Pron) (-1 Sg) (NOT 1 Par) (NOT 0 KAUTTA) (*-1 CLB? LINK *1C VFIN) ;
-SELECT NSgIne (-1C Ine) (-1 A_Q_Pron) (-1 Sg) (NOT 1 Ine) ;
-SELECT NSgEla (-1C Ela) (-1 A_Q_Pron) (-1 Sg) (NOT 1 Ela) (NOT 0 MIELI) ;
-SELECT NSgIll (-1C Ill) (-1 A_Q_Pron) (-1 Sg) (NOT 1 Ill) ;
-SELECT NSgAde (-1C Ade) (-1 A_Q_Pron) (-1 Sg) (NOT 1 Ade) (NOT 0 LAIllA) ;
-SELECT NSgAbl (-1C Abl) (-1 A_Q_Pron) (-1 Sg) (NOT 1 Abl) ;
-SELECT NSgAll (-1C All) (-1 A_Q_Pron) (-1 Sg) (NOT 1 All) ;
-SELECT NSgEss (-1C Ess) (-1 A_Q_Pron) (-1 Sg) (NOT 1 Ess) ;
-SELECT NSgTra (-1C Tra) (-1 A_Q_Pron) (-1 Sg) (NOT 1 Tra) ;
-SELECT NPlNom (-1C Nom) (-1 A_Q_Pron) (-1 Pl) (NOT 0 POSS_SUFF) (NOT 1 Nom) ;
-SELECT NPlGen (-1C Gen) (-1 A_Q_Pron) (-1 Pl) (NOT 1 Gen) ;
-SELECT NPlPar (-1C Par) (-1 A_Q_Pron) (-1 Pl) (NOT 1 Par) ;
-SELECT NPlIne (-1C Ine) (-1 A_Q_Pron) (-1 Pl) (NOT 1 Ine) ;
-SELECT NPlEla (-1C Ela) (-1 A_Q_Pron) (-1 Pl) (NOT 1 Ela) ;
-SELECT NPlIll (-1C Ill) (-1 A_Q_Pron) (-1 Pl) (NOT 1 Ill) ;
-SELECT NPlAde (-1C Ade) (-1 A_Q_Pron) (-1 Pl) (NOT 1 Ade) ;
-SELECT NPlAbl (-1C Abl) (-1 A_Q_Pron) (-1 Pl) (NOT 1 Abl) ;
-SELECT NPlAll (-1C All) (-1 A_Q_Pron) (-1 Pl) (NOT 1 All) ;
-SELECT NPlEss (-1C Ess) (-1 A_Q_Pron) (-1 Pl) (NOT 1 Ess) ;
-SELECT NPlTra (-1C Tra) (-1 A_Q_Pron) (-1 Pl) (NOT 1 Tra) ;
-SELECT NPlIns (-1C Ins) (-1 A_Q_Pron) (-1 Pl) (NOT 1 Ins) ;
+SELECT NSgPar (-1C Par) (-1 A_Q_Pron) (-1 Sg) (NEGATE 1 Par) (NEGATE 0 KAUTTA) (*-1 CLB? LINK *1C VFIN) ;
+SELECT NSgIne (-1C Ine) (-1 A_Q_Pron) (-1 Sg) (NEGATE 1 Ine) ;
+SELECT NSgEla (-1C Ela) (-1 A_Q_Pron) (-1 Sg) (NEGATE 1 Ela) (NEGATE 0 MIELI) ;
+SELECT NSgIll (-1C Ill) (-1 A_Q_Pron) (-1 Sg) (NEGATE 1 Ill) ;
+SELECT NSgAde (-1C Ade) (-1 A_Q_Pron) (-1 Sg) (NEGATE 1 Ade) (NEGATE 0 LAIllA) ;
+SELECT NSgAbl (-1C Abl) (-1 A_Q_Pron) (-1 Sg) (NEGATE 1 Abl) ;
+SELECT NSgAll (-1C All) (-1 A_Q_Pron) (-1 Sg) (NEGATE 1 All) ;
+SELECT NSgEss (-1C Ess) (-1 A_Q_Pron) (-1 Sg) (NEGATE 1 Ess) ;
+SELECT NSgTra (-1C Tra) (-1 A_Q_Pron) (-1 Sg) (NEGATE 1 Tra) ;
+SELECT NPlNom (-1C Nom) (-1 A_Q_Pron) (-1 Pl) (NEGATE 0 POSS_SUFF) (NEGATE 1 Nom) ;
+SELECT NPlGen (-1C Gen) (-1 A_Q_Pron) (-1 Pl) (NEGATE 1 Gen) ;
+SELECT NPlPar (-1C Par) (-1 A_Q_Pron) (-1 Pl) (NEGATE 1 Par) ;
+SELECT NPlIne (-1C Ine) (-1 A_Q_Pron) (-1 Pl) (NEGATE 1 Ine) ;
+SELECT NPlEla (-1C Ela) (-1 A_Q_Pron) (-1 Pl) (NEGATE 1 Ela) ;
+SELECT NPlIll (-1C Ill) (-1 A_Q_Pron) (-1 Pl) (NEGATE 1 Ill) ;
+SELECT NPlAde (-1C Ade) (-1 A_Q_Pron) (-1 Pl) (NEGATE 1 Ade) ;
+SELECT NPlAbl (-1C Abl) (-1 A_Q_Pron) (-1 Pl) (NEGATE 1 Abl) ;
+SELECT NPlAll (-1C All) (-1 A_Q_Pron) (-1 Pl) (NEGATE 1 All) ;
+SELECT NPlEss (-1C Ess) (-1 A_Q_Pron) (-1 Pl) (NEGATE 1 Ess) ;
+SELECT NPlTra (-1C Tra) (-1 A_Q_Pron) (-1 Pl) (NEGATE 1 Tra) ;
+SELECT NPlIns (-1C Ins) (-1 A_Q_Pron) (-1 Pl) (NEGATE 1 Ins) ;
 # MONIN PAIKOIN
-REMOVE NPlIns (0 Gen) (0 Sg) (NOT 0 AVOSYLIN) ; # RUUMIIN
+REMOVE NPlIns (0 Gen) (0 Sg) (NEGATE 0 AVOSYLIN) ; # RUUMIIN
 #(@w SELECT NPlPar (-1C Par) (-1C Pl) ;
 #   # PITKIä JUURIA
 
@@ -1814,7 +1833,7 @@ SELECT ("kuusi") + Num + NomSg (1C Par) ;
 SELECT ("kuusi") + Num + NomSg (2C Par) ;
 SELECT Num + Gen (1 Gen-WORD) (0 Nom) (0 SEITSEMAN) ; # (1 Gen) deleted 7.12.2000
 # SEITSEMÄN MARKAN HINTA
-REMOVE Num + Gen (0 SEITSEMAN) (NOT 1 N) ; #deleted 7.12.2000,poor (0 Nom) (NOT 1 Gen) ; # XXXX
+REMOVE Num + Gen (0 SEITSEMAN) (NEGATE 1 N) ; #deleted 7.12.2000,poor (0 Nom) (NEGATE 1 Gen) ; # XXXX
 SELECT (Num Nom) (1C Par) ; # SEITSEMÄN MIESTÄ TULI
 SELECT ("pari") + Num + Ess (1 Ess) ;
 SELECT ("pari") + Num + Ine (1 Ine) ;
@@ -1825,20 +1844,20 @@ SELECT ("pari") + Num + Abl (1 Abl) ;
 SELECT ("pari") + Num + All (1 All) ;
 SELECT ("pari") + Num + Tra (1 Tra) ;
 SELECT ("sata") + Num + Pl ;
-SELECT Num + NomSg (*-1 Par LINK NOT *1 CLB?) (NOT -1 CLB?) ;
+SELECT Num + NomSg (*-1 Par LINK NOT *1 CLB?) (NEGATE -1 CLB?) ;
 
 # Abbreviations
 # --------––---
 
 IFF ("mm") + Abbr + Nom (-1 Num) ;
-REMOVE ("me") + Abbr + Nom (*1 Pl1 LINK NOT *-1 CLB?) (NOT 1 CLB?) ;
-REMOVE ("me") + Abbr + Nom (*-1 Pl1 LINK NOT *1 CLB?) (NOT -1 CLB?) ;
+REMOVE ("me") + Abbr + Nom (*1 Pl1 LINK NOT *-1 CLB?) (NEGATE 1 CLB?) ;
+REMOVE ("me") + Abbr + Nom (*-1 Pl1 LINK NOT *1 CLB?) (NEGATE -1 CLB?) ;
 
 # Pronouns
 # --------
 
 # added 20.01.2015 - FMT+KM
-REMOVE MOLEMPI IF (NOT 1 PAREMPI) ;
+REMOVE MOLEMPI IF (NEGATE 1 PAREMPI) ;
    # He molemmat ovat iloisia ja menevät ...
 
 REMOVE ("sää") + Pron IF (1C VFIN + Sg3) ;
@@ -1851,25 +1870,25 @@ SELECT ME IF (*1 Pl1 BARRIER V) ;
 SELECT TE IF (*1 Pl2 BARRIER V) ;
 SELECT HE IF (*1 Pl3 BARRIER V) ;
 
-#SELECT Pron + MINÄ (*1 Sg1 LINK NOT *-1 CLB?) (NOT 1 CLB?) ;
-#SELECT Pron + SINÄ (*1 Sg2 LINK NOT *-1 CLB?) (NOT 1 CLB?) ;
-#SELECT Pron + MINÄ (*-1 Sg1 LINK NOT *1 CLB?) (NOT -1 CLB?) ;
-#SELECT Pron + SINÄ (*-1 Sg2 LINK NOT *1 CLB?) (NOT -1 CLB?) ;
+#SELECT Pron + MINÄ (*1 Sg1 LINK NOT *-1 CLB?) (NEGATE 1 CLB?) ;
+#SELECT Pron + SINÄ (*1 Sg2 LINK NOT *-1 CLB?) (NEGATE 1 CLB?) ;
+#SELECT Pron + MINÄ (*-1 Sg1 LINK NOT *1 CLB?) (NEGATE -1 CLB?) ;
+#SELECT Pron + SINÄ (*-1 Sg2 LINK NOT *1 CLB?) (NEGATE -1 CLB?) ;
 
 # added 20.01.2015 - FMT+KM
 SELECT SINÄ IF (-1C Sg2 + KO) ;
   # Näitkö sinä hänet ?
 
-#SELECT PLPRON + ("te") (NOT -1 Gen) ; # RISKY, CF. SUOMEN TEIllä
-SELECT ("hän") + Pron + Sg + Par (*-1 NEGV LINK NOT *1 CLB?) (NOT -1 CLB?) ;
-SELECT ("hän") + Pron + Sg + Par (*1 NEGV LINK NOT *-1 CLB?) (NOT 1 CLB?) ;
+#SELECT PLPRON + ("te") (NEGATE -1 Gen) ; # RISKY, CF. SUOMEN TEIllä
+SELECT ("hän") + Pron + Sg + Par (*-1 NEGV LINK NOT *1 CLB?) (NEGATE -1 CLB?) ;
+SELECT ("hän") + Pron + Sg + Par (*1 NEGV LINK NOT *-1 CLB?) (NEGATE 1 CLB?) ;
 SELECT Pron + Interr (-1 BOS) (*1 ?!) ;
 SELECT Pron + Interr (-1 Punct) (*1 ?!) ;
 SELECT Pron + Interr (-2 BOS) (*1 ?!) ;
 SELECT Pron + Interr (-1 KYSY) ;
 SELECT Pron + Interr (-2 KYSY) ;
-SELECT Pron + Interr (*1C TIETAA LINK NOT *-1 CLB?) (NOT 1 CLB?) ;
-SELECT Pron + Interr (*1 ?! LINK NOT *-1 CLB?) (NOT 1 CLB?) ;
+SELECT Pron + Interr (*1C TIETAA LINK NOT *-1 CLB?) (NEGATE 1 CLB?) ;
+SELECT Pron + Interr (*1 ?! LINK NOT *-1 CLB?) (NEGATE 1 CLB?) ;
 REMOVE Pron + Interr (0 MIKA-KUKA) ; # XXXX
 SELECT Pron + Qu (0 MIKA-KUKA) (1 TAHANSA_VAIN) ;
 SELECT Pron + Qu (0 MIKA-KUKA) (2 TAHANSA-2) ;
@@ -1885,45 +1904,45 @@ SELECT ("jokin") + Pron + Qu ; # JOLLA+KIN
 SELECT ("kukin") + Pron + Qu ;
 SELECT ("kumpikin") + Pron + Qu ;        # EI *KUMMATKIN (< KUMMA) ;
 SELECT ("jokin") + Pron + Qu + Pl ;
-SELECT Rel (0 MIKA-KUKA) (-1 ComMA_N_Pron_Q_V_SUP_BOS) (NOT *1 QMARK) (NOT 1 TAHANSA_VAIN) (NOT 2 TAHANSA_VAIN) (NOT -1 VAIKKA_KUIN_JOS) (NOT 0 Ess) (NOT 0 Tra) (NOT 1 CMP_SUP) ;
-SELECT Rel (0 MIKA-KUKA) (-2 N_Pron_Q_V_SUP) (-1 ComMA) (NOT *1 QMARK) (NOT 1 TAHANSA_VAIN) (NOT 2 TAHANSA_VAIN) (NOT -1 VAIKKA_KUIN_JOS) (NOT 0 Ess) ;
-SELECT ("joka") + Pron + Rel (-1 ComMA_N_Pron_Q) (NOT 1 TAHANSA_VAIN) ;
-SELECT ("joka") + Pron + Rel (-2 N_Pron_Q) (-1 ComMA) (NOT 1 TAHANSA_VAIN) ;
-SELECT Rel (0 Nom) (-1C Nom) (-1 N_Pron_Q) (NOT 1 TAHANSA_VAIN) (NOT 0 Ess) ;
+SELECT Rel (0 MIKA-KUKA) (-1 ComMA_N_Pron_Q_V_SUP_BOS) (NEGATE *1 QMARK) (NEGATE 1 TAHANSA_VAIN) (NEGATE 2 TAHANSA_VAIN) (NEGATE -1 VAIKKA_KUIN_JOS) (NEGATE 0 Ess) (NEGATE 0 Tra) (NEGATE 1 CMP_SUP) ;
+SELECT Rel (0 MIKA-KUKA) (-2 N_Pron_Q_V_SUP) (-1 ComMA) (NEGATE *1 QMARK) (NEGATE 1 TAHANSA_VAIN) (NEGATE 2 TAHANSA_VAIN) (NEGATE -1 VAIKKA_KUIN_JOS) (NEGATE 0 Ess) ;
+SELECT ("joka") + Pron + Rel (-1 ComMA_N_Pron_Q) (NEGATE 1 TAHANSA_VAIN) ;
+SELECT ("joka") + Pron + Rel (-2 N_Pron_Q) (-1 ComMA) (NEGATE 1 TAHANSA_VAIN) ;
+SELECT Rel (0 Nom) (-1C Nom) (-1 N_Pron_Q) (NEGATE 1 TAHANSA_VAIN) (NEGATE 0 Ess) ;
 # SE JOKA# MIES JOKA
-SELECT Rel (0 Nom) (NOT 0 Ess) (1C VFIN) (NOT 1 TAHANSA_VAIN) (NOT 2 TAHANSA_VAIN) (NOT 1 KERTA) ;
-SELECT Rel (0 Nom) (NOT 0 Ess) (NOT 1 Nom) (2C VFIN) (NOT 1 TAHANSA_VAIN) (NOT 2 TAHANSA_VAIN) (NOT 1 KERTA) ;
-SELECT Rel (0 Nom) (-1C VFIN) (1C VFIN) (NOT 1 TAHANSA_VAIN) (NOT 2 TAHANSA_VAIN) (NOT 0 Ess) (NOT 1 KERTA) ;
-SELECT Rel (*-1 JOKA LINK 0 Nom) (-1 Conj) (NOT 1 TAHANSA_VAIN) (NOT 2 TAHANSA_VAIN) (NOT 0 Ess) (NOT 1 KERTA) (NOT 1 HYVA) ;
+SELECT Rel (0 Nom) (NEGATE 0 Ess) (1C VFIN) (NEGATE 1 TAHANSA_VAIN) (NEGATE 2 TAHANSA_VAIN) (NEGATE 1 KERTA) ;
+SELECT Rel (0 Nom) (NEGATE 0 Ess) (NEGATE 1 Nom) (2C VFIN) (NEGATE 1 TAHANSA_VAIN) (NEGATE 2 TAHANSA_VAIN) (NEGATE 1 KERTA) ;
+SELECT Rel (0 Nom) (-1C VFIN) (1C VFIN) (NEGATE 1 TAHANSA_VAIN) (NEGATE 2 TAHANSA_VAIN) (NEGATE 0 Ess) (NEGATE 1 KERTA) ;
+SELECT Rel (*-1 JOKA LINK 0 Nom) (-1 Conj) (NEGATE 1 TAHANSA_VAIN) (NEGATE 2 TAHANSA_VAIN) (NEGATE 0 Ess) (NEGATE 1 KERTA) (NEGATE 1 HYVA) ;
 # JOKA ... JA JOKARel
 SELECT ("joka") + Pron + Rel + Pl ;   # JOISSA, JOIllA JNE.
 SELECT ("joka") + Pron + Rel + Sg + Ade ;   # JOLLA
 SELECT ("joka") + Pron + Rel + NomSg (1 Adv OR Pl) ;
-SELECT Pron + NomSg (NOT 0 ITSE) (1 Nom) (1 A_N) (1 Sg) (NOT 1 HARVA-SET) (NOT 1 NSgNom) ; # yksi kirja needs num still available
-SELECT Pron + GenSg (NOT 0 ITSE) (1 Gen) (1 A_N) (1 Sg) (NOT 1 HARVA-SET) (NOT 0 Num + Card) ;
-SELECT Pron + Sg + Par (NOT 0 ITSE) (1 Par) (1 A_N) (1 Sg) (NOT 0 Neg) (NOT 1 HARVA-SET) (NOT 0 Num + Card) ;
-SELECT Pron + Sg + Ine (1 Ine) (1 Sg) (NOT 1 HARVA-SET) (NOT 0 Num + Card) ;
-SELECT Pron + Sg + Ela (1 Ela) (1 Sg) (NOT 1 HARVA-SET) (NOT 0 Num + Card) ;
-SELECT Pron + Sg + Ill (1 Ill) (1 Sg) (NOT 1 HARVA-SET) (NOT 0 Num + Card) ;
-SELECT Pron + Sg + Ade (1 Ade) (1 Sg) (NOT 1 HARVA-SET) (NOT 0 Num + Card) ;
-SELECT Pron + Sg + Abl (1 Abl) (1 Sg) (NOT 1 HARVA-SET) (NOT 0 Num + Card) ;
-SELECT Pron + Sg + All (1 All) (1 Sg) (NOT 1 HARVA-SET) (NOT 0 Num + Card) ;
-SELECT Pron + Sg + Ess (1 Ess) (1 Sg) (NOT 1 HARVA-SET) (NOT 0 Num + Card) ;
-SELECT Pron + Sg + Tra (1 Tra) (1 Sg) (NOT 1 HARVA-SET) (NOT 0 Num + Card) ;
-SELECT Pron + Pl + Nom (1 Nom) (1 A_N) (1 Pl) (NOT 1 HARVA-SET) ;
-SELECT Pron + Pl + Gen (1 Gen) (1 A_N) (1 Pl) (NOT 1 HARVA-SET) ;
-SELECT Pron + Pl + Par (1 Par) (1 A_N) (1 Pl) (NOT 0 KAIKKIAAN) (NOT 0 PersPl123) (NOT 1 HARVA-SET) ;
-SELECT Pron + Pl + Ine (1 Ine) (1 Pl) (NOT 1 HARVA-SET) (NOT 0 Num + Card) ;
-SELECT Pron + Pl + Ela (1 Ela) (1 Pl) (NOT 1 HARVA-SET) (NOT 0 Num + Card) ;
-SELECT Pron + Pl + Ill (1 Ill) (1 Pl) (NOT 1 HARVA-SET) (NOT 0 Num + Card) ;
-SELECT Pron + Pl + Ade (1 Ade) (1 Pl) (NOT 1 HARVA-SET) (NOT 0 Num + Card) ;
-SELECT Pron + Pl + Abl (1 Abl) (1 Pl) (NOT 1 HARVA-SET) (NOT 0 Num + Card) ;
-SELECT Pron + Pl + All (1 All) (1 Pl) (NOT 1 HARVA-SET) (NOT 0 Num + Card) ;
-SELECT Pron + Pl + Ess (1 Ess) (1 Pl) (NOT 1 HARVA-SET) (NOT 0 Num + Card) ;
-SELECT Pron + Pl + Tra (1 Tra) (1 Pl) (NOT 1 HARVA-SET) (NOT 0 Num + Card) ;
+SELECT Pron + NomSg (NEGATE 0 ITSE) (1 Nom) (1 A_N) (1 Sg) (NEGATE 1 HARVA-SET) (NEGATE 1 NSgNom) ; # yksi kirja needs num still available
+SELECT Pron + GenSg (NEGATE 0 ITSE) (1 Gen) (1 A_N) (1 Sg) (NEGATE 1 HARVA-SET) (NEGATE 0 Num + Card) ;
+SELECT Pron + Sg + Par (NEGATE 0 ITSE) (1 Par) (1 A_N) (1 Sg) (NEGATE 0 Neg) (NEGATE 1 HARVA-SET) (NEGATE 0 Num + Card) ;
+SELECT Pron + Sg + Ine (1 Ine) (1 Sg) (NEGATE 1 HARVA-SET) (NEGATE 0 Num + Card) ;
+SELECT Pron + Sg + Ela (1 Ela) (1 Sg) (NEGATE 1 HARVA-SET) (NEGATE 0 Num + Card) ;
+SELECT Pron + Sg + Ill (1 Ill) (1 Sg) (NEGATE 1 HARVA-SET) (NEGATE 0 Num + Card) ;
+SELECT Pron + Sg + Ade (1 Ade) (1 Sg) (NEGATE 1 HARVA-SET) (NEGATE 0 Num + Card) ;
+SELECT Pron + Sg + Abl (1 Abl) (1 Sg) (NEGATE 1 HARVA-SET) (NEGATE 0 Num + Card) ;
+SELECT Pron + Sg + All (1 All) (1 Sg) (NEGATE 1 HARVA-SET) (NEGATE 0 Num + Card) ;
+SELECT Pron + Sg + Ess (1 Ess) (1 Sg) (NEGATE 1 HARVA-SET) (NEGATE 0 Num + Card) ;
+SELECT Pron + Sg + Tra (1 Tra) (1 Sg) (NEGATE 1 HARVA-SET) (NEGATE 0 Num + Card) ;
+SELECT Pron + Pl + Nom (1 Nom) (1 A_N) (1 Pl) (NEGATE 1 HARVA-SET) ;
+SELECT Pron + Pl + Gen (1 Gen) (1 A_N) (1 Pl) (NEGATE 1 HARVA-SET) ;
+SELECT Pron + Pl + Par (1 Par) (1 A_N) (1 Pl) (NEGATE 0 KAIKKIAAN) (NEGATE 0 PersPl123) (NEGATE 1 HARVA-SET) ;
+SELECT Pron + Pl + Ine (1 Ine) (1 Pl) (NEGATE 1 HARVA-SET) (NEGATE 0 Num + Card) ;
+SELECT Pron + Pl + Ela (1 Ela) (1 Pl) (NEGATE 1 HARVA-SET) (NEGATE 0 Num + Card) ;
+SELECT Pron + Pl + Ill (1 Ill) (1 Pl) (NEGATE 1 HARVA-SET) (NEGATE 0 Num + Card) ;
+SELECT Pron + Pl + Ade (1 Ade) (1 Pl) (NEGATE 1 HARVA-SET) (NEGATE 0 Num + Card) ;
+SELECT Pron + Pl + Abl (1 Abl) (1 Pl) (NEGATE 1 HARVA-SET) (NEGATE 0 Num + Card) ;
+SELECT Pron + Pl + All (1 All) (1 Pl) (NEGATE 1 HARVA-SET) (NEGATE 0 Num + Card) ;
+SELECT Pron + Pl + Ess (1 Ess) (1 Pl) (NEGATE 1 HARVA-SET) (NEGATE 0 Num + Card) ;
+SELECT Pron + Pl + Tra (1 Tra) (1 Pl) (NEGATE 1 HARVA-SET) (NEGATE 0 Num + Card) ;
 SELECT ("se") + Pron + Sg + Ela ;                 # SIITä
 
-SELECT Adv (0 YKSI) (1 Par) (NOT 0 Par) ;
+SELECT Adv (0 YKSI) (1 Par) (NEGATE 0 Par) ;
 SELECT Adv (0 YKSI) (1 Gen) (2 Par) ; 
 SELECT Num + Card (0 YKSI) (1 N) (NEGATE 0 WORD LINK 1 Gen LINK 2 Par) ;
 
@@ -1948,127 +1967,127 @@ REMOVE Rel IF (0 ("jotta")) (0 CS) (0 CLB?) (NEGATE -1 WORD) ;
 # in CG1 were 2 analysis (Prop and LG-language):
 #	("suomi" PROP N NOM SG up ) ;
 #	("suomi" N <Lg> NOM SG up )) ;
-#REMOVE (<LG>) (0 Prop) (NOT *-1 PUHUA) (NOT *1 KIELI) (NOT *1 PUHUA) (NOT *-1 KIELI) (NOT 0 CAP_NOCAP) (NOT 0 Tra) ;
-#REMOVE (<LG>) (0 Prop) (0 INT-LOC) (NOT *-1 KIELI) (NOT *1 KIELI) (NOT 0 Tra) (NOT 0 CAP_NOCAP) ;
-#REMOVE Prop (0 <LG>) (*1 KIELI) (NOT -1 BOS) ;
-#REMOVE Prop (0 <LG>) (*-1 KIELI) (NOT -1 BOS) ;
-#REMOVE Prop (0 <LG>) (*-1 PUHUA LINK NOT *1 CLB?) (0 Par) (NOT -1 BOS) ;
-#REMOVE Prop (0 <LG>) (-2C <LG>) (-1 Conj) (NOT -1 BOS) ; # SUOMEA JA RUOTSIA
+#REMOVE (<LG>) (0 Prop) (NEGATE *-1 PUHUA) (NEGATE *1 KIELI) (NEGATE *1 PUHUA) (NEGATE *-1 KIELI) (NEGATE 0 CAP_NOCAP) (NEGATE 0 Tra) ;
+#REMOVE (<LG>) (0 Prop) (0 INT-LOC) (NEGATE *-1 KIELI) (NEGATE *1 KIELI) (NEGATE 0 Tra) (NEGATE 0 CAP_NOCAP) ;
+#REMOVE Prop (0 <LG>) (*1 KIELI) (NEGATE -1 BOS) ;
+#REMOVE Prop (0 <LG>) (*-1 KIELI) (NEGATE -1 BOS) ;
+#REMOVE Prop (0 <LG>) (*-1 PUHUA LINK NOT *1 CLB?) (0 Par) (NEGATE -1 BOS) ;
+#REMOVE Prop (0 <LG>) (-2C <LG>) (-1 Conj) (NEGATE -1 BOS) ; # SUOMEA JA RUOTSIA
 # LG-NAMES CANNOT BE CAPITALIZED S-INTERNAllY
 
-SELECT ("Kokoomus") + Prop (NOT 0 CAP_NOCAP) ;
+SELECT ("Kokoomus") + Prop (NEGATE 0 CAP_NOCAP) ;
 REMOVE ("Aino" Prop Sg Par) ;
-IFF ("Johan") + Prop (1 Prop) (NOT 0 CAP_NOCAP) ; # JOHAN BERGenSTRåHLE
-SELECT ("Lappi") + Prop (NOT 0 CAP_NOCAP) ;
-SELECT ("Norja") + Prop (NOT 0 CAP_NOCAP) ;
-SELECT ("Pariisi") + Prop (NOT 0 CAP_NOCAP) ;
-SELECT ("Pori") + Prop (NOT 0 CAP_NOCAP) ;
-REMOVE ("Per") + Prop (NOT 0 CAP_NOCAP) ;
-REMOVE ("Olle") + Prop (NOT 0 CAP_NOCAP) ;
-REMOVE ("Pia") + Prop (NOT 0 CAP_NOCAP) ;
-SELECT ("Urho") + Prop (NOT 0 CAP_NOCAP) ;
-REMOVE Prop + Pl (NOT 0 CAP_NOCAP) ;
+IFF ("Johan") + Prop (1 Prop) (NEGATE 0 CAP_NOCAP) ; # JOHAN BERGenSTRåHLE
+SELECT ("Lappi") + Prop (NEGATE 0 CAP_NOCAP) ;
+SELECT ("Norja") + Prop (NEGATE 0 CAP_NOCAP) ;
+SELECT ("Pariisi") + Prop (NEGATE 0 CAP_NOCAP) ;
+SELECT ("Pori") + Prop (NEGATE 0 CAP_NOCAP) ;
+REMOVE ("Per") + Prop (NEGATE 0 CAP_NOCAP) ;
+REMOVE ("Olle") + Prop (NEGATE 0 CAP_NOCAP) ;
+REMOVE ("Pia") + Prop (NEGATE 0 CAP_NOCAP) ;
+SELECT ("Urho") + Prop (NEGATE 0 CAP_NOCAP) ;
+REMOVE Prop + Pl (NEGATE 0 CAP_NOCAP) ;
 
-SELECT Prop (0 CAP_NOCAP) (NOT -1 OM) ;
+SELECT Prop (0 CAP_NOCAP) (NEGATE -1 OM) ;
 
-# changed Prop + Sg to Prop + NomSg and added (NOT -1 BOS) - 20.01.2015 - FMT+KM
-SELECT Prop + NomSg IF (1C Prop)  (NOT 0 CAP_NOCAP) (NOT -1 BOS) ;
+# changed Prop + Sg to Prop + NomSg and added (NEGATE -1 BOS) - 20.01.2015 - FMT+KM
+SELECT Prop + NomSg IF (1C Prop)  (NEGATE 0 CAP_NOCAP) (NEGATE -1 BOS) ;
   # Missä Jaakko on ?
 
-SELECT Prop + GenSg (1C N) (NOT *1 KIELI) (NOT *-1 KIELI) (NOT 1 TIME-WORD) (NOT 1 Prop) (NOT 1 Prop) ; # "martin_martti saarikangas"
+SELECT Prop + GenSg (1C N) (NEGATE *1 KIELI) (NEGATE *-1 KIELI) (NEGATE 1 TIME-WORD) (NEGATE 1 Prop) (NEGATE 1 Prop) ; # "martin_martti saarikangas"
 # *** POSS.SUFF *** (POSS_SUFF POSS_SUFF) ;
-SELECT NSgNom + POSS_SUFF (-1C Nom) (-1C A_Q_Pron) (-1 Sg) (NOT -1 Rel) (NOT 0 V) (NOT 0 HYVANSA) (NOT 1 GenLeft) (NOT -1 ITSE) (NOT 0 TILANNE) ;
+SELECT NSgNom + POSS_SUFF (-1C Nom) (-1C A_Q_Pron) (-1 Sg) (NEGATE -1 Rel) (NEGATE 0 V) (NEGATE 0 HYVANSA) (NEGATE 1 GenLeft) (NEGATE -1 ITSE) (NEGATE 0 TILANNE) ;
 # HäNEN AINOA AUTONSA
-SELECT NPlNom + POSS_SUFF (-1C Nom) (-1C A_Q_Pron) (-1 Pl) (NOT -1 Rel) (NOT 0 V) (NOT 0 HYVANSA) (NOT 1 GenLeft) (NOT 0 TILANNE) ;
+SELECT NPlNom + POSS_SUFF (-1C Nom) (-1C A_Q_Pron) (-1 Pl) (NEGATE -1 Rel) (NEGATE 0 V) (NEGATE 0 HYVANSA) (NEGATE 1 GenLeft) (NEGATE 0 TILANNE) ;
 # HäNEN AINOAT AUTONSA
 
-SELECT NSgGen + POSS_SUFF (-1C Gen) (-1C A_Q_Pron) (-1 Sg) (NOT 0 V) (NOT -1 Pers) (NOT 0 HYVANSA) (NOT 0 TILANNE) ;
+SELECT NSgGen + POSS_SUFF (-1C Gen) (-1C A_Q_Pron) (-1 Sg) (NEGATE 0 V) (NEGATE -1 Pers) (NEGATE 0 HYVANSA) (NEGATE 0 TILANNE) ;
 # HäNEN AINOAN AUTONSA
 
-SELECT NSgNom + POSS_SUFF (1C VFIN) (1 Act) (1 V-Sg) (NOT 0 V) (NOT 0 HYVANSA) (NOT 1 GenLeft) (NOT 0 TILANNE) ;
+SELECT NSgNom + POSS_SUFF (1C VFIN) (1 Act) (1 V-Sg) (NEGATE 0 V) (NEGATE 0 HYVANSA) (NEGATE 1 GenLeft) (NEGATE 0 TILANNE) ;
 # HäNEN AUTONSA ON_TULEE# OBS "vuo+si on"
-SELECT NSgNom + POSS_SUFF (2C VFIN) (2 Act) (2 V-Sg) (NOT 0 V) (NOT 1 CLB?) (NOT 1 V) (NOT 1 N) (NOT 0 HYVANSA) (NOT 1 GenLeft) (NOT 1 PCP) (NOT 0 TILANNE) ;
+SELECT NSgNom + POSS_SUFF (2C VFIN) (2 Act) (2 V-Sg) (NEGATE 0 V) (NEGATE 1 CLB?) (NEGATE 1 V) (NEGATE 1 N) (NEGATE 0 HYVANSA) (NEGATE 1 GenLeft) (NEGATE 1 PCP) (NEGATE 0 TILANNE) ;
 # HäNEN AUTONSA EHKä ON_TULEE
-SELECT NPlNom + POSS_SUFF (1C VFIN) (1 Act) (1 V-Pl) (NOT 0 V) (NOT 0 HYVANSA) (NOT 1 GenLeft) (NOT 0 TILANNE) ;
+SELECT NPlNom + POSS_SUFF (1C VFIN) (1 Act) (1 V-Pl) (NEGATE 0 V) (NEGATE 0 HYVANSA) (NEGATE 1 GenLeft) (NEGATE 0 TILANNE) ;
 # HäNEN AUTONSA OVAT_TULEVAT
-SELECT NPlNom + POSS_SUFF (2C VFIN) (2 Act) (2 V-Pl) (NOT 0 V) (NOT 1 V) (NOT 1 N) (NOT 1 CLB?) (NOT 0 HYVANSA) (NOT 1 GenLeft) (NOT 1 PCP) (NOT 0 TILANNE) ;
+SELECT NPlNom + POSS_SUFF (2C VFIN) (2 Act) (2 V-Pl) (NEGATE 0 V) (NEGATE 1 V) (NEGATE 1 N) (NEGATE 1 CLB?) (NEGATE 0 HYVANSA) (NEGATE 1 GenLeft) (NEGATE 1 PCP) (NEGATE 0 TILANNE) ;
 # HäNEN AUTONSA EHKä OVAT_TULEVAT
-SELECT NSgGen + POSS_SUFF (2C VFIN) (2 Act) (NOT 0 V) (1C N) (NOT 0 HYVANSA) (NOT 0 TILANNE) ; # XXXX  ???????????
+SELECT NSgGen + POSS_SUFF (2C VFIN) (2 Act) (NEGATE 0 V) (1C N) (NEGATE 0 HYVANSA) (NEGATE 0 TILANNE) ; # XXXX  ???????????
 # HäNEN ISäNSä AUTO(T) HAJOSI(VAT) ;
 
 # changed CLB? to CLB - 20.01.2015 - FMT+KM
-SELECT NSgGen + POSS_SUFF (3C VFIN) (3 Act) (NOT 0 V) (1C N) (NOT 2 N) (NOT 2 V) (NOT 2 CLB) (NOT 0 HYVANSA) (NOT 0 TILANNE) ;
+SELECT NSgGen + POSS_SUFF (3C VFIN) (3 Act) (NEGATE 0 V) (1C N) (NEGATE 2 N) (NEGATE 2 V) (NEGATE 2 CLB) (NEGATE 0 HYVANSA) (NEGATE 0 TILANNE) ;
   # Todista henkilöllisyytesi vaalivirkailijalle eli näytä ...
 
 # HäNEN ISäNSä AUTO(T) EHKä HAJOSI(VAT) ;
-REMOVE NSgGen + POSS_SUFF (1C VFIN) (1C Pass) (NOT 0 V) ;
+REMOVE NSgGen + POSS_SUFF (1C VFIN) (1C Pass) (NEGATE 0 V) ;
 # HäNEN AUTONSA(Sg_Pl) OSTETTIIN
-REMOVE NSgGen + POSS_SUFF (2C VFIN) (2C Pass) (NOT 0 V) (NOT 1 V) (NOT 1 N) (NOT 1 CLB?) ;
+REMOVE NSgGen + POSS_SUFF (2C VFIN) (2C Pass) (NEGATE 0 V) (NEGATE 1 V) (NEGATE 1 N) (NEGATE 1 CLB?) ;
 # HäNEN AUTONSA(Sg_Pl) EHKä OSTETTIIN
-SELECT NSgGen + POSS_SUFF (1 Po) (NOT 0 V) (NOT 0 HYVANSA) ;
-SELECT NSgGen + POSS_SUFF (1C N) (1C Sg) (NOT 0 V) (1C DV) (NOT 1 Ess) (NOT 0 HYVANSA) (NOT 0 TILANNE) ;
+SELECT NSgGen + POSS_SUFF (1 Po) (NEGATE 0 V) (NEGATE 0 HYVANSA) ;
+SELECT NSgGen + POSS_SUFF (1C N) (1C Sg) (NEGATE 0 V) (1C DV) (NEGATE 1 Ess) (NEGATE 0 HYVANSA) (NEGATE 0 TILANNE) ;
 # TUOTANTONSA KOHOTTAMISEKSI
 # PAINOI LEIMANSA TOIMINTAAN (Pl FöR STARK  ??? ZZZ) ;
-SELECT NSgGen + POSS_SUFF (1C N) (1C Sg) (NOT 0 V) (1C Par) (NOT 0 HYVANSA) (NOT 0 TILANNE) ;
+SELECT NSgGen + POSS_SUFF (1C N) (1C Sg) (NEGATE 0 V) (1C Par) (NEGATE 0 HYVANSA) (NEGATE 0 TILANNE) ;
 # NOSTI LEHTENSä LEVIKKIä
-REMOVE NPlNom + POSS_SUFF (NOT 0 V) (NOT -2 Ade) (NOT -3 Ade) (-1 COP) (-1 V-Sg) (1 N) ;
+REMOVE NPlNom + POSS_SUFF (NEGATE 0 V) (NEGATE -2 Ade) (NEGATE -3 Ade) (-1 COP) (-1 V-Sg) (1 N) ;
 # ON MAAMME TUOTANNOSSA_ MIEHEMME HAVANNASSA
-REMOVE NPlNom + POSS_SUFF (NOT 0 V) (NOT -3 Ade) (NOT -4 Ade) (-2 COP) (NOT -1 CLB?) (-2 V-Sg) (NOT -1 N) (NOT -1 V) (1 N) (NOT 0 TILANNE) (NOT -1 PCP) ;
+REMOVE NPlNom + POSS_SUFF (NEGATE 0 V) (NEGATE -3 Ade) (NEGATE -4 Ade) (-2 COP) (NEGATE -1 CLB?) (-2 V-Sg) (NEGATE -1 N) (NEGATE -1 V) (1 N) (NEGATE 0 TILANNE) (NEGATE -1 PCP) ;
 # ON EHKä MAAMME TUOTANNOSSA
-REMOVE NSgGen + POSS_SUFF (NOT 0 V) (-2 Ade) (-1 COP) (-1 V-Sg) (-1 Act) (NOT 1 N) (NOT 1 A_Q_Pron) ;
+REMOVE NSgGen + POSS_SUFF (NEGATE 0 V) (-2 Ade) (-1 COP) (-1 V-Sg) (-1 Act) (NEGATE 1 N) (NEGATE 1 A_Q_Pron) ;
 # NIIllä ON SYYNSä.
-REMOVE NSgGen + POSS_SUFF (NOT 0 V) (-3 Ade) (-2 COP) (-2 V-Sg) (-2 Act) (NOT -1 CLB?) (NOT 1 N) (NOT 1 A_Q_Pron) ;
+REMOVE NSgGen + POSS_SUFF (NEGATE 0 V) (-3 Ade) (-2 COP) (-2 V-Sg) (-2 Act) (NEGATE -1 CLB?) (NEGATE 1 N) (NEGATE 1 A_Q_Pron) ;
 # NIIllä EHKä ON SYYNSä.
-REMOVE NSgNom + POSS_SUFF (-1C VFIN) (-1 Act) (-1 V-Pl) (NOT 0 V) (NOT -2 NES) ;
+REMOVE NSgNom + POSS_SUFF (-1C VFIN) (-1 Act) (-1 V-Pl) (NEGATE 0 V) (NEGATE -2 NES) ;
 # OTTIVAT AUTONSA (RENKAAT_MUKAAN) ;
-REMOVE NSgNom + POSS_SUFF (-2C VFIN) (-2 Act) (-2 V-Pl) (NOT 0 V) (NOT -1 CLB?) (NOT -3 NES) ;
+REMOVE NSgNom + POSS_SUFF (-2C VFIN) (-2 Act) (-2 V-Pl) (NEGATE 0 V) (NEGATE -1 CLB?) (NEGATE -3 NES) ;
 # OTTIVAT EHKä AUTONSA (RENKAAT_MUKAAN) ;
-SELECT NSgNom + POSS_SUFF (-2C Nom) (-2 Sg) (-1 COP) (-1 Act) (-1 V-Sg) (NOT 0 V) (NOT 1 N) (NOT 1 A_Q_Pron) (NOT 0 HYVANSA) (NOT 1 GenLeft) (NOT 1 PCP) (NOT 0 TILANNE) ;
+SELECT NSgNom + POSS_SUFF (-2C Nom) (-2 Sg) (-1 COP) (-1 Act) (-1 V-Sg) (NEGATE 0 V) (NEGATE 1 N) (NEGATE 1 A_Q_Pron) (NEGATE 0 HYVANSA) (NEGATE 1 GenLeft) (NEGATE 1 PCP) (NEGATE 0 TILANNE) ;
 # HäN ON MIEHENNE
-SELECT NSgNom + POSS_SUFF (-3C Nom) (-3 Sg) (-2 COP) (-2 Act) (-2 V-Sg) (NOT -1 N) (NOT -1 CLB?) (NOT 0 V) (NOT 1 N) (NOT 1 A_Q_Pron) (NOT 0 HYVANSA) (NOT 1 GenLeft) (NOT 1 PCP) (NOT 0 TILANNE) ;
+SELECT NSgNom + POSS_SUFF (-3C Nom) (-3 Sg) (-2 COP) (-2 Act) (-2 V-Sg) (NEGATE -1 N) (NEGATE -1 CLB?) (NEGATE 0 V) (NEGATE 1 N) (NEGATE 1 A_Q_Pron) (NEGATE 0 HYVANSA) (NEGATE 1 GenLeft) (NEGATE 1 PCP) (NEGATE 0 TILANNE) ;
 # HäN ON EHKä_PITKä MIEHENNE
-SELECT NPlNom + POSS_SUFF (-2C Nom) (-2 Pl) (-1 COP) (-1 Act) (-1 V-Pl) (NOT 0 V) (NOT 1 N) (NOT 1 A_Q_Pron) (NOT 0 HYVANSA) (NOT 1 GenLeft) (NOT 1 PCP) (NOT 0 TILANNE) ;
+SELECT NPlNom + POSS_SUFF (-2C Nom) (-2 Pl) (-1 COP) (-1 Act) (-1 V-Pl) (NEGATE 0 V) (NEGATE 1 N) (NEGATE 1 A_Q_Pron) (NEGATE 0 HYVANSA) (NEGATE 1 GenLeft) (NEGATE 1 PCP) (NEGATE 0 TILANNE) ;
 # HE OVAT MIEHENNE
-SELECT NPlNom + POSS_SUFF (-3C Nom) (-3 Pl) (-2 COP) (-2 Act) (-2 V-Pl) (NOT -1 N) (NOT -1 CLB?) (NOT 0 V) (NOT 1 N) (NOT 1 A_Q_Pron) (NOT 0 HYVANSA) (NOT 1 GenLeft) (NOT 1 PCP) (NOT 0 TILANNE) ;
+SELECT NPlNom + POSS_SUFF (-3C Nom) (-3 Pl) (-2 COP) (-2 Act) (-2 V-Pl) (NEGATE -1 N) (NEGATE -1 CLB?) (NEGATE 0 V) (NEGATE 1 N) (NEGATE 1 A_Q_Pron) (NEGATE 0 HYVANSA) (NEGATE 1 GenLeft) (NEGATE 1 PCP) (NEGATE 0 TILANNE) ;
 # HE OVAT EHKä_PITKäT MIEHENNE
-SELECT NGen (NOT 0 V) (1 MUKAIneN) ; # Sg POSS_SUFF omitted 24.1.2001
-SELECT NPlNom + POSS_SUFF (-1 KAIKKI) (-1 Nom) (NOT 1 GenLeft) ;
-SELECT ("alku") + NSgGen + POSS_SUFF (NOT 0 V) (*-1 SAADA) ;
+SELECT NGen (NEGATE 0 V) (1 MUKAIneN) ; # Sg POSS_SUFF omitted 24.1.2001
+SELECT NPlNom + POSS_SUFF (-1 KAIKKI) (-1 Nom) (NEGATE 1 GenLeft) ;
+SELECT ("alku") + NSgGen + POSS_SUFF (NEGATE 0 V) (*-1 SAADA) ;
 SELECT Pl + Gen (0 OMIEN) ;
-SELECT Pl + Gen (1C N) (1 Nom) (NOT 0 ("itse")) ;
-SELECT Pl + Gen (1C Gen) (1 Pl) (NOT 0 ("itse")) ;
+SELECT Pl + Gen (1C N) (1 Nom) (NEGATE 0 ("itse")) ;
+SELECT Pl + Gen (1C Gen) (1 Pl) (NEGATE 0 ("itse")) ;
 SELECT Pl + Gen (-1C Gen) (-1 Pl) ;
 SELECT Pl + Gen (1C TEMP) ;
-SELECT AgPrc + NomSg + POSS_SUFF (1C Nom) (1 Sg) (NOT 0 N) ;
+SELECT AgPrc + NomSg + POSS_SUFF (1C Nom) (1 Sg) (NEGATE 0 N) ;
 # HäNEN HYVäKSYMäNSä ESITYS
-SELECT AgPrc + Pl + Nom + POSS_SUFF (1C Nom) (1 Pl) (NOT 0 N) ;
-SELECT AgPrc + GenSg + POSS_SUFF (1C Gen) (1 Sg) (NOT 0 N) ;
+SELECT AgPrc + Pl + Nom + POSS_SUFF (1C Nom) (1 Pl) (NEGATE 0 N) ;
+SELECT AgPrc + GenSg + POSS_SUFF (1C Gen) (1 Sg) (NEGATE 0 N) ;
 SELECT ("itse") + Pron + GenSg + POSS_SUFF (-1 Gen) ;
 SELECT ("itse") + Pron + GenSg + POSS_SUFF (-1C V) (*-2 Nom LINK 0 Sg LINK NOT *1 CLB?) ; # XXXX
 SELECT ("itse") + Pron + Pl + Nom + POSS_SUFF (-1C V) (*-2 Nom LINK 0 Pl LINK NOT *1 CLB?) ; # XXXX
 REMOVE ("itse") + Pron + NomSg + POSS_SUFF ;
-REMOVE NomSg + POSS_SUFF (NOT 0 V) (NOT -1 COP) (NOT 1 N) (NOT 1 A_Q_Pron) (NOT -1 NES) (-2C Nom) (-1C VFIN) (-1 Act) ;
+REMOVE NomSg + POSS_SUFF (NEGATE 0 V) (NEGATE -1 COP) (NEGATE 1 N) (NEGATE 1 A_Q_Pron) (NEGATE -1 NES) (-2C Nom) (-1C VFIN) (-1 Act) ;
 # KOMITEAT JäTTI(VäT) MIETINTöNSä
-REMOVE NomSg + POSS_SUFF  (NOT 1 N) (-1C TEMP) ;
+REMOVE NomSg + POSS_SUFF  (NEGATE 1 N) (-1C TEMP) ;
 
 # changed VFIN to VFIN - Imprt ... 20.01.2015 - FMT+KM
-REMOVE NomSg + POSS_SUFF (-1C VFIN - Imprt) (-1 Act) (NOT -1 OLLA) (NOT -1 NES) ;
+REMOVE NomSg + POSS_SUFF (-1C VFIN - Imprt) (-1 Act) (NEGATE -1 OLLA) (NEGATE -1 NES) ;
   # 1) Todista henkilöllisyytesi vaalivirkailijalle eli näytä passi ...
 
-REMOVE NomSg + POSS_SUFF (-2C VFIN) (-2 Act) (NOT -2 OLLA) (NOT -1 CLB?) (NOT -2 NES) ;
+REMOVE NomSg + POSS_SUFF (-2C VFIN) (-2 Act) (NEGATE -2 OLLA) (NEGATE -1 CLB?) (NEGATE -2 NES) ;
 REMOVE GenSg + POSS_SUFF (-1C VFIN) (-1 Act) (-1 OLLA) (-1 Sg3) (*-2 Ade LINK NOT *1 CLB?) ; # XXXX
-REMOVE GenSg + POSS_SUFF (-2C VFIN) (-2 Act) (-2 Sg3) (-2 OLLA) (NOT -1 CLB?) (*-3 Ade LINK NOT *1 CLB?) ;
-REMOVE Nom + POSS_SUFF (*-1C Neg LINK *-1 Nom LINK 0 NomHEAD LINK NOT *1 CLB?) (NOT -1 CLB?) ; # XXXX
+REMOVE GenSg + POSS_SUFF (-2C VFIN) (-2 Act) (-2 Sg3) (-2 OLLA) (NEGATE -1 CLB?) (*-3 Ade LINK NOT *1 CLB?) ;
+REMOVE Nom + POSS_SUFF (*-1C Neg LINK *-1 Nom LINK 0 NomHEAD LINK NOT *1 CLB?) (NEGATE -1 CLB?) ; # XXXX
 SELECT ("maa") + GenSg + PxPl1 (1 N) ;
-SELECT ("maa") + GenSg + PxPl1 (2 N) (NOT 1 V) ;
-SELECT ("maa") + GenSg + PxPl1 (3 N) (NOT 1 V) (NOT 2 V) ;
-SELECT ("maa") + GenSg + PxPl1 (4 N) (NOT 1 V) (NOT 2 V) (NOT 3 V) ;
-REMOVE PxSg2 (0 V) (0 Prt) (NOT -1 SINÄ) ; # TOTESI,KOHOSI
-SELECT NSgNom + POSS_SUFF (1C NEGV) (1 Sg123) (NOT 2 TARVITA) ; # XXX
-SELECT NPlNom + POSS_SUFF (1C NEGV) (1 Pl123) (NOT 2 TARVITA) ;
+SELECT ("maa") + GenSg + PxPl1 (2 N) (NEGATE 1 V) ;
+SELECT ("maa") + GenSg + PxPl1 (3 N) (NEGATE 1 V) (NEGATE 2 V) ;
+SELECT ("maa") + GenSg + PxPl1 (4 N) (NEGATE 1 V) (NEGATE 2 V) (NEGATE 3 V) ;
+REMOVE PxSg2 (0 V) (0 Prt) (NEGATE -1 SINÄ) ; # TOTESI,KOHOSI
+SELECT NSgNom + POSS_SUFF (1C NEGV) (1 Sg123) (NEGATE 2 TARVITA) ; # XXX
+SELECT NPlNom + POSS_SUFF (1C NEGV) (1 Pl123) (NEGATE 2 TARVITA) ;
 
-# added (NOT 0 DER)  . Mon Jan 19 15:33:50 CET 2015 (FMT + KM) OR add NOT 0 VN ?
-SELECT V IF (0 N) (NEGATE 0 WORD LINK *-1 V BARRIER CLB) (NEGATE 0 WORD LINK *1 V BARRIER CLB) (NOT 0 DER) ; 
+# added (NEGATE 0 DER)  . Mon Jan 19 15:33:50 CET 2015 (FMT + KM) OR 
+SELECT V IF (0 N) (NEGATE 0 WORD)(NEGATE *-1 V BARRIER CLB) (NEGATE *1 V BARRIER CLB) (NEGATE 0 DER) ; 
 
 #------------------------------------------------------------
 # KOORDINAATIO: N Conj N
@@ -2088,13 +2107,13 @@ SELECT Par (-2 Par) (-1 Conj) (1 V) ;
 # jälkeen don't have postposition reading
 
 #GenLEFT,GenRIGHT,ParLEFT,ParRIGHT IN ISOLATION
-SELECT  Po + GenLeft (-1 Gen) (NOT 0 GenRight) (NOT 0 ParRight) (NOT 0 ParLeft) (NOT -1 AD_PCP) (NOT 0 POSS_SUFF) (NOT -1 KERRAN) (NOT 0 JOHDOSTA) ;
-SELECT  Po + GenLeft (-2 Gen) (-1 Punct) (NOT 0 GenRight) (NOT 0 ParRight) (NOT 0 ParLeft) (NOT -1 AD_PCP) (NOT 0 POSS_SUFF) (NOT -1 KERRAN) (NOT 0 JOHDOSTA) ;
-SELECT  Po + ParLeft (-1 Par) (NOT 0 GenRight) (NOT 0 ParRight) (NOT 0 GenLeft) (NOT 0 POSS_SUFF) ;
-SELECT  Po + ParLeft (-2 Par) (-1 Punct) (NOT 0 GenRight) (NOT 0 ParRight) (NOT 0 GenLeft) (NOT 0 POSS_SUFF) ;
-SELECT  Pr + GenRight (1 Gen) (NOT 0 GenLeft) (NOT 0 ParRight) (NOT 0 ParLeft) (NOT 0 YLI_AllE) (NOT 0 POSS_SUFF) (NOT 0 JALKEEN) ;
-SELECT  Pr + ParRight (1 Par) (NOT 0 GenRight) (NOT 0 GenLeft) (NOT 0 ParLeft) (NOT 0 POSS_SUFF) (NOT 0 V) ; # CF. "ei edellä"
-SELECT  Pr + ParRight (1 Gen_Punct) (2 Par) (NOT 0 GenRight) (NOT 0 GenLeft) (NOT 0 ParLeft) (NOT 0 POSS_SUFF) ;
+SELECT  Po + GenLeft (-1 Gen) (NEGATE 0 GenRight) (NEGATE 0 ParRight) (NEGATE 0 ParLeft) (NEGATE -1 AD_PCP) (NEGATE 0 POSS_SUFF) (NEGATE -1 KERRAN) (NEGATE 0 JOHDOSTA) ;
+SELECT  Po + GenLeft (-2 Gen) (-1 Punct) (NEGATE 0 GenRight) (NEGATE 0 ParRight) (NEGATE 0 ParLeft) (NEGATE -1 AD_PCP) (NEGATE 0 POSS_SUFF) (NEGATE -1 KERRAN) (NEGATE 0 JOHDOSTA) ;
+SELECT  Po + ParLeft (-1 Par) (NEGATE 0 GenRight) (NEGATE 0 ParRight) (NEGATE 0 GenLeft) (NEGATE 0 POSS_SUFF) ;
+SELECT  Po + ParLeft (-2 Par) (-1 Punct) (NEGATE 0 GenRight) (NEGATE 0 ParRight) (NEGATE 0 GenLeft) (NEGATE 0 POSS_SUFF) ;
+SELECT  Pr + GenRight (1 Gen) (NEGATE 0 GenLeft) (NEGATE 0 ParRight) (NEGATE 0 ParLeft) (NEGATE 0 YLI_AllE) (NEGATE 0 POSS_SUFF) (NEGATE 0 JALKEEN) ;
+SELECT  Pr + ParRight (1 Par) (NEGATE 0 GenRight) (NEGATE 0 GenLeft) (NEGATE 0 ParLeft) (NEGATE 0 POSS_SUFF) (NEGATE 0 V) ; # CF. "ei edellä"
+SELECT  Pr + ParRight (1 Gen_Punct) (2 Par) (NEGATE 0 GenRight) (NEGATE 0 GenLeft) (NEGATE 0 ParLeft) (NEGATE 0 POSS_SUFF) ;
 # PP doesn't seem to be working for anything here? Switched to Adv; ilman is recognized as adv or adp not pp
 
 SELECT ("ilman") + Pr (1 ETTA) ;
@@ -2109,7 +2128,9 @@ SELECT ("paitsi") + Pr (1 Punct) (2 ETTA) ;
 
 # runoudessa: "muistan päivän sen, jälkeen eilisen". ; "sen mukaan"
 # SELECT Adp (0 Po) (1 Gen) ; 
-SELECT Po IF (NOT 0 Pr) (1 Gen) ;
+SELECT Po IF (NEGATE 0 Pr) (-1 Gen) ;
+SELECT Pr IF (NEGATE 0 Pr) (1 Gen) ;
+REMOVE Po IF (NEGATE -1 Gen) ;
 # ennen ja jälkeen päivän
 
 
@@ -2151,8 +2172,10 @@ SELECT Po IF (0 Po) (0 V + Ins) (-1 PoCase) ;
 SELECT Po IF (0 Po) (-1 PoCaseNonLoc) ; 
 SELECT Pr IF (0 Pr) (1 PoCaseNonLoc) ;
 
-#REMOVE Adp (0 Po) ; Adp set contains Po
-#REMOVE Adp (0 Pr) ; Adp set contains Pr
+REMOVE Adpp (0 Po - Adpp) ; 
+REMOVE Adpp (0 Pr - Adpp) ; 
+
+REMOVE Pcle (0 Adv - Pcle) ; 
 
 # Commented out 20.01.2015 - FMT+KM
 #REMOVE Adv IF (0 Po) ;
@@ -2174,8 +2197,8 @@ SELECT ("puoli") + N IF (NEGATE 0 WORD LINK -1 NGen) ;
 # REMOVE Pl3 IF (0 Sg3) (*-1C THIRD_PersON_SG BARRIER THIRD_PersON_SG) ;
 # REMOVE Sg3 IF (0 Pl3) (*-1C THIRD_PersON_PL BARRIER THIRD_PersON_PL) ;
 
-REMOVE PxPl3 IF (-1 Pron + Sg) ;
-REMOVE PxSg3 IF (-1 Pron + Pl) ;
+REMOVE PxPl3 IF (*-1 Pron + Sg) ;
+REMOVE PxSg3 IF (*-1 Pron + Pl) ;
 
 REMOVE PxPl3 IF (*-1 Sg + @SUBJ→) ;
 REMOVE PxSg3 IF (*-1 Pl + @SUBJ→) ;
@@ -2243,62 +2266,62 @@ SELECT Adv (1 Punct) (2 ETTA) ;
 # SELECT Adp (-1 Gen) ;
 
 #"jälkeen", "kautta" GenLEFT,GenRIGHT,ParLEFT
-SELECT ("jälkeen") + Po (-1 Gen) (NOT 0 POSS_SUFF) (NOT -1 KERRAN) ;
-SELECT  Po + GenLeft (-1 Par_Gen) (0 GenRight) (0 ParLeft) (NOT 0 ParRight) (NOT 1 Gen) (NOT -1 AD_PCP) (NOT 0 POSS_SUFF) (NOT -1 KERRAN) (NOT 0 JOHDOSTA) ;
-SELECT  Po + GenLeft (-2 Gen) (-1 Num) (0 GenRight) (0 ParLeft) (NOT 0 ParRight) (NOT -1 AD_PCP) (NOT 0 POSS_SUFF) (NOT -1 KERRAN) (NOT 0 JOHDOSTA) ;
-SELECT  Pr + GenRight (NOT -1 Par_Gen) (0 GenLeft) (0 ParLeft) (NOT 0 ParRight) (1 Gen) (NOT 0 POSS_SUFF) (NOT 0 JALKEEN) ;
+SELECT ("jälkeen") + Po (-1 Gen) (NEGATE 0 POSS_SUFF) (NEGATE -1 KERRAN) ;
+SELECT  Po + GenLeft (-1 Par_Gen) (0 GenRight) (0 ParLeft) (NEGATE 0 ParRight) (NEGATE 1 Gen) (NEGATE -1 AD_PCP) (NEGATE 0 POSS_SUFF) (NEGATE -1 KERRAN) (NEGATE 0 JOHDOSTA) ;
+SELECT  Po + GenLeft (-2 Gen) (-1 Num) (0 GenRight) (0 ParLeft) (NEGATE 0 ParRight) (NEGATE -1 AD_PCP) (NEGATE 0 POSS_SUFF) (NEGATE -1 KERRAN) (NEGATE 0 JOHDOSTA) ;
+SELECT  Pr + GenRight (NEGATE -1 Par_Gen) (0 GenLeft) (0 ParLeft) (NEGATE 0 ParRight) (1 Gen) (NEGATE 0 POSS_SUFF) (NEGATE 0 JALKEEN) ;
 # NOW ERROR FOR "vuonna 400 jälkeen kr syntymän"
 #ENNEN,PäIN,PITKIN,PAITSI,KOHTI (ParLEFT,ParRIGHT) ;
 SELECT ("päin") + Po (-1 Ill_All) ; # MEREEN-MERelLE PäIN
-SELECT  Po + ParLeft (-1C Par) (0 ParRight) (NOT 0 GenLeft) (NOT 0 GenRight) (NOT 1 Par) (NOT 2 Par) ;
+SELECT  Po + ParLeft (-1C Par) (0 ParRight) (NEGATE 0 GenLeft) (NEGATE 0 GenRight) (NEGATE 1 Par) (NEGATE 2 Par) ;
 SELECT ("ennen") + Pr (1 LUKU) ;
 SELECT ("ennen") + Pr (1 Par) ;
-SELECT  Pr + ParRight (1 Par) (0 ParLeft) (NOT 0 GenLeft) (NOT 0 GenRight) (NOT -1 Par) (NOT -2 Par) (NOT 0 POSS_SUFF) ;
+SELECT  Pr + ParRight (1 Par) (0 ParLeft) (NEGATE 0 GenLeft) (NEGATE 0 GenRight) (NEGATE -1 Par) (NEGATE -2 Par) (NEGATE 0 POSS_SUFF) ;
 #LäHELLä,JäLJEssä,EDELLä (ParRIGHT,ParLEFT,GenLEFT) ;
-SELECT  Po + GenLeft (-1 Par_Gen) (0 ParRight) (0 ParLeft) (NOT 0 GenRight) (NOT 1 Par) (NOT -1 AD_PCP) (NOT 0 POSS_SUFF) (NOT -1 KERRAN) (NOT 0 JOHDOSTA) ;
-SELECT  Po + GenLeft (-2 Gen) (-1 Num) (0 ParRight) (0 ParLeft) (NOT 0 GenRight) (NOT 1 Par) (NOT -1 AD_PCP) (NOT 0 POSS_SUFF) ;
-SELECT  Pr + ParRight (NOT -1 Par_Gen) (0 GenLeft) (0 ParLeft) (NOT 0 GenRight) (1 Par) (NOT 0 POSS_SUFF) (NOT 0 JOHDOSTA) ;
+SELECT  Po + GenLeft (-1 Par_Gen) (0 ParRight) (0 ParLeft) (NEGATE 0 GenRight) (NEGATE 1 Par) (NEGATE -1 AD_PCP) (NEGATE 0 POSS_SUFF) (NEGATE -1 KERRAN) (NEGATE 0 JOHDOSTA) ;
+SELECT  Po + GenLeft (-2 Gen) (-1 Num) (0 ParRight) (0 ParLeft) (NEGATE 0 GenRight) (NEGATE 1 Par) (NEGATE -1 AD_PCP) (NEGATE 0 POSS_SUFF) ;
+SELECT  Pr + ParRight (NEGATE -1 Par_Gen) (0 GenLeft) (0 ParLeft) (NEGATE 0 GenRight) (1 Par) (NEGATE 0 POSS_SUFF) (NEGATE 0 JOHDOSTA) ;
 # LIKELLä,KESKELLä (ParRIGHT,GenLEFT) ;
-SELECT  Po + GenLeft (-1 Gen) (0 ParRight) (NOT 0 ParLeft) (NOT 0 GenRight) (NOT 1 Par) (NOT -1 AD_PCP) (NOT 0 POSS_SUFF) (NOT -1 KERRAN) (NOT 0 JOHDOSTA) (NOT 2 Par) ;
-SELECT  Po + GenLeft (-2 Gen) (-1 Punct) (0 ParRight) (NOT 0 ParLeft) (NOT 0 GenRight) (NOT 1 Par) (NOT -1 AD_PCP) (NOT 0 POSS_SUFF) (NOT -1 KERRAN) (NOT 0 JOHDOSTA) (NOT 2 Par) ;
-SELECT  Po + GenLeft (-2 Gen) (-1 Num) (0 ParRight) (NOT 0 ParLeft) (NOT 0 GenRight) (NOT 1 Par) (NOT -1 AD_PCP) (NOT 0 POSS_SUFF) (NOT -1 KERRAN) (NOT 0 JOHDOSTA) (NOT 2 Par) ;
-SELECT  Pr + ParRight (NOT -1 Gen) (0 GenLeft) (NOT 0 ParLeft) (NOT 0 GenRight) (1 Par) (NOT 0 POSS_SUFF) ;
+SELECT  Po + GenLeft (-1 Gen) (0 ParRight) (NEGATE 0 ParLeft) (NEGATE 0 GenRight) (NEGATE 1 Par) (NEGATE -1 AD_PCP) (NEGATE 0 POSS_SUFF) (NEGATE -1 KERRAN) (NEGATE 0 JOHDOSTA) (NEGATE 2 Par) ;
+SELECT  Po + GenLeft (-2 Gen) (-1 Punct) (0 ParRight) (NEGATE 0 ParLeft) (NEGATE 0 GenRight) (NEGATE 1 Par) (NEGATE -1 AD_PCP) (NEGATE 0 POSS_SUFF) (NEGATE -1 KERRAN) (NEGATE 0 JOHDOSTA) (NEGATE 2 Par) ;
+SELECT  Po + GenLeft (-2 Gen) (-1 Num) (0 ParRight) (NEGATE 0 ParLeft) (NEGATE 0 GenRight) (NEGATE 1 Par) (NEGATE -1 AD_PCP) (NEGATE 0 POSS_SUFF) (NEGATE -1 KERRAN) (NEGATE 0 JOHDOSTA) (NEGATE 2 Par) ;
+SELECT  Pr + ParRight (NEGATE -1 Gen) (0 GenLeft) (NEGATE 0 ParLeft) (NEGATE 0 GenRight) (1 Par) (NEGATE 0 POSS_SUFF) ;
 # KESKEN (ParRIGHT,GenRIGHT,GenLEFT) ;
-SELECT  Po + GenLeft (-1 Gen) (0 ParRight) (NOT 0 ParLeft) (0 GenRight) (NOT 1 Par_Gen) (NOT -1 AD_PCP) (NOT 0 POSS_SUFF) (NOT -1 KERRAN) (NOT 0 JOHDOSTA) (NOT 2 Par_Gen) ;
-SELECT  Po + GenLeft (-2 Gen) (-1 Punct) (0 ParRight) (NOT 0 ParLeft) (0 GenRight) (NOT 1 Par_Gen) (NOT -1 AD_PCP) (NOT 0 POSS_SUFF) (NOT -1 KERRAN) (NOT 0 JOHDOSTA) (NOT 2 Par_Gen) ;
-SELECT  Pr + ParRight (NOT -1 Gen) (0 GenLeft) (NOT 0 ParLeft) (0 GenRight) (1 Par_Gen) (NOT 0 POSS_SUFF) ;
+SELECT  Po + GenLeft (-1 Gen) (0 ParRight) (NEGATE 0 ParLeft) (0 GenRight) (NEGATE 1 Par_Gen) (NEGATE -1 AD_PCP) (NEGATE 0 POSS_SUFF) (NEGATE -1 KERRAN) (NEGATE 0 JOHDOSTA) (NEGATE 2 Par_Gen) ;
+SELECT  Po + GenLeft (-2 Gen) (-1 Punct) (0 ParRight) (NEGATE 0 ParLeft) (0 GenRight) (NEGATE 1 Par_Gen) (NEGATE -1 AD_PCP) (NEGATE 0 POSS_SUFF) (NEGATE -1 KERRAN) (NEGATE 0 JOHDOSTA) (NEGATE 2 Par_Gen) ;
+SELECT  Pr + ParRight (NEGATE -1 Gen) (0 GenLeft) (NEGATE 0 ParLeft) (0 GenRight) (1 Par_Gen) (NEGATE 0 POSS_SUFF) ;
 # AllA (GenRIGHT,GenLEFT) ;
-SELECT  Po + GenLeft (-1 Gen) (NOT 0 ParRight) (NOT 0 ParLeft) (0 GenRight) (NOT 1 Gen) (NOT -1 AD_PCP) (NOT 0 POSS_SUFF) (NOT -1 KERRAN) (NOT 0 JOHDOSTA) ;
-SELECT  Po + GenLeft (-2 Gen) (-1 Punct) (NOT 0 ParRight) (NOT 0 ParLeft) (0 GenRight) (NOT 1 Gen) (NOT -1 AD_PCP) (NOT 0 POSS_SUFF) (NOT -1 KERRAN) (NOT 0 JOHDOSTA) ;
-SELECT  Pr + GenRight (NOT -1 Gen) (0 GenLeft) (NOT 0 ParLeft) (NOT 0 ParRight) (1 Gen) (NOT 0 POSS_SUFF) (NOT 0 JALKEEN) ;
+SELECT  Po + GenLeft (-1 Gen) (NEGATE 0 ParRight) (NEGATE 0 ParLeft) (0 GenRight) (NEGATE 1 Gen) (NEGATE -1 AD_PCP) (NEGATE 0 POSS_SUFF) (NEGATE -1 KERRAN) (NEGATE 0 JOHDOSTA) ;
+SELECT  Po + GenLeft (-2 Gen) (-1 Punct) (NEGATE 0 ParRight) (NEGATE 0 ParLeft) (0 GenRight) (NEGATE 1 Gen) (NEGATE -1 AD_PCP) (NEGATE 0 POSS_SUFF) (NEGATE -1 KERRAN) (NEGATE 0 JOHDOSTA) ;
+SELECT  Pr + GenRight (NEGATE -1 Gen) (0 GenLeft) (NEGATE 0 ParLeft) (NEGATE 0 ParRight) (1 Gen) (NEGATE 0 POSS_SUFF) (NEGATE 0 JALKEEN) ;
 #DELETING SUPERFLUOUS READINGS FOR All ComBINATIONS
-REMOVE  Po + GenLeft (NOT -1 Gen) (NOT 0 ParLeft) ;
-REMOVE  Po + ParLeft (NOT -1 Par) (NOT 0 GenLeft) ;
-REMOVE  Po + GenLeft (NOT -1 Par_Gen) (0 ParLeft) ;
-REMOVE  Pr + ParRight (NOT 0 GenRight) (NOT 0 ParLeft) (NOT 1 Par) (NOT 2 Par) (NOT 1 KELLO) ;
-REMOVE  Pr + GenRight (NOT 0 ParRight) (NOT 1 Gen) (NOT 1 Num) (NOT 2 Gen) ; #2lastcondadd9.10.2000"yli"
-REMOVE  Pr + ParRight (0 GenRight) (NOT 1 Par_Gen) (NOT 2 Par_Gen) ;
+REMOVE  Po + GenLeft (NEGATE -1 Gen) (NEGATE 0 ParLeft) ;
+REMOVE  Po + ParLeft (NEGATE -1 Par) (NEGATE 0 GenLeft) ;
+REMOVE  Po + GenLeft (NEGATE -1 Par_Gen) (0 ParLeft) ;
+REMOVE  Pr + ParRight (NEGATE 0 GenRight) (NEGATE 0 ParLeft) (NEGATE 1 Par) (NEGATE 2 Par) (NEGATE 1 KELLO) ;
+REMOVE  Pr + GenRight (NEGATE 0 ParRight) (NEGATE 1 Gen) (NEGATE 1 Num) (NEGATE 2 Gen) ; #2lastcondadd9.10.2000"yli"
+REMOVE  Pr + ParRight (0 GenRight) (NEGATE 1 Par_Gen) (NEGATE 2 Par_Gen) ;
 SELECT ("lähtien") + Po (-1 Ela_Abl) ;
 SELECT ("lähtien") + Po (-2 Ela) (-1 Num) ; # VUODESTA 1946 LäHTIEN
 #(@w IFF (PSP "sitten") (-1 TIME-WORD) ; #old one, changed 26.11.2000 to next one
 SELECT ("sitten") + Po (-2 Num) (-1 TIME-WORD) (-1 Par) ;  # also cf. below under heuristic
-SELECT Gen (1C Po) (1C GenLeft) (NOT -1 AD_PCP) ;
+SELECT Gen (1C Po) (1C GenLeft) (NEGATE -1 AD_PCP) ;
 SELECT Par (1C Po) (1C ParLeft) ;
 SELECT Gen (-1C Pr) (-1C GenRight) ;
 SELECT Par (-1C Pr) (-1C ParRight) ;
 #*** INTERJ ***
-REMOVE Interj (NOT -1 CLB?) (NOT 0 VOI) ;
+REMOVE Interj (NEGATE -1 CLB?) (NEGATE 0 VOI) ;
   # INTERJECTION MAY ONLY START A SENTENCE: Conj + Interj
 
 ## **** VERBAL ENDINGS ****
-SELECT Act + Sg3 (NOT *-1 NEGV BARRIER CLB) (-1C Nom) (-1 N_Pron_Q) (NOT -1 DV-US) (NOT -1 DA-US) (NOT 0 TUO) (NOT -1 Num) (NOT 1C VFIN) (NOT 2C VFIN) (NOT *-1 VFIN BARRIER CLB) (NOT 0 PIENIA_ELAA) (NOT -1 NOUN+InfA) (NOT 0 Cond) (NOT 0 Prt) ;
+SELECT Act + Sg3 (NEGATE *-1 NEGV BARRIER CLB) (-1C Nom) (-1 N_Pron_Q) (NEGATE -1 DV-US) (NEGATE -1 DA-US) (NEGATE 0 TUO) (NEGATE -1 Num) (NEGATE 1C VFIN) (NEGATE 2C VFIN) (NEGATE *-1 VFIN BARRIER CLB) (NEGATE 0 PIENIA_ELAA) (NEGATE -1 NOUN+InfA) (NEGATE 0 Cond) (NEGATE 0 Prt) ;
 
 ## *** IMPERATIVES ***
-SELECT Imprt (-1 BOS) (NOT *1C VFIN) (NOT 0 VOI) (NOT 0 KO) ;
+SELECT Imprt (-1 BOS) (NEGATE *1C VFIN) (NEGATE 0 VOI) (NEGATE 0 KO) ;
 # NB "kysy voiko..."
-SELECT Imprt ;  # (-2 CLB?) (-1 Conj) (*1 CLB? LINK NOT *-1 VFIN) ;
-REMOVE Imprt (*1C VFIN LINK NOT *-1 CLB?) (NOT 1 CLB?) ;
-REMOVE Imprt (*-1C VFIN LINK NOT *1 CLB?) (NOT -1 CLB?) ;
+#SELECT Imprt ;  # (-2 CLB?) (-1 Conj) (*1 CLB? LINK NOT *-1 VFIN) ; TP don't understand
+REMOVE Imprt (*1C VFIN LINK NOT *-1 CLB?) (NEGATE 1 CLB?) ;
+REMOVE Imprt (*-1C VFIN LINK NOT *1 CLB?) (NEGATE -1 CLB?) ;
 REMOVE Imprt (0 ("myös"));
 #REMOVE Imprt (0 ("myös"));
 #REMOVE Imprt (0 ("myös"));
@@ -2307,49 +2330,49 @@ REMOVE Imprt (0 ("myös"));
 REMOVE:NegImprt Ind (*-1 Neg + Act + Imprt)(0 Imprt) ;
 REMOVE:NegInd Imprt (*-1 Neg + Act LINK NOT 0 Imprt)(0 Ind) ;
 ## InfINITIVES
-SELECT InfA (-2C InfA) (-1 Conj) (1 CLB?) (NOT 0 UUSIA) ;
+SELECT InfA (-2C InfA) (-1 Conj) (1 CLB?) (NEGATE 0 UUSIA) ;
   # "...voidaan käsitellä ja ylläpitää,"
   # THIS HANDLES COORDINATION.
 SELECT InfA (-2 COP) (-1 HYVA_HUONO) ;
   # ON VAIKEA OLLA
-SELECT InfA (-3 COP) (-2 Adv) (-1 A) (NOT 0 UUSIA) ;
+SELECT InfA (-3 COP) (-2 Adv) (-1 A) (NEGATE 0 UUSIA) ;
   # ONKO SITTEN MOTIVOITUA YRITTää...
-SELECT InfA (-2 COP) (-1 N) (-1 Par) (-1 Sg) (NOT 0 UUSIA) ;
+SELECT InfA (-2 COP) (-1 N) (-1 Par) (-1 Sg) (NEGATE 0 UUSIA) ;
   # ON SYYTä PALAUTTAA MIELEEN
-SELECT InfA (-3 COP) (-2 Adv) (-1 N) (-1 Nom_Par) (-1 Sg) (NOT 0 UUSIA) ;
+SELECT InfA (-3 COP) (-2 Adv) (-1 N) (-1 Nom_Par) (-1 Sg) (NEGATE 0 UUSIA) ;
   # HAMPURIN KATASTROFIN JäLKEEN AINOANA PääMääRäNä OLEVAN *ESTää*...) ;
 
-SELECT InfA (-1C InfA-VERB) (NOT 0 N) (NOT 0 UUSIA) ;
+SELECT InfA (-1C InfA-VERB) (NEGATE 0 N) (NEGATE 0 UUSIA) ;
 
 # added 20.01.2015 - FMT+KM
-SELECT InfA IF (-1C InfA-VERB) (NOT 1* InfA BARRIER CLB) ;
+SELECT InfA IF (-1C InfA-VERB) (NEGATE 1* InfA BARRIER CLB) ;
   # He eivät voineet leikkiä silloin.
 
-SELECT InfA (-2C InfA-VERB) (NOT -1 Par) (NOT 0 N) (NOT 0 UUSIA) ;
-SELECT InfA (-3C InfA-VERB) (NOT -1 Par) (NOT 0 N) (NOT 0 UUSIA) ;
-SELECT InfA (-1C NOUN+InfA) (*-1C VFIN LINK NOT *1 CLB?) (NOT 0 N) ;
+SELECT InfA (-2C InfA-VERB) (NEGATE -1 Par) (NEGATE 0 N) (NEGATE 0 UUSIA) ;
+SELECT InfA (-3C InfA-VERB) (NEGATE -1 Par) (NEGATE 0 N) (NEGATE 0 UUSIA) ;
+SELECT InfA (-1C NOUN+InfA) (*-1C VFIN LINK NOT *1 CLB?) (NEGATE 0 N) ;
 REMOVE InfA (-1C InfA) ; # SAATTOI ALKAA OTTAA KANTAAN
-REMOVE InfE (NOT -2 Gen) (-1 Gen-PREP) ;
+REMOVE InfE (NEGATE -2 Gen) (-1 Gen-PREP) ;
   # "uudistushankkeiden äänestäminen yli vaalien
 SELECT InfE (0 Pot) ;
 # HIUKAN LIIOITELLEN (EI Pot) ;
-SELECT InfMa (-1 V) (0 Ade) (NOT 0 N) (NOT 1 Ade) ;
-SELECT InfMa (-2 V) (0 Ade) (NOT 0 N) (NOT 1 Ade) ;
-SELECT InfMa (-3 V) (0 Ade) (NOT 0 N) (NOT 1 Ade) ;
-SELECT InfMa (-1 V) (0 Ine) (NOT 0 N) (NOT 1 Ine) ;
-SELECT InfMa (-2 V) (0 Ine) (NOT 0 N) (NOT 1 Ine) ;
-SELECT InfMa (-3 V) (0 Ine) (NOT 0 N) (NOT 1 Ine) ;
-SELECT InfMa + Ela (*-1 InfMa-Ela LINK NOT *1 CLB?) (NOT 0 ELAMA_KUOLEMA) (NOT -1 CLB?) ;
-SELECT InfMa + Ill (*-1 InfMa-Ill LINK NOT *1 CLB?) (NOT 0 ELAMA_KUOLEMA) (NOT -1 CLB?) ;
-SELECT InfMa + Abe (NOT 0 Po) (NOT 0 Adv) ;
-REMOVE InfMa + Act + Ins (NOT *-1 Nec-V) ;
+SELECT InfMa (-1 V) (0 Ade) (NEGATE 0 N) (NEGATE 1 Ade) ;
+SELECT InfMa (-2 V) (0 Ade) (NEGATE 0 N) (NEGATE 1 Ade) ;
+SELECT InfMa (-3 V) (0 Ade) (NEGATE 0 N) (NEGATE 1 Ade) ;
+SELECT InfMa (-1 V) (0 Ine) (NEGATE 0 N) (NEGATE 1 Ine) ;
+SELECT InfMa (-2 V) (0 Ine) (NEGATE 0 N) (NEGATE 1 Ine) ;
+SELECT InfMa (-3 V) (0 Ine) (NEGATE 0 N) (NEGATE 1 Ine) ;
+SELECT InfMa + Ela (*-1 InfMa-Ela LINK NOT *1 CLB?) (NEGATE 0 ELAMA_KUOLEMA) (NEGATE -1 CLB?) ;
+SELECT InfMa + Ill (*-1 InfMa-Ill LINK NOT *1 CLB?) (NEGATE 0 ELAMA_KUOLEMA) (NEGATE -1 CLB?) ;
+SELECT InfMa + Abe (NEGATE 0 Po) (NEGATE 0 Adv) ;
+REMOVE InfMa + Act + Ins (NEGATE *-1 Nec-V) ;
 # *** AgPrc
 SELECT AgPrc + Sg + Ine (1C Ine) (1 Sg) ;
 SELECT AgPrc + Pl + Ine (1C Ine) (1 Pl) ;
-SELECT AgPrc + Sg + Ela (1C Ela) (1 Sg) (NOT *-1 InfMa-Ela) ;
-SELECT AgPrc + Pl + Ela (1C Ela) (1 Pl) (NOT *-1 InfMa-Ela) ;
-SELECT AgPrc + Sg + Ill (1C Ill) (1 Sg) (NOT *-1 InfMa-Ill) ;
-SELECT AgPrc + Pl + Ill (1C Ill) (1 Pl) (NOT *-1 InfMa-Ill) ;
+SELECT AgPrc + Sg + Ela (1C Ela) (1 Sg) (NEGATE *-1 InfMa-Ela) ;
+SELECT AgPrc + Pl + Ela (1C Ela) (1 Pl) (NEGATE *-1 InfMa-Ela) ;
+SELECT AgPrc + Sg + Ill (1C Ill) (1 Sg) (NEGATE *-1 InfMa-Ill) ;
+SELECT AgPrc + Pl + Ill (1C Ill) (1 Pl) (NEGATE *-1 InfMa-Ill) ;
 SELECT AgPrc + Sg + Ade (1C Ade) (1 Sg) ;
 SELECT AgPrc + Pl + Ade (1C Ade) (1 Pl) ;
 # ERROR: "ilman siirtymistä yksikielisistä kaksikielisiin ..."
@@ -2377,28 +2400,28 @@ REMOVE Der_inen IF (0C A) ;
 REMOVE A IF (0 PrsPrc) ; 
 
 # Participle agreement?
-REMOVE AgPrc + Ine IF (NOT 1C Ine) ;
-REMOVE AgPrc + Ela IF (NOT 1C Ela) ;
-REMOVE AgPrc + Ill IF (NOT 1C Ill) ;
-REMOVE AgPrc + Ade IF (NOT 1C Ade) ;
-REMOVE AgPrc + Nom IF (NOT 1C Nom) (NOT *-1 OLLA) ;
-REMOVE AgPrc + Gen IF (NOT 1C Gen) (NOT *-1 OLLA) ;
-REMOVE AgPrc + Par IF (NOT 1C Par) (NOT *-1 OLLA) ;
+REMOVE AgPrc + Ine IF (NEGATE 1C Ine) ;
+REMOVE AgPrc + Ela IF (NEGATE 1C Ela) ;
+REMOVE AgPrc + Ill IF (NEGATE 1C Ill) ;
+REMOVE AgPrc + Ade IF (NEGATE 1C Ade) ;
+REMOVE AgPrc + Nom IF (NEGATE 1C Nom) (NEGATE *-1 OLLA) ;
+REMOVE AgPrc + Gen IF (NEGATE 1C Gen) (NEGATE *-1 OLLA) ;
+REMOVE AgPrc + Par IF (NEGATE 1C Par) (NEGATE *-1 OLLA) ;
 SELECT AgPrc + Nom IF (1C Nom) (-1C Gen) (-1 N) ;
-SELECT AgPrc + Gen IF (1C Gen) (-1C Gen) (-1 N) (NOT 0 SANOA) ;
+SELECT AgPrc + Gen IF (1C Gen) (-1C Gen) (-1 N) (NEGATE 0 SANOA) ;
 SELECT AgPrc + Par IF (1C Par) (-1C Gen) (-1 N) ;
 
 # Negative Forms
 # --------------
 
-SELECT ConNeg (-1 NEGV) (NOT 0 NEG-AMBIGUOUS) (NOT 1 Neg) (NOT 1 Prs) (0 Prs_Prt) ;
+SELECT ConNeg (-1 NEGV) (NEGATE 0 NEG-AMBIGUOUS) (NEGATE 1 Neg) (NEGATE 1 Prs) (0 Prs_Prt) ;
 
-SELECT ConNeg (*-1 NEGV BARRIER V) (NOT 0 NEG-AMBIGUOUS) (NOT 1 Neg) (NOT 1 Prs) (0 Prs_Prt) ;
+SELECT ConNeg (*-1 NEGV BARRIER V) (NEGATE 0 NEG-AMBIGUOUS) (NEGATE 1 Neg) (NEGATE 1 Prs) (0 Prs_Prt) ;
     # Enkä minä koskaan enää tuhoa kaikkea, mikä elää, niinkuin nyt olen tehnyt.
 
-#REMOVE:NoConNeg ConNeg IF (NOT -1* Neg); # FMT
+#REMOVE:NoConNeg ConNeg IF (NEGATE -1* Neg); # FMT
 
-REMOVE:NoConNeg ConNeg IF (NOT *1 Neg) (NOT *-1 Neg);
+REMOVE:NoConNeg ConNeg IF (NEGATE *1 Neg) (NEGATE *-1 Neg);
     
 SELECT Pron + Pers (-1 NEGV) (*1 ConNeg BARRIER ConNeg) (NEGATE 0 WORD LINK 1 N + Ess);
     # Enkä minä koskaan enää tuhoa kaikkea, mikä elää, niinkuin nyt olen tehnyt.
@@ -2409,19 +2432,19 @@ SELECT Pron + Pers (-1 NEGV) (*1 ConNeg BARRIER ConNeg) (NEGATE 0 WORD LINK 1 N 
   # THIS AD HOC WAY IS THE EASIEST.
 REMOVE Pass + Neg (*-1 NEGV LINK *1C PrsPrc LINK NOT *1 CLB?) ;
 # EI VOI JÄÄDÄ
-#     (NOT *R Neg) (NOT 0 NEG-AMBIGUOUS) (0 Prs_Prt) ;
-#     (NOT 0 A_N) (NOT *1 Neg) (NOT 1 Nom) (*-1 NEGV LINK NOT *1 CLB?) ;
+#     (NEGATE *R Neg) (NEGATE 0 NEG-AMBIGUOUS) (0 Prs_Prt) ;
+#     (NEGATE 0 A_N) (NEGATE *1 Neg) (NEGATE 1 Nom) (*-1 NEGV LINK NOT *1 CLB?) ;
 #     VAARAllIneN, NEG_N_A-HOMOGRAFIAA ESIINTYY.
 #     VRT: EI SUOMALAISTA VOI AINA KAIKESTA SYYTTää.
 
 # Allow selecting of Neg when Conj CS exists. Does not change above example. -- Ryan
 
-REMOVE Neg (NOT *-1 NEGV) (NOT *1 NEGV) (NEGATE 0 CS) (NOT 1 ConNeg) (NOT -1 ConNeg) ; 
+REMOVE Neg (NEGATE *-1 NEGV) (NEGATE *1 NEGV) (NEGATE 0 CS) (NEGATE 1 ConNeg) (NEGATE -1 ConNeg) ; 
 
   # IF NO NEGV, THEN NO Neg IN THE SAME CLAUSE.
-REMOVE Neg (NOT *-1 NEGV) (*1 NEGV LINK *1C Neg) ;
+REMOVE Neg (NEGATE *-1 NEGV) (*1 NEGV LINK *1C Neg) ;
   # IF NEGV ONLY ON THE RIGHT, AND IT IS ENGAGED, OUT WITH NEG.
-REMOVE Neg (*-1 NEGV LINK 1C Neg) (NOT -1 CLB?) ;
+REMOVE Neg (*-1 NEGV LINK 1C Neg) (NEGATE -1 CLB?) ;
 
 # Select Neg if there's a conj reading too.
 SELECT Neg IF (0 CS) (*1 ConNeg BARRIER ConNeg) ;
@@ -2434,16 +2457,16 @@ SELECT InfA IF (0 Ind + Prs) (-1 V + Neg) ;
 SELECT ("alkaa") + Pass (0 ALETA) ; # XXXX SHOULD BE UNDER Pass
 REMOVE ("juuria") + V ;
 REMOVE ("eritä") + V ;
-SELECT ("kannattaa") + V + Prs ;             # (NOT *-1 TäYTYä...) ;
+SELECT ("kannattaa") + V + Prs ;             # (NEGATE *-1 TäYTYä...) ;
 SELECT ("karsia") + V ;
 SELECT ("kestää") + V + Prt (0 N) ; # XXXX NOT "kestiN"
 REMOVE ("niittää") + V ;                    # NIITä
 REMOVE ("nytkiä") + V ;                     # OK NYT+KIN
-REMOVE ("nähdä") + VSg1 (-1C VFIN) (NOT -1 CLB?) ; # CHANGED 5.9.95
-REMOVE ("nähdä") + VSg1 (1C VFIN) (NOT 1 CLB?) ;
+REMOVE ("nähdä") + VSg1 (-1C VFIN) (NEGATE -1 CLB?) ; # CHANGED 5.9.95
+REMOVE ("nähdä") + VSg1 (1C VFIN) (NEGATE 1 CLB?) ;
 SELECT ("olla") + V + Prt + Sg1 ;     # OLIN
-REMOVE ("olla") + V + PrsPrc + Pass + Pl + Nom (NOT 1 Nom) (NOT 1 Pl) ; # XXXX
-REMOVE ("tulla") + V + PrsPrc + Pass + Pl + Nom (NOT 1 Nom) (NOT 1 Pl) ;
+REMOVE ("olla") + V + PrsPrc + Pass + Pl + Nom (NEGATE 1 Nom) (NEGATE 1 Pl) ; # XXXX
+REMOVE ("tulla") + V + PrsPrc + Pass + Pl + Nom (NEGATE 1 Nom) (NEGATE 1 Pl) ;
 REMOVE ("pidetä") + Pass ;
 SELECT ("päästä") + V + Prs + Pass ; # XXXX CHECK IN LARGE CORPUS!
 SELECT ("riittää") + Prs + VSg3 ; # XXXX -"-
@@ -2454,7 +2477,7 @@ REMOVE ("suomia") + V ;
 REMOVE ("suoria") + V ;
 SELECT ("taata") + V + InfA ; # XXXX
 REMOVE ("tervehtää") + V ;
-SELECT ("toimia") + V + Prt + Sg3 (-1C N_Pron) (NOT *-2 VFIN) (NOT 1 VFIN) (NOT 2 VFIN) (NOT 3 VFIN) ;
+SELECT ("toimia") + V + Prt + Sg3 (-1C N_Pron) (NEGATE *-2 VFIN) (NEGATE 1 VFIN) (NEGATE 2 VFIN) (NEGATE 3 VFIN) ;
 SELECT ("tulla") + V + Prt + Sg3 (-1C Nom) (-1 Sg) ;
 SELECT ("tulla") + V + Prt + Sg3 (-2C Nom) (-2 Sg) ;
 SELECT ("tulla") + V + Prt + Sg3 (1 Ill_Tra) ;
@@ -2464,13 +2487,13 @@ SELECT ("tulla") + V + Prt + Sg3 (1 A) (2 N) ;
 SELECT ("tulla") + V + Prt + Sg3 (*-1 VFIN LINK *1 Conj) ;
 SELECT ("tulla") + V + Prs + Pl1 ;   # TULEMME, RISKY!
 SELECT ("tulla") + V + Prt + Sg3 (-1 Ela_Tra_Ill_All) ;
-SELECT ("vaikuttaa") + V + Prs + Pl3 (*-1 CLB? LINK NOT *1 VFIN) (NOT 1 Nom) (NOT 1 Pl) ;
-SELECT ("vaikuttaa") + V + Prs + Sg3 (*-1 CLB? LINK NOT *1 VFIN) (NOT 1 Nom) (NOT 1 Sg) ;
+SELECT ("vaikuttaa") + V + Prs + Pl3 (*-1 CLB? LINK NOT *1 VFIN) (NEGATE 1 Nom) (NEGATE 1 Pl) ;
+SELECT ("vaikuttaa") + V + Prs + Sg3 (*-1 CLB? LINK NOT *1 VFIN) (NEGATE 1 Nom) (NEGATE 1 Sg) ;
 REMOVE ("voida") + V + Act + Prt (0 Sg123) ; # XXXX
 REMOVE ("voida") + Act + Prt + VPl3 (0 Pl123) ;
-SELECT Act + Prs + VSg3 (*-1 CLB? LINK NOT 0 VFIN LINK NOT *1 VFIN) (-1C Nom) (-1 Sg)  (-1 N_Pron_Q) (NOT -1 NOUN+InfA) (NOT 0 Prt) (*1 CLB? LINK NOT *-1 VFIN) (NOT -2 InfA) (NOT -3 InfA) ;
-# (NOT -1 VFIN) (NOT -2 VFIN) (NOT -3 VFIN) (NOT -4 VFIN) ;
-#   (NOT 1 VFIN) (NOT 2 VFIN) (NOT 3 VFIN) (NOT 4 VFIN) ;
+SELECT Act + Prs + VSg3 (*-1 CLB? LINK NOT 0 VFIN LINK NOT *1 VFIN) (-1C Nom) (-1 Sg)  (-1 N_Pron_Q) (NEGATE -1 NOUN+InfA) (NEGATE 0 Prt) (*1 CLB? LINK NOT *-1 VFIN) (NEGATE -2 InfA) (NEGATE -3 InfA) ;
+# (NEGATE -1 VFIN) (NEGATE -2 VFIN) (NEGATE -3 VFIN) (NEGATE -4 VFIN) ;
+#   (NEGATE 1 VFIN) (NEGATE 2 VFIN) (NEGATE 3 VFIN) (NEGATE 4 VFIN) ;
 # JOKA LUO VARMUUDEN
 REMOVE ("vastoa") + V ;
 SELECT ("verrata") + V + InfE (-1 Ill) ; # SIIHEN VERRATEN
@@ -2490,66 +2513,66 @@ SELECT Pl1 (-2C ME) (-1 Nom) ;
 SELECT Pl2 (-1C TE) (-1 Nom) ;
 SELECT Pl2 (-2C TE) (-1 Nom) ;
 
-REMOVE Sg1 (*-1C VFIN LINK NOT *1 CLB?) (NOT -1 CLB?) (NOT 0 Pcle) ;
-REMOVE Sg2 (*-1C VFIN LINK NOT *1 CLB?) (NOT -1 CLB?) (NOT 0 Pcle) ;
+REMOVE Sg1 (*-1C VFIN LINK NOT *1 CLB?) (NEGATE -1 CLB?) (NEGATE 0 Pcle) ;
+REMOVE Sg2 (*-1C VFIN LINK NOT *1 CLB?) (NEGATE -1 CLB?) (NEGATE 0 Pcle) ;
 
-REMOVE Pl1 (*-1C VFIN LINK NOT *1 CLB?) (NOT -1 CLB?) (NOT 0 Pcle) ;
-REMOVE Pl2 (*-1C VFIN LINK NOT *1 CLB?) (NOT -1 CLB?) (NOT 0 Pcle) ;
+REMOVE Pl1 (*-1C VFIN LINK NOT *1 CLB?) (NEGATE -1 CLB?) (NEGATE 0 Pcle) ;
+REMOVE Pl2 (*-1C VFIN LINK NOT *1 CLB?) (NEGATE -1 CLB?) (NEGATE 0 Pcle) ;
 
-REMOVE Sg1 (*1C VFIN LINK NOT *-1 CLB?) (NOT 1 CLB?)  (NOT 0 Pcle) ;
-REMOVE Sg2 (*1C VFIN LINK NOT *-1 CLB?) (NOT 1 CLB?)  (NOT 0 Pcle) ;
+REMOVE Sg1 (*1C VFIN LINK NOT *-1 CLB?) (NEGATE 1 CLB?)  (NEGATE 0 Pcle) ;
+REMOVE Sg2 (*1C VFIN LINK NOT *-1 CLB?) (NEGATE 1 CLB?)  (NEGATE 0 Pcle) ;
 
-REMOVE Pl1 (*1C VFIN LINK NOT *-1 CLB?) (NOT 1 CLB?)  (NOT 0 Pcle) ;
-REMOVE Pl2 (*1C VFIN LINK NOT *-1 CLB?) (NOT 1 CLB?)  (NOT 0 Pcle) ;
+REMOVE Pl1 (*1C VFIN LINK NOT *-1 CLB?) (NEGATE 1 CLB?)  (NEGATE 0 Pcle) ;
+REMOVE Pl2 (*1C VFIN LINK NOT *-1 CLB?) (NEGATE 1 CLB?)  (NEGATE 0 Pcle) ;
 
 REMOVE Sg3 (-1 NEGV) ;
   # A FINITE VERB Sg3 CANNOT FOLLOW NEGV AT POSITION 1.
-REMOVE Sg3 (-2 NEGV) (NOT -1 V) (NOT -1 CLB?) ;
-REMOVE Sg3 (-3 NEGV) (NOT -1 V) (NOT -1 CLB?) (NOT -2 V) (NOT -2 CLB?) ;
-REMOVE Sg3 (-4 NEGV) (NOT -1 V) (NOT -1 CLB?) (NOT -2 V) (NOT -2 CLB?) 
- (NOT -3 V) (NOT -3 CLB?) ; # XXXX
-REMOVE Sg3 (-5 NEGV) (NOT -1 V) (NOT -1 CLB?) (NOT -2 V) (NOT -2 CLB?) 
- (NOT -3 V) (NOT -3 CLB?)  (NOT -4 V) (NOT -4 CLB?) ; # XXXX
+REMOVE Sg3 (-2 NEGV) (NEGATE -1 V) (NEGATE -1 CLB?) ;
+REMOVE Sg3 (-3 NEGV) (NEGATE -1 V) (NEGATE -1 CLB?) (NEGATE -2 V) (NEGATE -2 CLB?) ;
+REMOVE Sg3 (-4 NEGV) (NEGATE -1 V) (NEGATE -1 CLB?) (NEGATE -2 V) (NEGATE -2 CLB?) 
+ (NEGATE -3 V) (NEGATE -3 CLB?) ; # XXXX
+REMOVE Sg3 (-5 NEGV) (NEGATE -1 V) (NEGATE -1 CLB?) (NEGATE -2 V) (NEGATE -2 CLB?) 
+ (NEGATE -3 V) (NEGATE -3 CLB?)  (NEGATE -4 V) (NEGATE -4 CLB?) ; # XXXX
 REMOVE (Neg V) (*-1 CLB? LINK NOT 0 NEGV LINK NOT *1 NEGV) (0 Sg3) ; # XXXX
 REMOVE N (0 VOI) (1 InfA) ;
   # "kayttojarjestelman voi asentaa..." GESTALT: VOI + Inf
-REMOVE V (0 InfA23) (NOT -1 NOUN+InfA) (-3 CLB?) (-2 Gen) (-1 Nom) ;
-REMOVE PrfPrc (NOT -1 NOUN+InfA) (-3 CLB?) (-2 Gen) (-1 Nom) ;
-REMOVE PrsPrc (NOT -1 NOUN+InfA) (-3 CLB?) (-2 Gen) (-1 Nom) ;
+REMOVE V (0 InfA23) (NEGATE -1 NOUN+InfA) (-3 CLB?) (-2 Gen) (-1 Nom) ;
+REMOVE PrfPrc (NEGATE -1 NOUN+InfA) (-3 CLB?) (-2 Gen) (-1 Nom) ;
+REMOVE PrsPrc (NEGATE -1 NOUN+InfA) (-3 CLB?) (-2 Gen) (-1 Nom) ;
   # "asennusohjelman ajo kestaa ..." . HEURISTIIKKA (KL).
 # TIDIGARE HETTE DENNA (@w REMOVE InfV ...
-REMOVE Prs (*-1C MAINV LINK NOT *1 CLB?) (NOT -1 CLB?) ;
-REMOVE Prt (*-1C MAINV LINK NOT *1 CLB?) (NOT -1 CLB?) ;
-REMOVE Imprt (*-1C MAINV LINK NOT *1 CLB?) (NOT -1 CLB?) ;
+REMOVE Prs (*-1C MAINV LINK NOT *1 CLB?) (NEGATE -1 CLB?) ;
+REMOVE Prt (*-1C MAINV LINK NOT *1 CLB?) (NEGATE -1 CLB?) ;
+REMOVE Imprt (*-1C MAINV LINK NOT *1 CLB?) (NEGATE -1 CLB?) ;
   # UP FOR MORPHOLOGY! LEFT SIDE.
 
   # commented out  Mon Jan 19 16:01:05 CET 2015 -FMT+KM
-#REMOVE Prs (*1C MAINV LINK NOT *-1 CLB?) (NOT 1 CLB?) (NOT 1 VFIN) ;
+#REMOVE Prs (*1C MAINV LINK NOT *-1 CLB?) (NEGATE 1 CLB?) (NEGATE 1 VFIN) ;
   # Kunnallisvaaleissa voivat äänestää ja asettua ehdolle ...
 
-REMOVE Prt (*1C MAINV LINK NOT *-1 CLB?) (NOT 1 CLB?) (NOT 1 VFIN) ;
-REMOVE Imprt (*1C MAINV LINK NOT *-1 CLB?) (NOT 1 CLB?) (NOT 1 VFIN) ;
+REMOVE Prt (*1C MAINV LINK NOT *-1 CLB?) (NEGATE 1 CLB?) (NEGATE 1 VFIN) ;
+REMOVE Imprt (*1C MAINV LINK NOT *-1 CLB?) (NEGATE 1 CLB?) (NEGATE 1 VFIN) ;
   # UP FOR MORPHOLOGY! RIGHT SIDE.
 
   # Barrier for Nom added and Conj for Nom also 19.01.2015 - FMT+KM
-SELECT VSg3 (NOT *-1 VFIN) (NOT *1C VFIN) (*-1C NomSg BARRIER REALCLB) ;
+SELECT VSg3 (NEGATE *-1 VFIN) (NEGATE *1C VFIN) (*-1C NomSg BARRIER REALCLB) ;
   # 4) Vie lippu ...
 
   # Sg3 verb made Conj 19.01.2015 - FMT+KM
 SELECT N + Sg IF (0 V) (1C* VSg3 BARRIER CLB) (NEGATE 0 WORD LINK *-1 NNom BARRIER CLB) ;
   # 1) Todista henkilöllisyytesi vaalivirkailijalle eli näytä passi ...
 
-# added '(NOT -1* VFIN BARRIER CLB) (NOT 1* VFIN BARRIER CLB) ;' - 20.01.2015 - FMT+KM
-SELECT VSg3 IF (0 N) (*-1 THIRD_PersON_SG_Noun BARRIER REALCLB) (NOT -1* VFIN BARRIER REALCLB) (NOT 1* VFIN BARRIER REALCLB) ;
+# added '(NEGATE -1* VFIN BARRIER CLB) (NEGATE 1* VFIN BARRIER CLB) ;' - 20.01.2015 - FMT+KM
+SELECT VSg3 IF (0 N) (*-1 THIRD_PersON_SG_Noun BARRIER REALCLB) (NEGATE -1* VFIN BARRIER REALCLB) (NEGATE 1* VFIN BARRIER REALCLB) ;
 
-# added '(NOT -1C* VFIN BARRIER REALCLB) (NOT 1C* VFIN BARRIER REALCLB) ;' - 20.01.2015 - FMT+KM
-SELECT VPl3 IF (0 N) (*-1 THIRD_PersON_PL_Noun BARRIER REALCLB) (NOT -1* VFIN BARRIER REALCLB) (NOT 1* VFIN BARRIER REALCLB) ;
+# added '(NEGATE -1C* VFIN BARRIER REALCLB) (NEGATE 1C* VFIN BARRIER REALCLB) ;' - 20.01.2015 - FMT+KM
+SELECT VPl3 IF (0 N) (*-1 THIRD_PersON_PL_Noun BARRIER REALCLB) (NEGATE -1* VFIN BARRIER REALCLB) (NEGATE 1* VFIN BARRIER REALCLB) ;
 
     # Tuli raivosi alueella, jossa... 
     # Problem: Mikko laski luotansa kyyhkysen nähdäksensä.
     
 # 'C' removed from VFIN - 20.01.2015 - FMT+KM
-SELECT VPl3 (NOT *-1 VFIN) (NOT *1 VFIN) (*-1 Nom LINK 0 Pl) ;
+SELECT VPl3 (NEGATE *-1 VFIN) (NEGATE *1 VFIN) (*-1 Nom LINK 0 Pl) ;
 # *** PCP
 IFF PrfPrc + Ins (1 N) (1 Ins) ;
 IFF PrsPrc + Ins (1 N) (1 Ins) ;
@@ -2560,34 +2583,34 @@ SELECT  ("tehdä") + PrfPrc + Pass + NomSg (-2 VFIN) (*-3 Gen LINK NOT *1 CLB?) 
 
 REMOVE PrsPrc + Pass + POSS_SUFF ;
 # LäHETYKSENSä "lähetä" Par-OBJ PrsPrc Pass Pos Sg Tra P-3 POSS_SUFF
-REMOVE PrfPrc + Pl + Nom (-1C Nom) (NOT -1 A) (NOT 1 Nom) (NOT 1 Pl) ;
+REMOVE PrfPrc + Pl + Nom (-1C Nom) (NEGATE -1 A) (NEGATE 1 Nom) (NEGATE 1 Pl) ;
   # "ohjeet näkyvät_=0 ...", "x-sg-nom ja y-sg-nom tulevat"
   # AFTER N_Q_Pron Pl Nom, PrfPrc = MAINVERB (MORE CHECKS) ;
-REMOVE PrsPrc + Pass + Pl + Nom (NOT 1 Nom) (NOT 1 Pl) (NOT 1 Num) (NOT -1 BOS) ;
+REMOVE PrsPrc + Pass + Pl + Nom (NEGATE 1 Nom) (NEGATE 1 Pl) (NEGATE 1 Num) (NEGATE -1 BOS) ;
 REMOVE ("olla") + PrsPrc + Pass ;
 REMOVE ("tulla") + PrsPrc + Pass ;
 # OLLUT,TULLUT,MääRITELLYT
 REMOVE PrsPrc + Nom + Pass + Pl (-1 COP) ;
 #SELECT (PrsPrc Act A Pos Sg Gen) (0 THREE) ; # ??
-SELECT REF (-1 Ref-VERB + REF-CORR) (NOT 1 A) (NOT 1 Conj) (NOT 1 Gen) (NOT 0 YLLATTAA) ;
-SELECT REF (-2 Ref-VERB + REF-CORR) (NOT -1 Par) (NOT -1 CLB?) (NOT 1 A) (NOT 1 Conj) (NOT 1 Gen) (NOT 0 YLLATTAA) ;
+SELECT REF (-1 Ref-VERB + REF-CORR) (NEGATE 1 A) (NEGATE 1 Conj) (NEGATE 1 Gen) (NEGATE 0 YLLATTAA) ;
+SELECT REF (-2 Ref-VERB + REF-CORR) (NEGATE -1 Par) (NEGATE -1 CLB?) (NEGATE 1 A) (NEGATE 1 Conj) (NEGATE 1 Gen) (NEGATE 0 YLLATTAA) ;
 #  ED. "ammattiin valmistavan kaksivuotisen koulun merkitystä"
-SELECT REF (-3 Ref-VERB + REF-CORR) (NOT -1 Par) (NOT -2 CLB?) (NOT 1 A) (NOT 1 Conj) (NOT 1 Gen) (NOT 0 YLLATTAA) (NOT -1 CLB?) ;
-SELECT REF (-4 Ref-VERB + REF-CORR) (NOT -1 Par) (NOT -1 CLB?) (NOT 1 A) (NOT 1 Conj) (NOT 1 Gen) (NOT 0 YLLATTAA) (NOT -2 CLB?) (NOT -3 CLB?) ;
-SELECT REF (-5 Ref-VERB + REF-CORR) (NOT -1 Par) (NOT -4 CLB?) (NOT 1 A) (NOT 1 Conj) (NOT 1 Gen) (NOT 0 YLLATTAA) (NOT -3 CLB?) (NOT -2 CLB?) (NOT -1 CLB?) ;
-SELECT REF (-6 Ref-VERB + REF-CORR) (NOT -1 Par) (NOT -5 CLB?) (NOT 1 A) (NOT 1 Conj) (NOT 1 Gen) (NOT 0 YLLATTAA) (NOT -4 CLB?) (NOT -3 CLB?) (NOT -2 CLB?) (NOT -1 CLB?) ;
+SELECT REF (-3 Ref-VERB + REF-CORR) (NEGATE -1 Par) (NEGATE -2 CLB?) (NEGATE 1 A) (NEGATE 1 Conj) (NEGATE 1 Gen) (NEGATE 0 YLLATTAA) (NEGATE -1 CLB?) ;
+SELECT REF (-4 Ref-VERB + REF-CORR) (NEGATE -1 Par) (NEGATE -1 CLB?) (NEGATE 1 A) (NEGATE 1 Conj) (NEGATE 1 Gen) (NEGATE 0 YLLATTAA) (NEGATE -2 CLB?) (NEGATE -3 CLB?) ;
+SELECT REF (-5 Ref-VERB + REF-CORR) (NEGATE -1 Par) (NEGATE -4 CLB?) (NEGATE 1 A) (NEGATE 1 Conj) (NEGATE 1 Gen) (NEGATE 0 YLLATTAA) (NEGATE -3 CLB?) (NEGATE -2 CLB?) (NEGATE -1 CLB?) ;
+SELECT REF (-6 Ref-VERB + REF-CORR) (NEGATE -1 Par) (NEGATE -5 CLB?) (NEGATE 1 A) (NEGATE 1 Conj) (NEGATE 1 Gen) (NEGATE 0 YLLATTAA) (NEGATE -4 CLB?) (NEGATE -3 CLB?) (NEGATE -2 CLB?) (NEGATE -1 CLB?) ;
 REMOVE REF (*-1C CLB?-C LINK NOT *1 Ref-VERB) ;
-SELECT REF (*-1C REF LINK *1 Conj)  (NOT 1 A) (NOT 1 Conj) (NOT 1 Gen) ;
+SELECT REF (*-1C REF LINK *1 Conj)  (NEGATE 1 A) (NEGATE 1 Conj) (NEGATE 1 Gen) ;
 # Act ADDED AUG. 8, 95# I.E. Pass NOW NOT HANDLED, MUCH WORK NEEDED ON All InsT
-# (NOT 1 A,Gen) ALSO ADDED, CF. RIITTÄVÄN NOPEA, HUIMAAVAN NOPEA
+# (NEGATE 1 A,Gen) ALSO ADDED, CF. RIITTÄVÄN NOPEA, HUIMAAVAN NOPEA
 SELECT TEMP-Par + POSS_SUFF  ;
 # OSTETTUAAN AUTON
-SELECT TEMP-Par (-1 Gen) (NOT 1 Par) (NOT -1 V) ; # OLEVAN PERUSTELTUA
-REMOVE TEMP-Par (1 Par) (NOT -1 Gen) ;
-REMOVE TEMP-Par (1 Gen) (2 Par) (NOT -1 Gen) ;
-REMOVE TEMP-Par (NOT -1 Gen) (1 Comp) ;
+SELECT TEMP-Par (-1 Gen) (NEGATE 1 Par) (NEGATE -1 V) ; # OLEVAN PERUSTELTUA
+REMOVE TEMP-Par (1 Par) (NEGATE -1 Gen) ;
+REMOVE TEMP-Par (1 Gen) (2 Par) (NEGATE -1 Gen) ;
+REMOVE TEMP-Par (NEGATE -1 Gen) (1 Comp) ;
 REMOVE TEMP-Par (-2C Par) (-1 Conj) ;
-REMOVE TEMP-Par (*-1 OLLA LINK 0 VFIN LINK NOT *1 VFIN) (NOT -1 CLB?) ;
+REMOVE TEMP-Par (*-1 OLLA LINK 0 VFIN LINK NOT *1 VFIN) (NEGATE -1 CLB?) ;
 
 
 # *** CC ***
@@ -2608,49 +2631,51 @@ SELECT ("joko") + CC (*1 TAI) ;
 SELECT ("vaan") + CC (-1 ComMA) ;
 SELECT ("vaan") + CC (1C VFIN-C-MYOS) ;
 
+SELECT Conj IF (-1 BOS OR Punct) ; # TP
+
 # added 20.01.2015 - FMT+KM
-REMOVE CC IF (0 MYOS) (NOT -1* VAAN) ;
+REMOVE CC IF (0 MYOS) (NEGATE -1* VAAN) ;
   # Onko myös Marilla koira ?
 
 REMOVE (NOCAP) ;
 # DELETES SPURIOUS PropER N READINGS LIKE (ARVO Prop) ;
 REMOVE (CAP) ;
 # DELETES SPURIOUS ComMON N READINGS LIKE (ARVO Prop) ;
-#(@w SELECT (CS "sillä") (-1 ComMA) (NOT 1 Ade) ;
+#(@w SELECT (CS "sillä") (-1 ComMA) (NEGATE 1 Ade) ;
 SELECT ("sillä") + CS (1C Nom) (2C VFIN) ;
-SELECT ("sillä") + CS (NOT 1 CLB?) (2C Nom) (3C VFIN) ;
+SELECT ("sillä") + CS (NEGATE 1 CLB?) (2C Nom) (3C VFIN) ;
 SELECT ("sillä") + CS (1 JOS_KUN_KOSKA_VAIKKA) ;
 SELECT ("sillä") + CS (2 JOS_KUN_KOSKA_VAIKKA) ;
 SELECT ("se") + Pron + Sg + Ade (-1 C_Adv) ;
-SELECT ("se") + Pron + Sg + Ade (NOT -1 CLB?) (-2 C_Adv) ;
+SELECT ("se") + Pron + Sg + Ade (NEGATE -1 CLB?) (-2 C_Adv) ;
 #(@w SELECT (Pron Sg Ade "se") (1C OLLA) (1 VFIN) ; # TULEE VIRHEITä LIIKAA
-SELECT ("se") + Pron + Sg + Ade (1 CLB?) (NOT 1 JOS_KUN_KOSKA_VAIKKA) ;
+SELECT ("se") + Pron + Sg + Ade (1 CLB?) (NEGATE 1 JOS_KUN_KOSKA_VAIKKA) ;
 REMOVE ("häkä") + N + Pl  ;
 SELECT NSgGen + POSS_SUFF (-1C PCP) (-1 Gen) (-1 Sg) ; # XXXX
 REMOVE InfMa (0 ELAMA_KUOLEMA) ; # XXXX
 SELECT ("vanhempi") + N + Pl + POSS_SUFF ; # XXXX
 REMOVE ("vanhempi") + N + Tra  ; # XXXX
-SELECT ("voima") + N (*-1 OLLA LINK NOT *1 CLB?) (NOT -1 CLB?) ; # XXXX
-#REMOVE (DV-TTA) (0 Pass) (0 PrfPrc) (NOT 0 N) (NOT 0 A) ; # XXX AMMUTTAVA - don't have DV-TTA
+SELECT ("voima") + N (*-1 OLLA LINK NOT *1 CLB?) (NEGATE -1 CLB?) ; # XXXX
+#REMOVE (DV-TTA) (0 Pass) (0 PrfPrc) (NEGATE 0 N) (NEGATE 0 A) ; # XXX AMMUTTAVA - don't have DV-TTA
 #SELECT (<COERCE!>) ;    #  #843
 SELECT ("vuode") + NSgPar  ;           # VUODetTA
-SELECT ("vuode") + NSgGen (1 Po) (NOT 1 ASTI) ; # VUOTEEN VIEREssä
+SELECT ("vuode") + NSgGen (1 Po) (NEGATE 1 ASTI) ; # VUOTEEN VIEREssä
 SELECT ("vuosi") + NSgIll (*1 NEGV) ;
 SELECT ("vuosi") + NSgIll (*-1 NEGV) ;
 SELECT ("voi") + Interj (1 HITTO) ; # #848
 REMOVE ("voi") + NPlNom ;
 SELECT InfA (-1C NOUN+InfA) (*1C VFIN LINK NOT *-1 CLB?) ;
-REMOVE InfA (*-1 CLB? LINK NOT *1 VFIN) (NOT *-1 InfA) (*1 CLB? LINK NOT *-1 VFIN) (0 VFIN) (NOT *-1 KO) (NOT *-1 NOUN+InfA) (NOT *-1 InfA-VERB) ;
+REMOVE InfA (*-1 CLB? LINK NOT *1 VFIN) (NEGATE *-1 InfA) (*1 CLB? LINK NOT *-1 VFIN) (0 VFIN) (NEGATE *-1 KO) (NEGATE *-1 NOUN+InfA) (NEGATE *-1 InfA-VERB) ;
 # "yritys täyttää ehdot" (ELIMINOI COORD-MAHD) ;
 SELECT InfA (*-1 VOI LINK NOT *1 CLB?) (*-1 VOI LINK NOT *1 InfA) ;
 SELECT ("pitää") + V + Prs + Sg3 (1C InfA) ;
-SELECT ("pitää") + V + Prs + Sg3 (NOT 1 CLB?) (NOT 1 VFIN) (2C InfA) ;
+SELECT ("pitää") + V + Prs + Sg3 (NEGATE 1 CLB?) (NEGATE 1 VFIN) (2C InfA) ;
 SELECT V + Prs + Pl3 (-2C N) (-2 Nom) (-2 Pl) (*-1 CLB? LINK NOT *1 VFIN) (*1 CLB? LINK NOT *-1 VFIN) ; # ARVIOT HUOMISESTA MUUTTUVAT
-SELECT V + Prs + Pass + Neg (*-1C NEGV LINK NOT *1 VFIN) (NOT 0 N) (NOT 0 Pron) (0 Act) (NOT *1 Neg) (NOT *-1 Neg) (NOT *-1 NIIN) (NOT 0 SAAPUA) ; # removed (0 DV-TTA) ;
-SELECT V + Prs + Act + Neg (*-1C NEGV LINK NOT *1 VFIN) (NOT 0 N) (NOT 0 Pron) (NOT *1 Neg) (NOT *-1 Neg) (NOT 0 Pass) (NOT *-1 NIIN) (*-1C NEGV LINK NOT *1 CLB?) (*-1C NEGV LINK NOT 0 Imprt) ;
+SELECT V + Prs + Pass + Neg (*-1C NEGV LINK NOT *1 VFIN) (NEGATE 0 N) (NEGATE 0 Pron) (0 Act) (NEGATE *1 Neg) (NEGATE *-1 Neg) (NEGATE *-1 NIIN) (NEGATE 0 SAAPUA) ; # removed (0 DV-TTA) ;
+SELECT V + Prs + Act + Neg (*-1C NEGV LINK NOT *1 VFIN) (NEGATE 0 N) (NEGATE 0 Pron) (NEGATE *1 Neg) (NEGATE *-1 Neg) (NEGATE 0 Pass) (NEGATE *-1 NIIN) (*-1C NEGV LINK NOT *1 CLB?) (*-1C NEGV LINK NOT 0 Imprt) ;
 REMOVE ("parka") + A + Ela ;
 SELECT ("voida") + V + Prs + KO ;
-IFF ("puoli") + Num + Pl + Nom (NOT -1 Pl) (NOT *-1 ASIA) ;
+IFF ("puoli") + Num + Pl + Nom (NEGATE -1 Pl) (NEGATE *-1 ASIA) ;
 REMOVE N + Pl (0 VUO_VOI) ;   # NB "voista" ETC
 # (@w REMOVE REF (*-1 Ref-VERB LINK NOT 0 VFIN LINK NOT *1 Ref-VERB) ;
 # 11 ERRORS OUT OF 14 IN PK.ANL!!
@@ -2659,36 +2684,36 @@ SELECT PrsPrc + Pass + Gen (1C Gen) ;
 SELECT Act + PrsPrc + Gen + ("riittää") (1C A_PCP) ; # 
 #(@w SELECT PCP (0 Gen) (0 REF) (1C Conj) (*2 PCP LINK 0 Gen LINK NOT *-1 Ref-VERB) ;
 # NB: ???XXX
-SELECT A (0 REF) (1C Conj) (*2 A + Gen BARRIER V OR CLB?)(NOT *1 Ref-VERB)(NOT *-1 Ref-VERB) ;
+SELECT A (0 REF) (1C Conj) (*2 A + Gen BARRIER V OR CLB?)(NEGATE *1 Ref-VERB)(NEGATE *-1 Ref-VERB) ;
 SELECT ("vanhempi") + NGen (1 N) (1 NOT-Gen-CASE) ;
 SELECT ("vanhempi") + NGen (1 N) (1 Gen) (1 Sg) ;
-REMOVE ("vanhempi") + N (NOT 0 Gen) (1 N) (1 NOT-Gen-CASE) ;
-SELECT ("puolesta") + Adv (0 POSS_SUFF) (NOT -1 Gen) ; # PUOLESTAAN
+REMOVE ("vanhempi") + N (NEGATE 0 Gen) (1 N) (1 NOT-Gen-CASE) ;
+SELECT ("puolesta") + Adv (0 POSS_SUFF) (NEGATE -1 Gen) ; # PUOLESTAAN
 REMOVE ("usea") + A + Sup ;
-REMOVE A + Ill (0 Adv) (NOT 1 Ill) ; # TURHAAN, PITKääN
+REMOVE A + Ill (0 Adv) (NEGATE 1 Ill) ; # TURHAAN, PITKääN
 
-SELECT NSgPar (-1C Par) (-1 A_Q_Pron) (-1 Sg) (NOT 1 Par) (NOT 0 KAUTTA) (*1 CLB? LINK *-1C VFIN) ;
+SELECT NSgPar (-1C Par) (-1 A_Q_Pron) (-1 Sg) (NEGATE 1 Par) (NEGATE 0 KAUTTA) (*1 CLB? LINK *-1C VFIN) ;
 
 REMOVE ("näkyä") + V + Prs + Pass + Neg ;       # NäYTä
 SELECT Imprt + Neg (*-1 Imprt LINK 0 NEGV LINK NOT *1 CLB?) ; # äLä TULE
-SELECT ("harva") + Qu + Pron (NOT *-1 HARVA-SET) (NOT *1 HARVA-SET) (NOT 0 Ins) (NOT 0 Ine) ;
-REMOVE ("voi") + Interj (NOT *1 HITTO) ;
-REMOVE ("voida") + V + Imprt (NOT *1 HYVIN-1) ;
+SELECT ("harva") + Qu + Pron (NEGATE *-1 HARVA-SET) (NEGATE *1 HARVA-SET) (NEGATE 0 Ins) (NEGATE 0 Ine) ;
+REMOVE ("voi") + Interj (NEGATE *1 HITTO) ;
+REMOVE ("voida") + V + Imprt (NEGATE *1 HYVIN-1) ;
 REMOVE ("voi") + N (*-1 CLB? LINK *1C N LINK 0 Nom LINK 0 Sg) ;
 REMOVE ("jää") + N (*-1 CLB? LINK *1C N LINK 0 Nom LINK 0 Sg) ;
-REMOVE ("hallita") + PrsPrc + Ela (NOT 1 Ela) ;
+REMOVE ("hallita") + PrsPrc + Ela (NEGATE 1 Ela) ;
 SELECT Refl + POSS_SUFF  ;
 SELECT Adv (0 InfMa) (0 Abe) ; # VäLTTäMäTTä
-SELECT ("yli") + Adv (1C Num) (NOT 2 Gen) ; # not2gen added 9.10.2000, thisrule red cf above
+SELECT ("yli") + Adv (1C Num) (NEGATE 2 Gen) ; # not2gen added 9.10.2000, thisrule red cf above
 SELECT PrsPrc + Pass + Pl + Nom (1C Num) (1 Nom) ; # ARVIOIDUT 400 KERTAA
 REMOVE PrsPrc + Pass + Pl + Nom (1C Nom) (1 Sg) ; # ESITYSTä VALMISTELLUT RYHMä
 SELECT ("jälkeen") + Po (-2C Gen) (-1 Num) ; # VUODEN 1980 JÄLKEEN
 SELECT A + Ins (1 Conj) (2 Ins) (2 A_N) ;
-REMOVE A + Ins (NOT 1 Ins) (NOT 2 Ins) ;
+REMOVE A + Ins (NEGATE 1 Ins) (NEGATE 2 Ins) ;
 SELECT ("valta") + NSgGen (*-1 CLB? LINK *1 VAllAN-WDS) ;
 SELECT ("valta") + NSgGen (*1 CLB? LINK *-1 VAllAN-WDS) ;
 SELECT Interr + Adv (1C A) ;
-SELECT ("tarpeeksi") + Adv (NOT 1 A) ;
+SELECT ("tarpeeksi") + Adv (NEGATE 1 A) ;
 SELECT ("niin") + Adv (1 A) (2 N) (*3 KUIN LINK NOT *-1 CLB?) ;
 SELECT ("niin") + Adv (1 A) (2 KUIN) (*3 CLB? LINK NOT *-1 A) ;
 SELECT ("niin") + Adv (1 A) (2 A) (3 KUIN) (*4 CLB? LINK NOT *-1 A) ;
@@ -2697,32 +2722,32 @@ SELECT ("harva") + A (1 HARVA-SET) ;
 SELECT ("harva") + A (-1 HARVA-SET) ;
 #FROM HERE ON, ADDED 26.8.
 SELECT ("mielestä") + Po (0 POSS_SUFF) (-1C Gen) (-1 Pers) ; # # 898
-#(@w SELECT (Adv "mielestä") (0 POSS_SUFF) (NOT -1 Gen) ;
+#(@w SELECT (Adv "mielestä") (0 POSS_SUFF) (NEGATE -1 Gen) ;
 SELECT ("mukaan") + Po (0 POSS_SUFF) (-1C Gen) (-1 Pers) ; #  HäNEN MUKAANSA
-SELECT  Po + GenLeft + POSS_SUFF (0 ParLeft) (0 ParRight) (-1C Gen) (NOT -1 Par) (NOT 1 Par) ; # KAllE OLI HäNEN EDELLääN
+SELECT  Po + GenLeft + POSS_SUFF (0 ParLeft) (0 ParRight) (-1C Gen) (NEGATE -1 Par) (NEGATE 1 Par) ; # KAllE OLI HäNEN EDELLääN
 REMOVE Pr + POSS_SUFF ;       # * EDELLääN MEITä
-REMOVE Po + POSS_SUFF (NOT -1 Pers) ; # + GenLeft) ;
+REMOVE Po + POSS_SUFF (NEGATE -1 Pers) ; # + GenLeft) ;
 SELECT ("parhaillaan") + Adv ;
 REMOVE ("töikseen") + Adv ;
 SELECT ("jälkeen") + Adv + POSS_SUFF ;
 REMOVE Prop + POSS_SUFF ;          # ANNILTAAN
 REMOVE PrfPrc (0 POSS_SUFF) ;          # ANNILTAAN
 REMOVE PrsPrc (0 POSS_SUFF) ;          # ANNILTAAN
-SELECT NPar + POSS_SUFF (-1 Par-OBJ) (NOT -1 Ela-Advl) ;
-SELECT NPar + POSS_SUFF (-2 Par-OBJ) (-1 A) (-1 Par) (NOT -2 Ela-Advl) ;
+SELECT NPar + POSS_SUFF (-1 Par-OBJ) (NEGATE -1 Ela-Advl) ;
+SELECT NPar + POSS_SUFF (-2 Par-OBJ) (-1 A) (-1 Par) (NEGATE -2 Ela-Advl) ;
 REMOVE NomSg + POSS_SUFF (0 POSS-NomSg) (-1 POSS-DEL-V) ;
 REMOVE NomSg + POSS_SUFF (0 POSS-NomSg) (-2 POSS-DEL-V) ;
 REMOVE Pl + Nom + POSS_SUFF (0 POSS-NomPl) (-1 POSS-DEL-V) ;
 REMOVE Pl + Nom + POSS_SUFF (0 POSS-NomPl) (-2 POSS-DEL-V) ;
-REMOVE NomSg + POSS_SUFF (-1 PrsPrc_InfMa_InfE_REF_TEMP) (NOT -1 Pass) ;
-REMOVE NomSg + POSS_SUFF (-2 PrsPrc_InfMa_InfE_REF_TEMP) (NOT -2 Pass) ;
-REMOVE NomSg + POSS_SUFF (1 PrsPrc) (1 Act) (NOT *-1 VFIN) ; # AIKANSA ELäNYT
-REMOVE NomSg + POSS_SUFF (2 PrsPrc) (2 Act) (NOT 1 VFIN) (NOT 1 CLB?) (NOT *-1 VFIN) ; # CF. "kotinsa hienosti hoitaneet naiset..."
+REMOVE NomSg + POSS_SUFF (-1 PrsPrc_InfMa_InfE_REF_TEMP) (NEGATE -1 Pass) ;
+REMOVE NomSg + POSS_SUFF (-2 PrsPrc_InfMa_InfE_REF_TEMP) (NEGATE -2 Pass) ;
+REMOVE NomSg + POSS_SUFF (1 PrsPrc) (1 Act) (NEGATE *-1 VFIN) ; # AIKANSA ELäNYT
+REMOVE NomSg + POSS_SUFF (2 PrsPrc) (2 Act) (NEGATE 1 VFIN) (NEGATE 1 CLB?) (NEGATE *-1 VFIN) ; # CF. "kotinsa hienosti hoitaneet naiset..."
 REMOVE NomSg + POSS_SUFF (1 PrsPrc) (1 Act) (-1 ComMA) ;
 SELECT GenSg + POSS_SUFF (1 REF) ; # SANOI PUOLUEENSA OLEVAN (1 REF_TEMP) ;
-SELECT GenSg + POSS_SUFF (-1C A_Num_Pron_Q) (-1 Gen) (-1 Sg) (NOT -1 Pers) ;
+SELECT GenSg + POSS_SUFF (-1C A_Num_Pron_Q) (-1 Gen) (-1 Sg) (NEGATE -1 Pers) ;
 # TOISEN MAHDOLLISUUTENSA
-REMOVE NomSg + POSS_SUFF (-3C VFIN) (NOT -2 VFIN) (NOT -1 VFIN) (NOT -2 InfA) (NOT -1 InfA) (NOT -2 CLB?) (NOT -1 CLB?) (*-3 Nom) ;
+REMOVE NomSg + POSS_SUFF (-3C VFIN) (NEGATE -2 VFIN) (NEGATE -1 VFIN) (NEGATE -2 InfA) (NEGATE -1 InfA) (NEGATE -2 CLB?) (NEGATE -1 CLB?) (*-3 Nom) ;
 # TEKEE -STI ITSE ARVIONSA
 SELECT GenSg + POSS_SUFF (-2C Gen) (-2 Sg) (-2 POSS_SUFF) (-1C Conj) ;
 SELECT GenSg + POSS_SUFF (1C Conj) (2C Gen) (2 Sg) (2 POSS_SUFF) ;
@@ -2730,39 +2755,39 @@ SELECT Pl + Nom + POSS_SUFF (-2C Nom) (-2 Pl) (-2 POSS_SUFF) (-1C Conj) ;
 SELECT Pl + Nom + POSS_SUFF (1C Conj) (2C Nom) (2 Pl) (2 POSS_SUFF) ;
 SELECT NomSg + POSS_SUFF (-2C Nom) (-2 Sg) (-2 POSS_SUFF) (-1C Conj) ;
 SELECT NomSg + POSS_SUFF (1C Conj) (2C Nom) (2 Sg) (2 POSS_SUFF) ;
-REMOVE NNom + POSS_SUFF (1C Nom_Par) (1 N) (NOT 1 Prop) ;
+REMOVE NNom + POSS_SUFF (1C Nom_Par) (1 N) (NEGATE 1 Prop) ;
 # ????? POTENTIAllY TANKEROUS
 # LAKINIPPUNSA OSIA# VIRKANSA MAHDOLLISUUKSIA
-SELECT NSgNom + POSS_SUFF (*-1 Sg123 LINK 0 Act LINK 0 OLLA) (*-1 OLLA LINK *-1 Nom LINK 0 Sg) (NOT *-1 InfA) (NOT *1 Nom) (*-1 Sg123 LINK 0 OLLA LINK NOT *1 PCP) (NOT 0 V) (NOT 0 TILANNE) (*-1 Sg123 LINK 0 OLLA LINK NOT *1 CLB?) ;
+SELECT NSgNom + POSS_SUFF (*-1 Sg123 LINK 0 Act LINK 0 OLLA) (*-1 OLLA LINK *-1 Nom LINK 0 Sg) (NEGATE *-1 InfA) (NEGATE *1 Nom) (*-1 Sg123 LINK 0 OLLA LINK NOT *1 PCP) (NEGATE 0 V) (NEGATE 0 TILANNE) (*-1 Sg123 LINK 0 OLLA LINK NOT *1 CLB?) ;
 # SE ON EHKä AINA KOHTALONKYSYMYKSEMME
-SELECT NSgNom + POSS_SUFF (NOT *-1 Nom) (*1 Sg123 LINK 0 Act LINK NOT *-1 CLB?) (*1 Sg123 LINK NOT *-1 Nom) (NOT 0 V) (NOT 0 TILANNE) (NOT 1 N) (-1 Pron) (-1 Gen) (NOT 1 PCP) ;
+SELECT NSgNom + POSS_SUFF (NEGATE *-1 Nom) (*1 Sg123 LINK 0 Act LINK NOT *-1 CLB?) (*1 Sg123 LINK NOT *-1 Nom) (NEGATE 0 V) (NEGATE 0 TILANNE) (NEGATE 1 N) (-1 Pron) (-1 Gen) (NEGATE 1 PCP) ;
 # HäNEN EHDOTUKSENSA 4:N MUODON SUPISTAMISESTA 6:EEN ON ...
-SELECT NPlNom + POSS_SUFF (*-1 Pl123 LINK 0 Act LINK 0 OLLA) (*-1 OLLA LINK *-1 Nom LINK 0 Pl) (NOT *-1 InfA) (NOT *1 Nom) (*-1 Pl123 LINK 0 OLLA LINK NOT *1 PCP) (NOT 0 V) (*-1 Pl123 LINK 0 OLLA LINK NOT *1 CLB?) ;
-SELECT NPlNom + POSS_SUFF (NOT *-1 Nom) (*1 Pl123 LINK 0 Act LINK NOT *-1 CLB?) (*1 Pl123 LINK NOT *-1 Nom) (NOT 0 V) (NOT 1 N) (-1 Pron) (-1 Gen) (NOT 1 PCP) ;
+SELECT NPlNom + POSS_SUFF (*-1 Pl123 LINK 0 Act LINK 0 OLLA) (*-1 OLLA LINK *-1 Nom LINK 0 Pl) (NEGATE *-1 InfA) (NEGATE *1 Nom) (*-1 Pl123 LINK 0 OLLA LINK NOT *1 PCP) (NEGATE 0 V) (*-1 Pl123 LINK 0 OLLA LINK NOT *1 CLB?) ;
+SELECT NPlNom + POSS_SUFF (NEGATE *-1 Nom) (*1 Pl123 LINK 0 Act LINK NOT *-1 CLB?) (*1 Pl123 LINK NOT *-1 Nom) (NEGATE 0 V) (NEGATE 1 N) (-1 Pron) (-1 Gen) (NEGATE 1 PCP) ;
 # HäNEN EHDOTUKSENSA 4:N MUODON SUPISTAMISESTA 6:EEN OVAT ...
 SELECT NSgNom + POSS_SUFF (-2 NEGV) (-2 Sg123) (1 Neg) ;
 # EIKä HäNEN KANSANSUOSIONSA OLE
 REMOVE NSgGen + POSS_SUFF (-1 Gen) (-2 InfA) (-3 VFIN) (-3 OLLA) ;
 # TARKOITUS OLI SAADA HäNEN AUTONSA KUNTOON
-REMOVE NSgGen + POSS_SUFF (-1 Gen) (-2 InfA) (-4 VFIN) (-4 OLLA) (NOT -3 VFIN) ;
+REMOVE NSgGen + POSS_SUFF (-1 Gen) (-2 InfA) (-4 VFIN) (-4 OLLA) (NEGATE -3 VFIN) ;
 SELECT NPlNom + POSS_SUFF (-2 NEGV) (-2 Pl123) (1 Neg) ;
 REMOVE Imprt + Sg2 (*-1 CS LINK NOT *1 CLB?) ;
-REMOVE Imprt + Sg2 (-1C Nom) (NOT -1 Num + Card) ;
+REMOVE Imprt + Sg2 (-1C Nom) (NEGATE -1 Num + Card) ;
     # NOTE: Hack for bible lines with numberse at the beginning.
     # '12 Katso itse, isäni.'
         # was different from...
     # 'Katso itse, isäni.'
-REMOVE Imprt + Sg2 (-2C Nom) (NOT -1 CLB?) ;
-SELECT  Po + GenLeft (-1 Gen) (-1 N) (NOT -1 KERRAN) (NOT 1 Gen_Par) (NOT 0 N) ;
+REMOVE Imprt + Sg2 (-2C Nom) (NEGATE -1 CLB?) ;
+SELECT  Po + GenLeft (-1 Gen) (-1 N) (NEGATE -1 KERRAN) (NEGATE 1 Gen_Par) (NEGATE 0 N) ;
 #(@w SELECT Po (-1 Gen) ;
 # "erota kokoomuksen johdosta"# (CF. "pelottavan lähellä") ;
-SELECT InfA (-4C InfA-VERB) (NOT -3 VFIN) (NOT -2 VFIN) (NOT -1 Par) (NOT 0 N) (NOT 0 UUSIA) (NOT -1 CLB?) (NOT -2 CLB?) (NOT -3 CLB?) (NOT -1 VFIN) ;
-SELECT InfA (-5C InfA-VERB) (NOT -4 VFIN) (NOT -1 Par) (NOT 0 N) (NOT 0 UUSIA) (NOT -1 CLB?) (NOT -2 CLB?) (NOT -3 CLB?) (NOT -4 CLB?) (NOT -1 VFIN) (NOT -2 VFIN) (NOT -3 VFIN) ;
+SELECT InfA (-4C InfA-VERB) (NEGATE -3 VFIN) (NEGATE -2 VFIN) (NEGATE -1 Par) (NEGATE 0 N) (NEGATE 0 UUSIA) (NEGATE -1 CLB?) (NEGATE -2 CLB?) (NEGATE -3 CLB?) (NEGATE -1 VFIN) ;
+SELECT InfA (-5C InfA-VERB) (NEGATE -4 VFIN) (NEGATE -1 Par) (NEGATE 0 N) (NEGATE 0 UUSIA) (NEGATE -1 CLB?) (NEGATE -2 CLB?) (NEGATE -3 CLB?) (NEGATE -4 CLB?) (NEGATE -1 VFIN) (NEGATE -2 VFIN) (NEGATE -3 VFIN) ;
 REMOVE InfA (-1 BOS) ; # KESTää AIKANSA TOIPUA.
-SELECT V + Act + Sg3 (-1C Conj) (-4C VFIN) (-4 Sg3) (-4 Act) (NOT -3 V) (NOT -3 CLB?) (NOT -2 V) (NOT -2 CLB?) (*1 CLB? LINK NOT *-1 VFIN) (NOT -4 NES) (NOT -3 NES) (NOT -2 NES) (NOT -4 OLLA) ;
+SELECT V + Act + Sg3 (-1C Conj) (-4C VFIN) (-4 Sg3) (-4 Act) (NEGATE -3 V) (NEGATE -3 CLB?) (NEGATE -2 V) (NEGATE -2 CLB?) (*1 CLB? LINK NOT *-1 VFIN) (NEGATE -4 NES) (NEGATE -3 NES) (NEGATE -2 NES) (NEGATE -4 OLLA) ;
 # X LOPETTAA ASEIllA UHKAILUN JA ALOITTAA
-SELECT InfA (-1C Conj) (-4C InfA) (NOT -3 V) (NOT -3 CLB?) (NOT -2 V) (NOT -2 CLB?) ;
-SELECT InfA (-1C Conj) (-5C InfA) (NOT -3 V) (NOT -3 CLB?) (NOT -2 V) (NOT -2 CLB?) (NOT -4 V) (NOT -4 CLB?) ;
+SELECT InfA (-1C Conj) (-4C InfA) (NEGATE -3 V) (NEGATE -3 CLB?) (NEGATE -2 V) (NEGATE -2 CLB?) ;
+SELECT InfA (-1C Conj) (-5C InfA) (NEGATE -3 V) (NEGATE -3 CLB?) (NEGATE -2 V) (NEGATE -2 CLB?) (NEGATE -4 V) (NEGATE -4 CLB?) ;
 SELECT (REF) (-2C Ref-VERB) (-1C Gen) (-1 POSS_SUFF) ; #SANONUT POIKANSA OLEVAN
 SELECT (REF) (-1C Ref-VERB) (1 Gen) (1 POSS_SUFF) ; #PELäTääN SAANEEN SURMANSA
 
@@ -2773,10 +2798,10 @@ REMOVE CC IF (1 EOS OR QMARK) ;
     # OMA
     # ---
 
-SELECT ("oma") + A + Par (NOT -1 Nom) ;
+SELECT ("oma") + A + Par (NEGATE -1 Nom) ;
 SELECT ("oma") + Sg (-1 Pron + Sg) ;
 SELECT ("oma") + Pl (-1 Pron + Pl) ;
-SELECT ("oma") + Gen (NOT 1 WORD) (*-1 REALCOPULAS) (0C Nom) ;
+SELECT ("oma") + Gen (NEGATE 1 WORD) (*-1 REALCOPULAS) (0C Nom) ;
 
     # ITSE
     # ----
@@ -2823,7 +2848,7 @@ SELECT ("itse") + Pl (1 VPl2) ;
 SELECT ("itse") + Pl (1 VPl3) ;
 
 
-SELECT ("itse") + Gen (1 Po) (NOT 1 ALL_PersON) ;
+SELECT ("itse") + Gen (1 Po) (NEGATE 1 ALL_PersON) ;
 
 # if the sg_plness matches up between the preceding verb and itse, then likely it is nom.
 
@@ -2860,33 +2885,33 @@ SELECT ("itse") + Pl + Nom IF (-1 ConNeg) (-2 VPl3 + Neg) ;
 
 
 SELECT ("puoli") + Num + GenSg (1 Gen) ; # PUOLEN METRIN MITTAIneN
-SELECT ConNeg (*-1C NEGV LINK NOT *1 VFIN_PrsPrc_Inf) (NOT 0 N) (NOT 0 Pron) (NOT *1 Neg) (NOT *-1 Neg) (NOT 0 Pass) (NOT *-1 NIIN) (*-1C NEGV LINK NOT *1 CLB?) (*-1C NEGV LINK NOT 0 Imprt) ;
+SELECT ConNeg (*-1C NEGV LINK NOT *1 VFIN_PrsPrc_Inf) (NEGATE 0 N) (NEGATE 0 Pron) (NEGATE *1 Neg) (NEGATE *-1 Neg) (NEGATE 0 Pass) (NEGATE *-1 NIIN) (*-1C NEGV LINK NOT *1 CLB?) (*-1C NEGV LINK NOT 0 Imprt) ;
 REMOVE Imprt + Sg2 (-1 N_V_A_Pron_Q) ;
 SELECT ("kaksi") + Num + GenSg (1 Gen) ;
 SELECT ("kaksi") + Num + GenSg (2 Gen) ;
 REMOVE ("halva") + N ;
-REMOVE ("esimerkki") + N + Sg + Tra (NOT *-1 OTTAA_KELVATA) (NOT -1 Tra) (NOT *1 OTTAA_KELVATA) ; # adv "esimerkiksi"
+REMOVE ("esimerkki") + N + Sg + Tra (NEGATE *-1 OTTAA_KELVATA) (NEGATE -1 Tra) (NEGATE *1 OTTAA_KELVATA) ; # adv "esimerkiksi"
 REMOVE ("kulku") + N + Pl ;
 REMOVE ("maksa") + N + Pl ;
 REMOVE ("vakio") + A ;
 REMOVE ("loppua") + V + Prs + Act + Sg2 ;
-REMOVE ("puhella") + V + Prs + Act + Sg1 (NOT *-1 MINÄ) (NOT *1 ITSE) ;
+REMOVE ("puhella") + V + Prs + Act + Sg1 (NEGATE *-1 MINÄ) (NEGATE *1 ITSE) ;
 SELECT ("soittaa") + V (1 Num_C_HETI_CLB) ;
 SELECT ("soittaa") + V (2 Num_C_HETI_CLB) ;
 SELECT ("soittaa") + V (-1 Num_C_HETI_CLB) ;
-SELECT ("psykologia") + N (NOT -1 Par) (NOT -1 Neg) (NOT -2 Neg) ;
-SELECT ("sosiaali_psykologia") + N (NOT -1 Par) (NOT -1 Neg) (NOT -2 Neg) ;
-SELECT ("filosofia") + N (NOT -1 Par) (NOT -1 Neg) (NOT -2 Neg) ;
-SELECT ("sosiologia") + N (NOT -1 Par) (NOT -1 Neg) (NOT -2 Neg) ;
-SELECT ("psykiatria") + N (NOT -1 Par) (NOT -1 Neg) (NOT -2 Neg) ;
+SELECT ("psykologia") + N (NEGATE -1 Par) (NEGATE -1 Neg) (NEGATE -2 Neg) ;
+SELECT ("sosiaali_psykologia") + N (NEGATE -1 Par) (NEGATE -1 Neg) (NEGATE -2 Neg) ;
+SELECT ("filosofia") + N (NEGATE -1 Par) (NEGATE -1 Neg) (NEGATE -2 Neg) ;
+SELECT ("sosiologia") + N (NEGATE -1 Par) (NEGATE -1 Neg) (NEGATE -2 Neg) ;
+SELECT ("psykiatria") + N (NEGATE -1 Par) (NEGATE -1 Neg) (NEGATE -2 Neg) ;
 REMOVE ("ohja") + N ;
-REMOVE ("tutka") + N + Pl (NOT -1 Par) ;
-REMOVE ("verta") + NSgPar (NOT -1 Gen) ;
+REMOVE ("tutka") + N + Pl (NEGATE -1 Par) ;
+REMOVE ("verta") + NSgPar (NEGATE -1 Gen) ;
 REMOVE ("kokki") + N + Pl ;
 REMOVE ("palkinta") + N + Pl ;
 REMOVE ("laitto") + N ;
-SELECT ("tehtävä") + NSgNom (NOT -1 OLLA) (NOT -2 OLLA) (NOT -3 OLLA) 
- (NOT -4 OLLA) ;   # "tämä on tehtävä" on amb!
+SELECT ("tehtävä") + NSgNom (NEGATE -1 OLLA) (NEGATE -2 OLLA) (NEGATE -3 OLLA) 
+ (NEGATE -4 OLLA) ;   # "tämä on tehtävä" on amb!
 REMOVE ("saada") + ImprtActSg2 ;    # saa
 REMOVE ("haitata") + ImprtActSg2 ;
 REMOVE ("pilata") + ImprtActSg2 ;
@@ -2902,7 +2927,7 @@ REMOVE ("mallin") + Adv ;
 #(@w REMOVE (A "normaalinen") ;
 #(@w REMOVE (A "lehtinen") ;
 REMOVE A (0 EHTA) ;
-REMOVE ("kiire") + A (NOT 1 N) ;
+REMOVE ("kiire") + A (NEGATE 1 N) ;
 REMOVE ("koti-ikävä") + A ;
 REMOVE ("arpoa") + V ;
 REMOVE ("laitostaa") + V ;
@@ -2917,33 +2942,33 @@ SELECT ("sopiva") + A ;
 SELECT ("katto") + N ;       # stryk "katoilla" DV-ILE
 REMOVE ("olympialainen") + A ;
 #added Dec 29, 1996, from xac
-SELECT ("uusinta") + N (NOT 1 Par) (NOT 2 Par) ;
+SELECT ("uusinta") + N (NEGATE 1 Par) (NEGATE 2 Par) ;
 SELECT ("lohko") + N ;
 SELECT ("hän") + Pron + Sg + Par + Pers IF (*-1 NEGV LINK NOT *1 CLB?) ;
 SELECT ("hän") + Pron + Sg + Par + Pers IF (*1 NEGV) ;
 
-SELECT V IF (0 N) (0 V) (*1 NSgNom BARRIER CLB) (NOT -1 CLB); 
+SELECT V IF (0 N) (0 V) (*1 NSgNom BARRIER CLB) (NEGATE -1 CLB); 
 # Ja tuli ehtoo, ja tuli aamu.
 # ... Ja tuli tuli? 
 
 #REMOVE (<MORPH-HEUR!>) (0 <CORRECT!>) ;
 #REMOVE (<Del!>) ;      # aisti_toiminta Pl
-#(@w REMOVE Prop (NOT 0 UP) ; # handled by fn remove-cap etc. in cgp
+#(@w REMOVE Prop (NEGATE 0 UP) ; # handled by fn remove-cap etc. in cgp
 #next ones added April 17, 2000 ---->
 SELECT ("vuosi") + N (-1 Num-Q-Ill) ;
 SELECT ("vuosi") + N (1 Num) ;
 SELECT ("vuosi") + N (-1 VIIME) ;
-SELECT ("nousta") + Prs + Pl3 (-1 Nom) (-1 Pl) (NOT *1 VFIN) ;
-SELECT ("nousta") + Prs + Pl3 (-2 Nom) (-2 Pl) (NOT *1 VFIN) ;
-SELECT ("nousta") + Prs + Pl3 (NOT *1 Nom) ;
+SELECT ("nousta") + Prs + Pl3 (-1 Nom) (-1 Pl) (NEGATE *1 VFIN) ;
+SELECT ("nousta") + Prs + Pl3 (-2 Nom) (-2 Pl) (NEGATE *1 VFIN) ;
+SELECT ("nousta") + Prs + Pl3 (NEGATE *1 Nom) ;
 SELECT ("nousta") + Prs + Pl3 (0 KO) ;
 SELECT ("nousta") + REF (*-1 Ref-VERB) ;
-REMOVE ("kilo") + Prop (NOT 0 Ine) (NOT 0 Ill) (NOT 0 Ela) ;
+REMOVE ("kilo") + Prop (NEGATE 0 Ine) (NEGATE 0 Ill) (NEGATE 0 Ela) ;
 REMOVE ("vieri") + NSgEla ;
 #REMOVE (PropP) (1C N) ;
-REMOVE V + Prs (1C VFIN) (NOT *-1 VFIN) ; #**CLB-C) ;
+REMOVE V + Prs (1C VFIN) (NEGATE *-1 VFIN) ; #**CLB-C) ;
 REMOVE ("normaalinen") + A ;
-SELECT Prop (0 UP) (NOT -1 BOS) ;
+SELECT Prop (0 UP) (NEGATE -1 BOS OR QUOTE) ;
 REMOVE A (0 DER) ;
 REMOVE N (0 DER) ;
 #REMOVE A_N (0 DER) ;
@@ -2952,13 +2977,13 @@ REMOVE ("suora") + N (1 N) ; # suoratA sijoitukset
 REMOVE ("hyvin") + Adv (1 Adv) ; # hyvinkinAdv nopeasti, was (1 MAN) ;
 SELECT Ord + Ela (1 Ela) ; # kahdeksannestaOrd ruudusta
 REMOVE Ord + POSS_SUFF ;  # nousi kolmannekseenN
-REMOVE A (0 LOC-CASE) (NOT 1 N) ; # nousi taivaisiin
+REMOVE A (0 LOC-CASE) (NEGATE 1 N) ; # nousi taivaisiin
 REMOVE ("yhdessä") + Adv (1C Ine) ; # yhdessäNum yössä
 SELECT Num (0 PARI_PUOLI) (0 Gen) (1 Gen) (1 Gen-WORD) ; # parin vuoden urakka
 SELECT  Pr + GenRight (0 YLI_AllE) (1 Num) (2 Gen) ; # yli 38 asteen
-SELECT  Pr + GenRight (0 YLI_AllE) (1C Gen) (NOT 1 TIME-WORD OR NOUN-OF-MEASURE) (NOT -1 Gen) ; 
+SELECT  Pr + GenRight (0 YLI_AllE) (1C Gen) (NEGATE 1 TIME-WORD OR NOUN-OF-MEASURE) (NEGATE -1 Gen) ; 
 SELECT Adv (0 YLI_AllE) (1 TIME-WORD OR NOUN-OF-MEASURE) ; 
-REMOVE Adv (0 YLI_AllE) (NOT 1 A_N_Q_Pron_PCP_Num) ;
+REMOVE Adv (0 YLI_AllE) (NEGATE 1 A_N_Q_Pron_PCP_Num) ;
 
 
 # Conjunctions
@@ -2999,13 +3024,13 @@ REMOVE REALVFIN IF (-1C* REALVFIN BARRIER (*) - Adv) ;
   # Mutta eilen oli erittäin kylmää!
 
 # added 19.01.2015 - FMT+KM
-REMOVE REALVFIN IF (1C* REALVFIN BARRIER CLB LINK NOT 1* REALVFIN) (NOT -1* REALVFIN);
+REMOVE REALVFIN IF (1C* REALVFIN BARRIER CLB LINK NOT 1* REALVFIN) (NEGATE -1* REALVFIN);
   # Seuraavat kunnallisvaalit ovat sunnuntaina 28.10.2012.
   # Jaakko ja Mari pitävät kovasti leikkimisestä, he leikkivät aina yhdessä puutarhassa ison talon edessä.
 
 # added 20.01.2015 - FMT+KM 
 # see rule around line :2043
-#REMOVE AgPrc IF (0 InfMa OR AgPrc) (0C Ine) (NOT 1* N + Ine BARRIER CLB) (NOT -1* N + Ine BARRIER CLB) ;
+#REMOVE AgPrc IF (0 InfMa OR AgPrc) (0C Ine) (NEGATE 1* N + Ine BARRIER CLB) (NEGATE -1* N + Ine BARRIER CLB) ;
   # Heidän äitinsä on sisällä talossa kissan kanssa, hän katsoo ikkunasta ulos ja näkee Jaakon ja Marin leikkimässä.
 
 # added 20.01.2015 - FMT+KM 
@@ -3030,8 +3055,8 @@ SELECT Interr IF (-1 Pcle OR Adv LINK -1 BOS) (1* QMARK) ;
   # Missä Jaakko on ?
 
 # rule added - 20.01.2015 - FMT+KM
-REMOVE Pron + Interr + Ine IF (NOT 1* N + Ine) ;
-REMOVE Pron + Interr + Tra IF (NOT 1* N + Tra) ;
+REMOVE Pron + Interr + Ine IF (NEGATE 1* N + Ine) ;
+REMOVE Pron + Interr + Tra IF (NEGATE 1* N + Tra) ;
   # Missä Jaakko on ?
   # Entä mitä Jaakko tekee puun lähellä?
 
@@ -3051,9 +3076,9 @@ SELECT InfMa + Ade (0 Ade) ;
 #(@w REMOVE (A Pos Sg Par) (0 N) ;
 REMOVE  A + All (0 A) ;
 SELECT ("itse") + Pron ;  # **tankerous
-SELECT ("näin") + Adv (NOT -1 Pron + Pers) (*1 V BARRIER CLB) ;
-SELECT ("näin") + Adv (NOT -1 Pron + Pers) (*-1 V BARRIER CLB) ;
-SELECT ("osaksi") + Adv (NOT 1 Par) (NOT -1 OTTAA-2) (NOT -2 OTTAA-2) ; # bad
+SELECT ("näin") + Adv (NEGATE -1 Pron + Pers) (*1 V BARRIER CLB) ;
+SELECT ("näin") + Adv (NEGATE -1 Pron + Pers) (*-1 V BARRIER CLB) ;
+SELECT ("osaksi") + Adv (NEGATE 1 Par) (NEGATE -1 OTTAA-2) (NEGATE -2 OTTAA-2) ; # bad
 REMOVE ("huomaan") + Adv ;
 REMOVE V + Act + Prt (0 Prs) ; # voimme, voitte# pyrimme# **tankerous
 REMOVE ("häntä") + NNom ;
@@ -3061,30 +3086,30 @@ REMOVE ("taus") + NPar ;
 REMOVE ("tee") + NNom ;
 REMOVE ("voi") + N ;
 REMOVE ("valmis") + A + Pl ;
-REMOVE ("edusta") + NPar (NOT -1 Gen) ;
+REMOVE ("edusta") + NPar (NEGATE -1 Gen) ;
 REMOVE ("ammua") + V + Pass ;    # ammuttiin
-REMOVE ("aika") + A (NOT 1 N) (NOT 2 N) ;
+REMOVE ("aika") + A (NEGATE 1 N) (NEGATE 2 N) ;
 SELECT ("sitten") + Po (-1 TIME-WORD) (-1 Par) (-1 Pl) ; #**CLB-C) ; #vuosia sitten, cf. above sitten-rule
 SELECT ( "sitten") + Po (-1 TIME-WORD) (-1 Nom) (-1 Sg) ; #**CLB-C) ; #vuosi sitten
-REMOVE ("sitten") + Po (NOT -1 TIME-WORD) (NOT -2 TIME-WORD) ; #**CLB-C) ;
-SELECT ("sitten") + Pr (NOT -1 TIME-WORD) (NOT -2 TIME-WORD) (1 TIME-WORD) (1 Gen) ; #**CLB-C) ;
-SELECT ("sitten") + Pr (NOT -1 TIME-WORD) (NOT -2 TIME-WORD) (1 Gen) (2 TIME-WORD) (2 Gen) ; #**CLB-C) ;
-REMOVE ("sitten") + Pr (NOT 1 Gen) (NOT 2 Gen) ; #**CLB-C) ;
-SELECT ("kerran") + Adv (NOT -1 Gen) ;
+REMOVE ("sitten") + Po (NEGATE -1 TIME-WORD) (NEGATE -2 TIME-WORD) ; #**CLB-C) ;
+SELECT ("sitten") + Pr (NEGATE -1 TIME-WORD) (NEGATE -2 TIME-WORD) (1 TIME-WORD) (1 Gen) ; #**CLB-C) ;
+SELECT ("sitten") + Pr (NEGATE -1 TIME-WORD) (NEGATE -2 TIME-WORD) (1 Gen) (2 TIME-WORD) (2 Gen) ; #**CLB-C) ;
+REMOVE ("sitten") + Pr (NEGATE 1 Gen) (NEGATE 2 Gen) ; #**CLB-C) ;
+SELECT ("kerran") + Adv (NEGATE -1 Gen) ;
 REMOVE ("kerran") + Adv (-1 Gen) ;
 SELECT ("kovin") + Adv (1C A_Adv) ;
 SELECT ("puoli") + Num (1 Num) ; # puoli kahdeksan
-REMOVE ("päivätä") + V (NOT -1 NEGV) ; # xxxxx too general
-REMOVE ("kirjata") + V (NOT -1 NEGV) ; # xxxxx too general
+REMOVE ("päivätä") + V (NEGATE -1 NEGV) ; # xxxxx too general
+REMOVE ("kirjata") + V (NEGATE -1 NEGV) ; # xxxxx too general
 REMOVE ("vanhempi") + NSgNom ;
 IFF ("vielä") + Adv (1 Comp) ;
-SELECT Adv (0 PALJON) (NOT 1 CMP-ENNEN) (NOT 2 JALKEEN) ; #cf.above paljon-rules
+SELECT Adv (0 PALJON) (NEGATE 1 CMP-ENNEN) (NEGATE 2 JALKEEN) ; #cf.above paljon-rules
 SELECT ConNeg (-1C NEGV) ; # emme tunne
 
-REMOVE Imprt + Sg2 (NOT -1 BOS) (NOT -2 BOS) (NOT -1 Conj) (NOT -2 Conj) (-1 WORD) ;
+REMOVE Imprt + Sg2 (NEGATE -1 BOS) (NEGATE -2 BOS) (NEGATE -1 Conj) (NEGATE -2 Conj) (-1 WORD) ;
 SELECT Imprt + Sg2 (NEGATE -1 WORD) (*1 NNom BARRIER N) ;
     # Heitä mulle tuo kirja!
-SELECT Imprt + Sg2 (0 ConNeg) (NOT 0* Neg BARRIER V);
+SELECT Imprt + Sg2 (0 ConNeg) (NEGATE 0* Neg BARRIER V);
 #SELECT Imprt + Sg2 (0 ConNeg) (NEGATE 0 WORD LINK *-1 Neg BARRIER V) (NEGATE 0 WORD LINK *1 Neg BARRIER V) ;
     # Laula minulle! 
 
@@ -3092,9 +3117,9 @@ SELECT ("ennen") + Pr (1 KELLO) (2 Par) ;
 SELECT ("ennen") + Pr (1 KELLO) (2 Num) ; # (2 Num OR <Digit>) ;
 SELECT ("tulos") + N (*-1 PAATTYA) ; # päättyi tulokseen
 SELECT ("osinko") + N ; #osinko_osa
-REMOVE ("osanen") + N (NOT 1 Par) ; #osa_osanen (osasta) ;
+REMOVE ("osanen") + N (NEGATE 1 Par) ; #osa_osanen (osasta) ;
 SELECT ("vähän") + Adv (1 Gen) (2 JALKEEN) ; # 4.2.2001 !!->! cf.below
-REMOVE ("vähän") + Adv (NOT 1C CMP-ENNEN) (NOT 2 JALKEEN) ; # 4.2.2001 !!->! cf.below
+REMOVE ("vähän") + Adv (NEGATE 1C CMP-ENNEN) (NEGATE 2 JALKEEN) ; # 4.2.2001 !!->! cf.below
 
 # Syntactic Tags
 # --------------
@@ -3225,9 +3250,9 @@ MAP (@SUBJ→) TARGET NPar IF (NEGATE *-1 Nom BARRIER CLB) (NEGATE *1 Nom BARRIE
 
 MAP (@SUBJ→) TARGET NPar IF (NEGATE *-1 Nom BARRIER CLB) (NEGATE *1 Nom BARRIER CLB) (*-1 REALCOPULAS BARRIER CLB) ;
 
-MAP (@SUBJ→) TARGET NPlPar IF (NOT -1 WORD) (*1 REALCOPULAS BARRIER V) (*1 Num + Card)  ;
+MAP (@SUBJ→) TARGET NPlPar IF (NEGATE -1 WORD) (*1 REALCOPULAS BARRIER V) (*1 Num + Card)  ;
 
-# MAP (@SUBJ→) TARGET NPar IF (NEGATE *-1 Nom BARRIER CLB) (NEGATE *1 Nom BARRIER CLB) (*-1 REALCOPULAS BARRIER CLB) (NOT -1 WORD) (1 REALCOPULAS) (*1 (Num Card Nom)) ;
+# MAP (@SUBJ→) TARGET NPar IF (NEGATE *-1 Nom BARRIER CLB) (NEGATE *1 Nom BARRIER CLB) (*-1 REALCOPULAS BARRIER CLB) (NEGATE -1 WORD) (1 REALCOPULAS) (*1 (Num Card Nom)) ;
 
 # Necessitive subjects
 # --------------------
@@ -3262,7 +3287,7 @@ MAP (@←OBJ) TARGET Gen IF (-1 Act) (NEGATE 0 WORD LINK *1 Po BARRIER Po) (NEGA
     # Ettei minun äidin ystävä ole tullut.
 
 # Lounas syötiin
-MAP (@OBJ→) TARGET Nom (*1 Pass) (NOT 0 NES) ; 
+MAP (@OBJ→) TARGET Nom (*1 Pass) (NEGATE 0 NES) ; 
     # Needs barriers
     # Removed NES.
 
@@ -3272,7 +3297,7 @@ MAP (@←SPRED) TARGET ("pakko") IF (-1 REAL_AUX) ;
 
 # Syötiin lounas
 MAP (@←OBJ) TARGET Nom IF (*-1 Pass) ;
-MAP (@←OBJ) TARGET Par IF (*-1 Neg) ; #) (NOT 0 WORD LINK *-1 Punct *-2 Neg) ;
+MAP (@←OBJ) TARGET Par IF (*-1 Neg) ; #) (NEGATE 0 WORD LINK *-1 Punct *-2 Neg) ;
     # Needs barriers 
     
 
@@ -3280,7 +3305,7 @@ MAP (@←OBJ) TARGET Par IF (*-1 Neg) ; #) (NOT 0 WORD LINK *-1 Punct *-2 Neg) ;
 
 # MAP (@←OBJ) TARGET Par IF (NEGATE 0 WORD LINK *-1 Pr BARRIER Pr) (NEGATE 0 WORD LINK 1 Par) (*-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) ;
 
-MAP (@←OBJ) TARGET OBJ-CASEs IF (NEGATE 0 WORD LINK *-1 Pr BARRIER Pr) (NEGATE 0 WORD LINK 1 Par) (*-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) (NOT 0 Pron + Nom);
+MAP (@←OBJ) TARGET OBJ-CASEs IF (NEGATE 0 WORD LINK *-1 Pr BARRIER Pr) (NEGATE 0 WORD LINK 1 Par) (*-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) (NEGATE 0 Pron + Nom);
 
 # Need to not map obj in this case, rather subject or @<SPRED.
 
@@ -3350,7 +3375,7 @@ MAP (@-FAUXV) TARGET ConNeg (-1 Neg) ;
 MAP (@-FAUXV) TARGET ConNeg (-1 Neg LINK -1 Nom) ;  # (*1 NNom BARRIER NPNH LINK *-1 Neg LINK -1 Nom) ; 
 
 
-MAP (@+FAUXV) TARGET REAL_AUX IF (NOT 0 ConNeg) ;
+MAP (@+FAUXV) TARGET REAL_AUX IF (NEGATE 0 ConNeg) ;
 MAP (@+FAUXV) TARGET REAL_AUX ;
 
 
@@ -3500,7 +3525,7 @@ SECTION
 #$# MAP (@ADVL) TARGET (Abbr Sg Abl) (1 ("<(.*):ltä>"r)) (2 ("<(.*):ltä>"r)) ;
 #$# MAP (@ADVL) TARGET (Abbr Sg All) (1 ("<(.*):lle>"r)) (2 ("<(.*):lle>"r)) ;
 #$# ##MAP ((DASH) (@1 (^ ("->"r)) ($ ("->"r)) (@2 NIL) ; # XXXX
-#$# ##MAP ((Abbr Sg Nom (@SUBJ @OBJ @PC)) (@1 (NOT * ("i>"r)) (NOT * ("e>"r)) (NOT * ("ä>"r)) (NOT * ("y>"r)) (NOT * ("ö>"r)) (NOT * ("u>"r)) (NOT * ("o>"r)) (NOT * ("a>"r)) (NOT * ("I>"r)) (NOT * ("E>"r)) (NOT * ("[>"r)) (NOT * ("Y>"r)) (NOT * ("_>"r)) (NOT * ("U>"r)) (NOT * ("O>"r)) (NOT * ("A>"r)) (NOT * (":>"r)) (@2 NIL) ;
+#$# ##MAP ((Abbr Sg Nom (@SUBJ @OBJ @PC)) (@1 (NEGATE * ("i>"r)) (NEGATE * ("e>"r)) (NEGATE * ("ä>"r)) (NEGATE * ("y>"r)) (NEGATE * ("ö>"r)) (NEGATE * ("u>"r)) (NEGATE * ("o>"r)) (NEGATE * ("a>"r)) (NEGATE * ("I>"r)) (NEGATE * ("E>"r)) (NEGATE * ("[>"r)) (NEGATE * ("Y>"r)) (NEGATE * ("_>"r)) (NEGATE * ("U>"r)) (NEGATE * ("O>"r)) (NEGATE * ("A>"r)) (NEGATE * (":>"r)) (@2 NIL) ;
 #$# MAP (@SUBJ @OBJ @PC) TARGET (Abbr Sg Nom) (@1 (* (":kin>"r)) (2 ("<(.*)x:kin>"r)) ;
 #$# MAP (@ADVL) TARGET NSgIne (1 ("<(.*)uksessa>"r)) (2 ("<(.*)uksessa" ("us>"r)) ;
 #$# MAP (@ADVL) TARGET NSgIne (1 ("<(.*)yksessä>"r)) (2 ("<(.*)yksessä" ("ys>"r)) ;
@@ -3651,19 +3676,30 @@ MAP (@X) TARGET WORD ;
 
 # some first additions
 
-SELECT V + Ind (NOT *1 V BARRIER CLB)(NOT *-1 V BARRIER CLB) ;
-SELECT NNom (-1 >>>)(NOT *1 NNom) ;
-SELECT NNom + @SUBJ (NOT *-1 @SUBJ BARRIER CLB + COMMA)(NOT *1 @SUBJ BARRIER CLB + COMMA) ;
-SELECT NPar + @SUBJ (NOT *-1 @SUBJ BARRIER CLB + COMMA)(NOT *1 @SUBJ BARRIER CLB + COMMA) ;
-SELECT NSgNom + @SUBJ (*0 VSg3 + Act + Ind)(NOT *-1 @SUBJ BARRIER CLB + COMMA)(NOT *1 @SUBJ BARRIER CLB + COMMA) ;
-SELECT NPlNom + @SUBJ (*0 VPl3 + Act + Ind)(NOT *-1 @SUBJ BARRIER CLB + COMMA)(NOT *1 @SUBJ BARRIER CLB + COMMA) ;
-REMOVE Pron + Rel (NOT -1 COMMA) ; # Niin minäkin.
+SELECT Ela (1 OLLA)(2 Hauskaa) ; 
+SELECT Hauskaa + A (-1 OLLA) ; 
+
+SELECT Gen (2 Täytyy)(2 OLLA) ; 
+
+SELECT ("menossa") + Adv (*-1 OLLA BARRIER CLB?) ;
+ 
+REMOVE A (0 PrfPrc)(1 Gen_Par)(*-1 OLLA BARRIER CLB?) ;
+
+SELECT ("pitää") + Ind (*1 Ela BARRIER CLB?) ;
+
+SELECT V + Ind (NEGATE *1 V BARRIER CLB)(NEGATE *-1 V BARRIER CLB) ;
+SELECT NNom (-1 >>>)(NEGATE *1 NNom) ;
+SELECT NNom + @SUBJ (NEGATE *-1 @SUBJ BARRIER CLB + COMMA)(NEGATE *1 @SUBJ BARRIER CLB + COMMA) ;
+SELECT NPar + @SUBJ (NEGATE *-1 @SUBJ BARRIER CLB + COMMA)(NEGATE *1 @SUBJ BARRIER CLB + COMMA) ;
+SELECT NSgNom + @SUBJ (*0 VSg3 + Act + Ind)(NEGATE *-1 @SUBJ BARRIER CLB + COMMA)(NEGATE *1 @SUBJ BARRIER CLB + COMMA) ;
+SELECT NPlNom + @SUBJ (*0 VPl3 + Act + Ind)(NEGATE *-1 @SUBJ BARRIER CLB + COMMA)(NEGATE *1 @SUBJ BARRIER CLB + COMMA) ;
+REMOVE Pron + Rel (NEGATE -1 COMMA) ; # Niin minäkin.
 
 SELECT PxSg3 (*1 HÄN OR ("jokainen") BARRIER CLB) ;
 SELECT PxSg3 (*-1 HÄN OR ("jokainen") BARRIER CLB) ;
 SELECT PxPl3 (*1 HE BARRIER CLB) ;
 SELECT PxPl3 (*-1 HE BARRIER CLB) ;
-SELECT PxSg3 (*0 N + Sg)(NOT *-1 N + Pl OR Num + Pl)(NOT *1 N + Pl OR Num + Pl) ;
+SELECT PxSg3 (*0 N + Sg)(NEGATE *-1 N + Pl OR Num + Pl)(NEGATE *1 N + Pl OR Num + Pl) ;
 
 SELECT ("anteeksi") (-1 COMMA OR >>>) (1 COMMA OR ("!")) ;
 SELECT NSgEla (-1 ("kotoisin")) ;
@@ -3676,22 +3712,9 @@ SELECT ("Matti") + Prop (<*-1C ("Matti") + Prop) ;
 SELECT ("kello") + CNOUN ;
 SELECT Num (*-1 ("kello")) ;
 
-# First rule of voisiko is that it is never "your butters"
-REMOVE N IF (0 VOISIKO) ;
+SELECT ("sinä") ;
 
-# Need to add handling of "väsynyt" verbs , modals, ..
-#"<,>"
-#	"," Punct CLB
-#"<mutta>"
-#	"mutta" CC CLB @X
-#"<nousta>"
-#	"nousta" V Pss Ind Prs Pe4 ConNeg @-FMAINV
-#	"nousta" V Act InfA Sg Lat @-FMAINV
-#"<pitää>"
-#	"pitää" V Act Ind Prs Sg3 @+FMAINV
-#	"pitää" V Act InfA Sg Lat @-FMAINV
-#"<,>"
-#	"," Punct CLB
+REMOVE Prop + Sem (0 Prop - Sem) ;
 
 
 AFTER-SECTIONS
