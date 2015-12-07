@@ -23,6 +23,7 @@
   [ "<pxpl3>"      -> "<px3pl>" ] .o.
   [ "#"            ->	"+" ] .o.
   [ "<adp>" "<po>"  ->	"<post>" ] .o.
+  [ "<qnt>" "<indef>"  ->	"<indef>" ] .o.
   [ "<cc>"         ->	"<cnjcoo>" ] .o.
   [ "<cs>"         ->	"<cnjsub>" ] .o.
   [ "<foc_ba>"          ->	"+" {ba} "<pcle>" ] .o.
@@ -37,7 +38,6 @@
   [ "<foc_ge>"          ->	"+" {ge} "<pcle>" ] .o.
   [ "<foc_gen>"         ->	"+" {gen} "<pcle>" ] .o.
   [ "<foc_ges>"         ->	"+" {ges} "<pcle>" ] .o.
-  [ "<foc_gis>"         ->	"+" {gis} "<pcle>" ] .o.
   [ "<foc_hal>"         ->	"+" {hal} "<pcle>" ] .o.
   [ "<foc_han>"         ->	"+" {han} "<pcle>" ] .o.
   [ "<foc_son>"         ->	"+" {son} "<pcle>" ] .o.
@@ -59,6 +59,7 @@
     "<v>"         ->	"<vblex>" ,
     "<interr>"    ->	"<itg>" ,
     "<prs>"       ->	"<pres>" ,
+    "<imprt>"       ->	"<imp>" ,
     "<prt>"       ->	"<pret>" ,
     "<a>"         ->	"<adj>" ,
     "<refl>"      ->	"<ref>" ,
