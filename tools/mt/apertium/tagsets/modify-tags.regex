@@ -41,8 +41,6 @@
     "<hom8>"      ->	"⁸" ,
     "<hom9>"      ->	"⁹" ,
     "<pron>"      ->	"<prn>" ,
-    "<sup>"       ->	"<supn>" ,
-    "<superl>"    ->	"<sup>" ,
     "<v>"         ->	"<vblex>" ,
     "<interr>"    ->	"<itg>" ,
     "<prs>"       ->	"<pres>" ,
@@ -55,6 +53,8 @@
     "<ind>"       ->	"<indic>" ,
     "<inan>"      ->	"<nn>" ,
     "<comma>"     ->	"<cm>" ,
+    "<use_nohyphens>"     ->	"<cmp>" ,
+    "<use_hyphen>"     ->	"<cmp>" "<hyph>" ,
     "<cmpnd>"     ->	"<cmp>" ,
     "<cmpar>"     ->	"<comp>" ,
     "<recipr>"    ->	"<res>" ] .o.
@@ -76,7 +76,7 @@
   [ "<clb>"   -> "<sent>" || "¶" _ ] .o.
   [ "<punct>"   -> "<sent>" || "?" _ ] .o.
   [ "<punct>"   -> "<sent>" || ":" _ ] .o.
-  [ "<clb>"   -> "<sent>" || ";" _ ] .o.
+  [ "<punct>"   -> "<sent>" || ";" _ ] .o.
   [ "<punct>" -> "<guio>" || "-" _ ] .o.
   [ "-"       -> "<guio>" || [ "<cmp>" ] _ ] .o.
   [ "<punct>" "<left>"  -> "<lquot>"  ]
