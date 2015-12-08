@@ -26,7 +26,8 @@
   [ %<qnt%> %<indef%>  ->	%<indef%> ] .o.
   [ "<cc>"         ->	"<cnjcoo>" ] .o.
   [ "<cs>"         ->	"<cnjsub>" ] .o.
-  [ "<foc_kaan>"          ->	"+" {kaan} "<pcle>" ] .o.
+  [ "<foc_kaan>"          ->	"+" {kaan} "<adv>" ] .o.
+  [ "<foc_kin>"          ->	"+" {kin} "<adv>" ] .o.
   [ "<foc_son>"         ->	"+" {son} "<pcle>" ] .o.
   [ "<foc_naj>"         ->	"+" {naj} "<pcle>" ] .o.
   [ "<foc_naj>" "<qst>"	->	"<qst>" "+" {naj} "<pcle>" ] .o.
