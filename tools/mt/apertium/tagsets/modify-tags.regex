@@ -23,6 +23,7 @@
   [ "<pxpl3>"      -> "<px3pl>" ] .o.
   [ "#"            ->	"+" ] .o.
   [ "<adp>" "<po>"  ->	"<post>" ] .o.
+  [ "<adp>" "<post>"  ->	"<post>" ] .o.
   [ %<qnt%> %<indef%>  ->	%<indef%> ] .o.
   [ "<cc>"         ->	"<cnjcoo>" ] .o.
   [ "<cs>"         ->	"<cnjsub>" ] .o.
