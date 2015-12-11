@@ -39,6 +39,7 @@ Multichar_Symbols
 +V !!= * {{@CODE@}}: Verb
 +N !!= * {{@CODE@}}: Noun
 +A !!= * {{@CODE@}}: Adjective
++ACR !!= * {{@CODE@}}: Acronym
 +Acr !!= * {{@CODE@}}: Acronym
 +Num !!= * {{@CODE@}}: Numerals
 +Adv !!= * {{@CODE@}}: Adverb
@@ -100,6 +101,8 @@ Multichar_Symbols
 !!€ joku: joku+Pron+Qu+Indef+Sg+Nom # someone
 
 +Sem/Human !!= * {{@CODE@}}: Semantic class: Human
++Sem/Geo !!= * {{@CODE@}}: Semantic class: Geographic
++Sem/Org !!= * {{@CODE@}}: Semantic class: Organisation
 
 !! !Numerals
 !! In numeral analyses, there are multiple analyses.
