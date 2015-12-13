@@ -4,7 +4,7 @@
 ;Software version: 2012
 ;Documentation license: GNU GFDL
 ;SVN Revision: $Revision: 121234 $
-;SVN Date: $Date: 2015-09-18 18:40:24 +0300 (Fri, 18 Sep 2015) $
+;SVN Date: $Date: 2015-09-18 17:40:24 +0200 (fre, 18 sep 2015) $
 
 !!!giella-fin
 
@@ -41,6 +41,8 @@ The codes:
  * {{+V }}: Verb
  * {{+N }}: Noun
  * {{+A }}: Adjective
+ * {{+ACR }}: Acronym
+ * {{+Acr }}: Acronym
  * {{+Num }}: Numerals
  * {{+Adv }}: Adverb
  * {{+Pron }}: Pronoun
@@ -83,6 +85,7 @@ Codes for various semantic classes:
  * {{+Interr }}: Interrogative
  * {{+Rel }}: Relative
  * {{+Qu }}: Quantor
+ * {{+Qnt }}: Quantor?????
  * {{+Refl }}: Reflexive
  * {{+Recipr }}: Reciprocal
  * {{+Indef }}: Indefinite
@@ -96,6 +99,10 @@ Semantic tags follow pronoun analyses:
 * __itse:__ {{itse+Pron+Refl+Sg+Nom}} (Eng. # self)
 * __toistaan:__ {{toinen+Pron+Recipr+Sg+Par+PxSg3}} (Eng. # each other)
 * __joku:__ {{joku+Pron+Qu+Indef+Sg+Nom}} (Eng. # someone)
+
+ * {{+Sem/Human }}: Semantic class: Human
+ * {{+Sem/Geo }}: Semantic class: Geographic
+ * {{+Sem/Org }}: Semantic class: Organisation
 
 !Numerals
 In numeral analyses, there are multiple analyses.
@@ -137,6 +144,7 @@ whether they appear typically before or after their heads
 [VISK § 687|http://scripta.kotus.fi/visk/sisallys.php?p=687].
 
 Adposition syntax tags:
+ * {{+Adp }}: Adposition
  * {{+Po }}: Postposition
  * {{+Pr }}: Preposition
 
@@ -457,6 +465,9 @@ in there have been carried over.
  * {{+Err/Orth }}: Sub-standard usage
  * {{+Use/Marg }}: Marginal
  * {{+Use/Rare  }}: Rare
+ * {{+Use/NG   }}: Do not generate
+ * {{+Use/Hyphen }}: With hyphens
+ * {{+Use/NoHyphens }}: With hyphens
 
 Usage tags are pushed wherever appropriate:
 * __nallein:__ {{nalle+N+Pl+Gen+Use/Rare}}
@@ -506,6 +517,7 @@ soft boundaries by _.
 * {{>}} inflectional morph boundary
 * {{»}} derivational morph boundary
 * _ weak boundary
+
 
 !!Flag diacritics
 We have manually optimised the structure of our lexicon using following
@@ -6315,7 +6327,10 @@ __Noun examples:__
  The minimal set to determine which paradigm or class noun belongs to is to
  check how it inflects in singulars of nominative,
  essive and inessive, plurals of essive, elative, partitive, illative, and
- genitive. Find out stems and suffixes and match.
+ GENITIVE. Find out stems and suffixes and match.
+
+
+
 
 
 
@@ -6329,7 +6344,7 @@ __Noun examples:__
  least:
  singular nominative, singular essive, singular inessive, plural essive,
  plural elative, singular partitives, singular illatives, plural partitives
- plural genitives, plural illatives and the compound forms.
+ plural GENITIVEs, plural illatives and the compound forms.
 
  !Noun stems without stem variation
  The most basic noun stem does not have any stem internal variation and
@@ -6944,7 +6959,7 @@ __Nouns 1cyky non-standard examples:__
 
  The trisyllabic and longer words with stem vowels o, u, y, ö
  have no stem variation either, but selection of suffix allomorphs for
- plural genitives and partitives is different:
+ plural GENITIVEs and partitives is different:
 
 __Noun 2o examples:__
 * __ruipelo:__ {{ruipelo+N+Sg+Nom}} (Eng. # squirt)
@@ -6997,7 +7012,7 @@ __Nouns 2ö non-standard examples:__
 
  The words with stem vowel o, u, y, ö preceded by vowels still have no
  more stem  variation than other cases, but give yet another pattern of 
- allomorphs for plural partitives and genitives:
+ allomorphs for plural partitives and GENITIVEs:
 
 __Nouns 3o examples:__
 * __tuomio:__ {{tuomio+N+Sg+Nom}} (Eng. # judgment)
@@ -7092,7 +7107,7 @@ __Nouns 4ko non-standard examples:__
 
  !I final stems
  The basic variation of stem final i in nominative is that it becomes
- e in plural stems. In plural genitive form, the stem vowel disappears
+ e in plural stems. In plural GENITIVE form, the stem vowel disappears
  making suffix allomorph -ien, instead of -jen.
 
 __Nouns 5 back examples:__
@@ -7254,7 +7269,7 @@ __Nouns 5 front no i examples:__
 
  The trisyllabic -i final stems work like their o, u, y. ö counterparts  ;
  they combine the e:i and e:0 variation to the additional allomorphs for
- plural partitive and genitive:
+ plural partitive and GENITIVE:
 
 
 __Nouns 6 back examples:__
@@ -7967,7 +7982,7 @@ __Nouns 14 back t0 examples:__
 * __pohatoihin:__ {{pohatta+N+Pl+Ill}}
 
  The a-final words ending in long vowels with syllable boundary have a:0
- variation and more allomorphs for plyral genitive or illative.
+ variation and more allomorphs for plyral GENITIVE or illative.
 
 
 __Nouns 15 ea examples:__
@@ -8213,7 +8228,7 @@ __Nouns 20 ö examples:__
 * __miljöisiin:__ {{miljöö+N+Pl+Ill}}
 
  Some loan words don’t end in long vowel but work like they would. The
- official dictionary says these words should avoid plural genitive itten
+ official dictionary says these words should avoid plural GENITIVE itten
  but not iden, in reality they may be in absolutely free variation.
  In general the rules for loan words are vague and do not always seem to
  work.
@@ -8369,7 +8384,7 @@ __Nouns 22 ö examples:__
  originated from -e forms, only nominative has -i. They also have
  some consonant stem forms that are archaic for other classes of words.
  The difference between these classes are in the selection of singular
- partitives and plural genitives (but the boundaries of norm are not
+ partitives and plural GENITIVEs (but the boundaries of norm are not
  clear-cut, and most variants are found in the wild):
 
 
@@ -8497,7 +8512,7 @@ __Nouns 27 front t~l examples:__
 
  A few -psi, -ksi, -tsi stems have consonant simplification for
  consonant stems. Other variation with these stems is the selection of
- plural genitive allomorphs.
+ plural GENITIVE allomorphs.
 
 
 __Nouns 27 psi examples:__
@@ -9429,6 +9444,8 @@ __Nouns from numerals 1000 examples:__
 
 
 
+
+
  !Plurales tantum
  For some words, the singular forms are rare, odd, or even deemed
  ungrammatical, these words have separate classes for them. In Finnish
@@ -9953,6 +9970,584 @@ __Noun  jeat plurt examples:__
 __Noun pojat plurt examples:__
 * __pojat:__ {{pojat+N+Pl+Nom}} (Eng. # boys)
 * __*poika:__ {{pojat+N+Sg+Nom}} (is not standard language)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -30968,6 +31563,9 @@ pronouns.
 __Relative pronouns examples:__
 * __kuka:__ {{kuka+Pron+Rel+Sg+Nom}}
 
+
+
+
 Quantor pronouns correspond to existential and universal quantifiers and
 their negations. The generic quantors are *joku* (someone),
 *jokin* (something), *jokainen* (everyone), *kaikki* (everything),
@@ -30989,6 +31587,8 @@ Further reading [VISK §746|http://scripta.kotus.fi/visk/sisalto.php?p=746]
 __Quantor pronouns examples:__
 * __joku:__ {{joku+Pron+Qu+Indef+Sg+Nom}}
 * __jotkut:__ {{joku+Pron+Qu+Indef+Pl+Nom}}
+
+
 
 
 
@@ -31331,7 +31931,6 @@ __Suffixes examples:__
 * __banaaniaaltoinen:__ {{banaani+N+Sg+Nom#aaltoinen+A+Sg+Nom}} (Eng. # banana waveful)
 
 
- !!!Verbs and their classification
  Verbs are the words that inflect in tense, mood, personal suffixes, and
  clitics, but verbs also have s.c. infinite inflection pattern which is
  basically nominal derivations. The dictionary entries of verbs are

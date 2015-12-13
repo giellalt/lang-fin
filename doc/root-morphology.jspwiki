@@ -28,6 +28,8 @@ The codes:
  * {{+V }}: Verb
  * {{+N }}: Noun
  * {{+A }}: Adjective
+ * {{+ACR }}: Acronym
+ * {{+Acr }}: Acronym
  * {{+Num }}: Numerals
  * {{+Adv }}: Adverb
  * {{+Pron }}: Pronoun
@@ -70,6 +72,7 @@ Codes for various semantic classes:
  * {{+Interr }}: Interrogative
  * {{+Rel }}: Relative
  * {{+Qu }}: Quantor
+ * {{+Qnt }}: Quantor?????
  * {{+Refl }}: Reflexive
  * {{+Recipr }}: Reciprocal
  * {{+Indef }}: Indefinite
@@ -83,6 +86,10 @@ Semantic tags follow pronoun analyses:
 * __itse:__ {{itse+Pron+Refl+Sg+Nom}} (Eng. # self)
 * __toistaan:__ {{toinen+Pron+Recipr+Sg+Par+PxSg3}} (Eng. # each other)
 * __joku:__ {{joku+Pron+Qu+Indef+Sg+Nom}} (Eng. # someone)
+
+ * {{+Sem/Human }}: Semantic class: Human
+ * {{+Sem/Geo }}: Semantic class: Geographic
+ * {{+Sem/Org }}: Semantic class: Organisation
 
 !Numerals
 In numeral analyses, there are multiple analyses.
@@ -124,6 +131,7 @@ whether they appear typically before or after their heads
 [VISK § 687|http://scripta.kotus.fi/visk/sisallys.php?p=687].
 
 Adposition syntax tags:
+ * {{+Adp }}: Adposition
  * {{+Po }}: Postposition
  * {{+Pr }}: Preposition
 
@@ -444,6 +452,9 @@ in there have been carried over.
  * {{+Err/Orth }}: Sub-standard usage
  * {{+Use/Marg }}: Marginal
  * {{+Use/Rare  }}: Rare
+ * {{+Use/NG   }}: Do not generate
+ * {{+Use/Hyphen }}: With hyphens
+ * {{+Use/NoHyphens }}: With hyphens
 
 Usage tags are pushed wherever appropriate:
 * __nallein:__ {{nalle+N+Pl+Gen+Use/Rare}}
@@ -493,6 +504,7 @@ soft boundaries by _.
 * {{>}} inflectional morph boundary
 * {{»}} derivational morph boundary
 * _ weak boundary
+
 
 !!Flag diacritics
 We have manually optimised the structure of our lexicon using following
