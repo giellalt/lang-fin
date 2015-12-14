@@ -72,7 +72,7 @@ hyvä+A+Sup:parha                A_BACK_PLURALS ;
 hyvä+A+Sup:paras                A_BACK_PARTITIVE_TA ;
 hyvä+A+Sup:parhaa               A_BACK_ILLATIVE_SEEN ;
 hyvä+A+Sup:parha                A_BACK_GENITIVE_IDEN ;
-hyvä+A+Sup:parha                A_BACK_GENITIVE_ITTEN ;
+hyvä+A+Sup+Use/NG:parha                A_BACK_GENITIVE_ITTEN ;
 hyvä+A+Sup:parha                A_BACK_PARTITIVE_ITA ;
 hyvä+A+Sup:parha                A_BACK_ILLATIVE_ISIIN ;
 hyvä+A:parha                    A_BACK_SUPERLATIVE ;
@@ -83,12 +83,12 @@ hyvä+A+Der/sti+Adv:parhaiten    ADV_BACK_CLIT_OPT ;
 !!€ sydännä:
 !!€ jumalten:
 !!€ sankarten:
-vuosi+N+Sg+Ess:vuonna       N_BACK_POSS_AN_OPT ;
-sydän+N+Sg+Ess:sydännä      N_FRONT_POSS_ÄN_OPT ;
-jumala+N+Pl+Gen:jumalten    N_BACK_CLIT_OPT ;
-jumala+N+Pl+Gen:jumalten    N_COMPOUND ;
-sankari+N+Pl+Gen:sankarten  N_FRONT_CLIT_OPT ;
-sankari+N+Pl+Gen:sankarten  N_COMPOUND ;
+vuosi+N+Sg+Ess+Use/NG:vuonna       N_BACK_POSS_AN_OPT ;
+sydän+N+Sg+Ess+Use/NG:sydännä      N_FRONT_POSS_ÄN_OPT ;
+jumala+N+Pl+Gen+Use/NG:jumalten    N_BACK_CLIT_OPT ;
+jumala+N+Pl+Gen+Use/NG:jumalten    N_COMPOUND ;
+sankari+N+Pl+Gen+Use/NG:sankarten  N_FRONT_CLIT_OPT ;
+sankari+N+Pl+Gen+Use/NG:sankarten  N_COMPOUND ;
 
 !! few verbs have shortened forms in standard spoken Finnish
 !!€ meen:
