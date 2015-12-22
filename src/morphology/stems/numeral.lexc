@@ -5,7 +5,7 @@
 !!  of the numerals stem variation patterns are rare to non-existent for other
 !!  nominal types. Numerals have two subclasses, cardinals and ordinals.
 
-LEXICON  NUMERAL
+LEXICON NUMERAL
 
 biljardi+Num:biljard  NUM_MILJARDI  ;
 biljoona+Num:biljoon  NUM_MILJOONA  ;
@@ -911,7 +911,7 @@ yks+Num:yks  NUM_KYMMENTÄ  ;
 
 
 !  TODO: unimpl.
-LEXICON  NUM
+LEXICON NUM
 !!  Numerals have been split in three sections, the compounding parts
 !!  of cardinals and ordinals, and the non-compounding ones:
 !!€gt-norm:  Numeral
@@ -922,7 +922,7 @@ LEXICON  NUM
 0  NUM_ORD_ALL  ;
 0  NUM_OTHERS  ;
 
-LEXICON  NUM_CARD_ALL
+LEXICON NUM_CARD_ALL
 !!  The compounding parts of cardinals are the number multiplier words.
 !!€gt-norm:  cardinal
 !!€  yksi: yksi+Num+Card+Sg+Nom # one
@@ -988,7 +988,7 @@ Googol+Num+Card:Googol  NUM_GOOGOL  ;
 Googolplex+Num+Card:Googolplex  NUM_GOOGOL  ;
 seitsämän+Err/Orth+Num+Card:seitsäm  NUM_YHDEKSÄN  ;
 
-LEXICON  NUM_CARD_SUFFIX
+LEXICON NUM_CARD_SUFFIX
 !!  The suffixes only appear after cardinal multipliers
 !!€gt-norm:  Cardinal multiplicants
 !!€  viisikymmentä: viisi+Num+Card+Sg+Nom#kymmentä
@@ -1052,7 +1052,7 @@ kahdeksatta  #  ;
 yhdeksättä  #  ;
 kymmenettä  #  ;
 
-LEXICON  NUM_ORD_ALL
+LEXICON NUM_ORD_ALL
 !!  The compounding parts of ordinals are the number multiplier words.
 !!€gt-norm:  Ordinal numerals
 !!€  neljäs: neljäs+Num+Ord+Sg+Nom
@@ -1117,7 +1117,7 @@ kiljardis+Num+Ord:kiljardi  NUM_KOLMAS  ;
 piljoonas+Num+Ord:piljoona  NUM_KOLMAS  ;
 piljardis+Num+Ord:piljardi  NUM_KOLMAS  ;
 
-LEXICON  NUM_ORD_SUFFIX
+LEXICON NUM_ORD_SUFFIX
 !!  The suffixes only appear after cardinal multipliers
 !!€gt-norm:  Ordinal multiplicants
 !!€  viideskymmenes: viides+Num+Ord+Sg+Nom#kymmenes
@@ -1188,7 +1188,7 @@ kahdeksatta  #  ;
 yhdeksättä  #  ;
 kymmenettä  #  ;
 
-LEXICON  NUM_OTHERS
+LEXICON NUM_OTHERS
 !!  There is a set of numbers or corresponding expressions that work like them,
 !!  but are not basic cardinals or ordinals:
 !!€gt-norm:  Numeral others
@@ -1262,7 +1262,7 @@ puolisataa+Num+Sg+Tra:puoleksi#sadaksi  NUM_FRONT_CLIT_OPT  ;
 !!  !!Numeral stem variation
 !!  Numerals follow the same stem variation patterns as nouns, some of these
 !!  being very rare to extinct for nouns. 
-LEXICON  NUM_YKSI
+LEXICON NUM_YKSI
 !!€gt-norm:  Numerals 31
 !!€  yksi: yksi+Num+Card+Sg+Nom
 !!€  yhteen: yksi+Num+Card+Sg+Ill
@@ -1284,7 +1284,7 @@ LEXICON  NUM_YKSI
 0:ks  NUM_FRONT_ILLATIVE_IIN  ;
 0:ks  NUM_FRONT_PLURALS  ;
 
-LEXICON  NUM_KAKSI
+LEXICON NUM_KAKSI
 !!€gt-norm:  Numerals 31 back§
 !!€  kaksi: kaksi+Num+Card+Sg+Nom
 !!€  kahteen: kaksi+Num+Card+Sg+Ill
@@ -1306,7 +1306,7 @@ LEXICON  NUM_KAKSI
 0:ks  NUM_BACK_ILLATIVE_IIN  ;
 0:ks  NUM_BACK_PLURALS  ;
 
-LEXICON  NUM_KOLME
+LEXICON NUM_KOLME
 !!€gt-norm:  Numerals 8~5
 !!€  kolme: kolme+Num+Card+Sg+Nom
 !!€  kolmeen: kolme+Num+Card+Sg+Ill
@@ -1327,7 +1327,7 @@ LEXICON  NUM_KOLME
 0  NUM_BACK_ILLATIVE_IIN  ;
 0  NUM_BACK_PLURALS  ; 
 
-LEXICON  NUM_NELJÄ
+LEXICON NUM_NELJÄ
 !!€gt-norm:  Numerals 10
 !!€  neljä: neljä+Num+Card+Sg+Nom
 !!€  neljää: neljä+Num+Card+Sg+Par
@@ -1350,7 +1350,7 @@ LEXICON  NUM_NELJÄ
 0  NUM_FRONT_ILLATIVE_IIN  ;
 0  NUM_FRONT_PLURALS  ;
 
-LEXICON  NUM_VIISI
+LEXICON NUM_VIISI
 !!€gt-norm:  Numerals 27 front
 !!€  viisi: viisi+Num+Card+Sg+Nom
 !!€  viiteen: viisi+Num+Card+Sg+Ill
@@ -1374,7 +1374,7 @@ LEXICON  NUM_VIISI
 0:s  NUM_FRONT_GENITIVE_IEN  ;
 0:s  NUM_FRONT_ILLATIVE_IIN  ;
 
-LEXICON  NUM_KUUSI
+LEXICON NUM_KUUSI
 !!€gt-norm:  Numerals 27 back
 !!€  kuusi: kuusi+Num+Card+Sg+Nom
 !!€  kuutena: kuusi+Num+Card+Sg+Ess
@@ -1398,7 +1398,7 @@ LEXICON  NUM_KUUSI
 0:s  NUM_BACK_ILLATIVE_IIN  ;
 
 
-LEXICON  NUM_KAHDEKSAN
+LEXICON NUM_KAHDEKSAN
 !!€gt-norm:  Numerals 10n
 !!€  kahdeksan: kahdeksan+Num+Card+Sg+Nom
 !!€  kahdeksaa: kahdeksan+Num+Card+Sg+Par
@@ -1421,7 +1421,7 @@ LEXICON  NUM_KAHDEKSAN
 0  NUM_BACK_ILLATIVE_IIN  ;
 0  NUM_BACK_PLURALS  ;
 
-LEXICON  NUM_YHDEKSÄN
+LEXICON NUM_YHDEKSÄN
 !!€gt-norm:  Numerals 10n front
 !!€  yhdeksän: yhdeksän+Num+Card+Sg+Nom
 !!€  yhdeksää: yhdeksän+Num+Card+Sg+Par
@@ -1443,7 +1443,7 @@ LEXICON  NUM_YHDEKSÄN
 0  NUM_FRONT_ILLATIVE_IIN  ;
 0  NUM_FRONT_PLURALS  ;
 
-LEXICON  NUM_KYMMENEN
+LEXICON NUM_KYMMENEN
 !!€gt-norm:  Numerals 32
 !!€  kymmenen: kymmenen+Num+Card+Sg+Nom
 !!€  kymmeneen: kymmenen+Num+Card+Sg+Ill
@@ -1465,7 +1465,7 @@ LEXICON  NUM_KYMMENEN
 0  NUM_FRONT_ILLATIVE_IIN  ;
 0  NUM_FRONT_PLURALS  ;
 
-LEXICON  NUM_SATA
+LEXICON NUM_SATA
 !!€gt-norm:  Numerals 9
 !!€  sata: sata+Num+Card+Sg+Nom
 !!€  satana: sata+Num+Card+Sg+Ess
@@ -1488,7 +1488,7 @@ LEXICON  NUM_SATA
 0:ta  NUM_BACK_GENITIVE_IN  ;
 0:to  NUM_BACK_ILLATIVE_IHIN  ;
 
-LEXICON  NUM_TUHAT
+LEXICON NUM_TUHAT
 !!€gt-norm:  Numerals 46
 !!€  tuhat: tuhat+Num+Card+Sg+Nom
 !!€  tuhanteen: tuhat+Num+Card+Sg+Ill
@@ -1512,7 +1512,7 @@ LEXICON  NUM_TUHAT
 0:ns  NUM_BACK_ILLATIVE_IIN  ;
 0:ns  NUM_BACK_PLURALS  ;
 
-LEXICON  NUM_MILJOONA
+LEXICON NUM_MILJOONA
 !!€gt-norm:  Numerals 10
 !!€  miljoona: miljoona+Num+Card+Sg+Nom
 !!€  miljoonana: miljoona+Num+Card+Sg+Ess
@@ -1535,7 +1535,7 @@ LEXICON  NUM_MILJOONA
 0  NUM_BACK_ILLATIVE_IIN  ;
 
 
-LEXICON  NUM_MILJARDI
+LEXICON NUM_MILJARDI
 !!€gt-norm:  Numerals 5
 !!€  miljardi: miljardi+Num+Card+Sg+Nom
 !!€  miljardina: miljardi+Num+Card+Sg+Ess
@@ -1557,7 +1557,7 @@ LEXICON  NUM_MILJARDI
 0  NUM_BACK_GENITIVE_IEN  ;
 
 
-LEXICON  NUM_GOOGOL
+LEXICON NUM_GOOGOL
 !!€gt-norm:  Numerals 5 more
 !!€  Googol: Googol+Num+Card+Sg+Nom
 0  NUM_BACK_NOMINATIVE  ;
@@ -1569,7 +1569,7 @@ LEXICON  NUM_GOOGOL
 0:e  NUM_BACK_ILLATIVE_IHIN  ;
 0  NUM_BACK_GENITIVE_IEN  ;
 
-LEXICON  NUM_PARI
+LEXICON NUM_PARI
 !!€gt-norm:  Numerals 5 moremore
 !!€  pari: pari+Num+Card+Sg+Nom
 !!€  parina: pari+Num+Card+Sg+Ess
@@ -1591,7 +1591,7 @@ LEXICON  NUM_PARI
 0:e  NUM_BACK_ILLATIVE_IHIN  ;
 
 
-LEXICON  NUM_ENSIMMÄINEN
+LEXICON NUM_ENSIMMÄINEN
 !!€gt-norm:  Numerals 38
 !!€  ensimmäinen: ensimmäinen+Num+Ord+Sg+Nom
 !!€  ensimmäisenä: ensimmäinen+Num+Ord+Sg+Ess
@@ -1613,7 +1613,7 @@ LEXICON  NUM_ENSIMMÄINEN
 0:s  NUM_FRONT_PLURALS  ;
 +Der/s:s  N_COMPOUND  ;
 
-LEXICON  NUM_TOINEN
+LEXICON NUM_TOINEN
 !!€gt-norm:  Numerals 38 back
 !!€  toinen: toinen+Num+Ord+Sg+Nom
 !!€  toiseen: toinen+Num+Ord+Sg+Ill
@@ -1637,7 +1637,7 @@ LEXICON  NUM_TOINEN
 0:s  NUM_BACK_PLURALS  ;
 +Der/s:s  N_COMPOUND  ;
 
-LEXICON  NUM_KOLMAS
+LEXICON NUM_KOLMAS
 !!€gt-norm:  Numerals 45
 !!€  kolmas: kolmas+Num+Ord+Sg+Nom
 !!€  kolmantena: kolmas+Num+Ord+Sg+Ess
@@ -1658,7 +1658,7 @@ LEXICON  NUM_KOLMAS
 0:ns  NUM_BACK_ILLATIVE_IIN  ;
 0:ns  NUM_BACK_PLURALS  ;
 
-LEXICON  NUM_NELJÄS
+LEXICON NUM_NELJÄS
 !!€gt-norm:  Numerals 45 fron
 !!€  neljäs: neljäs+Num+Ord+Sg+Nom
 !!€  neljänteen: neljäs+Num+Ord+Sg+Ill
@@ -1680,7 +1680,7 @@ LEXICON  NUM_NELJÄS
 0:ns  NUM_FRONT_ILLATIVE_IIN  ;
 0:ns  NUM_FRONT_PLURALS  ;
 
-LEXICON  NUM_51kahdeksanbiljardia
+LEXICON NUM_51kahdeksanbiljardia
 
 +Pl+Abe:ittabiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -1735,7 +1735,7 @@ LEXICON  NUM_51kahdeksanbiljardia
 +Sg+Tra:aksibiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksanbiljoonaa
+LEXICON NUM_51kahdeksanbiljoonaa
 
 +Pl+Abe:ittabiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -1790,7 +1790,7 @@ LEXICON  NUM_51kahdeksanbiljoonaa
 +Sg+Tra:aksibiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksandekiljardia
+LEXICON NUM_51kahdeksandekiljardia
 
 +Pl+Abe:ittadekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -1845,7 +1845,7 @@ LEXICON  NUM_51kahdeksandekiljardia
 +Sg+Tra:aksidekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksandekiljoonaa
+LEXICON NUM_51kahdeksandekiljoonaa
 
 +Pl+Abe:ittadekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -1900,7 +1900,7 @@ LEXICON  NUM_51kahdeksandekiljoonaa
 +Sg+Tra:aksidekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksanduodekiljardia
+LEXICON NUM_51kahdeksanduodekiljardia
 
 +Pl+Abe:ittaduodekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -1955,7 +1955,7 @@ LEXICON  NUM_51kahdeksanduodekiljardia
 +Sg+Tra:aksiduodekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksanduodekiljoonaa
+LEXICON NUM_51kahdeksanduodekiljoonaa
 
 +Pl+Abe:ittaduodekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -2010,7 +2010,7 @@ LEXICON  NUM_51kahdeksanduodekiljoonaa
 +Sg+Tra:aksiduodekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksankahdeksatta
+LEXICON NUM_51kahdeksankahdeksatta
 
 +Pl+Abe:ittakahdeksatta  NUM_BACK_CLIT_OPT  ;
 
@@ -2063,7 +2063,7 @@ LEXICON  NUM_51kahdeksankahdeksatta
 +Sg+Tra:aksikahdeksatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksankiljardia
+LEXICON NUM_51kahdeksankiljardia
 
 +Pl+Abe:ittakiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -2118,7 +2118,7 @@ LEXICON  NUM_51kahdeksankiljardia
 +Sg+Tra:aksikiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksankiljoonaa
+LEXICON NUM_51kahdeksankiljoonaa
 
 +Pl+Abe:ittakiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -2173,7 +2173,7 @@ LEXICON  NUM_51kahdeksankiljoonaa
 +Sg+Tra:aksikiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksankolmatta
+LEXICON NUM_51kahdeksankolmatta
 
 +Pl+Abe:ittakolmatta  NUM_BACK_CLIT_OPT  ;
 
@@ -2226,7 +2226,7 @@ LEXICON  NUM_51kahdeksankolmatta
 +Sg+Tra:aksikolmatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksankuudetta
+LEXICON NUM_51kahdeksankuudetta
 
 +Pl+Abe:ittakuudetta  NUM_BACK_CLIT_OPT  ;
 
@@ -2279,7 +2279,7 @@ LEXICON  NUM_51kahdeksankuudetta
 +Sg+Tra:aksikuudetta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksankvadriljardia
+LEXICON NUM_51kahdeksankvadriljardia
 
 +Pl+Abe:ittakvadriljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -2334,7 +2334,7 @@ LEXICON  NUM_51kahdeksankvadriljardia
 +Sg+Tra:aksikvadriljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksankvadriljoonaa
+LEXICON NUM_51kahdeksankvadriljoonaa
 
 +Pl+Abe:ittakvadriljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -2389,7 +2389,7 @@ LEXICON  NUM_51kahdeksankvadriljoonaa
 +Sg+Tra:aksikvadriljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksankvintiljardia
+LEXICON NUM_51kahdeksankvintiljardia
 
 +Pl+Abe:ittakvintiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -2444,7 +2444,7 @@ LEXICON  NUM_51kahdeksankvintiljardia
 +Sg+Tra:aksikvintiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksankvintiljoonaa
+LEXICON NUM_51kahdeksankvintiljoonaa
 
 +Pl+Abe:ittakvintiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -2499,7 +2499,7 @@ LEXICON  NUM_51kahdeksankvintiljoonaa
 +Sg+Tra:aksikvintiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksankymmentä
+LEXICON NUM_51kahdeksankymmentä
 
 +Pl+Abe:ittakymmenittä  NUM_FRONT_CLIT_OPT  ;
 
@@ -2554,7 +2554,7 @@ LEXICON  NUM_51kahdeksankymmentä
 +Sg+Tra:aksikymmeneksi  NUM_FRONT_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksanmiljardia
+LEXICON NUM_51kahdeksanmiljardia
 
 +Pl+Abe:ittamiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -2609,7 +2609,7 @@ LEXICON  NUM_51kahdeksanmiljardia
 +Sg+Tra:aksimiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksanmiljoonaa
+LEXICON NUM_51kahdeksanmiljoonaa
 
 +Pl+Abe:ittamiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -2664,7 +2664,7 @@ LEXICON  NUM_51kahdeksanmiljoonaa
 +Sg+Tra:aksimiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksanneljättä
+LEXICON NUM_51kahdeksanneljättä
 
 +Pl+Abe:ittaneljättä  NUM_BACK_CLIT_OPT  ;
 
@@ -2717,7 +2717,7 @@ LEXICON  NUM_51kahdeksanneljättä
 +Sg+Tra:aksineljättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksannoniljardia
+LEXICON NUM_51kahdeksannoniljardia
 
 +Pl+Abe:ittanoniljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -2772,7 +2772,7 @@ LEXICON  NUM_51kahdeksannoniljardia
 +Sg+Tra:aksinoniljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksannoniljoonaa
+LEXICON NUM_51kahdeksannoniljoonaa
 
 +Pl+Abe:ittanoniljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -2827,7 +2827,7 @@ LEXICON  NUM_51kahdeksannoniljoonaa
 +Sg+Tra:aksinoniljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksanoktiljardia
+LEXICON NUM_51kahdeksanoktiljardia
 
 +Pl+Abe:ittaoktiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -2882,7 +2882,7 @@ LEXICON  NUM_51kahdeksanoktiljardia
 +Sg+Tra:aksioktiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksanoktiljoonaa
+LEXICON NUM_51kahdeksanoktiljoonaa
 
 +Pl+Abe:ittaoktiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -2937,7 +2937,7 @@ LEXICON  NUM_51kahdeksanoktiljoonaa
 +Sg+Tra:aksioktiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksanpiljardia
+LEXICON NUM_51kahdeksanpiljardia
 
 +Pl+Abe:ittapiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -2992,7 +2992,7 @@ LEXICON  NUM_51kahdeksanpiljardia
 +Sg+Tra:aksipiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksanpiljoonaa
+LEXICON NUM_51kahdeksanpiljoonaa
 
 +Pl+Abe:ittapiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -3047,7 +3047,7 @@ LEXICON  NUM_51kahdeksanpiljoonaa
 +Sg+Tra:aksipiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksansataa
+LEXICON NUM_51kahdeksansataa
 
 +Pl+Abe:ittasadoitta  NUM_BACK_CLIT_OPT  ;
 
@@ -3102,7 +3102,7 @@ LEXICON  NUM_51kahdeksansataa
 +Sg+Tra:aksisadaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksanseitsemättä
+LEXICON NUM_51kahdeksanseitsemättä
 
 +Pl+Abe:ittaseitsemättä  NUM_BACK_CLIT_OPT  ;
 
@@ -3155,7 +3155,7 @@ LEXICON  NUM_51kahdeksanseitsemättä
 +Sg+Tra:aksiseitsemättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksansentiljardia
+LEXICON NUM_51kahdeksansentiljardia
 
 +Pl+Abe:ittasentiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -3210,7 +3210,7 @@ LEXICON  NUM_51kahdeksansentiljardia
 +Sg+Tra:aksisentiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksansentiljoonaa
+LEXICON NUM_51kahdeksansentiljoonaa
 
 +Pl+Abe:ittasentiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -3265,7 +3265,7 @@ LEXICON  NUM_51kahdeksansentiljoonaa
 +Sg+Tra:aksisentiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksanseptiljardia
+LEXICON NUM_51kahdeksanseptiljardia
 
 +Pl+Abe:ittaseptiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -3320,7 +3320,7 @@ LEXICON  NUM_51kahdeksanseptiljardia
 +Sg+Tra:aksiseptiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksanseptiljoonaa
+LEXICON NUM_51kahdeksanseptiljoonaa
 
 +Pl+Abe:ittaseptiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -3375,7 +3375,7 @@ LEXICON  NUM_51kahdeksanseptiljoonaa
 +Sg+Tra:aksiseptiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksantoista
+LEXICON NUM_51kahdeksantoista
 
 +Pl+Abe:ittatoista  NUM_BACK_CLIT_OPT  ;
 
@@ -3428,7 +3428,7 @@ LEXICON  NUM_51kahdeksantoista
 +Sg+Tra:aksitoista  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksantredekiljardia
+LEXICON NUM_51kahdeksantredekiljardia
 
 +Pl+Abe:ittatredekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -3483,7 +3483,7 @@ LEXICON  NUM_51kahdeksantredekiljardia
 +Sg+Tra:aksitredekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksantredekiljoonaa
+LEXICON NUM_51kahdeksantredekiljoonaa
 
 +Pl+Abe:ittatredekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -3538,7 +3538,7 @@ LEXICON  NUM_51kahdeksantredekiljoonaa
 +Sg+Tra:aksitredekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksantriljardia
+LEXICON NUM_51kahdeksantriljardia
 
 +Pl+Abe:ittatriljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -3593,7 +3593,7 @@ LEXICON  NUM_51kahdeksantriljardia
 +Sg+Tra:aksitriljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksantriljoonaa
+LEXICON NUM_51kahdeksantriljoonaa
 
 +Pl+Abe:ittatriljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -3648,7 +3648,7 @@ LEXICON  NUM_51kahdeksantriljoonaa
 +Sg+Tra:aksitriljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksantsiljardia
+LEXICON NUM_51kahdeksantsiljardia
 
 +Pl+Abe:ittatsiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -3703,7 +3703,7 @@ LEXICON  NUM_51kahdeksantsiljardia
 +Sg+Tra:aksitsiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksantsiljoonaa
+LEXICON NUM_51kahdeksantsiljoonaa
 
 +Pl+Abe:ittatsiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -3758,7 +3758,7 @@ LEXICON  NUM_51kahdeksantsiljoonaa
 +Sg+Tra:aksitsiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksantuhatta
+LEXICON NUM_51kahdeksantuhatta
 
 +Pl+Abe:ittatuhansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -3813,7 +3813,7 @@ LEXICON  NUM_51kahdeksantuhatta
 +Sg+Tra:aksituhanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksanundekiljardia
+LEXICON NUM_51kahdeksanundekiljardia
 
 +Pl+Abe:ittaundekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -3868,7 +3868,7 @@ LEXICON  NUM_51kahdeksanundekiljardia
 +Sg+Tra:aksiundekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksanundekiljoonaa
+LEXICON NUM_51kahdeksanundekiljoonaa
 
 +Pl+Abe:ittaundekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -3923,7 +3923,7 @@ LEXICON  NUM_51kahdeksanundekiljoonaa
 +Sg+Tra:aksiundekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksanviidettä
+LEXICON NUM_51kahdeksanviidettä
 
 +Pl+Abe:ittaviidettä  NUM_BACK_CLIT_OPT  ;
 
@@ -3976,7 +3976,7 @@ LEXICON  NUM_51kahdeksanviidettä
 +Sg+Tra:aksiviidettä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksanyhdeksättä
+LEXICON NUM_51kahdeksanyhdeksättä
 
 +Pl+Abe:ittayhdeksättä  NUM_BACK_CLIT_OPT  ;
 
@@ -4029,7 +4029,7 @@ LEXICON  NUM_51kahdeksanyhdeksättä
 +Sg+Tra:aksiyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksasbiljardis
+LEXICON NUM_51kahdeksasbiljardis
 
 +Ord+Pl+Abe:ansittabiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -4084,7 +4084,7 @@ LEXICON  NUM_51kahdeksasbiljardis
 +Ord+Sg+Tra:aksibiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksasbiljoonas
+LEXICON NUM_51kahdeksasbiljoonas
 
 +Ord+Pl+Abe:ittabiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -4139,7 +4139,7 @@ LEXICON  NUM_51kahdeksasbiljoonas
 +Ord+Sg+Tra:aksibiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksasdekiljardis
+LEXICON NUM_51kahdeksasdekiljardis
 
 +Ord+Pl+Abe:ittadekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -4194,7 +4194,7 @@ LEXICON  NUM_51kahdeksasdekiljardis
 +Ord+Sg+Tra:aksidekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksasdekiljoonas
+LEXICON NUM_51kahdeksasdekiljoonas
 
 +Ord+Pl+Abe:ittadekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -4249,7 +4249,7 @@ LEXICON  NUM_51kahdeksasdekiljoonas
 +Ord+Sg+Tra:aksidekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksasduodekiljardis
+LEXICON NUM_51kahdeksasduodekiljardis
 
 +Ord+Pl+Abe:ittaduodekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -4304,7 +4304,7 @@ LEXICON  NUM_51kahdeksasduodekiljardis
 +Ord+Sg+Tra:aksiduodekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksasduodekiljoonas
+LEXICON NUM_51kahdeksasduodekiljoonas
 
 +Ord+Pl+Abe:ittaduodekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -4359,7 +4359,7 @@ LEXICON  NUM_51kahdeksasduodekiljoonas
 +Ord+Sg+Tra:aksiduodekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksaskahdeksatta
+LEXICON NUM_51kahdeksaskahdeksatta
 
 +Ord+Pl+Abe:ansittakahdeksatta  NUM_BACK_CLIT_OPT  ;
 
@@ -4412,7 +4412,7 @@ LEXICON  NUM_51kahdeksaskahdeksatta
 +Ord+Sg+Tra:anneksikahdeksatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksaskiljardis
+LEXICON NUM_51kahdeksaskiljardis
 
 +Ord+Pl+Abe:ittakiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -4467,7 +4467,7 @@ LEXICON  NUM_51kahdeksaskiljardis
 +Ord+Sg+Tra:aksikiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksaskiljoonas
+LEXICON NUM_51kahdeksaskiljoonas
 
 +Ord+Pl+Abe:ittakiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -4522,7 +4522,7 @@ LEXICON  NUM_51kahdeksaskiljoonas
 +Ord+Sg+Tra:aksikiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksaskolmatta
+LEXICON NUM_51kahdeksaskolmatta
 
 +Ord+Pl+Abe:ittakolmatta  NUM_BACK_CLIT_OPT  ;
 
@@ -4575,7 +4575,7 @@ LEXICON  NUM_51kahdeksaskolmatta
 +Ord+Sg+Tra:aksikolmatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksaskuudetta
+LEXICON NUM_51kahdeksaskuudetta
 
 +Ord+Pl+Abe:ittakuudetta  NUM_BACK_CLIT_OPT  ;
 
@@ -4628,7 +4628,7 @@ LEXICON  NUM_51kahdeksaskuudetta
 +Ord+Sg+Tra:aksikuudetta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksaskvadriljardis
+LEXICON NUM_51kahdeksaskvadriljardis
 
 +Ord+Pl+Abe:ittakvadriljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -4683,7 +4683,7 @@ LEXICON  NUM_51kahdeksaskvadriljardis
 +Ord+Sg+Tra:aksikvadriljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksaskvadriljoonas
+LEXICON NUM_51kahdeksaskvadriljoonas
 
 +Ord+Pl+Abe:ittakvadriljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -4738,7 +4738,7 @@ LEXICON  NUM_51kahdeksaskvadriljoonas
 +Ord+Sg+Tra:aksikvadriljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksaskvintiljardis
+LEXICON NUM_51kahdeksaskvintiljardis
 
 +Ord+Pl+Abe:ittakvintiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -4793,7 +4793,7 @@ LEXICON  NUM_51kahdeksaskvintiljardis
 +Ord+Sg+Tra:aksikvintiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksaskvintiljoonas
+LEXICON NUM_51kahdeksaskvintiljoonas
 
 +Ord+Pl+Abe:ittakvintiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -4848,7 +4848,7 @@ LEXICON  NUM_51kahdeksaskvintiljoonas
 +Ord+Sg+Tra:aksikvintiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksaskymmenes
+LEXICON NUM_51kahdeksaskymmenes
 
 +Ord+Pl+Abe:ittakymmenittä  NUM_FRONT_CLIT_OPT  ;
 
@@ -4903,7 +4903,7 @@ LEXICON  NUM_51kahdeksaskymmenes
 +Ord+Sg+Tra:aksikymmeneksi  NUM_FRONT_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksasmiljardis
+LEXICON NUM_51kahdeksasmiljardis
 
 +Ord+Pl+Abe:ittamiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -4958,7 +4958,7 @@ LEXICON  NUM_51kahdeksasmiljardis
 +Ord+Sg+Tra:aksimiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksasmiljoonas
+LEXICON NUM_51kahdeksasmiljoonas
 
 +Ord+Pl+Abe:ittamiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -5013,7 +5013,7 @@ LEXICON  NUM_51kahdeksasmiljoonas
 +Ord+Sg+Tra:aksimiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksasneljästtä
+LEXICON NUM_51kahdeksasneljästtä
 
 +Ord+Pl+Abe:ittaneljättä  NUM_BACK_CLIT_OPT  ;
 
@@ -5066,7 +5066,7 @@ LEXICON  NUM_51kahdeksasneljästtä
 +Ord+Sg+Tra:aksineljättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksasnoniljardis
+LEXICON NUM_51kahdeksasnoniljardis
 
 +Ord+Pl+Abe:ittanoniljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -5121,7 +5121,7 @@ LEXICON  NUM_51kahdeksasnoniljardis
 +Ord+Sg+Tra:aksinoniljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksasnoniljoonas
+LEXICON NUM_51kahdeksasnoniljoonas
 
 +Ord+Pl+Abe:ittanoniljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -5176,7 +5176,7 @@ LEXICON  NUM_51kahdeksasnoniljoonas
 +Ord+Sg+Tra:aksinoniljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksasoktiljardis
+LEXICON NUM_51kahdeksasoktiljardis
 
 +Ord+Pl+Abe:ittaoktiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -5231,7 +5231,7 @@ LEXICON  NUM_51kahdeksasoktiljardis
 +Ord+Sg+Tra:aksioktiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksasoktiljoonas
+LEXICON NUM_51kahdeksasoktiljoonas
 
 +Ord+Pl+Abe:ittaoktiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -5286,7 +5286,7 @@ LEXICON  NUM_51kahdeksasoktiljoonas
 +Ord+Sg+Tra:aksioktiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksaspiljardis
+LEXICON NUM_51kahdeksaspiljardis
 
 +Ord+Pl+Abe:ittapiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -5341,7 +5341,7 @@ LEXICON  NUM_51kahdeksaspiljardis
 +Ord+Sg+Tra:aksipiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksaspiljoonas
+LEXICON NUM_51kahdeksaspiljoonas
 
 +Ord+Pl+Abe:ittapiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -5396,7 +5396,7 @@ LEXICON  NUM_51kahdeksaspiljoonas
 +Ord+Sg+Tra:aksipiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksassadas
+LEXICON NUM_51kahdeksassadas
 
 +Ord+Pl+Abe:ittasadoitta  NUM_BACK_CLIT_OPT  ;
 
@@ -5451,7 +5451,7 @@ LEXICON  NUM_51kahdeksassadas
 +Ord+Sg+Tra:aksisadaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksasseitsemättä
+LEXICON NUM_51kahdeksasseitsemättä
 
 +Ord+Pl+Abe:ittaseitsemättä  NUM_BACK_CLIT_OPT  ;
 
@@ -5504,7 +5504,7 @@ LEXICON  NUM_51kahdeksasseitsemättä
 +Ord+Sg+Tra:aksiseitsemättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksassentiljardis
+LEXICON NUM_51kahdeksassentiljardis
 
 +Ord+Pl+Abe:ittasentiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -5559,7 +5559,7 @@ LEXICON  NUM_51kahdeksassentiljardis
 +Ord+Sg+Tra:aksisentiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksassentiljoonas
+LEXICON NUM_51kahdeksassentiljoonas
 
 +Ord+Pl+Abe:ittasentiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -5614,7 +5614,7 @@ LEXICON  NUM_51kahdeksassentiljoonas
 +Ord+Sg+Tra:aksisentiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksasseptiljardis
+LEXICON NUM_51kahdeksasseptiljardis
 
 +Ord+Pl+Abe:ittaseptiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -5669,7 +5669,7 @@ LEXICON  NUM_51kahdeksasseptiljardis
 +Ord+Sg+Tra:aksiseptiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksasseptiljoonas
+LEXICON NUM_51kahdeksasseptiljoonas
 
 +Ord+Pl+Abe:ittaseptiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -5724,7 +5724,7 @@ LEXICON  NUM_51kahdeksasseptiljoonas
 +Ord+Sg+Tra:aksiseptiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksastoista
+LEXICON NUM_51kahdeksastoista
 
 +Ord+Pl+Abe:ittatoista  NUM_BACK_CLIT_OPT  ;
 
@@ -5777,7 +5777,7 @@ LEXICON  NUM_51kahdeksastoista
 +Ord+Sg+Tra:aksitoista  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksastredekiljardis
+LEXICON NUM_51kahdeksastredekiljardis
 
 +Ord+Pl+Abe:ittatredekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -5832,7 +5832,7 @@ LEXICON  NUM_51kahdeksastredekiljardis
 +Ord+Sg+Tra:aksitredekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksastredekiljoonas
+LEXICON NUM_51kahdeksastredekiljoonas
 
 +Ord+Pl+Abe:ittatredekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -5887,7 +5887,7 @@ LEXICON  NUM_51kahdeksastredekiljoonas
 +Ord+Sg+Tra:aksitredekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksastriljardis
+LEXICON NUM_51kahdeksastriljardis
 
 +Ord+Pl+Abe:ittatriljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -5942,7 +5942,7 @@ LEXICON  NUM_51kahdeksastriljardis
 +Ord+Sg+Tra:aksitriljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksastriljoonas
+LEXICON NUM_51kahdeksastriljoonas
 
 +Ord+Pl+Abe:ittatriljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -5997,7 +5997,7 @@ LEXICON  NUM_51kahdeksastriljoonas
 +Ord+Sg+Tra:aksitriljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksastsiljardis
+LEXICON NUM_51kahdeksastsiljardis
 
 +Ord+Pl+Abe:ittatsiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -6052,7 +6052,7 @@ LEXICON  NUM_51kahdeksastsiljardis
 +Ord+Sg+Tra:aksitsiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksastsiljoonas
+LEXICON NUM_51kahdeksastsiljoonas
 
 +Ord+Pl+Abe:ittatsiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -6107,7 +6107,7 @@ LEXICON  NUM_51kahdeksastsiljoonas
 +Ord+Sg+Tra:aksitsiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksastuhannes
+LEXICON NUM_51kahdeksastuhannes
 
 +Ord+Pl+Abe:ittatuhansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -6162,7 +6162,7 @@ LEXICON  NUM_51kahdeksastuhannes
 +Ord+Sg+Tra:aksituhanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksasundekiljardis
+LEXICON NUM_51kahdeksasundekiljardis
 
 +Ord+Pl+Abe:ittaundekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -6217,7 +6217,7 @@ LEXICON  NUM_51kahdeksasundekiljardis
 +Ord+Sg+Tra:aksiundekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksasundekiljoonas
+LEXICON NUM_51kahdeksasundekiljoonas
 
 +Ord+Pl+Abe:ittaundekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -6272,7 +6272,7 @@ LEXICON  NUM_51kahdeksasundekiljoonas
 +Ord+Sg+Tra:aksiundekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksasviidettä
+LEXICON NUM_51kahdeksasviidettä
 
 +Ord+Pl+Abe:ittaviidettä  NUM_BACK_CLIT_OPT  ;
 
@@ -6325,7 +6325,7 @@ LEXICON  NUM_51kahdeksasviidettä
 +Ord+Sg+Tra:aksiviidettä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeksasyhdeksättä
+LEXICON NUM_51kahdeksasyhdeksättä
 
 +Ord+Pl+Abe:ittayhdeksättä  NUM_BACK_CLIT_OPT  ;
 
@@ -6378,7 +6378,7 @@ LEXICON  NUM_51kahdeksasyhdeksättä
 +Ord+Sg+Tra:aksiyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdesbiljardis
+LEXICON NUM_51kahdesbiljardis
 
 +Ord+Pl+Abe:nsittabiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -6433,7 +6433,7 @@ LEXICON  NUM_51kahdesbiljardis
 +Ord+Sg+Tra:nneksibiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdesbiljoonas
+LEXICON NUM_51kahdesbiljoonas
 
 +Ord+Pl+Abe:nsittabiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -6488,7 +6488,7 @@ LEXICON  NUM_51kahdesbiljoonas
 +Ord+Sg+Tra:nneksibiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdesdekiljardis
+LEXICON NUM_51kahdesdekiljardis
 
 +Ord+Pl+Abe:nsittadekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -6543,7 +6543,7 @@ LEXICON  NUM_51kahdesdekiljardis
 +Ord+Sg+Tra:nneksidekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdesdekiljoonas
+LEXICON NUM_51kahdesdekiljoonas
 
 +Ord+Pl+Abe:nsittadekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -6598,7 +6598,7 @@ LEXICON  NUM_51kahdesdekiljoonas
 +Ord+Sg+Tra:nneksidekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdesduodekiljardis
+LEXICON NUM_51kahdesduodekiljardis
 
 +Ord+Pl+Abe:nsittaduodekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -6653,7 +6653,7 @@ LEXICON  NUM_51kahdesduodekiljardis
 +Ord+Sg+Tra:nneksiduodekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdesduodekiljoonas
+LEXICON NUM_51kahdesduodekiljoonas
 
 +Ord+Pl+Abe:nsittaduodekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -6708,7 +6708,7 @@ LEXICON  NUM_51kahdesduodekiljoonas
 +Ord+Sg+Tra:nneksiduodekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeskahdeksatta
+LEXICON NUM_51kahdeskahdeksatta
 
 +Ord+Pl+Abe:nsittakahdeksatta  NUM_BACK_CLIT_OPT  ;
 
@@ -6761,7 +6761,7 @@ LEXICON  NUM_51kahdeskahdeksatta
 +Ord+Sg+Tra:nneksikahdeksatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeskiljardis
+LEXICON NUM_51kahdeskiljardis
 
 +Ord+Pl+Abe:nsittakiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -6816,7 +6816,7 @@ LEXICON  NUM_51kahdeskiljardis
 +Ord+Sg+Tra:nneksikiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeskiljoonas
+LEXICON NUM_51kahdeskiljoonas
 
 +Ord+Pl+Abe:nsittakiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -6871,7 +6871,7 @@ LEXICON  NUM_51kahdeskiljoonas
 +Ord+Sg+Tra:nneksikiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeskolmatta
+LEXICON NUM_51kahdeskolmatta
 
 +Ord+Pl+Abe:nsittakolmatta  NUM_BACK_CLIT_OPT  ;
 
@@ -6924,7 +6924,7 @@ LEXICON  NUM_51kahdeskolmatta
 +Ord+Sg+Tra:nneksikolmatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeskuudetta
+LEXICON NUM_51kahdeskuudetta
 
 +Ord+Pl+Abe:nsittakuudetta  NUM_BACK_CLIT_OPT  ;
 
@@ -6977,7 +6977,7 @@ LEXICON  NUM_51kahdeskuudetta
 +Ord+Sg+Tra:nneksikuudetta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeskvadriljardis
+LEXICON NUM_51kahdeskvadriljardis
 
 +Ord+Pl+Abe:nsittakvadriljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -7032,7 +7032,7 @@ LEXICON  NUM_51kahdeskvadriljardis
 +Ord+Sg+Tra:nneksikvadriljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeskvadriljoonas
+LEXICON NUM_51kahdeskvadriljoonas
 
 +Ord+Pl+Abe:nsittakvadriljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -7087,7 +7087,7 @@ LEXICON  NUM_51kahdeskvadriljoonas
 +Ord+Sg+Tra:nneksikvadriljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeskvintiljardis
+LEXICON NUM_51kahdeskvintiljardis
 
 +Ord+Pl+Abe:nsittakvintiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -7142,7 +7142,7 @@ LEXICON  NUM_51kahdeskvintiljardis
 +Ord+Sg+Tra:nneksikvintiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeskvintiljoonas
+LEXICON NUM_51kahdeskvintiljoonas
 
 +Ord+Pl+Abe:nsittakvintiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -7197,7 +7197,7 @@ LEXICON  NUM_51kahdeskvintiljoonas
 +Ord+Sg+Tra:nneksikvintiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdeskymmenes
+LEXICON NUM_51kahdeskymmenes
 
 +Ord+Pl+Abe:nsittakymmenittä  NUM_FRONT_CLIT_OPT  ;
 
@@ -7252,7 +7252,7 @@ LEXICON  NUM_51kahdeskymmenes
 +Ord+Sg+Tra:nneksikymmeneksi  NUM_FRONT_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdesmiljardis
+LEXICON NUM_51kahdesmiljardis
 
 +Ord+Pl+Abe:nsittamiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -7307,7 +7307,7 @@ LEXICON  NUM_51kahdesmiljardis
 +Ord+Sg+Tra:nneksimiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdesmiljoonas
+LEXICON NUM_51kahdesmiljoonas
 
 +Ord+Pl+Abe:nsittamiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -7362,7 +7362,7 @@ LEXICON  NUM_51kahdesmiljoonas
 +Ord+Sg+Tra:nneksimiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdesneljästtä
+LEXICON NUM_51kahdesneljästtä
 
 +Ord+Pl+Abe:nsittaneljättä  NUM_BACK_CLIT_OPT  ;
 
@@ -7415,7 +7415,7 @@ LEXICON  NUM_51kahdesneljästtä
 +Ord+Sg+Tra:nneksineljättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdesnoniljardis
+LEXICON NUM_51kahdesnoniljardis
 
 +Ord+Pl+Abe:nsittanoniljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -7470,7 +7470,7 @@ LEXICON  NUM_51kahdesnoniljardis
 +Ord+Sg+Tra:nneksinoniljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdesnoniljoonas
+LEXICON NUM_51kahdesnoniljoonas
 
 +Ord+Pl+Abe:nsittanoniljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -7525,7 +7525,7 @@ LEXICON  NUM_51kahdesnoniljoonas
 +Ord+Sg+Tra:nneksinoniljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdesoktiljardis
+LEXICON NUM_51kahdesoktiljardis
 
 +Ord+Pl+Abe:nsittaoktiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -7580,7 +7580,7 @@ LEXICON  NUM_51kahdesoktiljardis
 +Ord+Sg+Tra:nneksioktiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdesoktiljoonas
+LEXICON NUM_51kahdesoktiljoonas
 
 +Ord+Pl+Abe:nsittaoktiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -7635,7 +7635,7 @@ LEXICON  NUM_51kahdesoktiljoonas
 +Ord+Sg+Tra:nneksioktiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdespiljardis
+LEXICON NUM_51kahdespiljardis
 
 +Ord+Pl+Abe:nsittapiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -7690,7 +7690,7 @@ LEXICON  NUM_51kahdespiljardis
 +Ord+Sg+Tra:nneksipiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdespiljoonas
+LEXICON NUM_51kahdespiljoonas
 
 +Ord+Pl+Abe:nsittapiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -7745,7 +7745,7 @@ LEXICON  NUM_51kahdespiljoonas
 +Ord+Sg+Tra:nneksipiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdessadas
+LEXICON NUM_51kahdessadas
 
 +Ord+Pl+Abe:nsittasadoitta  NUM_BACK_CLIT_OPT  ;
 
@@ -7800,7 +7800,7 @@ LEXICON  NUM_51kahdessadas
 +Ord+Sg+Tra:ksansisadaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdesseitsemättä
+LEXICON NUM_51kahdesseitsemättä
 
 +Ord+Pl+Abe:nsittaseitsemättä  NUM_BACK_CLIT_OPT  ;
 
@@ -7853,7 +7853,7 @@ LEXICON  NUM_51kahdesseitsemättä
 +Ord+Sg+Tra:ksansiseitsemättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdessentiljardis
+LEXICON NUM_51kahdessentiljardis
 
 +Ord+Pl+Abe:nsittasentiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -7908,7 +7908,7 @@ LEXICON  NUM_51kahdessentiljardis
 +Ord+Sg+Tra:ksansisentiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdessentiljoonas
+LEXICON NUM_51kahdessentiljoonas
 
 +Ord+Pl+Abe:nsittasentiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -7963,7 +7963,7 @@ LEXICON  NUM_51kahdessentiljoonas
 +Ord+Sg+Tra:ksansisentiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdesseptiljardis
+LEXICON NUM_51kahdesseptiljardis
 
 +Ord+Pl+Abe:nsittaseptiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -8018,7 +8018,7 @@ LEXICON  NUM_51kahdesseptiljardis
 +Ord+Sg+Tra:ksansiseptiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdesseptiljoonas
+LEXICON NUM_51kahdesseptiljoonas
 
 +Ord+Pl+Abe:nsittaseptiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -8073,7 +8073,7 @@ LEXICON  NUM_51kahdesseptiljoonas
 +Ord+Sg+Tra:ksansiseptiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdestoista
+LEXICON NUM_51kahdestoista
 
 +Ord+Pl+Abe:nsittatoista  NUM_BACK_CLIT_OPT  ;
 
@@ -8126,7 +8126,7 @@ LEXICON  NUM_51kahdestoista
 +Ord+Sg+Tra:nneksitoista  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdestredekiljardis
+LEXICON NUM_51kahdestredekiljardis
 
 +Ord+Pl+Abe:nsittatredekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -8181,7 +8181,7 @@ LEXICON  NUM_51kahdestredekiljardis
 +Ord+Sg+Tra:nneksitredekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdestredekiljoonas
+LEXICON NUM_51kahdestredekiljoonas
 
 +Ord+Pl+Abe:nsittatredekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -8236,7 +8236,7 @@ LEXICON  NUM_51kahdestredekiljoonas
 +Ord+Sg+Tra:nneksitredekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdestriljardis
+LEXICON NUM_51kahdestriljardis
 
 +Ord+Pl+Abe:nsittatriljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -8291,7 +8291,7 @@ LEXICON  NUM_51kahdestriljardis
 +Ord+Sg+Tra:nneksitriljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdestriljoonas
+LEXICON NUM_51kahdestriljoonas
 
 +Ord+Pl+Abe:nsittatriljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -8346,7 +8346,7 @@ LEXICON  NUM_51kahdestriljoonas
 +Ord+Sg+Tra:nneksitriljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdestsiljardis
+LEXICON NUM_51kahdestsiljardis
 
 +Ord+Pl+Abe:nsittatsiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -8401,7 +8401,7 @@ LEXICON  NUM_51kahdestsiljardis
 +Ord+Sg+Tra:nneksitsiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdestsiljoonas
+LEXICON NUM_51kahdestsiljoonas
 
 +Ord+Pl+Abe:nsittatsiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -8456,7 +8456,7 @@ LEXICON  NUM_51kahdestsiljoonas
 +Ord+Sg+Tra:nneksitsiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdestuhannes
+LEXICON NUM_51kahdestuhannes
 
 +Ord+Pl+Abe:nsittatuhansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -8511,7 +8511,7 @@ LEXICON  NUM_51kahdestuhannes
 +Ord+Sg+Tra:nneksituhanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdesundekiljardis
+LEXICON NUM_51kahdesundekiljardis
 
 +Ord+Pl+Abe:nsittaundekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -8566,7 +8566,7 @@ LEXICON  NUM_51kahdesundekiljardis
 +Ord+Sg+Tra:nneksiundekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdesundekiljoonas
+LEXICON NUM_51kahdesundekiljoonas
 
 +Ord+Pl+Abe:nsittaundekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -8621,7 +8621,7 @@ LEXICON  NUM_51kahdesundekiljoonas
 +Ord+Sg+Tra:nneksiundekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdesviidettä
+LEXICON NUM_51kahdesviidettä
 
 +Ord+Pl+Abe:nsittaviidettä  NUM_BACK_CLIT_OPT  ;
 
@@ -8674,7 +8674,7 @@ LEXICON  NUM_51kahdesviidettä
 +Ord+Sg+Tra:nneksiviidettä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kahdesyhdeksättä
+LEXICON NUM_51kahdesyhdeksättä
 
 +Ord+Pl+Abe:nsittayhdeksättä  NUM_BACK_CLIT_OPT  ;
 
@@ -8727,7 +8727,7 @@ LEXICON  NUM_51kahdesyhdeksättä
 +Ord+Sg+Tra:nneksiyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksibiljardia
+LEXICON NUM_51kaksibiljardia
 
 +Pl+Abe:ksittabiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -8782,7 +8782,7 @@ LEXICON  NUM_51kaksibiljardia
 +Sg+Tra:hdeksibiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksibiljoonaa
+LEXICON NUM_51kaksibiljoonaa
 
 +Pl+Abe:ksittabiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -8837,7 +8837,7 @@ LEXICON  NUM_51kaksibiljoonaa
 +Sg+Tra:hdeksibiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksidekiljardia
+LEXICON NUM_51kaksidekiljardia
 
 +Pl+Abe:ksittadekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -8892,7 +8892,7 @@ LEXICON  NUM_51kaksidekiljardia
 +Sg+Tra:hdeksidekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksidekiljoonaa
+LEXICON NUM_51kaksidekiljoonaa
 
 +Pl+Abe:ksittadekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -8947,7 +8947,7 @@ LEXICON  NUM_51kaksidekiljoonaa
 +Sg+Tra:hdeksidekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksiduodekiljardia
+LEXICON NUM_51kaksiduodekiljardia
 
 +Pl+Abe:ksittaduodekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -9002,7 +9002,7 @@ LEXICON  NUM_51kaksiduodekiljardia
 +Sg+Tra:hdeksiduodekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksiduodekiljoonaa
+LEXICON NUM_51kaksiduodekiljoonaa
 
 +Pl+Abe:ksittaduodekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -9057,7 +9057,7 @@ LEXICON  NUM_51kaksiduodekiljoonaa
 +Sg+Tra:hdeksiduodekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksikahdeksatta
+LEXICON NUM_51kaksikahdeksatta
 
 +Pl+Abe:ksittakahdeksatta  NUM_BACK_CLIT_OPT  ;
 
@@ -9110,7 +9110,7 @@ LEXICON  NUM_51kaksikahdeksatta
 +Sg+Tra:hdeksikahdeksatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksikiljardia
+LEXICON NUM_51kaksikiljardia
 
 +Pl+Abe:ksittakiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -9165,7 +9165,7 @@ LEXICON  NUM_51kaksikiljardia
 +Sg+Tra:hdeksikiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksikiljoonaa
+LEXICON NUM_51kaksikiljoonaa
 
 +Pl+Abe:ksittakiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -9220,7 +9220,7 @@ LEXICON  NUM_51kaksikiljoonaa
 +Sg+Tra:hdeksikiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksikolmatta
+LEXICON NUM_51kaksikolmatta
 
 +Pl+Abe:ksittakolmatta  NUM_BACK_CLIT_OPT  ;
 
@@ -9273,7 +9273,7 @@ LEXICON  NUM_51kaksikolmatta
 +Sg+Tra:hdeksikolmatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksikuudetta
+LEXICON NUM_51kaksikuudetta
 
 +Pl+Abe:ksittakuudetta  NUM_BACK_CLIT_OPT  ;
 
@@ -9326,7 +9326,7 @@ LEXICON  NUM_51kaksikuudetta
 +Sg+Tra:hdeksikuudetta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksikvadriljardia
+LEXICON NUM_51kaksikvadriljardia
 
 +Pl+Abe:ksittakvadriljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -9381,7 +9381,7 @@ LEXICON  NUM_51kaksikvadriljardia
 +Sg+Tra:hdeksikvadriljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksikvadriljoonaa
+LEXICON NUM_51kaksikvadriljoonaa
 
 +Pl+Abe:ksittakvadriljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -9436,7 +9436,7 @@ LEXICON  NUM_51kaksikvadriljoonaa
 +Sg+Tra:hdeksikvadriljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksikvintiljardia
+LEXICON NUM_51kaksikvintiljardia
 
 +Pl+Abe:ksittakvintiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -9491,7 +9491,7 @@ LEXICON  NUM_51kaksikvintiljardia
 +Sg+Tra:hdeksikvintiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksikvintiljoonaa
+LEXICON NUM_51kaksikvintiljoonaa
 
 +Pl+Abe:ksittakvintiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -9546,7 +9546,7 @@ LEXICON  NUM_51kaksikvintiljoonaa
 +Sg+Tra:hdeksikvintiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksikymmentä
+LEXICON NUM_51kaksikymmentä
 
 +Pl+Abe:ksittakymmenittä  NUM_FRONT_CLIT_OPT  ;
 
@@ -9601,7 +9601,7 @@ LEXICON  NUM_51kaksikymmentä
 +Sg+Tra:hdeksikymmeneksi  NUM_FRONT_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksimiljardia
+LEXICON NUM_51kaksimiljardia
 
 +Pl+Abe:ksittamiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -9656,7 +9656,7 @@ LEXICON  NUM_51kaksimiljardia
 +Sg+Tra:hdeksimiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksimiljoonaa
+LEXICON NUM_51kaksimiljoonaa
 
 +Pl+Abe:ksittamiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -9711,7 +9711,7 @@ LEXICON  NUM_51kaksimiljoonaa
 +Sg+Tra:hdeksimiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksineljättä
+LEXICON NUM_51kaksineljättä
 
 +Pl+Abe:ksittaneljättä  NUM_BACK_CLIT_OPT  ;
 
@@ -9764,7 +9764,7 @@ LEXICON  NUM_51kaksineljättä
 +Sg+Tra:hdeksineljättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksinoniljardia
+LEXICON NUM_51kaksinoniljardia
 
 +Pl+Abe:ksittanoniljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -9819,7 +9819,7 @@ LEXICON  NUM_51kaksinoniljardia
 +Sg+Tra:hdeksinoniljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksinoniljoonaa
+LEXICON NUM_51kaksinoniljoonaa
 
 +Pl+Abe:ksittanoniljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -9874,7 +9874,7 @@ LEXICON  NUM_51kaksinoniljoonaa
 +Sg+Tra:hdeksinoniljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksioktiljardia
+LEXICON NUM_51kaksioktiljardia
 
 +Pl+Abe:ksittaoktiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -9929,7 +9929,7 @@ LEXICON  NUM_51kaksioktiljardia
 +Sg+Tra:hdeksioktiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksioktiljoonaa
+LEXICON NUM_51kaksioktiljoonaa
 
 +Pl+Abe:ksittaoktiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -9984,7 +9984,7 @@ LEXICON  NUM_51kaksioktiljoonaa
 +Sg+Tra:hdeksioktiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksipiljardia
+LEXICON NUM_51kaksipiljardia
 
 +Pl+Abe:ksittapiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -10039,7 +10039,7 @@ LEXICON  NUM_51kaksipiljardia
 +Sg+Tra:hdeksipiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksipiljoonaa
+LEXICON NUM_51kaksipiljoonaa
 
 +Pl+Abe:ksittapiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -10094,7 +10094,7 @@ LEXICON  NUM_51kaksipiljoonaa
 +Sg+Tra:hdeksipiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksisataa
+LEXICON NUM_51kaksisataa
 
 +Pl+Abe:ksittasadoitta  NUM_BACK_CLIT_OPT  ;
 
@@ -10149,7 +10149,7 @@ LEXICON  NUM_51kaksisataa
 +Sg+Tra:hdeksisadaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksiseitsemättä
+LEXICON NUM_51kaksiseitsemättä
 
 +Pl+Abe:ksittaseitsemättä  NUM_BACK_CLIT_OPT  ;
 
@@ -10202,7 +10202,7 @@ LEXICON  NUM_51kaksiseitsemättä
 +Sg+Tra:hdeksiseitsemättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksisentiljardia
+LEXICON NUM_51kaksisentiljardia
 
 +Pl+Abe:ksittasentiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -10257,7 +10257,7 @@ LEXICON  NUM_51kaksisentiljardia
 +Sg+Tra:hdeksisentiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksisentiljoonaa
+LEXICON NUM_51kaksisentiljoonaa
 
 +Pl+Abe:ksittasentiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -10312,7 +10312,7 @@ LEXICON  NUM_51kaksisentiljoonaa
 +Sg+Tra:hdeksisentiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksiseptiljardia
+LEXICON NUM_51kaksiseptiljardia
 
 +Pl+Abe:ksittaseptiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -10367,7 +10367,7 @@ LEXICON  NUM_51kaksiseptiljardia
 +Sg+Tra:hdeksiseptiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksiseptiljoonaa
+LEXICON NUM_51kaksiseptiljoonaa
 
 +Pl+Abe:ksittaseptiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -10422,7 +10422,7 @@ LEXICON  NUM_51kaksiseptiljoonaa
 +Sg+Tra:hdeksiseptiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksitoista
+LEXICON NUM_51kaksitoista
 
 +Pl+Abe:ksittatoista  NUM_BACK_CLIT_OPT  ;
 
@@ -10475,7 +10475,7 @@ LEXICON  NUM_51kaksitoista
 +Sg+Tra:hdeksitoista  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksitredekiljardia
+LEXICON NUM_51kaksitredekiljardia
 
 +Pl+Abe:ksittatredekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -10530,7 +10530,7 @@ LEXICON  NUM_51kaksitredekiljardia
 +Sg+Tra:hdeksitredekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksitredekiljoonaa
+LEXICON NUM_51kaksitredekiljoonaa
 
 +Pl+Abe:ksittatredekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -10585,7 +10585,7 @@ LEXICON  NUM_51kaksitredekiljoonaa
 +Sg+Tra:hdeksitredekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksitriljardia
+LEXICON NUM_51kaksitriljardia
 
 +Pl+Abe:ksittatriljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -10640,7 +10640,7 @@ LEXICON  NUM_51kaksitriljardia
 +Sg+Tra:hdeksitriljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksitriljoonaa
+LEXICON NUM_51kaksitriljoonaa
 
 +Pl+Abe:ksittatriljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -10695,7 +10695,7 @@ LEXICON  NUM_51kaksitriljoonaa
 +Sg+Tra:hdeksitriljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksitsiljardia
+LEXICON NUM_51kaksitsiljardia
 
 +Pl+Abe:ksittatsiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -10750,7 +10750,7 @@ LEXICON  NUM_51kaksitsiljardia
 +Sg+Tra:hdeksitsiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksitsiljoonaa
+LEXICON NUM_51kaksitsiljoonaa
 
 +Pl+Abe:ksittatsiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -10805,7 +10805,7 @@ LEXICON  NUM_51kaksitsiljoonaa
 +Sg+Tra:hdeksitsiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksituhatta
+LEXICON NUM_51kaksituhatta
 
 +Pl+Abe:ksittatuhansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -10860,7 +10860,7 @@ LEXICON  NUM_51kaksituhatta
 +Sg+Tra:hdeksituhanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksiundekiljardia
+LEXICON NUM_51kaksiundekiljardia
 
 +Pl+Abe:ksittaundekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -10915,7 +10915,7 @@ LEXICON  NUM_51kaksiundekiljardia
 +Sg+Tra:hdeksiundekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksiundekiljoonaa
+LEXICON NUM_51kaksiundekiljoonaa
 
 +Pl+Abe:ksittaundekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -10970,7 +10970,7 @@ LEXICON  NUM_51kaksiundekiljoonaa
 +Sg+Tra:hdeksiundekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksiviidettä
+LEXICON NUM_51kaksiviidettä
 
 +Pl+Abe:ksittaviidettä  NUM_BACK_CLIT_OPT  ;
 
@@ -11023,7 +11023,7 @@ LEXICON  NUM_51kaksiviidettä
 +Sg+Tra:hdeksiviidettä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kaksiyhdeksättä
+LEXICON NUM_51kaksiyhdeksättä
 
 +Pl+Abe:ksittayhdeksättä  NUM_BACK_CLIT_OPT  ;
 
@@ -11076,7 +11076,7 @@ LEXICON  NUM_51kaksiyhdeksättä
 +Sg+Tra:hdeksiyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmasbiljardis
+LEXICON NUM_51kolmasbiljardis
 
 +Ord+Pl+Abe:nsittabiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -11131,7 +11131,7 @@ LEXICON  NUM_51kolmasbiljardis
 +Ord+Sg+Tra:nneksibiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmasbiljoonas
+LEXICON NUM_51kolmasbiljoonas
 
 +Ord+Pl+Abe:nsittabiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -11186,7 +11186,7 @@ LEXICON  NUM_51kolmasbiljoonas
 +Ord+Sg+Tra:nneksibiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmasdekiljardis
+LEXICON NUM_51kolmasdekiljardis
 
 +Ord+Pl+Abe:nsittadekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -11241,7 +11241,7 @@ LEXICON  NUM_51kolmasdekiljardis
 +Ord+Sg+Tra:nneksidekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmasdekiljoonas
+LEXICON NUM_51kolmasdekiljoonas
 
 +Ord+Pl+Abe:nsittadekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -11296,7 +11296,7 @@ LEXICON  NUM_51kolmasdekiljoonas
 +Ord+Sg+Tra:nneksidekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmasduodekiljardis
+LEXICON NUM_51kolmasduodekiljardis
 
 +Ord+Pl+Abe:nsittaduodekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -11351,7 +11351,7 @@ LEXICON  NUM_51kolmasduodekiljardis
 +Ord+Sg+Tra:nneksiduodekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmasduodekiljoonas
+LEXICON NUM_51kolmasduodekiljoonas
 
 +Ord+Pl+Abe:nsittaduodekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -11406,7 +11406,7 @@ LEXICON  NUM_51kolmasduodekiljoonas
 +Ord+Sg+Tra:nneksiduodekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmaskahdeksatta
+LEXICON NUM_51kolmaskahdeksatta
 
 +Ord+Pl+Abe:nsittakahdeksatta  NUM_BACK_CLIT_OPT  ;
 
@@ -11459,7 +11459,7 @@ LEXICON  NUM_51kolmaskahdeksatta
 +Ord+Sg+Tra:nneksikahdeksatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmaskiljardis
+LEXICON NUM_51kolmaskiljardis
 
 +Ord+Pl+Abe:nsittakiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -11514,7 +11514,7 @@ LEXICON  NUM_51kolmaskiljardis
 +Ord+Sg+Tra:nneksikiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmaskiljoonas
+LEXICON NUM_51kolmaskiljoonas
 
 +Ord+Pl+Abe:nsittakiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -11569,7 +11569,7 @@ LEXICON  NUM_51kolmaskiljoonas
 +Ord+Sg+Tra:nneksikiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmaskolmatta
+LEXICON NUM_51kolmaskolmatta
 
 +Ord+Pl+Abe:nsittakolmatta  NUM_BACK_CLIT_OPT  ;
 
@@ -11622,7 +11622,7 @@ LEXICON  NUM_51kolmaskolmatta
 +Ord+Sg+Tra:nneksikolmatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmaskuudetta
+LEXICON NUM_51kolmaskuudetta
 
 +Ord+Pl+Abe:nsittakuudetta  NUM_BACK_CLIT_OPT  ;
 
@@ -11675,7 +11675,7 @@ LEXICON  NUM_51kolmaskuudetta
 +Ord+Sg+Tra:nneksikuudetta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmaskvadriljardis
+LEXICON NUM_51kolmaskvadriljardis
 
 +Ord+Pl+Abe:nsittakvadriljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -11730,7 +11730,7 @@ LEXICON  NUM_51kolmaskvadriljardis
 +Ord+Sg+Tra:nneksikvadriljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmaskvadriljoonas
+LEXICON NUM_51kolmaskvadriljoonas
 
 +Ord+Pl+Abe:nsittakvadriljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -11785,7 +11785,7 @@ LEXICON  NUM_51kolmaskvadriljoonas
 +Ord+Sg+Tra:nneksikvadriljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmaskvintiljardis
+LEXICON NUM_51kolmaskvintiljardis
 
 +Ord+Pl+Abe:nsittakvintiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -11840,7 +11840,7 @@ LEXICON  NUM_51kolmaskvintiljardis
 +Ord+Sg+Tra:nneksikvintiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmaskvintiljoonas
+LEXICON NUM_51kolmaskvintiljoonas
 
 +Ord+Pl+Abe:nsittakvintiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -11895,7 +11895,7 @@ LEXICON  NUM_51kolmaskvintiljoonas
 +Ord+Sg+Tra:nneksikvintiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmaskymmenes
+LEXICON NUM_51kolmaskymmenes
 
 +Ord+Pl+Abe:nsittakymmenittä  NUM_FRONT_CLIT_OPT  ;
 
@@ -11950,7 +11950,7 @@ LEXICON  NUM_51kolmaskymmenes
 +Ord+Sg+Tra:nneksikymmeneksi  NUM_FRONT_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmasmiljardis
+LEXICON NUM_51kolmasmiljardis
 
 +Ord+Pl+Abe:nsittamiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -12005,7 +12005,7 @@ LEXICON  NUM_51kolmasmiljardis
 +Ord+Sg+Tra:nneksimiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmasmiljoonas
+LEXICON NUM_51kolmasmiljoonas
 
 +Ord+Pl+Abe:nsittamiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -12060,7 +12060,7 @@ LEXICON  NUM_51kolmasmiljoonas
 +Ord+Sg+Tra:nneksimiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmasneljättä
+LEXICON NUM_51kolmasneljättä
 
 +Ord+Pl+Abe:nsittaneljättä  NUM_BACK_CLIT_OPT  ;
 
@@ -12113,7 +12113,7 @@ LEXICON  NUM_51kolmasneljättä
 +Ord+Sg+Tra:nneksineljättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmasnoniljardis
+LEXICON NUM_51kolmasnoniljardis
 
 +Ord+Pl+Abe:nsittanoniljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -12168,7 +12168,7 @@ LEXICON  NUM_51kolmasnoniljardis
 +Ord+Sg+Tra:nneksinoniljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmasnoniljoonas
+LEXICON NUM_51kolmasnoniljoonas
 
 +Ord+Pl+Abe:nsittanoniljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -12223,7 +12223,7 @@ LEXICON  NUM_51kolmasnoniljoonas
 +Ord+Sg+Tra:nneksinoniljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmasoktiljardis
+LEXICON NUM_51kolmasoktiljardis
 
 +Ord+Pl+Abe:nsittaoktiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -12278,7 +12278,7 @@ LEXICON  NUM_51kolmasoktiljardis
 +Ord+Sg+Tra:nneksioktiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmasoktiljoonas
+LEXICON NUM_51kolmasoktiljoonas
 
 +Ord+Pl+Abe:nsittaoktiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -12333,7 +12333,7 @@ LEXICON  NUM_51kolmasoktiljoonas
 +Ord+Sg+Tra:nneksioktiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmaspiljardis
+LEXICON NUM_51kolmaspiljardis
 
 +Ord+Pl+Abe:nsittapiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -12388,7 +12388,7 @@ LEXICON  NUM_51kolmaspiljardis
 +Ord+Sg+Tra:nneksipiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmaspiljoonas
+LEXICON NUM_51kolmaspiljoonas
 
 +Ord+Pl+Abe:nsittapiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -12443,7 +12443,7 @@ LEXICON  NUM_51kolmaspiljoonas
 +Ord+Sg+Tra:nneksipiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmassadas
+LEXICON NUM_51kolmassadas
 
 +Ord+Pl+Abe:nsittasadoitta  NUM_BACK_CLIT_OPT  ;
 
@@ -12498,7 +12498,7 @@ LEXICON  NUM_51kolmassadas
 +Ord+Sg+Tra:nneksisadaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmasseitsemättä
+LEXICON NUM_51kolmasseitsemättä
 
 +Ord+Pl+Abe:nsittaseitsemättä  NUM_BACK_CLIT_OPT  ;
 
@@ -12551,7 +12551,7 @@ LEXICON  NUM_51kolmasseitsemättä
 +Ord+Sg+Tra:nneksiseitsemättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmassentiljardis
+LEXICON NUM_51kolmassentiljardis
 
 +Ord+Pl+Abe:nsittasentiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -12606,7 +12606,7 @@ LEXICON  NUM_51kolmassentiljardis
 +Ord+Sg+Tra:nneksisentiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmassentiljoonas
+LEXICON NUM_51kolmassentiljoonas
 
 +Ord+Pl+Abe:nsittasentiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -12661,7 +12661,7 @@ LEXICON  NUM_51kolmassentiljoonas
 +Ord+Sg+Tra:nneksisentiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmasseptiljardis
+LEXICON NUM_51kolmasseptiljardis
 
 +Ord+Pl+Abe:nsittaseptiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -12716,7 +12716,7 @@ LEXICON  NUM_51kolmasseptiljardis
 +Ord+Sg+Tra:nneksiseptiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmasseptiljoonas
+LEXICON NUM_51kolmasseptiljoonas
 
 +Ord+Pl+Abe:nsittaseptiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -12771,7 +12771,7 @@ LEXICON  NUM_51kolmasseptiljoonas
 +Ord+Sg+Tra:nneksiseptiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmastoista
+LEXICON NUM_51kolmastoista
 
 +Ord+Pl+Abe:nsittatoista  NUM_BACK_CLIT_OPT  ;
 
@@ -12824,7 +12824,7 @@ LEXICON  NUM_51kolmastoista
 +Ord+Sg+Tra:nneksitoista  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmastredekiljardis
+LEXICON NUM_51kolmastredekiljardis
 
 +Ord+Pl+Abe:nsittatredekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -12879,7 +12879,7 @@ LEXICON  NUM_51kolmastredekiljardis
 +Ord+Sg+Tra:nneksitredekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmastredekiljoonas
+LEXICON NUM_51kolmastredekiljoonas
 
 +Ord+Pl+Abe:nsittatredekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -12934,7 +12934,7 @@ LEXICON  NUM_51kolmastredekiljoonas
 +Ord+Sg+Tra:nneksitredekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmastriljardis
+LEXICON NUM_51kolmastriljardis
 
 +Ord+Pl+Abe:nsittatriljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -12989,7 +12989,7 @@ LEXICON  NUM_51kolmastriljardis
 +Ord+Sg+Tra:nneksitriljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmastriljoonas
+LEXICON NUM_51kolmastriljoonas
 
 +Ord+Pl+Abe:nsittatriljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -13044,7 +13044,7 @@ LEXICON  NUM_51kolmastriljoonas
 +Ord+Sg+Tra:nneksitriljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmastsiljardis
+LEXICON NUM_51kolmastsiljardis
 
 +Ord+Pl+Abe:nsittatsiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -13099,7 +13099,7 @@ LEXICON  NUM_51kolmastsiljardis
 +Ord+Sg+Tra:nneksitsiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmastsiljoonas
+LEXICON NUM_51kolmastsiljoonas
 
 +Ord+Pl+Abe:nsittatsiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -13154,7 +13154,7 @@ LEXICON  NUM_51kolmastsiljoonas
 +Ord+Sg+Tra:nneksitsiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmastuhannes
+LEXICON NUM_51kolmastuhannes
 
 +Ord+Pl+Abe:nsittatuhansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -13209,7 +13209,7 @@ LEXICON  NUM_51kolmastuhannes
 +Ord+Sg+Tra:nneksituhanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmasundekiljardis
+LEXICON NUM_51kolmasundekiljardis
 
 +Ord+Pl+Abe:nsittaundekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -13264,7 +13264,7 @@ LEXICON  NUM_51kolmasundekiljardis
 +Ord+Sg+Tra:nneksiundekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmasundekiljoonas
+LEXICON NUM_51kolmasundekiljoonas
 
 +Ord+Pl+Abe:nsittaundekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -13319,7 +13319,7 @@ LEXICON  NUM_51kolmasundekiljoonas
 +Ord+Sg+Tra:nneksiundekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmasviidettä
+LEXICON NUM_51kolmasviidettä
 
 +Ord+Pl+Abe:nsittaviidettä  NUM_BACK_CLIT_OPT  ;
 
@@ -13372,7 +13372,7 @@ LEXICON  NUM_51kolmasviidettä
 +Ord+Sg+Tra:nneksiviidettä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmasyhdeksättä
+LEXICON NUM_51kolmasyhdeksättä
 
 +Ord+Pl+Abe:nsittayhdeksättä  NUM_BACK_CLIT_OPT  ;
 
@@ -13425,7 +13425,7 @@ LEXICON  NUM_51kolmasyhdeksättä
 +Ord+Sg+Tra:nneksiyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmebiljardia
+LEXICON NUM_51kolmebiljardia
 
 +Pl+Abe:ittabiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -13480,7 +13480,7 @@ LEXICON  NUM_51kolmebiljardia
 +Sg+Tra:eksibiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmebiljoonaa
+LEXICON NUM_51kolmebiljoonaa
 
 +Pl+Abe:ittabiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -13535,7 +13535,7 @@ LEXICON  NUM_51kolmebiljoonaa
 +Sg+Tra:eksibiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmedekiljardia
+LEXICON NUM_51kolmedekiljardia
 
 +Pl+Abe:ittadekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -13590,7 +13590,7 @@ LEXICON  NUM_51kolmedekiljardia
 +Sg+Tra:eksidekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmedekiljoonaa
+LEXICON NUM_51kolmedekiljoonaa
 
 +Pl+Abe:ittadekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -13645,7 +13645,7 @@ LEXICON  NUM_51kolmedekiljoonaa
 +Sg+Tra:eksidekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmeduodekiljardia
+LEXICON NUM_51kolmeduodekiljardia
 
 +Pl+Abe:ittaduodekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -13700,7 +13700,7 @@ LEXICON  NUM_51kolmeduodekiljardia
 +Sg+Tra:eksiduodekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmeduodekiljoonaa
+LEXICON NUM_51kolmeduodekiljoonaa
 
 +Pl+Abe:ittaduodekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -13755,7 +13755,7 @@ LEXICON  NUM_51kolmeduodekiljoonaa
 +Sg+Tra:eksiduodekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmekahdeksatta
+LEXICON NUM_51kolmekahdeksatta
 
 +Pl+Abe:ittakahdeksatta  NUM_BACK_CLIT_OPT  ;
 
@@ -13808,7 +13808,7 @@ LEXICON  NUM_51kolmekahdeksatta
 +Sg+Tra:eksikahdeksatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmekiljardia
+LEXICON NUM_51kolmekiljardia
 
 +Pl+Abe:ittakiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -13863,7 +13863,7 @@ LEXICON  NUM_51kolmekiljardia
 +Sg+Tra:eksikiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmekiljoonaa
+LEXICON NUM_51kolmekiljoonaa
 
 +Pl+Abe:ittakiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -13918,7 +13918,7 @@ LEXICON  NUM_51kolmekiljoonaa
 +Sg+Tra:eksikiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmekolmatta
+LEXICON NUM_51kolmekolmatta
 
 +Pl+Abe:ittakolmatta  NUM_BACK_CLIT_OPT  ;
 
@@ -13971,7 +13971,7 @@ LEXICON  NUM_51kolmekolmatta
 +Sg+Tra:eksikolmatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmekuudetta
+LEXICON NUM_51kolmekuudetta
 
 +Pl+Abe:ittakuudetta  NUM_BACK_CLIT_OPT  ;
 
@@ -14024,7 +14024,7 @@ LEXICON  NUM_51kolmekuudetta
 +Sg+Tra:eksikuudetta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmekvadriljardia
+LEXICON NUM_51kolmekvadriljardia
 
 +Pl+Abe:ittakvadriljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -14079,7 +14079,7 @@ LEXICON  NUM_51kolmekvadriljardia
 +Sg+Tra:eksikvadriljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmekvadriljoonaa
+LEXICON NUM_51kolmekvadriljoonaa
 
 +Pl+Abe:ittakvadriljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -14134,7 +14134,7 @@ LEXICON  NUM_51kolmekvadriljoonaa
 +Sg+Tra:eksikvadriljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmekvintiljardia
+LEXICON NUM_51kolmekvintiljardia
 
 +Pl+Abe:ittakvintiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -14189,7 +14189,7 @@ LEXICON  NUM_51kolmekvintiljardia
 +Sg+Tra:eksikvintiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmekvintiljoonaa
+LEXICON NUM_51kolmekvintiljoonaa
 
 +Pl+Abe:ittakvintiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -14244,7 +14244,7 @@ LEXICON  NUM_51kolmekvintiljoonaa
 +Sg+Tra:eksikvintiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmekymmentä
+LEXICON NUM_51kolmekymmentä
 
 +Pl+Abe:ittakymmenittä  NUM_FRONT_CLIT_OPT  ;
 
@@ -14299,7 +14299,7 @@ LEXICON  NUM_51kolmekymmentä
 +Sg+Tra:eksikymmeneksi  NUM_FRONT_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmemiljardia
+LEXICON NUM_51kolmemiljardia
 
 +Pl+Abe:ittamiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -14354,7 +14354,7 @@ LEXICON  NUM_51kolmemiljardia
 +Sg+Tra:eksimiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmemiljoonaa
+LEXICON NUM_51kolmemiljoonaa
 
 +Pl+Abe:ittamiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -14409,7 +14409,7 @@ LEXICON  NUM_51kolmemiljoonaa
 +Sg+Tra:eksimiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmeneljättä
+LEXICON NUM_51kolmeneljättä
 
 +Pl+Abe:ittaneljättä  NUM_BACK_CLIT_OPT  ;
 
@@ -14462,7 +14462,7 @@ LEXICON  NUM_51kolmeneljättä
 +Sg+Tra:eksineljättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmenoniljardia
+LEXICON NUM_51kolmenoniljardia
 
 +Pl+Abe:ittanoniljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -14517,7 +14517,7 @@ LEXICON  NUM_51kolmenoniljardia
 +Sg+Tra:eksinoniljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmenoniljoonaa
+LEXICON NUM_51kolmenoniljoonaa
 
 +Pl+Abe:ittanoniljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -14572,7 +14572,7 @@ LEXICON  NUM_51kolmenoniljoonaa
 +Sg+Tra:eksinoniljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmeoktiljardia
+LEXICON NUM_51kolmeoktiljardia
 
 +Pl+Abe:ittaoktiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -14627,7 +14627,7 @@ LEXICON  NUM_51kolmeoktiljardia
 +Sg+Tra:eksioktiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmeoktiljoonaa
+LEXICON NUM_51kolmeoktiljoonaa
 
 +Pl+Abe:ittaoktiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -14682,7 +14682,7 @@ LEXICON  NUM_51kolmeoktiljoonaa
 +Sg+Tra:eksioktiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmepiljardia
+LEXICON NUM_51kolmepiljardia
 
 +Pl+Abe:ittapiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -14737,7 +14737,7 @@ LEXICON  NUM_51kolmepiljardia
 +Sg+Tra:eksipiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmepiljoonaa
+LEXICON NUM_51kolmepiljoonaa
 
 +Pl+Abe:ittapiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -14792,7 +14792,7 @@ LEXICON  NUM_51kolmepiljoonaa
 +Sg+Tra:eksipiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmesataa
+LEXICON NUM_51kolmesataa
 
 +Pl+Abe:ittasadoitta  NUM_BACK_CLIT_OPT  ;
 
@@ -14847,7 +14847,7 @@ LEXICON  NUM_51kolmesataa
 +Sg+Tra:eksisadaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmeseitsemättä
+LEXICON NUM_51kolmeseitsemättä
 
 +Pl+Abe:ittaseitsemättä  NUM_BACK_CLIT_OPT  ;
 
@@ -14900,7 +14900,7 @@ LEXICON  NUM_51kolmeseitsemättä
 +Sg+Tra:eksiseitsemättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmesentiljardia
+LEXICON NUM_51kolmesentiljardia
 
 +Pl+Abe:ittasentiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -14955,7 +14955,7 @@ LEXICON  NUM_51kolmesentiljardia
 +Sg+Tra:eksisentiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmesentiljoonaa
+LEXICON NUM_51kolmesentiljoonaa
 
 +Pl+Abe:ittasentiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -15010,7 +15010,7 @@ LEXICON  NUM_51kolmesentiljoonaa
 +Sg+Tra:eksisentiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmeseptiljardia
+LEXICON NUM_51kolmeseptiljardia
 
 +Pl+Abe:ittaseptiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -15065,7 +15065,7 @@ LEXICON  NUM_51kolmeseptiljardia
 +Sg+Tra:eksiseptiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmeseptiljoonaa
+LEXICON NUM_51kolmeseptiljoonaa
 
 +Pl+Abe:ittaseptiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -15120,7 +15120,7 @@ LEXICON  NUM_51kolmeseptiljoonaa
 +Sg+Tra:eksiseptiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmetoista
+LEXICON NUM_51kolmetoista
 
 +Pl+Abe:ittatoista  NUM_BACK_CLIT_OPT  ;
 
@@ -15173,7 +15173,7 @@ LEXICON  NUM_51kolmetoista
 +Sg+Tra:eksitoista  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmetredekiljardia
+LEXICON NUM_51kolmetredekiljardia
 
 +Pl+Abe:ittatredekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -15228,7 +15228,7 @@ LEXICON  NUM_51kolmetredekiljardia
 +Sg+Tra:eksitredekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmetredekiljoonaa
+LEXICON NUM_51kolmetredekiljoonaa
 
 +Pl+Abe:ittatredekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -15283,7 +15283,7 @@ LEXICON  NUM_51kolmetredekiljoonaa
 +Sg+Tra:eksitredekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmetriljardia
+LEXICON NUM_51kolmetriljardia
 
 +Pl+Abe:ittatriljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -15338,7 +15338,7 @@ LEXICON  NUM_51kolmetriljardia
 +Sg+Tra:eksitriljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmetriljoonaa
+LEXICON NUM_51kolmetriljoonaa
 
 +Pl+Abe:ittatriljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -15393,7 +15393,7 @@ LEXICON  NUM_51kolmetriljoonaa
 +Sg+Tra:eksitriljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmetsiljardia
+LEXICON NUM_51kolmetsiljardia
 
 +Pl+Abe:ittatsiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -15448,7 +15448,7 @@ LEXICON  NUM_51kolmetsiljardia
 +Sg+Tra:eksitsiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmetsiljoonaa
+LEXICON NUM_51kolmetsiljoonaa
 
 +Pl+Abe:ittatsiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -15503,7 +15503,7 @@ LEXICON  NUM_51kolmetsiljoonaa
 +Sg+Tra:eksitsiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmetuhatta
+LEXICON NUM_51kolmetuhatta
 
 +Pl+Abe:ittatuhansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -15558,7 +15558,7 @@ LEXICON  NUM_51kolmetuhatta
 +Sg+Tra:eksituhanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmeundekiljardia
+LEXICON NUM_51kolmeundekiljardia
 
 +Pl+Abe:ittaundekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -15613,7 +15613,7 @@ LEXICON  NUM_51kolmeundekiljardia
 +Sg+Tra:eksiundekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmeundekiljoonaa
+LEXICON NUM_51kolmeundekiljoonaa
 
 +Pl+Abe:ittaundekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -15668,7 +15668,7 @@ LEXICON  NUM_51kolmeundekiljoonaa
 +Sg+Tra:eksiundekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmeviidettä
+LEXICON NUM_51kolmeviidettä
 
 +Pl+Abe:ittaviidettä  NUM_BACK_CLIT_OPT  ;
 
@@ -15721,7 +15721,7 @@ LEXICON  NUM_51kolmeviidettä
 +Sg+Tra:eksiviidettä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kolmeyhdeksättä
+LEXICON NUM_51kolmeyhdeksättä
 
 +Pl+Abe:ittayhdeksättä  NUM_BACK_CLIT_OPT  ;
 
@@ -15774,7 +15774,7 @@ LEXICON  NUM_51kolmeyhdeksättä
 +Sg+Tra:eksiyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudesbiljardis
+LEXICON NUM_51kuudesbiljardis
 
 +Ord+Pl+Abe:nsittabiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -15829,7 +15829,7 @@ LEXICON  NUM_51kuudesbiljardis
 +Ord+Sg+Tra:nneksibiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudesbiljoonas
+LEXICON NUM_51kuudesbiljoonas
 
 +Ord+Pl+Abe:nsittabiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -15884,7 +15884,7 @@ LEXICON  NUM_51kuudesbiljoonas
 +Ord+Sg+Tra:nneksibiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudesdekiljardis
+LEXICON NUM_51kuudesdekiljardis
 
 +Ord+Pl+Abe:nsittadekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -15939,7 +15939,7 @@ LEXICON  NUM_51kuudesdekiljardis
 +Ord+Sg+Tra:nneksidekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudesdekiljoonas
+LEXICON NUM_51kuudesdekiljoonas
 
 +Ord+Pl+Abe:nsittadekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -15994,7 +15994,7 @@ LEXICON  NUM_51kuudesdekiljoonas
 +Ord+Sg+Tra:nneksidekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudesduodekiljardis
+LEXICON NUM_51kuudesduodekiljardis
 
 +Ord+Pl+Abe:nsittaduodekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -16049,7 +16049,7 @@ LEXICON  NUM_51kuudesduodekiljardis
 +Ord+Sg+Tra:nneksiduodekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudesduodekiljoonas
+LEXICON NUM_51kuudesduodekiljoonas
 
 +Ord+Pl+Abe:nsittaduodekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -16104,7 +16104,7 @@ LEXICON  NUM_51kuudesduodekiljoonas
 +Ord+Sg+Tra:nneksiduodekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudeskahdeksatta
+LEXICON NUM_51kuudeskahdeksatta
 
 +Ord+Pl+Abe:nsittakahdeksatta  NUM_BACK_CLIT_OPT  ;
 
@@ -16157,7 +16157,7 @@ LEXICON  NUM_51kuudeskahdeksatta
 +Ord+Sg+Tra:nneksikahdeksatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudeskiljardis
+LEXICON NUM_51kuudeskiljardis
 
 +Ord+Pl+Abe:nsittakiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -16212,7 +16212,7 @@ LEXICON  NUM_51kuudeskiljardis
 +Ord+Sg+Tra:nneksikiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudeskiljoonas
+LEXICON NUM_51kuudeskiljoonas
 
 +Ord+Pl+Abe:nsittakiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -16267,7 +16267,7 @@ LEXICON  NUM_51kuudeskiljoonas
 +Ord+Sg+Tra:nneksikiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudeskolmatta
+LEXICON NUM_51kuudeskolmatta
 
 +Ord+Pl+Abe:nsittakolmatta  NUM_BACK_CLIT_OPT  ;
 
@@ -16320,7 +16320,7 @@ LEXICON  NUM_51kuudeskolmatta
 +Ord+Sg+Tra:nneksikolmatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudeskuudetta
+LEXICON NUM_51kuudeskuudetta
 
 +Ord+Pl+Abe:nsittakuudetta  NUM_BACK_CLIT_OPT  ;
 
@@ -16373,7 +16373,7 @@ LEXICON  NUM_51kuudeskuudetta
 +Ord+Sg+Tra:nneksikuudetta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudeskvadriljardis
+LEXICON NUM_51kuudeskvadriljardis
 
 +Ord+Pl+Abe:nsittakvadriljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -16428,7 +16428,7 @@ LEXICON  NUM_51kuudeskvadriljardis
 +Ord+Sg+Tra:nneksikvadriljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudeskvadriljoonas
+LEXICON NUM_51kuudeskvadriljoonas
 
 +Ord+Pl+Abe:nsittakvadriljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -16483,7 +16483,7 @@ LEXICON  NUM_51kuudeskvadriljoonas
 +Ord+Sg+Tra:nneksikvadriljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudeskvintiljardis
+LEXICON NUM_51kuudeskvintiljardis
 
 +Ord+Pl+Abe:nsittakvintiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -16538,7 +16538,7 @@ LEXICON  NUM_51kuudeskvintiljardis
 +Ord+Sg+Tra:nneksikvintiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudeskvintiljoonas
+LEXICON NUM_51kuudeskvintiljoonas
 
 +Ord+Pl+Abe:nsittakvintiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -16593,7 +16593,7 @@ LEXICON  NUM_51kuudeskvintiljoonas
 +Ord+Sg+Tra:nneksikvintiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudeskymmenes
+LEXICON NUM_51kuudeskymmenes
 
 +Ord+Pl+Abe:nsittakymmenittä  NUM_FRONT_CLIT_OPT  ;
 
@@ -16648,7 +16648,7 @@ LEXICON  NUM_51kuudeskymmenes
 +Ord+Sg+Tra:nneksikymmeneksi  NUM_FRONT_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudesmiljardis
+LEXICON NUM_51kuudesmiljardis
 
 +Ord+Pl+Abe:nsittamiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -16703,7 +16703,7 @@ LEXICON  NUM_51kuudesmiljardis
 +Ord+Sg+Tra:nneksimiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudesmiljoonas
+LEXICON NUM_51kuudesmiljoonas
 
 +Ord+Pl+Abe:nsittamiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -16758,7 +16758,7 @@ LEXICON  NUM_51kuudesmiljoonas
 +Ord+Sg+Tra:nneksimiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudesneljästtä
+LEXICON NUM_51kuudesneljästtä
 
 +Ord+Pl+Abe:nsittaneljättä  NUM_BACK_CLIT_OPT  ;
 
@@ -16811,7 +16811,7 @@ LEXICON  NUM_51kuudesneljästtä
 +Ord+Sg+Tra:nneksineljättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudesnoniljardis
+LEXICON NUM_51kuudesnoniljardis
 
 +Ord+Pl+Abe:nsittanoniljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -16866,7 +16866,7 @@ LEXICON  NUM_51kuudesnoniljardis
 +Ord+Sg+Tra:nneksinoniljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudesnoniljoonas
+LEXICON NUM_51kuudesnoniljoonas
 
 +Ord+Pl+Abe:nsittanoniljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -16921,7 +16921,7 @@ LEXICON  NUM_51kuudesnoniljoonas
 +Ord+Sg+Tra:nneksinoniljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudesoktiljardis
+LEXICON NUM_51kuudesoktiljardis
 
 +Ord+Pl+Abe:nsittaoktiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -16976,7 +16976,7 @@ LEXICON  NUM_51kuudesoktiljardis
 +Ord+Sg+Tra:nneksioktiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudesoktiljoonas
+LEXICON NUM_51kuudesoktiljoonas
 
 +Ord+Pl+Abe:nsittaoktiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -17031,7 +17031,7 @@ LEXICON  NUM_51kuudesoktiljoonas
 +Ord+Sg+Tra:nneksioktiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudespiljardis
+LEXICON NUM_51kuudespiljardis
 
 +Ord+Pl+Abe:nsittapiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -17086,7 +17086,7 @@ LEXICON  NUM_51kuudespiljardis
 +Ord+Sg+Tra:nneksipiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudespiljoonas
+LEXICON NUM_51kuudespiljoonas
 
 +Ord+Pl+Abe:nsittapiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -17141,7 +17141,7 @@ LEXICON  NUM_51kuudespiljoonas
 +Ord+Sg+Tra:nneksipiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudessadas
+LEXICON NUM_51kuudessadas
 
 +Ord+Pl+Abe:nsittasadoitta  NUM_BACK_CLIT_OPT  ;
 
@@ -17196,7 +17196,7 @@ LEXICON  NUM_51kuudessadas
 +Ord+Sg+Tra:nneksisadaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudesseitsemättä
+LEXICON NUM_51kuudesseitsemättä
 
 +Ord+Pl+Abe:nsittaseitsemättä  NUM_BACK_CLIT_OPT  ;
 
@@ -17249,7 +17249,7 @@ LEXICON  NUM_51kuudesseitsemättä
 +Ord+Sg+Tra:nneksiseitsemättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudessentiljardis
+LEXICON NUM_51kuudessentiljardis
 
 +Ord+Pl+Abe:nsittasentiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -17304,7 +17304,7 @@ LEXICON  NUM_51kuudessentiljardis
 +Ord+Sg+Tra:nneksisentiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudessentiljoonas
+LEXICON NUM_51kuudessentiljoonas
 
 +Ord+Pl+Abe:nsittasentiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -17359,7 +17359,7 @@ LEXICON  NUM_51kuudessentiljoonas
 +Ord+Sg+Tra:nneksisentiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudesseptiljardis
+LEXICON NUM_51kuudesseptiljardis
 
 +Ord+Pl+Abe:nsittaseptiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -17414,7 +17414,7 @@ LEXICON  NUM_51kuudesseptiljardis
 +Ord+Sg+Tra:nneksiseptiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudesseptiljoonas
+LEXICON NUM_51kuudesseptiljoonas
 
 +Ord+Pl+Abe:nsittaseptiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -17469,7 +17469,7 @@ LEXICON  NUM_51kuudesseptiljoonas
 +Ord+Sg+Tra:nneksiseptiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudestoista
+LEXICON NUM_51kuudestoista
 
 +Ord+Pl+Abe:nsittatoista  NUM_BACK_CLIT_OPT  ;
 
@@ -17522,7 +17522,7 @@ LEXICON  NUM_51kuudestoista
 +Ord+Sg+Tra:nneksitoista  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudestredekiljardis
+LEXICON NUM_51kuudestredekiljardis
 
 +Ord+Pl+Abe:nsittatredekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -17577,7 +17577,7 @@ LEXICON  NUM_51kuudestredekiljardis
 +Ord+Sg+Tra:nneksitredekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudestredekiljoonas
+LEXICON NUM_51kuudestredekiljoonas
 
 +Ord+Pl+Abe:nsittatredekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -17632,7 +17632,7 @@ LEXICON  NUM_51kuudestredekiljoonas
 +Ord+Sg+Tra:nneksitredekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudestriljardis
+LEXICON NUM_51kuudestriljardis
 
 +Ord+Pl+Abe:nsittatriljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -17687,7 +17687,7 @@ LEXICON  NUM_51kuudestriljardis
 +Ord+Sg+Tra:nneksitriljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudestriljoonas
+LEXICON NUM_51kuudestriljoonas
 
 +Ord+Pl+Abe:nsittatriljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -17742,7 +17742,7 @@ LEXICON  NUM_51kuudestriljoonas
 +Ord+Sg+Tra:nneksitriljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudestsiljardis
+LEXICON NUM_51kuudestsiljardis
 
 +Ord+Pl+Abe:nsittatsiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -17797,7 +17797,7 @@ LEXICON  NUM_51kuudestsiljardis
 +Ord+Sg+Tra:nneksitsiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudestsiljoonas
+LEXICON NUM_51kuudestsiljoonas
 
 +Ord+Pl+Abe:nsittatsiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -17852,7 +17852,7 @@ LEXICON  NUM_51kuudestsiljoonas
 +Ord+Sg+Tra:nneksitsiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudestuhannes
+LEXICON NUM_51kuudestuhannes
 
 +Ord+Pl+Abe:nsittatuhansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -17907,7 +17907,7 @@ LEXICON  NUM_51kuudestuhannes
 +Ord+Sg+Tra:nneksituhanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudesundekiljardis
+LEXICON NUM_51kuudesundekiljardis
 
 +Ord+Pl+Abe:nsittaundekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -17962,7 +17962,7 @@ LEXICON  NUM_51kuudesundekiljardis
 +Ord+Sg+Tra:nneksiundekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudesundekiljoonas
+LEXICON NUM_51kuudesundekiljoonas
 
 +Ord+Pl+Abe:nsittaundekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -18017,7 +18017,7 @@ LEXICON  NUM_51kuudesundekiljoonas
 +Ord+Sg+Tra:nneksiundekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudesviidettä
+LEXICON NUM_51kuudesviidettä
 
 +Ord+Pl+Abe:nsittaviidettä  NUM_BACK_CLIT_OPT  ;
 
@@ -18070,7 +18070,7 @@ LEXICON  NUM_51kuudesviidettä
 +Ord+Sg+Tra:nneksiviidettä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuudesyhdeksättä
+LEXICON NUM_51kuudesyhdeksättä
 
 +Ord+Pl+Abe:nsittayhdeksättä  NUM_BACK_CLIT_OPT  ;
 
@@ -18123,7 +18123,7 @@ LEXICON  NUM_51kuudesyhdeksättä
 +Ord+Sg+Tra:nneksiyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusibiljardia
+LEXICON NUM_51kuusibiljardia
 
 +Pl+Abe:sittabiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -18178,7 +18178,7 @@ LEXICON  NUM_51kuusibiljardia
 +Sg+Tra:deksibiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusibiljoonaa
+LEXICON NUM_51kuusibiljoonaa
 
 +Pl+Abe:sittabiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -18233,7 +18233,7 @@ LEXICON  NUM_51kuusibiljoonaa
 +Sg+Tra:deksibiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusidekiljardia
+LEXICON NUM_51kuusidekiljardia
 
 +Pl+Abe:sittadekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -18288,7 +18288,7 @@ LEXICON  NUM_51kuusidekiljardia
 +Sg+Tra:deksidekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusidekiljoonaa
+LEXICON NUM_51kuusidekiljoonaa
 
 +Pl+Abe:sittadekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -18343,7 +18343,7 @@ LEXICON  NUM_51kuusidekiljoonaa
 +Sg+Tra:deksidekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusiduodekiljardia
+LEXICON NUM_51kuusiduodekiljardia
 
 +Pl+Abe:sittaduodekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -18398,7 +18398,7 @@ LEXICON  NUM_51kuusiduodekiljardia
 +Sg+Tra:deksiduodekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusiduodekiljoonaa
+LEXICON NUM_51kuusiduodekiljoonaa
 
 +Pl+Abe:sittaduodekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -18453,7 +18453,7 @@ LEXICON  NUM_51kuusiduodekiljoonaa
 +Sg+Tra:deksiduodekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusikahdeksatta
+LEXICON NUM_51kuusikahdeksatta
 
 +Pl+Abe:sittakahdeksatta  NUM_BACK_CLIT_OPT  ;
 
@@ -18506,7 +18506,7 @@ LEXICON  NUM_51kuusikahdeksatta
 +Sg+Tra:deksikahdeksatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusikiljardia
+LEXICON NUM_51kuusikiljardia
 
 +Pl+Abe:sittakiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -18561,7 +18561,7 @@ LEXICON  NUM_51kuusikiljardia
 +Sg+Tra:deksikiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusikiljoonaa
+LEXICON NUM_51kuusikiljoonaa
 
 +Pl+Abe:sittakiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -18616,7 +18616,7 @@ LEXICON  NUM_51kuusikiljoonaa
 +Sg+Tra:deksikiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusikolmatta
+LEXICON NUM_51kuusikolmatta
 
 +Pl+Abe:sittakolmatta  NUM_BACK_CLIT_OPT  ;
 
@@ -18669,7 +18669,7 @@ LEXICON  NUM_51kuusikolmatta
 +Sg+Tra:deksikolmatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusikuudetta
+LEXICON NUM_51kuusikuudetta
 
 +Pl+Abe:sittakuudetta  NUM_BACK_CLIT_OPT  ;
 
@@ -18722,7 +18722,7 @@ LEXICON  NUM_51kuusikuudetta
 +Sg+Tra:deksikuudetta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusikvadriljardia
+LEXICON NUM_51kuusikvadriljardia
 
 +Pl+Abe:sittakvadriljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -18777,7 +18777,7 @@ LEXICON  NUM_51kuusikvadriljardia
 +Sg+Tra:deksikvadriljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusikvadriljoonaa
+LEXICON NUM_51kuusikvadriljoonaa
 
 +Pl+Abe:sittakvadriljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -18832,7 +18832,7 @@ LEXICON  NUM_51kuusikvadriljoonaa
 +Sg+Tra:deksikvadriljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusikvintiljardia
+LEXICON NUM_51kuusikvintiljardia
 
 +Pl+Abe:sittakvintiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -18887,7 +18887,7 @@ LEXICON  NUM_51kuusikvintiljardia
 +Sg+Tra:deksikvintiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusikvintiljoonaa
+LEXICON NUM_51kuusikvintiljoonaa
 
 +Pl+Abe:sittakvintiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -18942,7 +18942,7 @@ LEXICON  NUM_51kuusikvintiljoonaa
 +Sg+Tra:deksikvintiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusikymmentä
+LEXICON NUM_51kuusikymmentä
 
 +Pl+Abe:sittakymmenittä  NUM_FRONT_CLIT_OPT  ;
 
@@ -18997,7 +18997,7 @@ LEXICON  NUM_51kuusikymmentä
 +Sg+Tra:deksikymmeneksi  NUM_FRONT_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusimiljardia
+LEXICON NUM_51kuusimiljardia
 
 +Pl+Abe:sittamiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -19052,7 +19052,7 @@ LEXICON  NUM_51kuusimiljardia
 +Sg+Tra:deksimiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusimiljoonaa
+LEXICON NUM_51kuusimiljoonaa
 
 +Pl+Abe:sittamiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -19107,7 +19107,7 @@ LEXICON  NUM_51kuusimiljoonaa
 +Sg+Tra:deksimiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusineljättä
+LEXICON NUM_51kuusineljättä
 
 +Pl+Abe:sittaneljättä  NUM_BACK_CLIT_OPT  ;
 
@@ -19160,7 +19160,7 @@ LEXICON  NUM_51kuusineljättä
 +Sg+Tra:deksineljättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusinoniljardia
+LEXICON NUM_51kuusinoniljardia
 
 +Pl+Abe:sittanoniljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -19215,7 +19215,7 @@ LEXICON  NUM_51kuusinoniljardia
 +Sg+Tra:deksinoniljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusinoniljoonaa
+LEXICON NUM_51kuusinoniljoonaa
 
 +Pl+Abe:sittanoniljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -19270,7 +19270,7 @@ LEXICON  NUM_51kuusinoniljoonaa
 +Sg+Tra:deksinoniljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusioktiljardia
+LEXICON NUM_51kuusioktiljardia
 
 +Pl+Abe:sittaoktiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -19325,7 +19325,7 @@ LEXICON  NUM_51kuusioktiljardia
 +Sg+Tra:deksioktiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusioktiljoonaa
+LEXICON NUM_51kuusioktiljoonaa
 
 +Pl+Abe:sittaoktiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -19380,7 +19380,7 @@ LEXICON  NUM_51kuusioktiljoonaa
 +Sg+Tra:deksioktiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusipiljardia
+LEXICON NUM_51kuusipiljardia
 
 +Pl+Abe:sittapiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -19435,7 +19435,7 @@ LEXICON  NUM_51kuusipiljardia
 +Sg+Tra:deksipiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusipiljoonaa
+LEXICON NUM_51kuusipiljoonaa
 
 +Pl+Abe:sittapiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -19490,7 +19490,7 @@ LEXICON  NUM_51kuusipiljoonaa
 +Sg+Tra:deksipiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusisataa
+LEXICON NUM_51kuusisataa
 
 +Pl+Abe:sittasadoitta  NUM_BACK_CLIT_OPT  ;
 
@@ -19545,7 +19545,7 @@ LEXICON  NUM_51kuusisataa
 +Sg+Tra:deksisadaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusiseitsemättä
+LEXICON NUM_51kuusiseitsemättä
 
 +Pl+Abe:sittaseitsemättä  NUM_BACK_CLIT_OPT  ;
 
@@ -19598,7 +19598,7 @@ LEXICON  NUM_51kuusiseitsemättä
 +Sg+Tra:deksiseitsemättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusisentiljardia
+LEXICON NUM_51kuusisentiljardia
 
 +Pl+Abe:sittasentiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -19653,7 +19653,7 @@ LEXICON  NUM_51kuusisentiljardia
 +Sg+Tra:deksisentiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusisentiljoonaa
+LEXICON NUM_51kuusisentiljoonaa
 
 +Pl+Abe:sittasentiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -19708,7 +19708,7 @@ LEXICON  NUM_51kuusisentiljoonaa
 +Sg+Tra:deksisentiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusiseptiljardia
+LEXICON NUM_51kuusiseptiljardia
 
 +Pl+Abe:sittaseptiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -19763,7 +19763,7 @@ LEXICON  NUM_51kuusiseptiljardia
 +Sg+Tra:deksiseptiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusiseptiljoonaa
+LEXICON NUM_51kuusiseptiljoonaa
 
 +Pl+Abe:sittaseptiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -19818,7 +19818,7 @@ LEXICON  NUM_51kuusiseptiljoonaa
 +Sg+Tra:deksiseptiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusitoista
+LEXICON NUM_51kuusitoista
 
 +Pl+Abe:sittatoista  NUM_BACK_CLIT_OPT  ;
 
@@ -19871,7 +19871,7 @@ LEXICON  NUM_51kuusitoista
 +Sg+Tra:deksitoista  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusitredekiljardia
+LEXICON NUM_51kuusitredekiljardia
 
 +Pl+Abe:sittatredekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -19926,7 +19926,7 @@ LEXICON  NUM_51kuusitredekiljardia
 +Sg+Tra:deksitredekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusitredekiljoonaa
+LEXICON NUM_51kuusitredekiljoonaa
 
 +Pl+Abe:sittatredekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -19981,7 +19981,7 @@ LEXICON  NUM_51kuusitredekiljoonaa
 +Sg+Tra:deksitredekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusitriljardia
+LEXICON NUM_51kuusitriljardia
 
 +Pl+Abe:sittatriljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -20036,7 +20036,7 @@ LEXICON  NUM_51kuusitriljardia
 +Sg+Tra:deksitriljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusitriljoonaa
+LEXICON NUM_51kuusitriljoonaa
 
 +Pl+Abe:sittatriljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -20091,7 +20091,7 @@ LEXICON  NUM_51kuusitriljoonaa
 +Sg+Tra:deksitriljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusitsiljardia
+LEXICON NUM_51kuusitsiljardia
 
 +Pl+Abe:sittatsiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -20146,7 +20146,7 @@ LEXICON  NUM_51kuusitsiljardia
 +Sg+Tra:deksitsiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusitsiljoonaa
+LEXICON NUM_51kuusitsiljoonaa
 
 +Pl+Abe:sittatsiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -20201,7 +20201,7 @@ LEXICON  NUM_51kuusitsiljoonaa
 +Sg+Tra:deksitsiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusituhatta
+LEXICON NUM_51kuusituhatta
 
 +Pl+Abe:sittatuhansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -20256,7 +20256,7 @@ LEXICON  NUM_51kuusituhatta
 +Sg+Tra:deksituhanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusiundekiljardia
+LEXICON NUM_51kuusiundekiljardia
 
 +Pl+Abe:sittaundekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -20311,7 +20311,7 @@ LEXICON  NUM_51kuusiundekiljardia
 +Sg+Tra:deksiundekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusiundekiljoonaa
+LEXICON NUM_51kuusiundekiljoonaa
 
 +Pl+Abe:sittaundekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -20366,7 +20366,7 @@ LEXICON  NUM_51kuusiundekiljoonaa
 +Sg+Tra:deksiundekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusiviidettä
+LEXICON NUM_51kuusiviidettä
 
 +Pl+Abe:sittaviidettä  NUM_BACK_CLIT_OPT  ;
 
@@ -20419,7 +20419,7 @@ LEXICON  NUM_51kuusiviidettä
 +Sg+Tra:deksiviidettä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51kuusiyhdeksättä
+LEXICON NUM_51kuusiyhdeksättä
 
 +Pl+Abe:sittayhdeksättä  NUM_BACK_CLIT_OPT  ;
 
@@ -20472,7 +20472,7 @@ LEXICON  NUM_51kuusiyhdeksättä
 +Sg+Tra:deksiyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäbiljardia
+LEXICON NUM_51neljäbiljardia
 
 +Pl+Abe:ittäbiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -20527,7 +20527,7 @@ LEXICON  NUM_51neljäbiljardia
 +Sg+Tra:äksibiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäbiljoonaa
+LEXICON NUM_51neljäbiljoonaa
 
 +Pl+Abe:ittäbiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -20582,7 +20582,7 @@ LEXICON  NUM_51neljäbiljoonaa
 +Sg+Tra:äksibiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljädekiljardia
+LEXICON NUM_51neljädekiljardia
 
 +Pl+Abe:ittädekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -20637,7 +20637,7 @@ LEXICON  NUM_51neljädekiljardia
 +Sg+Tra:äksidekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljädekiljoonaa
+LEXICON NUM_51neljädekiljoonaa
 
 +Pl+Abe:ittädekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -20692,7 +20692,7 @@ LEXICON  NUM_51neljädekiljoonaa
 +Sg+Tra:äksidekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäduodekiljardia
+LEXICON NUM_51neljäduodekiljardia
 
 +Pl+Abe:ittäduodekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -20747,7 +20747,7 @@ LEXICON  NUM_51neljäduodekiljardia
 +Sg+Tra:äksiduodekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäduodekiljoonaa
+LEXICON NUM_51neljäduodekiljoonaa
 
 +Pl+Abe:ittäduodekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -20802,7 +20802,7 @@ LEXICON  NUM_51neljäduodekiljoonaa
 +Sg+Tra:äksiduodekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäkahdeksatta
+LEXICON NUM_51neljäkahdeksatta
 
 +Pl+Abe:ittäkahdeksatta  NUM_BACK_CLIT_OPT  ;
 
@@ -20857,7 +20857,7 @@ LEXICON  NUM_51neljäkahdeksatta
 +Sg+Tra:äksikahdeksatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäkiljardia
+LEXICON NUM_51neljäkiljardia
 
 +Pl+Abe:ittäkiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -20912,7 +20912,7 @@ LEXICON  NUM_51neljäkiljardia
 +Sg+Tra:äksikiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäkiljoonaa
+LEXICON NUM_51neljäkiljoonaa
 
 +Pl+Abe:ittäkiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -20967,7 +20967,7 @@ LEXICON  NUM_51neljäkiljoonaa
 +Sg+Tra:äksikiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäkolmatta
+LEXICON NUM_51neljäkolmatta
 
 +Pl+Abe:ittäkolmatta  NUM_BACK_CLIT_OPT  ;
 
@@ -21022,7 +21022,7 @@ LEXICON  NUM_51neljäkolmatta
 +Sg+Tra:äksikolmatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäkuudetta
+LEXICON NUM_51neljäkuudetta
 
 +Pl+Abe:ittäkuudetta  NUM_BACK_CLIT_OPT  ;
 
@@ -21077,7 +21077,7 @@ LEXICON  NUM_51neljäkuudetta
 +Sg+Tra:äksikuudetta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäkvadriljardia
+LEXICON NUM_51neljäkvadriljardia
 
 +Pl+Abe:ittäkvadriljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -21132,7 +21132,7 @@ LEXICON  NUM_51neljäkvadriljardia
 +Sg+Tra:äksikvadriljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäkvadriljoonaa
+LEXICON NUM_51neljäkvadriljoonaa
 
 +Pl+Abe:ittäkvadriljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -21187,7 +21187,7 @@ LEXICON  NUM_51neljäkvadriljoonaa
 +Sg+Tra:äksikvadriljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäkvintiljardia
+LEXICON NUM_51neljäkvintiljardia
 
 +Pl+Abe:ittäkvintiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -21242,7 +21242,7 @@ LEXICON  NUM_51neljäkvintiljardia
 +Sg+Tra:äksikvintiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäkvintiljoonaa
+LEXICON NUM_51neljäkvintiljoonaa
 
 +Pl+Abe:ittäkvintiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -21297,7 +21297,7 @@ LEXICON  NUM_51neljäkvintiljoonaa
 +Sg+Tra:äksikvintiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäkymmentä
+LEXICON NUM_51neljäkymmentä
 
 +Pl+Abe:ittäkymmenittä  NUM_FRONT_CLIT_OPT  ;
 
@@ -21352,7 +21352,7 @@ LEXICON  NUM_51neljäkymmentä
 +Sg+Tra:äksikymmeneksi  NUM_FRONT_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljämiljardia
+LEXICON NUM_51neljämiljardia
 
 +Pl+Abe:ittämiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -21407,7 +21407,7 @@ LEXICON  NUM_51neljämiljardia
 +Sg+Tra:äksimiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljämiljoonaa
+LEXICON NUM_51neljämiljoonaa
 
 +Pl+Abe:ittämiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -21462,7 +21462,7 @@ LEXICON  NUM_51neljämiljoonaa
 +Sg+Tra:äksimiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäneljättä
+LEXICON NUM_51neljäneljättä
 
 +Pl+Abe:ittäneljättä  NUM_BACK_CLIT_OPT  ;
 
@@ -21517,7 +21517,7 @@ LEXICON  NUM_51neljäneljättä
 +Sg+Tra:äksineljättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljänoniljardia
+LEXICON NUM_51neljänoniljardia
 
 +Pl+Abe:ittänoniljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -21572,7 +21572,7 @@ LEXICON  NUM_51neljänoniljardia
 +Sg+Tra:äksinoniljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljänoniljoonaa
+LEXICON NUM_51neljänoniljoonaa
 
 +Pl+Abe:ittänoniljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -21627,7 +21627,7 @@ LEXICON  NUM_51neljänoniljoonaa
 +Sg+Tra:äksinoniljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäoktiljardia
+LEXICON NUM_51neljäoktiljardia
 
 +Pl+Abe:ittäoktiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -21682,7 +21682,7 @@ LEXICON  NUM_51neljäoktiljardia
 +Sg+Tra:äksioktiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäoktiljoonaa
+LEXICON NUM_51neljäoktiljoonaa
 
 +Pl+Abe:ittäoktiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -21737,7 +21737,7 @@ LEXICON  NUM_51neljäoktiljoonaa
 +Sg+Tra:äksioktiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäpiljardia
+LEXICON NUM_51neljäpiljardia
 
 +Pl+Abe:ittäpiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -21792,7 +21792,7 @@ LEXICON  NUM_51neljäpiljardia
 +Sg+Tra:äksipiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäpiljoonaa
+LEXICON NUM_51neljäpiljoonaa
 
 +Pl+Abe:ittäpiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -21847,7 +21847,7 @@ LEXICON  NUM_51neljäpiljoonaa
 +Sg+Tra:äksipiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäsataa
+LEXICON NUM_51neljäsataa
 
 +Pl+Abe:ittäsadoitta  NUM_BACK_CLIT_OPT  ;
 
@@ -21902,7 +21902,7 @@ LEXICON  NUM_51neljäsataa
 +Sg+Tra:äksisadaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäsbiljardis
+LEXICON NUM_51neljäsbiljardis
 
 +Ord+Pl+Abe:nsittäbiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -21957,7 +21957,7 @@ LEXICON  NUM_51neljäsbiljardis
 +Ord+Sg+Tra:nneksibiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäsbiljoonas
+LEXICON NUM_51neljäsbiljoonas
 
 +Ord+Pl+Abe:nsittäbiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -22012,7 +22012,7 @@ LEXICON  NUM_51neljäsbiljoonas
 +Ord+Sg+Tra:nneksibiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäsdekiljardis
+LEXICON NUM_51neljäsdekiljardis
 
 +Ord+Pl+Abe:nsittädekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -22067,7 +22067,7 @@ LEXICON  NUM_51neljäsdekiljardis
 +Ord+Sg+Tra:nneksidekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäsdekiljoonas
+LEXICON NUM_51neljäsdekiljoonas
 
 +Ord+Pl+Abe:nsittädekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -22122,7 +22122,7 @@ LEXICON  NUM_51neljäsdekiljoonas
 +Ord+Sg+Tra:nneksidekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäsduodekiljardis
+LEXICON NUM_51neljäsduodekiljardis
 
 +Ord+Pl+Abe:nsittäduodekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -22177,7 +22177,7 @@ LEXICON  NUM_51neljäsduodekiljardis
 +Ord+Sg+Tra:nneksiduodekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäsduodekiljoonas
+LEXICON NUM_51neljäsduodekiljoonas
 
 +Ord+Pl+Abe:nsittäduodekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -22232,7 +22232,7 @@ LEXICON  NUM_51neljäsduodekiljoonas
 +Ord+Sg+Tra:nneksiduodekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäseitsemättä
+LEXICON NUM_51neljäseitsemättä
 
 +Pl+Abe:neljittäseitsemättä  NUM_BACK_CLIT_OPT  ;
 
@@ -22287,7 +22287,7 @@ LEXICON  NUM_51neljäseitsemättä
 +Sg+Tra:ksiseitsemättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäsentiljardia
+LEXICON NUM_51neljäsentiljardia
 
 +Pl+Abe:neljittäsentiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -22342,7 +22342,7 @@ LEXICON  NUM_51neljäsentiljardia
 +Sg+Tra:ksisentiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäsentiljoonaa
+LEXICON NUM_51neljäsentiljoonaa
 
 +Pl+Abe:neljittäsentiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -22397,7 +22397,7 @@ LEXICON  NUM_51neljäsentiljoonaa
 +Sg+Tra:ksisentiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäseptiljardia
+LEXICON NUM_51neljäseptiljardia
 
 +Pl+Abe:neljittäseptiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -22452,7 +22452,7 @@ LEXICON  NUM_51neljäseptiljardia
 +Sg+Tra:ksiseptiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäseptiljoonaa
+LEXICON NUM_51neljäseptiljoonaa
 
 +Pl+Abe:neljittäseptiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -22507,7 +22507,7 @@ LEXICON  NUM_51neljäseptiljoonaa
 +Sg+Tra:ksiseptiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäskahdeksatta
+LEXICON NUM_51neljäskahdeksatta
 
 +Ord+Pl+Abe:nsittäkahdeksatta  NUM_BACK_CLIT_OPT  ;
 
@@ -22560,7 +22560,7 @@ LEXICON  NUM_51neljäskahdeksatta
 +Ord+Sg+Tra:nneksikahdeksatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäskiljardis
+LEXICON NUM_51neljäskiljardis
 
 +Ord+Pl+Abe:nsittäkiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -22615,7 +22615,7 @@ LEXICON  NUM_51neljäskiljardis
 +Ord+Sg+Tra:nneksikiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäskiljoonas
+LEXICON NUM_51neljäskiljoonas
 
 +Ord+Pl+Abe:nsittäkiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -22670,7 +22670,7 @@ LEXICON  NUM_51neljäskiljoonas
 +Ord+Sg+Tra:nneksikiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäskolmatta
+LEXICON NUM_51neljäskolmatta
 
 +Ord+Pl+Abe:nsittäkolmatta  NUM_BACK_CLIT_OPT  ;
 
@@ -22723,7 +22723,7 @@ LEXICON  NUM_51neljäskolmatta
 +Ord+Sg+Tra:nneksikolmatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäskuudetta
+LEXICON NUM_51neljäskuudetta
 
 +Ord+Pl+Abe:nsittäkuudetta  NUM_BACK_CLIT_OPT  ;
 
@@ -22776,7 +22776,7 @@ LEXICON  NUM_51neljäskuudetta
 +Ord+Sg+Tra:nneksikuudetta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäskvadriljardis
+LEXICON NUM_51neljäskvadriljardis
 
 +Ord+Pl+Abe:nsittäkvadriljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -22831,7 +22831,7 @@ LEXICON  NUM_51neljäskvadriljardis
 +Ord+Sg+Tra:nneksikvadriljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäskvadriljoonas
+LEXICON NUM_51neljäskvadriljoonas
 
 +Ord+Pl+Abe:nsittäkvadriljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -22886,7 +22886,7 @@ LEXICON  NUM_51neljäskvadriljoonas
 +Ord+Sg+Tra:nneksikvadriljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäskvintiljardis
+LEXICON NUM_51neljäskvintiljardis
 
 +Ord+Pl+Abe:nsittäkvintiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -22941,7 +22941,7 @@ LEXICON  NUM_51neljäskvintiljardis
 +Ord+Sg+Tra:nneksikvintiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäskvintiljoonas
+LEXICON NUM_51neljäskvintiljoonas
 
 +Ord+Pl+Abe:nsittäkvintiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -22996,7 +22996,7 @@ LEXICON  NUM_51neljäskvintiljoonas
 +Ord+Sg+Tra:nneksikvintiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäskymmenes
+LEXICON NUM_51neljäskymmenes
 
 +Ord+Pl+Abe:nsittäkymmenittä  NUM_FRONT_CLIT_OPT  ;
 
@@ -23051,7 +23051,7 @@ LEXICON  NUM_51neljäskymmenes
 +Ord+Sg+Tra:nneksikymmeneksi  NUM_FRONT_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäsmiljardis
+LEXICON NUM_51neljäsmiljardis
 
 +Ord+Pl+Abe:nsittämiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -23106,7 +23106,7 @@ LEXICON  NUM_51neljäsmiljardis
 +Ord+Sg+Tra:nneksimiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäsmiljoonas
+LEXICON NUM_51neljäsmiljoonas
 
 +Ord+Pl+Abe:nsittämiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -23161,7 +23161,7 @@ LEXICON  NUM_51neljäsmiljoonas
 +Ord+Sg+Tra:nneksimiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäsneljättä
+LEXICON NUM_51neljäsneljättä
 
 +Ord+Pl+Abe:nsittäneljättä  NUM_BACK_CLIT_OPT  ;
 
@@ -23214,7 +23214,7 @@ LEXICON  NUM_51neljäsneljättä
 +Ord+Sg+Tra:nneksineljättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäsnoniljardis
+LEXICON NUM_51neljäsnoniljardis
 
 +Ord+Pl+Abe:nsittänoniljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -23269,7 +23269,7 @@ LEXICON  NUM_51neljäsnoniljardis
 +Ord+Sg+Tra:nneksinoniljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäsnoniljoonas
+LEXICON NUM_51neljäsnoniljoonas
 
 +Ord+Pl+Abe:nsittänoniljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -23324,7 +23324,7 @@ LEXICON  NUM_51neljäsnoniljoonas
 +Ord+Sg+Tra:nneksinoniljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäsoktiljardis
+LEXICON NUM_51neljäsoktiljardis
 
 +Ord+Pl+Abe:nsittäoktiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -23379,7 +23379,7 @@ LEXICON  NUM_51neljäsoktiljardis
 +Ord+Sg+Tra:nneksioktiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäsoktiljoonas
+LEXICON NUM_51neljäsoktiljoonas
 
 +Ord+Pl+Abe:nsittäoktiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -23434,7 +23434,7 @@ LEXICON  NUM_51neljäsoktiljoonas
 +Ord+Sg+Tra:nneksioktiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäspiljardis
+LEXICON NUM_51neljäspiljardis
 
 +Ord+Pl+Abe:nsittäpiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -23489,7 +23489,7 @@ LEXICON  NUM_51neljäspiljardis
 +Ord+Sg+Tra:nneksipiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäspiljoonas
+LEXICON NUM_51neljäspiljoonas
 
 +Ord+Pl+Abe:nsittäpiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -23544,7 +23544,7 @@ LEXICON  NUM_51neljäspiljoonas
 +Ord+Sg+Tra:nneksipiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljässadas
+LEXICON NUM_51neljässadas
 
 +Ord+Pl+Abe:nsittäsadoitta  NUM_BACK_CLIT_OPT  ;
 
@@ -23599,7 +23599,7 @@ LEXICON  NUM_51neljässadas
 +Ord+Sg+Tra:nneksisadaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljässeitsemättä
+LEXICON NUM_51neljässeitsemättä
 
 +Ord+Pl+Abe:nsittäseitsemättä  NUM_BACK_CLIT_OPT  ;
 
@@ -23652,7 +23652,7 @@ LEXICON  NUM_51neljässeitsemättä
 +Ord+Sg+Tra:nneksiseitsemättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljässentiljardis
+LEXICON NUM_51neljässentiljardis
 
 +Ord+Pl+Abe:nsittäsentiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -23707,7 +23707,7 @@ LEXICON  NUM_51neljässentiljardis
 +Ord+Sg+Tra:nneksisentiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljässentiljoonas
+LEXICON NUM_51neljässentiljoonas
 
 +Ord+Pl+Abe:nsittäsentiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -23762,7 +23762,7 @@ LEXICON  NUM_51neljässentiljoonas
 +Ord+Sg+Tra:nneksisentiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljässeptiljardis
+LEXICON NUM_51neljässeptiljardis
 
 +Ord+Pl+Abe:nsittäseptiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -23817,7 +23817,7 @@ LEXICON  NUM_51neljässeptiljardis
 +Ord+Sg+Tra:nneksiseptiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljässeptiljoonas
+LEXICON NUM_51neljässeptiljoonas
 
 +Ord+Pl+Abe:nsittäseptiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -23872,7 +23872,7 @@ LEXICON  NUM_51neljässeptiljoonas
 +Ord+Sg+Tra:nneksiseptiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljästoista
+LEXICON NUM_51neljästoista
 
 +Ord+Pl+Abe:nsittätoista  NUM_BACK_CLIT_OPT  ;
 
@@ -23925,7 +23925,7 @@ LEXICON  NUM_51neljästoista
 +Ord+Sg+Tra:nneksitoista  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljästredekiljardis
+LEXICON NUM_51neljästredekiljardis
 
 +Ord+Pl+Abe:nsittätredekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -23980,7 +23980,7 @@ LEXICON  NUM_51neljästredekiljardis
 +Ord+Sg+Tra:nneksitredekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljästredekiljoonas
+LEXICON NUM_51neljästredekiljoonas
 
 +Ord+Pl+Abe:nsittätredekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -24035,7 +24035,7 @@ LEXICON  NUM_51neljästredekiljoonas
 +Ord+Sg+Tra:nneksitredekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljästriljardis
+LEXICON NUM_51neljästriljardis
 
 +Ord+Pl+Abe:nsittätriljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -24090,7 +24090,7 @@ LEXICON  NUM_51neljästriljardis
 +Ord+Sg+Tra:nneksitriljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljästriljoonas
+LEXICON NUM_51neljästriljoonas
 
 +Ord+Pl+Abe:nsittätriljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -24145,7 +24145,7 @@ LEXICON  NUM_51neljästriljoonas
 +Ord+Sg+Tra:nneksitriljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljästsiljardis
+LEXICON NUM_51neljästsiljardis
 
 +Ord+Pl+Abe:nsittätsiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -24200,7 +24200,7 @@ LEXICON  NUM_51neljästsiljardis
 +Ord+Sg+Tra:nneksitsiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljästsiljoonas
+LEXICON NUM_51neljästsiljoonas
 
 +Ord+Pl+Abe:nsittätsiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -24255,7 +24255,7 @@ LEXICON  NUM_51neljästsiljoonas
 +Ord+Sg+Tra:nneksitsiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljästuhannes
+LEXICON NUM_51neljästuhannes
 
 +Ord+Pl+Abe:nsittätuhansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -24310,7 +24310,7 @@ LEXICON  NUM_51neljästuhannes
 +Ord+Sg+Tra:nneksituhanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäsundekiljardis
+LEXICON NUM_51neljäsundekiljardis
 
 +Ord+Pl+Abe:nsittäundekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -24365,7 +24365,7 @@ LEXICON  NUM_51neljäsundekiljardis
 +Ord+Sg+Tra:nneksiundekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäsundekiljoonas
+LEXICON NUM_51neljäsundekiljoonas
 
 +Ord+Pl+Abe:nsittäundekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -24420,7 +24420,7 @@ LEXICON  NUM_51neljäsundekiljoonas
 +Ord+Sg+Tra:nneksiundekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäsviidettä
+LEXICON NUM_51neljäsviidettä
 
 +Ord+Pl+Abe:nsittäviidettä  NUM_BACK_CLIT_OPT  ;
 
@@ -24473,7 +24473,7 @@ LEXICON  NUM_51neljäsviidettä
 +Ord+Sg+Tra:nneksiviidettä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäsyhdeksättä
+LEXICON NUM_51neljäsyhdeksättä
 
 +Ord+Pl+Abe:nsittäyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
@@ -24526,7 +24526,7 @@ LEXICON  NUM_51neljäsyhdeksättä
 +Ord+Sg+Tra:nneksiyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljätoista
+LEXICON NUM_51neljätoista
 
 +Pl+Abe:ittätoista  NUM_BACK_CLIT_OPT  ;
 
@@ -24579,7 +24579,7 @@ LEXICON  NUM_51neljätoista
 +Sg+Tra:äksitoista  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljätredekiljardia
+LEXICON NUM_51neljätredekiljardia
 
 +Pl+Abe:ittätredekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -24634,7 +24634,7 @@ LEXICON  NUM_51neljätredekiljardia
 +Sg+Tra:äksitredekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljätredekiljoonaa
+LEXICON NUM_51neljätredekiljoonaa
 
 +Pl+Abe:ittätredekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -24689,7 +24689,7 @@ LEXICON  NUM_51neljätredekiljoonaa
 +Sg+Tra:äksitredekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljätriljardia
+LEXICON NUM_51neljätriljardia
 
 +Pl+Abe:ittätriljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -24744,7 +24744,7 @@ LEXICON  NUM_51neljätriljardia
 +Sg+Tra:äksitriljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljätriljoonaa
+LEXICON NUM_51neljätriljoonaa
 
 +Pl+Abe:ittätriljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -24799,7 +24799,7 @@ LEXICON  NUM_51neljätriljoonaa
 +Sg+Tra:äksitriljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljätsiljardia
+LEXICON NUM_51neljätsiljardia
 
 +Pl+Abe:ittätsiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -24854,7 +24854,7 @@ LEXICON  NUM_51neljätsiljardia
 +Sg+Tra:äksitsiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljätsiljoonaa
+LEXICON NUM_51neljätsiljoonaa
 
 +Pl+Abe:ittätsiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -24909,7 +24909,7 @@ LEXICON  NUM_51neljätsiljoonaa
 +Sg+Tra:äksitsiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljätuhatta
+LEXICON NUM_51neljätuhatta
 
 +Pl+Abe:ittätuhansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -24964,7 +24964,7 @@ LEXICON  NUM_51neljätuhatta
 +Sg+Tra:äksituhanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäundekiljardia
+LEXICON NUM_51neljäundekiljardia
 
 +Pl+Abe:ittäundekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -25019,7 +25019,7 @@ LEXICON  NUM_51neljäundekiljardia
 +Sg+Tra:äksiundekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäundekiljoonaa
+LEXICON NUM_51neljäundekiljoonaa
 
 +Pl+Abe:ittäundekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -25074,7 +25074,7 @@ LEXICON  NUM_51neljäundekiljoonaa
 +Sg+Tra:äksiundekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäviidettä
+LEXICON NUM_51neljäviidettä
 
 +Pl+Abe:ittäviidettä  NUM_BACK_CLIT_OPT  ;
 
@@ -25129,7 +25129,7 @@ LEXICON  NUM_51neljäviidettä
 +Sg+Tra:äksiviidettä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51neljäyhdeksättä
+LEXICON NUM_51neljäyhdeksättä
 
 +Pl+Abe:ittäyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
@@ -25184,7 +25184,7 @@ LEXICON  NUM_51neljäyhdeksättä
 +Sg+Tra:äksiyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51puolitoista
+LEXICON NUM_51puolitoista
 
 +Pl+Abe:ittatoista  NUM_BACK_CLIT_OPT  ;
 
@@ -25237,7 +25237,7 @@ LEXICON  NUM_51puolitoista
 +Sg+Tra:eksitoista  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänbiljardia
+LEXICON NUM_51seitsemänbiljardia
 
 +Pl+Abe:ittäbiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -25292,7 +25292,7 @@ LEXICON  NUM_51seitsemänbiljardia
 +Sg+Tra:äksibiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänbiljoonaa
+LEXICON NUM_51seitsemänbiljoonaa
 
 +Pl+Abe:ittäbiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -25347,7 +25347,7 @@ LEXICON  NUM_51seitsemänbiljoonaa
 +Sg+Tra:äksibiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemändekiljardia
+LEXICON NUM_51seitsemändekiljardia
 
 +Pl+Abe:ittädekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -25402,7 +25402,7 @@ LEXICON  NUM_51seitsemändekiljardia
 +Sg+Tra:äksidekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemändekiljoonaa
+LEXICON NUM_51seitsemändekiljoonaa
 
 +Pl+Abe:ittädekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -25457,7 +25457,7 @@ LEXICON  NUM_51seitsemändekiljoonaa
 +Sg+Tra:äksidekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänduodekiljardia
+LEXICON NUM_51seitsemänduodekiljardia
 
 +Pl+Abe:ittäduodekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -25512,7 +25512,7 @@ LEXICON  NUM_51seitsemänduodekiljardia
 +Sg+Tra:äksiduodekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänduodekiljoonaa
+LEXICON NUM_51seitsemänduodekiljoonaa
 
 +Pl+Abe:ittäduodekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -25567,7 +25567,7 @@ LEXICON  NUM_51seitsemänduodekiljoonaa
 +Sg+Tra:äksiduodekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänkahdeksatta
+LEXICON NUM_51seitsemänkahdeksatta
 
 +Pl+Abe:ittäkahdeksatta  NUM_BACK_CLIT_OPT  ;
 
@@ -25620,7 +25620,7 @@ LEXICON  NUM_51seitsemänkahdeksatta
 +Sg+Tra:äksikahdeksatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänkiljardia
+LEXICON NUM_51seitsemänkiljardia
 
 +Pl+Abe:ittäkiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -25675,7 +25675,7 @@ LEXICON  NUM_51seitsemänkiljardia
 +Sg+Tra:äksikiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänkiljoonaa
+LEXICON NUM_51seitsemänkiljoonaa
 
 +Pl+Abe:ittäkiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -25730,7 +25730,7 @@ LEXICON  NUM_51seitsemänkiljoonaa
 +Sg+Tra:äksikiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänkolmatta
+LEXICON NUM_51seitsemänkolmatta
 
 +Pl+Abe:ittäkolmatta  NUM_BACK_CLIT_OPT  ;
 
@@ -25783,7 +25783,7 @@ LEXICON  NUM_51seitsemänkolmatta
 +Sg+Tra:äksikolmatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänkuudetta
+LEXICON NUM_51seitsemänkuudetta
 
 +Pl+Abe:ittäkuudetta  NUM_BACK_CLIT_OPT  ;
 
@@ -25836,7 +25836,7 @@ LEXICON  NUM_51seitsemänkuudetta
 +Sg+Tra:äksikuudetta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänkvadriljardia
+LEXICON NUM_51seitsemänkvadriljardia
 
 +Pl+Abe:ittäkvadriljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -25891,7 +25891,7 @@ LEXICON  NUM_51seitsemänkvadriljardia
 +Sg+Tra:äksikvadriljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänkvadriljoonaa
+LEXICON NUM_51seitsemänkvadriljoonaa
 
 +Pl+Abe:ittäkvadriljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -25946,7 +25946,7 @@ LEXICON  NUM_51seitsemänkvadriljoonaa
 +Sg+Tra:äksikvadriljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänkvintiljardia
+LEXICON NUM_51seitsemänkvintiljardia
 
 +Pl+Abe:ittäkvintiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -26001,7 +26001,7 @@ LEXICON  NUM_51seitsemänkvintiljardia
 +Sg+Tra:äksikvintiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänkvintiljoonaa
+LEXICON NUM_51seitsemänkvintiljoonaa
 
 +Pl+Abe:ittäkvintiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -26056,7 +26056,7 @@ LEXICON  NUM_51seitsemänkvintiljoonaa
 +Sg+Tra:äksikvintiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänkymmentä
+LEXICON NUM_51seitsemänkymmentä
 
 +Pl+Abe:ittäkymmenittä  NUM_FRONT_CLIT_OPT  ;
 
@@ -26111,7 +26111,7 @@ LEXICON  NUM_51seitsemänkymmentä
 +Sg+Tra:äksikymmeneksi  NUM_FRONT_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänmiljardia
+LEXICON NUM_51seitsemänmiljardia
 
 +Pl+Abe:ittämiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -26166,7 +26166,7 @@ LEXICON  NUM_51seitsemänmiljardia
 +Sg+Tra:äksimiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänmiljoonaa
+LEXICON NUM_51seitsemänmiljoonaa
 
 +Pl+Abe:ittämiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -26221,7 +26221,7 @@ LEXICON  NUM_51seitsemänmiljoonaa
 +Sg+Tra:äksimiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänneljättä
+LEXICON NUM_51seitsemänneljättä
 
 +Pl+Abe:ittäneljättä  NUM_BACK_CLIT_OPT  ;
 
@@ -26274,7 +26274,7 @@ LEXICON  NUM_51seitsemänneljättä
 +Sg+Tra:äksineljättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemännoniljardia
+LEXICON NUM_51seitsemännoniljardia
 
 +Pl+Abe:ittänoniljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -26329,7 +26329,7 @@ LEXICON  NUM_51seitsemännoniljardia
 +Sg+Tra:äksinoniljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemännoniljoonaa
+LEXICON NUM_51seitsemännoniljoonaa
 
 +Pl+Abe:ittänoniljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -26384,7 +26384,7 @@ LEXICON  NUM_51seitsemännoniljoonaa
 +Sg+Tra:äksinoniljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänoktiljardia
+LEXICON NUM_51seitsemänoktiljardia
 
 +Pl+Abe:ittäoktiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -26439,7 +26439,7 @@ LEXICON  NUM_51seitsemänoktiljardia
 +Sg+Tra:äksioktiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänoktiljoonaa
+LEXICON NUM_51seitsemänoktiljoonaa
 
 +Pl+Abe:ittäoktiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -26494,7 +26494,7 @@ LEXICON  NUM_51seitsemänoktiljoonaa
 +Sg+Tra:äksioktiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänpiljardia
+LEXICON NUM_51seitsemänpiljardia
 
 +Pl+Abe:ittäpiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -26549,7 +26549,7 @@ LEXICON  NUM_51seitsemänpiljardia
 +Sg+Tra:äksipiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänpiljoonaa
+LEXICON NUM_51seitsemänpiljoonaa
 
 +Pl+Abe:ittäpiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -26604,7 +26604,7 @@ LEXICON  NUM_51seitsemänpiljoonaa
 +Sg+Tra:äksipiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänsataa
+LEXICON NUM_51seitsemänsataa
 
 +Pl+Abe:ittäsadoitta  NUM_BACK_CLIT_OPT  ;
 
@@ -26659,7 +26659,7 @@ LEXICON  NUM_51seitsemänsataa
 +Sg+Tra:äksisadaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänseitsemättä
+LEXICON NUM_51seitsemänseitsemättä
 
 +Pl+Abe:ittäseitsemättä  NUM_BACK_CLIT_OPT  ;
 
@@ -26712,7 +26712,7 @@ LEXICON  NUM_51seitsemänseitsemättä
 +Sg+Tra:äksiseitsemättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänsentiljardia
+LEXICON NUM_51seitsemänsentiljardia
 
 +Pl+Abe:ittäsentiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -26767,7 +26767,7 @@ LEXICON  NUM_51seitsemänsentiljardia
 +Sg+Tra:äksisentiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänsentiljoonaa
+LEXICON NUM_51seitsemänsentiljoonaa
 
 +Pl+Abe:ittäsentiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -26822,7 +26822,7 @@ LEXICON  NUM_51seitsemänsentiljoonaa
 +Sg+Tra:äksisentiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänseptiljardia
+LEXICON NUM_51seitsemänseptiljardia
 
 +Pl+Abe:ittäseptiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -26877,7 +26877,7 @@ LEXICON  NUM_51seitsemänseptiljardia
 +Sg+Tra:äksiseptiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänseptiljoonaa
+LEXICON NUM_51seitsemänseptiljoonaa
 
 +Pl+Abe:ittäseptiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -26932,7 +26932,7 @@ LEXICON  NUM_51seitsemänseptiljoonaa
 +Sg+Tra:äksiseptiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäntoista
+LEXICON NUM_51seitsemäntoista
 
 +Pl+Abe:ittätoista  NUM_BACK_CLIT_OPT  ;
 
@@ -26985,7 +26985,7 @@ LEXICON  NUM_51seitsemäntoista
 +Sg+Tra:äksitoista  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäntredekiljardia
+LEXICON NUM_51seitsemäntredekiljardia
 
 +Pl+Abe:ittätredekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -27040,7 +27040,7 @@ LEXICON  NUM_51seitsemäntredekiljardia
 +Sg+Tra:äksitredekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäntredekiljoonaa
+LEXICON NUM_51seitsemäntredekiljoonaa
 
 +Pl+Abe:ittätredekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -27095,7 +27095,7 @@ LEXICON  NUM_51seitsemäntredekiljoonaa
 +Sg+Tra:äksitredekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäntriljardia
+LEXICON NUM_51seitsemäntriljardia
 
 +Pl+Abe:ittätriljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -27150,7 +27150,7 @@ LEXICON  NUM_51seitsemäntriljardia
 +Sg+Tra:äksitriljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäntriljoonaa
+LEXICON NUM_51seitsemäntriljoonaa
 
 +Pl+Abe:ittätriljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -27205,7 +27205,7 @@ LEXICON  NUM_51seitsemäntriljoonaa
 +Sg+Tra:äksitriljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäntsiljardia
+LEXICON NUM_51seitsemäntsiljardia
 
 +Pl+Abe:ittätsiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -27260,7 +27260,7 @@ LEXICON  NUM_51seitsemäntsiljardia
 +Sg+Tra:äksitsiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäntsiljoonaa
+LEXICON NUM_51seitsemäntsiljoonaa
 
 +Pl+Abe:ittätsiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -27315,7 +27315,7 @@ LEXICON  NUM_51seitsemäntsiljoonaa
 +Sg+Tra:äksitsiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäntuhatta
+LEXICON NUM_51seitsemäntuhatta
 
 +Pl+Abe:ittätuhansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -27370,7 +27370,7 @@ LEXICON  NUM_51seitsemäntuhatta
 +Sg+Tra:äksituhanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänundekiljardia
+LEXICON NUM_51seitsemänundekiljardia
 
 +Pl+Abe:ittäundekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -27425,7 +27425,7 @@ LEXICON  NUM_51seitsemänundekiljardia
 +Sg+Tra:äksiundekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänundekiljoonaa
+LEXICON NUM_51seitsemänundekiljoonaa
 
 +Pl+Abe:ittäundekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -27480,7 +27480,7 @@ LEXICON  NUM_51seitsemänundekiljoonaa
 +Sg+Tra:äksiundekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänviidettä
+LEXICON NUM_51seitsemänviidettä
 
 +Pl+Abe:ittäviidettä  NUM_BACK_CLIT_OPT  ;
 
@@ -27533,7 +27533,7 @@ LEXICON  NUM_51seitsemänviidettä
 +Sg+Tra:äksiviidettä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemänyhdeksättä
+LEXICON NUM_51seitsemänyhdeksättä
 
 +Pl+Abe:ittäyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
@@ -27586,7 +27586,7 @@ LEXICON  NUM_51seitsemänyhdeksättä
 +Sg+Tra:äksiyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäsbiljardis
+LEXICON NUM_51seitsemäsbiljardis
 
 +Ord+Pl+Abe:nsittäbiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -27641,7 +27641,7 @@ LEXICON  NUM_51seitsemäsbiljardis
 +Ord+Sg+Tra:nneksibiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäsbiljoonas
+LEXICON NUM_51seitsemäsbiljoonas
 
 +Ord+Pl+Abe:nsittäbiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -27696,7 +27696,7 @@ LEXICON  NUM_51seitsemäsbiljoonas
 +Ord+Sg+Tra:nneksibiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäsdekiljardis
+LEXICON NUM_51seitsemäsdekiljardis
 
 +Ord+Pl+Abe:nsittädekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -27751,7 +27751,7 @@ LEXICON  NUM_51seitsemäsdekiljardis
 +Ord+Sg+Tra:nneksidekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäsdekiljoonas
+LEXICON NUM_51seitsemäsdekiljoonas
 
 +Ord+Pl+Abe:nsittädekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -27806,7 +27806,7 @@ LEXICON  NUM_51seitsemäsdekiljoonas
 +Ord+Sg+Tra:nneksidekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäsduodekiljardis
+LEXICON NUM_51seitsemäsduodekiljardis
 
 +Ord+Pl+Abe:nsittäduodekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -27861,7 +27861,7 @@ LEXICON  NUM_51seitsemäsduodekiljardis
 +Ord+Sg+Tra:nneksiduodekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäsduodekiljoonas
+LEXICON NUM_51seitsemäsduodekiljoonas
 
 +Ord+Pl+Abe:nsittäduodekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -27916,7 +27916,7 @@ LEXICON  NUM_51seitsemäsduodekiljoonas
 +Ord+Sg+Tra:nneksiduodekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäskahdeksatta
+LEXICON NUM_51seitsemäskahdeksatta
 
 +Ord+Pl+Abe:nsittäkahdeksatta  NUM_BACK_CLIT_OPT  ;
 
@@ -27969,7 +27969,7 @@ LEXICON  NUM_51seitsemäskahdeksatta
 +Ord+Sg+Tra:nneksikahdeksatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäskiljardis
+LEXICON NUM_51seitsemäskiljardis
 
 +Ord+Pl+Abe:nsittäkiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -28024,7 +28024,7 @@ LEXICON  NUM_51seitsemäskiljardis
 +Ord+Sg+Tra:nneksikiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäskiljoonas
+LEXICON NUM_51seitsemäskiljoonas
 
 +Ord+Pl+Abe:nsittäkiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -28079,7 +28079,7 @@ LEXICON  NUM_51seitsemäskiljoonas
 +Ord+Sg+Tra:nneksikiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäskolmatta
+LEXICON NUM_51seitsemäskolmatta
 
 +Ord+Pl+Abe:nsittäkolmatta  NUM_BACK_CLIT_OPT  ;
 
@@ -28132,7 +28132,7 @@ LEXICON  NUM_51seitsemäskolmatta
 +Ord+Sg+Tra:nneksikolmatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäskuudetta
+LEXICON NUM_51seitsemäskuudetta
 
 +Ord+Pl+Abe:nsittäkuudetta  NUM_BACK_CLIT_OPT  ;
 
@@ -28185,7 +28185,7 @@ LEXICON  NUM_51seitsemäskuudetta
 +Ord+Sg+Tra:nneksikuudetta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäskvadriljardis
+LEXICON NUM_51seitsemäskvadriljardis
 
 +Ord+Pl+Abe:nsittäkvadriljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -28240,7 +28240,7 @@ LEXICON  NUM_51seitsemäskvadriljardis
 +Ord+Sg+Tra:nneksikvadriljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäskvadriljoonas
+LEXICON NUM_51seitsemäskvadriljoonas
 
 +Ord+Pl+Abe:nsittäkvadriljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -28295,7 +28295,7 @@ LEXICON  NUM_51seitsemäskvadriljoonas
 +Ord+Sg+Tra:nneksikvadriljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäskvintiljardis
+LEXICON NUM_51seitsemäskvintiljardis
 
 +Ord+Pl+Abe:nsittäkvintiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -28350,7 +28350,7 @@ LEXICON  NUM_51seitsemäskvintiljardis
 +Ord+Sg+Tra:nneksikvintiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäskvintiljoonas
+LEXICON NUM_51seitsemäskvintiljoonas
 
 +Ord+Pl+Abe:nsittäkvintiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -28405,7 +28405,7 @@ LEXICON  NUM_51seitsemäskvintiljoonas
 +Ord+Sg+Tra:nneksikvintiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäskymmenes
+LEXICON NUM_51seitsemäskymmenes
 
 +Ord+Pl+Abe:nsittäkymmenittä  NUM_FRONT_CLIT_OPT  ;
 
@@ -28460,7 +28460,7 @@ LEXICON  NUM_51seitsemäskymmenes
 +Ord+Sg+Tra:nneksikymmeneksi  NUM_FRONT_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäsmiljardis
+LEXICON NUM_51seitsemäsmiljardis
 
 +Ord+Pl+Abe:nsittämiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -28515,7 +28515,7 @@ LEXICON  NUM_51seitsemäsmiljardis
 +Ord+Sg+Tra:nneksimiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäsmiljoonas
+LEXICON NUM_51seitsemäsmiljoonas
 
 +Ord+Pl+Abe:nsittämiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -28570,7 +28570,7 @@ LEXICON  NUM_51seitsemäsmiljoonas
 +Ord+Sg+Tra:nneksimiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäsneljästtä
+LEXICON NUM_51seitsemäsneljästtä
 
 +Ord+Pl+Abe:nsittäneljättä  NUM_BACK_CLIT_OPT  ;
 
@@ -28623,7 +28623,7 @@ LEXICON  NUM_51seitsemäsneljästtä
 +Ord+Sg+Tra:nneksineljättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäsnoniljardis
+LEXICON NUM_51seitsemäsnoniljardis
 
 +Ord+Pl+Abe:nsittänoniljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -28678,7 +28678,7 @@ LEXICON  NUM_51seitsemäsnoniljardis
 +Ord+Sg+Tra:nneksinoniljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäsnoniljoonas
+LEXICON NUM_51seitsemäsnoniljoonas
 
 +Ord+Pl+Abe:nsittänoniljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -28733,7 +28733,7 @@ LEXICON  NUM_51seitsemäsnoniljoonas
 +Ord+Sg+Tra:nneksinoniljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäsoktiljardis
+LEXICON NUM_51seitsemäsoktiljardis
 
 +Ord+Pl+Abe:nsittäoktiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -28788,7 +28788,7 @@ LEXICON  NUM_51seitsemäsoktiljardis
 +Ord+Sg+Tra:nneksioktiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäsoktiljoonas
+LEXICON NUM_51seitsemäsoktiljoonas
 
 +Ord+Pl+Abe:nsittäoktiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -28843,7 +28843,7 @@ LEXICON  NUM_51seitsemäsoktiljoonas
 +Ord+Sg+Tra:nneksioktiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäspiljardis
+LEXICON NUM_51seitsemäspiljardis
 
 +Ord+Pl+Abe:nsittäpiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -28898,7 +28898,7 @@ LEXICON  NUM_51seitsemäspiljardis
 +Ord+Sg+Tra:nneksipiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäspiljoonas
+LEXICON NUM_51seitsemäspiljoonas
 
 +Ord+Pl+Abe:nsittäpiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -28953,7 +28953,7 @@ LEXICON  NUM_51seitsemäspiljoonas
 +Ord+Sg+Tra:nneksipiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemässadas
+LEXICON NUM_51seitsemässadas
 
 +Ord+Pl+Abe:nsittäsadoitta  NUM_BACK_CLIT_OPT  ;
 
@@ -29008,7 +29008,7 @@ LEXICON  NUM_51seitsemässadas
 +Ord+Sg+Tra:nneksisadaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemässeitsemättä
+LEXICON NUM_51seitsemässeitsemättä
 
 +Ord+Pl+Abe:nsittäseitsemättä  NUM_BACK_CLIT_OPT  ;
 
@@ -29061,7 +29061,7 @@ LEXICON  NUM_51seitsemässeitsemättä
 +Ord+Sg+Tra:nneksiseitsemättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemässentiljardis
+LEXICON NUM_51seitsemässentiljardis
 
 +Ord+Pl+Abe:nsittäsentiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -29116,7 +29116,7 @@ LEXICON  NUM_51seitsemässentiljardis
 +Ord+Sg+Tra:nneksisentiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemässentiljoonas
+LEXICON NUM_51seitsemässentiljoonas
 
 +Ord+Pl+Abe:nsittäsentiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -29171,7 +29171,7 @@ LEXICON  NUM_51seitsemässentiljoonas
 +Ord+Sg+Tra:nneksisentiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemässeptiljardis
+LEXICON NUM_51seitsemässeptiljardis
 
 +Ord+Pl+Abe:nsittäseptiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -29226,7 +29226,7 @@ LEXICON  NUM_51seitsemässeptiljardis
 +Ord+Sg+Tra:nneksiseptiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemässeptiljoonas
+LEXICON NUM_51seitsemässeptiljoonas
 
 +Ord+Pl+Abe:nsittäseptiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -29281,7 +29281,7 @@ LEXICON  NUM_51seitsemässeptiljoonas
 +Ord+Sg+Tra:nneksiseptiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemästoista
+LEXICON NUM_51seitsemästoista
 
 +Ord+Pl+Abe:nsittätoista  NUM_BACK_CLIT_OPT  ;
 
@@ -29334,7 +29334,7 @@ LEXICON  NUM_51seitsemästoista
 +Ord+Sg+Tra:nneksitoista  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemästredekiljardis
+LEXICON NUM_51seitsemästredekiljardis
 
 +Ord+Pl+Abe:nsittätredekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -29389,7 +29389,7 @@ LEXICON  NUM_51seitsemästredekiljardis
 +Ord+Sg+Tra:nneksitredekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemästredekiljoonas
+LEXICON NUM_51seitsemästredekiljoonas
 
 +Ord+Pl+Abe:nsittätredekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -29444,7 +29444,7 @@ LEXICON  NUM_51seitsemästredekiljoonas
 +Ord+Sg+Tra:nneksitredekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemästriljardis
+LEXICON NUM_51seitsemästriljardis
 
 +Ord+Pl+Abe:nsittätriljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -29499,7 +29499,7 @@ LEXICON  NUM_51seitsemästriljardis
 +Ord+Sg+Tra:nneksitriljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemästriljoonas
+LEXICON NUM_51seitsemästriljoonas
 
 +Ord+Pl+Abe:nsittätriljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -29554,7 +29554,7 @@ LEXICON  NUM_51seitsemästriljoonas
 +Ord+Sg+Tra:nneksitriljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemästsiljardis
+LEXICON NUM_51seitsemästsiljardis
 
 +Ord+Pl+Abe:nsittätsiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -29609,7 +29609,7 @@ LEXICON  NUM_51seitsemästsiljardis
 +Ord+Sg+Tra:nneksitsiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemästsiljoonas
+LEXICON NUM_51seitsemästsiljoonas
 
 +Ord+Pl+Abe:nsittätsiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -29664,7 +29664,7 @@ LEXICON  NUM_51seitsemästsiljoonas
 +Ord+Sg+Tra:nneksitsiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemästuhannes
+LEXICON NUM_51seitsemästuhannes
 
 +Ord+Pl+Abe:nsittätuhansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -29719,7 +29719,7 @@ LEXICON  NUM_51seitsemästuhannes
 +Ord+Sg+Tra:nneksituhanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäsundekiljardis
+LEXICON NUM_51seitsemäsundekiljardis
 
 +Ord+Pl+Abe:nsittäundekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -29774,7 +29774,7 @@ LEXICON  NUM_51seitsemäsundekiljardis
 +Ord+Sg+Tra:nneksiundekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäsundekiljoonas
+LEXICON NUM_51seitsemäsundekiljoonas
 
 +Ord+Pl+Abe:nsittäundekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -29829,7 +29829,7 @@ LEXICON  NUM_51seitsemäsundekiljoonas
 +Ord+Sg+Tra:nneksiundekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäsviidettä
+LEXICON NUM_51seitsemäsviidettä
 
 +Ord+Pl+Abe:nsittäviidettä  NUM_BACK_CLIT_OPT  ;
 
@@ -29882,7 +29882,7 @@ LEXICON  NUM_51seitsemäsviidettä
 +Ord+Sg+Tra:nneksiviidettä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51seitsemäsyhdeksättä
+LEXICON NUM_51seitsemäsyhdeksättä
 
 +Ord+Pl+Abe:nsittäyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
@@ -29935,7 +29935,7 @@ LEXICON  NUM_51seitsemäsyhdeksättä
 +Ord+Sg+Tra:nneksiyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidesbiljardis
+LEXICON NUM_51viidesbiljardis
 
 +Ord+Pl+Abe:nsittäbiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -29990,7 +29990,7 @@ LEXICON  NUM_51viidesbiljardis
 +Ord+Sg+Tra:nneksibiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidesbiljoonas
+LEXICON NUM_51viidesbiljoonas
 
 +Ord+Pl+Abe:nsittäbiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -30045,7 +30045,7 @@ LEXICON  NUM_51viidesbiljoonas
 +Ord+Sg+Tra:nneksibiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidesdekiljardis
+LEXICON NUM_51viidesdekiljardis
 
 +Ord+Pl+Abe:nsittädekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -30100,7 +30100,7 @@ LEXICON  NUM_51viidesdekiljardis
 +Ord+Sg+Tra:nneksidekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidesdekiljoonas
+LEXICON NUM_51viidesdekiljoonas
 
 +Ord+Pl+Abe:nsittädekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -30155,7 +30155,7 @@ LEXICON  NUM_51viidesdekiljoonas
 +Ord+Sg+Tra:nneksidekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidesduodekiljardis
+LEXICON NUM_51viidesduodekiljardis
 
 +Ord+Pl+Abe:nsittäduodekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -30210,7 +30210,7 @@ LEXICON  NUM_51viidesduodekiljardis
 +Ord+Sg+Tra:nneksiduodekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidesduodekiljoonas
+LEXICON NUM_51viidesduodekiljoonas
 
 +Ord+Pl+Abe:nsittäduodekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -30265,7 +30265,7 @@ LEXICON  NUM_51viidesduodekiljoonas
 +Ord+Sg+Tra:nneksiduodekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viideskahdeksatta
+LEXICON NUM_51viideskahdeksatta
 
 +Ord+Pl+Abe:nsittäkahdeksatta  NUM_BACK_CLIT_OPT  ;
 
@@ -30318,7 +30318,7 @@ LEXICON  NUM_51viideskahdeksatta
 +Ord+Sg+Tra:nneksikahdeksatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viideskiljardis
+LEXICON NUM_51viideskiljardis
 
 +Ord+Pl+Abe:nsittäkiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -30373,7 +30373,7 @@ LEXICON  NUM_51viideskiljardis
 +Ord+Sg+Tra:nneksikiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viideskiljoonas
+LEXICON NUM_51viideskiljoonas
 
 +Ord+Pl+Abe:nsittäkiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -30428,7 +30428,7 @@ LEXICON  NUM_51viideskiljoonas
 +Ord+Sg+Tra:nneksikiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viideskolmatta
+LEXICON NUM_51viideskolmatta
 
 +Ord+Pl+Abe:nsittäkolmatta  NUM_BACK_CLIT_OPT  ;
 
@@ -30481,7 +30481,7 @@ LEXICON  NUM_51viideskolmatta
 +Ord+Sg+Tra:nneksikolmatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viideskuudetta
+LEXICON NUM_51viideskuudetta
 
 +Ord+Pl+Abe:nsittäkuudetta  NUM_BACK_CLIT_OPT  ;
 
@@ -30534,7 +30534,7 @@ LEXICON  NUM_51viideskuudetta
 +Ord+Sg+Tra:nneksikuudetta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viideskvadriljardis
+LEXICON NUM_51viideskvadriljardis
 
 +Ord+Pl+Abe:nsittäkvadriljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -30589,7 +30589,7 @@ LEXICON  NUM_51viideskvadriljardis
 +Ord+Sg+Tra:nneksikvadriljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viideskvadriljoonas
+LEXICON NUM_51viideskvadriljoonas
 
 +Ord+Pl+Abe:nsittäkvadriljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -30644,7 +30644,7 @@ LEXICON  NUM_51viideskvadriljoonas
 +Ord+Sg+Tra:nneksikvadriljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viideskvintiljardis
+LEXICON NUM_51viideskvintiljardis
 
 +Ord+Pl+Abe:nsittäkvintiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -30699,7 +30699,7 @@ LEXICON  NUM_51viideskvintiljardis
 +Ord+Sg+Tra:nneksikvintiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viideskvintiljoonas
+LEXICON NUM_51viideskvintiljoonas
 
 +Ord+Pl+Abe:nsittäkvintiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -30754,7 +30754,7 @@ LEXICON  NUM_51viideskvintiljoonas
 +Ord+Sg+Tra:nneksikvintiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viideskymmenes
+LEXICON NUM_51viideskymmenes
 
 +Ord+Pl+Abe:nsittäkymmenittä  NUM_FRONT_CLIT_OPT  ;
 
@@ -30809,7 +30809,7 @@ LEXICON  NUM_51viideskymmenes
 +Ord+Sg+Tra:nneksikymmeneksi  NUM_FRONT_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidesmiljardis
+LEXICON NUM_51viidesmiljardis
 
 +Ord+Pl+Abe:nsittämiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -30864,7 +30864,7 @@ LEXICON  NUM_51viidesmiljardis
 +Ord+Sg+Tra:nneksimiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidesmiljoonas
+LEXICON NUM_51viidesmiljoonas
 
 +Ord+Pl+Abe:nsittämiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -30919,7 +30919,7 @@ LEXICON  NUM_51viidesmiljoonas
 +Ord+Sg+Tra:nneksimiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidesneljästtä
+LEXICON NUM_51viidesneljästtä
 
 +Ord+Pl+Abe:nsittäneljättä  NUM_BACK_CLIT_OPT  ;
 
@@ -30972,7 +30972,7 @@ LEXICON  NUM_51viidesneljästtä
 +Ord+Sg+Tra:nneksineljättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidesnoniljardis
+LEXICON NUM_51viidesnoniljardis
 
 +Ord+Pl+Abe:nsittänoniljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -31027,7 +31027,7 @@ LEXICON  NUM_51viidesnoniljardis
 +Ord+Sg+Tra:nneksinoniljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidesnoniljoonas
+LEXICON NUM_51viidesnoniljoonas
 
 +Ord+Pl+Abe:nsittänoniljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -31082,7 +31082,7 @@ LEXICON  NUM_51viidesnoniljoonas
 +Ord+Sg+Tra:nneksinoniljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidesoktiljardis
+LEXICON NUM_51viidesoktiljardis
 
 +Ord+Pl+Abe:nsittäoktiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -31137,7 +31137,7 @@ LEXICON  NUM_51viidesoktiljardis
 +Ord+Sg+Tra:nneksioktiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidesoktiljoonas
+LEXICON NUM_51viidesoktiljoonas
 
 +Ord+Pl+Abe:nsittäoktiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -31192,7 +31192,7 @@ LEXICON  NUM_51viidesoktiljoonas
 +Ord+Sg+Tra:nneksioktiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidespiljardis
+LEXICON NUM_51viidespiljardis
 
 +Ord+Pl+Abe:nsittäpiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -31247,7 +31247,7 @@ LEXICON  NUM_51viidespiljardis
 +Ord+Sg+Tra:nneksipiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidespiljoonas
+LEXICON NUM_51viidespiljoonas
 
 +Ord+Pl+Abe:nsittäpiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -31302,7 +31302,7 @@ LEXICON  NUM_51viidespiljoonas
 +Ord+Sg+Tra:nneksipiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidessadas
+LEXICON NUM_51viidessadas
 
 +Ord+Pl+Abe:nsittäsadoitta  NUM_BACK_CLIT_OPT  ;
 
@@ -31357,7 +31357,7 @@ LEXICON  NUM_51viidessadas
 +Ord+Sg+Tra:nneksisadaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidesseitsemättä
+LEXICON NUM_51viidesseitsemättä
 
 +Ord+Pl+Abe:nsittäseitsemättä  NUM_BACK_CLIT_OPT  ;
 
@@ -31410,7 +31410,7 @@ LEXICON  NUM_51viidesseitsemättä
 +Ord+Sg+Tra:nneksiseitsemättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidessentiljardis
+LEXICON NUM_51viidessentiljardis
 
 +Ord+Pl+Abe:nsittäsentiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -31465,7 +31465,7 @@ LEXICON  NUM_51viidessentiljardis
 +Ord+Sg+Tra:nneksisentiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidessentiljoonas
+LEXICON NUM_51viidessentiljoonas
 
 +Ord+Pl+Abe:nsittäsentiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -31520,7 +31520,7 @@ LEXICON  NUM_51viidessentiljoonas
 +Ord+Sg+Tra:nneksisentiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidesseptiljardis
+LEXICON NUM_51viidesseptiljardis
 
 +Ord+Pl+Abe:nsittäseptiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -31575,7 +31575,7 @@ LEXICON  NUM_51viidesseptiljardis
 +Ord+Sg+Tra:nneksiseptiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidesseptiljoonas
+LEXICON NUM_51viidesseptiljoonas
 
 +Ord+Pl+Abe:nsittäseptiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -31630,7 +31630,7 @@ LEXICON  NUM_51viidesseptiljoonas
 +Ord+Sg+Tra:nneksiseptiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidestoista
+LEXICON NUM_51viidestoista
 
 +Ord+Pl+Abe:nsittätoista  NUM_BACK_CLIT_OPT  ;
 
@@ -31683,7 +31683,7 @@ LEXICON  NUM_51viidestoista
 +Ord+Sg+Tra:nneksitoista  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidestredekiljardis
+LEXICON NUM_51viidestredekiljardis
 
 +Ord+Pl+Abe:nsittätredekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -31738,7 +31738,7 @@ LEXICON  NUM_51viidestredekiljardis
 +Ord+Sg+Tra:nneksitredekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidestredekiljoonas
+LEXICON NUM_51viidestredekiljoonas
 
 +Ord+Pl+Abe:nsittätredekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -31793,7 +31793,7 @@ LEXICON  NUM_51viidestredekiljoonas
 +Ord+Sg+Tra:nneksitredekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidestriljardis
+LEXICON NUM_51viidestriljardis
 
 +Ord+Pl+Abe:nsittätriljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -31848,7 +31848,7 @@ LEXICON  NUM_51viidestriljardis
 +Ord+Sg+Tra:nneksitriljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidestriljoonas
+LEXICON NUM_51viidestriljoonas
 
 +Ord+Pl+Abe:nsittätriljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -31903,7 +31903,7 @@ LEXICON  NUM_51viidestriljoonas
 +Ord+Sg+Tra:nneksitriljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidestsiljardis
+LEXICON NUM_51viidestsiljardis
 
 +Ord+Pl+Abe:nsittätsiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -31958,7 +31958,7 @@ LEXICON  NUM_51viidestsiljardis
 +Ord+Sg+Tra:nneksitsiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidestsiljoonas
+LEXICON NUM_51viidestsiljoonas
 
 +Ord+Pl+Abe:nsittätsiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -32013,7 +32013,7 @@ LEXICON  NUM_51viidestsiljoonas
 +Ord+Sg+Tra:nneksitsiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidestuhannes
+LEXICON NUM_51viidestuhannes
 
 +Ord+Pl+Abe:nsittätuhansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -32068,7 +32068,7 @@ LEXICON  NUM_51viidestuhannes
 +Ord+Sg+Tra:nneksituhanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidesundekiljardis
+LEXICON NUM_51viidesundekiljardis
 
 +Ord+Pl+Abe:nsittäundekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -32123,7 +32123,7 @@ LEXICON  NUM_51viidesundekiljardis
 +Ord+Sg+Tra:nneksiundekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidesundekiljoonas
+LEXICON NUM_51viidesundekiljoonas
 
 +Ord+Pl+Abe:nsittäundekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -32178,7 +32178,7 @@ LEXICON  NUM_51viidesundekiljoonas
 +Ord+Sg+Tra:nneksiundekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidesviidettä
+LEXICON NUM_51viidesviidettä
 
 +Ord+Pl+Abe:nsittäviidettä  NUM_BACK_CLIT_OPT  ;
 
@@ -32231,7 +32231,7 @@ LEXICON  NUM_51viidesviidettä
 +Ord+Sg+Tra:nneksiviidettä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viidesyhdeksättä
+LEXICON NUM_51viidesyhdeksättä
 
 +Ord+Pl+Abe:nsittäyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
@@ -32284,7 +32284,7 @@ LEXICON  NUM_51viidesyhdeksättä
 +Ord+Sg+Tra:nneksiyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisibiljardia
+LEXICON NUM_51viisibiljardia
 
 +Pl+Abe:sittäbiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -32339,7 +32339,7 @@ LEXICON  NUM_51viisibiljardia
 +Sg+Tra:deksibiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisibiljoonaa
+LEXICON NUM_51viisibiljoonaa
 
 +Pl+Abe:sittäbiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -32394,7 +32394,7 @@ LEXICON  NUM_51viisibiljoonaa
 +Sg+Tra:deksibiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisidekiljardia
+LEXICON NUM_51viisidekiljardia
 
 +Pl+Abe:sittädekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -32449,7 +32449,7 @@ LEXICON  NUM_51viisidekiljardia
 +Sg+Tra:deksidekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisidekiljoonaa
+LEXICON NUM_51viisidekiljoonaa
 
 +Pl+Abe:sittädekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -32504,7 +32504,7 @@ LEXICON  NUM_51viisidekiljoonaa
 +Sg+Tra:deksidekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisiduodekiljardia
+LEXICON NUM_51viisiduodekiljardia
 
 +Pl+Abe:sittäduodekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -32559,7 +32559,7 @@ LEXICON  NUM_51viisiduodekiljardia
 +Sg+Tra:deksiduodekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisiduodekiljoonaa
+LEXICON NUM_51viisiduodekiljoonaa
 
 +Pl+Abe:sittäduodekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -32614,7 +32614,7 @@ LEXICON  NUM_51viisiduodekiljoonaa
 +Sg+Tra:deksiduodekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisikahdeksatta
+LEXICON NUM_51viisikahdeksatta
 
 +Pl+Abe:sittäkahdeksatta  NUM_BACK_CLIT_OPT  ;
 
@@ -32667,7 +32667,7 @@ LEXICON  NUM_51viisikahdeksatta
 +Sg+Tra:deksikahdeksatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisikiljardia
+LEXICON NUM_51viisikiljardia
 
 +Pl+Abe:sittäkiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -32722,7 +32722,7 @@ LEXICON  NUM_51viisikiljardia
 +Sg+Tra:deksikiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisikiljoonaa
+LEXICON NUM_51viisikiljoonaa
 
 +Pl+Abe:sittäkiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -32777,7 +32777,7 @@ LEXICON  NUM_51viisikiljoonaa
 +Sg+Tra:deksikiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisikolmatta
+LEXICON NUM_51viisikolmatta
 
 +Pl+Abe:sittäkolmatta  NUM_BACK_CLIT_OPT  ;
 
@@ -32830,7 +32830,7 @@ LEXICON  NUM_51viisikolmatta
 +Sg+Tra:deksikolmatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisikuudetta
+LEXICON NUM_51viisikuudetta
 
 +Pl+Abe:sittäkuudetta  NUM_BACK_CLIT_OPT  ;
 
@@ -32883,7 +32883,7 @@ LEXICON  NUM_51viisikuudetta
 +Sg+Tra:deksikuudetta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisikvadriljardia
+LEXICON NUM_51viisikvadriljardia
 
 +Pl+Abe:sittäkvadriljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -32938,7 +32938,7 @@ LEXICON  NUM_51viisikvadriljardia
 +Sg+Tra:deksikvadriljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisikvadriljoonaa
+LEXICON NUM_51viisikvadriljoonaa
 
 +Pl+Abe:sittäkvadriljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -32993,7 +32993,7 @@ LEXICON  NUM_51viisikvadriljoonaa
 +Sg+Tra:deksikvadriljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisikvintiljardia
+LEXICON NUM_51viisikvintiljardia
 
 +Pl+Abe:sittäkvintiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -33048,7 +33048,7 @@ LEXICON  NUM_51viisikvintiljardia
 +Sg+Tra:deksikvintiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisikvintiljoonaa
+LEXICON NUM_51viisikvintiljoonaa
 
 +Pl+Abe:sittäkvintiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -33103,7 +33103,7 @@ LEXICON  NUM_51viisikvintiljoonaa
 +Sg+Tra:deksikvintiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisikymmentä
+LEXICON NUM_51viisikymmentä
 
 +Pl+Abe:sittäkymmenittä  NUM_FRONT_CLIT_OPT  ;
 
@@ -33158,7 +33158,7 @@ LEXICON  NUM_51viisikymmentä
 +Sg+Tra:deksikymmeneksi  NUM_FRONT_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisimiljardia
+LEXICON NUM_51viisimiljardia
 
 +Pl+Abe:sittämiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -33213,7 +33213,7 @@ LEXICON  NUM_51viisimiljardia
 +Sg+Tra:deksimiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisimiljoonaa
+LEXICON NUM_51viisimiljoonaa
 
 +Pl+Abe:sittämiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -33268,7 +33268,7 @@ LEXICON  NUM_51viisimiljoonaa
 +Sg+Tra:deksimiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisineljättä
+LEXICON NUM_51viisineljättä
 
 +Pl+Abe:sittäneljättä  NUM_BACK_CLIT_OPT  ;
 
@@ -33321,7 +33321,7 @@ LEXICON  NUM_51viisineljättä
 +Sg+Tra:deksineljättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisinoniljardia
+LEXICON NUM_51viisinoniljardia
 
 +Pl+Abe:sittänoniljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -33376,7 +33376,7 @@ LEXICON  NUM_51viisinoniljardia
 +Sg+Tra:deksinoniljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisinoniljoonaa
+LEXICON NUM_51viisinoniljoonaa
 
 +Pl+Abe:sittänoniljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -33431,7 +33431,7 @@ LEXICON  NUM_51viisinoniljoonaa
 +Sg+Tra:deksinoniljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisioktiljardia
+LEXICON NUM_51viisioktiljardia
 
 +Pl+Abe:sittäoktiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -33486,7 +33486,7 @@ LEXICON  NUM_51viisioktiljardia
 +Sg+Tra:deksioktiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisioktiljoonaa
+LEXICON NUM_51viisioktiljoonaa
 
 +Pl+Abe:sittäoktiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -33541,7 +33541,7 @@ LEXICON  NUM_51viisioktiljoonaa
 +Sg+Tra:deksioktiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisipiljardia
+LEXICON NUM_51viisipiljardia
 
 +Pl+Abe:sittäpiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -33596,7 +33596,7 @@ LEXICON  NUM_51viisipiljardia
 +Sg+Tra:deksipiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisipiljoonaa
+LEXICON NUM_51viisipiljoonaa
 
 +Pl+Abe:sittäpiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -33651,7 +33651,7 @@ LEXICON  NUM_51viisipiljoonaa
 +Sg+Tra:deksipiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisisataa
+LEXICON NUM_51viisisataa
 
 +Pl+Abe:sittäsadoitta  NUM_BACK_CLIT_OPT  ;
 
@@ -33706,7 +33706,7 @@ LEXICON  NUM_51viisisataa
 +Sg+Tra:deksisadaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisiseitsemättä
+LEXICON NUM_51viisiseitsemättä
 
 +Pl+Abe:sittäseitsemättä  NUM_BACK_CLIT_OPT  ;
 
@@ -33759,7 +33759,7 @@ LEXICON  NUM_51viisiseitsemättä
 +Sg+Tra:deksiseitsemättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisisentiljardia
+LEXICON NUM_51viisisentiljardia
 
 +Pl+Abe:sittäsentiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -33814,7 +33814,7 @@ LEXICON  NUM_51viisisentiljardia
 +Sg+Tra:deksisentiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisisentiljoonaa
+LEXICON NUM_51viisisentiljoonaa
 
 +Pl+Abe:sittäsentiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -33869,7 +33869,7 @@ LEXICON  NUM_51viisisentiljoonaa
 +Sg+Tra:deksisentiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisiseptiljardia
+LEXICON NUM_51viisiseptiljardia
 
 +Pl+Abe:sittäseptiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -33924,7 +33924,7 @@ LEXICON  NUM_51viisiseptiljardia
 +Sg+Tra:deksiseptiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisiseptiljoonaa
+LEXICON NUM_51viisiseptiljoonaa
 
 +Pl+Abe:sittäseptiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -33979,7 +33979,7 @@ LEXICON  NUM_51viisiseptiljoonaa
 +Sg+Tra:deksiseptiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisitoista
+LEXICON NUM_51viisitoista
 
 +Pl+Abe:sittätoista  NUM_BACK_CLIT_OPT  ;
 
@@ -34032,7 +34032,7 @@ LEXICON  NUM_51viisitoista
 +Sg+Tra:deksitoista  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisitredekiljardia
+LEXICON NUM_51viisitredekiljardia
 
 +Pl+Abe:sittätredekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -34087,7 +34087,7 @@ LEXICON  NUM_51viisitredekiljardia
 +Sg+Tra:deksitredekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisitredekiljoonaa
+LEXICON NUM_51viisitredekiljoonaa
 
 +Pl+Abe:sittätredekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -34142,7 +34142,7 @@ LEXICON  NUM_51viisitredekiljoonaa
 +Sg+Tra:deksitredekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisitriljardia
+LEXICON NUM_51viisitriljardia
 
 +Pl+Abe:sittätriljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -34197,7 +34197,7 @@ LEXICON  NUM_51viisitriljardia
 +Sg+Tra:deksitriljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisitriljoonaa
+LEXICON NUM_51viisitriljoonaa
 
 +Pl+Abe:sittätriljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -34252,7 +34252,7 @@ LEXICON  NUM_51viisitriljoonaa
 +Sg+Tra:deksitriljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisitsiljardia
+LEXICON NUM_51viisitsiljardia
 
 +Pl+Abe:sittätsiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -34307,7 +34307,7 @@ LEXICON  NUM_51viisitsiljardia
 +Sg+Tra:deksitsiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisitsiljoonaa
+LEXICON NUM_51viisitsiljoonaa
 
 +Pl+Abe:sittätsiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -34362,7 +34362,7 @@ LEXICON  NUM_51viisitsiljoonaa
 +Sg+Tra:deksitsiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisituhatta
+LEXICON NUM_51viisituhatta
 
 +Pl+Abe:sittätuhansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -34417,7 +34417,7 @@ LEXICON  NUM_51viisituhatta
 +Sg+Tra:deksituhanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisiundekiljardia
+LEXICON NUM_51viisiundekiljardia
 
 +Pl+Abe:sittäundekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -34472,7 +34472,7 @@ LEXICON  NUM_51viisiundekiljardia
 +Sg+Tra:deksiundekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisiundekiljoonaa
+LEXICON NUM_51viisiundekiljoonaa
 
 +Pl+Abe:sittäundekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -34527,7 +34527,7 @@ LEXICON  NUM_51viisiundekiljoonaa
 +Sg+Tra:deksiundekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisiviidettä
+LEXICON NUM_51viisiviidettä
 
 +Pl+Abe:sittäviidettä  NUM_BACK_CLIT_OPT  ;
 
@@ -34580,7 +34580,7 @@ LEXICON  NUM_51viisiviidettä
 +Sg+Tra:deksiviidettä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51viisiyhdeksättä
+LEXICON NUM_51viisiyhdeksättä
 
 +Pl+Abe:sittäyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
@@ -34633,7 +34633,7 @@ LEXICON  NUM_51viisiyhdeksättä
 +Sg+Tra:deksiyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänbiljardia
+LEXICON NUM_51yhdeksänbiljardia
 
 +Pl+Abe:ittäbiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -34688,7 +34688,7 @@ LEXICON  NUM_51yhdeksänbiljardia
 +Sg+Tra:äksibiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänbiljoonaa
+LEXICON NUM_51yhdeksänbiljoonaa
 
 +Pl+Abe:ittäbiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -34743,7 +34743,7 @@ LEXICON  NUM_51yhdeksänbiljoonaa
 +Sg+Tra:äksibiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksändekiljardia
+LEXICON NUM_51yhdeksändekiljardia
 
 +Pl+Abe:ittädekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -34798,7 +34798,7 @@ LEXICON  NUM_51yhdeksändekiljardia
 +Sg+Tra:äksidekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksändekiljoonaa
+LEXICON NUM_51yhdeksändekiljoonaa
 
 +Pl+Abe:ittädekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -34853,7 +34853,7 @@ LEXICON  NUM_51yhdeksändekiljoonaa
 +Sg+Tra:äksidekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänduodekiljardia
+LEXICON NUM_51yhdeksänduodekiljardia
 
 +Pl+Abe:ittäduodekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -34908,7 +34908,7 @@ LEXICON  NUM_51yhdeksänduodekiljardia
 +Sg+Tra:äksiduodekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänduodekiljoonaa
+LEXICON NUM_51yhdeksänduodekiljoonaa
 
 +Pl+Abe:ittäduodekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -34963,7 +34963,7 @@ LEXICON  NUM_51yhdeksänduodekiljoonaa
 +Sg+Tra:äksiduodekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänkahdeksatta
+LEXICON NUM_51yhdeksänkahdeksatta
 
 +Pl+Abe:ittäkahdeksatta  NUM_BACK_CLIT_OPT  ;
 
@@ -35016,7 +35016,7 @@ LEXICON  NUM_51yhdeksänkahdeksatta
 +Sg+Tra:äksikahdeksatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänkiljardia
+LEXICON NUM_51yhdeksänkiljardia
 
 +Pl+Abe:ittäkiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -35071,7 +35071,7 @@ LEXICON  NUM_51yhdeksänkiljardia
 +Sg+Tra:äksikiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänkiljoonaa
+LEXICON NUM_51yhdeksänkiljoonaa
 
 +Pl+Abe:ittäkiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -35126,7 +35126,7 @@ LEXICON  NUM_51yhdeksänkiljoonaa
 +Sg+Tra:äksikiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänkolmatta
+LEXICON NUM_51yhdeksänkolmatta
 
 +Pl+Abe:ittäkolmatta  NUM_BACK_CLIT_OPT  ;
 
@@ -35179,7 +35179,7 @@ LEXICON  NUM_51yhdeksänkolmatta
 +Sg+Tra:äksikolmatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänkuudetta
+LEXICON NUM_51yhdeksänkuudetta
 
 +Pl+Abe:ittäkuudetta  NUM_BACK_CLIT_OPT  ;
 
@@ -35232,7 +35232,7 @@ LEXICON  NUM_51yhdeksänkuudetta
 +Sg+Tra:äksikuudetta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänkvadriljardia
+LEXICON NUM_51yhdeksänkvadriljardia
 
 +Pl+Abe:ittäkvadriljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -35287,7 +35287,7 @@ LEXICON  NUM_51yhdeksänkvadriljardia
 +Sg+Tra:äksikvadriljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänkvadriljoonaa
+LEXICON NUM_51yhdeksänkvadriljoonaa
 
 +Pl+Abe:ittäkvadriljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -35342,7 +35342,7 @@ LEXICON  NUM_51yhdeksänkvadriljoonaa
 +Sg+Tra:äksikvadriljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänkvintiljardia
+LEXICON NUM_51yhdeksänkvintiljardia
 
 +Pl+Abe:ittäkvintiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -35397,7 +35397,7 @@ LEXICON  NUM_51yhdeksänkvintiljardia
 +Sg+Tra:äksikvintiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänkvintiljoonaa
+LEXICON NUM_51yhdeksänkvintiljoonaa
 
 +Pl+Abe:ittäkvintiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -35452,7 +35452,7 @@ LEXICON  NUM_51yhdeksänkvintiljoonaa
 +Sg+Tra:äksikvintiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänkymmentä
+LEXICON NUM_51yhdeksänkymmentä
 
 +Pl+Abe:ittäkymmenittä  NUM_FRONT_CLIT_OPT  ;
 
@@ -35507,7 +35507,7 @@ LEXICON  NUM_51yhdeksänkymmentä
 +Sg+Tra:äksikymmeneksi  NUM_FRONT_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänmiljardia
+LEXICON NUM_51yhdeksänmiljardia
 
 +Pl+Abe:ittämiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -35562,7 +35562,7 @@ LEXICON  NUM_51yhdeksänmiljardia
 +Sg+Tra:äksimiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänmiljoonaa
+LEXICON NUM_51yhdeksänmiljoonaa
 
 +Pl+Abe:ittämiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -35617,7 +35617,7 @@ LEXICON  NUM_51yhdeksänmiljoonaa
 +Sg+Tra:äksimiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänneljättä
+LEXICON NUM_51yhdeksänneljättä
 
 +Pl+Abe:ittäneljättä  NUM_BACK_CLIT_OPT  ;
 
@@ -35670,7 +35670,7 @@ LEXICON  NUM_51yhdeksänneljättä
 +Sg+Tra:äksineljättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksännoniljardia
+LEXICON NUM_51yhdeksännoniljardia
 
 +Pl+Abe:ittänoniljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -35725,7 +35725,7 @@ LEXICON  NUM_51yhdeksännoniljardia
 +Sg+Tra:äksinoniljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksännoniljoonaa
+LEXICON NUM_51yhdeksännoniljoonaa
 
 +Pl+Abe:ittänoniljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -35780,7 +35780,7 @@ LEXICON  NUM_51yhdeksännoniljoonaa
 +Sg+Tra:äksinoniljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänoktiljardia
+LEXICON NUM_51yhdeksänoktiljardia
 
 +Pl+Abe:ittäoktiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -35835,7 +35835,7 @@ LEXICON  NUM_51yhdeksänoktiljardia
 +Sg+Tra:äksioktiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänoktiljoonaa
+LEXICON NUM_51yhdeksänoktiljoonaa
 
 +Pl+Abe:ittäoktiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -35890,7 +35890,7 @@ LEXICON  NUM_51yhdeksänoktiljoonaa
 +Sg+Tra:äksioktiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänpiljardia
+LEXICON NUM_51yhdeksänpiljardia
 
 +Pl+Abe:ittäpiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -35945,7 +35945,7 @@ LEXICON  NUM_51yhdeksänpiljardia
 +Sg+Tra:äksipiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänpiljoonaa
+LEXICON NUM_51yhdeksänpiljoonaa
 
 +Pl+Abe:ittäpiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -36000,7 +36000,7 @@ LEXICON  NUM_51yhdeksänpiljoonaa
 +Sg+Tra:äksipiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänsataa
+LEXICON NUM_51yhdeksänsataa
 
 +Pl+Abe:ittäsadoitta  NUM_BACK_CLIT_OPT  ;
 
@@ -36055,7 +36055,7 @@ LEXICON  NUM_51yhdeksänsataa
 +Sg+Tra:äksisadaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänseitsemättä
+LEXICON NUM_51yhdeksänseitsemättä
 
 +Pl+Abe:ittäseitsemättä  NUM_BACK_CLIT_OPT  ;
 
@@ -36108,7 +36108,7 @@ LEXICON  NUM_51yhdeksänseitsemättä
 +Sg+Tra:äksiseitsemättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänsentiljardia
+LEXICON NUM_51yhdeksänsentiljardia
 
 +Pl+Abe:ittäsentiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -36163,7 +36163,7 @@ LEXICON  NUM_51yhdeksänsentiljardia
 +Sg+Tra:äksisentiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänsentiljoonaa
+LEXICON NUM_51yhdeksänsentiljoonaa
 
 +Pl+Abe:ittäsentiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -36218,7 +36218,7 @@ LEXICON  NUM_51yhdeksänsentiljoonaa
 +Sg+Tra:äksisentiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänseptiljardia
+LEXICON NUM_51yhdeksänseptiljardia
 
 +Pl+Abe:ittäseptiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -36273,7 +36273,7 @@ LEXICON  NUM_51yhdeksänseptiljardia
 +Sg+Tra:äksiseptiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänseptiljoonaa
+LEXICON NUM_51yhdeksänseptiljoonaa
 
 +Pl+Abe:ittäseptiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -36328,7 +36328,7 @@ LEXICON  NUM_51yhdeksänseptiljoonaa
 +Sg+Tra:äksiseptiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäntoista
+LEXICON NUM_51yhdeksäntoista
 
 +Pl+Abe:ittätoista  NUM_BACK_CLIT_OPT  ;
 
@@ -36381,7 +36381,7 @@ LEXICON  NUM_51yhdeksäntoista
 +Sg+Tra:äksitoista  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäntredekiljardia
+LEXICON NUM_51yhdeksäntredekiljardia
 
 +Pl+Abe:ittätredekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -36436,7 +36436,7 @@ LEXICON  NUM_51yhdeksäntredekiljardia
 +Sg+Tra:äksitredekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäntredekiljoonaa
+LEXICON NUM_51yhdeksäntredekiljoonaa
 
 +Pl+Abe:ittätredekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -36491,7 +36491,7 @@ LEXICON  NUM_51yhdeksäntredekiljoonaa
 +Sg+Tra:äksitredekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäntriljardia
+LEXICON NUM_51yhdeksäntriljardia
 
 +Pl+Abe:ittätriljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -36546,7 +36546,7 @@ LEXICON  NUM_51yhdeksäntriljardia
 +Sg+Tra:äksitriljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäntriljoonaa
+LEXICON NUM_51yhdeksäntriljoonaa
 
 +Pl+Abe:ittätriljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -36601,7 +36601,7 @@ LEXICON  NUM_51yhdeksäntriljoonaa
 +Sg+Tra:äksitriljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäntsiljardia
+LEXICON NUM_51yhdeksäntsiljardia
 
 +Pl+Abe:ittätsiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -36656,7 +36656,7 @@ LEXICON  NUM_51yhdeksäntsiljardia
 +Sg+Tra:äksitsiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäntsiljoonaa
+LEXICON NUM_51yhdeksäntsiljoonaa
 
 +Pl+Abe:ittätsiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -36711,7 +36711,7 @@ LEXICON  NUM_51yhdeksäntsiljoonaa
 +Sg+Tra:äksitsiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäntuhatta
+LEXICON NUM_51yhdeksäntuhatta
 
 +Pl+Abe:ittätuhansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -36766,7 +36766,7 @@ LEXICON  NUM_51yhdeksäntuhatta
 +Sg+Tra:äksituhanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänundekiljardia
+LEXICON NUM_51yhdeksänundekiljardia
 
 +Pl+Abe:ittäundekiljardeitta  NUM_BACK_CLIT_OPT  ;
 
@@ -36821,7 +36821,7 @@ LEXICON  NUM_51yhdeksänundekiljardia
 +Sg+Tra:äksiundekiljardiksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänundekiljoonaa
+LEXICON NUM_51yhdeksänundekiljoonaa
 
 +Pl+Abe:ittäundekiljoonitta  NUM_BACK_CLIT_OPT  ;
 
@@ -36876,7 +36876,7 @@ LEXICON  NUM_51yhdeksänundekiljoonaa
 +Sg+Tra:äksiundekiljoonaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänviidettä
+LEXICON NUM_51yhdeksänviidettä
 
 +Pl+Abe:ittäviidettä  NUM_BACK_CLIT_OPT  ;
 
@@ -36929,7 +36929,7 @@ LEXICON  NUM_51yhdeksänviidettä
 +Sg+Tra:äksiviidettä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksänyhdeksättä
+LEXICON NUM_51yhdeksänyhdeksättä
 
 +Pl+Abe:ittäyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
@@ -36982,7 +36982,7 @@ LEXICON  NUM_51yhdeksänyhdeksättä
 +Sg+Tra:äksiyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäsbiljardis
+LEXICON NUM_51yhdeksäsbiljardis
 
 +Ord+Pl+Abe:nsittäbiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -37037,7 +37037,7 @@ LEXICON  NUM_51yhdeksäsbiljardis
 +Ord+Sg+Tra:nneksibiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäsbiljoonas
+LEXICON NUM_51yhdeksäsbiljoonas
 
 +Ord+Pl+Abe:nsittäbiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -37092,7 +37092,7 @@ LEXICON  NUM_51yhdeksäsbiljoonas
 +Ord+Sg+Tra:nneksibiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäsdekiljardis
+LEXICON NUM_51yhdeksäsdekiljardis
 
 +Ord+Pl+Abe:nsittädekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -37147,7 +37147,7 @@ LEXICON  NUM_51yhdeksäsdekiljardis
 +Ord+Sg+Tra:nneksidekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäsdekiljoonas
+LEXICON NUM_51yhdeksäsdekiljoonas
 
 +Ord+Pl+Abe:nsittädekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -37202,7 +37202,7 @@ LEXICON  NUM_51yhdeksäsdekiljoonas
 +Ord+Sg+Tra:nneksidekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäsduodekiljardis
+LEXICON NUM_51yhdeksäsduodekiljardis
 
 +Ord+Pl+Abe:nsittäduodekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -37257,7 +37257,7 @@ LEXICON  NUM_51yhdeksäsduodekiljardis
 +Ord+Sg+Tra:nneksiduodekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäsduodekiljoonas
+LEXICON NUM_51yhdeksäsduodekiljoonas
 
 +Ord+Pl+Abe:nsittäduodekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -37312,7 +37312,7 @@ LEXICON  NUM_51yhdeksäsduodekiljoonas
 +Ord+Sg+Tra:nneksiduodekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäskahdeksatta
+LEXICON NUM_51yhdeksäskahdeksatta
 
 +Ord+Pl+Abe:nsittäkahdeksatta  NUM_BACK_CLIT_OPT  ;
 
@@ -37365,7 +37365,7 @@ LEXICON  NUM_51yhdeksäskahdeksatta
 +Ord+Sg+Tra:nneksikahdeksatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäskiljardis
+LEXICON NUM_51yhdeksäskiljardis
 
 +Ord+Pl+Abe:nsittäkiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -37420,7 +37420,7 @@ LEXICON  NUM_51yhdeksäskiljardis
 +Ord+Sg+Tra:nneksikiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäskiljoonas
+LEXICON NUM_51yhdeksäskiljoonas
 
 +Ord+Pl+Abe:nsittäkiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -37475,7 +37475,7 @@ LEXICON  NUM_51yhdeksäskiljoonas
 +Ord+Sg+Tra:nneksikiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäskolmatta
+LEXICON NUM_51yhdeksäskolmatta
 
 +Ord+Pl+Abe:nsittäkolmatta  NUM_BACK_CLIT_OPT  ;
 
@@ -37528,7 +37528,7 @@ LEXICON  NUM_51yhdeksäskolmatta
 +Ord+Sg+Tra:nneksikolmatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäskuudetta
+LEXICON NUM_51yhdeksäskuudetta
 
 +Ord+Pl+Abe:nsittäkuudetta  NUM_BACK_CLIT_OPT  ;
 
@@ -37581,7 +37581,7 @@ LEXICON  NUM_51yhdeksäskuudetta
 +Ord+Sg+Tra:nneksikuudetta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäskvadriljardis
+LEXICON NUM_51yhdeksäskvadriljardis
 
 +Ord+Pl+Abe:nsittäkvadriljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -37636,7 +37636,7 @@ LEXICON  NUM_51yhdeksäskvadriljardis
 +Ord+Sg+Tra:nneksikvadriljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäskvadriljoonas
+LEXICON NUM_51yhdeksäskvadriljoonas
 
 +Ord+Pl+Abe:nsittäkvadriljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -37691,7 +37691,7 @@ LEXICON  NUM_51yhdeksäskvadriljoonas
 +Ord+Sg+Tra:nneksikvadriljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäskvintiljardis
+LEXICON NUM_51yhdeksäskvintiljardis
 
 +Ord+Pl+Abe:nsittäkvintiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -37746,7 +37746,7 @@ LEXICON  NUM_51yhdeksäskvintiljardis
 +Ord+Sg+Tra:nneksikvintiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäskvintiljoonas
+LEXICON NUM_51yhdeksäskvintiljoonas
 
 +Ord+Pl+Abe:nsittäkvintiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -37801,7 +37801,7 @@ LEXICON  NUM_51yhdeksäskvintiljoonas
 +Ord+Sg+Tra:nneksikvintiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäskymmenes
+LEXICON NUM_51yhdeksäskymmenes
 
 +Ord+Pl+Abe:nsittäkymmenittä  NUM_FRONT_CLIT_OPT  ;
 
@@ -37856,7 +37856,7 @@ LEXICON  NUM_51yhdeksäskymmenes
 +Ord+Sg+Tra:nneksikymmeneksi  NUM_FRONT_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäsmiljardis
+LEXICON NUM_51yhdeksäsmiljardis
 
 +Ord+Pl+Abe:nsittämiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -37911,7 +37911,7 @@ LEXICON  NUM_51yhdeksäsmiljardis
 +Ord+Sg+Tra:nneksimiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäsmiljoonas
+LEXICON NUM_51yhdeksäsmiljoonas
 
 +Ord+Pl+Abe:nsittämiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -37966,7 +37966,7 @@ LEXICON  NUM_51yhdeksäsmiljoonas
 +Ord+Sg+Tra:nneksimiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäsneljästtä
+LEXICON NUM_51yhdeksäsneljästtä
 
 +Ord+Pl+Abe:nsittäneljättä  NUM_BACK_CLIT_OPT  ;
 
@@ -38019,7 +38019,7 @@ LEXICON  NUM_51yhdeksäsneljästtä
 +Ord+Sg+Tra:nneksineljättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäsnoniljardis
+LEXICON NUM_51yhdeksäsnoniljardis
 
 +Ord+Pl+Abe:nsittänoniljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -38074,7 +38074,7 @@ LEXICON  NUM_51yhdeksäsnoniljardis
 +Ord+Sg+Tra:nneksinoniljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäsnoniljoonas
+LEXICON NUM_51yhdeksäsnoniljoonas
 
 +Ord+Pl+Abe:nsittänoniljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -38129,7 +38129,7 @@ LEXICON  NUM_51yhdeksäsnoniljoonas
 +Ord+Sg+Tra:nneksinoniljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäsoktiljardis
+LEXICON NUM_51yhdeksäsoktiljardis
 
 +Ord+Pl+Abe:nsittäoktiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -38184,7 +38184,7 @@ LEXICON  NUM_51yhdeksäsoktiljardis
 +Ord+Sg+Tra:nneksioktiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäsoktiljoonas
+LEXICON NUM_51yhdeksäsoktiljoonas
 
 +Ord+Pl+Abe:nsittäoktiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -38239,7 +38239,7 @@ LEXICON  NUM_51yhdeksäsoktiljoonas
 +Ord+Sg+Tra:nneksioktiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäspiljardis
+LEXICON NUM_51yhdeksäspiljardis
 
 +Ord+Pl+Abe:nsittäpiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -38294,7 +38294,7 @@ LEXICON  NUM_51yhdeksäspiljardis
 +Ord+Sg+Tra:nneksipiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäspiljoonas
+LEXICON NUM_51yhdeksäspiljoonas
 
 +Ord+Pl+Abe:nsittäpiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -38349,7 +38349,7 @@ LEXICON  NUM_51yhdeksäspiljoonas
 +Ord+Sg+Tra:nneksipiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksässadas
+LEXICON NUM_51yhdeksässadas
 
 +Ord+Pl+Abe:nsittäsadoitta  NUM_BACK_CLIT_OPT  ;
 
@@ -38404,7 +38404,7 @@ LEXICON  NUM_51yhdeksässadas
 +Ord+Sg+Tra:nneksisadaksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksässeitsemättä
+LEXICON NUM_51yhdeksässeitsemättä
 
 +Ord+Pl+Abe:nsittäseitsemättä  NUM_BACK_CLIT_OPT  ;
 
@@ -38457,7 +38457,7 @@ LEXICON  NUM_51yhdeksässeitsemättä
 +Ord+Sg+Tra:nneksiseitsemättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksässentiljardis
+LEXICON NUM_51yhdeksässentiljardis
 
 +Ord+Pl+Abe:nsittäsentiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -38512,7 +38512,7 @@ LEXICON  NUM_51yhdeksässentiljardis
 +Ord+Sg+Tra:nneksisentiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksässentiljoonas
+LEXICON NUM_51yhdeksässentiljoonas
 
 +Ord+Pl+Abe:nsittäsentiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -38567,7 +38567,7 @@ LEXICON  NUM_51yhdeksässentiljoonas
 +Ord+Sg+Tra:nneksisentiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksässeptiljardis
+LEXICON NUM_51yhdeksässeptiljardis
 
 +Ord+Pl+Abe:nsittäseptiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -38622,7 +38622,7 @@ LEXICON  NUM_51yhdeksässeptiljardis
 +Ord+Sg+Tra:nneksiseptiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksässeptiljoonas
+LEXICON NUM_51yhdeksässeptiljoonas
 
 +Ord+Pl+Abe:nsittäseptiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -38677,7 +38677,7 @@ LEXICON  NUM_51yhdeksässeptiljoonas
 +Ord+Sg+Tra:nneksiseptiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksästoista
+LEXICON NUM_51yhdeksästoista
 
 +Ord+Pl+Abe:nsittätoista  NUM_BACK_CLIT_OPT  ;
 
@@ -38730,7 +38730,7 @@ LEXICON  NUM_51yhdeksästoista
 +Ord+Sg+Tra:nneksitoista  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksästredekiljardis
+LEXICON NUM_51yhdeksästredekiljardis
 
 +Ord+Pl+Abe:nsittätredekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -38785,7 +38785,7 @@ LEXICON  NUM_51yhdeksästredekiljardis
 +Ord+Sg+Tra:nneksitredekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksästredekiljoonas
+LEXICON NUM_51yhdeksästredekiljoonas
 
 +Ord+Pl+Abe:nsittätredekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -38840,7 +38840,7 @@ LEXICON  NUM_51yhdeksästredekiljoonas
 +Ord+Sg+Tra:nneksitredekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksästriljardis
+LEXICON NUM_51yhdeksästriljardis
 
 +Ord+Pl+Abe:nsittätriljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -38895,7 +38895,7 @@ LEXICON  NUM_51yhdeksästriljardis
 +Ord+Sg+Tra:nneksitriljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksästriljoonas
+LEXICON NUM_51yhdeksästriljoonas
 
 +Ord+Pl+Abe:nsittätriljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -38950,7 +38950,7 @@ LEXICON  NUM_51yhdeksästriljoonas
 +Ord+Sg+Tra:nneksitriljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksästsiljardis
+LEXICON NUM_51yhdeksästsiljardis
 
 +Ord+Pl+Abe:nsittätsiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -39005,7 +39005,7 @@ LEXICON  NUM_51yhdeksästsiljardis
 +Ord+Sg+Tra:nneksitsiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksästsiljoonas
+LEXICON NUM_51yhdeksästsiljoonas
 
 +Ord+Pl+Abe:nsittätsiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -39060,7 +39060,7 @@ LEXICON  NUM_51yhdeksästsiljoonas
 +Ord+Sg+Tra:nneksitsiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksästuhannes
+LEXICON NUM_51yhdeksästuhannes
 
 +Ord+Pl+Abe:nsittätuhansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -39115,7 +39115,7 @@ LEXICON  NUM_51yhdeksästuhannes
 +Ord+Sg+Tra:nneksituhanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäsundekiljardis
+LEXICON NUM_51yhdeksäsundekiljardis
 
 +Ord+Pl+Abe:nsittäundekiljardinsitta  NUM_BACK_CLIT_OPT  ;
 
@@ -39170,7 +39170,7 @@ LEXICON  NUM_51yhdeksäsundekiljardis
 +Ord+Sg+Tra:nneksiundekiljardinneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäsundekiljoonas
+LEXICON NUM_51yhdeksäsundekiljoonas
 
 +Ord+Pl+Abe:nsittäundekiljoonansitta  NUM_BACK_CLIT_OPT  ;
 
@@ -39225,7 +39225,7 @@ LEXICON  NUM_51yhdeksäsundekiljoonas
 +Ord+Sg+Tra:nneksiundekiljoonanneksi  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäsviidettä
+LEXICON NUM_51yhdeksäsviidettä
 
 +Ord+Pl+Abe:nsittäviidettä  NUM_BACK_CLIT_OPT  ;
 
@@ -39278,7 +39278,7 @@ LEXICON  NUM_51yhdeksäsviidettä
 +Ord+Sg+Tra:nneksiviidettä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeksäsyhdeksättä
+LEXICON NUM_51yhdeksäsyhdeksättä
 
 +Ord+Pl+Abe:nsittäyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
@@ -39331,7 +39331,7 @@ LEXICON  NUM_51yhdeksäsyhdeksättä
 +Ord+Sg+Tra:nneksiyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeskahdeksatta
+LEXICON NUM_51yhdeskahdeksatta
 
 +Ord+Pl+Abe:nsittäkahdeksatta  NUM_BACK_CLIT_OPT  ;
 
@@ -39384,7 +39384,7 @@ LEXICON  NUM_51yhdeskahdeksatta
 +Ord+Sg+Tra:nneksikahdeksatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeskolmatta
+LEXICON NUM_51yhdeskolmatta
 
 +Ord+Pl+Abe:nsittäkolmatta  NUM_BACK_CLIT_OPT  ;
 
@@ -39437,7 +39437,7 @@ LEXICON  NUM_51yhdeskolmatta
 +Ord+Sg+Tra:nneksikolmatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdeskuudetta
+LEXICON NUM_51yhdeskuudetta
 
 +Ord+Pl+Abe:nsittäkuudetta  NUM_BACK_CLIT_OPT  ;
 
@@ -39490,7 +39490,7 @@ LEXICON  NUM_51yhdeskuudetta
 +Ord+Sg+Tra:nneksikuudetta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdesneljästtä
+LEXICON NUM_51yhdesneljästtä
 
 +Ord+Pl+Abe:nsittäneljättä  NUM_BACK_CLIT_OPT  ;
 
@@ -39543,7 +39543,7 @@ LEXICON  NUM_51yhdesneljästtä
 +Ord+Sg+Tra:nneksineljättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdesseitsemättä
+LEXICON NUM_51yhdesseitsemättä
 
 +Ord+Pl+Abe:nsittäseitsemättä  NUM_BACK_CLIT_OPT  ;
 
@@ -39594,7 +39594,7 @@ LEXICON  NUM_51yhdesseitsemättä
 +Ord+Sg+Tra:nneksiseitsemättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdestoista
+LEXICON NUM_51yhdestoista
 
 +Ord+Pl+Abe:nsittätoista  NUM_BACK_CLIT_OPT  ;
 
@@ -39647,7 +39647,7 @@ LEXICON  NUM_51yhdestoista
 +Ord+Sg+Tra:nneksitoista  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdesviidettä
+LEXICON NUM_51yhdesviidettä
 
 +Ord+Pl+Abe:nsittäviidettä  NUM_BACK_CLIT_OPT  ;
 
@@ -39698,7 +39698,7 @@ LEXICON  NUM_51yhdesviidettä
 +Ord+Sg+Tra:nneksiviidettä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yhdesyhdeksättä
+LEXICON NUM_51yhdesyhdeksättä
 
 +Ord+Pl+Abe:nsittäyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
@@ -39751,7 +39751,7 @@ LEXICON  NUM_51yhdesyhdeksättä
 +Ord+Sg+Tra:nneksiyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yksikahdeksatta
+LEXICON NUM_51yksikahdeksatta
 
 +Pl+Abe:ksittäkahdeksatta  NUM_BACK_CLIT_OPT  ;
 
@@ -39804,7 +39804,7 @@ LEXICON  NUM_51yksikahdeksatta
 +Sg+Tra:hdeksikahdeksatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yksikolmatta
+LEXICON NUM_51yksikolmatta
 
 +Pl+Abe:ksittäkolmatta  NUM_BACK_CLIT_OPT  ;
 
@@ -39857,7 +39857,7 @@ LEXICON  NUM_51yksikolmatta
 +Sg+Tra:hdeksikolmatta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yksikuudetta
+LEXICON NUM_51yksikuudetta
 
 +Pl+Abe:ksittäkuudetta  NUM_BACK_CLIT_OPT  ;
 
@@ -39910,7 +39910,7 @@ LEXICON  NUM_51yksikuudetta
 +Sg+Tra:hdeksikuudetta  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yksineljättä
+LEXICON NUM_51yksineljättä
 
 +Pl+Abe:ksittäneljättä  NUM_BACK_CLIT_OPT  ;
 
@@ -39963,7 +39963,7 @@ LEXICON  NUM_51yksineljättä
 +Sg+Tra:hdeksineljättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yksiseitsemättä
+LEXICON NUM_51yksiseitsemättä
 
 +Pl+Abe:ksittäseitsemättä  NUM_BACK_CLIT_OPT  ;
 
@@ -40014,7 +40014,7 @@ LEXICON  NUM_51yksiseitsemättä
 +Sg+Tra:hdeksiseitsemättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yksitoista
+LEXICON NUM_51yksitoista
 
 +Pl+Abe:ksittätoista  NUM_BACK_CLIT_OPT  ;
 
@@ -40067,7 +40067,7 @@ LEXICON  NUM_51yksitoista
 +Sg+Tra:hdeksitoista  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yksiviidettä
+LEXICON NUM_51yksiviidettä
 
 +Pl+Abe:ksittäviidettä  NUM_BACK_CLIT_OPT  ;
 
@@ -40118,7 +40118,7 @@ LEXICON  NUM_51yksiviidettä
 +Sg+Tra:hdeksiviidettä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_51yksiyhdeksättä
+LEXICON NUM_51yksiyhdeksättä
 
 +Pl+Abe:ksittäyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
@@ -40171,35 +40171,35 @@ LEXICON  NUM_51yksiyhdeksättä
 +Sg+Tra:hdeksiyhdeksättä  NUM_BACK_CLIT_OPT  ;
 
 
-LEXICON  NUM_KOLMASOSA
+LEXICON NUM_KOLMASOSA
 
 :  N_VOIMA  ;
 
-LEXICON  NUM_VIITISEN
+LEXICON NUM_VIITISEN
 
 #:  NUMERAL  ;
 
 :  NUM_FRONT_NOMINATIVE  ;
 
 
-LEXICON  NUM_KUUTISEN
+LEXICON NUM_KUUTISEN
 
 #:  NUMERAL  ;
 
 :  NUM_BACK_NOMINATIVE  ;
 
-LEXICON  NUM_KYMMENTÄ
+LEXICON NUM_KYMMENTÄ
 
 #:  NUMERAL  ;
 
 +Sg+Nom:  #  ;
 +Sg+Nom:  NUM_BACK_CLIT  ;
 
-LEXICON  NUM_KYMMEN
+LEXICON NUM_KYMMEN
 
 :  NUM_FRONT_NOMINATIVE  ;
 
-LEXICON  NUM_KYMMENKUNTA
+LEXICON NUM_KYMMENKUNTA
 
 :na  NUM_BACK_WEAK_SINGULARS  ;
 
@@ -40216,7 +40216,7 @@ LEXICON  NUM_KYMMENKUNTA
 :t  NUM_BACK_GENITIVE_IEN  ;
 :t  NUM_BACK_ILLATIVE_IIN  ;
 
-LEXICON  NUM_PUOLI
+LEXICON NUM_PUOLI
 
 :e  NUM_BACK_SINGULARS  ;
 :e  NUM_BACK_ILLATIVE_EN  ;
