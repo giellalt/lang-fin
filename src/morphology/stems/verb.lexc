@@ -11773,7 +11773,7 @@ zoomata+V:zooma  V_ARVATA  ;
 
 !!  !Verb stems without stem variation
 
-LEXICON  V_KAUNISTUA
+LEXICON V_KAUNISTUA
 !!  The u stems have no stem variation:
 !!€gt-norm:  Verbs 52u
 !!€  kaunistua: kaunistua+V+Act+InfA+Sg+Lat # beautify
@@ -11804,7 +11804,7 @@ LEXICON  V_KAUNISTUA
 0:t  V_BACK_TUPCP_0  ;
 0  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_PUNOA
+LEXICON V_PUNOA
 !!  The o stems have no stem variation:
 !!€gt-norm:  Verbs 52o
 !!€  punoa: punoa+V+Act+InfA+Sg+Lat # bundle?
@@ -11835,7 +11835,7 @@ LEXICON  V_PUNOA
 0:t  V_BACK_TUPCP_0  ;
 0  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_SÄILÖÄ
+LEXICON V_SÄILÖÄ
 !!  The ö stems have no stem variation:
 !!€gt-norm:  Verbs 52ö
 !!€  säilöä: säilöä+V+Act+InfA+Sg+Lat # store
@@ -11866,7 +11866,7 @@ LEXICON  V_SÄILÖÄ
 0:t  V_FRONT_TUPCP_0  ;
 0  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_ÄLLISTYÄ
+LEXICON V_ÄLLISTYÄ
 !!  The y stems have no stem variation:
 !!€gt-norm:  Verbs 52y
 !!€  ällistyä: ällistyä+V+Act+InfA+Sg+Lat # amaze
@@ -11898,7 +11898,7 @@ LEXICON  V_ÄLLISTYÄ
 
 !!  !Verb stems with only gradation
 
-LEXICON  V_HAUKKOA
+LEXICON V_HAUKKOA
 !!€gt-norm:  Verbs 52 k~0 o
 !!€  haukkoa: haukkoa+V+Act+InfA+Sg+Lat # gasp
 0:ko  V_BACK_AINF  ;
@@ -11916,7 +11916,7 @@ LEXICON  V_HAUKKOA
 0:ot  V_BACK_TUPCP_0  ;
 0:ko  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_NUOKKUA
+LEXICON V_NUOKKUA
 !!€gt-norm:  Verbs 52 k~0 u
 !!€  nuokkua: nuokkua+V+Act+InfA+Sg+Lat # sleep
 0:ku  V_BACK_AINF  ;
@@ -11934,7 +11934,7 @@ LEXICON  V_NUOKKUA
 0:ut  V_BACK_TUPCP_0  ;
 0:ku  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_KÄRKKYÄ
+LEXICON V_KÄRKKYÄ
 !!€gt-norm:  Verbs 52 k~0 y
 !!€  kärkkyä: kärkkyä+V+Act+InfA+Sg+Lat # steal a base
 0:ky  V_FRONT_AINF  ;
@@ -11952,7 +11952,7 @@ LEXICON  V_KÄRKKYÄ
 0:yt  V_FRONT_TUPCP_0  ;
 0:ky  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_HARPPOA
+LEXICON V_HARPPOA
 !!€gt-norm:  Verbs 52 p~0 o
 !!€  harppoa: harppoa+V+Act+InfA+Sg+Lat # walk
 0:po  V_BACK_AINF  ;
@@ -11970,7 +11970,7 @@ LEXICON  V_HARPPOA
 0:ot  V_BACK_TUPCP_0  ;
 0:po  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_LOPPUA
+LEXICON V_LOPPUA
 !!€gt-norm:  Verbs 52 p~0 u
 !!€  loppua: loppua+V+Act+InfA+Sg+Lat # end
 0:pu  V_BACK_AINF  ;
@@ -11988,7 +11988,7 @@ LEXICON  V_LOPPUA
 0:ut  V_BACK_TUPCP_0  ;
 0:pu  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_LEPPYÄ
+LEXICON V_LEPPYÄ
 !!€gt-norm:  Verbs 52 p~0 y
 !!€  leppyä: leppyä+V+Act+InfA+Sg+Lat # settle
 0:py  V_FRONT_AINF  ;
@@ -12006,7 +12006,7 @@ LEXICON  V_LEPPYÄ
 0:yt  V_FRONT_TUPCP_0  ;
 0:py  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_KIVETTYÄ
+LEXICON V_KIVETTYÄ
 !!€gt-norm:  Verbs 52 t~0 y
 !!€  kivettyä: kivettyä+V+Act+InfA+Sg+Lat # stone
 0:ty  V_FRONT_AINF  ;
@@ -12024,7 +12024,7 @@ LEXICON  V_KIVETTYÄ
 0:yt  V_FRONT_TUPCP_0  ;
 0:ty  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_VIITTOA
+LEXICON V_VIITTOA
 !!€gt-norm:  Verbs 52 t~0 o
 !!€  viittoa: viittoa+V+Act+InfA+Sg+Lat # sign
 0:to  V_BACK_AINF  ;
@@ -12042,7 +12042,7 @@ LEXICON  V_VIITTOA
 0:tu  V_BACK_TUPCP_0  ;
 0:tu  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_HERMOTTUA
+LEXICON V_HERMOTTUA
 !!€gt-norm:  Verbs 52 t~0 u
 !!€  hermottua: hermottua+V+Act+InfA+Sg+Lat # nerve
 0:tu  V_BACK_AINF  ;
@@ -12060,7 +12060,7 @@ LEXICON  V_HERMOTTUA
 0:ut  V_BACK_TUPCP_0  ;
 0:tu  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_MÄIKYÄ
+LEXICON V_MÄIKYÄ
 !!€gt-norm:  Verbs 52 k~0’ y
 !!€  mäikyä: mäikyä+V+Act+InfA+Sg+Lat # bong
 0:ky  V_FRONT_AINF  ;
@@ -12078,7 +12078,7 @@ LEXICON  V_MÄIKYÄ
 0:yt  V_FRONT_TUPCP_0  ;
 0:ky  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_TAKOA
+LEXICON V_TAKOA
 !!€gt-norm:  Verbs 52 k~0’ o
 !!€  takoa: takoa+V+Act+InfA+Sg+Lat # hammer
 0:ko  V_BACK_AINF  ;
@@ -12096,7 +12096,7 @@ LEXICON  V_TAKOA
 0:ot  V_BACK_TUPCP_0  ;
 0:ko  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_MAUKUA
+LEXICON V_MAUKUA
 !!€gt-norm:  Verbs 52 k~0’ u
 !!€  maukua: maukua+V+Act+InfA+Sg+Lat # gong
 0:ku  V_BACK_AINF  ;
@@ -12114,7 +12114,7 @@ LEXICON  V_MAUKUA
 0:’ut  V_BACK_TUPCP_0  ;
 0:ku  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_ELPYÄ
+LEXICON V_ELPYÄ
 !!€gt-norm:  Verbs 52 p~v y
 !!€  elpyä: elpyä+V+Act+InfA+Sg+Lat # rescuscitate
 0:py  V_FRONT_AINF  ;
@@ -12132,7 +12132,7 @@ LEXICON  V_ELPYÄ
 0:vyt  V_FRONT_TUPCP_0  ;
 0:py  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_HIIPUA
+LEXICON V_HIIPUA
 !!€gt-norm:  Verbs 52 p~v u
 !!€  hiipua: hiipua+V+Act+InfA+Sg+Lat # fizzle
 0:pu  V_BACK_AINF  ;
@@ -12150,7 +12150,7 @@ LEXICON  V_HIIPUA
 0:vut  V_BACK_TUPCP_0  ;
 0:pu  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_SILPOA
+LEXICON V_SILPOA
 !!€gt-norm:  Verbs 52 p~v o
 !!€  silpoa: silpoa+V+Act+InfA+Sg+Lat # slash
 0:po  V_BACK_AINF  ;
@@ -12168,7 +12168,7 @@ LEXICON  V_SILPOA
 0:vot  V_BACK_TUPCP_0  ;
 0:po  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_KIETOA
+LEXICON V_KIETOA
 !!€gt-norm:  Verbs 52 t~d o
 !!€  kietoa: kietoa+V+Act+InfA+Sg+Lat # entangle
 0:to  V_BACK_AINF  ;
@@ -12186,7 +12186,7 @@ LEXICON  V_KIETOA
 0:dot  V_BACK_TUPCP_0  ;
 0:to  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_SILIYTYÄ
+LEXICON V_SILIYTYÄ
 !!€gt-norm:  Verbs 52 t~d y
 !!€  siliytyä: siliytyä+V+Act+InfA+Sg+Lat # iron
 0:ty  V_FRONT_AINF  ;
@@ -12204,7 +12204,7 @@ LEXICON  V_SILIYTYÄ
 0:dyt  V_FRONT_TUPCP_0  ;
 0:ty  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_ROHTUA
+LEXICON V_ROHTUA
 !!€gt-norm:  Verbs 52 t~d u
 !!€  rohtua: rohtua+V+Act+InfA+Sg+Lat # scar
 0:tu  V_BACK_AINF  ;
@@ -12222,7 +12222,7 @@ LEXICON  V_ROHTUA
 0:dut  V_BACK_TUPCP_0  ;
 0:tu  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_VINKUA
+LEXICON V_VINKUA
 !!€gt-norm:  Verbs 52 k~g u
 !!€  vinkua: vinkua+V+Act+InfA+Sg+Lat # squeal
 0:ku  V_BACK_AINF  ;
@@ -12240,7 +12240,7 @@ LEXICON  V_VINKUA
 0:gut  V_BACK_TUPCP_0  ;
 0:ku  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_PENKOA
+LEXICON V_PENKOA
 !!€gt-norm:  Verbs 52 k~g o
 !!€  penkoa: penkoa+V+Act+InfA+Sg+Lat # dig
 0:ko  V_BACK_AINF  ;
@@ -12258,7 +12258,7 @@ LEXICON  V_PENKOA
 0:got  V_BACK_TUPCP_0  ;
 0:ko  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_TEMPOA
+LEXICON V_TEMPOA
 !!€gt-norm:  Verbs 52 p~m o
 !!€  tempoa: tempoa+V+Act+InfA+Sg+Lat # tuck
 0:po  V_BACK_AINF  ;
@@ -12276,7 +12276,7 @@ LEXICON  V_TEMPOA
 0:mot  V_BACK_TUPCP_0  ;
 0:po  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_AMPUA
+LEXICON V_AMPUA
 !!€gt-norm:  Verbs 52 p~m u
 !!€  ampua: ampua+V+Act+InfA+Sg+Lat # shoot
 0:pu  V_BACK_AINF  ;
@@ -12294,7 +12294,7 @@ LEXICON  V_AMPUA
 0:mut  V_BACK_TUPCP_0  ;
 0:pu  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_MIELTYÄ
+LEXICON V_MIELTYÄ
 !!€gt-norm:  Verbs 52 t~l y
 !!€  mieltyä: mieltyä+V+Act+InfA+Sg+Lat # like
 0:ty  V_FRONT_AINF  ;
@@ -12312,7 +12312,7 @@ LEXICON  V_MIELTYÄ
 0:lyt  V_FRONT_TUPCP_0  ;
 0:ty  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_HUMALTUA
+LEXICON V_HUMALTUA
 !!€gt-norm:  Verbs 52 t~l u
 !!€  humaltua: humaltua+V+Act+InfA+Sg+Lat # intoxicate
 0:tu  V_BACK_AINF  ;
@@ -12330,7 +12330,7 @@ LEXICON  V_HUMALTUA
 0:lut  V_BACK_TUPCP_0  ;
 0:tu  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_VAKAANTUA
+LEXICON V_VAKAANTUA
 !!€gt-norm:  Verbs 52 t~n u
 !!€  vakaantua: vakaantua+V+Act+InfA+Sg+Lat # stabilise
 0:tu  V_BACK_AINF  ;
@@ -12348,7 +12348,7 @@ LEXICON  V_VAKAANTUA
 0:nut  V_BACK_TUPCP_0  ;
 0:tu  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_TYHJENTYÄ
+LEXICON V_TYHJENTYÄ
 !!€gt-norm:  Verbs 52 t~n y
 !!€  tyhjentyä: tyhjentyä+V+Act+InfA+Sg+Lat # empty
 0:ty  V_FRONT_AINF  ;
@@ -12366,7 +12366,7 @@ LEXICON  V_TYHJENTYÄ
 0:nyt  V_FRONT_TUPCP_0  ;
 0:ty  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_PYÖRTYÄ
+LEXICON V_PYÖRTYÄ
 !!€gt-norm:  Verbs 52 t~r y
 !!€  pyörtyä: pyörtyä+V+Act+InfA+Sg+Lat # faint
 0:ty  V_FRONT_AINF  ;
@@ -12384,7 +12384,7 @@ LEXICON  V_PYÖRTYÄ
 0:ryt  V_FRONT_TUPCP_0  ;
 0:ty  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_VARTOA
+LEXICON V_VARTOA
 !!€gt-norm:  Verbs 52 t~r o
 !!€  vartoa: vartoa+V+Act+InfA+Sg+Lat # wait
 0:to  V_BACK_AINF  ;
@@ -12402,7 +12402,7 @@ LEXICON  V_VARTOA
 0:rot  V_BACK_TUPCP_0  ;
 0:to  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_PUSERTUA
+LEXICON V_PUSERTUA
 !!€gt-norm:  Verbs 52 t~r u
 !!€  pusertua: pusertua+V+Act+InfA+Sg+Lat # squeeze
 0:tu  V_BACK_AINF  ;
@@ -12423,7 +12423,7 @@ LEXICON  V_PUSERTUA
 !!  !Verbs with -a stems
 !!  
 
-LEXICON  V_MUTRISTAA
+LEXICON V_MUTRISTAA
 !!€gt-norm:  Verbs 53 back
 !!€  mutristaa: mutristaa+V+Act+InfA+Sg+Lat # ?
 0:a  V_BACK_AINF  ;
@@ -12441,7 +12441,7 @@ LEXICON  V_MUTRISTAA
 0:et  V_BACK_TUPCP_0  ;
 0:a  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_KIVISTÄÄ
+LEXICON V_KIVISTÄÄ
 !!€gt-norm:  Verbs 53 front
 !!€  kivistää: kivistää+V+Act+InfA+Sg+Lat # hurt
 0:ä  V_FRONT_AINF  ;
@@ -12459,7 +12459,7 @@ LEXICON  V_KIVISTÄÄ
 0:et  V_FRONT_TUPCP_0  ;
 0:ä  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_RÄPSYTTÄÄ
+LEXICON V_RÄPSYTTÄÄ
 !!€gt-norm:  Verbs 53 front t~0
 !!€  räpsyttää: räpsyttää+V+Act+InfA+Sg+Lat # blink
 0:tä  V_FRONT_AINF  ;
@@ -12477,7 +12477,7 @@ LEXICON  V_RÄPSYTTÄÄ
 0:et  V_FRONT_TUPCP_0  ;
 0:tä  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_VIEROITTAA
+LEXICON V_VIEROITTAA
 !!€gt-norm:  Verbs 53 back t~0
 !!€  vieroittaa: vieroittaa+V+Act+InfA+Sg+Lat 
 0:ta  V_BACK_AINF  ;
@@ -12496,7 +12496,7 @@ LEXICON  V_VIEROITTAA
 0:ta  V_BACK_DERIV_PCPS  ;
 
 
-LEXICON  V_PURKAA
+LEXICON V_PURKAA
 !!€gt-norm:  Verbs 53 back k~0
 !!€  purkaa: purkaa+V+Act+InfA+Sg+Lat # tear
 0:ka  V_BACK_AINF  ;
@@ -12514,7 +12514,7 @@ LEXICON  V_PURKAA
 0:et  V_BACK_TUPCP_0  ;
 0:ka  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_YSKÄHTÄÄ
+LEXICON V_YSKÄHTÄÄ
 !!€gt-norm:  Verbs 53 front t~d
 !!€  kärähtää: kärähtää+V+Act+InfA+Sg+Lat # fry
 0:tä  V_FRONT_AINF  ;
@@ -12532,7 +12532,7 @@ LEXICON  V_YSKÄHTÄÄ
 0:det  V_FRONT_TUPCP_0  ;
 0:tä  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_MOJAHTAA
+LEXICON V_MOJAHTAA
 !!€gt-norm:  Verbs 53 back t~d
 !!€  mojahtaa: mojahtaa+V+Act+InfA+Sg+Lat # smack
 0:ta  V_BACK_AINF  ;
@@ -12550,7 +12550,7 @@ LEXICON  V_MOJAHTAA
 0:det  V_BACK_TUPCP_0  ;
 0:ta  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_KYNTÄÄ
+LEXICON V_KYNTÄÄ
 !!€gt-norm:  Verbs 53 front t~n
 !!€  kyntää: kyntää+V+Act+InfA+Sg+Lat # plow
 0:tä  V_FRONT_AINF  ;
@@ -12568,7 +12568,7 @@ LEXICON  V_KYNTÄÄ
 0:net  V_FRONT_TUPCP_0  ;
 0:tä  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_SORTAA
+LEXICON V_SORTAA
 !!€gt-norm:  Verbs 53 back t~r
 !!€  sortaa: sortaa+V+Act+InfA+Sg+Lat # crush
 0:ta  V_BACK_AINF  ;
@@ -12588,7 +12588,7 @@ LEXICON  V_SORTAA
 
 !!  Some of the a stems have t:s in past stems by ti>si variation.
 
-LEXICON  V_HUUTAA
+LEXICON V_HUUTAA
 !!€gt-norm:  Verbs 54 back
 !!€  huutaa: huutaa+V+Act+InfA+Sg+Lat # yell
 0:ta  V_BACK_AINF  ;
@@ -12606,7 +12606,7 @@ LEXICON  V_HUUTAA
 0:det  V_BACK_TUPCP_0  ;
 0:ta  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_PYYTÄÄ
+LEXICON V_PYYTÄÄ
 !!€gt-norm:  Verbs 54 front
 !!€  pyytää: pyytää+V+Act+InfA+Sg+Lat # aks
 0:tä  V_FRONT_AINF  ;
@@ -12624,7 +12624,7 @@ LEXICON  V_PYYTÄÄ
 0:det  V_FRONT_TUPCP_0  ;
 0:tä  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_SIVALTAA
+LEXICON V_SIVALTAA
 !!€gt-norm:  Verbs 54 back t~l
 !!€  sivaltaa: sivaltaa+V+Act+InfA+Sg+Lat # slash
 0:ta  V_BACK_AINF  ;
@@ -12642,7 +12642,7 @@ LEXICON  V_SIVALTAA
 0:let  V_BACK_TUPCP_0  ;
 0:ta  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_VIHELTÄÄ
+LEXICON V_VIHELTÄÄ
 !!€gt-norm:  Verbs 54 front t~l
 !!€  viheltää: viheltää+V+Act+InfA+Sg+Lat # whistle
 0:tä  V_FRONT_AINF  ;
@@ -12660,7 +12660,7 @@ LEXICON  V_VIHELTÄÄ
 0:let  V_FRONT_TUPCP_0  ;
 0:tä  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_HIVENTÄÄ
+LEXICON V_HIVENTÄÄ
 !!€gt-norm:  Verbs 54 front t~n
 !!€  hiventää: hiventää+V+Act+InfA+Sg+Lat 
 0:tä  V_FRONT_AINF  ;
@@ -12678,7 +12678,7 @@ LEXICON  V_HIVENTÄÄ
 0:net  V_FRONT_TUPCP_0  ;
 0:tä  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_HUONONTAA
+LEXICON V_HUONONTAA
 !!€gt-norm:  Verbs 54 back t~n
 !!€  huonontaa: huonontaa+V+Act+InfA+Sg+Lat # worsen
 0:ta  V_BACK_AINF  ;
@@ -12696,7 +12696,7 @@ LEXICON  V_HUONONTAA
 0:net  V_BACK_TUPCP_0  ;
 0:ta  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_KUHERTAA
+LEXICON V_KUHERTAA
 !!€gt-norm:  Verbs 54 back t~r
 !!€  kuhertaa: kuhertaa+V+Act+InfA+Sg+Lat # snuggle
 0:ta  V_BACK_AINF  ;
@@ -12714,7 +12714,7 @@ LEXICON  V_KUHERTAA
 0:ret  V_BACK_TUPCP_0  ;
 0:ta  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_NÄPERTÄÄ
+LEXICON V_NÄPERTÄÄ
 !!€gt-norm:  Verbs 54 front t~r
 !!€  näpertää: näpertää+V+Act+InfA+Sg+Lat # twiddle
 0:tä  V_FRONT_AINF  ;
@@ -12736,7 +12736,7 @@ LEXICON  V_NÄPERTÄÄ
 !!  In some cases t:s variation is optionally alongside the regular gradation:
 
 
-LEXICON  V_KIITÄÄ
+LEXICON V_KIITÄÄ
 !!€gt-norm:  Verbs 55 front
 !!€  kiitää: kiitää+V+Act+InfA+Sg+Lat # rush
 0:tä  V_FRONT_AINF  ;
@@ -12756,7 +12756,7 @@ LEXICON  V_KIITÄÄ
 0:det  V_FRONT_TUPCP_0  ;
 0:tä  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_JOUTAA
+LEXICON V_JOUTAA
 !!€gt-norm:  Verbs 55 back
 !!€  joutaa: joutaa+V+Act+InfA+Sg+Lat 
 0:ta  V_BACK_AINF  ;
@@ -12776,7 +12776,7 @@ LEXICON  V_JOUTAA
 0:det  V_BACK_TUPCP_0  ;
 0:ta  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_YLTÄÄ
+LEXICON V_YLTÄÄ
 !!€gt-norm:  Verbs 55 front t~l
 !!€  yltää: yltää+V+Act+InfA+Sg+Lat # reach
 0:tä  V_FRONT_AINF  ;
@@ -12796,7 +12796,7 @@ LEXICON  V_YLTÄÄ
 0:let  V_FRONT_TUPCP_0  ;
 0:tä  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_ENTÄÄ
+LEXICON V_ENTÄÄ
 !!€gt-norm:  Verbs 55 front t~n
 !!€  entää: entää+V+Act+InfA+Sg+Lat 
 0:tä  V_FRONT_AINF  ;
@@ -12818,7 +12818,7 @@ LEXICON  V_ENTÄÄ
 
 !!  Other a stems undergo a:o variation
 
-LEXICON  V_KASVAA
+LEXICON V_KASVAA
 !!€gt-norm:  Verbs 56 back
 !!€  kasvaa: kasvaa+V+Act+InfA+Sg+Lat # grow
 0:a  V_BACK_AINF  ;
@@ -12836,7 +12836,7 @@ LEXICON  V_KASVAA
 0:et  V_BACK_TUPCP_0  ;
 0:a  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_VIRKKAA
+LEXICON V_VIRKKAA
 !!€gt-norm:  Verbs 56 back k~0
 !!€  jakaa: jakaa+V+Act+InfA+Sg+Lat # share
 0:ka  V_BACK_AINF  ;
@@ -12854,7 +12854,7 @@ LEXICON  V_VIRKKAA
 0:et  V_BACK_TUPCP_0  ;
 0:ka  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_TAPPAA
+LEXICON V_TAPPAA
 !!€gt-norm:  Verbs 56 back p~0
 !!€  tappaa: tappaa+V+Act+InfA+Sg+Lat # kill
 0:pa  V_BACK_AINF  ;
@@ -12872,7 +12872,7 @@ LEXICON  V_TAPPAA
 0:et  V_BACK_TUPCP_0  ;
 0:pa  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_AUTTAA
+LEXICON V_AUTTAA
 !!€gt-norm:  Verbs 56 back t~0
 !!€  auttaa: auttaa+V+Act+InfA+Sg+Lat # help
 0:ta  V_BACK_AINF  ;
@@ -12890,7 +12890,7 @@ LEXICON  V_AUTTAA
 0:et  V_BACK_TUPCP_0  ;
 0:ta  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_SATAA
+LEXICON V_SATAA
 !!€gt-norm:  Verbs 56 back t~d
 !!€  sataa: sataa+V+Act+InfA+Sg+Lat # rain
 0:ta  V_BACK_AINF  ;
@@ -12908,7 +12908,7 @@ LEXICON  V_SATAA
 0:det  V_BACK_TUPCP_0  ;
 0:ta  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_KANTAA
+LEXICON V_KANTAA
 !!€gt-norm:  Verbs 56 back t~n
 !!€  kantaa: kantaa+V+Act+InfA+Sg+Lat # carry
 0:ta  V_BACK_AINF  ;
@@ -12928,7 +12928,7 @@ LEXICON  V_KANTAA
 
 !!  In some of the a:o variations the t:s variant is also possible.
 
-LEXICON  V_KAATAA
+LEXICON V_KAATAA
 !!€gt-norm:  Verbs 57 back
 !!€  kaataa: kaataa+V+Act+InfA+Sg+Lat # pour
 0:ta  V_BACK_AINF  ;
@@ -12948,7 +12948,7 @@ LEXICON  V_KAATAA
 0:det  V_BACK_TUPCP_0  ;
 0:ta  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_SAARTAA
+LEXICON V_SAARTAA
 !!€gt-norm:  Verbs 57 back t~r
 !!€  saartaa: saartaa+V+Act+InfA+Sg+Lat # surround
 0:ta  V_BACK_AINF  ;
@@ -12970,7 +12970,7 @@ LEXICON  V_SAARTAA
 
 !!  !Verbs with e stems
 
-LEXICON  V_KYTKEÄ
+LEXICON V_KYTKEÄ
 !!€gt-norm:  Verbs 58 front
 !!€  kytkeä: kytkeä+V+Act+InfA+Sg+Lat # switch
 0:e  V_FRONT_AINF  ;
@@ -12988,7 +12988,7 @@ LEXICON  V_KYTKEÄ
 0:et  V_FRONT_TUPCP_0  ;
 0:e  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_SOTKEA
+LEXICON V_SOTKEA
 !!€gt-norm:  Verbs 58 back
 !!€  sotkea: sotkea+V+Act+InfA+Sg+Lat # mess
 0:e  V_BACK_AINF  ;
@@ -13006,7 +13006,7 @@ LEXICON  V_SOTKEA
 0:et  V_BACK_TUPCP_0  ;
 0:e  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_PUKEA
+LEXICON V_PUKEA
 !!€gt-norm:  Verbs 58 back k~0
 !!€  pukea: pukea+V+Act+InfA+Sg+Lat # dress
 0:ke  V_BACK_AINF  ;
@@ -13024,7 +13024,7 @@ LEXICON  V_PUKEA
 0:et  V_BACK_TUPCP_0  ;
 0:ke  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_RYPEÄ
+LEXICON V_RYPEÄ
 !!€gt-norm:  Verbs 58 front p~v
 !!€  rypeä: rypeä+V+Act+InfA+Sg+Lat # bathe
 0:pe  V_FRONT_AINF  ;
@@ -13042,7 +13042,7 @@ LEXICON  V_RYPEÄ
 0:vet  V_FRONT_TUPCP_0  ;
 0:pe  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_PÄTEÄ
+LEXICON V_PÄTEÄ
 !!€gt-norm:  Verbs 58 front t~d
 !!€  päteä: päteä+V+Act+InfA+Sg+Lat # nitpick
 0:te  V_FRONT_AINF  ;
@@ -13060,7 +13060,7 @@ LEXICON  V_PÄTEÄ
 0:det  V_FRONT_TUPCP_0  ;
 0:te  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_KUTEA
+LEXICON V_KUTEA
 !!€gt-norm:  Verbs 58 back t~d
 !!€  kutea: kutea+V+Act+InfA+Sg+Lat # breed
 0:te  V_BACK_AINF  ;
@@ -13078,7 +13078,7 @@ LEXICON  V_KUTEA
 0:det  V_BACK_TUPCP_0  ;
 0:te  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_TUNKEA
+LEXICON V_TUNKEA
 !!€gt-norm:  Verbs 58 back k~g
 !!€  tunkea: tunkea+V+Act+InfA+Sg+Lat # push
 0:ke  V_BACK_AINF  ;
@@ -13096,7 +13096,7 @@ LEXICON  V_TUNKEA
 0:get  V_BACK_TUPCP_0  ;
 0:ke  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_POLKEA
+LEXICON V_POLKEA
 !!€gt-norm:  Verbs 58 back k~j
 !!€  polkea: polkea+V+Act+InfA+Sg+Lat # stomp
 0:ke  V_BACK_AINF  ;
@@ -13114,7 +13114,7 @@ LEXICON  V_POLKEA
 0:jet  V_BACK_TUPCP_0  ;
 0:ke  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_SÄRKEÄ
+LEXICON V_SÄRKEÄ
 !!€gt-norm:  Verbs 58 front k~j
 !!€  särkeä: särkeä+V+Act+InfA+Sg+Lat # break
 0:ke  V_FRONT_AINF  ;
@@ -13134,7 +13134,7 @@ LEXICON  V_SÄRKEÄ
 
 !!  Some of the e stems allow for optional t:s variation in past form.
 
-LEXICON  V_TUNTEA
+LEXICON V_TUNTEA
 !!€gt-norm:  Verbs 59
 !!€  tuntea: tuntea+V+Act+InfA+Sg+Lat # feel
 0:te  V_BACK_AINF  ;
@@ -13154,7 +13154,7 @@ LEXICON  V_TUNTEA
 
 !!  The rare ht:ks kind of variation is also possible.
 
-LEXICON  V_LÄHTEÄ
+LEXICON V_LÄHTEÄ
 !!€gt-norm:  Verbs 60
 !!€  lähteä: lähteä+V+Act+InfA+Sg+Lat # go
 0:hte  V_FRONT_AINF  ;
@@ -13176,7 +13176,7 @@ LEXICON  V_LÄHTEÄ
 
 !!  !Verbs with i stems
 
-LEXICON  V_KOSIA
+LEXICON V_KOSIA
 !!€gt-norm:  Verbs 61 back
 !!€  kosia: kosia+V+Act+InfA+Sg+Lat # propose
 0:i  V_BACK_AINF  ;
@@ -13194,7 +13194,7 @@ LEXICON  V_KOSIA
 0:it  V_BACK_TUPCP_0  ;
 0:i  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_RYSKIÄ
+LEXICON V_RYSKIÄ
 !!€gt-norm:  Verbs 61 front
 !!€  ryskiä: ryskiä+V+Act+InfA+Sg+Lat # crash
 0:i  V_FRONT_AINF  ;
@@ -13212,7 +13212,7 @@ LEXICON  V_RYSKIÄ
 0:it  V_FRONT_TUPCP_0  ;
 0:i  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_KUKKIA
+LEXICON V_KUKKIA
 !!€gt-norm:  Verbs 61 back k~0
 !!€  kukkia: kukkia+V+Act+InfA+Sg+Lat # bloom
 0:ki  V_BACK_AINF  ;
@@ -13230,7 +13230,7 @@ LEXICON  V_KUKKIA
 0:it  V_BACK_TUPCP_0  ;
 0:ki  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_SÖRKKIÄ
+LEXICON V_SÖRKKIÄ
 !!€gt-norm:  Verbs 61 front k~0
 !!€  sörkkiä: sörkkiä+V+Act+InfA+Sg+Lat # meddle
 0:ki  V_FRONT_AINF  ;
@@ -13248,7 +13248,7 @@ LEXICON  V_SÖRKKIÄ
 0:it  V_FRONT_TUPCP_0  ;
 0:ki  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_KALPPIA
+LEXICON V_KALPPIA
 !!€gt-norm:  Verbs 61 back p~0
 !!€  kalppia: kalppia+V+Act+InfA+Sg+Lat 
 0:pi  V_BACK_AINF  ;
@@ -13266,7 +13266,7 @@ LEXICON  V_KALPPIA
 0:it  V_BACK_TUPCP_0  ;
 0:pi  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_HYPPIÄ
+LEXICON V_HYPPIÄ
 !!€gt-norm:  Verbs 61 front p~0
 !!€  hyppiä: hyppiä+V+Act+InfA+Sg+Lat # jump
 0:pi  V_FRONT_AINF  ;
@@ -13284,7 +13284,7 @@ LEXICON  V_HYPPIÄ
 0:it  V_FRONT_TUPCP_0  ;
 0:pi  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_MOITTIA
+LEXICON V_MOITTIA
 !!€gt-norm:  Verbs 61 back t~0
 !!€  moittia: moittia+V+Act+InfA+Sg+Lat 
 0:ti  V_BACK_AINF  ;
@@ -13302,7 +13302,7 @@ LEXICON  V_MOITTIA
 0:it  V_BACK_TUPCP_0  ;
 0:ti  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_MIETTIÄ
+LEXICON V_MIETTIÄ
 !!€gt-norm:  Verbs 61 front t~0
 !!€  miettiä: miettiä+V+Act+InfA+Sg+Lat # ponder
 0:ti  V_FRONT_AINF  ;
@@ -13320,7 +13320,7 @@ LEXICON  V_MIETTIÄ
 0:it  V_FRONT_TUPCP_0  ;
 0:ti  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_RIIPIÄ
+LEXICON V_RIIPIÄ
 !!€gt-norm:  Verbs 61 front p~v
 !!€  riipiä: riipiä+V+Act+InfA+Sg+Lat # pull
 0:pi  V_FRONT_AINF  ;
@@ -13338,7 +13338,7 @@ LEXICON  V_RIIPIÄ
 0:vit  V_FRONT_TUPCP_0  ;
 0:pi  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_RAAPIA
+LEXICON V_RAAPIA
 !!€gt-norm:  Verbs 61 back p~v
 !!€  raapia: raapia+V+Act+InfA+Sg+Lat # scratch
 0:pi  V_BACK_AINF  ;
@@ -13356,7 +13356,7 @@ LEXICON  V_RAAPIA
 0:vit  V_BACK_TUPCP_0  ;
 0:pi  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_AHNEHTIA
+LEXICON V_AHNEHTIA
 !!€gt-norm:  Verbs 61 back t~d
 !!€  ahnehtia: ahnehtia+V+Act+InfA+Sg+Lat # greed
 0:ti  V_BACK_AINF  ;
@@ -13374,7 +13374,7 @@ LEXICON  V_AHNEHTIA
 0:dit  V_BACK_TUPCP_0  ;
 0:ti  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_EHTIÄ
+LEXICON V_EHTIÄ
 !!€gt-norm:  Verbs 61 front t~d
 !!€  ehtiä: ehtiä+V+Act+InfA+Sg+Lat 
 0:ti  V_FRONT_AINF  ;
@@ -13392,7 +13392,7 @@ LEXICON  V_EHTIÄ
 0:dit  V_FRONT_TUPCP_0  ;
 0:ti  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_MÖNKIÄ
+LEXICON V_MÖNKIÄ
 !!€gt-norm:  Verbs 61 front k~g
 !!€  mönkiä: mönkiä+V+Act+InfA+Sg+Lat # crawl
 0:ki  V_FRONT_AINF  ;
@@ -13410,7 +13410,7 @@ LEXICON  V_MÖNKIÄ
 0:git  V_FRONT_TUPCP_0  ;
 0:ki  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_ONKIA
+LEXICON V_ONKIA
 !!€gt-norm:  Verbs 61 back k~g
 !!€  onkia: onkia+V+Act+InfA+Sg+Lat # fish
 0:ki  V_BACK_AINF  ;
@@ -13428,7 +13428,7 @@ LEXICON  V_ONKIA
 0:git  V_BACK_TUPCP_0  ;
 0:ki  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_TYMPIÄ
+LEXICON V_TYMPIÄ
 !!€gt-norm:  Verbs 61 frontp~m
 !!€  tympiä: tympiä+V+Act+InfA+Sg+Lat # bore
 0:pi  V_FRONT_AINF  ;
@@ -13446,7 +13446,7 @@ LEXICON  V_TYMPIÄ
 0:mit  V_FRONT_TUPCP_0  ;
 0:pi  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_KONTIA
+LEXICON V_KONTIA
 !!€gt-norm:  Verbs 61 back t~n
 !!€  kontia: kontia+V+Act+InfA+Sg+Lat # mole
 0:ti  V_BACK_AINF  ;
@@ -13464,7 +13464,7 @@ LEXICON  V_KONTIA
 0:nit  V_BACK_TUPCP_0  ;
 0:ti  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_HYLKIÄ
+LEXICON V_HYLKIÄ
 !!€gt-norm:  Verbs 61 back k~j
 !!€  hylkiä: hylkiä+V+Act+InfA+Sg+Lat # reject
 0:ki  V_FRONT_AINF  ;
@@ -13485,7 +13485,7 @@ LEXICON  V_HYLKIÄ
 !!  !Verbs with long vowel stem
 !!  These verbs also have da variant of a infinitive forms.
 
-LEXICON  V_KOPIOIDA
+LEXICON V_KOPIOIDA
 !!€gt-norm:  Verbs 62 back
 !!€  kopioida: kopioida+V+Act+InfA+Sg+Lat # copy
 0:id  V_BACK_AINF  ;
@@ -13504,7 +13504,7 @@ LEXICON  V_KOPIOIDA
 0:i  V_BACK_DERIV_PCPS  ;
 !0:i  V_BACK_DERIV_NTI  ;
 
-LEXICON  V_ÖYKKÄRÖIDÄ
+LEXICON V_ÖYKKÄRÖIDÄ
 !!€gt-norm:  Verbs 62 front
 !!€  öykkäröidä: öykkäröidä+V+Act+InfA+Sg+Lat # bully
 0:id  V_FRONT_AINF  ;
@@ -13523,7 +13523,7 @@ LEXICON  V_ÖYKKÄRÖIDÄ
 0:i  V_FRONT_DERIV_PCPS  ;
 !0:i  V_FRONT_DERIV_NTI  ;
 
-LEXICON  V_SAADA
+LEXICON V_SAADA
 !!€gt-norm:  Verbs 63 a
 !!€  saada: saada+V+Act+InfA+Sg+Lat # get
 0:ad  V_BACK_AINF  ;
@@ -13542,7 +13542,7 @@ LEXICON  V_SAADA
 0:a  V_BACK_DERIV_PCPS  ;
 !0:a  V_BACK_DERIV_NTI  ;
 
-LEXICON  V_MYYDÄ
+LEXICON V_MYYDÄ
 !!€gt-norm:  Verbs 63 y
 !!€  myydä: myydä+V+Act+InfA+Sg+Lat # sell
 0:yd  V_FRONT_AINF  ;
@@ -13561,7 +13561,7 @@ LEXICON  V_MYYDÄ
 0:y  V_FRONT_DERIV_PCPS  ;
 !0:y  V_FRONT_DERIV_NTI  ;
 
-LEXICON  V_JÄÄDÄ
+LEXICON V_JÄÄDÄ
 !!€gt-norm:  Verbs 63 ä
 !!€  jäädä: jäädä+V+Act+InfA+Sg+Lat # stay
 0:äd  V_FRONT_AINF  ;
@@ -13584,7 +13584,7 @@ LEXICON  V_JÄÄDÄ
 !!  Widening diphthongs are simplified before past and conditional suffix i's
 !!  by removal of first component. 
 
-LEXICON  V_VIEDÄ
+LEXICON V_VIEDÄ
 !!€gt-norm:  Verbs 64 ie
 !!€  viedä: viedä+V+Act+InfA+Sg+Lat # take
 0:ied  V_FRONT_AINF  ;
@@ -13603,7 +13603,7 @@ LEXICON  V_VIEDÄ
 0:ie  V_FRONT_DERIV_PCPS  ;
 !0:ie  V_FRONT_DERIV_NTI  ;
 
-LEXICON  V_TUODA
+LEXICON V_TUODA
 !!€gt-norm:  Verbs 64 uo
 !!€  tuoda: tuoda+V+Act+InfA+Sg+Lat # bring
 0:uod  V_BACK_AINF  ;
@@ -13622,7 +13622,7 @@ LEXICON  V_TUODA
 0:uo  V_BACK_DERIV_PCPS  ;
 !0:uo  V_BACK_DERIV_NTI  ;
 
-LEXICON  V_SYÖDÄ
+LEXICON V_SYÖDÄ
 !!€gt-norm:  Verbs 64 yö
 !!€  syödä: syödä+V+Act+InfA+Sg+Lat # eat
 0:yöd  V_FRONT_AINF  ;
@@ -13644,7 +13644,7 @@ LEXICON  V_SYÖDÄ
 !!  In past and conditional forms of käydä, the glide before suffix is marked
 !!  even in normative orthography.
 
-LEXICON  V_KÄYDÄ
+LEXICON V_KÄYDÄ
 !!€gt-norm:  Verbs 65
 !!€  käydä: käydä+V+Act+InfA+Sg+Lat # visit, go for
 0:yd  V_FRONT_AINF  ;
@@ -13667,7 +13667,7 @@ LEXICON  V_KÄYDÄ
 
 !!  Verbs with momentane derivation are common consonant stems.
 
-LEXICON  V_MARISTA
+LEXICON V_MARISTA
 !!€gt-norm:  Verbs 66 back
 !!€  marista: marista+V+Act+InfA+Sg+Lat # whine
 0:t  V_BACK_AINF  ;
@@ -13685,7 +13685,7 @@ LEXICON  V_MARISTA
 0  V_BACK_TUPCP_STRONG  ;
 0:e  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_ÄRISTÄ
+LEXICON V_ÄRISTÄ
 !!€gt-norm:  Verbs 66 front
 !!€  äristä: äristä+V+Act+InfA+Sg+Lat # arr
 0:t  V_FRONT_AINF  ;
@@ -13704,7 +13704,7 @@ LEXICON  V_ÄRISTÄ
 0:e  V_FRONT_DERIV_PCPS  ;
 
 
-LEXICON  V_HÄVÄISTÄ
+LEXICON V_HÄVÄISTÄ
 !!€gt-norm:  Verbs 66 front v p
 !!€  häväistä: häväistä+V+Act+InfA+Sg+Lat # sacrilege
 0:väist  V_FRONT_AINF  ;
@@ -13722,7 +13722,7 @@ LEXICON  V_HÄVÄISTÄ
 0:väis  V_FRONT_TUPCP_STRONG  ;
 0:päise  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_VAVISTA
+LEXICON V_VAVISTA
 !!€gt-norm:  Verbs 66 back v~p
 !!€  vavista: vavista+V+Act+InfA+Sg+Lat # shake
 0:vist  V_BACK_AINF  ;
@@ -13742,7 +13742,7 @@ LEXICON  V_VAVISTA
 :vis  V_BACK_OPTATIVE_S_ARCHAIC  ;
 
 
-LEXICON  V_RANGAISTA
+LEXICON V_RANGAISTA
 !!€gt-norm:  Verbs 66 back k~g
 !!€  rangaista: rangaista+V+Act+InfA+Sg+Lat # punish
 0:gaist  V_BACK_AINF  ;
@@ -13763,7 +13763,7 @@ LEXICON  V_RANGAISTA
 !!  !Verbs with n, r, l, s stems
 !!  Notably, the a infinitive forms d assimilates to preceding consonant.
 
-LEXICON  V_SURRA
+LEXICON V_SURRA
 !!€gt-norm:  Verbs 67 back r
 !!€  surra: surra+V+Act+InfA+Sg+Lat # meh
 0:r  V_BACK_AINF  ;
@@ -13784,7 +13784,7 @@ LEXICON  V_SURRA
 :r  V_BACK_OPTATIVE_R_ARCHAIC  ;
 
 
-LEXICON  V_PIERRÄ
+LEXICON V_PIERRÄ
 !!€gt-norm:  Verbs 67 front r
 !!€  pierrä: pierrä+V+Act+InfA+Sg+Lat # fart
 0:r  V_FRONT_AINF  ;
@@ -13803,7 +13803,7 @@ LEXICON  V_PIERRÄ
 0:e  V_FRONT_DERIV_PCPS  ;
 :r  V_FRONT_OPTATIVE_R_ARCHAIC  ;
 
-LEXICON  V_PANNA
+LEXICON V_PANNA
 !!€gt-norm:  Verbs 67 back n
 !!€  panna: panna+V+Act+InfA+Sg+Lat # put
 0:n  V_BACK_AINF  ;
@@ -13821,7 +13821,7 @@ LEXICON  V_PANNA
 0  V_BACK_TUPCP_N  ;
 0:e  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_MENNÄ
+LEXICON V_MENNÄ
 !!€gt-norm:  Verbs 67 front n
 !!€  mennä: mennä+V+Act+InfA+Sg+Lat # go
 0:n  V_FRONT_AINF  ;
@@ -13841,7 +13841,7 @@ LEXICON  V_MENNÄ
 
 !!  Frequentative derivations are most common source of l stemmed verbs.
 
-LEXICON  V_VASTAILLA
+LEXICON V_VASTAILLA
 !!€gt-norm:  Verbs 67 back l
 !!€  vastailla: vastailla+V+Act+InfA+Sg+Lat # answer
 0:l  V_BACK_AINF  ;
@@ -13859,7 +13859,7 @@ LEXICON  V_VASTAILLA
 0  V_BACK_TUPCP_L  ;
 0:e  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_ÄKSYILLÄ
+LEXICON V_ÄKSYILLÄ
 !!€gt-norm:  Verbs 67 frot l
 !!€  äksyillä: äksyillä+V+Act+InfA+Sg+Lat 
 0:l  V_FRONT_AINF  ;
@@ -13877,7 +13877,7 @@ LEXICON  V_ÄKSYILLÄ
 0  V_FRONT_TUPCP_L  ;
 0:e  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_LEIKELLÄ
+LEXICON V_LEIKELLÄ
 !!€gt-norm:  Verbs 67 front l 0k
 !!€  leikellä: leikellä+V+Act+InfA+Sg+Lat # cut
 0:ell  V_FRONT_AINF  ;
@@ -13895,7 +13895,7 @@ LEXICON  V_LEIKELLÄ
 0:el  V_FRONT_TUPCP_L  ;
 0:kele  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_NAKELLA
+LEXICON V_NAKELLA
 !!€gt-norm:  Verbs 67 back l 0k
 !!€  nakella: nakella+V+Act+InfA+Sg+Lat # throw
 0:ell  V_BACK_AINF  ;
@@ -13913,7 +13913,7 @@ LEXICON  V_NAKELLA
 0:el  V_BACK_TUPCP_L  ;
 0:kele  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_TAPELLA
+LEXICON V_TAPELLA
 !!€gt-norm:  Verbs 67 back l 0p
 !!€  tapella: tapella+V+Act+InfA+Sg+Lat # fight
 0:ell  V_BACK_AINF  ;
@@ -13931,7 +13931,7 @@ LEXICON  V_TAPELLA
 0:el  V_BACK_TUPCP_L  ;
 0:pele  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_HYPELLÄ
+LEXICON V_HYPELLÄ
 !!€gt-norm:  Verbs 67 front l 0p
 !!€  hypellä: hypellä+V+Act+InfA+Sg+Lat # jump
 0:ell  V_FRONT_AINF  ;
@@ -13949,7 +13949,7 @@ LEXICON  V_HYPELLÄ
 0:el  V_FRONT_TUPCP_L  ;
 0:pele  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_SULATELLA
+LEXICON V_SULATELLA
 !!€gt-norm:  Verbs 67 back l 0t
 !!€  sulatella: sulatella+V+Act+InfA+Sg+Lat # melt
 0:ell  V_BACK_AINF  ;
@@ -13967,7 +13967,7 @@ LEXICON  V_SULATELLA
 0:el  V_BACK_TUPCP_L  ;
 0:tele  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_HERÄTELLÄ
+LEXICON V_HERÄTELLÄ
 !!€gt-norm:  Verbs 67 front l 0t
 !!€  herätellä: herätellä+V+Act+InfA+Sg+Lat # wake
 0:ell  V_FRONT_AINF  ;
@@ -13985,7 +13985,7 @@ LEXICON  V_HERÄTELLÄ
 0:el  V_FRONT_TUPCP_L  ;
 0:tele  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_TIPAHDELLA
+LEXICON V_TIPAHDELLA
 !!€gt-norm:  Verbs 67 back l d~t
 !!€  tipahdella: tipahdella+V+Act+InfA+Sg+Lat # drop
 0:dell  V_BACK_AINF  ;
@@ -14003,7 +14003,7 @@ LEXICON  V_TIPAHDELLA
 0:del  V_BACK_TUPCP_L  ;
 0:tele  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_SÄPSÄHDELLÄ
+LEXICON V_SÄPSÄHDELLÄ
 !!€gt-norm:  Verbs 67 front l d~t
 !!€  säpsähdellä: säpsähdellä+V+Act+InfA+Sg+Lat # wake
 0:dell  V_FRONT_AINF  ;
@@ -14021,7 +14021,7 @@ LEXICON  V_SÄPSÄHDELLÄ
 0:del  V_FRONT_TUPCP_L  ;
 0:tele  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_OMMELLA
+LEXICON V_OMMELLA
 !!€gt-norm:  Verbs 67 back l m~p
 !!€  ommella: ommella+V+Act+InfA+Sg+Lat # sow
 0:mell  V_BACK_AINF  ;
@@ -14039,7 +14039,7 @@ LEXICON  V_OMMELLA
 0:mel  V_BACK_TUPCP_L  ;
 0:pele  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_VAELLELLA
+LEXICON V_VAELLELLA
 !!€gt-norm:  Verbs 67 back l l~t
 !!€  vaellella: vaellella+V+Act+InfA+Sg+Lat # wander
 0:lell  V_BACK_AINF  ;
@@ -14057,7 +14057,7 @@ LEXICON  V_VAELLELLA
 0:lel  V_BACK_TUPCP_L  ;
 0:tele  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_KIILLELLÄ
+LEXICON V_KIILLELLÄ
 !!€gt-norm:  Verbs 67 frpnt l l~t
 !!€  kiillellä: kiillellä+V+Act+InfA+Sg+Lat # sparkle
 0:lell  V_FRONT_AINF  ;
@@ -14075,7 +14075,7 @@ LEXICON  V_KIILLELLÄ
 0:lel  V_FRONT_TUPCP_L  ;
 0:tele  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_KOMENNELLA
+LEXICON V_KOMENNELLA
 !!€gt-norm:  Verbs 67 back l n~t
 !!€  komennella: komennella+V+Act+InfA+Sg+Lat # boss
 0:nell  V_BACK_AINF  ;
@@ -14093,7 +14093,7 @@ LEXICON  V_KOMENNELLA
 0:nel  V_BACK_TUPCP_L  ;
 0:tele  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_KÄÄNNELLÄ
+LEXICON V_KÄÄNNELLÄ
 !!€gt-norm:  Verbs 67 front l n~t
 !!€  käännellä: käännellä+V+Act+InfA+Sg+Lat # turn
 0:nell  V_FRONT_AINF  ;
@@ -14111,7 +14111,7 @@ LEXICON  V_KÄÄNNELLÄ
 0:nel  V_FRONT_TUPCP_L  ;
 0:tele  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_NAKERRELLA
+LEXICON V_NAKERRELLA
 !!€gt-norm:  Verbs 67 back l r~t
 !!€  nakerrella: nakerrella+V+Act+InfA+Sg+Lat # bite
 0:rell  V_BACK_AINF  ;
@@ -14129,7 +14129,7 @@ LEXICON  V_NAKERRELLA
 0:rel  V_BACK_TUPCP_L  ;
 0:tele  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_KIHERRELLÄ
+LEXICON V_KIHERRELLÄ
 !!€gt-norm:  Verbs 67 front l r~t
 !!€  kiherrellä: kiherrellä+V+Act+InfA+Sg+Lat # giggle
 0:rell  V_FRONT_AINF  ;
@@ -14150,7 +14150,7 @@ LEXICON  V_KIHERRELLÄ
 !!  !tse stuff
 !!  Some verbs have possible optional heteroclitic indicative stems:
 
-LEXICON  V_ISÄNNÖIDÄ
+LEXICON V_ISÄNNÖIDÄ
 !!€gt-norm:  Verbs 68 front
 !!€  isännöidä: isännöidä+V+Act+InfA+Sg+Lat # host
 0:id  V_FRONT_AINF  ;
@@ -14173,7 +14173,7 @@ LEXICON  V_ISÄNNÖIDÄ
 0:i  V_FRONT_TUPCP_D  ;
 0:i  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_MELLAKOIDA
+LEXICON V_MELLAKOIDA
 !!€gt-norm:  Verbs 68 back
 !!€  mellakoida: mellakoida+V+Act+InfA+Sg+Lat # riot
 0:id  V_BACK_AINF  ;
@@ -14198,7 +14198,7 @@ LEXICON  V_MELLAKOIDA
 
 !!  In these stems the tse formed stem is only one.
 
-LEXICON  V_PALKITA
+LEXICON V_PALKITA
 !!€gt-norm:  Verbs 69 back
 !!€  palkita: palkita+V+Act+InfA+Sg+Lat # reward
 0:t  V_BACK_AINF  ;
@@ -14216,7 +14216,7 @@ LEXICON  V_PALKITA
 0:t  V_BACK_TUPCP_0  ;
 0:tse  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_MERKITÄ
+LEXICON V_MERKITÄ
 !!€gt-norm:  Verbs 69 front
 !!€  merkitä: merkitä+V+Act+InfA+Sg+Lat # mark
 0:t  V_FRONT_AINF  ;
@@ -14236,7 +14236,7 @@ LEXICON  V_MERKITÄ
 
 !!  Few words have special consonant cluster simplification for ks forms.
 
-LEXICON  V_JUOSTA
+LEXICON V_JUOSTA
 !!€gt-norm:  Verbs 70 back
 !!€  juosta: juosta+V+Act+InfA+Sg+Lat # run
 0:st  V_BACK_AINF  ;
@@ -14253,7 +14253,7 @@ LEXICON  V_JUOSTA
 0:s  V_BACK_TUPCP_STRONG  ;
 0:kse  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_PIESTÄ
+LEXICON V_PIESTÄ
 !!€gt-norm:  Verbs 70 front
 !!€  piestä: piestä+V+Act+InfA+Sg+Lat # spank
 0:st  V_FRONT_AINF  ;
@@ -14274,7 +14274,7 @@ LEXICON  V_PIESTÄ
 
 !!  nähdä has special h:k variation.
 
-LEXICON  V_NÄHDÄ
+LEXICON V_NÄHDÄ
 !!€gt-norm:  Verbs 71
 !!€  nähdä: nähdä+V+Act+InfA+Sg+Lat # see
 0:hd  V_FRONT_AINF  ;
@@ -14293,7 +14293,7 @@ LEXICON  V_NÄHDÄ
 
 !!  !Verbs with -ne- stems
 
-LEXICON  V_KARHETA
+LEXICON V_KARHETA
 !!€gt-norm:  Verbs 72 back
 !!€  karheta: karheta+V+Act+InfA+Sg+Lat 
 0:t  V_BACK_AINF  ;
@@ -14310,7 +14310,7 @@ LEXICON  V_KARHETA
 0:t  V_BACK_TUPCP_0  ;
 0:ne  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_VÄHETÄ
+LEXICON V_VÄHETÄ
 !!€gt-norm:  Verbs 72 rfont
 !!€  vähetä: vähetä+V+Act+InfA+Sg+Lat # lessen
 0:t  V_FRONT_AINF  ;
@@ -14327,7 +14327,7 @@ LEXICON  V_VÄHETÄ
 0:t  V_FRONT_TUPCP_0  ;
 0:ne  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_NIUKETA
+LEXICON V_NIUKETA
 !!€gt-norm:  Verbs 72 back 0~k
 !!€  niuketa: niuketa+V+Act+InfA+Sg+Lat # tighten
 0:et  V_BACK_AINF  ;
@@ -14344,7 +14344,7 @@ LEXICON  V_NIUKETA
 0:et  V_BACK_TUPCP_0  ;
 0:kene  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_JYRKETÄ
+LEXICON V_JYRKETÄ
 !!€gt-norm:  Verbs 72 front 0~k
 !!€  jyrketä: jyrketä+V+Act+InfA+Sg+Lat 
 0:et  V_FRONT_AINF  ;
@@ -14361,7 +14361,7 @@ LEXICON  V_JYRKETÄ
 0:et  V_FRONT_TUPCP_0  ;
 0:kene  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_HAPATA
+LEXICON V_HAPATA
 !!€gt-norm:  Verbs 72 back 0~p
 !!€  hapata: hapata+V+Act+InfA+Sg+Lat # ensour
 0:at  V_BACK_AINF  ;
@@ -14378,7 +14378,7 @@ LEXICON  V_HAPATA
 0:at  V_BACK_TUPCP_0  ;
 0:pane  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_SUPETA
+LEXICON V_SUPETA
 !!€gt-norm:  Verbs 72 front 0~p
 !!€  supeta: supeta+V+Act+InfA+Sg+Lat # tighten
 0:et  V_BACK_AINF  ;
@@ -14395,7 +14395,7 @@ LEXICON  V_SUPETA
 0:et  V_BACK_TUPCP_0  ;
 0:pene  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_TYLPETÄ
+LEXICON V_TYLPETÄ
 !!€gt-norm:  Verbs 72 front 0~p
 !!€  tylpetä: tylpetä+V+Act+InfA+Sg+Lat # dull
 0:et  V_FRONT_AINF  ;
@@ -14412,7 +14412,7 @@ LEXICON  V_TYLPETÄ
 0:et  V_FRONT_TUPCP_0  ;
 0:pene  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_HELPOTA
+LEXICON V_HELPOTA
 !!€gt-norm:  Verbs 72 back 0~p o
 !!€  helpota: helpota+V+Act+InfA+Sg+Lat # ease
 0:ot  V_BACK_AINF  ;
@@ -14429,7 +14429,7 @@ LEXICON  V_HELPOTA
 0:ot  V_BACK_TUPCP_0  ;
 0:pone  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_LOITOTA
+LEXICON V_LOITOTA
 !!€gt-norm:  Verbs 72 back 0~t
 !!€  loitota: loitota+V+Act+InfA+Sg+Lat # distance
 0:ot  V_BACK_AINF  ;
@@ -14446,7 +14446,7 @@ LEXICON  V_LOITOTA
 0:ot  V_BACK_TUPCP_0  ;
 0:tone  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_ULOTA
+LEXICON V_ULOTA
 !!€gt-norm:  Verbs 72 back 0~k o
 !!€  ulota: ulota+V+Act+InfA+Sg+Lat # outen
 0:ot  V_BACK_AINF  ;
@@ -14463,7 +14463,7 @@ LEXICON  V_ULOTA
 0:ot  V_BACK_TUPCP_0  ;
 0:kone  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_KAVETA
+LEXICON V_KAVETA
 !!€gt-norm:  Verbs 72 back v~p
 !!€  kaveta: kaveta+V+Act+InfA+Sg+Lat # tighten
 0:vet  V_BACK_AINF  ;
@@ -14480,7 +14480,7 @@ LEXICON  V_KAVETA
 0:vet  V_BACK_TUPCP_0  ;
 0:pene  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_MÄDÄTÄ
+LEXICON V_MÄDÄTÄ
 !!€gt-norm:  Verbs 72 front d~t
 !!€  mädätä: mädätä+V+Act+InfA+Sg+Lat # rot
 0:dät  V_FRONT_AINF  ;
@@ -14497,7 +14497,7 @@ LEXICON  V_MÄDÄTÄ
 0:dät  V_FRONT_TUPCP_0  ;
 0:täne  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_LEUDOTA
+LEXICON V_LEUDOTA
 !!€gt-norm:  Verbs 72 back d~t
 !!€  leudota: leudota+V+Act+InfA+Sg+Lat 
 0:dot  V_BACK_AINF  ;
@@ -14514,7 +14514,7 @@ LEXICON  V_LEUDOTA
 0:dot  V_BACK_TUPCP_0  ;
 0:tone  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_PIDETÄ
+LEXICON V_PIDETÄ
 !!€gt-norm:  Verbs 72 front d~t e
 !!€  pidetä: pidetä+V+Act+InfA+Sg+Lat # lengthen
 0:det  V_FRONT_AINF  ;
@@ -14531,7 +14531,7 @@ LEXICON  V_PIDETÄ
 0:det  V_FRONT_TUPCP_0  ;
 0:det  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_LÄMMETÄ
+LEXICON V_LÄMMETÄ
 !!€gt-norm:  Verbs 72 front m~p 
 !!€  lämmetä: lämmetä+V+Act+InfA+Sg+Lat # warm
 0:met  V_FRONT_AINF  ;
@@ -14548,7 +14548,7 @@ LEXICON  V_LÄMMETÄ
 0:met  V_FRONT_TUPCP_0  ;
 0:pene  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_KIINNETÄ
+LEXICON V_KIINNETÄ
 !!€gt-norm:  Verbs 72 front n~t
 !!€  kiinnetä: kiinnetä+V+Act+InfA+Sg+Lat # firm
 0:net  V_FRONT_AINF  ;
@@ -14565,7 +14565,7 @@ LEXICON  V_KIINNETÄ
 0:net  V_FRONT_TUPCP_0  ;
 0:tene  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_JULJETA
+LEXICON V_JULJETA
 !!€gt-norm:  Verbs 72 back j~k
 !!€  juljeta: juljeta+V+Act+InfA+Sg+Lat # dare
 0:jet  V_BACK_AINF  ;
@@ -14584,7 +14584,7 @@ LEXICON  V_JULJETA
 
 !!  !Vowel lengthening(?) stems
 
-LEXICON  V_ARVATA
+LEXICON V_ARVATA
 !!€gt-norm:  Verbs 73 back
 !!€  arvata: arvata+V+Act+InfA+Sg+Lat # guess
 0:t  V_BACK_AINF  ;
@@ -14601,7 +14601,7 @@ LEXICON  V_ARVATA
 0:t  V_BACK_TUPCP_0  ;
 0:a  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_YNNÄTÄ
+LEXICON V_YNNÄTÄ
 !!€gt-norm:  Verbs 73 front
 !!€  ynnätä: ynnätä+V+Act+InfA+Sg+Lat # add
 0:t  V_FRONT_AINF  ;
@@ -14618,7 +14618,7 @@ LEXICON  V_YNNÄTÄ
 0:t  V_FRONT_TUPCP_0  ;
 0:ä  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_MORKATA
+LEXICON V_MORKATA
 !!€gt-norm:  Verbs 73 back 0~k
 !!€  morkata: morkata+V+Act+InfA+Sg+Lat # blame
 0:at  V_BACK_AINF  ;
@@ -14635,7 +14635,7 @@ LEXICON  V_MORKATA
 0:at  V_BACK_TUPCP_0  ;
 0:kaa  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_YÖKÄTÄ
+LEXICON V_YÖKÄTÄ
 !!€gt-norm:  Verbs 73 front 0~k
 !!€  yökätä: yökätä+V+Act+InfA+Sg+Lat # yuck
 0:ät  V_FRONT_AINF  ;
@@ -14652,7 +14652,7 @@ LEXICON  V_YÖKÄTÄ
 0:ät  V_FRONT_TUPCP_0  ;
 0:kää  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_SIEPATA
+LEXICON V_SIEPATA
 !!€gt-norm:  Verbs 73 back 0~p
 !!€  siepata: siepata+V+Act+InfA+Sg+Lat # kidnap
 0:at  V_BACK_AINF  ;
@@ -14669,7 +14669,7 @@ LEXICON  V_SIEPATA
 0:at  V_BACK_TUPCP_0  ;
 0:paa  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_VÄLPÄTÄ
+LEXICON V_VÄLPÄTÄ
 !!€gt-norm:  Verbs 73 frot 0~p
 !!€  välpätä: välpätä+V+Act+InfA+Sg+Lat 
 0:ät  V_FRONT_AINF  ;
@@ -14686,7 +14686,7 @@ LEXICON  V_VÄLPÄTÄ
 0:ät  V_FRONT_TUPCP_0  ;
 0:pää  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_LUNTATA
+LEXICON V_LUNTATA
 !!€gt-norm:  Verbs 73 back 0~t
 !!€  luntata: luntata+V+Act+InfA+Sg+Lat # cheat
 0:at  V_BACK_AINF  ;
@@ -14703,7 +14703,7 @@ LEXICON  V_LUNTATA
 0:at  V_BACK_TUPCP_0  ;
 0:taa  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_LÄNTÄTÄ
+LEXICON V_LÄNTÄTÄ
 !!€gt-norm:  Verbs 73 front 0~t
 !!€  läntätä: läntätä+V+Act+InfA+Sg+Lat # splat
 0:ät  V_FRONT_AINF  ;
@@ -14720,7 +14720,7 @@ LEXICON  V_LÄNTÄTÄ
 0:ät  V_FRONT_TUPCP_0  ;
 0:tää  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_KAIVATA
+LEXICON V_KAIVATA
 !!€gt-norm:  Verbs 73 back v~p
 !!€  kaivata: kaivata+V+Act+InfA+Sg+Lat # long
 0:vat  V_BACK_AINF  ;
@@ -14737,7 +14737,7 @@ LEXICON  V_KAIVATA
 0:vat  V_BACK_TUPCP_0  ;
 0:paa  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_LEVÄTÄ
+LEXICON V_LEVÄTÄ
 !!€gt-norm:  Verbs 73 front v~p
 !!€  levätä: levätä+V+Act+InfA+Sg+Lat # rest
 0:vät  V_FRONT_AINF  ;
@@ -14754,7 +14754,7 @@ LEXICON  V_LEVÄTÄ
 0:vät  V_FRONT_TUPCP_0  ;
 0:pää  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_JAHDATA
+LEXICON V_JAHDATA
 !!€gt-norm:  Verbs 73 back d~r
 !!€  jahdata: jahdata+V+Act+InfA+Sg+Lat # hunt
 0:dat  V_BACK_AINF  ;
@@ -14771,7 +14771,7 @@ LEXICON  V_JAHDATA
 0:dat  V_BACK_TUPCP_0  ;
 0:taa  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_TÄHDÄTÄ
+LEXICON V_TÄHDÄTÄ
 !!€gt-norm:  Verbs 73 front d~t
 !!€  tähdätä: tähdätä+V+Act+InfA+Sg+Lat # aim
 0:dät  V_FRONT_AINF  ;
@@ -14788,7 +14788,7 @@ LEXICON  V_TÄHDÄTÄ
 0:dät  V_FRONT_TUPCP_0  ;
 0:tää  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_VONGATA
+LEXICON V_VONGATA
 !!€gt-norm:  Verbs 73 back g~k
 !!€  vongata: vongata+V+Act+InfA+Sg+Lat # beg
 0:gat  V_BACK_AINF  ;
@@ -14808,7 +14808,7 @@ LEXICON  V_VONGATA
 :gat  V_BACK_OPTATIVE_K_ARCHAIC  ;
 
 
-LEXICON  V_VÄNGÄTÄ
+LEXICON V_VÄNGÄTÄ
 !!€gt-norm:  Verbs 73 front g~k
 !!€  vängätä: vängätä+V+Act+InfA+Sg+Lat # argue
 0:gät  V_FRONT_AINF  ;
@@ -14825,7 +14825,7 @@ LEXICON  V_VÄNGÄTÄ
 0:gät  V_FRONT_TUPCP_0  ;
 0:kää  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_TEMMATA
+LEXICON V_TEMMATA
 !!€gt-norm:  Verbs 73 back m~p
 !!€  temmata: temmata+V+Act+InfA+Sg+Lat # pull
 0:mat  V_BACK_AINF  ;
@@ -14842,7 +14842,7 @@ LEXICON  V_TEMMATA
 0:mat  V_BACK_TUPCP_0  ;
 0:paa  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_MULLATA
+LEXICON V_MULLATA
 !!€gt-norm:  Verbs 73 back l~t
 !!€  mullata: mullata+V+Act+InfA+Sg+Lat # dirt
 0:lat  V_BACK_AINF  ;
@@ -14859,7 +14859,7 @@ LEXICON  V_MULLATA
 0:lat  V_BACK_TUPCP_0  ;
 0:taa  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_SUUNNATA
+LEXICON V_SUUNNATA
 !!€gt-norm:  Verbs 73 back n~t
 !!€  suunnata: suunnata+V+Act+InfA+Sg+Lat # go
 0:nat  V_BACK_AINF  ;
@@ -14876,7 +14876,7 @@ LEXICON  V_SUUNNATA
 0:nat  V_BACK_TUPCP_0  ;
 0:taa  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_RYNNÄTÄ
+LEXICON V_RYNNÄTÄ
 !!€gt-norm:  Verbs 73 front n~t
 !!€  rynnätä: rynnätä+V+Act+InfA+Sg+Lat # rush
 0:nät  V_FRONT_AINF  ;
@@ -14893,7 +14893,7 @@ LEXICON  V_RYNNÄTÄ
 0:nät  V_FRONT_TUPCP_0  ;
 0:tää  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_VIRRATA
+LEXICON V_VIRRATA
 !!€gt-norm:  Verbs 73 back r~t
 !!€  virrata: virrata+V+Act+InfA+Sg+Lat # stream
 0:rat  V_BACK_AINF  ;
@@ -14910,7 +14910,7 @@ LEXICON  V_VIRRATA
 0:rat  V_BACK_TUPCP_0  ;
 0:taa  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_HYLJÄTÄ
+LEXICON V_HYLJÄTÄ
 !!€gt-norm:  Verbs 73 front j~k
 !!€  hyljätä: hyljätä+V+Act+InfA+Sg+Lat # abandon
 0:jät  V_FRONT_AINF  ;
@@ -14927,7 +14927,7 @@ LEXICON  V_HYLJÄTÄ
 0:jät  V_FRONT_TUPCP_0  ;
 0:tää  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_DIGATA
+LEXICON V_DIGATA
 !!€gt-norm:  Verbs 73 back 0~g
 !!€  digata: digata+V+Act+InfA+Sg+Lat # dig
 0:at  V_BACK_AINF  ;
@@ -14944,7 +14944,7 @@ LEXICON  V_DIGATA
 0:at  V_BACK_TUPCP_0  ;
 0:kaa  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_LOBATA
+LEXICON V_LOBATA
 !!€gt-norm:  Verbs 73 back 0~b
 !!€  lobata: lobata+V+Act+InfA+Sg+Lat # lobby
 0:at  V_BACK_AINF  ;
@@ -14961,7 +14961,7 @@ LEXICON  V_LOBATA
 0:at  V_BACK_TUPCP_0  ;
 0:baa  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_KARHUTA
+LEXICON V_KARHUTA
 !!€gt-norm:  Verbs 74 back 
 !!€  karhuta: karhuta+V+Act+InfA+Sg+Lat # tax
 0:t  V_BACK_AINF  ;
@@ -14978,7 +14978,7 @@ LEXICON  V_KARHUTA
 0:t  V_BACK_TUPCP_0  ;
 0:a  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_TÄHYTÄ
+LEXICON V_TÄHYTÄ
 !!€gt-norm:  Verbs 74 front 
 !!€  tähytä: tähytä+V+Act+InfA+Sg+Lat # periscope
 0:t  V_FRONT_AINF  ;
@@ -14995,7 +14995,7 @@ LEXICON  V_TÄHYTÄ
 0:t  V_FRONT_TUPCP_0  ;
 0:ä  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_KAIKOTA
+LEXICON V_KAIKOTA
 !!€gt-norm:  Verbs 74 back 0~k 
 !!€  kaikota: kaikota+V+Act+InfA+Sg+Lat # disappear
 0:ot  V_BACK_AINF  ;
@@ -15012,7 +15012,7 @@ LEXICON  V_KAIKOTA
 0:ot  V_BACK_TUPCP_0  ;
 0:koa  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_POIKETA
+LEXICON V_POIKETA
 !!€gt-norm:  Verbs 74 back 0~k e 
 !!€  poiketa: poiketa+V+Act+InfA+Sg+Lat 
 0:et  V_BACK_AINF  ;
@@ -15029,7 +15029,7 @@ LEXICON  V_POIKETA
 0:et  V_BACK_TUPCP_0  ;
 0:kea  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_KERETÄ
+LEXICON V_KERETÄ
 !!€gt-norm:  Verbs 74 front 0~k e 
 !!€  keretä: keretä+V+Act+InfA+Sg+Lat 
 0:et  V_FRONT_AINF  ;
@@ -15046,7 +15046,7 @@ LEXICON  V_KERETÄ
 0:et  V_FRONT_TUPCP_0  ;
 0:keä  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_KOUKUTA
+LEXICON V_KOUKUTA
 !!€gt-norm:  Verbs 74 front   0~k u 
 !!€  koukuta: koukuta+V+Act+InfA+Sg+Lat # hook
 0:ut  V_BACK_AINF  ;
@@ -15063,7 +15063,7 @@ LEXICON  V_KOUKUTA
 0:ut  V_BACK_TUPCP_0  ;
 0:kua  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_PULPUTA
+LEXICON V_PULPUTA
 !!€gt-norm:  Verbs 74 back 0~p 
 !!€  pulputa: pulputa+V+Act+InfA+Sg+Lat # pulp
 0:ut  V_BACK_AINF  ;
@@ -15080,7 +15080,7 @@ LEXICON  V_PULPUTA
 0:ut  V_BACK_TUPCP_0  ;
 0:pua  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_UPOTA
+LEXICON V_UPOTA
 !!€gt-norm:  Verbs 74 back 0~p o 
 !!€  upota: upota+V+Act+InfA+Sg+Lat # sink
 0:ot  V_BACK_AINF  ;
@@ -15097,7 +15097,7 @@ LEXICON  V_UPOTA
 0:ot  V_BACK_TUPCP_0  ;
 0:poa  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_LOTOTA
+LEXICON V_LOTOTA
 !!€gt-norm:  Verbs 74 back 0~to
 !!€  lotota: lotota+V+Act+InfA+Sg+Lat # lotto
 0:ot  V_BACK_AINF  ;
@@ -15114,7 +15114,7 @@ LEXICON  V_LOTOTA
 0:ot  V_BACK_TUPCP_0  ;
 0:toa  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_LUUTUTA
+LEXICON V_LUUTUTA
 !!€gt-norm:  Verbs 74 back 0~tu
 !!€  luututa: luututa+V+Act+InfA+Sg+Lat # mop
 0:ut  V_BACK_AINF  ;
@@ -15131,7 +15131,7 @@ LEXICON  V_LUUTUTA
 0:ut  V_BACK_TUPCP_0  ;
 0:tua  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_KIVUTA
+LEXICON V_KIVUTA
 !!€gt-norm:  Verbs 74 back v~p 
 !!€  kivuta: kivuta+V+Act+InfA+Sg+Lat # climb
 0:vut  V_BACK_AINF  ;
@@ -15148,7 +15148,7 @@ LEXICON  V_KIVUTA
 0:vut  V_BACK_TUPCP_0  ;
 0:pua  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_KORVETA
+LEXICON V_KORVETA
 !!€gt-norm:  Verbs 74 back v~pe
 !!€  korveta: korveta+V+Act+InfA+Sg+Lat 
 0:vet  V_BACK_AINF  ;
@@ -15165,7 +15165,7 @@ LEXICON  V_KORVETA
 0:vet  V_BACK_TUPCP_0  ;
 0:pea  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_REVETÄ
+LEXICON V_REVETÄ
 !!€gt-norm:  Verbs 74 front v~pe
 !!€  kiivetä: kiivetä+V+Act+InfA+Sg+Lat # climb
 0:vet  V_FRONT_AINF  ;
@@ -15182,7 +15182,7 @@ LEXICON  V_REVETÄ
 0:vet  V_FRONT_TUPCP_0  ;
 0:peä  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_KIRVOTA
+LEXICON V_KIRVOTA
 !!€gt-norm:  Verbs 74 back v~po
 !!€  kirvota: kirvota+V+Act+InfA+Sg+Lat # loose
 0:vot  V_BACK_AINF  ;
@@ -15199,7 +15199,7 @@ LEXICON  V_KIRVOTA
 0:vot  V_BACK_TUPCP_0  ;
 0:poa  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_KADOTA
+LEXICON V_KADOTA
 !!€gt-norm:  Verbs 74 back d~t 
 !!€  kadota: kadota+V+Act+InfA+Sg+Lat # disappear
 0:dot  V_BACK_AINF  ;
@@ -15216,7 +15216,7 @@ LEXICON  V_KADOTA
 0:dot  V_BACK_TUPCP_0  ;
 0:toa  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_TODETA
+LEXICON V_TODETA
 !!€gt-norm:  Verbs 74 back t~de
 !!€  todeta: todeta+V+Act+InfA+Sg+Lat # note
 0:det  V_BACK_AINF  ;
@@ -15233,7 +15233,7 @@ LEXICON  V_TODETA
 0:det  V_BACK_TUPCP_0  ;
 0:tea  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_VYYHDETÄ
+LEXICON V_VYYHDETÄ
 !!€gt-norm:  Verbs 74 front t~de
 !!€  vyyhdetä: vyyhdetä+V+Act+InfA+Sg+Lat # entangle
 0:det  V_FRONT_AINF  ;
@@ -15250,7 +15250,7 @@ LEXICON  V_VYYHDETÄ
 0:det  V_FRONT_TUPCP_0  ;
 0:teä  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_LIIDUTA
+LEXICON V_LIIDUTA
 !!€gt-norm:  Verbs 74 back d~tu
 !!€  liiduta: liiduta+V+Act+InfA+Sg+Lat # chalk
 0:dut  V_BACK_AINF  ;
@@ -15267,7 +15267,7 @@ LEXICON  V_LIIDUTA
 0:dut  V_BACK_TUPCP_0  ;
 0:tua  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_TUNGETA
+LEXICON V_TUNGETA
 !!€gt-norm:  Verbs 74 back g~ke
 !!€  tungeta: tungeta+V+Act+InfA+Sg+Lat # push
 0:get  V_BACK_AINF  ;
@@ -15284,7 +15284,7 @@ LEXICON  V_TUNGETA
 0:get  V_BACK_TUPCP_0  ;
 0:kea  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_PINGOTA
+LEXICON V_PINGOTA
 !!€gt-norm:  Verbs 74 back g~ko
 !!€  pingota: pingota+V+Act+InfA+Sg+Lat # ping
 0:got  V_BACK_AINF  ;
@@ -15301,7 +15301,7 @@ LEXICON  V_PINGOTA
 0:got  V_BACK_TUPCP_0  ;
 0:koa  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_ÄNGETÄ
+LEXICON V_ÄNGETÄ
 !!€gt-norm:  Verbs 74 front g~ke 
 !!€  ängetä: ängetä+V+Act+InfA+Sg+Lat # push
 0:get  V_FRONT_AINF  ;
@@ -15318,7 +15318,7 @@ LEXICON  V_ÄNGETÄ
 0:get  V_FRONT_TUPCP_0  ;
 0:keä  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_KUMMUTA
+LEXICON V_KUMMUTA
 !!€gt-norm:  Verbs 74 back m~p 
 !!€  kummuta: kummuta+V+Act+InfA+Sg+Lat 
 0:mut  V_BACK_AINF  ;
@@ -15335,7 +15335,7 @@ LEXICON  V_KUMMUTA
 0:mut  V_BACK_TUPCP_0  ;
 0:pua  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_KAMMETA
+LEXICON V_KAMMETA
 !!€gt-norm:  Verbs 74 back p~mu
 !!€  kammeta: kammeta+V+Act+InfA+Sg+Lat # lever
 0:met  V_BACK_AINF  ;
@@ -15352,7 +15352,7 @@ LEXICON  V_KAMMETA
 0:met  V_BACK_TUPCP_0  ;
 0:pea  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_SAMMOTA
+LEXICON V_SAMMOTA
 !!€gt-norm:  Verbs 74 back p~mu
 !!€  sammota: sammota+V+Act+InfA+Sg+Lat 
 0:mot  V_BACK_AINF  ;
@@ -15369,7 +15369,7 @@ LEXICON  V_SAMMOTA
 0:mot  V_BACK_TUPCP_0  ;
 0:poa  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_INNOTA
+LEXICON V_INNOTA
 !!€gt-norm:  Verbs 74 back t~no
 !!€  innota: innota+V+Act+InfA+Sg+Lat # eager
 0:not  V_BACK_AINF  ;
@@ -15386,7 +15386,7 @@ LEXICON  V_INNOTA
 0:not  V_BACK_TUPCP_0  ;
 0:toa  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_IRROTA
+LEXICON V_IRROTA
 !!€gt-norm:  Verbs 74 back t~to
 !!€  irrota: irrota+V+Act+InfA+Sg+Lat # tear
 0:rot  V_BACK_AINF  ;
@@ -15403,7 +15403,7 @@ LEXICON  V_IRROTA
 0:rot  V_BACK_TUPCP_0  ;
 0:toa  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_HALJETA
+LEXICON V_HALJETA
 !!€gt-norm:  Verbs 74 back j~ke
 !!€  haljeta: haljeta+V+Act+InfA+Sg+Lat # split
 0:jet  V_BACK_AINF  ;
@@ -15420,7 +15420,7 @@ LEXICON  V_HALJETA
 0:jet  V_BACK_TUPCP_0  ;
 0:kea  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_ILJETÄ
+LEXICON V_ILJETÄ
 !!€gt-norm:  Verbs 74 front j~k 
 !!€  iljetä: iljetä+V+Act+InfA+Sg+Lat # dare
 0:jet  V_FRONT_AINF  ;
@@ -15437,7 +15437,7 @@ LEXICON  V_ILJETÄ
 0:jet  V_FRONT_TUPCP_0  ;
 0:keä  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_MYRSKYTÄ
+LEXICON V_MYRSKYTÄ
 !!€gt-norm:  Verbs 75 front
 !!€  myrskytä: myrskytä+V+Act+InfA+Sg+Lat # storm
 0:t  V_FRONT_AINF  ;
@@ -15454,7 +15454,7 @@ LEXICON  V_MYRSKYTÄ
 0:t  V_FRONT_TUPCP_0  ;
 0:ä  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_LASSOTA
+LEXICON V_LASSOTA
 !!€gt-norm:  Verbs 75 back
 !!€  lassota: lassota+V+Act+InfA+Sg+Lat # lasso
 0:t  V_BACK_AINF  ;
@@ -15471,7 +15471,7 @@ LEXICON  V_LASSOTA
 0:t  V_BACK_TUPCP_0  ;
 0:a  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_SELVITÄ
+LEXICON V_SELVITÄ
 !!€gt-norm:  Verbs 75 itä
 !!€  selvitä: selvitä+V+Act+InfA+Sg+Lat # manage
 0:t  V_FRONT_AINF  ;
@@ -15488,7 +15488,7 @@ LEXICON  V_SELVITÄ
 0:t  V_FRONT_TUPCP_0  ;
 0:ä  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_RYÖPYTÄ
+LEXICON V_RYÖPYTÄ
 !!€gt-norm:  Verbs 75 pytä
 !!€  ryöpytä: ryöpytä+V+Act+InfA+Sg+Lat # flood
 0:yt  V_FRONT_AINF  ;
@@ -15505,7 +15505,7 @@ LEXICON  V_RYÖPYTÄ
 0:yt  V_FRONT_TUPCP_0  ;
 0:py  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_PEITOTA
+LEXICON V_PEITOTA
 !!€gt-norm:  Verbs 75 tota
 !!€  peitota: peitota+V+Act+InfA+Sg+Lat # beat
 0:ot  V_BACK_AINF  ;
@@ -15522,7 +15522,7 @@ LEXICON  V_PEITOTA
 0:ot  V_BACK_TUPCP_0  ;
 0:toa  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_KERITÄ
+LEXICON V_KERITÄ
 !!€gt-norm:  Verbs 75 itä
 !!€  keritä: keritä+V+Act+InfA+Sg+Lat 
 0:it  V_FRONT_AINF  ;
@@ -15539,7 +15539,7 @@ LEXICON  V_KERITÄ
 0:it  V_FRONT_TUPCP_0  ;
 0:kiä  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_MUODOTA
+LEXICON V_MUODOTA
 !!€gt-norm:  Verbs 75 dota
 !!€  muodota: muodota+V+Act+InfA+Sg+Lat # form
 0:dot  V_BACK_AINF  ;
@@ -15556,7 +15556,7 @@ LEXICON  V_MUODOTA
 0:dot  V_BACK_TUPCP_0  ;
 0:toa  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_LÄMMITÄ
+LEXICON V_LÄMMITÄ
 !!€gt-norm:  Verbs 75 mitä
 !!€  lämmitä: lämmitä+V+Act+InfA+Sg+Lat # heat
 0:mit  V_FRONT_AINF  ;
@@ -15573,7 +15573,7 @@ LEXICON  V_LÄMMITÄ
 0:mit  V_FRONT_TUPCP_0  ;
 0:piä  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_AALLOTA
+LEXICON V_AALLOTA
 !!€gt-norm:  Verbs 75 lota
 !!€  aallota: aallota+V+Act+InfA+Sg+Lat # wave
 0:lot  V_BACK_AINF  ;
@@ -15590,7 +15590,7 @@ LEXICON  V_AALLOTA
 0:lot  V_BACK_TUPCP_0  ;
 0:toa  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_HELLITÄ
+LEXICON V_HELLITÄ
 !!€gt-norm:  Verbs 75 litä
 !!€  hellitä: hellitä+V+Act+InfA+Sg+Lat # loose
 0:lit  V_FRONT_AINF  ;
@@ -15609,7 +15609,7 @@ LEXICON  V_HELLITÄ
 
 !!  !Vowel stems with t:s variation
 
-LEXICON  V_TAITAA
+LEXICON V_TAITAA
 !!€gt-norm:  Verbs 76 back
 !!€  taitaa: taitaa+V+Act+InfA+Sg+Lat # can
 0:ta  V_BACK_AINF  ;
@@ -15626,7 +15626,7 @@ LEXICON  V_TAITAA
 0:det  V_BACK_TUPCP_0  ;
 0:ta  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_TIETÄÄ
+LEXICON V_TIETÄÄ
 !!€gt-norm:  Verbs 76 front
 !!€  tietää: tietää+V+Act+InfA+Sg+Lat # know
 0:tä  V_FRONT_AINF  ;
@@ -15647,7 +15647,7 @@ LEXICON  V_TIETÄÄ
 !!  !Verbs with defective paradigms
 !!  For some verbs, the normative inflection does not allow full set of forms:
 
-LEXICON  V_VIPAJAA
+LEXICON V_VIPAJAA
 !!€gt-norm:  Verbs 77 back 
 !!€  vipajaa: vipajaa+V+Act+InfA+Sg+Lat # thump
 0:a  V_BACK_AINF  ;
@@ -15657,7 +15657,7 @@ LEXICON  V_VIPAJAA
 0  V_BACK_CONDITIONAL  ;
 0  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_HELÄJÄÄ
+LEXICON V_HELÄJÄÄ
 !!€gt-norm:  Verbs 77 front
 !!€  heläjää: heläjää+V+Act+InfA+Sg+Lat # chime
 0:ä  V_FRONT_AINF  ;
@@ -15667,7 +15667,7 @@ LEXICON  V_HELÄJÄÄ
 0  V_FRONT_CONDITIONAL  ;
 0  V_FRONT_DERIV_PCPS  ;
 
-LEXICON  V_RAIKAA
+LEXICON V_RAIKAA
 !!€gt-norm:  Verbs 78 back
 !!€  raikaa: raikaa+V+Act+InfA+Sg+Lat # baum
 0  V_BACK_AINF  ;
@@ -15676,7 +15676,7 @@ LEXICON  V_RAIKAA
 0  V_BACK_CONDITIONAL  ;
 0  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_ÄHKÄÄ
+LEXICON V_ÄHKÄÄ
 !!€gt-norm:  Verbs 78 front
 !!€  ähkää: ähkää+V+Act+InfA+Sg+Lat # meh
 0  V_FRONT_AINF  ;
@@ -15689,7 +15689,7 @@ LEXICON  V_ÄHKÄÄ
 !!  There is a handful of verbs that does not fit to the patterns of old
 !!  dictionaries.
 
-LEXICON  V_OLLA
+LEXICON V_OLLA
 !!  The verb olla has very peculiar and heteroclitic inflection with lot of
 !!  common short forms in standard spoken Finnish:
 !!€gt-norm:  Verb olla
@@ -15747,7 +15747,7 @@ LEXICON  V_OLLA
 +Act+Pot+ConNeg:liene  V_FRONT_CLIT_OPT  ;
 +Act+Pot+ConNeg:lie  V_FRONT_CLIT_OPT  ;
 
-LEXICON  V_ARVAILLA
+LEXICON V_ARVAILLA
 
 
 :ile  V_BACK_WEAK_PRESENT  ;
@@ -15785,7 +15785,7 @@ LEXICON  V_ARVAILLA
 :el  V_BACK_PASSIVE_L  ;
 :el  V_BACK_PASSIVE  ;
 :el  V_BACK_TUPCP_L  ;
-LEXICON  V_EI
+LEXICON V_EI
 
 +Neg:el  V_FRONT_OPTATIVE_L_ARCHAIC  ;
 +Neg:el  V_FRONT_IMPERATIVE_ARCHAIC  ;
@@ -15867,7 +15867,7 @@ LEXICON  V_EI
 +Neg:äl  V_FRONT_OPTATIVE_L_ARCHAIC  ;
 +Neg:äl  V_FRONT_IMPERATIVE_ARCHAIC  ;
 
-LEXICON  V_ERATA
+LEXICON V_ERATA
 
 :an  V_BACK_POTENTIAL_N  ;
 
@@ -15890,7 +15890,7 @@ LEXICON  V_ERATA
 :kan  V_BACK_CONDITIONAL  ;
 
 
-LEXICON  V_ETUILLA
+LEXICON V_ETUILLA
 
 :e  V_BACK_WEAK_PRESENT  ;
 :e  V_BACK_STRONG_PRESENT  ;
@@ -15910,7 +15910,7 @@ LEXICON  V_ETUILLA
 :  V_BACK_PASSIVE  ;
 :  V_BACK_TUPCP_L  ;
 
-LEXICON  V_HALAJAA
+LEXICON V_HALAJAA
 
 :ja  V_BACK_WEAK_PRESENT  ;
 :ja  V_BACK_STRONG_PRESENT  ;
@@ -15921,7 +15921,7 @@ LEXICON  V_HALAJAA
 :t  V_BACK_AINF  ;
 :t  V_BACK_OPTATIVE_K_ARCHAIC  ;
 
-LEXICON  V_KIERTYÄ
+LEXICON V_KIERTYÄ
 
 :ryt  V_FRONT_PASSIVE  ;
 :ryt  V_FRONT_TUPCP_0  ;
@@ -15942,7 +15942,7 @@ LEXICON  V_KIERTYÄ
 :ty  V_FRONT_OPTATIVE_0_ARCHAIC  ;
 
 
-LEXICON  V_KIVETÄ
+LEXICON V_KIVETÄ
 
 :pene  V_FRONT_WEAK_PRESENT  ;
 :pene  V_FRONT_STRONG_PRESENT  ;
@@ -15964,7 +15964,7 @@ LEXICON  V_KIVETÄ
 
 :ve  V_FRONT_PASSIVE_T  ;
 
-LEXICON  V_LEPÄILLÄ
+LEXICON V_LEPÄILLÄ
 
 :ile  V_FRONT_WEAK_PRESENT  ;
 :ile  V_FRONT_STRONG_PRESENT  ;
@@ -16002,7 +16002,7 @@ LEXICON  V_LEPÄILLÄ
 :el  V_FRONT_PASSIVE  ;
 :el  V_FRONT_TUPCP_L  ;
 
-LEXICON  V_RENNOTA
+LEXICON V_RENNOTA
 
 :non  V_BACK_POTENTIAL_N  ;
 
@@ -16024,7 +16024,7 @@ LEXICON  V_RENNOTA
 :ton  V_BACK_STRONG_PAST  ;
 :ton  V_BACK_CONDITIONAL  ;
 
-LEXICON  V_ROHJETA
+LEXICON V_ROHJETA
 
 :jen  V_BACK_POTENTIAL_N  ;
 
@@ -16046,7 +16046,7 @@ LEXICON  V_ROHJETA
 :ken  V_BACK_STRONG_PAST  ;
 :ken  V_BACK_CONDITIONAL  ;
 
-LEXICON  V_SYÖPYÄ
+LEXICON V_SYÖPYÄ
 
 :py  V_FRONT_AINF  ;
 :py  V_FRONT_EINF  ;
@@ -16066,7 +16066,7 @@ LEXICON  V_SYÖPYÄ
 :vy  V_FRONT_WEAK_PAST  ;
 :vy  V_FRONT_PASSIVE_T  ;
 
-LEXICON  V_TUIKKAA
+LEXICON V_TUIKKAA
 
 :ka  V_BACK_AINF  ;
 :ka  V_BACK_STRONG_PRESENT  ;
@@ -16074,7 +16074,7 @@ LEXICON  V_TUIKKAA
 :ka  V_BACK_CONDITIONAL  ;
 :ka  V_BACK_DERIV_PCPS  ;
 
-LEXICON  V_TULLA
+LEXICON V_TULLA
 
 :le  V_BACK_WEAK_PRESENT  ;
 :le  V_BACK_STRONG_PRESENT  ;
@@ -16096,7 +16096,7 @@ LEXICON  V_TULLA
 
 +Dial:u  V_BACK_WEAK_PRESENT  ;
 
-LEXICON  V_VAAHDOTA
+LEXICON V_VAAHDOTA
 
 :don  V_BACK_POTENTIAL_N  ;
 
@@ -16120,7 +16120,7 @@ LEXICON  V_VAAHDOTA
 
 :to  V_BACK_CONDITIONAL  ;
 
-LEXICON  V_VERRATA
+LEXICON V_VERRATA
 
 :ran  V_BACK_POTENTIAL_N  ;
 
