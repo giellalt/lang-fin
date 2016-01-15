@@ -15786,12 +15786,13 @@ LEXICON V_OLLA
 0:ol  V_BACK_WEAK_PAST  ;
 0:ol  V_BACK_STRONG_PAST  ;
 0:ol  V_BACK_CONDITIONAL  ;
-0:lie  V_FRONT_POTENTIAL_N  ;
 0:ol  V_BACK_IMPERATIVE  ;
+0:ol  V_BACK_POTENTIAL_L  ;
 0:ol  V_BACK_PASSIVE_L  ;
 0:ol  V_BACK_PASSIVE  ;
 0:ol  V_BACK_TUPCP_L  ;
 0:ole  V_BACK_DERIV_PCPS  ;
+0:lie  V_FRONT_POTENTIAL_N  ;
 
 !  these were found in exceptions.lexc, but moved here
 !  in order to have all olla in one place. Pleas remove
