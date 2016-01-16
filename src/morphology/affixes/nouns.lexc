@@ -681,12 +681,14 @@ LEXICON N_FRONT_CLIT
 ! shorthands (could have tests as well...)
 
 LEXICON N_BACK_CLIT_OPT
-0    #   ;
-0   N_BACK_CLIT    ;
++Pref-:-    #   ;
+0           #   ;
+0  N_FRONT_CLIT ;
 
 LEXICON N_FRONT_CLIT_OPT
-0    #   ;
-0   N_FRONT_CLIT    ;
++Pref-:-    #   ;
+0           #   ;
+0  N_FRONT_CLIT ;
 
 LEXICON N_BACK_SINGULARS
 0    N_BACK_STRONG_SINGULARS ;

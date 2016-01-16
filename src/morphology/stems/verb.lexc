@@ -2321,7 +2321,6 @@ jorata+V:jora  V_ARVATA  ;
 jorista+V:joris  V_MARISTA  ;
 jorottaa+V:jorot  V_VIEROITTAA  ;
 jossitella+V:jossit  V_SULATELLA  ;
-jottei+V:jott  V_EI  ;
 jouduttaa+V:joudut  V_VIEROITTAA  ;
 joukkoraiskata+V:joukkoraiska  V_ARVATA  ;
 jousittaa+V:jousit  V_VIEROITTAA  ;
@@ -5719,7 +5718,6 @@ mutristella+V:mutristel  V_ETUILLA  ;
 mutristella+V:mutristel  V_VASTAILLA  ;
 mutruilla+V:mutruil  V_ETUILLA  ;
 mutruilla+V:mutruil  V_VASTAILLA  ;
-muttei+V:mutt  V_EI  ;
 mutustaa+V:mutust  V_MUTRISTAA  ;
 mutustella+V:mutustel  V_ETUILLA  ;
 mutustella+V:mutustel  V_VASTAILLA  ;
@@ -15867,6 +15865,7 @@ LEXICON V_ARVAILLA
 :el  V_BACK_PASSIVE_L  ;
 :el  V_BACK_PASSIVE  ;
 :el  V_BACK_TUPCP_L  ;
+
 LEXICON V_EI
 
 +Neg:el  V_FRONT_OPTATIVE_L_ARCHAIC  ;

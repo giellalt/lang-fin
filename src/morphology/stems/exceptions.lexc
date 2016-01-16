@@ -118,14 +118,15 @@ olla+V+Act+Imprt+Sg2+Dial/standard+Foc/s:oos     V_BACK_CLIT_OPT       ;
 
 LEXICON CONJUNCTIONVERB
 
-ehkä%+CSei%+Neg:ehke	X_51ehkei	;
-ja%+CCei%+Neg:e	X_51eikä	;
-että%+CSei%+Neg:ette	X_51ettei	;
-jotta%+CSei%+Neg%+CS:jolle	X_51jollei	;
-jotta%+CSei%+Neg:jotte	X_51jottei	;
-miksi%+CSei%+Neg:mikse	X_51miksei	;
-mutta%+CSei%+Neg:mutte	X_51muttei	;
-vaikka%+CSei%+Neg:vaikke	X_51vaikkei	;
+ehkä%+Pcle#ei%+V+Neg:ehke	X_51ehkei	;
+ja%+CC#ei%+V+Neg:e	X_51eikä	;
+miksi%++Adv+Interr#ei%+V+Neg:mikse	X_51miksei	;
+
+!että%+CS#ei%+Neg:ette	X_51ettei	; cs.lexc
+!jotta%+CS#ei%+Neg%+CS:jolle	X_51jollei	; cs.lexc
+!jotta%+CS#ei%+Neg:jotte	X_51jottei	; cs.lexc
+!mutta%+CC#ei%+Neg:mutte	X_51muttei	; cc.lexc
+!vaikka%+CS#ei%+Neg:vaikke	X_51vaikkei	; cs.lexc
 
 
 LEXICON X_51ehkei
@@ -158,49 +159,49 @@ LEXICON X_51eikä
 %+Act%+Sg3:ikä	V_FRONT_CLIT_OPT ;
 
 
-LEXICON X_51ettei
+!LEXICON X_51ettei
 
-%+Act%+Pl1:mme	V_FRONT_CLIT_OPT ;
+!%+Act%+Pl1:mme	V_FRONT_CLIT_OPT ;
 
-%+Act%+Pl2:tte	V_FRONT_CLIT_OPT ;
+!%+Act%+Pl2:tte	V_FRONT_CLIT_OPT ;
 
-%+Act%+Pl3:ivät	V_FRONT_CLIT_OPT ;
+!%+Act%+Pl3:ivät	V_FRONT_CLIT_OPT ;
 
-%+Act%+Sg1:n	V_FRONT_CLIT_OPT ;
+!%+Act%+Sg1:n	V_FRONT_CLIT_OPT ;
 
-%+Act%+Sg2:t	V_FRONT_CLIT_OPT ;
+!%+Act%+Sg2:t	V_FRONT_CLIT_OPT ;
 
-%+Act%+Sg3:i	V_FRONT_CLIT_OPT ;
-
-
-LEXICON X_51jollei
-
-%+Act%+Pl1:mme	V_FRONT_CLIT_OPT ;
-
-%+Act%+Pl2:tte	V_FRONT_CLIT_OPT ;
-
-%+Act%+Pl3:ivät	V_FRONT_CLIT_OPT ;
-
-%+Act%+Sg1:n	V_FRONT_CLIT_OPT ;
-
-%+Act%+Sg2:t	V_FRONT_CLIT_OPT ;
-
-%+Act%+Sg3:i	V_FRONT_CLIT_OPT ;
+!%+Act%+Sg3:i	V_FRONT_CLIT_OPT ;
 
 
-LEXICON X_51jottei
+!LEXICON X_51jollei
 
-%+Act%+Pl1:mme	V_FRONT_CLIT_OPT ;
+!%+Act%+Pl1:mme	V_FRONT_CLIT_OPT ;
 
-%+Act%+Pl2:tte	V_FRONT_CLIT_OPT ;
+!%+Act%+Pl2:tte	V_FRONT_CLIT_OPT ;
 
-%+Act%+Pl3:ivät	V_FRONT_CLIT_OPT ;
+!%+Act%+Pl3:ivät	V_FRONT_CLIT_OPT ;
 
-%+Act%+Sg1:n	V_FRONT_CLIT_OPT ;
+!%+Act%+Sg1:n	V_FRONT_CLIT_OPT ;
 
-%+Act%+Sg2:t	V_FRONT_CLIT_OPT ;
+!%+Act%+Sg2:t	V_FRONT_CLIT_OPT ;
 
-%+Act%+Sg3:i	V_FRONT_CLIT_OPT ;
+!%+Act%+Sg3:i	V_FRONT_CLIT_OPT ;
+
+
+!LEXICON X_51jottei
+
+!%+Act%+Pl1:mme	V_FRONT_CLIT_OPT ;
+
+!%+Act%+Pl2:tte	V_FRONT_CLIT_OPT ;
+
+!%+Act%+Pl3:ivät	V_FRONT_CLIT_OPT ;
+
+!%+Act%+Sg1:n	V_FRONT_CLIT_OPT ;
+
+!%+Act%+Sg2:t	V_FRONT_CLIT_OPT ;
+
+!%+Act%+Sg3:i	V_FRONT_CLIT_OPT ;
 
 
 LEXICON X_51miksei
@@ -218,33 +219,33 @@ LEXICON X_51miksei
 %+Act%+Sg3:i	V_FRONT_CLIT_OPT ;
 
 
-LEXICON X_51muttei
+!LEXICON X_51muttei
 
-%+Act%+Pl1:mme	V_FRONT_CLIT_OPT ;
+!%+Act%+Pl1:mme	V_FRONT_CLIT_OPT ;
 
-%+Act%+Pl2:tte	V_FRONT_CLIT_OPT ;
+!%+Act%+Pl2:tte	V_FRONT_CLIT_OPT ;
 
-%+Act%+Pl3:ivät	V_FRONT_CLIT_OPT ;
+!%+Act%+Pl3:ivät	V_FRONT_CLIT_OPT ;
 
-%+Act%+Sg1:n	V_FRONT_CLIT_OPT ;
+!%+Act%+Sg1:n	V_FRONT_CLIT_OPT ;
 
-%+Act%+Sg2:t	V_FRONT_CLIT_OPT ;
+!%+Act%+Sg2:t	V_FRONT_CLIT_OPT ;
 
-%+Act%+Sg3:i	V_FRONT_CLIT_OPT ;
+!%+Act%+Sg3:i	V_FRONT_CLIT_OPT ;
 
 
-LEXICON X_51vaikkei
+!LEXICON X_51vaikkei
 
-%+Act%+Pl1:mme	V_FRONT_CLIT_OPT ;
+!%+Act%+Pl1:mme	V_FRONT_CLIT_OPT ;
 
-%+Act%+Pl2:tte	V_FRONT_CLIT_OPT ;
+!%+Act%+Pl2:tte	V_FRONT_CLIT_OPT ;
 
-%+Act%+Pl3:ivät	V_FRONT_CLIT_OPT ;
+!%+Act%+Pl3:ivät	V_FRONT_CLIT_OPT ;
 
-%+Act%+Sg1:n	V_FRONT_CLIT_OPT ;
+!%+Act%+Sg1:n	V_FRONT_CLIT_OPT ;
 
-%+Act%+Sg2:t	V_FRONT_CLIT_OPT ;
+!%+Act%+Sg2:t	V_FRONT_CLIT_OPT ;
 
-%+Act%+Sg3:i	V_FRONT_CLIT_OPT ;
+!%+Act%+Sg3:i	V_FRONT_CLIT_OPT ;
 
 

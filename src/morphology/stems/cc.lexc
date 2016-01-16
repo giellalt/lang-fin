@@ -27,12 +27,7 @@ joskohta+CC+Use/sub:joskohta            # ;
 konsa+CC:konsa                          # ;
 kuin+CC:kuin                            # ;
 mutta+CC:mutta                          # ;
-mutta#en+CC:mutten                      # ;
-mutta#et+CC:muttet                      # ;
-mutta#ei+CC:muttei                      # ;
-mutta#emme+CC:muttemme                  # ;
-mutta#ette+CC:muttette                  # ;
-mutta#eivät+CC:mutteivät                # ;
+mutta+CC#ei+V:mutt                   V_EI ;
 myös+CC:myös                            # ;
 niin+CC:niin                            # ;
 saati+CC:saati                          # ;
@@ -50,3 +45,10 @@ vai+CC:vai                              # ;
 vaiko+CC:vaiko                          # ;
 ynnä+CC:ynnä                            # ;
 äläkä+CC:äläkä                          # ;
+
+!mutta#et+CC:muttet                      # ;
+!mutta#ei+CC:muttei                      # ;
+!mutta#emme+CC:muttemme                  # ;
+!mutta#ette+CC:muttette                  # ;
+!mutta#eivät+CC:mutteivät                # ;
+

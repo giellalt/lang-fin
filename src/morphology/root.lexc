@@ -597,7 +597,7 @@ LEXICON Root
 0   PUNCTUATION ;
 0   CONJUNCTIONVERB ;
 0   PREFIX      ;
--   SUFFIX      ; ! suffixes may stand stranded in co-ordination
+0   SUFFIX      ; ! suffixes may stand stranded in co-ordination -
 0   EXCEPTIONS  ;
 0   CC ;
 0   CS ;
@@ -612,5 +612,6 @@ LEXICON NOMINAL
 !!€gt-norm: Nominals
 !!€ talonjuttu: talo+N+Sg+Gen#juttu+N+Sg+Nom # house thing
 0   NOUN           ;
+0   PROPER ;
 0   ADJECTIVE           ;
 0   SUFFIX      ;
