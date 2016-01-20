@@ -1,6 +1,6 @@
 [
   [ "<n>" "<prop>" -> "<np>" ] .o.
-  [ "<part>" "<cnjsub>" -> "<cnjsub>" ] .o.
+    [ "<part>" "<cnjsub>" -> "<cnjsub>" ] .o.
   [ "<g3>" "<n>"   -> "<n>" "<g3>" ] .o.
   [ "<sem_fem>" -> "<ant>" "<f>"  ] .o.
   [ "<sem_mal>" -> "<ant>" "<m>"  ] .o.
