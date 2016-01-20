@@ -1,5 +1,7 @@
 [ 
  ["<sem_geo>" -> 0] .o.
  ["<sem_human>" -> 0] .o.
- ["<sem_org>" -> 0] 
- ];
+ ["<sem_org>" -> 0] .o.
+ [ "+" {kaan} "<adv>" -> "<foc_kaan>" ] .o.
+ [ "+" {kin} "<adv>" -> "<foc_kin>" ]
+];

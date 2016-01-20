@@ -69,7 +69,7 @@ LIST Acro = Acro ;
 
 # Clitics
 LIST Qst = Qst ; # -ko/-kö
-LIST Foc_ka = Foc/ka Foc_ka ; 
+LIST Foc_ka = Foc/ka Foc_ka foc_ka; 
 
 # POS sub-categories
 # ------------------
@@ -292,21 +292,21 @@ LIST DV-US = DV-US ;  # muodostus, no spec tag
 #LIST DV-TTA = DV-TTA ; # johdattaa, no spec tag, DV-NTA toimintaa
 
 #LIST DER = DA-UUS DA-US DN-IneN DN-LAIneN DN-LLIneN DN-UUS DN-MINEN Der/minen Der/u Der_minen ; # Added with _
-LIST DER = Der/inen Der/ja Der/lainen Der/llinen Der/minen Der/u Der_inen Der_ja Der_lainen Der_llinen Der_minen Der_u ; # Added with _
+LIST DER = Der/inen Der/ja Der/lainen Der/llinen Der/minen Der/u Der_inen Der_ja Der_lainen Der_llinen Der_minen Der_u der_inen der_ja der_lainen der_llinen der_minen der_u ; # Added with _
 
 #LIST DV = DV-MINEN DV-US DV-NTA DV-TTA ; 
-LIST DV = Der/minen Der_minen ; 
+LIST DV = Der/minen Der_minen der_minen ; 
 
 # All derivation tags in omorfi: 
 #   +Der/inen +Der/ja +Der/lainen +Der/llinen 
 #   +Der/minen +Der/oi +Der/sti +Der/tar +Der/ton 
 #   +Der/tse +Der/ttain +Der/u +Der/vs
 
-LIST N-DER = Der/minen Der/u Der/ja Der/tar Der_minen Der_u Der_ja Der_tar; 
+LIST N-DER = Der/minen Der/u Der/ja Der/tar Der_minen Der_u Der_ja Der_tar der_minen der_u der_ja der_tar; 
 
-LIST Der_minen = Der/minen Der_minen ; 
-LIST Der_inen = Der/inen Der_inen ; 
-LIST Der_sti = Der/sti Der_sti ;
+LIST Der_minen = Der/minen Der_minen der_minen ; 
+LIST Der_inen = Der/inen Der_inen der_inen ; 
+LIST Der_sti = Der/sti Der_sti der_sti ;
 
 
 # Phrasal groups
@@ -802,9 +802,9 @@ LIST Hauskaa = ("hauska" Par) ;
 
 LIST Täytyy = ("<täytyy>") ;
 
-LIST AdvAdds = Ade All Dem Der/Sti Foc/pa Ine Interr Qnt Qu Rel ;
+LIST AdvAdds = Ade All Dem Der/Sti der_sti Foc/pa foc_pa Ine Interr Qnt Qu Rel ;
 
-LIST Sem = Sem/Human Sem/Geo Sem/Org ;
+LIST Sem = Sem/Human Sem/Geo Sem/Org sem_human sem_geo sem_org;
 
 LIST W0 = <W:0> ;
 
@@ -2386,7 +2386,7 @@ SELECT Der_minen (-1 Adv) ;
 # Select adverbial non-derived adverbial if such exists
 
 # *****
-REMOVE Der_sti IF (0C Adv) ;
+REMOVE Der_sti IF (0 Adv) ;
 
 # Remove derivational verb when nominal exists
 REMOVE V + DER (0 N) ;
