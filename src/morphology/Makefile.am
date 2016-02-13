@@ -31,7 +31,7 @@ GT_LEXC_SRCS_L1_L2=\
 			 stems/cs.lexc \
 			 stems/digits.lexc \
 			 stems/interj.lexc \
-			 stems/noun.lexc \
+			 stems/nouns.lexc \
 			 stems/numeral.lexc \
 			 stems/particles.lexc \
 			 stems/pp.lexc \
