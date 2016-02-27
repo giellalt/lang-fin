@@ -135,7 +135,7 @@ LEXICON A_BACK_WEAK_SINGULARS
 !!€ ruman: ruma+A+Sg+Gen
 !!€ rumatta: ruma+A+Sg+Abe
 0    A_BACK_PLNOM_CLIT   ;
-+Sg+Gen:%>n     NOMINAL   ;
++Sg+Gen#:%>n     NOMINAL   ;
 +Sg+Gen:%>n     A_BACK_CLIT_OPT   ;
 +Sg+Abe:%>tta   A_BACK_POSS_AN_CLIT_OPT      ;
 +Sg+Abl:%>lta   A_BACK_POSS_AN_CLIT_OPT      ;
@@ -152,7 +152,7 @@ LEXICON A_FRONT_WEAK_SINGULARS
 !!€ tyhmän: tyhmä+A+Sg+Gen
 !!€ tyhmättä: tyhmä+A+Sg+Abe
 0    A_FRONT_PLNOM_CLIT   ;
-+Sg+Gen:%>n     NOMINAL   ;
++Sg+Gen#:%>n     NOMINAL   ;
 +Sg+Gen:%>n     A_FRONT_CLIT_OPT   ;
 +Sg+Abe:%>ttä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
 +Sg+Abl:%>ltä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
