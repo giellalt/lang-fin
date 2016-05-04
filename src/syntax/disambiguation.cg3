@@ -4806,15 +4806,6 @@ SUBSTITUTE (Cmpnd @+FAUXV) (Cmpnd) (CS Cmpnd @+FAUXV) ; # ???
 # END
 
 
-# TP: For fin-est MT only
-
-LIST P1 = P1;
-LIST P2 = P2;
-LIST P3 = P3;
-
-SUBSTITUTE Pers P1 ("minä") OR ("me") ;
-SUBSTITUTE Pers P2 ("sinä") OR ("te") ;
-SUBSTITUTE Pers P3 ("hän") OR ("he") ;
 
 # Käänsin englannista viroksi ja päinvastoin (ks->adit)
 
