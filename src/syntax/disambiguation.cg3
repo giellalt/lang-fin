@@ -115,16 +115,16 @@ LIST ActPass = Act Pass Pss ;
 
 LIST Sg_Pl = (Sg Pl) ; 
 LIST Pl = Pl Sg/Pl ; 
-LIST Pl1 = Pl1 ; 
-LIST Pl2 = Pl2 ; 
-LIST Pl3 = Pl3 ; 
-LIST Pl123 = Pl1 Pl2 Pl3 ; 
+LIST Pl1 = Pl1 (p1 pl) ; 
+LIST Pl2 = Pl2 (p2 pl) ; 
+LIST Pl3 = Pl3 (p3 pl) ; 
+LIST Pl123 = Pl1 Pl2 Pl3 (p1 pl) (p2 pl) (p3 pl) ; 
 
 LIST Sg = Sg Sg/Pl ; 
-LIST Sg1 = Sg1 ; 
-LIST Sg2 = Sg2 ; 
-LIST Sg3 = Sg3 ; 
-LIST Sg123 = Sg1 Sg2 Sg3 ; 
+LIST Sg1 = Sg1 (p1 sg) ; # second for apertium 
+LIST Sg2 = Sg2 (p2 sg) ; 
+LIST Sg3 = Sg3 (p3 sg) ; 
+LIST Sg123 = Sg1 Sg2 Sg3 (p1 sg) (p2 sg) (p3 sg) ; 
 
 LIST PxSg1 = PxSg1 ;
 LIST PxSg2 = PxSg2 ;
@@ -279,7 +279,7 @@ LIST PCPs = AgPrc PrfPrc PrsPrc ;
 
 LIST PrsPrc_InfMa_InfE_REF_TEMP = PrsPrc (PrfPrc Gen) (PrfPrc Par) InfMa InfE ; 
 LIST Imprt = Imprt ;
-LIST ImprtActSg2 = (Imprt Act Sg2) ;
+LIST ImprtActSg2 = (Imprt Act Sg2) (Imprt Act p2 sg) ;
 
 LIST Ind = Ind ;
 LIST Cond = Cond ;
@@ -832,9 +832,6 @@ LIST WORD = N A Adv V Pron CS CC Po Pr Adp Interj Pcle Num Abbr ACR ; # removed 
 LIST SGPRON = (Pron Sg1) (Pron Sg2) (Pron Sg3) (Pron Sg) ; # (Pron PxSg1) (Pron PxSg2) (Pron PxSg3);
 LIST PLPRON = (Pron Pl1) (Pron Pl2) (Pron Pl3) (Pron Pl) ; # (Pron PxPl1) (Pron PxPl2) (Pron PxPl3);
 
-LIST SGAGR = VSg1 VSg2 VSg3 ;
-LIST PLAGR = VPl1 VPl2 VPl3 ;
-
 LIST Cmpnd = Cmpnd ;
 
 #LIST Compounds = Pref (N A) (N V) (A V) (Sg Pl) (Nom Gen) (Nom Par) (Gen Par) (Nom Ess) (Gen Ess) (Nom Tra) (Gen Tra) (Nom Ine) (Gen Ine) (Nom Ela) (Gen Ela) (Nom Ill) (Gen Ill) (Nom Ade) (Gen Ade) (Nom Abl) (Gen Abl) (Nom All) (Gen All) (Nom Abe) (Gen Abe) (Nom Com) (Gen Com) (Nom Ins) (Gen Ins) ; # was before changes in morph
@@ -945,8 +942,6 @@ SET POSS_SUFF = PxPl1 | PxPl2 | PxPl3 | PxSg1 | PxSg2 | PxSg3 | Px3 ;
 
 SET ALL_SGPRON = Sg1 OR Sg2 OR Sg3 OR Sg ;
 
-SET ALL_PLPRON = PLPRON OR SGAGR OR N + Pl ;
-
 #SET LEX-N = N - N-DER; not used
 
 SET CNOUN = N - Prop;
@@ -964,6 +959,10 @@ SET VPl1 = V + Pl1 ;
 SET VPl2 = V + Pl2 ;
 SET VPl3 = V + Pl3 ;
                 
+SET SGAGR = VSg1 OR VSg2 OR VSg3 ;
+SET PLAGR = VPl1 OR VPl2 OR VPl3 ;
+SET ALL_PLPRON = PLPRON OR SGAGR OR N + Pl ;
+
 
 # Boundaries
 # ----------
@@ -1375,35 +1374,35 @@ IFF ("osalta") + Adv + POSS_SUFF (NEGATE -1 Abl) ;
 # ++ TP ++ 
 
 
-SUBSTITUTE (Nom\#toista) (Nom \#toista <clash>) (Nom\#toista) ;
-SUBSTITUTE (Nom\#kymmentä) (Nom \#kymmentä <clash>) (Nom\#kymmentä) ;
-SUBSTITUTE (Gen\#toista) (Gen \#toista <clash>) (Gen\#toista) ;
-SUBSTITUTE (Gen\#kymmentä) (Gen \#kymmentä <clash>) (Gen\#kymmentä) ;
-SUBSTITUTE (Par\#toista) (Par \#toista <clash>) (Par\#toista) ;
-SUBSTITUTE (Par\#kymmentä) (Par \#kymmentä <clash>) (Par\#kymmentä) ;
-SUBSTITUTE (Ill\#toista) (Ill \#toista <clash>) (Ill\#toista) ;
-SUBSTITUTE (Ill\#kymmentä) (Ill \#kymmentä <clash>) (Ill\#kymmentä) ;
-SUBSTITUTE (Ine\#toista) (Ine \#toista <clash>) (Ine\#toista) ;
-SUBSTITUTE (Ine\#kymmentä) (Ine \#kymmentä <clash>) (Ine\#kymmentä) ;
-SUBSTITUTE (Ela\#toista) (Ela \#toista <clash>) (Ela\#toista) ;
-SUBSTITUTE (Ela\#kymmentä) (Ela \#kymmentä <clash>) (Ela\#kymmentä) ;
+SUBSTITUTE (Nom\#toista) (Nom \#toista clash) (Nom\#toista) ;
+SUBSTITUTE (Nom\#kymmentä) (Nom \#kymmentä clash) (Nom\#kymmentä) ;
+SUBSTITUTE (Gen\#toista) (Gen \#toista clash) (Gen\#toista) ;
+SUBSTITUTE (Gen\#kymmentä) (Gen \#kymmentä clash) (Gen\#kymmentä) ;
+SUBSTITUTE (Par\#toista) (Par \#toista clash) (Par\#toista) ;
+SUBSTITUTE (Par\#kymmentä) (Par \#kymmentä clash) (Par\#kymmentä) ;
+SUBSTITUTE (Ill\#toista) (Ill \#toista clash) (Ill\#toista) ;
+SUBSTITUTE (Ill\#kymmentä) (Ill \#kymmentä clash) (Ill\#kymmentä) ;
+SUBSTITUTE (Ine\#toista) (Ine \#toista clash) (Ine\#toista) ;
+SUBSTITUTE (Ine\#kymmentä) (Ine \#kymmentä clash) (Ine\#kymmentä) ;
+SUBSTITUTE (Ela\#toista) (Ela \#toista clash) (Ela\#toista) ;
+SUBSTITUTE (Ela\#kymmentä) (Ela \#kymmentä clash) (Ela\#kymmentä) ;
 
-SUBSTITUTE (All\#toista) (All \#toista <clash>) (All\#toista) ;
-SUBSTITUTE (All\#kymmentä) (All \#kymmentä <clash>) (All\#kymmentä) ;
-SUBSTITUTE (Ade\#toista) (Ade \#toista <clash>) (Ade\#toista) ;
-SUBSTITUTE (Ade\#kymmentä) (Ade \#kymmentä <clash>) (Ade\#kymmentä) ;
-SUBSTITUTE (Abl\#toista) (Abl \#toista <clash>) (Abl\#toista) ;
-SUBSTITUTE (Abl\#kymmentä) (Abl \#kymmentä <clash>) (Abl\#kymmentä) ;
-SUBSTITUTE (Tra\#toista) (Tra \#toista <clash>) (Tra\#toista) ;
-SUBSTITUTE (Tra\#kymmentä) (Tra \#kymmentä <clash>) (Tra\#kymmentä) ;
-SUBSTITUTE (Ess\#toista) (Ess \#toista <clash>) (Ess\#toista) ;
-SUBSTITUTE (Ess\#kymmentä) (Ess \#kymmentä <clash>) (Ess\#kymmentä) ;
-SUBSTITUTE (Abe\#toista) (Abe \#toista <clash>) (Abe\#toista) ;
-SUBSTITUTE (Abe\#kymmentä) (Abe \#kymmentä <clash>) (Abe\#kymmentä) ;
-SUBSTITUTE (Com\#toista) (Com \#toista <clash>) (Com\#toista) ;
-SUBSTITUTE (Com\#kymmentä) (Com \#kymmentä <clash>) (Com\#kymmentä) ;
+SUBSTITUTE (All\#toista) (All \#toista clash) (All\#toista) ;
+SUBSTITUTE (All\#kymmentä) (All \#kymmentä clash) (All\#kymmentä) ;
+SUBSTITUTE (Ade\#toista) (Ade \#toista clash) (Ade\#toista) ;
+SUBSTITUTE (Ade\#kymmentä) (Ade \#kymmentä clash) (Ade\#kymmentä) ;
+SUBSTITUTE (Abl\#toista) (Abl \#toista clash) (Abl\#toista) ;
+SUBSTITUTE (Abl\#kymmentä) (Abl \#kymmentä clash) (Abl\#kymmentä) ;
+SUBSTITUTE (Tra\#toista) (Tra \#toista clash) (Tra\#toista) ;
+SUBSTITUTE (Tra\#kymmentä) (Tra \#kymmentä clash) (Tra\#kymmentä) ;
+SUBSTITUTE (Ess\#toista) (Ess \#toista clash) (Ess\#toista) ;
+SUBSTITUTE (Ess\#kymmentä) (Ess \#kymmentä clash) (Ess\#kymmentä) ;
+SUBSTITUTE (Abe\#toista) (Abe \#toista clash) (Abe\#toista) ;
+SUBSTITUTE (Abe\#kymmentä) (Abe \#kymmentä clash) (Abe\#kymmentä) ;
+SUBSTITUTE (Com\#toista) (Com \#toista clash) (Com\#toista) ;
+SUBSTITUTE (Com\#kymmentä) (Com \#kymmentä clash) (Com\#kymmentä) ;
 
-REMOVE (<clash>);
+REMOVE (clash);
 
 SUBSTITUTE (?) (Po ?-) GenLeft OR ParLeft;
 SUBSTITUTE (?) (Pr ?-) GenRight OR ParRight;
@@ -1587,7 +1586,7 @@ SELECT Sem_Geo (0/1 Geo_dir) ;
 SELECT SUB:1 Sem_Geo (0 Geo_word) ;
 SELECT SUB:1 Sem_Geo (0/1 Geo_word) ;
 
-REMOVE KEEPORDER Prop (0 ("(.*)"r) + N - Prop) (<*-1C ("$1"v) + N - Prop) ; 
+#REMOVE KEEPORDER Prop (0  ("(.*)"r) + N - Prop) (<*-1C ("$1"v) + N - Prop) ; 
 SELECT KEEPORDER ("(.*)"r) + Prop (<*-1C ("$1"v) + Prop) ; 
 
 SELECT NORJA; # lemma
@@ -4804,10 +4803,18 @@ SUBSTITUTE CLB (*) CLB ;
 SUBSTITUTE (Cmpnd @+FAUXV) (Cmpnd) (CS Cmpnd @+FAUXV) ; # ???
 
 
-END
+# END
 
 
 # TP: For fin-est MT only
+
+LIST P1 = P1;
+LIST P2 = P2;
+LIST P3 = P3;
+
+SUBSTITUTE Pers P1 ("minä") OR ("me") ;
+SUBSTITUTE Pers P2 ("sinä") OR ("te") ;
+SUBSTITUTE Pers P3 ("hän") OR ("he") ;
 
 # Käänsin englannista viroksi ja päinvastoin (ks->adit)
 
