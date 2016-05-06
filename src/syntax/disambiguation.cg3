@@ -115,16 +115,16 @@ LIST ActPass = Act Pass Pss ;
 
 LIST Sg_Pl = (Sg Pl) ; 
 LIST Pl = Pl Sg/Pl ; 
-LIST Pl1 = Pl1 (p1 pl) ; 
-LIST Pl2 = Pl2 (p2 pl) ; 
-LIST Pl3 = Pl3 (p3 pl) ; 
-LIST Pl123 = Pl1 Pl2 Pl3 (p1 pl) (p2 pl) (p3 pl) ; 
+LIST Pl1 = Pl1 ; # apertium (p1 pl) ; 
+LIST Pl2 = Pl2 ; # apertium (p2 pl) ; 
+LIST Pl3 = Pl3 ; # apertium (p3 pl) ; 
+LIST Pl123 = Pl1 Pl2 Pl3 ; # apertium (p1 pl) (p2 pl) (p3 pl) ; 
 
 LIST Sg = Sg Sg/Pl ; 
-LIST Sg1 = Sg1 (p1 sg) ; # second for apertium 
-LIST Sg2 = Sg2 (p2 sg) ; 
-LIST Sg3 = Sg3 (p3 sg) ; 
-LIST Sg123 = Sg1 Sg2 Sg3 (p1 sg) (p2 sg) (p3 sg) ; 
+LIST Sg1 = Sg1 ; # apertium (p1 sg)
+LIST Sg2 = Sg2 ; # apertium (p2 sg) 
+LIST Sg3 = Sg3 ; # apertium (p3 sg)
+LIST Sg123 = Sg1 Sg2 Sg3 ; # apertium (p1 sg) (p2 sg) (p3 sg) ; 
 
 LIST PxSg1 = PxSg1 ;
 LIST PxSg2 = PxSg2 ;
@@ -279,7 +279,6 @@ LIST PCPs = AgPrc PrfPrc PrsPrc ;
 
 LIST PrsPrc_InfMa_InfE_REF_TEMP = PrsPrc (PrfPrc Gen) (PrfPrc Par) InfMa InfE ; 
 LIST Imprt = Imprt ;
-LIST ImprtActSg2 = (Imprt Act Sg2) (Imprt Act p2 sg) ;
 
 LIST Ind = Ind ;
 LIST Cond = Cond ;
@@ -829,9 +828,6 @@ LIST Pe4 = Pe4 ;
 
 LIST WORD = N A Adv V Pron CS CC Po Pr Adp Interj Pcle Num Abbr ACR ; # removed  \?
 
-LIST SGPRON = (Pron Sg1) (Pron Sg2) (Pron Sg3) (Pron Sg) ; # (Pron PxSg1) (Pron PxSg2) (Pron PxSg3);
-LIST PLPRON = (Pron Pl1) (Pron Pl2) (Pron Pl3) (Pron Pl) ; # (Pron PxPl1) (Pron PxPl2) (Pron PxPl3);
-
 LIST Cmpnd = Cmpnd ;
 
 #LIST Compounds = Pref (N A) (N V) (A V) (Sg Pl) (Nom Gen) (Nom Par) (Gen Par) (Nom Ess) (Gen Ess) (Nom Tra) (Gen Tra) (Nom Ine) (Gen Ine) (Nom Ela) (Gen Ela) (Nom Ill) (Gen Ill) (Nom Ade) (Gen Ade) (Nom Abl) (Gen Abl) (Nom All) (Gen All) (Nom Abe) (Gen Abe) (Nom Com) (Gen Com) (Nom Ins) (Gen Ins) ; # was before changes in morph
@@ -873,6 +869,10 @@ LIST W0 = <W:0> ;
 LIST Use_Hyphen = Use_Hyphen Use/Hyphen ;
 LIST Use_NoHyphens = Use_NoHyphens Use/NoHyphens ;
 
+LIST SGa = Sg Sg1 Sg2 Sg3;
+LIST PLa = Pl Pl1 Pl2 Pl3;
+
+
 # ========================================================================
 
 # ============= #
@@ -888,6 +888,11 @@ SET VERB = V - DER;
 
     # Personal Pronouns
     # -----------------
+
+SET ImprtActSg2 = Imprt + Act + Sg2 ;
+
+SET SGPRON = Pron + SGa;
+SET PLPRON = Pron + PLa;
 
 SET OBJ-CASEs = NomPl OR Par OR GenSg ;
 
