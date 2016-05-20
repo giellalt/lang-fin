@@ -5,548 +5,548 @@
 !! not compare, use qualifiers classification instead.
 !! VISK § 300
 
-LEXICON A_BACK_SUPERLATIVE
+LEXICON ADJ_BACK_SUPERLATIVE
 !! The superlative derivation is formed by in suffix, which creates a new
 !! adjective baseform. This baseform is handled separately to avoid double
 !! superlatives.
 !!€gt-norm: Adjective superlative front
 !!€ rumin: ruma+A+Sup+Sg+Nom # ugliest
-+Sup:»i  A_BACK_SUPERLATIVE_STEMS ;
++Sup:»i  ADJ_BACK_SUPERLATIVE_STEMS ;
 
 
-LEXICON A_FRONT_SUPERLATIVE
+LEXICON ADJ_FRONT_SUPERLATIVE
 !!€gt-norm: Adjective superlative back
 !!€ tyhmin: tyhmä+A+Sup+Sg+Nom # stupidest
-+Sup:»i  A_FRONT_SUPERLATIVE_STEMS ;
++Sup:»i  ADJ_FRONT_SUPERLATIVE_STEMS ;
 
-LEXICON A_BACK_COMPARATIVE
+LEXICON ADJ_BACK_COMPARATIVE
 !! The comparative derivation is formed by mpi suffix, which creates a new
 !! adjective baseform. This adjective is handled separately
 !! to avoid double comparative forms.
 !!€gt-norm: Adjective comparative front
 !!€ rumempi: ruma+A+Comp+Sg+Nom
-+Comp:»m     A_BACK_COMPARATIVE_STEMS ;
++Comp:»m     ADJ_BACK_COMPARATIVE_STEMS ;
 
-LEXICON A_FRONT_COMPARATIVE
+LEXICON ADJ_FRONT_COMPARATIVE
 !!€gt-norm: Adjective comparative back
 !!€ tyhmempi: tyhmä+A+Comp+Sg+Nom
-+Comp:»m     A_FRONT_COMPARATIVE_STEMS ;
++Comp:»m     ADJ_FRONT_COMPARATIVE_STEMS ;
 
 
-LEXICON A_BACK_COMPARATIVE_STEMS
+LEXICON ADJ_BACK_COMPARATIVE_STEMS
 !! This inflectional part attached to adjective comparative stems to avoid
 !! circularity in comparative derivations:
 !!€gt-norm: Adjective comparative inflection back
 !!€ nopeampi: nopea+A+Comp+Sg+Nom # faster
 !!$ nopeammampi: nopea+A+Comp+Comp+Sg+Nom 
 !!$ nopeammammampi: nopea+A+Comp+Comp+Comp+Sg+Nom
-0:pi  A_BACK_NOMINATIVE    ;
-0:pa  A_BACK_STRONG_SINGULARS    ;
-0:ma  A_BACK_WEAK_SINGULARS    ;
-0:p   A_BACK_STRONG_PLURALS ;
-0:m    A_BACK_WEAK_PLURALS    ;
-0:pa  A_BACK_PARTITIVE_A ;
-0:pi  A_BACK_ILLATIVE_IN ;
-0:p    A_BACK_PARTITIVE_IA    ;
-0:p    A_BACK_GENITIVE_IEN    ;
-0:pa   A_BACK_GENITIVE_IN    ;
-0:p    A_BACK_ILLATIVE_IIN    ;
+0:pi  ADJ_BACK_NOMINATIVE    ;
+0:pa  ADJ_BACK_STRONG_SINGULARS    ;
+0:ma  ADJ_BACK_WEAK_SINGULARS    ;
+0:p   ADJ_BACK_STRONG_PLURALS ;
+0:m    ADJ_BACK_WEAK_PLURALS    ;
+0:pa  ADJ_BACK_PARTITIVE_A ;
+0:pi  ADJ_BACK_ILLATIVE_IN ;
+0:p    ADJ_BACK_PARTITIVE_IA    ;
+0:p    ADJ_BACK_GENITIVE_IEN    ;
+0:pa   ADJ_BACK_GENITIVE_IN    ;
+0:p    ADJ_BACK_ILLATIVE_IIN    ;
 
-LEXICON A_FRONT_COMPARATIVE_STEMS
+LEXICON ADJ_FRONT_COMPARATIVE_STEMS
 !!€gt-norm: Adjective comparative inflection front
 !!€ tyhmempänä: tyhmä+A+Comp+Sg+Ess
 !!$ tyhmemmämpi: tyhmä+A+Comp+Comp+Sg+Nom
-0:pi  A_FRONT_NOMINATIVE    ;
-0:pä  A_FRONT_STRONG_SINGULARS    ;
-0:mä  A_FRONT_WEAK_SINGULARS    ;
-0:p   A_FRONT_STRONG_PLURALS ;
-0:m    A_FRONT_WEAK_PLURALS    ;
-0:pä  A_FRONT_PARTITIVE_Ä ;
-0:pi  A_FRONT_ILLATIVE_IN ;
-0:p    A_FRONT_PARTITIVE_IÄ    ;
-0:p    A_FRONT_GENITIVE_IEN    ;
-0:pä   A_FRONT_GENITIVE_IN    ;
-0:p    A_FRONT_ILLATIVE_IIN    ;
+0:pi  ADJ_FRONT_NOMINATIVE    ;
+0:pä  ADJ_FRONT_STRONG_SINGULARS    ;
+0:mä  ADJ_FRONT_WEAK_SINGULARS    ;
+0:p   ADJ_FRONT_STRONG_PLURALS ;
+0:m    ADJ_FRONT_WEAK_PLURALS    ;
+0:pä  ADJ_FRONT_PARTITIVE_Ä ;
+0:pi  ADJ_FRONT_ILLATIVE_IN ;
+0:p    ADJ_FRONT_PARTITIVE_IÄ    ;
+0:p    ADJ_FRONT_GENITIVE_IEN    ;
+0:pä   ADJ_FRONT_GENITIVE_IN    ;
+0:p    ADJ_FRONT_ILLATIVE_IIN    ;
 
-LEXICON A_BACK_SUPERLATIVE_STEMS
+LEXICON ADJ_BACK_SUPERLATIVE_STEMS
 !! This inflectional part is attached to adjective superlative stems to avoid
 !! circularity in superlative  derivations:
 !!€gt-norm: Adjective superlative inflection back
 !!€ nopein: nopea+A+Sup+Sg+Nom
 !!$ nopeimmimpia: nopea+A+Sup+Sup+Sg+Par
 !!$ nopeimmimmin: nopea+A+Sup+Sup+Sup+Sg+Nom
-0:n   A_BACK_NOMINATIVE    ;
-0:mpa   A_BACK_STRONG_SINGULARS    ;
-0:mma   A_BACK_WEAK_SINGULARS   ;
-0:mp    A_BACK_STRONG_PLURALS ;
-0:mm    A_BACK_WEAK_PLURALS    ;
-0:n   A_BACK_PARTITIVE_TA    ;
-0:mpa   A_BACK_ILLATIVE_AN ;
-0:mp    A_BACK_PARTITIVE_IA    ;
-0:mp    A_BACK_GENITIVE_IEN    ;
-0:n   A_BACK_GENITIVE_TEN    ;
-0:mpa   A_BACK_GENITIVE_IN ;
-0:mp    A_BACK_ILLATIVE_IIN    ;
+0:n   ADJ_BACK_NOMINATIVE    ;
+0:mpa   ADJ_BACK_STRONG_SINGULARS    ;
+0:mma   ADJ_BACK_WEAK_SINGULARS   ;
+0:mp    ADJ_BACK_STRONG_PLURALS ;
+0:mm    ADJ_BACK_WEAK_PLURALS    ;
+0:n   ADJ_BACK_PARTITIVE_TA    ;
+0:mpa   ADJ_BACK_ILLATIVE_AN ;
+0:mp    ADJ_BACK_PARTITIVE_IA    ;
+0:mp    ADJ_BACK_GENITIVE_IEN    ;
+0:n   ADJ_BACK_GENITIVE_TEN    ;
+0:mpa   ADJ_BACK_GENITIVE_IN ;
+0:mp    ADJ_BACK_ILLATIVE_IIN    ;
 
-LEXICON A_FRONT_SUPERLATIVE_STEMS
+LEXICON ADJ_FRONT_SUPERLATIVE_STEMS
 !!€gt-norm: Adjective superlative inflection front
 !!€ tyhmin: tyhmä+A+Sup+Sg+Nom
 !!$ tyhmimmimpiä: tyhmä+A+Sup+Sup+Sg+Par
-0:n   A_FRONT_NOMINATIVE    ;
-0:mpä   A_FRONT_STRONG_SINGULARS    ;
-0:mmä   A_FRONT_WEAK_SINGULARS   ;
-0:mp    A_FRONT_STRONG_PLURALS ;
-0:mm    A_FRONT_WEAK_PLURALS    ;
-0:n   A_FRONT_PARTITIVE_TÄ    ;
-0:mpä   A_FRONT_ILLATIVE_ÄN ;
-0:mp    A_FRONT_PARTITIVE_IÄ    ;
-0:mp    A_FRONT_GENITIVE_IEN    ;
-0:n   A_FRONT_GENITIVE_TEN    ;
-0:mpä   A_FRONT_GENITIVE_IN ;
-0:mp    A_FRONT_ILLATIVE_IIN    ;
+0:n   ADJ_FRONT_NOMINATIVE    ;
+0:mpä   ADJ_FRONT_STRONG_SINGULARS    ;
+0:mmä   ADJ_FRONT_WEAK_SINGULARS   ;
+0:mp    ADJ_FRONT_STRONG_PLURALS ;
+0:mm    ADJ_FRONT_WEAK_PLURALS    ;
+0:n   ADJ_FRONT_PARTITIVE_TÄ    ;
+0:mpä   ADJ_FRONT_ILLATIVE_ÄN ;
+0:mp    ADJ_FRONT_PARTITIVE_IÄ    ;
+0:mp    ADJ_FRONT_GENITIVE_IEN    ;
+0:n   ADJ_FRONT_GENITIVE_TEN    ;
+0:mpä   ADJ_FRONT_GENITIVE_IN ;
+0:mp    ADJ_FRONT_ILLATIVE_IIN    ;
 
 
 !! !!Regular adjective inflection
 !! The adjective inflection apart from the comparative and superlative
 !! derivations is same as with nouns. I will only show examples here.
 
-LEXICON A_BACK_NOMINATIVE
+LEXICON ADJ_BACK_NOMINATIVE
 !!€gt-norm: Adjective nominative back
 !!€ rumapa: ruma+A+Sg+Nom+Foc/pa
-+Sg+Nom:0   A_BACK_CLIT_OPT  ;
++Sg+Nom:0   ADJ_BACK_CLIT_OPT  ;
 
-LEXICON A_FRONT_NOMINATIVE
+LEXICON ADJ_FRONT_NOMINATIVE
 !!€gt-norm: Adjective nominative front
 !!€ tyhmäpä: tyhmä+A+Sg+Nom+Foc/pa
-+Sg+Nom:0   A_FRONT_CLIT_OPT  ;
++Sg+Nom:0   ADJ_FRONT_CLIT_OPT  ;
 
-LEXICON A_BACK_PLNOM_CLIT
+LEXICON ADJ_BACK_PLNOM_CLIT
 !!€gt-norm: Adjective pl tant back
 !!€ rumat: ruma+A+Pl+Nom
-+Pl+Nom:t     A_BACK_CLIT_OPT  ;
++Pl+Nom:t     ADJ_BACK_CLIT_OPT  ;
 
-LEXICON A_FRONT_PLNOM_CLIT
+LEXICON ADJ_FRONT_PLNOM_CLIT
 !!€gt-norm: Adjective pl tant front
 !!€ tyhmät: tyhmä+A+Pl+Nom
-+Pl+Nom:t     A_FRONT_CLIT_OPT  ;
++Pl+Nom:t     ADJ_FRONT_CLIT_OPT  ;
 
-LEXICON A_BACK_WEAK_SINGULARS
+LEXICON ADJ_BACK_WEAK_SINGULARS
 !!€gt-norm: Adjective regular singular back
 !!€ ruman: ruma+A+Sg+Gen
 !!€ rumatta: ruma+A+Sg+Abe
-0    A_BACK_PLNOM_CLIT   ;
+0    ADJ_BACK_PLNOM_CLIT   ;
 +Sg+Gen#:%>n     NOMINAL   ;
-+Sg+Gen:%>n     A_BACK_CLIT_OPT   ;
-+Sg+Abe:%>tta   A_BACK_POSS_AN_CLIT_OPT      ;
-+Sg+Abl:%>lta   A_BACK_POSS_AN_CLIT_OPT      ;
-+Sg+Ade:%>lla   A_BACK_POSS_AN_CLIT_OPT      ;
-+Sg+All:%>lle   A_BACK_POSS_EN_CLIT_OPT      ;
-+Sg+Ela:%>sta   A_BACK_POSS_AN_CLIT_OPT      ;
-+Sg+Ine:%>ssa   A_BACK_POSS_AN_CLIT_OPT      ;
-+Sg+Tra:%>kse   A_BACK_POSS_EN_OBL       ;
-+Sg+Tra:%>ksi   A_BACK_CLIT_OPT     ;
-+Sg+Tra:%>ksi   A_BACK_CLIT_OPT     ;
++Sg+Gen:%>n     ADJ_BACK_CLIT_OPT   ;
++Sg+Abe:%>tta   ADJ_BACK_POSS_AN_CLIT_OPT      ;
++Sg+Abl:%>lta   ADJ_BACK_POSS_AN_CLIT_OPT      ;
++Sg+Ade:%>lla   ADJ_BACK_POSS_AN_CLIT_OPT      ;
++Sg+All:%>lle   ADJ_BACK_POSS_EN_CLIT_OPT      ;
++Sg+Ela:%>sta   ADJ_BACK_POSS_AN_CLIT_OPT      ;
++Sg+Ine:%>ssa   ADJ_BACK_POSS_AN_CLIT_OPT      ;
++Sg+Tra:%>kse   ADJ_BACK_POSS_EN_OBL       ;
++Sg+Tra:%>ksi   ADJ_BACK_CLIT_OPT     ;
++Sg+Tra:%>ksi   ADJ_BACK_CLIT_OPT     ;
 
-LEXICON A_FRONT_WEAK_SINGULARS
+LEXICON ADJ_FRONT_WEAK_SINGULARS
 !!€gt-norm: Adjective regular singular front
 !!€ tyhmän: tyhmä+A+Sg+Gen
 !!€ tyhmättä: tyhmä+A+Sg+Abe
-0    A_FRONT_PLNOM_CLIT   ;
+0    ADJ_FRONT_PLNOM_CLIT   ;
 +Sg+Gen#:%>n     NOMINAL   ;
-+Sg+Gen:%>n     A_FRONT_CLIT_OPT   ;
-+Sg+Abe:%>ttä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
-+Sg+Abl:%>ltä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
-+Sg+Ade:%>llä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
-+Sg+All:%>lle   A_FRONT_POSS_EN_CLIT_OPT      ;
-+Sg+Ela:%>stä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
-+Sg+Ine:%>ssä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
-+Sg+Tra:%>kse   A_FRONT_POSS_EN_OBL       ;
-+Sg+Tra:%>ksi   A_FRONT_CLIT_OPT     ;
-+Sg+Tra:%>ksi   A_FRONT_CLIT_OPT     ;
++Sg+Gen:%>n     ADJ_FRONT_CLIT_OPT   ;
++Sg+Abe:%>ttä   ADJ_FRONT_POSS_ÄN_CLIT_OPT      ;
++Sg+Abl:%>ltä   ADJ_FRONT_POSS_ÄN_CLIT_OPT      ;
++Sg+Ade:%>llä   ADJ_FRONT_POSS_ÄN_CLIT_OPT      ;
++Sg+All:%>lle   ADJ_FRONT_POSS_EN_CLIT_OPT      ;
++Sg+Ela:%>stä   ADJ_FRONT_POSS_ÄN_CLIT_OPT      ;
++Sg+Ine:%>ssä   ADJ_FRONT_POSS_ÄN_CLIT_OPT      ;
++Sg+Tra:%>kse   ADJ_FRONT_POSS_EN_OBL       ;
++Sg+Tra:%>ksi   ADJ_FRONT_CLIT_OPT     ;
++Sg+Tra:%>ksi   ADJ_FRONT_CLIT_OPT     ;
 
-LEXICON A_BACK_STRONG_SINGULARS
+LEXICON ADJ_BACK_STRONG_SINGULARS
 !!€gt-norm: Adjective regular singular back strongs
 !!€ rumana: ruma+A+Sg+Ess
 !!€ rumani: ruma+A+Sg+Nom+PxSg1
-+Sg+Ess:%>na A_BACK_POSS_AN_CLIT_OPT      ;
-+Sg+Nom:0  A_BACK_POSS   ;
-+Sg+Gen:0  A_BACK_POSS   ;
-+Pl+Nom:0  A_BACK_POSS   ;
++Sg+Ess:%>na ADJ_BACK_POSS_AN_CLIT_OPT      ;
++Sg+Nom:0  ADJ_BACK_POSS   ;
++Sg+Gen:0  ADJ_BACK_POSS   ;
++Pl+Nom:0  ADJ_BACK_POSS   ;
 
-LEXICON A_FRONT_STRONG_SINGULARS
+LEXICON ADJ_FRONT_STRONG_SINGULARS
 !!€gt-norm: Adjective regular singular front strongs
 !!€ tyhmänä: tyhmä+A+Sg+Ess
 !!€ tyhmäni: tyhmä+A+Sg+Nom+PxSg1
-+Sg+Ess:%>nä A_FRONT_POSS_ÄN_CLIT_OPT      ;
-+Sg+Nom:0  A_FRONT_POSS   ;
-+Sg+Gen:0  A_FRONT_POSS   ;
-+Pl+Nom:0  A_FRONT_POSS   ;
++Sg+Ess:%>nä ADJ_FRONT_POSS_ÄN_CLIT_OPT      ;
++Sg+Nom:0  ADJ_FRONT_POSS   ;
++Sg+Gen:0  ADJ_FRONT_POSS   ;
++Pl+Nom:0  ADJ_FRONT_POSS   ;
 
 
-LEXICON A_BACK_WEAK_PLURALS
+LEXICON ADJ_BACK_WEAK_PLURALS
 !!€gt-norm: Adjective regular plural back
 !!€ heikoitta: heikko+A+Pl+Abe
 !!€ heikoilta: heikko+A+Pl+Abl
-+Pl+Abe:%>i%>tta   A_BACK_POSS_AN_CLIT_OPT      ;
-+Pl+Abl:%>i%>lta   A_BACK_POSS_AN_CLIT_OPT      ;
-+Pl+Ade:%>i%>lla   A_BACK_POSS_AN_CLIT_OPT      ;
-+Pl+All:%>i%>lle  A_BACK_POSS_AN_CLIT_OPT      ;
-+Pl+Ela:%>i%>sta   A_BACK_POSS_AN_CLIT_OPT      ;
-+Pl+Ine:%>i%>ssa   A_BACK_POSS_AN_CLIT_OPT      ;
-+Pl+Ins:%>i%>n    A_BACK_CLIT_OPT     ;
-+Pl+Tra:%>i%>kse  A_BACK_POSS_EN_OBL        ;
-+Pl+Tra:%>i%>ksi  A_BACK_CLIT_OPT     ;
++Pl+Abe:%>i%>tta   ADJ_BACK_POSS_AN_CLIT_OPT      ;
++Pl+Abl:%>i%>lta   ADJ_BACK_POSS_AN_CLIT_OPT      ;
++Pl+Ade:%>i%>lla   ADJ_BACK_POSS_AN_CLIT_OPT      ;
++Pl+All:%>i%>lle  ADJ_BACK_POSS_AN_CLIT_OPT      ;
++Pl+Ela:%>i%>sta   ADJ_BACK_POSS_AN_CLIT_OPT      ;
++Pl+Ine:%>i%>ssa   ADJ_BACK_POSS_AN_CLIT_OPT      ;
++Pl+Ins:%>i%>n    ADJ_BACK_CLIT_OPT     ;
++Pl+Tra:%>i%>kse  ADJ_BACK_POSS_EN_OBL        ;
++Pl+Tra:%>i%>ksi  ADJ_BACK_CLIT_OPT     ;
 
-LEXICON A_FRONT_WEAK_PLURALS
+LEXICON ADJ_FRONT_WEAK_PLURALS
 !!€gt-norm: Adjective regular plural front
 !!€ jäykittä: jäykkä+A+Pl+Abe
 !!€ jäykiltä: jäykkä+A+Pl+Abl
-+Pl+Abe:%>i%>ttä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
-+Pl+Abl:%>i%>ltä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
-+Pl+Ade:%>i%>llä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
-+Pl+All:%>i%>lle  A_FRONT_POSS_ÄN_CLIT_OPT      ;
-+Pl+Ela:%>i%>stä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
-+Pl+Ine:%>i%>ssä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
-+Pl+Ins:%>i%>n    A_FRONT_CLIT_OPT     ;
-+Pl+Tra:%>i%>kse  A_FRONT_POSS_EN_OBL        ;
-+Pl+Tra:%>i%>ksi  A_FRONT_CLIT_OPT     ;
++Pl+Abe:%>i%>ttä   ADJ_FRONT_POSS_ÄN_CLIT_OPT      ;
++Pl+Abl:%>i%>ltä   ADJ_FRONT_POSS_ÄN_CLIT_OPT      ;
++Pl+Ade:%>i%>llä   ADJ_FRONT_POSS_ÄN_CLIT_OPT      ;
++Pl+All:%>i%>lle  ADJ_FRONT_POSS_ÄN_CLIT_OPT      ;
++Pl+Ela:%>i%>stä   ADJ_FRONT_POSS_ÄN_CLIT_OPT      ;
++Pl+Ine:%>i%>ssä   ADJ_FRONT_POSS_ÄN_CLIT_OPT      ;
++Pl+Ins:%>i%>n    ADJ_FRONT_CLIT_OPT     ;
++Pl+Tra:%>i%>kse  ADJ_FRONT_POSS_EN_OBL        ;
++Pl+Tra:%>i%>ksi  ADJ_FRONT_CLIT_OPT     ;
 
-LEXICON A_FRONT_STRONG_PLURALS
+LEXICON ADJ_FRONT_STRONG_PLURALS
 !!€gt-norm: Adjective regular plural back strong
 !!€ jäykkinä: jäykkä+A+Pl+Ess
 !!€ jäykkine: jäykkä+A+Cmt
-+Pl+Ess:%>i%>nä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
-+Cmt:%>i%>ne        A_FRONT_POSS_ÄN_CLIT_OPT      ;
++Pl+Ess:%>i%>nä   ADJ_FRONT_POSS_ÄN_CLIT_OPT      ;
++Cmt:%>i%>ne        ADJ_FRONT_POSS_ÄN_CLIT_OPT      ;
 
-LEXICON A_BACK_STRONG_PLURALS
+LEXICON ADJ_BACK_STRONG_PLURALS
 !!€gt-norm: Adjective regular plural front strong
 !!€ heikkoina: heikko+A+Pl+Ess
 !!€ heikkoine: heikko+A+Cmt
-+Pl+Ess:%>i%>na   A_BACK_POSS_AN_CLIT_OPT      ;
-+Cmt:%>i%>ne        A_BACK_POSS_AN_CLIT_OPT      ;
++Pl+Ess:%>i%>na   ADJ_BACK_POSS_AN_CLIT_OPT      ;
++Cmt:%>i%>ne        ADJ_BACK_POSS_AN_CLIT_OPT      ;
 
-LEXICON A_BACK_PARTITIVE_A
+LEXICON ADJ_BACK_PARTITIVE_A
 !!€gt-norm: Adjective singular partitive a
 !!€ tarkkaa: tarkka+A+Sg+Par
 !!€ tarkkaansa: tarkka+A+Sg+Par+PxSg3
-+Sg+Par:%>a      A_BACK_POSS_CLIT_OPT      ;
++Sg+Par:%>a      ADJ_BACK_POSS_CLIT_OPT      ;
 
-LEXICON A_FRONT_PARTITIVE_Ä
+LEXICON ADJ_FRONT_PARTITIVE_Ä
 !!€gt-norm: Adjective singular partitive ä
 !!€ tyhmää: tyhmä+A+Sg+Par
 !!€ tyhmäänsä: tyhmä+A+Sg+Par+PxSg3
-+Sg+Par:%>ä      A_FRONT_POSS_CLIT_OPT      ;
++Sg+Par:%>ä      ADJ_FRONT_POSS_CLIT_OPT      ;
 
-LEXICON A_BACK_PARTITIVE_A_AN
+LEXICON ADJ_BACK_PARTITIVE_A_AN
 !!€gt-norm: Adjective singular partitive a poss aan
 !!€ jaloa: jalo+A+Sg+Par
 !!€ jaloaan: jalo+A+Sg+Par+PxSg3
-+Sg+Par:%>a      A_BACK_POSS_AN_CLIT_OPT      ;
++Sg+Par:%>a      ADJ_BACK_POSS_AN_CLIT_OPT      ;
 
-LEXICON A_FRONT_PARTITIVE_Ä_ÄN
+LEXICON ADJ_FRONT_PARTITIVE_Ä_ÄN
 !!€gt-norm: Adjective singular partitive ä poss ään
 !!€ hölöä: hölö+A+Sg+Par
 !!€ hölöään: hölö+A+Sg+Par+PxSg3
-0+Sg+Par:%>ä     A_FRONT_POSS_ÄN_CLIT_OPT     ;
+0+Sg+Par:%>ä     ADJ_FRONT_POSS_ÄN_CLIT_OPT     ;
 
-LEXICON A_BACK_PARTITIVE_TA
+LEXICON ADJ_BACK_PARTITIVE_TA
 !!€gt-norm: Adjective singular partitive ta
 !!€ vapaata: vapaa+A+Sg+Par
-+Sg+Par:ta     A_BACK_POSS_AN_CLIT_OPT      ;
++Sg+Par:ta     ADJ_BACK_POSS_AN_CLIT_OPT      ;
 
-LEXICON A_FRONT_PARTITIVE_TÄ
+LEXICON ADJ_FRONT_PARTITIVE_TÄ
 !!€gt-norm: Adjective singular partitive tä
 !!€ pientä: pieni+A+Sg+Par
-+Sg+Par:%>tä     A_FRONT_POSS_ÄN_CLIT_OPT      ;
++Sg+Par:%>tä     ADJ_FRONT_POSS_ÄN_CLIT_OPT      ;
 
-LEXICON A_BACK_ILLATIVE_HAN
+LEXICON ADJ_BACK_ILLATIVE_HAN
 !!€gt-norm: Adjective singular illative han
 !!€ peeaahan: peeaa+A+Sg+Ill
-+Sg+Ill:%>han    A_BACK_CLIT_OPT         ;
-+Sg+Ill:%>ha     A_BACK_POSS     ;
++Sg+Ill:%>han    ADJ_BACK_CLIT_OPT         ;
++Sg+Ill:%>ha     ADJ_BACK_POSS     ;
 
-LEXICON A_FRONT_ILLATIVE_HIN
+LEXICON ADJ_FRONT_ILLATIVE_HIN
 !!€gt-norm: Adjective singular illative hin
 !!€ gayhin: gay+A+Sg+Ill
-+Sg+Ill:%>hin    A_FRONT_CLIT_OPT        ;
-+Sg+Ill:%>hi     A_FRONT_POSS     ;
++Sg+Ill:%>hin    ADJ_FRONT_CLIT_OPT        ;
++Sg+Ill:%>hi     ADJ_FRONT_POSS     ;
 
-LEXICON A_BACK_ILLATIVE_HUN
+LEXICON ADJ_BACK_ILLATIVE_HUN
 !!€gt-norm: Adjective singular illative hun
 !!€ muuhun: muu+A+Sg+Ill
-+Sg+Ill:%>hun    A_BACK_CLIT_OPT        ;
-+Sg+Ill:%>hu     A_BACK_POSS     ;
++Sg+Ill:%>hun    ADJ_BACK_CLIT_OPT        ;
++Sg+Ill:%>hu     ADJ_BACK_POSS     ;
 
-LEXICON A_FRONT_ILLATIVE_HYN
+LEXICON ADJ_FRONT_ILLATIVE_HYN
 !!€gt-norm: Adjective singular illative hyn
 !!€ gayhynpä: gay+A+Sg+Ill+Foc/pa
-+Sg+Ill:%>hyn    A_FRONT_CLIT_OPT         ;
-+Sg+Ill:%>hy     A_FRONT_POSS     ;
++Sg+Ill:%>hyn    ADJ_FRONT_CLIT_OPT         ;
++Sg+Ill:%>hy     ADJ_FRONT_POSS     ;
 
-LEXICON A_FRONT_ILLATIVE_HÄN
+LEXICON ADJ_FRONT_ILLATIVE_HÄN
 !!€gt-norm: Adjective singular illative hän
 !!€ syypäähän: syypää+A+Sg+Ill
-+Sg+Ill:%>hän    A_FRONT_CLIT_OPT         ;
-+Sg+Ill:%>hä     A_FRONT_POSS     ;
++Sg+Ill:%>hän    ADJ_FRONT_CLIT_OPT         ;
++Sg+Ill:%>hä     ADJ_FRONT_POSS     ;
 
-LEXICON A_BACK_ILLATIVE_SEEN
+LEXICON ADJ_BACK_ILLATIVE_SEEN
 !!€gt-norm: Adjective singular illative seen back
 !!€ vapaaseen: vapaa+A+Sg+Ill
-+Sg+Ill:%>seen      A_BACK_CLIT_OPT     ;
-+Sg+Ill:%>see       A_BACK_POSS     ;
++Sg+Ill:%>seen      ADJ_BACK_CLIT_OPT     ;
++Sg+Ill:%>see       ADJ_BACK_POSS     ;
 
-LEXICON A_FRONT_ILLATIVE_SEEN
+LEXICON ADJ_FRONT_ILLATIVE_SEEN
 !!€gt-norm: Adjective singular illative seen front
 !!€ työlääseen: työläs+A+Sg+Ill
-+Sg+Ill:%>seen      A_FRONT_CLIT_OPT     ;
-+Sg+Ill:%>see       A_FRONT_POSS     ;
++Sg+Ill:%>seen      ADJ_FRONT_CLIT_OPT     ;
++Sg+Ill:%>see       ADJ_FRONT_POSS     ;
 
-LEXICON A_BACK_ILLATIVE_AN
+LEXICON ADJ_BACK_ILLATIVE_AN
 !!€gt-norm: Adjective singular illative an
 !!€ rumaan: ruma+A+Sg+Ill
-+Sg+Ill:%>an     A_BACK_CLIT_OPT         ;
-+Sg+Ill:%>a      A_BACK_POSS     ;
++Sg+Ill:%>an     ADJ_BACK_CLIT_OPT         ;
++Sg+Ill:%>a      ADJ_BACK_POSS     ;
 
 
-LEXICON A_BACK_ILLATIVE_EN
+LEXICON ADJ_BACK_ILLATIVE_EN
 !!€gt-norm: Adjective singular illative en back
 !!€ suureen: suuri+A+Sg+Ill
-+Sg+Ill:%>en     A_BACK_CLIT_OPT         ;
-+Sg+Ill:%>e      A_BACK_POSS     ;
++Sg+Ill:%>en     ADJ_BACK_CLIT_OPT         ;
++Sg+Ill:%>e      ADJ_BACK_POSS     ;
 
-LEXICON A_FRONT_ILLATIVE_EN
+LEXICON ADJ_FRONT_ILLATIVE_EN
 !!€gt-norm: Adjective singular illative en front
 !!€ pieneen: pieni+A+Sg+Ill
-+Sg+Ill:%>en     A_FRONT_CLIT_OPT         ;
-+Sg+Ill:%>e      A_FRONT_POSS     ;
++Sg+Ill:%>en     ADJ_FRONT_CLIT_OPT         ;
++Sg+Ill:%>e      ADJ_FRONT_POSS     ;
 
-LEXICON A_BACK_ILLATIVE_IN
+LEXICON ADJ_BACK_ILLATIVE_IN
 !!€gt-norm: Adjective singular illative in back
 !!€ tuhtiin: tuhti+A+Sg+Ill
-+Sg+Ill:%>in     A_BACK_CLIT_OPT         ;
-+Sg+Ill:%>i      A_BACK_POSS     ;
++Sg+Ill:%>in     ADJ_BACK_CLIT_OPT         ;
++Sg+Ill:%>i      ADJ_BACK_POSS     ;
 
-LEXICON A_FRONT_ILLATIVE_IN
+LEXICON ADJ_FRONT_ILLATIVE_IN
 !!€gt-norm: Adjective singular illative in front
 !!€ rehtiin: rehti+A+Sg+Ill
-+Sg+Ill:%>in     A_FRONT_CLIT_OPT         ;
-+Sg+Ill:%>i      A_FRONT_POSS     ;
++Sg+Ill:%>in     ADJ_FRONT_CLIT_OPT         ;
++Sg+Ill:%>i      ADJ_FRONT_POSS     ;
 
-LEXICON A_BACK_ILLATIVE_ON
+LEXICON ADJ_BACK_ILLATIVE_ON
 !!€gt-norm: Adjective singular illative on
 !!€ huonoon: huono+A+Sg+Ill
-+Sg+Ill:%>on     A_BACK_CLIT_OPT         ;
-+Sg+Ill:%>o      A_BACK_POSS     ;
++Sg+Ill:%>on     ADJ_BACK_CLIT_OPT         ;
++Sg+Ill:%>o      ADJ_BACK_POSS     ;
 
-LEXICON A_BACK_ILLATIVE_UN
+LEXICON ADJ_BACK_ILLATIVE_UN
 !!€gt-norm: Adjective singular illative un
 !!€ fiksuun: fiksu+A+Sg+Ill
-+Sg+Ill:%>un     A_BACK_CLIT_OPT         ;
-+Sg+Ill:%>u      A_BACK_POSS     ;
++Sg+Ill:%>un     ADJ_BACK_CLIT_OPT         ;
++Sg+Ill:%>u      ADJ_BACK_POSS     ;
 
-LEXICON A_FRONT_ILLATIVE_YN
+LEXICON ADJ_FRONT_ILLATIVE_YN
 !!€gt-norm: Adjective singular illative yn
 !!€ häijyyn: häijy+A+Sg+Ill
-+Sg+Ill:%>yn     A_FRONT_CLIT_OPT         ;
-+Sg+Ill:%>y      A_FRONT_POSS     ;
++Sg+Ill:%>yn     ADJ_FRONT_CLIT_OPT         ;
++Sg+Ill:%>y      ADJ_FRONT_POSS     ;
 
-LEXICON A_FRONT_ILLATIVE_ÄN
+LEXICON ADJ_FRONT_ILLATIVE_ÄN
 !!€gt-norm: Adjective singular illative än
 !!€ tyhmään: tyhmä+A+Sg+Ill
-+Sg+Ill:%>än     A_FRONT_CLIT_OPT         ;
-+Sg+Ill:%>ä      A_FRONT_POSS     ;
++Sg+Ill:%>än     ADJ_FRONT_CLIT_OPT         ;
++Sg+Ill:%>ä      ADJ_FRONT_POSS     ;
 
-LEXICON A_FRONT_ILLATIVE_ÖN
+LEXICON ADJ_FRONT_ILLATIVE_ÖN
 !!€gt-norm: Adjective singular illative ön
 !!€ hölmöön: hölmö+A+Sg+Ill
-+Sg+Ill:%>ön     A_FRONT_CLIT_OPT         ;
-+Sg+Ill:%>ö      A_FRONT_POSS     ;
++Sg+Ill:%>ön     ADJ_FRONT_CLIT_OPT         ;
++Sg+Ill:%>ö      ADJ_FRONT_POSS     ;
 
-LEXICON A_BACK_PARTITIVE_IA
+LEXICON ADJ_BACK_PARTITIVE_IA
 !!€gt-norm: Adjective plural partitive ia
 !!€ rumia: ruma+A+Pl+Par
-+Pl+Par:%>i%>a    A_BACK_POSS_AN_CLIT_OPT      ;
++Pl+Par:%>i%>a    ADJ_BACK_POSS_AN_CLIT_OPT      ;
 
-LEXICON A_FRONT_PARTITIVE_IÄ
+LEXICON ADJ_FRONT_PARTITIVE_IÄ
 !!€gt-norm: Adjective plural partitive iä
 !!€ tyhmiä: tyhmä+A+Pl+Par
-+Pl+Par:%>i%>ä    A_FRONT_POSS_ÄN_CLIT_OPT      ;
++Pl+Par:%>i%>ä    ADJ_FRONT_POSS_ÄN_CLIT_OPT      ;
 
-LEXICON A_BACK_PARTITIVE_ITA
+LEXICON ADJ_BACK_PARTITIVE_ITA
 !!€gt-norm: Adjective plural partitive ita
 !!€ korkeita: korkea+A+Pl+Par
-+Pl+Par:%>i%>ta   A_BACK_POSS_AN_CLIT_OPT      ;
++Pl+Par:%>i%>ta   ADJ_BACK_POSS_AN_CLIT_OPT      ;
 
-LEXICON A_FRONT_PARTITIVE_ITÄ
+LEXICON ADJ_FRONT_PARTITIVE_ITÄ
 !!€gt-norm: Adjective plural partitive itä
 !!€ järeitä: järeä+A+Pl+Par
-+Pl+Par:%>i%>tä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
++Pl+Par:%>i%>tä   ADJ_FRONT_POSS_ÄN_CLIT_OPT      ;
 
-LEXICON A_BACK_PARTITIVE_JA
+LEXICON ADJ_BACK_PARTITIVE_JA
 !!€gt-norm: Adjective plural partitive ja
 !!€ vahvoja: vahva+A+Pl+Par
-+Pl+Par:%>j%>a     A_BACK_POSS_AN_CLIT_OPT      ;
++Pl+Par:%>j%>a     ADJ_BACK_POSS_AN_CLIT_OPT      ;
 
-LEXICON A_FRONT_PARTITIVE_JÄ
+LEXICON ADJ_FRONT_PARTITIVE_JÄ
 !!€gt-norm: Adjective plural partitive jä
 !!€ hölmöjä: hölmö+A+Pl+Par
-+Pl+Par:%>j%>ä     A_FRONT_POSS_ÄN_CLIT_OPT      ;
++Pl+Par:%>j%>ä     ADJ_FRONT_POSS_ÄN_CLIT_OPT      ;
 
-LEXICON A_BACK_GENITIVE_IDEN
+LEXICON ADJ_BACK_GENITIVE_IDEN
 !!€gt-norm: Adjective plural genitive iden back
 !!€ tanakoiden: tanakka+A+Pl+Gen
-+Pl+Gen:%>i%>den    A_BACK_CLIT_OPT     ;
-+Pl+Gen:%>i%>de     A_BACK_POSS     ;
++Pl+Gen:%>i%>den    ADJ_BACK_CLIT_OPT     ;
++Pl+Gen:%>i%>de     ADJ_BACK_POSS     ;
 
-LEXICON A_FRONT_GENITIVE_IDEN
+LEXICON ADJ_FRONT_GENITIVE_IDEN
 !!€gt-norm: Adjective plural genitive iden front
 !!€ räväköiden: räväkkä+A+Pl+Gen
-+Pl+Gen:%>i%>den    A_FRONT_CLIT_OPT     ;
-+Pl+Gen:%>i%>de     A_FRONT_POSS     ;
++Pl+Gen:%>i%>den    ADJ_FRONT_CLIT_OPT     ;
++Pl+Gen:%>i%>de     ADJ_FRONT_POSS     ;
 
-LEXICON A_BACK_GENITIVE_IEN
+LEXICON ADJ_BACK_GENITIVE_IEN
 !!€gt-norm: Adjective plural genitive ien back
 !!€ rumien: ruma+A+Pl+Gen
-+Pl+Gen:%>i%>en   A_BACK_CLIT_OPT     ;
-+Pl+Gen:%>i%>e    A_BACK_POSS     ;
++Pl+Gen:%>i%>en   ADJ_BACK_CLIT_OPT     ;
++Pl+Gen:%>i%>e    ADJ_BACK_POSS     ;
 
-LEXICON A_FRONT_GENITIVE_IEN
+LEXICON ADJ_FRONT_GENITIVE_IEN
 !!€gt-norm: Adjective plural genitive ien front
 !!€ tyhmien: tyhmä+A+Pl+Gen
-+Pl+Gen:%>i%>en   A_FRONT_CLIT_OPT     ;
-+Pl+Gen:%>i%>e    A_FRONT_POSS     ;
++Pl+Gen:%>i%>en   ADJ_FRONT_CLIT_OPT     ;
++Pl+Gen:%>i%>e    ADJ_FRONT_POSS     ;
 
-LEXICON A_BACK_GENITIVE_ITTEN
+LEXICON ADJ_BACK_GENITIVE_ITTEN
 !!€gt-norm: Adjective plural genitive itten back
 !!€ nopeitten: nopea+A+Pl+Gen
-+Pl+Gen:%>i%>tten     A_BACK_CLIT_OPT     ;
-+Pl+Gen:%>i%>tte      A_BACK_POSS     ;
++Pl+Gen:%>i%>tten     ADJ_BACK_CLIT_OPT     ;
++Pl+Gen:%>i%>tte      ADJ_BACK_POSS     ;
 
-LEXICON A_FRONT_GENITIVE_ITTEN
+LEXICON ADJ_FRONT_GENITIVE_ITTEN
 !!€gt-norm: Adjective plural genitive itten front
 !!€ järeitten: järeä+A+Pl+Gen
-+Pl+Gen:%>i%>tten     A_FRONT_CLIT_OPT     ;
-+Pl+Gen:%>i%>tte      A_FRONT_POSS     ;
++Pl+Gen:%>i%>tten     ADJ_FRONT_CLIT_OPT     ;
++Pl+Gen:%>i%>tte      ADJ_FRONT_POSS     ;
 
-LEXICON A_BACK_GENITIVE_JEN
+LEXICON ADJ_BACK_GENITIVE_JEN
 !!€gt-norm: Adjective plural genitive jen back
 !!€ vahvojen: vahva+A+Pl+Gen
-+Pl+Gen:%>j%>en    A_BACK_CLIT_OPT     ;
-+Pl+Gen:%>j%>e     A_BACK_POSS     ;
++Pl+Gen:%>j%>en    ADJ_BACK_CLIT_OPT     ;
++Pl+Gen:%>j%>e     ADJ_BACK_POSS     ;
 
-LEXICON A_FRONT_GENITIVE_JEN
+LEXICON ADJ_FRONT_GENITIVE_JEN
 !!€gt-norm: Adjective plural genitive jen front
 !!€ hölmöjen: hölmö+A+Pl+Gen
-+Pl+Gen:%>j%>en    A_FRONT_CLIT_OPT     ;
-+Pl+Gen:%>j%>e     A_FRONT_POSS     ;
++Pl+Gen:%>j%>en    ADJ_FRONT_CLIT_OPT     ;
++Pl+Gen:%>j%>e     ADJ_FRONT_POSS     ;
 
-LEXICON A_BACK_GENITIVE_TEN
+LEXICON ADJ_BACK_GENITIVE_TEN
 !!€gt-norm: Adjective plural genitive ten back
 !!€ suurten: suuri+A+Pl+Gen
-+Pl+Gen:%>ten    A_BACK_CLIT_OPT     ;
-+Pl+Gen:%>te     A_BACK_POSS     ;
++Pl+Gen:%>ten    ADJ_BACK_CLIT_OPT     ;
++Pl+Gen:%>te     ADJ_BACK_POSS     ;
 
-LEXICON A_FRONT_GENITIVE_TEN
+LEXICON ADJ_FRONT_GENITIVE_TEN
 !!€gt-norm: Adjective plural genitive ten front
 !!€ pienten: pieni+A+Pl+Gen
-+Pl+Gen:%>ten    A_FRONT_CLIT_OPT     ;
-+Pl+Gen:%>te     A_FRONT_POSS     ;
++Pl+Gen:%>ten    ADJ_FRONT_CLIT_OPT     ;
++Pl+Gen:%>te     ADJ_FRONT_POSS     ;
 
-LEXICON A_BACK_GENITIVE_IN
+LEXICON ADJ_BACK_GENITIVE_IN
 !!€gt-norm: Adjective plural genitive in back
 !!€ rumain: ruma+A+Pl+Gen+Use/Rare
-+Pl+Gen+Use/Rare:%>i%>n    A_BACK_CLIT_OPT     ;
-+Pl+Gen+Use/Rare:%>i%>     A_BACK_POSS     ;
++Pl+Gen+Use/Rare:%>i%>n    ADJ_BACK_CLIT_OPT     ;
++Pl+Gen+Use/Rare:%>i%>     ADJ_BACK_POSS     ;
 
-LEXICON A_FRONT_GENITIVE_IN
+LEXICON ADJ_FRONT_GENITIVE_IN
 !!€gt-norm: Adjective plural genitive in front
 !!€ tyhmäin: tyhmä+A+Pl+Gen+Use/Rare
-+Pl+Gen+Use/Rare:%>i%>n    A_FRONT_CLIT_OPT     ;
-+Pl+Gen+Use/Rare:%>i%>     A_FRONT_POSS     ;
++Pl+Gen+Use/Rare:%>i%>n    ADJ_FRONT_CLIT_OPT     ;
++Pl+Gen+Use/Rare:%>i%>     ADJ_FRONT_POSS     ;
 
-LEXICON A_BACK_ILLATIVE_IHIN
+LEXICON ADJ_BACK_ILLATIVE_IHIN
 !!€gt-norm: Adjective plural illative ihin bacl
 !!€ pahoihin: paha+A+Pl+Ill
-+Pl+Ill:%>i%>hin   A_BACK_CLIT_OPT    ;
-+Pl+Ill:%>i%>hi    A_BACK_POSS     ;
++Pl+Ill:%>i%>hin   ADJ_BACK_CLIT_OPT    ;
++Pl+Ill:%>i%>hi    ADJ_BACK_POSS     ;
 
-LEXICON A_FRONT_ILLATIVE_IHIN
+LEXICON ADJ_FRONT_ILLATIVE_IHIN
 !!€gt-norm: Adjective plural illative ihin front
 !!€ hölmöihin: hölmö+A+Pl+Ill
-+Pl+Ill:%>i%>hin   A_FRONT_CLIT_OPT    ;
-+Pl+Ill:%>i%>hi    A_FRONT_POSS     ;
++Pl+Ill:%>i%>hin   ADJ_FRONT_CLIT_OPT    ;
++Pl+Ill:%>i%>hi    ADJ_FRONT_POSS     ;
 
-LEXICON A_BACK_ILLATIVE_IIN
+LEXICON ADJ_BACK_ILLATIVE_IIN
 !!€gt-norm: Adjective plural illative iin back
 !!€ punaisiin: punainen+A+Pl+Ill
-+Pl+Ill:%>i%>in    A_BACK_CLIT_OPT     ;
-+Pl+Ill:%>i%>i     A_BACK_POSS     ;
++Pl+Ill:%>i%>in    ADJ_BACK_CLIT_OPT     ;
++Pl+Ill:%>i%>i     ADJ_BACK_POSS     ;
 
-LEXICON A_FRONT_ILLATIVE_IIN
+LEXICON ADJ_FRONT_ILLATIVE_IIN
 !!€gt-norm: Adjective plural illative iin front
 !!€ sinisiin: sininen+A+Pl+Ill
-+Pl+Ill:%>i%>in    A_FRONT_CLIT_OPT     ;
-+Pl+Ill:%>i%>i     A_FRONT_POSS     ;
++Pl+Ill:%>i%>in    ADJ_FRONT_CLIT_OPT     ;
++Pl+Ill:%>i%>i     ADJ_FRONT_POSS     ;
 
-LEXICON A_BACK_ILLATIVE_ISIIN
+LEXICON ADJ_BACK_ILLATIVE_ISIIN
 !!€gt-norm: Adjective plural illative isiin back
 !!€ korkeisiin: korkea+A+Pl+Ill
-+Pl+Ill:%>i%>siin  A_BACK_CLIT_OPT     ;
-+Pl+Ill:%>i%>sii   A_BACK_POSS     ;
++Pl+Ill:%>i%>siin  ADJ_BACK_CLIT_OPT     ;
++Pl+Ill:%>i%>sii   ADJ_BACK_POSS     ;
 
-LEXICON A_FRONT_ILLATIVE_ISIIN
+LEXICON ADJ_FRONT_ILLATIVE_ISIIN
 !!€gt-norm: Adjective plural illative isiin front
 !!€ järeisiin: järeä+A+Pl+Ill
-+Pl+Ill:%>i%>siin  A_FRONT_CLIT_OPT     ;
-+Pl+Ill:%>i%>sii   A_FRONT_POSS     ;
++Pl+Ill:%>i%>siin  ADJ_FRONT_CLIT_OPT     ;
++Pl+Ill:%>i%>sii   ADJ_FRONT_POSS     ;
 
-:	A_FRONT_H_PLURALS_ARCHAIC ;
+:  ADJ_FRONT_H_PLURALS_ARCHAIC ;
 
-LEXICON A_FRONT_POSS
+LEXICON ADJ_FRONT_POSS
 !!€gt-norm: Adjective possessive back
 !!€ tyhmäni: tyhmä+A+Sg+Nom+PxSg1
-+PxSg1:%>ni  A_FRONT_CLIT_OPT        ;
-+PxSg2:%>si  A_FRONT_CLIT_OPT        ;
-+PxSg3:%>nsä A_FRONT_CLIT_OPT        ;
-+PxPl1:%>mme A_FRONT_CLIT_OPT        ;
-+PxPl2:%>nne A_FRONT_CLIT_OPT        ;
-+PxPl3:%>nsä A_FRONT_CLIT_OPT        ;
++PxSg1:%>ni  ADJ_FRONT_CLIT_OPT        ;
++PxSg2:%>si  ADJ_FRONT_CLIT_OPT        ;
++PxSg3:%>nsä ADJ_FRONT_CLIT_OPT        ;
++PxPl1:%>mme ADJ_FRONT_CLIT_OPT        ;
++PxPl2:%>nne ADJ_FRONT_CLIT_OPT        ;
++PxPl3:%>nsä ADJ_FRONT_CLIT_OPT        ;
 
-LEXICON A_BACK_POSS
+LEXICON ADJ_BACK_POSS
 !!€gt-norm: Adjective possessive front
 !!€ rumani: ruma+A+Sg+Nom+PxSg1
-+PxSg1:%>ni  A_BACK_CLIT_OPT        ;
-+PxSg2:%>si  A_BACK_CLIT_OPT        ;
-+PxSg3:%>nsa A_BACK_CLIT_OPT        ;
-+PxPl1:%>mme A_BACK_CLIT_OPT        ;
-+PxPl2:%>nne A_BACK_CLIT_OPT        ;
-+PxPl3:%>nsa A_BACK_CLIT_OPT        ;
++PxSg1:%>ni  ADJ_BACK_CLIT_OPT        ;
++PxSg2:%>si  ADJ_BACK_CLIT_OPT        ;
++PxSg3:%>nsa ADJ_BACK_CLIT_OPT        ;
++PxPl1:%>mme ADJ_BACK_CLIT_OPT        ;
++PxPl2:%>nne ADJ_BACK_CLIT_OPT        ;
++PxPl3:%>nsa ADJ_BACK_CLIT_OPT        ;
 
-LEXICON A_BACK_POSS_AN
+LEXICON ADJ_BACK_POSS_AN
 !!€gt-norm: Adjective possessive an
 !!€ kieroaan: kiero+A+Sg+Par+PxSg3
-+PxSg3:%>an    A_BACK_CLIT_OPT     ;
-+PxPl3:%>an    A_BACK_CLIT_OPT     ;
++PxSg3:%>an    ADJ_BACK_CLIT_OPT     ;
++PxPl3:%>an    ADJ_BACK_CLIT_OPT     ;
 
-LEXICON A_BACK_POSS_EN
+LEXICON ADJ_BACK_POSS_EN
 !!€gt-norm: Adjective possessive en back
 !!€ rumalleen: ruma+A+Sg+All+PxSg3
-+PxSg3:%>en    A_BACK_CLIT_OPT     ;
-+PxPl3:%>en    A_BACK_CLIT_OPT     ;
++PxSg3:%>en    ADJ_BACK_CLIT_OPT     ;
++PxPl3:%>en    ADJ_BACK_CLIT_OPT     ;
 
-LEXICON A_FRONT_POSS_EN
+LEXICON ADJ_FRONT_POSS_EN
 !!€gt-norm: Adjective possessive en front
 !!€ tyhmälleen: tyhmä+A+Sg+All+PxSg3
-+PxSg3:%>en    A_FRONT_CLIT_OPT     ;
-+PxPl3:%>en    A_FRONT_CLIT_OPT     ;
++PxSg3:%>en    ADJ_FRONT_CLIT_OPT     ;
++PxPl3:%>en    ADJ_FRONT_CLIT_OPT     ;
 
-LEXICON A_FRONT_POSS_ÄN
+LEXICON ADJ_FRONT_POSS_ÄN
 !!€gt-norm: Adjective possessive än
 !!€ hölmöään: hölmö+A+Sg+Par+PxSg3
-+PxSg3:%>än    A_FRONT_CLIT_OPT     ;
-+PxPl3:%>än    A_FRONT_CLIT_OPT     ;
++PxSg3:%>än    ADJ_FRONT_CLIT_OPT     ;
++PxPl3:%>än    ADJ_FRONT_CLIT_OPT     ;
 
-LEXICON A_BACK_CLIT
+LEXICON ADJ_BACK_CLIT
 !!€gt-norm: Adjective clitic back
 !!€ rumahan: ruma+A+Sg+Nom+Foc/han
 +Foc/han:%>han   #        ;
@@ -576,7 +576,7 @@ LEXICON A_BACK_CLIT
 +Foc/kaan+Qst:%>kaan%>ko    #        ;
 +Foc/kaan+Foc/pa:%>kaan%>pa    #        ;
 
-LEXICON A_FRONT_CLIT
+LEXICON ADJ_FRONT_CLIT
 !!€gt-norm: Adjective clitic front
 !!€ tyhmähän: tyhmä+A+Sg+Nom+Foc/han
 +Foc/han:%>hä%>n   #        ;
@@ -609,266 +609,257 @@ LEXICON A_FRONT_CLIT
 
 ! shorthands (not documented yet)
 
-LEXICON A_BACK_CLIT_OPT
+LEXICON ADJ_BACK_CLIT_OPT
 0    #   ;
-0   A_BACK_CLIT    ;
+0   ADJ_BACK_CLIT    ;
 
-LEXICON A_FRONT_CLIT_OPT
+LEXICON ADJ_FRONT_CLIT_OPT
 0    #   ;
-0   A_FRONT_CLIT    ;
+0   ADJ_FRONT_CLIT    ;
 
-LEXICON A_BACK_SINGULARS
-0    A_BACK_STRONG_SINGULARS       ;
-0    A_BACK_WEAK_SINGULARS      ;
+LEXICON ADJ_BACK_SINGULARS
+0    ADJ_BACK_STRONG_SINGULARS       ;
+0    ADJ_BACK_WEAK_SINGULARS      ;
 
-LEXICON A_FRONT_SINGULARS
-0    A_FRONT_STRONG_SINGULARS       ;
-0    A_FRONT_WEAK_SINGULARS      ;
+LEXICON ADJ_FRONT_SINGULARS
+0    ADJ_FRONT_STRONG_SINGULARS       ;
+0    ADJ_FRONT_WEAK_SINGULARS      ;
 
-LEXICON A_BACK_PLURALS
-0   A_BACK_STRONG_PLURALS ;
-0   A_BACK_WEAK_PLURALS    ;
+LEXICON ADJ_BACK_PLURALS
+0   ADJ_BACK_STRONG_PLURALS ;
+0   ADJ_BACK_WEAK_PLURALS    ;
 
-LEXICON A_FRONT_PLURALS
-0   A_FRONT_STRONG_PLURALS ;
-0   A_FRONT_WEAK_PLURALS    ;
+LEXICON ADJ_FRONT_PLURALS
+0   ADJ_FRONT_STRONG_PLURALS ;
+0   ADJ_FRONT_WEAK_PLURALS    ;
 
-LEXICON A_BACK_POSS_AN_CLIT_OPT
-0    A_BACK_POSS   ;
-0    A_BACK_POSS_AN ;
-0    A_BACK_CLIT ;
+LEXICON ADJ_BACK_POSS_AN_CLIT_OPT
+0    ADJ_BACK_POSS   ;
+0    ADJ_BACK_POSS_AN ;
+0    ADJ_BACK_CLIT ;
 0    #    ;
 
-LEXICON A_FRONT_POSS_ÄN_CLIT_OPT
-0    A_FRONT_POSS   ;
-0    A_FRONT_POSS_ÄN  ;
-0    A_FRONT_CLIT ;
+LEXICON ADJ_FRONT_POSS_ÄN_CLIT_OPT
+0    ADJ_FRONT_POSS   ;
+0    ADJ_FRONT_POSS_ÄN  ;
+0    ADJ_FRONT_CLIT ;
 0    #    ;
 
-LEXICON A_BACK_POSS_EN_CLIT_OPT
-0    A_BACK_POSS   ;
-0    A_BACK_POSS_EN ;
-0    A_BACK_CLIT ;
+LEXICON ADJ_BACK_POSS_EN_CLIT_OPT
+0    ADJ_BACK_POSS   ;
+0    ADJ_BACK_POSS_EN ;
+0    ADJ_BACK_CLIT ;
 0    #    ;
 
-LEXICON A_FRONT_POSS_EN_CLIT_OPT
-0    A_FRONT_POSS   ;
-0    A_FRONT_POSS_EN  ;
-0    A_FRONT_CLIT ;
+LEXICON ADJ_FRONT_POSS_EN_CLIT_OPT
+0    ADJ_FRONT_POSS   ;
+0    ADJ_FRONT_POSS_EN  ;
+0    ADJ_FRONT_CLIT ;
 0    #    ;
 
-LEXICON A_BACK_POSS_CLIT_OPT
-0    A_BACK_POSS   ;
-0    A_BACK_CLIT ;
+LEXICON ADJ_BACK_POSS_CLIT_OPT
+0    ADJ_BACK_POSS   ;
+0    ADJ_BACK_CLIT ;
 0    #    ;
 
-LEXICON A_FRONT_POSS_CLIT_OPT
-0    A_FRONT_POSS   ;
-0    A_FRONT_CLIT ;
+LEXICON ADJ_FRONT_POSS_CLIT_OPT
+0    ADJ_FRONT_POSS   ;
+0    ADJ_FRONT_CLIT ;
 0    #    ;
 
-LEXICON A_BACK_POSS_EN_OBL
-0   A_BACK_POSS  ;
-0   A_BACK_POSS_EN   ;
+LEXICON ADJ_BACK_POSS_EN_OBL
+0   ADJ_BACK_POSS  ;
+0   ADJ_BACK_POSS_EN   ;
 
-LEXICON A_FRONT_POSS_EN_OBL
-0   A_FRONT_POSS  ;
-0   A_FRONT_POSS_EN   ;
+LEXICON ADJ_FRONT_POSS_EN_OBL
+0   ADJ_FRONT_POSS  ;
+0   ADJ_FRONT_POSS_EN   ;
 
 ! derivs
 
-LEXICON A_BACK_DERIV_STI
+LEXICON ADJ_BACK_DERIV_STI
 !! Adjectives can usually be derived into sti adverbs productively
 !!€gt-norm: Deadjectival adverb derivations sti
 !!€ nopeasti nopea+A+Der/sti # fastly
-%+Der/sti:{MB}sti	PCLE_NOPEASTI ;
+%+Der/sti:{MB}sti  PCLE_NOPEASTI ;
 
 
-LEXICON A_COMPOUND_S
+LEXICON ADJ_COMPOUND_S
 
-%+Cmp:{DB}s	A_COMPOUND_NOUN_SUFF ;
+%+Cmp:{DB}s  ADJ_COMPOUND_NOUN_SUFF ;
 
-LEXICON A_COMPOUND_NOUN_SUFF
+LEXICON ADJ_COMPOUND_NOUN_SUFF
 
-%+TruncPrefix:-	# ;
+%+TruncPrefix:-  # ;
 
-#:{hyph?}	NOUN ;
-#:{hyph?}	SUFFIX ;
+#:{hyph?}  NOUN ;
+#:{hyph?}  SUFFIX ;
 
-LEXICON A_COMPOUND_0
+LEXICON ADJ_COMPOUND_0
 
-:	A_COMPOUND ;
+:  ADJ_COMPOUND ;
 
-LEXICON A_COMPOUND
+LEXICON ADJ_COMPOUND
 
-%+TruncPrefix:-	# ;
+%+TruncPrefix:-  # ;
 
-#:{hyph?}	SUFFIX ;
+#:{hyph?}  SUFFIX ;
 
-LEXICON A_BACK_COMPARATIVE_ARCHAIC
+LEXICON ADJ_BACK_COMPARATIVE_ARCHAIC
 
-%+Comp%+Comp:{DB}m	A_BACK_COMPARATIVE_STEMS ;
+%+Comp%+Comp:{DB}m  ADJ_BACK_COMPARATIVE_STEMS ;
 
 
-LEXICON A_FRONT_COMPARATIVE_ARCHAIC
+LEXICON ADJ_FRONT_COMPARATIVE_ARCHAIC
 
-%+Comp%+Comp:{DB}m	A_FRONT_COMPARATIVE_STEMS ;
+%+Comp%+Comp:{DB}m  ADJ_FRONT_COMPARATIVE_STEMS ;
 
-LEXICON A_BACK_ESSIVE_NA_ARCHAIC
+LEXICON ADJ_BACK_ESSIVE_NA_ARCHAIC
 
-%+Sg%+Ess:{MB}na	A_BACK_POSS_AN_CLIT_OPT ;
+%+Sg%+Ess:{MB}na  ADJ_BACK_POSS_AN_CLIT_OPT ;
 
 
-LEXICON A_BACK_ESSIVE_RA_ARCHAIC
+LEXICON ADJ_BACK_ESSIVE_RA_ARCHAIC
 
-%+Sg%+Ess:{MB}ra	A_BACK_POSS_AN_CLIT_OPT ;
+%+Sg%+Ess:{MB}ra  ADJ_BACK_POSS_AN_CLIT_OPT ;
 
 
-LEXICON A_BACK_GENITIVE_TEN_ARCHAIC
+LEXICON ADJ_BACK_GENITIVE_TEN_ARCHAIC
 
-%+Pl%+Gen:{MB}te	A_BACK_POSS ;
+%+Pl%+Gen:{MB}te  ADJ_BACK_POSS ;
 
-%+Pl%+Gen:{MB}ten	A_BACK_CLIT_OPT ;
-%+Pl%+Gen:{MB}ten	A_COMPOUND ;
+%+Pl%+Gen:{MB}ten  ADJ_BACK_CLIT_OPT ;
+%+Pl%+Gen:{MB}ten  ADJ_COMPOUND ;
 
 
-LEXICON A_BACK_H_PLURALS_ARCHAIC
+LEXICON ADJ_BACK_H_PLURALS_ARCHAIC
 
-%+Pl%+Gen:h{MB}i{MB}e	A_BACK_POSS ;
+%+Pl%+Gen:h{MB}i{MB}e  ADJ_BACK_POSS ;
 
-%+Pl%+Gen:h{MB}i{MB}en	A_BACK_CLIT_OPT ;
+%+Pl%+Gen:h{MB}i{MB}en  ADJ_BACK_CLIT_OPT ;
 
-%+Pl%+Gen:h{MB}i{MB}tte	A_BACK_POSS ;
+%+Pl%+Gen:h{MB}i{MB}tte  ADJ_BACK_POSS ;
 
-%+Pl%+Gen:h{MB}i{MB}tten	A_BACK_CLIT_OPT ;
+%+Pl%+Gen:h{MB}i{MB}tten  ADJ_BACK_CLIT_OPT ;
 
-%+Pl%+Ill:h{MB}i{MB}si	A_BACK_POSS ;
+%+Pl%+Ill:h{MB}i{MB}si  ADJ_BACK_POSS ;
 
-%+Pl%+Ill:h{MB}i{MB}sin	A_BACK_CLIT_OPT ;
+%+Pl%+Ill:h{MB}i{MB}sin  ADJ_BACK_CLIT_OPT ;
 
-%+Pl%+Par:h{MB}i{MB}a	A_BACK_POSS_AN_CLIT_OPT ;
+%+Pl%+Par:h{MB}i{MB}a  ADJ_BACK_POSS_AN_CLIT_OPT ;
 
-LEXICON A_BACK_PARTITIVE_TA_ARCHAIC
+LEXICON ADJ_BACK_PARTITIVE_TA_ARCHAIC
 
-%+Sg%+Par:{MB}ta	A_BACK_POSS_AN_CLIT_OPT ;
-LEXICON A_FRONT_ESSIVE_NÄ_ARCHAIC
+%+Sg%+Par:{MB}ta  ADJ_BACK_POSS_AN_CLIT_OPT ;
+LEXICON ADJ_FRONT_ESSIVE_NÄ_ARCHAIC
 
-%+Sg%+Ess:{MB}nä	A_FRONT_POSS_ÄN_CLIT_OPT ;
+%+Sg%+Ess:{MB}nä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
 
 
-LEXICON A_BACK_SINGULARS_ARCHAIC
+LEXICON ADJ_BACK_SINGULARS_ARCHAIC
 
-%+Pl%+Nom:	A_BACK_POSS ;
+%+Pl%+Nom:  ADJ_BACK_POSS ;
 
-%+Pl%+Nom:{MB}t	A_BACK_CLIT_OPT ;
+%+Pl%+Nom:{MB}t  ADJ_BACK_CLIT_OPT ;
 
-%+Sg%+Abe:{MB}tta	A_BACK_POSS_AN_CLIT_OPT ;
+%+Sg%+Abe:{MB}tta  ADJ_BACK_POSS_AN_CLIT_OPT ;
 
-%+Sg%+Abl:{MB}lta	A_BACK_POSS_AN_CLIT_OPT ;
+%+Sg%+Abl:{MB}lta  ADJ_BACK_POSS_AN_CLIT_OPT ;
 
-%+Sg%+Ade:{MB}lla	A_BACK_POSS_AN_CLIT_OPT ;
+%+Sg%+Ade:{MB}lla  ADJ_BACK_POSS_AN_CLIT_OPT ;
 
-%+Sg%+All:{MB}lle	A_BACK_POSS_EN_CLIT_OPT ;
+%+Sg%+All:{MB}lle  ADJ_BACK_POSS_EN_CLIT_OPT ;
 
-%+Sg%+Ela:{MB}sta	A_BACK_POSS_AN_CLIT_OPT ;
+%+Sg%+Ela:{MB}sta  ADJ_BACK_POSS_AN_CLIT_OPT ;
 
-%+Sg%+Ess:{MB}na	A_BACK_POSS_AN_CLIT_OPT ;
+%+Sg%+Ess:{MB}na  ADJ_BACK_POSS_AN_CLIT_OPT ;
 
-%+Sg%+Gen:	A_BACK_POSS ;
+%+Sg%+Gen:  ADJ_BACK_POSS ;
 
-%+Sg%+Gen:{MB}n	A_BACK_CLIT_OPT ;
+%+Sg%+Gen:{MB}n  ADJ_BACK_CLIT_OPT ;
 
-%+Sg%+Ill:{MB}sen	A_BACK_CLIT_OPT ;
+%+Sg%+Ill:{MB}sen  ADJ_BACK_CLIT_OPT ;
 
-%+Sg%+Ine:{MB}ssa	A_BACK_POSS_AN_CLIT_OPT ;
+%+Sg%+Ine:{MB}ssa  ADJ_BACK_POSS_AN_CLIT_OPT ;
 
-%+Sg%+Nom:	A_BACK_POSS ;
+%+Sg%+Nom:  ADJ_BACK_POSS ;
 
-%+Sg%+Tra:{MB}kse	A_BACK_POSS_EN_OBL ;
+%+Sg%+Tra:{MB}kse  ADJ_BACK_POSS_EN_OBL ;
 
-%+Sg%+Tra:{MB}ksi	A_BACK_CLIT_OPT ;
-%+Sg%+Tra:{MB}ksi	A_BACK_CLIT_OPT ;
+%+Sg%+Tra:{MB}ksi  ADJ_BACK_CLIT_OPT ;
+%+Sg%+Tra:{MB}ksi  ADJ_BACK_CLIT_OPT ;
 
 
-LEXICON A_BACK_SUPERLATIVE_ARCHAIC
+LEXICON ADJ_BACK_SUPERLATIVE_ARCHAIC
 
-%+Superl%+Superl:{DB}i	A_BACK_SUPERLATIVE_STEMS ;
+%+Superl%+Superl:{DB}i  ADJ_BACK_SUPERLATIVE_STEMS ;
 
-LEXICON A_FRONT_GENITIVE_TEN_ARCHAIC
+LEXICON ADJ_FRONT_GENITIVE_TEN_ARCHAIC
 
-%+Pl%+Gen:{MB}te	A_FRONT_POSS ;
+%+Pl%+Gen:{MB}te  ADJ_FRONT_POSS ;
 
-%+Pl%+Gen:{MB}ten	A_FRONT_CLIT_OPT ;
-%+Pl%+Gen:{MB}ten	A_COMPOUND ;
+%+Pl%+Gen:{MB}ten  ADJ_FRONT_CLIT_OPT ;
+%+Pl%+Gen:{MB}ten  ADJ_COMPOUND ;
 
 
 
-LEXICON A_FRONT_H_PLURALS_ARCHAIC
+LEXICON ADJ_FRONT_H_PLURALS_ARCHAIC
 
-%+Pl%+Gen:h{MB}i{MB}e	A_FRONT_POSS ;
+%+Pl%+Gen:h{MB}i{MB}e  ADJ_FRONT_POSS ;
 
-%+Pl%+Gen:h{MB}i{MB}en	A_FRONT_CLIT_OPT ;
+%+Pl%+Gen:h{MB}i{MB}en  ADJ_FRONT_CLIT_OPT ;
 
-%+Pl%+Gen:h{MB}i{MB}tte	A_FRONT_POSS ;
+%+Pl%+Gen:h{MB}i{MB}tte  ADJ_FRONT_POSS ;
 
-%+Pl%+Gen:h{MB}i{MB}tten	A_FRONT_CLIT_OPT ;
+%+Pl%+Gen:h{MB}i{MB}tten  ADJ_FRONT_CLIT_OPT ;
 
-%+Pl%+Ill:h{MB}i{MB}si	A_FRONT_POSS ;
+%+Pl%+Ill:h{MB}i{MB}si  ADJ_FRONT_POSS ;
 
-%+Pl%+Ill:h{MB}i{MB}sin	A_FRONT_CLIT_OPT ;
+%+Pl%+Ill:h{MB}i{MB}sin  ADJ_FRONT_CLIT_OPT ;
 
-%+Pl%+Par:h{MB}i{MB}ä	A_FRONT_POSS_ÄN_CLIT_OPT ;
+%+Pl%+Par:h{MB}i{MB}ä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
 
-LEXICON A_FRONT_PARTITIVE_TÄ_ARCHAIC
+LEXICON ADJ_FRONT_PARTITIVE_TÄ_ARCHAIC
 
-%+Sg%+Par:{MB}tä	A_FRONT_POSS_ÄN_CLIT_OPT ;
+%+Sg%+Par:{MB}tä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
 
-LEXICON A_FRONT_SINGULARS_ARCHAIC
+LEXICON ADJ_FRONT_SINGULARS_ARCHAIC
 
-%+Pl%+Nom:	A_FRONT_POSS ;
+%+Pl%+Nom:  ADJ_FRONT_POSS ;
 
-%+Pl%+Nom:{MB}t	A_FRONT_CLIT_OPT ;
+%+Pl%+Nom:{MB}t  ADJ_FRONT_CLIT_OPT ;
 
-%+Sg%+Abe:{MB}ttä	A_FRONT_POSS_ÄN_CLIT_OPT ;
+%+Sg%+Abe:{MB}ttä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
 
-%+Sg%+Abl:{MB}ltä	A_FRONT_POSS_ÄN_CLIT_OPT ;
+%+Sg%+Abl:{MB}ltä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
 
-%+Sg%+Ade:{MB}llä	A_FRONT_POSS_ÄN_CLIT_OPT ;
+%+Sg%+Ade:{MB}llä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
 
-%+Sg%+All:{MB}lle	A_FRONT_POSS_EN_CLIT_OPT ;
+%+Sg%+All:{MB}lle  ADJ_FRONT_POSS_EN_CLIT_OPT ;
 
-%+Sg%+Ela:{MB}stä	A_FRONT_POSS_ÄN_CLIT_OPT ;
+%+Sg%+Ela:{MB}stä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
 
-%+Sg%+Ess:{MB}nä	A_FRONT_POSS_ÄN_CLIT_OPT ;
+%+Sg%+Ess:{MB}nä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
 
-%+Sg%+Gen:	A_FRONT_POSS ;
+%+Sg%+Gen:  ADJ_FRONT_POSS ;
 
-%+Sg%+Gen:{MB}n	A_FRONT_CLIT_OPT ;
+%+Sg%+Gen:{MB}n  ADJ_FRONT_CLIT_OPT ;
 
-%+Sg%+Ill:{MB}sen	A_FRONT_CLIT_OPT ;
+%+Sg%+Ill:{MB}sen  ADJ_FRONT_CLIT_OPT ;
 
-%+Sg%+Ine:{MB}ssä	A_FRONT_POSS_ÄN_CLIT_OPT ;
+%+Sg%+Ine:{MB}ssä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
 
-%+Sg%+Nom:	A_FRONT_POSS ;
+%+Sg%+Nom:  ADJ_FRONT_POSS ;
 
-%+Sg%+Tra:{MB}kse	A_FRONT_POSS_EN_OBL ;
+%+Sg%+Tra:{MB}kse  ADJ_FRONT_POSS_EN_OBL ;
 
-%+Sg%+Tra:{MB}ksi	A_FRONT_CLIT_OPT ;
-%+Sg%+Tra:{MB}ksi	A_FRONT_CLIT_OPT ;
+%+Sg%+Tra:{MB}ksi  ADJ_FRONT_CLIT_OPT ;
+%+Sg%+Tra:{MB}ksi  ADJ_FRONT_CLIT_OPT ;
 
-LEXICON A_FRONT_SUPERLATIVE_ARCHAIC
+LEXICON ADJ_FRONT_SUPERLATIVE_ARCHAIC
 
-%+Superl%+Superl:{DB}i	A_FRONT_SUPERLATIVE_STEMS ;
+%+Superl%+Superl:{DB}i  ADJ_FRONT_SUPERLATIVE_STEMS ;
 
-
-LEXICON N_BACK_ESSIVE_NA_ARCHAIC
-
-%+Sg%+Ess:{MB}na	N_BACK_POSS_AN_OPT ;
-
-
-LEXICON N_BACK_ESSIVE_SA_ARCHAIC
-
-%+Sg%+Ess:{MB}sa	N_BACK_POSS_AN_OPT ;
 
 
 

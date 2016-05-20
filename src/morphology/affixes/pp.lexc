@@ -113,3 +113,112 @@ LEXICON ADP_FRONT_POSS_EN_OPT
 0    ADP_FRONT_POSS_EN  ;
 0    ADP_FRONT_CLIT ;
 0    #    ;
+
+LEXICON ADP_BACK_CLIT_KA
+
++Foc/ka:%>ka	# ;
+
+
+LEXICON ADP_BACK_CLIT_KA_S
+
++Foc/ka:%>ka	# ;
+
++Foc/ka+Foc/han:%>ka%>han	# ;
+
++Foc/ka+Foc/pa:%>kapa	# ;
+
++Foc/ka+Foc/pa+Foc/han:%>ka%>pa%>han	# ;
+
++Foc/ka+Foc/pa+Foc/s:%>ka%>pa%>s	# ;
+
++Foc/ka+Foc/s:%>ka%>s	# ;
+
++Foc/s:%>s	# ;
+
+
+LEXICON ADP_BACK_CLIT_KO
+
++Foc/ko:%>ko	# ;
+
++Foc/ko+Foc/han:%>ko%>han	# ;
+
++Foc/ko+Foc/s:%>ko%>s	# ;
+
+
+
+LEXICON ADP_BACK_POSS_AN
+
++Px3:%>an	ADP_BACK_CLIT_OPT ;
+
+
+LEXICON ADP_BACK_POSS_AN_OBL
+
+:	ADP_BACK_POSS ;
+
+:	ADP_BACK_POSS_AN ;
+
+
+LEXICON ADP_BACK_POSS_AN_OPT
+
+:	ADP_BACK_POSS ;
+
+:	ADP_BACK_POSS_AN ;
+
+:	ADP_BACK_CLIT ;
+
+:	# ;
+
+
+
+LEXICON ADP_BACK_POSS_EN_OBL
+
+:	ADP_BACK_POSS ;
+
+:	ADP_BACK_POSS_EN ;
+
+
+
+
+LEXICON ADP_FRONT_CLIT_KA_S
+
++Foc/ka:%>kä	# ;
+
++Foc/ka+Foc/han:%>kä%>hän	# ;
+
++Foc/ka+Foc/pa:%>kä%>pä	# ;
+
++Foc/ka+Foc/pa+Foc/han:%>kä%>pä%>hän	# ;
+
++Foc/ka+Foc/pa+Foc/s:%>kä%>pä%>s	# ;
+
++Foc/ka+Foc/s:%>kä%>s	# ;
+
++Foc/s:%>s	# ;
+
+
+
+LEXICON ADP_FRONT_POSS_EN_OBL
+
+:	ADP_FRONT_POSS ;
+
+:	ADP_FRONT_POSS_EN ;
+
+
+
+LEXICON ADP_FRONT_POSS_OPT
+
+:	ADP_FRONT_POSS ;
+
+:	ADP_FRONT_CLIT ;
+
+:	# ;
+
+
+
+LEXICON ADP_FRONT_POSS_ÄN_OBL
+
+:	ADP_FRONT_POSS ;
+
+:	ADP_FRONT_POSS_ÄN ;
+
+

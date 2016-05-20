@@ -29,6 +29,7 @@ GT_LEXC_SRCS_L1_L2=\
 			 stems/adv.lexc \
 			 stems/cc.lexc \
 			 stems/cs.lexc \
+			 stems/det.lexc \
 			 stems/digits.lexc \
 			 stems/interj.lexc \
 			 stems/nouns.lexc \
@@ -42,7 +43,6 @@ GT_LEXC_SRCS_L1_L2=\
 			 stems/suffixes.lexc \
 			 stems/verb.lexc \
 			 stems/exceptions.lexc \
-			 stems/51.lexc \
 			 affixes/acronyms.lexc \
 			 affixes/adjectives.lexc \
 			 affixes/adv.lexc \
@@ -53,6 +53,7 @@ GT_LEXC_SRCS_L1_L2=\
 			 affixes/particles.lexc \
 			 affixes/prefix.lexc \
 			 affixes/pron.lexc \
+			 affixes/propernouns.lexc \
 			 affixes/verbs.lexc
 
 # If you are building an error-detecting L2 analyser, specify the lexc files

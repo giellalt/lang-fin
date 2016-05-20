@@ -14,610 +14,610 @@
 
 LEXICON ACRO_BACK_CASES
 
-:	ACRO_BACK_PLURALS ;
-:	ACRO_BACK_SINGULARS ;
+:  ACRO_BACK_PLURALS ;
+:  ACRO_BACK_SINGULARS ;
 
 
 LEXICON ACRO_BACK_CLIT
 
-%+Foc%_hAn:{MB}han	# ;
+%+Foc%_hAn:{MB}han  # ;
 
-%+Foc%_hAn%+Foc%_kAAn:{MB}han{MB}kaan	# ;
+%+Foc%_hAn%+Foc%_kAAn:{MB}han{MB}kaan  # ;
 
-%+Foc%_hAn%+Foc%_kO:{MB}han{MB}ko	# ;
+%+Foc%_hAn%+Foc%_kO:{MB}han{MB}ko  # ;
 
-%+Foc%_hAn%+Foc%_pA:{MB}han{MB}pa	# ;
+%+Foc%_hAn%+Foc%_pA:{MB}han{MB}pa  # ;
 
-%+Foc%_kAAn:{MB}kaan	# ;
+%+Foc%_kAAn:{MB}kaan  # ;
 
-%+Foc%_kAAn%+Foc%_hAn:{MB}kaan{MB}han	# ;
+%+Foc%_kAAn%+Foc%_hAn:{MB}kaan{MB}han  # ;
 
-%+Foc%_kAAn%+Foc%_kin:{MB}kaan{MB}kin	# ;
+%+Foc%_kAAn%+Foc%_kin:{MB}kaan{MB}kin  # ;
 
-%+Foc%_kAAn%+Foc%_kO:{MB}kaan{MB}ko	# ;
+%+Foc%_kAAn%+Foc%_kO:{MB}kaan{MB}ko  # ;
 
-%+Foc%_kAAn%+Foc%_pA:{MB}kaan{MB}pa	# ;
+%+Foc%_kAAn%+Foc%_pA:{MB}kaan{MB}pa  # ;
 
-%+Foc%_kin:{MB}kin	# ;
+%+Foc%_kin:{MB}kin  # ;
 
-%+Foc%_kin%+Foc%_hAn:{MB}kin{MB}han	# ;
+%+Foc%_kin%+Foc%_hAn:{MB}kin{MB}han  # ;
 
-%+Foc%_kin%+Foc%_kAAn:{MB}kin{MB}kaan	# ;
+%+Foc%_kin%+Foc%_kAAn:{MB}kin{MB}kaan  # ;
 
-%+Foc%_kin%+Foc%_kO:{MB}kin{MB}ko	# ;
+%+Foc%_kin%+Foc%_kO:{MB}kin{MB}ko  # ;
 
-%+Foc%_kin%+Foc%_pA:{MB}kin{MB}pa	# ;
+%+Foc%_kin%+Foc%_pA:{MB}kin{MB}pa  # ;
 
-%+Foc%_kO:{MB}ko	# ;
+%+Foc%_kO:{MB}ko  # ;
 
-%+Foc%_kO%+Foc%_hAn:{MB}ko{MB}han	# ;
+%+Foc%_kO%+Foc%_hAn:{MB}ko{MB}han  # ;
 
-%+Foc%_kO%+Foc%_kAAn:{MB}ko{MB}kaan	# ;
+%+Foc%_kO%+Foc%_kAAn:{MB}ko{MB}kaan  # ;
 
-%+Foc%_kO%+Foc%_kin:{MB}ko{MB}kin	# ;
+%+Foc%_kO%+Foc%_kin:{MB}ko{MB}kin  # ;
 
-%+Foc%_kO%+Foc%_pA:{MB}ko{MB}pa	# ;
+%+Foc%_kO%+Foc%_pA:{MB}ko{MB}pa  # ;
 
-%+Foc%_kO%+Foc%_s:{MB}ko{MB}s	# ;
+%+Foc%_kO%+Foc%_s:{MB}ko{MB}s  # ;
 
-%+Foc%_pA:{MB}pa	# ;
+%+Foc%_pA:{MB}pa  # ;
 
-%+Foc%_pA%+Foc%_hAn:{MB}pa{MB}han	# ;
+%+Foc%_pA%+Foc%_hAn:{MB}pa{MB}han  # ;
 
-%+Foc%_pA%+Foc%_kAAn:{MB}pa{MB}kaan	# ;
+%+Foc%_pA%+Foc%_kAAn:{MB}pa{MB}kaan  # ;
 
-%+Foc%_pA%+Foc%_kin:{MB}pa{MB}kin	# ;
+%+Foc%_pA%+Foc%_kin:{MB}pa{MB}kin  # ;
 
-%+Foc%_pA%+Foc%_kO:{MB}pa{MB}ko	# ;
+%+Foc%_pA%+Foc%_kO:{MB}pa{MB}ko  # ;
 
-%+Foc%_pA%+Foc%_s:{MB}pa{MB}s	# ;
+%+Foc%_pA%+Foc%_s:{MB}pa{MB}s  # ;
 
 
 LEXICON ACRO_BACK_CLIT_OPT
 
-:	# ;
-:	ACRO_BACK_CLIT ;
+:  # ;
+:  ACRO_BACK_CLIT ;
 
 
 LEXICON ACRO_BACK_GENITIVE_IDEN
 
-%+Pl%+Gen:{MB}i{MB}de	ACRO_BACK_POSS ;
+%+Pl%+Gen:{MB}i{MB}de  ACRO_BACK_POSS ;
 
-%+Pl%+Gen:{MB}i{MB}den	ACRO_BACK_CLIT_OPT ;
+%+Pl%+Gen:{MB}i{MB}den  ACRO_BACK_CLIT_OPT ;
 
 
 LEXICON ACRO_BACK_GENITIVE_IEN
 
-%+Pl%+Gen:{MB}i{MB}e	ACRO_BACK_POSS ;
+%+Pl%+Gen:{MB}i{MB}e  ACRO_BACK_POSS ;
 
-%+Pl%+Gen:{MB}i{MB}en	ACRO_BACK_CLIT_OPT ;
+%+Pl%+Gen:{MB}i{MB}en  ACRO_BACK_CLIT_OPT ;
 
 
 LEXICON ACRO_BACK_GENITIVE_ITTEN
 
-%+Pl%+Gen:{MB}i{MB}tte	ACRO_BACK_POSS ;
+%+Pl%+Gen:{MB}i{MB}tte  ACRO_BACK_POSS ;
 
-%+Pl%+Gen:{MB}i{MB}tten	ACRO_BACK_CLIT_OPT ;
+%+Pl%+Gen:{MB}i{MB}tten  ACRO_BACK_CLIT_OPT ;
 
 
 LEXICON ACRO_BACK_GENITIVE_JEN
 
-%+Pl%+Gen:{MB}j{MB}e	ACRO_BACK_POSS ;
+%+Pl%+Gen:{MB}j{MB}e  ACRO_BACK_POSS ;
 
-%+Pl%+Gen:{MB}j{MB}en	ACRO_BACK_CLIT_OPT ;
+%+Pl%+Gen:{MB}j{MB}en  ACRO_BACK_CLIT_OPT ;
 
 
 LEXICON ACRO_BACK_ILLATIVE_AN
 
-%+Sg%+Ill:a{MB}a	ACRO_BACK_POSS ;
+%+Sg%+Ill:a{MB}a  ACRO_BACK_POSS ;
 
-%+Sg%+Ill:a{MB}an	ACRO_BACK_CLIT_OPT ;
+%+Sg%+Ill:a{MB}an  ACRO_BACK_CLIT_OPT ;
 
 
 LEXICON ACRO_BACK_ILLATIVE_EN
 
-%+Sg%+Ill:e{MB}e	ACRO_BACK_POSS ;
+%+Sg%+Ill:e{MB}e  ACRO_BACK_POSS ;
 
-%+Sg%+Ill:e{MB}en	ACRO_BACK_CLIT_OPT ;
+%+Sg%+Ill:e{MB}en  ACRO_BACK_CLIT_OPT ;
 
 
 LEXICON ACRO_BACK_ILLATIVE_HAN
 
-%+Sg%+Ill:{MB}ha	ACRO_BACK_POSS ;
+%+Sg%+Ill:{MB}ha  ACRO_BACK_POSS ;
 
-%+Sg%+Ill:{MB}han	ACRO_BACK_CLIT_OPT ;
+%+Sg%+Ill:{MB}han  ACRO_BACK_CLIT_OPT ;
 
 
 LEXICON ACRO_BACK_ILLATIVE_HON
 
-%+Sg%+Ill:{MB}ho	ACRO_BACK_POSS ;
+%+Sg%+Ill:{MB}ho  ACRO_BACK_POSS ;
 
-%+Sg%+Ill:{MB}hon	ACRO_BACK_CLIT_OPT ;
+%+Sg%+Ill:{MB}hon  ACRO_BACK_CLIT_OPT ;
 
 
 LEXICON ACRO_BACK_ILLATIVE_HUN
 
-%+Sg%+Ill:{MB}hu	ACRO_BACK_POSS ;
+%+Sg%+Ill:{MB}hu  ACRO_BACK_POSS ;
 
-%+Sg%+Ill:{MB}hun	ACRO_BACK_CLIT_OPT ;
+%+Sg%+Ill:{MB}hun  ACRO_BACK_CLIT_OPT ;
 
 
 LEXICON ACRO_BACK_ILLATIVE_IIN
 
-%+Pl%+Ill:{MB}i{MB}i	ACRO_BACK_POSS ;
+%+Pl%+Ill:{MB}i{MB}i  ACRO_BACK_POSS ;
 
-%+Pl%+Ill:{MB}i{MB}in	ACRO_BACK_CLIT_OPT ;
+%+Pl%+Ill:{MB}i{MB}in  ACRO_BACK_CLIT_OPT ;
 
 
 LEXICON ACRO_BACK_ILLATIVE_IN
 
-%+Sg%+Ill:i{MB}i	ACRO_BACK_POSS ;
+%+Sg%+Ill:i{MB}i  ACRO_BACK_POSS ;
 
-%+Sg%+Ill:i{MB}in	ACRO_BACK_CLIT_OPT ;
+%+Sg%+Ill:i{MB}in  ACRO_BACK_CLIT_OPT ;
 
 
 LEXICON ACRO_BACK_ILLATIVE_ON
 
-%+Sg%+Ill:o{MB}o	ACRO_BACK_POSS ;
+%+Sg%+Ill:o{MB}o  ACRO_BACK_POSS ;
 
-%+Sg%+Ill:o{MB}on	ACRO_BACK_CLIT_OPT ;
+%+Sg%+Ill:o{MB}on  ACRO_BACK_CLIT_OPT ;
 
 
 LEXICON ACRO_BACK_ILLATIVE_SEEN
 
-%+Sg%+Ill:{MB}see	ACRO_BACK_POSS ;
+%+Sg%+Ill:{MB}see  ACRO_BACK_POSS ;
 
-%+Sg%+Ill:{MB}seen	ACRO_BACK_CLIT_OPT ;
+%+Sg%+Ill:{MB}seen  ACRO_BACK_CLIT_OPT ;
 
 
 LEXICON ACRO_BACK_PARTITIVE_A
 
-%+Sg%+Par:{MB}a	ACRO_BACK_POSS_AN_OPT ;
+%+Sg%+Par:{MB}a  ACRO_BACK_POSS_AN_OPT ;
 
 
 LEXICON ACRO_BACK_PARTITIVE_IA
 
-%+Pl%+Par:{MB}i{MB}a	ACRO_BACK_POSS_AN_OPT ;
+%+Pl%+Par:{MB}i{MB}a  ACRO_BACK_POSS_AN_OPT ;
 
 
 LEXICON ACRO_BACK_PARTITIVE_ITA
 
-%+Pl%+Par:{MB}i{MB}ta	ACRO_BACK_POSS_AN_OPT ;
+%+Pl%+Par:{MB}i{MB}ta  ACRO_BACK_POSS_AN_OPT ;
 
 
 LEXICON ACRO_BACK_PARTITIVE_JA
 
-%+Pl%+Par:{MB}j{MB}a	ACRO_BACK_POSS_AN_OPT ;
+%+Pl%+Par:{MB}j{MB}a  ACRO_BACK_POSS_AN_OPT ;
 
 
 LEXICON ACRO_BACK_PARTITIVE_TA
 
-%+Sg%+Par:{MB}ta	ACRO_BACK_POSS_AN_OPT ;
+%+Sg%+Par:{MB}ta  ACRO_BACK_POSS_AN_OPT ;
 
 
 LEXICON ACRO_BACK_PLURALS
 
-%+Pl%+Abe:{MB}i{MB}tta	ACRO_BACK_POSS_AN_OPT ;
+%+Pl%+Abe:{MB}i{MB}tta  ACRO_BACK_POSS_AN_OPT ;
 
-%+Pl%+Abl:{MB}i{MB}lta	ACRO_BACK_POSS_AN_OPT ;
+%+Pl%+Abl:{MB}i{MB}lta  ACRO_BACK_POSS_AN_OPT ;
 
-%+Pl%+Ade:{MB}i{MB}lla	ACRO_BACK_POSS_AN_OPT ;
+%+Pl%+Ade:{MB}i{MB}lla  ACRO_BACK_POSS_AN_OPT ;
 
-%+Pl%+All:{MB}i{MB}lle	ACRO_BACK_POSS_EN_OPT ;
+%+Pl%+All:{MB}i{MB}lle  ACRO_BACK_POSS_EN_OPT ;
 
-%+Pl%+Ela:{MB}i{MB}sta	ACRO_BACK_POSS_AN_OPT ;
+%+Pl%+Ela:{MB}i{MB}sta  ACRO_BACK_POSS_AN_OPT ;
 
-%+Pl%+Ess:{MB}i{MB}na	ACRO_BACK_POSS_AN_OPT ;
+%+Pl%+Ess:{MB}i{MB}na  ACRO_BACK_POSS_AN_OPT ;
 
-%+Pl%+Ill:{MB}i{MB}hin	ACRO_BACK_POSS_CLIT_OPT ;
+%+Pl%+Ill:{MB}i{MB}hin  ACRO_BACK_POSS_CLIT_OPT ;
 
-%+Pl%+Ine:{MB}i{MB}ssa	ACRO_BACK_POSS_AN_OPT ;
+%+Pl%+Ine:{MB}i{MB}ssa  ACRO_BACK_POSS_AN_OPT ;
 
-%+Pl%+Ins:{MB}i{MB}n	ACRO_BACK_CLIT_OPT ;
+%+Pl%+Ins:{MB}i{MB}n  ACRO_BACK_CLIT_OPT ;
 
-%+Pl%+Tra:{MB}i{MB}kse	ACRO_BACK_POSS_EN_OBL ;
+%+Pl%+Tra:{MB}i{MB}kse  ACRO_BACK_POSS_EN_OBL ;
 
-%+Pl%+Tra:{MB}i{MB}ksi	ACRO_BACK_CLIT_OPT ;
+%+Pl%+Tra:{MB}i{MB}ksi  ACRO_BACK_CLIT_OPT ;
 
-%+Com:{MB}ine	ACRO_BACK_POSS_EN_OPT ;
+%+Com:{MB}ine  ACRO_BACK_POSS_EN_OPT ;
 
 
 LEXICON ACRO_BACK_POSS
 
-%+Px3:{MB}nsa	ACRO_BACK_CLIT_OPT ;
+%+Px3:{MB}nsa  ACRO_BACK_CLIT_OPT ;
 
-%+PxPl1:{MB}mme	ACRO_BACK_CLIT_OPT ;
+%+PxPl1:{MB}mme  ACRO_BACK_CLIT_OPT ;
 
-%+PxPl2:{MB}nne	ACRO_BACK_CLIT_OPT ;
+%+PxPl2:{MB}nne  ACRO_BACK_CLIT_OPT ;
 
-%+PxSg1:{MB}ni	ACRO_BACK_CLIT_OPT ;
+%+PxSg1:{MB}ni  ACRO_BACK_CLIT_OPT ;
 
-%+PxSg2:{MB}si	ACRO_BACK_CLIT_OPT ;
+%+PxSg2:{MB}si  ACRO_BACK_CLIT_OPT ;
 
 
 LEXICON ACRO_BACK_POSS_AN
 
-%+Px3:{MB}an	ACRO_BACK_CLIT_OPT ;
+%+Px3:{MB}an  ACRO_BACK_CLIT_OPT ;
 
 
 LEXICON ACRO_BACK_POSS_AN_OPT
 
-:	ACRO_BACK_POSS ;
-:	ACRO_BACK_POSS_AN ;
-:	ACRO_BACK_CLIT ;
-:	# ;
+:  ACRO_BACK_POSS ;
+:  ACRO_BACK_POSS_AN ;
+:  ACRO_BACK_CLIT ;
+:  # ;
 
 
 LEXICON ACRO_BACK_POSS_CLIT_OPT
 
-:	ACRO_BACK_POSS ;
-:	ACRO_BACK_CLIT ;
-:	# ;
+:  ACRO_BACK_POSS ;
+:  ACRO_BACK_CLIT ;
+:  # ;
 
 
 LEXICON ACRO_BACK_POSS_EN
 
-%+Px3:{MB}en	ACRO_BACK_CLIT_OPT ;
+%+Px3:{MB}en  ACRO_BACK_CLIT_OPT ;
 
 
 LEXICON ACRO_BACK_POSS_EN_OBL
 
-:	ACRO_BACK_POSS ;
-:	ACRO_BACK_POSS_EN ;
+:  ACRO_BACK_POSS ;
+:  ACRO_BACK_POSS_EN ;
 
 
 LEXICON ACRO_BACK_POSS_EN_OPT
 
-:	ACRO_BACK_POSS ;
-:	ACRO_BACK_POSS_EN ;
-:	ACRO_BACK_CLIT ;
-:	# ;
+:  ACRO_BACK_POSS ;
+:  ACRO_BACK_POSS_EN ;
+:  ACRO_BACK_CLIT ;
+:  # ;
 
 
 LEXICON ACRO_BACK_SG_NOM
 
-%+Sg%+Nom:	# ;
+%+Sg%+Nom:  # ;
 
 
 LEXICON ACRO_BACK_SINGULARS
 
-%+Pl%+Nom:{MB}t	ACRO_BACK_CLIT_OPT ;
+%+Pl%+Nom:{MB}t  ACRO_BACK_CLIT_OPT ;
 
-%+Sg%+Abe:{MB}tta	ACRO_BACK_POSS_AN_OPT ;
+%+Sg%+Abe:{MB}tta  ACRO_BACK_POSS_AN_OPT ;
 
-%+Sg%+Abl:{MB}lta	ACRO_BACK_POSS_AN_OPT ;
+%+Sg%+Abl:{MB}lta  ACRO_BACK_POSS_AN_OPT ;
 
-%+Sg%+Ade:{MB}lla	ACRO_BACK_POSS_AN_OPT ;
+%+Sg%+Ade:{MB}lla  ACRO_BACK_POSS_AN_OPT ;
 
-%+Sg%+All:{MB}lle	ACRO_BACK_POSS_EN_OPT ;
+%+Sg%+All:{MB}lle  ACRO_BACK_POSS_EN_OPT ;
 
-%+Sg%+Ela:{MB}sta	ACRO_BACK_POSS_AN_OPT ;
+%+Sg%+Ela:{MB}sta  ACRO_BACK_POSS_AN_OPT ;
 
-%+Sg%+Ess:{MB}na	ACRO_BACK_POSS_AN_OPT ;
+%+Sg%+Ess:{MB}na  ACRO_BACK_POSS_AN_OPT ;
 
-%+Sg%+Gen:{MB}n	ACRO_BACK_CLIT_OPT ;
+%+Sg%+Gen:{MB}n  ACRO_BACK_CLIT_OPT ;
 
-%+Sg%+Ine:{MB}ssa	ACRO_BACK_POSS_AN_OPT ;
+%+Sg%+Ine:{MB}ssa  ACRO_BACK_POSS_AN_OPT ;
 
-%+Sg%+Nom:	# ;
+%+Sg%+Nom:  # ;
 
-%+Sg%+Nom:{MB}	ACRO_BACK_POSS ;
-%+Sg%+Nom:{MB}	ACRO_BACK_CLIT ;
+%+Sg%+Nom:{MB}  ACRO_BACK_POSS ;
+%+Sg%+Nom:{MB}  ACRO_BACK_CLIT ;
 
-%+Sg%+Par:{MB}ta	ACRO_BACK_POSS_AN_OPT ;
+%+Sg%+Par:{MB}ta  ACRO_BACK_POSS_AN_OPT ;
 
-%+Sg%+Tra:{MB}kse	ACRO_BACK_POSS_EN_OBL ;
+%+Sg%+Tra:{MB}kse  ACRO_BACK_POSS_EN_OBL ;
 
-%+Sg%+Tra:{MB}ksi	ACRO_BACK_CLIT_OPT ;
+%+Sg%+Tra:{MB}ksi  ACRO_BACK_CLIT_OPT ;
 
 
 LEXICON ACRO_COMPOUND
 
-%+TruncPrefix:-	# ;
+%+TruncPrefix:-  # ;
 
-#:-	NOUN ;
-#:-	ADJECTIVE ;
-#:-	SUFFIX ;
+#:-  NOUN ;
+#:-  ADJECTIVE ;
+#:-  SUFFIX ;
 
 
 LEXICON ACRO_FRONT_CASES
 
-:	ACRO_FRONT_PLURALS ;
-:	ACRO_FRONT_SINGULARS ;
+:  ACRO_FRONT_PLURALS ;
+:  ACRO_FRONT_SINGULARS ;
 
 
 LEXICON ACRO_FRONT_CLIT
 
-%+Foc%_hAn:{MB}hän	# ;
+%+Foc%_hAn:{MB}hän  # ;
 
-%+Foc%_hAn%+Foc%_kAAn:{MB}hän{MB}kään	# ;
+%+Foc%_hAn%+Foc%_kAAn:{MB}hän{MB}kään  # ;
 
-%+Foc%_hAn%+Foc%_kO:{MB}hän{MB}kö	# ;
+%+Foc%_hAn%+Foc%_kO:{MB}hän{MB}kö  # ;
 
-%+Foc%_hAn%+Foc%_pA:{MB}hän{MB}pä	# ;
+%+Foc%_hAn%+Foc%_pA:{MB}hän{MB}pä  # ;
 
-%+Foc%_kAAn:{MB}kään	# ;
+%+Foc%_kAAn:{MB}kään  # ;
 
-%+Foc%_kAAn%+Foc%_hAn:{MB}kään{MB}hän	# ;
+%+Foc%_kAAn%+Foc%_hAn:{MB}kään{MB}hän  # ;
 
-%+Foc%_kAAn%+Foc%_kin:{MB}kään{MB}kin	# ;
+%+Foc%_kAAn%+Foc%_kin:{MB}kään{MB}kin  # ;
 
-%+Foc%_kAAn%+Foc%_kO:{MB}kään{MB}kö	# ;
+%+Foc%_kAAn%+Foc%_kO:{MB}kään{MB}kö  # ;
 
-%+Foc%_kAAn%+Foc%_pA:{MB}kään{MB}pä	# ;
+%+Foc%_kAAn%+Foc%_pA:{MB}kään{MB}pä  # ;
 
-%+Foc%_kin:{MB}kin	# ;
+%+Foc%_kin:{MB}kin  # ;
 
-%+Foc%_kin%+Foc%_hAn:{MB}kin{MB}hän	# ;
+%+Foc%_kin%+Foc%_hAn:{MB}kin{MB}hän  # ;
 
-%+Foc%_kin%+Foc%_kAAn:{MB}kin{MB}kään	# ;
+%+Foc%_kin%+Foc%_kAAn:{MB}kin{MB}kään  # ;
 
-%+Foc%_kin%+Foc%_kO:{MB}kin{MB}kö	# ;
+%+Foc%_kin%+Foc%_kO:{MB}kin{MB}kö  # ;
 
-%+Foc%_kin%+Foc%_pA:{MB}kin{MB}pä	# ;
+%+Foc%_kin%+Foc%_pA:{MB}kin{MB}pä  # ;
 
-%+Foc%_kO:{MB}kö	# ;
+%+Foc%_kO:{MB}kö  # ;
 
-%+Foc%_kO%+Foc%_hAn:{MB}kö{MB}hän	# ;
+%+Foc%_kO%+Foc%_hAn:{MB}kö{MB}hän  # ;
 
-%+Foc%_kO%+Foc%_kAAn:{MB}kö{MB}kään	# ;
+%+Foc%_kO%+Foc%_kAAn:{MB}kö{MB}kään  # ;
 
-%+Foc%_kO%+Foc%_kin:{MB}kö{MB}kin	# ;
+%+Foc%_kO%+Foc%_kin:{MB}kö{MB}kin  # ;
 
-%+Foc%_kO%+Foc%_pA:{MB}kö{MB}pä	# ;
+%+Foc%_kO%+Foc%_pA:{MB}kö{MB}pä  # ;
 
-%+Foc%_kO%+Foc%_s:{MB}kö{MB}s	# ;
+%+Foc%_kO%+Foc%_s:{MB}kö{MB}s  # ;
 
-%+Foc%_pA:{MB}pä	# ;
+%+Foc%_pA:{MB}pä  # ;
 
-%+Foc%_pA%+Foc%_hAn:{MB}pä{MB}hän	# ;
+%+Foc%_pA%+Foc%_hAn:{MB}pä{MB}hän  # ;
 
-%+Foc%_pA%+Foc%_kAAn:{MB}pä{MB}kään	# ;
+%+Foc%_pA%+Foc%_kAAn:{MB}pä{MB}kään  # ;
 
-%+Foc%_pA%+Foc%_kin:{MB}pä{MB}kin	# ;
+%+Foc%_pA%+Foc%_kin:{MB}pä{MB}kin  # ;
 
-%+Foc%_pA%+Foc%_kO:{MB}pä{MB}kö	# ;
+%+Foc%_pA%+Foc%_kO:{MB}pä{MB}kö  # ;
 
-%+Foc%_pA%+Foc%_s:{MB}pä{MB}s	# ;
+%+Foc%_pA%+Foc%_s:{MB}pä{MB}s  # ;
 
 
 LEXICON ACRO_FRONT_CLIT_OPT
 
-:	# ;
-:	ACRO_FRONT_CLIT ;
+:  # ;
+:  ACRO_FRONT_CLIT ;
 
 
 LEXICON ACRO_FRONT_GENITIVE_IDEN
 
-%+Pl%+Gen:{MB}i{MB}de	ACRO_FRONT_POSS ;
+%+Pl%+Gen:{MB}i{MB}de  ACRO_FRONT_POSS ;
 
-%+Pl%+Gen:{MB}i{MB}den	ACRO_FRONT_CLIT_OPT ;
+%+Pl%+Gen:{MB}i{MB}den  ACRO_FRONT_CLIT_OPT ;
 
 
 LEXICON ACRO_FRONT_GENITIVE_IEN
 
-%+Pl%+Gen:{MB}i{MB}e	ACRO_FRONT_POSS ;
+%+Pl%+Gen:{MB}i{MB}e  ACRO_FRONT_POSS ;
 
-%+Pl%+Gen:{MB}i{MB}en	ACRO_FRONT_CLIT_OPT ;
+%+Pl%+Gen:{MB}i{MB}en  ACRO_FRONT_CLIT_OPT ;
 
 
 LEXICON ACRO_FRONT_GENITIVE_ITTEN
 
-%+Pl%+Gen:{MB}i{MB}tte	ACRO_FRONT_POSS ;
+%+Pl%+Gen:{MB}i{MB}tte  ACRO_FRONT_POSS ;
 
-%+Pl%+Gen:{MB}i{MB}tten	ACRO_FRONT_CLIT_OPT ;
+%+Pl%+Gen:{MB}i{MB}tten  ACRO_FRONT_CLIT_OPT ;
 
 
 LEXICON ACRO_FRONT_GENITIVE_JEN
 
-%+Pl%+Gen:{MB}j{MB}e	ACRO_FRONT_POSS ;
+%+Pl%+Gen:{MB}j{MB}e  ACRO_FRONT_POSS ;
 
-%+Pl%+Gen:{MB}j{MB}en	ACRO_FRONT_CLIT_OPT ;
+%+Pl%+Gen:{MB}j{MB}en  ACRO_FRONT_CLIT_OPT ;
 
 
 LEXICON ACRO_FRONT_ILLATIVE_EN
 
-%+Sg%+Ill:e{MB}e	ACRO_FRONT_POSS ;
+%+Sg%+Ill:e{MB}e  ACRO_FRONT_POSS ;
 
-%+Sg%+Ill:e{MB}en	ACRO_FRONT_CLIT_OPT ;
+%+Sg%+Ill:e{MB}en  ACRO_FRONT_CLIT_OPT ;
 
 
 LEXICON ACRO_FRONT_ILLATIVE_HEN
 
-%+Sg%+Ill:{MB}he	ACRO_FRONT_POSS ;
+%+Sg%+Ill:{MB}he  ACRO_FRONT_POSS ;
 
-%+Sg%+Ill:{MB}hen	ACRO_FRONT_CLIT_OPT ;
+%+Sg%+Ill:{MB}hen  ACRO_FRONT_CLIT_OPT ;
 
 
 LEXICON ACRO_FRONT_ILLATIVE_HIN
 
-%+Sg%+Ill:{MB}hi	ACRO_FRONT_POSS ;
+%+Sg%+Ill:{MB}hi  ACRO_FRONT_POSS ;
 
-%+Sg%+Ill:{MB}hin	ACRO_FRONT_CLIT_OPT ;
+%+Sg%+Ill:{MB}hin  ACRO_FRONT_CLIT_OPT ;
 
 
 LEXICON ACRO_FRONT_ILLATIVE_HYN
 
-%+Sg%+Ill:{MB}hy	ACRO_FRONT_POSS ;
+%+Sg%+Ill:{MB}hy  ACRO_FRONT_POSS ;
 
-%+Sg%+Ill:{MB}hyn	ACRO_FRONT_CLIT_OPT ;
+%+Sg%+Ill:{MB}hyn  ACRO_FRONT_CLIT_OPT ;
 
 
 LEXICON ACRO_FRONT_ILLATIVE_HÄN
 
-%+Sg%+Ill:{MB}hä	ACRO_FRONT_POSS ;
+%+Sg%+Ill:{MB}hä  ACRO_FRONT_POSS ;
 
-%+Sg%+Ill:{MB}hän	ACRO_FRONT_CLIT_OPT ;
+%+Sg%+Ill:{MB}hän  ACRO_FRONT_CLIT_OPT ;
 
 
 LEXICON ACRO_FRONT_ILLATIVE_HÖN
 
-%+Sg%+Ill:{MB}hö	ACRO_FRONT_POSS ;
+%+Sg%+Ill:{MB}hö  ACRO_FRONT_POSS ;
 
-%+Sg%+Ill:{MB}hön	ACRO_FRONT_CLIT_OPT ;
+%+Sg%+Ill:{MB}hön  ACRO_FRONT_CLIT_OPT ;
 
 
 LEXICON ACRO_FRONT_ILLATIVE_IIN
 
-%+Pl%+Ill:{MB}i{MB}i	ACRO_FRONT_POSS ;
+%+Pl%+Ill:{MB}i{MB}i  ACRO_FRONT_POSS ;
 
-%+Pl%+Ill:{MB}i{MB}in	ACRO_FRONT_CLIT_OPT ;
+%+Pl%+Ill:{MB}i{MB}in  ACRO_FRONT_CLIT_OPT ;
 
 
 LEXICON ACRO_FRONT_ILLATIVE_IN
 
-%+Sg%+Ill:i{MB}i	ACRO_FRONT_POSS ;
+%+Sg%+Ill:i{MB}i  ACRO_FRONT_POSS ;
 
-%+Sg%+Ill:i{MB}in	ACRO_FRONT_CLIT_OPT ;
+%+Sg%+Ill:i{MB}in  ACRO_FRONT_CLIT_OPT ;
 
 
 LEXICON ACRO_FRONT_ILLATIVE_ÄN
 
-%+Sg%+Ill:ä{MB}ä	ACRO_FRONT_POSS ;
+%+Sg%+Ill:ä{MB}ä  ACRO_FRONT_POSS ;
 
-%+Sg%+Ill:ä{MB}än	ACRO_FRONT_CLIT_OPT ;
+%+Sg%+Ill:ä{MB}än  ACRO_FRONT_CLIT_OPT ;
 
 
 LEXICON ACRO_FRONT_ILLATIVE_ÖN
 
-%+Sg%+Ill:ö{MB}ö	ACRO_FRONT_POSS ;
+%+Sg%+Ill:ö{MB}ö  ACRO_FRONT_POSS ;
 
-%+Sg%+Ill:ö{MB}ön	ACRO_FRONT_CLIT_OPT ;
+%+Sg%+Ill:ö{MB}ön  ACRO_FRONT_CLIT_OPT ;
 
 
 LEXICON ACRO_FRONT_PARTITIVE_ITÄ
 
-%+Pl%+Par:{MB}i{MB}tä	ACRO_FRONT_POSS_ÄN_OPT ;
+%+Pl%+Par:{MB}i{MB}tä  ACRO_FRONT_POSS_ÄN_OPT ;
 
 
 LEXICON ACRO_FRONT_PARTITIVE_IÄ
 
-%+Pl%+Par:{MB}i{MB}ä	ACRO_FRONT_POSS_ÄN_OPT ;
+%+Pl%+Par:{MB}i{MB}ä  ACRO_FRONT_POSS_ÄN_OPT ;
 
 
 LEXICON ACRO_FRONT_PARTITIVE_JÄ
 
-%+Pl%+Par:{MB}j{MB}ä	ACRO_FRONT_POSS_ÄN_OPT ;
+%+Pl%+Par:{MB}j{MB}ä  ACRO_FRONT_POSS_ÄN_OPT ;
 
 
 LEXICON ACRO_FRONT_PARTITIVE_TÄ
 
-%+Sg%+Par:{MB}tä	ACRO_FRONT_POSS_ÄN_OPT ;
+%+Sg%+Par:{MB}tä  ACRO_FRONT_POSS_ÄN_OPT ;
 
 
 LEXICON ACRO_FRONT_PARTITIVE_Ä
 
-%+Sg%+Par:{MB}ä	ACRO_FRONT_POSS_ÄN_OPT ;
+%+Sg%+Par:{MB}ä  ACRO_FRONT_POSS_ÄN_OPT ;
 
 
 LEXICON ACRO_FRONT_PLURALS
 
-%+Pl%+Abe:{MB}i{MB}ttä	ACRO_FRONT_POSS_ÄN_OPT ;
+%+Pl%+Abe:{MB}i{MB}ttä  ACRO_FRONT_POSS_ÄN_OPT ;
 
-%+Pl%+Abl:{MB}i{MB}ltä	ACRO_FRONT_POSS_ÄN_OPT ;
+%+Pl%+Abl:{MB}i{MB}ltä  ACRO_FRONT_POSS_ÄN_OPT ;
 
-%+Pl%+Ade:{MB}i{MB}llä	ACRO_FRONT_POSS_ÄN_OPT ;
+%+Pl%+Ade:{MB}i{MB}llä  ACRO_FRONT_POSS_ÄN_OPT ;
 
-%+Pl%+All:{MB}i{MB}lle	ACRO_FRONT_POSS_EN_OPT ;
+%+Pl%+All:{MB}i{MB}lle  ACRO_FRONT_POSS_EN_OPT ;
 
-%+Pl%+Ela:{MB}i{MB}stä	ACRO_FRONT_POSS_ÄN_OPT ;
+%+Pl%+Ela:{MB}i{MB}stä  ACRO_FRONT_POSS_ÄN_OPT ;
 
-%+Pl%+Ess:{MB}i{MB}nä	ACRO_FRONT_POSS_ÄN_OPT ;
+%+Pl%+Ess:{MB}i{MB}nä  ACRO_FRONT_POSS_ÄN_OPT ;
 
-%+Pl%+Ill:{MB}i{MB}hin	ACRO_FRONT_POSS_CLIT_OPT ;
+%+Pl%+Ill:{MB}i{MB}hin  ACRO_FRONT_POSS_CLIT_OPT ;
 
-%+Pl%+Ine:{MB}i{MB}ssä	ACRO_FRONT_POSS_ÄN_OPT ;
+%+Pl%+Ine:{MB}i{MB}ssä  ACRO_FRONT_POSS_ÄN_OPT ;
 
-%+Pl%+Ins:{MB}i{MB}n	ACRO_FRONT_CLIT_OPT ;
+%+Pl%+Ins:{MB}i{MB}n  ACRO_FRONT_CLIT_OPT ;
 
-%+Pl%+Tra:{MB}i{MB}kse	ACRO_FRONT_POSS_EN_OBL ;
+%+Pl%+Tra:{MB}i{MB}kse  ACRO_FRONT_POSS_EN_OBL ;
 
-%+Pl%+Tra:{MB}i{MB}ksi	ACRO_FRONT_CLIT_OPT ;
+%+Pl%+Tra:{MB}i{MB}ksi  ACRO_FRONT_CLIT_OPT ;
 
-%+Com:{MB}i{MB}ne	ACRO_FRONT_POSS_EN_OPT ;
+%+Com:{MB}i{MB}ne  ACRO_FRONT_POSS_EN_OPT ;
 
 
 LEXICON ACRO_FRONT_POSS
 
-%+Px3:{MB}nsä	ACRO_FRONT_CLIT_OPT ;
+%+Px3:{MB}nsä  ACRO_FRONT_CLIT_OPT ;
 
-%+PxPl1:{MB}mme	ACRO_FRONT_CLIT_OPT ;
+%+PxPl1:{MB}mme  ACRO_FRONT_CLIT_OPT ;
 
-%+PxPl2:{MB}nne	ACRO_FRONT_CLIT_OPT ;
+%+PxPl2:{MB}nne  ACRO_FRONT_CLIT_OPT ;
 
-%+PxSg1:{MB}ni	ACRO_FRONT_CLIT_OPT ;
+%+PxSg1:{MB}ni  ACRO_FRONT_CLIT_OPT ;
 
-%+PxSg2:{MB}si	ACRO_FRONT_CLIT_OPT ;
+%+PxSg2:{MB}si  ACRO_FRONT_CLIT_OPT ;
 
 
 LEXICON ACRO_FRONT_POSS_CLIT_OPT
 
-:	ACRO_FRONT_POSS ;
-:	ACRO_FRONT_CLIT ;
-:	# ;
+:  ACRO_FRONT_POSS ;
+:  ACRO_FRONT_CLIT ;
+:  # ;
 
 
 LEXICON ACRO_FRONT_POSS_EN
 
-%+Px3:{MB}en	ACRO_FRONT_CLIT_OPT ;
+%+Px3:{MB}en  ACRO_FRONT_CLIT_OPT ;
 
 
 LEXICON ACRO_FRONT_POSS_EN_OBL
 
-:	ACRO_FRONT_POSS ;
-:	ACRO_FRONT_POSS_EN ;
+:  ACRO_FRONT_POSS ;
+:  ACRO_FRONT_POSS_EN ;
 
 
 LEXICON ACRO_FRONT_POSS_EN_OPT
 
-:	ACRO_FRONT_POSS ;
-:	ACRO_FRONT_POSS_EN ;
-:	ACRO_FRONT_CLIT ;
-:	# ;
+:  ACRO_FRONT_POSS ;
+:  ACRO_FRONT_POSS_EN ;
+:  ACRO_FRONT_CLIT ;
+:  # ;
 
 
 LEXICON ACRO_FRONT_POSS_ÄN
 
-%+Px3:{MB}än	ACRO_FRONT_CLIT_OPT ;
+%+Px3:{MB}än  ACRO_FRONT_CLIT_OPT ;
 
 
 LEXICON ACRO_FRONT_POSS_ÄN_OPT
 
-:	ACRO_FRONT_POSS ;
-:	ACRO_FRONT_POSS_ÄN ;
-:	ACRO_FRONT_CLIT ;
-:	# ;
+:  ACRO_FRONT_POSS ;
+:  ACRO_FRONT_POSS_ÄN ;
+:  ACRO_FRONT_CLIT ;
+:  # ;
 
 
 LEXICON ACRO_FRONT_SG_NOM
 
-%+Sg%+Nom:	# ;
+%+Sg%+Nom:  # ;
 
 
 LEXICON ACRO_FRONT_SINGULARS
 
-%+Pl%+Nom:{MB}t	ACRO_FRONT_CLIT_OPT ;
+%+Pl%+Nom:{MB}t  ACRO_FRONT_CLIT_OPT ;
 
-%+Sg%+Abe:{MB}ttä	ACRO_FRONT_POSS_ÄN_OPT ;
+%+Sg%+Abe:{MB}ttä  ACRO_FRONT_POSS_ÄN_OPT ;
 
-%+Sg%+Abl:{MB}ltä	ACRO_FRONT_POSS_ÄN_OPT ;
+%+Sg%+Abl:{MB}ltä  ACRO_FRONT_POSS_ÄN_OPT ;
 
-%+Sg%+Ade:{MB}llä	ACRO_FRONT_POSS_ÄN_OPT ;
+%+Sg%+Ade:{MB}llä  ACRO_FRONT_POSS_ÄN_OPT ;
 
-%+Sg%+All:{MB}lle	ACRO_FRONT_POSS_EN_OPT ;
+%+Sg%+All:{MB}lle  ACRO_FRONT_POSS_EN_OPT ;
 
-%+Sg%+Ela:{MB}stä	ACRO_FRONT_POSS_ÄN_OPT ;
+%+Sg%+Ela:{MB}stä  ACRO_FRONT_POSS_ÄN_OPT ;
 
-%+Sg%+Ess:{MB}nä	ACRO_FRONT_POSS_ÄN_OPT ;
+%+Sg%+Ess:{MB}nä  ACRO_FRONT_POSS_ÄN_OPT ;
 
-%+Sg%+Gen:{MB}n	ACRO_FRONT_CLIT_OPT ;
+%+Sg%+Gen:{MB}n  ACRO_FRONT_CLIT_OPT ;
 
-%+Sg%+Ine:{MB}ssä	ACRO_FRONT_POSS_ÄN_OPT ;
+%+Sg%+Ine:{MB}ssä  ACRO_FRONT_POSS_ÄN_OPT ;
 
-%+Sg%+Nom:{MB}	ACRO_FRONT_POSS ;
-%+Sg%+Nom:{MB}	ACRO_FRONT_CLIT ;
+%+Sg%+Nom:{MB}  ACRO_FRONT_POSS ;
+%+Sg%+Nom:{MB}  ACRO_FRONT_CLIT ;
 
-%+Sg%+Tra:{MB}kse	ACRO_FRONT_POSS_EN_OBL ;
+%+Sg%+Tra:{MB}kse  ACRO_FRONT_POSS_EN_OBL ;
 
-%+Sg%+Tra:{MB}ksi	ACRO_FRONT_CLIT_OPT ;
+%+Sg%+Tra:{MB}ksi  ACRO_FRONT_CLIT_OPT ;
 
