@@ -27,7 +27,7 @@ joskohta+CC+Use/sub:joskohta            # ;
 konsa+CC:konsa                          # ;
 kuin+CC:kuin                            # ;
 mutta+CC:mutta                          # ;
-mutta+CC#ei+V:mutt                   V_EI ;
+mutta+CC#ei+V:mutt                   VERB_EI ;
 myös+CC:myös                            # ;
 niin+CC:niin                            # ;
 saati+CC:saati                          # ;
@@ -45,10 +45,34 @@ vai+CC:vai                              # ;
 vaiko+CC:vaiko                          # ;
 ynnä+CC:ynnä                            # ;
 äläkä+CC:äläkä                          # ;
+eli+Pcle:eli  CONJ_JA  ;
+elikkä+Pcle:elikkä  CONJ_JA  ;
+ja+Pcle:ja  CONJ_JA  ;
+joko+Pcle:joko  CONJ_JA  ;
+mutta+Pcle:mutta  CONJ_JA  ;
+sekä+Pcle:sekä  CONJ_JA  ;
+sun+Pcle:sun  CONJ_JA  ;
+vaan+Pcle:vaan  CONJ_JA  ;
+
+ehkei+CS+Neg:ehk  X_51ettei  ;
+eikä+CC+Neg:e  X_51eikä  ;
+ellei+CS+Neg:ell  X_51ettei  ;
+ettei+CS+Neg:ett  X_51ettei  ;
+jollei+CS+Neg:joll  X_51ettei  ;
+jottei+CS+Neg:jott  X_51ettei  ;
+miksei+CS+Neg:miks  X_51ettei  ;
+muttei+CS+Neg:mutt  X_51ettei  ;
+vaikkei+CS+Neg:vaikk  X_51ettei  ;
+äläkä+CS+Neg:äl  X_51äläkä  ;
 
 !mutta#et+CC:muttet                      # ;
 !mutta#ei+CC:muttei                      # ;
 !mutta#emme+CC:muttemme                  # ;
 !mutta#ette+CC:muttette                  # ;
 !mutta#eivät+CC:mutteivät                # ;
+
+LEXICON CONJ_JA
+
+:	# ;
+
 
