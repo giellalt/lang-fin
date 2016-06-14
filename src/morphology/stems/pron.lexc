@@ -46,7 +46,7 @@ minä+Pron+Pers+Sg1+Ins:minun  PRON_BACK_CLIT_OPT ;
 minä+Pron+Pers+Sg1+Nom:minä    PRON_FRONT_CLIT_OPT ;
 minä+Pron+Pers+Sg1+Par:minua  PRON_BACK_CLIT_OPT ;
 minä+Pron+Pers+Sg1+Tra:minuksi    PRON_BACK_CLIT_OPT ;
-sinä+Pron+Pers+Sg+Abe:sinutta    PRON_BACK_CLIT_OPT ;
+sinä+Pron+Pers+Sg1+Abe:sinutta    PRON_BACK_CLIT_OPT ;
 sinä+Pron+Pers+Sg2+Abl:sinulta    PRON_BACK_CLIT_OPT ;
 sinä+Pron+Pers+Sg2+Acc:sinut  PRON_BACK_CLIT_OPT ;
 sinä+Pron+Pers+Sg2+Ade:sinulla    PRON_BACK_CLIT_OPT ;
@@ -2309,8 +2309,8 @@ eri+Pron:eri  PRON_KOKO  ;
 eräs+Pron:erä  PRON_ERÄS  ;
 harva+Pron:harv  PRON_SAMA  ;
 harvempi+Pron:harvem  PRON_USEAMPI  ;
-he+Pron:he  PRON_ME  ;
-hän+Pron:hän  PRON_HÄN  ;
+!he+Pron+Pers+Pl3:he  PRON_ME  ; ! see above for Nom
+!hän+Pron+Pers+Sg3:hän  PRON_HÄN  ; ! see above for Nom
 hää+Pron:hä  PRON_HÄÄ  ;
 itse+Pron:itse  PRON_ITSE  ;
 itse% kukin+Pron:itse% k  PRON_KUKIN  ;
@@ -2342,7 +2342,7 @@ kumpi+Pron:kum  PRON_KUMPI  ;
 kumpikaan+Pron:kum  PRON_KUMPIKAAN  ;
 kumpikin+Pron:kum  PRON_KUMPIKIN  ;
 ma+Pron:ma  PRON_MA  ;
-me+Pron:me  PRON_ME  ;
+!me+Pron+Pers+Pl1:me  PRON_ME  ; ! See above for Nom
 mi+Pron:mi  PRON_KOKO  ;
 mie+Pron:mi  PRON_MIE  ;
 mikin+Pron:mi  PRON_MIKIN  ;
@@ -2351,7 +2351,7 @@ mikä+Pron:mi  PRON_MIKÄ  ;
 mikä+Pron:mi  PRON_MIKÄ  ;
 mikäkin+Pron:mi  PRON_MIKÄKIN  ;
 mikään+Pron:mi  PRON_MIKÄÄN  ;
-minä+Pron:mi  PRON_MINÄ  ;
+!minä+Pron+Pers+Sg1:mi  PRON_MINÄ  ; ! see above for Nom
 molemmat+Pron:molem  PRON_MOLEMMAT  ;
 mones+Pron:mone  PRON_MONES  ;
 moni+Pron:mon  PRON_MONI  ;
@@ -2372,10 +2372,10 @@ sa+Pron:sa  PRON_MA  ;
 sama+Pron:sam  PRON_SAMA  ;
 se+Pron:s  PRON_SE  ;
 sie+Pron:si  PRON_MIE  ;
-sinä+Pron:si  PRON_MINÄ  ;
+!sinä+Pron+Pers+Sg2:si  PRON_MINÄ  ; ! see above for Nom
 sä+Pron:s  PRON_MÄ  ;
 sää+Pron:sää  PRON_MÄÄ  ;
-te+Pron:te  PRON_ME  ;
+!te+Pron+Pers+Pl2:te  PRON_ME  ; ! see above for Nom
 toi+Pron:to  PRON_TOI  ;
 toinen+Pron:toi  PRON_TOINEN  ;
 toinen+Pron:toi  PRON_TOINEN  ;
@@ -3340,7 +3340,7 @@ LEXICON PRON_MIKÄÄN
 
 LEXICON PRON_MINÄ
 
-+Sg+Acc:nut	PRON_BACK_CLIT_OPT ;
++Acc:nut	PRON_BACK_CLIT_OPT ;
 
 :nu	PRON_BACK_SINGULARS ;
 
