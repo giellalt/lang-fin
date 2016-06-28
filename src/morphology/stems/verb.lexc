@@ -16481,11 +16481,11 @@ LEXICON AUX_OLLA
 
 +Act+Cond+Sg3+Dial/Finland:ois	VERB_BACK_CLIT_OPT ;
 
-+Act+Prt+Pl+ConNeg:olleet	VERB_BACK_CLIT_OPT ;
++Act+Ind+Prt+Pl+ConNeg:olleet	VERB_BACK_CLIT_OPT ;
 
-+Act+Prt+Sg+ConNeg:ollut	VERB_BACK_CLIT_OPT ;
++Act+Ind+Prt+Sg+ConNeg:ollut	VERB_BACK_CLIT_OPT ;
 
-+Act+Prt+Sg+ConNeg+Dial/Finland:ollu	VERB_BACK_CLIT_OPT ;
++Act+Ind+Prt+Sg+ConNeg+Dial/Finland:ollu	VERB_BACK_CLIT_OPT ;
 
 +Act+Pot+ConNeg:liene	VERB_FRONT_CLIT_OPT ;
 
@@ -16505,11 +16505,11 @@ LEXICON AUX_OLLA
 
 +Act+Pot+Sg3:lie	VERB_FRONT_CLIT_OPT ;
 
-+Act+Prs+Pl3:ovat	VERB_BACK_CLIT_OPT ;
++Act+Ind+Prs+Pl3:ovat	VERB_BACK_CLIT_OPT ;
 
-+Act+Prs+Sg3:on	VERB_BACK_CLIT_OPT ;
++Act+Ind+Prs+Sg3:on	VERB_BACK_CLIT_OPT ;
 
-+Act+Prs+Sg3+Dial/Finland:ompi	VERB_BACK_CLIT_OPT ;
++Act+Ind+Prs+Sg3+Dial/Finland:ompi	VERB_BACK_CLIT_OPT ;
 
 +Pass+PrfPrc:ol	ADJ_PARANNELTU ;
 
@@ -16653,7 +16653,7 @@ LEXICON AUX_TARVITA
 
 +Dial/Finland:a	VERB_BACK_STRONG_PRESENT ;
 
-+Dial/Finland+Act+Prs+ConNeg:	VERB_BACK_CLIT_KIN_KAAN_OPT ;
++Dial/Finland+Act+Ind+Prs+ConNeg:	VERB_BACK_CLIT_KIN_KAAN_OPT ;
 
 +Dial/Finland:	VERB_BACK_3SG_I ;
 
