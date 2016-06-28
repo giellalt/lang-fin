@@ -15824,7 +15824,7 @@ LEXICON VERB_OLLA
 0:oll  VERB_BACK_AINF  ;
 0:oll  VERB_BACK_EINF  ;
 0:ole  VERB_BACK_WEAK_PRESENT  ;
-+Act+Ind+Prs+Sg3:on  VERB_BACK_CLIT_OPT  ;
++Act+Ind+Prs+Ine+Sg3:on  VERB_BACK_CLIT_OPT  ;
 +Act+Ind+Prs+Pl3:ovat  VERB_BACK_CLIT_OPT  ;
 0:ol  VERB_BACK_WEAK_PAST  ;
 0:ol  VERB_BACK_STRONG_PAST  ;
@@ -16481,11 +16481,11 @@ LEXICON AUX_OLLA
 
 +Act+Cond+Sg3+Dial/Finland:ois	VERB_BACK_CLIT_OPT ;
 
-+Act+Pst+Pl+ConNeg:olleet	VERB_BACK_CLIT_OPT ;
++Act+Prt+Pl+ConNeg:olleet	VERB_BACK_CLIT_OPT ;
 
-+Act+Pst+Sg+ConNeg:ollut	VERB_BACK_CLIT_OPT ;
++Act+Prt+Sg+ConNeg:ollut	VERB_BACK_CLIT_OPT ;
 
-+Act+Pst+Sg+ConNeg+Dial/Finland:ollu	VERB_BACK_CLIT_OPT ;
++Act+Prt+Sg+ConNeg+Dial/Finland:ollu	VERB_BACK_CLIT_OPT ;
 
 +Act+Pot+ConNeg:liene	VERB_FRONT_CLIT_OPT ;
 
