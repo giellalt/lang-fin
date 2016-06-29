@@ -2325,10 +2325,10 @@ joku+Pron:jo  PRON_JOKU  ;
 jokunen+Pron:joku  PRON_JOKAINEN  ;
 jompi+Pron:jom  PRON_KUMPI  ;
 jompikumpi+Pron:jom  PRON_JOMPIKUMPI  ;
-kaikki+Pron:kaik  PRON_KAIKKI  ;
+!kaikki+Pron:kaik  PRON_KAIKKI  ; ! see above kaikki+Pron+Qu
 ken+Pron:ken  PRON_MÄÄ  ;
 kenkään+Pron:kenkään  PRON_MÄÄ  ;
-koko+Pron:koko  PRON_KOKO  ;
+!koko+Pron:koko  PRON_KOKO  ; ! see above koko+Pron+Qu
 kuka+Pron:k  PRON_KUKA  ;
 kuka+Pron:k  PRON_KUKA  ;
 kuka+Pron:k  PRON_KUKA  ;
@@ -2350,7 +2350,7 @@ mikä+Pron:mi  PRON_MIKÄ  ;
 mikä+Pron:mi  PRON_MIKÄ  ;
 mikä+Pron:mi  PRON_MIKÄ  ;
 mikäkin+Pron:mi  PRON_MIKÄKIN  ;
-mikään+Pron:mi  PRON_MIKÄÄN  ;
+!mikään+Pron:mi  PRON_MIKÄÄN  ; ! see above for mikään
 !minä+Pron+Pers+Sg1:mi  PRON_MINÄ  ; ! see above for Nom
 molemmat+Pron:molem  PRON_MOLEMMAT  ;
 mones+Pron:mone  PRON_MONES  ;
@@ -2370,7 +2370,7 @@ nuo+Pron:n  PRON_NUO  ;
 nämä+Pron:nä  PRON_NÄMÄ  ;
 sa+Pron:sa  PRON_MA  ;
 sama+Pron:sam  PRON_SAMA  ;
-se+Pron:s  PRON_SE  ;
+se+Pron:s  PRON_SE  ; 
 sie+Pron:si  PRON_MIE  ;
 !sinä+Pron+Pers+Sg2:si  PRON_MINÄ  ; ! see above for Nom
 sä+Pron:s  PRON_MÄ  ;
