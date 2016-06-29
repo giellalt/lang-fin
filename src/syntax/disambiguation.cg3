@@ -1427,9 +1427,9 @@ SUBSTITUTE (?) (Num Card Sg Nom ?-) (?) (0 ("[0-9%.,:= +/]+[A-Z]*–[0-9%.,:= +/
 ADD Digit Num - Digit (0 ("[0-9%.,:= +/]+[A-Z]*"r)) ;
 ADD Digit Num - Digit (0 ("[0-9%.,:= +/]+[A-Z]*-[0-9%.,:= +/]*[A-Z]*"r)) ;
 
-SUBSTITUTE (?) (Num Ord Sg Nom Roman ?-) (?) (0 ("[IVXLCDM-]+"r)) ; # ACR?
-SUBSTITUTE (?) (Num Ord Sg Nom Roman ?-) (?) (0 ("[IVXLCDM]*–[IVXLCDM]+"r)) ; 
-SUBSTITUTE (?) (Num Ord Sg Gen Roman ?-) (?) (0 ("[IVXLCDM-]+:n"r)) ;
+SUBSTITUTE (?) (A Ord Sg Nom Roman ?-) (?) (0 ("[IVXLCDM-]+"r)) ; # ACR?
+SUBSTITUTE (?) (A Ord Sg Nom Roman ?-) (?) (0 ("[IVXLCDM]*–[IVXLCDM]+"r)) ; 
+SUBSTITUTE (?) (A Ord Sg Gen Roman ?-) (?) (0 ("[IVXLCDM-]+:n"r)) ;
 
 SUBSTITUTE (?) (N Sg Gen Pref- ?-) (?) (0 ("(.*)n-"r)) ; # maybe first part is Gen
 SUBSTITUTE (?) (N Sg Nom Pref- ?-) (?) (0 ("(.*)-"r)) ; # usually the first part is Nom
@@ -1802,7 +1802,9 @@ REMOVE Pcle IF (0 CC - Pcle) ; # ja, jos, tai, tahi, taikka, vaan, kuin
 
 SELECT CS (*-1 FINV BARRIER S-BOUNDARY)(*1 FINV BARRIER S-BOUNDARY); # kuin kunnes
 
+SELECT ("mökki")(0 ("mökä" N Pl Ade));	
 SELECT ("mutta") + CC OR CS (-1 OMS OR ("(")); 
+SELECT ("mutta") (0 ("mä" Pron Sg Abe));
 SELECT CS (-1 COMMA_SCOL OR >>>); # koska(kuna) kun jos
 SELECT CS (-1 CC OR CS)(-2 COMMA); # 
 
@@ -2040,6 +2042,9 @@ SELECT Pron + Dem (-1 FINV); # add conditions
 SELECT Pron + Dem (-1 Adv OR Pcle)(-2 FINV); # add conditions
 SELECT Pron + Dem (1 FINV OR PrfPrc); # add conditions
 
+SELECT:DemAllcases Pron + Dem (0 $$ALLCASES)(1 $$ALLCASES) ;
+REMOVE:NotDem Pron + Dem (0 Pron);
+	
 SELECT ("<tuo>"i) + Pron + Nom (1C Nom)(NEGATE *-1 Imprt + Sg2 OR Act + Ind + Prs + Sg3);
 REMOVE Imprt (*1 ("?") BARRIER QUO OR (")")); 
 # very hackish (tuo)
@@ -2531,6 +2536,7 @@ REMOVE Prop (0 CC OR CS OR Pr OR Adv OR Pron)(-1 BOS OR QUO) ;
 SELECT A + Gen IF (0C A OR N) (1 COMMA LINK 1C A + Gen) ;
   # Jaakko juoksee nopeasti ison, vanhan puun luokse ...
 
+SELECT Sem_Human (0 ("Jaakko"));
 SELECT ("aika") + A (1C N) (1 Nom_Gen_Par) ;
 SELECT ("arvoinen") + A (-1 Gen) ;
 IFF ("enempi") + ASgGen (1 KUIN) ; #   (1C Gen) (1 Sg) (1 N)  XXXX
@@ -2727,7 +2733,7 @@ REMOVE ("sama") + Pron + Pl + Ins IF (0 $$ALLCASES) (NEGATE 1 $$ALLCASES) (0 Adv
 # -------
 
 REMOVE ("toinen") + Ord + Pl (NEGATE 1 Pl) ;
-SELECT ("toinen") + Num + Ord (1 N) ;
+SELECT ("toinen") + A + Ord (1 N) ;
 # TOISIllE, TOISIAAN ETC.
 
 REMOVE ("yksi") + Num + Pl + Ins IF (0 $$ALLCASES) (NEGATE 1 $$ALLCASES) (0 Adv) (NEGATE 1 Conj);
@@ -2803,6 +2809,8 @@ SELECT ("tilanne") + N ;
 # A BIT RISKY
 SELECT ("toimi") + NPlPar (-1 Gen) ; # TUTKIJAN TOIMIA
 SELECT ("toiminta" N Sg Gen POSS_SUFF ) (*-1 VFIN LINK NOT *1 CLB?) (NEGATE -1 CLB?) ;
+SELECT ("tori") + N IF (0 ("tora" N Pl Ade));
+SELECT ("tukki") + N + Pl ;
 SELECT ("tukki") + N + Pl ;
 REMOVE ("turpa") + N ;
 REMOVE ("tutkinta") + N + Pl ;
