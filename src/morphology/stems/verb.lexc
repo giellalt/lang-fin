@@ -7376,7 +7376,7 @@ pupeltaa+V:pupel  VERB_SIVALTAA  ;
 puputtaa+V:puput  VERB_VIEROITTAA  ;
 puraista+V:purais  VERB_MARISTA  ;
 purattaa+V:purat  VERB_VIEROITTAA  ;
-purea+V:pur  VERB_SOTKEA  ;
+!purea+V:pur  VERB_SOTKEA  ; ! XXX not existing
 pureksia+V:pureks  VERB_KOSIA  ;
 pureskella+V:pureskel  VERB_ETUILLA  ;
 pureskella+V:pureskel  VERB_VASTAILLA  ;
@@ -15824,7 +15824,7 @@ LEXICON VERB_OLLA
 0:oll  VERB_BACK_AINF  ;
 0:oll  VERB_BACK_EINF  ;
 0:ole  VERB_BACK_WEAK_PRESENT  ;
-+Act+Ind+Prs+Ine+Sg3:on  VERB_BACK_CLIT_OPT  ;
++Act+Ind+Prs+Sg3:on  VERB_BACK_CLIT_OPT  ;
 +Act+Ind+Prs+Pl3:ovat  VERB_BACK_CLIT_OPT  ;
 0:ol  VERB_BACK_WEAK_PAST  ;
 0:ol  VERB_BACK_STRONG_PAST  ;
