@@ -52,14 +52,14 @@ The codes:
 The part-of-speech analyses are typically the first:
 
 __Analysis examples examples:__
-* __kutoo:__ {{kutoa+V+Act+Ind+Prs+Sg3}} (Eng. # knits)
-* __talo:__ {{talo+N+Sg+Nom}} (Eng. # house)
-* __nopea:__ {{nopea+A+Sg+Nom}} (Eng. # fast)
-* __yksi:__ {{yksi+Num+Card+Sg+Nom}} (Eng. # one)
-* __nopeasti:__ {{nopeasti+Adv}} (Eng. # fast)
-* __hän:__ {{hän+Pron+Pers+Sg+Nom}} (Eng. # he)
-* __ahaa:__ {{ahaa+Pcle}} (Eng. # ah)
-* __äh:__ {{äh+Interj}} (Eng. # uh)
+* __kutoo: __ {{kutoa+V+Act+Ind+Prs+Sg3}} (Eng. # knits)
+* __talo: __ {{talo+N+Sg+Nom}} (Eng. # house)
+* __nopea: __ {{nopea+A+Sg+Nom}} (Eng. # fast)
+* __yksi: __ {{yksi+Num+Card+Sg+Nom}} (Eng. # one)
+* __nopeasti: __ {{nopeasti+Adv}} (Eng. # fast)
+* __hän: __ {{hän+Pron+Pers+Sg+Nom}} (Eng. # he)
+* __ahaa: __ {{ahaa+Pcle}} (Eng. # ah)
+* __äh: __ {{äh+Interj}} (Eng. # uh)
 
 !Nouns
 In nominal analyses, the proper nouns have additional subanalysis.
@@ -74,7 +74,7 @@ The code for proper nouns:
  * {{+Prop }}: Proper noun
 
 Proper noun tag follows noun analysis:
-* __Pekka:__ {{Pekka+N+Prop+Sg+Nom}} (Eng. # Pekka)
+* __Pekka: __ {{Pekka+N+Prop+Sg+Nom}} (Eng. # Pekka)
 
 !Pronouns
 Pronominal analyses have some semantic classes.
@@ -91,14 +91,14 @@ Codes for various semantic classes:
  * {{+Indef }}: Indefinite
 
 Semantic tags follow pronoun analyses:
-* __minä:__ {{minä+Pron+Pers+Sg+Nom}} (Eng. # I)
-* __tämä:__ {{tämä+Pron+Dem+Sg+Nom}} (Eng. # this)
-* __kuka:__ {{kuka+Pron+Interr+Sg+Nom}} (Eng. # who)
-* __joka:__ {{joka+Pron+Rel+Sg+Nom}} (Eng. # which)
-* __kaikki:__ {{kaikki+Pron+Qu+Sg+Nom}} (Eng. # every)
-* __itse:__ {{itse+Pron+Refl+Sg+Nom}} (Eng. # self)
-* __toistaan:__ {{toinen+Pron+Recipr+Sg+Par+PxSg3}} (Eng. # each other)
-* __joku:__ {{joku+Pron+Qu+Indef+Sg+Nom}} (Eng. # someone)
+* __minä: __ {{minä+Pron+Pers+Sg+Nom}} (Eng. # I)
+* __tämä: __ {{tämä+Pron+Dem+Sg+Nom}} (Eng. # this)
+* __kuka: __ {{kuka+Pron+Interr+Sg+Nom}} (Eng. # who)
+* __joka: __ {{joka+Pron+Rel+Sg+Nom}} (Eng. # which)
+* __kaikki: __ {{kaikki+Pron+Qu+Sg+Nom}} (Eng. # every)
+* __itse: __ {{itse+Pron+Refl+Sg+Nom}} (Eng. # self)
+* __toistaan: __ {{toinen+Pron+Recipr+Sg+Par+PxSg3}} (Eng. # each other)
+* __joku: __ {{joku+Pron+Qu+Indef+Sg+Nom}} (Eng. # someone)
 
  * {{+Sem/Human }}: Semantic class: Human
  * {{+Sem/Geo }}: Semantic class: Geographic
@@ -116,8 +116,8 @@ Numeral class tags:
  * {{+Card  }}: Cardinal
  * {{+Ord }}: Ordinals
 
-* __kolme:__ {{kolme+Num+Card+Sg+Nom}} (Eng. # three)
-* __kolmas:__ {{kolmas+Num+Ord+Sg+Nom}} (Eng. # third)
+* __kolme: __ {{kolme+Num+Card+Sg+Nom}} (Eng. # three)
+* __kolmas: __ {{kolmas+Num+Ord+Sg+Nom}} (Eng. # third)
 
 !Particles
 The particles are subcategorised syntax-wise into conjunctions for all words,
@@ -135,8 +135,8 @@ Conjunction syntax tags:
  * {{+CS }}: Adverbial
 
 The conjunction tags take place of part-of-speech tags for legacy reasons:
-* __ja:__ {{ja+CC}}
-* __vaikka:__ {{vaikka+CS}}
+* __ja: __ {{ja+CC}}
+* __vaikka: __ {{vaikka+CS}}
 
 !Adpositions
 In adposition anlayses, the syntactic tendencies are shown in sub-analyses;
@@ -149,7 +149,7 @@ Adposition syntax tags:
  * {{+Pr }}: Preposition
 
 Adpositions are tagged in POS position:
-* __läpi:__ {{läpi+Po}}
+* __läpi: __ {{läpi+Po}}
 
 !Bound root morphs
 The lexical items that appear as bound morphemes before head word are
@@ -173,7 +173,7 @@ to the needs of end user applications
  * {{+Punct }}: any punctuation
 
 The analyses for symbols are like POSes:
-* __.:__ {{.+Punct}} (Eng. # .)
+* __.: __ {{.+Punct}} (Eng. # .)
 
 !Nominal analyses
 The analyses of nominals show the inflection in number. Nominals inflect in
@@ -185,8 +185,8 @@ Number tags:
  * {{+Pl }}: Plural
 
 Number tags are next to POSes in nominal analyses, and in order of morphs:
-* __padassa:__ {{pata+N+Sg+Ine}} (Eng. # pot)
-* __padoissa:__ {{pata+N+Pl+Ine}}
+* __padassa: __ {{pata+N+Sg+Ine}} (Eng. # pot)
+* __padoissa: __ {{pata+N+Pl+Ine}}
 
 The analyses of nominals have case inflection marked.
 The nominals have case inflection
@@ -210,19 +210,19 @@ to mark syntactic roles
  * {{+Com }}: Comitative
 
 The case is next to number and last obligatory analysis in nominals:
-* __taloa:__ {{talo+N+Sg+Par}}
-* __talon:__ {{talo+N+Sg+Gen}}
-* __talossa:__ {{talo+N+Sg+Ine}}
-* __talosta:__ {{talo+N+Sg+Ela}}
-* __taloon:__ {{talo+N+Sg+Ill}}
-* __talolla:__ {{talo+N+Sg+Ade}}
-* __talolta:__ {{talo+N+Sg+Abl}}
-* __talolle:__ {{talo+N+Sg+All}}
-* __talona:__ {{talo+N+Sg+Ess}}
-* __taloin:__ {{talo+N+Pl+Ins}}
-* __talotta:__ {{talo+N+Sg+Abe}}
-* __taloksi:__ {{talo+N+Sg+Tra}}
-* __taloine:__ {{talo+N+Com}}
+* __taloa: __ {{talo+N+Sg+Par}}
+* __talon: __ {{talo+N+Sg+Gen}}
+* __talossa: __ {{talo+N+Sg+Ine}}
+* __talosta: __ {{talo+N+Sg+Ela}}
+* __taloon: __ {{talo+N+Sg+Ill}}
+* __talolla: __ {{talo+N+Sg+Ade}}
+* __talolta: __ {{talo+N+Sg+Abl}}
+* __talolle: __ {{talo+N+Sg+All}}
+* __talona: __ {{talo+N+Sg+Ess}}
+* __taloin: __ {{talo+N+Pl+Ins}}
+* __talotta: __ {{talo+N+Sg+Abe}}
+* __taloksi: __ {{talo+N+Sg+Tra}}
+* __taloine: __ {{talo+N+Com}}
 
 The analyses of a infinitive short form have lative ending; this is largely
 historical ([VISK § 120|http://scripta.kotus.fi/visk/sisallys.php?p=120]).
@@ -239,7 +239,7 @@ that analysis in synchronic analyses.
 
  * {{+Acc }}: Explicit accusative analysis
 
-* __hänet:__ {{hän+Pron+Pers+Sg+Acc}}
+* __hänet: __ {{hän+Pron+Pers+Sg+Acc}}
 
 Adverbs and adpositions may have some special analyses in diachronic
 analyses.
@@ -272,11 +272,11 @@ Further reading: [VISK § 95|http://scripta.kotus.fi/visk/sisallys.php?p=95]
  * {{+Pl2 }}: Second plural (you)
  * {{+Pl3 }}: Third plural (thy)
 
-* __taloni:__ {{talo+N+Sg+Nom+PxSg1}}
-* __talosi:__ {{talo+N+Sg+Nom+PxSg2}}
-* __talonsa:__ {{talo+N+Sg+Nom+PxSg3}}
-* __talomme:__ {{talo+N+Sg+Nom+PxPl1}}
-* __talonne:__ {{talo+N+Sg+Nom+PxPl2}}
+* __taloni: __ {{talo+N+Sg+Nom+PxSg1}}
+* __talosi: __ {{talo+N+Sg+Nom+PxSg2}}
+* __talonsa: __ {{talo+N+Sg+Nom+PxSg3}}
+* __talomme: __ {{talo+N+Sg+Nom+PxPl1}}
+* __talonne: __ {{talo+N+Sg+Nom+PxPl2}}
 
 !Compound forms
 In compound analyses, the derived compound form that is not a free morph
@@ -285,7 +285,7 @@ compounds.
 Further reading: [VISK § 406|http://scripta.kotus.fi/visk/sisallys.php?p=406]
 +Der/s   Compound form
 
-* __naisien:__ {{nainen+N+Der/s#ien+N+Sg+Nom}} (Eng. # female gum)
+* __naisien: __ {{nainen+N+Der/s#ien+N+Sg+Nom}} (Eng. # female gum)
 
 !Finite verbs
 All verb analyses contain voice marking. For finite verb forms active voice
@@ -296,7 +296,7 @@ Further reading: [VISK § 110|http://scripta.kotus.fi/visk/sisallys.php?p=110]
  * {{+Pss }}: Passive voice
 
 It is the first analysis of verb strings:
-* __kudot:__ {{kutoa+V+Act+Ind+Prs+Sg2}}
+* __kudot: __ {{kutoa+V+Act+Ind+Prs+Sg2}}
 
 Finite verb form analyses have a reading for tense. The tense has two values.
 For moods other than indicative the tense is not distinctive in surface form,
@@ -310,8 +310,8 @@ Further reading: [VISK § 111|http://scripta.kotus.fi/visk/sisallys.php?p=111]
  * {{+Prt }}: Past (preterite)
 
 The tense is marked in indicative forms after mood:
-* __kudon:__ {{kutoa+V+Act+Ind+Prs+Sg1}}
-* __kudoin:__ {{kutoa+V+Act+Ind+Prt+Sg1}}
+* __kudon: __ {{kutoa+V+Act+Ind+Prs+Sg1}}
+* __kudoin: __ {{kutoa+V+Act+Ind+Prt+Sg1}}
 
 Finite verb form analyses have a reading for mood. Mood has four central
 readings and few archaic and marginal. The mood is marked in analyses for
@@ -326,7 +326,7 @@ Further reading: [VISK § 115|http://scripta.kotus.fi/visk/sisallys.php?p=115]
  * {{+Eventv }}: Eventive
 
 The mood is after voice in the analysis string and in morph order:
-* __kutonen:__ {{kutoa+V+Act+Pot+Sg1}}
+* __kutonen: __ {{kutoa+V+Act+Pot+Sg1}}
 
 Finite verb form analyses have a reading for person. Personal ending of verb
 defines the actors.  The person analysis has seven possible values,
@@ -343,25 +343,25 @@ Further reading: [VISK § 106|http://scripta.kotus.fi/visk/sisallys.php?p=106]
  * {{+Pl3 }}: Third plural
 
 The person is the last required analysis for verbs, after the mood:
-* __kudon:__ {{kutoa+V+Act+Ind+Prs+Sg1}}
-* __kudot:__ {{kutoa+V+Act+Ind+Prs+Sg2}}
-* __kutoo:__ {{kutoa+V+Act+Ind+Prs+Sg3}}
-* __kudomme:__ {{kutoa+V+Act+Ind+Prs+Pl1}}
-* __kudotte:__ {{kutoa+V+Act+Ind+Prs+Pl2}}
-* __kutovat:__ {{kutoa+V+Act+Ind+Prs+Pl3}}
+* __kudon: __ {{kutoa+V+Act+Ind+Prs+Sg1}}
+* __kudot: __ {{kutoa+V+Act+Ind+Prs+Sg2}}
+* __kutoo: __ {{kutoa+V+Act+Ind+Prs+Sg3}}
+* __kudomme: __ {{kutoa+V+Act+Ind+Prs+Pl1}}
+* __kudotte: __ {{kutoa+V+Act+Ind+Prs+Pl2}}
+* __kutovat: __ {{kutoa+V+Act+Ind+Prs+Pl3}}
 
 !Negation and verbs
 The analyses of verb for the forms that require negation verb have a special
 analysis for it.
  * {{+ConNeg }}: Connegative form
 
-* __kudo:__ {{kutoa+V+Ind+Prs+ConNeg}}
+* __kudo: __ {{kutoa+V+Ind+Prs+ConNeg}}
 
 The suitable negation verbs have sub-analysis that can be matched to negated
 forms on syntactic level.
  * {{+Neg }}: Negation verb
 
-* __ei:__ {{ei+V+Neg+Act+Sg3}}
+* __ei: __ {{ei+V+Neg+Act+Sg3}}
 
 !Infinite verb forms
 Infinitive verb forms have infinitive or nominal derivation analyses.
@@ -381,11 +381,11 @@ The infinitives have limited nominal inflection.
  * {{+Der/maisilla }}: maisilla derivation (fifth)
 
 Infinitive analysis comes after voice, followed by nominal analyses:
-* __kutoa:__ {{kutoa+V+Act+InfA+Sg+Lat}}
-* __kutoessa:__ {{kutoa+V+Act+InfE+Sg+Ine}}
-* __kutomatta:__ {{kutoa+V+Act+InfMa+Sg+Abe}}
-* __kutominen:__ {{kutoa+V+Der/minen+Sg+Nom}}
-* __kutomaisillani:__ {{kutoa+V+Act+Der/maisilla+PxSg1}}
+* __kutoa: __ {{kutoa+V+Act+InfA+Sg+Lat}}
+* __kutoessa: __ {{kutoa+V+Act+InfE+Sg+Ine}}
+* __kutomatta: __ {{kutoa+V+Act+InfMa+Sg+Abe}}
+* __kutominen: __ {{kutoa+V+Der/minen+Sg+Nom}}
+* __kutomaisillani: __ {{kutoa+V+Act+Der/maisilla+PxSg1}}
 
 !Participles
 Participial verb forms have participle readings. There are 4 participle
@@ -404,10 +404,10 @@ Further reading: [VISK § 122|http://scripta.kotus.fi/visk/sisallys.php?p=122]
  * {{+AgPrc }}: Agent partiicple
 
 Participle analyses are right after voice, followed by adjectival analyses:
-* __kutonut:__ {{kutoa+V+Act+PrfPrc+Sg+Nom}}
-* __kutova:__ {{kutoa+V+Act+PrsPrc+Sg+Nom}}
-* __kutomaton:__ {{kutoa+V+NegPrc+Sg+Nom}}
-* __kutomani:__ {{kutoa+V+AgPrc+Sg+Nom+PxSg1}}
+* __kutonut: __ {{kutoa+V+Act+PrfPrc+Sg+Nom}}
+* __kutova: __ {{kutoa+V+Act+PrsPrc+Sg+Nom}}
+* __kutomaton: __ {{kutoa+V+NegPrc+Sg+Nom}}
+* __kutomani: __ {{kutoa+V+AgPrc+Sg+Nom+PxSg1}}
 
 There are number of implementations that mix up MA infinitives and Agent
 participles, and they share part of the same forms but no semantics and very
@@ -422,8 +422,8 @@ c.f. [VISK § 300|http://scripta.kotus.fi/visk/sisallys.php?p=300]
  * {{+Sup }}: Superlative
 
 The comparison analysis occupies derivation spot, after POS:
-* __nopeampi:__ {{nopea+A+Comp+Sg+Nom}}
-* __nopein:__ {{nopea+A+Sup+Sg+Nom}}
+* __nopeampi: __ {{nopea+A+Comp+Sg+Nom}}
+* __nopein: __ {{nopea+A+Sup+Sg+Nom}}
 
 !Enclitic focus particles
 All word forms can have clitics which are analysed by their orthography.
@@ -477,7 +477,7 @@ in there have been carried over.
  * {{+Use/NoHyphens }}: With hyphens
 
 Usage tags are pushed wherever appropriate:
-* __nallein:__ {{nalle+N+Pl+Gen+Use/Rare}}
+* __nallein: __ {{nalle+N+Pl+Gen+Use/Rare}}
 
 !Dialects
 The informal language use contains different Finnish than the literary
@@ -560,15 +560,15 @@ The Finnish morphological description starts from any of the parts of speech
 dictionaries, prefix or hyphenated suffix
 
 __Parts-of-speech examples:__
-* __talo:__ {{talo+N+Sg+Nom}} (Eng. # house)
-* __nopea:__ {{nopea+A+Sg+Nom}} (Eng. # fast)
-* __kutoa:__ {{kutoa+V+Act+InfA+Sg+Lat}} (Eng. # to knit)
+* __talo: __ {{talo+N+Sg+Nom}} (Eng. # house)
+* __nopea: __ {{nopea+A+Sg+Nom}} (Eng. # fast)
+* __kutoa: __ {{kutoa+V+Act+InfA+Sg+Lat}} (Eng. # to knit)
 
 The compound part sub-set {{NOMINAL}}
 The nominal forms can be used as non-initial parts of typical compounds
 
 __Nominals examples:__
-* __talonjuttu:__ {{talo+N+Sg+Gen#juttu+N+Sg+Nom}} (Eng. # house thing)
+* __talonjuttu: __ {{talo+N+Sg+Gen#juttu+N+Sg+Nom}} (Eng. # house thing)
  !!Adjective-initial Compounds with Agreeing Inflection
  The words in dictionary paradigm class ⁵¹ refer to old closed class of
  adjective initial compounds, which follow agreeing compound pattern same
@@ -3286,11 +3286,11 @@ __Old A+N compounds 51 examples:__
 
 
 __Abbreviations examples:__
-* __eaa.:__ {{eaa.+N}}
-* __esim.:__ {{esim.+N}}
-* __*esim:__ {{esim+N}} (is not standard language)
+* __eaa.: __ {{eaa.+N}}
+* __esim.: __ {{esim.+N}}
+* __*esim: __ {{esim+N}} (is not standard language)
  Some ar less classified
-* __ab:__ {{ab+ABBR}}
+* __ab: __ {{ab+ABBR}}
 
  * {{A%0+N:A%0  #  ; }}: Paper size
  * {{A1+N:A1  #  ; }}: Paper size
@@ -3475,8 +3475,8 @@ __Abbreviations examples:__
  if the final word inflection is used, the class of that word.
 
 __Acronyms examples:__
-* __OY:hyn:__ {{OY+N+Sg+Ill}}
-* __OY:öön__ {{OY+N+Sg+Ill}}
+* __OY:hyn: __ {{OY+N+Sg+Ill}}
+* __OY:öön __ {{OY+N+Sg+Ill}}
 
 
  * {{ADSL+N:ADSL  ACRO_ÄKS  ; }} Asymmetric Digital Subscriber Line
@@ -4113,13 +4113,13 @@ c.f. [VISK § 169|http://scripta.kotus.fi/visk/sisallys.php?p=169]
  allomorph selection and the harmony. See the list from:
 
 __Adjective examples examples:__
-* __aakkostettu:__ {{aakkostettu+A+Sg+Nom}}
-* __aakkostettuja:__ {{aakkostettu+A+Pl+Par}}
-* __aakkostetut:__ {{aakkostettu+A+Pl+Nom}}
-* __aakkostetumpi:__ {{aakkostettu+A+Comp+Sg+Nom}}
-* __aakkostetumpina:__ {{aakkostettu+A+Comp+Pl+Ess}}
-* __aakkostetuin:__ {{aakkostettu+A+Sup+Sg+Nom}}
-* __aakkostetuimmat:__ {{aakkostettu+A+Sup+Pl+Nom}}
+* __aakkostettu: __ {{aakkostettu+A+Sg+Nom}}
+* __aakkostettuja: __ {{aakkostettu+A+Pl+Par}}
+* __aakkostetut: __ {{aakkostettu+A+Pl+Nom}}
+* __aakkostetumpi: __ {{aakkostettu+A+Comp+Sg+Nom}}
+* __aakkostetumpina: __ {{aakkostettu+A+Comp+Pl+Ess}}
+* __aakkostetuin: __ {{aakkostettu+A+Sup+Sg+Nom}}
+* __aakkostetuimmat: __ {{aakkostettu+A+Sup+Pl+Nom}}
 
 
  !!Adjective stem variation and allomorph selection
@@ -4151,25 +4151,25 @@ __Adjective examples examples:__
  awkward, but morphologically plausible.
 
 __Adjectives 1 o examples:__
-* __tummahko:__ {{tummahko+A+Sg+Nom}} (Eng. # darkish)
-* __tummahkona:__ {{tummahko+A+Sg+Ess}}
-* __tummahkossa:__ {{tummahko+A+Sg+Ine}}
-* __tummahkoina:__ {{tummahko+A+Pl+Ess}}
-* __tummahkoissa:__ {{tummahko+A+Pl+Ine}}
-* __tummahkoa:__ {{tummahko+A+Sg+Par}}
-* __*tummahkota:__ {{tummahko+A+Sg+Par}} (is not standard language)
-* __tummahkoon:__ {{tummahko+A+Sg+Ill}}
-* __*tummahkohon:__ {{tummahko+A+Sg+Ill}} (is not standard language)
-* __*tummahkoseen:__ {{tummahko+A+Sg+Ill}} (is not standard language)
-* __tummahkoja:__ {{tummahko+A+Pl+Par}}
-* __*tummahkoita:__ {{tummahko+A+Pl+Par}} (is not standard language)
-* __tummahkojen:__ {{tummahko+A+Pl+Gen}}
-* __*tummahkoiden:__ {{tummahko+A+Pl+Gen}} (is not standard language)
-* __*tummahkoitten:__ {{tummahko+A+Pl+Gen}} (is not standard language)
-* __tummahkoihin:__ {{tummahko+A+Pl+Ill}}
-* __*tummahkoisiin:__ {{tummahko+A+Pl+Ill}} (is not standard language)
-* __tummahkompi:__ {{tummahko+A+Comp+Sg+Nom}}
-* __tummahkoin:__ {{tummahko+A+Sup+Sg+Nom}}
+* __tummahko: __ {{tummahko+A+Sg+Nom}} (Eng. # darkish)
+* __tummahkona: __ {{tummahko+A+Sg+Ess}}
+* __tummahkossa: __ {{tummahko+A+Sg+Ine}}
+* __tummahkoina: __ {{tummahko+A+Pl+Ess}}
+* __tummahkoissa: __ {{tummahko+A+Pl+Ine}}
+* __tummahkoa: __ {{tummahko+A+Sg+Par}}
+* __*tummahkota: __ {{tummahko+A+Sg+Par}} (is not standard language)
+* __tummahkoon: __ {{tummahko+A+Sg+Ill}}
+* __*tummahkohon: __ {{tummahko+A+Sg+Ill}} (is not standard language)
+* __*tummahkoseen: __ {{tummahko+A+Sg+Ill}} (is not standard language)
+* __tummahkoja: __ {{tummahko+A+Pl+Par}}
+* __*tummahkoita: __ {{tummahko+A+Pl+Par}} (is not standard language)
+* __tummahkojen: __ {{tummahko+A+Pl+Gen}}
+* __*tummahkoiden: __ {{tummahko+A+Pl+Gen}} (is not standard language)
+* __*tummahkoitten: __ {{tummahko+A+Pl+Gen}} (is not standard language)
+* __tummahkoihin: __ {{tummahko+A+Pl+Ill}}
+* __*tummahkoisiin: __ {{tummahko+A+Pl+Ill}} (is not standard language)
+* __tummahkompi: __ {{tummahko+A+Comp+Sg+Nom}}
+* __tummahkoin: __ {{tummahko+A+Sup+Sg+Nom}}
 
  The stems ending in u are in class {{ADJ_VALKAISTU}}, and in old dictionaries
  the class is ¹. These stems should be entered in dictionary like:
@@ -4178,54 +4178,54 @@ __Adjectives 1 o examples:__
  passive’s _back_ vowel versions after s stem verbs:
 
 __Adjectives 1 u examples:__
-* __valkaistu:__ {{valkaistu+A+Sg+Nom}} (Eng. # bleached)
-* __valkaistua:__ {{valkaistu+A+Sg+Par}}
-* __valkaistuun:__ {{valkaistu+A+Sg+Ill}}
-* __valkaistuna:__ {{valkaistu+A+Sg+Ess}}
-* __valkaistussa:__ {{valkaistu+A+Sg+Ine}}
-* __valkaistuja:__ {{valkaistu+A+Pl+Par}}
-* __valkaistujen:__ {{valkaistu+A+Pl+Gen}}
-* __valkaistuihin:__ {{valkaistu+A+Pl+Ill}}
-* __valkaistuina:__ {{valkaistu+A+Pl+Ess}}
-* __valkaistuissa:__ {{valkaistu+A+Pl+Ine}}
-* __valkaistumpi:__ {{valkaistu+A+Comp+Sg+Nom}}
-* __valkaistuin:__ {{valkaistu+A+Sup+Sg+Nom}}
+* __valkaistu: __ {{valkaistu+A+Sg+Nom}} (Eng. # bleached)
+* __valkaistua: __ {{valkaistu+A+Sg+Par}}
+* __valkaistuun: __ {{valkaistu+A+Sg+Ill}}
+* __valkaistuna: __ {{valkaistu+A+Sg+Ess}}
+* __valkaistussa: __ {{valkaistu+A+Sg+Ine}}
+* __valkaistuja: __ {{valkaistu+A+Pl+Par}}
+* __valkaistujen: __ {{valkaistu+A+Pl+Gen}}
+* __valkaistuihin: __ {{valkaistu+A+Pl+Ill}}
+* __valkaistuina: __ {{valkaistu+A+Pl+Ess}}
+* __valkaistuissa: __ {{valkaistu+A+Pl+Ine}}
+* __valkaistumpi: __ {{valkaistu+A+Comp+Sg+Nom}}
+* __valkaistuin: __ {{valkaistu+A+Sup+Sg+Nom}}
 
  The stems ending in y are in class {{ADJ_HÄPÄISTY}}, and in old dictionaries
  the class is ¹. Common part of this class is formed by nut participle 
  passive’s _front_ vowel versions after s stem verbs:
 
 __Adjectives 1 y examples:__
-* __häpäisty:__ {{häpäisty+A+Sg+Nom}} (Eng. # defiled)
-* __häpäistyä:__ {{häpäisty+A+Sg+Par}}
-* __häpäistyyn:__ {{häpäisty+A+Sg+Ill}}
-* __häpäistynä:__ {{häpäisty+A+Sg+Ess}}
-* __häpäistyssä:__ {{häpäisty+A+Sg+Ine}}
-* __häpäistyjä:__ {{häpäisty+A+Pl+Par}}
-* __häpäistyjen:__ {{häpäisty+A+Pl+Gen}}
-* __häpäistyihin:__ {{häpäisty+A+Pl+Ill}}
-* __häpäistyinä:__ {{häpäisty+A+Pl+Ess}}
-* __häpäistyissä:__ {{häpäisty+A+Pl+Ine}}
-* __häpäistympi:__ {{häpäisty+A+Comp+Sg+Nom}}
-* __häpäistyin:__ {{häpäisty+A+Sup+Sg+Nom}}
+* __häpäisty: __ {{häpäisty+A+Sg+Nom}} (Eng. # defiled)
+* __häpäistyä: __ {{häpäisty+A+Sg+Par}}
+* __häpäistyyn: __ {{häpäisty+A+Sg+Ill}}
+* __häpäistynä: __ {{häpäisty+A+Sg+Ess}}
+* __häpäistyssä: __ {{häpäisty+A+Sg+Ine}}
+* __häpäistyjä: __ {{häpäisty+A+Pl+Par}}
+* __häpäistyjen: __ {{häpäisty+A+Pl+Gen}}
+* __häpäistyihin: __ {{häpäisty+A+Pl+Ill}}
+* __häpäistyinä: __ {{häpäisty+A+Pl+Ess}}
+* __häpäistyissä: __ {{häpäisty+A+Pl+Ine}}
+* __häpäistympi: __ {{häpäisty+A+Comp+Sg+Nom}}
+* __häpäistyin: __ {{häpäisty+A+Sup+Sg+Nom}}
 
  The words in this class ending in ö belong to {{ADJ_HÖLÖ}}, the old
  dictionaries use class ¹. This class includes front vowel moderative
  derivations.
 
 __Adjectives 1 ö examples:__
-* __hölö:__ {{hölö+A+Sg+Nom}} (Eng. # blabbermouth)
-* __hölöä:__ {{hölö+A+Sg+Par}}
-* __hölöön:__ {{hölö+A+Sg+Ill}}
-* __hölönä:__ {{hölö+A+Sg+Ess}}
-* __hölössä:__ {{hölö+A+Sg+Ine}}
-* __hölöjä:__ {{hölö+A+Pl+Par}}
-* __hölöjen:__ {{hölö+A+Pl+Gen}}
-* __hölöihin:__ {{hölö+A+Pl+Ill}}
-* __hölöinä:__ {{hölö+A+Pl+Ess}}
-* __hölöissä:__ {{hölö+A+Pl+Ine}}
-* __hölömpi:__ {{hölö+A+Comp+Sg+Nom}}
-* __hölöin:__ {{hölö+A+Sup+Sg+Nom}}
+* __hölö: __ {{hölö+A+Sg+Nom}} (Eng. # blabbermouth)
+* __hölöä: __ {{hölö+A+Sg+Par}}
+* __hölöön: __ {{hölö+A+Sg+Ill}}
+* __hölönä: __ {{hölö+A+Sg+Ess}}
+* __hölössä: __ {{hölö+A+Sg+Ine}}
+* __hölöjä: __ {{hölö+A+Pl+Par}}
+* __hölöjen: __ {{hölö+A+Pl+Gen}}
+* __hölöihin: __ {{hölö+A+Pl+Ill}}
+* __hölöinä: __ {{hölö+A+Pl+Ess}}
+* __hölöissä: __ {{hölö+A+Pl+Ine}}
+* __hölömpi: __ {{hölö+A+Comp+Sg+Nom}}
+* __hölöin: __ {{hölö+A+Sup+Sg+Nom}}
 
  The new words with e stem have same allomorph selection as old short
  unchanging bisyllabic u, y, o and ö stems, and no stem-internal variation.
@@ -4233,31 +4233,31 @@ __Adjectives 1 ö examples:__
  {{ADJ_TOOPE}}, and old dictionaries used the class ⁸.
 
 __Adjectives 8 back examples:__
-* __toope:__ {{toope+A+Sg+Nom}} (Eng. # doofus)
-* __toopea:__ {{toope+A+Sg+Par}}
-* __toopeen:__ {{toope+A+Sg+Ill}}
-* __toopeja:__ {{toope+A+Pl+Par}}
-* __toopejen:__ {{toope+A+Pl+Gen}}
-* __toopeihin:__ {{toope+A+Pl+Ill}}
-* __toopempi:__ {{toope+A+Comp+Sg+Nom}}
-* __toopein:__ {{toope+A+Sup+Sg+Nom}}
+* __toope: __ {{toope+A+Sg+Nom}} (Eng. # doofus)
+* __toopea: __ {{toope+A+Sg+Par}}
+* __toopeen: __ {{toope+A+Sg+Ill}}
+* __toopeja: __ {{toope+A+Pl+Par}}
+* __toopejen: __ {{toope+A+Pl+Gen}}
+* __toopeihin: __ {{toope+A+Pl+Ill}}
+* __toopempi: __ {{toope+A+Comp+Sg+Nom}}
+* __toopein: __ {{toope+A+Sup+Sg+Nom}}
  They also have slightly greater probability for archaic form of plural
  genitive:
-* __toopein:__ {{toope+A+Pl+Gen+Use/Rare}}
+* __toopein: __ {{toope+A+Pl+Gen+Use/Rare}}
 
 
  The front variation of unchanging e stems is class {{@LEXNAME}}, and in
  old dictionaries ⁸.
 
 __Adjectives 8 front examples:__
-* __beige:__ {{beige+A+Sg+Nom}} (Eng. # beige)
-* __beigeä:__ {{beige+A+Sg+Par}}
-* __beigeen:__ {{beige+A+Sg+Ill}}
-* __beigejä:__ {{beige+A+Pl+Par}}
-* __beigejen:__ {{beige+A+Pl+Gen}}
-* __beigeihin:__ {{beige+A+Pl+Ill}}
-* __beigempi:__ {{beige+A+Comp+Sg+Nom}}
-* __beigein:__ {{beige+A+Sup+Sg+Nom}}
+* __beige: __ {{beige+A+Sg+Nom}} (Eng. # beige)
+* __beigeä: __ {{beige+A+Sg+Par}}
+* __beigeen: __ {{beige+A+Sg+Ill}}
+* __beigejä: __ {{beige+A+Pl+Par}}
+* __beigejen: __ {{beige+A+Pl+Gen}}
+* __beigeihin: __ {{beige+A+Pl+Ill}}
+* __beigempi: __ {{beige+A+Comp+Sg+Nom}}
+* __beigein: __ {{beige+A+Sup+Sg+Nom}}
 
 
  !Trisyllabic and longer non-derived adjectuve stems
@@ -4270,24 +4270,24 @@ __Adjectives 8 front examples:__
  dictionaries used ². 
 
 __Adjectives 2 o examples:__
-* __tohelo:__ {{tohelo+A+Sg+Nom}} (Eng. # clumsy)
-* __toheloita:__ {{tohelo+A+Pl+Par}}
-* __toheloja:__ {{tohelo+A+Pl+Par}}
-* __tohelojen:__ {{tohelo+A+Pl+Gen}}
-* __toheloiden:__ {{tohelo+A+Pl+Gen}}
-* __toheloitten:__ {{tohelo+A+Pl+Gen}}
-* __tohelompi:__ {{tohelo+A+Comp+Sg+Nom}}
-* __toheloin:__ {{tohelo+A+Sup+Sg+Nom}}
+* __tohelo: __ {{tohelo+A+Sg+Nom}} (Eng. # clumsy)
+* __toheloita: __ {{tohelo+A+Pl+Par}}
+* __toheloja: __ {{tohelo+A+Pl+Par}}
+* __tohelojen: __ {{tohelo+A+Pl+Gen}}
+* __toheloiden: __ {{tohelo+A+Pl+Gen}}
+* __toheloitten: __ {{tohelo+A+Pl+Gen}}
+* __tohelompi: __ {{tohelo+A+Comp+Sg+Nom}}
+* __toheloin: __ {{tohelo+A+Sup+Sg+Nom}}
 
  And the trisyllabic ö stem is classified {{ADJ_LÖPERÖ}}.
 
 __Adjectives 2 ö examples:__
-* __löperö:__ {{löperö+A+Sg+Nom}} (Eng. # sloppy)
-* __löperöjen:__ {{löperö+A+Pl+Gen}}
-* __löperöiden:__ {{löperö+A+Pl+Gen}}
-* __löperöitten:__ {{löperö+A+Pl+Gen}}
-* __löperömpi:__ {{löperö+A+Comp+Sg+Nom}}
-* __löperöin:__ {{löperö+A+Sup+Sg+Nom}}
+* __löperö: __ {{löperö+A+Sg+Nom}} (Eng. # sloppy)
+* __löperöjen: __ {{löperö+A+Pl+Gen}}
+* __löperöiden: __ {{löperö+A+Pl+Gen}}
+* __löperöitten: __ {{löperö+A+Pl+Gen}}
+* __löperömpi: __ {{löperö+A+Comp+Sg+Nom}}
+* __löperöin: __ {{löperö+A+Sup+Sg+Nom}}
 
  !Unchanging long vowel stems
  The words with stem vowels o, u, y and ö preceded by vowels still have no
@@ -4298,25 +4298,25 @@ __Adjectives 2 ö examples:__
  old dictionaries used ³. 
 
 __Adjectives 3 o examples:__
-* __autio:__ {{autio+A+Sg+Nom}} (Eng. # deserted)
-* __autiota:__ {{autio+A+Sg+Par}}
-* __*autioa:__ {{autio+A+Sg+Par}} (is not standard language)
-* __autioita:__ {{autio+A+Pl+Par}}
-* __autioiden:__ {{autio+A+Pl+Gen}}
-* __autioitten:__ {{autio+A+Pl+Gen}}
-* __autiompi:__ {{autio+A+Comp+Sg+Nom}}
-* __autioin:__ {{autio+A+Sup+Sg+Nom}}
+* __autio: __ {{autio+A+Sg+Nom}} (Eng. # deserted)
+* __autiota: __ {{autio+A+Sg+Par}}
+* __*autioa: __ {{autio+A+Sg+Par}} (is not standard language)
+* __autioita: __ {{autio+A+Pl+Par}}
+* __autioiden: __ {{autio+A+Pl+Gen}}
+* __autioitten: __ {{autio+A+Pl+Gen}}
+* __autiompi: __ {{autio+A+Comp+Sg+Nom}}
+* __autioin: __ {{autio+A+Sup+Sg+Nom}}
 
  The front voweled stems with ö after vowels go to class {{ADJ_RIIVIÖ}},
  and used the old dictionary class ³.
 
 __Adjectives 3 ö examples:__
-* __riiviö:__ {{riiviö+A+Sg+Nom}} (Eng. # nasty)
-* __riiviötä:__ {{riiviö+A+Sg+Par}}
-* __riiviöiden:__ {{riiviö+A+Pl+Gen}}
-* __riiviöitten:__ {{riiviö+A+Pl+Gen}}
-* __riiviömpi:__ {{riiviö+A+Comp+Sg+Nom}}
-* __riiviöin:__ {{riiviö+A+Sup+Sg+Nom}}
+* __riiviö: __ {{riiviö+A+Sg+Nom}} (Eng. # nasty)
+* __riiviötä: __ {{riiviö+A+Sg+Par}}
+* __riiviöiden: __ {{riiviö+A+Pl+Gen}}
+* __riiviöitten: __ {{riiviö+A+Pl+Gen}}
+* __riiviömpi: __ {{riiviö+A+Comp+Sg+Nom}}
+* __riiviöin: __ {{riiviö+A+Sup+Sg+Nom}}
 
  There are no examples of new loan word adjectives ending in long vowel
  Furthermore there are no examples of adjectives in other classes without
@@ -4331,47 +4331,47 @@ __Adjectives 3 ö examples:__
  {{ADJ_KOLKKO}}, and old dictionaries use classes ¹⁻A and ¹⁻D.
 
 __Adjective gradations 1 k~0 o examples:__
-* __kolkko:__ {{kolkko+A+Sg+Nom}} (Eng. # gloomy)
-* __kolkossa:__ {{kolkko+A+Sg+Ine}}
-* __kolkoista:__ {{kolkko+A+Pl+Ela}}
-* __kolkkoihin:__ {{kolkko+A+Pl+Ill}}
-* __kolkompi:__ {{kolkko+A+Comp+Sg+Nom}}
-* __kolkoin:__ {{kolkko+A+Sup+Sg+Nom}}
+* __kolkko: __ {{kolkko+A+Sg+Nom}} (Eng. # gloomy)
+* __kolkossa: __ {{kolkko+A+Sg+Ine}}
+* __kolkoista: __ {{kolkko+A+Pl+Ela}}
+* __kolkkoihin: __ {{kolkko+A+Pl+Ill}}
+* __kolkompi: __ {{kolkko+A+Comp+Sg+Nom}}
+* __kolkoin: __ {{kolkko+A+Sup+Sg+Nom}}
 
 
  The quantitative k gradations with u bisyllabic o stem use class
  {{ADJ_VIRKKU}}, and old dictionaries use classes ¹⁻A and ¹⁻D.
 
 __Adjective gradations 1 k~0 u examples:__
-* __virkku:__ {{virkku+A+Sg+Nom}} (Eng. # ???)
-* __virkussa:__ {{virkku+A+Sg+Ine}}
-* __virkuista:__ {{virkku+A+Pl+Ela}}
-* __virkkuihin:__ {{virkku+A+Pl+Ill}}
-* __virkumpi:__ {{virkku+A+Comp+Sg+Nom}}
-* __virkuin:__ {{virkku+A+Sup+Sg+Nom}}
+* __virkku: __ {{virkku+A+Sg+Nom}} (Eng. # ???)
+* __virkussa: __ {{virkku+A+Sg+Ine}}
+* __virkuista: __ {{virkku+A+Pl+Ela}}
+* __virkkuihin: __ {{virkku+A+Pl+Ill}}
+* __virkumpi: __ {{virkku+A+Comp+Sg+Nom}}
+* __virkuin: __ {{virkku+A+Sup+Sg+Nom}}
 
 
  The quantitative k gradations with y bisyllabic o stem use class
  {{ADJ_SÄIKKY}}, and old dictionaries use classes ¹⁻A and ¹⁻D.
 
 __Adjective gradations 1 k~0 y examples:__
-* __säikky:__ {{säikky+A+Sg+Nom}} (Eng. # ???)
-* __säikyssä:__ {{säikky+A+Sg+Ine}}
-* __säikyistä:__ {{säikky+A+Pl+Ela}}
-* __säikkyihin:__ {{säikky+A+Pl+Ill}}
-* __säikympi:__ {{säikky+A+Comp+Sg+Nom}}
-* __säikyin:__ {{säikky+A+Sup+Sg+Nom}}
+* __säikky: __ {{säikky+A+Sg+Nom}} (Eng. # ???)
+* __säikyssä: __ {{säikky+A+Sg+Ine}}
+* __säikyistä: __ {{säikky+A+Pl+Ela}}
+* __säikkyihin: __ {{säikky+A+Pl+Ill}}
+* __säikympi: __ {{säikky+A+Comp+Sg+Nom}}
+* __säikyin: __ {{säikky+A+Sup+Sg+Nom}}
 
  The quantitative k gradations with o bisyllabic ö stem use class
  {{ADJ_KÖKKÖ}}, and old dictionaries use classes ¹⁻A and ¹⁻D.
 
 __Adjective gradations 1 k~0 ö examples:__
-* __kökkö:__ {{kökkö+A+Sg+Nom}} (Eng. # ???)
-* __kökössä:__ {{kökkö+A+Sg+Ine}}
-* __kököistä:__ {{kökkö+A+Pl+Ela}}
-* __kökköihin:__ {{kökkö+A+Pl+Ill}}
-* __kökömpi:__ {{kökkö+A+Comp+Sg+Nom}}
-* __kököin:__ {{kökkö+A+Sup+Sg+Nom}}
+* __kökkö: __ {{kökkö+A+Sg+Nom}} (Eng. # ???)
+* __kökössä: __ {{kökkö+A+Sg+Ine}}
+* __kököistä: __ {{kökkö+A+Pl+Ela}}
+* __kökköihin: __ {{kökkö+A+Pl+Ill}}
+* __kökömpi: __ {{kökkö+A+Comp+Sg+Nom}}
+* __kököin: __ {{kökkö+A+Sup+Sg+Nom}}
 
  there is no unvarying e final adjective with _k ~ 0_ gradation.
 
@@ -4379,12 +4379,12 @@ __Adjective gradations 1 k~0 ö examples:__
  old dictionaries would use ¹⁻B.
 
 __Adjective gradations 1 p~0 o examples:__
-* __suippo:__ {{suippo+A+Sg+Nom}} (Eng. # ?)
-* __suipossa:__ {{suippo+A+Sg+Ine}}
-* __suipoista:__ {{suippo+A+Pl+Ela}}
-* __suippoihin:__ {{suippo+A+Pl+Ill}}
-* __suipompi:__ {{suippo+A+Comp+Sg+Nom}}
-* __suipoin:__ {{suippo+A+Sup+Sg+Nom}}
+* __suippo: __ {{suippo+A+Sg+Nom}} (Eng. # ?)
+* __suipossa: __ {{suippo+A+Sg+Ine}}
+* __suipoista: __ {{suippo+A+Pl+Ela}}
+* __suippoihin: __ {{suippo+A+Pl+Ill}}
+* __suipompi: __ {{suippo+A+Comp+Sg+Nom}}
+* __suipoin: __ {{suippo+A+Sup+Sg+Nom}}
 
 
  The quantitative gradation of p before u is in class {{ADJ_IKÄLOPPU}} and
@@ -4393,12 +4393,12 @@ __Adjective gradations 1 p~0 o examples:__
  p ~ 0 gradation here:
 
 __Adjective gradations 1 p~0 u examples:__
-* __ikäloppu:__ {{ikäloppu+A+Sg+Nom}} (Eng. # age-old)
-* __ikälopussa:__ {{ikäloppu+A+Sg+Ine}}
-* __ikälopuista:__ {{ikäloppu+A+Pl+Ela}}
-* __ikäloppuihin:__ {{ikäloppu+A+Pl+Ill}}
-* __ikälopumpi:__ {{ikäloppu+A+Comp+Sg+Nom}}
-* __ikälopuin:__ {{ikäloppu+A+Sup+Sg+Nom}}
+* __ikäloppu: __ {{ikäloppu+A+Sg+Nom}} (Eng. # age-old)
+* __ikälopussa: __ {{ikäloppu+A+Sg+Ine}}
+* __ikälopuista: __ {{ikäloppu+A+Pl+Ela}}
+* __ikäloppuihin: __ {{ikäloppu+A+Pl+Ill}}
+* __ikälopumpi: __ {{ikäloppu+A+Comp+Sg+Nom}}
+* __ikälopuin: __ {{ikäloppu+A+Sup+Sg+Nom}}
 
 
  and none of the adjectives end in y and quantitative p gradation.
@@ -4407,23 +4407,23 @@ __Adjective gradations 1 p~0 u examples:__
  old dictionaries would use ¹⁻B.
 
 __Adjective gradations 1 p~0 ö examples:__
-* __lörppö:__ {{lörppö+A+Sg+Nom}} (Eng. # blabbermouth)
-* __lörpössä:__ {{lörppö+A+Sg+Ine}}
-* __lörpöistä:__ {{lörppö+A+Pl+Ela}}
-* __lörppöihin:__ {{lörppö+A+Pl+Ill}}
-* __lörpömpi:__ {{lörppö+A+Comp+Sg+Nom}}
-* __lörpöin:__ {{lörppö+A+Sup+Sg+Nom}}
+* __lörppö: __ {{lörppö+A+Sg+Nom}} (Eng. # blabbermouth)
+* __lörpössä: __ {{lörppö+A+Sg+Ine}}
+* __lörpöistä: __ {{lörppö+A+Pl+Ela}}
+* __lörppöihin: __ {{lörppö+A+Pl+Ill}}
+* __lörpömpi: __ {{lörppö+A+Comp+Sg+Nom}}
+* __lörpöin: __ {{lörppö+A+Sup+Sg+Nom}}
 
  The quantitative gradation of t before o is in class {{ADJ_VELTTO}}, 
  which was ¹⁻C in the dictionary.
 
 __Adjective gradations 1 t~0 o examples:__
-* __veltto:__ {{veltto+A+Sg+Nom}} (Eng. # lazy)
-* __veltossa:__ {{veltto+A+Sg+Ine}}
-* __veltoista:__ {{veltto+A+Pl+Ela}}
-* __velttoihin:__ {{veltto+A+Pl+Ill}}
-* __veltompi:__ {{veltto+A+Comp+Sg+Nom}}
-* __veltoin:__ {{veltto+A+Sup+Sg+Nom}}
+* __veltto: __ {{veltto+A+Sg+Nom}} (Eng. # lazy)
+* __veltossa: __ {{veltto+A+Sg+Ine}}
+* __veltoista: __ {{veltto+A+Pl+Ela}}
+* __velttoihin: __ {{veltto+A+Pl+Ill}}
+* __veltompi: __ {{veltto+A+Comp+Sg+Nom}}
+* __veltoin: __ {{veltto+A+Sup+Sg+Nom}}
 
 
  The quantitative gradation of t before u is in class {{ADJ_VIMMATTU}}, 
@@ -4432,12 +4432,12 @@ __Adjective gradations 1 t~0 o examples:__
  passive derivation’s back form (-ttu).
 
 __Adjective gradations 1 t~0 u examples:__
-* __vimmattu:__ {{vimmattu+A+Sg+Nom}} (Eng. # wicked)
-* __vimmatussa:__ {{vimmattu+A+Sg+Ine}}
-* __vimmatuista:__ {{vimmattu+A+Pl+Ela}}
-* __vimmattuihin:__ {{vimmattu+A+Pl+Ill}}
-* __vimmatumpi:__ {{vimmattu+A+Comp+Sg+Nom}}
-* __vimmatuin:__ {{vimmattu+A+Sup+Sg+Nom}}
+* __vimmattu: __ {{vimmattu+A+Sg+Nom}} (Eng. # wicked)
+* __vimmatussa: __ {{vimmattu+A+Sg+Ine}}
+* __vimmatuista: __ {{vimmattu+A+Pl+Ela}}
+* __vimmattuihin: __ {{vimmattu+A+Pl+Ill}}
+* __vimmatumpi: __ {{vimmattu+A+Comp+Sg+Nom}}
+* __vimmatuin: __ {{vimmattu+A+Sup+Sg+Nom}}
 
 
  The quantitative gradation of t before y is in class {{ADJ_YLENNETTY}}, 
@@ -4446,23 +4446,23 @@ __Adjective gradations 1 t~0 u examples:__
  passive derivation’s front (-tty).
 
 __Adjective gradations 1 t~0 y examples:__
-* __ylennetty:__ {{ylennetty+A+Sg+Nom}} (Eng. # promoted)
-* __ylennetyssä:__ {{ylennetty+A+Sg+Ine}}
-* __ylennetyistä:__ {{ylennetty+A+Pl+Ela}}
-* __ylennettyihin:__ {{ylennetty+A+Pl+Ill}}
-* __ylennetympi:__ {{ylennetty+A+Comp+Sg+Nom}}
-* __ylennetyin:__ {{ylennetty+A+Sup+Sg+Nom}}
+* __ylennetty: __ {{ylennetty+A+Sg+Nom}} (Eng. # promoted)
+* __ylennetyssä: __ {{ylennetty+A+Sg+Ine}}
+* __ylennetyistä: __ {{ylennetty+A+Pl+Ela}}
+* __ylennettyihin: __ {{ylennetty+A+Pl+Ill}}
+* __ylennetympi: __ {{ylennetty+A+Comp+Sg+Nom}}
+* __ylennetyin: __ {{ylennetty+A+Sup+Sg+Nom}}
 
  The quantitative gradation of t before y is in class {{ADJ_KYYTTÖ}}, 
  which was ¹⁻C in the dictionary. 
 
 __Adjective gradations 1 t~0 ö examples:__
-* __kyyttö:__ {{kyyttö+A+Sg+Nom}} (Eng. # ?????)
-* __kyytössä:__ {{kyyttö+A+Sg+Ine}}
-* __kyytöistä:__ {{kyyttö+A+Pl+Ela}}
-* __kyyttöihin:__ {{kyyttö+A+Pl+Ill}}
-* __kyytömpi:__ {{kyyttö+A+Comp+Sg+Nom}}
-* __kyytöin:__ {{kyyttö+A+Sup+Sg+Nom}}
+* __kyyttö: __ {{kyyttö+A+Sg+Nom}} (Eng. # ?????)
+* __kyytössä: __ {{kyyttö+A+Sg+Ine}}
+* __kyytöistä: __ {{kyyttö+A+Pl+Ela}}
+* __kyyttöihin: __ {{kyyttö+A+Pl+Ill}}
+* __kyytömpi: __ {{kyyttö+A+Comp+Sg+Nom}}
+* __kyytöin: __ {{kyyttö+A+Sup+Sg+Nom}}
 
  The quantitave k gradation has a variant that allows use of apostrophe
  instead of nothing in the weak grade.
@@ -4471,11 +4471,11 @@ __Adjective gradations 1 t~0 ö examples:__
  this is a subset of dictionary class ¹⁻D. 
 
 __Adjective gradations 1 k~’~0 o examples:__
-* __lako:__ {{lako+A+Sg+Nom}}
-* __laossa:__ {{lako+A+Sg+Ine}}
-* __la’ossa:__ {{lako+A+Sg+Ine}}
-* __laompi:__ {{lako+A+Comp+Sg+Nom}}
-* __laoin:__ {{lako+A+Sup+Sg+Nom}}
+* __lako: __ {{lako+A+Sg+Nom}}
+* __laossa: __ {{lako+A+Sg+Ine}}
+* __la’ossa: __ {{lako+A+Sg+Ine}}
+* __laompi: __ {{lako+A+Comp+Sg+Nom}}
+* __laoin: __ {{lako+A+Sup+Sg+Nom}}
 
 
  There's no k to optional apostrophe with u.
@@ -4490,12 +4490,12 @@ __Adjective gradations 1 k~’~0 o examples:__
  ¹⁻E.
 
 __Adjective gradations 1 p~v o examples:__
-* __kelpo:__ {{kelpo+A+Sg+Nom}} (Eng. # proper)
-* __kelvossa:__ {{kelpo+A+Sg+Ine}}
-* __kelpoina:__ {{kelpo+A+Pl+Ess}}
-* __kelvoista:__ {{kelpo+A+Pl+Ela}}
-* __kelvompi:__ {{kelpo+A+Comp+Sg+Nom}}
-* __kelvoin:__ {{kelpo+A+Sup+Sg+Nom}}
+* __kelpo: __ {{kelpo+A+Sg+Nom}} (Eng. # proper)
+* __kelvossa: __ {{kelpo+A+Sg+Ine}}
+* __kelpoina: __ {{kelpo+A+Pl+Ess}}
+* __kelvoista: __ {{kelpo+A+Pl+Ela}}
+* __kelvompi: __ {{kelpo+A+Comp+Sg+Nom}}
+* __kelvoin: __ {{kelpo+A+Sup+Sg+Nom}}
 
 
  There are none ending in vowel + pu
@@ -4506,12 +4506,12 @@ __Adjective gradations 1 p~v o examples:__
  dictionary class for this is ¹⁻F.
 
 __Adjective gradations 1 t~d o examples:__
-* __mieto:__ {{mieto+A+Sg+Nom}} (Eng. # mild)
-* __miedossa:__ {{mieto+A+Sg+Ine}}
-* __mietoihin:__ {{mieto+A+Pl+Ill}}
-* __miedoista:__ {{mieto+A+Pl+Ela}}
-* __miedompi:__ {{mieto+A+Comp+Sg+Nom}}
-* __miedoin:__ {{mieto+A+Sup+Sg+Nom}}
+* __mieto: __ {{mieto+A+Sg+Nom}} (Eng. # mild)
+* __miedossa: __ {{mieto+A+Sg+Ine}}
+* __mietoihin: __ {{mieto+A+Pl+Ill}}
+* __miedoista: __ {{mieto+A+Pl+Ela}}
+* __miedompi: __ {{mieto+A+Comp+Sg+Nom}}
+* __miedoin: __ {{mieto+A+Sup+Sg+Nom}}
 
 
  The gradation of t ~ d after u is in class {{ADJ_VIIPALOITU}}, the
@@ -4520,12 +4520,12 @@ __Adjective gradations 1 t~d o examples:__
  passive’s back form (-tu).
 
 __Adjective gradations 1 t~d u examples:__
-* __viipaloitu:__ {{viipaloitu+A+Sg+Nom}} (Eng. # sliced)
-* __viipaloidussa:__ {{viipaloitu+A+Sg+Ine}}
-* __viipaloituihin:__ {{viipaloitu+A+Pl+Ill}}
-* __viipaloiduista:__ {{viipaloitu+A+Pl+Ela}}
-* __viipaloidumpi:__ {{viipaloitu+A+Comp+Sg+Nom}}
-* __viipaloiduin:__ {{viipaloitu+A+Sup+Sg+Nom}}
+* __viipaloitu: __ {{viipaloitu+A+Sg+Nom}} (Eng. # sliced)
+* __viipaloidussa: __ {{viipaloitu+A+Sg+Ine}}
+* __viipaloituihin: __ {{viipaloitu+A+Pl+Ill}}
+* __viipaloiduista: __ {{viipaloitu+A+Pl+Ela}}
+* __viipaloidumpi: __ {{viipaloitu+A+Comp+Sg+Nom}}
+* __viipaloiduin: __ {{viipaloitu+A+Sup+Sg+Nom}}
 
 
  The gradation of t ~ d after u is in class {{ADJ_YKSILÖITY}}, the
@@ -4534,12 +4534,12 @@ __Adjective gradations 1 t~d u examples:__
  passive’s front form (-ty).
 
 __Adjective gradations 1 t~d y examples:__
-* __yksilöity:__ {{yksilöity+A+Sg+Nom}} (Eng. # singled)
-* __yksilöidyssä:__ {{yksilöity+A+Sg+Ine}}
-* __yksilöityihin:__ {{yksilöity+A+Pl+Ill}}
-* __yksilöidyistä:__ {{yksilöity+A+Pl+Ela}}
-* __yksilöidympi:__ {{yksilöity+A+Comp+Sg+Nom}}
-* __yksilöidyin:__ {{yksilöity+A+Sup+Sg+Nom}}
+* __yksilöity: __ {{yksilöity+A+Sg+Nom}} (Eng. # singled)
+* __yksilöidyssä: __ {{yksilöity+A+Sg+Ine}}
+* __yksilöityihin: __ {{yksilöity+A+Pl+Ill}}
+* __yksilöidyistä: __ {{yksilöity+A+Pl+Ela}}
+* __yksilöidympi: __ {{yksilöity+A+Comp+Sg+Nom}}
+* __yksilöidyin: __ {{yksilöity+A+Sup+Sg+Nom}}
 
  And there's none with t and ö
 
@@ -4547,12 +4547,12 @@ __Adjective gradations 1 t~d y examples:__
  dictionary class was ¹⁻G.
 
 __Adjective gradations 1 k~g o examples:__
-* __lenko:__ {{lenko+A+Sg+Nom}} (Eng. # crooked)
-* __lengossa:__ {{lenko+A+Sg+Ine}}
-* __lengoista:__ {{lenko+A+Pl+Ela}}
-* __lenkoihin:__ {{lenko+A+Pl+Ill}}
-* __lengompi:__ {{lenko+A+Comp+Sg+Nom}}
-* __lengoin:__ {{lenko+A+Sup+Sg+Nom}}
+* __lenko: __ {{lenko+A+Sg+Nom}} (Eng. # crooked)
+* __lengossa: __ {{lenko+A+Sg+Ine}}
+* __lengoista: __ {{lenko+A+Pl+Ela}}
+* __lenkoihin: __ {{lenko+A+Pl+Ill}}
+* __lengompi: __ {{lenko+A+Comp+Sg+Nom}}
+* __lengoin: __ {{lenko+A+Sup+Sg+Nom}}
 
 
  There's no adjectives ending in nku
@@ -4564,12 +4564,12 @@ __Adjective gradations 1 k~g o examples:__
  {{ADJ_MELTO}}, which corresponds to dictionary class ¹⁻I.
 
 __Adjective gradations 1 t~l o examples:__
-* __melto:__ {{melto+A+Sg+Nom}} (Eng. # ?????)
-* __mellossa:__ {{melto+A+Sg+Ine}}
-* __meltoihin:__ {{melto+A+Pl+Ill}}
-* __melloista:__ {{melto+A+Pl+Ela}}
-* __mellompi:__ {{melto+A+Comp+Sg+Nom}}
-* __melloin:__ {{melto+A+Sup+Sg+Nom}}
+* __melto: __ {{melto+A+Sg+Nom}} (Eng. # ?????)
+* __mellossa: __ {{melto+A+Sg+Ine}}
+* __meltoihin: __ {{melto+A+Pl+Ill}}
+* __melloista: __ {{melto+A+Pl+Ela}}
+* __mellompi: __ {{melto+A+Comp+Sg+Nom}}
+* __melloin: __ {{melto+A+Sup+Sg+Nom}}
 
 
  The quantitative gradation of t after l in o stems is in class 
@@ -4577,12 +4577,12 @@ __Adjective gradations 1 t~l o examples:__
  The common u stem after l is in nut participles passive (-tu):
 
 __Adjective gradations 1 t~l u examples:__
-* __paranneltu:__ {{paranneltu+A+Sg+Nom}} (Eng. # embettered)
-* __parannellussa:__ {{paranneltu+A+Sg+Ine}}
-* __paranneltuihin:__ {{paranneltu+A+Pl+Ill}}
-* __parannelluista:__ {{paranneltu+A+Pl+Ela}}
-* __parannellumpi:__ {{paranneltu+A+Comp+Sg+Nom}}
-* __parannelluin:__ {{paranneltu+A+Sup+Sg+Nom}}
+* __paranneltu: __ {{paranneltu+A+Sg+Nom}} (Eng. # embettered)
+* __parannellussa: __ {{paranneltu+A+Sg+Ine}}
+* __paranneltuihin: __ {{paranneltu+A+Pl+Ill}}
+* __parannelluista: __ {{paranneltu+A+Pl+Ela}}
+* __parannellumpi: __ {{paranneltu+A+Comp+Sg+Nom}}
+* __parannelluin: __ {{paranneltu+A+Sup+Sg+Nom}}
 
 
  The quantitative gradation of t after l in o stems is in class 
@@ -4590,12 +4590,12 @@ __Adjective gradations 1 t~l u examples:__
  As with y and t:
 
 __Adjective gradations 1 t~l y examples:__
-* __vähätelty:__ {{vähätelty+A+Sg+Nom}} (Eng. # belittled)
-* __vähätellyssä:__ {{vähätelty+A+Sg+Ine}}
-* __vähäteltyihin:__ {{vähätelty+A+Pl+Ill}}
-* __vähätellyistä:__ {{vähätelty+A+Pl+Ela}}
-* __vähätellympi:__ {{vähätelty+A+Comp+Sg+Nom}}
-* __vähätellyin:__ {{vähätelty+A+Sup+Sg+Nom}}
+* __vähätelty: __ {{vähätelty+A+Sg+Nom}} (Eng. # belittled)
+* __vähätellyssä: __ {{vähätelty+A+Sg+Ine}}
+* __vähäteltyihin: __ {{vähätelty+A+Pl+Ill}}
+* __vähätellyistä: __ {{vähätelty+A+Pl+Ela}}
+* __vähätellympi: __ {{vähätelty+A+Comp+Sg+Nom}}
+* __vähätellyin: __ {{vähätelty+A+Sup+Sg+Nom}}
 
  There's no adjective ending -ltö in our lexical database.
 
@@ -4603,24 +4603,24 @@ __Adjective gradations 1 t~l y examples:__
  {{ADJ_VENTO}}, which corresponds to dictionary class ¹⁻J.
 
 __Adjective gradations 1 t~n o examples:__
-* __vento:__ {{vento+A+Sg+Nom}} (Eng. # ?)
-* __vennossa:__ {{vento+A+Sg+Ine}}
-* __ventoihin:__ {{vento+A+Pl+Ill}}
-* __vennoista:__ {{vento+A+Pl+Ela}}
-* __vennompi:__ {{vento+A+Comp+Sg+Nom}}
-* __vennoin:__ {{vento+A+Sup+Sg+Nom}}
+* __vento: __ {{vento+A+Sg+Nom}} (Eng. # ?)
+* __vennossa: __ {{vento+A+Sg+Ine}}
+* __ventoihin: __ {{vento+A+Pl+Ill}}
+* __vennoista: __ {{vento+A+Pl+Ela}}
+* __vennompi: __ {{vento+A+Comp+Sg+Nom}}
+* __vennoin: __ {{vento+A+Sup+Sg+Nom}}
 
  The quantitative gradation of t after n in u stems is in class 
  {{ADJ_PANTU}}, which corresponds to dictionary class ¹⁻I.
  The common u stem after n is in nut participle’s passive’s back form (-tu):
 
 __Adjective gradations 1 t~n u examples:__
-* __pantu:__ {{pantu+A+Sg+Nom}} (Eng. # brewed)
-* __pannussa:__ {{pantu+A+Sg+Ine}}
-* __pantuihin:__ {{pantu+A+Pl+Ill}}
-* __pannuista:__ {{pantu+A+Pl+Ela}}
-* __pannumpi:__ {{pantu+A+Comp+Sg+Nom}}
-* __pannuin:__ {{pantu+A+Sup+Sg+Nom}}
+* __pantu: __ {{pantu+A+Sg+Nom}} (Eng. # brewed)
+* __pannussa: __ {{pantu+A+Sg+Ine}}
+* __pantuihin: __ {{pantu+A+Pl+Ill}}
+* __pannuista: __ {{pantu+A+Pl+Ela}}
+* __pannumpi: __ {{pantu+A+Comp+Sg+Nom}}
+* __pannuin: __ {{pantu+A+Sup+Sg+Nom}}
 
  The quantitative gradation of t after n in y stems is in class 
  {{ADJ_MENTY}}, which corresponds to dictionary class ¹⁻I.
@@ -4628,12 +4628,12 @@ __Adjective gradations 1 t~n u examples:__
  (-ty):
 
 __Adjective gradations 1 t~n y examples:__
-* __menty:__ {{menty+A+Sg+Nom}} (Eng. # belittled)
-* __mennyssä:__ {{menty+A+Sg+Ine}}
-* __mentyihin:__ {{menty+A+Pl+Ill}}
-* __mennyistä:__ {{menty+A+Pl+Ela}}
-* __mennympi:__ {{menty+A+Comp+Sg+Nom}}
-* __mennyin:__ {{menty+A+Sup+Sg+Nom}}
+* __menty: __ {{menty+A+Sg+Nom}} (Eng. # belittled)
+* __mennyssä: __ {{menty+A+Sg+Ine}}
+* __mentyihin: __ {{menty+A+Pl+Ill}}
+* __mennyistä: __ {{menty+A+Pl+Ela}}
+* __mennympi: __ {{menty+A+Comp+Sg+Nom}}
+* __mennyin: __ {{menty+A+Sup+Sg+Nom}}
 
  There are no adjectives ending in -ntö
 
@@ -4641,12 +4641,12 @@ __Adjective gradations 1 t~n y examples:__
  {{ADJ_MARTO}}, which corresponds to dictionary class ¹⁻J.
 
 __Adjective gradations 1 t~r o examples:__
-* __marto:__ {{marto+A+Sg+Nom}} (Eng. # ???)
-* __marrossa:__ {{marto+A+Sg+Ine}}
-* __martoihin:__ {{marto+A+Pl+Ill}}
-* __marroista:__ {{marto+A+Pl+Ela}}
-* __marrompi:__ {{marto+A+Comp+Sg+Nom}}
-* __marroin:__ {{marto+A+Sup+Sg+Nom}}
+* __marto: __ {{marto+A+Sg+Nom}} (Eng. # ???)
+* __marrossa: __ {{marto+A+Sg+Ine}}
+* __martoihin: __ {{marto+A+Pl+Ill}}
+* __marroista: __ {{marto+A+Pl+Ela}}
+* __marrompi: __ {{marto+A+Comp+Sg+Nom}}
+* __marroin: __ {{marto+A+Sup+Sg+Nom}}
 
 
  The quantitative gradation of t after r in u stems is in class
@@ -4654,12 +4654,12 @@ __Adjective gradations 1 t~r o examples:__
  The common u stem after r is in nut participle’s passive’s back form (-tu):
 
 __Adjective gradations 1 t~r u examples:__
-* __purtu:__ {{purtu+A+Sg+Nom}} (Eng. # bitten)
-* __purrussa:__ {{purtu+A+Sg+Ine}}
-* __purtuihin:__ {{purtu+A+Pl+Ill}}
-* __purruista:__ {{purtu+A+Pl+Ela}}
-* __purrumpi:__ {{purtu+A+Comp+Sg+Nom}}
-* __purruin:__ {{purtu+A+Sup+Sg+Nom}}
+* __purtu: __ {{purtu+A+Sg+Nom}} (Eng. # bitten)
+* __purrussa: __ {{purtu+A+Sg+Ine}}
+* __purtuihin: __ {{purtu+A+Pl+Ill}}
+* __purruista: __ {{purtu+A+Pl+Ela}}
+* __purrumpi: __ {{purtu+A+Comp+Sg+Nom}}
+* __purruin: __ {{purtu+A+Sup+Sg+Nom}}
 
  The quantitative gradation of t after r in y stems is in class
  {{ADJ_PIERTY}}, which corresponds to dictionary class ¹⁻J.
@@ -4667,12 +4667,12 @@ __Adjective gradations 1 t~r u examples:__
  (-ty):
 
 __Adjective gradations 1 t~r y examples:__
-* __pierty:__ {{pierty+A+Sg+Nom}} (Eng. # befarted)
-* __pierryssä:__ {{pierty+A+Sg+Ine}}
-* __piertyihin:__ {{pierty+A+Pl+Ill}}
-* __pierryistä:__ {{pierty+A+Pl+Ela}}
-* __pierrympi:__ {{pierty+A+Comp+Sg+Nom}}
-* __pierryin:__ {{pierty+A+Sup+Sg+Nom}}
+* __pierty: __ {{pierty+A+Sg+Nom}} (Eng. # befarted)
+* __pierryssä: __ {{pierty+A+Sg+Ine}}
+* __piertyihin: __ {{pierty+A+Pl+Ill}}
+* __pierryistä: __ {{pierty+A+Pl+Ela}}
+* __pierrympi: __ {{pierty+A+Comp+Sg+Nom}}
+* __pierryin: __ {{pierty+A+Sup+Sg+Nom}}
 
  There are no adjectives ending in -rtö. Just as well, the
  class for UkU : UvU- is limited to few nouns we know.
@@ -4686,11 +4686,11 @@ __Adjective gradations 1 t~r y examples:__
  dictionary class is ⁴⁻D. 
 
 __Adjectives 4 o examples:__
-* __hupakko:__ {{hupakko+A+Sg+Nom}} (Eng. # silly girl)
-* __hupakoihin:__ {{hupakko+A+Pl+Ill}}
-* __hupakkoihin:__ {{hupakko+A+Pl+Ill}}
-* __hupakompi:__ {{hupakko+A+Comp+Sg+Nom}}
-* __hupakoin:__ {{hupakko+A+Sup+Sg+Nom}}
+* __hupakko: __ {{hupakko+A+Sg+Nom}} (Eng. # silly girl)
+* __hupakoihin: __ {{hupakko+A+Pl+Ill}}
+* __hupakkoihin: __ {{hupakko+A+Pl+Ill}}
+* __hupakompi: __ {{hupakko+A+Comp+Sg+Nom}}
+* __hupakoin: __ {{hupakko+A+Sup+Sg+Nom}}
 
  !Adjective stems with i:e variations
  The i stems of new i final words have i : e : 0 variation. These classes
@@ -4703,45 +4703,45 @@ __Adjectives 4 o examples:__
  old dictionary classification was ⁵.
 
 __Adjectives 5 back examples:__
-* __abnormi:__ {{abnormi+A+Sg+Nom}} (Eng. # abnorm)
-* __abnormeina:__ {{abnormi+A+Pl+Ess}}
-* __abnormien:__ {{abnormi+A+Pl+Gen}}
-* __abnormimpi:__ {{abnormi+A+Comp+Sg+Nom}}
-* __abnormein:__ {{abnormi+A+Sup+Sg+Nom}}
+* __abnormi: __ {{abnormi+A+Sg+Nom}} (Eng. # abnorm)
+* __abnormeina: __ {{abnormi+A+Pl+Ess}}
+* __abnormien: __ {{abnormi+A+Pl+Gen}}
+* __abnormimpi: __ {{abnormi+A+Comp+Sg+Nom}}
+* __abnormein: __ {{abnormi+A+Sup+Sg+Nom}}
 
  The i finals with front vowel harmony go to class {{ADJ_STYDI}}, where
  old dictionary classification was ⁵.
 
 __Adjectives 5 front examples:__
-* __stydi:__ {{stydi+A+Sg+Nom}} (Eng. # stiff)
-* __stydeinä:__ {{stydi+A+Pl+Ess}}
-* __stydien:__ {{stydi+A+Pl+Gen}}
-* __stydimpi:__ {{stydi+A+Comp+Sg+Nom}}
-* __stydein:__ {{stydi+A+Sup+Sg+Nom}}
+* __stydi: __ {{stydi+A+Sg+Nom}} (Eng. # stiff)
+* __stydeinä: __ {{stydi+A+Pl+Ess}}
+* __stydien: __ {{stydi+A+Pl+Gen}}
+* __stydimpi: __ {{stydi+A+Comp+Sg+Nom}}
+* __stydein: __ {{stydi+A+Sup+Sg+Nom}}
 
  Stems with quantitative k gradation, i final and back harmony are in class 
  {{ADJ_OPAAKKI}} and dictionary class ⁵⁻A or ⁵⁻D.
 
 __Adjectives 5 k~0 back examples:__
-* __opaakki:__ {{opaakki+A+Sg+Nom}} (Eng. # opaque)
-* __opaakissa:__ {{opaakki+A+Sg+Ine}}
-* __opaakkeina:__ {{opaakki+A+Pl+Ess}}
-* __opaakeista:__ {{opaakki+A+Pl+Ela}}
-* __opaakkien:__ {{opaakki+A+Pl+Gen}}
-* __opaakimpi:__ {{opaakki+A+Comp+Sg+Nom}}
-* __opaakein:__ {{opaakki+A+Sup+Sg+Nom}}
+* __opaakki: __ {{opaakki+A+Sg+Nom}} (Eng. # opaque)
+* __opaakissa: __ {{opaakki+A+Sg+Ine}}
+* __opaakkeina: __ {{opaakki+A+Pl+Ess}}
+* __opaakeista: __ {{opaakki+A+Pl+Ela}}
+* __opaakkien: __ {{opaakki+A+Pl+Gen}}
+* __opaakimpi: __ {{opaakki+A+Comp+Sg+Nom}}
+* __opaakein: __ {{opaakki+A+Sup+Sg+Nom}}
 
  Stems with quantitative k gradation, i final and front harmony are in class
  {{ADJ_PINKKI}} and dictionary class ⁵⁻A or ⁵⁻D.
 
 __Adjectives 5 k~0 front examples:__
-* __pinkki:__ {{pinkki+A+Sg+Nom}} (Eng. # pink)
-* __pinkissä:__ {{pinkki+A+Sg+Ine}}
-* __pinkkeinä:__ {{pinkki+A+Pl+Ess}}
-* __pinkeistä:__ {{pinkki+A+Pl+Ela}}
-* __pinkkien:__ {{pinkki+A+Pl+Gen}}
-* __pinkimpi:__ {{pinkki+A+Comp+Sg+Nom}}
-* __pinkein:__ {{pinkki+A+Sup+Sg+Nom}}
+* __pinkki: __ {{pinkki+A+Sg+Nom}} (Eng. # pink)
+* __pinkissä: __ {{pinkki+A+Sg+Ine}}
+* __pinkkeinä: __ {{pinkki+A+Pl+Ess}}
+* __pinkeistä: __ {{pinkki+A+Pl+Ela}}
+* __pinkkien: __ {{pinkki+A+Pl+Gen}}
+* __pinkimpi: __ {{pinkki+A+Comp+Sg+Nom}}
+* __pinkein: __ {{pinkki+A+Sup+Sg+Nom}}
 
  There's no back vowel version of the bisyllabic gradating -ppi form.
 
@@ -4749,37 +4749,37 @@ __Adjectives 5 k~0 front examples:__
  {{ADJ_SIPPI}} and dictionary class ⁵⁻B.
 
 __Adjectives 5 p~0 front examples:__
-* __sippi:__ {{sippi+A+Sg+Nom}} (Eng. # bust)
-* __sipissä:__ {{sippi+A+Sg+Ine}}
-* __sippeinä:__ {{sippi+A+Pl+Ess}}
-* __sipeistä:__ {{sippi+A+Pl+Ela}}
-* __sippien:__ {{sippi+A+Pl+Gen}}
-* __sipimpi:__ {{sippi+A+Comp+Sg+Nom}}
-* __sipein:__ {{sippi+A+Sup+Sg+Nom}}
+* __sippi: __ {{sippi+A+Sg+Nom}} (Eng. # bust)
+* __sipissä: __ {{sippi+A+Sg+Ine}}
+* __sippeinä: __ {{sippi+A+Pl+Ess}}
+* __sipeistä: __ {{sippi+A+Pl+Ela}}
+* __sippien: __ {{sippi+A+Pl+Gen}}
+* __sipimpi: __ {{sippi+A+Comp+Sg+Nom}}
+* __sipein: __ {{sippi+A+Sup+Sg+Nom}}
 
  Stems with quantitative t gradation, i final and back harmony are in class
  {{ADJ_HURTTI}} and dictionary class ⁵⁻C.
 
 __Adjectives 5 t~0 back examples:__
-* __hurtti:__ {{hurtti+A+Sg+Nom}} (Eng. # grunchy)
-* __hurtissa:__ {{hurtti+A+Sg+Ine}}
-* __hurtteina:__ {{hurtti+A+Pl+Ess}}
-* __hurteista:__ {{hurtti+A+Pl+Ela}}
-* __hurttien:__ {{hurtti+A+Pl+Gen}}
-* __hurtimpi:__ {{hurtti+A+Comp+Sg+Nom}}
-* __hurtein:__ {{hurtti+A+Sup+Sg+Nom}}
+* __hurtti: __ {{hurtti+A+Sg+Nom}} (Eng. # grunchy)
+* __hurtissa: __ {{hurtti+A+Sg+Ine}}
+* __hurtteina: __ {{hurtti+A+Pl+Ess}}
+* __hurteista: __ {{hurtti+A+Pl+Ela}}
+* __hurttien: __ {{hurtti+A+Pl+Gen}}
+* __hurtimpi: __ {{hurtti+A+Comp+Sg+Nom}}
+* __hurtein: __ {{hurtti+A+Sup+Sg+Nom}}
 
  Stems with quantitative t gradation, i final and front harmony are in class
  {{ADJ_VÄÄRTTI}} and dictionary class ⁵⁻C.
 
 __Adjectives 5 t~0 front examples:__
-* __väärtti:__ {{väärtti+A+Sg+Nom}} (Eng. # worthy)
-* __väärtissä:__ {{väärtti+A+Sg+Ine}}
-* __väärtteinä:__ {{väärtti+A+Pl+Ess}}
-* __väärteistä:__ {{väärtti+A+Pl+Ela}}
-* __väärttien:__ {{väärtti+A+Pl+Gen}}
-* __väärtimpi:__ {{väärtti+A+Comp+Sg+Nom}}
-* __väärtein:__ {{väärtti+A+Sup+Sg+Nom}}
+* __väärtti: __ {{väärtti+A+Sg+Nom}} (Eng. # worthy)
+* __väärtissä: __ {{väärtti+A+Sg+Ine}}
+* __väärtteinä: __ {{väärtti+A+Pl+Ess}}
+* __väärteistä: __ {{väärtti+A+Pl+Ela}}
+* __väärttien: __ {{väärtti+A+Pl+Gen}}
+* __väärtimpi: __ {{väärtti+A+Comp+Sg+Nom}}
+* __väärtein: __ {{väärtti+A+Sup+Sg+Nom}}
 
  There are no bisyllabic adjectives ending in vowel and gradating -pi.
 
@@ -4787,25 +4787,25 @@ __Adjectives 5 t~0 front examples:__
  {{ADJ_TUHTI}} and dictionary class ⁵⁻F.
 
 __Adjectives 5 t~d back examples:__
-* __tuhti:__ {{tuhti+A+Sg+Nom}} (Eng. # stocky)
-* __tuhdissa:__ {{tuhti+A+Sg+Ine}}
-* __tuhteina:__ {{tuhti+A+Pl+Ess}}
-* __tuhdeista:__ {{tuhti+A+Pl+Ela}}
-* __tuhtien:__ {{tuhti+A+Pl+Gen}}
-* __tuhdimpi:__ {{tuhti+A+Comp+Sg+Nom}}
-* __tuhdein:__ {{tuhti+A+Sup+Sg+Nom}}
+* __tuhti: __ {{tuhti+A+Sg+Nom}} (Eng. # stocky)
+* __tuhdissa: __ {{tuhti+A+Sg+Ine}}
+* __tuhteina: __ {{tuhti+A+Pl+Ess}}
+* __tuhdeista: __ {{tuhti+A+Pl+Ela}}
+* __tuhtien: __ {{tuhti+A+Pl+Gen}}
+* __tuhdimpi: __ {{tuhti+A+Comp+Sg+Nom}}
+* __tuhdein: __ {{tuhti+A+Sup+Sg+Nom}}
 
  Stems with t ~ d gradation, i final and front harmony are in class
  {{ADJ_REHTI}} and dictionary class ⁵⁻F.
 
 __Adjectives 5 t~d front examples:__
-* __rehti:__ {{rehti+A+Sg+Nom}}
-* __rehdissä:__ {{rehti+A+Sg+Ine}}
-* __rehteinä:__ {{rehti+A+Pl+Ess}}
-* __rehdeistä:__ {{rehti+A+Pl+Ela}}
-* __rehtien:__ {{rehti+A+Pl+Gen}}
-* __rehdimpi:__ {{rehti+A+Comp+Sg+Nom}}
-* __rehdein:__ {{rehti+A+Sup+Sg+Nom}}
+* __rehti: __ {{rehti+A+Sg+Nom}}
+* __rehdissä: __ {{rehti+A+Sg+Ine}}
+* __rehteinä: __ {{rehti+A+Pl+Ess}}
+* __rehdeistä: __ {{rehti+A+Pl+Ela}}
+* __rehtien: __ {{rehti+A+Pl+Gen}}
+* __rehdimpi: __ {{rehti+A+Comp+Sg+Nom}}
+* __rehdein: __ {{rehti+A+Sup+Sg+Nom}}
 
  There are no adjectives with i stems with other gradations.
 
@@ -4815,21 +4815,21 @@ __Adjectives 5 t~d front examples:__
  dictionary class of ⁶.
 
 __Adjectives 6 back examples:__
-* __abnormaali:__ {{abnormaali+A+Sg+Nom}} (Eng. # abnormal)
-* __abnormaaleja:__ {{abnormaali+A+Pl+Par}}
-* __abnormaaleiden:__ {{abnormaali+A+Pl+Gen}}
-* __abnormaalimpi:__ {{abnormaali+A+Comp+Sg+Nom}}
-* __abnormaalein:__ {{abnormaali+A+Sup+Sg+Nom}}
+* __abnormaali: __ {{abnormaali+A+Sg+Nom}} (Eng. # abnormal)
+* __abnormaaleja: __ {{abnormaali+A+Pl+Par}}
+* __abnormaaleiden: __ {{abnormaali+A+Pl+Gen}}
+* __abnormaalimpi: __ {{abnormaali+A+Comp+Sg+Nom}}
+* __abnormaalein: __ {{abnormaali+A+Sup+Sg+Nom}}
 
  The i stems with trisyllabic allomorph sets have class {{ADJ_ÖYKKÄRI}}, and
  dictionary class of ⁶.
 
 __Adjectives 6 front examples:__
-* __öykkäri:__ {{öykkäri+A+Sg+Nom}} (Eng. # chav)
-* __öykkärejä:__ {{öykkäri+A+Pl+Par}}
-* __öykkäreiden:__ {{öykkäri+A+Pl+Gen}}
-* __öykkärimpi:__ {{öykkäri+A+Comp+Sg+Nom}}
-* __öykkärein:__ {{öykkkäri+A+Sup+Sg+Nom}}
+* __öykkäri: __ {{öykkäri+A+Sg+Nom}} (Eng. # chav)
+* __öykkärejä: __ {{öykkäri+A+Pl+Par}}
+* __öykkäreiden: __ {{öykkäri+A+Pl+Gen}}
+* __öykkärimpi: __ {{öykkäri+A+Comp+Sg+Nom}}
+* __öykkärein: __ {{öykkkäri+A+Sup+Sg+Nom}}
 
 
  There are no adjectives acting like nouns where i-final nominatives have
@@ -4847,29 +4847,29 @@ __Adjectives 6 front examples:__
  {{ADJ_AAVA}}, and dictionary class ⁹.
 
 __Adjectives 9 examples:__
-* __aava:__ {{aava+A+Sg+Nom}} (Eng. # open (of fields, plains))
-* __aavaa:__ {{aava+A+Sg+Par}}
-* __aavana:__ {{aava+A+Sg+Ess}}
-* __aavassa:__ {{aava+A+Sg+Ine}}
-* __aavoina:__ {{aava+A+Pl+Ess}}
-* __aavojen:__ {{aava+A+Pl+Gen}}
-* __aavoihin:__ {{aava+A+Pl+Ill}}
-* __aavempi:__ {{aava+A+Comp+Sg+Nom}}
-* __aavoin:__ {{aava+A+Sup+Sg+Nom}}
+* __aava: __ {{aava+A+Sg+Nom}} (Eng. # open (of fields, plains))
+* __aavaa: __ {{aava+A+Sg+Par}}
+* __aavana: __ {{aava+A+Sg+Ess}}
+* __aavassa: __ {{aava+A+Sg+Ine}}
+* __aavoina: __ {{aava+A+Pl+Ess}}
+* __aavojen: __ {{aava+A+Pl+Gen}}
+* __aavoihin: __ {{aava+A+Pl+Ill}}
+* __aavempi: __ {{aava+A+Comp+Sg+Nom}}
+* __aavoin: __ {{aava+A+Sup+Sg+Nom}}
 
  The ka stem with e comparative and j plurals is {{ADJ_TARKKA}}, and the 
  dictionary class is ⁹-A or ⁹⁻D.
 
 __Adjectives 9 k~0 examples:__
-* __tarkka:__ {{tarkka+A+Sg+Nom}} (Eng. # pedantic)
-* __tarkkaa:__ {{tarkka+A+Sg+Par}}
-* __tarkkana:__ {{tarkka+A+Sg+Ess}}
-* __tarkassa:__ {{tarkka+A+Sg+Ine}}
-* __tarkkoina:__ {{tarkka+A+Pl+Ess}}
-* __tarkkojen:__ {{tarkka+A+Pl+Gen}}
-* __tarkkoihin:__ {{tarkka+A+Pl+Ill}}
-* __tarkempi:__ {{tarkka+A+Comp+Sg+Nom}}
-* __tarkoin:__ {{tarkka+Sup+Sg+Nom}}
+* __tarkka: __ {{tarkka+A+Sg+Nom}} (Eng. # pedantic)
+* __tarkkaa: __ {{tarkka+A+Sg+Par}}
+* __tarkkana: __ {{tarkka+A+Sg+Ess}}
+* __tarkassa: __ {{tarkka+A+Sg+Ine}}
+* __tarkkoina: __ {{tarkka+A+Pl+Ess}}
+* __tarkkojen: __ {{tarkka+A+Pl+Gen}}
+* __tarkkoihin: __ {{tarkka+A+Pl+Ill}}
+* __tarkempi: __ {{tarkka+A+Comp+Sg+Nom}}
+* __tarkoin: __ {{tarkka+Sup+Sg+Nom}}
 
 
 
@@ -4888,44 +4888,44 @@ __Adjectives 9 k~0 examples:__
  is ⁹-C.
 
 __Adjectives 9 t~0 examples:__
-* __matta:__ {{matta+A+Sg+Nom}} (Eng. # matta)
-* __mattaa:__ {{matta+A+Sg+Par}}
-* __mattana:__ {{matta+A+Sg+Ess}}
-* __matassa:__ {{matta+A+Sg+Ine}}
-* __mattoina:__ {{matta+A+Pl+Ess}}
-* __mattojen:__ {{matta+A+Pl+Gen}}
-* __mattoihin:__ {{matta+A+Pl+Ill}}
-* __matempi:__ {{matta+A+Comp+Sg+Nom}}
-* __matoin:__ {{matta+A+Sup+Sg+Nom}}
+* __matta: __ {{matta+A+Sg+Nom}} (Eng. # matta)
+* __mattaa: __ {{matta+A+Sg+Par}}
+* __mattana: __ {{matta+A+Sg+Ess}}
+* __matassa: __ {{matta+A+Sg+Ine}}
+* __mattoina: __ {{matta+A+Pl+Ess}}
+* __mattojen: __ {{matta+A+Pl+Gen}}
+* __mattoihin: __ {{matta+A+Pl+Ill}}
+* __matempi: __ {{matta+A+Comp+Sg+Nom}}
+* __matoin: __ {{matta+A+Sup+Sg+Nom}}
 
 
  The pa : va stem with e comparative and j plurals is {{ADJ_HALPA}}, and
  the dictionary class is ⁹⁻E.
 
 __Adjectives 9 p~v examples:__
-* __halpa:__ {{halpa+A+Sg+Nom}} (Eng. # cheap)
-* __halpaa:__ {{halpa+A+Sg+Par}}
-* __halpana:__ {{halpa+A+Sg+Ess}}
-* __halvassa:__ {{halpa+A+Sg+Ine}}
-* __halpoina:__ {{halpa+A+Pl+Ess}}
-* __halpojen:__ {{halpa+A+Pl+Gen}}
-* __halpoihin:__ {{halpa+A+Pl+Ill}}
-* __halvempi:__ {{halpa+A+Comp+Sg+Nom}}
-* __halvoin:__ {{halpa+A+Sup+Sg+Nom}}
+* __halpa: __ {{halpa+A+Sg+Nom}} (Eng. # cheap)
+* __halpaa: __ {{halpa+A+Sg+Par}}
+* __halpana: __ {{halpa+A+Sg+Ess}}
+* __halvassa: __ {{halpa+A+Sg+Ine}}
+* __halpoina: __ {{halpa+A+Pl+Ess}}
+* __halpojen: __ {{halpa+A+Pl+Gen}}
+* __halpoihin: __ {{halpa+A+Pl+Ill}}
+* __halvempi: __ {{halpa+A+Comp+Sg+Nom}}
+* __halvoin: __ {{halpa+A+Sup+Sg+Nom}}
 
  The ta : da stem with a comparative and j plurals is {{ADJ_EHTA}}, and
  the dictionary class is ⁹⁻F.
 
 __Adjectives 9 t~d examples:__
-* __ehta:__ {{ehta+A+Sg+Nom}} (Eng. # legit)
-* __ehtaa:__ {{ehta+A+Sg+Par}}
-* __ehtana:__ {{ehta+A+Sg+Ess}}
-* __ehdassa:__ {{ehta+A+Sg+Ine}}
-* __ehtoina:__ {{ehta+A+Pl+Ess}}
-* __ehtojen:__ {{ehta+A+Pl+Gen}}
-* __ehtoihin:__ {{ehta+A+Pl+Ill}}
-* __ehdampi:__ {{ehta+A+Comp+Sg+Nom}}
-* __ehdoin:__ {{ehta+A+Sup+Sg+Nom}}
+* __ehta: __ {{ehta+A+Sg+Nom}} (Eng. # legit)
+* __ehtaa: __ {{ehta+A+Sg+Par}}
+* __ehtana: __ {{ehta+A+Sg+Ess}}
+* __ehdassa: __ {{ehta+A+Sg+Ine}}
+* __ehtoina: __ {{ehta+A+Pl+Ess}}
+* __ehtojen: __ {{ehta+A+Pl+Gen}}
+* __ehtoihin: __ {{ehta+A+Pl+Ill}}
+* __ehdampi: __ {{ehta+A+Comp+Sg+Nom}}
+* __ehdoin: __ {{ehta+A+Sup+Sg+Nom}}
 
  None with k:g gradation.
 
@@ -4933,15 +4933,15 @@ __Adjectives 9 t~d examples:__
  the dictionary class is ⁹⁻H.
 
 __Adjectives 9 p~m examples:__
-* __rampa:__ {{rampa+A+Sg+Nom}} (Eng. # crippled)
-* __rampaa:__ {{rampa+A+Sg+Par}}
-* __rampana:__ {{rampa+A+Sg+Ess}}
-* __rammassa:__ {{rampa+A+Sg+Ine}}
-* __rampoina:__ {{rampa+A+Pl+Ess}}
-* __rampojen:__ {{rampa+A+Pl+Gen}}
-* __rampoihin:__ {{rampa+A+Pl+Ill}}
-* __rammempi:__ {{rampa+A+Comp+Sg+Nom}}
-* __rammoin:__ {{rampa+A+Sup+Sg+Nom}}
+* __rampa: __ {{rampa+A+Sg+Nom}} (Eng. # crippled)
+* __rampaa: __ {{rampa+A+Sg+Par}}
+* __rampana: __ {{rampa+A+Sg+Ess}}
+* __rammassa: __ {{rampa+A+Sg+Ine}}
+* __rampoina: __ {{rampa+A+Pl+Ess}}
+* __rampojen: __ {{rampa+A+Pl+Gen}}
+* __rampoihin: __ {{rampa+A+Pl+Ill}}
+* __rammempi: __ {{rampa+A+Comp+Sg+Nom}}
+* __rammoin: __ {{rampa+A+Sup+Sg+Nom}}
 
  No a stems with t:l gradations
 
@@ -4949,15 +4949,15 @@ __Adjectives 9 p~m examples:__
  the dictionary class is ⁹⁻J.
 
 __Adjectives 9 p~n examples:__
-* __vihanta:__ {{vihanta+A+Sg+Nom}} (Eng. # blooming)
-* __vihantaa:__ {{vihanta+A+Sg+Par}}
-* __vihantana:__ {{vihanta+A+Sg+Ess}}
-* __vihannassa:__ {{vihanta+A+Sg+Ine}}
-* __vihantoina:__ {{vihanta+A+Pl+Ess}}
-* __vihantojen:__ {{vihanta+A+Pl+Gen}}
-* __vihantoihin:__ {{vihanta+A+Pl+Ill}}
-* __vihannampi:__ {{vihanta+A+Comp+Sg+Nom}}
-* __vihannoin:__ {{vihanta+A+Sup+Sg+Nom}}
+* __vihanta: __ {{vihanta+A+Sg+Nom}} (Eng. # blooming)
+* __vihantaa: __ {{vihanta+A+Sg+Par}}
+* __vihantana: __ {{vihanta+A+Sg+Ess}}
+* __vihannassa: __ {{vihanta+A+Sg+Ine}}
+* __vihantoina: __ {{vihanta+A+Pl+Ess}}
+* __vihantojen: __ {{vihanta+A+Pl+Gen}}
+* __vihantoihin: __ {{vihanta+A+Pl+Ill}}
+* __vihannampi: __ {{vihanta+A+Comp+Sg+Nom}}
+* __vihannoin: __ {{vihanta+A+Sup+Sg+Nom}}
 
  And finally, no a stems with t:r or t:l gradations.
 
@@ -4969,57 +4969,57 @@ __Adjectives 9 p~n examples:__
  as the paradigm class.
 
 __Adjectives 10 back examples:__
-* __aaltoileva:__ {{aaltoileva+A+Sg+Nom}} (Eng. # wavy)
-* __aaltoilevaa:__ {{aaltoileva+A+Sg+Par}}
-* __aaltoilevana:__ {{aaltoileva+A+Sg+Ess}}
-* __aaltoilevassa:__ {{aaltoileva+A+Sg+Ine}}
-* __aaltoilevina:__ {{aaltoileva+A+Pl+Ess}}
-* __aaltoilevien:__ {{aaltoileva+A+Pl+Gen}}
-* __aaltoileviin:__ {{aaltoileva+A+Pl+Ill}}
-* __aaltoilevampi:__ {{aaltoileva+A+Comp+Sg+Nom}}
-* __aaltoilevin:__ {{aaltoileva+A+Sup+Sg+Nom}}
+* __aaltoileva: __ {{aaltoileva+A+Sg+Nom}} (Eng. # wavy)
+* __aaltoilevaa: __ {{aaltoileva+A+Sg+Par}}
+* __aaltoilevana: __ {{aaltoileva+A+Sg+Ess}}
+* __aaltoilevassa: __ {{aaltoileva+A+Sg+Ine}}
+* __aaltoilevina: __ {{aaltoileva+A+Pl+Ess}}
+* __aaltoilevien: __ {{aaltoileva+A+Pl+Gen}}
+* __aaltoileviin: __ {{aaltoileva+A+Pl+Ill}}
+* __aaltoilevampi: __ {{aaltoileva+A+Comp+Sg+Nom}}
+* __aaltoilevin: __ {{aaltoileva+A+Sup+Sg+Nom}}
 
  The ä : 0 stem is in class {{ADJ_TYÖLLISTETTÄVÄ}} and the old dictionary used ¹⁰
  as the paradigm class.
 
 __Adjectives 10 front examples:__
-* __työllistettävä:__ {{työllistettävä+A+Sg+Nom}} (Eng. # employable)
-* __työllistettävää:__ {{työllistettävä+A+Sg+Par}}
-* __työllistettävänä:__ {{työllistettävä+A+Sg+Ess}}
-* __työllistettävässä:__ {{työllistettävä+A+Sg+Ine}}
-* __työllistettävinä:__ {{työllistettävä+A+Pl+Ess}}
-* __työllistettävien:__ {{työllistettävä+A+Pl+Gen}}
-* __työllistettäviin:__ {{työllistettävä+A+Pl+Ill}}
-* __työllistettävämpi:__ {{työllistettävä+A+Comp+Sg+Nom}}
-* __työllistettävin:__ {{työllistettävä+A+Sup+Sg+Nom}}
+* __työllistettävä: __ {{työllistettävä+A+Sg+Nom}} (Eng. # employable)
+* __työllistettävää: __ {{työllistettävä+A+Sg+Par}}
+* __työllistettävänä: __ {{työllistettävä+A+Sg+Ess}}
+* __työllistettävässä: __ {{työllistettävä+A+Sg+Ine}}
+* __työllistettävinä: __ {{työllistettävä+A+Pl+Ess}}
+* __työllistettävien: __ {{työllistettävä+A+Pl+Gen}}
+* __työllistettäviin: __ {{työllistettävä+A+Pl+Ill}}
+* __työllistettävämpi: __ {{työllistettävä+A+Comp+Sg+Nom}}
+* __työllistettävin: __ {{työllistettävä+A+Sup+Sg+Nom}}
 
  For a:e comparatives in a:0 class use {{ADJ_RUMA}}. No dictionary
  classification or ~¹⁰, 
 
 __Adjectives 10 a:e comparative examples:__
-* __ruma:__ {{ruma+A+Sg+Nom}} (Eng. # ugly)
-* __rumaa:__ {{ruma+A+Sg+Par}}
-* __rumana:__ {{ruma+A+Sg+Ess}}
-* __rumassa:__ {{ruma+A+Sg+Ine}}
-* __rumina:__ {{ruma+A+Pl+Ess}}
-* __rumien:__ {{ruma+A+Pl+Gen}}
-* __rumiin:__ {{ruma+A+Pl+Ill}}
-* __rumempi:__ {{ruma+A+Comp+Sg+Nom}}
-* __rumin:__ {{ruma+A+Sup+Sg+Nom}}
+* __ruma: __ {{ruma+A+Sg+Nom}} (Eng. # ugly)
+* __rumaa: __ {{ruma+A+Sg+Par}}
+* __rumana: __ {{ruma+A+Sg+Ess}}
+* __rumassa: __ {{ruma+A+Sg+Ine}}
+* __rumina: __ {{ruma+A+Pl+Ess}}
+* __rumien: __ {{ruma+A+Pl+Gen}}
+* __rumiin: __ {{ruma+A+Pl+Ill}}
+* __rumempi: __ {{ruma+A+Comp+Sg+Nom}}
+* __rumin: __ {{ruma+A+Sup+Sg+Nom}}
 
  For ä:e comparatives in a:0 class use {{ADJ_TYHMÄ}}. No dictionary
  classification or ~¹⁰, 
 
 __Adjectives 10 ä:e comparative examples:__
-* __tyhmä:__ {{tyhmä+A+Sg+Nom}} (Eng. # stupid)
-* __tyhmää:__ {{tyhmä+A+Sg+Par}}
-* __tyhmänä:__ {{tyhmä+A+Sg+Ess}}
-* __tyhmässä:__ {{tyhmä+A+Sg+Ine}}
-* __tyhminä:__ {{tyhmä+A+Pl+Ess}}
-* __tyhmien:__ {{tyhmä+A+Pl+Gen}}
-* __tyhmiin:__ {{tyhmä+A+Pl+Ill}}
-* __tyhmempi:__ {{tyhmä+A+Comp+Sg+Nom}}
-* __tyhmin:__ {{tyhmä+A+Sup+Sg+Nom}}
+* __tyhmä: __ {{tyhmä+A+Sg+Nom}} (Eng. # stupid)
+* __tyhmää: __ {{tyhmä+A+Sg+Par}}
+* __tyhmänä: __ {{tyhmä+A+Sg+Ess}}
+* __tyhmässä: __ {{tyhmä+A+Sg+Ine}}
+* __tyhminä: __ {{tyhmä+A+Pl+Ess}}
+* __tyhmien: __ {{tyhmä+A+Pl+Gen}}
+* __tyhmiin: __ {{tyhmä+A+Pl+Ill}}
+* __tyhmempi: __ {{tyhmä+A+Comp+Sg+Nom}}
+* __tyhmin: __ {{tyhmä+A+Sup+Sg+Nom}}
 
 
 
@@ -5053,97 +5053,97 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 
 
 __Adjectives 10 k~0 a:e comparative examples:__
-* __hoikka:__ {{hoikka+A+Sg+Nom}} (Eng. # slim)
-* __hoikkaa:__ {{hoikka+A+Sg+Par}}
-* __hoikkana:__ {{hoikka+A+Sg+Ess}}
-* __hoikassa:__ {{hoikka+A+Sg+Ine}}
-* __hoikkina:__ {{hoikka+A+Pl+Ess}}
-* __hoikissa:__ {{hoikka+A+Pl+Ine}}
-* __hoikkien:__ {{hoikka+A+Pl+Gen}}
+* __hoikka: __ {{hoikka+A+Sg+Nom}} (Eng. # slim)
+* __hoikkaa: __ {{hoikka+A+Sg+Par}}
+* __hoikkana: __ {{hoikka+A+Sg+Ess}}
+* __hoikassa: __ {{hoikka+A+Sg+Ine}}
+* __hoikkina: __ {{hoikka+A+Pl+Ess}}
+* __hoikissa: __ {{hoikka+A+Pl+Ine}}
+* __hoikkien: __ {{hoikka+A+Pl+Gen}}
 
 
 __Adjectives 10 k~0 ä:e comparative examples:__
-* __mykkä:__ {{mykkä+A+Sg+Nom}} (Eng. # mute)
-* __mykkää:__ {{mykkä+A+Sg+Par}}
-* __mykkänä:__ {{mykkä+A+Sg+Ess}}
-* __mykässä:__ {{mykkä+A+Sg+Ine}}
-* __mykkinä:__ {{mykkä+A+Pl+Ess}}
-* __mykissä:__ {{mykkä+A+Pl+Ine}}
-* __mykkien:__ {{mykkä+A+Pl+Gen}}
+* __mykkä: __ {{mykkä+A+Sg+Nom}} (Eng. # mute)
+* __mykkää: __ {{mykkä+A+Sg+Par}}
+* __mykkänä: __ {{mykkä+A+Sg+Ess}}
+* __mykässä: __ {{mykkä+A+Sg+Ine}}
+* __mykkinä: __ {{mykkä+A+Pl+Ess}}
+* __mykissä: __ {{mykkä+A+Pl+Ine}}
+* __mykkien: __ {{mykkä+A+Pl+Gen}}
 
 
 __Adjectives 10 p~0 a:e comparative examples:__
-* __poppa:__ {{poppa+A+Sg+Nom}} (Eng. # hocus-pocus)
-* __poppaa:__ {{poppa+A+Sg+Par}}
-* __poppana:__ {{poppa+A+Sg+Ess}}
-* __popassa:__ {{poppa+A+Sg+Ine}}
-* __poppina:__ {{poppa+A+Pl+Ess}}
-* __popissa:__ {{poppa+A+Pl+Ine}}
-* __poppien:__ {{poppa+A+Pl+Gen}}
+* __poppa: __ {{poppa+A+Sg+Nom}} (Eng. # hocus-pocus)
+* __poppaa: __ {{poppa+A+Sg+Par}}
+* __poppana: __ {{poppa+A+Sg+Ess}}
+* __popassa: __ {{poppa+A+Sg+Ine}}
+* __poppina: __ {{poppa+A+Pl+Ess}}
+* __popissa: __ {{poppa+A+Pl+Ine}}
+* __poppien: __ {{poppa+A+Pl+Gen}}
 
 
 __Adjectives 10 p~0 ä:e comparative examples:__
-* __hömppä:__ {{hömppä+A+Sg+Nom}} (Eng. # bogus)
-* __hömppää:__ {{hömppä+A+Sg+Par}}
-* __hömppänä:__ {{hömppä+A+Sg+Ess}}
-* __hömpässä:__ {{hömppä+A+Sg+Ine}}
-* __hömppinä:__ {{hömppä+A+Pl+Ess}}
-* __hömpissä:__ {{hömppä+A+Pl+Ine}}
-* __hömppien:__ {{hömppä+A+Pl+Gen}}
+* __hömppä: __ {{hömppä+A+Sg+Nom}} (Eng. # bogus)
+* __hömppää: __ {{hömppä+A+Sg+Par}}
+* __hömppänä: __ {{hömppä+A+Sg+Ess}}
+* __hömpässä: __ {{hömppä+A+Sg+Ine}}
+* __hömppinä: __ {{hömppä+A+Pl+Ess}}
+* __hömpissä: __ {{hömppä+A+Pl+Ine}}
+* __hömppien: __ {{hömppä+A+Pl+Gen}}
 
  The quantitative k and t gradations are not found for adjectives with this
  a stem.
 
 
 __Adjectives 10 p~v a:e comparative examples:__
-* __voipa:__ {{voipa+A+Sg+Nom}} (Eng. # capable)
-* __voipaa:__ {{voipa+A+Sg+Par}}
-* __voipana:__ {{voipa+A+Sg+Ess}}
-* __voivassa:__ {{voipa+A+Sg+Ine}}
-* __voipina:__ {{voipa+A+Pl+Ess}}
-* __voivissa:__ {{voipa+A+Pl+Ine}}
-* __voipien:__ {{voipa+A+Pl+Gen}}
+* __voipa: __ {{voipa+A+Sg+Nom}} (Eng. # capable)
+* __voipaa: __ {{voipa+A+Sg+Par}}
+* __voipana: __ {{voipa+A+Sg+Ess}}
+* __voivassa: __ {{voipa+A+Sg+Ine}}
+* __voipina: __ {{voipa+A+Pl+Ess}}
+* __voivissa: __ {{voipa+A+Pl+Ine}}
+* __voipien: __ {{voipa+A+Pl+Gen}}
 
 
 __Adjectives 10 p~v ä:e comparative examples:__
-* __käypä:__ {{käypä+A+Sg+Nom}} (Eng. # "good enough")
-* __käypää:__ {{käypä+A+Sg+Par}}
-* __käypänä:__ {{käypä+A+Sg+Ess}}
-* __käyvässä:__ {{käypä+A+Sg+Ine}}
-* __käypinä:__ {{käypä+A+Pl+Ess}}
-* __käyvissä:__ {{käypä+A+Pl+Ine}}
-* __käypien:__ {{käypä+A+Pl+Gen}}
+* __käypä: __ {{käypä+A+Sg+Nom}} (Eng. # "good enough")
+* __käypää: __ {{käypä+A+Sg+Par}}
+* __käypänä: __ {{käypä+A+Sg+Ess}}
+* __käyvässä: __ {{käypä+A+Sg+Ine}}
+* __käypinä: __ {{käypä+A+Pl+Ess}}
+* __käyvissä: __ {{käypä+A+Pl+Ine}}
+* __käypien: __ {{käypä+A+Pl+Gen}}
 
  The t:d is missing from this a stem.
 
 
 __Adjectives 10 t~d ä:e comparative examples:__
-* __mätä:__ {{mätä+A+Sg+Nom}} (Eng. # rotten)
-* __mätää:__ {{mätä+A+Sg+Par}}
-* __mätänä:__ {{mätä+A+Sg+Ess}}
-* __mädässä:__ {{mätä+A+Sg+Ine}}
-* __mätinä:__ {{mätä+A+Pl+Ess}}
-* __mädissä:__ {{mätä+A+Pl+Ine}}
-* __mätien:__ {{mätä+A+Pl+Gen}}
+* __mätä: __ {{mätä+A+Sg+Nom}} (Eng. # rotten)
+* __mätää: __ {{mätä+A+Sg+Par}}
+* __mätänä: __ {{mätä+A+Sg+Ess}}
+* __mädässä: __ {{mätä+A+Sg+Ine}}
+* __mätinä: __ {{mätä+A+Pl+Ess}}
+* __mädissä: __ {{mätä+A+Pl+Ine}}
+* __mätien: __ {{mätä+A+Pl+Gen}}
 
 
 __Adjectives 10 k~g a:e comparative examples:__
-* __sanka:__ {{sanka+A+Sg+Nom}} (Eng. # ???)
-* __sankaa:__ {{sanka+A+Sg+Par}}
-* __sankana:__ {{sanka+A+Sg+Ess}}
-* __sangassa:__ {{sanka+A+Sg+Ine}}
-* __sankina:__ {{sanka+A+Pl+Ess}}
-* __sangissa:__ {{sanka+A+Pl+Ine}}
-* __sankien:__ {{sanka+A+Pl+Gen}}
+* __sanka: __ {{sanka+A+Sg+Nom}} (Eng. # ???)
+* __sankaa: __ {{sanka+A+Sg+Par}}
+* __sankana: __ {{sanka+A+Sg+Ess}}
+* __sangassa: __ {{sanka+A+Sg+Ine}}
+* __sankina: __ {{sanka+A+Pl+Ess}}
+* __sangissa: __ {{sanka+A+Pl+Ine}}
+* __sankien: __ {{sanka+A+Pl+Gen}}
 
 
 __Adjectives 10 k~g ä:e comparative examples:__
-* __vänkä:__ {{vänkä+A+Sg+Nom}} (Eng. # goofy)
-* __vänkää:__ {{vänkä+A+Sg+Par}}
-* __vänkänä:__ {{vänkä+A+Sg+Ess}}
-* __vängässä:__ {{vänkä+A+Sg+Ine}}
-* __vängissä:__ {{vänkä+A+Pl+Ine}}
-* __vänkiin:__ {{vänkä+A+Pl+Ill}}
+* __vänkä: __ {{vänkä+A+Sg+Nom}} (Eng. # goofy)
+* __vänkää: __ {{vänkä+A+Sg+Par}}
+* __vänkänä: __ {{vänkä+A+Sg+Ess}}
+* __vängässä: __ {{vänkä+A+Sg+Ine}}
+* __vängissä: __ {{vänkä+A+Pl+Ine}}
+* __vänkiin: __ {{vänkä+A+Pl+Ill}}
 
 
 
@@ -5161,35 +5161,35 @@ __Adjectives 10 k~g ä:e comparative examples:__
 
 
 __Adjectives 10 t~l a:e comparative examples:__
-* __kulta:__ {{kulta+A+Sg+Nom}} (Eng. # dear)
-* __kultaa:__ {{kulta+A+Sg+Par}}
-* __kultana:__ {{kulta+A+Sg+Ess}}
-* __kullassa:__ {{kulta+A+Sg+Ine}}
-* __kultina:__ {{kulta+A+Pl+Ess}}
-* __kullissa:__ {{kulta+A+Pl+Ine}}
-* __kultien:__ {{kulta+A+Pl+Gen}}
+* __kulta: __ {{kulta+A+Sg+Nom}} (Eng. # dear)
+* __kultaa: __ {{kulta+A+Sg+Par}}
+* __kultana: __ {{kulta+A+Sg+Ess}}
+* __kullassa: __ {{kulta+A+Sg+Ine}}
+* __kultina: __ {{kulta+A+Pl+Ess}}
+* __kullissa: __ {{kulta+A+Pl+Ine}}
+* __kultien: __ {{kulta+A+Pl+Gen}}
 
  T:l and t:n are missing from this a stem and t:l from ä stem.
 
 
 __Adjectives 10 t~l ä:e comparative examples:__
-* __lyhyenläntä:__ {{lyhyenläntä+A+Sg+Nom}} (Eng. # shorty)
-* __lyhyenläntää:__ {{lyhyenläntä+A+Sg+Par}}
-* __lyhyenläntänä:__ {{lyhyenläntä+A+Sg+Ess}}
-* __lyhyenlännässä:__ {{lyhyenläntä+A+Sg+Ine}}
-* __lyhyenläntinä:__ {{lyhyenläntä+A+Pl+Ess}}
-* __lyhyenlännissä:__ {{lyhyenläntä+A+Pl+Ine}}
-* __lyhyenläntien:__ {{lyhyenläntä+A+Pl+Gen}}
+* __lyhyenläntä: __ {{lyhyenläntä+A+Sg+Nom}} (Eng. # shorty)
+* __lyhyenläntää: __ {{lyhyenläntä+A+Sg+Par}}
+* __lyhyenläntänä: __ {{lyhyenläntä+A+Sg+Ess}}
+* __lyhyenlännässä: __ {{lyhyenläntä+A+Sg+Ine}}
+* __lyhyenläntinä: __ {{lyhyenläntä+A+Pl+Ess}}
+* __lyhyenlännissä: __ {{lyhyenläntä+A+Pl+Ine}}
+* __lyhyenläntien: __ {{lyhyenläntä+A+Pl+Gen}}
 
 
 __Adjectives 10 t~r a:e comparative examples:__
-* __turta:__ {{turta+A+Sg+Nom}} (Eng. # numb)
-* __turtaa:__ {{turta+A+Sg+Par}}
-* __turtana:__ {{turta+A+Sg+Ess}}
-* __turrassa:__ {{turta+A+Sg+Ine}}
-* __turtina:__ {{turta+A+Pl+Ess}}
-* __turrissa:__ {{turta+A+Pl+Ine}}
-* __turtien:__ {{turta+A+Pl+Gen}}
+* __turta: __ {{turta+A+Sg+Nom}} (Eng. # numb)
+* __turtaa: __ {{turta+A+Sg+Par}}
+* __turtana: __ {{turta+A+Sg+Ess}}
+* __turrassa: __ {{turta+A+Sg+Ine}}
+* __turtina: __ {{turta+A+Pl+Ess}}
+* __turrissa: __ {{turta+A+Pl+Ine}}
+* __turtien: __ {{turta+A+Pl+Gen}}
 
  K:j is missing.
 
@@ -5197,104 +5197,104 @@ __Adjectives 10 t~r a:e comparative examples:__
  a : o : 0 variations:
 
 __Adjectives 11 back examples:__
-* __hapera:__ {{hapera+A+Sg+Nom}} (Eng. # brittle)
-* __haperia:__ {{hapera+A+Pl+Par}}
-* __haperoita:__ {{hapera+A+Pl+Par}}
-* __haperien:__ {{hapera+A+Pl+Gen}}
-* __haperoiden:__ {{hapera+A+Pl+Gen}}
-* __haperoitten:__ {{hapera+A+Pl+Gen}}
-* __haperiin:__ {{hapera+A+Pl+Ill}}
-* __haperoihin:__ {{hapera+A+Pl+Ill}}
+* __hapera: __ {{hapera+A+Sg+Nom}} (Eng. # brittle)
+* __haperia: __ {{hapera+A+Pl+Par}}
+* __haperoita: __ {{hapera+A+Pl+Par}}
+* __haperien: __ {{hapera+A+Pl+Gen}}
+* __haperoiden: __ {{hapera+A+Pl+Gen}}
+* __haperoitten: __ {{hapera+A+Pl+Gen}}
+* __haperiin: __ {{hapera+A+Pl+Ill}}
+* __haperoihin: __ {{hapera+A+Pl+Ill}}
  Also less commonly
-* __haperojen:__ {{hapera+A+Use/Rare+Pl+Gen}}
-* __haperoja:__ {{hapera+A+Use/Rare+Pl+Par}}
-* __haperain:__ {{hapera+A+Pl+Gen+Use/Rare}}
+* __haperojen: __ {{hapera+A+Use/Rare+Pl+Gen}}
+* __haperoja: __ {{hapera+A+Use/Rare+Pl+Par}}
+* __haperain: __ {{hapera+A+Pl+Gen+Use/Rare}}
 
 
 __Adjectives 11 front examples:__
-* __höppänä:__ {{höppänä+A+Sg+Nom}} (Eng. # senile)
-* __höppänää:__ {{höppänä+A+Sg+Par}}
-* __höppänänä:__ {{höppänä+A+Sg+Ess}}
-* __höppänässä:__ {{höppänä+A+Sg+Ine}}
-* __höppäninä:__ {{höppänä+A+Pl+Ess}}
-* __höppänien:__ {{höppänä+A+Pl+Gen}}
-* __höppäniin:__ {{höppänä+A+Pl+Ill}}
+* __höppänä: __ {{höppänä+A+Sg+Nom}} (Eng. # senile)
+* __höppänää: __ {{höppänä+A+Sg+Par}}
+* __höppänänä: __ {{höppänä+A+Sg+Ess}}
+* __höppänässä: __ {{höppänä+A+Sg+Ine}}
+* __höppäninä: __ {{höppänä+A+Pl+Ess}}
+* __höppänien: __ {{höppänä+A+Pl+Gen}}
+* __höppäniin: __ {{höppänä+A+Pl+Ill}}
 
 
 
 __Adjectives 12 examples:__
-* __harmaja:__ {{harmaja+A+Sg+Nom}} (Eng. # ?)
-* __harmajaa:__ {{harmaja+A+Sg+Par}}
-* __harmajana:__ {{harmaja+A+Sg+Ess}}
-* __harmajoina:__ {{harmaja+A+Pl+Ess}}
-* __harmajoita:__ {{harmaja+A+Pl+Par}}
+* __harmaja: __ {{harmaja+A+Sg+Nom}} (Eng. # ?)
+* __harmajaa: __ {{harmaja+A+Sg+Par}}
+* __harmajana: __ {{harmaja+A+Sg+Ess}}
+* __harmajoina: __ {{harmaja+A+Pl+Ess}}
+* __harmajoita: __ {{harmaja+A+Pl+Par}}
 
  Certain trisyllabic or longer a stems allow a lot of allomorphs and both
  a : o : 0 variations:
 
 __Adjectives 12++ examples:__
-* __latuska:__ {{latuska+A+Sg+Nom}} (Eng. # flat)
-* __latuskoita:__ {{latuska+A+Pl+Par}}
-* __latuskoja:__ {{latuska+A+Pl+Par}}
-* __latuskoiden:__ {{latuska+A+Pl+Gen}}
-* __latuskoitten:__ {{latuska+A+Pl+Gen}}
-* __latuskojen:__ {{latuska+A+Pl+Gen}}
-* __latuskoihin:__ {{latuska+A+Pl+Ill}}
+* __latuska: __ {{latuska+A+Sg+Nom}} (Eng. # flat)
+* __latuskoita: __ {{latuska+A+Pl+Par}}
+* __latuskoja: __ {{latuska+A+Pl+Par}}
+* __latuskoiden: __ {{latuska+A+Pl+Gen}}
+* __latuskoitten: __ {{latuska+A+Pl+Gen}}
+* __latuskojen: __ {{latuska+A+Pl+Gen}}
+* __latuskoihin: __ {{latuska+A+Pl+Ill}}
 
  !Special illative gradation in a stems
 
  The a : o stem variation combines with trisyllabic class of special illatives
 
 __Adjectives 14 back examples:__
-* __hailakka:__ {{hailakka+A+Sg+Nom}} (Eng. # pale)
-* __hailakkoina:__ {{hailakka+A+Pl+Ess}}
-* __hailakoissa:__ {{hailakka+A+Pl+Ine}}
-* __hailakkoihin:__ {{hailakka+A+Pl+Ill}}
-* __hailakoihin:__ {{hailakka+A+Pl+Ill}}
+* __hailakka: __ {{hailakka+A+Sg+Nom}} (Eng. # pale)
+* __hailakkoina: __ {{hailakka+A+Pl+Ess}}
+* __hailakoissa: __ {{hailakka+A+Pl+Ine}}
+* __hailakkoihin: __ {{hailakka+A+Pl+Ill}}
+* __hailakoihin: __ {{hailakka+A+Pl+Ill}}
 
 
 __Adjectives 14 front examples:__
-* __räväkkä:__ {{räväkkä+A+Sg+Nom}} (Eng. # flamboyant)
-* __räväköihin:__ {{räväkkä+A+Pl+Ill}}
-* __räväkköihin:__ {{räväkkä+A+Pl+Ill}}
+* __räväkkä: __ {{räväkkä+A+Sg+Nom}} (Eng. # flamboyant)
+* __räväköihin: __ {{räväkkä+A+Pl+Ill}}
+* __räväkköihin: __ {{räväkkä+A+Pl+Ill}}
 
 
 
 __Adjectives 15 t~0 back examples:__
-* __pohatta:__ {{pohatta+A+Sg+Nom}} (Eng. # fat-cat)
-* __pohattoina:__ {{pohatta+A+Pl+Ess}}
-* __pohatoissa:__ {{pohatta+A+Pl+Ine}}
-* __pohattoihin:__ {{pohatta+A+Pl+Ill}}
-* __pohatoihin:__ {{pohatta+A+Pl+Ill}}
+* __pohatta: __ {{pohatta+A+Sg+Nom}} (Eng. # fat-cat)
+* __pohattoina: __ {{pohatta+A+Pl+Ess}}
+* __pohatoissa: __ {{pohatta+A+Pl+Ine}}
+* __pohattoihin: __ {{pohatta+A+Pl+Ill}}
+* __pohatoihin: __ {{pohatta+A+Pl+Ill}}
 
  A-final words with long vowels and syllable boundary
 
 
 __Adjectives 15 oa examples:__
-* __ainoa:__ {{ainoa+A+Sg+Nom}} (Eng. # singleton)
-* __ainoana:__ {{ainoa+A+Sg+Ess}}
-* __ainoina:__ {{ainoa+A+Pl+Ess}}
-* __ainoissa:__ {{ainoa+A+Pl+Ine}}
-* __ainoihin:__ {{ainoa+A+Pl+Ill}}
-* __ainoisiin:__ {{ainoa+A+Pl+Ill}}
+* __ainoa: __ {{ainoa+A+Sg+Nom}} (Eng. # singleton)
+* __ainoana: __ {{ainoa+A+Sg+Ess}}
+* __ainoina: __ {{ainoa+A+Pl+Ess}}
+* __ainoissa: __ {{ainoa+A+Pl+Ine}}
+* __ainoihin: __ {{ainoa+A+Pl+Ill}}
+* __ainoisiin: __ {{ainoa+A+Pl+Ill}}
 
 
 __Adjectives 15 ea examples:__
-* __korkea:__ {{korkea+A+Sg+Nom}} (Eng. # high)
-* __korkeana:__ {{korkea+A+Sg+Ess}}
-* __korkeina:__ {{korkea+A+Pl+Ess}}
-* __korkeissa:__ {{korkea+A+Pl+Ine}}
-* __korkeihin:__ {{korkea+A+Pl+Ill}}
-* __korkeisiin:__ {{korkea+A+Pl+Ill}}
+* __korkea: __ {{korkea+A+Sg+Nom}} (Eng. # high)
+* __korkeana: __ {{korkea+A+Sg+Ess}}
+* __korkeina: __ {{korkea+A+Pl+Ess}}
+* __korkeissa: __ {{korkea+A+Pl+Ine}}
+* __korkeihin: __ {{korkea+A+Pl+Ill}}
+* __korkeisiin: __ {{korkea+A+Pl+Ill}}
 
 
 __Adjectives 15 eä examples:__
-* __järeä:__ {{järeä+A+Sg+Nom}} (Eng. # rough)
-* __järeänä:__ {{järeä+A+Sg+Ess}}
-* __järeinä:__ {{järeä+A+Pl+Ess}}
-* __järeissä:__ {{järeä+A+Pl+Ine}}
-* __järeihin:__ {{järeä+A+Pl+Ill}}
-* __järeisiin:__ {{järeä+A+Pl+Ill}}
+* __järeä: __ {{järeä+A+Sg+Nom}} (Eng. # rough)
+* __järeänä: __ {{järeä+A+Sg+Ess}}
+* __järeinä: __ {{järeä+A+Pl+Ess}}
+* __järeissä: __ {{järeä+A+Pl+Ine}}
+* __järeihin: __ {{järeä+A+Pl+Ill}}
+* __järeisiin: __ {{järeä+A+Pl+Ill}}
 
  !Lexicalised comparatives
  Most of the lexicalised comparatives are adjectives that go to this class.
@@ -5303,39 +5303,39 @@ __Adjectives 15 eä examples:__
 
 
 __Adjectives 16 back examples:__
-* __aiempi:__ {{aiempi+A+Sg+Nom}} (Eng. # earlier)
-* __aiempana:__ {{aiempi+A+Sg+Ess}}
-* __aiemmassa:__ {{aiempi+A+Sg+Ine}}
-* __aiempina:__ {{aiempi+A+Pl+Ess}}
-* __aiemmista:__ {{aiempi+A+Pl+Ela}}
+* __aiempi: __ {{aiempi+A+Sg+Nom}} (Eng. # earlier)
+* __aiempana: __ {{aiempi+A+Sg+Ess}}
+* __aiemmassa: __ {{aiempi+A+Sg+Ine}}
+* __aiempina: __ {{aiempi+A+Pl+Ess}}
+* __aiemmista: __ {{aiempi+A+Pl+Ela}}
 
 
 __Adjectives 16 front examples:__
-* __lähempi:__ {{lähempi+A+Sg+Nom}} (Eng. # closer)
-* __lähempänä:__ {{lähempi+A+Sg+Ess}}
-* __lähemmässä:__ {{lähempi+A+Sg+Ine}}
-* __lähempinä:__ {{lähempi+A+Pl+Ess}}
-* __lähemmistä:__ {{lähempi+A+Pl+Ela}}
+* __lähempi: __ {{lähempi+A+Sg+Nom}} (Eng. # closer)
+* __lähempänä: __ {{lähempi+A+Sg+Ess}}
+* __lähemmässä: __ {{lähempi+A+Sg+Ine}}
+* __lähempinä: __ {{lähempi+A+Pl+Ess}}
+* __lähemmistä: __ {{lähempi+A+Pl+Ela}}
 
  !Long vowel stems
 
 
 __Adjectives 17 a examples:__
-* __vapaa:__ {{vapaa+A+Sg+Nom}} (Eng. # free)
+* __vapaa: __ {{vapaa+A+Sg+Nom}} (Eng. # free)
 
  There are no other bisyllabic long vowel stems in adjectives
 
 
 __Adjectives 18 aa examples:__
-* __peeaa:__ {{peeaa+A+Sg+Nom}} (Eng. # bust)
+* __peeaa: __ {{peeaa+A+Sg+Nom}} (Eng. # bust)
 
 
 __Adjectives 18 uu examples:__
-* __muu:__ {{muu+A+Sg+Nom}} (Eng. # other)
+* __muu: __ {{muu+A+Sg+Nom}} (Eng. # other)
 
 
 __Adjectives 18 ää examples:__
-* __syypää:__ {{syypää+A+Sg+Nom}} (Eng. # guilty)
+* __syypää: __ {{syypää+A+Sg+Nom}} (Eng. # guilty)
 
  There are no other monosyllabic long vowel stems for adjectives. For full
  listing of possibilities, see nouns.
@@ -5344,7 +5344,7 @@ __Adjectives 18 ää examples:__
  the pronunciation. 
 
 __Adjectives 21 gay examples:__
-* __gay:__ {{gay+A+Sg+Nom}} (Eng. # gay)
+* __gay: __ {{gay+A+Sg+Nom}} (Eng. # gay)
 
  There are not many direct adjective loans in general.
 
@@ -5355,22 +5355,22 @@ __Adjectives 21 gay examples:__
 
 
 __Adjectives 24~26 back examples:__
-* __suuri:__ {{suuri+A+Sg+Nom}} (Eng. # big)
+* __suuri: __ {{suuri+A+Sg+Nom}} (Eng. # big)
 THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 0:  >> 0:0 SO TOMMI FINDS THEM
 
 
 
 __Adjectives 24~26 front examples:__
-* __pieni:__ {{pieni+A+Sg+Nom}} (Eng. # small)
+* __pieni: __ {{pieni+A+Sg+Nom}} (Eng. # small)
 
 
 __Adjectives 27 back examples:__
-* __uusi:__ {{uusi+A+Sg+Nom}} (Eng. # new)
+* __uusi: __ {{uusi+A+Sg+Nom}} (Eng. # new)
 
 
 __Adjectives 27 front examples:__
-* __täysi:__ {{täysi+A+Sg+Nom}} (Eng. # full)
+* __täysi: __ {{täysi+A+Sg+Nom}} (Eng. # full)
 
  There are no adjective examples of other gradation variants or consonant
  cluster simplifications in this class.
@@ -5384,7 +5384,7 @@ __Adjectives 27 front examples:__
 
 
 __Adjectives 32 examples:__
-* __tyven:__ {{tyven+A+Sg+Nom}} (Eng. # calm (of bodies of water))
+* __tyven: __ {{tyven+A+Sg+Nom}} (Eng. # calm (of bodies of water))
 
  There are no back vowel variants or gradating words in the basic e
  conjoining pattern.
@@ -5392,7 +5392,7 @@ __Adjectives 32 examples:__
 
 
 __Adjectives 33 examples:__
-* __avoin:__ {{avoin+A+Sg+Nom}} (Eng. # open)
+* __avoin: __ {{avoin+A+Sg+Nom}} (Eng. # open)
 
  There are no other examples of n:m final variation before conjoining e.
 
@@ -5403,55 +5403,55 @@ __Adjectives 33 examples:__
 
 
 __Adjectives 34 back examples:__
-* __alaston:__ {{alaston+A+Sg+Nom}} (Eng. # naked)
+* __alaston: __ {{alaston+A+Sg+Nom}} (Eng. # naked)
 
 
 __Adjectives 34 0~t back examples:__
-* __viaton:__ {{viaton+A+Sg+Nom}} (Eng. # innocent)
+* __viaton: __ {{viaton+A+Sg+Nom}} (Eng. # innocent)
 
 
 __Adjectives 34 0~t front examples:__
-* __kyvytön:__ {{kyvytön+A+Sg+Nom}} (Eng. # unskilled)
+* __kyvytön: __ {{kyvytön+A+Sg+Nom}} (Eng. # unskilled)
 
  This one word, hapan, also takes the same variation as normative variant.
  The expected e variant is not normative, but used.
 
 
 __Adjectives 34 0~p back examples:__
-* __hapan:__ {{hapan+A+Sg+Nom}} (Eng. # sour)
+* __hapan: __ {{hapan+A+Sg+Nom}} (Eng. # sour)
 
 
 __Adjectives 34 m~p front examples:__
-* __lämmin:__ {{lämmin+A+Sg+Nom}} (Eng. # warm)
+* __lämmin: __ {{lämmin+A+Sg+Nom}} (Eng. # warm)
 
  !Lexicalised superlatives
 
 
 __Adjectives 35 back examples:__
-* __uloin:__ {{uloin+A+Sg+Nom}} (Eng. # outermost)
+* __uloin: __ {{uloin+A+Sg+Nom}} (Eng. # outermost)
 
 
 __Adjectives 35 front examples:__
-* __sisin:__ {{sisin+A+Sg+Nom}} (Eng. # innermost)
+* __sisin: __ {{sisin+A+Sg+Nom}} (Eng. # innermost)
 
  Vasen inflects almost like superlative
 
 
 __Adjectives 36 examples:__
-* __vasen:__ {{vasen+A+Sg+Nom}} (Eng. # left)
+* __vasen: __ {{vasen+A+Sg+Nom}} (Eng. # left)
 
  !nen suffixes
  Adjectives are commonly formed with nen derivatonns.
 
 
 __Adjectives 38 back examples:__
-* __aakkosellinen:__ {{aakkosellinen+A+Sg+Nom}} (Eng. # alphabetic)
+* __aakkosellinen: __ {{aakkosellinen+A+Sg+Nom}} (Eng. # alphabetic)
 
 
 
 
 __Adjectives 38 front examples:__
-* __kylmäjärkinen:__ {{kylmäjärkinen+A+Sg+Nom}} (Eng. # levelminded)
+* __kylmäjärkinen: __ {{kylmäjärkinen+A+Sg+Nom}} (Eng. # levelminded)
 
  !s-final adjectives
 
@@ -5459,19 +5459,19 @@ __Adjectives 38 front examples:__
 
 
 __Adjectives 39 examples:__
-* __symppis:__ {{symppis+A+Sg+Nom}} (Eng. # sympathetic)
+* __symppis: __ {{symppis+A+Sg+Nom}} (Eng. # sympathetic)
 
 
 __Adjectives 40 examples:__
-* __lähteisyys:__ {{lähteisyys+A+Sg+Nom}} (Eng. # sourceful)
+* __lähteisyys: __ {{lähteisyys+A+Sg+Nom}} (Eng. # sourceful)
 
 
 __Adjectives 41 as examples:__
-* __autuas:__ {{autuas+A+Sg+Nom}} (Eng. # ignorant)
+* __autuas: __ {{autuas+A+Sg+Nom}} (Eng. # ignorant)
 
 
 __Adjectives 41 is examples:__
-* __valmis:__ {{valmis+A+Sg+Nom}} (Eng. # ready)
+* __valmis: __ {{valmis+A+Sg+Nom}} (Eng. # ready)
 
 
 
@@ -5488,82 +5488,82 @@ __Adjectives 41 is examples:__
 
 
 __Adjectives 41 äs examples:__
-* __työläs:__ {{työläs+A+Sg+Nom}} (Eng. # studious)
+* __työläs: __ {{työläs+A+Sg+Nom}} (Eng. # studious)
 
 
 __Adjectives 41 kas examples:__
-* __voimakas:__ {{voimakas+A+Sg+Nom}} (Eng. # powerfui)
+* __voimakas: __ {{voimakas+A+Sg+Nom}} (Eng. # powerfui)
 
 
 __Adjectives 41 käs examples:__
-* __tyylikäs:__ {{tyylikäs+A+Sg+Nom}} (Eng. # stylish)
+* __tyylikäs: __ {{tyylikäs+A+Sg+Nom}} (Eng. # stylish)
 
 
 __Adjectives 41 pas examples:__
-* __reipas:__ {{reipas+A+Sg+Nom}}
+* __reipas: __ {{reipas+A+Sg+Nom}}
 
  No adjectives end in -päs
 
 
 __Adjectives 41 tas examples:__
-* __rietas:__ {{rietas+A+Sg+Nom}} (Eng. # lewd)
+* __rietas: __ {{rietas+A+Sg+Nom}} (Eng. # lewd)
 
 
 __Adjectives 41 tis examples:__
-* __raitis:__ {{raitis+A+Sg+Nom}} (Eng. # sober)
+* __raitis: __ {{raitis+A+Sg+Nom}} (Eng. # sober)
 
  Gaps.
 
 
 __Adjectives 41 das examples:__
-* __hidas:__ {{hidas+A+Sg+Nom}} (Eng. # slow)
+* __hidas: __ {{hidas+A+Sg+Nom}} (Eng. # slow)
 
  Gaps
 
 
 __Adjectives 41 ras examples:__
-* __harras:__ {{harras+A+Sg+Nom}} (Eng. # humble)
+* __harras: __ {{harras+A+Sg+Nom}} (Eng. # humble)
 
  !t-finals
 
 
 __Adjectives 43 back examples:__
-* __ohut:__ {{ohut+A+Sg+Nom}} (Eng. # thin)
+* __ohut: __ {{ohut+A+Sg+Nom}} (Eng. # thin)
 
 
 __Adjectives 43 front examples:__
-* __ehyt:__ {{ehyt+A+Sg+Nom}} (Eng. # unbroken)
+* __ehyt: __ {{ehyt+A+Sg+Nom}} (Eng. # unbroken)
 
  !Lexicalised nut-participles
  Majority of lexicalised nut participles are adjectives.
 
 
 __Adjectives 47 back examples:__
-* __kulunut:__ {{kulunut+A+Sg+Nom}} (Eng. # used)
+* __kulunut: __ {{kulunut+A+Sg+Nom}} (Eng. # used)
 
 
 __Adjectives 47 front examples:__
-* __ällistynyt:__ {{ällistynyt+A+Sg+Nom}} (Eng. # amazed)
+* __ällistynyt: __ {{ällistynyt+A+Sg+Nom}} (Eng. # amazed)
 
  !Old -e^ final stems
 
 
 __Adjectives 48 back examples:__
-* __ahne:__ {{ahne+A+Sg+Nom}} (Eng. # greedy)
+* __ahne: __ {{ahne+A+Sg+Nom}} (Eng. # greedy)
 
 
 
 
 __Adjectives 48 front examples:__
-* __terve:__ {{terve+A+Sg+Nom}} (Eng. # healthy)
+* __terve: __ {{terve+A+Sg+Nom}} (Eng. # healthy)
 
 
 __Adjectives 48 d~t back examples:__
-* __kade:__ {{kade+A+Sg+Nom}} (Eng. # jealous)
+* __kade: __ {{kade+A+Sg+Nom}} (Eng. # jealous)
 
 
 __Adjectives 48 l~t back examples:__
-* __helle:__ {{helle+A+Sg+Nom}} (Eng. # warm weather)
+* __helle: __ {{helle+A+Sg+Nom}} (Eng. # warm weather)
 
  Gapping almost all variants of gradations with e, as well as all dual
  nominative stems.
@@ -5573,9 +5573,9 @@ __Adjectives 48 l~t back examples:__
 
 
 __Adjective pitkä examples:__
-* __pitkä:__ {{pitkä+A+Sg+Nom}}
-* __pidempi:__ {{pitkä+A+Comp+Sg+Nom}}
-* __pisin:__ {{pitkä+A+Sup+Sg+Nom}}
+* __pitkä: __ {{pitkä+A+Sg+Nom}}
+* __pidempi: __ {{pitkä+A+Comp+Sg+Nom}}
+* __pisin: __ {{pitkä+A+Sup+Sg+Nom}}
 
 
 
@@ -5600,7 +5600,7 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 
 
 __Adjective plurales examples:__
-* __leuattomat:__ {{leuattomat+A+Pl+Nom}} (Eng. # ?)
+* __leuattomat: __ {{leuattomat+A+Pl+Nom}} (Eng. # ?)
 
 
 
@@ -5639,50 +5639,50 @@ adjective baseform. This baseform is handled separately to avoid double
 superlatives.
 
 __Adjective superlative front examples:__
-* __rumin:__ {{ruma+A+Sup+Sg+Nom}} (Eng. # ugliest)
+* __rumin: __ {{ruma+A+Sup+Sg+Nom}} (Eng. # ugliest)
 
 
 
 __Adjective superlative back examples:__
-* __tyhmin:__ {{tyhmä+A+Sup+Sg+Nom}} (Eng. # stupidest)
+* __tyhmin: __ {{tyhmä+A+Sup+Sg+Nom}} (Eng. # stupidest)
 
 The comparative derivation is formed by mpi suffix, which creates a new
 adjective baseform. This adjective is handled separately
 to avoid double comparative forms.
 
 __Adjective comparative front examples:__
-* __rumempi:__ {{ruma+A+Comp+Sg+Nom}}
+* __rumempi: __ {{ruma+A+Comp+Sg+Nom}}
 
 
 __Adjective comparative back examples:__
-* __tyhmempi:__ {{tyhmä+A+Comp+Sg+Nom}}
+* __tyhmempi: __ {{tyhmä+A+Comp+Sg+Nom}}
 
 
 This inflectional part attached to adjective comparative stems to avoid
 circularity in comparative derivations:
 
 __Adjective comparative inflection back examples:__
-* __nopeampi:__ {{nopea+A+Comp+Sg+Nom}} (Eng. # faster)
-* __*nopeammampi:__ {{nopea+A+Comp+Comp+Sg+Nom}} (is not standard language)
-* __*nopeammammampi:__ {{nopea+A+Comp+Comp+Comp+Sg+Nom}} (is not standard language)
+* __nopeampi: __ {{nopea+A+Comp+Sg+Nom}} (Eng. # faster)
+* __*nopeammampi: __ {{nopea+A+Comp+Comp+Sg+Nom}} (is not standard language)
+* __*nopeammammampi: __ {{nopea+A+Comp+Comp+Comp+Sg+Nom}} (is not standard language)
 
 
 __Adjective comparative inflection front examples:__
-* __tyhmempänä:__ {{tyhmä+A+Comp+Sg+Ess}}
-* __*tyhmemmämpi:__ {{tyhmä+A+Comp+Comp+Sg+Nom}} (is not standard language)
+* __tyhmempänä: __ {{tyhmä+A+Comp+Sg+Ess}}
+* __*tyhmemmämpi: __ {{tyhmä+A+Comp+Comp+Sg+Nom}} (is not standard language)
 
 This inflectional part is attached to adjective superlative stems to avoid
 circularity in superlative  derivations:
 
 __Adjective superlative inflection back examples:__
-* __nopein:__ {{nopea+A+Sup+Sg+Nom}}
-* __*nopeimmimpia:__ {{nopea+A+Sup+Sup+Sg+Par}} (is not standard language)
-* __*nopeimmimmin:__ {{nopea+A+Sup+Sup+Sup+Sg+Nom}} (is not standard language)
+* __nopein: __ {{nopea+A+Sup+Sg+Nom}}
+* __*nopeimmimpia: __ {{nopea+A+Sup+Sup+Sg+Par}} (is not standard language)
+* __*nopeimmimmin: __ {{nopea+A+Sup+Sup+Sup+Sg+Nom}} (is not standard language)
 
 
 __Adjective superlative inflection front examples:__
-* __tyhmin:__ {{tyhmä+A+Sup+Sg+Nom}}
-* __*tyhmimmimpiä:__ {{tyhmä+A+Sup+Sup+Sg+Par}} (is not standard language)
+* __tyhmin: __ {{tyhmä+A+Sup+Sg+Nom}}
+* __*tyhmimmimpiä: __ {{tyhmä+A+Sup+Sup+Sg+Par}} (is not standard language)
 
 
 !!Regular adjective inflection
@@ -5691,286 +5691,286 @@ derivations is same as with nouns. I will only show examples here.
 
 
 __Adjective nominative back examples:__
-* __rumapa:__ {{ruma+A+Sg+Nom+Foc/pa}}
+* __rumapa: __ {{ruma+A+Sg+Nom+Foc/pa}}
 
 
 __Adjective nominative front examples:__
-* __tyhmäpä:__ {{tyhmä+A+Sg+Nom+Foc/pa}}
+* __tyhmäpä: __ {{tyhmä+A+Sg+Nom+Foc/pa}}
 
 
 __Adjective pl tant back examples:__
-* __rumat:__ {{ruma+A+Pl+Nom}}
+* __rumat: __ {{ruma+A+Pl+Nom}}
 
 
 __Adjective pl tant front examples:__
-* __tyhmät:__ {{tyhmä+A+Pl+Nom}}
+* __tyhmät: __ {{tyhmä+A+Pl+Nom}}
 
 
 __Adjective regular singular back examples:__
-* __ruman:__ {{ruma+A+Sg+Gen}}
-* __rumatta:__ {{ruma+A+Sg+Abe}}
+* __ruman: __ {{ruma+A+Sg+Gen}}
+* __rumatta: __ {{ruma+A+Sg+Abe}}
 
 
 __Adjective regular singular front examples:__
-* __tyhmän:__ {{tyhmä+A+Sg+Gen}}
-* __tyhmättä:__ {{tyhmä+A+Sg+Abe}}
+* __tyhmän: __ {{tyhmä+A+Sg+Gen}}
+* __tyhmättä: __ {{tyhmä+A+Sg+Abe}}
 
 
 __Adjective regular singular back strongs examples:__
-* __rumana:__ {{ruma+A+Sg+Ess}}
-* __rumani:__ {{ruma+A+Sg+Nom+PxSg1}}
+* __rumana: __ {{ruma+A+Sg+Ess}}
+* __rumani: __ {{ruma+A+Sg+Nom+PxSg1}}
 
 
 __Adjective regular singular front strongs examples:__
-* __tyhmänä:__ {{tyhmä+A+Sg+Ess}}
-* __tyhmäni:__ {{tyhmä+A+Sg+Nom+PxSg1}}
+* __tyhmänä: __ {{tyhmä+A+Sg+Ess}}
+* __tyhmäni: __ {{tyhmä+A+Sg+Nom+PxSg1}}
 
 
 
 __Adjective regular plural back examples:__
-* __heikoitta:__ {{heikko+A+Pl+Abe}}
-* __heikoilta:__ {{heikko+A+Pl+Abl}}
+* __heikoitta: __ {{heikko+A+Pl+Abe}}
+* __heikoilta: __ {{heikko+A+Pl+Abl}}
 
 
 __Adjective regular plural front examples:__
-* __jäykittä:__ {{jäykkä+A+Pl+Abe}}
-* __jäykiltä:__ {{jäykkä+A+Pl+Abl}}
+* __jäykittä: __ {{jäykkä+A+Pl+Abe}}
+* __jäykiltä: __ {{jäykkä+A+Pl+Abl}}
 
 
 __Adjective regular plural back strong examples:__
-* __jäykkinä:__ {{jäykkä+A+Pl+Ess}}
-* __jäykkine:__ {{jäykkä+A+Cmt}}
+* __jäykkinä: __ {{jäykkä+A+Pl+Ess}}
+* __jäykkine: __ {{jäykkä+A+Cmt}}
 
 
 __Adjective regular plural front strong examples:__
-* __heikkoina:__ {{heikko+A+Pl+Ess}}
-* __heikkoine:__ {{heikko+A+Cmt}}
+* __heikkoina: __ {{heikko+A+Pl+Ess}}
+* __heikkoine: __ {{heikko+A+Cmt}}
 
 
 __Adjective singular partitive a examples:__
-* __tarkkaa:__ {{tarkka+A+Sg+Par}}
-* __tarkkaansa:__ {{tarkka+A+Sg+Par+PxSg3}}
+* __tarkkaa: __ {{tarkka+A+Sg+Par}}
+* __tarkkaansa: __ {{tarkka+A+Sg+Par+PxSg3}}
 
 
 __Adjective singular partitive ä examples:__
-* __tyhmää:__ {{tyhmä+A+Sg+Par}}
-* __tyhmäänsä:__ {{tyhmä+A+Sg+Par+PxSg3}}
+* __tyhmää: __ {{tyhmä+A+Sg+Par}}
+* __tyhmäänsä: __ {{tyhmä+A+Sg+Par+PxSg3}}
 
 
 __Adjective singular partitive a poss aan examples:__
-* __jaloa:__ {{jalo+A+Sg+Par}}
-* __jaloaan:__ {{jalo+A+Sg+Par+PxSg3}}
+* __jaloa: __ {{jalo+A+Sg+Par}}
+* __jaloaan: __ {{jalo+A+Sg+Par+PxSg3}}
 
 
 __Adjective singular partitive ä poss ään examples:__
-* __hölöä:__ {{hölö+A+Sg+Par}}
-* __hölöään:__ {{hölö+A+Sg+Par+PxSg3}}
+* __hölöä: __ {{hölö+A+Sg+Par}}
+* __hölöään: __ {{hölö+A+Sg+Par+PxSg3}}
 
 
 __Adjective singular partitive ta examples:__
-* __vapaata:__ {{vapaa+A+Sg+Par}}
+* __vapaata: __ {{vapaa+A+Sg+Par}}
 
 
 __Adjective singular partitive tä examples:__
-* __pientä:__ {{pieni+A+Sg+Par}}
+* __pientä: __ {{pieni+A+Sg+Par}}
 
 
 __Adjective singular illative han examples:__
-* __peeaahan:__ {{peeaa+A+Sg+Ill}}
+* __peeaahan: __ {{peeaa+A+Sg+Ill}}
 
 
 __Adjective singular illative hin examples:__
-* __gayhin:__ {{gay+A+Sg+Ill}}
+* __gayhin: __ {{gay+A+Sg+Ill}}
 
 
 __Adjective singular illative hun examples:__
-* __muuhun:__ {{muu+A+Sg+Ill}}
+* __muuhun: __ {{muu+A+Sg+Ill}}
 
 
 __Adjective singular illative hyn examples:__
-* __gayhynpä:__ {{gay+A+Sg+Ill+Foc/pa}}
+* __gayhynpä: __ {{gay+A+Sg+Ill+Foc/pa}}
 
 
 __Adjective singular illative hän examples:__
-* __syypäähän:__ {{syypää+A+Sg+Ill}}
+* __syypäähän: __ {{syypää+A+Sg+Ill}}
 
 
 __Adjective singular illative seen back examples:__
-* __vapaaseen:__ {{vapaa+A+Sg+Ill}}
+* __vapaaseen: __ {{vapaa+A+Sg+Ill}}
 
 
 __Adjective singular illative seen front examples:__
-* __työlääseen:__ {{työläs+A+Sg+Ill}}
+* __työlääseen: __ {{työläs+A+Sg+Ill}}
 
 
 __Adjective singular illative an examples:__
-* __rumaan:__ {{ruma+A+Sg+Ill}}
+* __rumaan: __ {{ruma+A+Sg+Ill}}
 
 
 
 __Adjective singular illative en back examples:__
-* __suureen:__ {{suuri+A+Sg+Ill}}
+* __suureen: __ {{suuri+A+Sg+Ill}}
 
 
 __Adjective singular illative en front examples:__
-* __pieneen:__ {{pieni+A+Sg+Ill}}
+* __pieneen: __ {{pieni+A+Sg+Ill}}
 
 
 __Adjective singular illative in back examples:__
-* __tuhtiin:__ {{tuhti+A+Sg+Ill}}
+* __tuhtiin: __ {{tuhti+A+Sg+Ill}}
 
 
 __Adjective singular illative in front examples:__
-* __rehtiin:__ {{rehti+A+Sg+Ill}}
+* __rehtiin: __ {{rehti+A+Sg+Ill}}
 
 
 __Adjective singular illative on examples:__
-* __huonoon:__ {{huono+A+Sg+Ill}}
+* __huonoon: __ {{huono+A+Sg+Ill}}
 
 
 __Adjective singular illative un examples:__
-* __fiksuun:__ {{fiksu+A+Sg+Ill}}
+* __fiksuun: __ {{fiksu+A+Sg+Ill}}
 
 
 __Adjective singular illative yn examples:__
-* __häijyyn:__ {{häijy+A+Sg+Ill}}
+* __häijyyn: __ {{häijy+A+Sg+Ill}}
 
 
 __Adjective singular illative än examples:__
-* __tyhmään:__ {{tyhmä+A+Sg+Ill}}
+* __tyhmään: __ {{tyhmä+A+Sg+Ill}}
 
 
 __Adjective singular illative ön examples:__
-* __hölmöön:__ {{hölmö+A+Sg+Ill}}
+* __hölmöön: __ {{hölmö+A+Sg+Ill}}
 
 
 __Adjective plural partitive ia examples:__
-* __rumia:__ {{ruma+A+Pl+Par}}
+* __rumia: __ {{ruma+A+Pl+Par}}
 
 
 __Adjective plural partitive iä examples:__
-* __tyhmiä:__ {{tyhmä+A+Pl+Par}}
+* __tyhmiä: __ {{tyhmä+A+Pl+Par}}
 
 
 __Adjective plural partitive ita examples:__
-* __korkeita:__ {{korkea+A+Pl+Par}}
+* __korkeita: __ {{korkea+A+Pl+Par}}
 
 
 __Adjective plural partitive itä examples:__
-* __järeitä:__ {{järeä+A+Pl+Par}}
+* __järeitä: __ {{järeä+A+Pl+Par}}
 
 
 __Adjective plural partitive ja examples:__
-* __vahvoja:__ {{vahva+A+Pl+Par}}
+* __vahvoja: __ {{vahva+A+Pl+Par}}
 
 
 __Adjective plural partitive jä examples:__
-* __hölmöjä:__ {{hölmö+A+Pl+Par}}
+* __hölmöjä: __ {{hölmö+A+Pl+Par}}
 
 
 __Adjective plural genitive iden back examples:__
-* __tanakoiden:__ {{tanakka+A+Pl+Gen}}
+* __tanakoiden: __ {{tanakka+A+Pl+Gen}}
 
 
 __Adjective plural genitive iden front examples:__
-* __räväköiden:__ {{räväkkä+A+Pl+Gen}}
+* __räväköiden: __ {{räväkkä+A+Pl+Gen}}
 
 
 __Adjective plural genitive ien back examples:__
-* __rumien:__ {{ruma+A+Pl+Gen}}
+* __rumien: __ {{ruma+A+Pl+Gen}}
 
 
 __Adjective plural genitive ien front examples:__
-* __tyhmien:__ {{tyhmä+A+Pl+Gen}}
+* __tyhmien: __ {{tyhmä+A+Pl+Gen}}
 
 
 __Adjective plural genitive itten back examples:__
-* __nopeitten:__ {{nopea+A+Pl+Gen}}
+* __nopeitten: __ {{nopea+A+Pl+Gen}}
 
 
 __Adjective plural genitive itten front examples:__
-* __järeitten:__ {{järeä+A+Pl+Gen}}
+* __järeitten: __ {{järeä+A+Pl+Gen}}
 
 
 __Adjective plural genitive jen back examples:__
-* __vahvojen:__ {{vahva+A+Pl+Gen}}
+* __vahvojen: __ {{vahva+A+Pl+Gen}}
 
 
 __Adjective plural genitive jen front examples:__
-* __hölmöjen:__ {{hölmö+A+Pl+Gen}}
+* __hölmöjen: __ {{hölmö+A+Pl+Gen}}
 
 
 __Adjective plural genitive ten back examples:__
-* __suurten:__ {{suuri+A+Pl+Gen}}
+* __suurten: __ {{suuri+A+Pl+Gen}}
 
 
 __Adjective plural genitive ten front examples:__
-* __pienten:__ {{pieni+A+Pl+Gen}}
+* __pienten: __ {{pieni+A+Pl+Gen}}
 
 
 __Adjective plural genitive in back examples:__
-* __rumain:__ {{ruma+A+Pl+Gen+Use/Rare}}
+* __rumain: __ {{ruma+A+Pl+Gen+Use/Rare}}
 
 
 __Adjective plural genitive in front examples:__
-* __tyhmäin:__ {{tyhmä+A+Pl+Gen+Use/Rare}}
+* __tyhmäin: __ {{tyhmä+A+Pl+Gen+Use/Rare}}
 
 
 __Adjective plural illative ihin bacl examples:__
-* __pahoihin:__ {{paha+A+Pl+Ill}}
+* __pahoihin: __ {{paha+A+Pl+Ill}}
 
 
 __Adjective plural illative ihin front examples:__
-* __hölmöihin:__ {{hölmö+A+Pl+Ill}}
+* __hölmöihin: __ {{hölmö+A+Pl+Ill}}
 
 
 __Adjective plural illative iin back examples:__
-* __punaisiin:__ {{punainen+A+Pl+Ill}}
+* __punaisiin: __ {{punainen+A+Pl+Ill}}
 
 
 __Adjective plural illative iin front examples:__
-* __sinisiin:__ {{sininen+A+Pl+Ill}}
+* __sinisiin: __ {{sininen+A+Pl+Ill}}
 
 
 __Adjective plural illative isiin back examples:__
-* __korkeisiin:__ {{korkea+A+Pl+Ill}}
+* __korkeisiin: __ {{korkea+A+Pl+Ill}}
 
 
 __Adjective plural illative isiin front examples:__
-* __järeisiin:__ {{järeä+A+Pl+Ill}}
+* __järeisiin: __ {{järeä+A+Pl+Ill}}
 
 
 
 __Adjective possessive back examples:__
-* __tyhmäni:__ {{tyhmä+A+Sg+Nom+PxSg1}}
+* __tyhmäni: __ {{tyhmä+A+Sg+Nom+PxSg1}}
 
 
 __Adjective possessive front examples:__
-* __rumani:__ {{ruma+A+Sg+Nom+PxSg1}}
+* __rumani: __ {{ruma+A+Sg+Nom+PxSg1}}
 
 
 __Adjective possessive an examples:__
-* __kieroaan:__ {{kiero+A+Sg+Par+PxSg3}}
+* __kieroaan: __ {{kiero+A+Sg+Par+PxSg3}}
 
 
 __Adjective possessive en back examples:__
-* __rumalleen:__ {{ruma+A+Sg+All+PxSg3}}
+* __rumalleen: __ {{ruma+A+Sg+All+PxSg3}}
 
 
 __Adjective possessive en front examples:__
-* __tyhmälleen:__ {{tyhmä+A+Sg+All+PxSg3}}
+* __tyhmälleen: __ {{tyhmä+A+Sg+All+PxSg3}}
 
 
 __Adjective possessive än examples:__
-* __hölmöään:__ {{hölmö+A+Sg+Par+PxSg3}}
+* __hölmöään: __ {{hölmö+A+Sg+Par+PxSg3}}
 
 
 __Adjective clitic back examples:__
-* __rumahan:__ {{ruma+A+Sg+Nom+Foc/han}}
+* __rumahan: __ {{ruma+A+Sg+Nom+Foc/han}}
 
 
 __Adjective clitic front examples:__
-* __tyhmähän:__ {{tyhmä+A+Sg+Nom+Foc/han}}
+* __tyhmähän: __ {{tyhmä+A+Sg+Nom+Foc/han}}
 
 
 
@@ -5992,7 +5992,7 @@ __Adjective clitic front examples:__
 Adjectives can usually be derived into sti adverbs productively
 
 __Deadjectival adverb derivations sti examples:__
-* __nopeasti__ {{nopea+A+Der/sti}} (Eng. # fastly)
+* __nopeasti __ {{nopea+A+Der/sti}} (Eng. # fastly)
 
 
 
@@ -6096,35 +6096,35 @@ so they are not inflected here, but listed in roots.
 
 
 __Adverb possessive back examples:__
-* __takanani:__ {{takana+Adv+PxSg1}} (Eng. # behind me)
+* __takanani: __ {{takana+Adv+PxSg1}} (Eng. # behind me)
 
 
 __Adverb possessive front examples:__
-* __edessäni:__ {{edessä+Adv+PxSg1}} (Eng. # in front of me)
+* __edessäni: __ {{edessä+Adv+PxSg1}} (Eng. # in front of me)
 
 
 __Adverb possessive back an examples:__
-* __takanaan:__ {{takana+Adv+PxSg3}}
+* __takanaan: __ {{takana+Adv+PxSg3}}
 
 
 __Adverb possessive back en examples:__
-* __jalkeilleen:__ {{jalkeille+Adv+PxSg3}} (Eng. # he awakened)
+* __jalkeilleen: __ {{jalkeille+Adv+PxSg3}} (Eng. # he awakened)
 
 
 __Adverb possessive front en examples:__
-* __keskelleen:__ {{keskelle+Adv+PxPl3}} (Eng. # amidst them)
+* __keskelleen: __ {{keskelle+Adv+PxPl3}} (Eng. # amidst them)
 
 
 __Adverb possessive front än examples:__
-* __edessään:__ {{edessä+Adv+PxSg3}}
+* __edessään: __ {{edessä+Adv+PxSg3}}
 
 
 __Adverb clitic back examples:__
-* __nopeastihan:__ {{nopeasti+Adv+Foc/han}} (Eng. # fast)
+* __nopeastihan: __ {{nopeasti+Adv+Foc/han}} (Eng. # fast)
 
 
 __Adverb clitic front examples:__
-* __tyhmästihän:__ {{tyhmästi+Adv+Foc/han}} (Eng. # stupidly)
+* __tyhmästihän: __ {{tyhmästi+Adv+Foc/han}} (Eng. # stupidly)
 
 
 
@@ -6149,12 +6149,12 @@ __Adverb clitic front examples:__
  and clitics they take or require:
 
 __Adverbs examples:__
-* __aakkosellisesti:__ {{aakkosellisesti+Adv}}
-* __aakkosellisestikin:__ {{aakkosellisesti+Adv+Foc/kin}}
-* __mukaani:__ {{mukaan+Adv+PxSg1}}
-* __mukaamme:__ {{mukaan+Adv+PxPl1}}
-* __ajassa:__ {{ajassa+Adv}}
-* __ajassako:__ {{ajassa+Adv+Qst}}
+* __aakkosellisesti: __ {{aakkosellisesti+Adv}}
+* __aakkosellisestikin: __ {{aakkosellisesti+Adv+Foc/kin}}
+* __mukaani: __ {{mukaan+Adv+PxSg1}}
+* __mukaamme: __ {{mukaan+Adv+PxPl1}}
+* __ajassa: __ {{ajassa+Adv}}
+* __ajassako: __ {{ajassa+Adv+Qst}}
 
 
 
@@ -6257,8 +6257,8 @@ ynnä, (saati), (sillä)
 Further reading: [VISK § 816|http://scripta.kotus.fi/visk/sisalto.php?p=816])
 
 __Coordinating conjunctions examples:__
-* __eikä:__ {{eikä+CC}}
-* __ja:__ {{ja+CC}}
+* __eikä: __ {{eikä+CC}}
+* __ja: __ {{ja+CC}}
 
 
 
@@ -6277,12 +6277,12 @@ ellei, että, jahka, jollei, jos, joskin, jos kohta, jotta, koska, kun,
 Further reading: [VISK § 818|http://scripta.kotus.fi/visk/sisalto.php?p=818]
 
 __Adverbial conjunctions examples:__
-* __että:__ {{että+CS}}
-* __jotta:__ {{jotta+CS}}
-* __koska:__ {{koska+CS}}
-* __kun:__ {{kun+CS}}
-* __jos:__ {{jos+CS}}
-* __vaikka:__ {{vaikka+CS}}
+* __että: __ {{että+CS}}
+* __jotta: __ {{jotta+CS}}
+* __koska: __ {{koska+CS}}
+* __kun: __ {{kun+CS}}
+* __jos: __ {{jos+CS}}
+* __vaikka: __ {{vaikka+CS}}
 
 
 
@@ -6294,124 +6294,124 @@ Digit strings inflect with colons, lot like abbreviations.
 The digit strings ending in digit 1 pronounced as number
 
 __ examples:__
-* __1:__ {{1+Num+Card+Sg+Nom}}
-* __1:t:__ {{1+Num+Card+Pl+Nom}}
-* __1:ssä:__ {{1+Num+Card+Sg+Ine}}
+* __1: __ {{1+Num+Card+Sg+Nom}}
+* __1:t: __ {{1+Num+Card+Pl+Nom}}
+* __1:ssä: __ {{1+Num+Card+Sg+Ine}}
 
 The digit strings ending in digit 2 pronounced as number
-* __2:__
-* __2:t:__
-* __2:ssa:__
+* __2: __
+* __2:t: __
+* __2:ssa: __
 
 The digit strings ending in digit 3 pronounced as number
-* __3:__
-* __3:t:__
-* __3:ssa:__
+* __3: __
+* __3:t: __
+* __3:ssa: __
 
 The digit strings ending in digit 4 pronounced as number
-* __4:__
-* __4:t:__
-* __4:ssä:__
+* __4: __
+* __4:t: __
+* __4:ssä: __
 
 The digit strings ending in digit 5 pronounced as number
-* __5:__
-* __5:t:__
-* __5:ssä:__
+* __5: __
+* __5:t: __
+* __5:ssä: __
 
 The digit strings ending in digit 6 pronounced as number
-* __6:__
-* __6:t:__
-* __6:ss:__
+* __6: __
+* __6:t: __
+* __6:ss: __
 
 The digit strings ending in digit 7 pronounced as number
-* __7:__
-* __7:t:__
-* __7:ssä:__
+* __7: __
+* __7:t: __
+* __7:ssä: __
 
 The digit strings ending in digit 8 pronounced as number
-* __8:__
-* __8:t:__
-* __8:ssa:__
+* __8: __
+* __8:t: __
+* __8:ssa: __
 
 
 The digit strings ending in digit 9 pronounced as number
-* __9:__
-* __9:t:__
-* __9:ssä:__
+* __9: __
+* __9:t: __
+* __9:ssä: __
 
 The digit strings ending in digit 0 pronounced as number
-* __0:__
-* __0:t:__
-* __0:aa:__
+* __0: __
+* __0:t: __
+* __0:aa: __
 
 The digit string ending in 0 pronounced as tens
-* __10:__
-* __10:t:__
-* __10:tä:__
+* __10: __
+* __10:t: __
+* __10:tä: __
 
 The digit string ending in 00 pronounced as hundreds
-* __100:__
-* __100:t:__
-* __100:aa:__
+* __100: __
+* __100:t: __
+* __100:aa: __
 
 The digit string ending in 000 pronounced as thousands
-* __1000:__
-* __1000:t:__
-* __1000:ta:__
+* __1000: __
+* __1000:t: __
+* __1000:ta: __
 
 The digit string ending in 0's pronounced as millions
-* __1000000:__
-* __1000000:t:__
-* __1000000:aa:__
+* __1000000: __
+* __1000000:t: __
+* __1000000:aa: __
 
 The digit string ending in 0's pronounced as milliards
-* __1000000000:__
-* __1000000000:t:__
-* __1000000000:a:__
+* __1000000000: __
+* __1000000000:t: __
+* __1000000000:a: __
 
 The digit string ending in 1. pronounced as first
-* __1.:__
-* __1:nen:__
-* __1:stä:__
+* __1.: __
+* __1:nen: __
+* __1:stä: __
 
 The digit string ending in 2. pronounced as second
-* __2.:__
-* __2:nen:__
-* __2:sta:__
+* __2.: __
+* __2:nen: __
+* __2:sta: __
 
 The digit string ending in 3, 6, 8, 00 or 2 pronounced as ordinal
-* __3.:__
-* __3:s:__
-* __3:tta:__
+* __3.: __
+* __3:s: __
+* __3:tta: __
 
 The digit string ending in 4, 5, 7, 9, 0, or 1. pronounced as ordinal
-* __4.:__
-* __4:s:__
-* __4:ttä:__
+* __4.: __
+* __4:s: __
+* __4:ttä: __
 
 The roman digit string ending in II, III, VI, VIII, C, L or M
-* __II:__
-* __II:ta:__
+* __II: __
+* __II:ta: __
 
 The roman digit string ending in I, IV, V, VII, IX, X or 
-* __I:__
-* __I:tä:__
+* __I: __
+* __I:tä: __
 
-* __1:nsä:__
+* __1:nsä: __
 
-* __2:nsa:__
+* __2:nsa: __
 
-* __3:aan:__
+* __3:aan: __
 
-* __2:kseen:__
+* __2:kseen: __
 
-* __1:kseen:__
+* __1:kseen: __
 
-* __5:ttään:__
+* __5:ttään: __
 
-* __2:han:__
+* __2:han: __
 
-* __4:hän:__
+* __4:hän: __
 
 
 
@@ -6780,46 +6780,46 @@ roman numerals.
 Zero alone works quite differently:
 
 __Digit zero examples:__
-* __0:__ {{0+Num+Sg+Nom}}
+* __0: __ {{0+Num+Sg+Nom}}
 
 Integers can be constructed from any number of digits, ending in
 1-9, followed by any number of 0's. Initial 0's are rare, but not totally
 unexpected:
 
 __int digit loop examples:__
-* __13:__ {{13+Num+Card+Sg+Nom}}
-* __100:__ {{100+Num+Card+Sg+Nom}}
-* __0000005550000000:__ {{0000005550000000+Num+Card+Sg+Nom}}
+* __13: __ {{13+Num+Card+Sg+Nom}}
+* __100: __ {{100+Num+Card+Sg+Nom}}
+* __0000005550000000: __ {{0000005550000000+Num+Card+Sg+Nom}}
 
 The digit strings that end in 10 to 12 + 6n 0's are inflected alike:
 
 __int digit milliard loop examples:__
-* __1000000000:__ {{1000000000+Num+Card+Sg+Nom}}
-* __300000000000:__ {{300000000000+Num+Card+Sg+Nom}}
-* __123456000000000000000000:__ {{123456000000000000000000+Num+Card+Sg+Nom}}
+* __1000000000: __ {{1000000000+Num+Card+Sg+Nom}}
+* __300000000000: __ {{300000000000+Num+Card+Sg+Nom}}
+* __123456000000000000000000: __ {{123456000000000000000000+Num+Card+Sg+Nom}}
 
 The digit strings that end in 6 to 9 + 6n 0's are inflected alike:
 
 __int digit million loop examples:__
-* __1000000:__ {{1000000+Num+Card+Sg+Nom}}
-* __300000000:__ {{300000000+Num+Card+Sg+Nom}}
-* __123456000000000000000:__ {{123456000000000000000+Num+Card+Sg+Nom}}
+* __1000000: __ {{1000000+Num+Card+Sg+Nom}}
+* __300000000: __ {{300000000+Num+Card+Sg+Nom}}
+* __123456000000000000000: __ {{123456000000000000000+Num+Card+Sg+Nom}}
 
 Decimal digit strings start with any number of digits 0 to 9, followed
 by decimal separator comma. The decimal dot may be allowed as substandard
 variant.
 
 __decimal digit loop examples:__
-* __1,0:__ {{1,0+Num+Sg+Nom}}
-* __314,1:__ {{314,1+Num+Sg+Nom}}
+* __1,0: __ {{1,0+Num+Sg+Nom}}
+* __314,1: __ {{314,1+Num+Sg+Nom}}
 
 
 The decimal digit strings end in any number of digits 0 to 9, inflected
 along the last part.
 
 __decimal digit loop more examples:__
-* __3,141:__ {{3,141+Num+Sg+Nom}}
-* __123,345:__ {{123,345+Num+Sg+Nom}}
+* __3,141: __ {{3,141+Num+Sg+Nom}}
+* __123,345: __ {{123,345+Num+Sg+Nom}}
 
 The decimal digit strings with dot may be allowed as sub-standard option
 with respective analysis.
@@ -6829,35 +6829,35 @@ scale and some combinations, they denote ordinal numbers and inflect like
 ones.
 
 __roman numeral examples:__
-* __MM:__ {{MM+Num+Ord+Sg+Nom}}
-* __MCXI:__ {{MCXI+Num+Ord+Sg+Nom}}
-* __CMXCIX:__ {{CMXCIX+Num+Ord+Sg+Nom}}
+* __MM: __ {{MM+Num+Ord+Sg+Nom}}
+* __MCXI: __ {{MCXI+Num+Ord+Sg+Nom}}
+* __CMXCIX: __ {{CMXCIX+Num+Ord+Sg+Nom}}
 
 Thousands can be followed by any of other parts
 
 __roman numeral thousand examples:__
-* __MII:__ {{MII+Num+Ord+Sg+Nom}}
-* __MCCCXXII:__ {{MCCCXXII+Num+Ord+Sg+Nom}}
+* __MII: __ {{MII+Num+Ord+Sg+Nom}}
+* __MCCCXXII: __ {{MCCCXXII+Num+Ord+Sg+Nom}}
 
 
 Hundreds can be followed by anything but thousands:
 
 __roman numeral hundred examples:__
-* __CXXI:__ {{CXXI+Num+Ord+Sg+Nom}}
-* __DXXIV:__ {{DXXIV+Num+Ord+Sg+Nom}}
+* __CXXI: __ {{CXXI+Num+Ord+Sg+Nom}}
+* __DXXIV: __ {{DXXIV+Num+Ord+Sg+Nom}}
 
 Tens can be followed by ones:
 
 __roman numeral ten examples:__
-* __XIX:__ {{XIX+Num+Ord+Sg+Nom}}
-* __XXVII:__ {{XXVII+Num+Ord+Sg+Nom}}
+* __XIX: __ {{XIX+Num+Ord+Sg+Nom}}
+* __XXVII: __ {{XXVII+Num+Ord+Sg+Nom}}
 
 Ones come alone
 
 __roman numerals one to nine examples:__
-* __IX:__ {{IX+Num+Ord+Sg+Nom}}
-* __VIII:__ {{VIII+Num+Ord+Sg+Nom}}
-* __II:__ {{II+Num+Ord+Sg+Nom}}
+* __IX: __ {{IX+Num+Ord+Sg+Nom}}
+* __VIII: __ {{VIII+Num+Ord+Sg+Nom}}
+* __II: __ {{II+Num+Ord+Sg+Nom}}
 
 Exceptions are quite strange word-forms. the ones that do not fit anywhere 
 else. This file contains all enumerated word forms that cannot reasonably be
@@ -6870,36 +6870,36 @@ compounding scheme or possibly many end applications.
 negation verb has partial inflection:
 
 __ examples:__
-* __en:__ {{ei+V+Neg+Act+Sg1}}
-* __älkää:__ {{ei+V+Neg+Act+Imprt+Pl2}}
-* __älkööt:__ {{ei+V+Neg+Act+Imprt+Pl3}}
+* __en: __ {{ei+V+Neg+Act+Sg1}}
+* __älkää: __ {{ei+V+Neg+Act+Imprt+Pl2}}
+* __älkööt: __ {{ei+V+Neg+Act+Imprt+Pl3}}
 
 Some verbs only have few word-forms left:
-* __kutiaa:__
-* __taita:__
-* __paratkoon:__
-* __eläköön:__
+* __kutiaa: __
+* __taita: __
+* __paratkoon: __
+* __eläköön: __
 
 
 The noun ruoka has irregular forms:
-* __ruuassa:__
-* __ruuilla:__
+* __ruuassa: __
+* __ruuilla: __
 
 The adjective hyvä has heteroclitic comparative derivations too:
-* __parempi:__
-* __paremmissa:__
-* __paras:__
-* __parhaat:__
+* __parempi: __
+* __paremmissa: __
+* __paras: __
+* __parhaat: __
 
 Some of the nouns have archaic consonat stem forms left:
-* __vuonna:__
-* __sydännä:__
-* __jumalten:__
-* __sankarten:__
+* __vuonna: __
+* __sydännä: __
+* __jumalten: __
+* __sankarten: __
 
 few verbs have shortened forms in standard spoken Finnish
-* __meen:__
-* __tuut:__
+* __meen: __
+* __tuut: __
 
 
 
@@ -11336,29 +11336,29 @@ Singular nominative is the dictionary reference form for most of the words.
 
 
 __Noun nominative back examples:__
-* __talo:__ {{talo+N+Sg+Nom}} (Eng. # a house)
-* __taloko:__ {{talo+N+Sg+Nom+Qst}}
-* __talohan:__ {{talo+N+Sg+Nom+Foc/han}}
-* __*talohän:__ {{talo+N+Sg+Nom+Foc/han}} (is not standard language)
+* __talo: __ {{talo+N+Sg+Nom}} (Eng. # a house)
+* __taloko: __ {{talo+N+Sg+Nom+Qst}}
+* __talohan: __ {{talo+N+Sg+Nom+Foc/han}}
+* __*talohän: __ {{talo+N+Sg+Nom+Foc/han}} (is not standard language)
 
 
 __Noun nominative front examples:__
-* __pöly:__ {{pöly+N+Sg+Nom}} (Eng. # dust)
+* __pöly: __ {{pöly+N+Sg+Nom}} (Eng. # dust)
 
 The plural nominative attaches to singular stem. For plural words it is also
 the form that is used for dictionary lookups:
 
 
 __Noun nominative plural back examples:__
-* __talot:__ {{talo+N+Pl+Nom}}
-* __sakset:__ {{sakset+N+Pl+Nom}} (Eng. # scissors)
-* __saksetpa:__ {{sakset+N+Pl+Nom+Foc/pa}}
-* __*saksetpä:__ {{sakset+N+Pl+Nom+Foc/pa}} (is not standard language)
+* __talot: __ {{talo+N+Pl+Nom}}
+* __sakset: __ {{sakset+N+Pl+Nom}} (Eng. # scissors)
+* __saksetpa: __ {{sakset+N+Pl+Nom+Foc/pa}}
+* __*saksetpä: __ {{sakset+N+Pl+Nom+Foc/pa}} (is not standard language)
 
 
 __Noun nominative plural front examples:__
-* __pölyt:__ {{pöly+N+Pl+Nom}}
-* __häät:__ {{häät+N+Pl+Nom}} (Eng. # wedding)
+* __pölyt: __ {{pöly+N+Pl+Nom}}
+* __häät: __ {{häät+N+Pl+Nom}} (Eng. # wedding)
 
 !!Singular case inflection
 The nouns can inflect in 15 regular cases. Most of the cases have one or two
@@ -11368,79 +11368,79 @@ to the weak singular stem:
 
 
 __Noun basic singular back examples:__
-* __pata:__ {{pata+N+Sg+Nom}} (Eng. # pot)
-* __padan:__ {{pata+N+Sg+Gen}}
-* __padassa:__ {{pata+N+Sg+Ine}}
-* __padasta:__ {{pata+N+Sg+Ela}}
-* __padalla:__ {{pata+N+Sg+Ade}}
-* __padalta:__ {{pata+N+Sg+Abl}}
-* __padalle:__ {{pata+N+Sg+All}}
-* __padaksi:__ {{pata+N+Sg+Tra}}
-* __padatta:__ {{pata+N+Sg+Abe}}
+* __pata: __ {{pata+N+Sg+Nom}} (Eng. # pot)
+* __padan: __ {{pata+N+Sg+Gen}}
+* __padassa: __ {{pata+N+Sg+Ine}}
+* __padasta: __ {{pata+N+Sg+Ela}}
+* __padalla: __ {{pata+N+Sg+Ade}}
+* __padalta: __ {{pata+N+Sg+Abl}}
+* __padalle: __ {{pata+N+Sg+All}}
+* __padaksi: __ {{pata+N+Sg+Tra}}
+* __padatta: __ {{pata+N+Sg+Abe}}
 
 
 __Noun basic singular front examples:__
-* __näky:__ {{näky+N+Sg+Nom}} (Eng. # vision)
-* __näyn:__ {{näky+N+Sg+Gen}}
-* __näyssä:__ {{näky+N+Sg+Ine}}
-* __näystä:__ {{näky+N+Sg+Ela}}
-* __näyllä:__ {{näky+N+Sg+Ade}}
-* __näyltä:__ {{näky+N+Sg+Abl}}
-* __näylle:__ {{näky+N+Sg+All}}
-* __näyksi:__ {{näky+N+Sg+Tra}}
-* __näyttä:__ {{näky+N+Sg+Abe}}
+* __näky: __ {{näky+N+Sg+Nom}} (Eng. # vision)
+* __näyn: __ {{näky+N+Sg+Gen}}
+* __näyssä: __ {{näky+N+Sg+Ine}}
+* __näystä: __ {{näky+N+Sg+Ela}}
+* __näyllä: __ {{näky+N+Sg+Ade}}
+* __näyltä: __ {{näky+N+Sg+Abl}}
+* __näylle: __ {{näky+N+Sg+All}}
+* __näyksi: __ {{näky+N+Sg+Tra}}
+* __näyttä: __ {{näky+N+Sg+Abe}}
 
 For words with direct gradation the only forms that attach to strong singular
 stem may be essive and possessive's of nominative or genitive:
 
 
 __Noun basic singular strong back examples:__
-* __patana:__ {{pata+N+Sg+Ess}}
-* __patani:__ {{pata+N+Sg+Nom+PxSg1}}
-* __patasi:__ {{pata+N+Sg+Gen+PxSg2}}
+* __patana: __ {{pata+N+Sg+Ess}}
+* __patani: __ {{pata+N+Sg+Nom+PxSg1}}
+* __patasi: __ {{pata+N+Sg+Gen+PxSg2}}
 
 
 __Noun basic singular strong front examples:__
-* __näkynä:__ {{näky+N+Sg+Ess}}
-* __näkyni:__ {{näky+N+Sg+Nom+PxSg1}}
-* __näkysi:__ {{näky+N+Sg+Gen+PxSg2}}
+* __näkynä: __ {{näky+N+Sg+Ess}}
+* __näkyni: __ {{näky+N+Sg+Nom+PxSg1}}
+* __näkysi: __ {{näky+N+Sg+Gen+PxSg2}}
 
 !!Plural inflection
 
 
 __Noun basic plural back examples:__
-* __padoilta:__ {{pata+N+Pl+Abl}}
-* __padoilla:__ {{pata+N+Pl+Ade}}
-* __padoille:__ {{pata+N+Pl+All}}
-* __padoista:__ {{pata+N+Pl+Ela}}
-* __padoissa:__ {{pata+N+Pl+Ine}}
-* __padoiksi:__ {{pata+N+Pl+Tra}}
-* __padoitta:__ {{pata+N+Pl+Abe}}
-* __padoin:__ {{pata+N+Pl+Ins}}
+* __padoilta: __ {{pata+N+Pl+Abl}}
+* __padoilla: __ {{pata+N+Pl+Ade}}
+* __padoille: __ {{pata+N+Pl+All}}
+* __padoista: __ {{pata+N+Pl+Ela}}
+* __padoissa: __ {{pata+N+Pl+Ine}}
+* __padoiksi: __ {{pata+N+Pl+Tra}}
+* __padoitta: __ {{pata+N+Pl+Abe}}
+* __padoin: __ {{pata+N+Pl+Ins}}
 
 
 __Noun basic plural front examples:__
-* __näyillä:__ {{näky+N+Pl+Ade}}
-* __näyiltä:__ {{näky+N+Pl+Abl}}
-* __näyille:__ {{näky+N+Pl+All}}
-* __näyissä:__ {{näky+N+Pl+Ine}}
-* __näyistä:__ {{näky+N+Pl+Ela}}
-* __näyiksi:__ {{näky+N+Pl+Tra}}
-* __näyittä:__ {{näky+N+Pl+Abe}}
-* __näyin:__ {{näky+N+Pl+Ins}}
+* __näyillä: __ {{näky+N+Pl+Ade}}
+* __näyiltä: __ {{näky+N+Pl+Abl}}
+* __näyille: __ {{näky+N+Pl+All}}
+* __näyissä: __ {{näky+N+Pl+Ine}}
+* __näyistä: __ {{näky+N+Pl+Ela}}
+* __näyiksi: __ {{näky+N+Pl+Tra}}
+* __näyittä: __ {{näky+N+Pl+Abe}}
+* __näyin: __ {{näky+N+Pl+Ins}}
 
 The strong plural stem of words with direct gradation contains only essive
 and comitative:
 
 
 __Noun basic plural back strong examples:__
-* __patoina:__ {{pata+N+Pl+Ess}}
-* __patoine:__ {{pata+N+Com}}
+* __patoina: __ {{pata+N+Pl+Ess}}
+* __patoine: __ {{pata+N+Com}}
 
 
 __Noun basic plural front strong examples:__
-* __näkyinä:__ {{näky+N+Pl+Ess}}
-* __näkyine:__ {{näky+N+Com}}
+* __näkyinä: __ {{näky+N+Pl+Ess}}
+* __näkyine: __ {{näky+N+Com}}
 
 !!Cases with allomorphic variation
 The nominal cases which can take several different suffixes are singular
@@ -11455,26 +11455,26 @@ realisations of extinct ð.
 For basic vowel stems the partitive suffix is a, ä.
 
 __Noun singular partitive a examples:__
-* __politiikka:__ {{politiikka+N+Sg+Nom}} (Eng. # politics)
-* __politiikkaa:__ {{politiikka+N+Sg+Par}}
+* __politiikka: __ {{politiikka+N+Sg+Nom}} (Eng. # politics)
+* __politiikkaa: __ {{politiikka+N+Sg+Par}}
 
 
 __Noun singular partitive ä examples:__
-* __kysyntä:__ {{kysyntä+N+Sg+Nom}} (Eng. # demand)
-* __kysyntää:__ {{kysyntä+N+Sg+Par}}
+* __kysyntä: __ {{kysyntä+N+Sg+Nom}} (Eng. # demand)
+* __kysyntää: __ {{kysyntä+N+Sg+Par}}
 
 In stems other than -a, -ä stems, the 3rd possessive suffix may appear in
 -an, -än form after the partitive suffix.
 
 __Noun singular partitive a poss aan examples:__
-* __pato:__ {{pato+N+Sg+Nom}} (Eng. # dam)
-* __patoa:__ {{pato+N+Sg+Par}}
-* __patoaan:__ {{pato+N+Sg+Par+PxSg3}}
+* __pato: __ {{pato+N+Sg+Nom}} (Eng. # dam)
+* __patoa: __ {{pato+N+Sg+Par}}
+* __patoaan: __ {{pato+N+Sg+Par+PxSg3}}
 
 
 __Noun singular partitive ä poss ään examples:__
-* __näkyä:__ {{näky+N+Sg+Par}}
-* __näkyään:__ {{näky+N+Sg+Par+PxSg3}}
+* __näkyä: __ {{näky+N+Sg+Par}}
+* __näkyään: __ {{näky+N+Sg+Par+PxSg3}}
 
 The consonant stems and long vowel stems regularly take -ta, -tä suffix 
 for singular partitives. It is up to interpretation whether the partitive
@@ -11484,248 +11484,248 @@ that.
 
 
 __Noun singular partitive ta examples:__
-* __taimen:__ {{taimen+N+Sg+Nom}} (Eng. # trout)
-* __taimenta:__ {{taimen+N+Sg+Par}}
+* __taimen: __ {{taimen+N+Sg+Nom}} (Eng. # trout)
+* __taimenta: __ {{taimen+N+Sg+Par}}
 
 
 __Noun singular partitive tä examples:__
-* __tie:__ {{tie+N+Sg+Nom}} (Eng. # road)
-* __tietä:__ {{tie+N+Sg+Par}}
-* __vene:__ {{vene+N+Sg+Nom}} (Eng. # boat)
-* __venettä:__ {{vene+N+Sg+Par}}
+* __tie: __ {{tie+N+Sg+Nom}} (Eng. # road)
+* __tietä: __ {{tie+N+Sg+Par}}
+* __vene: __ {{vene+N+Sg+Nom}} (Eng. # boat)
+* __venettä: __ {{vene+N+Sg+Par}}
 
 The singular illatives have more variants.
 
 The variant with intervening h attaches to long vowel stems:
 
 __Noun singular illative han examples:__
-* __maa:__ {{maa+N+Sg+Nom}} (Eng. # earth)
-* __maahan:__ {{maa+N+Sg+Ill}}
-* __maahansa:__ {{maa+N+Sg+Ill+PxSg3}}
+* __maa: __ {{maa+N+Sg+Nom}} (Eng. # earth)
+* __maahan: __ {{maa+N+Sg+Ill}}
+* __maahansa: __ {{maa+N+Sg+Ill+PxSg3}}
 
 
 __Noun singular illative hen back examples:__
-* __toffee:__ {{toffee+N+Sg+Nom}} (Eng. # taffy)
-* __toffeehen:__ {{toffee+N+Sg+Ill}}
+* __toffee: __ {{toffee+N+Sg+Nom}} (Eng. # taffy)
+* __toffeehen: __ {{toffee+N+Sg+Ill}}
 
 
 __Noun singular illative hen front examples:__
-* __tiehen:__ {{tie+N+Sg+Ill}}
+* __tiehen: __ {{tie+N+Sg+Ill}}
 
 
 __Noun singular illative hin back examples:__
-* __hai:__ {{hai+N+Sg+Nom}} (Eng. # shark)
-* __haihin:__ {{hai+N+Sg+Ill}}
+* __hai: __ {{hai+N+Sg+Nom}} (Eng. # shark)
+* __haihin: __ {{hai+N+Sg+Ill}}
 
 
 __Noun singular illative hin front examples:__
-* __pii:__ {{pii+N+Sg+Nom}} (Eng. # silica)
-* __piihin:__ {{pii+N+Sg+Ill}}
+* __pii: __ {{pii+N+Sg+Nom}} (Eng. # silica)
+* __piihin: __ {{pii+N+Sg+Ill}}
 
 
 __Noun singular illative hon examples:__
-* __suo:__ {{suo+N+Sg+Nom}} (Eng. # swamp)
-* __suohon:__ {{suo+N+Sg+Ill}}
+* __suo: __ {{suo+N+Sg+Nom}} (Eng. # swamp)
+* __suohon: __ {{suo+N+Sg+Ill}}
 
 
 __Noun singular illative hun examples:__
-* __puu:__ {{puu+N+Sg+Nom}} (Eng. # tree)
-* __puuhun:__ {{puu+N+Sg+Ill}}
+* __puu: __ {{puu+N+Sg+Nom}} (Eng. # tree)
+* __puuhun: __ {{puu+N+Sg+Ill}}
 
 
 __Noun singular illative hyn examples:__
-* __pyy:__ {{pyy+N+Sg+Nom}} (Eng. # kind of a bird)
-* __pyyhyn:__ {{pyy+N+Sg+Ill}}
+* __pyy: __ {{pyy+N+Sg+Nom}} (Eng. # kind of a bird)
+* __pyyhyn: __ {{pyy+N+Sg+Ill}}
 
 
 __Noun singular illative hän examples:__
-* __pää:__ {{pää+N+Sg+Nom}} (Eng. # head)
-* __päähän:__ {{pää+N+Sg+Ill}}
+* __pää: __ {{pää+N+Sg+Nom}} (Eng. # head)
+* __päähän: __ {{pää+N+Sg+Ill}}
 
 
 __Noun singular illative hän examples:__
-* __työ:__ {{työ+N+Sg+Nom}} (Eng. # job)
-* __työhön:__ {{työ+N+Sg+Ill}}
+* __työ: __ {{työ+N+Sg+Nom}} (Eng. # job)
+* __työhön: __ {{työ+N+Sg+Ill}}
 
 The stems with short vowel do not have the intervening h.
 
 
 __Noun singular illative an examples:__
-* __kirja:__ {{kirja+N+Sg+Nom}} (Eng. # book)
-* __kirjaan:__ {{kirja+N+Sg+Ill}}
+* __kirja: __ {{kirja+N+Sg+Nom}} (Eng. # book)
+* __kirjaan: __ {{kirja+N+Sg+Ill}}
 
 
 __Noun singular illative en ba<ck examples:__
-* __tuli:__ {{tuli+N+Sg+Nom}} (Eng. # fire)
-* __tuleen:__ {{tuli+N+Sg+Ill}}
+* __tuli: __ {{tuli+N+Sg+Nom}} (Eng. # fire)
+* __tuleen: __ {{tuli+N+Sg+Ill}}
 
 
 __Noun singular illative en front examples:__
-* __hiiri:__ {{hiiri+N+Sg+Nom}} (Eng. # mouse)
-* __hiireen:__ {{hiiri+N+Sg+Ill}}
+* __hiiri: __ {{hiiri+N+Sg+Nom}} (Eng. # mouse)
+* __hiireen: __ {{hiiri+N+Sg+Ill}}
 
 
 __Noun singular illative in back examples:__
-* __ruuvi:__ {{ruuvi+N+Sg+Nom}} (Eng. # screw)
-* __ruuviin:__ {{ruuvi+N+Sg+Ill}}
+* __ruuvi: __ {{ruuvi+N+Sg+Nom}} (Eng. # screw)
+* __ruuviin: __ {{ruuvi+N+Sg+Ill}}
 
 
 __Noun singular illative in front examples:__
-* __tyyli:__ {{tyyli+N+Sg+Nom}} (Eng. # style)
-* __tyyliin:__ {{tyyli+N+Sg+Ill}}
+* __tyyli: __ {{tyyli+N+Sg+Nom}} (Eng. # style)
+* __tyyliin: __ {{tyyli+N+Sg+Ill}}
 
 
 __Noun singular illative on examples:__
-* __taloon:__ {{talo+N+Sg+Ill}}
+* __taloon: __ {{talo+N+Sg+Ill}}
 
 
 __Noun singular illative un examples:__
-* __nielu:__ {{nielu+N+Sg+Nom}} (Eng. # throat)
-* __nieluun:__ {{nielu+N+Sg+Ill}}
+* __nielu: __ {{nielu+N+Sg+Nom}} (Eng. # throat)
+* __nieluun: __ {{nielu+N+Sg+Ill}}
 
 
 __Noun singular illative yn examples:__
-* __näkyyn:__ {{näky+N+Sg+Ill}}
+* __näkyyn: __ {{näky+N+Sg+Ill}}
 
 
 __Noun singular illative än examples:__
-* __räkä:__ {{räkä+N+Sg+Nom}} (Eng. # booger)
-* __räkään:__ {{räkä+N+Sg+Ill}}
+* __räkä: __ {{räkä+N+Sg+Nom}} (Eng. # booger)
+* __räkään: __ {{räkä+N+Sg+Ill}}
 
 
 __Noun singular illative ön examples:__
-* __tönö:__ {{tönö+N+Sg+Nom}} (Eng. # shack)
-* __tönöön:__ {{tönö+N+Sg+Ill}}
+* __tönö: __ {{tönö+N+Sg+Nom}} (Eng. # shack)
+* __tönöön: __ {{tönö+N+Sg+Ill}}
 
 Bisyllabic long vowel stems have illative suffix of -seen.
 
 __Noun singular illative seen back examples:__
-* __tienoo:__ {{tienoo+N+Sg+Nom}} (Eng. # neighbourhood)
-* __tienooseen:__ {{tienoo+N+Sg+Ill}}
+* __tienoo: __ {{tienoo+N+Sg+Nom}} (Eng. # neighbourhood)
+* __tienooseen: __ {{tienoo+N+Sg+Ill}}
 
 
 __Noun singular illative seen front examples:__
-* __miljöö:__ {{miljöö+N+Sg+Nom}} (Eng. # millieu)
-* __miljööseen:__ {{miljöö+N+Sg+Ill}}
+* __miljöö: __ {{miljöö+N+Sg+Nom}} (Eng. # millieu)
+* __miljööseen: __ {{miljöö+N+Sg+Ill}}
 
 Plural genitives have the most variants. Especially, many words have more or
 less free variation between handful of choices.
 
 __Noun plural genitive iden back examples:__
-* __aavikko:__ {{aavikko+N+Sg+Nom}}
-* __aavikoiden:__ {{aavikko+N+Pl+Gen}}
+* __aavikko: __ {{aavikko+N+Sg+Nom}}
+* __aavikoiden: __ {{aavikko+N+Pl+Gen}}
 
 
 __Noun plural genitive iden front examples:__
-* __kännykkä:__ {{kännykkä+N+Sg+Nom}} (Eng. # mobile phone)
-* __kännyköiden:__ {{kännykkä+N+Pl+Gen}}
+* __kännykkä: __ {{kännykkä+N+Sg+Nom}} (Eng. # mobile phone)
+* __kännyköiden: __ {{kännykkä+N+Pl+Gen}}
 
 
 __Noun plural genitive itten back examples:__
-* __tienoitten:__ {{tienoo+N+Pl+Gen}}
+* __tienoitten: __ {{tienoo+N+Pl+Gen}}
 
 
 __Noun plural genitive itten front examples:__
-* __teitten:__ {{tie+N+Pl+Gen}}
+* __teitten: __ {{tie+N+Pl+Gen}}
 
 
 __Noun plural genitive ien back examples:__
-* __nainen:__ {{nainen+N+Sg+Nom}} (Eng. # woman)
-* __naisien:__ {{nainen+N+Pl+Gen}}
+* __nainen: __ {{nainen+N+Sg+Nom}} (Eng. # woman)
+* __naisien: __ {{nainen+N+Pl+Gen}}
 
 
 __Noun plural genitive ien back examples:__
-* __murha:__ {{murha+N+Sg+Nom}} (Eng. # murder)
-* __murhien:__ {{murha+N+Pl+Gen}}
+* __murha: __ {{murha+N+Sg+Nom}} (Eng. # murder)
+* __murhien: __ {{murha+N+Pl+Gen}}
 
 
 __Noun plural genitive jen back examples:__
-* __alivalikkojen:__ {{alivalikko+N+Pl+Gen}}
+* __alivalikkojen: __ {{alivalikko+N+Pl+Gen}}
 
 
 __Noun plural genitive jen front examples:__
-* __pyhäkkö:__ {{pyhäkkö+N+Sg+Nom}} (Eng. # sanctum)
-* __pyhäkköjen:__ {{pyhäkkö+N+Pl+Gen}}
+* __pyhäkkö: __ {{pyhäkkö+N+Sg+Nom}} (Eng. # sanctum)
+* __pyhäkköjen: __ {{pyhäkkö+N+Pl+Gen}}
 
 
 __Noun plural genitive ten back examples:__
-* __sisar:__ {{sisar+N+Sg+Nom}} (Eng. # sister)
-* __sisarten:__ {{sisar+N+Pl+Gen}}
+* __sisar: __ {{sisar+N+Sg+Nom}} (Eng. # sister)
+* __sisarten: __ {{sisar+N+Pl+Gen}}
 
 
 __Noun plural genitive ten front examples:__
-* __väännin:__ {{väännin+N+Sg+Nom}} (Eng. # turner)
-* __väänninten:__ {{väännin+N+Pl+Gen}}
+* __väännin: __ {{väännin+N+Sg+Nom}} (Eng. # turner)
+* __väänninten: __ {{väännin+N+Pl+Gen}}
 
 The -in suffix for plural genitive that goes with singular stem is always
 markedly archaic. Most commonly it appears in compound words.
 
 
 __Noun plural genitive rare in back examples:__
-* __patain:__ {{pata+N+Pl+Gen+Use/Rare}}
+* __patain: __ {{pata+N+Pl+Gen+Use/Rare}}
 
 
 __Noun plural genitive rare in front examples:__
-* __tyrmä:__ {{tyrmä+N+Sg+Nom}} (Eng. # prison)
-* __tyrmäin:__ {{tyrmä+N+Pl+Gen+Use/Rare}}
+* __tyrmä: __ {{tyrmä+N+Sg+Nom}} (Eng. # prison)
+* __tyrmäin: __ {{tyrmä+N+Pl+Gen+Use/Rare}}
 
 Plural partitive has a few variants:
 
 
 __Noun plural partitive ia examples:__
-* __koiria:__ {{koira+N+Pl+Par}}
+* __koiria: __ {{koira+N+Pl+Par}}
 
 
 __Noun plural partitive iä examples:__
-* __kärsä:__ {{kärsä+N+Sg+Nom}} (Eng. # trunk)
-* __kärsiä:__ {{kärsä+N+Pl+Par}}
+* __kärsä: __ {{kärsä+N+Sg+Nom}} (Eng. # trunk)
+* __kärsiä: __ {{kärsä+N+Pl+Par}}
 
 
 __Noun plural partitive ita examples:__
-* __tienoita:__ {{tienoo+N+Pl+Par}}
+* __tienoita: __ {{tienoo+N+Pl+Par}}
 
 
 __Noun plural partitive itä examples:__
-* __teitä:__ {{tie+N+Pl+Par}}
+* __teitä: __ {{tie+N+Pl+Par}}
 
 
 __Noun plural partitive ja examples:__
-* __lepakkoja:__ {{lepakko+N+Pl+Par}}
+* __lepakkoja: __ {{lepakko+N+Pl+Par}}
 
 
 __Noun plural partitive jä examples:__
-* __pyhäkköjä:__ {{pyhäkkö+N+Pl+Par}}
+* __pyhäkköjä: __ {{pyhäkkö+N+Pl+Par}}
 
 And plural illative has few variants:
 
 
 __Noun plural illative ihin back examples:__
-* __taloihin:__ {{talo+N+Pl+Ill}}
+* __taloihin: __ {{talo+N+Pl+Ill}}
 
 
 __Noun plural illative ihin front examples:__
-* __näkyihin:__ {{näky+N+Pl+Ill}}
+* __näkyihin: __ {{näky+N+Pl+Ill}}
 
 
 __Noun plural illative iin back examples:__
-* __koiriin:__ {{koira+N+Pl+Ill}}
+* __koiriin: __ {{koira+N+Pl+Ill}}
 
 
 __Noun plural illative iin front examples:__
-* __sieni:__ {{sieni+N+Sg+Nom}} (Eng. # mushroom)
-* __sieniin:__ {{sieni+N+Pl+Ill}}
+* __sieni: __ {{sieni+N+Sg+Nom}} (Eng. # mushroom)
+* __sieniin: __ {{sieni+N+Pl+Ill}}
 
 
 __Noun plural illative isiin back examples:__
-* __sokea:__ {{sokea+N+Sg+Nom}}
-* __sokeisiin:__ {{sokea+N+Pl+Ill}}
+* __sokea: __ {{sokea+N+Sg+Nom}}
+* __sokeisiin: __ {{sokea+N+Pl+Ill}}
 
 
 
 
 __Noun plural illative isiin front examples:__
-* __kevät:__ {{kevät+N+Sg+Nom}} (Eng. # spring)
-* __keväisiin:__ {{kevät+N+Pl+Ill}}
+* __kevät: __ {{kevät+N+Sg+Nom}} (Eng. # spring)
+* __keväisiin: __ {{kevät+N+Pl+Ill}}
 
 
 
@@ -11735,38 +11735,38 @@ cases the possessives assimilate or eat the final part of the case ending
 or stem.
 
 __Noun possessive back examples:__
-* __taloni:__ {{talo+N+Sg+Nom+PxSg1}}
-* __talosi:__ {{talo+N+Sg+Nom+PxSg2}}
-* __talonsa:__ {{talo+N+Sg+Nom+PxSg3}}
-* __talomme:__ {{talo+N+Sg+Nom+PxPl1}}
-* __talonne:__ {{talo+N+Sg+Nom+PxPl2}}
+* __taloni: __ {{talo+N+Sg+Nom+PxSg1}}
+* __talosi: __ {{talo+N+Sg+Nom+PxSg2}}
+* __talonsa: __ {{talo+N+Sg+Nom+PxSg3}}
+* __talomme: __ {{talo+N+Sg+Nom+PxPl1}}
+* __talonne: __ {{talo+N+Sg+Nom+PxPl2}}
 
 
 __Noun possessive front examples:__
-* __tönöni:__ {{tönö+N+Sg+Nom+PxSg1}}
-* __tönösi:__ {{tönö+N+Sg+Nom+PxSg2}}
-* __tönönsä:__ {{tönö+N+Sg+Nom+PxSg3}}
-* __tönömme:__ {{tönö+N+Sg+Nom+PxPl1}}
-* __tönönne:__ {{tönö+N+Sg+Nom+PxPl2}}
+* __tönöni: __ {{tönö+N+Sg+Nom+PxSg1}}
+* __tönösi: __ {{tönö+N+Sg+Nom+PxSg2}}
+* __tönönsä: __ {{tönö+N+Sg+Nom+PxSg3}}
+* __tönömme: __ {{tönö+N+Sg+Nom+PxPl1}}
+* __tönönne: __ {{tönö+N+Sg+Nom+PxPl2}}
 
 The possessive suffix of form -an, -än, attaches to some long vowel 
 stems:
 
 
 __Noun possessive an examples:__
-* __taloaan:__ {{talo+N+Sg+Par+PxPl3}}
+* __taloaan: __ {{talo+N+Sg+Par+PxPl3}}
 
 
 __Noun possessive back en examples:__
-* __tienookseen:__ {{tienoo+N+Sg+Tra+PxSg3}}
+* __tienookseen: __ {{tienoo+N+Sg+Tra+PxSg3}}
 
 
 __Noun possessive front en examples:__
-* __tiekseen:__ {{tie+N+Sg+Tra+PxSg3}}
+* __tiekseen: __ {{tie+N+Sg+Tra+PxSg3}}
 
 
 __Noun possessive än examples:__
-* __tönöään:__ {{tönö+N+Sg+Par+PxPl3}}
+* __tönöään: __ {{tönö+N+Sg+Par+PxPl3}}
 
 !!Noun clitics
 Clitics can attach to any word-form, including one that already has a clitic.
@@ -11775,11 +11775,11 @@ the end.
 
 
 __Noun clitic back examples:__
-* __talokaan:__ {{talo+N+Sg+Nom+Foc/kaan}}
+* __talokaan: __ {{talo+N+Sg+Nom+Foc/kaan}}
 
 
 __Noun clitic front examples:__
-* __tönökään:__ {{tönö+N+Sg+Nom+Foc/kaan}}
+* __tönökään: __ {{tönö+N+Sg+Nom+Foc/kaan}}
 
 
 
@@ -11804,44 +11804,44 @@ parts are nominals and inflect regularly.
 
 
 __ examples:__
-* __talojuttu:__ {{talo+N+Sg+Nom#juttu+N+Sg+Nom}}
+* __talojuttu: __ {{talo+N+Sg+Nom#juttu+N+Sg+Nom}}
 
 
 __ examples:__
-* __talonjuttu:__ {{talo+N+Sg+Gen#juttu+N+Sg+Nom}}
+* __talonjuttu: __ {{talo+N+Sg+Gen#juttu+N+Sg+Nom}}
 
 
 __ examples:__
-* __naisienjuttu:__ {{nainen+N+Pl+Gen#juttu+N+Sg+Nom}}
+* __naisienjuttu: __ {{nainen+N+Pl+Gen#juttu+N+Sg+Nom}}
 
 
 __ examples:__
-* __lepakoidenjuttu:__ {{lepakko+N+Pl+Gen#juttu+N+Sg+Nom}}
+* __lepakoidenjuttu: __ {{lepakko+N+Pl+Gen#juttu+N+Sg+Nom}}
 
 
 __ examples:__
-* __vanhempainjuttu:__ {{vanhempi+N+Pl+Gen#juttu+N+Sg+Nom}}
+* __vanhempainjuttu: __ {{vanhempi+N+Pl+Gen#juttu+N+Sg+Nom}}
 
 
 __ examples:__
-* __lepakoittenjuttu:__ {{lepakko+N+Pl+Gen#juttu+N+Sg+Nom}}
+* __lepakoittenjuttu: __ {{lepakko+N+Pl+Gen#juttu+N+Sg+Nom}}
 
 
 __ examples:__
-* __talojenjuttu:__ {{talo+N+Pl+Gen#juttu+N+Sg+Nom}}
+* __talojenjuttu: __ {{talo+N+Pl+Gen#juttu+N+Sg+Nom}}
 
 
 __ examples:__
-* __miestenjuttu:__ {{mies+N+Pl+Gen#juttu+N+Sg+Nom}}
+* __miestenjuttu: __ {{mies+N+Pl+Gen#juttu+N+Sg+Nom}}
 
 
 
 __ examples:__
-* __aakkostamisjuttu:__ {{aakkostaminen+N+Der/s#juttu+N+Sg+Nom}}
+* __aakkostamisjuttu: __ {{aakkostaminen+N+Der/s#juttu+N+Sg+Nom}}
 
 
 __ examples:__
-* __talojuttu:__ {{talo+N+Sg+Nom#juttu+N+Sg+Nom}}
+* __talojuttu: __ {{talo+N+Sg+Nom#juttu+N+Sg+Nom}}
 
 
 
@@ -12279,205 +12279,205 @@ forms which requires great amount of care in the inflection patterns.
 
 
 __Numeral nominative back examples:__
-* __kaksi:__ {{kaksi+Num+Card+Sg+Nom}} (Eng. # two)
+* __kaksi: __ {{kaksi+Num+Card+Sg+Nom}} (Eng. # two)
 
 
 __Numeral nominative front examples:__
-* __yksi:__ {{yksi+Num+Card+Sg+Nom}} (Eng. # one)
+* __yksi: __ {{yksi+Num+Card+Sg+Nom}} (Eng. # one)
 
 
 __Numeral nominative plural back examples:__
-* __kahdet:__ {{kaksi+Num+Card+Pl+Nom}}
+* __kahdet: __ {{kaksi+Num+Card+Pl+Nom}}
 
 
 __Numeral nominative plural front examples:__
-* __yhdet:__ {{yksi+Num+Card+Pl+Nom}}
+* __yhdet: __ {{yksi+Num+Card+Pl+Nom}}
 
 
 __Numeral weak singular back examples:__
-* __kahden:__ {{kaksi+Num+Card+Sg+Gen}}
-* __kahdella:__ {{kaksi+Num+Card+Sg+Ade}}
-* __kahdelta:__ {{kaksi+Num+Card+Sg+Abl}}
-* __kahdelle:__ {{kaksi+Num+Card+Sg+All}}
-* __kahdessa:__ {{kaksi+Num+Card+Sg+Ine}}
-* __kahdesta:__ {{kaksi+Num+Card+Sg+Ela}}
-* __kahdeksi:__ {{kaksi+Num+Card+Sg+Tra}}
-* __kahdetta:__ {{kaksi+Num+Card+Sg+Abe}}
+* __kahden: __ {{kaksi+Num+Card+Sg+Gen}}
+* __kahdella: __ {{kaksi+Num+Card+Sg+Ade}}
+* __kahdelta: __ {{kaksi+Num+Card+Sg+Abl}}
+* __kahdelle: __ {{kaksi+Num+Card+Sg+All}}
+* __kahdessa: __ {{kaksi+Num+Card+Sg+Ine}}
+* __kahdesta: __ {{kaksi+Num+Card+Sg+Ela}}
+* __kahdeksi: __ {{kaksi+Num+Card+Sg+Tra}}
+* __kahdetta: __ {{kaksi+Num+Card+Sg+Abe}}
 
 
 __Numeral weak singular front examples:__
-* __yhden:__ {{yksi+Num+Card+Sg+Gen}}
-* __yhdellä:__ {{yksi+Num+Card+Sg+Ade}}
-* __yhdeltä:__ {{yksi+Num+Card+Sg+Abl}}
-* __yhdelle:__ {{yksi+Num+Card+Sg+All}}
-* __yhdessä:__ {{yksi+Num+Card+Sg+Ine}}
-* __yhdestä:__ {{yksi+Num+Card+Sg+Ela}}
-* __yhdeksi:__ {{yksi+Num+Card+Sg+Tra}}
-* __yhdettä:__ {{yksi+Num+Card+Sg+Abe}}
+* __yhden: __ {{yksi+Num+Card+Sg+Gen}}
+* __yhdellä: __ {{yksi+Num+Card+Sg+Ade}}
+* __yhdeltä: __ {{yksi+Num+Card+Sg+Abl}}
+* __yhdelle: __ {{yksi+Num+Card+Sg+All}}
+* __yhdessä: __ {{yksi+Num+Card+Sg+Ine}}
+* __yhdestä: __ {{yksi+Num+Card+Sg+Ela}}
+* __yhdeksi: __ {{yksi+Num+Card+Sg+Tra}}
+* __yhdettä: __ {{yksi+Num+Card+Sg+Abe}}
 
 
 __Numeral strong singular back examples:__
-* __kahtena:__ {{kaksi+Num+Card+Sg+Ess}}
+* __kahtena: __ {{kaksi+Num+Card+Sg+Ess}}
 
 
 __Numeral strong singular front examples:__
-* __yhtenä:__ {{yksi+Num+Card+Sg+Ess}}
+* __yhtenä: __ {{yksi+Num+Card+Sg+Ess}}
 
 
 __Numeral weak plural back examples:__
-* __kaksilla:__ {{kaksi+Num+Card+Pl+Ade}}
-* __kaksilta:__ {{kaksi+Num+Card+Pl+Abl}}
-* __kaksille:__ {{kaksi+Num+Card+Pl+All}}
-* __kaksissa:__ {{kaksi+Num+Card+Pl+Ine}}
-* __kaksista:__ {{kaksi+Num+Card+Pl+Ela}}
-* __kaksiksi:__ {{kaksi+Num+Card+Pl+Tra}}
-* __kaksitta:__ {{kaksi+Num+Card+Pl+Abe}}
+* __kaksilla: __ {{kaksi+Num+Card+Pl+Ade}}
+* __kaksilta: __ {{kaksi+Num+Card+Pl+Abl}}
+* __kaksille: __ {{kaksi+Num+Card+Pl+All}}
+* __kaksissa: __ {{kaksi+Num+Card+Pl+Ine}}
+* __kaksista: __ {{kaksi+Num+Card+Pl+Ela}}
+* __kaksiksi: __ {{kaksi+Num+Card+Pl+Tra}}
+* __kaksitta: __ {{kaksi+Num+Card+Pl+Abe}}
 
 
 __Numeral weak plural front examples:__
-* __yksillä:__ {{yksi+Num+Card+Pl+Ade}}
-* __yksiltä:__ {{yksi+Num+Card+Pl+Abl}}
-* __yksille:__ {{yksi+Num+Card+Pl+All}}
-* __yksissä:__ {{yksi+Num+Card+Pl+Ine}}
-* __yksistä:__ {{yksi+Num+Card+Pl+Ela}}
-* __yksiksi:__ {{yksi+Num+Card+Pl+Tra}}
-* __yksittä:__ {{yksi+Num+Card+Pl+Abe}}
+* __yksillä: __ {{yksi+Num+Card+Pl+Ade}}
+* __yksiltä: __ {{yksi+Num+Card+Pl+Abl}}
+* __yksille: __ {{yksi+Num+Card+Pl+All}}
+* __yksissä: __ {{yksi+Num+Card+Pl+Ine}}
+* __yksistä: __ {{yksi+Num+Card+Pl+Ela}}
+* __yksiksi: __ {{yksi+Num+Card+Pl+Tra}}
+* __yksittä: __ {{yksi+Num+Card+Pl+Abe}}
 
 
 __Numeral weak plural back strong examples:__
-* __kaksina:__ {{kaksi+Num+Card+Pl+Ess}}
-* __kaksine:__ {{kaksi+Num+Card+Com}}
+* __kaksina: __ {{kaksi+Num+Card+Pl+Ess}}
+* __kaksine: __ {{kaksi+Num+Card+Com}}
 
 
 __Numeral weak plural front strong examples:__
-* __yksinä:__ {{yksi+Num+Card+Pl+Ess}}
-* __yksine:__ {{yksi+Num+Card+Com}}
+* __yksinä: __ {{yksi+Num+Card+Pl+Ess}}
+* __yksine: __ {{yksi+Num+Card+Com}}
 
 
 
 __Numeral singular partitive a examples:__
-* __kahdeksaa:__ {{kahdeksan+Num+Card+Sg+Par}} (Eng. # eight)
+* __kahdeksaa: __ {{kahdeksan+Num+Card+Sg+Par}} (Eng. # eight)
 
 
 __Numeral singular partitive ä examples:__
-* __neljää:__ {{neljä+Num+Card+Sg+Par}} (Eng. # four)
+* __neljää: __ {{neljä+Num+Card+Sg+Par}} (Eng. # four)
 
 
 __Numeral singular partitive a poss aan examples:__
-* __kolmea:__ {{kolme+Num+Card+Sg+Par}} (Eng. # three)
+* __kolmea: __ {{kolme+Num+Card+Sg+Par}} (Eng. # three)
 
 
 __Numeral singular partitive ta examples:__
-* __kuutta:__ {{kuusi+Num+Card+Sg+Par}} (Eng. # six)
+* __kuutta: __ {{kuusi+Num+Card+Sg+Par}} (Eng. # six)
 
 
 __Numeral singular partitive tä examples:__
-* __viittä:__ {{viisi+Num+Card+Sg+Par}} (Eng. # five)
+* __viittä: __ {{viisi+Num+Card+Sg+Par}} (Eng. # five)
 
 
 __Numeral singular illative an examples:__
-* __kahdeksaan:__ {{kahdeksan+Num+Card+Sg+Ill}}
+* __kahdeksaan: __ {{kahdeksan+Num+Card+Sg+Ill}}
 
 
 __Numeral singular illative en back examples:__
-* __kolmeen:__ {{kolme+Num+Card+Sg+Ill}}
+* __kolmeen: __ {{kolme+Num+Card+Sg+Ill}}
 
 
 __Numeral singular illative en front examples:__
-* __viiteen:__ {{viisi+Num+Card+Sg+Ill}}
+* __viiteen: __ {{viisi+Num+Card+Sg+Ill}}
 
 
 __Numeral singular illative in back examples:__
-* __miljardiin:__ {{miljardi+Num+Card+Sg+Ill}} (Eng. # billion)
+* __miljardiin: __ {{miljardi+Num+Card+Sg+Ill}} (Eng. # billion)
 
 
 __Numeral singular illative än examples:__
-* __neljään:__ {{neljä+Num+Card+Sg+Ill}}
+* __neljään: __ {{neljä+Num+Card+Sg+Ill}}
 
 
 __Numeral plural partitive ia examples:__
-* __kaksia:__ {{kaksi+Num+Card+Pl+Par}}
+* __kaksia: __ {{kaksi+Num+Card+Pl+Par}}
 
 
 __Numeral plural partitive iä examples:__
-* __neljiä:__ {{neljä+Num+Card+Pl+Par}}
+* __neljiä: __ {{neljä+Num+Card+Pl+Par}}
 
 
 __Numeral plural partitive ja examples:__
-* __miljardeja:__ {{miljardi+Num+Card+Pl+Par}}
+* __miljardeja: __ {{miljardi+Num+Card+Pl+Par}}
 
 
 __Numeral plural genitive ien back examples:__
-* __kaksien:__ {{kaksi+Num+Card+Pl+Gen}}
+* __kaksien: __ {{kaksi+Num+Card+Pl+Gen}}
 
 
 __Numeral plural genitive ien front examples:__
-* __yksien:__ {{yksi+Num+Card+Pl+Gen}}
+* __yksien: __ {{yksi+Num+Card+Pl+Gen}}
 
 
 __Numeral plural genitive jen back examples:__
-* __satojen:__ {{sata+Num+Card+Pl+Gen}} (Eng. # hundred)
+* __satojen: __ {{sata+Num+Card+Pl+Gen}} (Eng. # hundred)
 
 
 __Numeral plural genitive ten back examples:__
-* __kuutten:__ {{kuusi+Num+Card+Pl+Gen}}
+* __kuutten: __ {{kuusi+Num+Card+Pl+Gen}}
 
 
 __Numeral plural genitive ten front examples:__
-* __viitten:__ {{viisi+Num+Card+Pl+Gen}}
+* __viitten: __ {{viisi+Num+Card+Pl+Gen}}
 
 
 __Numeral plural genitive in back examples:__
-* __yhdeksäin:__ {{yhdeksän+Num+Card+Pl+Gen+Use/Rare}}
+* __yhdeksäin: __ {{yhdeksän+Num+Card+Pl+Gen+Use/Rare}}
 
 
 __Numeral plural genitive in front examples:__
-* __neljäin:__ {{neljä+Num+Card+Pl+Gen+Use/Rare}}
+* __neljäin: __ {{neljä+Num+Card+Pl+Gen+Use/Rare}}
 
 
 __Numeral plural illaive ihin bavk examples:__
-* __miljardeihin:__ {{miljardi+Num+Card+Pl+Ill}}
+* __miljardeihin: __ {{miljardi+Num+Card+Pl+Ill}}
 
 
 __Numeral plural illaive iin back examples:__
-* __kaksiin:__ {{kaksi+Num+Card+Pl+Ill}}
+* __kaksiin: __ {{kaksi+Num+Card+Pl+Ill}}
 
 
 __Numeral plural illaive iin front examples:__
-* __yksiin:__ {{yksi+Num+Card+Pl+Ill}}
+* __yksiin: __ {{yksi+Num+Card+Pl+Ill}}
 
 
 
 __Numeral possessive back examples:__
-* __kahteni:__ {{kaksi+Num+Card+Sg+Nom+PxSg1}}
+* __kahteni: __ {{kaksi+Num+Card+Sg+Nom+PxSg1}}
 
 
 __Numeral possessive front examples:__
-* __yhteni:__ {{yksi+Num+Card+Sg+Nom+PxSg1}}
+* __yhteni: __ {{yksi+Num+Card+Sg+Nom+PxSg1}}
 
 
 __Numeral possessive back aan examples:__
-* __kolmeaan:__ {{kolme+Num+Card+Sg+Par+PxSg3}}
+* __kolmeaan: __ {{kolme+Num+Card+Sg+Par+PxSg3}}
 
 
 __Numeral possessive back eenback examples:__
-* __kahdekseen:__ {{kaksi+Num+Card+Sg+Tra+PxSg3}}
+* __kahdekseen: __ {{kaksi+Num+Card+Sg+Tra+PxSg3}}
 
 
 __Numeral possessive back een front examples:__
-* __neljäkseen:__ {{neljä+Num+Card+Sg+Tra+PxSg3}}
+* __neljäkseen: __ {{neljä+Num+Card+Sg+Tra+PxSg3}}
 
 
 __Numeral possessive back ään examples:__
-* __viittään:__ {{viisi+Num+Card+Sg+Par+PxSg3}}
+* __viittään: __ {{viisi+Num+Card+Sg+Par+PxSg3}}
 
 
 __Numeral clitic back examples:__
-* __kaksihan:__ {{kaksi+Num+Card+Sg+Nom+Foc/han}}
+* __kaksihan: __ {{kaksi+Num+Card+Sg+Nom+Foc/han}}
 
 
 __Numeral clitic front examples:__
-* __yksihän:__ {{yksi+Num+Card+Sg+Nom+Foc/han}}
+* __yksihän: __ {{yksi+Num+Card+Sg+Nom+Foc/han}}
 
 
 
@@ -12529,15 +12529,15 @@ __Cardinal multiplicants examples:__
  The compounding parts of ordinals are the number multiplier words.
 
 __Ordinal numerals examples:__
-* __neljäs: __ {{neljäs+A+Ord+Sg+Nom}}
-* __viidennelle: __ {{viides+A+Ord+Sg+All}}
-* __tuhannetta: __ {{tuhannes+A+Ord+Sg+Par}}
+* __neljäs: __ {{neljäs+Num+Ord+Sg+Nom}}
+* __viidennelle: __ {{viides+Num+Ord+Sg+All}}
+* __tuhannetta: __ {{tuhannes+Num+Ord+Sg+Par}}
 
  The suffixes only appear after cardinal multipliers
 
 __Ordinal multiplicants examples:__
-* __viideskymmenes: __ {{viides+A+Ord+Sg+Nom#kymmenes}}
-* __neljässadastuhannes: __ {{neljäs+A+Ord+Sg+Nom#sadas+A+Ord+Sg+Nom#tuhannes}}
+* __viideskymmenes: __ {{viides+Num+Ord+Sg+Nom#kymmenes}}
+* __neljässadastuhannes: __ {{neljäs+Num+Ord+Sg+Nom#sadas+Num+Ord+Sg+Nom#tuhannes}}
 
  There is a set of numbers or corresponding expressions that work like them,
  but are not basic cardinals or ordinals:
@@ -12744,54 +12744,54 @@ __Numerals 5 moremore examples:__
 
 
 __Numerals 38 examples:__
-* __ensimmäinen: __ {{ensimmäinen+A+Ord+Sg+Nom}}
-* __ensimmäisenä: __ {{ensimmäinen+A+Ord+Sg+Ess}}
-* __ensimmäisessä: __ {{ensimmäinen+A+Ord+Sg+Ine}}
-* __ensimmäistä: __ {{ensimmäinen+A+Ord+Sg+Par}}
-* __ensimmäisten: __ {{ensimmäinen+A+Ord+Pl+Gen}}
-* __ensimmäisiä: __ {{ensimmäinen+A+Ord+Pl+Par}}
-* __ensimmäisiin: __ {{ensimmäinen+A+Ord+Pl+Ill}}
-* __ensimmäisinä: __ {{ensimmäinen+A+Ord+Pl+Ess}}
-* __ensimmäisissä: __ {{ensimmäinen+A+Ord+Pl+Ine}}
+* __ensimmäinen: __ {{ensimmäinen+Num+Ord+Sg+Nom}}
+* __ensimmäisenä: __ {{ensimmäinen+Num+Ord+Sg+Ess}}
+* __ensimmäisessä: __ {{ensimmäinen+Num+Ord+Sg+Ine}}
+* __ensimmäistä: __ {{ensimmäinen+Num+Ord+Sg+Par}}
+* __ensimmäisten: __ {{ensimmäinen+Num+Ord+Pl+Gen}}
+* __ensimmäisiä: __ {{ensimmäinen+Num+Ord+Pl+Par}}
+* __ensimmäisiin: __ {{ensimmäinen+Num+Ord+Pl+Ill}}
+* __ensimmäisinä: __ {{ensimmäinen+Num+Ord+Pl+Ess}}
+* __ensimmäisissä: __ {{ensimmäinen+Num+Ord+Pl+Ine}}
 
 
 __Numerals 38 back examples:__
-* __toinen: __ {{toinen+A+Ord+Sg+Nom}}
-* __toiseen: __ {{toinen+A+Ord+Sg+Ill}}
-* __toista: __ {{toinen+A+Ord+Sg+Par}}
-* __toisten: __ {{toinen+A+Ord+Pl+Gen}}
-* __toisien: __ {{toinen+A+Ord+Pl+Gen}}
-* __toisia: __ {{toinen+A+Ord+Pl+Par}}
-* __toisiin: __ {{toinen+A+Ord+Pl+Ill}}
-* __toisena: __ {{toinen+A+Ord+Sg+Ess}}
-* __toisessa: __ {{toinen+A+Ord+Sg+Ine}}
-* __toisissa: __ {{toinen+A+Ord+Pl+Ine}}
-* __toisina: __ {{toinen+A+Ord+Pl+Ess}}
+* __toinen: __ {{toinen+Num+Ord+Sg+Nom}}
+* __toiseen: __ {{toinen+Num+Ord+Sg+Ill}}
+* __toista: __ {{toinen+Num+Ord+Sg+Par}}
+* __toisten: __ {{toinen+Num+Ord+Pl+Gen}}
+* __toisien: __ {{toinen+Num+Ord+Pl+Gen}}
+* __toisia: __ {{toinen+Num+Ord+Pl+Par}}
+* __toisiin: __ {{toinen+Num+Ord+Pl+Ill}}
+* __toisena: __ {{toinen+Num+Ord+Sg+Ess}}
+* __toisessa: __ {{toinen+Num+Ord+Sg+Ine}}
+* __toisissa: __ {{toinen+Num+Ord+Pl+Ine}}
+* __toisina: __ {{toinen+Num+Ord+Pl+Ess}}
 
 
 __Numerals 45 examples:__
-* __kolmas: __ {{kolmas+A+Ord+Sg+Nom}}
-* __kolmantena: __ {{kolmas+A+Ord+Sg+Ess}}
-* __kolmannessa: __ {{kolmas+A+Ord+Sg+Ine}}
-* __kolmanteen: __ {{kolmas+A+Ord+Sg+Ill}}
-* __kolmatta: __ {{kolmas+A+Ord+Sg+Par}}
-* __kolmansia: __ {{kolmas+A+Ord+Pl+Par}}
-* __kolmansien: __ {{kolmas+A+Ord+Pl+Gen}}
-* __kolmansissa: __ {{kolmas+A+Ord+Pl+Ine}}
-* __kolmansina: __ {{kolmas+A+Ord+Pl+Ess}}
+* __kolmas: __ {{kolmas+Num+Ord+Sg+Nom}}
+* __kolmantena: __ {{kolmas+Num+Ord+Sg+Ess}}
+* __kolmannessa: __ {{kolmas+Num+Ord+Sg+Ine}}
+* __kolmanteen: __ {{kolmas+Num+Ord+Sg+Ill}}
+* __kolmatta: __ {{kolmas+Num+Ord+Sg+Par}}
+* __kolmansia: __ {{kolmas+Num+Ord+Pl+Par}}
+* __kolmansien: __ {{kolmas+Num+Ord+Pl+Gen}}
+* __kolmansissa: __ {{kolmas+Num+Ord+Pl+Ine}}
+* __kolmansina: __ {{kolmas+Num+Ord+Pl+Ess}}
 
 
 __Numerals 45 fron examples:__
-* __neljäs: __ {{neljäs+A+Ord+Sg+Nom}}
-* __neljänteen: __ {{neljäs+A+Ord+Sg+Ill}}
-* __neljäntenä: __ {{neljäs+A+Ord+Sg+Ess}}
-* __neljännessä: __ {{neljäs+A+Ord+Sg+Ine}}
-* __neljättä: __ {{neljäs+A+Ord+Sg+Par}}
-* __neljänsiä: __ {{neljäs+A+Ord+Pl+Par}}
-* __neljänsien: __ {{neljäs+A+Ord+Pl+Gen}}
-* __neljänsiin: __ {{neljäs+A+Ord+Pl+Ill}}
-* __neljänsissä: __ {{neljäs+A+Ord+Pl+Ine}}
-* __neljänsinä: __ {{neljäs+A+Ord+Pl+Ess}}
+* __neljäs: __ {{neljäs+Num+Ord+Sg+Nom}}
+* __neljänteen: __ {{neljäs+Num+Ord+Sg+Ill}}
+* __neljäntenä: __ {{neljäs+Num+Ord+Sg+Ess}}
+* __neljännessä: __ {{neljäs+Num+Ord+Sg+Ine}}
+* __neljättä: __ {{neljäs+Num+Ord+Sg+Par}}
+* __neljänsiä: __ {{neljäs+Num+Ord+Pl+Par}}
+* __neljänsien: __ {{neljäs+Num+Ord+Pl+Gen}}
+* __neljänsiin: __ {{neljäs+Num+Ord+Pl+Ill}}
+* __neljänsissä: __ {{neljäs+Num+Ord+Pl+Ine}}
+* __neljänsinä: __ {{neljäs+Num+Ord+Pl+Ess}}
 
 
 
@@ -32514,10 +32514,10 @@ __Particles examples:__
  Examples:
 
 __Adpositions examples:__
-* __alta:__ {{alta+Po}}
-* __alleen:__ {{alle+Po+PxSg3}}
-* __irti:__ {{irti+Pr}}
-* __irtikö:__ {{irti+Pr+Qst}}
+* __alta: __ {{alta+Po}}
+* __alleen: __ {{alle+Po+PxSg3}}
+* __irti: __ {{irti+Pr}}
+* __irtikö: __ {{irti+Pr+Qst}}
 
 !!!Prefixes
 Prefixes are bound morphs that can appear in beginning of the compounds,
@@ -32526,8 +32526,8 @@ morphemes.
 
 
 __Prefixes examples:__
-* __alabanaani:__ {{ala+N+Pref#banaani+N+Sg+Nom}} (Eng. # lower banana)
-* __erikoistyyppi:__ {{erikois+N+Pref#tyyppi+N+Sg+Nom}} (Eng. # special guy)
+* __alabanaani: __ {{ala+N+Pref#banaani+N+Sg+Nom}} (Eng. # lower banana)
+* __erikoistyyppi: __ {{erikois+N+Pref#tyyppi+N+Sg+Nom}} (Eng. # special guy)
 !!!Pronouns
 Pronouns are a closed special sub class of nouns. Morphologically pronouns
 have often defective, heteroclitic or otherwise irregular inflectional
@@ -33433,8 +33433,8 @@ forms.
 
 
 __Proper nouns examples:__
-* __Kalle:__ {{Kalle+N+Prop+Sg+Nom}}
-* __Joensuu:__ {{Joensuu+N+Prop+Sg+Nom}}
+* __Kalle: __ {{Kalle+N+Prop+Sg+Nom}}
+* __Joensuu: __ {{Joensuu+N+Prop+Sg+Nom}}
 
 
  details see [noun-stems.html].
@@ -41288,10 +41288,10 @@ XXX
 
 
 __Nouns 20 ä examples:__
-* __Hyvinkää:__ {{Hyvinkää+N+Prop+Sg+Nom}} (Eng. # Hyvinkää)
-* __Hyvinkäätä:__ {{Hyvinkää+N+Prop+Sg+Par}}
-* __Hyvinkäähän:__ {{Hyvinkää+N+Prop+Sg+Ill}}
-* __Hyvinkääseen:__ {{Hyvinkää+N+Prop+Sg+Ill}}
+* __Hyvinkää: __ {{Hyvinkää+N+Prop+Sg+Nom}} (Eng. # Hyvinkää)
+* __Hyvinkäätä: __ {{Hyvinkää+N+Prop+Sg+Par}}
+* __Hyvinkäähän: __ {{Hyvinkää+N+Prop+Sg+Ill}}
+* __Hyvinkääseen: __ {{Hyvinkää+N+Prop+Sg+Ill}}
 
 !!!Other symbols
 Punctuation characters detailed here are the characters that appear commonly
@@ -41320,7 +41320,7 @@ combinations of sentence ending punctuation marks, the most common of these
 have separate analyses.
 
 __Punctuation and symbols examples:__
-* __.:__ {{.+Punct}} (Eng. # full stop)
+* __.: __ {{.+Punct}} (Eng. # full stop)
 
 The clause level punctuation marks are used in clause boundaries. The most
 typical of these is comma. The colon and semicolon are too. The clause
@@ -41762,7 +41762,7 @@ doesn't quite have real suffixes, these are mostly compound parts.
 Examples:
 
 __Suffixes examples:__
-* __banaaniaaltoinen:__ {{banaani+N+Sg+Nom#aaltoinen+A+Sg+Nom}} (Eng. # banana waveful)
+* __banaaniaaltoinen: __ {{banaani+N+Sg+Nom#aaltoinen+A+Sg+Nom}} (Eng. # banana waveful)
 
 
  Verbs are the words that inflect in tense, mood, personal suffixes, and
@@ -43170,23 +43170,23 @@ tense in semantic sense.
 
 !!Present vowel stems
 
-* __kutoa:__ {{kutoa+V+Act+InfA+Sg+Lat}} (Eng. # knit)
-* __kudon:__ {{kutoa+V+Act+Ind+Prs+Sg1}}
+* __kutoa: __ {{kutoa+V+Act+InfA+Sg+Lat}} (Eng. # knit)
+* __kudon: __ {{kutoa+V+Act+Ind+Prs+Sg1}}
 
-* __yltää:__ {{yltää+V+Act+InfA+Sg+Lat}} (Eng. # reach)
-* __yllän:__ {{yltää+V+Act+Ind+Prs+Sg1}}
+* __yltää: __ {{yltää+V+Act+InfA+Sg+Lat}} (Eng. # reach)
+* __yllän: __ {{yltää+V+Act+Ind+Prs+Sg1}}
 
 The strong form of present indicative endings in strong stems and ma 
 infinitive, and maisilla derivation (nee infinitive).
 
 __Verb strong present back examples:__
-* __kutovat:__ {{kutoa+V+Act+Ind+Prs+Pl3}}
-* __kutomatta:__ {{kutoa+V+Act+InfMa+Sg+Abe}}
+* __kutovat: __ {{kutoa+V+Act+Ind+Prs+Pl3}}
+* __kutomatta: __ {{kutoa+V+Act+InfMa+Sg+Abe}}
 
 
 __Verb strong present front examples:__
-* __yltävät:__ {{yltää+V+Act+Ind+Prs+Pl3}}
-* __yltämättä:__ {{yltää+V+Act+InfMa+Sg+Abe}}
+* __yltävät: __ {{yltää+V+Act+Ind+Prs+Pl3}}
+* __yltämättä: __ {{yltää+V+Act+InfMa+Sg+Abe}}
 
 !Verb 3rd singular forms
 The third singular form of present tense has few allomorphs according to
@@ -43194,114 +43194,114 @@ preceding vowel context, either lengthening or zero after long vowel stem:
 
 
 __Verb 3rd singular a examples:__
-* __rakentaa:__ {{rakentaa+V+Act+Ind+Prs+Sg3}} (Eng. # builds)
+* __rakentaa: __ {{rakentaa+V+Act+Ind+Prs+Sg3}} (Eng. # builds)
 
 
 __Verb 3rd singular e back examples:__
-* __tulee:__ {{tulla+V+Act+Ind+Prs+Sg3}} (Eng. # comes)
+* __tulee: __ {{tulla+V+Act+Ind+Prs+Sg3}} (Eng. # comes)
 
 
 __Verb 3rd singular e front examples:__
-* __menee:__ {{mennä+V+Act+Ind+Prs+Sg3}} (Eng. # goes)
+* __menee: __ {{mennä+V+Act+Ind+Prs+Sg3}} (Eng. # goes)
 
 
 __Verb 3rd singular i back examples:__
-* __munii:__ {{munia+V+Act+Ind+Prs+Sg3}} (Eng. # lays eggs)
+* __munii: __ {{munia+V+Act+Ind+Prs+Sg3}} (Eng. # lays eggs)
 
 
 __Verb 3rd singular e front examples:__
-* __rämpii:__ {{rämpiä+V+Act+Ind+Prs+Sg3}} (Eng. # hikes)
+* __rämpii: __ {{rämpiä+V+Act+Ind+Prs+Sg3}} (Eng. # hikes)
 
 
 __Verb 3rd singular o back examples:__
-* __kutoo:__ {{kutoa+V+Act+Ind+Prs+Sg3}}
+* __kutoo: __ {{kutoa+V+Act+Ind+Prs+Sg3}}
 
 
 __Verb 3rd singular u back examples:__
-* __viruu:__ {{virua+V+Act+Ind+Prs+Sg3}} (Eng. # stretches)
+* __viruu: __ {{virua+V+Act+Ind+Prs+Sg3}} (Eng. # stretches)
 
 
 __Verb 3rd singular y examples:__
-* __kääntyy:__ {{kääntyä+V+Act+Ind+Prs+Sg3}} (Eng. # turns)
+* __kääntyy: __ {{kääntyä+V+Act+Ind+Prs+Sg3}} (Eng. # turns)
 
 
 __Verb 3rd singular ö examples:__
-* __säilöö:__ {{säilöä+V+Act+Ind+Prs+Sg3}} (Eng. # conserves)
+* __säilöö: __ {{säilöä+V+Act+Ind+Prs+Sg3}} (Eng. # conserves)
 
 
 __Verb 3rd singular ä examples:__
-* __vääntää:__ {{vääntää+V+Act+Ind+Prs+Sg3}} (Eng. # twist)
+* __vääntää: __ {{vääntää+V+Act+Ind+Prs+Sg3}} (Eng. # twist)
 
 !Past forms
 
 
 __Verb past back examples:__
-* __kudoin:__ {{kutoa+V+Act+Ind+Prt+Sg1}}
+* __kudoin: __ {{kutoa+V+Act+Ind+Prt+Sg1}}
 
 
 __Verb past front examples:__
-* __ylsin:__ {{yltää+V+Act+Ind+Prt+Sg1}}
+* __ylsin: __ {{yltää+V+Act+Ind+Prt+Sg1}}
 
 
 __Verb past back strong examples:__
-* __kutoivat:__ {{kutoa+V+Act+Ind+Prt+Pl3}}
+* __kutoivat: __ {{kutoa+V+Act+Ind+Prt+Pl3}}
 
 
 __Verb past front strong examples:__
-* __ylsivät:__ {{yltää+V+Act+Ind+Prt+Pl3}}
+* __ylsivät: __ {{yltää+V+Act+Ind+Prt+Pl3}}
 
 !Imperatives
 
 
 __Verb imperative back examples:__
-* __kutokaa:__ {{kutoa+V+Act+Imprt+Pl2}}
+* __kutokaa: __ {{kutoa+V+Act+Imprt+Pl2}}
 
 
 __Verb imperative front examples:__
-* __yltäkää:__ {{yltää+V+Act+Imprt+Pl2}}
+* __yltäkää: __ {{yltää+V+Act+Imprt+Pl2}}
 
 !Conditionals
 
 
 __Verb conditional back examples:__
-* __kutoisin:__ {{kutoa+V+Act+Cond+Sg1}}
+* __kutoisin: __ {{kutoa+V+Act+Cond+Sg1}}
 
 
 __Verb conditional front examples:__
-* __yltäisin:__ {{yltää+V+Act+Cond+Sg1}}
+* __yltäisin: __ {{yltää+V+Act+Cond+Sg1}}
 
 !Potentials
 
 
 __Verb potential n back examples:__
-* __kutonen:__ {{kutoa+V+Act+Pot+Sg1}}
+* __kutonen: __ {{kutoa+V+Act+Pot+Sg1}}
 
 
 __Verb potential n front examples:__
-* __yltänen:__ {{yltää+V+Act+Pot+Sg1}}
+* __yltänen: __ {{yltää+V+Act+Pot+Sg1}}
 
 __Verb potential s back examples:__
-* __juossen:__ {{juosta+V+Act+Pot+Sg1}} (Eng. # I might run)
+* __juossen: __ {{juosta+V+Act+Pot+Sg1}} (Eng. # I might run)
 
 
 __Verb potential s front examples:__
-* __päässen:__ {{päästä+V+Act+Pot+Sg1}} (Eng. # I might be able to)
+* __päässen: __ {{päästä+V+Act+Pot+Sg1}} (Eng. # I might be able to)
 
 
 __Verb potential l back examples:__
-* __tullen:__ {{tulla+V+Act+Pot+Sg1}}
+* __tullen: __ {{tulla+V+Act+Pot+Sg1}}
 
 
 __Verb potential l front examples:__
-* __kävellen:__ {{kävellä+V+Act+Pot+Sg1}} (Eng. # I might walk)
+* __kävellen: __ {{kävellä+V+Act+Pot+Sg1}} (Eng. # I might walk)
 
 
 __Verb potential r back examples:__
-* __surren:__ {{surra+V+Act+Pot+Sg1}} (Eng. # I might be sad)
+* __surren: __ {{surra+V+Act+Pot+Sg1}} (Eng. # I might be sad)
 
 
 __Verb potential r front examples:__
-* __pierren:__ {{pierrä+V+Act+Pot+Sg1}} (Eng. # I might fart)
+* __pierren: __ {{pierrä+V+Act+Pot+Sg1}} (Eng. # I might fart)
 
 !!Passive forms
 The passive forms usually contain -ta-, -tä-, -da-, -dä-, element in them.
@@ -43310,12 +43310,12 @@ classification of the verb roots.
 
 
 __Verb passive back examples:__
-* __kudottiin:__ {{kutoa+V+Pss+Ind+Prt+Pe4}}
-* __juostiin:__ {{juosta+V+Pss+Ind+Prt+Pe4}}
+* __kudottiin: __ {{kutoa+V+Pss+Ind+Prt+Pe4}}
+* __juostiin: __ {{juosta+V+Pss+Ind+Prt+Pe4}}
 
 
 __Verb passive front examples:__
-* __nähtiin:__ {{nähdä+V+Pss+Ind+Prt+Pe4}}
+* __nähtiin: __ {{nähdä+V+Pss+Ind+Prt+Pe4}}
 
 
 The form of present passive assimilates leftwards, varying between
@@ -43323,151 +43323,151 @@ The form of present passive assimilates leftwards, varying between
 
 
 __Verb passive back t examples:__
-* __juostaan:__ {{juosta+V+Pss+Ind+Prs+Pe4}}
+* __juostaan: __ {{juosta+V+Pss+Ind+Prs+Pe4}}
 
 
 __Verb passive front t examples:__
-* __ylletään:__ {{yltää+V+Pss+Ind+Prs+Pe4}}
+* __ylletään: __ {{yltää+V+Pss+Ind+Prs+Pe4}}
 
 
 __Verb passive back d examples:__
-* __kopioidaan:__ {{kopioida+V+Pss+Ind+Prs+Pe4}} (Eng. # copy-passive)
+* __kopioidaan: __ {{kopioida+V+Pss+Ind+Prs+Pe4}} (Eng. # copy-passive)
 
 
 __Verb passive front d examples:__
-* __nähdään:__ {{nähdä+V+Pss+Ind+Prs+Pe4}}
+* __nähdään: __ {{nähdä+V+Pss+Ind+Prs+Pe4}}
 
 
 __Verb passive back l examples:__
-* __vuollaan:__ {{vuolla+V+Pss+Ind+Prs+Pe4}} (Eng. # carve wood-passive)
+* __vuollaan: __ {{vuolla+V+Pss+Ind+Prs+Pe4}} (Eng. # carve wood-passive)
 
 
 __Verb passive front l examples:__
-* __niellään:__ {{niellä+V+Pss+Ind+Prs+Pe4}} (Eng. # swallow-passive)
+* __niellään: __ {{niellä+V+Pss+Ind+Prs+Pe4}} (Eng. # swallow-passive)
 
 
 __Verb passive back r examples:__
-* __surraan:__ {{surra+V+Pss+Ind+Prs+Pe4}} (Eng. # sorrow-passive)
+* __surraan: __ {{surra+V+Pss+Ind+Prs+Pe4}} (Eng. # sorrow-passive)
 
 
 __Verb passive front r examples:__
-* __pierrään:__ {{pierrä+V+Pss+Ind+Prs+Pe4}} (Eng. # fart-passive)
+* __pierrään: __ {{pierrä+V+Pss+Ind+Prs+Pe4}} (Eng. # fart-passive)
 
 
 __Verb passive back n examples:__
-* __pannaan:__ {{panna+V+Pss+Ind+Prs+Pe4}} (Eng. # put-passive)
+* __pannaan: __ {{panna+V+Pss+Ind+Prs+Pe4}} (Eng. # put-passive)
 
 
 __Verb passive front n examples:__
-* __mennään:__ {{mennä+V+Pss+Ind+Prs+Pe4}}
+* __mennään: __ {{mennä+V+Pss+Ind+Prs+Pe4}}
 
 
 !!Infinite verb forms
 
 
 __Verb a infinitive examples:__
-* __juoda:__ {{juoda+V+Act+InfA+Sg+Lat}} (Eng. # drink)
+* __juoda: __ {{juoda+V+Act+InfA+Sg+Lat}} (Eng. # drink)
 
 
 __Verb ä infinitive examples:__
-* __nähdä:__ {{nähdä+V+Act+InfA+Sg+Lat}}
+* __nähdä: __ {{nähdä+V+Act+InfA+Sg+Lat}}
 
 
 __Verb E infinitive back examples:__
-* __kutoessa:__ {{kutoa+V+Act+InfE+Sg+Ine}}
+* __kutoessa: __ {{kutoa+V+Act+InfE+Sg+Ine}}
 
 
 __Verb E infinitive front examples:__
-* __yltäessä:__ {{yltää+V+Act+InfE+Sg+Ine}}
+* __yltäessä: __ {{yltää+V+Act+InfE+Sg+Ine}}
 
 !Participles
 
 
 __Verb nut participle passive tu examples:__
-* __valkaistu:__ {{valkaista+V+Pss+PrfPrc+Sg+Nom}} (Eng. # bleached)
+* __valkaistu: __ {{valkaista+V+Pss+PrfPrc+Sg+Nom}} (Eng. # bleached)
 
 
 __Verb nut participle passive ty examples:__
-* __häpäisty:__ {{häpäistä+V+Pss+PrfPrc+Sg+Nom}} (Eng. # sacrileged)
+* __häpäisty: __ {{häpäistä+V+Pss+PrfPrc+Sg+Nom}} (Eng. # sacrileged)
 
 
 __Verb nut participle passive tu~u examples:__
-* __huudettu:__ {{huutaa+V+Pss+PrfPrc+Sg+Nom}} (Eng. # yelled)
+* __huudettu: __ {{huutaa+V+Pss+PrfPrc+Sg+Nom}} (Eng. # yelled)
 
 
 __Verb nut participle passive ty~y examples:__
-* __ylennetty:__ {{ylentää+V+Pss+PrfPrc+Sg+Nom}} (Eng. # promoted)
+* __ylennetty: __ {{ylentää+V+Pss+PrfPrc+Sg+Nom}} (Eng. # promoted)
 
 
 __Verb nut participle passive tu~du examples:__
-* __viipaloitu:__ {{viipaloida+V+Pss+PrfPrc+Sg+Nom}} (Eng. # sliced)
+* __viipaloitu: __ {{viipaloida+V+Pss+PrfPrc+Sg+Nom}} (Eng. # sliced)
 
 
 __Verb nut participle passive ty~dy examples:__
-* __yksilöity:__ {{yksilöidä+V+Pss+PrfPrc+Sg+Nom}} (Eng. # singled out)
+* __yksilöity: __ {{yksilöidä+V+Pss+PrfPrc+Sg+Nom}} (Eng. # singled out)
 
 
 __Verb nut participle passive tu~lu examples:__
-* __paranneltu:__ {{parannella+V+Pss+PrfPrc+Sg+Nom}} (Eng. # embettered)
+* __paranneltu: __ {{parannella+V+Pss+PrfPrc+Sg+Nom}} (Eng. # embettered)
 
 
 __Verb nut participle passive ty~ly examples:__
-* __vähätelty:__ {{vähätellä+V+Pss+PrfPrc+Sg+Nom}} (Eng. # belittled)
+* __vähätelty: __ {{vähätellä+V+Pss+PrfPrc+Sg+Nom}} (Eng. # belittled)
 
 
 __Verb nut participle passive tu~nu examples:__
-* __pantu:__ {{panna+V+Pss+PrfPrc+Sg+Nom}} (Eng. # put)
+* __pantu: __ {{panna+V+Pss+PrfPrc+Sg+Nom}} (Eng. # put)
 
 
 __Verb nut participle passive ty~ny examples:__
-* __menty:__ {{mennä+V+Pss+PrfPrc+Sg+Nom}} (Eng. # went)
+* __menty: __ {{mennä+V+Pss+PrfPrc+Sg+Nom}} (Eng. # went)
 
 
 __Verb nut participle passive tu~ru examples:__
-* __purtu:__ {{purra+V+Pss+PrfPrc+Sg+Nom}} (Eng. # bitten)
+* __purtu: __ {{purra+V+Pss+PrfPrc+Sg+Nom}} (Eng. # bitten)
 
 
 __Verb nut participle passive ty~ry examples:__
-* __pierty:__ {{pierrä+V+Pss+PrfPrc+Sg+Nom}}
+* __pierty: __ {{pierrä+V+Pss+PrfPrc+Sg+Nom}}
 
 !Possessives for infinite verb forms
 
 __Verb possessive front examples:__
-* __kutoakseni:__ {{kutoa+V+Act+InfA+Sg+Tra+PxSg1}}
-* __kutoessasi:__ {{kutoa+V+Act+InfE+Sg+Ine+PxSg2}}
+* __kutoakseni: __ {{kutoa+V+Act+InfA+Sg+Tra+PxSg1}}
+* __kutoessasi: __ {{kutoa+V+Act+InfE+Sg+Ine+PxSg2}}
 
 
 __Verb possessive back examples:__
-* __nähdäkseni:__ {{nähdä+V+Act+InfA+Sg+Tra+PxSg1}}
-* __nähdessäsi:__ {{nähdä+V+Act+InfE+Sg+Ine+PxSg2}}
+* __nähdäkseni: __ {{nähdä+V+Act+InfA+Sg+Tra+PxSg1}}
+* __nähdessäsi: __ {{nähdä+V+Act+InfE+Sg+Ine+PxSg2}}
 
 
 __Verb possessive back an examples:__
-* __kutomattaan:__ {{kutoa+V+Act+InfMa+Sg+Abe+PxSg3}}
+* __kutomattaan: __ {{kutoa+V+Act+InfMa+Sg+Abe+PxSg3}}
 
 
 __Verb possessive back en examples:__
-* __kutoakseen:__ {{kutoa+V+Act+InfA+Sg+Tra+PxPl3}}
+* __kutoakseen: __ {{kutoa+V+Act+InfA+Sg+Tra+PxPl3}}
 
 
 __Verb possessive front en examples:__
-* __nähdäkseen:__ {{nähdä+V+Act+InfA+Sg+Tra+PxPl3}}
+* __nähdäkseen: __ {{nähdä+V+Act+InfA+Sg+Tra+PxPl3}}
 
 
 __Verb possessive back än examples:__
-* __näkemättään:__ {{nähdä+V+Act+InfMa+Sg+Abe+PxSg3}}
+* __näkemättään: __ {{nähdä+V+Act+InfMa+Sg+Abe+PxSg3}}
 
 !Verb clitics
 
 
 __Verbs clitic back examples:__
-* __kudonhan:__ {{kutoa+V+Act+Ind+Prs+Sg1+Foc/han}}
-* __kudotko:__ {{kutoa+V+Act+Ind+Prs+Sg2+Qst}}
+* __kudonhan: __ {{kutoa+V+Act+Ind+Prs+Sg1+Foc/han}}
+* __kudotko: __ {{kutoa+V+Act+Ind+Prs+Sg2+Qst}}
 
 
 __Verbs clitic front examples:__
-* __näenhän:__ {{nähdä+V+Act+Ind+Prs+Sg1+Foc/han}}
-* __näetkö:__ {{nähdä+V+Act+Ind+Prs+Sg2+Qst}}
+* __näenhän: __ {{nähdä+V+Act+Ind+Prs+Sg1+Foc/han}}
+* __näetkö: __ {{nähdä+V+Act+Ind+Prs+Sg2+Qst}}
 
 
 
@@ -43492,15 +43492,15 @@ These derivations are treated as inflection in our system as well.
 
 
 __Verbs participle back examples:__
-* __kutomani:__ {{kutoa+V+AgPrc+Sg+Nom+PxSg1}}
-* __kutomaton:__ {{kutoa+V+NegPrc+Sg+Nom}}
-* __kutova:__ {{kutoa+V+Act+PrsPrc+Sg+Nom}}
+* __kutomani: __ {{kutoa+V+AgPrc+Sg+Nom+PxSg1}}
+* __kutomaton: __ {{kutoa+V+NegPrc+Sg+Nom}}
+* __kutova: __ {{kutoa+V+Act+PrsPrc+Sg+Nom}}
 
 
 __Verbs participle front examples:__
-* __näkemäni:__ {{nähdä+V+AgPrc+Sg+Nom+PxSg1}}
-* __näkemätön:__ {{nähdä+V+NegPrc+Sg+Nom}}
-* __näkevä:__ {{nähdä+V+Act+PrsPrc+Sg+Nom}}
+* __näkemäni: __ {{nähdä+V+AgPrc+Sg+Nom+PxSg1}}
+* __näkemätön: __ {{nähdä+V+NegPrc+Sg+Nom}}
+* __näkevä: __ {{nähdä+V+Act+PrsPrc+Sg+Nom}}
 
 
 

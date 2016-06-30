@@ -39,14 +39,14 @@ The codes:
 The part-of-speech analyses are typically the first:
 
 __Analysis examples examples:__
-* __kutoo:__ {{kutoa+V+Act+Ind+Prs+Sg3}} (Eng. # knits)
-* __talo:__ {{talo+N+Sg+Nom}} (Eng. # house)
-* __nopea:__ {{nopea+A+Sg+Nom}} (Eng. # fast)
-* __yksi:__ {{yksi+Num+Card+Sg+Nom}} (Eng. # one)
-* __nopeasti:__ {{nopeasti+Adv}} (Eng. # fast)
-* __hän:__ {{hän+Pron+Pers+Sg+Nom}} (Eng. # he)
-* __ahaa:__ {{ahaa+Pcle}} (Eng. # ah)
-* __äh:__ {{äh+Interj}} (Eng. # uh)
+* __kutoo: __ {{kutoa+V+Act+Ind+Prs+Sg3}} (Eng. # knits)
+* __talo: __ {{talo+N+Sg+Nom}} (Eng. # house)
+* __nopea: __ {{nopea+A+Sg+Nom}} (Eng. # fast)
+* __yksi: __ {{yksi+Num+Card+Sg+Nom}} (Eng. # one)
+* __nopeasti: __ {{nopeasti+Adv}} (Eng. # fast)
+* __hän: __ {{hän+Pron+Pers+Sg+Nom}} (Eng. # he)
+* __ahaa: __ {{ahaa+Pcle}} (Eng. # ah)
+* __äh: __ {{äh+Interj}} (Eng. # uh)
 
 !Nouns
 In nominal analyses, the proper nouns have additional subanalysis.
@@ -61,7 +61,7 @@ The code for proper nouns:
  * {{+Prop }}: Proper noun
 
 Proper noun tag follows noun analysis:
-* __Pekka:__ {{Pekka+N+Prop+Sg+Nom}} (Eng. # Pekka)
+* __Pekka: __ {{Pekka+N+Prop+Sg+Nom}} (Eng. # Pekka)
 
 !Pronouns
 Pronominal analyses have some semantic classes.
@@ -78,14 +78,14 @@ Codes for various semantic classes:
  * {{+Indef }}: Indefinite
 
 Semantic tags follow pronoun analyses:
-* __minä:__ {{minä+Pron+Pers+Sg+Nom}} (Eng. # I)
-* __tämä:__ {{tämä+Pron+Dem+Sg+Nom}} (Eng. # this)
-* __kuka:__ {{kuka+Pron+Interr+Sg+Nom}} (Eng. # who)
-* __joka:__ {{joka+Pron+Rel+Sg+Nom}} (Eng. # which)
-* __kaikki:__ {{kaikki+Pron+Qu+Sg+Nom}} (Eng. # every)
-* __itse:__ {{itse+Pron+Refl+Sg+Nom}} (Eng. # self)
-* __toistaan:__ {{toinen+Pron+Recipr+Sg+Par+PxSg3}} (Eng. # each other)
-* __joku:__ {{joku+Pron+Qu+Indef+Sg+Nom}} (Eng. # someone)
+* __minä: __ {{minä+Pron+Pers+Sg+Nom}} (Eng. # I)
+* __tämä: __ {{tämä+Pron+Dem+Sg+Nom}} (Eng. # this)
+* __kuka: __ {{kuka+Pron+Interr+Sg+Nom}} (Eng. # who)
+* __joka: __ {{joka+Pron+Rel+Sg+Nom}} (Eng. # which)
+* __kaikki: __ {{kaikki+Pron+Qu+Sg+Nom}} (Eng. # every)
+* __itse: __ {{itse+Pron+Refl+Sg+Nom}} (Eng. # self)
+* __toistaan: __ {{toinen+Pron+Recipr+Sg+Par+PxSg3}} (Eng. # each other)
+* __joku: __ {{joku+Pron+Qu+Indef+Sg+Nom}} (Eng. # someone)
 
  * {{+Sem/Human }}: Semantic class: Human
  * {{+Sem/Geo }}: Semantic class: Geographic
@@ -103,8 +103,8 @@ Numeral class tags:
  * {{+Card  }}: Cardinal
  * {{+Ord }}: Ordinals
 
-* __kolme:__ {{kolme+Num+Card+Sg+Nom}} (Eng. # three)
-* __kolmas:__ {{kolmas+Num+Ord+Sg+Nom}} (Eng. # third)
+* __kolme: __ {{kolme+Num+Card+Sg+Nom}} (Eng. # three)
+* __kolmas: __ {{kolmas+Num+Ord+Sg+Nom}} (Eng. # third)
 
 !Particles
 The particles are subcategorised syntax-wise into conjunctions for all words,
@@ -122,8 +122,8 @@ Conjunction syntax tags:
  * {{+CS }}: Adverbial
 
 The conjunction tags take place of part-of-speech tags for legacy reasons:
-* __ja:__ {{ja+CC}}
-* __vaikka:__ {{vaikka+CS}}
+* __ja: __ {{ja+CC}}
+* __vaikka: __ {{vaikka+CS}}
 
 !Adpositions
 In adposition anlayses, the syntactic tendencies are shown in sub-analyses;
@@ -136,7 +136,7 @@ Adposition syntax tags:
  * {{+Pr }}: Preposition
 
 Adpositions are tagged in POS position:
-* __läpi:__ {{läpi+Po}}
+* __läpi: __ {{läpi+Po}}
 
 !Bound root morphs
 The lexical items that appear as bound morphemes before head word are
@@ -160,7 +160,7 @@ to the needs of end user applications
  * {{+Punct }}: any punctuation
 
 The analyses for symbols are like POSes:
-* __.:__ {{.+Punct}} (Eng. # .)
+* __.: __ {{.+Punct}} (Eng. # .)
 
 !Nominal analyses
 The analyses of nominals show the inflection in number. Nominals inflect in
@@ -172,8 +172,8 @@ Number tags:
  * {{+Pl }}: Plural
 
 Number tags are next to POSes in nominal analyses, and in order of morphs:
-* __padassa:__ {{pata+N+Sg+Ine}} (Eng. # pot)
-* __padoissa:__ {{pata+N+Pl+Ine}}
+* __padassa: __ {{pata+N+Sg+Ine}} (Eng. # pot)
+* __padoissa: __ {{pata+N+Pl+Ine}}
 
 The analyses of nominals have case inflection marked.
 The nominals have case inflection
@@ -197,19 +197,19 @@ to mark syntactic roles
  * {{+Com }}: Comitative
 
 The case is next to number and last obligatory analysis in nominals:
-* __taloa:__ {{talo+N+Sg+Par}}
-* __talon:__ {{talo+N+Sg+Gen}}
-* __talossa:__ {{talo+N+Sg+Ine}}
-* __talosta:__ {{talo+N+Sg+Ela}}
-* __taloon:__ {{talo+N+Sg+Ill}}
-* __talolla:__ {{talo+N+Sg+Ade}}
-* __talolta:__ {{talo+N+Sg+Abl}}
-* __talolle:__ {{talo+N+Sg+All}}
-* __talona:__ {{talo+N+Sg+Ess}}
-* __taloin:__ {{talo+N+Pl+Ins}}
-* __talotta:__ {{talo+N+Sg+Abe}}
-* __taloksi:__ {{talo+N+Sg+Tra}}
-* __taloine:__ {{talo+N+Com}}
+* __taloa: __ {{talo+N+Sg+Par}}
+* __talon: __ {{talo+N+Sg+Gen}}
+* __talossa: __ {{talo+N+Sg+Ine}}
+* __talosta: __ {{talo+N+Sg+Ela}}
+* __taloon: __ {{talo+N+Sg+Ill}}
+* __talolla: __ {{talo+N+Sg+Ade}}
+* __talolta: __ {{talo+N+Sg+Abl}}
+* __talolle: __ {{talo+N+Sg+All}}
+* __talona: __ {{talo+N+Sg+Ess}}
+* __taloin: __ {{talo+N+Pl+Ins}}
+* __talotta: __ {{talo+N+Sg+Abe}}
+* __taloksi: __ {{talo+N+Sg+Tra}}
+* __taloine: __ {{talo+N+Com}}
 
 The analyses of a infinitive short form have lative ending; this is largely
 historical ([VISK § 120|http://scripta.kotus.fi/visk/sisallys.php?p=120]).
@@ -226,7 +226,7 @@ that analysis in synchronic analyses.
 
  * {{+Acc }}: Explicit accusative analysis
 
-* __hänet:__ {{hän+Pron+Pers+Sg+Acc}}
+* __hänet: __ {{hän+Pron+Pers+Sg+Acc}}
 
 Adverbs and adpositions may have some special analyses in diachronic
 analyses.
@@ -259,11 +259,11 @@ Further reading: [VISK § 95|http://scripta.kotus.fi/visk/sisallys.php?p=95]
  * {{+Pl2 }}: Second plural (you)
  * {{+Pl3 }}: Third plural (thy)
 
-* __taloni:__ {{talo+N+Sg+Nom+PxSg1}}
-* __talosi:__ {{talo+N+Sg+Nom+PxSg2}}
-* __talonsa:__ {{talo+N+Sg+Nom+PxSg3}}
-* __talomme:__ {{talo+N+Sg+Nom+PxPl1}}
-* __talonne:__ {{talo+N+Sg+Nom+PxPl2}}
+* __taloni: __ {{talo+N+Sg+Nom+PxSg1}}
+* __talosi: __ {{talo+N+Sg+Nom+PxSg2}}
+* __talonsa: __ {{talo+N+Sg+Nom+PxSg3}}
+* __talomme: __ {{talo+N+Sg+Nom+PxPl1}}
+* __talonne: __ {{talo+N+Sg+Nom+PxPl2}}
 
 !Compound forms
 In compound analyses, the derived compound form that is not a free morph
@@ -272,7 +272,7 @@ compounds.
 Further reading: [VISK § 406|http://scripta.kotus.fi/visk/sisallys.php?p=406]
 +Der/s   Compound form
 
-* __naisien:__ {{nainen+N+Der/s#ien+N+Sg+Nom}} (Eng. # female gum)
+* __naisien: __ {{nainen+N+Der/s#ien+N+Sg+Nom}} (Eng. # female gum)
 
 !Finite verbs
 All verb analyses contain voice marking. For finite verb forms active voice
@@ -283,7 +283,7 @@ Further reading: [VISK § 110|http://scripta.kotus.fi/visk/sisallys.php?p=110]
  * {{+Pss }}: Passive voice
 
 It is the first analysis of verb strings:
-* __kudot:__ {{kutoa+V+Act+Ind+Prs+Sg2}}
+* __kudot: __ {{kutoa+V+Act+Ind+Prs+Sg2}}
 
 Finite verb form analyses have a reading for tense. The tense has two values.
 For moods other than indicative the tense is not distinctive in surface form,
@@ -297,8 +297,8 @@ Further reading: [VISK § 111|http://scripta.kotus.fi/visk/sisallys.php?p=111]
  * {{+Prt }}: Past (preterite)
 
 The tense is marked in indicative forms after mood:
-* __kudon:__ {{kutoa+V+Act+Ind+Prs+Sg1}}
-* __kudoin:__ {{kutoa+V+Act+Ind+Prt+Sg1}}
+* __kudon: __ {{kutoa+V+Act+Ind+Prs+Sg1}}
+* __kudoin: __ {{kutoa+V+Act+Ind+Prt+Sg1}}
 
 Finite verb form analyses have a reading for mood. Mood has four central
 readings and few archaic and marginal. The mood is marked in analyses for
@@ -313,7 +313,7 @@ Further reading: [VISK § 115|http://scripta.kotus.fi/visk/sisallys.php?p=115]
  * {{+Eventv }}: Eventive
 
 The mood is after voice in the analysis string and in morph order:
-* __kutonen:__ {{kutoa+V+Act+Pot+Sg1}}
+* __kutonen: __ {{kutoa+V+Act+Pot+Sg1}}
 
 Finite verb form analyses have a reading for person. Personal ending of verb
 defines the actors.  The person analysis has seven possible values,
@@ -330,25 +330,25 @@ Further reading: [VISK § 106|http://scripta.kotus.fi/visk/sisallys.php?p=106]
  * {{+Pl3 }}: Third plural
 
 The person is the last required analysis for verbs, after the mood:
-* __kudon:__ {{kutoa+V+Act+Ind+Prs+Sg1}}
-* __kudot:__ {{kutoa+V+Act+Ind+Prs+Sg2}}
-* __kutoo:__ {{kutoa+V+Act+Ind+Prs+Sg3}}
-* __kudomme:__ {{kutoa+V+Act+Ind+Prs+Pl1}}
-* __kudotte:__ {{kutoa+V+Act+Ind+Prs+Pl2}}
-* __kutovat:__ {{kutoa+V+Act+Ind+Prs+Pl3}}
+* __kudon: __ {{kutoa+V+Act+Ind+Prs+Sg1}}
+* __kudot: __ {{kutoa+V+Act+Ind+Prs+Sg2}}
+* __kutoo: __ {{kutoa+V+Act+Ind+Prs+Sg3}}
+* __kudomme: __ {{kutoa+V+Act+Ind+Prs+Pl1}}
+* __kudotte: __ {{kutoa+V+Act+Ind+Prs+Pl2}}
+* __kutovat: __ {{kutoa+V+Act+Ind+Prs+Pl3}}
 
 !Negation and verbs
 The analyses of verb for the forms that require negation verb have a special
 analysis for it.
  * {{+ConNeg }}: Connegative form
 
-* __kudo:__ {{kutoa+V+Ind+Prs+ConNeg}}
+* __kudo: __ {{kutoa+V+Ind+Prs+ConNeg}}
 
 The suitable negation verbs have sub-analysis that can be matched to negated
 forms on syntactic level.
  * {{+Neg }}: Negation verb
 
-* __ei:__ {{ei+V+Neg+Act+Sg3}}
+* __ei: __ {{ei+V+Neg+Act+Sg3}}
 
 !Infinite verb forms
 Infinitive verb forms have infinitive or nominal derivation analyses.
@@ -368,11 +368,11 @@ The infinitives have limited nominal inflection.
  * {{+Der/maisilla }}: maisilla derivation (fifth)
 
 Infinitive analysis comes after voice, followed by nominal analyses:
-* __kutoa:__ {{kutoa+V+Act+InfA+Sg+Lat}}
-* __kutoessa:__ {{kutoa+V+Act+InfE+Sg+Ine}}
-* __kutomatta:__ {{kutoa+V+Act+InfMa+Sg+Abe}}
-* __kutominen:__ {{kutoa+V+Der/minen+Sg+Nom}}
-* __kutomaisillani:__ {{kutoa+V+Act+Der/maisilla+PxSg1}}
+* __kutoa: __ {{kutoa+V+Act+InfA+Sg+Lat}}
+* __kutoessa: __ {{kutoa+V+Act+InfE+Sg+Ine}}
+* __kutomatta: __ {{kutoa+V+Act+InfMa+Sg+Abe}}
+* __kutominen: __ {{kutoa+V+Der/minen+Sg+Nom}}
+* __kutomaisillani: __ {{kutoa+V+Act+Der/maisilla+PxSg1}}
 
 !Participles
 Participial verb forms have participle readings. There are 4 participle
@@ -391,10 +391,10 @@ Further reading: [VISK § 122|http://scripta.kotus.fi/visk/sisallys.php?p=122]
  * {{+AgPrc }}: Agent partiicple
 
 Participle analyses are right after voice, followed by adjectival analyses:
-* __kutonut:__ {{kutoa+V+Act+PrfPrc+Sg+Nom}}
-* __kutova:__ {{kutoa+V+Act+PrsPrc+Sg+Nom}}
-* __kutomaton:__ {{kutoa+V+NegPrc+Sg+Nom}}
-* __kutomani:__ {{kutoa+V+AgPrc+Sg+Nom+PxSg1}}
+* __kutonut: __ {{kutoa+V+Act+PrfPrc+Sg+Nom}}
+* __kutova: __ {{kutoa+V+Act+PrsPrc+Sg+Nom}}
+* __kutomaton: __ {{kutoa+V+NegPrc+Sg+Nom}}
+* __kutomani: __ {{kutoa+V+AgPrc+Sg+Nom+PxSg1}}
 
 There are number of implementations that mix up MA infinitives and Agent
 participles, and they share part of the same forms but no semantics and very
@@ -409,8 +409,8 @@ c.f. [VISK § 300|http://scripta.kotus.fi/visk/sisallys.php?p=300]
  * {{+Sup }}: Superlative
 
 The comparison analysis occupies derivation spot, after POS:
-* __nopeampi:__ {{nopea+A+Comp+Sg+Nom}}
-* __nopein:__ {{nopea+A+Sup+Sg+Nom}}
+* __nopeampi: __ {{nopea+A+Comp+Sg+Nom}}
+* __nopein: __ {{nopea+A+Sup+Sg+Nom}}
 
 !Enclitic focus particles
 All word forms can have clitics which are analysed by their orthography.
@@ -464,7 +464,7 @@ in there have been carried over.
  * {{+Use/NoHyphens }}: With hyphens
 
 Usage tags are pushed wherever appropriate:
-* __nallein:__ {{nalle+N+Pl+Gen+Use/Rare}}
+* __nallein: __ {{nalle+N+Pl+Gen+Use/Rare}}
 
 !Dialects
 The informal language use contains different Finnish than the literary
@@ -547,12 +547,12 @@ The Finnish morphological description starts from any of the parts of speech
 dictionaries, prefix or hyphenated suffix
 
 __Parts-of-speech examples:__
-* __talo:__ {{talo+N+Sg+Nom}} (Eng. # house)
-* __nopea:__ {{nopea+A+Sg+Nom}} (Eng. # fast)
-* __kutoa:__ {{kutoa+V+Act+InfA+Sg+Lat}} (Eng. # to knit)
+* __talo: __ {{talo+N+Sg+Nom}} (Eng. # house)
+* __nopea: __ {{nopea+A+Sg+Nom}} (Eng. # fast)
+* __kutoa: __ {{kutoa+V+Act+InfA+Sg+Lat}} (Eng. # to knit)
 
 The compound part sub-set {{NOMINAL}}
 The nominal forms can be used as non-initial parts of typical compounds
 
 __Nominals examples:__
-* __talonjuttu:__ {{talo+N+Sg+Gen#juttu+N+Sg+Nom}} (Eng. # house thing)
+* __talonjuttu: __ {{talo+N+Sg+Gen#juttu+N+Sg+Nom}} (Eng. # house thing)
