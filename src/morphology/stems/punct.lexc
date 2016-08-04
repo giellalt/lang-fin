@@ -190,7 +190,7 @@ m€+ACR:m€  SYM_€  ;
 M€+ACR:M€  SYM_€  ;
 %:-P+Punct:%:-P  SYM_.  ;
 %:P+Punct:%:P  SYM_.  ;
---+Punct+Dash:--  PUNCT_PISTE  ;
+!--+Punct+Dash:--  PUNCT_PISTE  ; going for +Punct, to be looked at
 -+Punct+Dash:-  PUNCT_PISTE  ;
 ˗+Punct+Dash:˗  PUNCT_PISTE  ;
 –+Punct+Dash:–  PUNCT_PISTE  ;
