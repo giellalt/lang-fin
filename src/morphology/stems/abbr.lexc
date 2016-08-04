@@ -5,6 +5,7 @@
 !!  tokenisation in real-world applications
 
 LEXICON ABBREVIATION
+TRAB ; ! for abbreviations that do not impose sentence boundary
 !!€gt-norm:  Abbreviations
 !!€  eaa.: eaa.+N
 !!€  esim.: esim.+N
@@ -12,6 +13,7 @@ LEXICON ABBREVIATION
 !!  Some ar less classified
 !!€ ab: ab+ABBR
 
+LEXICON TRAB 
 A%0+N:A%0  #  ; !!= * {{@CODE@}}: Paper size
 A1+N:A1  #  ; !!= * {{@CODE@}}: Paper size
 A2+N:A2  #  ; !!= * {{@CODE@}}: Paper size
