@@ -2667,6 +2667,7 @@ REMOVE Der_inen + Par ; # IF (0 (A Pos Sg Par)) (0 N + Ela) (NEGATE 1 Par) ;
 # Adverbs
 # ------- 
 
+REMOVE (Adv Superl) IF (0 Adv) ; # lähinnä
 SELECT Adv (-1C Adv OR Pcle) (NEGATE 0 Adp) (NEGATE 1 A) ; # NIINAdv HYVIN(Adv_AD-A) ;
 REMOVE Adv (0 AIVAN-IHAN) (NEGATE 1 V OR Conj OR Adv) ;
 
@@ -3025,6 +3026,8 @@ REMOVE ("toi") + Pron + Dem (1 Pron) ;
 #REMOVE Prop (0 <LG>) (-2C <LG>) (-1 Conj) (NEGATE -1 BOS) ; # SUOMEA JA RUOTSIA
 # LG-NAMES CANNOT BE CAPITALIZED S-INTERNAllY
 
+SELECT ("Alankomaat") + Prop (0 Pl) ;
+SELECT ("Yhdysvallat") + Prop (0 Pl) ; 
 SELECT ("Kokoomus") + Prop (NEGATE 0 CAP_NOCAP) ;
 REMOVE ("Aino") + Prop + Sg + Par ;
 IFF ("Johan") + Prop (1 Prop) (NEGATE 0 CAP_NOCAP) ; # JOHAN BERGenSTRåHLE
