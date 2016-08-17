@@ -1434,80 +1434,80 @@ SUBSTITUTE (?) (A Ord Sg Gen Roman ?-) (?) (0 ("[IVXLCDM-]+:n"r)) ;
 SUBSTITUTE (?) (N Sg Gen Pref- ?-) (?) (0 ("(.*)n-"r)) ; # maybe first part is Gen
 SUBSTITUTE (?) (N Sg Nom Pref- ?-) (?) (0 ("(.*)-"r)) ; # usually the first part is Nom
 
-ADD UP (*) IF (0 ("<[A-ZÄÖÜÕÆØ¢ı¥ŠŽ](.*)>"r)) (NEGATE 0 UP) ;
-
-SUBSTITUTE (? UP) (N Prop Sg All ?- UP) (? UP) + ("(.*)(lle|llekin)"r);
-SUBSTITUTE (? UP) (N Prop Sg Ade ?- UP) (? UP) + ("(.*)(lla|llä|llakin|lläkin)"r);
-SUBSTITUTE (? UP) (N Prop Sg Abl ?- UP) (? UP) + ("(.*)(lta|ltä|ltakin|ltäkin)"r);
-SUBSTITUTE (? UP) (N Prop Sg Ill ?- UP) (? UP) + ("(.*)(aan|ään|iin|hin|yyn|een|oon|öön|aankin|äänkin|iinkin|hinkin|yynkin|eenkin|oonkin|öönkin)"r);
-SUBSTITUTE (? UP) (N Prop Sg Ine ?- UP) (? UP) + ("(.*)(ssa|ssä|ssakin|ssäkin)"r);
-SUBSTITUTE (? UP) (N Prop Sg Ela ?- UP) (? UP) + ("(.*)(sta|stä|stakin|stäkin)"r);
-SUBSTITUTE (? UP) (N Prop Sg Ess ?- UP) (? UP) + ("(.*)(na|nä|nakin|näkin)"r);
-SUBSTITUTE (? UP) (N Prop Sg Tra ?- UP) (? UP) + ("(.*)(ksi|ksikin)"r);
-SUBSTITUTE (? UP) (N Prop Sg Abe ?- UP) (? UP) + ("(.*)(tta|ttä|ttakin|ttäkin)"r);
-SUBSTITUTE (? UP) (N Prop Sg Par ?- UP) (? UP) + ("(.*)(aa|ää|oa|ua|ea|eä|ia|iä|yä|ta|tä|aakin|ääkin|oakin|uakin|eakin|eäkin|iakin|iäkin|yäkin|takin|täkin)"r);
-SUBSTITUTE (? UP) (N Prop Sg Gen ?- UP) (? UP) + ("(.*):n"r);
-SUBSTITUTE (? UP) (N Prop Sg Gen ?- UP) (? UP) + ("(.*)n"r)(1 GenLeft);
-
-COPY (N Prop Sg Nom ?- UP) TARGET (N Prop Sg Par ?- UP) ;
-
-SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (1 Ind + Sg3 OR Ind + Sg1);
-SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (-1 Ind + Sg3 OR Ind + Sg1)(NEGATE -2 NSgNom);
-SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (-1 Prop + Nom)(-2 Ind + Sg3 OR Ind + Sg1)(NEGATE -2 NSgNom);
-SUBSTITUTE (? UP) (N Prop Pl Nom ?- UP) (? UP) (1 Ind + Pl3)(NEGATE -1 CC LINK -1 Nom);
-SUBSTITUTE (? UP) (N Prop Pl Nom ?- UP) (? UP) (-1 Ind + Pl3)(NEGATE -2 NPlNom)(NEGATE 1 CC LINK 1 Nom);
-SUBSTITUTE (? UP) (N Prop Pl Nom ?- UP) (? UP) (-1 Prop + Nom)(-2 Ind + Pl3)(NEGATE -2 NPlNom)(NEGATE 1 CC LINK 1 Nom);
-SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (1 UP)(NEGATE -1 OMS);
-
-SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (NEGATE -1 Prop + Nom)(NEGATE *-1 NSgNom OR Ind + Sg3 OR Ind + Sg1 BARRIER S-BOUNDARY)(NEGATE *1 NSgNom OR Ind + Sg3 OR Ind + Sg1 BARRIER S-BOUNDARY);
-SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (-1 Prop + Nom)(NEGATE *-2 NSgNom OR Ind + Sg3 OR Ind + Sg1 BARRIER S-BOUNDARY)(NEGATE *1 NSgNom OR Ind + Sg3 OR Ind + Sg1 BARRIER S-BOUNDARY);
-SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (NEGATE -1 Prop + Nom)(*0 Ind + Sg3 OR Ind + Sg1 BARRIER S-BOUNDARY)(NEGATE *-1 NSgNom BARRIER S-BOUNDARY)(NEGATE *1 NSgNom BARRIER S-BOUNDARY);
-SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (-1 Prop + Nom)(*0 Ind + Sg3 OR Ind + Sg1 BARRIER S-BOUNDARY)(NEGATE *-2 NSgNom BARRIER S-BOUNDARY)(NEGATE *1 NSgNom BARRIER S-BOUNDARY);
-SUBSTITUTE (? UP) (N Prop Pl Nom ?- UP) (? UP) (NEGATE -1 Prop + Nom)(*0 Ind + Pl3 BARRIER S-BOUNDARY)(NEGATE *-1 NPlNom BARRIER S-BOUNDARY)(NEGATE *1 NPlNom BARRIER S-BOUNDARY);
-SUBSTITUTE (? UP) (N Prop Pl Nom ?- UP) (? UP) (-1 Prop + Nom)(*0 Ind + Pl3 BARRIER S-BOUNDARY)(NEGATE *-2 NPlNom BARRIER S-BOUNDARY)(NEGATE *1 NPlNom BARRIER S-BOUNDARY);
-
-SUBSTITUTE (? UP) (N Prop Sg All ?- UP) (? UP) (1 CCC)(2 UP + All)(NEGATE -1 OMS);
-SUBSTITUTE (? UP) (N Prop Sg Ade ?- UP) (? UP) (1 CCC)(2 UP + Ade)(NEGATE -1 OMS);
-SUBSTITUTE (? UP) (N Prop Sg Abl ?- UP) (? UP) (1 CCC)(2 UP + Abl)(NEGATE -1 OMS);
-SUBSTITUTE (? UP) (N Prop Sg Ill ?- UP) (? UP) (1 CCC)(2 UP + Ill)(NEGATE -1 OMS);
-SUBSTITUTE (? UP) (N Prop Sg Ine ?- UP) (? UP) (1 CCC)(2 UP + Ine)(NEGATE -1 OMS);
-SUBSTITUTE (? UP) (N Prop Sg Ela ?- UP) (? UP) (1 CCC)(2 UP + Ela)(NEGATE -1 OMS);
-SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (1 CCC)(2 UP + Nom - Pref-)(NEGATE -1 OMS);
-SUBSTITUTE (? UP) (N Prop Sg Par ?- UP) (? UP) (1 CCC)(2 UP + Par)(NEGATE -1 OMS);
-SUBSTITUTE (? UP) (N Prop Sg Gen ?- UP) (? UP) (1 CCC)(2 UP + Gen)(NEGATE -1 OMS);
-SUBSTITUTE (? UP) (N Prop Sg Ess ?- UP) (? UP) (1 CCC)(2 UP + Ess)(NEGATE -1 OMS);
-SUBSTITUTE (? UP) (N Prop Sg Tra ?- UP) (? UP) (1 CCC)(2 UP + Tra)(NEGATE -1 OMS);
-SUBSTITUTE (? UP) (N Prop Sg Abe ?- UP) (? UP) (1 CCC)(2 UP + Abe)(NEGATE -1 OMS);
-SUBSTITUTE (? UP) (N Prop Sg All ?- UP) (? UP) (-1 CCC)(-2 UP + All);
-SUBSTITUTE (? UP) (N Prop Sg Ade ?- UP) (? UP) (-1 CCC)(-2 UP + Ade);
-SUBSTITUTE (? UP) (N Prop Sg Abl ?- UP) (? UP) (-1 CCC)(-2 UP + Abl);
-SUBSTITUTE (? UP) (N Prop Sg Ill ?- UP) (? UP) (-1 CCC)(-2 UP + Ill);
-SUBSTITUTE (? UP) (N Prop Sg Ine ?- UP) (? UP) (-1 CCC)(-2 UP + Ine);
-SUBSTITUTE (? UP) (N Prop Sg Ela ?- UP) (? UP) (-1 CCC)(-2 UP + Ela);
-SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (-1 CCC)(-2 UP + Nom - Pref-);
-SUBSTITUTE (? UP) (N Prop Sg Par ?- UP) (? UP) (-1 CCC)(-2 UP + Par);
-SUBSTITUTE (? UP) (N Prop Sg Gen ?- UP) (? UP) (-1 CCC)(-2 UP + Gen);
-SUBSTITUTE (? UP) (N Prop Sg Ess ?- UP) (? UP) (-1 CCC)(-2 UP + Ess);
-SUBSTITUTE (? UP) (N Prop Sg Tra ?- UP) (? UP) (-1 CCC)(-2 UP + Tra);
-SUBSTITUTE (? UP) (N Prop Sg Abe ?- UP) (? UP) (-1 CCC)(-2 UP + Abe);
-SUBSTITUTE (? UP) (N Prop Sg All ?- UP) (? UP) (-1C All);
-SUBSTITUTE (? UP) (N Prop Sg Ade ?- UP) (? UP) (-1C Ade);
-SUBSTITUTE (? UP) (N Prop Sg Abl ?- UP) (? UP) (-1C Abl);
-SUBSTITUTE (? UP) (N Prop Sg Ill ?- UP) (? UP) (-1C Ill);
-SUBSTITUTE (? UP) (N Prop Sg Ine ?- UP) (? UP) (-1C Ine);
-SUBSTITUTE (? UP) (N Prop Sg Ela ?- UP) (? UP) (-1C Ela);
-SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (-1C Nom);
-SUBSTITUTE (? UP) (N Prop Sg Par ?- UP) (? UP) (-1C Par);
-SUBSTITUTE (? UP) (N Prop Sg Gen ?- UP) (? UP) (-1C Gen);
-SUBSTITUTE (? UP) (N Prop Sg Ess ?- UP) (? UP) (-1C Ess);
-SUBSTITUTE (? UP) (N Prop Sg Tra ?- UP) (? UP) (-1C Tra);
-SUBSTITUTE (? UP) (N Prop Sg Abe ?- UP) (? UP) (-1C Abe);
-
-SUBSTITUTE (? UP) (N Prop Sg ?- UP) (? UP) (1 CCC)(2 UP)(NEGATE -1 OMS);
-SUBSTITUTE (? UP) (N Prop Sg ?- UP) (? UP) (-1 CCC)(-2 Prop)(NEGATE -1 OMS);
-SUBSTITUTE (? UP) (N Prop Sg ?- UP) (? UP) (NEGATE -1 OMS);
-
-SUBSTITUTE (?) (Adv ?-) ("(.*)sti"r) ;
+#UP# ADD UP (*) IF (0 ("<[A-ZÄÖÜÕÆØ¢ı¥ŠŽ](.*)>"r)) (NEGATE 0 UP) ;
+#UP# 
+#UP# SUBSTITUTE (? UP) (N Prop Sg All ?- UP) (? UP) + ("(.*)(lle|llekin)"r);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Ade ?- UP) (? UP) + ("(.*)(lla|llä|llakin|lläkin)"r);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Abl ?- UP) (? UP) + ("(.*)(lta|ltä|ltakin|ltäkin)"r);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Ill ?- UP) (? UP) + ("(.*)(aan|ään|iin|hin|yyn|een|oon|öön|aankin|äänkin|iinkin|hinkin|yynkin|eenkin|oonkin|öönkin)"r);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Ine ?- UP) (? UP) + ("(.*)(ssa|ssä|ssakin|ssäkin)"r);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Ela ?- UP) (? UP) + ("(.*)(sta|stä|stakin|stäkin)"r);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Ess ?- UP) (? UP) + ("(.*)(na|nä|nakin|näkin)"r);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Tra ?- UP) (? UP) + ("(.*)(ksi|ksikin)"r);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Abe ?- UP) (? UP) + ("(.*)(tta|ttä|ttakin|ttäkin)"r);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Par ?- UP) (? UP) + ("(.*)(aa|ää|oa|ua|ea|eä|ia|iä|yä|ta|tä|aakin|ääkin|oakin|uakin|eakin|eäkin|iakin|iäkin|yäkin|takin|täkin)"r);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Gen ?- UP) (? UP) + ("(.*):n"r);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Gen ?- UP) (? UP) + ("(.*)n"r)(1 GenLeft);
+#UP# 
+#UP# COPY (N Prop Sg Nom ?- UP) TARGET (N Prop Sg Par ?- UP) ;
+#UP# 
+#UP# SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (1 Ind + Sg3 OR Ind + Sg1);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (-1 Ind + Sg3 OR Ind + Sg1)(NEGATE -2 NSgNom);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (-1 Prop + Nom)(-2 Ind + Sg3 OR Ind + Sg1)(NEGATE -2 NSgNom);
+#UP# SUBSTITUTE (? UP) (N Prop Pl Nom ?- UP) (? UP) (1 Ind + Pl3)(NEGATE -1 CC LINK -1 Nom);
+#UP# SUBSTITUTE (? UP) (N Prop Pl Nom ?- UP) (? UP) (-1 Ind + Pl3)(NEGATE -2 NPlNom)(NEGATE 1 CC LINK 1 Nom);
+#UP# SUBSTITUTE (? UP) (N Prop Pl Nom ?- UP) (? UP) (-1 Prop + Nom)(-2 Ind + Pl3)(NEGATE -2 NPlNom)(NEGATE 1 CC LINK 1 Nom);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (1 UP)(NEGATE -1 OMS);
+#UP# 
+#UP# SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (NEGATE -1 Prop + Nom)(NEGATE *-1 NSgNom OR Ind + Sg3 OR Ind + Sg1 BARRIER S-BOUNDARY)(NEGATE *1 NSgNom OR Ind + Sg3 OR Ind + Sg1 BARRIER S-BOUNDARY);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (-1 Prop + Nom)(NEGATE *-2 NSgNom OR Ind + Sg3 OR Ind + Sg1 BARRIER S-BOUNDARY)(NEGATE *1 NSgNom OR Ind + Sg3 OR Ind + Sg1 BARRIER S-BOUNDARY);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (NEGATE -1 Prop + Nom)(*0 Ind + Sg3 OR Ind + Sg1 BARRIER S-BOUNDARY)(NEGATE *-1 NSgNom BARRIER S-BOUNDARY)(NEGATE *1 NSgNom BARRIER S-BOUNDARY);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (-1 Prop + Nom)(*0 Ind + Sg3 OR Ind + Sg1 BARRIER S-BOUNDARY)(NEGATE *-2 NSgNom BARRIER S-BOUNDARY)(NEGATE *1 NSgNom BARRIER S-BOUNDARY);
+#UP# SUBSTITUTE (? UP) (N Prop Pl Nom ?- UP) (? UP) (NEGATE -1 Prop + Nom)(*0 Ind + Pl3 BARRIER S-BOUNDARY)(NEGATE *-1 NPlNom BARRIER S-BOUNDARY)(NEGATE *1 NPlNom BARRIER S-BOUNDARY);
+#UP# SUBSTITUTE (? UP) (N Prop Pl Nom ?- UP) (? UP) (-1 Prop + Nom)(*0 Ind + Pl3 BARRIER S-BOUNDARY)(NEGATE *-2 NPlNom BARRIER S-BOUNDARY)(NEGATE *1 NPlNom BARRIER S-BOUNDARY);
+#UP# 
+#UP# SUBSTITUTE (? UP) (N Prop Sg All ?- UP) (? UP) (1 CCC)(2 UP + All)(NEGATE -1 OMS);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Ade ?- UP) (? UP) (1 CCC)(2 UP + Ade)(NEGATE -1 OMS);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Abl ?- UP) (? UP) (1 CCC)(2 UP + Abl)(NEGATE -1 OMS);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Ill ?- UP) (? UP) (1 CCC)(2 UP + Ill)(NEGATE -1 OMS);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Ine ?- UP) (? UP) (1 CCC)(2 UP + Ine)(NEGATE -1 OMS);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Ela ?- UP) (? UP) (1 CCC)(2 UP + Ela)(NEGATE -1 OMS);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (1 CCC)(2 UP + Nom - Pref-)(NEGATE -1 OMS);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Par ?- UP) (? UP) (1 CCC)(2 UP + Par)(NEGATE -1 OMS);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Gen ?- UP) (? UP) (1 CCC)(2 UP + Gen)(NEGATE -1 OMS);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Ess ?- UP) (? UP) (1 CCC)(2 UP + Ess)(NEGATE -1 OMS);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Tra ?- UP) (? UP) (1 CCC)(2 UP + Tra)(NEGATE -1 OMS);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Abe ?- UP) (? UP) (1 CCC)(2 UP + Abe)(NEGATE -1 OMS);
+#UP# SUBSTITUTE (? UP) (N Prop Sg All ?- UP) (? UP) (-1 CCC)(-2 UP + All);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Ade ?- UP) (? UP) (-1 CCC)(-2 UP + Ade);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Abl ?- UP) (? UP) (-1 CCC)(-2 UP + Abl);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Ill ?- UP) (? UP) (-1 CCC)(-2 UP + Ill);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Ine ?- UP) (? UP) (-1 CCC)(-2 UP + Ine);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Ela ?- UP) (? UP) (-1 CCC)(-2 UP + Ela);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (-1 CCC)(-2 UP + Nom - Pref-);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Par ?- UP) (? UP) (-1 CCC)(-2 UP + Par);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Gen ?- UP) (? UP) (-1 CCC)(-2 UP + Gen);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Ess ?- UP) (? UP) (-1 CCC)(-2 UP + Ess);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Tra ?- UP) (? UP) (-1 CCC)(-2 UP + Tra);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Abe ?- UP) (? UP) (-1 CCC)(-2 UP + Abe);
+#UP# SUBSTITUTE (? UP) (N Prop Sg All ?- UP) (? UP) (-1C All);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Ade ?- UP) (? UP) (-1C Ade);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Abl ?- UP) (? UP) (-1C Abl);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Ill ?- UP) (? UP) (-1C Ill);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Ine ?- UP) (? UP) (-1C Ine);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Ela ?- UP) (? UP) (-1C Ela);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (-1C Nom);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Par ?- UP) (? UP) (-1C Par);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Gen ?- UP) (? UP) (-1C Gen);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Ess ?- UP) (? UP) (-1C Ess);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Tra ?- UP) (? UP) (-1C Tra);
+#UP# SUBSTITUTE (? UP) (N Prop Sg Abe ?- UP) (? UP) (-1C Abe);
+#UP# 
+#UP# SUBSTITUTE (? UP) (N Prop Sg ?- UP) (? UP) (1 CCC)(2 UP)(NEGATE -1 OMS);
+#UP# SUBSTITUTE (? UP) (N Prop Sg ?- UP) (? UP) (-1 CCC)(-2 Prop)(NEGATE -1 OMS);
+#UP# SUBSTITUTE (? UP) (N Prop Sg ?- UP) (? UP) (NEGATE -1 OMS);
+#UP# 
+#UP# SUBSTITUTE (?) (Adv ?-) ("(.*)sti"r) ;
 
 ADD Cmpnd (*) IF (0/1 W0) (NEGATE 0 Cmpnd) ; # have to get it from subreading 
 
