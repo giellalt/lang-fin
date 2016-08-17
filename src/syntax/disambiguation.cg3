@@ -739,7 +739,8 @@ LIST VOISIKO = "<voisiko>"i ;
 # Things to sort
 # --------------
 
-LIST UP = UP ; # capitalized, don't have this tag!
+LIST UP = "<\\p{Lu}(.*)>"r ;
+#LIST UP = UP ; # capitalized, don't have this tag!
 LIST Digit = Digit ;
 LIST Roman = Roman ;
 
@@ -1383,7 +1384,6 @@ IFF ("osalta") + Adv + POSS_SUFF (NEGATE -1 Abl) ;
 
 # ++ TP ++ 
 
-# To be removed.	
 
 SUBSTITUTE (Nom\#toista) (Nom \#toista clash) (Nom\#toista) ;
 SUBSTITUTE (Nom\#kymmentä) (Nom \#kymmentä clash) (Nom\#kymmentä) ;
@@ -1427,15 +1427,16 @@ SUBSTITUTE (?) (Num Card Sg Nom ?-) (?) (0 ("[0-9%.,:= +/]+[A-Z]*–[0-9%.,:= +/
 ADD Digit Num - Digit (0 ("[0-9%.,:= +/]+[A-Z]*"r)) ;
 ADD Digit Num - Digit (0 ("[0-9%.,:= +/]+[A-Z]*-[0-9%.,:= +/]*[A-Z]*"r)) ;
 
-SUBSTITUTE (?) (A Ord Sg Nom Roman ?-) (?) (0 ("[IVXLCDM-]+"r)) ; # ACR?
-SUBSTITUTE (?) (A Ord Sg Nom Roman ?-) (?) (0 ("[IVXLCDM]*–[IVXLCDM]+"r)) ; 
-SUBSTITUTE (?) (A Ord Sg Gen Roman ?-) (?) (0 ("[IVXLCDM-]+:n"r)) ;
+SUBSTITUTE (?) (Num Ord Sg Nom Roman ?-) (?) (0 ("[IVXLCDM-]+"r)) ; # ACR?
+SUBSTITUTE (?) (Num Ord Sg Nom Roman ?-) (?) (0 ("[IVXLCDM]*–[IVXLCDM]+"r)) ; 
+SUBSTITUTE (?) (Num Ord Sg Gen Roman ?-) (?) (0 ("[IVXLCDM-]+:n"r)) ;
 
 SUBSTITUTE (?) (N Sg Gen Pref- ?-) (?) (0 ("(.*)n-"r)) ; # maybe first part is Gen
 SUBSTITUTE (?) (N Sg Nom Pref- ?-) (?) (0 ("(.*)-"r)) ; # usually the first part is Nom
 
+#ADD UP (*) IF (0 ("<[A-ZÄÖÜÕÆØ¢ı¥ŠŽ](.*)>"r)) (NEGATE 0 UP) ; defined UP reg ex
 #UP# ADD UP (*) IF (0 ("<[A-ZÄÖÜÕÆØ¢ı¥ŠŽ](.*)>"r)) (NEGATE 0 UP) ;
-#UP# 
+#UP guesser# 
 #UP# SUBSTITUTE (? UP) (N Prop Sg All ?- UP) (? UP) + ("(.*)(lle|llekin)"r);
 #UP# SUBSTITUTE (? UP) (N Prop Sg Ade ?- UP) (? UP) + ("(.*)(lla|llä|llakin|lläkin)"r);
 #UP# SUBSTITUTE (? UP) (N Prop Sg Abl ?- UP) (? UP) + ("(.*)(lta|ltä|ltakin|ltäkin)"r);
@@ -1802,9 +1803,7 @@ REMOVE Pcle IF (0 CC - Pcle) ; # ja, jos, tai, tahi, taikka, vaan, kuin
 
 SELECT CS (*-1 FINV BARRIER S-BOUNDARY)(*1 FINV BARRIER S-BOUNDARY); # kuin kunnes
 
-SELECT ("mökki")(0 ("mökä" N Pl Ade));	
 SELECT ("mutta") + CC OR CS (-1 OMS OR ("(")); 
-SELECT ("mutta") (0 ("mä" Pron Sg Abe));
 SELECT CS (-1 COMMA_SCOL OR >>>); # koska(kuna) kun jos
 SELECT CS (-1 CC OR CS)(-2 COMMA); # 
 
@@ -2042,9 +2041,6 @@ SELECT Pron + Dem (-1 FINV); # add conditions
 SELECT Pron + Dem (-1 Adv OR Pcle)(-2 FINV); # add conditions
 SELECT Pron + Dem (1 FINV OR PrfPrc); # add conditions
 
-SELECT:DemAllcases Pron + Dem (0 $$ALLCASES)(1 $$ALLCASES) ;
-REMOVE:NotDem Pron + Dem (0 Pron);
-	
 SELECT ("<tuo>"i) + Pron + Nom (1C Nom)(NEGATE *-1 Imprt + Sg2 OR Act + Ind + Prs + Sg3);
 REMOVE Imprt (*1 ("?") BARRIER QUO OR (")")); 
 # very hackish (tuo)
@@ -2536,7 +2532,6 @@ REMOVE Prop (0 CC OR CS OR Pr OR Adv OR Pron)(-1 BOS OR QUO) ;
 SELECT A + Gen IF (0C A OR N) (1 COMMA LINK 1C A + Gen) ;
   # Jaakko juoksee nopeasti ison, vanhan puun luokse ...
 
-SELECT Sem_Human (0 ("Jaakko"));
 SELECT ("aika") + A (1C N) (1 Nom_Gen_Par) ;
 SELECT ("arvoinen") + A (-1 Gen) ;
 IFF ("enempi") + ASgGen (1 KUIN) ; #   (1C Gen) (1 Sg) (1 N)  XXXX
@@ -2734,7 +2729,7 @@ REMOVE ("sama") + Pron + Pl + Ins IF (0 $$ALLCASES) (NEGATE 1 $$ALLCASES) (0 Adv
 # -------
 
 REMOVE ("toinen") + Ord + Pl (NEGATE 1 Pl) ;
-SELECT ("toinen") + A + Ord (1 N) ;
+SELECT ("toinen") + Num + Ord (1 N) ;
 # TOISIllE, TOISIAAN ETC.
 
 REMOVE ("yksi") + Num + Pl + Ins IF (0 $$ALLCASES) (NEGATE 1 $$ALLCASES) (0 Adv) (NEGATE 1 Conj);
@@ -2810,8 +2805,6 @@ SELECT ("tilanne") + N ;
 # A BIT RISKY
 SELECT ("toimi") + NPlPar (-1 Gen) ; # TUTKIJAN TOIMIA
 SELECT ("toiminta" N Sg Gen POSS_SUFF ) (*-1 VFIN LINK NOT *1 CLB?) (NEGATE -1 CLB?) ;
-SELECT ("tori") + N IF (0 ("tora" N Pl Ade));
-SELECT ("tukki") + N + Pl ;
 SELECT ("tukki") + N + Pl ;
 REMOVE ("turpa") + N ;
 REMOVE ("tutkinta") + N + Pl ;
@@ -4839,6 +4832,27 @@ SUBSTITUTE (Cmpnd @+FAUXV) (Cmpnd) (CS Cmpnd @+FAUXV) ; # ???
 
 
 
+
+# careful remove: maybe still will be needed in next stages
+SUBSTITUTE POSS_SUFF (*) POSS_SUFF (-1 Pers + Gen OR ("oma")) ; 
+
+SUBSTITUTE Qnt (*) Adv ; 
+SUBSTITUTE Interr (*) Adv ; 
+SUBSTITUTE Dem (*) Adv ; 
+SUBSTITUTE Rel (*) Adv ; 
+SUBSTITUTE Ins (*) Adv ; 
+SUBSTITUTE Ade (*) Adv ; 
+SUBSTITUTE Px3 (*) Adv ; 
+SUBSTITUTE Tempr (*) Adv ; 
+SUBSTITUTE Der_sti (*) Adv ; 
+SUBSTITUTE Foc_han (*) Adv ; 
+SUBSTITUTE Foc_kin (*) Adv ; 
+SUBSTITUTE Foc_kaan (*) Adv ; 
+
+
+END
+
+
 # For MT only (fin->est)
 
 # Käänsin englannista viroksi ja päinvastoin (ks->adit)
@@ -4865,24 +4879,5 @@ SUBSTITUTE ("väliltä" Po) ("välinen" N Sg Abl) ("väliltä" Po) ; # est vahel
 SUBSTITUTE ("välistä" Po) ("välinen" N Sg Par) ("välistä" Po) ; # tõlke kääne võib olla erinev
 
 SUBSTITUTE A Pron ("millainen") ; # Rel Interr 
-
-# careful remove: maybe still will be needed in next stages
-SUBSTITUTE POSS_SUFF (*) POSS_SUFF (-1 Pers + Gen OR ("oma")) ; 
-
-SUBSTITUTE Qnt (*) Adv ; 
-SUBSTITUTE Interr (*) Adv ; 
-SUBSTITUTE Dem (*) Adv ; 
-SUBSTITUTE Rel (*) Adv ; 
-SUBSTITUTE Ins (*) Adv ; 
-SUBSTITUTE Ade (*) Adv ; 
-SUBSTITUTE Px3 (*) Adv ; 
-SUBSTITUTE Tempr (*) Adv ; 
-SUBSTITUTE Der_sti (*) Adv ; 
-SUBSTITUTE Foc_han (*) Adv ; 
-SUBSTITUTE Foc_kin (*) Adv ; 
-SUBSTITUTE Foc_kaan (*) Adv ; 
-
-
-END
 
 
