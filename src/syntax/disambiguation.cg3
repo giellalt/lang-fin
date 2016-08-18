@@ -163,9 +163,11 @@ LIST NGen = (N Gen) ;
 LIST NPar = (N Par) ; 
 
 LIST NomSg = (Nom Sg) ; 
-LIST GenSg = (Gen Sg) ; 
 LIST NomPl = (Nom Pl) ; 
+LIST GenSg = (Gen Sg) ; 
 LIST GenPl = (Gen Pl) ; 
+LIST ParSg = (Par Sg) ; 
+LIST ParPl = (Par Pl) ; 
 
 SET NPSgNom = N + (Sg Nom) OR (Pron Sg Nom) ; 
 SET NPPlNom = N + (Pl Nom) OR (Pron Pl Nom) ; 
@@ -1775,9 +1777,9 @@ SELECT ("vaan") + Pcle (1 Punct);
 SELECT ("vaan") + Pcle (-1 Adv OR Pcle)(1 FINV);
 
 SELECT ("vaikkapa") + Pcle;
+SELECT ("vaikka") + CS (-1 V)(1 V);
 SELECT ("vaikka") + Pcle (-1 V)(1 Prs-w OR Prt-w);
 SELECT ("vaikka") + Pcle (1 MIKA OR ("nyt") OR Foc_kin)(NEGATE -1 OMS OR Punct OR CS);
-SELECT ("vaikka") + CS (-1 V)(1 V);
 IFF ("vaikka") + CS (-1 OMS OR Punct OR CS);
 
 REMOVE ("sun") + CC OR ("jos") + CC OR ("myös") + CC OR ("mitä") + CS OR ("vaan") + CS;
@@ -2138,6 +2140,13 @@ SELECT ("hyvin") + Adv;
 SELECT ("hyvä") + A;
 
 SELECT ASgNom (0C Sg + Nom) (1C N)(1 NSgNom) ; # vaalea paita
+
+SELECT N (0C NomSg) (-1C ASgNom) ;
+SELECT N (0C NomPl) (-1C APlNom) ;
+SELECT N (0C ParSg) (-1C ASgPar) ;
+SELECT N (0C ParPl) (-1C APlPar) ;
+SELECT N (0C GenSg) (-1C ASgGen) ;
+SELECT N (0C GenPl) (-1C APlGen) ;
 
 SELECT A + NomSg (NEGATE 0 PPPCPs)(1C ASgNom - ("oma")) ;
 SELECT ASgNom (1C ASgNom - ("oma") - PrfPrc) ;
