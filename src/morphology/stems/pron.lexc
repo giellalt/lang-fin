@@ -2240,7 +2240,7 @@ muu+Pron:mu  PRON_MUU  ;
 muuan+Pron:muua  PRON_MUUAN  ;
 muudan+Pron:muuda  PRON_MUUAN  ;
 muutama+Pron:muutam  PRON_MUUTAMA  ;
-mä+Pron:m  PRON_MÄ  ;
+mä+Pron+Pers+Sg1:m  PRON_MÄ  ;
 mää+Pron:mää  PRON_MÄÄ  ;
 ne+Pron:n  PRON_NE  ;
 noi+Pron:noi  PRON_NOI  ;
@@ -2251,7 +2251,7 @@ sama+Pron:sam  PRON_SAMA  ;
 se+Pron:s  PRON_SE  ; 
 sie+Pron:si  PRON_MIE  ;
 !sinä+Pron+Pers+Sg2:si  PRON_MINÄ  ; ! see above for Nom
-sä+Pron:s  PRON_MÄ  ;
+sä+Pron+Pers+Sg2:s  PRON_MÄ  ;
 sää+Pron:sää  PRON_MÄÄ  ;
 !te+Pron+Pers+Pl2:te  PRON_ME  ; ! see above for Nom
 toi+Pron:to  PRON_TOI  ;
@@ -2321,17 +2321,33 @@ LEXICON PRON_ERÄS
 
 LEXICON PRON_HÄN
 
-:e	PRON_FRONT_SINGULARS ;
+!:e	PRON_FRONT_SINGULARS ;
+! PRON_FRONT_STRONG_SINGULARS
++Ess:e%>nä	PRON_FRONT_CLIT_OPT ;
+!PRON_FRONT_WEAK_SINGULARS
++Abe:e%>ttä	PRON_FRONT_CLIT_OPT ;
++Abl:e%>ltä	PRON_FRONT_CLIT_OPT ;
++Ade:e%>llä	PRON_FRONT_CLIT_OPT ;
++All:e%>lle	PRON_FRONT_CLIT_OPT ;
++Ela:e%>stä	PRON_FRONT_CLIT_OPT ;
++Ine:e%>ssä	PRON_FRONT_CLIT_OPT ;
++Tra:e%>ksi	PRON_FRONT_CLIT_OPT ;
 
-:e	PRON_FRONT_ACCUSATIVE_T ;
+!:e	PRON_FRONT_ACCUSATIVE_T ;
++Acc:e%>t	PRON_FRONT_CLIT_OPT ;
 
-:e	PRON_FRONT_GENITIVE_N ;
+!:e	PRON_FRONT_GENITIVE_N ;
++Gen:e%>n	PRON_FRONT_CLIT_OPT ;
 
-:e	PRON_BACK_ILLATIVE_EN ;
+!:e	PRON_BACK_ILLATIVE_EN ;
++Ill:e%>en	PRON_BACK_CLIT_OPT ;
++Ill+Use/Arch:e%>hen	PRON_BACK_CLIT_OPT ;
 
-:	PRON_FRONT_NOMINATIVE ;
+!:	PRON_FRONT_NOMINATIVE ;
++Nom:	PRON_FRONT_CLIT_OPT ;
 
-:	PRON_FRONT_PARTITIVE_TÄ ;
+!:	PRON_FRONT_PARTITIVE_TÄ ;
++Par:%>tä	PRON_FRONT_CLIT_OPT ;
 
 
 LEXICON PRON_HÄÄ
@@ -3058,23 +3074,38 @@ LEXICON PRON_MA
 
 LEXICON PRON_ME
 
-+Pl+Acc:idät	PRON_FRONT_CLIT_OPT ;
++Acc:idät	PRON_FRONT_CLIT_OPT ;
 
-+Pl+Gen:idän	PRON_FRONT_CLIT_OPT ;
++Gen:idän	PRON_FRONT_CLIT_OPT ;
 
-+Pl+Gen+Dial/Finland:ijän	PRON_FRONT_CLIT_OPT ;
++Gen+Dial/Finland:ijän	PRON_FRONT_CLIT_OPT ;
 
-+Pl+Gen+Dial/Finland:iän	PRON_FRONT_CLIT_OPT ;
++Gen+Dial/Finland:iän	PRON_FRONT_CLIT_OPT ;
 
-+Pl+Gen+Dial/Finland:än	PRON_FRONT_CLIT_OPT ;
++Gen+Dial/Finland:än	PRON_FRONT_CLIT_OPT ;
 
-:	PRON_FRONT_PLNOM_0 ;
+!:	PRON_FRONT_PLNOM_0 ;
++Nom:	PRON_FRONT_CLIT_OPT ;
 
-:	PRON_FRONT_PLURALS ;
+!:	PRON_FRONT_PLURALS ;
+! PRON_FRONT_STRONG_PLURALS
++Ess:%>i%>nä	PRON_FRONT_CLIT_OPT ;
++Com:%>i%>ne	PRON_FRONT_CLIT_OPT ;
+! PRON_FRONT_WEAK_PLURALS
++Abe:%>i%>ttä	PRON_FRONT_CLIT_OPT ;
++Abl:%>i%>ltä	PRON_FRONT_CLIT_OPT ;
++Ade:%>i%>llä	PRON_FRONT_CLIT_OPT ;
++All:%>i%>lle	PRON_FRONT_CLIT_OPT ;
++Ela:%>i%>stä	PRON_FRONT_CLIT_OPT ;
++Ine:%>i%>ssä	PRON_FRONT_CLIT_OPT ;
++Ins:%>i%>n	PRON_FRONT_CLIT_OPT ;
++Tra:%>i%>ksi	PRON_FRONT_CLIT_OPT ;
 
-:	PRON_FRONT_PARTITIVE_ITÄ ;
+!:	PRON_FRONT_PARTITIVE_ITÄ ;
++Par:%>i%>tä	PRON_FRONT_CLIT_OPT ;
 
-:	PRON_FRONT_ILLATIVE_IHIN ;
+!:	PRON_FRONT_ILLATIVE_IHIN ;
++Ill:%>i%>hin	PRON_FRONT_CLIT_OPT ;
 
 
 LEXICON PRON_MIE
