@@ -1042,6 +1042,7 @@ SET NECESSITIVE_SUBJS = NGen OR Pron + Gen ;
 
 SET JaPcleCC = ("ja") + Pcle + CC ;
 
+
 # ========================================================================
 
 # ==================== #
@@ -1758,11 +1759,16 @@ REMOVE Sem_Human + Pl;
 
 # Particle verbs
 
-SUBSTITUTE Adv AdvPcle Ottaa-pcle (*0 ("ottaa") BARRIER S-BOUNDARY) ; # mukaan, vastaan
-SUBSTITUTE Adv AdvPcle Jättaa-pcle (*0 ("jättää") BARRIER S-BOUNDARY) ; # väliin
-SUBSTITUTE Adv AdvPcle Nostaa-pcle (*0 ("nostaa") BARRIER S-BOUNDARY) ; # sisälle
+# mostly particle follows the verb, but have to check further if the previous-word condition is also needed
+SUBSTITUTE Adv AdvPcle Ottaa-pcle - Pcle (*-1 ("ottaa") BARRIER S-BOUNDARY) ; # mukaan, vastaan
+SUBSTITUTE Adv AdvPcle Jättaa-pcle - Pcle (*-1 ("jättää") BARRIER S-BOUNDARY) ; # väliin
+SUBSTITUTE Adv AdvPcle Nostaa-pcle - Pcle (*-1 ("nostaa") BARRIER S-BOUNDARY) ; # sisälle
 SELECT AdvPcle;
-# if have to be cautious:
+
+# if particle precedes the verb (mukaan on otettu) , then have to be cautious:
+SUBSTITUTE Adv AdvPcle Ottaa-pcle - Pcle (*1 ("ottaa") BARRIER S-BOUNDARY) ; # mukaan, vastaan
+SUBSTITUTE Adv AdvPcle Jättaa-pcle - Pcle (*1 ("jättää") BARRIER S-BOUNDARY) ; # väliin
+SUBSTITUTE Adv AdvPcle Nostaa-pcle - Pcle (*1 ("nostaa") BARRIER S-BOUNDARY) ; # sisälle
 SELECT AdvPcle (NEGATE 0 Po); 
 SELECT AdvPcle (0 Po - GenLeft)(NEGATE -1 Par);
 SELECT AdvPcle (0 Po - ParLeft)(NEGATE -1 Gen);
