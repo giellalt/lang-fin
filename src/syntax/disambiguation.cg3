@@ -763,14 +763,14 @@ LIST ElaLeft = "asti" "huolimatta" "lähtien" "riippumatta" ;
 LIST ElaRight = "huolimatta" ; 
 # <ElaRight> verbs from text_cg1.txt, there may be more of them
 
-LIST GenLeft = "aikaan" "aikana" "aikoihin" "alla" "alle" "alta" "alusta" "ansiosta" "avulla" "edelle" "edellä" "edessä" "edestä" "eteen" "eteensä" "hyväksi" "johdosta" "jälkeen" "kanssa" "kautta" "keskelle" "keskellä" "keskeltä" "kesken" "keskuudessa" "keskuuteen" "kohdalla" "kohdalle" "kuluttua" "laidassa" "lisäksi" "lomassa" "luo" "luokse" "luota" "lähellä" "läheltä" "lähettyville" "läpi" "lävitse" "mielestä" "mukaan" "mukana" "myötä" "nojalla" "ohella" "ohessa" "ohi" "pariin" "parissa" "parista" "perusteella" "perässä" "perään" "puoleen" "puolella" "puolelle" "puolesta" "puolivälissä" "päälle" "päällä" "päältä" "päässä"  "päästä" "rinnalla" "rinnalle" "sijaan" "sijasta" "sisälle" "sisällä" "sisältä" "sisään" "sitten" "suhteen" "taakse" "takaa" "takana" "takia" "tasalla" "tasalle" "tienoilla" "tähden" "ulkopuolella" "ulottuvilla" "varaan" "varassa" "varrella" "varressa" "verran" "viereen" "vieressä" "vierestä" "vuoksi" "väliin" "välillä" "väliltä" "välissä" "välistä" "yli" "ylitse" "yllä" "yläpuolella" "ympäri" "ympärille" "ympärillä" "ympäriltä" "äärelle" "äärellä" "ääreltä" ; 
+LIST GenLeft = "aikaan" "aikana" "aikoihin" "alla" "alle" "alta" "alusta" "ansiosta" "avulla" "edelle" "edellä" "edessä" "edestä" "eteen" "eteensä" "hyväksi" "johdosta" "jälkeen" "kanssa" "kautta" "keskelle" "keskellä" "keskeltä" "kesken" "keskuudessa" "keskuuteen" "kohdalla" "kohdalle" "kuluttua" "laidassa" "lisäksi" "lomassa" "luo" "luokse" "luota" "lähellä" "läheltä" "lähettyville" "lähtien" "läpi" "lävitse" "mennessä" "mielestä" "muassa" "mukaan" "mukana" "myötä" "nojalla" "ohella" "ohessa" "ohi" "pariin" "parissa" "parista" "perusteella" "perässä" "perään" "poikki" "puoleen" "puolella" "puolelle" "puolesta" "puolivälissä" "päälle" "päällä" "päältä" "päässä"  "päästä" "rinnalla" "rinnalle" "sijaan" "sijasta" "sisälle" "sisällä" "sisältä" "sisään" "sitten" "suhteen" "taakse" "takaa" "takana" "takia" "tasalla" "tasalle" "tienoilla" "tähden" "ulkopuolella" "ulottuvilla" "varaan" "varassa" "varrella" "varressa" "verran" "viereen" "vieressä" "vierestä" "vuoksi" "väliin" "välillä" "väliltä" "välissä" "välistä" "yli" "ylitse" "yllä" "yläpuolella" "ympäri" "ympärille" "ympärillä" "ympäriltä" "äärelle" "äärellä" "ääreltä" ; 
 # <GenLeft> verbs from text_cg1.txt, there may be more of them
 
 
 LIST GenRight = "alle" "alta" "kautta" "kesken" "läpi" "ohi" "yli" "ylitse" ; #  "jälkeen" ?
 # <GenRight> verbs from text_cg1.txt, there may be more of them
 
-LIST ParLeft = "edelle" "edellä" "ennen" "jälkeen" "kautta" "kohtaan" "kohti" "lähellä" "läheltä" "myöten" "paitsi" "pitkin" "päin" "sitten" "vailla" "vaille" "varten" "vastaan" "vastapäätä" "vasten" ; 
+LIST ParLeft = "edelle" "edellä" "ennen" "jälkeen" "kautta" "kohden" "kohtaan" "kohti" "lähellä" "läheltä" "myöten" "paitsi" "pitkin" "päin" "sitten" "vailla" "vaille" "varten" "vastaan" "vastapäätä" "vasten" ; 
 # <PtvLeft> verbs from text_cg1.txt, there may be more of them
 
 LIST ParRight = "edelle" "edellä" "ennen" "ilman" "keskelle" "keskellä" "kesken" "kohti" "lähellä" "läheltä" "paitsi" "pitkin" "päin" "vailla" "vaille" "vasten" "vastoin" "ympäri" ; 
@@ -1651,7 +1651,8 @@ SELECT ConNeg + Ind (NEGATE 0 Pron)(0 A + $$ALLCASES)(*-1 V + Neg - Imprt BARRIE
 
 SELECT NES OR InfA-VERB (1 InfA)(NEGATE 1 Pron);
 SELECT InfA (NEGATE 0 Pron)(-1 NES OR InfA-VERB);
-SELECT InfMa OR NSgIll (-1 OLLA OR InfMa-VERB); #? satamaan
+SELECT InfMa OR NSgIll (-1 OLLA OR InfMa-VERB)(NEGATE 1 Po); #? satamaan
+SELECT InfMa OR NSgIll (-1 OLLA OR InfMa-VERB)(NEGATE 0 Gen_Par); 
 
 REMOVE Prt - ConNeg (0 Prs - ConNeg)(*0 Prs-w BARRIER S-BOUNDARY OR CC OR Prt-w); # voi
 REMOVE Prs - ConNeg (0 Prt - ConNeg)(*0 Prt-w BARRIER S-BOUNDARY OR CC OR Prs-w); # voi
@@ -1797,6 +1798,7 @@ SELECT ("tai") + CC (*-1 ("joko") BARRIER V OR CS OR Punct - COMMA); # kas 1, 2 
 
 SELECT ("sekä") + CC (*1 $$ALLCASES BARRIER NP-BOUNDARY LINK 1 ("että") LINK *1 $$ALLCASES BARRIER NP-BOUNDARY); # nii 1, 2 kui 3 
 SELECT ("että") + CC (-1 $$ALLCASES LINK *-1 ("sekä") + CC BARRIER NP-BOUNDARY)(*1 $$ALLCASES BARRIER NP-BOUNDARY);
+SELECT ("että") + CC (-1 N OR Adv LINK -1 Punct LINK -1 $$ALLCASES LINK *-1 ("sekä") + CC BARRIER NP-BOUNDARY)(*1 $$ALLCASES BARRIER NP-BOUNDARY);
 
 SELECT ("niin") + CC (*1 $$ALLCASES BARRIER NP-BOUNDARY LINK 1 ("kuin") LINK *1 $$ALLCASES BARRIER NP-BOUNDARY); # nii 1, 2 kui 3 
 SELECT ("kuin") + CC (-1 $$ALLCASES LINK *-1 ("niin") + CC BARRIER NP-BOUNDARY)(*1 $$ALLCASES BARRIER NP-BOUNDARY);
@@ -1806,6 +1808,7 @@ SELECT ("niin") + Adv;
 SELECT ("kuin") + CC OR ("kuin") + CS ; # (-1 V OR A OR Adv)(1 POS);
 #SELECT ("kuin") + CC (-1 ("<muuta>") OR CMP-ENNEN); # comparative - CC?
 SELECT ("kuin") + CS (1 FINV); # sen jälkeen kuin
+# SELECT ("kuin") + CS ; # in UDT CC is only in "niin .. kuin .." (and "maassa kuin maassa"), but there is no CS given
 IFF ("kuin") + CC (NEGATE -2 ("sellainen"))(NEGATE -1 Comp)(-1 $$POS + $$ALLCASES)(*1 $$POS + $$ALLCASES BARRIER S-BOUNDARY OR CCC); 
 REMOVE Pcle IF (0 CC - Pcle) ; # ja, jos, tai, tahi, taikka, vaan, kuin
 
@@ -3193,6 +3196,7 @@ SELECT ("paitsi") + Pr (1 Punct) (2 ETTA) ;
 # SELECT Adp (0 Po) (1 Gen) ; 
 SELECT Po IF (NEGATE 0 Pr) (-1 Gen) ;
 SELECT Pr IF (NEGATE 0 Pr) (1 Gen) ;
+SELECT ("sitten") + Po (-2 Num) (-1 TIME-WORD) (-1 Par) ;  # also cf. below under heuristic
 REMOVE Po IF (NEGATE -1 Gen_Par) ;
 # ennen ja jälkeen päivän
 
@@ -3378,7 +3382,6 @@ REMOVE  Pr + ParRight (0 GenRight) (NEGATE 1 Par_Gen) (NEGATE 2 Par_Gen) ;
 SELECT ("lähtien") + Po (-1 Ela_Abl) ;
 SELECT ("lähtien") + Po (-2 Ela) (-1 Num) ; # VUODESTA 1946 LäHTIEN
 #(@w IFF (PSP "sitten") (-1 TIME-WORD) ; #old one, changed 26.11.2000 to next one
-SELECT ("sitten") + Po (-2 Num) (-1 TIME-WORD) (-1 Par) ;  # also cf. below under heuristic
 SELECT Gen (1C Po) (1C GenLeft) (NEGATE -1 AD_PCP) ;
 SELECT Par (1C Po) (1C ParLeft) ;
 SELECT Gen (-1C Pr) (-1C GenRight) ;
