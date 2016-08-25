@@ -415,7 +415,7 @@
 "<.>"
 	"." Punct &punct #9->1 
 "<Eivätkö>"
-	"ei" V Neg Act Pl3 Qst &neg #1->3 
+	"ei" V Neg Act Pl3 Qst &neg #1->2 
 "<olekin>"
 	"olla" V Act Ind Prs ConNeg Foc/kin &cop #2->3 
 "<kivat>"
@@ -1345,7 +1345,7 @@
 "<En>"
 	"ei" V Neg Act Sg1 &neg #1->2 
 "<haluaisi>"
-	"haluta" V Act Cond ConNeg ?? &root #2->0 
+	"haluta" V Act Cond ConNeg &root #2->0 
 "<,>"
 	"," Punct &punct #3->11 
 "<että>"
@@ -2429,7 +2429,7 @@
 "<.>"
 	"." Punct &punct #10->3 
 "<Ei>"
-	"ei" V Neg Act Sg3 &neg #1->3 
+	"ei" V Neg Act Sg3 &neg #1->2 
 "<ole>"
 	"olla" V Act Ind Prs ConNeg &cop #2->3 
 "<väärin>"
@@ -2809,7 +2809,7 @@
 "<,>"
 	"," Punct &punct #6->4 
 "<ei>"
-	"ei" V Neg Act Sg3 &neg #7->15 
+	"ei" V Neg Act Sg3 &neg #7->11 
 "<sen>"
 	"se" Pron Dem Sg Gen &nmod:gobj #8->9 
 "<valmistus>"
@@ -2853,7 +2853,7 @@
 "<ongelma>"
 	"ongelma" N Sg Nom &nsubj:cop #3->7 
 "<ei>"
-	"ei" V Neg Act Sg3 &neg #4->7 
+	"ei" V Neg Act Sg3 &neg #4->5 
 "<liene>"
 	"olla" V Act Pot ConNeg &cop #5->7 
 "<kovin>"
@@ -3123,7 +3123,7 @@
 "<keskiajallakaan>"
 	"keskiaika" N Sg Ade Foc/kaan &nmod #11->12 
 "<ollut>"
-	"olla" V Act PrfPrc Sg Nom &ccomp #12->7 
+	"olla" V Act Ind Prt ConNeg Sg &ccomp #12->7 
 "<niitä>"
 	"ne" Pron Dem Pl Par &nsubj #13->12 
 "<.>"
@@ -4024,7 +4024,7 @@
 "<mutta>"
 	"mutta" CC &cc #6->4 
 "<ei>"
-	"ei" V Neg Act Sg3 &neg #7->11 
+	"ei" V Neg Act Sg3 &neg #7->8 
 "<ole>"
 	"olla" V Act Ind Prs ConNeg &cop #8->11 
 "<Z-sotureiden>"
@@ -4914,7 +4914,7 @@
 "<asenne>"
 	"asenne" N Sg Nom &nsubj:cop #3->6 
 "<ei>"
-	"ei" V Neg Act Sg3 &neg #4->6 
+	"ei" V Neg Act Sg3 &neg #4->5 
 "<ole>"
 	"olla" V Act Ind Prs ConNeg &cop #5->6 
 "<oikeutettu>"
@@ -5545,7 +5545,7 @@
 "<ei>"
 	"ei" V Neg Act Sg3 &neg #5->6 
 "<ollut>"
-	"olla" V Act PrfPrc Sg Nom &root #6->0 
+	"olla" V Act Ind Prt ConNeg Sg &root #6->0 
 "<muita>"
 	"muu" Pron Pl Par &det #7->8 
 "<lapsia>"
@@ -5967,7 +5967,7 @@
 "<siellä>"
 	"siellä" Adv &advmod #8->9 
 "<ollut>"
-	"olla" V Act PrfPrc Sg Nom &conj #9->5 
+	"olla" V Act Ind Prt ConNeg Sg &conj #9->5 
 "<vaarallisia>"
 	"vaarallinen" A Pl Par &amod #10->11 
 "<merivirtoja>"
@@ -7407,7 +7407,7 @@
 "<asioista>"
 	"asia" N Pl Ela &nmod #3->7 
 "<en>"
-	"ei" V Neg Act Sg1 &neg #4->7 
+	"ei" V Neg Act Sg1 &neg #4->5 
 "<ole>"
 	"olla" V Act Ind Prs ConNeg &cop #5->7 
 "<pätkääkään>"
@@ -10685,7 +10685,7 @@
 "<kumpikaan>"
 	"kumpikaan" Pron Qu Sg Nom &nsubj:cop #7->11 
 "<ei>"
-	"ei" V Neg Act Sg3 &neg #8->11 
+	"ei" V Neg Act Sg3 &neg #8->9 
 "<ole>"
 	"olla" V Act Ind Prs ConNeg &cop #9->11 
 "<ihan>"
@@ -10871,7 +10871,7 @@
 "<lumous>"
 	"lumous" N Sg Nom &nsubj:cop #3->8 
 "<ei>"
-	"ei" V Neg Act Sg3 &neg #4->8 
+	"ei" V Neg Act Sg3 &neg #4->5 
 "<ole>"
 	"olla" V Act Ind Prs ConNeg &cop #5->8 
 "<vain>"
@@ -11015,7 +11015,7 @@
 "<.>"
 	"." Punct &punct #7->2 
 "<Eikä>"
-	"ei" V Neg Act Sg3 Foc/ka &neg #1->5 
+	"ei" V Neg Act Sg3 Foc/ka &neg #1->3 
 "<onni>"
 	"onni" N Sg Nom &nsubj:cop #2->5 
 "<ole>"
@@ -11809,7 +11809,7 @@
 "<lopputulos>"
 	"lopputulos" N Sg Nom &nsubj:cop #5->9 
 "<ei>"
-	"ei" V Neg Act Sg3 &neg #6->9 
+	"ei" V Neg Act Sg3 &neg #6->7 
 "<ole>"
 	"olla" V Act Ind Prs ConNeg &cop #7->9 
 "<suunnitelmien>"
@@ -12101,7 +12101,7 @@
 "<Kuubasta>"
 	"Kuuba" N Prop Sem/Geo Sg Ela &nmod #8->4 
 "<eivät>"
-	"ei" V Neg Act Pl3 &neg #9->11 
+	"ei" V Neg Act Pl3 &neg #9->10 
 "<ole>"
 	"olla" V Act Ind Prs ConNeg &cop #10->11 
 "<samanlaisia>"
@@ -12679,7 +12679,7 @@
 "<minulla>"
 	"minä" Pron Pers Sg1 Ade &nmod:own #9->10 
 "<ollut>"
-	"olla" V Act PrfPrc Sg Nom &ccomp #10->6 
+	"olla" V Act Ind Prt ConNeg Sg &ccomp #10->6 
 "<muuta>"
 	"muu" Pron Sg Par &det #11->12 
 "<mahdollisuutta>"
@@ -14099,7 +14099,7 @@
 "<ilma>"
 	"ilma" N Sg Nom &nsubj:cop #2->6 
 "<ei>"
-	"ei" V Neg Act Sg3 &neg #3->6 
+	"ei" V Neg Act Sg3 &neg #3->4 
 "<ole>"
 	"olla" V Act Ind Prs ConNeg &cop #4->6 
 "<tarpeeksi>"
@@ -14954,7 +14954,7 @@
 "<leipä>"
 	"leipä" N Sg Nom &nsubj:cop #2->7 
 "<ei>"
-	"ei" V Neg Act Sg3 &neg #3->7 
+	"ei" V Neg Act Sg3 &neg #3->4 
 "<ole>"
 	"olla" V Act Ind Prs ConNeg &cop #4->7 
 "<koskaan>"
@@ -16319,9 +16319,9 @@
 "<Se>"
 	"se" Pron Dem Sg Nom &nsubj:cop #1->5 
 "<ei>"
-	"ei" V Neg Act Sg3 &neg #2->5 
+	"ei" V Neg Act Sg3 &neg #2->3 
 "<ollut>"
-	"olla" V Act PrfPrc Sg Nom &cop #3->5 
+	"olla" V Act Ind Prt ConNeg Sg &cop #3->5 
 "<herrasmiehen>"
 	"herrasmies" N Sg Gen &nmod:poss #4->5 
 "<ase>"
@@ -16487,7 +16487,7 @@
 "<aseistuksessaan>"
 	"aseistus" N Sg Ine PxPl3 &nmod #7->8 
 "<ollut>"
-	"olla" V Act PrfPrc Sg Nom &conj #8->2 
+	"olla" V Act Ind Prt ConNeg Sg &conj #8->2 
 "<kehumista>"
 	"kehuminen" N Sg Par &nsubj #9->8 
 "<.>"
@@ -16593,7 +16593,7 @@
 "<päivänä>"
 	"päivä" N Sg Ess &nmod #2->6 
 "<ei>"
-	"ei" V Neg Act Sg3 &neg #3->5 
+	"ei" V Neg Act Sg3 &neg #3->4 
 "<olisi>"
 	"olla" V Act Cond ConNeg &cop #4->5 
 "<hyvä>"
@@ -17149,7 +17149,7 @@
 "<enää>"
 	"enää" Adv &advmod #3->4 
 "<ollut>"
-	"olla" V Act PrfPrc Sg Nom &root #4->0 
+	"olla" V Act Ind Prt ConNeg Sg &root #4->0 
 "<tutussa>"
 	"tuttu" A Sg Ine &amod #5->6 
 "<kotikylässään>"
@@ -17536,7 +17536,7 @@
 "<Mutta>"
 	"mutta" CC &cc #1->6 
 "<ei>"
-	"ei" V Neg Act Sg3 &neg #2->6 
+	"ei" V Neg Act Sg3 &neg #2->7 
 "<elämä>"
 	"elämä" N Sg Nom &nsubj:cop #3->6 
 "<Amerikassa>"
@@ -17914,7 +17914,7 @@
 "<Finnair>"
 	"Finnair" N Prop Sem/Org Sg Nom &nsubj:cop #1->4 
 "<ei>"
-	"ei" V Neg Act Sg3 &neg #2->4 
+	"ei" V Neg Act Sg3 &neg #2->3 
 "<ole>"
 	"olla" V Act Ind Prs ConNeg &cop #3->4 
 "<halukas>"
@@ -17964,7 +17964,7 @@
 "<ne>"
 	"ne" Pron Dem Pl Nom &nsubj:cop #2->6 
 "<eivät>"
-	"ei" V Neg Act Pl3 &neg #3->6 
+	"ei" V Neg Act Pl3 &neg #3->4 
 "<ole>"
 	"olla" V Act Ind Prs ConNeg &cop #4->6 
 "<tarpeeksi>"
@@ -18186,9 +18186,9 @@
 "<kenttää>"
 	"kenttä" N Sg Par &nsubj:cop #11->14 
 "<ei>"
-	"ei" V Neg Act Sg3 &neg #12->14 
+	"ei" V Neg Act Sg3 &neg #12->13 
 "<ollut>"
-	"olla" V Act PrfPrc Sg Nom &cop #13->14 
+	"olla" V Act Ind Prt ConNeg Sg &cop #13->14 
 "<tarjolla>"
 	"tarjolla" Adv &advcl #14->3 
 "<.>"
@@ -18290,7 +18290,7 @@
 "<Hodgkinson>"
 	"Hodgkinson" N Prop Sg Nom ?? &nsubj:cop #1->5 
 "<ei>"
-	"ei" V Neg Act Sg3 &neg #2->5 
+	"ei" V Neg Act Sg3 &neg #2->3 
 "<ole>"
 	"olla" V Act Ind Prs ConNeg &cop #3->5 
 "<asenteineen>"
@@ -18693,7 +18693,7 @@
 "<tilanne>"
 	"tilanne" N Sg Nom &nsubj:cop #3->7 
 "<ei>"
-	"ei" V Neg Act Sg3 &neg #4->7 
+	"ei" V Neg Act Sg3 &neg #4->5 
 "<ole>"
 	"olla" V Act Ind Prs ConNeg &cop #5->7 
 "<pelkästään>"
@@ -19181,7 +19181,7 @@
 "<purku>"
 	"purku" N Sg Nom &nsubj:cop #3->8 
 "<ei>"
-	"ei" V Neg Act Sg3 &neg #4->8 
+	"ei" V Neg Act Sg3 &neg #4->6 
 "<sekään>"
 	"se" Pron Dem Sg Nom Foc/kaan &nsubj:cop #5->8 
 "<ole>"
@@ -21811,7 +21811,7 @@
 "<tällöin>"
 	"tällöin" Adv &mwe #9->8 
 "<ei>"
-	"ei" V Neg Act Sg3 &neg #10->12 
+	"ei" V Neg Act Sg3 &neg #10->11 
 "<ole>"
 	"olla" V Act Ind Prs ConNeg &cop #11->12 
 "<vaarallista>"
@@ -25308,7 +25308,7 @@
 "<ydinkysymys>"
 	"ydinkysymys" N Sg Nom &nsubj:cop #3->8 
 "<ei>"
-	"ei" V Neg Act Sg3 &neg #4->8 
+	"ei" V Neg Act Sg3 &neg #4->5 
 "<ole>"
 	"olla" V Act Ind Prs ConNeg &cop #5->8 
 "<gallup-henkinen>"
@@ -25668,7 +25668,7 @@
 "<Hakukoneyhtiöt>"
 	"hakukone#yhtiö" N Pl Nom &nsubj:cop #1->4 
 "<eivät>"
-	"ei" V Neg Act Pl3 &neg #2->4 
+	"ei" V Neg Act Pl3 &neg #2->3 
 "<ole>"
 	"olla" V Act Ind Prs ConNeg &cop #3->4 
 "<innoissaan>"
@@ -28884,7 +28884,7 @@
 "<kysymykset>"
 	"kysymys" N Pl Nom &nsubj:cop #5->8 
 "<eivät>"
-	"ei" V Neg Act Pl3 &neg #6->8 
+	"ei" V Neg Act Pl3 &neg #6->7 
 "<ole>"
 	"olla" V Act Ind Prs ConNeg &cop #7->8 
 "<merkki>"
@@ -29228,12 +29228,11 @@
 "<−>"
 	"−" Punct &punct #1->4 
 "<Miksei>"
-	"miksi" CSei Neg Act Sg3 &advmod #2->4 
-	"miksi#ei" V Neg Act Sg3 ?? &advmod #2->4 
+	"miksi#ei" V Neg Act Sg3 &advmod #2->4 
 "<keskiajalla>"
 	"keskiaika" N Sg Ade &nmod #3->4 
 "<ollut>"
-	"olla" V Act PrfPrc Sg Nom &root #4->0 
+	"olla" V Act Ind Prt ConNeg Sg &root #4->0 
 "<suomenkielisiä>"
 	"suomenkielinen" A Pl Par &amod #5->6 
 "<kirjoja>"
@@ -29371,7 +29370,7 @@
 "<merkitystä>"
 	"merkitys" N Sg Par &dobj #4->10 
 "<ei>"
-	"ei" V Neg Act Sg3 &neg #5->9 
+	"ei" V Neg Act Sg3 &neg #5->6 
 "<olekaan>"
 	"olla" V Act Ind Prs ConNeg Foc/kaan &cop #6->9 
 "<enää>"
@@ -29707,7 +29706,7 @@
 "<Eurooppaan>"
 	"Eurooppa" N Prop Sem/Geo Sg Ill &nmod #16->15 
 "<eivät>"
-	"ei" V Neg Act Pl3 &neg #17->20 
+	"ei" V Neg Act Pl3 &neg #17->18 
 "<ole>"
 	"olla" V Act Ind Prs ConNeg &cop #18->20 
 "<uusi>"
@@ -30751,7 +30750,7 @@
 "<Samantekevää>"
 	"samantekevä" A Sg Par &root #1->0 
 "<ei>"
-	"ei" V Neg Act Sg3 &neg #2->1 
+	"ei" V Neg Act Sg3 &neg #2->4 
 "<kuitenkaan>"
 	"kuitenkaan" Pcle &advmod #3->1 
 "<ole>"
@@ -33292,11 +33291,11 @@
 "<elämäntyylinsä>"
 	"elämäntyyli" N Sg Nom PxSg3 &nsubj:cop #2->7 
 "<ei>"
-	"ei" V Neg Act Sg3 &neg #3->7 
+	"ei" V Neg Act Sg3 &neg #3->5 
 "<kuitenkaan>"
 	"kuitenkaan" Pcle &advmod #4->7 
 "<ollut>"
-	"olla" V Act PrfPrc Sg Nom &cop #5->7 
+	"olla" V Act Ind Prt ConNeg Sg &cop #5->7 
 "<jesuiitta-aatteen>"
 	"jesuiitta-#aate" N Sg Gen &nmod:poss #6->7 
 "<mukaista>"
