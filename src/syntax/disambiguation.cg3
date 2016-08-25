@@ -169,8 +169,15 @@ LIST GenPl = (Gen Pl) ;
 LIST ParSg = (Par Sg) ; 
 LIST ParPl = (Par Pl) ; 
 
-SET NPSgNom = N + (Sg Nom) OR (Pron Sg Nom) ; 
-SET NPPlNom = N + (Pl Nom) OR (Pron Pl Nom) ; 
+LIST Pers1 = Sg1 Pl1 ;
+LIST Pers2 = Sg2 Pl2 ;
+LIST SGa = Sg Sg1 Sg2 Sg3 ;
+LIST PLa = Pl Pl1 Pl2 Pl3 ;
+
+SET NPSgNom = N + (Sg Nom) OR (Pron Nom) + SGa ; 
+SET NPPlNom = N + (Pl Nom) OR (Pron Nom) + PLa ; 
+SET NPSg3Nom = N + (Sg Nom) OR (Pron Sg3 Nom) ; 
+SET NPPl3Nom = N + (Pl Nom) OR (Pron Pl3 Nom) ; 
 
 SET NSgNom = N + (Sg Nom) ; 
 SET NSgAde = N + (Sg Ade) ; 
@@ -872,9 +879,6 @@ LIST Llainen = "(.*)lainen"r "(.*)läinen"r "(.*)mainen"r "(.*)llinen"r ;
 LIST W0 = <W:0> ;
 LIST Use_Hyphen = Use_Hyphen Use/Hyphen ;
 LIST Use_NoHyphens = Use_NoHyphens Use/NoHyphens ;
-
-LIST SGa = Sg Sg1 Sg2 Sg3;
-LIST PLa = Pl Pl1 Pl2 Pl3;
 
 
 # ========================================================================
@@ -1628,8 +1632,8 @@ REMOVE PPPCPs + Sg (*0 OLLA + Act + Pl BARRIER S-BOUNDARY) ;
 REMOVE PPPCPs + Pl (0 Act + Pl3)(*-1C NPlNom BARRIER S-BOUNDARY)(NEGATE *-1 Act + Pl3 BARRIER S-BOUNDARY)(NEGATE *1 Act + Pl3 BARRIER S-BOUNDARY) ; 
 
 SELECT ADes + A OR ADes + N;
-REMOVE APrc + Sg (0 PPPCPs)(0 Act + Sg3)(1C NSgNom)(NEGATE *-1 NPSgNom BARRIER S-BOUNDARY)(NEGATE *-1 Act + Sg3 BARRIER S-BOUNDARY)(NEGATE *1 Act + Sg3 BARRIER S-BOUNDARY) ; 
-REMOVE APrc + Pl (0 PPPCPs)(0 Act + Pl3)(1C NPlNom)(NEGATE *-1 Nom BARRIER S-BOUNDARY)(NEGATE *-1 Act + Pl3 BARRIER S-BOUNDARY)(NEGATE *1 Act + Pl3 BARRIER S-BOUNDARY) ; # osviittaa antavat
+REMOVE APrc + Sg (0 PPPCPs)(0 Act + Sg3)(1C NSgNom)(NEGATE *-1 NPSg3Nom BARRIER S-BOUNDARY)(NEGATE *-1 Act + Sg3 BARRIER S-BOUNDARY)(NEGATE *1 Act + Sg3 OR Pass + Ind + Prs BARRIER S-BOUNDARY) ; 
+REMOVE APrc + Pl (0 PPPCPs)(0 Act + Pl3)(1C NPlNom)(NEGATE *-1 NPSg3Nom OR NPPl3Nom BARRIER S-BOUNDARY)(NEGATE *-1 Act + Pl3 BARRIER S-BOUNDARY)(NEGATE *1 Act + Pl3 OR Pass + Ind + Prs BARRIER S-BOUNDARY) ; # osviittaa antavat
 
 SELECT V - PPPCPs (0 Qst OR Foc_ko)(-1 OMS OR Punct) ;
 
@@ -1882,10 +1886,10 @@ SELECT Act + Imprt + Sg1 (-1 CCC LINK *-1 Act + Imprt + Sg1 BARRIER S-BOUNDARY L
 SELECT Act + Imprt + Sg2 (-1 CCC LINK *-1 Act + Imprt + Sg2 BARRIER S-BOUNDARY LINK NOT 0 Ind); 
 SELECT Act + Imprt + Sg1 (-2 CCC LINK *-1 Act + Imprt + Sg1 BARRIER S-BOUNDARY LINK NOT 0 Ind); 
 SELECT Act + Imprt + Sg2 (-2 CCC LINK *-1 Act + Imprt + Sg2 BARRIER S-BOUNDARY LINK NOT 0 Ind); 
-SELECT Act + Imprt + Sg1 (NEGATE -1C NPSgNom)(*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Imprt + Sg1 LINK NOT 0 Ind); 
-SELECT Act + Imprt + Sg2 (NEGATE -1C NPSgNom)(*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Imprt + Sg2 LINK NOT 0 Ind); 
-SELECT Act + Imprt + Sg1 (NEGATE -1C NPSgNom)(*1 CCC BARRIER S-BOUNDARY LINK 2 Act + Imprt + Sg1 LINK NOT 0 Ind); 
-SELECT Act + Imprt + Sg2 (NEGATE -1C NPSgNom)(*1 CCC BARRIER S-BOUNDARY LINK 2 Act + Imprt + Sg2 LINK NOT 0 Ind); 
+SELECT Act + Imprt + Sg1 (NEGATE -1C NPSg3Nom OR Pers2)(*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Imprt + Sg1 LINK NOT 0 Ind); 
+SELECT Act + Imprt + Sg2 (NEGATE -1C NPSg3Nom OR Pers1)(*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Imprt + Sg2 LINK NOT 0 Ind); 
+SELECT Act + Imprt + Sg1 (NEGATE -1C NPSg3Nom OR Pers2)(*1 CCC BARRIER S-BOUNDARY LINK 2 Act + Imprt + Sg1 LINK NOT 0 Ind); 
+SELECT Act + Imprt + Sg2 (NEGATE -1C NPSg3Nom OR Pers1)(*1 CCC BARRIER S-BOUNDARY LINK 2 Act + Imprt + Sg2 LINK NOT 0 Ind); 
 
 SELECT Pass + Ind + Prs (-1 CCC LINK *-1 Pass + Ind + Prs BARRIER S-BOUNDARY); 
 SELECT Pass + Ind + Prs (-2 CCC LINK *-1 Pass + Ind + Prs BARRIER S-BOUNDARY); 
@@ -3264,16 +3268,18 @@ SELECT ("puoli") + N IF (NEGATE 0 WORD LINK -1 NGen) ;
 # REMOVE Pl3 IF (0 Sg3) (*-1C THIRD_PersON_SG BARRIER THIRD_PersON_SG) ;
 # REMOVE Sg3 IF (0 Pl3) (*-1C THIRD_PersON_PL BARRIER THIRD_PersON_PL) ;
 
-REMOVE PxPl3 IF (0 PxSg3)(*-1 Pers + Sg OR Rel + Sg OR Interr + Sg OR Qu + Sg BARRIER Pers + Pl OR S-BOUNDARY - KUIN OR NPlNom) ; # TP: rewritten
-REMOVE PxSg3 IF (0 PxPl3)(*-1 Pers + Pl OR Rel + Pl OR Interr + Pl OR Qu + Pl BARRIER Pers + Sg OR S-BOUNDARY - KUIN OR NSgNom) ; # TP: rewritten 
-REMOVE PxPl3 - ITSE IF (0 PxSg3)(*1 Pers + Sg BARRIER Pers + Pl OR S-BOUNDARY - KUIN) ; # TP
-REMOVE PxSg3 - ITSE IF (0 PxPl3)(*1 Pers + Pl BARRIER Pers + Sg OR S-BOUNDARY - KUIN) ; # TP 
-REMOVE PxSg3 IF (0 PxPl3)(*-1 NPlGen OR NPlNom BARRIER Pers + Sg OR NSgGen OR NSgNom LINK -1 CC LINK -1 NPlGen OR NPlNom) ; # TP
-REMOVE PxPl3 IF (0 PxSg3)(*-1 NSgGen OR NSgNom BARRIER Pers + Pl OR NPlGen OR NPlNom) ; # TP
-REMOVE PxSg3 IF (0 PxPl3)(*-1 NPlGen OR NPlNom BARRIER Pers + Sg OR NSgGen OR NSgNom) ; # TP
-REMOVE PxSg3 IF (0 PxPl3)(*1 NPlGen OR NPlNom BARRIER Pers + Sg OR NSgGen OR NSgNom LINK 1 CC LINK 1 NPlGen OR NPlNom) ; # TP
-REMOVE PxPl3 IF (0 PxSg3)(*1 NSgGen OR NSgNom BARRIER Pers + Pl OR NPlGen OR NPlNom) ; # TP
-REMOVE PxSg3 IF (0 PxPl3)(*1 NPlGen OR NPlNom BARRIER Pers + Sg OR NSgGen OR NSgNom) ; # TP
+REMOVE PxPl3 IF (0 PxSg3)(-1 Pers + Sg3 OR Rel + Sg OR Interr + Sg OR Qu + Sg) ; # TP: rewritten
+REMOVE PxSg3 IF (0 PxPl3)(-1 Pers + Pl3 OR Rel + Pl OR Interr + Pl OR Qu + Pl) ; # TP: rewritten 
+REMOVE PxPl3 IF (0 PxSg3)(*-1 Pers + Sg3 OR Rel + Sg OR Interr + Sg OR Qu + Sg BARRIER Pers + Pl3 OR S-BOUNDARY - KUIN OR NPlNom LINK NEGATE 1 PxSg3) ; # TP: rewritten
+REMOVE PxSg3 IF (0 PxPl3)(*-1 Pers + Pl3 OR Rel + Pl OR Interr + Pl OR Qu + Pl BARRIER Pers + Sg3 OR S-BOUNDARY - KUIN OR NSgNom LINK NEGATE 1 PxPl3) ; # TP: rewritten 
+REMOVE PxPl3 - ITSE IF (0 PxSg3)(*1 Pers + Sg3 BARRIER Pers + Pl3 OR S-BOUNDARY - KUIN) ; # TP
+REMOVE PxSg3 - ITSE IF (0 PxPl3)(*1 Pers + Pl3 BARRIER Pers + Sg3 OR S-BOUNDARY - KUIN) ; # TP 
+REMOVE PxSg3 IF (0 PxPl3)(*-1 NPlGen OR NPlNom BARRIER Pers + Sg3 OR NSgGen OR NSgNom LINK -1 CC LINK -1 NPlGen OR NPlNom) ; # TP
+REMOVE PxPl3 IF (0 PxSg3)(*-1 NSgGen OR NSgNom BARRIER Pers + Pl3 OR NPlGen OR NPlNom) ; # TP
+REMOVE PxSg3 IF (0 PxPl3)(*-1 NPlGen OR NPlNom BARRIER Pers + Sg3 OR NSgGen OR NSgNom) ; # TP
+REMOVE PxSg3 IF (0 PxPl3)(*1 NPlGen OR NPlNom BARRIER Pers + Sg3 OR NSgGen OR NSgNom LINK 1 CC LINK 1 NPlGen OR NPlNom) ; # TP
+REMOVE PxPl3 IF (0 PxSg3)(*1 NSgGen OR NSgNom BARRIER Pers + Pl3 OR NPlGen OR NPlNom) ; # TP
+REMOVE PxSg3 IF (0 PxPl3)(*1 NPlGen OR NPlNom BARRIER Pers + Sg3 OR NSgGen OR NSgNom) ; # TP
 # Px Verbs ??
 
 REMOVE PxPl3 IF (*-1 Sg + @SUBJ→ LINK NOT -1 CCC) ;
@@ -4777,8 +4783,8 @@ REMOVE V + Ind (0 Imprt + Sg2)(-1 COLON)(NEGATE *1 V BARRIER S-BOUNDARY) ;
 SELECT V + Ind (NEGATE *1 V BARRIER S-BOUNDARY)(NEGATE *-1 V BARRIER S-BOUNDARY) ;
 REMOVE Pot (0 Ind) (NEGATE *1 V BARRIER S-BOUNDARY + CC)(NEGATE *-1 V BARRIER S-BOUNDARY + CC) ;
 REMOVE InfA (0 Act + Sg3) (NEGATE *1 V BARRIER S-BOUNDARY)(NEGATE *-1 V BARRIER S-BOUNDARY) ;
-SELECT Ind + Pl3 (*0 NPPlNom OR HE + Nom BARRIER S-BOUNDARY)(NEGATE *1 V BARRIER S-BOUNDARY)(NEGATE *-1 V BARRIER S-BOUNDARY) ;
-SELECT Ind + Sg3 (*0 NPSgNom OR HÄN + Nom BARRIER S-BOUNDARY)(NEGATE *1 V BARRIER S-BOUNDARY)(NEGATE *-1 V BARRIER S-BOUNDARY) ;
+SELECT Ind + Pl3 (*0 NPPl3Nom BARRIER S-BOUNDARY)(NEGATE *1 V BARRIER S-BOUNDARY)(NEGATE *-1 V BARRIER S-BOUNDARY) ;
+SELECT Ind + Sg3 (*0 NPSg3Nom BARRIER S-BOUNDARY)(NEGATE *1 V BARRIER S-BOUNDARY)(NEGATE *-1 V BARRIER S-BOUNDARY) ;
 
 SELECT Ill (0C Ill OR Par)(*0 Ill-Advl BARRIER S-BOUNDARY OR CCC) ;
 SELECT Ela (0C Ela OR Par)(*0 Ela-Advl BARRIER S-BOUNDARY OR CCC) ;
@@ -4829,7 +4835,7 @@ REMOVE Prop + Sem (0 Prop - Sem) ;
 
 #REMOVE Prop (0 N - Prop + $$ALLCASES)(0 Prop + $$ALLCASES) ;
 
-REMOVE Pl + POSS_SUFF (0 Sg)(*0 Pron + Pers + Sg BARRIER S-BOUNDARY);
+REMOVE Pl + POSS_SUFF (0 Sg)(*0 Pron + Pers + SGa BARRIER S-BOUNDARY);
 
 
 
