@@ -7279,7 +7279,7 @@
 "<.>"
 	"." Punct &punct #7->2 
 "<YK:n>"
-	"YK" ACR Prop Sem/Org Sg Gen ?? &nmod:poss #1->2 
+	"YK" ACR Prop Sem/Org Sg Gen &nmod:poss #1->2 
 "<rauhanturvaajat>"
 	"rauhanturvaaja" N Pl Nom &nsubj #2->5 
 "<ja>"
@@ -7937,7 +7937,7 @@
 "<huolimatta>"
 	"huolimatta" Po &case #3->2 
 "<UPM:n>"
-	"UPM" ACR Prop Sem/Org Sg Gen ?? &nmod:poss #4->7 
+	"UPM" ACR Prop Sem/Org Sg Gen &nmod:poss #4->7 
 "<ensimmäisen>"
 	"ensimmäinen" Num Sg Gen &nummod #5->6 
 "<vuosipuoliskon>"
@@ -8071,7 +8071,7 @@
 "<.>"
 	"." Punct &punct #13->4 
 "<UPM:n>"
-	"UPM" ACR Prop Sem/Org Sg Gen ?? &nmod #1->10 
+	"UPM" ACR Prop Sem/Org Sg Gen &nmod #1->10 
 "<mukaan>"
 	"mukaan" Adp Po &case #2->1 
 "<sen>"
@@ -12207,7 +12207,7 @@
 "<ja>"
 	"ja" CC &cc #4->3 
 "<IAEA:n>"
-	"IAEA" N Prop Sg Gen ?? &conj #5->3 
+	"IAEA" ACR Prop Sg Gen &conj #5->3 
 "<viimeaikaisten>"
 	"viimeaikainen" A Pl Gen &amod #6->7 
 "<lausuntojen>"
@@ -18050,7 +18050,7 @@
 "<Lisäksi>"
 	"lisäksi" Adv &advmod #1->8 
 "<EU:n>"
-	"EU" ACR Prop Sem/Org Sg Gen ?? &nsubj #2->8 
+	"EU" ACR Prop Sem/Org Sg Gen &nsubj #2->8 
 "<ja>"
 	"ja" CC &cc #3->2 
 "<jäsenvaltioiden>"
@@ -18230,15 +18230,15 @@
 "<jatkettiin>"
 	"jatkaa" V Pss Ind Prt Pe4 &root #7->0 
 "<Globate>"
-	"Globate" N Prop Sg Nom ?? &name #8->9 
+	"Globate" N Prop Sg Nom &name #8->9 
 "<Oy:n>"
-	"oy" ACR Sg Gen ?? &nmod:poss #9->10 
+	"oy" ACR Sg Gen &nmod:poss #9->10 
 "<toimesta>"
 	"toimi" N Sg Ela &nmod #10->7 
 "<.>"
 	"." Punct &punct #11->7 
 "<Globaten>"
-	"Globate" N Prop Sg Gen ?? &nmod:poss #1->3 
+	"Globate" N Prop Sg Gen &nmod:poss #1->3 
 "<Teemu>"
 	"Teemu" N Prop Sem/Human Sg Nom &name #2->3 
 "<Välimäki>"
@@ -18555,7 +18555,7 @@
 "<ostopäällikköindeksin>"
 	"osto#päällikkö#indeksi" N Sg Gen &nsubj #6->9 
 "<ISM:n>"
-	"ISM" N Prop Sg Gen ?? &appos #7->6 
+	"ISM" ACR Prop Sg Gen &appos #7->6 
 "<kerrottiin>"
 	"kertoa" V Pss Ind Prt Pe4 &advcl #8->2 
 "<vajonneen>"
@@ -19419,7 +19419,7 @@
 "<Ylen>"
 	"Yle" N Prop Sem/Org Sg Gen &nmod:poss #11->12 
 "<TV1:n>"
-	"TV1" N Prop Sg Gen ?? &nmod:poss #12->13 
+	"TV1" ACR Prop Sg Gen &nmod:poss #12->13 
 "<Aamu-Tv:ssä>"
 	"Aamu#tv" ACR Sg Ine ?? &nmod #13->10 
 "<.>"
@@ -19569,7 +19569,7 @@
 "<Metsäyhtiö>"
 	"metsäyhtiö" N Sg Nom &compound:nn #1->2 
 "<UPM:n>"
-	"UPM" N Prop Sg Gen ?? &nmod:poss #2->3 
+	"UPM" ACR Prop Sg Gen &nmod:poss #2->3 
 "<liikevaihto>"
 	"liikevaihto" N Sg Nom &nsubj #3->4 
 "<kasvoi>"
@@ -19589,7 +19589,7 @@
 "<.>"
 	"." Punct &punct #11->4 
 "<UPM:n>"
-	"UPM" N Prop Sg Gen ?? &nmod #1->10 
+	"UPM" ACR Prop Sg Gen &nmod #1->10 
 "<mukaan>"
 	"mukaan" Adp Po &case #2->1 
 "<sen>"
@@ -19611,7 +19611,7 @@
 "<.>"
 	"." Punct &punct #11->10 
 "<UPM:n>"
-	"UPM" N Prop Sg Gen ?? &nmod:poss #1->2 
+	"UPM" ACR Prop Sg Gen &nmod:poss #1->2 
 "<osakkeen>"
 	"osake" N Sg Gen &nmod:gsubj #2->3 
 "<pudotus>"
@@ -19633,7 +19633,7 @@
 "<syöksyivät>"
 	"syöksyä" V Act Ind Prt Pl3 &root #3->0 
 "<UPM:n>"
-	"UPM" N Prop Sg Gen ?? &nmod:poss #4->5 
+	"UPM" ACR Prop Sg Gen &nmod:poss #4->5 
 "<vanavedessä>"
 	"vanavesi" N Sg Ine &nmod #5->3 
 "<,>"
@@ -23065,7 +23065,7 @@
 "<täysin>"
 	"täysin" Adv &advmod #8->7 
 "<EKP:n>"
-	"EKP" ACR Prop Sem/Org Sg Gen ?? &nmod:poss #9->10 
+	"EKP" ACR Prop Sem/Org Sg Gen &nmod:poss #9->10 
 "<kykyyn>"
 	"kyky" N Sg Ill &nmod #10->7 
 "<pitää>"
@@ -23087,7 +23087,7 @@
 "<.>"
 	"." Punct &punct #19->7 
 "<EKP:n>"
-	"EKP" ACR Prop Sem/Org Sg Gen ?? &nmod:poss #1->3 
+	"EKP" ACR Prop Sem/Org Sg Gen &nmod:poss #1->3 
 "<nykyiset>"
 	"nykyinen" A Pl Nom &amod #2->3 
 "<toimet>"
@@ -24630,7 +24630,7 @@
 "<.>"
 	"." Punct &punct #13->3 
 "<UPM:n>"
-	"UPM" N Prop Sg Gen ?? &nmod:poss #1->2 
+	"UPM" ACR Prop Sg Gen &nmod:poss #1->2 
 "<haltuun>"
 	"haltuun" Adv &advmod #2->3 
 "<siirtyy>"
@@ -24648,9 +24648,9 @@
 "<kumppanin>"
 	"kumppani" N Sg Gen &conj #9->5 
 "<Rhein>"
-	"Rhein" N Prop Sg Nom ?? &name #10->11 
+	"Rhein" N Prop Sg Nom &name #10->11 
 "<Papierin>"
-	"Papier" N Prop Sg Gen ?? &appos #11->9 
+	"Papier" N Prop Sg Gen &appos #11->9 
 "<painopaperitehdasta>"
 	"paino#paperi#tehdas" N Sg Par ?? &nsubj #12->3 
 "<Suomessa>"
@@ -24696,7 +24696,7 @@
 "<.>"
 	"." Punct &punct #15->4 
 "<UPM:n>"
-	"UPM" N Prop Sg Gen ?? &nmod:poss #1->2 
+	"UPM" ACR Prop Sg Gen &nmod:poss #1->2 
 "<osake>"
 	"osake" N Sg Nom &nsubj #2->4 
 "<oli>"
@@ -28268,7 +28268,7 @@
 "<rahoitusvakausvälineen>"
 	"rahoitus#vakaus#väline" N Sg Gen &nmod:poss #14->16 
 "<ERVV:n>"
-	"ERVV" N Prop Sg Gen ?? &appos #15->14 
+	"ERVV" ACR Prop Sg Gen &appos #15->14 
 "<toimintavaltuuksiin>"
 	"toiminta#valtuus" N Pl Ill &nmod #16->8 
 "<.>"
@@ -28650,7 +28650,7 @@
 "<6.5.2010>"
 	"6.5.2010" Num Card ?? &nmod #2->6 
 "<SKS:n>"
-	"SKS" N Prop Sg Gen ?? &nmod:poss #3->4 
+	"SKS" ACR Prop Sg Gen &nmod:poss #3->4 
 "<juhlasalissa>"
 	"juhlasali" N Sg Ine &nmod #4->6 
 "<Helsingissä>"
@@ -29735,7 +29735,7 @@
 "<pysytellyt>"
 	"pysytellä" V Act PrfPrc Sg Nom &root #9->0 
 "<WTO:n>"
-	"WTO" ACR Sg Gen ?? &nmod #10->9 
+	"WTO" ACR Sg Gen &nmod #10->9 
 "<ulkopuolella>"
 	"ulkopuolella" Adp Po &case #11->10 
 "<.>"
@@ -30619,7 +30619,7 @@
 "<kumpuavat>"
 	"kummuta" V Act Ind Prs Pl3 &acl:relcl #13->6 
 "<EU:n>"
-	"EU" ACR Prop Sem/Org Sg Gen ?? &nmod:poss #14->15 
+	"EU" ACR Prop Sem/Org Sg Gen &nmod:poss #14->15 
 "<ihmisoikeussopimuksesta>"
 	"ihmisoikeus#sopimus" N Sg Ela &nmod #15->13 
 "<,>"
@@ -33188,7 +33188,7 @@
 "<valmistettiin>"
 	"valmistaa" V Pss Ind Prt Pe4 &root #6->0 
 "<KTM:n>"
-	"KTM" N Prop Sg Gen ?? &nmod:poss #7->9 
+	"KTM" ACR Sg Gen &nmod:poss #7->9 
 "<omassa>"
 	"oma" A Sg Ine &amod #8->9 
 "<tehtaassa>"
@@ -34939,7 +34939,7 @@
 "<kertaa>"
 	"kerta" N Sg Par &nmod #5->3 
 "<TPS:n>"
-	"TPS" ACR Prop Sem/Org Sg Nom ?? &nmod:poss #6->7 
+	"TPS" ACR Prop Sem/Org Sg Gen &nmod:poss #6->7 
 "<edustusjoukkueeseen>"
 	"edustusjoukkue" N Sg Ill &nmod #7->3 
 "<kaudella>"
@@ -35911,7 +35911,7 @@
 "<yleisradioyhtiön>"
 	"yleisradioyhtiö" N Sg Gen &nsubj #4->6 
 "<BBC:n>"
-	"BBC" ACR Prop Sem/Org Sg Gen ?? &appos #5->4 
+	"BBC" ACR Prop Sem/Org Sg Gen &appos #5->4 
 "<tuottama>"
 	"tuottaa" V AgPrc Sg Nom &acl #6->7 
 "<saippuadraamasarja>"
@@ -37159,7 +37159,7 @@
 "<kuitenkin>"
 	"kuitenkin" Pcle &advmod #3->5 
 "<NATO:n>"
-	"NATO" ACR Sg Gen ?? &nmod:poss #4->5 
+	"NATO" ACR Prop Sg Gen &nmod:poss #4->5 
 "<tarkkailijajäsen>"
 	"tarkkailijajäsen" N Sg Nom &root #5->0 
 "<.>"
