@@ -7633,7 +7633,7 @@
 "<sopassa>"
 	"soppa" N Sg Ine &nmod #9->6 
 "<mukana>"
-	"mukana" Adp Po &case #10->9 
+	"mukana" Adv &advmod #10->6 
 "<.>"
 	"." Punct &punct #11->6 
 "<Filellä>"
@@ -8102,6 +8102,8 @@
 	"selvä" A Comp Pl Ins &advmod #4->2 
 "<tulonsiirtounioni>"
 	"tulonsiirto#unioni" N Sg Nom &nsubj #5->2 
+"<.>"
+	"." Punct &punct #6->2 
 "<Kaksi>"
 	"kaksi" Num Sg Nom &nummod #1->2 
 "<viikkoa>"
@@ -17194,6 +17196,8 @@
 	"turisti" N Sg Par &nsubj #2->3 
 "<loukkaantui>"
 	"loukkaantua" V Act Ind Prt Sg3 &root #3->0 
+"<.>"
+	"." Punct &punct #4->3 
 "<Ja>"
 	"ja" CC &cc #1->5 
 "<sinäkö>"
@@ -17535,6 +17539,8 @@
 	"mukava" A Sg Nom &root #4->0 
 "<jutella>"
 	"jutella" V Act InfA Sg Lat &csubj:cop #5->4 
+"<.>"
+	"." Punct &punct #6->4 
 "<Mutta>"
 	"mutta" CC &cc #1->6 
 "<ei>"
@@ -20489,7 +20495,7 @@
 "<Savon>"
 	"Savo" N Prop Sem/Geo Sg Gen &nmod:poss #16->17 
 "<Sanomat>"
-	"sanoma" N Pl Nom &nsubj #17->15 
+	"Sanoma" N Prop Pl Nom &nsubj #17->15 
 "<.>"
 	"." Punct &punct #18->4 
 "<–>"
@@ -21633,7 +21639,7 @@
 "<Helsingin>"
 	"Helsinki" N Prop Sem/Geo Sg Gen &nmod:poss #15->16 
 "<Sanomat>"
-	"sanoma" N Pl Nom &nsubj #16->14 
+	"Sanoma" N Prop Pl Nom &nsubj #16->14 
 "<.>"
 	"." Punct &punct #17->2 
 "<Punaiseksi>"
@@ -27107,6 +27113,8 @@
 	"paljon" Adv &advmod #5->6 
 "<kiinnosta>"
 	"kiinnostaa" V Act Ind Prs ConNeg &root #6->0 
+"<.>"
+	"." Punct &punct #7->6 
 "<Kun>"
 	"kun" CS &mark #1->5 
 "<kauppaketju>"
@@ -29252,7 +29260,7 @@
 "<−>"
 	"−" Punct &punct #1->5 
 "<Suomea>"
-	"suomi" N Sg Par &dobj #2->6 
+	"Suomi" N Prop Sem/Geo Sg Par &dobj #2->6 
 "<ei>"
 	"ei" V Neg Act Sg3 &neg #3->5 
 "<vielä>"
@@ -31186,7 +31194,7 @@
 "<.>"
 	"." Punct &punct #10->9 
 "<Mikkelinsaaret>"
-	"Mikkelinsaaret" N Prop Pl Nom ?? &nsubj:cop #1->15 
+	"Mikkelinsaaret" N Prop Pl Nom &nsubj:cop #1->15 
 "<(>"
 	"(" Punct &punct #2->4 
 "<ruots.>"
@@ -31198,7 +31206,7 @@
 "<on>"
 	"olla" V Act Ind Prs Sg3 &cop #6->15 
 "<Vöyri-Maksamaan>"
-	"Vöyri#Maksamaa" N Prop Sg Gen ?? &nmod:poss #7->8 
+	"Vöyri#Maksamaa" N Prop Sg Gen &nmod:poss #7->8 
 "<kunnassa>"
 	"kunta" N Sg Ine &nmod #8->14 
 "<noin>"
@@ -31248,7 +31256,7 @@
 "<.>"
 	"." Punct &punct #14->2 
 "<Mikkelinsaaret>"
-	"Mikkelinsaaret" N Prop Pl Nom ?? &nsubj:cop #1->4 
+	"Mikkelinsaaret" N Prop Pl Nom &nsubj:cop #1->4 
 "<ovat>"
 	"olla" V Act Ind Prs Pl3 &cop #2->4 
 "<melko>"
@@ -31280,7 +31288,7 @@
 "<.>"
 	"." Punct &punct #16->4 
 "<Mikkelinsaarten>"
-	"Mikkelinsaaret" N Prop Pl Gen ?? &nmod:poss #1->2 
+	"Mikkelinsaaret" N Prop Pl Gen &nmod:poss #1->2 
 "<luonto>"
 	"luonto" N Sg Nom &nsubj:cop #2->4 
 "<on>"
@@ -31290,7 +31298,7 @@
 "<.>"
 	"." Punct &punct #5->4 
 "<Mikkelinsaaret>"
-	"Mikkelinsaaret" N Prop Pl Nom ?? &nsubj #1->2 
+	"Mikkelinsaaret" N Prop Pl Nom &nsubj #1->2 
 "<koostuvat>"
 	"koostua" V Act Ind Prs Pl3 &root #2->0 
 "<avoimista>"
@@ -31450,7 +31458,7 @@
 "<osa>"
 	"osa" N Sg Nom &nsubj:cop #3->9 
 "<Mikkelinsaarista>"
-	"Mikkelinsaaret" N Prop Pl Ela ?? &nmod #4->3 
+	"Mikkelinsaaret" N Prop Pl Ela &nmod #4->3 
 "<on>"
 	"olla" V Act Ind Prs Sg3 &cop #5->9 
 "<rakennuskiellossa>"
@@ -31592,7 +31600,7 @@
 "<että>"
 	"että" CS &mark #4->8 
 "<Mikkelinsaarten>"
-	"Mikkelinsaaret" N Prop Pl Gen ?? &nmod:poss #5->6 
+	"Mikkelinsaaret" N Prop Pl Gen &nmod:poss #5->6 
 "<saaristoa>"
 	"saaristo" N Sg Par &dobj #6->8 
 "<on>"
@@ -31626,7 +31634,7 @@
 "<kalastuksen>"
 	"kalastus" N Sg Gen &dobj #6->5 
 "<Mikkelinsaarten>"
-	"Mikkelinsaaret" N Prop Pl Gen ?? &nmod:poss #7->8 
+	"Mikkelinsaaret" N Prop Pl Gen &nmod:poss #7->8 
 "<saaristossa>"
 	"saaristo" N Sg Ine &nmod #8->6 
 "<.>"
@@ -31726,7 +31734,7 @@
 "<myös>"
 	"myös" Adv &advmod #4->8 
 "<Mikkelinsaarten>"
-	"Mikkelinsaaret" N Prop Pl Gen ?? &nmod:poss #5->6 
+	"Mikkelinsaaret" N Prop Pl Gen &nmod:poss #5->6 
 "<parhaiten>"
 	"parhaiten" Adv &advmod #6->7 
 "<säilynyt>"
@@ -31768,7 +31776,7 @@
 "<asumaan>"
 	"asua" V Act InfMa Sg Ill &xcomp #9->8 
 "<Mikkelinsaarten>"
-	"Mikkelinsaaret" N Prop Pl Gen ?? &nmod:poss #10->12 
+	"Mikkelinsaaret" N Prop Pl Gen &nmod:poss #10->12 
 "<Västra>"
 	"Västra" N Prop Sem/Geo Sg Nom &name #11->12 
 "<Finnholmenille>"
@@ -31818,7 +31826,7 @@
 "<pois>"
 	"pois" Adv &advmod #13->12 
 "<Mikkelinsaarilta>"
-	"Mikkelinsaaret" N Pl Abl ?? &nmod #14->13 
+	"Mikkelinsaaret" N Prop Pl Abl &nmod #14->13 
 "<1990-luvulla>"
 	"1990-luku" N Sg Ade &nmod #15->12 
 "<.>"
@@ -31854,7 +31862,7 @@
 "<.>"
 	"." Punct &punct #15->2 
 "<Mikkelinsaarten>"
-	"Mikkelinsaaret" N Prop Pl Gen ?? &nmod:poss #1->2 
+	"Mikkelinsaaret" N Prop Pl Gen &nmod:poss #1->2 
 "<asukkaat>"
 	"asukas" N Pl Nom &nsubj #2->3 
 "<elivät>"
@@ -31912,7 +31920,7 @@
 "<osa>"
 	"osa" N Sg Nom &nsubj #3->6 
 "<Mikkelinsaarten>"
-	"Mikkelinsaaret" N Prop Pl Gen ?? &nmod:poss #4->5 
+	"Mikkelinsaaret" N Prop Pl Gen &nmod:poss #4->5 
 "<asukkaista>"
 	"asukas" N Pl Ela &nmod #5->3 
 "<hyödynsi>"
@@ -31942,7 +31950,7 @@
 "<kesämökkiasutusta>"
 	"kesämökki#asutus" N Sg Par &nsubj #2->4 
 "<Mikkelinsaarille>"
-	"Mikkelinsaaret" N Prop Pl All ?? &nmod #3->5 
+	"Mikkelinsaaret" N Prop Pl All &nmod #3->5 
 "<alkoi>"
 	"alkaa" V Act Ind Prt Sg3 &root #4->0 
 "<muodostua>"
@@ -33457,7 +33465,7 @@
 "<Helsingin>"
 	"Helsinki" N Prop Sem/Geo Sg Gen &nmod:poss #5->6 
 "<Sanomat>"
-	"sanoma" N Pl Nom &appos #6->4 
+	"Sanoma" N Prop Pl Nom &appos #6->4 
 "<.>"
 	"." Punct &punct #7->2 
 "<Arvid>"
@@ -38588,7 +38596,7 @@
 "<kautta>"
 	"kautta" Po &case #12->11 
 "<kulkevat>"
-	"kulkea" V Act Ind Prs Pl3 &acl #13->14 
+	"kulkea" V Act PrsPrc Pl Nom &acl #13->14 
 "<yhteydet>"
 	"yhteys" N Pl Nom &nsubj #14->7 
 "<.>"
