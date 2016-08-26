@@ -2417,6 +2417,8 @@ SELECT Pron + Par (-1 Par-OBJ - ("pitää")) ;
 
 SELECT ("menossa") + Adv (*-1 OLLA BARRIER S-BOUNDARY) ;
 
+REMOVE V (0 Pron + Ela) (-1D Num) ;
+
 
 # -- TP --
 
@@ -3421,7 +3423,7 @@ REMOVE Interj (NEGATE -1 CLB?) (NEGATE 0 VOI) ;
 SELECT Act + Sg3 (NEGATE *-1 NEGV BARRIER CLB) (-1C Nom) (-1 N_Pron_Q) (NEGATE -1 DV-US) (NEGATE -1 DA-US) (NEGATE 0 TUO) (NEGATE -1 Num) (NEGATE 1C VFIN) (NEGATE 2C VFIN) (NEGATE *-1 VFIN BARRIER CLB) (NEGATE 0 PIENIA_ELAA) (NEGATE -1 NOUN+InfA) (NEGATE 0 Cond) (NEGATE 0 Prt) ;
 
 ## *** IMPERATIVES ***
-SELECT Imprt (-1 BOS) (NEGATE *1C VFIN) (NEGATE 0 VOI) (NEGATE 0 KO) ;
+SELECT Imprt (-1 BOS) (NEGATE *1C VFIN OR InfA) (NEGATE 0 VOI) (NEGATE 0 KO) ;
 # NB "kysy voiko..."
 #SELECT Imprt ;  # (-2 CLB?) (-1 Conj) (*1 CLB? LINK NOT *-1 VFIN) ; TP don't understand
 REMOVE Imprt (*1C VFIN LINK NOT *-1 CLB?) (NEGATE 1 CLB?) ;
