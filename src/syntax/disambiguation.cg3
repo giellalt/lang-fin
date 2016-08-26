@@ -391,7 +391,7 @@ LIST AIVAN-IHAN = "aivan" "ihan" "melkein" ;
 LIST ALETA = "aleta" ; 
 LIST All = All ; 
 LIST All-POSP = "asti" ; 
-LIST ASIA = "asia" ; 
+LIST ASIA = "asia" "ruoka"; 
 LIST ASTI = "asti" "saakka" ; 
 LIST ASTUA = "astua" ; 
 LIST AUX-S = "itse" "kaikki" "kumpikin" "molemmat" ; 
@@ -1571,6 +1571,7 @@ SELECT A (0 Vuotias) ;
 SELECT A (0 Vuotias OR Hullu) (NEGATE 1 FINV) ; 
 REMOVE A (0 Vuotias OR Hullu) (1 FINV) ; # before subs
 
+REMOVE Prop + Lainen (-1 >>>) ;
 REMOVE A (0 Llainen)(0 ("perus(.*)"r)) ; # suomalainen = soome or soomlane
 REMOVE A (0 Lainen)(1 Prop)(2 Prop) ; # but organisations
 REMOVE KEEPORDER N (0 Lainen)(-1 ("muu"))(1 N)(0 $$ALLCASES)(-1 $$ALLCASES);
@@ -1609,13 +1610,26 @@ SELECT Sem_Geo (0/1 Geo_dir) ;
 SELECT SUB:1 Sem_Geo (0 Geo_word) ;
 SELECT SUB:1 Sem_Geo (0/1 Geo_word) ;
 
-#REMOVE KEEPORDER Prop (0  ("(.*)"r) + N - Prop) (<*-1C ("$1"v) + N - Prop) ; 
-SELECT KEEPORDER ("(.*)"r) + Prop (<*-1C ("$1"v) + Prop) ; 
+REMOVE N + Prop (0 CC OR CS OR Pr OR Adv OR Pcle OR Pron OR Acro)(-1 OMS)(NEGATE 1 Prop)(NEGATE 2 Prop) ;
+REMOVE N + Prop (0 CC OR CS OR Pr OR Adv OR Pcle OR Pron OR Acro)(-1 Punct OR Num OR ABC)(-2 OMS)(NEGATE 1 Prop)(NEGATE 2 Prop) ;
+REMOVE N + Prop (0 CC OR CS OR Pr OR Adv OR Pcle OR Pron OR Acro)(-1 Punct)(-2 Num OR ABC)(-3 OMS)(NEGATE 1 Prop)(NEGATE 2 Prop) ;
+
+REMOVE KEEPORDER ("(.*)"r) + Prop (<*-1C ("$1"v) - Prop) ; 
+REMOVE KEEPORDER ("(.*)"r) + Prop (*1C ("$1"v) - Prop) ; 
+
+SELECT KEEPORDER ("(.*)"r) + Prop (<*-1C ("$1"v) + Prop LINK NOT -1 >>>) ; 
+SELECT KEEPORDER ("(.*)"r) + Prop (*-1 >>> LINK <*-1C ("$1"v) + Prop) ; 
+
+LIST UNP = "markkinat" "yhtiö" "sarja" "vaimo";
+SELECT N + Prop + Nom (NEGATE 0 UNP) (1 Ref-VERB) ;
+SELECT N + Prop + Nom (NEGATE 0 UNP) (1 OLLA)(2 Ref-VERB) ;
 
 SELECT NORJA; # lemma
-SELECT ("Helsinki") OR ("Turku") OR NORJA + Prop;
+SELECT ("Valio") OR ("Helsinki") OR ("Turku") OR NORJA + Prop ;
 #SUBSTITUTE (N) (N Prop) N + UP - Prop (NEGATE -1 OMS);
-#SELECT Prop + UP (NEGATE -1 OMS); # for transl common names are preferred
+
+# for transl common names are preferred
+REMOVE Prop + Nom (NEGATE 1 Prop)(NEGATE -1 Prop)(*1 OLLA BARRIER S-BOUNDARY LINK *1 ASIA + Nom_Par BARRIER S-BOUNDARY OR PCP); 
 SELECT Prop + UP (NEGATE -1 OMS OR Prop OR Punct)(NEGATE 1 Prop); # still
 SELECT Prop + UP (-1 Prop OR Punct - OMS)(NEGATE -2 OMS)(NEGATE -3 OMS)(NEGATE 1 Prop); # still
 
@@ -1701,6 +1715,7 @@ REMOVE Adv OR Pcle (0 Interj)(-1 >>> OR Punct OR Interj);
 REMOVE N OR V (0 Interj)(-1 >>> OR Interj)(1 Punct - COLON OR CS OR Interj);
 SELECT HYVA_HUONO (-1 >>> OR Punct);
 
+SELECT Imprt (-1 >>>)(1 COMMA)(2 ETTA OR Interr) ;
 SELECT Imprt (-1 >>>)(1 COMMA)(*1 ("?") OR ("!")) ;
 SELECT FINV + Sg1 (-1 OMS)(1 CLB OR Punct)(2 CS)(*1 V + Sg1);
 SELECT FINV + Pl1 (-1 OMS)(1 CLB OR Punct)(2 CS)(*1 V + Pl1);
@@ -1767,17 +1782,17 @@ REMOVE Sem_Human + Pl;
 # Particle verbs
 
 # mostly particle follows the verb, but have to check further if the previous-word condition is also needed
-SUBSTITUTE Adv AdvPcle Ottaa-pcle - Pcle (*-1 ("ottaa") BARRIER S-BOUNDARY) ; # mukaan, vastaan
-SUBSTITUTE Adv AdvPcle Jättaa-pcle - Pcle (*-1 ("jättää") BARRIER S-BOUNDARY) ; # väliin
-SUBSTITUTE Adv AdvPcle Nostaa-pcle - Pcle (*-1 ("nostaa") BARRIER S-BOUNDARY) ; # sisälle
-SUBSTITUTE Adv AdvPcle Tulla-pcle - Pcle (*-1 ("tulla") BARRIER S-BOUNDARY) ; # vastaan
+SUBSTITUTE Adv AdvPcle Ottaa-pcle - AdvPcle (*-1 ("ottaa") BARRIER S-BOUNDARY) ; # mukaan, vastaan
+SUBSTITUTE Adv AdvPcle Jättaa-pcle - AdvPcle (*-1 ("jättää") BARRIER S-BOUNDARY) ; # väliin
+SUBSTITUTE Adv AdvPcle Nostaa-pcle - AdvPcle (*-1 ("nostaa") BARRIER S-BOUNDARY) ; # sisälle
+SUBSTITUTE Adv AdvPcle Tulla-pcle - AdvPcle (*-1 ("tulla") BARRIER S-BOUNDARY) ; # vastaan
 SELECT AdvPcle;
 
 # if particle precedes the verb (mukaan on otettu) , then have to be cautious:
-SUBSTITUTE Adv AdvPcle Ottaa-pcle - Pcle (*1 ("ottaa") BARRIER S-BOUNDARY) ; # mukaan, vastaan
-SUBSTITUTE Adv AdvPcle Jättaa-pcle - Pcle (*1 ("jättää") BARRIER S-BOUNDARY) ; # väliin
-SUBSTITUTE Adv AdvPcle Nostaa-pcle - Pcle (*1 ("nostaa") BARRIER S-BOUNDARY) ; # sisälle
-SUBSTITUTE Adv AdvPcle Tulla-pcle - Pcle (*1 ("tulla") BARRIER S-BOUNDARY) ; # vastaan
+SUBSTITUTE Adv AdvPcle Ottaa-pcle - AdvPcle (*1 ("ottaa") BARRIER S-BOUNDARY) ; # mukaan, vastaan
+SUBSTITUTE Adv AdvPcle Jättaa-pcle - AdvPcle (*1 ("jättää") BARRIER S-BOUNDARY) ; # väliin
+SUBSTITUTE Adv AdvPcle Nostaa-pcle - AdvPcle (*1 ("nostaa") BARRIER S-BOUNDARY) ; # sisälle
+SUBSTITUTE Adv AdvPcle Tulla-pcle - AdvPcle (*1 ("tulla") BARRIER S-BOUNDARY) ; # vastaan
 SELECT AdvPcle (NEGATE 0 Po); 
 SELECT AdvPcle (0 Po - GenLeft)(NEGATE -1 Par);
 SELECT AdvPcle (0 Po - ParLeft)(NEGATE -1 Gen);
@@ -1901,7 +1916,7 @@ SELECT Pass + Ind + Prs (NEGATE -1C NPSgNom)(*1 CCC BARRIER S-BOUNDARY LINK 1 Pa
 SELECT Pass + Ind + Prs (NEGATE -1C NPSgNom)(*1 CCC BARRIER S-BOUNDARY LINK 2 Pass + Ind + Prs); 
 
 SELECT InfA (-1 CCC LINK *-1C InfA BARRIER S-BOUNDARY); 
-SELECT InfA (*1 CCC BARRIER S-BOUNDARY LINK 1C InfA LINK NOT *1 Ind + Sg3 BARRIER S-BOUNDARY); 
+SELECT InfA (*1 CCC BARRIER S-BOUNDARY OR InfA LINK 1C InfA LINK NOT *1 Ind + Sg3 BARRIER S-BOUNDARY); 
 SELECT InfMa (-1 CCC LINK *-1C InfMa BARRIER S-BOUNDARY); 
 SELECT InfMa (*1 CCC BARRIER S-BOUNDARY LINK 1C InfMa); 
 
@@ -2553,8 +2568,6 @@ SELECT A + ("tunnettu"i) ;
 # added 20.01.2015 - FMT+KM
 SELECT A IF (0C A OR N) (-1 AD-PALJON) ;
   # Mutta eilen oli erittäin kylmää!
-
-REMOVE Prop (0 CC OR CS OR Pr OR Adv OR Pron)(-1 BOS OR QUO) ;
 
 # added 20.01.2015 - FMT+KM
 SELECT A + Gen IF (0C A OR N) (1 COMMA LINK 1C A + Gen) ;
