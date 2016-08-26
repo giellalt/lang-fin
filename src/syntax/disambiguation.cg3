@@ -176,8 +176,8 @@ LIST PLa = Pl Pl1 Pl2 Pl3 ;
 
 SET NPSgNom = N + (Sg Nom) OR (Pron Nom) + SGa ; 
 SET NPPlNom = N + (Pl Nom) OR (Pron Nom) + PLa ; 
-SET NPSg3Nom = N + (Sg Nom) OR (Pron Sg3 Nom) ; 
-SET NPPl3Nom = N + (Pl Nom) OR (Pron Pl3 Nom) ; 
+SET NPSg3Nom = N + (Sg Nom) OR (Pron Sg Nom) OR (Pron Sg3 Nom) ; 
+SET NPPl3Nom = N + (Pl Nom) OR (Pron Pl Nom) OR (Pron Pl3 Nom) ; 
 
 SET NSgNom = N + (Sg Nom) ; 
 SET NSgAde = N + (Sg Ade) ; 
