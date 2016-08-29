@@ -1637,6 +1637,8 @@ SELECT PARI_PUOLI + Num (1 Num) ; # puoli kahdeksan
 
 SELECT ("joka") + Indef (1 TIME-WORD + Nom); # iga aasta
 SELECT ("päivä") + NSgPar (*1 ("!") OR  ("?"));
+SELECT ("ensi") + Pcle (1 TIME-WORD);
+
 SELECT TIME-WORD + Nom (-1 Pron OR ("koko")); 
 
 SELECT ("ollenkaan") + Adv OR ("<lienee>i") + Pot ;
@@ -1743,7 +1745,7 @@ SELECT ASgPar (-1 ("<mitään>"));
 "<syövät>" REMOVE N OR A (NEGATE *-1 V BARRIER Punct)(NEGATE *1 V BARRIER Punct); 
 
 SELECT ("(.*)vuosi"r) (1 Num OR Pron);
-SELECT ("(.*)vuosi"r) (-1 Num OR APrc OR Pron);
+SELECT ("(.*)vuosi"r) (-1 Num OR APrc OR Pron OR VIIME);
 SELECT PARI_PUOLI + Num + Nom (1 NSgPar);
 SELECT PARI_PUOLI + Num + $$ALLCASES (1 N + Sg + $$ALLCASES);
 SELECT Num + Par (-1C Num + Nom);
