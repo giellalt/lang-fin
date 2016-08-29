@@ -22157,7 +22157,7 @@
 "<tärkeää>"
 	"tärkeä" A Sg Par &root #3->0 
 "<tunnistaa>"
-	"tunnistaa" V Act Ind Prs Sg3 &xcomp:ds #4->3 
+	"tunnistaa" V Act InfA Sg Lat &xcomp:ds #4->3 
 "<ekstaasin>"
 	"ekstaasi" N Sg Gen &nmod:gsubj #5->7 
 "<myönteiset>"
@@ -26429,7 +26429,7 @@
 "<hyvä>"
 	"hyvä" A Sg Nom &root #4->0 
 "<muistaa>"
-	"muistaa" V Act Ind Prs Sg3 &xcomp:ds #5->4 
+	"muistaa" V Act InfA Sg Lat &xcomp:ds #5->4 
 "<,>"
 	"," Punct &punct #6->15 
 "<että>"
@@ -35133,7 +35133,7 @@
 "<vaikeuksia>"
 	"vaikeus" N Pl Par &nsubj #14->13 
 "<löytää>"
-	"löytää" V Act Ind Prs Sg3 &acl #15->14 
+	"löytää" V Act InfA Sg Lat &acl #15->14 
 "<parasta>"
 	"hyvä" A Sup Sg Par &amod #16->17 
 "<maalijyväänsä>"
@@ -38627,7 +38627,7 @@
 "<ei>"
 	"ei" V Neg Act Sg3 &neg #2->3 
 "<ollut>"
-	"olla" V Pss Ind Prt ConNeg Sg &root #3->0 
+	"olla" V Act Ind Prt ConNeg Sg &root #3->0 
 "<laivoja>"
 	"laiva" N Pl Par &nsubj #4->3 
 "<rikkoutumisen>"
