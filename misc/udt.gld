@@ -4662,7 +4662,7 @@
 "<mukana>"
 	"mukana" Adp Po &case #3->2 
 "<matkustaa>"
-	"matkustaa" V Act InfA Sg Lat &root #4->0 
+	"matkustaa" V Act Ind Prs Sg3 &root #4->0 
 "<työmarkkinakeskusjärjestöjen>"
 	"työmarkkina#keskusjärjestö" N Pl Gen &nmod:poss #5->6 
 "<edustajia>"
@@ -11677,7 +11677,7 @@
 "<Älä>"
 	"ei" V Neg Act Imprt Sg2 &neg #1->2 
 "<paista>"
-	"paistaa" V Imprt Prs ConNeg &root #2->0 
+	"paistaa" V Act Imprt Prs ConNeg Sg2 &root #2->0 
 "<liian>"
 	"liian" Adv &advmod #3->4 
 "<kauan>"
@@ -16843,7 +16843,7 @@
 "<muuta>"
 	"muu" Pron Sg Par &nsubj #6->7 
 "<ollutkaan>"
-	"olla" V Act PrfPrc Sg Nom Foc/kaan &root #7->0 
+	"olla" V Act Ind Prt ConNeg Sg Foc/kaan &root #7->0 
 "<vanhaa>"
 	"vanha" A Sg Par &amod #8->9 
 "<myllyä>"
@@ -16949,9 +16949,9 @@
 "<ei>"
 	"ei" V Neg Act Sg3 &neg #9->11 
 "<juurikaan>"
-	"juuri" Adv ?? &advmod #10->11 
+	"juuri" Adv &advmod #10->11 
 "<näkynyt>"
-	"näkyä" V Act PrfPrc Sg Nom &advcl #11->4 
+	"näkyä" V Act Ind Prt ConNeg Sg &advcl #11->4 
 "<suunnattoman>"
 	"suunnaton" A Sg Gen &amod #12->13 
 "<hiuspehkona>"
@@ -17750,7 +17750,7 @@
 "<en>"
 	"ei" V Neg Act Sg1 &neg #3->4 
 "<voittanutkaan>"
-	"voittaa" V Act PrfPrc Sg Nom Foc/kaan &root #4->0 
+	"voittaa" V Act Ind Prt ConNeg Sg Foc/kaan &root #4->0 
 "<lotossa>"
 	"lotto" N Sg Ine &nmod #5->4 
 "<kymmentä>"
@@ -23649,7 +23649,7 @@
 "<eivät>"
 	"ei" V Neg Act Pl3 &neg #3->4 
 "<hetkauttaneet>"
-	"hetkauttaa" V Act PrfPrc Pl Nom &root #4->0 
+	"hetkauttaa" V Act Ind Prt ConNeg Pl &root #4->0 
 "<jyväskyläläisten>"
 	"jyväskyläläinen" A Pl Gen &amod #5->9 
 "<tieto->"
@@ -23725,7 +23725,7 @@
 "<irtisanomiset>"
 	"irtisanominen" N Pl Nom &nsubj #12->13 
 "<näkyneet>"
-	"näkyä" V Act PrfPrc Pl Nom &conj #13->6 
+	"näkyä" V Act Ind Prt ConNeg Pl &conj #13->6 
 "<työttömyyden>"
 	"työttömyys" N Sg Gen &nmod:gsubj #14->15 
 "<lisääntymisenä>"
@@ -24353,8 +24353,7 @@
 "<pr-firma>"
 	"pr-#firma" N Sg Nom &nsubj #8->9 
 "<vastaisi>"
-	"vasta" N Pl Gen Use/Rare PxSg2 &ccomp #9->2 
-	"vastata" V Act Cond Sg3 ?? &ccomp #9->2 
+	"vastata" V Act Cond Sg3 &ccomp #9->2 
 "<tähän>"
 	"tämä" Pron Dem Sg Ill &det #10->11 
 "<pyyntöön>"
@@ -29200,7 +29199,7 @@
 "<eivät>"
 	"ei" V Neg Act Pl3 &neg #4->5 
 "<saaneet>"
-	"saada" V Act PrfPrc Pl Nom &root #5->0 
+	"saada" V Act Ind Prt ConNeg Pl &root #5->0 
 "<käydä>"
 	"käydä" V Act InfA Sg Lat &xcomp #6->5 
 "<koulua>"
@@ -33345,7 +33344,7 @@
 "<eivät>"
 	"ei" V Neg Act Pl3 &neg #3->4 
 "<tehonneet>"
-	"tehota" V Act PrfPrc Pl Nom &advcl #4->7 
+	"tehota" V Act Ind Prt ConNeg Pl &advcl #4->7 
 "<,>"
 	"," Punct &punct #5->4 
 "<Rodrigues>"
@@ -38628,7 +38627,7 @@
 "<ei>"
 	"ei" V Neg Act Sg3 &neg #2->3 
 "<ollut>"
-	"olla" V Pss PrfPrc Pl Nom &root #3->0 
+	"olla" V Pss Ind Prt ConNeg Sg &root #3->0 
 "<laivoja>"
 	"laiva" N Pl Par &nsubj #4->3 
 "<rikkoutumisen>"
