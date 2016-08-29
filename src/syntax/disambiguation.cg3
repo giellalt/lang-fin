@@ -520,7 +520,7 @@ LIST NORJA = "norja" "suomi" "ruotsi" "tanska" "Norja" "Suomi" "Ruotsi" "Tanska"
 LIST SITTEN = "sitten" ; 
 LIST SUHTEEN = "suhteen" ; 
 
-LIST Num-words = "tuhat" "miljoona" ;
+LIST Num-words = "tuhat" "miljoona" "miljardi" ;
 LIST Num-PUOLET-KOLMANNES = Num "puoli" "kolmannes" "neljännes" "viidennes" "kuudennes" "seitsemännes" "kahdeksannes" "yhdeksännes" ; 
 
 LIST UNDECL_ADJ = "eka" "ensi" "viime" "koko" "ainut" "ehta" "haka" ;
@@ -1691,6 +1691,11 @@ SELECT Ind + ("voida") (*0 InfA OR ("huonosti") BARRIER S-BOUNDARY OR InfA-VERB)
 REMOVE V (0 VUO_VOI)(NEGATE *0 InfA OR ("miten") OR ("<sille>") OR ("huonosti") BARRIER S-BOUNDARY); # voi
 SELECT Interj + ("voi") (NEGATE 0 V)(-1 OMS)(1 Punct OR CS OR Interj)(NEGATE 2 NSgNom); # voi
 
+REMOVE AgPrc + $$ALLCASES (NEGATE 1 N + $$ALLCASES);
+REMOVE AgPrc + ALLCASES (-1 InfMa-Ill);
+SELECT AgPrc + $$ALLCASES (-1C NomHEAD + Gen)(1C N + $$ALLCASES);
+# heidän tuomistaan kaulakoruista
+
 SELECT InfA (NEGATE 0 Pron)(1 NES OR InfA-VERB LINK NOT 0 InfA LINK NOT *1 InfA-VERB BARRIER FINV OR S-BOUNDARY OR Conj OR Punct);
 SELECT InfA (NEGATE 0 Pron OR InfA-VERB)(1 NES OR InfA-VERB LINK NOT *1 InfA-VERB BARRIER FINV OR S-BOUNDARY OR Conj OR Punct);
 SELECT InfA (NEGATE 0 Pron)(-1 NES OR InfA-VERB);
@@ -1700,14 +1705,10 @@ REMOVE Act + Ind + Sg3 (0 InfA)(NEGATE 0 Pron)(*-1C InfA-VERB BARRIER FINV OR S-
 SELECT InfA (NEGATE 0 Pron OR InfA-VERB)(-1 CCC LINK *-1C InfA BARRIER FINV OR S-BOUNDARY OR Conj OR Punct);
 REMOVE InfA (0 Act + Ind + Sg3)(*-1 NSgNom OR Pron + NomSg BARRIER S-BOUNDARY) (NEGATE *1 FINV - Pot - Neg BARRIER S-BOUNDARY OR Conj OR Punct)(NEGATE *-1 FINV - Pot - Neg BARRIER S-BOUNDARY OR Conj OR Punct) ; 
 REMOVE InfA (0 Act + Ind + Sg3)(*-1 COMMA LINK *-1 NSgNom OR Pron + NomSg OR Act + Ind + Sg3 BARRIER S-BOUNDARY) (NEGATE *1 FINV - Pot - Neg BARRIER S-BOUNDARY OR Conj OR Punct)(NEGATE *-1 FINV - Pot - Neg BARRIER S-BOUNDARY OR Conj OR Punct) ; 
+REMOVE InfA (0 Act + Ind + Sg3 OR N + Par)(*0C InfMa BARRIER S-BOUNDARY OR Conj OR Punct) ; 
 
 REMOVE Pron + Qst (0 Pron + Foc_ko - Qst) ; # may be the other way round, would be nice, if agreed
 REMOVE Adv + Qst (0 Adv + Foc_ko - Qst) ;
-
-REMOVE AgPrc + $$ALLCASES (NEGATE 1 N + $$ALLCASES);
-REMOVE AgPrc + ALLCASES (-1 InfMa-Ill);
-SELECT AgPrc + $$ALLCASES (-1C NomHEAD + Gen)(1C N + $$ALLCASES);
-# heidän tuomistaan kaulakoruista
 
 SELECT Der_minen + Pl - Ine - Ill (NEGATE -1 ("<mitään>")); 
 SELECT Der_minen - Ine - Ill OR N + Pl (0 Der_minen)(NEGATE -1 ("<mitään>")); # probably for transl better to derive (as only a few may be in dict)
@@ -2191,7 +2192,7 @@ SELECT N (0C GenPl) (-1C APlGen) ;
 
 SELECT A + NomSg (NEGATE 0 PPPCPs)(1C ASgNom - ("oma")) ;
 SELECT ASgNom (1C ASgNom - ("oma") - PrfPrc) ;
-SELECT APlNom (1C APlNom) ;
+SELECT APlNom (1C APlNom) (NEGATE 0 Ind) ;
 SELECT ASgPar (1C ASgPar) ;
 SELECT APlPar (1C APlPar) ;
 SELECT ASgGen (1C ASgGen) ;
@@ -2391,6 +2392,8 @@ SELECT IHM + NPlNom (1 Prop)(2 CC)(3 Prop)(4 FINV + Pl3)(NEGATE *-1 CC OR Num BA
 REMOVE FINV + Sg3 (*-1C FINV + Sg3 BARRIER CCC OR S-BOUNDARY) ;
 SELECT FINV + Sg3 - UP (-1C NSgNom) ;
 SELECT FINV + Pl3 - UP (-1C NPlNom) ;
+SELECT FINV + Sg3 - UP (-2C NUMS)(-1 NSgPar OR N + Ela) ;
+SELECT FINV + Pl3 - UP (-2C Num)(-1 NSgPar OR N + Ela) ;
 SELECT FINV + Sg3 - UP (-1 OMS)(1C NSgNom) ;
 SELECT FINV + Pl3 - UP (-1 OMS)(1C NPlNom) ;
 SELECT FINV + Sg3 - UP (-1 Adv)(-2 OMS)(1C NSgNom) ;
