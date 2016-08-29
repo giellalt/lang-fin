@@ -998,9 +998,9 @@ SET CP = Interr OR Rel OR QWords OR JOS_KUN_KOSKA_VAIKKA;
 
 SET V-MAIN = V - COPULAS - Neg - MOD-ASP OR ("orrut") ;
 
-SET S-BOUNDARY  = Interr OR Rel OR ("mutta") OR ("sitten") + CC OR QWords OR (";") OR (":") OR ("-") OR ("–") OR CS OR ("eikä") ;
-SET S-BOUNDARY1  = Interr OR Rel OR ("mutta") OR ("sitten") + CC OR QWords OR (";") OR (":") OR ("-") OR ("–") ;
-SET S-BOUNDARY2 = Interr OR Rel OR ("mutta") OR ("sitten") + CC OR QWords OR (";") OR (":") OR ("-") OR ("–") OR (@CVP) ;
+SET S-BOUNDARY  = Interr OR Rel OR ("miksi") OR ("mutta") OR ("sitten") + CC OR QWords OR (";") OR (":") OR ("-") OR ("–") OR CS OR ("eikä") ;
+SET S-BOUNDARY1  = Interr OR Rel OR ("miksi") OR ("mutta") OR ("sitten") + CC OR QWords OR (";") OR (":") OR ("-") OR ("–") ;
+SET S-BOUNDARY2 = Interr OR Rel OR ("miksi") OR ("mutta") OR ("sitten") + CC OR QWords OR (";") OR (":") OR ("-") OR ("–") OR (@CVP) ;
 
 # OR Sup
 SET SV-BOUNDARY = S-BOUNDARY OR InfV OR V-MAIN - PrsPrc ;
@@ -4824,7 +4824,7 @@ SELECT LOC-CASE (0C LOC-CASE OR Par)(*0 LOC-V BARRIER S-BOUNDARY OR CCC) ;
 SELECT Par (0C LOC-CASE OR Par)(*0 Par-OBJ BARRIER S-BOUNDARY OR CCC) ;
 
 SELECT NNom (NEGATE 0 V)(NEGATE *1 Nom BARRIER S-BOUNDARY OR V OR CCC OR NNom)(*-1 ("kuten") BARRIER S-BOUNDARY OR V OR CCC OR NNom) ;
-SELECT Gen_Par (0 (@←OBJ)) ;
+SELECT Gen_Par (0 (@←OBJ))(NEGATE 0 V) ;
 
 SELECT NNom (NEGATE 0 V)(-1 >>>)(NEGATE *1 NNom) ;
 SELECT NNom + @SUBJ (NEGATE 0 V)(NEGATE *-1 @SUBJ BARRIER S-BOUNDARY)(NEGATE *1 @SUBJ OR NPSg3Nom BARRIER S-BOUNDARY) ;
