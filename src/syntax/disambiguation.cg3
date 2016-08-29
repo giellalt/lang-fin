@@ -1651,7 +1651,7 @@ SELECT ADes + A OR ADes + N;
 REMOVE APrc + Sg (0 PPPCPs)(0 Act + Sg3)(1C NSgNom)(NEGATE *-1 NPSg3Nom BARRIER S-BOUNDARY)(NEGATE *-1 Act + Sg3 BARRIER S-BOUNDARY)(NEGATE *1 Act + Sg3 OR Pass + Ind + Prs BARRIER S-BOUNDARY) ; 
 REMOVE APrc + Pl (0 PPPCPs)(0 Act + Pl3)(1C NPlNom)(NEGATE *-1 NPSg3Nom OR NPPl3Nom BARRIER S-BOUNDARY)(NEGATE *-1 Act + Pl3 BARRIER S-BOUNDARY)(NEGATE *1 Act + Pl3 OR Pass + Ind + Prs BARRIER S-BOUNDARY) ; # osviittaa antavat
 
-SELECT V - PPPCPs (0 Qst OR Foc_ko)(-1 OMS OR Punct) ;
+SELECT V - PPPCPs (0 Qst OR Foc_ko)(-1 OMS OR Punct)(NEGATE *1C FINV - Pot - Neg BARRIER S-BOUNDARY OR CC OR Punct) ;
 
 REMOVE FINV - Pot - Neg (*1C FINV - Pot - Neg BARRIER S-BOUNDARY OR CC OR Punct LINK NOT *-1/1 Conj) ; 
 REMOVE FINV - Pot - Neg (*-1C FINV - Pot - Neg BARRIER S-BOUNDARY OR CC OR Punct LINK NOT *1/1 Conj) ; 
@@ -1922,6 +1922,9 @@ SELECT InfMa (*1 CCC BARRIER S-BOUNDARY LINK 1C InfMa);
 
 SELECT Act + Ind + Sg3 (-1 CS)(NEGATE *1 FINV BARRIER S-BOUNDARY); 
 
+REMOVE PrfPrc + Pl (0 PrfPrc + Sg) (-1C OLLA + Act + SGa)(NEGATE 1 N + Pl OR A + NomPl); 
+REMOVE PrfPrc + Pl (0 OLLA + PrfPrc + Sg) (-1C OLLA + Act + SGa); 
+# olisi (Sg3) ollut (Pl or Sg) tuhoisat (Subj Pl!)
 
 # Pcle A, Pcle, Adv
 
