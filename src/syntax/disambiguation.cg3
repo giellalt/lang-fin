@@ -413,7 +413,7 @@ LIST JALKEEN = "jälkeen" ;
 LIST JOHDOSTA = "johdosta" ; 
 LIST JOKA = "joka" ; 
 LIST JOKIN = "jokin" ; 
-LIST JUURI = "juuri" "koko" ; 
+LIST JUURI = "juuri" ; 
 LIST KAIKKI = "kaikki" ; 
 LIST KAIKKIAAN = "kaikkiaan" ; 
 LIST KANSSA = "kanssa" ; 
@@ -1527,7 +1527,7 @@ REMOVE Neg (0 V - Neg)(NEGATE *1 ConNeg) ; # elä = ei/elää
 SELECT ("ei") + V ;
 
 REMOVE ConNeg (NEGATE *-1 Neg) ;
-"<juuri>" REMOVE ConNeg (*1 ConNeg BARRIER S-BOUNDARY OR Punct OR V + Neg);
+REMOVE ConNeg (0 JUURI)(*1 ConNeg BARRIER S-BOUNDARY OR Punct OR V + Neg);
 
 SELECT ConNeg (-1 Neg)(NEGATE 0 Pron) ;
 SELECT ConNeg (-1 Neg)(NEGATE 1 ConNeg OR Conj OR Punct) ;
@@ -2488,7 +2488,7 @@ IFF Pron + Ins (1C Ins) ;
 "<huolimatta>" SELECT Pr (NEGATE -1 Ela) (2 Ela) ;
 "<häntä>" SELECT Pron (-1 NEGV) ;
 "<ilmi>" IFF Adv (1 ELAVA-SELVA) ;
-"<juuri>" SELECT Adv (NEGATE 1 VFIN) ;
+SELECT JUURI + Adv (NEGATE 1 VFIN - ConNeg) ;
 "<juurikaan>" SELECT Adv ;
 "<jäljelle>" SELECT Adv ;
 "<kautta>" SELECT Po (-1 Gen_Par) ;
@@ -2881,7 +2881,7 @@ SELECT NSgPar + POSS_SUFF (0 Ill) (*-1 Par-OBJ LINK NOT 0 KOOTA LINK NOT *1 CLB?
 SELECT NSgPar + POSS_SUFF (0 Ill) (1C Comp) (NEGATE -1 Ill) (NEGATE -2 Ill) ;
 REMOVE NSgPar + POSS_SUFF (0 Ill) (1C Ill) (-1 A_Q_Pron) ;
 SELECT Par (-1C Num) (-1 Nom) ; # KUUSI LASTA
-SELECT NSgNom (-1C Nom) (-1 A_Q_Pron) (-1 Sg) (NEGATE 0 POSS_SUFF) (NEGATE 0 TULI) (NEGATE 1 Nom) (NEGATE -1 Pers) (NEGATE 0 JUURI) (NEGATE 0 ("kasvattaa")) (NEGATE 0 ("laskea")) ;
+SELECT NSgNom (-1C Nom) (-1 A_Q_Pron) (-1 Sg) (NEGATE 0 POSS_SUFF) (NEGATE 0 TULI) (NEGATE 1 Nom) (NEGATE -1 Pers) (NEGATE 0 JUURI OR KOKO) (NEGATE 0 ("kasvattaa")) (NEGATE 0 ("laskea")) ;
 
 # replaced POSS_SUFF with POSS_SUFF - 20.01.2015 -FMT+KM
 SELECT NSgGen IF (-1C Gen) (-1 A_Q_Pron) (-1 Sg) (NEGATE 0 POSS_SUFF) (NEGATE 1 Gen) (NEGATE 0 SUHTEEN) ;
