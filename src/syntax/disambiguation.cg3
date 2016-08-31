@@ -771,6 +771,8 @@ LIST ElaLeft = "asti" "huolimatta" "lähtien" "riippumatta" "käsin" ; # rakente
 LIST ElaRight = "huolimatta" ; 
 # <ElaRight> verbs from text_cg1.txt, there may be more of them
 
+LIST NomLeft = "sitten" ;
+
 LIST GenLeft = "aikaan" "aikana" "aikoihin" "alla" "alle" "alta" "alusta" "ansiosta" "avulla" "edelle" "edellä" "edessä" "edestä" "eteen" "eteensä" "hyväksi" "johdosta" "jälkeen" "kanssa" "kautta" "keskelle" "keskellä" "keskeltä" "kesken" "keskuudessa" "keskuuteen" "kohdalla" "kohdalle" "kuluttua" "laidassa" "lisäksi" "lomassa" "luo" "luokse" "luota" "lähellä" "läheltä" "lähettyville" "lähtien" "läpi" "lävitse" "mennessä" "mielestä" "muassa" "mukaan" "mukana" "myötä" "nojalla" "ohella" "ohessa" "ohi" "pariin" "parissa" "parista" "perusteella" "perässä" "perään" "poikki" "puoleen" "puolella" "puolelle" "puolesta" "puolivälissä" "päälle" "päällä" "päältä" "päässä"  "päästä" "rinnalla" "rinnalle" "sijaan" "sijasta" "sisälle" "sisällä" "sisältä" "sisään" "sitten" "suhteen" "taakse" "takaa" "takana" "takia" "tasalla" "tasalle" "tienoilla" "tähden" "ulkopuolella" "ulottuvilla" "varaan" "varassa" "varrella" "varressa" "verran" "viereen" "vieressä" "vierestä" "vuoksi" "väliin" "välillä" "väliltä" "välissä" "välistä" "yli" "ylitse" "yllä" "yläpuolella" "ympäri" "ympärille" "ympärillä" "ympäriltä" "äärelle" "äärellä" "ääreltä" ; 
 # <GenLeft> verbs from text_cg1.txt, there may be more of them
 
@@ -1745,8 +1747,8 @@ SELECT ASgPar (-1 ("<mitään>"));
 "<syövät>" REMOVE N OR A (-1 NPron + Pl + Nom); 
 "<syövät>" REMOVE N OR A (NEGATE *-1 V BARRIER Punct)(NEGATE *1 V BARRIER Punct); 
 
-SELECT ("(.*)vuosi"r) (1 Num OR Pron);
-SELECT ("(.*)vuosi"r) (-1 Num OR APrc OR Pron OR VIIME);
+SELECT ("(.*)vuosi"r) (1 Num OR Pron OR Po);
+SELECT ("(.*)vuosi"r) (-1 Num OR APrc OR Pron OR Pr OR VIIME);
 SELECT PARI_PUOLI + Num + Nom (1 NSgPar);
 SELECT PARI_PUOLI + Num + $$ALLCASES (1 N + Sg + $$ALLCASES);
 SELECT Num + Par (-1C Num + Nom);
@@ -1811,6 +1813,7 @@ SELECT ("vaan") + Pcle (-1 Adv OR Pcle)(1 FINV);
 
 SELECT ("vaikkapa") + Pcle;
 SELECT ("vaikka") + CS (-1 V)(1 V);
+SELECT ("vaikka") + Pcle (-1 ("tai") OR ("jos"));
 SELECT ("vaikka") + Pcle (-1 V)(1 Prs-w OR Prt-w);
 SELECT ("vaikka") + Pcle (1 MIKA OR ("nyt") OR Foc_kin)(NEGATE -1 OMS OR Punct OR CS);
 IFF ("vaikka") + CS (-1 OMS OR Punct OR CS);
@@ -1835,7 +1838,7 @@ SELECT ("kuin") + CC OR ("kuin") + CS ; # (-1 V OR A OR Adv)(1 POS);
 #SELECT ("kuin") + CC (-1 ("<muuta>") OR CMP-ENNEN); # comparative - CC?
 SELECT ("kuin") + CS (1 FINV); # sen jälkeen kuin
 # SELECT ("kuin") + CS ; # in UDT CC is only in "niin .. kuin .." (and "maassa kuin maassa"), but there is no CS given
-IFF ("kuin") + CC (NEGATE -2 ("sellainen"))(NEGATE -1 Comp)(-1 $$POS + $$ALLCASES)(*1 $$POS + $$ALLCASES BARRIER S-BOUNDARY OR CCC); 
+IFF ("kuin") + CC (NEGATE -2 ("sellainen") OR ("sama") OR ("jokin") OR ("muu") + Pron OR Comp)(NEGATE -1 Comp)(-1 $$POS + $$ALLCASES)(*1 $$POS + $$ALLCASES BARRIER S-BOUNDARY OR CCC); 
 REMOVE Pcle IF (0 CC - Pcle) ; # ja, jos, tai, tahi, taikka, vaan, kuin
 
 SELECT CS (*-1 FINV BARRIER S-BOUNDARY)(*1 FINV BARRIER S-BOUNDARY); # kuin kunnes
@@ -1989,7 +1992,9 @@ SELECT ("toinen") + PxPl3 ; # can be PxSg?
 #SELECT ("ensimmäinen") + Num (0C Sg + $$ALLCASES)(1C N + Sg + $$ALLCASES);
 #SELECT ("ensimmäinen") + Num (0C Sg + $$ALLCASES)(1 A + Sg + $$ALLCASES or N + Gen)(1C N + Sg + $$ALLCASES);
 
-SELECT ("jossain") + Adv OR ("jostain") + Adv OR ("missä") + Adv OR ("miksi") + Adv ; #?
+SELECT ("jossain") + Adv OR ("jostain") + Adv OR ("missä") + Adv OR ("miksi") + Adv OR ("siellä") + Adv ; #?
+SELECT ("se") + Sg + Ade (-1 OMS); # sillä
+SELECT ("se") + Sg + Ade (1 NSgAde); # sillä
 SELECT ("sillä") + CS (1 COMMA)(2 ("jos")); # siis, kui
 IFF ("sillä") + CS (-1 COMMA); # sest
 SELECT ("se") + Pron + Ela (-1 FINV OR CS OR COLON OR SCOLON OR >>>); # siitä Adv
@@ -2029,7 +2034,7 @@ SELECT ("siinä") + Adv OR ("tässä") + Adv OR ("tuossa") + Adv (NEGATE 1 Sg + 
 SELECT MIKA + Pron + Ela OR ("se") + Pron + Ela OR ("tämä") + Pron + Ela OR ("joka") + Pron + Ela (1 Sg + Ela); # missä tästä Adv
 SELECT ("mistä") + Adv OR ("siitä") + Adv OR ("tästä") + Adv OR ("josta") + Adv (NEGATE 1 Sg + Ela); 
 SELECT ("se") + Pron + Ade OR ("tuo") + Pron + Ade (1 Sg + Ade); # siellä tuolla Adv +?
-SELECT ("sillä") + Adv OR ("siellä") + Adv OR ("tuolla") + Adv (NEGATE 1 Sg + Ade); 
+SELECT ("sillä") + Adv OR ("tuolla") + Adv (NEGATE 1 Sg + Ade); 
 SELECT ("se") + Pron + Abl (1 Sg + Abl); # sieltä Adv
 SELECT ("sieltä") + Adv (NEGATE 1 Sg + Abl); 
 SELECT ("joka") + Pron + Abe (1 Sg + Abe); # jotta CS 
@@ -2103,6 +2108,7 @@ SUBSTITUTE Adp (*) Po - Adp ;
 SUBSTITUTE Adv Po GenLeft + Foc_kin (-1 Gen);
 SUBSTITUTE Adv Po ParLeft + Foc_kin (-1 Par);
 
+SELECT Po + NomLeft (-1 TIME-WORD + Nom) ;
 "<luokseen>" SELECT Adv (-1 Acc OR Par)(NEGATE -1 Gen) ;
 
 # 3 rules from orig
@@ -4815,7 +4821,8 @@ SELECT PrfPrc + Sg (-1 CCC LINK *-1 PrfPrc + Sg  BARRIER S-BOUNDARY LINK *-1 OLL
 SELECT PrfPrc + Pl (-1 CCC LINK *-1 PrfPrc + Sg  BARRIER S-BOUNDARY LINK *-1 OLLA + Pl3 BARRIER S-BOUNDARY) ;
 
 REMOVE V + Ind (0 Imprt + Sg2)(-1 COLON)(NEGATE *1 V BARRIER S-BOUNDARY) ;
-SELECT V + Ind (NEGATE *1 V BARRIER S-BOUNDARY)(NEGATE *-1 V BARRIER S-BOUNDARY) ;
+SELECT V + Ind (NEGATE *1 V BARRIER S-BOUNDARY)(NEGATE *-1 V BARRIER S-BOUNDARY)(NEGATE -1 OMS) ;
+SELECT V + Ind (NEGATE *1 V BARRIER S-BOUNDARY)(NEGATE *-1 V BARRIER S-BOUNDARY)(NEGATE 1 ("kuin") LINK 1 V) ;
 REMOVE Pot (0 Ind) (NEGATE *1 V BARRIER S-BOUNDARY + CC)(NEGATE *-1 V BARRIER S-BOUNDARY + CC) ;
 REMOVE InfA (0 Act + Sg3) (NEGATE *1 V BARRIER S-BOUNDARY)(NEGATE *-1 V BARRIER S-BOUNDARY) ;
 SELECT Ind + Pl3 (*0 NPPl3Nom BARRIER S-BOUNDARY)(NEGATE *1 V BARRIER S-BOUNDARY)(NEGATE *-1 V BARRIER S-BOUNDARY) ;
