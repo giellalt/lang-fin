@@ -23,55 +23,80 @@ ennenkuin+CS+Err/Orth:ennenkuin          # ;
 et+CS+Use/sub:et                        # ;
 että+CS#ei+V:ett                     VERB_EI ;
 että+CS:että                            # ;
-ettäkö+Pcle:ettäkö  SCONJ_ETTÄ  ;
-että+Pcle:että  SCONJ_ETTÄ  ;
-jahka+Pcle:jahka  SCONJ_ETTÄ  ;
-joko+Pcle:joko  SCONJ_ETTÄ  ;
 jos+CS#ei+V:ell                      VERB_EI ;
 jos+CS#ei+V:joll                     VERB_EI ;
 jos+CS:jos                              # ;
 joskaan+CS:joskaan                      # ;
-joskaan+Pcle:joskaan  SCONJ_ETTÄ  ;
 joskin+CS:joskin                        # ;
 josko+CS:josko                          # ;
-josko+Pcle:josko  SCONJ_ETTÄ  ;
-jospa+Pcle:jospa  SCONJ_ETTÄ  ;
-jos+Pcle:jos  SCONJ_ETTÄ  ;
 jotta+CS#ei+V:jott                   VERB_EI ;
 jotta+CS:jotta                          # ;
-jotta+Pcle:jotta  SCONJ_ETTÄ  ;
 konsa+CS:konsa                          # ;
 koska+CS:koska                          # ;
-koskapa+Pcle:koskapa  SCONJ_ETTÄ  ;
-koska+Pcle:koska  SCONJ_ETTÄ  ;
-kuin+Pcle:kuin  SCONJ_ETTÄ  ;
 kun+CS:kun                              # ;
 kunhan+CS:kunhan                        # ;
-kunhan+Pcle:kunhan  SCONJ_ETTÄ  ;
 kunnes+CS:kunnes                        # ;
 kunpa+CS:kunpa                          # ;
-kunpa+Pcle:kunpa  SCONJ_ETTÄ  ;
-kun+Pcle:kun  SCONJ_ETTÄ  ;
-ku+Pcle:ku  SCONJ_ETTÄ  ;
 mikäli+CS:mikäli                        # ;
-mikäli+Pcle:mikäli  SCONJ_ETTÄ  ;
-saatikka+Pcle:saatikka  SCONJ_ETTÄ  ;
-saati+Pcle:saati  SCONJ_ETTÄ  ;
 sillä+CS:sillä                          # ;
-sillä+Pcle:sillä  SCONJ_ETTÄ  ;
 sitäpaitsi+CS:sitäpaitsi                # ;
 sun+CS:sun                              # ;
 vaan+CS:vaan                            # ;
-vaan+Pcle:vaan  SCONJ_ETTÄ  ;
 vaikka+CS#ei+V:vaikk                 VERB_EI ;
 vaikka+CS:vaikka                        # ;
 vaikkakaan+CS:vaikkakaan                # ;
 vaikkakin+CS:vaikkakin                  # ;
-vaikkakin+Pcle:vaikkakin  SCONJ_ETTÄ  ;
 vaikkapa+CS:vaikkapa                    # ;
-vaikkapa+Pcle:vaikkapa  SCONJ_ETTÄ  ;
-vaikka+Pcle:vaikka  SCONJ_ETTÄ  ;
-vaikk+Pcle:vaikk  SCONJ_ETTÄ  ;
+
+ettäkö:ettäkö  SCONJ_ETTÄ  ;
+jahka:jahka  SCONJ_ETTÄ  ;
+joko:joko  SCONJ_ETTÄ  ;
+jospa:jospa  SCONJ_ETTÄ  ;
+koskapa:koskapa  SCONJ_ETTÄ  ;
+kuin:kuin  SCONJ_ETTÄ  ;
+ku:ku  SCONJ_ETTÄ  ;
+saatikka:saatikka  SCONJ_ETTÄ  ;
+saati:saati  SCONJ_ETTÄ  ;
+vaikk:vaikk  SCONJ_ETTÄ  ;
+
+jos+Pcle:jos                            # ;
+josko+Pcle:josko                        # ;
+jospa+Pcle:jospa                        # ;
+jotta+Pcle:jotta                        # ;
+koskapa+Pcle:koskapa                    # ;
+ku+Pcle:ku                              # ;
+kunhan+Pcle:kunhan                      # ;
+kunpa+Pcle:kunpa                        # ;
+mikäli+Pcle:mikäli                      # ;
+vaikkapa+Pcle:vaikkapa                  # ;
+
+
+!Previously have been just Pcle (lexicon SCONJ_ETTÄ was empty): splited into CS and Pcle separately, not included Pcle that are already in adv.lexc
+!ettäkö+Pcle:ettäkö  SCONJ_ETTÄ  ;
+!että+Pcle:että  SCONJ_ETTÄ  ;
+!jahka+Pcle:jahka  SCONJ_ETTÄ  ;
+!joko+Pcle:joko  SCONJ_ETTÄ  ;
+!joskaan+Pcle:joskaan  SCONJ_ETTÄ  ;
+!josko+Pcle:josko  SCONJ_ETTÄ  ;
+!jospa+Pcle:jospa  SCONJ_ETTÄ  ;
+!jos+Pcle:jos  SCONJ_ETTÄ  ;
+!jotta+Pcle:jotta  SCONJ_ETTÄ  ;
+!koskapa+Pcle:koskapa  SCONJ_ETTÄ  ;
+!koska+Pcle:koska  SCONJ_ETTÄ  ;
+!kuin+Pcle:kuin  SCONJ_ETTÄ  ;
+!kunhan+Pcle:kunhan  SCONJ_ETTÄ  ;
+!kunpa+Pcle:kunpa  SCONJ_ETTÄ  ;
+!kun+Pcle:kun  SCONJ_ETTÄ  ;
+!ku+Pcle:ku  SCONJ_ETTÄ  ;
+!mikäli+Pcle:mikäli  SCONJ_ETTÄ  ;
+!saatikka+Pcle:saatikka  SCONJ_ETTÄ  ;
+!saati+Pcle:saati  SCONJ_ETTÄ  ;
+!sillä+Pcle:sillä  SCONJ_ETTÄ  ;
+!vaan+Pcle:vaan  SCONJ_ETTÄ  ;
+!vaikkakin+Pcle:vaikkakin  SCONJ_ETTÄ  ;
+!vaikkapa+Pcle:vaikkapa  SCONJ_ETTÄ  ;
+!vaikka+Pcle:vaikka  SCONJ_ETTÄ  ;
+!vaikk+Pcle:vaikk  SCONJ_ETTÄ  ;
 
 
 !ell#ei+CS:ellei                         # ;
@@ -102,5 +127,5 @@ vaikk+Pcle:vaikk  SCONJ_ETTÄ  ;
 
 LEXICON SCONJ_ETTÄ
 
-:	# ;
++CS:	# ;
 
