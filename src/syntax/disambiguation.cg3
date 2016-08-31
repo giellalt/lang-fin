@@ -4800,7 +4800,7 @@ MAP (@X) TARGET WORD ;
 # some first additions from Story (TP++)
 
 REMOVE A (0 PrfPrc)(1 Gen_Par)(*-1 OLLA BARRIER S-BOUNDARY) ;
-
+REMOVE Ind + Sg3 (0 InfA) (-1 ("miksi"))(NEGATE *-2 NPSg3Nom)(NEGATE *1 NPSg3Nom BARRIER S-BOUNDARY) ;
 SELECT Ela-Advl + Ind (*1 Ela BARRIER S-BOUNDARY) ; # ("pitää")
 
 SELECT ("sääli") + N (-1 >>>) ;
