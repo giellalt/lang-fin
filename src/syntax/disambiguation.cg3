@@ -646,6 +646,9 @@ LIST Par-OBJ = "ahdistaa" "aiheutua" "aineellistaa" "ajaa" "ajatella"
 
 LIST LOC-V = "sopia" "tulla" "mennä" "muuttaa" ;
 
+LIST Tässä-verb = "asettaa" "istua" "joutua"  "keskittyä" "kiirehtiä" "mennä" "pysyä" "rientää" "saapua" "sattua" "seistä" "siirtää" "siirtyä" "sijoittaa" "tulla" "tuoda" "vedota" "viedä" ; 
+
+LIST Tästä-verb = "liikua" "mennä" "siirtää" "siirtyä" "tulla" "tuoda" "vedota" "viedä" ;
 
 
     # Funky Case
@@ -1732,7 +1735,6 @@ SELECT FINV + Pl3 (-1 OMS)(1 CLB OR Punct)(2 CS)(*1 V + Pl3);
 SELECT A + ("suosittu");
 
 SELECT MINÄ (*0 VSg1);
-IFF Pron + Ine + ("se") (1 Ine); # siinä
 
 SELECT ("kulta") + A (-1 Interj)(NEGATE 1 N);
 SELECT ("kulta") + A (0 $$ALLCASES) (1 N + $$ALLCASES);
@@ -1834,6 +1836,7 @@ SELECT ("kuin") + CC (-1 $$ALLCASES LINK *-1 ("niin") + CC BARRIER NP-BOUNDARY)(
 SELECT ("niin") + CC (-1 COMMA)(*-2 ("jos") BARRIER S-BOUNDARY); # kui , siis
 SELECT ("niin") + Adv;
 
+SELECT ("kuin") + CC (1 ("myös")) ;
 SELECT ("kuin") + CC OR ("kuin") + CS ; # (-1 V OR A OR Adv)(1 POS);
 #SELECT ("kuin") + CC (-1 ("<muuta>") OR CMP-ENNEN); # comparative - CC?
 SELECT ("kuin") + CS (1 FINV); # sen jälkeen kuin
@@ -2025,6 +2028,14 @@ SELECT MIKA + Rel (-1 COMMA)(-2 NomHEAD);
 SELECT MIKA + Rel (-1 Neg OR NomHEAD);
 SELECT MIKA + Rel (1 ("vuoksi"));
 
+SELECT Pron + Ine + ("se") OR Pron + Ine + ("tämä") (1 Ine); # siinä
+SELECT Pron + Ine + ("se") OR Pron + Ine + ("tämä") (1 A OR N + Gen)(2 Ine); # siinä
+SELECT ("se") + Pron + Ine OR ("tämä") + Pron + Ine OR ("se") + Pron + Ela OR ("tämä") + Pron + Ela (0 Foc_kin) ; 
+SELECT ("siinä") + Adv OR ("tässä") + Adv (*1 OLLA BARRIER S-BOUNDARY LINK *1 ("<asemassa>") BARRIER S-BOUNDARY) ;
+SELECT ("siinä") + Adv OR ("tässä") + Adv (*0 Tässä-verb BARRIER S-BOUNDARY) ;
+SELECT ("siitä") + Adv OR ("tästä") + Adv (*0 Tästä-verb BARRIER S-BOUNDARY) ;
+SELECT ("se") + Pron + Ine OR ("tämä") + Pron + Ine OR ("se") + Pron + Ela OR ("tämä") + Pron + Ela ; 
+
 SELECT ("jokin") (-1 ("jos"i) OR ("vallan"i)); # jostakin johonkin (joka/jokin)
 SELECT ("jokin") (1 Punct OR ("muu") OR ("verran") OR ("tapa") OR ("syy") OR ("sortti") OR AD-PALJON OR HYVIN OR ("vallan")); # jossakin jostakin johonkin (joka/jokin)
 SELECT ("se") + Pron + Ill OR ("tämä") + Pron + Ill OR ("tuo") + Pron + Ill OR ("joka") + Pron + Ill (1 Sg + Ill OR ("mennessä")); # siihen Adv
@@ -2040,7 +2051,7 @@ SELECT ("sieltä") + Adv (NEGATE 1 Sg + Abl);
 SELECT ("joka") + Pron + Abe (1 Sg + Abe); # jotta CS 
 SELECT ("jotta") + CS (NEGATE 1 Sg + Abe); # et
 
-REMOVE ("muu") + A (0 Pron); 
+REMOVE ("muu") + A OR ("usea") + A (0 Pron); 
 SELECT ("muu") + Pron (NEGATE 0 V); # muistaa
 SELECT ("muu") + Sg + Pron (0 Imprt)(1 Punct OR CC)(*-1 ("ei") OR ("entä") BARRIER Punct); # muuttaa (ei muuta Sg Par); muistaa (ei muista Pl Ela)
 SELECT ("jotta") + CS (-1 COMMA)(*1 Cond); 
@@ -2519,7 +2530,7 @@ SELECT JUURI + Adv (NEGATE 1 VFIN - ConNeg) ;
  # RISKY
 "<liiaksi>" SELECT Adv ;
 "<liikaa>" IFF Adv (NEGATE 1 Par) ;
-SELECT ("lisäksi") + Adv (NEGATE -1 Gen) ; # NAISTEN LISäKSI
+SELECT ("lisäksi") + N (NEGATE -1 Gen) ; # NAISTEN LISäKSI # TP: changed to N as for MT (both sme, est) it is analysed as N
 "<lupasi>" SELECT V ;
  # RISKY
 "<lähetii>" SELECT V (-1C Nom) (-1 Sg) ;
