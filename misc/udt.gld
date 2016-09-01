@@ -313,7 +313,7 @@
 "<vaatteita>"
 	"vaate" N Pl Par &dobj #7->6 
 "<muiden>"
-	"muu" A Pl Gen &det #8->9 
+	"muu" Pron Pl Gen &det #8->9 
 "<bloggaajien>"
 	"bloggaaja" N Pl Gen &nmod:poss #9->10 
 "<silmin>"
@@ -609,7 +609,7 @@
 "<liian>"
 	"liian" Adv &advmod #4->5 
 "<useista>"
-	"usea" A Pl Ela &amod #5->7 
+	"usea" Pron Pl Ela &amod #5->7 
 "<peräkkäisistä>"
 	"peräkkäinen" A Pl Ela &amod #6->7 
 "<retweeteistä>"
@@ -2055,7 +2055,7 @@
 "<tulen>"
 	"tulla" V Act Ind Prs Sg1 &root #2->0 
 "<tässä>"
-	"tämä" Pron Dem Sg Ine &nmod #3->2 
+	"tässä" Adv &advmod #3->2 
 "<nyt>"
 	"nyt" Adv &advmod #4->2 
 "<siivoamaan>"
@@ -2487,7 +2487,7 @@
 "<.>"
 	"." Punct &punct #4->1 
 "<Lisäksi>"
-	"lisäksi" Adv &advmod #1->4 
+	"lisä" N Sg Tra &nmod #1->4 
 "<he>"
 	"he" Pron Pers Pl3 Nom &nsubj #2->4 
 "<ovat>"
@@ -3641,7 +3641,7 @@
 "<ja>"
 	"ja" CC &cc #6->5 
 "<useista>"
-	"usea" A Pl Ela &amod #7->8 
+	"usea" Pron Pl Ela &amod #7->8 
 "<elokuvista>"
 	"elokuva" N Pl Ela &conj #8->5 
 "<.>"
@@ -7317,7 +7317,7 @@
 "<ja>"
 	"ja" CC &cc #5->2 
 "<lisäksi>"
-	"lisäksi" Adv &advmod #6->7 
+	"lisä" N Sg Tra &nmod #6->7 
 "<ollaan>"
 	"olla" V Pss Ind Prs Pe4 &conj #7->2 
 "<viikonloppuisin>"
@@ -8411,7 +8411,7 @@
 "<.>"
 	"." Punct &punct #16->2 
 "<Lisäksi>"
-	"lisäksi" Adv &advmod #1->4 
+	"lisä" N Sg Tra &nmod #1->4 
 "<autojen>"
 	"auto" N Pl Gen &nmod:poss #2->3 
 "<hintaan>"
@@ -10739,7 +10739,7 @@
 "<.>"
 	"." Punct &punct #16->3 
 "<Lisäksi>"
-	"lisäksi" Adv &advmod #1->2 
+	"lisä" N Sg Tra &nmod #1->2 
 "<viihdymme>"
 	"viihtyä" V Act Ind Prs Pl1 &root #2->0 
 "<täällä>"
@@ -10771,7 +10771,7 @@
 "<.>"
 	"." Punct &punct #8->3 
 "<Lisäksi>"
-	"lisäksi" Adv &advmod #1->6 
+	"lisä" N Sg Tra &nmod #1->6 
 "<pienen>"
 	"pieni" A Sg Gen &amod #2->3 
 "<vastaanhangoittelun>"
@@ -11187,7 +11187,7 @@
 "<myös>"
 	"myös" Adv &advmod #4->5 
 "<muiden>"
-	"muu" A Pl Gen &nsubj #5->6 
+	"muu" Pron Pl Gen &nsubj #5->6 
 "<valmistamina>"
 	"valmistaa" V AgPrc Pl Ess &advcl #6->3 
 "<,>"
@@ -12491,7 +12491,7 @@
 "<.>"
 	"." Punct &punct #15->4 
 "<Tässä>"
-	"tämä" Pron Dem Sg Ine &nmod #1->4 
+	"tässä" Adv &advmod #1->4 
 "<minä>"
 	"minä" Pron Pers Sg1 Nom &nsubj #2->4 
 "<nyt>"
@@ -14543,7 +14543,7 @@
 "<tuskin>"
 	"tuskin" Pcle &advmod #10->15 
 "<tässä>"
-	"tämä" Pron Dem Sg Ine &nmod #11->15 
+	"tässä" Adv &advmod #11->15 
 "<enää>"
 	"enää" Adv &advmod #12->14 
 "<kovin>"
@@ -15231,7 +15231,7 @@
 "<.>"
 	"." Punct &punct #7->2 
 "<Siinä>"
-	"se" Pron Dem Sg Ine &nmod #1->2 
+	"siinä" Adv &advmod #1->2 
 "<menikin>"
 	"mennä" V Act Ind Prt Sg3 Foc/kin &root #2->0 
 "<useampi>"
@@ -15914,7 +15914,7 @@
 "<,>"
 	"," Punct &punct #3->6 
 "<muiden>"
-	"muu" A Pl Gen &det #4->5 
+	"muu" Pron Pl Gen &det #4->5 
 "<yliopistojen>"
 	"yliopisto" N Pl Gen &nmod:poss #5->6 
 "<lailla>"
@@ -17899,7 +17899,7 @@
 "<jonottaa>"
 	"jonottaa" V Act Ind Prs Sg3 &root #2->0 
 "<useita>"
-	"usea" A Pl Par &amod #3->5 
+	"usea" Pron Pl Par &amod #3->5 
 "<kymmeniä>"
 	"kymmenen" Num Pl Par &compound #4->5 
 "<tuhansia>"
@@ -18057,7 +18057,7 @@
 "<.>"
 	"." Punct &punct #7->4 
 "<Lisäksi>"
-	"lisäksi" Adv &advmod #1->8 
+	"lisä" N Sg Tra &nmod #1->8 
 "<EU:n>"
 	"EU" ACR Prop Sem/Org Sg Gen &nsubj #2->8 
 "<ja>"
@@ -19350,7 +19350,7 @@
 "<riippuvainen>"
 	"riippuvainen" A Sg Nom &root #6->0 
 "<muiden>"
-	"muu" A Pl Gen &det #7->8 
+	"muu" Pron Pl Gen &det #7->8 
 "<maiden>"
 	"maa" N Pl Gen &nmod:gsubj #8->9 
 "<kehityksestä>"
@@ -20876,7 +20876,7 @@
 "<ja>"
 	"ja" CC &cc #8->7 
 "<muiden>"
-	"muu" A Pl Gen &det #9->10 
+	"muu" Pron Pl Gen &det #9->10 
 "<luottojen>"
 	"luotto" N Pl Gen &conj #10->7 
 "<hoitamisessa>"
@@ -21362,7 +21362,7 @@
 "<noussut>"
 	"nousta" V Act PrfPrc Sg Nom &root #7->0 
 "<useita>"
-	"usea" A Pl Par &amod #8->9 
+	"usea" Pron Pl Par &amod #8->9 
 "<pokeriporhoja>"
 	"pokeri#porho" N Pl Par &nsubj #9->7 
 "<.>"
@@ -21390,7 +21390,7 @@
 "<ja>"
 	"ja" CC &cc #5->4 
 "<muiden>"
-	"muu" A Pl Gen &det #6->7 
+	"muu" Pron Pl Gen &det #6->7 
 "<pelien>"
 	"peli" N Pl Gen &conj #7->4 
 "<saama>"
@@ -25394,7 +25394,7 @@
 "<.>"
 	"." Punct &punct #10->2 
 "<Lisäksi>"
-	"lisäksi" Adv &advmod #1->4 
+	"lisä" N Sg Tra &nmod #1->4 
 "<siinä>"
 	"se" Pron Dem Sg Ine &nmod #2->4 
 "<pitäisi>"
@@ -25788,7 +25788,7 @@
 "<ovat>"
 	"olla" V Act Ind Prs Pl3 &aux #10->13 
 "<useissa>"
-	"usea" A Pl Ine &amod #11->12 
+	"usea" Pron Pl Ine &amod #11->12 
 "<maissa>"
 	"maa" N Pl Ine &nmod #12->13 
 "<jatkaneet>"
@@ -26460,7 +26460,7 @@
 "<perheessä>"
 	"perhe" N Sg Ine &nmod #19->20 
 "<useampia>"
-	"usea" A Comp Pl Par &advcl #20->14 
+	"usea" Pron Comp Pl Par &advcl #20->14 
 "<.>"
 	"." Punct &punct #21->4 
 "<Taloustutkimuksen>"
@@ -26892,7 +26892,7 @@
 "<saavat>"
 	"saada" V Act Ind Prs Pl3 &root #2->0 
 "<lisäksi>"
-	"lisäksi" Adv &advmod #3->2 
+	"lisä" N Sg Tra &nmod #3->2 
 "<500>"
 	"500" Num Card Sg Nom &nummod #4->5 
 "<euron>"
@@ -27662,7 +27662,7 @@
 "<keskustellakseen>"
 	"keskustella" V Act InfA Sg Tra PxSg3 &advcl #6->2 
 "<muiden>"
-	"muu" A Pl Gen &det #7->9 
+	"muu" Pron Pl Gen &det #7->9 
 "<eurooppalaisten>"
 	"eurooppalainen" A Pl Gen &amod #8->9 
 "<johtajien>"
@@ -28132,7 +28132,7 @@
 "<alentanut>"
 	"alentaa" V Act PrfPrc Sg Nom &advcl #15->7 
 "<useiden>"
-	"usea" A Pl Gen &amod #16->17 
+	"usea" Pron Pl Gen &amod #16->17 
 "<tuotteiden>"
 	"tuote" N Pl Gen &nmod:poss #17->18 
 "<hintoja>"
@@ -29212,7 +29212,7 @@
 "<tietävät>"
 	"tietää" V Act Ind Prs Pl3 &parataxis #9->5 
 "<useat>"
-	"usea" A Pl Nom &amod #10->13 
+	"usea" Pron Pl Nom &amod #10->13 
 "<historianläksynsä>"
 	"historian#läksy" N Pl Nom PxPl3 &dobj #11->12 
 "<lukeneet>"
@@ -30006,7 +30006,7 @@
 "<palvelualoilla>"
 	"palveluala" N Pl Ade &nmod #3->5 
 "<useita>"
-	"usea" A Pl Par &amod #4->5 
+	"usea" Pron Pl Par &amod #4->5 
 "<alueita>"
 	"alue" N Pl Par &nsubj #5->2 
 "<,>"
@@ -30482,7 +30482,7 @@
 "<.>"
 	"." Punct &punct #19->8 
 "<Tässä>"
-	"tämä" Pron Dem Sg Ine &nmod #1->3 
+	"tässä" Adv &advmod #1->3 
 "<valtiovalta>"
 	"valtiovalta" N Sg Nom &nsubj #2->3 
 "<on>"
@@ -31362,7 +31362,7 @@
 "<.>"
 	"." Punct &punct #5->4 
 "<Lisäksi>"
-	"lisäksi" Adv &advmod #1->4 
+	"lisä" N Sg Tra &nmod #1->4 
 "<muutamilla>"
 	"muutama" Pron Qu Pl Ade &det #2->3 
 "<saarilla>"
@@ -31492,7 +31492,7 @@
 "<.>"
 	"." Punct &punct #8->3 
 "<Lisäksi>"
-	"lisäksi" Adv &advmod #1->3 
+	"lisä" N Sg Tra &nmod #1->3 
 "<alueella>"
 	"alue" N Sg Ade &nmod #2->3 
 "<kasvaa>"
@@ -31662,7 +31662,7 @@
 "<ihmisiä>"
 	"ihminen" N Pl Par &nsubj #9->8 
 "<useiden>"
-	"usea" A Pl Gen &amod #10->11 
+	"usea" Pron Pl Gen &amod #10->11 
 "<vuosisatojen>"
 	"vuosisata" N Pl Gen &nmod:poss #11->12 
 "<ajan>"
@@ -31884,7 +31884,7 @@
 "<.>"
 	"." Punct &punct #9->3 
 "<Lisäksi>"
-	"lisäksi" Adv &advmod #1->4 
+	"lisä" N Sg Tra &nmod #1->4 
 "<saarilla>"
 	"saari" N Pl Ade &nmod #2->4 
 "<on>"
@@ -32164,7 +32164,7 @@
 "<ja>"
 	"ja" CC &cc #7->6 
 "<muiden>"
-	"muu" A Pl Gen &det #8->9 
+	"muu" Pron Pl Gen &det #8->9 
 "<ryhmien>"
 	"ryhmä" N Pl Gen &conj #9->6 
 "<sisällä>"
@@ -33269,7 +33269,7 @@
 "<sai>"
 	"saada" V Act Ind Prt Sg3 &root #4->0 
 "<useita>"
-	"usea" A Pl Par &amod #5->7 
+	"usea" Pron Pl Par &amod #5->7 
 "<nuoria>"
 	"nuori" A Pl Par &amod #6->7 
 "<miehiä>"
@@ -33337,7 +33337,7 @@
 "<kuuliaisuuteen>"
 	"kuuliaisuus" N Sg Ill &nmod #18->16 
 "<useilla>"
-	"usea" A Pl Ade &amod #19->20 
+	"usea" Pron Pl Ade &amod #19->20 
 "<kirjeillä>"
 	"kirje" N Pl Ade &nmod #20->16 
 "<.>"
@@ -34924,7 +34924,7 @@
 "<monien>"
 	"moni" Pron Qu Pl Gen &det #5->7 
 "<muidenkin>"
-	"muu" A Pl Gen Foc/kin &det #6->7 
+	"muu" Pron Pl Gen Foc/kin &det #6->7 
 "<kielten>"
 	"kieli" N Pl Gen &nmod:poss #7->8 
 "<kielioppeihin>"
@@ -36634,7 +36634,7 @@
 "<monien>"
 	"moni" Pron Qu Pl Gen &det #8->10 
 "<muiden>"
-	"muu" A Pl Gen &det #9->10 
+	"muu" Pron Pl Gen &det #9->10 
 "<siippojen>"
 	"siippa" N Pl Gen &nmod:poss #10->11 
 "<tapaan>"
@@ -36710,7 +36710,7 @@
 "<;>"
 	";" Punct &punct #12->6 
 "<useita>"
-	"usea" A Pl Par &amod #13->14 
+	"usea" Pron Pl Par &amod #13->14 
 "<luolia>"
 	"luola" N Pl Par &dobj #14->16 
 "<on>"
@@ -36738,7 +36738,7 @@
 "<.>"
 	"." Punct &punct #8->2 
 "<Lisäksi>"
-	"lisäksi" Adv &advmod #1->5 
+	"lisä" N Sg Tra &nmod #1->5 
 "<hyönteismyrkkyjen>"
 	"hyönteismyrkky" N Pl Gen &nmod:gobj #2->4 
 "<liiallinen>"
@@ -37622,7 +37622,7 @@
 "<">"
 	""" Punct Quote &punct #1->6 
 "<Muiden>"
-	"muu" A Pl Gen &det #2->3 
+	"muu" Pron Pl Gen &det #2->3 
 "<pelaajien>"
 	"pelaaja" N Pl Gen &nmod #3->6 
 "<mukaan>"
@@ -38382,7 +38382,7 @@
 "<.>"
 	"." Punct &punct #9->8 
 "<Lisäksi>"
-	"lisäksi" Adv &advmod #1->4 
+	"lisä" N Sg Tra &nmod #1->4 
 "<eri>"
 	"eri" Pcle A &amod #2->3 
 "<yritykset>"
@@ -38682,7 +38682,7 @@
 "<.>"
 	"." Punct &punct #20->6 
 "<Lisäksi>"
-	"lisäksi" Adv &advmod #1->3 
+	"lisä" N Sg Tra &nmod #1->3 
 "<katkos>"
 	"katkos" N Sg Nom &nsubj #2->3 
 "<häiritsi>"
