@@ -5120,7 +5120,7 @@
 "<sen>"
 	"se" Pron Dem Sg Gen &nsubj #2->3 
 "<nostamasta>"
-	"nostaa" V Act InfMa Sg Ela &acl #3->4 
+	"nostaa" V AgPrc Sg Ela &acl #3->4 
 "<lumipöllystä>"
 	"lumi#pölly" N Sg Ela &nmod #4->1 
 "<,>"
@@ -6885,7 +6885,7 @@
 "<jahdatessaan>"
 	"jahdata" V Act InfE Sg Ine PxSg3 &advcl #5->4 
 "<olematonta>"
-	"olematon" A Sg Par &amod #6->7 
+	"olla" V NegPrc Sg Par &acl #6->7 
 "<aarretta>"
 	"aarre" N Sg Par &dobj #7->5 
 "<.>"
@@ -16022,7 +16022,7 @@
 "<paljon>"
 	"paljon" Adv &advmod #19->21 
 "<kaipaamaansa>"
-	"kaivata" V AgPrc Sg Ill PxPl3 ??? &acl #20->21 
+	"kaivata" V AgPrc Sg Par PxPl3 &acl #20->21 
 "<materiaalia>"
 	"materiaali" N Sg Par &dobj #21->18 
 "<.>"
@@ -22272,7 +22272,7 @@
 "<ekstaasin>"
 	"ekstaasi" N Sg Gen &nsubj #8->9 
 "<tuomaan>"
-	"tuoda" V Act InfMa Sg Ill &acl #9->10 
+	"tuoda" V AgPrc Sg Ill &acl #9->10 
 "<onnentunteeseen>"
 	"onnentunne" N Sg Ill &nmod #10->7 
 "<.>"
@@ -22410,7 +22410,7 @@
 "<Suomen>"
 	"Suomi" N Prop Sem/Geo Sg Gen &nsubj #9->10 
 "<vaatimalla>"
-	"vaatia" V Act InfMa Sg Ade &acl #10->11 
+	"vaatia" V AgPrc Sg Ade &acl #10->11 
 "<vakuuskirjauksella>"
 	"vakuus#kirjaus" N Sg Ade &nmod #11->12 
 "<on>"
@@ -23880,7 +23880,7 @@
 "<akateemisesti>"
 	"akateemisesti" Adv &advmod #5->6 
 "<koulutettujen>"
-	"koulutettu" N Pl Gen &nmod #6->2 
+	"kouluttaa" V Pss PrfPrc Pl Gen &nmod #6->2 
 "<kohdalla>"
 	"kohdalla" Po &case #7->6 
 "<vallitsee>"
@@ -24110,7 +24110,7 @@
 "<Gaddafin>"
 	"Gaddaf" N Prop Sg Gen ?? &nsubj #8->9 
 "<johtamalla>"
-	"johtaa" V Act InfMa Sg Ade &acl #9->10 
+	"johtaa" V AgPrc Sg Ade &acl #9->10 
 "<hallituksella>"
 	"hallitus" N Sg Ade &nmod:own #10->11 
 "<on>"
@@ -24182,7 +24182,7 @@
 "<informaatioministeriön>"
 	"informaatio#ministeriö" N Sg Gen &nsubj #19->20 
 "<kirjoittamassa>"
-	"kirjoittaa" V Act InfMa Sg Ine &acl #20->21 
+	"kirjoittaa" V AgPrc Sg Ine &acl #20->21 
 "<kirjeessä>"
 	"kirje" N Sg Ine &nmod #21->22 
 "<kirjoitetaan>"
@@ -25684,7 +25684,7 @@
 "<Tšeljabinskin>"
 	"Tšeljabinsk" N Prop Sem/Geo Sg Gen &nsubj #5->6 
 "<tarjoamasta>"
-	"tarjota" V Act InfMa Sg Ela &acl #6->7 
+	"tarjota" V AgPrc Sg Ela &acl #6->7 
 "<palkkiosta>"
 	"palkkio" N Sg Ela &nmod #7->4 
 "<.>"
@@ -26466,7 +26466,7 @@
 "<Taloustutkimuksen>"
 	"taloustutkimus" N Sg Gen &nsubj #1->2 
 "<tekemään>"
-	"tehdä" V Act InfMa Sg Ill &acl #2->3 
+	"tehdä" V AgPrc Sg Ill &acl #2->3 
 "<kyselyyn>"
 	"kysely" N Sg Ill &nmod #3->4 
 "<haastateltiin>"
@@ -28990,7 +28990,7 @@
 "<yliopiston>"
 	"yliopisto" N Sg Gen &nsubj #8->9 
 "<järjestämällä>"
-	"järjestää" V Act InfMa Sg Ade &acl #9->10 
+	"järjestää" V AgPrc Sg Ade &acl #9->10 
 "<kierroksella>"
 	"kierros" N Sg Ade &nmod #10->2 
 "<.>"
@@ -29106,7 +29106,7 @@
 "<lapsille>"
 	"lapsi" N Pl All &nmod #12->13 
 "<tarjoamaan>"
-	"tarjota" V Act InfMa Sg Ill &acl #13->14 
+	"tarjota" V AgPrc Sg Ill &acl #13->14 
 "<tiedetoimintaan>"
 	"tiede#toiminta" N Sg Ill &nmod #14->9 
 "<.>"
@@ -30216,7 +30216,7 @@
 "<tiedekunnan>"
 	"tiedekunta" N Sg Gen &nsubj #9->10 
 "<järjestämässä>"
-	"järjestää" V Act InfMa Sg Ine &acl #10->11 
+	"järjestää" V AgPrc Sg Ine &acl #10->11 
 "<seminaarissa>"
 	"seminaari" N Sg Ine &nmod #11->5 
 "<Euroopan>"
