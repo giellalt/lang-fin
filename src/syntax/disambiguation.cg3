@@ -1696,10 +1696,14 @@ SELECT Ind + ("voida") (*0 InfA OR ("huonosti") BARRIER S-BOUNDARY OR InfA-VERB)
 REMOVE V (0 VUO_VOI)(NEGATE *0 InfA OR ("miten") OR ("<sille>") OR ("huonosti") BARRIER S-BOUNDARY); # voi
 SELECT Interj + ("voi") (NEGATE 0 V)(-1 OMS)(1 Punct OR CS OR Interj)(NEGATE 2 NSgNom); # voi
 
-REMOVE AgPrc + $$ALLCASES (NEGATE 1 N + $$ALLCASES);
-REMOVE AgPrc + ALLCASES (-1 InfMa-Ill);
-SELECT AgPrc + $$ALLCASES (-1C NomHEAD + Gen)(1C N + $$ALLCASES);
+SELECT AgPrc + Sg + $$ALLCASES - Ill - POSS_SUFF (-1C NomHEAD + Gen OR Act + Ind)(1C N + Sg + $$ALLCASES);
+SELECT AgPrc + Pl + $$ALLCASES - Ill - POSS_SUFF (-1C NomHEAD + Gen OR Act + Ind)(1C N + Pl + $$ALLCASES);
+SELECT AgPrc + Sg - Ill (0 $$ALLCASES) (-1C NomHEAD + Gen OR Act + Ind)(1C N + Sg + $$ALLCASES);
+SELECT AgPrc + Pl - Ill (0 $$ALLCASES) (-1C NomHEAD + Gen OR Act + Ind)(1C N + Pl + $$ALLCASES);
 # heidän tuomistaan kaulakoruista
+REMOVE AgPrc + $$ALLCASES - POSS_SUFF (NEGATE 1 N + $$ALLCASES);
+REMOVE AgPrc + $$ALLCASES + POSS_SUFF - Gen (NEGATE 1 N + $$ALLCASES);
+REMOVE AgPrc + ALLCASES (-1 InfMa-Ill);
 
 SELECT InfA (NEGATE 0 Pron)(1 NES OR InfA-VERB LINK NOT 0 InfA LINK NOT *1 InfA-VERB BARRIER FINV OR S-BOUNDARY OR Conj OR Punct);
 SELECT InfA (NEGATE 0 Pron OR InfA-VERB)(1 NES OR InfA-VERB LINK NOT *1 InfA-VERB BARRIER FINV OR S-BOUNDARY OR Conj OR Punct);
@@ -2378,7 +2382,8 @@ REMOVE NomSg (0 PxSg3)(NEGATE 1 Prop + NomSg OR Act + Ind + Sg3)(*1 NPSgNom BARR
 
 #REMOVE Act + PrsPrc (0 A + $$ALLCASES)(0 V + $$ALLCASES); 
 # prefer A for transl, if it is in dict, otherwise will be PrfPrc and PrsPrc
-REMOVE N (0 Act + PPPCPs); 
+REMOVE N (0 Act + PrsPrc + $$ALLCASES)(1 $$ALLCASES); 
+REMOVE N (0 Act + PrfPrc); 
 REMOVE A (0 Act + PPPCPs); 
 # most probably A is not in dict, so here prefer Act Prc
 
@@ -2395,6 +2400,7 @@ SELECT ("paperi") + Pl + Nom (NEGATE -1 Num OR ("moni") OR PALJON OR PARI_PUOLI)
 SELECT HYVA_HUONO + ASgNom (*-1 OLLA + Sg3 BARRIER CCC OR S-BOUNDARY OR NPSgNom)(NEGATE 1 N) ; # predicative 
 SELECT ASgNom (OC A OR N)(*-1 OLLA + Sg3 BARRIER CCC OR S-BOUNDARY OR NPSgNom)(NEGATE 1 N) ; # predicative #?
 SELECT ASgNom (OC A OR N)(*-1 OLLA + Sg3 BARRIER CCC OR S-BOUNDARY OR NPSgNom)(1 N + $$ALLCASES)(NEGATE 0 $$ALLCASES) ; # predicative 
+REMOVE NomHEAD + NomSg + POSS_SUFF (0 Gen) (-1 Act + Ind + Sg3 - OLLA OR Act + Ind + Pl3 - OLLA)(-2 UP + Unknown)(NEGATE -3 OMS) ;
 SELECT NomHEAD + NomSg (NEGATE 0 Adv) (*-1 FINV + Sg3 BARRIER CCC OR S-BOUNDARY OR NPSgNom LINK NOT *-1 NPSgNom OR Acro + NomSg) ;
 # Tässä on sinun huoneesi ?
 
@@ -3319,6 +3325,9 @@ SELECT ("puoli") + N IF (NEGATE 0 WORD LINK -1 NGen) ;
 
 # REMOVE Pl3 IF (0 Sg3) (*-1C THIRD_PersON_SG BARRIER THIRD_PersON_SG) ;
 # REMOVE Sg3 IF (0 Pl3) (*-1C THIRD_PersON_PL BARRIER THIRD_PersON_PL) ;
+
+REMOVE PxPl3 IF (0 PxSg3)(-1C Act + Ind + Sg3) ; # TP
+REMOVE PxSg3 IF (0 PxPl3)(-1C Act + Ind + Pl3) ; # TP
 
 REMOVE PxPl3 IF (0 PxSg3)(-1 Pers + Sg3 OR Rel + Sg OR Interr + Sg OR Qu + Sg) ; # TP: rewritten
 REMOVE PxSg3 IF (0 PxPl3)(-1 Pers + Pl3 OR Rel + Pl OR Interr + Pl OR Qu + Pl) ; # TP: rewritten 
