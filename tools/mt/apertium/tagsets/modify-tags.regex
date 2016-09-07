@@ -1,69 +1,27 @@
 [
   [ "<n>" "<prop>" -> "<np>" ] .o.
-    [ "<part>" "<cnjsub>" -> "<cnjsub>" ] .o.
+  [ "<part>" "<cnjsub>" -> "<cnjsub>" ] .o.
   [ "<g3>" "<n>"   -> "<n>" "<g3>" ] .o.
   [ "<sem_fem>" -> "<ant>" "<f>"  ] .o.
   [ "<sem_mal>" -> "<ant>" "<m>"  ] .o.
   [ "<sem_plc>" -> "<top>"  ] .o.
-  [ "<act>" -> "<actv>"  ] .o.
-  [ "<pss>" -> "<pasv>"  ] .o.
-  [ "<sg1>"        -> "<p1>" "<sg>" ] .o.
-  [ "<sg2>"        -> "<p2>" "<sg>" ] .o.
-  [ "<sg3>"        -> "<p3>" "<sg>" ] .o.
-  [ "<pl1>"        -> "<p1>" "<pl>" ] .o.
-  [ "<pl2>"        -> "<p2>" "<pl>" ] .o.
-  [ "<pl3>"        -> "<p3>" "<pl>" ] .o.
-  [ "<du1>"        -> "<p1>" "<du>" ] .o.
-  [ "<du2>"        -> "<p2>" "<du>" ] .o.
-  [ "<du3>"        -> "<p3>" "<du>" ] .o.
-  [ "<pxsg1>"      -> "<px1sg>" ] .o.
-  [ "<pxsg2>"      -> "<px2sg>" ] .o.
-  [ "<pxsg3>"      -> "<px3sg>" ] .o.
-  [ "<pxdu1>"      -> "<px1du>" ] .o.
-  [ "<pxdu2>"      -> "<px2du>" ] .o.
-  [ "<pxdu3>"      -> "<px3du>" ] .o.
-  [ "<pxpl1>"      -> "<px1pl>" ] .o.
-  [ "<pxpl2>"      -> "<px2pl>" ] .o.
-  [ "<pxpl3>"      -> "<px3pl>" ] .o.
   [ "#"            ->	"+" ] .o.
+  [ "<adp>" "<pr>"  ->	"<pr>" ] .o.
   [ "<adp>" "<po>"  ->	"<post>" ] .o.
   [ "<adp>" "<post>"  ->	"<post>" ] .o.
   [ %<qnt%> %<indef%>  ->	%<indef%> ] .o.
-  [ "<cc>"         ->	"<cnjcoo>" ] .o.
-  [ "<cs>"         ->	"<cnjsub>" ] .o.
   [ "<foc_kaan>"          ->	"+" {kaan} "<adv>" ] .o.
   [ "<foc_kin>"          ->	"+" {kin} "<adv>" ] .o.
   [ "<foc_son>"         ->	"+" {son} "<pcle>" ] .o.
   [ "<foc_naj>"         ->	"+" {naj} "<pcle>" ] .o.
   [ "<foc_naj>" "<qst>"	->	"<qst>" "+" {naj} "<pcle>" ] .o.
   [ "<qst>" "<pcle>"    ->	"<pcle>" "<qst>" ] .o.
-  [ "<hom1>"      ->	"¹" ,
-    "<hom2>"      ->	"²" ,
-    "<hom3>"      ->	"³" ,
-    "<hom4>"      ->	"⁴" ,
-    "<hom5>"      ->	"⁵" ,
-    "<hom6>"      ->	"⁶" ,
-    "<hom7>"      ->	"⁷" ,
-    "<hom8>"      ->	"⁸" ,
-    "<hom9>"      ->	"⁹" ,
-    "<pron>"      ->	"<prn>" ,
-    "<v>"         ->	"<vblex>" ,
-    "<interr>"    ->	"<itg>" ,
-    "<prs>"       ->	"<pres>" ,
-    "<imprt>"       ->	"<imp>" ,
-    "<prt>"       ->	"<pret>" ,
-    "<a>"         ->	"<adj>" ,
-    "<refl>"      ->	"<ref>" ,
-    "<interj>"    ->	"<ij>" ,
-    "<indef>"     ->	"<ind>" ,
-    "<ind>"       ->	"<indic>" ,
-    "<inan>"      ->	"<nn>" ,
+  [ "<inan>"      ->	"<nn>" ,
     "<comma>"     ->	"<cm>" ,
     "<use_nohyphens>"     ->	"<cmp>" ,
     "<use_hyphen>"     ->	"<cmp>" "<hyph>" ,
     "<cmpnd>"     ->	"<cmp>" ,
-    "<cmpar>"     ->	"<comp>" ,
-    "<recipr>"    ->	"<res>" ] .o.
+    "<cmpar>"     ->	"<comp>" ] .o.
   [ "<err_der>"  ->		0 ] .o.
   [ "<err_hyph>" ->		0 ] .o.
   [ "<err_lex>"  ->		0 ] .o.
