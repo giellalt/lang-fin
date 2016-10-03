@@ -523,7 +523,7 @@ kuka+Pron+Interr+Sg+All+Use/Marg:kulle   PRON_BACK_CLIT_OPT ;
 kuka+Pron+Interr+Sg+Ela+Use/Marg:kusta   PRON_BACK_CLIT_OPT ;
 kuka+Pron+Interr+Sg+Ill+Use/Marg:kuhun   PRON_BACK_CLIT_OPT ;
 kuka+Pron+Interr+Sg+Par+Use/Marg:kuta    PRON_BACK_CLIT_OPT ;
-mi+Pron+Interr+Sg+Nom+Use/Marg:mi     PRON_FRONT_CLIT_OPT ;
+!mikä+Pron+Interr+Sg+Nom+Use/Marg:mi     PRON_FRONT_CLIT_OPT ; ! 
 
 !! Relative pronouns are *kuka*, *joka* and *mikä* (which, whose). VISK §735|
 !! They are morphologically indistinct from corresponding interrogative
@@ -848,7 +848,7 @@ jokin+Pron+Indef+Sg+Tra:joksikin  PRON_BACK_CLIT_OPT ; !
 !jokainen+Pron+Qu+Sg+Nom:jokainen     PRON_BACK_CLIT_OPT ;
 !jokainen+Pron+Qu+Sg+Par:jokaista     PRON_BACK_CLIT_OPT ;
 !jokainen+Pron+Qu+Sg+Tra:jokaiseksi   PRON_BACK_CLIT_OPT ;
-!kaikki+Pron+Qu:kaik        PRON_KAIKKI     ;
+kaikki+Pron+Qu:kaik        PRON_KAIKKI     ;
 !koko+Pron+Qu:koko     PRON_BACK_CLIT_OPT ;
 !kukin+Pron+Qu+Pl+Abe:kuittakin   PRON_BACK_CLIT_OPT ;
 !kukin+Pron+Qu+Pl+Abl:kuiltakin   PRON_BACK_CLIT_OPT ;
@@ -2654,33 +2654,33 @@ LEXICON PRON_JOMPIKUMPI
 :pikumpi	PRON_BACK_NOMINATIVE ;
 
 
-!!LEXICON PRON_KAIKKI
-!!
-!!:e	PRON_BACK_WEAK_SINGULARS_OPTPOSS ;
-!!
-!!+Sg:e	PRON_BACK_GENITIVE_N ;
-!!
-!!:ke	PRON_BACK_STRONG_SINGULARS_OPTPOSS ;
-!!
-!!:ke	PRON_BACK_PARTITIVE_A_AN ;
-!!
-!!:ke	PRON_BACK_ILLATIVE_EN ;
-!!
-!!:ke	PRON_BACK_GENITIVE_IN_OPTPOSS ;
-!!
-!!:k	PRON_BACK_STRONG_PLURALS_OPTPOSS ;
-!!
-!!:k	PRON_BACK_PARTITIVE_IA_OPTPOSS ;
-!!
-!!:k	PRON_BACK_GENITIVE_IEN_OPTPOSS ;
-!!
-!!:k	PRON_BACK_ILLATIVE_IIN_OPTPOSS ;
-!!
-!!+Sg+Nom:ki	PRON_BACK_CLIT_OPT ;
-!!
-!!:	PRON_BACK_WEAK_PLURALS_OPTPOSS ;
-!!
-!!+Dial/Finland+Sg+Nom:	# ;
+LEXICON PRON_KAIKKI
+
+:e	PRON_BACK_WEAK_SINGULARS_OPTPOSS ;
+
++Sg:e	PRON_BACK_GENITIVE_N ;
+
+:ke	PRON_BACK_STRONG_SINGULARS_OPTPOSS ;
+
+:ke	PRON_BACK_PARTITIVE_A_AN ;
+
+:ke	PRON_BACK_ILLATIVE_EN ;
+
+:ke	PRON_BACK_GENITIVE_IN_OPTPOSS ;
+
+:k	PRON_BACK_STRONG_PLURALS_OPTPOSS ;
+
+:k	PRON_BACK_PARTITIVE_IA_OPTPOSS ;
+
+:k	PRON_BACK_GENITIVE_IEN_OPTPOSS ;
+
+:k	PRON_BACK_ILLATIVE_IIN_OPTPOSS ;
+
++Sg+Nom:ki	PRON_BACK_CLIT_OPT ;
+
+:	PRON_BACK_WEAK_PLURALS_OPTPOSS ;
+
++Dial/Finland+Sg+Nom:	# ;
 
 
 LEXICON PRON_KOKO
