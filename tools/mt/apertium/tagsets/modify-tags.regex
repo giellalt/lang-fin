@@ -7,6 +7,7 @@
   [ "<sem_mal>" -> "<ant>" "<m>"  ] .o.
   [ "<sem_plc>" -> "<top>"  ] .o.
   [ "<sem_geo>" -> "<top>"  ] .o.
+  [ "<sem_human>" -> 0  ] .o.
   [ "#"            ->	"+" ] .o.
   [ "<adp>" "<pr>"  ->	"<pr>" ] .o.
   [ "<adp>" "<po>"  ->	"<post>" ] .o.
