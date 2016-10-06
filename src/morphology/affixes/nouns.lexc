@@ -511,33 +511,33 @@ LEXICON NOUN_FRONT_PARTITIVE_JÄ
 LEXICON NOUN_BACK_ILLATIVE_IHIN
 !!€gt-norm: Noun plural illative ihin back
 !!€ taloihin: talo+N+Pl+Ill
-+Pl+Ill:%>i%>hin   #    ;
++Pl+Ill:%>i%>hin   NOUN_BACK_CLIT_OPT    ;
 +Pl+Ill:%>i%>hi    NOUN_BACK_POSS     ;
 
 LEXICON NOUN_FRONT_ILLATIVE_IHIN
 !!€gt-norm: Noun plural illative ihin front
 !!€ näkyihin: näky+N+Pl+Ill
-+Pl+Ill:%>i%>hin   #    ;
++Pl+Ill:%>i%>hin   NOUN_BACK_CLIT_OPT    ;
 +Pl+Ill:%>i%>hi    NOUN_FRONT_POSS     ;
 
 LEXICON NOUN_BACK_ILLATIVE_IIN
 !!€gt-norm: Noun plural illative iin back
 !!€ koiriin: koira+N+Pl+Ill
-+Pl+Ill:%>i%>in    #     ;
++Pl+Ill:%>i%>in    NOUN_BACK_CLIT_OPT     ;
 +Pl+Ill:%>i%>i     NOUN_BACK_POSS     ;
 
 LEXICON NOUN_FRONT_ILLATIVE_IIN
 !!€gt-norm: Noun plural illative iin front
 !!€ sieni: sieni+N+Sg+Nom # mushroom
 !!€ sieniin: sieni+N+Pl+Ill
-+Pl+Ill:%>i%>in    #     ;
++Pl+Ill:%>i%>in    NOUN_BACK_CLIT_OPT     ;
 +Pl+Ill:%>i%>i     NOUN_FRONT_POSS     ;
 
 LEXICON NOUN_BACK_ILLATIVE_ISIIN
 !!€gt-norm: Noun plural illative isiin back
 !!€ sokea: sokea+N+Sg+Nom
 !!€ sokeisiin: sokea+N+Pl+Ill
-+Pl+Ill:%>i%>siin  #     ;
++Pl+Ill:%>i%>siin  NOUN_BACK_CLIT_OPT     ;
 +Pl+Ill:%>i%>sii   NOUN_BACK_POSS     ;
 
 +Use/NG:  NOUN_BACK_H_PLURALS_ARCHAIC ;
@@ -547,7 +547,7 @@ LEXICON NOUN_FRONT_ILLATIVE_ISIIN
 !!€gt-norm: Noun plural illative isiin front
 !!€ kevät: kevät+N+Sg+Nom # spring
 !!€ keväisiin: kevät+N+Pl+Ill
-+Pl+Ill:%>i%>siin  #     ;
++Pl+Ill:%>i%>siin  NOUN_BACK_CLIT_OPT     ;
 +Pl+Ill:%>i%>sii   NOUN_FRONT_POSS     ;
 
 +Use/NG:0  NOUN_FRONT_H_PLURALS_ARCHAIC ;
