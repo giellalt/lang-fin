@@ -211,44 +211,44 @@ LEXICON NUM_BACK_PARTITIVE_JA
 
 LEXICON NUM_BACK_GENITIVE_IEN
 !!€gt-norm: Numeral plural genitive ien back
-!!€ kaksien: kaksi+Num+Card+Pl+Gen
-+Pl+Gen:%>i%>en   #     ;
+!!€ kaksien: kaksi+Num+Card+Pl+Gen NUM_BACK_CLIT_OPT
++Pl+Gen:%>i%>en   NUM_BACK_CLIT_OPT ; 
 +Pl+Gen:%>i%>e    NUM_BACK_POSS     ;
 
 LEXICON NUM_FRONT_GENITIVE_IEN
 !!€gt-norm: Numeral plural genitive ien front
-!!€ yksien: yksi+Num+Card+Pl+Gen
-+Pl+Gen:%>i%>en   #     ;
+!!€ yksien: yksi+Num+Card+Pl+Gen NUM_BACK_CLIT_OPT
++Pl+Gen:%>i%>en   NUM_BACK_CLIT_OPT ; 
 +Pl+Gen:%>i%>e    NUM_FRONT_POSS     ;
 
 LEXICON NUM_BACK_GENITIVE_JEN
 !!€gt-norm: Numeral plural genitive jen back
-!!€ satojen: sata+Num+Card+Pl+Gen # hundred
-+Pl+Gen:%>j%>en    #     ;
+!!€ satojen: sata+Num+Card+Pl+Gen # hundred NUM_BACK_CLIT_OPT
++Pl+Gen:%>j%>en    NUM_BACK_CLIT_OPT ; 
 +Pl+Gen:%>j%>e     NUM_BACK_POSS     ;
 
 LEXICON NUM_BACK_GENITIVE_TEN
 !!€gt-norm: Numeral plural genitive ten back
-!!€ kuutten: kuusi+Num+Card+Pl+Gen
-+Pl+Gen:%>ten    #     ;
+!!€ kuutten: kuusi+Num+Card+Pl+Gen NUM_BACK_CLIT_OPT
++Pl+Gen:%>ten    NUM_BACK_CLIT_OPT ; 
 +Pl+Gen:%>te     NUM_BACK_POSS     ;
 
 LEXICON NUM_FRONT_GENITIVE_TEN
 !!€gt-norm: Numeral plural genitive ten front
-!!€ viitten: viisi+Num+Card+Pl+Gen
-+Pl+Gen:%>ten    #     ;
+!!€ viitten: viisi+Num+Card+Pl+Gen NUM_BACK_CLIT_OPT
++Pl+Gen:%>ten    NUM_BACK_CLIT_OPT ; 
 +Pl+Gen:%>te     NUM_FRONT_POSS     ;
 
 LEXICON NUM_BACK_GENITIVE_IN
 !!€gt-norm: Numeral plural genitive in back
-!!€ yhdeksäin: yhdeksän+Num+Card+Pl+Gen+Use/Rare
-+Pl+Gen+Use/Rare:%>i%>n    #     ;
+!!€ yhdeksäin: yhdeksän+Num+Card+Pl+Gen+Use/Rare NUM_BACK_CLIT_OPT
++Pl+Gen+Use/Rare:%>i%>n    NUM_BACK_CLIT_OPT ; 
 +Pl+Gen+Use/Rare:%>i     NUM_BACK_POSS     ;
 
 LEXICON NUM_FRONT_GENITIVE_IN
 !!€gt-norm: Numeral plural genitive in front
-!!€ neljäin: neljä+Num+Card+Pl+Gen+Use/Rare
-+Pl+Gen+Use/Rare:%>i%>n    #     ;
+!!€ neljäin: neljä+Num+Card+Pl+Gen+Use/Rare NUM_BACK_CLIT_OPT
++Pl+Gen+Use/Rare:%>i%>n    NUM_BACK_CLIT_OPT ; 
 +Pl+Gen+Use/Rare:%>i     NUM_FRONT_POSS     ;
 
 LEXICON NUM_BACK_ILLATIVE_IHIN
