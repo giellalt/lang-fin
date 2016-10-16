@@ -15837,7 +15837,18 @@ LEXICON VERB_OLLA
 0:ol  VERB_BACK_PASSIVE  ;
 0:ol  VERB_BACK_TUPCP_L  ;
 0:ole  VERB_BACK_DERIV_PCPS  ;
-0:lie  VERB_FRONT_POTENTIAL_N  ;
+
+!0:lie  VERB_FRONT_POTENTIAL_N  ;  - exceptional; general cont.lexicon contains Indicative forms 
++Act+Pot+Pl1:lie%>ne%>mme VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Pl2:lie%>ne%>tte VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Pl3:lie%>ne%>vät  VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Sg1:lie%>ne%>n   VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Sg2:lie%>ne%>t   VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Sg3:lie%>ne%>e   VERB_FRONT_CLIT_OPT     ;
++Act+Pot+ConNeg:lie%>ne VERB_FRONT_CLIT_OPT     ;
++Act+Pot+PrfPrc:lie%>n   ADJ_ÄLLISTYNYT     ;
++Act+Pot+Prt+ConNeg+Sg:lie%>nyt  VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Prt+ConNeg+Pl:lie%>neet  VERB_FRONT_CLIT_OPT ;
 
 !  these were found in exceptions.lexc, but moved here
 !  in order to have all olla in one place. Pleas remove
@@ -16423,7 +16434,17 @@ LEXICON AUX_OLLA
 
 +PrfPrc+Act:oll	ADJ_KULUNUT ;
 
-:lie	VERB_FRONT_POTENTIAL_N ;
+!:lie	VERB_FRONT_POTENTIAL_N ; - exceptional; general cont.lexicon contains Indicative forms 
++Act+Pot+Pl1:lie%>ne%>mme VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Pl2:lie%>ne%>tte VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Pl3:lie%>ne%>vät  VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Sg1:lie%>ne%>n   VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Sg2:lie%>ne%>t   VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Sg3:lie%>ne%>e   VERB_FRONT_CLIT_OPT     ;
++Act+Pot+ConNeg:lie%>ne VERB_FRONT_CLIT_OPT     ;
++Act+Pot+PrfPrc:lie%>n   ADJ_ÄLLISTYNYT     ;
++Act+Pot+Prt+ConNeg+Sg:lie%>nyt  VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Prt+ConNeg+Pl:lie%>neet  VERB_FRONT_CLIT_OPT ;
 
 :ole	VERB_BACK_WEAK_PRESENT ;
 
