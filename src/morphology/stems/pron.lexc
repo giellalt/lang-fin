@@ -230,7 +230,7 @@ nämä+Pron+Dem+Pl+All:näille   PRON_FRONT_CLIT_OPT ;
 nämä+Pron+Dem+Pl+Com:näine    PRON_FRONT_CLIT_OPT ;
 nämä+Pron+Dem+Pl+Ela:näistä   PRON_FRONT_CLIT_OPT ;
 nämä+Pron+Dem+Pl+Ess:näinä    PRON_FRONT_CLIT_OPT ;
-nämä+Pron+Dem+Pl+Gen:näitten      PRON_FRONT_CLIT_OPT ;
+nämä+Pron+Dem+Pl+Gen+Use/NG:näitten      PRON_FRONT_CLIT_OPT ;
 nämä+Pron+Dem+Pl+Gen:näiden   PRON_FRONT_CLIT_OPT ;
 nämä+Pron+Dem+Pl+Ill:näihin   PRON_FRONT_CLIT_OPT ;
 nämä+Pron+Dem+Pl+Ine:näissä   PRON_FRONT_CLIT_OPT ;
@@ -243,7 +243,7 @@ nuo+Pron+Dem+Pl+All:noille   PRON_BACK_CLIT_OPT ;
 nuo+Pron+Dem+Pl+Com:noine    PRON_BACK_CLIT_OPT ;
 nuo+Pron+Dem+Pl+Ela:noista   PRON_BACK_CLIT_OPT ;
 nuo+Pron+Dem+Pl+Ess:noina    PRON_BACK_CLIT_OPT ;
-nuo+Pron+Dem+Pl+Gen:noitten  PRON_BACK_CLIT_OPT ;
+nuo+Pron+Dem+Pl+Gen+Use/NG:noitten  PRON_BACK_CLIT_OPT ;
 nuo+Pron+Dem+Pl+Gen:noiden   PRON_BACK_CLIT_OPT ;
 nuo+Pron+Dem+Pl+Ill:noihin   PRON_BACK_CLIT_OPT ;
 nuo+Pron+Dem+Pl+Ine:noissa   PRON_BACK_CLIT_OPT ;
@@ -2287,7 +2287,7 @@ LEXICON PRON_AINOA
 
 :	PRON_BACK_GENITIVE_IDEN_OPTPOSS ;
 
-:	PRON_BACK_GENITIVE_ITTEN_OPTPOSS ;
++Use/NG:	PRON_BACK_GENITIVE_ITTEN_OPTPOSS ;
 
 :	PRON_BACK_ILLATIVE_ISIIN_OPTPOSS ;
 
@@ -2302,7 +2302,7 @@ LEXICON PRON_ERÄS
 
 :	PRON_FRONT_GENITIVE_IDEN ;
 
-:	PRON_FRONT_GENITIVE_ITTEN ;
++Use/NG:	PRON_FRONT_GENITIVE_ITTEN ;
 
 :	PRON_FRONT_ILLATIVE_ISIIN ;
 
@@ -2409,7 +2409,7 @@ LEXICON PRON_JOKA
 
 +Pl+Gen:idenka	# ;
 
-+Pl+Gen:ittenka	# ;
++Use/NG+Pl+Gen:ittenka	# ;
 
 +Pl+Nom:tka	# ;
 
@@ -2431,7 +2431,7 @@ LEXICON PRON_JOKA
 
 :	PRON_BACK_GENITIVE_IDEN ;
 
-:	PRON_BACK_GENITIVE_ITTEN ;
++Use/NG:	PRON_BACK_GENITIVE_ITTEN ;
 
 :	PRON_BACK_ILLATIVE_IHIN ;
 
@@ -2491,7 +2491,7 @@ LEXICON PRON_JOKIN
 
 +Pl+Gen:idenkin	PRON_BACK_CLIT_OPT ;
 
-+Pl+Gen:ittenkin	PRON_BACK_CLIT_OPT ;
++Use/NG+Pl+Gen:ittenkin	PRON_BACK_CLIT_OPT ;
 
 +Pl+Ill:ihinkin	PRON_BACK_CLIT_OPT ;
 
@@ -2574,7 +2574,7 @@ LEXICON PRON_JOKU
 
 +Pl+Gen:idenkuiden	PRON_BACK_CLIT_OPT ;
 
-+Pl+Gen:ittenkuitten	PRON_BACK_CLIT_OPT ;
++Use/NG+Pl+Gen:ittenkuitten	PRON_BACK_CLIT_OPT ;
 
 +Pl+Ill:ihinkuihin	PRON_BACK_CLIT_OPT ;
 
@@ -2706,7 +2706,7 @@ LEXICON PRON_KUKA
 
 +Pl+Gen:eiden	PRON_FRONT_CLIT_OPT_KA_S ;
 
-+Pl+Gen:eitten	PRON_FRONT_CLIT_OPT_KA_S ;
++Use/NG+Pl+Gen:eitten	PRON_FRONT_CLIT_OPT_KA_S ;
 
 +Pl+Ill:eihin	PRON_FRONT_CLIT_OPT_KA_S ;
 
@@ -2783,7 +2783,7 @@ LEXICON PRON_KUKAAN
 
 +Pl+Gen:eidenkään	PRON_FRONT_CLIT_OPT ;
 
-+Pl+Gen:eittenkään	PRON_FRONT_CLIT_OPT ;
++Use/NG+Pl+Gen:eittenkään	PRON_FRONT_CLIT_OPT ;
 
 +Pl+Ill:eihinkään	PRON_FRONT_CLIT_OPT ;
 
@@ -2848,7 +2848,7 @@ LEXICON PRON_KUKAKIN
 
 +Pl+Gen:eidenkin	# ;
 
-+Pl+Gen:eittenkin	# ;
++Use/NG+Pl+Gen:eittenkin	# ;
 
 +Pl+Ill:eihinkin	# ;
 
@@ -3349,7 +3349,7 @@ LEXICON PRON_MONIAS
 
 :	PRON_BACK_GENITIVE_IDEN ;
 
-:	PRON_BACK_GENITIVE_ITTEN ;
++Use/NG:	PRON_BACK_GENITIVE_ITTEN ;
 
 :	PRON_BACK_ILLATIVE_ISIIN ;
 
@@ -3480,7 +3480,7 @@ LEXICON PRON_NUO
 
 :o	PRON_BACK_GENITIVE_IDEN ;
 
-:o	PRON_BACK_GENITIVE_ITTEN ;
++Use/NG:o	PRON_BACK_GENITIVE_ITTEN ;
 
 :o	PRON_BACK_ILLATIVE_IHIN ;
 
@@ -3501,7 +3501,7 @@ LEXICON PRON_NÄMÄ
 
 :	PRON_FRONT_GENITIVE_IDEN ;
 
-:	PRON_FRONT_GENITIVE_ITTEN ;
++Use/NG:	PRON_FRONT_GENITIVE_ITTEN ;
 
 :	PRON_FRONT_ILLATIVE_IHIN ;
 
@@ -3630,7 +3630,7 @@ LEXICON PRON_USEA
 
 :	PRON_BACK_GENITIVE_IDEN ;
 
-:	PRON_BACK_GENITIVE_ITTEN ;
++Use/NG:	PRON_BACK_GENITIVE_ITTEN ;
 
 :	PRON_BACK_ILLATIVE_ISIIN ;
 
