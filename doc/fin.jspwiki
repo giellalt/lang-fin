@@ -4,7 +4,7 @@
 ;Software version: 2012
 ;Documentation license: GNU GFDL
 ;SVN Revision: $Revision: 121234 $
-;SVN Date: $Date: 2015-09-18 17:40:24 +0200 (fre, 18 sep 2015) $
+;SVN Date: $Date: 2015-09-18 18:40:24 +0300 (Fri, 18 Sep 2015) $
 
 !!!giella-fin
 
@@ -479,6 +479,8 @@ in there have been carried over.
 Usage tags are pushed wherever appropriate:
 * __nallein: __ {{nalle+N+Pl+Gen+Use/Rare }}
 
+! Homonym tags
+
 !Dialects
 The informal language use contains different Finnish than the literary
 standard, this is marked as standard dialect (yleispuhekieli):
@@ -512,6 +514,7 @@ The boundaries of compounds that are not lexicalised in the dictionary will
 have compound analyses, the compounds may also have usage tags. The
 compounding analyses concern also syntagmatic melting mishmash.
 +Use/Circ      Compound boundary
+
 
 The word and morpheme boundaries are used to limit the effective range of
 far-reaching rules, such as vowel harmony. The boundaries are marked by
@@ -6236,6 +6239,10 @@ __Adverbial conjunctions examples:__
 * __kun: __ {{kun+CS }}
 * __jos: __ {{jos+CS }}
 * __vaikka: __ {{vaikka+CS }}
+
+
+
+
 
 
 
@@ -12361,31 +12368,31 @@ __Numeral plural partitive ja examples:__
 
 
 __Numeral plural genitive ien back examples:__
-* __kaksien: __ {{kaksi+Num+Card+Pl+Gen }}
+* __kaksien: __ {{kaksi+Num+Card+Pl+Gen }} (Eng. NUM_BACK_CLIT_OPT)
 
 
 __Numeral plural genitive ien front examples:__
-* __yksien: __ {{yksi+Num+Card+Pl+Gen }}
+* __yksien: __ {{yksi+Num+Card+Pl+Gen }} (Eng. NUM_BACK_CLIT_OPT)
 
 
 __Numeral plural genitive jen back examples:__
-* __satojen: __ {{sata+Num+Card+Pl+Gen }} (Eng. # hundred)
+* __satojen: __ {{sata+Num+Card+Pl+Gen }} (Eng. # hundred NUM_BACK_CLIT_OPT)
 
 
 __Numeral plural genitive ten back examples:__
-* __kuutten: __ {{kuusi+Num+Card+Pl+Gen }}
+* __kuutten: __ {{kuusi+Num+Card+Pl+Gen }} (Eng. NUM_BACK_CLIT_OPT)
 
 
 __Numeral plural genitive ten front examples:__
-* __viitten: __ {{viisi+Num+Card+Pl+Gen }}
+* __viitten: __ {{viisi+Num+Card+Pl+Gen }} (Eng. NUM_BACK_CLIT_OPT)
 
 
 __Numeral plural genitive in back examples:__
-* __yhdeksäin: __ {{yhdeksän+Num+Card+Pl+Gen+Use/Rare }}
+* __yhdeksäin: __ {{yhdeksän+Num+Card+Pl+Gen+Use/Rare }} (Eng. NUM_BACK_CLIT_OPT)
 
 
 __Numeral plural genitive in front examples:__
-* __neljäin: __ {{neljä+Num+Card+Pl+Gen+Use/Rare }}
+* __neljäin: __ {{neljä+Num+Card+Pl+Gen+Use/Rare }} (Eng. NUM_BACK_CLIT_OPT)
 
 
 __Numeral plural illaive ihin bavk examples:__
@@ -33366,6 +33373,19 @@ forms.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
  !!!Proper nouns
  Proper nouns are morphologically indistinct subset of nouns. They have
  some orthographical differences, required capitalisations and compounding
@@ -33383,6 +33403,7 @@ __Proper nouns examples:__
 
 
 Many of Proper nouns inflect like nouns... however, compound differently
+
 
 
 
@@ -43094,6 +43115,7 @@ __Verb olla examples:__
 
 
 
+
 !!!Verb inflection and derivation
 The verbs' conjugation includes voice (in Finnish grammars also verbal 
 genus),  tense/mood (tempus/modus), personal endings and negation marker
@@ -43219,6 +43241,7 @@ __Verb potential n back examples:__
 
 __Verb potential n front examples:__
 * __yltänen: __ {{yltää+V+Act+Pot+Sg1 }}
+
 
 __Verb potential s back examples:__
 * __juossen: __ {{juosta+V+Act+Pot+Sg1 }} (Eng. # I might run)
