@@ -12,7 +12,7 @@ SUBREADINGS = LTR ;
 # Delimiters #
 # ========== #
 
-#DELIMITERS = "<$\.>" "<$!>" "<$?>" "<$END-OF-SENTENCE>" "<$ENDDOC>" "<$ENDDOCHEAD>" "<$ENDHCODE>" "<$ENDHEAD>" "<$ENDTEXT>" "<$ENDTITLE>" "<$PARAG>" "<$HEAD>" "<$END-P>" "<.>" "<!>" "<?>" "<...>" "<¶>" CLB;
+#DELIMITERS = "<$\.>" "<$!>" "<$?>" "<$END-OF-SENTENCE>" "<$ENDDOC>" "<$ENDDOCHEAD>" "<$ENDHCODE>" "<$ENDHEAD>" "<$ENDTEXT>" "<$ENDTITLE>" "<$PARAG>" "<$HEAD>" "<$END-P>" "<.>" "<!>" "<?>" "<...>" "<¶>" CLB sent ;
 
 # ("<$\.>" "<$!>" "<$?>") ; # "<$\:>"
 
@@ -4910,7 +4910,7 @@ LIST SYNT = @+FMAINV @+FAUXV @-FMAINV @-FAUXV @<SPRED @SPRED> @SUBJ @<SUBJ @SUBJ
 #UNMAP UNSAFE SYNT ; # at this stage don't need for transl -- no, we change or mind
 
 SUBSTITUTE UP (*) UP ;
-SUBSTITUTE CLB (*) CLB ;
+#SUBSTITUTE CLB (*) CLB ; # We do not want to remove CLB
 
 #SUBSTITUTE (+ei V Neg Act Sg3) (+ei V Neg Act Sg3 @+FAUXV) ;
 SUBSTITUTE (Cmpnd @+FAUXV) (Cmpnd) (CS Cmpnd @+FAUXV) ; # ???
