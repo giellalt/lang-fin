@@ -1,797 +1,111 @@
-!! !!!Verb inflection and derivation
-!! The verbs' conjugation includes voice (in Finnish grammars also verbal 
-!! genus),  tense/mood (tempus/modus), personal endings and negation marker
-!! The verbs also have productive derivations to defective nouns as
-!! infinitives, and to adjectives as participles, which are considered to be 
-!! part of inflection and thus included in most versions 
-!! ([VISK § 105|http://scripta.kotus.fi/visk/sisalto.php?p?105]).
-!! The morphology of participles and historical 4th infinitive is further
-!! detailed in section Deverbal nouns'  morphology.
-!!
-!! The analysis strings of verb are not as systematic as nouns,
-!! as many categories collapse together in forms, e.g. the tense and mood
-!! are only distinct with indicative past and non-past, otherwise mood implies
-!! tense in semantic sense.
-
-!! !!Present vowel stems
-
-LEXICON VERB_BACK_WEAK_PRESENT
-!!gt-norm: Verb weak present back
-!!€ kutoa: kutoa+V+Act+InfA+Sg+Lat # knit
-!!€ kudon: kutoa+V+Act+Ind+Prs+Sg1
-+Act+Ind+Prs+Sg1:%>n VERB_BACK_CLIT_OPT     ;
-+Act+Ind+Prs+Sg2:%>t VERB_BACK_CLIT_OPT     ;
-+Act+Ind+Prs+Pl1:%>mme   VERB_BACK_CLIT_OPT     ;
-+Act+Ind+Prs+Pl2:%>tte   VERB_BACK_CLIT_OPT     ;
-+Act+Ind+Prs+ConNeg:%>0    VERB_BACK_CLIT_OPT     ;
-+Act+Imprt+Prs+ConNeg+Sg2:%>0    VERB_BACK_CLIT_OPT     ;
-+Act+Imprt+Sg2:%>0    VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_WEAK_PRESENT
-!!gt-norm: Verb weak present front
-!!€ yltää: yltää+V+Act+InfA+Sg+Lat # reach
-!!€ yllän: yltää+V+Act+Ind+Prs+Sg1
-+Act+Ind+Prs+Sg1:%>n VERB_FRONT_CLIT_OPT     ;
-+Act+Ind+Prs+Sg2:%>t VERB_FRONT_CLIT_OPT     ;
-+Act+Ind+Prs+Pl1:%>mme   VERB_FRONT_CLIT_OPT     ;
-+Act+Ind+Prs+Pl2:%>tte   VERB_FRONT_CLIT_OPT     ;
-+Act+Ind+Prs+ConNeg:%>0    VERB_FRONT_CLIT_OPT     ;
-+Act+Imprt+Prs+ConNeg+Sg2:%>0    VERB_FRONT_CLIT_OPT     ;
-+Act+Imprt+Sg2:%>0    VERB_FRONT_CLIT_OPT     ;
-
-!! The strong form of present indicative endings in strong stems and ma 
-!! infinitive, and maisilla derivation (nee infinitive).
-LEXICON VERB_BACK_STRONG_PRESENT
-!!€gt-norm: Verb strong present back
-!!€ kutovat: kutoa+V+Act+Ind+Prs+Pl3
-!!€ kutomatta: kutoa+V+Act+InfMa+Sg+Abe
-+Act+Ind+Prs+Pl3:%>vat   VERB_BACK_CLIT_OPT     ;
-+Act+InfMa+Sg+Abe:%>ma%>tta   VERB_BACK_POSS_AN_OPT      ;
-+Act+InfMa+Sg+Ade:%>ma%>lla   VERB_BACK_CLIT_OPT     ;
-+Act+InfMa+Sg+Ela:%>ma%>sta   VERB_BACK_CLIT_OPT     ;
-+Act+InfMa+Sg+Ill:%>ma%>an    VERB_BACK_CLIT_OPT     ;
-+Act+InfMa+Sg+Ine:%>ma%>ssa   VERB_BACK_CLIT_OPT     ;
-+Act+InfMa+Sg+Ins:%>ma%>n    VERB_BACK_CLIT_OPT     ;
-+Act+Der/maisilla:%>ma»isi%>lla   VERB_BACK_POSS_AN_OBL        ;
-
-LEXICON VERB_FRONT_STRONG_PRESENT
-!!€gt-norm: Verb strong present front
-!!€ yltävät: yltää+V+Act+Ind+Prs+Pl3
-!!€ yltämättä: yltää+V+Act+InfMa+Sg+Abe
-+Act+Ind+Prs+Pl3:%>vät   VERB_FRONT_CLIT_OPT     ;
-+Act+InfMa+Sg+Abe:%>mä%>ttä   VERB_FRONT_POSS_AN_OPT      ;
-+Act+InfMa+Sg+Ade:%>mä%>llä   VERB_FRONT_CLIT_OPT     ;
-+Act+InfMa+Sg+Ela:%>mä%>stä   VERB_FRONT_CLIT_OPT     ;
-+Act+InfMa+Sg+Ill:%>mä%>än    VERB_FRONT_CLIT_OPT     ;
-+Act+InfMa+Sg+Ine:%>mä%>ssä   VERB_FRONT_CLIT_OPT     ;
-+Act+InfMa+Sg+Ins:%>mä%>n    VERB_FRONT_CLIT_OPT     ;
-+Act+Der/maisilla:%>mä»isi%>llä   VERB_FRONT_POSS_AN_OBL        ;
-
-!! !Verb 3rd singular forms
-!! The third singular form of present tense has few allomorphs according to
-!! preceding vowel context, either lengthening or zero after long vowel stem:
-
-LEXICON VERB_BACK_3SG_A
-!!€gt-norm: Verb 3rd singular a
-!!€ rakentaa: rakentaa+V+Act+Ind+Prs+Sg3 # builds
-+Act+Ind+Prs+Sg3:%>a VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_BACK_3SG_E
-!!€gt-norm: Verb 3rd singular e back
-!!€ tulee: tulla+V+Act+Ind+Prs+Sg3 # comes
-+Act+Ind+Prs+Sg3:%>e VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_3SG_E
-!!€gt-norm: Verb 3rd singular e front
-!!€ menee: mennä+V+Act+Ind+Prs+Sg3 # goes
-+Act+Ind+Prs+Sg3:%>e VERB_FRONT_CLIT_OPT     ;
-
-LEXICON VERB_BACK_3SG_I
-!!€gt-norm: Verb 3rd singular i back
-!!€ munii: munia+V+Act+Ind+Prs+Sg3 # lays eggs
-+Act+Ind+Prs+Sg3:%>i VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_3SG_I
-!!€gt-norm: Verb 3rd singular e front
-!!€ rämpii: rämpiä+V+Act+Ind+Prs+Sg3 # hikes
-+Act+Ind+Prs+Sg3:%>i VERB_FRONT_CLIT_OPT     ;
-
-LEXICON VERB_BACK_3SG_O
-!!€gt-norm: Verb 3rd singular o back
-!!€ kutoo: kutoa+V+Act+Ind+Prs+Sg3
-+Act+Ind+Prs+Sg3:%>o VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_BACK_3SG_U
-!!€gt-norm: Verb 3rd singular u back
-!!€ viruu: virua+V+Act+Ind+Prs+Sg3 # stretches
-+Act+Ind+Prs+Sg3:%>u VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_3SG_Y
-!!€gt-norm: Verb 3rd singular y
-!!€ kääntyy: kääntyä+V+Act+Ind+Prs+Sg3 # turns
-+Act+Ind+Prs+Sg3:%>y VERB_FRONT_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_3SG_Ö
-!!€gt-norm: Verb 3rd singular ö
-!!€ säilöö: säilöä+V+Act+Ind+Prs+Sg3 # conserves
-+Act+Ind+Prs+Sg3:%>ö VERB_FRONT_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_3SG_Ä
-!!€gt-norm: Verb 3rd singular ä
-!!€ vääntää: vääntää+V+Act+Ind+Prs+Sg3 # twist
-+Act+Ind+Prs+Sg3:%>ä VERB_FRONT_CLIT_OPT     ;
-
-!! !Past forms
-
-LEXICON VERB_BACK_WEAK_PAST
-!!€gt-norm: Verb past back
-!!€ kudoin: kutoa+V+Act+Ind+Prt+Sg1
-+Act+Ind+Prt+Sg1:%>i%>n   VERB_BACK_CLIT_OPT     ;
-+Act+Ind+Prt+Sg2:%>i%>t   VERB_BACK_CLIT_OPT     ;
-+Act+Ind+Prt+Pl1:%>i%>mme VERB_BACK_CLIT_OPT     ;
-+Act+Ind+Prt+Pl2:%>i%>tte VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_WEAK_PAST
-!!€gt-norm: Verb past front
-!!€ ylsin: yltää+V+Act+Ind+Prt+Sg1
-+Act+Ind+Prt+Sg1:%>i%>n   VERB_FRONT_CLIT_OPT     ;
-+Act+Ind+Prt+Sg2:%>i%>t   VERB_FRONT_CLIT_OPT     ;
-+Act+Ind+Prt+Pl1:%>i%>mme VERB_FRONT_CLIT_OPT     ;
-+Act+Ind+Prt+Pl2:%>i%>tte VERB_FRONT_CLIT_OPT     ;
-
-LEXICON VERB_BACK_STRONG_PAST
-!!€gt-norm: Verb past back strong
-!!€ kutoivat: kutoa+V+Act+Ind+Prt+Pl3
-+Act+Ind+Prt+Sg3:%>i    VERB_BACK_CLIT_OPT     ;
-+Act+Ind+Prt+Pl3:%>i%>vat  VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_STRONG_PAST
-!!€gt-norm: Verb past front strong
-!!€ ylsivät: yltää+V+Act+Ind+Prt+Pl3
-+Act+Ind+Prt+Pl3:%>i%>vät  VERB_FRONT_CLIT_OPT     ;
-+Act+Ind+Prt+Sg3:%>i    VERB_FRONT_CLIT_OPT     ;
-
-!! !Imperatives
-
-LEXICON VERB_BACK_IMPERATIVE
-!!€gt-norm: Verb imperative back
-!!€ kutokaa: kutoa+V+Act+Imprt+Pl2
-+Act+Imprt+Pl1:%>kaamme   VERB_BACK_CLIT_OPT     ;
-+Act+Imprt+Pl2+Foc/s:%>kaas  VERB_BACK_CLIT_OPT     ;
-+Act+Imprt+Pl2:%>kaa  VERB_BACK_CLIT_OPT     ;
-+Act+Imprt+Pl3:%>koot VERB_BACK_CLIT_OPT     ;
-+Act+Imprt+Sg3:%>koon VERB_BACK_CLIT_OPT     ;
-+Act+Imprt+ConNeg:%>ko   VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_IMPERATIVE
-!!€gt-norm: Verb imperative front
-!!€ yltäkää: yltää+V+Act+Imprt+Pl2
-+Act+Imprt+Pl1:%>käämme   VERB_FRONT_CLIT_OPT     ;
-+Act+Imprt+Pl2+Foc/s:%>kääs  VERB_FRONT_CLIT_OPT     ;
-+Act+Imprt+Pl2:%>kää  VERB_FRONT_CLIT_OPT     ;
-+Act+Imprt+Pl3:%>kööt VERB_FRONT_CLIT_OPT     ;
-+Act+Imprt+Sg3:%>köön VERB_FRONT_CLIT_OPT     ;
-+Act+Imprt+ConNeg:%>kö   VERB_FRONT_CLIT_OPT     ;
-
-!! !Conditionals
-
-LEXICON VERB_BACK_CONDITIONAL
-!!€gt-norm: Verb conditional back
-!!€ kutoisin: kutoa+V+Act+Cond+Sg1
-+Act+Cond+Pl1:%>isi%>mme VERB_BACK_CLIT_OPT     ;
-+Act+Cond+Pl2:%>isi%>tte VERB_BACK_CLIT_OPT     ;
-+Act+Cond+Pl3:%>isi%>vat  VERB_BACK_CLIT_OPT     ;
-+Act+Cond+Sg1:%>isi%>n   VERB_BACK_CLIT_OPT     ;
-+Act+Cond+Sg2:%>isi%>t   VERB_BACK_CLIT_OPT     ;
-+Act+Cond+Sg3:%>isi%>    VERB_BACK_CLIT_OPT     ;
-+Act+Cond+ConNeg:%>isi VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_CONDITIONAL
-!!€gt-norm: Verb conditional front
-!!€ yltäisin: yltää+V+Act+Cond+Sg1
-+Act+Cond+Pl1:%>isi%>mme VERB_FRONT_CLIT_OPT     ;
-+Act+Cond+Pl2:%>isi%>tte VERB_FRONT_CLIT_OPT     ;
-+Act+Cond+Pl3:%>isi%>vät  VERB_FRONT_CLIT_OPT     ;
-+Act+Cond+Sg1:%>isi%>n   VERB_FRONT_CLIT_OPT     ;
-+Act+Cond+Sg2:%>isi%>t   VERB_FRONT_CLIT_OPT     ;
-+Act+Cond+Sg3:%>isi%>    VERB_FRONT_CLIT_OPT     ;
-+Act+Cond+ConNeg:%>isi VERB_FRONT_CLIT_OPT     ;
-
-!! !Potentials
-
-LEXICON VERB_BACK_POTENTIAL_N
-!!€gt-norm: Verb potential n back
-!!€ kutonen: kutoa+V+Act+Pot+Sg1
-+Act+Pot+Pl1:%>ne%>mme VERB_BACK_CLIT_OPT     ;
-+Act+Pot+Pl2:%>ne%>tte VERB_BACK_CLIT_OPT     ;
-+Act+Pot+Pl3:%>ne%>vat  VERB_BACK_CLIT_OPT     ;
-+Act+Pot+Sg1:%>ne%>n   VERB_BACK_CLIT_OPT     ;
-+Act+Pot+Sg2:%>ne%>t   VERB_BACK_CLIT_OPT     ;
-+Act+Pot+Sg3:%>ne%>e   VERB_BACK_CLIT_OPT     ;
-+Act+Pot+ConNeg:%>ne VERB_BACK_CLIT_OPT     ;
-+Act+PrfPrc:%>n   ADJ_KULUNUT       ;
-+Act+Ind+Prt+ConNeg+Sg:%>nut  VERB_BACK_CLIT_OPT     ;
-+Act+Ind+Prt+ConNeg+Pl:%>neet VERB_BACK_CLIT_OPT ;
-
-LEXICON VERB_FRONT_POTENTIAL_N
-!!€gt-norm: Verb potential n front
-!!€ yltänen: yltää+V+Act+Pot+Sg1
-+Act+Pot+Pl1:%>ne%>mme VERB_FRONT_CLIT_OPT     ;
-+Act+Pot+Pl2:%>ne%>tte VERB_FRONT_CLIT_OPT     ;
-+Act+Pot+Pl3:%>ne%>vät  VERB_FRONT_CLIT_OPT     ;
-+Act+Pot+Sg1:%>ne%>n   VERB_FRONT_CLIT_OPT     ;
-+Act+Pot+Sg2:%>ne%>t   VERB_FRONT_CLIT_OPT     ;
-+Act+Pot+Sg3:%>ne%>e   VERB_FRONT_CLIT_OPT     ;
-+Act+Pot+ConNeg:%>ne VERB_FRONT_CLIT_OPT     ;
-+Act+PrfPrc:%>n   ADJ_ÄLLISTYNYT     ;
-+Act+Ind+Prt+ConNeg+Sg:%>nyt  VERB_FRONT_CLIT_OPT     ;
-+Act+Ind+Prt+ConNeg+Pl:%>neet  VERB_FRONT_CLIT_OPT ;
-
-LEXICON VERB_BACK_POTENTIAL_S
-!!€gt-norm: Verb potential s back
-!!€ juossen: juosta+V+Act+Pot+Sg1 # I might run
-+Act+Pot+Pl1:%>se%>mme VERB_BACK_CLIT_OPT     ;
-+Act+Pot+Pl2:%>se%>tte VERB_BACK_CLIT_OPT     ;
-+Act+Pot+Pl3:%>se%>vat  VERB_BACK_CLIT_OPT     ;
-+Act+Pot+Sg1:%>se%>n   VERB_BACK_CLIT_OPT     ;
-+Act+Pot+Sg2:%>se%>t   VERB_BACK_CLIT_OPT     ;
-+Act+Pot+Sg3:%>se%>e   VERB_BACK_CLIT_OPT     ;
-+Act+Pot+ConNeg:%>se VERB_BACK_CLIT_OPT     ;
-+Act+PrfPrc:%>s   ADJ_KULUNUT       ;
-+Act+Ind+Prt+ConNeg+Sg:%>sut  VERB_BACK_CLIT_OPT     ;
-+Act+Ind+Prt+ConNeg+Pl:%>seet  VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_POTENTIAL_S
-!!€gt-norm: Verb potential s front
-!!€ päässen: päästä+V+Act+Pot+Sg1 # I might be able to
-+Act+Pot+Pl1:%>se%>mme VERB_FRONT_CLIT_OPT     ;
-+Act+Pot+Pl2:%>se%>tte VERB_FRONT_CLIT_OPT     ;
-+Act+Pot+Pl3:%>se%>vät  VERB_FRONT_CLIT_OPT     ;
-+Act+Pot+Sg1:%>se%>n   VERB_FRONT_CLIT_OPT     ;
-+Act+Pot+Sg2:%>se%>t   VERB_FRONT_CLIT_OPT     ;
-+Act+Pot+Sg3:%>se%>e   VERB_FRONT_CLIT_OPT     ;
-+Act+Pot+ConNeg:%>se VERB_FRONT_CLIT_OPT     ;
-+Act+PrfPrc:%>s ADJ_ÄLLISTYNYT      ;
-+Act+Ind+Prt+ConNeg+Sg:%>syt  VERB_FRONT_CLIT_OPT     ;
-+Act+Ind+Prt+ConNeg+Pl:%>seet  VERB_FRONT_CLIT_OPT     ;
-
-LEXICON VERB_BACK_POTENTIAL_L
-!!€gt-norm: Verb potential l back
-!!€ tullen: tulla+V+Act+Pot+Sg1
-+Act+Pot+Pl1:%>le%>mme VERB_BACK_CLIT_OPT     ;
-+Act+Pot+Pl2:%>le%>tte VERB_BACK_CLIT_OPT     ;
-+Act+Pot+Pl3:%>le%>vat  VERB_BACK_CLIT_OPT     ;
-+Act+Pot+Sg1:%>le%>n   VERB_BACK_CLIT_OPT     ;
-+Act+Pot+Sg2:%>le%>t   VERB_BACK_CLIT_OPT     ;
-+Act+Pot+Sg3:%>le%>e   VERB_BACK_CLIT_OPT     ;
-+Act+Pot+ConNeg:%>le VERB_BACK_CLIT_OPT     ;
-+Act+PrfPrc:%>l  ADJ_KULUNUT      ;
-+Act+Ind+Prt+ConNeg+Sg:%>lut  VERB_BACK_CLIT_OPT     ;
-+Act+Ind+Prt+ConNeg+Pl:%>leet  VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_POTENTIAL_L
-!!€gt-norm: Verb potential l front
-!!€ kävellen: kävellä+V+Act+Pot+Sg1 # I might walk
-+Act+Pot+Pl1:%>le%>mme VERB_FRONT_CLIT_OPT     ;
-+Act+Pot+Pl2:%>le%>tte VERB_FRONT_CLIT_OPT     ;
-+Act+Pot+Pl3:%>le%>vät  VERB_FRONT_CLIT_OPT     ;
-+Act+Pot+Sg1:%>le%>n   VERB_FRONT_CLIT_OPT     ;
-+Act+Pot+Sg2:%>le%>t   VERB_FRONT_CLIT_OPT     ;
-+Act+Pot+Sg3:%>le%>e   VERB_FRONT_CLIT_OPT     ;
-+Act+Pot+ConNeg:%>le VERB_FRONT_CLIT_OPT     ;
-+Act+PrfPrc:%>l  ADJ_ÄLLISTYNYT  ;
-+Act+Ind+Prt+ConNeg+Sg:%>lyt  VERB_FRONT_CLIT_OPT     ;
-+Act+Ind+Prt+ConNeg+Pl:%>leet  VERB_FRONT_CLIT_OPT     ;
-
-LEXICON VERB_BACK_POTENTIAL_R
-!!€gt-norm: Verb potential r back
-!!€ surren: surra+V+Act+Pot+Sg1 # I might be sad
-+Act+Pot+Pl1:%>re%>mme VERB_BACK_CLIT_OPT     ;
-+Act+Pot+Pl2:%>re%>tte VERB_BACK_CLIT_OPT     ;
-+Act+Pot+Pl3:%>re%>vat  VERB_BACK_CLIT_OPT     ;
-+Act+Pot+Sg1:%>re%>n   VERB_BACK_CLIT_OPT     ;
-+Act+Pot+Sg2:%>re%>t   VERB_BACK_CLIT_OPT     ;
-+Act+Pot+Sg3:%>re%>e   VERB_BACK_CLIT_OPT     ;
-+Act+Pot+ConNeg:%>re VERB_BACK_CLIT_OPT     ;
-+Act+PrfPrc:%>r  ADJ_KULUNUT      ;
-+Act+Ind+Prt+ConNeg+Sg:%>rut  VERB_BACK_CLIT_OPT     ;
-+Act+Ind+Prt+ConNeg+Pl:%>reet  VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_POTENTIAL_R
-!!€gt-norm: Verb potential r front
-!!€ pierren: pierrä+V+Act+Pot+Sg1 # I might fart
-+Act+Pot+Pl1:%>re%>mme VERB_FRONT_CLIT_OPT     ;
-+Act+Pot+Pl2:%>re%>tte VERB_FRONT_CLIT_OPT     ;
-+Act+Pot+Pl3:%>re%>vät  VERB_FRONT_CLIT_OPT     ;
-+Act+Pot+Sg1:%>re%>n   VERB_FRONT_CLIT_OPT     ;
-+Act+Pot+Sg2:%>re%>t   VERB_FRONT_CLIT_OPT     ;
-+Act+Pot+Sg3:%>re%>e   VERB_FRONT_CLIT_OPT     ;
-+Act+Pot+ConNeg:%>re VERB_FRONT_CLIT_OPT     ;
-+Act+PrfPrc:%>r  ADJ_ÄLLISTYNYT  ;
-+Act+Ind+Prt+ConNeg+Sg:%>ryt  VERB_FRONT_CLIT_OPT     ;
-+Act+Ind+Prt+ConNeg+Pl:%>reet  VERB_FRONT_CLIT_OPT     ;
-
-!! !!Passive forms
-!! The passive forms usually contain -ta-, -tä-, -da-, -dä-, element in them.
-!! The variation between the realisations is one key factor of determining the
-!! classification of the verb roots.
-
-LEXICON VERB_BACK_PASSIVE
-!!€gt-norm: Verb passive back
-!!€ kudottiin: kutoa+V+Pss+Ind+Prt+Pe4
-!!€ juostiin: juosta+V+Pss+Ind+Prt+Pe4
-+Pss+Cond+Pe4:%>ta%>isiin VERB_BACK_CLIT_OPT     ;
-+Pss+Cond+Pe4+ConNeg:%>ta%>isi  VERB_BACK_CLIT_OPT     ;
-+Pss+Imprt+Pe4+ConNeg:%>ta%>ko    VERB_BACK_CLIT_OPT     ;
-+Pss+Imprt+Pe4:%>ta%>koon    VERB_BACK_CLIT_OPT     ;
-+Pss+InfE+Ine:%>ta%>essa  VERB_BACK_CLIT_OPT      ;
-+Pss+InfE+Ins:%>ta%>en   VERB_BACK_CLIT_OPT     ;
-+Pss+InfMa+Sg+Ins:%>ta%>man  VERB_BACK_CLIT_OPT     ;
-+Pss+Pot+Pe4:%>ta%>neen  VERB_BACK_CLIT_OPT     ;
-+Pss+Pot+Pe4+ConNeg:%>ta%>ne   VERB_BACK_CLIT_OPT     ;
-+Pss+Ind+Prt+Pe4:tiin VERB_BACK_CLIT_OPT     ;
-+Pss+PrsPrc:%>ta%>v    NOUN_SOITTAJA   ;
-
-LEXICON VERB_FRONT_PASSIVE
-!!€gt-norm: Verb passive front
-!!€ nähtiin: nähdä+V+Pss+Ind+Prt+Pe4
-+Pss+Cond+Pe4:%>tä%>isiin VERB_FRONT_CLIT_OPT     ;
-+Pss+Cond+Pe4+ConNeg:%>tä%>isi  VERB_FRONT_CLIT_OPT     ;
-+Pss+Imprt+Pe4+ConNeg:%>tä%>kö    VERB_FRONT_CLIT_OPT     ;
-+Pss+Imprt+Pe4:%>tä%>köön    VERB_FRONT_CLIT_OPT     ;
-+Pss+InfE+Ine:%>tä%>essä  VERB_FRONT_CLIT_OPT      ;
-+Pss+InfE+Ins:%>tä%>en   VERB_FRONT_CLIT_OPT     ;
-+Pss+InfMa+Ins:%>tä%>män  VERB_FRONT_CLIT_OPT     ;
-+Pss+Pot+Pe4:%>tä%>neen  VERB_FRONT_CLIT_OPT     ;
-+Pss+Pot+Pe4+ConNeg:%>tä%>ne   VERB_FRONT_CLIT_OPT     ;
-+Pss+Ind+Prt+Pe4:tiin VERB_FRONT_CLIT_OPT     ;
-+Pss+PrsPrc:%>tä%>v    ADJ_TYÖLLISTETTÄVÄ ;
-
-
-!! The form of present passive assimilates leftwards, varying between
-!! -ta, -tä, -da, -dä, -la, -lä, -ra, -rä, -na, -nä.
-
-LEXICON VERB_BACK_PASSIVE_T
-!!€gt-norm: Verb passive back t
-!!€ juostaan: juosta+V+Pss+Ind+Prs+Pe4
-+Pss+Ind+Prs+Pe4:%>ta%>an    VERB_BACK_CLIT_OPT     ;
-+Pss+Ind+Prs+Pe4+ConNeg:%>ta    VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_PASSIVE_T
-!!€gt-norm: Verb passive front t
-!!€ ylletään: yltää+V+Pss+Ind+Prs+Pe4
-+Pss+Ind+Prs+Pe4:%>tä%>än    VERB_FRONT_CLIT_OPT     ;
-+Pss+Ind+Prs+Pe4+ConNeg:%>tä    VERB_FRONT_CLIT_OPT     ;
-
-LEXICON VERB_BACK_PASSIVE_D
-!!€gt-norm: Verb passive back d
-!!€ kopioidaan: kopioida+V+Pss+Ind+Prs+Pe4 # copy-passive
-+Pss+Ind+Prs+Pe4:%>da%>an    VERB_BACK_CLIT_OPT     ;
-+Pss+Ind+Prs+Pe4+ConNeg:%>da    VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_PASSIVE_D
-!!€gt-norm: Verb passive front d
-!!€ nähdään: nähdä+V+Pss+Ind+Prs+Pe4
-+Pss+Ind+Prs+Pe4:%>dä%>än    VERB_FRONT_CLIT_OPT     ;
-+Pss+Ind+Prs+Pe4+ConNeg:%>dä    VERB_FRONT_CLIT_OPT     ;
-
-LEXICON VERB_BACK_PASSIVE_L
-!!€gt-norm: Verb passive back l
-!!€ vuollaan: vuolla+V+Pss+Ind+Prs+Pe4 # carve wood-passive
-+Pss+Ind+Prs+Pe4:%>la%>an    VERB_BACK_CLIT_OPT     ;
-+Pss+Ind+Prs+Pe4+ConNeg:%>la    VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_PASSIVE_L
-!!€gt-norm: Verb passive front l
-!!€ niellään: niellä+V+Pss+Ind+Prs+Pe4 # swallow-passive
-+Pss+Ind+Prs+Pe4:%>lä%>än    VERB_FRONT_CLIT_OPT     ;
-+Pss+Ind+Prs+Pe4+ConNeg:%>lä    VERB_FRONT_CLIT_OPT     ;
-
-LEXICON VERB_BACK_PASSIVE_R
-!!€gt-norm: Verb passive back r
-!!€ surraan: surra+V+Pss+Ind+Prs+Pe4 # sorrow-passive
-+Pss+Ind+Prs+Pe4:%>ra%>an    VERB_FRONT_CLIT_OPT     ;
-+Pss+Ind+Prs+Pe4+ConNeg:%>ra    VERB_FRONT_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_PASSIVE_R
-!!€gt-norm: Verb passive front r
-!!€ pierrään: pierrä+V+Pss+Ind+Prs+Pe4 # fart-passive
-+Pss+Ind+Prs+Pe4:%>rä%>än    VERB_FRONT_CLIT_OPT     ;
-+Pss+Ind+Prs+Pe4+ConNeg:%>rä    VERB_FRONT_CLIT_OPT     ;
-
-LEXICON VERB_BACK_PASSIVE_N
-!!€gt-norm: Verb passive back n
-!!€ pannaan: panna+V+Pss+Ind+Prs+Pe4 # put-passive
-+Pss+Ind+Prs+Pe4:naan    VERB_BACK_CLIT_OPT     ;
-+Pss+Ind+Prs+Pe4+ConNeg:na    VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_PASSIVE_N
-!!€gt-norm: Verb passive front n
-!!€ mennään: mennä+V+Pss+Ind+Prs+Pe4
-+Pss+Ind+Prs+Pe4:nään    VERB_FRONT_CLIT_OPT     ;
-+Pss+Ind+Prs+Pe4+ConNeg:nä    VERB_FRONT_CLIT_OPT     ;
-
-
-!! !!Infinite verb forms
-
-LEXICON VERB_BACK_AINF
-!!€gt-norm: Verb a infinitive
-!!€ juoda: juoda+V+Act+InfA+Sg+Lat # drink
-+Act+InfA+Sg+Lat:a     VERB_BACK_CLIT_OPT     ;
-+Act+InfA+Sg+Tra:akse  VERB_BACK_POSS_EN_OBL        ;
-
-LEXICON VERB_FRONT_AINF
-!!€gt-norm: Verb ä infinitive
-!!€ nähdä: nähdä+V+Act+InfA+Sg+Lat
-+Act+InfA+Sg+Lat:ä     VERB_FRONT_CLIT_OPT     ;
-+Act+InfA+Sg+Tra:äkse  VERB_FRONT_POSS_EN_OBL        ;
-
-LEXICON VERB_BACK_EINF
-!!€gt-norm: Verb E infinitive back
-!!€ kutoessa: kutoa+V+Act+InfE+Sg+Ine
-+Act+InfE+Sg+Ine:essa   VERB_BACK_POSS_AN_OPT      ;
-+Act+InfE+Sg+Ins:en    VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_EINF
-!!€gt-norm: Verb E infinitive front
-!!€ yltäessä: yltää+V+Act+InfE+Sg+Ine
-+Act+InfE+Sg+Ine:essä   VERB_FRONT_POSS_AN_OPT      ;
-+Act+InfE+Sg+Ins:en    VERB_FRONT_CLIT_OPT     ;
-
-!! !Participles
-
-LEXICON VERB_BACK_TUPCP_STRONG
-!!€gt-norm: Verb nut participle passive tu
-!!€ valkaistu: valkaista+V+Pss+PrfPrc+Sg+Nom # bleached
-+Pss+PrfPrc:tu            ADJ_VALKAISTU        ;
-+Pss+Ind+Prt+ConNeg:tu    VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_TUPCP_STRONG
-!!€gt-norm: Verb nut participle passive ty
-!!€ häpäisty: häpäistä+V+Pss+PrfPrc+Sg+Nom # sacrileged
-+Pss+PrfPrc:ty            ADJ_HÄPÄISTY     ;
-+Pss+Ind+Prt+ConNeg:ty    VERB_FRONT_CLIT_OPT     ;
-
-LEXICON VERB_BACK_TUPCP_0
-!!€gt-norm: Verb nut participle passive tu~u
-!!€ huudettu: huutaa+V+Pss+PrfPrc+Sg+Nom # yelled
-+Pss+PrfPrc:0             ADJ_VIMMATTU      ;
-+Pss+Ind+Prt+ConNeg:tu    VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_TUPCP_0
-!!€gt-norm: Verb nut participle passive ty~y
-!!€ ylennetty: ylentää+V+Pss+PrfPrc+Sg+Nom # promoted
-+Pss+PrfPrc:0             ADJ_YLENNETTY       ;
-+Pss+Ind+Prt+ConNeg:ty    VERB_FRONT_CLIT_OPT     ;
-
-LEXICON VERB_BACK_TUPCP_D
-!!€gt-norm: Verb nut participle passive tu~du
-!!€ viipaloitu: viipaloida+V+Pss+PrfPrc+Sg+Nom # sliced
-+Pss+PrfPrc:0             ADJ_VIIPALOITU    ;
-+Pss+Ind+Prt+ConNeg:tu    VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_TUPCP_D
-!!€gt-norm: Verb nut participle passive ty~dy
-!!€ yksilöity: yksilöidä+V+Pss+PrfPrc+Sg+Nom # singled out
-+Pss+PrfPrc:0             ADJ_YKSILÖITY        ;
-+Pss+Ind+Prt+ConNeg:ty    VERB_FRONT_CLIT_OPT     ;
-
-LEXICON VERB_BACK_TUPCP_L
-!!€gt-norm: Verb nut participle passive tu~lu
-!!€ paranneltu: parannella+V+Pss+PrfPrc+Sg+Nom # embettered
-+Pss+PrfPrc:0             ADJ_PARANNELTU  ;
-+Pss+Ind+Prt+ConNeg:tu    VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_TUPCP_L
-!!€gt-norm: Verb nut participle passive ty~ly
-!!€ vähätelty: vähätellä+V+Pss+PrfPrc+Sg+Nom # belittled
-+Pss+PrfPrc:0             ADJ_VÄHÄTELTY        ;
-+Pss+Ind+Prt+ConNeg:ty    VERB_FRONT_CLIT_OPT     ;
-
-LEXICON VERB_BACK_TUPCP_N
-!!€gt-norm: Verb nut participle passive tu~nu
-!!€ pantu: panna+V+Pss+PrfPrc+Sg+Nom # put
-+Pss+PrfPrc:0             ADJ_PANTU  ;
-+Pss+Ind+Prt+ConNeg:tu    VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_TUPCP_N
-!!€gt-norm: Verb nut participle passive ty~ny
-!!€ menty: mennä+V+Pss+PrfPrc+Sg+Nom # went
-+Pss+PrfPrc:0             ADJ_MENTY        ;
-+Pss+Ind+Prt+ConNeg:ty    VERB_FRONT_CLIT_OPT     ;
-
-LEXICON VERB_BACK_TUPCP_R
-!!€gt-norm: Verb nut participle passive tu~ru
-!!€ purtu: purra+V+Pss+PrfPrc+Sg+Nom # bitten
-+Pss+PrfPrc:0             ADJ_PURTU ;
-+Pss+Ind+Prt+ConNeg:tu    VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_TUPCP_R
-!!€gt-norm: Verb nut participle passive ty~ry
-!!€ pierty: pierrä+V+Pss+PrfPrc+Sg+Nom
-+Pss+PrfPrc:0             ADJ_PIERTY     ;
-+Pss+Ind+Prt+ConNeg:ty    VERB_FRONT_CLIT_OPT     ;
-
-!! !Possessives for infinite verb forms
-LEXICON VERB_FRONT_POSS
-!!€gt-norm: Verb possessive front
-!!€ kutoakseni: kutoa+V+Act+InfA+Sg+Tra+PxSg1
-!!€ kutoessasi: kutoa+V+Act+InfE+Sg+Ine+PxSg2
-+PxSg1:ni  VERB_FRONT_CLIT_OPT        ;
-+PxSg2:si  VERB_FRONT_CLIT_OPT        ;
-+PxSg3:nsä VERB_FRONT_CLIT_OPT        ;
-+PxPl1:mme VERB_FRONT_CLIT_OPT        ;
-+PxPl2:nne VERB_FRONT_CLIT_OPT        ;
-+PxPl3:nsä VERB_FRONT_CLIT_OPT        ;
-
-LEXICON VERB_BACK_POSS
-!!€gt-norm: Verb possessive back
-!!€ nähdäkseni: nähdä+V+Act+InfA+Sg+Tra+PxSg1
-!!€ nähdessäsi: nähdä+V+Act+InfE+Sg+Ine+PxSg2
-+PxSg1:ni  VERB_BACK_CLIT_OPT        ;
-+PxSg2:si  VERB_BACK_CLIT_OPT        ;
-+PxSg3:nsa VERB_BACK_CLIT_OPT        ;
-+PxPl1:mme VERB_BACK_CLIT_OPT        ;
-+PxPl2:nne VERB_BACK_CLIT_OPT        ;
-+PxPl3:nsa VERB_BACK_CLIT_OPT        ;
-
-LEXICON VERB_BACK_POSS_AN
-!!€gt-norm: Verb possessive back an
-!!€ kutomattaan: kutoa+V+Act+InfMa+Sg+Abe+PxSg3
-+PxSg3:an    VERB_BACK_CLIT_OPT     ;
-+PxPl3:an    VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_BACK_POSS_EN
-!!€gt-norm: Verb possessive back en
-!!€ kutoakseen: kutoa+V+Act+InfA+Sg+Tra+PxPl3
-+PxSg3:en    VERB_BACK_CLIT_OPT     ;
-+PxPl3:en    VERB_BACK_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_POSS_EN
-!!€gt-norm: Verb possessive front en
-!!€ nähdäkseen: nähdä+V+Act+InfA+Sg+Tra+PxPl3
-+PxSg3:en    VERB_FRONT_CLIT_OPT     ;
-+PxPl3:en    VERB_FRONT_CLIT_OPT     ;
-
-LEXICON VERB_FRONT_POSS_AN
-!!€gt-norm: Verb possessive back än
-!!€ näkemättään: nähdä+V+Act+InfMa+Sg+Abe+PxSg3
-+PxSg3:än    VERB_FRONT_CLIT_OPT     ;
-+PxPl3:än    VERB_FRONT_CLIT_OPT     ;
-
-!! !Verb clitics
-
-LEXICON VERB_BACK_CLIT
-!!€gt-norm: Verbs clitic back
-!!€ kudonhan: kutoa+V+Act+Ind+Prs+Sg1+Foc/han
-!!€ kudotko: kutoa+V+Act+Ind+Prs+Sg2+Qst
-+Foc/han:han   #        ;
-+Foc/han+Foc/kaan:hankaan  #        ;
-+Foc/han+Qst:hanko #        ;
-+Foc/han+Foc/pa:hanpa #        ;
-+Qst:ko #        ;
-+Qst+Foc/han:kohan #        ;
-+Qst+Foc/kaan:kokaan    #        ;
-+Qst+Foc/kin:kokin    #        ;
-+Qst+Foc/pa:kopa   #        ;
-+Qst+Foc/s:kos    #        ;
-+Foc/pa:pa #        ;
-+Foc/pa+Foc/han:pahan #        ;
-+Foc/pa+Foc/kaan:pakaan    #        ;
-+Foc/pa+Foc/kin:pakin    #        ;
-+Foc/pa+Qst:pako   #        ;
-+Foc/pa+Foc/s:pas    #        ;
-+Foc/kin:kin  #        ;
-+Foc/kin+Foc/han:kinhan  #        ;
-+Foc/kin+Foc/kaan:kinkaan #        ;
-+Foc/kin+Qst:kinko    #        ;
-+Foc/kin+Foc/pa:kinpa    #        ;
-+Foc/kaan:kaan  #        ;
-+Foc/kaan+Foc/han:kaanhan  #        ;
-+Foc/kaan+Foc/kin:kaankin #        ;
-+Foc/kaan+Qst:kaanko    #        ;
-+Foc/kaan+Foc/pa:kaanpa    #        ;
-
-LEXICON VERB_FRONT_CLIT
-!!€gt-norm: Verbs clitic front
-!!€ näenhän: nähdä+V+Act+Ind+Prs+Sg1+Foc/han
-!!€ näetkö: nähdä+V+Act+Ind+Prs+Sg2+Qst
-+Foc/han:hän   #        ;
-+Foc/han+Foc/kaan:hänkään  #        ;
-+Foc/han+Qst:hänkö #        ;
-+Foc/han+Foc/pa:hänpä #        ;
-+Qst:kö #        ;
-+Qst+Foc/han:köhän #        ;
-+Qst+Foc/kaan:kökään    #        ;
-+Qst+Foc/kin:kökin    #        ;
-+Qst+Foc/pa:köpä   #        ;
-+Qst+Foc/s:kös    #        ;
-+Foc/pa:pä #        ;
-+Foc/pa+Foc/han:pähän #        ;
-+Foc/pa+Foc/kaan:päkään    #        ;
-+Foc/pa+Foc/kin:päkin    #        ;
-+Foc/pa+Qst:päkö   #        ;
-+Foc/pa+Foc/s:päs    #        ;
-+Foc/kin:kin  #        ;
-+Foc/kin+Foc/han:kinhän  #        ;
-+Foc/kin+Foc/kaan:kinkään #        ;
-+Foc/kin+Qst:kinkö    #        ;
-+Foc/kin+Foc/pa:kinpä    #        ;
-+Foc/kaan:kään  #        ;
-+Foc/kaan+Foc/han:käänhän  #        ;
-+Foc/kaan+Foc/kin:käänkin #        ;
-+Foc/kaan+Qst:käänkö    #        ;
-+Foc/kaan+Foc/pa:käänpä    #        ;
-
-! Shorthands are not tested or documented yet
-LEXICON VERB_BACK_CLIT_OPT
-0   VERB_BACK_CLIT    ;
-0   #   ;
-
-LEXICON VERB_FRONT_CLIT_OPT
-0   VERB_FRONT_CLIT    ;
-0   #   ;
-
-LEXICON VERB_BACK_POSS_EN_OBL
-0   VERB_BACK_POSS  ;
-0   VERB_BACK_POSS_EN ;
-
-LEXICON VERB_FRONT_POSS_EN_OBL
-0   VERB_FRONT_POSS  ;
-0   VERB_FRONT_POSS_EN ;
-
-LEXICON VERB_BACK_POSS_AN_OBL
-0   VERB_BACK_POSS  ;
-0   VERB_BACK_POSS_AN ;
-
-LEXICON VERB_BACK_POSS_OPT
-0   VERB_BACK_POSS  ;
-0   #   ;
-
-LEXICON VERB_BACK_POSS_AN_OPT
-0   VERB_BACK_POSS  ;
-0   VERB_BACK_POSS_AN ;
-0   VERB_BACK_CLIT_OPT   ;
-0   #   ;
-
-LEXICON VERB_FRONT_POSS_AN_OBL
-0   VERB_FRONT_POSS  ;
-0   VERB_FRONT_POSS_AN ;
-
-!LEXICON VERB_FRONT_POSS_OPT
-!0   VERB_FRONT_POSS  ;
-!0   #   ;
-
-LEXICON VERB_FRONT_POSS_AN_OPT
-0   VERB_FRONT_POSS  ;
-0   VERB_FRONT_POSS_AN ;
-0   VERB_FRONT_CLIT_OPT   ;
-0   #   ;
-
-!! !!Deverbal derivations
-!! Part of the deverbal derivation system in Finnish is so regular that it has
-!! been included as part of inflectional morphology in many traditional systems.
-!! These derivations are treated as inflection in our system as well.
-
-!! !-minen, "Fourth infinitive"
-
-!LEXICON VERB_BACK_DERIV_MINEN
-!€gt-norm: Verbs minen derivations
-!€ aakkostaminen aakkostaa+V+Der/minen+Sg+Nom
-!+Der/minen:mi  NOUN_AAKKOSTAMINEN   ;
-
-!LEXICON VERB_FRONT_DERIV_MINEN
-!€ näkeminen nähdä+V+Der/minen+Sg+Nom
-!+Der/minen:mi  NOUN_KYLKIÄINEN   ;
-
-!! !Participles
-
-LEXICON VERB_BACK_DERIV_PCPS
-!!€gt-norm: Verbs participle back
-!!€ kutomani: kutoa+V+AgPrc+Sg+Nom+PxSg1
-!!€ kutomaton: kutoa+V+NegPrc+Sg+Nom
-!!€ kutova: kutoa+V+Act+PrsPrc+Sg+Nom
-+AgPrc:m       ADJ_AALTOILEVA        ;
-+NegPrc:mat     ADJ_VIATON      ;
-+Act+PrsPrc:v       ADJ_AALTOILEVA      ;
-+Der/minen:mi      NOUN_AAKKOSTAMINEN        ;
-+Act+PrsPrc+Der/inen:vai     NOUN_AAKKOSTAMINEN  ;
-
-LEXICON VERB_FRONT_DERIV_PCPS
-!!€gt-norm: Verbs participle front
-!!€ näkemäni: nähdä+V+AgPrc+Sg+Nom+PxSg1
-!!€ näkemätön: nähdä+V+NegPrc+Sg+Nom
-!!€ näkevä: nähdä+V+Act+PrsPrc+Sg+Nom
-+AgPrc:m       ADJ_TYÖLLISTETTÄVÄ        ;
-+NegPrc:mät     ADJ_KYVYTÖN       ;
-+Act+PrsPrc:v       ADJ_TYÖLLISTETTÄVÄ       ;
-+Der/minen:mi      NOUN_KYLKIÄINEN        ;
-+Act+PrsPrc+Der/inen:väi     NOUN_KYLKIÄINEN  ;
-
-
-LEXICON VERB_BACK_OPTATIVE_0_ARCHAIC
-
-%+Act%+Opt%+Sg1:%>on  VERB_BACK_CLIT_OPT ;
-
-%+Act%+Opt%+Sg2:%>os  VERB_BACK_CLIT_OPT ;
-
-
-LEXICON VERB_BACK_OPTATIVE_K_ARCHAIC
-
-%+Act%+Opt%+Sg1:kon  VERB_BACK_CLIT_OPT ;
-
-%+Act%+Opt%+Sg2:kos  VERB_BACK_CLIT_OPT ;
-
-
-LEXICON VERB_BACK_OPTATIVE_R_ARCHAIC
-
-%+Act%+Opt%+Sg1:ron  VERB_BACK_CLIT_OPT ;
-
-%+Act%+Opt%+Sg2:ros  VERB_BACK_CLIT_OPT ;
-
-
-LEXICON VERB_BACK_OPTATIVE_S_ARCHAIC
-
-%+Act%+Opt%+Sg1:son  VERB_BACK_CLIT_OPT ;
-
-%+Act%+Opt%+Sg2:sos  VERB_BACK_CLIT_OPT ;
-
-
-
-LEXICON VERB_FRONT_OPTATIVE_0_ARCHAIC
-
-%+Act%+Opt%+Sg1:%>ön  VERB_FRONT_CLIT_OPT ;
-
-%+Act%+Opt%+Sg2:%>ös  VERB_FRONT_CLIT_OPT ;
-
-
-LEXICON VERB_FRONT_OPTATIVE_K_ARCHAIC
-
-%+Act%+Opt%+Sg1:%>kön  VERB_FRONT_CLIT_OPT ;
-
-%+Act%+Opt%+Sg2:%>kös  VERB_FRONT_CLIT_OPT ;
-
-
-LEXICON VERB_FRONT_OPTATIVE_L_ARCHAIC
-
-%+Act%+Opt%+Sg1:%>lön  VERB_FRONT_CLIT_OPT ;
-
-%+Act%+Opt%+Sg2:%>lös  VERB_FRONT_CLIT_OPT ;
-
-
-LEXICON VERB_FRONT_OPTATIVE_R_ARCHAIC
-
-%+Act%+Opt%+Sg1:rön  VERB_FRONT_CLIT_OPT ;
-
-%+Act%+Opt%+Sg2:rös  VERB_FRONT_CLIT_OPT ;
-
-
-LEXICON VERB_FRONT_OPTATIVE_S_ARCHAIC
-
-%+Act%+Opt%+Sg1:sön  VERB_FRONT_CLIT_OPT ;
-
-%+Act%+Opt%+Sg2:sös  VERB_FRONT_CLIT_OPT ;
-
-LEXICON VERB_FRONT_IMPERATIVE_ARCHAIC
-
-%+Act%+Impv%+Pl2:%>kää%>tten  VERB_FRONT_CLIT_OPT ;
-
-%+Act%+Impv%+Pl2:%>kää%>tte  VERB_FRONT_CLIT_OPT ;
-
-%+Act%+Impv%+Sg1:%>kää%>mi  VERB_FRONT_CLIT_OPT ;
-
-%+Act%+Impv%+Sg1:%>kää%>ni  VERB_FRONT_CLIT_OPT ;
-
-%+Act%+Opt%+Pl1:%>köö%>mme  VERB_FRONT_CLIT_OPT ;
-
-%+Act%+Opt%+Sg2:%>köö%>tte  VERB_FRONT_CLIT_OPT ;
-
-LEXICON VERB_BACK_CLIT_KIN_KAAN_OPT
-
-:	# ;
-
-+Foc/kaan:%>kaan	# ;
-
-+Foc/kin:%>kin	# ;
-
-
+! =====================
+! LEXICA FOR VERB ROOTS
+! =====================
+
+
+! -----------
+! Auxiliaries
+! -----------
+
+LEXICON neg
+ +Ind:e indneg ;
+ +Imp:%^Al impneg ;
+
+LEXICON indneg
+ +Sg1:%>n K ;
+ +Sg2:%>t K ;
+ +Sg3:%>i2 K ;
+ +Pl1:%>mme K ;
+ +Pl2:%>tte K ;
+ +Pl3:%>i2v%^At K ;
+
+LEXICON impneg
+ +Sg2:%>%^A K ;
+ +Sg3:%>k%^O%^On K ;
+ +Pl1:%>k%^A%^Amme K ;
+ +Pl2:%>k%^A%^Atte K ;
+ +Pl3:%>k%^O%^Ot K ;
+
+
+! -------------
+! Regular verbs
+! -------------
+
+LEXICON 52
+ +Ind+Prs:%> PN ;
+ +Ind+Prt:%>i%> PN ;
+ +Cond:%>isi PN ;
+ +Pot:%>ne PN ;
+ +Inf3:%>ma INF3 ;
+
+LEXICON 53
+52 ;
+LEXICON 54
+52 ;
+LEXICON 55
+52 ;
+LEXICON 56
+52 ;
+LEXICON 57
+52 ;
+LEXICON 58
+52 ;
+LEXICON 59
+52 ;
+LEXICON 60
+52 ;
+LEXICON 61
+52 ;
+LEXICON 62
+52 ;
+LEXICON 63
+ +Inf:%>d^A K ;
+ +Ind+Prs:%> PN ;
+ +Ind+Prt:%>i%> PN ;
+ +Cond:%>isi PN ;
+ +Pot:%>ne PN ;
+
+
+LEXICON 64
+52 ;
+LEXICON 65
+52 ;
+LEXICON 66
+52 ;
+LEXICON 67
+52 ;
+LEXICON 68
+52 ;
+LEXICON 69
+52 ;
+LEXICON 70
+52 ;
+LEXICON 71
+52 ;
+LEXICON 72
+52 ;
+LEXICON 73
+52 ;
+LEXICON 74
+52 ;
+LEXICON 75
+52 ;
+LEXICON 76
+52 ;
+
+
+LEXICON PN
+ +Sg1:%>X1n K ;
+ +Sg2:%>X1t K ;
+ +Sg3:%>%^V K ;
+ +Pl1:%>X1mme K ;
+ +Pl2:%>X1tte K ;
+ +Pl3:%>v%^At K ;
+
+
+LEXICON INF3
+ +Ill:%>^An K ;
+ +Ine:%>ss^A K ;
+ +Ela:%>st^A K ;
+ +Ade:%>ll^A K ;
+ +Abe:%>tt^A K ;

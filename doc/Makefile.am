@@ -9,35 +9,33 @@
 
 if CAN_DOCC
 
-JSP_PAGES=root-morphology.jspwiki  \
-          51-stems.jspwiki \
-          abbr-stems.jspwiki \
-          acro-stems.jspwiki \
-          acronyms-affixes.jspwiki \
-          adj-stems.jspwiki \
-          adjectives-affixes.jspwiki \
-          adv-affixes.jspwiki \
-          adv-stems.jspwiki \
-          cc-stems.jspwiki \
-          cs-stems.jspwiki \
-          digits-affixes.jspwiki \
-          digits-stems.jspwiki \
-          exceptions-stems.jspwiki \
-          interj-stems.jspwiki \
-          noun-stems.jspwiki \
-          nouns-affixes.jspwiki \
-          numeral-affixes.jspwiki \
-          numeral-stems.jspwiki \
-          particles-stems.jspwiki \
-          pp-stems.jspwiki \
-          prefixes-stems.jspwiki \
-          pron-stems.jspwiki \
-          propernoun-stems.jspwiki \
-          punct-stems.jspwiki \
-          suffixes-stems.jspwiki \
-          verb-stems.jspwiki \
-          verbs-affixes.jspwiki \
-		  fin-phon-phonology.jspwiki 
+JSP_PAGES=root-morphology.jspwiki
+# clitics-morphology.jspwiki       \
+# compounding-morphology.jspwiki   \
+# abbreviations-stems.jspwiki      \
+# acronyms-stems.jspwiki           \
+# adjectives-oahpa-stems.jspwiki   \
+# adjectives-stems.jspwiki         \
+# adpositions-stems.jspwiki        \
+# adverbs-stems.jspwiki            \
+# conjunctions-stems.jspwiki       \
+# interjections-stems.jspwiki      \
+# nouns-oahpa-stems.jspwiki        \
+# nouns-stems.jspwiki              \
+# numerals-stems.jspwiki           \
+# particles-stems.jspwiki          \
+# pronouns-stems.jspwiki           \
+# propernouns-stems.jspwiki        \
+# punctuation-stems.jspwiki        \
+# smi-propernouns-stems.jspwiki    \
+# subjunctions-stems.jspwiki       \
+# verbs-stems.jspwiki              \
+# adjectives-oahpa-affixes.jspwiki \
+# adjectives-affixes.jspwiki       \
+# nouns-affixes.jspwiki            \
+# propernouns-affixes.jspwiki      \
+# verbs-affixes.jspwiki
+
 ALLINONE_JSP_PAGE=$(srcdir)/$(GTLANG).jspwiki
 
 LINKS=$(srcdir)/Links.jspwiki

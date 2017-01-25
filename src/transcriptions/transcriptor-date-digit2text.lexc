@@ -1,5 +1,5 @@
 ! Divvun & Giellatekno - open source grammars for Sámi and other languages
-! Copyright © 2000-2010 The University of Tromsø & the Norwegian Sámi Parliament
+! Copyright © 2000-2015 The University of Tromsø & the Norwegian Sámi Parliament
 ! http://giellatekno.uit.no & http://divvun.no
 !
 ! This program is free software; you can redistribute and/or modify
@@ -10,7 +10,7 @@
 ! also available in the file $GTHOME/LICENSE.txt.
 !
 ! Other licensing options are available upon request, please contact
-! giellatekno@hum.uit.no or feedback@divvun.no
+! giellatekno@uit.no or divvun@hum.uit.no
 
 ! ================= !
 ! The Finnish dates !
@@ -22,94 +22,134 @@
 
 Multichar_Symbols
 
-@U.MONTH.1@ 
-@U.MONTH.2@ 
-@U.MONTH.3@ 
-@U.MONTH.4@ 
-@U.MONTH.5@ 
-@U.MONTH.6@ 
-@U.MONTH.7@ 
-@U.MONTH.8@ 
-@U.MONTH.9@ 
-@U.MONTH.10@ 
-@U.MONTH.11@ 
-@U.MONTH.12@ 
 
 +Use/NG ! For substandard month names used in Oahpa
++Use/NA ! For substandard month names used in Oahpa
 ! They will be accepted but not generated.
  
 LEXICON Root
+ DAYS ;
+! ZERODAY ; !If we want digits, this path adds 0
+
+!LEXICON ZERODAY !If we want digits, this lexicon adds 0
+! :%0 SINGLEDAYS ; 
  
-@U.MONTH.1@:tammikuun% @U.MONTH.1@ 31DAYS ;
-@U.MONTH.2@:helmikuun% @U.MONTH.2@ 29DAYS ;
-@U.MONTH.3@:maaliskuun% @U.MONTH.3@ 31DAYS ;
-@U.MONTH.4@:huhtikuun% @U.MONTH.4@ 30DAYS ;
-@U.MONTH.5@:toukokuun% @U.MONTH.5@ 31DAYS ;
-@U.MONTH.6@:kesäkuun% @U.MONTH.6@ 30DAYS ;
-@U.MONTH.7@:heinäkuun% @U.MONTH.7@ 31DAYS ;
-@U.MONTH.8@:elokuun% @U.MONTH.8@ 31DAYS ;
-@U.MONTH.9@:syyskuun% @U.MONTH.9@ 30DAYS ;
-@U.MONTH.10@:lokakuun% @U.MONTH.10@ 31DAYS ;
-@U.MONTH.11@:marraskuun% @U.MONTH.11@ 30DAYS ;
-@U.MONTH.12@:joulukuun% @U.MONTH.12@ 31DAYS ;
- 
- 
-LEXICON 29DAYS
-1:ensimmäinen B ;
-2:toinen B ;
-3:kolmas B ;
-4:neljäs B ;
-5:viides B ;
-6:kuudes B ;
-7:seitsemäs B ;
-8:kahdeksas B ;
-9:yhdeksäs B ;
-1%0:kymmenes B ;
-11:yhdestoista B ;
-12:kahdestoista B ;
-13:kolmastoista B ;
-14:neljästoista B ;
-15:viidestoista B ;
-16:kuudestoista B ;
-17:seitsemästoista B ;
-18:kahdeksastoista B ;
-19:yhdeksästoista B ;
-2%0:kahdeskymmenes B ;
-21:kahdeskymmenesensimmäinen B ;
-22:kahdeskymmenestoinen B ;
-23:kahdeskymmeneskolmas B ;
-24:kahdeskymmenesneljäs B ;
-25:kahdeskymmenesviides B ;
-26:kahdeskymmeneskuudes B ;
-27:kahdeskymmenesseitsemäs B ;
-28:kahdeskymmeneskahdeksas B ;
-29:kahdeskymmenesyhdeksäs B ;
- 
-LEXICON 30DAYS
-3%0:kolmaskymmenes B ;
-29DAYS ;
- 
-LEXICON 31DAYS
-31:kolmaskymmenesensimmäinen B ;
-30DAYS ;
- 
-LEXICON B
-%.:% päivä MONTH ;
- 
-LEXICON MONTH
-1@U.MONTH.1@:@U.MONTH.1@ X ;
-2@U.MONTH.2@:@U.MONTH.2@ X ;
-3@U.MONTH.3@:@U.MONTH.3@ X ;
-4@U.MONTH.4@:@U.MONTH.4@ X ;
-5@U.MONTH.5@:@U.MONTH.5@ X ;
-6@U.MONTH.6@:@U.MONTH.6@ X ;
-7@U.MONTH.7@:@U.MONTH.7@ X ;
-8@U.MONTH.8@:@U.MONTH.8@ X ;
-9@U.MONTH.9@:@U.MONTH.9@ X ;
-1%0@U.MONTH.10@:@U.MONTH.10@ X ;
-11@U.MONTH.11@:@U.MONTH.11@ X ;
-12@U.MONTH.12@:@U.MONTH.12@ X ;
- 
-LEXICON X
-%.: # ;
+LEXICON DAYS !This lexicon makes it possible to add 0
+1:1%  EHAKIMIHT-1 ;
+1st:1%  EHAKIMIHT-ST ;
+2:2%  EHAKIMIHT-1 ;
+2nd:2%  EHAKIMIHT-ST ;
+3:3%  EHAKIMIHT-1 ;
+3rd:3%  EHAKIMIHT-ST ;
+4:4%  EHAKIMIHT ;
+5:5%  EHAKIMIHT ;
+6:6%  EHAKIMIHT ;
+7:7%  EHAKIMIHT ;
+8:8%  EHAKIMIHT ;
+9:9%  EHAKIMIHT ;
+1%0:1%0%  EHAKIMIHT ;
+11:11%  EHAKIMIHT ;
+12:12%  EHAKIMIHT ;
+13:13%  EHAKIMIHT ;
+14:14%  EHAKIMIHT ;
+15:15%  EHAKIMIHT ;
+16:16%  EHAKIMIHT ;
+17:17%  EHAKIMIHT ;
+18:18%  EHAKIMIHT ;
+19:19%  EHAKIMIHT ;
+2%0:2%0%  EHAKIMIHT ;
+21:21%  EHAKIMIHT-1 ;
+21st:21%  EHAKIMIHT-ST ;
+22:22%  EHAKIMIHT-1 ;
+22nd:22%  EHAKIMIHT-ST ;
+23:23%  EHAKIMIHT-1 ;
+23rd:23%  EHAKIMIHT-ST ;
+24:24%  EHAKIMIHT ;
+25:25%  EHAKIMIHT ;
+26:26%  EHAKIMIHT ;
+27:27%  EHAKIMIHT ;
+28:28%  EHAKIMIHT ;
+29:29%  EHAKIMIHT ;
+3%0:3%0%  EHAKIMIHT30 ;
+3%0th:3%0%  EHAKIMIHT30-ST ;
+3%1:3%1%  EHAKIMIHT31 ;
+3%1st:3%1%  EHAKIMIHT31-ST ;
+
+LEXICON EHAKIMIHT
+  EHAKIMIHT-1 ;
+th:  EHAKIMIHT-ST ;
+
+LEXICON EHAKIMIHT-1
+%.% :ehakimiht%  29MONTHS ; !5. September
+%.:ehakimiht%  29MONTHS ; !5.September
+% :ehakimiht%  29MONTHS ; !5 September
+
+LEXICON EHAKIMIHT-ST
+% of% :ehakimiht%  29MONTHS ; !5 September
+
+
+LEXICON 29MONTHS
+February:mikisowipîsimohk ENDLEX ; 
+April:ayikipîsimohk ENDLEX ;
+June:opâskâwewowipîsimohk ENDLEX ; 
+September:onôcihitowipîsimohk ENDLEX ; 
+January:kisepîsimohk ENDLEX ; 
+March:niskipîsimohk ENDLEX ; 
+May:opiniyâwewowipîsimohk ENDLEX ;
+July:opaskowipîsimohk ENDLEX ;
+August:ohpahowipîsimohk ENDLEX ; 
+October:kaskatinowipîsimohk ENDLEX ;
+December:manitow% kîsikan% pîsimohk ENDLEX ; 
+December:pawahcakinasîs ENDLEX ; 
+November:iyikopîwipîsimohk ENDLEX ; 
+
+LEXICON EHAKIMIHT30
+%.%  :ehakimiht%  30MONTHS ; !5. September
+%.:ehakimiht%  30MONTHS ;!5.September
+% :ehakimiht%  30MONTHS ; !5 September
+
+LEXICON EHAKIMIHT30-ST
+% of% :ehakimiht%  30MONTHS ; !5 September
+
+
+LEXICON 30MONTHS
+April:ayikipîsimohk ENDLEX ;
+June:opâskâwewowipîsimohk ENDLEX ; 
+September:onôcihitowipîsimohk ENDLEX ;
+November:iyikopîwipîsimohk ENDLEX ; 
+January:kisepîsimohk ENDLEX ; 
+March:niskipîsimohk ENDLEX ; 
+May:opiniyâwewowipîsimohk ENDLEX ;
+July:opaskowipîsimohk ENDLEX ;
+August:ohpahowipîsimohk ENDLEX ; 
+October:kaskatinowipîsimohk ENDLEX ; 
+December:manitow% kîsikan% pîsimohk ENDLEX ;
+December:pawahcakinasîs ENDLEX ;
+October:kaskatinowipîsimohk ENDLEX ; 
+December:manitow% kîsikan% pîsimohk ENDLEX ;
+December:pawahcakinasîs ENDLEX ;
+
+
+LEXICON EHAKIMIHT31
+%.% :ehakimiht%   31MONTHS ; !5. January
+%.:ehakimiht%   31MONTHS ; !5.January
+% :ehakimiht%  31MONTHS ; !5 January
+
+LEXICON EHAKIMIHT31-ST
+% of% :ehakimiht%  31MONTHS ; !5 September
+
+
+LEXICON 31MONTHS
+January:kisepîsimohk ENDLEX ;
+March:niskipîsimohk ENDLEX ;
+May:opiniyâwewowipîsimohk ENDLEX ;
+July:opaskowipîsimohk ENDLEX ;
+August:ohpahowipîsimohk ENDLEX ;
+October:kaskatinowipîsimohk ENDLEX ;
+December:manitow% kîsikan% pîsimohk ENDLEX ;
+December:pawahcakinasîs ENDLEX ;
+
+  
+LEXICON ENDLEX
+ # ;
 ! # ; ! sloppy punctuation

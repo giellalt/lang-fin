@@ -1,1631 +1,509 @@
-!! !!!Noun inflection and derivation
-!! Nouns and other nominals inflect in number, cases, possessives and with
-!! clitics, in that order. Combinations that this regular inflection can form
-!! is approximately 2×15×5×26=4900, so we do not show all variants in test cases
-!! and examples, but just central ones that are interesting and potential to
-!! break.
-
-!! !!Nominatives
-!! Singular nominative is the dictionary reference form for most of the words.
-
-LEXICON NOUN_BACK_NOMINATIVE
-!!€gt-norm: Noun nominative back
-!!€ talo: talo+N+Sg+Nom # a house
-!!€ taloko: talo+N+Sg+Nom+Qst
-!!€ talohan: talo+N+Sg+Nom+Foc/han
-!!$ talohän: talo+N+Sg+Nom+Foc/han
- +Sg+Nom:0 NOUN_BACK_CLIT_OPT ;
-
-LEXICON NOUN_FRONT_NOMINATIVE
-!!€gt-norm: Noun nominative front
-!!€ pöly: pöly+N+Sg+Nom # dust
- +Sg+Nom:0 NOUN_FRONT_CLIT_OPT ;
-
-!! The plural nominative attaches to singular stem. For plural words it is also
-!! the form that is used for dictionary lookups:
-
-LEXICON NOUN_BACK_PLNOM_CLIT
-!!€gt-norm: Noun nominative plural back
-!!€ talot: talo+N+Pl+Nom
-!!€ sakset: sakset+N+Pl+Nom # scissors
-!!€ saksetpa: sakset+N+Pl+Nom+Foc/pa
-!!$ saksetpä: sakset+N+Pl+Nom+Foc/pa
- +Pl+Nom:%>t NOUN_BACK_CLIT_OPT ;
-
-LEXICON NOUN_FRONT_PLNOM_CLIT
-!!€gt-norm: Noun nominative plural front
-!!€ pölyt: pöly+N+Pl+Nom
-!!€ häät: häät+N+Pl+Nom # wedding
- +Pl+Nom:%>t NOUN_FRONT_CLIT_OPT ;
-
-!! !!Singular case inflection
-!! The nouns can inflect in 15 regular cases. Most of the cases have one or two
-!! case endings, with only varying part being the harmony vowel. For nouns with
-!! direct consonant gradation, the most of the singular case suffixes attach
-!! to the weak singular stem:
-
-LEXICON NOUN_BACK_WEAK_SINGULARS
-!!€gt-norm: Noun basic singular back
-!!€ pata: pata+N+Sg+Nom # pot
-!!€ padan: pata+N+Sg+Gen
-!!€ padassa: pata+N+Sg+Ine
-!!€ padasta: pata+N+Sg+Ela
-!!€ padalla: pata+N+Sg+Ade
-!!€ padalta: pata+N+Sg+Abl
-!!€ padalle: pata+N+Sg+All
-!!€ padaksi: pata+N+Sg+Tra
-!!€ padatta: pata+N+Sg+Abe
-       0       NOUN_BACK_PLNOM_CLIT  ;
- +Sg+Gen:%>n   NOUN_BACK_CLIT_OPT    ;
- +Sg+Abe:%>tta NOUN_BACK_POSS_AN_OPT ;
- +Sg+Abl:%>lta NOUN_BACK_POSS_AN_OPT ;
- +Sg+Ade:%>lla NOUN_BACK_POSS_AN_OPT ;
- +Sg+All:%>lle NOUN_BACK_POSS_EN_OPT ;
- +Sg+Ela:%>sta NOUN_BACK_POSS_AN_OPT ;
- +Sg+Ine:%>ssa NOUN_BACK_POSS_AN_OPT ;
- +Sg+Tra:%>kse NOUN_BACK_POSS_EN_OBL ;
- +Sg+Tra:%>ksi NOUN_BACK_CLIT_OPT    ;
- +Sg+Tra:%>ksi NOUN_BACK_CLIT_OPT    ;
-
-LEXICON NOUN_FRONT_WEAK_SINGULARS
-!!€gt-norm: Noun basic singular front
-!!€ näky: näky+N+Sg+Nom # vision
-!!€ näyn: näky+N+Sg+Gen
-!!€ näyssä: näky+N+Sg+Ine
-!!€ näystä: näky+N+Sg+Ela
-!!€ näyllä: näky+N+Sg+Ade
-!!€ näyltä: näky+N+Sg+Abl
-!!€ näylle: näky+N+Sg+All
-!!€ näyksi: näky+N+Sg+Tra
-!!€ näyttä: näky+N+Sg+Abe
-       0       NOUN_FRONT_PLNOM_CLIT  ;
- +Sg+Gen:%>n   NOUN_FRONT_CLIT_OPT    ;
- +Sg+Abe:%>ttä NOUN_FRONT_POSS_ÄN_OPT ;
- +Sg+Abl:%>ltä NOUN_FRONT_POSS_ÄN_OPT ;
- +Sg+Ade:%>llä NOUN_FRONT_POSS_ÄN_OPT ;
- +Sg+All:%>lle NOUN_FRONT_POSS_EN_OPT ;
- +Sg+Ela:%>stä NOUN_FRONT_POSS_ÄN_OPT ;
- +Sg+Ine:%>ssä NOUN_FRONT_POSS_ÄN_OPT ;
- +Sg+Tra:%>kse NOUN_FRONT_POSS_EN_OBL ;
- +Sg+Tra:%>ksi NOUN_FRONT_CLIT_OPT    ;
- +Sg+Tra:%>ksi NOUN_FRONT_CLIT_OPT    ;
-
-!! For words with direct gradation the only forms that attach to strong singular
-!! stem may be essive and possessive's of nominative or genitive:
-
-LEXICON NOUN_BACK_STRONG_SINGULARS
-!!€gt-norm: Noun basic singular strong back
-!!€ patana: pata+N+Sg+Ess
-!!€ patani: pata+N+Sg+Nom+PxSg1
-!!€ patasi: pata+N+Sg+Gen+PxSg2
- +Sg+Ess:%>na NOUN_BACK_POSS_AN_OPT ;
- +Sg+Nom:0    NOUN_BACK_POSS        ;
- +Sg+Gen:0    NOUN_BACK_POSS        ;
- +Pl+Nom:0    NOUN_BACK_POSS        ;
-
-LEXICON NOUN_FRONT_STRONG_SINGULARS
-!!€gt-norm: Noun basic singular strong front
-!!€ näkynä: näky+N+Sg+Ess
-!!€ näkyni: näky+N+Sg+Nom+PxSg1
-!!€ näkysi: näky+N+Sg+Gen+PxSg2
- +Sg+Ess:%>nä NOUN_FRONT_POSS_ÄN_OPT ;
- +Sg+Nom:0    NOUN_FRONT_POSS        ;
- +Sg+Gen:0    NOUN_FRONT_POSS        ;
- +Pl+Nom:0    NOUN_FRONT_POSS        ;
-
-!! !!Plural inflection
-
-LEXICON NOUN_BACK_WEAK_PLURALS
-!!€gt-norm: Noun basic plural back
-!!€ padoilta: pata+N+Pl+Abl
-!!€ padoilla: pata+N+Pl+Ade
-!!€ padoille: pata+N+Pl+All
-!!€ padoista: pata+N+Pl+Ela
-!!€ padoissa: pata+N+Pl+Ine
-!!€ padoiksi: pata+N+Pl+Tra
-!!€ padoitta: pata+N+Pl+Abe
-!!€ padoin: pata+N+Pl+Ins
- +Pl+Abe:%>i%>tta NOUN_BACK_POSS_AN_OPT ;
- +Pl+Abl:%>i%>lta NOUN_BACK_POSS_AN_OPT ;
- +Pl+Ade:%>i%>lla NOUN_BACK_POSS_AN_OPT ;
- +Pl+All:%>i%>lle NOUN_BACK_POSS_AN_OPT ;
- +Pl+Ela:%>i%>sta NOUN_BACK_POSS_AN_OPT ;
- +Pl+Ine:%>i%>ssa NOUN_BACK_POSS_AN_OPT ;
- +Pl+Ins:%>i%>n   NOUN_BACK_CLIT_OPT    ;
- +Pl+Tra:%>i%>kse NOUN_BACK_POSS_EN_OBL ;
- +Pl+Tra:%>i%>ksi NOUN_BACK_CLIT_OPT    ;
-
-LEXICON NOUN_FRONT_WEAK_PLURALS
-!!€gt-norm: Noun basic plural front
-!!€ näyillä: näky+N+Pl+Ade
-!!€ näyiltä: näky+N+Pl+Abl
-!!€ näyille: näky+N+Pl+All
-!!€ näyissä: näky+N+Pl+Ine
-!!€ näyistä: näky+N+Pl+Ela
-!!€ näyiksi: näky+N+Pl+Tra
-!!€ näyittä: näky+N+Pl+Abe
-!!€ näyin: näky+N+Pl+Ins
- +Pl+Abe:%>i%>ttä NOUN_FRONT_POSS_ÄN_OPT ;
- +Pl+Abl:%>i%>ltä NOUN_FRONT_POSS_ÄN_OPT ;
- +Pl+Ade:%>i%>llä NOUN_FRONT_POSS_ÄN_OPT ;
- +Pl+All:%>i%>lle NOUN_FRONT_POSS_ÄN_OPT ;
- +Pl+Ela:%>i%>stä NOUN_FRONT_POSS_ÄN_OPT ;
- +Pl+Ine:%>i%>ssä NOUN_FRONT_POSS_ÄN_OPT ;
- +Pl+Ins:%>i%>n   NOUN_FRONT_CLIT_OPT    ;
- +Pl+Tra:%>i%>kse NOUN_FRONT_POSS_EN_OBL ;
- +Pl+Tra:%>i%>ksi NOUN_FRONT_CLIT_OPT    ;
-
-!! The strong plural stem of words with direct gradation contains only essive
-!! and comitative:
-
-LEXICON NOUN_BACK_STRONG_PLURALS
-!!€gt-norm: Noun basic plural back strong
-!!€ patoina: pata+N+Pl+Ess
-!!€ patoine: pata+N+Com
- +Pl+Ess:%>i%>na NOUN_BACK_POSS_AN_OPT ;
-    +Com:%>i%>ne NOUN_BACK_POSS_EN_OPT ;
-
-LEXICON NOUN_FRONT_STRONG_PLURALS
-!!€gt-norm: Noun basic plural front strong
-!!€ näkyinä: näky+N+Pl+Ess
-!!€ näkyine: näky+N+Com
- +Pl+Ess:%>i%>nä NOUN_FRONT_POSS_ÄN_OPT ;
-    +Com:%>i%>ne NOUN_FRONT_POSS_EN_OPT ;
-
-!! !!Cases with allomorphic variation
-!! The nominal cases which can take several different suffixes are singular
-!! and plural partitives, singular and plural illatives and plural genitives.
-!! After stem variation the selection of these allomorphs is the main factor
-!! of morphological classification of nouns.
-
-!! The reconstructed historical suffix for partitives of Finnish is ða, ðä, the
-!! current variants according to that theory would be the different
-!! realisations of extinct ð.
-
-!! For basic vowel stems the partitive suffix is a, ä.
-LEXICON NOUN_BACK_PARTITIVE_A
-!!€gt-norm: Noun singular partitive a
-!!€ politiikka: politiikka+N+Sg+Nom # politics
-!!€ politiikkaa: politiikka+N+Sg+Par
- +Sg+Par:%>a NOUN_BACK_POSS_OPT ;
-
-LEXICON NOUN_FRONT_PARTITIVE_Ä
-!!€gt-norm: Noun singular partitive ä
-!!€ kysyntä: kysyntä+N+Sg+Nom # demand
-!!€ kysyntää: kysyntä+N+Sg+Par
- +Sg+Par:%>ä NOUN_FRONT_POSS_OPT ;
-
-!! In stems other than -a, -ä stems, the 3rd possessive suffix may appear in
-!! -an, -än form after the partitive suffix.
-LEXICON NOUN_BACK_PARTITIVE_A_AN
-!!€gt-norm: Noun singular partitive a poss aan
-!!€ pato: pato+N+Sg+Nom # dam
-!!€ patoa: pato+N+Sg+Par
-!!€ patoaan: pato+N+Sg+Par+PxSg3
- +Sg+Par:%>a NOUN_BACK_POSS_AN_OPT ;
-
-LEXICON NOUN_FRONT_PARTITIVE_Ä_ÄN
-!!€gt-norm: Noun singular partitive ä poss ään
-!!€ näkyä: näky+N+Sg+Par
-!!€ näkyään: näky+N+Sg+Par+PxSg3
- 0+Sg+Par:%>ä NOUN_FRONT_POSS_ÄN_OPT ;
-
-!! The consonant stems and long vowel stems regularly take -ta, -tä suffix
-!! for singular partitives. It is up to interpretation whether the partitive
-!! suffix of the -e^ stem is considered to be -tta, -ttä, or just -ta, -tä.
-!! In principle the consonant that disappeared from -e^ stems could be from
-!! that.
-
-LEXICON NOUN_BACK_PARTITIVE_TA
-!!€gt-norm: Noun singular partitive ta
-!!€ taimen: taimen+N+Sg+Nom # trout
-!!€ taimenta: taimen+N+Sg+Par
- +Sg+Par:%>ta NOUN_BACK_POSS_AN_OPT ;
-
-LEXICON NOUN_FRONT_PARTITIVE_TÄ
-!!€gt-norm: Noun singular partitive tä
-!!€ tie: tie+N+Sg+Nom # road
-!!€ tietä: tie+N+Sg+Par
-!!€ vene: vene+N+Sg+Nom # boat
-!!€ venettä: vene+N+Sg+Par
- +Sg+Par:%>tä NOUN_FRONT_POSS_ÄN_OPT ;
-
-!! The singular illatives have more variants.
-
-!! The variant with intervening h attaches to long vowel stems:
-LEXICON NOUN_BACK_ILLATIVE_HAN
-!!€gt-norm: Noun singular illative han
-!!€ maa: maa+N+Sg+Nom # earth
-!!€ maahan: maa+N+Sg+Ill
-!!€ maahansa: maa+N+Sg+Ill+PxSg3
- +Sg+Ill:%>han NOUN_BACK_CLIT_OPT ;
- +Sg+Ill:%>ha  NOUN_BACK_POSS     ;
-
-LEXICON NOUN_BACK_ILLATIVE_HEN
-!!€gt-norm: Noun singular illative hen back
-!!€ toffee: toffee+N+Sg+Nom # taffy
-!!€ toffeehen: toffee+N+Sg+Ill
- +Sg+Ill:%>hen NOUN_BACK_CLIT_OPT ;
- +Sg+Ill:%>he  NOUN_BACK_POSS     ;
-
-LEXICON NOUN_FRONT_ILLATIVE_HEN
-!!€gt-norm: Noun singular illative hen front
-!!€ tiehen: tie+N+Sg+Ill
- +Sg+Ill:%>hen NOUN_FRONT_CLIT_OPT ;
- +Sg+Ill:%>he  NOUN_FRONT_POSS     ;
-
-LEXICON NOUN_BACK_ILLATIVE_HIN
-!!€gt-norm: Noun singular illative hin back
-!!€ hai: hai+N+Sg+Nom # shark
-!!€ haihin: hai+N+Sg+Ill
- +Sg+Ill:%>hin NOUN_BACK_CLIT_OPT ;
- +Sg+Ill:%>hi  NOUN_BACK_POSS     ;
-
-LEXICON NOUN_FRONT_ILLATIVE_HIN
-!!€gt-norm: Noun singular illative hin front
-!!€ pii: pii+N+Sg+Nom # silica
-!!€ piihin: pii+N+Sg+Ill
- +Sg+Ill:%>hin NOUN_FRONT_CLIT_OPT ;
- +Sg+Ill:%>hi  NOUN_FRONT_POSS     ;
-
-LEXICON NOUN_BACK_ILLATIVE_HON
-!!€gt-norm: Noun singular illative hon
-!!€ suo: suo+N+Sg+Nom # swamp
-!!€ suohon: suo+N+Sg+Ill
- +Sg+Ill:%>hon NOUN_BACK_CLIT_OPT ;
- +Sg+Ill:%>ho  NOUN_BACK_POSS     ;
-
-LEXICON NOUN_BACK_ILLATIVE_HUN
-!!€gt-norm: Noun singular illative hun
-!!€ puu: puu+N+Sg+Nom # tree
-!!€ puuhun: puu+N+Sg+Ill
- +Sg+Ill:%>hun NOUN_BACK_CLIT_OPT ;
- +Sg+Ill:%>hu  NOUN_BACK_POSS     ;
-
-LEXICON NOUN_FRONT_ILLATIVE_HYN
-!!€gt-norm: Noun singular illative hyn
-!!€ pyy: pyy+N+Sg+Nom # kind of a bird
-!!€ pyyhyn: pyy+N+Sg+Ill
- +Sg+Ill:%>hyn NOUN_FRONT_CLIT_OPT ;
- +Sg+Ill:%>hy  NOUN_FRONT_POSS     ;
-
-LEXICON NOUN_FRONT_ILLATIVE_HÄN
-!!€gt-norm: Noun singular illative hän
-!!€ pää: pää+N+Sg+Nom # head
-!!€ päähän: pää+N+Sg+Ill
- +Sg+Ill:%>hän NOUN_FRONT_CLIT_OPT ;
- +Sg+Ill:%>hä  NOUN_FRONT_POSS     ;
-
-LEXICON NOUN_FRONT_ILLATIVE_HÖN
-!!€gt-norm: Noun singular illative hän
-!!€ työ: työ+N+Sg+Nom # job
-!!€ työhön: työ+N+Sg+Ill
- +Sg+Ill:%>hön NOUN_FRONT_CLIT_OPT ;
- +Sg+Ill:%>hö  NOUN_FRONT_POSS     ;
-
-!! The stems with short vowel do not have the intervening h.
-
-LEXICON NOUN_BACK_ILLATIVE_AN
-!!€gt-norm: Noun singular illative an
-!!€ kirja: kirja+N+Sg+Nom # book
-!!€ kirjaan: kirja+N+Sg+Ill
- +Sg+Ill:%>an NOUN_BACK_CLIT_OPT ;
- +Sg+Ill:%>a  NOUN_BACK_POSS     ;
-
-LEXICON NOUN_BACK_ILLATIVE_EN
-!!€gt-norm: Noun singular illative en ba<ck
-!!€ tuli: tuli+N+Sg+Nom # fire
-!!€ tuleen: tuli+N+Sg+Ill
- +Sg+Ill:%>en NOUN_BACK_CLIT_OPT ;
- +Sg+Ill:%>e  NOUN_BACK_POSS     ;
-
-LEXICON NOUN_FRONT_ILLATIVE_EN
-!!€gt-norm: Noun singular illative en front
-!!€ hiiri: hiiri+N+Sg+Nom # mouse
-!!€ hiireen: hiiri+N+Sg+Ill
- +Sg+Ill:%>en NOUN_FRONT_CLIT_OPT ;
- +Sg+Ill:%>e  NOUN_FRONT_POSS     ;
-
-LEXICON NOUN_BACK_ILLATIVE_IN
-!!€gt-norm: Noun singular illative in back
-!!€ ruuvi: ruuvi+N+Sg+Nom # screw
-!!€ ruuviin: ruuvi+N+Sg+Ill
- +Sg+Ill:%>in NOUN_BACK_CLIT_OPT ;
- +Sg+Ill:%>i  NOUN_BACK_POSS     ;
-
-LEXICON NOUN_FRONT_ILLATIVE_IN
-!!€gt-norm: Noun singular illative in front
-!!€ tyyli: tyyli+N+Sg+Nom # style
-!!€ tyyliin: tyyli+N+Sg+Ill
- +Sg+Ill:%>in NOUN_FRONT_CLIT_OPT ;
- +Sg+Ill:%>i  NOUN_FRONT_POSS     ;
-
-LEXICON NOUN_BACK_ILLATIVE_ON
-!!€gt-norm: Noun singular illative on
-!!€ taloon: talo+N+Sg+Ill
- +Sg+Ill:%>on NOUN_BACK_CLIT_OPT ;
- +Sg+Ill:%>o  NOUN_BACK_POSS     ;
-
-LEXICON NOUN_BACK_ILLATIVE_UN
-!!€gt-norm: Noun singular illative un
-!!€ nielu: nielu+N+Sg+Nom # throat
-!!€ nieluun: nielu+N+Sg+Ill
- +Sg+Ill:%>un NOUN_BACK_CLIT_OPT ;
- +Sg+Ill:%>u  NOUN_BACK_POSS     ;
-
-LEXICON NOUN_FRONT_ILLATIVE_YN
-!!€gt-norm: Noun singular illative yn
-!!€ näkyyn: näky+N+Sg+Ill
- +Sg+Ill:%>yn NOUN_FRONT_CLIT_OPT ;
- +Sg+Ill:%>y  NOUN_FRONT_POSS     ;
-
-LEXICON NOUN_FRONT_ILLATIVE_ÄN
-!!€gt-norm: Noun singular illative än
-!!€ räkä: räkä+N+Sg+Nom # booger
-!!€ räkään: räkä+N+Sg+Ill
- +Sg+Ill:%>än NOUN_FRONT_CLIT_OPT ;
- +Sg+Ill:%>ä  NOUN_FRONT_POSS     ;
-
-LEXICON NOUN_FRONT_ILLATIVE_ÖN
-!!€gt-norm: Noun singular illative ön
-!!€ tönö: tönö+N+Sg+Nom # shack
-!!€ tönöön: tönö+N+Sg+Ill
- +Sg+Ill:%>ön NOUN_FRONT_CLIT_OPT ;
- +Sg+Ill:%>ö  NOUN_FRONT_POSS     ;
-
-!! Bisyllabic long vowel stems have illative suffix of -seen.
-LEXICON NOUN_BACK_ILLATIVE_SEEN
-!!€gt-norm: Noun singular illative seen back
-!!€ tienoo: tienoo+N+Sg+Nom # neighbourhood
-!!€ tienooseen: tienoo+N+Sg+Ill
- +Sg+Ill:%>seen NOUN_BACK_CLIT_OPT ;
- +Sg+Ill:%>see  NOUN_BACK_POSS     ;
-
-LEXICON NOUN_FRONT_ILLATIVE_SEEN
-!!€gt-norm: Noun singular illative seen front
-!!€ miljöö: miljöö+N+Sg+Nom # millieu
-!!€ miljööseen: miljöö+N+Sg+Ill
- +Sg+Ill:%>seen NOUN_FRONT_CLIT_OPT ;
- +Sg+Ill:%>see  NOUN_FRONT_POSS     ;
-
-!! Plural genitives have the most variants. Especially, many words have more or
-!! less free variation between handful of choices.
-LEXICON NOUN_BACK_GENITIVE_IDEN
-!!€gt-norm:     Noun plural genitive iden back
-!!€ aavikko:     aavikko+N+Sg+Nom
-!!€ aavikoiden:  aavikko+N+Pl+Gen
- +Pl+Gen:%>i%>den NOUN_BACK_CLIT_OPT ;
- +Pl+Gen:%>i%>de  NOUN_BACK_POSS     ;
-
-LEXICON NOUN_FRONT_GENITIVE_IDEN
-!!€gt-norm: Noun plural genitive iden front
-!!€ kännykkä: kännykkä+N+Sg+Nom # mobile phone
-!!€ kännyköiden: kännykkä+N+Pl+Gen
- +Pl+Gen:%>i%>den NOUN_FRONT_CLIT_OPT ;
- +Pl+Gen:%>i%>de  NOUN_FRONT_POSS     ;
-
-LEXICON NOUN_BACK_GENITIVE_ITTEN
-!!€gt-norm: Noun plural genitive itten back
-!!€ tienoitten: tienoo+N+Pl+Gen
- +Pl+Gen:%>i%>tten NOUN_BACK_CLIT_OPT ;
- +Pl+Gen:%>i%>tte  NOUN_BACK_POSS     ;
-
-LEXICON NOUN_FRONT_GENITIVE_ITTEN
-!!€gt-norm: Noun plural genitive itten front
-!!€ teitten: tie+N+Pl+Gen
- +Pl+Gen:%>i%>tten NOUN_FRONT_CLIT_OPT ;
- +Pl+Gen:%>i%>tte  NOUN_FRONT_POSS     ;
-
-LEXICON NOUN_BACK_GENITIVE_IEN
-!!€gt-norm: Noun plural genitive ien back
-!!€ nainen: nainen+N+Sg+Nom # woman
-!!€ naisien: nainen+N+Pl+Gen
- +Pl+Gen:%>i%>en NOUN_BACK_CLIT_OPT ;
- +Pl+Gen:%>i%>e  NOUN_BACK_POSS     ;
-
-LEXICON NOUN_FRONT_GENITIVE_IEN
-!!€gt-norm: Noun plural genitive ien back
-!!€ murha: murha+N+Sg+Nom # murder
-!!€ murhien: murha+N+Pl+Gen
- +Pl+Gen:%>i%>en NOUN_FRONT_CLIT_OPT ;
- +Pl+Gen:%>i%>e  NOUN_FRONT_POSS     ;
-
-LEXICON NOUN_BACK_GENITIVE_JEN
-!!€gt-norm: Noun plural genitive jen back
-!!€ alivalikkojen: alivalikko+N+Pl+Gen
- +Pl+Gen:%>j%>en NOUN_BACK_CLIT_OPT ;
- +Pl+Gen:%>j%>e  NOUN_BACK_POSS     ;
-
-LEXICON NOUN_FRONT_GENITIVE_JEN
-!!€gt-norm: Noun plural genitive jen front
-!!€ pyhäkkö: pyhäkkö+N+Sg+Nom # sanctum
-!!€ pyhäkköjen: pyhäkkö+N+Pl+Gen
- +Pl+Gen:%>j%>en NOUN_FRONT_CLIT_OPT ;
- +Pl+Gen:%>j%>e  NOUN_FRONT_POSS     ;
-
-LEXICON NOUN_BACK_GENITIVE_TEN
-!!€gt-norm: Noun plural genitive ten back
-!!€ sisar: sisar+N+Sg+Nom # sister
-!!€ sisarten: sisar+N+Pl+Gen
- +Pl+Gen:%>ten NOUN_BACK_CLIT_OPT ;
- +Pl+Gen:%>te  NOUN_BACK_POSS     ;
-
-LEXICON NOUN_FRONT_GENITIVE_TEN
-!!€gt-norm: Noun plural genitive ten front
-!!€ väännin: väännin+N+Sg+Nom # turner
-!!€ väänninten: väännin+N+Pl+Gen
- +Pl+Gen:%>ten NOUN_FRONT_CLIT_OPT ;
- +Pl+Gen:%>te  NOUN_FRONT_POSS     ;
-
-!! The -in suffix for plural genitive that goes with singular stem is always
-!! markedly archaic. Most commonly it appears in compound words.
-
-LEXICON NOUN_BACK_GENITIVE_IN
-!!€gt-desc: Noun plural genitive rare in back
-!!€ patain: pata+N+Pl+Gen+Use/Rare
- +Pl+Gen+Use/Rare:%>i%>n NOUN_BACK_CLIT_OPT ;
- +Pl+Gen+Use/Rare:%>i    NOUN_BACK_POSS     ;
-
-LEXICON NOUN_FRONT_GENITIVE_IN
-!!€gt-desc: Noun plural genitive rare in front
-!!€ tyrmä: tyrmä+N+Sg+Nom # prison
-!!€ tyrmäin: tyrmä+N+Pl+Gen+Use/Rare
- +Pl+Gen+Use/Rare:%>i%>n NOUN_FRONT_CLIT_OPT ;
- +Pl+Gen+Use/Rare:%>i    NOUN_FRONT_POSS     ;
-
-!! Plural partitive has a few variants:
-
-LEXICON NOUN_BACK_PARTITIVE_IA
-!!€gt-norm: Noun plural partitive ia
-!!€ koiria: koira+N+Pl+Par
- +Pl+Par:%>i%>a NOUN_BACK_POSS_AN_OPT ;
-
-LEXICON NOUN_FRONT_PARTITIVE_IÄ
-!!€gt-norm: Noun plural partitive iä
-!!€ kärsä: kärsä+N+Sg+Nom # trunk
-!!€ kärsiä: kärsä+N+Pl+Par
- +Pl+Par:%>i%>ä NOUN_FRONT_POSS_ÄN_OPT ;
-
-LEXICON NOUN_BACK_PARTITIVE_ITA
-!!€gt-norm: Noun plural partitive ita
-!!€ tienoita: tienoo+N+Pl+Par
- +Pl+Par:%>i%>ta NOUN_BACK_POSS_AN_OPT ;
-
-LEXICON NOUN_FRONT_PARTITIVE_ITÄ
-!!€gt-norm: Noun plural partitive itä
-!!€ teitä: tie+N+Pl+Par
- +Pl+Par:%>i%>tä NOUN_FRONT_POSS_ÄN_OPT ;
-
-LEXICON NOUN_BACK_PARTITIVE_JA
-!!€gt-norm: Noun plural partitive ja
-!!€ lepakkoja: lepakko+N+Pl+Par
- +Pl+Par:%>j%>a NOUN_BACK_POSS_AN_OPT ;
-
-LEXICON NOUN_FRONT_PARTITIVE_JÄ
-!!€gt-norm: Noun plural partitive jä
-!!€ pyhäkköjä: pyhäkkö+N+Pl+Par
- +Pl+Par:%>j%>ä NOUN_FRONT_POSS_ÄN_OPT ;
-
-!! And plural illative has few variants:
-
-LEXICON NOUN_BACK_ILLATIVE_IHIN
-!!€gt-norm: Noun plural illative ihin back
-!!€ taloihin: talo+N+Pl+Ill
- +Pl+Ill:%>i%>hin NOUN_BACK_CLIT_OPT ;
- +Pl+Ill:%>i%>hi  NOUN_BACK_POSS     ;
-
-LEXICON NOUN_FRONT_ILLATIVE_IHIN
-!!€gt-norm: Noun plural illative ihin front
-!!€ näkyihin: näky+N+Pl+Ill
- +Pl+Ill:%>i%>hin NOUN_BACK_CLIT_OPT ;
- +Pl+Ill:%>i%>hi  NOUN_FRONT_POSS    ;
-
-LEXICON NOUN_BACK_ILLATIVE_IIN
-!!€gt-norm: Noun plural illative iin back
-!!€ koiriin: koira+N+Pl+Ill
- +Pl+Ill:%>i%>in NOUN_BACK_CLIT_OPT ;
- +Pl+Ill:%>i%>i  NOUN_BACK_POSS     ;
-
-LEXICON NOUN_FRONT_ILLATIVE_IIN
-!!€gt-norm: Noun plural illative iin front
-!!€ sieni: sieni+N+Sg+Nom # mushroom
-!!€ sieniin: sieni+N+Pl+Ill
- +Pl+Ill:%>i%>in NOUN_BACK_CLIT_OPT ;
- +Pl+Ill:%>i%>i  NOUN_FRONT_POSS    ;
-
-LEXICON NOUN_BACK_ILLATIVE_ISIIN
-!!€gt-norm: Noun plural illative isiin back
-!!€ sokea: sokea+N+Sg+Nom
-!!€ sokeisiin: sokea+N+Pl+Ill
- +Pl+Ill:%>i%>siin NOUN_BACK_CLIT_OPT          ;
- +Pl+Ill:%>i%>sii  NOUN_BACK_POSS              ;
-
- +Use/NG:          NOUN_BACK_H_PLURALS_ARCHAIC ;
-
-
-LEXICON NOUN_FRONT_ILLATIVE_ISIIN
-!!€gt-norm: Noun plural illative isiin front
-!!€ kevät: kevät+N+Sg+Nom # spring
-!!€ keväisiin: kevät+N+Pl+Ill
- +Pl+Ill:%>i%>siin NOUN_BACK_CLIT_OPT           ;
- +Pl+Ill:%>i%>sii  NOUN_FRONT_POSS              ;
-
- +Use/NG:0         NOUN_FRONT_H_PLURALS_ARCHAIC ;
-
-
-!! !!Possessive suffixes
-!! Possessives come optionally after the case suffixes. For consonant final
-!! cases the possessives assimilate or eat the final part of the case ending
-!! or stem.
-LEXICON NOUN_BACK_POSS
-!!€gt-norm: Noun possessive back
-!!€ taloni: talo+N+Sg+Nom+PxSg1
-!!€ talosi: talo+N+Sg+Nom+PxSg2
-!!€ talonsa: talo+N+Sg+Nom+PxSg3
-!!€ talomme: talo+N+Sg+Nom+PxPl1
-!!€ talonne: talo+N+Sg+Nom+PxPl2
- +PxSg1:%>ni  NOUN_BACK_CLIT_OPT ;
- +PxSg2:%>si  NOUN_BACK_CLIT_OPT ;
- +PxSg3:%>nsa NOUN_BACK_CLIT_OPT ;
- +PxPl1:%>mme NOUN_BACK_CLIT_OPT ;
- +PxPl2:%>nne NOUN_BACK_CLIT_OPT ;
- +PxPl3:%>nsa NOUN_BACK_CLIT_OPT ;
-
-LEXICON NOUN_FRONT_POSS
-!!€gt-norm: Noun possessive front
-!!€ tönöni: tönö+N+Sg+Nom+PxSg1
-!!€ tönösi: tönö+N+Sg+Nom+PxSg2
-!!€ tönönsä: tönö+N+Sg+Nom+PxSg3
-!!€ tönömme: tönö+N+Sg+Nom+PxPl1
-!!€ tönönne: tönö+N+Sg+Nom+PxPl2
- +PxSg1:%>ni  NOUN_FRONT_CLIT_OPT ;
- +PxSg2:%>si  NOUN_FRONT_CLIT_OPT ;
- +PxSg3:%>nsä NOUN_FRONT_CLIT_OPT ;
- +PxPl1:%>mme NOUN_FRONT_CLIT_OPT ;
- +PxPl2:%>nne NOUN_FRONT_CLIT_OPT ;
- +PxPl3:%>nsä NOUN_FRONT_CLIT_OPT ;
-
-!! The possessive suffix of form -an, -än, attaches to some long vowel
-!! stems:
-
-LEXICON NOUN_BACK_POSS_AN
-!!€gt-norm: Noun possessive an
-!!€ taloaan: talo+N+Sg+Par+PxPl3
- +PxSg3:%>an NOUN_BACK_CLIT_OPT ;
- +PxPl3:%>an NOUN_BACK_CLIT_OPT ;
-
-LEXICON NOUN_BACK_POSS_EN
-!!€gt-norm: Noun possessive back en
-!!€ tienookseen: tienoo+N+Sg+Tra+PxSg3
- +PxSg3:%>en NOUN_BACK_CLIT_OPT ;
- +PxPl3:%>en NOUN_BACK_CLIT_OPT ;
-
-LEXICON NOUN_FRONT_POSS_EN
-!!€gt-norm: Noun possessive front en
-!!€ tiekseen: tie+N+Sg+Tra+PxSg3
- +PxSg3:%>en NOUN_FRONT_CLIT_OPT ;
- +PxPl3:%>en NOUN_FRONT_CLIT_OPT ;
-
-LEXICON NOUN_FRONT_POSS_ÄN
-!!€gt-norm: Noun possessive än
-!!€ tönöään: tönö+N+Sg+Par+PxPl3
- +PxSg3:%>än NOUN_FRONT_CLIT_OPT ;
- +PxPl3:%>än NOUN_FRONT_CLIT_OPT ;
-
-!! !!Noun clitics
-!! Clitics can attach to any word-form, including one that already has a clitic.
-!! Clitics do not modify the form they attach to and are simply concatenated to
-!! the end.
-
-LEXICON NOUN_BACK_CLIT
-!!€gt-norm: Noun clitic back
-!!€ talokaan: talo+N+Sg+Nom+Foc/kaan
-          +Foc/han:%>han       # ;
- +Foc/han+Foc/kaan:%>han%>kaan # ;
-      +Foc/han+Qst:%>han%>ko   # ;
-   +Foc/han+Foc/pa:%>han%>pa   # ;
-              +Qst:%>ko        # ;
-      +Qst+Foc/han:%>ko%>han   # ;
-     +Qst+Foc/kaan:%>ko%>kaan  # ;
-      +Qst+Foc/kin:%>ko%>kin   # ;
-       +Qst+Foc/pa:%>ko%>pa    # ;
-        +Qst+Foc/s:%>ko%>s     # ;
-           +Foc/pa:%>pa        # ;
-   +Foc/pa+Foc/han:%>pa%>han   # ;
-  +Foc/pa+Foc/kaan:%>pa%>kaan  # ;
-   +Foc/pa+Foc/kin:%>pa%>kin   # ;
-       +Foc/pa+Qst:%>pa%>ko    # ;
-     +Foc/pa+Foc/s:%>pa%>s     # ;
-          +Foc/kin:%>kin       # ;
-  +Foc/kin+Foc/han:%>kin%>han  # ;
- +Foc/kin+Foc/kaan:%>kin%>kaan # ;
-      +Foc/kin+Qst:%>kin%>ko   # ;
-   +Foc/kin+Foc/pa:%>kin%>pa   # ;
-         +Foc/kaan:%>kaan      # ;
- +Foc/kaan+Foc/han:%>kaan%>han # ;
- +Foc/kaan+Foc/kin:%>kaan%>kin # ;
-     +Foc/kaan+Qst:%>kaan%>ko  # ;
-  +Foc/kaan+Foc/pa:%>kaan%>pa  # ;
-
-LEXICON NOUN_FRONT_CLIT
-!!€gt-norm: Noun clitic front
-!!€ tönökään: tönö+N+Sg+Nom+Foc/kaan
-          +Foc/han:%>hän       # ;
- +Foc/han+Foc/kaan:%>hän%>kään # ;
-      +Foc/han+Qst:%>hän%>kö   # ;
-   +Foc/han+Foc/pa:%>hän%>pä   # ;
-              +Qst:%>kö        # ;
-      +Qst+Foc/han:%>kö%>hän   # ;
-     +Qst+Foc/kaan:%>kö%>kään  # ;
-      +Qst+Foc/kin:%>kö%>kin   # ;
-       +Qst+Foc/pa:%>kö%>pä    # ;
-        +Qst+Foc/s:%>kö%>s     # ;
-           +Foc/pa:%>pä        # ;
-   +Foc/pa+Foc/han:%>pä%>hän   # ;
-  +Foc/pa+Foc/kaan:%>pä%>kään  # ;
-   +Foc/pa+Foc/kin:%>pä%>kin   # ;
-       +Foc/pa+Qst:%>pä%>kö    # ;
-     +Foc/pa+Foc/s:%>pä%>s     # ;
-          +Foc/kin:%>kin       # ;
-  +Foc/kin+Foc/han:%>kin%>hän  # ;
- +Foc/kin+Foc/kaan:%>kin%>kään # ;
-      +Foc/kin+Qst:%>kin%>kö   # ;
-   +Foc/kin+Foc/pa:%>kin%>pä   # ;
-         +Foc/kaan:%>kään      # ;
- +Foc/kaan+Foc/han:%>kään%>hän # ;
- +Foc/kaan+Foc/kin:%>kään%>kin # ;
-     +Foc/kaan+Qst:%>kään%>kö  # ;
-  +Foc/kaan+Foc/pa:%>kään%>pä  # ;
-
-
-! shorthands (could have tests as well...)
-
-LEXICON NOUN_BACK_CLIT_OPT
- +Pref-:- #              ;
-      0   #              ;
-      0   NOUN_BACK_CLIT ;
-
-LEXICON NOUN_FRONT_CLIT_OPT
- +Pref-:- #               ;
-      0   #               ;
-      0   NOUN_FRONT_CLIT ;
-
-LEXICON NOUN_BACK_SINGULARS
- 0 NOUN_BACK_STRONG_SINGULARS ;
- 0 NOUN_BACK_WEAK_SINGULARS   ;
-
-LEXICON NOUN_FRONT_SINGULARS
- 0 NOUN_FRONT_STRONG_SINGULARS ;
- 0 NOUN_FRONT_WEAK_SINGULARS   ;
-
-LEXICON NOUN_FRONT_PLURALS
- 0 NOUN_FRONT_STRONG_PLURALS ;
- 0 NOUN_FRONT_WEAK_PLURALS   ;
-
-LEXICON NOUN_BACK_PLURALS
- 0 NOUN_BACK_STRONG_PLURALS ;
- 0 NOUN_BACK_WEAK_PLURALS   ;
-
-LEXICON NOUN_BACK_POSS_AN_OPT
- 0 NOUN_BACK_POSS    ;
- 0 NOUN_BACK_POSS_AN ;
- 0 NOUN_BACK_CLIT    ;
- 0 #                 ;
-
-LEXICON NOUN_FRONT_POSS_ÄN_OPT
- 0 NOUN_FRONT_POSS    ;
- 0 NOUN_FRONT_POSS_ÄN ;
- 0 NOUN_FRONT_CLIT    ;
- 0 #                  ;
-
-LEXICON NOUN_BACK_POSS_EN_OPT
- 0 NOUN_BACK_POSS    ;
- 0 NOUN_BACK_POSS_EN ;
- 0 NOUN_BACK_CLIT    ;
- 0 #                 ;
-
-LEXICON NOUN_FRONT_POSS_EN_OPT
- 0 NOUN_FRONT_POSS    ;
- 0 NOUN_FRONT_POSS_EN ;
- 0 NOUN_FRONT_CLIT    ;
- 0 #                  ;
-
-LEXICON NOUN_BACK_POSS_OPT
- 0 NOUN_BACK_POSS ;
- 0 NOUN_BACK_CLIT ;
- 0 #              ;
-
-LEXICON NOUN_FRONT_POSS_OPT
- 0 NOUN_FRONT_POSS ;
- 0 NOUN_FRONT_CLIT ;
- 0 #               ;
-
-LEXICON NOUN_BACK_POSS_EN_OBL
- 0 NOUN_BACK_POSS    ;
- 0 NOUN_BACK_POSS_EN ;
-
-LEXICON NOUN_FRONT_POSS_EN_OBL
-       0 NOUN_FRONT_POSS                       ;
-       0 NOUN_FRONT_POSS_EN                    ;
-
-! derivs
-!LEXICON NOUN_BACK_DERIV_INEN
-!      i NOUN_AAKKOSELLINEN                    ;
-!    lai NOUN_AAKKOSELLINEN                    ;
-!
-!LEXICON NOUN_FRONT_DERIV_INEN
-!      i NOUN_KYLKIÄINEN                       ;
-!    läi NOUN_KYLKIÄINEN                       ;
-!
-!LEXICON NOUN_BACK_DERIV_TONTSE
-!    tse ko-kaan+Adverb                        ;
-!    lli nen-se-soun+ta-en-ia-ien-ten-iin      ;
-! llisuu s-te-de-ks-toun+ta-en-ia-ien-iin      ;
-!    sti ko-kaan+Adverb                        ;
-!      t ar-tare-taroun+ta-en-ia-ien-ten-iin   ;
-!      t on-toma-tomoun+ta-an-ia-ien-(ten)-iin ;
-! ttomuu s-te-de-ks-toun+ta-en-ia-ien-iin      ;
-!
-!LEXICON NOUN_FRONT_DERIV_TÖNTSE
-!    tse ko-kaan+Adverb                        ;
-!    lli nen-se-soun+ta-en-ia-ien-ten-iin      ;
-! llisuu s-te-de-ks-toun+ta-en-ia-ien-iin      ;
-!    sti ko-kaan+Adverb                        ;
-!      t ar-tare-taroun+ta-en-ia-ien-ten-iin   ;
-!      t on-toma-tomoun+ta-an-ia-ien-(ten)-iin ;
-! ttomuu s-te-de-ks-toun+ta-en-ia-ien-iin      ;
-!
-!LEXICON NOUN_BACK_DERIV_ITTAIN
-!   itse ko-kaan+Adverb                        ;
-! ittain ko-kaan+Adverb                        ;
-!!
-!LEXICON NOUN_FRONT_DERIV_ITTÄIN
-!   itse kö-kään+Adverb                        ;
-! ittäin kö-kään+Adverb                        ;
-!
-!! !!Noun compounding
-!! Nouns form compounds productively. The non-final parts of regular compounds
-!! are singular nominatives, or singular or plural genitives of nouns. The final
-!! parts are nominals and inflect regularly.
-
-LEXICON NOUN_COMPOUND_0
-!!€gt-norm:
-!!€ talojuttu: talo+N+Sg+Nom#juttu+N+Sg+Nom
- +Sg+Nom:0 NOUN_COMPOUND ;
-
-LEXICON NOUN_COMPOUND_N
-!!€gt-norm:
-!!€ talonjuttu: talo+N+Sg+Gen#juttu+N+Sg+Nom
- +Sg+Gen:%>n NOUN_COMPOUND ;
-
-LEXICON NOUN_COMPOUND_IEN
-!!€gt-norm:
-!!€ naisienjuttu: nainen+N+Pl+Gen#juttu+N+Sg+Nom
- +Pl+Gen:%>i%>en NOUN_COMPOUND ;
-
-LEXICON NOUN_COMPOUND_IDEN
-!!€gt-norm:
-!!€ lepakoidenjuttu: lepakko+N+Pl+Gen#juttu+N+Sg+Nom
- +Pl+Gen:%>i%>den NOUN_COMPOUND ;
-
-LEXICON NOUN_COMPOUND_IN
-!!€gt-norm:
-!!€ vanhempainjuttu: vanhempi+N+Pl+Gen#juttu+N+Sg+Nom
- +Pl+Gen:%>i%>n NOUN_COMPOUND ;
-
-LEXICON NOUN_COMPOUND_ITTEN
-!!€gt-norm:
-!!€ lepakoittenjuttu: lepakko+N+Pl+Gen#juttu+N+Sg+Nom
- +Pl+Gen:%>i%>tten NOUN_COMPOUND ;
-
-LEXICON NOUN_COMPOUND_JEN
-!!€gt-norm:
-!!€ talojenjuttu: talo+N+Pl+Gen#juttu+N+Sg+Nom
- +Pl+Gen:%>j%>en NOUN_COMPOUND ;
-
-LEXICON NOUN_COMPOUND_TEN
-!!€gt-norm:
-!!€ miestenjuttu: mies+N+Pl+Gen#juttu+N+Sg+Nom
- +Pl+Gen:%>ten NOUN_COMPOUND ;
-
-
-LEXICON NOUN_COMPOUND_S
-!!€gt-norm:
-!!€ aakkostamisjuttu: aakkostaminen+N+Der/s#juttu+N+Sg+Nom
- +Der/s:»s NOUN_COMPOUND ;
-
-LEXICON NOUN_COMPOUND
-!!€gt-norm:
-!!€ talojuttu: talo+N+Sg+Nom#juttu+N+Sg+Nom
-     +Use/Circ+Use/NoHyphens#:0  NOMINAL ;
- +Use/Circ+Use/Hyphen+Use/NG#:0# NOMINAL ;
-                   +Use/Circ#:-  NOMINAL ;
-                   +Use/Circ#:   NOMINAL ;
-
-
-LEXICON NOUN_BACK_GENITIVE_TEN_ARCHAIC
-
- %+Pl%+Gen:%>te  NOUN_BACK_POSS     ;
-
- %+Pl%+Gen:%>ten NOUN_BACK_CLIT_OPT ;
- %+Pl%+Gen:%>ten NOUN_COMPOUND      ;
-
-
-LEXICON NOUN_BACK_H_PLURALS_ARCHAIC
-
- %+Pl%+Gen:h%>i%>e    NOUN_BACK_POSS        ;
-
- %+Pl%+Gen:h%>i%>en   NOUN_BACK_CLIT_OPT    ;
-
- %+Pl%+Gen:h%>i%>tte  NOUN_BACK_POSS        ;
-
- %+Pl%+Gen:h%>i%>tten NOUN_BACK_CLIT_OPT    ;
-
- %+Pl%+Ill:h%>i%>si   NOUN_BACK_POSS        ;
-
- %+Pl%+Ill:h%>i%>sin  NOUN_BACK_CLIT_OPT    ;
-
- %+Pl%+Par:h%>i%>a    NOUN_BACK_POSS_AN_OPT ;
-
-          :h          NOUN_BACK_PLURALS     ;
-
-
-LEXICON NOUN_BACK_NOMINATIVE_ARCHAIC
-
- %+Sg%+Nom: NOUN_BACK_CLIT_OPT ;
- %+Sg%+Nom: NOUN_COMPOUND      ;
-
-LEXICON NOUN_BACK_PARTITIVE_TA_ARCHAIC
-
- %+Sg%+Par:%>ta NOUN_BACK_POSS_AN_OPT ;
-
-
-
-LEXICON NOUN_FRONT_ESSIVE_NÄ_ARCHAIC
-
- %+Sg%+Ess:%>nä NOUN_FRONT_POSS_ÄN_OPT ;
-
-
-LEXICON NOUN_FRONT_ESSIVE_SÄ_ARCHAIC
-
- %+Sg%+Ess:%>sä NOUN_FRONT_POSS_ÄN_OPT ;
-
-
-LEXICON NOUN_FRONT_GENITIVE_TEN_ARCHAIC
-
- %+Pl%+Gen:%>te  NOUN_FRONT_POSS     ;
-
- %+Pl%+Gen:%>ten NOUN_FRONT_CLIT_OPT ;
- %+Pl%+Gen:%>ten NOUN_COMPOUND       ;
-
-
-LEXICON NOUN_FRONT_H_PLURALS_ARCHAIC
-
- %+Pl%+Gen:h%>i%>e    NOUN_FRONT_POSS        ;
-
- %+Pl%+Gen:h%>i%>en   NOUN_FRONT_CLIT_OPT    ;
-
- %+Pl%+Gen:h%>i%>tte  NOUN_FRONT_POSS        ;
-
- %+Pl%+Gen:h%>i%>tten NOUN_FRONT_CLIT_OPT    ;
-
- %+Pl%+Ill:h%>i%>si   NOUN_FRONT_POSS        ;
-
- %+Pl%+Ill:h%>i%>sin  NOUN_FRONT_CLIT_OPT    ;
-
- %+Pl%+Par:h%>i%>ä    NOUN_FRONT_POSS_ÄN_OPT ;
-
-          :h          NOUN_FRONT_PLURALS     ;
-
-LEXICON NOUN_FRONT_PARTITIVE_TÄ_ARCHAIC
-
- %+Sg%+Par:%>tä NOUN_FRONT_POSS_ÄN_OPT ;
-
-LEXICON NOUN_FRONT_PLNOM_ARCHAIC_CLIT
-
- %+Pl%+Nom:%>t NOUN_FRONT_CLIT_OPT ;
-
-
-LEXICON NOUN_FRONT_PLNOM_ARCHAIC_POSS
-
- %+Pl%+Nom: NOUN_FRONT_POSS ;
-
-LEXICON NOUN_FRONT_PARTITIVE_Ä_NONSTD
-
- %+Sg%+Par%+Err/Orth:%>ä NOUN_FRONT_POSS_OPT ;
-
-LEXICON NOUN_BACK_PARTITIVE_A_NONSTD
-
- %+Sg%+Par%+Err/Orth:%>a NOUN_BACK_POSS_OPT ;
-
-LEXICON NOUN_BACK_PLNOM_POSS
-
- %+Pl%+Nom: NOUN_BACK_POSS ;
-
-LEXICON NOUN_FRONT_PLNOM_POSS
-
- %+Pl%+Nom: NOUN_FRONT_POSS ;
-
-LEXICON NOUN_BACK_ESSIVE_NA_ARCHAIC
-
- %+Sg%+Ess:%>na NOUN_BACK_POSS_AN_OPT ;
-
-
-LEXICON NOUN_BACK_ESSIVE_SA_ARCHAIC
-
- %+Sg%+Ess:%>sa NOUN_BACK_POSS_AN_OPT ;
-
-
-LEXICON NOUN_ACRO_BACK_CASES
-
- : NOUN_ACRO_BACK_PLURALS   ;
-
- : NOUN_ACRO_BACK_SINGULARS ;
-
-
-LEXICON NOUN_ACRO_BACK_CLIT
-
-          +Foc/han:%>han       # ;
-
- +Foc/han+Foc/kaan:%>han%>kaan # ;
-
-   +Foc/han+Foc/ko:%>han%>ko   # ;
-
-   +Foc/han+Foc/pa:%>han%>pa   # ;
-
-         +Foc/kaan:%>kaan      # ;
-
- +Foc/kaan+Foc/han:%>kaan%>han # ;
-
- +Foc/kaan+Foc/kin:%>kaan%>kin # ;
-
-  +Foc/kaan+Foc/ko:%>kaan%>ko  # ;
-
-  +Foc/kaan+Foc/pa:%>kaan%>pa  # ;
-
-          +Foc/kin:%>kin       # ;
-
-  +Foc/kin+Foc/han:%>kin%>han  # ;
-
- +Foc/kin+Foc/kaan:%>kin%>kaan # ;
-
-   +Foc/kin+Foc/ko:%>kin%>ko   # ;
-
-   +Foc/kin+Foc/pa:%>kin%>pa   # ;
-
-           +Foc/ko:%>ko        # ;
-
-   +Foc/ko+Foc/han:%>ko%>han   # ;
-
-  +Foc/ko+Foc/kaan:%>ko%>kaan  # ;
-
-   +Foc/ko+Foc/kin:%>ko%>kin   # ;
-
-    +Foc/ko+Foc/pa:%>ko%>pa    # ;
-
-     +Foc/ko+Foc/s:%>ko%>s     # ;
-
-           +Foc/pa:%>pa        # ;
-
-   +Foc/pa+Foc/han:%>pa%>han   # ;
-
-  +Foc/pa+Foc/kaan:%>pa%>kaan  # ;
-
-   +Foc/pa+Foc/kin:%>pa%>kin   # ;
-
-    +Foc/pa+Foc/ko:%>pa%>ko    # ;
-
-     +Foc/pa+Foc/s:%>pa%>s     # ;
-
-
-LEXICON NOUN_ACRO_BACK_CLIT_OPT
-
- : #                   ;
-
- : NOUN_ACRO_BACK_CLIT ;
-
-
-LEXICON NOUN_ACRO_BACK_GENITIVE_IDEN
-
- +Pl+Gen:%>i%>den NOUN_ACRO_BACK_CLIT_OPT ;
-
- +Pl+Gen:%>i%>de  NOUN_ACRO_BACK_POSS     ;
-
-
-LEXICON NOUN_ACRO_BACK_GENITIVE_IEN
-
- +Pl+Gen:%>i%>en NOUN_ACRO_BACK_CLIT_OPT ;
-
- +Pl+Gen:%>i%>e  NOUN_ACRO_BACK_POSS     ;
-
-
-LEXICON NOUN_ACRO_BACK_GENITIVE_ITTEN
-
- +Pl+Gen:%>i%>tten NOUN_ACRO_BACK_CLIT_OPT ;
-
- +Pl+Gen:%>i%>tte  NOUN_ACRO_BACK_POSS     ;
-
-
-LEXICON NOUN_ACRO_BACK_GENITIVE_JEN
-
- +Pl+Gen:%>j%>en NOUN_ACRO_BACK_CLIT_OPT ;
-
- +Pl+Gen:%>j%>e  NOUN_ACRO_BACK_POSS     ;
-
-
-LEXICON NOUN_ACRO_BACK_ILLATIVE_AN
-
- +Sg+Ill:a%>an NOUN_ACRO_BACK_CLIT_OPT ;
-
- +Sg+Ill:a%>a  NOUN_ACRO_BACK_POSS     ;
-
-
-LEXICON NOUN_ACRO_BACK_ILLATIVE_EN
-
- +Sg+Ill:e%>en NOUN_ACRO_BACK_CLIT_OPT ;
-
- +Sg+Ill:e%>e  NOUN_ACRO_BACK_POSS     ;
-
-
-LEXICON NOUN_ACRO_BACK_ILLATIVE_HAN
-
- +Sg+Ill:%>han NOUN_ACRO_BACK_CLIT_OPT ;
-
- +Sg+Ill:%>ha  NOUN_ACRO_BACK_POSS     ;
-
-
-LEXICON NOUN_ACRO_BACK_ILLATIVE_HON
-
- +Sg+Ill:%>hon NOUN_ACRO_BACK_CLIT_OPT ;
-
- +Sg+Ill:%>ho  NOUN_ACRO_BACK_POSS     ;
-
-
-LEXICON NOUN_ACRO_BACK_ILLATIVE_HUN
-
- +Sg+Ill:%>hun NOUN_ACRO_BACK_CLIT_OPT ;
-
- +Sg+Ill:%>hu  NOUN_ACRO_BACK_POSS     ;
-
-
-LEXICON NOUN_ACRO_BACK_ILLATIVE_IIN
-
- +Pl+Ill:%>i%>in NOUN_ACRO_BACK_CLIT_OPT ;
-
- +Pl+Ill:%>i%>i  NOUN_ACRO_BACK_POSS     ;
-
-
-LEXICON NOUN_ACRO_BACK_ILLATIVE_IN
-
- +Sg+Ill:i%>in NOUN_ACRO_BACK_CLIT_OPT ;
-
- +Sg+Ill:i%>i  NOUN_ACRO_BACK_POSS     ;
-
-
-LEXICON NOUN_ACRO_BACK_ILLATIVE_ON
-
- +Sg+Ill:o%>on NOUN_ACRO_BACK_CLIT_OPT ;
-
- +Sg+Ill:o%>o  NOUN_ACRO_BACK_POSS     ;
-
-
-LEXICON NOUN_ACRO_BACK_ILLATIVE_SEEN
-
- +Sg+Ill:%>seen NOUN_ACRO_BACK_CLIT_OPT ;
-
- +Sg+Ill:%>see  NOUN_ACRO_BACK_POSS     ;
-
-
-LEXICON NOUN_ACRO_BACK_PARTITIVE_A
-
- +Sg+Par:%>a NOUN_ACRO_BACK_POSS_AN_OPT ;
-
-
-LEXICON NOUN_ACRO_BACK_PARTITIVE_IA
-
- +Pl+Par:%>i%>a NOUN_ACRO_BACK_POSS_AN_OPT ;
-
-
-LEXICON NOUN_ACRO_BACK_PARTITIVE_ITA
-
- +Pl+Par:%>i%>ta NOUN_ACRO_BACK_POSS_AN_OPT ;
-
-
-LEXICON NOUN_ACRO_BACK_PARTITIVE_JA
-
- +Pl+Par:%>j%>a NOUN_ACRO_BACK_POSS_AN_OPT ;
-
-
-LEXICON NOUN_ACRO_BACK_PARTITIVE_TA
-
- +Sg+Par:%>ta NOUN_ACRO_BACK_POSS_AN_OPT ;
-
-
-LEXICON NOUN_ACRO_BACK_PLURALS
-
- +Pl+Abe:%>i%>tta NOUN_ACRO_BACK_POSS_AN_OPT   ;
-
- +Pl+Abl:%>i%>lta NOUN_ACRO_BACK_POSS_AN_OPT   ;
-
- +Pl+Ade:%>i%>lla NOUN_ACRO_BACK_POSS_AN_OPT   ;
-
- +Pl+All:%>i%>lle NOUN_ACRO_BACK_POSS_EN_OPT   ;
-
- +Pl+Ela:%>i%>sta NOUN_ACRO_BACK_POSS_AN_OPT   ;
-
- +Pl+Ess:%>i%>na  NOUN_ACRO_BACK_POSS_AN_OPT   ;
-
- +Pl+Ill:%>i%>hin NOUN_ACRO_BACK_POSS_CLIT_OPT ;
-
- +Pl+Ine:%>i%>ssa NOUN_ACRO_BACK_POSS_AN_OPT   ;
-
- +Pl+Ins:%>i%>n   NOUN_ACRO_BACK_CLIT_OPT      ;
-
- +Pl+Tra:%>i%>kse NOUN_ACRO_BACK_POSS_EN_OBL   ;
-
- +Pl+Tra:%>i%>ksi NOUN_ACRO_BACK_CLIT_OPT      ;
-
-    +Com:%>ine    NOUN_ACRO_BACK_POSS_EN_OPT   ;
-
-
-LEXICON NOUN_ACRO_BACK_POSS
-
-   +Px3:%>nsa NOUN_ACRO_BACK_CLIT_OPT ;
-
- +PxPl1:%>mme NOUN_ACRO_BACK_CLIT_OPT ;
-
- +PxPl2:%>nne NOUN_ACRO_BACK_CLIT_OPT ;
-
- +PxSg1:%>ni  NOUN_ACRO_BACK_CLIT_OPT ;
-
- +PxSg2:%>si  NOUN_ACRO_BACK_CLIT_OPT ;
-
-
-LEXICON NOUN_ACRO_BACK_POSS_AN
-
- +Px3:%>an NOUN_ACRO_BACK_CLIT_OPT ;
-
-
-LEXICON NOUN_ACRO_BACK_POSS_AN_OPT
-
- : NOUN_ACRO_BACK_POSS    ;
-
- : NOUN_ACRO_BACK_POSS_AN ;
-
- : NOUN_ACRO_BACK_CLIT    ;
-
- : #                      ;
-
-
-LEXICON NOUN_ACRO_BACK_POSS_CLIT_OPT
-
- : NOUN_ACRO_BACK_POSS ;
-
- : NOUN_ACRO_BACK_CLIT ;
-
- : #                   ;
-
-
-LEXICON NOUN_ACRO_BACK_POSS_EN
-
- +Px3:%>en NOUN_ACRO_BACK_CLIT_OPT ;
-
-
-LEXICON NOUN_ACRO_BACK_POSS_EN_OBL
-
- : NOUN_ACRO_BACK_POSS    ;
-
- : NOUN_ACRO_BACK_POSS_EN ;
-
-
-LEXICON NOUN_ACRO_BACK_POSS_EN_OPT
-
- : NOUN_ACRO_BACK_POSS    ;
-
- : NOUN_ACRO_BACK_POSS_EN ;
-
- : NOUN_ACRO_BACK_CLIT    ;
-
- : #                      ;
-
-
-LEXICON NOUN_ACRO_BACK_SG_NOM
-
- +Sg+Nom: # ;
-
-
-LEXICON NOUN_ACRO_BACK_SINGULARS
-
- +Pl+Nom:%>t   NOUN_ACRO_BACK_CLIT_OPT    ;
-
- +Sg+Abe:%>tta NOUN_ACRO_BACK_POSS_AN_OPT ;
-
- +Sg+Abl:%>lta NOUN_ACRO_BACK_POSS_AN_OPT ;
-
- +Sg+Ade:%>lla NOUN_ACRO_BACK_POSS_AN_OPT ;
-
- +Sg+All:%>lle NOUN_ACRO_BACK_POSS_EN_OPT ;
-
- +Sg+Ela:%>sta NOUN_ACRO_BACK_POSS_AN_OPT ;
-
- +Sg+Ess:%>na  NOUN_ACRO_BACK_POSS_AN_OPT ;
-
- +Sg+Gen:%>n   NOUN_ACRO_BACK_CLIT_OPT    ;
-
- +Sg+Ine:%>ssa NOUN_ACRO_BACK_POSS_AN_OPT ;
-
- +Sg+Nom:      #                          ;
-
- +Sg+Nom:%>    NOUN_ACRO_BACK_POSS        ;
-
- +Sg+Nom:%>    NOUN_ACRO_BACK_CLIT        ;
-
- +Sg+Par:%>ta  NOUN_ACRO_BACK_POSS_AN_OPT ;
-
- +Sg+Tra:%>kse NOUN_ACRO_BACK_POSS_EN_OBL ;
-
- +Sg+Tra:%>ksi NOUN_ACRO_BACK_CLIT_OPT    ;
-
-
-LEXICON NOUN_ACRO_COMPOUND
-
- +TruncPrefix:- #         ;
-
-            #:- NOUN      ;
-
-            #:- ADJECTIVE ;
-
-            #:- SUFFIX    ;
-
-
-LEXICON NOUN_ACRO_FRONT_CASES
-
- : NOUN_ACRO_FRONT_PLURALS   ;
-
- : NOUN_ACRO_FRONT_SINGULARS ;
-
-
-LEXICON NOUN_ACRO_FRONT_CLIT
-
-          +Foc/han:%>hän       # ;
-
- +Foc/han+Foc/kaan:%>hän%>kään # ;
-
-   +Foc/han+Foc/ko:%>hän%>kö   # ;
-
-   +Foc/han+Foc/pa:%>hän%>pä   # ;
-
-         +Foc/kaan:%>kään      # ;
-
- +Foc/kaan+Foc/han:%>kään%>hän # ;
-
- +Foc/kaan+Foc/kin:%>kään%>kin # ;
-
-  +Foc/kaan+Foc/ko:%>kään%>kö  # ;
-
-  +Foc/kaan+Foc/pa:%>kään%>pä  # ;
-
-          +Foc/kin:%>kin       # ;
-
-  +Foc/kin+Foc/han:%>kin%>hän  # ;
-
- +Foc/kin+Foc/kaan:%>kin%>kään # ;
-
-   +Foc/kin+Foc/ko:%>kin%>kö   # ;
-
-   +Foc/kin+Foc/pa:%>kin%>pä   # ;
-
-           +Foc/ko:%>kö        # ;
-
-   +Foc/ko+Foc/han:%>kö%>hän   # ;
-
-  +Foc/ko+Foc/kaan:%>kö%>kään  # ;
-
-   +Foc/ko+Foc/kin:%>kö%>kin   # ;
-
-    +Foc/ko+Foc/pa:%>kö%>pä    # ;
-
-     +Foc/ko+Foc/s:%>kö%>s     # ;
-
-           +Foc/pa:%>pä        # ;
-
-   +Foc/pa+Foc/han:%>pä%>hän   # ;
-
-  +Foc/pa+Foc/kaan:%>pä%>kään  # ;
-
-   +Foc/pa+Foc/kin:%>pä%>kin   # ;
-
-    +Foc/pa+Foc/ko:%>pä%>kö    # ;
-
-     +Foc/pa+Foc/s:%>pä%>s     # ;
-
-
-LEXICON NOUN_ACRO_FRONT_CLIT_OPT
-
- : #                    ;
-
- : NOUN_ACRO_FRONT_CLIT ;
-
-
-LEXICON NOUN_ACRO_FRONT_GENITIVE_IDEN
-
- +Pl+Gen:%>i%>den NOUN_ACRO_FRONT_CLIT_OPT ;
-
- +Pl+Gen:%>i%>de  NOUN_ACRO_FRONT_POSS     ;
-
-
-LEXICON NOUN_ACRO_FRONT_GENITIVE_IEN
-
- +Pl+Gen:%>i%>en NOUN_ACRO_FRONT_CLIT_OPT ;
-
- +Pl+Gen:%>i%>e  NOUN_ACRO_FRONT_POSS     ;
-
-
-LEXICON NOUN_ACRO_FRONT_GENITIVE_ITTEN
-
- +Pl+Gen:%>i%>tten NOUN_ACRO_FRONT_CLIT_OPT ;
-
- +Pl+Gen:%>i%>tte  NOUN_ACRO_FRONT_POSS     ;
-
-
-LEXICON NOUN_ACRO_FRONT_GENITIVE_JEN
-
- +Pl+Gen:%>j%>en NOUN_ACRO_FRONT_CLIT_OPT ;
-
- +Pl+Gen:%>j%>e  NOUN_ACRO_FRONT_POSS     ;
-
-
-LEXICON NOUN_ACRO_FRONT_ILLATIVE_EN
-
- +Sg+Ill:e%>en NOUN_ACRO_FRONT_CLIT_OPT ;
-
- +Sg+Ill:e%>e  NOUN_ACRO_FRONT_POSS     ;
-
-
-LEXICON NOUN_ACRO_FRONT_ILLATIVE_HEN
-
- +Sg+Ill:%>hen NOUN_ACRO_FRONT_CLIT_OPT ;
-
- +Sg+Ill:%>he  NOUN_ACRO_FRONT_POSS     ;
-
-
-LEXICON NOUN_ACRO_FRONT_ILLATIVE_HIN
-
- +Sg+Ill:%>hin NOUN_ACRO_FRONT_CLIT_OPT ;
-
- +Sg+Ill:%>hi  NOUN_ACRO_FRONT_POSS     ;
-
-
-LEXICON NOUN_ACRO_FRONT_ILLATIVE_HYN
-
- +Sg+Ill:%>hyn NOUN_ACRO_FRONT_CLIT_OPT ;
-
- +Sg+Ill:%>hy  NOUN_ACRO_FRONT_POSS     ;
-
-
-LEXICON NOUN_ACRO_FRONT_ILLATIVE_HÄN
-
- +Sg+Ill:%>hän NOUN_ACRO_FRONT_CLIT_OPT ;
-
- +Sg+Ill:%>hä  NOUN_ACRO_FRONT_POSS     ;
-
-
-LEXICON NOUN_ACRO_FRONT_ILLATIVE_HÖN
-
- +Sg+Ill:%>hön NOUN_ACRO_FRONT_CLIT_OPT ;
-
- +Sg+Ill:%>hö  NOUN_ACRO_FRONT_POSS     ;
-
-
-LEXICON NOUN_ACRO_FRONT_ILLATIVE_IIN
-
- +Pl+Ill:%>i%>in NOUN_ACRO_FRONT_CLIT_OPT ;
-
- +Pl+Ill:%>i%>i  NOUN_ACRO_FRONT_POSS     ;
-
-
-LEXICON NOUN_ACRO_FRONT_ILLATIVE_IN
-
- +Sg+Ill:i%>in NOUN_ACRO_FRONT_CLIT_OPT ;
-
- +Sg+Ill:i%>i  NOUN_ACRO_FRONT_POSS     ;
-
-
-LEXICON NOUN_ACRO_FRONT_ILLATIVE_ÄN
-
- +Sg+Ill:ä%>än NOUN_ACRO_FRONT_CLIT_OPT ;
-
- +Sg+Ill:ä%>ä  NOUN_ACRO_FRONT_POSS     ;
-
-
-LEXICON NOUN_ACRO_FRONT_ILLATIVE_ÖN
-
- +Sg+Ill:ö%>ön NOUN_ACRO_FRONT_CLIT_OPT ;
-
- +Sg+Ill:ö%>ö  NOUN_ACRO_FRONT_POSS     ;
-
-
-LEXICON NOUN_ACRO_FRONT_PARTITIVE_ITÄ
-
- +Pl+Par:%>i%>tä NOUN_ACRO_FRONT_POSS_ÄN_OPT ;
-
-
-LEXICON NOUN_ACRO_FRONT_PARTITIVE_IÄ
-
- +Pl+Par:%>i%>ä NOUN_ACRO_FRONT_POSS_ÄN_OPT ;
-
-
-LEXICON NOUN_ACRO_FRONT_PARTITIVE_JÄ
-
- +Pl+Par:%>j%>ä NOUN_ACRO_FRONT_POSS_ÄN_OPT ;
-
-
-LEXICON NOUN_ACRO_FRONT_PARTITIVE_TÄ
-
- +Sg+Par:%>tä NOUN_ACRO_FRONT_POSS_ÄN_OPT ;
-
-
-LEXICON NOUN_ACRO_FRONT_PARTITIVE_Ä
-
- +Sg+Par:%>ä NOUN_ACRO_FRONT_POSS_ÄN_OPT ;
-
-
-LEXICON NOUN_ACRO_FRONT_PLURALS
-
- +Pl+Abe:%>i%>ttä NOUN_ACRO_FRONT_POSS_ÄN_OPT   ;
-
- +Pl+Abl:%>i%>ltä NOUN_ACRO_FRONT_POSS_ÄN_OPT   ;
-
- +Pl+Ade:%>i%>llä NOUN_ACRO_FRONT_POSS_ÄN_OPT   ;
-
- +Pl+All:%>i%>lle NOUN_ACRO_FRONT_POSS_EN_OPT   ;
-
- +Pl+Ela:%>i%>stä NOUN_ACRO_FRONT_POSS_ÄN_OPT   ;
-
- +Pl+Ess:%>i%>nä  NOUN_ACRO_FRONT_POSS_ÄN_OPT   ;
-
- +Pl+Ill:%>i%>hin NOUN_ACRO_FRONT_POSS_CLIT_OPT ;
-
- +Pl+Ine:%>i%>ssä NOUN_ACRO_FRONT_POSS_ÄN_OPT   ;
-
- +Pl+Ins:%>i%>n   NOUN_ACRO_FRONT_CLIT_OPT      ;
-
- +Pl+Tra:%>i%>kse NOUN_ACRO_FRONT_POSS_EN_OBL   ;
-
- +Pl+Tra:%>i%>ksi NOUN_ACRO_FRONT_CLIT_OPT      ;
-
-    +Com:%>i%>ne  NOUN_ACRO_FRONT_POSS_EN_OPT   ;
-
-
-LEXICON NOUN_ACRO_FRONT_POSS
-
-   +Px3:%>nsä NOUN_ACRO_FRONT_CLIT_OPT ;
-
- +PxPl1:%>mme NOUN_ACRO_FRONT_CLIT_OPT ;
-
- +PxPl2:%>nne NOUN_ACRO_FRONT_CLIT_OPT ;
-
- +PxSg1:%>ni  NOUN_ACRO_FRONT_CLIT_OPT ;
-
- +PxSg2:%>si  NOUN_ACRO_FRONT_CLIT_OPT ;
-
-
-LEXICON NOUN_ACRO_FRONT_POSS_CLIT_OPT
-
- : NOUN_ACRO_FRONT_POSS ;
-
- : NOUN_ACRO_FRONT_CLIT ;
-
- : #                    ;
-
-
-LEXICON NOUN_ACRO_FRONT_POSS_EN
-
- +Px3:%>en NOUN_ACRO_FRONT_CLIT_OPT ;
-
-
-LEXICON NOUN_ACRO_FRONT_POSS_EN_OBL
-
- : NOUN_ACRO_FRONT_POSS    ;
-
- : NOUN_ACRO_FRONT_POSS_EN ;
-
-
-LEXICON NOUN_ACRO_FRONT_POSS_EN_OPT
-
- : NOUN_ACRO_FRONT_POSS    ;
-
- : NOUN_ACRO_FRONT_POSS_EN ;
-
- : NOUN_ACRO_FRONT_CLIT    ;
-
- : #                       ;
-
-
-LEXICON NOUN_ACRO_FRONT_POSS_ÄN
-
- +Px3:%>än NOUN_ACRO_FRONT_CLIT_OPT ;
-
-
-LEXICON NOUN_ACRO_FRONT_POSS_ÄN_OPT
-
- : NOUN_ACRO_FRONT_POSS    ;
-
- : NOUN_ACRO_FRONT_POSS_ÄN ;
-
- : NOUN_ACRO_FRONT_CLIT    ;
-
- : #                       ;
-
-
-LEXICON NOUN_ACRO_FRONT_SG_NOM
-
- +Sg+Nom: # ;
-
-
-LEXICON NOUN_ACRO_FRONT_SINGULARS
-
- +Pl+Nom:%>t   NOUN_ACRO_FRONT_CLIT_OPT    ;
-
- +Sg+Abe:%>ttä NOUN_ACRO_FRONT_POSS_ÄN_OPT ;
-
- +Sg+Abl:%>ltä NOUN_ACRO_FRONT_POSS_ÄN_OPT ;
-
- +Sg+Ade:%>llä NOUN_ACRO_FRONT_POSS_ÄN_OPT ;
-
- +Sg+All:%>lle NOUN_ACRO_FRONT_POSS_EN_OPT ;
-
- +Sg+Ela:%>stä NOUN_ACRO_FRONT_POSS_ÄN_OPT ;
-
- +Sg+Ess:%>nä  NOUN_ACRO_FRONT_POSS_ÄN_OPT ;
-
- +Sg+Gen:%>n   NOUN_ACRO_FRONT_CLIT_OPT    ;
-
- +Sg+Ine:%>ssä NOUN_ACRO_FRONT_POSS_ÄN_OPT ;
-
- +Sg+Nom:%>    NOUN_ACRO_FRONT_POSS        ;
-
- +Sg+Nom:%>    NOUN_ACRO_FRONT_CLIT        ;
-
- +Sg+Tra:%>kse NOUN_ACRO_FRONT_POSS_EN_OBL ;
-
- +Sg+Tra:%>ksi NOUN_ACRO_FRONT_CLIT_OPT    ;
-
-LEXICON NOUN_BACK_SINGULARS_ARCHAIC
-
- +Pl+Nom+Use/Arch:%>t   NOUN_BACK_CLIT_OPT    ;
-
- +Pl+Nom+Use/Arch:      NOUN_BACK_POSS        ;
-
- +Sg+Abe+Use/Arch:%>tta NOUN_BACK_POSS_AN_OPT ;
-
- +Sg+Abl+Use/Arch:%>lta NOUN_BACK_POSS_AN_OPT ;
-
- +Sg+Ade+Use/Arch:%>lla NOUN_BACK_POSS_AN_OPT ;
-
- +Sg+All+Use/Arch:%>lle NOUN_BACK_POSS_EN_OPT ;
-
- +Sg+Ela+Use/Arch:%>sta NOUN_BACK_POSS_AN_OPT ;
-
- +Sg+Ess+Use/Arch:%>na  NOUN_BACK_POSS_AN_OPT ;
-
- +Sg+Gen+Use/Arch:%>n   NOUN_BACK_CLIT_OPT    ;
-
- +Sg+Gen+Use/Arch:      NOUN_BACK_POSS        ;
-
- +Sg+Ill+Use/Arch:%>sen NOUN_BACK_CLIT_OPT    ;
-
- +Sg+Ine+Use/Arch:%>ssa NOUN_BACK_POSS_AN_OPT ;
-
- +Sg+Nom+Use/Arch:      NOUN_BACK_POSS        ;
-
- +Sg+Tra+Use/Arch:%>kse NOUN_BACK_POSS_EN_OBL ;
-
- +Sg+Tra+Use/Arch:%>ksi NOUN_BACK_CLIT_OPT    ;
-
- +Sg+Tra+Use/Arch:%>ksi NOUN_BACK_CLIT_OPT    ;
-
-
-
-
-!vim: set ft=xfst-lexc:
+! ======================
+! Sublexica for NounRoot
+! ======================
+
+
+LEXICON 1 ! valo
+ +N: strong-v-stem ;
+ +N:X4 weak-v-stem ;
+ +N: short-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 shortillpl ;
+
+LEXICON 2 ! palvelu
+ +N: strong-v-stem ;
+ +N:X4 weak-v-stem ;
+ +N: short-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:%>i2 longgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 longparpl ;
+ +N+Pl:%>i2 shortillpl ;
+
+LEXICON 3 ! valtio
+ +N: strong-v-stem ;
+ +N:X4 weak-v-stem ;
+ +N: long-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 longgenpl ;
+ +N+Pl:%>i2 longparpl ;
+ +N+Pl:%>i2 shortillpl ;
+
+LEXICON 4 ! laatikko 
+ +N: strong-v-stem ;
+ +N:X4 weak-v-stem ;
+ +N: short-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:X4%>i2 longgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 longparpl ;	
+ +N+Pl:X4%>i2 shortillpl ; ! laatikoihin   !does not work
+ +N+Pl:%>i2 shortillpl ;  ! laatikkoihin
+
+LEXICON 5 ! risti
+ +N: strong-v-stem ;
+ +N:X4 weak-v-stem ;
+ +N: short-par ;
+ +N: short-ill ;
+ +N+Pl:Z2%>i2 shortgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 shortillpl ;
+
+LEXICON 6 ! paperi, banaani
+ +N: strong-v-stem ;
+ +N:X4 weak-v-stem ;
+ +N: short-par ;
+ +N: short-ill ;
+ +N+Pl:Z2%>i2 shortgenpl ; ! *paperejen paperien
+ +N+Pl:%>i2 longgenpl ;
+ +N+Pl:%>i2 shortparpl ; ! *papereja but banaaneja
+ +N+Pl:%>i2 longparpl ;
+ +N+Pl:%>i2 shortillpl ;
+! PSK conflates paperi and banaani, we must thus
+! live with errouneous papereja to get banaaneja.
+
+
+LEXICON 7 ! ovi
+ +N:Z1 nom-strong ; ! 
+ +N: gae-strong ;
+ +N+Sg:%>i2 com ;
+ +N+Pl:%>i2 com ;
+ +N:X1 weak-v-stem ;
+ +N: short-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 shorterillpl ;
+
+LEXICON 8 ! nalle
+ +N:%^¤ strong-v-stem ;
+ +N:X4 weak-v-stem ;
+ +N: short-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+! +N+Pl:%>i2 oldgenpl ; !nallin
+ +N+Pl:%^¤%>i2 shortparpl ;
+ +N+Pl:%>i2 shortillpl ;
+
+LEXICON 9 ! kala
+ +N: nom-strong ;
+ +Sg+Nom: Px ;
+ +Sg+Gen: Px ;
+ +Sg+Acc: Px ;
+ +Sg+Ess:%>n%^A PxxK ;
+ +Pl+Ess:Y3%>i2%>n%^A PxxK ;
+ +N+Sg:Y3%>i2 com ;
+ +N+Pl:Y3%>i2 com ;
+ +N:Y1 weak-v-stem ;
+ +N: short-par ;
+ +N: short-ill ;
+ +N+Pl:Y3%>i2 shortgenpl ;
+ +N+Pl:Y3%>i2 oldgenpl ;
+ +N+Pl:Y3%>i2 shortparpl ;
+ +N+Pl:Y3%>i2 shortillpl ;
+
+
+LEXICON 10 ! koira = 9, the diff is in twol-fin
+ +N: nom-strong ;
+ +Sg+Nom: Px ;
+ +Sg+Gen: Px ;
+ +Sg+Acc: Px ;
+ +Sg+Ess:%>n%^A PxxK ;
+ +Pl+Ess:Y2%>i2%>n%^A PxxK ;
+ +N+Sg:Y2%>i2 com ;
+ +N+Pl:Y2%>i2 com ;
+ +N:X2 weak-v-stem ;
+ +N: short-par ;
+ +N: short-ill ;
+ +N+Pl:Y2%>i2 shortgenpl ;
+ +N+Pl:Y2%>i2 oldgenpl ;
+ +N+Pl:Y2%>i2 shortparpl ;
+ +N+Pl:Y2%>i2 shorterillpl ;
+
+LEXICON 11 ! omena
+ +N: strong-v-stem ;
+ +N:X4 weak-v-stem ;
+ +N: short-par ;
+ +N: short-ill ;
+ +N+Pl:Y2%>i2 shortgenpl ;
+ +N+Pl:Y3%>i2 longgenpl ;
+ +N+Pl:%>i2 oldgenpl ;
+ +N+Pl:Y2%>i2 shortparpl ;
+ +N+Pl:Y2%>i2 shortillpl ;
+ +N+Pl:Y3%>i2 shorterillpl ;
+
+LEXICON 12 ! kulkija
+ +N: strong-v-stem ;
+ +N:X4 weak-v-stem ;
+ +N: short-par ;
+ +N: short-ill ;
+ +N+Pl:Y3%>i2 longgenpl ;
+ +N+Pl:%>i2 oldgenpl ;
+ +N+Pl:Y3%>i2 longparpl ;
+ +N+Pl:Y3%>i2 shortillpl ;
+
+LEXICON 13 ! katiska
+ +N: strong-v-stem ;
+ +N:X4 weak-v-stem ;
+ +N: short-par ;
+ +N: short-ill ;
+ +N+Pl:Y3%>i2 shortgenpl ;
+ +N+Pl:Y3%>i2 longgenpl ;
+ +N+Pl:%>i2 oldgenpl ;
+ +N+Pl:Y3%>i2 longparpl ;
+ +N+Pl:Y3%>i2 shortparpl ;
+ +N+Pl:Y3%>i2 shortillpl ;
+
+LEXICON 18 ! maa (not complete)
+ +N: strong-v-stem ;
+ +N: weak-v-stem ;
+ +N: long-par ;
+ +N: long-ill ;
+ +N+Pl:%>i2 longgenpl ;
+ +N+Pl:%>i2 longparpl ;
+ +N+Pl:%>i2 shortillpl ;
+
+LEXICON 19 ! suo
+ +N: strong-v-stem ;
+ +N: weak-v-stem ;
+ +N: long-par ;
+ +N: long-ill ;
+ +N+Pl:%>i2 longgenpl ;
+ +N+Pl:%>i2 longparpl ;
+ +N+Pl:%>i2 shortillpl ;
+
+LEXICON 20 ! filee
+ +N: strong-v-stem ;
+ +N: weak-v-stem ;
+ +N: long-par ;
+ +N: long-ill ;
+ +N: longer-ill ;
+ +N+Pl:%>i2 longgenpl ;
+ +N+Pl:%>i2 longparpl ;
+ +N+Pl:%>i2 shortillpl ;
+ +N+Pl:%>i2 longerillpl ;
+
+LEXICON 21 ! rosé
+ +N: strong-v-stem ;
+ +N: weak-v-stem ;
+ +N: long-par ;
+ +N: long-ill ;
+ +N+Pl:%>i2 d-longgenpl ;
+ +N+Pl:%>i2 longparpl ;
+ +N+Pl:%>i2 shortillpl ;
+
+LEXICON 22 ! parfait
+ +N:'Y4 strong-v-stem ;
+ +N:' weak-v-stem ;
+ +N:' long-par ;
+ +N:' long-ill ;
+ +N+Pl:'%>i2 d-longgenpl ;
+ +N+Pl:'%>i2 longparpl ;
+ +N+Pl:'%>i2 shortillpl ;
+
+LEXICON 24 ! uni
+ +N:Z1 nom-strong ;
+ +N: gae-strong ;
+ +N+Sg:%>i2 com ;
+ +N+Pl:%>i2 com ;
+ +N:X1 weak-v-stem ;
+ +N:Y5 long-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:Y5 consgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 shorterillpl ;
+
+LEXICON 25 ! toimi
+ +N:Z1 nom-strong ;
+ +N: gae-strong ;
+ +N+Sg:%>i2 com ;
+ +N+Pl:%>i2 com ;
+ +N:X1 weak-v-stem ;
+ +N:Y5 long-par ; ! tointa
+ +N: short-par ; ! toimea
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:Y5 consgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 shorterillpl ;
+
+LEXICON 27 ! käsi
+ +N:Z1 nom-strong ; ! käsi
+ +N: gae-strong ; ! kätenä
+ +N+Sg:%>i2 com ; ! käsineen
+ +N+Pl:%>i2 com ;
+ +N:X4 weak-v-stem ; ! käden
+ +N:Y7 long-par ; ! kättä
+ +N: short-ill ; ! käteen
+ +N+Pl:%>i2 shortgenpl ; ! käsien
+ +N+Pl:Y7 consgenpl ; ! kätten
+ +N+Pl:%>i2 shortparpl ; !käsiä
+ +N+Pl:%>i2 shorterillpl ; ! käsiin
+
+
+LEXICON 28 ! kynsi
+ +N: nom-strong ;
+ +N: gae-strong ;
+ +N+Sg:%>i2 com ;
+ +N+Pl:%>i2 com ;
+ +N:X4 weak-v-stem ;
+ +N:Y7 long-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:Y5 consgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 shorterillpl ;
+
+
+LEXICON 29 ! lapsi
+ +N: nom-strong ;
+ +N: gae-strong ;
+ +N+Sg:%>i2 com ;
+ +N+Pl:%>i2 com ;
+ +N: weak-v-stem ;
+ +N:Y5 long-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:Y5 consgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 shorterillpl ;
+
+LEXICON 30 ! veitsi
+ 29 ;
+ ! why is 30 a separate lexicon?
+ ! PS has lasten, lapsien but
+ ! veitsien, veisten. Thus, the same
+ ! forms, but a different order (!)
+
+LEXICON 32 ! sisar 
+ +N: nom-strong ;
+ +N: gae-strong ;
+ +N+Sg:%>i2 com ;
+ +N+Pl:%>i2 com ;
+ +N: weak-v-stem ;
+ +N:Y5 long-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:Y5 consgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 shorterillpl ;
+
+LEXICON 33 ! kytkin
+ +N: nom-strong ;
+ +N: gae-strong ;
+ +N+Sg:%>i2 com ;
+ +N+Pl:%>i2 com ;
+ +N: weak-v-stem ;
+ +N:Y5 long-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:Y5 consgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 shorterillpl ;
+
+LEXICON 38 ! nainen
+ +N: nom-strong ;
+ +N: gae-strong ;
+ +N+Sg:%>i2 com ;
+ +N+Pl:%>i2 com ;
+ +N: weak-v-stem ;
+ +N:Y5 long-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:Y5 consgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 shorterillpl ;
+
+LEXICON 39 ! vastaus
+ +N: nom-strong ;
+ +N: gae-strong ;
+ +N+Sg:%>i2 com ;
+ +N+Pl:%>i2 com ;
+ +N: weak-v-stem ;
+ +N:Y5 long-par ;
+ +N: short-ill ;
+ +N+Pl:%>i2 shortgenpl ;
+ +N+Pl:Y5 consgenpl ;
+ +N+Pl:%>i2 shortparpl ;
+ +N+Pl:%>i2 shorterillpl ;
+
+!LEXICON 40 ! kalleus
+!#;
+
+!LEXICON 41 ! vieras
+
+!LEXICON 42 ! mies
+
+!LEXICON 43 ! ohut
+
+!LEXICON 44 ! kevät
+
+!LEXICON 45 ! ! kahdeksas
+
+!LEXICON 46 ! tuhat
+
+!LEXICON 47 ! kuollut
+
+!LEXICON 48 ! hame
+
+!LEXICON 49 ! askel
+
+!LEXICON 50 ! isoäiti
+! 5 ; ! "iso" is not inflected.
+
+!LEXICON 51 ! nuoripari
+! nuorenparin
+! nuortaparia
+! nuoreenpariin
+! This is problematic, we need flags.
+
+
+
+
+
+
+
+! Basic paradigms
+! ===============
+
+! Basic vowel stems
+! -----------------
+
+LEXICON strong-v-stem
+ nom-strong ;
+ gae-strong ;
+ +Sg:%>i2 com ;
+ +Pl:%>i2 com ;
+
+LEXICON weak-v-stem
+ +Sg+Gen:%>n K ;
+ +Sg+Acc:%>n K ;
+ +Pl+Nom:%>t K ;
+ +Pl+Acc:%>t K ;
+ +Sg: sgpl-cases ;     ! these two lexica for cases with
+ +Pl:%>i2 sgpl-cases ; ! the same affix in sg and pl
+ +Pl+Ins:%>i2%>n K ;   ! Marginal case, in use only for some words.
+                       ! Todo: identify these, and remove Ins from the
+                       ! general weak-v-stem lexicon.
+
+
+! Sublexica for the vowel stems
+! - - - - - - - - - - - - - - - 
+
+LEXICON nom-strong
+ +Sg+Nom: K ;
+
+LEXICON gae-strong
+ +Sg+Nom: Px ;  ! mattoni
+ +Sg+Gen: Px ;  ! mattoni
+ +Sg+Acc: Px ;  ! mattoni
+ +Pl+Nom: Px ;  ! mattoni
+ +Pl+Acc: Px ;  ! mattoni
+ +Sg+Ess:%>n%^A PxxK ;
+ +Pl+Ess:%>i2%>n%^A PxxK ;
+ 
+LEXICON sgpl-cases
+ +Ine:%>ss%^A PxxK ;
+ +Ela:%>st%^A PxxK ;
+ +Ade:%>ll%^A PxxK ;
+ +All:%>lle PxxK ;
+ +Abl:%>lt%^A PxxK ;
+ +Tra:%>ksi K ;
+ +Tra:%>kse Pxx ;
+ +Abe:%>tt%^A PxxK ;
+
+LEXICON com
+ +Com:%>ne Pxx ; ! Not to K, since Px must be present
+                 ! Note that adjectives have -ine without Px
+
+
+! Lexica for the non-uniform cases
+! --------------------------------
+
+LEXICON short-par
+ +Sg+Par:%>%^A PxxK ;
+! does not handle valoaan vs. *salaaan
+
+LEXICON long-par
+ +Sg+Par:%>t%^A PxxK ;
+
+LEXICON short-ill
+ +Sg+Ill:%>%^V n-PxK ;
+
+LEXICON long-ill
+ +Sg+Ill:%>h%^V n-PxK ;
+
+LEXICON longer-ill
+ +Sg+Ill:%>s%^V%^V n-PxK ;
+
+LEXICON oldgenpl
+ +Gen:%> n-PxK ;
+
+LEXICON shortgenpl
+ +Gen:%>e n-PxK ;
+
+LEXICON longgenpl
+ d-longgenpl ;
+ tt-longgenpl ; 
+
+LEXICON d-longgenpl
+ +Gen:%>de n-PxK ;
+
+LEXICON tt-longgenpl
+ +Gen:%>tte n-PxK ;
+
+LEXICON consgenpl
+ +Gen:%>te n-PxK ;
+
+LEXICON shortparpl
+ +Par:%>%^A PxxK ;
+
+LEXICON longparpl
+ +Par:%>%t^A PxxK ;
+
+LEXICON shortillpl
+ +Ill:%>hi n-PxK ;
+
+LEXICON shorterillpl
+ +Ill:%>i2 n-PxK ;		
+
+LEXICON longerillpl
+ +Pl+Ill:%>s%^V%^V n-PxK ;
+
+! Sublexica for possessive suffixes
+! ---------------------------------
+
+LEXICON n-PxK
+ :n K ;
+ Px ;
+
+LEXICON PxK ! only -nsA ! Currently not in use. Man dihte?
+ K ;
+ Px ;
+
+LEXICON PxxK ! also -Vn
+ K ;
+ Px ;
+ Px-Vn ;
+
+LEXICON Pxx
+ Px ;
+ Px-Vn ;
+
+LEXICON Px
+ +PxSg1:%>ni K ;
+ +PxSg2:%>si K ;
+ +PxSg3:%>ns%^A K ;
+ +PxPl1:%>mme K ;
+ +PxPl2:%>nne K ;
+ +PxPl3:%>ns%^A K ;
+
+
+LEXICON Px-Vn
+ +PxSg3:%>%^Vn K ;
+ +PxPl3:%>%^Vn K ;

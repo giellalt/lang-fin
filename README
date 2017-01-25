@@ -1,22 +1,12 @@
 .. -*- mode: rst -*-
-====================================================
- The Finnish Morphology and Tools
-====================================================
+========================================
+ The Finnish morphology and tools
+========================================
 
-This package contains free and open source implementation of morphological
-analysis for Finnish language. It uses GPL licenced HFST tools as
-implementation of morphological description. This package is licenced under GNU
-GPL version 3, but not necessarily later. Licence can be found from ``COPYING``
-file in root of the distribution package. Other licences are possible from
-authors named in the ``AUTHORS``.
-
-The lexical data has originated from omorfi_ and in there via
-`Nykysuomen sanalista <http://kaino.kotus.fi>`_ (LGPL),  `Joukahainen
-<http://joukahainen.lokalisointi.org>`_ (GPL) and `Finnwordnet
-<http://www.ling.helsinki.fi/research/finnwordnet>`_ (Princeton Wordnet licence
-/ GPL; relicenced with kind permission from University of Helsinki). Some words
-have also been collected by omorfi developers and contributors, and later by
-giellatekno contributors. See ``AUTHORS`` and ``THANKS``.
+This directory contains source files for the Finnish language morphology
+and dictionary. The data and implementation are licenced under __LICENCE__
+licence also detailed in the LICENCE file of this directory. The authors named
+in the AUTHORS file are available to grant other licencing choices.
 
 Installation and compilation, and a short note on usage, is documented in the
 file INSTALL.
