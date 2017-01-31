@@ -24,8 +24,8 @@
 # third is email address for bug reports
 # fourth is name of packages made by make dist, excluding .tar.gz
 # fifth is the project web address
-AC_INIT([giella-fin], [20120821], [flammie@iki.fi], [giella-fin],
-        [http://code.google.com/p/omorfi])
+AC_INIT([giella-fin], [20110617], [feedback@divvun.no], [giella-fin],
+        [http://divvun.no])
 # AC_REVISION is used to get SVN revision into bug reports
 AC_REVISION([$Revision$])
 # These configuration dirs hide some extra cruft
@@ -50,8 +50,12 @@ m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 ### It is possible to specify also subversion revision: 0.1.2-12345
 _giella_core_min_version=0.2.36
 
+### This is the version of the Giella Shared that we require. Update as needed.
+### It is possible to specify also subversion revision: 0.1.2-12345
+_giella_shared_min_version=0.1.1
+
 ### Required version of the Hfst tools:
-_required_hfst_version=3.9.2
+_required_hfst_version=3.12.0
 
 # Alternate writing system(s) should be listed here using the ISO 15924 code.
 # Multiple alternate WS's should be space separated. For a list of such codes
