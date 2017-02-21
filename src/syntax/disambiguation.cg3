@@ -1793,17 +1793,17 @@ REMOVE Sem_Human + Pl;
 # Particle verbs
 
 # mostly particle follows the verb, but have to check further if the previous-word condition is also needed
-SUBSTITUTE Adv AdvPcle Ottaa-pcle - AdvPcle (*-1 ("ottaa") BARRIER S-BOUNDARY) ; # mukaan, vastaan
-SUBSTITUTE Adv AdvPcle Jättaa-pcle - AdvPcle (*-1 ("jättää") BARRIER S-BOUNDARY) ; # väliin
-SUBSTITUTE Adv AdvPcle Nostaa-pcle - AdvPcle (*-1 ("nostaa") BARRIER S-BOUNDARY) ; # sisälle
-SUBSTITUTE Adv AdvPcle Tulla-pcle - AdvPcle (*-1 ("tulla") BARRIER S-BOUNDARY) ; # vastaan
+ADD VPcle Ottaa-pcle + Adv - AdvPcle (*-1 ("ottaa") BARRIER S-BOUNDARY) ; # mukaan, vastaan
+ADD VPcle Jättaa-pcle + Adv - AdvPcle (*-1 ("jättää") BARRIER S-BOUNDARY) ; # väliin
+ADD VPcle Nostaa-pcle + Adv - AdvPcle (*-1 ("nostaa") BARRIER S-BOUNDARY) ; # sisälle
+ADD VPcle Tulla-pcle + Adv - AdvPcle (*-1 ("tulla") BARRIER S-BOUNDARY) ; # vastaan
 SELECT AdvPcle;
 
 # if particle precedes the verb (mukaan on otettu) , then have to be cautious:
-SUBSTITUTE Adv AdvPcle Ottaa-pcle - AdvPcle (*1 ("ottaa") BARRIER S-BOUNDARY) ; # mukaan, vastaan
-SUBSTITUTE Adv AdvPcle Jättaa-pcle - AdvPcle (*1 ("jättää") BARRIER S-BOUNDARY) ; # väliin
-SUBSTITUTE Adv AdvPcle Nostaa-pcle - AdvPcle (*1 ("nostaa") BARRIER S-BOUNDARY) ; # sisälle
-SUBSTITUTE Adv AdvPcle Tulla-pcle - AdvPcle (*1 ("tulla") BARRIER S-BOUNDARY) ; # vastaan
+ADD VPcle Ottaa-pcle + Adv - AdvPcle (*1 ("ottaa") BARRIER S-BOUNDARY) ; # mukaan, vastaan
+ADD VPcle Jättaa-pcle + Adv - AdvPcle (*1 ("jättää") BARRIER S-BOUNDARY) ; # väliin
+ADD VPcle Nostaa-pcle + Adv - AdvPcle (*1 ("nostaa") BARRIER S-BOUNDARY) ; # sisälle
+ADD VPcle Tulla-pcle + Adv - AdvPcle (*1 ("tulla") BARRIER S-BOUNDARY) ; # vastaan
 SELECT AdvPcle (NEGATE 0 Po); 
 SELECT AdvPcle (0 Po - GenLeft)(NEGATE -1 Par);
 SELECT AdvPcle (0 Po - ParLeft)(NEGATE -1 Gen);
@@ -2142,6 +2142,7 @@ SELECT N + Nom (-1 ("paitsi"));
 SELECT N + Sg + POSS_SUFF (-1 ("paitsi"));
 
 SUBSTITUTE Adv Pr TARGET ("yli") + Adv (1C Num)(1 Nom OR Par OR Card) ;
+SUBSTITUTE Adv Pr TARGET ("yli") + Adv (*-1C ("kello") OR ("aika") OR Card)(1 Num + Nom OR Num + Par OR Card) ;
 SUBSTITUTE Adv Pr TARGET ("yli") + Adv (-1 Num OR ("sekunti") OR ("minuutti") OR ("vartti"))(1 Num + Nom OR Num + Par OR Card) ;
 SELECT Num + Nom OR Num + Par OR Card (-1 ("yli") + Pr);
 
@@ -2699,6 +2700,7 @@ SELECT ("miltei") + Adv (1 AD-MILTEI) ;
 IFF ("mitä") + Adv IF (1 CMP_SUP) ;
   # Entä mitä Jaakko tekee puun lähellä?
 
+SELECT ("näin") + Adv (NEGATE *-1 MINÄ OR V + Sg1 BARRIER CLB) (*0 V BARRIER CLB) ;
 SELECT ("niin") + Adv (1C A) (2 KUIN) (NEGATE 3 A) ; # NIIN RAJU KUIN MINä
 SELECT ("niin") + Adv (1C Adv) (2 KUIN) (NEGATE 3 A) ; # NIIN RAJUSTI KUIN MEIllä, was (1C MAN) ;
 SELECT ("noin") + Adv (1 Gen) ;
@@ -2951,6 +2953,7 @@ REMOVE NPlIns (0 Gen) (0 Sg) (NEGATE 0 AVOSYLIN) ; # RUUMIIN
 # Numbers
 # -------
 
+REMOVE PxSg2 (0 Num - PxSg2) ;
 SELECT ("kuusi") + Num + NomSg (1C Par) ;
 SELECT ("kuusi") + Num + NomSg (2C Par) ;
 SELECT Num + Gen (1 Gen-WORD) (0 Nom) (0 SEITSEMAN) ; # (1 Gen) deleted 7.12.2000
@@ -3796,7 +3799,7 @@ SELECT ("se") + Pron + Sg + Ade (NEGATE -1 CLB?) (-2 C_Adv) ;
 SELECT ("se") + Pron + Sg + Ade (1 CLB?) (NEGATE 1 JOS_KUN_KOSKA_VAIKKA) ;
 REMOVE ("häkä") + N + Pl  ;
 SELECT NSgGen + POSS_SUFF (-1C PCP) (-1 Gen) (-1 Sg) ; # XXXX
-REMOVE InfMa (0 ELAMA_KUOLEMA) ; # XXXX
+#REMOVE InfMa (0 ELAMA_KUOLEMA) ; # XXXX wrong: en pysty elämään
 SELECT ("vanhempi") + N + Pl + POSS_SUFF ; # XXXX
 REMOVE ("vanhempi") + N + Tra  ; # XXXX
 SELECT ("voima") + N (*-1 OLLA LINK NOT *1 CLB?) (NEGATE -1 CLB?) ; # XXXX
@@ -4907,7 +4910,7 @@ AFTER-SECTIONS
 
 LIST SYNT = @+FMAINV @+FAUXV @-FMAINV @-FAUXV @<SPRED @SPRED> @SUBJ @<SUBJ @SUBJ> @OBJ @<OBJ @OBJ> @NEC-S @NF-S @OBJ @PC @<P @P> @>P @N> @>N @N<  @<N @<NUM @NUM< @ADVL @<ADVL @LOC @PCLE @HAB @CVP @CNP @CNB @NES @X ;
 
-#UNMAP UNSAFE SYNT ; # at this stage don't need for transl -- no, we change or mind
+UNMAP UNSAFE SYNT ; # at this stage don't need for transl -- no, we change or mind
 
 SUBSTITUTE UP (*) UP ;
 #SUBSTITUTE CLB (*) CLB ; # We do not want to remove CLB
@@ -4938,7 +4941,7 @@ SUBSTITUTE Foc_kin (*) Adv ;
 SUBSTITUTE Foc_kaan (*) Adv ; 
 
 
-END
+# END
 
 
 # For MT only (fin->est)
