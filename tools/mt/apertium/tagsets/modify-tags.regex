@@ -9,16 +9,16 @@
   [ "<sem_plc>" -> "<top>"  ] .o.
   [ "<sem_geo>" -> "<top>"  ] .o.
   [ "<sem_human>" -> 0  ] .o.
-  [ "#"            ->	"+" ] .o.
+  [ "#"            ->	"<cmp>" "+" ] .o.
   [ "<adp>" "<pr>"  ->	"<pr>" ] .o.
   [ "<adp>" "<po>"  ->	"<post>" ] .o.
   [ "<adp>" "<post>"  ->	"<post>" ] .o.
   [ %<qnt%> %<indef%>  ->	%<indef%> ] .o.
-  [ "<foc_kaan>"          ->	"+" {kaan} "<adv>" ] .o.
-  [ "<foc_kin>"          ->	"+" {kin} "<adv>" ] .o.
-  [ "<foc_son>"         ->	"+" {son} "<pcle>" ] .o.
-  [ "<foc_naj>"         ->	"+" {naj} "<pcle>" ] .o.
-  [ "<foc_naj>" "<qst>"	->	"<qst>" "+" {naj} "<pcle>" ] .o.
+ # [ "<foc_kaan>"          ->	"+" {kaan} "<adv>" ] .o.
+ # [ "<foc_kin>"          ->	"+" {kin} "<adv>" ] .o.
+ # [ "<foc_son>"         ->	"+" {son} "<pcle>" ] .o.
+ # [ "<foc_naj>"         ->	"+" {naj} "<pcle>" ] .o.
+ # [ "<foc_naj>" "<qst>"	->	"<qst>" "+" {naj} "<pcle>" ] .o.
   [ "<qst>" "<pcle>"    ->	"<pcle>" "<qst>" ] .o.
   [ "<hom1>"      ->	"¹" ,
     "<hom2>"      ->	"²" ,
