@@ -4342,7 +4342,7 @@ MAP (@>N) TARGET Acro IF (0 Acro LINK *1 Prop BARRIER Prop);
 MAP (@N<) TARGET Num IF (-1 N) ;
 MAP (@N<) TARGET ("itse") IF (-1 Pron) (0 $$ALLCASES) (-1 $$ALLCASES) ;
 
-
+MAP (@>N) TARGET N + Gen IF (-1C CS)(1 N);
 
 # Mapping subjects and objects
 # ----------------------------
