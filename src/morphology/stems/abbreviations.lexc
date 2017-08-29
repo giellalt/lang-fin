@@ -5,6 +5,8 @@
 !!  tokenisation in real-world applications
 
 LEXICON ABBREVIATION
+ITRAB ; ! For abbr that may impose sent bound
+TRNUMAB ; ! For abbr that do not impose sent bound before numerals
 TRAB ; ! for abbreviations that do not impose sentence boundary
 !!€gt-norm:  Abbreviations
 !!€  eaa.: eaa.+N
@@ -12,6 +14,22 @@ TRAB ; ! for abbreviations that do not impose sentence boundary
 !!$  esim: esim+N
 !!  Some ar less classified
 !!€ ab: ab+ABBR
+
+LEXICON ITRAB
+alv.+N:alv.  #  ; !!= * {{@CODE@}}: arvonlisävero (VAT)
+alv.+ABBR:alv.  PCLE_VAAN  ;
+a.m.+ABBR:a.m.  PCLE_VAAN  ;
+anon.+ABBR:anon.  PCLE_VAAN  ;
+
+LEXICON TRNUMAB 
+n%:ro+N:n%:ro  #  ; !!= * {{@CODE@}}: 
+nro+N:nro  #  ; !!= * {{@CODE@}}: numero (#
+nro+ABBR:nro  PCLE_VAAN  ;
+krnro+N:krnro  NOUN_RUIPELO  ;
+nro+N:nro  NOUN_RUIPELO  ;
+nro+Pcle:nro  #  ;
+
+
 
 LEXICON TRAB 
 A%0+N:A%0  #  ; !!= * {{@CODE@}}: Paper size
@@ -34,11 +52,7 @@ alil.+ABBR:alil.  PCLE_VAAN  ;
 alk.+Adp:alk.  #  ; !!= * {{@CODE@}}: alkaen (temporal from)
 alk.+ABBR:alk.  PCLE_VAAN  ;
 al.+ABBR:al.  PCLE_VAAN  ;
-alv.+N:alv.  #  ; !!= * {{@CODE@}}: arvonlisävero (VAT)
-alv.+ABBR:alv.  PCLE_VAAN  ;
 amir.+ABBR:amir.  PCLE_VAAN  ;
-a.m.+ABBR:a.m.  PCLE_VAAN  ;
-anon.+ABBR:anon.  PCLE_VAAN  ;
 ao.+A:ao.  #  ; !!= * {{@CODE@}}: alla/aiheena oleva (mentioned)
 ao.+ABBR:ao.  PCLE_VAAN  ;
 ap.+ABBR:ap.  PCLE_VAAN  ;
@@ -375,9 +389,6 @@ N.N.+N:N.N.  #  ; !!= * {{@CODE@}}: John Doe
 N.N.+ABBR:N.N.  PCLE_VAAN  ;
 nom.+N:nom.  #  ; !!= * {{@CODE@}}: nominatiivi (nominative)
 n.+ABBR:n.  PCLE_VAAN  ;
-n%:ro+N:n%:ro  #  ; !!= * {{@CODE@}}: 
-nro+N:nro  #  ; !!= * {{@CODE@}}: numero (#
-nro+ABBR:nro  PCLE_VAAN  ;
 ns.+N:ns.  #  ; !!= * {{@CODE@}}: niin sanottu (so-called)
 ns.+ABBR:ns.  PCLE_VAAN  ;
 ns+ABBR:ns  PCLE_VAAN  ;
@@ -853,7 +864,6 @@ kotiteoll.op.+Pcle:kotiteoll.op.  #  ;
 k.+Pcle:k.  #  ;
 kp.+Pcle:kp.  #  ;
 krist.+Pcle:krist.  #  ;
-krnro+N:krnro  NOUN_RUIPELO  ;
 ks.+Pcle:ks.  #  ;
 kumpp.+Pcle:kumpp.  #  ;
 kuv.op.+Pcle:kuv.op.  #  ;
@@ -943,8 +953,6 @@ nk.+Pcle:nk.  #  ;
 N.N.+Pcle:N.N.  #  ;
 n%:o+N:n%:o  NOUN_RUIPELO  ;
 n.+Pcle:n.  #  ;
-nro+N:nro  NOUN_RUIPELO  ;
-nro+Pcle:nro  #  ;
 ns.+Pcle:ns.  #  ;
 ns+Pcle:ns  #  ;
 nti+Pcle:nti  #  ;
@@ -1170,5 +1178,6 @@ yo.+Pcle:yo.  #  ;
 yp.+Pcle:yp.  #  ;
 yrnro+N:yrnro  NOUN_RUIPELO  ;
 yv.+Pcle:yv.  #  ;
+
 
 
