@@ -4941,8 +4941,8 @@ SUBSTITUTE Foc_han (*) Adv ;
 SUBSTITUTE Foc_kin (*) Adv ; 
 SUBSTITUTE Foc_kaan (*) Adv ; 
 
-
-# END
+#  END # For ordinary analysis: END of file here
+      # For porting to MT: Comment out the previous line
 
 
 # For MT only (fin->est)
