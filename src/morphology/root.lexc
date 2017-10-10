@@ -629,14 +629,3 @@ LEXICON Root
 0   AUX    ;
 !0   DET    ;
 0   X    ;
-
-LEXICON NOMINAL
-!! !! The compound part sub-set {{@LEXNAME@}}
-!! The nominal forms can be used as non-initial parts of typical compounds
-!!€gt-norm: Nominals
-!!€ talonjuttu: talo+N+Sg+Gen#juttu+N+Sg+Nom # house thing
-0   NOUN           ;
-!0   PROPER ;
-!0   ADJECTIVE           ;
-!0   SUFFIX      ;
-!# ;
