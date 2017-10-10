@@ -16,27 +16,45 @@
 ## along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 # Add language-specific flags for hfst-lexc compilation here:
-HFST_LEXC_LOCAL_FLAGS=
+HFST_LEXC_LOCAL_FLAGS= --Werror
 
 # Set this to name of lexc file containing Multichar_Symbols and LEXICON Root
 GT_LEXC_ROOT=$(srcdir)/root.lexc
 
 # Set this to the names of all regular lexc source files:
 GT_LEXC_SRCS_L1_L2=\
-			 affixes/nouns.lexc        \
-			 affixes/verbs.lexc        \
-			 stems/abbreviations.lexc  \
-			 stems/adjectives.lexc     \
-			 stems/adpositions.lexc    \
-			 stems/adverbs.lexc        \
-			 stems/closed-classes.lexc \
-			 stems/nouns.lexc          \
-			 stems/numerals.lexc       \
-			 stems/prefixes.lexc       \
-			 stems/pronouns.lexc       \
-			 stems/propernouns.lexc    \
-			 stems/punctuation.lexc    \
-			 stems/verbs.lexc
+			 stems/abbreviations.lexc \
+			 stems/acro.lexc \
+			 stems/adj.lexc \
+			 stems/adv.lexc \
+			 stems/cc.lexc \
+			 stems/cs.lexc \
+			 stems/det.lexc \
+			 stems/digits.lexc \
+			 stems/interj.lexc \
+			 stems/nouns.lexc \
+			 stems/numeral.lexc \
+			 stems/particles.lexc \
+			 stems/pp.lexc \
+			 stems/pron.lexc \
+			 stems/propernoun.lexc \
+			 stems/prefixes.lexc \
+			 stems/punct.lexc \
+			 stems/suffixes.lexc \
+			 stems/verb.lexc \
+			 stems/exceptions.lexc \
+			 affixes/acronyms.lexc \
+			 affixes/adjectives.lexc \
+			 affixes/adv.lexc \
+			 affixes/digits.lexc \
+			 affixes/nouns.lexc \
+			 affixes/numeral.lexc \
+			 affixes/pp.lexc \
+			 affixes/particles.lexc \
+			 affixes/prefix.lexc \
+			 affixes/pron.lexc \
+			 affixes/propernouns.lexc \
+			 affixes/verbs.lexc
 
 # If you are building an error-detecting L2 analyser, specify the lexc files
 # that differ between the regular L1 and the L2 analysers below, in L1 and
