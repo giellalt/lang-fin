@@ -8,29 +8,87 @@ LEXICON DIGITS
 !! Zero alone works quite differently:
 !!€gt-norm: Digit zero
 !!€ 0: 0+Num+Sg+Nom
-0    DIGITS_INT_LOOP ;
+0    ARABIC ;
 0    DIGITS_DECIMAL_LOOP ;
 0    DIGITS_ROMANS   ;
-%0+Num:%0  DIGITS_NOLLA    ;
+     DIGITS_ONWARDS ;
+     NUM_PREFIXES ;
 
-LEXICON DIGITS_INT_LOOP
-!! Integers can be constructed from any number of digits, ending in
-!! 1-9, followed by any number of 0's. Initial 0's are rare, but not totally
-!! unexpected:
+LEXICON NUM_PREFIXES
+§+Use/Circ:§ ARABIC ;       ! §24
+§§+Use/Circ:§§ ARABIC ;     ! §§24
+§% +Use/Circ:§%  ARABIC ;   ! § 24
+§§% +Use/Circ:§§%  ARABIC ; ! §§ 24
+%-+Use/Circ:%- ARABIC ;     ! -24 U+002D / regular hyphen
+%‒+Use/Circ:%‒ ARABIC ;     ! -24 U+2012 / figure dash
+%–+Use/Circ:%– ARABIC ;     ! -24 U+2013 / en dash
+%—+Use/Circ:%— ARABIC ;     ! -24 U+2014 / em dash
+%―+Use/Circ:%― ARABIC ;     ! -24 U02015 / horizontal bar
+%++Use/Circ:%+ ARABIC ;     ! <plus>24
+%-% +Use/Circ:%-%  ARABIC ; ! - 24
+%‒% +Use/Circ:%‒%  ARABIC ; ! - 24 U+2012
+%–% +Use/Circ:%–%  ARABIC ; ! - 24 U+2013
+%—% +Use/Circ:%—%  ARABIC ; ! - 24 U+2014
+%―% +Use/Circ:%―%  ARABIC ; ! - 24 U+2015
+%+% +Use/Circ:%+%  ARABIC ; ! <plus> 24
+%*+Use/Circ:%* ARABIC ;     ! *24
+%$+Use/Circ:%$ ARABIC ;     ! $24
+%€+Use/Circ:%€ ARABIC ;     ! €24
+%<+Use/Circ:%[%<%] ARABIC ; ! <24
+%>+Use/Circ:%[%>%] ARABIC ; ! >24
+s%.+Use/Circ:s%. ARABIC ;   ! s.24
+
+
+LEXICON ARABIC
 !!€gt-norm: int digit loop
 !!€ 13: 13+Num+Card+Sg+Nom
 !!€ 100: 100+Num+Card+Sg+Nom
 !!€ 0000005550000000: 0000005550000000+Num+Card+Sg+Nom
-%0  DIGITS_INT_LOOP ;
-1   DIGITS_INT_LOOP ;
-2   DIGITS_INT_LOOP ;
-3   DIGITS_INT_LOOP ;
-4   DIGITS_INT_LOOP ;
-5   DIGITS_INT_LOOP ;
-6   DIGITS_INT_LOOP ;
-7   DIGITS_INT_LOOP ;
-8   DIGITS_INT_LOOP ;
-9   DIGITS_INT_LOOP ;
+
+< [1|2|3|4|5|6|7|8|9|%0] >   ARABICLOOP ;
+
+LEXICON ARABICLOOP !!= __@CODE@__ essentially allows any number-sign combination, but is like the other lgs
++Use/Circ: DIGITS_ONWARDS ;
++Use/Circ: ARABIC ;
+%-+Use/Circ:%- ARABIC ;             ! 1-2    multipart numbers continuing as numbers
+%–+Use/Circ:%– ARABIC ;             ! 1–2    multipart numbers continuing as numbers
+%—+Use/Circ:%— ARABIC ;             ! 1—2    multipart numbers continuing as numbers
+%.%-+Use/Circ:%.%- ARABIC ;         ! 1.-2   multipart numbers continuing as numbers
+%.%–+Use/Circ:%.%– ARABIC ;         ! 1.–2   multipart numbers continuing as numbers
+%.%—+Use/Circ:%.%— ARABIC ;         ! 1.—2   multipart numbers continuing as numbers
+%-% +Use/Circ:%-%  ARABIC ;         ! 1- 2   multipart numbers continuing as numbers
+%–% +Use/Circ:%–%  ARABIC ;         ! 1– 2   multipart numbers continuing as numbers
+%—% +Use/Circ:%—%  ARABIC ;         ! 1— 2   multipart numbers continuing as numbers
+% %-+Use/Circ:% %- ARABIC ;         ! 1 -2   multipart numbers continuing as numbers
+% %–+Use/Circ:% %– ARABIC ;         ! 1 –2   multipart numbers continuing as numbers
+% %—+Use/Circ:% %— ARABIC ;         ! 1 —2   multipart numbers continuing as numbers
+% %-% +Use/Circ:% %-%  ARABIC ;     ! 1 - 2  multipart numbers continuing as numbers
+% %–% +Use/Circ:% %–%  ARABIC ;     ! 1 – 2  multipart numbers continuing as numbers
+% %—% +Use/Circ:% %—%  ARABIC ;     ! 1 — 2  multipart numbers continuing as numbers
+% %-%-% +Use/Circ:% %-%-%  ARABIC ; ! 1 -- 2 multipart numbers continuing as numbers
+% %–%–% +Use/Circ:% %–%–%  ARABIC ; ! 1 –– 2 multipart numbers continuing as numbers
+% %—%—% +Use/Circ:% %—%—%  ARABIC ; ! 1 —— 2 multipart numbers continuing as numbers
+% %- # ;             ! 1 -    multipart numbers ending in hyphen
+% %– # ;             ! 1 –    multipart numbers ending in hyphen
+% %— # ;             ! 1 —    multipart numbers ending in hyphen
+% %-%- # ;           ! 1 --   multipart numbers ending in hyphen
+% %–%– # ;           ! 1 ––   multipart numbers ending in hyphen
+% %—%— # ;           ! 1 ——   multipart numbers ending in hyphen
+%.+Use/Circ:%. ARABIC ;
+%,+Use/Circ:%, ARABIC ;
+% +Use/Circ:%  ARABIC ; ! Allowing for "23 500".
+ +Use/Circ:   ARABIC ; ! Allowing for "23 500" w/nbsp (initial char is alt-space)
+%/+Use/Circ:%/ ARABIC ; ! 24/12
+,%-+Num:,%- # ;   ! 10,-
+,%–+Num:,%– # ;   ! 10,–
+,%—+Num:,%— # ;   ! 10,—
+%%+Num+Sg+Nom:%% # ;  ! 50%. It is wrong, but 75 % of us write "75%".
+% %%+Num+Sg+Nom:% %% # ; ! We must analyse the correct ones as well... 50 % etc.
++Num: RHyph ; ! Adding the hyphen for 3-ulotteinen
+
+
+LEXICON DIGITS_ONWARDS !! __@CODE@__ is for entries not looping back 
+%0+Num:%0  DIGITS_NOLLA    ;
 1+Num+Card:1   DIGITS_YKSI  ;
 1+Num+Ord:1   DIGITS_ENSIMMÄINEN  ;
 1+Num+Ord:1   DIGITS_NELJÄS  ; ! yhdes
@@ -289,11 +347,14 @@ LEXICON DIGITS_DECIMAL_LOOP_FINAL_SUB
 8+Num+Err/Orth:8   DIGITS_KAHDEKSAN ;
 9+Num+Err/Orth:9   DIGITS_YHDEKSÄN  ;
 
-! Roman numerals with inflection
-LEXICON DIGITS_ROMANS
+!! !!!Roman numerals with inflection
 !! Roman numerals are composed the symbols M, D, C, L, X, V, I in ascending
 !! scale and some combinations, they denote ordinal numbers and inflect like
 !! ones.
+
+!! !!Main lexicon for roman digits
+!! This lexicon divides into four groups
+LEXICON DIGITS_ROMANS
 !!€gt-norm: roman numeral
 !!€ MM: MM+Num+Ord+Sg+Nom
 !!€ MCXI: MCXI+Num+Ord+Sg+Nom
@@ -303,6 +364,8 @@ LEXICON DIGITS_ROMANS
 0    DIGITS_ROMANS_TENS      ;
 0    DIGITS_ROMANS_ONES      ;
 
+!! !!Roman numerals according to digital class, one by one
+!! !Roman thousands
 LEXICON DIGITS_ROMANS_THOUSANDS
 !! Thousands can be followed by any of other parts
 !!€gt-norm: roman numeral thousand
@@ -326,6 +389,7 @@ MM+Num+Ord:MM      DIGITS_ROMANS_TOINEN  ;
 M+Num+Ord:M       DIGITS_ROMANS_TOINEN  ;
 
 
+!! !Roman hundreds
 LEXICON DIGITS_ROMANS_HUNDREDS
 !! Hundreds can be followed by anything but thousands:
 !!€gt-norm: roman numeral hundred
@@ -359,6 +423,7 @@ CCC+Num+Ord:CCC     DIGITS_ROMANS_TOINEN  ;
 CC+Num+Ord:CC      DIGITS_ROMANS_TOINEN  ;
 C+Num+Ord:C       DIGITS_ROMANS_TOINEN  ;
 
+!! !Roman tens
 LEXICON DIGITS_ROMANS_TENS
 !! Tens can be followed by ones:
 !!€gt-norm: roman numeral ten
@@ -383,6 +448,7 @@ XXX+Num+Ord:XXX     DIGITS_ROMANS_ENSIMMÄINEN  ;
 XX+Num+Ord:XX      DIGITS_ROMANS_ENSIMMÄINEN  ;
 X+Num+Ord:X       DIGITS_ROMANS_ENSIMMÄINEN  ;
 
+!! !Roman ones
 LEXICON DIGITS_ROMANS_ONES
 !! Ones come alone
 !!€gt-norm: roman numerals one to nine
