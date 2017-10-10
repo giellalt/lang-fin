@@ -566,12 +566,6 @@ __Parts-of-speech examples:__
 * __talo: __ {{talo+N+Sg+Nom }} (Eng. # house)
 * __nopea: __ {{nopea+A+Sg+Nom }} (Eng. # fast)
 * __kutoa: __ {{kutoa+V+Act+InfA+Sg+Lat }} (Eng. # to knit)
-
-The compound part sub-set {{NOMINAL}}
-The nominal forms can be used as non-initial parts of typical compounds
-
-__Nominals examples:__
-* __talonjuttu: __ {{talo+N+Sg+Gen#juttu+N+Sg+Nom }} (Eng. # house thing)
  !!Adjective-initial Compounds with Agreeing Inflection
  The words in dictionary paradigm class ⁵¹ refer to old closed class of
  adjective initial compounds, which follow agreeing compound pattern same
@@ -6753,14 +6747,19 @@ Zero alone works quite differently:
 __Digit zero examples:__
 * __0: __ {{0+Num+Sg+Nom }}
 
-Integers can be constructed from any number of digits, ending in
-1-9, followed by any number of 0's. Initial 0's are rare, but not totally
-unexpected:
+
+
 
 __int digit loop examples:__
 * __13: __ {{13+Num+Card+Sg+Nom }}
 * __100: __ {{100+Num+Card+Sg+Nom }}
 * __0000005550000000: __ {{0000005550000000+Num+Card+Sg+Nom }}
+
+
+ __LEXICON ARABICLOOP __ essentially allows any number-sign combination, but is like the other lgs
+
+
+__LEXICON ARABICLOOP __ is for entries not looping back 
 
 The digit strings that end in 10 to 12 + 6n 0's are inflected alike:
 
@@ -6795,15 +6794,21 @@ __decimal digit loop more examples:__
 The decimal digit strings with dot may be allowed as sub-standard option
 with respective analysis.
 
+!!!Roman numerals with inflection
 Roman numerals are composed the symbols M, D, C, L, X, V, I in ascending
 scale and some combinations, they denote ordinal numbers and inflect like
 ones.
+
+!!Main lexicon for roman digits
+This lexicon divides into four groups
 
 __roman numeral examples:__
 * __MM: __ {{MM+Num+Ord+Sg+Nom }}
 * __MCXI: __ {{MCXI+Num+Ord+Sg+Nom }}
 * __CMXCIX: __ {{CMXCIX+Num+Ord+Sg+Nom }}
 
+!!Roman numerals according to digital class, one by one
+!Roman thousands
 Thousands can be followed by any of other parts
 
 __roman numeral thousand examples:__
@@ -6811,18 +6816,21 @@ __roman numeral thousand examples:__
 * __MCCCXXII: __ {{MCCCXXII+Num+Ord+Sg+Nom }}
 
 
+!Roman hundreds
 Hundreds can be followed by anything but thousands:
 
 __roman numeral hundred examples:__
 * __CXXI: __ {{CXXI+Num+Ord+Sg+Nom }}
 * __DXXIV: __ {{DXXIV+Num+Ord+Sg+Nom }}
 
+!Roman tens
 Tens can be followed by ones:
 
 __roman numeral ten examples:__
 * __XIX: __ {{XIX+Num+Ord+Sg+Nom }}
 * __XXVII: __ {{XXVII+Num+Ord+Sg+Nom }}
 
+!Roman ones
 Ones come alone
 
 __roman numerals one to nine examples:__
@@ -18709,9 +18717,6 @@ __ examples:__
 __ examples:__
 * __aakkostamisjuttu: __ {{aakkostaminen+N+Der/s#juttu+N+Sg+Nom }}
 
-
-__ examples:__
-* __talojuttu: __ {{talo+N+Sg+Nom#juttu+N+Sg+Nom }}
 
 
 
