@@ -24,8 +24,8 @@
 # third is email address for bug reports
 # fourth is name of packages made by make dist, excluding .tar.gz
 # fifth is the project web address
-AC_INIT([giella-fin], [20120821], [flammie@iki.fi], [giella-fin],
-        [http://code.google.com/p/omorfi])
+AC_INIT([giella-fin], [20110617], [feedback@divvun.no], [giella-fin],
+        [http://divvun.no])
 # AC_REVISION is used to get SVN revision into bug reports
 AC_REVISION([$Revision$])
 # These configuration dirs hide some extra cruft
@@ -180,6 +180,7 @@ AC_CONFIG_FILES([Makefile \
                  test/src/syntax/Makefile \
                  tools/Makefile \
                  tools/grammarcheckers/Makefile \
+                 tools/grammarcheckers/filters/Makefile \
                  tools/hyphenators/Makefile \
                  tools/hyphenators/fstbased/Makefile \
                  tools/hyphenators/patternbased/Makefile \
