@@ -36,7 +36,7 @@
 # ---------------------- #
 #
 # emacs grammarchecker.cg3  # and C-c C-i / C-c C-c if you have cg-mode installed
-# echo "Sun ij puátá." | sh modes/???gram.mode  # from the terminal, replacing ??? with your language code
+# echo "Hän ei tulee." | sh modes/fingram.mode  # from the terminal, replacing ??? with your language code
 #
 # ---------------------- #
 #   Other debug-pipes:   #
@@ -48,7 +48,7 @@
 
 
 # The pipeline (but use modes, above)
-#  echo "Sun ij puátá." | hfst-tokenise —giella-cg tools/tokenisers/tokeniser-gramcheck-gt-desc.pmhfst | vislcg3 -g src/syntax/disambiguation.cg3 -t | vislcg3 -g tools/grammarcheckers/grammarchecker.cg3 -t
+#  echo "Hän ei tulee." | hfst-tokenise —-giella-cg tools/tokenisers/tokeniser-gramcheck-gt-desc.pmhfst | vislcg3 -g src/syntax/disambiguation.cg3 -t | vislcg3 -g tools/grammarcheckers/grammarchecker.cg3 -t
 
 
 
@@ -147,13 +147,19 @@ LIST Nom = Nom ; #!! Nom
 LIST Acc = Acc ; #!! Acc
 LIST Gen = Gen ; #!! Gen
 LIST Ill = Ill ; #!! Ill
-LIST Loc = Loc ; #!! Loc
+LIST Ine = Ine ; #!! Ine
+LIST Ela = Ela ;
+LIST All = All ;
+LIST Ade = Ade ;
+LIST Abl = Abl ;
 LIST Com = Com ; #!! Com
 LIST Ess = Ess ; #!! Ess
 LIST Par = Par ; #!! Ess
 LIST Sg = Sg ;   #!! Sg
-LIST Du = Du ;   #!! Du
 LIST Pl = Pl ;   #!! Pl
+
+
+
 LIST Cmp/SplitR = Cmp/SplitR ;	   #!! Cmp/SplitR
 LIST Cmp/SgNom = Cmp/SgNom ; #!! Cmp/SgNom Cmp/SgGen
 LIST Cmp/SgGen = Cmp/SgGen ; #!! Cmp/SgGen
@@ -192,6 +198,7 @@ LIST Pl1 = Pl1 (p1 pl) ;			   #!! Pl1
 LIST Pl2 = Pl2 (p2 pl);			   #!! Pl2
 LIST Pl3 = Pl3 (p3 pl);			   #!! Pl3
 LIST Inf = Inf ;			   #!! Inf
+LIST Pss = Pss ;
 LIST ConNeg = ConNeg ;		   #!! ConNeg
 LIST Neg = Neg ;			   #!! Neg
 LIST PrfPrc = PrfPrc ;		   #!! PrfPrc
@@ -202,7 +209,7 @@ LIST Sup = Sup ;			   #!! Sup
 LIST Actio = Actio ;		   #!! Actio
 LIST VAbess = VAbess ;		   #!! VAbess
 
-
+SET VFIN = Ind OR Cond OR Pot ;
 
 LIST Err/Orth = Err/Orth Err/Orth-a/á Err/Orth-nom/gen Err/Orth-nom/acc Err/DerSub Err/CmpSub Err/UnspaceCmp Err/HyphSub Err/SpaceCmp Err/Spellrelax err_orth_mt ; #!! Err/Orth
 
@@ -486,7 +493,6 @@ SET NOT-ADV            = NOT-ADV-DE OR CLB ;
 SET NOT-ADV-N          = NOT-ADV - N;
 SET NOT-ADV-PCLE       = NOT-ADV - Pcle ;
 SET NOT-ADV-INDEF      = NOT-ADV - Indef ;
-SET NOT-ADV-PCLE-ILL-LOC-COM = WORD - Adv - Pcle - Ill - Loc - Com;
 SET NOT-A-ADV-PCLE = WORD - Pcle - A - Adv ; #
 
 
@@ -596,12 +602,14 @@ SET CCCOMMA = CC OR COMMA ;
 
 #!! !Grammarchecker sets
 
-LIST &err-agr = &err-agr ;
-LIST &err-gen-po = &err-gen-po ;
-LIST &err-no-conneg = &err-no-conneg ;
-LIST &err-orrood-inf = &err-orrood-inf ;
-LIST &err-ext-agr = &err-ext-agr ;
-LIST &err-ext-vagr = &err-ext-vagr ;
+LIST &err_agr = &err_agr ;
+LIST &err_gen-po = &err_gen-po ;
+LIST &err_no-conneg = &err_no-conneg ;
+LIST &err_orrood-inf = &err_orrood-inf ;
+LIST &err_ext-agr = &err_ext-agr ;
+LIST &err_ext-vagr = &err_ext-vagr ;
+LIST &err_acc_pss = &err_acc_pss ;
+LIST &err_neg_posv = &err_neg_posv ;
 
 MAPPING-PREFIX = & ;
 
@@ -615,11 +623,16 @@ ADD:spell-it-all (&typo &SUGGESTWF) (<spelled>) ;
 ADD:spell-conservatively (&typo &SUGGESTWF) (<spelled>) IF (NEGATE -1 QMARK LINK 2 QMARK);
 
 # A simple grammar checker rule without suggestions: Ensure preceding nominal agrees with the verb
-ADD:err-agr (&err-agr) TARGET V IF (-1C Sg + Nom) (0 V) (NOT 0 Sg3);
-ADD:err-agr (&err-agr) TARGET V IF (-1C Pron + Sg1 + Nom) (0 V) (NOT 0 Sg1);
-ADD:err-agr (&err-agr) TARGET V IF (-1C Pron + Sg2 + Nom) (0 V) (NOT 0 Sg2);
-ADD:err-agr (&err-agr) TARGET V IF (-1C Pron + Pl1 + Nom) (0 V) (NOT 0 Pl1);
-ADD:err-agr (&err-agr) TARGET V IF (-1C Pron + Pl2 + Nom) (0 V) (NOT 0 Pl2);
+ADD:err_agr (&err_agr) TARGET V IF (-1C Sg + Nom) (0 V) (NOT 0 Sg3 OR Pss);
+ADD:err_agr (&err_agr) TARGET V IF (-1 Pron + Sg1 + Nom) (0 V) (NOT 0 Sg1);
+ADD:err_agr (&err_agr) TARGET V IF (-1 Pron + Sg2 + Nom) (0 V) (NOT 0 Sg2);
+ADD:err_agr (&err_agr) TARGET V IF (-1 Pron + Pl1 + Nom) (0 V) (NOT 0 Pl1);
+ADD:err_agr (&err_agr) TARGET V IF (-1 Pron + Pl2 + Nom) (0 V) (NOT 0 Pl2);
+
+ADD:neg_err_posv (&neg_err_posv) TARGET V IF (-1 Neg)(0 VFIN)(NOT 0 ConNeg);
+
+ADD:err_acc_pss (&err_acc_pss) TARGET N IF (-1 V + Pss)(0 Gen)(NOT 1 N OR A);
+## Nähtiin auton.
 
 # And one with a suggestion where we simply change the tag Sg into Attr:
 ADD:attr-not-pred (&attr-not-pred) TARGET (A Sg) IF (NOT 0 Attr OR Gen) (1 CC LINK *1 COMMON-N) ;
