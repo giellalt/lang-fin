@@ -53,6 +53,8 @@ LIST Comp = Comp ; # comparative of adj
 LIST Sup = Sup ; # superlative of adj
 LIST CMP_SUP = Comp Sup ; 
 
+LIST Foc/ka = Foc/ka ;
+
 LIST Po = Po ;
 LIST Pr = Pr ;
 LIST Adpp = Adp ;
@@ -876,6 +878,9 @@ LIST Geo_word = "kaupunki"i "tori"i "katu"i "meri"i "lahti"i "järvi"i "joki" "s
 LIST Geo_dir = "itä" "louna" "lounais" "länsi" "pohja" "pohjois" "pohjainen" "etelä" ;
 LIST Use_Rare = Use/Rare Use_Rare ;
 
+LIST Dial/East = Dial/East ;
+LIST Dial/West = Dial/West ;
+
 LIST ADes = "seuraava" "tyytyväinen" "jännittävä" "painava" "mahtava" "inhottava" "käytävä" "merkittävä" "miellyttävä" "palava" ;
 
 LIST VÄRI = "valkoinen" "musta" "punainen" "sininen" "keltainen" "vihreä" "ruskea" "harmaa" "harmahtava" "kirjava" "värillinen" ;
@@ -1198,6 +1203,11 @@ LIST PRINCIPAL-FUNCTION-DECLARATIONS = @SUBJ @OBJ @SPRED ;
 
 SECTION
 
+# Dialects
+
+REMOVE:NotDialEast Dial/East ; # e.g. työ. Idea: assume standard.
+
+
 ### TODO: 
 # CLAUSE BOUNDARY CONSTRAINTS
 
@@ -1296,6 +1306,7 @@ SELECT ("lähimmäksi") + Adv (NEGATE 1 Tra) ;
 SELECT ("mielellään") + Adv ;
 SELECT ("mielestä") + Adv (0 POSS_SUFF) (NEGATE -1 Gen OR Ela) ;
 SELECT ("mieliksi") + Adv ;
+SELECT ("mielin") + Pcle (-1 ("avoin")) ;
 SELECT ("miten") + Adv (1 TAHANSA_VAIN) ;
 SELECT ("muutoin") + Adv ;
 SELECT ("myöhemmin") + Adv ;
@@ -1447,6 +1458,15 @@ SUBSTITUTE (?) (Num Ord Sg Gen Roman ?-) (?) (0 ("[IVXLCDM-]+:n"r)) ;
 
 SUBSTITUTE (?) (N Sg Gen Pref- ?-) (?) (0 ("(.*)n-"r)) ; # maybe first part is Gen
 SUBSTITUTE (?) (N Sg Nom Pref- ?-) (?) (0 ("(.*)-"r)) ; # usually the first part is Nom
+
+
+#!! !! Idiomatic cases
+
+SELECT N + Ins IF (-1 A + Ins);
+## väliaikaisin toimin
+
+
+
 
 #ADD UP (*) IF (0 ("<[A-ZÄÖÜÕÆØ¢ı¥ŠŽ](.*)>"r)) (NEGATE 0 UP) ; defined UP reg ex
 #UP# ADD UP (*) IF (0 ("<[A-ZÄÖÜÕÆØ¢ı¥ŠŽ](.*)>"r)) (NEGATE 0 UP) ;
