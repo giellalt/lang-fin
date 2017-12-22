@@ -209,11 +209,13 @@ LIST Sup = Sup ;			   #!! Sup
 LIST Actio = Actio ;		   #!! Actio
 LIST VAbess = VAbess ;		   #!! VAbess
 
+LIST Foc/ka = Foc/ka ;
+
 SET VFIN = Ind OR Cond OR Pot ;
 
 LIST Err/Orth = Err/Orth Err/Orth-a/á Err/Orth-nom/gen Err/Orth-nom/acc Err/DerSub Err/CmpSub Err/UnspaceCmp Err/HyphSub Err/SpaceCmp Err/Spellrelax err_orth_mt ; #!! Err/Orth
 
-
+LIST POGEN = "takia" ;
 
 #!! !Semantic tags
 
@@ -577,6 +579,10 @@ SET NOT-PCLE = WORD - Pcle ;
 SET REAL-CLB = CLB - COMMA ;
 
 
+#!! !Postposition sets
+
+
+
 #!! !Border sets and their complements
 # ---------------------------------
 
@@ -603,6 +609,12 @@ SET CCCOMMA = CC OR COMMA ;
 #!! !Grammarchecker sets
 
 LIST &err_agr = &err_agr ;
+LIST &err_agr_sg1 = &err_agr_sg1 ;
+LIST &err_agr_sg2 = &err_agr_sg2 ;
+LIST &err_agr_sg3 = &err_agr_sg3 ;
+LIST &err_agr_pl1 = &err_agr_pl1 ;
+LIST &err_agr_pl2 = &err_agr_pl2 ;
+LIST &err_agr_pl3 = &err_agr_pl3 ;
 LIST &err_gen-po = &err_gen-po ;
 LIST &err_no-conneg = &err_no-conneg ;
 LIST &err_orrood-inf = &err_orrood-inf ;
@@ -623,16 +635,19 @@ ADD:spell-it-all (&typo &SUGGESTWF) (<spelled>) ;
 ADD:spell-conservatively (&typo &SUGGESTWF) (<spelled>) IF (NEGATE -1 QMARK LINK 2 QMARK);
 
 # A simple grammar checker rule without suggestions: Ensure preceding nominal agrees with the verb
-ADD:err_agr (&err_agr) TARGET V IF (-1C Sg + Nom) (0 V) (NOT 0 Sg3 OR Pss);
-ADD:err_agr (&err_agr) TARGET V IF (-1 Pron + Sg1 + Nom) (0 V) (NOT 0 Sg1);
-ADD:err_agr (&err_agr) TARGET V IF (-1 Pron + Sg2 + Nom) (0 V) (NOT 0 Sg2);
-ADD:err_agr (&err_agr) TARGET V IF (-1 Pron + Pl1 + Nom) (0 V) (NOT 0 Pl1);
-ADD:err_agr (&err_agr) TARGET V IF (-1 Pron + Pl2 + Nom) (0 V) (NOT 0 Pl2);
+ADD:err_agr_sg1 (&err_agr_sg1) TARGET V IF (NOT -1 Sg1 OR Interr)(-1 Pron + Sg1 + Nom) (0 V + Ind) (NOT 0 Sg1);
+ADD:err_agr_sg2 (&err_agr_sg2) TARGET V IF (NOT -1 Sg2 OR Interr)(-1 Pron + Sg2 + Nom) (0 V + Ind) (NOT 0 Sg2);
+ADD:err_agr_sg3 (&err_agr_sg3) TARGET V IF (-1C Sg + Nom)(NOT -1 Interr)(NOT *-1 CC BARRIER NOT-NPMOD LINK -1 Sg + Nom)(NOT -2 ("/")) (0 V + Ind ) (NOT 0 Sg3 OR Pss);
+ADD:err_agr_pl1 (&err_agr_pl1) TARGET V IF (NOT -1 Pl2 OR Interr)(-1 Pron + Pl1 + Nom) (0 V + Ind) (NOT 0 Pl1);
+ADD:err_agr_pl2 (&err_agr_pl2) TARGET V IF (NOT -1 Pl2 OR Interr)(-1 Pron + Pl2 + Nom) (0 V + Ind) (NOT 0 Pl2);
+ADD:err_agr_pl3 (&err_agr_pl3) TARGET V IF (NOT -1 Pl3)(-1 Pron + Pl3 + Nom) (0 V + Ind) (NOT 0 Pl3);
 
-ADD:neg_err_posv (&neg_err_posv) TARGET V IF (-1 Neg)(0 VFIN)(NOT 0 ConNeg);
+ADD:err_neg_posv (&err_neg_posv) TARGET V IF (-1 Neg)(NOT -1 Foc/ka)(0 VFIN)(NOT 0 ConNeg);
 
-ADD:err_acc_pss (&err_acc_pss) TARGET N IF (-1 V + Pss)(0 Gen)(NOT 1 N OR A);
-## Nähtiin auton.
+#ADD:err_acc_pss (&err_acc_pss) TARGET N IF (-1 V + Pss + Ind)(0 Gen)(NOT *1 N OR A BARRIER NOT-NPMOD)(Not 1 Po);
+ADD:err_acc_pss (&err_acc_pss) TARGET Pron + Pers + Nom IF (-1 V + Pss + Ind)(NOT *1 N OR A BARRIER NOT-NPMOD)(Not 1 Po);
+## Nähtiin hän.
+# Problem: Distinguishing between Acc and Gen.
 
 # And one with a suggestion where we simply change the tag Sg into Attr:
 ADD:attr-not-pred (&attr-not-pred) TARGET (A Sg) IF (NOT 0 Attr OR Gen) (1 CC LINK *1 COMMON-N) ;
@@ -641,6 +656,18 @@ COPY:attr-not-pred (Attr &SUGGEST) EXCEPT (Sg) TARGET (&attr-not-pred) ;
 # suggestion form from that reading. The copy should contain the error
 # tag too – &-prefixed error tags are ignored when generating, but
 # used to create human-readable messages.
+
+
+# Postposition rules
+
+ADD:err_po_notgen (&err_po_notgen) TARGET N IF (NOT 0 Gen OR Par)(1C Po);
+ADD:err_po_notgen (&err_po_notgen) TARGET N IF (NOT 0 Gen)(1 POGEN);
+ADD:err_po_notela (&err_po_notela) TARGET N IF (NOT 0 Ela)(1 ("<*.matta>"r) + Po);
+
+# Huom: minusta huolimatta+Po
+# Huom: Ill + asti, saakka
+# Abl + katsoen
+# TODO: List of gen-Po, par-Po, Ill-Po, Ela-Po
 
 # Simple punctuation rules showing how to change the lemma in the suggestions:
 ADD:use-guillemets (&guillemets) TARGET (""");
