@@ -11,6 +11,11 @@ GIELLA_GC_VALENCY=
 # specify here:
 LOCAL_GC_ZIP_FILES=
 
+# Addition to ensure we use the ordinary disambiguation file                                                                                                                                  
+# (to be removed if we make our own)                                                                                                                                                          
+disambiguator.cg3: $(top_srcdir)/src/syntax/disambiguation.cg3
+        cp $< $@
+
 # Addition to ensure we use the ordinary disambiguation file
 # (to be removed if we make our own)
 disambiguator.cg3: $(top_srcdir)/src/syntax/disambiguation.cg3
