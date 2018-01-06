@@ -216,6 +216,7 @@ SET VFIN = Ind OR Cond OR Pot ;
 LIST Err/Orth = Err/Orth Err/Orth-a/á Err/Orth-nom/gen Err/Orth-nom/acc Err/DerSub Err/CmpSub Err/UnspaceCmp Err/HyphSub Err/SpaceCmp Err/Spellrelax err_orth_mt ; #!! Err/Orth
 
 LIST POGEN = "takia" ;
+LIST POELA = "huolimatta" ;
 
 #!! !Semantic tags
 
@@ -616,6 +617,8 @@ LIST &err_agr_pl1 = &err_agr_pl1 ;
 LIST &err_agr_pl2 = &err_agr_pl2 ;
 LIST &err_agr_pl3 = &err_agr_pl3 ;
 LIST &err_gen-po = &err_gen-po ;
+LIST &err_po_notgen = &err_po_notgen ;
+LIST &err_po_nogela = &err_po_notela ;
 LIST &err_no-conneg = &err_no-conneg ;
 LIST &err_orrood-inf = &err_orrood-inf ;
 LIST &err_ext-agr = &err_ext-agr ;
@@ -660,8 +663,9 @@ COPY:attr-not-pred (Attr &SUGGEST) EXCEPT (Sg) TARGET (&attr-not-pred) ;
 
 # Postposition rules
 
-ADD:err_po_notgen (&err_po_notgen) TARGET N IF (NOT 0 Gen OR Par)(1C Po);
+#3ADD:err_po_notgen (&err_po_notgen) TARGET N IF (NOT 0 Gen OR Par)(1C Po);
 ADD:err_po_notgen (&err_po_notgen) TARGET N IF (NOT 0 Gen)(1 POGEN);
+ADD:err_po_notela (&err_po_notgen) TARGET N IF (NOT 0 Ela)(1 POELA);
 ADD:err_po_notela (&err_po_notela) TARGET N IF (NOT 0 Ela)(1 ("<*.matta>"r) + Po);
 
 # Huom: minusta huolimatta+Po
