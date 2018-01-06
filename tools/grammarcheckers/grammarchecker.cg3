@@ -14,7 +14,7 @@
 # giellatekno@hum.uit.no or divvun@hum.uit.no
 
 # ==================================================================== #
-#!! !!!       [ L A N G U A G E ]  G R A M M A R   C H E C K E R
+#!! !!!       F I N N I S H   G R A M M A R   C H E C K E R
 # ==================================================================== #
 # ====================================================================
 
@@ -24,7 +24,7 @@
 #   Development setup:   #
 # ---------------------- #
 #
-# cd $GTHOME/langs/??? # replace ??? with your language code
+# cd $GTHOME/langs/fin
 # ./autogen.sh
 # ./configure --enable-apertium --with-hfst --enable-syntax --enable-grammarchecker --enable-tokenisers --enable-alignment --enable-reversed-intersect
 # make
@@ -36,7 +36,7 @@
 # ---------------------- #
 #
 # emacs grammarchecker.cg3  # and C-c C-i / C-c C-c if you have cg-mode installed
-# echo "Hän ei tulee." | sh modes/fingram.mode  # from the terminal, replacing ??? with your language code
+# echo "Hän ei tulee." | sh modes/fingram.mode  # from the terminal
 #
 # The basic pipeline, in case modes (above) does not work
 #  echo "Hän ei tulee." | hfst-tokenise —g ../tokenisers/tokeniser-gramcheck-gt-desc.pmhfst | vislcg3 -g disambiguator.cg3  | vislcg3 -g grammarchecker.cg3 -t
