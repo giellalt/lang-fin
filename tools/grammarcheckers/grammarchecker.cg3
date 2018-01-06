@@ -38,6 +38,9 @@
 # emacs grammarchecker.cg3  # and C-c C-i / C-c C-c if you have cg-mode installed
 # echo "Hän ei tulee." | sh modes/fingram.mode  # from the terminal, replacing ??? with your language code
 #
+# The basic pipeline, in case modes (above) does not work
+#  echo "Hän ei tulee." | hfst-tokenise —g ../tokenisers/tokeniser-gramcheck-gt-desc.pmhfst | vislcg3 -g disambiguator.cg3  | vislcg3 -g grammarchecker.cg3 -t
+
 # ---------------------- #
 #   Other debug-pipes:   #
 # ---------------------- #
@@ -46,9 +49,6 @@
 #
 # ---------------------- #
 
-
-# The pipeline (but use modes, above)
-#  echo "Hän ei tulee." | hfst-tokenise —-giella-cg tools/tokenisers/tokeniser-gramcheck-gt-desc.pmhfst | vislcg3 -g src/syntax/disambiguation.cg3 -t | vislcg3 -g tools/grammarcheckers/grammarchecker.cg3 -t
 
 
 
@@ -607,6 +607,12 @@ SET CCCOMMA = CC OR COMMA ;
 
 
 
+
+
+
+
+
+
 #!! !Grammarchecker sets
 
 LIST &err_agr = &err_agr ;
@@ -647,19 +653,6 @@ ADD:err_agr_pl3 (&err_agr_pl3) TARGET V IF (NOT -1 Pl3)(-1 Pron + Pl3 + Nom) (0 
 
 ADD:err_neg_posv (&err_neg_posv) TARGET V IF (-1 Neg)(NOT -1 Foc/ka)(0 VFIN)(NOT 0 ConNeg);
 
-#ADD:err_acc_pss (&err_acc_pss) TARGET N IF (-1 V + Pss + Ind)(0 Gen)(NOT *1 N OR A BARRIER NOT-NPMOD)(Not 1 Po);
-ADD:err_acc_pss (&err_acc_pss) TARGET Pron + Pers + Nom IF (-1 V + Pss + Ind)(NOT *1 N OR A BARRIER NOT-NPMOD)(Not 1 Po);
-## Nähtiin hän.
-# Problem: Distinguishing between Acc and Gen.
-
-# And one with a suggestion where we simply change the tag Sg into Attr:
-ADD:attr-not-pred (&attr-not-pred) TARGET (A Sg) IF (NOT 0 Attr OR Gen) (1 CC LINK *1 COMMON-N) ;
-COPY:attr-not-pred (Attr &SUGGEST) EXCEPT (Sg) TARGET (&attr-not-pred) ;
-# The method is: Add &SUGGEST to a copied reading to *generate* a
-# suggestion form from that reading. The copy should contain the error
-# tag too – &-prefixed error tags are ignored when generating, but
-# used to create human-readable messages.
-
 
 # Postposition rules
 
@@ -672,6 +665,21 @@ ADD:err_po_notela (&err_po_notela) TARGET N IF (NOT 0 Ela)(1 ("<*.matta>"r) + Po
 # Huom: Ill + asti, saakka
 # Abl + katsoen
 # TODO: List of gen-Po, par-Po, Ill-Po, Ela-Po
+
+# A tentative L2 error
+#ADD:err_acc_pss (&err_acc_pss) TARGET N IF (-1 V + Pss + Ind)(0 Gen)(NOT *1 N OR A BARRIER NOT-NPMOD)(Not 1 Po);
+ADD:err_acc_pss (&err_acc_pss) TARGET Pron + Pers + Nom IF (-1 V + Pss + Ind)(NOT *1 N OR A BARRIER NOT-NPMOD)(Not 1 Po);
+## Nähtiin hän.
+
+# And one with a suggestion where we simply change the tag Sg into Attr:
+# TODO: Give example on this:
+ADD:attr-not-pred (&attr-not-pred) TARGET (A Sg) IF (NOT 0 Attr OR Gen) (1 CC LINK *1 COMMON-N) ;
+COPY:attr-not-pred (Attr &SUGGEST) EXCEPT (Sg) TARGET (&attr-not-pred) ;
+# The method is: Add &SUGGEST to a copied reading to *generate* a
+# suggestion form from that reading. The copy should contain the error
+# tag too – &-prefixed error tags are ignored when generating, but
+# used to create human-readable messages.
+
 
 # Simple punctuation rules showing how to change the lemma in the suggestions:
 ADD:use-guillemets (&guillemets) TARGET (""");
