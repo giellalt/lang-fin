@@ -155,6 +155,8 @@ LIST Abl = Abl ;
 LIST Com = Com ; #!! Com
 LIST Ess = Ess ; #!! Ess
 LIST Par = Par ; #!! Ess
+LIST Tra = Tra ; #!! Tra
+LIST Abe = Adb ;
 LIST Sg = Sg ;   #!! Sg
 LIST Pl = Pl ;   #!! Pl
 
@@ -215,8 +217,12 @@ SET VFIN = Ind OR Cond OR Pot ;
 
 LIST Err/Orth = Err/Orth Err/Orth-a/á Err/Orth-nom/gen Err/Orth-nom/acc Err/DerSub Err/CmpSub Err/UnspaceCmp Err/HyphSub Err/SpaceCmp Err/Spellrelax err_orth_mt ; #!! Err/Orth
 
-LIST POGEN = "takia" ;
+LIST POGEN = "luona" "luota" "takia" "varten" "vuoksi"  ; # Only as POGEN
+LIST POGEN/ADV = "takana" ;
 LIST POELA = "huolimatta" ;
+
+# ISO: Sekä adverbina että adpositiona käytettäviä sanoja:
+# edellä, edelle, edeltä; edessä, eteen, edestä | sisällä, sisälle, sisältä; sisässä, sisään, sisästä | lähellä, lähelle, läheltä | keskellä, keskelle, keskeltä | ympärillä, ympärille, ympäriltä | ohessa, oheen, ohesta | takana, taakse, takaa | alla, alle, alta | yllä, ylle, yltä | vailla, vaille | vastassa, vastaan | mukana, mukaan | alitse, ylitse, ohitse | ali, yli, läpi, ohi, ympäri, kohti, vastapäätä | lisäksi, ilman, kesken, ennen
 
 #!! !Semantic tags
 
@@ -610,10 +616,13 @@ SET CCCOMMA = CC OR COMMA ;
 
 
 
+# ===================================== #
+#!! !!! Grammarchecker rules begin here 
+# ===================================== #
 
 
 
-#!! !Grammarchecker sets
+#!! !!Grammarchecker sets
 
 LIST &err_agr = &err_agr ;
 LIST &err_agr_sg1 = &err_agr_sg1 ;
@@ -631,8 +640,11 @@ LIST &err_ext-agr = &err_ext-agr ;
 LIST &err_ext-vagr = &err_ext-vagr ;
 LIST &err_acc_pss = &err_acc_pss ;
 LIST &err_neg_posv = &err_neg_posv ;
-
+LIST &err_po_asti = &err_po_asti ;
+	
 MAPPING-PREFIX = & ;
+
+#!! !!Grammarchecker rules
 
 SECTION
 
@@ -643,6 +655,10 @@ ADD:spell-it-all (&typo &SUGGESTWF) (<spelled>) ;
 # But perhaps you want to only suggest spellings of words that are not inside "quotes":
 ADD:spell-conservatively (&typo &SUGGESTWF) (<spelled>) IF (NEGATE -1 QMARK LINK 2 QMARK);
 
+
+
+#!! !Agreement rules
+
 # A simple grammar checker rule without suggestions: Ensure preceding nominal agrees with the verb
 ADD:err_agr_sg1 (&err_agr_sg1) TARGET V IF (NOT -1 Sg1 OR Interr)(-1 Pron + Sg1 + Nom) (0 V + Ind) (NOT 0 Sg1);
 ADD:err_agr_sg2 (&err_agr_sg2) TARGET V IF (NOT -1 Sg2 OR Interr)(-1 Pron + Sg2 + Nom) (0 V + Ind) (NOT 0 Sg2);
@@ -651,15 +667,23 @@ ADD:err_agr_pl1 (&err_agr_pl1) TARGET V IF (NOT -1 Pl2 OR Interr)(-1 Pron + Pl1 
 ADD:err_agr_pl2 (&err_agr_pl2) TARGET V IF (NOT -1 Pl2 OR Interr)(-1 Pron + Pl2 + Nom) (0 V + Ind) (NOT 0 Pl2);
 ADD:err_agr_pl3 (&err_agr_pl3) TARGET V IF (NOT -1 Pl3)(-1 Pron + Pl3 + Nom) (0 V + Ind) (NOT 0 Pl3);
 
+
+#!! !Negation verb rules
+
 ADD:err_neg_posv (&err_neg_posv) TARGET V IF (-1 Neg)(NOT -1 Foc/ka)(0 VFIN)(NOT 0 ConNeg);
 
 
-# Postposition rules
+#!! !Postposition rules
 
 #3ADD:err_po_notgen (&err_po_notgen) TARGET N IF (NOT 0 Gen OR Par)(1C Po);
 ADD:err_po_notgen (&err_po_notgen) TARGET N IF (NOT 0 Gen)(1 POGEN);
 ADD:err_po_notela (&err_po_notgen) TARGET N IF (NOT 0 Ela)(1 POELA);
 ADD:err_po_notela (&err_po_notela) TARGET N IF (NOT 0 Ela)(1 ("<*.matta>"r) + Po);
+
+ADD:err_po_asti (&err_po_asti) TARGET N IF (NOT 0 Ill OR All OR Tra OR Ela OR Abl) (1 ("asti"));
+# Hän viipyy täällä iltaan asti
+# Hän viipyy täällä ilta asti 
+
 
 # Huom: minusta huolimatta+Po
 # Huom: Ill + asti, saakka
