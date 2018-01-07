@@ -648,6 +648,8 @@ MAPPING-PREFIX = & ;
 
 SECTION
 
+#!! !Speller rules
+
 # Speller suggestions rule – add &SUGGESTWF to any spelling suggestion
 # that we actually want to suggest to the user.
 # The simplest is to just add it to all spelled words:
@@ -690,10 +692,16 @@ ADD:err_po_asti (&err_po_asti) TARGET N IF (NOT 0 Ill OR All OR Tra OR Ela OR Ab
 # Abl + katsoen
 # TODO: List of gen-Po, par-Po, Ill-Po, Ela-Po
 
+
+#!! !L2 rules
+
 # A tentative L2 error
 #ADD:err_acc_pss (&err_acc_pss) TARGET N IF (-1 V + Pss + Ind)(0 Gen)(NOT *1 N OR A BARRIER NOT-NPMOD)(Not 1 Po);
 ADD:err_acc_pss (&err_acc_pss) TARGET Pron + Pers + Nom IF (-1 V + Pss + Ind)(NOT *1 N OR A BARRIER NOT-NPMOD)(Not 1 Po);
 ## Nähtiin hän.
+
+
+#!! ! NP internal rules
 
 # And one with a suggestion where we simply change the tag Sg into Attr:
 # TODO: Give example on this:
@@ -704,6 +712,9 @@ COPY:attr-not-pred (Attr &SUGGEST) EXCEPT (Sg) TARGET (&attr-not-pred) ;
 # tag too – &-prefixed error tags are ignored when generating, but
 # used to create human-readable messages.
 
+
+
+#!! ! Punctuation rules
 
 # Simple punctuation rules showing how to change the lemma in the suggestions:
 ADD:use-guillemets (&guillemets) TARGET (""");
