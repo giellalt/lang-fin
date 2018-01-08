@@ -35,7 +35,6 @@ LEXICON PUNCTUATION
  ....+Err/Orth+Punct:.... # ;
   %!?+Err/Orth+Punct:%!?  # ;
   ?%!+Err/Orth+Punct:?%!  # ;
-                  %#:%#   # ;
 
 !! The clause level punctuation marks are used in clause boundaries. The most
 !! typical of these is comma. The colon and semicolon are too. The clause
@@ -138,7 +137,7 @@ _+Punct:_  #    ;
 ®+Punct:®  #    ;
 ™+Punct:™  #    ;
 ©+Punct:©  #    ;
-%#+Punct:%#    #    ;
+%#+Punct:%#7 #    ;
 !! The lines below this one are not from any referenced source
 §§+Punct:§§ #   ;
 ¶+Punct:¶  #    ;
