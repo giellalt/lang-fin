@@ -39,7 +39,7 @@
 # echo "Hän ei tulee." | sh modes/fingram.mode  # from the terminal
 #
 # The basic pipeline, in case modes (above) does not work
-#  echo "Hän ei tulee." | hfst-tokenise —g ../tokenisers/tokeniser-gramcheck-gt-desc.pmhfst | vislcg3 -g disambiguator.cg3  | vislcg3 -g grammarchecker.cg3 -t
+#  echo "Hän ei tulee." | hfst-tokenise -g ../tokenisers/tokeniser-gramcheck-gt-desc.pmhfst | vislcg3 -g disambiguator.cg3  | vislcg3 -g grammarchecker.cg3 -t
 
 # ---------------------- #
 #   Other debug-pipes:   #
@@ -685,7 +685,7 @@ ADD:err_po_notgen (&err_po_notgen) TARGET N IF (NOT 0 Gen)(1 POGEN);
 ADD:err_po_notela (&err_po_notgen) TARGET N IF (NOT 0 Ela)(1 POELA);
 ADD:err_po_notela (&err_po_notela) TARGET N IF (NOT 0 Ela)(1 ("<*.matta>"r) + Po);
 
-ADD:err_po_asti (&err_po_asti) TARGET N IF (NOT 0 Ill OR All OR Tra OR Ela OR Abl) (1 ("asti"));
+ADD:err_po_asti (&err_po_asti) TARGET N OR Pron IF (NOT 0 Ill OR All OR Tra OR Ela OR Abl) (1 ("asti"));
 # Hän viipyy täällä iltaan asti
 # Hän viipyy täällä ilta asti 
 
