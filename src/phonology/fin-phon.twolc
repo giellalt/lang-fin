@@ -6,12 +6,26 @@ A B C D E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž Å Ä Ö
 ‐ – %- 
 ’ ' %" ” »
 ! Others...
-%#  %> »
+%#
 ! Boundaries to kill
 %_:0
 %#:%-
 %#:%#
 % 
+
+! Literal quotes and angles must be escaped (cf morpheme boundaries further down), will be converted to proper symbols later:
+ »7     ! »
+ «7     ! «
+ %[%>%] ! >
+ %[%<%] ! <
+
+! Morpheme boundaries to be killed later:
+ «  ! Derivational prefix
+ »  ! Derivational suffix
+ %< ! Inflectional prefx
+ %> ! Inflectional suffix
+ #  ! Word boundary for both lexicalised and dynamic compounds
+ %^ ! (exceptional) soft hyphenation point
 
 ! these may leak from omorfi conversion...
 %{DB%}:0

@@ -27,15 +27,15 @@ LEXICON PUNCTUATION
 !! have separate analyses.
 !!€gt-norm: Punctuation and symbols
 !!€ .: .+Punct # full stop
-.+Punct:.      #        ;
-%!+Punct:%!      #        ;
-?+Punct:?        #        ;
-...+Punct:...    #    ;
-..+Err/Orth+Punct:..  #    ;
-....+Err/Orth+Punct:.... # ;
-%!?+Err/Orth+Punct:%!?    #    ;
-?%!+Err/Orth+Punct:?%!    #    ;
-%#:%#    #    ;
+             .+Punct:.    # ;
+            %!+Punct:%!   # ;
+             ?+Punct:?    # ;
+           ...+Punct:...  # ;
+   ..+Err/Orth+Punct:..   # ;
+ ....+Err/Orth+Punct:.... # ;
+  %!?+Err/Orth+Punct:%!?  # ;
+  ?%!+Err/Orth+Punct:?%!  # ;
+                  %#:%#   # ;
 
 !! The clause level punctuation marks are used in clause boundaries. The most
 !! typical of these is comma. The colon and semicolon are too. The clause
@@ -55,16 +55,14 @@ LEXICON PUNCTUATION
 !! The bracketed question mark is used to indicate uncertainty and bracketed
 !! exclamation mark to indicate surprise, both of these annotations are used
 !! within sentence as other bracketed constructions.
-%<+Punct:%< #   ;
-%>+Punct:%> #   ;
 (+Punct:(   #   ;
 )+Punct:)   #   ;
 [+Punct:[   #   ;
 ]+Punct:]   #   ;
 {+Punct:{   #   ;
 }+Punct:}   #   ;
-‹+Punct:‹ #    ;
-›+Punct:› #    ;
+‹+Punct:‹   #   ;
+›+Punct:›   #   ;
 (?)+Punct:(?)  #    ;
 (%!)+Punct:(%!)    #    ;
 
@@ -221,8 +219,8 @@ M€+ACR:M€  SYM_€  ;
 {+Punct:{  PUNCT_PISTE  ;
 }+Punct:}  PUNCT_PISTE  ;
 *+Punct:*  PUNCT_PISTE  ;
-%<+Punct:%<  PUNCT_PISTE  ;
-%>+Punct:%>  PUNCT_PISTE  ;
+%<+Punct:%[%<%] PUNCT_PISTE  ;
+%>+Punct:%[%>%] PUNCT_PISTE  ;
 %;+Punct:%;  PUNCT_PISTE  ;
 %:+Punct:%:  PUNCT_PISTE  ;
 %!+Punct:%!  PUNCT_PISTE  ;
@@ -232,19 +230,11 @@ M€+ACR:M€  SYM_€  ;
 '+Punct+Quote:'  PUNCT_PISTE  ;
 ’+Punct+Quote:’  PUNCT_PISTE  ;
 ”+Punct+Quote:”  PUNCT_PISTE  ;
-«+Punct+Quote:«  PUNCT_PISTE  ;
-»+Punct+Quote:»  PUNCT_PISTE  ;
+«+Punct+Quote:«7 PUNCT_PISTE  ;
+»+Punct+Quote:»7 PUNCT_PISTE  ;
 %"+Punct+Quote:%"  PUNCT_PISTE  ;
 ´+Punct+Quote:´  SYM_.  ;
 `+Punct+Quote:`  SYM_.  ;
-´%+Punct%+Quote:´   SYMBOL_PISTE    ;
-`%+Punct%+Quote:`   SYMBOL_PISTE    ;
-'%+Punct%+Quote:'   SYMBOL_PISTE    ;
-’%+Punct%+Quote:’   SYMBOL_PISTE    ;
-”%+Punct%+Quote:”   SYMBOL_PISTE    ;
-«%+Punct%+Quote:«   SYMBOL_PISTE    ;
-»%+Punct%+Quote:»   SYMBOL_PISTE    ;
-%"%+Punct%+Quote:%"  SYMBOL_PISTE    ;
 ≤+Punct:≤  SYM_.  ;
 =+Punct:=  SYM_.  ;
 ≥+Punct:≥  SYM_.  ;
@@ -290,8 +280,6 @@ $+Punct:$  SYM_$  ;
 {+Punct:{  SYMBOL_PISTE    ;
 }+Punct:}  SYMBOL_PISTE    ;
 #+Punct:#  SYMBOL_PISTE    ;
-%<+Punct:%< SYMBOL_PISTE    ;
-%>+Punct:%> SYMBOL_PISTE    ;
 %;+Punct:%; SYMBOL_PISTE    ;
 %:+Punct:%: SYMBOL_PISTE    ;
 %!+Punct:%! SYMBOL_PISTE    ;
