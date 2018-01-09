@@ -29,6 +29,7 @@ The codes:
  * {{+N }}: Noun
  * {{+A }}: Adjective
  * {{+ACR }}: Acronym
+ * {{+ABBR }}: Abbreviation
  * {{+Acr }}: Acronym
  * {{+Num }}: Numerals
  * {{+Adv }}: Adverb
@@ -158,6 +159,7 @@ Symbols are not part of linguistic data per se so we classify them according
 to the needs of end user applications
 
  * {{+Punct }}: any punctuation
+ * {{+Quote }}: quote marks
 
 The analyses for symbols are like POSes:
 * __.: __ {{.+Punct }} (Eng. # .)
