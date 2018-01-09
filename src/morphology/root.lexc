@@ -40,6 +40,7 @@ Multichar_Symbols
 +N !!= * {{@CODE@}}: Noun
 +A !!= * {{@CODE@}}: Adjective
 +ACR !!= * {{@CODE@}}: Acronym
++ABBR !!= * {{@CODE@}}: Abbreviation
 +Acr !!= * {{@CODE@}}: Acronym
 +Num !!= * {{@CODE@}}: Numerals
 +Adv !!= * {{@CODE@}}: Adverb
@@ -173,6 +174,7 @@ Multichar_Symbols
 !! to the needs of end user applications
 
 +Punct !!= * {{@CODE@}}: any punctuation
++Quote !!= * {{@CODE@}}: quote marks
 
 !! The analyses for symbols are like POSes:
 !!€ .: .+Punct # .
