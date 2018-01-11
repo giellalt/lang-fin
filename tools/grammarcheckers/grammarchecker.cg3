@@ -641,6 +641,14 @@ LIST &err_ext-vagr = &err_ext-vagr ;
 LIST &err_acc_pss = &err_acc_pss ;
 LIST &err_neg_posv = &err_neg_posv ;
 LIST &err_po_asti = &err_po_asti ;
+
+LIST &double-space-before = &double-space-before ;
+LIST &space-after-paren-beg = &space-after-paren-beg ;
+LIST &space-before-paren-end = &space-before-paren-end ;
+LIST &space-before-punct-mark = &space-before-punct-mark ;
+
+LIST &typo = &typo ;
+
 	
 MAPPING-PREFIX = & ;
 
@@ -726,3 +734,12 @@ COPY:right-guillemet ("»" &SUGGEST) EXCEPT (""") TARGET (&guillemets) ;
 
 ADD:use-ellipsis (&ellipsis) TARGET ("...");
 COPY:use-ellipsis ("…" &SUGGEST) EXCEPT ("...") TARGET (&ellipsis) ;
+
+
+#!! ! Spacing errors
+# ------------------
+
+ADD (&double-space-before)     (<doubleSpaceBefore>);
+ADD (&space-after-paren-beg)   (<spaceAfterParenBeg>);
+ADD (&space-before-paren-end)  (<spaceBeforeParenEnd>);
+ADD (&space-before-punct-mark) (<SpaceBeforePunctMark>);
