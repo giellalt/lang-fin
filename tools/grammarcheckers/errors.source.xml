@@ -32,6 +32,21 @@
         <description xml:lang="se">"$1" maŋis galggašii leat blah</description>
       </body>
     </default>
+
+    <default type="Style error">
+      <ids>
+        <re v="space-.*"/>
+        <re v=".*-space-.*"/>
+      </ids>
+      <header>
+        <title xml:lang="en">Extra spaces</title>
+        <title xml:lang="fi">Lisää välejä</title>
+      </header>
+      <body>
+        <description xml:lang="en">There should be no space between "$1" and the punctuation mark.</description>
+        <description xml:lang="fi">"$1" ja Xmerkin välilla ei saa välimerkki</description>
+      </body>
+    </default>
   </defaults>
 
   <error id="real-override">
@@ -127,6 +142,28 @@
     <examples>
       <ex xml:lang="se">Soai leaigga sihke dolkan ja suhttan gullat olbmuid šláddariid sudno birra, ja bovdiiga.</ex>
     </examples>
+    </body>
+  </error>
+
+  <error id="double-space-before">
+    <header>
+      <title xml:lang="en">Extra spaces</title>
+      <title xml:lang="fi">Lisää välejä</title>
+    </header>
+    <body>
+      <description xml:lang="en">There should be no space between "$1" and the punctuation mark.</description>
+      <description xml:lang="fi">"$1" ja Xmerkin välilla ei saa välimerkki</description>
+    </body>
+  </error>
+
+  <error id="typo">
+    <header>
+      <title xml:lang="en">Spelling error</title>
+      <title xml:lang="fi">Oikolukuvirhe</title>
+    </header>
+    <body>
+      <description xml:lang="en">The word "$1" seems to be misspelled</description>
+      <description xml:lang="fi">"$1" voi olla oikolukuvirhe</description>
     </body>
   </error>
 
