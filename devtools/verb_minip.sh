@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # script to generate paradigms for generating word forms
-# command, when you are in fkv:
+# command, when you are in fin:
 # sh devtools/verb_minip.sh v43 | less
 # sh devtools/verb_minip.sh silitellä 
 
@@ -21,7 +21,7 @@ for lemma in $(cat $L_FILE);
 do
  for form in $(cat $P_FILE);
  do
-   echo "${lemma}${form}" | $LOOKUP $GTHOME/langs/fkv/src/generator-gt-norm.xfst
+   echo "${lemma}${form}" | $LOOKUP $GTHOME/langs/fin/src/generator-gt-norm.xfst
  done
 done
 
