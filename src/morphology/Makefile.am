@@ -26,8 +26,8 @@ GT_LEXC_SRCS_L1_L2=\
 			 compounding.lexc \
 			 stems/abbreviations.lexc \
 			 stems/acro.lexc \
-			 stems/adj.lexc \
-			 stems/adv.lexc \
+			 stems/adjectives.lexc \
+			 stems/adverbs.lexc \
 			 stems/cc.lexc \
 			 stems/cs.lexc \
 			 stems/det.lexc \
@@ -42,7 +42,7 @@ GT_LEXC_SRCS_L1_L2=\
 			 stems/prefixes.lexc \
 			 stems/punct.lexc \
 			 stems/suffixes.lexc \
-			 stems/verb.lexc \
+			 stems/verbs.lexc \
 			 stems/exceptions.lexc \
 			 affixes/acronyms.lexc \
 			 affixes/adjectives.lexc \
