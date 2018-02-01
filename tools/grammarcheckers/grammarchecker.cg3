@@ -193,9 +193,6 @@ LIST ImprtII = ImprtII ;	   #!! ImprtII
 LIST Sg1 = Sg1 (p1 sg) ;			   #!! Sg1
 LIST Sg2 = Sg2 (p2 sg) ;			   #!! Sg2
 LIST Sg3 = Sg3 (p3 sg) ;			   #!! Sg3
-LIST Du1 = Du1 (p1 du) ;			   #!! Du1
-LIST Du2 = Du2 (p2 du) ;			   #!! Du2
-LIST Du3 = Du3 (p3 du) ;			   #!! Du3
 LIST Pl1 = Pl1 (p1 pl) ;			   #!! Pl1
 LIST Pl2 = Pl2 (p2 pl);			   #!! Pl2
 LIST Pl3 = Pl3 (p3 pl);			   #!! Pl3
@@ -217,7 +214,7 @@ SET VFIN = Ind OR Cond OR Pot ;
 
 LIST Err/Orth = Err/Orth Err/Orth-a/á Err/Orth-nom/gen Err/Orth-nom/acc Err/DerSub Err/CmpSub Err/UnspaceCmp Err/HyphSub Err/SpaceCmp Err/Spellrelax err_orth_mt ; #!! Err/Orth
 
-LIST POGEN = "luona" "luota" "takia" "varten" "vuoksi"  ; # Only as POGEN
+LIST POGEN = "luona" "luota" "takia" "vuoksi"  ; # Only as POGEN
 LIST POGEN/ADV = "takana" ;
 LIST POELA = "huolimatta" ;
 
