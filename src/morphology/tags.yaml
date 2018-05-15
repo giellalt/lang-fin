@@ -1,0 +1,148 @@
+!!python/object/apply:collections.defaultdict
+args:
+- !!python/name:__builtin__.set ''
+dictitems:
+  Der: !!set
+    !!python/unicode 'Der%/sti': null
+    !!python/unicode 'Der%/ttain': null
+    !!python/unicode 'Der/s': null
+    !!python/unicode 'Der/sti': null
+  Dial: !!set
+    !!python/unicode 'Dial/East': null
+    !!python/unicode 'Dial/Finland': null
+    !!python/unicode 'Dial/Standard': null
+    !!python/unicode 'Dial/West': null
+    !!python/unicode 'Dial/standard': null
+  Err: !!set
+    !!python/unicode 'Err/Orth': null
+  Foc: !!set
+    !!python/unicode 'Foc%/pa': null
+    !!python/unicode 'Foc%/pa#kin': null
+    !!python/unicode 'Foc/han': null
+    !!python/unicode 'Foc/han%': null
+    !!python/unicode 'Foc/ka': null
+    !!python/unicode 'Foc/kaan': null
+    !!python/unicode 'Foc/kaan%': null
+    !!python/unicode 'Foc/kin': null
+    !!python/unicode 'Foc/kin%': null
+    !!python/unicode 'Foc/pa': null
+    !!python/unicode 'Foc/pa%': null
+    !!python/unicode 'Foc/s': null
+  Hom: !!set
+    !!python/unicode 'Hom1': null
+    !!python/unicode 'Hom2': null
+  OLang: !!set
+    !!python/unicode 'OLang/eng': null
+  Pref: !!set
+    !!python/unicode 'Pref': null
+  Sem: !!set
+    !!python/unicode 'Sem%/Geo': null
+    !!python/unicode 'Sem%/Human': null
+    !!python/unicode 'Sem%/Org': null
+    !!python/unicode 'Sem/Fem': null
+    !!python/unicode 'Sem/Geo': null
+    !!python/unicode 'Sem/Human': null
+    !!python/unicode 'Sem/Mal': null
+    !!python/unicode 'Sem/Org': null
+  Use: !!set
+    !!python/unicode 'Use/Arch': null
+    !!python/unicode 'Use/Circ': null
+    !!python/unicode 'Use/Marg': null
+    !!python/unicode 'Use/NG': null
+    !!python/unicode 'Use/sub': null
+  resten: !!set
+    ? !!python/unicode ''
+    : null
+    !!python/unicode '% ': null
+    !!python/unicode '% Bogusky': null
+    !!python/unicode '% Economics': null
+    !!python/unicode '% Voss': null
+    !!python/unicode '3': null
+    !!python/unicode 'A': null
+    !!python/unicode 'ABBR': null
+    !!python/unicode 'ACR': null
+    !!python/unicode 'Abe': null
+    !!python/unicode 'Abl': null
+    !!python/unicode 'Acc': null
+    !!python/unicode 'Act': null
+    !!python/unicode 'Act%': null
+    !!python/unicode 'Ade': null
+    !!python/unicode 'Adp': null
+    !!python/unicode 'Adv': null
+    !!python/unicode 'Adv%': null
+    !!python/unicode 'All': null
+    !!python/unicode 'Bickenbach': null
+    !!python/unicode 'CC': null
+    !!python/unicode 'CC#ei': null
+    !!python/unicode 'CC#ei%': null
+    !!python/unicode 'CS': null
+    !!python/unicode 'CS#ei': null
+    !!python/unicode 'Card': null
+    !!python/unicode 'Com': null
+    !!python/unicode 'Comp': null
+    !!python/unicode 'Dash': null
+    !!python/unicode 'Dem': null
+    !!python/unicode 'Ela': null
+    !!python/unicode 'Ess': null
+    !!python/unicode 'Gen': null
+    !!python/unicode 'Gyr': null
+    !!python/unicode 'Ill': null
+    !!python/unicode 'Imprt': null
+    !!python/unicode 'Impv': null
+    !!python/unicode 'Ind': null
+    !!python/unicode 'Indef': null
+    !!python/unicode 'Ine': null
+    !!python/unicode 'Ins': null
+    !!python/unicode 'Interj': null
+    !!python/unicode 'Interr': null
+    !!python/unicode 'Interr#ei%': null
+    !!python/unicode 'Kennedy': null
+    !!python/unicode 'N': null
+    !!python/unicode 'Neg': null
+    !!python/unicode 'Nom': null
+    !!python/unicode 'Num': null
+    !!python/unicode 'Num#': null
+    !!python/unicode 'Ord': null
+    !!python/unicode 'Par': null
+    !!python/unicode 'Pcle': null
+    !!python/unicode 'Pcle#ei%': null
+    !!python/unicode 'Pcle#kin': null
+    !!python/unicode 'Pcle%': null
+    !!python/unicode 'Pers': null
+    !!python/unicode 'Pl': null
+    !!python/unicode 'Pl%': null
+    !!python/unicode 'Pl1': null
+    !!python/unicode 'Pl2': null
+    !!python/unicode 'Pl3': null
+    !!python/unicode 'Po': null
+    !!python/unicode 'Pr': null
+    !!python/unicode 'Pro': null
+    !!python/unicode 'Pron': null
+    !!python/unicode 'Prop': null
+    !!python/unicode 'Prs': null
+    !!python/unicode 'Punct': null
+    !!python/unicode 'Punct%': null
+    !!python/unicode 'Px3': null
+    !!python/unicode 'PxPl1': null
+    !!python/unicode 'PxPl2': null
+    !!python/unicode 'PxSg1': null
+    !!python/unicode 'PxSg2': null
+    !!python/unicode 'Qnt': null
+    !!python/unicode 'Qst': null
+    !!python/unicode 'Qst%': null
+    !!python/unicode 'Qu': null
+    !!python/unicode 'Quote': null
+    !!python/unicode 'Recipr': null
+    !!python/unicode 'Refl': null
+    !!python/unicode 'Rel': null
+    !!python/unicode 'Sg': null
+    !!python/unicode 'Sg%': null
+    !!python/unicode 'Sg1': null
+    !!python/unicode 'Sg2': null
+    !!python/unicode 'Sg3': null
+    !!python/unicode 'Sup': null
+    !!python/unicode 'Superl': null
+    !!python/unicode 'Tra': null
+    !!python/unicode 'TruncPrefix': null
+    !!python/unicode 'V': null
+    !!python/unicode 's': null
