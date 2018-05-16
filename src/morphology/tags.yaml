@@ -1,122 +1,117 @@
-!!python/object/apply:collections.defaultdict
-args:
-- !!python/name:__builtin__.set ''
-dictitems:
-  Der: !!set
-    !!python/unicode 'Der%/sti': null
-    !!python/unicode 'Der%/ttain': null
-    !!python/unicode 'Der/sti': null
-  Dial: !!set
-    !!python/unicode 'Dial/East': null
-    !!python/unicode 'Dial/Standard': null
-    !!python/unicode 'Dial/West': null
-    !!python/unicode 'Dial/standard': null
-  Err: !!set
-    !!python/unicode 'Err/Orth': null
-  Foc: !!set
-    !!python/unicode 'Foc%/pa': null
-    !!python/unicode 'Foc%/pa#kin': null
-    !!python/unicode 'Foc/han': null
-    !!python/unicode 'Foc/ka': null
-    !!python/unicode 'Foc/pa': null
-    !!python/unicode 'Foc/s': null
-  Hom: !!set
-    !!python/unicode 'Hom1': null
-    !!python/unicode 'Hom2': null
-  Pref: !!set
-    !!python/unicode 'Pref': null
-  Sem: !!set
-    !!python/unicode 'Sem%/Geo': null
-    !!python/unicode 'Sem%/Human': null
-    !!python/unicode 'Sem%/Org': null
-    !!python/unicode 'Sem/Fem': null
-    !!python/unicode 'Sem/Geo': null
-    !!python/unicode 'Sem/Human': null
-    !!python/unicode 'Sem/Mal': null
-    !!python/unicode 'Sem/Org': null
-  Use: !!set
-    !!python/unicode 'Use/Circ': null
-    !!python/unicode 'Use/Marg': null
-    !!python/unicode 'Use/NG': null
-    !!python/unicode 'Use/sub': null
-  resten: !!set
-    ? !!python/unicode ''
-    : null
-    !!python/unicode '% Bogusky': null
-    !!python/unicode '% Economics': null
-    !!python/unicode '% Voss': null
-    !!python/unicode '3': null
-    !!python/unicode 'A': null
-    !!python/unicode 'ABBR': null
-    !!python/unicode 'ACR': null
-    !!python/unicode 'Abe': null
-    !!python/unicode 'Abl': null
-    !!python/unicode 'Acc': null
-    !!python/unicode 'Act': null
-    !!python/unicode 'Ade': null
-    !!python/unicode 'Adp': null
-    !!python/unicode 'Adv': null
-    !!python/unicode 'Adv%': null
-    !!python/unicode 'All': null
-    !!python/unicode 'Bickenbach': null
-    !!python/unicode 'CC': null
-    !!python/unicode 'CC#ei': null
-    !!python/unicode 'CC#ei%': null
-    !!python/unicode 'CS': null
-    !!python/unicode 'CS#ei': null
-    !!python/unicode 'Card': null
-    !!python/unicode 'Com': null
-    !!python/unicode 'Comp': null
-    !!python/unicode 'Dem': null
-    !!python/unicode 'Ela': null
-    !!python/unicode 'Ess': null
-    !!python/unicode 'Gen': null
-    !!python/unicode 'Gyr': null
-    !!python/unicode 'Ill': null
-    !!python/unicode 'Imprt': null
-    !!python/unicode 'Ind': null
-    !!python/unicode 'Indef': null
-    !!python/unicode 'Ine': null
-    !!python/unicode 'Ins': null
-    !!python/unicode 'Interj': null
-    !!python/unicode 'Interr': null
-    !!python/unicode 'Interr#ei%': null
-    !!python/unicode 'Kennedy': null
-    !!python/unicode 'N': null
-    !!python/unicode 'Neg': null
-    !!python/unicode 'Nom': null
-    !!python/unicode 'Num': null
-    !!python/unicode 'Num#': null
-    !!python/unicode 'Ord': null
-    !!python/unicode 'Par': null
-    !!python/unicode 'Pcle': null
-    !!python/unicode 'Pcle#ei%': null
-    !!python/unicode 'Pcle#kin': null
-    !!python/unicode 'Pcle%': null
-    !!python/unicode 'Pers': null
-    !!python/unicode 'Pl': null
-    !!python/unicode 'Pl1': null
-    !!python/unicode 'Pl2': null
-    !!python/unicode 'Pl3': null
-    !!python/unicode 'Po': null
-    !!python/unicode 'Pr': null
-    !!python/unicode 'Pro': null
-    !!python/unicode 'Pron': null
-    !!python/unicode 'Prop': null
-    !!python/unicode 'Prs': null
-    !!python/unicode 'Punct': null
-    !!python/unicode 'Qnt': null
-    !!python/unicode 'Qst': null
-    !!python/unicode 'Qu': null
-    !!python/unicode 'Recipr': null
-    !!python/unicode 'Refl': null
-    !!python/unicode 'Rel': null
-    !!python/unicode 'Sg': null
-    !!python/unicode 'Sg1': null
-    !!python/unicode 'Sg2': null
-    !!python/unicode 'Sg3': null
-    !!python/unicode 'Sup': null
-    !!python/unicode 'Superl': null
-    !!python/unicode 'Tra': null
-    !!python/unicode 'V': null
-    !!python/unicode 's': null
+Der
+	Der%/sti
+	Der%/ttain
+	Der/sti
+Dial
+	Dial/East
+	Dial/Standard
+	Dial/West
+	Dial/standard
+Err
+	Err/Orth
+Foc
+	Foc%/pa
+	Foc%/pa#kin
+	Foc/han
+	Foc/ka
+	Foc/pa
+	Foc/s
+Hom
+	Hom1
+	Hom2
+Pref
+	Pref
+Sem
+	Sem%/Geo
+	Sem%/Human
+	Sem%/Org
+	Sem/Fem
+	Sem/Geo
+	Sem/Human
+	Sem/Mal
+	Sem/Org
+Use
+	Use/Circ
+	Use/Marg
+	Use/NG
+	Use/sub
+resten
+	
+	% Bogusky
+	% Economics
+	% Voss
+	3
+	A
+	ABBR
+	ACR
+	Abe
+	Abl
+	Acc
+	Act
+	Ade
+	Adp
+	Adv
+	Adv%
+	All
+	Bickenbach
+	CC
+	CC#ei
+	CC#ei%
+	CS
+	CS#ei
+	Card
+	Com
+	Comp
+	Dem
+	Ela
+	Ess
+	Gen
+	Gyr
+	Ill
+	Imprt
+	Ind
+	Indef
+	Ine
+	Ins
+	Interj
+	Interr
+	Interr#ei%
+	Kennedy
+	N
+	Neg
+	Nom
+	Num
+	Num#
+	Ord
+	Par
+	Pcle
+	Pcle#ei%
+	Pcle#kin
+	Pcle%
+	Pers
+	Pl
+	Pl1
+	Pl2
+	Pl3
+	Po
+	Pr
+	Pro
+	Pron
+	Prop
+	Prs
+	Punct
+	Qnt
+	Qst
+	Qu
+	Recipr
+	Refl
+	Rel
+	Sg
+	Sg1
+	Sg2
+	Sg3
+	Sup
+	Superl
+	Tra
+	V
+	s
