@@ -23,8 +23,8 @@
 # third is email address for bug reports
 # fourth is name of packages made by make dist, excluding .tar.gz
 # fifth is the project web address
-AC_INIT([Giella fin], [20120821], [flammie@iki.fi], [giella-fin],
-        [http://code.google.com/p/omorfi])
+AC_INIT([Giella fin], [0.1], [feedback@divvun.no], [giella-fin],
+        [http://divvun.no])
 # AC_REVISION is used to get SVN revision into bug reports
 AC_REVISION([$Revision$])
 # These configuration dirs hide some extra cruft
@@ -116,7 +116,7 @@ AM_CONDITIONAL([HAVE_DIALECTS], [test "x$DIALECTS" != "x"])
 # encoded in lexc, and thus does not need any phonology processing.
 # Default: empty, meaning that phonologies will be compiled.
 AC_SUBST([NO_PHONOLOGY], [""])
-AM_CONDITIONAL([SKIP_PHONOLOGY], [test "x$NO_PHONOLOGY" = "x"])
+AM_CONDITIONAL([SKIP_PHONOLOGY], [test "x$NO_PHONOLOGY" != "x"])
 
 # LEXICON_IN_PHONOLOGY
 # Set this to 'yes' IFF a) your phonology is formulated using rewrite rules,
