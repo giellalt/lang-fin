@@ -23,8 +23,8 @@
 # third is email address for bug reports
 # fourth is name of packages made by make dist, excluding .tar.gz
 # fifth is the project web address
-AC_INIT([Giella fin], [0.1], [feedback@divvun.no], [giella-fin],
-        [http://divvun.no])
+AC_INIT([Giella fin], [20120821], [flammie@iki.fi], [giella-fin],
+        [http://code.google.com/p/omorfi])
 # AC_REVISION is used to get SVN revision into bug reports
 AC_REVISION([$Revision$])
 # These configuration dirs hide some extra cruft
