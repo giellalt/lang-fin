@@ -1,11 +1,15 @@
-!!  !!!Numerals
-!!  Numerals are morphologically nominals, only exception to noun inflection
-!!  is that they form compounds with special agreeing patterns. Syntactically
-!!  and semantically numerals are clearly separate subset of nominals. Some
-!!  of the numerals stem variation patterns are rare to non-existent for other
-!!  nominal types. Numerals have two subclasses, cardinals and ordinals.
+!!  !!!Finnish Numerals
 
 LEXICON NUMERAL
+
+0    NUM_CARD_ALL    ;
+0    NUM_ORD_ALL ;
+0    NUM_OTHERS  ;
+
+ +Use/Circ: ARABICS ;          ! for the arabic numerals        !
+ +Use/Circ: ROMAN ;           ! for the roman numerals         !
+ +Use/Circ: NUM-PREFIXES ;    ! for §34 etc.                   !
+ +Use/Circ: ISOLATED-NUMEXP ; ! for ½ etc.                     !
 
 
 biljardi+Num:biljard  NUM_MILJARDI  ;
