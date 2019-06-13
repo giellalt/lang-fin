@@ -619,7 +619,8 @@ LEXICON Root
 0   NOUN ;
 0   ADJECTIVE ;
 0   VERB    ;
-0   NUMERAL ;
+0   NumberRoot ; ! The main lexicon
+0   NUMERAL ;  ! 
 0   DIGITS ;
 0   ACRONYM ;
 0   PRONOUN    ;
