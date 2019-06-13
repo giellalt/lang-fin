@@ -1204,6 +1204,11 @@ LIST PRINCIPAL-FUNCTION-DECLARATIONS = @SUBJ @OBJ @SPRED ;
 # ========================================================================
 
 
+BEFORE-SECTIONS
+
+ADD:fin (<fin>) TARGET WORD ;
+
+
 SECTION
 
 # Dialects
