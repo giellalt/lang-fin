@@ -49,7 +49,7 @@ GT_LEXC_SRCS_L1_L2=\
 			 affixes/adv.lexc \
 			 affixes/digits.lexc \
 			 affixes/nouns.lexc \
-			 affixes/numeral.lexc \
+			 affixes/numerals.lexc \
 			 affixes/pp.lexc \
 			 affixes/particles.lexc \
 			 affixes/prefix.lexc \
