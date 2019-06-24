@@ -9,33 +9,35 @@
 
 if CAN_DOCC
 
-JSP_PAGES=root-morphology.jspwiki
-# clitics-morphology.jspwiki       \
-# compounding-morphology.jspwiki   \
-# abbreviations-stems.jspwiki      \
-# acronyms-stems.jspwiki           \
-# adjectives-oahpa-stems.jspwiki   \
-# adjectives-stems.jspwiki         \
-# adpositions-stems.jspwiki        \
-# adverbs-stems.jspwiki            \
-# conjunctions-stems.jspwiki       \
-# interjections-stems.jspwiki      \
-# nouns-oahpa-stems.jspwiki        \
-# nouns-stems.jspwiki              \
-# numerals-stems.jspwiki           \
-# particles-stems.jspwiki          \
-# pronouns-stems.jspwiki           \
-# propernouns-stems.jspwiki        \
-# punctuation-stems.jspwiki        \
-# smi-propernouns-stems.jspwiki    \
-# subjunctions-stems.jspwiki       \
-# verbs-stems.jspwiki              \
-# adjectives-oahpa-affixes.jspwiki \
-# adjectives-affixes.jspwiki       \
-# nouns-affixes.jspwiki            \
-# propernouns-affixes.jspwiki      \
-# verbs-affixes.jspwiki
-
+JSP_PAGES=root-morphology.jspwiki  \
+          51-stems.jspwiki \
+          abbr-stems.jspwiki \
+          acro-stems.jspwiki \
+          acronyms-affixes.jspwiki \
+          adjectives-stems.jspwiki \
+          adjectives-affixes.jspwiki \
+          adv-affixes.jspwiki \
+          adv-stems.jspwiki \
+          cc-stems.jspwiki \
+          cs-stems.jspwiki \
+          digits-affixes.jspwiki \
+          digits-stems.jspwiki \
+          exceptions-stems.jspwiki \
+          interj-stems.jspwiki \
+          nouns-stems.jspwiki \
+          nouns-affixes.jspwiki \
+          numerals-affixes.jspwiki \
+          numerals-stems.jspwiki \
+          particles-stems.jspwiki \
+          pp-stems.jspwiki \
+          prefixes-stems.jspwiki \
+          pron-stems.jspwiki \
+          propernouns-stems.jspwiki \
+          punct-stems.jspwiki \
+          suffixes-stems.jspwiki \
+          verbs-stems.jspwiki \
+          verbs-affixes.jspwiki \
+		  fin-phon-phonology.jspwiki 
 ALLINONE_JSP_PAGE=$(srcdir)/$(GTLANG).jspwiki
 
 LINKS=$(srcdir)/Links.jspwiki
