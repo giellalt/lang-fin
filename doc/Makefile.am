@@ -14,7 +14,7 @@ JSP_PAGES=root-morphology.jspwiki  \
           abbr-stems.jspwiki \
           acro-stems.jspwiki \
           acronyms-affixes.jspwiki \
-          adj-stems.jspwiki \
+          adjectives-stems.jspwiki \
           adjectives-affixes.jspwiki \
           adv-affixes.jspwiki \
           adv-stems.jspwiki \
@@ -24,18 +24,18 @@ JSP_PAGES=root-morphology.jspwiki  \
           digits-stems.jspwiki \
           exceptions-stems.jspwiki \
           interj-stems.jspwiki \
-          noun-stems.jspwiki \
+          nouns-stems.jspwiki \
           nouns-affixes.jspwiki \
-          numeral-affixes.jspwiki \
-          numeral-stems.jspwiki \
+          numerals-affixes.jspwiki \
+          numerals-stems.jspwiki \
           particles-stems.jspwiki \
           pp-stems.jspwiki \
           prefixes-stems.jspwiki \
           pron-stems.jspwiki \
-          propernoun-stems.jspwiki \
+          propernouns-stems.jspwiki \
           punct-stems.jspwiki \
           suffixes-stems.jspwiki \
-          verb-stems.jspwiki \
+          verbs-stems.jspwiki \
           verbs-affixes.jspwiki \
 		  fin-phon-phonology.jspwiki 
 ALLINONE_JSP_PAGE=$(srcdir)/$(GTLANG).jspwiki
