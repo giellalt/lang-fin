@@ -38,7 +38,7 @@ GT_LEXC_SRCS_L1_L2=\
 			 stems/particles.lexc \
 			 stems/pp.lexc \
 			 stems/pron.lexc \
-			 stems/propernoun.lexc \
+			 stems/propernouns.lexc \
 			 stems/prefixes.lexc \
 			 stems/punct.lexc \
 			 stems/suffixes.lexc \
