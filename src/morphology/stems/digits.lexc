@@ -8,7 +8,7 @@ LEXICON DIGITS
 !! Zero alone works quite differently:
 !!€gt-norm: Digit zero
 !!€ 0: 0+Num+Sg+Nom
-0    ARABIC ;
+0    ARABIC_pirinen ;
 0    DIGITS_DECIMAL_LOOP ;
 0    DIGITS_ROMANS   ;
      DIGITS_ONWARDS ;
@@ -39,15 +39,15 @@ LEXICON NUM_PREFIXES
 s%.+Use/Circ:s%. ARABIC ;   ! s.24
 
 
-LEXICON ARABIC
+LEXICON ARABIC_pirinen
 !!€gt-norm: int digit loop
 !!€ 13: 13+Num+Card+Sg+Nom
 !!€ 100: 100+Num+Card+Sg+Nom
 !!€ 0000005550000000: 0000005550000000+Num+Card+Sg+Nom
 
-< [1|2|3|4|5|6|7|8|9|%0] >   ARABICLOOP ;
+< [1|2|3|4|5|6|7|8|9|%0] >   ARABICLOOP_pirinen ;
 
-LEXICON ARABICLOOP !!= __@CODE@__ essentially allows any number-sign combination, but is like the other lgs
+LEXICON ARABICLOOP_pirinen !!= __@CODE@__ essentially allows any number-sign combination, but is like the other lgs
 +Use/Circ: DIGITS_ONWARDS ;
 +Use/Circ: ARABIC ;
 %-+Use/Circ:%- ARABIC ;             ! 1-2    multipart numbers continuing as numbers

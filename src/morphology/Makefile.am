@@ -74,8 +74,9 @@ GT_LEXC_L2_SRCS=\
 			$(L2)
 
 # Set this to the names of all generated lexc files, if any
-GENERATED_LEXC_SRCS=generated_files/smi-$(GTLANG)-numerals.lexc \
-                    generated_files/smi-$(GTLANG)-acronyms.lexc \
+GENERATED_LEXC_SRCS=generated_files/smi-digits.lexc \
+                    generated_files/arabic_roman_digits.lexc \
+                    generated_files/smi-acronyms.lexc \
                     generated_files/punctuation.lexc \
                     generated_files/symbols.lexc
 
@@ -89,9 +90,7 @@ GT_LOCAL_SRCS=
 GT_LOCAL_XFSCRIPT_SRCS=
 
 # Define here any additional sources just included in the distro:
-GT_DISTRO_SRCS=stems/$(GTLANG)-acronyms.lexc \
-				stems/numerals.lexc \
-               $(top_srcdir)/src/scripts/smi-$(GTLANG)-conversion.pl
+GT_DISTRO_SRCS=
 
 ### BEGIN: Local processing: ###
 
@@ -103,35 +102,10 @@ GT_DISTRO_SRCS=stems/$(GTLANG)-acronyms.lexc \
 
 GIELLA_LOCAL_TARGETS=
 
-generated_files/smi-acronyms.lexc: \
-			$(GIELLA_SHARED)/smi/src/morphology/stems/smi-acronyms.lexc
+generated_files/%.lexc: \
+			$(GIELLA_SHARED)/smi/src/morphology/stems/%.lexc
 	$(AM_V_at)$(MKDIR_P) generated_files
 	$(AM_V_GEN)cp -f $< $@
-
-generated_files/smi-$(GTLANG)-acronyms.lexc: \
-		generated_files/smi-acronyms.lexc \
-		$(srcdir)/stems/$(GTLANG)-acronyms.lexc
-	$(AM_V_GEN)rm -f $@ && \
-	cp -f $(srcdir)/stems/$(GTLANG)-acronyms.lexc $@ && \
-	echo "" >> $@ && \
-	echo "! <--- Dump from SMI -->" >> $@ && \
-	echo "" >> $@ && \
-	cat $< >> $@
-
-generated_files/arabic_roman_digits.lexc: \
-			$(GIELLA_SHARED)/smi/src/morphology/stems/arabic_roman_digits.lexc
-	$(AM_V_at)$(MKDIR_P) generated_files
-	$(AM_V_GEN)cp -f $< $@
-generated_files/smi-$(GTLANG)-numerals.lexc: \
-		generated_files/arabic_roman_digits.lexc \
-		$(srcdir)/stems/numerals.lexc
-	$(AM_V_GEN)rm -f $@ && \
-	cp -f $(srcdir)/stems/numerals.lexc $@ && \
-	echo "" >> $@ && \
-	echo "! <--- Dump from SMI -->" >> $@ && \
-	echo "" >> $@ && \
-	cat $< >> $@
-
 
 ### END: Local processing: ###
 
