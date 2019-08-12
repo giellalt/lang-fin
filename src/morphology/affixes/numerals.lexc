@@ -3,6 +3,68 @@
 !! forms which requires great amount of care in the inflection patterns.
 ! FIXME: compounding
 
+LEXICON yeartagpl
+          +Num+Sem/Year+Pl+Nom:    # ;
+          +Num+Sem/Year+Pl+Gen:    # ;
+          +Num+Sem/Year+Pl+Acc:    # ;
+
+
+
+LEXICON dateyearcase ! todo: front/back for different 2:ssa, 5:ssa
++Sg+Nom: # ;
+
+LEXICON dateyearcase_nullsuff_w_dot
++Sg+Nom:%. # ;
+
+LEXICON dateyearcase_fullsuff ! todo: Fix vowel harmony
++Sg+All:%>lle # ;
+
+
+LEXICON ARABICCASES   !!≈ * __@CODE@__  adds +Arab
+ +Arab:  DIGITCASES ;
+
+LEXICON ARABICCASE   !!≈ * __@CODE@__  adds +Arab
+ +Arab:  DIGITCASE ;
+
+LEXICON ARABICCASE0   !!≈ * __@CODE@__  adds +Arab
+ +Arab:  DIGITCASE0 ;
+
+
+LEXICON DIGITCASES   !!≈ * __@CODE@__  to distinguish between 0 and oblique
+DIGITCASE0 ;
+DIGITCASE ;
+
+LEXICON DIGITCASE0   !!≈ * __@CODE@__
+      +Sg+Nom:     #      ;
+
+
+LEXICON DIGITCASE   !!≈ * __@CODE@__
+ +Sg+All:%>lle            # ;
+
+LEXICON ARABICCASEORD
++Arab+Sg+Gen:%>n # ;
+
+LEXICON ARABICCASECOLL ! here we should remove this path, no coll in fin.
+# ;
+
+LEXICON ARABICCOMPOUNDS
++Cmp/Hŧph+Cmp#:- INENCount ;
+
+LEXICON INENCount ! 33-vuotiset
+vuotinen+N:vuoti NOUN_AAKKOSTAMINEN ;
+
+LEXICON ROMNUMTAGOBL   !!≈ * __@CODE@__
+          +Rom+Sg+All:%>lle  # ; !
+
+
+
+
+
+
+
+
+!! !!!Original file
+
 ! nominatives
 LEXICON NUM_BACK_NOMINATIVE
 !!€gt-norm: Numeral nominative back
