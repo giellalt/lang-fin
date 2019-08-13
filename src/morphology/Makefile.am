@@ -74,10 +74,10 @@ GT_LEXC_L2_SRCS=\
 			$(L2)
 
 # Set this to the names of all generated lexc files, if any
+# We ignore using generated_files/punctuation.lexc for now.
 GENERATED_LEXC_SRCS=generated_files/smi-digits.lexc \
                     generated_files/arabic_roman_digits.lexc \
                     generated_files/smi-acronyms.lexc \
-                    generated_files/punctuation.lexc \
                     generated_files/symbols.lexc
 
 # Set this to the names of all source xml files, if any
