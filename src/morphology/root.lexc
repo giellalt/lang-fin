@@ -48,6 +48,7 @@ Multichar_Symbols
 +Pron !!= * {{@CODE@}}: Pronoun
 +Pcle  !!= * {{@CODE@}}: Particle, except:
 +Interj !!= * {{@CODE@}}: Interjection
++Cmt
 
 !! The part-of-speech analyses are typically the first:
 !!€gt-norm: Analysis examples
@@ -582,6 +583,11 @@ Multichar_Symbols
  @P.NeedNoun.ON@    !!≈ | @CODE@ | (Dis)allow compounds with verbs unless nominalised
  @D.NeedNoun.ON@    !!≈ | @CODE@ | (Dis)allow compounds with verbs unless nominalised
  @C.NeedNoun@       !!≈ | @CODE@ | (Dis)allow compounds with verbs unless nominalised
+ 
+ @C.ErrOrth@		!!≈ | @CODE@
+ @D.ErrOrth.ON@		!!≈ | @CODE@
+ @P.ErrOrth.ON@		!!≈ | @CODE@
+
 !! 
 !! For languages that allow compounding, the following flag diacritics are needed
 !! to control position-based compounding restrictions for nominals. Their use is
