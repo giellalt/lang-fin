@@ -48,7 +48,7 @@ LEXICON ARABICCASECOLL ! here we should remove this path, no coll in fin.
 # ;
 
 LEXICON ARABICCOMPOUNDS
-+Cmp/Hŧph+Cmp#:- INENCount ;
++Cmp/Hyph+Cmp#:- INENCount ;
 
 LEXICON INENCount ! 33-vuotiset
 vuotinen+N:vuoti NOUN_AAKKOSTAMINEN ;
