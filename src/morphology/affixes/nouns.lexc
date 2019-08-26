@@ -17556,115 +17556,115 @@ LEXICON NOUN_COMPOUND_S
 
 LEXICON NOUN_BACK_GENITIVE_TEN_ARCHAIC
 
- %+Pl%+Gen:%>te  NOUN_BACK_POSS     ;
+ +Pl+Gen:%>te  NOUN_BACK_POSS     ;
 
- %+Pl%+Gen:%>ten NOUN_BACK_CLIT_OPT ;
- %+Pl%+Gen:%>ten NOUN_COMPOUND      ;
+ +Pl+Gen:%>ten NOUN_BACK_CLIT_OPT ;
+ +Pl+Gen:%>ten NOUN_COMPOUND      ;
 
 
 LEXICON NOUN_BACK_H_PLURALS_ARCHAIC
 
- %+Pl%+Gen:h%>i%>e    NOUN_BACK_POSS        ;
+ +Pl+Gen:h%>i%>e    NOUN_BACK_POSS        ;
 
- %+Pl%+Gen:h%>i%>en   NOUN_BACK_CLIT_OPT    ;
+ +Pl+Gen:h%>i%>en   NOUN_BACK_CLIT_OPT    ;
 
- %+Pl%+Gen:h%>i%>tte  NOUN_BACK_POSS        ;
+ +Pl+Gen:h%>i%>tte  NOUN_BACK_POSS        ;
 
- %+Pl%+Gen:h%>i%>tten NOUN_BACK_CLIT_OPT    ;
+ +Pl+Gen:h%>i%>tten NOUN_BACK_CLIT_OPT    ;
 
- %+Pl%+Ill:h%>i%>si   NOUN_BACK_POSS        ;
+ +Pl+Ill:h%>i%>si   NOUN_BACK_POSS        ;
 
- %+Pl%+Ill:h%>i%>sin  NOUN_BACK_CLIT_OPT    ;
+ +Pl+Ill:h%>i%>sin  NOUN_BACK_CLIT_OPT    ;
 
- %+Pl%+Par:h%>i%>a    NOUN_BACK_POSS_AN_OPT ;
+ +Pl+Par:h%>i%>a    NOUN_BACK_POSS_AN_OPT ;
 
           :h          NOUN_BACK_PLURALS     ;
 
 
 LEXICON NOUN_BACK_NOMINATIVE_ARCHAIC
 
- %+Sg%+Nom: NOUN_BACK_CLIT_OPT ;
- %+Sg%+Nom: NOUN_COMPOUND      ;
+ +Sg+Nom: NOUN_BACK_CLIT_OPT ;
+ +Sg+Nom: NOUN_COMPOUND      ;
 
 LEXICON NOUN_BACK_PARTITIVE_TA_ARCHAIC
 
- %+Sg%+Par:%>ta NOUN_BACK_POSS_AN_OPT ;
+ +Sg+Par:%>ta NOUN_BACK_POSS_AN_OPT ;
 
 
 
 LEXICON NOUN_FRONT_ESSIVE_NÄ_ARCHAIC
 
- %+Sg%+Ess:%>nä NOUN_FRONT_POSS_ÄN_OPT ;
+ +Sg+Ess:%>nä NOUN_FRONT_POSS_ÄN_OPT ;
 
 
 LEXICON NOUN_FRONT_ESSIVE_SÄ_ARCHAIC
 
- %+Sg%+Ess:%>sä NOUN_FRONT_POSS_ÄN_OPT ;
+ +Sg+Ess:%>sä NOUN_FRONT_POSS_ÄN_OPT ;
 
 
 LEXICON NOUN_FRONT_GENITIVE_TEN_ARCHAIC
 
- %+Pl%+Gen:%>te  NOUN_FRONT_POSS     ;
+ +Pl+Gen:%>te  NOUN_FRONT_POSS     ;
 
- %+Pl%+Gen:%>ten NOUN_FRONT_CLIT_OPT ;
- %+Pl%+Gen:%>ten NOUN_COMPOUND       ;
+ +Pl+Gen:%>ten NOUN_FRONT_CLIT_OPT ;
+ +Pl+Gen:%>ten NOUN_COMPOUND       ;
 
 
 LEXICON NOUN_FRONT_H_PLURALS_ARCHAIC
 
- %+Pl%+Gen:h%>i%>e    NOUN_FRONT_POSS        ;
+ +Pl+Gen:h%>i%>e    NOUN_FRONT_POSS        ;
 
- %+Pl%+Gen:h%>i%>en   NOUN_FRONT_CLIT_OPT    ;
+ +Pl+Gen:h%>i%>en   NOUN_FRONT_CLIT_OPT    ;
 
- %+Pl%+Gen:h%>i%>tte  NOUN_FRONT_POSS        ;
+ +Pl+Gen:h%>i%>tte  NOUN_FRONT_POSS        ;
 
- %+Pl%+Gen:h%>i%>tten NOUN_FRONT_CLIT_OPT    ;
+ +Pl+Gen:h%>i%>tten NOUN_FRONT_CLIT_OPT    ;
 
- %+Pl%+Ill:h%>i%>si   NOUN_FRONT_POSS        ;
+ +Pl+Ill:h%>i%>si   NOUN_FRONT_POSS        ;
 
- %+Pl%+Ill:h%>i%>sin  NOUN_FRONT_CLIT_OPT    ;
+ +Pl+Ill:h%>i%>sin  NOUN_FRONT_CLIT_OPT    ;
 
- %+Pl%+Par:h%>i%>ä    NOUN_FRONT_POSS_ÄN_OPT ;
+ +Pl+Par:h%>i%>ä    NOUN_FRONT_POSS_ÄN_OPT ;
 
           :h          NOUN_FRONT_PLURALS     ;
 
 LEXICON NOUN_FRONT_PARTITIVE_TÄ_ARCHAIC
 
- %+Sg%+Par:%>tä NOUN_FRONT_POSS_ÄN_OPT ;
+ +Sg+Par:%>tä NOUN_FRONT_POSS_ÄN_OPT ;
 
 LEXICON NOUN_FRONT_PLNOM_ARCHAIC_CLIT
 
- %+Pl%+Nom:%>t NOUN_FRONT_CLIT_OPT ;
+ +Pl+Nom:%>t NOUN_FRONT_CLIT_OPT ;
 
 
 LEXICON NOUN_FRONT_PLNOM_ARCHAIC_POSS
 
- %+Pl%+Nom: NOUN_FRONT_POSS ;
+ +Pl+Nom: NOUN_FRONT_POSS ;
 
 LEXICON NOUN_FRONT_PARTITIVE_Ä_NONSTD
 
- %+Sg%+Par%+Err/Orth:%>ä NOUN_FRONT_POSS_OPT ;
+ +Sg+Par+Err/Orth:%>ä NOUN_FRONT_POSS_OPT ;
 
 LEXICON NOUN_BACK_PARTITIVE_A_NONSTD
 
- %+Sg%+Par%+Err/Orth:%>a NOUN_BACK_POSS_OPT ;
+ +Sg+Par+Err/Orth:%>a NOUN_BACK_POSS_OPT ;
 
 LEXICON NOUN_BACK_PLNOM_POSS
 
- %+Pl%+Nom: NOUN_BACK_POSS ;
+ +Pl+Nom: NOUN_BACK_POSS ;
 
 LEXICON NOUN_FRONT_PLNOM_POSS
 
- %+Pl%+Nom: NOUN_FRONT_POSS ;
+ +Pl+Nom: NOUN_FRONT_POSS ;
 
 LEXICON NOUN_BACK_ESSIVE_NA_ARCHAIC
 
- %+Sg%+Ess:%>na NOUN_BACK_POSS_AN_OPT ;
+ +Sg+Ess:%>na NOUN_BACK_POSS_AN_OPT ;
 
 
 LEXICON NOUN_BACK_ESSIVE_SA_ARCHAIC
 
- %+Sg%+Ess:%>sa NOUN_BACK_POSS_AN_OPT ;
+ +Sg+Ess:%>sa NOUN_BACK_POSS_AN_OPT ;
 
 
 LEXICON NOUN_ACRO_BACK_CASES

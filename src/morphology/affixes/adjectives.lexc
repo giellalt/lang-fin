@@ -54,7 +54,7 @@ LEXICON ADJ_TUMMAHKO
 !!€  tummahkoihin: tummahko+A+Pl+Ill
 !!$  tummahkoisiin: tummahko+A+Pl+Ill
 !!€  tummahkompi: tummahko+A+Comp+Sg+Nom
-!!€  tummahkoin: tummahko+A+Sup+Sg+Nom
+!!€  tummahkoin: tummahko+A+Superl+Sg+Nom
 0  ADJ_BACK_NOMINATIVE  ;
 0  ADJ_BACK_SINGULARS  ;
 0  ADJ_BACK_PLURALS  ;
@@ -84,7 +84,7 @@ LEXICON ADJ_VALKAISTU
 !!€  valkaistuina: valkaistu+A+Pl+Ess
 !!€  valkaistuissa: valkaistu+A+Pl+Ine
 !!€  valkaistumpi: valkaistu+A+Comp+Sg+Nom
-!!€  valkaistuin: valkaistu+A+Sup+Sg+Nom
+!!€  valkaistuin: valkaistu+A+Superl+Sg+Nom
 0  ADJ_BACK_NOMINATIVE  ;
 0  ADJ_BACK_SINGULARS  ;
 0  ADJ_BACK_PLURALS  ;
@@ -112,7 +112,7 @@ LEXICON ADJ_HÄPÄISTY
 !!€  häpäistyinä: häpäisty+A+Pl+Ess
 !!€  häpäistyissä: häpäisty+A+Pl+Ine
 !!€  häpäistympi: häpäisty+A+Comp+Sg+Nom
-!!€  häpäistyin: häpäisty+A+Sup+Sg+Nom
+!!€  häpäistyin: häpäisty+A+Superl+Sg+Nom
 0  ADJ_FRONT_NOMINATIVE  ;
 0  ADJ_FRONT_SINGULARS  ;
 0  ADJ_FRONT_PLURALS  ;
@@ -140,7 +140,7 @@ LEXICON ADJ_HÖLÖ
 !!€  hölöinä: hölö+A+Pl+Ess
 !!€  hölöissä: hölö+A+Pl+Ine
 !!€  hölömpi: hölö+A+Comp+Sg+Nom
-!!€  hölöin: hölö+A+Sup+Sg+Nom
+!!€  hölöin: hölö+A+Superl+Sg+Nom
 0  ADJ_FRONT_NOMINATIVE  ;
 0  ADJ_FRONT_SINGULARS  ;
 0  ADJ_FRONT_PLURALS  ;
@@ -165,7 +165,7 @@ LEXICON ADJ_TOOPE
 !!€  toopejen: toope+A+Pl+Gen
 !!€  toopeihin: toope+A+Pl+Ill
 !!€  toopempi: toope+A+Comp+Sg+Nom
-!!€  toopein: toope+A+Sup+Sg+Nom
+!!€  toopein: toope+A+Superl+Sg+Nom
 !!  They also have slightly greater probability for archaic form of plural
 !!  genitive:
 !!€  toopein: toope+A+Pl+Gen+Use/Rare
@@ -193,7 +193,7 @@ LEXICON ADJ_BEIGE
 !!€  beigejen: beige+A+Pl+Gen
 !!€  beigeihin: beige+A+Pl+Ill
 !!€  beigempi: beige+A+Comp+Sg+Nom
-!!€  beigein: beige+A+Sup+Sg+Nom
+!!€  beigein: beige+A+Superl+Sg+Nom
 0  ADJ_FRONT_NOMINATIVE  ;
 0  ADJ_FRONT_SINGULARS  ;
 0  ADJ_FRONT_PLURALS  ;
@@ -224,7 +224,7 @@ LEXICON ADJ_KOHELO
 !!€  toheloiden: tohelo+A+Pl+Gen
 !!€  toheloitten: tohelo+A+Pl+Gen
 !!€  tohelompi: tohelo+A+Comp+Sg+Nom
-!!€  toheloin: tohelo+A+Sup+Sg+Nom
+!!€  toheloin: tohelo+A+Superl+Sg+Nom
 0  ADJ_BACK_NOMINATIVE  ;
 0  ADJ_BACK_SINGULARS  ;
 0  ADJ_BACK_PLURALS  ;
@@ -247,7 +247,7 @@ LEXICON ADJ_LÖPERÖ
 !!€  löperöiden: löperö+A+Pl+Gen
 !!€  löperöitten: löperö+A+Pl+Gen
 !!€  löperömpi: löperö+A+Comp+Sg+Nom
-!!€  löperöin: löperö+A+Sup+Sg+Nom
+!!€  löperöin: löperö+A+Superl+Sg+Nom
 0  ADJ_FRONT_NOMINATIVE  ;
 0  ADJ_FRONT_SINGULARS  ;
 0  ADJ_FRONT_PLURALS  ;
@@ -278,7 +278,7 @@ LEXICON ADJ_AUTIO
 !!€  autioiden: autio+A+Pl+Gen
 !!€  autioitten: autio+A+Pl+Gen
 !!€  autiompi: autio+A+Comp+Sg+Nom
-!!€  autioin: autio+A+Sup+Sg+Nom
+!!€  autioin: autio+A+Superl+Sg+Nom
 0  ADJ_BACK_NOMINATIVE  ;
 0  ADJ_BACK_SINGULARS  ;
 0  ADJ_BACK_PLURALS  ;
@@ -300,7 +300,7 @@ LEXICON ADJ_RIIVIÖ
 !!€  riiviöiden: riiviö+A+Pl+Gen
 !!€  riiviöitten: riiviö+A+Pl+Gen
 !!€  riiviömpi: riiviö+A+Comp+Sg+Nom
-!!€  riiviöin: riiviö+A+Sup+Sg+Nom
+!!€  riiviöin: riiviö+A+Superl+Sg+Nom
 0  ADJ_BACK_NOMINATIVE  ;
 0  ADJ_FRONT_SINGULARS  ;
 0  ADJ_FRONT_PLURALS  ;
@@ -331,7 +331,7 @@ LEXICON ADJ_KOLKKO
 !!€  kolkoista: kolkko+A+Pl+Ela
 !!€  kolkkoihin: kolkko+A+Pl+Ill
 !!€  kolkompi: kolkko+A+Comp+Sg+Nom
-!!€  kolkoin: kolkko+A+Sup+Sg+Nom
+!!€  kolkoin: kolkko+A+Superl+Sg+Nom
 0:ko  ADJ_BACK_NOMINATIVE  ;
 0:ko  ADJ_BACK_STRONG_SINGULARS  ;
 0:o  ADJ_BACK_WEAK_SINGULARS  ;
@@ -355,7 +355,7 @@ LEXICON ADJ_VIRKKU
 !!€  virkuista: virkku+A+Pl+Ela
 !!€  virkkuihin: virkku+A+Pl+Ill
 !!€  virkumpi: virkku+A+Comp+Sg+Nom
-!!€  virkuin: virkku+A+Sup+Sg+Nom
+!!€  virkuin: virkku+A+Superl+Sg+Nom
 0:ku  ADJ_BACK_NOMINATIVE  ;
 0:ku  ADJ_BACK_STRONG_SINGULARS  ;
 0:u  ADJ_BACK_WEAK_SINGULARS  ;
@@ -379,7 +379,7 @@ LEXICON ADJ_SÄIKKY
 !!€  säikyistä: säikky+A+Pl+Ela
 !!€  säikkyihin: säikky+A+Pl+Ill
 !!€  säikympi: säikky+A+Comp+Sg+Nom
-!!€  säikyin: säikky+A+Sup+Sg+Nom
+!!€  säikyin: säikky+A+Superl+Sg+Nom
 0:ky  ADJ_FRONT_NOMINATIVE  ;
 0:ky  ADJ_FRONT_STRONG_SINGULARS  ;
 0:y  ADJ_FRONT_WEAK_SINGULARS  ;
@@ -402,7 +402,7 @@ LEXICON ADJ_KÖKKÖ
 !!€  kököistä: kökkö+A+Pl+Ela
 !!€  kökköihin: kökkö+A+Pl+Ill
 !!€  kökömpi: kökkö+A+Comp+Sg+Nom
-!!€  kököin: kökkö+A+Sup+Sg+Nom
+!!€  kököin: kökkö+A+Superl+Sg+Nom
 0:kö  ADJ_FRONT_NOMINATIVE  ;
 0:kö  ADJ_FRONT_STRONG_SINGULARS  ;
 0:ö  ADJ_FRONT_WEAK_SINGULARS  ;
@@ -427,7 +427,7 @@ LEXICON ADJ_SUIPPO
 !!€  suipoista: suippo+A+Pl+Ela
 !!€  suippoihin: suippo+A+Pl+Ill
 !!€  suipompi: suippo+A+Comp+Sg+Nom
-!!€  suipoin: suippo+A+Sup+Sg+Nom
+!!€  suipoin: suippo+A+Superl+Sg+Nom
 0:po  ADJ_BACK_NOMINATIVE  ;
 0:po  ADJ_BACK_STRONG_SINGULARS  ;
 0:o  ADJ_BACK_WEAK_SINGULARS  ;
@@ -453,7 +453,7 @@ LEXICON ADJ_IKÄLOPPU
 !!€  ikälopuista: ikäloppu+A+Pl+Ela
 !!€  ikäloppuihin: ikäloppu+A+Pl+Ill
 !!€  ikälopumpi: ikäloppu+A+Comp+Sg+Nom
-!!€  ikälopuin: ikäloppu+A+Sup+Sg+Nom
+!!€  ikälopuin: ikäloppu+A+Superl+Sg+Nom
 0:pu  ADJ_BACK_NOMINATIVE  ;
 0:pu  ADJ_BACK_STRONG_SINGULARS  ;
 0:u  ADJ_BACK_WEAK_SINGULARS  ;
@@ -479,7 +479,7 @@ LEXICON ADJ_LÖRPPÖ
 !!€  lörpöistä: lörppö+A+Pl+Ela
 !!€  lörppöihin: lörppö+A+Pl+Ill
 !!€  lörpömpi: lörppö+A+Comp+Sg+Nom
-!!€  lörpöin: lörppö+A+Sup+Sg+Nom
+!!€  lörpöin: lörppö+A+Superl+Sg+Nom
 0:pö  ADJ_FRONT_NOMINATIVE  ;
 0:pö  ADJ_FRONT_STRONG_SINGULARS  ;
 0:ö  ADJ_FRONT_WEAK_SINGULARS  ;
@@ -502,7 +502,7 @@ LEXICON ADJ_VELTTO
 !!€  veltoista: veltto+A+Pl+Ela
 !!€  velttoihin: veltto+A+Pl+Ill
 !!€  veltompi: veltto+A+Comp+Sg+Nom
-!!€  veltoin: veltto+A+Sup+Sg+Nom
+!!€  veltoin: veltto+A+Superl+Sg+Nom
 0:to  ADJ_BACK_NOMINATIVE  ;
 0:to  ADJ_BACK_STRONG_SINGULARS  ;
 0:o  ADJ_BACK_WEAK_SINGULARS  ;
@@ -528,7 +528,7 @@ LEXICON ADJ_VIMMATTU
 !!€  vimmatuista: vimmattu+A+Pl+Ela
 !!€  vimmattuihin: vimmattu+A+Pl+Ill
 !!€  vimmatumpi: vimmattu+A+Comp+Sg+Nom
-!!€  vimmatuin: vimmattu+A+Sup+Sg+Nom
+!!€  vimmatuin: vimmattu+A+Superl+Sg+Nom
 0:tu  ADJ_BACK_NOMINATIVE  ;
 0:tu  ADJ_BACK_STRONG_SINGULARS  ;
 0:u  ADJ_BACK_WEAK_SINGULARS  ;
@@ -554,7 +554,7 @@ LEXICON ADJ_YLENNETTY
 !!€  ylennetyistä: ylennetty+A+Pl+Ela
 !!€  ylennettyihin: ylennetty+A+Pl+Ill
 !!€  ylennetympi: ylennetty+A+Comp+Sg+Nom
-!!€  ylennetyin: ylennetty+A+Sup+Sg+Nom
+!!€  ylennetyin: ylennetty+A+Superl+Sg+Nom
 0:ty  ADJ_FRONT_NOMINATIVE  ;
 0:ty  ADJ_FRONT_STRONG_SINGULARS  ;
 0:y  ADJ_FRONT_WEAK_SINGULARS  ;
@@ -577,7 +577,7 @@ LEXICON ADJ_KYYTTÖ
 !!€  kyytöistä: kyyttö+A+Pl+Ela
 !!€  kyyttöihin: kyyttö+A+Pl+Ill
 !!€  kyytömpi: kyyttö+A+Comp+Sg+Nom
-!!€  kyytöin: kyyttö+A+Sup+Sg+Nom
+!!€  kyytöin: kyyttö+A+Superl+Sg+Nom
 0:tö  ADJ_FRONT_NOMINATIVE  ;
 0:tö  ADJ_FRONT_STRONG_SINGULARS  ;
 0:ö  ADJ_FRONT_WEAK_SINGULARS  ;
@@ -602,7 +602,7 @@ LEXICON ADJ_LAKO
 !!€  laossa: lako+A+Sg+Ine
 !!€  la’ossa: lako+A+Sg+Ine
 !!€  laompi: lako+A+Comp+Sg+Nom
-!!€  laoin: lako+A+Sup+Sg+Nom
+!!€  laoin: lako+A+Superl+Sg+Nom
 0:ko  ADJ_BACK_NOMINATIVE  ;
 0:ko  ADJ_BACK_STRONG_SINGULARS  ;
 0:o  ADJ_BACK_WEAK_SINGULARS  ;
@@ -636,7 +636,7 @@ LEXICON ADJ_KELPO
 !!€  kelpoina: kelpo+A+Pl+Ess
 !!€  kelvoista: kelpo+A+Pl+Ela
 !!€  kelvompi: kelpo+A+Comp+Sg+Nom
-!!€  kelvoin: kelpo+A+Sup+Sg+Nom
+!!€  kelvoin: kelpo+A+Superl+Sg+Nom
 0:po  ADJ_BACK_NOMINATIVE  ;
 0:po  ADJ_BACK_STRONG_SINGULARS  ;
 0:vo  ADJ_BACK_WEAK_SINGULARS  ;
@@ -664,7 +664,7 @@ LEXICON ADJ_MIETO
 !!€  mietoihin: mieto+A+Pl+Ill
 !!€  miedoista: mieto+A+Pl+Ela
 !!€  miedompi: mieto+A+Comp+Sg+Nom
-!!€  miedoin: mieto+A+Sup+Sg+Nom
+!!€  miedoin: mieto+A+Superl+Sg+Nom
 0:to  ADJ_BACK_NOMINATIVE  ;
 0:to  ADJ_BACK_STRONG_SINGULARS  ;
 0:do  ADJ_BACK_WEAK_SINGULARS  ;
@@ -690,7 +690,7 @@ LEXICON ADJ_VIIPALOITU
 !!€  viipaloituihin: viipaloitu+A+Pl+Ill
 !!€  viipaloiduista: viipaloitu+A+Pl+Ela
 !!€  viipaloidumpi: viipaloitu+A+Comp+Sg+Nom
-!!€  viipaloiduin: viipaloitu+A+Sup+Sg+Nom
+!!€  viipaloiduin: viipaloitu+A+Superl+Sg+Nom
 0:tu  ADJ_BACK_NOMINATIVE  ;
 0:tu  ADJ_BACK_STRONG_SINGULARS  ;
 0:du  ADJ_BACK_WEAK_SINGULARS  ;
@@ -716,7 +716,7 @@ LEXICON ADJ_YKSILÖITY
 !!€  yksilöityihin: yksilöity+A+Pl+Ill
 !!€  yksilöidyistä: yksilöity+A+Pl+Ela
 !!€  yksilöidympi: yksilöity+A+Comp+Sg+Nom
-!!€  yksilöidyin: yksilöity+A+Sup+Sg+Nom
+!!€  yksilöidyin: yksilöity+A+Superl+Sg+Nom
 0:ty  ADJ_FRONT_NOMINATIVE  ;
 0:ty  ADJ_FRONT_STRONG_SINGULARS  ;
 0:dy  ADJ_FRONT_WEAK_SINGULARS  ;
@@ -741,7 +741,7 @@ LEXICON ADJ_LENKO
 !!€  lengoista: lenko+A+Pl+Ela
 !!€  lenkoihin: lenko+A+Pl+Ill
 !!€  lengompi: lenko+A+Comp+Sg+Nom
-!!€  lengoin: lenko+A+Sup+Sg+Nom
+!!€  lengoin: lenko+A+Superl+Sg+Nom
 0:ko  ADJ_BACK_NOMINATIVE  ;
 0:ko  ADJ_BACK_STRONG_SINGULARS  ;
 0:go  ADJ_BACK_WEAK_SINGULARS  ;
@@ -771,7 +771,7 @@ LEXICON ADJ_MELTO
 !!€  meltoihin: melto+A+Pl+Ill
 !!€  melloista: melto+A+Pl+Ela
 !!€  mellompi: melto+A+Comp+Sg+Nom
-!!€  melloin: melto+A+Sup+Sg+Nom
+!!€  melloin: melto+A+Superl+Sg+Nom
 0:to  ADJ_BACK_NOMINATIVE  ;
 0:to  ADJ_BACK_STRONG_SINGULARS  ;
 0:lo  ADJ_BACK_WEAK_SINGULARS  ;
@@ -796,7 +796,7 @@ LEXICON ADJ_PARANNELTU
 !!€  paranneltuihin: paranneltu+A+Pl+Ill
 !!€  parannelluista: paranneltu+A+Pl+Ela
 !!€  parannellumpi: paranneltu+A+Comp+Sg+Nom
-!!€  parannelluin: paranneltu+A+Sup+Sg+Nom
+!!€  parannelluin: paranneltu+A+Superl+Sg+Nom
 0:tu  ADJ_BACK_NOMINATIVE  ;
 0:tu  ADJ_BACK_STRONG_SINGULARS  ;
 0:lu  ADJ_BACK_WEAK_SINGULARS  ;
@@ -821,7 +821,7 @@ LEXICON ADJ_VÄHÄTELTY
 !!€  vähäteltyihin: vähätelty+A+Pl+Ill
 !!€  vähätellyistä: vähätelty+A+Pl+Ela
 !!€  vähätellympi: vähätelty+A+Comp+Sg+Nom
-!!€  vähätellyin: vähätelty+A+Sup+Sg+Nom
+!!€  vähätellyin: vähätelty+A+Superl+Sg+Nom
 0:ty  ADJ_FRONT_NOMINATIVE  ;
 0:ty  ADJ_FRONT_STRONG_SINGULARS  ;
 0:ly  ADJ_FRONT_WEAK_SINGULARS  ;
@@ -846,7 +846,7 @@ LEXICON ADJ_VENTO
 !!€  ventoihin: vento+A+Pl+Ill
 !!€  vennoista: vento+A+Pl+Ela
 !!€  vennompi: vento+A+Comp+Sg+Nom
-!!€  vennoin: vento+A+Sup+Sg+Nom
+!!€  vennoin: vento+A+Superl+Sg+Nom
 0:to  ADJ_BACK_NOMINATIVE  ;
 0:to  ADJ_BACK_STRONG_SINGULARS  ;
 0:no  ADJ_BACK_WEAK_SINGULARS  ;
@@ -870,7 +870,7 @@ LEXICON ADJ_PANTU
 !!€  pantuihin: pantu+A+Pl+Ill
 !!€  pannuista: pantu+A+Pl+Ela
 !!€  pannumpi: pantu+A+Comp+Sg+Nom
-!!€  pannuin: pantu+A+Sup+Sg+Nom
+!!€  pannuin: pantu+A+Superl+Sg+Nom
 0:tu  ADJ_BACK_NOMINATIVE  ;
 0:tu  ADJ_BACK_STRONG_SINGULARS  ;
 0:nu  ADJ_BACK_WEAK_SINGULARS  ;
@@ -895,7 +895,7 @@ LEXICON ADJ_MENTY
 !!€  mentyihin: menty+A+Pl+Ill
 !!€  mennyistä: menty+A+Pl+Ela
 !!€  mennympi: menty+A+Comp+Sg+Nom
-!!€  mennyin: menty+A+Sup+Sg+Nom
+!!€  mennyin: menty+A+Superl+Sg+Nom
 0:ty  ADJ_FRONT_NOMINATIVE  ;
 0:ty  ADJ_FRONT_STRONG_SINGULARS  ;
 0:ny  ADJ_FRONT_WEAK_SINGULARS  ;
@@ -920,7 +920,7 @@ LEXICON ADJ_MARTO
 !!€  martoihin: marto+A+Pl+Ill
 !!€  marroista: marto+A+Pl+Ela
 !!€  marrompi: marto+A+Comp+Sg+Nom
-!!€  marroin: marto+A+Sup+Sg+Nom
+!!€  marroin: marto+A+Superl+Sg+Nom
 0:to  ADJ_BACK_NOMINATIVE  ;
 0:to  ADJ_BACK_STRONG_SINGULARS  ;
 0:ro  ADJ_BACK_WEAK_SINGULARS  ;
@@ -945,7 +945,7 @@ LEXICON ADJ_PURTU
 !!€  purtuihin: purtu+A+Pl+Ill
 !!€  purruista: purtu+A+Pl+Ela
 !!€  purrumpi: purtu+A+Comp+Sg+Nom
-!!€  purruin: purtu+A+Sup+Sg+Nom
+!!€  purruin: purtu+A+Superl+Sg+Nom
 0:tu  ADJ_BACK_NOMINATIVE  ;
 0:tu  ADJ_BACK_STRONG_SINGULARS  ;
 0:ru  ADJ_BACK_WEAK_SINGULARS  ;
@@ -970,7 +970,7 @@ LEXICON ADJ_PIERTY
 !!€  piertyihin: pierty+A+Pl+Ill
 !!€  pierryistä: pierty+A+Pl+Ela
 !!€  pierrympi: pierty+A+Comp+Sg+Nom
-!!€  pierryin: pierty+A+Sup+Sg+Nom
+!!€  pierryin: pierty+A+Superl+Sg+Nom
 0:ty  ADJ_FRONT_NOMINATIVE  ;
 0:ty  ADJ_FRONT_STRONG_SINGULARS  ;
 0:ry  ADJ_FRONT_WEAK_SINGULARS  ;
@@ -1000,7 +1000,7 @@ LEXICON ADJ_HUPAKKO
 !!€  hupakoihin: hupakko+A+Pl+Ill
 !!€  hupakkoihin: hupakko+A+Pl+Ill
 !!€  hupakompi: hupakko+A+Comp+Sg+Nom
-!!€  hupakoin: hupakko+A+Sup+Sg+Nom
+!!€  hupakoin: hupakko+A+Superl+Sg+Nom
 0:ko  ADJ_BACK_NOMINATIVE  ;
 0:ko  ADJ_BACK_STRONG_SINGULARS  ;
 0:o  ADJ_BACK_WEAK_SINGULARS  ;
@@ -1033,7 +1033,7 @@ LEXICON ADJ_ABNORMI
 !!€  abnormeina: abnormi+A+Pl+Ess
 !!€  abnormien: abnormi+A+Pl+Gen
 !!€  abnormimpi: abnormi+A+Comp+Sg+Nom
-!!€  abnormein: abnormi+A+Sup+Sg+Nom
+!!€  abnormein: abnormi+A+Superl+Sg+Nom
 0:i  ADJ_BACK_NOMINATIVE  ;
 0:i  ADJ_BACK_SINGULARS  ;
 0:e  ADJ_BACK_PLURALS  ;
@@ -1053,7 +1053,7 @@ LEXICON ADJ_STYDI
 !!€  stydeinä: stydi+A+Pl+Ess
 !!€  stydien: stydi+A+Pl+Gen
 !!€  stydimpi: stydi+A+Comp+Sg+Nom
-!!€  stydein: stydi+A+Sup+Sg+Nom
+!!€  stydein: stydi+A+Superl+Sg+Nom
 0:i  ADJ_FRONT_NOMINATIVE  ;
 0:i  ADJ_FRONT_SINGULARS  ;
 0:e  ADJ_FRONT_PLURALS  ;
@@ -1075,7 +1075,7 @@ LEXICON ADJ_OPAAKKI
 !!€  opaakeista: opaakki+A+Pl+Ela
 !!€  opaakkien: opaakki+A+Pl+Gen
 !!€  opaakimpi: opaakki+A+Comp+Sg+Nom
-!!€  opaakein: opaakki+A+Sup+Sg+Nom
+!!€  opaakein: opaakki+A+Superl+Sg+Nom
 0:ki  ADJ_BACK_NOMINATIVE  ;
 0:ki  ADJ_BACK_STRONG_SINGULARS  ;
 0:i  ADJ_BACK_WEAK_SINGULARS  ;
@@ -1099,7 +1099,7 @@ LEXICON ADJ_PINKKI
 !!€  pinkeistä: pinkki+A+Pl+Ela
 !!€  pinkkien: pinkki+A+Pl+Gen
 !!€  pinkimpi: pinkki+A+Comp+Sg+Nom
-!!€  pinkein: pinkki+A+Sup+Sg+Nom
+!!€  pinkein: pinkki+A+Superl+Sg+Nom
 0:ki  ADJ_FRONT_NOMINATIVE  ;
 0:ki  ADJ_FRONT_STRONG_SINGULARS  ;
 0:i  ADJ_FRONT_WEAK_SINGULARS  ;
@@ -1125,7 +1125,7 @@ LEXICON ADJ_SIPPI
 !!€  sipeistä: sippi+A+Pl+Ela
 !!€  sippien: sippi+A+Pl+Gen
 !!€  sipimpi: sippi+A+Comp+Sg+Nom
-!!€  sipein: sippi+A+Sup+Sg+Nom
+!!€  sipein: sippi+A+Superl+Sg+Nom
 0:pi  ADJ_FRONT_NOMINATIVE  ;
 0:pi  ADJ_FRONT_STRONG_SINGULARS  ;
 0:i  ADJ_FRONT_WEAK_SINGULARS  ;
@@ -1149,7 +1149,7 @@ LEXICON ADJ_HURTTI
 !!€  hurteista: hurtti+A+Pl+Ela
 !!€  hurttien: hurtti+A+Pl+Gen
 !!€  hurtimpi: hurtti+A+Comp+Sg+Nom
-!!€  hurtein: hurtti+A+Sup+Sg+Nom
+!!€  hurtein: hurtti+A+Superl+Sg+Nom
 0:ti  ADJ_BACK_NOMINATIVE  ;
 0:ti  ADJ_BACK_STRONG_SINGULARS  ;
 0:i  ADJ_BACK_WEAK_SINGULARS  ;
@@ -1173,7 +1173,7 @@ LEXICON ADJ_VÄÄRTTI
 !!€  väärteistä: väärtti+A+Pl+Ela
 !!€  väärttien: väärtti+A+Pl+Gen
 !!€  väärtimpi: väärtti+A+Comp+Sg+Nom
-!!€  väärtein: väärtti+A+Sup+Sg+Nom
+!!€  väärtein: väärtti+A+Superl+Sg+Nom
 0:ti  ADJ_FRONT_NOMINATIVE  ;
 0:ti  ADJ_FRONT_STRONG_SINGULARS  ;
 0:i  ADJ_FRONT_WEAK_SINGULARS  ;
@@ -1199,7 +1199,7 @@ LEXICON ADJ_TUHTI
 !!€  tuhdeista: tuhti+A+Pl+Ela
 !!€  tuhtien: tuhti+A+Pl+Gen
 !!€  tuhdimpi: tuhti+A+Comp+Sg+Nom
-!!€  tuhdein: tuhti+A+Sup+Sg+Nom
+!!€  tuhdein: tuhti+A+Superl+Sg+Nom
 0:ti  ADJ_BACK_NOMINATIVE  ;
 0:ti  ADJ_BACK_STRONG_SINGULARS  ;
 0:di  ADJ_BACK_WEAK_SINGULARS  ;
@@ -1223,7 +1223,7 @@ LEXICON ADJ_REHTI
 !!€  rehdeistä: rehti+A+Pl+Ela
 !!€  rehtien: rehti+A+Pl+Gen
 !!€  rehdimpi: rehti+A+Comp+Sg+Nom
-!!€  rehdein: rehti+A+Sup+Sg+Nom
+!!€  rehdein: rehti+A+Superl+Sg+Nom
 0:ti  ADJ_FRONT_NOMINATIVE  ;
 0:ti  ADJ_FRONT_STRONG_SINGULARS  ;
 0:di  ADJ_FRONT_WEAK_SINGULARS  ;
@@ -1249,7 +1249,7 @@ LEXICON ADJ_ABNORMAALI
 !!€  abnormaaleja: abnormaali+A+Pl+Par
 !!€  abnormaaleiden: abnormaali+A+Pl+Gen
 !!€  abnormaalimpi: abnormaali+A+Comp+Sg+Nom
-!!€  abnormaalein: abnormaali+A+Sup+Sg+Nom
+!!€  abnormaalein: abnormaali+A+Superl+Sg+Nom
 0:i  ADJ_BACK_NOMINATIVE  ;
 0:i  ADJ_BACK_SINGULARS  ;
 0:e  ADJ_BACK_PLURALS  ;
@@ -1272,7 +1272,7 @@ LEXICON ADJ_ÖYKKÄRI
 !!€  öykkärejä: öykkäri+A+Pl+Par
 !!€  öykkäreiden: öykkäri+A+Pl+Gen
 !!€  öykkärimpi: öykkäri+A+Comp+Sg+Nom
-!!€  öykkärein: öykkkäri+A+Sup+Sg+Nom
+!!€  öykkärein: öykkkäri+A+Superl+Sg+Nom
 0:i  ADJ_FRONT_NOMINATIVE  ;
 0  ADJ_FRONT_SINGULARS  ;
 0:e  ADJ_FRONT_PLURALS  ;
@@ -1309,7 +1309,7 @@ LEXICON ADJ_AAVA
 !!€  aavojen: aava+A+Pl+Gen
 !!€  aavoihin: aava+A+Pl+Ill
 !!€  aavempi: aava+A+Comp+Sg+Nom
-!!€  aavoin: aava+A+Sup+Sg+Nom
+!!€  aavoin: aava+A+Superl+Sg+Nom
 0:a  ADJ_BACK_NOMINATIVE  ;
 0:a  ADJ_BACK_SINGULARS  ;
 0:o  ADJ_BACK_PLURALS  ;
@@ -1334,7 +1334,7 @@ LEXICON ADJ_TARKKA
 !!€  tarkkojen: tarkka+A+Pl+Gen
 !!€  tarkkoihin: tarkka+A+Pl+Ill
 !!€  tarkempi: tarkka+A+Comp+Sg+Nom
-!!€  tarkoin: tarkka+Sup+Sg+Nom
+!!€  tarkoin: tarkka+Superl+Sg+Nom
 0:ka  ADJ_BACK_NOMINATIVE  ;
 0:ka  ADJ_BACK_STRONG_SINGULARS  ;
 0:a  ADJ_BACK_WEAK_SINGULARS  ;
@@ -1392,7 +1392,7 @@ LEXICON ADJ_MATTA
 !!€  mattojen: matta+A+Pl+Gen
 !!€  mattoihin: matta+A+Pl+Ill
 !!€  matempi: matta+A+Comp+Sg+Nom
-!!€  matoin: matta+A+Sup+Sg+Nom
+!!€  matoin: matta+A+Superl+Sg+Nom
 0:ta  ADJ_BACK_NOMINATIVE  ;
 0:ta  ADJ_BACK_STRONG_SINGULARS  ;
 0:a  ADJ_BACK_WEAK_SINGULARS  ;
@@ -1420,7 +1420,7 @@ LEXICON ADJ_HALPA
 !!€  halpojen: halpa+A+Pl+Gen
 !!€  halpoihin: halpa+A+Pl+Ill
 !!€  halvempi: halpa+A+Comp+Sg+Nom
-!!€  halvoin: halpa+A+Sup+Sg+Nom
+!!€  halvoin: halpa+A+Superl+Sg+Nom
 0:pa  ADJ_BACK_NOMINATIVE  ;
 0:pa  ADJ_BACK_STRONG_SINGULARS  ;
 0:va  ADJ_BACK_WEAK_SINGULARS  ;
@@ -1447,7 +1447,7 @@ LEXICON ADJ_EHTA
 !!€  ehtojen: ehta+A+Pl+Gen
 !!€  ehtoihin: ehta+A+Pl+Ill
 !!€  ehdampi: ehta+A+Comp+Sg+Nom
-!!€  ehdoin: ehta+A+Sup+Sg+Nom
+!!€  ehdoin: ehta+A+Superl+Sg+Nom
 0:ta  ADJ_BACK_NOMINATIVE  ;
 0:ta  ADJ_BACK_STRONG_SINGULARS  ;
 0:da  ADJ_BACK_WEAK_SINGULARS  ;
@@ -1476,7 +1476,7 @@ LEXICON ADJ_RAMPA
 !!€  rampojen: rampa+A+Pl+Gen
 !!€  rampoihin: rampa+A+Pl+Ill
 !!€  rammempi: rampa+A+Comp+Sg+Nom
-!!€  rammoin: rampa+A+Sup+Sg+Nom
+!!€  rammoin: rampa+A+Superl+Sg+Nom
 0:pa  ADJ_BACK_NOMINATIVE  ;
 0:pa  ADJ_BACK_STRONG_SINGULARS  ;
 0:ma  ADJ_BACK_WEAK_SINGULARS  ;
@@ -1505,7 +1505,7 @@ LEXICON ADJ_VIHANTA
 !!€  vihantojen: vihanta+A+Pl+Gen
 !!€  vihantoihin: vihanta+A+Pl+Ill
 !!€  vihannampi: vihanta+A+Comp+Sg+Nom
-!!€  vihannoin: vihanta+A+Sup+Sg+Nom
+!!€  vihannoin: vihanta+A+Superl+Sg+Nom
 0:ta  ADJ_BACK_NOMINATIVE  ;
 0:ta  ADJ_BACK_STRONG_SINGULARS  ;
 0:na  ADJ_BACK_WEAK_SINGULARS  ;
@@ -1538,7 +1538,7 @@ LEXICON ADJ_AALTOILEVA
 !!€  aaltoilevien: aaltoileva+A+Pl+Gen
 !!€  aaltoileviin: aaltoileva+A+Pl+Ill
 !!€  aaltoilevampi: aaltoileva+A+Comp+Sg+Nom
-!!€  aaltoilevin: aaltoileva+A+Sup+Sg+Nom
+!!€  aaltoilevin: aaltoileva+A+Superl+Sg+Nom
 0:a  ADJ_BACK_NOMINATIVE  ;
 0:a  ADJ_BACK_SINGULARS  ;
 0  ADJ_BACK_PLURALS  ;
@@ -1563,7 +1563,7 @@ LEXICON ADJ_TYÖLLISTETTÄVÄ
 !!€  työllistettävien: työllistettävä+A+Pl+Gen
 !!€  työllistettäviin: työllistettävä+A+Pl+Ill
 !!€  työllistettävämpi: työllistettävä+A+Comp+Sg+Nom
-!!€  työllistettävin: työllistettävä+A+Sup+Sg+Nom
+!!€  työllistettävin: työllistettävä+A+Superl+Sg+Nom
 0:ä  ADJ_FRONT_NOMINATIVE  ;
 0:ä  ADJ_FRONT_SINGULARS  ;
 0  ADJ_FRONT_PLURALS  ;
@@ -1588,7 +1588,7 @@ LEXICON ADJ_RUMA
 !!€  rumien: ruma+A+Pl+Gen
 !!€  rumiin: ruma+A+Pl+Ill
 !!€  rumempi: ruma+A+Comp+Sg+Nom
-!!€  rumin: ruma+A+Sup+Sg+Nom
+!!€  rumin: ruma+A+Superl+Sg+Nom
 0:a  ADJ_BACK_NOMINATIVE  ;
 0:a  ADJ_BACK_SINGULARS  ;
 0  ADJ_BACK_PLURALS  ;
@@ -1613,7 +1613,7 @@ LEXICON ADJ_TYHMÄ
 !!€  tyhmien: tyhmä+A+Pl+Gen
 !!€  tyhmiin: tyhmä+A+Pl+Ill
 !!€  tyhmempi: tyhmä+A+Comp+Sg+Nom
-!!€  tyhmin: tyhmä+A+Sup+Sg+Nom
+!!€  tyhmin: tyhmä+A+Superl+Sg+Nom
 0:ä  ADJ_FRONT_NOMINATIVE  ;
 0:ä  ADJ_FRONT_SINGULARS  ;
 0  ADJ_FRONT_PLURALS  ;
@@ -3112,7 +3112,7 @@ LEXICON ADJ_PITKÄ
 !!€gt-norm:  Adjective pitkä
 !!€  pitkä: pitkä+A+Sg+Nom
 !!€  pidempi: pitkä+A+Comp+Sg+Nom
-!!€  pisin: pitkä+A+Sup+Sg+Nom
+!!€  pisin: pitkä+A+Superl+Sg+Nom
 0:tkä  ADJ_FRONT_NOMINATIVE  ;
 0:tkä  ADJ_FRONT_STRONG_SINGULARS  ;
 0:tkä  ADJ_FRONT_WEAK_SINGULARS  ;
@@ -3259,13 +3259,13 @@ LEXICON ADJ_BACK_SUPERLATIVE
 !! adjective baseform. This baseform is handled separately to avoid double
 !! superlatives.
 !!€gt-norm: Adjective superlative front
-!!€ rumin: ruma+A+Sup+Sg+Nom # ugliest
+!!€ rumin: ruma+A+Superl+Sg+Nom # ugliest
 +Superl:»i  ADJ_BACK_SUPERLATIVE_STEMS ;
 
 
 LEXICON ADJ_FRONT_SUPERLATIVE
 !!€gt-norm: Adjective superlative back
-!!€ tyhmin: tyhmä+A+Sup+Sg+Nom # stupidest
+!!€ tyhmin: tyhmä+A+Superl+Sg+Nom # stupidest
 +Superl:»i  ADJ_FRONT_SUPERLATIVE_STEMS ;
 
 LEXICON ADJ_BACK_COMPARATIVE
@@ -3321,9 +3321,9 @@ LEXICON ADJ_BACK_SUPERLATIVE_STEMS
 !! This inflectional part is attached to adjective superlative stems to avoid
 !! circularity in superlative  derivations:
 !!€gt-norm: Adjective superlative inflection back
-!!€ nopein: nopea+A+Sup+Sg+Nom
-!!$ nopeimmimpia: nopea+A+Sup+Sup+Sg+Par
-!!$ nopeimmimmin: nopea+A+Sup+Sup+Sup+Sg+Nom
+!!€ nopein: nopea+A+Superl+Sg+Nom
+!!$ nopeimmimpia: nopea+A+Superl+Superl+Sg+Par
+!!$ nopeimmimmin: nopea+A+Superl+Superl+Superl+Sg+Nom
 0:n   ADJ_BACK_NOMINATIVE    ;
 0:mpa   ADJ_BACK_STRONG_SINGULARS    ;
 0:mma   ADJ_BACK_WEAK_SINGULARS   ;
@@ -3339,8 +3339,8 @@ LEXICON ADJ_BACK_SUPERLATIVE_STEMS
 
 LEXICON ADJ_FRONT_SUPERLATIVE_STEMS
 !!€gt-norm: Adjective superlative inflection front
-!!€ tyhmin: tyhmä+A+Sup+Sg+Nom
-!!$ tyhmimmimpiä: tyhmä+A+Sup+Sup+Sg+Par
+!!€ tyhmin: tyhmä+A+Superl+Sg+Nom
+!!$ tyhmimmimpiä: tyhmä+A+Superl+Superl+Sg+Par
 0:n   ADJ_FRONT_NOMINATIVE    ;
 0:mpä   ADJ_FRONT_STRONG_SINGULARS    ;
 0:mmä   ADJ_FRONT_WEAK_SINGULARS   ;
@@ -3930,16 +3930,16 @@ LEXICON ADJ_BACK_DERIV_STI
 !! Adjectives can usually be derived into sti adverbs productively
 !!€gt-norm: Deadjectival adverb derivations sti
 !!€ nopeasti nopea+A+Der/sti # fastly
-%+Der/sti:%>sti  PCLE_NOPEASTI ;
++Der/sti:%>sti  PCLE_NOPEASTI ;
 
 
 LEXICON ADJ_COMPOUND_S
 
-%+Cmp:{DB}s  ADJ_COMPOUND_NOUN_SUFF ;
++Cmp:{DB}s  ADJ_COMPOUND_NOUN_SUFF ;
 
 LEXICON ADJ_COMPOUND_NOUN_SUFF
 
-%+TruncPrefix:-  # ;
++TruncPrefix:-  # ;
 
 #:{hyph?}  NOUN ;
 #:{hyph?}  SUFFIX ;
@@ -3950,164 +3950,164 @@ LEXICON ADJ_COMPOUND_0
 
 LEXICON ADJ_COMPOUND
 
-%+TruncPrefix:-  # ;
++TruncPrefix:-  # ;
 
 #:{hyph?}  SUFFIX ;
 
 LEXICON ADJ_BACK_COMPARATIVE_ARCHAIC
 
-%+Comp%+Comp:{DB}m  ADJ_BACK_COMPARATIVE_STEMS ;
++Comp+Comp:{DB}m  ADJ_BACK_COMPARATIVE_STEMS ;
 
 
 LEXICON ADJ_FRONT_COMPARATIVE_ARCHAIC
 
-%+Comp%+Comp:{DB}m  ADJ_FRONT_COMPARATIVE_STEMS ;
++Comp+Comp:{DB}m  ADJ_FRONT_COMPARATIVE_STEMS ;
 
 LEXICON ADJ_BACK_ESSIVE_NA_ARCHAIC
 
-%+Sg%+Ess:%>na  ADJ_BACK_POSS_AN_CLIT_OPT ;
++Sg+Ess:%>na  ADJ_BACK_POSS_AN_CLIT_OPT ;
 
 
 LEXICON ADJ_BACK_ESSIVE_RA_ARCHAIC
 
-%+Sg%+Ess:%>ra  ADJ_BACK_POSS_AN_CLIT_OPT ;
++Sg+Ess:%>ra  ADJ_BACK_POSS_AN_CLIT_OPT ;
 
 
 LEXICON ADJ_BACK_GENITIVE_TEN_ARCHAIC
 
-%+Pl%+Gen:%>te  ADJ_BACK_POSS ;
++Pl+Gen:%>te  ADJ_BACK_POSS ;
 
-%+Pl%+Gen:%>ten  ADJ_BACK_CLIT_OPT ;
-%+Pl%+Gen:%>ten  ADJ_COMPOUND ;
++Pl+Gen:%>ten  ADJ_BACK_CLIT_OPT ;
++Pl+Gen:%>ten  ADJ_COMPOUND ;
 
 
 LEXICON ADJ_BACK_H_PLURALS_ARCHAIC
 
-%+Pl%+Gen:h%>i%>e  ADJ_BACK_POSS ;
++Pl+Gen:h%>i%>e  ADJ_BACK_POSS ;
 
-%+Pl%+Gen:h%>i%>en  ADJ_BACK_CLIT_OPT ;
++Pl+Gen:h%>i%>en  ADJ_BACK_CLIT_OPT ;
 
-%+Pl%+Gen:h%>i%>tte  ADJ_BACK_POSS ;
++Pl+Gen:h%>i%>tte  ADJ_BACK_POSS ;
 
-%+Pl%+Gen:h%>i%>tten  ADJ_BACK_CLIT_OPT ;
++Pl+Gen:h%>i%>tten  ADJ_BACK_CLIT_OPT ;
 
-%+Pl%+Ill:h%>i%>si  ADJ_BACK_POSS ;
++Pl+Ill:h%>i%>si  ADJ_BACK_POSS ;
 
-%+Pl%+Ill:h%>i%>sin  ADJ_BACK_CLIT_OPT ;
++Pl+Ill:h%>i%>sin  ADJ_BACK_CLIT_OPT ;
 
-%+Pl%+Par:h%>i%>a  ADJ_BACK_POSS_AN_CLIT_OPT ;
++Pl+Par:h%>i%>a  ADJ_BACK_POSS_AN_CLIT_OPT ;
 
 LEXICON ADJ_BACK_PARTITIVE_TA_ARCHAIC
 
-%+Sg%+Par:%>ta  ADJ_BACK_POSS_AN_CLIT_OPT ;
++Sg+Par:%>ta  ADJ_BACK_POSS_AN_CLIT_OPT ;
 LEXICON ADJ_FRONT_ESSIVE_NÄ_ARCHAIC
 
-%+Sg%+Ess:%>nä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
++Sg+Ess:%>nä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
 
 
 LEXICON ADJ_BACK_SINGULARS_ARCHAIC
 
-%+Pl%+Nom:  ADJ_BACK_POSS ;
++Pl+Nom:  ADJ_BACK_POSS ;
 
-%+Pl%+Nom:%>t  ADJ_BACK_CLIT_OPT ;
++Pl+Nom:%>t  ADJ_BACK_CLIT_OPT ;
 
-%+Sg%+Abe:%>tta  ADJ_BACK_POSS_AN_CLIT_OPT ;
++Sg+Abe:%>tta  ADJ_BACK_POSS_AN_CLIT_OPT ;
 
-%+Sg%+Abl:%>lta  ADJ_BACK_POSS_AN_CLIT_OPT ;
++Sg+Abl:%>lta  ADJ_BACK_POSS_AN_CLIT_OPT ;
 
-%+Sg%+Ade:%>lla  ADJ_BACK_POSS_AN_CLIT_OPT ;
++Sg+Ade:%>lla  ADJ_BACK_POSS_AN_CLIT_OPT ;
 
-%+Sg%+All:%>lle  ADJ_BACK_POSS_EN_CLIT_OPT ;
++Sg+All:%>lle  ADJ_BACK_POSS_EN_CLIT_OPT ;
 
-%+Sg%+Ela:%>sta  ADJ_BACK_POSS_AN_CLIT_OPT ;
++Sg+Ela:%>sta  ADJ_BACK_POSS_AN_CLIT_OPT ;
 
-%+Sg%+Ess:%>na  ADJ_BACK_POSS_AN_CLIT_OPT ;
++Sg+Ess:%>na  ADJ_BACK_POSS_AN_CLIT_OPT ;
 
-%+Sg%+Gen:  ADJ_BACK_POSS ;
++Sg+Gen:  ADJ_BACK_POSS ;
 
-%+Sg%+Gen:%>n  ADJ_BACK_CLIT_OPT ;
++Sg+Gen:%>n  ADJ_BACK_CLIT_OPT ;
 
-%+Sg%+Ill:%>sen  ADJ_BACK_CLIT_OPT ;
++Sg+Ill:%>sen  ADJ_BACK_CLIT_OPT ;
 
-%+Sg%+Ine:%>ssa  ADJ_BACK_POSS_AN_CLIT_OPT ;
++Sg+Ine:%>ssa  ADJ_BACK_POSS_AN_CLIT_OPT ;
 
-%+Sg%+Nom:  ADJ_BACK_POSS ;
++Sg+Nom:  ADJ_BACK_POSS ;
 
-%+Sg%+Tra:%>kse  ADJ_BACK_POSS_EN_OBL ;
++Sg+Tra:%>kse  ADJ_BACK_POSS_EN_OBL ;
 
-%+Sg%+Tra:%>ksi  ADJ_BACK_CLIT_OPT ;
-%+Sg%+Tra:%>ksi  ADJ_BACK_CLIT_OPT ;
++Sg+Tra:%>ksi  ADJ_BACK_CLIT_OPT ;
++Sg+Tra:%>ksi  ADJ_BACK_CLIT_OPT ;
 
 
 LEXICON ADJ_BACK_SUPERLATIVE_ARCHAIC
 
-%+Superl%+Superl:{DB}i  ADJ_BACK_SUPERLATIVE_STEMS ;
++Superl+Superl:{DB}i  ADJ_BACK_SUPERLATIVE_STEMS ;
 
 LEXICON ADJ_FRONT_GENITIVE_TEN_ARCHAIC
 
-%+Pl%+Gen:%>te  ADJ_FRONT_POSS ;
++Pl+Gen:%>te  ADJ_FRONT_POSS ;
 
-%+Pl%+Gen:%>ten  ADJ_FRONT_CLIT_OPT ;
-%+Pl%+Gen:%>ten  ADJ_COMPOUND ;
++Pl+Gen:%>ten  ADJ_FRONT_CLIT_OPT ;
++Pl+Gen:%>ten  ADJ_COMPOUND ;
 
 
 
 LEXICON ADJ_FRONT_H_PLURALS_ARCHAIC
 
-%+Pl%+Gen:h%>i%>e  ADJ_FRONT_POSS ;
++Pl+Gen:h%>i%>e  ADJ_FRONT_POSS ;
 
-%+Pl%+Gen:h%>i%>en  ADJ_FRONT_CLIT_OPT ;
++Pl+Gen:h%>i%>en  ADJ_FRONT_CLIT_OPT ;
 
-%+Pl%+Gen:h%>i%>tte  ADJ_FRONT_POSS ;
++Pl+Gen:h%>i%>tte  ADJ_FRONT_POSS ;
 
-%+Pl%+Gen:h%>i%>tten  ADJ_FRONT_CLIT_OPT ;
++Pl+Gen:h%>i%>tten  ADJ_FRONT_CLIT_OPT ;
 
-%+Pl%+Ill:h%>i%>si  ADJ_FRONT_POSS ;
++Pl+Ill:h%>i%>si  ADJ_FRONT_POSS ;
 
-%+Pl%+Ill:h%>i%>sin  ADJ_FRONT_CLIT_OPT ;
++Pl+Ill:h%>i%>sin  ADJ_FRONT_CLIT_OPT ;
 
-%+Pl%+Par:h%>i%>ä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
++Pl+Par:h%>i%>ä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
 
 LEXICON ADJ_FRONT_PARTITIVE_TÄ_ARCHAIC
 
-%+Sg%+Par:%>tä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
++Sg+Par:%>tä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
 
 LEXICON ADJ_FRONT_SINGULARS_ARCHAIC
 
-%+Pl%+Nom:  ADJ_FRONT_POSS ;
++Pl+Nom:  ADJ_FRONT_POSS ;
 
-%+Pl%+Nom:%>t  ADJ_FRONT_CLIT_OPT ;
++Pl+Nom:%>t  ADJ_FRONT_CLIT_OPT ;
 
-%+Sg%+Abe:%>ttä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
++Sg+Abe:%>ttä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
 
-%+Sg%+Abl:%>ltä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
++Sg+Abl:%>ltä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
 
-%+Sg%+Ade:%>llä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
++Sg+Ade:%>llä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
 
-%+Sg%+All:%>lle  ADJ_FRONT_POSS_EN_CLIT_OPT ;
++Sg+All:%>lle  ADJ_FRONT_POSS_EN_CLIT_OPT ;
 
-%+Sg%+Ela:%>stä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
++Sg+Ela:%>stä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
 
-%+Sg%+Ess:%>nä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
++Sg+Ess:%>nä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
 
-%+Sg%+Gen:  ADJ_FRONT_POSS ;
++Sg+Gen:  ADJ_FRONT_POSS ;
 
-%+Sg%+Gen:%>n  ADJ_FRONT_CLIT_OPT ;
++Sg+Gen:%>n  ADJ_FRONT_CLIT_OPT ;
 
-%+Sg%+Ill:%>sen  ADJ_FRONT_CLIT_OPT ;
++Sg+Ill:%>sen  ADJ_FRONT_CLIT_OPT ;
 
-%+Sg%+Ine:%>ssä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
++Sg+Ine:%>ssä  ADJ_FRONT_POSS_ÄN_CLIT_OPT ;
 
-%+Sg%+Nom:  ADJ_FRONT_POSS ;
++Sg+Nom:  ADJ_FRONT_POSS ;
 
-%+Sg%+Tra:%>kse  ADJ_FRONT_POSS_EN_OBL ;
++Sg+Tra:%>kse  ADJ_FRONT_POSS_EN_OBL ;
 
-%+Sg%+Tra:%>ksi  ADJ_FRONT_CLIT_OPT ;
-%+Sg%+Tra:%>ksi  ADJ_FRONT_CLIT_OPT ;
++Sg+Tra:%>ksi  ADJ_FRONT_CLIT_OPT ;
++Sg+Tra:%>ksi  ADJ_FRONT_CLIT_OPT ;
 
 LEXICON ADJ_FRONT_SUPERLATIVE_ARCHAIC
 
-%+Superl%+Superl:{DB}i  ADJ_FRONT_SUPERLATIVE_STEMS ;
++Superl+Superl:{DB}i  ADJ_FRONT_SUPERLATIVE_STEMS ;
 
 
 

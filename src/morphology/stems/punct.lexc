@@ -188,10 +188,10 @@ M€+ACR:M€  SYM_€  ;
 -+Punct+Dash:-  PUNCT_PISTE  ;
 ˗+Punct+Dash:˗  PUNCT_PISTE  ;
 –+Punct+Dash:–  PUNCT_PISTE  ;
---%+Punct%+Dash:--  SYMBOL_PISTE    ;
--%+Punct%+Dash:-    SYMBOL_PISTE    ;
-˗%+Punct%+Dash:˗    SYMBOL_PISTE    ;
-–%+Punct%+Dash:–    SYMBOL_PISTE    ;
+--%+Punct+Dash:--  SYMBOL_PISTE    ;
+-%+Punct+Dash:-    SYMBOL_PISTE    ;
+˗%+Punct+Dash:˗    SYMBOL_PISTE    ;
+–%+Punct+Dash:–    SYMBOL_PISTE    ;
 -+Punct:-  PUNCT_NONSTD_DASH_LOOP  ;
 ?%+Punct:?  PUNCT_NONSTD_EXCL_LOOP  ;
 ?+Punct:?  PUNCT_NONSTD_EXCL_LOOP  ;
@@ -309,184 +309,184 @@ LEXICON SYMBOL_PILKKU
 
 :  # ;
 
-%+Pl%+Abe:%:%>i%>tta  SYMBOL_BACK_POSS_AN_OPT ;
++Pl+Abe:%:%>i%>tta  SYMBOL_BACK_POSS_AN_OPT ;
 
-%+Pl%+Abl:%:%>i%>lta  SYMBOL_BACK_POSS_AN_OPT ;
++Pl+Abl:%:%>i%>lta  SYMBOL_BACK_POSS_AN_OPT ;
 
-%+Pl%+Ade:%:%>i%>lla  SYMBOL_BACK_POSS_AN_OPT ;
++Pl+Ade:%:%>i%>lla  SYMBOL_BACK_POSS_AN_OPT ;
 
-%+Pl%+All:%:%>i%>lle  SYMBOL_BACK_POSS_EN_OPT ;
++Pl+All:%:%>i%>lle  SYMBOL_BACK_POSS_EN_OPT ;
 
-%+Pl%+Ela:%:%>i%>sta  SYMBOL_BACK_POSS_AN_OPT ;
++Pl+Ela:%:%>i%>sta  SYMBOL_BACK_POSS_AN_OPT ;
 
-%+Pl%+Ess:%:%>i%>na  SYMBOL_BACK_POSS_AN_OPT ;
++Pl+Ess:%:%>i%>na  SYMBOL_BACK_POSS_AN_OPT ;
 
-%+Pl%+Gen:%:%>i%>den  SYMBOL_BACK_POSS_CLIT_OPT ;
++Pl+Gen:%:%>i%>den  SYMBOL_BACK_POSS_CLIT_OPT ;
 
-%+Pl%+Ill:%:%>i%>hin  SYMBOL_BACK_POSS_CLIT_OPT ;
++Pl+Ill:%:%>i%>hin  SYMBOL_BACK_POSS_CLIT_OPT ;
 
-%+Pl%+Ine:%:%>i%>ssa  SYMBOL_BACK_POSS_AN_OPT ;
++Pl+Ine:%:%>i%>ssa  SYMBOL_BACK_POSS_AN_OPT ;
 
-%+Pl%+Ins:%:%>i%>n  SYMBOL_BACK_CLIT_OPT ;
++Pl+Ins:%:%>i%>n  SYMBOL_BACK_CLIT_OPT ;
 
-%+Pl%+Nom:%:%>t  SYMBOL_BACK_CLIT_OPT ;
++Pl+Nom:%:%>t  SYMBOL_BACK_CLIT_OPT ;
 
-%+Pl%+Par:%:%>i%>ta  SYMBOL_BACK_POSS_AN_OPT ;
++Pl+Par:%:%>i%>ta  SYMBOL_BACK_POSS_AN_OPT ;
 
-%+Pl%+Tra:%:%>i%>kse  SYMBOL_BACK_POSS_EN_OBL ;
++Pl+Tra:%:%>i%>kse  SYMBOL_BACK_POSS_EN_OBL ;
 
-%+Pl%+Tra:%:%>i%>ksi  SYMBOL_BACK_CLIT_OPT ;
++Pl+Tra:%:%>i%>ksi  SYMBOL_BACK_CLIT_OPT ;
 
-%+Sg%+Abe:%:%>tta  SYMBOL_BACK_POSS_AN_OPT ;
++Sg+Abe:%:%>tta  SYMBOL_BACK_POSS_AN_OPT ;
 
-%+Sg%+Abl:%:%>lta  SYMBOL_BACK_POSS_AN_OPT ;
++Sg+Abl:%:%>lta  SYMBOL_BACK_POSS_AN_OPT ;
 
-%+Sg%+Ade:%:%>lla  SYMBOL_BACK_POSS_AN_OPT ;
++Sg+Ade:%:%>lla  SYMBOL_BACK_POSS_AN_OPT ;
 
-%+Sg%+All:%:%>lle  SYMBOL_BACK_POSS_EN_OPT ;
++Sg+All:%:%>lle  SYMBOL_BACK_POSS_EN_OPT ;
 
-%+Sg%+Ela:%:%>sta  SYMBOL_BACK_POSS_AN_OPT ;
++Sg+Ela:%:%>sta  SYMBOL_BACK_POSS_AN_OPT ;
 
-%+Sg%+Ess:%:%>na  SYMBOL_BACK_POSS_AN_OPT ;
++Sg+Ess:%:%>na  SYMBOL_BACK_POSS_AN_OPT ;
 
-%+Sg%+Gen:%:%>n  SYMBOL_BACK_CLIT_OPT ;
++Sg+Gen:%:%>n  SYMBOL_BACK_CLIT_OPT ;
 
-%+Sg%+Ill:%:%>seen  SYMBOL_BACK_POSS_CLIT_OPT ;
++Sg+Ill:%:%>seen  SYMBOL_BACK_POSS_CLIT_OPT ;
 
-%+Sg%+Ine:%:%>ssa  SYMBOL_BACK_POSS_AN_OPT ;
++Sg+Ine:%:%>ssa  SYMBOL_BACK_POSS_AN_OPT ;
 
-%+Sg%+Nom:%:  SYMBOL_BACK_POSS ;
-%+Sg%+Nom:%:  SYMBOL_BACK_CLIT ;
++Sg+Nom:%:  SYMBOL_BACK_POSS ;
++Sg+Nom:%:  SYMBOL_BACK_CLIT ;
 
-%+Sg%+Par:%:%>tta  SYMBOL_BACK_POSS_AN_OPT ;
++Sg+Par:%:%>tta  SYMBOL_BACK_POSS_AN_OPT ;
 
-%+Sg%+Tra:%:%>kse  SYMBOL_BACK_POSS_EN_OBL ;
++Sg+Tra:%:%>kse  SYMBOL_BACK_POSS_EN_OBL ;
 
-%+Sg%+Tra:%:%>ksi  SYMBOL_BACK_CLIT_OPT ;
++Sg+Tra:%:%>ksi  SYMBOL_BACK_CLIT_OPT ;
 
 :  SYMBOL_COMPOUND ;
 
-%+Com:%:%>i%>ne  SYMBOL_BACK_POSS_EN_OPT ;
++Com:%:%>i%>ne  SYMBOL_BACK_POSS_EN_OPT ;
 
 
 LEXICON SYMBOL_PISTE
 
 :  # ;
 
-%+Pl%+Abe:%:%>i%>ttä  SYMBOL_FRONT_POSS_ÄN_OPT ;
++Pl+Abe:%:%>i%>ttä  SYMBOL_FRONT_POSS_ÄN_OPT ;
 
-%+Pl%+Abl:%:%>i%>ltä  SYMBOL_FRONT_POSS_ÄN_OPT ;
++Pl+Abl:%:%>i%>ltä  SYMBOL_FRONT_POSS_ÄN_OPT ;
 
-%+Pl%+Ade:%:%>i%>llä  SYMBOL_FRONT_POSS_ÄN_OPT ;
++Pl+Ade:%:%>i%>llä  SYMBOL_FRONT_POSS_ÄN_OPT ;
 
-%+Pl%+All:%:%>i%>lle  SYMBOL_FRONT_POSS_EN_OPT ;
++Pl+All:%:%>i%>lle  SYMBOL_FRONT_POSS_EN_OPT ;
 
-%+Pl%+Ela:%:%>i%>stä  SYMBOL_FRONT_POSS_ÄN_OPT ;
++Pl+Ela:%:%>i%>stä  SYMBOL_FRONT_POSS_ÄN_OPT ;
 
-%+Pl%+Ess:%:%>i%>nä  SYMBOL_FRONT_POSS_ÄN_OPT ;
++Pl+Ess:%:%>i%>nä  SYMBOL_FRONT_POSS_ÄN_OPT ;
 
-%+Pl%+Gen:%:%>i%>den  SYMBOL_FRONT_POSS_CLIT_OPT ;
++Pl+Gen:%:%>i%>den  SYMBOL_FRONT_POSS_CLIT_OPT ;
 
-%+Pl%+Ill:%:%>i%>hin  SYMBOL_FRONT_POSS_CLIT_OPT ;
++Pl+Ill:%:%>i%>hin  SYMBOL_FRONT_POSS_CLIT_OPT ;
 
-%+Pl%+Ine:%:%>i%>ssä  SYMBOL_FRONT_POSS_ÄN_OPT ;
++Pl+Ine:%:%>i%>ssä  SYMBOL_FRONT_POSS_ÄN_OPT ;
 
-%+Pl%+Ins:%:%>i%>n  SYMBOL_FRONT_CLIT_OPT ;
++Pl+Ins:%:%>i%>n  SYMBOL_FRONT_CLIT_OPT ;
 
-%+Pl%+Nom:%:%>t  SYMBOL_FRONT_CLIT_OPT ;
++Pl+Nom:%:%>t  SYMBOL_FRONT_CLIT_OPT ;
 
-%+Pl%+Par:%:%>i%>tä  SYMBOL_FRONT_POSS_ÄN_OPT ;
++Pl+Par:%:%>i%>tä  SYMBOL_FRONT_POSS_ÄN_OPT ;
 
-%+Pl%+Tra:%:%>i%>kse  SYMBOL_FRONT_POSS_EN_OBL ;
++Pl+Tra:%:%>i%>kse  SYMBOL_FRONT_POSS_EN_OBL ;
 
-%+Pl%+Tra:%:%>i%>ksi  SYMBOL_FRONT_CLIT_OPT ;
++Pl+Tra:%:%>i%>ksi  SYMBOL_FRONT_CLIT_OPT ;
 
-%+Sg%+Abe:%:%>ttä  SYMBOL_FRONT_POSS_ÄN_OPT ;
++Sg+Abe:%:%>ttä  SYMBOL_FRONT_POSS_ÄN_OPT ;
 
-%+Sg%+Abl:%:%>ltä  SYMBOL_FRONT_POSS_ÄN_OPT ;
++Sg+Abl:%:%>ltä  SYMBOL_FRONT_POSS_ÄN_OPT ;
 
-%+Sg%+Ade:%:%>llä  SYMBOL_FRONT_POSS_ÄN_OPT ;
++Sg+Ade:%:%>llä  SYMBOL_FRONT_POSS_ÄN_OPT ;
 
-%+Sg%+All:%:%>lle  SYMBOL_FRONT_POSS_EN_OPT ;
++Sg+All:%:%>lle  SYMBOL_FRONT_POSS_EN_OPT ;
 
-%+Sg%+Ela:%:%>stä  SYMBOL_FRONT_POSS_ÄN_OPT ;
++Sg+Ela:%:%>stä  SYMBOL_FRONT_POSS_ÄN_OPT ;
 
-%+Sg%+Ess:%:%>nä  SYMBOL_FRONT_POSS_ÄN_OPT ;
++Sg+Ess:%:%>nä  SYMBOL_FRONT_POSS_ÄN_OPT ;
 
-%+Sg%+Gen:%:%>n  SYMBOL_FRONT_CLIT_OPT ;
++Sg+Gen:%:%>n  SYMBOL_FRONT_CLIT_OPT ;
 
-%+Sg%+Ill:%:%>seen  SYMBOL_FRONT_POSS_CLIT_OPT ;
++Sg+Ill:%:%>seen  SYMBOL_FRONT_POSS_CLIT_OPT ;
 
-%+Sg%+Ine:%:%>ssä  SYMBOL_FRONT_POSS_ÄN_OPT ;
++Sg+Ine:%:%>ssä  SYMBOL_FRONT_POSS_ÄN_OPT ;
 
-%+Sg%+Nom:%:  SYMBOL_FRONT_POSS ;
-%+Sg%+Nom:%:  SYMBOL_FRONT_CLIT ;
++Sg+Nom:%:  SYMBOL_FRONT_POSS ;
++Sg+Nom:%:  SYMBOL_FRONT_CLIT ;
 
-%+Sg%+Par:%:%>ttä  SYMBOL_FRONT_POSS_ÄN_OPT ;
++Sg+Par:%:%>ttä  SYMBOL_FRONT_POSS_ÄN_OPT ;
 
-%+Sg%+Tra:%:%>kse  SYMBOL_FRONT_POSS_EN_OBL ;
++Sg+Tra:%:%>kse  SYMBOL_FRONT_POSS_EN_OBL ;
 
-%+Sg%+Tra:%:%>ksi  SYMBOL_FRONT_CLIT_OPT ;
++Sg+Tra:%:%>ksi  SYMBOL_FRONT_CLIT_OPT ;
 
 :  SYMBOL_COMPOUND ;
 
-%+Com:%:%>i%>ne  SYMBOL_FRONT_POSS_EN_OPT ;
++Com:%:%>i%>ne  SYMBOL_FRONT_POSS_EN_OPT ;
 
 
 
 LEXICON SYMBOL_BACK_CLIT
 
-%+Foc/han:%>han  # ;
++Foc/han:%>han  # ;
 
-%+Foc/han%+Foc/kaan:%>han%>kaan  # ;
++Foc/han+Foc/kaan:%>han%>kaan  # ;
 
-%+Foc/han%+Qst:%>han%>ko  # ;
++Foc/han+Qst:%>han%>ko  # ;
 
-%+Foc/han%+Foc/pa:%>han%>pa  # ;
++Foc/han+Foc/pa:%>han%>pa  # ;
 
-%+Foc/kaan:%>kaan  # ;
++Foc/kaan:%>kaan  # ;
 
-%+Foc/kaan%+Foc/han:%>kaan%>han  # ;
++Foc/kaan+Foc/han:%>kaan%>han  # ;
 
-%+Foc/kaan%+Foc/kin:%>kaan%>kin  # ;
++Foc/kaan+Foc/kin:%>kaan%>kin  # ;
 
-%+Foc/kaan%+Qst:%>kaan%>ko  # ;
++Foc/kaan+Qst:%>kaan%>ko  # ;
 
-%+Foc/kaan%+Foc/pa:%>kaan%>pa  # ;
++Foc/kaan+Foc/pa:%>kaan%>pa  # ;
 
-%+Foc/kin:%>kin  # ;
++Foc/kin:%>kin  # ;
 
-%+Foc/kin%+Foc/han:%>kin%>han  # ;
++Foc/kin+Foc/han:%>kin%>han  # ;
 
-%+Foc/kin%+Foc/kaan:%>kin%>kaan  # ;
++Foc/kin+Foc/kaan:%>kin%>kaan  # ;
 
-%+Foc/kin%+Qst:%>kin%>ko  # ;
++Foc/kin+Qst:%>kin%>ko  # ;
 
-%+Foc/kin%+Foc/pa:%>kin%>pa  # ;
++Foc/kin+Foc/pa:%>kin%>pa  # ;
 
-%+Qst:%>ko  # ;
++Qst:%>ko  # ;
 
-%+Qst%+Foc/han:%>ko%>han  # ;
++Qst+Foc/han:%>ko%>han  # ;
 
-%+Qst%+Foc/kaan:%>ko%>kaan  # ;
++Qst+Foc/kaan:%>ko%>kaan  # ;
 
-%+Qst%+Foc/kin:%>ko%>kin  # ;
++Qst+Foc/kin:%>ko%>kin  # ;
 
-%+Qst%+Foc/pa:%>ko%>pa  # ;
++Qst+Foc/pa:%>ko%>pa  # ;
 
-%+Qst%+Foc/s:%>ko%>s  # ;
++Qst+Foc/s:%>ko%>s  # ;
 
-%+Foc/pa:%>pa  # ;
++Foc/pa:%>pa  # ;
 
-%+Foc/pa%+Foc/han:%>pa%>han  # ;
++Foc/pa+Foc/han:%>pa%>han  # ;
 
-%+Foc/pa%+Foc/kaan:%>pa%>kaan  # ;
++Foc/pa+Foc/kaan:%>pa%>kaan  # ;
 
-%+Foc/pa%+Foc/kin:%>pa%>kin  # ;
++Foc/pa+Foc/kin:%>pa%>kin  # ;
 
-%+Foc/pa%+Qst:%>pa%>ko  # ;
++Foc/pa+Qst:%>pa%>ko  # ;
 
-%+Foc/pa%+Foc/s:%>pa%>s  # ;
++Foc/pa+Foc/s:%>pa%>s  # ;
 
 
 LEXICON SYMBOL_BACK_CLIT_OPT
@@ -497,20 +497,20 @@ LEXICON SYMBOL_BACK_CLIT_OPT
 
 LEXICON SYMBOL_BACK_POSS
 
-%+Px3:%>nsa  SYMBOL_BACK_CLIT_OPT ;
++Px3:%>nsa  SYMBOL_BACK_CLIT_OPT ;
 
-%+PxPl1:%>mme  SYMBOL_BACK_CLIT_OPT ;
++PxPl1:%>mme  SYMBOL_BACK_CLIT_OPT ;
 
-%+PxPl2:%>nne  SYMBOL_BACK_CLIT_OPT ;
++PxPl2:%>nne  SYMBOL_BACK_CLIT_OPT ;
 
-%+PxSg1:%>ni  SYMBOL_BACK_CLIT_OPT ;
++PxSg1:%>ni  SYMBOL_BACK_CLIT_OPT ;
 
-%+PxSg2:%>si  SYMBOL_BACK_CLIT_OPT ;
++PxSg2:%>si  SYMBOL_BACK_CLIT_OPT ;
 
 
 LEXICON SYMBOL_BACK_POSS_AN
 
-%+Px3:%>an  SYMBOL_BACK_CLIT_OPT ;
++Px3:%>an  SYMBOL_BACK_CLIT_OPT ;
 
 
 LEXICON SYMBOL_BACK_POSS_AN_OPT
@@ -530,7 +530,7 @@ LEXICON SYMBOL_BACK_POSS_CLIT_OPT
 
 LEXICON SYMBOL_BACK_POSS_EN
 
-%+Px3:%>en  SYMBOL_BACK_CLIT_OPT ;
++Px3:%>en  SYMBOL_BACK_CLIT_OPT ;
 
 
 LEXICON SYMBOL_BACK_POSS_EN_OBL
@@ -549,7 +549,7 @@ LEXICON SYMBOL_BACK_POSS_EN_OPT
 
 LEXICON SYMBOL_COMPOUND
 
-%+TruncPrefix:-  # ;
++TruncPrefix:-  # ;
 
 #:-  NOUN ;
 #:-  ADJECTIVE ;
@@ -558,57 +558,57 @@ LEXICON SYMBOL_COMPOUND
 
 LEXICON SYMBOL_FRONT_CLIT
 
-%+Foc/han:%>hän  # ;
++Foc/han:%>hän  # ;
 
-%+Foc/han%+Foc/kaan:%>hän%>kään  # ;
++Foc/han+Foc/kaan:%>hän%>kään  # ;
 
-%+Foc/han%+Qst:%>hän%>kö  # ;
++Foc/han+Qst:%>hän%>kö  # ;
 
-%+Foc/han%+Foc/pa:%>hän%>pä  # ;
++Foc/han+Foc/pa:%>hän%>pä  # ;
 
-%+Foc/kaan:%>kään  # ;
++Foc/kaan:%>kään  # ;
 
-%+Foc/kaan%+Foc/han:%>kään%>hän  # ;
++Foc/kaan+Foc/han:%>kään%>hän  # ;
 
-%+Foc/kaan%+Foc/kin:%>kään%>kin  # ;
++Foc/kaan+Foc/kin:%>kään%>kin  # ;
 
-%+Foc/kaan%+Qst:%>kään%>kö  # ;
++Foc/kaan+Qst:%>kään%>kö  # ;
 
-%+Foc/kaan%+Foc/pa:%>kään%>pä  # ;
++Foc/kaan+Foc/pa:%>kään%>pä  # ;
 
-%+Foc/kin:%>kin  # ;
++Foc/kin:%>kin  # ;
 
-%+Foc/kin%+Foc/han:%>kin%>hän  # ;
++Foc/kin+Foc/han:%>kin%>hän  # ;
 
-%+Foc/kin%+Foc/kaan:%>kin%>kään  # ;
++Foc/kin+Foc/kaan:%>kin%>kään  # ;
 
-%+Foc/kin%+Qst:%>kin%>kö  # ;
++Foc/kin+Qst:%>kin%>kö  # ;
 
-%+Foc/kin%+Foc/pa:%>kin%>pä  # ;
++Foc/kin+Foc/pa:%>kin%>pä  # ;
 
-%+Qst:%>kö  # ;
++Qst:%>kö  # ;
 
-%+Qst%+Foc/han:%>kö%>hän  # ;
++Qst+Foc/han:%>kö%>hän  # ;
 
-%+Qst%+Foc/kaan:%>kö%>kään  # ;
++Qst+Foc/kaan:%>kö%>kään  # ;
 
-%+Qst%+Foc/kin:%>kö%>kin  # ;
++Qst+Foc/kin:%>kö%>kin  # ;
 
-%+Qst%+Foc/pa:%>kö%>pä  # ;
++Qst+Foc/pa:%>kö%>pä  # ;
 
-%+Qst%+Foc/s:%>kö%>s  # ;
++Qst+Foc/s:%>kö%>s  # ;
 
-%+Foc/pa:%>pä  # ;
++Foc/pa:%>pä  # ;
 
-%+Foc/pa%+Foc/han:%>pä%>hän  # ;
++Foc/pa+Foc/han:%>pä%>hän  # ;
 
-%+Foc/pa%+Foc/kaan:%>pä%>kään  # ;
++Foc/pa+Foc/kaan:%>pä%>kään  # ;
 
-%+Foc/pa%+Foc/kin:%>pä%>kin  # ;
++Foc/pa+Foc/kin:%>pä%>kin  # ;
 
-%+Foc/pa%+Qst:%>pä%>kö  # ;
++Foc/pa+Qst:%>pä%>kö  # ;
 
-%+Foc/pa%+Foc/s:%>pä%>s  # ;
++Foc/pa+Foc/s:%>pä%>s  # ;
 
 
 LEXICON SYMBOL_FRONT_CLIT_OPT
@@ -619,15 +619,15 @@ LEXICON SYMBOL_FRONT_CLIT_OPT
 
 LEXICON SYMBOL_FRONT_POSS
 
-%+Px3:%>nsä  SYMBOL_FRONT_CLIT_OPT ;
++Px3:%>nsä  SYMBOL_FRONT_CLIT_OPT ;
 
-%+PxPl1:%>mme  SYMBOL_FRONT_CLIT_OPT ;
++PxPl1:%>mme  SYMBOL_FRONT_CLIT_OPT ;
 
-%+PxPl2:%>nne  SYMBOL_FRONT_CLIT_OPT ;
++PxPl2:%>nne  SYMBOL_FRONT_CLIT_OPT ;
 
-%+PxSg1:%>ni  SYMBOL_FRONT_CLIT_OPT ;
++PxSg1:%>ni  SYMBOL_FRONT_CLIT_OPT ;
 
-%+PxSg2:%>si  SYMBOL_FRONT_CLIT_OPT ;
++PxSg2:%>si  SYMBOL_FRONT_CLIT_OPT ;
 
 
 LEXICON SYMBOL_FRONT_POSS_CLIT_OPT
@@ -639,7 +639,7 @@ LEXICON SYMBOL_FRONT_POSS_CLIT_OPT
 
 LEXICON SYMBOL_FRONT_POSS_EN
 
-%+Px3:%>en  SYMBOL_FRONT_CLIT_OPT ;
++Px3:%>en  SYMBOL_FRONT_CLIT_OPT ;
 
 
 LEXICON SYMBOL_FRONT_POSS_EN_OBL
@@ -658,7 +658,7 @@ LEXICON SYMBOL_FRONT_POSS_EN_OPT
 
 LEXICON SYMBOL_FRONT_POSS_ÄN
 
-%+Px3:%>än  SYMBOL_FRONT_CLIT_OPT ;
++Px3:%>än  SYMBOL_FRONT_CLIT_OPT ;
 
 
 LEXICON SYMBOL_FRONT_POSS_ÄN_OPT

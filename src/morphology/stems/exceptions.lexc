@@ -72,7 +72,7 @@ hyvä+A+Superl:parha                ADJ_BACK_PLURALS ;
 hyvä+A+Superl:paras                ADJ_BACK_PARTITIVE_TA ;
 hyvä+A+Superl:parhaa               ADJ_BACK_ILLATIVE_SEEN ;
 hyvä+A+Superl:parha                ADJ_BACK_GENITIVE_IDEN ;
-hyvä+A+Sup+Use/NG:parha                ADJ_BACK_GENITIVE_ITTEN ;
+hyvä+A+Superl+Use/NG:parha                ADJ_BACK_GENITIVE_ITTEN ;
 hyvä+A+Superl:parha                ADJ_BACK_PARTITIVE_ITA ;
 hyvä+A+Superl:parha                ADJ_BACK_ILLATIVE_ISIIN ;
 hyvä+A:parha                    ADJ_BACK_SUPERLATIVE ;
@@ -118,135 +118,135 @@ olla+V+Act+Imprt+Sg2+Dial/standard+Foc/s:oos     VERB_BACK_CLIT_OPT       ;
 
 LEXICON CONJUNCTIONVERB
 
-ehkä%+Pcle#ei%+V+Neg:ehke  X_51ehkei  ;
-ja%+CC#ei%+V+Neg:e  X_51eikä  ;
-miksi%++Adv+Interr#ei%+V+Neg:mikse  X_51miksei  ;
+ehkä+Pcle#ei+V+Neg:ehke  X_51ehkei  ;
+ja+CC#ei+V+Neg:e  X_51eikä  ;
+miksi++Adv+Interr#ei+V+Neg:mikse  X_51miksei  ;
 
-!että%+CS#ei%+Neg:ette  X_51ettei  ; cs.lexc
-!jotta%+CS#ei%+Neg%+CS:jolle  X_51jollei  ; cs.lexc
-!jotta%+CS#ei%+Neg:jotte  X_51jottei  ; cs.lexc
-!mutta%+CC#ei%+Neg:mutte  X_51muttei  ; cc.lexc
-!vaikka%+CS#ei%+Neg:vaikke  X_51vaikkei  ; cs.lexc
+!että+CS#ei+Neg:ette  X_51ettei  ; cs.lexc
+!jotta+CS#ei+Neg+CS:jolle  X_51jollei  ; cs.lexc
+!jotta+CS#ei+Neg:jotte  X_51jottei  ; cs.lexc
+!mutta+CC#ei+Neg:mutte  X_51muttei  ; cc.lexc
+!vaikka+CS#ei+Neg:vaikke  X_51vaikkei  ; cs.lexc
 
 
 LEXICON X_51ehkei
 
-%+Act%+Pl1:mme  VERB_FRONT_CLIT_OPT ;
++Act+Pl1:mme  VERB_FRONT_CLIT_OPT ;
 
-%+Act%+Pl2:tte  VERB_FRONT_CLIT_OPT ;
++Act+Pl2:tte  VERB_FRONT_CLIT_OPT ;
 
-%+Act%+Pl3:ivät  VERB_FRONT_CLIT_OPT ;
++Act+Pl3:ivät  VERB_FRONT_CLIT_OPT ;
 
-%+Act%+Sg1:n  VERB_FRONT_CLIT_OPT ;
++Act+Sg1:n  VERB_FRONT_CLIT_OPT ;
 
-%+Act%+Sg2:t  VERB_FRONT_CLIT_OPT ;
++Act+Sg2:t  VERB_FRONT_CLIT_OPT ;
 
-%+Act%+Sg3:i  VERB_FRONT_CLIT_OPT ;
++Act+Sg3:i  VERB_FRONT_CLIT_OPT ;
 
 
 LEXICON X_51eikä
 
-%+Act%+Pl1:mmekä  VERB_FRONT_CLIT_OPT ;
++Act+Pl1:mmekä  VERB_FRONT_CLIT_OPT ;
 
-%+Act%+Pl2:ttekä  VERB_FRONT_CLIT_OPT ;
++Act+Pl2:ttekä  VERB_FRONT_CLIT_OPT ;
 
-%+Act%+Pl3:ivätkä  VERB_FRONT_CLIT_OPT ;
++Act+Pl3:ivätkä  VERB_FRONT_CLIT_OPT ;
 
-%+Act%+Sg1:nkä  VERB_FRONT_CLIT_OPT ;
++Act+Sg1:nkä  VERB_FRONT_CLIT_OPT ;
 
-%+Act%+Sg2:tkä  VERB_FRONT_CLIT_OPT ;
++Act+Sg2:tkä  VERB_FRONT_CLIT_OPT ;
 
-%+Act%+Sg3:ikä  VERB_FRONT_CLIT_OPT ;
++Act+Sg3:ikä  VERB_FRONT_CLIT_OPT ;
 
 
 !LEXICON X_51ettei
 
-!%+Act%+Pl1:mme  VERB_FRONT_CLIT_OPT ;
+!+Act+Pl1:mme  VERB_FRONT_CLIT_OPT ;
 
-!%+Act%+Pl2:tte  VERB_FRONT_CLIT_OPT ;
+!+Act+Pl2:tte  VERB_FRONT_CLIT_OPT ;
 
-!%+Act%+Pl3:ivät  VERB_FRONT_CLIT_OPT ;
+!+Act+Pl3:ivät  VERB_FRONT_CLIT_OPT ;
 
-!%+Act%+Sg1:n  VERB_FRONT_CLIT_OPT ;
+!+Act+Sg1:n  VERB_FRONT_CLIT_OPT ;
 
-!%+Act%+Sg2:t  VERB_FRONT_CLIT_OPT ;
+!+Act+Sg2:t  VERB_FRONT_CLIT_OPT ;
 
-!%+Act%+Sg3:i  VERB_FRONT_CLIT_OPT ;
+!+Act+Sg3:i  VERB_FRONT_CLIT_OPT ;
 
 
 !LEXICON X_51jollei
 
-!%+Act%+Pl1:mme  VERB_FRONT_CLIT_OPT ;
+!+Act+Pl1:mme  VERB_FRONT_CLIT_OPT ;
 
-!%+Act%+Pl2:tte  VERB_FRONT_CLIT_OPT ;
+!+Act+Pl2:tte  VERB_FRONT_CLIT_OPT ;
 
-!%+Act%+Pl3:ivät  VERB_FRONT_CLIT_OPT ;
+!+Act+Pl3:ivät  VERB_FRONT_CLIT_OPT ;
 
-!%+Act%+Sg1:n  VERB_FRONT_CLIT_OPT ;
+!+Act+Sg1:n  VERB_FRONT_CLIT_OPT ;
 
-!%+Act%+Sg2:t  VERB_FRONT_CLIT_OPT ;
+!+Act+Sg2:t  VERB_FRONT_CLIT_OPT ;
 
-!%+Act%+Sg3:i  VERB_FRONT_CLIT_OPT ;
+!+Act+Sg3:i  VERB_FRONT_CLIT_OPT ;
 
 
 !LEXICON X_51jottei
 
-!%+Act%+Pl1:mme  VERB_FRONT_CLIT_OPT ;
+!+Act+Pl1:mme  VERB_FRONT_CLIT_OPT ;
 
-!%+Act%+Pl2:tte  VERB_FRONT_CLIT_OPT ;
+!+Act+Pl2:tte  VERB_FRONT_CLIT_OPT ;
 
-!%+Act%+Pl3:ivät  VERB_FRONT_CLIT_OPT ;
+!+Act+Pl3:ivät  VERB_FRONT_CLIT_OPT ;
 
-!%+Act%+Sg1:n  VERB_FRONT_CLIT_OPT ;
+!+Act+Sg1:n  VERB_FRONT_CLIT_OPT ;
 
-!%+Act%+Sg2:t  VERB_FRONT_CLIT_OPT ;
+!+Act+Sg2:t  VERB_FRONT_CLIT_OPT ;
 
-!%+Act%+Sg3:i  VERB_FRONT_CLIT_OPT ;
+!+Act+Sg3:i  VERB_FRONT_CLIT_OPT ;
 
 
 LEXICON X_51miksei
 
-%+Act%+Pl1:mme  VERB_FRONT_CLIT_OPT ;
++Act+Pl1:mme  VERB_FRONT_CLIT_OPT ;
 
-%+Act%+Pl2:tte  VERB_FRONT_CLIT_OPT ;
++Act+Pl2:tte  VERB_FRONT_CLIT_OPT ;
 
-%+Act%+Pl3:ivät  VERB_FRONT_CLIT_OPT ;
++Act+Pl3:ivät  VERB_FRONT_CLIT_OPT ;
 
-%+Act%+Sg1:n  VERB_FRONT_CLIT_OPT ;
++Act+Sg1:n  VERB_FRONT_CLIT_OPT ;
 
-%+Act%+Sg2:t  VERB_FRONT_CLIT_OPT ;
++Act+Sg2:t  VERB_FRONT_CLIT_OPT ;
 
-%+Act%+Sg3:i  VERB_FRONT_CLIT_OPT ;
++Act+Sg3:i  VERB_FRONT_CLIT_OPT ;
 
 
 !LEXICON X_51muttei
 
-!%+Act%+Pl1:mme  VERB_FRONT_CLIT_OPT ;
+!+Act+Pl1:mme  VERB_FRONT_CLIT_OPT ;
 
-!%+Act%+Pl2:tte  VERB_FRONT_CLIT_OPT ;
+!+Act+Pl2:tte  VERB_FRONT_CLIT_OPT ;
 
-!%+Act%+Pl3:ivät  VERB_FRONT_CLIT_OPT ;
+!+Act+Pl3:ivät  VERB_FRONT_CLIT_OPT ;
 
-!%+Act%+Sg1:n  VERB_FRONT_CLIT_OPT ;
+!+Act+Sg1:n  VERB_FRONT_CLIT_OPT ;
 
-!%+Act%+Sg2:t  VERB_FRONT_CLIT_OPT ;
+!+Act+Sg2:t  VERB_FRONT_CLIT_OPT ;
 
-!%+Act%+Sg3:i  VERB_FRONT_CLIT_OPT ;
+!+Act+Sg3:i  VERB_FRONT_CLIT_OPT ;
 
 
 !LEXICON X_51vaikkei
 
-!%+Act%+Pl1:mme  VERB_FRONT_CLIT_OPT ;
+!+Act+Pl1:mme  VERB_FRONT_CLIT_OPT ;
 
-!%+Act%+Pl2:tte  VERB_FRONT_CLIT_OPT ;
+!+Act+Pl2:tte  VERB_FRONT_CLIT_OPT ;
 
-!%+Act%+Pl3:ivät  VERB_FRONT_CLIT_OPT ;
+!+Act+Pl3:ivät  VERB_FRONT_CLIT_OPT ;
 
-!%+Act%+Sg1:n  VERB_FRONT_CLIT_OPT ;
+!+Act+Sg1:n  VERB_FRONT_CLIT_OPT ;
 
-!%+Act%+Sg2:t  VERB_FRONT_CLIT_OPT ;
+!+Act+Sg2:t  VERB_FRONT_CLIT_OPT ;
 
-!%+Act%+Sg3:i  VERB_FRONT_CLIT_OPT ;
+!+Act+Sg3:i  VERB_FRONT_CLIT_OPT ;
 
 LEXICON X
 
