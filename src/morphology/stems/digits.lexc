@@ -78,7 +78,7 @@ LEXICON ARABICLOOP_pirinen !!= __@CODE@__ essentially allows any number-sign com
 %,+Use/Circ:%, ARABIC ;
 % +Use/Circ:%  ARABIC ; ! Allowing for "23 500".
  +Use/Circ:   ARABIC ; ! Allowing for "23 500" w/nbsp (initial char is alt-space)
-%/+Use/Circ:%/ ARABIC ; ! 24/12
+/+Use/Circ:/ ARABIC ; ! 24/12
 ,%-+Num:,%- # ;   ! 10,-
 ,%–+Num:,%– # ;   ! 10,–
 ,%—+Num:,%— # ;   ! 10,—
