@@ -4169,49 +4169,49 @@ LEXICON VERB_EI
 
 +Neg+Act+Sg3+Qst+Dial:eks  #  ;
 
-+Neg+Act+Impv+Pl1+Foc/ka+Dial:elkäämmekä  VERB_FRONT_CLIT_OPT  ;
++Neg+Act+Imprt+Pl1+Foc/ka+Dial:elkäämmekä  VERB_FRONT_CLIT_OPT  ;
 
-+Neg+Act+Impv+Pl1+Foc/ka:älkäämmekä  VERB_FRONT_CLIT_OPT  ;
++Neg+Act+Imprt+Pl1+Foc/ka:älkäämmekä  VERB_FRONT_CLIT_OPT  ;
 
-+Neg+Act+Impv+Pl1+Dial:elkäämme  VERB_FRONT_CLIT_OPT  ;
++Neg+Act+Imprt+Pl1+Dial:elkäämme  VERB_FRONT_CLIT_OPT  ;
 
-+Neg+Act+Impv+Pl1:älkäämme  VERB_FRONT_CLIT_OPT  ;
++Neg+Act+Imprt+Pl1:älkäämme  VERB_FRONT_CLIT_OPT  ;
 
-+Neg+Act+Impv+Pl2+Foc/ka+Dial:elkääkä  VERB_FRONT_CLIT_OPT  ;
++Neg+Act+Imprt+Pl2+Foc/ka+Dial:elkääkä  VERB_FRONT_CLIT_OPT  ;
 
-+Neg+Act+Impv+Pl2+Foc/ka:älkääkä  VERB_FRONT_CLIT_OPT  ;
++Neg+Act+Imprt+Pl2+Foc/ka:älkääkä  VERB_FRONT_CLIT_OPT  ;
 
-+Neg+Act+Impv+Pl2+Foc/s:älkääs  #  ;
++Neg+Act+Imprt+Pl2+Foc/s:älkääs  #  ;
 
-+Neg+Act+Impv+Pl2+Dial:elkää  VERB_FRONT_CLIT_OPT  ;
++Neg+Act+Imprt+Pl2+Dial:elkää  VERB_FRONT_CLIT_OPT  ;
 
-+Neg+Act+Impv+Pl2:älkää  VERB_FRONT_CLIT_OPT  ;
++Neg+Act+Imprt+Pl2:älkää  VERB_FRONT_CLIT_OPT  ;
 
-+Neg+Act+Impv+Pl3+Foc/ka+Dial:elköötkä  VERB_FRONT_CLIT_OPT  ;
++Neg+Act+Imprt+Pl3+Foc/ka+Dial:elköötkä  VERB_FRONT_CLIT_OPT  ;
 
-+Neg+Act+Impv+Pl3+Foc/ka:älköötkä  VERB_FRONT_CLIT_OPT  ;
++Neg+Act+Imprt+Pl3+Foc/ka:älköötkä  VERB_FRONT_CLIT_OPT  ;
 
-+Neg+Act+Impv+Pl3+Dial:elkööt  VERB_FRONT_CLIT_OPT  ;
++Neg+Act+Imprt+Pl3+Dial:elkööt  VERB_FRONT_CLIT_OPT  ;
 
-+Neg+Act+Impv+Pl3:älkööt  VERB_FRONT_CLIT_OPT  ;
++Neg+Act+Imprt+Pl3:älkööt  VERB_FRONT_CLIT_OPT  ;
 
-+Neg+Act+Impv+Sg2+Foc/ka+Dial:eläkä  VERB_FRONT_CLIT_OPT  ;
++Neg+Act+Imprt+Sg2+Foc/ka+Dial:eläkä  VERB_FRONT_CLIT_OPT  ;
 
-+Neg+Act+Impv+Sg2+Foc/ka:äläkä  VERB_FRONT_CLIT_OPT  ;
++Neg+Act+Imprt+Sg2+Foc/ka:äläkä  VERB_FRONT_CLIT_OPT  ;
 
-+Neg+Act+Impv+Sg2+Foc/s:äläs  #  ;
++Neg+Act+Imprt+Sg2+Foc/s:äläs  #  ;
 
-+Neg+Act+Impv+Sg2+Dial:elä  VERB_FRONT_CLIT_OPT  ;
++Neg+Act+Imprt+Sg2+Dial:elä  VERB_FRONT_CLIT_OPT  ;
 
-+Neg+Act+Impv+Sg2:älä  VERB_FRONT_CLIT_OPT  ;
++Neg+Act+Imprt+Sg2:älä  VERB_FRONT_CLIT_OPT  ;
 
-+Neg+Act+Impv+Sg3+Foc/ka+Dial:elköönkä  VERB_FRONT_CLIT_OPT  ;
++Neg+Act+Imprt+Sg3+Foc/ka+Dial:elköönkä  VERB_FRONT_CLIT_OPT  ;
 
-+Neg+Act+Impv+Sg3+Foc/ka:älköönkä  VERB_FRONT_CLIT_OPT  ;
++Neg+Act+Imprt+Sg3+Foc/ka:älköönkä  VERB_FRONT_CLIT_OPT  ;
 
-+Neg+Act+Impv+Sg3+Dial:elköön  VERB_FRONT_CLIT_OPT  ;
++Neg+Act+Imprt+Sg3+Dial:elköön  VERB_FRONT_CLIT_OPT  ;
 
-+Neg+Act+Impv+Sg3:älköön  VERB_FRONT_CLIT_OPT  ;
++Neg+Act+Imprt+Sg3:älköön  VERB_FRONT_CLIT_OPT  ;
 
 +Neg:äl  VERB_FRONT_OPTATIVE_L_ARCHAIC  ;
 +Neg:äl  VERB_FRONT_IMPERATIVE_ARCHAIC  ;
@@ -4688,17 +4688,17 @@ LEXICON AUX_OLLA
 
 +Act+Der/maisilla:olemaisilla	VERB_BACK_POSS_AN ;
 
-+Act+Inf3+Abe:olematta	VERB_BACK_POSS_AN_OPT ;
++Act+InfMa+Abe:olematta	VERB_BACK_POSS_AN_OPT ;
 
-+Act+Inf3+Ade:olemalla	VERB_BACK_CLIT_OPT ;
++Act+InfMa+Ade:olemalla	VERB_BACK_CLIT_OPT ;
 
-+Act+Inf3+Ela:olemasta	VERB_BACK_CLIT_OPT ;
++Act+InfMa+Ela:olemasta	VERB_BACK_CLIT_OPT ;
 
-+Act+Inf3+Ill:olemaan	VERB_BACK_CLIT_OPT ;
++Act+InfMa+Ill:olemaan	VERB_BACK_CLIT_OPT ;
 
-+Act+Inf3+Ine:olemassa	VERB_BACK_CLIT_OPT ;
++Act+InfMa+Ine:olemassa	VERB_BACK_CLIT_OPT ;
 
-+Act+Inf3+Ins:oleman	VERB_BACK_CLIT_OPT ;
++Act+InfMa+Ins:oleman	VERB_BACK_CLIT_OPT ;
 
 +Act+Cond+Pl1+Dial/Finland:oisimme	VERB_BACK_CLIT_OPT ;
 
@@ -5727,13 +5727,13 @@ LEXICON VERB_FRONT_OPTATIVE_S_ARCHAIC
 
 LEXICON VERB_FRONT_IMPERATIVE_ARCHAIC
 
-%+Act%+Impv%+Pl2:%>kää%>tten  VERB_FRONT_CLIT_OPT ;
+%+Act%+Imprt%+Pl2:%>kää%>tten  VERB_FRONT_CLIT_OPT ;
 
-%+Act%+Impv%+Pl2:%>kää%>tte  VERB_FRONT_CLIT_OPT ;
+%+Act%+Imprt%+Pl2:%>kää%>tte  VERB_FRONT_CLIT_OPT ;
 
-%+Act%+Impv%+Sg1:%>kää%>mi  VERB_FRONT_CLIT_OPT ;
+%+Act%+Imprt%+Sg1:%>kää%>mi  VERB_FRONT_CLIT_OPT ;
 
-%+Act%+Impv%+Sg1:%>kää%>ni  VERB_FRONT_CLIT_OPT ;
+%+Act%+Imprt%+Sg1:%>kää%>ni  VERB_FRONT_CLIT_OPT ;
 
 %+Act%+Opt%+Pl1:%>köö%>mme  VERB_FRONT_CLIT_OPT ;
 

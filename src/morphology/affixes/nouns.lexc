@@ -17680,7 +17680,7 @@ LEXICON NOUN_ACRO_BACK_CLIT
 
  +Foc/han+Foc/kaan:%>han%>kaan # ;
 
-   +Foc/han+Foc/ko:%>han%>ko   # ;
+   +Foc/han+Qst:%>han%>ko   # ;
 
    +Foc/han+Foc/pa:%>han%>pa   # ;
 
@@ -17690,7 +17690,7 @@ LEXICON NOUN_ACRO_BACK_CLIT
 
  +Foc/kaan+Foc/kin:%>kaan%>kin # ;
 
-  +Foc/kaan+Foc/ko:%>kaan%>ko  # ;
+  +Foc/kaan+Qst:%>kaan%>ko  # ;
 
   +Foc/kaan+Foc/pa:%>kaan%>pa  # ;
 
@@ -17700,21 +17700,21 @@ LEXICON NOUN_ACRO_BACK_CLIT
 
  +Foc/kin+Foc/kaan:%>kin%>kaan # ;
 
-   +Foc/kin+Foc/ko:%>kin%>ko   # ;
+   +Foc/kin+Qst:%>kin%>ko   # ;
 
    +Foc/kin+Foc/pa:%>kin%>pa   # ;
 
-           +Foc/ko:%>ko        # ;
+           +Qst:%>ko        # ;
 
-   +Foc/ko+Foc/han:%>ko%>han   # ;
+   +Qst+Foc/han:%>ko%>han   # ;
 
-  +Foc/ko+Foc/kaan:%>ko%>kaan  # ;
+  +Qst+Foc/kaan:%>ko%>kaan  # ;
 
-   +Foc/ko+Foc/kin:%>ko%>kin   # ;
+   +Qst+Foc/kin:%>ko%>kin   # ;
 
-    +Foc/ko+Foc/pa:%>ko%>pa    # ;
+    +Qst+Foc/pa:%>ko%>pa    # ;
 
-     +Foc/ko+Foc/s:%>ko%>s     # ;
+     +Qst+Foc/s:%>ko%>s     # ;
 
            +Foc/pa:%>pa        # ;
 
@@ -17724,7 +17724,7 @@ LEXICON NOUN_ACRO_BACK_CLIT
 
    +Foc/pa+Foc/kin:%>pa%>kin   # ;
 
-    +Foc/pa+Foc/ko:%>pa%>ko    # ;
+    +Foc/pa+Qst:%>pa%>ko    # ;
 
      +Foc/pa+Foc/s:%>pa%>s     # ;
 
@@ -18002,7 +18002,7 @@ LEXICON NOUN_ACRO_FRONT_CLIT
 
  +Foc/han+Foc/kaan:%>hän%>kään # ;
 
-   +Foc/han+Foc/ko:%>hän%>kö   # ;
+   +Foc/han+Qst:%>hän%>kö   # ;
 
    +Foc/han+Foc/pa:%>hän%>pä   # ;
 
@@ -18012,7 +18012,7 @@ LEXICON NOUN_ACRO_FRONT_CLIT
 
  +Foc/kaan+Foc/kin:%>kään%>kin # ;
 
-  +Foc/kaan+Foc/ko:%>kään%>kö  # ;
+  +Foc/kaan+Qst:%>kään%>kö  # ;
 
   +Foc/kaan+Foc/pa:%>kään%>pä  # ;
 
@@ -18022,21 +18022,21 @@ LEXICON NOUN_ACRO_FRONT_CLIT
 
  +Foc/kin+Foc/kaan:%>kin%>kään # ;
 
-   +Foc/kin+Foc/ko:%>kin%>kö   # ;
+   +Foc/kin+Qst:%>kin%>kö   # ;
 
    +Foc/kin+Foc/pa:%>kin%>pä   # ;
 
-           +Foc/ko:%>kö        # ;
+           +Qst:%>kö        # ;
 
-   +Foc/ko+Foc/han:%>kö%>hän   # ;
+   +Qst+Foc/han:%>kö%>hän   # ;
 
-  +Foc/ko+Foc/kaan:%>kö%>kään  # ;
+  +Qst+Foc/kaan:%>kö%>kään  # ;
 
-   +Foc/ko+Foc/kin:%>kö%>kin   # ;
+   +Qst+Foc/kin:%>kö%>kin   # ;
 
-    +Foc/ko+Foc/pa:%>kö%>pä    # ;
+    +Qst+Foc/pa:%>kö%>pä    # ;
 
-     +Foc/ko+Foc/s:%>kö%>s     # ;
+     +Qst+Foc/s:%>kö%>s     # ;
 
            +Foc/pa:%>pä        # ;
 
@@ -18046,7 +18046,7 @@ LEXICON NOUN_ACRO_FRONT_CLIT
 
    +Foc/pa+Foc/kin:%>pä%>kin   # ;
 
-    +Foc/pa+Foc/ko:%>pä%>kö    # ;
+    +Foc/pa+Qst:%>pä%>kö    # ;
 
      +Foc/pa+Foc/s:%>pä%>s     # ;
 

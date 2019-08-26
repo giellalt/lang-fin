@@ -66,15 +66,15 @@ ruoka+N:ruu         NOUN_BACK_WEAK_PLURALS ;
 !!€ paras:
 !!€ parhaat:
 hyvä+A:pare                     ADJ_BACK_COMPARATIVE ;
-hyvä+A+Sup:paras                ADJ_BACK_NOMINATIVE ;
-hyvä+A+Sup:parhaa               ADJ_BACK_SINGULARS ;
-hyvä+A+Sup:parha                ADJ_BACK_PLURALS ;
-hyvä+A+Sup:paras                ADJ_BACK_PARTITIVE_TA ;
-hyvä+A+Sup:parhaa               ADJ_BACK_ILLATIVE_SEEN ;
-hyvä+A+Sup:parha                ADJ_BACK_GENITIVE_IDEN ;
+hyvä+A+Superl:paras                ADJ_BACK_NOMINATIVE ;
+hyvä+A+Superl:parhaa               ADJ_BACK_SINGULARS ;
+hyvä+A+Superl:parha                ADJ_BACK_PLURALS ;
+hyvä+A+Superl:paras                ADJ_BACK_PARTITIVE_TA ;
+hyvä+A+Superl:parhaa               ADJ_BACK_ILLATIVE_SEEN ;
+hyvä+A+Superl:parha                ADJ_BACK_GENITIVE_IDEN ;
 hyvä+A+Sup+Use/NG:parha                ADJ_BACK_GENITIVE_ITTEN ;
-hyvä+A+Sup:parha                ADJ_BACK_PARTITIVE_ITA ;
-hyvä+A+Sup:parha                ADJ_BACK_ILLATIVE_ISIIN ;
+hyvä+A+Superl:parha                ADJ_BACK_PARTITIVE_ITA ;
+hyvä+A+Superl:parha                ADJ_BACK_ILLATIVE_ISIIN ;
 hyvä+A:parha                    ADJ_BACK_SUPERLATIVE ;
 hyvä+A+Der/sti+Adv:parhaiten    ADV_BACK_CLIT_OPT ;
 
@@ -286,17 +286,17 @@ LEXICON X_51ettei
 
 LEXICON X_51äläkä
 
-+Act+Impv+Pl1:käämmekä	VERB_FRONT_CLIT_OPT ;
++Act+Imprt+Pl1:käämmekä	VERB_FRONT_CLIT_OPT ;
 
-+Act+Impv+Pl2:kääkä	VERB_FRONT_CLIT_OPT ;
++Act+Imprt+Pl2:kääkä	VERB_FRONT_CLIT_OPT ;
 
-+Act+Impv+Pl2+Use/Arch:käättekä	VERB_FRONT_CLIT_OPT ;
++Act+Imprt+Pl2+Use/Arch:käättekä	VERB_FRONT_CLIT_OPT ;
 
-+Act+Impv+Pl3:köötkä	VERB_FRONT_CLIT_OPT ;
++Act+Imprt+Pl3:köötkä	VERB_FRONT_CLIT_OPT ;
 
-+Act+Impv+Sg2:äkä	VERB_FRONT_CLIT_OPT ;
++Act+Imprt+Sg2:äkä	VERB_FRONT_CLIT_OPT ;
 
-+Act+Impv+Sg3:köönkä	VERB_FRONT_CLIT_OPT ;
++Act+Imprt+Sg3:köönkä	VERB_FRONT_CLIT_OPT ;
 
 LEXICON X_FORGN_EN
 
