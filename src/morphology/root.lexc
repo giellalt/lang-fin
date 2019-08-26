@@ -35,7 +35,34 @@ Multichar_Symbols
 !! sanaluokka|http://scripta.kotus.fi/visk/visk_termit.cgi?h_id=sCABBIDAI],
 !! [VISK § 438|http://scripta.kotus.fi/visk/sisallys.php?p=438].
 !!
-!! The codes:
+
+!! !Temporary list of added tags
+!! These tags were added as part of a tag unification, and should be
+!! put where they belong.
+
+!! Are there tags not declared in root.lexc or misspelled?
+!! Have a look at these:
++3			            !!= * {{@CODE@}}: XXX check this tag!
++Dash		            !!= * {{@CODE@}}: XXX check this tag!
++Dial/Finland           !!= * {{@CODE@}}: XXX check this tag!
++Dial/standard          !!= * {{@CODE@}}: XXX check this tag!
++Gyr		            !!= * {{@CODE@}}: XXX check this tag!
++Pref-		            !!= * {{@CODE@}}: XXX check this tag!
++Pro		            !!= * {{@CODE@}}: XXX check this tag!
++TruncPrefix            !!= * {{@CODE@}}: XXX check this tag!
++Use/N		            !!= * {{@CODE@}}: XXX check this tag!
++Use/NG0	            !!= * {{@CODE@}}: XXX check this tag!
++Use/sub	            !!= * {{@CODE@}}: XXX check this tag!
++s			            !!= * {{@CODE@}}: XXX check this tag!
+
+
+
+
+
+
+!! !Parts of speech
+
+
 +V !!= * {{@CODE@}}: Verb
 +N !!= * {{@CODE@}}: Noun
 +A !!= * {{@CODE@}}: Adjective
@@ -107,6 +134,38 @@ Multichar_Symbols
 +Sem/Geo !!= * {{@CODE@}}: Semantic class: Geographic
 +Sem/Org !!= * {{@CODE@}}: Semantic class: Organisation
 
++Sem/Build		        !!= * {{@CODE@}}: 
++Sem/Build-room	        !!= * {{@CODE@}}: 
++Sem/Cat		        !!= * {{@CODE@}}: 
++Sem/Date		        !!= * {{@CODE@}}: 
++Sem/Domain		        !!= * {{@CODE@}}: 
++Sem/Dummytag	        !!= * {{@CODE@}}: 
++Sem/Event		        !!= * {{@CODE@}}: 
++Sem/Fem		        !!= * {{@CODE@}}: 
++Sem/Group_Hum	        !!= * {{@CODE@}}: 
++Sem/Hum		        !!= * {{@CODE@}}: 
++Sem/ID			        !!= * {{@CODE@}}: 
++Sem/Mal		        !!= * {{@CODE@}}: 
++Sem/Mat		        !!= * {{@CODE@}}: 
++Sem/Measr		        !!= * {{@CODE@}}: 
++Sem/Money		        !!= * {{@CODE@}}: 
++Sem/Obj		        !!= * {{@CODE@}}: 
++Sem/Obj-el		        !!= * {{@CODE@}}: 
++Sem/Obj-ling	        !!= * {{@CODE@}}: 
++Sem/Org_Prod-audio     !!= * {{@CODE@}}: 
++Sem/Org_Prod-vis       !!= * {{@CODE@}}: 
++Sem/Plc		        !!= * {{@CODE@}}: 
++Sem/Prod-vis	        !!= * {{@CODE@}}: 
++Sem/Route		        !!= * {{@CODE@}}: 
++Sem/Rule		        !!= * {{@CODE@}}: 
++Sem/State-sick	        !!= * {{@CODE@}}: 
++Sem/Substnc	        !!= * {{@CODE@}}: 
++Sem/Time-clock	        !!= * {{@CODE@}}: 
++Sem/Tool-it	        !!= * {{@CODE@}}: 
++Sem/Txt		        !!= * {{@CODE@}}: 
++Sem/Veh		        !!= * {{@CODE@}}: 
++Sem/Year		        !!= * {{@CODE@}}: 
+
 !! !Numerals
 !! In numeral analyses, there are multiple analyses.
 !! The numerals have semantic subcategories
@@ -155,6 +214,14 @@ Multichar_Symbols
 
 !! Adpositions are tagged in POS position:
 !!€ läpi: läpi+Po
+
+!! Tags for sub-POS
+
++Arab			        !!= * {{@CODE@}}: 
++Attr			        !!= * {{@CODE@}}: 
++Coll			        !!= * {{@CODE@}}: 
++Rom			        !!= * {{@CODE@}}: 
+
 
 !! !Bound root morphs
 !! The lexical items that appear as bound morphemes before head word are
@@ -339,7 +406,7 @@ Multichar_Symbols
 +Cond !!= * {{@CODE@}}: Conditional
 +Pot !!= * {{@CODE@}}: Potential
 +Imprt !!= * {{@CODE@}}: Imperative
-+Optat !!= * {{@CODE@}}: Archaic moods: Optative
++Opt !!= * {{@CODE@}}: Archaic moods: Optative
 +Eventv !!= * {{@CODE@}}: Eventive
 
 !! The mood is after voice in the analysis string and in morph order:
@@ -442,7 +509,7 @@ Multichar_Symbols
 !!
 !! c.f. [VISK § 300|http://scripta.kotus.fi/visk/sisallys.php?p=300]
 +Comp !!= * {{@CODE@}}: Comparative
-+Sup !!= * {{@CODE@}}: Superlative
++Superl !!= * {{@CODE@}}: Superlative (was +Sup, now standardised)
 
 !! The comparison analysis occupies derivation spot, after POS:
 !!€ nopeampi: nopea+A+Comp+Sg+Nom
@@ -465,6 +532,7 @@ Multichar_Symbols
 +Foc/s !!= * {{@CODE@}}: -s; polite?
 +Foc/ka !!= * {{@CODE@}}: -kA; "nor"
 +Qst !!= * {{@CODE@}}: -kO: Question focus
+
 
 !! !Derivation
 !! The derivation is not a central feature of this morphology, it is mainly
@@ -494,11 +562,23 @@ Multichar_Symbols
 !! parentheses in lexical sources and word-forms that had the usage annotation
 !! in there have been carried over.
 +Err/Orth !!= * {{@CODE@}}: Sub-standard usage
++Err/Hyph		        !!= * {{@CODE@}}: 
++Err/Lex		        !!= * {{@CODE@}}: 
++Err/SpaceCmp	        !!= * {{@CODE@}}: 
+
 +Use/Marg !!= * {{@CODE@}}: Marginal
 +Use/Rare  !!= * {{@CODE@}}: Rare
 +Use/NG   !!= * {{@CODE@}}: Do not generate
 +Use/Hyphen !!= * {{@CODE@}}: With hyphens
 +Use/NoHyphens !!= * {{@CODE@}}: With hyphens
+
+ +Use/PMatch       !!≈ * __@CODE@__ means that the following is only used in the analyser feeding the disambiguator. This is missing.
+
++Use/-PMatch	        !!= * {{@CODE@}}: 
+
++Use/-Spell		        !!= * {{@CODE@}}: 
++Use/Arch		        !!= * {{@CODE@}}: 
++Use/SpellNoSugg        !!= * {{@CODE@}}: 
 
 !! Usage tags are pushed wherever appropriate:
 !!€ nallein: nalle+N+Pl+Gen+Use/Rare
@@ -513,6 +593,10 @@ Multichar_Symbols
 +Hom7
 +Hom8
 +Hom9
+
++v1				        !!= * {{@CODE@}}: 
++v2				        !!= * {{@CODE@}}: 
+
 
 !! !Dialects
 !! The informal language use contains different Finnish than the literary
@@ -545,13 +629,30 @@ Multichar_Symbols
 +Dial/Savo !!= * {{@CODE@}}: Savonian dialects
 +Dial/Southeast !!= * {{@CODE@}}: South-eastern dialects
 
+
+!! !Tags for language of unassimilated name
++OLang/ENG		        !!= * {{@CODE@}}: 
++OLang/eng		        !!= * {{@CODE@}}: is a typo, FIX
++OLang/FIN		        !!= * {{@CODE@}}: 
++OLang/NNO		        !!= * {{@CODE@}}: 
++OLang/NOB		        !!= * {{@CODE@}}: 
++OLang/RUS		        !!= * {{@CODE@}}: 
++OLang/SMA		        !!= * {{@CODE@}}: 
++OLang/SME		        !!= * {{@CODE@}}: 
++OLang/SWE		        !!= * {{@CODE@}}: 
++OLang/UND		        !!= * {{@CODE@}}: 
+
 !! !Others
 !! The boundaries of compounds that are not lexicalised in the dictionary will
 !! have compound analyses, the compounds may also have usage tags. The
 !! compounding analyses concern also syntagmatic melting mishmash.
 +Use/Circ    !!= Compound boundary
 
-+Cmp !!=Tag for compound boundary
+ +Cmp          !!≈ * __@CODE@__ - Dynamic compound. This tag should always be part
+               !!                 of a dynamic compound. It is important for
+               !!                 Apertium, and useful in other cases as well.
++Cmp/Hyph		        !!= * {{@CODE@}}: 
++CmpNP/None		        !!= * {{@CODE@}}: 
 
 !! The word and morpheme boundaries are used to limit the effective range of
 !! far-reaching rules, such as vowel harmony. The boundaries are marked by
