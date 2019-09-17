@@ -44,6 +44,7 @@ GT_LEXC_SRCS_L1_L2=\
 			 stems/suffixes.lexc \
 			 stems/verbs.lexc \
 			 stems/exceptions.lexc \
+			 affixes/abbreviations.lexc \
 			 affixes/acronyms.lexc \
 			 affixes/adjectives.lexc \
 			 affixes/adv.lexc \
