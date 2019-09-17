@@ -11,10 +11,12 @@ cat src/morphology/root.lexc |cut -d '!' -f1 |cut -d ':' -f1 |sed 's/+/¢+/g'|se
 echo 'Have a look at these:'
 
 comm -23 lexctags roottags 
+
 echo 'checked'
 echo '\n'
 echo 'Note for the Finnish output:'
 echo 'The forms'
 echo '+3, +Bickenbach, +Kennedy'
 echo 'are actually intended strings and should not be declared in root.lexc.'
+
 rm lexctags roottags
