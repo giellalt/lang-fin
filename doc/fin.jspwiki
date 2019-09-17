@@ -37,7 +37,32 @@ forms. The others are subdivided into adpositions, adverbs and particles.
 Further reading: [VISK s.v.
 sanaluokka|http://scripta.kotus.fi/visk/visk_termit.cgi?h_id=sCABBIDAI],
 [VISK § 438|http://scripta.kotus.fi/visk/sisallys.php?p=438].
-The codes:
+
+!Temporary list of added tags
+These tags were added as part of a tag unification, and should be
+put where they belong.
+
+Are there tags not declared in root.lexc or misspelled?
+Have a look at these:
+ * {{+Dash		            }}: XXX check this tag!
+ * {{+Dial/Finland           }}: XXX check this tag!
+ * {{+Dial/standard          }}: XXX check this tag!
+ * {{+Gyr		            }}: XXX check this tag!
+ * {{+Pref-		            }}: XXX check this tag!
+ * {{+Pro		            }}: XXX check this tag!
+ * {{+TruncPrefix            }}: XXX check this tag!
+ * {{+Use/N		            }}: XXX check this tag!
+ * {{+Use/sub	            }}: XXX check this tag!
+ * {{+s			            }}: XXX check this tag!
+
+
+
+
+
+
+!Parts of speech
+
+
  * {{+V }}: Verb
  * {{+N }}: Noun
  * {{+A }}: Adjective
@@ -106,6 +131,38 @@ Semantic tags follow pronoun analyses:
  * {{+Sem/Geo }}: Semantic class: Geographic
  * {{+Sem/Org }}: Semantic class: Organisation
 
+ * {{+Sem/Build		        }}: 
+ * {{+Sem/Build-room	        }}: 
+ * {{+Sem/Cat		        }}: 
+ * {{+Sem/Date		        }}: 
+ * {{+Sem/Domain		        }}: 
+ * {{+Sem/Dummytag	        }}: 
+ * {{+Sem/Event		        }}: 
+ * {{+Sem/Fem		        }}: 
+ * {{+Sem/Group_Hum	        }}: 
+ * {{+Sem/Hum		        }}: 
+ * {{+Sem/ID			        }}: 
+ * {{+Sem/Mal		        }}: 
+ * {{+Sem/Mat		        }}: 
+ * {{+Sem/Measr		        }}: 
+ * {{+Sem/Money		        }}: 
+ * {{+Sem/Obj		        }}: 
+ * {{+Sem/Obj-el		        }}: 
+ * {{+Sem/Obj-ling	        }}: 
+ * {{+Sem/Org_Prod-audio     }}: 
+ * {{+Sem/Org_Prod-vis       }}: 
+ * {{+Sem/Plc		        }}: 
+ * {{+Sem/Prod-vis	        }}: 
+ * {{+Sem/Route		        }}: 
+ * {{+Sem/Rule		        }}: 
+ * {{+Sem/State-sick	        }}: 
+ * {{+Sem/Substnc	        }}: 
+ * {{+Sem/Time-clock	        }}: 
+ * {{+Sem/Tool-it	        }}: 
+ * {{+Sem/Txt		        }}: 
+ * {{+Sem/Veh		        }}: 
+ * {{+Sem/Year		        }}: 
+
 !Numerals
 In numeral analyses, there are multiple analyses.
 The numerals have semantic subcategories
@@ -152,6 +209,14 @@ Adposition syntax tags:
 
 Adpositions are tagged in POS position:
 * __läpi: __ {{läpi+Po }}
+
+Tags for sub-POS
+
+ * {{+Arab			        }}: 
+ * {{+Attr			        }}: 
+ * {{+Coll			        }}: 
+ * {{+Rom			        }}: 
+
 
 !Bound root morphs
 The lexical items that appear as bound morphemes before head word are
@@ -325,7 +390,7 @@ Further reading: [VISK § 115|http://scripta.kotus.fi/visk/sisallys.php?p=115]
  * {{+Cond }}: Conditional
  * {{+Pot }}: Potential
  * {{+Imprt }}: Imperative
- * {{+Optat }}: Archaic moods: Optative
+ * {{+Opt }}: Archaic moods: Optative
  * {{+Eventv }}: Eventive
 
 The mood is after voice in the analysis string and in morph order:
@@ -422,7 +487,7 @@ non-marked forms are comparative and superlative. For adjectives, comparative
 suffixes precede the nominal inflection.
 c.f. [VISK § 300|http://scripta.kotus.fi/visk/sisallys.php?p=300]
  * {{+Comp }}: Comparative
- * {{+Sup }}: Superlative
+ * {{+Superl }}: Superlative (was +Sup, now standardised)
 
 The comparison analysis occupies derivation spot, after POS:
 * __nopeampi: __ {{nopea+A+Comp+Sg+Nom }}
@@ -444,6 +509,7 @@ adverbs and negation verb.
  * {{+Foc/s }}: -s; polite?
  * {{+Foc/ka }}: -kA; "nor"
  * {{+Qst }}: -kO: Question focus
+
 
 !Derivation
 The derivation is not a central feature of this morphology, it is mainly
@@ -473,16 +539,32 @@ and otherwise rare words and forms. Especially, the forms that are in
 parentheses in lexical sources and word-forms that had the usage annotation
 in there have been carried over.
  * {{+Err/Orth }}: Sub-standard usage
+ * {{+Err/Hyph		        }}: 
+ * {{+Err/Lex		        }}: 
+ * {{+Err/SpaceCmp	        }}: 
+
  * {{+Use/Marg }}: Marginal
  * {{+Use/Rare  }}: Rare
  * {{+Use/NG   }}: Do not generate
  * {{+Use/Hyphen }}: With hyphens
  * {{+Use/NoHyphens }}: With hyphens
 
+ * __+Use/PMatch__ means that the following is only used in the analyser feeding the disambiguator. This is missing.
+
+ * {{+Use/-PMatch	        }}: 
+
+ * {{+Use/-Spell		        }}: 
+ * {{+Use/Arch		        }}: 
+ * {{+Use/SpellNoSugg        }}: 
+
 Usage tags are pushed wherever appropriate:
 * __nallein: __ {{nalle+N+Pl+Gen+Use/Rare }}
 
 ! Homonym tags
+
+ * {{+v1				        }}: 
+ * {{+v2				        }}: 
+
 
 !Dialects
 The informal language use contains different Finnish than the literary
@@ -512,12 +594,30 @@ mrophology.
  * {{+Dial/Savo }}: Savonian dialects
  * {{+Dial/Southeast }}: South-eastern dialects
 
+
+!Tags for language of unassimilated name
+ * {{+OLang/ENG		        }}: 
+ * {{+OLang/eng		        }}: is a typo, FIX
+ * {{+OLang/FIN		        }}: 
+ * {{+OLang/NNO		        }}: 
+ * {{+OLang/NOB		        }}: 
+ * {{+OLang/RUS		        }}: 
+ * {{+OLang/SMA		        }}: 
+ * {{+OLang/SME		        }}: 
+ * {{+OLang/SWE		        }}: 
+ * {{+OLang/UND		        }}: 
+
 !Others
 The boundaries of compounds that are not lexicalised in the dictionary will
 have compound analyses, the compounds may also have usage tags. The
 compounding analyses concern also syntagmatic melting mishmash.
 +Use/Circ      Compound boundary
 
+ * __+Cmp__ - Dynamic compound. This tag should always be part
+                of a dynamic compound. It is important for
+                Apertium, and useful in other cases as well.
+ * {{+Cmp/Hyph		        }}: 
+ * {{+CmpNP/None		        }}: 
 
 The word and morpheme boundaries are used to limit the effective range of
 far-reaching rules, such as vowel harmony. The boundaries are marked by
@@ -540,6 +640,11 @@ with verbs if the verb is further derived into a noun again:
  | @P.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
  | @D.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
  | @C.NeedNoun@ | (Dis)allow compounds with verbs unless nominalised
+
+ | @C.ErrOrth@		
+ | @D.ErrOrth.ON@		
+ | @P.ErrOrth.ON@		
+
 
 For languages that allow compounding, the following flag diacritics are needed
 to control position-based compounding restrictions for nominals. Their use is
@@ -4124,8 +4229,8 @@ __Adjective examples examples:__
 * __aakkostetut: __ {{aakkostettu+A+Pl+Nom }}
 * __aakkostetumpi: __ {{aakkostettu+A+Comp+Sg+Nom }}
 * __aakkostetumpina: __ {{aakkostettu+A+Comp+Pl+Ess }}
-* __aakkostetuin: __ {{aakkostettu+A+Sup+Sg+Nom }}
-* __aakkostetuimmat: __ {{aakkostettu+A+Sup+Pl+Nom }}
+* __aakkostetuin: __ {{aakkostettu+A+Superl+Sg+Nom }}
+* __aakkostetuimmat: __ {{aakkostettu+A+Superl+Pl+Nom }}
 
 
 
@@ -4186,7 +4291,7 @@ __Adjectives 1 o examples:__
 * __tummahkoihin: __ {{tummahko+A+Pl+Ill }}
 * __*tummahkoisiin: __ {{tummahko+A+Pl+Ill }} (is not standard language)
 * __tummahkompi: __ {{tummahko+A+Comp+Sg+Nom }}
-* __tummahkoin: __ {{tummahko+A+Sup+Sg+Nom }}
+* __tummahkoin: __ {{tummahko+A+Superl+Sg+Nom }}
 
  The stems ending in u are in class {{ADJ_VALKAISTU}}, and in old dictionaries
  the class is ¹. These stems should be entered in dictionary like:
@@ -4206,7 +4311,7 @@ __Adjectives 1 u examples:__
 * __valkaistuina: __ {{valkaistu+A+Pl+Ess }}
 * __valkaistuissa: __ {{valkaistu+A+Pl+Ine }}
 * __valkaistumpi: __ {{valkaistu+A+Comp+Sg+Nom }}
-* __valkaistuin: __ {{valkaistu+A+Sup+Sg+Nom }}
+* __valkaistuin: __ {{valkaistu+A+Superl+Sg+Nom }}
 
  The stems ending in y are in class {{ADJ_HÄPÄISTY}}, and in old dictionaries
  the class is ¹. Common part of this class is formed by nut participle 
@@ -4224,7 +4329,7 @@ __Adjectives 1 y examples:__
 * __häpäistyinä: __ {{häpäisty+A+Pl+Ess }}
 * __häpäistyissä: __ {{häpäisty+A+Pl+Ine }}
 * __häpäistympi: __ {{häpäisty+A+Comp+Sg+Nom }}
-* __häpäistyin: __ {{häpäisty+A+Sup+Sg+Nom }}
+* __häpäistyin: __ {{häpäisty+A+Superl+Sg+Nom }}
 
  The words in this class ending in ö belong to {{ADJ_HÖLÖ}}, the old
  dictionaries use class ¹. This class includes front vowel moderative
@@ -4242,7 +4347,7 @@ __Adjectives 1 ö examples:__
 * __hölöinä: __ {{hölö+A+Pl+Ess }}
 * __hölöissä: __ {{hölö+A+Pl+Ine }}
 * __hölömpi: __ {{hölö+A+Comp+Sg+Nom }}
-* __hölöin: __ {{hölö+A+Sup+Sg+Nom }}
+* __hölöin: __ {{hölö+A+Superl+Sg+Nom }}
 
  The new words with e stem have same allomorph selection as old short
  unchanging bisyllabic u, y, o and ö stems, and no stem-internal variation.
@@ -4257,7 +4362,7 @@ __Adjectives 8 back examples:__
 * __toopejen: __ {{toope+A+Pl+Gen }}
 * __toopeihin: __ {{toope+A+Pl+Ill }}
 * __toopempi: __ {{toope+A+Comp+Sg+Nom }}
-* __toopein: __ {{toope+A+Sup+Sg+Nom }}
+* __toopein: __ {{toope+A+Superl+Sg+Nom }}
  They also have slightly greater probability for archaic form of plural
  genitive:
 * __toopein: __ {{toope+A+Pl+Gen+Use/Rare }}
@@ -4274,7 +4379,7 @@ __Adjectives 8 front examples:__
 * __beigejen: __ {{beige+A+Pl+Gen }}
 * __beigeihin: __ {{beige+A+Pl+Ill }}
 * __beigempi: __ {{beige+A+Comp+Sg+Nom }}
-* __beigein: __ {{beige+A+Sup+Sg+Nom }}
+* __beigein: __ {{beige+A+Superl+Sg+Nom }}
 
 
  !Trisyllabic and longer non-derived adjectuve stems
@@ -4294,7 +4399,7 @@ __Adjectives 2 o examples:__
 * __toheloiden: __ {{tohelo+A+Pl+Gen }}
 * __toheloitten: __ {{tohelo+A+Pl+Gen }}
 * __tohelompi: __ {{tohelo+A+Comp+Sg+Nom }}
-* __toheloin: __ {{tohelo+A+Sup+Sg+Nom }}
+* __toheloin: __ {{tohelo+A+Superl+Sg+Nom }}
 
  And the trisyllabic ö stem is classified {{ADJ_LÖPERÖ}}.
 
@@ -4304,7 +4409,7 @@ __Adjectives 2 ö examples:__
 * __löperöiden: __ {{löperö+A+Pl+Gen }}
 * __löperöitten: __ {{löperö+A+Pl+Gen }}
 * __löperömpi: __ {{löperö+A+Comp+Sg+Nom }}
-* __löperöin: __ {{löperö+A+Sup+Sg+Nom }}
+* __löperöin: __ {{löperö+A+Superl+Sg+Nom }}
 
  !Unchanging long vowel stems
  The words with stem vowels o, u, y and ö preceded by vowels still have no
@@ -4322,7 +4427,7 @@ __Adjectives 3 o examples:__
 * __autioiden: __ {{autio+A+Pl+Gen }}
 * __autioitten: __ {{autio+A+Pl+Gen }}
 * __autiompi: __ {{autio+A+Comp+Sg+Nom }}
-* __autioin: __ {{autio+A+Sup+Sg+Nom }}
+* __autioin: __ {{autio+A+Superl+Sg+Nom }}
 
  The front voweled stems with ö after vowels go to class {{ADJ_RIIVIÖ}},
  and used the old dictionary class ³.
@@ -4333,7 +4438,7 @@ __Adjectives 3 ö examples:__
 * __riiviöiden: __ {{riiviö+A+Pl+Gen }}
 * __riiviöitten: __ {{riiviö+A+Pl+Gen }}
 * __riiviömpi: __ {{riiviö+A+Comp+Sg+Nom }}
-* __riiviöin: __ {{riiviö+A+Sup+Sg+Nom }}
+* __riiviöin: __ {{riiviö+A+Superl+Sg+Nom }}
 
  There are no examples of new loan word adjectives ending in long vowel
  Furthermore there are no examples of adjectives in other classes without
@@ -4353,7 +4458,7 @@ __Adjective gradations 1 k~0 o examples:__
 * __kolkoista: __ {{kolkko+A+Pl+Ela }}
 * __kolkkoihin: __ {{kolkko+A+Pl+Ill }}
 * __kolkompi: __ {{kolkko+A+Comp+Sg+Nom }}
-* __kolkoin: __ {{kolkko+A+Sup+Sg+Nom }}
+* __kolkoin: __ {{kolkko+A+Superl+Sg+Nom }}
 
 
  The quantitative k gradations with u bisyllabic o stem use class
@@ -4365,7 +4470,7 @@ __Adjective gradations 1 k~0 u examples:__
 * __virkuista: __ {{virkku+A+Pl+Ela }}
 * __virkkuihin: __ {{virkku+A+Pl+Ill }}
 * __virkumpi: __ {{virkku+A+Comp+Sg+Nom }}
-* __virkuin: __ {{virkku+A+Sup+Sg+Nom }}
+* __virkuin: __ {{virkku+A+Superl+Sg+Nom }}
 
 
  The quantitative k gradations with y bisyllabic o stem use class
@@ -4377,7 +4482,7 @@ __Adjective gradations 1 k~0 y examples:__
 * __säikyistä: __ {{säikky+A+Pl+Ela }}
 * __säikkyihin: __ {{säikky+A+Pl+Ill }}
 * __säikympi: __ {{säikky+A+Comp+Sg+Nom }}
-* __säikyin: __ {{säikky+A+Sup+Sg+Nom }}
+* __säikyin: __ {{säikky+A+Superl+Sg+Nom }}
 
  The quantitative k gradations with o bisyllabic ö stem use class
  {{ADJ_KÖKKÖ}}, and old dictionaries use classes ¹⁻A and ¹⁻D.
@@ -4388,7 +4493,7 @@ __Adjective gradations 1 k~0 ö examples:__
 * __kököistä: __ {{kökkö+A+Pl+Ela }}
 * __kökköihin: __ {{kökkö+A+Pl+Ill }}
 * __kökömpi: __ {{kökkö+A+Comp+Sg+Nom }}
-* __kököin: __ {{kökkö+A+Sup+Sg+Nom }}
+* __kököin: __ {{kökkö+A+Superl+Sg+Nom }}
 
  there is no unvarying e final adjective with _k ~ 0_ gradation.
 
@@ -4401,7 +4506,7 @@ __Adjective gradations 1 p~0 o examples:__
 * __suipoista: __ {{suippo+A+Pl+Ela }}
 * __suippoihin: __ {{suippo+A+Pl+Ill }}
 * __suipompi: __ {{suippo+A+Comp+Sg+Nom }}
-* __suipoin: __ {{suippo+A+Sup+Sg+Nom }}
+* __suipoin: __ {{suippo+A+Superl+Sg+Nom }}
 
 
  The quantitative gradation of p before u is in class {{ADJ_IKÄLOPPU}} and
@@ -4415,7 +4520,7 @@ __Adjective gradations 1 p~0 u examples:__
 * __ikälopuista: __ {{ikäloppu+A+Pl+Ela }}
 * __ikäloppuihin: __ {{ikäloppu+A+Pl+Ill }}
 * __ikälopumpi: __ {{ikäloppu+A+Comp+Sg+Nom }}
-* __ikälopuin: __ {{ikäloppu+A+Sup+Sg+Nom }}
+* __ikälopuin: __ {{ikäloppu+A+Superl+Sg+Nom }}
 
 
  and none of the adjectives end in y and quantitative p gradation.
@@ -4429,7 +4534,7 @@ __Adjective gradations 1 p~0 ö examples:__
 * __lörpöistä: __ {{lörppö+A+Pl+Ela }}
 * __lörppöihin: __ {{lörppö+A+Pl+Ill }}
 * __lörpömpi: __ {{lörppö+A+Comp+Sg+Nom }}
-* __lörpöin: __ {{lörppö+A+Sup+Sg+Nom }}
+* __lörpöin: __ {{lörppö+A+Superl+Sg+Nom }}
 
  The quantitative gradation of t before o is in class {{ADJ_VELTTO}}, 
  which was ¹⁻C in the dictionary.
@@ -4440,7 +4545,7 @@ __Adjective gradations 1 t~0 o examples:__
 * __veltoista: __ {{veltto+A+Pl+Ela }}
 * __velttoihin: __ {{veltto+A+Pl+Ill }}
 * __veltompi: __ {{veltto+A+Comp+Sg+Nom }}
-* __veltoin: __ {{veltto+A+Sup+Sg+Nom }}
+* __veltoin: __ {{veltto+A+Superl+Sg+Nom }}
 
 
  The quantitative gradation of t before u is in class {{ADJ_VIMMATTU}}, 
@@ -4454,7 +4559,7 @@ __Adjective gradations 1 t~0 u examples:__
 * __vimmatuista: __ {{vimmattu+A+Pl+Ela }}
 * __vimmattuihin: __ {{vimmattu+A+Pl+Ill }}
 * __vimmatumpi: __ {{vimmattu+A+Comp+Sg+Nom }}
-* __vimmatuin: __ {{vimmattu+A+Sup+Sg+Nom }}
+* __vimmatuin: __ {{vimmattu+A+Superl+Sg+Nom }}
 
 
  The quantitative gradation of t before y is in class {{ADJ_YLENNETTY}}, 
@@ -4468,7 +4573,7 @@ __Adjective gradations 1 t~0 y examples:__
 * __ylennetyistä: __ {{ylennetty+A+Pl+Ela }}
 * __ylennettyihin: __ {{ylennetty+A+Pl+Ill }}
 * __ylennetympi: __ {{ylennetty+A+Comp+Sg+Nom }}
-* __ylennetyin: __ {{ylennetty+A+Sup+Sg+Nom }}
+* __ylennetyin: __ {{ylennetty+A+Superl+Sg+Nom }}
 
  The quantitative gradation of t before y is in class {{ADJ_KYYTTÖ}}, 
  which was ¹⁻C in the dictionary. 
@@ -4479,7 +4584,7 @@ __Adjective gradations 1 t~0 ö examples:__
 * __kyytöistä: __ {{kyyttö+A+Pl+Ela }}
 * __kyyttöihin: __ {{kyyttö+A+Pl+Ill }}
 * __kyytömpi: __ {{kyyttö+A+Comp+Sg+Nom }}
-* __kyytöin: __ {{kyyttö+A+Sup+Sg+Nom }}
+* __kyytöin: __ {{kyyttö+A+Superl+Sg+Nom }}
 
  The quantitave k gradation has a variant that allows use of apostrophe
  instead of nothing in the weak grade.
@@ -4492,7 +4597,7 @@ __Adjective gradations 1 k~’~0 o examples:__
 * __laossa: __ {{lako+A+Sg+Ine }}
 * __la’ossa: __ {{lako+A+Sg+Ine }}
 * __laompi: __ {{lako+A+Comp+Sg+Nom }}
-* __laoin: __ {{lako+A+Sup+Sg+Nom }}
+* __laoin: __ {{lako+A+Superl+Sg+Nom }}
 
 
  There's no k to optional apostrophe with u.
@@ -4512,7 +4617,7 @@ __Adjective gradations 1 p~v o examples:__
 * __kelpoina: __ {{kelpo+A+Pl+Ess }}
 * __kelvoista: __ {{kelpo+A+Pl+Ela }}
 * __kelvompi: __ {{kelpo+A+Comp+Sg+Nom }}
-* __kelvoin: __ {{kelpo+A+Sup+Sg+Nom }}
+* __kelvoin: __ {{kelpo+A+Superl+Sg+Nom }}
 
 
  There are none ending in vowel + pu
@@ -4528,7 +4633,7 @@ __Adjective gradations 1 t~d o examples:__
 * __mietoihin: __ {{mieto+A+Pl+Ill }}
 * __miedoista: __ {{mieto+A+Pl+Ela }}
 * __miedompi: __ {{mieto+A+Comp+Sg+Nom }}
-* __miedoin: __ {{mieto+A+Sup+Sg+Nom }}
+* __miedoin: __ {{mieto+A+Superl+Sg+Nom }}
 
 
  The gradation of t ~ d after u is in class {{ADJ_VIIPALOITU}}, the
@@ -4542,7 +4647,7 @@ __Adjective gradations 1 t~d u examples:__
 * __viipaloituihin: __ {{viipaloitu+A+Pl+Ill }}
 * __viipaloiduista: __ {{viipaloitu+A+Pl+Ela }}
 * __viipaloidumpi: __ {{viipaloitu+A+Comp+Sg+Nom }}
-* __viipaloiduin: __ {{viipaloitu+A+Sup+Sg+Nom }}
+* __viipaloiduin: __ {{viipaloitu+A+Superl+Sg+Nom }}
 
 
  The gradation of t ~ d after u is in class {{ADJ_YKSILÖITY}}, the
@@ -4556,7 +4661,7 @@ __Adjective gradations 1 t~d y examples:__
 * __yksilöityihin: __ {{yksilöity+A+Pl+Ill }}
 * __yksilöidyistä: __ {{yksilöity+A+Pl+Ela }}
 * __yksilöidympi: __ {{yksilöity+A+Comp+Sg+Nom }}
-* __yksilöidyin: __ {{yksilöity+A+Sup+Sg+Nom }}
+* __yksilöidyin: __ {{yksilöity+A+Superl+Sg+Nom }}
 
  And there's none with t and ö
 
@@ -4569,7 +4674,7 @@ __Adjective gradations 1 k~g o examples:__
 * __lengoista: __ {{lenko+A+Pl+Ela }}
 * __lenkoihin: __ {{lenko+A+Pl+Ill }}
 * __lengompi: __ {{lenko+A+Comp+Sg+Nom }}
-* __lengoin: __ {{lenko+A+Sup+Sg+Nom }}
+* __lengoin: __ {{lenko+A+Superl+Sg+Nom }}
 
 
  There's no adjectives ending in nku
@@ -4586,7 +4691,7 @@ __Adjective gradations 1 t~l o examples:__
 * __meltoihin: __ {{melto+A+Pl+Ill }}
 * __melloista: __ {{melto+A+Pl+Ela }}
 * __mellompi: __ {{melto+A+Comp+Sg+Nom }}
-* __melloin: __ {{melto+A+Sup+Sg+Nom }}
+* __melloin: __ {{melto+A+Superl+Sg+Nom }}
 
 
  The quantitative gradation of t after l in o stems is in class 
@@ -4599,7 +4704,7 @@ __Adjective gradations 1 t~l u examples:__
 * __paranneltuihin: __ {{paranneltu+A+Pl+Ill }}
 * __parannelluista: __ {{paranneltu+A+Pl+Ela }}
 * __parannellumpi: __ {{paranneltu+A+Comp+Sg+Nom }}
-* __parannelluin: __ {{paranneltu+A+Sup+Sg+Nom }}
+* __parannelluin: __ {{paranneltu+A+Superl+Sg+Nom }}
 
 
  The quantitative gradation of t after l in o stems is in class 
@@ -4612,7 +4717,7 @@ __Adjective gradations 1 t~l y examples:__
 * __vähäteltyihin: __ {{vähätelty+A+Pl+Ill }}
 * __vähätellyistä: __ {{vähätelty+A+Pl+Ela }}
 * __vähätellympi: __ {{vähätelty+A+Comp+Sg+Nom }}
-* __vähätellyin: __ {{vähätelty+A+Sup+Sg+Nom }}
+* __vähätellyin: __ {{vähätelty+A+Superl+Sg+Nom }}
 
  There's no adjective ending -ltö in our lexical database.
 
@@ -4625,7 +4730,7 @@ __Adjective gradations 1 t~n o examples:__
 * __ventoihin: __ {{vento+A+Pl+Ill }}
 * __vennoista: __ {{vento+A+Pl+Ela }}
 * __vennompi: __ {{vento+A+Comp+Sg+Nom }}
-* __vennoin: __ {{vento+A+Sup+Sg+Nom }}
+* __vennoin: __ {{vento+A+Superl+Sg+Nom }}
 
  The quantitative gradation of t after n in u stems is in class 
  {{ADJ_PANTU}}, which corresponds to dictionary class ¹⁻I.
@@ -4637,7 +4742,7 @@ __Adjective gradations 1 t~n u examples:__
 * __pantuihin: __ {{pantu+A+Pl+Ill }}
 * __pannuista: __ {{pantu+A+Pl+Ela }}
 * __pannumpi: __ {{pantu+A+Comp+Sg+Nom }}
-* __pannuin: __ {{pantu+A+Sup+Sg+Nom }}
+* __pannuin: __ {{pantu+A+Superl+Sg+Nom }}
 
  The quantitative gradation of t after n in y stems is in class 
  {{ADJ_MENTY}}, which corresponds to dictionary class ¹⁻I.
@@ -4650,7 +4755,7 @@ __Adjective gradations 1 t~n y examples:__
 * __mentyihin: __ {{menty+A+Pl+Ill }}
 * __mennyistä: __ {{menty+A+Pl+Ela }}
 * __mennympi: __ {{menty+A+Comp+Sg+Nom }}
-* __mennyin: __ {{menty+A+Sup+Sg+Nom }}
+* __mennyin: __ {{menty+A+Superl+Sg+Nom }}
 
  There are no adjectives ending in -ntö
 
@@ -4663,7 +4768,7 @@ __Adjective gradations 1 t~r o examples:__
 * __martoihin: __ {{marto+A+Pl+Ill }}
 * __marroista: __ {{marto+A+Pl+Ela }}
 * __marrompi: __ {{marto+A+Comp+Sg+Nom }}
-* __marroin: __ {{marto+A+Sup+Sg+Nom }}
+* __marroin: __ {{marto+A+Superl+Sg+Nom }}
 
 
  The quantitative gradation of t after r in u stems is in class
@@ -4676,7 +4781,7 @@ __Adjective gradations 1 t~r u examples:__
 * __purtuihin: __ {{purtu+A+Pl+Ill }}
 * __purruista: __ {{purtu+A+Pl+Ela }}
 * __purrumpi: __ {{purtu+A+Comp+Sg+Nom }}
-* __purruin: __ {{purtu+A+Sup+Sg+Nom }}
+* __purruin: __ {{purtu+A+Superl+Sg+Nom }}
 
  The quantitative gradation of t after r in y stems is in class
  {{ADJ_PIERTY}}, which corresponds to dictionary class ¹⁻J.
@@ -4689,7 +4794,7 @@ __Adjective gradations 1 t~r y examples:__
 * __piertyihin: __ {{pierty+A+Pl+Ill }}
 * __pierryistä: __ {{pierty+A+Pl+Ela }}
 * __pierrympi: __ {{pierty+A+Comp+Sg+Nom }}
-* __pierryin: __ {{pierty+A+Sup+Sg+Nom }}
+* __pierryin: __ {{pierty+A+Superl+Sg+Nom }}
 
  There are no adjectives ending in -rtö. Just as well, the
  class for UkU : UvU- is limited to few nouns we know.
@@ -4707,7 +4812,7 @@ __Adjectives 4 o examples:__
 * __hupakoihin: __ {{hupakko+A+Pl+Ill }}
 * __hupakkoihin: __ {{hupakko+A+Pl+Ill }}
 * __hupakompi: __ {{hupakko+A+Comp+Sg+Nom }}
-* __hupakoin: __ {{hupakko+A+Sup+Sg+Nom }}
+* __hupakoin: __ {{hupakko+A+Superl+Sg+Nom }}
 
  !Adjective stems with i:e variations
  The i stems of new i final words have i : e : 0 variation. These classes
@@ -4724,7 +4829,7 @@ __Adjectives 5 back examples:__
 * __abnormeina: __ {{abnormi+A+Pl+Ess }}
 * __abnormien: __ {{abnormi+A+Pl+Gen }}
 * __abnormimpi: __ {{abnormi+A+Comp+Sg+Nom }}
-* __abnormein: __ {{abnormi+A+Sup+Sg+Nom }}
+* __abnormein: __ {{abnormi+A+Superl+Sg+Nom }}
 
  The i finals with front vowel harmony go to class {{ADJ_STYDI}}, where
  old dictionary classification was ⁵.
@@ -4734,7 +4839,7 @@ __Adjectives 5 front examples:__
 * __stydeinä: __ {{stydi+A+Pl+Ess }}
 * __stydien: __ {{stydi+A+Pl+Gen }}
 * __stydimpi: __ {{stydi+A+Comp+Sg+Nom }}
-* __stydein: __ {{stydi+A+Sup+Sg+Nom }}
+* __stydein: __ {{stydi+A+Superl+Sg+Nom }}
 
  Stems with quantitative k gradation, i final and back harmony are in class 
  {{ADJ_OPAAKKI}} and dictionary class ⁵⁻A or ⁵⁻D.
@@ -4746,7 +4851,7 @@ __Adjectives 5 k~0 back examples:__
 * __opaakeista: __ {{opaakki+A+Pl+Ela }}
 * __opaakkien: __ {{opaakki+A+Pl+Gen }}
 * __opaakimpi: __ {{opaakki+A+Comp+Sg+Nom }}
-* __opaakein: __ {{opaakki+A+Sup+Sg+Nom }}
+* __opaakein: __ {{opaakki+A+Superl+Sg+Nom }}
 
  Stems with quantitative k gradation, i final and front harmony are in class
  {{ADJ_PINKKI}} and dictionary class ⁵⁻A or ⁵⁻D.
@@ -4758,7 +4863,7 @@ __Adjectives 5 k~0 front examples:__
 * __pinkeistä: __ {{pinkki+A+Pl+Ela }}
 * __pinkkien: __ {{pinkki+A+Pl+Gen }}
 * __pinkimpi: __ {{pinkki+A+Comp+Sg+Nom }}
-* __pinkein: __ {{pinkki+A+Sup+Sg+Nom }}
+* __pinkein: __ {{pinkki+A+Superl+Sg+Nom }}
 
  There's no back vowel version of the bisyllabic gradating -ppi form.
 
@@ -4772,7 +4877,7 @@ __Adjectives 5 p~0 front examples:__
 * __sipeistä: __ {{sippi+A+Pl+Ela }}
 * __sippien: __ {{sippi+A+Pl+Gen }}
 * __sipimpi: __ {{sippi+A+Comp+Sg+Nom }}
-* __sipein: __ {{sippi+A+Sup+Sg+Nom }}
+* __sipein: __ {{sippi+A+Superl+Sg+Nom }}
 
  Stems with quantitative t gradation, i final and back harmony are in class
  {{ADJ_HURTTI}} and dictionary class ⁵⁻C.
@@ -4784,7 +4889,7 @@ __Adjectives 5 t~0 back examples:__
 * __hurteista: __ {{hurtti+A+Pl+Ela }}
 * __hurttien: __ {{hurtti+A+Pl+Gen }}
 * __hurtimpi: __ {{hurtti+A+Comp+Sg+Nom }}
-* __hurtein: __ {{hurtti+A+Sup+Sg+Nom }}
+* __hurtein: __ {{hurtti+A+Superl+Sg+Nom }}
 
  Stems with quantitative t gradation, i final and front harmony are in class
  {{ADJ_VÄÄRTTI}} and dictionary class ⁵⁻C.
@@ -4796,7 +4901,7 @@ __Adjectives 5 t~0 front examples:__
 * __väärteistä: __ {{väärtti+A+Pl+Ela }}
 * __väärttien: __ {{väärtti+A+Pl+Gen }}
 * __väärtimpi: __ {{väärtti+A+Comp+Sg+Nom }}
-* __väärtein: __ {{väärtti+A+Sup+Sg+Nom }}
+* __väärtein: __ {{väärtti+A+Superl+Sg+Nom }}
 
  There are no bisyllabic adjectives ending in vowel and gradating -pi.
 
@@ -4810,7 +4915,7 @@ __Adjectives 5 t~d back examples:__
 * __tuhdeista: __ {{tuhti+A+Pl+Ela }}
 * __tuhtien: __ {{tuhti+A+Pl+Gen }}
 * __tuhdimpi: __ {{tuhti+A+Comp+Sg+Nom }}
-* __tuhdein: __ {{tuhti+A+Sup+Sg+Nom }}
+* __tuhdein: __ {{tuhti+A+Superl+Sg+Nom }}
 
  Stems with t ~ d gradation, i final and front harmony are in class
  {{ADJ_REHTI}} and dictionary class ⁵⁻F.
@@ -4822,7 +4927,7 @@ __Adjectives 5 t~d front examples:__
 * __rehdeistä: __ {{rehti+A+Pl+Ela }}
 * __rehtien: __ {{rehti+A+Pl+Gen }}
 * __rehdimpi: __ {{rehti+A+Comp+Sg+Nom }}
-* __rehdein: __ {{rehti+A+Sup+Sg+Nom }}
+* __rehdein: __ {{rehti+A+Superl+Sg+Nom }}
 
  There are no adjectives with i stems with other gradations.
 
@@ -4836,7 +4941,7 @@ __Adjectives 6 back examples:__
 * __abnormaaleja: __ {{abnormaali+A+Pl+Par }}
 * __abnormaaleiden: __ {{abnormaali+A+Pl+Gen }}
 * __abnormaalimpi: __ {{abnormaali+A+Comp+Sg+Nom }}
-* __abnormaalein: __ {{abnormaali+A+Sup+Sg+Nom }}
+* __abnormaalein: __ {{abnormaali+A+Superl+Sg+Nom }}
 
  The i stems with trisyllabic allomorph sets have class {{ADJ_ÖYKKÄRI}}, and
  dictionary class of ⁶.
@@ -4846,7 +4951,7 @@ __Adjectives 6 front examples:__
 * __öykkärejä: __ {{öykkäri+A+Pl+Par }}
 * __öykkäreiden: __ {{öykkäri+A+Pl+Gen }}
 * __öykkärimpi: __ {{öykkäri+A+Comp+Sg+Nom }}
-* __öykkärein: __ {{öykkkäri+A+Sup+Sg+Nom }}
+* __öykkärein: __ {{öykkkäri+A+Superl+Sg+Nom }}
 
 
  There are no adjectives acting like nouns where i-final nominatives have
@@ -4872,7 +4977,7 @@ __Adjectives 9 examples:__
 * __aavojen: __ {{aava+A+Pl+Gen }}
 * __aavoihin: __ {{aava+A+Pl+Ill }}
 * __aavempi: __ {{aava+A+Comp+Sg+Nom }}
-* __aavoin: __ {{aava+A+Sup+Sg+Nom }}
+* __aavoin: __ {{aava+A+Superl+Sg+Nom }}
 
  The ka stem with e comparative and j plurals is {{ADJ_TARKKA}}, and the 
  dictionary class is ⁹-A or ⁹⁻D.
@@ -4886,7 +4991,7 @@ __Adjectives 9 k~0 examples:__
 * __tarkkojen: __ {{tarkka+A+Pl+Gen }}
 * __tarkkoihin: __ {{tarkka+A+Pl+Ill }}
 * __tarkempi: __ {{tarkka+A+Comp+Sg+Nom }}
-* __tarkoin: __ {{tarkka+Sup+Sg+Nom }}
+* __tarkoin: __ {{tarkka+Superl+Sg+Nom }}
 
 
 
@@ -4913,7 +5018,7 @@ __Adjectives 9 t~0 examples:__
 * __mattojen: __ {{matta+A+Pl+Gen }}
 * __mattoihin: __ {{matta+A+Pl+Ill }}
 * __matempi: __ {{matta+A+Comp+Sg+Nom }}
-* __matoin: __ {{matta+A+Sup+Sg+Nom }}
+* __matoin: __ {{matta+A+Superl+Sg+Nom }}
 
 
  The pa : va stem with e comparative and j plurals is {{ADJ_HALPA}}, and
@@ -4928,7 +5033,7 @@ __Adjectives 9 p~v examples:__
 * __halpojen: __ {{halpa+A+Pl+Gen }}
 * __halpoihin: __ {{halpa+A+Pl+Ill }}
 * __halvempi: __ {{halpa+A+Comp+Sg+Nom }}
-* __halvoin: __ {{halpa+A+Sup+Sg+Nom }}
+* __halvoin: __ {{halpa+A+Superl+Sg+Nom }}
 
  The ta : da stem with a comparative and j plurals is {{ADJ_EHTA}}, and
  the dictionary class is ⁹⁻F.
@@ -4942,7 +5047,7 @@ __Adjectives 9 t~d examples:__
 * __ehtojen: __ {{ehta+A+Pl+Gen }}
 * __ehtoihin: __ {{ehta+A+Pl+Ill }}
 * __ehdampi: __ {{ehta+A+Comp+Sg+Nom }}
-* __ehdoin: __ {{ehta+A+Sup+Sg+Nom }}
+* __ehdoin: __ {{ehta+A+Superl+Sg+Nom }}
 
  None with k:g gradation.
 
@@ -4958,7 +5063,7 @@ __Adjectives 9 p~m examples:__
 * __rampojen: __ {{rampa+A+Pl+Gen }}
 * __rampoihin: __ {{rampa+A+Pl+Ill }}
 * __rammempi: __ {{rampa+A+Comp+Sg+Nom }}
-* __rammoin: __ {{rampa+A+Sup+Sg+Nom }}
+* __rammoin: __ {{rampa+A+Superl+Sg+Nom }}
 
  No a stems with t:l gradations
 
@@ -4974,7 +5079,7 @@ __Adjectives 9 p~n examples:__
 * __vihantojen: __ {{vihanta+A+Pl+Gen }}
 * __vihantoihin: __ {{vihanta+A+Pl+Ill }}
 * __vihannampi: __ {{vihanta+A+Comp+Sg+Nom }}
-* __vihannoin: __ {{vihanta+A+Sup+Sg+Nom }}
+* __vihannoin: __ {{vihanta+A+Superl+Sg+Nom }}
 
  And finally, no a stems with t:r or t:l gradations.
 
@@ -4994,7 +5099,7 @@ __Adjectives 10 back examples:__
 * __aaltoilevien: __ {{aaltoileva+A+Pl+Gen }}
 * __aaltoileviin: __ {{aaltoileva+A+Pl+Ill }}
 * __aaltoilevampi: __ {{aaltoileva+A+Comp+Sg+Nom }}
-* __aaltoilevin: __ {{aaltoileva+A+Sup+Sg+Nom }}
+* __aaltoilevin: __ {{aaltoileva+A+Superl+Sg+Nom }}
 
  The ä : 0 stem is in class {{ADJ_TYÖLLISTETTÄVÄ}} and the old dictionary used ¹⁰
  as the paradigm class.
@@ -5008,7 +5113,7 @@ __Adjectives 10 front examples:__
 * __työllistettävien: __ {{työllistettävä+A+Pl+Gen }}
 * __työllistettäviin: __ {{työllistettävä+A+Pl+Ill }}
 * __työllistettävämpi: __ {{työllistettävä+A+Comp+Sg+Nom }}
-* __työllistettävin: __ {{työllistettävä+A+Sup+Sg+Nom }}
+* __työllistettävin: __ {{työllistettävä+A+Superl+Sg+Nom }}
 
  For a:e comparatives in a:0 class use {{ADJ_RUMA}}. No dictionary
  classification or ~¹⁰, 
@@ -5022,7 +5127,7 @@ __Adjectives 10 a:e comparative examples:__
 * __rumien: __ {{ruma+A+Pl+Gen }}
 * __rumiin: __ {{ruma+A+Pl+Ill }}
 * __rumempi: __ {{ruma+A+Comp+Sg+Nom }}
-* __rumin: __ {{ruma+A+Sup+Sg+Nom }}
+* __rumin: __ {{ruma+A+Superl+Sg+Nom }}
 
  For ä:e comparatives in a:0 class use {{ADJ_TYHMÄ}}. No dictionary
  classification or ~¹⁰, 
@@ -5036,7 +5141,7 @@ __Adjectives 10 ä:e comparative examples:__
 * __tyhmien: __ {{tyhmä+A+Pl+Gen }}
 * __tyhmiin: __ {{tyhmä+A+Pl+Ill }}
 * __tyhmempi: __ {{tyhmä+A+Comp+Sg+Nom }}
-* __tyhmin: __ {{tyhmä+A+Sup+Sg+Nom }}
+* __tyhmin: __ {{tyhmä+A+Superl+Sg+Nom }}
 
 
 
@@ -5592,7 +5697,7 @@ __Adjectives 48 l~t back examples:__
 __Adjective pitkä examples:__
 * __pitkä: __ {{pitkä+A+Sg+Nom }}
 * __pidempi: __ {{pitkä+A+Comp+Sg+Nom }}
-* __pisin: __ {{pitkä+A+Sup+Sg+Nom }}
+* __pisin: __ {{pitkä+A+Superl+Sg+Nom }}
 
 
 
@@ -5656,12 +5761,12 @@ adjective baseform. This baseform is handled separately to avoid double
 superlatives.
 
 __Adjective superlative front examples:__
-* __rumin: __ {{ruma+A+Sup+Sg+Nom }} (Eng. # ugliest)
+* __rumin: __ {{ruma+A+Superl+Sg+Nom }} (Eng. # ugliest)
 
 
 
 __Adjective superlative back examples:__
-* __tyhmin: __ {{tyhmä+A+Sup+Sg+Nom }} (Eng. # stupidest)
+* __tyhmin: __ {{tyhmä+A+Superl+Sg+Nom }} (Eng. # stupidest)
 
 The comparative derivation is formed by mpi suffix, which creates a new
 adjective baseform. This adjective is handled separately
@@ -5692,14 +5797,14 @@ This inflectional part is attached to adjective superlative stems to avoid
 circularity in superlative  derivations:
 
 __Adjective superlative inflection back examples:__
-* __nopein: __ {{nopea+A+Sup+Sg+Nom }}
-* __*nopeimmimpia: __ {{nopea+A+Sup+Sup+Sg+Par }} (is not standard language)
-* __*nopeimmimmin: __ {{nopea+A+Sup+Sup+Sup+Sg+Nom }} (is not standard language)
+* __nopein: __ {{nopea+A+Superl+Sg+Nom }}
+* __*nopeimmimpia: __ {{nopea+A+Superl+Superl+Sg+Par }} (is not standard language)
+* __*nopeimmimmin: __ {{nopea+A+Superl+Superl+Superl+Sg+Nom }} (is not standard language)
 
 
 __Adjective superlative inflection front examples:__
-* __tyhmin: __ {{tyhmä+A+Sup+Sg+Nom }}
-* __*tyhmimmimpiä: __ {{tyhmä+A+Sup+Sup+Sg+Par }} (is not standard language)
+* __tyhmin: __ {{tyhmä+A+Superl+Sg+Nom }}
+* __*tyhmimmimpiä: __ {{tyhmä+A+Superl+Superl+Sg+Par }} (is not standard language)
 
 
 !!Regular adjective inflection
@@ -14905,6 +15010,7 @@ forms which requires great amount of care in the inflection patterns.
 
 
  * __LEXICON DIGITCASE__
+
 
 
 

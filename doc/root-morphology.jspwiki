@@ -24,7 +24,32 @@ forms. The others are subdivided into adpositions, adverbs and particles.
 Further reading: [VISK s.v.
 sanaluokka|http://scripta.kotus.fi/visk/visk_termit.cgi?h_id=sCABBIDAI],
 [VISK § 438|http://scripta.kotus.fi/visk/sisallys.php?p=438].
-The codes:
+
+!Temporary list of added tags
+These tags were added as part of a tag unification, and should be
+put where they belong.
+
+Are there tags not declared in root.lexc or misspelled?
+Have a look at these:
+ * {{+Dash		            }}: XXX check this tag!
+ * {{+Dial/Finland           }}: XXX check this tag!
+ * {{+Dial/standard          }}: XXX check this tag!
+ * {{+Gyr		            }}: XXX check this tag!
+ * {{+Pref-		            }}: XXX check this tag!
+ * {{+Pro		            }}: XXX check this tag!
+ * {{+TruncPrefix            }}: XXX check this tag!
+ * {{+Use/N		            }}: XXX check this tag!
+ * {{+Use/sub	            }}: XXX check this tag!
+ * {{+s			            }}: XXX check this tag!
+
+
+
+
+
+
+!Parts of speech
+
+
  * {{+V }}: Verb
  * {{+N }}: Noun
  * {{+A }}: Adjective
@@ -93,6 +118,38 @@ Semantic tags follow pronoun analyses:
  * {{+Sem/Geo }}: Semantic class: Geographic
  * {{+Sem/Org }}: Semantic class: Organisation
 
+ * {{+Sem/Build		        }}: 
+ * {{+Sem/Build-room	        }}: 
+ * {{+Sem/Cat		        }}: 
+ * {{+Sem/Date		        }}: 
+ * {{+Sem/Domain		        }}: 
+ * {{+Sem/Dummytag	        }}: 
+ * {{+Sem/Event		        }}: 
+ * {{+Sem/Fem		        }}: 
+ * {{+Sem/Group_Hum	        }}: 
+ * {{+Sem/Hum		        }}: 
+ * {{+Sem/ID			        }}: 
+ * {{+Sem/Mal		        }}: 
+ * {{+Sem/Mat		        }}: 
+ * {{+Sem/Measr		        }}: 
+ * {{+Sem/Money		        }}: 
+ * {{+Sem/Obj		        }}: 
+ * {{+Sem/Obj-el		        }}: 
+ * {{+Sem/Obj-ling	        }}: 
+ * {{+Sem/Org_Prod-audio     }}: 
+ * {{+Sem/Org_Prod-vis       }}: 
+ * {{+Sem/Plc		        }}: 
+ * {{+Sem/Prod-vis	        }}: 
+ * {{+Sem/Route		        }}: 
+ * {{+Sem/Rule		        }}: 
+ * {{+Sem/State-sick	        }}: 
+ * {{+Sem/Substnc	        }}: 
+ * {{+Sem/Time-clock	        }}: 
+ * {{+Sem/Tool-it	        }}: 
+ * {{+Sem/Txt		        }}: 
+ * {{+Sem/Veh		        }}: 
+ * {{+Sem/Year		        }}: 
+
 !Numerals
 In numeral analyses, there are multiple analyses.
 The numerals have semantic subcategories
@@ -139,6 +196,14 @@ Adposition syntax tags:
 
 Adpositions are tagged in POS position:
 * __läpi: __ {{läpi+Po }}
+
+Tags for sub-POS
+
+ * {{+Arab			        }}: 
+ * {{+Attr			        }}: 
+ * {{+Coll			        }}: 
+ * {{+Rom			        }}: 
+
 
 !Bound root morphs
 The lexical items that appear as bound morphemes before head word are
@@ -312,7 +377,7 @@ Further reading: [VISK § 115|http://scripta.kotus.fi/visk/sisallys.php?p=115]
  * {{+Cond }}: Conditional
  * {{+Pot }}: Potential
  * {{+Imprt }}: Imperative
- * {{+Optat }}: Archaic moods: Optative
+ * {{+Opt }}: Archaic moods: Optative
  * {{+Eventv }}: Eventive
 
 The mood is after voice in the analysis string and in morph order:
@@ -409,7 +474,7 @@ non-marked forms are comparative and superlative. For adjectives, comparative
 suffixes precede the nominal inflection.
 c.f. [VISK § 300|http://scripta.kotus.fi/visk/sisallys.php?p=300]
  * {{+Comp }}: Comparative
- * {{+Sup }}: Superlative
+ * {{+Superl }}: Superlative (was +Sup, now standardised)
 
 The comparison analysis occupies derivation spot, after POS:
 * __nopeampi: __ {{nopea+A+Comp+Sg+Nom }}
@@ -431,6 +496,7 @@ adverbs and negation verb.
  * {{+Foc/s }}: -s; polite?
  * {{+Foc/ka }}: -kA; "nor"
  * {{+Qst }}: -kO: Question focus
+
 
 !Derivation
 The derivation is not a central feature of this morphology, it is mainly
@@ -460,16 +526,32 @@ and otherwise rare words and forms. Especially, the forms that are in
 parentheses in lexical sources and word-forms that had the usage annotation
 in there have been carried over.
  * {{+Err/Orth }}: Sub-standard usage
+ * {{+Err/Hyph		        }}: 
+ * {{+Err/Lex		        }}: 
+ * {{+Err/SpaceCmp	        }}: 
+
  * {{+Use/Marg }}: Marginal
  * {{+Use/Rare  }}: Rare
  * {{+Use/NG   }}: Do not generate
  * {{+Use/Hyphen }}: With hyphens
  * {{+Use/NoHyphens }}: With hyphens
 
+ * __+Use/PMatch__ means that the following is only used in the analyser feeding the disambiguator. This is missing.
+
+ * {{+Use/-PMatch	        }}: 
+
+ * {{+Use/-Spell		        }}: 
+ * {{+Use/Arch		        }}: 
+ * {{+Use/SpellNoSugg        }}: 
+
 Usage tags are pushed wherever appropriate:
 * __nallein: __ {{nalle+N+Pl+Gen+Use/Rare }}
 
 ! Homonym tags
+
+ * {{+v1				        }}: 
+ * {{+v2				        }}: 
+
 
 !Dialects
 The informal language use contains different Finnish than the literary
@@ -499,12 +581,30 @@ mrophology.
  * {{+Dial/Savo }}: Savonian dialects
  * {{+Dial/Southeast }}: South-eastern dialects
 
+
+!Tags for language of unassimilated name
+ * {{+OLang/ENG		        }}: 
+ * {{+OLang/eng		        }}: is a typo, FIX
+ * {{+OLang/FIN		        }}: 
+ * {{+OLang/NNO		        }}: 
+ * {{+OLang/NOB		        }}: 
+ * {{+OLang/RUS		        }}: 
+ * {{+OLang/SMA		        }}: 
+ * {{+OLang/SME		        }}: 
+ * {{+OLang/SWE		        }}: 
+ * {{+OLang/UND		        }}: 
+
 !Others
 The boundaries of compounds that are not lexicalised in the dictionary will
 have compound analyses, the compounds may also have usage tags. The
 compounding analyses concern also syntagmatic melting mishmash.
 +Use/Circ      Compound boundary
 
+ * __+Cmp__ - Dynamic compound. This tag should always be part
+                of a dynamic compound. It is important for
+                Apertium, and useful in other cases as well.
+ * {{+Cmp/Hyph		        }}: 
+ * {{+CmpNP/None		        }}: 
 
 The word and morpheme boundaries are used to limit the effective range of
 far-reaching rules, such as vowel harmony. The boundaries are marked by
@@ -527,6 +627,11 @@ with verbs if the verb is further derived into a noun again:
  | @P.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
  | @D.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
  | @C.NeedNoun@ | (Dis)allow compounds with verbs unless nominalised
+
+ | @C.ErrOrth@		
+ | @D.ErrOrth.ON@		
+ | @P.ErrOrth.ON@		
+
 
 For languages that allow compounding, the following flag diacritics are needed
 to control position-based compounding restrictions for nominals. Their use is
