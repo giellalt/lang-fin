@@ -8,18 +8,18 @@
 # dir/filename.lexc => filename-dir.jspwiki
 
 JSP_PAGES=root-morphology.jspwiki  \
-          51-stems.jspwiki \
-          abbr-stems.jspwiki \
-          acro-stems.jspwiki \
+          determiners-stems.jspwiki \
+          abbreviations-stems.jspwiki \
+          abbreviations-affixes.jspwiki \
+          fin-acronyms-stems.jspwiki \
           acronyms-affixes.jspwiki \
           adjectives-stems.jspwiki \
           adjectives-affixes.jspwiki \
           adv-affixes.jspwiki \
-          adv-stems.jspwiki \
-          cc-stems.jspwiki \
-          cs-stems.jspwiki \
+          adverbs-stems.jspwiki \
+          conjunctions-stems.jspwiki \
+          subjunctions-stems.jspwiki \
           digits-affixes.jspwiki \
-          digits-stems.jspwiki \
           exceptions-stems.jspwiki \
           interj-stems.jspwiki \
           nouns-stems.jspwiki \
@@ -33,7 +33,9 @@ JSP_PAGES=root-morphology.jspwiki  \
           propernouns-stems.jspwiki \
           punct-stems.jspwiki \
           suffixes-stems.jspwiki \
+          symbols-affixes.jspwiki \
           verbs-stems.jspwiki \
           verbs-affixes.jspwiki \
 		  fin-phon-phonology.jspwiki 
+
 include $(top_srcdir)/am-shared/doc-dir-include.am
