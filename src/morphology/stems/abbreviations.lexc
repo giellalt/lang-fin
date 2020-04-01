@@ -1,4 +1,7 @@
-!!  !!!Abbreviations
+! ===================================================
+!! !!!Continuation lexicons for Finnish abbreviations
+! ===================================================
+
 !!  Abbreviations are shortened forms that do not inflect. They have whatever
 !!  classification they would have if they were read out, mostly that of nouns.
 !!  Lot of abbreviations end in a full stop, which may complicate analysis and
@@ -16,1168 +19,518 @@ TRAB ; ! for abbreviations that do not impose sentence boundary
 !!€ ab: ab+ABBR
 
 LEXICON ITRAB
-alv.+N:alv.  #  ; !!= * {{@CODE@}}: arvonlisävero (VAT)
-alv.+ABBR:alv.  PCLE_VAAN  ;
-a.m.+ABBR:a.m.  PCLE_VAAN  ;
-anon.+ABBR:anon.  PCLE_VAAN  ;
+alv.+N:alv.  ab-dot-noun-itrab  ;
+a.m.+N:a.m.  ab-dot-noun-itrab  ;
+anon.+N:anon.  ab-dot-noun-itrab  ;
 
 LEXICON TRNUMAB 
-n%:ro+N:n%:ro  #  ; !!= * {{@CODE@}}: 
-nro+N:nro  #  ; !!= * {{@CODE@}}: numero (#
-nro+ABBR:nro  PCLE_VAAN  ;
-krnro+N:krnro  NOUN_RUIPELO  ;
-nro+N:nro  NOUN_RUIPELO  ;
-nro+Pcle:nro  #  ;
-
-
+n%:ro+N:n%:ro   ab-dot-noun-trnumab  ;
+nro+N:nro  ab-dot-noun-trnumab  ;
+krnro+N:krnro  ab-dot-noun-trnumab  ;
 
 LEXICON TRAB 
-A%0+N:A%0  #  ; !!= * {{@CODE@}}: Paper size
-A1+N:A1  #  ; !!= * {{@CODE@}}: Paper size
-A2+N:A2  #  ; !!= * {{@CODE@}}: Paper size
-A3+N:A3  #  ; !!= * {{@CODE@}}: Paper size
-A4+N:A4  #  ; !!= * {{@CODE@}}: Paper size
-A5+N:A5  #  ; !!= * {{@CODE@}}: Paper size
-ab+N:ab  #  ; !!= * {{@CODE@}}: swed. aktiebolag (LLC)
-ab+ABBR:ab  PCLE_VAAN  ;
-Ab+ABBR:Ab  PCLE_VAAN  ;
-agrol.+ABBR:agrol.  PCLE_VAAN  ;
-agron.+ABBR:agron.  PCLE_VAAN  ;
-aik.+Adp:aik.  #  ; !!= * {{@CODE@}}: aikana (during)
-aik.+ABBR:aik.  PCLE_VAAN  ;
-akat.+ABBR:akat.  PCLE_VAAN  ;
-akk.+N:akk.  #  ; !!= * {{@CODE@}}: akkusatiivi (accusative)
-alik.+ABBR:alik.  PCLE_VAAN  ;
-alil.+ABBR:alil.  PCLE_VAAN  ;
-alk.+Adp:alk.  #  ; !!= * {{@CODE@}}: alkaen (temporal from)
-alk.+ABBR:alk.  PCLE_VAAN  ;
-al.+ABBR:al.  PCLE_VAAN  ;
-amir.+ABBR:amir.  PCLE_VAAN  ;
-ao.+A:ao.  #  ; !!= * {{@CODE@}}: alla/aiheena oleva (mentioned)
-ao.+ABBR:ao.  PCLE_VAAN  ;
-ap.+ABBR:ap.  PCLE_VAAN  ;
-apul.+ABBR:apul.  PCLE_VAAN  ;
-apul.prof.+ABBR:apul.prof.  PCLE_VAAN  ;
-arkkit.+ABBR:arkkit.  PCLE_VAAN  ;
-ark.+N:ark.  #  ; !!= * {{@CODE@}}: arkinen (from dict. term, pedestr)
-ark.+ABBR:ark.  PCLE_VAAN  ;
-art.+ABBR:art.  PCLE_VAAN  ;
-arv.+ABBR:arv.  PCLE_VAAN  ;
-as.+N:as.  #  ; !!= * {{@CODE@}}: 
-as.oy.+ABBR:as.oy.  PCLE_VAAN  ;
-as.+ABBR:as.  PCLE_VAAN  ;
-assist.+ABBR:assist.  PCLE_VAAN  ;
-ass.+ABBR:ass.  PCLE_VAAN  ;
-at+ABBR:at  PCLE_VAAN  ;
-au.+ABBR:au.  PCLE_VAAN  ;
-ausk.+ABBR:ausk.  PCLE_VAAN  ;
-ay.+N:ay.  #  ; !!= * {{@CODE@}}:
-ay.+ABBR:ay.  PCLE_VAAN  ;
-B.A.+ABBR:B.A.  PCLE_VAAN  ;
-bar+ABBR:bar  PCLE_VAAN  ;
-br.+ABBR:br.  PCLE_VAAN  ;
-B.Sc.+ABBR:B.Sc.  PCLE_VAAN  ;
-B.S.+ABBR:B.S.  PCLE_VAAN  ;
-c%:a+ABBR:c%:a  PCLE_VAAN  ;
-ca+ABBR:ca  PCLE_VAAN  ;
-cf.+ABBR:cf.  PCLE_VAAN  ;
-c/o+ABBR:c/o  PCLE_VAAN  ;
-Co.+ABBR:Co.  PCLE_VAAN  ;
-Corp.+ABBR:Corp.  PCLE_VAAN  ;
-dat.+N:dat.  #  ; !!= * {{@CODE@}}: datiivi (dative)
-dem.+ABBR:dem.  PCLE_VAAN  ;
-dem.pron.+N:dem.pron.  #  ; !!= * {{@CODE@}}: demonstratiivipronomini
-dipl.arkkit.+ABBR:dipl.arkkit.  PCLE_VAAN  ;
-dipl.ekon.+ABBR:dipl.ekon.  PCLE_VAAN  ;
-dipl.ins.+ABBR:dipl.ins.  PCLE_VAAN  ;
-dipl.kielenk.+ABBR:dipl.kielenk.  PCLE_VAAN  ;
-dipl.kirjeenv.+ABBR:dipl.kirjeenv.  PCLE_VAAN  ;
-dipl.kosm.+ABBR:dipl.kosm.  PCLE_VAAN  ;
-dipl.+ABBR:dipl.  PCLE_VAAN  ;
-dipl.urk.+ABBR:dipl.urk.  PCLE_VAAN  ;
-dir.% cant.+ABBR:dir.% cant.  PCLE_VAAN  ;
-div.+ABBR:div.  PCLE_VAAN  ;
-dos.+ABBR:dos.  PCLE_VAAN  ;
-Dr.+ABBR:Dr.  PCLE_VAAN  ;
-eaa.+N:eaa.  #  ; !!= * {{@CODE@}}: ennen ajanlaskun alkua (BCE)
-eaa.+ABBR:eaa.  PCLE_VAAN  ;
-eaa+ABBR:eaa  PCLE_VAAN  ;
-ed.+ABBR:ed.  PCLE_VAAN  ;
-e.g.+ABBR:e.g.  PCLE_VAAN  ;
-eht.+ABBR:eht.  PCLE_VAAN  ;
-ekon.+ABBR:ekon.  PCLE_VAAN  ;
-eKr.+N:eKr.  #  ; !!= * {{@CODE@}}: ennen Kristuksen syntymää (BC)
-ekr.+N+Err/Orth:ekr.  #  ; !!= * {{@CODE@}}: ennen kristuksen syntymää
-eKr.+ABBR:eKr.  PCLE_VAAN  ;
-eKr+ABBR:eKr  PCLE_VAAN  ;
-elintarviket.+ABBR:elintarviket.  PCLE_VAAN  ;
-el.lääk.+ABBR:el.lääk.  PCLE_VAAN  ;
-eläinl.+ABBR:eläinl.  PCLE_VAAN  ;
-eläinlääket.+ABBR:eläinlääket.  PCLE_VAAN  ;
-eläk.+ABBR:eläk.  PCLE_VAAN  ;
-em.+A:em.  #  ; !!= * {{@CODE@}}: edellä mainittu (abovementioned)
-em.+N:em.  #  ; !!= * {{@CODE@}}: 
-em.+ABBR:em.  PCLE_VAAN  ;
-emt.+ABBR:emt.  PCLE_VAAN  ;
-ent.+A:ent.  #  ; !!= * {{@CODE@}}: entinen (former)
-ent.+ABBR:ent.  PCLE_VAAN  ;
-eos.+ABBR:eos.  PCLE_VAAN  ;
-e.+ABBR:e.  PCLE_VAAN  ;
-erikoiseläinl.+ABBR:erikoiseläinl.  PCLE_VAAN  ;
-erikoishammasl.+ABBR:erikoishammasl.  PCLE_VAAN  ;
-erikoisl.+ABBR:erikoisl.  PCLE_VAAN  ;
-erikoist.+ABBR:erikoist.  PCLE_VAAN  ;
-esik.+ABBR:esik.  PCLE_VAAN  ;
-esim.+N:esim.  #  ; !!= * {{@CODE@}}: esimerkiksi (e.g.)
-esim.+ABBR:esim.  PCLE_VAAN  ;
-esim+ABBR:esim  PCLE_VAAN  ;
-esitt.+ABBR:esitt.  PCLE_VAAN  ;
-est.+ABBR:est.  PCLE_VAAN  ;
-et% al.+ABBR:et% al.  PCLE_VAAN  ;
-etc.+ABBR:etc.  PCLE_VAAN  ;
-etc+ABBR:etc  PCLE_VAAN  ;
-et.+ABBR:et.  PCLE_VAAN  ;
-ev.lut.+ABBR:ev.lut.  PCLE_VAAN  ;
-ev.luutn.+ABBR:ev.luutn.  PCLE_VAAN  ;
-evo+N:evo  #  ; !!= * {{@CODE@}}: et vaan osaa (ydkj)
-ev.+ABBR:ev.  PCLE_VAAN  ;
-evp.+N:evp.  #  ; !!= * {{@CODE@}}: erossa vakinaisesta palveluksesta
-evp.+ABBR:evp.  PCLE_VAAN  ;
-farmas.+ABBR:farmas.  PCLE_VAAN  ;
-farm.+ABBR:farm.  PCLE_VAAN  ;
-fil.+ABBR:fil.  PCLE_VAAN  ;
-f.+ABBR:f.  PCLE_VAAN  ;
-ft.+ABBR:ft.  PCLE_VAAN  ;
-gen.+N:gen.  #  ; !!= * {{@CODE@}}: genetiivi (genitive)
-GTi+N:GTi  #  ; !!= * {{@CODE@}}:
-GTi+ABBR:GTi  PCLE_VAAN  ;
-Gt+ABBR:Gt  PCLE_VAAN  ;
-hallinton.+ABBR:hallinton.  PCLE_VAAN  ;
-hallintot.+ABBR:hallintot.  PCLE_VAAN  ;
-hammaslääket.+ABBR:hammaslääket.  PCLE_VAAN  ;
-h.c.+ABBR:h.c.  PCLE_VAAN  ;
-hl.+ABBR:hl.  PCLE_VAAN  ;
-hlö+N:hlö  #  ; !!= * {{@CODE@}}: henkilö (person)
-hovioik.+ABBR:hovioik.  PCLE_VAAN  ;
-hp.+ABBR:hp.  PCLE_VAAN  ;
-hra+N:hra  #  ; !!= * {{@CODE@}}: herra (mr.)
-hum.+ABBR:hum.  PCLE_VAAN  ;
-huom.+N:huom.  #  ; !!= * {{@CODE@}}: huomaa (N.B.)
-huom.+ABBR:huom.  PCLE_VAAN  ;
-huom+ABBR:huom  PCLE_VAAN  ;
-hv+N:hv  #  ; !!= * {{@CODE@}}: hyvä veli (greetz)
-H.V.+ABBR:H.V.  PCLE_VAAN  ;
-ibid.+ABBR:ibid.  PCLE_VAAN  ;
-ib.+N:ib.  #  ; !!= * {{@CODE@}}: ibidem
-ib.+ABBR:ib.  PCLE_VAAN  ;
-id.+N:id.  #  ; !!= * {{@CODE@}}: id
-id.+ABBR:id.  PCLE_VAAN  ;
-i.e.+ABBR:i.e.  PCLE_VAAN  ;
-ilm.+ABBR:ilm.  PCLE_VAAN  ;
-imperf.+N:imperf.  #  ; !!= * {{@CODE@}}: imperfect
-inc+N:inc  #  ; !!= * {{@CODE@}}: inc
-inc.+ABBR:inc.  PCLE_VAAN  ;
-inf.+N:inf.  #  ; !!= * {{@CODE@}}: infinitive
-in.+ABBR:in.  PCLE_VAAN  ;
-in+ABBR:in  PCLE_VAAN  ;
-ins.+ABBR:ins.  PCLE_VAAN  ;
-ip.+ABBR:ip.  PCLE_VAAN  ;
-it.+N:it.  #  ; !!= * {{@CODE@}}: 
-it.+ABBR:it.  PCLE_VAAN  ;
-i.v.+ABBR:i.v.  PCLE_VAAN  ;
-jaa.+ABBR:jaa.  PCLE_VAAN  ;
-jaa+ABBR:jaa  PCLE_VAAN  ;
-jatk.+ABBR:jatk.  PCLE_VAAN  ;
-Jk.+ABBR:Jk.  PCLE_VAAN  ;
-jKr.+N:jKr.  #  ; !!= * {{@CODE@}}: jälkeen Kristuksen syntymän (AD)
-jKr.+ABBR:jKr.  PCLE_VAAN  ;
-jKr+ABBR:jKr  PCLE_VAAN  ;
-jllek+N:jllek  #  ; !!= * {{@CODE@}}: jollekin (for smth)
-jllk+N:jllk  #  ; !!= * {{@CODE@}}: jollakin (for smth)
-jltk+N:jltk  #  ; !!= * {{@CODE@}}: joltakin (from smth)
-jms.+ABBR:jms.  PCLE_VAAN  ;
-jms+ABBR:jms  PCLE_VAAN  ;
-jne.+N:jne.  #  ; !!= * {{@CODE@}}: ja niin edelleen (etc.)
-jne.+ABBR:jne.  PCLE_VAAN  ;
-jne+ABBR:jne  PCLE_VAAN  ;
-jnk+N:jnk  #  ; !!= * {{@CODE@}}: jonkin (of smth)
-joht.+ABBR:joht.  PCLE_VAAN  ;
-joss+N:joss  #  ; !!= * {{@CODE@}}: jossa (somewhere)
-jr.+ABBR:jr.  PCLE_VAAN  ;
-jssk+N:jssk  #  ; !!= * {{@CODE@}}: jossakin (somewhere)
-jstk+N:jstk  #  ; !!= * {{@CODE@}}: jostakin (from)
-jtak+N:jtak  #  ; !!= * {{@CODE@}}: jotakin (to)
-julk.+ABBR:julk.  PCLE_VAAN  ;
-JyP+N:JyP  #  ; !!= * {{@CODE@}}: Jyväskylän pallo
-jälj.+ABBR:jälj.  PCLE_VAAN  ;
-jääk.+ABBR:jääk.  PCLE_VAAN  ;
-kad.+ABBR:kad.  PCLE_VAAN  ;
-KalPa+N:KalPa  #  ; !!= * {{@CODE@}}: Kalmiston pallo
-kal.+ABBR:kal.  PCLE_VAAN  ;
-kamr.+ABBR:kamr.  PCLE_VAAN  ;
-kand.+N:kand.  #  ; !!= * {{@CODE@}}: kandidaatti (bachelor)
-kand.+ABBR:kand.  PCLE_VAAN  ;
-ka.+N:ka.  #  ; !!= * {{@CODE@}}: keskiarvo (avg)
-kansaned.+ABBR:kansaned.  PCLE_VAAN  ;
-kantt.+ABBR:kantt.  PCLE_VAAN  ;
-ka.+ABBR:ka.  PCLE_VAAN  ;
-kappal.+ABBR:kappal.  PCLE_VAAN  ;
-kapt.luutn.+ABBR:kapt.luutn.  PCLE_VAAN  ;
-kapt.+N:kapt.  #  ; !!= * {{@CODE@}}: kapteeni (captain)
-kapt.+ABBR:kapt.  PCLE_VAAN  ;
-kasvatust.+ABBR:kasvatust.  PCLE_VAAN  ;
-kat.+ABBR:kat.  PCLE_VAAN  ;
-kats.+ABBR:kats.  PCLE_VAAN  ;
-kauppat.+ABBR:kauppat.  PCLE_VAAN  ;
-kcal+ABBR:kcal  PCLE_VAAN  ;
-kd.+ABBR:kd.  PCLE_VAAN  ;
-kenr.luutn.+ABBR:kenr.luutn.  PCLE_VAAN  ;
-kenr.maj.+ABBR:kenr.maj.  PCLE_VAAN  ;
-kenr.+N:kenr.  #  ; !!= * {{@CODE@}}: kenraali (general)
-kenr.+ABBR:kenr.  PCLE_VAAN  ;
-ke+ABBR:ke  PCLE_VAAN  ;
-kers.+N:kers.  #  ; !!= * {{@CODE@}}: kersantti (sergeant)
-kers.+ABBR:kers.  PCLE_VAAN  ;
-kesk.+N:kesk.  #  ; !!= * {{@CODE@}}: keskusta (center party)
-kesk.+ABBR:kesk.  PCLE_VAAN  ;
-Kesk.+ABBR:Kesk.  PCLE_VAAN  ;
-kh.+ABBR:kh.  PCLE_VAAN  ;
-khra+N:khra  #  ; !!= * {{@CODE@}}: kirkkoherra (parson)
-kiint.oy.+ABBR:kiint.oy.  PCLE_VAAN  ;
-kiir.+ABBR:kiir.  PCLE_VAAN  ;
-kirjeenv.+ABBR:kirjeenv.  PCLE_VAAN  ;
-kirj.+ABBR:kirj.  PCLE_VAAN  ;
-kir.+ABBR:kir.  PCLE_VAAN  ;
-kj.+ABBR:kj.  PCLE_VAAN  ;
-kk+N:kk  #  ; !!= * {{@CODE@}}: kuukausi (month)
-kko+N:kko  #  ; !!= * {{@CODE@}}: kirkko (church)
-kk.+ABBR:kk.  PCLE_VAAN  ;
-k%:lo+N:k%:lo  #  ; !!= * {{@CODE@}}: kello
-klo+N:klo  #  ; !!= * {{@CODE@}}: kello (time)
-kl.+ABBR:kl.  PCLE_VAAN  ;
-km/h+ABBR:km/h  PCLE_VAAN  ;
-k.+N:k.  #  ; !!= * {{@CODE@}}:
-kok.+N:kok.  #  ; !!= * {{@CODE@}}: kokoomus (coalition party)
-kok.+ABBR:kok.  PCLE_VAAN  ;
-Kok.+ABBR:Kok.  PCLE_VAAN  ;
-kom.kapt.+ABBR:kom.kapt.  PCLE_VAAN  ;
-komm.+ABBR:komm.  PCLE_VAAN  ;
-kom.+ABBR:kom.  PCLE_VAAN  ;
-kompp.+N:kompp.  #  ; !!= * {{@CODE@}}: komppania ()
-kompp.+ABBR:kompp.  PCLE_VAAN  ;
-ko.+N:ko.  #  ; !!= * {{@CODE@}}: kyseessä oleva (mentioned)
-konst.+ABBR:konst.  PCLE_VAAN  ;
-ko.+ABBR:ko.  PCLE_VAAN  ;
-korpr.+ABBR:korpr.  PCLE_VAAN  ;
-kotital.op.+ABBR:kotital.op.  PCLE_VAAN  ;
-kotiteoll.op.+ABBR:kotiteoll.op.  PCLE_VAAN  ;
-k.+ABBR:k.  PCLE_VAAN  ;
-kpl+N:kpl  #  ; !!= * {{@CODE@}}: kappale (pcs)
-kp.+ABBR:kp.  PCLE_VAAN  ;
-krist.+ABBR:krist.  PCLE_VAAN  ;
-krs+N:krs  #  ; !!= * {{@CODE@}}: kerros (floor)
-ks.+N:ks.  #  ; !!= * {{@CODE@}}: katso (c.f.)
-ks.+ABBR:ks.  PCLE_VAAN  ;
-kts.+N:kts.  #  ; !!= * {{@CODE@}}: katso (c.f.)
-kumpp.+ABBR:kumpp.  PCLE_VAAN  ;
-KuPS+N:KuPS  #  ; !!= * {{@CODE@}}: Kuopion palloseura
-kuv.op.+ABBR:kuv.op.  PCLE_VAAN  ;
-kuv.+ABBR:kuv.  PCLE_VAAN  ;
-kv.+N:kv.  #  ; !!= * {{@CODE@}}: 
-kv.+ABBR:kv.  PCLE_VAAN  ;
-ky.+ABBR:ky.  PCLE_VAAN  ;
-käsit.op.+ABBR:käsit.op.  PCLE_VAAN  ;
-lakit.+ABBR:lakit.  PCLE_VAAN  ;
-la+ABBR:la  PCLE_VAAN  ;
-lastent.op.+ABBR:lastent.op.  PCLE_VAAN  ;
-l.+CC:l.  #  ; !!= * {{@CODE@}}: eli (i.e.)
-leht.+ABBR:leht.  PCLE_VAAN  ;
-liikuntak.+ABBR:liikuntak.  PCLE_VAAN  ;
-liikuntat.+ABBR:liikuntat.  PCLE_VAAN  ;
-lis.+N:lis.  #  ; !!= * {{@CODE@}}: lisensiaatti (lic.)
-lis.+ABBR:lis.  PCLE_VAAN  ;
-lkm.+N:lkm.  #  ; !!= * {{@CODE@}}: lukumäärä (amount)
-lkm.+ABBR:lkm.  PCLE_VAAN  ;
-lk.+N:lk.  #  ; !!= * {{@CODE@}}: luokka (grade)
-lk.+ABBR:lk.  PCLE_VAAN  ;
-lkv.+ABBR:lkv.  PCLE_VAAN  ;
-lky.+ABBR:lky.  PCLE_VAAN  ;
-ll.+ABBR:ll.  PCLE_VAAN  ;
-lm.+ABBR:lm.  PCLE_VAAN  ;
-l.+ABBR:l.  PCLE_VAAN  ;
-ltd.+ABBR:ltd.  PCLE_VAAN  ;
-ltk.+ABBR:ltk.  PCLE_VAAN  ;
-ltn.+N:ltn.  #  ; !!= * {{@CODE@}}: luutnantti (lieutenant)
-luonnont.+ABBR:luonnont.  PCLE_VAAN  ;
-lut.+ABBR:lut.  PCLE_VAAN  ;
-luutn.+ABBR:luutn.  PCLE_VAAN  ;
-lv.+ABBR:lv.  PCLE_VAAN  ;
-lvv.+ABBR:lvv.  PCLE_VAAN  ;
-lyh.+N:lyh.  #  ; !!= * {{@CODE@}}: lyhennettynä (abbr.)
-lyh.+ABBR:lyh.  PCLE_VAAN  ;
-läh.+N:läh.  #  ; !!= * {{@CODE@}}: lähes 
-läh.+ABBR:läh.  PCLE_VAAN  ;
-länt.+ABBR:länt.  PCLE_VAAN  ;
-lääket.+ABBR:lääket.  PCLE_VAAN  ;
-lääk.+ABBR:lääk.  PCLE_VAAN  ;
-maan.+ABBR:maan.  PCLE_VAAN  ;
-maat.+ABBR:maat.  PCLE_VAAN  ;
-maist.+ABBR:maist.  PCLE_VAAN  ;
-maj.+ABBR:maj.  PCLE_VAAN  ;
-maks.+ABBR:maks.  PCLE_VAAN  ;
-ma.+N:ma.  #  ; !!= * {{@CODE@}}: 
-ma.+ABBR:ma.  PCLE_VAAN  ;
-ma+ABBR:ma  PCLE_VAAN  ;
-M.A.+ABBR:M.A.  PCLE_VAAN  ;
-matr.+ABBR:matr.  PCLE_VAAN  ;
-MBA.+ABBR:MBA.  PCLE_VAAN  ;
-merkon.+ABBR:merkon.  PCLE_VAAN  ;
-metsänhoit.+ABBR:metsänhoit.  PCLE_VAAN  ;
-metsät.+ABBR:metsät.  PCLE_VAAN  ;
-mhy.+ABBR:mhy.  PCLE_VAAN  ;
-miel.+ABBR:miel.  PCLE_VAAN  ;
-milj.+ABBR:milj.  PCLE_VAAN  ;
-min.+ABBR:min.  PCLE_VAAN  ;
-Miss+ABBR:Miss  PCLE_VAAN  ;
-mlk.+N:mlk.  #  ; !!= * {{@CODE@}}: maalaiskunta (town)
-mlk.+ABBR:mlk.  PCLE_VAAN  ;
-Mlle+ABBR:Mlle  PCLE_VAAN  ;
-ml.+N:ml.  #  ; !!= * {{@CODE@}}: mukaan lukien (incl.)
-ml.+ABBR:ml.  PCLE_VAAN  ;
-Mme+ABBR:Mme  PCLE_VAAN  ;
-mm.+N:mm.  #  ; !!= * {{@CODE@}}: muun muassa (among others)
-mm.+ABBR:mm.  PCLE_VAAN  ;
-mm+ABBR:mm  PCLE_VAAN  ;
-mom.+N:mom.  #  ; !!= * {{@CODE@}}: momentti (
-mom.+ABBR:mom.  PCLE_VAAN  ;
-mon.+N:mon.  #  ; !!= * {{@CODE@}}: monikko (pl.)
-mot.+ABBR:mot.  PCLE_VAAN  ;
-mot+ABBR:mot  PCLE_VAAN  ;
-M.+ABBR:M.  PCLE_VAAN  ;
-mpm.+ABBR:mpm.  PCLE_VAAN  ;
-mpm+ABBR:mpm  PCLE_VAAN  ;
-mp.+ABBR:mp.  PCLE_VAAN  ;
-mpy.+N:mpy.  #  ; !!= * {{@CODE@}}: 
-mpy.+ABBR:mpy.  PCLE_VAAN  ;
-mrd.+ABBR:mrd.  PCLE_VAAN  ;
-Mr.+ABBR:Mr.  PCLE_VAAN  ;
-Mr+ABBR:Mr  PCLE_VAAN  ;
-Mrs+ABBR:Mrs  PCLE_VAAN  ;
-M.Sc.+ABBR:M.Sc.  PCLE_VAAN  ;
-Ms+ABBR:Ms  PCLE_VAAN  ;
-msrk.+ABBR:msrk.  PCLE_VAAN  ;
-mt.+N:mt.  #  ; !!= * {{@CODE@}}:
-mt.+ABBR:mt.  PCLE_VAAN  ;
-mts.+N:mts.  #  ; !!= * {{@CODE@}}: mainitun tekstin sivulla (ibid)
-mts.+ABBR:mts.  PCLE_VAAN  ;
-mus.op.+ABBR:mus.op.  PCLE_VAAN  ;
-mus.+ABBR:mus.  PCLE_VAAN  ;
-mv.+N:mv.  #  ; !!= * {{@CODE@}}: 
-mv.+ABBR:mv.  PCLE_VAAN  ;
-mvs.+ABBR:mvs.  PCLE_VAAN  ;
-MyPa+N:MyPa  #  ; !!= * {{@CODE@}}: Myllykosken Pallo
-myöh.+ABBR:myöh.  PCLE_VAAN  ;
-NA% f.+ABBR:NA% f.    PCLE_VAAN  ;
-N.B.+ABBR:N.B.  PCLE_VAAN  ;
-neuv.+ABBR:neuv.  PCLE_VAAN  ;
-nid.+ABBR:nid.  PCLE_VAAN  ;
-nimim.+ABBR:nimim.  PCLE_VAAN  ;
-nim.+ABBR:nim.  PCLE_VAAN  ;
-nk.+ABBR:nk.  PCLE_VAAN  ;
-n.+N:n.  #  ; !!= * {{@CODE@}}: noin (approx.)
-N.N.+N:N.N.  #  ; !!= * {{@CODE@}}: John Doe
-N.N.+ABBR:N.N.  PCLE_VAAN  ;
-nom.+N:nom.  #  ; !!= * {{@CODE@}}: nominatiivi (nominative)
-n.+ABBR:n.  PCLE_VAAN  ;
-ns.+N:ns.  #  ; !!= * {{@CODE@}}: niin sanottu (so-called)
-ns.+ABBR:ns.  PCLE_VAAN  ;
-ns+ABBR:ns  PCLE_VAAN  ;
-nti+N:nti  #  ; !!= * {{@CODE@}}: neiti (ms)
-nti+ABBR:nti  PCLE_VAAN  ;
-nyk.+N:nyk.  #  ; !!= * {{@CODE@}}: nykyinen (currently)
-nyk.+ABBR:nyk.  PCLE_VAAN  ;
-oa.+ABBR:oa.  PCLE_VAAN  ;
-obs.+ABBR:obs.  PCLE_VAAN  ;
-obs+ABBR:obs  PCLE_VAAN  ;
-oh.+ABBR:oh.  PCLE_VAAN  ;
-oikeust.+ABBR:oikeust.  PCLE_VAAN  ;
-oik.+N:oik.  #  ; !!= * {{@CODE@}}: oikeammin?
-oik.+ABBR:oik.  PCLE_VAAN  ;
-ok.+ABBR:ok.  PCLE_VAAN  ;
-ok+ABBR:ok  PCLE_VAAN  ;
-om.+N:om.  #  ; !!= * {{@CODE@}}:
-om.+ABBR:om.  PCLE_VAAN  ;
-om.p.+ABBR:om.p.  PCLE_VAAN  ;
-opett.+ABBR:opett.  PCLE_VAAN  ;
-op.+ABBR:op.  PCLE_VAAN  ;
-opp.+ABBR:opp.  PCLE_VAAN  ;
-ork.+ABBR:ork.  PCLE_VAAN  ;
-ortod.+ABBR:ortod.  PCLE_VAAN  ;
-osk.+ABBR:osk.  PCLE_VAAN  ;
-o.s.+N:o.s.  #  ; !!= * {{@CODE@}}: 
-os.+N:os.  #  ; !!= * {{@CODE@}}: omaa sukuaan (née)
-o.s.+ABBR:o.s.  PCLE_VAAN  ;
-os.+ABBR:os.  PCLE_VAAN  ;
-oto.+ABBR:oto.  PCLE_VAAN  ;
-ovh.+ABBR:ovh.  PCLE_VAAN  ;
-oyj.+ABBR:oyj.  PCLE_VAAN  ;
-oy.+ABBR:oy.  PCLE_VAAN  ;
-oz.+ABBR:oz.  PCLE_VAAN  ;
-pa.+ABBR:pa.  PCLE_VAAN  ;
-par.+N:par.  #  ; !!= * {{@CODE@}}: paremmin (in dict., better)
-par.+ABBR:par.  PCLE_VAAN  ;
-part.+N:part.  #  ; !!= * {{@CODE@}}: partitiivi (partitive)
-past.+ABBR:past.  PCLE_VAAN  ;
-patl.+ABBR:patl.  PCLE_VAAN  ;
-pat.+ABBR:pat.  PCLE_VAAN  ;
-/+ABBR:/  PCLE_VAAN  ;
-&+ABBR:&  PCLE_VAAN  ;
-++ABBR:+  PCLE_VAAN  ;
-pe+ABBR:pe  PCLE_VAAN  ;
-perf.+N:perf.  #  ; !!= * {{@CODE@}}: perfekti (perfect)
-perj.+ABBR:perj.  PCLE_VAAN  ;
-per.+ABBR:per.  PCLE_VAAN  ;
-perusk.op.+ABBR:perusk.op.  PCLE_VAAN  ;
-Ph.D.+ABBR:Ph.D.  PCLE_VAAN  ;
-ph.+ABBR:ph.  PCLE_VAAN  ;
-pion.+ABBR:pion.  PCLE_VAAN  ;
-pit.+ABBR:pit.  PCLE_VAAN  ;
-pj.+N:pj.  #  ; !!= * {{@CODE@}}: puheenjohtaja (chair)
-pj.+ABBR:pj.  PCLE_VAAN  ;
-pk.+ABBR:pk.  PCLE_VAAN  ;
-pkt+N:pkt  #  ; !!= * {{@CODE@}}: paketti (pcs)
-pl.+N:pl.  #  ; !!= * {{@CODE@}}: plural
-pl.+ABBR:pl.  PCLE_VAAN  ;
-pluskv.+N:pluskv.  #  ; !!= * {{@CODE@}}: pluskvamperfekti
-p.m.+ABBR:p.m.  PCLE_VAAN  ;
-pm.+ABBR:pm.  PCLE_VAAN  ;
-p.+N:p.  #  ; !!= * {{@CODE@}}: 
-pnä+ABBR:pnä  PCLE_VAAN  ;
-pohj.+ABBR:pohj.  PCLE_VAAN  ;
-po.+N:po.  #  ; !!= * {{@CODE@}}: pitää olla (in dict., should be)
-po.+ABBR:po.  PCLE_VAAN  ;
-p.+ABBR:p.  PCLE_VAAN  ;
-pp.+ABBR:pp.  PCLE_VAAN  ;
-prees.+N:prees.  #  ; !!= * {{@CODE@}}: preesens
-prik.+ABBR:prik.  PCLE_VAAN  ;
-prof.+N:prof.  #  ; !!= * {{@CODE@}}: professori
-prof.+ABBR:prof.  PCLE_VAAN  ;
-prok.+ABBR:prok.  PCLE_VAAN  ;
-pron.+N:pron.  #  ; !!= * {{@CODE@}}: pronomini
-prov.+ABBR:prov.  PCLE_VAAN  ;
-ps.+ABBR:ps.  PCLE_VAAN  ;
-P.S.+ABBR:P.S.  PCLE_VAAN  ;
-psta+N:psta  #  ; !!= * {{@CODE@}}: puolesta (on behalf of)
-psta+ABBR:psta  PCLE_VAAN  ;
-psykol.+ABBR:psykol.  PCLE_VAAN  ;
-ptk.+ABBR:ptk.  PCLE_VAAN  ;
-puh.joht.+ABBR:puh.joht.  PCLE_VAAN  ;
-puh.+ABBR:puh.  PCLE_VAAN  ;
-pursim.+ABBR:pursim.  PCLE_VAAN  ;
-puutarhaop.+ABBR:puutarhaop.  PCLE_VAAN  ;
-pvm.+N:pvm.  #  ; !!= * {{@CODE@}}: päivämäärä (date)
-pvm.+ABBR:pvm.  PCLE_VAAN  ;
-pv+N:pv  #  ; !!= * {{@CODE@}}: 
-pv.+ABBR:pv.  PCLE_VAAN  ;
-pääll.+ABBR:pääll.  PCLE_VAAN  ;
-rak.mest.+ABBR:rak.mest.  PCLE_VAAN  ;
-rak.+ABBR:rak.  PCLE_VAAN  ;
-reht.+ABBR:reht.  PCLE_VAAN  ;
-rek.+N:rek.  #  ; !!= * {{@CODE@}}: rekisteröity, ®
-rek.+ABBR:rek.  PCLE_VAAN  ;
-Re.+ABBR:Re.  PCLE_VAAN  ;
-res.+ABBR:res.  PCLE_VAAN  ;
-rkl+N:rkl  #  ; !!= * {{@CODE@}}: ruokalusikka (tbsp)
-rkm.+ABBR:rkm.  PCLE_VAAN  ;
-RoPS+N:RoPS  #  ; !!= * {{@CODE@}}: Rovaniemen palloseura
-rov.+ABBR:rov.  PCLE_VAAN  ;
-r.+ABBR:r.  PCLE_VAAN  ;
-rp.+N:rp.  #  ; !!= * {{@CODE@}}: 
-rp.+ABBR:rp.  PCLE_VAAN  ;
-Rs.+ABBR:Rs.  PCLE_VAAN  ;
-R.S.V.P.+ABBR:R.S.V.P.  PCLE_VAAN  ;
-rtg.+ABBR:rtg.  PCLE_VAAN  ;
-rva+N:rva  #  ; !!= * {{@CODE@}}: rouva (Mrs)
-rykm.+ABBR:rykm.  PCLE_VAAN  ;
-ry+N:ry  #  ; !!= * {{@CODE@}}: rekisteröity yhdistys (inc.)
-ry.+ABBR:ry.  PCLE_VAAN  ;
-sacr.% min.% kand.+ABBR:sacr.% min.% kand. PCLE_VAAN  ;
-sairaanh.op.+ABBR:sairaanh.op.  PCLE_VAAN  ;
-sair.hoit.+ABBR:sair.hoit.  PCLE_VAAN  ;
-s%:a+ABBR:s%:a  PCLE_VAAN  ;
-s.% d.+ABBR:s.% d.    PCLE_VAAN  ;
-s.d.+ABBR:s.d.  PCLE_VAAN  ;
-sd.+ABBR:sd.  PCLE_VAAN  ;
-sh.+ABBR:sh.  PCLE_VAAN  ;
-S.H.T.+ABBR:S.H.T.  PCLE_VAAN  ;
-sid.+ABBR:sid.  PCLE_VAAN  ;
-siht.+ABBR:siht.  PCLE_VAAN  ;
-sit.+N:sit.  #  ; !!= * {{@CODE@}}: sitoutumaton (not in party)
-sit.+ABBR:sit.  PCLE_VAAN  ;
-sl.+ABBR:sl.  PCLE_VAAN  ;
-s.+N:s.  #  ; !!= * {{@CODE@}}: syntynyt (birth)
-so.+N:so.  #  ; !!= * {{@CODE@}}: se on (i.e.)
-so.+ABBR:so.  PCLE_VAAN  ;
-sos.dem.+ABBR:sos.dem.  PCLE_VAAN  ;
-So.% Sh.+ABBR:So.% Sh.    PCLE_VAAN  ;
-sos.+ABBR:sos.  PCLE_VAAN  ;
-sotat.+ABBR:sotat.  PCLE_VAAN  ;
-sot.+ABBR:sot.  PCLE_VAAN  ;
-sov.+N:sov.  #  ; !!= * {{@CODE@}}: sovittanut (composer)
-sov.+ABBR:sov.  PCLE_VAAN  ;
-s.+ABBR:s.  PCLE_VAAN  ;
-sp.+N:sp.  #  ; !!= * {{@CODE@}}: 
-sp.+ABBR:sp.  PCLE_VAAN  ;
-srk.+N:srk.  #  ; !!= * {{@CODE@}}: seurakunta (church)
-srk.+ABBR:srk.  PCLE_VAAN  ;
-sr.+ABBR:sr.  PCLE_VAAN  ;
-stm.+ABBR:stm.  PCLE_VAAN  ;
-st.+ABBR:st.  PCLE_VAAN  ;
-sunn.+ABBR:sunn.  PCLE_VAAN  ;
-suom.+N:suom.  #  ; !!= * {{@CODE@}}: suomentanut (fi. translator)
-suom.+ABBR:suom.  PCLE_VAAN  ;
-su+ABBR:su  PCLE_VAAN  ;
-svh.+ABBR:svh.  PCLE_VAAN  ;
-s.v.+ABBR:s.v.  PCLE_VAAN  ;
-synt.+N:synt.  #  ; !!= * {{@CODE@}}: syntynyt (brith)
-synt.+ABBR:synt.  PCLE_VAAN  ;
-sähköp.+N:sähköp.  #  ; !!= * {{@CODE@}}: sähkoposti (email)
-sähköp.+ABBR:sähköp.  PCLE_VAAN  ;
-säv.+N:säv.  #  ; !!= * {{@CODE@}}: säveltänyt (composer)
-säv.+ABBR:säv.  PCLE_VAAN  ;
-tait.+ABBR:tait.  PCLE_VAAN  ;
-tal.hoit.+ABBR:tal.hoit.  PCLE_VAAN  ;
-taloust.+ABBR:taloust.  PCLE_VAAN  ;
-tanssit.+ABBR:tanssit.  PCLE_VAAN  ;
-tark.+N:tark.  #  ; !!= * {{@CODE@}}: tarkistanut (editor)
-tark.+ABBR:tark.  PCLE_VAAN  ;
-tav.+N:tav.  #  ; !!= * {{@CODE@}}: tavallisemmin (in dict, usually)
-tb.+ABBR:tb.  PCLE_VAAN  ;
-teatt.+ABBR:teatt.  PCLE_VAAN  ;
-tekn.+N:tekn.  #  ; !!= * {{@CODE@}}: tekninen (in dict., tech)
-tekn.+ABBR:tekn.  PCLE_VAAN  ;
-teoll.+ABBR:teoll.  PCLE_VAAN  ;
-teol.+ABBR:teol.  PCLE_VAAN  ;
-terveydenh.+ABBR:terveydenh.  PCLE_VAAN  ;
-terveystiet.+ABBR:terveystiet.  PCLE_VAAN  ;
-th.+ABBR:th.  PCLE_VAAN  ;
-tiist.+ABBR:tiist.  PCLE_VAAN  ;
-til.+ABBR:til.  PCLE_VAAN  ;
-ti+ABBR:ti  PCLE_VAAN  ;
-tj.+ABBR:tj.  PCLE_VAAN  ;
-tjs.+ABBR:tjs.  PCLE_VAAN  ;
-tjs+ABBR:tjs  PCLE_VAAN  ;
-tjsp+ABBR:tjsp  PCLE_VAAN  ;
-tk.+ABBR:tk.  PCLE_VAAN  ;
-tlk.+ABBR:tlk.  PCLE_VAAN  ;
-tmi+N:tmi  #  ; !!= * {{@CODE@}}: toiminimi (
-tmi+ABBR:tmi  PCLE_VAAN  ;
-tm.+ABBR:tm.  PCLE_VAAN  ;
-tms.+N:tms.  #  ; !!= * {{@CODE@}}: tai muuta sellaiste (etc.)
-tms.+ABBR:tms.  PCLE_VAAN  ;
-tms+ABBR:tms  PCLE_VAAN  ;
-tmv.+ABBR:tmv.  PCLE_VAAN  ;
-tmv+ABBR:tmv  PCLE_VAAN  ;
-t.+N:t.  #  ; !!= * {{@CODE@}}: tai (or)
-toht.+ABBR:toht.  PCLE_VAAN  ;
-toim.apul.+ABBR:toim.apul.  PCLE_VAAN  ;
-toim.% huom.+N:toim.% huom.             #  ; !!= * {{@CODE@}}: toimituksen huomautus (editors nt)
-toim.joht.+ABBR:toim.joht.  PCLE_VAAN  ;
-toim.+N:toim.  #  ; !!= * {{@CODE@}}: toimitus (editor)
-toim.+ABBR:toim.  PCLE_VAAN  ;
-toim.siht.+ABBR:toim.siht.  PCLE_VAAN  ;
-to+ABBR:to  PCLE_VAAN  ;
-torst.+ABBR:torst.  PCLE_VAAN  ;
-t.+ABBR:t.  PCLE_VAAN  ;
-tp.+ABBR:tp.  PCLE_VAAN  ;
-tri+N:tri  #  ; !!= * {{@CODE@}}: tohtori (Dr.)
-ts.+N:ts.  #  ; !!= * {{@CODE@}}: toisinsanoen (iow)
-ts.+ABBR:ts.  PCLE_VAAN  ;
-tsto+N:tsto  #  ; !!= * {{@CODE@}}: toimisto (office)
-tuom.+ABBR:tuom.  PCLE_VAAN  ;
-ups.+ABBR:ups.  PCLE_VAAN  ;
-urk.+ABBR:urk.  PCLE_VAAN  ;
-us.+N:us.  #  ; !!= * {{@CODE@}}: 
-us.+ABBR:us.  PCLE_VAAN  ;
-Vaiht.+ABBR:Vaiht.  PCLE_VAAN  ;
-vak.+N:vak.  #  ; !!= * {{@CODE@}}: 
-valtiot.+ABBR:valtiot.  PCLE_VAAN  ;
-valt.+ABBR:valt.  PCLE_VAAN  ;
-vanh.+N:vanh.  #  ; !!= * {{@CODE@}}: vanhastaan (in dict., earlier)
-va.+ABBR:va.  PCLE_VAAN  ;
-varan.+ABBR:varan.  PCLE_VAAN  ;
-varat.+ABBR:varat.  PCLE_VAAN  ;
-var.+ABBR:var.  PCLE_VAAN  ;
-vas.+N:vas.  #  ; !!= * {{@CODE@}}: vasemmisto (left party)
-vas.+ABBR:vas.  PCLE_VAAN  ;
-Vas.+ABBR:Vas.  PCLE_VAAN  ;
-vast.+N:vast.  #  ; !!= * {{@CODE@}}: vastaava (corresponding)
-vast.+ABBR:vast.  PCLE_VAAN  ;
-vht+ABBR:vht  PCLE_VAAN  ;
-vihr.+ABBR:vihr.  PCLE_VAAN  ;
-Vihr.+ABBR:Vihr.  PCLE_VAAN  ;
-virk.+ABBR:virk.  PCLE_VAAN  ;
-vkl+N:vkl  #  ; !!= * {{@CODE@}}: viikonloppu (weekend)
-vklp+N:vklp  #  ; !!= * {{@CODE@}}: 
-vko+N:vko  #  ; !!= * {{@CODE@}}: viikko (week)
-vk.+ABBR:vk.  PCLE_VAAN  ;
-vm.+ABBR:vm.  PCLE_VAAN  ;
-VNp.+ABBR:VNp.  PCLE_VAAN  ;
-v.+N:v.  #  ; !!= * {{@CODE@}}: vuotta (year(s))
-voim.op.+ABBR:voim.op.  PCLE_VAAN  ;
-V.O.+ABBR:V.O.  PCLE_VAAN  ;
-v.+ABBR:v.  PCLE_VAAN  ;
-vpj.+N:vpj.  #  ; !!= * {{@CODE@}}: varapuheenjohtaja (vice chair)
-vpj.+ABBR:vpj.  PCLE_VAAN  ;
-Vp.+ABBR:Vp.  PCLE_VAAN  ;
-vrk+N:vrk  #  ; !!= * {{@CODE@}}: vuorokausi (calendar day)
-vrt.+N:vrt.  #  ; !!= * {{@CODE@}}: vertaa (c.f.)
-vrt.+ABBR:vrt.  PCLE_VAAN  ;
-vsk.+ABBR:vsk.  PCLE_VAAN  ;
-vs.+N:vs.  #  ; !!= * {{@CODE@}}: 
-V.S.O.+ABBR:V.S.O.  PCLE_VAAN  ;
-V.S.O.P.+ABBR:V.S.O.P.  PCLE_VAAN  ;
-vs.+ABBR:vs.  PCLE_VAAN  ;
-vs+ABBR:vs  PCLE_VAAN  ;
-vt.+N:vt.  #  ; !!= * {{@CODE@}}: 
-vt.+ABBR:vt.  PCLE_VAAN  ;
-vv.+N:vv.  #  ; !!= * {{@CODE@}}: vuosina
-vv.+ABBR:vv.  PCLE_VAAN  ;
-vänr.+N:vänr.  #  ; !!= * {{@CODE@}}: vänrikki (some military stuff)
-vänr.+ABBR:vänr.  PCLE_VAAN  ;
-vääp.+N:vääp.  #  ; !!= * {{@CODE@}}: vääpeli ( more)
-vääp.+ABBR:vääp.  PCLE_VAAN  ;
-ye.ups.+ABBR:ye.ups.  PCLE_VAAN  ;
-yhd.+ABBR:yhd.  PCLE_VAAN  ;
-yhteiskuntat.+ABBR:yhteiskuntat.  PCLE_VAAN  ;
-yht.+ABBR:yht.  PCLE_VAAN  ;
-yks.+N:yks.  #  ; !!= * {{@CODE@}}: yksikkö (singular)
-ylik.+ABBR:ylik.  PCLE_VAAN  ;
-ylil.+ABBR:ylil.  PCLE_VAAN  ;
-ylimatr.+ABBR:ylimatr.  PCLE_VAAN  ;
-ylim.+ABBR:ylim.  PCLE_VAAN  ;
-yliop.+ABBR:yliop.  PCLE_VAAN  ;
-yliopp.+ABBR:yliopp.  PCLE_VAAN  ;
-ylip.+ABBR:ylip.  PCLE_VAAN  ;
-yliv.+ABBR:yliv.  PCLE_VAAN  ;
-yl.+N:yl.  #  ; !!= * {{@CODE@}}: yleensä (in dict., usually)
-yl.+ABBR:yl.  PCLE_VAAN  ;
-ym.+N:ym.  #  ; !!= * {{@CODE@}}: ynnä muuta (etc.)
-ym.+ABBR:ym.  PCLE_VAAN  ;
-ym+ABBR:ym  PCLE_VAAN  ;
-yms.+N:yms.  #  ; !!= * {{@CODE@}}: ynnä muuta sellaista (etc.)
-yms.+ABBR:yms.  PCLE_VAAN  ;
-yms+ABBR:yms  PCLE_VAAN  ;
-yo.merk.+ABBR:yo.merk.  PCLE_VAAN  ;
-yo.+N:yo.  #  ; !!= * {{@CODE@}}: yllä oleva (aforementioned)
-yo.+ABBR:yo.  PCLE_VAAN  ;
-yp.+ABBR:yp.  PCLE_VAAN  ;
-yv.+N:yv.  #  ; !!= * {{@CODE@}}: 
-yv.+ABBR:yv.  PCLE_VAAN  ;
 
-ab+Pcle:ab  #  ;
-Ab+Pcle:Ab  #  ;
-agrol.+Pcle:agrol.  #  ;
-agron.+Pcle:agron.  #  ;
-aik.+Pcle:aik.  #  ;
-akat.+Pcle:akat.  #  ;
-alik.+Pcle:alik.  #  ;
-alil.+Pcle:alil.  #  ;
-alk.+Pcle:alk.  #  ;
-al.+Pcle:al.  #  ;
-alv.+Pcle:alv.  #  ;
-amir.+Pcle:amir.  #  ;
-a.m.+Pcle:a.m.  #  ;
-anon.+Pcle:anon.  #  ;
-ao.+Pcle:ao.  #  ;
-ap.+Pcle:ap.  #  ;
-apul.+Pcle:apul.  #  ;
-apul.prof.+Pcle:apul.prof.  #  ;
-arkkit.+Pcle:arkkit.  #  ;
-ark.+Pcle:ark.  #  ;
-art.+Pcle:art.  #  ;
-arv.+Pcle:arv.  #  ;
-as.oy.+Pcle:as.oy.  #  ;
-as.+Pcle:as.  #  ;
-assist.+Pcle:assist.  #  ;
-ass.+Pcle:ass.  #  ;
-at+Pcle:at  #  ;
-au.+Pcle:au.  #  ;
-ausk.+Pcle:ausk.  #  ;
-ay.+Pcle:ay.  #  ;
-B.A.+Pcle:B.A.  #  ;
-bar+Pcle:bar  #  ;
-br.+Pcle:br.  #  ;
-B.Sc.+Pcle:B.Sc.  #  ;
-B.S.+Pcle:B.S.  #  ;
-c%:a+Pcle:c%:a  #  ;
-ca+Pcle:ca  #  ;
-cf.+Pcle:cf.  #  ;
-c/o+Pcle:c/o  #  ;
-Co.+Pcle:Co.  #  ;
-Corp.+Pcle:Corp.  #  ;
-dem.+Pcle:dem.  #  ;
-dipl.arkkit.+Pcle:dipl.arkkit.  #  ;
-dipl.ekon.+Pcle:dipl.ekon.  #  ;
-dipl.ins.+Pcle:dipl.ins.  #  ;
-dipl.kielenk.+Pcle:dipl.kielenk.  #  ;
-dipl.kirjeenv.+Pcle:dipl.kirjeenv.  #  ;
-dipl.kosm.+Pcle:dipl.kosm.  #  ;
-dipl.+Pcle:dipl.  #  ;
-dipl.urk.+Pcle:dipl.urk.  #  ;
-dir.% cant.+Pcle:dir.% cant.  #  ;
-div.+Pcle:div.  #  ;
+
+Ab+N:Ab  ab-dot-noun-trab  ;
+B.A.+N:B.A  ab-dot-noun-trab  ;
+B.S.+N:B.S  ab-dot-noun-trab  ;
+B.Sc.+N:B.Sc  ab-dot-noun-trab  ;
+Co.+N:Co  ab-dot-noun-trab  ;
+Corp.+N:Corp  ab-dot-noun-trab  ;
+Dr.+N:Dr  ab-dot-noun-trab  ;
+GTi+N:GTi  ab-dot-noun-trab  ;
+Gt+N:Gt  ab-dot-noun-trab  ;
+H.V.+N:H.V  ab-dot-noun-trab  ;
+Hki+N+Prop+Sem/Geo+N:Hk  PROPN_TYYLI  ;
+Jk.+N:Jk  ab-dot-noun-trab  ;
+KalPa+N:KalPa  ab-nodot-noun-itrab  ; !!= * {{@CODE@}}+N: Kalmiston pallo
+Kesk.+N:Kesk  ab-dot-noun-trab  ;
+Kok.+N:Kok  ab-dot-noun-trab  ;
+M.+N:M  ab-dot-noun-trab  ;
+M.A.+N:M.A  ab-dot-noun-trab  ;
+M.Sc.+N:M.Sc  ab-dot-noun-trab  ;
+MBA.+N:MBA  ab-dot-noun-trab  ;
+Miss+N:Miss  ab-dot-noun-trab  ;
+Mlle+N:Mlle  ab-dot-noun-trab  ;
+Mme+N:Mme  ab-dot-noun-trab  ;
+Mr+N:Mr  ab-dot-noun-trab  ;
+Mr.+N:Mr  ab-dot-noun-trab  ;
+Mrs+N:Mrs  ab-dot-noun-trab  ;
+Ms+N:Ms  ab-dot-noun-trab  ;
+MyPa+N:MyPa   ab-nodot-noun-itrab   ; !!= * {{@CODE@}}+N: Myllykosken Pallo
+N.B.+N:N.B  ab-dot-noun-trab  ;
+N.N.+N:N.N  ab-dot-noun-trab  ;
+NA% f.+N:NA% f.    ab-dot-noun-trab  ;
+P.S.+N:P.S  ab-dot-noun-trab  ;
+Ph.D.+N:Ph.D  ab-dot-noun-trab  ;
+R.S.V.P.+N:R.S.V.P  ab-dot-noun-trab  ;
+RN%:o+N:RN%:o  NOUN_RUIPELO  ;
+Re.+N:Re  ab-dot-noun-trab  ;
+RoPS+N:RoPS   ab-nodot-noun-itrab  ; !!= * {{@CODE@}}+N: Rovaniemen palloseura
+Rs.+N:Rs  ab-dot-noun-trab  ;
+S.H.T.+N:S.H.T  ab-dot-noun-trab  ;
+So.% Sh.+N:So.% Sh.    ab-dot-noun-trab  ;
+Tku+N+Prop+Sem/Geo+N:Tku  PROPN_ASU  ;
+Tre+N+Prop+Sem/Geo+N:Tre  PROPN_PISTE  ;
+V.O.+N:V.O  ab-dot-noun-trab  ;
+V.S.O.+N:V.S.O  ab-dot-noun-trab  ;
+V.S.O.P.+N:V.S.O.P  ab-dot-noun-trab  ;
+VNp.+N:VNp  ab-dot-noun-trab  ;
+Vaiht.+N:Vaiht  ab-dot-noun-trab  ;
+Vas.+N:Vas  ab-dot-noun-trab  ;
+Vihr.+N:Vihr  ab-dot-noun-trab  ;
+Vp.+N:Vp  ab-dot-noun-trab  ;
+ab+N:ab  ab-dot-noun-trab  ;
+agrol.+N:agrol  ab-dot-noun-trab  ;
+agron.+N:agron  ab-dot-noun-trab  ;
+aik.+N:aik  ab-dot-noun-trab  ;
+akat.+N:akat  ab-dot-noun-trab  ;
+al.+N:al  ab-dot-noun-trab  ;
+alik.+N:alik  ab-dot-noun-trab  ;
+alil.+N:alil  ab-dot-noun-trab  ;
+alk.+N:alk  ab-dot-noun-trab  ;
+amir.+N:amir  ab-dot-noun-trab  ;
+ao.+N:ao  ab-dot-noun-trab  ;
+ap.+N:ap  ab-dot-noun-trab  ;
+apul.+N:apul  ab-dot-noun-trab  ;
+apul.prof.+N:apul.prof  ab-dot-noun-trab  ;
+ark.+N:ark  ab-dot-noun-trab  ;
+arkkit.+N:arkkit  ab-dot-noun-trab  ;
+art.+N:art  ab-dot-noun-trab  ;
+arv.+N:arv  ab-dot-noun-trab  ;
+as.+N:as  ab-dot-noun-trab  ;
+as.oy.+N:as.oy  ab-dot-noun-trab  ;
+ass.+N:ass  ab-dot-noun-trab  ;
+assist.+N:assist  ab-dot-noun-trab  ;
+at+N:at  ab-dot-noun-trab  ;
+au.+N:au  ab-dot-noun-trab  ;
+ausk.+N:ausk  ab-dot-noun-trab  ;
+ay.+N:ay  ab-dot-noun-trab  ;
+bar+N:bar  ab-dot-noun-trab  ;
+br.+N:br  ab-dot-noun-trab  ;
+c%:a+N:c%:a  ab-dot-noun-trab  ;
+c/o+N:c/o  ab-dot-noun-trab  ;
+ca+N:ca  ab-dot-noun-trab  ;
+cf.+N:cf  ab-dot-noun-trab  ;
+dem.+N:dem  ab-dot-noun-trab  ;
+dipl.+N:dipl  ab-dot-noun-trab  ;
+dipl.arkkit.+N:dipl.arkkit  ab-dot-noun-trab  ;
+dipl.ekon.+N:dipl.ekon  ab-dot-noun-trab  ;
+dipl.ins.+N:dipl.ins  ab-dot-noun-trab  ;
+dipl.kielenk.+N:dipl.kielenk  ab-dot-noun-trab  ;
+dipl.kirjeenv.+N:dipl.kirjeenv  ab-dot-noun-trab  ;
+dipl.kosm.+N:dipl.kosm  ab-dot-noun-trab  ;
+dipl.urk.+N:dipl.urk  ab-dot-noun-trab  ;
+dir.% cant.+N:dir.% cant  ab-dot-noun-trab  ;
+div.+N:div  ab-dot-noun-trab  ;
 dnro+N:dnro  NOUN_RUIPELO  ;
-dos.+Pcle:dos.  #  ;
-Dr.+Pcle:Dr.  #  ;
-eaa.+Pcle:eaa.  #  ;
-eaa+Pcle:eaa  #  ;
-ed.+Pcle:ed.  #  ;
-e.g.+Pcle:e.g.  #  ;
-eht.+Pcle:eht.  #  ;
-ekon.+Pcle:ekon.  #  ;
-eKr.+Pcle:eKr.  #  ;
-eKr+Pcle:eKr  #  ;
-elintarviket.+Pcle:elintarviket.  #  ;
-el.lääk.+Pcle:el.lääk.  #  ;
-eläinl.+Pcle:eläinl.  #  ;
-eläinlääket.+Pcle:eläinlääket.  #  ;
-eläk.+Pcle:eläk.  #  ;
-em.+Pcle:em.  #  ;
-emt.+Pcle:emt.  #  ;
-ent.+Pcle:ent.  #  ;
-eos.+Pcle:eos.  #  ;
-e.+Pcle:e.  #  ;
-erikoiseläinl.+Pcle:erikoiseläinl.  #  ;
-erikoishammasl.+Pcle:erikoishammasl.  #  ;
-erikoisl.+Pcle:erikoisl.  #  ;
-erikoist.+Pcle:erikoist.  #  ;
-esik.+Pcle:esik.  #  ;
-esim.+Pcle:esim.  #  ;
-esim+Pcle:esim  #  ;
-esitt.+Pcle:esitt.  #  ;
-est.+Pcle:est.  #  ;
-et% al.+Pcle:et% al.  #  ;
-etc.+Pcle:etc.  #  ;
-etc+Pcle:etc  #  ;
-et.+Pcle:et.  #  ;
-ev.lut.+Pcle:ev.lut.  #  ;
-ev.luutn.+Pcle:ev.luutn.  #  ;
-ev.+Pcle:ev.  #  ;
-evp.+Pcle:evp.  #  ;
-farmas.+Pcle:farmas.  #  ;
-farm.+Pcle:farm.  #  ;
-fil.+Pcle:fil.  #  ;
-f.+Pcle:f.  #  ;
-ft.+Pcle:ft.  #  ;
-GTi+Pcle:GTi  #  ;
-Gt+Pcle:Gt  #  ;
-hallinton.+Pcle:hallinton.  #  ;
-hallintot.+Pcle:hallintot.  #  ;
-hammaslääket.+Pcle:hammaslääket.  #  ;
-h.c.+Pcle:h.c.  #  ;
-Hki+N+Prop+Sem/Geo:Hk  PROPN_TYYLI  ;
-hl.+Pcle:hl.  #  ;
+dos.+N:dos  ab-dot-noun-trab  ;
+e.+N:e  ab-dot-noun-trab  ;
+e.g.+N:e.g  ab-dot-noun-trab  ;
+eKr+N:eKr  ab-dot-noun-trab  ;
+eKr.+N:eKr  ab-dot-noun-trab  ;
+eaa+N:eaa  ab-dot-noun-trab  ;
+eaa.+N:eaa  ab-dot-noun-trab  ;
+ed.+N:ed  ab-dot-noun-trab  ;
+eht.+N:eht  ab-dot-noun-trab  ;
+ekon.+N:ekon  ab-dot-noun-trab  ;
+el.lääk.+N:el.lääk  ab-dot-noun-trab  ;
+elintarviket.+N:elintarviket  ab-dot-noun-trab  ;
+eläinl.+N:eläinl  ab-dot-noun-trab  ;
+eläinlääket.+N:eläinlääket  ab-dot-noun-trab  ;
+eläk.+N:eläk  ab-dot-noun-trab  ;
+em.+N:em  ab-dot-noun-trab  ;
+emt.+N:emt  ab-dot-noun-trab  ;
+ent.+N:ent  ab-dot-noun-trab  ;
+eos.+N:eos  ab-dot-noun-trab  ;
+erikoiseläinl.+N:erikoiseläinl  ab-dot-noun-trab  ;
+erikoishammasl.+N:erikoishammasl  ab-dot-noun-trab  ;
+erikoisl.+N:erikoisl  ab-dot-noun-trab  ;
+erikoist.+N:erikoist  ab-dot-noun-trab  ;
+esik.+N:esik  ab-dot-noun-trab  ;
+esim+N:esim  ab-dot-noun-trab  ;
+esim.+N:esim  ab-dot-noun-trab  ;
+esitt.+N:esitt  ab-dot-noun-trab  ;
+est.+N:est  ab-dot-noun-trab  ;
+et% al.+N:et% al  ab-dot-noun-trab  ;
+et.+N:et  ab-dot-noun-trab  ;
+etc+N:etc  ab-dot-noun-trab  ;
+etc.+N:etc  ab-dot-noun-trab  ;
+ev.+N:ev  ab-dot-noun-trab  ;
+ev.lut.+N:ev.lut  ab-dot-noun-trab  ;
+ev.luutn.+N:ev.luutn  ab-dot-noun-trab  ;
+evp.+N:evp  ab-dot-noun-trab  ;
+f.+N:f  ab-dot-noun-trab  ;
+farm.+N:farm  ab-dot-noun-trab  ;
+farmas.+N:farmas  ab-dot-noun-trab  ;
+fil.+N:fil  ab-dot-noun-trab  ;
+ft.+N:ft  ab-dot-noun-trab  ;
+h.c.+N:h.c  ab-dot-noun-trab  ;
+hallinton.+N:hallinton  ab-dot-noun-trab  ;
+hallintot.+N:hallintot  ab-dot-noun-trab  ;
+hammaslääket.+N:hammaslääket  ab-dot-noun-trab  ;
+hl.+N:hl  ab-dot-noun-trab  ;
 hlö+N:hlö  NOUN_JÄÄTELÖ  ;
-hovioik.+Pcle:hovioik.  #  ;
-hp.+Pcle:hp.  #  ;
+hovioik.+N:hovioik  ab-dot-noun-trab  ;
+hp.+N:hp  ab-dot-noun-trab  ;
 hra+N:hr  NOUN_KIRJA  ;
 hsto+N:hsto  NOUN_TALO  ;
-hum.+Pcle:hum.  #  ;
-huom.+Pcle:huom.  #  ;
-huom+Pcle:huom  #  ;
-H.V.+Pcle:H.V.  #  ;
-ibid.+Pcle:ibid.  #  ;
-ib.+Pcle:ib.  #  ;
-id.+Pcle:id.  #  ;
-i.e.+Pcle:i.e.  #  ;
-ilm.+Pcle:ilm.  #  ;
-inc.+Pcle:inc.  #  ;
-in.+Pcle:in.  #  ;
-in+Pcle:in  #  ;
-ins.+Pcle:ins.  #  ;
-ip.+Pcle:ip.  #  ;
-it.+Pcle:it.  #  ;
-i.v.+Pcle:i.v.  #  ;
-jaa.+Pcle:jaa.  #  ;
-jaa+Pcle:jaa  #  ;
-jatk.+Pcle:jatk.  #  ;
-Jk.+Pcle:Jk.  #  ;
-jKr.+Pcle:jKr.  #  ;
-jKr+Pcle:jKr  #  ;
-jms.+Pcle:jms.  #  ;
-jms+Pcle:jms  #  ;
-jne.+Pcle:jne.  #  ;
-jne+Pcle:jne  #  ;
-joht.+Pcle:joht.  #  ;
-jr.+Pcle:jr.  #  ;
-julk.+Pcle:julk.  #  ;
-jälj.+Pcle:jälj.  #  ;
-jääk.+Pcle:jääk.  #  ;
-kad.+Pcle:kad.  #  ;
-kal.+Pcle:kal.  #  ;
-kamr.+Pcle:kamr.  #  ;
-kand.+Pcle:kand.  #  ;
-kansaned.+Pcle:kansaned.  #  ;
-kantt.+Pcle:kantt.  #  ;
-ka.+Pcle:ka.  #  ;
-kappal.+Pcle:kappal.  #  ;
-kapt.luutn.+Pcle:kapt.luutn.  #  ;
-kapt.+Pcle:kapt.  #  ;
-kasvatust.+Pcle:kasvatust.  #  ;
-kat.+Pcle:kat.  #  ;
-kats.+Pcle:kats.  #  ;
-kauppat.+Pcle:kauppat.  #  ;
-kcal+Pcle:kcal  #  ;
-kd.+Pcle:kd.  #  ;
-kenr.luutn.+Pcle:kenr.luutn.  #  ;
-kenr.maj.+Pcle:kenr.maj.  #  ;
-kenr.+Pcle:kenr.  #  ;
-ke+Pcle:ke  #  ;
-kers.+Pcle:kers.  #  ;
-kesk.+Pcle:kesk.  #  ;
-Kesk.+Pcle:Kesk.  #  ;
-kh.+Pcle:kh.  #  ;
+hum.+N:hum  ab-dot-noun-trab  ;
+huom+N:huom  ab-dot-noun-trab  ;
+huom.+N:huom  ab-dot-noun-trab  ;
+i.e.+N:i.e  ab-dot-noun-trab  ;
+i.v.+N:i.v  ab-dot-noun-trab  ;
+ib.+N:ib  ab-dot-noun-trab  ;
+ibid.+N:ibid  ab-dot-noun-trab  ;
+id.+N:id  ab-dot-noun-trab  ;
+ilm.+N:ilm  ab-dot-noun-trab  ;
+in+N:in  ab-dot-noun-trab  ;
+in.+N:in  ab-dot-noun-trab  ;
+inc.+N:inc  ab-dot-noun-trab  ;
+ins.+N:ins  ab-dot-noun-trab  ;
+ip.+N:ip  ab-dot-noun-trab  ;
+it.+N:it  ab-dot-noun-trab  ;
+jKr+N:jKr  ab-dot-noun-trab  ;
+jKr.+N:jKr  ab-dot-noun-trab  ;
+jaa+N:jaa  ab-dot-noun-trab  ;
+jaa.+N:jaa  ab-dot-noun-trab  ;
+jatk.+N:jatk  ab-dot-noun-trab  ;
+jms+N:jms  ab-dot-noun-trab  ;
+jms.+N:jms  ab-dot-noun-trab  ;
+jne+N:jne  ab-dot-noun-trab  ;
+jne.+N:jne  ab-dot-noun-trab  ;
+joht.+N:joht  ab-dot-noun-trab  ;
+jr.+N:jr  ab-dot-noun-trab  ;
+jssk+N:jssk   ab-nodot-noun-itrab   ; !!= * {{@CODE@}}+N: jossakin (somewhere)
+jstk+N:jstk   ab-nodot-noun-itrab  ; !!= * {{@CODE@}}+N: jostakin (from)
+jtak+N:jtak   ab-nodot-noun-itrab   ; !!= * {{@CODE@}}+N: jotakin (to)
+julk.+N:julk  ab-dot-noun-trab  ;
+jälj.+N:jälj  ab-dot-noun-trab  ;
+jääk.+N:jääk  ab-dot-noun-trab  ;
+k%:lo+N:k%:lo   ab-dot-noun-trnumab   ; !!= * {{@CODE@}}+N: kello
+k.+N:k  ab-dot-noun-trab  ;
+ka.+N:ka  ab-dot-noun-trab  ;
+kad.+N:kad  ab-dot-noun-trab  ;
+kal.+N:kal  ab-dot-noun-trab  ;
+kamr.+N:kamr  ab-dot-noun-trab  ;
+kand.+N:kand  ab-dot-noun-trab  ;
+kansaned.+N:kansaned  ab-dot-noun-trab  ;
+kantt.+N:kantt  ab-dot-noun-trab  ;
+kappal.+N:kappal  ab-dot-noun-trab  ;
+kapt.+N:kapt  ab-dot-noun-trab  ;
+kapt.luutn.+N:kapt.luutn  ab-dot-noun-trab  ;
+kasvatust.+N:kasvatust  ab-dot-noun-trab  ;
+kat.+N:kat  ab-dot-noun-trab  ;
+kats.+N:kats  ab-dot-noun-trab  ;
+kauppat.+N:kauppat  ab-dot-noun-trab  ;
+kcal+N:kcal  ab-dot-noun-trab  ;
+kd.+N:kd  ab-dot-noun-trab  ;
+ke+N:ke  ab-dot-noun-trab  ;
+kenr.+N:kenr  ab-dot-noun-trab  ;
+kenr.luutn.+N:kenr.luutn  ab-dot-noun-trab  ;
+kenr.maj.+N:kenr.maj  ab-dot-noun-trab  ;
+kers.+N:kers  ab-dot-noun-trab  ;
+kesk.+N:kesk  ab-dot-noun-trab  ;
+kh.+N:kh  ab-dot-noun-trab  ;
 khra+N:khr  NOUN_KIRJA  ;
-kiint.oy.+Pcle:kiint.oy.  #  ;
-kiir.+Pcle:kiir.  #  ;
-kirjeenv.+Pcle:kirjeenv.  #  ;
-kirj.+Pcle:kirj.  #  ;
-kir.+Pcle:kir.  #  ;
-kj.+Pcle:kj.  #  ;
-kk.+Pcle:kk.  #  ;
+kiint.oy.+N:kiint.oy  ab-dot-noun-trab  ;
+kiir.+N:kiir  ab-dot-noun-trab  ;
+kir.+N:kir  ab-dot-noun-trab  ;
+kirj.+N:kirj  ab-dot-noun-trab  ;
+kirjeenv.+N:kirjeenv  ab-dot-noun-trab  ;
+kj.+N:kj  ab-dot-noun-trab  ;
+kk.+N:kk  ab-dot-noun-trab  ;
+kl.+N:kl  ab-dot-noun-trab  ;
 klo+N:klo  NOUN_TALO  ;
-kl.+Pcle:kl.  #  ;
-km/h+Pcle:km/h  #  ;
+km/h+N:km/h  ab-dot-noun-trab  ;
 kni+N:kn  NOUN_TYYLI  ;
-kok.+Pcle:kok.  #  ;
-Kok.+Pcle:Kok.  #  ;
-kom.kapt.+Pcle:kom.kapt.  #  ;
-komm.+Pcle:komm.  #  ;
-kom.+Pcle:kom.  #  ;
-kompp.+Pcle:kompp.  #  ;
-konst.+Pcle:konst.  #  ;
-ko.+Pcle:ko.  #  ;
-korpr.+Pcle:korpr.  #  ;
-kotital.op.+Pcle:kotital.op.  #  ;
-kotiteoll.op.+Pcle:kotiteoll.op.  #  ;
-k.+Pcle:k.  #  ;
-kp.+Pcle:kp.  #  ;
-krist.+Pcle:krist.  #  ;
-ks.+Pcle:ks.  #  ;
-kumpp.+Pcle:kumpp.  #  ;
-kuv.op.+Pcle:kuv.op.  #  ;
-kuv.+Pcle:kuv.  #  ;
-kv.+Pcle:kv.  #  ;
-ky.+Pcle:ky.  #  ;
-käsit.op.+Pcle:käsit.op.  #  ;
-lakit.+Pcle:lakit.  #  ;
-la+Pcle:la  #  ;
-lastent.op.+Pcle:lastent.op.  #  ;
-leht.+Pcle:leht.  #  ;
-liikuntak.+Pcle:liikuntak.  #  ;
-liikuntat.+Pcle:liikuntat.  #  ;
-lis.+Pcle:lis.  #  ;
-lkm.+Pcle:lkm.  #  ;
-lk.+Pcle:lk.  #  ;
-lkv.+Pcle:lkv.  #  ;
-lky.+Pcle:lky.  #  ;
-ll.+Pcle:ll.  #  ;
-lm.+Pcle:lm.  #  ;
-l.+Pcle:l.  #  ;
-ltd.+Pcle:ltd.  #  ;
-ltk.+Pcle:ltk.  #  ;
-luonnont.+Pcle:luonnont.  #  ;
-lut.+Pcle:lut.  #  ;
-luutn.+Pcle:luutn.  #  ;
-lv.+Pcle:lv.  #  ;
-lvv.+Pcle:lvv.  #  ;
-lyh.+Pcle:lyh.  #  ;
-läh.+Pcle:läh.  #  ;
-länt.+Pcle:länt.  #  ;
-lääket.+Pcle:lääket.  #  ;
-lääk.+Pcle:lääk.  #  ;
-maan.+Pcle:maan.  #  ;
-maat.+Pcle:maat.  #  ;
-maist.+Pcle:maist.  #  ;
-maj.+Pcle:maj.  #  ;
-maks.+Pcle:maks.  #  ;
-ma.+Pcle:ma.  #  ;
-ma+Pcle:ma  #  ;
-M.A.+Pcle:M.A.  #  ;
-matr.+Pcle:matr.  #  ;
-MBA.+Pcle:MBA.  #  ;
-merkon.+Pcle:merkon.  #  ;
-metsänhoit.+Pcle:metsänhoit.  #  ;
-metsät.+Pcle:metsät.  #  ;
-mhy.+Pcle:mhy.  #  ;
-miel.+Pcle:miel.  #  ;
-milj.+Pcle:milj.  #  ;
-min.+Pcle:min.  #  ;
-Miss+Pcle:Miss  #  ;
-mlk.+Pcle:mlk.  #  ;
-Mlle+Pcle:Mlle  #  ;
-ml.+Pcle:ml.  #  ;
-Mme+Pcle:Mme  #  ;
-mm.+Pcle:mm.  #  ;
-mm+Pcle:mm  #  ;
-mom.+Pcle:mom.  #  ;
-mot.+Pcle:mot.  #  ;
-mot+Pcle:mot  #  ;
-M.+Pcle:M.  #  ;
-mpm.+Pcle:mpm.  #  ;
-mpm+Pcle:mpm  #  ;
-mp.+Pcle:mp.  #  ;
-mpy.+Pcle:mpy.  #  ;
-mrd.+Pcle:mrd.  #  ;
-Mr.+Pcle:Mr.  #  ;
-Mr+Pcle:Mr  #  ;
-Mrs+Pcle:Mrs  #  ;
-M.Sc.+Pcle:M.Sc.  #  ;
-Ms+Pcle:Ms  #  ;
-msrk.+Pcle:msrk.  #  ;
-mt.+Pcle:mt.  #  ;
-mts.+Pcle:mts.  #  ;
-mus.op.+Pcle:mus.op.  #  ;
-mus.+Pcle:mus.  #  ;
-mv.+Pcle:mv.  #  ;
-mvs.+Pcle:mvs.  #  ;
-myöh.+Pcle:myöh.  #  ;
-NA% f.+Pcle:NA% f.  #  ;
-N.B.+Pcle:N.B.  #  ;
-neuv.+Pcle:neuv.  #  ;
-nid.+Pcle:nid.  #  ;
-nimim.+Pcle:nimim.  #  ;
-nim.+Pcle:nim.  #  ;
-nk.+Pcle:nk.  #  ;
-N.N.+Pcle:N.N.  #  ;
+ko.+N:ko  ab-dot-noun-trab  ;
+kok.+N:kok  ab-dot-noun-trab  ;
+kom.+N:kom  ab-dot-noun-trab  ;
+kom.kapt.+N:kom.kapt  ab-dot-noun-trab  ;
+komm.+N:komm  ab-dot-noun-trab  ;
+kompp.+N:kompp  ab-dot-noun-trab  ;
+konst.+N:konst  ab-dot-noun-trab  ;
+korpr.+N:korpr  ab-dot-noun-trab  ;
+kotital.op.+N:kotital.op  ab-dot-noun-trab  ;
+kotiteoll.op.+N:kotiteoll.op  ab-dot-noun-trab  ;
+kp.+N:kp  ab-dot-noun-trab  ;
+krist.+N:krist  ab-dot-noun-trab  ;
+ks.+N:ks  ab-dot-noun-trab  ;
+kumpp.+N:kumpp  ab-dot-noun-trab  ;
+kuv.+N:kuv  ab-dot-noun-trab  ;
+kuv.op.+N:kuv.op  ab-dot-noun-trab  ;
+kv.+N:kv  ab-dot-noun-trab  ;
+ky.+N:ky  ab-dot-noun-trab  ;
+käsit.op.+N:käsit.op  ab-dot-noun-trab  ;
+l.+N:l  ab-dot-noun-trab  ;
+la+N:la  ab-dot-noun-trab  ;
+lakit.+N:lakit  ab-dot-noun-trab  ;
+lastent.op.+N:lastent.op  ab-dot-noun-trab  ;
+leht.+N:leht  ab-dot-noun-trab  ;
+liikuntak.+N:liikuntak  ab-dot-noun-trab  ;
+liikuntat.+N:liikuntat  ab-dot-noun-trab  ;
+lis.+N:lis  ab-dot-noun-trab  ;
+lk.+N:lk  ab-dot-noun-trab  ;
+lkm.+N:lkm  ab-dot-noun-trab  ;
+lkv.+N:lkv  ab-dot-noun-trab  ;
+lky.+N:lky  ab-dot-noun-trab  ;
+ll.+N:ll  ab-dot-noun-trab  ;
+lm.+N:lm  ab-dot-noun-trab  ;
+ltd.+N:ltd  ab-dot-noun-trab  ;
+ltk.+N:ltk  ab-dot-noun-trab  ;
+luonnont.+N:luonnont  ab-dot-noun-trab  ;
+lut.+N:lut  ab-dot-noun-trab  ;
+luutn.+N:luutn  ab-dot-noun-trab  ;
+lv.+N:lv  ab-dot-noun-trab  ;
+lvv.+N:lvv  ab-dot-noun-trab  ;
+lyh.+N:lyh  ab-dot-noun-trab  ;
+läh.+N:läh  ab-dot-noun-trab  ;
+länt.+N:länt  ab-dot-noun-trab  ;
+lääk.+N:lääk  ab-dot-noun-trab  ;
+lääket.+N:lääket  ab-dot-noun-trab  ;
+ma+N:ma  ab-dot-noun-trab  ;
+ma.+N:ma  ab-dot-noun-trab  ;
+maan.+N:maan  ab-dot-noun-trab  ;
+maat.+N:maat  ab-dot-noun-trab  ;
+maist.+N:maist  ab-dot-noun-trab  ;
+maj.+N:maj  ab-dot-noun-trab  ;
+maks.+N:maks  ab-dot-noun-trab  ;
+matr.+N:matr  ab-dot-noun-trab  ;
+merkon.+N:merkon  ab-dot-noun-trab  ;
+metsänhoit.+N:metsänhoit  ab-dot-noun-trab  ;
+metsät.+N:metsät  ab-dot-noun-trab  ;
+mhy.+N:mhy  ab-dot-noun-trab  ;
+miel.+N:miel  ab-dot-noun-trab  ;
+milj.+N:milj  ab-dot-noun-trab  ;
+min.+N:min  ab-dot-noun-trab  ;
+ml.+N:ml  ab-dot-noun-trab  ;
+mlk.+N:mlk  ab-dot-noun-trab  ;
+mm+N:mm  ab-dot-noun-trab  ;
+mm.+N:mm  ab-dot-noun-trab  ;
+mom.+N:mom  ab-dot-noun-trab  ;
+mot+N:mot  ab-dot-noun-trab  ;
+mot.+N:mot  ab-dot-noun-trab  ;
+mp.+N:mp  ab-dot-noun-trab  ;
+mpm+N:mpm  ab-dot-noun-trab  ;
+mpm.+N:mpm  ab-dot-noun-trab  ;
+mpy.+N:mpy  ab-dot-noun-trab  ;
+mrd.+N:mrd  ab-dot-noun-trab  ;
+msrk.+N:msrk  ab-dot-noun-trab  ;
+mt.+N:mt  ab-dot-noun-trab  ;
+mts.+N:mts  ab-dot-noun-trab  ;
+mus.+N:mus  ab-dot-noun-trab  ;
+mus.op.+N:mus.op  ab-dot-noun-trab  ;
+mv.+N:mv  ab-dot-noun-trab  ;
+mvs.+N:mvs  ab-dot-noun-trab  ;
+myöh.+N:myöh  ab-dot-noun-trab  ;
 n%:o+N:n%:o  NOUN_RUIPELO  ;
-n.+Pcle:n.  #  ;
-ns.+Pcle:ns.  #  ;
-ns+Pcle:ns  #  ;
-nti+Pcle:nti  #  ;
-nyk.+Pcle:nyk.  #  ;
-oa.+Pcle:oa.  #  ;
-obs.+Pcle:obs.  #  ;
-obs+Pcle:obs  #  ;
-oh.+Pcle:oh.  #  ;
-oikeust.+Pcle:oikeust.  #  ;
-oik.+Pcle:oik.  #  ;
-ok.+Pcle:ok.  #  ;
-ok+Pcle:ok  #  ;
-om.+Pcle:om.  #  ;
-om.p.+Pcle:om.p.  #  ;
-opett.+Pcle:opett.  #  ;
-op.+Pcle:op.  #  ;
-opp.+Pcle:opp.  #  ;
-ork.+Pcle:ork.  #  ;
-ortod.+Pcle:ortod.  #  ;
-osk.+Pcle:osk.  #  ;
-o.s.+Pcle:o.s.  #  ;
-os.+Pcle:os.  #  ;
-oto.+Pcle:oto.  #  ;
-ovh.+Pcle:ovh.  #  ;
-oyj.+Pcle:oyj.  #  ;
-oy.+Pcle:oy.  #  ;
-oz.+Pcle:oz.  #  ;
-pa.+Pcle:pa.  #  ;
-par.+Pcle:par.  #  ;
-past.+Pcle:past.  #  ;
-patl.+Pcle:patl.  #  ;
-pat.+Pcle:pat.  #  ;
-pe+Pcle:pe  #  ;
-perj.+Pcle:perj.  #  ;
-per.+Pcle:per.  #  ;
-perusk.op.+Pcle:perusk.op.  #  ;
-Ph.D.+Pcle:Ph.D.  #  ;
-ph.+Pcle:ph.  #  ;
-pion.+Pcle:pion.  #  ;
-pit.+Pcle:pit.  #  ;
-pj.+Pcle:pj.  #  ;
+n.+N:n  ab-dot-noun-trab  ;
+neuv.+N:neuv  ab-dot-noun-trab  ;
+nid.+N:nid  ab-dot-noun-trab  ;
+nim.+N:nim  ab-dot-noun-trab  ;
+nimim.+N:nimim  ab-dot-noun-trab  ;
+nk.+N:nk  ab-dot-noun-trab  ;
+ns+N:ns  ab-dot-noun-trab  ;
+ns.+N:ns  ab-dot-noun-trab  ;
+nti+N:nti  ab-dot-noun-trab  ;
+nyk.+N:nyk  ab-dot-noun-trab  ;
+o.s.+N:o.s  ab-dot-noun-trab  ;
+oa.+N:oa  ab-dot-noun-trab  ;
+obs+N:obs  ab-dot-noun-trab  ;
+obs.+N:obs  ab-dot-noun-trab  ;
+oh.+N:oh  ab-dot-noun-trab  ;
+oik.+N:oik  ab-dot-noun-trab  ;
+oikeust.+N:oikeust  ab-dot-noun-trab  ;
+ok+N:ok  ab-dot-noun-trab  ;
+ok.+N:ok  ab-dot-noun-trab  ;
+om.+N:om  ab-dot-noun-trab  ;
+om.p.+N:om.p  ab-dot-noun-trab  ;
+op.+N:op  ab-dot-noun-trab  ;
+opett.+N:opett  ab-dot-noun-trab  ;
+opp.+N:opp  ab-dot-noun-trab  ;
+ork.+N:ork  ab-dot-noun-trab  ;
+ortod.+N:ortod  ab-dot-noun-trab  ;
+os.+N:os  ab-dot-noun-trab  ;
+osk.+N:osk  ab-dot-noun-trab  ;
+oto.+N:oto  ab-dot-noun-trab  ;
+ovh.+N:ovh  ab-dot-noun-trab  ;
+oy.+N:oy  ab-dot-noun-trab  ;
+oyj.+N:oyj  ab-dot-noun-trab  ;
+oz.+N:oz  ab-dot-noun-trab  ;
+p.+N:p  ab-dot-noun-trab  ;
+p.m.+N:p.m  ab-dot-noun-trab  ;
+pa.+N:pa  ab-dot-noun-trab  ;
+par.+N:par  ab-dot-noun-trab  ;
+past.+N:past  ab-dot-noun-trab  ;
+pat.+N:pat  ab-dot-noun-trab  ;
+patl.+N:patl  ab-dot-noun-trab  ;
+pe+N:pe  ab-dot-noun-trab  ;
+per.+N:per  ab-dot-noun-trab  ;
+perj.+N:perj  ab-dot-noun-trab  ;
+perusk.op.+N:perusk.op  ab-dot-noun-trab  ;
+ph.+N:ph  ab-dot-noun-trab  ;
+pion.+N:pion  ab-dot-noun-trab  ;
+pit.+N:pit  ab-dot-noun-trab  ;
+pj.+N:pj  ab-dot-noun-trab  ;
 pjsto+N:pjsto  NOUN_TALO  ;
-pk.+Pcle:pk.  #  ;
-pl.+Pcle:pl.  #  ;
-p.m.+Pcle:p.m.  #  ;
-pm.+Pcle:pm.  #  ;
-pnä+Pcle:pnä  #  ;
-pohj.+Pcle:pohj.  #  ;
-po.+Pcle:po.  #  ;
-p.+Pcle:p.  #  ;
-pp.+Pcle:pp.  #  ;
-prik.+Pcle:prik.  #  ;
-prof.+Pcle:prof.  #  ;
-prok.+Pcle:prok.  #  ;
-prov.+Pcle:prov.  #  ;
-ps.+Pcle:ps.  #  ;
-P.S.+Pcle:P.S.  #  ;
-psta+Pcle:psta  #  ;
+pk.+N:pk  ab-dot-noun-trab  ;
+pl.+N:pl  ab-dot-noun-trab  ;
+pm.+N:pm  ab-dot-noun-trab  ;
+pnä+N:pnä  ab-dot-noun-trab  ;
+po.+N:po  ab-dot-noun-trab  ;
+pohj.+N:pohj  ab-dot-noun-trab  ;
+pp.+N:pp  ab-dot-noun-trab  ;
+prik.+N:prik  ab-dot-noun-trab  ;
+prof.+N:prof  ab-dot-noun-trab  ;
+prok.+N:prok  ab-dot-noun-trab  ;
+prov.+N:prov  ab-dot-noun-trab  ;
+ps.+N:ps  ab-dot-noun-trab  ;
+psta+N:psta  ab-dot-noun-trab  ;
 psto+N:psto  NOUN_TALO  ;
-psykol.+Pcle:psykol.  #  ;
-ptk.+Pcle:ptk.  #  ;
+psykol.+N:psykol  ab-dot-noun-trab  ;
+ptk.+N:ptk  ab-dot-noun-trab  ;
 ptri+N:ptr  NOUN_KEHVELI  ;
-puh.joht.+Pcle:puh.joht.  #  ;
-puh.+Pcle:puh.  #  ;
-/+Punct:/  SYM_$  ;
-&+Punct:&  SYM_§  ;
-++Punct:+  SYM_$  ;
-pursim.+Pcle:pursim.  #  ;
-puutarhaop.+Pcle:puutarhaop.  #  ;
-pvm.+Pcle:pvm.  #  ;
-pv.+Pcle:pv.  #  ;
-pääll.+Pcle:pääll.  #  ;
-rak.mest.+Pcle:rak.mest.  #  ;
-rak.+Pcle:rak.  #  ;
-reht.+Pcle:reht.  #  ;
-rek.+Pcle:rek.  #  ;
-Re.+Pcle:Re.  #  ;
-res.+Pcle:res.  #  ;
-rkm.+Pcle:rkm.  #  ;
-RN%:o+N:RN%:o  NOUN_RUIPELO  ;
-rov.+Pcle:rov.  #  ;
-r.+Pcle:r.  #  ;
-rp.+Pcle:rp.  #  ;
-Rs.+Pcle:Rs.  #  ;
-R.S.V.P.+Pcle:R.S.V.P.  #  ;
-rtg.+Pcle:rtg.  #  ;
+puh.+N:puh  ab-dot-noun-trab  ;
+puh.joht.+N:puh.joht  ab-dot-noun-trab  ;
+pursim.+N:pursim  ab-dot-noun-trab  ;
+puutarhaop.+N:puutarhaop  ab-dot-noun-trab  ;
+pv.+N:pv  ab-dot-noun-trab  ;
+pvm.+N:pvm  ab-dot-noun-trab  ;
+pääll.+N:pääll  ab-dot-noun-trab  ;
+r.+N:r  ab-dot-noun-trab  ;
+rak.+N:rak  ab-dot-noun-trab  ;
+rak.mest.+N:rak.mest  ab-dot-noun-trab  ;
+reht.+N:reht  ab-dot-noun-trab  ;
+rek.+N:rek  ab-dot-noun-trab  ;
+res.+N:res  ab-dot-noun-trab  ;
+rkm.+N:rkm  ab-dot-noun-trab  ;
+rov.+N:rov  ab-dot-noun-trab  ;
+rp.+N:rp  ab-dot-noun-trab  ;
+rtg.+N:rtg  ab-dot-noun-trab  ;
 rva+N:rv  NOUN_VOIMA  ;
-rykm.+Pcle:rykm.  #  ;
-ry.+Pcle:ry.  #  ;
-sacr.% min.% kand.+Pcle:sacr.% min.% kand.  #  ;
-sairaanh.op.+Pcle:sairaanh.op.  #  ;
-sair.hoit.+Pcle:sair.hoit.  #  ;
-s%:a+Pcle:s%:a  #  ;
-s.% d.+Pcle:s.% d.  #  ;
-s.d.+Pcle:s.d.  #  ;
-sd.+Pcle:sd.  #  ;
-sh.+Pcle:sh.  #  ;
-S.H.T.+Pcle:S.H.T.  #  ;
-sid.+Pcle:sid.  #  ;
-siht.+Pcle:siht.  #  ;
-sit.+Pcle:sit.  #  ;
-sl.+Pcle:sl.  #  ;
+ry.+N:ry  ab-dot-noun-trab  ;
+rykm.+N:rykm  ab-dot-noun-trab  ;
+s%:a+N:s%:a  ab-dot-noun-trab  ;
+s.% d.+N:s.% d.    ab-dot-noun-trab  ;
+s.+N:s  ab-dot-noun-trab  ;
+s.d.+N:s.d  ab-dot-noun-trab  ;
+s.v.+N:s.v  ab-dot-noun-trab  ;
+sacr.% min.% kand.+N:sacr.% min.% kand. ab-dot-noun-trab  ;
+sair.hoit.+N:sair.hoit  ab-dot-noun-trab  ;
+sairaanh.op.+N:sairaanh.op  ab-dot-noun-trab  ;
+sd.+N:sd  ab-dot-noun-trab  ;
+sh.+N:sh  ab-dot-noun-trab  ;
+sid.+N:sid  ab-dot-noun-trab  ;
+siht.+N:siht  ab-dot-noun-trab  ;
+sit.+N:sit  ab-dot-noun-trab  ;
+sl.+N:sl  ab-dot-noun-trab  ;
 snro+N:snro  NOUN_RUIPELO  ;
-so.+Pcle:so.  #  ;
-sos.dem.+Pcle:sos.dem.  #  ;
-So.% Sh.+Pcle:So.% Sh.  #  ;
-sos.+Pcle:sos.  #  ;
-sotat.+Pcle:sotat.  #  ;
-sot.+Pcle:sot.  #  ;
-sov.+Pcle:sov.  #  ;
-s.+Pcle:s.  #  ;
-sp.+Pcle:sp.  #  ;
-srk.+Pcle:srk.  #  ;
+so.+N:so  ab-dot-noun-trab  ;
+sos.+N:sos  ab-dot-noun-trab  ;
+sos.dem.+N:sos.dem  ab-dot-noun-trab  ;
+sot.+N:sot  ab-dot-noun-trab  ;
+sotat.+N:sotat  ab-dot-noun-trab  ;
+sov.+N:sov  ab-dot-noun-trab  ;
+sp.+N:sp  ab-dot-noun-trab  ;
+sr.+N:sr  ab-dot-noun-trab  ;
+srk.+N:srk  ab-dot-noun-trab  ;
 srnro+N:srnro  NOUN_RUIPELO  ;
-sr.+Pcle:sr.  #  ;
-stm.+Pcle:stm.  #  ;
-st.+Pcle:st.  #  ;
-sunn.+Pcle:sunn.  #  ;
-suom.+Pcle:suom.  #  ;
-su+Pcle:su  #  ;
-svh.+Pcle:svh.  #  ;
-s.v.+Pcle:s.v.  #  ;
-synt.+Pcle:synt.  #  ;
-sähköp.+Pcle:sähköp.  #  ;
-säv.+Pcle:säv.  #  ;
-tait.+Pcle:tait.  #  ;
-tal.hoit.+Pcle:tal.hoit.  #  ;
-taloust.+Pcle:taloust.  #  ;
-tanssit.+Pcle:tanssit.  #  ;
-tark.+Pcle:tark.  #  ;
-tb.+Pcle:tb.  #  ;
-teatt.+Pcle:teatt.  #  ;
-tekn.+Pcle:tekn.  #  ;
-teoll.+Pcle:teoll.  #  ;
-teol.+Pcle:teol.  #  ;
-terveydenh.+Pcle:terveydenh.  #  ;
-terveystiet.+Pcle:terveystiet.  #  ;
-th.+Pcle:th.  #  ;
-tiist.+Pcle:tiist.  #  ;
-til.+Pcle:til.  #  ;
-ti+Pcle:ti  #  ;
-tj.+Pcle:tj.  #  ;
-tjs.+Pcle:tjs.  #  ;
-tjs+Pcle:tjs  #  ;
-tjsp+Pcle:tjsp  #  ;
-tk.+Pcle:tk.  #  ;
-Tku+N+Prop+Sem/Geo:Tku  PROPN_ASU  ;
-tlk.+Pcle:tlk.  #  ;
-tmi+Pcle:tmi  #  ;
-tm.+Pcle:tm.  #  ;
-tms.+Pcle:tms.  #  ;
-tms+Pcle:tms  #  ;
-tmv.+Pcle:tmv.  #  ;
-tmv+Pcle:tmv  #  ;
-toht.+Pcle:toht.  #  ;
-toim.apul.+Pcle:toim.apul.  #  ;
-toim.joht.+Pcle:toim.joht.  #  ;
-toim.+Pcle:toim.  #  ;
-toim.siht.+Pcle:toim.siht.  #  ;
-to+Pcle:to  #  ;
-torst.+Pcle:torst.  #  ;
-t.+Pcle:t.  #  ;
-tp.+Pcle:tp.  #  ;
-Tre+N+Prop+Sem/Geo:Tre  PROPN_PISTE  ;
-tri+Pcle:tri.  #  ;
-ts.+Pcle:ts.  #  ;
+st.+N:st  ab-dot-noun-trab  ;
+stm.+N:stm  ab-dot-noun-trab  ;
+su+N:su  ab-dot-noun-trab  ;
+sunn.+N:sunn  ab-dot-noun-trab  ;
+suom.+N:suom  ab-dot-noun-trab  ;
+svh.+N:svh  ab-dot-noun-trab  ;
+synt.+N:synt  ab-dot-noun-trab  ;
+sähköp.+N:sähköp  ab-dot-noun-trab  ;
+säv.+N:säv  ab-dot-noun-trab  ;
+t.+N:t  ab-dot-noun-trab  ;
+tait.+N:tait  ab-dot-noun-trab  ;
+tal.hoit.+N:tal.hoit  ab-dot-noun-trab  ;
+taloust.+N:taloust  ab-dot-noun-trab  ;
+tanssit.+N:tanssit  ab-dot-noun-trab  ;
+tark.+N:tark  ab-dot-noun-trab  ;
+tb.+N:tb  ab-dot-noun-trab  ;
+teatt.+N:teatt  ab-dot-noun-trab  ;
+tekn.+N:tekn  ab-dot-noun-trab  ;
+teol.+N:teol  ab-dot-noun-trab  ;
+teoll.+N:teoll  ab-dot-noun-trab  ;
+terveydenh.+N:terveydenh  ab-dot-noun-trab  ;
+terveystiet.+N:terveystiet  ab-dot-noun-trab  ;
+th.+N:th  ab-dot-noun-trab  ;
+ti+N:ti  ab-dot-noun-trab  ;
+tiist.+N:tiist  ab-dot-noun-trab  ;
+til.+N:til  ab-dot-noun-trab  ;
+tj.+N:tj  ab-dot-noun-trab  ;
+tjs+N:tjs  ab-dot-noun-trab  ;
+tjs.+N:tjs  ab-dot-noun-trab  ;
+tjsp+N:tjsp  ab-dot-noun-trab  ;
+tk.+N:tk  ab-dot-noun-trab  ;
+tlk.+N:tlk  ab-dot-noun-trab  ;
+tm.+N:tm  ab-dot-noun-trab  ;
+tmi+N:tmi  ab-dot-noun-trab  ;
+tms+N:tms  ab-dot-noun-trab  ;
+tms.+N:tms  ab-dot-noun-trab  ;
+tmv+N:tmv  ab-dot-noun-trab  ;
+tmv.+N:tmv  ab-dot-noun-trab  ;
+to+N:to  ab-dot-noun-trab  ;
+toht.+N:toht  ab-dot-noun-trab  ;
+toim.+N:toim  ab-dot-noun-trab  ;
+toim.apul.+N:toim.apul  ab-dot-noun-trab  ;
+toim.joht.+N:toim.joht  ab-dot-noun-trab  ;
+toim.siht.+N:toim.siht  ab-dot-noun-trab  ;
+torst.+N:torst  ab-dot-noun-trab  ;
+tp.+N:tp  ab-dot-noun-trab  ;
+ts.+N:ts  ab-dot-noun-trab  ;
 tsto+N:tsto  NOUN_TALO  ;
-tuom.+Pcle:tuom.  #  ;
-ups.+Pcle:ups.  #  ;
-urk.+Pcle:urk.  #  ;
-us.+Pcle:us.  #  ;
-Vaiht.+Pcle:Vaiht.  #  ;
-valtiot.+Pcle:valtiot.  #  ;
-valt.+Pcle:valt.  #  ;
-va.+Pcle:va.  #  ;
-varan.+Pcle:varan.  #  ;
-varat.+Pcle:varat.  #  ;
-var.+Pcle:var.  #  ;
-vas.+Pcle:vas.  #  ;
-Vas.+Pcle:Vas.  #  ;
-vast.+Pcle:vast.  #  ;
-vht+Pcle:vht  #  ;
-vihr.+Pcle:vihr.  #  ;
-Vihr.+Pcle:Vihr.  #  ;
-virk.+Pcle:virk.  #  ;
-vk.+Pcle:vk.  #  ;
-vm.+Pcle:vm.  #  ;
-VNp.+Pcle:VNp.  #  ;
-voim.op.+Pcle:voim.op.  #  ;
-V.O.+Pcle:V.O.  #  ;
-v.+Pcle:v.  #  ;
-vpj.+Pcle:vpj.  #  ;
-Vp.+Pcle:Vp.  #  ;
-vrt.+Pcle:vrt.  #  ;
-vsk.+Pcle:vsk.  #  ;
-V.S.O.+Pcle:V.S.O.  #  ;
-V.S.O.P.+Pcle:V.S.O.P.  #  ;
-vs.+Pcle:vs.  #  ;
-vs+Pcle:vs  #  ;
-vt.+Pcle:vt.  #  ;
-vv.+Pcle:vv.  #  ;
-vänr.+Pcle:vänr.  #  ;
-vääp.+Pcle:vääp.  #  ;
-ye.ups.+Pcle:ye.ups.  #  ;
-yhd.+Pcle:yhd.  #  ;
-yhteiskuntat.+Pcle:yhteiskuntat.  #  ;
-yht.+Pcle:yht.  #  ;
-ylik.+Pcle:ylik.  #  ;
-ylil.+Pcle:ylil.  #  ;
-ylimatr.+Pcle:ylimatr.  #  ;
-ylim.+Pcle:ylim.  #  ;
-yliop.+Pcle:yliop.  #  ;
-yliopp.+Pcle:yliopp.  #  ;
-ylip.+Pcle:ylip.  #  ;
-yliv.+Pcle:yliv.  #  ;
-yl.+Pcle:yl.  #  ;
-ym.+Pcle:ym.  #  ;
-ym+Pcle:ym  #  ;
-yms.+Pcle:yms.  #  ;
-yms+Pcle:yms  #  ;
-yo.merk.+Pcle:yo.merk.  #  ;
-yo.+Pcle:yo.  #  ;
-yp.+Pcle:yp.  #  ;
+tuom.+N:tuom  ab-dot-noun-trab  ;
+ups.+N:ups  ab-dot-noun-trab  ;
+urk.+N:urk  ab-dot-noun-trab  ;
+us.+N:us  ab-dot-noun-trab  ;
+v.+N:v  ab-dot-noun-trab  ;
+va.+N:va  ab-dot-noun-trab  ;
+valt.+N:valt  ab-dot-noun-trab  ;
+valtiot.+N:valtiot  ab-dot-noun-trab  ;
+var.+N:var  ab-dot-noun-trab  ;
+varan.+N:varan  ab-dot-noun-trab  ;
+varat.+N:varat  ab-dot-noun-trab  ;
+vas.+N:vas  ab-dot-noun-trab  ;
+vast.+N:vast  ab-dot-noun-trab  ;
+vht+N:vht  ab-dot-noun-trab  ;
+vihr.+N:vihr  ab-dot-noun-trab  ;
+virk.+N:virk  ab-dot-noun-trab  ;
+vk.+N:vk  ab-dot-noun-trab  ;
+vm.+N:vm  ab-dot-noun-trab  ;
+voim.op.+N:voim.op  ab-dot-noun-trab  ;
+vpj.+N:vpj  ab-dot-noun-trab  ;
+vrt.+N:vrt  ab-dot-noun-trab  ;
+vs+N:vs  ab-dot-noun-trab  ;
+vs.+N:vs  ab-dot-noun-trab  ;
+vsk.+N:vsk  ab-dot-noun-trab  ;
+vt.+N:vt  ab-dot-noun-trab  ;
+vv.+N:vv  ab-dot-noun-trab  ;
+vänr.+N:vänr  ab-dot-noun-trab  ;
+vääp.+N:vääp  ab-dot-noun-trab  ;
+ye.ups.+N:ye.ups  ab-dot-noun-trab  ;
+yhd.+N:yhd  ab-dot-noun-trab  ;
+yht.+N:yht  ab-dot-noun-trab  ;
+yhteiskuntat.+N:yhteiskuntat  ab-dot-noun-trab  ;
+yl.+N:yl  ab-dot-noun-trab  ;
+ylik.+N:ylik  ab-dot-noun-trab  ;
+ylil.+N:ylil  ab-dot-noun-trab  ;
+ylim.+N:ylim  ab-dot-noun-trab  ;
+ylimatr.+N:ylimatr  ab-dot-noun-trab  ;
+yliop.+N:yliop  ab-dot-noun-trab  ;
+yliopp.+N:yliopp  ab-dot-noun-trab  ;
+ylip.+N:ylip  ab-dot-noun-trab  ;
+yliv.+N:yliv  ab-dot-noun-trab  ;
+ym+N:ym  ab-dot-noun-trab  ;
+ym.+N:ym  ab-dot-noun-trab  ;
+yms+N:yms  ab-dot-noun-trab  ;
+yms.+N:yms  ab-dot-noun-trab  ;
+yo.+N:yo  ab-dot-noun-trab  ;
+yo.merk.+N:yo.merk  ab-dot-noun-trab  ;
+yp.+N:yp  ab-dot-noun-trab  ;
 yrnro+N:yrnro  NOUN_RUIPELO  ;
-yv.+Pcle:yv.  #  ;
-
-
-
+yv.+N:yv  ab-dot-noun-trab  ;
