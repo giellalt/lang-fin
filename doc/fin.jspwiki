@@ -55,6 +55,7 @@ Have a look at these:
  * {{+Use/sub	            }}: XXX check this tag!
  * {{+s			            }}: XXX check this tag!
 
+ * __+CLBfinal__  Sentence final abbreviated expression ending in full stop, so that the full stop is ambiguous
 
 
 
@@ -891,13 +892,74 @@ __Abbreviations examples:__
 
 
 
-!!!Continuation lexicons for abbreviations
+!!!Continuation lexicons for Finnish abbreviations
 
 !!Lexica for adding tags and periods
 
 !!The sublexica
 
 !Continuation lexicons for abbrs both with and witout final period
+
+
+
+ * __LEXICON ab-noun   __
+
+ * __LEXICON ab-adj   __
+
+ * __LEXICON ab-adv   __
+
+ * __LEXICON ab-num   __
+
+!Lexicons without final period
+
+ * __LEXICON ab-nodot-noun   __  The bulk
+
+ * __LEXICON ab-nodot-adj   __
+
+ * __LEXICON ab-nodot-adv   __
+
+ * __LEXICON ab-nodot-num   __
+
+!Lexicons with final period
+
+ * __LEXICON ab-dot-noun   __  This is the lexicon for abbrs that must have a period.
+
+ * __LEXICON ab-dot-adj   __  This is the lexicon for abbrs that must have a period.
+
+ * __LEXICON ab-dot-adv   __  This is the lexicon for abbrs that must have a period.
+
+ * __LEXICON ab-dot-num   __  This is the lexicon for abbrs that must have a period.
+
+ * __LEXICON ab-dot-cc   __
+
+
+
+
+
+ * __LEXICON ab-dot-verb   __
+
+ * __LEXICON ab-nodot-verb   __
+
+
+ * __LEXICON ab-dot-IVprfprc   __
+
+
+ * __LEXICON nodot-attrnomaccgen-infl   __
+
+ * __LEXICON nodot-attr-infl   __
+
+ * __LEXICON nodot-nomaccgen-infl   __
+
+
+ * __LEXICON dot-attrnomaccgen-infl   __
+
+ * __LEXICON dot-attr   __
+
+ * __LEXICON dot-nomaccgen-infl   __
+
+
+ * __LEXICON DOT   __ - Adds the dot to dotted abbreviations.
+
 
  !!!Acronym classification
  Acronyms are shortenings that inflect. They all have two inflection

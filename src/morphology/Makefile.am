@@ -24,7 +24,7 @@ GT_LEXC_ROOT=$(srcdir)/root.lexc
 # Set this to the names of all regular lexc source files:
 GT_LEXC_SRCS_L1_L2=\
 			 compounding.lexc \
-			 stems/abbreviations.lexc \
+			 stems/fin-abbreviations.lexc \
 			 stems/fin-acronyms.lexc \
 			 stems/adjectives.lexc \
 			 stems/adverbs.lexc \
@@ -77,6 +77,7 @@ GT_LEXC_L2_SRCS=\
 # Set this to the names of all generated lexc files, if any
 # We ignore using generated_files/punctuation.lexc for now.
 GENERATED_LEXC_SRCS=generated_files/smi-digits.lexc \
+                    generated_files/smi-abbreviations.lexc \
                     generated_files/arabic_roman_digits.lexc \
                     generated_files/smi-acronyms.lexc \
                     generated_files/symbols.lexc
@@ -102,6 +103,23 @@ GT_DISTRO_SRCS=
 ### gle/ for an example of how this is used.
 
 GIELLA_LOCAL_TARGETS=
+
+generated_files/smi-abbreviations.lexc: \
+			$(GIELLA_SHARED)/smi/src/morphology/stems/smi-abbreviations.lexc
+	$(AM_V_at)$(MKDIR_P) generated_files
+	$(AM_V_GEN)cp -f $< $@
+
+generated_files/smi-$(GTLANG)-abbreviations.lexc: \
+		generated_files/smi-abbreviations.lexc \
+		$(srcdir)/stems/$(GTLANG)-abbreviations.lexc
+	$(AM_V_GEN)rm -f $@ && \
+	cp -f $(srcdir)/stems/$(GTLANG)-abbreviations.lexc $@ && \
+	echo "" >> $@ && \
+	echo "! <--- Dump from SMI -->" >> $@ && \
+	echo "" >> $@ && \
+	cat $< >> $@
+
+
 
 generated_files/%.lexc: \
 			$(GIELLA_SHARED)/smi/src/morphology/stems/%.lexc
