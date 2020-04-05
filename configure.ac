@@ -23,8 +23,8 @@
 # third is email address for bug reports
 # fourth is name of packages made by make dist, excluding .tar.gz
 # fifth is the project web address
-AC_INIT([Giella fin], [20120821], [flammie@iki.fi], [giella-fin],
-        [http://code.google.com/p/omorfi])
+AC_INIT([Giella fin], [0.1], [feedback@divvun.no], [giella-fin],
+        [http://divvun.no])
 # AC_REVISION is used to get SVN revision into bug reports
 AC_REVISION([$Revision$])
 # These configuration dirs hide some extra cruft
@@ -108,10 +108,6 @@ AM_CONDITIONAL([WANT_ALT_ORTH_SPELLERS], [ true ])
 # that the default system doesn't cut it. In those cases, change the value
 # below from 'true' to 'false':
 AM_CONDITIONAL([DEFAULT_CASE_HANDLING], [ true ])
-# Also, some languages use multiple writing systems, where at least one of them
-# has no case distinction at all. List all writing systems without case
-# distinctions in the variable below, space separated:
-AC_SUBST([WS_WITH_NO_CASE], [""])
 
 # Specify the tags for all dialects in this variable, leave it empty if you do
 # NOT support dialectal variant fst's. Use upper case, separate with space.
