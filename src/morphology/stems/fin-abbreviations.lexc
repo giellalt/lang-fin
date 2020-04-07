@@ -1,3 +1,17 @@
+! Divvun & Giellatekno - open source grammars for Sámi and other languages
+! Copyright © 2000-2010 The University of Tromsø & the Norwegian Sámi Parliament
+! http://giellatekno.uit.no & http://divvun.no
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version. The GNU General Public License
+! is found at http://www.gnu.org/licenses/gpl.html. It is
+! also available in the file $GTHOME/LICENSE.txt.
+!
+! Other licensing options are available upon request, please contact
+! giellatekno@uit.no or feedback@divvun.no
+
 ! ===================================================
 !! !!!Continuation lexicons for Finnish abbreviations
 ! ===================================================
@@ -22,6 +36,11 @@ LEXICON ITRAB
 alv.+N:alv.  ab-dot-noun-itrab  ;
 a.m.+N:a.m.  ab-dot-noun-itrab  ;
 anon.+N:anon.  ab-dot-noun-itrab  ;
+eKr+N:eKr  ab-noun-itrab ;
+jKr+N:jKr  ab-noun-itrab ;
+eaa+N:eaa  ab-noun-itrab ;
+jaa+N:jaa  ab-noun-itrab ;
+
 
 LEXICON TRNUMAB 
 n%:ro+N:n%:ro   ab-dot-noun-trnumab  ;
@@ -31,13 +50,11 @@ krnro+N:krnro  ab-dot-noun-trnumab  ;
 LEXICON TRAB 
 
 
-Ab+N:Ab  ab-dot-noun-trab  ;
 B.A.+N:B.A  ab-dot-noun-trab  ;
 B.S.+N:B.S  ab-dot-noun-trab  ;
 B.Sc.+N:B.Sc  ab-dot-noun-trab  ;
 Co.+N:Co  ab-dot-noun-trab  ;
 Corp.+N:Corp  ab-dot-noun-trab  ;
-Dr.+N:Dr  ab-dot-noun-trab  ;
 GTi+N:GTi  ab-dot-noun-trab  ;
 Gt+N:Gt  ab-dot-noun-trab  ;
 H.V.+N:H.V  ab-dot-noun-trab  ;
@@ -58,11 +75,8 @@ Mr.+N:Mr  ab-dot-noun-trab  ;
 Mrs+N:Mrs  ab-dot-noun-trab  ;
 Ms+N:Ms  ab-dot-noun-trab  ;
 MyPa+N:MyPa   ab-nodot-noun-itrab   ; !!= * {{@CODE@}}+N: Myllykosken Pallo
-N.B.+N:N.B  ab-dot-noun-trab  ;
-N.N.+N:N.N  ab-dot-noun-trab  ;
 NA% f.+N:NA% f.    ab-dot-noun-trab  ;
 P.S.+N:P.S  ab-dot-noun-trab  ;
-Ph.D.+N:Ph.D  ab-dot-noun-trab  ;
 R.S.V.P.+N:R.S.V.P  ab-dot-noun-trab  ;
 RN%:o+N:RN%:o  NOUN_RUIPELO  ;
 Re.+N:Re  ab-dot-noun-trab  ;
@@ -96,11 +110,9 @@ apul.+N:apul  ab-dot-noun-trab  ;
 apul.prof.+N:apul.prof  ab-dot-noun-trab  ;
 ark.+N:ark  ab-dot-noun-trab  ;
 arkkit.+N:arkkit  ab-dot-noun-trab  ;
-art.+N:art  ab-dot-noun-trab  ;
 arv.+N:arv  ab-dot-noun-trab  ;
 as.+N:as  ab-dot-noun-trab  ;
 as.oy.+N:as.oy  ab-dot-noun-trab  ;
-ass.+N:ass  ab-dot-noun-trab  ;
 assist.+N:assist  ab-dot-noun-trab  ;
 at+N:at  ab-dot-noun-trab  ;
 au.+N:au  ab-dot-noun-trab  ;
@@ -109,11 +121,6 @@ ay.+N:ay  ab-dot-noun-trab  ;
 bar+N:bar  ab-dot-noun-trab  ;
 br.+N:br  ab-dot-noun-trab  ;
 c%:a+N:c%:a  ab-dot-noun-trab  ;
-c/o+N:c/o  ab-dot-noun-trab  ;
-ca+N:ca  ab-dot-noun-trab  ;
-cf.+N:cf  ab-dot-noun-trab  ;
-dem.+N:dem  ab-dot-noun-trab  ;
-dipl.+N:dipl  ab-dot-noun-trab  ;
 dipl.arkkit.+N:dipl.arkkit  ab-dot-noun-trab  ;
 dipl.ekon.+N:dipl.ekon  ab-dot-noun-trab  ;
 dipl.ins.+N:dipl.ins  ab-dot-noun-trab  ;
@@ -122,9 +129,7 @@ dipl.kirjeenv.+N:dipl.kirjeenv  ab-dot-noun-trab  ;
 dipl.kosm.+N:dipl.kosm  ab-dot-noun-trab  ;
 dipl.urk.+N:dipl.urk  ab-dot-noun-trab  ;
 dir.% cant.+N:dir.% cant  ab-dot-noun-trab  ;
-div.+N:div  ab-dot-noun-trab  ;
 dnro+N:dnro  NOUN_RUIPELO  ;
-dos.+N:dos  ab-dot-noun-trab  ;
 e.+N:e  ab-dot-noun-trab  ;
 e.g.+N:e.g  ab-dot-noun-trab  ;
 eKr+N:eKr  ab-dot-noun-trab  ;
@@ -151,13 +156,9 @@ esik.+N:esik  ab-dot-noun-trab  ;
 esim+N:esim  ab-dot-noun-trab  ;
 esim.+N:esim  ab-dot-noun-trab  ;
 esitt.+N:esitt  ab-dot-noun-trab  ;
-est.+N:est  ab-dot-noun-trab  ;
 et% al.+N:et% al  ab-dot-noun-trab  ;
 et.+N:et  ab-dot-noun-trab  ;
-etc+N:etc  ab-dot-noun-trab  ;
-etc.+N:etc  ab-dot-noun-trab  ;
 ev.+N:ev  ab-dot-noun-trab  ;
-ev.lut.+N:ev.lut  ab-dot-noun-trab  ;
 ev.luutn.+N:ev.luutn  ab-dot-noun-trab  ;
 evp.+N:evp  ab-dot-noun-trab  ;
 f.+N:f  ab-dot-noun-trab  ;
@@ -178,10 +179,7 @@ hsto+N:hsto  NOUN_TALO  ;
 hum.+N:hum  ab-dot-noun-trab  ;
 huom+N:huom  ab-dot-noun-trab  ;
 huom.+N:huom  ab-dot-noun-trab  ;
-i.e.+N:i.e  ab-dot-noun-trab  ;
 i.v.+N:i.v  ab-dot-noun-trab  ;
-ib.+N:ib  ab-dot-noun-trab  ;
-ibid.+N:ibid  ab-dot-noun-trab  ;
 id.+N:id  ab-dot-noun-trab  ;
 ilm.+N:ilm  ab-dot-noun-trab  ;
 in+N:in  ab-dot-noun-trab  ;
@@ -217,7 +215,6 @@ kand.+N:kand  ab-dot-noun-trab  ;
 kansaned.+N:kansaned  ab-dot-noun-trab  ;
 kantt.+N:kantt  ab-dot-noun-trab  ;
 kappal.+N:kappal  ab-dot-noun-trab  ;
-kapt.+N:kapt  ab-dot-noun-trab  ;
 kapt.luutn.+N:kapt.luutn  ab-dot-noun-trab  ;
 kasvatust.+N:kasvatust  ab-dot-noun-trab  ;
 kat.+N:kat  ab-dot-noun-trab  ;
@@ -240,7 +237,6 @@ kirj.+N:kirj  ab-dot-noun-trab  ;
 kirjeenv.+N:kirjeenv  ab-dot-noun-trab  ;
 kj.+N:kj  ab-dot-noun-trab  ;
 kk.+N:kk  ab-dot-noun-trab  ;
-kl.+N:kl  ab-dot-noun-trab  ;
 klo+N:klo  NOUN_TALO  ;
 km/h+N:km/h  ab-dot-noun-trab  ;
 kni+N:kn  NOUN_TYYLI  ;
@@ -264,7 +260,7 @@ kv.+N:kv  ab-dot-noun-trab  ;
 ky.+N:ky  ab-dot-noun-trab  ;
 käsit.op.+N:käsit.op  ab-dot-noun-trab  ;
 l.+N:l  ab-dot-noun-trab  ;
-la+N:la  ab-dot-noun-trab  ;
+dola+N:la  ab-dot-noun-trab  ;
 lakit.+N:lakit  ab-dot-noun-trab  ;
 lastent.op.+N:lastent.op  ab-dot-noun-trab  ;
 leht.+N:leht  ab-dot-noun-trab  ;
@@ -277,6 +273,7 @@ lkv.+N:lkv  ab-dot-noun-trab  ;
 lky.+N:lky  ab-dot-noun-trab  ;
 ll.+N:ll  ab-dot-noun-trab  ;
 lm.+N:lm  ab-dot-noun-trab  ;
+lp.+N:lp  ab-dot-noun-trab  ;
 ltd.+N:ltd  ab-dot-noun-trab  ;
 ltk.+N:ltk  ab-dot-noun-trab  ;
 luonnont.+N:luonnont  ab-dot-noun-trab  ;
@@ -399,6 +396,7 @@ pv.+N:pv  ab-dot-noun-trab  ;
 pvm.+N:pvm  ab-dot-noun-trab  ;
 pääll.+N:pääll  ab-dot-noun-trab  ;
 r.+N:r  ab-dot-noun-trab  ;
+ra.+A:ra  ab-dot-adj-trab  ;
 rak.+N:rak  ab-dot-noun-trab  ;
 rak.mest.+N:rak.mest  ab-dot-noun-trab  ;
 reht.+N:reht  ab-dot-noun-trab  ;
@@ -416,6 +414,7 @@ s.% d.+N:s.% d.    ab-dot-noun-trab  ;
 s.+N:s  ab-dot-noun-trab  ;
 s.d.+N:s.d  ab-dot-noun-trab  ;
 s.v.+N:s.v  ab-dot-noun-trab  ;
+sa.+N:sa  ab-dot-noun-trab  ;
 sacr.% min.% kand.+N:sacr.% min.% kand. ab-dot-noun-trab  ;
 sair.hoit.+N:sair.hoit  ab-dot-noun-trab  ;
 sairaanh.op.+N:sairaanh.op  ab-dot-noun-trab  ;
@@ -427,7 +426,6 @@ sit.+N:sit  ab-dot-noun-trab  ;
 sl.+N:sl  ab-dot-noun-trab  ;
 snro+N:snro  NOUN_RUIPELO  ;
 so.+N:so  ab-dot-noun-trab  ;
-sos.+N:sos  ab-dot-noun-trab  ;
 sos.dem.+N:sos.dem  ab-dot-noun-trab  ;
 sot.+N:sot  ab-dot-noun-trab  ;
 sotat.+N:sotat  ab-dot-noun-trab  ;
@@ -440,7 +438,6 @@ st.+N:st  ab-dot-noun-trab  ;
 stm.+N:stm  ab-dot-noun-trab  ;
 su+N:su  ab-dot-noun-trab  ;
 sunn.+N:sunn  ab-dot-noun-trab  ;
-suom.+N:suom  ab-dot-noun-trab  ;
 svh.+N:svh  ab-dot-noun-trab  ;
 synt.+N:synt  ab-dot-noun-trab  ;
 sähköp.+N:sähköp  ab-dot-noun-trab  ;
@@ -451,9 +448,7 @@ tal.hoit.+N:tal.hoit  ab-dot-noun-trab  ;
 taloust.+N:taloust  ab-dot-noun-trab  ;
 tanssit.+N:tanssit  ab-dot-noun-trab  ;
 tark.+N:tark  ab-dot-noun-trab  ;
-tb.+N:tb  ab-dot-noun-trab  ;
 teatt.+N:teatt  ab-dot-noun-trab  ;
-tekn.+N:tekn  ab-dot-noun-trab  ;
 teol.+N:teol  ab-dot-noun-trab  ;
 teoll.+N:teoll  ab-dot-noun-trab  ;
 terveydenh.+N:terveydenh  ab-dot-noun-trab  ;
@@ -500,13 +495,10 @@ vast.+N:vast  ab-dot-noun-trab  ;
 vht+N:vht  ab-dot-noun-trab  ;
 vihr.+N:vihr  ab-dot-noun-trab  ;
 virk.+N:virk  ab-dot-noun-trab  ;
-vk.+N:vk  ab-dot-noun-trab  ;
 vm.+N:vm  ab-dot-noun-trab  ;
 voim.op.+N:voim.op  ab-dot-noun-trab  ;
 vpj.+N:vpj  ab-dot-noun-trab  ;
 vrt.+N:vrt  ab-dot-noun-trab  ;
-vs+N:vs  ab-dot-noun-trab  ;
-vs.+N:vs  ab-dot-noun-trab  ;
 vsk.+N:vsk  ab-dot-noun-trab  ;
 vt.+N:vt  ab-dot-noun-trab  ;
 vv.+N:vv  ab-dot-noun-trab  ;
@@ -525,8 +517,7 @@ yliop.+N:yliop  ab-dot-noun-trab  ;
 yliopp.+N:yliopp  ab-dot-noun-trab  ;
 ylip.+N:ylip  ab-dot-noun-trab  ;
 yliv.+N:yliv  ab-dot-noun-trab  ;
-ym+N:ym  ab-dot-noun-trab  ;
-ym.+N:ym  ab-dot-noun-trab  ;
+ym+N:ym  ab-dot-noun-itrab  ;
 yms+N:yms  ab-dot-noun-trab  ;
 yms.+N:yms  ab-dot-noun-trab  ;
 yo.+N:yo  ab-dot-noun-trab  ;
