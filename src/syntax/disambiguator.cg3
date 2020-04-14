@@ -896,6 +896,8 @@ LIST Use_Hyphen = Use_Hyphen Use/Hyphen ;
 LIST Use_NoHyphens = Use_NoHyphens Use/NoHyphens ;
 
 
+LIST SYNT = @+FMAINV @+FAUXV @-FMAINV @-FAUXV @<SPRED @SPRED> @SUBJ @<SUBJ @SUBJ> @OBJ @<OBJ @OBJ> @NEC-S @NF-S @OBJ @PC @<P @P> @>P @N> @>N @N<  @<N @<NUM @NUM< @ADVL @<ADVL @LOC @PCLE @HAB @CVP @CNP @CNB @NES @X ;
+
 # ========================================================================
 
 # ============= #
@@ -4518,6 +4520,14 @@ REMOVE N IF (0 Ensimmainen + $$ALLCASES)(1 A + $$ALLCASES);
 # Mostly same as sme rule, but removed (0 ("orrut")); is it worth including copulas here? Finnish doesn't quite have quite the same here
 MAP (@+FMAINV) TARGET VFIN IF (NEGATE *0 VERB BARRIER S-BOUNDARY2 OR CC) ;
 
+#!! * __+FMAINV__  to the remaining finite verbs which are not AUX    
+MAP:+FMAINV (@+FMAINV) TARGET VFIN-NOT-AUX (NOT 0 V + OBJ OR V + SUBJ OR V + ADVL OR (V @>N) OR (V @N<))(NEGATE *0 VFIN-NOT-AUX OR @+FMAINV BARRIER S-BOUNDARY OR COMMA OR LEFT OR RIGHT) (NEGATE *-1 (V @>N) BARRIER NOT-A OR LEFT)
+	(NEGATE *-1 V - @>N BARRIER S-BOUNDARY OR COMMA OR LEFT)
+	(NEGATE *1 VFIN OR PrfPrc - @>N BARRIER S-BOUNDARY OR COMMA OR RIGHT)(NEGATE 0 Inf LINK -1 CC LINK *-1 Inf BARRIER REAL-V LINK -1 AUX) ;
+	#$ Boađe boahtte vahku.
+	#$ Son lea oappáin náitalan.
+
+
 MAP (@+FAUXV) TARGET InfA-VERB IF (*1 InfA BARRIER V) ; 
 MAP (@+FAUXV) TARGET InfMa-VERB IF (*1 InfMa BARRIER V) ; 
     # Äidin vanha ystävä voisi kyllä yrittää.
@@ -4921,7 +4931,7 @@ REMOVE Pl + POSS_SUFF (0 Sg)(*0 Pron + Pers + SGa BARRIER S-BOUNDARY);
 
 AFTER-SECTIONS
 
-LIST SYNT = @+FMAINV @+FAUXV @-FMAINV @-FAUXV @<SPRED @SPRED> @SUBJ @<SUBJ @SUBJ> @OBJ @<OBJ @OBJ> @NEC-S @NF-S @OBJ @PC @<P @P> @>P @N> @>N @N<  @<N @<NUM @NUM< @ADVL @<ADVL @LOC @PCLE @HAB @CVP @CNP @CNB @NES @X ;
+
 
 UNMAP UNSAFE SYNT ; # at this stage don't need for transl -- no, we change or mind
 
