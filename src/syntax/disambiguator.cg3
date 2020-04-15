@@ -46,7 +46,8 @@ LIST N = N (V Der/minen) (V Der_minen) ;
 LIST A = A ; 
 LIST APrc = A PrsPrc PrfPrc "tämä" "millainen" "sellainen" ; 
 LIST Adv = Adv ; 
-LIST V = V ; 
+LIST V = V ;
+LIST REAL-V = V ; # XXX fix.
 LIST Pron = Pron ;
 
 LIST Comp = Comp ; # comparative of adj
@@ -379,8 +380,7 @@ LIST VFIN-C = Prs Prt Cond Pot Neg Imprt CS CC ;
 LIST VFIN-C-MYOS = Prs Prt Cond Pot Neg Imprt CS CC "myös" ; 
 LIST VFIN-PCP = Prs Prt Cond Pot Neg Imprt PrfPrc PrsPrc ; 
 #LIST VFIN_PrsPrc = Prt Prs Cond Pot PrsPrc ; not used
-LIST VFIN_PrsPrc_Inf = Prt Prs Cond Pot PrsPrc (PrfPrc Gen) (PrfPrc Par) InfA InfE InfMa ; 
-
+LIST VFIN_PrsPrc_Inf = Prt Prs Cond Pot PrsPrc (PrfPrc Gen) (PrfPrc Par) InfA InfE InfMa ;
 
 # Word lists
 # ----------
@@ -710,6 +710,9 @@ LIST ComMA = "<,>" Punct ;
 LIST ComMA_N_Pron_Q = "<,>" N Pron Qu ; 
 LIST ComMA_N_Pron_Q_V_SUP_BOS = "<,>" N Pron Qu V Sup >>> "kuin" ; 
 
+LIST LEFT = LEFT ;
+LIST RIGHT = RIGHT ;
+
 LIST OM = >>> """ "“" ;
 LIST OMS = >>> """ ":" ";" "“" ;
 
@@ -964,6 +967,8 @@ SET REAL_AUX = AUXs OR Neg ; # to get ettei, ellei
 SET AUX-OR-MAIN = InfA-VERB OR InfMa-VERB ; 
 SET AUX = COPULAS OR Neg OR MOD-ASP OR AUX-OR-MAIN ;
 
+SET VFIN-NOT-AUX = Ind - AUX ; 
+
 SET V-NOT-COPULAS = V - REALCOPULAS;
 
 SET REF = V + ActPass + PPPCPs + GenSg; 
@@ -1051,6 +1056,7 @@ SET PRE-NP-HEAD = Prop + Gen OR Prop + (@>N) OR A OR Abbr + Gen OR ("hyvä") OR 
          PrfPrc + (@>N) OR PrsPrc OR Ord OR PCP ;
          # The strict version of items that can only be premodifiers, not parts of the predicate
  
+SET NOT-A = WORD - A ;
 
 SET NPNH     = WORD - PRE-NP-HEAD OR Abbr ; 
 
@@ -1150,7 +1156,7 @@ LIST @SPRED> = @SPRED> ;
 #LIST @SUBJ = @SUBJ ;
 LIST @<SUBJ = @<SUBJ ;
 LIST @SUBJ> = @SUBJ> ;
-#SET SUBJ = @<SUBJ OR @SUBJ> OR @SUBJ ;
+SET SUBJ = @<SUBJ OR @SUBJ> OR @SUBJ ;
 SET SPRED = @<SPRED OR @SPRED> OR @SPRED ;
 SET OPRED = @<OPRED OR @OPRED> OR @OPRED ;
 
@@ -4521,9 +4527,9 @@ REMOVE N IF (0 Ensimmainen + $$ALLCASES)(1 A + $$ALLCASES);
 MAP (@+FMAINV) TARGET VFIN IF (NEGATE *0 VERB BARRIER S-BOUNDARY2 OR CC) ;
 
 #!! * __+FMAINV__  to the remaining finite verbs which are not AUX    
-MAP:+FMAINV (@+FMAINV) TARGET VFIN-NOT-AUX (NOT 0 V + OBJ OR V + SUBJ OR V + ADVL OR (V @>N) OR (V @N<))(NEGATE *0 VFIN-NOT-AUX OR @+FMAINV BARRIER S-BOUNDARY OR COMMA OR LEFT OR RIGHT) (NEGATE *-1 (V @>N) BARRIER NOT-A OR LEFT)
+MAP:+FMAINV (@+FMAINV) TARGET VFIN-NOT-AUX (NOT 0 V + OBJ OR V + SUBJ OR V + @ADVL OR (V @>N) OR (V @N<))(NEGATE *0 VFIN-NOT-AUX OR @+FMAINV BARRIER S-BOUNDARY OR COMMA OR LEFT OR RIGHT) (NEGATE *-1 (V @>N) BARRIER NOT-A OR LEFT)
 	(NEGATE *-1 V - @>N BARRIER S-BOUNDARY OR COMMA OR LEFT)
-	(NEGATE *1 VFIN OR PrfPrc - @>N BARRIER S-BOUNDARY OR COMMA OR RIGHT)(NEGATE 0 Inf LINK -1 CC LINK *-1 Inf BARRIER REAL-V LINK -1 AUX) ;
+	(NEGATE *1 VFIN OR PrfPrc - @>N BARRIER S-BOUNDARY OR COMMA OR RIGHT)(NEGATE 0 InfA LINK -1 CC LINK *-1 InfA BARRIER REAL-V LINK -1 AUX) ;
 	#$ Boađe boahtte vahku.
 	#$ Son lea oappáin náitalan.
 
