@@ -36,6 +36,6 @@ JSP_PAGES=root-morphology.jspwiki  \
           symbols-affixes.jspwiki \
           verbs-stems.jspwiki \
           verbs-affixes.jspwiki \
-		  fin-phon-phonology.jspwiki 
+		  phonology-morphology.jspwiki 
 
 include $(top_srcdir)/am-shared/doc-dir-include.am
