@@ -1,0 +1,304 @@
+!! Exceptions are quite strange word-forms. the ones that do not fit anywhere 
+!! else. This file contains all enumerated word forms that cannot reasonably be
+!! created from lexical data by regular inflection. Usually there should be next
+!! to none exceptions, it's always better to have a paradigm that covers only
+!! one or few words than an exception since these will not work nicely with e.g.
+!! compounding scheme or possibly many end applications.
+
+LEXICON EXCEPTIONS
+
+!! negation verb has partial inflection:
+!!€gt-norm: 
+!!€ en:      ei+V+Neg+Act+Sg1
+!!€ älkää:   ei+V+Neg+Act+Imprt+Pl2
+!!€ älkööt:  ei+V+Neg+Act+Imprt+Pl3
+ei+V+Neg+Act+Sg1:en             VERB_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Sg1+Foc/ka:enkä    VERB_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Sg2:et             VERB_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Sg2+Foc/ka:etkä    VERB_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Sg3:ei             VERB_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Sg3+Foc/ka:eikä    VERB_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Pl1:emme           VERB_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Pl1+Foc/ka:emmekä  VERB_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Pl2:ette           VERB_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Pl2+Foc/ka:ettekä  VERB_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Pl3:eivät          VERB_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Pl3+Foc/ka:eivätkä VERB_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Imprt+Sg2:älä                  VERB_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Imprt+Sg2+Foc/ka:äläkä         VERB_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Imprt+Sg3:älköön               VERB_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Imprt+Sg3+Foc/ka:älköönkä      VERB_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Imprt+Pl1:älkäämme             VERB_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Imprt+Pl1+Foc/ka:älkäämmekä    VERB_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Imprt+Pl2:älkää                VERB_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Imprt+Pl2+Foc/ka:älkääkä       VERB_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Imprt+Pl3:älkööt               VERB_FRONT_CLIT_OPT ;
+ei+V+Neg+Act+Imprt+Pl3+Foc/ka:älköötkä      VERB_FRONT_CLIT_OPT ;
+
+!! Some verbs only have few word-forms left:
+!!€ kutiaa:
+!!€ taita:
+!!€ paratkoon:
+!!€ eläköön:
+eläköön+V:eläköön       #    ;
+jutaa+V:jutaa           #    ;
+jytää+V:jytää           #    ;
+kutiaa+V:kutiaa         #    ;
+parata+V:parata         #    ;
+paratkoon+V:paratkoon   #    ;
+sikisi+V:sikisi         #    ;
+sikiää+V:sikiää         #    ;
+taita+V:taita           #    ;
+tietä+V:tietä           #    ;
+tuta+V:tuta             #    ;
+vilkkaa+V:vilkkaa       #    ;
+
+
+!! The noun ruoka has irregular forms:
+!!€ ruuassa:
+!!€ ruuilla:
+ruoka+N:ruua        NOUN_BACK_WEAK_SINGULARS   ;
+ruoka+N:ruu         NOUN_BACK_WEAK_PLURALS ;
+
+!! The adjective hyvä has heteroclitic comparative derivations too:
+!!€ parempi:
+!!€ paremmissa:
+!!€ paras:
+!!€ parhaat:
+hyvä+A:pare                     ADJ_BACK_COMPARATIVE ;
+hyvä+A+Superl:paras                ADJ_BACK_NOMINATIVE ;
+hyvä+A+Superl:parhaa               ADJ_BACK_SINGULARS ;
+hyvä+A+Superl:parha                ADJ_BACK_PLURALS ;
+hyvä+A+Superl:paras                ADJ_BACK_PARTITIVE_TA ;
+hyvä+A+Superl:parhaa               ADJ_BACK_ILLATIVE_SEEN ;
+hyvä+A+Superl:parha                ADJ_BACK_GENITIVE_IDEN ;
+hyvä+A+Superl+Use/NG:parha                ADJ_BACK_GENITIVE_ITTEN ;
+hyvä+A+Superl:parha                ADJ_BACK_PARTITIVE_ITA ;
+hyvä+A+Superl:parha                ADJ_BACK_ILLATIVE_ISIIN ;
+hyvä+A:parha                    ADJ_BACK_SUPERLATIVE ;
+hyvä+A+Der/sti+Adv:parhaiten    ADV_BACK_CLIT_OPT ;
+
+!! Some of the nouns have archaic consonat stem forms left:
+!!€ vuonna:
+!!€ sydännä:
+!!€ jumalten:
+!!€ sankarten:
+vuosi+N+Sg+Ess+Use/NG:vuonna       NOUN_BACK_POSS_AN_OPT ;
+sydän+N+Sg+Ess+Use/NG:sydännä      NOUN_FRONT_POSS_ÄN_OPT ;
+jumala+N+Pl+Gen+Use/NG:jumalten    NOUN_BACK_CLIT_OPT ;
+jumala+N+Pl+Gen+Use/NG:jumalten    NOUN_COMPOUND ;
+sankari+N+Pl+Gen+Use/NG:sankarten  NOUN_FRONT_CLIT_OPT ;
+sankari+N+Pl+Gen+Use/NG:sankarten  NOUN_COMPOUND ;
+
+!! few verbs have shortened forms in standard spoken Finnish
+!!€ meen:
+!!€ tuut:
+mennä+V+Act+Ind+Prs+Sg1+Dial/standard:meen       VERB_FRONT_CLIT_OPT    ;
+mennä+V+Act+Ind+Prs+Sg2+Dial/standard:meet       VERB_FRONT_CLIT_OPT    ;
+mennä+V+Act+Ind+Prs+Pl1+Dial/standard:meemme     VERB_FRONT_CLIT_OPT    ;
+mennä+V+Act+Ind+Prs+Pl2+Dial/standard:meette     VERB_FRONT_CLIT_OPT    ;
+mennä+V+Act+Imprt+Sg2+Dial/standard:mee          VERB_FRONT_CLIT_OPT  ;
+mennä+V+Act+Imprt+Sg2+Dial/standard+Foc/s:mees   VERB_FRONT_CLIT_OPT    ;
+tulla+V+Act+Ind+Prs+Sg1+Dial/standard:tuun       VERB_BACK_CLIT_OPT       ;
+tulla+V+Act+Ind+Prs+Sg2+Dial/standard:tuut       VERB_BACK_CLIT_OPT       ;
+tulla+V+Act+Ind+Prs+Pl1+Dial/standard:tuumme     VERB_BACK_CLIT_OPT       ;
+tulla+V+Act+Ind+Prs+Pl2+Dial/standard:tuutte     VERB_BACK_CLIT_OPT       ;
+tulla+V+Act+Imprt+Sg2+Dial/standard:tuu          VERB_BACK_CLIT_OPT       ;
+tulla+V+Act+Imprt+Sg2+Dial/standard+Foc/s:tuus   VERB_BACK_CLIT_OPT       ;
+panna+V+Act+Ind+Prs+Sg2+Dial/standard:paat       VERB_BACK_CLIT_OPT       ;
+panna+V+Act+Imprt+Sg2+Dial/standard:paa          VERB_BACK_CLIT_OPT       ;
+panna+V+Act+Imprt+Sg2+Dial/standard+Foc/s:paas   VERB_BACK_CLIT_OPT       ;
+olla+V+Act+Ind+Prs+Sg1+Dial/standard:oon         VERB_BACK_CLIT_OPT       ;
+olla+V+Act+Ind+Prs+Sg2+Dial/standard:oot         VERB_BACK_CLIT_OPT       ;
+olla+V+Act+Ind+Prs+Pl1+Dial/standard:oomme       VERB_BACK_CLIT_OPT       ;
+olla+V+Act+Ind+Prs+Pl2+Dial/standard:ootte       VERB_BACK_CLIT_OPT       ;
+olla+V+Act+Imprt+Sg2+Dial/standard:oo            VERB_BACK_CLIT_OPT       ;
+olla+V+Act+Imprt+Sg2+Dial/standard+Foc/s:oos     VERB_BACK_CLIT_OPT       ;
+
+
+LEXICON CONJUNCTIONVERB
+
+ehkä+Pcle#ei+V+Neg:ehke  X_51ehkei  ;
+ja+CC#ei+V+Neg:e  X_51eikä  ;
+miksi++Adv+Interr#ei+V+Neg:mikse  X_51miksei  ;
+
+!että+CS#ei+Neg:ette  X_51ettei  ; cs.lexc
+!jotta+CS#ei+Neg+CS:jolle  X_51jollei  ; cs.lexc
+!jotta+CS#ei+Neg:jotte  X_51jottei  ; cs.lexc
+!mutta+CC#ei+Neg:mutte  X_51muttei  ; cc.lexc
+!vaikka+CS#ei+Neg:vaikke  X_51vaikkei  ; cs.lexc
+
+
+LEXICON X_51ehkei
+
++Act+Pl1:mme  VERB_FRONT_CLIT_OPT ;
+
++Act+Pl2:tte  VERB_FRONT_CLIT_OPT ;
+
++Act+Pl3:ivät  VERB_FRONT_CLIT_OPT ;
+
++Act+Sg1:n  VERB_FRONT_CLIT_OPT ;
+
++Act+Sg2:t  VERB_FRONT_CLIT_OPT ;
+
++Act+Sg3:i  VERB_FRONT_CLIT_OPT ;
+
+
+LEXICON X_51eikä
+
++Act+Pl1:mmekä  VERB_FRONT_CLIT_OPT ;
+
++Act+Pl2:ttekä  VERB_FRONT_CLIT_OPT ;
+
++Act+Pl3:ivätkä  VERB_FRONT_CLIT_OPT ;
+
++Act+Sg1:nkä  VERB_FRONT_CLIT_OPT ;
+
++Act+Sg2:tkä  VERB_FRONT_CLIT_OPT ;
+
++Act+Sg3:ikä  VERB_FRONT_CLIT_OPT ;
+
+
+!LEXICON X_51ettei
+
+!+Act+Pl1:mme  VERB_FRONT_CLIT_OPT ;
+
+!+Act+Pl2:tte  VERB_FRONT_CLIT_OPT ;
+
+!+Act+Pl3:ivät  VERB_FRONT_CLIT_OPT ;
+
+!+Act+Sg1:n  VERB_FRONT_CLIT_OPT ;
+
+!+Act+Sg2:t  VERB_FRONT_CLIT_OPT ;
+
+!+Act+Sg3:i  VERB_FRONT_CLIT_OPT ;
+
+
+!LEXICON X_51jollei
+
+!+Act+Pl1:mme  VERB_FRONT_CLIT_OPT ;
+
+!+Act+Pl2:tte  VERB_FRONT_CLIT_OPT ;
+
+!+Act+Pl3:ivät  VERB_FRONT_CLIT_OPT ;
+
+!+Act+Sg1:n  VERB_FRONT_CLIT_OPT ;
+
+!+Act+Sg2:t  VERB_FRONT_CLIT_OPT ;
+
+!+Act+Sg3:i  VERB_FRONT_CLIT_OPT ;
+
+
+!LEXICON X_51jottei
+
+!+Act+Pl1:mme  VERB_FRONT_CLIT_OPT ;
+
+!+Act+Pl2:tte  VERB_FRONT_CLIT_OPT ;
+
+!+Act+Pl3:ivät  VERB_FRONT_CLIT_OPT ;
+
+!+Act+Sg1:n  VERB_FRONT_CLIT_OPT ;
+
+!+Act+Sg2:t  VERB_FRONT_CLIT_OPT ;
+
+!+Act+Sg3:i  VERB_FRONT_CLIT_OPT ;
+
+
+LEXICON X_51miksei
+
++Act+Pl1:mme  VERB_FRONT_CLIT_OPT ;
+
++Act+Pl2:tte  VERB_FRONT_CLIT_OPT ;
+
++Act+Pl3:ivät  VERB_FRONT_CLIT_OPT ;
+
++Act+Sg1:n  VERB_FRONT_CLIT_OPT ;
+
++Act+Sg2:t  VERB_FRONT_CLIT_OPT ;
+
++Act+Sg3:i  VERB_FRONT_CLIT_OPT ;
+
+
+!LEXICON X_51muttei
+
+!+Act+Pl1:mme  VERB_FRONT_CLIT_OPT ;
+
+!+Act+Pl2:tte  VERB_FRONT_CLIT_OPT ;
+
+!+Act+Pl3:ivät  VERB_FRONT_CLIT_OPT ;
+
+!+Act+Sg1:n  VERB_FRONT_CLIT_OPT ;
+
+!+Act+Sg2:t  VERB_FRONT_CLIT_OPT ;
+
+!+Act+Sg3:i  VERB_FRONT_CLIT_OPT ;
+
+
+!LEXICON X_51vaikkei
+
+!+Act+Pl1:mme  VERB_FRONT_CLIT_OPT ;
+
+!+Act+Pl2:tte  VERB_FRONT_CLIT_OPT ;
+
+!+Act+Pl3:ivät  VERB_FRONT_CLIT_OPT ;
+
+!+Act+Sg1:n  VERB_FRONT_CLIT_OPT ;
+
+!+Act+Sg2:t  VERB_FRONT_CLIT_OPT ;
+
+!+Act+Sg3:i  VERB_FRONT_CLIT_OPT ;
+
+LEXICON X
+
+and:and	X_FORGN_EN	;
+by:by	X_FORGN_EN	;
+mr.:mr.	X_FORGN_EN	;
+new:new	X_FORGN_EN	;
+of:of	X_FORGN_EN	;
+the:the	X_FORGN_EN	;
+
+LEXICON X_51ettei
+
++Act+Pl1:emme	VERB_FRONT_CLIT_OPT ;
+
++Act+Pl1+Use/Arch:’emme	VERB_FRONT_CLIT_OPT ;
+
++Act+Pl2:ette	VERB_FRONT_CLIT_OPT ;
+
++Act+Pl2+Use/Arch:’ette	VERB_FRONT_CLIT_OPT ;
+
++Act+Pl3:eivät	VERB_FRONT_CLIT_OPT ;
+
++Act+Pl3+Use/Arch:’eivät	VERB_FRONT_CLIT_OPT ;
+
++Act+Sg1:en	VERB_FRONT_CLIT_OPT ;
+
++Act+Sg1+Use/Arch:’en	VERB_FRONT_CLIT_OPT ;
+
++Act+Sg2:et	VERB_FRONT_CLIT_OPT ;
+
++Act+Sg2+Use/Arch:’et	VERB_FRONT_CLIT_OPT ;
+
++Act+Sg3:ei	VERB_FRONT_CLIT_OPT ;
+
++Act+Sg3+Use/Arch:’ei	VERB_FRONT_CLIT_OPT ;
+
+
+LEXICON X_51äläkä
+
++Act+Imprt+Pl1:käämmekä	VERB_FRONT_CLIT_OPT ;
+
++Act+Imprt+Pl2:kääkä	VERB_FRONT_CLIT_OPT ;
+
++Act+Imprt+Pl2+Use/Arch:käättekä	VERB_FRONT_CLIT_OPT ;
+
++Act+Imprt+Pl3:köötkä	VERB_FRONT_CLIT_OPT ;
+
++Act+Imprt+Sg2:äkä	VERB_FRONT_CLIT_OPT ;
+
++Act+Imprt+Sg3:köönkä	VERB_FRONT_CLIT_OPT ;
+
+LEXICON X_FORGN_EN
+
++OLang/eng:	# ;
+

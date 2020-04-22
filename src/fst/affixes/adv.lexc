@@ -1,0 +1,172 @@
+!! !!!Adverb inflection
+!! Most adverbs are morphologically either sti-derivations of adjectives or
+!! some specific form of an existing or archaic noun, and they have limited
+!! inflection in form of possessives and clitics carried over. According to
+!! modern dictionaries different forms of same root are separate adverbs,
+!! so they are not inflected here, but listed in roots.
+
+! possessives
+LEXICON ADV_BACK_POSS
+!!€gt-norm: Adverb possessive back
+!!€ takanani: takana+Adv+PxSg1 # behind me
++PxSg1:%>ni  ADV_BACK_CLIT_OPT        ;
++PxSg2:%>si  ADV_BACK_CLIT_OPT        ;
++PxSg3:%>nsa ADV_BACK_CLIT_OPT        ;
++PxPl1:%>mme ADV_BACK_CLIT_OPT        ;
++PxPl2:%>nne ADV_BACK_CLIT_OPT        ;
++PxPl3:%>nsa ADV_BACK_CLIT_OPT        ;
+
+LEXICON ADV_FRONT_POSS
+!!€gt-norm: Adverb possessive front
+!!€ edessäni: edessä+Adv+PxSg1 # in front of me
++PxSg1:%>ni  ADV_FRONT_CLIT_OPT        ;
++PxSg2:%>si  ADV_FRONT_CLIT_OPT        ;
++PxSg3:%>nsä ADV_FRONT_CLIT_OPT        ;
++PxPl1:%>mme ADV_FRONT_CLIT_OPT        ;
++PxPl2:%>nne ADV_FRONT_CLIT_OPT        ;
++PxPl3:%>nsä ADV_FRONT_CLIT_OPT        ;
+
+LEXICON ADV_BACK_POSS_AN
+!!€gt-norm: Adverb possessive back an
+!!€ takanaan: takana+Adv+PxSg3
++PxSg3:%>an    ADV_BACK_CLIT_OPT     ;
++PxPl3:%>an    ADV_BACK_CLIT_OPT     ;
+
+LEXICON ADV_BACK_POSS_EN
+!!€gt-norm: Adverb possessive back en
+!!€ jalkeilleen: jalkeille+Adv+PxSg3 # he awakened
++PxSg3:%>en    ADV_BACK_CLIT_OPT     ;
++PxPl3:%>en    ADV_BACK_CLIT_OPT     ;
+
+LEXICON ADV_FRONT_POSS_EN
+!!€gt-norm: Adverb possessive front en
+!!€ keskelleen: keskelle+Adv+PxPl3 # amidst them
++PxSg3:%>en    ADV_FRONT_CLIT_OPT     ;
++PxPl3:%>en    ADV_FRONT_CLIT_OPT     ;
+
+LEXICON ADV_FRONT_POSS_ÄN
+!!€gt-norm: Adverb possessive front än
+!!€ edessään: edessä+Adv+PxSg3
++PxSg3:%>än    ADV_FRONT_CLIT_OPT     ;
++PxPl3:%>än    ADV_FRONT_CLIT_OPT     ;
+
+LEXICON ADV_BACK_CLIT
+!!€gt-norm: Adverb clitic back
+!!€ nopeastihan: nopeasti+Adv+Foc/han # fast
++Foc/han:%>han   #        ;
++Foc/han+Foc/kaan:%>han%>kaan  #        ;
++Foc/han+Qst:%>han%>ko #        ;
++Foc/han+Foc/pa:%>han%>pa #        ;
++Qst:%>ko #        ;
++Qst+Foc/han:%>ko%>han #        ;
++Qst+Foc/kaan:%>ko%>kaan    #        ;
++Qst+Foc/kin:%>ko%>kin    #        ;
++Qst+Foc/pa:%>ko%>pa   #        ;
++Qst+Foc/s:%>ko%>s    #        ;
++Foc/pa:%>pa #        ;
++Foc/pa+Foc/han:%>pa%>han #        ;
++Foc/pa+Foc/kaan:%>pa%>kaan    #        ;
++Foc/pa+Foc/kin:%>pa%>kin    #        ;
++Foc/pa+Qst:%>pa%>ko   #        ;
++Foc/pa+Foc/s:%>pa%>s    #        ;
++Foc/kin:%>kin  #        ;
++Foc/kin+Foc/han:%>kin%>han  #        ;
++Foc/kin+Foc/kaan:%>kin%>kaan #        ;
++Foc/kin+Qst:%>kin%>ko    #        ;
++Foc/kin+Foc/pa:%>kin%>pa    #        ;
++Foc/kaan:%>kaan  #        ;
++Foc/kaan+Foc/han:%>kaan%>han  #        ;
++Foc/kaan+Foc/kin:%>kaan%>kin #        ;
++Foc/kaan+Qst:%>kaan%>ko    #        ;
++Foc/kaan+Foc/pa:%>kaan%>pa    #        ;
+
+LEXICON ADV_FRONT_CLIT
+!!€gt-norm: Adverb clitic front
+!!€ tyhmästihän: tyhmästi+Adv+Foc/han # stupidly
++Foc/han:%>hän   #        ;
++Foc/han+Foc/kaan:%>hän%>kään  #        ;
++Foc/han+Qst:%>hän%>kö #        ;
++Foc/han+Foc/pa:%>hän%>pä #        ;
++Qst:%>kö #        ;
++Qst+Foc/han:%>kö%>hän #        ;
++Qst+Foc/kaan:%>kö%>kään    #        ;
++Qst+Foc/kin:%>kö%>kin    #        ;
++Qst+Foc/pa:%>kö%>pä   #        ;
++Qst+Foc/s:%>kö%>s    #        ;
++Foc/pa:%>pä #        ;
++Foc/pa+Foc/han:%>pä%>hän #        ;
++Foc/pa+Foc/kaan:%>pä%>kään    #        ;
++Foc/pa+Foc/kin:%>pä%>kin    #        ;
++Foc/pa+Qst:%>pä%>kö   #        ;
++Foc/pa+Foc/s:%>pä%>s    #        ;
++Foc/kin:%>kin  #        ;
++Foc/kin+Foc/han:%>kin%>hän  #        ;
++Foc/kin+Foc/kaan:%>kin%>kään #        ;
++Foc/kin+Qst:%>kin%>kö    #        ;
++Foc/kin+Foc/pa:%>kin%>pä    #        ;
++Foc/kaan:%>kään  #        ;
++Foc/kaan+Foc/han:%>kään%>hän  #        ;
++Foc/kaan+Foc/kin:%>kään%>kin #        ;
++Foc/kaan+Qst:%>kään%>kö    #        ;
++Foc/kaan+Foc/pa:%>kään%>pä    #        ;
+
+
+! shorthands
+
+LEXICON ADV_BACK_CLIT_OPT
+0    #   ;
+0   ADV_BACK_CLIT    ;
+
+LEXICON ADV_FRONT_CLIT_OPT
+0    #   ;
+0   ADV_FRONT_CLIT    ;
+
+LEXICON ADV_BACK_POSS_AN_OPT
+0    ADV_BACK_POSS   ;
+0    ADV_BACK_POSS_AN ;
+0    ADV_BACK_CLIT ;
+0    #    ;
+
+LEXICON ADV_FRONT_POSS_ÄN_OPT
+0    ADV_FRONT_POSS   ;
+0    ADV_FRONT_POSS_ÄN  ;
+0    ADV_FRONT_CLIT ;
+0    #    ;
+
+LEXICON ADV_BACK_POSS_EN_OPT
+0    ADV_BACK_POSS   ;
+0    ADV_BACK_POSS_EN ;
+0    ADV_BACK_CLIT ;
+0    #    ;
+
+LEXICON ADV_FRONT_POSS_EN_OPT
+0    ADV_FRONT_POSS   ;
+0    ADV_FRONT_POSS_EN  ;
+0    ADV_FRONT_CLIT ;
+0    #    ;
+
+!LEXICON ADV_BACK_POSS_OPT
+!0    ADV_BACK_POSS   ;
+!0    ADV_BACK_CLIT ;
+!0    #    ;
+!
+LEXICON ADV_FRONT_POSS_OPT
+0    ADV_FRONT_POSS   ;
+0    ADV_FRONT_CLIT ;
+0    #    ;
+
+LEXICON ADV_BACK_POSS_AN_OBL
+0   ADV_BACK_POSS  ;
+0   ADV_BACK_POSS_AN   ;
+
+LEXICON ADV_BACK_POSS_EN_OBL
+0   ADV_BACK_POSS  ;
+0   ADV_BACK_POSS_EN   ;
+
+LEXICON ADV_FRONT_POSS_EN_OBL
+0   ADV_FRONT_POSS  ;
+0   ADV_FRONT_POSS_EN   ;
+
+LEXICON ADV_FRONT_POSS_ÄN_OBL
+0   ADV_FRONT_POSS  ;
+0   ADV_FRONT_POSS_ÄN   ;

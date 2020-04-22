@@ -1,0 +1,131 @@
+!! !!!Adverbial conjunctions
+!! The adverbial conjunctions join two unequal clauses or phrases together.
+!! The traditional term for this is sub-ordinating conjunction, it is assumed
+!! here for compatibility with other languages. Adverbial conjunctions are a
+!! subset of particles, so they do not inflect at all.
+
+LEXICON CS
+!! The adverbial conjunctions are:
+!! ellei, että, jahka, jollei, jos, joskin, jos kohta, jotta, koska, kun,
+!!  kunhan, mikäli, vaikka, (kunnes). 
+!!
+!! Further reading: [VISK § 818|http://scripta.kotus.fi/visk/sisalto.php?p=818]
+!!€gt-norm: Adverbial conjunctions
+!!€ että: että+CS
+!!€ jotta: jotta+CS
+!!€ koska: koska+CS
+!!€ kun: kun+CS
+!!€ jos: jos+CS
+!!€ vaikka: vaikka+CS
+
+ennen% kuin+CS:ennen% kuin              # ;
+ennenkuin+CS+Err/Orth:ennenkuin          # ;
+et+CS+Use/sub:et                        # ;
+että+CS#ei+V:ett                     VERB_EI ;
+että+CS:että                            # ;
+jos+CS#ei+V:ell                      VERB_EI ;
+jos+CS#ei+V:joll                     VERB_EI ;
+jos+CS:jos                              # ;
+joskaan+CS:joskaan                      # ;
+joskin+CS:joskin                        # ;
+josko+CS:josko                          # ;
+jotta+CS#ei+V:jott                   VERB_EI ;
+jotta+CS:jotta                          # ;
+konsa+CS:konsa                          # ;
+koska+CS:koska                          # ;
+kun+CS:kun                              # ;
+kunhan+CS:kunhan                        # ;
+kunnes+CS:kunnes                        # ;
+kunpa+CS:kunpa                          # ;
+mikäli+CS:mikäli                        # ;
+sillä+CS:sillä                          # ;
+sitäpaitsi+CS:sitäpaitsi                # ;
+sun+CS:sun                              # ;
+vaan+CS:vaan                            # ;
+vaikka+CS#ei+V:vaikk                 VERB_EI ;
+vaikka+CS:vaikka                        # ;
+vaikkakaan+CS:vaikkakaan                # ;
+vaikkakin+CS:vaikkakin                  # ;
+vaikkapa+CS:vaikkapa                    # ;
+
+ettäkö:ettäkö  SCONJ_ETTÄ  ;
+jahka:jahka  SCONJ_ETTÄ  ;
+joko:joko  SCONJ_ETTÄ  ;
+jospa:jospa  SCONJ_ETTÄ  ;
+koskapa:koskapa  SCONJ_ETTÄ  ;
+kuin:kuin  SCONJ_ETTÄ  ;
+ku:ku  SCONJ_ETTÄ  ;
+saatikka:saatikka  SCONJ_ETTÄ  ;
+saati:saati  SCONJ_ETTÄ  ;
+vaikk:vaikk  SCONJ_ETTÄ  ;
+
+jos+Pcle:jos                            # ;
+josko+Pcle:josko                        # ;
+jospa+Pcle:jospa                        # ;
+jotta+Pcle:jotta                        # ;
+koskapa+Pcle:koskapa                    # ;
+ku+Pcle:ku                              # ;
+kunhan+Pcle:kunhan                      # ;
+kunpa+Pcle:kunpa                        # ;
+mikäli+Pcle:mikäli                      # ;
+vaikkapa+Pcle:vaikkapa                  # ;
+
+
+!Previously have been just Pcle (lexicon SCONJ_ETTÄ was empty): splited into CS and Pcle separately, not included Pcle that are already in adv.lexc
+!ettäkö+Pcle:ettäkö  SCONJ_ETTÄ  ;
+!että+Pcle:että  SCONJ_ETTÄ  ;
+!jahka+Pcle:jahka  SCONJ_ETTÄ  ;
+!joko+Pcle:joko  SCONJ_ETTÄ  ;
+!joskaan+Pcle:joskaan  SCONJ_ETTÄ  ;
+!josko+Pcle:josko  SCONJ_ETTÄ  ;
+!jospa+Pcle:jospa  SCONJ_ETTÄ  ;
+!jos+Pcle:jos  SCONJ_ETTÄ  ;
+!jotta+Pcle:jotta  SCONJ_ETTÄ  ;
+!koskapa+Pcle:koskapa  SCONJ_ETTÄ  ;
+!koska+Pcle:koska  SCONJ_ETTÄ  ;
+!kuin+Pcle:kuin  SCONJ_ETTÄ  ;
+!kunhan+Pcle:kunhan  SCONJ_ETTÄ  ;
+!kunpa+Pcle:kunpa  SCONJ_ETTÄ  ;
+!kun+Pcle:kun  SCONJ_ETTÄ  ;
+!ku+Pcle:ku  SCONJ_ETTÄ  ;
+!mikäli+Pcle:mikäli  SCONJ_ETTÄ  ;
+!saatikka+Pcle:saatikka  SCONJ_ETTÄ  ;
+!saati+Pcle:saati  SCONJ_ETTÄ  ;
+!sillä+Pcle:sillä  SCONJ_ETTÄ  ;
+!vaan+Pcle:vaan  SCONJ_ETTÄ  ;
+!vaikkakin+Pcle:vaikkakin  SCONJ_ETTÄ  ;
+!vaikkapa+Pcle:vaikkapa  SCONJ_ETTÄ  ;
+!vaikka+Pcle:vaikka  SCONJ_ETTÄ  ;
+!vaikk+Pcle:vaikk  SCONJ_ETTÄ  ;
+
+
+!ell#ei+CS:ellei                         # ;
+!ell#eivät+CS:elleivät                   # ;
+!ell#emme+CS:ellemme                     # ;
+!ell#en+CS:ellen                         # ;
+!ell#et+CS:ellet                         # ;
+!ell#ette+CS:ellette                     # ;
+!että#ei+CS:ettei                        # ;
+!että#eikö+CS:etteikö                    # ;
+!että#eivät+CS:etteivät                  # ;
+!että#emme+CS:ettemme                    # ;
+!että#en+CS:etten                        # ;
+!että#et+CS:ettet                        # ;
+!että#ette+CS:ettette                    # ;
+!jos#ei+CS:jollei                        # ;
+!jos#eivät+CS:jolleivät                  # ;
+!jos#emme+CS:jollemme                    # ;
+!jos#en+CS:jollen                        # ;
+!jos#et+CS:jollet                        # ;
+!jos#ette+CS:jollette                    # ;
+!vaikka#ei+CS:vaikkei                    # ;
+!vaikka#eivät+CS:vaikkeivät              # ;
+!vaikka#emme+CS:vaikkemme                # ;
+!vaikka#en+CS:vaikken                    # ;
+!vaikka#et+CS:vaikket                    # ;
+!vaikka#ette+CS:vaikkette                # ;
+
+LEXICON SCONJ_ETTÄ
+
++CS:	# ;
+

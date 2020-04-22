@@ -1,0 +1,467 @@
+!! !!!Digits and such expressions
+!! Digit-strings are used in place of numerals. They inflect with colon, like
+!! acronyms, and compound with hyphen only.
+
+LEXICON DIGITS
+!! Digits are constructed as several cyclic structures: integers, decimals or
+!! roman numerals.
+!! Zero alone works quite differently:
+!!€gt-norm: Digit zero
+!!€ 0: 0+Num+Sg+Nom
+0    ARABIC_pirinen ;
+0    DIGITS_DECIMAL_LOOP ;
+0    DIGITS_ROMANS   ;
+     DIGITS_ONWARDS ;
+     NUM_PREFIXES ;
+
+LEXICON NUM_PREFIXES
+§+Use/Circ:§ ARABIC ;       ! §24
+§§+Use/Circ:§§ ARABIC ;     ! §§24
+§% +Use/Circ:§%  ARABIC ;   ! § 24
+§§% +Use/Circ:§§%  ARABIC ; ! §§ 24
+%-+Use/Circ:%- ARABIC ;     ! -24 U+002D / regular hyphen
+%‒+Use/Circ:%‒ ARABIC ;     ! -24 U+2012 / figure dash
+%–+Use/Circ:%– ARABIC ;     ! -24 U+2013 / en dash
+%—+Use/Circ:%— ARABIC ;     ! -24 U+2014 / em dash
+%―+Use/Circ:%― ARABIC ;     ! -24 U02015 / horizontal bar
+%++Use/Circ:%+ ARABIC ;     ! <plus>24
+%-% +Use/Circ:%-%  ARABIC ; ! - 24
+%‒% +Use/Circ:%‒%  ARABIC ; ! - 24 U+2012
+%–% +Use/Circ:%–%  ARABIC ; ! - 24 U+2013
+%—% +Use/Circ:%—%  ARABIC ; ! - 24 U+2014
+%―% +Use/Circ:%―%  ARABIC ; ! - 24 U+2015
+%+% +Use/Circ:%+%  ARABIC ; ! <plus> 24
+%*+Use/Circ:%* ARABIC ;     ! *24
+%$+Use/Circ:%$ ARABIC ;     ! $24
+%€+Use/Circ:%€ ARABIC ;     ! €24
+%<+Use/Circ:%[%<%] ARABIC ; ! <24
+%>+Use/Circ:%[%>%] ARABIC ; ! >24
+s%.+Use/Circ:s%. ARABIC ;   ! s.24
+
+
+LEXICON ARABIC_pirinen
+!!€gt-norm: int digit loop
+!!€ 13: 13+Num+Card+Sg+Nom
+!!€ 100: 100+Num+Card+Sg+Nom
+!!€ 0000005550000000: 0000005550000000+Num+Card+Sg+Nom
+
+< [1|2|3|4|5|6|7|8|9|%0] >   ARABICLOOP_pirinen ;
+
+LEXICON ARABICLOOP_pirinen !!= __@CODE@__ essentially allows any number-sign combination, but is like the other lgs
++Use/Circ: DIGITS_ONWARDS ;
++Use/Circ: ARABIC ;
+%-+Use/Circ:%- ARABIC ;             ! 1-2    multipart numbers continuing as numbers
+%–+Use/Circ:%– ARABIC ;             ! 1–2    multipart numbers continuing as numbers
+%—+Use/Circ:%— ARABIC ;             ! 1—2    multipart numbers continuing as numbers
+%.%-+Use/Circ:%.%- ARABIC ;         ! 1.-2   multipart numbers continuing as numbers
+%.%–+Use/Circ:%.%– ARABIC ;         ! 1.–2   multipart numbers continuing as numbers
+%.%—+Use/Circ:%.%— ARABIC ;         ! 1.—2   multipart numbers continuing as numbers
+%-% +Use/Circ:%-%  ARABIC ;         ! 1- 2   multipart numbers continuing as numbers
+%–% +Use/Circ:%–%  ARABIC ;         ! 1– 2   multipart numbers continuing as numbers
+%—% +Use/Circ:%—%  ARABIC ;         ! 1— 2   multipart numbers continuing as numbers
+% %-+Use/Circ:% %- ARABIC ;         ! 1 -2   multipart numbers continuing as numbers
+% %–+Use/Circ:% %– ARABIC ;         ! 1 –2   multipart numbers continuing as numbers
+% %—+Use/Circ:% %— ARABIC ;         ! 1 —2   multipart numbers continuing as numbers
+% %-% +Use/Circ:% %-%  ARABIC ;     ! 1 - 2  multipart numbers continuing as numbers
+% %–% +Use/Circ:% %–%  ARABIC ;     ! 1 – 2  multipart numbers continuing as numbers
+% %—% +Use/Circ:% %—%  ARABIC ;     ! 1 — 2  multipart numbers continuing as numbers
+% %-%-% +Use/Circ:% %-%-%  ARABIC ; ! 1 -- 2 multipart numbers continuing as numbers
+% %–%–% +Use/Circ:% %–%–%  ARABIC ; ! 1 –– 2 multipart numbers continuing as numbers
+% %—%—% +Use/Circ:% %—%—%  ARABIC ; ! 1 —— 2 multipart numbers continuing as numbers
+% %- # ;             ! 1 -    multipart numbers ending in hyphen
+% %– # ;             ! 1 –    multipart numbers ending in hyphen
+% %— # ;             ! 1 —    multipart numbers ending in hyphen
+% %-%- # ;           ! 1 --   multipart numbers ending in hyphen
+% %–%– # ;           ! 1 ––   multipart numbers ending in hyphen
+% %—%— # ;           ! 1 ——   multipart numbers ending in hyphen
+%.+Use/Circ:%. ARABIC ;
+%,+Use/Circ:%, ARABIC ;
+% +Use/Circ:%  ARABIC ; ! Allowing for "23 500".
+ +Use/Circ:   ARABIC ; ! Allowing for "23 500" w/nbsp (initial char is alt-space)
+/+Use/Circ:/ ARABIC ; ! 24/12
+,%-+Num:,%- # ;   ! 10,-
+,%–+Num:,%– # ;   ! 10,–
+,%—+Num:,%— # ;   ! 10,—
+%%+Num+Sg+Nom:%% # ;  ! 50%. It is wrong, but 75 % of us write "75%".
+% %%+Num+Sg+Nom:% %% # ; ! We must analyse the correct ones as well... 50 % etc.
++Num: RHyph ; ! Adding the hyphen for 3-ulotteinen
+
+
+LEXICON DIGITS_ONWARDS !! __@CODE@__ is for entries not looping back 
+%0+Num:%0  DIGITS_NOLLA    ;
+1+Num+Card:1   DIGITS_YKSI  ;
+1+Num+Ord:1   DIGITS_ENSIMMÄINEN  ;
+1+Num+Ord:1   DIGITS_NELJÄS  ; ! yhdes
+2+Num+Card:2   DIGITS_KAKSI ;
+2+Num+Ord:2   DIGITS_KOLMAS ; ! kahdes
+2+Num+Ord:2   DIGITS_TOINEN ;
+3+Num+Card:3   DIGITS_KOLME ;
+3+Num+Ord:3   DIGITS_KOLMAS ;
+4+Num+Card:4   DIGITS_NELJÄ ;
+4+Num+Ord:4   DIGITS_NELJÄS ;
+5+Num+Card:5   DIGITS_VIISI ;
+5+Num+Ord:5   DIGITS_NELJÄS ;
+6+Num+Card:6   DIGITS_KUUSI ;
+6+Num+Ord:6   DIGITS_KOLMAS ;
+7+Num+Card:7   DIGITS_SEITSEMÄN ;
+7+Num+Ord:7   DIGITS_NELJÄS ;
+8+Num+Card:8   DIGITS_KAHDEKSAN ;
+8+Num+Ord:8   DIGITS_KOLMAS ;
+9+Num+Card:9   DIGITS_YHDEKSÄN  ;
+9+Num+Ord:9   DIGITS_NELJÄS  ;
+1%0+Num+Card:1%0  DIGITS_KYMMENEN  ;
+2%0+Num+Card:2%0  DIGITS_KYMMENEN  ;
+3%0+Num+Card:3%0  DIGITS_KYMMENEN  ;
+4%0+Num+Card:4%0  DIGITS_KYMMENEN  ;
+5%0+Num+Card:5%0  DIGITS_KYMMENEN  ;
+6%0+Num+Card:6%0  DIGITS_KYMMENEN  ;
+7%0+Num+Card:7%0  DIGITS_KYMMENEN  ;
+8%0+Num+Card:8%0  DIGITS_KYMMENEN  ;
+9%0+Num+Card:9%0  DIGITS_KYMMENEN  ;
+1%0+Num+Ord:1%0  DIGITS_NELJÄS  ;
+2%0+Num+Ord:2%0  DIGITS_NELJÄS  ;
+3%0+Num+Ord:3%0  DIGITS_NELJÄS  ;
+4%0+Num+Ord:4%0  DIGITS_NELJÄS  ;
+5%0+Num+Ord:5%0  DIGITS_NELJÄS  ;
+6%0+Num+Ord:6%0  DIGITS_NELJÄS  ;
+7%0+Num+Ord:7%0  DIGITS_NELJÄS  ;
+8%0+Num+Ord:8%0  DIGITS_NELJÄS  ;
+9%0+Num+Ord:9%0  DIGITS_NELJÄS  ;
+1%0%0+Num+Card:1%0%0   DIGITS_SATA   ;
+2%0%0+Num+Card:2%0%0   DIGITS_SATA  ;
+3%0%0+Num+Card:3%0%0   DIGITS_SATA  ;
+4%0%0+Num+Card:4%0%0   DIGITS_SATA  ;
+5%0%0+Num+Card:5%0%0   DIGITS_SATA  ;
+6%0%0+Num+Card:6%0%0   DIGITS_SATA  ;
+7%0%0+Num+Card:7%0%0   DIGITS_SATA  ;
+8%0%0+Num+Card:8%0%0   DIGITS_SATA  ;
+9%0%0+Num+Card:9%0%0   DIGITS_SATA  ;
+1%0%0+Num+Ord:1%0%0   DIGITS_KOLMAS   ;
+2%0%0+Num+Ord:2%0%0   DIGITS_KOLMAS  ;
+3%0%0+Num+Ord:3%0%0   DIGITS_KOLMAS  ;
+4%0%0+Num+Ord:4%0%0   DIGITS_KOLMAS  ;
+5%0%0+Num+Ord:5%0%0   DIGITS_KOLMAS  ;
+6%0%0+Num+Ord:6%0%0   DIGITS_KOLMAS  ;
+7%0%0+Num+Ord:7%0%0   DIGITS_KOLMAS  ;
+8%0%0+Num+Ord:8%0%0   DIGITS_KOLMAS  ;
+9%0%0+Num+Ord:9%0%0   DIGITS_KOLMAS  ;
+1%0%0%0+Num+Card:1%0%0%0 DIGITS_TUHAT    ;
+2%0%0%0+Num+Card:2%0%0%0 DIGITS_TUHAT    ;
+3%0%0%0+Num+Card:3%0%0%0 DIGITS_TUHAT    ;
+4%0%0%0+Num+Card:4%0%0%0 DIGITS_TUHAT    ;
+5%0%0%0+Num+Card:5%0%0%0 DIGITS_TUHAT    ;
+6%0%0%0+Num+Card:6%0%0%0 DIGITS_TUHAT    ;
+7%0%0%0+Num+Card:7%0%0%0 DIGITS_TUHAT    ;
+8%0%0%0+Num+Card:8%0%0%0 DIGITS_TUHAT    ;
+9%0%0%0+Num+Card:9%0%0%0 DIGITS_TUHAT    ;
+1%0%0%0+Num+Ord:1%0%0%0 DIGITS_KOLMAS    ;
+2%0%0%0+Num+Ord:2%0%0%0 DIGITS_KOLMAS    ;
+3%0%0%0+Num+Ord:3%0%0%0 DIGITS_KOLMAS    ;
+4%0%0%0+Num+Ord:4%0%0%0 DIGITS_KOLMAS    ;
+5%0%0%0+Num+Ord:5%0%0%0 DIGITS_KOLMAS    ;
+6%0%0%0+Num+Ord:6%0%0%0 DIGITS_KOLMAS    ;
+7%0%0%0+Num+Ord:7%0%0%0 DIGITS_KOLMAS    ;
+8%0%0%0+Num+Ord:8%0%0%0 DIGITS_KOLMAS    ;
+9%0%0%0+Num+Ord:9%0%0%0 DIGITS_KOLMAS    ;
+1%0%0%0%0+Num+Card:1%0%0%0%0 DIGITS_TUHAT    ;
+2%0%0%0%0+Num+Card:2%0%0%0%0 DIGITS_TUHAT    ;
+3%0%0%0%0+Num+Card:3%0%0%0%0 DIGITS_TUHAT    ;
+4%0%0%0%0+Num+Card:4%0%0%0%0 DIGITS_TUHAT    ;
+5%0%0%0%0+Num+Card:5%0%0%0%0 DIGITS_TUHAT    ;
+6%0%0%0%0+Num+Card:6%0%0%0%0 DIGITS_TUHAT    ;
+7%0%0%0%0+Num+Card:7%0%0%0%0 DIGITS_TUHAT    ;
+8%0%0%0%0+Num+Card:8%0%0%0%0 DIGITS_TUHAT    ;
+9%0%0%0%0+Num+Card:9%0%0%0%0 DIGITS_TUHAT    ;
+1%0%0%0%0+Num+Ord:1%0%0%0%0 DIGITS_KOLMAS    ;
+2%0%0%0%0+Num+Ord:2%0%0%0%0 DIGITS_KOLMAS    ;
+3%0%0%0%0+Num+Ord:3%0%0%0%0 DIGITS_KOLMAS    ;
+4%0%0%0%0+Num+Ord:4%0%0%0%0 DIGITS_KOLMAS    ;
+5%0%0%0%0+Num+Ord:5%0%0%0%0 DIGITS_KOLMAS    ;
+6%0%0%0%0+Num+Ord:6%0%0%0%0 DIGITS_KOLMAS    ;
+7%0%0%0%0+Num+Ord:7%0%0%0%0 DIGITS_KOLMAS    ;
+8%0%0%0%0+Num+Ord:8%0%0%0%0 DIGITS_KOLMAS    ;
+9%0%0%0%0+Num+Ord:9%0%0%0%0 DIGITS_KOLMAS    ;
+1%0%0%0%0%0+Num+Card:1%0%0%0%0%0 DIGITS_TUHAT    ;
+2%0%0%0%0%0+Num+Card:2%0%0%0%0%0 DIGITS_TUHAT    ;
+3%0%0%0%0%0+Num+Card:3%0%0%0%0%0 DIGITS_TUHAT    ;
+4%0%0%0%0%0+Num+Card:4%0%0%0%0%0 DIGITS_TUHAT    ;
+5%0%0%0%0%0+Num+Card:5%0%0%0%0%0 DIGITS_TUHAT    ;
+6%0%0%0%0%0+Num+Card:6%0%0%0%0%0 DIGITS_TUHAT    ;
+7%0%0%0%0%0+Num+Card:7%0%0%0%0%0 DIGITS_TUHAT    ;
+8%0%0%0%0%0+Num+Card:8%0%0%0%0%0 DIGITS_TUHAT    ;
+9%0%0%0%0%0+Num+Card:9%0%0%0%0%0 DIGITS_TUHAT    ;
+1%0%0%0%0%0+Num+Ord:1%0%0%0%0%0 DIGITS_KOLMAS    ;
+2%0%0%0%0%0+Num+Ord:2%0%0%0%0%0 DIGITS_KOLMAS    ;
+3%0%0%0%0%0+Num+Ord:3%0%0%0%0%0 DIGITS_KOLMAS    ;
+4%0%0%0%0%0+Num+Ord:4%0%0%0%0%0 DIGITS_KOLMAS    ;
+5%0%0%0%0%0+Num+Ord:5%0%0%0%0%0 DIGITS_KOLMAS    ;
+6%0%0%0%0%0+Num+Ord:6%0%0%0%0%0 DIGITS_KOLMAS    ;
+7%0%0%0%0%0+Num+Ord:7%0%0%0%0%0 DIGITS_KOLMAS    ;
+8%0%0%0%0%0+Num+Ord:8%0%0%0%0%0 DIGITS_KOLMAS    ;
+9%0%0%0%0%0+Num+Ord:9%0%0%0%0%0 DIGITS_KOLMAS    ;
+1%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+2%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+3%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+4%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+5%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+6%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+7%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+8%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+9%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+1%0%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+2%0%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+3%0%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+4%0%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+5%0%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+6%0%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+7%0%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+8%0%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+9%0%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+1%0%0%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+2%0%0%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+3%0%0%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+4%0%0%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+5%0%0%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+6%0%0%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+7%0%0%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+8%0%0%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+9%0%0%0%0%0%0%0%0 DIGITS_ILLION_LOOP    ;
+1%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+2%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+3%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+4%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+5%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+6%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+7%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+8%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+9%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+1%0%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+2%0%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+3%0%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+4%0%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+5%0%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+6%0%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+7%0%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+8%0%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+9%0%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+1%0%0%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+2%0%0%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+3%0%0%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+4%0%0%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+5%0%0%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+6%0%0%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+7%0%0%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+8%0%0%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+9%0%0%0%0%0%0%0%0%0%0%0 DIGITS_ILLIARD_LOOP    ;
+
+LEXICON DIGITS_ILLIARD_LOOP
+!! The digit strings that end in 10 to 12 + 6n 0's are inflected alike:
+!!€gt-norm: int digit milliard loop
+!!€ 1000000000:   1000000000+Num+Card+Sg+Nom
+!!€ 300000000000: 300000000000+Num+Card+Sg+Nom
+!!€ 123456000000000000000000: 123456000000000000000000+Num+Card+Sg+Nom
+%0%0%0%0%0%0    DIGITS_ILLIARD_LOOP ;
++Num+Card:0    DIGITS_MILJARDI ;
++Num+Ord:0    DIGITS_KOLMAS ;
+
+LEXICON DIGITS_ILLION_LOOP
+!! The digit strings that end in 6 to 9 + 6n 0's are inflected alike:
+!!€gt-norm: int digit million loop
+!!€ 1000000:   1000000+Num+Card+Sg+Nom
+!!€ 300000000: 300000000+Num+Card+Sg+Nom
+!!€ 123456000000000000000: 123456000000000000000+Num+Card+Sg+Nom
+%0%0%0%0%0%0    DIGITS_ILLION_LOOP  ;
++Num+Card:0    DIGITS_MILJOONA ;
++Num+Ord:0    DIGITS_KOLMAS ;
+
+LEXICON DIGITS_DECIMAL_LOOP
+!! Decimal digit strings start with any number of digits 0 to 9, followed
+!! by decimal separator comma. The decimal dot may be allowed as substandard
+!! variant.
+!!€gt-norm: decimal digit loop
+!!€ 1,0: 1,0+Num+Sg+Nom
+!!€ 314,1: 314,1+Num+Sg+Nom
+%0  DIGITS_DECIMAL_LOOP ;
+1   DIGITS_DECIMAL_LOOP ;
+2   DIGITS_DECIMAL_LOOP ;
+3   DIGITS_DECIMAL_LOOP ;
+4   DIGITS_DECIMAL_LOOP ;
+5   DIGITS_DECIMAL_LOOP ;
+6   DIGITS_DECIMAL_LOOP ;
+7   DIGITS_DECIMAL_LOOP ;
+8   DIGITS_DECIMAL_LOOP ;
+9   DIGITS_DECIMAL_LOOP ;
+,   DIGITS_DECIMAL_LOOP_FINAL ;
+.   DIGITS_DECIMAL_LOOP_FINAL_SUB ;
+.:, DIGITS_DECIMAL_LOOP_FINAL ;
+
+
+LEXICON DIGITS_DECIMAL_LOOP_FINAL
+!! The decimal digit strings end in any number of digits 0 to 9, inflected
+!! along the last part.
+!!€gt-norm: decimal digit loop more
+!!€ 3,141: 3,141+Num+Sg+Nom
+!!€ 123,345: 123,345+Num+Sg+Nom
+%0  DIGITS_DECIMAL_LOOP_FINAL ;
+1   DIGITS_DECIMAL_LOOP_FINAL ;
+2   DIGITS_DECIMAL_LOOP_FINAL ;
+3   DIGITS_DECIMAL_LOOP_FINAL ;
+4   DIGITS_DECIMAL_LOOP_FINAL ;
+5   DIGITS_DECIMAL_LOOP_FINAL ;
+6   DIGITS_DECIMAL_LOOP_FINAL ;
+7   DIGITS_DECIMAL_LOOP_FINAL ;
+8   DIGITS_DECIMAL_LOOP_FINAL ;
+9   DIGITS_DECIMAL_LOOP_FINAL ;
+%0+Num:%0   DIGITS_NOLLA ;
+1+Num:1   DIGITS_YKSI  ;
+2+Num:2   DIGITS_KAKSI ;
+3+Num:3   DIGITS_KOLME ;
+4+Num:4   DIGITS_NELJÄ ;
+5+Num:5   DIGITS_VIISI ;
+6+Num:6   DIGITS_KUUSI ;
+7+Num:7   DIGITS_SEITSEMÄN ;
+8+Num:8   DIGITS_KAHDEKSAN ;
+9+Num:9   DIGITS_YHDEKSÄN  ;
+
+LEXICON DIGITS_DECIMAL_LOOP_FINAL_SUB
+!! The decimal digit strings with dot may be allowed as sub-standard option
+!! with respective analysis.
+%0  DIGITS_DECIMAL_LOOP_FINAL_SUB ;
+1   DIGITS_DECIMAL_LOOP_FINAL_SUB ;
+2   DIGITS_DECIMAL_LOOP_FINAL_SUB ;
+3   DIGITS_DECIMAL_LOOP_FINAL_SUB ;
+4   DIGITS_DECIMAL_LOOP_FINAL_SUB ;
+5   DIGITS_DECIMAL_LOOP_FINAL_SUB ;
+6   DIGITS_DECIMAL_LOOP_FINAL_SUB ;
+7   DIGITS_DECIMAL_LOOP_FINAL_SUB ;
+8   DIGITS_DECIMAL_LOOP_FINAL_SUB ;
+9   DIGITS_DECIMAL_LOOP_FINAL_SUB ;
+%0+Num+Err/Orth:%0   DIGITS_NOLLA ;
+1+Num+Err/Orth:1   DIGITS_YKSI  ;
+2+Num+Err/Orth:2   DIGITS_KAKSI ;
+3+Num+Err/Orth:3   DIGITS_KOLME ;
+4+Num+Err/Orth:4   DIGITS_NELJÄ ;
+5+Num+Err/Orth:5   DIGITS_VIISI ;
+6+Num+Err/Orth:6   DIGITS_KUUSI ;
+7+Num+Err/Orth:7   DIGITS_SEITSEMÄN ;
+8+Num+Err/Orth:8   DIGITS_KAHDEKSAN ;
+9+Num+Err/Orth:9   DIGITS_YHDEKSÄN  ;
+
+!! !!!Roman numerals with inflection
+!! Roman numerals are composed the symbols M, D, C, L, X, V, I in ascending
+!! scale and some combinations, they denote ordinal numbers and inflect like
+!! ones.
+
+!! !!Main lexicon for roman digits
+!! This lexicon divides into four groups
+LEXICON DIGITS_ROMANS
+!!€gt-norm: roman numeral
+!!€ MM: MM+Num+Ord+Sg+Nom
+!!€ MCXI: MCXI+Num+Ord+Sg+Nom
+!!€ CMXCIX: CMXCIX+Num+Ord+Sg+Nom
+0    DIGITS_ROMANS_THOUSANDS ;
+0    DIGITS_ROMANS_HUNDREDS  ;
+0    DIGITS_ROMANS_TENS      ;
+0    DIGITS_ROMANS_ONES      ;
+
+!! !!Roman numerals according to digital class, one by one
+!! !Roman thousands
+LEXICON DIGITS_ROMANS_THOUSANDS
+!! Thousands can be followed by any of other parts
+!!€gt-norm: roman numeral thousand
+!!€ MII: MII+Num+Ord+Sg+Nom
+!!€ MCCCXXII: MCCCXXII+Num+Ord+Sg+Nom
+MMMM    DIGITS_ROMANS_HUNDREDS  ;
+MMM     DIGITS_ROMANS_HUNDREDS  ;
+MM      DIGITS_ROMANS_HUNDREDS  ;
+M       DIGITS_ROMANS_HUNDREDS  ;
+MMMM    DIGITS_ROMANS_TENS  ;
+MMM     DIGITS_ROMANS_TENS  ;
+MM      DIGITS_ROMANS_TENS  ;
+M       DIGITS_ROMANS_TENS  ;
+MMMM    DIGITS_ROMANS_ONES  ;
+MMM     DIGITS_ROMANS_ONES  ;
+MM      DIGITS_ROMANS_ONES  ;
+M       DIGITS_ROMANS_ONES  ;
+MMMM+Num+Ord:MMMM    DIGITS_ROMANS_TOINEN  ;
+MMM+Num+Ord:MMM     DIGITS_ROMANS_TOINEN  ;
+MM+Num+Ord:MM      DIGITS_ROMANS_TOINEN  ;
+M+Num+Ord:M       DIGITS_ROMANS_TOINEN  ;
+
+
+!! !Roman hundreds
+LEXICON DIGITS_ROMANS_HUNDREDS
+!! Hundreds can be followed by anything but thousands:
+!!€gt-norm: roman numeral hundred
+!!€ CXXI: CXXI+Num+Ord+Sg+Nom
+!!€ DXXIV: DXXIV+Num+Ord+Sg+Nom
+CM      DIGITS_ROMANS_TENS  ;
+DCCC    DIGITS_ROMANS_TENS  ;
+DCC     DIGITS_ROMANS_TENS  ;
+DC      DIGITS_ROMANS_TENS  ;
+D       DIGITS_ROMANS_TENS  ;
+CD      DIGITS_ROMANS_TENS  ;
+CCC     DIGITS_ROMANS_TENS  ;
+CC      DIGITS_ROMANS_TENS  ;
+C       DIGITS_ROMANS_TENS  ;
+CM      DIGITS_ROMANS_ONES  ;
+DCCC    DIGITS_ROMANS_ONES  ;
+DCC     DIGITS_ROMANS_ONES  ;
+DC      DIGITS_ROMANS_ONES  ;
+D       DIGITS_ROMANS_ONES  ;
+CD      DIGITS_ROMANS_ONES  ;
+CCC     DIGITS_ROMANS_ONES  ;
+CC      DIGITS_ROMANS_ONES  ;
+C       DIGITS_ROMANS_ONES  ;
+CM+Num+Ord:CM      DIGITS_ROMANS_TOINEN  ;
+DCCC+Num+Ord:DCCC    DIGITS_ROMANS_TOINEN  ;
+DCC+Num+Ord:DCC     DIGITS_ROMANS_TOINEN  ;
+DC+Num+Ord:DC      DIGITS_ROMANS_TOINEN  ;
+D+Num+Ord:D       DIGITS_ROMANS_TOINEN  ;
+CD+Num+Ord:CD      DIGITS_ROMANS_TOINEN  ;
+CCC+Num+Ord:CCC     DIGITS_ROMANS_TOINEN  ;
+CC+Num+Ord:CC      DIGITS_ROMANS_TOINEN  ;
+C+Num+Ord:C       DIGITS_ROMANS_TOINEN  ;
+
+!! !Roman tens
+LEXICON DIGITS_ROMANS_TENS
+!! Tens can be followed by ones:
+!!€gt-norm: roman numeral ten
+!!€ XIX: XIX+Num+Ord+Sg+Nom
+!!€ XXVII: XXVII+Num+Ord+Sg+Nom
+XC      DIGITS_ROMANS_ONES  ;
+LXXX    DIGITS_ROMANS_ONES  ;
+LXX     DIGITS_ROMANS_ONES  ;
+LX      DIGITS_ROMANS_ONES  ;
+L       DIGITS_ROMANS_ONES  ;
+XL      DIGITS_ROMANS_ONES  ;
+XXX     DIGITS_ROMANS_ONES  ;
+XX      DIGITS_ROMANS_ONES  ;
+X       DIGITS_ROMANS_ONES  ;
+XC+Num+Ord:XC      DIGITS_ROMANS_ENSIMMÄINEN  ;
+LXXX+Num+Ord:LXXX    DIGITS_ROMANS_ENSIMMÄINEN  ;
+LXX+Num+Ord:LXX     DIGITS_ROMANS_ENSIMMÄINEN  ;
+LX+Num+Ord:LX      DIGITS_ROMANS_ENSIMMÄINEN  ;
+L+Num+Ord:L       DIGITS_ROMANS_ENSIMMÄINEN  ;
+XL+Num+Ord:XL      DIGITS_ROMANS_ENSIMMÄINEN  ;
+XXX+Num+Ord:XXX     DIGITS_ROMANS_ENSIMMÄINEN  ;
+XX+Num+Ord:XX      DIGITS_ROMANS_ENSIMMÄINEN  ;
+X+Num+Ord:X       DIGITS_ROMANS_ENSIMMÄINEN  ;
+
+!! !Roman ones
+LEXICON DIGITS_ROMANS_ONES
+!! Ones come alone
+!!€gt-norm: roman numerals one to nine
+!!€ IX: IX+Num+Ord+Sg+Nom
+!!€ VIII: VIII+Num+Ord+Sg+Nom
+!!€ II: II+Num+Ord+Sg+Nom
+IX+Num+Ord:IX      DIGITS_ROMANS_ENSIMMÄINEN   ;
+VIII+Num+Ord:VIII    DIGITS_ROMANS_TOINEN        ;
+VII+Num+Ord:VII     DIGITS_ROMANS_ENSIMMÄINEN   ;
+VI+Num+Ord:VI      DIGITS_ROMANS_TOINEN        ;
+V+Num+Ord:V       DIGITS_ROMANS_ENSIMMÄINEN   ;
+IV+Num+Ord:IV      DIGITS_ROMANS_ENSIMMÄINEN   ;
+III+Num+Ord:III     DIGITS_ROMANS_TOINEN      ;
+II+Num+Ord:II      DIGITS_ROMANS_TOINEN        ;
+I+Num+Ord:I       DIGITS_ROMANS_ENSIMMÄINEN   ;
+

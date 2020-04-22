@@ -1,0 +1,3723 @@
+!! !!!Pronouns
+!! Pronouns are a closed special sub class of nouns. Morphologically pronouns
+!! have often defective, heteroclitic or otherwise irregular inflectional
+!! patterns, and certain pronouns have an morphophonologically distinct
+!! accusative case, extinct from other noun classes 
+!!
+!! Further reading: [VISK §§ 
+!! 100|http://scripta.kotus.fi/visk/sisalto.php?p=100] – 104, Semantics ...
+!! [VISK § 7XX|http://scripta.kotus.fi/visk/sisalto.php?p=7XX]
+! FIXME: pronouns have stem variations and inflections listed, it doesn't
+! matter a big deal but might as well do it the same way as rest of the things
+! to get systematic benefits from lexicon <=> morph structure.
+
+LEXICON PRONOUN
+!! Pronouns are subdivided into categories by semantic and syntactic means.
+!! Semantic categories delimit the type of referents (humane, sentient,
+!! object), qualification and quantification. (interrogative, quantor).
+!! Morphosyntactically distinct is class of proadjectives, that inflect and
+!! act like adjectives.
+!
+!! There are six personal pronouns for the six deictic references used; first,
+!! second and third singular and plural. The personal pronouns have separate
+!! accusative cases marked by t suffix. The pronouns in standard literary
+!! Finnish are *minä* (I), *sinä* (you), *hän* (he), *me* (we), *te* (you),
+!! *he* (they). 
+!!
+!! Further reading: [VISK § 100|http://scripta.kotus.fi/visk/sisalto.php?p=100]
+!!
+!!€gt-norm: Personal pronouns
+!!€ minä: minä+Pron+Pers+Sg+Nom # me
+!!€ sinut: sinä+Pron+Pers+Sg+Acc
+!!€ heille: he+Pron+Pers+Pl+All
+
+minä+Pron+Pers+Sg1:mi    PRON_MINÄ       ;
+sinä+Pron+Pers+Sg2:si    PRON_MINÄ       ;
+hän+Pron+Pers+Sg3:hän    PRON_HÄN        ;
+me+Pron+Pers+Pl1:me      PRON_ME ;
+te+Pron+Pers+Pl2:te      PRON_ME ;
+he+Pron+Pers+Pl3:he      PRON_ME ;
+
+!! The personal pronouns are among the most dialectally varied words of the
+!! Finnish language. The pronouns forms are one of the factors separating
+!! eastern dialects from the western ones. The personal pronouns of eastern
+!! dialects are *mie*, *sie*, (*hää*, *hiä*), *myö*, *työ*, *hyö* resp.;
+!! The third singular being rare in modern use. |citation-needed|
+mie+Pron+Pers+Sg1+Abl+Use/NG+Dial/East:miulta    PRON_BACK_CLIT_OPT ;
+mie+Pron+Pers+Sg1+Acc+Use/NG+Dial/East:miut  PRON_BACK_CLIT_OPT ;
+mie+Pron+Pers+Sg1+Ade+Use/NG+Dial/East:miulla    PRON_BACK_CLIT_OPT ;
+mie+Pron+Pers+Sg1+All+Use/NG+Dial/East:miulle    PRON_BACK_CLIT_OPT ;
+mie+Pron+Pers+Sg1+Ela+Use/NG+Dial/East:miusta    PRON_BACK_CLIT_OPT ;
+mie+Pron+Pers+Sg1+Ess+Use/NG+Dial/East:miuna     PRON_BACK_CLIT_OPT ;
+mie+Pron+Pers+Sg1+Gen+Use/NG+Dial/East:miun  PRON_BACK_CLIT_OPT ;
+mie+Pron+Pers+Sg1+Ill+Use/NG+Dial/East:minnuun   PRON_BACK_CLIT_OPT ;
+mie+Pron+Pers+Sg1+Ill+Use/NG+Dial/East:miuhun    PRON_BACK_CLIT_OPT ;
+mie+Pron+Pers+Sg1+Ine+Use/NG+Dial/East:miussa    PRON_BACK_CLIT_OPT ;
+mie+Pron+Pers+Sg1+Nom+Use/NG+Dial/East:mie    PRON_FRONT_CLIT_OPT ;
+mie+Pron+Pers+Sg1+Par+Use/NG+Dial/East:minuu     PRON_BACK_CLIT_OPT ;
+mie+Pron+Pers+Sg1+Par+Use/NG+Dial/East:minnuu    PRON_BACK_CLIT_OPT ;
+mie+Pron+Pers+Sg1+Par+Use/NG+Dial/East:miua  PRON_BACK_CLIT_OPT ;
+mie+Pron+Pers+Sg1+Par+Use/NG+Dial/East:miuta     PRON_BACK_CLIT_OPT ;
+mie+Pron+Pers+Sg1+Tra+Use/NG+Dial/East:miuks     PRON_BACK_CLIT_OPT ;
+mie+Pron+Pers+Sg1+Tra+Use/NG+Dial/East:miuksi    PRON_BACK_CLIT_OPT ;
+sie+Pron+Pers+Sg2+Abl+Use/NG+Dial/East:siulta    PRON_BACK_CLIT_OPT ;
+sie+Pron+Pers+Sg2+Acc+Use/NG+Dial/East:siut  PRON_BACK_CLIT_OPT ;
+sie+Pron+Pers+Sg2+Ade+Use/NG+Dial/East:siulla    PRON_BACK_CLIT_OPT ;
+sie+Pron+Pers+Sg2+All+Use/NG+Dial/East:siulle    PRON_BACK_CLIT_OPT ;
+sie+Pron+Pers+Sg2+Ela+Use/NG+Dial/East:siusta    PRON_BACK_CLIT_OPT ;
+sie+Pron+Pers+Sg2+Ess+Use/NG+Dial/East:siuna     PRON_BACK_CLIT_OPT ;
+sie+Pron+Pers+Sg2+Gen+Use/NG+Dial/East:siun  PRON_BACK_CLIT_OPT ;
+sie+Pron+Pers+Sg2+Ill+Use/NG+Dial/East:sinnuun   PRON_BACK_CLIT_OPT ;
+sie+Pron+Pers+Sg2+Ill+Use/NG+Dial/East:siuhun    PRON_BACK_CLIT_OPT ;
+sie+Pron+Pers+Sg2+Ine+Use/NG+Dial/East:siussa    PRON_BACK_CLIT_OPT ;
+sie+Pron+Pers+Sg2+Nom+Use/NG+Dial/East:sie    PRON_FRONT_CLIT_OPT ;
+sie+Pron+Pers+Sg2+Par+Use/NG+Dial/East:sinnuu    PRON_BACK_CLIT_OPT ;
+sie+Pron+Pers+Sg2+Par+Use/NG+Dial/East:sinuu     PRON_BACK_CLIT_OPT ;
+sie+Pron+Pers+Sg2+Par+Use/NG+Dial/East:siua  PRON_BACK_CLIT_OPT ;
+sie+Pron+Pers+Sg2+Par+Use/NG+Dial/East:siuta     PRON_BACK_CLIT_OPT ;
+sie+Pron+Pers+Sg2+Tra+Use/NG+Dial/East:siuksi    PRON_BACK_CLIT_OPT ;
+hää+Pron+Pers+Sg3+Abl+Use/NG+Dial/East:hältä      PRON_FRONT_CLIT_OPT ;
+hää+Pron+Pers+Sg3+Ade+Use/NG+Dial/East:hällä      PRON_FRONT_CLIT_OPT ;
+hää+Pron+Pers+Sg3+Ill+Use/NG+Dial/East:hännee     PRON_FRONT_CLIT_OPT ;
+hää+Pron+Pers+Sg3+All+Use/NG+Dial/East:hälle      PRON_FRONT_CLIT_OPT ;
+hää+Pron+Pers+Sg3+Nom+Use/NG+Dial/East:hää    PRON_FRONT_CLIT_OPT ;
+hiä+Pron+Pers+Sg3+Nom+Use/NG+Dial/East:hiä     PRON_FRONT_CLIT_OPT ;
+myö+Pron+Pers+Pl1+Acc+Use/NG+Dial/East:meiät      PRON_FRONT_CLIT_OPT ;
+myö+Pron+Pers+Pl1+Gen+Use/NG+Dial/East:meiän      PRON_FRONT_CLIT_OPT ;
+myö+Pron+Pers+Pl1+Nom+Use/NG+Dial/East:myö    PRON_FRONT_CLIT_OPT ;
+työ+Pron+Pers+Pl2+Gen+Use/NG+Dial/East:teiän      PRON_FRONT_CLIT_OPT ;
+työ+Pron+Pers+Pl2+Acc+Use/NG+Dial/East:teiät      PRON_FRONT_CLIT_OPT ;
+työ+Pron+Pers+Pl2+Nom+Use/NG+Dial/East:työ    PRON_FRONT_CLIT_OPT ;
+hyö+Pron+Pers+Pl3+Gen+Use/NG+Dial/East:heiän      PRON_FRONT_CLIT_OPT ;
+hyö+Pron+Pers+Pl3+Acc+Use/NG+Dial/East:heiät      PRON_FRONT_CLIT_OPT ;
+hyö+Pron+Pers+Pl3+Nom+Use/NG+Dial/East:hyö    PRON_FRONT_CLIT_OPT ;
+
+!! In the western dialects the pronouns are *mää*, *sää* for first and second
+!! singular, and more variedly *meitti*, *teitti*, *heitti* for plurals.
+mää+Pron+Pers+Sg1+Nom+Use/NG+Dial/West:mää    PRON_FRONT_CLIT_OPT ;
+sää+Pron+Pers+Sg1+Nom+Use/NG+Dial/West:sää    PRON_FRONT_CLIT_OPT ;
+meitti+Pron+Pers+Pl1+Abl+Use/NG+Dial/West:meittiltä    PRON_FRONT_CLIT_OPT ;
+meitti+Pron+Pers+Pl1+Ade+Use/NG+Dial/West:meittillä    PRON_FRONT_CLIT_OPT ;
+meitti+Pron+Pers+Pl1+All+Use/NG+Dial/West:meittille    PRON_FRONT_CLIT_OPT ;
+meitti+Pron+Pers+Pl1+Ela+Use/NG+Dial/West:meittissä    PRON_FRONT_CLIT_OPT ;
+meitti+Pron+Pers+Pl1+Ess+Use/NG+Dial/West:meittinä    PRON_FRONT_CLIT_OPT ;
+meitti+Pron+Pers+Pl1+Gen+Use/NG+Dial/West:meittin    PRON_FRONT_CLIT_OPT ;
+meitti+Pron+Pers+Pl1+Ill+Use/NG+Dial/West:meittiin    PRON_FRONT_CLIT_OPT ;
+meitti+Pron+Pers+Pl1+Par+Use/NG+Dial/West:meittiä    PRON_FRONT_CLIT_OPT ;
+meitti+Pron+Pers+Pl1+Ine+Use/NG+Dial/West:meittissä    PRON_FRONT_CLIT_OPT ;
+meitti+Pron+Pers+Pl1+Nom+Use/NG+Dial/West:meitti    PRON_FRONT_CLIT_OPT ;
+teitti+Pron+Pers+Pl2+Abl+Use/NG+Dial/West:teittiltä    PRON_FRONT_CLIT_OPT ;
+teitti+Pron+Pers+Pl2+Ade+Use/NG+Dial/West:teittillä    PRON_FRONT_CLIT_OPT ;
+teitti+Pron+Pers+Pl2+All+Use/NG+Dial/West:teittille    PRON_FRONT_CLIT_OPT ;
+teitti+Pron+Pers+Pl2+Ela+Use/NG+Dial/West:teittissä    PRON_FRONT_CLIT_OPT ;
+teitti+Pron+Pers+Pl2+Ess+Use/NG+Dial/West:teittinä    PRON_FRONT_CLIT_OPT ;
+teitti+Pron+Pers+Pl2+Gen+Use/NG+Dial/West:teittin    PRON_FRONT_CLIT_OPT ;
+teitti+Pron+Pers+Pl2+Ill+Use/NG+Dial/West:teittiin    PRON_FRONT_CLIT_OPT ;
+teitti+Pron+Pers+Pl2+Par+Use/NG+Dial/West:teittiä    PRON_FRONT_CLIT_OPT ;
+teitti+Pron+Pers+Pl2+Ine+Use/NG+Dial/West:teittissä    PRON_FRONT_CLIT_OPT ;
+teitti+Pron+Pers+Pl2+Nom+Use/NG+Dial/West:teitti    PRON_FRONT_CLIT_OPT ;
+heitti+Pron+Pers+Pl3+Abl+Use/NG+Dial/West:heittiltä    PRON_FRONT_CLIT_OPT ;
+heitti+Pron+Pers+Pl3+Ade+Use/NG+Dial/West:heittillä    PRON_FRONT_CLIT_OPT ;
+heitti+Pron+Pers+Pl3+All+Use/NG+Dial/West:heittille    PRON_FRONT_CLIT_OPT ;
+heitti+Pron+Pers+Pl3+Ela+Use/NG+Dial/West:heittissä    PRON_FRONT_CLIT_OPT ;
+heitti+Pron+Pers+Pl3+Ess+Use/NG+Dial/West:heittinä    PRON_FRONT_CLIT_OPT ;
+heitti+Pron+Pers+Pl3+Gen+Use/NG+Dial/West:heittin    PRON_FRONT_CLIT_OPT ;
+heitti+Pron+Pers+Pl3+Ill+Use/NG+Dial/West:heittiin    PRON_FRONT_CLIT_OPT ;
+heitti+Pron+Pers+Pl3+Par+Use/NG+Dial/West:heittiä    PRON_FRONT_CLIT_OPT ;
+heitti+Pron+Pers+Pl3+Ine+Use/NG+Dial/West:heittissä    PRON_FRONT_CLIT_OPT ;
+heitti+Pron+Pers+Pl3+Nom+Use/NG+Dial/West:heitti    PRON_FRONT_CLIT_OPT ;
+
+!! In standard spoken Finnish, and in many cases even in written form, the
+!! words *mä* and *sä* are more common and preferred to longer minä and sinä
+!! for first and second singular respectively. In practice the distinction is
+!! much like between Estonian corresponding pronouns, but official norm still
+!! recommends only the long forms.
+!! For third singular the nominative form is *hän* as in standard written 
+!! language, however the inflection is without intervening *-ne-* part.
+mä+Pron+Pers+Sg1+Abl+Use/NG+Dial/Standard:multa  PRON_BACK_CLIT_OPT ;
+mä+Pron+Pers+Sg1+Acc+Use/NG+Dial/Standard:mut    PRON_BACK_CLIT_OPT ;
+mä+Pron+Pers+Sg1+Ade+Use/NG+Dial/Standard:mulla  PRON_BACK_CLIT_OPT ;
+mä+Pron+Pers+Sg1+All+Use/NG+Dial/Standard:mulle  PRON_BACK_CLIT_OPT ;
+mä+Pron+Pers+Sg1+Ela+Use/NG+Dial/Standard:musta  PRON_BACK_CLIT_OPT ;
+mä+Pron+Pers+Sg1+Ess+Use/NG+Dial/Standard:muna   PRON_BACK_CLIT_OPT ;
+mä+Pron+Pers+Sg1+Gen+Use/NG+Dial/Standard:mun    PRON_BACK_CLIT_OPT ;
+mä+Pron+Pers+Sg1+Ill+Use/NG+Dial/Standard:muhun  PRON_BACK_CLIT_OPT ;
+mä+Pron+Pers+Sg1+Ine+Use/NG+Dial/Standard:mussa  PRON_BACK_CLIT_OPT ;
+mä+Pron+Pers+Sg1+Nom+Use/NG+Dial/Standard:mä      PRON_FRONT_CLIT_OPT ;
+mä+Pron+Pers+Sg1+Par+Use/NG+Dial/Standard:mua    PRON_BACK_CLIT_OPT ;
+mä+Pron+Pers+Sg1+Tra+Use/NG+Dial/Standard:muksi  PRON_BACK_CLIT_OPT ;
+sä+Pron+Pers+Sg2+Abl+Use/NG+Dial/Standard:sulta  PRON_BACK_CLIT_OPT ;
+sä+Pron+Pers+Sg2+Acc+Use/NG+Dial/Standard:sut    PRON_BACK_CLIT_OPT ;
+sä+Pron+Pers+Sg2+Ade+Use/NG+Dial/Standard:sulla  PRON_BACK_CLIT_OPT ;
+sä+Pron+Pers+Sg2+All+Use/NG+Dial/Standard:sulle  PRON_BACK_CLIT_OPT ;
+sä+Pron+Pers+Sg2+Ela+Use/NG+Dial/Standard:susta  PRON_BACK_CLIT_OPT ;
+sä+Pron+Pers+Sg2+Ess+Use/NG+Dial/Standard:suna   PRON_BACK_CLIT_OPT ;
+sä+Pron+Pers+Sg2+Gen+Use/NG+Dial/Standard:sun    PRON_BACK_CLIT_OPT ;
+sä+Pron+Pers+Sg2+Ill+Use/NG+Dial/Standard:suhun  PRON_BACK_CLIT_OPT ;
+sä+Pron+Pers+Sg2+Ine+Use/NG+Dial/Standard:sussa  PRON_BACK_CLIT_OPT ;
+sä+Pron+Pers+Sg2+Nom+Use/NG+Dial/Standard:sä      PRON_FRONT_CLIT_OPT ;
+sä+Pron+Pers+Sg2+Par+Use/NG+Dial/Standard:sua    PRON_BACK_CLIT_OPT ;
+sä+Pron+Pers+Sg2+Tra+Use/NG+Dial/Standard:suksi  PRON_BACK_CLIT_OPT ;
+!! In old literary Finnish and poetic language the forms *ma* and *sa* are
+!! still used.
+ma+Pron+Pers+Sg1+Nom+Use/Marg:ma  PRON_BACK_CLIT_OPT ;
+sa+Pron+Pers+Sg2+Nom+Use/Marg:sa  PRON_BACK_CLIT_OPT ;
+
+!! There are six demonstrative pronouns for six non-personal references. In
+!! standard written Finnish these are *tämä* (this), *tuo* (that), *se* (it),
+!! *nämä* (these), *nuo* (those), *ne* (those).
+
+!! Further reading: [VISK § 101|http://scripta.kotus.fi/visk/sisalto.php?p=101]
+!!
+!!€gt-norm: Demonstrative pronouns
+!!€ tämä: tämä+Pron+Dem+Sg+Nom
+!!€ tuolle: tuo+Pron+Dem+Sg+All
+tämä+Pron+Dem+Sg+Abe:tättä    PRON_FRONT_CLIT_OPT ;
+tämä+Pron+Dem+Sg+Abl:tältä    PRON_FRONT_CLIT_OPT ;
+tämä+Pron+Dem+Sg+Ade:tällä    PRON_FRONT_CLIT_OPT ;
+tämä+Pron+Dem+Sg+All:tälle    PRON_FRONT_CLIT_OPT ;
+tämä+Pron+Dem+Sg+Com:täne     PRON_FRONT_CLIT_OPT ;
+tämä+Pron+Dem+Sg+Ela:tästä    PRON_FRONT_CLIT_OPT ;
+tämä+Pron+Dem+Sg+Ess:tänä     PRON_FRONT_CLIT_OPT ;
+tämä+Pron+Dem+Sg+Gen:tämän    PRON_FRONT_CLIT_OPT ;
+tämä+Pron+Dem+Sg+Ill:tähän    PRON_FRONT_CLIT_OPT ;
+tämä+Pron+Dem+Sg+Ine:tässä    PRON_FRONT_CLIT_OPT ;
+tämä+Pron+Dem+Sg+Ins:tämän    PRON_FRONT_CLIT_OPT ;
+tämä+Pron+Dem+Sg+Nom:tämä     PRON_FRONT_CLIT_OPT ;
+tämä+Pron+Dem+Sg+Par:tätä     PRON_FRONT_CLIT_OPT ;
+tämä+Pron+Dem+Sg+Tra:täksi    PRON_FRONT_CLIT_OPT ;
+tuo+Pron+Dem+Sg+Abe:tuotta   PRON_BACK_CLIT_OPT ;
+tuo+Pron+Dem+Sg+Abl:tuolta   PRON_BACK_CLIT_OPT ;
+tuo+Pron+Dem+Sg+Ade:tuolla   PRON_BACK_CLIT_OPT ;
+tuo+Pron+Dem+Sg+All:tuolle   PRON_BACK_CLIT_OPT ;
+tuo+Pron+Dem+Sg+Com:tuone    PRON_BACK_CLIT_OPT ;
+tuo+Pron+Dem+Sg+Ela:tuosta   PRON_BACK_CLIT_OPT ;
+tuo+Pron+Dem+Sg+Ess:tuona    PRON_BACK_CLIT_OPT ;
+tuo+Pron+Dem+Sg+Gen:tuon     PRON_BACK_CLIT_OPT ;
+tuo+Pron+Dem+Sg+Ill:tuohon   PRON_BACK_CLIT_OPT ;
+tuo+Pron+Dem+Sg+Ine:tuossa   PRON_BACK_CLIT_OPT ;
+tuo+Pron+Dem+Sg+Ins:tuon     PRON_BACK_CLIT_OPT ;
+tuo+Pron+Dem+Sg+Nom:tuo  PRON_BACK_CLIT_OPT ;
+tuo+Pron+Dem+Sg+Par:tuota    PRON_BACK_CLIT_OPT ;
+tuo+Pron+Dem+Sg+Tra:tuoksi   PRON_BACK_CLIT_OPT ;
+se+Pron+Dem+Sg+Abe:sittä      PRON_FRONT_CLIT_OPT ;
+se+Pron+Dem+Sg+Abl+Use/NG+Dial/Standard:sielt    PRON_FRONT_CLIT_OPT ;
+se+Pron+Dem+Sg+Abl:sieltä     PRON_FRONT_CLIT_OPT ;
+se+Pron+Dem+Sg+Abl:siltä      PRON_FRONT_CLIT_OPT ;
+se+Pron+Dem+Sg+Ade+Use/NG+Dial/Standard:siel     PRON_FRONT_CLIT_OPT ;
+se+Pron+Dem+Sg+Ade:siellä     PRON_FRONT_CLIT_OPT ;
+se+Pron+Dem+Sg+Ade:sillä      PRON_FRONT_CLIT_OPT ;
+se+Pron+Dem+Sg+All:sille      PRON_FRONT_CLIT_OPT ;
+se+Pron+Dem+Sg+Com:sine   PRON_FRONT_CLIT_OPT ;
+se+Pron+Dem+Sg+Ela+Use/NG+Dial/Standard:siit     PRON_FRONT_CLIT_OPT ;
+se+Pron+Dem+Sg+Ela:siitä      PRON_FRONT_CLIT_OPT ;
+se+Pron+Dem+Sg+Ess:sinä   PRON_FRONT_CLIT_OPT ;
+se+Pron+Dem+Sg+Gen:sen    PRON_FRONT_CLIT_OPT ;
+se+Pron+Dem+Sg+Ill:siihen     PRON_FRONT_CLIT_OPT ;
+se+Pron+Dem+Sg+Ine+Use/NG+Dial/Standard:siin     PRON_FRONT_CLIT_OPT ;
+se+Pron+Dem+Sg+Ine+Use/NG+Dial/Standard:siin     PRON_FRONT_CLIT_OPT ;
+se+Pron+Dem+Sg+Ine+Use/NG:siinä      PRON_FRONT_CLIT_OPT ;
+se+Pron+Dem+Sg+Ins:sen    PRON_FRONT_CLIT_OPT ;
+se+Pron+Dem+Sg+Nom:se     PRON_FRONT_CLIT_OPT ;
+se+Pron+Dem+Sg+Par:sitä   PRON_FRONT_CLIT_OPT ;
+se+Pron+Dem+Sg+Tra:siksi      PRON_FRONT_CLIT_OPT ;
+nämä+Pron+Dem+Pl+Par:näitä    PRON_FRONT_CLIT_OPT ;
+nämä+Pron+Dem+Pl+Tra:näiksi   PRON_FRONT_CLIT_OPT ;
+nämä+Pron+Dem+Pl+Abe:näittä   PRON_FRONT_CLIT_OPT ;
+nämä+Pron+Dem+Pl+Abl:näiltä   PRON_FRONT_CLIT_OPT ;
+nämä+Pron+Dem+Pl+Ade:näillä   PRON_FRONT_CLIT_OPT ;
+nämä+Pron+Dem+Pl+All:näille   PRON_FRONT_CLIT_OPT ;
+nämä+Pron+Dem+Pl+Com:näine    PRON_FRONT_CLIT_OPT ;
+nämä+Pron+Dem+Pl+Ela:näistä   PRON_FRONT_CLIT_OPT ;
+nämä+Pron+Dem+Pl+Ess:näinä    PRON_FRONT_CLIT_OPT ;
+nämä+Pron+Dem+Pl+Gen+Use/NG:näitten      PRON_FRONT_CLIT_OPT ;
+nämä+Pron+Dem+Pl+Gen:näiden   PRON_FRONT_CLIT_OPT ;
+nämä+Pron+Dem+Pl+Ill:näihin   PRON_FRONT_CLIT_OPT ;
+nämä+Pron+Dem+Pl+Ine:näissä   PRON_FRONT_CLIT_OPT ;
+nämä+Pron+Dem+Pl+Ins:näin     PRON_FRONT_CLIT_OPT ;
+nämä+Pron+Dem+Pl+Nom:nämä     PRON_FRONT_CLIT_OPT ;
+nuo+Pron+Dem+Pl+Abe:noitta   PRON_BACK_CLIT_OPT ;
+nuo+Pron+Dem+Pl+Abl:noilta   PRON_BACK_CLIT_OPT ;
+nuo+Pron+Dem+Pl+Ade:noilla   PRON_BACK_CLIT_OPT ;
+nuo+Pron+Dem+Pl+All:noille   PRON_BACK_CLIT_OPT ;
+nuo+Pron+Dem+Pl+Com:noine    PRON_BACK_CLIT_OPT ;
+nuo+Pron+Dem+Pl+Ela:noista   PRON_BACK_CLIT_OPT ;
+nuo+Pron+Dem+Pl+Ess:noina    PRON_BACK_CLIT_OPT ;
+nuo+Pron+Dem+Pl+Gen+Use/NG:noitten  PRON_BACK_CLIT_OPT ;
+nuo+Pron+Dem+Pl+Gen:noiden   PRON_BACK_CLIT_OPT ;
+nuo+Pron+Dem+Pl+Ill:noihin   PRON_BACK_CLIT_OPT ;
+nuo+Pron+Dem+Pl+Ine:noissa   PRON_BACK_CLIT_OPT ;
+nuo+Pron+Dem+Pl+Ins:noin     PRON_BACK_CLIT_OPT ;
+nuo+Pron+Dem+Pl+Nom:nuo  PRON_BACK_CLIT_OPT ;
+nuo+Pron+Dem+Pl+Par:noita    PRON_BACK_CLIT_OPT ;
+nuo+Pron+Dem+Pl+Tra:noiksi   PRON_BACK_CLIT_OPT ;
+ne+Pron+Dem+Pl+Abe:niittä     PRON_FRONT_CLIT_OPT ;
+ne+Pron+Dem+Pl+Abl+Use/NG+Dial/Standard:niilt    PRON_FRONT_CLIT_OPT ;
+ne+Pron+Dem+Pl+Abl+Use/NG:niiltä     PRON_FRONT_CLIT_OPT ;
+ne+Pron+Dem+Pl+Ade+Use/NG+Dial/Standard:niil     PRON_FRONT_CLIT_OPT ;
+ne+Pron+Dem+Pl+Ade+Use/NG:niillä     PRON_FRONT_CLIT_OPT ;
+ne+Pron+Dem+Pl+All:niille     PRON_FRONT_CLIT_OPT ;
+ne+Pron+Dem+Pl+Com:niine      PRON_FRONT_CLIT_OPT ;
+ne+Pron+Dem+Pl+Ela:niistä     PRON_FRONT_CLIT_OPT ;
+ne+Pron+Dem+Pl+Ess:niinä      PRON_FRONT_CLIT_OPT ;
+ne+Pron+Dem+Pl+Gen:niiden     PRON_FRONT_CLIT_OPT ;
+ne+Pron+Dem+Pl+Ill:niihin     PRON_FRONT_CLIT_OPT ;
+ne+Pron+Dem+Pl+Ine:niissä     PRON_FRONT_CLIT_OPT ;
+ne+Pron+Dem+Pl+Ins:niin   PRON_FRONT_CLIT_OPT ;
+ne+Pron+Dem+Pl+Nom:ne     PRON_FRONT_CLIT_OPT ;
+ne+Pron+Dem+Pl+Par:niitä      PRON_FRONT_CLIT_OPT ;
+ne+Pron+Dem+Pl+Tra:niiksi     PRON_FRONT_CLIT_OPT ;
+
+!! In standard spoken Finnish the demonstrative pronouns are commonly
+!! *tää*, *toi*, *nää*, *noi* instead of *tämä*, *tuo*, *nämä*, *nuo*.
+tää+Pron+Dem+Sg+Gen:tän   PRON_FRONT_CLIT_OPT ;
+tää+Pron+Dem+Sg+Nom:tää   PRON_FRONT_CLIT_OPT ;
+toi+Pron+Dem+Sg+Abl:tolta    PRON_BACK_CLIT_OPT ;
+toi+Pron+Dem+Sg+Ade:tolla    PRON_BACK_CLIT_OPT ;
+toi+Pron+Dem+Sg+All:tolle    PRON_BACK_CLIT_OPT ;
+toi+Pron+Dem+Sg+Ela:tosta    PRON_BACK_CLIT_OPT ;
+toi+Pron+Dem+Sg+Ess:tona     PRON_BACK_CLIT_OPT ;
+toi+Pron+Dem+Sg+Gen:ton  PRON_BACK_CLIT_OPT ;
+toi+Pron+Dem+Sg+Ill:tohon    PRON_BACK_CLIT_OPT ;
+toi+Pron+Dem+Sg+Ine:tossa    PRON_BACK_CLIT_OPT ;
+toi+Pron+Dem+Sg+Nom:toi  PRON_BACK_CLIT_OPT ;
+toi+Pron+Dem+Sg+Par:tota     PRON_BACK_CLIT_OPT ;
+toi+Pron+Dem+Sg+Tra:toksi    PRON_BACK_CLIT_OPT ;
+nää+Pron+Dem+Pl+Nom:nää   PRON_FRONT_CLIT_OPT ;
+noi+Pron+Dem+Pl+Nom:noi  PRON_BACK_CLIT_OPT ;
+
+!! Interrogative pronouns are used in question clauses. The basic
+!! interrogatives in standard written Finnish are *kuka* (who), *mikä* (what),
+!! *kumpi* (which); *millainen* (what kind of), *kuinka* (how),
+!! *miksi* (what for). 
+!!
+!! Further reading: [VISK §734|http://scripta.kotus.fi/visk/sisalto.php?p=734]
+!!
+!!€gt-norm: Interrogative pronouns
+!!€ kuka: kuka+Pron+Interr+Sg+Nom # who
+!!€ ketä: kuka+Pron+Interr+Sg+Par
+!!€ kenet: kuka+Pron+Interr+Sg+Acc
+kuka+Pron+Interr+Pl+Abe:keittä    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Abe:keittäkäs     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Abl:keiltä    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Abl:keiltäkäs     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Acc:ketkä     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Acc:ketkäs    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Ade:keillä    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Ade:keilläkäs     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+All:keille    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+All:keillekä      PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+All:keillekäs     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Com:keine     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Com:keinekä   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Com:keinekäs      PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Ela:keistä    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Ela:keistäkäs     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Ess:keinä     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Ess:keinäkäs      PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Gen:keiden    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Gen:keidenkä      PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Gen:keidenkäs     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Ill:keihin    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Ill:keihinkä      PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Ill:keihinkäs     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Ine:keissä    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Ine:keissäkäs     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Ins:kein      PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Ins:keinkä    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Ins:keinkäis      PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Nom:ketkä     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Nom:ketkäs    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Par:keitä     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Par:keitäkäs      PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Tra:keiksi    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Tra:keiksikä      PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Pl+Tra:keiksikäs     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Abe:kenettä   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Abe:kenettäkäs    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Abl:kulta    PRON_BACK_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Abl:keneltä   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Abl:keneltäkäs    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Acc:kenet     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Acc:kenetkä   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Acc:kenetkäs      PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ade:kenellä   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ade:kulla    PRON_BACK_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ade:kenelläkäs    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+All:kenelle   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+All:kulle    PRON_BACK_CLIT_OPT ;
+kuka+Pron+Interr+Sg+All:kenellekä     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+All:kenellekäs    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Com:kene      PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Com:kenekä    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ela:kenestä   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ela:kusta    PRON_BACK_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ela:kenestäkäs    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ess:kenenä    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ess:kenenäkäs     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Gen:kenen     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Gen:kenenkä   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Gen:kenenkäs      PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ill:kehen     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ill:kuhun    PRON_BACK_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ill:keneen    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ill:keneenkä      PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ill:keneenkäs     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ine:kenessä   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ine:kenessäkäs    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ins:kenen     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Nom:kuka     PRON_BACK_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Par:ketä      PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Par:kuta     PRON_BACK_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Tra:keneksi   PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Pl+Com:mine      PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Pl+Com:minekä    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Pl+Com:minekäs   PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Pl+Ins:minkä     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Pl+Ins+Use/NG:minkäs    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Pl+Nom:mitkä     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Pl+Nom+Use/NG:mitkäs    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Abe:mittä     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Abe:mittäkäs      PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Abl:miltä     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Abl:miltäkäs      PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Ade:millä     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Ade:milläkäs      PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+All:mille     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+All+Use/NG:millekä   PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+All+Use/NG:millekäs      PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Ela:mistä     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Ela+Use/NG:mistäkäs      PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Ess:minä      PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Ess+Use/NG:minäkäs   PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Gen:minkä     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Gen+Use/NG:minkäs    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Ill:mihin     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Ill+s:mihis   PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Ill+Use/NG:mihinkä   PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Ill+Use/NG:mihinkäs      PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Ine:missä     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Ine+s:missäs      PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Ine+Use/NG:missäkä   PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Ine+Use/NG:missäkäs      PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Nom:mikä      PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Nom+Use/NG:mikäs     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Par:mitä      PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Par+Use/NG:mitäkäs   PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Par+Use/NG:mitäs     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Tra:miksi     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Tra+Use/NG:miksikä   PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Interr+Sg+Tra+Use/NG:miksikäs      PRON_FRONT_CLIT_OPT ;
+kumpi+Pron+Interr+Pl+Abe:kummitta    PRON_BACK_CLIT_OPT ;
+kumpi+Pron+Interr+Pl+Abl:kummilta    PRON_BACK_CLIT_OPT ;
+kumpi+Pron+Interr+Pl+Ade:kummilla    PRON_BACK_CLIT_OPT ;
+kumpi+Pron+Interr+Pl+All:kummille    PRON_BACK_CLIT_OPT ;
+kumpi+Pron+Interr+Pl+Com:kumpine     PRON_BACK_CLIT_OPT ;
+kumpi+Pron+Interr+Pl+Ela:kummista    PRON_BACK_CLIT_OPT ;
+kumpi+Pron+Interr+Pl+Ess:kumpina     PRON_BACK_CLIT_OPT ;
+kumpi+Pron+Interr+Pl+Gen:kumpien     PRON_BACK_CLIT_OPT ;
+kumpi+Pron+Interr+Pl+Ill:kumpiin     PRON_BACK_CLIT_OPT ;
+kumpi+Pron+Interr+Pl+Ine:kummissa    PRON_BACK_CLIT_OPT ;
+kumpi+Pron+Interr+Pl+Ins:kummin  PRON_BACK_CLIT_OPT ;
+kumpi+Pron+Interr+Pl+Nom:kummat  PRON_BACK_CLIT_OPT ;
+kumpi+Pron+Interr+Pl+Par:kumpia  PRON_BACK_CLIT_OPT ;
+kumpi+Pron+Interr+Pl+Tra:kummiksi    PRON_BACK_CLIT_OPT ;
+kumpi+Pron+Interr+Sg+Abl:kummalta    PRON_BACK_CLIT_OPT ;
+kumpi+Pron+Interr+Sg+Ade:kummalla    PRON_BACK_CLIT_OPT ;
+kumpi+Pron+Interr+Sg+All:kummalle    PRON_BACK_CLIT_OPT ;
+kumpi+Pron+Interr+Sg+Ela:kummasta    PRON_BACK_CLIT_OPT ;
+kumpi+Pron+Interr+Sg+Ess:kumpana     PRON_BACK_CLIT_OPT ;
+kumpi+Pron+Interr+Sg+Gen:kumman  PRON_BACK_CLIT_OPT ;
+kumpi+Pron+Interr+Sg+Ill:kumpaan     PRON_BACK_CLIT_OPT ;
+kumpi+Pron+Interr+Sg+Ine:kummassa    PRON_BACK_CLIT_OPT ;
+kumpi+Pron+Interr+Sg+Ins:kumman  PRON_BACK_CLIT_OPT ;
+kumpi+Pron+Interr+Sg+Nom:kumpi   PRON_BACK_CLIT_OPT ;
+kumpi+Pron+Interr+Sg+Par:kumpaa  PRON_BACK_CLIT_OPT ;
+kumpi+Pron+Interr+Sg+Tra:kummaksi    PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Pl+Abe:millaisitta     PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Pl+Abl:millaisilta     PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Pl+Ade:millaisilla     PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Pl+All:millaisille     PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Pl+Com:millaisine  PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Pl+Ela:millaisista     PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Pl+Ess:millaisina  PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Pl+Gen:millaisten  PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Pl+Ill:millaisiin  PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Pl+Ine:millaisissa     PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Pl+Ins:millaisin   PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Pl+Nom:millaiset   PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Pl+Par:millaisia   PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Pl+Tra:millaisiksi     PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Sg+Abe:millaisetta     PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Sg+Abl:millaiselta     PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Sg+Ade:millaisella     PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Sg+All:millaiselle     PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Sg+Ela:millaisesta     PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Sg+Ess:millaisena  PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Sg+Gen:millaisen   PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Sg+Ill:millaiseen  PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Sg+Ine:millaisessa     PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Sg+Ins:millaisen   PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Sg+Nom:millainen   PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Sg+Par:millaista   PRON_BACK_CLIT_OPT ;
+millainen+Pron+Interr+Sg+Tra:millaiseksi     PRON_BACK_CLIT_OPT ;
+kuinka+Pron+Interr:kuinka    PRON_BACK_CLIT_OPT ;
+kuinka+Pron+Interr+s:kuinkas    PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Pl+Abe:monensitta  PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Pl+Abl:monensilta  PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Pl+Ade:monensilla  PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Pl+All:monensille  PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Pl+Com:monensine   PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Pl+Ela:monensista  PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Pl+Ess:monensina   PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Pl+Gen:monensien   PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Pl+Ill:monensiin   PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Pl+Ine:monensissa  PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Pl+Ins:monensin    PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Pl+Nom:monennet    PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Pl+Par:monensia    PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Pl+Tra:monensiksi  PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Sg+Abe:monennetta  PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Sg+Abl:monennelta  PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Sg+Ade:monennella  PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Sg+All:monennelle  PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Sg+Ela:monennesta  PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Sg+Ess:monentena   PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Sg+Gen:monennen    PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Sg+Ill:monenteen   PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Sg+Ine:monennessa  PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Sg+Ins:monennen    PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Sg+Nom:mones   PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Sg+Par:monetta     PRON_BACK_CLIT_OPT ;
+mones+Pron+Interr+Sg+Tra:monenneksi  PRON_BACK_CLIT_OPT ;
+
+!! The stem of *kuka* is shortened by from *kene* to *ke* in spoken language.
+kuka+Pron+Interr+Sg+Abl+Use/NG+Dial/Standard:keltä   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Abl+Use/NG+Dial/Standard:keltäkäs    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Acc+Use/NG+Dial/Standard:ketkä   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Acc+Use/NG+Dial/Standard:ketkäs      PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ade+Use/NG+Dial/Standard:kellä   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ade+Use/NG+Dial/Standard:kelläkäs    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+All+Use/NG+Dial/Standard:kelle   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+All+Use/NG+Dial/Standard:kellekä     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+All+Use/NG+Dial/Standard:kellekäs    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ela+Use/NG+Dial/Standard:kestä   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ela+Use/NG+Dial/Standard:kestäkäs    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ess+Use/NG+Dial/Standard:kenä    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ess+Use/NG+Dial/Standard:kenäkäs     PRON_FRONT_CLIT_OPT ;
+
+!! Few forms of *kuka* based on *ken* stem and *ku* stem have become archaic.
+!!
+!! Fuhrer reading: [VISK §102|http://scripta.kotus.fi/visk/sisalto.php?p=102]
+!!
+!! Also the short form of *mi* is archaic and limited to poetic
+!! use. |citation-needed|
+ken+Pron+Interr+Sg+Nom+Use/Marg:ken   PRON_FRONT_CLIT_OPT ;
+kenkin+Pron+Interr+Sg+Nom+Use/Marg:kenkin     PRON_FRONT_CLIT_OPT ;
+kenkään+Pron+Interr+Sg+Nom+Use/Marg:kenkään   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ine+Use/Marg:kussa   PRON_BACK_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Acc+Use/Marg:kutka   PRON_BACK_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ade+Use/Marg:kulla   PRON_BACK_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Abl+Use/Marg:kulta   PRON_BACK_CLIT_OPT ;
+kuka+Pron+Interr+Sg+All+Use/Marg:kulle   PRON_BACK_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ela+Use/Marg:kusta   PRON_BACK_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Ill+Use/Marg:kuhun   PRON_BACK_CLIT_OPT ;
+kuka+Pron+Interr+Sg+Par+Use/Marg:kuta    PRON_BACK_CLIT_OPT ;
+!mikä+Pron+Interr+Sg+Nom+Use/Marg:mi     PRON_FRONT_CLIT_OPT ; ! 
+
+!! Relative pronouns are *kuka*, *joka* and *mikä* (which, whose). VISK §735|
+!! They are morphologically indistinct from corresponding interrogative
+!! pronouns.
+!!€gt-norm: Relative pronouns
+!!€ kuka: kuka+Pron+Rel+Sg+Nom
+kuka+Pron+Rel+Pl+Abe:keittä   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Abe:keittäkäs    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Abl:keiltä   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Abl:keiltäkäs    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Acc:ketkä    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Acc:ketkäs   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Ade:keillä   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Ade:keilläkäs    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+All:keille   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+All:keillekä     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+All:keillekäs    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Com:keine    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Com:keinekä      PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Com:keinekäs     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Ela:keistä   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Ela:keistäkäs    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Ess:keinä    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Ess:keinäkäs     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Gen:keiden   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Gen:keidenkä     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Gen:keidenkäs    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Ill:keihin   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Ill:keihinkä     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Ill:keihinkäs    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Ine:keissä   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Ine:keissäkäs    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Ins:kein     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Ins:keinkä   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Ins:keinkäis     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Nom:ketkä    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Nom:ketkäs   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Par:keitä    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Par:keitäkäs     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Tra:keiksi   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Tra:keiksikä     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Pl+Tra:keiksikäs    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Abe:kenettä      PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Abe:kenettäkäs   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Abl:kulta   PRON_BACK_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Abl:keneltä      PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Abl:keneltäkäs   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Acc:kenet    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Acc:kenetkä      PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Acc:kenetkäs     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Ade:kenellä      PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Ade:kulla   PRON_BACK_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Ade:kenelläkäs   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+All:kenelle      PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+All:kulle   PRON_BACK_CLIT_OPT ;
+kuka+Pron+Rel+Sg+All:kenellekä    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+All:kenellekäs   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Com:kene     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Com:kenekä   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Ela:kenestä      PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Ela:kusta   PRON_BACK_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Ela:kenestäkäs   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Ess:kenenä   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Ess:kenenäkäs    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Gen:kenen    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Gen:kenenkä      PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Gen:kenenkäs     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Ill:kehen    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Ill:kuhun   PRON_BACK_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Ill:keneen   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Ill:keneenkä     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Ill:keneenkäs    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Ine:kenessä      PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Ine:kenessäkäs   PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Ins:kenen    PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Nom:kuka    PRON_BACK_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Par:ketä     PRON_FRONT_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Par:kuta    PRON_BACK_CLIT_OPT ;
+kuka+Pron+Rel+Sg+Tra:keneksi      PRON_FRONT_CLIT_OPT ;
+joka+Pron+Rel+Pl+Abe:joitta  PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Abe+Use/NG:joittakas   PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Abl:joilta  PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Abl+Use/NG:joiltakas   PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Ade:joilla  PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Ade+Use/NG:joillakas   PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+All:joille  PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+All+Use/NG:joilleka    PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+All+Use/NG:joillekas   PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Com:joine   PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Com+Use/NG:joineka     PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Com+Use/NG:joinekas    PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Ela:joista  PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Ela+Use/NG:joistakas   PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Ess:joina   PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Ess+Use/NG:joinakas    PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Gen:joiden  PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Gen+Use/NG:joidenka    PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Gen+Use/NG:joidenkas   PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Gen+Use/NG:joitten     PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Gen+Use/NG:joittenka   PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Gen+Use/NG:joittenkas  PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Ill:joihin  PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Ill+Use/NG:joihinka    PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Ill+Use/NG:joihinkas   PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Ine:joissa  PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Ine+Use/NG:joissakas   PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Ins:join    PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Ins+Use/NG:joinka  PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Ins+Use/NG:joinkas     PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Nom:jotka   PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Par:joita   PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Par+Use/NG:joitaka     PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Par+Use/NG:joitakas    PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Tra:joiksi  PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Tra+Use/NG:joiksika    PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Pl+Tra+Use/NG:joiksikas   PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Sg+Abe:jotta   PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Sg+Abe+Use/NG:jottakas    PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Sg+Abl:jolta   PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Sg+Abl+Use/NG:joltakas    PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Sg+Ade:jolla   PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Sg+Ade+Use/NG:jollakas    PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Sg+All:jolle   PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Sg+All+Use/NG:jolleka     PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Sg+All+Use/NG:jollekas    PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Sg+Ela:josta   PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Sg+Ela:jostakas    PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Sg+Ess:jona    PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Sg+Ess+Use/NG:jonakas     PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Sg+Gen:jonka   PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Sg+Ill:johon   PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Sg+Ill+Use/NG:johonka     PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Sg+Ill+Use/NG:johonkas    PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Sg+Ine:jossa   PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Sg+Ine+Use/NG:jossakas    PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Sg+Nom:joka    PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Sg+Par:jota    PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Sg+Par+Use/NG:jotakas     PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Sg+Tra:joksi   PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Sg+Tra+Use/NG:joksika     PRON_BACK_CLIT_OPT ;
+joka+Pron+Rel+Sg+Tra+Use/NG:joksikas    PRON_BACK_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Com:mine     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Com+Use/NG:minekä   PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Com+Use/NG:minekäs      PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Ins:minkä    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Ins+Use/NG:minkäs   PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Nom:mitkä    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Nom+Use/NG:mitkäs   PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Abe:mittä    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Abe+Use/NG:mittäkäs     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Abl:miltä    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Abl+Use/NG:miltäkäs     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Ade:millä    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Ade+Use/NG:milläkäs     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+All:mille    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+All+Use/NG:millekä      PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+All+Use/NG:millekäs     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Ela:mistä    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Ela+Use/NG:mistäkäs     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Ess:minä     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Ess+Use/NG:minäkäs      PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Gen:minkä    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Gen+Use/NG:minkäs   PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Ill:mihin    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Ill+Use/NG:mihinkä      PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Ill+Use/NG:mihinkäs     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Ine:missä    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Ine+Use/NG:missäkä      PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Ine+Use/NG:missäkäs     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Nom:mikä     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Nom+Use/NG:mikäs    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Par:mitä     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Par+Use/NG:mitäkäs      PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Par+Use/NG:mitäs    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Tra:miksi    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Tra+Use/NG:miksikä      PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Sg+Tra+Use/NG:miksikäs     PRON_FRONT_CLIT_OPT ;
+
+mikä+Pron+Rel+Pl+Abe:mittä    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Abe+Use/NG:mittäkäs     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Abl:miltä    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Abl+Use/NG:miltäkäs     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Ade:millä    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Ade+Use/NG:milläkäs     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+All:mille    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+All+Use/NG:millekä      PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+All+Use/NG:millekäs     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Ela:mistä    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Ela+Use/NG:mistäkäs     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Ess:minä     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Ess+Use/NG:minäkäs      PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Gen:minkä    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Gen+Use/NG:minkäs   PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Ill:mihin    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Ill+Use/NG:mihinkä      PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Ill+Use/NG:mihinkäs     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Ine:missä    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Ine+Use/NG:missäkä      PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Ine+Use/NG:missäkäs     PRON_FRONT_CLIT_OPT ;
+!mikä+Pron+Rel+Pl+Nom:mikä     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Nom+Use/NG:mikäs    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Par:mitä     PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Par+Use/NG:mitäkäs      PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Par+Use/NG:mitäs    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Tra:miksi    PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Tra+Use/NG:miksikä      PRON_FRONT_CLIT_OPT ;
+mikä+Pron+Rel+Pl+Tra+Use/NG:miksikäs     PRON_FRONT_CLIT_OPT ;
+
+
+
+!! Quantor pronouns correspond to existential and universal quantifiers and
+!! their negations. The generic quantors are *joku* (someone),
+!! *jokin* (something), *jokainen* (everyone), *kaikki* (everything),
+!! *kukin* (each one), *kukaan* (no one), *mikään* (nothing), *jokunen*,
+!! *muutama*, *harva* (a few), *moni* (many) and *useampi* (more). The
+!! dual quantors, quantifying over set of two objects are *jompikumpi* (either
+!! or), *kumpikin*, *molemmat* (both), *kumpikaan* (neither). 
+!! [VISK §740|http://scripta.kotus.fi/visk/sisalto.php?p=740]
+!! The quantor pronouns subsume the class of indefinite pronouns used in
+!! older grammar defintions. 
+!! [VISK §742|http://scripta.kotus.fi/visk/sisalto.php?p=742]
+!! The indefinite quantifiers are classified as
+!! indefinite quantors for the sake of compatibility. This covers *joku*,
+!! *jokin*, *jompikumpi*, as well as specific
+!! *eräs*, *muuan* (some), *yksi* (one).  
+!! Further reading [VISK §746|http://scripta.kotus.fi/visk/sisalto.php?p=746]
+!! – 749.
+!!€gt-norm: Quantor pronouns
+!!€ joku: joku+Pron+Qu+Indef+Sg+Nom
+!!€ jotkut: joku+Pron+Qu+Indef+Pl+Nom
+joku+Pron+Indef+Pl+Abe:joittakuitta   PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Pl+Abl:joiltakuilta   PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Pl+Ade:joillakuilla   PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Pl+All:joillekuille   PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Pl+Com:joinekuine     PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Pl+Ela:joistakuista   PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Pl+Ess:joinakuina     PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Pl+Gen:joidenkuiden   PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Pl+Ill:joihinkuihin   PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Pl+Ine:joissakuissa   PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Pl+Ins:joinkuin   PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Pl+Nom:jotkut     PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Pl+Par:joitakuita     PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Pl+Tra:joiksikuiksi   PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Sg+Abe:jottakutta     PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Sg+Abl:joltakulta     PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Sg+Ade:jollakulla     PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Sg+All:jollekulle     PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Sg+Ela:jostakusta     PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Sg+Ess:jonakuna   PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Sg+Gen+Use/NG+Dial/Standard:jonku    PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Sg+Gen:jonkun     PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Sg+Ill:johonkuhun     PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Sg+Ine:jossakussa     PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Sg+Ins:jonkun     PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Sg+Nom:joku   PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Sg+Par:jotakuta   PRON_BACK_CLIT_OPT ; ! 
+joku+Pron+Indef+Sg+Tra:joksikuksi     PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Pl+Abe:joittakin     PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Pl+Abl:joiltakin     PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Pl+Abl:joiltain  PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Pl+Ade:joillakin     PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Pl+Ade:joillain  PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Pl+All:joillekin     PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Pl+Com:joinekin  PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Pl+Ela:joistakin     PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Pl+Ela:joistain  PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Pl+Ess:joinakin  PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Pl+Ess:joinain   PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Pl+Gen:joidenkin     PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Pl+Ill:joihinkin     PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Pl+Ine:joissakin     PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Pl+Ine:joissain  PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Pl+Ins:joinkin   PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Pl+Nom:jotkin    PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Pl+Par:joitakin  PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Pl+Par:joitain   PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Pl+Tra:joiksikin     PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Sg+Abe:jottakin  PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Sg+Abl:joltakin  PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Sg+Abl:joltain   PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Sg+Ade:jollakin  PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Sg+Ade:jollain   PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Sg+All:jollekin  PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Sg+Ela:jostakin  PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Sg+Ela:jostain   PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Sg+Ess:jonakin   PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Sg+Ess:jonain    PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Sg+Gen:jonkin    PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Sg+Ill:johonkin  PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Sg+Ine:jossakin  PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Sg+Ine:jossain   PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Sg+Nom:jokin     PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Sg+Par:jotakin   PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Sg+Par+Use/NG+Dial/Standard:jotai   PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Sg+Par:jotain    PRON_BACK_CLIT_OPT ; ! 
+jokin+Pron+Indef+Sg+Tra:joksikin  PRON_BACK_CLIT_OPT ; ! 
+!jokainen+Pron+Qu+Pl+Abe:jokaisitta   PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Pl+Abl:jokaisilta   PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Pl+Ade:jokaisilla   PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Pl+All:jokaisille   PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Pl+Com:jokaisine    PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Pl+Ela:jokaisista   PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Pl+Ess:jokaisina    PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Pl+Gen:jokaisten    PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Pl+Ill:jokaisiin    PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Pl+Ine:jokaisissa   PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Pl+Ins:jokaisin     PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Pl+Nom:jokaiset     PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Pl+Par:jokaisia     PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Pl+Tra:jokaisiksi   PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Sg+Abe:jokaisetta   PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Sg+Abl:jokaiselta   PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Sg+Ade:jokaisella   PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Sg+All:jokaiselle   PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Sg+Ela:jokaisesta   PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Sg+Ess:jokaisena    PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Sg+Gen:jokaisen     PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Sg+Ill:jokaiseen    PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Sg+Ine:jokaisessa   PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Sg+Ins:jokaisen     PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Sg+Nom:jokainen     PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Sg+Par:jokaista     PRON_BACK_CLIT_OPT ;
+!jokainen+Pron+Qu+Sg+Tra:jokaiseksi   PRON_BACK_CLIT_OPT ;
+kaikki+Pron+Qu:kaik        PRON_KAIKKI     ;
+!koko+Pron+Qu:koko     PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Pl+Abe:kuittakin   PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Pl+Abl:kuiltakin   PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Pl+Ade:kuillakin   PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Pl+All:kuillekin   PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Pl+Com:kuinekin    PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Pl+Ela:kuistakin   PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Pl+Ess:kuinakin    PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Pl+Gen:kuidenkin   PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Pl+Gen:kuittenkin  PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Pl+Ill:kuihinkin   PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Pl+Ine:kuissakin   PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Pl+Ins:kuiksikin   PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Pl+Nom:kutkin  PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Pl+Par:kuitakin    PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Pl+Tra:kuiksikin   PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Sg+Abe:kuttakin    PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Sg+Abl:kultakin    PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Sg+Ade:kullakin    PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Sg+All:kullekin    PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Sg+Ela:kustakin    PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Sg+Ess:kunakin     PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Sg+Gen:kunkin  PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Sg+Ill:kuhunkin    PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Sg+Ine:kussakin    PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Sg+Ins:kunkin  PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Sg+Nom:kukin   PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Sg+Par:kutakin     PRON_BACK_CLIT_OPT ;
+!kukin+Pron+Qu+Sg+Tra:kuksikin    PRON_BACK_CLIT_OPT ;
+!mikin+Pron+Qu+Pl+Com:minekin      PRON_FRONT_CLIT_OPT ;
+!mikin+Pron+Qu+Pl+Nom:mitkin   PRON_FRONT_CLIT_OPT ;
+!mikin+Pron+Qu+Sg+Abe:mittäkin     PRON_FRONT_CLIT_OPT ;
+!mikin+Pron+Qu+Sg+Abl:miltäkin     PRON_FRONT_CLIT_OPT ;
+!mikin+Pron+Qu+Sg+Ade:milläkin     PRON_FRONT_CLIT_OPT ;
+!mikin+Pron+Qu+Sg+All:millekin     PRON_FRONT_CLIT_OPT ;
+!mikin+Pron+Qu+Sg+Ela:mistäkin     PRON_FRONT_CLIT_OPT ;
+!mikin+Pron+Qu+Sg+Ess:minäkin      PRON_FRONT_CLIT_OPT ;
+!mikin+Pron+Qu+Sg+Gen:minkin   PRON_FRONT_CLIT_OPT ;
+!mikin+Pron+Qu+Sg+Ill:mihinkin     PRON_FRONT_CLIT_OPT ;
+!mikin+Pron+Qu+Sg+Ine:missäkin     PRON_FRONT_CLIT_OPT ;
+!mikin+Pron+Qu+Sg+Ins:minkin   PRON_FRONT_CLIT_OPT ;
+!mikin+Pron+Qu+Sg+Nom:mikin    PRON_FRONT_CLIT_OPT ;
+!mikin+Pron+Qu+Sg+Par:mitäkin      PRON_FRONT_CLIT_OPT ;
+!mikin+Pron+Qu+Sg+Tra:miksikin     PRON_FRONT_CLIT_OPT ;
+!mikäkin+Pron+Qu+Pl+Nom:mitkäkin   PRON_FRONT_CLIT_OPT ;
+!mikäkin+Pron+Qu+Sg+Gen:minkäkin   PRON_FRONT_CLIT_OPT ;
+!mikäkin+Pron+Qu+Sg+Nom:mikäkin    PRON_FRONT_CLIT_OPT ;
+!
+!kukaan+Pron+Qu+Pl+Abe:keittäkään      PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Pl+Abl:keiltäkään      PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Pl+Abl:keiltään    PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Pl+Ade:keilläkään      PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Pl+Ade:keillään    PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Pl+All:keillekään      PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Pl+Com:keinekään   PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Pl+Ela:keistäkään      PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Pl+Ess:keinäkään   PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Pl+Gen:keidenkään      PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Pl+Ill:keihinkään      PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Pl+Ine:keissäkään      PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Pl+Ins:keinkään    PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Pl+Nom:ketkään     PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Pl+Par:keitään     PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Pl+Tra:keiksikään      PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Sg+Abe:kenettäkään     PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Sg+Abl:keltään     PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Sg+Abl:keneltäkään     PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Sg+Acc:ketään      PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Sg+Ade:kellään     PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Sg+Ade:kenelläkään     PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Sg+All:kenellekään     PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Sg+Ela:kenestäkään     PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Sg+Ess:kenenäkään      PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Sg+Gen:kenenkään   PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Sg+Ill:kehenkään   PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Sg+Ill:keneenkään      PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Sg+Ine:kenessäkään     PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Sg+Ins:kenenkään   PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Sg+Nom:kukaan     PRON_BACK_CLIT_OPT ;
+!kukaan+Pron+Qu+Sg+Par:ketään      PRON_FRONT_CLIT_OPT ;
+!kukaan+Pron+Qu+Sg+Tra:keneksikään     PRON_FRONT_CLIT_OPT ;
+!
+!mikään+Pron+Qu+Pl+Nom:mitkään     PRON_FRONT_CLIT_OPT ;
+!mikään+Pron+Qu+Sg+Abe:mittäkään   PRON_FRONT_CLIT_OPT ;
+!mikään+Pron+Qu+Sg+Abl:miltään     PRON_FRONT_CLIT_OPT ;
+!mikään+Pron+Qu+Sg+Ade:millään     PRON_FRONT_CLIT_OPT ;
+!mikään+Pron+Qu+Sg+All:millekään   PRON_FRONT_CLIT_OPT ;
+!mikään+Pron+Qu+Sg+Ela:mistään     PRON_FRONT_CLIT_OPT ;
+!mikään+Pron+Qu+Sg+Ess:minään      PRON_FRONT_CLIT_OPT ;
+!mikään+Pron+Qu+Sg+Gen:minkään     PRON_FRONT_CLIT_OPT ;
+!mikään+Pron+Qu+Sg+Ill:mihinkään   PRON_FRONT_CLIT_OPT ;
+!mikään+Pron+Qu+Sg+Ine:missään     PRON_FRONT_CLIT_OPT ;
+!mikään+Pron+Qu+Sg+Ins:minkään     PRON_FRONT_CLIT_OPT ;
+!mikään+Pron+Qu+Sg+Nom:mikään      PRON_FRONT_CLIT_OPT ;
+!mikään+Pron+Qu+Sg+Par:mitään      PRON_FRONT_CLIT_OPT ;
+!mikään+Pron+Qu+Sg+Tra:miksikään   PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Pl+Abe:yksittäkään   PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Pl+Abl:yksiltäkään   PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Pl+Ade:yksilläkään   PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Pl+All:yksillekään   PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Pl+Com:yksinekään    PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Pl+Ela:yksistäkään   PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Pl+Ess:yksinäkään    PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Pl+Gen:yksienkään    PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Pl+Ill:yksiinkään    PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Pl+Ine:yksissäkään   PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Pl+Ins:yksinkään     PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Pl+Nom:yhdetkään     PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Pl+Par:yksiäkään     PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Pl+Tra:yksiksikään   PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Sg+Abe:yhdettäkään   PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Sg+Abl:yhdeltäkään   PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Sg+Ade:yhdelläkään   PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Sg+All:yhdellekään   PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Sg+Ela:yhdestäkään   PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Sg+Ess:yhtenäkään    PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Sg+Gen:yhdenkään     PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Sg+Ill:yhteenkään    PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Sg+Ine:yhdessäkään   PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Sg+Ins:yhdenkään     PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Sg+Nom:yksikään      PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Sg+Par:yhtäkään      PRON_FRONT_CLIT_OPT ;
+!yksikään+Pron+Qu+Sg+Tra:yhdeksikään   PRON_FRONT_CLIT_OPT ;
+!harva+Pron+Qu+Pl+Abe:harvoitta   PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Pl+Abl:harvoilta   PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Pl+Ade:harvoilla   PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Pl+All:harvoille   PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Pl+Com:harvoine    PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Pl+Ela:harvoista   PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Pl+Ess:harvoina    PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Pl+Gen:harvojen    PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Pl+Ill:harvoihin   PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Pl+Ine:harvoissa   PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Pl+Ins:harvoin     PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Pl+Nom:harvat  PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Pl+Par:harvoja     PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Pl+Tra:harvoiksi   PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Sg+Abe:harvatta    PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Sg+Abl:harvalta    PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Sg+Ade:harvalla    PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Sg+All:harvalle    PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Sg+Ela:harvasta    PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Sg+Ess:harvana     PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Sg+Gen:harvan  PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Sg+Ill:harvaan     PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Sg+Ine:harvassa    PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Sg+Ins:harvan  PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Sg+Nom:harva   PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Sg+Par:harvaa  PRON_BACK_CLIT_OPT ;
+!harva+Pron+Qu+Sg+Tra:harvaksi    PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Pl+Abe:jokusitta     PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Pl+Abl:jokusilta     PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Pl+Ade:jokusilla     PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Pl+All:jokusille     PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Pl+Com:jokusine  PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Pl+Ela:jokusista     PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Pl+Ess:jokusina  PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Pl+Gen:jokusten  PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Pl+Ill:jokusiin  PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Pl+Ine:jokusissa     PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Pl+Ins:jokusin   PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Pl+Nom:jokuset   PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Pl+Par:jokusia   PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Pl+Tra:jokusiksi     PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Sg+Abe:jokusetta     PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Sg+Abl:jokuselta     PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Sg+Ade:jokusella     PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Sg+All:jokuselle     PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Sg+Ela:jokusesta     PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Sg+Ess:jokusena  PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Sg+Gen:jokusen   PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Sg+Ill:jokuseen  PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Sg+Ine:jokusessa     PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Sg+Ins:jokusen   PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Sg+Nom:jokunen   PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Sg+Par:jokusta   PRON_BACK_CLIT_OPT ;
+!jokunen+Pron+Qu+Sg+Tra:jokuseksi     PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Pl+Abe:muutamitta    PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Pl+Abl:muutamilta    PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Pl+Ade:muutamilla    PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Pl+All:muutamille    PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Pl+Com:muutamine     PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Pl+Ela:muutamista    PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Pl+Ess:muutamina     PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Pl+Gen:muutamien     PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Pl+Ill:muutamiin     PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Pl+Ine:muutamissa    PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Pl+Ins:muutamin  PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Pl+Nom:muutamat  PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Pl+Par:muutamia  PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Pl+Tra:muutamiksi    PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Sg+Abe:muutamatta    PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Sg+Abl:muutamalta    PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Sg+Ade:muutamalla    PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Sg+All:muutamalle    PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Sg+Ela:muutamasta    PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Sg+Ess:muutamana     PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Sg+Gen:muutaman  PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Sg+Ill:muutamaan     PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Sg+Ine:muutamassa    PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Sg+Ins:muutaman  PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Sg+Nom:muutama   PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Sg+Par:muutamaa  PRON_BACK_CLIT_OPT ;
+!muutama+Pron+Qu+Sg+Tra:muutamaksi    PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Pl+Abe:monitta  PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Pl+Abl:monilta  PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Pl+Ade:monilla  PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Pl+All:monille  PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Pl+Com:monine   PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Pl+Ela:monista  PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Pl+Ess:monina   PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Pl+Gen:monien   PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Pl+Ill:moniin   PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Pl+Ine:monissa  PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Pl+Ins:monin    PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Pl+Nom:monet    PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Pl+Par:monia    PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Pl+Tra:moniksi  PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Sg+Abe:monetta  PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Sg+Abl:monelta  PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Sg+Ade:monella  PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Sg+All:monelle  PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Sg+Ela:monesta  PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Sg+Ess:monena   PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Sg+Gen:monen    PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Sg+Ill:moneen   PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Sg+Ine:monessa  PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Sg+Ins:monen    PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Sg+Nom:moni     PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Sg+Par:monta    PRON_BACK_CLIT_OPT ;
+!moni+Pron+Qu+Sg+Tra:moneksi  PRON_BACK_CLIT_OPT ;
+!monta+Pron+Qu+Sg+Nom:monta   PRON_BACK_CLIT_OPT ;
+!monta+Pron+Qu+Sg+Par:montaa  PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Pl+Abe:useitta  PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Pl+Abl:useilta  PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Pl+Ade:useilla  PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Pl+All:useille  PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Com:useine  PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Pl+Ela:useista  PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Pl+Ess:useina   PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Pl+Gen:useiden  PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Pl+Ill:useihin  PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Pl+Ill:useisiin     PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Pl+Ine:useissa  PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Pl+Ins:usein    PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Pl+Nom:useat    PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Pl+Par:useita   PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Pl+Tra:useiksi  PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Sg+Abe:useatta  PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Sg+Abl:usealta  PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Sg+Ade:usealla  PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Sg+All:usealle  PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Sg+Ela:useasta  PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Sg+Ess:useana   PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Sg+Gen:usean    PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Sg+Ill:useaan   PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Sg+Ine:useassa  PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Sg+Ins:usean    PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Sg+Nom:usea     PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Sg+Par:useaa    PRON_BACK_CLIT_OPT ;
+!usea+Pron+Qu+Sg+Tra:useaksi  PRON_BACK_CLIT_OPT ;
+!useampi+Pron+Qu+Com:useampine   PRON_BACK_CLIT_OPT ;
+!useampi+Pron+Qu+Pl+Abe:useammitta  PRON_BACK_CLIT_OPT ;
+!useampi+Pron+Qu+Pl+Abl:useammilta  PRON_BACK_CLIT_OPT ;
+!useampi+Pron+Qu+Pl+Ade:useammilla  PRON_BACK_CLIT_OPT ;
+!useampi+Pron+Qu+Pl+All:useammille  PRON_BACK_CLIT_OPT ;
+!useampi+Pron+Qu+Pl+Ela:useammista  PRON_BACK_CLIT_OPT ;
+!useampi+Pron+Qu+Pl+Ill:useampiin   PRON_BACK_CLIT_OPT ;
+!useampi+Pron+Qu+Pl+Ine:useammissa  PRON_BACK_CLIT_OPT ;
+!useampi+Pron+Qu+Pl+Ins:useammin    PRON_BACK_CLIT_OPT ;
+!useampi+Pron+Qu+Pl+Nom:useammat    PRON_BACK_CLIT_OPT ;
+!useampi+Pron+Qu+Pl+Par:useampia    PRON_BACK_CLIT_OPT ;
+!useampi+Pron+Qu+Pl+Tra:useammiksi  PRON_BACK_CLIT_OPT ;
+!useampi+Pron+Qu+Sg+Abe:useammitta  PRON_BACK_CLIT_OPT ;
+!useampi+Pron+Qu+Sg+Abl:useammilta  PRON_BACK_CLIT_OPT ;
+!useampi+Pron+Qu+Sg+Ade:useammilla  PRON_BACK_CLIT_OPT ;
+!useampi+Pron+Qu+Sg+All:useammille  PRON_BACK_CLIT_OPT ;
+!useampi+Pron+Qu+Sg+Ela:useammasta  PRON_BACK_CLIT_OPT ;
+!useampi+Pron+Qu+Sg+Ill:useampaan   PRON_BACK_CLIT_OPT ;
+!useampi+Pron+Qu+Sg+Ine:useammassa  PRON_BACK_CLIT_OPT ;
+!useampi+Pron+Qu+Sg+Ins:useamman    PRON_BACK_CLIT_OPT ;
+!useampi+Pron+Qu+Sg+Nom:useampi     PRON_BACK_CLIT_OPT ;
+!useampi+Pron+Qu+Sg+Par:useampaa    PRON_BACK_CLIT_OPT ;
+!useampi+Pron+Qu+Sg+Tra:useammaksi  PRON_BACK_CLIT_OPT ;
+!usein+Pron+Qu+Com:useine   PRON_BACK_CLIT_OPT ;
+!usein+Pron+Qu+Pl+Abe:useimmitta  PRON_BACK_CLIT_OPT ;
+!usein+Pron+Qu+Pl+Abl:useimmilta  PRON_BACK_CLIT_OPT ;
+!usein+Pron+Qu+Pl+Ade:useimmilla  PRON_BACK_CLIT_OPT ;
+!usein+Pron+Qu+Pl+All:useimmille  PRON_BACK_CLIT_OPT ;
+!usein+Pron+Qu+Pl+Ela:useimmista  PRON_BACK_CLIT_OPT ;
+!usein+Pron+Qu+Pl+Ill:useimpiin PRON_BACK_CLIT_OPT ;
+!usein+Pron+Qu+Pl+Ine:useimmissa  PRON_BACK_CLIT_OPT ;
+!usein+Pron+Qu+Pl+Ins:useimmin    PRON_BACK_CLIT_OPT ;
+!usein+Pron+Qu+Pl+Nom:useimmat    PRON_BACK_CLIT_OPT ;
+!usein+Pron+Qu+Pl+Par:useimpina PRON_BACK_CLIT_OPT ;
+!usein+Pron+Qu+Pl+Tra:useimmiksi  PRON_BACK_CLIT_OPT ;
+!usein+Pron+Qu+Sg+Abe:useimmitta  PRON_BACK_CLIT_OPT ;
+!usein+Pron+Qu+Sg+Abl:useimmilta  PRON_BACK_CLIT_OPT ;
+!usein+Pron+Qu+Sg+Ade:useimmilla  PRON_BACK_CLIT_OPT ;
+!usein+Pron+Qu+Sg+All:useimmille  PRON_BACK_CLIT_OPT ;
+!usein+Pron+Qu+Sg+Ela:useimmasta  PRON_BACK_CLIT_OPT ;
+!usein+Pron+Qu+Sg+Ill:useimpaan   PRON_BACK_CLIT_OPT ;
+!usein+Pron+Qu+Sg+Ine:useimmassa  PRON_BACK_CLIT_OPT ;
+!usein+Pron+Qu+Sg+Ins:useimman    PRON_BACK_CLIT_OPT ;
+!usein+Pron+Qu+Sg+Nom:usein     PRON_BACK_CLIT_OPT ;
+!usein+Pron+Qu+Sg+Par:useimpaa    PRON_BACK_CLIT_OPT ;
+!usein+Pron+Qu+Sg+Tra:useimmaksi  PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+Abe:jommattakummatta     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+Abl:jommaltakummalta     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+Ade:jommallakummalla     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+All:jommallekummalle     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+Ela:jommastakummasta     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+Ess:jompanakumpana   PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+Gen:jommankumman     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+Ill:jompaankumpaan   PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+Ine:jommassakummassa     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+Ins:jommankumman     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+Nom:jompikumpi   PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+Par:jompaakumpaa     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+Tra:jommaksikummaksi     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Pl+Abe:jommittakummitta     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Pl+Abl:jommiltakummilta     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Pl+Ade:jommillakummilla     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Pl+All:jommillekummille     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Pl+Com:jompinekumpine   PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Pl+Ela:jommistakummista     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Pl+Ess:jompinakumpina   PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Pl+Gen:jompienkumpien   PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Pl+Ill:jompiinkumpiin   PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Pl+Ine:jommissakummissa     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Pl+Ins:jomminkummin     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Pl+Nom:jommatkummat     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Pl+Par:jompiakumpia     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Pl+Tra:jommiksikummiksi     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+Abe:jommattakummatta     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+Abl:jommaltakummalta     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+Ade:jommallakummalla     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+All:jommallekummalle     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+Ela:jommastakummasta     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+Ess:jompanakumpana   PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+Gen:jommankumman     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+Ill:jompaankumpaan   PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+Ine:jommassakummassa     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+Ins:jommankumman     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+Nom:jompikumpi   PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+Par:jompaakumpaa     PRON_BACK_CLIT_OPT ;
+!jompikumpi+Pron+Qu+Indef+Sg+Tra:jommaksikummaksi     PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Pl+Abe:kummittakin  PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Pl+Abl:kummiltakin  PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Pl+Ade:kummillakin  PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Pl+All:kummillekin  PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Pl+Com:kumpinekin   PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Pl+Ela:kummistakin  PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Pl+Ess:kumpinakin   PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Pl+Gen:kumpienkin   PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Pl+Ill:kumpiinkin   PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Pl+Ine:kummissakin  PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Pl+Ins:kumminkin    PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Pl+Nom:kummatkin    PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Pl+Par:kumpiakin    PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Pl+Tra:kummiksikin  PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Sg+Abl:kummaltakin  PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Sg+Ade:kummallakin  PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Sg+All:kummallekin  PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Sg+Ela:kummastakin  PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Sg+Ess:kumpanakin   PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Sg+Gen:kummankin    PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Sg+Ill:kumpaankin   PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Sg+Ine:kummassakin  PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Sg+Ins:kummankin    PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Sg+Nom:kumpikin     PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Sg+Par:kumpaakin    PRON_BACK_CLIT_OPT ;
+!kumpikin+Pron+Qu+Sg+Tra:kummaksikin  PRON_BACK_CLIT_OPT ;
+!molemmat+Pron+Qu+Pl+Abe:molemmitta   PRON_BACK_CLIT_OPT ;
+!molemmat+Pron+Qu+Pl+Abl:molemmilta   PRON_BACK_CLIT_OPT ;
+!molemmat+Pron+Qu+Pl+Ade:molemmilla   PRON_BACK_CLIT_OPT ;
+!molemmat+Pron+Qu+Pl+All:molemmille   PRON_BACK_CLIT_OPT ;
+!molemmat+Pron+Qu+Pl+Com:molempine    PRON_BACK_CLIT_OPT ;
+!molemmat+Pron+Qu+Pl+Ela:molemmista   PRON_BACK_CLIT_OPT ;
+!molemmat+Pron+Qu+Pl+Ess:molempina    PRON_BACK_CLIT_OPT ;
+!molemmat+Pron+Qu+Pl+Gen:molempien    PRON_BACK_CLIT_OPT ;
+!molemmat+Pron+Qu+Pl+Ill:molempiin    PRON_BACK_CLIT_OPT ;
+!molemmat+Pron+Qu+Pl+Ine:molemmissa   PRON_BACK_CLIT_OPT ;
+!molemmat+Pron+Qu+Pl+Ins:molemmin     PRON_BACK_CLIT_OPT ;
+!molemmat+Pron+Qu+Pl+Nom:molemmat     PRON_BACK_CLIT_OPT ;
+!molemmat+Pron+Qu+Pl+Par:molempia     PRON_BACK_CLIT_OPT ;
+!molemmat+Pron+Qu+Pl+Tra:molemmiksi   PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Pl+Abe:kummittakaan    PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Pl+Abl:kummiltakaan    PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Pl+Ade:kummillakaan    PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Pl+All:kummillekaan    PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Pl+Com:kumpinekaan     PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Pl+Ela:kummistakaan    PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Pl+Ess:kumpinakaan     PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Pl+Gen:kumpienkaan     PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Pl+Ill:kumpiinkaan     PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Pl+Ine:kummissakaan    PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Pl+Ins:kumminkaan  PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Pl+Nom:kummatkaan  PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Pl+Par:kumpiakaan  PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Pl+Tra:kummiksikaan    PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Sg+Abl:kummaltakaan    PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Sg+Ade:kummallakaan    PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Sg+All:kummallekaan    PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Sg+Ela:kummastakaan    PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Sg+Ess:kumpanakaan     PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Sg+Gen:kummankaan  PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Sg+Ill:kumpaankaan     PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Sg+Ine:kummassakaan    PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Sg+Ins:kummankaan  PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Sg+Nom:kumpikaan   PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Sg+Par:kumpaakaan  PRON_BACK_CLIT_OPT ;
+!kumpikaan+Pron+Qu+Sg+Tra:kummaksikaan    PRON_BACK_CLIT_OPT ;
+
+!eräs+Pron+Qu+Indef+Pl+Abe:eräittä     PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Pl+Abl:eräiltä     PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Pl+Ade:eräillä     PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Pl+All:eräille     PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Pl+Com:eräine      PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Pl+Ela:eräistä     PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Pl+Ess:eräinä      PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Pl+Gen:eräiden     PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Pl+Ill:eräisiin    PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Pl+Ine:eräissä     PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Pl+Ins:eräin   PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Pl+Nom:eräät   PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Pl+Par:eräitä      PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Pl+Tra:eräiksi     PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Sg+Abe:eräättä     PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Sg+Abl:eräältä     PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Sg+Ade:eräällä     PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Sg+All:eräälle     PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Sg+Ela:eräästä     PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Sg+Ess:eräänä      PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Sg+Gen:erään   PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Sg+Ill:erääseen    PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Sg+Ine:eräässä     PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Sg+Ins:erään   PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Sg+Nom:eräs    PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Sg+Par:erästä      PRON_FRONT_CLIT_OPT ;
+!eräs+Pron+Qu+Indef+Sg+Tra:erääksi     PRON_FRONT_CLIT_OPT ;
+
+eräs+Pron+Indef+Pl+Abe:eräittä     PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Pl+Abl:eräiltä     PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Pl+Ade:eräillä     PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Pl+All:eräille     PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Pl+Com:eräine      PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Pl+Ela:eräistä     PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Pl+Ess:eräinä      PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Pl+Gen:eräiden     PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Pl+Ill:eräisiin    PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Pl+Ine:eräissä     PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Pl+Ins:eräin   PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Pl+Nom:eräät   PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Pl+Par:eräitä      PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Pl+Tra:eräiksi     PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Sg+Abe:eräättä     PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Sg+Abl:eräältä     PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Sg+Ade:eräällä     PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Sg+All:eräälle     PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Sg+Ela:eräästä     PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Sg+Ess:eräänä      PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Sg+Gen:erään   PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Sg+Ill:erääseen    PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Sg+Ine:eräässä     PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Sg+Ins:erään   PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Sg+Nom:eräs    PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Sg+Par:erästä      PRON_FRONT_CLIT_OPT ;
+eräs+Pron+Indef+Sg+Tra:erääksi     PRON_FRONT_CLIT_OPT ;
+
+!muuan+Pron+Qu+Indef+Sg+Nom:muuan     PRON_BACK_CLIT_OPT ;
+!muuan+Pron+Qu+Indef+Sg+Par:muuatta   PRON_BACK_CLIT_OPT ;
+!muudan+Pron+Qu+Indef+Sg+Nom:muudan   PRON_BACK_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Pl+Abe:yksittä     PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Pl+Abl:yksiltä     PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Pl+Ade:yksillä     PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Pl+All:yksille     PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Pl+Com:yksine      PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Pl+Ela:yksistä     PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Pl+Ess:yksinä      PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Pl+Gen:yksien      PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Pl+Ill:yksiin      PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Pl+Ine:yksissä     PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Pl+Ins:yksin   PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Pl+Nom:yhdet   PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Pl+Par:yksiä   PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Pl+Tra:yksiksi     PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Sg+Abe:yhdettä     PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Sg+Abl:yhdeltä     PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Sg+Ade:yhdellä     PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Sg+All:yhdelle     PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Sg+Ela:yhdestä     PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Sg+Ess:yhtenä      PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Sg+Gen:yhden   PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Sg+Ill:yhteen      PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Sg+Ine:yhdessä     PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Sg+Ins:yhden   PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Sg+Nom:yksi    PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Sg+Par:yhtä    PRON_FRONT_CLIT_OPT ;
+!yksi+Pron+Qu+Indef+Sg+Tra:yhdeksi     PRON_FRONT_CLIT_OPT ;
+!yks+Pron+Qu+Indef+Pl+Nom:yhet     PRON_FRONT_CLIT_OPT ;
+!yks+Pron+Qu+Indef+Sg+Abe:yhettä   PRON_FRONT_CLIT_OPT ;
+!yks+Pron+Qu+Indef+Sg+Abl:yheltä   PRON_FRONT_CLIT_OPT ;
+!yks+Pron+Qu+Indef+Sg+Ade:yhellä   PRON_FRONT_CLIT_OPT ;
+!yks+Pron+Qu+Indef+Sg+All:yhelle   PRON_FRONT_CLIT_OPT ;
+!yks+Pron+Qu+Indef+Sg+Ela:yhestä   PRON_FRONT_CLIT_OPT ;
+!yks+Pron+Qu+Indef+Sg+Ess:yhtenä   PRON_FRONT_CLIT_OPT ;
+!yks+Pron+Qu+Indef+Sg+Gen:yhen     PRON_FRONT_CLIT_OPT ;
+!yks+Pron+Qu+Indef+Sg+Ill:yhteen   PRON_FRONT_CLIT_OPT ;
+!yks+Pron+Qu+Indef+Sg+Ine:yhessä   PRON_FRONT_CLIT_OPT ;
+!yks+Pron+Qu+Indef+Sg+Ins:yhen     PRON_FRONT_CLIT_OPT ;
+!yks+Pron+Qu+Indef+Sg+Nom:yks      PRON_FRONT_CLIT_OPT ;
+!yks+Pron+Qu+Indef+Sg+Par:yhtä     PRON_FRONT_CLIT_OPT ;
+!yks+Pron+Qu+Indef+Sg+Tra:yheksi   PRON_FRONT_CLIT_OPT ;
+!joka+Pron+Qu+Indef+Sg+Nom:joka   PRON_BACK_CLIT_OPT ;
+
+!! Reflexive pronoun is the word *itse* refering to self, usually but not
+!! always coupled with possessive suffix to denote the referent. 
+!!
+!! Further reading: [VISK §729|http://scripta.kotus.fi/visk/sisalto.php?p=729]
+!!€gt-norm: Reflexive pronouns
+!!€ itse: itse+Pron+Refl+Sg+Nom
+itse+Pron+Refl+Pl+Abl+Use/NG+Dial/Standard:iteiltä  PRON_FRONT_POSS_ÄN_OPT    ;
+itse+Pron+Refl+Pl+Ade+Use/NG+Dial/Standard:iteillä  PRON_FRONT_POSS_ÄN_OPT    ;
+itse+Pron+Refl+Pl+All+Use/NG+Dial/Standard:iteille  PRON_FRONT_POSS_EN_OPT    ;
+itse+Pron+Refl+Pl+Com+Use/NG+Dial/West:itteine  PRON_FRONT_POSS_EN_OPT    ;
+itse+Pron+Refl+Pl+Ela+Use/NG+Dial/West:iteistä  PRON_FRONT_POSS_ÄN_OPT    ;
+itse+Pron+Refl+Pl+Ess+Use/NG+Dial/West:itteinä  PRON_FRONT_POSS_ÄN_OPT    ;
+itse+Pron+Refl+Pl+Gen+Use/NG+Dial/Standard:ite  PRON_FRONT_POSS_OPT  ;
+itse+Pron+Refl+Pl+Ill+Use/NG+Dial/Standard:iteihin PRON_FRONT_POSS_OPT  ;
+itse+Pron+Refl+Pl+Ine+Use/NG+Dial/Standard:iteissä  PRON_FRONT_POSS_ÄN_OPT    ;
+itse+Pron+Refl+Pl+Ins+Use/NG+Dial/West:ittein  PRON_FRONT_POSS_OPT  ;
+itse+Pron+Refl+Pl+Nom+Use/NG+Dial/West:itte  PRON_FRONT_POSS_OPT  ;
+itse+Pron+Refl+Pl+Nom+Use/NG+Dial/Standard:ite  PRON_FRONT_POSS_OPT  ;
+itse+Pron+Refl+Pl+Par+Use/NG+Dial/West:ittejä  PRON_FRONT_POSS_ÄN_OPT    ;
+itse+Pron+Refl+Pl+Tra+Use/NG+Dial/West:itteiksi    PRON_FRONT_CLIT   ;
+itse+Pron+Refl+Pl+Tra+Use/NG+Dial/West:itteikse    PRON_FRONT_POSS_EN_OPT    ;
+itse+Pron+Refl+Sg+Abl+Use/NG+Dial/West:iteltä  PRON_FRONT_POSS_ÄN_OPT    ;
+itse+Pron+Refl+Sg+Ade+Use/NG+Dial/West:itellä  PRON_FRONT_POSS_ÄN_OPT    ;
+itse+Pron+Refl+Sg+All+Use/NG+Dial/West:itelle  PRON_FRONT_POSS_EN_OPT    ;
+itse+Pron+Refl+Sg+Ela+Use/NG+Dial/West:itestä  PRON_FRONT_POSS_ÄN_OPT    ;
+itse+Pron+Refl+Sg+Ess+Use/NG+Dial/West:ittenä  PRON_FRONT_POSS_ÄN_OPT    ;
+itse+Pron+Refl+Sg+Gen+Use/NG+Dial/Standard:ite  PRON_FRONT_POSS_OPT  ;
+itse+Pron+Refl+Sg+Ill+Use/NG+Dial/West:itteen  PRON_FRONT_POSS_OPT  ;
+itse+Pron+Refl+Sg+Ine+Use/NG+Dial/West:itessä  PRON_FRONT_POSS_ÄN_OPT    ;
+itse+Pron+Refl+Sg+Ins+Use/NG+Dial/West:iten    PRON_FRONT_POSS_OPT  ;
+itse+Pron+Refl+Sg+Nom+Use/NG+Dial/Standard:ite  PRON_FRONT_POSS_OPT  ;
+itse+Pron+Refl+Sg+Par+Use/NG+Dial/West:itteä  PRON_FRONT_POSS_ÄN_OPT    ;
+itse+Pron+Refl+Sg+Tra+Use/NG+Dial/Standard:itekse  PRON_FRONT_POSS_EN_OPT    ;
+itse+Pron+Refl+Sg+Tra+Use/NG+Dial/Standard:iteksi  PRON_FRONT_CLIT   ;
+itse+Pron+Refl+Pl+Abl+Use/NG+Dial/Standard:iteiltä  PRON_FRONT_POSS_ÄN_OPT    ;
+itse+Pron+Refl+Pl+Ade:itseillä  PRON_FRONT_POSS_ÄN_OPT    ;
+itse+Pron+Refl+Pl+All:itseille  PRON_FRONT_POSS_EN_OPT    ;
+itse+Pron+Refl+Pl+Com:itseine  PRON_FRONT_POSS_EN_OPT    ;
+itse+Pron+Refl+Pl+Ela:itseistä  PRON_FRONT_POSS_ÄN_OPT    ;
+itse+Pron+Refl+Pl+Ess:itseinä  PRON_FRONT_POSS_ÄN_OPT    ;
+itse+Pron+Refl+Pl+Gen:itse  PRON_FRONT_POSS_OPT  ;
+itse+Pron+Refl+Pl+Gen:itsee  PRON_FRONT_POSS  ;
+itse+Pron+Refl+Pl+Ill:itseihin  PRON_FRONT_POSS_OPT  ;
+itse+Pron+Refl+Pl+Ill:itseihin  PRON_FRONT_POSS_OPT  ;
+itse+Pron+Refl+Pl+Ine:itseissä  PRON_FRONT_POSS_ÄN_OPT    ;
+itse+Pron+Refl+Pl+Ins:itsein    PRON_FRONT_POSS_OPT  ;
+itse+Pron+Refl+Pl+Nom:itse  PRON_FRONT_POSS_OPT  ;
+itse+Pron+Refl+Pl+Par:itsejä  PRON_FRONT_POSS_ÄN_OPT    ;
+itse+Pron+Refl+Pl+Tra:itseiksi  PRON_FRONT_CLIT   ;
+itse+Pron+Refl+Pl+Tra:itseikse  PRON_FRONT_POSS_EN_OPT    ;
+itse+Pron+Refl+Sg+Abl:itseltä  PRON_FRONT_POSS_ÄN_OPT    ;
+itse+Pron+Refl+Sg+Ade:itsellä  PRON_FRONT_POSS_ÄN_OPT    ;
+itse+Pron+Refl+Sg+All:itselle  PRON_FRONT_POSS_EN_OPT    ;
+itse+Pron+Refl+Sg+Ela:itsestä  PRON_FRONT_POSS_ÄN_OPT    ;
+itse+Pron+Refl+Sg+Ess:itsenä  PRON_FRONT_POSS_ÄN_OPT    ;
+itse+Pron+Refl+Sg+Gen:itse  PRON_FRONT_POSS_OPT  ;
+itse+Pron+Refl+Sg+Ill:itseen    PRON_FRONT_POSS_OPT  ;
+itse+Pron+Refl+Sg+Ine:itsessä  PRON_FRONT_POSS_ÄN_OPT    ;
+itse+Pron+Refl+Sg+Ins:itsen PRON_FRONT_POSS_OPT  ;
+itse+Pron+Refl+Sg+Nom:itse  PRON_FRONT_POSS_OPT   ;
+itse+Pron+Refl+Sg+Par:itseä  PRON_FRONT_POSS_ÄN_OPT    ;
+itse+Pron+Refl+Sg+Tra:itsekse  PRON_FRONT_POSS_EN_OPT    ;
+itse+Pron+Refl+Sg+Tra:itseksi   PRON_FRONT_CLIT   ;
+
+!! Reciprocal pronoun is *toinen* refering to each other. It uses possessive
+!! suffix to delimit the reciprocal group. 
+!!
+!! Further reading: [VISK §732|http://scripta.kotus.fi/visk/sisalto.php?p=732]
+!!€gt-norm: Reciprocal pronouns
+!!€ toisiamme: toinen+Pron+Recipr+Pl+Par+PxPl1
+toinen+Pron+Recipr+Pl+Abe:toisitta  PRON_BACK_POSS_OPT ;
+toinen+Pron+Recipr+Pl+Abl:toisilta  PRON_BACK_POSS_OPT ;
+toinen+Pron+Recipr+Pl+Ade:toisilla  PRON_BACK_POSS_OPT ;
+toinen+Pron+Recipr+Pl+All:toisille  PRON_BACK_POSS_OPT ;
+toinen+Pron+Recipr+Pl+Com:toisine   PRON_BACK_POSS_EN_OPT ;
+toinen+Pron+Recipr+Pl+Ela:toisista  PRON_BACK_POSS_AN_OPT ;
+toinen+Pron+Recipr+Pl+Ess:toisina   PRON_BACK_POSS_AN_OPT ;
+toinen+Pron+Recipr+Pl+Gen:toisten   PRON_BACK_POSS_OPT ;
+toinen+Pron+Recipr+Pl+Ill:toisiin   PRON_BACK_POSS_OPT ;
+toinen+Pron+Recipr+Pl+Ine:toisissa  PRON_BACK_POSS_AN_OPT ;
+toinen+Pron+Recipr+Pl+Ins:toisin    PRON_BACK_POSS_OPT ;
+toinen+Pron+Recipr+Pl+Nom:toiset    PRON_BACK_POSS_OPT ;
+toinen+Pron+Recipr+Pl+Par:toisia    PRON_BACK_POSS_AN_OPT ;
+toinen+Pron+Recipr+Pl+Tra:toisiksi  PRON_BACK_POSS_OPT ;
+toinen+Pron+Recipr+Sg+Abe:toisetta  PRON_BACK_POSS_AN_OPT ;
+toinen+Pron+Recipr+Sg+Abl:toiselta  PRON_BACK_POSS_AN_OPT ;
+toinen+Pron+Recipr+Sg+Ade:toisella  PRON_BACK_POSS_AN_OPT ;
+toinen+Pron+Recipr+Sg+All:toiselle  PRON_BACK_POSS_EN_OPT ;
+toinen+Pron+Recipr+Sg+Ela:toisesta  PRON_BACK_POSS_AN_OPT ;
+toinen+Pron+Recipr+Sg+Ess:toisena   PRON_BACK_POSS_AN_OPT ;
+toinen+Pron+Recipr+Sg+Gen:toisen    PRON_BACK_POSS_OPT ;
+toinen+Pron+Recipr+Sg+Ill:toiseen   PRON_BACK_POSS_OPT ;
+toinen+Pron+Recipr+Sg+Ine:toisessa  PRON_BACK_POSS_AN_OPT ;
+toinen+Pron+Recipr+Sg+Ins:toisen    PRON_BACK_POSS_OPT ;
+toinen+Pron+Recipr+Sg+Nom:toisen    PRON_BACK_POSS_OPT ;
+toinen+Pron+Recipr+Sg+Par:toista    PRON_BACK_POSS_AN_OPT ;
+toinen+Pron+Recipr+Sg+Tra:toisekse  PRON_BACK_POSS_EN_OPT ;
+
+!! Proadjectives are pronouns that act in place of adjectives syntactically.
+!! They are formed by compounds (or derivations) of pronoun and *lainen* or
+!! *moinen* (such as). 
+!!
+!! Further reading: [VISK §715|http://scripta.kotus.fi/visk/sisalto.php?p=715]
+!!
+!!€gt-norm: Proadjectives
+!!€ jollainen: jollainen+A+Rel+Sg+Nom
+jollainen+A+Rel+Pl+Abe:jollaisitta   ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Pl+Abl:jollaisilta   ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Pl+Ade:jollaisilla   ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Pl+All:jollaisille   ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Pl+Com:jollaisine    ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Pl+Ela:jollaisista   ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Pl+Ess:jollaisina    ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Pl+Gen:jollaisten    ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Pl+Ill:jollaisiin    ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Pl+Ine:jollaisissa   ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Pl+Ins:jollaisin     ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Pl+Nom:jollaiset     ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Pl+Par:jollaisia     ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Pl+Tra:jollaisiksi   ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Sg+Abe:jollaisetta   ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Sg+Abl:jollaiselta   ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Sg+Ade:jollaisella   ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Sg+All:jollaiselle   ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Sg+Ela:jollaisesta   ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Sg+Ess:jollaisena    ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Sg+Gen:jollaisen     ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Sg+Ill:jollaiseen    ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Sg+Ine:jollaisessa   ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Sg+Ins:jollaisen     ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Sg+Nom:jollainen     ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Sg+Par:jollaista     ADJ_BACK_CLIT_OPT ;
+jollainen+A+Rel+Sg+Tra:jollaiseksi   ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Pl+Abe:jonkinlaisitta     ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Pl+Abl:jonkinlaisilta     ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Pl+Ade:jonkinlaisilla     ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Pl+All:jonkinlaisille     ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Pl+Com:jonkinlaisine  ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Pl+Ela:jonkinlaisista     ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Pl+Ess:jonkinlaisina  ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Pl+Gen:jonkinlaisten  ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Pl+Ill:jonkinlaisiin  ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Pl+Ine:jonkinlaisissa     ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Pl+Ins:jonkinlaisin   ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Pl+Nom:jonkinlaiset   ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Pl+Par:jonkinlaisia   ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Pl+Tra:jonkinlaisiksi     ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Sg+Abe:jonkinlaisetta     ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Sg+Abl:jonkinlaiselta     ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Sg+Ade:jonkinlaisella     ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Sg+All:jonkinlaiselle     ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Sg+Ela:jonkinlaisesta     ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Sg+Ess:jonkinlaisena  ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Sg+Gen:jonkinlaisen   ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Sg+Ill:jonkinlaiseen  ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Sg+Ine:jonkinlaisessa     ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Sg+Ins:jonkinlaisen   ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Sg+Nom:jonkinlainen   ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Sg+Par:jonkinlaista   ADJ_BACK_CLIT_OPT ;
+jonkinlainen+A+Sg+Tra:jonkinlaiseksi     ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Pl+Abe:kulloisittakin     ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Pl+Abl:kulloisiltakin     ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Pl+Ade:kulloisillakin     ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Pl+All:kulloisillekin     ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Pl+Com:kulloisinekin  ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Pl+Ela:kulloisistakin     ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Pl+Ess:kulloisinakin  ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Pl+Gen:kulloistenkin  ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Pl+Ill:kulloisiinkin  ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Pl+Ine:kulloisissakin     ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Pl+Ins:kulloisinkin   ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Pl+Nom:kulloisetkin   ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Pl+Par:kulloisiakin   ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Pl+Tra:kulloisiksikin     ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Sg+Abe:kulloisettakin     ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Sg+Abl:kulloiseltakin     ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Sg+Ade:kulloisellakin     ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Sg+All:kulloisellekin     ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Sg+Ela:kulloisestakin     ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Sg+Ess:kulloisenakin  ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Sg+Gen:kulloisenkin   ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Sg+Ill:kulloiseenkin  ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Sg+Ine:kulloisessakin     ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Sg+Ins:kulloisenkin   ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Sg+Nom:kulloinenkin   ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Sg+Par:kulloistakin   ADJ_BACK_CLIT_OPT ;
+kulloinenkin+A+Sg+Tra:kulloiseksikin     ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Pl+Abe:kulloisitta   ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Pl+Abl:kulloisilta   ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Pl+Ade:kulloisilla   ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Pl+All:kulloisille   ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Pl+Com:kulloisine    ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Pl+Ela:kulloisista   ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Pl+Ess:kulloisina    ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Pl+Gen:kulloisten    ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Pl+Ill:kulloisiin    ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Pl+Ine:kulloisissa   ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Pl+Ins:kulloisin     ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Pl+Nom:kulloiset     ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Pl+Par:kulloisia     ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Pl+Tra:kulloisiksi   ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Sg+Abe:kulloisetta   ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Sg+Abl:kulloiselta   ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Sg+Ade:kulloisella   ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Sg+All:kulloiselle   ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Sg+Ela:kulloisesta   ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Sg+Ess:kulloisena    ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Sg+Gen:kulloisen     ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Sg+Ill:kulloiseen    ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Sg+Ine:kulloisessa   ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Sg+Ins:kulloisen     ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Sg+Nom:kulloinen     ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Sg+Par:kulloista     ADJ_BACK_CLIT_OPT ;
+kulloinen+A+Sg+Tra:kulloiseksi   ADJ_BACK_CLIT_OPT ;
+kumpainenkin+A+Sg+Abe:kumpaisettakin     ADJ_BACK_CLIT_OPT ;
+kumpainenkin+A+Sg+Abl:kumpaiseltakin     ADJ_BACK_CLIT_OPT ;
+kumpainenkin+A+Sg+Ade:kumpaisellakin     ADJ_BACK_CLIT_OPT ;
+kumpainenkin+A+Sg+All:kumpaisellekin     ADJ_BACK_CLIT_OPT ;
+kumpainenkin+A+Sg+Ela:kumpaisestakin     ADJ_BACK_CLIT_OPT ;
+kumpainenkin+A+Sg+Ess:kumpaisenakin  ADJ_BACK_CLIT_OPT ;
+kumpainenkin+A+Sg+Gen:kumpaisenkin   ADJ_BACK_CLIT_OPT ;
+kumpainenkin+A+Sg+Ill:kumpaiseenkin  ADJ_BACK_CLIT_OPT ;
+kumpainenkin+A+Sg+Ine:kumpaisessakin     ADJ_BACK_CLIT_OPT ;
+kumpainenkin+A+Sg+Ins:kumpaisenkin   ADJ_BACK_CLIT_OPT ;
+kumpainenkin+A+Sg+Nom:kumpainenkin   ADJ_BACK_CLIT_OPT ;
+kumpainenkin+A+Sg+Par:kumpaistakin   ADJ_BACK_CLIT_OPT ;
+kumpainenkin+A+Sg+Tra:kumpaiseksikin     ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Abe:kumpaisitta    ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Abe:kumpaisittakin     ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Abl:kumpaisilta    ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Abl:kumpaisiltakin     ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Ade:kumpaisilla    ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Ade:kumpaisillakin     ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+All:kumpaisille    ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+All:kumpaisillekin     ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Com:kumpaisine     ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Com:kumpaisinekin  ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Ela:kumpaisista    ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Ela:kumpaisistakin     ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Ess:kumpaisina     ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Ess:kumpaisinakin  ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Gen:kumpaisten     ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Gen:kumpaistenkin  ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Ill:kumpaisiin     ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Ill:kumpaisiinkin  ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Ine:kumpaisissa    ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Ine:kumpaisissakin     ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Ins:kumpaisin  ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Ins:kumpaisinkin   ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Nom:kumpaiset  ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Nom:kumpaisetkin   ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Par:kumpaisia  ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Par:kumpaisiakin   ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Tra:kumpaisiksi    ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Pl+Tra:kumpaisiksikin     ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Sg+Abe:kumpaisetta    ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Sg+Abl:kumpaiselta    ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Sg+Ade:kumpaisella    ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Sg+All:kumpaiselle    ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Sg+Ela:kumpaisesta    ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Sg+Ess:kumpaisena     ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Sg+Gen:kumpaisen  ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Sg+Ill:kumpaiseen     ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Sg+Ine:kumpaisessa    ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Sg+Ins:kumpaisen  ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Sg+Nom:kumpainen  ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Sg+Par:kumpaista  ADJ_BACK_CLIT_OPT ;
+kumpainen+A+Interr+Sg+Tra:kumpaiseksi    ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Pl+Abe:mimmoisitta    ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Pl+Abl:mimmoisilta    ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Pl+Ade:mimmoisilla    ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Pl+All:mimmoisille    ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Pl+Com:mimmoisine     ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Pl+Ela:mimmoisista    ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Pl+Ess:mimmoisina     ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Pl+Gen:mimmoisten     ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Pl+Ill:mimmoisiin     ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Pl+Ine:mimmoisissa    ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Pl+Ins:mimmoisin  ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Pl+Nom:mimmoiset  ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Pl+Par:mimmoisia  ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Pl+Tra:mimmoisiksi    ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Sg+Abe:mimmoisetta    ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Sg+Abl:mimmoiselta    ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Sg+Ade:mimmoisella    ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Sg+All:mimmoiselle    ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Sg+Ela:mimmoisesta    ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Sg+Ess:mimmoisena     ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Sg+Gen:mimmoisen  ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Sg+Ill:mimmoiseen     ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Sg+Ine:mimmoisessa    ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Sg+Ins:mimmoisen  ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Sg+Nom:mimmoinen  ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Sg+Par:mimmoista  ADJ_BACK_CLIT_OPT ;
+mimmoinen+A+Interr+Sg+Tra:mimmoiseksi    ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Pl+Abe:minkälaisitta    ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Pl+Abl:minkälaisilta    ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Pl+Ade:minkälaisilla    ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Pl+All:minkälaisille    ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Pl+Com:minkälaisine     ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Pl+Ela:minkälaisista    ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Pl+Ess:minkälaisina     ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Pl+Gen:minkälaisten     ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Pl+Ill:minkälaisiin     ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Pl+Ine:minkälaisissa    ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Pl+Ins:minkälaisin  ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Pl+Nom:minkälaiset  ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Pl+Par:minkälaisia  ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Pl+Tra:minkälaisiksi    ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Sg+Abe:minkälaisetta    ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Sg+Abl:minkälaiselta    ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Sg+Ade:minkälaisella    ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Sg+All:minkälaiselle    ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Sg+Ela:minkälaisesta    ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Sg+Ess:minkälaisena     ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Sg+Gen:minkälaisen  ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Sg+Ill:minkälaiseen     ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Sg+Ine:minkälaisessa    ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Sg+Ins:minkälaisen  ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Sg+Nom:minkälainen  ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Sg+Par:minkälaista  ADJ_BACK_CLIT_OPT ;
+minkälainen+A+Interr+Sg+Tra:minkälaiseksi    ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Pl+Abe:minkäänlaisitta    ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Pl+Abl:minkäänlaisilta    ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Pl+Ade:minkäänlaisilla    ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Pl+All:minkäänlaisille    ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Pl+Com:minkäänlaisine     ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Pl+Ela:minkäänlaisista    ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Pl+Ess:minkäänlaisina     ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Pl+Gen:minkäänlaisten     ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Pl+Ill:minkäänlaisiin     ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Pl+Ine:minkäänlaisissa    ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Pl+Ins:minkäänlaisin  ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Pl+Nom:minkäänlaiset  ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Pl+Par:minkäänlaisia  ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Pl+Tra:minkäänlaisiksi    ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Sg+Abe:minkäänlaisetta    ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Sg+Abl:minkäänlaiselta    ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Sg+Ade:minkäänlaisella    ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Sg+All:minkäänlaiselle    ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Sg+Ela:minkäänlaisesta    ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Sg+Ess:minkäänlaisena     ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Sg+Gen:minkäänlaisen  ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Sg+Ill:minkäänlaiseen     ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Sg+Ine:minkäänlaisessa    ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Sg+Ins:minkäänlaisen  ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Sg+Nom:minkäänlainen  ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Sg+Par:minkäänlaista  ADJ_BACK_CLIT_OPT ;
+minkäänlainen+A+Interr+Sg+Tra:minkäänlaiseksi    ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Abe:sellaisitta   ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Abe+Use/NG+Dial/Standard:sellasitta  ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Abl:sellaisilta   ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Abl+Use/NG+Dial/Standard:sellasilta  ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Ade:sellaisilla   ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Ade+Use/NG+Dial/Standard:sellasilla  ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+All:sellaisille   ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+All+Use/NG+Dial/Standard:sellasille  ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Com:sellaisine    ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Com+Use/NG+Dial/Standard:sellasine   ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Ela:sellaisista   ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Ela+Use/NG+Dial/Standard:sellasista  ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Ess:sellaisina    ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Ess+Use/NG+Dial/Standard:sellasina   ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Gen:sellaisten    ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Gen+Use/NG+Dial/Standard:sellasten   ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Ill:sellaisiin    ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Ill+Use/NG+Dial/Standard:sellasiin   ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Ine:sellaisissa   ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Ine+Use/NG+Dial/Standard:sellasissa  ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Ins:sellaisin     ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Ins+Use/NG+Dial/Standard:sellasin    ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Nom:sellaiset     ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Nom+Use/NG+Dial/Standard:sellaset    ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Par:sellaisia     ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Par+Use/NG+Dial/Standard:sellasia    ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Tra:sellaisiksi   ADJ_BACK_CLIT_OPT ;
+sellainen+A+Pl+Tra+Use/NG+Dial/Standard:sellasiksi  ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+Abe:sellaisetta   ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+Abe+Use/NG+Dial/Standard:sellasetta  ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+Abl:sellaiselta   ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+Abl+Use/NG+Dial/Standard:sellaselta  ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+Ade:sellaisella   ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+Ade+Use/NG+Dial/Standard:sellasella  ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+All:sellaiselle   ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+All+Use/NG+Dial/Standard:sellaselle  ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+Ela:sellaisesta   ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+Ela+Use/NG+Dial/Standard:sellasesta  ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+Ess:sellaisena    ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+Ess+Use/NG+Dial/Standard:sellasena   ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+Gen:sellaisen     ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+Gen+Use/NG+Dial/Standard:sellasen    ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+Ill:sellaiseen    ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+Ill+Use/NG+Dial/Standard:sellaseen   ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+Ine:sellaisessa   ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+Ine+Use/NG+Dial/Standard:sellasessa  ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+Ins:sellaisen     ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+Ins+Use/NG+Dial/Standard:sellasen    ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+Nom:sellainen     ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+Nom+Use/NG+Dial/Standard:sellanen    ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+Par:sellaista     ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+Par+Use/NG+Dial/Standard:sellasta    ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+Tra:sellaiseksi   ADJ_BACK_CLIT_OPT ;
+sellainen+A+Sg+Tra+Use/NG+Dial/Standard:sellaseksi  ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Abe:semmoisitta   ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Abe+Use/NG+Dial/Standard:semmositta  ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Abl:semmoisilta   ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Abl+Use/NG+Dial/Standard:semmosilta  ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Ade:semmoisilla   ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Ade+Use/NG+Dial/Standard:semmosilla  ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+All:semmoisille   ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+All+Use/NG+Dial/Standard:semmosille  ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Com:semmoisine    ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Com+Use/NG+Dial/Standard:semmosine   ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Ela:semmoisista   ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Ela+Use/NG+Dial/Standard:semmosista  ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Ess:semmoisina    ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Ess+Use/NG+Dial/Standard:semmosina   ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Gen:semmoisten    ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Gen+Use/NG+Dial/Standard:semmosten   ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Ill:semmoisiin    ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Ill+Use/NG+Dial/Standard:semmosiin   ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Ine:semmoisissa   ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Ine+Use/NG+Dial/Standard:semmosissa  ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Ins:semmoisin     ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Ins+Use/NG+Dial/Standard:semmosin    ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Nom:semmoiset     ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Nom+Use/NG+Dial/Standard:semmoset    ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Par:semmoisia     ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Par+Use/NG+Dial/Standard:semmosia    ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Tra:semmoisiksi   ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Pl+Tra+Use/NG+Dial/Standard:semmosiksi  ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+Abe:semmoisetta   ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+Abe+Use/NG+Dial/Standard:semmosetta  ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+Abl:semmoiselta   ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+Abl+Use/NG+Dial/Standard:semmoselta  ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+Ade:semmoisella   ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+Ade+Use/NG+Dial/Standard:semmosella  ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+All:semmoiselle   ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+All+Use/NG+Dial/Standard:semmoselle  ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+Ela:semmoisesta   ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+Ela+Use/NG+Dial/Standard:semmosesta  ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+Ess:semmoisena    ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+Ess+Use/NG+Dial/Standard:semmosena   ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+Gen:semmoisen     ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+Gen+Use/NG+Dial/Standard:semmosen    ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+Ill:semmoiseen    ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+Ill+Use/NG+Dial/Standard:semmoseen   ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+Ine:semmoisessa   ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+Ine+Use/NG+Dial/Standard:semmosessa  ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+Ins:semmoisen     ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+Ins+Use/NG+Dial/Standard:semmosen    ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+Nom:semmoinen     ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+Nom+Use/NG+Dial/Standard:semmonen    ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+Par:semmoista     ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+Par+Use/NG+Dial/Standard:semmosta    ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+Tra:semmoiseksi   ADJ_BACK_CLIT_OPT ;
+semmoinen+A+Sg+Tra+Use/NG+Dial/Standard:semmoseksi  ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Pl+Abe:tuollaisitta     ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Pl+Abl:tuollaisilta     ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Pl+Ade:tuollaisilla     ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Pl+All:tuollaisille     ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Pl+Com:tuollaisine  ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Pl+Ela:tuollaisista     ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Pl+Ess:tuollaisina  ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Pl+Gen:tuollaisten  ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Pl+Ill:tuollaisiin  ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Pl+Ine:tuollaisissa     ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Pl+Ins:tuollaisin   ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Pl+Nom:tuollaiset   ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Pl+Par:tuollaisia   ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Pl+Tra:tuollaisiksi     ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Sg+Abe:tuollaisetta     ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Sg+Abl:tuollaiselta     ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Sg+Ade:tuollaisella     ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Sg+All:tuollaiselle     ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Sg+Ela:tuollaisesta     ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Sg+Ess:tuollaisena  ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Sg+Gen:tuollaisen   ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Sg+Ill:tuollaiseen  ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Sg+Ine:tuollaisessa     ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Sg+Ins:tuollaisen   ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Sg+Nom:tuollainen   ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Sg+Par:tuollaista   ADJ_BACK_CLIT_OPT ;
+tuollainen+A+Sg+Tra:tuollaiseksi     ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Pl+Abe:tuommoisitta     ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Pl+Abl:tuommoisilta     ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Pl+Ade:tuommoisilla     ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Pl+All:tuommoisille     ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Pl+Com:tuommoisine  ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Pl+Ela:tuommoisista     ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Pl+Ess:tuommoisina  ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Pl+Gen:tuommoisten  ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Pl+Ill:tuommoisiin  ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Pl+Ine:tuommoisissa     ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Pl+Ins:tuommoisin   ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Pl+Nom:tuommoiset   ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Pl+Par:tuommoisia   ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Pl+Tra:tuommoisiksi     ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Sg+Abe:tuommoisetta     ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Sg+Abl:tuommoiselta     ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Sg+Ade:tuommoisella     ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Sg+All:tuommoiselle     ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Sg+Ela:tuommoisesta     ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Sg+Ess:tuommoisena  ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Sg+Gen:tuommoisen   ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Sg+Ill:tuommoiseen  ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Sg+Ine:tuommoisessa     ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Sg+Ins:tuommoisen   ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Sg+Nom:tuommoinen   ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Sg+Par:tuommoista   ADJ_BACK_CLIT_OPT ;
+tuommoinen+A+Sg+Tra:tuommoiseksi     ADJ_BACK_CLIT_OPT ;
+tällainen+A+Pl+Abe:tällaisitta   ADJ_BACK_CLIT_OPT ;
+tällainen+A+Pl+Abl:tällaisilta   ADJ_BACK_CLIT_OPT ;
+tällainen+A+Pl+Ade:tällaisilla   ADJ_BACK_CLIT_OPT ;
+tällainen+A+Pl+All:tällaisille   ADJ_BACK_CLIT_OPT ;
+tällainen+A+Pl+Com:tällaisine    ADJ_BACK_CLIT_OPT ;
+tällainen+A+Pl+Ela:tällaisista   ADJ_BACK_CLIT_OPT ;
+tällainen+A+Pl+Ess:tällaisina    ADJ_BACK_CLIT_OPT ;
+tällainen+A+Pl+Gen:tällaisten    ADJ_BACK_CLIT_OPT ;
+tällainen+A+Pl+Ill:tällaisiin    ADJ_BACK_CLIT_OPT ;
+tällainen+A+Pl+Ine:tällaisissa   ADJ_BACK_CLIT_OPT ;
+tällainen+A+Pl+Ins:tällaisin     ADJ_BACK_CLIT_OPT ;
+tällainen+A+Pl+Nom:tällaiset     ADJ_BACK_CLIT_OPT ;
+tällainen+A+Pl+Par:tällaisia     ADJ_BACK_CLIT_OPT ;
+tällainen+A+Pl+Tra:tällaisiksi   ADJ_BACK_CLIT_OPT ;
+tällainen+A+Sg+Abe:tällaisetta   ADJ_BACK_CLIT_OPT ;
+tällainen+A+Sg+Abl:tällaiselta   ADJ_BACK_CLIT_OPT ;
+tällainen+A+Sg+Ade:tällaisella   ADJ_BACK_CLIT_OPT ;
+tällainen+A+Sg+All:tällaiselle   ADJ_BACK_CLIT_OPT ;
+tällainen+A+Sg+Ela:tällaisesta   ADJ_BACK_CLIT_OPT ;
+tällainen+A+Sg+Ess:tällaisena    ADJ_BACK_CLIT_OPT ;
+tällainen+A+Sg+Gen:tällaisen     ADJ_BACK_CLIT_OPT ;
+tällainen+A+Sg+Ill:tällaiseen    ADJ_BACK_CLIT_OPT ;
+tällainen+A+Sg+Ine:tällaisessa   ADJ_BACK_CLIT_OPT ;
+tällainen+A+Sg+Ins:tällaisen     ADJ_BACK_CLIT_OPT ;
+tällainen+A+Sg+Nom:tällainen     ADJ_BACK_CLIT_OPT ;
+tällainen+A+Sg+Par:tällaista     ADJ_BACK_CLIT_OPT ;
+tällainen+A+Sg+Tra:tällaiseksi   ADJ_BACK_CLIT_OPT ;
+tällainen+A+Pl+Abe+Err/Orth:tälläisitta   ADJ_BACK_CLIT_OPT ;
+tällainen+A+Pl+Abl+Err/Orth:tälläisilta   ADJ_BACK_CLIT_OPT ;
+tällainen+A+Pl+Ade+Err/Orth:tälläisilla   ADJ_BACK_CLIT_OPT ;
+tällainen+A+Pl+All+Err/Orth:tälläisille    ADJ_FRONT_CLIT_OPT ;
+tällainen+A+Pl+Com+Err/Orth:tälläisine     ADJ_FRONT_CLIT_OPT ;
+tällainen+A+Pl+Ela+Err/Orth:tälläisista   ADJ_BACK_CLIT_OPT ;
+tällainen+A+Pl+Ess+Err/Orth:tälläisina    ADJ_BACK_CLIT_OPT ;
+tällainen+A+Pl+Gen+Err/Orth:tälläisten     ADJ_FRONT_CLIT_OPT ;
+tällainen+A+Pl+Ill+Err/Orth:tälläisiin     ADJ_FRONT_CLIT_OPT ;
+tällainen+A+Pl+Ine+Err/Orth:tälläisissa   ADJ_BACK_CLIT_OPT ;
+tällainen+A+Pl+Ins+Err/Orth:tälläisin      ADJ_FRONT_CLIT_OPT ;
+tällainen+A+Pl+Nom+Err/Orth:tälläiset      ADJ_FRONT_CLIT_OPT ;
+tällainen+A+Pl+Par+Err/Orth:tälläisia     ADJ_BACK_CLIT_OPT ;
+tällainen+A+Pl+Tra+Err/Orth:tälläisiksi    ADJ_FRONT_CLIT_OPT ;
+tällainen+A+Sg+Abe+Err/Orth:tälläisetta   ADJ_BACK_CLIT_OPT ;
+tällainen+A+Sg+Abl+Err/Orth:tälläiselta   ADJ_BACK_CLIT_OPT ;
+tällainen+A+Sg+Ade+Err/Orth:tälläisella   ADJ_BACK_CLIT_OPT ;
+tällainen+A+Sg+All+Err/Orth:tälläiselle    ADJ_FRONT_CLIT_OPT ;
+tällainen+A+Sg+Ela+Err/Orth:tälläisesta   ADJ_BACK_CLIT_OPT ;
+tällainen+A+Sg+Ess+Err/Orth:tälläisena    ADJ_BACK_CLIT_OPT ;
+tällainen+A+Sg+Gen+Err/Orth:tälläisen      ADJ_FRONT_CLIT_OPT ;
+tällainen+A+Sg+Ill+Err/Orth:tälläiseen     ADJ_FRONT_CLIT_OPT ;
+tällainen+A+Sg+Ine+Err/Orth:tälläisessa   ADJ_BACK_CLIT_OPT ;
+tällainen+A+Sg+Ins+Err/Orth:tälläisen      ADJ_FRONT_CLIT_OPT ;
+tällainen+A+Sg+Nom+Err/Orth:tälläinen      ADJ_FRONT_CLIT_OPT ;
+tällainen+A+Sg+Par+Err/Orth:tälläista     ADJ_BACK_CLIT_OPT ;
+tällainen+A+Sg+Tra+Err/Orth:tälläiseksi    ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Pl+Abe:tämmöisittä    ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Pl+Abl:tämmöisiltä    ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Pl+Ade:tämmöisillä    ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Pl+All:tämmöisille    ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Pl+Com:tämmöisine     ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Pl+Ela:tämmöisistä    ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Pl+Ess:tämmöisinä     ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Pl+Gen:tämmöisten     ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Pl+Ill:tämmöisiin     ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Pl+Ine:tämmöisissä    ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Pl+Ins:tämmöisin      ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Pl+Nom:tämmöiset      ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Pl+Par:tämmöisiä      ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Pl+Tra:tämmöisiksi    ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Sg+Abe:tämmöisettä    ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Sg+Abl:tämmöiseltä    ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Sg+Ade:tämmöisellä    ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Sg+All:tämmöiselle    ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Sg+Ela:tämmöisestä    ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Sg+Ess:tämmöisenä     ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Sg+Gen:tämmöisen      ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Sg+Ill:tämmöiseen     ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Sg+Ine:tämmöisessä    ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Sg+Ins:tämmöisen      ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Sg+Nom:tämmöinen      ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Sg+Par:tämmöistä      ADJ_FRONT_CLIT_OPT ;
+tämmöinen+A+Sg+Tra:tämmöiseksi    ADJ_FRONT_CLIT_OPT ;
+samanlainen+A:samanlai  ADJ_AAKKOSELLINEN ;
+samankaltainen+A:samankaltai  ADJ_AAKKOSELLINEN ;
+samantapainen+A:samantapai  ADJ_AAKKOSELLINEN ;
+erilainen+A:erilai  ADJ_AAKKOSELLINEN ;
+toisenlainen+A:toisenlai  ADJ_AAKKOSELLINEN ;
+muunlainen+A:muunlai  ADJ_AAKKOSELLINEN ;
+vastaava+A:vastaav{^a}  ADJ_AALTOILEVA ; 
+
+!! Proadverbs are the pronouns that have lexicalised into adverbs by their
+!! syntax and semantics. 
+!!
+!! Further reading: [VISK §715|http://scripta.kotus.fi/visk/sisalto.php?p=715]
+!!
+!!€gt-norm: Proadverbs
+!!€ missä: missä+Adv+Interr+Ine
+missä+Adv+Interr:missä   ADV_FRONT_CLIT_OPT ;
+mistä+Adv+Interr:mistä   ADV_FRONT_CLIT_OPT ;
+minne+Adv+Interr:minne   ADV_FRONT_CLIT_OPT ;
+mihin+Adv+Interr:mihin   ADV_FRONT_CLIT_OPT ;
+miten+Adv+Interr:miten   ADV_FRONT_CLIT_OPT ;
+miksi+Adv+Interr:miksi   ADV_FRONT_CLIT_OPT ;
+mitä+Adv+Interr:mitä   ADV_FRONT_CLIT_OPT ;
+milloin+Adv+Interr:milloin  ADV_BACK_CLIT_OPT ;
+niin+Adv+Dem:niin   ADV_FRONT_CLIT_OPT ;
+noin+Adv+Dem:noin  ADV_BACK_CLIT_OPT ;
+näin+Adv+Dem:näin   ADV_FRONT_CLIT_OPT ;
+siellä+Adv+Dem:siellä   ADV_FRONT_CLIT_OPT ;
+sieltä+Adv+Dem:sieltä   ADV_FRONT_CLIT_OPT ;
+siihen+Adv+Dem:siihen   ADV_FRONT_CLIT_OPT ;
+siinä+Adv+Dem:siinä   ADV_FRONT_CLIT_OPT ;
+siitä+Adv+Dem:siitä   ADV_FRONT_CLIT_OPT ;
+siksi+Adv+Dem:siksi   ADV_FRONT_CLIT_OPT ;
+silloin+Adv+Dem:silloin  ADV_BACK_CLIT_OPT ;
+sinne+Adv+Dem:sinne   ADV_FRONT_CLIT_OPT ;
+siten+Adv+Dem:siten   ADV_FRONT_CLIT_OPT ;
+sitä+Adv+Dem:sitä   ADV_FRONT_CLIT_OPT ;
+tuohon+Adv+Dem:tuohon  ADV_BACK_CLIT_OPT ;
+tuolla+Adv+Dem:tuolla  ADV_BACK_CLIT_OPT ;
+tuolloin+Adv+Dem:tuolloin  ADV_BACK_CLIT_OPT ;
+tuolta+Adv+Dem:tuolta  ADV_BACK_CLIT_OPT ;
+tuonne+Adv+Dem:tuonne  ADV_BACK_CLIT_OPT ;
+tuossa+Adv+Dem:tuossa  ADV_BACK_CLIT_OPT ;
+tuosta+Adv+Dem:tuosta  ADV_BACK_CLIT_OPT ;
+tuota+Adv+Dem:tuota  ADV_BACK_CLIT_OPT ;
+tähän+Adv+Dem:tähän   ADV_FRONT_CLIT_OPT ;
+täksi+Adv+Dem:täksi   ADV_FRONT_CLIT_OPT ;
+tällöin+Adv+Dem:tällöin   ADV_FRONT_CLIT_OPT ;
+tänne+Adv+Dem:tänne   ADV_FRONT_CLIT_OPT ;
+tässä+Adv+Dem:tässä   ADV_FRONT_CLIT_OPT ;
+täten+Adv+Dem:täten   ADV_FRONT_CLIT_OPT ;
+tätä+Adv+Dem:tätä   ADV_FRONT_CLIT_OPT ;
+tätä+Adv+Dem:tätä   ADV_FRONT_CLIT_OPT ;
+täällä+Adv+Dem:täällä   ADV_FRONT_CLIT_OPT ;
+täältä+Adv+Dem:täältä   ADV_FRONT_CLIT_OPT ;
+kuinka+Adv+Interr:kuinka  ADV_BACK_CLIT_OPT ;
+jonne+Adv+Rel:jonne  ADV_BACK_CLIT_OPT ;
+kunne+Adv+Rel:kunne  ADV_BACK_CLIT_OPT ;
+kaikkialla+Adv+Qu:kaikkialla  ADV_BACK_CLIT_OPT ;
+kaikkialta+Adv+Qu:kaikkialta  ADV_BACK_CLIT_OPT ;
+kaikkialle+Adv+Qu:kaikkialle  ADV_BACK_CLIT_OPT ;
+kustakin+Adv+Qu:kustakin  ADV_BACK_CLIT_OPT ;
+kuhunkin+Adv+Qu:kuhunkin  ADV_BACK_CLIT_OPT ;
+kunnekin+Adv+Qu:kunnekin  ADV_BACK_CLIT_OPT ;
+kulloinkin+Adv+Qu:kulloinkin  ADV_BACK_CLIT_OPT ;
+jostakin+Adv+Qu:jostakin  ADV_BACK_CLIT_OPT ;
+johonkin+Adv+Qu:johonkin  ADV_BACK_CLIT_OPT ;
+jonnekin+Adv+Qu:jonnekin  ADV_BACK_CLIT_OPT ;
+jolloinkin+Adv+Qu:jolloinkin  ADV_BACK_CLIT_OPT ;
+samoin+Adv:samoin  ADV_BACK_CLIT_OPT ;
+toisin+Adv:toisin  ADV_BACK_CLIT_OPT ;
+muulloin+Adv:muulloin  ADV_BACK_CLIT_OPT ;
+muualla+Adv:muualla  ADV_BACK_CLIT_OPT ;
+moniaalla+Adv+Qu:moniaalla   ADV_BACK_CLIT_OPT ;
+yhtäällä+Adv+Qu:yhtäällä   ADV_FRONT_CLIT_OPT ;
+toisaalla+Adv+Qu:toisaalla  ADV_BACK_CLIT_OPT ;
+kahtaalla+Adv+Qu:kahtaalla  ADV_BACK_CLIT_OPT ;
+kaikkialla+Adv+Qu:kaikkialla  ADV_BACK_CLIT_OPT ;
+muualla+Adv+Qu:muualla  ADV_BACK_CLIT_OPT ;
+aina+Adv+Qu:aina  ADV_BACK_CLIT_OPT ;
+joskus+Adv+Qu:joskus  ADV_BACK_CLIT_OPT ;
+usein+Adv+Qu:usein  ADV_BACK_CLIT_OPT ;
+harvoin+Adv+Qu:harvoin  ADV_BACK_CLIT_OPT ;
+monesti+Adv+Qu:monesti  ADV_BACK_CLIT_OPT ;
+useasti+Adv+Qu:useasti  ADV_BACK_CLIT_OPT ;
+harvasti+Adv+Qu:harvasti  ADV_BACK_CLIT_OPT ;
+
+!! forms of *jompi* may not exist as free morphs. The marginal forms of
+!! *monias* are extinct. Oddly enough, the semireduplicative intensifier
+!! monituinen is nowhere to be found in VISK either.
+! FIXME: |citation-needed|
+jompi+Pron+Pl+Abe:jommitta   PRON_BACK_CLIT_OPT ;
+jompi+Pron+Pl+Abl:jommilta   PRON_BACK_CLIT_OPT ;
+jompi+Pron+Pl+Ade:jommilla   PRON_BACK_CLIT_OPT ;
+jompi+Pron+Pl+All:jommille   PRON_BACK_CLIT_OPT ;
+jompi+Pron+Pl+Com:jompine    PRON_BACK_CLIT_OPT ;
+jompi+Pron+Pl+Ela:jommista   PRON_BACK_CLIT_OPT ;
+jompi+Pron+Pl+Ess:jompina    PRON_BACK_CLIT_OPT ;
+jompi+Pron+Pl+Gen:jompien    PRON_BACK_CLIT_OPT ;
+jompi+Pron+Pl+Ill:jompiin    PRON_BACK_CLIT_OPT ;
+jompi+Pron+Pl+Ine:jommissa   PRON_BACK_CLIT_OPT ;
+jompi+Pron+Pl+Ins:jommin     PRON_BACK_CLIT_OPT ;
+jompi+Pron+Pl+Nom:jommat     PRON_BACK_CLIT_OPT ;
+jompi+Pron+Pl+Par:jompia     PRON_BACK_CLIT_OPT ;
+jompi+Pron+Pl+Tra:jommiksi   PRON_BACK_CLIT_OPT ;
+monias+Pron+Pl+Abe:moniaitta     PRON_BACK_CLIT_OPT ;
+monias+Pron+Pl+Abl:moniailta     PRON_BACK_CLIT_OPT ;
+monias+Pron+Pl+Ade:moniailla     PRON_BACK_CLIT_OPT ;
+monias+Pron+Pl+All:moniaille     PRON_BACK_CLIT_OPT ;
+monias+Pron+Pl+Com:moniaine  PRON_BACK_CLIT_OPT ;
+monias+Pron+Pl+Ela:moniaista     PRON_BACK_CLIT_OPT ;
+monias+Pron+Pl+Ess:moniaina  PRON_BACK_CLIT_OPT ;
+monias+Pron+Pl+Gen:moniaiden     PRON_BACK_CLIT_OPT ;
+monias+Pron+Pl+Ill:moniaisiin    PRON_BACK_CLIT_OPT ;
+monias+Pron+Pl+Ine:moniaissa     PRON_BACK_CLIT_OPT ;
+monias+Pron+Pl+Ins:moniain   PRON_BACK_CLIT_OPT ;
+monias+Pron+Pl+Nom:moniaat   PRON_BACK_CLIT_OPT ;
+monias+Pron+Pl+Par:moniaita  PRON_BACK_CLIT_OPT ;
+monias+Pron+Pl+Tra:moniaiksi     PRON_BACK_CLIT_OPT ;
+monias+Pron+Sg+Abe:moniaatta     PRON_BACK_CLIT_OPT ;
+monias+Pron+Sg+Abl:moniaalta     PRON_BACK_CLIT_OPT ;
+monias+Pron+Sg+All:moniaalle     PRON_BACK_CLIT_OPT ;
+monias+Pron+Sg+Ela:moniaasta     PRON_BACK_CLIT_OPT ;
+monias+Pron+Sg+Ess:moniaana  PRON_BACK_CLIT_OPT ;
+monias+Pron+Sg+Gen:moniaan   PRON_BACK_CLIT_OPT ;
+monias+Pron+Sg+Ill:moniaaseen    PRON_BACK_CLIT_OPT ;
+monias+Pron+Sg+Ine:moniaassa     PRON_BACK_CLIT_OPT ;
+monias+Pron+Sg+Ins:moniaan   PRON_BACK_CLIT_OPT ;
+monias+Pron+Sg+Nom:monias    PRON_BACK_CLIT_OPT ;
+monias+Pron+Sg+Par:moniasta  PRON_BACK_CLIT_OPT ;
+monias+Pron+Sg+Tra:moniaaksi     PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Pl+Abe:monituisitta  PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Pl+Abl:monituisilta  PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Pl+Ade:monituisilla  PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Pl+All:monituisille  PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Pl+Com:monituisine   PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Pl+Ela:monituisista  PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Pl+Ess:monituisina   PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Pl+Gen:monituisten   PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Pl+Ill:monituisiin   PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Pl+Ine:monituisissa  PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Pl+Ins:monituisin    PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Pl+Nom:monituiset    PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Pl+Par:monituisia    PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Pl+Tra:monituisiksi  PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Sg+Abe:monituisetta  PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Sg+Abl:monituiselta  PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Sg+Ade:monituisella  PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Sg+All:monituiselle  PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Sg+Ela:monituisesta  PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Sg+Ess:monituisena   PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Sg+Gen:monituisen    PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Sg+Ill:monituiseen   PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Sg+Ine:monituisessa  PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Sg+Ins:monituisen    PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Sg+Nom:monituinen    PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Sg+Par:monituista    PRON_BACK_CLIT_OPT ;
+monituinen+Pron+Sg+Tra:monituiseksi  PRON_BACK_CLIT_OPT ;
+
+!! Marginally in the pro word category are nouns, adjectives and adverbs
+!! refering to equivalence in comparative context since they are
+!! also otherwise lacking meaning like other pro words. This
+!! fgroup includes words *sama* (same), *eri* (different), *muu* (other),
+!! *toinen* (another), and their derivations. 
+!!
+!! Further reading: [VISK §766|http://scripta.kotus.fi/visk/sisalto.php?p=766]
+sama+Pron+Pl+Abe:samoitta    PRON_BACK_CLIT_OPT ;
+sama+Pron+Pl+Abl:samoilta    PRON_BACK_CLIT_OPT ;
+sama+Pron+Pl+Ade:samoilla    PRON_BACK_CLIT_OPT ;
+sama+Pron+Pl+All:samoille    PRON_BACK_CLIT_OPT ;
+sama+Pron+Pl+Com:samoine     PRON_BACK_CLIT_OPT ;
+sama+Pron+Pl+Ela:samoista    PRON_BACK_CLIT_OPT ;
+sama+Pron+Pl+Ess:samoina     PRON_BACK_CLIT_OPT ;
+sama+Pron+Pl+Gen:samojen     PRON_BACK_CLIT_OPT ;
+sama+Pron+Pl+Ill:samoihin    PRON_BACK_CLIT_OPT ;
+sama+Pron+Pl+Ine:samoissa    PRON_BACK_CLIT_OPT ;
+sama+Pron+Pl+Ins:samoin  PRON_BACK_CLIT_OPT ;
+sama+Pron+Pl+Nom:samat   PRON_BACK_CLIT_OPT ;
+sama+Pron+Pl+Par:samoja  PRON_BACK_CLIT_OPT ;
+sama+Pron+Pl+Tra:samoiksi    PRON_BACK_CLIT_OPT ;
+sama+Pron+Sg+Abe:samatta     PRON_BACK_CLIT_OPT ;
+sama+Pron+Sg+Abl:samalta     PRON_BACK_CLIT_OPT ;
+sama+Pron+Sg+Ade:samalla     PRON_BACK_CLIT_OPT ;
+sama+Pron+Sg+All:samalle     PRON_BACK_CLIT_OPT ;
+sama+Pron+Sg+Ela:samasta     PRON_BACK_CLIT_OPT ;
+sama+Pron+Sg+Ess:samana  PRON_BACK_CLIT_OPT ;
+sama+Pron+Sg+Gen:saman   PRON_BACK_CLIT_OPT ;
+sama+Pron+Sg+Ill:samaan  PRON_BACK_CLIT_OPT ;
+sama+Pron+Sg+Ine:samassa     PRON_BACK_CLIT_OPT ;
+sama+Pron+Sg+Ins:saman   PRON_BACK_CLIT_OPT ;
+sama+Pron+Sg+Nom:sama    PRON_BACK_CLIT_OPT ;
+sama+Pron+Sg+Par:samaa   PRON_BACK_CLIT_OPT ;
+sama+Pron+Sg+Tra:samaksi     PRON_BACK_CLIT_OPT ;
+eri+Pron+Sg+Nom:eri      PRON_FRONT_CLIT_OPT ;
+muu+Pron+Pl+Abe:muitta  PRON_BACK_CLIT_OPT ;
+muu+Pron+Pl+Abl:muilta  PRON_BACK_CLIT_OPT ;
+muu+Pron+Pl+Ade:muilla  PRON_BACK_CLIT_OPT ;
+muu+Pron+Pl+All:muille  PRON_BACK_CLIT_OPT ;
+muu+Pron+Pl+Ela:muista  PRON_BACK_CLIT_OPT ;
+muu+Pron+Pl+Ill:muihun  PRON_BACK_CLIT_OPT ;
+muu+Pron+Pl+Ine:muissa  PRON_BACK_CLIT_OPT ;
+muu+Pron+Pl+Ins:muin    PRON_BACK_CLIT_OPT ;
+muu+Pron+Pl+Gen:muin    PRON_BACK_CLIT_OPT ;
+muu+Pron+Pl+Par:muita   PRON_BACK_CLIT_OPT ;
+muu+Pron+Pl+Tra:muiksi  PRON_BACK_CLIT_OPT ;
+muu+Pron+Pl+Ess:muina   PRON_BACK_CLIT_OPT ;
+muu+Pron+Pl+Nom:muut    PRON_BACK_CLIT_OPT ;
+muu+Pron+Sg+Ess:muuna    PRON_BACK_CLIT_OPT ;
+muu+Pron+Sg+Abe:muutta  PRON_BACK_CLIT_OPT ;
+muu+Pron+Sg+Abl:muulta  PRON_BACK_CLIT_OPT ;
+muu+Pron+Sg+Ade:muulla  PRON_BACK_CLIT_OPT ;
+muu+Pron+Sg+All:muulle  PRON_BACK_CLIT_OPT ;
+muu+Pron+Sg+Ela:muusta  PRON_BACK_CLIT_OPT ;
+muu+Pron+Sg+Ill:muuhun  PRON_BACK_CLIT_OPT ;
+muu+Pron+Sg+Ine:muussa  PRON_BACK_CLIT_OPT ;
+muu+Pron+Sg+Ins:muun    PRON_BACK_CLIT_OPT ;
+muu+Pron+Sg+Gen:muun    PRON_BACK_CLIT_OPT ;
+muu+Pron+Sg+Par:muuta   PRON_BACK_CLIT_OPT ;
+muu+Pron+Sg+Tra:muuksi  PRON_BACK_CLIT_OPT ;
+muu+Pron+Sg+Nom:muu     PRON_BACK_CLIT_OPT ;
+
+!! In spoken language the supposedly non-inflecting *eri* has common inflected
+!! forms.
+eri+Pron+Pl+Nom:erit      PRON_FRONT_CLIT_OPT ;
+
+ei-kukaan+Pron:ei-k  PRON_KUKAAN  ;
+ei-mikään+Pron:ei-mi  PRON_MIKÄÄN  ;
+eri+Pron:eri  PRON_KOKO  ;
+eräs+Pron:erä  PRON_ERÄS  ;
+harva+Pron:harv  PRON_SAMA  ;
+harvempi+Pron:harvem  PRON_USEAMPI  ;
+!he+Pron+Pers+Pl3:he  PRON_ME  ; ! see above for Nom
+!hän+Pron+Pers+Sg3:hän  PRON_HÄN  ; ! see above for Nom
+hää+Pron:hä  PRON_HÄÄ  ;
+itse+Pron:itse  PRON_ITSE  ;
+itse% kukin+Pron:itse% k  PRON_KUKIN  ;
+joka+Pron:jo  PRON_JOKA  ;
+joka+Pron:joka  PRON_KOKO  ;
+joka% ainoa+Pron:joka% aino  PRON_AINOA  ;
+joka% ikinen+Pron:joka% iki  PRON_IKINEN  ;
+jokainen+Pron:jokai  PRON_JOKAINEN  ;
+jok’ikinen+Pron:jok’iki  PRON_JOKAINEN  ;
+jokin+Pron:jo  PRON_JOKIN  ;
+joku+Pron:jo  PRON_JOKU  ;
+jokunen+Pron:joku  PRON_JOKAINEN  ;
+jompi+Pron:jom  PRON_KUMPI  ;
+jompikumpi+Pron:jom  PRON_JOMPIKUMPI  ;
+!kaikki+Pron:kaik  PRON_KAIKKI  ; ! see above kaikki+Pron+Qu
+ken+Pron:ken  PRON_MÄÄ  ;
+kenkään+Pron:kenkään  PRON_MÄÄ  ;
+!koko+Pron:koko  PRON_KOKO  ; ! see above koko+Pron+Qu
+kuka+Pron:k  PRON_KUKA  ;
+kuka+Pron:k  PRON_KUKA  ;
+kuka+Pron:k  PRON_KUKA  ;
+kukaan+Pron:k  PRON_KUKAAN  ;
+kukakin+Pron:k  PRON_KUKAKIN  ;
+kukin+Pron:k  PRON_KUKIN  ;
+kumpainen+Pron:kumpai  PRON_JOKAINEN  ;
+kumpainenkin+Pron:kumpainenkin  PRON_KOKO  ;
+kumpi+Pron:kum  PRON_KUMPI  ;
+kumpi+Pron:kum  PRON_KUMPI  ;
+kumpikaan+Pron:kum  PRON_KUMPIKAAN  ;
+kumpikin+Pron:kum  PRON_KUMPIKIN  ;
+ma+Pron:ma  PRON_MA  ;
+!me+Pron+Pers+Pl1:me  PRON_ME  ; ! See above for Nom
+mi+Pron:mi  PRON_KOKO  ;
+mie+Pron:mi  PRON_MIE  ;
+mikin+Pron:mi  PRON_MIKIN  ;
+mikä+Pron:mi  PRON_MIKÄ  ;
+mikä+Pron:mi  PRON_MIKÄ  ;
+mikä+Pron:mi  PRON_MIKÄ  ;
+mikäkin+Pron:mi  PRON_MIKÄKIN  ;
+mikään+Pron+Qnt:mi  PRON_MIKÄÄN  ; ! see above for mikään ! Above is commented out
+!minä+Pron+Pers+Sg1+Nom:minä  PRON_FRONT_CLIT_OPT  ; ! see above for Nom
+molemmat+Pron:molem  PRON_MOLEMMAT  ;
+mones+Pron:mone  PRON_MONES  ;
+moni+Pron:mon  PRON_MONI  ;
+monias+Pron:monia  PRON_MONIAS  ;
+monituinen+Pron:monitui  PRON_JOKAINEN  ;
+monta+Pron:monta  PRON_MONTA  ;
+muu+Pron:mu  PRON_MUU  ;
+muuan+Pron:muua  PRON_MUUAN  ;
+muudan+Pron:muuda  PRON_MUUAN  ;
+muutama+Pron:muutam  PRON_MUUTAMA  ;
+mä+Pron+Pers+Sg1:m  PRON_MÄ  ;
+mää+Pron:mää  PRON_MÄÄ  ;
+ne+Pron:n  PRON_NE  ;
+noi+Pron:noi  PRON_NOI  ;
+nuo+Pron:n  PRON_NUO  ;
+nämä+Pron:nä  PRON_NÄMÄ  ;
+sa+Pron:sa  PRON_MA  ;
+sama+Pron:sam  PRON_SAMA  ;
+se+Pron:s  PRON_SE  ; 
+sie+Pron:si  PRON_MIE  ;
+!sinä+Pron+Pers+Sg2:si  PRON_MINÄ  ; ! see above for Nom
+sä+Pron+Pers+Sg2:s  PRON_MÄ  ;
+sää+Pron:sää  PRON_MÄÄ  ;
+!te+Pron+Pers+Pl2:te  PRON_ME  ; ! see above for Nom
+toi+Pron:to  PRON_TOI  ;
+toinen+Pron:toi  PRON_TOINEN  ;
+toinen+Pron:toi  PRON_TOINEN  ;
+tuo+Pron:t  PRON_TUO  ;
+tämä+Pron:tä  PRON_TÄMÄ  ;
+tää+Pron:tää  PRON_MÄÄ  ;
+usea+Pron:use  PRON_USEA  ;
+useampi+Pron:useam  PRON_USEAMPI  ;
+useimmat+Pron:usei  PRON_USEIMMAT  ;
+yks+Pron:yks  PRON_MÄÄ  ;
+yksi+Pron:y  PRON_YKSI  ;
+yksikään+Pron:yksikään  PRON_KOKO  ;
+
+
+
+LEXICON PRON_AINOA
+
+:a	PRON_BACK_NOMINATIVE ;
+
++Sg:a	PRON_BACK_SINGULARS_OPTPOSS ;
+
+:a	PRON_BACK_PARTITIVE_A_OPTPOSS ;
+
+:a	PRON_BACK_ILLATIVE_AN_OPTPOSS ;
+
+:a	PRON_BACK_GENITIVE_IN_OPTPOSS ;
+
+:	PRON_BACK_PLURALS_OPTPOSS ;
+
+:	PRON_BACK_PARTITIVE_ITA_OPTPOSS ;
+
+:	PRON_BACK_GENITIVE_IDEN_OPTPOSS ;
+
++Use/NG:	PRON_BACK_GENITIVE_ITTEN_OPTPOSS ;
+
+:	PRON_BACK_ILLATIVE_ISIIN_OPTPOSS ;
+
+:	PRON_BACK_ILLATIVE_IHIN_OPTPOSS ;
+
+
+LEXICON PRON_ERÄS
+
+:	PRON_FRONT_PLURALS ;
+
+:	PRON_FRONT_PARTITIVE_ITÄ ;
+
+:	PRON_FRONT_GENITIVE_IDEN ;
+
++Use/NG:	PRON_FRONT_GENITIVE_ITTEN ;
+
+:	PRON_FRONT_ILLATIVE_ISIIN ;
+
+:	PRON_FRONT_H_PLURALS_ARCHAIC ;
+
++Sg:s	PRON_FRONT_NOMINATIVE ;
+
+:s	PRON_FRONT_PARTITIVE_TÄ ;
+
+:ä	PRON_FRONT_SINGULARS ;
+
++Sg:ä	PRON_FRONT_GENITIVE_N ;
+
+:ä	PRON_FRONT_ILLATIVE_SEEN ;
+
+
+LEXICON PRON_HÄN
+
+!:e	PRON_FRONT_SINGULARS ;
+! PRON_FRONT_STRONG_SINGULARS
++Ess:e%>nä	PRON_FRONT_CLIT_OPT ;
+!PRON_FRONT_WEAK_SINGULARS
++Abe:e%>ttä	PRON_FRONT_CLIT_OPT ;
++Abl:e%>ltä	PRON_FRONT_CLIT_OPT ;
++Ade:e%>llä	PRON_FRONT_CLIT_OPT ;
++All:e%>lle	PRON_FRONT_CLIT_OPT ;
++Ela:e%>stä	PRON_FRONT_CLIT_OPT ;
++Ine:e%>ssä	PRON_FRONT_CLIT_OPT ;
++Tra:e%>ksi	PRON_FRONT_CLIT_OPT ;
+
+!:e	PRON_FRONT_ACCUSATIVE_T ;
++Acc:e%>t	PRON_FRONT_CLIT_OPT ;
+
+!:e	PRON_FRONT_GENITIVE_N ;
++Gen:e%>n	PRON_FRONT_CLIT_OPT ;
+
+!:e	PRON_BACK_ILLATIVE_EN ;
++Ill:e%>en	PRON_BACK_CLIT_OPT ;
++Ill+Use/Arch:e%>hen	PRON_BACK_CLIT_OPT ;
+
+!:	PRON_FRONT_NOMINATIVE ;
++Nom:	PRON_FRONT_CLIT_OPT ;
+
+!:	PRON_FRONT_PARTITIVE_TÄ ;
++Par:%>tä	PRON_FRONT_CLIT_OPT ;
+
+
+LEXICON PRON_HÄÄ
+
+:	PRON_FRONT_SINGULARS ;
+
+:ä	PRON_FRONT_NOMINATIVE ;
+
+
+LEXICON PRON_IKINEN
+
++Sg:nen	PRON_FRONT_NOMINATIVE ;
+
+:se	PRON_FRONT_SINGULARS ;
+
++Sg:se	PRON_BACK_GENITIVE_N ;
+
+:se	PRON_FRONT_ILLATIVE_EN ;
+
+:s	PRON_FRONT_PLURALS ;
+
+:s	PRON_FRONT_PARTITIVE_TÄ ;
+
+:s	PRON_FRONT_PARTITIVE_IÄ ;
+
+:s	PRON_FRONT_GENITIVE_IEN ;
+
+:s	PRON_FRONT_GENITIVE_TEN ;
+
+:s	PRON_FRONT_ILLATIVE_IIN ;
+
+
+LEXICON PRON_ITSE
+
++Sg:	PRON_FRONT_NOMINATIVE ;
+
++Sg:	PRON_FRONT_SINGULARS_OPTPOSS ;
+
++Sg:	PRON_FRONT_GENITIVE_N ;
+
+:	PRON_FRONT_PLURALS_OPTPOSS ;
+
+:	PRON_FRONT_PARTITIVE_Ä_ÄN ;
+
+:	PRON_FRONT_ILLATIVE_EN_OPTPOSS ;
+
+:	PRON_FRONT_PARTITIVE_JÄ_OPTPOSS ;
+
+:	PRON_FRONT_GENITIVE_JEN_OPTPOSS ;
+
+:	PRON_FRONT_GENITIVE_IN_OPTPOSS ;
+
+:	PRON_FRONT_ILLATIVE_IHIN_OPTPOSS ;
+
+
+LEXICON PRON_JOKA
+
+:ka	PRON_BACK_NOMINATIVE ;
+
++Pl+Gen:idenka	# ;
+
++Use/NG+Pl+Gen:ittenka	# ;
+
++Pl+Nom:tka	# ;
+
++Sg+Gen:nka	# ;
+
++Sg+Ill:honka	# ;
+
++Sg+Ill:nne	# ;
+
++Sg:	PRON_BACK_SINGULARS ;
+
+:	PRON_BACK_PLURALS ;
+
+:	PRON_BACK_PARTITIVE_TA ;
+
+:	PRON_BACK_ILLATIVE_HON ;
+
+:	PRON_BACK_PARTITIVE_ITA ;
+
+:	PRON_BACK_GENITIVE_IDEN ;
+
++Use/NG:	PRON_BACK_GENITIVE_ITTEN ;
+
+:	PRON_BACK_ILLATIVE_IHIN ;
+
+
+LEXICON PRON_JOKAINEN
+
+:nen	PRON_BACK_NOMINATIVE ;
+
++Sg:se	PRON_BACK_SINGULARS ;
+
+:se	PRON_BACK_ILLATIVE_EN ;
+
++Sg:se	PRON_BACK_GENITIVE_N ;
+
+:s	PRON_BACK_PLURALS ;
+
+:s	PRON_BACK_PARTITIVE_TA ;
+
+:s	PRON_BACK_PARTITIVE_IA ;
+
+:s	PRON_BACK_GENITIVE_IEN ;
+
+:s	PRON_BACK_GENITIVE_TEN ;
+
+:s	PRON_BACK_ILLATIVE_IIN ;
+
+
+LEXICON PRON_JOKIN
+
+:kin	PRON_BACK_NOMINATIVE ;
+
++Pl+Abl:iltain	PRON_BACK_CLIT_OPT ;
+
++Pl+Abl:iltakin	PRON_BACK_CLIT_OPT ;
+
++Pl+Abl+Dial/Finland:iltai	PRON_BACK_CLIT_OPT ;
+
++Pl+Ade:illain	PRON_BACK_CLIT_OPT ;
+
++Pl+Ade:illakin	PRON_BACK_CLIT_OPT ;
+
++Pl+Ade+Dial/Finland:illai	PRON_BACK_CLIT_OPT ;
+
++Pl+All:illekin	PRON_BACK_CLIT_OPT ;
+
++Pl+Ela:istain	PRON_BACK_CLIT_OPT ;
+
++Pl+Ela:istakin	PRON_BACK_CLIT_OPT ;
+
++Pl+Ela+Dial/Finland:istai	PRON_BACK_CLIT_OPT ;
+
++Pl+Ess:inain	PRON_BACK_CLIT_OPT ;
+
++Pl+Ess:inakin	PRON_BACK_CLIT_OPT ;
+
++Pl+Ess+Dial/Finland:inai	PRON_BACK_CLIT_OPT ;
+
++Pl+Gen:idenkin	PRON_BACK_CLIT_OPT ;
+
++Use/NG+Pl+Gen:ittenkin	PRON_BACK_CLIT_OPT ;
+
++Pl+Ill:ihinkin	PRON_BACK_CLIT_OPT ;
+
++Pl+Ine:issain	PRON_BACK_CLIT_OPT ;
+
++Pl+Ine:issakin	PRON_BACK_CLIT_OPT ;
+
++Pl+Ine+Dial/Finland:issai	PRON_BACK_CLIT_OPT ;
+
++Pl+Nom:tkin	PRON_BACK_CLIT_OPT ;
+
++Pl+Par:itain	PRON_BACK_CLIT_OPT ;
+
++Pl+Par:itakin	PRON_BACK_CLIT_OPT ;
+
++Pl+Par+Dial/Finland:itai	PRON_BACK_CLIT_OPT ;
+
++Pl+Tra:iksikin	PRON_BACK_CLIT_OPT ;
+
++Sg+Abl:ltain	PRON_BACK_CLIT_OPT ;
+
++Sg+Abl:ltakin	PRON_BACK_CLIT_OPT ;
+
++Sg+Abl+Dial/Finland:ltai	PRON_BACK_CLIT_OPT ;
+
++Sg+Ade:llain	PRON_BACK_CLIT_OPT ;
+
++Sg+Ade:llakin	PRON_BACK_CLIT_OPT ;
+
++Sg+Ade+Dial/Finland:llai	PRON_BACK_CLIT_OPT ;
+
++Sg+All:llekin	PRON_BACK_CLIT_OPT ;
+
++Sg+Ela:stain	PRON_BACK_CLIT_OPT ;
+
++Sg+Ela:stakin	PRON_BACK_CLIT_OPT ;
+
++Sg+Ela+Dial/Finland:stai	PRON_BACK_CLIT_OPT ;
+
++Sg+Ess:nain	PRON_BACK_CLIT_OPT ;
+
++Sg+Ess:nakin	PRON_BACK_CLIT_OPT ;
+
++Sg+Ess+Dial/Finland:nai	PRON_BACK_CLIT_OPT ;
+
++Sg+Gen:nkin	PRON_BACK_CLIT_OPT ;
+
++Sg+Ill:honkin	PRON_BACK_CLIT_OPT ;
+
++Sg+Ill:nnekin	PRON_BACK_CLIT_OPT ;
+
++Sg+Ine:ssain	PRON_BACK_CLIT_OPT ;
+
++Sg+Ine:ssakin	PRON_BACK_CLIT_OPT ;
+
++Sg+Par:tain	PRON_BACK_CLIT_OPT ;
+
++Sg+Par:takin	PRON_BACK_CLIT_OPT ;
+
++Sg+Par+Dial/Finland:tai	PRON_BACK_CLIT_OPT ;
+
++Sg+Tra:ksikin	PRON_BACK_CLIT_OPT ;
+
++Sg+Tra+Dial/Finland:kski	PRON_BACK_CLIT_OPT ;
+
+
+LEXICON PRON_JOKU
+
+:ku	PRON_BACK_NOMINATIVE ;
+
++Pl+Abl:iltakuilta	PRON_BACK_CLIT_OPT ;
+
++Pl+Ade:illakuilla	PRON_BACK_CLIT_OPT ;
+
++Pl+All:illekuille	PRON_BACK_CLIT_OPT ;
+
++Pl+Ela:istakuista	PRON_BACK_CLIT_OPT ;
+
++Pl+Ess:inakuina	PRON_BACK_CLIT_OPT ;
+
++Pl+Gen:idenkuiden	PRON_BACK_CLIT_OPT ;
+
++Use/NG+Pl+Gen:ittenkuitten	PRON_BACK_CLIT_OPT ;
+
++Pl+Ill:ihinkuihin	PRON_BACK_CLIT_OPT ;
+
++Pl+Ine:issakuissa	PRON_BACK_CLIT_OPT ;
+
++Pl+Nom:tkut	PRON_BACK_CLIT_OPT ;
+
++Pl+Par:itakuita	PRON_BACK_CLIT_OPT ;
+
++Pl+Tra:iksikuiksi	PRON_BACK_CLIT_OPT ;
+
++Sg+Abl:ltakulta	PRON_BACK_CLIT_OPT ;
+
++Sg+Ade:llakulla	PRON_BACK_CLIT_OPT ;
+
++Sg+All:llekulle	PRON_BACK_CLIT_OPT ;
+
++Sg+Ela:stakusta	PRON_BACK_CLIT_OPT ;
+
++Sg+Ess:nakuna	PRON_BACK_CLIT_OPT ;
+
++Sg+Gen:nkun	PRON_BACK_CLIT_OPT ;
+
++Sg+Ill:honkuhun	PRON_BACK_CLIT_OPT ;
+
++Sg+Ine:ssakussa	PRON_BACK_CLIT_OPT ;
+
++Sg+Par:takuta	PRON_BACK_CLIT_OPT ;
+
++Sg+Tra:ksikuksi	PRON_BACK_CLIT_OPT ;
+
+
+LEXICON PRON_JOMPIKUMPI
+
++Pl+Abl:miltakummilta	PRON_BACK_CLIT_OPT ;
+
++Pl+Ade:millakummilla	PRON_BACK_CLIT_OPT ;
+
++Pl+All:millekummille	PRON_BACK_CLIT_OPT ;
+
++Pl+Ela:mistakummista	PRON_BACK_CLIT_OPT ;
+
++Pl+Ess:pinakumpina	PRON_BACK_CLIT_OPT ;
+
++Pl+Gen:pienkumpien	PRON_BACK_CLIT_OPT ;
+
++Pl+Ill:piinkumpiin	PRON_BACK_CLIT_OPT ;
+
++Pl+Ine:missakummissa	PRON_BACK_CLIT_OPT ;
+
++Pl+Nom:matkummat	PRON_BACK_CLIT_OPT ;
+
++Pl+Par:piakumpia	PRON_BACK_CLIT_OPT ;
+
++Pl+Tra:miksikummiksi	PRON_BACK_CLIT_OPT ;
+
++Sg+Abl:maltakummalta	PRON_BACK_CLIT_OPT ;
+
++Sg+Ade:mallakummalla	PRON_BACK_CLIT_OPT ;
+
++Sg+All:mallekummalle	PRON_BACK_CLIT_OPT ;
+
++Sg+Ela:mastakummasta	PRON_BACK_CLIT_OPT ;
+
++Sg+Ess:panakumpana	PRON_BACK_CLIT_OPT ;
+
++Sg+Gen:mankumman	PRON_BACK_CLIT_OPT ;
+
++Sg+Ill:paankumpaan	PRON_BACK_CLIT_OPT ;
+
++Sg+Ine:massakummassa	PRON_BACK_CLIT_OPT ;
+
++Sg+Par:paakumpaa	PRON_BACK_CLIT_OPT ;
+
++Sg+Tra:maksikummaksi	PRON_BACK_CLIT_OPT ;
+
+:pikumpi	PRON_BACK_NOMINATIVE ;
+
+
+LEXICON PRON_KAIKKI
+
+:e	PRON_BACK_WEAK_SINGULARS_OPTPOSS ;
+
++Sg:e	PRON_BACK_GENITIVE_N ;
+
+:ke	PRON_BACK_STRONG_SINGULARS_OPTPOSS ;
+
+:ke	PRON_BACK_PARTITIVE_A_AN ;
+
+:ke	PRON_BACK_ILLATIVE_EN ;
+
+:ke	PRON_BACK_GENITIVE_IN_OPTPOSS ;
+
+:k	PRON_BACK_STRONG_PLURALS_OPTPOSS ;
+
+:k	PRON_BACK_PARTITIVE_IA_OPTPOSS ;
+
+:k	PRON_BACK_GENITIVE_IEN_OPTPOSS ;
+
+:k	PRON_BACK_ILLATIVE_IIN_OPTPOSS ;
+
++Sg+Nom:ki	PRON_BACK_CLIT_OPT ;
++Pl+Nom+Use/NG:ket	PRON_BACK_CLIT_OPT ;
++Pl+Nom:ki	PRON_BACK_CLIT_OPT ;
+
+:	PRON_BACK_WEAK_PLURALS_OPTPOSS ;
+
++Dial/Finland+Sg+Nom:	# ;
+
+
+LEXICON PRON_KOKO
+
+:	# ;
+
+
+LEXICON PRON_KUKA
+
++Pl+Abe:eittä	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Pl+Abl:eiltä	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Pl+Ade:eillä	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Pl+All:eille	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Pl+Ela:eistä	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Pl+Ess:einä	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Pl+Gen:eiden	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Use/NG+Pl+Gen:eitten	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Pl+Ill:eihin	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Pl+Ine:eissä	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Pl+Ins:ein	PRON_FRONT_CLIT_OPT ;
+
++Pl+Nom:etkä	PRON_FRONT_CLIT_OPT_S ;
+
++Pl+Nom+Use/Marg:utka	PRON_BACK_CLIT_OPT_S ;
+
++Pl+Par:eitä	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Pl+Tra:eiksi	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+Abe:enettä	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+Abl:eltä	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+Abl:eneltä	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+Acc:enet	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+Ade:ellä	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+Ade:enellä	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+All:elle	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+All:enelle	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+Ela:enestä	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+Ela:estä	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+Ess:enenä	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+Ess:enä	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+Gen:enen	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+Ill:ehen	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+Ill:eneen	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+Ine:enessä	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+Ine:essä	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+Nom:uka	PRON_BACK_CLIT_OPT_S ;
+
++Sg+Par:etä	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+Tra:eneksi	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Com:ine	PRON_FRONT_CLIT_OPT ;
+
+
+LEXICON PRON_KUKAAN
+
++Pl+Abl:eiltään	PRON_FRONT_CLIT_OPT ;
+
++Pl+Ade:eilläkään	PRON_FRONT_CLIT_OPT ;
+
++Pl+Ade:eillään	PRON_FRONT_CLIT_OPT ;
+
++Pl+All:eillekään	PRON_FRONT_CLIT_OPT ;
+
++Pl+All+Dial/Finland:eilleen	PRON_FRONT_CLIT_OPT ;
+
++Pl+Ess:einäkään	PRON_FRONT_CLIT_OPT ;
+
++Pl+Ess:einään	PRON_FRONT_CLIT_OPT ;
+
++Pl+Gen:eidenkään	PRON_FRONT_CLIT_OPT ;
+
++Use/NG+Pl+Gen:eittenkään	PRON_FRONT_CLIT_OPT ;
+
++Pl+Ill:eihinkään	PRON_FRONT_CLIT_OPT ;
+
++Pl+Nom:etkään	PRON_FRONT_CLIT_OPT ;
+
++Pl+Nom+Use/Marg:utkaan	PRON_BACK_CLIT_OPT ;
+
++Pl+Par:eitäkään	PRON_FRONT_CLIT_OPT ;
+
++Pl+Par:eitään	PRON_FRONT_CLIT_OPT ;
+
++Sg+Abl:eltäkään	PRON_FRONT_CLIT_OPT ;
+
++Sg+Abl:eltään	PRON_FRONT_CLIT_OPT ;
+
++Sg+Abl:eneltäkään	PRON_FRONT_CLIT_OPT ;
+
++Sg+Ade:elläkään	PRON_FRONT_CLIT_OPT ;
+
++Sg+Ade:ellään	PRON_FRONT_CLIT_OPT ;
+
++Sg+Ade:enelläkään	PRON_FRONT_CLIT_OPT ;
+
++Sg+All:ellekään	PRON_FRONT_CLIT_OPT ;
+
++Sg+All:enellekään	PRON_FRONT_CLIT_OPT ;
+
++Sg+All+Dial/Finland:elleen	PRON_FRONT_CLIT_OPT ;
+
++Sg+Ess:enäkään	PRON_FRONT_CLIT_OPT ;
+
++Sg+Ess:enään	PRON_FRONT_CLIT_OPT ;
+
++Sg+Gen:enenkään	PRON_FRONT_CLIT_OPT ;
+
++Sg+Ill:ehenkään	PRON_FRONT_CLIT_OPT ;
+
++Sg+Ill:eneenkään	PRON_FRONT_CLIT_OPT ;
+
++Sg+Par:etäkään	PRON_FRONT_CLIT_OPT ;
+
++Sg+Par:etään	PRON_FRONT_CLIT_OPT ;
+
++Sg+Tra:eneksikään	PRON_FRONT_CLIT_OPT ;
+
+:ukaan	PRON_BACK_NOMINATIVE ;
+
+
+LEXICON PRON_KUKAKIN
+
++Pl+Abe:eittäkin	# ;
+
++Pl+Abl:eiltäkin	# ;
+
++Pl+Ade:eilläkin	# ;
+
++Pl+All:eillekin	# ;
+
++Pl+Ela:eistäkin	# ;
+
++Pl+Ess:einäkin	# ;
+
++Pl+Gen:eidenkin	# ;
+
++Use/NG+Pl+Gen:eittenkin	# ;
+
++Pl+Ill:eihinkin	# ;
+
++Pl+Ine:eissäkin	# ;
+
++Pl+Nom:etkäkin	# ;
+
++Pl+Nom+Use/Marg:utkakin	# ;
+
++Pl+Par:eitäkin	# ;
+
++Pl+Tra:eiksikin	# ;
+
++Sg+Abe:enettäkin	# ;
+
++Sg+Abl:eltäkin	# ;
+
++Sg+Abl:eneltäkin	# ;
+
++Sg+Acc:enetkin	# ;
+
++Sg+Ade:elläkin	# ;
+
++Sg+Ade:enelläkin	# ;
+
++Sg+All:ellekin	# ;
+
++Sg+All:enellekin	# ;
+
++Sg+Ela:enestäkin	# ;
+
++Sg+Ela:estäkin	# ;
+
++Sg+Ess:enenäkin	# ;
+
++Sg+Ess:enäkin	# ;
+
++Sg+Gen:enenkin	# ;
+
++Sg+Ill:ehenkin	# ;
+
++Sg+Ill:eneenkin	# ;
+
++Sg+Ine:enessäkin	# ;
+
++Sg+Ine:essäkin	# ;
+
++Sg+Nom:ukakin	# ;
+
++Sg+Par:etäkin	# ;
+
++Sg+Tra:eneksikin	# ;
+
+
+LEXICON PRON_KUKIN
+
++Pl+Abl:uiltakin	PRON_BACK_CLIT_OPT ;
+
++Pl+Ade:uillakin	PRON_BACK_CLIT_OPT ;
+
++Pl+All:uillekin	PRON_BACK_CLIT_OPT ;
+
++Pl+Ela:uistakin	PRON_BACK_CLIT_OPT ;
+
++Pl+Ess:uinakin	PRON_BACK_CLIT_OPT ;
+
++Pl+Gen:uidenkin	PRON_BACK_CLIT_OPT ;
+
++Pl+Ill:uihinkin	PRON_BACK_CLIT_OPT ;
+
++Pl+Ine:uissakin	PRON_BACK_CLIT_OPT ;
+
++Pl+Par:uitakin	PRON_BACK_CLIT_OPT ;
+
++Pl+Tra:uiksikin	PRON_BACK_CLIT_OPT ;
+
++Sg+Abl:ultakin	PRON_BACK_CLIT_OPT ;
+
++Sg+Ade:ullakin	PRON_BACK_CLIT_OPT ;
+
++Sg+All:ullekin	PRON_BACK_CLIT_OPT ;
+
++Sg+Ela:ustakin	PRON_BACK_CLIT_OPT ;
+
++Sg+Ess:unakin	PRON_BACK_CLIT_OPT ;
+
++Sg+Gen:unkin	PRON_BACK_CLIT_OPT ;
+
++Sg+Ill:uhunkin	PRON_BACK_CLIT_OPT ;
+
++Sg+Ine:ussakin	PRON_BACK_CLIT_OPT ;
+
++Sg+Par:utakin	PRON_BACK_CLIT_OPT ;
+
++Sg+Tra:uksikin	PRON_BACK_CLIT_OPT ;
+
+:ukin	PRON_BACK_NOMINATIVE ;
+
+
+LEXICON PRON_KUMPI
+
++Sg:ma	PRON_BACK_WEAK_SINGULARS ;
+
++Sg:ma	PRON_BACK_GENITIVE_N ;
+
+:m	PRON_BACK_WEAK_PLURALS ;
+
++Sg:pa	PRON_BACK_STRONG_SINGULARS ;
+
++Sg:pa	PRON_BACK_PARTITIVE_A ;
+
+:pa	PRON_BACK_ILLATIVE_AN ;
+
+:pa	PRON_BACK_GENITIVE_IN ;
+
+:pi	PRON_BACK_NOMINATIVE ;
+
+:p	PRON_BACK_STRONG_PLURALS ;
+
+:p	PRON_BACK_PARTITIVE_IA ;
+
+:p	PRON_BACK_GENITIVE_IEN ;
+
+:p	PRON_BACK_ILLATIVE_IIN ;
+
+
+LEXICON PRON_KUMPIKAAN
+
++Pl+Abl:miltakaan	PRON_BACK_CLIT_OPT ;
+
++Pl+Ade:millakaan	PRON_BACK_CLIT_OPT ;
+
++Pl+All:millekaan	PRON_BACK_CLIT_OPT ;
+
++Pl+Ela:mistakaan	PRON_BACK_CLIT_OPT ;
+
++Pl+Ess:pinakaan	PRON_BACK_CLIT_OPT ;
+
++Pl+Gen:pienkaan	PRON_BACK_CLIT_OPT ;
+
++Pl+Ill:piinkaan	PRON_BACK_CLIT_OPT ;
+
++Pl+Ine:missakaan	PRON_BACK_CLIT_OPT ;
+
++Pl+Nom:matkaan	PRON_BACK_CLIT_OPT ;
+
++Pl+Par:piakaan	PRON_BACK_CLIT_OPT ;
+
++Pl+Tra:miksikaan	PRON_BACK_CLIT_OPT ;
+
++Sg+Abl:maltakaan	PRON_BACK_CLIT_OPT ;
+
++Sg+Ade:mallakaan	PRON_BACK_CLIT_OPT ;
+
++Sg+All:mallekaan	PRON_BACK_CLIT_OPT ;
+
++Sg+Ela:mastakaan	PRON_BACK_CLIT_OPT ;
+
++Sg+Ess:panakaan	PRON_BACK_CLIT_OPT ;
+
++Sg+Gen:mankaan	PRON_BACK_CLIT_OPT ;
+
++Sg+Ill:paankaan	PRON_BACK_CLIT_OPT ;
+
++Sg+Ine:massakaan	PRON_BACK_CLIT_OPT ;
+
++Sg+Par:paakaan	PRON_BACK_CLIT_OPT ;
+
++Sg+Tra:maksikaan	PRON_BACK_CLIT_OPT ;
+
+:pikaan	PRON_BACK_NOMINATIVE ;
+
+
+LEXICON PRON_KUMPIKIN
+
++Pl+Abl:miltakin	PRON_BACK_CLIT_OPT ;
+
++Pl+Ade:millakin	PRON_BACK_CLIT_OPT ;
+
++Pl+All:millekin	PRON_BACK_CLIT_OPT ;
+
++Pl+Ela:mistakin	PRON_BACK_CLIT_OPT ;
+
++Pl+Ess:pinakin	PRON_BACK_CLIT_OPT ;
+
++Pl+Gen:pienkin	PRON_BACK_CLIT_OPT ;
+
++Pl+Ill:piinkin	PRON_BACK_CLIT_OPT ;
+
++Pl+Ine:missakin	PRON_BACK_CLIT_OPT ;
+
++Pl+Nom:matkin	PRON_BACK_CLIT_OPT ;
+
++Pl+Par:piakin	PRON_BACK_CLIT_OPT ;
+
++Pl+Tra:miksikin	PRON_BACK_CLIT_OPT ;
+
++Sg+Abl:maltakin	PRON_BACK_CLIT_OPT ;
+
++Sg+Ade:mallakin	PRON_BACK_CLIT_OPT ;
+
++Sg+All:mallekin	PRON_BACK_CLIT_OPT ;
+
++Sg+Ela:mastakin	PRON_BACK_CLIT_OPT ;
+
++Sg+Ess:panakin	PRON_BACK_CLIT_OPT ;
+
++Sg+Gen:mankin	PRON_BACK_CLIT_OPT ;
+
++Sg+Ill:paankin	PRON_BACK_CLIT_OPT ;
+
++Sg+Ine:massakin	PRON_BACK_CLIT_OPT ;
+
++Sg+Par:paakin	PRON_BACK_CLIT_OPT ;
+
++Sg+Tra:maksikin	PRON_BACK_CLIT_OPT ;
+
+:pikin	PRON_BACK_NOMINATIVE ;
+
+
+LEXICON PRON_MA
+
+:	PRON_BACK_NOMINATIVE ;
+
+
+LEXICON PRON_ME
+
++Acc:idät	PRON_FRONT_CLIT_OPT ;
+
++Gen:idän	PRON_FRONT_CLIT_OPT ;
+
++Gen+Dial/Finland:ijän	PRON_FRONT_CLIT_OPT ;
+
++Gen+Dial/Finland:iän	PRON_FRONT_CLIT_OPT ;
+
++Gen+Dial/Finland:än	PRON_FRONT_CLIT_OPT ;
+
+!:	PRON_FRONT_PLNOM_0 ;
++Nom:	PRON_FRONT_CLIT_OPT ;
+
+!:	PRON_FRONT_PLURALS ;
+! PRON_FRONT_STRONG_PLURALS
++Ess:%>i%>nä	PRON_FRONT_CLIT_OPT ;
++Com:%>i%>ne	PRON_FRONT_CLIT_OPT ;
+! PRON_FRONT_WEAK_PLURALS
++Abe:%>i%>ttä	PRON_FRONT_CLIT_OPT ;
++Abl:%>i%>ltä	PRON_FRONT_CLIT_OPT ;
++Ade:%>i%>llä	PRON_FRONT_CLIT_OPT ;
++All:%>i%>lle	PRON_FRONT_CLIT_OPT ;
++Ela:%>i%>stä	PRON_FRONT_CLIT_OPT ;
++Ine:%>i%>ssä	PRON_FRONT_CLIT_OPT ;
++Ins:%>i%>n	PRON_FRONT_CLIT_OPT ;
++Tra:%>i%>ksi	PRON_FRONT_CLIT_OPT ;
+
+!:	PRON_FRONT_PARTITIVE_ITÄ ;
++Par:%>i%>tä	PRON_FRONT_CLIT_OPT ;
+
+!:	PRON_FRONT_ILLATIVE_IHIN ;
++Ill:%>i%>hin	PRON_FRONT_CLIT_OPT ;
+
+
+LEXICON PRON_MIE
+
+:e	PRON_FRONT_NOMINATIVE ;
+
++Sg+Acc:ut	PRON_BACK_CLIT_OPT ;
+
++Sg+Par:nnuu	PRON_BACK_CLIT_OPT ;
+
++Sg:u	PRON_BACK_SINGULARS ;
+
+:u	PRON_BACK_PARTITIVE_TA ;
+
++Sg:u	PRON_BACK_GENITIVE_N ;
+
+:u	PRON_BACK_ILLATIVE_HUN ;
+
+
+LEXICON PRON_MIKIN
+
++Pl+Nom:tkin	# ;
+
++Sg+Nom:kin	# ;
+
++Sg+Abl:ltäkin	# ;
+
++Sg+Ade:lläkin	# ;
+
++Sg+All:llekin	# ;
+
++Sg+Ela:stäkin	# ;
+
++Sg+Ess:näkin	# ;
+
++Sg+Gen:nkin	# ;
+
++Sg+Ill:hinkin	# ;
+
++Sg+Ill:nnekin	# ;
+
++Sg+Ine:ssäkin	# ;
+
++Sg+Par:täkin	# ;
+
++Sg+Tra:ksikin	# ;
+
+
+LEXICON PRON_MIKÄ
+
++Pl+Nom:tkä	PRON_FRONT_CLIT_OPT_S ;
+
++Sg+Nom:kä	PRON_FRONT_CLIT_OPT_S ;
+
++Sg+Abl:ltä	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+Ade:llä	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+All:lle	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+Ela:stä	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+Ess:nä	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+Gen:nkä	PRON_FRONT_CLIT_OPT_S ;
+
++Sg+Ill:hin	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+Ill:nne	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+Ine:ssä	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+Par:tä	PRON_FRONT_CLIT_OPT_KA_S ;
+
++Sg+Tra:ksi	PRON_FRONT_CLIT_OPT_KA_S ;
+
+
+LEXICON PRON_MIKÄKIN
+
++Pl+Nom:tkäkin	# ;
+
++Sg+Nom:käkin	# ;
+
++Sg+Abl:ltäkin	# ;
+
++Sg+Ade:lläkin	# ;
+
++Sg+All:llekin	# ;
+
++Sg+Ela:stäkin	# ;
+
++Sg+Ess:näkin	# ;
+
++Sg+Gen:nkäkin	# ;
+
++Sg+Ill:hinkin	# ;
+
++Sg+Ill:hinkäkin	# ;
+
++Sg+Ill:nnekin	# ;
+
++Sg+Ine:ssäkin	# ;
+
++Sg+Par:täkin	# ;
+
++Sg+Tra:ksikin	# ;
+
++Sg+Tra:ksikäkin	# ;
+
+
+LEXICON PRON_MIKÄÄN
+
++Sg:kään	PRON_FRONT_NOMINATIVE ;
+
++Pl+Nom:tkään	PRON_FRONT_CLIT_OPT ;
+
++Sg+Abl:ltään	PRON_FRONT_CLIT_OPT ;
+
++Sg+Ade:llään	PRON_FRONT_CLIT_OPT ;
+
++Sg+All:llekään	PRON_FRONT_CLIT_OPT ;
+
++Sg+All+Dial/Finland:lleen	PRON_FRONT_CLIT_OPT ;
+
++Sg+Ela:stään	PRON_FRONT_CLIT_OPT ;
+
++Sg+Ess:nään	PRON_FRONT_CLIT_OPT ;
+
++Sg+Gen:nkään	PRON_FRONT_CLIT_OPT ;
+
++Sg+Ill:hinkään	PRON_FRONT_CLIT_OPT ;
+
++Sg+Ine:ssään	PRON_FRONT_CLIT_OPT ;
+
++Sg+Par:tään	PRON_FRONT_CLIT_OPT ;
+
++Sg+Par+Dial/Finland:ttään	PRON_FRONT_CLIT_OPT ;
+
++Sg+Tra:ksikään	PRON_FRONT_CLIT_OPT ;
+
+
+LEXICON PRON_MINÄ
+
++Acc:nut	PRON_BACK_CLIT_OPT ;
+
+:nu	PRON_BACK_SINGULARS ;
+
+:nu	PRON_BACK_PARTITIVE_A ;
+
+:nu	PRON_BACK_GENITIVE_N ;
+
+:nu	PRON_BACK_ILLATIVE_UN ;
+
+:nä	PRON_FRONT_NOMINATIVE ;
+
+
+LEXICON PRON_MOLEMMAT
+
+:ma	PRON_BACK_PLNOM_T ;
+
+:m	PRON_BACK_WEAK_PLURALS_OPTPOSS ;
+
+:p	PRON_BACK_STRONG_PLURALS_OPTPOSS ;
+
+:p	PRON_BACK_PARTITIVE_IA_OPTPOSS ;
+
+:p	PRON_BACK_GENITIVE_IEN_OPTPOSS ;
+
+:p	PRON_BACK_ILLATIVE_IIN_OPTPOSS ;
+
++Use/Marg:ma	PRON_BACK_WEAK_SINGULARS_OPTPOSS ;
+
++Sg+Use/Marg:ma	PRON_BACK_GENITIVE_N ;
+
++Use/Marg:pa	PRON_BACK_STRONG_SINGULARS_OPTPOSS ;
+
++Sg+Use/Marg:pa	PRON_BACK_PARTITIVE_A_OPTPOSS ;
+
++Use/Marg:pa	PRON_BACK_PARTITIVE_TA_ARCHAIC ;
+
++Use/Marg:pa	PRON_BACK_ILLATIVE_AN_OPTPOSS ;
+
++Use/Marg:pa	PRON_BACK_GENITIVE_IN_OPTPOSS ;
+
++Use/Marg:pi	PRON_BACK_NOMINATIVE ;
+
+
+LEXICON PRON_MONES
+
++Sg:nne	PRON_BACK_SINGULARS_OPTPOSS ;
+
++Sg:nne	PRON_BACK_GENITIVE_N ;
+
+:ns	PRON_BACK_PLURALS_OPTPOSS ;
+
+:ns	PRON_BACK_PARTITIVE_IA_OPTPOSS ;
+
+:ns	PRON_BACK_GENITIVE_IEN_OPTPOSS ;
+
+:ns	PRON_BACK_ILLATIVE_IIN_OPTPOSS ;
+
+:s	PRON_BACK_NOMINATIVE ;
+
+:t	PRON_BACK_PARTITIVE_TA_OPTPOSS ;
+
+
+LEXICON PRON_MONI
+
++Sg:e	PRON_BACK_SINGULARS ;
+
++Sg:e	PRON_BACK_GENITIVE_N ;
+
+:e	PRON_BACK_ILLATIVE_EN ;
+
+:i	PRON_BACK_NOMINATIVE ;
+
+:	PRON_BACK_PARTITIVE_TA ;
+
+:	PRON_BACK_PLURALS ;
+
+:	PRON_BACK_PARTITIVE_IA ;
+
+:	PRON_BACK_GENITIVE_IEN ;
+
+:	PRON_BACK_ILLATIVE_IIN ;
+
++Sg+Err/Orth:e	PRON_BACK_PARTITIVE_A ;
++Pl+Nom:e%>t PRON_BACK_CLIT_OPT ;
+
+LEXICON PRON_MONIAS
+
+:a	PRON_BACK_SINGULARS ;
+
+:a	PRON_BACK_ILLATIVE_SEEN ;
+
+:	PRON_BACK_PLURALS ;
+
+:	PRON_BACK_PARTITIVE_ITA ;
+
+:	PRON_BACK_GENITIVE_IDEN ;
+
++Use/NG:	PRON_BACK_GENITIVE_ITTEN ;
+
+:	PRON_BACK_ILLATIVE_ISIIN ;
+
+:	PRON_BACK_ILLATIVE_IHIN ;
+
+:s	PRON_BACK_NOMINATIVE ;
+
+:s	PRON_BACK_PARTITIVE_TA ;
+
+
+LEXICON PRON_MONTA
+
+:	PRON_BACK_NOMINATIVE ;
+
++Sg:	PRON_BACK_PARTITIVE_A ;
+
+
+LEXICON PRON_MUU
+
+:	PRON_BACK_PLURALS ;
+
+:	PRON_BACK_PARTITIVE_ITA ;
+
+:	PRON_BACK_GENITIVE_IDEN ;
+
++Use/NG:	PRON_BACK_GENITIVE_ITTEN ;
+
+:	PRON_BACK_ILLATIVE_IHIN ;
+
+:u	PRON_BACK_NOMINATIVE ;
+
++Sg:u	PRON_BACK_SINGULARS ;
+
+:u	PRON_BACK_PARTITIVE_TA ;
+
++Use/NG:u	PRON_BACK_ILLATIVE_HUN ;
+
++Use/NG+Sg:u	PRON_BACK_GENITIVE_N ;
+
+
+LEXICON PRON_MUUAN
+
+:n	PRON_BACK_NOMINATIVE ;
+
+:t	PRON_BACK_PARTITIVE_TA ;
+
+
+LEXICON PRON_MUUTAMA
+
+:a	PRON_BACK_NOMINATIVE ;
+
++Sg:a	PRON_BACK_GENITIVE_N ;
+
++Sg:a	PRON_BACK_SINGULARS ;
+
++Sg:a	PRON_BACK_PARTITIVE_A ;
+
+:a	PRON_BACK_PARTITIVE_TA_ARCHAIC ;
+
+:a	PRON_BACK_ILLATIVE_AN ;
+
+:	PRON_BACK_PLURALS ;
+
+:	PRON_BACK_PARTITIVE_IA ;
+
+:	PRON_BACK_GENITIVE_IEN ;
+
+:	PRON_BACK_ILLATIVE_IIN ;
+
+
+LEXICON PRON_MÄ
+
++Abl:ult	PRON_BACK_CLIT_OPT ;
+
++Acc:ut	PRON_BACK_CLIT_OPT ;
+
++Ade:ull	PRON_BACK_CLIT_OPT ;
+
++Ade:ul	PRON_BACK_CLIT_OPT ;
+
++Ela:ust	PRON_BACK_CLIT_OPT ;
+
+:u	PRON_BACK_SINGULARS ;
+
+:u	PRON_BACK_PARTITIVE_A ;
+
+:u	PRON_BACK_GENITIVE_N ;
+
+:u	PRON_BACK_ILLATIVE_HUN ;
+
+:ä	PRON_FRONT_NOMINATIVE ;
+
+
+LEXICON PRON_MÄÄ
+
+:	PRON_FRONT_NOMINATIVE ;
+
+
+LEXICON PRON_NE
+
+:e	PRON_FRONT_PLNOM_0 ;
+
+:i	PRON_FRONT_PLURALS ;
+
+:i	PRON_FRONT_PARTITIVE_ITÄ ;
+
+:i	PRON_FRONT_GENITIVE_IDEN ;
+
++Use/NG:i	PRON_FRONT_GENITIVE_ITTEN ;
+
+:i	PRON_FRONT_ILLATIVE_IHIN ;
+
+:i	PRON_FRONT_PARTITIVE_TÄ ;
+
+
+LEXICON PRON_NOI
+
+:	PRON_BACK_PLNOM_0 ;
+
+
+LEXICON PRON_NUO
+
++Sg+Acc+Use/Arch:uot	PRON_BACK_CLIT_OPT ;
+
+:o	PRON_BACK_PLURALS ;
+
+:o	PRON_BACK_PARTITIVE_ITA ;
+
+:o	PRON_BACK_GENITIVE_IDEN ;
+
++Use/NG:o	PRON_BACK_GENITIVE_ITTEN ;
+
+:o	PRON_BACK_ILLATIVE_IHIN ;
+
+:uo	PRON_BACK_PLNOM_0 ;
+
+
+LEXICON PRON_NÄMÄ
+
+:mä	PRON_FRONT_PLNOM_0 ;
+
++Sg+Acc+Use/Arch:mät	PRON_FRONT_CLIT_OPT ;
+
++Sg+Nom+Dial/Finland:ä	PRON_FRONT_CLIT_OPT ;
+
+:	PRON_FRONT_PLURALS ;
+
+:	PRON_FRONT_PARTITIVE_ITÄ ;
+
+:	PRON_FRONT_GENITIVE_IDEN ;
+
++Use/NG:	PRON_FRONT_GENITIVE_ITTEN ;
+
+:	PRON_FRONT_ILLATIVE_IHIN ;
+
+
+LEXICON PRON_SAMA
+
+:a	PRON_BACK_NOMINATIVE ;
+
++Sg:a	PRON_BACK_GENITIVE_N ;
+
++Sg:a	PRON_BACK_SINGULARS ;
+
++Sg:a	PRON_BACK_PARTITIVE_A ;
+
+:a	PRON_BACK_ILLATIVE_AN ;
+
+:o	PRON_BACK_PLURALS ;
+
+:o	PRON_BACK_PARTITIVE_JA ;
+
+:o	PRON_BACK_GENITIVE_JEN ;
+
+:o	PRON_BACK_ILLATIVE_IHIN ;
+
+
+LEXICON PRON_SE
+
++Sg:e	PRON_FRONT_NOMINATIVE ;
+
++Sg:e	PRON_FRONT_GENITIVE_N ;
+
+:ii	PRON_FRONT_ILLATIVE_HEN ;
+
++Use/NG:i	PRON_FRONT_SINGULARS ; ! exceptional forms listed above
+
+:i	PRON_FRONT_PARTITIVE_TÄ ;
+
++Sg+Ela:iitä	PRON_FRONT_CLIT_OPT ;
+
++Sg+Ine:iinä	PRON_FRONT_CLIT_OPT ;
+
+
+LEXICON PRON_TOI
+
+:i	PRON_BACK_NOMINATIVE ;
+
++Sg:	PRON_BACK_SINGULARS ;
+
+:	PRON_BACK_PARTITIVE_TA ;
+
+:	PRON_BACK_ILLATIVE_HON ;
+
+
+LEXICON PRON_TOINEN
+
+:nen	PRON_BACK_NOMINATIVE ;
+
++Sg:se	PRON_BACK_SINGULARS_OPTPOSS ;
+
+:se	PRON_BACK_ILLATIVE_EN_OPTPOSS ;
+
++Sg:se	PRON_BACK_GENITIVE_N ;
+
+:s	PRON_BACK_PLURALS_OPTPOSS ;
+
+:s	PRON_BACK_PARTITIVE_TA_OPTPOSS ;
+
+:s	PRON_BACK_PARTITIVE_IA_OPTPOSS ;
+
+:s	PRON_BACK_GENITIVE_IEN_OPTPOSS ;
+
+:s	PRON_BACK_GENITIVE_TEN_OPTPOSS ;
+
+:s	PRON_BACK_ILLATIVE_IIN_OPTPOSS ;
+
+
+LEXICON PRON_TUO
+
+:uo	PRON_BACK_NOMINATIVE ;
+
++Sg:uo	PRON_BACK_GENITIVE_N ;
+
++Sg:uo	PRON_BACK_SINGULARS ;
+
+:uo	PRON_BACK_PARTITIVE_TA ;
+
+:uo	PRON_BACK_ILLATIVE_HON ;
+
+
+LEXICON PRON_TÄMÄ
+
++Sg:mä	PRON_FRONT_NOMINATIVE ;
+
++Sg:mä	PRON_FRONT_GENITIVE_N ;
+
++Sg+Gen+Dial/Finland:n	PRON_FRONT_CLIT_OPT ;
+
++Sg+Gen+Dial/Finland:än	PRON_FRONT_CLIT_OPT ;
+
++Sg+Nom+Dial/Finland:ä	PRON_FRONT_CLIT_OPT ;
+
+:	PRON_FRONT_SINGULARS ;
+
+:	PRON_FRONT_PARTITIVE_TÄ ;
+
+:	PRON_FRONT_ILLATIVE_HÄN ;
+
+
+LEXICON PRON_USEA
+
+:a	PRON_BACK_NOMINATIVE ;
+
++Sg:a	PRON_BACK_GENITIVE_N ;
+
++Sg:a	PRON_BACK_SINGULARS ;
+
++Sg:a	PRON_BACK_PARTITIVE_A ;
+
+:a	PRON_BACK_ILLATIVE_AN ;
+
+:a	PRON_BACK_GENITIVE_IN ;
+
+:	PRON_BACK_PLURALS ;
+
+:	PRON_BACK_PARTITIVE_ITA ;
+
+:	PRON_BACK_GENITIVE_IDEN ;
+
++Use/NG:	PRON_BACK_GENITIVE_ITTEN ;
+
+:	PRON_BACK_ILLATIVE_ISIIN ;
+
+:	PRON_BACK_ILLATIVE_IHIN ;
+
++Use/Arch:h	PRON_BACK_PARTITIVE_IA ;
+
+
+LEXICON PRON_USEAMPI
+
+:ma	PRON_BACK_WEAK_SINGULARS ;
+
++Sg:ma	PRON_BACK_GENITIVE_N ;
+
+:m	PRON_BACK_WEAK_PLURALS ;
+
++Sg:pa	PRON_BACK_STRONG_SINGULARS ;
+
++Sg:pa	PRON_BACK_PARTITIVE_A ;
+
+:pa	PRON_BACK_ILLATIVE_AN ;
+
+:pa	PRON_BACK_GENITIVE_IN ;
+
+:pi	PRON_BACK_NOMINATIVE ;
+
+:p	PRON_BACK_STRONG_PLURALS ;
+
+:p	PRON_BACK_PARTITIVE_IA ;
+
+:p	PRON_BACK_GENITIVE_IEN ;
+
+:p	PRON_BACK_ILLATIVE_IIN ;
+
+
+LEXICON PRON_USEIMMAT
+
+:mma	PRON_BACK_WEAK_SINGULARS ;
+
++Sg:mma	PRON_BACK_GENITIVE_N ;
+
+:mm	PRON_BACK_WEAK_PLURALS ;
+
++Sg:mpa	PRON_BACK_STRONG_SINGULARS ;
+
+:mpa	PRON_BACK_ILLATIVE_AN ;
+
+:mpa	PRON_BACK_GENITIVE_IN ;
+
+:mp	PRON_BACK_STRONG_PLURALS ;
+
+:mp	PRON_BACK_PARTITIVE_IA ;
+
+:mp	PRON_BACK_GENITIVE_IEN ;
+
+:mp	PRON_BACK_ILLATIVE_IIN ;
+
+:n	PRON_BACK_NOMINATIVE ;
+
+:n	PRON_BACK_PARTITIVE_TA ;
+
+:n	PRON_BACK_GENITIVE_TEN ;
+
+
+LEXICON PRON_YKSI
+
+:hde	PRON_FRONT_WEAK_SINGULARS ;
+
++Sg:hde	PRON_BACK_GENITIVE_N ;
+
+:h	PRON_FRONT_PARTITIVE_TÄ ;
+
+:hte	PRON_FRONT_STRONG_SINGULARS ;
+
+:hte	PRON_FRONT_ILLATIVE_EN ;
+
++Sg:ksi	PRON_FRONT_NOMINATIVE ;
+
+:ks	PRON_FRONT_PLURALS ;
+
+:ks	PRON_FRONT_PARTITIVE_IÄ ;
+
+:ks	PRON_FRONT_GENITIVE_IEN ;
+
+:ks	PRON_FRONT_ILLATIVE_IIN ;
+
+
+
+
+

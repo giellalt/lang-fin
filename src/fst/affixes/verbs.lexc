@@ -1,0 +1,5750 @@
+!! !!!Verb inflection and derivation
+
+!! The verbs' conjugation includes voice (in Finnish grammars also verbal 
+!! genus),  tense/mood (tempus/modus), personal endings and negation marker
+!! The verbs also have productive derivations to defective nouns as
+!! infinitives, and to adjectives as participles, which are considered to be 
+!! part of inflection and thus included in most versions 
+!! ([VISK § 105|http://scripta.kotus.fi/visk/sisalto.php?p?105]).
+!! The morphology of participles and historical 4th infinitive is further
+!! detailed in section Deverbal nouns'  morphology.
+!!
+!! The analysis strings of verb are not as systematic as nouns,
+!! as many categories collapse together in forms, e.g. the tense and mood
+!! are only distinct with indicative past and non-past, otherwise mood implies
+!! tense in semantic sense.
+
+
+
+!!  !!Verb stem variation
+!!  Verbs have no allomorphic variation per se, except for some assimilation
+!!  and variation of ð forms, but the stem variation is the same
+!!  as in nouns. The examples for verb stems are given for each class:
+!!  A infinitive's lative, e infinitive's inessive, indicative present 1st 
+!!  singular, indicative present 3rd singular, indicative past 1st singular, 
+!!  indicative past 3rd singular, conditional past 3rd singular, 
+!!  imperative 2nd plural, potential 1st singular, present passive, 
+!!  past passive, nut participle passive
+
+!!  !Verb stems without stem variation
+
+LEXICON VERB_KAUNISTUA
+!!  The u stems have no stem variation:
+!!€gt-norm:  Verbs 52u
+!!€  kaunistua: kaunistua+V+Act+InfA+Sg+Lat # beautify
+!!€  kaunistuessa: kaunistua+V+Act+InfE+Sg+Ine
+!!€  kaunistun: kaunistua+V+Act+Ind+Prs+Sg1
+!!€  kaunistuu: kaunistua+V+Act+Ind+Prs+Sg3
+!!€  kaunistuin: kaunistua+V+Act+Ind+Prt+Sg1
+!!€  kaunistui: kaunistua+V+Act+Ind+Prt+Sg3
+!!€  kaunistuisi: kaunistua+V+Act+Cond+Sg3
+!!€  kaunistukaa: kaunistua+V+Act+Imprt+Pl2
+!!€  kaunistunen: kaunistua+V+Act+Pot+Sg1
+!!€  kaunistutaan: kaunistua+V+Pss+Ind+Prs+Pe4
+!!€  kaunistuttiin: kaunistua+V+Pss+Ind+Prt+Pe4
+!!€  kaunistuttu: kaunistua+V+Pss+PrfPrc+Sg+Nom
+!!€  kaunistuminen: kaunistua+V+Der/minen+Sg+Nom
+0  VERB_BACK_AINF  ;
+0  VERB_BACK_EINF  ;
+0  VERB_BACK_WEAK_PRESENT  ;
+0  VERB_BACK_STRONG_PRESENT  ;
+0  VERB_BACK_3SG_U  ;
+0  VERB_BACK_WEAK_PAST  ;
+0  VERB_BACK_STRONG_PAST  ;
+0  VERB_BACK_CONDITIONAL  ;
+0  VERB_BACK_IMPERATIVE  ;
+0  VERB_BACK_POTENTIAL_N  ;
+0  VERB_BACK_PASSIVE_T  ;
+0:t  VERB_BACK_PASSIVE  ;
+0:t  VERB_BACK_TUPCP_0  ;
+0  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_PUNOA
+!!  The o stems have no stem variation:
+!!€gt-norm:  Verbs 52o
+!!€  punoa: punoa+V+Act+InfA+Sg+Lat # bundle?
+!!€  punoessa: punoa+V+Act+InfE+Sg+Ine
+!!€  punon: punoa+V+Act+Ind+Prs+Sg1
+!!€  punoo: punoa+V+Act+Ind+Prs+Sg3
+!!€  punoin: punoa+V+Act+Ind+Prt+Sg1
+!!€  punoi: punoa+V+Act+Ind+Prt+Sg3
+!!€  punoisi: punoa+V+Act+Cond+Sg3
+!!€  punokaa: punoa+V+Act+Imprt+Pl2
+!!€  punonen: punoa+V+Act+Pot+Sg1
+!!€  punotaan: punoa+V+Pss+Ind+Prs+Pe4
+!!€  punottiin: punoa+V+Pss+Ind+Prt+Pe4
+!!€  punottu: punoa+V+Pss+PrfPrc+Sg+Nom
+!!€  punominen: punoa+V+Der/minen+Sg+Nom
+0  VERB_BACK_AINF  ;
+0  VERB_BACK_EINF  ;
+0  VERB_BACK_WEAK_PRESENT  ;
+0  VERB_BACK_STRONG_PRESENT  ;
+0  VERB_BACK_3SG_O  ;
+0  VERB_BACK_WEAK_PAST  ;
+0  VERB_BACK_STRONG_PAST  ;
+0  VERB_BACK_CONDITIONAL  ;
+0  VERB_BACK_IMPERATIVE  ;
+0  VERB_BACK_POTENTIAL_N  ;
+0  VERB_BACK_PASSIVE_T  ;
+0:t  VERB_BACK_PASSIVE  ;
+0:t  VERB_BACK_TUPCP_0  ;
+0  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_SÄILÖÄ
+!!  The ö stems have no stem variation:
+!!€gt-norm:  Verbs 52ö
+!!€  säilöä: säilöä+V+Act+InfA+Sg+Lat # store
+!!€  säilöessä: säilöä+V+Act+InfE+Sg+Ine
+!!€  säilön: säilöä+V+Act+Ind+Prs+Sg1
+!!€  säilöö: säilöä+V+Act+Ind+Prs+Sg3
+!!€  säilöin: säilöä+V+Act+Ind+Prt+Sg1
+!!€  säilöi: säilöä+V+Act+Ind+Prt+Sg3
+!!€  säilöisi: säilöä+V+Act+Cond+Sg3
+!!€  säilökää: säilöä+V+Act+Imprt+Pl2
+!!€  säilönen: säilöä+V+Act+Pot+Sg1
+!!€  säilötään: säilöä+V+Pss+Ind+Prs+Pe4
+!!€  säilöttiin: säilöä+V+Pss+Ind+Prt+Pe4
+!!€  säilötty: säilöä+V+Pss+PrfPrc+Sg+Nom
+!!€  säilöminen: säilöä+V+Der/minen+Sg+Nom
+0  VERB_FRONT_AINF  ;
+0  VERB_FRONT_EINF  ;
+0  VERB_FRONT_WEAK_PRESENT  ;
+0  VERB_FRONT_STRONG_PRESENT  ;
+0  VERB_FRONT_3SG_Ö  ;
+0  VERB_FRONT_WEAK_PAST  ;
+0  VERB_FRONT_STRONG_PAST  ;
+0  VERB_FRONT_CONDITIONAL  ;
+0  VERB_FRONT_IMPERATIVE  ;
+0  VERB_FRONT_POTENTIAL_N  ;
+0  VERB_FRONT_PASSIVE_T  ;
+0:t  VERB_FRONT_PASSIVE  ;
+0:t  VERB_FRONT_TUPCP_0  ;
+0  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_ÄLLISTYÄ
+!!  The y stems have no stem variation:
+!!€gt-norm:  Verbs 52y
+!!€  ällistyä: ällistyä+V+Act+InfA+Sg+Lat # amaze
+!!€  ällistyessä: ällistyä+V+Act+InfE+Sg+Ine
+!!€  ällistyn: ällistyä+V+Act+Ind+Prs+Sg1
+!!€  ällistyy: ällistyä+V+Act+Ind+Prs+Sg3
+!!€  ällistyin: ällistyä+V+Act+Ind+Prt+Sg1
+!!€  ällistyi: ällistyä+V+Act+Ind+Prt+Sg3
+!!€  ällistyisi: ällistyä+V+Act+Cond+Sg3
+!!€  ällistykää: ällistyä+V+Act+Imprt+Pl2
+!!€  ällistynen: ällistyä+V+Act+Pot+Sg1
+!!€  ällistytään: ällistyä+V+Pss+Ind+Prs+Pe4
+!!€  ällistyttiin: ällistyä+V+Pss+Ind+Prt+Pe4
+!!€  ällistytty: ällistyä+V+Pss+PrfPrc+Sg+Nom
+0  VERB_FRONT_AINF  ;
+0  VERB_FRONT_EINF  ;
+0  VERB_FRONT_WEAK_PRESENT  ;
+0  VERB_FRONT_STRONG_PRESENT  ;
+0  VERB_FRONT_3SG_Y  ;
+0  VERB_FRONT_WEAK_PAST  ;
+0  VERB_FRONT_STRONG_PAST  ;
+0  VERB_FRONT_CONDITIONAL  ;
+0  VERB_FRONT_IMPERATIVE  ;
+0  VERB_FRONT_POTENTIAL_N  ;
+0  VERB_FRONT_PASSIVE_T  ;
+0:t  VERB_FRONT_PASSIVE  ;
+0:t  VERB_FRONT_TUPCP_0  ;
+0  VERB_FRONT_DERIV_PCPS  ;
+
+!!  !Verb stems with only gradation
+
+LEXICON VERB_HAUKKOA
+!!€gt-norm:  Verbs 52 k~0 o
+!!€  haukkoa: haukkoa+V+Act+InfA+Sg+Lat # gasp
+0:ko  VERB_BACK_AINF  ;
+0:ko  VERB_BACK_EINF  ;
+0:o  VERB_BACK_WEAK_PRESENT  ;
+0:ko  VERB_BACK_STRONG_PRESENT  ;
+0:ko  VERB_BACK_3SG_O  ;
+0:o  VERB_BACK_WEAK_PAST  ;
+0:ko  VERB_BACK_STRONG_PAST  ;
+0:ko  VERB_BACK_CONDITIONAL  ;
+0:ko  VERB_BACK_IMPERATIVE  ;
+0:ko  VERB_BACK_POTENTIAL_N  ;
+0:o  VERB_BACK_PASSIVE_T  ;
+0:ot  VERB_BACK_PASSIVE  ;
+0:ot  VERB_BACK_TUPCP_0  ;
+0:ko  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_NUOKKUA
+!!€gt-norm:  Verbs 52 k~0 u
+!!€  nuokkua: nuokkua+V+Act+InfA+Sg+Lat # sleep
+0:ku  VERB_BACK_AINF  ;
+0:ku  VERB_BACK_EINF  ;
+0:u  VERB_BACK_WEAK_PRESENT  ;
+0:ku  VERB_BACK_STRONG_PRESENT  ;
+0:ku  VERB_BACK_3SG_U  ;
+0:u  VERB_BACK_WEAK_PAST  ;
+0:ku  VERB_BACK_STRONG_PAST  ;
+0:ku  VERB_BACK_CONDITIONAL  ;
+0:ku  VERB_BACK_IMPERATIVE  ;
+0:ku  VERB_BACK_POTENTIAL_N  ;
+0:u  VERB_BACK_PASSIVE_T  ;
+0:ut  VERB_BACK_PASSIVE  ;
+0:ut  VERB_BACK_TUPCP_0  ;
+0:ku  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_KÄRKKYÄ
+!!€gt-norm:  Verbs 52 k~0 y
+!!€  kärkkyä: kärkkyä+V+Act+InfA+Sg+Lat # steal a base
+0:ky  VERB_FRONT_AINF  ;
+0:ky  VERB_FRONT_EINF  ;
+0:y  VERB_FRONT_WEAK_PRESENT  ;
+0:ky  VERB_FRONT_STRONG_PRESENT  ;
+0:ky  VERB_FRONT_3SG_Y  ;
+0:y  VERB_FRONT_WEAK_PAST  ;
+0:ky  VERB_FRONT_STRONG_PAST  ;
+0:ky  VERB_FRONT_CONDITIONAL  ;
+0:ky  VERB_FRONT_IMPERATIVE  ;
+0:ky  VERB_FRONT_POTENTIAL_N  ;
+0:y  VERB_FRONT_PASSIVE_T  ;
+0:yt  VERB_FRONT_PASSIVE  ;
+0:yt  VERB_FRONT_TUPCP_0  ;
+0:ky  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_HARPPOA
+!!€gt-norm:  Verbs 52 p~0 o
+!!€  harppoa: harppoa+V+Act+InfA+Sg+Lat # walk
+0:po  VERB_BACK_AINF  ;
+0:po  VERB_BACK_EINF  ;
+0:o  VERB_BACK_WEAK_PRESENT  ;
+0:po  VERB_BACK_STRONG_PRESENT  ;
+0:po  VERB_BACK_3SG_O  ;
+0:o  VERB_BACK_WEAK_PAST  ;
+0:po  VERB_BACK_STRONG_PAST  ;
+0:po  VERB_BACK_CONDITIONAL  ;
+0:po  VERB_BACK_IMPERATIVE  ;
+0:po  VERB_BACK_POTENTIAL_N  ;
+0:o  VERB_BACK_PASSIVE_T  ;
+0:ot  VERB_BACK_PASSIVE  ;
+0:ot  VERB_BACK_TUPCP_0  ;
+0:po  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_LOPPUA
+!!€gt-norm:  Verbs 52 p~0 u
+!!€  loppua: loppua+V+Act+InfA+Sg+Lat # end
+0:pu  VERB_BACK_AINF  ;
+0:pu  VERB_BACK_EINF  ;
+0:u  VERB_BACK_WEAK_PRESENT  ;
+0:pu  VERB_BACK_STRONG_PRESENT  ;
+0:pu  VERB_BACK_3SG_U  ;
+0:u  VERB_BACK_WEAK_PAST  ;
+0:pu  VERB_BACK_STRONG_PAST  ;
+0:pu  VERB_BACK_CONDITIONAL  ;
+0:pu  VERB_BACK_IMPERATIVE  ;
+0:pu  VERB_BACK_POTENTIAL_N  ;
+0:u  VERB_BACK_PASSIVE_T  ;
+0:ut  VERB_BACK_PASSIVE  ;
+0:ut  VERB_BACK_TUPCP_0  ;
+0:pu  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_LEPPYÄ
+!!€gt-norm:  Verbs 52 p~0 y
+!!€  leppyä: leppyä+V+Act+InfA+Sg+Lat # settle
+0:py  VERB_FRONT_AINF  ;
+0:py  VERB_FRONT_EINF  ;
+0:y  VERB_FRONT_WEAK_PRESENT  ;
+0:py  VERB_FRONT_STRONG_PRESENT  ;
+0:py  VERB_FRONT_3SG_Y  ;
+0:y  VERB_FRONT_WEAK_PAST  ;
+0:py  VERB_FRONT_STRONG_PAST  ;
+0:py  VERB_FRONT_CONDITIONAL  ;
+0:py  VERB_FRONT_IMPERATIVE  ;
+0:py  VERB_FRONT_POTENTIAL_N  ;
+0:y  VERB_FRONT_PASSIVE_T  ;
+0:yt  VERB_FRONT_PASSIVE  ;
+0:yt  VERB_FRONT_TUPCP_0  ;
+0:py  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_KIVETTYÄ
+!!€gt-norm:  Verbs 52 t~0 y
+!!€  kivettyä: kivettyä+V+Act+InfA+Sg+Lat # stone
+0:ty  VERB_FRONT_AINF  ;
+0:ty  VERB_FRONT_EINF  ;
+0:y  VERB_FRONT_WEAK_PRESENT  ;
+0:ty  VERB_FRONT_STRONG_PRESENT  ;
+0:ty  VERB_FRONT_3SG_Y  ;
+0:y  VERB_FRONT_WEAK_PAST  ;
+0:ty  VERB_FRONT_STRONG_PAST  ;
+0:ty  VERB_FRONT_CONDITIONAL  ;
+0:ty  VERB_FRONT_IMPERATIVE  ;
+0:ty  VERB_FRONT_POTENTIAL_N  ;
+0:y  VERB_FRONT_PASSIVE_T  ;
+0:yt  VERB_FRONT_PASSIVE  ;
+0:yt  VERB_FRONT_TUPCP_0  ;
+0:ty  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_VIITTOA
+!!€gt-norm:  Verbs 52 t~0 o
+!!€  viittoa: viittoa+V+Act+InfA+Sg+Lat # sign
+0:to  VERB_BACK_AINF  ;
+0:to  VERB_BACK_EINF  ;
+0:o  VERB_BACK_WEAK_PRESENT  ;
+0:to  VERB_BACK_STRONG_PRESENT  ;
+0:to  VERB_BACK_3SG_O  ;
+0:o  VERB_BACK_WEAK_PAST  ;
+0:to  VERB_BACK_STRONG_PAST  ;
+0:to  VERB_BACK_CONDITIONAL  ;
+0:to  VERB_BACK_IMPERATIVE  ;
+0:to  VERB_BACK_POTENTIAL_N  ;
+0:o  VERB_BACK_PASSIVE_T  ;
+0:tu  VERB_BACK_PASSIVE  ;
+0:tu  VERB_BACK_TUPCP_0  ;
+0:tu  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_HERMOTTUA
+!!€gt-norm:  Verbs 52 t~0 u
+!!€  hermottua: hermottua+V+Act+InfA+Sg+Lat # nerve
+0:tu  VERB_BACK_AINF  ;
+0:tu  VERB_BACK_EINF  ;
+0:u  VERB_BACK_WEAK_PRESENT  ;
+0:tu  VERB_BACK_STRONG_PRESENT  ;
+0:tu  VERB_BACK_3SG_U  ;
+0:u  VERB_BACK_WEAK_PAST  ;
+0:tu  VERB_BACK_STRONG_PAST  ;
+0:tu  VERB_BACK_CONDITIONAL  ;
+0:tu  VERB_BACK_IMPERATIVE  ;
+0:tu  VERB_BACK_POTENTIAL_N  ;
+0:u  VERB_BACK_PASSIVE_T  ;
+0:ut  VERB_BACK_PASSIVE  ;
+0:ut  VERB_BACK_TUPCP_0  ;
+0:tu  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_MÄIKYÄ
+!!€gt-norm:  Verbs 52 k~0’ y
+!!€  mäikyä: mäikyä+V+Act+InfA+Sg+Lat # bong
+0:ky  VERB_FRONT_AINF  ;
+0:ky  VERB_FRONT_EINF  ;
+0:y  VERB_FRONT_WEAK_PRESENT  ;
+0:ky  VERB_FRONT_STRONG_PRESENT  ;
+0:ky  VERB_FRONT_3SG_Y  ;
+0:y  VERB_FRONT_WEAK_PAST  ;
+0:ky  VERB_FRONT_STRONG_PAST  ;
+0:ky  VERB_FRONT_CONDITIONAL  ;
+0:ky  VERB_FRONT_IMPERATIVE  ;
+0:ky  VERB_FRONT_POTENTIAL_N  ;
+0:y  VERB_FRONT_PASSIVE_T  ;
+0:yt  VERB_FRONT_PASSIVE  ;
+0:yt  VERB_FRONT_TUPCP_0  ;
+0:ky  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_TAKOA
+!!€gt-norm:  Verbs 52 k~0’ o
+!!€  takoa: takoa+V+Act+InfA+Sg+Lat # hammer
+0:ko  VERB_BACK_AINF  ;
+0:ko  VERB_BACK_EINF  ;
+0:o  VERB_BACK_WEAK_PRESENT  ;
+0:ko  VERB_BACK_STRONG_PRESENT  ;
+0:ko  VERB_BACK_3SG_O  ;
+0:o  VERB_BACK_WEAK_PAST  ;
+0:ko  VERB_BACK_STRONG_PAST  ;
+0:ko  VERB_BACK_CONDITIONAL  ;
+0:ko  VERB_BACK_IMPERATIVE  ;
+0:ko  VERB_BACK_POTENTIAL_N  ;
+0:o  VERB_BACK_PASSIVE_T  ;
+0:ot  VERB_BACK_PASSIVE  ;
+0:ot  VERB_BACK_TUPCP_0  ;
+0:ko  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_MAUKUA
+!!€gt-norm:  Verbs 52 k~0’ u
+!!€  maukua: maukua+V+Act+InfA+Sg+Lat # gong
+0:ku  VERB_BACK_AINF  ;
+0:ku  VERB_BACK_EINF  ;
+0:’u  VERB_BACK_WEAK_PRESENT  ;
+0:ku  VERB_BACK_STRONG_PRESENT  ;
+0:ku  VERB_BACK_3SG_U  ;
+0:’u  VERB_BACK_WEAK_PAST  ;
+0:ku  VERB_BACK_STRONG_PAST  ;
+0:ku  VERB_BACK_CONDITIONAL  ;
+0:ku  VERB_BACK_IMPERATIVE  ;
+0:ku  VERB_BACK_POTENTIAL_N  ;
+0:’u  VERB_BACK_PASSIVE_T  ;
+0:’ut  VERB_BACK_PASSIVE  ;
+0:’ut  VERB_BACK_TUPCP_0  ;
+0:ku  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_ELPYÄ
+!!€gt-norm:  Verbs 52 p~v y
+!!€  elpyä: elpyä+V+Act+InfA+Sg+Lat # rescuscitate
+0:py  VERB_FRONT_AINF  ;
+0:py  VERB_FRONT_EINF  ;
+0:vy  VERB_FRONT_WEAK_PRESENT  ;
+0:py  VERB_FRONT_STRONG_PRESENT  ;
+0:py  VERB_FRONT_3SG_Y  ;
+0:vy  VERB_FRONT_WEAK_PAST  ;
+0:py  VERB_FRONT_STRONG_PAST  ;
+0:py  VERB_FRONT_CONDITIONAL  ;
+0:py  VERB_FRONT_IMPERATIVE  ;
+0:py  VERB_FRONT_POTENTIAL_N  ;
+0:vy  VERB_FRONT_PASSIVE_T  ;
+0:vyt  VERB_FRONT_PASSIVE  ;
+0:vyt  VERB_FRONT_TUPCP_0  ;
+0:py  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_HIIPUA
+!!€gt-norm:  Verbs 52 p~v u
+!!€  hiipua: hiipua+V+Act+InfA+Sg+Lat # fizzle
+0:pu  VERB_BACK_AINF  ;
+0:pu  VERB_BACK_EINF  ;
+0:vu  VERB_BACK_WEAK_PRESENT  ;
+0:pu  VERB_BACK_STRONG_PRESENT  ;
+0:pu  VERB_BACK_3SG_U  ;
+0:vu  VERB_BACK_WEAK_PAST  ;
+0:pu  VERB_BACK_STRONG_PAST  ;
+0:pu  VERB_BACK_CONDITIONAL  ;
+0:pu  VERB_BACK_IMPERATIVE  ;
+0:pu  VERB_BACK_POTENTIAL_N  ;
+0:vu  VERB_BACK_PASSIVE_T  ;
+0:vut  VERB_BACK_PASSIVE  ;
+0:vut  VERB_BACK_TUPCP_0  ;
+0:pu  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_SILPOA
+!!€gt-norm:  Verbs 52 p~v o
+!!€  silpoa: silpoa+V+Act+InfA+Sg+Lat # slash
+0:po  VERB_BACK_AINF  ;
+0:po  VERB_BACK_EINF  ;
+0:vo  VERB_BACK_WEAK_PRESENT  ;
+0:po  VERB_BACK_STRONG_PRESENT  ;
+0:po  VERB_BACK_3SG_O  ;
+0:vo  VERB_BACK_WEAK_PAST  ;
+0:po  VERB_BACK_STRONG_PAST  ;
+0:po  VERB_BACK_CONDITIONAL  ;
+0:po  VERB_BACK_IMPERATIVE  ;
+0:po  VERB_BACK_POTENTIAL_N  ;
+0:vo  VERB_BACK_PASSIVE_T  ;
+0:vot  VERB_BACK_PASSIVE  ;
+0:vot  VERB_BACK_TUPCP_0  ;
+0:po  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_KIETOA
+!!€gt-norm:  Verbs 52 t~d o
+!!€  kietoa: kietoa+V+Act+InfA+Sg+Lat # entangle
+0:to  VERB_BACK_AINF  ;
+0:to  VERB_BACK_EINF  ;
+0:do  VERB_BACK_WEAK_PRESENT  ;
+0:to  VERB_BACK_STRONG_PRESENT  ;
+0:to  VERB_BACK_3SG_O  ;
+0:do  VERB_BACK_WEAK_PAST  ;
+0:to  VERB_BACK_STRONG_PAST  ;
+0:to  VERB_BACK_CONDITIONAL  ;
+0:to  VERB_BACK_IMPERATIVE  ;
+0:to  VERB_BACK_POTENTIAL_N  ;
+0:do  VERB_BACK_PASSIVE_T  ;
+0:dot  VERB_BACK_PASSIVE  ;
+0:dot  VERB_BACK_TUPCP_0  ;
+0:to  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_SILIYTYÄ
+!!€gt-norm:  Verbs 52 t~d y
+!!€  siliytyä: siliytyä+V+Act+InfA+Sg+Lat # iron
+0:ty  VERB_FRONT_AINF  ;
+0:ty  VERB_FRONT_EINF  ;
+0:dy  VERB_FRONT_WEAK_PRESENT  ;
+0:ty  VERB_FRONT_STRONG_PRESENT  ;
+0:ty  VERB_FRONT_3SG_Y  ;
+0:dy  VERB_FRONT_WEAK_PAST  ;
+0:ty  VERB_FRONT_STRONG_PAST  ;
+0:ty  VERB_FRONT_CONDITIONAL  ;
+0:ty  VERB_FRONT_IMPERATIVE  ;
+0:ty  VERB_FRONT_POTENTIAL_N  ;
+0:dy  VERB_FRONT_PASSIVE_T  ;
+0:dyt  VERB_FRONT_PASSIVE  ;
+0:dyt  VERB_FRONT_TUPCP_0  ;
+0:ty  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_ROHTUA
+!!€gt-norm:  Verbs 52 t~d u
+!!€  rohtua: rohtua+V+Act+InfA+Sg+Lat # scar
+0:tu  VERB_BACK_AINF  ;
+0:tu  VERB_BACK_EINF  ;
+0:du  VERB_BACK_WEAK_PRESENT  ;
+0:tu  VERB_BACK_STRONG_PRESENT  ;
+0:tu  VERB_BACK_3SG_U  ;
+0:du  VERB_BACK_WEAK_PAST  ;
+0:tu  VERB_BACK_STRONG_PAST  ;
+0:tu  VERB_BACK_CONDITIONAL  ;
+0:tu  VERB_BACK_IMPERATIVE  ;
+0:tu  VERB_BACK_POTENTIAL_N  ;
+0:du  VERB_BACK_PASSIVE_T  ;
+0:dut  VERB_BACK_PASSIVE  ;
+0:dut  VERB_BACK_TUPCP_0  ;
+0:tu  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_VINKUA
+!!€gt-norm:  Verbs 52 k~g u
+!!€  vinkua: vinkua+V+Act+InfA+Sg+Lat # squeal
+0:ku  VERB_BACK_AINF  ;
+0:ku  VERB_BACK_EINF  ;
+0:gu  VERB_BACK_WEAK_PRESENT  ;
+0:ku  VERB_BACK_STRONG_PRESENT  ;
+0:ku  VERB_BACK_3SG_U  ;
+0:gu  VERB_BACK_WEAK_PAST  ;
+0:ku  VERB_BACK_STRONG_PAST  ;
+0:ku  VERB_BACK_CONDITIONAL  ;
+0:ku  VERB_BACK_IMPERATIVE  ;
+0:ku  VERB_BACK_POTENTIAL_N  ;
+0:gu  VERB_BACK_PASSIVE_T  ;
+0:gut  VERB_BACK_PASSIVE  ;
+0:gut  VERB_BACK_TUPCP_0  ;
+0:ku  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_PENKOA
+!!€gt-norm:  Verbs 52 k~g o
+!!€  penkoa: penkoa+V+Act+InfA+Sg+Lat # dig
+0:ko  VERB_BACK_AINF  ;
+0:ko  VERB_BACK_EINF  ;
+0:go  VERB_BACK_WEAK_PRESENT  ;
+0:ko  VERB_BACK_STRONG_PRESENT  ;
+0:ko  VERB_BACK_3SG_O  ;
+0:go  VERB_BACK_WEAK_PAST  ;
+0:ko  VERB_BACK_STRONG_PAST  ;
+0:ko  VERB_BACK_CONDITIONAL  ;
+0:ko  VERB_BACK_IMPERATIVE  ;
+0:ko  VERB_BACK_POTENTIAL_N  ;
+0:go  VERB_BACK_PASSIVE_T  ;
+0:got  VERB_BACK_PASSIVE  ;
+0:got  VERB_BACK_TUPCP_0  ;
+0:ko  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_TEMPOA
+!!€gt-norm:  Verbs 52 p~m o
+!!€  tempoa: tempoa+V+Act+InfA+Sg+Lat # tuck
+0:po  VERB_BACK_AINF  ;
+0:po  VERB_BACK_EINF  ;
+0:mo  VERB_BACK_WEAK_PRESENT  ;
+0:po  VERB_BACK_STRONG_PRESENT  ;
+0:po  VERB_BACK_3SG_O  ;
+0:mo  VERB_BACK_WEAK_PAST  ;
+0:po  VERB_BACK_STRONG_PAST  ;
+0:po  VERB_BACK_CONDITIONAL  ;
+0:po  VERB_BACK_IMPERATIVE  ;
+0:po  VERB_BACK_POTENTIAL_N  ;
+0:mo  VERB_BACK_PASSIVE_T  ;
+0:mot  VERB_BACK_PASSIVE  ;
+0:mot  VERB_BACK_TUPCP_0  ;
+0:po  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_AMPUA
+!!€gt-norm:  Verbs 52 p~m u
+!!€  ampua: ampua+V+Act+InfA+Sg+Lat # shoot
+0:pu  VERB_BACK_AINF  ;
+0:pu  VERB_BACK_EINF  ;
+0:mu  VERB_BACK_WEAK_PRESENT  ;
+0:pu  VERB_BACK_STRONG_PRESENT  ;
+0:pu  VERB_BACK_3SG_U  ;
+0:mu  VERB_BACK_WEAK_PAST  ;
+0:pu  VERB_BACK_STRONG_PAST  ;
+0:pu  VERB_BACK_CONDITIONAL  ;
+0:pu  VERB_BACK_IMPERATIVE  ;
+0:pu  VERB_BACK_POTENTIAL_N  ;
+0:mu  VERB_BACK_PASSIVE_T  ;
+0:mut  VERB_BACK_PASSIVE  ;
+0:mut  VERB_BACK_TUPCP_0  ;
+0:pu  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_MIELTYÄ
+!!€gt-norm:  Verbs 52 t~l y
+!!€  mieltyä: mieltyä+V+Act+InfA+Sg+Lat # like
+0:ty  VERB_FRONT_AINF  ;
+0:ty  VERB_FRONT_EINF  ;
+0:ly  VERB_FRONT_WEAK_PRESENT  ;
+0:ty  VERB_FRONT_STRONG_PRESENT  ;
+0:ty  VERB_FRONT_3SG_Y  ;
+0:ly  VERB_FRONT_WEAK_PAST  ;
+0:ty  VERB_FRONT_STRONG_PAST  ;
+0:ty  VERB_FRONT_CONDITIONAL  ;
+0:ty  VERB_FRONT_IMPERATIVE  ;
+0:ty  VERB_FRONT_POTENTIAL_N  ;
+0:ly  VERB_FRONT_PASSIVE_T  ;
+0:lyt  VERB_FRONT_PASSIVE  ;
+0:lyt  VERB_FRONT_TUPCP_0  ;
+0:ty  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_HUMALTUA
+!!€gt-norm:  Verbs 52 t~l u
+!!€  humaltua: humaltua+V+Act+InfA+Sg+Lat # intoxicate
+0:tu  VERB_BACK_AINF  ;
+0:tu  VERB_BACK_EINF  ;
+0:lu  VERB_BACK_WEAK_PRESENT  ;
+0:tu  VERB_BACK_STRONG_PRESENT  ;
+0:tu  VERB_BACK_3SG_U  ;
+0:lu  VERB_BACK_WEAK_PAST  ;
+0:tu  VERB_BACK_STRONG_PAST  ;
+0:tu  VERB_BACK_CONDITIONAL  ;
+0:tu  VERB_BACK_IMPERATIVE  ;
+0:tu  VERB_BACK_POTENTIAL_N  ;
+0:lu  VERB_BACK_PASSIVE_T  ;
+0:lut  VERB_BACK_PASSIVE  ;
+0:lut  VERB_BACK_TUPCP_0  ;
+0:tu  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_VAKAANTUA
+!!€gt-norm:  Verbs 52 t~n u
+!!€  vakaantua: vakaantua+V+Act+InfA+Sg+Lat # stabilise
+0:tu  VERB_BACK_AINF  ;
+0:tu  VERB_BACK_EINF  ;
+0:nu  VERB_BACK_WEAK_PRESENT  ;
+0:tu  VERB_BACK_STRONG_PRESENT  ;
+0:tu  VERB_BACK_3SG_U  ;
+0:nu  VERB_BACK_WEAK_PAST  ;
+0:tu  VERB_BACK_STRONG_PAST  ;
+0:tu  VERB_BACK_CONDITIONAL  ;
+0:tu  VERB_BACK_IMPERATIVE  ;
+0:tu  VERB_BACK_POTENTIAL_N  ;
+0:nu  VERB_BACK_PASSIVE_T  ;
+0:nut  VERB_BACK_PASSIVE  ;
+0:nut  VERB_BACK_TUPCP_0  ;
+0:tu  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_TYHJENTYÄ
+!!€gt-norm:  Verbs 52 t~n y
+!!€  tyhjentyä: tyhjentyä+V+Act+InfA+Sg+Lat # empty
+0:ty  VERB_FRONT_AINF  ;
+0:ty  VERB_FRONT_EINF  ;
+0:ny  VERB_FRONT_WEAK_PRESENT  ;
+0:ty  VERB_FRONT_STRONG_PRESENT  ;
+0:ty  VERB_FRONT_3SG_Y  ;
+0:ny  VERB_FRONT_WEAK_PAST  ;
+0:ty  VERB_FRONT_STRONG_PAST  ;
+0:ty  VERB_FRONT_CONDITIONAL  ;
+0:ty  VERB_FRONT_IMPERATIVE  ;
+0:ty  VERB_FRONT_POTENTIAL_N  ;
+0:ny  VERB_FRONT_PASSIVE_T  ;
+0:nyt  VERB_FRONT_PASSIVE  ;
+0:nyt  VERB_FRONT_TUPCP_0  ;
+0:ty  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_PYÖRTYÄ
+!!€gt-norm:  Verbs 52 t~r y
+!!€  pyörtyä: pyörtyä+V+Act+InfA+Sg+Lat # faint
+0:ty  VERB_FRONT_AINF  ;
+0:ty  VERB_FRONT_EINF  ;
+0:ry  VERB_FRONT_WEAK_PRESENT  ;
+0:ty  VERB_FRONT_STRONG_PRESENT  ;
+0:ty  VERB_FRONT_3SG_Y  ;
+0:ry  VERB_FRONT_WEAK_PAST  ;
+0:ty  VERB_FRONT_STRONG_PAST  ;
+0:ty  VERB_FRONT_CONDITIONAL  ;
+0:ty  VERB_FRONT_IMPERATIVE  ;
+0:ty  VERB_FRONT_POTENTIAL_N  ;
+0:ry  VERB_FRONT_PASSIVE_T  ;
+0:ryt  VERB_FRONT_PASSIVE  ;
+0:ryt  VERB_FRONT_TUPCP_0  ;
+0:ty  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_VARTOA
+!!€gt-norm:  Verbs 52 t~r o
+!!€  vartoa: vartoa+V+Act+InfA+Sg+Lat # wait
+0:to  VERB_BACK_AINF  ;
+0:to  VERB_BACK_EINF  ;
+0:ro  VERB_BACK_WEAK_PRESENT  ;
+0:to  VERB_BACK_STRONG_PRESENT  ;
+0:to  VERB_BACK_3SG_O  ;
+0:ro  VERB_BACK_WEAK_PAST  ;
+0:to  VERB_BACK_STRONG_PAST  ;
+0:to  VERB_BACK_CONDITIONAL  ;
+0:to  VERB_BACK_IMPERATIVE  ;
+0:to  VERB_BACK_POTENTIAL_N  ;
+0:ro  VERB_BACK_PASSIVE_T  ;
+0:rot  VERB_BACK_PASSIVE  ;
+0:rot  VERB_BACK_TUPCP_0  ;
+0:to  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_PUSERTUA
+!!€gt-norm:  Verbs 52 t~r u
+!!€  pusertua: pusertua+V+Act+InfA+Sg+Lat # squeeze
+0:tu  VERB_BACK_AINF  ;
+0:tu  VERB_BACK_EINF  ;
+0:ru  VERB_BACK_WEAK_PRESENT  ;
+0:tu  VERB_BACK_STRONG_PRESENT  ;
+0:tu  VERB_BACK_3SG_U  ;
+0:ru  VERB_BACK_WEAK_PAST  ;
+0:tu  VERB_BACK_STRONG_PAST  ;
+0:tu  VERB_BACK_CONDITIONAL  ;
+0:tu  VERB_BACK_IMPERATIVE  ;
+0:tu  VERB_BACK_POTENTIAL_N  ;
+0:ru  VERB_BACK_PASSIVE_T  ;
+0:rut  VERB_BACK_PASSIVE  ;
+0:rut  VERB_BACK_TUPCP_0  ;
+0:tu  VERB_BACK_DERIV_PCPS  ;
+
+!!  !Verbs with -a stems
+!!  
+
+LEXICON VERB_MUTRISTAA
+!!€gt-norm:  Verbs 53 back
+!!€  mutristaa: mutristaa+V+Act+InfA+Sg+Lat # ?
+0:a  VERB_BACK_AINF  ;
+0:a  VERB_BACK_EINF  ;
+0:a  VERB_BACK_WEAK_PRESENT  ;
+0:a  VERB_BACK_STRONG_PRESENT  ;
+0:a  VERB_BACK_3SG_A  ;
+0:a  VERB_BACK_CONDITIONAL  ;
+0  VERB_BACK_WEAK_PAST  ;
+0  VERB_BACK_STRONG_PAST  ;
+0:a  VERB_BACK_IMPERATIVE  ;
+0:a  VERB_BACK_POTENTIAL_N  ;
+0:e  VERB_BACK_PASSIVE_T  ;
+0:et  VERB_BACK_PASSIVE  ;
+0:et  VERB_BACK_TUPCP_0  ;
+0:a  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_KIVISTÄÄ
+!!€gt-norm:  Verbs 53 front
+!!€  kivistää: kivistää+V+Act+InfA+Sg+Lat # hurt
+0:ä  VERB_FRONT_AINF  ;
+0:ä  VERB_FRONT_EINF  ;
+0:ä  VERB_FRONT_WEAK_PRESENT  ;
+0:ä  VERB_FRONT_STRONG_PRESENT  ;
+0:ä  VERB_FRONT_3SG_Ä  ;
+0:ä  VERB_FRONT_CONDITIONAL  ;
+0  VERB_FRONT_WEAK_PAST  ;
+0  VERB_FRONT_STRONG_PAST  ;
+0:ä  VERB_FRONT_IMPERATIVE  ;
+0:ä  VERB_FRONT_POTENTIAL_N  ;
+0:e  VERB_FRONT_PASSIVE_T  ;
+0:et  VERB_FRONT_PASSIVE  ;
+0:et  VERB_FRONT_TUPCP_0  ;
+0:ä  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_RÄPSYTTÄÄ
+!!€gt-norm:  Verbs 53 front t~0
+!!€  räpsyttää: räpsyttää+V+Act+InfA+Sg+Lat # blink
+0:tä  VERB_FRONT_AINF  ;
+0:tä  VERB_FRONT_EINF  ;
+0:ä  VERB_FRONT_WEAK_PRESENT  ;
+0:tä  VERB_FRONT_STRONG_PRESENT  ;
+0:tä  VERB_FRONT_3SG_Ä  ;
+0:tä  VERB_FRONT_CONDITIONAL  ;
+0  VERB_FRONT_WEAK_PAST  ;
+0:t  VERB_FRONT_STRONG_PAST  ;
+0:tä  VERB_FRONT_IMPERATIVE  ;
+0:tä  VERB_FRONT_POTENTIAL_N  ;
+0:e  VERB_FRONT_PASSIVE_T  ;
+0:et  VERB_FRONT_PASSIVE  ;
+0:et  VERB_FRONT_TUPCP_0  ;
+0:tä  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_VIEROITTAA
+!!€gt-norm:  Verbs 53 back t~0
+!!€  vieroittaa: vieroittaa+V+Act+InfA+Sg+Lat 
+0:ta  VERB_BACK_AINF  ;
+0:ta  VERB_BACK_EINF  ;
+0:a  VERB_BACK_WEAK_PRESENT  ;
+0:ta  VERB_BACK_STRONG_PRESENT  ;
+0:ta  VERB_BACK_3SG_A  ;
+0:ta  VERB_BACK_CONDITIONAL  ;
+0  VERB_BACK_WEAK_PAST  ;
+0:t  VERB_BACK_STRONG_PAST  ;
+0:ta  VERB_BACK_IMPERATIVE  ;
+0:ta  VERB_BACK_POTENTIAL_N  ;
+0:e  VERB_BACK_PASSIVE_T  ;
+0:et  VERB_BACK_PASSIVE  ;
+0:et  VERB_BACK_TUPCP_0  ;
+0:ta  VERB_BACK_DERIV_PCPS  ;
+
+
+LEXICON VERB_PURKAA
+!!€gt-norm:  Verbs 53 back k~0
+!!€  purkaa: purkaa+V+Act+InfA+Sg+Lat # tear
+0:ka  VERB_BACK_AINF  ;
+0:ka  VERB_BACK_EINF  ;
+0:a  VERB_BACK_WEAK_PRESENT  ;
+0:ka  VERB_BACK_STRONG_PRESENT  ;
+0:ka  VERB_BACK_3SG_A  ;
+0:ka  VERB_BACK_CONDITIONAL  ;
+0  VERB_BACK_WEAK_PAST  ;
+0:k  VERB_BACK_STRONG_PAST  ;
+0:ka  VERB_BACK_IMPERATIVE  ;
+0:ka  VERB_BACK_POTENTIAL_N  ;
+0:e  VERB_BACK_PASSIVE_T  ;
+0:et  VERB_BACK_PASSIVE  ;
+0:et  VERB_BACK_TUPCP_0  ;
+0:ka  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_YSKÄHTÄÄ
+!!€gt-norm:  Verbs 53 front t~d
+!!€  kärähtää: kärähtää+V+Act+InfA+Sg+Lat # fry
+0:tä  VERB_FRONT_AINF  ;
+0:tä  VERB_FRONT_EINF  ;
+0:dä  VERB_FRONT_WEAK_PRESENT  ;
+0:tä  VERB_FRONT_STRONG_PRESENT  ;
+0:tä  VERB_FRONT_3SG_Ä  ;
+0:tä  VERB_FRONT_CONDITIONAL  ;
+0:d  VERB_FRONT_WEAK_PAST  ;
+0:t  VERB_FRONT_STRONG_PAST  ;
+0:tä  VERB_FRONT_IMPERATIVE  ;
+0:tä  VERB_FRONT_POTENTIAL_N  ;
+0:de  VERB_FRONT_PASSIVE_T  ;
+0:det  VERB_FRONT_PASSIVE  ;
+0:det  VERB_FRONT_TUPCP_0  ;
+0:tä  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_MOJAHTAA
+!!€gt-norm:  Verbs 53 back t~d
+!!€  mojahtaa: mojahtaa+V+Act+InfA+Sg+Lat # smack
+0:ta  VERB_BACK_AINF  ;
+0:ta  VERB_BACK_EINF  ;
+0:da  VERB_BACK_WEAK_PRESENT  ;
+0:ta  VERB_BACK_STRONG_PRESENT  ;
+0:ta  VERB_BACK_3SG_A  ;
+0:ta  VERB_BACK_CONDITIONAL  ;
+0:d  VERB_BACK_WEAK_PAST  ;
+0:t  VERB_BACK_STRONG_PAST  ;
+0:ta  VERB_BACK_IMPERATIVE  ;
+0:ta  VERB_BACK_POTENTIAL_N  ;
+0:de  VERB_BACK_PASSIVE_T  ;
+0:det  VERB_BACK_PASSIVE  ;
+0:det  VERB_BACK_TUPCP_0  ;
+0:ta  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_KYNTÄÄ
+!!€gt-norm:  Verbs 53 front t~n
+!!€  kyntää: kyntää+V+Act+InfA+Sg+Lat # plow
+0:tä  VERB_FRONT_AINF  ;
+0:tä  VERB_FRONT_EINF  ;
+0:nä  VERB_FRONT_WEAK_PRESENT  ;
+0:tä  VERB_FRONT_STRONG_PRESENT  ;
+0:tä  VERB_FRONT_3SG_Ä  ;
+0:tä  VERB_FRONT_CONDITIONAL  ;
+0:n  VERB_FRONT_WEAK_PAST  ;
+0:t  VERB_FRONT_STRONG_PAST  ;
+0:tä  VERB_FRONT_IMPERATIVE  ;
+0:tä  VERB_FRONT_POTENTIAL_N  ;
+0:ne  VERB_FRONT_PASSIVE_T  ;
+0:net  VERB_FRONT_PASSIVE  ;
+0:net  VERB_FRONT_TUPCP_0  ;
+0:tä  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_SORTAA
+!!€gt-norm:  Verbs 53 back t~r
+!!€  sortaa: sortaa+V+Act+InfA+Sg+Lat # crush
+0:ta  VERB_BACK_AINF  ;
+0:ta  VERB_BACK_EINF  ;
+0:ra  VERB_BACK_WEAK_PRESENT  ;
+0:ta  VERB_BACK_STRONG_PRESENT  ;
+0:ta  VERB_BACK_3SG_A  ;
+0:ta  VERB_BACK_CONDITIONAL  ;
+0:r  VERB_BACK_WEAK_PAST  ;
+0:t  VERB_BACK_STRONG_PAST  ;
+0:ta  VERB_BACK_IMPERATIVE  ;
+0:ta  VERB_BACK_POTENTIAL_N  ;
+0:re  VERB_BACK_PASSIVE_T  ;
+0:ret  VERB_BACK_PASSIVE  ;
+0:ret  VERB_BACK_TUPCP_0  ;
+0:ta  VERB_BACK_DERIV_PCPS  ;
+
+!!  Some of the a stems have t:s in past stems by ti>si variation.
+
+LEXICON VERB_HUUTAA
+!!€gt-norm:  Verbs 54 back
+!!€  huutaa: huutaa+V+Act+InfA+Sg+Lat # yell
+0:ta  VERB_BACK_AINF  ;
+0:ta  VERB_BACK_EINF  ;
+0:da  VERB_BACK_WEAK_PRESENT  ;
+0:ta  VERB_BACK_STRONG_PRESENT  ;
+0:ta  VERB_BACK_3SG_A  ;
+0:ta  VERB_BACK_CONDITIONAL  ;
+0:s  VERB_BACK_WEAK_PAST  ;
+0:s  VERB_BACK_STRONG_PAST  ;
+0:ta  VERB_BACK_IMPERATIVE  ;
+0:ta  VERB_BACK_POTENTIAL_N  ;
+0:de  VERB_BACK_PASSIVE_T  ;
+0:det  VERB_BACK_PASSIVE  ;
+0:det  VERB_BACK_TUPCP_0  ;
+0:ta  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_PYYTÄÄ
+!!€gt-norm:  Verbs 54 front
+!!€  pyytää: pyytää+V+Act+InfA+Sg+Lat # aks
+0:tä  VERB_FRONT_AINF  ;
+0:tä  VERB_FRONT_EINF  ;
+0:dä  VERB_FRONT_WEAK_PRESENT  ;
+0:tä  VERB_FRONT_STRONG_PRESENT  ;
+0:tä  VERB_FRONT_3SG_Ä  ;
+0:tä  VERB_FRONT_CONDITIONAL  ;
+0:s  VERB_FRONT_WEAK_PAST  ;
+0:s  VERB_FRONT_STRONG_PAST  ;
+0:tä  VERB_FRONT_IMPERATIVE  ;
+0:tä  VERB_FRONT_POTENTIAL_N  ;
+0:de  VERB_FRONT_PASSIVE_T  ;
+0:det  VERB_FRONT_PASSIVE  ;
+0:det  VERB_FRONT_TUPCP_0  ;
+0:tä  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_SIVALTAA
+!!€gt-norm:  Verbs 54 back t~l
+!!€  sivaltaa: sivaltaa+V+Act+InfA+Sg+Lat # slash
+0:ta  VERB_BACK_AINF  ;
+0:ta  VERB_BACK_EINF  ;
+0:la  VERB_BACK_WEAK_PRESENT  ;
+0:ta  VERB_BACK_STRONG_PRESENT  ;
+0:ta  VERB_BACK_3SG_A  ;
+0:ta  VERB_BACK_CONDITIONAL  ;
+0:s  VERB_BACK_WEAK_PAST  ;
+0:s  VERB_BACK_STRONG_PAST  ;
+0:ta  VERB_BACK_IMPERATIVE  ;
+0:ta  VERB_BACK_POTENTIAL_N  ;
+0:le  VERB_BACK_PASSIVE_T  ;
+0:let  VERB_BACK_PASSIVE  ;
+0:let  VERB_BACK_TUPCP_0  ;
+0:ta  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_VIHELTÄÄ
+!!€gt-norm:  Verbs 54 front t~l
+!!€  viheltää: viheltää+V+Act+InfA+Sg+Lat # whistle
+0:tä  VERB_FRONT_AINF  ;
+0:tä  VERB_FRONT_EINF  ;
+0:lä  VERB_FRONT_WEAK_PRESENT  ;
+0:tä  VERB_FRONT_STRONG_PRESENT  ;
+0:tä  VERB_FRONT_3SG_Ä  ;
+0:tä  VERB_FRONT_CONDITIONAL  ;
+0:s  VERB_FRONT_WEAK_PAST  ;
+0:s  VERB_FRONT_STRONG_PAST  ;
+0:tä  VERB_FRONT_IMPERATIVE  ;
+0:tä  VERB_FRONT_POTENTIAL_N  ;
+0:le  VERB_FRONT_PASSIVE_T  ;
+0:let  VERB_FRONT_PASSIVE  ;
+0:let  VERB_FRONT_TUPCP_0  ;
+0:tä  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_HIVENTÄÄ
+!!€gt-norm:  Verbs 54 front t~n
+!!€  hiventää: hiventää+V+Act+InfA+Sg+Lat 
+0:tä  VERB_FRONT_AINF  ;
+0:tä  VERB_FRONT_EINF  ;
+0:nä  VERB_FRONT_WEAK_PRESENT  ;
+0:tä  VERB_FRONT_STRONG_PRESENT  ;
+0:tä  VERB_FRONT_3SG_Ä  ;
+0:tä  VERB_FRONT_CONDITIONAL  ;
+0:s  VERB_FRONT_WEAK_PAST  ;
+0:s  VERB_FRONT_STRONG_PAST  ;
+0:tä  VERB_FRONT_IMPERATIVE  ;
+0:tä  VERB_FRONT_POTENTIAL_N  ;
+0:ne  VERB_FRONT_PASSIVE_T  ;
+0:net  VERB_FRONT_PASSIVE  ;
+0:net  VERB_FRONT_TUPCP_0  ;
+0:tä  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_HUONONTAA
+!!€gt-norm:  Verbs 54 back t~n
+!!€  huonontaa: huonontaa+V+Act+InfA+Sg+Lat # worsen
+0:ta  VERB_BACK_AINF  ;
+0:ta  VERB_BACK_EINF  ;
+0:na  VERB_BACK_WEAK_PRESENT  ;
+0:ta  VERB_BACK_STRONG_PRESENT  ;
+0:ta  VERB_BACK_3SG_A  ;
+0:ta  VERB_BACK_CONDITIONAL  ;
+0:s  VERB_BACK_WEAK_PAST  ;
+0:s  VERB_BACK_STRONG_PAST  ;
+0:ta  VERB_BACK_IMPERATIVE  ;
+0:ta  VERB_BACK_POTENTIAL_N  ;
+0:ne  VERB_BACK_PASSIVE_T  ;
+0:net  VERB_BACK_PASSIVE  ;
+0:net  VERB_BACK_TUPCP_0  ;
+0:ta  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_KUHERTAA
+!!€gt-norm:  Verbs 54 back t~r
+!!€  kuhertaa: kuhertaa+V+Act+InfA+Sg+Lat # snuggle
+0:ta  VERB_BACK_AINF  ;
+0:ta  VERB_BACK_EINF  ;
+0:ra  VERB_BACK_WEAK_PRESENT  ;
+0:ta  VERB_BACK_STRONG_PRESENT  ;
+0:ta  VERB_BACK_3SG_A  ;
+0:ta  VERB_BACK_CONDITIONAL  ;
+0:s  VERB_BACK_WEAK_PAST  ;
+0:s  VERB_BACK_STRONG_PAST  ;
+0:ta  VERB_BACK_IMPERATIVE  ;
+0:ta  VERB_BACK_POTENTIAL_N  ;
+0:re  VERB_BACK_PASSIVE_T  ;
+0:ret  VERB_BACK_PASSIVE  ;
+0:ret  VERB_BACK_TUPCP_0  ;
+0:ta  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_NÄPERTÄÄ
+!!€gt-norm:  Verbs 54 front t~r
+!!€  näpertää: näpertää+V+Act+InfA+Sg+Lat # twiddle
+0:tä  VERB_FRONT_AINF  ;
+0:tä  VERB_FRONT_EINF  ;
+0:rä  VERB_FRONT_WEAK_PRESENT  ;
+0:tä  VERB_FRONT_STRONG_PRESENT  ;
+0:tä  VERB_FRONT_3SG_Ä  ;
+0:tä  VERB_FRONT_CONDITIONAL  ;
+0:s  VERB_FRONT_WEAK_PAST  ;
+0:s  VERB_FRONT_STRONG_PAST  ;
+0:tä  VERB_FRONT_IMPERATIVE  ;
+0:tä  VERB_FRONT_POTENTIAL_N  ;
+0:re  VERB_FRONT_PASSIVE_T  ;
+0:ret  VERB_FRONT_PASSIVE  ;
+0:ret  VERB_FRONT_TUPCP_0  ;
+0:tä  VERB_FRONT_DERIV_PCPS  ;
+0:tä  VERB_FRONT_DERIV_PCPS  ;
+
+!!  In some cases t:s variation is optionally alongside the regular gradation:
+
+
+LEXICON VERB_KIITÄÄ
+!!€gt-norm:  Verbs 55 front
+!!€  kiitää: kiitää+V+Act+InfA+Sg+Lat # rush
+0:tä  VERB_FRONT_AINF  ;
+0:tä  VERB_FRONT_EINF  ;
+0:dä  VERB_FRONT_WEAK_PRESENT  ;
+0:tä  VERB_FRONT_STRONG_PRESENT  ;
+0:tä  VERB_FRONT_3SG_Ä  ;
+0:tä  VERB_FRONT_CONDITIONAL  ;
+0:s  VERB_FRONT_WEAK_PAST  ;
+0:s  VERB_FRONT_STRONG_PAST  ;
+0:d  VERB_FRONT_WEAK_PAST  ;
+0:t  VERB_FRONT_STRONG_PAST  ;
+0:tä  VERB_FRONT_IMPERATIVE  ;
+0:tä  VERB_FRONT_POTENTIAL_N  ;
+0:de  VERB_FRONT_PASSIVE_T  ;
+0:det  VERB_FRONT_PASSIVE  ;
+0:det  VERB_FRONT_TUPCP_0  ;
+0:tä  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_JOUTAA
+!!€gt-norm:  Verbs 55 back
+!!€  joutaa: joutaa+V+Act+InfA+Sg+Lat 
+0:ta  VERB_BACK_AINF  ;
+0:ta  VERB_BACK_EINF  ;
+0:da  VERB_BACK_WEAK_PRESENT  ;
+0:ta  VERB_BACK_STRONG_PRESENT  ;
+0:ta  VERB_BACK_3SG_A  ;
+0:ta  VERB_BACK_CONDITIONAL  ;
+0+Use/NG:s  VERB_BACK_WEAK_PAST  ;
+0+Use/NG:s  VERB_BACK_STRONG_PAST  ;
+0:d  VERB_BACK_WEAK_PAST  ;
+0:t  VERB_BACK_STRONG_PAST  ;
+0:ta  VERB_BACK_IMPERATIVE  ;
+0:ta  VERB_BACK_POTENTIAL_N  ;
+0:de  VERB_BACK_PASSIVE_T  ;
+0:det  VERB_BACK_PASSIVE  ;
+0:det  VERB_BACK_TUPCP_0  ;
+0:ta  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_YLTÄÄ
+!!€gt-norm:  Verbs 55 front t~l
+!!€  yltää: yltää+V+Act+InfA+Sg+Lat # reach
+0:tä  VERB_FRONT_AINF  ;
+0:tä  VERB_FRONT_EINF  ;
+0:lä  VERB_FRONT_WEAK_PRESENT  ;
+0:tä  VERB_FRONT_STRONG_PRESENT  ;
+0:tä  VERB_FRONT_3SG_Ä  ;
+0:tä  VERB_FRONT_CONDITIONAL  ;
+0:s  VERB_FRONT_WEAK_PAST  ;
+0:s  VERB_FRONT_STRONG_PAST  ;
+0+Use/NG:l  VERB_FRONT_WEAK_PAST  ;
+0+Use/NG:t  VERB_FRONT_STRONG_PAST  ;
+0:tä  VERB_FRONT_IMPERATIVE  ;
+0:tä  VERB_FRONT_POTENTIAL_N  ;
+0:le  VERB_FRONT_PASSIVE_T  ;
+0:let  VERB_FRONT_PASSIVE  ;
+0:let  VERB_FRONT_TUPCP_0  ;
+0:tä  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_ENTÄÄ
+!!€gt-norm:  Verbs 55 front t~n
+!!€  entää: entää+V+Act+InfA+Sg+Lat 
+0:tä  VERB_FRONT_AINF  ;
+0:tä  VERB_FRONT_EINF  ;
+0:nä  VERB_FRONT_WEAK_PRESENT  ;
+0:tä  VERB_FRONT_STRONG_PRESENT  ;
+0:tä  VERB_FRONT_3SG_Ä  ;
+0:tä  VERB_FRONT_CONDITIONAL  ;
+0+Use/NG:s  VERB_FRONT_WEAK_PAST  ;
+0+Use/NG:s  VERB_FRONT_STRONG_PAST  ;
+0:n  VERB_FRONT_WEAK_PAST  ;
+0:t  VERB_FRONT_STRONG_PAST  ;
+0:tä  VERB_FRONT_IMPERATIVE  ;
+0:tä  VERB_FRONT_POTENTIAL_N  ;
+0:ne  VERB_FRONT_PASSIVE_T  ;
+0:net  VERB_FRONT_PASSIVE  ;
+0:net  VERB_FRONT_TUPCP_0  ;
+0:tä  VERB_FRONT_DERIV_PCPS  ;
+
+!!  Other a stems undergo a:o variation
+
+LEXICON VERB_KASVAA
+!!€gt-norm:  Verbs 56 back
+!!€  kasvaa: kasvaa+V+Act+InfA+Sg+Lat # grow
+0:a  VERB_BACK_AINF  ;
+0:a  VERB_BACK_EINF  ;
+0:a  VERB_BACK_WEAK_PRESENT  ;
+0:a  VERB_BACK_STRONG_PRESENT  ;
+0:a  VERB_BACK_3SG_A  ;
+0:a  VERB_BACK_CONDITIONAL  ;
+0:o  VERB_BACK_WEAK_PAST  ;
+0:o  VERB_BACK_STRONG_PAST  ;
+0:a  VERB_BACK_IMPERATIVE  ;
+0:a  VERB_BACK_POTENTIAL_N  ;
+0:e  VERB_BACK_PASSIVE_T  ;
+0:et  VERB_BACK_PASSIVE  ;
+0:et  VERB_BACK_TUPCP_0  ;
+0:a  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_VIRKKAA
+!!€gt-norm:  Verbs 56 back k~0
+!!€  jakaa: jakaa+V+Act+InfA+Sg+Lat # share
+0:ka  VERB_BACK_AINF  ;
+0:ka  VERB_BACK_EINF  ;
+0:a  VERB_BACK_WEAK_PRESENT  ;
+0:ka  VERB_BACK_STRONG_PRESENT  ;
+0:ka  VERB_BACK_3SG_A  ;
+0:ka  VERB_BACK_CONDITIONAL  ;
+0:o  VERB_BACK_WEAK_PAST  ;
+0:ko  VERB_BACK_STRONG_PAST  ;
+0:ka  VERB_BACK_IMPERATIVE  ;
+0:ka  VERB_BACK_POTENTIAL_N  ;
+0:e  VERB_BACK_PASSIVE_T  ;
+0:et  VERB_BACK_PASSIVE  ;
+0:et  VERB_BACK_TUPCP_0  ;
+0:ka  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_TAPPAA
+!!€gt-norm:  Verbs 56 back p~0
+!!€  tappaa: tappaa+V+Act+InfA+Sg+Lat # kill
+0:pa  VERB_BACK_AINF  ;
+0:pa  VERB_BACK_EINF  ;
+0:a  VERB_BACK_WEAK_PRESENT  ;
+0:pa  VERB_BACK_STRONG_PRESENT  ;
+0:pa  VERB_BACK_3SG_A  ;
+0:pa  VERB_BACK_CONDITIONAL  ;
+0:o  VERB_BACK_WEAK_PAST  ;
+0:po  VERB_BACK_STRONG_PAST  ;
+0:pa  VERB_BACK_IMPERATIVE  ;
+0:pa  VERB_BACK_POTENTIAL_N  ;
+0:e  VERB_BACK_PASSIVE_T  ;
+0:et  VERB_BACK_PASSIVE  ;
+0:et  VERB_BACK_TUPCP_0  ;
+0:pa  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_AUTTAA
+!!€gt-norm:  Verbs 56 back t~0
+!!€  auttaa: auttaa+V+Act+InfA+Sg+Lat # help
+0:ta  VERB_BACK_AINF  ;
+0:ta  VERB_BACK_EINF  ;
+0:a  VERB_BACK_WEAK_PRESENT  ;
+0:ta  VERB_BACK_STRONG_PRESENT  ;
+0:ta  VERB_BACK_3SG_A  ;
+0:ta  VERB_BACK_CONDITIONAL  ;
+0:o  VERB_BACK_WEAK_PAST  ;
+0:to  VERB_BACK_STRONG_PAST  ;
+0:ta  VERB_BACK_IMPERATIVE  ;
+0:ta  VERB_BACK_POTENTIAL_N  ;
+0:e  VERB_BACK_PASSIVE_T  ;
+0:et  VERB_BACK_PASSIVE  ;
+0:et  VERB_BACK_TUPCP_0  ;
+0:ta  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_SATAA
+!!€gt-norm:  Verbs 56 back t~d
+!!€  sataa: sataa+V+Act+InfA+Sg+Lat # rain
+0:ta  VERB_BACK_AINF  ;
+0:ta  VERB_BACK_EINF  ;
+0:da  VERB_BACK_WEAK_PRESENT  ;
+0:ta  VERB_BACK_STRONG_PRESENT  ;
+0:ta  VERB_BACK_3SG_A  ;
+0:ta  VERB_BACK_CONDITIONAL  ;
+0:do  VERB_BACK_WEAK_PAST  ;
+0:to  VERB_BACK_STRONG_PAST  ;
+0:ta  VERB_BACK_IMPERATIVE  ;
+0:ta  VERB_BACK_POTENTIAL_N  ;
+0:de  VERB_BACK_PASSIVE_T  ;
+0:det  VERB_BACK_PASSIVE  ;
+0:det  VERB_BACK_TUPCP_0  ;
+0:ta  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_KANTAA
+!!€gt-norm:  Verbs 56 back t~n
+!!€  kantaa: kantaa+V+Act+InfA+Sg+Lat # carry
+0:ta  VERB_BACK_AINF  ;
+0:ta  VERB_BACK_EINF  ;
+0:na  VERB_BACK_WEAK_PRESENT  ;
+0:ta  VERB_BACK_STRONG_PRESENT  ;
+0:ta  VERB_BACK_3SG_A  ;
+0:ta  VERB_BACK_CONDITIONAL  ;
+0:no  VERB_BACK_WEAK_PAST  ;
+0:to  VERB_BACK_STRONG_PAST  ;
+0:ta  VERB_BACK_IMPERATIVE  ;
+0:ta  VERB_BACK_POTENTIAL_N  ;
+0:ne  VERB_BACK_PASSIVE_T  ;
+0:net  VERB_BACK_PASSIVE  ;
+0:net  VERB_BACK_TUPCP_0  ;
+0:ta  VERB_BACK_DERIV_PCPS  ;
+
+!!  In some of the a:o variations the t:s variant is also possible.
+
+LEXICON VERB_KAATAA
+!!€gt-norm:  Verbs 57 back
+!!€  kaataa: kaataa+V+Act+InfA+Sg+Lat # pour
+0:ta  VERB_BACK_AINF  ;
+0:ta  VERB_BACK_EINF  ;
+0:da  VERB_BACK_WEAK_PRESENT  ;
+0:ta  VERB_BACK_STRONG_PRESENT  ;
+0:ta  VERB_BACK_3SG_A  ;
+0:ta  VERB_BACK_CONDITIONAL  ;
+0:do  VERB_BACK_WEAK_PAST  ;
+0+Use/NG:s  VERB_BACK_WEAK_PAST  ;
+0:to  VERB_BACK_STRONG_PAST  ;
+0+Use/NG:s  VERB_BACK_STRONG_PAST  ;
+0:ta  VERB_BACK_IMPERATIVE  ;
+0:ta  VERB_BACK_POTENTIAL_N  ;
+0:de  VERB_BACK_PASSIVE_T  ;
+0:det  VERB_BACK_PASSIVE  ;
+0:det  VERB_BACK_TUPCP_0  ;
+0:ta  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_SAARTAA
+!!€gt-norm:  Verbs 57 back t~r
+!!€  saartaa: saartaa+V+Act+InfA+Sg+Lat # surround
+0:ta  VERB_BACK_AINF  ;
+0:ta  VERB_BACK_EINF  ;
+0:ra  VERB_BACK_WEAK_PRESENT  ;
+0:ta  VERB_BACK_STRONG_PRESENT  ;
+0:ta  VERB_BACK_3SG_A  ;
+0:ta  VERB_BACK_CONDITIONAL  ;
+0:ro  VERB_BACK_WEAK_PAST  ;
+0+Use/NG:s  VERB_BACK_WEAK_PAST  ;
+0:to  VERB_BACK_STRONG_PAST  ;
+0+Use/NG:s  VERB_BACK_STRONG_PAST  ;
+0:ta  VERB_BACK_IMPERATIVE  ;
+0:ta  VERB_BACK_POTENTIAL_N  ;
+0:re  VERB_BACK_PASSIVE_T  ;
+0:ret  VERB_BACK_PASSIVE  ;
+0:ret  VERB_BACK_TUPCP_0  ;
+0:ta  VERB_BACK_DERIV_PCPS  ;
+
+!!  !Verbs with e stems
+
+LEXICON VERB_KYTKEÄ
+!!€gt-norm:  Verbs 58 front
+!!€  kytkeä: kytkeä+V+Act+InfA+Sg+Lat # switch
+0:e  VERB_FRONT_AINF  ;
+0:i  VERB_FRONT_EINF  ;
+0:e  VERB_FRONT_WEAK_PRESENT  ;
+0:e  VERB_FRONT_STRONG_PRESENT  ;
+0:e  VERB_FRONT_3SG_E  ;
+0  VERB_FRONT_CONDITIONAL  ;
+0  VERB_FRONT_WEAK_PAST  ;
+0  VERB_FRONT_STRONG_PAST  ;
+0:e  VERB_FRONT_IMPERATIVE  ;
+0:e  VERB_FRONT_POTENTIAL_N  ;
+0:e  VERB_FRONT_PASSIVE_T  ;
+0:et  VERB_FRONT_PASSIVE  ;
+0:et  VERB_FRONT_TUPCP_0  ;
+0:e  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_SOTKEA
+!!€gt-norm:  Verbs 58 back
+!!€  sotkea: sotkea+V+Act+InfA+Sg+Lat # mess
+0:e  VERB_BACK_AINF  ;
+0:i  VERB_BACK_EINF  ;
+0:e  VERB_BACK_WEAK_PRESENT  ;
+0:e  VERB_BACK_STRONG_PRESENT  ;
+0:e  VERB_BACK_3SG_E  ;
+0  VERB_BACK_CONDITIONAL  ;
+0  VERB_BACK_WEAK_PAST  ;
+0  VERB_BACK_STRONG_PAST  ;
+0:e  VERB_BACK_IMPERATIVE  ;
+0:e  VERB_BACK_POTENTIAL_N  ;
+0:e  VERB_BACK_PASSIVE_T  ;
+0:et  VERB_BACK_PASSIVE  ;
+0:et  VERB_BACK_TUPCP_0  ;
+0:e  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_PUKEA
+!!€gt-norm:  Verbs 58 back k~0
+!!€  pukea: pukea+V+Act+InfA+Sg+Lat # dress
+0:ke  VERB_BACK_AINF  ;
+0:ki  VERB_BACK_EINF  ;
+0:e  VERB_BACK_WEAK_PRESENT  ;
+0:ke  VERB_BACK_STRONG_PRESENT  ;
+0:ke  VERB_BACK_3SG_E  ;
+0:k  VERB_BACK_CONDITIONAL  ;
+0  VERB_BACK_WEAK_PAST  ;
+0:k  VERB_BACK_STRONG_PAST  ;
+0:ke  VERB_BACK_IMPERATIVE  ;
+0:ke  VERB_BACK_POTENTIAL_N  ;
+0:e  VERB_BACK_PASSIVE_T  ;
+0:et  VERB_BACK_PASSIVE  ;
+0:et  VERB_BACK_TUPCP_0  ;
+0:ke  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_RYPEÄ
+!!€gt-norm:  Verbs 58 front p~v
+!!€  rypeä: rypeä+V+Act+InfA+Sg+Lat # bathe
+0:pe  VERB_FRONT_AINF  ;
+0:pi  VERB_FRONT_EINF  ;
+0:ve  VERB_FRONT_WEAK_PRESENT  ;
+0:pe  VERB_FRONT_STRONG_PRESENT  ;
+0:pe  VERB_FRONT_3SG_E  ;
+0:p  VERB_FRONT_CONDITIONAL  ;
+0:v  VERB_FRONT_WEAK_PAST  ;
+0:p  VERB_FRONT_STRONG_PAST  ;
+0:pe  VERB_FRONT_IMPERATIVE  ;
+0:pe  VERB_FRONT_POTENTIAL_N  ;
+0:ve  VERB_FRONT_PASSIVE_T  ;
+0:vet  VERB_FRONT_PASSIVE  ;
+0:vet  VERB_FRONT_TUPCP_0  ;
+0:pe  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_PÄTEÄ
+!!€gt-norm:  Verbs 58 front t~d
+!!€  päteä: päteä+V+Act+InfA+Sg+Lat # nitpick
+0:te  VERB_FRONT_AINF  ;
+0:ti  VERB_FRONT_EINF  ;
+0:de  VERB_FRONT_WEAK_PRESENT  ;
+0:te  VERB_FRONT_STRONG_PRESENT  ;
+0:te  VERB_FRONT_3SG_E  ;
+0:t  VERB_FRONT_CONDITIONAL  ;
+0:d  VERB_FRONT_WEAK_PAST  ;
+0:t  VERB_FRONT_STRONG_PAST  ;
+0:te  VERB_FRONT_IMPERATIVE  ;
+0:te  VERB_FRONT_POTENTIAL_N  ;
+0:de  VERB_FRONT_PASSIVE_T  ;
+0:det  VERB_FRONT_PASSIVE  ;
+0:det  VERB_FRONT_TUPCP_0  ;
+0:te  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_KUTEA
+!!€gt-norm:  Verbs 58 back t~d
+!!€  kutea: kutea+V+Act+InfA+Sg+Lat # breed
+0:te  VERB_BACK_AINF  ;
+0:ti  VERB_BACK_EINF  ;
+0:de  VERB_BACK_WEAK_PRESENT  ;
+0:te  VERB_BACK_STRONG_PRESENT  ;
+0:te  VERB_BACK_3SG_E  ;
+0:t  VERB_BACK_CONDITIONAL  ;
+0:d  VERB_BACK_WEAK_PAST  ;
+0:t  VERB_BACK_STRONG_PAST  ; 
+0:te  VERB_BACK_IMPERATIVE  ;
+0:te  VERB_BACK_POTENTIAL_N  ;
+0:de  VERB_BACK_PASSIVE_T  ;
+0:det  VERB_BACK_PASSIVE  ;
+0:det  VERB_BACK_TUPCP_0  ;
+0:te  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_TUNKEA
+!!€gt-norm:  Verbs 58 back k~g
+!!€  tunkea: tunkea+V+Act+InfA+Sg+Lat # push
+0:ke  VERB_BACK_AINF  ;
+0:ki  VERB_BACK_EINF  ;
+0:ge  VERB_BACK_WEAK_PRESENT  ;
+0:ke  VERB_BACK_STRONG_PRESENT  ;
+0:ke  VERB_BACK_3SG_E  ;
+0:k  VERB_BACK_CONDITIONAL  ;
+0:g  VERB_BACK_WEAK_PAST  ;
+0:k  VERB_BACK_STRONG_PAST  ; 
+0:ke  VERB_BACK_IMPERATIVE  ;
+0:ke  VERB_BACK_POTENTIAL_N  ;
+0:ge  VERB_BACK_PASSIVE_T  ;
+0:get  VERB_BACK_PASSIVE  ;
+0:get  VERB_BACK_TUPCP_0  ;
+0:ke  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_POLKEA
+!!€gt-norm:  Verbs 58 back k~j
+!!€  polkea: polkea+V+Act+InfA+Sg+Lat # stomp
+0:ke  VERB_BACK_AINF  ;
+0:ki  VERB_BACK_EINF  ;
+0:je  VERB_BACK_WEAK_PRESENT  ;
+0:ke  VERB_BACK_STRONG_PRESENT  ;
+0:ke  VERB_BACK_3SG_E  ;
+0:k  VERB_BACK_CONDITIONAL  ;
+0:j  VERB_BACK_WEAK_PAST  ;
+0:k  VERB_BACK_STRONG_PAST  ; 
+0:ke  VERB_BACK_IMPERATIVE  ;
+0:ke  VERB_BACK_POTENTIAL_N  ;
+0:je  VERB_BACK_PASSIVE_T  ;
+0:jet  VERB_BACK_PASSIVE  ;
+0:jet  VERB_BACK_TUPCP_0  ;
+0:ke  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_SÄRKEÄ
+!!€gt-norm:  Verbs 58 front k~j
+!!€  särkeä: särkeä+V+Act+InfA+Sg+Lat # break
+0:ke  VERB_FRONT_AINF  ;
+0:ki  VERB_FRONT_EINF  ;
+0:je  VERB_FRONT_WEAK_PRESENT  ;
+0:ke  VERB_FRONT_STRONG_PRESENT  ;
+0:ke  VERB_FRONT_3SG_E  ;
+0:k  VERB_FRONT_CONDITIONAL  ;
+0:j  VERB_FRONT_WEAK_PAST  ;
+0:k  VERB_FRONT_STRONG_PAST  ;
+0:ke  VERB_FRONT_IMPERATIVE  ;
+0:ke  VERB_FRONT_POTENTIAL_N  ;
+0:je  VERB_FRONT_PASSIVE_T  ;
+0:jet  VERB_FRONT_PASSIVE  ;
+0:jet  VERB_FRONT_TUPCP_0  ;
+0:ke  VERB_FRONT_DERIV_PCPS  ;
+
+!!  Some of the e stems allow for optional t:s variation in past form.
+
+LEXICON VERB_TUNTEA
+!!€gt-norm:  Verbs 59
+!!€  tuntea: tuntea+V+Act+InfA+Sg+Lat # feel
+0:te  VERB_BACK_AINF  ;
+0:ti  VERB_BACK_EINF  ;
+0:ne  VERB_BACK_WEAK_PRESENT  ;
+0:te  VERB_BACK_STRONG_PRESENT  ;
+0:te  VERB_BACK_3SG_E  ;
+0:t  VERB_BACK_CONDITIONAL  ;
+0:s  VERB_BACK_WEAK_PAST  ;
+0:s  VERB_BACK_STRONG_PAST  ; 
+0:te  VERB_BACK_IMPERATIVE  ;
+0:te  VERB_BACK_POTENTIAL_N  ;
+0:ne  VERB_BACK_PASSIVE_T  ;
+0:net  VERB_BACK_PASSIVE  ;
+0:net  VERB_BACK_TUPCP_0  ;
+0:te  VERB_BACK_DERIV_PCPS  ;
+
+!!  The rare ht:ks kind of variation is also possible.
+
+LEXICON VERB_LÄHTEÄ
+!!€gt-norm:  Verbs 60
+!!€  lähteä: lähteä+V+Act+InfA+Sg+Lat # go
+0:hte  VERB_FRONT_AINF  ;
+0:hti  VERB_FRONT_EINF  ;
+0:hde  VERB_FRONT_WEAK_PRESENT  ;
+0:hte  VERB_FRONT_STRONG_PRESENT  ;
+0:hte  VERB_FRONT_3SG_E  ;
+0:ht  VERB_FRONT_CONDITIONAL  ;
+0:hd  VERB_FRONT_WEAK_PAST  ;
+0:ht  VERB_FRONT_STRONG_PAST  ;
+0+Use/NG:ks  VERB_FRONT_WEAK_PAST  ;
+0+Use/NG:ks  VERB_FRONT_STRONG_PAST  ;
+0:hte  VERB_FRONT_IMPERATIVE  ;
+0:hte  VERB_FRONT_POTENTIAL_N  ;
+0:hde  VERB_FRONT_PASSIVE_T  ;
+0:hdet  VERB_FRONT_PASSIVE  ;
+0:hdet  VERB_FRONT_TUPCP_0  ;
+0:hte  VERB_FRONT_DERIV_PCPS  ;
+
+!!  !Verbs with i stems
+
+LEXICON VERB_KOSIA
+!!€gt-norm:  Verbs 61 back
+!!€  kosia: kosia+V+Act+InfA+Sg+Lat # propose
+0:i  VERB_BACK_AINF  ;
+0:i  VERB_BACK_EINF  ;
+0:i  VERB_BACK_WEAK_PRESENT  ;
+0:i  VERB_BACK_STRONG_PRESENT  ;
+0:i  VERB_BACK_3SG_I  ;
+0  VERB_BACK_CONDITIONAL  ;
+0  VERB_BACK_WEAK_PAST  ;
+0  VERB_BACK_STRONG_PAST  ;
+0:i  VERB_BACK_IMPERATIVE  ;
+0:i  VERB_BACK_POTENTIAL_N  ;
+0:i  VERB_BACK_PASSIVE_T  ;
+0:it  VERB_BACK_PASSIVE  ;
+0:it  VERB_BACK_TUPCP_0  ;
+0:i  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_RYSKIÄ
+!!€gt-norm:  Verbs 61 front
+!!€  ryskiä: ryskiä+V+Act+InfA+Sg+Lat # crash
+0:i  VERB_FRONT_AINF  ;
+0:i  VERB_FRONT_EINF  ;
+0:i  VERB_FRONT_WEAK_PRESENT  ;
+0:i  VERB_FRONT_STRONG_PRESENT  ;
+0:i  VERB_FRONT_3SG_I  ;
+0  VERB_FRONT_CONDITIONAL  ;
+0  VERB_FRONT_WEAK_PAST  ;
+0  VERB_FRONT_STRONG_PAST  ;
+0:i  VERB_FRONT_IMPERATIVE  ;
+0:i  VERB_FRONT_POTENTIAL_N  ;
+0:i  VERB_FRONT_PASSIVE_T  ;
+0:it  VERB_FRONT_PASSIVE  ;
+0:it  VERB_FRONT_TUPCP_0  ;
+0:i  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_KUKKIA
+!!€gt-norm:  Verbs 61 back k~0
+!!€  kukkia: kukkia+V+Act+InfA+Sg+Lat # bloom
+0:ki  VERB_BACK_AINF  ;
+0:ki  VERB_BACK_EINF  ;
+0:i  VERB_BACK_WEAK_PRESENT  ;
+0:ki  VERB_BACK_STRONG_PRESENT  ;
+0:ki  VERB_BACK_3SG_I  ;
+0:k  VERB_BACK_CONDITIONAL  ;
+0  VERB_BACK_WEAK_PAST  ;
+0:k  VERB_BACK_STRONG_PAST  ;
+0:ki  VERB_BACK_IMPERATIVE  ;
+0:ki  VERB_BACK_POTENTIAL_N  ;
+0:i  VERB_BACK_PASSIVE_T  ;
+0:it  VERB_BACK_PASSIVE  ;
+0:it  VERB_BACK_TUPCP_0  ;
+0:ki  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_SÖRKKIÄ
+!!€gt-norm:  Verbs 61 front k~0
+!!€  sörkkiä: sörkkiä+V+Act+InfA+Sg+Lat # meddle
+0:ki  VERB_FRONT_AINF  ;
+0:ki  VERB_FRONT_EINF  ;
+0:i  VERB_FRONT_WEAK_PRESENT  ;
+0:ki  VERB_FRONT_STRONG_PRESENT  ;
+0:ki  VERB_FRONT_3SG_I  ;
+0:k  VERB_FRONT_CONDITIONAL  ;
+0  VERB_FRONT_WEAK_PAST  ;
+0:k  VERB_FRONT_STRONG_PAST  ;
+0:ki  VERB_FRONT_IMPERATIVE  ;
+0:ki  VERB_FRONT_POTENTIAL_N  ;
+0:i  VERB_FRONT_PASSIVE_T  ;
+0:it  VERB_FRONT_PASSIVE  ;
+0:it  VERB_FRONT_TUPCP_0  ;
+0:ki  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_KALPPIA
+!!€gt-norm:  Verbs 61 back p~0
+!!€  kalppia: kalppia+V+Act+InfA+Sg+Lat 
+0:pi  VERB_BACK_AINF  ;
+0:pi  VERB_BACK_EINF  ;
+0:i  VERB_BACK_WEAK_PRESENT  ;
+0:pi  VERB_BACK_STRONG_PRESENT  ;
+0:pi  VERB_BACK_3SG_I  ;
+0:p  VERB_BACK_CONDITIONAL  ;
+0  VERB_BACK_WEAK_PAST  ;
+0:p  VERB_BACK_STRONG_PAST  ;
+0:pi  VERB_BACK_IMPERATIVE  ;
+0:pi  VERB_BACK_POTENTIAL_N  ;
+0:i  VERB_BACK_PASSIVE_T  ;
+0:it  VERB_BACK_PASSIVE  ;
+0:it  VERB_BACK_TUPCP_0  ;
+0:pi  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_HYPPIÄ
+!!€gt-norm:  Verbs 61 front p~0
+!!€  hyppiä: hyppiä+V+Act+InfA+Sg+Lat # jump
+0:pi  VERB_FRONT_AINF  ;
+0:pi  VERB_FRONT_EINF  ;
+0:i  VERB_FRONT_WEAK_PRESENT  ;
+0:pi  VERB_FRONT_STRONG_PRESENT  ;
+0:pi  VERB_FRONT_3SG_I  ;
+0:p  VERB_FRONT_CONDITIONAL  ;
+0  VERB_FRONT_WEAK_PAST  ;
+0:p  VERB_FRONT_STRONG_PAST  ;
+0:pi  VERB_FRONT_IMPERATIVE  ;
+0:pi  VERB_FRONT_POTENTIAL_N  ;
+0:i  VERB_FRONT_PASSIVE_T  ;
+0:it  VERB_FRONT_PASSIVE  ;
+0:it  VERB_FRONT_TUPCP_0  ;
+0:pi  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_MOITTIA
+!!€gt-norm:  Verbs 61 back t~0
+!!€  moittia: moittia+V+Act+InfA+Sg+Lat 
+0:ti  VERB_BACK_AINF  ;
+0:ti  VERB_BACK_EINF  ;
+0:i  VERB_BACK_WEAK_PRESENT  ;
+0:ti  VERB_BACK_STRONG_PRESENT  ;
+0:ti  VERB_BACK_3SG_I  ;
+0:t  VERB_BACK_CONDITIONAL  ;
+0  VERB_BACK_WEAK_PAST  ;
+0:t  VERB_BACK_STRONG_PAST  ;
+0:ti  VERB_BACK_IMPERATIVE  ;
+0:ti  VERB_BACK_POTENTIAL_N  ;
+0:i  VERB_BACK_PASSIVE_T  ;
+0:it  VERB_BACK_PASSIVE  ;
+0:it  VERB_BACK_TUPCP_0  ;
+0:ti  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_MIETTIÄ
+!!€gt-norm:  Verbs 61 front t~0
+!!€  miettiä: miettiä+V+Act+InfA+Sg+Lat # ponder
+0:ti  VERB_FRONT_AINF  ;
+0:ti  VERB_FRONT_EINF  ;
+0:i  VERB_FRONT_WEAK_PRESENT  ;
+0:ti  VERB_FRONT_STRONG_PRESENT  ;
+0:ti  VERB_FRONT_3SG_I  ;
+0:t  VERB_FRONT_CONDITIONAL  ;
+0  VERB_FRONT_WEAK_PAST  ;
+0:t  VERB_FRONT_STRONG_PAST  ;
+0:ti  VERB_FRONT_IMPERATIVE  ;
+0:ti  VERB_FRONT_POTENTIAL_N  ;
+0:i  VERB_FRONT_PASSIVE_T  ;
+0:it  VERB_FRONT_PASSIVE  ;
+0:it  VERB_FRONT_TUPCP_0  ;
+0:ti  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_RIIPIÄ
+!!€gt-norm:  Verbs 61 front p~v
+!!€  riipiä: riipiä+V+Act+InfA+Sg+Lat # pull
+0:pi  VERB_FRONT_AINF  ;
+0:pi  VERB_FRONT_EINF  ;
+0:vi  VERB_FRONT_WEAK_PRESENT  ;
+0:pi  VERB_FRONT_STRONG_PRESENT  ;
+0:pi  VERB_FRONT_3SG_I  ;
+0:p  VERB_FRONT_CONDITIONAL  ;
+0:v  VERB_FRONT_WEAK_PAST  ;
+0:p  VERB_FRONT_STRONG_PAST  ;
+0:pi  VERB_FRONT_IMPERATIVE  ;
+0:pi  VERB_FRONT_POTENTIAL_N  ;
+0:vi  VERB_FRONT_PASSIVE_T  ;
+0:vit  VERB_FRONT_PASSIVE  ;
+0:vit  VERB_FRONT_TUPCP_0  ;
+0:pi  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_RAAPIA
+!!€gt-norm:  Verbs 61 back p~v
+!!€  raapia: raapia+V+Act+InfA+Sg+Lat # scratch
+0:pi  VERB_BACK_AINF  ;
+0:pi  VERB_BACK_EINF  ;
+0:vi  VERB_BACK_WEAK_PRESENT  ;
+0:pi  VERB_BACK_STRONG_PRESENT  ;
+0:pi  VERB_BACK_3SG_I  ;
+0:p  VERB_BACK_CONDITIONAL  ;
+0:v  VERB_BACK_WEAK_PAST  ;
+0:p  VERB_BACK_STRONG_PAST  ;
+0:pi  VERB_BACK_IMPERATIVE  ;
+0:pi  VERB_BACK_POTENTIAL_N  ;
+0:vi  VERB_BACK_PASSIVE_T  ;
+0:vit  VERB_BACK_PASSIVE  ;
+0:vit  VERB_BACK_TUPCP_0  ;
+0:pi  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_AHNEHTIA
+!!€gt-norm:  Verbs 61 back t~d
+!!€  ahnehtia: ahnehtia+V+Act+InfA+Sg+Lat # greed
+0:ti  VERB_BACK_AINF  ;
+0:ti  VERB_BACK_EINF  ;
+0:di  VERB_BACK_WEAK_PRESENT  ;
+0:ti  VERB_BACK_STRONG_PRESENT  ;
+0:ti  VERB_BACK_3SG_I  ;
+0:t  VERB_BACK_CONDITIONAL  ;
+0:d  VERB_BACK_WEAK_PAST  ;
+0:t  VERB_BACK_STRONG_PAST  ;
+0:ti  VERB_BACK_IMPERATIVE  ;
+0:ti  VERB_BACK_POTENTIAL_N  ;
+0:di  VERB_BACK_PASSIVE_T  ;
+0:dit  VERB_BACK_PASSIVE  ;
+0:dit  VERB_BACK_TUPCP_0  ;
+0:ti  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_EHTIÄ
+!!€gt-norm:  Verbs 61 front t~d
+!!€  ehtiä: ehtiä+V+Act+InfA+Sg+Lat 
+0:ti  VERB_FRONT_AINF  ;
+0:ti  VERB_FRONT_EINF  ;
+0:di  VERB_FRONT_WEAK_PRESENT  ;
+0:ti  VERB_FRONT_STRONG_PRESENT  ;
+0:ti  VERB_FRONT_3SG_I  ;
+0:t  VERB_FRONT_CONDITIONAL  ;
+0:d  VERB_FRONT_WEAK_PAST  ;
+0:t  VERB_FRONT_STRONG_PAST  ;
+0:ti  VERB_FRONT_IMPERATIVE  ;
+0:ti  VERB_FRONT_POTENTIAL_N  ;
+0:di  VERB_FRONT_PASSIVE_T  ;
+0:dit  VERB_FRONT_PASSIVE  ;
+0:dit  VERB_FRONT_TUPCP_0  ;
+0:ti  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_MÖNKIÄ
+!!€gt-norm:  Verbs 61 front k~g
+!!€  mönkiä: mönkiä+V+Act+InfA+Sg+Lat # crawl
+0:ki  VERB_FRONT_AINF  ;
+0:ki  VERB_FRONT_EINF  ;
+0:gi  VERB_FRONT_WEAK_PRESENT  ;
+0:ki  VERB_FRONT_STRONG_PRESENT  ;
+0:ki  VERB_FRONT_3SG_I  ;
+0:k  VERB_FRONT_CONDITIONAL  ;
+0:g  VERB_FRONT_WEAK_PAST  ;
+0:k  VERB_FRONT_STRONG_PAST  ;
+0:ki  VERB_FRONT_IMPERATIVE  ;
+0:ki  VERB_FRONT_POTENTIAL_N  ;
+0:gi  VERB_FRONT_PASSIVE_T  ;
+0:git  VERB_FRONT_PASSIVE  ;
+0:git  VERB_FRONT_TUPCP_0  ;
+0:ki  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_ONKIA
+!!€gt-norm:  Verbs 61 back k~g
+!!€  onkia: onkia+V+Act+InfA+Sg+Lat # fish
+0:ki  VERB_BACK_AINF  ;
+0:ki  VERB_BACK_EINF  ;
+0:gi  VERB_BACK_WEAK_PRESENT  ;
+0:ki  VERB_BACK_STRONG_PRESENT  ;
+0:ki  VERB_BACK_3SG_I  ;
+0:k  VERB_BACK_CONDITIONAL  ;
+0:g  VERB_BACK_WEAK_PAST  ;
+0:k  VERB_BACK_STRONG_PAST  ;
+0:ki  VERB_BACK_IMPERATIVE  ;
+0:ki  VERB_BACK_POTENTIAL_N  ;
+0:gi  VERB_BACK_PASSIVE_T  ;
+0:git  VERB_BACK_PASSIVE  ;
+0:git  VERB_BACK_TUPCP_0  ;
+0:ki  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_TYMPIÄ
+!!€gt-norm:  Verbs 61 frontp~m
+!!€  tympiä: tympiä+V+Act+InfA+Sg+Lat # bore
+0:pi  VERB_FRONT_AINF  ;
+0:pi  VERB_FRONT_EINF  ;
+0:mi  VERB_FRONT_WEAK_PRESENT  ;
+0:pi  VERB_FRONT_STRONG_PRESENT  ;
+0:pi  VERB_FRONT_3SG_I  ;
+0:p  VERB_FRONT_CONDITIONAL  ;
+0:m  VERB_FRONT_WEAK_PAST  ;
+0:p  VERB_FRONT_STRONG_PAST  ;
+0:pi  VERB_FRONT_IMPERATIVE  ;
+0:pi  VERB_FRONT_POTENTIAL_N  ;
+0:mi  VERB_FRONT_PASSIVE_T  ;
+0:mit  VERB_FRONT_PASSIVE  ;
+0:mit  VERB_FRONT_TUPCP_0  ;
+0:pi  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_KONTIA
+!!€gt-norm:  Verbs 61 back t~n
+!!€  kontia: kontia+V+Act+InfA+Sg+Lat # mole
+0:ti  VERB_BACK_AINF  ;
+0:ti  VERB_BACK_EINF  ;
+0:ni  VERB_BACK_WEAK_PRESENT  ;
+0:ti  VERB_BACK_STRONG_PRESENT  ;
+0:ti  VERB_BACK_3SG_I  ;
+0:t  VERB_BACK_CONDITIONAL  ;
+0:n  VERB_BACK_WEAK_PAST  ;
+0:t  VERB_BACK_STRONG_PAST  ;
+0:ti  VERB_BACK_IMPERATIVE  ;
+0:ti  VERB_BACK_POTENTIAL_N  ;
+0:ni  VERB_BACK_PASSIVE_T  ;
+0:nit  VERB_BACK_PASSIVE  ;
+0:nit  VERB_BACK_TUPCP_0  ;
+0:ti  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_HYLKIÄ
+!!€gt-norm:  Verbs 61 back k~j
+!!€  hylkiä: hylkiä+V+Act+InfA+Sg+Lat # reject
+0:ki  VERB_FRONT_AINF  ;
+0:ki  VERB_FRONT_EINF  ;
+0:ji  VERB_FRONT_WEAK_PRESENT  ;
+0:ki  VERB_FRONT_STRONG_PRESENT  ;
+0:ki  VERB_FRONT_3SG_I  ;
+0:k  VERB_FRONT_CONDITIONAL  ;
+0:j  VERB_FRONT_WEAK_PAST  ;
+0:k  VERB_FRONT_STRONG_PAST  ;
+0:ki  VERB_FRONT_IMPERATIVE  ;
+0:ki  VERB_FRONT_POTENTIAL_N  ;
+0:ji  VERB_FRONT_PASSIVE_T  ;
+0:jit  VERB_FRONT_PASSIVE  ;
+0:jit  VERB_FRONT_TUPCP_0  ;
+0:ki  VERB_FRONT_DERIV_PCPS  ;
+
+!!  !Verbs with long vowel stem
+!!  These verbs also have da variant of a infinitive forms.
+
+LEXICON VERB_KOPIOIDA
+!!€gt-norm:  Verbs 62 back
+!!€  kopioida: kopioida+V+Act+InfA+Sg+Lat # copy
+0:id  VERB_BACK_AINF  ;
+0:id  VERB_BACK_EINF  ;
+0:i  VERB_BACK_WEAK_PRESENT  ;
+0:i  VERB_BACK_STRONG_PRESENT  ;
+0  VERB_BACK_3SG_I  ;
+0  VERB_BACK_CONDITIONAL  ;
+0  VERB_BACK_WEAK_PAST  ;
+0  VERB_BACK_STRONG_PAST  ;
+0:i  VERB_BACK_IMPERATIVE  ;
+0:i  VERB_BACK_POTENTIAL_N  ;
+0:i  VERB_BACK_PASSIVE_D  ;
+0:i  VERB_BACK_PASSIVE  ;
+0:i  VERB_BACK_TUPCP_D  ;
+0:i  VERB_BACK_DERIV_PCPS  ;
+!0:i  VERB_BACK_DERIV_NTI  ;
+
+LEXICON VERB_ÖYKKÄRÖIDÄ
+!!€gt-norm:  Verbs 62 front
+!!€  öykkäröidä: öykkäröidä+V+Act+InfA+Sg+Lat # bully
+0:id  VERB_FRONT_AINF  ;
+0:id  VERB_FRONT_EINF  ;
+0:i  VERB_FRONT_WEAK_PRESENT  ;
+0:i  VERB_FRONT_STRONG_PRESENT  ;
+0  VERB_FRONT_3SG_I  ;
+0  VERB_FRONT_CONDITIONAL  ;
+0  VERB_FRONT_WEAK_PAST  ;
+0  VERB_FRONT_STRONG_PAST  ;
+0:i  VERB_FRONT_IMPERATIVE  ;
+0:i  VERB_FRONT_POTENTIAL_N  ;
+0:i  VERB_FRONT_PASSIVE_D  ;
+0:i  VERB_FRONT_PASSIVE  ;
+0:i  VERB_FRONT_TUPCP_D  ;
+0:i  VERB_FRONT_DERIV_PCPS  ;
+!0:i  VERB_FRONT_DERIV_NTI  ;
+
+LEXICON VERB_SAADA
+!!€gt-norm:  Verbs 63 a
+!!€  saada: saada+V+Act+InfA+Sg+Lat # get
+0:ad  VERB_BACK_AINF  ;
+0:ad  VERB_BACK_EINF  ;
+0:a  VERB_BACK_WEAK_PRESENT  ;
+0:a  VERB_BACK_STRONG_PRESENT  ;
+0  VERB_BACK_3SG_A  ;
+0  VERB_BACK_CONDITIONAL  ;
+0  VERB_BACK_WEAK_PAST  ;
+0  VERB_BACK_STRONG_PAST  ;
+0:a  VERB_BACK_IMPERATIVE  ;
+0:a  VERB_BACK_POTENTIAL_N  ;
+0:a  VERB_BACK_PASSIVE_D  ;
+0:a  VERB_BACK_PASSIVE  ;
+0:a  VERB_BACK_TUPCP_D  ;
+0:a  VERB_BACK_DERIV_PCPS  ;
+!0:a  VERB_BACK_DERIV_NTI  ;
+
+LEXICON VERB_MYYDÄ
+!!€gt-norm:  Verbs 63 y
+!!€  myydä: myydä+V+Act+InfA+Sg+Lat # sell
+0:yd  VERB_FRONT_AINF  ;
+0:yd  VERB_FRONT_EINF  ;
+0:y  VERB_FRONT_WEAK_PRESENT  ;
+0:y  VERB_FRONT_STRONG_PRESENT  ;
+0  VERB_FRONT_3SG_Y  ;
+0  VERB_FRONT_CONDITIONAL  ;
+0  VERB_FRONT_WEAK_PAST  ;
+0  VERB_FRONT_STRONG_PAST  ;
+0:y  VERB_FRONT_IMPERATIVE  ;
+0:y  VERB_FRONT_POTENTIAL_N  ;
+0:y  VERB_FRONT_PASSIVE_D  ;
+0:y  VERB_FRONT_PASSIVE  ;
+0:y  VERB_FRONT_TUPCP_D  ;
+0:y  VERB_FRONT_DERIV_PCPS  ;
+!0:y  VERB_FRONT_DERIV_NTI  ;
+
+LEXICON VERB_JÄÄDÄ
+!!€gt-norm:  Verbs 63 ä
+!!€  jäädä: jäädä+V+Act+InfA+Sg+Lat # stay
+0:äd  VERB_FRONT_AINF  ;
+0:äd  VERB_FRONT_EINF  ;
+0:ä  VERB_FRONT_WEAK_PRESENT  ;
+0:ä  VERB_FRONT_STRONG_PRESENT  ;
+0  VERB_FRONT_3SG_Ä  ;
+0  VERB_FRONT_CONDITIONAL  ;
+0  VERB_FRONT_WEAK_PAST  ;
+0  VERB_FRONT_STRONG_PAST  ;
+0:ä  VERB_FRONT_IMPERATIVE  ;
+0:ä  VERB_FRONT_POTENTIAL_N  ;
+0:ä  VERB_FRONT_PASSIVE_D  ;
+0:ä  VERB_FRONT_PASSIVE  ;
+0:ä  VERB_FRONT_TUPCP_D  ;
+0:ä  VERB_FRONT_DERIV_PCPS  ;
+!0:ä  VERB_FRONT_DERIV_NTI  ;
+
+!!  !Monosyllabic verbs with widening diphthong
+!!  Widening diphthongs are simplified before past and conditional suffix i's
+!!  by removal of first component. 
+
+LEXICON VERB_VIEDÄ
+!!€gt-norm:  Verbs 64 ie
+!!€  viedä: viedä+V+Act+InfA+Sg+Lat # take
+0:ied  VERB_FRONT_AINF  ;
+0:ied  VERB_FRONT_EINF  ;
+0:ie  VERB_FRONT_WEAK_PRESENT  ;
+0:ie  VERB_FRONT_STRONG_PRESENT  ;
+0:i  VERB_FRONT_3SG_E  ;
+0:e  VERB_FRONT_CONDITIONAL  ;
+0:e  VERB_FRONT_WEAK_PAST  ;
+0:e  VERB_FRONT_STRONG_PAST  ;
+0:ie  VERB_FRONT_IMPERATIVE  ;
+0:ie  VERB_FRONT_POTENTIAL_N  ;
+0:ie  VERB_FRONT_PASSIVE_D  ;
+0:ie  VERB_FRONT_PASSIVE  ;
+0:ie  VERB_FRONT_TUPCP_D  ;
+0:ie  VERB_FRONT_DERIV_PCPS  ;
+!0:ie  VERB_FRONT_DERIV_NTI  ;
+
+LEXICON VERB_TUODA
+!!€gt-norm:  Verbs 64 uo
+!!€  tuoda: tuoda+V+Act+InfA+Sg+Lat # bring
+0:uod  VERB_BACK_AINF  ;
+0:uod  VERB_BACK_EINF  ;
+0:uo  VERB_BACK_WEAK_PRESENT  ;
+0:uo  VERB_BACK_STRONG_PRESENT  ;
+0:u  VERB_BACK_3SG_O  ;
+0:o  VERB_BACK_CONDITIONAL  ;
+0:o  VERB_BACK_WEAK_PAST  ;
+0:o  VERB_BACK_STRONG_PAST  ;
+0:uo  VERB_BACK_IMPERATIVE  ;
+0:uo  VERB_BACK_POTENTIAL_N  ;
+0:uo  VERB_BACK_PASSIVE_D  ;
+0:uo  VERB_BACK_PASSIVE  ;
+0:uo  VERB_BACK_TUPCP_D  ;
+0:uo  VERB_BACK_DERIV_PCPS  ;
+!0:uo  VERB_BACK_DERIV_NTI  ;
+
+LEXICON VERB_SYÖDÄ
+!!€gt-norm:  Verbs 64 yö
+!!€  syödä: syödä+V+Act+InfA+Sg+Lat # eat
+0:yöd  VERB_FRONT_AINF  ;
+0:yöd  VERB_FRONT_EINF  ;
+0:yö  VERB_FRONT_WEAK_PRESENT  ;
+0:yö  VERB_FRONT_STRONG_PRESENT  ;
+0:y  VERB_FRONT_3SG_Ö  ;
+0:ö  VERB_FRONT_CONDITIONAL  ;
+0:ö  VERB_FRONT_WEAK_PAST  ;
+0:ö  VERB_FRONT_STRONG_PAST  ;
+0:yö  VERB_FRONT_IMPERATIVE  ;
+0:yö  VERB_FRONT_POTENTIAL_N  ;
+0:yö  VERB_FRONT_PASSIVE_D  ;
+0:yö  VERB_FRONT_PASSIVE  ;
+0:yö  VERB_FRONT_TUPCP_D  ;
+0:yö  VERB_FRONT_DERIV_PCPS  ;
+!0:yö  VERB_FRONT_DERIV_NTI  ;
+
+!!  In past and conditional forms of käydä, the glide before suffix is marked
+!!  even in normative orthography.
+
+LEXICON VERB_KÄYDÄ
+!!€gt-norm:  Verbs 65
+!!€  käydä: käydä+V+Act+InfA+Sg+Lat # visit, go for
+0:yd  VERB_FRONT_AINF  ;
+0:yd  VERB_FRONT_EINF  ;
+0:y  VERB_FRONT_WEAK_PRESENT  ;
+0:y  VERB_FRONT_STRONG_PRESENT  ;
+0  VERB_FRONT_3SG_Y  ;
+0:v  VERB_FRONT_CONDITIONAL  ;
+0:v  VERB_FRONT_WEAK_PAST  ;
+0:v  VERB_FRONT_STRONG_PAST  ;
+0:y  VERB_FRONT_IMPERATIVE  ;
+0:y  VERB_FRONT_POTENTIAL_N  ;
+0:y  VERB_FRONT_PASSIVE_D  ;
+0:y  VERB_FRONT_PASSIVE  ;
+0:y  VERB_FRONT_TUPCP_D  ;
+0:y  VERB_FRONT_DERIV_PCPS  ;
+!0:y  VERB_FRONT_DERIV_NTI  ;
+
+!!  !Verbs with consonant stems
+
+!!  Verbs with momentane derivation are common consonant stems.
+
+LEXICON VERB_MARISTA
+!!€gt-norm:  Verbs 66 back
+!!€  marista: marista+V+Act+InfA+Sg+Lat # whine
+0:t  VERB_BACK_AINF  ;
+0:t  VERB_BACK_EINF  ;
+0:e  VERB_BACK_WEAK_PRESENT  ;
+0:e  VERB_BACK_STRONG_PRESENT  ;
+0:e  VERB_BACK_3SG_E  ;
+0  VERB_BACK_CONDITIONAL  ;
+0  VERB_BACK_WEAK_PAST  ;
+0  VERB_BACK_STRONG_PAST  ;
+0  VERB_BACK_IMPERATIVE  ;
+0  VERB_BACK_POTENTIAL_S  ;
+0  VERB_BACK_PASSIVE_T  ;
+0  VERB_BACK_PASSIVE  ;
+0  VERB_BACK_TUPCP_STRONG  ;
+0:e  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_ÄRISTÄ
+!!€gt-norm:  Verbs 66 front
+!!€  äristä: äristä+V+Act+InfA+Sg+Lat # arr
+0:t  VERB_FRONT_AINF  ;
+0:t  VERB_FRONT_EINF  ;
+0:e  VERB_FRONT_WEAK_PRESENT  ;
+0:e  VERB_FRONT_STRONG_PRESENT  ;
+0:e  VERB_FRONT_3SG_E  ;
+0  VERB_FRONT_CONDITIONAL  ;
+0  VERB_FRONT_WEAK_PAST  ;
+0  VERB_FRONT_STRONG_PAST  ;
+0  VERB_FRONT_IMPERATIVE  ;
+0  VERB_FRONT_POTENTIAL_S  ;
+0  VERB_FRONT_PASSIVE_T  ;
+0  VERB_FRONT_PASSIVE  ;
+0  VERB_FRONT_TUPCP_STRONG  ;
+0:e  VERB_FRONT_DERIV_PCPS  ;
+
+
+LEXICON VERB_HÄVÄISTÄ
+!!€gt-norm:  Verbs 66 front v p
+!!€  häväistä: häväistä+V+Act+InfA+Sg+Lat # sacrilege
+0:väist  VERB_FRONT_AINF  ;
+0:väist  VERB_FRONT_EINF  ;
+0:päise  VERB_FRONT_WEAK_PRESENT  ;
+0:päise  VERB_FRONT_STRONG_PRESENT  ;
+0:päise  VERB_FRONT_3SG_E  ;
+0:päis  VERB_FRONT_CONDITIONAL  ;
+0:päis  VERB_FRONT_WEAK_PAST  ;
+0:päis  VERB_FRONT_STRONG_PAST  ;
+0:väis  VERB_FRONT_IMPERATIVE  ;
+0:väis  VERB_FRONT_POTENTIAL_S  ;
+0:väis  VERB_FRONT_PASSIVE_T  ;
+0:väis  VERB_FRONT_PASSIVE  ;
+0:väis  VERB_FRONT_TUPCP_STRONG  ;
+0:päise  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_VAVISTA
+!!€gt-norm:  Verbs 66 back v~p
+!!€  vavista: vavista+V+Act+InfA+Sg+Lat # shake
+0:vist  VERB_BACK_AINF  ;
+0:vist  VERB_BACK_EINF  ;
+0:pise  VERB_BACK_WEAK_PRESENT  ;
+0:pise  VERB_BACK_STRONG_PRESENT  ;
+0:pise  VERB_BACK_3SG_E  ;
+0:pis  VERB_BACK_CONDITIONAL  ;
+0:pis  VERB_BACK_WEAK_PAST  ;
+0:pis  VERB_BACK_STRONG_PAST  ;
+0:vis  VERB_BACK_IMPERATIVE  ;
+0:vis  VERB_BACK_POTENTIAL_S  ;
+0:vis  VERB_BACK_PASSIVE_T  ;
+0:vis  VERB_BACK_PASSIVE  ;
+0:vis  VERB_BACK_TUPCP_STRONG  ;
+0:pis  VERB_BACK_DERIV_PCPS  ;
+:vis  VERB_BACK_OPTATIVE_S_ARCHAIC  ;
+
+
+LEXICON VERB_RANGAISTA
+!!€gt-norm:  Verbs 66 back k~g
+!!€  rangaista: rangaista+V+Act+InfA+Sg+Lat # punish
+0:gaist  VERB_BACK_AINF  ;
+0:gaist  VERB_BACK_EINF  ;
+0:kaise  VERB_BACK_WEAK_PRESENT  ;
+0:kaise  VERB_BACK_STRONG_PRESENT  ;
+0:kaise  VERB_BACK_3SG_E  ;
+0:kais  VERB_BACK_CONDITIONAL  ;
+0:kais  VERB_BACK_WEAK_PAST  ;
+0:kais  VERB_BACK_STRONG_PAST  ;
+0:gais  VERB_BACK_IMPERATIVE  ;
+0:gais  VERB_BACK_POTENTIAL_S  ;
+0:gais  VERB_BACK_PASSIVE_T  ;
+0:gais  VERB_BACK_PASSIVE  ;
+0:gais  VERB_BACK_TUPCP_STRONG  ;
+0:kaise  VERB_BACK_DERIV_PCPS  ;
+
+!!  !Verbs with n, r, l, s stems
+!!  Notably, the a infinitive forms d assimilates to preceding consonant.
+
+LEXICON VERB_SURRA
+!!€gt-norm:  Verbs 67 back r
+!!€  surra: surra+V+Act+InfA+Sg+Lat # meh
+0:r  VERB_BACK_AINF  ;
+0:r  VERB_BACK_EINF  ;
+0:e  VERB_BACK_WEAK_PRESENT  ;
+0:e  VERB_BACK_STRONG_PRESENT  ;
+0:e  VERB_BACK_3SG_E  ;
+0  VERB_BACK_WEAK_PAST  ;
+0  VERB_BACK_STRONG_PAST  ;
+0  VERB_BACK_CONDITIONAL  ;
+0  VERB_BACK_IMPERATIVE  ;
+0  VERB_BACK_POTENTIAL_R  ;
+0  VERB_BACK_PASSIVE_R  ;
+0  VERB_BACK_PASSIVE  ;
+0  VERB_BACK_TUPCP_R  ;
+0:e  VERB_BACK_DERIV_PCPS  ;
+
+:r  VERB_BACK_OPTATIVE_R_ARCHAIC  ;
+
+
+LEXICON VERB_PIERRÄ
+!!€gt-norm:  Verbs 67 front r
+!!€  pierrä: pierrä+V+Act+InfA+Sg+Lat # fart
+0:r  VERB_FRONT_AINF  ;
+0:r  VERB_FRONT_EINF  ;
+0:e  VERB_FRONT_WEAK_PRESENT  ;
+0:e  VERB_FRONT_STRONG_PRESENT  ;
+0:e  VERB_FRONT_3SG_E  ;
+0  VERB_FRONT_WEAK_PAST  ;
+0  VERB_FRONT_STRONG_PAST  ;
+0  VERB_FRONT_CONDITIONAL  ;
+0  VERB_FRONT_IMPERATIVE  ;
+0  VERB_FRONT_POTENTIAL_R  ;
+0  VERB_FRONT_PASSIVE_R  ;
+0  VERB_FRONT_PASSIVE  ;
+0  VERB_FRONT_TUPCP_R  ;
+0:e  VERB_FRONT_DERIV_PCPS  ;
+:r  VERB_FRONT_OPTATIVE_R_ARCHAIC  ;
+
+LEXICON VERB_PANNA
+!!€gt-norm:  Verbs 67 back n
+!!€  panna: panna+V+Act+InfA+Sg+Lat # put
+0:n  VERB_BACK_AINF  ;
+0:n  VERB_BACK_EINF  ;
+0:e  VERB_BACK_WEAK_PRESENT  ;
+0:e  VERB_BACK_STRONG_PRESENT  ;
+0:e  VERB_BACK_3SG_E  ;
+0  VERB_BACK_WEAK_PAST  ;
+0  VERB_BACK_STRONG_PAST  ;
+0  VERB_BACK_CONDITIONAL  ;
+0  VERB_BACK_IMPERATIVE  ;
+0  VERB_BACK_POTENTIAL_N  ;
+0  VERB_BACK_PASSIVE_N  ;
+0  VERB_BACK_PASSIVE  ;
+0  VERB_BACK_TUPCP_N  ;
+0:e  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_MENNÄ
+!!€gt-norm:  Verbs 67 front n
+!!€  mennä: mennä+V+Act+InfA+Sg+Lat # go
+0:n  VERB_FRONT_AINF  ;
+0:n  VERB_FRONT_EINF  ;
+0:e  VERB_FRONT_WEAK_PRESENT  ;
+0:e  VERB_FRONT_STRONG_PRESENT  ;
+0:e  VERB_FRONT_3SG_E  ;
+0  VERB_FRONT_WEAK_PAST  ;
+0  VERB_FRONT_STRONG_PAST  ;
+0  VERB_FRONT_CONDITIONAL  ;
+0  VERB_FRONT_IMPERATIVE  ;
+0  VERB_FRONT_POTENTIAL_N  ;
+0  VERB_FRONT_PASSIVE_N  ;
+0  VERB_FRONT_PASSIVE  ;
+0  VERB_FRONT_TUPCP_N  ;
+0:e  VERB_FRONT_DERIV_PCPS  ;
+
+!!  Frequentative derivations are most common source of l stemmed verbs.
+
+LEXICON VERB_VASTAILLA
+!!€gt-norm:  Verbs 67 back l
+!!€  vastailla: vastailla+V+Act+InfA+Sg+Lat # answer
+0:l  VERB_BACK_AINF  ;
+0:l  VERB_BACK_EINF  ;
+0:e  VERB_BACK_WEAK_PRESENT  ;
+0:e  VERB_BACK_STRONG_PRESENT  ;
+0:e  VERB_BACK_3SG_E  ;
+0  VERB_BACK_WEAK_PAST  ;
+0  VERB_BACK_STRONG_PAST  ;
+0  VERB_BACK_CONDITIONAL  ;
+0  VERB_BACK_IMPERATIVE  ;
+0  VERB_BACK_POTENTIAL_L  ;
+0  VERB_BACK_PASSIVE_L  ;
+0  VERB_BACK_PASSIVE  ;
+0  VERB_BACK_TUPCP_L  ;
+0:e  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_ÄKSYILLÄ
+!!€gt-norm:  Verbs 67 frot l
+!!€  äksyillä: äksyillä+V+Act+InfA+Sg+Lat 
+0:l  VERB_FRONT_AINF  ;
+0:l  VERB_FRONT_EINF  ;
+0:e  VERB_FRONT_WEAK_PRESENT  ;
+0:e  VERB_FRONT_STRONG_PRESENT  ;
+0:e  VERB_FRONT_3SG_E  ;
+0  VERB_FRONT_WEAK_PAST  ;
+0  VERB_FRONT_STRONG_PAST  ;
+0  VERB_FRONT_CONDITIONAL  ;
+0  VERB_FRONT_IMPERATIVE  ;
+0  VERB_FRONT_POTENTIAL_L  ;
+0  VERB_FRONT_PASSIVE_L  ;
+0  VERB_FRONT_PASSIVE  ;
+0  VERB_FRONT_TUPCP_L  ;
+0:e  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_LEIKELLÄ
+!!€gt-norm:  Verbs 67 front l 0k
+!!€  leikellä: leikellä+V+Act+InfA+Sg+Lat # cut
+0:ell  VERB_FRONT_AINF  ;
+0:ell  VERB_FRONT_EINF  ;
+0:kele  VERB_FRONT_WEAK_PRESENT  ;
+0:kele  VERB_FRONT_STRONG_PRESENT  ;
+0:kele  VERB_FRONT_3SG_E  ;
+0:kel  VERB_FRONT_WEAK_PAST  ;
+0:kel  VERB_FRONT_STRONG_PAST  ;
+0:kel  VERB_FRONT_CONDITIONAL  ;
+0:el  VERB_FRONT_IMPERATIVE  ;
+0:el  VERB_FRONT_POTENTIAL_L  ;
+0:el  VERB_FRONT_PASSIVE_L  ;
+0:el  VERB_FRONT_PASSIVE  ;
+0:el  VERB_FRONT_TUPCP_L  ;
+0:kele  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_NAKELLA
+!!€gt-norm:  Verbs 67 back l 0k
+!!€  nakella: nakella+V+Act+InfA+Sg+Lat # throw
+0:ell  VERB_BACK_AINF  ;
+0:ell  VERB_BACK_EINF  ;
+0:kele  VERB_BACK_WEAK_PRESENT  ;
+0:kele  VERB_BACK_STRONG_PRESENT  ;
+0:kele  VERB_BACK_3SG_E  ;
+0:kel  VERB_BACK_WEAK_PAST  ;
+0:kel  VERB_BACK_STRONG_PAST  ;
+0:kel  VERB_BACK_CONDITIONAL  ;
+0:el  VERB_BACK_IMPERATIVE  ;
+0:el  VERB_BACK_POTENTIAL_L  ;
+0:el  VERB_BACK_PASSIVE_L  ;
+0:el  VERB_BACK_PASSIVE  ;
+0:el  VERB_BACK_TUPCP_L  ;
+0:kele  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_TAPELLA
+!!€gt-norm:  Verbs 67 back l 0p
+!!€  tapella: tapella+V+Act+InfA+Sg+Lat # fight
+0:ell  VERB_BACK_AINF  ;
+0:ell  VERB_BACK_EINF  ;
+0:pele  VERB_BACK_WEAK_PRESENT  ;
+0:pele  VERB_BACK_STRONG_PRESENT  ;
+0:pele  VERB_BACK_3SG_E  ;
+0:pel  VERB_BACK_WEAK_PAST  ;
+0:pel  VERB_BACK_STRONG_PAST  ;
+0:pel  VERB_BACK_CONDITIONAL  ;
+0:el  VERB_BACK_IMPERATIVE  ;
+0:el  VERB_BACK_POTENTIAL_L  ;
+0:el  VERB_BACK_PASSIVE_L  ;
+0:el  VERB_BACK_PASSIVE  ;
+0:el  VERB_BACK_TUPCP_L  ;
+0:pele  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_HYPELLÄ
+!!€gt-norm:  Verbs 67 front l 0p
+!!€  hypellä: hypellä+V+Act+InfA+Sg+Lat # jump
+0:ell  VERB_FRONT_AINF  ;
+0:ell  VERB_FRONT_EINF  ;
+0:pele  VERB_FRONT_WEAK_PRESENT  ;
+0:pele  VERB_FRONT_STRONG_PRESENT  ;
+0:pele  VERB_FRONT_3SG_E  ;
+0:pel  VERB_FRONT_WEAK_PAST  ;
+0:pel  VERB_FRONT_STRONG_PAST  ;
+0:pel  VERB_FRONT_CONDITIONAL  ;
+0:el  VERB_FRONT_IMPERATIVE  ;
+0:el  VERB_FRONT_POTENTIAL_L  ;
+0:el  VERB_FRONT_PASSIVE_L  ;
+0:el  VERB_FRONT_PASSIVE  ;
+0:el  VERB_FRONT_TUPCP_L  ;
+0:pele  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_SULATELLA
+!!€gt-norm:  Verbs 67 back l 0t
+!!€  sulatella: sulatella+V+Act+InfA+Sg+Lat # melt
+0:ell  VERB_BACK_AINF  ;
+0:ell  VERB_BACK_EINF  ;
+0:tele  VERB_BACK_WEAK_PRESENT  ;
+0:tele  VERB_BACK_STRONG_PRESENT  ;
+0:tele  VERB_BACK_3SG_E  ;
+0:tel  VERB_BACK_WEAK_PAST  ;
+0:tel  VERB_BACK_STRONG_PAST  ;
+0:tel  VERB_BACK_CONDITIONAL  ;
+0:el  VERB_BACK_IMPERATIVE  ;
+0:el  VERB_BACK_POTENTIAL_L  ;
+0:el  VERB_BACK_PASSIVE_L  ;
+0:el  VERB_BACK_PASSIVE  ;
+0:el  VERB_BACK_TUPCP_L  ;
+0:tele  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_HERÄTELLÄ
+!!€gt-norm:  Verbs 67 front l 0t
+!!€  herätellä: herätellä+V+Act+InfA+Sg+Lat # wake
+0:ell  VERB_FRONT_AINF  ;
+0:ell  VERB_FRONT_EINF  ;
+0:tele  VERB_FRONT_WEAK_PRESENT  ;
+0:tele  VERB_FRONT_STRONG_PRESENT  ;
+0:tele  VERB_FRONT_3SG_E  ;
+0:tel  VERB_FRONT_WEAK_PAST  ;
+0:tel  VERB_FRONT_STRONG_PAST  ;
+0:tel  VERB_FRONT_CONDITIONAL  ;
+0:el  VERB_FRONT_IMPERATIVE  ;
+0:el  VERB_FRONT_POTENTIAL_L  ;
+0:el  VERB_FRONT_PASSIVE_L  ;
+0:el  VERB_FRONT_PASSIVE  ;
+0:el  VERB_FRONT_TUPCP_L  ;
+0:tele  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_TIPAHDELLA
+!!€gt-norm:  Verbs 67 back l d~t
+!!€  tipahdella: tipahdella+V+Act+InfA+Sg+Lat # drop
+0:dell  VERB_BACK_AINF  ;
+0:dell  VERB_BACK_EINF  ;
+0:tele  VERB_BACK_WEAK_PRESENT  ;
+0:tele  VERB_BACK_STRONG_PRESENT  ;
+0:tele  VERB_BACK_3SG_E  ;
+0:tel  VERB_BACK_WEAK_PAST  ;
+0:tel  VERB_BACK_STRONG_PAST  ;
+0:tel  VERB_BACK_CONDITIONAL  ;
+0:del  VERB_BACK_IMPERATIVE  ;
+0:del  VERB_BACK_POTENTIAL_L  ;
+0:del  VERB_BACK_PASSIVE_L  ;
+0:del  VERB_BACK_PASSIVE  ;
+0:del  VERB_BACK_TUPCP_L  ;
+0:tele  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_SÄPSÄHDELLÄ
+!!€gt-norm:  Verbs 67 front l d~t
+!!€  säpsähdellä: säpsähdellä+V+Act+InfA+Sg+Lat # wake
+0:dell  VERB_FRONT_AINF  ;
+0:dell  VERB_FRONT_EINF  ;
+0:tele  VERB_FRONT_WEAK_PRESENT  ;
+0:tele  VERB_FRONT_STRONG_PRESENT  ;
+0:tele  VERB_FRONT_3SG_E  ;
+0:tel  VERB_FRONT_WEAK_PAST  ;
+0:tel  VERB_FRONT_STRONG_PAST  ;
+0:tel  VERB_FRONT_CONDITIONAL  ;
+0:del  VERB_FRONT_IMPERATIVE  ;
+0:del  VERB_FRONT_POTENTIAL_L  ;
+0:del  VERB_FRONT_PASSIVE_L  ;
+0:del  VERB_FRONT_PASSIVE  ;
+0:del  VERB_FRONT_TUPCP_L  ;
+0:tele  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_OMMELLA
+!!€gt-norm:  Verbs 67 back l m~p
+!!€  ommella: ommella+V+Act+InfA+Sg+Lat # sow
+0:mell  VERB_BACK_AINF  ;
+0:mell  VERB_BACK_EINF  ;
+0:pele  VERB_BACK_WEAK_PRESENT  ;
+0:pele  VERB_BACK_STRONG_PRESENT  ;
+0:pele  VERB_BACK_3SG_E  ;
+0:pel  VERB_BACK_WEAK_PAST  ;
+0:pel  VERB_BACK_STRONG_PAST  ;
+0:pel  VERB_BACK_CONDITIONAL  ;
+0:mel  VERB_BACK_IMPERATIVE  ;
+0:mel  VERB_BACK_POTENTIAL_L  ;
+0:mel  VERB_BACK_PASSIVE_L  ;
+0:mel  VERB_BACK_PASSIVE  ;
+0:mel  VERB_BACK_TUPCP_L  ;
+0:pele  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_VAELLELLA
+!!€gt-norm:  Verbs 67 back l l~t
+!!€  vaellella: vaellella+V+Act+InfA+Sg+Lat # wander
+0:lell  VERB_BACK_AINF  ;
+0:lell  VERB_BACK_EINF  ;
+0:tele  VERB_BACK_WEAK_PRESENT  ;
+0:tele  VERB_BACK_STRONG_PRESENT  ;
+0:tele  VERB_BACK_3SG_E  ;
+0:tel  VERB_BACK_WEAK_PAST  ;
+0:tel  VERB_BACK_STRONG_PAST  ;
+0:tel  VERB_BACK_CONDITIONAL  ;
+0:lel  VERB_BACK_IMPERATIVE  ;
+0:lel  VERB_BACK_POTENTIAL_L  ;
+0:lel  VERB_BACK_PASSIVE_L  ;
+0:lel  VERB_BACK_PASSIVE  ;
+0:lel  VERB_BACK_TUPCP_L  ;
+0:tele  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_KIILLELLÄ
+!!€gt-norm:  Verbs 67 frpnt l l~t
+!!€  kiillellä: kiillellä+V+Act+InfA+Sg+Lat # sparkle
+0:lell  VERB_FRONT_AINF  ;
+0:lell  VERB_FRONT_EINF  ;
+0:tele  VERB_FRONT_WEAK_PRESENT  ;
+0:tele  VERB_FRONT_STRONG_PRESENT  ;
+0:tele  VERB_FRONT_3SG_E  ;
+0:tel  VERB_FRONT_WEAK_PAST  ;
+0:tel  VERB_FRONT_STRONG_PAST  ;
+0:tel  VERB_FRONT_CONDITIONAL  ;
+0:lel  VERB_FRONT_IMPERATIVE  ;
+0:lel  VERB_FRONT_POTENTIAL_L  ;
+0:lel  VERB_FRONT_PASSIVE_L  ;
+0:lel  VERB_FRONT_PASSIVE  ;
+0:lel  VERB_FRONT_TUPCP_L  ;
+0:tele  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_KOMENNELLA
+!!€gt-norm:  Verbs 67 back l n~t
+!!€  komennella: komennella+V+Act+InfA+Sg+Lat # boss
+0:nell  VERB_BACK_AINF  ;
+0:nell  VERB_BACK_EINF  ;
+0:tele  VERB_BACK_WEAK_PRESENT  ;
+0:tele  VERB_BACK_STRONG_PRESENT  ;
+0:tele  VERB_BACK_3SG_E  ;
+0:tel  VERB_BACK_WEAK_PAST  ;
+0:tel  VERB_BACK_STRONG_PAST  ;
+0:tel  VERB_BACK_CONDITIONAL  ;
+0:nel  VERB_BACK_IMPERATIVE  ;
+0:nel  VERB_BACK_POTENTIAL_L  ;
+0:nel  VERB_BACK_PASSIVE_L  ;
+0:nel  VERB_BACK_PASSIVE  ;
+0:nel  VERB_BACK_TUPCP_L  ;
+0:tele  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_KÄÄNNELLÄ
+!!€gt-norm:  Verbs 67 front l n~t
+!!€  käännellä: käännellä+V+Act+InfA+Sg+Lat # turn
+0:nell  VERB_FRONT_AINF  ;
+0:nell  VERB_FRONT_EINF  ;
+0:tele  VERB_FRONT_WEAK_PRESENT  ;
+0:tele  VERB_FRONT_STRONG_PRESENT  ;
+0:tele  VERB_FRONT_3SG_E  ;
+0:tel  VERB_FRONT_WEAK_PAST  ;
+0:tel  VERB_FRONT_STRONG_PAST  ;
+0:tel  VERB_FRONT_CONDITIONAL  ;
+0:nel  VERB_FRONT_IMPERATIVE  ;
+0:nel  VERB_FRONT_POTENTIAL_L  ;
+0:nel  VERB_FRONT_PASSIVE_L  ;
+0:nel  VERB_FRONT_PASSIVE  ;
+0:nel  VERB_FRONT_TUPCP_L  ;
+0:tele  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_NAKERRELLA
+!!€gt-norm:  Verbs 67 back l r~t
+!!€  nakerrella: nakerrella+V+Act+InfA+Sg+Lat # bite
+0:rell  VERB_BACK_AINF  ;
+0:rell  VERB_BACK_EINF  ;
+0:tele  VERB_BACK_WEAK_PRESENT  ;
+0:tele  VERB_BACK_STRONG_PRESENT  ;
+0:tele  VERB_BACK_3SG_E  ;
+0:tel  VERB_BACK_WEAK_PAST  ;
+0:tel  VERB_BACK_STRONG_PAST  ;
+0:tel  VERB_BACK_CONDITIONAL  ;
+0:rel  VERB_BACK_IMPERATIVE  ;
+0:rel  VERB_BACK_POTENTIAL_L  ;
+0:rel  VERB_BACK_PASSIVE_L  ;
+0:rel  VERB_BACK_PASSIVE  ;
+0:rel  VERB_BACK_TUPCP_L  ;
+0:tele  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_KIHERRELLÄ
+!!€gt-norm:  Verbs 67 front l r~t
+!!€  kiherrellä: kiherrellä+V+Act+InfA+Sg+Lat # giggle
+0:rell  VERB_FRONT_AINF  ;
+0:rell  VERB_FRONT_EINF  ;
+0:tele  VERB_FRONT_WEAK_PRESENT  ;
+0:tele  VERB_FRONT_STRONG_PRESENT  ;
+0:tele  VERB_FRONT_3SG_E  ;
+0:tel  VERB_FRONT_WEAK_PAST  ;
+0:tel  VERB_FRONT_STRONG_PAST  ;
+0:tel  VERB_FRONT_CONDITIONAL  ;
+0:rel  VERB_FRONT_IMPERATIVE  ;
+0:rel  VERB_FRONT_POTENTIAL_L  ;
+0:rel  VERB_FRONT_PASSIVE_L  ;
+0:rel  VERB_FRONT_PASSIVE  ;
+0:rel  VERB_FRONT_TUPCP_L  ;
+0:tele  VERB_FRONT_DERIV_PCPS  ;
+
+!!  !tse stuff
+!!  Some verbs have possible optional heteroclitic indicative stems:
+
+LEXICON VERB_ISÄNNÖIDÄ
+!!€gt-norm:  Verbs 68 front
+!!€  isännöidä: isännöidä+V+Act+InfA+Sg+Lat # host
+0:id  VERB_FRONT_AINF  ;
+0:id  VERB_FRONT_EINF  ;
+0:i  VERB_FRONT_WEAK_PRESENT  ;
+0:itse  VERB_FRONT_WEAK_PRESENT  ;
+0+Use/NG:i  VERB_FRONT_STRONG_PRESENT  ;
+0+Use/NG:itse  VERB_FRONT_STRONG_PRESENT  ;
+0  VERB_FRONT_3SG_I  ;
+0:itse  VERB_FRONT_3SG_E  ;
+0  VERB_FRONT_WEAK_PAST  ;
+0+Use/NG:its  VERB_FRONT_WEAK_PAST  ;
+0  VERB_FRONT_STRONG_PAST  ;
+0+Use/NG:its  VERB_FRONT_STRONG_PAST  ;
+0  VERB_FRONT_CONDITIONAL  ;
+0:i  VERB_FRONT_IMPERATIVE  ;
+0:i  VERB_FRONT_POTENTIAL_N  ;
+0:i  VERB_FRONT_PASSIVE_D  ;
+0:i  VERB_FRONT_PASSIVE  ;
+0:i  VERB_FRONT_TUPCP_D  ;
+0:i  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_MELLAKOIDA
+!!€gt-norm:  Verbs 68 back
+!!€  mellakoida: mellakoida+V+Act+InfA+Sg+Lat # riot
+0:id  VERB_BACK_AINF  ;
+0:id  VERB_BACK_EINF  ;
+0:i  VERB_BACK_WEAK_PRESENT  ;
+0+Use/NG:itse  VERB_BACK_WEAK_PRESENT  ;
+0:i  VERB_BACK_STRONG_PRESENT  ;
+0+Use/NG:itse  VERB_BACK_STRONG_PRESENT  ;
+0  VERB_BACK_3SG_I  ;
+0:itse  VERB_BACK_3SG_E  ;
+0  VERB_BACK_WEAK_PAST  ;
+0+Use/NG:its  VERB_BACK_WEAK_PAST  ;
+0  VERB_BACK_STRONG_PAST  ;
+0+Use/NG:its  VERB_BACK_STRONG_PAST  ;
+0  VERB_BACK_CONDITIONAL  ;
+0:i  VERB_BACK_IMPERATIVE  ;
+0:i  VERB_BACK_POTENTIAL_N  ;
+0:i  VERB_BACK_PASSIVE_D  ;
+0:i  VERB_BACK_PASSIVE  ;
+0:i  VERB_BACK_TUPCP_D  ;
+0:i  VERB_BACK_DERIV_PCPS  ;
+
+!!  In these stems the tse formed stem is only one.
+
+LEXICON VERB_PALKITA
+!!€gt-norm:  Verbs 69 back
+!!€  palkita: palkita+V+Act+InfA+Sg+Lat # reward
+0:t  VERB_BACK_AINF  ;
+0:t  VERB_BACK_EINF  ;
+0:tse  VERB_BACK_WEAK_PRESENT  ;
+0:tse  VERB_BACK_STRONG_PRESENT  ;
+0:tse  VERB_BACK_3SG_E  ;
+0:ts  VERB_BACK_WEAK_PAST  ;
+0:ts  VERB_BACK_STRONG_PAST  ;
+0:ts  VERB_BACK_CONDITIONAL  ;
+0:t  VERB_BACK_IMPERATIVE  ;
+0:n  VERB_BACK_POTENTIAL_N  ;
+0  VERB_BACK_PASSIVE_T  ;
+0:t  VERB_BACK_PASSIVE  ;
+0:t  VERB_BACK_TUPCP_0  ;
+0:tse  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_MERKITÄ
+!!€gt-norm:  Verbs 69 front
+!!€  merkitä: merkitä+V+Act+InfA+Sg+Lat # mark
+0:t  VERB_FRONT_AINF  ;
+0:t  VERB_FRONT_EINF  ;
+0:tse  VERB_FRONT_WEAK_PRESENT  ;
+0:tse  VERB_FRONT_STRONG_PRESENT  ;
+0:tse  VERB_FRONT_3SG_E  ;
+0:ts  VERB_FRONT_WEAK_PAST  ;
+0:ts  VERB_FRONT_STRONG_PAST  ;
+0:ts  VERB_FRONT_CONDITIONAL  ;
+0:t  VERB_FRONT_IMPERATIVE  ;
+0:n  VERB_FRONT_POTENTIAL_N  ;
+0  VERB_FRONT_PASSIVE_T  ;
+0:t  VERB_FRONT_PASSIVE  ;
+0:t  VERB_FRONT_TUPCP_0  ;
+0:tse  VERB_FRONT_DERIV_PCPS  ;
+
+!!  Few words have special consonant cluster simplification for ks forms.
+
+LEXICON VERB_JUOSTA
+!!€gt-norm:  Verbs 70 back
+!!€  juosta: juosta+V+Act+InfA+Sg+Lat # run
+0:st  VERB_BACK_AINF  ;
+0:st  VERB_BACK_EINF  ;
+0:kse  VERB_BACK_WEAK_PRESENT  ;
+0:kse  VERB_BACK_STRONG_PRESENT  ;
+0:kse  VERB_BACK_3SG_E  ;
+0:ks  VERB_BACK_WEAK_PAST  ;
+0:ks  VERB_BACK_STRONG_PAST  ;
+0:ks  VERB_BACK_CONDITIONAL  ;
+0:s  VERB_BACK_IMPERATIVE  ;
+0:s  VERB_BACK_POTENTIAL_S  ;
+0:s  VERB_BACK_PASSIVE_T  ;
+0:s  VERB_BACK_PASSIVE  ;
+0:s  VERB_BACK_TUPCP_STRONG  ;
+0:kse  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_PIESTÄ
+!!€gt-norm:  Verbs 70 front
+!!€  piestä: piestä+V+Act+InfA+Sg+Lat # spank
+0:st  VERB_FRONT_AINF  ;
+0:st  VERB_FRONT_EINF  ;
+0:kse  VERB_FRONT_WEAK_PRESENT  ;
+0:kse  VERB_FRONT_STRONG_PRESENT  ;
+0:kse  VERB_FRONT_3SG_E  ;
+0:ks  VERB_FRONT_WEAK_PAST  ;
+0:ks  VERB_FRONT_STRONG_PAST  ;
+0:ks  VERB_BACK_CONDITIONAL  ;
+0:s  VERB_FRONT_IMPERATIVE  ;
+0:s  VERB_FRONT_POTENTIAL_S  ;
+0:s  VERB_FRONT_PASSIVE_T  ;
+0:s  VERB_FRONT_PASSIVE  ;
+0:s  VERB_FRONT_TUPCP_0  ;
+0:kse  VERB_FRONT_DERIV_PCPS  ;
+:s  VERB_FRONT_OPTATIVE_S_ARCHAIC  ;
+
+
+!!  nähdä has special h:k variation.
+
+LEXICON VERB_NÄHDÄ
+!!€gt-norm:  Verbs 71
+!!€  nähdä: nähdä+V+Act+InfA+Sg+Lat # see
+0:hd  VERB_FRONT_AINF  ;
+0:hd  VERB_FRONT_EINF  ;
+0:e  VERB_FRONT_WEAK_PRESENT  ;
+0:ke  VERB_FRONT_STRONG_PRESENT  ;
+0:ke  VERB_FRONT_3SG_E  ;
+0  VERB_FRONT_WEAK_PAST  ;
+0:k  VERB_FRONT_STRONG_PAST  ;
+0:k  VERB_FRONT_CONDITIONAL  ;
+0:h  VERB_FRONT_IMPERATIVE  ;
+0:h  VERB_FRONT_POTENTIAL_N  ;
+0:h  VERB_FRONT_PASSIVE_D  ;
+0:h  VERB_FRONT_PASSIVE  ;
+0:h  VERB_FRONT_TUPCP_D  ;
+0:ke  VERB_FRONT_DERIV_PCPS  ;
+
+!!  !Verbs with -ne- stems
+
+LEXICON VERB_KARHETA
+!!€gt-norm:  Verbs 72 back
+!!€  karheta: karheta+V+Act+InfA+Sg+Lat 
+0:t  VERB_BACK_AINF  ;
+0:t  VERB_BACK_EINF  ;
+0:ne  VERB_BACK_WEAK_PRESENT  ;
+0:ne  VERB_BACK_STRONG_PRESENT  ;
+0:ne  VERB_BACK_3SG_E  ;
+0:n  VERB_BACK_WEAK_PAST  ;
+0:n  VERB_BACK_STRONG_PAST  ;
+0:n  VERB_BACK_CONDITIONAL  ;
+0:t  VERB_BACK_IMPERATIVE  ;
+0:n  VERB_BACK_POTENTIAL_N  ;
+0  VERB_BACK_PASSIVE_T  ;
+0:t  VERB_BACK_PASSIVE  ;
+0:t  VERB_BACK_TUPCP_0  ;
+0:ne  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_VÄHETÄ
+!!€gt-norm:  Verbs 72 rfont
+!!€  vähetä: vähetä+V+Act+InfA+Sg+Lat # lessen
+0:t  VERB_FRONT_AINF  ;
+0:t  VERB_FRONT_EINF  ;
+0:ne  VERB_FRONT_WEAK_PRESENT  ;
+0:ne  VERB_FRONT_STRONG_PRESENT  ;
+0:ne  VERB_FRONT_3SG_E  ;
+0:n  VERB_FRONT_WEAK_PAST  ;
+0:n  VERB_FRONT_STRONG_PAST  ;
+0:n  VERB_FRONT_CONDITIONAL  ;
+0:t  VERB_FRONT_IMPERATIVE  ;
+0:n  VERB_FRONT_POTENTIAL_N  ;
+0  VERB_FRONT_PASSIVE_T  ;
+0:t  VERB_FRONT_PASSIVE  ;
+0:t  VERB_FRONT_TUPCP_0  ;
+0:ne  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_NIUKETA
+!!€gt-norm:  Verbs 72 back 0~k
+!!€  niuketa: niuketa+V+Act+InfA+Sg+Lat # tighten
+0:et  VERB_BACK_AINF  ;
+0:et  VERB_BACK_EINF  ;
+0:kene  VERB_BACK_WEAK_PRESENT  ;
+0:kene  VERB_BACK_STRONG_PRESENT  ;
+0:kene  VERB_BACK_3SG_E  ;
+0:ken  VERB_BACK_WEAK_PAST  ;
+0:ken  VERB_BACK_STRONG_PAST  ;
+0:ken  VERB_BACK_CONDITIONAL  ;
+0:et  VERB_BACK_IMPERATIVE  ;
+0:en  VERB_BACK_POTENTIAL_N  ;
+0:e  VERB_BACK_PASSIVE_T  ;
+0:et  VERB_BACK_PASSIVE  ;
+0:et  VERB_BACK_TUPCP_0  ;
+0:kene  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_JYRKETÄ
+!!€gt-norm:  Verbs 72 front 0~k
+!!€  jyrketä: jyrketä+V+Act+InfA+Sg+Lat 
+0:et  VERB_FRONT_AINF  ;
+0:et  VERB_FRONT_EINF  ;
+0:kene  VERB_FRONT_WEAK_PRESENT  ;
+0:kene  VERB_FRONT_STRONG_PRESENT  ;
+0:kene  VERB_FRONT_3SG_E  ;
+0:ken  VERB_FRONT_WEAK_PAST  ;
+0:ken  VERB_FRONT_STRONG_PAST  ;
+0:ken  VERB_FRONT_CONDITIONAL  ;
+0:et  VERB_FRONT_IMPERATIVE  ;
+0:en  VERB_FRONT_POTENTIAL_N  ;
+0:e  VERB_FRONT_PASSIVE_T  ;
+0:et  VERB_FRONT_PASSIVE  ;
+0:et  VERB_FRONT_TUPCP_0  ;
+0:kene  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_HAPATA
+!!€gt-norm:  Verbs 72 back 0~p
+!!€  hapata: hapata+V+Act+InfA+Sg+Lat # ensour
+0:at  VERB_BACK_AINF  ;
+0:at  VERB_BACK_EINF  ;
+0:pane  VERB_BACK_WEAK_PRESENT  ;
+0:pane  VERB_BACK_STRONG_PRESENT  ;
+0:pane  VERB_BACK_3SG_E  ;
+0:pan  VERB_BACK_WEAK_PAST  ;
+0:pan  VERB_BACK_STRONG_PAST  ;
+0:pan  VERB_BACK_CONDITIONAL  ;
+0:at  VERB_BACK_IMPERATIVE  ;
+0:an  VERB_BACK_POTENTIAL_N  ;
+0:a  VERB_BACK_PASSIVE_T  ;
+0:at  VERB_BACK_PASSIVE  ;
+0:at  VERB_BACK_TUPCP_0  ;
+0:pane  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_SUPETA
+!!€gt-norm:  Verbs 72 front 0~p
+!!€  supeta: supeta+V+Act+InfA+Sg+Lat # tighten
+0:et  VERB_BACK_AINF  ;
+0:et  VERB_BACK_EINF  ;
+0:pene  VERB_BACK_WEAK_PRESENT  ;
+0:pene  VERB_BACK_STRONG_PRESENT  ;
+0:pene  VERB_BACK_3SG_E  ;
+0:pen  VERB_BACK_WEAK_PAST  ;
+0:pen  VERB_BACK_STRONG_PAST  ;
+0:pen  VERB_BACK_CONDITIONAL  ;
+0:et  VERB_BACK_IMPERATIVE  ;
+0:en  VERB_BACK_POTENTIAL_N  ;
+0:e  VERB_BACK_PASSIVE_T  ;
+0:et  VERB_BACK_PASSIVE  ;
+0:et  VERB_BACK_TUPCP_0  ;
+0:pene  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_TYLPETÄ
+!!€gt-norm:  Verbs 72 front 0~p
+!!€  tylpetä: tylpetä+V+Act+InfA+Sg+Lat # dull
+0:et  VERB_FRONT_AINF  ;
+0:et  VERB_FRONT_EINF  ;
+0:pene  VERB_FRONT_WEAK_PRESENT  ;
+0:pene  VERB_FRONT_STRONG_PRESENT  ;
+0:pene  VERB_FRONT_3SG_E  ;
+0:pen  VERB_FRONT_WEAK_PAST  ;
+0:pen  VERB_FRONT_STRONG_PAST  ;
+0:pen  VERB_FRONT_CONDITIONAL  ;
+0:et  VERB_FRONT_IMPERATIVE  ;
+0:en  VERB_FRONT_POTENTIAL_N  ;
+0:e  VERB_FRONT_PASSIVE_T  ;
+0:et  VERB_FRONT_PASSIVE  ;
+0:et  VERB_FRONT_TUPCP_0  ;
+0:pene  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_HELPOTA
+!!€gt-norm:  Verbs 72 back 0~p o
+!!€  helpota: helpota+V+Act+InfA+Sg+Lat # ease
+0:ot  VERB_BACK_AINF  ;
+0:ot  VERB_BACK_EINF  ;
+0:pone  VERB_BACK_WEAK_PRESENT  ;
+0:pone  VERB_BACK_STRONG_PRESENT  ;
+0:pone  VERB_BACK_3SG_E  ;
+0:pon  VERB_BACK_WEAK_PAST  ;
+0:pon  VERB_BACK_STRONG_PAST  ;
+0:pon  VERB_BACK_CONDITIONAL  ;
+0:ot  VERB_BACK_IMPERATIVE  ;
+0:on  VERB_BACK_POTENTIAL_N  ;
+0:o  VERB_BACK_PASSIVE_T  ;
+0:ot  VERB_BACK_PASSIVE  ;
+0:ot  VERB_BACK_TUPCP_0  ;
+0:pone  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_LOITOTA
+!!€gt-norm:  Verbs 72 back 0~t
+!!€  loitota: loitota+V+Act+InfA+Sg+Lat # distance
+0:ot  VERB_BACK_AINF  ;
+0:ot  VERB_BACK_EINF  ;
+0:tone  VERB_BACK_WEAK_PRESENT  ;
+0:tone  VERB_BACK_STRONG_PRESENT  ;
+0:tone  VERB_BACK_3SG_E  ;
+0:ton  VERB_BACK_WEAK_PAST  ;
+0:ton  VERB_BACK_STRONG_PAST  ;
+0:ton  VERB_BACK_CONDITIONAL  ;
+0:ot  VERB_BACK_IMPERATIVE  ;
+0:on  VERB_BACK_POTENTIAL_N  ;
+0:o  VERB_BACK_PASSIVE_T  ;
+0:ot  VERB_BACK_PASSIVE  ;
+0:ot  VERB_BACK_TUPCP_0  ;
+0:tone  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_ULOTA
+!!€gt-norm:  Verbs 72 back 0~k o
+!!€  ulota: ulota+V+Act+InfA+Sg+Lat # outen
+0:ot  VERB_BACK_AINF  ;
+0:ot  VERB_BACK_EINF  ;
+0:kone  VERB_BACK_WEAK_PRESENT  ;
+0:kone  VERB_BACK_STRONG_PRESENT  ;
+0:kone  VERB_BACK_3SG_E  ;
+0:kon  VERB_BACK_WEAK_PAST  ;
+0:kon  VERB_BACK_STRONG_PAST  ;
+0:kon  VERB_BACK_CONDITIONAL  ;
+0:ot  VERB_BACK_IMPERATIVE  ;
+0:on  VERB_BACK_POTENTIAL_N  ;
+0:o  VERB_BACK_PASSIVE_T  ;
+0:ot  VERB_BACK_PASSIVE  ;
+0:ot  VERB_BACK_TUPCP_0  ;
+0:kone  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_KAVETA
+!!€gt-norm:  Verbs 72 back v~p
+!!€  kaveta: kaveta+V+Act+InfA+Sg+Lat # tighten
+0:vet  VERB_BACK_AINF  ;
+0:vet  VERB_BACK_EINF  ;
+0:pene  VERB_BACK_WEAK_PRESENT  ;
+0:pene  VERB_BACK_STRONG_PRESENT  ;
+0:pene  VERB_BACK_3SG_E  ;
+0:pen  VERB_BACK_WEAK_PAST  ;
+0:pen  VERB_BACK_STRONG_PAST  ;
+0:pen  VERB_BACK_CONDITIONAL  ;
+0:vet  VERB_BACK_IMPERATIVE  ;
+0:ven  VERB_BACK_POTENTIAL_N  ;
+0:ve  VERB_BACK_PASSIVE_T  ;
+0:vet  VERB_BACK_PASSIVE  ;
+0:vet  VERB_BACK_TUPCP_0  ;
+0:pene  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_MÄDÄTÄ
+!!€gt-norm:  Verbs 72 front d~t
+!!€  mädätä: mädätä+V+Act+InfA+Sg+Lat # rot
+0:dät  VERB_FRONT_AINF  ;
+0:dät  VERB_FRONT_EINF  ;
+0:täne  VERB_FRONT_WEAK_PRESENT  ;
+0:täne  VERB_FRONT_STRONG_PRESENT  ;
+0:täne  VERB_FRONT_3SG_E  ;
+0:tän  VERB_FRONT_WEAK_PAST  ;
+0:tän  VERB_FRONT_STRONG_PAST  ;
+0:tän  VERB_FRONT_CONDITIONAL  ;
+0:dät  VERB_FRONT_IMPERATIVE  ;
+0:dän  VERB_FRONT_POTENTIAL_N  ;
+0:dä  VERB_FRONT_PASSIVE_T  ;
+0:dät  VERB_FRONT_PASSIVE  ;
+0:dät  VERB_FRONT_TUPCP_0  ;
+0:täne  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_LEUDOTA
+!!€gt-norm:  Verbs 72 back d~t
+!!€  leudota: leudota+V+Act+InfA+Sg+Lat 
+0:dot  VERB_BACK_AINF  ;
+0:dot  VERB_BACK_EINF  ;
+0:tone  VERB_BACK_WEAK_PRESENT  ;
+0:tone  VERB_BACK_STRONG_PRESENT  ;
+0:tone  VERB_BACK_3SG_E  ;
+0:ton  VERB_BACK_WEAK_PAST  ;
+0:ton  VERB_BACK_STRONG_PAST  ;
+0:ton  VERB_BACK_CONDITIONAL  ;
+0:dot  VERB_BACK_IMPERATIVE  ;
+0:don  VERB_BACK_POTENTIAL_N  ;
+0:do  VERB_BACK_PASSIVE_T  ;
+0:dot  VERB_BACK_PASSIVE  ;
+0:dot  VERB_BACK_TUPCP_0  ;
+0:tone  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_PIDETÄ
+!!€gt-norm:  Verbs 72 front d~t e
+!!€  pidetä: pidetä+V+Act+InfA+Sg+Lat # lengthen
+0:det  VERB_FRONT_AINF  ;
+0:det  VERB_FRONT_EINF  ;
+0:tene  VERB_FRONT_WEAK_PRESENT  ;
+0:tene  VERB_FRONT_STRONG_PRESENT  ;
+0:tene  VERB_FRONT_3SG_E  ;
+0:ten  VERB_FRONT_WEAK_PAST  ;
+0:ten  VERB_FRONT_STRONG_PAST  ;
+0:ten  VERB_FRONT_CONDITIONAL  ;
+0:det  VERB_FRONT_IMPERATIVE  ;
+0:den  VERB_FRONT_POTENTIAL_N  ;
+0:de  VERB_FRONT_PASSIVE_T  ;
+0:det  VERB_FRONT_PASSIVE  ;
+0:det  VERB_FRONT_TUPCP_0  ;
+0:det  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_LÄMMETÄ
+!!€gt-norm:  Verbs 72 front m~p 
+!!€  lämmetä: lämmetä+V+Act+InfA+Sg+Lat # warm
+0:met  VERB_FRONT_AINF  ;
+0:met  VERB_FRONT_EINF  ;
+0:pene  VERB_FRONT_WEAK_PRESENT  ;
+0:pene  VERB_FRONT_STRONG_PRESENT  ;
+0:pene  VERB_FRONT_3SG_E  ;
+0:pen  VERB_FRONT_WEAK_PAST  ;
+0:pen  VERB_FRONT_STRONG_PAST  ;
+0:pen  VERB_FRONT_CONDITIONAL  ;
+0:met  VERB_FRONT_IMPERATIVE  ;
+0:men  VERB_FRONT_POTENTIAL_N  ;
+0:me  VERB_FRONT_PASSIVE_T  ;
+0:met  VERB_FRONT_PASSIVE  ;
+0:met  VERB_FRONT_TUPCP_0  ;
+0:pene  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_KIINNETÄ
+!!€gt-norm:  Verbs 72 front n~t
+!!€  kiinnetä: kiinnetä+V+Act+InfA+Sg+Lat # firm
+0:net  VERB_FRONT_AINF  ;
+0:net  VERB_FRONT_EINF  ;
+0:tene  VERB_FRONT_WEAK_PRESENT  ;
+0:tene  VERB_FRONT_STRONG_PRESENT  ;
+0:tene  VERB_FRONT_3SG_E  ;
+0:ten  VERB_FRONT_WEAK_PAST  ;
+0:ten  VERB_FRONT_STRONG_PAST  ;
+0:ten  VERB_FRONT_CONDITIONAL  ;
+0:net  VERB_FRONT_IMPERATIVE  ;
+0:nen  VERB_FRONT_POTENTIAL_N  ;
+0:ne  VERB_FRONT_PASSIVE_T  ;
+0:net  VERB_FRONT_PASSIVE  ;
+0:net  VERB_FRONT_TUPCP_0  ;
+0:tene  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_JULJETA
+!!€gt-norm:  Verbs 72 back j~k
+!!€  juljeta: juljeta+V+Act+InfA+Sg+Lat # dare
+0:jet  VERB_BACK_AINF  ;
+0:jet  VERB_BACK_EINF  ;
+0:kene  VERB_BACK_WEAK_PRESENT  ;
+0:kene  VERB_BACK_STRONG_PRESENT  ;
+0:kene  VERB_BACK_3SG_E  ;
+0:ken  VERB_BACK_WEAK_PAST  ;
+0:ken  VERB_BACK_STRONG_PAST  ;
+0:ken  VERB_BACK_CONDITIONAL  ;
+0:jet  VERB_BACK_IMPERATIVE  ;
+0:jen  VERB_BACK_POTENTIAL_N  ;
+0:je  VERB_BACK_PASSIVE_T  ;
+0:jet  VERB_BACK_PASSIVE  ;
+0:jet  VERB_BACK_TUPCP_0  ;
+0:kene  VERB_BACK_DERIV_PCPS  ;
+
+!!  !Vowel lengthening(?) stems
+
+LEXICON VERB_ARVATA
+!!€gt-norm:  Verbs 73 back
+!!€  arvata: arvata+V+Act+InfA+Sg+Lat # guess
+0:t  VERB_BACK_AINF  ;
+0:t  VERB_BACK_EINF  ;
+0:a  VERB_BACK_WEAK_PRESENT  ;
+0:a  VERB_BACK_STRONG_PRESENT  ;
+0  VERB_BACK_3SG_A  ;
+0:s  VERB_BACK_WEAK_PAST  ;
+0:s  VERB_BACK_STRONG_PAST  ;
+0  VERB_BACK_CONDITIONAL  ;
+0:t  VERB_BACK_IMPERATIVE  ;
+0:n  VERB_BACK_POTENTIAL_N  ;
+0  VERB_BACK_PASSIVE_T  ;
+0:t  VERB_BACK_PASSIVE  ;
+0:t  VERB_BACK_TUPCP_0  ;
+0:a  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_YNNÄTÄ
+!!€gt-norm:  Verbs 73 front
+!!€  ynnätä: ynnätä+V+Act+InfA+Sg+Lat # add
+0:t  VERB_FRONT_AINF  ;
+0:t  VERB_FRONT_EINF  ;
+0:ä  VERB_FRONT_WEAK_PRESENT  ;
+0:ä  VERB_FRONT_STRONG_PRESENT  ;
+0  VERB_FRONT_3SG_Ä  ;
+0:s  VERB_FRONT_WEAK_PAST  ;
+0:s  VERB_FRONT_STRONG_PAST  ;
+0  VERB_FRONT_CONDITIONAL  ;
+0:t  VERB_FRONT_IMPERATIVE  ;
+0:n  VERB_FRONT_POTENTIAL_N  ;
+0  VERB_FRONT_PASSIVE_T  ;
+0:t  VERB_FRONT_PASSIVE  ;
+0:t  VERB_FRONT_TUPCP_0  ;
+0:ä  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_MORKATA
+!!€gt-norm:  Verbs 73 back 0~k
+!!€  morkata: morkata+V+Act+InfA+Sg+Lat # blame
+0:at  VERB_BACK_AINF  ;
+0:at  VERB_BACK_EINF  ;
+0:kaa  VERB_BACK_WEAK_PRESENT  ;
+0:kaa  VERB_BACK_STRONG_PRESENT  ;
+0:ka  VERB_BACK_3SG_A  ;
+0:kas  VERB_BACK_WEAK_PAST  ;
+0:kas  VERB_BACK_STRONG_PAST  ;
+0:ka  VERB_BACK_CONDITIONAL  ;
+0:at  VERB_BACK_IMPERATIVE  ;
+0:an  VERB_BACK_POTENTIAL_N  ;
+0:a  VERB_BACK_PASSIVE_T  ;
+0:at  VERB_BACK_PASSIVE  ;
+0:at  VERB_BACK_TUPCP_0  ;
+0:kaa  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_YÖKÄTÄ
+!!€gt-norm:  Verbs 73 front 0~k
+!!€  yökätä: yökätä+V+Act+InfA+Sg+Lat # yuck
+0:ät  VERB_FRONT_AINF  ;
+0:ät  VERB_FRONT_EINF  ;
+0:kää  VERB_FRONT_WEAK_PRESENT  ;
+0:kää  VERB_FRONT_STRONG_PRESENT  ;
+0:kä  VERB_FRONT_3SG_Ä  ;
+0:käs  VERB_FRONT_WEAK_PAST  ;
+0:käs  VERB_FRONT_STRONG_PAST  ;
+0:kä  VERB_FRONT_CONDITIONAL  ;
+0:ät  VERB_FRONT_IMPERATIVE  ;
+0:än  VERB_FRONT_POTENTIAL_N  ;
+0:ä  VERB_FRONT_PASSIVE_T  ;
+0:ät  VERB_FRONT_PASSIVE  ;
+0:ät  VERB_FRONT_TUPCP_0  ;
+0:kää  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_SIEPATA
+!!€gt-norm:  Verbs 73 back 0~p
+!!€  siepata: siepata+V+Act+InfA+Sg+Lat # kidnap
+0:at  VERB_BACK_AINF  ;
+0:at  VERB_BACK_EINF  ;
+0:paa  VERB_BACK_WEAK_PRESENT  ;
+0:paa  VERB_BACK_STRONG_PRESENT  ;
+0:pa  VERB_BACK_3SG_A  ;
+0:pas  VERB_BACK_WEAK_PAST  ;
+0:pas  VERB_BACK_STRONG_PAST  ;
+0:pa  VERB_BACK_CONDITIONAL  ;
+0:at  VERB_BACK_IMPERATIVE  ;
+0:an  VERB_BACK_POTENTIAL_N  ;
+0:a  VERB_BACK_PASSIVE_T  ;
+0:at  VERB_BACK_PASSIVE  ;
+0:at  VERB_BACK_TUPCP_0  ;
+0:paa  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_VÄLPÄTÄ
+!!€gt-norm:  Verbs 73 frot 0~p
+!!€  välpätä: välpätä+V+Act+InfA+Sg+Lat 
+0:ät  VERB_FRONT_AINF  ;
+0:ät  VERB_FRONT_EINF  ;
+0:pää  VERB_FRONT_WEAK_PRESENT  ;
+0:pää  VERB_FRONT_STRONG_PRESENT  ;
+0:pä  VERB_FRONT_3SG_Ä  ;
+0:päs  VERB_FRONT_WEAK_PAST  ;
+0:päs  VERB_FRONT_STRONG_PAST  ;
+0:pä  VERB_FRONT_CONDITIONAL  ;
+0:ät  VERB_FRONT_IMPERATIVE  ;
+0:än  VERB_FRONT_POTENTIAL_N  ;
+0:ä  VERB_FRONT_PASSIVE_T  ;
+0:ät  VERB_FRONT_PASSIVE  ;
+0:ät  VERB_FRONT_TUPCP_0  ;
+0:pää  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_LUNTATA
+!!€gt-norm:  Verbs 73 back 0~t
+!!€  luntata: luntata+V+Act+InfA+Sg+Lat # cheat
+0:at  VERB_BACK_AINF  ;
+0:at  VERB_BACK_EINF  ;
+0:taa  VERB_BACK_WEAK_PRESENT  ;
+0:taa  VERB_BACK_STRONG_PRESENT  ;
+0:ta  VERB_BACK_3SG_A  ;
+0:tas  VERB_BACK_WEAK_PAST  ;
+0:tas  VERB_BACK_STRONG_PAST  ;
+0:ta  VERB_BACK_CONDITIONAL  ;
+0:at  VERB_BACK_IMPERATIVE  ;
+0:an  VERB_BACK_POTENTIAL_N  ;
+0:a  VERB_BACK_PASSIVE_T  ;
+0:at  VERB_BACK_PASSIVE  ;
+0:at  VERB_BACK_TUPCP_0  ;
+0:taa  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_LÄNTÄTÄ
+!!€gt-norm:  Verbs 73 front 0~t
+!!€  läntätä: läntätä+V+Act+InfA+Sg+Lat # splat
+0:ät  VERB_FRONT_AINF  ;
+0:ät  VERB_FRONT_EINF  ;
+0:tää  VERB_FRONT_WEAK_PRESENT  ;
+0:tää  VERB_FRONT_STRONG_PRESENT  ;
+0:tä  VERB_FRONT_3SG_Ä  ;
+0:täs  VERB_FRONT_WEAK_PAST  ;
+0:täs  VERB_FRONT_STRONG_PAST  ;
+0:tä  VERB_FRONT_CONDITIONAL  ;
+0:ät  VERB_FRONT_IMPERATIVE  ;
+0:än  VERB_FRONT_POTENTIAL_N  ;
+0:ä  VERB_FRONT_PASSIVE_T  ;
+0:ät  VERB_FRONT_PASSIVE  ;
+0:ät  VERB_FRONT_TUPCP_0  ;
+0:tää  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_KAIVATA
+!!€gt-norm:  Verbs 73 back v~p
+!!€  kaivata: kaivata+V+Act+InfA+Sg+Lat # long
+0:vat  VERB_BACK_AINF  ;
+0:vat  VERB_BACK_EINF  ;
+0:paa  VERB_BACK_WEAK_PRESENT  ;
+0:paa  VERB_BACK_STRONG_PRESENT  ;
+0:pa  VERB_BACK_3SG_A  ;
+0:pas  VERB_BACK_WEAK_PAST  ;
+0:pas  VERB_BACK_STRONG_PAST  ;
+0:pa  VERB_BACK_CONDITIONAL  ;
+0:vat  VERB_BACK_IMPERATIVE  ;
+0:van  VERB_BACK_POTENTIAL_N  ;
+0:va  VERB_BACK_PASSIVE_T  ;
+0:vat  VERB_BACK_PASSIVE  ;
+0:vat  VERB_BACK_TUPCP_0  ;
+0:paa  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_LEVÄTÄ
+!!€gt-norm:  Verbs 73 front v~p
+!!€  levätä: levätä+V+Act+InfA+Sg+Lat # rest
+0:vät  VERB_FRONT_AINF  ;
+0:vät  VERB_FRONT_EINF  ;
+0:pää  VERB_FRONT_WEAK_PRESENT  ;
+0:pää  VERB_FRONT_STRONG_PRESENT  ;
+0:pä  VERB_FRONT_3SG_Ä  ;
+0:päs  VERB_FRONT_WEAK_PAST  ;
+0:päs  VERB_FRONT_STRONG_PAST  ;
+0:pä  VERB_FRONT_CONDITIONAL  ;
+0:vät  VERB_FRONT_IMPERATIVE  ;
+0:vän  VERB_FRONT_POTENTIAL_N  ;
+0:vä  VERB_FRONT_PASSIVE_T  ;
+0:vät  VERB_FRONT_PASSIVE  ;
+0:vät  VERB_FRONT_TUPCP_0  ;
+0:pää  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_JAHDATA
+!!€gt-norm:  Verbs 73 back d~r
+!!€  jahdata: jahdata+V+Act+InfA+Sg+Lat # hunt
+0:dat  VERB_BACK_AINF  ;
+0:dat  VERB_BACK_EINF  ;
+0:taa  VERB_BACK_WEAK_PRESENT  ;
+0:taa  VERB_BACK_STRONG_PRESENT  ;
+0:ta  VERB_BACK_3SG_A  ;
+0:tas  VERB_BACK_WEAK_PAST  ;
+0:tas  VERB_BACK_STRONG_PAST  ;
+0:ta  VERB_BACK_CONDITIONAL  ;
+0:dat  VERB_BACK_IMPERATIVE  ;
+0:dan  VERB_BACK_POTENTIAL_N  ;
+0:da  VERB_BACK_PASSIVE_T  ;
+0:dat  VERB_BACK_PASSIVE  ;
+0:dat  VERB_BACK_TUPCP_0  ;
+0:taa  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_TÄHDÄTÄ
+!!€gt-norm:  Verbs 73 front d~t
+!!€  tähdätä: tähdätä+V+Act+InfA+Sg+Lat # aim
+0:dät  VERB_FRONT_AINF  ;
+0:dät  VERB_FRONT_EINF  ;
+0:tää  VERB_FRONT_WEAK_PRESENT  ;
+0:tää  VERB_FRONT_STRONG_PRESENT  ;
+0:tä  VERB_FRONT_3SG_Ä  ;
+0:täs  VERB_FRONT_WEAK_PAST  ;
+0:täs  VERB_FRONT_STRONG_PAST  ;
+0:tä  VERB_FRONT_CONDITIONAL  ;
+0:dät  VERB_FRONT_IMPERATIVE  ;
+0:dän  VERB_FRONT_POTENTIAL_N  ;
+0:dä  VERB_FRONT_PASSIVE_T  ;
+0:dät  VERB_FRONT_PASSIVE  ;
+0:dät  VERB_FRONT_TUPCP_0  ;
+0:tää  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_VONGATA
+!!€gt-norm:  Verbs 73 back g~k
+!!€  vongata: vongata+V+Act+InfA+Sg+Lat # beg
+0:gat  VERB_BACK_AINF  ;
+0:gat  VERB_BACK_EINF  ;
+0:kaa  VERB_BACK_WEAK_PRESENT  ;
+0:kaa  VERB_BACK_STRONG_PRESENT  ;
+0:ka  VERB_BACK_3SG_A  ;
+0:kas  VERB_BACK_WEAK_PAST  ;
+0:kas  VERB_BACK_STRONG_PAST  ;
+0:ka  VERB_BACK_CONDITIONAL  ;
+0:gat  VERB_BACK_IMPERATIVE  ;
+0:gan  VERB_BACK_POTENTIAL_N  ;
+0:ga  VERB_BACK_PASSIVE_T  ;
+0:gat  VERB_BACK_PASSIVE  ;
+0:gat  VERB_BACK_TUPCP_0  ;
+0:kaa  VERB_BACK_DERIV_PCPS  ;
+
+:gat  VERB_BACK_OPTATIVE_K_ARCHAIC  ;
+
+
+LEXICON VERB_VÄNGÄTÄ
+!!€gt-norm:  Verbs 73 front g~k
+!!€  vängätä: vängätä+V+Act+InfA+Sg+Lat # argue
+0:gät  VERB_FRONT_AINF  ;
+0:gät  VERB_FRONT_EINF  ;
+0:kää  VERB_FRONT_WEAK_PRESENT  ;
+0:kää  VERB_FRONT_STRONG_PRESENT  ;
+0:kä  VERB_FRONT_3SG_Ä  ;
+0:käs  VERB_FRONT_WEAK_PAST  ;
+0:käs  VERB_FRONT_STRONG_PAST  ;
+0:kä  VERB_FRONT_CONDITIONAL  ;
+0:gät  VERB_FRONT_IMPERATIVE  ;
+0:gän  VERB_FRONT_POTENTIAL_N  ;
+0:gä  VERB_FRONT_PASSIVE_T  ;
+0:gät  VERB_FRONT_PASSIVE  ;
+0:gät  VERB_FRONT_TUPCP_0  ;
+0:kää  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_TEMMATA
+!!€gt-norm:  Verbs 73 back m~p
+!!€  temmata: temmata+V+Act+InfA+Sg+Lat # pull
+0:mat  VERB_BACK_AINF  ;
+0:mat  VERB_BACK_EINF  ;
+0:paa  VERB_BACK_WEAK_PRESENT  ;
+0:paa  VERB_BACK_STRONG_PRESENT  ;
+0:pa  VERB_BACK_3SG_A  ;
+0:pas  VERB_BACK_WEAK_PAST  ;
+0:pas  VERB_BACK_STRONG_PAST  ;
+0:pa  VERB_BACK_CONDITIONAL  ;
+0:mat  VERB_BACK_IMPERATIVE  ;
+0:man  VERB_BACK_POTENTIAL_N  ;
+0:ma  VERB_BACK_PASSIVE_T  ;
+0:mat  VERB_BACK_PASSIVE  ;
+0:mat  VERB_BACK_TUPCP_0  ;
+0:paa  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_MULLATA
+!!€gt-norm:  Verbs 73 back l~t
+!!€  mullata: mullata+V+Act+InfA+Sg+Lat # dirt
+0:lat  VERB_BACK_AINF  ;
+0:lat  VERB_BACK_EINF  ;
+0:taa  VERB_BACK_WEAK_PRESENT  ;
+0:taa  VERB_BACK_STRONG_PRESENT  ;
+0:ta  VERB_BACK_3SG_A  ;
+0:tas  VERB_BACK_WEAK_PAST  ;
+0:tas  VERB_BACK_STRONG_PAST  ;
+0:ta  VERB_BACK_CONDITIONAL  ;
+0:lat  VERB_BACK_IMPERATIVE  ;
+0:lan  VERB_BACK_POTENTIAL_N  ;
+0:la  VERB_BACK_PASSIVE_T  ;
+0:lat  VERB_BACK_PASSIVE  ;
+0:lat  VERB_BACK_TUPCP_0  ;
+0:taa  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_SUUNNATA
+!!€gt-norm:  Verbs 73 back n~t
+!!€  suunnata: suunnata+V+Act+InfA+Sg+Lat # go
+0:nat  VERB_BACK_AINF  ;
+0:nat  VERB_BACK_EINF  ;
+0:taa  VERB_BACK_WEAK_PRESENT  ;
+0:taa  VERB_BACK_STRONG_PRESENT  ;
+0:ta  VERB_BACK_3SG_A  ;
+0:tas  VERB_BACK_WEAK_PAST  ;
+0:tas  VERB_BACK_STRONG_PAST  ;
+0:ta  VERB_BACK_CONDITIONAL  ;
+0:nat  VERB_BACK_IMPERATIVE  ;
+0:nan  VERB_BACK_POTENTIAL_N  ;
+0:na  VERB_BACK_PASSIVE_T  ;
+0:nat  VERB_BACK_PASSIVE  ;
+0:nat  VERB_BACK_TUPCP_0  ;
+0:taa  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_RYNNÄTÄ
+!!€gt-norm:  Verbs 73 front n~t
+!!€  rynnätä: rynnätä+V+Act+InfA+Sg+Lat # rush
+0:nät  VERB_FRONT_AINF  ;
+0:nät  VERB_FRONT_EINF  ;
+0:tää  VERB_FRONT_WEAK_PRESENT  ;
+0:tää  VERB_FRONT_STRONG_PRESENT  ;
+0:tä  VERB_FRONT_3SG_Ä  ;
+0:täs  VERB_FRONT_WEAK_PAST  ;
+0:täs  VERB_FRONT_STRONG_PAST  ;
+0:tä  VERB_FRONT_CONDITIONAL  ;
+0:nät  VERB_FRONT_IMPERATIVE  ;
+0:nän  VERB_FRONT_POTENTIAL_N  ;
+0:nä  VERB_FRONT_PASSIVE_T  ;
+0:nät  VERB_FRONT_PASSIVE  ;
+0:nät  VERB_FRONT_TUPCP_0  ;
+0:tää  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_VIRRATA
+!!€gt-norm:  Verbs 73 back r~t
+!!€  virrata: virrata+V+Act+InfA+Sg+Lat # stream
+0:rat  VERB_BACK_AINF  ;
+0:rat  VERB_BACK_EINF  ;
+0:taa  VERB_BACK_WEAK_PRESENT  ;
+0:taa  VERB_BACK_STRONG_PRESENT  ;
+0:ta  VERB_BACK_3SG_A  ;
+0:tas  VERB_BACK_WEAK_PAST  ;
+0:tas  VERB_BACK_STRONG_PAST  ;
+0:ta  VERB_BACK_CONDITIONAL  ;
+0:rat  VERB_BACK_IMPERATIVE  ;
+0:ran  VERB_BACK_POTENTIAL_N  ;
+0:ra  VERB_BACK_PASSIVE_T  ;
+0:rat  VERB_BACK_PASSIVE  ;
+0:rat  VERB_BACK_TUPCP_0  ;
+0:taa  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_HYLJÄTÄ
+!!€gt-norm:  Verbs 73 front j~k
+!!€  hyljätä: hyljätä+V+Act+InfA+Sg+Lat # abandon
+0:jät  VERB_FRONT_AINF  ;
+0:jät  VERB_FRONT_EINF  ;
+0:kää  VERB_FRONT_WEAK_PRESENT  ;
+0:kää  VERB_FRONT_STRONG_PRESENT  ;
+0:kä  VERB_FRONT_3SG_Ä  ;
+0:käs  VERB_FRONT_WEAK_PAST  ;
+0:käs  VERB_FRONT_STRONG_PAST  ;
+0:kä  VERB_FRONT_CONDITIONAL  ;
+0:jät  VERB_FRONT_IMPERATIVE  ;
+0:jän  VERB_FRONT_POTENTIAL_N  ;
+0:jä  VERB_FRONT_PASSIVE_T  ;
+0:jät  VERB_FRONT_PASSIVE  ;
+0:jät  VERB_FRONT_TUPCP_0  ;
+0:tää  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_DIGATA
+!!€gt-norm:  Verbs 73 back 0~g
+!!€  digata: digata+V+Act+InfA+Sg+Lat # dig
+0:at  VERB_BACK_AINF  ;
+0:at  VERB_BACK_EINF  ;
+0:gaa  VERB_BACK_WEAK_PRESENT  ;
+0:gaa  VERB_BACK_STRONG_PRESENT  ;
+0:ga  VERB_BACK_3SG_A  ;
+0:gas  VERB_BACK_WEAK_PAST  ;
+0:gas  VERB_BACK_STRONG_PAST  ;
+0:ga  VERB_BACK_CONDITIONAL  ;
+0:at  VERB_BACK_IMPERATIVE  ;
+0:an  VERB_BACK_POTENTIAL_N  ;
+0:a  VERB_BACK_PASSIVE_T  ;
+0:at  VERB_BACK_PASSIVE  ;
+0:at  VERB_BACK_TUPCP_0  ;
+0:kaa  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_LOBATA
+!!€gt-norm:  Verbs 73 back 0~b
+!!€  lobata: lobata+V+Act+InfA+Sg+Lat # lobby
+0:at  VERB_BACK_AINF  ;
+0:at  VERB_BACK_EINF  ;
+0:baa  VERB_BACK_WEAK_PRESENT  ;
+0:baa  VERB_BACK_STRONG_PRESENT  ;
+0:ba  VERB_BACK_3SG_A  ;
+0:bas  VERB_BACK_WEAK_PAST  ;
+0:bas  VERB_BACK_STRONG_PAST  ;
+0:ba  VERB_BACK_CONDITIONAL  ;
+0:at  VERB_BACK_IMPERATIVE  ;
+0:an  VERB_BACK_POTENTIAL_N  ;
+0:a  VERB_BACK_PASSIVE_T  ;
+0:at  VERB_BACK_PASSIVE  ;
+0:at  VERB_BACK_TUPCP_0  ;
+0:baa  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_KARHUTA
+!!€gt-norm:  Verbs 74 back 
+!!€  karhuta: karhuta+V+Act+InfA+Sg+Lat # tax
+0:t  VERB_BACK_AINF  ;
+0:t  VERB_BACK_EINF  ;
+0:a  VERB_BACK_WEAK_PRESENT  ;
+0:a  VERB_BACK_STRONG_PRESENT  ;
+0:a  VERB_BACK_3SG_A  ;
+0:s  VERB_BACK_WEAK_PAST  ;
+0:s  VERB_BACK_STRONG_PAST  ;
+0:a  VERB_BACK_CONDITIONAL  ;
+0:t  VERB_BACK_IMPERATIVE  ;
+0:n  VERB_BACK_POTENTIAL_N  ;
+0  VERB_BACK_PASSIVE_T  ;
+0:t  VERB_BACK_PASSIVE  ;
+0:t  VERB_BACK_TUPCP_0  ;
+0:a  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_TÄHYTÄ
+!!€gt-norm:  Verbs 74 front 
+!!€  tähytä: tähytä+V+Act+InfA+Sg+Lat # periscope
+0:t  VERB_FRONT_AINF  ;
+0:t  VERB_FRONT_EINF  ;
+0:ä  VERB_FRONT_WEAK_PRESENT  ;
+0:ä  VERB_FRONT_STRONG_PRESENT  ;
+0:ä  VERB_FRONT_3SG_Ä  ;
+0:s  VERB_FRONT_WEAK_PAST  ;
+0:s  VERB_FRONT_STRONG_PAST  ;
+0:ä  VERB_FRONT_CONDITIONAL  ;
+0:t  VERB_FRONT_IMPERATIVE  ;
+0:n  VERB_FRONT_POTENTIAL_N  ;
+0  VERB_FRONT_PASSIVE_T  ;
+0:t  VERB_FRONT_PASSIVE  ;
+0:t  VERB_FRONT_TUPCP_0  ;
+0:ä  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_KAIKOTA
+!!€gt-norm:  Verbs 74 back 0~k 
+!!€  kaikota: kaikota+V+Act+InfA+Sg+Lat # disappear
+0:ot  VERB_BACK_AINF  ;
+0:ot  VERB_BACK_EINF  ;
+0:koa  VERB_BACK_WEAK_PRESENT  ;
+0:koa  VERB_BACK_STRONG_PRESENT  ;
+0:koa  VERB_BACK_3SG_A  ;
+0:kos  VERB_BACK_WEAK_PAST  ;
+0:kos  VERB_BACK_STRONG_PAST  ;
+0:koa  VERB_BACK_CONDITIONAL  ;
+0:ot  VERB_BACK_IMPERATIVE  ;
+0:on  VERB_BACK_POTENTIAL_N  ;
+0:o  VERB_BACK_PASSIVE_T  ;
+0:ot  VERB_BACK_PASSIVE  ;
+0:ot  VERB_BACK_TUPCP_0  ;
+0:koa  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_POIKETA
+!!€gt-norm:  Verbs 74 back 0~k e 
+!!€  poiketa: poiketa+V+Act+InfA+Sg+Lat 
+0:et  VERB_BACK_AINF  ;
+0:et  VERB_BACK_EINF  ;
+0:kea  VERB_BACK_WEAK_PRESENT  ;
+0:kea  VERB_BACK_STRONG_PRESENT  ;
+0:kea  VERB_BACK_3SG_A  ;
+0:kes  VERB_BACK_WEAK_PAST  ;
+0:kes  VERB_BACK_STRONG_PAST  ;
+0:kea  VERB_BACK_CONDITIONAL  ;
+0:et  VERB_BACK_IMPERATIVE  ;
+0:en  VERB_BACK_POTENTIAL_N  ;
+0:e  VERB_BACK_PASSIVE_T  ;
+0:et  VERB_BACK_PASSIVE  ;
+0:et  VERB_BACK_TUPCP_0  ;
+0:kea  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_KERETÄ
+!!€gt-norm:  Verbs 74 front 0~k e 
+!!€  keretä: keretä+V+Act+InfA+Sg+Lat 
+0:et  VERB_FRONT_AINF  ;
+0:et  VERB_FRONT_EINF  ;
+0:keä  VERB_FRONT_WEAK_PRESENT  ;
+0:keä  VERB_FRONT_STRONG_PRESENT  ;
+0:keä  VERB_FRONT_3SG_Ä  ;
+0:kes  VERB_FRONT_WEAK_PAST  ;
+0:kes  VERB_FRONT_STRONG_PAST  ;
+0:keä  VERB_FRONT_CONDITIONAL  ;
+0:et  VERB_FRONT_IMPERATIVE  ;
+0:en  VERB_FRONT_POTENTIAL_N  ;
+0:e  VERB_FRONT_PASSIVE_T  ;
+0:et  VERB_FRONT_PASSIVE  ;
+0:et  VERB_FRONT_TUPCP_0  ;
+0:keä  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_KOUKUTA
+!!€gt-norm:  Verbs 74 front   0~k u 
+!!€  koukuta: koukuta+V+Act+InfA+Sg+Lat # hook
+0:ut  VERB_BACK_AINF  ;
+0:ut  VERB_BACK_EINF  ;
+0:kua  VERB_BACK_WEAK_PRESENT  ;
+0:kua  VERB_BACK_STRONG_PRESENT  ;
+0:kua  VERB_BACK_3SG_A  ;
+0:kus  VERB_BACK_WEAK_PAST  ;
+0:kus  VERB_BACK_STRONG_PAST  ;
+0:kua  VERB_BACK_CONDITIONAL  ;
+0:ut  VERB_BACK_IMPERATIVE  ;
+0:un  VERB_BACK_POTENTIAL_N  ;
+0:u  VERB_BACK_PASSIVE_T  ;
+0:ut  VERB_BACK_PASSIVE  ;
+0:ut  VERB_BACK_TUPCP_0  ;
+0:kua  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_PULPUTA
+!!€gt-norm:  Verbs 74 back 0~p 
+!!€  pulputa: pulputa+V+Act+InfA+Sg+Lat # pulp
+0:ut  VERB_BACK_AINF  ;
+0:ut  VERB_BACK_EINF  ;
+0:pua  VERB_BACK_WEAK_PRESENT  ;
+0:pua  VERB_BACK_STRONG_PRESENT  ;
+0:pua  VERB_BACK_3SG_A  ;
+0:pus  VERB_BACK_WEAK_PAST  ;
+0:pus  VERB_BACK_STRONG_PAST  ;
+0:pua  VERB_BACK_CONDITIONAL  ;
+0:ut  VERB_BACK_IMPERATIVE  ;
+0:un  VERB_BACK_POTENTIAL_N  ;
+0:u  VERB_BACK_PASSIVE_T  ;
+0:ut  VERB_BACK_PASSIVE  ;
+0:ut  VERB_BACK_TUPCP_0  ;
+0:pua  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_UPOTA
+!!€gt-norm:  Verbs 74 back 0~p o 
+!!€  upota: upota+V+Act+InfA+Sg+Lat # sink
+0:ot  VERB_BACK_AINF  ;
+0:ot  VERB_BACK_EINF  ;
+0:poa  VERB_BACK_WEAK_PRESENT  ;
+0:poa  VERB_BACK_STRONG_PRESENT  ;
+0:poa  VERB_BACK_3SG_A  ;
+0:pos  VERB_BACK_WEAK_PAST  ;
+0:pos  VERB_BACK_STRONG_PAST  ;
+0:poa  VERB_BACK_CONDITIONAL  ;
+0:ot  VERB_BACK_IMPERATIVE  ;
+0:on  VERB_BACK_POTENTIAL_N  ;
+0:o  VERB_BACK_PASSIVE_T  ;
+0:ot  VERB_BACK_PASSIVE  ;
+0:ot  VERB_BACK_TUPCP_0  ;
+0:poa  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_LOTOTA
+!!€gt-norm:  Verbs 74 back 0~to
+!!€  lotota: lotota+V+Act+InfA+Sg+Lat # lotto
+0:ot  VERB_BACK_AINF  ;
+0:ot  VERB_BACK_EINF  ;
+0:toa  VERB_BACK_WEAK_PRESENT  ;
+0:toa  VERB_BACK_STRONG_PRESENT  ;
+0:toa  VERB_BACK_3SG_A  ;
+0:tos  VERB_BACK_WEAK_PAST  ;
+0:tos  VERB_BACK_STRONG_PAST  ;
+0:toa  VERB_BACK_CONDITIONAL  ;
+0:ot  VERB_BACK_IMPERATIVE  ;
+0:on  VERB_BACK_POTENTIAL_N  ;
+0:o  VERB_BACK_PASSIVE_T  ;
+0:ot  VERB_BACK_PASSIVE  ;
+0:ot  VERB_BACK_TUPCP_0  ;
+0:toa  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_LUUTUTA
+!!€gt-norm:  Verbs 74 back 0~tu
+!!€  luututa: luututa+V+Act+InfA+Sg+Lat # mop
+0:ut  VERB_BACK_AINF  ;
+0:ut  VERB_BACK_EINF  ;
+0:tua  VERB_BACK_WEAK_PRESENT  ;
+0:tua  VERB_BACK_STRONG_PRESENT  ;
+0:tua  VERB_BACK_3SG_A  ;
+0:tus  VERB_BACK_WEAK_PAST  ;
+0:tus  VERB_BACK_STRONG_PAST  ;
+0:tua  VERB_BACK_CONDITIONAL  ;
+0:ut  VERB_BACK_IMPERATIVE  ;
+0:un  VERB_BACK_POTENTIAL_N  ;
+0:u  VERB_BACK_PASSIVE_T  ;
+0:ut  VERB_BACK_PASSIVE  ;
+0:ut  VERB_BACK_TUPCP_0  ;
+0:tua  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_KIVUTA
+!!€gt-norm:  Verbs 74 back v~p 
+!!€  kivuta: kivuta+V+Act+InfA+Sg+Lat # climb
+0:vut  VERB_BACK_AINF  ;
+0:vut  VERB_BACK_EINF  ;
+0:pua  VERB_BACK_WEAK_PRESENT  ;
+0:pua  VERB_BACK_STRONG_PRESENT  ;
+0:pua  VERB_BACK_3SG_A  ;
+0:pus  VERB_BACK_WEAK_PAST  ;
+0:pus  VERB_BACK_STRONG_PAST  ;
+0:pua  VERB_BACK_CONDITIONAL  ;
+0:vut  VERB_BACK_IMPERATIVE  ;
+0:vun  VERB_BACK_POTENTIAL_N  ;
+0:vu  VERB_BACK_PASSIVE_T  ;
+0:vut  VERB_BACK_PASSIVE  ;
+0:vut  VERB_BACK_TUPCP_0  ;
+0:pua  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_KORVETA
+!!€gt-norm:  Verbs 74 back v~pe
+!!€  korveta: korveta+V+Act+InfA+Sg+Lat 
+0:vet  VERB_BACK_AINF  ;
+0:vet  VERB_BACK_EINF  ;
+0:pea  VERB_BACK_WEAK_PRESENT  ;
+0:pea  VERB_BACK_STRONG_PRESENT  ;
+0:pea  VERB_BACK_3SG_A  ;
+0:pes  VERB_BACK_WEAK_PAST  ;
+0:pes  VERB_BACK_STRONG_PAST  ;
+0:pea  VERB_BACK_CONDITIONAL  ;
+0:vet  VERB_BACK_IMPERATIVE  ;
+0:ven  VERB_BACK_POTENTIAL_N  ;
+0:ve  VERB_BACK_PASSIVE_T  ;
+0:vet  VERB_BACK_PASSIVE  ;
+0:vet  VERB_BACK_TUPCP_0  ;
+0:pea  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_REVETÄ
+!!€gt-norm:  Verbs 74 front v~pe
+!!€  kiivetä: kiivetä+V+Act+InfA+Sg+Lat # climb
+0:vet  VERB_FRONT_AINF  ;
+0:vet  VERB_FRONT_EINF  ;
+0:peä  VERB_FRONT_WEAK_PRESENT  ;
+0:peä  VERB_FRONT_STRONG_PRESENT  ;
+0:peä  VERB_FRONT_3SG_Ä  ;
+0:pes  VERB_FRONT_WEAK_PAST  ;
+0:pes  VERB_FRONT_STRONG_PAST  ;
+0:peä  VERB_FRONT_CONDITIONAL  ;
+0:vet  VERB_FRONT_IMPERATIVE  ;
+0:ven  VERB_FRONT_POTENTIAL_N  ;
+0:ve  VERB_FRONT_PASSIVE_T  ;
+0:vet  VERB_FRONT_PASSIVE  ;
+0:vet  VERB_FRONT_TUPCP_0  ;
+0:peä  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_KIRVOTA
+!!€gt-norm:  Verbs 74 back v~po
+!!€  kirvota: kirvota+V+Act+InfA+Sg+Lat # loose
+0:vot  VERB_BACK_AINF  ;
+0:vot  VERB_BACK_EINF  ;
+0:poa  VERB_BACK_WEAK_PRESENT  ;
+0:poa  VERB_BACK_STRONG_PRESENT  ;
+0:poa  VERB_BACK_3SG_A  ;
+0:pos  VERB_BACK_WEAK_PAST  ;
+0:pos  VERB_BACK_STRONG_PAST  ;
+0:poa  VERB_BACK_CONDITIONAL  ;
+0:vot  VERB_BACK_IMPERATIVE  ;
+0:von  VERB_BACK_POTENTIAL_N  ;
+0:vo  VERB_BACK_PASSIVE_T  ;
+0:vot  VERB_BACK_PASSIVE  ;
+0:vot  VERB_BACK_TUPCP_0  ;
+0:poa  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_KADOTA
+!!€gt-norm:  Verbs 74 back d~t 
+!!€  kadota: kadota+V+Act+InfA+Sg+Lat # disappear
+0:dot  VERB_BACK_AINF  ;
+0:dot  VERB_BACK_EINF  ;
+0:toa  VERB_BACK_WEAK_PRESENT  ;
+0:toa  VERB_BACK_STRONG_PRESENT  ;
+0:toa  VERB_BACK_3SG_A  ;
+0:tos  VERB_BACK_WEAK_PAST  ;
+0:tos  VERB_BACK_STRONG_PAST  ;
+0:toa  VERB_BACK_CONDITIONAL  ;
+0:dot  VERB_BACK_IMPERATIVE  ;
+0:don  VERB_BACK_POTENTIAL_N  ;
+0:do  VERB_BACK_PASSIVE_T  ;
+0:dot  VERB_BACK_PASSIVE  ;
+0:dot  VERB_BACK_TUPCP_0  ;
+0:toa  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_TODETA
+!!€gt-norm:  Verbs 74 back t~de
+!!€  todeta: todeta+V+Act+InfA+Sg+Lat # note
+0:det  VERB_BACK_AINF  ;
+0:det  VERB_BACK_EINF  ;
+0:tea  VERB_BACK_WEAK_PRESENT  ;
+0:tea  VERB_BACK_STRONG_PRESENT  ;
+0:tea  VERB_BACK_3SG_A  ;
+0:tes  VERB_BACK_WEAK_PAST  ;
+0:tes  VERB_BACK_STRONG_PAST  ;
+0:tea  VERB_BACK_CONDITIONAL  ;
+0:det  VERB_BACK_IMPERATIVE  ;
+0:den  VERB_BACK_POTENTIAL_N  ;
+0:de  VERB_BACK_PASSIVE_T  ;
+0:det  VERB_BACK_PASSIVE  ;
+0:det  VERB_BACK_TUPCP_0  ;
+0:tea  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_VYYHDETÄ
+!!€gt-norm:  Verbs 74 front t~de
+!!€  vyyhdetä: vyyhdetä+V+Act+InfA+Sg+Lat # entangle
+0:det  VERB_FRONT_AINF  ;
+0:det  VERB_FRONT_EINF  ;
+0:teä  VERB_FRONT_WEAK_PRESENT  ;
+0:teä  VERB_FRONT_STRONG_PRESENT  ;
+0:teä  VERB_FRONT_3SG_Ä  ;
+0:tes  VERB_FRONT_WEAK_PAST  ;
+0:tes  VERB_FRONT_STRONG_PAST  ;
+0:teä  VERB_FRONT_CONDITIONAL  ;
+0:det  VERB_FRONT_IMPERATIVE  ;
+0:den  VERB_FRONT_POTENTIAL_N  ;
+0:de  VERB_FRONT_PASSIVE_T  ;
+0:det  VERB_FRONT_PASSIVE  ;
+0:det  VERB_FRONT_TUPCP_0  ;
+0:teä  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_LIIDUTA
+!!€gt-norm:  Verbs 74 back d~tu
+!!€  liiduta: liiduta+V+Act+InfA+Sg+Lat # chalk
+0:dut  VERB_BACK_AINF  ;
+0:dut  VERB_BACK_EINF  ;
+0:tua  VERB_BACK_WEAK_PRESENT  ;
+0:tua  VERB_BACK_STRONG_PRESENT  ;
+0:tua  VERB_BACK_3SG_A  ;
+0:tus  VERB_BACK_WEAK_PAST  ;
+0:tus  VERB_BACK_STRONG_PAST  ;
+0:tua  VERB_BACK_CONDITIONAL  ;
+0:dut  VERB_BACK_IMPERATIVE  ;
+0:dun  VERB_BACK_POTENTIAL_N  ;
+0:du  VERB_BACK_PASSIVE_T  ;
+0:dut  VERB_BACK_PASSIVE  ;
+0:dut  VERB_BACK_TUPCP_0  ;
+0:tua  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_TUNGETA
+!!€gt-norm:  Verbs 74 back g~ke
+!!€  tungeta: tungeta+V+Act+InfA+Sg+Lat # push
+0:get  VERB_BACK_AINF  ;
+0:get  VERB_BACK_EINF  ;
+0:kea  VERB_BACK_WEAK_PRESENT  ;
+0:kea  VERB_BACK_STRONG_PRESENT  ;
+0:kea  VERB_BACK_3SG_A  ;
+0:kes  VERB_BACK_WEAK_PAST  ;
+0:kes  VERB_BACK_STRONG_PAST  ;
+0:kea  VERB_BACK_CONDITIONAL  ;
+0:get  VERB_BACK_IMPERATIVE  ;
+0:gen  VERB_BACK_POTENTIAL_N  ;
+0:ge  VERB_BACK_PASSIVE_T  ;
+0:get  VERB_BACK_PASSIVE  ;
+0:get  VERB_BACK_TUPCP_0  ;
+0:kea  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_PINGOTA
+!!€gt-norm:  Verbs 74 back g~ko
+!!€  pingota: pingota+V+Act+InfA+Sg+Lat # ping
+0:got  VERB_BACK_AINF  ;
+0:got  VERB_BACK_EINF  ;
+0:koa  VERB_BACK_WEAK_PRESENT  ;
+0:koa  VERB_BACK_STRONG_PRESENT  ;
+0:koa  VERB_BACK_3SG_A  ;
+0:kos  VERB_BACK_WEAK_PAST  ;
+0:kos  VERB_BACK_STRONG_PAST  ;
+0:koa  VERB_BACK_CONDITIONAL  ;
+0:got  VERB_BACK_IMPERATIVE  ;
+0:gon  VERB_BACK_POTENTIAL_N  ;
+0:go  VERB_BACK_PASSIVE_T  ;
+0:got  VERB_BACK_PASSIVE  ;
+0:got  VERB_BACK_TUPCP_0  ;
+0:koa  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_ÄNGETÄ
+!!€gt-norm:  Verbs 74 front g~ke 
+!!€  ängetä: ängetä+V+Act+InfA+Sg+Lat # push
+0:get  VERB_FRONT_AINF  ;
+0:get  VERB_FRONT_EINF  ;
+0:keä  VERB_FRONT_WEAK_PRESENT  ;
+0:keä  VERB_FRONT_STRONG_PRESENT  ;
+0:keä  VERB_FRONT_3SG_Ä  ;
+0:kes  VERB_FRONT_WEAK_PAST  ;
+0:kes  VERB_FRONT_STRONG_PAST  ;
+0:keä  VERB_FRONT_CONDITIONAL  ;
+0:get  VERB_FRONT_IMPERATIVE  ;
+0:gen  VERB_FRONT_POTENTIAL_N  ;
+0:ge  VERB_FRONT_PASSIVE_T  ;
+0:get  VERB_FRONT_PASSIVE  ;
+0:get  VERB_FRONT_TUPCP_0  ;
+0:keä  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_KUMMUTA
+!!€gt-norm:  Verbs 74 back m~p 
+!!€  kummuta: kummuta+V+Act+InfA+Sg+Lat 
+0:mut  VERB_BACK_AINF  ;
+0:mut  VERB_BACK_EINF  ;
+0:pua  VERB_BACK_WEAK_PRESENT  ;
+0:pua  VERB_BACK_STRONG_PRESENT  ;
+0:pua  VERB_BACK_3SG_A  ;
+0:pus  VERB_BACK_WEAK_PAST  ;
+0:pus  VERB_BACK_STRONG_PAST  ;
+0:pua  VERB_BACK_CONDITIONAL  ;
+0:mut  VERB_BACK_IMPERATIVE  ;
+0:mun  VERB_BACK_POTENTIAL_N  ;
+0:mu  VERB_BACK_PASSIVE_T  ;
+0:mut  VERB_BACK_PASSIVE  ;
+0:mut  VERB_BACK_TUPCP_0  ;
+0:pua  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_KAMMETA
+!!€gt-norm:  Verbs 74 back p~mu
+!!€  kammeta: kammeta+V+Act+InfA+Sg+Lat # lever
+0:met  VERB_BACK_AINF  ;
+0:met  VERB_BACK_EINF  ;
+0:pea  VERB_BACK_WEAK_PRESENT  ;
+0:pea  VERB_BACK_STRONG_PRESENT  ;
+0:pea  VERB_BACK_3SG_A  ;
+0:pes  VERB_BACK_WEAK_PAST  ;
+0:pes  VERB_BACK_STRONG_PAST  ;
+0:pea  VERB_BACK_CONDITIONAL  ;
+0:met  VERB_BACK_IMPERATIVE  ;
+0:men  VERB_BACK_POTENTIAL_N  ;
+0:me  VERB_BACK_PASSIVE_T  ;
+0:met  VERB_BACK_PASSIVE  ;
+0:met  VERB_BACK_TUPCP_0  ;
+0:pea  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_SAMMOTA
+!!€gt-norm:  Verbs 74 back p~mu
+!!€  sammota: sammota+V+Act+InfA+Sg+Lat 
+0:mot  VERB_BACK_AINF  ;
+0:mot  VERB_BACK_EINF  ;
+0:poa  VERB_BACK_WEAK_PRESENT  ;
+0:poa  VERB_BACK_STRONG_PRESENT  ;
+0:poa  VERB_BACK_3SG_A  ;
+0:pos  VERB_BACK_WEAK_PAST  ;
+0:pos  VERB_BACK_STRONG_PAST  ;
+0:poa  VERB_BACK_CONDITIONAL  ;
+0:mot  VERB_BACK_IMPERATIVE  ;
+0:mon  VERB_BACK_POTENTIAL_N  ;
+0:mo  VERB_BACK_PASSIVE_T  ;
+0:mot  VERB_BACK_PASSIVE  ;
+0:mot  VERB_BACK_TUPCP_0  ;
+0:poa  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_INNOTA
+!!€gt-norm:  Verbs 74 back t~no
+!!€  innota: innota+V+Act+InfA+Sg+Lat # eager
+0:not  VERB_BACK_AINF  ;
+0:not  VERB_BACK_EINF  ;
+0:toa  VERB_BACK_WEAK_PRESENT  ;
+0:toa  VERB_BACK_STRONG_PRESENT  ;
+0:toa  VERB_BACK_3SG_A  ;
+0:tos  VERB_BACK_WEAK_PAST  ;
+0:tos  VERB_BACK_STRONG_PAST  ;
+0:toa  VERB_BACK_CONDITIONAL  ;
+0:not  VERB_BACK_IMPERATIVE  ;
+0:non  VERB_BACK_POTENTIAL_N  ;
+0:no  VERB_BACK_PASSIVE_T  ;
+0:not  VERB_BACK_PASSIVE  ;
+0:not  VERB_BACK_TUPCP_0  ;
+0:toa  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_IRROTA
+!!€gt-norm:  Verbs 74 back t~to
+!!€  irrota: irrota+V+Act+InfA+Sg+Lat # tear
+0:rot  VERB_BACK_AINF  ;
+0:rot  VERB_BACK_EINF  ;
+0:toa  VERB_BACK_WEAK_PRESENT  ;
+0:toa  VERB_BACK_STRONG_PRESENT  ;
+0:toa  VERB_BACK_3SG_A  ;
+0:tos  VERB_BACK_WEAK_PAST  ;
+0:tos  VERB_BACK_STRONG_PAST  ;
+0:toa  VERB_BACK_CONDITIONAL  ;
+0:rot  VERB_BACK_IMPERATIVE  ;
+0:ron  VERB_BACK_POTENTIAL_N  ;
+0:ro  VERB_BACK_PASSIVE_T  ;
+0:rot  VERB_BACK_PASSIVE  ;
+0:rot  VERB_BACK_TUPCP_0  ;
+0:toa  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_HALJETA
+!!€gt-norm:  Verbs 74 back j~ke
+!!€  haljeta: haljeta+V+Act+InfA+Sg+Lat # split
+0:jet  VERB_BACK_AINF  ;
+0:jet  VERB_BACK_EINF  ;
+0:kea  VERB_BACK_WEAK_PRESENT  ;
+0:kea  VERB_BACK_STRONG_PRESENT  ;
+0:kea  VERB_BACK_3SG_A  ;
+0:kes  VERB_BACK_WEAK_PAST  ;
+0:kes  VERB_BACK_STRONG_PAST  ;
+0:kea  VERB_BACK_CONDITIONAL  ;
+0:jet  VERB_BACK_IMPERATIVE  ;
+0:jen  VERB_BACK_POTENTIAL_N  ;
+0:je  VERB_BACK_PASSIVE_T  ;
+0:jet  VERB_BACK_PASSIVE  ;
+0:jet  VERB_BACK_TUPCP_0  ;
+0:kea  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_ILJETÄ
+!!€gt-norm:  Verbs 74 front j~k 
+!!€  iljetä: iljetä+V+Act+InfA+Sg+Lat # dare
+0:jet  VERB_FRONT_AINF  ;
+0:jet  VERB_FRONT_EINF  ;
+0:keä  VERB_FRONT_WEAK_PRESENT  ;
+0:keä  VERB_FRONT_STRONG_PRESENT  ;
+0:keä  VERB_FRONT_3SG_Ä  ;
+0:kes  VERB_FRONT_WEAK_PAST  ;
+0:kes  VERB_FRONT_STRONG_PAST  ;
+0:keä  VERB_FRONT_CONDITIONAL  ;
+0:jet  VERB_FRONT_IMPERATIVE  ;
+0:jen  VERB_FRONT_POTENTIAL_N  ;
+0:je  VERB_FRONT_PASSIVE_T  ;
+0:jet  VERB_FRONT_PASSIVE  ;
+0:jet  VERB_FRONT_TUPCP_0  ;
+0:keä  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_MYRSKYTÄ
+!!€gt-norm:  Verbs 75 front
+!!€  myrskytä: myrskytä+V+Act+InfA+Sg+Lat # storm
+0:t  VERB_FRONT_AINF  ;
+0:t  VERB_FRONT_EINF  ;
+0:ä  VERB_FRONT_WEAK_PRESENT  ;
+0:ä  VERB_FRONT_STRONG_PRESENT  ;
+0:ä  VERB_FRONT_3SG_Ä  ;
+0:s  VERB_FRONT_WEAK_PAST  ;
+0:s  VERB_FRONT_STRONG_PAST  ;
+0:ä  VERB_FRONT_CONDITIONAL  ;
+0:t  VERB_FRONT_IMPERATIVE  ;
+0:n  VERB_FRONT_POTENTIAL_N  ;
+0  VERB_FRONT_PASSIVE_T  ;
+0:t  VERB_FRONT_PASSIVE  ;
+0:t  VERB_FRONT_TUPCP_0  ;
+0:ä  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_LASSOTA
+!!€gt-norm:  Verbs 75 back
+!!€  lassota: lassota+V+Act+InfA+Sg+Lat # lasso
+0:t  VERB_BACK_AINF  ;
+0:t  VERB_BACK_EINF  ;
+0:a  VERB_BACK_WEAK_PRESENT  ;
+0:a  VERB_BACK_STRONG_PRESENT  ;
+0:a  VERB_BACK_3SG_A  ;
+0:s  VERB_BACK_WEAK_PAST  ;
+0:s  VERB_BACK_STRONG_PAST  ;
+0:a  VERB_BACK_CONDITIONAL  ;
+0:t  VERB_BACK_IMPERATIVE  ;
+0:n  VERB_BACK_POTENTIAL_N  ;
+0  VERB_BACK_PASSIVE_T  ;
+0:t  VERB_BACK_PASSIVE  ;
+0:t  VERB_BACK_TUPCP_0  ;
+0:a  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_SELVITÄ
+!!€gt-norm:  Verbs 75 itä
+!!€  selvitä: selvitä+V+Act+InfA+Sg+Lat # manage
+0:t  VERB_FRONT_AINF  ;
+0:t  VERB_FRONT_EINF  ;
+0:ä  VERB_FRONT_WEAK_PRESENT  ;
+0:ä  VERB_FRONT_STRONG_PRESENT  ;
+0:ä  VERB_FRONT_3SG_Ä  ;
+0:s  VERB_FRONT_WEAK_PAST  ;
+0:s  VERB_FRONT_STRONG_PAST  ;
+0:ä  VERB_FRONT_CONDITIONAL  ;
+0:t  VERB_FRONT_IMPERATIVE  ;
+0:n  VERB_FRONT_POTENTIAL_N  ;
+0  VERB_FRONT_PASSIVE_T  ;
+0:t  VERB_FRONT_PASSIVE  ;
+0:t  VERB_FRONT_TUPCP_0  ;
+0:ä  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_RYÖPYTÄ
+!!€gt-norm:  Verbs 75 pytä
+!!€  ryöpytä: ryöpytä+V+Act+InfA+Sg+Lat # flood
+0:yt  VERB_FRONT_AINF  ;
+0:yt  VERB_FRONT_EINF  ;
+0:pyä  VERB_FRONT_WEAK_PRESENT  ;
+0:pyä  VERB_FRONT_STRONG_PRESENT  ;
+0:pyä  VERB_FRONT_3SG_Ä  ;
+0:pys  VERB_FRONT_WEAK_PAST  ;
+0:pys  VERB_FRONT_STRONG_PAST  ;
+0:pyä  VERB_FRONT_CONDITIONAL  ;
+0:yt  VERB_FRONT_IMPERATIVE  ;
+0:yn  VERB_FRONT_POTENTIAL_N  ;
+0:y  VERB_FRONT_PASSIVE_T  ;
+0:yt  VERB_FRONT_PASSIVE  ;
+0:yt  VERB_FRONT_TUPCP_0  ;
+0:py  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_PEITOTA
+!!€gt-norm:  Verbs 75 tota
+!!€  peitota: peitota+V+Act+InfA+Sg+Lat # beat
+0:ot  VERB_BACK_AINF  ;
+0:ot  VERB_BACK_EINF  ;
+0:toa  VERB_BACK_WEAK_PRESENT  ;
+0:toa  VERB_BACK_STRONG_PRESENT  ;
+0:toa  VERB_BACK_3SG_A  ;
+0:tos  VERB_BACK_WEAK_PAST  ;
+0:tos  VERB_BACK_STRONG_PAST  ;
+0:toa  VERB_BACK_CONDITIONAL  ;
+0:ot  VERB_BACK_IMPERATIVE  ;
+0:on  VERB_BACK_POTENTIAL_N  ;
+0:o  VERB_BACK_PASSIVE_T  ;
+0:ot  VERB_BACK_PASSIVE  ;
+0:ot  VERB_BACK_TUPCP_0  ;
+0:toa  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_KERITÄ
+!!€gt-norm:  Verbs 75 itä
+!!€  keritä: keritä+V+Act+InfA+Sg+Lat 
+0:it  VERB_FRONT_AINF  ;
+0:it  VERB_FRONT_EINF  ;
+0:kiä  VERB_FRONT_WEAK_PRESENT  ;
+0:kiä  VERB_FRONT_STRONG_PRESENT  ;
+0:kiä  VERB_FRONT_3SG_Ä  ;
+0:kis  VERB_FRONT_WEAK_PAST  ;
+0:kis  VERB_FRONT_STRONG_PAST  ;
+0:kiä  VERB_FRONT_CONDITIONAL  ;
+0:it  VERB_FRONT_IMPERATIVE  ;
+0:in  VERB_FRONT_POTENTIAL_N  ;
+0:i  VERB_FRONT_PASSIVE_T  ;
+0:it  VERB_FRONT_PASSIVE  ;
+0:it  VERB_FRONT_TUPCP_0  ;
+0:kiä  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_MUODOTA
+!!€gt-norm:  Verbs 75 dota
+!!€  muodota: muodota+V+Act+InfA+Sg+Lat # form
+0:dot  VERB_BACK_AINF  ;
+0:dot  VERB_BACK_EINF  ;
+0:toa  VERB_BACK_WEAK_PRESENT  ;
+0:toa  VERB_BACK_STRONG_PRESENT  ;
+0:toa  VERB_BACK_3SG_A  ;
+0:tos  VERB_BACK_WEAK_PAST  ;
+0:tos  VERB_BACK_STRONG_PAST  ;
+0:toa  VERB_BACK_CONDITIONAL  ;
+0:dot  VERB_BACK_IMPERATIVE  ;
+0:don  VERB_BACK_POTENTIAL_N  ;
+0:do  VERB_BACK_PASSIVE_T  ;
+0:dot  VERB_BACK_PASSIVE  ;
+0:dot  VERB_BACK_TUPCP_0  ;
+0:toa  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_LÄMMITÄ
+!!€gt-norm:  Verbs 75 mitä
+!!€  lämmitä: lämmitä+V+Act+InfA+Sg+Lat # heat
+0:mit  VERB_FRONT_AINF  ;
+0:mit  VERB_FRONT_EINF  ;
+0:piä  VERB_FRONT_WEAK_PRESENT  ;
+0:piä  VERB_FRONT_STRONG_PRESENT  ;
+0:piä  VERB_FRONT_3SG_Ä  ;
+0:pis  VERB_FRONT_WEAK_PAST  ;
+0:pis  VERB_FRONT_STRONG_PAST  ;
+0:piä  VERB_FRONT_CONDITIONAL  ;
+0:mit  VERB_FRONT_IMPERATIVE  ;
+0:min  VERB_FRONT_POTENTIAL_N  ;
+0:mi  VERB_FRONT_PASSIVE_T  ;
+0:mit  VERB_FRONT_PASSIVE  ;
+0:mit  VERB_FRONT_TUPCP_0  ;
+0:piä  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_AALLOTA
+!!€gt-norm:  Verbs 75 lota
+!!€  aallota: aallota+V+Act+InfA+Sg+Lat # wave
+0:lot  VERB_BACK_AINF  ;
+0:lot  VERB_BACK_EINF  ;
+0:toa  VERB_BACK_WEAK_PRESENT  ;
+0:toa  VERB_BACK_STRONG_PRESENT  ;
+0:toa  VERB_BACK_3SG_A  ;
+0:tos  VERB_BACK_WEAK_PAST  ;
+0:tos  VERB_BACK_STRONG_PAST  ;
+0:toa  VERB_BACK_CONDITIONAL  ;
+0:lot  VERB_BACK_IMPERATIVE  ;
+0:lon  VERB_BACK_POTENTIAL_N  ;
+0:lo  VERB_BACK_PASSIVE_T  ;
+0:lot  VERB_BACK_PASSIVE  ;
+0:lot  VERB_BACK_TUPCP_0  ;
+0:toa  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_HELLITÄ
+!!€gt-norm:  Verbs 75 litä
+!!€  hellitä: hellitä+V+Act+InfA+Sg+Lat # loose
+0:lit  VERB_FRONT_AINF  ;
+0:lit  VERB_FRONT_EINF  ;
+0:tiä  VERB_FRONT_WEAK_PRESENT  ;
+0:tiä  VERB_FRONT_STRONG_PRESENT  ;
+0:tiä  VERB_FRONT_3SG_Ä  ;
+0:tis  VERB_FRONT_WEAK_PAST  ;
+0:tis  VERB_FRONT_STRONG_PAST  ;
+0:tiä  VERB_FRONT_CONDITIONAL  ;
+0:lit  VERB_FRONT_IMPERATIVE  ;
+0:lin  VERB_FRONT_POTENTIAL_N  ;
+0:li  VERB_FRONT_PASSIVE_T  ;
+0:lit  VERB_FRONT_PASSIVE  ;
+0:lit  VERB_FRONT_TUPCP_0  ;
+0:tiä  VERB_FRONT_DERIV_PCPS  ;
+
+!!  !Vowel stems with t:s variation
+
+LEXICON VERB_TAITAA
+!!€gt-norm:  Verbs 76 back
+!!€  taitaa: taitaa+V+Act+InfA+Sg+Lat # can
+0:ta  VERB_BACK_AINF  ;
+0:ta  VERB_BACK_EINF  ;
+0:da  VERB_BACK_WEAK_PRESENT  ;
+0:ta  VERB_BACK_STRONG_PRESENT  ;
+0:ta  VERB_BACK_3SG_A  ;
+0:s  VERB_BACK_WEAK_PAST  ;
+0:s  VERB_BACK_STRONG_PAST  ;
+0:ta  VERB_BACK_CONDITIONAL  ;
+0:ta  VERB_BACK_IMPERATIVE  ;
+0:ta  VERB_BACK_POTENTIAL_N  ;
+0:de  VERB_BACK_PASSIVE_T  ;
+0:det  VERB_BACK_PASSIVE  ;
+0:det  VERB_BACK_TUPCP_0  ;
+0:ta  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_TIETÄÄ
+!!€gt-norm:  Verbs 76 front
+!!€  tietää: tietää+V+Act+InfA+Sg+Lat # know
+0:tä  VERB_FRONT_AINF  ;
+0:tä  VERB_FRONT_EINF  ;
+0:dä  VERB_FRONT_WEAK_PRESENT  ;
+0:tä  VERB_FRONT_STRONG_PRESENT  ;
+0:tä  VERB_FRONT_3SG_Ä  ;
+0:s  VERB_FRONT_WEAK_PAST  ;
+0:s  VERB_FRONT_STRONG_PAST  ;
+0:tä  VERB_FRONT_IMPERATIVE  ;
+0:tä  VERB_FRONT_POTENTIAL_N  ;
+0:tä  VERB_FRONT_CONDITIONAL  ;
+0:de  VERB_FRONT_PASSIVE_T  ;
+0:det  VERB_FRONT_PASSIVE  ;
+0:det  VERB_FRONT_TUPCP_0  ;
+0:tä  VERB_FRONT_DERIV_PCPS  ;
+
+!!  !Verbs with defective paradigms
+!!  For some verbs, the normative inflection does not allow full set of forms:
+
+LEXICON VERB_VIPAJAA
+!!€gt-norm:  Verbs 77 back 
+!!€  vipajaa: vipajaa+V+Act+InfA+Sg+Lat # thump
+0:a  VERB_BACK_AINF  ;
+0  VERB_BACK_STRONG_PRESENT  ;
+0  VERB_BACK_3SG_A  ;
+0  VERB_BACK_STRONG_PAST  ;
+0  VERB_BACK_CONDITIONAL  ;
+0  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_HELÄJÄÄ
+!!€gt-norm:  Verbs 77 front
+!!€  heläjää: heläjää+V+Act+InfA+Sg+Lat # chime
+0:ä  VERB_FRONT_AINF  ;
+0  VERB_FRONT_STRONG_PRESENT  ;
+0  VERB_FRONT_3SG_Ä  ;
+0  VERB_FRONT_STRONG_PAST  ;
+0  VERB_FRONT_CONDITIONAL  ;
+0  VERB_FRONT_DERIV_PCPS  ;
+
+LEXICON VERB_RAIKAA
+!!€gt-norm:  Verbs 78 back
+!!€  raikaa: raikaa+V+Act+InfA+Sg+Lat # baum
+0  VERB_BACK_AINF  ;
+0  VERB_BACK_STRONG_PRESENT  ;
+0  VERB_BACK_3SG_A  ;
+0  VERB_BACK_CONDITIONAL  ;
+0  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_ÄHKÄÄ
+!!€gt-norm:  Verbs 78 front
+!!€  ähkää: ähkää+V+Act+InfA+Sg+Lat # meh
+0  VERB_FRONT_AINF  ;
+0  VERB_FRONT_STRONG_PRESENT  ;
+0  VERB_FRONT_3SG_Ä  ;
+0  VERB_FRONT_CONDITIONAL  ;
+0  VERB_FRONT_DERIV_PCPS  ;
+
+!!  !Verbs with exceptional inflection patterns
+!!  There is a handful of verbs that does not fit to the patterns of old
+!!  dictionaries.
+
+LEXICON VERB_OLLA
+!!  The verb olla has very peculiar and heteroclitic inflection with lot of
+!!  common short forms in standard spoken Finnish:
+!!€gt-norm:  Verb olla
+!!€  olla: olla+V+Act+InfA+Sg+Lat # be
+!!€  lienen: olla+V+Act+Pot+Sg1
+!!€  lie: olla+V+Act+Pot+ConNeg
+!!€  olija: olla+V+Der/ja+Sg+Nom
+0:oll  VERB_BACK_AINF  ;
+0:oll  VERB_BACK_EINF  ;
+0:ole  VERB_BACK_WEAK_PRESENT  ;
++Act+Ind+Prs+Sg3:on  VERB_BACK_CLIT_OPT  ;
++Act+Ind+Prs+Pl3:ovat  VERB_BACK_CLIT_OPT  ;
+0:ol  VERB_BACK_WEAK_PAST  ;
+0:ol  VERB_BACK_STRONG_PAST  ;
+0:ol  VERB_BACK_CONDITIONAL  ;
+0:ol  VERB_BACK_IMPERATIVE  ;
+0+Use/NG:ol  VERB_BACK_POTENTIAL_L  ; ! generate liene-
+0:ol  VERB_BACK_PASSIVE_L  ;
+0:ol  VERB_BACK_PASSIVE  ;
+0:ol  VERB_BACK_TUPCP_L  ;
+0:ole  VERB_BACK_DERIV_PCPS  ;
+
+!0:lie  VERB_FRONT_POTENTIAL_N  ;  - exceptional; general cont.lexicon contains Indicative forms 
++Act+Pot+Pl1:lie%>ne%>mme VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Pl2:lie%>ne%>tte VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Pl3:lie%>ne%>vät  VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Sg1:lie%>ne%>n   VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Sg2:lie%>ne%>t   VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Sg3:lie%>ne%>e   VERB_FRONT_CLIT_OPT     ;
++Act+Pot+ConNeg:lie%>ne VERB_FRONT_CLIT_OPT     ;
++Act+Pot+PrfPrc:lie%>n   ADJ_ÄLLISTYNYT     ;
++Act+Pot+Prt+ConNeg+Sg:lie%>nyt  VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Prt+ConNeg+Pl:lie%>neet  VERB_FRONT_CLIT_OPT ;
+
+!  these were found in exceptions.lexc, but moved here
+!  in order to have all olla in one place. Pleas remove
+!  doublets when detected.
+
++Act+Der/maisilla:olemaisilla  VERB_BACK_POSS_AN  ;
++Act+InfMa+Sg+Abe:olematta  VERB_BACK_POSS_AN_OPT  ;
++Act+InfMa+Sg+Ade:olemalla  VERB_BACK_POSS_AN_OPT  ;
++Act+InfMa+Sg+Ela:olemasta  VERB_BACK_POSS_AN_OPT  ;
++Act+InfMa+Sg+Ill:olemaan  VERB_BACK_POSS_OPT  ;
++Act+InfMa+Sg+Ine:olemassa  VERB_BACK_POSS_OPT  ;
++Act+InfMa+Sg+Ins:oleman  VERB_BACK_CLIT_OPT  ;
++Act+Imprt+Sg2+s:oles  #  ;
++Act+Cond+Sg1+Dial/standard:oisin  VERB_BACK_CLIT_OPT  ;
++Act+Cond+Sg2+Dial/standard:oisit  VERB_BACK_CLIT_OPT  ;
++Act+Cond+Sg3+Dial/standard:ois  VERB_BACK_CLIT_OPT  ;
++Act+Cond+Pl1+Dial/standard:oisimme  VERB_BACK_CLIT_OPT  ;
++Act+Cond+Pl2+Dial/standard:oisitte  VERB_BACK_CLIT_OPT  ;
++Act+Cond+Pl3+Dial/standard:oisivat  VERB_BACK_CLIT_OPT  ;
++Pss+PrfPrc:ol  ADJ_PARANNELTU  ;
+!+Act+AgPrc:olem  ADJ_AALTOILEVA  ;
++Act+NegPrc:olemat  ADJ_VIATON  ;
++Act+PrsPrc+Der/inen:olevai  ADJ_AAKKOSELLINEN  ;
++Act+PrsPrc:olev  ADJ_AALTOILEVA  ;
++Der/minen:olemi  NOUN_AAKKOSTAMINEN  ;
++Der/ja:olij  NOUN_SOITTAJA  ;
++Act+PrfPrc:oll  ADJ_KULUNUT  ;
++Act+Pot+Sg1:lienen  VERB_FRONT_CLIT_OPT  ;
++Act+Pot+Sg2:lienet  VERB_FRONT_CLIT_OPT  ;
++Act+Pot+Sg3:lienee  VERB_FRONT_CLIT_OPT  ;
++Act+Pot+Pl1:lienemme  VERB_FRONT_CLIT_OPT  ;
++Act+Pot+Pl2:lienette  VERB_FRONT_CLIT_OPT  ;
++Act+Pot+Pl3:lienevät  VERB_FRONT_CLIT_OPT  ;
++Act+Pot+ConNeg:liene  VERB_FRONT_CLIT_OPT  ;
++Act+Pot+ConNeg:lie  VERB_FRONT_CLIT_OPT  ;
+
+LEXICON VERB_ARVAILLA
+
+
+:ile  VERB_BACK_WEAK_PRESENT  ;
+:ile  VERB_BACK_STRONG_PRESENT  ;
+:ile  VERB_BACK_3SG_E  ;
+:ile  VERB_BACK_DERIV_PCPS  ;
+
+:ill  VERB_BACK_AINF  ;
+:ill  VERB_BACK_EINF  ;
+:ill  VERB_BACK_OPTATIVE_0_ARCHAIC  ;
+
+:il  VERB_BACK_WEAK_PAST  ;
+:il  VERB_BACK_STRONG_PAST  ;
+:il  VERB_BACK_CONDITIONAL  ;
+:il  VERB_BACK_IMPERATIVE  ;
+:il  VERB_BACK_POTENTIAL_L  ;
+:il  VERB_BACK_PASSIVE_L  ;
+:il  VERB_BACK_PASSIVE  ;
+:il  VERB_BACK_TUPCP_L  ;
+
+! !:ele  VERB_BACK_WEAK_PRESENT  ; rj: form is not used
+!:ele  VERB_BACK_STRONG_PRESENT  ;
+! !:ele  VERB_BACK_3SG_E  ;
+!:ele  VERB_BACK_DERIV_PCPS  ;
+
+!:ell  VERB_BACK_AINF  ;
+!:ell  VERB_BACK_EINF  ;
+!:ell  VERB_BACK_OPTATIVE_0_ARCHAIC  ;
+
+!:el  VERB_BACK_WEAK_PAST  ;
+!:el  VERB_BACK_STRONG_PAST  ;
+!:el  VERB_BACK_CONDITIONAL  ;
+!:el  VERB_BACK_IMPERATIVE  ;
+!:el  VERB_BACK_POTENTIAL_L  ;
+!:el  VERB_BACK_PASSIVE_L  ;
+!:el  VERB_BACK_PASSIVE  ;
+!:el  VERB_BACK_TUPCP_L  ;
+
+LEXICON VERB_EI
+
++Neg:el  VERB_FRONT_OPTATIVE_L_ARCHAIC  ;
++Neg:el  VERB_FRONT_IMPERATIVE_ARCHAIC  ;
+
++Neg+Act+Pl1:emme  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Pl1+Foc/ka:emmekä  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Pl2:ette  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Pl2+Foc/ka:ettekä  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Pl3:eivät  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Pl3+Foc/ka:eivätkä  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Sg1:en  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Sg1+Foc/ka:enkä  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Sg1+Qst+Dial:eks  #  ;
+
++Neg+Act+Sg2:et  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Sg2+Foc/ka:etkä  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Sg2+Qst+Dial:eks  #  ;
+
++Neg+Act+Sg3:ei  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Sg3+Foc/ka:eikä  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Sg3+Qst+Dial:eks  #  ;
+
++Neg+Act+Imprt+Pl1+Foc/ka+Dial:elkäämmekä  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Imprt+Pl1+Foc/ka:älkäämmekä  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Imprt+Pl1+Dial:elkäämme  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Imprt+Pl1:älkäämme  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Imprt+Pl2+Foc/ka+Dial:elkääkä  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Imprt+Pl2+Foc/ka:älkääkä  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Imprt+Pl2+Foc/s:älkääs  #  ;
+
++Neg+Act+Imprt+Pl2+Dial:elkää  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Imprt+Pl2:älkää  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Imprt+Pl3+Foc/ka+Dial:elköötkä  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Imprt+Pl3+Foc/ka:älköötkä  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Imprt+Pl3+Dial:elkööt  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Imprt+Pl3:älkööt  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Imprt+Sg2+Foc/ka+Dial:eläkä  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Imprt+Sg2+Foc/ka:äläkä  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Imprt+Sg2+Foc/s:äläs  #  ;
+
++Neg+Act+Imprt+Sg2+Dial:elä  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Imprt+Sg2:älä  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Imprt+Sg3+Foc/ka+Dial:elköönkä  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Imprt+Sg3+Foc/ka:älköönkä  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Imprt+Sg3+Dial:elköön  VERB_FRONT_CLIT_OPT  ;
+
++Neg+Act+Imprt+Sg3:älköön  VERB_FRONT_CLIT_OPT  ;
+
++Neg:äl  VERB_FRONT_OPTATIVE_L_ARCHAIC  ;
++Neg:äl  VERB_FRONT_IMPERATIVE_ARCHAIC  ;
+
+LEXICON VERB_ERATA
+
+:an  VERB_BACK_POTENTIAL_N  ;
+
+:at  VERB_BACK_AINF  ;
+:at  VERB_BACK_EINF  ;
+:at  VERB_BACK_IMPERATIVE  ;
+:at  VERB_BACK_PASSIVE  ;
+:at  VERB_BACK_TUPCP_0  ;
+:at  VERB_BACK_OPTATIVE_K_ARCHAIC  ;
+
+:a  VERB_BACK_PASSIVE_T  ;
+
+:kane  VERB_BACK_WEAK_PRESENT  ;
+:kane  VERB_BACK_STRONG_PRESENT  ;
+:kane  VERB_BACK_3SG_E  ;
+:kane  VERB_BACK_DERIV_PCPS  ;
+
+:kan  VERB_BACK_WEAK_PAST  ;
+:kan  VERB_BACK_STRONG_PAST  ;
+:kan  VERB_BACK_CONDITIONAL  ;
+
+
+LEXICON VERB_ETUILLA
+
+:e  VERB_BACK_WEAK_PRESENT  ;
+:e  VERB_BACK_STRONG_PRESENT  ;
+:e  VERB_BACK_3SG_E  ;
+:e  VERB_BACK_DERIV_PCPS  ;
+
+:l  VERB_BACK_AINF  ;
+:l  VERB_BACK_EINF  ;
+:l  VERB_BACK_OPTATIVE_0_ARCHAIC  ;
+
+:  VERB_BACK_WEAK_PAST  ;
+:  VERB_BACK_STRONG_PAST  ;
+:  VERB_BACK_CONDITIONAL  ;
+:  VERB_BACK_IMPERATIVE  ;
+:  VERB_BACK_POTENTIAL_L  ;
+:  VERB_BACK_PASSIVE_L  ;
+:  VERB_BACK_PASSIVE  ;
+:  VERB_BACK_TUPCP_L  ;
+
+LEXICON VERB_HALAJAA
+
+:ja  VERB_BACK_WEAK_PRESENT  ;
+:ja  VERB_BACK_STRONG_PRESENT  ;
+:ja  VERB_BACK_3SG_A  ;
+:ja  VERB_BACK_CONDITIONAL  ;
+:ja  VERB_BACK_DERIV_PCPS  ;
+
+:t  VERB_BACK_AINF  ;
+:t  VERB_BACK_OPTATIVE_K_ARCHAIC  ;
+
+LEXICON VERB_KIERTYÄ
+
+:ryt  VERB_FRONT_PASSIVE  ;
+:ryt  VERB_FRONT_TUPCP_0  ;
+
+:ry  VERB_FRONT_WEAK_PRESENT  ;
+:ry  VERB_FRONT_WEAK_PAST  ;
+:ry  VERB_FRONT_PASSIVE_T  ;
+
+:ty  VERB_FRONT_AINF  ;
+:ty  VERB_FRONT_EINF  ;
+:ty  VERB_FRONT_STRONG_PRESENT  ;
+:ty  VERB_FRONT_3SG_Y  ;
+:ty  VERB_FRONT_STRONG_PAST  ;
+:ty  VERB_FRONT_CONDITIONAL  ;
+:ty  VERB_FRONT_IMPERATIVE  ;
+:ty  VERB_FRONT_POTENTIAL_N  ;
+:ty  VERB_FRONT_DERIV_PCPS  ;
+:ty  VERB_FRONT_OPTATIVE_0_ARCHAIC  ;
+
+
+LEXICON VERB_KIVETÄ
+
+:pene  VERB_FRONT_WEAK_PRESENT  ;
+:pene  VERB_FRONT_STRONG_PRESENT  ;
+:pene  VERB_FRONT_3SG_E  ;
+:pene  VERB_FRONT_DERIV_PCPS  ;
+
+:pen  VERB_FRONT_WEAK_PAST  ;
+:pen  VERB_FRONT_STRONG_PAST  ;
+:pen  VERB_FRONT_CONDITIONAL  ;
+
+:ven  VERB_FRONT_POTENTIAL_N  ;
+
+:vet  VERB_FRONT_AINF  ;
+:vet  VERB_FRONT_EINF  ;
+:vet  VERB_FRONT_IMPERATIVE  ;
+:vet  VERB_FRONT_PASSIVE  ;
+:vet  VERB_FRONT_TUPCP_0  ;
+:vet  VERB_FRONT_OPTATIVE_K_ARCHAIC  ;
+
+:ve  VERB_FRONT_PASSIVE_T  ;
+
+LEXICON VERB_LEPÄILLÄ
+
+:ile  VERB_FRONT_WEAK_PRESENT  ;
+:ile  VERB_FRONT_STRONG_PRESENT  ;
+:ile  VERB_FRONT_3SG_E  ;
+:ile  VERB_FRONT_DERIV_PCPS  ;
+
+:ill  VERB_FRONT_AINF  ;
+:ill  VERB_FRONT_EINF  ;
+:ill  VERB_FRONT_OPTATIVE_0_ARCHAIC  ;
+
+:il  VERB_FRONT_WEAK_PAST  ;
+:il  VERB_FRONT_STRONG_PAST  ;
+:il  VERB_FRONT_CONDITIONAL  ;
+:il  VERB_FRONT_IMPERATIVE  ;
+:il  VERB_FRONT_POTENTIAL_L  ;
+:il  VERB_FRONT_PASSIVE_L  ;
+:il  VERB_FRONT_PASSIVE  ;
+:il  VERB_FRONT_TUPCP_L  ;
+
+:ele  VERB_FRONT_WEAK_PRESENT  ;
+:ele  VERB_FRONT_STRONG_PRESENT  ;
+:ele  VERB_FRONT_3SG_E  ;
+:ele  VERB_FRONT_DERIV_PCPS  ;
+
+:ell  VERB_FRONT_AINF  ;
+:ell  VERB_FRONT_EINF  ;
+:ell  VERB_FRONT_OPTATIVE_0_ARCHAIC  ;
+
+:el  VERB_FRONT_WEAK_PAST  ;
+:el  VERB_FRONT_STRONG_PAST  ;
+:el  VERB_FRONT_CONDITIONAL  ;
+:el  VERB_FRONT_IMPERATIVE  ;
+:el  VERB_FRONT_POTENTIAL_L  ;
+:el  VERB_FRONT_PASSIVE_L  ;
+:el  VERB_FRONT_PASSIVE  ;
+:el  VERB_FRONT_TUPCP_L  ;
+
+LEXICON VERB_RENNOTA
+
+:non  VERB_BACK_POTENTIAL_N  ;
+
+:not  VERB_BACK_AINF  ;
+:not  VERB_BACK_EINF  ;
+:not  VERB_BACK_IMPERATIVE  ;
+:not  VERB_BACK_PASSIVE  ;
+:not  VERB_BACK_TUPCP_0  ;
+:not  VERB_BACK_OPTATIVE_K_ARCHAIC  ;
+
+:no  VERB_BACK_PASSIVE_T  ;
+
+:tone  VERB_BACK_WEAK_PRESENT  ;
+:tone  VERB_BACK_STRONG_PRESENT  ;
+:tone  VERB_BACK_3SG_E  ;
+:tone  VERB_BACK_DERIV_PCPS  ;
+
+:ton  VERB_BACK_WEAK_PAST  ;
+:ton  VERB_BACK_STRONG_PAST  ;
+:ton  VERB_BACK_CONDITIONAL  ;
+
+LEXICON VERB_ROHJETA
+
+:jen  VERB_BACK_POTENTIAL_N  ;
+
+:jet  VERB_BACK_AINF  ;
+:jet  VERB_BACK_EINF  ;
+:jet  VERB_BACK_IMPERATIVE  ;
+:jet  VERB_BACK_PASSIVE  ;
+:jet  VERB_BACK_TUPCP_0  ;
+:jet  VERB_BACK_OPTATIVE_K_ARCHAIC  ;
+
+:je  VERB_BACK_PASSIVE_T  ;
+
+:kene  VERB_BACK_WEAK_PRESENT  ;
+:kene  VERB_BACK_STRONG_PRESENT  ;
+:kene  VERB_BACK_3SG_E  ;
+:kene  VERB_BACK_DERIV_PCPS  ;
+
+:ken  VERB_BACK_WEAK_PAST  ;
+:ken  VERB_BACK_STRONG_PAST  ;
+:ken  VERB_BACK_CONDITIONAL  ;
+
+LEXICON VERB_SYÖPYÄ
+
+:py  VERB_FRONT_AINF  ;
+:py  VERB_FRONT_EINF  ;
+:py  VERB_FRONT_STRONG_PRESENT  ;
+:py  VERB_FRONT_3SG_Y  ;
+:py  VERB_FRONT_STRONG_PAST  ;
+:py  VERB_FRONT_CONDITIONAL  ;
+:py  VERB_FRONT_IMPERATIVE  ;
+:py  VERB_FRONT_POTENTIAL_N  ;
+:py  VERB_FRONT_DERIV_PCPS  ;
+:py  VERB_FRONT_OPTATIVE_0_ARCHAIC  ;
+
+:vyt  VERB_FRONT_PASSIVE  ;
+:vyt  VERB_FRONT_TUPCP_0  ;
+
+:vy  VERB_FRONT_WEAK_PRESENT  ;
+:vy  VERB_FRONT_WEAK_PAST  ;
+:vy  VERB_FRONT_PASSIVE_T  ;
+
+LEXICON VERB_TUIKKAA
+
+:ka  VERB_BACK_AINF  ;
+:ka  VERB_BACK_STRONG_PRESENT  ;
+:ka  VERB_BACK_3SG_A  ;
+:ka  VERB_BACK_CONDITIONAL  ;
+:ka  VERB_BACK_DERIV_PCPS  ;
+
+LEXICON VERB_TULLA
+
+:le  VERB_BACK_WEAK_PRESENT  ;
+:le  VERB_BACK_STRONG_PRESENT  ;
+:le  VERB_BACK_3SG_E  ;
+:le  VERB_BACK_DERIV_PCPS  ;
+
+:ll  VERB_BACK_AINF  ;
+:ll  VERB_BACK_EINF  ;
+:ll  VERB_BACK_OPTATIVE_0_ARCHAIC  ;
+
+:l  VERB_BACK_WEAK_PAST  ;
+:l  VERB_BACK_STRONG_PAST  ;
+:l  VERB_BACK_CONDITIONAL  ;
+:l  VERB_BACK_IMPERATIVE  ;
+:l  VERB_BACK_POTENTIAL_L  ;
+:l  VERB_BACK_PASSIVE_L  ;
+:l  VERB_BACK_PASSIVE  ;
+:l  VERB_BACK_TUPCP_L  ;
+
++Dial:u  VERB_BACK_WEAK_PRESENT  ;
+
+LEXICON VERB_VAAHDOTA
+
+:don  VERB_BACK_POTENTIAL_N  ;
+
+:dot  VERB_BACK_AINF  ;
+:dot  VERB_BACK_EINF  ;
+:dot  VERB_BACK_IMPERATIVE  ;
+:dot  VERB_BACK_PASSIVE  ;
+:dot  VERB_BACK_TUPCP_0  ;
+:dot  VERB_BACK_OPTATIVE_K_ARCHAIC  ;
+
+:do  VERB_BACK_PASSIVE_T  ;
+
+:toa  VERB_BACK_WEAK_PRESENT  ;
+:toa  VERB_BACK_STRONG_PRESENT  ;
+:toa  VERB_BACK_3SG_A  ;
+:toa  VERB_BACK_CONDITIONAL  ;
+:toa  VERB_BACK_DERIV_PCPS  ;
+
+:tos  VERB_BACK_WEAK_PAST  ;
+:tos  VERB_BACK_STRONG_PAST  ;
+
+:to  VERB_BACK_CONDITIONAL  ;
+
+LEXICON VERB_VERRATA
+
+:ran  VERB_BACK_POTENTIAL_N  ;
+
+:rat  VERB_BACK_AINF  ;
+:rat  VERB_BACK_EINF  ;
+:rat  VERB_BACK_IMPERATIVE  ;
+:rat  VERB_BACK_PASSIVE  ;
+:rat  VERB_BACK_TUPCP_0  ;
+:rat  VERB_BACK_OPTATIVE_K_ARCHAIC  ;
+
+:ra  VERB_BACK_PASSIVE_T  ;
+
+:taa  VERB_BACK_WEAK_PRESENT  ;
+:taa  VERB_BACK_STRONG_PRESENT  ;
+:taa  VERB_BACK_DERIV_PCPS  ;
+
+:tas  VERB_BACK_WEAK_PAST  ;
+:tas  VERB_BACK_STRONG_PAST  ;
+
+:ta  VERB_BACK_3SG_A  ;
+:ta  VERB_BACK_CONDITIONAL  ;
+
+
+
+LEXICON VERB_HALUTA
+
+:a	VERB_BACK_WEAK_PRESENT ;
+
+:a	VERB_BACK_STRONG_PRESENT ;
+
+:a	VERB_BACK_3SG_A ;
+
+:a	VERB_BACK_CONDITIONAL ;
+
+:a	VERB_BACK_DERIV_PCPS ;
+
+:n	VERB_BACK_POTENTIAL_N ;
+
+:s	VERB_BACK_WEAK_PAST ;
+
+:s	VERB_BACK_STRONG_PAST ;
+
+:t	VERB_BACK_AINF ;
+
+:t	VERB_BACK_EINF ;
+
+:t	VERB_BACK_IMPERATIVE ;
+
+:t	VERB_BACK_PASSIVE ;
+
+:t	VERB_BACK_TUPCP_0 ;
+
+:t	VERB_BACK_OPTATIVE_K_ARCHAIC ;
+
++Dial/Finland:u	VERB_BACK_WEAK_PRESENT ;
+
++Dial/Finland:u	VERB_BACK_STRONG_PRESENT ;
+
++Dial/Finland:u	VERB_BACK_3SG_U ;
+
++Dial/Finland:u	VERB_BACK_CONDITIONAL ;
+
++Dial/Finland:u	VERB_BACK_DERIV_PCPS ;
+
+:	VERB_BACK_PASSIVE_T ;
+
+
+LEXICON AUX_AIKOA
+
+:ko	VERB_BACK_AINF ;
+
+:ko	VERB_BACK_EINF ;
+
+:ko	VERB_BACK_STRONG_PRESENT ;
+
+:ko	VERB_BACK_3SG_O ;
+
+:ko	VERB_BACK_STRONG_PAST ;
+
+:ko	VERB_BACK_CONDITIONAL ;
+
+:ko	VERB_BACK_IMPERATIVE ;
+
+:ko	VERB_BACK_POTENTIAL_N ;
+
+:ko	VERB_BACK_DERIV_PCPS ;
+
+:ko’	VERB_BACK_OPTATIVE_0_ARCHAIC ;
+
+:ot	VERB_BACK_PASSIVE ;
+
+:ot	VERB_BACK_TUPCP_0 ;
+
+:o	VERB_BACK_WEAK_PRESENT ;
+
+:o	VERB_BACK_WEAK_PAST ;
+
+:o	VERB_BACK_PASSIVE_T ;
+
+
+LEXICON AUX_JOUTUA
+
+:dut	VERB_BACK_PASSIVE ;
+
+:dut	VERB_BACK_TUPCP_0 ;
+
+:du	VERB_BACK_WEAK_PRESENT ;
+
+:du	VERB_BACK_WEAK_PAST ;
+
+:du	VERB_BACK_PASSIVE_T ;
+
+:tu	VERB_BACK_AINF ;
+
+:tu	VERB_BACK_EINF ;
+
+:tu	VERB_BACK_STRONG_PRESENT ;
+
+:tu	VERB_BACK_3SG_U ;
+
+:tu	VERB_BACK_STRONG_PAST ;
+
+:tu	VERB_BACK_CONDITIONAL ;
+
+:tu	VERB_BACK_IMPERATIVE ;
+
+:tu	VERB_BACK_POTENTIAL_N ;
+
+:tu	VERB_BACK_DERIV_PCPS ;
+
+:tu	VERB_BACK_OPTATIVE_0_ARCHAIC ;
+
+
+LEXICON AUX_MAHTAA
+
+:da	VERB_BACK_WEAK_PRESENT ;
+
+:det	VERB_BACK_PASSIVE ;
+
+:det	VERB_BACK_TUPCP_0 ;
+
+:de	VERB_BACK_PASSIVE_T ;
+
+:do	VERB_BACK_WEAK_PAST ;
+
+:ta	VERB_BACK_AINF ;
+
+:ta	VERB_BACK_EINF ;
+
+:ta	VERB_BACK_STRONG_PRESENT ;
+
+:ta	VERB_BACK_3SG_A ;
+
+:ta	VERB_BACK_CONDITIONAL ;
+
+:ta	VERB_BACK_IMPERATIVE ;
+
+:ta	VERB_BACK_POTENTIAL_N ;
+
+:ta	VERB_BACK_DERIV_PCPS ;
+
+:ta	VERB_BACK_OPTATIVE_0_ARCHAIC ;
+
+:to	VERB_BACK_STRONG_PAST ;
+
+
+LEXICON AUX_OLLA
+
++Der/ja:olij	NOUN_MAKKARA ;
+
++N:olemi	NOUN_AAKKOSTAMINEN ;
+
++PrfPrc+Act:oll	ADJ_KULUNUT ;
+
+!:lie	VERB_FRONT_POTENTIAL_N ; - exceptional; general cont.lexicon contains Indicative forms 
++Act+Pot+Pl1:lie%>ne%>mme VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Pl2:lie%>ne%>tte VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Pl3:lie%>ne%>vät  VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Sg1:lie%>ne%>n   VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Sg2:lie%>ne%>t   VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Sg3:lie%>ne%>e   VERB_FRONT_CLIT_OPT     ;
++Act+Pot+ConNeg:lie%>ne VERB_FRONT_CLIT_OPT     ;
++Act+Pot+PrfPrc:lie%>n   ADJ_ÄLLISTYNYT     ;
++Act+Pot+Prt+ConNeg+Sg:lie%>nyt  VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Prt+ConNeg+Pl:lie%>neet  VERB_FRONT_CLIT_OPT ;
+
+:ole	VERB_BACK_WEAK_PRESENT ;
+
+:ole	VERB_BACK_DERIV_PCPS ;
+
+:oll	VERB_BACK_AINF ;
+
+:oll	VERB_BACK_EINF ;
+
+:oll	VERB_BACK_OPTATIVE_0_ARCHAIC ;
+
+:ol	VERB_BACK_WEAK_PAST ;
+
+:ol	VERB_BACK_STRONG_PAST ;
+
+:ol	VERB_BACK_CONDITIONAL ;
+
+:ol	VERB_BACK_IMPERATIVE ;
+
+:ol	VERB_BACK_PASSIVE_L ;
+
+:ol	VERB_BACK_PASSIVE ;
+
+:ol	VERB_BACK_TUPCP_L ;
+
++Dial/Finland:oo	VERB_BACK_WEAK_PRESENT ;
+
++Act+PrfPrc:ollut	# ;
+
++Act+PrfPrc+Dial/Finland:ollu	# ;
+
++Act+Der/maisilla:olemaisilla	VERB_BACK_POSS_AN ;
+
++Act+InfMa+Abe:olematta	VERB_BACK_POSS_AN_OPT ;
+
++Act+InfMa+Ade:olemalla	VERB_BACK_CLIT_OPT ;
+
++Act+InfMa+Ela:olemasta	VERB_BACK_CLIT_OPT ;
+
++Act+InfMa+Ill:olemaan	VERB_BACK_CLIT_OPT ;
+
++Act+InfMa+Ine:olemassa	VERB_BACK_CLIT_OPT ;
+
++Act+InfMa+Ins:oleman	VERB_BACK_CLIT_OPT ;
+
++Act+Cond+Pl1+Dial/Finland:oisimme	VERB_BACK_CLIT_OPT ;
+
++Act+Cond+Pl2+Dial/Finland:oisitte	VERB_BACK_CLIT_OPT ;
+
++Act+Cond+Pl3+Dial/Finland:oisivat	VERB_BACK_CLIT_OPT ;
+
++Act+Cond+Sg1+Dial/Finland:oisin	VERB_BACK_CLIT_OPT ;
+
++Act+Cond+Sg2+Dial/Finland:oisit	VERB_BACK_CLIT_OPT ;
+
++Act+Cond+Sg3+Dial/Finland:oisi	VERB_BACK_CLIT_OPT ;
+
++Act+Cond+Sg3+Dial/Finland:ois	VERB_BACK_CLIT_OPT ;
+
++Act+Ind+Prt+Pl+ConNeg:olleet	VERB_BACK_CLIT_OPT ;
+
++Act+Ind+Prt+Sg+ConNeg:ollut	VERB_BACK_CLIT_OPT ;
+
++Act+Ind+Prt+Sg+ConNeg+Dial/Finland:ollu	VERB_BACK_CLIT_OPT ;
+
++Act+Pot+ConNeg:liene	VERB_FRONT_CLIT_OPT ;
+
++Act+Pot+ConNeg:lie	VERB_FRONT_CLIT_OPT ;
+
++Act+Pot+Pl1:lienemme	VERB_FRONT_CLIT_OPT ;
+
++Act+Pot+Pl2:lienette	VERB_FRONT_CLIT_OPT ;
+
++Act+Pot+Pl3:lienevät	VERB_FRONT_CLIT_OPT ;
+
++Act+Pot+Sg1:lienen	VERB_FRONT_CLIT_OPT ;
+
++Act+Pot+Sg2:lienet	VERB_FRONT_CLIT_OPT ;
+
++Act+Pot+Sg3:lienee	VERB_FRONT_CLIT_OPT ;
+
++Act+Pot+Sg3:lie	VERB_FRONT_CLIT_OPT ;
+
++Act+Ind+Prs+Pl3:ovat	VERB_BACK_CLIT_OPT ;
+
++Act+Ind+Prs+Sg3:on	VERB_BACK_CLIT_OPT ;
+
++Act+Ind+Prs+Sg3+Dial/Finland:ompi	VERB_BACK_CLIT_OPT ;
+
++Pss+PrfPrc:ol	ADJ_PARANNELTU ;
+
+
+LEXICON AUX_PITÄÄ
+
+:det	VERB_FRONT_PASSIVE ;
+
+:det	VERB_FRONT_TUPCP_0 ;
+
+:de	VERB_FRONT_PASSIVE_T ;
+
+:d	VERB_FRONT_WEAK_PAST ;
+
+:dä	VERB_FRONT_WEAK_PRESENT ;
+
+:t	VERB_FRONT_STRONG_PAST ;
+
+:tä	VERB_FRONT_AINF ;
+
+:tä	VERB_FRONT_EINF ;
+
+:tä	VERB_FRONT_STRONG_PRESENT ;
+
+:tä	VERB_FRONT_3SG_Ä ;
+
+:tä	VERB_FRONT_CONDITIONAL ;
+
+:tä	VERB_FRONT_IMPERATIVE ;
+
+:tä	VERB_FRONT_POTENTIAL_N ;
+
+:tä	VERB_FRONT_DERIV_PCPS ;
+
+:tä	VERB_FRONT_OPTATIVE_0_ARCHAIC ;
+
+
+LEXICON AUX_SAATTAA
+
+:a	VERB_BACK_WEAK_PRESENT ;
+
+:et	VERB_BACK_PASSIVE ;
+
+:et	VERB_BACK_TUPCP_0 ;
+
+:e	VERB_BACK_PASSIVE_T ;
+
+:o	VERB_BACK_WEAK_PAST ;
+
+:ta	VERB_BACK_AINF ;
+
+:ta	VERB_BACK_EINF ;
+
+:ta	VERB_BACK_STRONG_PRESENT ;
+
+:ta	VERB_BACK_3SG_A ;
+
+:ta	VERB_BACK_CONDITIONAL ;
+
+:ta	VERB_BACK_IMPERATIVE ;
+
+:ta	VERB_BACK_POTENTIAL_N ;
+
+:ta	VERB_BACK_DERIV_PCPS ;
+
+:ta	VERB_BACK_OPTATIVE_0_ARCHAIC ;
+
+:to	VERB_BACK_STRONG_PAST ;
+
+
+LEXICON AUX_TAITAA
+
+:da	VERB_BACK_WEAK_PRESENT ;
+
+:det	VERB_BACK_PASSIVE ;
+
+:det	VERB_BACK_TUPCP_0 ;
+
+:de	VERB_BACK_PASSIVE_T ;
+
+:n	VERB_BACK_POTENTIAL_N ;
+
+:s	VERB_BACK_WEAK_PAST ;
+
+:s	VERB_BACK_STRONG_PAST ;
+
+:ta	VERB_BACK_AINF ;
+
+:ta	VERB_BACK_EINF ;
+
+:ta	VERB_BACK_STRONG_PRESENT ;
+
+:ta	VERB_BACK_3SG_A ;
+
+:ta	VERB_BACK_CONDITIONAL ;
+
+:ta	VERB_BACK_IMPERATIVE ;
+
+:ta	VERB_BACK_IMPERATIVE ;
+
+:ta	VERB_BACK_POTENTIAL_N ;
+
+:ta	VERB_BACK_DERIV_PCPS ;
+
+:ta	VERB_BACK_OPTATIVE_0_ARCHAIC ;
+
+
+LEXICON AUX_TARVITA
+
+:n	VERB_BACK_POTENTIAL_N ;
+
+:tse	VERB_BACK_WEAK_PRESENT ;
+
+:tse	VERB_BACK_STRONG_PRESENT ;
+
+:tse	VERB_BACK_3SG_E ;
+
+:tse	VERB_BACK_DERIV_PCPS ;
+
+:ts	VERB_BACK_WEAK_PAST ;
+
+:ts	VERB_BACK_STRONG_PAST ;
+
+:ts	VERB_BACK_CONDITIONAL ;
+
+:t	VERB_BACK_AINF ;
+
+:t	VERB_BACK_EINF ;
+
+:t	VERB_BACK_IMPERATIVE ;
+
+:t	VERB_BACK_PASSIVE ;
+
+:t	VERB_BACK_TUPCP_0 ;
+
+:t	VERB_BACK_OPTATIVE_K_ARCHAIC ;
+
++Dial/Finland:a	VERB_BACK_3SG_A ;
+
++Dial/Finland:a	VERB_BACK_WEAK_PRESENT ;
+
++Dial/Finland:a	VERB_BACK_STRONG_PRESENT ;
+
++Dial/Finland+Act+Ind+Prs+ConNeg:	VERB_BACK_CLIT_KIN_KAAN_OPT ;
+
++Dial/Finland:	VERB_BACK_3SG_I ;
+
+:	VERB_BACK_PASSIVE_T ;
+
+
+LEXICON AUX_TÄYTYÄ
+
+:dyt	VERB_FRONT_PASSIVE ;
+
+:dyt	VERB_FRONT_TUPCP_0 ;
+
+:dy	VERB_FRONT_WEAK_PRESENT ;
+
+:dy	VERB_FRONT_WEAK_PAST ;
+
+:dy	VERB_FRONT_PASSIVE_T ;
+
+:ty	VERB_FRONT_AINF ;
+
+:ty	VERB_FRONT_EINF ;
+
+:ty	VERB_FRONT_STRONG_PRESENT ;
+
+:ty	VERB_FRONT_3SG_Y ;
+
+:ty	VERB_FRONT_STRONG_PAST ;
+
+:ty	VERB_FRONT_CONDITIONAL ;
+
+:ty	VERB_FRONT_IMPERATIVE ;
+
+:ty	VERB_FRONT_POTENTIAL_N ;
+
+:ty	VERB_FRONT_DERIV_PCPS ;
+
+:ty	VERB_FRONT_OPTATIVE_0_ARCHAIC ;
+
+
+LEXICON AUX_VOIDA
+
+:id	VERB_BACK_AINF ;
+
+:id	VERB_BACK_EINF ;
+
+:i’	VERB_BACK_OPTATIVE_0_ARCHAIC ;
+
+:i	VERB_BACK_WEAK_PRESENT ;
+
+:i	VERB_BACK_STRONG_PRESENT ;
+
+:i	VERB_BACK_IMPERATIVE ;
+
+:i	VERB_BACK_POTENTIAL_N ;
+
+:i	VERB_BACK_PASSIVE_D ;
+
+:i	VERB_BACK_PASSIVE ;
+
+:i	VERB_BACK_TUPCP_D ;
+
+:i	VERB_BACK_DERIV_PCPS ;
+
+:i	VERB_BACK_OPTATIVE_0_ARCHAIC ;
+
+:	VERB_BACK_3SG_I ;
+
+:	VERB_BACK_CONDITIONAL ;
+
+:	VERB_BACK_WEAK_PAST ;
+
+:	VERB_BACK_STRONG_PAST ;
+
+
+
+
+!! !!Verb inflection proper
+
+
+!! !Present vowel stems
+
+LEXICON VERB_BACK_WEAK_PRESENT
+!!gt-norm: Verb weak present back
+!!€ kutoa: kutoa+V+Act+InfA+Sg+Lat # knit
+!!€ kudon: kutoa+V+Act+Ind+Prs+Sg1
++Act+Ind+Prs+Sg1:%>n VERB_BACK_CLIT_OPT     ;
++Act+Ind+Prs+Sg2:%>t VERB_BACK_CLIT_OPT     ;
++Act+Ind+Prs+Pl1:%>mme   VERB_BACK_CLIT_OPT     ;
++Act+Ind+Prs+Pl2:%>tte   VERB_BACK_CLIT_OPT     ;
++Act+Ind+Prs+ConNeg:%>0    VERB_BACK_CLIT_OPT     ;
++Act+Imprt+Prs+ConNeg+Sg2:%>0    VERB_BACK_CLIT_OPT     ;
++Act+Imprt+Sg2:%>0    VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_WEAK_PRESENT
+!!gt-norm: Verb weak present front
+!!€ yltää: yltää+V+Act+InfA+Sg+Lat # reach
+!!€ yllän: yltää+V+Act+Ind+Prs+Sg1
++Act+Ind+Prs+Sg1:%>n VERB_FRONT_CLIT_OPT     ;
++Act+Ind+Prs+Sg2:%>t VERB_FRONT_CLIT_OPT     ;
++Act+Ind+Prs+Pl1:%>mme   VERB_FRONT_CLIT_OPT     ;
++Act+Ind+Prs+Pl2:%>tte   VERB_FRONT_CLIT_OPT     ;
++Act+Ind+Prs+ConNeg:%>0    VERB_FRONT_CLIT_OPT     ;
++Act+Imprt+Prs+ConNeg+Sg2:%>0    VERB_FRONT_CLIT_OPT     ;
++Act+Imprt+Sg2:%>0    VERB_FRONT_CLIT_OPT     ;
+
+!! The strong form of present indicative endings in strong stems and ma 
+!! infinitive, and maisilla derivation (nee infinitive).
+LEXICON VERB_BACK_STRONG_PRESENT
+!!€gt-norm: Verb strong present back
+!!€ kutovat: kutoa+V+Act+Ind+Prs+Pl3
+!!€ kutomatta: kutoa+V+Act+InfMa+Sg+Abe
++Act+Ind+Prs+Pl3:%>vat   VERB_BACK_CLIT_OPT     ;
++Act+InfMa+Sg+Abe:%>ma%>tta   VERB_BACK_POSS_AN_OPT      ;
++Act+InfMa+Sg+Ade:%>ma%>lla   VERB_BACK_CLIT_OPT     ;
++Act+InfMa+Sg+Ela:%>ma%>sta   VERB_BACK_CLIT_OPT     ;
++Act+InfMa+Sg+Ill:%>ma%>an    VERB_BACK_CLIT_OPT     ;
++Act+InfMa+Sg+Ine:%>ma%>ssa   VERB_BACK_CLIT_OPT     ;
++Act+InfMa+Sg+Ins:%>ma%>n    VERB_BACK_CLIT_OPT     ;
++Act+Der/maisilla:%>ma»isi%>lla   VERB_BACK_POSS_AN_OBL        ;
+
+LEXICON VERB_FRONT_STRONG_PRESENT
+!!€gt-norm: Verb strong present front
+!!€ yltävät: yltää+V+Act+Ind+Prs+Pl3
+!!€ yltämättä: yltää+V+Act+InfMa+Sg+Abe
++Act+Ind+Prs+Pl3:%>vät   VERB_FRONT_CLIT_OPT     ;
++Act+InfMa+Sg+Abe:%>mä%>ttä   VERB_FRONT_POSS_AN_OPT      ;
++Act+InfMa+Sg+Ade:%>mä%>llä   VERB_FRONT_CLIT_OPT     ;
++Act+InfMa+Sg+Ela:%>mä%>stä   VERB_FRONT_CLIT_OPT     ;
++Act+InfMa+Sg+Ill:%>mä%>än    VERB_FRONT_CLIT_OPT     ;
++Act+InfMa+Sg+Ine:%>mä%>ssä   VERB_FRONT_CLIT_OPT     ;
++Act+InfMa+Sg+Ins:%>mä%>n    VERB_FRONT_CLIT_OPT     ;
++Act+Der/maisilla:%>mä»isi%>llä   VERB_FRONT_POSS_AN_OBL        ;
+
+!! !Verb 3rd singular forms
+!! The third singular form of present tense has few allomorphs according to
+!! preceding vowel context, either lengthening or zero after long vowel stem:
+
+LEXICON VERB_BACK_3SG_A
+!!€gt-norm: Verb 3rd singular a
+!!€ rakentaa: rakentaa+V+Act+Ind+Prs+Sg3 # builds
++Act+Ind+Prs+Sg3:%>a VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_BACK_3SG_E
+!!€gt-norm: Verb 3rd singular e back
+!!€ tulee: tulla+V+Act+Ind+Prs+Sg3 # comes
++Act+Ind+Prs+Sg3:%>e VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_3SG_E
+!!€gt-norm: Verb 3rd singular e front
+!!€ menee: mennä+V+Act+Ind+Prs+Sg3 # goes
++Act+Ind+Prs+Sg3:%>e VERB_FRONT_CLIT_OPT     ;
+
+LEXICON VERB_BACK_3SG_I
+!!€gt-norm: Verb 3rd singular i back
+!!€ munii: munia+V+Act+Ind+Prs+Sg3 # lays eggs
++Act+Ind+Prs+Sg3:%>i VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_3SG_I
+!!€gt-norm: Verb 3rd singular e front
+!!€ rämpii: rämpiä+V+Act+Ind+Prs+Sg3 # hikes
++Act+Ind+Prs+Sg3:%>i VERB_FRONT_CLIT_OPT     ;
+
+LEXICON VERB_BACK_3SG_O
+!!€gt-norm: Verb 3rd singular o back
+!!€ kutoo: kutoa+V+Act+Ind+Prs+Sg3
++Act+Ind+Prs+Sg3:%>o VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_BACK_3SG_U
+!!€gt-norm: Verb 3rd singular u back
+!!€ viruu: virua+V+Act+Ind+Prs+Sg3 # stretches
++Act+Ind+Prs+Sg3:%>u VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_3SG_Y
+!!€gt-norm: Verb 3rd singular y
+!!€ kääntyy: kääntyä+V+Act+Ind+Prs+Sg3 # turns
++Act+Ind+Prs+Sg3:%>y VERB_FRONT_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_3SG_Ö
+!!€gt-norm: Verb 3rd singular ö
+!!€ säilöö: säilöä+V+Act+Ind+Prs+Sg3 # conserves
++Act+Ind+Prs+Sg3:%>ö VERB_FRONT_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_3SG_Ä
+!!€gt-norm: Verb 3rd singular ä
+!!€ vääntää: vääntää+V+Act+Ind+Prs+Sg3 # twist
++Act+Ind+Prs+Sg3:%>ä VERB_FRONT_CLIT_OPT     ;
+
+!! !Past forms
+
+LEXICON VERB_BACK_WEAK_PAST
+!!€gt-norm: Verb past back
+!!€ kudoin: kutoa+V+Act+Ind+Prt+Sg1
++Act+Ind+Prt+Sg1:%>i%>n   VERB_BACK_CLIT_OPT     ;
++Act+Ind+Prt+Sg2:%>i%>t   VERB_BACK_CLIT_OPT     ;
++Act+Ind+Prt+Pl1:%>i%>mme VERB_BACK_CLIT_OPT     ;
++Act+Ind+Prt+Pl2:%>i%>tte VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_WEAK_PAST
+!!€gt-norm: Verb past front
+!!€ ylsin: yltää+V+Act+Ind+Prt+Sg1
++Act+Ind+Prt+Sg1:%>i%>n   VERB_FRONT_CLIT_OPT     ;
++Act+Ind+Prt+Sg2:%>i%>t   VERB_FRONT_CLIT_OPT     ;
++Act+Ind+Prt+Pl1:%>i%>mme VERB_FRONT_CLIT_OPT     ;
++Act+Ind+Prt+Pl2:%>i%>tte VERB_FRONT_CLIT_OPT     ;
+
+LEXICON VERB_BACK_STRONG_PAST
+!!€gt-norm: Verb past back strong
+!!€ kutoivat: kutoa+V+Act+Ind+Prt+Pl3
++Act+Ind+Prt+Sg3:%>i    VERB_BACK_CLIT_OPT     ;
++Act+Ind+Prt+Pl3:%>i%>vat  VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_STRONG_PAST
+!!€gt-norm: Verb past front strong
+!!€ ylsivät: yltää+V+Act+Ind+Prt+Pl3
++Act+Ind+Prt+Pl3:%>i%>vät  VERB_FRONT_CLIT_OPT     ;
++Act+Ind+Prt+Sg3:%>i    VERB_FRONT_CLIT_OPT     ;
+
+!! !Imperatives
+
+LEXICON VERB_BACK_IMPERATIVE
+!!€gt-norm: Verb imperative back
+!!€ kutokaa: kutoa+V+Act+Imprt+Pl2
++Act+Imprt+Pl1:%>kaamme   VERB_BACK_CLIT_OPT     ;
++Act+Imprt+Pl2+Foc/s:%>kaas  VERB_BACK_CLIT_OPT     ;
++Act+Imprt+Pl2:%>kaa  VERB_BACK_CLIT_OPT     ;
++Act+Imprt+Pl3:%>koot VERB_BACK_CLIT_OPT     ;
++Act+Imprt+Sg3:%>koon VERB_BACK_CLIT_OPT     ;
++Act+Imprt+ConNeg:%>ko   VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_IMPERATIVE
+!!€gt-norm: Verb imperative front
+!!€ yltäkää: yltää+V+Act+Imprt+Pl2
++Act+Imprt+Pl1:%>käämme   VERB_FRONT_CLIT_OPT     ;
++Act+Imprt+Pl2+Foc/s:%>kääs  VERB_FRONT_CLIT_OPT     ;
++Act+Imprt+Pl2:%>kää  VERB_FRONT_CLIT_OPT     ;
++Act+Imprt+Pl3:%>kööt VERB_FRONT_CLIT_OPT     ;
++Act+Imprt+Sg3:%>köön VERB_FRONT_CLIT_OPT     ;
++Act+Imprt+ConNeg:%>kö   VERB_FRONT_CLIT_OPT     ;
+
+!! !Conditionals
+
+LEXICON VERB_BACK_CONDITIONAL
+!!€gt-norm: Verb conditional back
+!!€ kutoisin: kutoa+V+Act+Cond+Sg1
++Act+Cond+Pl1:%>isi%>mme VERB_BACK_CLIT_OPT     ;
++Act+Cond+Pl2:%>isi%>tte VERB_BACK_CLIT_OPT     ;
++Act+Cond+Pl3:%>isi%>vat  VERB_BACK_CLIT_OPT     ;
++Act+Cond+Sg1:%>isi%>n   VERB_BACK_CLIT_OPT     ;
++Act+Cond+Sg2:%>isi%>t   VERB_BACK_CLIT_OPT     ;
++Act+Cond+Sg3:%>isi%>    VERB_BACK_CLIT_OPT     ;
++Act+Cond+ConNeg:%>isi VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_CONDITIONAL
+!!€gt-norm: Verb conditional front
+!!€ yltäisin: yltää+V+Act+Cond+Sg1
++Act+Cond+Pl1:%>isi%>mme VERB_FRONT_CLIT_OPT     ;
++Act+Cond+Pl2:%>isi%>tte VERB_FRONT_CLIT_OPT     ;
++Act+Cond+Pl3:%>isi%>vät  VERB_FRONT_CLIT_OPT     ;
++Act+Cond+Sg1:%>isi%>n   VERB_FRONT_CLIT_OPT     ;
++Act+Cond+Sg2:%>isi%>t   VERB_FRONT_CLIT_OPT     ;
++Act+Cond+Sg3:%>isi%>    VERB_FRONT_CLIT_OPT     ;
++Act+Cond+ConNeg:%>isi VERB_FRONT_CLIT_OPT     ;
+
+!! !Potentials
+
+LEXICON VERB_BACK_POTENTIAL_N
+!!€gt-norm: Verb potential n back
+!!€ kutonen: kutoa+V+Act+Pot+Sg1
++Act+Pot+Pl1:%>ne%>mme VERB_BACK_CLIT_OPT     ;
++Act+Pot+Pl2:%>ne%>tte VERB_BACK_CLIT_OPT     ;
++Act+Pot+Pl3:%>ne%>vat  VERB_BACK_CLIT_OPT     ;
++Act+Pot+Sg1:%>ne%>n   VERB_BACK_CLIT_OPT     ;
++Act+Pot+Sg2:%>ne%>t   VERB_BACK_CLIT_OPT     ;
++Act+Pot+Sg3:%>ne%>e   VERB_BACK_CLIT_OPT     ;
++Act+Pot+ConNeg:%>ne VERB_BACK_CLIT_OPT     ;
++Act+PrfPrc:%>n   ADJ_KULUNUT       ;
++Act+Ind+Prt+ConNeg+Sg:%>nut  VERB_BACK_CLIT_OPT     ;
++Act+Ind+Prt+ConNeg+Pl:%>neet VERB_BACK_CLIT_OPT ;
+
+LEXICON VERB_FRONT_POTENTIAL_N
+!!€gt-norm: Verb potential n front
+!!€ yltänen: yltää+V+Act+Pot+Sg1
++Act+Pot+Pl1:%>ne%>mme VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Pl2:%>ne%>tte VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Pl3:%>ne%>vät  VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Sg1:%>ne%>n   VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Sg2:%>ne%>t   VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Sg3:%>ne%>e   VERB_FRONT_CLIT_OPT     ;
++Act+Pot+ConNeg:%>ne VERB_FRONT_CLIT_OPT     ;
++Act+PrfPrc:%>n   ADJ_ÄLLISTYNYT     ;
++Act+Ind+Prt+ConNeg+Sg:%>nyt  VERB_FRONT_CLIT_OPT     ;
++Act+Ind+Prt+ConNeg+Pl:%>neet  VERB_FRONT_CLIT_OPT ;
+
+LEXICON VERB_BACK_POTENTIAL_S
+!!€gt-norm: Verb potential s back
+!!€ juossen: juosta+V+Act+Pot+Sg1 # I might run
++Act+Pot+Pl1:%>se%>mme VERB_BACK_CLIT_OPT     ;
++Act+Pot+Pl2:%>se%>tte VERB_BACK_CLIT_OPT     ;
++Act+Pot+Pl3:%>se%>vat  VERB_BACK_CLIT_OPT     ;
++Act+Pot+Sg1:%>se%>n   VERB_BACK_CLIT_OPT     ;
++Act+Pot+Sg2:%>se%>t   VERB_BACK_CLIT_OPT     ;
++Act+Pot+Sg3:%>se%>e   VERB_BACK_CLIT_OPT     ;
++Act+Pot+ConNeg:%>se VERB_BACK_CLIT_OPT     ;
++Act+PrfPrc:%>s   ADJ_KULUNUT       ;
++Act+Ind+Prt+ConNeg+Sg:%>sut  VERB_BACK_CLIT_OPT     ;
++Act+Ind+Prt+ConNeg+Pl:%>seet  VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_POTENTIAL_S
+!!€gt-norm: Verb potential s front
+!!€ päässen: päästä+V+Act+Pot+Sg1 # I might be able to
++Act+Pot+Pl1:%>se%>mme VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Pl2:%>se%>tte VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Pl3:%>se%>vät  VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Sg1:%>se%>n   VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Sg2:%>se%>t   VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Sg3:%>se%>e   VERB_FRONT_CLIT_OPT     ;
++Act+Pot+ConNeg:%>se VERB_FRONT_CLIT_OPT     ;
++Act+PrfPrc:%>s ADJ_ÄLLISTYNYT      ;
++Act+Ind+Prt+ConNeg+Sg:%>syt  VERB_FRONT_CLIT_OPT     ;
++Act+Ind+Prt+ConNeg+Pl:%>seet  VERB_FRONT_CLIT_OPT     ;
+
+LEXICON VERB_BACK_POTENTIAL_L
+!!€gt-norm: Verb potential l back
+!!€ tullen: tulla+V+Act+Pot+Sg1
++Act+Pot+Pl1:%>le%>mme VERB_BACK_CLIT_OPT     ;
++Act+Pot+Pl2:%>le%>tte VERB_BACK_CLIT_OPT     ;
++Act+Pot+Pl3:%>le%>vat  VERB_BACK_CLIT_OPT     ;
++Act+Pot+Sg1:%>le%>n   VERB_BACK_CLIT_OPT     ;
++Act+Pot+Sg2:%>le%>t   VERB_BACK_CLIT_OPT     ;
++Act+Pot+Sg3:%>le%>e   VERB_BACK_CLIT_OPT     ;
++Act+Pot+ConNeg:%>le VERB_BACK_CLIT_OPT     ;
++Act+PrfPrc:%>l  ADJ_KULUNUT      ;
++Act+Ind+Prt+ConNeg+Sg:%>lut  VERB_BACK_CLIT_OPT     ;
++Act+Ind+Prt+ConNeg+Pl:%>leet  VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_POTENTIAL_L
+!!€gt-norm: Verb potential l front
+!!€ kävellen: kävellä+V+Act+Pot+Sg1 # I might walk
++Act+Pot+Pl1:%>le%>mme VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Pl2:%>le%>tte VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Pl3:%>le%>vät  VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Sg1:%>le%>n   VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Sg2:%>le%>t   VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Sg3:%>le%>e   VERB_FRONT_CLIT_OPT     ;
++Act+Pot+ConNeg:%>le VERB_FRONT_CLIT_OPT     ;
++Act+PrfPrc:%>l  ADJ_ÄLLISTYNYT  ;
++Act+Ind+Prt+ConNeg+Sg:%>lyt  VERB_FRONT_CLIT_OPT     ;
++Act+Ind+Prt+ConNeg+Pl:%>leet  VERB_FRONT_CLIT_OPT     ;
+
+LEXICON VERB_BACK_POTENTIAL_R
+!!€gt-norm: Verb potential r back
+!!€ surren: surra+V+Act+Pot+Sg1 # I might be sad
++Act+Pot+Pl1:%>re%>mme VERB_BACK_CLIT_OPT     ;
++Act+Pot+Pl2:%>re%>tte VERB_BACK_CLIT_OPT     ;
++Act+Pot+Pl3:%>re%>vat  VERB_BACK_CLIT_OPT     ;
++Act+Pot+Sg1:%>re%>n   VERB_BACK_CLIT_OPT     ;
++Act+Pot+Sg2:%>re%>t   VERB_BACK_CLIT_OPT     ;
++Act+Pot+Sg3:%>re%>e   VERB_BACK_CLIT_OPT     ;
++Act+Pot+ConNeg:%>re VERB_BACK_CLIT_OPT     ;
++Act+PrfPrc:%>r  ADJ_KULUNUT      ;
++Act+Ind+Prt+ConNeg+Sg:%>rut  VERB_BACK_CLIT_OPT     ;
++Act+Ind+Prt+ConNeg+Pl:%>reet  VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_POTENTIAL_R
+!!€gt-norm: Verb potential r front
+!!€ pierren: pierrä+V+Act+Pot+Sg1 # I might fart
++Act+Pot+Pl1:%>re%>mme VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Pl2:%>re%>tte VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Pl3:%>re%>vät  VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Sg1:%>re%>n   VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Sg2:%>re%>t   VERB_FRONT_CLIT_OPT     ;
++Act+Pot+Sg3:%>re%>e   VERB_FRONT_CLIT_OPT     ;
++Act+Pot+ConNeg:%>re VERB_FRONT_CLIT_OPT     ;
++Act+PrfPrc:%>r  ADJ_ÄLLISTYNYT  ;
++Act+Ind+Prt+ConNeg+Sg:%>ryt  VERB_FRONT_CLIT_OPT     ;
++Act+Ind+Prt+ConNeg+Pl:%>reet  VERB_FRONT_CLIT_OPT     ;
+
+!! !!Passive forms
+!! The passive forms usually contain -ta-, -tä-, -da-, -dä-, element in them.
+!! The variation between the realisations is one key factor of determining the
+!! classification of the verb roots.
+
+LEXICON VERB_BACK_PASSIVE
+!!€gt-norm: Verb passive back
+!!€ kudottiin: kutoa+V+Pss+Ind+Prt+Pe4
+!!€ juostiin: juosta+V+Pss+Ind+Prt+Pe4
++Pss+Cond+Pe4:%>ta%>isiin VERB_BACK_CLIT_OPT     ;
++Pss+Cond+Pe4+ConNeg:%>ta%>isi  VERB_BACK_CLIT_OPT     ;
++Pss+Imprt+Pe4+ConNeg:%>ta%>ko    VERB_BACK_CLIT_OPT     ;
++Pss+Imprt+Pe4:%>ta%>koon    VERB_BACK_CLIT_OPT     ;
++Pss+InfE+Ine:%>ta%>essa  VERB_BACK_CLIT_OPT      ;
++Pss+InfE+Ins:%>ta%>en   VERB_BACK_CLIT_OPT     ;
++Pss+InfMa+Sg+Ins:%>ta%>man  VERB_BACK_CLIT_OPT     ;
++Pss+Pot+Pe4:%>ta%>neen  VERB_BACK_CLIT_OPT     ;
++Pss+Pot+Pe4+ConNeg:%>ta%>ne   VERB_BACK_CLIT_OPT     ;
++Pss+Ind+Prt+Pe4:tiin VERB_BACK_CLIT_OPT     ;
++Pss+PrsPrc:%>ta%>v    NOUN_SOITTAJA   ;
+
+LEXICON VERB_FRONT_PASSIVE
+!!€gt-norm: Verb passive front
+!!€ nähtiin: nähdä+V+Pss+Ind+Prt+Pe4
++Pss+Cond+Pe4:%>tä%>isiin VERB_FRONT_CLIT_OPT     ;
++Pss+Cond+Pe4+ConNeg:%>tä%>isi  VERB_FRONT_CLIT_OPT     ;
++Pss+Imprt+Pe4+ConNeg:%>tä%>kö    VERB_FRONT_CLIT_OPT     ;
++Pss+Imprt+Pe4:%>tä%>köön    VERB_FRONT_CLIT_OPT     ;
++Pss+InfE+Ine:%>tä%>essä  VERB_FRONT_CLIT_OPT      ;
++Pss+InfE+Ins:%>tä%>en   VERB_FRONT_CLIT_OPT     ;
++Pss+InfMa+Ins:%>tä%>män  VERB_FRONT_CLIT_OPT     ;
++Pss+Pot+Pe4:%>tä%>neen  VERB_FRONT_CLIT_OPT     ;
++Pss+Pot+Pe4+ConNeg:%>tä%>ne   VERB_FRONT_CLIT_OPT     ;
++Pss+Ind+Prt+Pe4:tiin VERB_FRONT_CLIT_OPT     ;
++Pss+PrsPrc:%>tä%>v    ADJ_TYÖLLISTETTÄVÄ ;
+
+
+!! The form of present passive assimilates leftwards, varying between
+!! -ta, -tä, -da, -dä, -la, -lä, -ra, -rä, -na, -nä.
+
+LEXICON VERB_BACK_PASSIVE_T
+!!€gt-norm: Verb passive back t
+!!€ juostaan: juosta+V+Pss+Ind+Prs+Pe4
++Pss+Ind+Prs+Pe4:%>ta%>an    VERB_BACK_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:%>ta    VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_PASSIVE_T
+!!€gt-norm: Verb passive front t
+!!€ ylletään: yltää+V+Pss+Ind+Prs+Pe4
++Pss+Ind+Prs+Pe4:%>tä%>än    VERB_FRONT_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:%>tä    VERB_FRONT_CLIT_OPT     ;
+
+LEXICON VERB_BACK_PASSIVE_D
+!!€gt-norm: Verb passive back d
+!!€ kopioidaan: kopioida+V+Pss+Ind+Prs+Pe4 # copy-passive
++Pss+Ind+Prs+Pe4:%>da%>an    VERB_BACK_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:%>da    VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_PASSIVE_D
+!!€gt-norm: Verb passive front d
+!!€ nähdään: nähdä+V+Pss+Ind+Prs+Pe4
++Pss+Ind+Prs+Pe4:%>dä%>än    VERB_FRONT_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:%>dä    VERB_FRONT_CLIT_OPT     ;
+
+LEXICON VERB_BACK_PASSIVE_L
+!!€gt-norm: Verb passive back l
+!!€ vuollaan: vuolla+V+Pss+Ind+Prs+Pe4 # carve wood-passive
++Pss+Ind+Prs+Pe4:%>la%>an    VERB_BACK_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:%>la    VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_PASSIVE_L
+!!€gt-norm: Verb passive front l
+!!€ niellään: niellä+V+Pss+Ind+Prs+Pe4 # swallow-passive
++Pss+Ind+Prs+Pe4:%>lä%>än    VERB_FRONT_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:%>lä    VERB_FRONT_CLIT_OPT     ;
+
+LEXICON VERB_BACK_PASSIVE_R
+!!€gt-norm: Verb passive back r
+!!€ surraan: surra+V+Pss+Ind+Prs+Pe4 # sorrow-passive
++Pss+Ind+Prs+Pe4:%>ra%>an    VERB_FRONT_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:%>ra    VERB_FRONT_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_PASSIVE_R
+!!€gt-norm: Verb passive front r
+!!€ pierrään: pierrä+V+Pss+Ind+Prs+Pe4 # fart-passive
++Pss+Ind+Prs+Pe4:%>rä%>än    VERB_FRONT_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:%>rä    VERB_FRONT_CLIT_OPT     ;
+
+LEXICON VERB_BACK_PASSIVE_N
+!!€gt-norm: Verb passive back n
+!!€ pannaan: panna+V+Pss+Ind+Prs+Pe4 # put-passive
++Pss+Ind+Prs+Pe4:naan    VERB_BACK_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:na    VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_PASSIVE_N
+!!€gt-norm: Verb passive front n
+!!€ mennään: mennä+V+Pss+Ind+Prs+Pe4
++Pss+Ind+Prs+Pe4:nään    VERB_FRONT_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:nä    VERB_FRONT_CLIT_OPT     ;
+
+
+!! !!Infinite verb forms
+
+LEXICON VERB_BACK_AINF
+!!€gt-norm: Verb a infinitive
+!!€ juoda: juoda+V+Act+InfA+Sg+Lat # drink
++Act+InfA+Sg+Lat:a     VERB_BACK_CLIT_OPT     ;
++Act+InfA+Sg+Tra:akse  VERB_BACK_POSS_EN_OBL        ;
+
+LEXICON VERB_FRONT_AINF
+!!€gt-norm: Verb ä infinitive
+!!€ nähdä: nähdä+V+Act+InfA+Sg+Lat
++Act+InfA+Sg+Lat:ä     VERB_FRONT_CLIT_OPT     ;
++Act+InfA+Sg+Tra:äkse  VERB_FRONT_POSS_EN_OBL        ;
+
+LEXICON VERB_BACK_EINF
+!!€gt-norm: Verb E infinitive back
+!!€ kutoessa: kutoa+V+Act+InfE+Sg+Ine
++Act+InfE+Sg+Ine:essa   VERB_BACK_POSS_AN_OPT      ;
++Act+InfE+Sg+Ins:en    VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_EINF
+!!€gt-norm: Verb E infinitive front
+!!€ yltäessä: yltää+V+Act+InfE+Sg+Ine
++Act+InfE+Sg+Ine:essä   VERB_FRONT_POSS_AN_OPT      ;
++Act+InfE+Sg+Ins:en    VERB_FRONT_CLIT_OPT     ;
+
+!! !Participles
+
+LEXICON VERB_BACK_TUPCP_STRONG
+!!€gt-norm: Verb nut participle passive tu
+!!€ valkaistu: valkaista+V+Pss+PrfPrc+Sg+Nom # bleached
++Pss+PrfPrc:tu            ADJ_VALKAISTU        ;
++Pss+Ind+Prt+ConNeg:tu    VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_TUPCP_STRONG
+!!€gt-norm: Verb nut participle passive ty
+!!€ häpäisty: häpäistä+V+Pss+PrfPrc+Sg+Nom # sacrileged
++Pss+PrfPrc:ty            ADJ_HÄPÄISTY     ;
++Pss+Ind+Prt+ConNeg:ty    VERB_FRONT_CLIT_OPT     ;
+
+LEXICON VERB_BACK_TUPCP_0
+!!€gt-norm: Verb nut participle passive tu~u
+!!€ huudettu: huutaa+V+Pss+PrfPrc+Sg+Nom # yelled
++Pss+PrfPrc:0             ADJ_VIMMATTU      ;
++Pss+Ind+Prt+ConNeg:tu    VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_TUPCP_0
+!!€gt-norm: Verb nut participle passive ty~y
+!!€ ylennetty: ylentää+V+Pss+PrfPrc+Sg+Nom # promoted
++Pss+PrfPrc:0             ADJ_YLENNETTY       ;
++Pss+Ind+Prt+ConNeg:ty    VERB_FRONT_CLIT_OPT     ;
+
+LEXICON VERB_BACK_TUPCP_D
+!!€gt-norm: Verb nut participle passive tu~du
+!!€ viipaloitu: viipaloida+V+Pss+PrfPrc+Sg+Nom # sliced
++Pss+PrfPrc:0             ADJ_VIIPALOITU    ;
++Pss+Ind+Prt+ConNeg:tu    VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_TUPCP_D
+!!€gt-norm: Verb nut participle passive ty~dy
+!!€ yksilöity: yksilöidä+V+Pss+PrfPrc+Sg+Nom # singled out
++Pss+PrfPrc:0             ADJ_YKSILÖITY        ;
++Pss+Ind+Prt+ConNeg:ty    VERB_FRONT_CLIT_OPT     ;
+
+LEXICON VERB_BACK_TUPCP_L
+!!€gt-norm: Verb nut participle passive tu~lu
+!!€ paranneltu: parannella+V+Pss+PrfPrc+Sg+Nom # embettered
++Pss+PrfPrc:0             ADJ_PARANNELTU  ;
++Pss+Ind+Prt+ConNeg:tu    VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_TUPCP_L
+!!€gt-norm: Verb nut participle passive ty~ly
+!!€ vähätelty: vähätellä+V+Pss+PrfPrc+Sg+Nom # belittled
++Pss+PrfPrc:0             ADJ_VÄHÄTELTY        ;
++Pss+Ind+Prt+ConNeg:ty    VERB_FRONT_CLIT_OPT     ;
+
+LEXICON VERB_BACK_TUPCP_N
+!!€gt-norm: Verb nut participle passive tu~nu
+!!€ pantu: panna+V+Pss+PrfPrc+Sg+Nom # put
++Pss+PrfPrc:0             ADJ_PANTU  ;
++Pss+Ind+Prt+ConNeg:tu    VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_TUPCP_N
+!!€gt-norm: Verb nut participle passive ty~ny
+!!€ menty: mennä+V+Pss+PrfPrc+Sg+Nom # went
++Pss+PrfPrc:0             ADJ_MENTY        ;
++Pss+Ind+Prt+ConNeg:ty    VERB_FRONT_CLIT_OPT     ;
+
+LEXICON VERB_BACK_TUPCP_R
+!!€gt-norm: Verb nut participle passive tu~ru
+!!€ purtu: purra+V+Pss+PrfPrc+Sg+Nom # bitten
++Pss+PrfPrc:0             ADJ_PURTU ;
++Pss+Ind+Prt+ConNeg:tu    VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_TUPCP_R
+!!€gt-norm: Verb nut participle passive ty~ry
+!!€ pierty: pierrä+V+Pss+PrfPrc+Sg+Nom
++Pss+PrfPrc:0             ADJ_PIERTY     ;
++Pss+Ind+Prt+ConNeg:ty    VERB_FRONT_CLIT_OPT     ;
+
+!! !Possessives for infinite verb forms
+LEXICON VERB_FRONT_POSS
+!!€gt-norm: Verb possessive front
+!!€ kutoakseni: kutoa+V+Act+InfA+Sg+Tra+PxSg1
+!!€ kutoessasi: kutoa+V+Act+InfE+Sg+Ine+PxSg2
++PxSg1:ni  VERB_FRONT_CLIT_OPT        ;
++PxSg2:si  VERB_FRONT_CLIT_OPT        ;
++PxSg3:nsä VERB_FRONT_CLIT_OPT        ;
++PxPl1:mme VERB_FRONT_CLIT_OPT        ;
++PxPl2:nne VERB_FRONT_CLIT_OPT        ;
++PxPl3:nsä VERB_FRONT_CLIT_OPT        ;
+
+LEXICON VERB_BACK_POSS
+!!€gt-norm: Verb possessive back
+!!€ nähdäkseni: nähdä+V+Act+InfA+Sg+Tra+PxSg1
+!!€ nähdessäsi: nähdä+V+Act+InfE+Sg+Ine+PxSg2
++PxSg1:ni  VERB_BACK_CLIT_OPT        ;
++PxSg2:si  VERB_BACK_CLIT_OPT        ;
++PxSg3:nsa VERB_BACK_CLIT_OPT        ;
++PxPl1:mme VERB_BACK_CLIT_OPT        ;
++PxPl2:nne VERB_BACK_CLIT_OPT        ;
++PxPl3:nsa VERB_BACK_CLIT_OPT        ;
+
+LEXICON VERB_BACK_POSS_AN
+!!€gt-norm: Verb possessive back an
+!!€ kutomattaan: kutoa+V+Act+InfMa+Sg+Abe+PxSg3
++PxSg3:an    VERB_BACK_CLIT_OPT     ;
++PxPl3:an    VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_BACK_POSS_EN
+!!€gt-norm: Verb possessive back en
+!!€ kutoakseen: kutoa+V+Act+InfA+Sg+Tra+PxPl3
++PxSg3:en    VERB_BACK_CLIT_OPT     ;
++PxPl3:en    VERB_BACK_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_POSS_EN
+!!€gt-norm: Verb possessive front en
+!!€ nähdäkseen: nähdä+V+Act+InfA+Sg+Tra+PxPl3
++PxSg3:en    VERB_FRONT_CLIT_OPT     ;
++PxPl3:en    VERB_FRONT_CLIT_OPT     ;
+
+LEXICON VERB_FRONT_POSS_AN
+!!€gt-norm: Verb possessive back än
+!!€ näkemättään: nähdä+V+Act+InfMa+Sg+Abe+PxSg3
++PxSg3:än    VERB_FRONT_CLIT_OPT     ;
++PxPl3:än    VERB_FRONT_CLIT_OPT     ;
+
+!! !Verb clitics
+
+LEXICON VERB_BACK_CLIT
+!!€gt-norm: Verbs clitic back
+!!€ kudonhan: kutoa+V+Act+Ind+Prs+Sg1+Foc/han
+!!€ kudotko: kutoa+V+Act+Ind+Prs+Sg2+Qst
++Foc/han:han   #        ;
++Foc/han+Foc/kaan:hankaan  #        ;
++Foc/han+Qst:hanko #        ;
++Foc/han+Foc/pa:hanpa #        ;
++Qst:ko #        ;
++Qst+Foc/han:kohan #        ;
++Qst+Foc/kaan:kokaan    #        ;
++Qst+Foc/kin:kokin    #        ;
++Qst+Foc/pa:kopa   #        ;
++Qst+Foc/s:kos    #        ;
++Foc/pa:pa #        ;
++Foc/pa+Foc/han:pahan #        ;
++Foc/pa+Foc/kaan:pakaan    #        ;
++Foc/pa+Foc/kin:pakin    #        ;
++Foc/pa+Qst:pako   #        ;
++Foc/pa+Foc/s:pas    #        ;
++Foc/kin:kin  #        ;
++Foc/kin+Foc/han:kinhan  #        ;
++Foc/kin+Foc/kaan:kinkaan #        ;
++Foc/kin+Qst:kinko    #        ;
++Foc/kin+Foc/pa:kinpa    #        ;
++Foc/kaan:kaan  #        ;
++Foc/kaan+Foc/han:kaanhan  #        ;
++Foc/kaan+Foc/kin:kaankin #        ;
++Foc/kaan+Qst:kaanko    #        ;
++Foc/kaan+Foc/pa:kaanpa    #        ;
+
+LEXICON VERB_FRONT_CLIT
+!!€gt-norm: Verbs clitic front
+!!€ näenhän: nähdä+V+Act+Ind+Prs+Sg1+Foc/han
+!!€ näetkö: nähdä+V+Act+Ind+Prs+Sg2+Qst
++Foc/han:hän   #        ;
++Foc/han+Foc/kaan:hänkään  #        ;
++Foc/han+Qst:hänkö #        ;
++Foc/han+Foc/pa:hänpä #        ;
++Qst:kö #        ;
++Qst+Foc/han:köhän #        ;
++Qst+Foc/kaan:kökään    #        ;
++Qst+Foc/kin:kökin    #        ;
++Qst+Foc/pa:köpä   #        ;
++Qst+Foc/s:kös    #        ;
++Foc/pa:pä #        ;
++Foc/pa+Foc/han:pähän #        ;
++Foc/pa+Foc/kaan:päkään    #        ;
++Foc/pa+Foc/kin:päkin    #        ;
++Foc/pa+Qst:päkö   #        ;
++Foc/pa+Foc/s:päs    #        ;
++Foc/kin:kin  #        ;
++Foc/kin+Foc/han:kinhän  #        ;
++Foc/kin+Foc/kaan:kinkään #        ;
++Foc/kin+Qst:kinkö    #        ;
++Foc/kin+Foc/pa:kinpä    #        ;
++Foc/kaan:kään  #        ;
++Foc/kaan+Foc/han:käänhän  #        ;
++Foc/kaan+Foc/kin:käänkin #        ;
++Foc/kaan+Qst:käänkö    #        ;
++Foc/kaan+Foc/pa:käänpä    #        ;
+
+! Shorthands are not tested or documented yet
+LEXICON VERB_BACK_CLIT_OPT
+0   VERB_BACK_CLIT    ;
+0   #   ;
+
+LEXICON VERB_FRONT_CLIT_OPT
+0   VERB_FRONT_CLIT    ;
+0   #   ;
+
+LEXICON VERB_BACK_POSS_EN_OBL
+0   VERB_BACK_POSS  ;
+0   VERB_BACK_POSS_EN ;
+
+LEXICON VERB_FRONT_POSS_EN_OBL
+0   VERB_FRONT_POSS  ;
+0   VERB_FRONT_POSS_EN ;
+
+LEXICON VERB_BACK_POSS_AN_OBL
+0   VERB_BACK_POSS  ;
+0   VERB_BACK_POSS_AN ;
+
+LEXICON VERB_BACK_POSS_OPT
+0   VERB_BACK_POSS  ;
+0   #   ;
+
+LEXICON VERB_BACK_POSS_AN_OPT
+0   VERB_BACK_POSS  ;
+0   VERB_BACK_POSS_AN ;
+0   VERB_BACK_CLIT_OPT   ;
+0   #   ;
+
+LEXICON VERB_FRONT_POSS_AN_OBL
+0   VERB_FRONT_POSS  ;
+0   VERB_FRONT_POSS_AN ;
+
+!LEXICON VERB_FRONT_POSS_OPT
+!0   VERB_FRONT_POSS  ;
+!0   #   ;
+
+LEXICON VERB_FRONT_POSS_AN_OPT
+0   VERB_FRONT_POSS  ;
+0   VERB_FRONT_POSS_AN ;
+0   VERB_FRONT_CLIT_OPT   ;
+0   #   ;
+
+!! !!Deverbal derivations
+!! Part of the deverbal derivation system in Finnish is so regular that it has
+!! been included as part of inflectional morphology in many traditional systems.
+!! These derivations are treated as inflection in our system as well.
+
+!! !-minen, "Fourth infinitive"
+
+!LEXICON VERB_BACK_DERIV_MINEN
+!€gt-norm: Verbs minen derivations
+!€ aakkostaminen aakkostaa+V+Der/minen+Sg+Nom
+!+Der/minen:mi  NOUN_AAKKOSTAMINEN   ;
+
+!LEXICON VERB_FRONT_DERIV_MINEN
+!€ näkeminen nähdä+V+Der/minen+Sg+Nom
+!+Der/minen:mi  NOUN_KYLKIÄINEN   ;
+
+!! !Participles
+
+LEXICON VERB_BACK_DERIV_PCPS
+!!€gt-norm: Verbs participle back
+!!€ kutomani: kutoa+V+AgPrc+Sg+Nom+PxSg1
+!!€ kutomaton: kutoa+V+NegPrc+Sg+Nom
+!!€ kutova: kutoa+V+Act+PrsPrc+Sg+Nom
++AgPrc:m       ADJ_AALTOILEVA        ;
++NegPrc:mat     ADJ_VIATON      ;
++Act+PrsPrc:v       ADJ_AALTOILEVA      ;
++Der/minen:mi      NOUN_AAKKOSTAMINEN        ;
++Act+PrsPrc+Der/inen:vai     NOUN_AAKKOSTAMINEN  ;
+
+LEXICON VERB_FRONT_DERIV_PCPS
+!!€gt-norm: Verbs participle front
+!!€ näkemäni: nähdä+V+AgPrc+Sg+Nom+PxSg1
+!!€ näkemätön: nähdä+V+NegPrc+Sg+Nom
+!!€ näkevä: nähdä+V+Act+PrsPrc+Sg+Nom
++AgPrc:m       ADJ_TYÖLLISTETTÄVÄ        ;
++NegPrc:mät     ADJ_KYVYTÖN       ;
++Act+PrsPrc:v       ADJ_TYÖLLISTETTÄVÄ       ;
++Der/minen:mi      NOUN_KYLKIÄINEN        ;
++Act+PrsPrc+Der/inen:väi     NOUN_KYLKIÄINEN  ;
+
+
+LEXICON VERB_BACK_OPTATIVE_0_ARCHAIC
+
++Act+Opt+Sg1:%>on  VERB_BACK_CLIT_OPT ;
+
++Act+Opt+Sg2:%>os  VERB_BACK_CLIT_OPT ;
+
+
+LEXICON VERB_BACK_OPTATIVE_K_ARCHAIC
+
++Act+Opt+Sg1:kon  VERB_BACK_CLIT_OPT ;
+
++Act+Opt+Sg2:kos  VERB_BACK_CLIT_OPT ;
+
+
+LEXICON VERB_BACK_OPTATIVE_R_ARCHAIC
+
++Act+Opt+Sg1:ron  VERB_BACK_CLIT_OPT ;
+
++Act+Opt+Sg2:ros  VERB_BACK_CLIT_OPT ;
+
+
+LEXICON VERB_BACK_OPTATIVE_S_ARCHAIC
+
++Act+Opt+Sg1:son  VERB_BACK_CLIT_OPT ;
+
++Act+Opt+Sg2:sos  VERB_BACK_CLIT_OPT ;
+
+
+
+LEXICON VERB_FRONT_OPTATIVE_0_ARCHAIC
+
++Act+Opt+Sg1:%>ön  VERB_FRONT_CLIT_OPT ;
+
++Act+Opt+Sg2:%>ös  VERB_FRONT_CLIT_OPT ;
+
+
+LEXICON VERB_FRONT_OPTATIVE_K_ARCHAIC
+
++Act+Opt+Sg1:%>kön  VERB_FRONT_CLIT_OPT ;
+
++Act+Opt+Sg2:%>kös  VERB_FRONT_CLIT_OPT ;
+
+
+LEXICON VERB_FRONT_OPTATIVE_L_ARCHAIC
+
++Act+Opt+Sg1:%>lön  VERB_FRONT_CLIT_OPT ;
+
++Act+Opt+Sg2:%>lös  VERB_FRONT_CLIT_OPT ;
+
+
+LEXICON VERB_FRONT_OPTATIVE_R_ARCHAIC
+
++Act+Opt+Sg1:rön  VERB_FRONT_CLIT_OPT ;
+
++Act+Opt+Sg2:rös  VERB_FRONT_CLIT_OPT ;
+
+
+LEXICON VERB_FRONT_OPTATIVE_S_ARCHAIC
+
++Act+Opt+Sg1:sön  VERB_FRONT_CLIT_OPT ;
+
++Act+Opt+Sg2:sös  VERB_FRONT_CLIT_OPT ;
+
+LEXICON VERB_FRONT_IMPERATIVE_ARCHAIC
+
++Act+Imprt+Pl2:%>kää%>tten  VERB_FRONT_CLIT_OPT ;
+
++Act+Imprt+Pl2:%>kää%>tte  VERB_FRONT_CLIT_OPT ;
+
++Act+Imprt+Sg1:%>kää%>mi  VERB_FRONT_CLIT_OPT ;
+
++Act+Imprt+Sg1:%>kää%>ni  VERB_FRONT_CLIT_OPT ;
+
++Act+Opt+Pl1:%>köö%>mme  VERB_FRONT_CLIT_OPT ;
+
++Act+Opt+Sg2:%>köö%>tte  VERB_FRONT_CLIT_OPT ;
+
+LEXICON VERB_BACK_CLIT_KIN_KAAN_OPT
+
+:	# ;
+
++Foc/kaan:%>kaan	# ;
+
++Foc/kin:%>kin	# ;
+
+
