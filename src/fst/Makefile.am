@@ -107,7 +107,7 @@ GT_DISTRO_SRCS=
 GIELLA_LOCAL_TARGETS=
 
 generated_files/smi-abbreviations.lexc: \
-			$(GIELLA_SHARED)/smi/src/morphology/stems/smi-abbreviations.lexc
+			$(GIELLA_SHARED)/smi/src/fst/stems/smi-abbreviations.lexc
 	$(AM_V_at)$(MKDIR_P) generated_files
 	$(AM_V_GEN)cp -f $< $@
 
@@ -124,7 +124,7 @@ generated_files/smi-$(GTLANG)-abbreviations.lexc: \
 
 
 generated_files/%.lexc: \
-			$(GIELLA_SHARED)/smi/src/morphology/stems/%.lexc
+			$(GIELLA_SHARED)/smi/src/fst/stems/%.lexc
 	$(AM_V_at)$(MKDIR_P) generated_files
 	$(AM_V_GEN)cp -f $< $@
 
