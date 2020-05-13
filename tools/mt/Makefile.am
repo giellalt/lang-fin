@@ -31,10 +31,15 @@
 
 ##########################################
 # Subdirs:
-SUBDIRS = filters .
+SUBDIRS = filters . apertium cgbased
 
+##########################################
+# Variable declarations:
+APERTIUM_ANALYSER_HFST=
+APERTIUM_GENERATORS_HFST=
+CLEAN_FILES=
 
-#### Do NOT edit below here: ####
-include $(srcdir)/Makefile.modification-fst.am
-include $(srcdir)/Makefile.modification-pattern.am
-include $(top_srcdir)/../giella-core/am-shared/tools-hyphenators-dir-include.am
+##########################################
+# Includes:
+include $(srcdir)/Makefile.modifications.am
+include $(top_srcdir)/../giella-core/am-shared/tools-mt-dir-include.am
