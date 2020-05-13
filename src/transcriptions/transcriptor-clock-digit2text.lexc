@@ -1,0 +1,194 @@
+Multichar_Symbols
+
+
+!@P.1.ON@ @D.1.ON@ @C.1@ 
+!@P.2.ON@ @D.2.ON@ @C.2@ 
+!@P.3.ON@ @D.3.ON@ @C.3@ 
+!@P.4.ON@ @D.4.ON@ @C.4@ 
+!@P.5.ON@ @D.5.ON@ @C.5@ 
+!@P.6.ON@ @D.6.ON@ @C.6@ 
+!@P.7.ON@ @D.7.ON@ @C.7@ 
+!@P.8.ON@ @D.8.ON@ @C.8@ 
+!@P.9.ON@ @D.9.ON@ @C.9@ 
+!@P.10.ON@ @D.10.ON@ @C.10@ 
+!@P.11.ON@ @D.11.ON@ @C.11@ 
+!@P.12.ON@ @D.12.ON@ @C.12@ 
+
+
+@U.TIME.1@ 
+@U.TIME.2@ 
+@U.TIME.3@ 
+@U.TIME.4@ 
+@U.TIME.5@ 
+@U.TIME.6@ 
+@U.TIME.7@ 
+@U.TIME.8@ 
+@U.TIME.9@ 
+@U.TIME.10@ 
+@U.TIME.11@ 
+@U.TIME.12@ 
+
+LEXICON Root
+     %0: smallhour ; ! 01:30
++Use/NA: smallhour ; ! 1:30
+         largehour ; ! 12:30
+
+LEXICON smallhour
+1@U.TIME.1@:@U.TIME.1@     AFTpunkt ;    !1:00 - 01:19
+1@U.TIME.2@:@U.TIME.2@     BEFpunkt ;    !1:20 - 01:59
+2@U.TIME.2@:@U.TIME.2@     AFTpunkt ;    !2:00 - 02:19
+2@U.TIME.3@:@U.TIME.3@     BEFpunkt ;    !2:20 - 02:59
+3@U.TIME.3@:@U.TIME.3@     AFTpunkt ;    !3:00 - 03:19
+3@U.TIME.4@:@U.TIME.4@     BEFpunkt ;    !3:20 - 03:59
+4@U.TIME.4@:@U.TIME.4@     AFTpunkt ;    !4:00 - 04:19
+4@U.TIME.5@:@U.TIME.5@     BEFpunkt ;    !4:20 - 04:59
+5@U.TIME.5@:@U.TIME.5@     AFTpunkt ;    !5:00 - 05:19
+5@U.TIME.6@:@U.TIME.6@     BEFpunkt ;    !5:20 - 05:59
+6@U.TIME.6@:@U.TIME.6@     AFTpunkt ;    !6:00 - 06:19
+6@U.TIME.7@:@U.TIME.7@     BEFpunkt ;    !6:20 - 06:59
+7@U.TIME.7@:@U.TIME.7@     AFTpunkt ;    !7:00 - 07:19
+7@U.TIME.8@:@U.TIME.8@     BEFpunkt ;    !7:20 - 07:59
+8@U.TIME.8@:@U.TIME.8@     AFTpunkt ;    !8:00 - 08:19
+8@U.TIME.9@:@U.TIME.9@     BEFpunkt ;    !8:20 - 08:59
+9@U.TIME.9@:@U.TIME.9@     AFTpunkt ;    !9:00 - 09:19
+9@U.TIME.10@:@U.TIME.10@   BEFpunkt ;    !9:20 - 09:59
+
+LEXICON largehour
+1%0@U.TIME.10@:@U.TIME.10@   AFTpunkt ;  !10:00 - 10:19
+1%0@U.TIME.11@:@U.TIME.11@   BEFpunkt ;  !10:20 - 10:59
+11@U.TIME.11@:@U.TIME.11@    AFTpunkt ;   !11:00 - 11:59
+11@U.TIME.12@:@U.TIME.12@    BEFpunkt ;   !11:19 - 11:59
+12@U.TIME.12@:@U.TIME.12@    AFTpunkt ;   !12:00 - 12:19
+12@U.TIME.1@:@U.TIME.1@      BEFpunkt ;     !12:19 - 12:59
+13@U.TIME.1@+Use/NG:@U.TIME.1@      AFTpunkt ;     !13:00 - 13:19
+13@U.TIME.2@+Use/NG:@U.TIME.2@      BEFpunkt ;     !13:19 - 13:59
+14@U.TIME.2@+Use/NG:@U.TIME.2@      AFTpunkt ;     !14:00 - 114:19
+14@U.TIME.3@+Use/NG:@U.TIME.3@      BEFpunkt ;     !14:19 - 14:59
+15@U.TIME.3@+Use/NG:@U.TIME.3@      AFTpunkt ;     !15:00 - 15:19
+15@U.TIME.4@+Use/NG:@U.TIME.4@      BEFpunkt ;     !15:19 - 15:59
+16@U.TIME.4@+Use/NG:@U.TIME.4@      AFTpunkt ;     !16:00 - 16:19
+16@U.TIME.5@+Use/NG:@U.TIME.5@      BEFpunkt ;     !16:19 - 16:59
+17@U.TIME.5@+Use/NG:@U.TIME.5@      AFTpunkt ;     !17:00 - 17:19
+17@U.TIME.6@+Use/NG:@U.TIME.6@      BEFpunkt ;     !17:19 - 17:59
+18@U.TIME.6@+Use/NG:@U.TIME.6@      AFTpunkt ;     !18:00 - 18:19
+18@U.TIME.7@+Use/NG:@U.TIME.7@      BEFpunkt ;     !18:19 - 18:59
+19@U.TIME.7@+Use/NG:@U.TIME.7@      AFTpunkt ;     !19:00 - 19:19
+19@U.TIME.8@+Use/NG:@U.TIME.8@      BEFpunkt ;     !19:20 - 19:59
+2%0@U.TIME.8@+Use/NG:@U.TIME.8@     AFTpunkt ;    !20:00 - 20:19
+2%0@U.TIME.9@+Use/NG:@U.TIME.9@     BEFpunkt ;    !20:20 - 20:59
+21@U.TIME.9@+Use/NG:@U.TIME.9@      AFTpunkt ;     !21:00 - 21:19
+21@U.TIME.10@+Use/NG:@U.TIME.10@    BEFpunkt ;   !21:20 - 21:59
+22@U.TIME.10@+Use/NG:@U.TIME.10@    AFTpunkt ;   !22:00 - 22:19
+22@U.TIME.11@+Use/NG:@U.TIME.11@    BEFpunkt ;   !22:19 - 22:59
+23@U.TIME.11@+Use/NG:@U.TIME.11@    AFTpunkt ;   !23:00 - 23:19
+23@U.TIME.12@+Use/NG:@U.TIME.12@    BEFpunkt ;   !23:19 - 23:59
+24%:%0%0+Use/NG:kaksitoista       # ;      !24:00
+%0%0@U.TIME.12@:@U.TIME.12@  AFTpunkt ; !00:00 - 00:19
+%0%0@U.TIME.1@:@U.TIME.1@  BEFpunkt ; !00:19 - 00:59
+
+ 
+LEXICON BEFpunkt
+ %:: BEF ;
+!  %:+Use/NA: BEF ; ! sme
+ %.+Use/NA: BEF ;
+
+LEXICON AFTpunkt
+ %:: AFT ;  ! 2:00 = göökte
+! %:+Use/NA: AFT ;  ! 2:00 = göökte sme
+ %.+Use/NA: AFT ;  ! 2.00 = göökte
+ +Use/NA:  HOUR ;  ! 2    = göökte
+ 
+
+LEXICON BEF
+2%0:kymmenen%  TOHALF ;
+ 21:yhdeksän%  TOHALF ;
+ 22:kahdeksän%  TOHALF ;
+ 23:seitsemän%  TOHALF ;
+ 24:kuusi%  TOHALF ;
+ 25:viisi%  TOHALF ; 
+ 26:neljä%  TOHALF ; 
+ 27:kolme%  TOHALF ;
+ 28:kaksi%  TOHALF ; 
+ 29:yksi%  TOHALF ;
+3%0:puoli%  HOUR ;
+ 31:yksi%   OVERHALF ;
+ 32:kaksi%  OVERHALF ;
+ 33:kolme%  OVERHALF ;
+ 34:neljä%  OVERHALF ;
+ 35:viisi%  OVERHALF ;
+ 36:kuusi%  OVERHALF ;
+ 37:seitsemän%  OVERHALF ;
+ 38:kahdeksän%  OVERHALF ; 
+ 39:yhdeksän%  OVERHALF ;
+4%0:kymmenen%   OVERHALF ;
+ 41:yhdeksäntoista%  TO ;
+ 42:kahdeksäntoista%  TO ;
+ 43:seitsemäntoista%  TO ;
+ 44:kuusitoista%  TO ;
+ 45:viisitoista%  TO ;
+ 46:neljätoista%  TO ;
+ 47:kolmetoista%  TO ;
+ 48:kaksitoista%  TO ;
+ 49:yksitoista%  TO ;
+5%0:kymmenen%  TO ;
+ 51:yhdeksän%  TO ;
+ 52:kahdeksän%  TO ;
+ 53:seitsemän%  TO ;
+ 54:kuusi%  TO ;
+ 55:viisi%  TO ; 
+ 56:neljä%  TO ; 
+ 57:kolme%  TO ;
+ 58:kaksi%  TO ; 
+ 59:yksi%  TO ;
+ 
+LEXICON AFT
+ %0%0: HOUR ;
+%01:yksi%  OVER ;
+%02:kaksi%  OVER ;
+%03:kolme%  OVER ;
+%04:neljä%  OVER ;
+%05:viisi%  OVER ;
+%06:kuusi%  OVER ;
+%07:seitsemän%  OVER ;
+%08:kahdeksän%  OVER ;
+%09:yhdeksän%  OVER ;
+1%0:kymmenen%  OVER ;
+11:yksitoista%  OVER ;
+12:kaksitoista%  OVER ;
+13:kolmetoista%  OVER ;
+14:neljätoista%  OVER ;
+15:viisitoista%  OVER ;
+16:kuusitoista%  OVER ;
+17:seitsemäntoista%  OVER ;
+18:kahdeksäntoista%  OVER ;
+19:yhdeksäntoista%  OVER ;
+ 
+LEXICON TOHALF
+:vaille% puoli%  HOUR ;
+ 
+LEXICON OVERHALF
+:yli% puoli%  HOUR ;
+ 
+LEXICON TO
+:vaille%  HOUR ;
+ 
+LEXICON OVER
+:yli%  HOUR ;
+ 
+LEXICON HOUR
+@U.TIME.1@:yksi@U.TIME.1@ ENDLEX ;
+@U.TIME.2@:kaksi@U.TIME.2@ ENDLEX ;
+@U.TIME.3@:kolme@U.TIME.3@ ENDLEX ;
+@U.TIME.4@:neljä@U.TIME.4@ ENDLEX ;
+@U.TIME.5@:viisi@U.TIME.5@ ENDLEX ;
+@U.TIME.6@:kuusi@U.TIME.6@ ENDLEX ;
+@U.TIME.7@:seitsemän@U.TIME.7@ ENDLEX ;
+@U.TIME.8@:kahdeksän@U.TIME.8@ ENDLEX ;
+@U.TIME.9@:yhdeksän@U.TIME.9@ ENDLEX ;
+@U.TIME.10@:kymmenen@U.TIME.10@ ENDLEX ;
+@U.TIME.11@:yksitoista@U.TIME.11@ ENDLEX ;
+@U.TIME.12@:kaksitoista@U.TIME.12@ ENDLEX ;
+ 
+LEXICON ENDLEX
+# ;
+ 

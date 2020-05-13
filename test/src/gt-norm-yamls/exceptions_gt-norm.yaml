@@ -1,0 +1,30 @@
+# yaml test generated from src/morphology/stems/exceptions.lexc with doccomments2yaml.awk
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+
+Tests:
+  EXCEPTIONS: #
+    olla+V+Act+Pot+ConNeg: lie # 
+    olla+V+Der/ja+Sg+Nom: olija # 
+    ei+V+Neg+Act+Sg1: en # 
+    ei+V+Neg+Act+Imprt+Pl2: älkää # 
+    ei+V+Neg+Act+Imprt+Pl3: älkööt # 
+    kutiaa+V: kutiaa # 
+    taita+V: taita # 
+    paratkoon+V: paratkoon # 
+    eläköön+V: eläköön # 
+    ruoka+N+Sg+Ine: ruuassa # 
+    ruoka+N+Pl+Ade: ruuilla # 
+    hyvä+A+Comp+Sg+Nom: parempi # 
+    hyvä+A+Comp+Pl+Ine: paremmissa # 
+    hyvä+A+Sup+Sg+Nom: paras # 
+    hyvä+A+Sup+Pl+Nom: parhaat # 
+    vuosi+N+Sg+Ess: vuonna # 
+    sydän+N+Sg+Ess: sydännä # 
+    jumala+N+Pl+Gen: jumalten # 
+    sankari+N+Pl+Gen: sankarten # 

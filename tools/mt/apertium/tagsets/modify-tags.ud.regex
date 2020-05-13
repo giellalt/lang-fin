@@ -1,0 +1,161 @@
+[
+  [ "<n>" "<prop>" -> "[PROPN]" ] .o.
+  [ "<n>" "<np>" -> "[PROPN]" ] .o.
+  [ "<part>" "<cnjsub>" -> "[SCONJ]" ] .o.
+  [ "<g3>"  -> 0 ] .o.
+  [ "<sem_fem>" -> 0  ] .o.
+  [ "<sem_mal>" -> 0  ] .o.
+  [ "<sem_sur>" -> 0 ] .o.
+  [ "<sem_plc>" -> 0  ] .o.
+  [ "<sem_geo>" -> 0  ] .o.
+  [ "<sem_org>" -> 0  ] .o.
+  [ "<sem_human>" -> 0  ] .o.
+  [ "<adp>" "<pr>"  ->	"[ADP]" ] .o.
+  [ "<adp>" "<po>"  ->	"[ADP]" ] .o.
+  [ "<adp>" "<post>"  ->	"[ADP]" ] .o.
+  [ %<qnt%> %<indef%>  ->	0 ] .o.
+  [ "<foc_han>"          ->	"[CLITIC=Han]" ] .o.
+  [ "<foc_kaan>"          ->	"[CLITIC=Kaan]" ] .o.
+  [ "<foc_pa>"          ->	"[CLITIC=Pa]" ] .o.
+  [ "<foc_s>"          ->	"[CLITIC=S]" ] .o.
+  [ "<foc_ka>"          ->	"[CLITIC=Ka]" ] .o.
+  [ "<foc_kin>"          ->	"[CLITIC=Kin]" ] .o.
+  [ "<qst>" "<pcle>"    ->	"[CLITIC=Ko]" ] .o.
+  [ "<qst>"     ->	"[CLITIC=Ko]" ] .o.
+  [ "+ko<qst>"    ->	"[CLITIC=Ko]" ] .o.
+  [ "<hom1>"      ->	0 ,
+    "<hom2>"      ->	0 ,
+    "<hom3>"      ->	0 ,
+    "<hom4>"      ->	0 ,
+    "<hom5>"      ->	0 ,
+    "<hom6>"      ->	0 ,
+    "<hom7>"      ->	0 ,
+    "<hom8>"      ->	0 ,
+    "<hom9>"      ->	0
+  ] .o.
+  [ "<inan>"      ->	0 ,
+    "<comma>"     ->	"[PUNCT]" ,
+    "<use_nohyphens>"     ->	0 ,
+    "<use_hyphen>"     ->	0 ,
+    "<cmpnd>"     ->	0 ,
+    "<cmpar>"     ->	"[CMP=Cmp]" ] .o.
+  [ "<err_der>"  ->		0 ] .o.
+  [ "<err_hyph>" ->		0 ] .o.
+  [ "<err_lex>"  ->		0 ] .o.
+  [ "<err_orth>" ->		0 ] .o.
+  [ "<allegro>" ->		0 ] .o.
+  [ "<south>" ->		0 ] .o.
+  [ "^"          ->		0 ] .o.
+  [ "<punct>" -> "[PUNCT]" ] .o.
+  [ {pipe} "<clb>" -> "|" "[PUNCT]" ] .o.
+  [ "<clb>"   -> "[PUNCT]" ] .o.
+  [ "<acr>" -> "[NOUN]" "[Abbr=Yes]" ] .o.
+  [ "<adv>" -> "[ADV]" ] .o.
+  [ "<part>" -> "[ADV]" ] .o.
+  [ "<pcle>" -> "[ADV]" ] .o.
+  [ "<n>" -> "[NOUN]" ] .o.
+  [ "<prop>" -> "[PROPN]" ] .o.
+  [ "<cnjcoo>" -> "[CONJ]" ] .o.
+  [ "<ij>" -> "[INTERJ]" ] .o.
+  [ "<interj>" -> "[INTERJ]" ] .o.
+  [ "<cc>" -> "[CONJ]" ] .o.
+  [ "<cs>" -> "[SCONJ]" ] .o.
+  [ "<prn>" -> "[PRON]" ] .o.
+  [ "<pron>" -> "[PRON]" ] .o.
+  [ "<vblex>" -> "[VERB]" ] .o.
+  [ "<v>" -> "[VERB]" ] .o.
+  [ "<adj>" -> "[ADJ]" ] .o.
+  [ "<a>" -> "[ADJ]" ] .o.
+  [ "<pr>"  ->	"[ADP]" ] .o.
+  [ "<po>"  ->	"[ADP]" ] .o.
+  [ "<post>"  ->	"[ADP]" ] .o.
+  [ "<num>"  ->	"[NUM]" ] .o.
+  [ "<act>" -> "[Voice=Act]" ] .o.
+  [ "<actv>" -> "[Voice=Act]" ] .o.
+  [ "<pss>" -> "[Voice=Pass]" ] .o.
+  [ "<prs>" -> "[Tense=Pres]" ] .o.
+  [ "<prt>" -> "[Tense=Past]" ] .o.
+  [ "<prsprc>" -> "[PartForm=Pres]" ] .o.
+  [ "<prfprc>" -> "[PartForm=Past]" ] .o.
+  [ "<agprc>" -> "[PartForm=Ag]" ] .o.
+  [ "<negprc>" -> "[PartForm=Neg]" ] .o.
+  [ "<infa>" -> "[InfForm=1]" ] .o.
+  [ "<infe>" -> "[InfForm=2]" ] .o.
+  [ "<infma>" -> "[InfForm=3]" ] .o.
+  [ "<indic>" -> "[Mood=Ind]" ] .o.
+  [ "<ind>" -> "[Mood=Ind]" ] .o.
+  [ "<cond>" -> "[Mood=Cond]" ] .o.
+  [ "<imp>" -> "[Mood=Imp]" ] .o.
+  [ "<imprt>" -> "[Mood=Imp]" ] .o.
+  [ "<pot>" -> "[Mood=Pot]" ] .o.
+  [ "<conneg>" -> "[Connegative=Yes]" ] .o.
+  [ "<neg>" -> "[Negative=Neg]" ] .o.
+  [ "<sg1>" -> "[Number=Sing]" "[Person=1]" ] .o.
+  [ "<sg2>" -> "[Number=Sing]" "[Person=2]" ] .o.
+  [ "<sg3>" -> "[Number=Sing]" "[Person=3]" ] .o.
+  [ "<pl1>" -> "[Number=Plur]" "[Person=1]" ] .o.
+  [ "<pl2>" -> "[Number=Plur]" "[Person=2]" ] .o.
+  [ "<pl3>" -> "[Number=Plur]" "[Person=3]" ] .o.
+  [ "<p1>" -> "[Person=1]" ] .o.
+  [ "<p2>" -> "[Person=2]" ] .o.
+  [ "<p3>" -> "[Person=3]" ] .o.
+  [ "<sg>" -> "[Number=Sing]" ] .o.
+  [ "<pl>" -> "[Number=Plur]" ] .o.
+  [ "<comp>"     ->	"[CMP=Cmp]" ] .o.
+  [ "<com>"     ->	"[CMP=Cmp]" ] .o.
+  [ "<sup>"     ->	"[CMP=Sup]" ] .o.
+  [ "<card>" -> "[NumType=Card]" ] .o.
+  [ "<ord>" -> "[NumType=Ord]" ] .o.
+  [ "<pers>" -> "[PronType=Pers]" ] .o.
+  [ "<ind>" -> "[PronType=Indef]" ] .o.
+  [ "<indef>" -> "[PronType=Indef]" ] .o.
+  [ "<ref>" -> "[PronType=Reflex]" ] .o.
+  [ "<refl>" -> "[PronType=Reflex]" ] .o.
+  [ "<recip>" -> "[PronType=Reciproc]" ] .o.
+  [ "<recipr>" -> "[PronType=Reciproc]" ] .o.
+  [ "<pxsg1>" -> "[Number[Psor]=Sing]" "[Person[Psor]=1]" ] .o.
+  [ "<pxsg2>" -> "[Number[Psor]=Sing]" "[Person[Psor]=2]" ] .o.
+  [ "<pxsg3>" -> "[Number[Psor]=Sing]" "[Person[Psor]=3]" ] .o.
+  [ "<pxpl1>" -> "[Number[Psor]=Plur]" "[Person[Psor]=1]" ] .o.
+  [ "<pxpl2>" -> "[Number[Psor]=Plur]" "[Person[Psor]=2]" ] .o.
+  [ "<pxpl3>" -> "[Number[Psor]=Plur]" "[Person[Psor]=3]" ] .o.
+  [ "<px3>" -> "[Person[Psor]=3]" ] .o.
+  [ "<lat>" -> "[Case=Lat]" ] .o.
+  [ "<nom>" -> "[Case=Nom]" ] .o.
+  [ "<par>" -> "[Case=Par]" ] .o.
+  [ "<gen>" -> "[Case=Gen]" ] .o.
+  [ "<ine>" -> "[Case=Ine]" ] .o.
+  [ "<ela>" -> "[Case=Ela]" ] .o.
+  [ "<ill>" -> "[Case=Ill]" ] .o.
+  [ "<ade>" -> "[Case=Ade]" ] .o.
+  [ "<abl>" -> "[Case=Abl]" ] .o.
+  [ "<all>" -> "[Case=All]" ] .o.
+  [ "<tra>" -> "[Case=Tra]" ] .o.
+  [ "<ess>" -> "[Case=Ess]" ] .o.
+  [ "<abe>" -> "[Case=Abe]" ] .o.
+  [ "<ins>" -> "[Case=Ins]" ] .o.
+  [ "<acc>" -> "[Case=Acc]" ] .o.
+  [ "<qnt>" -> 0 ] .o.
+  [ "<qu>" -> 0 ] .o.
+  [ "<cmp>" -> 0 ] .o.
+  [ "<dem>" -> 0 ] .o.
+  [ "<rel>" -> 0 ] .o.
+  [ "<pe4>" -> 0 ] .o.
+  [ "<der_sti>" -> 0 ] .o.
+  [ "<der_inen>" -> 0 ] .o.
+  [ "<der_s>" -> 0 ] .o.
+  [ "<der_minen>" -> 0 ] .o.
+  [ "<der_ttain>" -> 0 ] .o.
+  [ "<der_ja>" -> 0 ] .o.
+  [ "<der_maisilla>" -> 0 ] .o.
+  [ "<itg>" -> 0 ] .o.
+  [ "<interr>" -> 0 ] .o.
+  [ "<use_rare>" -> 0 ] .o.
+  [ "<dial>" %/ F i n l a n d -> 0 ] .o.
+  [ "<dial>" %/ s t a n d a r d -> 0 ] .o.
+  [ "<dial>" -> 0 ] .o.
+  [ "<pref>" -> 0 ] .o.
+  [ {<qnt>ote} -> 0 ] .o.
+  [ {<qnt>} -> 0 ]
+
+];

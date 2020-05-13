@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V2.0//EN" "http://forrest.apache.org/dtd/document-v20.dtd">
+<document xml:lang="en">
+  <header>
+    <title>Documentation on the Finnish analyser</title>
+    <authors>
+      <person email="trond.trosterud@uit.no" name="Trond Trosterud" />
+      <person email="tommi.pirinen@helsinki.fi" name="Tommi A Pirinen" />
+    </authors>
+  </header>
+  <body>
+      <section>
+      <title/>
+      <p><a href="WhatIsThis.html">What is this?</a></p>
+      </section>
+      <section>
+         <title>Dynamic documentation</title>
+   <ul>
+    <li><a href="Links.html">Links to generated source file documentation</a></li>
+    <li>Source files: 
+        <a href="https://gtsvn.uit.no/langtech/trunk/langs/fin/src/morphology/stems/">stems</a> /    
+        <a href="https://gtsvn.uit.no/langtech/trunk/langs/fin/src/morphology/affixes/">affixes</a> /  
+        <a href="https://gtsvn.uit.no/langtech/trunk/langs/fin/src/syntax/">syntax</a> /  
+        <a href="https://gtsvn.uit.no/langtech/trunk/langs/fin/src/phonology/fin-phon.twolc">twolc</a> /    
+        <a href="https://gtsvn.uit.no/langtech/trunk/langs/fin/test/src/gt-norm-yamls/">yaml</a> </li>
+     <li>Generation of: 
+        <a href="http://giellatekno.uit.no/cgi/p-fin.fin.html">paradigms</a> / 
+        <a href="http://giellatekno.uit.no/cgi/d-fin.fin.html">text</a> / 
+     </li>
+   </ul>
+      </section>
+      <section>
+      <title>Using the analysers</title>
+      <ul>
+        <li>In the terminal: analyse words by writing <code>ufin</code>, generate with <code>dfin</code></li>
+        <li>For more info, see <a href="/tools/docu-sme-manual.html">How to use the morphological parsers</a></li>
+      </ul>     
+      </section>
+
+    <section>
+      <title>General documentation</title>
+          <p>
+              Since the analyser shares some common history with the omorfi project,
+              parts of the documents have been copied over from the original omorfi
+              documents at <a href="http://home.gna.org/omorfi">
+                  home.gna.org/omorfi</a>
+          </p>
+        <ul>
+          <li>
+            <a href="docu-fin-background.html" >Background information on the Finnish analyser</a>
+          </li>
+          <li>
+            <a href="docu-fin-use.html" >Compiling and using the Finnish analyser</a>
+          </li>
+          <li>
+            <a href="docu-fin-tags.html" >The tagset of the Finnish analyser</a>
+          </li>
+        </ul>
+      <p class="last_modified">Last modified: $Date: 2008-11-05 18:52:54 +0100 (ons, 05 nov 2008) $, by $Author: boerre $</p>
+    </section>
+  </body>
+</document>

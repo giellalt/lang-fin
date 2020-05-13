@@ -1,0 +1,387 @@
+!!!Documenting the tags of the Finnish analyser
+
+The tags of Finnish analysers are similar to ones in other uralic languages,
+especially Saami languages:
+
+!!Tag overview:
+
+! Tags for POS
+     +N +A +Adv +V
+     +Pron +CS +CC +Po +Pr +Interj +Pcle +Num 
+
+! Tags for sub-POS
+     +Prop +Pers +Dem +Interr +Refl +Recipr +Rel +Indef
+
+! Tags for Inflection
+     +Sg +Pl
+     +Nom +Gen +Acc +Par
+     +Ine +Ela +Ill +Ade +Abl +All
+     +Ess +Tra +Cmt +Abe
+     +PxSg1 +PxSg2 +PxSg3 +PxPl1 +PxPl2 +PxPl3
+     +Comp +Superl 
+     +Attr +Card +Ord 
+     +Ind +Prs +Prt +Pot +Cond +Imprt +Eventv +Optv
+     +Sg1 +Sg2 +Sg3 +Pl1 +Pl2 +Pl3 
+     ! +TV +IV ! not yet
+     +InfA +InfE +InfMa 
+     +ConNeg +Neg 
+     +PrsPrc +PrfPrc +AgentPrc +NegPrc
+
+! Question and Focus particles:
+     +Qst +Foc/pa +Foc/s +Foc/ka +Foc/han +Foc/kin  +Foc/kaan 
+     +Foc/ka +Foc/s
+
+
+!Tags for Derivation
+     +Der/minen +Der/maisilla +Der/ja
+     +Der/tar +Der/ttaa +Der/tattaa +Der/tatuttaa +Der/u
+     +Der/inen +Der/llinen
+
+!Other tags
+     +ABBR +ACR +CLB +PUNCT +LEFT +RIGHT +TV +IV
+
+Lots of meanings and rationale can be read from e.g. North Saami docu. The rest
+of this document is modified version of original omorfi docs.
+
+----
+
+!! Parts of speech
+
+The morphological division of Finnish words has three classes: verbal, nominal and others. The verbs are identified by personal, temporal, modal and infinite inflection. The nominals are identified by numeral and case inflection. The others are, apart from being the rest, identified by defective or missing inflection.
+
+The classes are further subdivided by syntactic features. The nominals consist of nouns (substantiivi), adjectives, pronouns and numerals. The others are subdivided into adpositions, adverbs and particles. We also maintain subdivision of particles into conjunctions, which is not present in the grammar, but matches the other analysers in gt.
+
+|| POS || Meaning || Example
+| +N | noun (Finnish substantiivi) | talo (house)
+| +V | verb | kutoa (knit)
+| +A | adjective | kaunis (beautiful)
+| +Pron | pronoun | minä (I)
+| +Num | numeral | yksi (one)
+| +Adv | adverb | nopeasti (fast)
+| +Interj | interjection | hei (hey!)
+| +Po | adposition | päällä (over)
+| +Pcle | particle | no (well)
+| +CC | conjunction | että (so that)
+
+Note: VISK: - definitions > S > sanaluokka - § 438 [http://scripta.kotus.fi/visk/sisallys.php?p=438] - § 63 onwards explains morphological features of parts of speech [http://scripta.kotus.fi/visk/sisallys.php?p=63].
+
+! Nominal declination
+
+Nominal parts of speech have common nominal declination consisting 16 cases in singular and plural, combined with any possessive suffix, combined with any clitics. Total is some thousands of word forms per word. The nominal parts of speech include nouns, adjectives, numerals and pronouns. The nominalised forms of verbs will also include nominal declination.
+
+Examples of nouns in tables of this section are given with forms of word valo (light), which does not have any stem variation in inflection.
+
+!Number
+Nominals inflect in number, to mark plurality of the word. NUM for nouns is either singular or plural, or in some cases underspecified. Numeral ending comes first after word stem, but is often more or less combined with case ending, and usually causes stem variation:
+
+|| NUM || Meaning || Example
+| +Sg | Singular | valo (light)
+| +Pl | Plural | valot (lights)
+
+Note: VISK § 79–80 [http://scripta.kotus.fi/visk/sisallys.php?p=79]
+
+!Case
+CASE for nominals has 16 possible values, the cases of Finnish nominals mark syntactic roles (nominative, partitive, accusative-genitive) and semantics (others, partially even syntactic cases). The syntactic designation or semantic gloss is given in the meaning column, the traslations in example column are approximate since there's no 1:1 correspondence between semantic cases of Finnish and prepositions of English.
+
+While many of cases have only one distinct ending, some combinations of plurality and case endings can exhibit up to 6 distinct case markers.
+
+|| CASE || Meaning || Example
+| +Nom | Nominative (subject) | valo (light)
+| +Par | Partitive (partial object) | valoa (some light)
+| +Gen | Genitive (attribute/possessive) | valon (light's)
+| +Ine | Inessive (in inside) | valossa (in light)
+| +Ela | Elative (away from inside) | valosta (from (inside of) light)
+| +Ill | Illative (into inside) | valoon (to light)
+| +Ade | Adessive (on surface/vicinity) | valolla (on/nearby light)
+| +Abl | Ablative (from surface/vicinity) | valolta (from (nearby of) light)
+| +All | Allative (on to surface/vicinity) | valolle (towards the light)
+| +Ess | Essive (as) | valona (as light)
+| +Tra | Translative (become as) | valoksi (into light)
+| +Abe | Abessive (without) | valotta (without light)
+| +Cmt | Comitative (with/in company of) | valoine (with lights)
+| +Ins | Instructive (with/by using) | valoin (using lights)
+
+Note: VISK 81–94 [http://scripta.kotus.fi/visk/sisallys.php?p=81]
+
+*Possessive suffixes.* Posessive ending indicates ownership and can attaches always after a case ending. POSS can take six possible values from singular and plural, first, second and third person references, where third person form is always ambiguous over plurality. The third person form also has two allomorphs, latter of which typically only exists after long vowels.
+
+| POSS | Meaning | Example
+| +PxSg1 | First person singular | valoni (my light)
+| +PxSg2 | Second pers. singular | valosi (your light)
+| +PxSg3, +PxPl3 | third person singular or plural | valonsa (his/her/their light)
+| +PxPl1 | First person plural | valomme (our light)
+| +PxPl2 | Second pers. plural | valonne (your light)
+
+Note: VISK § 95–97 [http://scripta.kotus.fi/visk/sisallys.php?p=95]
+
+*Noun subcategories.* Nouns have currently only one subcategory of proper nouns, or names. Proper nouns are usually written with initial capitals–or more recently, totally arbitrary capitalisations, such as in brand names nVidia and ATi. Proper nouns do have full inflectional morphology exactly as other nouns, but work slightly differently in derivation and compounding. Some capitalised nouns may also lose capitalisation in derivation. Here are examples of semantic sub classes of proper nouns:
+
+| SUBCAT | Meaning | Examples
+| +Prop | proper noun | Pekka (personal name), Virtanen (surname), Helsinki (geographical name)
+
+Note VISK § 98 [http://scripta.kotus.fi/visk/sisallys.php?p=98]
+
+! Adjectives
+
+Adjectives are effectively inflected as nouns, with additional level of comparison forms before regular nominal inflection. Adjectives are also very unlikely to have possessive suffixes.
+
+*Comparison* Comparison has three levels. In modern grammar comparison is under derivation instead of regular inflection, which also makes sense here, since each form of comparison has full set of nominal inflection. The comparative suffixes precede the nominal inflection.
+
+| CMP | Meaning | Example
+| +Pos | Positive | nopea
+| +Comp | Comparative | nopeampi
+| +Superl | Superlative | nopein
+
+Note: VISK § 300 [http://scripta.kotus.fi/visk/sisallys.php?p=300]
+
+! Numerals
+
+Numerals do not have any specific inflection besides noun's. The numerals, however, do have special compounding restrictions and patterns. They are also one of the typical part of speech in systems, so it is included here as separate class. The analysis of numeral compounds is detailed in the compounding section, but otherwise numerals follow the basic nominal pattern. It may also be noteworthy that this means full nominal inflection; Finnish numerals have singular and plural forms.
+
+The numerals are of course infinite, closed class of words. The implementation of Omorfi aims to recognise all of the numeral words and their compounds using systemic names for very large numerals. The systemic names are comprised of the greek prefix x and suffix part for xillions and xilliards (i.e. like long scale English numerals). So the scale goes from miljoona (10^6, million), miljardi (10^9, milliard), biljoona, biljardi, triljoona, and so on for prefixes kvadri-, kvinti-, septi-, ..., until sentiljoona (10^303). Here are few examples:
+
+Note :VISK § 99 [http://scripta.kotus.fi/visk/sisallys.php?p=99]
+
+*Numeral categories* Numerals have functional subcategories for semantics, which have been used in most of the other systems and retained here as well. The distinction is made between cardinal and ordinal numbers, and is purely semantic:
+
+| SUBCAT | Meaning | Example
+| +Card | cardinal | kolme (three)
+| +Ord | ordinal | neljäs (fourth)
+
+! Pronouns
+
+Pronouns inflect mostly like nouns, but have their own POS. Pronouns are also only nouns to have explicit phonemically distinct accusative markers. Many of pronouns have defective pattern, e.g. only singulars or plurals, or heteroclitical paradigms.
+
+Note: VISK § 100 [http://scripta.kotus.fi/visk/sisallys.php?p=100]
+
+*Pronoun-specific cases.* Some of the pronouns have accusative as separate case:
+
+| CASE | Meaning | Examples
+| +Acc | Accusative (object) | minut (me)
+
+*Pronoun subcategories.* Pronouns are divided into semantic classes by use. The classification is fully copied from the modern grammar:
+
+| SUBCAT | Meaning | Examples
+| +Pers | Personal | minä (me)
+| +Dem | Demonstrative | tämä (this)
+| +Interr | Interrogative | kuka (who?)
+| +Rel | Relative | joka (who)
+| +Qua | Quantor | kukaan (no one)
+| +Reflex | Reflexive | itse (self)
+| +Recipr | Reciprocal | toinen (each other)
+
+Note: VISK § 101–104 [http://scripta.kotus.fi/visk/sisallys.php?p=101]
+
+! Adverbs, adpositions and other ad words
+
+Ad words are typically derived or inflected word forms with lexicalised meanings and defective inflection patterns; habitive adverbs (e.g. mainly sti derivation, but not all) have comparation and clitics, locative adverbs have partial locative cases, possessives and clitics, temporal adverbs have only clitics. Prolatives and similar (e.g. yli ~ ylitse) may only have clitics as well. Lots of inflected forms of adverbs is further lexicalised into more adverbs (i.e. all forms of one adverb have dictionary entries). Intensifying adverbs might not assume clitics at all. The analysis strings of adverbs therefore vary on case-by-case basis.
+
+Note: VISK § 678 (discriminating adverb from adposition) [http://scripta.kotus.fi/visk/sisallys.php?p=678]
+
+*Adverbs.* As noted earlied, many of adverbs are nominals with current or archaic case endings, and the endings may be marked in omorfi as long as they are clear. Also the sti derivation of adjectives is productive in class of manner adverbs. The certain types of adverbs that are mostly productively derived may be available in Omorfi:
+
+| CASE | Meaning | Example
+| +Prl | prolative | meritse (by sea)
+| +Dis | distributive | taloittain (house by house)
+
+*Adpositions.* Adpositions are, like adverbs, current or archaic inflectional forms of regular nominals. The adpositions are further sub-categorised along their syntactic behaviour, to prepositions and postposition. The prepositions appear in front of the adpositional phrase and postpositions in back. Many of the adpositions can appear in both.
+
+! Acronyms
+
+Acronyms here are those shortened nominals, which have inflection. The inflection of these acronyms is formed by adding colon to the acronym, and adding most of the inflectional endings after the colon. The acronyms may be inflected in three ways. The inflectional endings after colon may show either the inflection of last letter of the acronym, or the last word of the acronym. The latter form of inflection is only implemented if the lexical source contains information of the last word of the acronym. For example STT short for Suomen tietotoimisto (Finland's information office) is inflected as STT:hen in illative since letter tee (T) is teehen in illative form, but also STT:oon is valid illative, since -toimisto is -toimistoon in illative form (the additional o there is an orthographic convention).
+
+The acronyms that form phonotactically valid words may often be inflected as regular nouns. Since their inflection pattern follows the regular nouns inflection pattern---e.g. KELA (Kansaneläkelaitos, the social security office) is inflected like noun kela ()---they should be treated as regular nouns in all parts of morphology. Some of these words lose their acronym interpretation and become regular nouns written in lowercase, such as laser. The lowercase variants are also allowed for other words:
+
+The non-inflecting abbreviations are described in their own section.
+
+! Verb conjugation
+
+Verb's conjugation includes voice (in Finnish grammars also verbal genus), tense (tempus), moods (modus), personal endings or negation marker and clitics. The analysis strings of verb inflection is not as systematic as nouns, as most categories collapse together in forms, for example voice distinction does not exist in all moods and tenses, and tense distinction only exists in one mood. Instead of underdefining analyses, many times taggings are omitted so verb analysis strings vary. Part of verbs regular derivation is typically included in the inflection, as has been done in traditional grammars. These infinite forms have nominal declination.
+
+The infinite forms of verbs may have voice included. The infinite forms are split into infinitives, participles and derivations. The analysis string after these markers are same as for all nominals:
+
+For participles the part after VOICE is the same as nominal declination. For infinitives, only some of the CASE values may appear, and full listing of those cases can be found below.
+
+Note: VISK § 105 [http://scripta.kotus.fi/visk/sisallys.php?p=105]
+
+!!Verb subcategories
+
+Verbs have only one special subcategory for negation verb ei, which has partial inflection:
+
+| SUBCAT | Meaning | Example
+| +Neg | negation verb | en (I don't)
+
+Note Marking negation verb as specific sub-category of verbs and the verb form that only goes along with it conneg has some history in fennistics, but I do not know the origin of the practice and it isn't in VISK. In fact this practice was added for interoperability with Saami language morphologies, which follow the same tagging.
+
+*Finite verb inflection.* The finite inflection of verbs concerns actual verbal inflection in person, mood, tense.
+
+*Person.* Personal ending of verb defines the actors. PRS has seven possible values, six for the singular and plural groups of first, second and third person forms, and one specifically for passive.
+
+| PRS | Meaning | Example
+| +Sg1 | First pers. singular | kudon (I knit)
+| +Sg2 | 2nd person singular | kudot (you knit)
+| +Sg3 | Third pers. singular | kutoo (he/she/it knits)
+| +Pl1 | First pers. plural | kudomme (we knit)
+| +Pl2 | 2nd person plural | kudotte (you knit)
+| +Pl3 | Third pers. plural | kutovat (they knit)
+
+Note VISK § 106–107 [http://scripta.kotus.fi/visk/sisallys.php?p=106]
+
+*Negated form.*
+
+Verbs have specific forms going together with negation verb (which has partial inflection itself). This form is marked with a ConNeg. The existence of negated form varies between moods, voices and tenses.
+
+| NEG | Meaning | Example
+| +ConNeg | Negated form | (en) kudo (I don't knit), (ei) kudota (no knitting)
+
+Note: VISK § 109 [http://scripta.kotus.fi/visk/sisallys.php?p=109]
+
+*Verbal genus (voice).* Verb inflection has two categories for active and passive voice, marked in tag named VOICE. For finite verb forms active voice is tied to personal forms and passive voice to non-personal verb endings. The voice is also marked in some of the infinite verb forms.
+
+| VOICE | Meaning | Example
+| +Act | active | kudon (I knit)
+| +Pass | passive | kudotaan (knitting)
+
+Note: VISK § 110 [http://scripta.kotus.fi/visk/sisallys.php?p=110], of passive
+
+*Tempus (tense).* Verbs may inflect to mark up tense. TENSE has two values. For moods other than indicative the tense is not distinctive in surface form, and therefore not marked in the analyses. The morphologically distinct forms in Finnish form only distinctions between past and non-past tenses, which should be noted since some historical systems have talked about imperfect and present.
+
+| Symbol | Tense | Example
+| +Prs | non-past | kudon (I knit)
+| +Prt | past | kudoin (I knitted)
+
+Note: VISK § 112 [http://scripta.kotus.fi/visk/sisallys.php?p=112], § 111 for tenses and moods collectively
+
+*Modus (Mood)* Finite verb forms inflect to mark up moods. Mood is systematically included in analysis strings, even with unmarked indicative. Only indicative mood includes full set of temporal and personal inflection, others have limited inflection in current use. Some forms may also be covered by theoretical or archaic word forms, which are included in some versions.
+
+| VALUE | Meaning | Example
+| +Ind | indicative | kudon (I knit)
+| +Imper | imperative | kudo (do knit!)
+| +Cond | conditional | kutoisin (I would knit)
+| +Ptn | potential | kutonen (I might knit)
+
+Note: VISK § 115–118 [http://scripta.kotus.fi/visk/sisallys.php?p=115], § 111 for tenses and moods collectively
+
+*Infinite verb forms.* Infinite verb forms are in principle nominal derivations from verb, included in morphology as inflection by long linguistic tradition. Especially notable is that verb form A infinitive with lative case marking is still considered the dictionary form of the verb.
+
+*Infinitives.* INF has 4 possible values. Also one fully productive derivational form used to be marked infinitive in old grammars. In traditional grammars the infinitive forms were called I, II, III, IV and V infinitive, the modern grammar replaces the first three with A, E and MA respectively. The IV infinitive, which has minen suffix marker, has been reanalysed as derivational and this is reflected in Omorfi. The V infinitive is also assumed to be mainly derivational, but included here for reference.
+
+The short form of A infinitive is in lative case which is extinct from nominal conjugation. The long form of A infinitive is translative, and it requires possessive suffix. For E infinitive, the possible cases are inessive and instructive, the possessive suffix is optional for both, but rare for instructive form. For MA infinitive the possible cases are abessive, adessive, elative, illative, inessive and instructive, the possessive ending is very rare since it usually indicates agent participle instead. The mAisillA derivation is theoretically already in adessive case (of mA infinitive's inen derivation, but this re-analysis is not performed here) and therefore has no case inflection, the possessive endings are optional but common. The minen derivation creates a noun root form, and has standard nominal inflection.
+
+| INF | Meaning | Examples
+| +InfA | A infinitive | kutoa (to knit)
+| +InfE | E infinitive | kutoen (by knitting)
+| +InfMa | Ma infinitive | kutomatta (without knitting)
+| +Der/minen | IV infinitive | kutominen (knitting n.)
+| +Der/maisilla | V infinitive | kutomaisillani (I am about to knit)
+
+Note: VISK § 120–121 [http://scripta.kotus.fi/visk/sisallys.php&p=120], § 119 for infinite forms collectively
+
+*Participles.* There are 4 participle forms. Like infinitives, participles in traditional grammars were named I and II where NUT and VA are used in modern grammars. The agent and negation participle have sometimes been considered outside regular inflection, but in modern Finnish grammars are alongside other participles and so they are included in inflection in omorfi as well. In some grammars the NUT and VA participles have been called past and present participles respectively, drawing parallels from other languages, but these names are more misleading and should usually be avoided. The participles work as mostly as adjective or nominal derivations, and may include full nominal inflection.
+
+| PCP | Meaning | Example
+| NUT | Nut participle | kutonut (been knitted)
+| VA | Va participle | kutova (to be knitted)
+| MA | Agent participle | kutomani (which I knitted)
+| NEG | Negated participle | kutomaton (unknitted)
+
+**Warning**: Be aware that some traditional commercial software for Finnish morphology mistakenly analyse agent participles as MA infinitives which result in different taggings in some reference corpora you may see. To distinguish agent participle from MA infinitive, apart from semantics, agent participle almost always requires possessive suffix, and only rarely specifies agent via syntactic means. Also, participles allow all cases whereas set of cases used with infinitives are limited.
+
+Note: VISK § 122 [http://scripta.kotus.fi/visk/sisallys.php?p=122], § 119 for infinite forms collectively
+
+! Discourse particles (clitics)
+
+Clitics are suffixes which can attach almost anywhere in the ends of words, both verb forms and nominals. They also attach on end of other clitics, froming theoretically infinite chains. In practice it is usual to see at most three in one word form. Two clitics have limited use: -s only appears in few verb forms and combined to other clitics and -kA only appears with few adverbs and negation verb. Their meaning also largely varies largely on context and even intonation, and the glosses below are therefore very vaguely relevant.
+
+| CLIT | Meaning | Example
+| +Foc/han | -hAn (even, also) | valohan (even light)
+| +Foc/kaan | -kAAn (not even) | valokaan (not even light)
+| +Foc/kin | -kin (also, as well) | valokin (also light)
+| +Foc/Qst | -kO (question) | valoko (light?)
+| +Foc/pa | -pA (indeed, esp.) | valopa (light indeed)
+| +Foc/s | -s (moderate) | tules (do come)
+| +Foc/ka | -kA (negation) | eikä (nor)
+
+Note: VISK § 126– [http://scripta.kotus.fi/visk/sisallys.php?p=126], § 131 on combinatorics,
+
+! Other expressions
+
+Many numerals are written in digits or other codified expressions. Even digit sequences inflect and participate in compounding in Finnish.
+
+! Non-inflecting parts of speech
+
+There are several parts of speech in omorfi that do not have any inflection and do not participate in derivation or compounding. The official grammar uses name particle for all of the non-inflecting words, here the syntactic and semantic division for conjunctions, interjections and the rest (named as particles here and in old grammars) has been retained.
+
+Note: VISK § 792 [http://scripta.kotus.fi/visk/sisallys.php?p=792]
+
+*Conjunctions.* Conjunctions are non-inflecting words that join syntactic structures together. The conjunstions have two subcategories according the type of syntactic relation they make.
+
+Note: VISK § 812 [http://scripta.kotus.fi/visk/sisallys.php?p=812]
+
+*Subcategories of conjunctions: -ordination.*
+
+The conjunctions are divided into two classes depending on whether they act as subordinating or co-ordinating their respective syntactic units.
+
+| SUBCAT | Meaning | Examples
+| +CS | Subordinating | kun (when)
+| +CC | Co-ordinating | ja (and)
+
+Note: VISK § 816 [http://scripta.kotus.fi/visk/sisallys.php?p=816] (the classification differs, CS is for unifying with other systems)
+
+*Interjections.* Interjections are usually characterisations of speech acts, and may often consist of more or less arbitrary series of characters, sometimes onomatopoetic. Also minimal turns in dialogue, mumbling, swearing, and so on are interjections.
+
+Note: VISK § 856 [http://scripta.kotus.fi/visk/sisallys.php?p=856]
+
+*Abbreviations.* Abbreviations are shortened word forms that do not inflect. Most of the abbreviations are written with lowercase letters and end in full stop. Some of the old abbreviations use colon as marker of omission inside the word.
+
+*Particles.* Particles are leftover part of speech for non-inflected words that didn't find their way elsewhere.
+
+!! Derivations
+
+Derivation forming is experimental feature and not present in all versions and applications using omorfi. The derived forms should be considered guesses at best. The form of derived analysis strings vary depending on root word.
+
+The first POS is POS of dictionary word, the second is POS of derived form. Currently formed are following DRV values:
+
+| DRV | Meaning | Examples
+| +Der/sti | manner of A | nopeasti (fast)
+| +Der/ja | actor of V | kutoja (knitter)
+| +Der/inen | having N | valoinen (lightful)
+| +Der/tar | feminine N | valotar (lightress)
+| +Der/llinen | owner of N | valollinen (lighted)
+| +Der/ton | without N | valoton (lightless)
+| +Der/tse | via N | valoitse (by light)
+| +Der/Vs | N-ness | valous (lightness)
+
+For most applications derivations must be removed from the morphological process and added to lexical data source as needed.
+
+Note: VISK § 155– [http://scripta.kotus.fi/visk/sisallys.php?p=155]
+
+! Compounding
+
+Compounding is productive morphological process in Finnish language. Typically any nominals can be joined to form ad hoc compounds as needed. There are many restrictions to the word forms allowed in compounds. The productive nominal compounds are always formed by chain of nominals in genitive, nominative or special compound form, followed by final nominal word holding the inflectional suffixes. The nominals may also be nominalised verb forms.
+
+There are also less productive compounds, where initial parts of compound may have other forms than those listed above, these should be added to lexical data since they are typically lexicalised. There is also set of adjective initial compounds where inflection in standard Finnish is said to agree for all parts of compound, these cases are not many and becoming more rare in general use, so they should be listed in exceptions.
+
+The numeral compounds agree in all parts, except for nominative form where multiplicants take partitive forms. This complexity is hard-coded to morphology. In numeral compounds also the order of multipliers must go in decreasing magnitude.
+
+| Compound pattern | Examples
+| N GEN + N | talonmies (house's man = janitor)
+| N NOM + N | salaattikastike (salad dressing)
+| N GEN* N | isänisänisänisän...isä (paternal great great ... grand father)
+| N CMP + N | naislääkäri (« nainen + lääkäri, female doctor)
+| A X + N X | vanhallepojalle (« vanha + poika, old boy = bachelor)
+| NUM X* | kahdeksisadaksikolmeksikymmeneksineljäksi (into 234)
+
+The productive compounding is typically required to gain any coverage with the analyzer, but it's also endless source of problems with ambiguity. In omorfi the method to deal with compounds combines list of verified compounds with estimate of likelihood of compound in weighted analyzer. The end applications may need to ignore productive compounds or decide threshold for accepted compounds.
+
+Note: VISK § 398- [http://scripta.kotus.fi/visk/sisallys.php?p=398]
+
+! Style
+
+Many lexical sources seem to record notes of style or area of usage with the words. This kind of lexical data may be indicated in additional STYLE value. The existing uses of style feature classify common misspellings or substandard forms with, dialectal, rare and archaic forms:
+
+| VALUE | Meaning | Example
+| +Err/Orth | non-standard | seitsämän → seitsemän (seven)
+| +Use/Marg | rare | -
+| +Dial | dialectal | mie (I)
+| +Use/Old | archaic | -

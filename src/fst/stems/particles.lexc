@@ -1,0 +1,169 @@
+!!  !!!Particles
+!!  The particles are all words that do not inflect at all. For compatibility
+!!  reasons subsets of particles have been set off to classes like conjunctions,
+!!  adverbs, adpositions, and interjections. The ones that are *not* in those classes are left here as
+!!  particles.
+
+LEXICON PARTICLE
+!!  Examples:
+!!€gt-norm:  Particles
+!!€  ahaa: ahaa+Pcle
+!!€  edes: edes+Pcle
+
+!kai+Pcle:kai PCLE_VAAN ;
+
+ellei+Pcle+CS:ellei  PCLE_VAAN  ;
+elleivät+Pcle+CS:elleivät  PCLE_VAAN  ;
+ellemme+Pcle+CS:ellemme  PCLE_VAAN  ;
+ellen+Pcle+CS:ellen  PCLE_VAAN  ;
+ellet+Pcle+CS:ellet  PCLE_VAAN  ;
+ellette+Pcle+CS:ellette  PCLE_VAAN  ;
+
+etteikö+Pcle+CS:etteikö  PCLE_VAAN  ;
+ettei+Pcle+CS:ettei  PCLE_VAAN  ;
+etteivät+Pcle+CS:etteivät  PCLE_VAAN  ;
+ettemme+Pcle+CS:ettemme  PCLE_VAAN  ;
+etten+Pcle+CS:etten  PCLE_VAAN  ;
+ettet+Pcle+CS:ettet  PCLE_VAAN  ;
+ettette+Pcle+CS:ettette  PCLE_VAAN  ;
+
+juurijajuuri+Pcle:juurijajuuri  PCLE_VAAN ;
+lukuunottamatta+Pcle:lukuunottamatta  PCLE_VAAN ;
+nipinnapin+Pcle:nipinnapin  PCLE_VAAN ;
+näinollen+Pcle:näinollen  PCLE_VAAN ;
+sensijaan+Pcle:sensijaan  PCLE_VAAN ;
+toisinsanoen+Pcle:toisinsanoen  PCLE_VAAN ;
+
+
+
+LEXICON PCLE_AIKANSA
+
+:  PCLE_BACK_POSS  ;
+
+
+LEXICON PCLE_ALLE
+
+:  PCLE_BACK_POSS_EN_OPT  ;
+
+
+LEXICON PCLE_HAH
+
+:  PCLE_COMPOUND_INTERJ  ;
+:  #  ;
+
+
+LEXICON PCLE_HYVILLÄÄN
+
+:  PCLE_FRONT_POSS_ÄN_OBL  ;
+
+
+LEXICON PCLE_IKINÄ
+
+:  PCLE_FRONT_POSS_ÄN_OPT  ;
+
+
+LEXICON PCLE_ILKOSILLAAN
+
+:  PCLE_BACK_POSS_AN_OBL  ;
+
+
+LEXICON PCLE_ISTUALLEEN
+
+:  PCLE_BACK_POSS_EN_OBL  ;
+
+
+!LEXICON PCLE_JO
+!:  PCLE_BACK_CLIT_KO  ;
+!:  #  ;
+
+
+LEXICON PCLE_JONNE
+
+:  PCLE_BACK_CLIT_OPT  ;
+:  PCLE_BACK_CLIT_KA  ;
+
+
+LEXICON PCLE_KOTONA
+
+:  PCLE_BACK_POSS_AN_OPT  ;
+
+
+LEXICON PCLE_KUHUN
+
+:  PCLE_BACK_CLIT_OPT  ;
+:  PCLE_BACK_CLIT_KA_S  ;
+
+
+LEXICON PCLE_LEVÄLLEEN
+
+:  PCLE_FRONT_POSS_EN_OBL  ;
+
+
+LEXICON PCLE_LISÄKSI
+
+:e  PCLE_FRONT_POSS_EN_OBL  ;
+
+:i  PCLE_FRONT_CLIT_OPT  ;
+
+
+LEXICON PCLE_MITEN
+
+:  PCLE_FRONT_CLIT_OPT  ;
+:  PCLE_FRONT_CLIT_KA_S  ;
+
+
+LEXICON PCLE_NOPEASTI
+
+:  PCLE_BACK_CLIT_OPT  ;
+
+
+LEXICON PCLE_NÄHDEN
+
+:den  PCLE_FRONT_CLIT_OPT  ;
+
+:te  PCLE_FRONT_POSS  ;
+
+
+LEXICON PCLE_NÄKYVIIN
+
+:n  PCLE_FRONT_CLIT_OPT  ;
+
+:  PCLE_FRONT_POSS  ;
+
+
+LEXICON PCLE_TYHMÄSTI
+
+:  PCLE_FRONT_CLIT_OPT  ;
+
+
+LEXICON PCLE_TYKÖ
+
+:  PCLE_FRONT_POSS_OPT  ;
+
+
+LEXICON PCLE_VAAN
+
+:  #  ;
+
+
+LEXICON PCLE_VALTAAN
+
+:n  PCLE_BACK_CLIT_OPT  ;
+
+:  PCLE_BACK_POSS  ;
+
+
+LEXICON PCLE_VUOKSI
+
+:e  PCLE_BACK_POSS_EN_OBL  ;
+
+:i  PCLE_BACK_CLIT_OPT  ;
+
+
+LEXICON PCLE_YLIPÄÄNSÄ
+
+:  PCLE_FRONT_POSS  ;
+
+LEXICON PCLE_YLLE
+
+:  PCLE_FRONT_POSS_EN_OPT  ;

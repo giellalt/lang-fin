@@ -1,0 +1,11 @@
+prefix=@prefix@
+exec_prefix=${prefix}
+datadir=@datarootdir@
+gtlang=fin
+dir=${datadir}/giella/${gtlang}
+srcdir=${datadir}/giella/${gtlang}
+
+Name: giella-fin
+Description: Finite-state language processing tools for Finnish
+URL: https://giellalt.uit.no/index.html
+Version: @VERSION@

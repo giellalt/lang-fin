@@ -1,0 +1,63 @@
+[
+  [ "<n>" "<prop>" -> "<np>" ] .o.
+  [ "<n>" "<np>" -> "<np>" ] .o.
+  [ "<part>" "<cnjsub>" -> "<cnjsub>" ] .o.
+  [ "<g3>" "<n>"   -> "<n>" "<g3>" ] .o.
+  [ "<sem_fem>" -> "<ant>" "<f>"  ] .o.
+  [ "<sem_mal>" -> "<ant>" "<m>"  ] .o.
+  [ "<sem_sur>" -> "<cog>" ] .o.
+  [ "<sem_plc>" -> "<top>"  ] .o.
+  [ "<sem_geo>" -> "<top>"  ] .o.
+  [ "<sem_human>" -> 0  ] .o.
+  [ "#"            ->	"<cmp>" "+" ] .o.
+  [ "<adp>" "<pr>"  ->	"<pr>" ] .o.
+  [ "<adp>" "<po>"  ->	"<post>" ] .o.
+  [ "<adp>" "<post>"  ->	"<post>" ] .o.
+  [ %<qnt%> %<indef%>  ->	%<indef%> ] .o.
+ # [ "<foc_kaan>"          ->	"+" {kaan} "<adv>" ] .o.
+ # [ "<foc_kin>"          ->	"+" {kin} "<adv>" ] .o.
+ # [ "<foc_son>"         ->	"+" {son} "<pcle>" ] .o.
+ # [ "<foc_naj>"         ->	"+" {naj} "<pcle>" ] .o.
+ # [ "<foc_naj>" "<qst>"	->	"<qst>" "+" {naj} "<pcle>" ] .o.
+  [ "<qst>" "<pcle>"    ->	"<pcle>" "<qst>" ] .o.
+  [ "<hom1>"      ->	"¹" ,
+    "<hom2>"      ->	"²" ,
+    "<hom3>"      ->	"³" ,
+    "<hom4>"      ->	"⁴" ,
+    "<hom5>"      ->	"⁵" ,
+    "<hom6>"      ->	"⁶" ,
+    "<hom7>"      ->	"⁷" ,
+    "<hom8>"      ->	"⁸" ,
+    "<hom9>"      ->	"⁹" 
+  ] .o.
+  [ "<inan>"      ->	"<nn>" ,
+    "<comma>"     ->	"<cm>" ,
+    "<use_nohyphens>"     ->	"<cmp>" ,
+    "<use_hyphen>"     ->	"<cmp>" "<hyph>" ,
+    "<cmpnd>"     ->	"<cmp>" ,
+    "<cmpar>"     ->	"<comp>" ] .o.
+  [ "<err_der>"  ->		0 ] .o.
+  [ "<err_hyph>" ->		0 ] .o.
+  [ "<err_lex>"  ->		0 ] .o.
+  [ "<err_orth>" ->		0 ] .o.
+  [ "<allegro>" ->		0 ] .o.
+  [ "<south>" ->		0 ] .o.
+  [ "^"          ->		0 ] .o.
+  [ "!" "<punct>" -> "!" "<sent>" ] .o.
+  [ {pipe} "<clb>" -> "|" "<sent>" ] .o.
+  [ "<punct>" -> "<cm>"   || "," _ ] .o.
+  [ "<punct>"   -> "<sent>" || "." _ ] .o.
+  [ "<punct>"   -> "<sent>" || "…" _ ] .o.
+  [ "<punct>"   -> "<sent>" || {..} _ ] .o.
+  [ "<punct>"   -> "<sent>" || {...} _ ] .o.
+  [ "<clb>"   -> "<sent>" || "¿" _ ] .o.
+  [ "<clb>"   -> "<sent>" || "¶" _ ] .o.
+  [ "<punct>"   -> "<sent>" || "?" _ ] .o.
+  [ "<punct>"   -> "<sent>" || ":" _ ] .o.
+  [ "<punct>"   -> "<sent>" || ";" _ ] .o.
+  [ "<punct>" -> "<guio>" || "-" _ ] .o.
+  [ "-"       -> "<guio>" || [ "<cmp>" ] _ ] .o.
+  [ "<punct>" "<left>"  -> "<lquot>"  ]
+  [ "<punct>" "<right>" -> "<rquot>" ]
+  [ "<punct>" -> "<quot>" || %" _ ]
+];

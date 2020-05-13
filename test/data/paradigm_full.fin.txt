@@ -1,0 +1,45 @@
+# Paradigm grammar
+#
+# Used in paradigm generator.
+# List the tag groups in the order they are given to generator.
+# The names of the tag groups are listed in korpustags.LANG.txt
+# "?" marks the optionality of the tag.
+# It is not possible to mark alternation of the different tags.
+#
+
+	
+N+Number+Case
+N+Number+Case+Possessive
+N+ACR+Number+Case
+A+Grade?+Number+Case
+A+Grade?+Number+Case+Possessive
+A+Ord+Number+Case
+V+Inf
+V+PrfPrc
+V+Ind+Prs+Person-Number
+V+Ind+Prt+Person-Number
+V+Ind+ConNeg
+V+Imprt+Person-Number
+V+Neg+Ind+Prs+Person-Number
+V+Neg+Ind+Prt+Person-Number
+V+Neg+Imprt+Person-Number
+Num+Number+Case
+Pron+Indef+Attr?
+Pron+Dem+Attr?
+Pron+Pers+Person-Number+Case
+Pron+Rel+Number+Case
+Pron+Interr+Number+Case
+Pron+Refl+Number?+Case?+Possessive?
+Pron+Recipr+Number?+Case?+Possessive?
+Pron+Pers+Case
+Pron+Rel+Case
+Pron+Refl+Case
+Pron+Recipr+Case
+Adv+Grade?
+CS
+CC
+Interj
+Pcle
+Apd+Possessive?
+Po+Possessive?
+Pr+Possessive?
