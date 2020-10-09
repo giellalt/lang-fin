@@ -1,107 +1,87 @@
-The Finnish Morphology and Tools
-================================
+The Finnish morphology and tools
+==========================================
 
-This package contains free and open source implementation of
-morphological analysis for Finnish language. It uses GPL licenced HFST
-tools as implementation of morphological description. This package is
-licenced under GNU GPL version 3, but not necessarily later. Licence can
-be found from `COPYING` file in root of the distribution package. Other
-licences are possible from authors named in the `AUTHORS`.
+This repository contains finite state source files for the Finnish language,
+for building morphological analysers, proofing tools
+and dictionaries. The data and implementation are licenced under GPLv3
+licence, also detailed in the
+[LICENCE](https://github.com/giellalt/lang-fin/blob/develop/LICENCE). The
+authors named in the AUTHORS file are available to grant other licencing
+choices.
 
-The lexical data has originated from [omorfi]() and in there via
-[Nykysuomen sanalista](http://kaino.kotus.fi) (LGPL),
-[Joukahainen](http://joukahainen.lokalisointi.org) (GPL) and
-[Finnwordnet](http://www.ling.helsinki.fi/research/finnwordnet)
-(Princeton Wordnet licence / GPL; relicenced with kind permission from
-University of Helsinki). Some words have also been collected by omorfi
-developers and contributors, and later by giellatekno contributors. See
-`AUTHORS` and `THANKS`.
+[![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-fin)](https://github.com/giellalt/lang-fin/issues)
+ [![Build Status](https://github.com/giellalt/lang-fin/workflows/Build%20Speller%20Archives%20and%20Bundles/badge.svg)](https://github.com/giellalt/lang-fin/actions)
 
-Installation and compilation, and a short note on usage, is documented
-in the file INSTALL.
+Install proofing tools and [keyboards](https://github.com/giellalt/keyboard-fin)
+for the Finnish language by using the [Divvun Installer](http://divvun.no)
+(some languages are only available via the nightly channel).
 
-Documentation can be found here:
+Documentation
+-------------
 
--   <https://giellalt.uit.no/lang/fin/FinnishDocumentation.html>
-    (analyser)
--   <https://giellalt.uit.no/index.html> (infrastructure)
+Documentation can be found at:
 
-Requirements
-------------
+-   <https://giellalt.uit.no/lang/findoc/index.html>
+-   <https://giellalt.uit.no/index.html>
+
+Core dependencies
+-----------------
 
 In order to compile and use Finnish language morphology and
 dictionaries, you need:
 
--   Xerox Finite-State Morphology tools, or
--   Helsinki Finite-State Technology library and tools, version 3.8 or
-    newer, or
--   Foma finite-state tool
+- an FST compiler: [HFST](https://github.com/hfst/hfst), [Foma](https://github.com/mhulden/foma) or [Xerox Xfst](https://web.stanford.edu/~laurik/fsmbook/home.html)
+- [VislCG3](https://visl.sdu.dk/svn/visl/tools/vislcg3/trunk) Constraint Grammar tools
 
-Optionally:
+To install VislCG3 and HFST, just copy/paste this into your Terminal on **Mac OS X**:
 
--   VislCG3 Constraint Grammar tools
+```
+curl https://apertium.projectjj.com/osx/install-nightly.sh | sudo bash
+```
+
+or terminal on **Ubuntu, Debian or Windows Subsystem for Linux**:
+
+```
+wget https://apertium.projectjj.com/apt/install-nightly.sh -O - | sudo bash
+sudo apt-get install cg3 hfst
+```
+
+or terminal on **RedHat, Fedora, CentOS or Windows Subsystem for Linux**:
+
+```
+wget https://apertium.projectjj.com/rpm/install-nightly.sh -O - | sudo bash
+sudo dnf install cg3 hfst
+```
+
+Alternatively, the Apertium wiki has good instructions on how to [install the dependencies for Mac
+OS X](https://wiki.apertium.org/wiki/Apertium_on_Mac_OS_X) and how to [install
+the dependencies on
+linux](https://wiki.apertium.org/wiki/Installation_of_grammar_libraries)
+
+Further details and dependencies are described on the GiellaLT [Getting Started](https://giellalt.uit.no/infra/GettingStarted.html) pages.
 
 Downloading
 -----------
 
-The Finnish language sources can be acquired using [giella SVN
-repository](https://giellalt.uit.no/infra/anonymous-svn.html), from the
-language specific directory, after the core has been downloaded and
-initial setup has been performed.
-
-Installation
-------------
-
-INSTALL describes the GNU build system in detail, but for most users the
-usual:
-
+Using Git:
 ```
- ./configure
- make
- (as root) make install
+git clone https://github.com/giellalt/lang-fin
 ```
 
-should result in a local installation and:
-
-    (as root) make uninstall
-
-in its uninstallation.
-
-If you would rather install in e.g. your home directory (or aren\'t the
-system administrator), you can tell ./configure:
-
-    ./configure --prefix=$HOME
-
-If you are checking out the development versions from SVN you must first
-create and install the necessary autotools files from the host system,
-and check that your environment is correctly set up. This is done by
-doing:
-
-> ./autogen.sh
-
-It is common practice to keep [generated files out of version
-control](http://www.gnu.org/software/automake/manual/automake.html#CVS).
-
-VPATH builds
-------------
-
-If you want to keep the source code tree clean, a VPATH build is the
-solution. The idea is to create a build dir somewhere outside of the
-source code tree, and call [configure]{.title-ref} from there. Here is
-one VPATH variant of the standard procedure:
-
+Using Subversion:
 ```
- mkdir build && cd build
- ../configure
- make
- (as root) make install
+svn checkout https://github.com/giellalt/lang-fin.git/trunk lang-fin
 ```
 
-This will keep all the generated files within the build/ dir, and keep
-the src/ dir (mostly) free of generated files. If you are building from
-the development version in SVN, you must run the ./autogen.sh script
-BEFORE you take the steps above.
+Building and installation
+-------------------------
 
-For further installation instruction refer to file `INSTALL`, which
-contains the standard installation instructions for GNU autoconf based
-software.
+[INSTALL](https://github.com/giellalt/lang-fin/blob/develop/INSTALL)
+describes the GNU build system in detail, but for most users it is the usual:
+
+```sh
+./autogen.sh # This will automatically clone or check out other GiellaLT dependencies
+./configure
+make
+(as root) make install
+```
