@@ -23,7 +23,7 @@ Documentation
 
 Documentation can be found at:
 
--   <https://giellalt.uit.no/lang/findoc/index.html>
+-   <https://giellalt.uit.no/lang/fin/j-fin.html>
 -   <https://giellalt.uit.no/index.html>
 
 Core dependencies
