@@ -1,6 +1,9 @@
 
 
 # Morphology
+Here's a list of links to the page for each file of source code. All pages are concatenated and can be found as [fin.html].
+
+
 * [root-morphology.md](root-morphology.md)
 * [determiners-stems.md](determiners-stems.md)
 * [fin-abbreviations-stems.md](fin-abbreviations-stems.md)
