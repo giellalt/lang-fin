@@ -35,7 +35,7 @@
     "<use_nohyphens>"     ->	"<cmp>" ,
     "<use_hyphen>"     ->	"<cmp>" "<hyph>" ,
     "<cmpnd>"     ->	"<cmp>" ,
-    "<cmpar>"     ->	"<comp>" ] .o.
+    "<comp>"     ->	"<der_comp>" ] .o.
   [ "<err_der>"  ->		0 ] .o.
   [ "<err_hyph>" ->		0 ] .o.
   [ "<err_lex>"  ->		0 ] .o.
