@@ -1,19 +1,40 @@
 [
+  [ "<n>" "<prop>" "<sem_plc>" -> "<np>" "<top>" ] .o.
+  [ "<n>" "<prop>" "<sem_org>" -> "<np>" "<org>" ] .o.
   [ "<n>" "<prop>" -> "<np>" ] .o.
-  [ "<n>" "<np>" -> "<np>" ] .o.
   [ "<part>" "<cnjsub>" -> "<cnjsub>" ] .o.
-  [ "<g3>" "<n>"   -> "<n>" "<g3>" ] .o.
   [ "<sem_fem>" -> "<ant>" "<f>"  ] .o.
   [ "<sem_mal>" -> "<ant>" "<m>"  ] .o.
   [ "<sem_sur>" -> "<cog>" ] .o.
   [ "<sem_plc>" -> "<top>"  ] .o.
   [ "<sem_geo>" -> "<top>"  ] .o.
   [ "<sem_human>" -> 0  ] .o.
+  [ "<sg1>"        -> "<p1>" "<sg>" ] .o.
+  [ "<sg2>"        -> "<p2>" "<sg>" ] .o.
+  [ "<sg3>"        -> "<p3>" "<sg>" ] .o.
+  [ "<pl1>"        -> "<p1>" "<pl>" ] .o.
+  [ "<pl2>"        -> "<p2>" "<pl>" ] .o.
+  [ "<pl3>"        -> "<p3>" "<pl>" ] .o.
+  [ "<du1>"        -> "<p1>" "<du>" ] .o.
+  [ "<du2>"        -> "<p2>" "<du>" ] .o.
+  [ "<du3>"        -> "<p3>" "<du>" ] .o.
+  [ "<po>"         -> "<post>" ] .o.
+  [ "<pxsg1>"      -> "<px1sg>" ] .o.
+  [ "<pxsg2>"      -> "<px2sg>" ] .o.
+  [ "<pxsg3>"      -> "<px3sg>" ] .o.
+  [ "<pxdu1>"      -> "<px1du>" ] .o.
+  [ "<pxdu2>"      -> "<px2du>" ] .o.
+  [ "<pxdu3>"      -> "<px3du>" ] .o.
+  [ "<pxpl1>"      -> "<px1pl>" ] .o.
+  [ "<pxpl2>"      -> "<px2pl>" ] .o.
+  [ "<pxpl3>"      -> "<px3pl>" ] .o.
   [ "#"            ->	"<cmp>" "+" ] .o.
   [ "<adp>" "<pr>"  ->	"<pr>" ] .o.
   [ "<adp>" "<po>"  ->	"<post>" ] .o.
   [ "<adp>" "<post>"  ->	"<post>" ] .o.
   [ %<qnt%> %<indef%>  ->	%<indef%> ] .o.
+  [ "<cc>"         ->	"<cnjcoo>" ] .o.
+  [ "<cs>"         ->	"<cnjsub>" ] .o.
  # [ "<foc_kaan>"          ->	"+" {kaan} "<adv>" ] .o.
  # [ "<foc_kin>"          ->	"+" {kin} "<adv>" ] .o.
  # [ "<foc_son>"         ->	"+" {son} "<pcle>" ] .o.
@@ -28,14 +49,34 @@
     "<hom6>"      ->	"⁶" ,
     "<hom7>"      ->	"⁷" ,
     "<hom8>"      ->	"⁸" ,
-    "<hom9>"      ->	"⁹" 
-  ] .o.
+    "<hom9>"      ->	"⁹" ,
+    "+Ex/N"       -> "<ex_n>" ,
+    "+Ex/A"       -> "<ex_adj>" ,
+    "+Ex/V"       -> "<ex_vblex>" ,
+    "<ex_a>"       -> "<ex_adj>" ,
+    "<ex_v>"       -> "<ex_vblex>" ,
+    "<pron>"      ->	"<prn>" ,
+    "<sup>"       ->	"<supn>" ,
+    "<superl>"    ->	"<sup>" ,
+    "<v>"         ->	"<vblex>" ,
+    "<interr>"    ->	"<itg>" ,
+    "<prs>"       ->	"<pres>" ,
+    "<imprt>"     ->	"<imp>" ,
+    "<prt>"       ->	"<pret>" ,
+    "<a>"         ->	"<adj>" ,
+    "<refl>"      ->	"<ref>" ,
+    "<interj>"    ->	"<ij>" ,
+    "<indef>"     ->	"<ind>" ,
+    "<ind>"       ->	"<indic>" ,
+    "<inan>"      ->	"<nn>" ,
+    "<comma>"     ->	"<cm>" ,
+    "<recipr>"    ->	"<res>" ] .o.
   [ "<inan>"      ->	"<nn>" ,
     "<comma>"     ->	"<cm>" ,
     "<use_nohyphens>"     ->	"<cmp>" ,
     "<use_hyphen>"     ->	"<cmp>" "<hyph>" ,
-    "<cmpnd>"     ->	"<cmp>" ,
-    "<comp>"     ->	"<der_comp>" ] .o.
+    "<cmpnd>"     ->	"<cmp>" 
+  ] .o.
   [ "<err_der>"  ->		0 ] .o.
   [ "<err_hyph>" ->		0 ] .o.
   [ "<err_lex>"  ->		0 ] .o.
