@@ -20,19 +20,19 @@
 ! translation based upon IPA. It was originally copied over from Southern
 ! Sámi IPA rules...
 
-define Vow       [ a | á | e | i | o | u | y | æ | ø | å | ä | ö | 
-                   A | Á | E | I | O | U | Y | Æ | Ø | Å | Ä | Ö | 
-                   é | ó | ú | í | à | è | ò | ù | ì | ë | ü | ï | 
+define Vow       [ a | á | e | i | o | u | y | æ | ø | å | ä | ö |
+                   A | Á | E | I | O | U | Y | Æ | Ø | Å | Ä | Ö |
+                   é | ó | ú | í | à | è | ò | ù | ì | ë | ü | ï |
                    â | ê | ô | û | î | ã | ý |
-                   É | Ó | Ú | Í | À | È | Ò | Ù | Ì | Ë | Ü | Ï | 
+                   É | Ó | Ú | Í | À | È | Ò | Ù | Ì | Ë | Ü | Ï |
                    Â | Ê | Ô | Û | Î | Ã | Ý |
                    ʉ | ə ] ;
 
-define Cns [ b | c | č | d | đ | f | g | h | j | k | l | m | n | ŋ | 
-             B | C | Č | D | Đ | F | G | H | J | K | L | M | N | Ŋ | 
-             p | q | r | s | š | t | ŧ | v | w | x | z | ž |   
-             P | Q | R | S | Š | T | Ŧ | V | W | X | Z | Ž | 
-             ɟ | ʎ | ɲ | ʧ ] ; 
+define Cns [ b | c | č | d | đ | f | g | h | j | k | l | m | n | ŋ |
+             B | C | Č | D | Đ | F | G | H | J | K | L | M | N | Ŋ |
+             p | q | r | s | š | t | ŧ | v | w | x | z | ž |
+             P | Q | R | S | Š | T | Ŧ | V | W | X | Z | Ž |
+             ɟ | ʎ | ɲ | ʧ ] ;
 
 define Sgm [ Vow | Cns ] ;
 
@@ -46,13 +46,13 @@ define Nas [ m | M | n | N | ŋ | Ŋ | ɲ ] ;
 
 define Syll Cns* Vow+ (ː) Cns*  ;
 
-define down [ A -> a, Á -> á, B -> b, C -> c, Č -> č, D -> d, E -> e, F -> f, 
-              G -> g, H -> h, I -> i, J -> j, K -> k, L -> l, M -> m, N -> n, 
-              Ŋ -> ŋ, O -> o, P -> p, Q -> q, R -> r, S -> s, Š -> š, T -> t, 
-              U -> u, V -> v, W -> w, X -> x, Y -> y, Z -> z, Ž -> ž, Æ -> æ, 
+define down [ A -> a, Á -> á, B -> b, C -> c, Č -> č, D -> d, E -> e, F -> f,
+              G -> g, H -> h, I -> i, J -> j, K -> k, L -> l, M -> m, N -> n,
+              Ŋ -> ŋ, O -> o, P -> p, Q -> q, R -> r, S -> s, Š -> š, T -> t,
+              U -> u, V -> v, W -> w, X -> x, Y -> y, Z -> z, Ž -> ž, Æ -> æ,
               Ø -> ø, Å -> å, Ö -> ö, Ä -> ä, Ï -> i  ] ;
 
-define InitialAspiration p -> p ʰ , t -> t ʰ , k -> k ʰ 
+define InitialAspiration p -> p ʰ , t -> t ʰ , k -> k ʰ
                          || [.#.|%-] _ ( [ l | r | v | n ] ) Vow ;
 
 define ngGeminate g n -> ŋ ŋ ;
