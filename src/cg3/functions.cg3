@@ -2657,6 +2657,7 @@ SUBSTITUTE:smjRemove (←smj→) (*) TARGET (←smj→) ; #Apertium
 SUBSTITUTE:smnRemove (←smn→) (*) TARGET (←smn→) ; #Apertium
 SUBSTITUTE:smsRemove (←sms→) (*) TARGET (←sms→) ; #Apertium
 SUBSTITUTE:fkvRemove (←fkv→) (*) TARGET (←fkv→) ; #Apertium
+SUBSTITUTE:fkvRemove (←fin→) (*) TARGET (←fin→) ; #Apertium
 
 
 #SUBSTITUTE (sem_year num) (num sem_year) ;
