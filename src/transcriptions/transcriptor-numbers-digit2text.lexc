@@ -1,24 +1,128 @@
+Multichar_Symbols
+@U.NUMCASE.SGNOM@ @U.NUMCASE.SGINE@
+
 LEXICON Root
-HUNDREDSM ;		! 200M
-1:sata HUNDREDM ;	! 100M
-!JUSTTENM ;      ! 10M
-TENSM ;			! 20-99M
-TEENSM ;		! 11-19M
-TENM ;			! 10M->11M
-ONESM ;			! 1-9M
-HUNDREDST ;		! 200000-999999
-1:sata HUNDREDT ;	! 100000-100999
-TENST ;			! 20000-99999,10000-10999
-TEENST ;		! 11000-19999
-TENT ;          ! 10000-10999
-ONEST ;			! 2000-9999
-1:tuhat THOUSAND ;	! 1000-1999
-UNDERTHOUSAND ;		! 100-999
-TENS ;			! 20-99
-TEENS ;			! 11-19
-JUSTTEN ;       ! 10
-ONES ;			! 1-9
-ZERO ;          ! 0
+HUNDREDSMRD ;		! 200 000 000 000–999 999 999 999
+1:sata HUNDREDMRD ;	! 100 000 000 000-199 999 999 999
+TENSMRD ;			!  20 000 000 000– 29 999 999 999
+TEENSMRD ;		!      11 000 000 000- 19 999 999 999
+TENMRD ;			!  10 000 000 000– 10 999 999 999
+ONESMRD ;			!   1 000 000 000–  9 999 999 999
+HUNDREDSM ;		!         200 000 000–    999 999 999
+1:sata HUNDREDM ;	!     100 000 000–    199 999 999
+TENSM ;			!          20 000 000–     99 999 999
+TEENSM ;		!          11 000 000–     19 999 999
+TENM ;			!          10 000 000–     10 999 999
+ONESM ;			!           1 000 000–      9 999 999
+HUNDREDST ;		!             200 000–        999 999
+1:sata HUNDREDT ;	!         100 000–        199 999
+TENST ;			!              20 000–         99 999
+TEENST ;		!              11 000–         19 999
+TENT ;          !              10 000-         10 999
+ONEST ;			!               2 000–          9 999
+1:tuhat THOUSAND ;	!           1 000–          1 999
+UNDERTHOUSAND ;		!             100–            999
+TENS ;			!                  20-             99
+TEENS ;			!                  11-             19
+JUSTTEN ;       !                                  10
+ONES ;			!                   1-              9
+ZERO ;          !                                   0
+
+LEXICON HUNDREDSMRD
+2:kaksi  CUODIMRD ;
+3:kolme CUODIMRD ;
+4:neljä CUODIMRD ;
+5:viisi CUODIMRD ;
+6:kuusi CUODIMRD ;
+7:seitsemän CUODIMRD ;
+8:kahdeksan CUODIMRD ;
+9:yhdeksän CUODIMRD ;
+
+LEXICON CUODIMRD
+:sataa HUNDREDMRD ;
+
+LEXICON HUNDREDMRD
+TENMRD ;
+TENSMRD ;
+TEENSMRD ;
+%0: ONESMRD ;
+%0%0: MILJONRD ;
+
+!LEXICON JUSTTENM
+!kymmenen:1%0 LOHKAIM ;
+
+LEXICON TEENSMRD
+1: TEENMRD ;
+
+LEXICON TEENMRD
+1:yksi LOHKAIMRD ;
+2:kaksi LOHKAIMRD ;
+3:kolme LOHKAIMRD ;
+4:neljä LOHKAIMRD ;
+5:viisi LOHKAIMRD ;
+6:kuusi LOHKAIMRD ;
+7:seitsemän LOHKAIMRD ;
+8:kahdeksan LOHKAIMRD ;
+9:yhdeksän LOHKAIMRD ;
+
+LEXICON LOHKAIMRD
+:toista MILJARD ;
+
+LEXICON TENSMRD
+!1:yksi LÅGEVM ;
+2:kaksi LÅGEVMRD ;
+3:kolme LÅGEVMRD ;
+4:neljä LÅGEVMRD ;
+5:viisi LÅGEVMRD ;
+6:kuusi LÅGEVMRD ;
+7:seitsemän LÅGEVMRD ;
+8:kahdeksan LÅGEVMRD ;
+9:yhdeksän LÅGEVMRD ;
+
+LEXICON TENMRD
+1%0:kymmenen MILJARD ;
+
+LEXICON LÅGEVMRD
+%0:kymmentä MILJARD ;
+:kymmentä ONESMRD ;
+
+LEXICON ONESMRD
+!1:yksi% miljoona%   OVERTHOUSANDS ;
+1:miljardi OVERMILLIONS ;
+2:kaksi MILJARD ;
+3:kolme MILJARD ;
+4:neljä MILJARD ;
+5:viisi MILJARD ;
+6:kuusi MILJARD ;
+7:seitsemän MILJARD ;
+8:kahdeksan MILJARD ;
+9:yhdeksän MILJARD ;
+
+LEXICON MILJARD
+:miljardia OVERMILLIONS ;
+
+! =================
+! Under the milliard
+! =================
+
+LEXICON OVERMILLIONS
+HUNDREDSM ;		! x00.000.000
+1:sata HUNDREDM ;	! 100.000.000
+%0: TENSM ;		!  20.000.000
+%0: TEENSM ;		!  10.000.000
+%0%0: ONESM ;		!   2.000.000
+%0%01:tuhat MILJON ;	!   1.000.000
+%0%0%0: UNDERMILLION ;
+%0%0%0%0: TENST ;		!  20.000.000
+%0%0%0%0: TEENST ;		!  10.000.000
+%0%0%0%0%0: ONEST ;		!   2.000.000
+%0%0%0%0%01:tuhat THOUSAND ;	!   1.000.000
+%0%0%0%0%0%0: UNDERTHOUSAND ;
+%0%0%0%0%0%0%0: TENS ;
+%0%0%0%0%0%0%0: TEENS ;
+%0%0%0%0%0%0%0%0: ONES ;
+%0%0%0%0%0%0%0%0%0: # ;	!  x000000
+
 
 LEXICON HUNDREDSM
 2:kaksi  CUODIM ;
@@ -61,7 +165,7 @@ LEXICON LOHKAIM
 :toista MILJON ;
 
 LEXICON TENSM
-1:yksi LÅGEVM ;
+!1:yksi LÅGEVM ;
 2:kaksi LÅGEVM ;
 3:kolme LÅGEVM ;
 4:neljä LÅGEVM ;
@@ -79,190 +183,198 @@ LEXICON LÅGEVM
 :kymmentä ONESM ;
 
 LEXICON ONESM
-1:yksi% miljoona%   OVERTHOUSANDS ;
-2:kaksi MILJON ;
-3:kolme MILJON ;
-4:neljä MILJON ;
-5:viisi MILJON ;
-6:kuusi MILJON ;
-7:seitsemän MILJON ;
-8:kahdeksan MILJON ;
-9:yhdeksän MILJON ; 
+!1:yksi% miljoona%   OVERTHOUSANDS ;
+1:miljoona OVERTHOUSANDS ; ! 1######
+2:kaksi MILJON ;     ! 2######
+3:kolme MILJON ;     ! 3######
+4:neljä MILJON ;     ! 4######
+5:viisi MILJON ;     ! 5######
+6:kuusi MILJON ;     ! 6######
+7:seitsemän MILJON ; ! 7######
+8:kahdeksan MILJON ; ! 8######
+9:yhdeksän MILJON ;  ! 9######
 
 LEXICON MILJON
-:miljoonaa OVERTHOUSANDS ;
+:miljoonaa OVERTHOUSANDS ; ! ¤######
 
 ! =================
 ! Under the miljon
 ! =================
 
+LEXICON UNDERMILLION
+
+HUNDREDST ;       !       ¤#####
+1:sata HUNDREDT ; !       1#####
+
 LEXICON OVERTHOUSANDS
-HUNDREDST ;		! x00.000.000
-1:sata HUNDREDT ;	! 100.000.000
-%0: TENST ;		!  20.000.000
-%0: TEENST ;		!  10.000.000
-%0%0: ONEST ;		!   2.000.000
-%0%01:tuhat THOUSAND ;	!   1.000.000
-%0%0%0: UNDERTHOUSAND ;	
-%0%0%0%0: TENS ;
-%0%0%0%0: TEENS ;
-%0%0%0%0%0: ONES ;
-%0%0%0%0%0%0: # ;	!  x000000
+HUNDREDST ;		!         ¤#####
+1:sata HUNDREDT ;	!     1#####
+%0: TENST ;		!         0¤####
+%0: TEENST ;		!     01####
+%0: TENT ;          !     010###
+%0%0: ONEST ;		!     00¤###
+%0%01:tuhat THOUSAND ;	! 001###
+%0%0%0: UNDERTHOUSAND ; ! 000###
+%0%0%0%0: TENS ;    !     0000¤#
+%0%0%0%0: TEENS ;   !     00001#
+%0%0%0%0%0: ONES ;  !     00000#
+%0%0%0%0%0%0: # ;	!     000000
 
 LEXICON HUNDREDST
-2:kaksi  CUODIT ;	! 200000-299999
-3:kolme CUODIT ;	! 300000-399999
-4:neljä CUODIT ;	! 400000-499999
-5:viisi CUODIT ;	! 500000-599999
-6:kuusi CUODIT ;	! 600000-699999
-7:seitsemän CUODIT ;	! 700000-799999
-8:kahdeksan CUODIT ;	! 800000-899999
-9:yhdeksän CUODIT ;	! 900000-999999
+2:kaksi  CUODIT ;	! 2#####
+3:kolme CUODIT ;	! 3#####
+4:neljä CUODIT ;	! 4#####
+5:viisi CUODIT ;	! 5#####
+6:kuusi CUODIT ;	! 6#####
+7:seitsemän CUODIT ;	! 7#####
+8:kahdeksan CUODIT ;	! 8#####
+9:yhdeksän CUODIT ;	! 9#####
 
 LEXICON CUODIT
-:sataa HUNDREDT ;	! 100000-199999
+:sataa HUNDREDT ;	! ¤#####
 
-LEXICON HUNDREDT	! X = 1-9, Y = 0-9
-TENST ;			! X2XYYY, X10YYY
-TEENST ;		! X1XYYY
-%01:yksi THOUSANDS ;
-%0: ONEST ;		! XX0YYY
-%0%0: THOUSANDS ;	! X00YYY
+LEXICON HUNDREDT	! ¤ = 1-9, # = 0-9
+TENST ;			! ¤¤####
+TENT ;			! ¤10###
+TEENST ;		! ¤1¤###
+%01:yksi THOUSANDS ; ! ¤01###
+%0: ONEST ;		! ¤0¤###
+%0%0: THOUSANDS ;	! ¤00###
 
 LEXICON TEENST
-1: TEENT ;
+1: TEENT ;  ! 11###
 
 !LEXICON JUSTTENT
 !kymmenen% tuhatta:1%0 THOUSANDS ;
 
 LEXICON TEENT
-1:yksi LOHKAIT ;
-2:kaksi LOHKAIT ;
-3:kolme LOHKAIT ;
-4:neljä LOHKAIT ;
-5:viisi LOHKAIT ;
-6:kuusi LOHKAIT ;
-7:seitsemän LOHKAIT ;
-8:kahdeksan LOHKAIT ;
-9:yhdeksän LOHKAIT ;
+1:yksi LOHKAIT ;      ! 11###
+2:kaksi LOHKAIT ;     ! 12###
+3:kolme LOHKAIT ;     ! 13###
+4:neljä LOHKAIT ;     ! 14###
+5:viisi LOHKAIT ;     ! 15###
+6:kuusi LOHKAIT ;     ! 16###
+7:seitsemän LOHKAIT ; ! 17###
+8:kahdeksan LOHKAIT ; ! 18###
+9:yhdeksän LOHKAIT ;  ! 19###
 
 LEXICON LOHKAIT
-:toista THOUSANDS ;
+:toista THOUSANDS ;  ! 11###-19###
 
 LEXICON TENST
-2:kaksi LÅGEVT ;
-3:kolme LÅGEVT ;
-4:neljä LÅGEVT ;
-5:viisi LÅGEVT ;
-6:kuusi LÅGEVT ;
-7:seitsemän LÅGEVT ;
-8:kahdeksan LÅGEVT ;
-9:yhdeksän LÅGEVT ;
+2:kaksi LÅGEVT ;     ! 2####
+3:kolme LÅGEVT ;     ! 3####
+4:neljä LÅGEVT ;     ! 4####
+5:viisi LÅGEVT ;     ! 5####
+6:kuusi LÅGEVT ;     ! 6####
+7:seitsemän LÅGEVT ; ! 7####
+8:kahdeksan LÅGEVT ; ! 8####
+9:yhdeksän LÅGEVT ;  ! 9####
 
 
 LEXICON TENT
-1%0:kymmenentuhatta THOUSAND ;
+1%0:kymmenentuhatta THOUSAND ;  ! 10###
 
 LEXICON LÅGEVT
-%0:kymmentä THOUSANDS ;
- 1:kymmentäyksituhatta THOUSAND ;
-  :kymmentä ONEST ;
+%0:kymmentä THOUSANDS ; ! ¤0###
+ 1:kymmentäyksituhatta THOUSAND ; ! ¤1###
+  :kymmentä ONEST ;     ! ¤¤###-¤¤###
 
 LEXICON ONEST
-2:kaksi THOUSANDS ;
-3:kolme THOUSANDS ;
-4:neljä THOUSANDS ;
-5:viisi THOUSANDS ;
-6:kuusi THOUSANDS ;
-7:seitsemän THOUSANDS ;
-8:kahdeksan THOUSANDS ;
-9:yhdeksän THOUSANDS ;
+2:kaksi THOUSANDS ;     ! 2###
+3:kolme THOUSANDS ;     ! 3###
+4:neljä THOUSANDS ;     ! 4###
+5:viisi THOUSANDS ;     ! 5###
+6:kuusi THOUSANDS ;     ! 6###
+7:seitsemän THOUSANDS ; ! 7###
+8:kahdeksan THOUSANDS ; ! 8###
+9:yhdeksän THOUSANDS ;  ! 9###
 
 LEXICON THOUSANDS      ! x > 1
-:tuhatta THOUSAND ;
+:tuhatta THOUSAND ;    ! ¤###
 
 LEXICON THOUSAND
-UNDERTHOUSAND ;	   ! 1100-1999
-%0: TENS ;	   ! 1020-1099
-%0: TEENS ;	   ! 1010-1019
-%0%0: ONES ;	   ! 1001-1009
-%0%0%0: # ;	   ! 1000
+UNDERTHOUSAND ;	   ! 1¤##
+%0: TENS ;	       ! 10¤#
+%0: TEENS ;	       ! 101¤
+%0%0: ONES ;	   ! 100¤
+%0%0%0: # ;	       ! 1000
 
 !===========================
 !Here starts the 999 numbers
 !===========================
 
 LEXICON UNDERTHOUSAND
-HUNDREDS ;
-1:sata HUNDRED ;
+HUNDREDS ;           ! 2##-9##
+1:sata HUNDRED ;     ! 1##
 
 LEXICON HUNDREDS
-2:kaksi  CUODI ;
-3:kolme CUODI ;
-4:neljä CUODI ;
-5:viisi CUODI ;
-6:kuusi CUODI ;
-7:seitsemän CUODI ;
-8:kahdeksan CUODI ;
-9:yhdeksän CUODI ;
+2:kaksi  CUODI ;     ! 2##
+3:kolme CUODI ;      ! 3##
+4:neljä CUODI ;      ! 4##
+5:viisi CUODI ;      ! 5##
+6:kuusi CUODI ;      ! 6##
+7:seitsemän CUODI ;  ! 7##
+8:kahdeksan CUODI ;  ! 8##
+9:yhdeksän CUODI ;   ! 9##
 
 LEXICON CUODI
-:sataa HUNDRED ;
+:sataa HUNDRED ;     ! ¤##
 
 LEXICON HUNDRED
-TENS ;
-TEENS ;
-%0: ONES ;
-%0%0: # ;
+TENS ;               ! #¤#
+TEENS ;              ! #1#
+%0: ONES ;           ! #0#
+%0%0: # ;            ! #00
 
 LEXICON TEENS
-1: TEEN ;
+1: TEEN ;            ! 1¤
 
 LEXICON TEEN
-1:yksi LOHKAI ;
-2:kaksi LOHKAI ;
-3:kolme LOHKAI ;
-4:neljä LOHKAI ;
-5:viisi LOHKAI ;
-6:kuusi LOHKAI ;
-7:seitsemän LOHKAI ;
-8:kahdeksan LOHKAI ;
-9:yhdeksän LOHKAI ;
+1:yksi LOHKAI ;      ! 11
+2:kaksi LOHKAI ;     ! 12
+3:kolme LOHKAI ;     ! 13
+4:neljä LOHKAI ;     ! 14
+5:viisi LOHKAI ;     ! 15
+6:kuusi LOHKAI ;     ! 16
+7:seitsemän LOHKAI ; ! 17
+8:kahdeksan LOHKAI ; ! 18
+9:yhdeksän LOHKAI ;  ! 19
 
 LEXICON LOHKAI
 :toista # ;
 
-!LEXICON 
+!LEXICON
 !kymmentä:1%0 # ;
 
 LEXICON TENS
-JUSTTEN ;
-2:kaksi LÅGEV ;
-3:kolme LÅGEV ;
-4:neljä LÅGEV ;
-5:viisi LÅGEV ;
-6:kuusi LÅGEV ;
-7:seitsemän LÅGEV ;
-8:kahdeksan LÅGEV ;
-9:yhdeksän LÅGEV ;
+JUSTTEN ;            ! 10
+2:kaksi LÅGEV ;      ! 2#
+3:kolme LÅGEV ;      ! 3#
+4:neljä LÅGEV ;      ! 4#
+5:viisi LÅGEV ;      ! 5#
+6:kuusi LÅGEV ;      ! 6#
+7:seitsemän LÅGEV ;  ! 7#
+8:kahdeksan LÅGEV ;  ! 8#
+9:yhdeksän LÅGEV ;   ! 9#
 
 LEXICON LÅGEV
-%0:kymmentä # ;
-  :kymmentä ONES ;
+%0:kymmentä # ;      ! ¤0
+  :kymmentä ONES ;   ! ¤#
 
 LEXICON JUSTTEN
-1%0:kymmenen # ;
+1%0:kymmenen # ;     ! 10
 
 LEXICON ONES
-1:yksi # ;
-2:kaksi # ;
-3:kolme # ;
-4:neljä # ;
-5:viisi # ;
-6:kuusi # ;
-7:seitsemän # ;
-8:kahdeksan # ;
-9:yhdeksän # ;
+1:yksi # ;           ! 1
+2:kaksi # ;          ! 2
+3:kolme # ;          ! 3
+4:neljä # ;          ! 4
+5:viisi # ;          ! 5
+6:kuusi # ;          ! 6
+7:seitsemän # ;      ! 7
+8:kahdeksan # ;      ! 8
+9:yhdeksän # ;       ! 9
 
 LEXICON ZERO
-%0:nolla # ;
+%0:nolla # ;         ! 0
