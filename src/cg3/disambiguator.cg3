@@ -5001,3 +5001,17 @@ SUBSTITUTE ("v채list채" Po) ("v채linen" N Sg Par) ("v채list채" Po) ; # t천lke k�
 SUBSTITUTE A Pron ("millainen") ; # Rel Interr 
 
 
+# Disse kommenteres inn n책r analysen skal brukes i functions.cg3   
+SUBSTITUTE (A) (A <fin>) WORD ;  #RemoveFromApertium
+SUBSTITUTE (N) (N <fin>) WORD ;  #RemoveFromApertium
+SUBSTITUTE (Adv) (Adv <fin>) WORD ;  #RemoveFromApertium
+SUBSTITUTE (V) (V <fin>) WORD ; #RemoveFromApertium
+SUBSTITUTE (Num) (Num <fin>) WORD ;  #RemoveFromApertium
+SUBSTITUTE (Interj) (Interj <fin>) WORD ;  #RemoveFromApertium
+SUBSTITUTE (Po) (Po <fin>) WORD ; #RemoveFromApertium
+SUBSTITUTE (Pr) (Pr <fin>) WORD ; #RemoveFromApertium
+SUBSTITUTE (Pron) (Pron <fin>) WORD ; #RemoveFromApertium
+SUBSTITUTE (CC) (CC <fin>) WORD ; #RemoveFromApertium
+SUBSTITUTE (CS) (CS <fin>) WORD ; #RemoveFromApertium
+SUBSTITUTE (Pcle) (Pcle <fin>) WORD ; #RemoveFromApertium
+
