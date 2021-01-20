@@ -36,6 +36,7 @@ MD_PAGES=root-morphology.md  \
           symbols-affixes.md \
           verbs-stems.md \
           verbs-affixes.md \
+		  transcriptor-numbers-digit2text.md \
 		  phonology-morphology.md 
 
 include $(top_srcdir)/../giella-core/am-shared/docs-dir-include.am
