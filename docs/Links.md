@@ -27,4 +27,5 @@
 * [symbols-affixes.md](symbols-affixes.md)
 * [verbs-stems.md](verbs-stems.md)
 * [verbs-affixes.md](verbs-affixes.md)
+* [transcriptor-numbers-digit2text.md](transcriptor-numbers-digit2text.md)
 * [phonology-morphology.md](phonology-morphology.md)
