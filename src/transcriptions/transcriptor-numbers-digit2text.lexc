@@ -6,16 +6,17 @@ Multichar_Symbols
 !! Transcribing numbers to words in Finnish is not completely trivial, one
 !! reason is that numbers in Finnish are written as compounds, regardless of
 !! length:
-!! 123456 satakaksikymmentäkolmetuhattaneljäsataaviisikymmentäkuusi
+!! 123456 is *satakaksikymmentäkolmetuhattaneljäsataaviisikymmentäkuusi*.
 !! Another limitation is that inflections can be unmarked in running text,
 !! that is digit expression is assumed to agree the case of the phrase it is in,
 !! e.g.
-!! 27 kaksikymmentäseitsemän
-!! 27:lle kahdellekymmenelleseitsemälle
+!! 27 is *kaksikymmentäseitsemän*, and
+!! 27:lle *kahdellekymmenelleseitsemälle*
 !! but in a phrase: "tarjosin 27 osanottajalle" 27 assumes the allative case
 !! without marking and it is preferred grammatical form in good writing.
 
 LEXICON Root
+!! !Morphotactics of digit strings
 !! The morphotactics related to numbers and their transcriptions is that we
 !! need to know the whole digit string to know how the length of whole digit
 !! string to know what to start reading, and zeroes are not read out but
@@ -24,10 +25,21 @@ LEXICON Root
 !! the implementation of 100 000–999 999 is almost
 !! exactly same as 100 000 000–999 000 000 and everything afterwads with the
 !! change of word *tuhat*~*tuhatta*, *miljoona*~*miljoonaa*, *miljardia*,
-!! *biljoonaa*, *biljardia* and so forth. The numbers are built from ~single
+!! *biljoonaa*, *biljardia* and so forth–that is along the long scale British
+!! (French) system where American billion = milliard etc.
+!! The numbers are built from ~single
 !! word length blocks in decreasing order with the exception of zig-zagging
 !! over numbers 11–19 where the second digit comes before first.
-!! The rest of this doc is the lexicons in descendign order of magnitude.
+!! The rest of this documentation describes the morphotactic implementation
+!! by the lexicon structure in descending order of magnitude with examples.
+!!€gt-norm:  Digits of all magnitudes
+!!€  1: yksi
+!!€  21: kaksikymmentäyksi
+!!€  321: kolmesataakaksikymmentäyksi
+!!€  4321: neljätuhattakolmesataakaksikymmentäyksi
+!!€  54321: viisikymmentäneljätuhattakolmesataakaksikymmentäyksi
+!!€  654321: kuusisataaviisikymmentäneljätuhattakolmesataakaksikymmentäyksi
+!!€  7654321: seitsemänmiljoonaakuusisataaviisikymmentäneljätuhattakolmesataakaksikymmentäyksi
 HUNDREDSMRD ;		! 200 000 000 000–999 999 999 999
 1:sata HUNDREDMRD ;	! 100 000 000 000-199 999 999 999
 TENSMRD ;			!  20 000 000 000– 29 999 999 999
@@ -55,7 +67,7 @@ ONES ;			!                   1-              9
 ZERO ;          !                                   0
 
 LEXICON HUNDREDSMRD
-!! lexicon @LEXNAME@ contains numbers 2-9 that need to be followed by exactly
+!! Lexicon `@LEXNAME@` contains numbers 2-9 that need to be followed by exactly
 !! 11 digits: 200 000 000 000–999 999 999 999
 !! this is to implement *N*sataa...miljardia...
 2:kaksi  CUODIMRD ;
@@ -68,13 +80,17 @@ LEXICON HUNDREDSMRD
 9:yhdeksän CUODIMRD ;
 
 LEXICON CUODIMRD
-!! lexicon @LEXNAME@ contains numbers 2-9 that need to be followed by exactly
+!! Lexicon `@LEXNAME@` contains numbers 2-9 that need to be followed by exactly
 !! this is to implement N*sataa*...miljardia...
+!!€gt-norm:  hundreds of milliards
+!!€  20000000000: kaksisataamiljardia
 :sataa HUNDREDMRD ;
 
 LEXICON HUNDREDMRD
-!! lexicon @LEXNAME@ is for numbers in range: 100 000 000 000–199 000 000 000
+!! Lexicon `@LEXNAME@` is for numbers in range: 100 000 000 000–199 000 000 000
 !! this is to implement *sata*...miljardia...
+!!€gt-norm:  hundred milliards
+!!€  1000000000: satamiljardia
 TENMRD ;
 TENSMRD ;
 TEENSMRD ;
@@ -85,13 +101,15 @@ TEENSMRD ;
 !kymmenen:1%0 LOHKAIM ;
 
 LEXICON TEENSMRD
-!! lexicon @LEXNAME@ is for numbers with 11 000 000 000–19 000 000 000
+!! Lexicon `@LEXNAME@` is for numbers with 11 000 000 000–19 000 000 000
 !! this is to implement ...N*toista*...miljardia...
 1: TEENMRD ;
 
 LEXICON TEENMRD
-!! lexicon @LEXNAME@ is for numbers with 11 000 000 000–19 000 000 000
+!! Lexicon `@LEXNAME@` is for numbers with 11 000 000 000–19 000 000 000
 !! this is to implement ...*N*toista...miljardia...
+!!€gt-norm:  teen milliards
+!!€  1200000000: kaksitoistailjardia
 1:yksi LOHKAIMRD ;
 2:kaksi LOHKAIMRD ;
 3:kolme LOHKAIMRD ;
@@ -106,7 +124,7 @@ LEXICON LOHKAIMRD
 :toista MILJARD ;
 
 LEXICON TENSMRD
-!! lexicon @LEXNAME@ is for numbers with 20 000 000 000–90 000 000 000
+!! Lexicon `@LEXNAME@` is for numbers with 20 000 000 000–90 000 000 000
 !! this is to implement ...*N*kymmentä...miljardia...
 !1:yksi LÅGEVM ;
 2:kaksi LÅGEVMRD ;
@@ -119,18 +137,22 @@ LEXICON TENSMRD
 9:yhdeksän LÅGEVMRD ;
 
 LEXICON TENMRD
-!! lexicon @LEXNAME@ is for numbers with 10 000 000 000–10 999 999 999
+!! Lexicon `@LEXNAME@` is for numbers with 10 000 000 000–10 999 999 999
 !! this is to implement ...*kymmenen*miljardia...
+!!€gt-norm:  ten milliards
+!!€  1000000000: kymmenenmiljardia
 1%0:kymmenen MILJARD ;
 
 LEXICON LÅGEVMRD
-!! lexicon @LEXNAME@ is for numbers with 20 000 000 000–90 000 000 000
+!! Lexicon `@LEXNAME@` is for numbers with 20 000 000 000–90 000 000 000
 !! this is to implement ...N*kymmentä*...miljardia...
+!!€gt-norm:  tens of milliards
+!!€  20000000000: kaksikymmentämiljardia
 %0:kymmentä MILJARD ;
 :kymmentä ONESMRD ;
 
 LEXICON ONESMRD
-!! lexicon @LEXNAME@ is for numbers with 1 000 000 000–9 000 000 000
+!! Lexicon `@LEXNAME@` is for numbers with 1 000 000 000–9 000 000 000
 !! this is to implement ...*N*miljardia...
 !1:yksi% miljoona%   OVERTHOUSANDS ;
 1:miljardi OVERMILLIONS ;
@@ -144,8 +166,10 @@ LEXICON ONESMRD
 9:yhdeksän MILJARD ;
 
 LEXICON MILJARD
-!! lexicon @LEXNAME@ is for numbers with 1 000 000 000–9 000 000 000
+!! Lexicon `@LEXNAME@` is for numbers with 1 000 000 000–9 000 000 000
 !! this is to implement ...N*miljardia*...
+!!€gt-norm:  milliards
+!!€  2000000000: kaksimiljardia
 :miljardia OVERMILLIONS ;
 
 ! =================
@@ -153,7 +177,7 @@ LEXICON MILJARD
 ! =================
 
 LEXICON OVERMILLIONS
-!! lexicon @LEXNAME@ is for the millions *part* of numbers greater than 1 milliard
+!! Lexicon `@LEXNAME@` is for the millions *part* of numbers greater than 1 milliard
 HUNDREDSM ;		                ! ¤## ### ###
 1:sata HUNDREDM ;	            ! 1## ### ###
 %0: TENSM ;		                !  ¤# ### ###
@@ -174,7 +198,7 @@ HUNDREDSM ;		                ! ¤## ### ###
 
 
 LEXICON HUNDREDSM
-!! lexicon @LEXNAME@ contains numbers 2-9 that need to be followed by exactly
+!! Lexicon `@LEXNAME@` contains numbers 2-9 that need to be followed by exactly
 !! 8 digits: 200 000 000–999 999 999
 !! this is to implement *N*sataa...miljoonaa...
 2:kaksi  CUODIM ;
@@ -187,12 +211,14 @@ LEXICON HUNDREDSM
 9:yhdeksän CUODIM ;
 
 LEXICON CUODIM
-!! lexicon @LEXNAME@ contains numbers 2-9 that need to be followed by exactly
+!! Lexicon `@LEXNAME@` contains numbers 2-9 that need to be followed by exactly
 !! this is to implement N*sataa*...miljoonaa...
+!!€gt-norm:  Hundreds of millions
+!!€  200000000: kaksisataamiljoonaa
 :sataa HUNDREDM ;
 
 LEXICON HUNDREDM
-!! lexicon @LEXNAME@ is for numbers in range: 100 000 000–199 000 000
+!! Lexicon `@LEXNAME@` is for numbers in range: 100 000 000–199 000 000
 !! this is to implement *sata*...miljoonaa...
 TENM ;
 TENSM ;
@@ -204,13 +230,15 @@ TEENSM ;
 !kymmenen:1%0 LOHKAIM ;
 
 LEXICON TEENSM
-!! lexicon @LEXNAME@ is for numbers with 11 000 000–19 000 000
+!! Lexicon `@LEXNAME@` is for numbers with 11 000 000–19 000 000
 !! this is to implement ...N*toista*...miljoonaa...
 1: TEENM ;
 
 LEXICON TEENM
-!! lexicon @LEXNAME@ is for numbers with 11 000 000–19 000 000
+!! Lexicon `@LEXNAME@` is for numbers with 11 000 000–19 000 000
 !! this is to implement ...*N*toista...miljoonaa...
+!!€gt-norm:  Teen millions
+!!€  1200000: kaksitoistamiljoonaa
 1:yksi LOHKAIM ;
 2:kaksi LOHKAIM ;
 3:kolme LOHKAIM ;
@@ -225,7 +253,7 @@ LEXICON LOHKAIM
 :toista MILJON ;
 
 LEXICON TENSM
-!! lexicon @LEXNAME@ is for numbers with 20 000 000–90 000 000
+!! Lexicon `@LEXNAME@` is for numbers with 20 000 000–90 000 000
 !! this is to implement ...*N*kymmentä...miljoonaa...
 !1:yksi LÅGEVM ;
 2:kaksi LÅGEVM ;
@@ -238,18 +266,22 @@ LEXICON TENSM
 9:yhdeksän LÅGEVM ;
 
 LEXICON TENM
-!! lexicon @LEXNAME@ is for numbers with 10 000 000–10 999 999
+!! Lexicon `@LEXNAME@` is for numbers with 10 000 000–10 999 999
 !! this is to implement ...*kymmenen*miljoonaa...
+!!€gt-norm:  Ten millions
+!!€  2000000: kymmenenmiljoonaa
 1%0:kymmenen MILJON ;
 
 LEXICON LÅGEVM
-!! lexicon @LEXNAME@ is for numbers with 20 000 000–90 000 000
+!! Lexicon `@LEXNAME@` is for numbers with 20 000 000–90 000 000
 !! this is to implement ...N*kymmentä*...miljoonaa..
+!!€gt-norm:  Tens of millions
+!!€  2000000: kaksikymmentämiljoonaa
 %0:kymmentä MILJON ;
 :kymmentä ONESM ;
 
 LEXICON ONESM
-!! lexicon @LEXNAME@ is for numbers with 1 000 000–9 000 000
+!! Lexicon `@LEXNAME@` is for numbers with 1 000 000–9 000 000
 !! this is to implement ...*N*miljoonaa...
 !1:yksi% miljoona%   OVERTHOUSANDS ;
 1:miljoona OVERTHOUSANDS ; ! 1######
@@ -263,8 +295,10 @@ LEXICON ONESM
 9:yhdeksän MILJON ;  ! 9######
 
 LEXICON MILJON
-!! lexicon @LEXNAME@ is for numbers with 1 000 000–9 000 000
+!! Lexicon `@LEXNAME@` is for numbers with 1 000 000–9 000 000
 !! this is to implement ...N*miljoonaa*...
+!!€gt-norm:  Millions
+!!€  200000: kaksisataamiljoonaa
 :miljoonaa OVERTHOUSANDS ; ! ¤######
 
 ! =================
@@ -272,12 +306,12 @@ LEXICON MILJON
 ! =================
 
 LEXICON UNDERMILLION
-!! lexicon @LEXNAME@ is for numbers with 100 000–900 000 after milliards
+!! Lexicon `@LEXNAME@` is for numbers with 100 000–900 000 after milliards
 HUNDREDST ;       !       ¤#####
 1:sata HUNDREDT ; !       1#####
 
 LEXICON OVERTHOUSANDS
-!! lexicon @LEXNAME@ is for the thousands *part* of numbers greater than 1 million
+!! Lexicon `@LEXNAME@` is for the thousands *part* of numbers greater than 1 million
 HUNDREDST ;		!         ¤#####
 1:sata HUNDREDT ;	!     1#####
 %0: TENST ;		!         0¤####
@@ -292,7 +326,7 @@ HUNDREDST ;		!         ¤#####
 %0%0%0%0%0%0: # ;	!     000000
 
 LEXICON HUNDREDST
-!! lexicon @LEXNAME@ contains numbers 2-9 that need to be followed by exactly
+!! Lexicon `@LEXNAME@` contains numbers 2-9 that need to be followed by exactly
 !! 5 digits: 200 000–999 999
 !! this is to implement *N*sataa...tuhatta...
 2:kaksi  CUODIT ;	! 2#####
@@ -305,12 +339,14 @@ LEXICON HUNDREDST
 9:yhdeksän CUODIT ;	! 9#####
 
 LEXICON CUODIT
-!! lexicon @LEXNAME@ contains numbers 2-9 that need to be followed by exactly
+!! Lexicon `@LEXNAME@` contains numbers 2-9 that need to be followed by exactly
 !! this is to implement N*sataa*...tuhatta...
+!!€gt-norm:  Hundreds of thousands
+!!€  20000: kaksisataatuhatta
 :sataa HUNDREDT ;	! ¤#####
 
 LEXICON HUNDREDT	! ¤ = 1-9, # = 0-9
-!! lexicon @LEXNAME@ is for numbers in range: 100 000–199 000
+!! Lexicon `@LEXNAME@` is for numbers in range: 100 000–199 000
 !! this is to implement *sata*...tuhatta...
 TENST ;			! ¤¤####
 TENT ;			! ¤10###
@@ -320,7 +356,7 @@ TEENST ;		! ¤1¤###
 %0%0: THOUSANDS ;	! ¤00###
 
 LEXICON TEENST
-!! lexicon @LEXNAME@ is for numbers with 11 000–19 000
+!! Lexicon `@LEXNAME@` is for numbers with 11 000–19 000
 !! this is to implement ...N*toista*...tuhatta...
 1: TEENT ;  ! 11###
 
@@ -328,8 +364,10 @@ LEXICON TEENST
 !kymmenen% tuhatta:1%0 THOUSANDS ;
 
 LEXICON TEENT
-!! lexicon @LEXNAME@ is for numbers with 11 000–19 000
+!! Lexicon `@LEXNAME@` is for numbers with 11 000–19 000
 !! this is to implement ...*N*toista...tuhatta...
+!!€gt-norm:  Teens of thousands
+!!€  12000: kaksitoistatuhatta
 1:yksi LOHKAIT ;      ! 11###
 2:kaksi LOHKAIT ;     ! 12###
 3:kolme LOHKAIT ;     ! 13###
@@ -344,7 +382,7 @@ LEXICON LOHKAIT
 :toista THOUSANDS ;  ! 11###-19###
 
 LEXICON TENST
-!! lexicon @LEXNAME@ is for numbers with 20 000–90 000
+!! Lexicon `@LEXNAME@` is for numbers with 20 000–90 000
 !! this is to implement ...*N*kymmentä...tuhatta...
 2:kaksi LÅGEVT ;     ! 2####
 3:kolme LÅGEVT ;     ! 3####
@@ -357,19 +395,23 @@ LEXICON TENST
 
 
 LEXICON TENT
-!! lexicon @LEXNAME@ is for numbers with 10 000 000–10 999 999
+!! Lexicon `@LEXNAME@` is for numbers with 10 000 000–10 999 999
 !! this is to implement ...*kymmenen*tuhatta...
+!!€gt-norm:  Ten thousands
+!!€  10000: kymmenentuhatta
 1%0:kymmenentuhatta THOUSAND ;  ! 10###
 
 LEXICON LÅGEVT
-!! lexicon @LEXNAME@ is for numbers with 20 000–90 000
+!! Lexicon `@LEXNAME@` is for numbers with 20 000–90 000
 !! this is to implement ...N*kymmentä*...tuhatta..
+!!€gt-norm:  Tens of thousands
+!!€  20000: kaksikymmentätuhatta
 %0:kymmentä THOUSANDS ; ! ¤0###
  1:kymmentäyksituhatta THOUSAND ; ! ¤1###
   :kymmentä ONEST ;     ! ¤¤###-¤¤###
 
 LEXICON ONEST
-!! lexicon @LEXNAME@ is for numbers with 1 000–9 000
+!! Lexicon `@LEXNAME@` is for numbers with 1 000–9 000
 !! this is to implement ...*N*tuhatta...
 2:kaksi THOUSANDS ;     ! 2###
 3:kolme THOUSANDS ;     ! 3###
@@ -381,7 +423,7 @@ LEXICON ONEST
 9:yhdeksän THOUSANDS ;  ! 9###
 
 LEXICON THOUSANDS      ! x > 1
-!! lexicon @LEXNAME@ is for numbers with 1 000–9 000
+!! Lexicon `@LEXNAME@` is for numbers with 1 000–9 000
 !! this is to implement ...N*tuhatta*...
 !!€gt-norm:  Thousands
 !!€  2000: kaksituhatta
@@ -389,7 +431,7 @@ LEXICON THOUSANDS      ! x > 1
 :tuhatta THOUSAND ;    ! ¤###
 
 LEXICON THOUSAND
-!! lexicon @LEXNAME@ is for the ones-tens-hundreds of numbers greater than thousand
+!! Lexicon `@LEXNAME@` is for the ones-tens-hundreds of numbers greater than thousand
 !HUNDREDS ;		!         ¤#####
 UNDERTHOUSAND ;	   ! 1¤##
 %0: TENS ;	       ! 10¤#
@@ -402,12 +444,12 @@ UNDERTHOUSAND ;	   ! 1¤##
 !===========================
 
 LEXICON UNDERTHOUSAND
-!! lexicon @LEXNAME@ is for numbers with 100–900 after thousands
+!! Lexicon `@LEXNAME@` is for numbers with 100–900 after thousands
 HUNDREDS ;           ! 2##-9##
 1:sata HUNDRED ;     ! 1##
 
 LEXICON HUNDREDS
-!! lexicon @LEXNAME@ contains numbers 2-9 that need to be followed by exactly
+!! Lexicon `@LEXNAME@` contains numbers 2-9 that need to be followed by exactly
 !! 2 digits: 200–999
 !! this is to implement *N*sataa...
 2:kaksi  CUODI ;     ! 2##
@@ -420,7 +462,7 @@ LEXICON HUNDREDS
 9:yhdeksän CUODI ;   ! 9##
 
 LEXICON CUODI
-!! lexicon @LEXNAME@ contains numbers 2-9 that need to be followed by exactly
+!! Lexicon `@LEXNAME@` contains numbers 2-9 that need to be followed by exactly
 !! this is to implement N*sataa*...
 !!€gt-norm:  Hundreds
 !!€  200: kaksisataa
@@ -428,19 +470,19 @@ LEXICON CUODI
 :sataa HUNDRED ;     ! ¤##
 
 LEXICON HUNDRED
-!! lexicon @LEXNAME@ is for numbers in range: 100–999
+!! Lexicon `@LEXNAME@` is for numbers in range: 100–999
 TENS ;               ! #¤#
 TEENS ;              ! #1#
 %0: ONES ;           ! #0#
 %0%0: # ;            ! #00
 
 LEXICON TEENS
-!! lexicon @LEXNAME@ is for numbers with 11–19
+!! Lexicon `@LEXNAME@` is for numbers with 11–19
 !! this is to implement ...N*toista*
 1: TEEN ;            ! 1¤
 
 LEXICON TEEN
-!! lexicon @LEXNAME@ is for numbers with 11–19
+!! Lexicon `@LEXNAME@` is for numbers with 11–19
 !! this is to implement ...*N*toista
 !!€gt-norm:  Teens
 !!€  11: yksitoista
@@ -463,7 +505,7 @@ LEXICON LOHKAI
 !kymmentä:1%0 # ;
 
 LEXICON TENS
-!! lexicon @LEXNAME@ is for numbers with 20–90
+!! Lexicon `@LEXNAME@` is for numbers with 20–90
 !! this is to implement ...*N*kymmentä...
 JUSTTEN ;            ! 10
 2:kaksi LÅGEV ;      ! 2#
@@ -476,7 +518,7 @@ JUSTTEN ;            ! 10
 9:yhdeksän LÅGEV ;   ! 9#
 
 LEXICON LÅGEV
-!! lexicon @LEXNAME@ is for numbers with 20–90
+!! Lexicon `@LEXNAME@` is for numbers with 20–90
 !! this is to implement ...N*kymmentä*...
 !!€gt-norm:  Tens
 !!€  20: kaksikymmentä
@@ -485,14 +527,14 @@ LEXICON LÅGEV
   :kymmentä ONES ;   ! ¤#
 
 LEXICON JUSTTEN
-!! lexicon @LEXNAME@ is for number 10
+!! Lexicon `@LEXNAME@` is for number 10
 !! this is to implement ...*kymmenen*
 !!€gt-norm:  Ten
-!!€  1: kymmenen
+!!€  10: kymmenen
 1%0:kymmenen # ;     ! 10
 
 LEXICON ONES
-!! lexicon @LEXNAME@ is for numbers with 1–9
+!! Lexicon `@LEXNAME@` is for numbers with 1–9
 !! this is to implement yksi, kaksi, kolme..., yhdeksän
 !!€gt-norm:  Ones
 !!€  1: yksi
@@ -509,7 +551,7 @@ LEXICON ONES
 9:yhdeksän # ;       ! 9
 
 LEXICON ZERO
-!! lexicon @LEXNAME@ is for number 0
+!! Lexicon `@LEXNAME@` is for number 0
 !! nolla
 !!€gt-norm:  Zero
 !!€  0: nolla
