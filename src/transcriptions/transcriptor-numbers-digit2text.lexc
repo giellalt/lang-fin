@@ -390,7 +390,7 @@ LEXICON THOUSANDS      ! x > 1
 
 LEXICON THOUSAND
 !! lexicon @LEXNAME@ is for the ones-tens-hundreds of numbers greater than thousand
-HUNDREDST ;		!         ¤#####
+!HUNDREDS ;		!         ¤#####
 UNDERTHOUSAND ;	   ! 1¤##
 %0: TENS ;	       ! 10¤#
 %0: TEENS ;	       ! 101¤
