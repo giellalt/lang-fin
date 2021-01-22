@@ -899,7 +899,6 @@ LIST Use_Hyphen = Use_Hyphen Use/Hyphen ;
 LIST Use_NoHyphens = Use_NoHyphens Use/NoHyphens ;
 
 
-LIST SYNT = @+FMAINV @+FAUXV @-FMAINV @-FAUXV @<SPRED @SPRED> @SUBJ @<SUBJ @SUBJ> @OBJ @<OBJ @OBJ> @NEC-S @NF-S @OBJ @PC @<P @P> @>P @N> @>N @N<  @<N @<NUM @NUM< @ADVL @<ADVL @LOC @PCLE @HAB @CVP @CNP @CNB @NES @X ;
 
 # ========================================================================
 
@@ -1141,7 +1140,6 @@ LIST @>Pron = @>Pron ;
 
 LIST @Num< = @Num< ;
 
-LIST @OBJ = @OBJ ;
 LIST @<OBJ = @<OBJ ;
 LIST @OBJ> = @OBJ> ;
 LIST @OPRED = @OPRED ;
@@ -1185,6 +1183,8 @@ LIST @X = @X ;
 
 LIST ALLSYNTAG = (@+FAUXV) (@+FMAINV) (@-FAUXV) (@-FMAINV) (@-FSUBJ>)(@-FOBJ)(@-FADVL)(@>A) (@>ADVL) (@ADVL<) (@<ADVL) (@ADVL>) (@ADVL) (@HAB) (@>N) (@APP) (@APP-N<) (@APP-Pron<) (@APP>Pron) (@APP-Num<) (@APP-ADVL<) (@VOC) (@CNP) (@CVP) (@P<) (@>P) (@HNOUN) (@INTERJ) (@Pron<) (@OBJ) (@OBJ>) (@<OBJ) (@OPRED) (@<OPRED) (@OPRED>) (@SPRED<OBJ) (@PCLE) (@COMP-CS<) (@N<) (@SPRED) (@<SPRED) (@SPRED>) (@PPRED) (@Num<) (@SUBJ) (@<SUBJ) (@SUBJ>) (@X);
 
+LIST SYNT = @+FMAINV @+FAUXV @-FMAINV @-FAUXV @<SPRED @SPRED> @SUBJ @<SUBJ @SUBJ> @OBJ @<OBJ @OBJ> @NEC-S @NF-S @OBJ @PC @<P @P> @>P @N> @>N @N<  @<N @<NUM @NUM< @ADVL @<ADVL @LOC @PCLE @HAB @CVP @CNP @CNB @NES @X ;
+
 # Called SYNFYNC in cg1
 
 
@@ -1214,7 +1214,7 @@ LIST PRINCIPAL-FUNCTION-DECLARATIONS = @SUBJ @OBJ @SPRED ;
 
 BEFORE-SECTIONS
 
-ADD:fin (<fin>) TARGET WORD ;
+#ADD:fin (<fin>) TARGET WORD ; # berre viss vi bruker functions.
 
 
 SECTION
@@ -4927,7 +4927,8 @@ SELECT Num (*-1 ("kello")) ;
 
 SELECT ("sinä") ;
 
-REMOVE Prop + Sem (0 Prop - Sem) ;
+# XXX remove mystical rule
+#REMOVE Prop + Sem (0 Prop - Sem) ;
 
 #REMOVE Prop (0 N - Prop + $$ALLCASES)(0 Prop + $$ALLCASES) ;
 
@@ -4939,7 +4940,7 @@ AFTER-SECTIONS
 
 
 
-UNMAP UNSAFE SYNT ; # at this stage don't need for transl -- no, we change or mind
+#UNMAP UNSAFE SYNT ; # at this stage don't need for transl -- no, we change or mind
 
 SUBSTITUTE UP (*) UP ;
 #SUBSTITUTE CLB (*) CLB ; # We do not want to remove CLB
