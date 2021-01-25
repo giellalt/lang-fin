@@ -2531,6 +2531,10 @@ IFF Pron + Ins (1C Ins) ;
 # ======================================================================
 # WORD-FORM SPECIFIC:
 
+"<Jaakko>" REMOVE Qst IF (0 ("Jaak"));
+"<Maria>" REMOVE (Pl Par) IF (0 ("Mar"));
+"<Maria>" REMOVE (Pl Par) IF (0 ("Mari"));
+
 "<ajan>" SELECT N (-1 Gen) ;
 "<ajan>" SELECT N (-1 KOKO) ;
 "<ajoissa>" SELECT Adv (NEGATE -1 Gen) ;
