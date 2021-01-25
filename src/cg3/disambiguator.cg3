@@ -1247,23 +1247,23 @@ SELECT Punct;
 
 
 # looks like = is just ADD.
-ADD CLB ComMA IF (0 Punct) (NEGATE 0 CLB) ; # TP: every punctuation mark is not CLB! TODO
-ADD CLB KUINKA-MITEN-MIllOIN (NEGATE 0 CLB) ;
-ADD CLB (*) (0 Conj) (1 VFIN) (NEGATE 0 CLB)(NEGATE -1 CLB) ;
-ADD CLB (*) (0 Conj) (2 VFIN) (NEGATE 0 CLB)(NEGATE -1 CLB) ;
-ADD CLB (*) (0 Conj) (3 VFIN) (NEGATE 0 CLB)(NEGATE -1 CLB) ;
+#ADD CLB ComMA IF (0 Punct) (NEGATE 0 CLB) ; # TP: every punctuation mark is not CLB! TODO
+#ADD CLB KUINKA-MITEN-MIllOIN (NEGATE 0 CLB) ;
+#ADD CLB (*) (0 Conj) (1 VFIN) (NEGATE 0 CLB)(NEGATE -1 CLB) ;
+#ADD CLB (*) (0 Conj) (2 VFIN) (NEGATE 0 CLB)(NEGATE -1 CLB) ;
+#ADD CLB (*) (0 Conj) (3 VFIN) (NEGATE 0 CLB)(NEGATE -1 CLB) ;
 
 
 ### #(@w =**CLB (C) ;
 # do not understand this one - Ryan
 
-ADD CLB Compl IF (NEGATE 0 CLB)(NEGATE -1 CLB) ;
-ADD CLB Rel IF (NEGATE 0 CLB)(NEGATE -1 CLB) ;
+#ADD CLB Compl IF (NEGATE 0 CLB)(NEGATE -1 CLB) ;
+#ADD CLB Rel IF (NEGATE 0 CLB)(NEGATE -1 CLB) ;
 # Problematic because we don't have CLB for this in gold corpus - 20.01.2015 - FMT+KM 
 #ADD CLB Qst IF (NEGATE 0 CLB)(NEGATE -1 CLB) ;
 
-ADD CLB Adv IF (0 KUINKA-MITEN-MIllOIN) (NEGATE 0 CLB)(NEGATE -1 CLB) ;
-ADD CLB Conj IF (NEGATE 0 CC) (NEGATE 0 CLB)(NEGATE -1 CLB) ; 
+#ADD CLB Adv IF (0 KUINKA-MITEN-MIllOIN) (NEGATE 0 CLB)(NEGATE -1 CLB) ;
+#ADD CLB Conj IF (NEGATE 0 CC) (NEGATE 0 CLB)(NEGATE -1 CLB) ; 
 
 # Including (NEGATE 0 CLB) because it adds multiple times otherwise - Ryan
 
