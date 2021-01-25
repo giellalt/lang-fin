@@ -1,21 +1,28 @@
-Multichar_Symbols
-@U.NUMCASE.SGNOM@ @U.NUMCASE.SGINE@
-
 !! !!Number transcriptions
 !!
 !! Transcribing numbers to words in Finnish is not completely trivial, one
 !! reason is that numbers in Finnish are written as compounds, regardless of
 !! length:
-!! 123456 satakaksikymmentäkolmetuhattaneljäsataaviisikymmentäkuusi
+!! 123456 is *satakaksikymmentäkolmetuhattaneljäsataaviisikymmentäkuusi*.
 !! Another limitation is that inflections can be unmarked in running text,
 !! that is digit expression is assumed to agree the case of the phrase it is in,
 !! e.g.
-!! 27 kaksikymmentäseitsemän
-!! 27:lle kahdellekymmenelleseitsemälle
+!! 27 is *kaksikymmentäseitsemän*, and
+!! 27:lle *kahdellekymmenelleseitsemälle*
 !! but in a phrase: "tarjosin 27 osanottajalle" 27 assumes the allative case
 !! without marking and it is preferred grammatical form in good writing.
 
+Multichar_Symbols
+!! !Flag diacritics
+!! Flag diacritics in number transcribing are used to control case agreement:
+!! in Finnish numeral compounds all words agree in case except in nominative
+!! singular where 10's exponential multipliers are in singular partitive.
+@U.CASE.SGNOM@ !!= * `@CODE@` for singular nominative agreement
+@U.CASE.SGALL@ !!= * `@CODE@` for singular allative agreement
+
+
 LEXICON Root
+!! !Morphotactics of digit strings
 !! The morphotactics related to numbers and their transcriptions is that we
 !! need to know the whole digit string to know how the length of whole digit
 !! string to know what to start reading, and zeroes are not read out but
@@ -24,29 +31,44 @@ LEXICON Root
 !! the implementation of 100 000–999 999 is almost
 !! exactly same as 100 000 000–999 000 000 and everything afterwads with the
 !! change of word *tuhat*~*tuhatta*, *miljoona*~*miljoonaa*, *miljardia*,
-!! *biljoonaa*, *biljardia* and so forth. The numbers are built from ~single
+!! *biljoonaa*, *biljardia* and so forth–that is along the long scale British
+!! (French) system where American billion = milliard etc.
+!! The numbers are built from ~single
 !! word length blocks in decreasing order with the exception of zig-zagging
 !! over numbers 11–19 where the second digit comes before first.
-!! The rest of this doc is the lexicons in descendign order of magnitude.
+!! The rest of this documentation describes the morphotactic implementation
+!! by the lexicon structure in descending order of magnitude with examples.
+!!€gt-norm:  Digits of all magnitudes
+!!€  1: yksi
+!!€  21: kaksikymmentäyksi
+!!€  321: kolmesataakaksikymmentäyksi
+!!€  4321: neljätuhattakolmesataakaksikymmentäyksi
+!!€  54321: viisikymmentäneljätuhattakolmesataakaksikymmentäyksi
+!!€  654321: kuusisataaviisikymmentäneljätuhattakolmesataakaksikymmentäyksi
+!!€  7654321: seitsemänmiljoonaakuusisataaviisikymmentäneljätuhattakolmesataakaksikymmentäyksi
 HUNDREDSMRD ;		! 200 000 000 000–999 999 999 999
-1:sata HUNDREDMRD ;	! 100 000 000 000-199 999 999 999
+@U.CASE.SGNOM@1:@U.CASE.SGNOM@sata HUNDREDMRD ;	! 100 000 000 000-199 999 999 999
+@U.CASE.SGALL@1:@U.CASE.SGALL@sadalle HUNDREDMRD ;	! 100 000 000 000-199 999 999 999
 TENSMRD ;			!  20 000 000 000– 29 999 999 999
 TEENSMRD ;		!      11 000 000 000- 19 999 999 999
 TENMRD ;			!  10 000 000 000– 10 999 999 999
 ONESMRD ;			!   1 000 000 000–  9 999 999 999
 HUNDREDSM ;		!         200 000 000–    999 999 999
-1:sata HUNDREDM ;	!     100 000 000–    199 999 999
+@U.CASE.SGNOM@1:@U.CASE.SGNOM@sata HUNDREDM ;	!     100 000 000–    199 999 999
+@U.CASE.SGALL@1:@U.CASE.SGALL@sadalle HUNDREDM ;	!     100 000 000–    199 999 999
 TENSM ;			!          20 000 000–     99 999 999
 TEENSM ;		!          11 000 000–     19 999 999
 TENM ;			!          10 000 000–     10 999 999
 ONESM ;			!           1 000 000–      9 999 999
 HUNDREDST ;		!             200 000–        999 999
-1:sata HUNDREDT ;	!         100 000–        199 999
+@U.CASE.SGNOM@1:@U.CASE.SGNOM@sata HUNDREDT ;	!         100 000–        199 999
+@U.CASE.SGALL@1:@U.CASE.SGALL@sadalle HUNDREDT ;	!         100 000–        199 999
 TENST ;			!              20 000–         99 999
 TEENST ;		!              11 000–         19 999
 TENT ;          !              10 000-         10 999
 ONEST ;			!               2 000–          9 999
-1:tuhat THOUSAND ;	!           1 000–          1 999
+@U.CASE.SGNOM@1:@U.CASE.SGNOM@tuhat THOUSAND ;	!           1 000–          1 999
+@U.CASE.SGALL@1:@U.CASE.SGALL@tuhannelle THOUSAND ;	!           1 000–          1 999
 UNDERTHOUSAND ;		!             100–            999
 TENS ;			!                  20-             99
 TEENS ;			!                  11-             19
@@ -55,26 +77,39 @@ ONES ;			!                   1-              9
 ZERO ;          !                                   0
 
 LEXICON HUNDREDSMRD
-!! lexicon @LEXNAME@ contains numbers 2-9 that need to be followed by exactly
+!! Lexicon `@LEXNAME@` contains numbers 2-9 that need to be followed by exactly
 !! 11 digits: 200 000 000 000–999 999 999 999
 !! this is to implement *N*sataa...miljardia...
-2:kaksi  CUODIMRD ;
-3:kolme CUODIMRD ;
-4:neljä CUODIMRD ;
-5:viisi CUODIMRD ;
-6:kuusi CUODIMRD ;
-7:seitsemän CUODIMRD ;
-8:kahdeksan CUODIMRD ;
-9:yhdeksän CUODIMRD ;
+@U.CASE.SGNOM@2:@U.CASE.SGNOM@kaksi  CUODIMRD ;
+@U.CASE.SGNOM@3:@U.CASE.SGNOM@kolme CUODIMRD ;
+@U.CASE.SGNOM@4:@U.CASE.SGNOM@neljä CUODIMRD ;
+@U.CASE.SGNOM@5:@U.CASE.SGNOM@viisi CUODIMRD ;
+@U.CASE.SGNOM@6:@U.CASE.SGNOM@kuusi CUODIMRD ;
+@U.CASE.SGNOM@7:@U.CASE.SGNOM@seitsemän CUODIMRD ;
+@U.CASE.SGNOM@8:@U.CASE.SGNOM@kahdeksan CUODIMRD ;
+@U.CASE.SGNOM@9:@U.CASE.SGNOM@yhdeksän CUODIMRD ;
+@U.CASE.SGALL@2:@U.CASE.SGALL@kahdelle  CUODIMRD ;
+@U.CASE.SGALL@3:@U.CASE.SGALL@kolmelle CUODIMRD ;
+@U.CASE.SGALL@4:@U.CASE.SGALL@neljälle CUODIMRD ;
+@U.CASE.SGALL@5:@U.CASE.SGALL@viidelle CUODIMRD ;
+@U.CASE.SGALL@6:@U.CASE.SGALL@kuudelle CUODIMRD ;
+@U.CASE.SGALL@7:@U.CASE.SGALL@seitsemälle CUODIMRD ;
+@U.CASE.SGALL@8:@U.CASE.SGALL@kahdeksalle CUODIMRD ;
+@U.CASE.SGALL@9:@U.CASE.SGALL@yhdeksälle CUODIMRD ;
 
 LEXICON CUODIMRD
-!! lexicon @LEXNAME@ contains numbers 2-9 that need to be followed by exactly
+!! Lexicon `@LEXNAME@` contains numbers 2-9 that need to be followed by exactly
 !! this is to implement N*sataa*...miljardia...
-:sataa HUNDREDMRD ;
+!!€gt-norm:  hundreds of milliards
+!!€  20000000000: kaksisataamiljardia
+@U.CASE.SGNOM@:@U.CASE.SGNOM@sataa HUNDREDMRD ;
+@U.CASE.SGALL@:@U.CASE.SGALL@sadalle HUNDREDMRD ;
 
 LEXICON HUNDREDMRD
-!! lexicon @LEXNAME@ is for numbers in range: 100 000 000 000–199 000 000 000
+!! Lexicon `@LEXNAME@` is for numbers in range: 100 000 000 000–199 000 000 000
 !! this is to implement *sata*...miljardia...
+!!€gt-norm:  hundred milliards
+!!€  1000000000: satamiljardia
 TENMRD ;
 TENSMRD ;
 TEENSMRD ;
@@ -85,114 +120,166 @@ TEENSMRD ;
 !kymmenen:1%0 LOHKAIM ;
 
 LEXICON TEENSMRD
-!! lexicon @LEXNAME@ is for numbers with 11 000 000 000–19 000 000 000
+!! Lexicon `@LEXNAME@` is for numbers with 11 000 000 000–19 000 000 000
 !! this is to implement ...N*toista*...miljardia...
 1: TEENMRD ;
 
 LEXICON TEENMRD
-!! lexicon @LEXNAME@ is for numbers with 11 000 000 000–19 000 000 000
+!! Lexicon `@LEXNAME@` is for numbers with 11 000 000 000–19 000 000 000
 !! this is to implement ...*N*toista...miljardia...
-1:yksi LOHKAIMRD ;
-2:kaksi LOHKAIMRD ;
-3:kolme LOHKAIMRD ;
-4:neljä LOHKAIMRD ;
-5:viisi LOHKAIMRD ;
-6:kuusi LOHKAIMRD ;
-7:seitsemän LOHKAIMRD ;
-8:kahdeksan LOHKAIMRD ;
-9:yhdeksän LOHKAIMRD ;
+!!€gt-norm:  teen milliards
+!!€  1200000000: kaksitoistailjardia
+@U.CASE.SGNOM@1:@U.CASE.SGNOM@yksi LOHKAIMRD ;
+@U.CASE.SGNOM@2:@U.CASE.SGNOM@kaksi LOHKAIMRD ;
+@U.CASE.SGNOM@3:@U.CASE.SGNOM@kolme LOHKAIMRD ;
+@U.CASE.SGNOM@4:@U.CASE.SGNOM@neljä LOHKAIMRD ;
+@U.CASE.SGNOM@5:@U.CASE.SGNOM@viisi LOHKAIMRD ;
+@U.CASE.SGNOM@6:@U.CASE.SGNOM@kuusi LOHKAIMRD ;
+@U.CASE.SGNOM@7:@U.CASE.SGNOM@seitsemän LOHKAIMRD ;
+@U.CASE.SGNOM@8:@U.CASE.SGNOM@kahdeksan LOHKAIMRD ;
+@U.CASE.SGNOM@9:@U.CASE.SGNOM@yhdeksän LOHKAIMRD ;
+@U.CASE.SGALL@1:@U.CASE.SGALL@yhdelle LOHKAIMRD ;
+@U.CASE.SGALL@2:@U.CASE.SGALL@kahdelle LOHKAIMRD ;
+@U.CASE.SGALL@3:@U.CASE.SGALL@kolmelle LOHKAIMRD ;
+@U.CASE.SGALL@4:@U.CASE.SGALL@neljälle LOHKAIMRD ;
+@U.CASE.SGALL@5:@U.CASE.SGALL@viidelle LOHKAIMRD ;
+@U.CASE.SGALL@6:@U.CASE.SGALL@kuudelle LOHKAIMRD ;
+@U.CASE.SGALL@7:@U.CASE.SGALL@seitsemälle LOHKAIMRD ;
+@U.CASE.SGALL@8:@U.CASE.SGALL@kahdeksalle LOHKAIMRD ;
+@U.CASE.SGALL@9:@U.CASE.SGALL@yhdeksälle LOHKAIMRD ;
 
 LEXICON LOHKAIMRD
 :toista MILJARD ;
 
 LEXICON TENSMRD
-!! lexicon @LEXNAME@ is for numbers with 20 000 000 000–90 000 000 000
+!! Lexicon `@LEXNAME@` is for numbers with 20 000 000 000–90 000 000 000
 !! this is to implement ...*N*kymmentä...miljardia...
 !1:yksi LÅGEVM ;
-2:kaksi LÅGEVMRD ;
-3:kolme LÅGEVMRD ;
-4:neljä LÅGEVMRD ;
-5:viisi LÅGEVMRD ;
-6:kuusi LÅGEVMRD ;
-7:seitsemän LÅGEVMRD ;
-8:kahdeksan LÅGEVMRD ;
-9:yhdeksän LÅGEVMRD ;
+@U.CASE.SGNOM@2:@U.CASE.SGNOM@kaksi LÅGEVMRD ;
+@U.CASE.SGNOM@3:@U.CASE.SGNOM@kolme LÅGEVMRD ;
+@U.CASE.SGNOM@4:@U.CASE.SGNOM@neljä LÅGEVMRD ;
+@U.CASE.SGNOM@5:@U.CASE.SGNOM@viisi LÅGEVMRD ;
+@U.CASE.SGNOM@6:@U.CASE.SGNOM@kuusi LÅGEVMRD ;
+@U.CASE.SGNOM@7:@U.CASE.SGNOM@seitsemän LÅGEVMRD ;
+@U.CASE.SGNOM@8:@U.CASE.SGNOM@kahdeksan LÅGEVMRD ;
+@U.CASE.SGNOM@9:@U.CASE.SGNOM@yhdeksän LÅGEVMRD ;
+@U.CASE.SGALL@2:@U.CASE.SGALL@kahdelle LÅGEVMRD ;
+@U.CASE.SGALL@3:@U.CASE.SGALL@kolmelle LÅGEVMRD ;
+@U.CASE.SGALL@4:@U.CASE.SGALL@neljälle LÅGEVMRD ;
+@U.CASE.SGALL@5:@U.CASE.SGALL@viidelle LÅGEVMRD ;
+@U.CASE.SGALL@6:@U.CASE.SGALL@kuudelle LÅGEVMRD ;
+@U.CASE.SGALL@7:@U.CASE.SGALL@seitsemälle LÅGEVMRD ;
+@U.CASE.SGALL@8:@U.CASE.SGALL@kahdeksalle LÅGEVMRD ;
+@U.CASE.SGALL@9:@U.CASE.SGALL@yhdeksälle LÅGEVMRD ;
 
 LEXICON TENMRD
-!! lexicon @LEXNAME@ is for numbers with 10 000 000 000–10 999 999 999
+!! Lexicon `@LEXNAME@` is for numbers with 10 000 000 000–10 999 999 999
 !! this is to implement ...*kymmenen*miljardia...
-1%0:kymmenen MILJARD ;
+!!€gt-norm:  ten milliards
+!!€  1000000000: kymmenenmiljardia
+@U.CASE.SGNOM@1%0:@U.CASE.SGNOM@kymmenen MILJARD ;
+@U.CASE.SGALL@1%0:@U.CASE.SGALL@kymmenelle MILJARD ;
 
 LEXICON LÅGEVMRD
-!! lexicon @LEXNAME@ is for numbers with 20 000 000 000–90 000 000 000
+!! Lexicon `@LEXNAME@` is for numbers with 20 000 000 000–90 000 000 000
 !! this is to implement ...N*kymmentä*...miljardia...
-%0:kymmentä MILJARD ;
-:kymmentä ONESMRD ;
+!!€gt-norm:  tens of milliards
+!!€  20000000000: kaksikymmentämiljardia
+@U.CASE.SGNOM@%0:@U.CASE.SGNOM@kymmentä MILJARD ;
+@U.CASE.SGNOM@:@U.CASE.SGNOM@kymmentä ONESMRD ;
+@U.CASE.SGALL@%0:@U.CASE.SGALL@kymmenelle MILJARD ;
+@U.CASE.SGALL@:@U.CASE.SGALL@kymmenelle ONESMRD ;
 
 LEXICON ONESMRD
-!! lexicon @LEXNAME@ is for numbers with 1 000 000 000–9 000 000 000
+!! Lexicon `@LEXNAME@` is for numbers with 1 000 000 000–9 000 000 000
 !! this is to implement ...*N*miljardia...
 !1:yksi% miljoona%   OVERTHOUSANDS ;
-1:miljardi OVERMILLIONS ;
-2:kaksi MILJARD ;
-3:kolme MILJARD ;
-4:neljä MILJARD ;
-5:viisi MILJARD ;
-6:kuusi MILJARD ;
-7:seitsemän MILJARD ;
-8:kahdeksan MILJARD ;
-9:yhdeksän MILJARD ;
+@U.CASE.SGNOM@1:@U.CASE.SGNOM@miljardi OVERMILLIONS ;
+@U.CASE.SGNOM@2:@U.CASE.SGNOM@kaksi MILJARD ;
+@U.CASE.SGNOM@3:@U.CASE.SGNOM@kolme MILJARD ;
+@U.CASE.SGNOM@4:@U.CASE.SGNOM@neljä MILJARD ;
+@U.CASE.SGNOM@5:@U.CASE.SGNOM@viisi MILJARD ;
+@U.CASE.SGNOM@6:@U.CASE.SGNOM@kuusi MILJARD ;
+@U.CASE.SGNOM@7:@U.CASE.SGNOM@seitsemän MILJARD ;
+@U.CASE.SGNOM@8:@U.CASE.SGNOM@kahdeksan MILJARD ;
+@U.CASE.SGNOM@9:@U.CASE.SGNOM@yhdeksän MILJARD ;
+@U.CASE.SGALL@1:@U.CASE.SGALL@miljardille OVERMILLIONS ;
+@U.CASE.SGALL@2:@U.CASE.SGALL@kahdelle MILJARD ;
+@U.CASE.SGALL@3:@U.CASE.SGALL@kolmelle MILJARD ;
+@U.CASE.SGALL@4:@U.CASE.SGALL@neljälle MILJARD ;
+@U.CASE.SGALL@5:@U.CASE.SGALL@viidelle MILJARD ;
+@U.CASE.SGALL@6:@U.CASE.SGALL@kuudelle MILJARD ;
+@U.CASE.SGALL@7:@U.CASE.SGALL@seitsemälle MILJARD ;
+@U.CASE.SGALL@8:@U.CASE.SGALL@kahdeksalle MILJARD ;
+@U.CASE.SGALL@9:@U.CASE.SGALL@yhdeksälle MILJARD ;
 
 LEXICON MILJARD
-!! lexicon @LEXNAME@ is for numbers with 1 000 000 000–9 000 000 000
+!! Lexicon `@LEXNAME@` is for numbers with 1 000 000 000–9 000 000 000
 !! this is to implement ...N*miljardia*...
-:miljardia OVERMILLIONS ;
+!!€gt-norm:  milliards
+!!€  2000000000: kaksimiljardia
+@U.CASE.SGNOM@:@U.CASE.SGNOM@miljardia OVERMILLIONS ;
+@U.CASE.SGALL@:@U.CASE.SGALL@miljardille OVERMILLIONS ;
 
 ! =================
 ! Under the milliard
 ! =================
 
 LEXICON OVERMILLIONS
-!! lexicon @LEXNAME@ is for the millions *part* of numbers greater than 1 milliard
+!! Lexicon `@LEXNAME@` is for the millions *part* of numbers greater than 1 milliard
 HUNDREDSM ;		                ! ¤## ### ###
-1:sata HUNDREDM ;	            ! 1## ### ###
+@U.CASE.SGNOM@1:@U.CASE.SGNOM@sata HUNDREDM ;	            ! 1## ### ###
+@U.CASE.SGALL@1:@U.CASE.SGALL@sadalle HUNDREDM ;	            ! 1## ### ###
 %0: TENSM ;		                !  ¤# ### ###
 %0: TEENSM ;		            !  1¤ ### ###
 %0: TENM ;		                !  10 ### ###
 %0%0: ONESM ;		            !   ¤ ### ###
-%0%01:tuhat MILJON ;	        !   1 ### ###
+@U.CASE.SGNOM@%0%01:@U.CASE.SGNOM@tuhat MILJON ;	        !   1 ### ###
+@U.CASE.SGALL@%0%01:@U.CASE.SGALL@tuhannelle MILJON ;	        !   1 ### ###
 %0%0%0: UNDERMILLION ;          !
 %0%0%0%0: TENST ;		        !  ¤# ### ###
 %0%0%0%0: TEENST ;		        !  1¤ ### ###
 %0%0%0%0%0: ONEST ;		        !   ¤ ### ###
-%0%0%0%0%01:tuhat THOUSAND ;	!   ¤ ### ###
+@U.CASE.SGNOM@%0%0%0%0%01:@U.CASE.SGNOM@tuhat THOUSAND ;	!   ¤ ### ###
+@U.CASE.SGALL@%0%0%0%0%01:@U.CASE.SGALL@tuhannelle THOUSAND ;	!   ¤ ### ###
 %0%0%0%0%0%0: UNDERTHOUSAND ;   !
 %0%0%0%0%0%0%0: TENS ;          !
 %0%0%0%0%0%0%0: TEENS ;         !
 %0%0%0%0%0%0%0%0: ONES ;        !
-%0%0%0%0%0%0%0%0%0: # ;	        !
+%0%0%0%0%0%0%0%0%0: LOPPU ;	        !
 
 
 LEXICON HUNDREDSM
-!! lexicon @LEXNAME@ contains numbers 2-9 that need to be followed by exactly
+!! Lexicon `@LEXNAME@` contains numbers 2-9 that need to be followed by exactly
 !! 8 digits: 200 000 000–999 999 999
 !! this is to implement *N*sataa...miljoonaa...
-2:kaksi  CUODIM ;
-3:kolme CUODIM ;
-4:neljä CUODIM ;
-5:viisi CUODIM ;
-6:kuusi CUODIM ;
-7:seitsemän CUODIM ;
-8:kahdeksan CUODIM ;
-9:yhdeksän CUODIM ;
+@U.CASE.SGNOM@2:@U.CASE.SGNOM@kaksi  CUODIM ;
+@U.CASE.SGNOM@3:@U.CASE.SGNOM@kolme CUODIM ;
+@U.CASE.SGNOM@4:@U.CASE.SGNOM@neljä CUODIM ;
+@U.CASE.SGNOM@5:@U.CASE.SGNOM@viisi CUODIM ;
+@U.CASE.SGNOM@6:@U.CASE.SGNOM@kuusi CUODIM ;
+@U.CASE.SGNOM@7:@U.CASE.SGNOM@seitsemän CUODIM ;
+@U.CASE.SGNOM@8:@U.CASE.SGNOM@kahdeksan CUODIM ;
+@U.CASE.SGNOM@9:@U.CASE.SGNOM@yhdeksän CUODIM ;
+@U.CASE.SGALL@2:@U.CASE.SGALL@kahdelle  CUODIM ;
+@U.CASE.SGALL@3:@U.CASE.SGALL@kolmelle CUODIM ;
+@U.CASE.SGALL@4:@U.CASE.SGALL@neljälle CUODIM ;
+@U.CASE.SGALL@5:@U.CASE.SGALL@viidelle CUODIM ;
+@U.CASE.SGALL@6:@U.CASE.SGALL@kuudelle CUODIM ;
+@U.CASE.SGALL@7:@U.CASE.SGALL@seitsemälle CUODIM ;
+@U.CASE.SGALL@8:@U.CASE.SGALL@kahdeksalle CUODIM ;
+@U.CASE.SGALL@9:@U.CASE.SGALL@yhdeksälle CUODIM ;
 
 LEXICON CUODIM
-!! lexicon @LEXNAME@ contains numbers 2-9 that need to be followed by exactly
+!! Lexicon `@LEXNAME@` contains numbers 2-9 that need to be followed by exactly
 !! this is to implement N*sataa*...miljoonaa...
-:sataa HUNDREDM ;
+!!€gt-norm:  Hundreds of millions
+!!€  200000000: kaksisataamiljoonaa
+@U.CASE.SGNOM@:@U.CASE.SGNOM@sataa HUNDREDM ;
+@U.CASE.SGALL@:@U.CASE.SGALL@sadalle HUNDREDM ;
 
 LEXICON HUNDREDM
-!! lexicon @LEXNAME@ is for numbers in range: 100 000 000–199 000 000
+!! Lexicon `@LEXNAME@` is for numbers in range: 100 000 000–199 000 000
 !! this is to implement *sata*...miljoonaa...
 TENM ;
 TENSM ;
@@ -204,123 +291,175 @@ TEENSM ;
 !kymmenen:1%0 LOHKAIM ;
 
 LEXICON TEENSM
-!! lexicon @LEXNAME@ is for numbers with 11 000 000–19 000 000
+!! Lexicon `@LEXNAME@` is for numbers with 11 000 000–19 000 000
 !! this is to implement ...N*toista*...miljoonaa...
 1: TEENM ;
 
 LEXICON TEENM
-!! lexicon @LEXNAME@ is for numbers with 11 000 000–19 000 000
+!! Lexicon `@LEXNAME@` is for numbers with 11 000 000–19 000 000
 !! this is to implement ...*N*toista...miljoonaa...
-1:yksi LOHKAIM ;
-2:kaksi LOHKAIM ;
-3:kolme LOHKAIM ;
-4:neljä LOHKAIM ;
-5:viisi LOHKAIM ;
-6:kuusi LOHKAIM ;
-7:seitsemän LOHKAIM ;
-8:kahdeksan LOHKAIM ;
-9:yhdeksän LOHKAIM ;
+!!€gt-norm:  Teen millions
+!!€  1200000: kaksitoistamiljoonaa
+@U.CASE.SGNOM@1:@U.CASE.SGNOM@yksi LOHKAIM ;
+@U.CASE.SGNOM@2:@U.CASE.SGNOM@kaksi LOHKAIM ;
+@U.CASE.SGNOM@3:@U.CASE.SGNOM@kolme LOHKAIM ;
+@U.CASE.SGNOM@4:@U.CASE.SGNOM@neljä LOHKAIM ;
+@U.CASE.SGNOM@5:@U.CASE.SGNOM@viisi LOHKAIM ;
+@U.CASE.SGNOM@6:@U.CASE.SGNOM@kuusi LOHKAIM ;
+@U.CASE.SGNOM@7:@U.CASE.SGNOM@seitsemän LOHKAIM ;
+@U.CASE.SGNOM@8:@U.CASE.SGNOM@kahdeksan LOHKAIM ;
+@U.CASE.SGNOM@9:@U.CASE.SGNOM@yhdeksän LOHKAIM ;
+@U.CASE.SGALL@1:@U.CASE.SGALL@yhdelle LOHKAIM ;
+@U.CASE.SGALL@2:@U.CASE.SGALL@kahdelle LOHKAIM ;
+@U.CASE.SGALL@3:@U.CASE.SGALL@kolmelle LOHKAIM ;
+@U.CASE.SGALL@4:@U.CASE.SGALL@neljälle LOHKAIM ;
+@U.CASE.SGALL@5:@U.CASE.SGALL@viidelle LOHKAIM ;
+@U.CASE.SGALL@6:@U.CASE.SGALL@kuudelle LOHKAIM ;
+@U.CASE.SGALL@7:@U.CASE.SGALL@seitsemälle LOHKAIM ;
+@U.CASE.SGALL@8:@U.CASE.SGALL@kahdeksalle LOHKAIM ;
+@U.CASE.SGALL@9:@U.CASE.SGALL@yhdeksälle LOHKAIM ;
 
 LEXICON LOHKAIM
 :toista MILJON ;
 
 LEXICON TENSM
-!! lexicon @LEXNAME@ is for numbers with 20 000 000–90 000 000
+!! Lexicon `@LEXNAME@` is for numbers with 20 000 000–90 000 000
 !! this is to implement ...*N*kymmentä...miljoonaa...
 !1:yksi LÅGEVM ;
-2:kaksi LÅGEVM ;
-3:kolme LÅGEVM ;
-4:neljä LÅGEVM ;
-5:viisi LÅGEVM ;
-6:kuusi LÅGEVM ;
-7:seitsemän LÅGEVM ;
-8:kahdeksan LÅGEVM ;
-9:yhdeksän LÅGEVM ;
+@U.CASE.SGNOM@2:@U.CASE.SGNOM@kaksi LÅGEVM ;
+@U.CASE.SGNOM@3:@U.CASE.SGNOM@kolme LÅGEVM ;
+@U.CASE.SGNOM@4:@U.CASE.SGNOM@neljä LÅGEVM ;
+@U.CASE.SGNOM@5:@U.CASE.SGNOM@viisi LÅGEVM ;
+@U.CASE.SGNOM@6:@U.CASE.SGNOM@kuusi LÅGEVM ;
+@U.CASE.SGNOM@7:@U.CASE.SGNOM@seitsemän LÅGEVM ;
+@U.CASE.SGNOM@8:@U.CASE.SGNOM@kahdeksan LÅGEVM ;
+@U.CASE.SGNOM@9:@U.CASE.SGNOM@yhdeksän LÅGEVM ;
+@U.CASE.SGALL@2:@U.CASE.SGALL@kahdelle LÅGEVM ;
+@U.CASE.SGALL@3:@U.CASE.SGALL@kolmelle LÅGEVM ;
+@U.CASE.SGALL@4:@U.CASE.SGALL@neljälle LÅGEVM ;
+@U.CASE.SGALL@5:@U.CASE.SGALL@viidelle LÅGEVM ;
+@U.CASE.SGALL@6:@U.CASE.SGALL@kuudelle LÅGEVM ;
+@U.CASE.SGALL@7:@U.CASE.SGALL@seitsemälle LÅGEVM ;
+@U.CASE.SGALL@8:@U.CASE.SGALL@kahdeksalle LÅGEVM ;
+@U.CASE.SGALL@9:@U.CASE.SGALL@yhdeksälle LÅGEVM ;
 
 LEXICON TENM
-!! lexicon @LEXNAME@ is for numbers with 10 000 000–10 999 999
+!! Lexicon `@LEXNAME@` is for numbers with 10 000 000–10 999 999
 !! this is to implement ...*kymmenen*miljoonaa...
-1%0:kymmenen MILJON ;
+!!€gt-norm:  Ten millions
+!!€  2000000: kymmenenmiljoonaa
+@U.CASE.SGNOM@1%0:@U.CASE.SGNOM@kymmenen MILJON ;
+@U.CASE.SGALL@1%0:@U.CASE.SGALL@kymmenelle MILJON ;
 
 LEXICON LÅGEVM
-!! lexicon @LEXNAME@ is for numbers with 20 000 000–90 000 000
+!! Lexicon `@LEXNAME@` is for numbers with 20 000 000–90 000 000
 !! this is to implement ...N*kymmentä*...miljoonaa..
-%0:kymmentä MILJON ;
-:kymmentä ONESM ;
+!!€gt-norm:  Tens of millions
+!!€  2000000: kaksikymmentämiljoonaa
+@U.CASE.SGNOM@%0:@U.CASE.SGNOM@kymmentä MILJON ;
+@U.CASE.SGNOM@:@U.CASE.SGNOM@kymmentä ONESM ;
+@U.CASE.SGALL@%0:@U.CASE.SGALL@kymmenelle MILJON ;
+@U.CASE.SGALL@:@U.CASE.SGALL@kymmenelle ONESM ;
 
 LEXICON ONESM
-!! lexicon @LEXNAME@ is for numbers with 1 000 000–9 000 000
+!! Lexicon `@LEXNAME@` is for numbers with 1 000 000–9 000 000
 !! this is to implement ...*N*miljoonaa...
 !1:yksi% miljoona%   OVERTHOUSANDS ;
-1:miljoona OVERTHOUSANDS ; ! 1######
-2:kaksi MILJON ;     ! 2######
-3:kolme MILJON ;     ! 3######
-4:neljä MILJON ;     ! 4######
-5:viisi MILJON ;     ! 5######
-6:kuusi MILJON ;     ! 6######
-7:seitsemän MILJON ; ! 7######
-8:kahdeksan MILJON ; ! 8######
-9:yhdeksän MILJON ;  ! 9######
+@U.CASE.SGNOM@1:@U.CASE.SGNOM@miljoona OVERTHOUSANDS ; ! 1######
+@U.CASE.SGNOM@2:@U.CASE.SGNOM@kaksi MILJON ;     ! 2######
+@U.CASE.SGNOM@3:@U.CASE.SGNOM@kolme MILJON ;     ! 3######
+@U.CASE.SGNOM@4:@U.CASE.SGNOM@neljä MILJON ;     ! 4######
+@U.CASE.SGNOM@5:@U.CASE.SGNOM@viisi MILJON ;     ! 5######
+@U.CASE.SGNOM@6:@U.CASE.SGNOM@kuusi MILJON ;     ! 6######
+@U.CASE.SGNOM@7:@U.CASE.SGNOM@seitsemän MILJON ; ! 7######
+@U.CASE.SGNOM@8:@U.CASE.SGNOM@kahdeksan MILJON ; ! 8######
+@U.CASE.SGNOM@9:@U.CASE.SGNOM@yhdeksän MILJON ;  ! 9######
+@U.CASE.SGALL@1:@U.CASE.SGALL@miljoonalle OVERTHOUSANDS ; ! 1######
+@U.CASE.SGALL@2:@U.CASE.SGALL@kaksille MILJON ;     ! 2######
+@U.CASE.SGALL@3:@U.CASE.SGALL@kolmelle MILJON ;     ! 3######
+@U.CASE.SGALL@4:@U.CASE.SGALL@neljälle MILJON ;     ! 4######
+@U.CASE.SGALL@5:@U.CASE.SGALL@viidelle MILJON ;     ! 5######
+@U.CASE.SGALL@6:@U.CASE.SGALL@kuudelle MILJON ;     ! 6######
+@U.CASE.SGALL@7:@U.CASE.SGALL@seitsemälle MILJON ; ! 7######
+@U.CASE.SGALL@8:@U.CASE.SGALL@kahdeksalle MILJON ; ! 8######
+@U.CASE.SGALL@9:@U.CASE.SGALL@yhdeksälle MILJON ;  ! 9######
 
 LEXICON MILJON
-!! lexicon @LEXNAME@ is for numbers with 1 000 000–9 000 000
+!! Lexicon `@LEXNAME@` is for numbers with 1 000 000–9 000 000
 !! this is to implement ...N*miljoonaa*...
-:miljoonaa OVERTHOUSANDS ; ! ¤######
+!!€gt-norm:  Millions
+!!€  200000: kaksisataamiljoonaa
+@U.CASE.SGNOM@:miljoonaa OVERTHOUSANDS ; ! ¤######
+@U.CASE.SGALL@:miljoonalle OVERTHOUSANDS ; ! ¤######
 
 ! =================
 ! Under the miljon
 ! =================
 
 LEXICON UNDERMILLION
-!! lexicon @LEXNAME@ is for numbers with 100 000–900 000 after milliards
+!! Lexicon `@LEXNAME@` is for numbers with 100 000–900 000 after milliards
 HUNDREDST ;       !       ¤#####
-1:sata HUNDREDT ; !       1#####
+@U.CASE.SGNOM@1:@U.CASE.SGNOM@sata HUNDREDT ; !       1#####
+@U.CASE.SGALL@1:@U.CASE.SGALL@sadalle HUNDREDT ; !       1#####
 
 LEXICON OVERTHOUSANDS
-!! lexicon @LEXNAME@ is for the thousands *part* of numbers greater than 1 million
+!! Lexicon `@LEXNAME@` is for the thousands *part* of numbers greater than 1 million
 HUNDREDST ;		!         ¤#####
 1:sata HUNDREDT ;	!     1#####
 %0: TENST ;		!         0¤####
 %0: TEENST ;		!     01####
 %0: TENT ;          !     010###
 %0%0: ONEST ;		!     00¤###
-%0%01:tuhat THOUSAND ;	! 001###
+@U.CASE.SGNOM@%0%01:@U.CASE.SGNOM@tuhat THOUSAND ;	! 001###
+@U.CASE.SGALL@%0%01:@U.CASE.SGALL@tuhannelle THOUSAND ;	! 001###
 %0%0%0: UNDERTHOUSAND ; ! 000###
 %0%0%0%0: TENS ;    !     0000¤#
 %0%0%0%0: TEENS ;   !     00001#
 %0%0%0%0%0: ONES ;  !     00000#
-%0%0%0%0%0%0: # ;	!     000000
+%0%0%0%0%0%0: LOPPU ;	!     000000
 
 LEXICON HUNDREDST
-!! lexicon @LEXNAME@ contains numbers 2-9 that need to be followed by exactly
+!! Lexicon `@LEXNAME@` contains numbers 2-9 that need to be followed by exactly
 !! 5 digits: 200 000–999 999
 !! this is to implement *N*sataa...tuhatta...
-2:kaksi  CUODIT ;	! 2#####
-3:kolme CUODIT ;	! 3#####
-4:neljä CUODIT ;	! 4#####
-5:viisi CUODIT ;	! 5#####
-6:kuusi CUODIT ;	! 6#####
-7:seitsemän CUODIT ;	! 7#####
-8:kahdeksan CUODIT ;	! 8#####
-9:yhdeksän CUODIT ;	! 9#####
+@U.CASE.SGNOM@2:@U.CASE.SGNOM@kaksi  CUODIT ;	! 2#####
+@U.CASE.SGNOM@3:@U.CASE.SGNOM@kolme CUODIT ;	! 3#####
+@U.CASE.SGNOM@4:@U.CASE.SGNOM@neljä CUODIT ;	! 4#####
+@U.CASE.SGNOM@5:@U.CASE.SGNOM@viisi CUODIT ;	! 5#####
+@U.CASE.SGNOM@6:@U.CASE.SGNOM@kuusi CUODIT ;	! 6#####
+@U.CASE.SGNOM@7:@U.CASE.SGNOM@seitsemän CUODIT ;	! 7#####
+@U.CASE.SGNOM@8:@U.CASE.SGNOM@kahdeksan CUODIT ;	! 8#####
+@U.CASE.SGNOM@9:@U.CASE.SGNOM@yhdeksän CUODIT ;	! 9#####
+@U.CASE.SGALL@2:@U.CASE.SGALL@kahdelle  CUODIT ;	! 2#####
+@U.CASE.SGALL@3:@U.CASE.SGALL@kolmelle CUODIT ;	! 3#####
+@U.CASE.SGALL@4:@U.CASE.SGALL@neljälle CUODIT ;	! 4#####
+@U.CASE.SGALL@5:@U.CASE.SGALL@viidelle CUODIT ;	! 5#####
+@U.CASE.SGALL@6:@U.CASE.SGALL@kuudelle CUODIT ;	! 6#####
+@U.CASE.SGALL@7:@U.CASE.SGALL@seitsemälle CUODIT ;	! 7#####
+@U.CASE.SGALL@8:@U.CASE.SGALL@kahdeksalle CUODIT ;	! 8#####
+@U.CASE.SGALL@9:@U.CASE.SGALL@yhdeksälle CUODIT ;	! 9#####
 
 LEXICON CUODIT
-!! lexicon @LEXNAME@ contains numbers 2-9 that need to be followed by exactly
+!! Lexicon `@LEXNAME@` contains numbers 2-9 that need to be followed by exactly
 !! this is to implement N*sataa*...tuhatta...
-:sataa HUNDREDT ;	! ¤#####
+!!€gt-norm:  Hundreds of thousands
+!!€  20000: kaksisataatuhatta
+@U.CASE.SGNOM@:@U.CASE.SGNOM@sataa HUNDREDT ;	! ¤#####
+@U.CASE.SGALL@:@U.CASE.SGALL@sadalle HUNDREDT ;	! ¤#####
 
 LEXICON HUNDREDT	! ¤ = 1-9, # = 0-9
-!! lexicon @LEXNAME@ is for numbers in range: 100 000–199 000
+!! Lexicon `@LEXNAME@` is for numbers in range: 100 000–199 000
 !! this is to implement *sata*...tuhatta...
 TENST ;			! ¤¤####
 TENT ;			! ¤10###
 TEENST ;		! ¤1¤###
-%01:yksi THOUSANDS ; ! ¤01###
+@U.CASE.SGNOM@%01:@U.CASE.SGNOM@yksi THOUSANDS ; ! ¤01###
+@U.CASE.SGALL@%01:@U.CASE.SGALL@yhdelle THOUSANDS ; ! ¤01###
 %0: ONEST ;		! ¤0¤###
 %0%0: THOUSANDS ;	! ¤00###
 
 LEXICON TEENST
-!! lexicon @LEXNAME@ is for numbers with 11 000–19 000
+!! Lexicon `@LEXNAME@` is for numbers with 11 000–19 000
 !! this is to implement ...N*toista*...tuhatta...
 1: TEENT ;  ! 11###
 
@@ -328,69 +467,105 @@ LEXICON TEENST
 !kymmenen% tuhatta:1%0 THOUSANDS ;
 
 LEXICON TEENT
-!! lexicon @LEXNAME@ is for numbers with 11 000–19 000
+!! Lexicon `@LEXNAME@` is for numbers with 11 000–19 000
 !! this is to implement ...*N*toista...tuhatta...
-1:yksi LOHKAIT ;      ! 11###
-2:kaksi LOHKAIT ;     ! 12###
-3:kolme LOHKAIT ;     ! 13###
-4:neljä LOHKAIT ;     ! 14###
-5:viisi LOHKAIT ;     ! 15###
-6:kuusi LOHKAIT ;     ! 16###
-7:seitsemän LOHKAIT ; ! 17###
-8:kahdeksan LOHKAIT ; ! 18###
-9:yhdeksän LOHKAIT ;  ! 19###
+!!€gt-norm:  Teens of thousands
+!!€  12000: kaksitoistatuhatta
+@U.CASE.SGNOM@1:@U.CASE.SGNOM@yksi LOHKAIT ;      ! 11###
+@U.CASE.SGNOM@2:@U.CASE.SGNOM@kaksi LOHKAIT ;     ! 12###
+@U.CASE.SGNOM@3:@U.CASE.SGNOM@kolme LOHKAIT ;     ! 13###
+@U.CASE.SGNOM@4:@U.CASE.SGNOM@neljä LOHKAIT ;     ! 14###
+@U.CASE.SGNOM@5:@U.CASE.SGNOM@viisi LOHKAIT ;     ! 15###
+@U.CASE.SGNOM@6:@U.CASE.SGNOM@kuusi LOHKAIT ;     ! 16###
+@U.CASE.SGNOM@7:@U.CASE.SGNOM@seitsemän LOHKAIT ; ! 17###
+@U.CASE.SGNOM@8:@U.CASE.SGNOM@kahdeksan LOHKAIT ; ! 18###
+@U.CASE.SGNOM@9:@U.CASE.SGNOM@yhdeksän LOHKAIT ;  ! 19###
+@U.CASE.SGALL@1:@U.CASE.SGALL@yhdelle LOHKAIT ;      ! 11###
+@U.CASE.SGALL@2:@U.CASE.SGALL@kahdelle LOHKAIT ;     ! 12###
+@U.CASE.SGALL@3:@U.CASE.SGALL@kolmelle LOHKAIT ;     ! 13###
+@U.CASE.SGALL@4:@U.CASE.SGALL@neljälle LOHKAIT ;     ! 14###
+@U.CASE.SGALL@5:@U.CASE.SGALL@viidelle LOHKAIT ;     ! 15###
+@U.CASE.SGALL@6:@U.CASE.SGALL@kuudelle LOHKAIT ;     ! 16###
+@U.CASE.SGALL@7:@U.CASE.SGALL@seitsemälle LOHKAIT ; ! 17###
+@U.CASE.SGALL@8:@U.CASE.SGALL@kahdeksalle LOHKAIT ; ! 18###
+@U.CASE.SGALL@9:@U.CASE.SGALL@yhdeksälle LOHKAIT ;  ! 19###
 
 LEXICON LOHKAIT
 :toista THOUSANDS ;  ! 11###-19###
 
 LEXICON TENST
-!! lexicon @LEXNAME@ is for numbers with 20 000–90 000
+!! Lexicon `@LEXNAME@` is for numbers with 20 000–90 000
 !! this is to implement ...*N*kymmentä...tuhatta...
-2:kaksi LÅGEVT ;     ! 2####
-3:kolme LÅGEVT ;     ! 3####
-4:neljä LÅGEVT ;     ! 4####
-5:viisi LÅGEVT ;     ! 5####
-6:kuusi LÅGEVT ;     ! 6####
-7:seitsemän LÅGEVT ; ! 7####
-8:kahdeksan LÅGEVT ; ! 8####
-9:yhdeksän LÅGEVT ;  ! 9####
+@U.CASE.SGNOM@2:@U.CASE.SGNOM@kaksi LÅGEVT ;     ! 2####
+@U.CASE.SGNOM@3:@U.CASE.SGNOM@kolme LÅGEVT ;     ! 3####
+@U.CASE.SGNOM@4:@U.CASE.SGNOM@neljä LÅGEVT ;     ! 4####
+@U.CASE.SGNOM@5:@U.CASE.SGNOM@viisi LÅGEVT ;     ! 5####
+@U.CASE.SGNOM@6:@U.CASE.SGNOM@kuusi LÅGEVT ;     ! 6####
+@U.CASE.SGNOM@7:@U.CASE.SGNOM@seitsemän LÅGEVT ; ! 7####
+@U.CASE.SGNOM@8:@U.CASE.SGNOM@kahdeksan LÅGEVT ; ! 8####
+@U.CASE.SGNOM@9:@U.CASE.SGNOM@yhdeksän LÅGEVT ;  ! 9####
+@U.CASE.SGALL@2:@U.CASE.SGALL@kahdelle LÅGEVT ;     ! 2####
+@U.CASE.SGALL@3:@U.CASE.SGALL@kolmelle LÅGEVT ;     ! 3####
+@U.CASE.SGALL@4:@U.CASE.SGALL@neljälle LÅGEVT ;     ! 4####
+@U.CASE.SGALL@5:@U.CASE.SGALL@viidelle LÅGEVT ;     ! 5####
+@U.CASE.SGALL@6:@U.CASE.SGALL@kuudelle LÅGEVT ;     ! 6####
+@U.CASE.SGALL@7:@U.CASE.SGALL@seitsemälle LÅGEVT ; ! 7####
+@U.CASE.SGALL@8:@U.CASE.SGALL@kahdeksalle LÅGEVT ; ! 8####
+@U.CASE.SGALL@9:@U.CASE.SGALL@yhdeksälle LÅGEVT ;  ! 9####
 
 
 LEXICON TENT
-!! lexicon @LEXNAME@ is for numbers with 10 000 000–10 999 999
+!! Lexicon `@LEXNAME@` is for numbers with 10 000 000–10 999 999
 !! this is to implement ...*kymmenen*tuhatta...
-1%0:kymmenentuhatta THOUSAND ;  ! 10###
+!!€gt-norm:  Ten thousands
+!!€  10000: kymmenentuhatta
+@U.CASE.SGNOM@1%0:@U.CASE.SGNOM@kymmenentuhatta THOUSAND ;  ! 10###
+@U.CASE.SGALL@1%0:@U.CASE.SGALL@kymmenelletuhannelle THOUSAND ;  ! 10###
 
 LEXICON LÅGEVT
-!! lexicon @LEXNAME@ is for numbers with 20 000–90 000
+!! Lexicon `@LEXNAME@` is for numbers with 20 000–90 000
 !! this is to implement ...N*kymmentä*...tuhatta..
-%0:kymmentä THOUSANDS ; ! ¤0###
- 1:kymmentäyksituhatta THOUSAND ; ! ¤1###
-  :kymmentä ONEST ;     ! ¤¤###-¤¤###
+!!€gt-norm:  Tens of thousands
+!!€  20000: kaksikymmentätuhatta
+@U.CASE.SGNOM@%0:@U.CASE.SGNOM@kymmentä THOUSANDS ; ! ¤0###
+@U.CASE.SGNOM@1:@U.CASE.SGNOM@kymmentäyksituhatta THOUSAND ; ! ¤1###
+@U.CASE.SGNOM@:@U.CASE.SGNOM@kymmentä ONEST ;     ! ¤¤###-¤¤###
+@U.CASE.SGALL@%0:@U.CASE.SGALL@kymmenelle THOUSANDS ; ! ¤0###
+@U.CASE.SGALL@1:@U.CASE.SGALL@kymmenelleyhdelletuhannelle THOUSAND ; ! ¤1###
+@U.CASE.SGALL@:@U.CASE.SGALL@kymmenelle ONEST ;     ! ¤¤###-¤¤###
 
 LEXICON ONEST
-!! lexicon @LEXNAME@ is for numbers with 1 000–9 000
+!! Lexicon `@LEXNAME@` is for numbers with 1 000–9 000
 !! this is to implement ...*N*tuhatta...
-2:kaksi THOUSANDS ;     ! 2###
-3:kolme THOUSANDS ;     ! 3###
-4:neljä THOUSANDS ;     ! 4###
-5:viisi THOUSANDS ;     ! 5###
-6:kuusi THOUSANDS ;     ! 6###
-7:seitsemän THOUSANDS ; ! 7###
-8:kahdeksan THOUSANDS ; ! 8###
-9:yhdeksän THOUSANDS ;  ! 9###
+@U.CASE.SGNOM@2:@U.CASE.SGNOM@kaksi THOUSANDS ;     ! 2###
+@U.CASE.SGNOM@3:@U.CASE.SGNOM@kolme THOUSANDS ;     ! 3###
+@U.CASE.SGNOM@4:@U.CASE.SGNOM@neljä THOUSANDS ;     ! 4###
+@U.CASE.SGNOM@5:@U.CASE.SGNOM@viisi THOUSANDS ;     ! 5###
+@U.CASE.SGNOM@6:@U.CASE.SGNOM@kuusi THOUSANDS ;     ! 6###
+@U.CASE.SGNOM@7:@U.CASE.SGNOM@seitsemän THOUSANDS ; ! 7###
+@U.CASE.SGNOM@8:@U.CASE.SGNOM@kahdeksan THOUSANDS ; ! 8###
+@U.CASE.SGNOM@9:@U.CASE.SGNOM@yhdeksän THOUSANDS ;  ! 9###
+@U.CASE.SGALL@2:@U.CASE.SGALL@kahdelle THOUSANDS ;     ! 2###
+@U.CASE.SGALL@3:@U.CASE.SGALL@kolmelle THOUSANDS ;     ! 3###
+@U.CASE.SGALL@4:@U.CASE.SGALL@neljälle THOUSANDS ;     ! 4###
+@U.CASE.SGALL@5:@U.CASE.SGALL@viidelle THOUSANDS ;     ! 5###
+@U.CASE.SGALL@6:@U.CASE.SGALL@kuudelle THOUSANDS ;     ! 6###
+@U.CASE.SGALL@7:@U.CASE.SGALL@seitsemälle THOUSANDS ; ! 7###
+@U.CASE.SGALL@8:@U.CASE.SGALL@kahdeksalle THOUSANDS ; ! 8###
+@U.CASE.SGALL@9:@U.CASE.SGALL@yhdeksälle THOUSANDS ;  ! 9###
 
 LEXICON THOUSANDS      ! x > 1
-!! lexicon @LEXNAME@ is for numbers with 1 000–9 000
+!! Lexicon `@LEXNAME@` is for numbers with 1 000–9 000
 !! this is to implement ...N*tuhatta*...
 !!€gt-norm:  Thousands
 !!€  2000: kaksituhatta
 !!€  3456: kolmetuhattaneljäsataaviisikymmentäkuusi
-:tuhatta THOUSAND ;    ! ¤###
+@U.CASE.SGNOM@:@U.CASE.SGNOM@tuhatta THOUSAND ;    ! ¤###
+@U.CASE.SGALL@:@U.CASE.SGALL@tuhannelle THOUSAND ;    ! ¤###
 
 LEXICON THOUSAND
-!! lexicon @LEXNAME@ is for the ones-tens-hundreds of numbers greater than thousand
-HUNDREDST ;		!         ¤#####
+!! Lexicon `@LEXNAME@` is for the ones-tens-hundreds of numbers greater than thousand
+!HUNDREDS ;		!         ¤#####
 UNDERTHOUSAND ;	   ! 1¤##
 %0: TENS ;	       ! 10¤#
 %0: TEENS ;	       ! 101¤
@@ -402,115 +577,166 @@ UNDERTHOUSAND ;	   ! 1¤##
 !===========================
 
 LEXICON UNDERTHOUSAND
-!! lexicon @LEXNAME@ is for numbers with 100–900 after thousands
+!! Lexicon `@LEXNAME@` is for numbers with 100–900 after thousands
 HUNDREDS ;           ! 2##-9##
-1:sata HUNDRED ;     ! 1##
+@U.CASE.SGNOM@1:@U.CASE.SGNOM@sata HUNDRED ;     ! 1##
+@U.CASE.SGALL@1:@U.CASE.SGALL@sadalle HUNDRED ;     ! 1##
 
 LEXICON HUNDREDS
-!! lexicon @LEXNAME@ contains numbers 2-9 that need to be followed by exactly
+!! Lexicon `@LEXNAME@` contains numbers 2-9 that need to be followed by exactly
 !! 2 digits: 200–999
 !! this is to implement *N*sataa...
-2:kaksi  CUODI ;     ! 2##
-3:kolme CUODI ;      ! 3##
-4:neljä CUODI ;      ! 4##
-5:viisi CUODI ;      ! 5##
-6:kuusi CUODI ;      ! 6##
-7:seitsemän CUODI ;  ! 7##
-8:kahdeksan CUODI ;  ! 8##
-9:yhdeksän CUODI ;   ! 9##
+@U.CASE.SGNOM@2:@U.CASE.SGNOM@kaksi  CUODI ;     ! 2##
+@U.CASE.SGNOM@3:@U.CASE.SGNOM@kolme CUODI ;      ! 3##
+@U.CASE.SGNOM@4:@U.CASE.SGNOM@neljä CUODI ;      ! 4##
+@U.CASE.SGNOM@5:@U.CASE.SGNOM@viisi CUODI ;      ! 5##
+@U.CASE.SGNOM@6:@U.CASE.SGNOM@kuusi CUODI ;      ! 6##
+@U.CASE.SGNOM@7:@U.CASE.SGNOM@seitsemän CUODI ;  ! 7##
+@U.CASE.SGNOM@8:@U.CASE.SGNOM@kahdeksan CUODI ;  ! 8##
+@U.CASE.SGNOM@9:@U.CASE.SGNOM@yhdeksän CUODI ;   ! 9##
+@U.CASE.SGALL@2:@U.CASE.SGALL@kahdelle  CUODI ;     ! 2##
+@U.CASE.SGALL@3:@U.CASE.SGALL@kolmelle CUODI ;      ! 3##
+@U.CASE.SGALL@4:@U.CASE.SGALL@neljälle CUODI ;      ! 4##
+@U.CASE.SGALL@5:@U.CASE.SGALL@viidelle CUODI ;      ! 5##
+@U.CASE.SGALL@6:@U.CASE.SGALL@kuudelle CUODI ;      ! 6##
+@U.CASE.SGALL@7:@U.CASE.SGALL@seitsemälle CUODI ;  ! 7##
+@U.CASE.SGALL@8:@U.CASE.SGALL@kahdeksalle CUODI ;  ! 8##
+@U.CASE.SGALL@9:@U.CASE.SGALL@yhdeksälle CUODI ;   ! 9##
 
 LEXICON CUODI
-!! lexicon @LEXNAME@ contains numbers 2-9 that need to be followed by exactly
+!! Lexicon `@LEXNAME@` contains numbers 2-9 that need to be followed by exactly
 !! this is to implement N*sataa*...
 !!€gt-norm:  Hundreds
 !!€  200: kaksisataa
 !!€  345: kolmesataaneljäkymmentäviisi
-:sataa HUNDRED ;     ! ¤##
+@U.CASE.SGNOM@:@U.CASE.SGNOM@sataa HUNDRED ;     ! ¤##
+@U.CASE.SGALL@:@U.CASE.SGALL@sadalle HUNDRED ;     ! ¤##
 
 LEXICON HUNDRED
-!! lexicon @LEXNAME@ is for numbers in range: 100–999
+!! Lexicon `@LEXNAME@` is for numbers in range: 100–999
 TENS ;               ! #¤#
 TEENS ;              ! #1#
 %0: ONES ;           ! #0#
-%0%0: # ;            ! #00
+%0%0: LOPPU ;            ! #00
 
 LEXICON TEENS
-!! lexicon @LEXNAME@ is for numbers with 11–19
+!! Lexicon `@LEXNAME@` is for numbers with 11–19
 !! this is to implement ...N*toista*
 1: TEEN ;            ! 1¤
 
 LEXICON TEEN
-!! lexicon @LEXNAME@ is for numbers with 11–19
+!! Lexicon `@LEXNAME@` is for numbers with 11–19
 !! this is to implement ...*N*toista
 !!€gt-norm:  Teens
 !!€  11: yksitoista
 !!€  12: kaksitoista
 !!€  13: kolmetoista
-1:yksi LOHKAI ;      ! 11
-2:kaksi LOHKAI ;     ! 12
-3:kolme LOHKAI ;     ! 13
-4:neljä LOHKAI ;     ! 14
-5:viisi LOHKAI ;     ! 15
-6:kuusi LOHKAI ;     ! 16
-7:seitsemän LOHKAI ; ! 17
-8:kahdeksan LOHKAI ; ! 18
-9:yhdeksän LOHKAI ;  ! 19
+@U.CASE.SGNOM@1:@U.CASE.SGNOM@yksi LOHKAI ;      ! 11
+@U.CASE.SGNOM@2:@U.CASE.SGNOM@kaksi LOHKAI ;     ! 12
+@U.CASE.SGNOM@3:@U.CASE.SGNOM@kolme LOHKAI ;     ! 13
+@U.CASE.SGNOM@4:@U.CASE.SGNOM@neljä LOHKAI ;     ! 14
+@U.CASE.SGNOM@5:@U.CASE.SGNOM@viisi LOHKAI ;     ! 15
+@U.CASE.SGNOM@6:@U.CASE.SGNOM@kuusi LOHKAI ;     ! 16
+@U.CASE.SGNOM@7:@U.CASE.SGNOM@seitsemän LOHKAI ; ! 17
+@U.CASE.SGNOM@8:@U.CASE.SGNOM@kahdeksan LOHKAI ; ! 18
+@U.CASE.SGNOM@9:@U.CASE.SGNOM@yhdeksän LOHKAI ;  ! 19
+@U.CASE.SGALL@1:@U.CASE.SGALL@yhdelle LOHKAI ;      ! 11
+@U.CASE.SGALL@2:@U.CASE.SGALL@kahdelle LOHKAI ;     ! 12
+@U.CASE.SGALL@3:@U.CASE.SGALL@kolmelle LOHKAI ;     ! 13
+@U.CASE.SGALL@4:@U.CASE.SGALL@neljälle LOHKAI ;     ! 14
+@U.CASE.SGALL@5:@U.CASE.SGALL@viidelle LOHKAI ;     ! 15
+@U.CASE.SGALL@6:@U.CASE.SGALL@kuudelle LOHKAI ;     ! 16
+@U.CASE.SGALL@7:@U.CASE.SGALL@seitsemälle LOHKAI ; ! 17
+@U.CASE.SGALL@8:@U.CASE.SGALL@kahdeksalle LOHKAI ; ! 18
+@U.CASE.SGALL@9:@U.CASE.SGALL@yhdeksälle LOHKAI ;  ! 19
 
 LEXICON LOHKAI
-:toista # ;
+:toista LOPPU ;
 
 !LEXICON
 !kymmentä:1%0 # ;
 
 LEXICON TENS
-!! lexicon @LEXNAME@ is for numbers with 20–90
+!! Lexicon `@LEXNAME@` is for numbers with 20–90
 !! this is to implement ...*N*kymmentä...
 JUSTTEN ;            ! 10
-2:kaksi LÅGEV ;      ! 2#
-3:kolme LÅGEV ;      ! 3#
-4:neljä LÅGEV ;      ! 4#
-5:viisi LÅGEV ;      ! 5#
-6:kuusi LÅGEV ;      ! 6#
-7:seitsemän LÅGEV ;  ! 7#
-8:kahdeksan LÅGEV ;  ! 8#
-9:yhdeksän LÅGEV ;   ! 9#
+@U.CASE.SGNOM@2:@U.CASE.SGNOM@kaksi LÅGEV ;      ! 2#
+@U.CASE.SGNOM@3:@U.CASE.SGNOM@kolme LÅGEV ;      ! 3#
+@U.CASE.SGNOM@4:@U.CASE.SGNOM@neljä LÅGEV ;      ! 4#
+@U.CASE.SGNOM@5:@U.CASE.SGNOM@viisi LÅGEV ;      ! 5#
+@U.CASE.SGNOM@6:@U.CASE.SGNOM@kuusi LÅGEV ;      ! 6#
+@U.CASE.SGNOM@7:@U.CASE.SGNOM@seitsemän LÅGEV ;  ! 7#
+@U.CASE.SGNOM@8:@U.CASE.SGNOM@kahdeksan LÅGEV ;  ! 8#
+@U.CASE.SGNOM@9:@U.CASE.SGNOM@yhdeksän LÅGEV ;   ! 9#
+@U.CASE.SGALL@2:@U.CASE.SGALL@kahdelle LÅGEV ;      ! 2#
+@U.CASE.SGALL@3:@U.CASE.SGALL@kolmelle LÅGEV ;      ! 3#
+@U.CASE.SGALL@4:@U.CASE.SGALL@neljälle LÅGEV ;      ! 4#
+@U.CASE.SGALL@5:@U.CASE.SGALL@viidelle LÅGEV ;      ! 5#
+@U.CASE.SGALL@6:@U.CASE.SGALL@kuudelle LÅGEV ;      ! 6#
+@U.CASE.SGALL@7:@U.CASE.SGALL@seitsemälle LÅGEV ;  ! 7#
+@U.CASE.SGALL@8:@U.CASE.SGALL@kahdeksalle LÅGEV ;  ! 8#
+@U.CASE.SGALL@9:@U.CASE.SGALL@yhdeksälle LÅGEV ;   ! 9#
 
 LEXICON LÅGEV
-!! lexicon @LEXNAME@ is for numbers with 20–90
+!! Lexicon `@LEXNAME@` is for numbers with 20–90
 !! this is to implement ...N*kymmentä*...
 !!€gt-norm:  Tens
 !!€  20: kaksikymmentä
 !!€  34: kolmekymmentäneljä
-%0:kymmentä # ;      ! ¤0
-  :kymmentä ONES ;   ! ¤#
+@U.CASE.SGNOM@%0:@U.CASE.SGNOM@kymmentä LOPPU ;      ! ¤0
+@U.CASE.SGNOM@:@U.CASE.SGNOM@kymmentä ONES ;   ! ¤#
+@U.CASE.SGALL@%0:@U.CASE.SGALL@kymmenelle LOPPU ;      ! ¤0
+@U.CASE.SGALL@:@U.CASE.SGALL@kymmenelle ONES ;   ! ¤#
 
 LEXICON JUSTTEN
-!! lexicon @LEXNAME@ is for number 10
+!! Lexicon `@LEXNAME@` is for number 10
 !! this is to implement ...*kymmenen*
 !!€gt-norm:  Ten
-!!€  1: kymmenen
-1%0:kymmenen # ;     ! 10
+!!€  10: kymmenen
+@U.CASE.SGNOM@1%0:@U.CASE.SGNOM@kymmenen LOPPU ;     ! 10
+@U.CASE.SGALL@1%0:@U.CASE.SGALL@kymmenelle LOPPU ;     ! 10
 
 LEXICON ONES
-!! lexicon @LEXNAME@ is for numbers with 1–9
+!! Lexicon `@LEXNAME@` is for numbers with 1–9
 !! this is to implement yksi, kaksi, kolme..., yhdeksän
 !!€gt-norm:  Ones
 !!€  1: yksi
 !!€  2: kaksi
 !!€  3: kolme
-1:yksi # ;           ! 1
-2:kaksi # ;          ! 2
-3:kolme # ;          ! 3
-4:neljä # ;          ! 4
-5:viisi # ;          ! 5
-6:kuusi # ;          ! 6
-7:seitsemän # ;      ! 7
-8:kahdeksan # ;      ! 8
-9:yhdeksän # ;       ! 9
+@U.CASE.SGNOM@1:@U.CASE.SGNOM@yksi LOPPU ;           ! 1
+@U.CASE.SGNOM@2:@U.CASE.SGNOM@kaksi LOPPU ;          ! 2
+@U.CASE.SGNOM@3:@U.CASE.SGNOM@kolme LOPPU ;          ! 3
+@U.CASE.SGNOM@4:@U.CASE.SGNOM@neljä LOPPU ;          ! 4
+@U.CASE.SGNOM@5:@U.CASE.SGNOM@viisi LOPPU ;          ! 5
+@U.CASE.SGNOM@6:@U.CASE.SGNOM@kuusi LOPPU ;          ! 6
+@U.CASE.SGNOM@7:@U.CASE.SGNOM@seitsemän LOPPU ;      ! 7
+@U.CASE.SGNOM@8:@U.CASE.SGNOM@kahdeksan LOPPU ;      ! 8
+@U.CASE.SGNOM@9:@U.CASE.SGNOM@yhdeksän LOPPU ;       ! 9
+@U.CASE.SGALL@1:@U.CASE.SGALL@yhdelle LOPPU ;           ! 1
+@U.CASE.SGALL@2:@U.CASE.SGALL@kahdelle LOPPU ;          ! 2
+@U.CASE.SGALL@3:@U.CASE.SGALL@kolmelle LOPPU ;          ! 3
+@U.CASE.SGALL@4:@U.CASE.SGALL@neljälle LOPPU ;          ! 4
+@U.CASE.SGALL@5:@U.CASE.SGALL@viidelle LOPPU ;          ! 5
+@U.CASE.SGALL@6:@U.CASE.SGALL@kuudelle LOPPU ;          ! 6
+@U.CASE.SGALL@7:@U.CASE.SGALL@seitsemälle LOPPU ;      ! 7
+@U.CASE.SGALL@8:@U.CASE.SGALL@kahdeksalle LOPPU ;      ! 8
+@U.CASE.SGALL@9:@U.CASE.SGALL@yhdeksälle LOPPU ;       ! 9
 
 LEXICON ZERO
-!! lexicon @LEXNAME@ is for number 0
+!! Lexicon `@LEXNAME@` is for number 0
 !! nolla
 !!€gt-norm:  Zero
 !!€  0: nolla
-%0:nolla # ;         ! 0
+@U.CASE.SGNOM@%0:@U.CASE.SGNOM@nolla LOPPU ;         ! 0
+@U.CASE.SGALL@%0:@U.CASE.SGALL@nollalle LOPPU ;         ! 0
+
+
+LEXICON LOPPU
+!! Lexicon `@LEXNAME@` is to implement potential case inflection with a colon.
+!!€gt-norm: Digits with explicit cases
+!!€  1\:lle: yhdelle
+!! *Note:* accepting or rejecting case inflected digit strings without explicit
+!! suffix can be changed here.
+@U.CASE.SGNOM@ # ;
+@U.CASE.SGALL@%:lle:@U.CASE.SGALL@  #   ;
+
