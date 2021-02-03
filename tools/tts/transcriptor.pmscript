@@ -1,0 +1,11 @@
+Define transcriptors @bin"transcriptor-date-digit2text.filtered.lookup.hfst" |
+                     @bin"transcriptor-clock-digit2text.filtered.lookup.hfst" |
+                     @bin"transcriptor-numbers-digit2text.filtered.lookup.hfst" |
+                     @bin"transcriptor-abbrevs2text.filtered.lookup.hfst" ;
+
+Define untranscribed [ a-z | 0-9 ]* ;
+
+Define tokens [ transcriptors | untranscribed ] EndTag(token) ;
+
+regex tokens ;
+
