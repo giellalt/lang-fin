@@ -192,7 +192,10 @@ gt_CONFIG_FILES
 ############ END: Language-specific scripts. #############
 
 # This must be near the end of all configure.ac files:
+AC_CONFIG_FILES([tools/tts/Makefile])
+AC_CONFIG_FILES([tools/tts/pipespec.xml])
 AC_OUTPUT
+
 
 # Prints the informative blurb at the end of ./configure command
 gt_PRINT_FOOTER

@@ -1,0 +1,15 @@
+set need-separtors off
+
+Define iparegex @bin"text2ipa-fin.hfst" ;
+
+Define fallback [ [ A:aa | B:bee | C:see | D:dee | E:ee | F:äf | G:gee |
+               H:hoo | I:ii | J:jii | K:koo | L:äl | M:äm |
+               N:än | O:oo | P:pee | R:är | S:äs | T:tee |
+               U:uu | V:vee | W:tuplavee | X:äks : Å:åå |
+               Ä:ää | Ö:öö ]
+                  [ %.:0 | %-:0 ]? ]* .o.
+               iparegex ;
+
+Define token [ iparegex | fallback ] EndTag(token);
+
+regex token ;
