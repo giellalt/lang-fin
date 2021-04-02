@@ -304,7 +304,7 @@ LIST Pot = Pot ;
 
 LIST FINV = Ind Cond Imprt Pot ;
 
-LIST InfA = InfA IInf; 
+LIST InfA = InfA ; 
 LIST InfE = IIInf InfE ;
 LIST InfMa = InfMa ; 
 
@@ -1090,8 +1090,8 @@ LIST @PC = @PC ;
 LIST @<P = @<P ;
 LIST @P> = @P> ;
 
-LIST @NUM< = @NUM< ;
-LIST @>NUM = @>NUM ;
+LIST @Num< = @Num< ;
+LIST @>Num = @>Num ;
 
 # Syntactic tags from sme
 # These should be used, for tag harmonisation.
@@ -1133,12 +1133,9 @@ LIST @>P = @>P ;
 LIST @HNOUN = @HNOUN ;
 LIST @INTERJ = @INTERJ ;
  
-LIST @>Num = @>Num;
-
 LIST @Pron< = @Pron< ;
 LIST @>Pron = @>Pron ;
 
-LIST @Num< = @Num< ;
 
 LIST @<OBJ = @<OBJ ;
 LIST @OBJ> = @OBJ> ;
@@ -1183,7 +1180,7 @@ LIST @X = @X ;
 
 LIST ALLSYNTAG = (@+FAUXV) (@+FMAINV) (@-FAUXV) (@-FMAINV) (@-FSUBJ>)(@-FOBJ)(@-FADVL)(@>A) (@>ADVL) (@ADVL<) (@<ADVL) (@ADVL>) (@ADVL) (@HAB) (@>N) (@APP) (@APP-N<) (@APP-Pron<) (@APP>Pron) (@APP-Num<) (@APP-ADVL<) (@VOC) (@CNP) (@CVP) (@P<) (@>P) (@HNOUN) (@INTERJ) (@Pron<) (@OBJ) (@OBJ>) (@<OBJ) (@OPRED) (@<OPRED) (@OPRED>) (@SPRED<OBJ) (@PCLE) (@COMP-CS<) (@N<) (@SPRED) (@<SPRED) (@SPRED>) (@PPRED) (@Num<) (@SUBJ) (@<SUBJ) (@SUBJ>) (@X);
 
-LIST SYNT = @+FMAINV @+FAUXV @-FMAINV @-FAUXV @<SPRED @SPRED> @SUBJ @<SUBJ @SUBJ> @OBJ @<OBJ @OBJ> @NEC-S @NF-S @OBJ @PC @<P @P> @>P @N> @>N @N<  @<N @<NUM @NUM< @ADVL @<ADVL @LOC @PCLE @HAB @CVP @CNP @CNB @NES @X ;
+LIST SYNT = @+FMAINV @+FAUXV @-FMAINV @-FAUXV @<SPRED @SPRED> @SUBJ @<SUBJ @SUBJ> @OBJ @<OBJ @OBJ> @NEC-S @NF-S @OBJ @PC @<P @P> @>P @N> @>N @N<  @<N @<NUM @Num< @ADVL @<ADVL @LOC @PCLE @HAB @CVP @CNP @CNB @NES @X ;
 
 # Called SYNFYNC in cg1
 
@@ -2135,7 +2132,8 @@ SELECT ("sitä") + Pcle (-1 FINV)(1 InfA); # ju
 
 SELECT Pron + Dem (-1 FINV); # add conditions
 SELECT Pron + Dem (-1 Adv OR Pcle)(-2 FINV); # add conditions
-SELECT Pron + Dem (1 FINV OR PrfPrc); # add conditions
+SELECT Pron + Dem (-1 Adv OR Pcle)(-2 FINV); # add conditions
+REMOVE Pron + Dem IF (0 Pers)(1 FINV OR PrfPrc); # add conditions
 
 SELECT ("<tuo>"i) + Pron + Nom (1C Nom)(NEGATE *-1 Imprt + Sg2 OR Act + Ind + Prs + Sg3);
 REMOVE Imprt (*1 ("?") BARRIER QUO OR (")")); 
@@ -4512,8 +4510,8 @@ MAP (@OBJ>) TARGET Acc IF (*1 V BARRIER S-BOUNDARY2) ;
     # ---------------------------------------
 
 # Simple for now... 
-MAP (@NUM<) TARGET N IF (-1 NUMS) ;
-MAP (@NUM<) TARGET N IF (-1 NUMS) ;
+MAP (@Num<) TARGET N IF (-1 NUMS) ;
+MAP (@Num<) TARGET N IF (-1 NUMS) ;
 
 
 # ensimmäinen
