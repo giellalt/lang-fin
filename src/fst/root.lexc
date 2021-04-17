@@ -4,7 +4,7 @@
 ! omorfi database. Last merge: 2015-07-18
 ! Copyright (c) 2015 Omorfi contributors
 
-!! !!!Morphology
+!! # Morphology
 !!
 !! The morphological division of Finnish words has three classes: verbal,
 !! nominal and others. The verbs are identified by personal, temporal,
@@ -13,7 +13,7 @@
 !! defective or missing inflection.
 
 Multichar_Symbols
-!! !!Symbols used for analysis {{@LEXNAME@}}
+!! ## Symbols used for analysis `@LEXNAME@`
 !!
 !! The Finnish morphological implementation uses analysis symbols mainly to
 !! encode morphological analyses, the rest are implemented else where. Some
@@ -22,7 +22,7 @@ Multichar_Symbols
 !! examples of this classification in other parts of this documents; this page
 !! merely summarises the codes used in this version of the system.
 !!
-!! !Parts-of-speech
+!! ### Parts-of-speech
 !!
 !! The main morphological division of words is merely: Verbs, Nominals,
 !! Rest.
@@ -33,47 +33,47 @@ Multichar_Symbols
 !!
 !! Further reading: [VISK s.v.
 !! sanaluokka|http://scripta.kotus.fi/visk/visk_termit.cgi?h_id=sCABBIDAI],
-!! [VISK § 438|http://scripta.kotus.fi/visk/sisallys.php?p=438].
+!! [VISK § 438](http://scripta.kotus.fi/visk/sisallys.php?p=438).
 !!
 
-!! !Temporary list of added tags
+!! ### Temporary list of added tags
 !! These tags were added as part of a tag unification, and should be
 !! put where they belong.
 
 !! Are there tags not declared in root.lexc or misspelled?
 !! Have a look at these:
-+Dash		            !!= * {{@CODE@}}: XXX check this tag!
-+Dial/Finland           !!= * {{@CODE@}}: XXX check this tag!
-+Dial/standard          !!= * {{@CODE@}}: XXX check this tag!
-+Gyr		            !!= * {{@CODE@}}: XXX check this tag!
-+Pref-		            !!= * {{@CODE@}}: XXX check this tag!
-+Pro		            !!= * {{@CODE@}}: XXX check this tag!
-+TruncPrefix            !!= * {{@CODE@}}: XXX check this tag!
-+Use/N		            !!= * {{@CODE@}}: XXX check this tag!
-+Use/sub	            !!= * {{@CODE@}}: XXX check this tag!
-+s			            !!= * {{@CODE@}}: XXX check this tag!
++Dash		            !!= * `@CODE@`: XXX check this tag!
++Dial/Finland           !!= * `@CODE@`: XXX check this tag!
++Dial/standard          !!= * `@CODE@`: XXX check this tag!
++Gyr		            !!= * `@CODE@`: XXX check this tag!
++Pref-		            !!= * `@CODE@`: XXX check this tag!
++Pro		            !!= * `@CODE@`: XXX check this tag!
++TruncPrefix            !!= * `@CODE@`: XXX check this tag!
++Use/N		            !!= * `@CODE@`: XXX check this tag!
++Use/sub	            !!= * `@CODE@`: XXX check this tag!
++s			            !!= * `@CODE@`: XXX check this tag!
 
-+CLBfinal       !!≈ * __@CODE@__  Sentence final abbreviated expression ending in full stop, so that the full stop is ambiguous
-
-
++CLBfinal       !!≈ * **@CODE@**  Sentence final abbreviated expression ending in full stop, so that the full stop is ambiguous
 
 
 
-!! !Parts of speech
 
 
-+V !!= * {{@CODE@}}: Verb
-+N !!= * {{@CODE@}}: Noun
-+A !!= * {{@CODE@}}: Adjective
-+ACR !!= * {{@CODE@}}: Acronym
-+ABBR !!= * {{@CODE@}}: Abbreviation
+!! ### Parts of speech
+
+
++V !!= * `@CODE@`: Verb
++N !!= * `@CODE@`: Noun
++A !!= * `@CODE@`: Adjective
++ACR !!= * `@CODE@`: Acronym
++ABBR !!= * `@CODE@`: Abbreviation
 +Symbol !!≈ * @CODE@ = independent symbols in the text stream, like £, €, ©
-+Acr !!= * {{@CODE@}}: Acronym
-+Num !!= * {{@CODE@}}: Numerals
-+Adv !!= * {{@CODE@}}: Adverb
-+Pron !!= * {{@CODE@}}: Pronoun
-+Pcle  !!= * {{@CODE@}}: Particle, except:
-+Interj !!= * {{@CODE@}}: Interjection
++Acr !!= * `@CODE@`: Acronym
++Num !!= * `@CODE@`: Numerals
++Adv !!= * `@CODE@`: Adverb
++Pron !!= * `@CODE@`: Pronoun
++Pcle  !!= * `@CODE@`: Particle, except:
++Interj !!= * `@CODE@`: Interjection
 +Cmt
 
 !! The part-of-speech analyses are typically the first:
@@ -87,7 +87,7 @@ Multichar_Symbols
 !!€ ahaa: ahaa+Pcle # ah
 !!€ äh: äh+Interj # uh
 
-!! !Nouns
+!! ### Nouns
 !! In nominal analyses, the proper nouns have additional subanalysis.
 !! Proper nouns are usually written with initial capitals–or more recently,
 !! totally arbitrary capitalisations, such as in brand names nVidia and ATi.
@@ -95,29 +95,29 @@ Multichar_Symbols
 !! work slightly differently in derivation and compounding. Some capitalised
 !! nouns may also lose capitalisation in derivation.
 !!
-!! [VISK § 98|http://scripta.kotus.fi/visk/sisallys.php?p=98]
+!! [VISK § 98](http://scripta.kotus.fi/visk/sisallys.php?p=98)
 
 !! The code for proper nouns:
-+Prop !!= * {{@CODE@}}: Proper noun
++Prop !!= * `@CODE@`: Proper noun
 
 !! Proper noun tag follows noun analysis:
 !!€ Pekka: Pekka+N+Prop+Sg+Nom # Pekka
 
-!! !Pronouns
+!! ### Pronouns
 !! Pronominal analyses have some semantic classes.
 !!
-!! [VISK § 101|http://scripta.kotus.fi/visk/sisallys.php?p=101]–104.
+!! [VISK § 101](http://scripta.kotus.fi/visk/sisallys.php?p=101)–104.
 !!
 !! Codes for various semantic classes:
-+Pers  !!= * {{@CODE@}}: Personal
-+Dem !!= * {{@CODE@}}: Demonstrative
-+Interr !!= * {{@CODE@}}: Interrogative
-+Rel !!= * {{@CODE@}}: Relative
-+Qu !!= * {{@CODE@}}: Quantor
-+Qnt !!= * {{@CODE@}}: Quantor?????
-+Refl !!= * {{@CODE@}}: Reflexive
-+Recipr !!= * {{@CODE@}}: Reciprocal
-+Indef !!= * {{@CODE@}}: Indefinite
++Pers  !!= * `@CODE@`: Personal
++Dem !!= * `@CODE@`: Demonstrative
++Interr !!= * `@CODE@`: Interrogative
++Rel !!= * `@CODE@`: Relative
++Qu !!= * `@CODE@`: Quantor
++Qnt !!= * `@CODE@`: Quantor?????
++Refl !!= * `@CODE@`: Reflexive
++Recipr !!= * `@CODE@`: Reciprocal
++Indef !!= * `@CODE@`: Indefinite
 
 !! Semantic tags follow pronoun analyses:
 !!€ minä: minä+Pron+Pers+Sg+Nom # I
@@ -129,135 +129,135 @@ Multichar_Symbols
 !!€ toistaan: toinen+Pron+Recipr+Sg+Par+PxSg3 # each other
 !!€ joku: joku+Pron+Qu+Indef+Sg+Nom # someone
 
-+Sem/Human !!= * {{@CODE@}}: Semantic class: Human
-+Sem/Geo !!= * {{@CODE@}}: Semantic class: Geographic
-+Sem/Org !!= * {{@CODE@}}: Semantic class: Organisation
++Sem/Human !!= * `@CODE@`: Semantic class: Human
++Sem/Geo !!= * `@CODE@`: Semantic class: Geographic
++Sem/Org !!= * `@CODE@`: Semantic class: Organisation
 
-+Sem/Build		        !!= * {{@CODE@}}: 
-+Sem/Build-room	        !!= * {{@CODE@}}: 
-+Sem/Cat		        !!= * {{@CODE@}}: 
-+Sem/Date		        !!= * {{@CODE@}}: 
-+Sem/Domain		        !!= * {{@CODE@}}: 
-+Sem/Dummytag	        !!= * {{@CODE@}}: 
-+Sem/Event		        !!= * {{@CODE@}}: 
-+Sem/Fem		        !!= * {{@CODE@}}: 
-+Sem/Group_Hum	        !!= * {{@CODE@}}: 
-+Sem/Hum		        !!= * {{@CODE@}}: 
-+Sem/ID			        !!= * {{@CODE@}}: 
-+Sem/Mal		        !!= * {{@CODE@}}: 
-+Sem/Mat		        !!= * {{@CODE@}}: 
-+Sem/Measr		        !!= * {{@CODE@}}: 
-+Sem/Money		        !!= * {{@CODE@}}: 
-+Sem/Obj		        !!= * {{@CODE@}}: 
-+Sem/Obj-el		        !!= * {{@CODE@}}: 
-+Sem/Obj-ling	        !!= * {{@CODE@}}: 
-+Sem/Org_Prod-audio     !!= * {{@CODE@}}: 
-+Sem/Org_Prod-vis       !!= * {{@CODE@}}: 
-+Sem/Plc		        !!= * {{@CODE@}}: 
-+Sem/Prod-vis	        !!= * {{@CODE@}}: 
-+Sem/Route		        !!= * {{@CODE@}}: 
-+Sem/Rule		        !!= * {{@CODE@}}: 
-+Sem/State-sick	        !!= * {{@CODE@}}: 
-+Sem/Substnc	        !!= * {{@CODE@}}: 
-+Sem/Time-clock	        !!= * {{@CODE@}}: 
-+Sem/Tool-it	        !!= * {{@CODE@}}: 
-+Sem/Txt		        !!= * {{@CODE@}}: 
-+Sem/Veh		        !!= * {{@CODE@}}: 
-+Sem/Year		        !!= * {{@CODE@}}: 
++Sem/Build		        !!= * `@CODE@`: 
++Sem/Build-room	        !!= * `@CODE@`: 
++Sem/Cat		        !!= * `@CODE@`: 
++Sem/Date		        !!= * `@CODE@`: 
++Sem/Domain		        !!= * `@CODE@`: 
++Sem/Dummytag	        !!= * `@CODE@`: 
++Sem/Event		        !!= * `@CODE@`: 
++Sem/Fem		        !!= * `@CODE@`: 
++Sem/Group_Hum	        !!= * `@CODE@`: 
++Sem/Hum		        !!= * `@CODE@`: 
++Sem/ID			        !!= * `@CODE@`: 
++Sem/Mal		        !!= * `@CODE@`: 
++Sem/Mat		        !!= * `@CODE@`: 
++Sem/Measr		        !!= * `@CODE@`: 
++Sem/Money		        !!= * `@CODE@`: 
++Sem/Obj		        !!= * `@CODE@`: 
++Sem/Obj-el		        !!= * `@CODE@`: 
++Sem/Obj-ling	        !!= * `@CODE@`: 
++Sem/Org_Prod-audio     !!= * `@CODE@`: 
++Sem/Org_Prod-vis       !!= * `@CODE@`: 
++Sem/Plc		        !!= * `@CODE@`: 
++Sem/Prod-vis	        !!= * `@CODE@`: 
++Sem/Route		        !!= * `@CODE@`: 
++Sem/Rule		        !!= * `@CODE@`: 
++Sem/State-sick	        !!= * `@CODE@`: 
++Sem/Substnc	        !!= * `@CODE@`: 
++Sem/Time-clock	        !!= * `@CODE@`: 
++Sem/Tool-it	        !!= * `@CODE@`: 
++Sem/Txt		        !!= * `@CODE@`: 
++Sem/Veh		        !!= * `@CODE@`: 
++Sem/Year		        !!= * `@CODE@`: 
 
-!! !Numerals
+!! ### Numerals
 !! In numeral analyses, there are multiple analyses.
 !! The numerals have semantic subcategories
-!! ([VISK § 770|http://scripta.kotus.fi/visk/sisallys.php?p=770]).
+!! ([VISK § 770](http://scripta.kotus.fi/visk/sisallys.php?p=770)).
 !! The classical ordinal  numbers  have been adjectivised in current
-!! descriptions ([VISK § 771|http://scripta.kotus.fi/visk/sisallys.php?p=771]),
+!! descriptions ([VISK § 771](http://scripta.kotus.fi/visk/sisallys.php?p=771)),
 !! the  ordinal interpretation is still spelled out in subcategories. The
 !! numbers are often  written with digits or other specific notations.
 !!
 !! Numeral class tags:
-+Card  !!= * {{@CODE@}}: Cardinal
-+Ord !!= * {{@CODE@}}: Ordinals
++Card  !!= * `@CODE@`: Cardinal
++Ord !!= * `@CODE@`: Ordinals
 
 !!€ kolme: kolme+Num+Card+Sg+Nom # three
 !!€ kolmas: kolmas+Num+Ord+Sg+Nom # third
 
-!! !Particles
+!! ### Particles
 !! The particles are subcategorised syntax-wise into conjunctions for all words,
 !! that govern subclauses
-!! ([VISK § 812|http://scripta.kotus.fi/visk/sisallys.php?p=812]). The
+!! ([VISK § 812](http://scripta.kotus.fi/visk/sisallys.php?p=812)). The
 !! conjunctions are further divided, whether the subclause is coordinant or
 !! subordinant to the governing clause and few other syntactic types
-!! ([VISK § 816|http://scripta.kotus.fi/visk/sisallys.php?p=816]). _N.B._ that
+!! ([VISK § 816](http://scripta.kotus.fi/visk/sisallys.php?p=816)). _N.B._ that
 !! the division to subordinating and coordinating conjucntions is motivated
 !! by other systems, including legacy systems, whereas the grammar presents
 !! also different  categorisations for conjunctions (including naming
 !! subordination adverbials).
 !!
 !! Conjunction syntax tags:
-+CC !!= * {{@CODE@}}: Coordinating
-+CS !!= * {{@CODE@}}: Adverbial
++CC !!= * `@CODE@`: Coordinating
++CS !!= * `@CODE@`: Adverbial
 
 !! The conjunction tags take place of part-of-speech tags for legacy reasons:
 !!€ ja: ja+CC
 !!€ vaikka: vaikka+CS
 
-!! !Adpositions
+!! ### Adpositions
 !! In adposition anlayses, the syntactic tendencies are shown in sub-analyses;
 !! whether they appear typically before or after their heads
-!! [VISK § 687|http://scripta.kotus.fi/visk/sisallys.php?p=687].
+!! [VISK § 687](http://scripta.kotus.fi/visk/sisallys.php?p=687).
 
 !! Adposition syntax tags:
-+Adp !!= * {{@CODE@}}: Adposition
-+Po !!= * {{@CODE@}}: Postposition
-+Pr !!= * {{@CODE@}}: Preposition
++Adp !!= * `@CODE@`: Adposition
++Po !!= * `@CODE@`: Postposition
++Pr !!= * `@CODE@`: Preposition
 
 !! Adpositions are tagged in POS position:
 !!€ läpi: läpi+Po
 
 !! Tags for sub-POS
 
-+Arab			        !!= * {{@CODE@}}: 
-+Attr			        !!= * {{@CODE@}}: 
-+Coll			        !!= * {{@CODE@}}: 
-+Rom			        !!= * {{@CODE@}}: 
++Arab			        !!= * `@CODE@`: 
++Attr			        !!= * `@CODE@`: 
++Coll			        !!= * `@CODE@`: 
++Rom			        !!= * `@CODE@`: 
 
 
-!! !Bound root morphs
+!! ### Bound root morphs
 !! The lexical items that appear as bound morphemes before head word are
 !! classified as prefixes ([VISK §
 !! 172|http://scripta.kotus.fi/visk/sisallys.php?p=172]). Prefixes are rare and
 !! mostly of foreign  origin. The singular forms of plurale tantums are also
 !! potential prefixes.
 
-+Pref !!= * {{@CODE@}}: Prefixes
++Pref !!= * `@CODE@`: Prefixes
 
 !! Suffixes are typically word forms or derivations that only appear as
 !! bound morphs. Other than that Finnish does not really have proper suffixes.
 !! This means that suffixed words are in effect compounds of where the last
 !! word just doesn't appear as free morph.
-+Suff !!= * {{@CODE@}}: Suffixes
++Suff !!= * `@CODE@`: Suffixes
 
-!! !Symbols
+!! ### Symbols
 !! Symbols are not part of linguistic data per se so we classify them according
 !! to the needs of end user applications
 
-+Punct !!= * {{@CODE@}}: any punctuation
-+Quote !!= * {{@CODE@}}: quote marks
++Punct !!= * `@CODE@`: any punctuation
++Quote !!= * `@CODE@`: quote marks
 
 !! The analyses for symbols are like POSes:
 !!€ .: .+Punct # .
 
-!! !Nominal analyses
+!! ### Nominal analyses
 !!
 !! The analyses of nominals show the inflection in number. Nominals inflect in
 !! number, to mark plurality of the word. The number for nouns is either
 !! singular or plural.
 !!
-!! Further reading: [VISK § 79|http://scripta.kotus.fi/visk/sisallys.php?p=79]
+!! Further reading: [VISK § 79](http://scripta.kotus.fi/visk/sisallys.php?p=79)
 !!
 !! Number tags:
-+Sg !!= * {{@CODE@}}: Singular
-+Pl !!= * {{@CODE@}}: Plural
++Sg !!= * `@CODE@`: Singular
++Pl !!= * `@CODE@`: Plural
 
 !! Number tags are next to POSes in nominal analyses, and in order of morphs:
 !!€ padassa: pata+N+Sg+Ine # pot
@@ -265,24 +265,24 @@ Multichar_Symbols
 
 !! The analyses of nominals have case inflection marked.
 !! The nominals have case inflection
-!! ([VISK § 81|http://scripta.kotus.fi/visk/sisallys.php?p=81])
+!! ([VISK § 81](http://scripta.kotus.fi/visk/sisallys.php?p=81))
 !! to mark syntactic roles
 !! (nominative, partitive, accusative-genitive) and semantics
 !! (others, partially even syntactic cases).
-+Nom !!= * {{@CODE@}}: (Mostly) Syntactic cases: Nominative
-+Par !!= * {{@CODE@}}: Partitive
-+Gen !!= * {{@CODE@}}: Genitive
-+Ine !!= * {{@CODE@}}: Inner Locative cases: Inessive
-+Ela !!= * {{@CODE@}}: Elative
-+Ill !!= * {{@CODE@}}: Illative
-+Ade !!= * {{@CODE@}}: Outer locative cases: Adessive
-+Abl !!= * {{@CODE@}}: Ablative
-+All !!= * {{@CODE@}}: Allative
-+Ess !!= * {{@CODE@}}: Others, semantic, marginal: Essive
-+Ins !!= * {{@CODE@}}: Instructive
-+Abe !!= * {{@CODE@}}: Abessive
-+Tra !!= * {{@CODE@}}: Translative
-+Com !!= * {{@CODE@}}: Comitative
++Nom !!= * `@CODE@`: (Mostly) Syntactic cases: Nominative
++Par !!= * `@CODE@`: Partitive
++Gen !!= * `@CODE@`: Genitive
++Ine !!= * `@CODE@`: Inner Locative cases: Inessive
++Ela !!= * `@CODE@`: Elative
++Ill !!= * `@CODE@`: Illative
++Ade !!= * `@CODE@`: Outer locative cases: Adessive
++Abl !!= * `@CODE@`: Ablative
++All !!= * `@CODE@`: Allative
++Ess !!= * `@CODE@`: Others, semantic, marginal: Essive
++Ins !!= * `@CODE@`: Instructive
++Abe !!= * `@CODE@`: Abessive
++Tra !!= * `@CODE@`: Translative
++Com !!= * `@CODE@`: Comitative
 
 !! The case is next to number and last obligatory analysis in nominals:
 !!€ taloa: talo+N+Sg+Par
@@ -300,19 +300,19 @@ Multichar_Symbols
 !!€ taloine: talo+N+Com
 
 !! The analyses of a infinitive short form have lative ending; this is largely
-!! historical ([VISK § 120|http://scripta.kotus.fi/visk/sisallys.php?p=120]).
+!! historical ([VISK § 120](http://scripta.kotus.fi/visk/sisallys.php?p=120)).
 !! Some adpositions might have same analysis in diachronic analyses.
 
-+Lat !!= * {{@CODE@}}: Lative case
++Lat !!= * `@CODE@`: Lative case
 
 !! The analyses of certain nominals give explicit analysis for accusative case.
 !! The accusative case has distinctive marker in few pronouns and these are only
 !! cases that are analysed as accusatives.
-!! ([VISK § 81|http://scripta.kotus.fi/visk/sisallys.php?p=81]).
+!! ([VISK § 81](http://scripta.kotus.fi/visk/sisallys.php?p=81)).
 !! Other accusatives have the same case marking as genitive form, and only use
 !! that analysis in synchronic analyses.
 
-+Acc !!= * {{@CODE@}}: Explicit accusative analysis
++Acc !!= * `@CODE@`: Explicit accusative analysis
 
 !!€ hänet: hän+Pron+Pers+Sg+Acc
 
@@ -322,32 +322,32 @@ Multichar_Symbols
 !! Further reading: [VISK §
 !! 371|http://scripta.kotus.fi/visk/sisallys.php?p=371] – 385
 
-+Prl !!= * {{@CODE@}}: Adverbial cases: Prolative
-+Distr !!= * {{@CODE@}}: Distributive
-+Tempr !!= * {{@CODE@}}: Temporal
++Prl !!= * `@CODE@`: Adverbial cases: Prolative
++Distr !!= * `@CODE@`: Distributive
++Tempr !!= * `@CODE@`: Temporal
 
 
-!! !Possessives
+!! ### Possessives
 !! The analyses of nominals include possessive if present.
 !! Posessive ending indicates ownership. The possessive can take six possible
 !! values from singular and plural, first, second and third person references,
 !! where third person form is always ambiguous over plurality.
 !!
-!! Further reading: [VISK § 95|http://scripta.kotus.fi/visk/sisallys.php?p=95]
-+PxSg1 !!= * {{@CODE@}}: Possessives: First singular (mine)
-+PxSg2 !!= * {{@CODE@}}: Second singular (yours)
-+PxSg3 !!= * {{@CODE@}}: Third singular (his)
-+PxPl1 !!= * {{@CODE@}}: First plural (ours)
-+PxPl2 !!= * {{@CODE@}}: Second plural (yours)
-+PxPl3 !!= * {{@CODE@}}: Third plural (theirs)
-+Px3 !!= * {{@CODE@}}: Third ambiguous (his/theirs)
+!! Further reading: [VISK § 95](http://scripta.kotus.fi/visk/sisallys.php?p=95)
++PxSg1 !!= * `@CODE@`: Possessives: First singular (mine)
++PxSg2 !!= * `@CODE@`: Second singular (yours)
++PxSg3 !!= * `@CODE@`: Third singular (his)
++PxPl1 !!= * `@CODE@`: First plural (ours)
++PxPl2 !!= * `@CODE@`: Second plural (yours)
++PxPl3 !!= * `@CODE@`: Third plural (theirs)
++Px3 !!= * `@CODE@`: Third ambiguous (his/theirs)
 
-+Sg1 !!= * {{@CODE@}}: Verbs: First singular (I)
-+Sg2 !!= * {{@CODE@}}: Second singular (your
-+Sg3 !!= * {{@CODE@}}: Third singular (he)
-+Pl1 !!= * {{@CODE@}}: First plural (we)
-+Pl2 !!= * {{@CODE@}}: Second plural (you)
-+Pl3 !!= * {{@CODE@}}: Third plural (thy)
++Sg1 !!= * `@CODE@`: Verbs: First singular (I)
++Sg2 !!= * `@CODE@`: Second singular (your
++Sg3 !!= * `@CODE@`: Third singular (he)
++Pl1 !!= * `@CODE@`: First plural (we)
++Pl2 !!= * `@CODE@`: Second plural (you)
++Pl3 !!= * `@CODE@`: Third plural (thy)
 
 !!€ taloni: talo+N+Sg+Nom+PxSg1
 !!€ talosi: talo+N+Sg+Nom+PxSg2
@@ -355,24 +355,24 @@ Multichar_Symbols
 !!€ talomme: talo+N+Sg+Nom+PxPl1
 !!€ talonne: talo+N+Sg+Nom+PxPl2
 
-!! !Compound forms
+!! ### Compound forms
 !! In compound analyses, the derived compound form that is not a free morph
 !! is marked with special analysis.  Some words have forms only appearing in
 !! compounds.
 !!
-!! Further reading: [VISK § 406|http://scripta.kotus.fi/visk/sisallys.php?p=406]
+!! Further reading: [VISK § 406](http://scripta.kotus.fi/visk/sisallys.php?p=406)
 +Der/s !!= Compound form
 
 !!€ naisien: nainen+N+Der/s#ien+N+Sg+Nom # female gum
 
-!! !Finite verbs
+!! ### Finite verbs
 !! All verb analyses contain voice marking. For finite verb forms active voice
 !! is tied to personal forms and passive voice to non-personal verb endings.
 !! The voice is also marked in the infinite verb forms.
 !!
-!! Further reading: [VISK § 110|http://scripta.kotus.fi/visk/sisallys.php?p=110]
-+Act !!= * {{@CODE@}}: Active voice
-+Pss !!= * {{@CODE@}}: Passive voice
+!! Further reading: [VISK § 110](http://scripta.kotus.fi/visk/sisallys.php?p=110)
++Act !!= * `@CODE@`: Active voice
++Pss !!= * `@CODE@`: Passive voice
 
 !! It is the first analysis of verb strings:
 !!€ kudot: kutoa+V+Act+Ind+Prs+Sg2
@@ -385,11 +385,11 @@ Multichar_Symbols
 !! tenses, while other are created syntactically and not marked in morphological
 !! analyses.
 !!
-!! Further reading: [VISK § 111|http://scripta.kotus.fi/visk/sisallys.php?p=111]
+!! Further reading: [VISK § 111](http://scripta.kotus.fi/visk/sisallys.php?p=111)
 !! – 112
 !!
-+Prs !!= * {{@CODE@}}: Non-past (present)
-+Prt !!= * {{@CODE@}}: Past (preterite)
++Prs !!= * `@CODE@`: Non-past (present)
++Prt !!= * `@CODE@`: Past (preterite)
 
 !! The tense is marked in indicative forms after mood:
 !!€ kudon: kutoa+V+Act+Ind+Prs+Sg1
@@ -399,14 +399,14 @@ Multichar_Symbols
 !! readings and few archaic and marginal. The mood is marked in analyses for
 !! all finite forms, even the unmarked indicative.
 !!
-!! Further reading: [VISK § 115|http://scripta.kotus.fi/visk/sisallys.php?p=115]
+!! Further reading: [VISK § 115](http://scripta.kotus.fi/visk/sisallys.php?p=115)
 !! – 118
-+Ind !!= * {{@CODE@}}: Common moods: Indicative
-+Cond !!= * {{@CODE@}}: Conditional
-+Pot !!= * {{@CODE@}}: Potential
-+Imprt !!= * {{@CODE@}}: Imperative
-+Opt !!= * {{@CODE@}}: Archaic moods: Optative
-+Eventv !!= * {{@CODE@}}: Eventive
++Ind !!= * `@CODE@`: Common moods: Indicative
++Cond !!= * `@CODE@`: Conditional
++Pot !!= * `@CODE@`: Potential
++Imprt !!= * `@CODE@`: Imperative
++Opt !!= * `@CODE@`: Archaic moods: Optative
++Eventv !!= * `@CODE@`: Eventive
 
 !! The mood is after voice in the analysis string and in morph order:
 !!€ kutonen: kutoa+V+Act+Pot+Sg1
@@ -417,14 +417,14 @@ Multichar_Symbols
 !! forms, and one specifically for passive. The passive personal form is encoded
 !! as fourth person passive, which had been the common practice in past systems.
 !!
-!! Further reading: [VISK § 106|http://scripta.kotus.fi/visk/sisallys.php?p=106]
+!! Further reading: [VISK § 106](http://scripta.kotus.fi/visk/sisallys.php?p=106)
 !! – 107
-+Sg1 !!= * {{@CODE@}}: First singular
-+Sg2 !!= * {{@CODE@}}: Second singular
-+Sg3 !!= * {{@CODE@}}: Third singular
-+Pl1 !!= * {{@CODE@}}: First plural
-+Pl2 !!= * {{@CODE@}}: Second plural
-+Pl3 !!= * {{@CODE@}}: Third plural
++Sg1 !!= * `@CODE@`: First singular
++Sg2 !!= * `@CODE@`: Second singular
++Sg3 !!= * `@CODE@`: Third singular
++Pl1 !!= * `@CODE@`: First plural
++Pl2 !!= * `@CODE@`: Second plural
++Pl3 !!= * `@CODE@`: Third plural
 +Pe4 !!FIXME
 
 !! The person is the last required analysis for verbs, after the mood:
@@ -435,20 +435,20 @@ Multichar_Symbols
 !!€ kudotte: kutoa+V+Act+Ind+Prs+Pl2
 !!€ kutovat: kutoa+V+Act+Ind+Prs+Pl3
 
-!! !Negation and verbs
+!! ### Negation and verbs
 !! The analyses of verb for the forms that require negation verb have a special
 !! analysis for it.
-+ConNeg !!= * {{@CODE@}}: Connegative form
++ConNeg !!= * `@CODE@`: Connegative form
 
 !!€ kudo: kutoa+V+Ind+Prs+ConNeg
 
 !! The suitable negation verbs have sub-analysis that can be matched to negated
 !! forms on syntactic level.
-+Neg !!= * {{@CODE@}}: Negation verb
++Neg !!= * `@CODE@`: Negation verb
 
 !!€ ei: ei+V+Neg+Act+Sg3
 
-!! !Infinite verb forms
+!! ### Infinite verb forms
 !! Infinitive verb forms have infinitive or nominal derivation analyses.
 !! In traditional grammars the infinitive forms were called I, II, III, IV and V
 !! infinitive, the modern grammar replaces the first three with A, E and MA
@@ -457,15 +457,15 @@ Multichar_Symbols
 !! infinitive is also assumed to be mainly derivational, but included here for
 !! reference.
 !!
-!! Further reading: [VISK § 120|http://scripta.kotus.fi/visk/sisallys.php?p=120]
+!! Further reading: [VISK § 120](http://scripta.kotus.fi/visk/sisallys.php?p=120)
 !! – 121
 !!
 !! The infinitives have limited nominal inflection.
-+InfA !!= * {{@CODE@}}: A infinitive (first)
-+InfE !!= * {{@CODE@}}: E infinitive (second)
-+InfMa !!= * {{@CODE@}}: MA infinitive (third)
-+Der/minen !!= * {{@CODE@}}: minen derivation (fourth)
-+Der/maisilla !!= * {{@CODE@}}: maisilla derivation (fifth)
++InfA !!= * `@CODE@`: A infinitive (first)
++InfE !!= * `@CODE@`: E infinitive (second)
++InfMa !!= * `@CODE@`: MA infinitive (third)
++Der/minen !!= * `@CODE@`: minen derivation (fourth)
++Der/maisilla !!= * `@CODE@`: maisilla derivation (fifth)
 
 !! Infinitive analysis comes after voice, followed by nominal analyses:
 !!€ kutoa: kutoa+V+Act+InfA+Sg+Lat
@@ -474,7 +474,7 @@ Multichar_Symbols
 !!€ kutominen: kutoa+V+Der/minen+Sg+Nom
 !!€ kutomaisillani: kutoa+V+Act+Der/maisilla+PxSg1
 
-!! !Participles
+!! ### Participles
 !! Participial verb forms have participle readings. There are 4 participle
 !! forms. Like infinitives, participles in traditional grammars were named
 !! I and II where NUT and VA are used in modern grammars.  The agent and
@@ -485,11 +485,11 @@ Multichar_Symbols
 !! respectively, drawing parallels from other languages. The modern grammar
 !! avoids them as misleading but this description uses them
 !!
-!! Further reading: [VISK § 122|http://scripta.kotus.fi/visk/sisallys.php?p=122]
-+PrfPrc !!= * {{@CODE@}}: NUT participle (first, perfect)
-+PrsPrc !!= * {{@CODE@}}: VA participle (second, present)
-+NegPrc !!= * {{@CODE@}}: Negation participle
-+AgPrc !!= * {{@CODE@}}: Agent partiicple
+!! Further reading: [VISK § 122](http://scripta.kotus.fi/visk/sisallys.php?p=122)
++PrfPrc !!= * `@CODE@`: NUT participle (first, perfect)
++PrsPrc !!= * `@CODE@`: VA participle (second, present)
++NegPrc !!= * `@CODE@`: Negation participle
++AgPrc !!= * `@CODE@`: Agent partiicple
 
 !! Participle analyses are right after voice, followed by adjectival analyses:
 !!€ kutonut: kutoa+V+Act+PrfPrc+Sg+Nom
@@ -501,20 +501,20 @@ Multichar_Symbols
 !! participles, and they share part of the same forms but no semantics and very
 !! little of syntax.
 
-!! !Comparation
+!! ### Comparation
 !! Adjective and some adverbial analyses are marked for comparation. The
 !! non-marked forms are comparative and superlative. For adjectives, comparative
 !! suffixes precede the nominal inflection.
 !!
-!! c.f. [VISK § 300|http://scripta.kotus.fi/visk/sisallys.php?p=300]
-+Comp !!= * {{@CODE@}}: Comparative
-+Superl !!= * {{@CODE@}}: Superlative (was +Sup, now standardised)
+!! c.f. [VISK § 300](http://scripta.kotus.fi/visk/sisallys.php?p=300)
++Comp !!= * `@CODE@`: Comparative
++Superl !!= * `@CODE@`: Superlative (was +Sup, now standardised)
 
 !! The comparison analysis occupies derivation spot, after POS:
 !!€ nopeampi: nopea+A+Comp+Sg+Nom
 !!€ nopein: nopea+A+Sup+Sg+Nom
 
-!! !Enclitic focus particles
+!! ### Enclitic focus particles
 !! All word forms can have clitics which are analysed by their orthography.
 !! Clitics are suffixes which can attach almost anywhere in the ends of words,
 !! both verb forms and nominals. They also attach on end of other clitics,
@@ -523,66 +523,66 @@ Multichar_Symbols
 !! verb forms and combined to other clitics and -kA only appears with few
 !! adverbs and negation verb.
 !!
-!! [VISK § 126|http://scripta.kotus.fi/visk/sisallys.php?p=126] – 131
-+Foc/han !!= * {{@CODE@}}: -hAn; affirmative etc.
-+Foc/kaan !!= * {{@CODE@}}: -kAAn; "neither"
-+Foc/kin !!= * {{@CODE@}}: -kin; "also"
-+Foc/pa !!= * {{@CODE@}}: -pA; "indeed"
-+Foc/s !!= * {{@CODE@}}: -s; polite?
-+Foc/ka !!= * {{@CODE@}}: -kA; "nor"
-+Qst !!= * {{@CODE@}}: -kO: Question focus
+!! [VISK § 126](http://scripta.kotus.fi/visk/sisallys.php?p=126) – 131
++Foc/han !!= * `@CODE@`: -hAn; affirmative etc.
++Foc/kaan !!= * `@CODE@`: -kAAn; "neither"
++Foc/kin !!= * `@CODE@`: -kin; "also"
++Foc/pa !!= * `@CODE@`: -pA; "indeed"
++Foc/s !!= * `@CODE@`: -s; polite?
++Foc/ka !!= * `@CODE@`: -kA; "nor"
++Qst !!= * `@CODE@`: -kO: Question focus
 
 
-!! !Derivation
+!! ### Derivation
 !! The derivation is not a central feature of this morphology, it is mainly
 !! used to collect new roots for dictionaries. This is roughly in order of
 !! perceived productivity already:
-+Der/sti !!= * {{@CODE@}}: Common derivations: A→Adv (in A manner)
-+Der/ja !!= * {{@CODE@}}: V→N (doer of V)
-+Der/inen !!= * {{@CODE@}}: N→A (containing N)
-+Der/lainen !!= * {{@CODE@}}: N→A (style of N)
-+Der/tar !!= * {{@CODE@}}: N→N (feminine N)
-+Der/llinen !!= * {{@CODE@}}: N→N (consisting of N)
-+Der/ton !!= * {{@CODE@}}: N→A (without N)
-+Der/tse !!= * {{@CODE@}}: N→Adp (via N)
-+Der/vs !!= * {{@CODE@}}: A→N (quality of A)
-+Der/u !!= * {{@CODE@}}: V→N (act of V)
-+Der/ttain !!= * {{@CODE@}}: N→Adv (by amounts of N)
-+Der/ttaa !!= * {{@CODE@}}: V→V (make someone do V)
-+Der/tattaa !!= * {{@CODE@}}: V→V (make someone do V; "first indirection")
-+Der/tatuttaa !!= * {{@CODE@}}: V→V (make someone do V; "second indirection")
-+Der/uus !!= * {{@CODE@}}: A→N (A-ness)
-+Der/nti !!= * {{@CODE@}}: V→N (regular derivation from all but 2 -da/-dä V)
++Der/sti !!= * `@CODE@`: Common derivations: A→Adv (in A manner)
++Der/ja !!= * `@CODE@`: V→N (doer of V)
++Der/inen !!= * `@CODE@`: N→A (containing N)
++Der/lainen !!= * `@CODE@`: N→A (style of N)
++Der/tar !!= * `@CODE@`: N→N (feminine N)
++Der/llinen !!= * `@CODE@`: N→N (consisting of N)
++Der/ton !!= * `@CODE@`: N→A (without N)
++Der/tse !!= * `@CODE@`: N→Adp (via N)
++Der/vs !!= * `@CODE@`: A→N (quality of A)
++Der/u !!= * `@CODE@`: V→N (act of V)
++Der/ttain !!= * `@CODE@`: N→Adv (by amounts of N)
++Der/ttaa !!= * `@CODE@`: V→V (make someone do V)
++Der/tattaa !!= * `@CODE@`: V→V (make someone do V; "first indirection")
++Der/tatuttaa !!= * `@CODE@`: V→V (make someone do V; "second indirection")
++Der/uus !!= * `@CODE@`: A→N (A-ness)
++Der/nti !!= * `@CODE@`: V→N (regular derivation from all but 2 -da/-dä V)
 
-!! !Usage
+!! ### Usage
 !! The analyses of some words and word-forms indicate limitedness of usage.
 !! This includes common mispellings, archaic words and forms
 !! and otherwise rare words and forms. Especially, the forms that are in
 !! parentheses in lexical sources and word-forms that had the usage annotation
 !! in there have been carried over.
-+Err/Orth !!= * {{@CODE@}}: Sub-standard usage
-+Err/Hyph		        !!= * {{@CODE@}}: 
-+Err/Lex		        !!= * {{@CODE@}}: 
-+Err/SpaceCmp	        !!= * {{@CODE@}}: 
++Err/Orth !!= * `@CODE@`: Sub-standard usage
++Err/Hyph		        !!= * `@CODE@`: 
++Err/Lex		        !!= * `@CODE@`: 
++Err/SpaceCmp	        !!= * `@CODE@`: 
 
-+Use/Marg !!= * {{@CODE@}}: Marginal
-+Use/Rare  !!= * {{@CODE@}}: Rare
-+Use/NG   !!= * {{@CODE@}}: Do not generate
-+Use/Hyphen !!= * {{@CODE@}}: With hyphens
-+Use/NoHyphens !!= * {{@CODE@}}: With hyphens
++Use/Marg !!= * `@CODE@`: Marginal
++Use/Rare  !!= * `@CODE@`: Rare
++Use/NG   !!= * `@CODE@`: Do not generate
++Use/Hyphen !!= * `@CODE@`: With hyphens
++Use/NoHyphens !!= * `@CODE@`: With hyphens
 
- +Use/PMatch       !!≈ * __@CODE@__ means that the following is only used in the analyser feeding the disambiguator. This is missing.
+ +Use/PMatch       !!≈ * **@CODE@** means that the following is only used in the analyser feeding the disambiguator. This is missing.
 
-+Use/-PMatch	        !!= * {{@CODE@}}: 
++Use/-PMatch	        !!= * `@CODE@`: 
 
-+Use/-Spell		        !!= * {{@CODE@}}: 
-+Use/Arch		        !!= * {{@CODE@}}: 
-+Use/SpellNoSugg        !!= * {{@CODE@}}: 
++Use/-Spell		        !!= * `@CODE@`: 
++Use/Arch		        !!= * `@CODE@`: 
++Use/SpellNoSugg        !!= * `@CODE@`: 
 
 !! Usage tags are pushed wherever appropriate:
 !!€ nallein: nalle+N+Pl+Gen+Use/Rare
 
-!! ! Homonym tags
+!! ###  Homonym tags
 +Hom1
 +Hom2
 +Hom3
@@ -593,11 +593,11 @@ Multichar_Symbols
 +Hom8
 +Hom9
 
-+v1				        !!= * {{@CODE@}}: 
-+v2				        !!= * {{@CODE@}}: 
++v1				        !!= * `@CODE@`: 
++v2				        !!= * `@CODE@`: 
 
 
-!! !Dialects
+!! ### Dialects
 !! The informal language use contains different Finnish than the literary
 !! standard, this is marked as standard dialect (yleispuhekieli):
 !! common features include
@@ -615,43 +615,43 @@ Multichar_Symbols
 !! cautious when adding these though; it's not the main target of this
 !! mrophology.
 
-+Dial !!= * {{@CODE@}}: any unclassified dialect
-+Dial/Standard !!= * {{@CODE@}}: standard spoken Finnish
-+Dial/East !!= * {{@CODE@}}: Eastern dialects
-+Dial/West !!= * {{@CODE@}}: Western dialects
-+Dial/Southwest !!= * {{@CODE@}}: South-western dialects
-+Dial/Häme !!= * {{@CODE@}}: Tavastian dialects
-+Dial/Eteläpohjalaiset !!= * {{@CODE@}}: South Osthrobotnian dialects
-+Dial/Keskipohjalaiset !!= * {{@CODE@}}: Middle Osthrobotnian dialects
-+Dial/Peräpohjalaiset !!= * {{@CODE@}}: North Osthrobotnian dialects
-+Dial/North !!= * {{@CODE@}}: North Finnish dialects
-+Dial/Savo !!= * {{@CODE@}}: Savonian dialects
-+Dial/Southeast !!= * {{@CODE@}}: South-eastern dialects
++Dial !!= * `@CODE@`: any unclassified dialect
++Dial/Standard !!= * `@CODE@`: standard spoken Finnish
++Dial/East !!= * `@CODE@`: Eastern dialects
++Dial/West !!= * `@CODE@`: Western dialects
++Dial/Southwest !!= * `@CODE@`: South-western dialects
++Dial/Häme !!= * `@CODE@`: Tavastian dialects
++Dial/Eteläpohjalaiset !!= * `@CODE@`: South Osthrobotnian dialects
++Dial/Keskipohjalaiset !!= * `@CODE@`: Middle Osthrobotnian dialects
++Dial/Peräpohjalaiset !!= * `@CODE@`: North Osthrobotnian dialects
++Dial/North !!= * `@CODE@`: North Finnish dialects
++Dial/Savo !!= * `@CODE@`: Savonian dialects
++Dial/Southeast !!= * `@CODE@`: South-eastern dialects
 
 
-!! !Tags for language of unassimilated name
-+OLang/ENG		        !!= * {{@CODE@}}: 
-+OLang/eng		        !!= * {{@CODE@}}: is a typo, FIX
-+OLang/FIN		        !!= * {{@CODE@}}: 
-+OLang/NNO		        !!= * {{@CODE@}}: 
-+OLang/NOB		        !!= * {{@CODE@}}: 
-+OLang/RUS		        !!= * {{@CODE@}}: 
-+OLang/SMA		        !!= * {{@CODE@}}: 
-+OLang/SME		        !!= * {{@CODE@}}: 
-+OLang/SWE		        !!= * {{@CODE@}}: 
-+OLang/UND		        !!= * {{@CODE@}}: 
+!! ### Tags for language of unassimilated name
++OLang/ENG		        !!= * `@CODE@`: 
++OLang/eng		        !!= * `@CODE@`: is a typo, FIX
++OLang/FIN		        !!= * `@CODE@`: 
++OLang/NNO		        !!= * `@CODE@`: 
++OLang/NOB		        !!= * `@CODE@`: 
++OLang/RUS		        !!= * `@CODE@`: 
++OLang/SMA		        !!= * `@CODE@`: 
++OLang/SME		        !!= * `@CODE@`: 
++OLang/SWE		        !!= * `@CODE@`: 
++OLang/UND		        !!= * `@CODE@`: 
 
-!! !Others
+!! ### Others
 !! The boundaries of compounds that are not lexicalised in the dictionary will
 !! have compound analyses, the compounds may also have usage tags. The
 !! compounding analyses concern also syntagmatic melting mishmash.
 +Use/Circ    !!= Compound boundary
 
- +Cmp          !!≈ * __@CODE@__ - Dynamic compound. This tag should always be part
+ +Cmp          !!≈ * **@CODE@** - Dynamic compound. This tag should always be part
                !!                 of a dynamic compound. It is important for
                !!                 Apertium, and useful in other cases as well.
-+Cmp/Hyph		        !!= * {{@CODE@}}: 
-+CmpNP/None		        !!= * {{@CODE@}}: 
++Cmp/Hyph		        !!= * `@CODE@`: 
++CmpNP/None		        !!= * `@CODE@`: 
 
 !! The word and morpheme boundaries are used to limit the effective range of
 !! far-reaching rules, such as vowel harmony. The boundaries are marked by
@@ -659,10 +659,10 @@ Multichar_Symbols
 !! The lexical item boundaries by ##, the inflectional morpheme boundaries
 !! by >, the derivational morpheme boundaries by », and some etymological and
 !! soft boundaries by _.
-## !!= * {{@CODE@}}: Lexical boundary
-!! * {{#}} word boundary
-!! * {{>}} inflectional morph boundary
-!! * {{»}} derivational morph boundary
+## !!= * `@CODE@`: Lexical boundary
+!! * `#` word boundary
+!! * `>` inflectional morph boundary
+!! * `»` derivational morph boundary
 !! * _ weak boundary
 
  »7     ! »
@@ -676,38 +676,38 @@ Multichar_Symbols
 %{MB%}
 %>
 
-!! !!Flag diacritics
+!! ## Flag diacritics
 !! We have manually optimised the structure of our lexicon using following
 !! flag diacritics to restrict morhpological combinatorics - only allow compounds
 !! with verbs if the verb is further derived into a noun again:
- @P.NeedNoun.ON@    !!≈ | @CODE@ | (Dis)allow compounds with verbs unless nominalised
- @D.NeedNoun.ON@    !!≈ | @CODE@ | (Dis)allow compounds with verbs unless nominalised
- @C.NeedNoun@       !!≈ | @CODE@ | (Dis)allow compounds with verbs unless nominalised
+ @P.NeedNoun.ON@    !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
+ @D.NeedNoun.ON@    !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
+ @C.NeedNoun@       !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
  
- @C.ErrOrth@		!!≈ | @CODE@
- @D.ErrOrth.ON@		!!≈ | @CODE@
- @P.ErrOrth.ON@		!!≈ | @CODE@
+ @C.ErrOrth@		!!≈ |  @CODE@
+ @D.ErrOrth.ON@		!!≈ |  @CODE@
+ @P.ErrOrth.ON@		!!≈ |  @CODE@
 
 !! 
 !! For languages that allow compounding, the following flag diacritics are needed
 !! to control position-based compounding restrictions for nominals. Their use is
 !! handled automatically if combined with +CmpN/xxx tags. If not used, they will
 !! do no harm.
- @P.CmpFrst.FALSE@ !!≈ | @CODE@ | Require that words tagged as such only appear first
- @D.CmpPref.TRUE@  !!≈ | @CODE@ | Block such words from entering ENDLEX
- @P.CmpPref.FALSE@ !!≈ | @CODE@ | Block these words from making further compounds
- @D.CmpLast.TRUE@  !!≈ | @CODE@ | Block such words from entering R
- @D.CmpNone.TRUE@  !!≈ | @CODE@ | Combines with the next tag to prohibit compounding
- @U.CmpNone.FALSE@ !!≈ | @CODE@ | Combines with the prev tag to prohibit compounding
- @P.CmpOnly.TRUE@  !!≈ | @CODE@ | Sets a flag to indicate that the word has passed R
- @D.CmpOnly.FALSE@ !!≈ | @CODE@ | Disallow words coming directly from root.
+ @P.CmpFrst.FALSE@ !!≈ |  @CODE@ | Require that words tagged as such only appear first
+ @D.CmpPref.TRUE@  !!≈ |  @CODE@ | Block such words from entering ENDLEX
+ @P.CmpPref.FALSE@ !!≈ |  @CODE@ | Block these words from making further compounds
+ @D.CmpLast.TRUE@  !!≈ |  @CODE@ | Block such words from entering R
+ @D.CmpNone.TRUE@  !!≈ |  @CODE@ | Combines with the next tag to prohibit compounding
+ @U.CmpNone.FALSE@ !!≈ |  @CODE@ | Combines with the prev tag to prohibit compounding
+ @P.CmpOnly.TRUE@  !!≈ |  @CODE@ | Sets a flag to indicate that the word has passed R
+ @D.CmpOnly.FALSE@ !!≈ |  @CODE@ | Disallow words coming directly from root.
 !! 
 !! Use the following flag diacritics to control downcasing of derived proper
 !! nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
 !! these flags. There exists a ready-made regex that will do the actual down-casing
 !! given the proper use of these flags.
- @U.Cap.Obl@        !!≈ | @CODE@ | Allowing downcasing of derived names: deatnulasj.
- @U.Cap.Opt@        !!≈ | @CODE@ | Allowing downcasing of derived names: deatnulasj.
+ @U.Cap.Obl@        !!≈ |  @CODE@ | Allowing downcasing of derived names: deatnulasj.
+ @U.Cap.Opt@        !!≈ |  @CODE@ | Allowing downcasing of derived names: deatnulasj.
 
 % 
 
@@ -715,7 +715,7 @@ Multichar_Symbols
 ! This lexicon must not be used elsewhere; it contains only the markers for
 ! absolute start of the transducer.
 LEXICON Root
-!! !! The start of the dictionary {{@LEXNAME@}}
+!! The start of the dictionary `@LEXNAME@`
 !! The Finnish morphological description starts from any of the parts of speech
 !! dictionaries, prefix or hyphenated suffix
 !!€gt-norm: Parts-of-speech

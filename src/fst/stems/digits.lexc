@@ -1,4 +1,4 @@
-!! !!!Digits and such expressions
+!! # Digits and such expressions
 !! Digit-strings are used in place of numerals. They inflect with colon, like
 !! acronyms, and compound with hyphen only.
 
@@ -47,7 +47,7 @@ LEXICON ARABIC_pirinen
 
 < [1|2|3|4|5|6|7|8|9|%0] >   ARABICLOOP_pirinen ;
 
-LEXICON ARABICLOOP_pirinen !!= __@CODE@__ essentially allows any number-sign combination, but is like the other lgs
+LEXICON ARABICLOOP_pirinen !!= **@CODE@** essentially allows any number-sign combination, but is like the other lgs
 +Use/Circ: DIGITS_ONWARDS ;
 +Use/Circ: ARABIC ;
 %-+Use/Circ:%- ARABIC ;             ! 1-2    multipart numbers continuing as numbers
@@ -87,7 +87,7 @@ LEXICON ARABICLOOP_pirinen !!= __@CODE@__ essentially allows any number-sign com
 +Num: RHyph ; ! Adding the hyphen for 3-ulotteinen
 
 
-LEXICON DIGITS_ONWARDS !! __@CODE@__ is for entries not looping back 
+LEXICON DIGITS_ONWARDS !! **@CODE@** is for entries not looping back 
 %0+Num:%0  DIGITS_NOLLA    ;
 1+Num+Card:1   DIGITS_YKSI  ;
 1+Num+Ord:1   DIGITS_ENSIMMÄINEN  ;
@@ -347,12 +347,12 @@ LEXICON DIGITS_DECIMAL_LOOP_FINAL_SUB
 8+Num+Err/Orth:8   DIGITS_KAHDEKSAN ;
 9+Num+Err/Orth:9   DIGITS_YHDEKSÄN  ;
 
-!! !!!Roman numerals with inflection
+!! # Roman numerals with inflection
 !! Roman numerals are composed the symbols M, D, C, L, X, V, I in ascending
 !! scale and some combinations, they denote ordinal numbers and inflect like
 !! ones.
 
-!! !!Main lexicon for roman digits
+!! ## Main lexicon for roman digits
 !! This lexicon divides into four groups
 LEXICON DIGITS_ROMANS
 !!€gt-norm: roman numeral
@@ -364,8 +364,8 @@ LEXICON DIGITS_ROMANS
 0    DIGITS_ROMANS_TENS      ;
 0    DIGITS_ROMANS_ONES      ;
 
-!! !!Roman numerals according to digital class, one by one
-!! !Roman thousands
+!! ## Roman numerals according to digital class, one by one
+!! ### Roman thousands
 LEXICON DIGITS_ROMANS_THOUSANDS
 !! Thousands can be followed by any of other parts
 !!€gt-norm: roman numeral thousand
@@ -389,7 +389,7 @@ MM+Num+Ord:MM      DIGITS_ROMANS_TOINEN  ;
 M+Num+Ord:M       DIGITS_ROMANS_TOINEN  ;
 
 
-!! !Roman hundreds
+!! ### Roman hundreds
 LEXICON DIGITS_ROMANS_HUNDREDS
 !! Hundreds can be followed by anything but thousands:
 !!€gt-norm: roman numeral hundred
@@ -423,7 +423,7 @@ CCC+Num+Ord:CCC     DIGITS_ROMANS_TOINEN  ;
 CC+Num+Ord:CC      DIGITS_ROMANS_TOINEN  ;
 C+Num+Ord:C       DIGITS_ROMANS_TOINEN  ;
 
-!! !Roman tens
+!! ### Roman tens
 LEXICON DIGITS_ROMANS_TENS
 !! Tens can be followed by ones:
 !!€gt-norm: roman numeral ten
@@ -448,7 +448,7 @@ XXX+Num+Ord:XXX     DIGITS_ROMANS_ENSIMMÄINEN  ;
 XX+Num+Ord:XX      DIGITS_ROMANS_ENSIMMÄINEN  ;
 X+Num+Ord:X       DIGITS_ROMANS_ENSIMMÄINEN  ;
 
-!! !Roman ones
+!! ### Roman ones
 LEXICON DIGITS_ROMANS_ONES
 !! Ones come alone
 !!€gt-norm: roman numerals one to nine

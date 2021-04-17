@@ -1,4 +1,4 @@
-!! !!!Numeral inflection
+!! # Numeral inflection
 !! Numeral inflection is like nominal, except that numerals compound in all
 !! forms which requires great amount of care in the inflection patterns.
 ! FIXME: compounding
@@ -20,25 +20,25 @@ LEXICON dateyearcase_fullsuff ! todo: Fix vowel harmony
 +Sg+All:%>lle # ;
 
 
-LEXICON ARABICCASES   !!≈ * __@CODE@__  adds +Arab
+LEXICON ARABICCASES   !!≈ * **@CODE@**  adds +Arab
  +Arab:  DIGITCASES ;
 
-LEXICON ARABICCASE   !!≈ * __@CODE@__  adds +Arab
+LEXICON ARABICCASE   !!≈ * **@CODE@**  adds +Arab
  +Arab:  DIGITCASE ;
 
-LEXICON ARABICCASE0   !!≈ * __@CODE@__  adds +Arab
+LEXICON ARABICCASE0   !!≈ * **@CODE@**  adds +Arab
  +Arab:  DIGITCASE0 ;
 
 
-LEXICON DIGITCASES   !!≈ * __@CODE@__  to distinguish between 0 and oblique
+LEXICON DIGITCASES   !!≈ * **@CODE@**  to distinguish between 0 and oblique
 DIGITCASE0 ;
 DIGITCASE ;
 
-LEXICON DIGITCASE0   !!≈ * __@CODE@__
+LEXICON DIGITCASE0   !!≈ * **@CODE@**
       +Sg+Nom:     #      ;
 
 
-LEXICON DIGITCASE   !!≈ * __@CODE@__
+LEXICON DIGITCASE   !!≈ * **@CODE@**
  +Sg+All:%>lle            # ;
 
 LEXICON ARABICCASEORD
@@ -56,7 +56,7 @@ LEXICON ARABICCOMPOUNDS
 LEXICON INENCount ! 33-vuotiset
 vuotinen+N:vuoti NOUN_AAKKOSTAMINEN ;
 
-LEXICON ROMNUMTAGOBL   !!≈ * __@CODE@__
+LEXICON ROMNUMTAGOBL   !!≈ * **@CODE@**
           +Rom+Sg+All:%>lle  # ; !
 
 
@@ -66,7 +66,7 @@ LEXICON ROMNUMTAGOBL   !!≈ * __@CODE@__
 
 
 
-!! !!!Original file
+!! # Original file
 
 ! nominatives
 LEXICON NUM_BACK_NOMINATIVE

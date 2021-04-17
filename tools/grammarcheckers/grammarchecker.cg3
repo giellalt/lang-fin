@@ -14,7 +14,7 @@
 # giellatekno@hum.uit.no or divvun@hum.uit.no
 
 # ==================================================================== #
-#!! !!!       F I N N I S H   G R A M M A R   C H E C K E R
+#!!       F I N N I S H   G R A M M A R   C H E C K E R
 # ==================================================================== #
 # ====================================================================
 
@@ -61,23 +61,23 @@
       # Grammar checking rules
 
 # =============== #
-#!! !!!DELIMITERS
+#!! # DELIMITERS
 # =============== #
 
 DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" sent ;
 
 # ================== #
-#!! !!!TAGS AND SETS
+#!! # TAGS AND SETS
 # ================== #
 
 SETS
 
 
-#!! !!Tags
+#!! ## Tags
 
 
 #!! This section lists all the tags inherited from the fst, and used as tags
-#!! in the syntactic analysis. The next section, __Sets__, contains sets defined
+#!! in the syntactic analysis. The next section, **Sets**, contains sets defined
 #!! on the basis of the tags listed here, those set names are not visible in the output.
 
 
@@ -85,7 +85,7 @@ SETS
 # Tags declared as single-membered LISTs
 # ======================================
 
-#!! !Beginning and end of sentence
+#!! ### Beginning and end of sentence
 LIST BOS = (>>>) (<s>) ;  #!! BOS
 LIST EOS = (<<<) (</s>) ; #!! EOS
 
@@ -94,7 +94,7 @@ LIST EOS = (<<<) (</s>) ; #!! EOS
 # CG3 doesn´t function without >>> and <<< !
 
 
-#!! !Parts of speech tags
+#!! ### Parts of speech tags
 
 LIST N = N ;		    #!! N
 LIST A = A ;		    #!! A
@@ -124,7 +124,7 @@ LIST ¶ = ¶;   #!! ¶
 
 
 
-#!! !Tags for POS sub-categories
+#!! ### Tags for POS sub-categories
 
 LIST Pers = Pers ;	    #!! Pers
 LIST Dem = Dem ;	    #!! Dem
@@ -141,7 +141,7 @@ LIST Arab = Arab ; #!! Arab
 LIST Rom = Rom ; #!! Romertall
 
 
-#!! !Tags for morphosyntactic properties
+#!! ### Tags for morphosyntactic properties
 
 LIST Nom = Nom ; #!! Nom
 LIST Acc = Acc ; #!! Acc
@@ -221,7 +221,7 @@ LIST POELA = "huolimatta" ;
 # ISO: Sekä adverbina että adpositiona käytettäviä sanoja:
 # edellä, edelle, edeltä; edessä, eteen, edestä | sisällä, sisälle, sisältä; sisässä, sisään, sisästä | lähellä, lähelle, läheltä | keskellä, keskelle, keskeltä | ympärillä, ympärille, ympäriltä | ohessa, oheen, ohesta | takana, taakse, takaa | alla, alle, alta | yllä, ylle, yltä | vailla, vaille | vastassa, vastaan | mukana, mukaan | alitse, ylitse, ohitse | ali, yli, läpi, ohi, ympäri, kohti, vastapäätä | lisäksi, ilman, kesken, ennen
 
-#!! !Semantic tags
+#!! ### Semantic tags
 
 LIST Sem/Act = Sem/Act ;				    #!! Sem/Act
 LIST Sem/Ani = Sem/Ani ;				    #!! Sem/Ani
@@ -261,7 +261,7 @@ LIST PROP-SUR = Sem/Sur Sem/Mal Sem/Fem ; #!! PROP-SUR
 SET TIME-N-SET = N + Sem/Time ;  #!! TIME-N-SET
 
 
-#!! ! Syntactic tags
+#!! ###  Syntactic tags
 
 LIST @+FAUXV = @+FAUXV ;	         #!! @+FAUXV
 LIST @+FMAINV = @+FMAINV ;	         #!! @+FMAINV
@@ -344,7 +344,7 @@ LIST @X = @X ;    #!! @X
 # ========
 
 
-#!! !!Sets containing sets of lists and tags
+#!! ## Sets containing sets of lists and tags
 
 #!! This part of the file lists a large number of sets based partly upon the tags defined above, and
 #!! partly upon lexemes drawn from the lexicon.
@@ -352,14 +352,14 @@ LIST @X = @X ;    #!! @X
 
 
 
-#!! !Sets for Single-word sets
+#!! ### Sets for Single-word sets
 
 LIST INITIAL = "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m"
         "n" "o" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z"
         "á" "æ" "ø" "å" "ö" "ä" ; #!! INITIAL
 
 
-#!! !Sets for word or not
+#!! ### Sets for word or not
 
 LIST WORD = N A Adv V Pron CS CC Po Pr Interj Pcle Num ABBR ACR  \? ; #!! WORD
  # any word
@@ -368,7 +368,7 @@ SET REAL-WORD-NOT-ABBR = WORD - Num - Ord - (ABBR N) ; # This is former REALWORD
 SET NOT-COMMA = WORD - COMMA ;  #!! NOT-COMMA
 
 
-#!! !Case sets
+#!! ### Case sets
 # ---------
 
 LIST ADVLCASE = Ill Loc Com Ess ; #!! ADLVCASE
@@ -380,7 +380,7 @@ SET NOT-NOM = CASE - Nom ; #!! NOT-NOM
 SET NOT-GEN = CASE - Gen ; #!! NOT-GEN
 SET NOT-ACC = CASE - Acc ; #!! NOT-ACC
 
-#!! !Verb sets
+#!! ### Verb sets
 # ---------
 
 # Verbs and their complements
@@ -388,7 +388,7 @@ SET NOT-ACC = CASE - Acc ; #!! NOT-ACC
 
 SET NOT-V = WORD - V ; #!! NOT-V
 
-#!! !Sets for finiteness and mood
+#!! ### Sets for finiteness and mood
 # - - - - - - - - - -
 
 SET REAL-NEG = Neg - Sup ; #!! REAL-NEG
@@ -398,7 +398,7 @@ SET MOOD-V = Ind OR Pot OR Imprt OR ImprtII OR Cond OR (Neg Sup) ; #!! MOOD-V
 SET NOT-PRFPRC = WORD - PrfPrc ; #!! NOT-PRFPRC
 
 
-#!! !Sets for person
+#!! ### Sets for person
 # - - - -
 
 LIST SG1-V = (V Sg1)  ; #!! SG1-V
@@ -423,7 +423,7 @@ SET DU-PL-V = DU1-V OR DU2-V OR DU3-V OR PL1-V OR PL2-V OR PL3-V ;
 
 SET 1-2-V = SG1-V OR SG2-V OR DU1-V OR DU2-V OR PL1-V OR PL2-V ;
 
-#!! !Pronoun sets
+#!! ### Pronoun sets
 # ------------
 
 LIST MUN = (Pron Pers Sg1 Nom) (pers p1 sg nom) ;
@@ -476,7 +476,7 @@ LIST DU-NR = Du1 Du2 Du3 ;
 SET NOT-SG-PRON = DU-PRON OR PL-PRON ;
 
 
-#!! !Adjectival sets and their complements
+#!! ### Adjectival sets and their complements
 # -------------------------------------
 SET A-CASE = A - Attr - Adv ;
 
@@ -490,7 +490,7 @@ SET NOT-A-CC = WORD - A-CC ;
 
  # and many others
 
-#!! !Adverbial sets and their complements
+#!! ### Adverbial sets and their complements
 # ------------------------------------
 SET LEX-ADV = Adv - (AA) ;
 
@@ -503,12 +503,12 @@ SET NOT-A-ADV-PCLE = WORD - Pcle - A - Adv ; #
 
 
 
-#!! !Sets of elements with common syntactic behaviour
+#!! ### Sets of elements with common syntactic behaviour
 # ================================================
 
 SETS
 
-#!! !NP sets defined according to their morphosyntactic features
+#!! ### NP sets defined according to their morphosyntactic features
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 LIST N-SG-NOM = (N Sg Nom);
@@ -533,11 +533,11 @@ SET NP-HEAD-NOM    = NP-HEAD-SG-NOM OR NP-HEAD-PL-NOM ;
 SET NP-HEAD-ACC    = (Pron Acc) OR (N Acc) OR (A Acc) - Cmp/SplitR - (Dem Attr);
 SET NP-HEAD-GEN    = (Pron Gen) OR (N Gen) OR (A Gen) - Cmp/SplitR - (Dem Attr)   ;
 
-#!! !The PRE-NP-HEAD family of sets
+#!! ### The PRE-NP-HEAD family of sets
 
 #!! These sets model noun phrases (NPs). The idea is to first define whatever can
 #!! occur in front of the head of the NP, and thereafter negate that with the
-#!! expression __WORD - premodifiers__.
+#!! expression **WORD - premodifiers**.
 
 
 SET PRE-NP-HEAD = (Prop Attr) OR (Prop @>N) OR (A Attr) OR (ABBR Attr)
@@ -583,11 +583,11 @@ SET NOT-PCLE = WORD - Pcle ;
 SET REAL-CLB = CLB - COMMA ;
 
 
-#!! !Postposition sets
+#!! ### Postposition sets
 
 
 
-#!! !Border sets and their complements
+#!! ### Border sets and their complements
 # ---------------------------------
 
 SET CP = (Pron Interr) OR (Pron Rel) ;
@@ -614,12 +614,12 @@ SET CCCOMMA = CC OR COMMA ;
 
 
 # ===================================== #
-#!! !!! Grammarchecker rules begin here 
+#!! Grammarchecker rules begin here 
 # ===================================== #
 
 
 
-#!! !!Grammarchecker sets
+#!! ## Grammarchecker sets
 
 LIST &err_agr = &err_agr ;
 LIST &err_agr_sg1 = &err_agr_sg1 ;
@@ -651,12 +651,12 @@ MAPPING-PREFIX = & ;
 
 
 
-#!! !!Grammarchecker rules
+#!! ## Grammarchecker rules
 
 
 SECTION
 
-#!! !Speller rules
+#!! ### Speller rules
 
 # Speller suggestions rule – add &SUGGESTWF to any spelling suggestion
 # that we actually want to suggest to the user.
@@ -667,7 +667,7 @@ ADD:spell-conservatively (&typo &SUGGESTWF) (<spelled>) IF (NEGATE -1 QMARK LINK
 
 
 
-#!! !Agreement rules
+#!! ### Agreement rules
 
 # A simple grammar checker rule without suggestions: Ensure preceding nominal agrees with the verb
 ADD:err_agr_sg1 (&err_agr_sg1) TARGET V IF (NOT -1 Sg1 OR Interr)(-1 Pron + Sg1 + Nom) (0 V + Ind) (NOT 0 Sg1);
@@ -678,12 +678,12 @@ ADD:err_agr_pl2 (&err_agr_pl2) TARGET V IF (NOT -1 Pl2 OR Interr)(-1 Pron + Pl2 
 ADD:err_agr_pl3 (&err_agr_pl3) TARGET V IF (NOT -1 Pl3)(-1 Pron + Pl3 + Nom) (0 V + Ind) (NOT 0 Pl3);
 
 
-#!! !Negation verb rules
+#!! ### Negation verb rules
 
 ADD:err_neg_posv (&err_neg_posv) TARGET V IF (-1 Neg)(NOT -1 Foc/ka)(0 VFIN)(NOT 0 ConNeg);
 
 
-#!! !Postposition rules
+#!! ### Postposition rules
 
 #3ADD:err_po_notgen (&err_po_notgen) TARGET N IF (NOT 0 Gen OR Par)(1C Po);
 ADD:err_po_notgen (&err_po_notgen) TARGET N IF (NOT 0 Gen)(1 POGEN);
@@ -701,7 +701,7 @@ ADD:err_po_asti (&err_po_asti) TARGET N OR Pron IF (NOT 0 Ill OR All OR Tra OR E
 # TODO: List of gen-Po, par-Po, Ill-Po, Ela-Po
 
 
-#!! !L2 rules
+#!! ### L2 rules
 
 # A tentative L2 error
 #ADD:err_acc_pss (&err_acc_pss) TARGET N IF (-1 V + Pss + Ind)(0 Gen)(NOT *1 N OR A BARRIER NOT-NPMOD)(Not 1 Po);
@@ -709,7 +709,7 @@ ADD:err_acc_pss (&err_acc_pss) TARGET Pron + Pers + Nom IF (-1 V + Pss + Ind)(NO
 ## Nähtiin hän.
 
 
-#!! ! NP internal rules
+#!! ###  NP internal rules
 
 # And one with a suggestion where we simply change the tag Sg into Attr:
 # TODO: Give example on this:
@@ -722,7 +722,7 @@ COPY:attr-not-pred (Attr &SUGGEST) EXCEPT (Sg) TARGET (&attr-not-pred) ;
 
 
 
-#!! ! Punctuation rules
+#!! ###  Punctuation rules
 
 # Simple punctuation rules showing how to change the lemma in the suggestions:
 ADD:use-guillemets (&guillemets) TARGET (""");
@@ -733,7 +733,7 @@ ADD:use-ellipsis (&ellipsis) TARGET ("...");
 COPY:use-ellipsis ("…" &SUGGEST) EXCEPT ("...") TARGET (&ellipsis) ;
 
 
-#!! ! Spacing errors
+#!! ###  Spacing errors
 # ------------------
 
 ADD (&double-space-before)     (<doubleSpaceBefore>);

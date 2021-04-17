@@ -13,7 +13,7 @@
 ! giellatekno@uit.no or feedback@divvun.no
 
 ! ===================================================
-!! !!!Continuation lexicons for Finnish abbreviations
+!! # Continuation lexicons for Finnish abbreviations
 ! ===================================================
 
 !!  Abbreviations are shortened forms that do not inflect. They have whatever
@@ -62,7 +62,7 @@ Gt+N:Gt  ab-dot-noun-trab  ;
 H.V.+N:H.V  ab-dot-noun-trab  ;
 Hki+N+Prop+Sem/Geo+N:Hk  PROPN_TYYLI  ;
 Jk.+N:Jk  ab-dot-noun-trab  ;
-KalPa+N:KalPa  ab-nodot-noun-itrab  ; !!= * {{@CODE@}}+N: Kalmiston pallo
+KalPa+N:KalPa  ab-nodot-noun-itrab  ; !!= * `@CODE@`+N: Kalmiston pallo
 Kesk.+N:Kesk  ab-dot-noun-trab  ;
 Kok.+N:Kok  ab-dot-noun-trab  ;
 M.+N:M  ab-dot-noun-trab  ;
@@ -76,13 +76,13 @@ Mr+N:Mr  ab-dot-noun-trab  ;
 Mr.+N:Mr  ab-dot-noun-trab  ;
 Mrs+N:Mrs  ab-dot-noun-trab  ;
 Ms+N:Ms  ab-dot-noun-trab  ;
-MyPa+N:MyPa   ab-nodot-noun-itrab   ; !!= * {{@CODE@}}+N: Myllykosken Pallo
+MyPa+N:MyPa   ab-nodot-noun-itrab   ; !!= * `@CODE@`+N: Myllykosken Pallo
 NA% f.+N:NA% f.    ab-dot-noun-trab  ;
 P.S.+N:P.S  ab-dot-noun-trab  ;
 R.S.V.P.+N:R.S.V.P  ab-dot-noun-trab  ;
 RN%:o+N:RN%:o  NOUN_RUIPELO  ;
 Re.+N:Re  ab-dot-noun-trab  ;
-RoPS+N:RoPS   ab-nodot-noun-itrab  ; !!= * {{@CODE@}}+N: Rovaniemen palloseura
+RoPS+N:RoPS   ab-nodot-noun-itrab  ; !!= * `@CODE@`+N: Rovaniemen palloseura
 Rs.+N:Rs  ab-dot-noun-trab  ;
 S.H.T.+N:S.H.T  ab-dot-noun-trab  ;
 So.% Sh.+N:So.% Sh.    ab-dot-noun-trab  ;
@@ -201,13 +201,13 @@ jne+N:jne  ab-dot-noun-trab  ;
 jne.+N:jne  ab-dot-noun-trab  ;
 joht.+N:joht  ab-dot-noun-trab  ;
 jr.+N:jr  ab-dot-noun-trab  ;
-jssk+N:jssk   ab-nodot-noun-itrab   ; !!= * {{@CODE@}}+N: jossakin (somewhere)
-jstk+N:jstk   ab-nodot-noun-itrab  ; !!= * {{@CODE@}}+N: jostakin (from)
-jtak+N:jtak   ab-nodot-noun-itrab   ; !!= * {{@CODE@}}+N: jotakin (to)
+jssk+N:jssk   ab-nodot-noun-itrab   ; !!= * `@CODE@`+N: jossakin (somewhere)
+jstk+N:jstk   ab-nodot-noun-itrab  ; !!= * `@CODE@`+N: jostakin (from)
+jtak+N:jtak   ab-nodot-noun-itrab   ; !!= * `@CODE@`+N: jotakin (to)
 julk.+N:julk  ab-dot-noun-trab  ;
 jälj.+N:jälj  ab-dot-noun-trab  ;
 jääk.+N:jääk  ab-dot-noun-trab  ;
-k%:lo+N:k%:lo   ab-dot-noun-trnumab   ; !!= * {{@CODE@}}+N: kello
+k%:lo+N:k%:lo   ab-dot-noun-trnumab   ; !!= * `@CODE@`+N: kello
 k.+N:k  ab-dot-noun-trab  ;
 ka.+N:ka  ab-dot-noun-trab  ;
 kad.+N:kad  ab-dot-noun-trab  ;
