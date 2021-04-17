@@ -1,4 +1,4 @@
-!! !!Number transcriptions
+!! ## Number transcriptions
 !!
 !! Transcribing numbers to words in Finnish is not completely trivial, one
 !! reason is that numbers in Finnish are written as compounds, regardless of
@@ -13,7 +13,7 @@
 !! without marking and it is preferred grammatical form in good writing.
 
 Multichar_Symbols
-!! !Flag diacritics
+!! ### Flag diacritics
 !! Flag diacritics in number transcribing are used to control case agreement:
 !! in Finnish numeral compounds all words agree in case except in nominative
 !! singular where 10's exponential multipliers are in singular partitive.
@@ -22,7 +22,7 @@ Multichar_Symbols
 
 
 LEXICON Root
-!! !Morphotactics of digit strings
+!! ### Morphotactics of digit strings
 !! The morphotactics related to numbers and their transcriptions is that we
 !! need to know the whole digit string to know how the length of whole digit
 !! string to know what to start reading, and zeroes are not read out but

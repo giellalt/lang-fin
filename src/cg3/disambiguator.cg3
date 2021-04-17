@@ -1473,7 +1473,7 @@ SUBSTITUTE (?) (N Sg Gen Pref- ?-) (?) (0 ("(.*)n-"r)) ; # maybe first part is G
 SUBSTITUTE (?) (N Sg Nom Pref- ?-) (?) (0 ("(.*)-"r)) ; # usually the first part is Nom
 
 
-#!! !! Idiomatic cases
+#!! Idiomatic cases
 
 SELECT N + Ins IF (-1 A + Ins);
 ## väliaikaisin toimin
@@ -4528,7 +4528,7 @@ REMOVE N IF (0 Ensimmainen + $$ALLCASES)(1 A + $$ALLCASES);
 # Mostly same as sme rule, but removed (0 ("orrut")); is it worth including copulas here? Finnish doesn't quite have quite the same here
 MAP (@+FMAINV) TARGET VFIN IF (NEGATE *0 VERB BARRIER S-BOUNDARY2 OR CC) ;
 
-#!! * __+FMAINV__  to the remaining finite verbs which are not AUX    
+#!! * **+FMAINV**  to the remaining finite verbs which are not AUX    
 MAP:+FMAINV (@+FMAINV) TARGET VFIN-NOT-AUX (NOT 0 V + OBJ OR V + SUBJ OR V + @ADVL OR (V @>N) OR (V @N<))(NEGATE *0 VFIN-NOT-AUX OR @+FMAINV BARRIER S-BOUNDARY OR COMMA OR LEFT OR RIGHT) (NEGATE *-1 (V @>N) BARRIER NOT-A OR LEFT)
 	(NEGATE *-1 V - @>N BARRIER S-BOUNDARY OR COMMA OR LEFT)
 	(NEGATE *1 VFIN OR PrfPrc - @>N BARRIER S-BOUNDARY OR COMMA OR RIGHT)(NEGATE 0 InfA LINK -1 CC LINK *-1 InfA BARRIER REAL-V LINK -1 AUX) ;
@@ -4844,12 +4844,12 @@ SECTION
 
 
 
-#!! * __X__ maps X everywhere
+#!! * **X** maps X everywhere
 MAP (@X) TARGET WORD ;
 
 #SUBSTITUTE (@X) (*) TARGET WORD ;
 
-#!! * __REMOVE X__ removes X whenever there is any other tag.
+#!! * **REMOVE X** removes X whenever there is any other tag.
 # Commented out, may be useful at a later stage, but at the moment may hide ambiguities - 19.01.2015 -FMT+KM
 #REMOVE (@X) ;
 

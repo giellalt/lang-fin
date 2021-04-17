@@ -1,9 +1,9 @@
-!! !!!Noun inflection and derivation
+!! # Noun inflection and derivation
 
 
 
 
-!!  !!Noun stem variation and allomorph selection
+!! ## Noun stem variation and allomorph selection
 !!  The nominal stems were classified according to what is the stem variation
 !!  and what allomorphs they select. This section lists all the possible
 !!  variations and all their allomorph selections. Each class description 
@@ -16,7 +16,7 @@
 !!  plural GENITIVEs, plural illatives and the compound forms.
 !!
 
-!!  !Noun stems without stem variation
+!! ### Noun stems without stem variation
 LEXICON NOUN_TALO
 !!  The most basic noun stem does not have any stem internal variation and
 !!  uses few commonest allomorphs. The words in this class are either 
@@ -151,7 +151,7 @@ LEXICON NOUN_MÖMMÖ
 +Use/Rare:0  NOUN_FRONT_GENITIVE_IN  ; ! in NS parenthesised
 +Err/Orth:0  NOUN_FRONT_ILLATIVE_HÖN  ; ! in NS's intro prose
 
-!!  !Basic gradation cases
+!! ### Basic gradation cases
 !!  The basic stems without variations other than consonant gradation.
 LEXICON NOUN_UKKO
 !!€gt-norm:  Nouns 1ko
@@ -1591,7 +1591,7 @@ LEXICON NOUN_BERNIE
 +Err/Orth:0  NOUN_FRONT_PARTITIVE_JÄ  ; ! not documented
 +Err/Orth:0  NOUN_FRONT_GENITIVE_JEN  ; ! not documented
 
-!!  !Optional gradation with illatives
+!! ### Optional gradation with illatives
 !!  In some trisyllabic words ending with quantitative consonant gradation, 
 !!  the illative form can attach to either strong or weak stem, even in 
 !!  standard written Finnish. Otherwise words in this class behave like other
@@ -1655,7 +1655,7 @@ LEXICON NOUN_YKSIKKÖ
 +Use/Rare:kö  NOUN_FRONT_GENITIVE_IN  ; ! in NS parenthesised
 +Err/Orth:kö  NOUN_FRONT_ILLATIVE_HÖN  ; ! in NS's intro prose
 
-!!  !I final stems
+!! ### I final stems
 !!  The basic variation of stem final i in nominative is that it becomes
 !!  e in plural stems. In plural GENITIVE form, the stem vowel disappears
 !!  making suffix allomorph -ien, instead of -jen.
@@ -2164,7 +2164,7 @@ LEXICON NOUN_BESSERWISSER
 0:e  NOUN_COMPOUND_IDEN  ;
 +Use/NG:e  NOUN_COMPOUND_ITTEN  ;
 
-!!  !I-final nominatives with e stems
+!! ### I-final nominatives with e stems
 !!  Some of the words with i-final nominative forms have i:e variation for
 !!  singular stem, and i:0 for whole plural stems:
 
@@ -2500,7 +2500,7 @@ LEXICON NOUN_JÄRKI
 0:je  NOUN_COMPOUND_N  ;
 0:k  NOUN_COMPOUND_IEN  ;
 
-!!  !New e-final stems
+!! ### New e-final stems
 !!  The new words with e stem work exactly like the bisyllabic o, u, y, and ö
 !!  stems  ; no stem variation and same allomorph set. This variant can be
 !!  recognised from singular illative then:
@@ -2602,7 +2602,7 @@ LEXICON NOUN_JEPPE
 +Use/NG:pe  NOUN_COMPOUND_IN  ;
 
 
-!!  !A-final stems
+!! ### A-final stems
 !!  The basic variation of a-final stems is a:o in plural forms:
 
 LEXICON NOUN_KIRJA
@@ -3925,7 +3925,7 @@ LEXICON NOUN_LIPEÄ
 +Use/NG:0  NOUN_COMPOUND_ITTEN  ;
 +Use/NG:ä  NOUN_COMPOUND_IN  ;
 
-!!  !Lexicalised comparatives
+!! ### Lexicalised comparatives
 !!  Lexicalised comparatives have the same special inflection pattern as
 !!  comparatives have: stem final i varies with a, and mp gradates into mm.
 !!  There are  not many comparatives that lexicalise into nouns.
@@ -3954,7 +3954,7 @@ LEXICON NOUN_VANHEMPI
 0:p  NOUN_COMPOUND_IEN  ;
 +Use/NG:pa  NOUN_COMPOUND_IN  ;
 
-!!  !Long vowel stems
+!! ### Long vowel stems
 !!  The long vowel stems have shortening variation in plural inflection, and
 !!  special singular illatives, partitives. 
 
@@ -4193,7 +4193,7 @@ LEXICON NOUN_KÖÖ
 0  NOUN_COMPOUND_IDEN  ;
 +Use/NG:0  NOUN_COMPOUND_ITTEN  ;
 
-!!  !Opening diphthong stems
+!! ### Opening diphthong stems
 !!  In old opening diphthong final words, the dipthong simplifies for plural
 !!  forms by dropping the initial vowel. For new words of this class, no
 !!  stem mutations happen and they are in above mentioned classes, (e.g.
@@ -4259,7 +4259,7 @@ LEXICON NOUN_YÖ
 0:ö  NOUN_COMPOUND_IDEN  ;
 0:ö  NOUN_COMPOUND_ITTEN  ;
 
-!!  !Newer loan words
+!! ### Newer loan words
 !!  The loan words that end in long vowel, and have been modified to Finnish
 !!  orthography, have combination of long vowel stem’s allomorphs for e.g
 !!  illatives. Sometimes rules for these classes of words are vague.
@@ -4517,7 +4517,7 @@ LEXICON NOUN_BÉBÉ
 !!  The rules are even more wonky when the vowel harmony does not follow the
 !!  orthography, or the orthography leaves things open to interpretation.
 !!  Only way to even begin to understand the norm is to look up
-!!  [examples on RILF site|http://www.kotus.fi/index.phtml?i=634&s=2612#faq_634]
+!!  [examples on RILF site](http://www.kotus.fi/index.phtml?i=634&s=2612#faq_634)
 !!  (to me, some of the forms on that normative guide are just bizarre).
 
 LEXICON NOUN_BRASSERIE
@@ -4846,7 +4846,7 @@ LEXICON NOUN_MONSIEUR
 0:’  NOUN_COMPOUND_N  ;
 0:’  NOUN_COMPOUND_IDEN  ;
 
-!!  !I-final stems (old e stems)
+!! ### I-final stems (old e stems)
 !!  Some i-final stems have i:e variation in singular forms, as they are
 !!  originated from -e forms, only nominative has -i. They also have
 !!  some consonant stem forms that are archaic for other classes of words.
@@ -5291,7 +5291,7 @@ LEXICON NOUN_HAPSI
 +Use/NG:s  NOUN_BACK_ESSIVE_SA_ARCHAIC  ;
 +Use/NG:s  NOUN_BACK_GENITIVE_TEN_ARCHAIC  ;
 
-!!  !Consonant final nouns
+!! ### Consonant final nouns
 !!  The consonant stems use inverted gradation if applicable, that is, the 
 !!  nominatives have end in consonants and their gradating consonants are in
 !!  weak form. 
@@ -5771,7 +5771,7 @@ LEXICON NOUN_HAPAN
 :pam  NOUN_FRONT_ILLATIVE_IIN  ;
 :pam  NOUN_COMPOUND_IEN  ;
 
-!!  !-tOn suffixes
+!! ### -tOn suffixes
 !!  The caritive suffix -ton inflects with A before the singular suffixes.
 
 LEXICON NOUN_OSATON
@@ -5810,7 +5810,7 @@ LEXICON NOUN_NIMETÖN
 0:töm  NOUN_COMPOUND_IEN  ;
 0:ön  NOUN_COMPOUND_TEN  ;
 
-!!  !Lexicalised superlatives
+!! ### Lexicalised superlatives
 !!  The lexicalised superlatives have special inflection pattern.
 
 LEXICON NOUN_VANHIN
@@ -5882,7 +5882,7 @@ LEXICON NOUN_VASEN
 0:n  NOUN_COMPOUND_TEN  ;
 0:mpa  NOUN_COMPOUND_IN  ;
 
-!!  !-nen suffixed forms
+!! ### -nen suffixed forms
 !!  Number of derivations end in -nen, that has special alternation pattern.
 
 LEXICON NOUN_AAKKOSTAMINEN
@@ -5921,7 +5921,7 @@ LEXICON NOUN_KYLKIÄINEN
 0:s  NOUN_COMPOUND_IEN  ;
 0:s  NOUN_COMPOUND_TEN  ;
 
-!!  !-s final words
+!! ### -s final words
 !!  The s final words have some variation patterns that are determined 
 !!  lexically.
 
@@ -6526,7 +6526,7 @@ LEXICON NOUN_MIES
 +Use/NG:s  NOUN_FRONT_ESSIVE_SÄ_ARCHAIC  ;
 
 
-!!  !t-final words
+!! ### t-final words
 !!  The t-final words have t:0 variation in the stem, and the singular 
 !!  suffixes are as usual joined with e. It is common to see non-standard
 !!  forms of these words.
@@ -6653,7 +6653,7 @@ LEXICON NOUN_SIVISTYNYT
 0:e  NOUN_COMPOUND_IDEN  ;
 +Use/NG:e  NOUN_COMPOUND_ITTEN  ;
 
-!!  !Old e^ stems
+!! ### Old e^ stems
 !!  The e final words that have lost final consonant inflect like consonant
 !!  final words, including the inverse consonant gradation. This class
 !!  includes all deverbal -e suffixed nouns.
@@ -7095,7 +7095,7 @@ LEXICON NOUN_POHJE
 0:ke  NOUN_COMPOUND_IDEN  ;
 +Use/NG:ke  NOUN_COMPOUND_ITTEN  ;
 
-!!  !Dual nominative paradigms
+!! ### Dual nominative paradigms
 !!  A handful of words can use two completely distinct inflection patterns
 !!  where a bit of overlapping inflection has been cut out. These words have
 !!  two nominatives, and thus often two dictionary entries: one which is
@@ -7532,7 +7532,7 @@ LEXICON NOUN_AUER
 +Use/NG:tere  NOUN_COMPOUND_IDEN  ;
 +Use/NG:tere  NOUN_COMPOUND_ITTEN  ;
 
-!!  !Exceptions to dictionary inflection
+!! ### Exceptions to dictionary inflection
 !!  There are few cases where dictionaries traditionally have never indicated
 !!  correct inflection by classification. In computational implementation we
 !!  need to assign some classes or exceptional paths to them, and they are
@@ -7669,7 +7669,7 @@ LEXICON NOUN_POIKA
 0:ik  NOUN_COMPOUND_IEN  ;
 +Use/NG:ika  NOUN_COMPOUND_IN  ;
 
-!!  !Noun forms of numerals with special inflection
+!! ### Noun forms of numerals with special inflection
 !!  The numerals are not really nouns in this morphology, for details see
 !!  [numeral-stems], but some of their compounds are nouns, and the following
 !!  classes are for those that have special stem or suffix patterns not
@@ -8324,7 +8324,7 @@ LEXICON NOUN_YLKÄ
 
 
 
-!!  !Plurales tantum
+!! ### Plurales tantum
 !!  For some words, the singular forms are rare, odd, or even deemed
 !!  ungrammatical, these words have separate classes for them. In Finnish
 !!  words to commonly be in this class are events like häät (wedding),
@@ -10586,14 +10586,14 @@ LEXICON NOUN_YMPÄRYSTÄ
 :ö  NOUN_FRONT_ILLATIVE_IHIN ;
 ö:ö  NOUN_COMPOUND_JEN ;
 
-!!  !!Adjective-initial Compounds with Agreeing Inflection
+!! ## Adjective-initial Compounds with Agreeing Inflection
 !!  The words in dictionary paradigm class ⁵¹ refer to old closed class of
 !!  adjective initial compounds, which follow agreeing compound pattern same
 !!  as numbers. The amount of these words is relatively small, so they have
 !!  been spelled out here in full form rather than using more complex methods
 !!  of agreeing compounding, 
 !!
-!!  Further reading: [VISK § 420|http://scripta.kotus.fi/visk/sisalto.php?p=420]
+!!  Further reading: [VISK § 420](http://scripta.kotus.fi/visk/sisalto.php?p=420)
 !!
 !!  FIXME: some are still missing
 
@@ -16723,7 +16723,7 @@ LEXICON NOUN_ACRO_Ω
 
 
 
-!! !!Nominatives
+!! ## Nominatives
 !! Singular nominative is the dictionary reference form for most of the words.
 
 LEXICON NOUN_BACK_NOMINATIVE
@@ -16756,7 +16756,7 @@ LEXICON NOUN_FRONT_PLNOM_CLIT
 !!€ häät: häät+N+Pl+Nom # wedding
  +Pl+Nom:%>t NOUN_FRONT_CLIT_OPT ;
 
-!! !!Singular case inflection
+!! ## Singular case inflection
 !! The nouns can inflect in 15 regular cases. Most of the cases have one or two
 !! case endings, with only varying part being the harmony vowel. For nouns with
 !! direct consonant gradation, the most of the singular case suffixes attach
@@ -16831,7 +16831,7 @@ LEXICON NOUN_FRONT_STRONG_SINGULARS
  +Sg+Gen:0    NOUN_FRONT_POSS        ;
  +Pl+Nom:0    NOUN_FRONT_POSS        ;
 
-!! !!Plural inflection
+!! ## Plural inflection
 
 LEXICON NOUN_BACK_WEAK_PLURALS
 !!€gt-norm: Noun basic plural back
@@ -16890,7 +16890,7 @@ LEXICON NOUN_FRONT_STRONG_PLURALS
  +Pl+Ess:%>i%>nä NOUN_FRONT_POSS_ÄN_OPT ;
     +Com:%>i%>ne NOUN_FRONT_POSS_EN_OPT ;
 
-!! !!Cases with allomorphic variation
+!! ## Cases with allomorphic variation
 !! The nominal cases which can take several different suffixes are singular
 !! and plural partitives, singular and plural illatives and plural genitives.
 !! After stem variation the selection of these allomorphs is the main factor
@@ -17271,7 +17271,7 @@ LEXICON NOUN_FRONT_ILLATIVE_ISIIN
  +Use/NG:0         NOUN_FRONT_H_PLURALS_ARCHAIC ;
 
 
-!! !!Possessive suffixes
+!! ## Possessive suffixes
 !! Possessives come optionally after the case suffixes. For consonant final
 !! cases the possessives assimilate or eat the final part of the case ending
 !! or stem.
@@ -17330,7 +17330,7 @@ LEXICON NOUN_FRONT_POSS_ÄN
  +PxSg3:%>än NOUN_FRONT_CLIT_OPT ;
  +PxPl3:%>än NOUN_FRONT_CLIT_OPT ;
 
-!! !!Noun clitics
+!! ## Noun clitics
 !! Clitics can attach to any word-form, including one that already has a clitic.
 !! Clitics do not modify the form they attach to and are simply concatenated to
 !! the end.
@@ -17501,7 +17501,7 @@ LEXICON NOUN_FRONT_POSS_EN_OBL
 !   itse kö-kään+Adverb                        ;
 ! ittäin kö-kään+Adverb                        ;
 !
-!! !!Noun compounding
+!! ## Noun compounding
 !! Nouns form compounds productively. The non-final parts of regular compounds
 !! are singular nominatives, or singular or plural genitives of nouns. The final
 !! parts are nominals and inflect regularly.

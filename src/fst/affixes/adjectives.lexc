@@ -1,4 +1,4 @@
-!! !!!Adjective inflection
+!! # Adjective inflection
 !! The adjectives are inflected like regular nouns. The only morphological
 !! difference in adjectives compared to other nouns is higher likelihood of
 !! comparative derivations–they are fully productive. For adjectives that do
@@ -7,7 +7,7 @@
 
 
 
-!!  !!Adjective stem variation and allomorph selection
+!! ## Adjective stem variation and allomorph selection
 !!  Adjective stems are formed like noun stems, with similar patterns. Adjectives
 !!  have additionally the productive comparative derivations, which may have
 !!  their own stems, particularly an e-stem for a-stem words. The examples in
@@ -19,7 +19,7 @@
 !!  singular nominative. Majority of adjeciteves are equivalent to
 !!  corresponding noun classes, so some examples have been omitted.
 
-!!  !Bisyllabic / derivational adjective stems without stem variation
+!! ### Bisyllabic / derivational adjective stems without stem variation
 !!  The most basic adjective stems do not have any stem internal variation.
 !!  They end in o, u, y or ö, and with some limited set of new words, e.
 !!  This class has the fewest allomorphs. There are a number of productive
@@ -29,9 +29,9 @@
 !!  Examples follow in specific sub-classes.
 
 LEXICON ADJ_TUMMAHKO
-!!  The words in this class ending in o belong to {{@LEXNAME@}}, the old
+!!  The words in this class ending in o belong to `@LEXNAME@`, the old
 !!  dictionaries use class ¹. The stems should be entered in dictionary like:
-!!  {{{tummahko+A:tummahko A_TUMMAHKO  ;}}}
+!!  ```tummahko+A:tummahko A_TUMMAHKO  ;```
 !!  This class includes back vowel moderative
 !!  derivations. N.B. the comparative derivation of moderatives is semantically
 !!  awkward, but morphologically plausible.
@@ -67,9 +67,9 @@ LEXICON ADJ_TUMMAHKO
 0  ADJ_BACK_SUPERLATIVE  ;
 
 LEXICON ADJ_VALKAISTU
-!!  The stems ending in u are in class {{@LEXNAME@}}, and in old dictionaries
+!!  The stems ending in u are in class `@LEXNAME@`, and in old dictionaries
 !!  the class is ¹. These stems should be entered in dictionary like:
-!!  {{{valkaistu+A:valkaistu A_VALKAISTU  ;}}}
+!!  ```valkaistu+A:valkaistu A_VALKAISTU  ;```
 !!  Common part of this class is formed by nut participle 
 !!  passive’s _back_ vowel versions after s stem verbs:
 !!€gt-norm:  Adjectives 1 u
@@ -97,7 +97,7 @@ LEXICON ADJ_VALKAISTU
 0  ADJ_BACK_SUPERLATIVE  ;
 
 LEXICON ADJ_HÄPÄISTY
-!!  The stems ending in y are in class {{@LEXNAME@}}, and in old dictionaries
+!!  The stems ending in y are in class `@LEXNAME@`, and in old dictionaries
 !!  the class is ¹. Common part of this class is formed by nut participle 
 !!  passive’s _front_ vowel versions after s stem verbs:
 !!€gt-norm:  Adjectives 1 y
@@ -125,7 +125,7 @@ LEXICON ADJ_HÄPÄISTY
 0  ADJ_FRONT_SUPERLATIVE  ;
 
 LEXICON ADJ_HÖLÖ
-!!  The words in this class ending in ö belong to {{@LEXNAME@}}, the old
+!!  The words in this class ending in ö belong to `@LEXNAME@`, the old
 !!  dictionaries use class ¹. This class includes front vowel moderative
 !!  derivations.
 !!€gt-norm:  Adjectives 1 ö
@@ -156,7 +156,7 @@ LEXICON ADJ_TOOPE
 !!  The new words with e stem have same allomorph selection as old short
 !!  unchanging bisyllabic u, y, o and ö stems, and no stem-internal variation.
 !!  The classification for the back vowel variant of this class is
-!!  {{@LEXNAME@}}, and old dictionaries used the class ⁸.
+!!  `@LEXNAME@`, and old dictionaries used the class ⁸.
 !!€gt-norm:  Adjectives 8 back
 !!€  toope: toope+A+Sg+Nom # doofus
 !!€  toopea: toope+A+Sg+Par
@@ -183,7 +183,7 @@ LEXICON ADJ_TOOPE
 
 
 LEXICON ADJ_BEIGE
-!!  The front variation of unchanging e stems is class {{@LEXNAME}}, and in
+!!  The front variation of unchanging e stems is class `@LEXNAME`, and in
 !!  old dictionaries ⁸.
 !!€gt-norm:  Adjectives 8 front
 !!€  beige: beige+A+Sg+Nom # beige
@@ -207,14 +207,14 @@ LEXICON ADJ_BEIGE
 0  ADJ_FRONT_SUPERLATIVE  ;
 
 
-!!  !Trisyllabic and longer non-derived adjectuve stems
+!! ### Trisyllabic and longer non-derived adjectuve stems
 !!  The trisyllabic and longer words with stem vowels o, u, y and ö also
 !!  have no stem variation either, but selection of suffix allomorphs for 
 !!  plural genitives and partitives is wider than for bisyllabic and derived
 !!  ones.
 
 LEXICON ADJ_KOHELO
-!!  The o final trisyllabic stems are in class {{@LEXNAME@}}, and the old
+!!  The o final trisyllabic stems are in class `@LEXNAME@`, and the old
 !!  dictionaries used ². 
 !!€gt-norm:  Adjectives 2 o
 !!€  tohelo: tohelo+A+Sg+Nom # clumsy
@@ -240,7 +240,7 @@ LEXICON ADJ_KOHELO
 0  ADJ_BACK_SUPERLATIVE  ;
 
 LEXICON ADJ_LÖPERÖ
-!!  And the trisyllabic ö stem is classified {{@LEXNAME@}}.
+!!  And the trisyllabic ö stem is classified `@LEXNAME@`.
 !!€gt-norm:  Adjectives 2 ö
 !!€  löperö: löperö+A+Sg+Nom # sloppy
 !!€  löperöjen: löperö+A+Pl+Gen
@@ -262,13 +262,13 @@ LEXICON ADJ_LÖPERÖ
 0  ADJ_FRONT_COMPARATIVE  ;
 0  ADJ_FRONT_SUPERLATIVE  ;
 
-!!  !Unchanging long vowel stems
+!! ### Unchanging long vowel stems
 !!  The words with stem vowels o, u, y and ö preceded by vowels still have no
 !!  stem variation, but use yet another pattern of allomorphs for
 !!  singular and plural partitives and plural genitive
 
 LEXICON ADJ_AUTIO
-!!  The class for o final long vowel stems is {{@LEXNAME@}}, and old
+!!  The class for o final long vowel stems is `@LEXNAME@`, and old
 !!  old dictionaries used ³. 
 !!€gt-norm:  Adjectives 3 o
 !!€  autio: autio+A+Sg+Nom # deserted
@@ -292,7 +292,7 @@ LEXICON ADJ_AUTIO
 0  ADJ_BACK_SUPERLATIVE  ;
 
 LEXICON ADJ_RIIVIÖ
-!!  The front voweled stems with ö after vowels go to class {{@LEXNAME@}},
+!!  The front voweled stems with ö after vowels go to class `@LEXNAME@`,
 !!  and used the old dictionary class ³.
 !!€gt-norm:  Adjectives 3 ö
 !!€  riiviö: riiviö+A+Sg+Nom # nasty
@@ -324,7 +324,7 @@ LEXICON ADJ_RIIVIÖ
 
 LEXICON ADJ_KOLKKO
 !!  The quantitative k gradations with o bisyllabic o stem use class
-!!  {{@LEXNAME@}}, and old dictionaries use classes ¹⁻A and ¹⁻D.
+!!  `@LEXNAME@`, and old dictionaries use classes ¹⁻A and ¹⁻D.
 !!€gt-norm:  Adjective gradations 1 k~0 o
 !!€  kolkko: kolkko+A+Sg+Nom # gloomy
 !!€  kolkossa: kolkko+A+Sg+Ine
@@ -348,7 +348,7 @@ LEXICON ADJ_KOLKKO
 
 LEXICON ADJ_VIRKKU
 !!  The quantitative k gradations with u bisyllabic o stem use class
-!!  {{@LEXNAME@}}, and old dictionaries use classes ¹⁻A and ¹⁻D.
+!!  `@LEXNAME@`, and old dictionaries use classes ¹⁻A and ¹⁻D.
 !!€gt-norm:  Adjective gradations 1 k~0 u
 !!€  virkku: virkku+A+Sg+Nom # ???
 !!€  virkussa: virkku+A+Sg+Ine
@@ -372,7 +372,7 @@ LEXICON ADJ_VIRKKU
 
 LEXICON ADJ_SÄIKKY
 !!  The quantitative k gradations with y bisyllabic o stem use class
-!!  {{@LEXNAME@}}, and old dictionaries use classes ¹⁻A and ¹⁻D.
+!!  `@LEXNAME@`, and old dictionaries use classes ¹⁻A and ¹⁻D.
 !!€gt-norm:  Adjective gradations 1 k~0 y
 !!€  säikky: säikky+A+Sg+Nom # ???
 !!€  säikyssä: säikky+A+Sg+Ine
@@ -395,7 +395,7 @@ LEXICON ADJ_SÄIKKY
 
 LEXICON ADJ_KÖKKÖ
 !!  The quantitative k gradations with o bisyllabic ö stem use class
-!!  {{@LEXNAME@}}, and old dictionaries use classes ¹⁻A and ¹⁻D.
+!!  `@LEXNAME@`, and old dictionaries use classes ¹⁻A and ¹⁻D.
 !!€gt-norm:  Adjective gradations 1 k~0 ö
 !!€  kökkö: kökkö+A+Sg+Nom # ???
 !!€  kökössä: kökkö+A+Sg+Ine
@@ -419,7 +419,7 @@ LEXICON ADJ_KÖKKÖ
 !!  there is no unvarying e final adjective with _k ~ 0_ gradation.
 
 LEXICON ADJ_SUIPPO
-!!  The quantitative gradation of p before o is in class {{@LEXNAME@}} and
+!!  The quantitative gradation of p before o is in class `@LEXNAME@` and
 !!  old dictionaries would use ¹⁻B.
 !!€gt-norm:  Adjective gradations 1 p~0 o
 !!€  suippo: suippo+A+Sg+Nom # ?
@@ -443,7 +443,7 @@ LEXICON ADJ_SUIPPO
 
 
 LEXICON ADJ_IKÄLOPPU
-!!  The quantitative gradation of p before u is in class {{@LEXNAME@}} and
+!!  The quantitative gradation of p before u is in class `@LEXNAME@` and
 !!  old dictionaries would use ¹⁻B.
 !!  It is only a nominal compound based adjective that ends in u and has
 !!  p ~ 0 gradation here:
@@ -471,7 +471,7 @@ LEXICON ADJ_IKÄLOPPU
 !!  and none of the adjectives end in y and quantitative p gradation.
 
 LEXICON ADJ_LÖRPPÖ
-!!  The quantitative gradation of p before ö is in class {{@LEXNAME@}} and
+!!  The quantitative gradation of p before ö is in class `@LEXNAME@` and
 !!  old dictionaries would use ¹⁻B.
 !!€gt-norm:  Adjective gradations 1 p~0 ö
 !!€  lörppö: lörppö+A+Sg+Nom # blabbermouth
@@ -494,7 +494,7 @@ LEXICON ADJ_LÖRPPÖ
 0:ö  ADJ_FRONT_SUPERLATIVE  ;
 
 LEXICON ADJ_VELTTO
-!!  The quantitative gradation of t before o is in class {{@LEXNAME@}}, 
+!!  The quantitative gradation of t before o is in class `@LEXNAME@`, 
 !!  which was ¹⁻C in the dictionary.
 !!€gt-norm:  Adjective gradations 1 t~0 o
 !!€  veltto: veltto+A+Sg+Nom # lazy
@@ -518,7 +518,7 @@ LEXICON ADJ_VELTTO
 
 
 LEXICON ADJ_VIMMATTU
-!!  The quantitative gradation of t before u is in class {{@LEXNAME@}}, 
+!!  The quantitative gradation of t before u is in class `@LEXNAME@`, 
 !!  which was ¹⁻C in the dictionary. 
 !!  The u stems with quantitative t gradation are commonest with nut participle
 !!  passive derivation’s back form (-ttu).
@@ -544,7 +544,7 @@ LEXICON ADJ_VIMMATTU
 
 
 LEXICON ADJ_YLENNETTY
-!!  The quantitative gradation of t before y is in class {{@LEXNAME@}}, 
+!!  The quantitative gradation of t before y is in class `@LEXNAME@`, 
 !!  which was ¹⁻C in the dictionary. 
 !!  The u stems with quantitative t gradation are commonest with nut participle
 !!  passive derivation’s front (-tty).
@@ -569,7 +569,7 @@ LEXICON ADJ_YLENNETTY
 0:y  ADJ_FRONT_SUPERLATIVE  ;
 
 LEXICON ADJ_KYYTTÖ
-!!  The quantitative gradation of t before y is in class {{@LEXNAME@}}, 
+!!  The quantitative gradation of t before y is in class `@LEXNAME@`, 
 !!  which was ¹⁻C in the dictionary. 
 !!€gt-norm:  Adjective gradations 1 t~0 ö
 !!€  kyyttö: kyyttö+A+Sg+Nom # ?????
@@ -595,7 +595,7 @@ LEXICON ADJ_KYYTTÖ
 !!  instead of nothing in the weak grade.
 
 LEXICON ADJ_LAKO
-!!  The class for o final bisyllabic stems with optional ’ is {{@LEXNAME@}},
+!!  The class for o final bisyllabic stems with optional ’ is `@LEXNAME@`,
 !!  this is a subset of dictionary class ¹⁻D. 
 !!€gt-norm:  Adjective gradations 1 k~’~0 o
 !!€  lako: lako+A+Sg+Nom
@@ -628,7 +628,7 @@ LEXICON ADJ_LAKO
 
 LEXICON ADJ_KELPO
 !!  The qualitative gradation of p between vowels in o stems goes to v,
-!!  the class for this is {{@LEXNAME@}}, the dictionary class for this is
+!!  the class for this is `@LEXNAME@`, the dictionary class for this is
 !!  ¹⁻E.
 !!€gt-norm:  Adjective gradations 1 p~v o
 !!€  kelpo: kelpo+A+Sg+Nom # proper
@@ -656,7 +656,7 @@ LEXICON ADJ_KELPO
 !!  nor ö with p.
 
 LEXICON ADJ_MIETO
-!!  The gradation of t ~ d after o is in class {{@LEXNAME@}}, the
+!!  The gradation of t ~ d after o is in class `@LEXNAME@`, the
 !!  dictionary class for this is ¹⁻F.
 !!€gt-norm:  Adjective gradations 1 t~d o
 !!€  mieto: mieto+A+Sg+Nom # mild
@@ -680,7 +680,7 @@ LEXICON ADJ_MIETO
 
 
 LEXICON ADJ_VIIPALOITU
-!!  The gradation of t ~ d after u is in class {{@LEXNAME@}}, the
+!!  The gradation of t ~ d after u is in class `@LEXNAME@`, the
 !!  dictionary class for this is ¹⁻F.
 !!  The commonest t ~ d variation in u stems comes from nut participle’s
 !!  passive’s back form (-tu).
@@ -706,7 +706,7 @@ LEXICON ADJ_VIIPALOITU
 
 
 LEXICON ADJ_YKSILÖITY
-!!  The gradation of t ~ d after u is in class {{@LEXNAME@}}, the
+!!  The gradation of t ~ d after u is in class `@LEXNAME@`, the
 !!  dictionary class for this is ¹⁻F.
 !!  The commonest t ~ d variation in u stems comes from nut participle’s
 !!  passive’s front form (-ty).
@@ -733,7 +733,7 @@ LEXICON ADJ_YKSILÖITY
 !!  And there's none with t and ö
 
 LEXICON ADJ_LENKO
-!!  The adjectives with -nko stem belong to class {{@LEXNAME@}}, and the
+!!  The adjectives with -nko stem belong to class `@LEXNAME@`, and the
 !!  dictionary class was ¹⁻G.
 !!€gt-norm:  Adjective gradations 1 k~g o
 !!€  lenko: lenko+A+Sg+Nom # crooked
@@ -764,7 +764,7 @@ LEXICON ADJ_LENKO
 !
 LEXICON ADJ_MELTO
 !!  The quantitative gradation of t after l in o stems is in class 
-!!  {{@LEXNAME@}}, which corresponds to dictionary class ¹⁻I.
+!!  `@LEXNAME@`, which corresponds to dictionary class ¹⁻I.
 !!€gt-norm:  Adjective gradations 1 t~l o
 !!€  melto: melto+A+Sg+Nom # ?????
 !!€  mellossa: melto+A+Sg+Ine
@@ -788,7 +788,7 @@ LEXICON ADJ_MELTO
 
 LEXICON ADJ_PARANNELTU
 !!  The quantitative gradation of t after l in o stems is in class 
-!!  {{@LEXNAME@}}, which corresponds to dictionary class ¹⁻I.
+!!  `@LEXNAME@`, which corresponds to dictionary class ¹⁻I.
 !!  The common u stem after l is in nut participles passive (-tu):
 !!€gt-norm:  Adjective gradations 1 t~l u
 !!€  paranneltu: paranneltu+A+Sg+Nom # embettered
@@ -813,7 +813,7 @@ LEXICON ADJ_PARANNELTU
 
 LEXICON ADJ_VÄHÄTELTY
 !!  The quantitative gradation of t after l in o stems is in class 
-!!  {{@LEXNAME@}}, which corresponds to dictionary class ¹⁻I.
+!!  `@LEXNAME@`, which corresponds to dictionary class ¹⁻I.
 !!  As with y and t:
 !!€gt-norm:  Adjective gradations 1 t~l y
 !!€  vähätelty: vähätelty+A+Sg+Nom # belittled
@@ -839,7 +839,7 @@ LEXICON ADJ_VÄHÄTELTY
 
 LEXICON ADJ_VENTO
 !!  The quantitative gradation of t after n in o stems is in class 
-!!  {{@LEXNAME@}}, which corresponds to dictionary class ¹⁻J.
+!!  `@LEXNAME@`, which corresponds to dictionary class ¹⁻J.
 !!€gt-norm:  Adjective gradations 1 t~n o
 !!€  vento: vento+A+Sg+Nom # ?
 !!€  vennossa: vento+A+Sg+Ine
@@ -862,7 +862,7 @@ LEXICON ADJ_VENTO
 
 LEXICON ADJ_PANTU
 !!  The quantitative gradation of t after n in u stems is in class 
-!!  {{@LEXNAME@}}, which corresponds to dictionary class ¹⁻I.
+!!  `@LEXNAME@`, which corresponds to dictionary class ¹⁻I.
 !!  The common u stem after n is in nut participle’s passive’s back form (-tu):
 !!€gt-norm:  Adjective gradations 1 t~n u
 !!€  pantu: pantu+A+Sg+Nom # brewed
@@ -886,7 +886,7 @@ LEXICON ADJ_PANTU
 
 LEXICON ADJ_MENTY
 !!  The quantitative gradation of t after n in y stems is in class 
-!!  {{@LEXNAME@}}, which corresponds to dictionary class ¹⁻I.
+!!  `@LEXNAME@`, which corresponds to dictionary class ¹⁻I.
 !!  The common u stem after n is in nut participle’s passive’s front form
 !!  (-ty):
 !!€gt-norm:  Adjective gradations 1 t~n y
@@ -913,7 +913,7 @@ LEXICON ADJ_MENTY
 
 LEXICON ADJ_MARTO
 !!  The quantitative gradation of t after r in o stems is in class
-!!  {{@LEXNAME@}}, which corresponds to dictionary class ¹⁻J.
+!!  `@LEXNAME@`, which corresponds to dictionary class ¹⁻J.
 !!€gt-norm:  Adjective gradations 1 t~r o
 !!€  marto: marto+A+Sg+Nom # ???
 !!€  marrossa: marto+A+Sg+Ine
@@ -937,7 +937,7 @@ LEXICON ADJ_MARTO
 
 LEXICON ADJ_PURTU
 !!  The quantitative gradation of t after r in u stems is in class
-!!  {{@LEXNAME@}}, which corresponds to dictionary class ¹⁻J.
+!!  `@LEXNAME@`, which corresponds to dictionary class ¹⁻J.
 !!  The common u stem after r is in nut participle’s passive’s back form (-tu):
 !!€gt-norm:  Adjective gradations 1 t~r u
 !!€  purtu: purtu+A+Sg+Nom # bitten
@@ -961,7 +961,7 @@ LEXICON ADJ_PURTU
 
 LEXICON ADJ_PIERTY
 !!  The quantitative gradation of t after r in y stems is in class
-!!  {{@LEXNAME@}}, which corresponds to dictionary class ¹⁻J.
+!!  `@LEXNAME@`, which corresponds to dictionary class ¹⁻J.
 !!  The common u stem after r is in nut participle’s passive’s front fomr
 !!  (-ty):
 !!€gt-norm:  Adjective gradations 1 t~r y
@@ -987,13 +987,13 @@ LEXICON ADJ_PIERTY
 !!  There are no adjectives ending in -rtö. Just as well, the
 !!  class for UkU : UvU- is limited to few nouns we know.
 
-!!  !The special illative alternation with k gradation, unaltering stems
+!! ### The special illative alternation with k gradation, unaltering stems
 !!  The trisyllabic words ending with gradating long k have plural illative
 !!  in both strong and weak forms. 
 
 
 LEXICON ADJ_HUPAKKO
-!!  The class for trisyllabic -kko stems is {{@LEXNAME@}}, the corresponding
+!!  The class for trisyllabic -kko stems is `@LEXNAME@`, the corresponding
 !!  dictionary class is ⁴⁻D. 
 !!€gt-norm:  Adjectives 4 o
 !!€  hupakko: hupakko+A+Sg+Nom # silly girl
@@ -1018,7 +1018,7 @@ LEXICON ADJ_HUPAKKO
 0:o  ADJ_BACK_COMPARATIVE  ;
 0:o  ADJ_BACK_SUPERLATIVE  ;
 
-!!  !Adjective stems with i:e variations
+!! ### Adjective stems with i:e variations
 !!  The i stems of new i final words have i : e : 0 variation. These classes
 !!  include new loans ending in consonant, which use -i to form inflectional
 !!  stems.
@@ -1026,7 +1026,7 @@ LEXICON ADJ_HUPAKKO
 !!  variants:
 
 LEXICON ADJ_ABNORMI
-!!  The i finals with back vowel harmony go to class {{@LEXNAME@}}, where
+!!  The i finals with back vowel harmony go to class `@LEXNAME@`, where
 !!  old dictionary classification was ⁵.
 !!€gt-norm:  Adjectives 5 back
 !!€  abnormi: abnormi+A+Sg+Nom # abnorm
@@ -1046,7 +1046,7 @@ LEXICON ADJ_ABNORMI
 0:e  ADJ_BACK_SUPERLATIVE  ;
 
 LEXICON ADJ_STYDI
-!!  The i finals with front vowel harmony go to class {{@LEXNAME@}}, where
+!!  The i finals with front vowel harmony go to class `@LEXNAME@`, where
 !!  old dictionary classification was ⁵.
 !!€gt-norm:  Adjectives 5 front
 !!€  stydi: stydi+A+Sg+Nom # stiff
@@ -1067,7 +1067,7 @@ LEXICON ADJ_STYDI
 
 LEXICON ADJ_OPAAKKI
 !!  Stems with quantitative k gradation, i final and back harmony are in class 
-!!  {{@LEXNAME@}} and dictionary class ⁵⁻A or ⁵⁻D.
+!!  `@LEXNAME@` and dictionary class ⁵⁻A or ⁵⁻D.
 !!€gt-norm:  Adjectives 5 k~0 back
 !!€  opaakki: opaakki+A+Sg+Nom # opaque
 !!€  opaakissa: opaakki+A+Sg+Ine
@@ -1091,7 +1091,7 @@ LEXICON ADJ_OPAAKKI
 
 LEXICON ADJ_PINKKI
 !!  Stems with quantitative k gradation, i final and front harmony are in class
-!!  {{@LEXNAME@}} and dictionary class ⁵⁻A or ⁵⁻D.
+!!  `@LEXNAME@` and dictionary class ⁵⁻A or ⁵⁻D.
 !!€gt-norm:  Adjectives 5 k~0 front
 !!€  pinkki: pinkki+A+Sg+Nom # pink
 !!€  pinkissä: pinkki+A+Sg+Ine
@@ -1117,7 +1117,7 @@ LEXICON ADJ_PINKKI
 
 LEXICON ADJ_SIPPI
 !!  Stems with quantitative p gradation, i final and front harmony are in class
-!!  {{@LEXNAME@}} and dictionary class ⁵⁻B.
+!!  `@LEXNAME@` and dictionary class ⁵⁻B.
 !!€gt-norm:  Adjectives 5 p~0 front
 !!€  sippi: sippi+A+Sg+Nom # bust
 !!€  sipissä: sippi+A+Sg+Ine
@@ -1141,7 +1141,7 @@ LEXICON ADJ_SIPPI
 
 LEXICON ADJ_HURTTI
 !!  Stems with quantitative t gradation, i final and back harmony are in class
-!!  {{@LEXNAME@}} and dictionary class ⁵⁻C.
+!!  `@LEXNAME@` and dictionary class ⁵⁻C.
 !!€gt-norm:  Adjectives 5 t~0 back
 !!€  hurtti: hurtti+A+Sg+Nom # grunchy
 !!€  hurtissa: hurtti+A+Sg+Ine
@@ -1165,7 +1165,7 @@ LEXICON ADJ_HURTTI
 
 LEXICON ADJ_VÄÄRTTI
 !!  Stems with quantitative t gradation, i final and front harmony are in class
-!!  {{@LEXNAME@}} and dictionary class ⁵⁻C.
+!!  `@LEXNAME@` and dictionary class ⁵⁻C.
 !!€gt-norm:  Adjectives 5 t~0 front
 !!€  väärtti: väärtti+A+Sg+Nom # worthy
 !!€  väärtissä: väärtti+A+Sg+Ine
@@ -1191,7 +1191,7 @@ LEXICON ADJ_VÄÄRTTI
 
 LEXICON ADJ_TUHTI
 !!  Stems with t ~ d gradation, i final and back harmony are in class
-!!  {{@LEXNAME@}} and dictionary class ⁵⁻F.
+!!  `@LEXNAME@` and dictionary class ⁵⁻F.
 !!€gt-norm:  Adjectives 5 t~d back
 !!€  tuhti: tuhti+A+Sg+Nom # stocky
 !!€  tuhdissa: tuhti+A+Sg+Ine
@@ -1215,7 +1215,7 @@ LEXICON ADJ_TUHTI
 
 LEXICON ADJ_REHTI
 !!  Stems with t ~ d gradation, i final and front harmony are in class
-!!  {{@LEXNAME@}} and dictionary class ⁵⁻F.
+!!  `@LEXNAME@` and dictionary class ⁵⁻F.
 !!€gt-norm:  Adjectives 5 t~d front
 !!€  rehti: rehti+A+Sg+Nom
 !!€  rehdissä: rehti+A+Sg+Ine
@@ -1239,10 +1239,10 @@ LEXICON ADJ_REHTI
 
 !!  There are no adjectives with i stems with other gradations.
 
-!!  !Trisyllabic and longer i stems
+!! ### Trisyllabic and longer i stems
 
 LEXICON ADJ_ABNORMAALI
-!!  The i stems with trisyllabic allomorph sets have class {{@LEXNAME@}}, and
+!!  The i stems with trisyllabic allomorph sets have class `@LEXNAME@`, and
 !!  dictionary class of ⁶.
 !!€gt-norm:  Adjectives 6 back
 !!€  abnormaali: abnormaali+A+Sg+Nom # abnormal
@@ -1265,7 +1265,7 @@ LEXICON ADJ_ABNORMAALI
 0:e  ADJ_BACK_SUPERLATIVE  ;
 
 LEXICON ADJ_ÖYKKÄRI
-!!  The i stems with trisyllabic allomorph sets have class {{@LEXNAME@}}, and
+!!  The i stems with trisyllabic allomorph sets have class `@LEXNAME@`, and
 !!  dictionary class of ⁶.
 !!€gt-norm:  Adjectives 6 front
 !!€  öykkäri: öykkäri+A+Sg+Nom # chav
@@ -1289,7 +1289,7 @@ LEXICON ADJ_ÖYKKÄRI
 !!  There are no adjectives acting like nouns where i-final nominatives have
 !!  singular e stems.
 
-!!  !Bisyllabic A-stem adjectives
+!! ### Bisyllabic A-stem adjectives
 !!  The a stems differ from regular nouns in one more feature: some of them,
 !!  but not all, have a:e variation before the comparative stem. The selection
 !!  of this feature may be phonological, but it is complex, and often there
@@ -1299,7 +1299,7 @@ LEXICON ADJ_ÖYKKÄRI
 
 LEXICON ADJ_AAVA
 !!  Bisyllabic a stems with e comparative and j plurals are in class 
-!!  {{@LEXNAME@}}, and dictionary class ⁹.
+!!  `@LEXNAME@`, and dictionary class ⁹.
 !!€gt-norm:  Adjectives 9
 !!€  aava: aava+A+Sg+Nom # open (of fields, plains)
 !!€  aavaa: aava+A+Sg+Par
@@ -1323,7 +1323,7 @@ LEXICON ADJ_AAVA
 0  ADJ_BACK_SUPERLATIVE  ;
 
 LEXICON ADJ_TARKKA
-!!  The ka stem with e comparative and j plurals is {{@LEXNAME@}}, and the 
+!!  The ka stem with e comparative and j plurals is `@LEXNAME@`, and the 
 !!  dictionary class is ⁹-A or ⁹⁻D.
 !!€gt-norm:  Adjectives 9 k~0
 !!€  tarkka: tarkka+A+Sg+Nom # pedantic
@@ -1381,7 +1381,7 @@ LEXICON ADJ_RAAKA
 !!  No a final adjectives with quantitative p gradation.
 
 LEXICON ADJ_MATTA
-!!  The ta stem with j plurals is {{@LEXNAME@}}, and the dictionary class
+!!  The ta stem with j plurals is `@LEXNAME@`, and the dictionary class
 !!  is ⁹-C.
 !!€gt-norm:  Adjectives 9 t~0
 !!€  matta: matta+A+Sg+Nom # matta
@@ -1409,7 +1409,7 @@ LEXICON ADJ_MATTA
 
 
 LEXICON ADJ_HALPA
-!!  The pa : va stem with e comparative and j plurals is {{@LEXNAME@}}, and
+!!  The pa : va stem with e comparative and j plurals is `@LEXNAME@`, and
 !!  the dictionary class is ⁹⁻E.
 !!€gt-norm:  Adjectives 9 p~v
 !!€  halpa: halpa+A+Sg+Nom # cheap
@@ -1436,7 +1436,7 @@ LEXICON ADJ_HALPA
 0:vo  ADJ_BACK_SUPERLATIVE  ;
 
 LEXICON ADJ_EHTA
-!!  The ta : da stem with a comparative and j plurals is {{@LEXNAME@}}, and
+!!  The ta : da stem with a comparative and j plurals is `@LEXNAME@`, and
 !!  the dictionary class is ⁹⁻F.
 !!€gt-norm:  Adjectives 9 t~d
 !!€  ehta: ehta+A+Sg+Nom # legit
@@ -1465,7 +1465,7 @@ LEXICON ADJ_EHTA
 !!  None with k:g gradation.
 
 LEXICON ADJ_RAMPA
-!!  The pa : ma stem with e comparative and j plurals is {{@LEXNAME@}}, and
+!!  The pa : ma stem with e comparative and j plurals is `@LEXNAME@`, and
 !!  the dictionary class is ⁹⁻H.
 !!€gt-norm:  Adjectives 9 p~m
 !!€  rampa: rampa+A+Sg+Nom # crippled
@@ -1494,7 +1494,7 @@ LEXICON ADJ_RAMPA
 !!  No a stems with t:l gradations
 
 LEXICON ADJ_VIHANTA
-!!  The ta : na stem with a comparative and j plurals is {{@LEXNAME@}}, and
+!!  The ta : na stem with a comparative and j plurals is `@LEXNAME@`, and
 !!  the dictionary class is ⁹⁻J.
 !!€gt-norm:  Adjectives 9 p~n
 !!€  vihanta: vihanta+A+Sg+Nom # blooming
@@ -1522,12 +1522,12 @@ LEXICON ADJ_VIHANTA
 
 !!  And finally, no a stems with t:r or t:l gradations.
 
-!!  !Some other trisyllabic a finals with a : 0 plurals
+!! ### Some other trisyllabic a finals with a : 0 plurals
 !!  Mostly regular a comparatives, no a : o variation and more syllables. 
 !!  Common for va participles, and other derivations
 
 LEXICON ADJ_AALTOILEVA
-!!  The a : 0 stem is in class {{@LEXNAME@}} and the old dictionary used ¹⁰
+!!  The a : 0 stem is in class `@LEXNAME@` and the old dictionary used ¹⁰
 !!  as the paradigm class.
 !!€gt-norm:  Adjectives 10 back
 !!€  aaltoileva: aaltoileva+A+Sg+Nom # wavy
@@ -1552,7 +1552,7 @@ LEXICON ADJ_AALTOILEVA
 0  ADJ_BACK_SUPERLATIVE  ;
 
 LEXICON ADJ_TYÖLLISTETTÄVÄ
-!!  The ä : 0 stem is in class {{@LEXNAME@}} and the old dictionary used ¹⁰
+!!  The ä : 0 stem is in class `@LEXNAME@` and the old dictionary used ¹⁰
 !!  as the paradigm class.
 !!€gt-norm:  Adjectives 10 front
 !!€  työllistettävä: työllistettävä+A+Sg+Nom # employable
@@ -1577,7 +1577,7 @@ LEXICON ADJ_TYÖLLISTETTÄVÄ
 0  ADJ_FRONT_SUPERLATIVE  ;
 
 LEXICON ADJ_RUMA
-!!  For a:e comparatives in a:0 class use {{@LEXNAME@}}. No dictionary
+!!  For a:e comparatives in a:0 class use `@LEXNAME@`. No dictionary
 !!  classification or ~¹⁰, 
 !!€gt-norm:  Adjectives 10 a:e comparative
 !!€  ruma: ruma+A+Sg+Nom # ugly
@@ -1602,7 +1602,7 @@ LEXICON ADJ_RUMA
 0  ADJ_BACK_SUPERLATIVE  ;
 
 LEXICON ADJ_TYHMÄ
-!!  For ä:e comparatives in a:0 class use {{@LEXNAME@}}. No dictionary
+!!  For ä:e comparatives in a:0 class use `@LEXNAME@`. No dictionary
 !!  classification or ~¹⁰, 
 !!€gt-norm:  Adjectives 10 ä:e comparative
 !!€  tyhmä: tyhmä+A+Sg+Nom # stupid
@@ -2148,7 +2148,7 @@ LEXICON ADJ_LATUSKA
 0:a  ADJ_BACK_COMPARATIVE  ;
 0:o  ADJ_BACK_SUPERLATIVE  ;
 
-!!  !Special illative gradation in a stems
+!! ### Special illative gradation in a stems
 
 LEXICON ADJ_HAILAKKA
 !!  The a : o stem variation combines with trisyllabic class of special illatives
@@ -2293,7 +2293,7 @@ LEXICON ADJ_JÄREÄ
 0:ä  ADJ_FRONT_COMPARATIVE  ;
 0  ADJ_FRONT_SUPERLATIVE  ;
 
-!!  !Lexicalised comparatives
+!! ### Lexicalised comparatives
 !!  Most of the lexicalised comparatives are adjectives that go to this class.
 !!  The comparatives that are not lexicalised inflect exactly the same, though
 !!  some versions of morphology may cut off long comparative chains.
@@ -2340,7 +2340,7 @@ LEXICON ADJ_LÄHEMPI
 0:mä  ADJ_FRONT_COMPARATIVE  ;
 0:m  ADJ_FRONT_SUPERLATIVE  ;
 
-!!  !Long vowel stems
+!! ### Long vowel stems
 
 LEXICON ADJ_VAPAA
 !!€gt-norm:  Adjectives 17 a
@@ -2431,7 +2431,7 @@ LEXICON ADJ_GAY
 
 !!  There are not many direct adjective loans in general.
 
-!!  !Old e stems with i nominative
+!! ### Old e stems with i nominative
 !!  Some of the old e stems have i nominative but e as stem vowel for singular
 !!  forms. Most of these are not adjectives though, see full listing from the
 !!  noun pages.
@@ -2506,7 +2506,7 @@ LEXICON ADJ_TÄYSI
 !!  There are no adjective examples of other gradation variants or consonant
 !!  cluster simplifications in this class.
 
-!!  !Consonant-final stems
+!! ### Consonant-final stems
 !!  The consonant stems use inverted gradation if applicable, that is, the 
 !!  nominatives have end in consonants and their gradating consonants are in
 !!  weak form. Most of these are rarer for adjectives than nouns.
@@ -2549,7 +2549,7 @@ LEXICON ADJ_AVOIN
 
 !!  There are no other examples of n:m final variation before conjoining e.
 
-!!  !Caritives
+!! ### Caritives
 !!  The common case of n:m variation with conjoining a before singular stems is
 !!  from caritive suffix -tOn, that forms adjectives productively. 
 
@@ -2634,7 +2634,7 @@ LEXICON ADJ_LÄMMIN
 0:pimä  ADJ_FRONT_COMPARATIVE  ;
 0:pim  ADJ_FRONT_SUPERLATIVE  ;
 
-!!  !Lexicalised superlatives
+!! ### Lexicalised superlatives
 
 LEXICON ADJ_PAHIN
 !!€gt-norm:  Adjectives 35 back
@@ -2693,7 +2693,7 @@ mpa  ADJ_BACK_PARTITIVE_A  ;
 0:mma  ADJ_BACK_COMPARATIVE  ;
 0:mm  ADJ_BACK_SUPERLATIVE  ;
 
-!!  !nen suffixes
+!! ### nen suffixes
 !!  Adjectives are commonly formed with nen derivatonns.
 
 LEXICON ADJ_AAKKOSELLINEN
@@ -2731,7 +2731,7 @@ LEXICON ADJ_KYLMÄJÄRKINEN
 0:se  ADJ_FRONT_COMPARATIVE  ;
 0:s  ADJ_FRONT_SUPERLATIVE  ;
 
-!!  !s-final adjectives
+!! ### s-final adjectives
 
 !!  Most of the cases here are nouns from noun derivations.
 
@@ -2967,7 +2967,7 @@ LEXICON ADJ_HARRAS
 0:taa  ADJ_BACK_COMPARATIVE  ;
 0:ta  ADJ_BACK_SUPERLATIVE  ;
 
-!!  !t-finals
+!! ### t-finals
 
 LEXICON ADJ_OHUT
 !!€gt-norm:  Adjectives 43 back
@@ -3001,7 +3001,7 @@ LEXICON ADJ_EHYT
 0:e  ADJ_FRONT_COMPARATIVE  ;
 0  ADJ_FRONT_SUPERLATIVE  ;
 
-!!  !Lexicalised nut-participles
+!! ### Lexicalised nut-participles
 !!  Majority of lexicalised nut participles are adjectives.
 
 LEXICON ADJ_KULUNUT
@@ -3036,7 +3036,7 @@ LEXICON ADJ_ÄLLISTYNYT
 0:ee  ADJ_FRONT_COMPARATIVE  ;
 0:e  ADJ_FRONT_SUPERLATIVE  ;
 
-!!  !Old -e^ final stems
+!! ### Old -e^ final stems
 
 LEXICON ADJ_AHNE
 !!€gt-norm:  Adjectives 48 back
@@ -3105,7 +3105,7 @@ LEXICON ADJ_HELLE
 !!  Gapping almost all variants of gradations with e, as well as all dual
 !!  nominative stems.
 
-!!  !Exceptional adjectives
+!! ### Exceptional adjectives
 !!  The ones that do not fit in the official classes shown in dictionaries.
 
 LEXICON ADJ_PITKÄ
@@ -3183,7 +3183,7 @@ LEXICON ADJ_AINUT
 0:u  ADJ_BACK_ILLATIVE_SEEN  ;
 
 
-!!  !Plurales tantum?
+!! ### Plurales tantum?
 !!  Adjectives aren't typically plural words, but there are some in the
 !!  dictionaries.
 
@@ -3250,7 +3250,7 @@ LEXICON ADJ_NELJÄS
 
 
 
-!! !!Adjective inflection proper
+!! ## Adjective inflection proper
 
 
 
@@ -3355,7 +3355,7 @@ LEXICON ADJ_FRONT_SUPERLATIVE_STEMS
 0:mp    ADJ_FRONT_ILLATIVE_IIN    ;
 
 
-!! !!Regular adjective inflection
+!! ## Regular adjective inflection
 !! The adjective inflection apart from the comparative and superlative
 !! derivations is same as with nouns. I will only show examples here.
 

@@ -1,11 +1,11 @@
-!! !!!Verb inflection and derivation
+!! # Verb inflection and derivation
 
 !! The verbs' conjugation includes voice (in Finnish grammars also verbal 
 !! genus),  tense/mood (tempus/modus), personal endings and negation marker
 !! The verbs also have productive derivations to defective nouns as
 !! infinitives, and to adjectives as participles, which are considered to be 
 !! part of inflection and thus included in most versions 
-!! ([VISK § 105|http://scripta.kotus.fi/visk/sisalto.php?p?105]).
+!! ([VISK § 105](http://scripta.kotus.fi/visk/sisalto.php?p?105)).
 !! The morphology of participles and historical 4th infinitive is further
 !! detailed in section Deverbal nouns'  morphology.
 !!
@@ -16,7 +16,7 @@
 
 
 
-!!  !!Verb stem variation
+!! ## Verb stem variation
 !!  Verbs have no allomorphic variation per se, except for some assimilation
 !!  and variation of ð forms, but the stem variation is the same
 !!  as in nouns. The examples for verb stems are given for each class:
@@ -26,7 +26,7 @@
 !!  imperative 2nd plural, potential 1st singular, present passive, 
 !!  past passive, nut participle passive
 
-!!  !Verb stems without stem variation
+!! ### Verb stems without stem variation
 
 LEXICON VERB_KAUNISTUA
 !!  The u stems have no stem variation:
@@ -151,7 +151,7 @@ LEXICON VERB_ÄLLISTYÄ
 0:t  VERB_FRONT_TUPCP_0  ;
 0  VERB_FRONT_DERIV_PCPS  ;
 
-!!  !Verb stems with only gradation
+!! ### Verb stems with only gradation
 
 LEXICON VERB_HAUKKOA
 !!€gt-norm:  Verbs 52 k~0 o
@@ -675,7 +675,7 @@ LEXICON VERB_PUSERTUA
 0:rut  VERB_BACK_TUPCP_0  ;
 0:tu  VERB_BACK_DERIV_PCPS  ;
 
-!!  !Verbs with -a stems
+!! ### Verbs with -a stems
 !!  
 
 LEXICON VERB_MUTRISTAA
@@ -1223,7 +1223,7 @@ LEXICON VERB_SAARTAA
 0:ret  VERB_BACK_TUPCP_0  ;
 0:ta  VERB_BACK_DERIV_PCPS  ;
 
-!!  !Verbs with e stems
+!! ### Verbs with e stems
 
 LEXICON VERB_KYTKEÄ
 !!€gt-norm:  Verbs 58 front
@@ -1429,7 +1429,7 @@ LEXICON VERB_LÄHTEÄ
 0:hdet  VERB_FRONT_TUPCP_0  ;
 0:hte  VERB_FRONT_DERIV_PCPS  ;
 
-!!  !Verbs with i stems
+!! ### Verbs with i stems
 
 LEXICON VERB_KOSIA
 !!€gt-norm:  Verbs 61 back
@@ -1737,7 +1737,7 @@ LEXICON VERB_HYLKIÄ
 0:jit  VERB_FRONT_TUPCP_0  ;
 0:ki  VERB_FRONT_DERIV_PCPS  ;
 
-!!  !Verbs with long vowel stem
+!! ### Verbs with long vowel stem
 !!  These verbs also have da variant of a infinitive forms.
 
 LEXICON VERB_KOPIOIDA
@@ -1835,7 +1835,7 @@ LEXICON VERB_JÄÄDÄ
 0:ä  VERB_FRONT_DERIV_PCPS  ;
 !0:ä  VERB_FRONT_DERIV_NTI  ;
 
-!!  !Monosyllabic verbs with widening diphthong
+!! ### Monosyllabic verbs with widening diphthong
 !!  Widening diphthongs are simplified before past and conditional suffix i's
 !!  by removal of first component. 
 
@@ -1918,7 +1918,7 @@ LEXICON VERB_KÄYDÄ
 0:y  VERB_FRONT_DERIV_PCPS  ;
 !0:y  VERB_FRONT_DERIV_NTI  ;
 
-!!  !Verbs with consonant stems
+!! ### Verbs with consonant stems
 
 !!  Verbs with momentane derivation are common consonant stems.
 
@@ -2015,7 +2015,7 @@ LEXICON VERB_RANGAISTA
 0:gais  VERB_BACK_TUPCP_STRONG  ;
 0:kaise  VERB_BACK_DERIV_PCPS  ;
 
-!!  !Verbs with n, r, l, s stems
+!! ### Verbs with n, r, l, s stems
 !!  Notably, the a infinitive forms d assimilates to preceding consonant.
 
 LEXICON VERB_SURRA
@@ -2402,7 +2402,7 @@ LEXICON VERB_KIHERRELLÄ
 0:rel  VERB_FRONT_TUPCP_L  ;
 0:tele  VERB_FRONT_DERIV_PCPS  ;
 
-!!  !tse stuff
+!! ### tse stuff
 !!  Some verbs have possible optional heteroclitic indicative stems:
 
 LEXICON VERB_ISÄNNÖIDÄ
@@ -2549,7 +2549,7 @@ LEXICON VERB_NÄHDÄ
 0:h  VERB_FRONT_TUPCP_D  ;
 0:ke  VERB_FRONT_DERIV_PCPS  ;
 
-!!  !Verbs with -ne- stems
+!! ### Verbs with -ne- stems
 
 LEXICON VERB_KARHETA
 !!€gt-norm:  Verbs 72 back
@@ -2857,7 +2857,7 @@ LEXICON VERB_JULJETA
 0:jet  VERB_BACK_TUPCP_0  ;
 0:kene  VERB_BACK_DERIV_PCPS  ;
 
-!!  !Vowel lengthening(?) stems
+!! ### Vowel lengthening(?) stems
 
 LEXICON VERB_ARVATA
 !!€gt-norm:  Verbs 73 back
@@ -3942,7 +3942,7 @@ LEXICON VERB_HELLITÄ
 0:lit  VERB_FRONT_TUPCP_0  ;
 0:tiä  VERB_FRONT_DERIV_PCPS  ;
 
-!!  !Vowel stems with t:s variation
+!! ### Vowel stems with t:s variation
 
 LEXICON VERB_TAITAA
 !!€gt-norm:  Verbs 76 back
@@ -3980,7 +3980,7 @@ LEXICON VERB_TIETÄÄ
 0:det  VERB_FRONT_TUPCP_0  ;
 0:tä  VERB_FRONT_DERIV_PCPS  ;
 
-!!  !Verbs with defective paradigms
+!! ### Verbs with defective paradigms
 !!  For some verbs, the normative inflection does not allow full set of forms:
 
 LEXICON VERB_VIPAJAA
@@ -4021,7 +4021,7 @@ LEXICON VERB_ÄHKÄÄ
 0  VERB_FRONT_CONDITIONAL  ;
 0  VERB_FRONT_DERIV_PCPS  ;
 
-!!  !Verbs with exceptional inflection patterns
+!! ### Verbs with exceptional inflection patterns
 !!  There is a handful of verbs that does not fit to the patterns of old
 !!  dictionaries.
 
@@ -4963,10 +4963,10 @@ LEXICON AUX_VOIDA
 
 
 
-!! !!Verb inflection proper
+!! ## Verb inflection proper
 
 
-!! !Present vowel stems
+!! ### Present vowel stems
 
 LEXICON VERB_BACK_WEAK_PRESENT
 !!gt-norm: Verb weak present back
@@ -5020,7 +5020,7 @@ LEXICON VERB_FRONT_STRONG_PRESENT
 +Act+InfMa+Sg+Ins:%>mä%>n    VERB_FRONT_CLIT_OPT     ;
 +Act+Der/maisilla:%>mä»isi%>llä   VERB_FRONT_POSS_AN_OBL        ;
 
-!! !Verb 3rd singular forms
+!! ### Verb 3rd singular forms
 !! The third singular form of present tense has few allomorphs according to
 !! preceding vowel context, either lengthening or zero after long vowel stem:
 
@@ -5074,7 +5074,7 @@ LEXICON VERB_FRONT_3SG_Ä
 !!€ vääntää: vääntää+V+Act+Ind+Prs+Sg3 # twist
 +Act+Ind+Prs+Sg3:%>ä VERB_FRONT_CLIT_OPT     ;
 
-!! !Past forms
+!! ### Past forms
 
 LEXICON VERB_BACK_WEAK_PAST
 !!€gt-norm: Verb past back
@@ -5104,7 +5104,7 @@ LEXICON VERB_FRONT_STRONG_PAST
 +Act+Ind+Prt+Pl3:%>i%>vät  VERB_FRONT_CLIT_OPT     ;
 +Act+Ind+Prt+Sg3:%>i    VERB_FRONT_CLIT_OPT     ;
 
-!! !Imperatives
+!! ### Imperatives
 
 LEXICON VERB_BACK_IMPERATIVE
 !!€gt-norm: Verb imperative back
@@ -5126,7 +5126,7 @@ LEXICON VERB_FRONT_IMPERATIVE
 +Act+Imprt+Sg3:%>köön VERB_FRONT_CLIT_OPT     ;
 +Act+Imprt+ConNeg:%>kö   VERB_FRONT_CLIT_OPT     ;
 
-!! !Conditionals
+!! ### Conditionals
 
 LEXICON VERB_BACK_CONDITIONAL
 !!€gt-norm: Verb conditional back
@@ -5150,7 +5150,7 @@ LEXICON VERB_FRONT_CONDITIONAL
 +Act+Cond+Sg3:%>isi%>    VERB_FRONT_CLIT_OPT     ;
 +Act+Cond+ConNeg:%>isi VERB_FRONT_CLIT_OPT     ;
 
-!! !Potentials
+!! ### Potentials
 
 LEXICON VERB_BACK_POTENTIAL_N
 !!€gt-norm: Verb potential n back
@@ -5264,7 +5264,7 @@ LEXICON VERB_FRONT_POTENTIAL_R
 +Act+Ind+Prt+ConNeg+Sg:%>ryt  VERB_FRONT_CLIT_OPT     ;
 +Act+Ind+Prt+ConNeg+Pl:%>reet  VERB_FRONT_CLIT_OPT     ;
 
-!! !!Passive forms
+!! ## Passive forms
 !! The passive forms usually contain -ta-, -tä-, -da-, -dä-, element in them.
 !! The variation between the realisations is one key factor of determining the
 !! classification of the verb roots.
@@ -5365,7 +5365,7 @@ LEXICON VERB_FRONT_PASSIVE_N
 +Pss+Ind+Prs+Pe4+ConNeg:nä    VERB_FRONT_CLIT_OPT     ;
 
 
-!! !!Infinite verb forms
+!! ## Infinite verb forms
 
 LEXICON VERB_BACK_AINF
 !!€gt-norm: Verb a infinitive
@@ -5391,7 +5391,7 @@ LEXICON VERB_FRONT_EINF
 +Act+InfE+Sg+Ine:essä   VERB_FRONT_POSS_AN_OPT      ;
 +Act+InfE+Sg+Ins:en    VERB_FRONT_CLIT_OPT     ;
 
-!! !Participles
+!! ### Participles
 
 LEXICON VERB_BACK_TUPCP_STRONG
 !!€gt-norm: Verb nut participle passive tu
@@ -5465,7 +5465,7 @@ LEXICON VERB_FRONT_TUPCP_R
 +Pss+PrfPrc:0             ADJ_PIERTY     ;
 +Pss+Ind+Prt+ConNeg:ty    VERB_FRONT_CLIT_OPT     ;
 
-!! !Possessives for infinite verb forms
+!! ### Possessives for infinite verb forms
 LEXICON VERB_FRONT_POSS
 !!€gt-norm: Verb possessive front
 !!€ kutoakseni: kutoa+V+Act+InfA+Sg+Tra+PxSg1
@@ -5512,7 +5512,7 @@ LEXICON VERB_FRONT_POSS_AN
 +PxSg3:än    VERB_FRONT_CLIT_OPT     ;
 +PxPl3:än    VERB_FRONT_CLIT_OPT     ;
 
-!! !Verb clitics
+!! ### Verb clitics
 
 LEXICON VERB_BACK_CLIT
 !!€gt-norm: Verbs clitic back
@@ -5621,12 +5621,12 @@ LEXICON VERB_FRONT_POSS_AN_OPT
 0   VERB_FRONT_CLIT_OPT   ;
 0   #   ;
 
-!! !!Deverbal derivations
+!! ## Deverbal derivations
 !! Part of the deverbal derivation system in Finnish is so regular that it has
 !! been included as part of inflectional morphology in many traditional systems.
 !! These derivations are treated as inflection in our system as well.
 
-!! !-minen, "Fourth infinitive"
+!! ### -minen, "Fourth infinitive"
 
 !LEXICON VERB_BACK_DERIV_MINEN
 !€gt-norm: Verbs minen derivations
@@ -5637,7 +5637,7 @@ LEXICON VERB_FRONT_POSS_AN_OPT
 !€ näkeminen nähdä+V+Der/minen+Sg+Nom
 !+Der/minen:mi  NOUN_KYLKIÄINEN   ;
 
-!! !Participles
+!! ### Participles
 
 LEXICON VERB_BACK_DERIV_PCPS
 !!€gt-norm: Verbs participle back
