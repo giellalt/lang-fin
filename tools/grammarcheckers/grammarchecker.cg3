@@ -494,12 +494,12 @@ SET NOT-A-CC = WORD - A-CC ;
 # ------------------------------------
 SET LEX-ADV = Adv - (AA) ;
 
-SET NOT-ADV-DE            = WORD - Adv ;
+SET NOT-ADV-DE         = (*) - Adv ;
 SET NOT-ADV            = NOT-ADV-DE OR CLB ;
 SET NOT-ADV-N          = NOT-ADV - N;
 SET NOT-ADV-PCLE       = NOT-ADV - Pcle ;
 SET NOT-ADV-INDEF      = NOT-ADV - Indef ;
-SET NOT-A-ADV-PCLE = WORD - Pcle - A - Adv ; #
+SET NOT-A-ADV-PCLE 	   = (*) - Pcle - A - Adv ; #
 
 
 
@@ -621,6 +621,8 @@ SET CCCOMMA = CC OR COMMA ;
 
 #!! ## Grammarchecker sets
 
+LIST &syn-number_congruence-subj-verb = &syn-number_congruence-subj-verb ;
+
 LIST &err_agr = &err_agr ;
 LIST &err_agr_sg1 = &err_agr_sg1 ;
 LIST &err_agr_sg2 = &err_agr_sg2 ;
@@ -676,6 +678,53 @@ ADD:err_agr_sg3 (&err_agr_sg3) TARGET V IF (-1C Sg + Nom)(NOT -1 Interr)(NOT *-1
 ADD:err_agr_pl1 (&err_agr_pl1) TARGET V IF (NOT -1 Pl2 OR Interr)(-1 Pron + Pl1 + Nom) (0 V + Ind) (NOT 0 Pl1);
 ADD:err_agr_pl2 (&err_agr_pl2) TARGET V IF (NOT -1 Pl2 OR Interr)(-1 Pron + Pl2 + Nom) (0 V + Ind) (NOT 0 Pl2);
 ADD:err_agr_pl3 (&err_agr_pl3) TARGET V IF (NOT -1 Pl3)(-1 Pron + Pl3 + Nom) (0 V + Ind) (NOT 0 Pl3);
+
+
+#   vahvistanut
+#vahvistanut        vahvistaa+V+Act+Ind+Prt+ConNeg+Sg        0,000000
+#vahvistanut        vahvistaa+V+Act+PrfPrc+Sg+Nom        0,000000
+#
+#vahvistaneet
+#vahvistaneet        vahvistaa+V+Act+Ind+Prt+ConNeg+Pl        0,000000
+#vahvistaneet        vahvistaa+V+Act+PrfPrc+Pl+Nom        0,000000
+#
+#me
+#me        me+Pron+Pers+Pl1+Nom        0,000000
+#
+#olemme
+#olemme        olla+V+Act+Ind+Prs+Pl1        0,000000
+#
+#
+#Pron Pl1/Pl2/Pl3 + COPULAS Pl1/Pl2/Pl3 + ADV/PCLE + PrfPrc/ConNeg Sg>Pl
+
+	# PrfPrc Sg > PrfPrc Pl
+
+ADD:syn-number_congruence-subj-verb (&syn-number_congruence-subj-verb) TARGET (V Act ConNeg Sg) OR (V Act PrfPrc Sg Nom) IF (*-1 ("olla" V Act Ind Prs) BARRIER S-BOUNDARY LINK 0 Pl1 OR Pl2 OR Pl3)(NEGATE 0 (PrfPrc Pl) OR (ConNeg Pl));
+	## Pofeetta, Me olemme totisesti {vahvistanut} sinun laillisiksi vaimoiksesi kaikki ne, joille olet myöntänyt lesken osuudet, sekä ne, jotka omistat Jumalan antamina orjattarina sotasaaliista, sekä setäsi     tyttäret ja isäsi sisaren tyttäret, myöskin enosi tyttäret ja äitisi sisarten tyttäret, jotka kanssani pakenivat vainottuina uskonnon vuoksi; samoin on laillinen vaimosi sellainen uskovainen nainen, joka pyrkii avioliittoon kanssasi, mikäli suostut naimaan hänet. # vahvistanut> vahvistaneet (ConNeg Sg>ConNeg Pl)
+
+COPY:syn-number_congruence-subj-verb (Pl &SUGGEST) EXCEPT Sg AFTER PrfPrc OR ConNeg TARGET (V Act ConNeg Sg &syn-number_congruence-subj-verb) OR (V Act PrfPrc Sg Nom &syn-number_congruence-subj-verb);
+
+	# PrfPrc Pl > PrfPrc Sg 
+
+ADD:syn-number_congruence-subj-verb (&syn-number_congruence-subj-verb) TARGET (V Act ConNeg Pl) OR (V Act PrfPrc Pl Nom) IF (*-1 ("olla" V Act Ind Prs) BARRIER S-BOUNDARY LINK 0 Sg1 OR Sg2 OR Sg3)(NEGATE 0 (PrfPrc Sg) OR (ConNeg Sg));
+	## 
+
+COPY:syn-number_congruence-subj-verb (Sg &SUGGEST) EXCEPT Sg AFTER PrfPrc OR ConNeg TARGET (V Act ConNeg Pl &syn-number_congruence-subj-verb) OR (V Act PrfPrc Pl Nom &syn-number_congruence-subj-verb);
+
+
+	# relative sentences between the noun and the finite verb
+	
+LIST REL-ADV = ("mikä") ("joka") ("missä") ("mistä") ("mihin") ("jossa") ("josta") ("johon") ; #homonymous with relative pronouns
+	
+ADD:syn-number_congruence-subj-verb (&syn-number_congruence-subj-verb) TARGET (Act Ind Prt Pl3) IF (*-1 Rel OR REL-ADV LINK *-1 (N Sg Nom) OR (Pron Nom Sg3) BARRIER NOT-COMMA)(NEGATE 0 (PrfPrc Sg) OR (ConNeg Sg));
+	## Koira, josta hän välitti paljon, juoksivat pakoon.
+
+COPY:syn-number_congruence-subj-verb (Sg3 &SUGGEST) EXCEPT Pl3 TARGET (V Ind Pl3 &syn-number_congruence-subj-verb);
+
+ADD:syn-number_congruence-subj-verb (&syn-number_congruence-subj-verb) TARGET (Act Ind Prt Sg3) IF (*-1 Rel OR REL-ADV LINK *-1 (N Pl Nom) OR (Pron Nom Pl3) BARRIER NOT-COMMA)(NEGATE 0 (PrfPrc Sg) OR (ConNeg Sg));
+	## 
+
+COPY:syn-number_congruence-subj-verb (Pl3 &SUGGEST) EXCEPT Sg3 TARGET (V Ind Sg3 &syn-number_congruence-subj-verb);
 
 
 #!! ### Negation verb rules
