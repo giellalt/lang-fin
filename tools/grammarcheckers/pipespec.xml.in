@@ -80,6 +80,7 @@
     </cgspell>
     <cg><grammar n="disambiguator.cg3"/></cg>
     <cg><grammar n="spellchecker.cg3"/></cg>
+    <cg><grammar n="grammarchecker.cg3"/></cg>
     <suggest>
       <generator n="generator-gramcheck-gt-norm.hfstol"/>
       <messages n="errors.xml"/>
