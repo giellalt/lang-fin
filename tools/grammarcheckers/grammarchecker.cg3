@@ -726,6 +726,19 @@ ADD:syn-number_congruence-subj-verb (&syn-number_congruence-subj-verb) TARGET (A
 
 COPY:syn-number_congruence-subj-verb (Pl3 &SUGGEST) EXCEPT Sg3 TARGET (V Ind Sg3 &syn-number_congruence-subj-verb);
 
+	# Prs Sg3 > Prs Pl3
+	
+ADD:syn-number_congruence-subj-verb (&syn-number_congruence-subj-verb) TARGET (Act Ind Sg3) IF (*-1 (Pers Pl3 Nom) OR (N Pl Nom) OR (Dem Pl Nom) BARRIER S-BOUNDARY LINK NEGATE -1 CC LINK -1 (N Nom))(NEGATE 0 (Act Ind Pl3));
+	## He tulee.
+	## Koirat tulee.
+	## Ne tulee.
+
+ADD:syn-number_congruence-subj-verb (&syn-number_congruence-subj-verb) TARGET (Act Ind Sg3) IF (*-1 (N Nom) BARRIER S-BOUNDARY LINK -1 CC OR COMMA LINK -1 (N Nom))(NEGATE 0 (Act Ind Pl3));
+	## Koira ja kissa tulee.
+
+
+COPY:syn-number_congruence-subj-verb (Pl3 &SUGGEST) EXCEPT Sg3 TARGET (V Act Sg3 &syn-number_congruence-subj-verb);
+
 
 #!! ### Negation verb rules
 
