@@ -1,0 +1,102 @@
+!!!Digits and such expressions
+Digit-strings are used in place of numerals. They inflect with colon, like
+acronyms, and compound with hyphen only.
+
+Digits are constructed as several cyclic structures: integers, decimals or
+roman numerals.
+Zero alone works quite differently:
+
+__Digit zero examples:__
+* __0: __ {{0+Num+Sg+Nom }}
+
+
+
+
+__int digit loop examples:__
+* __13: __ {{13+Num+Card+Sg+Nom }}
+* __100: __ {{100+Num+Card+Sg+Nom }}
+* __0000005550000000: __ {{0000005550000000+Num+Card+Sg+Nom }}
+
+
+ __LEXICON ARABICLOOP_pirinen __ essentially allows any number-sign combination, but is like the other lgs
+
+
+__LEXICON ARABICLOOP_pirinen __ is for entries not looping back 
+
+The digit strings that end in 10 to 12 + 6n 0's are inflected alike:
+
+__int digit milliard loop examples:__
+* __1000000000: __ {{1000000000+Num+Card+Sg+Nom }}
+* __300000000000: __ {{300000000000+Num+Card+Sg+Nom }}
+* __123456000000000000000000: __ {{123456000000000000000000+Num+Card+Sg+Nom }}
+
+The digit strings that end in 6 to 9 + 6n 0's are inflected alike:
+
+__int digit million loop examples:__
+* __1000000: __ {{1000000+Num+Card+Sg+Nom }}
+* __300000000: __ {{300000000+Num+Card+Sg+Nom }}
+* __123456000000000000000: __ {{123456000000000000000+Num+Card+Sg+Nom }}
+
+Decimal digit strings start with any number of digits 0 to 9, followed
+by decimal separator comma. The decimal dot may be allowed as substandard
+variant.
+
+__decimal digit loop examples:__
+* __1,0: __ {{1,0+Num+Sg+Nom }}
+* __314,1: __ {{314,1+Num+Sg+Nom }}
+
+
+The decimal digit strings end in any number of digits 0 to 9, inflected
+along the last part.
+
+__decimal digit loop more examples:__
+* __3,141: __ {{3,141+Num+Sg+Nom }}
+* __123,345: __ {{123,345+Num+Sg+Nom }}
+
+The decimal digit strings with dot may be allowed as sub-standard option
+with respective analysis.
+
+!!!Roman numerals with inflection
+Roman numerals are composed the symbols M, D, C, L, X, V, I in ascending
+scale and some combinations, they denote ordinal numbers and inflect like
+ones.
+
+!!Main lexicon for roman digits
+This lexicon divides into four groups
+
+__roman numeral examples:__
+* __MM: __ {{MM+Num+Ord+Sg+Nom }}
+* __MCXI: __ {{MCXI+Num+Ord+Sg+Nom }}
+* __CMXCIX: __ {{CMXCIX+Num+Ord+Sg+Nom }}
+
+!!Roman numerals according to digital class, one by one
+!Roman thousands
+Thousands can be followed by any of other parts
+
+__roman numeral thousand examples:__
+* __MII: __ {{MII+Num+Ord+Sg+Nom }}
+* __MCCCXXII: __ {{MCCCXXII+Num+Ord+Sg+Nom }}
+
+
+!Roman hundreds
+Hundreds can be followed by anything but thousands:
+
+__roman numeral hundred examples:__
+* __CXXI: __ {{CXXI+Num+Ord+Sg+Nom }}
+* __DXXIV: __ {{DXXIV+Num+Ord+Sg+Nom }}
+
+!Roman tens
+Tens can be followed by ones:
+
+__roman numeral ten examples:__
+* __XIX: __ {{XIX+Num+Ord+Sg+Nom }}
+* __XXVII: __ {{XXVII+Num+Ord+Sg+Nom }}
+
+!Roman ones
+Ones come alone
+
+__roman numerals one to nine examples:__
+* __IX: __ {{IX+Num+Ord+Sg+Nom }}
+* __VIII: __ {{VIII+Num+Ord+Sg+Nom }}
+* __II: __ {{II+Num+Ord+Sg+Nom }}
+
