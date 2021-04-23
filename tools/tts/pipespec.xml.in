@@ -9,7 +9,7 @@
 
   <pipeline name="@GLANG@-ipalyser"
             language="@GLANG2@"
-            type="Analyser">
+            type="Ipalyser">
     <tokenize><tokenizer n="tokeniser-disamb-gt-desc.pmhfst"/></tokenize>
     <blanktag>
       <blanktagger n="analyser-gt-whitespace.hfst"/>
@@ -19,8 +19,15 @@
     <cg><grammar n="disambiguator.bin"/></cg>
     <cg><grammar n="functions.bin"/></cg>
     <cg><grammar n="dependency.bin"/></cg>
-    <tokenize><tokenizer n="transcriptor.pmhfst"/></tokenize>
-    <tokenize><tokenizer n="text2ipa.pmhfst"/></tokenize>
+    <normalise>
+      <normaliser n="transcriptor-gt-desc.hfstol"/>
+      <analyser n="analyser-gt-norm.hfstol"/>
+      <generator n="generator-gt-norm.hfstol"/>
+      <tags><tag n="ABBR"/><tag n="Roman"/><tag n="Arab"/></tags>
+    </normalise>
+    <!-- Add expansion of abbr expressions, digits etc -->
+    <!-- Add conversion to IPA as the last step:
+     multilingual based on language tags in the analysis -->
   </pipeline>
 
 </pipespec>
