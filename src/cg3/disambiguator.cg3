@@ -29,10 +29,10 @@ PARENTHESES = ("<(>" "<)>") ("<[>" "<]>") ("<{>" "<}>") ("<“>" "<”>");
 SETS
 
 LIST BOS = >>> ">>>" "<$START-P>" "<$start-p>" ; # look at BOS/EOS
-LIST EOS = <<< "<<<" "<$END-P>" "<$end-p>" ; 
-LIST <<< = <<< ; 
-LIST >>> = >>> ; 
-LIST ABC = "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n" "o" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z" 
+LIST EOS = <<< "<<<" "<$END-P>" "<$end-p>" ;
+LIST <<< = <<< ;
+LIST >>> = >>> ;
+LIST ABC = "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n" "o" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z"
 	  "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M" "N" "O" "P" "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z" ;
 LIST POS = N Pron A Num V Adv Adp Po Pr CC CS Pcle Interj ACR ;
 
@@ -40,19 +40,19 @@ LIST POS = N Pron A Num V Adv Adp Po Pr CC CS Pcle Interj ACR ;
 # ---------------
 
 
-LIST Np = N ; 
-LIST Ni = Ni ; 
-LIST N = N (V Der/minen) (V Der_minen) ; 
-LIST A = A ; 
-LIST APrc = A PrsPrc PrfPrc "tämä" "millainen" "sellainen" ; 
-LIST Adv = Adv ; 
+LIST Np = N ;
+LIST Ni = Ni ;
+LIST N = N (V Der/minen) (V Der_minen) ;
+LIST A = A ;
+LIST APrc = A PrsPrc PrfPrc "tämä" "millainen" "sellainen" ;
+LIST Adv = Adv ;
 LIST V = V ;
 LIST REAL-V = V ; # XXX fix.
 LIST Pron = Pron ;
 
 LIST Comp = Comp ; # comparative of adj
 LIST Sup = Sup ; # superlative of adj
-LIST CMP_SUP = Comp Sup ; 
+LIST CMP_SUP = Comp Sup ;
 
 LIST Foc/ka = Foc/ka ;
 
@@ -60,44 +60,44 @@ LIST Po = Po ;
 LIST Pr = Pr ;
 LIST Adpp = Adp ;
 LIST Adp = Adp Po Pr ;
-LIST PP = Adv Adp Po Pr ; # replaced PP->Pr, PSP->Po 
-#LIST PSP = PSP ; # PP preP, PSP postP 
-#LIST PSP-CASE = Gen Par Ela Ill Abl All ; 
+LIST PP = Adv Adp Po Pr ; # replaced PP->Pr, PSP->Po
+#LIST PSP = PSP ; # PP preP, PSP postP
+#LIST PSP-CASE = Gen Par Ela Ill Abl All ;
 
-LIST CC = CC "enkä" "etkä" "eikä" ("ei" Foc/ka) ("ei" Foc_ka) "emmekä" "ettekä" "eivätkä" "/" ; 
-LIST CCC = CC "enkä" "etkä" "eikä" ("ei" Foc/ka) ("ei" Foc_ka) "emmekä" "ettekä" "eivätkä" "/" "," ; 
-LIST CS = CS ; 
+LIST CC = CC "enkä" "etkä" "eikä" ("ei" Foc/ka) ("ei" Foc_ka) "emmekä" "ettekä" "eivätkä" "/" ;
+LIST CCC = CC "enkä" "etkä" "eikä" ("ei" Foc/ka) ("ei" Foc_ka) "emmekä" "ettekä" "eivätkä" "/" "," ;
+LIST CS = CS ;
 LIST Conj = CS CC "enkä" "etkä" "eikä" ("ei" Foc/ka) ("ei" Foc_ka) "emmekä" "ettekä" "eivätkä" ;
 
 LIST Part = Part ; # particle? still in use?
 LIST Pcle = Pcle ; # apertium <part>
 
-LIST Acro = Acro ACR ; 
-LIST AcroW = "sek" "min" "h" "l" "tl" "g" "kg" "m" "km" ; 
- 
+LIST Acro = Acro ACR ;
+LIST AcroW = "sek" "min" "h" "l" "tl" "g" "kg" "m" "km" ;
+
 # Clitics
 LIST Qst = Qst ; # -ko/-kö
-LIST Foc_ko = Foc/ko Foc_ko ; 
-LIST Foc_ka = Foc/ka Foc_ka ; 
-LIST Foc_han = Foc/han Foc_han ; 
-LIST Foc_kin = Foc/kin Foc_kin ; 
-LIST Foc_kaan = Foc/kaan Foc_kaan ; 
+LIST Foc_ko = Foc/ko Foc_ko ;
+LIST Foc_ka = Foc/ka Foc_ka ;
+LIST Foc_han = Foc/han Foc_han ;
+LIST Foc_kin = Foc/kin Foc_kin ;
+LIST Foc_kaan = Foc/kaan Foc_kaan ;
 
 # POS sub-categories
 # ------------------
 
-LIST Dem = Dem ; 
-LIST Det = Det ; 
+LIST Dem = Dem ;
+LIST Det = Det ;
 LIST Rel = Rel ;
 LIST Refl = Refl ;
 LIST Recipr = Recipr ;
 LIST Indef = Indef ;
 LIST Qu = Qu ; # Quantifier, what is difference with Qnt??
 LIST Qnt = Qnt ;
-LIST Tempr = Tempr ; 
-LIST INTERR-KO = Interr Qst ; 
-LIST Interr = Interr ;  # TP: INTG > Interr  
-LIST Interj = Interj ;  # FMT: INTJ > Interj 
+LIST Tempr = Tempr ;
+LIST INTERR-KO = Interr Qst ;
+LIST Interr = Interr ;  # TP: INTG > Interr
+LIST Interj = Interj ;  # FMT: INTJ > Interj
 
 LIST ParDem = (Pron Dem Sg Par) ;
 LIST ParRel = (Pron Rel Sg Par) ;
@@ -107,30 +107,30 @@ LIST ParInterr = (Pron Interr Sg Par) ;
 # --------------------------
 
 
-LIST Num = Num ; 
+LIST Num = Num ;
 LIST Ord = Ord ;
-LIST Card = Card ; 
+LIST Card = Card ;
 
-LIST PE4 = Pe4 ; 
-LIST Pers = Pers ; 
+LIST PE4 = Pe4 ;
+LIST Pers = Pers ;
 
-LIST Prop = Prop ; 
-LIST Pass = Pass Pss ; 
+LIST Prop = Prop ;
+LIST Pass = Pass Pss ;
 LIST Act = Act ;
 LIST ActPass = Act Pass Pss ;
 
-LIST Sg_Pl = (Sg Pl) ; 
-LIST Pl = Pl Sg/Pl ; 
-LIST Pl1 = Pl1 ; # apertium (p1 pl) ; 
-LIST Pl2 = Pl2 ; # apertium (p2 pl) ; 
-LIST Pl3 = Pl3 ; # apertium (p3 pl) ; 
-LIST Pl123 = Pl1 Pl2 Pl3 ; # apertium (p1 pl) (p2 pl) (p3 pl) ; 
+LIST Sg_Pl = (Sg Pl) ;
+LIST Pl = Pl Sg/Pl ;
+LIST Pl1 = Pl1 ; # apertium (p1 pl) ;
+LIST Pl2 = Pl2 ; # apertium (p2 pl) ;
+LIST Pl3 = Pl3 ; # apertium (p3 pl) ;
+LIST Pl123 = Pl1 Pl2 Pl3 ; # apertium (p1 pl) (p2 pl) (p3 pl) ;
 
-LIST Sg = Sg Sg/Pl ; 
+LIST Sg = Sg Sg/Pl ;
 LIST Sg1 = Sg1 ; # apertium (p1 sg)
-LIST Sg2 = Sg2 ; # apertium (p2 sg) 
+LIST Sg2 = Sg2 ; # apertium (p2 sg)
 LIST Sg3 = Sg3 ; # apertium (p3 sg)
-LIST Sg123 = Sg1 Sg2 Sg3 ; # apertium (p1 sg) (p2 sg) (p3 sg) ; 
+LIST Sg123 = Sg1 Sg2 Sg3 ; # apertium (p1 sg) (p2 sg) (p3 sg) ;
 
 LIST PxSg1 = PxSg1 ;
 LIST PxSg2 = PxSg2 ;
@@ -147,155 +147,155 @@ LIST SOMEPX =  PxSg1 PxSg2 PxSg3 PxPl1 PxPl2 PxPl3 Px3 ;
 # Noun Case sets
 # --------------
 
-LIST Nom = Nom ; 
-LIST Ade = Ade ; 
-LIST Gen = Gen ; 
-LIST Ela = Ela ; 
-LIST Ess = Ess ; 
-LIST Ill = Ill ; 
-LIST All = All ; 
-LIST Abl = Abl ; 
-LIST Ine = Ine ; 
-LIST Tra = Tra ; 
-LIST Ins = Ins ; 
+LIST Nom = Nom ;
+LIST Ade = Ade ;
+LIST Gen = Gen ;
+LIST Ela = Ela ;
+LIST Ess = Ess ;
+LIST Ill = Ill ;
+LIST All = All ;
+LIST Abl = Abl ;
+LIST Ine = Ine ;
+LIST Tra = Tra ;
+LIST Ins = Ins ;
 LIST Par = Par ;
-LIST Acc = Acc ; 
+LIST Acc = Acc ;
 LIST Abe = Abe ;
-LIST Com = Com ; 
+LIST Com = Com ;
 LIST Cmt = Cmt ;
 
-LIST NNom = (N Sg Nom) (N Pl Nom) ; 
-LIST NGen = (N Sg Gen) (N Pl Gen) ; 
-LIST NPar = (N Sg Par) (N Pl Par) ; 
+LIST NNom = (N Sg Nom) (N Pl Nom) ;
+LIST NGen = (N Sg Gen) (N Pl Gen) ;
+LIST NPar = (N Sg Par) (N Pl Par) ;
 
-LIST NomSg = (Nom Sg) ; 
-LIST NomPl = (Nom Pl) ; 
-LIST GenSg = (Gen Sg) ; 
-LIST GenPl = (Gen Pl) ; 
-LIST ParSg = (Par Sg) ; 
-LIST ParPl = (Par Pl) ; 
+LIST NomSg = (Nom Sg) ;
+LIST NomPl = (Nom Pl) ;
+LIST GenSg = (Gen Sg) ;
+LIST GenPl = (Gen Pl) ;
+LIST ParSg = (Par Sg) ;
+LIST ParPl = (Par Pl) ;
 
 LIST Pers1 = Sg1 Pl1 ;
 LIST Pers2 = Sg2 Pl2 ;
 LIST SGa = Sg Sg1 Sg2 Sg3 ;
 LIST PLa = Pl Pl1 Pl2 Pl3 ;
 
-SET NPSgNom = N + (Sg Nom) OR (Pron Nom) + SGa ; 
-SET NPPlNom = N + (Pl Nom) OR (Pron Nom) + PLa ; 
-SET NPSg3Nom = N + (Sg Nom) OR (Pron Sg Nom) OR (Pron Sg3 Nom) ; 
-SET NPPl3Nom = N + (Pl Nom) OR (Pron Pl Nom) OR (Pron Pl3 Nom) ; 
+SET NPSgNom = N + (Sg Nom) OR (Pron Nom) + SGa ;
+SET NPPlNom = N + (Pl Nom) OR (Pron Nom) + PLa ;
+SET NPSg3Nom = N + (Sg Nom) OR (Pron Sg Nom) OR (Pron Sg3 Nom) ;
+SET NPPl3Nom = N + (Pl Nom) OR (Pron Pl Nom) OR (Pron Pl3 Nom) ;
 
-SET NSgNom = N + (Sg Nom) ; 
-SET NSgAde = N + (Sg Ade) ; 
-SET NSgGen = N + (Sg Gen) ; 
-SET NSgEla = N + (Sg Ela) ; 
-SET NSgEss = N + (Sg Ess) ; 
-SET NSgIll = N + (Sg Ill) ; 
-SET NSgAll = N + (Sg All) ; 
-SET NSgAbl = N + (Sg Abl) ; 
-SET NSgIne = N + (Sg Ine) ; 
-SET NSgTra = N + (Sg Tra) ; 
-SET NSgIns = N + (Sg Ins) ; 
+SET NSgNom = N + (Sg Nom) ;
+SET NSgAde = N + (Sg Ade) ;
+SET NSgGen = N + (Sg Gen) ;
+SET NSgEla = N + (Sg Ela) ;
+SET NSgEss = N + (Sg Ess) ;
+SET NSgIll = N + (Sg Ill) ;
+SET NSgAll = N + (Sg All) ;
+SET NSgAbl = N + (Sg Abl) ;
+SET NSgIne = N + (Sg Ine) ;
+SET NSgTra = N + (Sg Tra) ;
+SET NSgIns = N + (Sg Ins) ;
 SET NSgPar = N + (Sg Par) ;
-SET NSgAcc = N + (Sg Acc) ; 
+SET NSgAcc = N + (Sg Acc) ;
 SET NSgAbe = N + (Sg Abe) ;
 SET NSgCmt = N + (Sg Cmt) ;
 
-SET NPlNom = N + (Pl Nom) ; 
-SET NPlAde = N + (Pl Ade) ; 
-SET NPlGen = N + (Pl Gen) ; 
-SET NPlEla = N + (Pl Ela) ; 
-SET NPlEss = N + (Pl Ess) ; 
-SET NPlIll = N + (Pl Ill) ; 
-SET NPlAll = N + (Pl All) ; 
-SET NPlAbl = N + (Pl Abl) ; 
-SET NPlIne = N + (Pl Ine) ; 
-SET NPlTra = N + (Pl Tra) ; 
-SET NPlIns = N + (Pl Ins) ; 
+SET NPlNom = N + (Pl Nom) ;
+SET NPlAde = N + (Pl Ade) ;
+SET NPlGen = N + (Pl Gen) ;
+SET NPlEla = N + (Pl Ela) ;
+SET NPlEss = N + (Pl Ess) ;
+SET NPlIll = N + (Pl Ill) ;
+SET NPlAll = N + (Pl All) ;
+SET NPlAbl = N + (Pl Abl) ;
+SET NPlIne = N + (Pl Ine) ;
+SET NPlTra = N + (Pl Tra) ;
+SET NPlIns = N + (Pl Ins) ;
 SET NPlPar = N + (Pl Par) ;
-SET NPlAcc = N + (Pl Acc) ; 
+SET NPlAcc = N + (Pl Acc) ;
 SET NPlAbe = N + (Pl Abe) ;
 SET NPlCmt = N + (Pl Cmt) ;
 
 
-SET ASgNom = APrc + (Sg Nom) ; 
-SET ASgAde = APrc + (Sg Ade) ; 
-SET ASgGen = APrc + (Sg Gen) ; 
-SET ASgEla = APrc + (Sg Ela) ; 
-SET ASgEss = APrc + (Sg Ess) ; 
-SET ASgIll = APrc + (Sg Ill) ; 
-SET ASgAll = APrc + (Sg All) ; 
-SET ASgAbl = APrc + (Sg Abl) ; 
-SET ASgIne = APrc + (Sg Ine) ; 
-SET ASgTra = APrc + (Sg Tra) ; 
-SET ASgIns = APrc + (Sg Ins) ; 
+SET ASgNom = APrc + (Sg Nom) ;
+SET ASgAde = APrc + (Sg Ade) ;
+SET ASgGen = APrc + (Sg Gen) ;
+SET ASgEla = APrc + (Sg Ela) ;
+SET ASgEss = APrc + (Sg Ess) ;
+SET ASgIll = APrc + (Sg Ill) ;
+SET ASgAll = APrc + (Sg All) ;
+SET ASgAbl = APrc + (Sg Abl) ;
+SET ASgIne = APrc + (Sg Ine) ;
+SET ASgTra = APrc + (Sg Tra) ;
+SET ASgIns = APrc + (Sg Ins) ;
 SET ASgPar = APrc + (Sg Par) ;
-SET ASgAcc = APrc + (Sg Acc) ; 
+SET ASgAcc = APrc + (Sg Acc) ;
 SET ASgAbe = APrc + (Sg Abe) ;
 SET ASgCmt = APrc + (Sg Cmt) ;
 
-SET APlNom = APrc + (Pl Nom) ; 
-SET APlAde = APrc + (Pl Ade) ; 
-SET APlGen = APrc + (Pl Gen) ; 
-SET APlEla = APrc + (Pl Ela) ; 
-SET APlEss = APrc + (Pl Ess) ; 
-SET APlIll = APrc + (Pl Ill) ; 
-SET APlAll = APrc + (Pl All) ; 
-SET APlAbl = APrc + (Pl Abl) ; 
-SET APlIne = APrc + (Pl Ine) ; 
-SET APlTra = APrc + (Pl Tra) ; 
-SET APlIns = APrc + (Pl Ins) ; 
+SET APlNom = APrc + (Pl Nom) ;
+SET APlAde = APrc + (Pl Ade) ;
+SET APlGen = APrc + (Pl Gen) ;
+SET APlEla = APrc + (Pl Ela) ;
+SET APlEss = APrc + (Pl Ess) ;
+SET APlIll = APrc + (Pl Ill) ;
+SET APlAll = APrc + (Pl All) ;
+SET APlAbl = APrc + (Pl Abl) ;
+SET APlIne = APrc + (Pl Ine) ;
+SET APlTra = APrc + (Pl Tra) ;
+SET APlIns = APrc + (Pl Ins) ;
 SET APlPar = APrc + (Pl Par) ;
-SET APlAcc = APrc + (Pl Acc) ; 
+SET APlAcc = APrc + (Pl Acc) ;
 SET APlAbe = APrc + (Pl Abe) ;
 SET APlCmt = APrc + (Pl Cmt) ;
 
-LIST Gen_Par = Gen Par ; 
-LIST Gen_Par_Acc = Gen Par Acc ; 
-LIST Gen_Punct = Gen Punct ; 
-LIST Ela_Abl = Ela Abl ; 
-LIST Ela_Tra_Ill_All = Ela Tra Ill All ; 
-LIST LOC-CASE = Ine Ela Ill Ade Abl All ; 
+LIST Gen_Par = Gen Par ;
+LIST Gen_Par_Acc = Gen Par Acc ;
+LIST Gen_Punct = Gen Punct ;
+LIST Ela_Abl = Ela Abl ;
+LIST Ela_Tra_Ill_All = Ela Tra Ill All ;
+LIST LOC-CASE = Ine Ela Ill Ade Abl All ;
 
 
-LIST Ill_All = Ill All ; 
-LIST Ill_Tra = Ill Tra ; 
-LIST Ill_Tra_All = Ill Tra All ; 
+LIST Ill_All = Ill All ;
+LIST Ill_Tra = Ill Tra ;
+LIST Ill_Tra_All = Ill Tra All ;
 
-LIST Nom_Gen_Par = Nom Gen Par ; 
-LIST Nom_Par = Nom Par ; 
+LIST Nom_Gen_Par = Nom Gen Par ;
+LIST Nom_Par = Nom Par ;
 
-LIST SUBJECT-CASE = Nom Gen Par ; 
-LIST NONSUBJECT-CASE = Ess Tra Ine Ela Ill Ade Abl All Abe Com Ins ; 
-LIST NOT-Gen-CASE = Nom Par Ine Ela Ill Ade Abl All Ess Tra Abe Com Ins ; 
+LIST SUBJECT-CASE = Nom Gen Par ;
+LIST NONSUBJECT-CASE = Ess Tra Ine Ela Ill Ade Abl All Abe Com Ins ;
+LIST NOT-Gen-CASE = Nom Par Ine Ela Ill Ade Abl All Ess Tra Abe Com Ins ;
 LIST ALLCASES = Nom Gen Acc Par Abl Ade All Ela Ill Ine Ess Tra Abe Com Ins Loc ;
 
-LIST Par_Gen = Par Gen ; 
-LIST Par_Punct = Par Punct ; 
-LIST INT-LOC = Ine Ela Ill ; 
-LIST EXT-LOC = Ade Abl All ; 
+LIST Par_Gen = Par Gen ;
+LIST Par_Punct = Par Punct ;
+LIST INT-LOC = Ine Ela Ill ;
+LIST EXT-LOC = Ade Abl All ;
 
 
 
-# Verbal Properties 
+# Verbal Properties
 # -------------------
 
-LIST Neg = Neg ; 
+LIST Neg = Neg ;
 LIST NEGV = "ei" ;
 LIST ConNeg = ConNeg ; # choose one of them later
 
-LIST Prs = Prs ; 
-LIST Prt = Prt ; 
+LIST Prs = Prs ;
+LIST Prt = Prt ;
 LIST Prs_Prt = Prs Prt ;
 
-LIST AgPrc = AgPrc ; # ma as adjectival modifier 
+LIST AgPrc = AgPrc ; # ma as adjectival modifier
 LIST PrfPrc = PrfPrc ; # nut / PrfPcp
 LIST PrsPrc = PrsPrc ; # va / PrsPrc
-LIST PCP = AgPrc PrfPrc PrsPrc ; 
+LIST PCP = AgPrc PrfPrc PrsPrc ;
 LIST PPPCPs = PrfPrc PrsPrc ;
 LIST PCPs = AgPrc PrfPrc PrsPrc ;
 
-LIST PrsPrc_InfMa_InfE_REF_TEMP = PrsPrc (PrfPrc Gen) (PrfPrc Par) InfMa InfE ; 
+LIST PrsPrc_InfMa_InfE_REF_TEMP = PrsPrc (PrfPrc Gen) (PrfPrc Par) InfMa InfE ;
 LIST Imprt = Imprt ;
 
 LIST Ind = Ind ;
@@ -304,17 +304,17 @@ LIST Pot = Pot ;
 
 LIST FINV = Ind Cond Imprt Pot ;
 
-LIST InfA = InfA ; 
+LIST InfA = InfA ;
 LIST InfE = IIInf InfE ;
-LIST InfMa = InfMa ; 
+LIST InfMa = InfMa ;
 
-LIST InfA23 = InfA InfE InfMa ; 
-LIST InfA_3 = InfA InfMa ; 
+LIST InfA23 = InfA InfE InfMa ;
+LIST InfA_3 = InfA InfMa ;
 
-LIST InfV = InfA InfE InfMa ; # Not sure I should count PrfPrc PrsPrc as  
-LIST InfV-PCPs = InfA InfE InfMa PrfPrc PrsPrc ; 
+LIST InfV = InfA InfE InfMa ; # Not sure I should count PrfPrc PrsPrc as
+LIST InfV-PCPs = InfA InfE InfMa PrfPrc PrsPrc ;
 
-LIST Abbr = Abbr ; 
+LIST Abbr = Abbr ;
 #LIST AD = AD ; Pcle
 
 
@@ -328,253 +328,253 @@ LIST DV-US = DV-US ;  # muodostus, no spec tag
 #LIST DER = DA-UUS DA-US DN-IneN DN-LAIneN DN-LLIneN DN-UUS DN-MINEN Der/minen Der/u Der_minen ; # Added with _
 LIST DER = Der/inen Der/ja Der/lainen Der/llinen Der/minen Der/u Der_inen Der_ja Der_lainen Der_llinen Der_minen Der_u ; # Added with _
 
-#LIST DV = DV-MINEN DV-US DV-NTA DV-TTA ; 
-LIST DV = Der/minen Der_minen ; 
+#LIST DV = DV-MINEN DV-US DV-NTA DV-TTA ;
+LIST DV = Der/minen Der_minen ;
 
-# All derivation tags in omorfi: 
-#   +Der/inen +Der/ja +Der/lainen +Der/llinen 
-#   +Der/minen +Der/oi +Der/sti +Der/tar +Der/ton 
+# All derivation tags in omorfi:
+#   +Der/inen +Der/ja +Der/lainen +Der/llinen
+#   +Der/minen +Der/oi +Der/sti +Der/tar +Der/ton
 #   +Der/tse +Der/ttain +Der/u +Der/vs
 
-LIST N-DER = Der/minen Der/u Der/ja Der/tar Der_minen Der_u Der_ja Der_tar; 
+LIST N-DER = Der/minen Der/u Der/ja Der/tar Der_minen Der_u Der_ja Der_tar;
 
-LIST Der_minen = Der/minen Der_minen ; 
-LIST Der_inen = Der/inen Der_inen ; 
+LIST Der_minen = Der/minen Der_minen ;
+LIST Der_inen = Der/inen Der_inen ;
 LIST Der_sti = Der/sti Der_sti ;
 
 
 # Phrasal groups
 # --------------
 
-LIST AD_PCP = Adv Pcle PrfPrc PrsPrc ; 
+LIST AD_PCP = Adv Pcle PrfPrc PrsPrc ;
 #LIST AD-A = AD-A ; not used, don't have this combined tag anymore (A Adv Pcle) ;
 LIST A-A_N-PCP = A PrfPrc PrsPrc ; # removed A/N
 LIST A-A_N-Q = A Qu Pcle ;   # HIEMAN, HIUKAN - Pcle, so added Pcle, removed A/N
 LIST A_AD-A = A Adv Pcle ; # removed A/N AD-A
 LIST A_AD-A_Q = A Adv Pcle Qu ; # removed A/N AD-A
 LIST A_Adv = A Adv ; # removed A/N
-LIST A_Adv_PCP_Det_Q = A Adv PrfPrc PrsPrc Det Qu ; 
-LIST A_N = A N A/N ; 
+LIST A_Adv_PCP_Det_Q = A Adv PrfPrc PrsPrc Det Qu ;
+LIST A_N = A N A/N ;
 LIST A_N_Q_Pron_PCP_Num = A N Qu Pron PrfPrc PrsPrc Num ; # removed A/N
-LIST A_Num_Pron_Q = A Num Pron Qu ; 
+LIST A_Num_Pron_Q = A Num Pron Qu ;
 LIST A_Q_Pron = A Qu Pron ; # removed A/N
 LIST A_PCP = A PrfPrc PrsPrc ;
 
-LIST C_Adv = CS CC Adv ; 
-LIST C-Adv-ETC = CS CC Adv >>> "<,>" "olla" ; 
+LIST C_Adv = CS CC Adv ;
+LIST C-Adv-ETC = CS CC Adv >>> "<,>" "olla" ;
 
 LIST N_Pron = N Pron ; # 1 with "toimia"
-LIST N_Pron_Q = N Pron Qu ; 
+LIST N_Pron_Q = N Pron Qu ;
 LIST N_V_A_Pron_Q = N V A Pron Qu ;  # removed A/N
-LIST N_Pron_Q_V_SUP = N Pron Qu V Sup ; 
+LIST N_Pron_Q_V_SUP = N Pron Qu V Sup ;
 
 
 #LIST Ela-POSP = "asti" "huolimatta" ; not used
 #LIST Ela-PREP = "huolimatta" ; not used
 
-LIST NomHEAD = N Pron Num (V Der/minen) (V Der_minen) ; 
+LIST NomHEAD = N Pron Num (V Der/minen) (V Der_minen) ;
 #LIST NomINAL-FORM = InfA InfE InfMa PrfPrc PrsPrc ; not used
 
-LIST VFIN = Prs Prt Cond Pot Neg Imprt ; 
-LIST VFIN-C = Prs Prt Cond Pot Neg Imprt CS CC ; 
-LIST VFIN-C-MYOS = Prs Prt Cond Pot Neg Imprt CS CC "myös" ; 
-LIST VFIN-PCP = Prs Prt Cond Pot Neg Imprt PrfPrc PrsPrc ; 
+LIST VFIN = Prs Prt Cond Pot Neg Imprt ;
+LIST VFIN-C = Prs Prt Cond Pot Neg Imprt CS CC ;
+LIST VFIN-C-MYOS = Prs Prt Cond Pot Neg Imprt CS CC "myös" ;
+LIST VFIN-PCP = Prs Prt Cond Pot Neg Imprt PrfPrc PrsPrc ;
 #LIST VFIN_PrsPrc = Prt Prs Cond Pot PrsPrc ; not used
 LIST VFIN_PrsPrc_Inf = Prt Prs Cond Pot PrsPrc (PrfPrc Gen) (PrfPrc Par) InfA InfE InfMa ;
 
 # Word lists
 # ----------
 
-LIST AD-HYVIN = "aika" "aikaisin" "alas" "alhaalla" "alhaalta" "alhaalle" "harvoin"  "hiljaa" "kauan" "kauas" "kaukaa" "kaukana" "paljon" "pian" "sekaisin"  "tarkoin" "suoraan" "usein" "varhain" "yksin" "yhtä" "mielellään" "vähän"  "lähellä" "läheltä" "lähelle" "myöhään" ; 
-LIST AD-MILTEI = "kokonaan" "hiljaa" "suoraan" "yksin" "sekaisin" "tyystin" "täysin" ; 
-LIST AD-PALJON = "aika" "erittäin" "ihan" "hyvin" "kovin" "kyllin" "liian"  "melko" "niin" "noin" "näin" "perin" "sangen" "varsin" "ylen"  "yhtä" "jokseenkin" "kylliksi" "tarpeeksi" "vallan" "kuinka"  "miten" "oikein" ; 
-LIST AD+PrfPrc = "ailahdella" "arveluttaa" "haastaa" "haavoittua" "houkutella" "huomata" "huvittaa" "ilahduttaa" "kannattaa" "raivostua" "kattaa" "kiehtoa" "kiinnostaa" "kunnioittaa" "kuulua" "kuvata" "laskelmoida" "luottaa" "luvata" "mahtailla" "mullistaa" "painaa" "paljastaa" "rasittaa" "rohkaista" "sopia" "taitaa" "valaista"  "vaatia" "vaihdella" "vakuuttaa" "uhata" "toivoa" "suositella" "suoda" "tarttua" "tavoitella" "merkitä" "uskoa" "valittaa" "luulla" "yllättää" "tuomita" ; 
-LIST AD+PrsPrc = "alistaa" "ansaita" "arvostaa" "hallita" "hermostua" "huolestua" "innostua" "kiinnostua" "kiusaantua" "kokea" "loukkaantua" "masentua" "pelkistää" "pettyä" "pitää" "hillitä" "rajoittaa" "saastua" "suosia" "tyrmistyä" "vaivautua" "vakuuttua" ; 
-LIST ADSET = "hyvin" "melko" "melkein" "kovin" "niin" "näin" ; 
-LIST AIKA = "aika" ; 
-LIST AIVAN-IHAN = "aivan" "ihan" "melkein" ; 
-LIST ALETA = "aleta" ; 
-LIST All = All ; 
-LIST All-POSP = "asti" ; 
-LIST ASIA = "asia" "ruoka"; 
-LIST ASTI = "asti" "saakka" ; 
-LIST ASTUA = "astua" ; 
-LIST AUX-S = "itse" "kaikki" "kumpikin" "molemmat" ; 
-LIST AVOSYLIN = "avo_syli" ; 
-LIST Gen-PREP = "yli" "läpi" ; 
+LIST AD-HYVIN = "aika" "aikaisin" "alas" "alhaalla" "alhaalta" "alhaalle" "harvoin"  "hiljaa" "kauan" "kauas" "kaukaa" "kaukana" "paljon" "pian" "sekaisin"  "tarkoin" "suoraan" "usein" "varhain" "yksin" "yhtä" "mielellään" "vähän"  "lähellä" "läheltä" "lähelle" "myöhään" ;
+LIST AD-MILTEI = "kokonaan" "hiljaa" "suoraan" "yksin" "sekaisin" "tyystin" "täysin" ;
+LIST AD-PALJON = "aika" "erittäin" "ihan" "hyvin" "kovin" "kyllin" "liian"  "melko" "niin" "noin" "näin" "perin" "sangen" "varsin" "ylen"  "yhtä" "jokseenkin" "kylliksi" "tarpeeksi" "vallan" "kuinka"  "miten" "oikein" ;
+LIST AD+PrfPrc = "ailahdella" "arveluttaa" "haastaa" "haavoittua" "houkutella" "huomata" "huvittaa" "ilahduttaa" "kannattaa" "raivostua" "kattaa" "kiehtoa" "kiinnostaa" "kunnioittaa" "kuulua" "kuvata" "laskelmoida" "luottaa" "luvata" "mahtailla" "mullistaa" "painaa" "paljastaa" "rasittaa" "rohkaista" "sopia" "taitaa" "valaista"  "vaatia" "vaihdella" "vakuuttaa" "uhata" "toivoa" "suositella" "suoda" "tarttua" "tavoitella" "merkitä" "uskoa" "valittaa" "luulla" "yllättää" "tuomita" ;
+LIST AD+PrsPrc = "alistaa" "ansaita" "arvostaa" "hallita" "hermostua" "huolestua" "innostua" "kiinnostua" "kiusaantua" "kokea" "loukkaantua" "masentua" "pelkistää" "pettyä" "pitää" "hillitä" "rajoittaa" "saastua" "suosia" "tyrmistyä" "vaivautua" "vakuuttua" ;
+LIST ADSET = "hyvin" "melko" "melkein" "kovin" "niin" "näin" ;
+LIST AIKA = "aika" ;
+LIST AIVAN-IHAN = "aivan" "ihan" "melkein" ;
+LIST ALETA = "aleta" ;
+LIST All = All ;
+LIST All-POSP = "asti" ;
+LIST ASIA = "asia" "ruoka";
+LIST ASTI = "asti" "saakka" ;
+LIST ASTUA = "astua" ;
+LIST AUX-S = "itse" "kaikki" "kumpikin" "molemmat" ;
+LIST AVOSYLIN = "avo_syli" ;
+LIST Gen-PREP = "yli" "läpi" ;
 LIST Gen-WORD = "metri" "milli_metri" "kilo_metri" "vuosi" "päivä" "kuu_kausi"  "minuutti" "sekunti" "tunti" "vuoro_kausi" "maa" "prosentti" "paras" "markka"  "penni" "dollari" "kruunu" "henkilö" "kierros" "maa" "maisema" "uutinen" "tienoo" ;
 LIST HARVA = "harva" "kumpikin" "suora" "enin" ; # "enin" added 19.01.2015 -FMT+KM
-LIST HARVA-SET = "asua" "tahti" "hammas" "verkko" "pensaikko" "asutus" ; 
-LIST HITTO = Interj "hitto" "herra_jumala" "kuinka" "sinä" "te" "<\!>"  "hellanlettas" "saatana" "perkele" "vittu" "voi" ; 
-LIST HYVA = "hyvä" ; 
-LIST HYVA_HUONO = "hyvä" "huono" "ikävä" "kiva" "mukava" "hauska" "järkevä"  "vaikea" "helppo" "mahdollinen" "mahdoton" "tärkeä" "hankala"  "aiheellinen" "tarpeellinen" "välttämätön" ; 
-LIST HYVANSA = "hyvänsä" ; 
-LIST HYVIN-1 = "hyvin" ; 
-LIST HYVIN = "aikaisin" "alas" "alhaalla" "alhaalta" "alhaalle" "harvoin" "hiljaa" "kauan" "kauas" "kaukaa" "kaukana" "paljon" "pian" "sekaisin" "tarkoin" "suoraan" "usein" "varhain" "yksin" "mielellään" "vähän" "lähellä" "läheltä" "lähelle" "hyvin" "tyystin" "kovin" "monasti" "paljon" "usein" "ylhäällä" "usea" "harva" "moni" "monta" "kovaa" "hiljaa" "täynnä" ; 
-LIST Ill-POSP = "asti" ; 
-LIST Ill-VERB = "vaikuttaa" "rientää" "siirtää" "siirtyä" "pyytää" "tuoda" ; 
-LIST ITSE = "itse" ; 
-LIST JALKEEN = "jälkeen" ; 
-LIST JOHDOSTA = "johdosta" ; 
-LIST JOKA = "joka" ; 
-LIST JOKIN = "jokin" ; 
-LIST JUURI = "juuri" ; 
-LIST KAIKKI = "kaikki" ; 
-LIST KAIKKIAAN = "kaikkiaan" ; 
-LIST KANSSA = "kanssa" ; 
-LIST KAUPPA = "kauppa" ; 
-LIST KAUTTA = "kautta" ; 
-LIST KELLO = "kello" "klo" ; 
-LIST KERRAN = "kerta" ; # NB KERRAN NOT YET Adv IN FINTWOL ; 
-LIST KERTA = "kerta" "tapaus" "paikka" "puoli" "suhde" "suunta" "ainoa" "ikinen" "käänne" "lähtö" ; 
-LIST KESKUSTA = "keskusta" ; 
-LIST KIELI = "kieli" "virka_kieli" "kieli_muoto" "kieli_kunta" "kieli_kohtainen" "suku_kieli" "kieli_perhe" "opiskelu" "opiskella" "opettaa" "opetus" "tyttö_koulu" "poika_koulu" "hallinto_kieli" "yli_opisto" "korkea_koulu" "perus_koulu" "koulu" "opetus_ohjelma" ; 
-LIST KO = Qst ; 
-LIST KOKO = "koko" ; 
-LIST KOOTA = "koota" "haluta" "siirtää" "siirtyä" "tulla" "mennä" "ottaa" "vetää" "sijoittaa" "majoittaa" "muuttaa" ; 
-LIST KUIN = "kuin" ; 
-LIST KYSY = "kysyä" "kysymys" "tiedustelu" "tiedustella" Qst ; 
-LIST LAIllA = "lailla" ; 
-LIST MAANANTAI = "maanantai" "tiistai" "keskiviikko" "torstai" "perjantai"  "lauantai" "sunnuntai" ; 
-LIST LIIAN = "liian" ; 
-LIST LUKU = "num-luku" ; 
-LIST MAKSAA = "maksaa" "tuntua" ; 
-LIST MENNA = "mennä" ; 
-LIST MIELI = "mieli" ;  
-LIST MITTAIneN = "mittainen" "pituinen" "kokoinen" "oloinen" "tuntuinen" "näköinen" "painoinen" "kaltainen" "tapainen" "mukainen" "sorttinen" ; 
+LIST HARVA-SET = "asua" "tahti" "hammas" "verkko" "pensaikko" "asutus" ;
+LIST HITTO = Interj "hitto" "herra_jumala" "kuinka" "sinä" "te" "<\!>"  "hellanlettas" "saatana" "perkele" "vittu" "voi" ;
+LIST HYVA = "hyvä" ;
+LIST HYVA_HUONO = "hyvä" "huono" "ikävä" "kiva" "mukava" "hauska" "järkevä"  "vaikea" "helppo" "mahdollinen" "mahdoton" "tärkeä" "hankala"  "aiheellinen" "tarpeellinen" "välttämätön" ;
+LIST HYVANSA = "hyvänsä" ;
+LIST HYVIN-1 = "hyvin" ;
+LIST HYVIN = "aikaisin" "alas" "alhaalla" "alhaalta" "alhaalle" "harvoin" "hiljaa" "kauan" "kauas" "kaukaa" "kaukana" "paljon" "pian" "sekaisin" "tarkoin" "suoraan" "usein" "varhain" "yksin" "mielellään" "vähän" "lähellä" "läheltä" "lähelle" "hyvin" "tyystin" "kovin" "monasti" "paljon" "usein" "ylhäällä" "usea" "harva" "moni" "monta" "kovaa" "hiljaa" "täynnä" ;
+LIST Ill-POSP = "asti" ;
+LIST Ill-VERB = "vaikuttaa" "rientää" "siirtää" "siirtyä" "pyytää" "tuoda" ;
+LIST ITSE = "itse" ;
+LIST JALKEEN = "jälkeen" ;
+LIST JOHDOSTA = "johdosta" ;
+LIST JOKA = "joka" ;
+LIST JOKIN = "jokin" ;
+LIST JUURI = "juuri" ;
+LIST KAIKKI = "kaikki" ;
+LIST KAIKKIAAN = "kaikkiaan" ;
+LIST KANSSA = "kanssa" ;
+LIST KAUPPA = "kauppa" ;
+LIST KAUTTA = "kautta" ;
+LIST KELLO = "kello" "klo" ;
+LIST KERRAN = "kerta" ; # NB KERRAN NOT YET Adv IN FINTWOL ;
+LIST KERTA = "kerta" "tapaus" "paikka" "puoli" "suhde" "suunta" "ainoa" "ikinen" "käänne" "lähtö" ;
+LIST KESKUSTA = "keskusta" ;
+LIST KIELI = "kieli" "virka_kieli" "kieli_muoto" "kieli_kunta" "kieli_kohtainen" "suku_kieli" "kieli_perhe" "opiskelu" "opiskella" "opettaa" "opetus" "tyttö_koulu" "poika_koulu" "hallinto_kieli" "yli_opisto" "korkea_koulu" "perus_koulu" "koulu" "opetus_ohjelma" ;
+LIST KO = Qst ;
+LIST KOKO = "koko" ;
+LIST KOOTA = "koota" "haluta" "siirtää" "siirtyä" "tulla" "mennä" "ottaa" "vetää" "sijoittaa" "majoittaa" "muuttaa" ;
+LIST KUIN = "kuin" ;
+LIST KYSY = "kysyä" "kysymys" "tiedustelu" "tiedustella" Qst ;
+LIST LAIllA = "lailla" ;
+LIST MAANANTAI = "maanantai" "tiistai" "keskiviikko" "torstai" "perjantai"  "lauantai" "sunnuntai" ;
+LIST LIIAN = "liian" ;
+LIST LUKU = "num-luku" ;
+LIST MAKSAA = "maksaa" "tuntua" ;
+LIST MENNA = "mennä" ;
+LIST MIELI = "mieli" ;
+LIST MITTAIneN = "mittainen" "pituinen" "kokoinen" "oloinen" "tuntuinen" "näköinen" "painoinen" "kaltainen" "tapainen" "mukainen" "sorttinen" ;
 LIST MOLEMPI = "molempi" ;
-LIST MUKAIneN = "mukainen" "tuntuinen" "oloinen"  ; 
+LIST MUKAIneN = "mukainen" "tuntuinen" "oloinen"  ;
 LIST MUTTA = "mutta" ;
-LIST MYOS = "myös" ; 
-LIST VAAN = "vaan" ; 
-LIST NAIN = "näin" ; 
-LIST NEG-AMBIGUOUS = "niittää" "muuttaa" "kerrata" "he" ; 
-LIST NES = "pitää" "täytyä" "täytyy" "tulla" "pakko" ; 
-LIST NIIN = "niin" ; 
-LIST NIIN-YHA = "niin" "yhä" "yli" "ylitse" "mitä" ; 
-LIST NIIN-NOIN-NAIN = "niin" "noin" "näin" ; 
-LIST NOUN+InfA = "halu" "tahto" "yritys" "päätös" "lupa" "aikomus" "tarve" "alttius" "tavoite" "oikeus" "mahdollisuus" "velvollisuus" "valmius" "ajatus" "tarkoitus" "syy" "tapa" "määrä" "pyrkimys" "pakko" "kyky" "taito" "vara" "hanke" "vastentahtoisuus" "keino" "aika" ; 
-LIST NOUN-OF-MEASURE = "kilo" "metri" "litra" "osa" "pala" ; 
-LIST OLLA = "olla" ; 
-LIST OLLA_TULLA = "olla" "tulla" ; 
-LIST OMIEN = "oma" "kirja" "asia" ; 
-LIST OTTAA = "ottaa" ; 
-LIST OTTAA-2 = "ottaa" "omaksua" "liittää" "antaa" "siirtyä" ; 
-LIST OTTAA_KELVATA = "ottaa" "kelvata" ; 
-LIST PAATTYA = "päättyä" "loppua" "johtaa" ; 
-LIST PARI_PUOLI = "pari" "puoli" ; 
-LIST PAASTA = "laskea" "sijoittaa" "antaa" "sallia" "tunkeutua" ; 
-LIST PALJON = "paljon" "vähän" "jonkin=verran" ; 
-LIST PALJON-MONI = "paljon" "vähän" "moni" "usea" "harva" "hyvin" "oikein" "väärin" "kovin" "tarpeeksi" ; 
-LIST PANNA = "panna" "arpi" "sakka" ; 
+LIST MYOS = "myös" ;
+LIST VAAN = "vaan" ;
+LIST NAIN = "näin" ;
+LIST NEG-AMBIGUOUS = "niittää" "muuttaa" "kerrata" "he" ;
+LIST NES = "pitää" "täytyä" "täytyy" "tulla" "pakko" ;
+LIST NIIN = "niin" ;
+LIST NIIN-YHA = "niin" "yhä" "yli" "ylitse" "mitä" ;
+LIST NIIN-NOIN-NAIN = "niin" "noin" "näin" ;
+LIST NOUN+InfA = "halu" "tahto" "yritys" "päätös" "lupa" "aikomus" "tarve" "alttius" "tavoite" "oikeus" "mahdollisuus" "velvollisuus" "valmius" "ajatus" "tarkoitus" "syy" "tapa" "määrä" "pyrkimys" "pakko" "kyky" "taito" "vara" "hanke" "vastentahtoisuus" "keino" "aika" ;
+LIST NOUN-OF-MEASURE = "kilo" "metri" "litra" "osa" "pala" ;
+LIST OLLA = "olla" ;
+LIST OLLA_TULLA = "olla" "tulla" ;
+LIST OMIEN = "oma" "kirja" "asia" ;
+LIST OTTAA = "ottaa" ;
+LIST OTTAA-2 = "ottaa" "omaksua" "liittää" "antaa" "siirtyä" ;
+LIST OTTAA_KELVATA = "ottaa" "kelvata" ;
+LIST PAATTYA = "päättyä" "loppua" "johtaa" ;
+LIST PARI_PUOLI = "pari" "puoli" ;
+LIST PAASTA = "laskea" "sijoittaa" "antaa" "sallia" "tunkeutua" ;
+LIST PALJON = "paljon" "vähän" "jonkin=verran" ;
+LIST PALJON-MONI = "paljon" "vähän" "moni" "usea" "harva" "hyvin" "oikein" "väärin" "kovin" "tarpeeksi" ;
+LIST PANNA = "panna" "arpi" "sakka" ;
 LIST PAREMPI = "parempi" ("hyvä" A Comp) ;
-LIST PersPl123 = "me" "te" "he" ; 
-LIST PIENIA_ELAA = "pieniä" "elää" "omata" "juuria" ; 
-LIST POIKA = "poika" "mies" "veijari" "elämä" "tapa" ; 
-LIST IHM = "nainen" "vaimo" "mies" "poika" "tyttö" "veli" "sisko" "ystävä" "kuopus" ; 
-LIST POSS-DEL-V = "pitää" "saada" "tehdä" "menettää" "kestää" "pitää" "ummistaa" "kantaa" ; 
-LIST POSS-NomSg = "surma" "paikka" "kaikki" "merkitys" "aika" "pinta" "silmä" "vastuu" ; 
-LIST POSS-NomPl = "kaikki" "aika" ; 
-LIST PUHUA = "puhua" "käyttää" "kirjoittaa" ; 
-LIST PUOLA = "puola" ; 
-LIST PUOLI = "puoli" ; 
-LIST PUOLI-KOKO-OSA = "puoli" "koko" "osa" ; 
-LIST SAADA = "saada" ; 
-LIST SAAPUA = "saapua" ; # CLASH SAAPUA/SAAVUTTAA, I.E. ACT/PASS  ; 
-LIST SANOA = "sanoa" ; 
-LIST SE = "se" ; 
-LIST SEITSEMAN = "seitsemän" "kahdeksan" "yhdeksän" "kymmenen" ; 
-LIST SIIRTYA-TULLA-JOUTUA = "siirtyä" "tulla" "joutua" "siirtää" "sijoittaa" ; 
-LIST TAHANSA_VAIN = "tahansa" "vain" "hyvänsä" "mikä" "mikäkin" "missäkin" "kulloinkin" ; 
-LIST TAHANSA-2 = "tahansa" "hyvänsä" ; 
-LIST TAI = "tai" "tahi" "taikka" ; 
-LIST TAllAIneN = Num Pron Det "tällainen" "sellainen" "semmoinen" ; 
-LIST TALVIneN = "kesäinen" "keväinen" "syksyinen" "talvinen" ; 
-LIST TAMA = "tämä" ; 
-LIST TARVITA = "tarvita" "pitää" ; 
-LIST TIETAA = "tietää" "kysyä" "tiedustella" ; 
-LIST TILANNE = "tilanne" "kuusi" ; 
-LIST TIME-WORD = ("aika" N) "ikä" "hetki" "sekunti" "minuutti" "tunti" "aamu" "ilta" "päivä" "ilta_päivä" "arki_aamu" "arki_päivä" "kesä_aamu" "yö" "viikko" "kuu" "kuu_kausi" "vuosi" "vuosi_kymmen" "vuosi_sata" "kausi" "kesä" "talvi" "syksy" "kevät" "maanantai" "tiistai" "keski_viikko" "torstai" "perjantai" "lauantai" "sunnuntai" "suku_polvi" "mies_polvi" ("([0-9]*)-luku"r) ; 
+LIST PersPl123 = "me" "te" "he" ;
+LIST PIENIA_ELAA = "pieniä" "elää" "omata" "juuria" ;
+LIST POIKA = "poika" "mies" "veijari" "elämä" "tapa" ;
+LIST IHM = "nainen" "vaimo" "mies" "poika" "tyttö" "veli" "sisko" "ystävä" "kuopus" ;
+LIST POSS-DEL-V = "pitää" "saada" "tehdä" "menettää" "kestää" "pitää" "ummistaa" "kantaa" ;
+LIST POSS-NomSg = "surma" "paikka" "kaikki" "merkitys" "aika" "pinta" "silmä" "vastuu" ;
+LIST POSS-NomPl = "kaikki" "aika" ;
+LIST PUHUA = "puhua" "käyttää" "kirjoittaa" ;
+LIST PUOLA = "puola" ;
+LIST PUOLI = "puoli" ;
+LIST PUOLI-KOKO-OSA = "puoli" "koko" "osa" ;
+LIST SAADA = "saada" ;
+LIST SAAPUA = "saapua" ; # CLASH SAAPUA/SAAVUTTAA, I.E. ACT/PASS  ;
+LIST SANOA = "sanoa" ;
+LIST SE = "se" ;
+LIST SEITSEMAN = "seitsemän" "kahdeksan" "yhdeksän" "kymmenen" ;
+LIST SIIRTYA-TULLA-JOUTUA = "siirtyä" "tulla" "joutua" "siirtää" "sijoittaa" ;
+LIST TAHANSA_VAIN = "tahansa" "vain" "hyvänsä" "mikä" "mikäkin" "missäkin" "kulloinkin" ;
+LIST TAHANSA-2 = "tahansa" "hyvänsä" ;
+LIST TAI = "tai" "tahi" "taikka" ;
+LIST TAllAIneN = Num Pron Det "tällainen" "sellainen" "semmoinen" ;
+LIST TALVIneN = "kesäinen" "keväinen" "syksyinen" "talvinen" ;
+LIST TAMA = "tämä" ;
+LIST TARVITA = "tarvita" "pitää" ;
+LIST TIETAA = "tietää" "kysyä" "tiedustella" ;
+LIST TILANNE = "tilanne" "kuusi" ;
+LIST TIME-WORD = ("aika" N) "ikä" "hetki" "sekunti" "minuutti" "tunti" "aamu" "ilta" "päivä" "ilta_päivä" "arki_aamu" "arki_päivä" "kesä_aamu" "yö" "viikko" "kuu" "kuu_kausi" "vuosi" "vuosi_kymmen" "vuosi_sata" "kausi" "kesä" "talvi" "syksy" "kevät" "maanantai" "tiistai" "keski_viikko" "torstai" "perjantai" "lauantai" "sunnuntai" "suku_polvi" "mies_polvi" ("([0-9]*)-luku"r) ;
 #LIST TIME-MEASURE = ; # add!
 LIST TOSI = "tosi" ;
-LIST TULI = "tuli" "voi" "jätti" "myy" ; 
-LIST TULLA = "tulla" ; 
-LIST TULLA_SAADA = "tulla" "saada" ; 
-LIST TULOS = "tulos" ; 
-LIST TUO = "tuo" ; 
-LIST UUSIA = "uusia" "pieniä" ; # AS A REPrsENTATIVE OF V/A -AMB 
-LIST VAllAN = "vallan" ; 
-LIST VAllAN-WDS = "saada" "poliittinen" "taloudellinen" "presidentti" "edus_kunta" "kuningas" "anastaa" "pitää" "joutua" "alistaa" "alla" "ottaa" "antaa" "luovuttaa" ; 
-LIST VERRAN = "verta" ; 
-LIST VIIME = "viime" "ensi" "vuosi" ; 
-LIST VIREIllA = "vireillä" ; 
-LIST VUOSI = "vuosi" "kausi" "kevät_kausi" "syys_kausi" "kesä_kausi" "talvi_kausi" "alku_kausi" "loppu_kausi" ; 
-LIST VUO_VOI = "vuo" "voi" ; 
-LIST YKSI = "yksi" ; 
-LIST YLI_AllE = "yli" "alle" ; 
-LIST EHTA = "ehta" "normaalinen" "lehtinen" "koti-ikävä" ; 
-LIST ELAMA_KUOLEMA = "elämä" "kuolema" "voima" "taantuma" ; 
-LIST ELAVA-SELVA = "elää" "elävä" "selvä" ; 
-LIST ENEM-VAHEM = "enemmän" "vähemmän" "tarpeeksi" ; 
-LIST ENEMMAN = "enemmän" ; 
-LIST ENNEN = "ennen" ; 
-LIST ERI = "eri" ; 
-LIST ESIM = "esimerkiksi" ; 
+LIST TULI = "tuli" "voi" "jätti" "myy" ;
+LIST TULLA = "tulla" ;
+LIST TULLA_SAADA = "tulla" "saada" ;
+LIST TULOS = "tulos" ;
+LIST TUO = "tuo" ;
+LIST UUSIA = "uusia" "pieniä" ; # AS A REPrsENTATIVE OF V/A -AMB
+LIST VAllAN = "vallan" ;
+LIST VAllAN-WDS = "saada" "poliittinen" "taloudellinen" "presidentti" "edus_kunta" "kuningas" "anastaa" "pitää" "joutua" "alistaa" "alla" "ottaa" "antaa" "luovuttaa" ;
+LIST VERRAN = "verta" ;
+LIST VIIME = "viime" "ensi" "vuosi" ;
+LIST VIREIllA = "vireillä" ;
+LIST VUOSI = "vuosi" "kausi" "kevät_kausi" "syys_kausi" "kesä_kausi" "talvi_kausi" "alku_kausi" "loppu_kausi" ;
+LIST VUO_VOI = "vuo" "voi" ;
+LIST YKSI = "yksi" ;
+LIST YLI_AllE = "yli" "alle" ;
+LIST EHTA = "ehta" "normaalinen" "lehtinen" "koti-ikävä" ;
+LIST ELAMA_KUOLEMA = "elämä" "kuolema" "voima" "taantuma" ;
+LIST ELAVA-SELVA = "elää" "elävä" "selvä" ;
+LIST ENEM-VAHEM = "enemmän" "vähemmän" "tarpeeksi" ;
+LIST ENEMMAN = "enemmän" ;
+LIST ENNEN = "ennen" ;
+LIST ERI = "eri" ;
+LIST ESIM = "esimerkiksi" ;
 
-LIST NORJA = "norja" "suomi" "ruotsi" "tanska" "Norja" "Suomi" "Ruotsi" "Tanska" ; 
-LIST SITTEN = "sitten" ; 
-LIST SUHTEEN = "suhteen" ; 
+LIST NORJA = "norja" "suomi" "ruotsi" "tanska" "Norja" "Suomi" "Ruotsi" "Tanska" ;
+LIST SITTEN = "sitten" ;
+LIST SUHTEEN = "suhteen" ;
 
 LIST Num-words = "tuhat" "miljoona" "miljardi" ;
-LIST Num-PUOLET-KOLMANNES = Num "puoli" "kolmannes" "neljännes" "viidennes" "kuudennes" "seitsemännes" "kahdeksannes" "yhdeksännes" ; 
+LIST Num-PUOLET-KOLMANNES = Num "puoli" "kolmannes" "neljännes" "viidennes" "kuudennes" "seitsemännes" "kahdeksannes" "yhdeksännes" ;
 
 LIST UNDECL_ADJ = "eka" "ensi" "viime" "koko" "ainut" "ehta" "haka" ;
 
 # VERB LISTS
 # ----------
 
-LIST VOI = "voida" ; 
-LIST VOIMA = "voima" ; 
-LIST YLLATTAA = "yllättää" ; 
+LIST VOI = "voida" ;
+LIST VOIMA = "voima" ;
+LIST YLLATTAA = "yllättää" ;
 
 
 LIST REALCOPULAS = "olla" "voida" "saattaa" ;
-LIST COPULAS = "olla" "taitaa" "saattaa"  ; 
-LIST COP = "olla" ; 
+LIST COPULAS = "olla" "taitaa" "saattaa"  ;
+LIST COP = "olla" ;
 
 LIST MOD-ASP = MOD-ASP ; # ?? "voida" "saattaa" "taitaa" ??
 
 
 # Some things to consider from sme-dis.rle
- # These verbs can take arguments, so they do not belong in the AUX group, 
- # but they are nevertheless mapped to (@+FAUXV). 
- # Halvhjelpeverb: álgit, berret, dohkket, gártat, heivet, liigut, šaddat - in some of the meanings 
+ # These verbs can take arguments, so they do not belong in the AUX group,
+ # but they are nevertheless mapped to (@+FAUXV).
+ # Halvhjelpeverb: álgit, berret, dohkket, gártat, heivet, liigut, šaddat - in some of the meanings
 
 # LIST MOD-ASP = "bállet" "berret" "dáidit" "fertet" "galgat" "gillet" "lávet"  "sáhttit" "seahtit" "soaitit" "viggat" ;
 
 
 
 
-LIST InfA-VERB = "alkaa" "haluta" "tahtoa" "yrittää" "päättää" "saada" "voida"  "täytyä" "sallia" "luvata" "aikoa" "meinata" "pitää" "sietää" "tulla" "tarvita" "viitsiä" "antaa" "muistaa" "unohtaa" "saattaa" "uskaltaa"  "pelätä" "kannattaa" "mahtaa" "osata" ; 
+LIST InfA-VERB = "alkaa" "haluta" "tahtoa" "yrittää" "päättää" "saada" "voida"  "täytyä" "sallia" "luvata" "aikoa" "meinata" "pitää" "sietää" "tulla" "tarvita" "viitsiä" "antaa" "muistaa" "unohtaa" "saattaa" "uskaltaa"  "pelätä" "kannattaa" "mahtaa" "osata" ;
 
-LIST InfMa-VERB = "päästä" "alkaa" "ruveta" "ohjeistaa" ; 
+LIST InfMa-VERB = "päästä" "alkaa" "ruveta" "ohjeistaa" ;
 
-LIST Ref-VERB = "ajatella" "arvella" "arvioida" "epäillä" "haluta" "havaita" "huomata" "huomauttaa" "huutaa" "ilmoittaa" "katsoa" "kerskailla" "kertoa" "kirjoittaa" "kokea" "korostaa" "kuolla" "kuulla" "kuvitella" "laskea" "luulla" "lähettää" "mainita" "muistuttaa" "myöntää" "nähdä" "näkyä" "näyttää" "odottaa" "olettaa" "osoittaa" "osoittautua" "paljastaa" "pelätä" "sallia" "sanoa" "tahtoa" "tajuta" "tarjota" "tiedostaa" "tietää" "todeta" "toivoa" "tulkita" "tuntea" "tuntua" "uskoa" "vaikuttaa" "valittaa" "vannoa" "vuotaa" "väittää" ; 
+LIST Ref-VERB = "ajatella" "arvella" "arvioida" "epäillä" "haluta" "havaita" "huomata" "huomauttaa" "huutaa" "ilmoittaa" "katsoa" "kerskailla" "kertoa" "kirjoittaa" "kokea" "korostaa" "kuolla" "kuulla" "kuvitella" "laskea" "luulla" "lähettää" "mainita" "muistuttaa" "myöntää" "nähdä" "näkyä" "näyttää" "odottaa" "olettaa" "osoittaa" "osoittautua" "paljastaa" "pelätä" "sallia" "sanoa" "tahtoa" "tajuta" "tarjota" "tiedostaa" "tietää" "todeta" "toivoa" "tulkita" "tuntea" "tuntua" "uskoa" "vaikuttaa" "valittaa" "vannoa" "vuotaa" "väittää" ;
 # Ref-VERB - <REF> verbs from text_cg1.txt, there may be more of them
 
 
-LIST InfMa-Ela = "estää" "kieltää" "kieltäytyä" "lakata" "luopua" "lähteä" "pidätellä" "poistua" "päästä" "varoitella" "varoittaa" "välttyä" "yllättää" ; 
+LIST InfMa-Ela = "estää" "kieltää" "kieltäytyä" "lakata" "luopua" "lähteä" "pidätellä" "poistua" "päästä" "varoitella" "varoittaa" "välttyä" "yllättää" ;
 # <Inf3-Ela> verbs from text_cg1.txt, there may be more of them
 
-LIST InfMa-Ill = "alistua" "ankara" "arka" "asettua" "astua" "auttaa" "ehtiä" "etevä" "hakea" "haluta" "harjoitella" "heittää" "herkkä" 
-"herättää" "herätä" "hidas" "hyvä" "ilmestyä" "innoittaa" "innostaa" "innostua" "johtaa" "joutua" "jättää" "jäädä" "kannustaa" "kehottaa" 
-"keskittyä" "kiinnostua" "kiire" "kokoontua" "kova" "kutsua" "kääntyä" "käydä" "kyetä" "kykenemätön" "kysyä" "luoda" "luonteva" "lähteä" "mahtua" 
-"matkustaa" "mennä" "mukautua" "määrätä" "neuvoa" "nimetä" "nimittää" "nojautua" "nopea" "nousta" "ohjata" "onnistua" "opetella" "opettaa" 
-"oppia" "osua" "pakottaa" "palkata" "paneutua" "panna" "pelastaa" "perustaa" "pistää" "pätevä" "päästä" "päästää" "päättyä" "päätyä" "pyrkiä" 
-"pystyä" "pysähtyä" "pyytää" "rajoittaa" "rientää" "riittää" "rikas" "rohkaista" "ryhtyä" "saada" "saapua" "sattua" "siirtää" "siirtyä" 
-"siittää" "sitoutua" "sokea" "sopeutua" "suostua" "suunnitella" "suuntautua" "syntyä" "syvällinen" "taata" "taipuvainen" "tarkka" "tarvita" 
-"tehdä" "tottua" "tulla" "tuoda" "täydellinen" "täysi" "uhrata" "utelias" "uudistaa" "vaatia" "vahvistaa" "valita" "valmis" "valmistautua" 
-"valmistua" "valtuuttaa" "vapaa" "vapautua" "varautua" "varma" "varoittaa" "välittää" "äänestää" ; 
+LIST InfMa-Ill = "alistua" "ankara" "arka" "asettua" "astua" "auttaa" "ehtiä" "etevä" "hakea" "haluta" "harjoitella" "heittää" "herkkä"
+"herättää" "herätä" "hidas" "hyvä" "ilmestyä" "innoittaa" "innostaa" "innostua" "johtaa" "joutua" "jättää" "jäädä" "kannustaa" "kehottaa"
+"keskittyä" "kiinnostua" "kiire" "kokoontua" "kova" "kutsua" "kääntyä" "käydä" "kyetä" "kykenemätön" "kysyä" "luoda" "luonteva" "lähteä" "mahtua"
+"matkustaa" "mennä" "mukautua" "määrätä" "neuvoa" "nimetä" "nimittää" "nojautua" "nopea" "nousta" "ohjata" "onnistua" "opetella" "opettaa"
+"oppia" "osua" "pakottaa" "palkata" "paneutua" "panna" "pelastaa" "perustaa" "pistää" "pätevä" "päästä" "päästää" "päättyä" "päätyä" "pyrkiä"
+"pystyä" "pysähtyä" "pyytää" "rajoittaa" "rientää" "riittää" "rikas" "rohkaista" "ryhtyä" "saada" "saapua" "sattua" "siirtää" "siirtyä"
+"siittää" "sitoutua" "sokea" "sopeutua" "suostua" "suunnitella" "suuntautua" "syntyä" "syvällinen" "taata" "taipuvainen" "tarkka" "tarvita"
+"tehdä" "tottua" "tulla" "tuoda" "täydellinen" "täysi" "uhrata" "utelias" "uudistaa" "vaatia" "vahvistaa" "valita" "valmis" "valmistautua"
+"valmistua" "valtuuttaa" "vapaa" "vapautua" "varautua" "varma" "varoittaa" "välittää" "äänestää" ;
 # <Inf3-Ill> verbs from text_cg1.txt, there may be more of them
 
 
@@ -585,73 +585,73 @@ LIST Ill-Advl = "keskittyä" "kiirehtiä" "luottaa" "mennä" "tulla" "vedota" ; 
 LIST Ela-Advl = "elää" "huolehtia" "huolia" "ilmestyä" "jutella" "kommentoida" "käydä" "nauttia" "osoittaa" "paeta" "pitkällä" "pitää" "poistua" "puhua" "päästä" "rakentaa" "siirtyä" "tehdä" "tulla" "tuottaa" "vaalia" "vilkaista" "virkkaa" "vähentää" "välittää" ; # <Ela-Advl> verbs from text_cg1.txt, there may be more of them
  # + all InfMa-Ela ??
 
-LIST Par-OBJ = "ahdistaa" "aiheutua" "aineellistaa" "ajaa" "ajatella" 
-"aktivoida" "alentaa" "aloittaa" "analysoida" "antaa" "arpoa" "arvioida" 
-"arvostaa" "arvostella" "asettaa" "asua" "aukaista" "auttaa" "avata" 
-"avustaa" "edeltää" "edetä" "edistää" "edustaa" "ehdottaa" "elää" 
-"ennakoida" "entistää" "epäillä" "eristää" "erottaa" "esitellä" "esittää" 
-"estää" "haavoittaa" "hahmottaa" "haitata" "hakea" "hallita" "haluta" 
-"hankkia" "hapuilla" "harjoitella" "harjoittaa" "harrastaa" "haudata" "havainnollistaa" 
-"havaita" "hedelmöittää" "heijastaa" "heitellä" "heittää" "helpottaa" 
-"hengittää" "henkiä" "herättää" "hidastaa" "hoitaa" "huolia" "huomata" 
-"huutaa" "huvittaa" "häiritä" "hämmentää" "hämmästyttää" "hävetä" 
-"hävittää" "hymyillä" "hyväksyä" "hyödyttää" "ihailla" "ihmetellä" 
-"ilmaista" "ilmentää" "ilmoittaa" "inhimillistää" "innostaa" "iskeä" 
-"istua" "istuttaa" "itkeä" "jakaa" "jarruttaa" "jatkaa" "johdattaa" 
-"johtaa" "juhlia" "julkaista" "julkistaa" "juuria" "jäljitellä" "jännittää" 
-"järjestää" "järkeillä" "järkyttää" "jättää" "jynssätä" "kadottaa" 
-"kahlita" "kaihtaa" "kaivaa" "kaivata" "kaivella" "kammota" "kammottaa" 
-"kannattaa" "kantaa" "kartoittaa" "kasvattaa" "katsella" "katsoa" 
-"kauhistua" "kaunistaa" "kehittää" "kehottaa" "keittää" "keksiä" "kerrata" 
-"kertoa" "kertyä" "kerätä" "keskittää" "kestää" "kieltää" "kiinnittää" 
-"kiinnostaa" "kiittää" "kirjoittaa" "koetella" "kohdata" "kohdella" 
-"kohottaa" "kokea" "kokeilla" "kommentoida" "koota" "koristaa" "korjata" 
-"korostaa" "korottaa" "korvata" "koskettaa" "kouluttaa" "kuivaa" "kuivata" 
-"kukkia" "kuljettaa" "kulkea" "kuluttaa" "kumarrella" "kumartaa" "kumota" 
-"kunnioittaa" "kutsua" "kuulla" "kuunnella" "kuvailla" "kuvata" "kuvitella" 
-"kärsiä" "käsitellä" "käsittää" "kätkeä" "kääntää" "käynnistää" "käyttää" 
-"kylvää" "kysellä" "kysyä" "laatia" "laittaa" "laskea" "lausua" "leikata" 
-"leikkiä" "leimata" "levittää" "liata" "liikauttaa" "liikuttaa" 
-"liioitella" "liittää" "lisätä" "lopettaa" "loukata" "luetella" "lukea" 
-"luoda" "lähestyä" "lähettää" "lähetä" "löytää" "löytyä" "lykätä" "lyödä" 
-"maalata" "mainita" "mainostaa" "mairitella" "masentaa" "merkitä" 
-"miellyttää" "miettiä" "mitata" "moittia" "muistaa" "muistella" 
-"muistuttaa" "mullata" "muokata" "muotoilla" "muovata" "museoida" "muuttaa" 
-"määritellä" "myöntää" "myydä" "nauraa" "nauttia" "neuvoa" "niellä" 
-"niistää" "niittää" "nimittää" "normaalistaa" "nostaa" "nostattaa" 
-"noudattaa" "nousta" "nähdä" "näyttää" "odottaa" "ohjata" "omaksua" "omata" 
-"omia" "omistaa" "opetella" "opettaa" "opiskella" "oppia" "osata" 
-"osoittaa" "ostaa" "ottaa" "ounastella" "paeta" "paheksua" "painaa" 
-"paljastaa" "palkata" "palvella" "parantaa" "parjata" "peittää" "pelata" 
-"pelästyä" "pelätä" "periä" "perustella" "perätä" "pestä" "pettää" 
-"pidättää" "piilotella" "piirtää" "pilkata" "pirstoa" "pistää" "pitää" 
-"pohtia" "poistaa" "polkea" "potkia" "puhaltaa" "puhdistaa" "puhua" 
-"puhuttaa" "puida" "puolustaa" "purkaa" "purra" "puuttua" "pyyhkiä" 
-"pyytää" "raahata" "rajoittaa" "rakastaa" "rakentaa" "rangaista" 
-"rauhoittaa" "ravistella" "rikkoa" "saattaa" "saavuttaa" "salata" 
-"samanlaistaa" "sammuttaa" "sataa" "sattua" "selittää" "selvittää" 
-"seurata" "sietää" "siirtää" "siivota" "sijata" "sisäistää" "sisältää" 
-"sitoa" "siunata" "soittaa" "solmia" "sosiaalistaa" "soveltaa" "suitsuttaa" 
-"sukia" "sulkea" "suomia" "suoria" "suorittaa" "suosia" "suositella" 
-"surra" "suunnata" "säikähtää" "säädellä" "sääliä" "säästää" "syödä" 
-"syyttää" "tahtoa" "takoa" "tallata" "taltioida" "taluttaa" "tarjota" 
-"tarkastella" "tarkistaa" "tarkkailla" "tarkoittaa" "tarvita" "tavata" 
-"tavoitella" "tehdä" "teorioida" "tervehtiä" "tietää" "tilata" "tiukata" 
-"todeta" "toimittaa" "toistaa" "toivoa" "totella" "tuhlata" "tuhota" 
-"tukea" "tulkita" "tulvia" "tuoda" "tuottaa" "tutkia" "täydellistää" 
-"täyttää" "töniä" "tyrkyttää" "työntää" "työstää" "uhata" "uskoa" 
-"uudistaa" "vaalia" "vaarantaa" "vaatia" "vahvistaa" "vaihdella" "vaihtaa" 
-"vaimentaa" "vaivata" "valaista" "valita" "valmistaa" "valua" "varista" 
-"varjella" "varoitella" "varoittaa" "vaurioittaa" "vetää" "viestiä" 
-"viettää" "vihata" "viljellä" "vilkaista" "virallistaa" "virkistää" 
-"virrata" "virvoittaa" "voidella" "väheksyä" "vähentää" "vähätellä" 
-"väistää" "välittää" "välttää" "vääntää" "ärsyttää" "yksilöllistää" 
-"yleistää" "yliarvioida" "ylläpitää" "ymmärtää" "yrittää" ; 
+LIST Par-OBJ = "ahdistaa" "aiheutua" "aineellistaa" "ajaa" "ajatella"
+"aktivoida" "alentaa" "aloittaa" "analysoida" "antaa" "arpoa" "arvioida"
+"arvostaa" "arvostella" "asettaa" "asua" "aukaista" "auttaa" "avata"
+"avustaa" "edeltää" "edetä" "edistää" "edustaa" "ehdottaa" "elää"
+"ennakoida" "entistää" "epäillä" "eristää" "erottaa" "esitellä" "esittää"
+"estää" "haavoittaa" "hahmottaa" "haitata" "hakea" "hallita" "haluta"
+"hankkia" "hapuilla" "harjoitella" "harjoittaa" "harrastaa" "haudata" "havainnollistaa"
+"havaita" "hedelmöittää" "heijastaa" "heitellä" "heittää" "helpottaa"
+"hengittää" "henkiä" "herättää" "hidastaa" "hoitaa" "huolia" "huomata"
+"huutaa" "huvittaa" "häiritä" "hämmentää" "hämmästyttää" "hävetä"
+"hävittää" "hymyillä" "hyväksyä" "hyödyttää" "ihailla" "ihmetellä"
+"ilmaista" "ilmentää" "ilmoittaa" "inhimillistää" "innostaa" "iskeä"
+"istua" "istuttaa" "itkeä" "jakaa" "jarruttaa" "jatkaa" "johdattaa"
+"johtaa" "juhlia" "julkaista" "julkistaa" "juuria" "jäljitellä" "jännittää"
+"järjestää" "järkeillä" "järkyttää" "jättää" "jynssätä" "kadottaa"
+"kahlita" "kaihtaa" "kaivaa" "kaivata" "kaivella" "kammota" "kammottaa"
+"kannattaa" "kantaa" "kartoittaa" "kasvattaa" "katsella" "katsoa"
+"kauhistua" "kaunistaa" "kehittää" "kehottaa" "keittää" "keksiä" "kerrata"
+"kertoa" "kertyä" "kerätä" "keskittää" "kestää" "kieltää" "kiinnittää"
+"kiinnostaa" "kiittää" "kirjoittaa" "koetella" "kohdata" "kohdella"
+"kohottaa" "kokea" "kokeilla" "kommentoida" "koota" "koristaa" "korjata"
+"korostaa" "korottaa" "korvata" "koskettaa" "kouluttaa" "kuivaa" "kuivata"
+"kukkia" "kuljettaa" "kulkea" "kuluttaa" "kumarrella" "kumartaa" "kumota"
+"kunnioittaa" "kutsua" "kuulla" "kuunnella" "kuvailla" "kuvata" "kuvitella"
+"kärsiä" "käsitellä" "käsittää" "kätkeä" "kääntää" "käynnistää" "käyttää"
+"kylvää" "kysellä" "kysyä" "laatia" "laittaa" "laskea" "lausua" "leikata"
+"leikkiä" "leimata" "levittää" "liata" "liikauttaa" "liikuttaa"
+"liioitella" "liittää" "lisätä" "lopettaa" "loukata" "luetella" "lukea"
+"luoda" "lähestyä" "lähettää" "lähetä" "löytää" "löytyä" "lykätä" "lyödä"
+"maalata" "mainita" "mainostaa" "mairitella" "masentaa" "merkitä"
+"miellyttää" "miettiä" "mitata" "moittia" "muistaa" "muistella"
+"muistuttaa" "mullata" "muokata" "muotoilla" "muovata" "museoida" "muuttaa"
+"määritellä" "myöntää" "myydä" "nauraa" "nauttia" "neuvoa" "niellä"
+"niistää" "niittää" "nimittää" "normaalistaa" "nostaa" "nostattaa"
+"noudattaa" "nousta" "nähdä" "näyttää" "odottaa" "ohjata" "omaksua" "omata"
+"omia" "omistaa" "opetella" "opettaa" "opiskella" "oppia" "osata"
+"osoittaa" "ostaa" "ottaa" "ounastella" "paeta" "paheksua" "painaa"
+"paljastaa" "palkata" "palvella" "parantaa" "parjata" "peittää" "pelata"
+"pelästyä" "pelätä" "periä" "perustella" "perätä" "pestä" "pettää"
+"pidättää" "piilotella" "piirtää" "pilkata" "pirstoa" "pistää" "pitää"
+"pohtia" "poistaa" "polkea" "potkia" "puhaltaa" "puhdistaa" "puhua"
+"puhuttaa" "puida" "puolustaa" "purkaa" "purra" "puuttua" "pyyhkiä"
+"pyytää" "raahata" "rajoittaa" "rakastaa" "rakentaa" "rangaista"
+"rauhoittaa" "ravistella" "rikkoa" "saattaa" "saavuttaa" "salata"
+"samanlaistaa" "sammuttaa" "sataa" "sattua" "selittää" "selvittää"
+"seurata" "sietää" "siirtää" "siivota" "sijata" "sisäistää" "sisältää"
+"sitoa" "siunata" "soittaa" "solmia" "sosiaalistaa" "soveltaa" "suitsuttaa"
+"sukia" "sulkea" "suomia" "suoria" "suorittaa" "suosia" "suositella"
+"surra" "suunnata" "säikähtää" "säädellä" "sääliä" "säästää" "syödä"
+"syyttää" "tahtoa" "takoa" "tallata" "taltioida" "taluttaa" "tarjota"
+"tarkastella" "tarkistaa" "tarkkailla" "tarkoittaa" "tarvita" "tavata"
+"tavoitella" "tehdä" "teorioida" "tervehtiä" "tietää" "tilata" "tiukata"
+"todeta" "toimittaa" "toistaa" "toivoa" "totella" "tuhlata" "tuhota"
+"tukea" "tulkita" "tulvia" "tuoda" "tuottaa" "tutkia" "täydellistää"
+"täyttää" "töniä" "tyrkyttää" "työntää" "työstää" "uhata" "uskoa"
+"uudistaa" "vaalia" "vaarantaa" "vaatia" "vahvistaa" "vaihdella" "vaihtaa"
+"vaimentaa" "vaivata" "valaista" "valita" "valmistaa" "valua" "varista"
+"varjella" "varoitella" "varoittaa" "vaurioittaa" "vetää" "viestiä"
+"viettää" "vihata" "viljellä" "vilkaista" "virallistaa" "virkistää"
+"virrata" "virvoittaa" "voidella" "väheksyä" "vähentää" "vähätellä"
+"väistää" "välittää" "välttää" "vääntää" "ärsyttää" "yksilöllistää"
+"yleistää" "yliarvioida" "ylläpitää" "ymmärtää" "yrittää" ;
 # <Ptv-OBJ> verbs from text_cg1.txt, there may be more of them
 
 LIST LOC-V = "sopia" "tulla" "mennä" "muuttaa" ;
 
-LIST Tässä-verb = "asettaa" "istua" "joutua"  "keskittyä" "kiirehtiä" "mennä" "pysyä" "rientää" "saapua" "sattua" "seistä" "siirtää" "siirtyä" "sijoittaa" "tulla" "tuoda" "vedota" "viedä" ; 
+LIST Tässä-verb = "asettaa" "istua" "joutua"  "keskittyä" "kiirehtiä" "mennä" "pysyä" "rientää" "saapua" "sattua" "seistä" "siirtää" "siirtyä" "sijoittaa" "tulla" "tuoda" "vedota" "viedä" ;
 
 LIST Tästä-verb = "liikua" "mennä" "siirtää" "siirtyä" "tulla" "tuoda" "vedota" "viedä" ;
 
@@ -680,35 +680,35 @@ LIST AUXs = "olla" "ei" ;
 # ---------------
 
 LIST ETTA = "että" "<etten>" "<ettet>" "<ettei>" ; # vaillettä?
-LIST VAIKKA_KUIN_JOS = "vaikka" "kuin" "jos" "ties" ; 
-LIST JOS_VAIKKA = "jos" "vaikka" ; 
-LIST JOS_KUN_KOSKA_VAIKKA = "jos" "kun" "koska" "vaikka" ; 
+LIST VAIKKA_KUIN_JOS = "vaikka" "kuin" "jos" "ties" ;
+LIST JOS_VAIKKA = "jos" "vaikka" ;
+LIST JOS_KUN_KOSKA_VAIKKA = "jos" "kun" "koska" "vaikka" ;
 
-LIST Compl = CS CC "<,>" Punct "joten" "jotta" "että" "jos" "kun" "koska" "vaikka" "kuin" ; 
+LIST Compl = CS CC "<,>" Punct "joten" "jotta" "että" "jos" "kun" "koska" "vaikka" "kuin" ;
 
 # Question Words
 # --------------
 
 LIST MIKA = "mikä" ;
 LIST MIKA-KUKA = "mikä" "kuka" ;
-LIST KUINKA-MITEN-MIllOIN = "kuinka" "miten" "milloin" ; 
+LIST KUINKA-MITEN-MIllOIN = "kuinka" "miten" "milloin" ;
 
 #SET QWords = MIKA-KUKA OR KUINKA-MITEN-MIllOIN ; in sets
 
 
 
 
-# Punctuation 
+# Punctuation
 # -----------
 
-LIST Dash = Dash ; 
-LIST COLON = ":" ; 
-LIST SCOLON = ";" ; 
+LIST Dash = Dash ;
+LIST COLON = ":" ;
+LIST SCOLON = ";" ;
 LIST COMMA = "," ;
 LIST COMMA_SCOL = "," ":" ";" ;
-LIST ComMA = "<,>" Punct ; 
-LIST ComMA_N_Pron_Q = "<,>" N Pron Qu ; 
-LIST ComMA_N_Pron_Q_V_SUP_BOS = "<,>" N Pron Qu V Sup >>> "kuin" ; 
+LIST ComMA = "<,>" Punct ;
+LIST ComMA_N_Pron_Q = "<,>" N Pron Qu ;
+LIST ComMA_N_Pron_Q_V_SUP_BOS = "<,>" N Pron Qu V Sup >>> "kuin" ;
 
 LIST LEFT = LEFT ;
 LIST RIGHT = RIGHT ;
@@ -717,13 +717,13 @@ LIST OM = >>> """ "“" ;
 LIST OMS = >>> """ ":" ";" "“" ;
 
 
-LIST TERMINATIVEPO =    "asti" 
+LIST TERMINATIVEPO =    "asti"
                         "saakka" ;
 
-LIST NPron =    N 
+LIST NPron =    N
                 Pron ;
 
-LIST PrCase =  Par 
+LIST PrCase =  Par
                 Gen ;
 
 LIST SIEL = "sieltä" "siellä" "sielle" ;
@@ -733,17 +733,17 @@ LIST PoCaseNonLoc = Par Gen ;
 LIST PoCase =   Ela
                 Abl
                 Par
-                Gen 
-                All 
+                Gen
+                All
                 Ill ;
 
-LIST EXTENDED_CASE = "asti" 
-                     "mennessä" 
+LIST EXTENDED_CASE = "asti"
+                     "mennessä"
                      "saakka" ;
                      # "nähden", "katsoen", etc., handled by rule below
                      # but IFF they have Po and V analysis
 
-LIST PAR_ONLY = "ennen" 
+LIST PAR_ONLY = "ennen"
                 "ilman" ;
 
 
@@ -765,36 +765,36 @@ LIST Digit = Digit ;
 LIST Roman = Roman ;
 SET Letter = Num - Digit - Roman ;
 
-#LIST <COERCE!> = <COERCE!> ; 
-#LIST <CORRECT!> = <CORRECT!> ; 
-#LIST <Del!> = <Del!> ; 
+#LIST <COERCE!> = <COERCE!> ;
+#LIST <CORRECT!> = <CORRECT!> ;
+#LIST <Del!> = <Del!> ;
 #LIST <Digit> = <Digit> ; # don't have this tag!
-#LIST <MORPH-HEUR!> = <MORPH-HEUR!> ; 
+#LIST <MORPH-HEUR!> = <MORPH-HEUR!> ;
 #LIST <POSS> = <POSS> ;  # now POSS_SUFF
 #LIST <Title> = <Title> ; not used
-#LIST <Title>_Prop = <Title> Prop ; not used 
+#LIST <Title>_Prop = <Title> Prop ; not used
 #LIST <Tulos> = <Tulos> ; not used
 
 
-LIST ElaLeft = "asti" "huolimatta" "lähtien" "riippumatta" "käsin" ; # rakenteista käsin 
+LIST ElaLeft = "asti" "huolimatta" "lähtien" "riippumatta" "käsin" ; # rakenteista käsin
 # <ElaLeft> verbs from text_cg1.txt, there may be more of them
 
-LIST ElaRight = "huolimatta" ; 
+LIST ElaRight = "huolimatta" ;
 # <ElaRight> verbs from text_cg1.txt, there may be more of them
 
 LIST NomLeft = "sitten" ;
 
-LIST GenLeft = "aikaan" "aikana" "aikoihin" "alla" "alle" "alta" "alusta" "ansiosta" "avulla" "edelle" "edellä" "edessä" "edestä" "eteen" "eteensä" "hyväksi" "johdosta" "jälkeen" "kanssa" "kautta" "keskelle" "keskellä" "keskeltä" "kesken" "keskuudessa" "keskuuteen" "kohdalla" "kohdalle" "kuluttua" "laidassa" "lisäksi" "lomassa" "luo" "luokse" "luota" "lähellä" "läheltä" "lähettyville" "lähtien" "läpi" "lävitse" "mennessä" "mielestä" "muassa" "mukaan" "mukana" "myötä" "nojalla" "ohella" "ohessa" "ohi" "pariin" "parissa" "parista" "perusteella" "perässä" "perään" "poikki" "puoleen" "puolella" "puolelle" "puolesta" "puolivälissä" "päälle" "päällä" "päältä" "päässä"  "päästä" "rinnalla" "rinnalle" "sijaan" "sijasta" "sisälle" "sisällä" "sisältä" "sisään" "sitten" "suhteen" "taakse" "takaa" "takana" "takia" "tasalla" "tasalle" "tienoilla" "tähden" "ulkopuolella" "ulottuvilla" "varaan" "varassa" "varrella" "varressa" "verran" "viereen" "vieressä" "vierestä" "vuoksi" "väliin" "välillä" "väliltä" "välissä" "välistä" "yli" "ylitse" "yllä" "yläpuolella" "ympäri" "ympärille" "ympärillä" "ympäriltä" "äärelle" "äärellä" "ääreltä" ; 
+LIST GenLeft = "aikaan" "aikana" "aikoihin" "alla" "alle" "alta" "alusta" "ansiosta" "avulla" "edelle" "edellä" "edessä" "edestä" "eteen" "eteensä" "hyväksi" "johdosta" "jälkeen" "kanssa" "kautta" "keskelle" "keskellä" "keskeltä" "kesken" "keskuudessa" "keskuuteen" "kohdalla" "kohdalle" "kuluttua" "laidassa" "lisäksi" "lomassa" "luo" "luokse" "luota" "lähellä" "läheltä" "lähettyville" "lähtien" "läpi" "lävitse" "mennessä" "mielestä" "muassa" "mukaan" "mukana" "myötä" "nojalla" "ohella" "ohessa" "ohi" "pariin" "parissa" "parista" "perusteella" "perässä" "perään" "poikki" "puoleen" "puolella" "puolelle" "puolesta" "puolivälissä" "päälle" "päällä" "päältä" "päässä"  "päästä" "rinnalla" "rinnalle" "sijaan" "sijasta" "sisälle" "sisällä" "sisältä" "sisään" "sitten" "suhteen" "taakse" "takaa" "takana" "takia" "tasalla" "tasalle" "tienoilla" "tähden" "ulkopuolella" "ulottuvilla" "varaan" "varassa" "varrella" "varressa" "verran" "viereen" "vieressä" "vierestä" "vuoksi" "väliin" "välillä" "väliltä" "välissä" "välistä" "yli" "ylitse" "yllä" "yläpuolella" "ympäri" "ympärille" "ympärillä" "ympäriltä" "äärelle" "äärellä" "ääreltä" ;
 # <GenLeft> verbs from text_cg1.txt, there may be more of them
 
 
 LIST GenRight = "alle" "alta" "kautta" "kesken" "läpi" "ohi" "yli" "ylitse" ; #  "jälkeen" ?
 # <GenRight> verbs from text_cg1.txt, there may be more of them
 
-LIST ParLeft = "edelle" "edellä" "ennen" "jälkeen" "kautta" "kohden" "kohtaan" "kohti" "lähellä" "läheltä" "myöten" "paitsi" "pitkin" "päin" "sitten" "vailla" "vaille" "varten" "vastaan" "vastapäätä" "vasten" ; 
+LIST ParLeft = "edelle" "edellä" "ennen" "jälkeen" "kautta" "kohden" "kohtaan" "kohti" "lähellä" "läheltä" "myöten" "paitsi" "pitkin" "päin" "sitten" "vailla" "vaille" "varten" "vastaan" "vastapäätä" "vasten" ;
 # <PtvLeft> verbs from text_cg1.txt, there may be more of them
 
-LIST ParRight = "edelle" "edellä" "ennen" "ilman" "keskelle" "keskellä" "kesken" "kohti" "lähellä" "läheltä" "paitsi" "pitkin" "päin" "vailla" "vaille" "vasten" "vastoin" "ympäri" ; 
+LIST ParRight = "edelle" "edellä" "ennen" "ilman" "keskelle" "keskellä" "kesken" "kohti" "lähellä" "läheltä" "paitsi" "pitkin" "päin" "vailla" "vaille" "vasten" "vastoin" "ympäri" ;
 # <PtvRight> verbs from text_cg1.txt, there may be more of them
 
 # List between the rules: Following can all be Po and Pr according to morph: alkaen, alla, alle, alta, asti, ennen, huolimatta, katsomatta, keskellä, keskelle, keskeltä, kohti, koskien, liki, lähelle, läheltä, lähellä, lähtien, myötä, paitsi, pitkin, pitäen, päin, vastoin, vastapäätä, välillä, välissä, välistä, yli
@@ -809,34 +809,34 @@ LIST KieliN = "opiskelu" "osaaminen" "ymmärtäminen" "taito" "kurssi" "keskuste
 
 LIST ORG = "pankki" ;
 
-#LIST <LG> = <LG> ; # don't have this tag! # N <LG> in CG1 was language in addition to N Prop 
+#LIST <LG> = <LG> ; # don't have this tag! # N <LG> in CG1 was language in addition to N Prop
 
 LIST Nec-V = "tulla" "pitää" "täytyä" ; # was <NEC-V>; added tulla, pitää, täytyä
 
-LIST Prt-w = "viime" "eilen" "aikaisemmin" "aiemmin" "menneisyys" ; 
-LIST Prs-w = "ensi" "tänään" "huomenna" "seuraava" "pian" "tulevaisuus" "aikomus" "aikoa" ; 
+LIST Prt-w = "viime" "eilen" "aikaisemmin" "aiemmin" "menneisyys" ;
+LIST Prs-w = "ensi" "tänään" "huomenna" "seuraava" "pian" "tulevaisuus" "aikomus" "aikoa" ;
 
-LIST QMARK = "<?>" ; 
-LIST ?! = "<?>" "<!>" ; 
+LIST QMARK = "<?>" ;
+LIST ?! = "<?>" "<!>" ;
 
 LIST CLB = CLB ;
-LIST CLB? = >>> <<< "<:>" "<#>" "<(>" "<)>" "<'>" "<">" "<,>" Rel "<->" "kuinka" "miten" "milloin" "-" CS CC Qst Punct ; 
-LIST CLB?-C = >>> <<< "<:>" "<#>" "<(>" "<)>" "<'>" "<">" "<,>"  "<->" ; 
-LIST CLB?_Neg = >>> <<< "<:>" "<#>" "<(>" "<)>" "<'>" "<">" "<,>"  CS CC Neg ; 
-LIST CMP-ENNEN = Comp "ennen" ; 
+LIST CLB? = >>> <<< "<:>" "<#>" "<(>" "<)>" "<'>" "<">" "<,>" Rel "<->" "kuinka" "miten" "milloin" "-" CS CC Qst Punct ;
+LIST CLB?-C = >>> <<< "<:>" "<#>" "<(>" "<)>" "<'>" "<">" "<,>"  "<->" ;
+LIST CLB?_Neg = >>> <<< "<:>" "<#>" "<(>" "<)>" "<'>" "<">" "<,>"  CS CC Neg ;
+LIST CMP-ENNEN = Comp "ennen" ;
 
 
-LIST MAINV = Prs Prt Imprt ; 
+LIST MAINV = Prs Prt Imprt ;
 #LIST MAINV_CLB? = Prs Prt Imprt  >>> <<< "<:>" "<#>" "<(>" "<>" "<'>" "<">" "<,>" CS CC ; not used
 
-LIST Punct = Punct ; 
-LIST QUOTE = Quote ; 
-LIST QUO = "<">" ; 
+LIST Punct = Punct ;
+LIST QUOTE = Quote ;
+LIST QUO = "<">" ;
 
 #LIST MAN = MAN ; # erityisesti hyvinkin; -mmin, -kin, -sti A / ADV; Inf2 katsoen, pitäen, luovien -- don't have this special tag (only Foc/kin), removed!
 
-LIST Num_C_HETI_CLB = Num "heti"  >>> <<< "<:>" "<#>" "<(>" "<>" "<'>" "<">" "<,>" Rel "<->" "kuinka" "miten" "milloin" "-" CS CC Qst Punct ; 
-LIST Num-Q-Ill = Num Qu Ill ; 
+LIST Num_C_HETI_CLB = Num "heti"  >>> <<< "<:>" "<#>" "<(>" "<>" "<'>" "<">" "<,>" Rel "<->" "kuinka" "miten" "milloin" "-" CS CC Qst Punct ;
+LIST Num-Q-Ill = Num Qu Ill ;
 
 #LIST Prop_HEUR = Prop <MORPH-HEUR!> ; not used
 #LIST QUANTIFIER = Qu Num ; not used
@@ -844,8 +844,8 @@ LIST Num-Q-Ill = Num Qu Ill ;
 #LIST REF_TEMP = REF TEMP ;  # don't have these tags! zero example of such wordform in text_cg1.txt - changed in one rule to REF (was about REF-form) ;
 
 LIST REF-CORR = Prs Prt InfA InfE InfMa PrsPrc ; # required form of Ref-VERB
-LIST TEMP = (V Pss PrfPrc Sg Par) (V Act InfE Ine) (V Pss InfE Ine) ; 
-LIST TEMP-Par = (V Pss PrfPrc Sg Par) ; 
+LIST TEMP = (V Pss PrfPrc Sg Par) (V Act InfE Ine) (V Pss InfE Ine) ;
+LIST TEMP-Par = (V Pss PrfPrc Sg Par) ;
 # CG-1 TEMP = (V Pss PrfPrc Sg Par) (tultua) or (V Act InfE Ine) (ollessaan) PxSg3 / PxPl3, but it doesn't make any ambiguity (only PxSg3 / PxPl3) ;
 
 #LIST THREE = \3 ; # ???
@@ -856,7 +856,7 @@ LIST WORD = N A Adv V Pron CS CC Po Pr Adp Interj Pcle Num Abbr ACR ; # removed 
 LIST Cmpnd = Cmpnd ;
 
 #LIST Compounds = Pref (N A) (N V) (A V) (Sg Pl) (Nom Gen) (Nom Par) (Gen Par) (Nom Ess) (Gen Ess) (Nom Tra) (Gen Tra) (Nom Ine) (Gen Ine) (Nom Ela) (Gen Ela) (Nom Ill) (Gen Ill) (Nom Ade) (Gen Ade) (Nom Abl) (Gen Abl) (Nom All) (Gen All) (Nom Abe) (Gen Abe) (Nom Com) (Gen Com) (Nom Ins) (Gen Ins) ; # was before changes in morph
-#LIST NONSUBJECT-CASE = Ess Tra Ine Ela Ill Ade Abl All Abe Com Ins ; 
+#LIST NONSUBJECT-CASE = Ess Tra Ine Ela Ill Ade Abl All Abe Com Ins ;
 #LIST VN = (V N); # V and N tag in one reading (compound) ; # was before changes in morph
 #LIST AN = (A N); # A and N tag in one reading (compound) ; # was before changes in morph
 
@@ -918,8 +918,8 @@ SET VERB = V - DER - NEGV;
 
 SET ImprtActSg2 = Imprt + Act + Sg2 ;
 
-SET V-Pl = VERB + PLa ; 
-SET V-Sg = VERB + SGa ; 
+SET V-Pl = VERB + PLa ;
+SET V-Sg = VERB + SGa ;
 
 SET SGPRON = Pron + SGa;
 SET PLPRON = Pron + PLa;
@@ -933,7 +933,7 @@ SET HÄN = SGPRON + ("hän") ;
 # Changed from PLPRON + ("hän") etc. - 20.01.2015 - FMT+KM
 SET ME = PLPRON + ("me") ;
 SET TE = PLPRON + ("te") ;
-SET HE = PLPRON + ("he") ; 
+SET HE = PLPRON + ("he") ;
     # Pron Pers instead?
 
 SET FIRST_PersON_SG = MINÄ OR Sg1  OR PxSg1 ;
@@ -952,25 +952,25 @@ SET ALL_PersON = FIRST_PersON_SG OR
                  SECOND_PersON_SG OR
                  SECOND_PersON_PL OR
                  THIRD_PersON_SG OR
-                 THIRD_PersON_PL OR 
-                 NSgNom OR 
+                 THIRD_PersON_PL OR
+                 NSgNom OR
                  N + Sg_Pl ;
 
 
-SET CAP_NOCAP = N - Prop ; #CAP NOCAP ; 
+SET CAP_NOCAP = N - Prop ; #CAP NOCAP ;
 
 SET REALVFIN = VFIN - ConNeg ;
 SET PART-SUBJ = Weather-Verbs ;
 
 SET REAL_AUX = AUXs OR Neg ; # to get ettei, ellei
-SET AUX-OR-MAIN = InfA-VERB OR InfMa-VERB ; 
+SET AUX-OR-MAIN = InfA-VERB OR InfMa-VERB ;
 SET AUX = COPULAS OR Neg OR MOD-ASP OR AUX-OR-MAIN ;
 
-SET VFIN-NOT-AUX = Ind - AUX ; 
+SET VFIN-NOT-AUX = Ind - AUX ;
 
 SET V-NOT-COPULAS = V - REALCOPULAS;
 
-SET REF = V + ActPass + PPPCPs + GenSg; 
+SET REF = V + ActPass + PPPCPs + GenSg;
 
 SET QWords = MIKA-KUKA OR KUINKA-MITEN-MIllOIN ;
 SET PPRON-NOT-GEN = Pron + Pers - Gen ;
@@ -995,7 +995,7 @@ SET VSg3 = V + Sg3 ;
 SET VPl1 = V + Pl1 ;
 SET VPl2 = V + Pl2 ;
 SET VPl3 = V + Pl3 ;
-                
+
 SET SGAGR = VSg1 OR VSg2 OR VSg3 ;
 SET PLAGR = VPl1 OR VPl2 OR VPl3 ;
 SET ALL_PLPRON = PLPRON OR SGAGR OR N + Pl ;
@@ -1027,7 +1027,7 @@ SET SV-BOUNDARY = S-BOUNDARY OR InfV OR V-MAIN - PrsPrc ;
 
 SET BOC = S-BOUNDARY OR BOS ;
 SET BOC2 = S-BOUNDARY2 OR BOS ;
-SET BOC-PUNCT = BOC - ("-") - ("–") ; 
+SET BOC-PUNCT = BOC - ("-") - ("–") ;
 SET EOC = S-BOUNDARY OR EOS ;
 SET EOC2 = S-BOUNDARY2 OR EOS ;
 
@@ -1036,7 +1036,7 @@ SET NP-BOUNDARY = BOS OR EOS OR CLB OR VFIN OR InfA23 OR Act + Ess OR ConNeg OR 
 
 
 # NP boundary xxx*
-# ----------- 
+# -----------
 
 SET NP = N OR A ;                      # anything that can take except numerals
 SET NP-HEAD        = Pron OR HNOUN - ("hyvä") ;
@@ -1049,22 +1049,22 @@ SET NP-HEAD-ACC    = Pron + Acc OR N + Acc OR A + Acc - Cmpnd - Dem - ("hyvä");
 SET NP-HEAD-GEN    = Pron + Gen OR NGen OR A + Gen - Cmpnd - Dem - ("hyvä");
 
 # why gen?
-#SET PRE-NP-HEAD = (Prop Attr) OR Prop + (@>N) OR (A Attr) OR (Abbr Attr) OR ("hyvä") OR Pron + Pers + Gen OR NGen OR 
-SET PRE-NP-HEAD = Prop + Gen OR Prop + (@>N) OR A OR Abbr + Gen OR ("hyvä") OR Pron + Pers + Gen OR NGen OR 
-         Num OR Cmpnd OR CC OR Pron + Dem OR Pron + Refl + Gen OR Pron + Indef OR 
+#SET PRE-NP-HEAD = (Prop Attr) OR Prop + (@>N) OR (A Attr) OR (Abbr Attr) OR ("hyvä") OR Pron + Pers + Gen OR NGen OR
+SET PRE-NP-HEAD = Prop + Gen OR Prop + (@>N) OR A OR Abbr + Gen OR ("hyvä") OR Pron + Pers + Gen OR NGen OR
+         Num OR Cmpnd OR CC OR Pron + Dem OR Pron + Refl + Gen OR Pron + Indef OR
          PrfPrc + (@>N) OR PrsPrc OR Ord OR PCP ;
          # The strict version of items that can only be premodifiers, not parts of the predicate
- 
+
 SET NOT-A = WORD - A ;
 
-SET NPNH     = WORD - PRE-NP-HEAD OR Abbr ; 
+SET NPNH     = WORD - PRE-NP-HEAD OR Abbr ;
 
 # (A Pos) changed to A - 19.01.2015 -FMT+KM
-SET NAttrs = PCP OR A OR Pron OR Ord OR NGen OR Card OR UNDECL_ADJ ; 
+SET NAttrs = PCP OR A OR Pron OR Ord OR NGen OR Card OR UNDECL_ADJ ;
 
 SET N_Pron_Nom = NNom OR Pron + Nom ;
 
-SET NECESSITIVE_SUBJS = NGen OR Pron + Gen ; 
+SET NECESSITIVE_SUBJS = NGen OR Pron + Gen ;
 
 SET JaPcleCC = ("ja") + Pcle + CC ;
 
@@ -1079,7 +1079,7 @@ SET JaPcleCC = ("ja") + Pcle + CC ;
 # SYNTACTIC FUNCTION DECLARATIONS
 
 # The original function declarations
-# @+FM @-FMN @-FMP @-FMI @+FAUX @-FAUX @-FMQ @H @SUBJ @NEC-S @NF-S @OBJ @PC @ADVL @N> @NN> @AD-A> @<P @P> @<PN @C @OA @A> @AUX-S @AUX-O  
+# @+FM @-FMN @-FMP @-FMI @+FAUX @-FAUX @-FMQ @H @SUBJ @NEC-S @NF-S @OBJ @PC @ADVL @N> @NN> @AD-A> @<P @P> @<PN @C @OA @A> @AUX-S @AUX-O
 
 # These are used in nonrevised heuristic rules and therefore kept for the moment:
 LIST @SUBJ = @SUBJ @<SUBJ @SUBJ> ;
@@ -1099,7 +1099,7 @@ LIST @>Num = @>Num ;
 LIST @+FAUXV = @+FAUXV ;
 LIST @+FMAINV = @+FMAINV ;
 LIST @-FAUXV = @-FAUXV ;
- 
+
 LIST @-FMAINV = @-FMAINV ;
 LIST @-FSUBJ> = @-FSUBJ> ;
 LIST @-F<OBJ = @-F<OBJ ;
@@ -1107,7 +1107,7 @@ LIST @-FOBJ> = @-FOBJ> ;
 LIST @SPRED<OBJ = @SPRED<OBJ ;
 LIST @-FADVL = @-FADVL ;
 
-SET FOBJ = @-F<OBJ OR @-FOBJ> ; 
+SET FOBJ = @-F<OBJ OR @-FOBJ> ;
 SET FMAINV = @-FMAINV OR @+FMAINV ;
 SET FAUXV = @-FAUXV OR @+FAUXV ;
 
@@ -1118,11 +1118,11 @@ LIST @<ADVL = @<ADVL ;
 LIST @ADVL> = @ADVL> ;
 
 LIST @HAB = @HAB ;
- 
+
 LIST @>N = @>N ;
 
 LIST @N< = @N< ;
- 
+
 
 LIST @>A = @>A ;
 
@@ -1132,7 +1132,7 @@ LIST @>P = @>P ;
 
 LIST @HNOUN = @HNOUN ;
 LIST @INTERJ = @INTERJ ;
- 
+
 LIST @Pron< = @Pron< ;
 LIST @>Pron = @>Pron ;
 
@@ -1144,7 +1144,7 @@ LIST @<OPRED = @<OPRED ;
 LIST @OPRED> = @OPRED> ;
 LIST @PCLE = @PCLE ;
 LIST @COMP-CS< = @COMP-CS< ;
- 
+
 LIST @SPRED = @SPRED ;
 LIST @<SPRED = @<SPRED ;
 LIST @SPRED> = @SPRED> ;
@@ -1156,7 +1156,7 @@ SET SPRED = @<SPRED OR @SPRED> OR @SPRED ;
 SET OPRED = @<OPRED OR @OPRED> OR @OPRED ;
 
 LIST @PPRED = @PPRED ;
- 
+
 LIST @APP = @APP ;
 LIST @APP-N< = @APP-N< ;
 LIST @APP-Pron< = @APP-Pron< ;
@@ -1176,7 +1176,7 @@ SET <OBJ-OTHERS = <OBJ OR Gen OR Nom OR Ess OR LOC-CASE OR Adv ;
 SET OBJ>-OTHERS = OBJ> OR Gen OR Nom OR Ess OR LOC-CASE OR Adv ;
 
 LIST @X = @X ;
- 
+
 
 LIST ALLSYNTAG = (@+FAUXV) (@+FMAINV) (@-FAUXV) (@-FMAINV) (@-FSUBJ>)(@-FOBJ)(@-FADVL)(@>A) (@>ADVL) (@ADVL<) (@<ADVL) (@ADVL>) (@ADVL) (@HAB) (@>N) (@APP) (@APP-N<) (@APP-Pron<) (@APP>Pron) (@APP-Num<) (@APP-ADVL<) (@VOC) (@CNP) (@CVP) (@P<) (@>P) (@HNOUN) (@INTERJ) (@Pron<) (@OBJ) (@OBJ>) (@<OBJ) (@OPRED) (@<OPRED) (@OPRED>) (@SPRED<OBJ) (@PCLE) (@COMP-CS<) (@N<) (@SPRED) (@<SPRED) (@SPRED>) (@PPRED) (@Num<) (@SUBJ) (@<SUBJ) (@SUBJ>) (@X);
 
@@ -1193,18 +1193,18 @@ LIST SYNT = @+FMAINV @+FAUXV @-FMAINV @-FAUXV @<SPRED @SPRED> @SUBJ @<SUBJ @SUBJ
 LIST PRINCIPAL-FUNCTION-DECLARATIONS = @SUBJ @OBJ @SPRED ;
 # original set was @SUBJ @OBJ @PC ;
 
-### TODO: 
+### TODO:
 ### BARRIERS in var AUP-BORDERS
 ### BOS EOS "<:>" "<#>" "<(>" "<)>" "<'>" "<">" "<,>" Rel
 ### "<$->" "kuinka" "miten" "milloin" "-" CS CC KO Punct) ;
 ### Do not understand these… Trond.
 
-#Pl1 OR 
-#                Pl2 OR  
-#                Pl3  OR 
-#                Sg1  OR 
-#                Sg2  OR 
-#                Sg3  OR 
+#Pl1 OR
+#                Pl2 OR
+#                Pl3  OR
+#                Sg1  OR
+#                Sg2  OR
+#                Sg3  OR
 
 # ========================================================================
 
@@ -1221,7 +1221,7 @@ SECTION
 REMOVE:NotDialEast Dial/East ; # e.g. työ. Idea: assume standard.
 
 
-### TODO: 
+### TODO:
 # CLAUSE BOUNDARY CONSTRAINTS
 
 # First rule of voisiko is that it is never "your butters"
@@ -1256,11 +1256,11 @@ SELECT Punct;
 
 #ADD CLB Compl IF (NEGATE 0 CLB)(NEGATE -1 CLB) ;
 #ADD CLB Rel IF (NEGATE 0 CLB)(NEGATE -1 CLB) ;
-# Problematic because we don't have CLB for this in gold corpus - 20.01.2015 - FMT+KM 
+# Problematic because we don't have CLB for this in gold corpus - 20.01.2015 - FMT+KM
 #ADD CLB Qst IF (NEGATE 0 CLB)(NEGATE -1 CLB) ;
 
 #ADD CLB Adv IF (0 KUINKA-MITEN-MIllOIN) (NEGATE 0 CLB)(NEGATE -1 CLB) ;
-#ADD CLB Conj IF (NEGATE 0 CC) (NEGATE 0 CLB)(NEGATE -1 CLB) ; 
+#ADD CLB Conj IF (NEGATE 0 CC) (NEGATE 0 CLB)(NEGATE -1 CLB) ;
 
 # Including (NEGATE 0 CLB) because it adds multiple times otherwise - Ryan
 
@@ -1420,7 +1420,7 @@ IFF ("osalta") + Adv + POSS_SUFF (NEGATE -1 Abl) ;
 
 
 
-# ++ TP ++ 
+# ++ TP ++
 
 
 SUBSTITUTE (Nom\#toista) (Nom \#toista clash) (Nom\#toista) ;
@@ -1466,7 +1466,7 @@ ADD Digit Num - Digit (0 ("[0-9%.,:= +/]+[A-Z]*"r)) ;
 ADD Digit Num - Digit (0 ("[0-9%.,:= +/]+[A-Z]*-[0-9%.,:= +/]*[A-Z]*"r)) ;
 
 SUBSTITUTE (?) (Num Ord Sg Nom Roman ?-) (?) (0 ("[IVXLCDM-]+"r)) ; # ACR?
-SUBSTITUTE (?) (Num Ord Sg Nom Roman ?-) (?) (0 ("[IVXLCDM]*–[IVXLCDM]+"r)) ; 
+SUBSTITUTE (?) (Num Ord Sg Nom Roman ?-) (?) (0 ("[IVXLCDM]*–[IVXLCDM]+"r)) ;
 SUBSTITUTE (?) (Num Ord Sg Gen Roman ?-) (?) (0 ("[IVXLCDM-]+:n"r)) ;
 
 SUBSTITUTE (?) (N Sg Gen Pref- ?-) (?) (0 ("(.*)n-"r)) ; # maybe first part is Gen
@@ -1483,7 +1483,7 @@ SELECT N + Ins IF (-1 A + Ins);
 
 #ADD UP (*) IF (0 ("<[A-ZÄÖÜÕÆØ¢ı¥ŠŽ](.*)>"r)) (NEGATE 0 UP) ; defined UP reg ex
 #UP# ADD UP (*) IF (0 ("<[A-ZÄÖÜÕÆØ¢ı¥ŠŽ](.*)>"r)) (NEGATE 0 UP) ;
-#UP guesser# 
+#UP guesser#
 #UP# SUBSTITUTE (? UP) (N Prop Sg All ?- UP) (? UP) + ("(.*)(lle|llekin)"r);
 #UP# SUBSTITUTE (? UP) (N Prop Sg Ade ?- UP) (? UP) + ("(.*)(lla|llä|llakin|lläkin)"r);
 #UP# SUBSTITUTE (? UP) (N Prop Sg Abl ?- UP) (? UP) + ("(.*)(lta|ltä|ltakin|ltäkin)"r);
@@ -1496,9 +1496,9 @@ SELECT N + Ins IF (-1 A + Ins);
 #UP# SUBSTITUTE (? UP) (N Prop Sg Par ?- UP) (? UP) + ("(.*)(aa|ää|oa|ua|ea|eä|ia|iä|yä|ta|tä|aakin|ääkin|oakin|uakin|eakin|eäkin|iakin|iäkin|yäkin|takin|täkin)"r);
 #UP# SUBSTITUTE (? UP) (N Prop Sg Gen ?- UP) (? UP) + ("(.*):n"r);
 #UP# SUBSTITUTE (? UP) (N Prop Sg Gen ?- UP) (? UP) + ("(.*)n"r)(1 GenLeft);
-#UP# 
+#UP#
 #UP# COPY (N Prop Sg Nom ?- UP) TARGET (N Prop Sg Par ?- UP) ;
-#UP# 
+#UP#
 #UP# SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (1 Ind + Sg3 OR Ind + Sg1);
 #UP# SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (-1 Ind + Sg3 OR Ind + Sg1)(NEGATE -2 NSgNom);
 #UP# SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (-1 Prop + Nom)(-2 Ind + Sg3 OR Ind + Sg1)(NEGATE -2 NSgNom);
@@ -1506,14 +1506,14 @@ SELECT N + Ins IF (-1 A + Ins);
 #UP# SUBSTITUTE (? UP) (N Prop Pl Nom ?- UP) (? UP) (-1 Ind + Pl3)(NEGATE -2 NPlNom)(NEGATE 1 CC LINK 1 Nom);
 #UP# SUBSTITUTE (? UP) (N Prop Pl Nom ?- UP) (? UP) (-1 Prop + Nom)(-2 Ind + Pl3)(NEGATE -2 NPlNom)(NEGATE 1 CC LINK 1 Nom);
 #UP# SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (1 UP)(NEGATE -1 OMS);
-#UP# 
+#UP#
 #UP# SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (NEGATE -1 Prop + Nom)(NEGATE *-1 NSgNom OR Ind + Sg3 OR Ind + Sg1 BARRIER S-BOUNDARY)(NEGATE *1 NSgNom OR Ind + Sg3 OR Ind + Sg1 BARRIER S-BOUNDARY);
 #UP# SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (-1 Prop + Nom)(NEGATE *-2 NSgNom OR Ind + Sg3 OR Ind + Sg1 BARRIER S-BOUNDARY)(NEGATE *1 NSgNom OR Ind + Sg3 OR Ind + Sg1 BARRIER S-BOUNDARY);
 #UP# SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (NEGATE -1 Prop + Nom)(*0 Ind + Sg3 OR Ind + Sg1 BARRIER S-BOUNDARY)(NEGATE *-1 NSgNom BARRIER S-BOUNDARY)(NEGATE *1 NSgNom BARRIER S-BOUNDARY);
 #UP# SUBSTITUTE (? UP) (N Prop Sg Nom ?- UP) (? UP) (-1 Prop + Nom)(*0 Ind + Sg3 OR Ind + Sg1 BARRIER S-BOUNDARY)(NEGATE *-2 NSgNom BARRIER S-BOUNDARY)(NEGATE *1 NSgNom BARRIER S-BOUNDARY);
 #UP# SUBSTITUTE (? UP) (N Prop Pl Nom ?- UP) (? UP) (NEGATE -1 Prop + Nom)(*0 Ind + Pl3 BARRIER S-BOUNDARY)(NEGATE *-1 NPlNom BARRIER S-BOUNDARY)(NEGATE *1 NPlNom BARRIER S-BOUNDARY);
 #UP# SUBSTITUTE (? UP) (N Prop Pl Nom ?- UP) (? UP) (-1 Prop + Nom)(*0 Ind + Pl3 BARRIER S-BOUNDARY)(NEGATE *-2 NPlNom BARRIER S-BOUNDARY)(NEGATE *1 NPlNom BARRIER S-BOUNDARY);
-#UP# 
+#UP#
 #UP# SUBSTITUTE (? UP) (N Prop Sg All ?- UP) (? UP) (1 CCC)(2 UP + All)(NEGATE -1 OMS);
 #UP# SUBSTITUTE (? UP) (N Prop Sg Ade ?- UP) (? UP) (1 CCC)(2 UP + Ade)(NEGATE -1 OMS);
 #UP# SUBSTITUTE (? UP) (N Prop Sg Abl ?- UP) (? UP) (1 CCC)(2 UP + Abl)(NEGATE -1 OMS);
@@ -1550,14 +1550,14 @@ SELECT N + Ins IF (-1 A + Ins);
 #UP# SUBSTITUTE (? UP) (N Prop Sg Ess ?- UP) (? UP) (-1C Ess);
 #UP# SUBSTITUTE (? UP) (N Prop Sg Tra ?- UP) (? UP) (-1C Tra);
 #UP# SUBSTITUTE (? UP) (N Prop Sg Abe ?- UP) (? UP) (-1C Abe);
-#UP# 
+#UP#
 #UP# SUBSTITUTE (? UP) (N Prop Sg ?- UP) (? UP) (1 CCC)(2 UP)(NEGATE -1 OMS);
 #UP# SUBSTITUTE (? UP) (N Prop Sg ?- UP) (? UP) (-1 CCC)(-2 Prop)(NEGATE -1 OMS);
 #UP# SUBSTITUTE (? UP) (N Prop Sg ?- UP) (? UP) (NEGATE -1 OMS);
-#UP# 
+#UP#
 #UP# SUBSTITUTE (?) (Adv ?-) ("(.*)sti"r) ;
 
-ADD Cmpnd (*) IF (0/1 W0) (NEGATE 0 Cmpnd) ; # have to get it from subreading 
+ADD Cmpnd (*) IF (0/1 W0) (NEGATE 0 Cmpnd) ; # have to get it from subreading
 
 REMOVE Use_Rare ;
 
@@ -1579,7 +1579,7 @@ SELECT ("itse") + Adv OR ("<itsestään>"i) + Adv; # do not distinguish Pron
 SELECT NSgEla (-1 ("kotoisin")) ;
 
 # usein A Pron?
-SELECT Pcle + A + ("eri") ; 
+SELECT Pcle + A + ("eri") ;
 SELECT ("millainen") + A OR ("sellainen") + A; # more?
 
 REMOVE Ins (0 APrc OR Pron)(NEGATE 1 Ins);
@@ -1596,17 +1596,17 @@ SELECT Ins (NEGATE 0 UP OR FINV - ("omia"))(NEGATE 1 UP OR FINV)(1 Ins OR Ins-Ad
 SELECT Ins (NEGATE 0 UP OR FINV)(NEGATE -1 UP OR FINV - ("omia"))(-1 Ins OR Ins-Advl) ;
 SELECT Ins (NEGATE 0 UP OR FINV)(NEGATE -1 UP OR FINV - ("omia"))(-1 NomHEAD OR APrc OR Adv)(-2 Ins-Advl) ;
 REMOVE Ins - V;
-REMOVE Ins (0 V - Ins - Pot); 
-REMOVE Ins (0 Adv); 
+REMOVE Ins (0 V - Ins - Pot);
+REMOVE Ins (0 Adv);
 
-SELECT N + ("aamu") OR A + ("mahdollinen") ; 
+SELECT N + ("aamu") OR A + ("mahdollinen") ;
 
 LIST Hullu = "hullu";
 LIST Vuotias = "vuotias";
 REMOVE N (0 VÄRI + A);
-SELECT A - Nom (0 Hullu) ; 
-SELECT A (0 Vuotias) ; 
-SELECT A (0 Vuotias OR Hullu) (NEGATE 1 FINV) ; 
+SELECT A - Nom (0 Hullu) ;
+SELECT A (0 Vuotias) ;
+SELECT A (0 Vuotias OR Hullu) (NEGATE 1 FINV) ;
 REMOVE A (0 Vuotias OR Hullu) (1 FINV) ; # before subs
 
 REMOVE Prop + Lainen (-1 >>>) ;
@@ -1620,21 +1620,21 @@ REMOVE KEEPORDER N (0 Llainen)(1 A OR N)(2 N)(0 $$ALLCASES)(2 $$ALLCASES);
 REMOVE N (0 Llainen)(*-1C Llainen + A LINK 1 CCC) ;
 REMOVE N (0 Llainen)(*1C Llainen + A LINK -1 CCC) ;
 REMOVE N (0 Llainen)(*1C Llainen + A LINK -2 CCC) ;
-#REMOVE N (0 Llainen)(1C N OR A) ; 
-REMOVE A (0 Llainen)(0C N OR A) ; 
+#REMOVE N (0 Llainen)(1C N OR A) ;
+REMOVE A (0 Llainen)(0C N OR A) ;
 
 REMOVE SUB:1 (*) ; # prefer whole word
-REMOVE SUB:2 (*) ; 
-REMOVE SUB:3 (*) ; 
-SELECT SUB:1 Use_Hyphen (0 ("<[^-]+-[^-]+>"r)) ; 
-REMOVE SUB:1 Use_Hyphen (0/1 Use_NoHyphens) ; 
-REMOVE SUB:2 Use_Hyphen (0/2 Use_NoHyphens) ; 
-REMOVE SUB:1 Use_NoHyphens (0/1 N - Use_NoHyphens) ; 
-REMOVE SUB:2 Use_NoHyphens (0/2 N - Use_NoHyphens) ; 
+REMOVE SUB:2 (*) ;
+REMOVE SUB:3 (*) ;
+SELECT SUB:1 Use_Hyphen (0 ("<[^-]+-[^-]+>"r)) ;
+REMOVE SUB:1 Use_Hyphen (0/1 Use_NoHyphens) ;
+REMOVE SUB:2 Use_Hyphen (0/2 Use_NoHyphens) ;
+REMOVE SUB:1 Use_NoHyphens (0/1 N - Use_NoHyphens) ;
+REMOVE SUB:2 Use_NoHyphens (0/2 N - Use_NoHyphens) ;
 
-REMOVE SUB:1 Ni ; 
-REMOVE SUB:2 Ni ; 
-REMOVE SUB:3 Ni ; 
+REMOVE SUB:1 Ni ;
+REMOVE SUB:2 Ni ;
+REMOVE SUB:3 Ni ;
 
 SELECT SUB:1 Pref- ;
 SELECT SUB:2 Pref- ;
@@ -1652,11 +1652,11 @@ REMOVE N + Prop (0 CC OR CS OR Pr OR Adv OR Pcle OR Pron OR Acro)(-1 OMS)(NEGATE
 REMOVE N + Prop (0 CC OR CS OR Pr OR Adv OR Pcle OR Pron OR Acro)(-1 Punct OR Num OR ABC)(-2 OMS)(NEGATE 1 Prop)(NEGATE 2 Prop) ;
 REMOVE N + Prop (0 CC OR CS OR Pr OR Adv OR Pcle OR Pron OR Acro)(-1 Punct)(-2 Num OR ABC)(-3 OMS)(NEGATE 1 Prop)(NEGATE 2 Prop) ;
 
-REMOVE KEEPORDER ("(.*)"r) + Prop (<*-1C ("$1"v) - Prop) ; 
-REMOVE KEEPORDER ("(.*)"r) + Prop (*1C ("$1"v) - Prop) ; 
+REMOVE KEEPORDER ("(.*)"r) + Prop (<*-1C ("$1"v) - Prop) ;
+REMOVE KEEPORDER ("(.*)"r) + Prop (*1C ("$1"v) - Prop) ;
 
-SELECT KEEPORDER ("(.*)"r) + Prop (<*-1C ("$1"v) + Prop LINK NOT -1 >>>) ; 
-SELECT KEEPORDER ("(.*)"r) + Prop (*-1 >>> LINK <*-1C ("$1"v) + Prop) ; 
+SELECT KEEPORDER ("(.*)"r) + Prop (<*-1C ("$1"v) + Prop LINK NOT -1 >>>) ;
+SELECT KEEPORDER ("(.*)"r) + Prop (*-1 >>> LINK <*-1C ("$1"v) + Prop) ;
 
 LIST UNP = "markkinat" "yhtiö" "sarja" "vaimo";
 SELECT N + Prop + Nom (NEGATE 0 UNP) (1 Ref-VERB) ;
@@ -1667,7 +1667,7 @@ SELECT ("Valio") OR ("Helsinki") OR ("Turku") OR NORJA + Prop ;
 #SUBSTITUTE (N) (N Prop) N + UP - Prop (NEGATE -1 OMS);
 
 # for transl common names are preferred
-REMOVE Prop + Nom (NEGATE 1 Prop)(NEGATE -1 Prop)(*1 OLLA BARRIER S-BOUNDARY LINK *1 ASIA + Nom_Par BARRIER S-BOUNDARY OR PCP); 
+REMOVE Prop + Nom (NEGATE 1 Prop)(NEGATE -1 Prop)(*1 OLLA BARRIER S-BOUNDARY LINK *1 ASIA + Nom_Par BARRIER S-BOUNDARY OR PCP);
 SELECT Prop + UP (NEGATE -1 OMS OR Prop OR Punct)(NEGATE 1 Prop); # still
 SELECT Prop + UP (-1 Prop OR Punct - OMS)(NEGATE -2 OMS)(NEGATE -3 OMS)(NEGATE 1 Prop); # still
 
@@ -1677,24 +1677,24 @@ SELECT ("joka") + Indef (1 TIME-WORD + Nom); # iga aasta
 SELECT ("päivä") + NSgPar (*1 ("!") OR  ("?"));
 SELECT ("ensi") + Pcle (1 TIME-WORD);
 
-SELECT TIME-WORD + Nom (-1 Pron OR ("koko")); 
+SELECT TIME-WORD + Nom (-1 Pron OR ("koko"));
 
 SELECT ("ollenkaan") + Adv OR ("<lienee>i") + Pot ;
 SELECT OLLA (*0 PrfPrc BARRIER S-BOUNDARY OR OLLA + FINV) ; # Olen
-REMOVE PPPCPs + Pl (*0C OLLA + Sg BARRIER S-BOUNDARY) ; 
-REMOVE PPPCPs + Pl (*0 OLLA + Act + Sg BARRIER S-BOUNDARY) ; 
-REMOVE PPPCPs + Sg (*0C OLLA + Pl BARRIER S-BOUNDARY) ; 
-REMOVE PPPCPs + Sg (*0 OLLA + Act + Pl BARRIER S-BOUNDARY) ; 
-REMOVE PPPCPs + Pl (0 Act + Pl3)(*-1C NPlNom BARRIER S-BOUNDARY)(NEGATE *-1 Act + Pl3 BARRIER S-BOUNDARY)(NEGATE *1 Act + Pl3 BARRIER S-BOUNDARY) ; 
+REMOVE PPPCPs + Pl (*0C OLLA + Sg BARRIER S-BOUNDARY) ;
+REMOVE PPPCPs + Pl (*0 OLLA + Act + Sg BARRIER S-BOUNDARY) ;
+REMOVE PPPCPs + Sg (*0C OLLA + Pl BARRIER S-BOUNDARY) ;
+REMOVE PPPCPs + Sg (*0 OLLA + Act + Pl BARRIER S-BOUNDARY) ;
+REMOVE PPPCPs + Pl (0 Act + Pl3)(*-1C NPlNom BARRIER S-BOUNDARY)(NEGATE *-1 Act + Pl3 BARRIER S-BOUNDARY)(NEGATE *1 Act + Pl3 BARRIER S-BOUNDARY) ;
 
 SELECT ADes + A OR ADes + N;
-REMOVE APrc + Sg (0 PPPCPs)(0 Act + Sg3)(1C NSgNom)(NEGATE *-1 NPSg3Nom BARRIER S-BOUNDARY)(NEGATE *-1 Act + Sg3 BARRIER S-BOUNDARY)(NEGATE *1 Act + Sg3 OR Pass + Ind + Prs BARRIER S-BOUNDARY) ; 
+REMOVE APrc + Sg (0 PPPCPs)(0 Act + Sg3)(1C NSgNom)(NEGATE *-1 NPSg3Nom BARRIER S-BOUNDARY)(NEGATE *-1 Act + Sg3 BARRIER S-BOUNDARY)(NEGATE *1 Act + Sg3 OR Pass + Ind + Prs BARRIER S-BOUNDARY) ;
 REMOVE APrc + Pl (0 PPPCPs)(0 Act + Pl3)(1C NPlNom)(NEGATE *-1 NPSg3Nom OR NPPl3Nom BARRIER S-BOUNDARY)(NEGATE *-1 Act + Pl3 BARRIER S-BOUNDARY)(NEGATE *1 Act + Pl3 OR Pass + Ind + Prs BARRIER S-BOUNDARY) ; # osviittaa antavat
 
 SELECT V - PPPCPs (0 Qst OR Foc_ko)(-1 OMS OR Punct)(NEGATE *1C FINV - Pot - Neg BARRIER S-BOUNDARY OR CC OR Punct) ;
 
-REMOVE FINV - Pot - Neg (*1C FINV - Pot - Neg BARRIER S-BOUNDARY OR CC OR Punct LINK NOT *-1/1 Conj) ; 
-REMOVE FINV - Pot - Neg (*-1C FINV - Pot - Neg BARRIER S-BOUNDARY OR CC OR Punct LINK NOT *1/1 Conj) ; 
+REMOVE FINV - Pot - Neg (*1C FINV - Pot - Neg BARRIER S-BOUNDARY OR CC OR Punct LINK NOT *-1/1 Conj) ;
+REMOVE FINV - Pot - Neg (*-1C FINV - Pot - Neg BARRIER S-BOUNDARY OR CC OR Punct LINK NOT *1/1 Conj) ;
 
 SELECT ("ei") + Foc_ka OR ("ei") + Imprt; # vs Impv ?
 SUBSTITUTE (CSei) (CS V) (CSei);
@@ -1712,7 +1712,7 @@ SELECT ConNeg + Ind (NEGATE 0 Pron)(0 A + $$ALLCASES)(*-1 V + Neg - Imprt BARRIE
 SELECT NES OR InfA-VERB (1 InfA)(NEGATE 1 Pron);
 SELECT InfA (NEGATE 0 Pron)(-1 NES OR InfA-VERB);
 SELECT InfMa OR NSgIll (-1 OLLA OR InfMa-VERB)(NEGATE 1 Po); #? satamaan
-SELECT InfMa OR NSgIll (-1 OLLA OR InfMa-VERB)(NEGATE 0 Gen_Par); 
+SELECT InfMa OR NSgIll (-1 OLLA OR InfMa-VERB)(NEGATE 0 Gen_Par);
 
 REMOVE Prt - ConNeg (0 Prs - ConNeg)(*0 Prs-w BARRIER S-BOUNDARY OR CC OR Prt-w); # voi
 REMOVE Prs - ConNeg (0 Prt - ConNeg)(*0 Prt-w BARRIER S-BOUNDARY OR CC OR Prs-w); # voi
@@ -1745,14 +1745,14 @@ SELECT InfA (NEGATE 0 Pron)(-1 Adv OR Pcle)(-2 NES OR InfA-VERB);
 REMOVE Act + Ind + Sg3 (0 InfA)(NEGATE 0 Pron)(*-1C InfA-VERB BARRIER FINV OR S-BOUNDARY ^ KUIN OR Conj ^ KUIN OR Punct);
 #SELECT InfA (NEGATE 0 Pron OR InfA-VERB)(*-1C InfA-VERB BARRIER FINV OR S-BOUNDARY OR Conj OR Punct); # tulee vähitellen vihreitä _lehtiä_
 SELECT InfA (NEGATE 0 Pron OR InfA-VERB)(-1 CCC LINK *-1C InfA BARRIER FINV OR S-BOUNDARY OR Conj OR Punct);
-REMOVE InfA (0 Act + Ind + Sg3)(*-1 NSgNom OR Pron + NomSg BARRIER S-BOUNDARY) (NEGATE *1 FINV - Pot - Neg BARRIER S-BOUNDARY OR Conj OR Punct)(NEGATE *-1 FINV - Pot - Neg BARRIER S-BOUNDARY OR Conj OR Punct) ; 
-REMOVE InfA (0 Act + Ind + Sg3)(*-1 COMMA LINK *-1 NSgNom OR Pron + NomSg OR Act + Ind + Sg3 BARRIER S-BOUNDARY) (NEGATE *1 FINV - Pot - Neg BARRIER S-BOUNDARY OR Conj OR Punct)(NEGATE *-1 FINV - Pot - Neg BARRIER S-BOUNDARY OR Conj OR Punct) ; 
-REMOVE InfA (0 Act + Ind + Sg3 OR N + Par)(*0C InfMa BARRIER S-BOUNDARY OR Conj OR Punct) ; 
+REMOVE InfA (0 Act + Ind + Sg3)(*-1 NSgNom OR Pron + NomSg BARRIER S-BOUNDARY) (NEGATE *1 FINV - Pot - Neg BARRIER S-BOUNDARY OR Conj OR Punct)(NEGATE *-1 FINV - Pot - Neg BARRIER S-BOUNDARY OR Conj OR Punct) ;
+REMOVE InfA (0 Act + Ind + Sg3)(*-1 COMMA LINK *-1 NSgNom OR Pron + NomSg OR Act + Ind + Sg3 BARRIER S-BOUNDARY) (NEGATE *1 FINV - Pot - Neg BARRIER S-BOUNDARY OR Conj OR Punct)(NEGATE *-1 FINV - Pot - Neg BARRIER S-BOUNDARY OR Conj OR Punct) ;
+REMOVE InfA (0 Act + Ind + Sg3 OR N + Par)(*0C InfMa BARRIER S-BOUNDARY OR Conj OR Punct) ;
 
 REMOVE Pron + Qst (0 Pron + Foc_ko - Qst) ; # may be the other way round, would be nice, if agreed
 REMOVE Adv + Qst (0 Adv + Foc_ko - Qst) ;
 
-SELECT Der_minen + Pl - Ine - Ill (NEGATE -1 ("<mitään>")); 
+SELECT Der_minen + Pl - Ine - Ill (NEGATE -1 ("<mitään>"));
 SELECT Der_minen - Ine - Ill OR N + Pl (0 Der_minen)(NEGATE -1 ("<mitään>")); # probably for transl better to derive (as only a few may be in dict)
 REMOVE Pcle (0C Pcle OR Interj);
 REMOVE Interj (NEGATE 1 Punct OR Interj);
@@ -1783,8 +1783,8 @@ SELECT ("<teille>") + N (-1 A)(NEGATE -1 ALLCASES) ; # tie vs Pron
 IFF ("<teille>") + N (-1 APlAll) ; # tie vs Pron
 
 SELECT ASgPar (-1 ("<mitään>"));
-"<syövät>" REMOVE N OR A (-1 NPron + Pl + Nom); 
-"<syövät>" REMOVE N OR A (NEGATE *-1 V BARRIER Punct)(NEGATE *1 V BARRIER Punct); 
+"<syövät>" REMOVE N OR A (-1 NPron + Pl + Nom);
+"<syövät>" REMOVE N OR A (NEGATE *-1 V BARRIER Punct)(NEGATE *1 V BARRIER Punct);
 
 SELECT ("(.*)vuosi"r) (1 Num OR Pron OR Po);
 SELECT ("(.*)vuosi"r) (-1 Num OR APrc OR Pron OR Pr OR VIIME);
@@ -1807,15 +1807,15 @@ SELECT ("oikealla") + Adv OR ("vasemalla") + Adv;
 SELECT ("oma") + A (0 $$ALLCASES)(1 N + $$ALLCASES);
 
 SELECT ("musta") + ASgNom (1 NSgNom); # "minä" Ela
-SELECT ("musta") + ASgNom (1 COMMA OR CC)(2 ASgNom); 
-SELECT ("musta") + ASgNom (-1 COMMA OR CC)(-2 ASgNom); 
-SELECT ("musta") + ASgNom (*0 ("väri")); 
-SELECT ("musta") + ASgNom (-1 OLLA + Sg123); 
+SELECT ("musta") + ASgNom (1 COMMA OR CC)(2 ASgNom);
+SELECT ("musta") + ASgNom (-1 COMMA OR CC)(-2 ASgNom);
+SELECT ("musta") + ASgNom (*0 ("väri"));
+SELECT ("musta") + ASgNom (-1 OLLA + Sg123);
 
 SELECT Num + Num-words;
 
-SELECT AcroW + Acro ; 
-SELECT ABC + Acro (NEGATE 1 Prop) ; 
+SELECT AcroW + Acro ;
+SELECT ABC + Acro (NEGATE 1 Prop) ;
 #SELECT ("s") + Acro OR ("k") + Acro (1 ("."))(2 Num) ; . as sentence boundary
 #SELECT ("s") + Acro OR ("k") + Acro (1 Num) ; . as sentence boundary
 
@@ -1837,7 +1837,7 @@ ADD VPcle Ottaa-pcle + Adv - AdvPcle (*1 ("ottaa") BARRIER S-BOUNDARY) ; # mukaa
 ADD VPcle Jättaa-pcle + Adv - AdvPcle (*1 ("jättää") BARRIER S-BOUNDARY) ; # väliin
 ADD VPcle Nostaa-pcle + Adv - AdvPcle (*1 ("nostaa") BARRIER S-BOUNDARY) ; # sisälle
 ADD VPcle Tulla-pcle + Adv - AdvPcle (*1 ("tulla") BARRIER S-BOUNDARY) ; # vastaan
-SELECT AdvPcle (NEGATE 0 Po); 
+SELECT AdvPcle (NEGATE 0 Po);
 SELECT AdvPcle (0 Po - GenLeft)(NEGATE -1 Par);
 SELECT AdvPcle (0 Po - ParLeft)(NEGATE -1 Gen);
 
@@ -1864,11 +1864,11 @@ SELECT ("että") + CC (-1 $$ALLCASES LINK *-1 ("sekä"))(*1 $$ALLCASES BARRIER N
 SELECT ("joko") + CC (*2 ("tai") BARRIER V OR CS OR Punct - COMMA); # kas 1, 2 või 3
 SELECT ("tai") + CC (*-1 ("joko") BARRIER V OR CS OR Punct - COMMA); # kas 1, 2 või 3
 
-SELECT ("sekä") + CC (*1 $$ALLCASES BARRIER NP-BOUNDARY LINK 1 ("että") LINK *1 $$ALLCASES BARRIER NP-BOUNDARY); # nii 1, 2 kui 3 
+SELECT ("sekä") + CC (*1 $$ALLCASES BARRIER NP-BOUNDARY LINK 1 ("että") LINK *1 $$ALLCASES BARRIER NP-BOUNDARY); # nii 1, 2 kui 3
 SELECT ("että") + CC (-1 $$ALLCASES LINK *-1 ("sekä") + CC BARRIER NP-BOUNDARY)(*1 $$ALLCASES BARRIER NP-BOUNDARY);
 SELECT ("että") + CC (-1 N OR Adv LINK -1 Punct LINK -1 $$ALLCASES LINK *-1 ("sekä") + CC BARRIER NP-BOUNDARY)(*1 $$ALLCASES BARRIER NP-BOUNDARY);
 
-SELECT ("niin") + CC (*1 $$ALLCASES BARRIER NP-BOUNDARY LINK 1 ("kuin") LINK *1 $$ALLCASES BARRIER NP-BOUNDARY); # nii 1, 2 kui 3 
+SELECT ("niin") + CC (*1 $$ALLCASES BARRIER NP-BOUNDARY LINK 1 ("kuin") LINK *1 $$ALLCASES BARRIER NP-BOUNDARY); # nii 1, 2 kui 3
 SELECT ("kuin") + CC (-1 $$ALLCASES LINK *-1 ("niin") + CC BARRIER NP-BOUNDARY)(*1 $$ALLCASES BARRIER NP-BOUNDARY);
 SELECT ("niin") + CC (-1 COMMA)(*-2 ("jos") BARRIER S-BOUNDARY); # kui , siis
 SELECT ("niin") + Adv;
@@ -1878,113 +1878,113 @@ SELECT ("kuin") + CC OR ("kuin") + CS ; # (-1 V OR A OR Adv)(1 POS);
 #SELECT ("kuin") + CC (-1 ("<muuta>") OR CMP-ENNEN); # comparative - CC?
 SELECT ("kuin") + CS (1 FINV); # sen jälkeen kuin
 # SELECT ("kuin") + CS ; # in UDT CC is only in "niin .. kuin .." (and "maassa kuin maassa"), but there is no CS given
-IFF ("kuin") + CC (NEGATE -2 ("sellainen") OR ("sama") OR ("jokin") OR ("muu") + Pron OR Comp)(NEGATE -1 Comp)(-1 $$POS + $$ALLCASES)(*1 $$POS + $$ALLCASES BARRIER S-BOUNDARY OR CCC); 
+IFF ("kuin") + CC (NEGATE -2 ("sellainen") OR ("sama") OR ("jokin") OR ("muu") + Pron OR Comp)(NEGATE -1 Comp)(-1 $$POS + $$ALLCASES)(*1 $$POS + $$ALLCASES BARRIER S-BOUNDARY OR CCC);
 REMOVE Pcle IF (0 CC - Pcle) ; # ja, jos, tai, tahi, taikka, vaan, kuin
 
 SELECT CS (*-1 FINV BARRIER S-BOUNDARY)(*1 FINV BARRIER S-BOUNDARY); # kuin kunnes
 
-SELECT ("mutta") + CC OR CS (-1 OMS OR ("(")); 
+SELECT ("mutta") + CC OR CS (-1 OMS OR ("("));
 SELECT CS (-1 COMMA_SCOL OR >>>); # koska(kuna) kun jos
-SELECT CS (-1 CC OR CS)(-2 COMMA); # 
+SELECT CS (-1 CC OR CS)(-2 COMMA); #
 
-SELECT CC (NEGATE 0 Pron)(*-1 InfA BARRIER S-BOUNDARY)(*1 InfA BARRIER S-BOUNDARY); 
-SELECT CC (*-1 Imprt + Sg1 BARRIER S-BOUNDARY)(*1 Imprt + Sg1 BARRIER S-BOUNDARY); 
-SELECT CC (*-1 Imprt + Sg2 BARRIER S-BOUNDARY)(*1 Imprt + Sg2 BARRIER S-BOUNDARY); 
-SELECT CC (*-1 Imprt + Sg3 BARRIER S-BOUNDARY)(*1 Imprt + Sg3 BARRIER S-BOUNDARY); 
-SELECT CC (*-1 Imprt + Pl1 BARRIER S-BOUNDARY)(*1 Imprt + Pl1 BARRIER S-BOUNDARY); 
-SELECT CC (*-1 Imprt + Pl2 BARRIER S-BOUNDARY)(*1 Imprt + Pl2 BARRIER S-BOUNDARY); 
-SELECT CC (*-1 Imprt + Pl3 BARRIER S-BOUNDARY)(*1 Imprt + Pl3 BARRIER S-BOUNDARY); 
-SELECT CC (*-1 Act + Ind + Prs + Sg1 BARRIER S-BOUNDARY)(*1 Act + Ind + Prs + Sg1 BARRIER S-BOUNDARY); 
-SELECT CC (*-1 Act + Ind + Prs + Sg2 BARRIER S-BOUNDARY)(*1 Act + Ind + Prs + Sg2 BARRIER S-BOUNDARY); 
-SELECT CC (*-1 Act + Ind + Prs + Sg3 BARRIER S-BOUNDARY)(*1 Act + Ind + Prs + Sg3 BARRIER S-BOUNDARY); 
-SELECT CC (*-1 Act + Ind + Prs + Pl1 BARRIER S-BOUNDARY)(*1 Act + Ind + Prs + Pl1 BARRIER S-BOUNDARY); 
-SELECT CC (*-1 Act + Ind + Prs + Pl2 BARRIER S-BOUNDARY)(*1 Act + Ind + Prs + Pl2 BARRIER S-BOUNDARY); 
-SELECT CC (*-1 Act + Ind + Prs + Pl3 BARRIER S-BOUNDARY)(*1 Act + Ind + Prs + Pl3 BARRIER S-BOUNDARY); 
-SELECT CC (*-1 Act + Ind + Prt + Sg1 BARRIER S-BOUNDARY)(*1 Act + Ind + Prt + Sg1 BARRIER S-BOUNDARY); 
-SELECT CC (*-1 Act + Ind + Prt + Sg2 BARRIER S-BOUNDARY)(*1 Act + Ind + Prt + Sg2 BARRIER S-BOUNDARY); 
-SELECT CC (*-1 Act + Ind + Prt + Sg3 BARRIER S-BOUNDARY)(*1 Act + Ind + Prt + Sg3 BARRIER S-BOUNDARY); 
-SELECT CC (*-1 Act + Ind + Prt + Pl1 BARRIER S-BOUNDARY)(*1 Act + Ind + Prt + Pl1 BARRIER S-BOUNDARY); 
-SELECT CC (*-1 Act + Ind + Prt + Pl2 BARRIER S-BOUNDARY)(*1 Act + Ind + Prt + Pl2 BARRIER S-BOUNDARY); 
-SELECT CC (*-1 Act + Ind + Prt + Pl3 BARRIER S-BOUNDARY)(*1 Act + Ind + Prt + Pl3 BARRIER S-BOUNDARY); 
-SELECT CC (*-1 Pass + Ind + Prs BARRIER S-BOUNDARY)(*1 Pass + Ind + Prs BARRIER S-BOUNDARY); 
-SELECT CC (*-1 Pass + Ind + Prt BARRIER S-BOUNDARY)(*1 Pass + Ind + Prt BARRIER S-BOUNDARY); 
+SELECT CC (NEGATE 0 Pron)(*-1 InfA BARRIER S-BOUNDARY)(*1 InfA BARRIER S-BOUNDARY);
+SELECT CC (*-1 Imprt + Sg1 BARRIER S-BOUNDARY)(*1 Imprt + Sg1 BARRIER S-BOUNDARY);
+SELECT CC (*-1 Imprt + Sg2 BARRIER S-BOUNDARY)(*1 Imprt + Sg2 BARRIER S-BOUNDARY);
+SELECT CC (*-1 Imprt + Sg3 BARRIER S-BOUNDARY)(*1 Imprt + Sg3 BARRIER S-BOUNDARY);
+SELECT CC (*-1 Imprt + Pl1 BARRIER S-BOUNDARY)(*1 Imprt + Pl1 BARRIER S-BOUNDARY);
+SELECT CC (*-1 Imprt + Pl2 BARRIER S-BOUNDARY)(*1 Imprt + Pl2 BARRIER S-BOUNDARY);
+SELECT CC (*-1 Imprt + Pl3 BARRIER S-BOUNDARY)(*1 Imprt + Pl3 BARRIER S-BOUNDARY);
+SELECT CC (*-1 Act + Ind + Prs + Sg1 BARRIER S-BOUNDARY)(*1 Act + Ind + Prs + Sg1 BARRIER S-BOUNDARY);
+SELECT CC (*-1 Act + Ind + Prs + Sg2 BARRIER S-BOUNDARY)(*1 Act + Ind + Prs + Sg2 BARRIER S-BOUNDARY);
+SELECT CC (*-1 Act + Ind + Prs + Sg3 BARRIER S-BOUNDARY)(*1 Act + Ind + Prs + Sg3 BARRIER S-BOUNDARY);
+SELECT CC (*-1 Act + Ind + Prs + Pl1 BARRIER S-BOUNDARY)(*1 Act + Ind + Prs + Pl1 BARRIER S-BOUNDARY);
+SELECT CC (*-1 Act + Ind + Prs + Pl2 BARRIER S-BOUNDARY)(*1 Act + Ind + Prs + Pl2 BARRIER S-BOUNDARY);
+SELECT CC (*-1 Act + Ind + Prs + Pl3 BARRIER S-BOUNDARY)(*1 Act + Ind + Prs + Pl3 BARRIER S-BOUNDARY);
+SELECT CC (*-1 Act + Ind + Prt + Sg1 BARRIER S-BOUNDARY)(*1 Act + Ind + Prt + Sg1 BARRIER S-BOUNDARY);
+SELECT CC (*-1 Act + Ind + Prt + Sg2 BARRIER S-BOUNDARY)(*1 Act + Ind + Prt + Sg2 BARRIER S-BOUNDARY);
+SELECT CC (*-1 Act + Ind + Prt + Sg3 BARRIER S-BOUNDARY)(*1 Act + Ind + Prt + Sg3 BARRIER S-BOUNDARY);
+SELECT CC (*-1 Act + Ind + Prt + Pl1 BARRIER S-BOUNDARY)(*1 Act + Ind + Prt + Pl1 BARRIER S-BOUNDARY);
+SELECT CC (*-1 Act + Ind + Prt + Pl2 BARRIER S-BOUNDARY)(*1 Act + Ind + Prt + Pl2 BARRIER S-BOUNDARY);
+SELECT CC (*-1 Act + Ind + Prt + Pl3 BARRIER S-BOUNDARY)(*1 Act + Ind + Prt + Pl3 BARRIER S-BOUNDARY);
+SELECT CC (*-1 Pass + Ind + Prs BARRIER S-BOUNDARY)(*1 Pass + Ind + Prs BARRIER S-BOUNDARY);
+SELECT CC (*-1 Pass + Ind + Prt BARRIER S-BOUNDARY)(*1 Pass + Ind + Prt BARRIER S-BOUNDARY);
 
-SELECT CC (-1 $$ALLCASES)(*1 $$ALLCASES BARRIER NP-BOUNDARY); 
-SELECT CC (-1 COMMA OR Dash)(-2 $$ALLCASES)(*1 $$ALLCASES BARRIER NP-BOUNDARY); 
+SELECT CC (-1 $$ALLCASES)(*1 $$ALLCASES BARRIER NP-BOUNDARY);
+SELECT CC (-1 COMMA OR Dash)(-2 $$ALLCASES)(*1 $$ALLCASES BARRIER NP-BOUNDARY);
 
-SELECT Act + Ind + Prs + Sg1 (-1 CCC LINK *-1 Act + Ind + Prs + Sg1 BARRIER S-BOUNDARY); 
-SELECT Act + Ind + Prs + Sg2 (-1 CCC LINK *-1 Act + Ind + Prs + Sg2 BARRIER S-BOUNDARY); 
-SELECT Act + Ind + Prs + Sg3 (-1 CCC LINK *-1 Act + Ind + Prs + Sg3 BARRIER S-BOUNDARY); 
-SELECT Act + Ind + Prs + Pl1 (-1 CCC LINK *-1 Act + Ind + Prs + Pl1 BARRIER S-BOUNDARY); 
-SELECT Act + Ind + Prs + Pl2 (-1 CCC LINK *-1 Act + Ind + Prs + Pl2 BARRIER S-BOUNDARY); 
-SELECT Act + Ind + Prs + Pl3 (-1 CCC LINK *-1 Act + Ind + Prs + Pl3 BARRIER S-BOUNDARY); 
-SELECT Act + Ind + Prt + Sg1 (-1 CCC LINK *-1 Act + Ind + Prt + Sg1 BARRIER S-BOUNDARY); 
-SELECT Act + Ind + Prt + Sg2 (-1 CCC LINK *-1 Act + Ind + Prt + Sg2 BARRIER S-BOUNDARY); 
-SELECT Act + Ind + Prt + Sg3 (-1 CCC LINK *-1 Act + Ind + Prt + Sg3 BARRIER S-BOUNDARY); 
-SELECT Act + Ind + Prt + Pl1 (-1 CCC LINK *-1 Act + Ind + Prt + Pl1 BARRIER S-BOUNDARY); 
-SELECT Act + Ind + Prt + Pl2 (-1 CCC LINK *-1 Act + Ind + Prt + Pl2 BARRIER S-BOUNDARY); 
-SELECT Act + Ind + Prt + Pl3 (-1 CCC LINK *-1 Act + Ind + Prt + Pl3 BARRIER S-BOUNDARY); 
+SELECT Act + Ind + Prs + Sg1 (-1 CCC LINK *-1 Act + Ind + Prs + Sg1 BARRIER S-BOUNDARY);
+SELECT Act + Ind + Prs + Sg2 (-1 CCC LINK *-1 Act + Ind + Prs + Sg2 BARRIER S-BOUNDARY);
+SELECT Act + Ind + Prs + Sg3 (-1 CCC LINK *-1 Act + Ind + Prs + Sg3 BARRIER S-BOUNDARY);
+SELECT Act + Ind + Prs + Pl1 (-1 CCC LINK *-1 Act + Ind + Prs + Pl1 BARRIER S-BOUNDARY);
+SELECT Act + Ind + Prs + Pl2 (-1 CCC LINK *-1 Act + Ind + Prs + Pl2 BARRIER S-BOUNDARY);
+SELECT Act + Ind + Prs + Pl3 (-1 CCC LINK *-1 Act + Ind + Prs + Pl3 BARRIER S-BOUNDARY);
+SELECT Act + Ind + Prt + Sg1 (-1 CCC LINK *-1 Act + Ind + Prt + Sg1 BARRIER S-BOUNDARY);
+SELECT Act + Ind + Prt + Sg2 (-1 CCC LINK *-1 Act + Ind + Prt + Sg2 BARRIER S-BOUNDARY);
+SELECT Act + Ind + Prt + Sg3 (-1 CCC LINK *-1 Act + Ind + Prt + Sg3 BARRIER S-BOUNDARY);
+SELECT Act + Ind + Prt + Pl1 (-1 CCC LINK *-1 Act + Ind + Prt + Pl1 BARRIER S-BOUNDARY);
+SELECT Act + Ind + Prt + Pl2 (-1 CCC LINK *-1 Act + Ind + Prt + Pl2 BARRIER S-BOUNDARY);
+SELECT Act + Ind + Prt + Pl3 (-1 CCC LINK *-1 Act + Ind + Prt + Pl3 BARRIER S-BOUNDARY);
 
-SELECT Act + Ind + Prs + Sg1 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Prs + Sg1); 
-SELECT Act + Ind + Prs + Sg2 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Prs + Sg2); 
-SELECT Act + Ind + Prs + Sg3 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Prs + Sg3); 
-SELECT Act + Ind + Prs + Pl1 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Prs + Pl1); 
-SELECT Act + Ind + Prs + Pl2 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Prs + Pl2); 
-SELECT Act + Ind + Prs + Pl3 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Prs + Pl3); 
-SELECT Act + Ind + Prt + Sg1 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Prt + Sg1); 
-SELECT Act + Ind + Prt + Sg2 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Prt + Sg2); 
-SELECT Act + Ind + Prt + Sg3 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Prt + Sg3); 
-SELECT Act + Ind + Prt + Pl1 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Prt + Pl1); 
-SELECT Act + Ind + Prt + Pl2 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Prt + Pl2); 
-SELECT Act + Ind + Prt + Pl3 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Prt + Pl3); 
+SELECT Act + Ind + Prs + Sg1 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Prs + Sg1);
+SELECT Act + Ind + Prs + Sg2 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Prs + Sg2);
+SELECT Act + Ind + Prs + Sg3 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Prs + Sg3);
+SELECT Act + Ind + Prs + Pl1 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Prs + Pl1);
+SELECT Act + Ind + Prs + Pl2 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Prs + Pl2);
+SELECT Act + Ind + Prs + Pl3 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Prs + Pl3);
+SELECT Act + Ind + Prt + Sg1 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Prt + Sg1);
+SELECT Act + Ind + Prt + Sg2 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Prt + Sg2);
+SELECT Act + Ind + Prt + Sg3 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Prt + Sg3);
+SELECT Act + Ind + Prt + Pl1 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Prt + Pl1);
+SELECT Act + Ind + Prt + Pl2 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Prt + Pl2);
+SELECT Act + Ind + Prt + Pl3 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Prt + Pl3);
 
-SELECT Act + Ind + Sg1 (-1 CCC LINK *-1 Act + Ind + Sg1 BARRIER S-BOUNDARY); 
-SELECT Act + Ind + Sg2 (-1 CCC LINK *-1 Act + Ind + Sg2 BARRIER S-BOUNDARY); 
-SELECT Act + Ind + Sg1 (-2 CCC LINK *-1 Act + Ind + Sg1 BARRIER S-BOUNDARY); 
-SELECT Act + Ind + Sg2 (-2 CCC LINK *-1 Act + Ind + Sg2 BARRIER S-BOUNDARY); 
-SELECT Act + Ind + Sg1 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Sg1); 
-SELECT Act + Ind + Sg2 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Sg2); 
-SELECT Act + Ind + Sg1 (*1 CCC BARRIER S-BOUNDARY LINK 2 Act + Ind + Sg1); 
-SELECT Act + Ind + Sg2 (*1 CCC BARRIER S-BOUNDARY LINK 2 Act + Ind + Sg2); 
+SELECT Act + Ind + Sg1 (-1 CCC LINK *-1 Act + Ind + Sg1 BARRIER S-BOUNDARY);
+SELECT Act + Ind + Sg2 (-1 CCC LINK *-1 Act + Ind + Sg2 BARRIER S-BOUNDARY);
+SELECT Act + Ind + Sg1 (-2 CCC LINK *-1 Act + Ind + Sg1 BARRIER S-BOUNDARY);
+SELECT Act + Ind + Sg2 (-2 CCC LINK *-1 Act + Ind + Sg2 BARRIER S-BOUNDARY);
+SELECT Act + Ind + Sg1 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Sg1);
+SELECT Act + Ind + Sg2 (*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Ind + Sg2);
+SELECT Act + Ind + Sg1 (*1 CCC BARRIER S-BOUNDARY LINK 2 Act + Ind + Sg1);
+SELECT Act + Ind + Sg2 (*1 CCC BARRIER S-BOUNDARY LINK 2 Act + Ind + Sg2);
 
-SELECT Act + Imprt + Sg1 (-1 CCC LINK *-1 Act + Imprt + Sg1 BARRIER S-BOUNDARY LINK NOT 0 Ind); 
-SELECT Act + Imprt + Sg2 (-1 CCC LINK *-1 Act + Imprt + Sg2 BARRIER S-BOUNDARY LINK NOT 0 Ind); 
-SELECT Act + Imprt + Sg1 (-2 CCC LINK *-1 Act + Imprt + Sg1 BARRIER S-BOUNDARY LINK NOT 0 Ind); 
-SELECT Act + Imprt + Sg2 (-2 CCC LINK *-1 Act + Imprt + Sg2 BARRIER S-BOUNDARY LINK NOT 0 Ind); 
-SELECT Act + Imprt + Sg1 (NEGATE -1C NPSg3Nom OR Pers2)(*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Imprt + Sg1 LINK NOT 0 Ind); 
-SELECT Act + Imprt + Sg2 (NEGATE -1C NPSg3Nom OR Pers1)(*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Imprt + Sg2 LINK NOT 0 Ind); 
-SELECT Act + Imprt + Sg1 (NEGATE -1C NPSg3Nom OR Pers2)(*1 CCC BARRIER S-BOUNDARY LINK 2 Act + Imprt + Sg1 LINK NOT 0 Ind); 
-SELECT Act + Imprt + Sg2 (NEGATE -1C NPSg3Nom OR Pers1)(*1 CCC BARRIER S-BOUNDARY LINK 2 Act + Imprt + Sg2 LINK NOT 0 Ind); 
+SELECT Act + Imprt + Sg1 (-1 CCC LINK *-1 Act + Imprt + Sg1 BARRIER S-BOUNDARY LINK NOT 0 Ind);
+SELECT Act + Imprt + Sg2 (-1 CCC LINK *-1 Act + Imprt + Sg2 BARRIER S-BOUNDARY LINK NOT 0 Ind);
+SELECT Act + Imprt + Sg1 (-2 CCC LINK *-1 Act + Imprt + Sg1 BARRIER S-BOUNDARY LINK NOT 0 Ind);
+SELECT Act + Imprt + Sg2 (-2 CCC LINK *-1 Act + Imprt + Sg2 BARRIER S-BOUNDARY LINK NOT 0 Ind);
+SELECT Act + Imprt + Sg1 (NEGATE -1C NPSg3Nom OR Pers2)(*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Imprt + Sg1 LINK NOT 0 Ind);
+SELECT Act + Imprt + Sg2 (NEGATE -1C NPSg3Nom OR Pers1)(*1 CCC BARRIER S-BOUNDARY LINK 1 Act + Imprt + Sg2 LINK NOT 0 Ind);
+SELECT Act + Imprt + Sg1 (NEGATE -1C NPSg3Nom OR Pers2)(*1 CCC BARRIER S-BOUNDARY LINK 2 Act + Imprt + Sg1 LINK NOT 0 Ind);
+SELECT Act + Imprt + Sg2 (NEGATE -1C NPSg3Nom OR Pers1)(*1 CCC BARRIER S-BOUNDARY LINK 2 Act + Imprt + Sg2 LINK NOT 0 Ind);
 
-SELECT Pass + Ind + Prs (-1 CCC LINK *-1 Pass + Ind + Prs BARRIER S-BOUNDARY); 
-SELECT Pass + Ind + Prs (-2 CCC LINK *-1 Pass + Ind + Prs BARRIER S-BOUNDARY); 
-SELECT Pass + Ind + Prs (NEGATE -1C NPSgNom)(*1 CCC BARRIER S-BOUNDARY LINK 1 Pass + Ind + Prs); 
-SELECT Pass + Ind + Prs (NEGATE -1C NPSgNom)(*1 CCC BARRIER S-BOUNDARY LINK 2 Pass + Ind + Prs); 
+SELECT Pass + Ind + Prs (-1 CCC LINK *-1 Pass + Ind + Prs BARRIER S-BOUNDARY);
+SELECT Pass + Ind + Prs (-2 CCC LINK *-1 Pass + Ind + Prs BARRIER S-BOUNDARY);
+SELECT Pass + Ind + Prs (NEGATE -1C NPSgNom)(*1 CCC BARRIER S-BOUNDARY LINK 1 Pass + Ind + Prs);
+SELECT Pass + Ind + Prs (NEGATE -1C NPSgNom)(*1 CCC BARRIER S-BOUNDARY LINK 2 Pass + Ind + Prs);
 
-SELECT InfA (-1 CCC LINK *-1C InfA BARRIER S-BOUNDARY); 
-SELECT InfA (*1 CCC BARRIER S-BOUNDARY OR InfA LINK 1C InfA LINK NOT *1 Ind + Sg3 BARRIER S-BOUNDARY); 
-SELECT InfMa (-1 CCC LINK *-1C InfMa BARRIER S-BOUNDARY); 
-SELECT InfMa (*1 CCC BARRIER S-BOUNDARY LINK 1C InfMa); 
+SELECT InfA (-1 CCC LINK *-1C InfA BARRIER S-BOUNDARY);
+SELECT InfA (*1 CCC BARRIER S-BOUNDARY OR InfA LINK 1C InfA LINK NOT *1 Ind + Sg3 BARRIER S-BOUNDARY);
+SELECT InfMa (-1 CCC LINK *-1C InfMa BARRIER S-BOUNDARY);
+SELECT InfMa (*1 CCC BARRIER S-BOUNDARY LINK 1C InfMa);
 
-SELECT Act + Ind + Sg3 (-1 CS)(NEGATE *1 FINV BARRIER S-BOUNDARY); 
+SELECT Act + Ind + Sg3 (-1 CS)(NEGATE *1 FINV BARRIER S-BOUNDARY);
 
-REMOVE PrfPrc + Pl (0 PrfPrc + Sg) (-1C OLLA + Act + SGa)(NEGATE 1 N + Pl OR A + NomPl); 
-REMOVE PrfPrc + Pl (0 OLLA + PrfPrc + Sg) (-1C OLLA + Act + SGa); 
+REMOVE PrfPrc + Pl (0 PrfPrc + Sg) (-1C OLLA + Act + SGa)(NEGATE 1 N + Pl OR A + NomPl);
+REMOVE PrfPrc + Pl (0 OLLA + PrfPrc + Sg) (-1C OLLA + Act + SGa);
 # olisi (Sg3) ollut (Pl or Sg) tuhoisat (Subj Pl!)
 
 # Pcle A, Pcle, Adv
 
 SELECT ("aiemmin") + Adv OR ("enemmän") + Adv ;
-IFF ("aika") + Pcle (1 A OR Adv OR HYVIN) ;  
-SELECT ("aika") + NSgNom (NEGATE 1 PALJON)(*0 Act + Sg3 BARRIER S-BOUNDARY)(NEGATE *1 NSgNom BARRIER S-BOUNDARY)(NEGATE *-1 NSgNom BARRIER S-BOUNDARY) ;  
+IFF ("aika") + Pcle (1 A OR Adv OR HYVIN) ;
+SELECT ("aika") + NSgNom (NEGATE 1 PALJON)(*0 Act + Sg3 BARRIER S-BOUNDARY)(NEGATE *1 NSgNom BARRIER S-BOUNDARY)(NEGATE *-1 NSgNom BARRIER S-BOUNDARY) ;
 
 LIST Viime = "viime" "ensi" "eri" "toissa";
-SELECT Pcle + A (0 Viime)(1 N); 
-SELECT ("suorastaan") + Pcle (1 A OR Adv OR V) ; #  OR ("kyllä") + Pcle ? 
+SELECT Pcle + A (0 Viime)(1 N);
+SELECT ("suorastaan") + Pcle (1 A OR Adv OR V) ; #  OR ("kyllä") + Pcle ?
 SELECT ("vain") + Pcle OR ("jo") + Pcle OR ("noin") + Pcle OR ("oikeastaan") + Pcle;
 
 SELECT ("sittenkin") ;
-REMOVE ("sitten") + Adv (-1 Num OR TIME-WORD); 
+REMOVE ("sitten") + Adv (-1 Num OR TIME-WORD);
 SELECT ("oikein") + Adv (1 A OR V OR Adv OR Punct);
 SELECT ("hyvin") + Adv (-1 InfA);
 SELECT ("tosi") + Adv (1 A OR Adv);
@@ -2046,7 +2046,7 @@ IFF ("monta") (NEGATE 1 NomHEAD OR A OR Adv); # aika monta, (a lot), otherwise m
 SELECT ("minä") + Foc_kin ;
 
 SELECT ("mikään") + Ill (-1 OLLA); # midagi vs mihinkään Adv
-SELECT ("mihinkään") + Adv OR ("mistään") + Adv OR ("johonkin") + Adv OR ("ainakin") + Adv OR ("kuinka") + Adv; 
+SELECT ("mihinkään") + Adv OR ("mistään") + Adv OR ("johonkin") + Adv OR ("ainakin") + Adv OR ("kuinka") + Adv;
 SELECT ("mitä") + Adv (1 ("<sitä>") OR ("<sen>")); # preconj
 SELECT ("mitä") + Adv (*2 COMMA BARRIER S-BOUNDARY OR ("mitä") LINK 1 ("<sitä>") OR ("<sen>")); # preconj
 IFF ("<sitä>") + Adv OR ("<sen>") + Pcle (-1 OMS OR COMMA)(-1 COMMA LINK *-1 ("mitä") + Adv BARRIER S-BOUNDARY); # cc
@@ -2067,38 +2067,38 @@ SELECT MIKA + Rel (1 ("vuoksi"));
 
 SELECT Pron + Ine + ("se") OR Pron + Ine + ("tämä") (1 Ine); # siinä
 SELECT Pron + Ine + ("se") OR Pron + Ine + ("tämä") (1 A OR N + Gen)(2 Ine); # siinä
-SELECT ("se") + Pron + Ine OR ("tämä") + Pron + Ine OR ("se") + Pron + Ela OR ("tämä") + Pron + Ela (0 Foc_kin) ; 
+SELECT ("se") + Pron + Ine OR ("tämä") + Pron + Ine OR ("se") + Pron + Ela OR ("tämä") + Pron + Ela (0 Foc_kin) ;
 SELECT ("siinä") + Adv OR ("tässä") + Adv (*1 OLLA BARRIER S-BOUNDARY LINK *1 ("<asemassa>") BARRIER S-BOUNDARY) ;
 SELECT ("siinä") + Adv OR ("tässä") + Adv (*0 Tässä-verb BARRIER S-BOUNDARY) ;
 SELECT ("siitä") + Adv OR ("tästä") + Adv (*0 Tästä-verb BARRIER S-BOUNDARY) ;
-SELECT ("se") + Pron + Ine OR ("tämä") + Pron + Ine OR ("se") + Pron + Ela OR ("tämä") + Pron + Ela ; 
+SELECT ("se") + Pron + Ine OR ("tämä") + Pron + Ine OR ("se") + Pron + Ela OR ("tämä") + Pron + Ela ;
 
 SELECT ("jokin") (-1 ("jos"i) OR ("vallan"i)); # jostakin johonkin (joka/jokin)
 SELECT ("jokin") (1 Punct OR ("muu") OR ("verran") OR ("tapa") OR ("syy") OR ("sortti") OR AD-PALJON OR HYVIN OR ("vallan")); # jossakin jostakin johonkin (joka/jokin)
 SELECT ("se") + Pron + Ill OR ("tämä") + Pron + Ill OR ("tuo") + Pron + Ill OR ("joka") + Pron + Ill (1 Sg + Ill OR ("mennessä")); # siihen Adv
 SELECT ("tähän") + Adv OR ("tuohon") + Adv (NEGATE 1 Sg + Ill); # ("siihen") + Adv very rare
 SELECT ("se") + Pron + Ine OR ("tämä") + Pron + Ine OR ("tuo") + Pron + Ine (1 Sg + Ine); # tässä Adv, siinä Adv
-SELECT ("siinä") + Adv OR ("tässä") + Adv OR ("tuossa") + Adv (NEGATE 1 Sg + Ine); 
+SELECT ("siinä") + Adv OR ("tässä") + Adv OR ("tuossa") + Adv (NEGATE 1 Sg + Ine);
 SELECT MIKA + Pron + Ela OR ("se") + Pron + Ela OR ("tämä") + Pron + Ela OR ("joka") + Pron + Ela (1 Sg + Ela); # missä tästä Adv
-SELECT ("mistä") + Adv OR ("siitä") + Adv OR ("tästä") + Adv OR ("josta") + Adv (NEGATE 1 Sg + Ela); 
+SELECT ("mistä") + Adv OR ("siitä") + Adv OR ("tästä") + Adv OR ("josta") + Adv (NEGATE 1 Sg + Ela);
 SELECT ("se") + Pron + Ade OR ("tuo") + Pron + Ade (1 Sg + Ade); # siellä tuolla Adv +?
-SELECT ("sillä") + Adv OR ("tuolla") + Adv (NEGATE 1 Sg + Ade); 
+SELECT ("sillä") + Adv OR ("tuolla") + Adv (NEGATE 1 Sg + Ade);
 SELECT ("se") + Pron + Abl (1 Sg + Abl); # sieltä Adv
-SELECT ("sieltä") + Adv (NEGATE 1 Sg + Abl); 
-SELECT ("joka") + Pron + Abe (1 Sg + Abe); # jotta CS 
+SELECT ("sieltä") + Adv (NEGATE 1 Sg + Abl);
+SELECT ("joka") + Pron + Abe (1 Sg + Abe); # jotta CS
 SELECT ("jotta") + CS (NEGATE 1 Sg + Abe); # et
 
-REMOVE ("muu") + A OR ("usea") + A (0 Pron); 
+REMOVE ("muu") + A OR ("usea") + A (0 Pron);
 SELECT ("muu") + Pron (NEGATE 0 V); # muistaa
 SELECT ("muu") + Sg + Pron (0 Imprt)(1 Punct OR CC)(*-1 ("ei") OR ("entä") BARRIER Punct); # muuttaa (ei muuta Sg Par); muistaa (ei muista Pl Ela)
-SELECT ("jotta") + CS (-1 COMMA)(*1 Cond); 
+SELECT ("jotta") + CS (-1 COMMA)(*1 Cond);
 SELECT ("<jotakin>"i) + Indef ; # jokin - midagi
 SELECT ("joka") + Indef (1 TIME-WORD + Nom); # iga aasta
 SELECT ("joka") + Rel (1 FINV); # kes (+ üldised Rel reeglid)
 SELECT ("koko") + Pron (1C N)(1 Sg);
 SELECT ("koko") + Pron (1 TIME-WORD + Gen); # terve aja
 SELECT ("koko") + N (-1 MIKA); # mis suurus +?
-SELECT ("aika") + N (-1 UNDECL_ADJ); 
+SELECT ("aika") + N (-1 UNDECL_ADJ);
 
 REMOVE N (0 Pron - ("sää")); # Sunhan
 SELECT Pers + Gen OR N + Gen (1 NES + Sg3)(*1 InfA BARRIER S-BOUNDARY OR Punct);
@@ -2136,7 +2136,7 @@ SELECT Pron + Dem (-1 Adv OR Pcle)(-2 FINV); # add conditions
 REMOVE Pron + Dem IF (0 Pers)(1 FINV OR PrfPrc); # add conditions
 
 SELECT ("<tuo>"i) + Pron + Nom (1C Nom)(NEGATE *-1 Imprt + Sg2 OR Act + Ind + Prs + Sg3);
-REMOVE Imprt (*1 ("?") BARRIER QUO OR (")")); 
+REMOVE Imprt (*1 ("?") BARRIER QUO OR (")"));
 # very hackish (tuo)
 
 
@@ -2169,7 +2169,7 @@ SUBSTITUTE Adv Pr TARGET ElaRight + Adv (NEGATE -1 Ela)(1 Ela)  ;
 SELECT Ela (-1 ElaRight + Pr);
 
 REMOVE Po OR Pr (NEGATE 0 GenLeft OR ParLeft OR ParRight OR GenRight);
-# should find exact context for all 
+# should find exact context for all
 
 SUBSTITUTE Adv Pr TARGET ("paitsi") + Adv (NEGATE -1 Pron + Par)(*1 N BARRIER Punct OR Conj); # (1 N + Nom OR Kieli + Tra) ;
 SELECT N + Nom (-1 ("paitsi"));
@@ -2217,7 +2217,7 @@ SELECT Po + GenLeft (0 ParRight)(0 GenRight)(1 Gen OR Par)(2 GenLeft OR ParLeft)
 
 SELECT Po (-1 CC)(-2C Po) ;
 SELECT Pr (1 CC)(2C Pr) ;
-SELECT CC (-1C Po); 
+SELECT CC (-1C Po);
 
 REMOVE Po (-1 Punct OR >>>);
 
@@ -2399,14 +2399,14 @@ REMOVE Sg + POSS_SUFF (0 Silma + Pl); #?
 REMOVE NomSg (0 PxSg3)(NEGATE 0 Prop)(*-1 NPSgNom BARRIER S-BOUNDARY OR OLLA);
 REMOVE NomSg (0 PxSg3)(NEGATE 1 Prop + NomSg OR Act + Ind + Sg3)(*1 NPSgNom BARRIER S-BOUNDARY OR OLLA);
 
-#REMOVE Act + PrsPrc (0 A + $$ALLCASES)(0 V + $$ALLCASES); 
+#REMOVE Act + PrsPrc (0 A + $$ALLCASES)(0 V + $$ALLCASES);
 # prefer A for transl, if it is in dict, otherwise will be PrfPrc and PrsPrc
-REMOVE N (0 Act + PrsPrc + $$ALLCASES)(1 $$ALLCASES); 
-REMOVE N (0 Act + PrfPrc); 
-REMOVE A (0 Act + PPPCPs); 
+REMOVE N (0 Act + PrsPrc + $$ALLCASES)(1 $$ALLCASES);
+REMOVE N (0 Act + PrfPrc);
+REMOVE A (0 Act + PPPCPs);
 # most probably A is not in dict, so here prefer Act Prc
 
-SELECT Act + Ind + Prs + Sg1 (-1 COMMA OR CC)(*-2 Act + Ind + Prs + Sg1 BARRIER Punct OR CC); 
+SELECT Act + Ind + Prs + Sg1 (-1 COMMA OR CC)(*-2 Act + Ind + Prs + Sg1 BARRIER Punct OR CC);
 
 SELECT NSgNom OR ASgNom OR Num + NomSg (NEGATE 0 Adv OR Gen) (1 FINV + Sg3)(NEGATE *-1 FINV + Sg3 BARRIER CCC OR S-BOUNDARY LINK -1 NSgNom) ;
 SELECT NSgNom OR ASgNom OR Num + NomSg (NEGATE 0 Adv OR POSS_SUFF) (1 FINV + Sg3)(NEGATE *-1 FINV + Sg3 BARRIER CCC OR S-BOUNDARY LINK -1 NSgNom) ;
@@ -2416,9 +2416,9 @@ SELECT NPlNom (NEGATE 0 Par)(1 FINV + Pl3)(NEGATE *-1 CC BARRIER Punct LINK *-1 
 
 SELECT ("paperi") + Pl + Nom (NEGATE -1 Num OR ("moni") OR PALJON OR PARI_PUOLI)(*0 Ill BARRIER S-BOUNDARY) ; # hän vei paperinsa tiedekuntaan
 
-SELECT HYVA_HUONO + ASgNom (*-1 OLLA + Sg3 BARRIER CCC OR S-BOUNDARY OR NPSgNom)(NEGATE 1 N) ; # predicative 
+SELECT HYVA_HUONO + ASgNom (*-1 OLLA + Sg3 BARRIER CCC OR S-BOUNDARY OR NPSgNom)(NEGATE 1 N) ; # predicative
 SELECT ASgNom (OC A OR N)(*-1 OLLA + Sg3 BARRIER CCC OR S-BOUNDARY OR NPSgNom)(NEGATE 1 N) ; # predicative #?
-SELECT ASgNom (OC A OR N)(*-1 OLLA + Sg3 BARRIER CCC OR S-BOUNDARY OR NPSgNom)(1 N + $$ALLCASES)(NEGATE 0 $$ALLCASES) ; # predicative 
+SELECT ASgNom (OC A OR N)(*-1 OLLA + Sg3 BARRIER CCC OR S-BOUNDARY OR NPSgNom)(1 N + $$ALLCASES)(NEGATE 0 $$ALLCASES) ; # predicative
 REMOVE NomHEAD + NomSg + POSS_SUFF (0 Gen) (-1 Act + Ind + Sg3 - OLLA OR Act + Ind + Pl3 - OLLA)(-2 UP + Unknown)(NEGATE -3 OMS) ;
 SELECT NomHEAD + NomSg (NEGATE 0 Adv) (*-1 FINV + Sg3 BARRIER CCC OR S-BOUNDARY OR NPSgNom LINK NOT *-1 NPSgNom OR Acro + NomSg) ;
 # Tässä on sinun huoneesi ?
@@ -2448,12 +2448,12 @@ REMOVE Adv + AdvAdds (0 Adv - AdvAdds) ;
 REMOVE N (0 A + $$ALLCASES) (1 N + $$ALLCASES) ; # A or N
 REMOVE N (0 A + Nom) (-1 OLLA) ; # A or N
 
-REMOVE A (0 NSgNom) (1 Act + Sg3) ; 
-REMOVE A (0 NPlNom) (1 Act + Pl3) ; 
+REMOVE A (0 NSgNom) (1 Act + Sg3) ;
+REMOVE A (0 NPlNom) (1 Act + Pl3) ;
 
 SELECT Foc_ko (-1 >>>)(*1 ("?"));
 
-SELECT Ela (1 OLLA OR InfA)(2 Hauskaa) ; 
+SELECT Ela (1 OLLA OR InfA)(2 Hauskaa) ;
 SELECT Par (-1 Hauskaa) ; # hauskaa matkaa!
 
 SELECT HYVA_HUONO + A (-1 OLLA OR InfA) ;
@@ -2461,13 +2461,13 @@ SELECT HYVA_HUONO + A (1 OLLA OR InfA) ;
 
 SELECT Gen (1 Täytyy)(2 OLLA) ;
 
-SELECT Par OR Nom (0 Prop)(NEGATE 0 Ela OR Adv)(-1 Par-OBJ) ; 
-SELECT Par (NEGATE 0 Ela OR Adv OR Prop)(-1 Par-OBJ) ; 
-SELECT Gen (NEGATE 0 Ela OR Adv OR Prop OR POSS_SUFF)(-1 Par-OBJ) ; 
-SELECT Gen (NEGATE 0 Ela OR Adv OR Prop OR NomPl)(-1 Par-OBJ) ; 
-SELECT Par (NEGATE 0 Adv OR Prop)(-1 Par-OBJ - ("pitää")) ; 
-SELECT Pron + Par (NEGATE 0 Ela)(-1 Par-OBJ) ; 
-SELECT Pron + Par (-1 Par-OBJ - ("pitää")) ; 
+SELECT Par OR Nom (0 Prop)(NEGATE 0 Ela OR Adv)(-1 Par-OBJ) ;
+SELECT Par (NEGATE 0 Ela OR Adv OR Prop)(-1 Par-OBJ) ;
+SELECT Gen (NEGATE 0 Ela OR Adv OR Prop OR POSS_SUFF)(-1 Par-OBJ) ;
+SELECT Gen (NEGATE 0 Ela OR Adv OR Prop OR NomPl)(-1 Par-OBJ) ;
+SELECT Par (NEGATE 0 Adv OR Prop)(-1 Par-OBJ - ("pitää")) ;
+SELECT Pron + Par (NEGATE 0 Ela)(-1 Par-OBJ) ;
+SELECT Pron + Par (-1 Par-OBJ - ("pitää")) ;
 
 SELECT ("menossa") + Adv (*-1 OLLA BARRIER S-BOUNDARY) ;
 
@@ -2479,11 +2479,11 @@ REMOVE V (0 Pron + Ela) (-1D Num) ;
 
 SELECT Conj IF (-1 ("samoin") + Pcle) ;
     # samoin kuin.
-    # hackish for now 
+    # hackish for now
 
 ## Trond
 
-# Doesn't work for 'siellä on myös pihkaa ja kiveä'. Perhaps best to leave this out until there are ambiguities? 
+# Doesn't work for 'siellä on myös pihkaa ja kiveä'. Perhaps best to leave this out until there are ambiguities?
 
 # REMOVE Pcle IF (NEGATE 1 Adv) ;
 
@@ -2494,7 +2494,7 @@ REMOVE Pcle IF (0 CC OR CS OR Adv OR Pron) (NEGATE 1 CC) ;
 # Jumalasi on tullut.
 REMOVE Prop IF (0 CNOUN) (0 POSS_SUFF);
 
-REMOVE Interj ; # FMT: The above rules do not work for "Niin he jättivät kohta verkot ja seurasivat häntä" 
+REMOVE Interj ; # FMT: The above rules do not work for "Niin he jättivät kohta verkot ja seurasivat häntä"
 # these two rules are ad hoc rules, awaiting tag harmonisation omorfi-cg
 
 SELECT VFIN (0 VFIN) (0 NGen) (NEGATE *-1 VFIN BARRIER CLB?) (NEGATE 1* VFIN BARRIER CLB?); # FMT: "Asun valkeassa talossa."
@@ -2509,7 +2509,7 @@ REMOVE Pron + ("yks") IF (0 Num); # FMT: "Kokoontukoot vedet, jotka ovat taivaan
 SELECT InfA IF (-1 (@NES)) (-2 (@+FAUXV)) ;
 
 # rule added 20.01.2015 - FMT+KM
-SELECT InfA IF (-1 A + Par LINK -1 OLLA) ; 
+SELECT InfA IF (-1 A + Par LINK -1 OLLA) ;
   # Koirasta on hauskaa leikkiä näiden kahden lapsen kanssa.
 
 #SECTION
@@ -2590,7 +2590,7 @@ REMOVE ("niin") + Adv (0 CC)(*1 ("kuin") + CC BARRIER CS);
 "<puolen>" SELECT N (1 N) (NEGATE 1 Gen) ;
  # PORVARIllISEN PUOLEN UUSJAKO
 "<puolestaan>" SELECT Adv (NEGATE -1 Gen) (NEGATE -1 Ela) ;
-"<päivittäin>" REMOVE Adv (0 ("(.*)ittain"r)) ; # DN-ITTAIN 
+"<päivittäin>" REMOVE Adv (0 ("(.*)ittain"r)) ; # DN-ITTAIN
 "<pääsi>" SELECT V ;
  # RISKY
 "<sataa>" SELECT Num (-1 Num) ;
@@ -2748,7 +2748,7 @@ SELECT Adv (NEGATE 0 NIIN-YHA OR ENEM-VAHEM OR VAllAN OR Interr OR YLI_AllE) (NE
 # CF. HIUKANAdv ENTISTÄ PITEMPI XXXX
 SELECT Adv (NEGATE 0 V)(0 AD-PALJON) (1 PALJON-MONI) ; # VARSIN PALJON, VARSIN USEAT
 SELECT Adv (NEGATE 0 NIIN-YHA OR ENEM-VAHEM OR VAllAN OR Interr OR PALJON) (1C A_AD-A_Q) (NEGATE 1 Par) (NEGATE 2 Comp) ;
-SELECT Adv (NEGATE 0 NIIN-YHA OR ENEM-VAHEM OR VAllAN OR Interr OR PALJON) (1C A_AD-A_Q) (1 Par) (NEGATE 2 Comp); # XXXX 
+SELECT Adv (NEGATE 0 NIIN-YHA OR ENEM-VAHEM OR VAllAN OR Interr OR PALJON) (1C A_AD-A_Q) (1 Par) (NEGATE 2 Comp); # XXXX
 REMOVE Adv (NEGATE 0 NIIN-YHA) (1C A_AD-A_Q) (1 Par) (2 Comp) ;
 # HIEMANAdv ENTISTÄ SUPPEAMPI
 SELECT Adv (NEGATE 0 NIIN-YHA OR VAllAN OR Interr OR YLI_AllE) (1C Num-PUOLET-KOLMANNES) ; #lastcondadded9.10.2000
@@ -2762,7 +2762,7 @@ REMOVE Der_inen + Par ; # IF (0 (A Pos Sg Par)) (0 N + Ela) (NEGATE 1 Par) ;
     # Blame Trond if this doesn't work. We hope for counter examples.
 
 # Adverbs
-# ------- 
+# -------
 
 REMOVE (Adv Superl) IF (0 Adv) ; # lähinnä
 SELECT Adv (-1C Adv OR Pcle) (NEGATE 0 Adp) (NEGATE 1 A) ; # NIINAdv HYVIN(Adv_AD-A) ;
@@ -2816,9 +2816,9 @@ SELECT Pron + Dem IF (0 Adv) (NEGATE 1 WORD LINK 2 Gen) ;
     # Hän rakensi siihen alttarin.
     # Better way to do this? Have to check for case mismatches, and this will get to be crazy. E.g., 1 = Ill, 2 = Gen; 1 = Gen, 2 = Ines
     # Maybe i should actually select the pronouns instead of the adverbs... This is more inline with fin-sme, anyway.
-    
 
-SELECT ("tuo") + Pron + Dem IF (0 $$ALLCASES) (1 $$ALLCASES) ; 
+
+SELECT ("tuo") + Pron + Dem IF (0 $$ALLCASES) (1 $$ALLCASES) ;
 
 
 REMOVE ("sama") + Pron + Pl + Ins IF (0 $$ALLCASES) (NEGATE 1 $$ALLCASES) (0 Adv) (NEGATE 1 Conj);
@@ -2838,7 +2838,7 @@ REMOVE ("yksi") + Num + Pl + Ins IF (0 $$ALLCASES) (NEGATE 1 $$ALLCASES) (0 Adv)
     # Hän oli siellä yksin.
     # Select adv, instead of num
 
-# Nouns 
+# Nouns
 # -----
 
 SELECT ("aika") + N (1C VFIN-C) ;
@@ -2944,7 +2944,7 @@ SELECT NSgNom (-1C Nom) (-1 A_Q_Pron) (-1 Sg) (NEGATE 0 POSS_SUFF) (NEGATE 0 TUL
 
 # replaced POSS_SUFF with POSS_SUFF - 20.01.2015 -FMT+KM
 SELECT NSgGen IF (-1C Gen) (-1 A_Q_Pron) (-1 Sg) (NEGATE 0 POSS_SUFF) (NEGATE 1 Gen) (NEGATE 0 SUHTEEN) ;
-  # 
+  #
 
 SELECT NSgPar (-1C Par) (-1 A_Q_Pron) (-1 Sg) (NEGATE 1 Par) (NEGATE 0 KAUTTA) (*-1 CLB? LINK *1C VFIN) ;
 SELECT NSgIne (-1C Ine) (-1 A_Q_Pron) (-1 Sg) (NEGATE 1 Ine) ;
@@ -3090,16 +3090,16 @@ SELECT Pron + Pl + Tra (1 Tra + Pl) (NEGATE 1 HARVA-SET) (NEGATE 0 Num) ;
 SELECT ("se") + Pron + Sg + Ela ;                 # SIITä
 
 SELECT Adv (0 YKSI) (1 Par) (NEGATE 0 Par) ;
-SELECT Adv (0 YKSI) (1 Gen) (2 Par) ; 
+SELECT Adv (0 YKSI) (1 Gen) (2 Par) ;
 SELECT Num (0 YKSI) (1 N) (NEGATE 0 WORD LINK 1 Gen LINK 2 Par) ;
 
 SELECT ("tämä") + Pron + Dem (1 N) (1 Ill) ;
 
-REMOVE ("toi") + Pron + Dem (1 Pron) ; 
+REMOVE ("toi") + Pron + Dem (1 Pron) ;
 
 
-"<jotta>" REMOVE Rel IF (0 CS) (0 CLB?) (NEGATE -1 WORD) ; 
-# ..., jotta näkyy bläh bläh. 
+"<jotta>" REMOVE Rel IF (0 CS) (0 CLB?) (NEGATE -1 WORD) ;
+# ..., jotta näkyy bläh bläh.
 #      ^ täällä tarvitaan CS, eikä Pron Rel.
 
 
@@ -3107,7 +3107,7 @@ REMOVE ("toi") + Pron + Dem (1 Pron) ;
 # ------------
 
 # Commented out Mon Jan 19 15:24:03 CET 2015 (FMT + Estonians) ;
-#SELECT:r1885 Prop IF (NEGATE *-1 BOS OR (":") OR (PUNCT LEFT) OR (Num Nom) BARRIER WORD); 
+#SELECT:r1885 Prop IF (NEGATE *-1 BOS OR (":") OR (PUNCT LEFT) OR (Num Nom) BARRIER WORD);
 
 # *** Prop
 
@@ -3123,7 +3123,7 @@ REMOVE ("toi") + Pron + Dem (1 Pron) ;
 # LG-NAMES CANNOT BE CAPITALIZED S-INTERNAllY
 
 SELECT ("Alankomaat") + Prop (0 Pl) ;
-SELECT ("Yhdysvallat") + Prop (0 Pl) ; 
+SELECT ("Yhdysvallat") + Prop (0 Pl) ;
 SELECT ("Kokoomus") + Prop (NEGATE 0 CAP_NOCAP) ;
 REMOVE ("Aino") + Prop + Sg + Par ;
 IFF ("Johan") + Prop (1 Prop) (NEGATE 0 CAP_NOCAP) ; # JOHAN BERGenSTRåHLE
@@ -3154,7 +3154,7 @@ SELECT NPlNom + POSS_SUFF (-1C Nom + A_Q_Pron) (-1 Pl) (NEGATE -1 Rel) (NEGATE 0
 SELECT NPSg3Nom + POSS_SUFF (NEGATE 0 V OR HYVANSA OR TILANNE) (NEGATE 1 GenLeft)(NEGATE -1 GenRight) (1C VFIN + Act + Sg3)(NEGATE *-1 NPSg3Nom OR Letter + NomSg BARRIER S-BOUNDARY)(NEGATE *1 NPSg3Nom OR Letter + NomSg BARRIER S-BOUNDARY);
 SELECT NPSg3Nom + POSS_SUFF (NEGATE 0 V OR HYVANSA OR TILANNE) (NEGATE 1 GenLeft OR Punct)(NEGATE -1 GenRight) (*2C VFIN + Act + Sg3 BARRIER S-BOUNDARY OR Punct LINK NOT -1C NPSg3Nom OR Unknown + UP)(NEGATE *-1 NPSg3Nom OR Letter + NomSg BARRIER S-BOUNDARY)(NEGATE *1 NPSg3Nom OR Letter + NomSg BARRIER S-BOUNDARY);
 SELECT NPSg3Nom + POSS_SUFF (NEGATE 0 V OR HYVANSA OR TILANNE) (NEGATE 1 GenLeft)(NEGATE -1 GenRight) (*-1C VFIN + Act + Sg3 BARRIER S-BOUNDARY LINK NOT -1C NPSg3Nom OR Unknown + UP)(NEGATE *-1 NPSg3Nom OR Letter + NomSg BARRIER S-BOUNDARY)(NEGATE *1 NPSg3Nom OR Letter + NomSg BARRIER S-BOUNDARY);
-# TP: before selecting gen check for nom 
+# TP: before selecting gen check for nom
 
 SELECT NSgGen + POSS_SUFF (-1C Gen + A_Q_Pron) (-1 Sg) (NEGATE 0 V OR HYVANSA OR TILANNE) (NEGATE -1 Pers) ;
 # HäNEN AINOAN AUTONSA
@@ -3242,8 +3242,8 @@ REMOVE PxSg2 (0 V) (0 Prt) (NEGATE -1 SINÄ) ; # TOTESI,KOHOSI
 SELECT NSgNom + POSS_SUFF (1C NEGV) (1 Sg123) (NEGATE 2 TARVITA) ; # XXX
 SELECT NPlNom + POSS_SUFF (1C NEGV) (1 Pl123) (NEGATE 2 TARVITA) ;
 
-# added (NEGATE 0 DER)  . Mon Jan 19 15:33:50 CET 2015 (FMT + KM) OR 
-SELECT V IF (0 N) (NEGATE 0 WORD)(NEGATE *-1 V BARRIER CLB) (NEGATE *1 V BARRIER CLB) (NEGATE 0 DER) ; 
+# added (NEGATE 0 DER)  . Mon Jan 19 15:33:50 CET 2015 (FMT + KM) OR
+SELECT V IF (0 N) (NEGATE 0 WORD)(NEGATE *-1 V BARRIER CLB) (NEGATE *1 V BARRIER CLB) (NEGATE 0 DER) ;
 
 #------------------------------------------------------------
 # KOORDINAATIO: N Conj N
@@ -3280,7 +3280,7 @@ SELECT ("paitsi") + Pr (1 Punct) (2 ETTA) ;
 # mahdollisesti ongelmallista: "tuolla menee isä, astuin sen jälkeen."  "tutustuin jänikseen ja sen jälkeen."
 
 # runoudessa: "muistan päivän sen, jälkeen eilisen". ; "sen mukaan"
-# SELECT Adp (0 Po) (1 Gen) ; 
+# SELECT Adp (0 Po) (1 Gen) ;
 SELECT Po IF (NEGATE 0 Pr) (-1 Gen) ;
 SELECT Pr IF (NEGATE 0 Pr) (1 Gen) ;
 SELECT ("sitten") + Po (-2 Num) (-1 TIME-WORD) (-1 Par) ;  # also cf. below under heuristic
@@ -3323,13 +3323,13 @@ SELECT Po IF (0 Po) (0 V + Ins) (-1 PoCase) ;
     # Hintoihin katsoen, hintoihin nähden
 
     # General Po Pr rules
-SELECT Po IF (0 Po) (-1 PoCaseNonLoc) ; 
+SELECT Po IF (0 Po) (-1 PoCaseNonLoc) ;
 SELECT Pr IF (0 Pr) (1 PoCaseNonLoc) ;
 
-REMOVE Adpp (0 Po - Adpp) ; 
-REMOVE Adpp (0 Pr - Adpp) ; 
+REMOVE Adpp (0 Po - Adpp) ;
+REMOVE Adpp (0 Pr - Adpp) ;
 
-REMOVE Pcle (0 Adv - Pcle) ; 
+REMOVE Pcle (0 Adv - Pcle) ;
 
 # Commented out 20.01.2015 - FMT+KM
 #REMOVE Adv IF (0 Po) ;
@@ -3341,7 +3341,7 @@ REMOVE Po IF (-1C VFIN) ;
     # Kun Mari on lopettanut laskemisen, hän katsoo ympärilleen.
 
     # Puolella _ Puoli
-    
+
 SELECT ("puoli") + N IF (NEGATE 0 WORD LINK -1 NGen) ;
 
 # Prefer to remove rather than select, so rules have to be 'inverse': REMOVE Pl3 IF Sg3, etc.
@@ -3355,11 +3355,11 @@ REMOVE PxPl3 IF (0 PxSg3)(-1C Act + Ind + Sg3) ; # TP
 REMOVE PxSg3 IF (0 PxPl3)(-1C Act + Ind + Pl3) ; # TP
 
 REMOVE PxPl3 IF (0 PxSg3)(-1 Pers + Sg3 OR Rel + Sg OR Interr + Sg OR Qu + Sg) ; # TP: rewritten
-REMOVE PxSg3 IF (0 PxPl3)(-1 Pers + Pl3 OR Rel + Pl OR Interr + Pl OR Qu + Pl) ; # TP: rewritten 
+REMOVE PxSg3 IF (0 PxPl3)(-1 Pers + Pl3 OR Rel + Pl OR Interr + Pl OR Qu + Pl) ; # TP: rewritten
 REMOVE PxPl3 IF (0 PxSg3)(*-1 Pers + Sg3 OR Rel + Sg OR Interr + Sg OR Qu + Sg BARRIER Pers + Pl3 OR S-BOUNDARY - KUIN OR NPlNom LINK NEGATE 1 PxSg3) ; # TP: rewritten
-REMOVE PxSg3 IF (0 PxPl3)(*-1 Pers + Pl3 OR Rel + Pl OR Interr + Pl OR Qu + Pl BARRIER Pers + Sg3 OR S-BOUNDARY - KUIN OR NSgNom LINK NEGATE 1 PxPl3) ; # TP: rewritten 
+REMOVE PxSg3 IF (0 PxPl3)(*-1 Pers + Pl3 OR Rel + Pl OR Interr + Pl OR Qu + Pl BARRIER Pers + Sg3 OR S-BOUNDARY - KUIN OR NSgNom LINK NEGATE 1 PxPl3) ; # TP: rewritten
 REMOVE PxPl3 - ITSE IF (0 PxSg3)(*1 Pers + Sg3 BARRIER Pers + Pl3 OR S-BOUNDARY - KUIN) ; # TP
-REMOVE PxSg3 - ITSE IF (0 PxPl3)(*1 Pers + Pl3 BARRIER Pers + Sg3 OR S-BOUNDARY - KUIN) ; # TP 
+REMOVE PxSg3 - ITSE IF (0 PxPl3)(*1 Pers + Pl3 BARRIER Pers + Sg3 OR S-BOUNDARY - KUIN) ; # TP
 REMOVE PxSg3 IF (0 PxPl3)(*-1 NPlGen OR NPlNom BARRIER Pers + Sg3 OR NSgGen OR NSgNom LINK -1 CC LINK -1 NPlGen OR NPlNom) ; # TP
 REMOVE PxPl3 IF (0 PxSg3)(*-1 NSgGen OR NSgNom BARRIER Pers + Pl3 OR NPlGen OR NPlNom) ; # TP
 REMOVE PxSg3 IF (0 PxPl3)(*-1 NPlGen OR NPlNom BARRIER Pers + Sg3 OR NSgGen OR NSgNom) ; # TP
@@ -3375,7 +3375,7 @@ REMOVE PxSg3 IF (*-1 Pl + @SUBJ> OR Act + Pl3) ;
 
 # REMOVE (THIRD_PersON_PL) IF (0 POSS_SUFF) (-1 Pron + Sg) ;
 # REMOVE (THIRD_PersON_SG) IF (0 POSS_SUFF) (-1 Pron + Pl) ;
-# 
+#
 # REMOVE (N THIRD_PersON_PL) IF (0 POSS_SUFF) (*-1 Sg + @SUBJ>) ;
 # REMOVE (N THIRD_PersON_SG) IF (0 POSS_SUFF) (*-1 Pl + @SUBJ>) ;
 
@@ -3385,16 +3385,16 @@ REMOVE PxSg3 IF (*-1 Pl + @SUBJ> OR Act + Pl3) ;
 
     # Hän näki heidän poikansa.
     # -- seems not to work
-    
+
     # Ja Jumala(j) loi ihmisen omaksi kuvaksensa(j).
     # *Ja Jumala(j) loi ihmisen(i) omaksi kuvaksensa(i).
     # -- Means that we do need to look over the barrier, or that this barrier can't include the obj?
-    
+
     # So basically, this needs to go to the subject if there's no intervening pronoun, otherwise it goes to the pronoun if it immediately precedes... yes?
-    
+
     # Jukka kertoi heille heidän ongelmistaan
     # *minä kerroin heille ongelmistaan
-    
+
 
 # REMOVE (Po Pl3) IF (*-1 THIRD_PersON_SG BARRIER THIRD_PersON_SG) ;
 # REMOVE (Adv Pl3) IF (*-1 THIRD_PersON_SG BARRIER THIRD_PersON_SG) ;
@@ -3415,13 +3415,13 @@ SELECT Adv IF (-1 ("ja")) (-2 Adv) (1 Gen) ;
 SELECT N + ("jälki") IF (-1 V + Act) ;
 SELECT N + ("jälki") IF (-1 Adv) (-2 V + Act) ;
 
-SELECT Adv (1 ETTA) ; 
-SELECT Adv (1 Punct) (2 ETTA) ; 
+SELECT Adv (1 ETTA) ;
+SELECT Adv (1 Punct) (2 ETTA) ;
 
 # Assuming that all prepositions are now tagged as such in omorfi -- Ryan
 # SELECT Adp ((1 Par) or (-1 (Par or Gen)) or (2 Par)) ; # --ryan #
 # SELECT Pr ((1 Par) OR (-1 (Par OR Gen)) OR (2 Par)) ;# --trond #
-# TT: This rule was formally flawed, but it is unclear to me what it is 
+# TT: This rule was formally flawed, but it is unclear to me what it is
 #     supposed to do. I thus comment it out.
 #     I would have said something along the lines of
 # SELECT Pr if (0 Partitive-prepositions)(*1 Par BARRIER NPNH) ;
@@ -3563,10 +3563,10 @@ REMOVE Der_sti IF (0C Adv) ;
 # Remove derived adjectives if non-derived exists
 REMOVE Der_inen IF (0C A) ;
 
-# Participles 
+# Participles
 # -----------
 
-REMOVE A IF (0 PrsPrc) ; 
+REMOVE A IF (0 PrsPrc) ;
 
 # Participle agreement?
 REMOVE AgPrc + Ine IF (NEGATE 1C Ine) ;
@@ -3591,7 +3591,7 @@ SELECT ConNeg (*-1 NEGV BARRIER V) (NEGATE 0 NEG-AMBIGUOUS) (NEGATE 1 Neg) (NEGA
 #REMOVE:NoConNeg ConNeg IF (NEGATE -1* Neg); # FMT
 
 REMOVE:NoConNeg ConNeg IF (NEGATE *1 Neg) (NEGATE *-1 Neg);
-    
+
 SELECT Pron + Pers (-1 NEGV) (*1 ConNeg BARRIER ConNeg) (NEGATE 0 WORD LINK 1 N + Ess);
     # Enkä minä koskaan enää tuhoa kaikkea, mikä elää, niinkuin nyt olen tehnyt.
 
@@ -3608,7 +3608,7 @@ REMOVE Pass + Neg (*-1 NEGV LINK *1C PrsPrc LINK NOT *1 CLB?) ;
 
 # Allow selecting of Neg when Conj CS exists. Does not change above example. -- Ryan
 
-REMOVE Neg (NEGATE *-1 NEGV) (NEGATE *1 NEGV) (NEGATE 0 CS) (NEGATE 1 ConNeg) (NEGATE -1 ConNeg) ; 
+REMOVE Neg (NEGATE *-1 NEGV) (NEGATE *1 NEGV) (NEGATE 0 CS) (NEGATE 1 ConNeg) (NEGATE -1 ConNeg) ;
 
   # IF NO NEGV, THEN NO Neg IN THE SAME CLAUSE.
 REMOVE Neg (NEGATE *-1 NEGV) (*1 NEGV LINK *1C Neg) ;
@@ -3699,9 +3699,9 @@ REMOVE V + Sg3 (-1 NEGV) ;
   # goes wrong with "Ettekö te pitää"
 REMOVE V + Sg3 (-2 NEGV) (NEGATE -1 V OR CLB?) ;
 REMOVE V + Sg3 (-3 NEGV) (NEGATE -1 V OR CLB?) (NEGATE -2 V OR CLB?) ;
-REMOVE V + Sg3 (-4 NEGV) (NEGATE -1 V OR CLB?) (NEGATE -2 V OR CLB?) 
+REMOVE V + Sg3 (-4 NEGV) (NEGATE -1 V OR CLB?) (NEGATE -2 V OR CLB?)
  (NEGATE -3 V) (NEGATE -3 CLB?) ; # XXXX
-REMOVE V + Sg3 (-5 NEGV) (NEGATE -1 V OR CLB?) (NEGATE -2 V OR CLB?) 
+REMOVE V + Sg3 (-5 NEGV) (NEGATE -1 V OR CLB?) (NEGATE -2 V OR CLB?)
  (NEGATE -3 V) (NEGATE -3 CLB?)  (NEGATE -4 V OR CLB?) ; # XXXX
 REMOVE (Neg V) (*-1 CLB? LINK NOT 0 NEGV LINK NOT *1 NEGV) (0 V + Sg3) ; # XXXX
 REMOVE N (0 VOI) (1 InfA) ;
@@ -3738,9 +3738,9 @@ SELECT VSg3 IF (0 N) (*-1 THIRD_PersON_SG_Noun BARRIER CLB) (NEGATE -1* VFIN BAR
 # added '(NEGATE -1C* VFIN BARRIER CLB) (NEGATE 1C* VFIN BARRIER CLB) ;' - 20.01.2015 - FMT+KM
 SELECT VPl3 IF (0 N) (*-1 THIRD_PersON_PL_Noun BARRIER CLB) (NEGATE -1* VFIN BARRIER CLB) (NEGATE 1* VFIN BARRIER CLB) ;
 
-    # Tuli raivosi alueella, jossa... 
+    # Tuli raivosi alueella, jossa...
     # Problem: Mikko laski luotansa kyyhkysen nähdäksensä.
-    
+
 # 'C' removed from VFIN - 20.01.2015 - FMT+KM
 SELECT VPl3 (NEGATE *-1 VFIN) (NEGATE *1 VFIN) (*-1 Nom LINK 0 Pl) ;
 # *** PCP
@@ -3851,7 +3851,7 @@ REMOVE N + Pl (0 VUO_VOI) ;   # NB "voista" ETC
 # 11 ERRORS OUT OF 14 IN PK.ANL!!
 SELECT PrsPrc + Pass + Gen (1C Gen) ;
 # SELECT (PrfPrc Act Gen "riittää") (1C A_PCP) ; # RIITTÄVÄN KAllIS
-SELECT Act + PrsPrc + Gen + ("riittää") (1C A_PCP) ; # 
+SELECT Act + PrsPrc + Gen + ("riittää") (1C A_PCP) ; #
 #(@w SELECT PCP (0 Gen) (0 REF) (1C Conj) (*2 PCP LINK 0 Gen LINK NOT *-1 Ref-VERB) ;
 # NB: ???XXX
 SELECT A (0 REF) (1C Conj) (*2 A + Gen BARRIER V OR CLB?)(NEGATE *1 Ref-VERB)(NEGATE *-1 Ref-VERB) ;
@@ -3977,14 +3977,14 @@ SELECT ("oma") + Gen (NEGATE 1 WORD) (*-1 REALCOPULAS) (0C Nom) ;
     # ----
 
 # TP: for very practical MT reasons. Comment out if want Pron distinctions.
-SELECT ("<itse>"i) + Adv ; 
-    
+SELECT ("<itse>"i) + Adv ;
+
 
 # want these to be really local for now.
 
 
-SELECT ("itse") + Sg (-1 N_P_SG) ; 
-SELECT ("itse") + Pl (-1 N_P_PL) ; 
+SELECT ("itse") + Sg (-1 N_P_SG) ;
+SELECT ("itse") + Pl (-1 N_P_PL) ;
     # Hän itse tulee jäljessämme.
 
 SELECT ("itse") + Nom (-1 N_P_NOM) ;
@@ -3993,11 +3993,11 @@ SELECT ("itse") + Nom (-1 N_P_NOM) ;
 SELECT ("itse") + Gen (-1 N_P_GEN) ;
 SELECT ("itse") + Gen (-1 N_P_GEN) ;
 
-SELECT ("itse") + Sg (1 N_P_SG) ; 
-SELECT ("itse") + Pl (1 N_P_PL) ; 
+SELECT ("itse") + Sg (1 N_P_SG) ;
+SELECT ("itse") + Pl (1 N_P_PL) ;
 
-SELECT ("itse") + Nom (1 N_P_NOM) ; 
-    # Mutta itse hän astui siihen... 
+SELECT ("itse") + Nom (1 N_P_NOM) ;
+    # Mutta itse hän astui siihen...
 
 SELECT ("itse") + Nom (-1 Imprt) ;
 
@@ -4084,7 +4084,7 @@ REMOVE ("verta") + NSgPar (NEGATE -1 Gen) ;
 REMOVE ("kokki") + N + Pl ;
 REMOVE ("palkinta") + N + Pl ;
 REMOVE ("laitto") + N ;
-SELECT ("tehtävä") + NSgNom (NEGATE -1 OLLA) (NEGATE -2 OLLA) (NEGATE -3 OLLA) 
+SELECT ("tehtävä") + NSgNom (NEGATE -1 OLLA) (NEGATE -2 OLLA) (NEGATE -3 OLLA)
  (NEGATE -4 OLLA) ;   # "tämä on tehtävä" on amb!
 REMOVE ("saada") + ImprtActSg2 ;    # saa
 REMOVE ("haitata") + ImprtActSg2 ;
@@ -4121,9 +4121,9 @@ SELECT ("lohko") + N ;
 SELECT ("hän") + Pron + Sg + Par + Pers IF (*-1 NEGV LINK NOT *1 CLB?) ;
 SELECT ("hän") + Pron + Sg + Par + Pers IF (*1 NEGV) ;
 
-SELECT V IF (0 N) (0 V) (*1 NSgNom BARRIER CLB) (NEGATE -1 CLB); 
+SELECT V IF (0 N) (0 V) (*1 NSgNom BARRIER CLB) (NEGATE -1 CLB);
 # Ja tuli ehtoo, ja tuli aamu.
-# ... Ja tuli tuli? 
+# ... Ja tuli tuli?
 
 #REMOVE (<MORPH-HEUR!>) (0 <CORRECT!>) ;
 #REMOVE (<Del!>) ;      # aisti_toiminta Pl
@@ -4155,8 +4155,8 @@ REMOVE A (0 LOC-CASE) (NEGATE 1 N) ; # nousi taivaisiin
 REMOVE ("yhdessä") + Adv (1C Ine) ; # yhdessäNum yössä
 SELECT Num (0 PARI_PUOLI) (0 Gen) (1 Gen) (1 Gen-WORD) ; # parin vuoden urakka
 SELECT  Pr + GenRight (0 YLI_AllE) (1 Num) (2 Gen) ; # yli 38 asteen
-SELECT  Pr + GenRight (0 YLI_AllE) (1C Gen) (NEGATE 1 TIME-WORD OR NOUN-OF-MEASURE) (NEGATE -1 Gen) ; 
-SELECT Adv (0 YLI_AllE) (1 TIME-WORD OR NOUN-OF-MEASURE) ; 
+SELECT  Pr + GenRight (0 YLI_AllE) (1C Gen) (NEGATE 1 TIME-WORD OR NOUN-OF-MEASURE) (NEGATE -1 Gen) ;
+SELECT Adv (0 YLI_AllE) (1 TIME-WORD OR NOUN-OF-MEASURE) ;
 REMOVE Adv (0 YLI_AllE) (NEGATE 1 A_N_Q_Pron_PCP_Num) ;
 
 
@@ -4185,7 +4185,7 @@ SELECT CS IF (0 ETTA); # All other occurrences of "että" are CSs.
 
 
 
-# Verbs 
+# Verbs
 # ------------
 
 # added 19.01.2015 - FMT+KM
@@ -4198,20 +4198,20 @@ REMOVE REALVFIN IF (1C* REALVFIN BARRIER CLB LINK NOT 1* REALVFIN) (NEGATE -1* R
   # Seuraavat kunnallisvaalit ovat sunnuntaina 28.10.2012.
   # Jaakko ja Mari pitävät kovasti leikkimisestä, he leikkivät aina yhdessä puutarhassa ison talon edessä.
 
-# added 20.01.2015 - FMT+KM 
+# added 20.01.2015 - FMT+KM
 # see rule around line :2043
 #REMOVE AgPrc IF (0 InfMa OR AgPrc) (0C Ine) (NEGATE 1* N + Ine BARRIER CLB) (NEGATE -1* N + Ine BARRIER CLB) ;
   # Heidän äitinsä on sisällä talossa kissan kanssa, hän katsoo ikkunasta ulos ja näkee Jaakon ja Marin leikkimässä.
 
-# added 20.01.2015 - FMT+KM 
+# added 20.01.2015 - FMT+KM
 SELECT REALVFIN + Pl3 IF (-1C HE + Nom) ;
   # Ihmiset eivät koskaan saa vastausta, kun he puhuvat koirille!
 
-# added 20.01.2015 - FMT+KM 
+# added 20.01.2015 - FMT+KM
 SELECT REALVFIN + Sg3 IF (1C CC LINK 1C REALVFIN + Sg3) ;
   # Mari nauraa ja sanoo : ...
 
-# added 20.01.2015 - FMT+KM 
+# added 20.01.2015 - FMT+KM
 SELECT REALVFIN + Pl3 IF (-1C CC LINK -1C* REALVFIN + Pl3 BARRIER CLB) ;
   # He molemmat ovat iloisia ja menevät taloon ...
 
@@ -4219,9 +4219,9 @@ SELECT REALVFIN + Pl3 IF (-1C CC LINK -1C* REALVFIN + Pl3 BARRIER CLB) ;
 # ------------
 
 # rule added - 20.01.2015 - FMT+KM
-SELECT Interr IF (-1 BOS) (1* QMARK) ; 
-SELECT Interr IF (-1 BOS OR CLB) (1* QMARK BARRIER CLB) ; 
-SELECT Interr IF (-1 Pcle OR Adv LINK -1 BOS) (1* QMARK) ; 
+SELECT Interr IF (-1 BOS) (1* QMARK) ;
+SELECT Interr IF (-1 BOS OR CLB) (1* QMARK BARRIER CLB) ;
+SELECT Interr IF (-1 Pcle OR Adv LINK -1 BOS) (1* QMARK) ;
   # Missä Jaakko on ?
 
 # rule added - 20.01.2015 - FMT+KM
@@ -4280,7 +4280,7 @@ SELECT Imprt + Sg2 (NEGATE -1 WORD) (*1 NNom BARRIER N) ;
     # Heitä mulle tuo kirja!
 SELECT Imprt + Sg2 (0 ConNeg) (NEGATE 0* Neg BARRIER V);
 #SELECT Imprt + Sg2 (0 ConNeg) (NEGATE 0 WORD LINK *-1 Neg BARRIER V) (NEGATE 0 WORD LINK *1 Neg BARRIER V) ;
-    # Laula minulle! 
+    # Laula minulle!
 
 SELECT ("ennen") + Pr (1 KELLO) (2 Par) ;
 SELECT ("ennen") + Pr (1 KELLO) (2 Num) ; # (2 Num OR <Digit>) ;
@@ -4294,7 +4294,7 @@ REMOVE ("vähän") + Adv (NEGATE 1C CMP-ENNEN) (NEGATE 2 JALKEEN) ; # 4.2.2001 !
 # --------------
 
 
-# Assigning object case difficult across clause boundaries: 
+# Assigning object case difficult across clause boundaries:
 
 # Minä en halua, että hän on minua älykkäämpi. Ostan riisiä.
 # Cannot have @OBJ on minua here.
@@ -4304,12 +4304,12 @@ SECTION
 # Need better clause boundaries
 
 # LIST MO-MANge = "goas" "gokko" "gos" "gosa" "govt" "makkár" "man" "manne" "mo" "mot" "mov" "movt" ("nugo" @CVP) (V Qst);
- 
-# SET MO = MO-MANge - ("man" Foc_ge) ; 
+
+# SET MO = MO-MANge - ("man" Foc_ge) ;
 
 
 
-# Complementizers 
+# Complementizers
 # ---------------
 
 # Simple for now.
@@ -4332,7 +4332,7 @@ MAP (@>N) TARGET Pron + Indef + ("kaikki") IF (2 N) (2 $$ALLCASES) (1 Pron + Per
 MAP (@>N) TARGET Pron + Indef + ("kaikki") IF (3 N) (3 $$ALLCASES) (2 $$ALLCASES) (2 A) (1 Pron + Pers + Gen) ;
     # Kaikki sinun vanhat ystävät ovat täällä.
 
-    # This also checks that cases agree... Can add this to other N attrs 
+    # This also checks that cases agree... Can add this to other N attrs
 MAP (@>N) TARGET Pron + Dem IF (1 N) (1 $$ALLCASES) (0 $$ALLCASES) ;
     # Hän rakentaa siihen alttarin.
     # Hän heitti sen siihen taloon.
@@ -4345,9 +4345,9 @@ MAP (@>N) TARGET NAttrs IF (*1 N BARRIER NP-BOUNDARY) (NEGATE 0 V + PrfPrc LINK 
     # TODO: Need to include conjunctions
     # Saapuneet ja käsitellyt asiat vuonna 2009.
 
-    # Iso punainen talo on siellä 
+    # Iso punainen talo on siellä
     # Se sama ongelma häiritsi häntä.
-    # Se sama iso punainen talo ... 
+    # Se sama iso punainen talo ...
 
     # Fail: Minä@>N tulen kello kolme
     # Do not mark on Hän ei ole lähettänyt kirjettä.
@@ -4357,9 +4357,9 @@ MAP (@>N) TARGET PCPs IF (*1 N BARRIER NP-BOUNDARY) ;
 MAP (@>N) TARGET NNom IF (1 N) ;
     # Fail: Ja Herra Talonmies tulee myös.
 
-MAP (@>N) TARGET Acro IF (0 Acro LINK *1 Prop BARRIER Prop); 
-    # Fail: Ja Mr. J. Tiainen tulee ... 
-    
+MAP (@>N) TARGET Acro IF (0 Acro LINK *1 Prop BARRIER Prop);
+    # Fail: Ja Mr. J. Tiainen tulee ...
+
 
 MAP (@N<) TARGET Num IF (-1 N) ;
 MAP (@N<) TARGET ("itse") IF (-1 Pron) (0 $$ALLCASES) (-1 $$ALLCASES) ;
@@ -4373,9 +4373,9 @@ MAP (@>N) TARGET N + Gen IF (-1C CS)(1 N);
 
 MAP (@<SUBJ) TARGET Par (*-1 COPULAS BARRIER S-BOUNDARY2) (NEGATE 0 WORD LINK *-1 Pr BARRIER Pr) (NEGATE 0 WORD LINK 1 Par) ;
 	# Minulla on rahaa. Kadulla on rahaa.
-	
 
-	
+
+
 # Subj to the left of verb
 MAP (@SUBJ>) Target Sg + Nom IF (*1 V + Act + Sg3 ) ;
 MAP (@SUBJ>) Target Pl + Nom IF (*1 V + Act + Pl3 ) ;
@@ -4392,7 +4392,7 @@ MAP (@<OBJ) TARGET NNom IF (*-1 Pass) (*-1 Nom) ;
 
 MAP (@N>) TARGET NSgNom IF (1 Prop) ;
 
-# LIST Cases = Ill Ine ; 
+# LIST Cases = Ill Ine ;
 # MAP (@N>) Pron + Dem IF (1 N) (1 $$Cases) (0 $$Cases) ;
 
 # MAP (@N>) TARGET Pron + Dem IF (1 N) ;
@@ -4415,9 +4415,9 @@ MAP (@SUBJ>) TARGET N_Pron_Nom IF (NEGATE *-1 VFIN BARRIER CLB) (*1 VFIN BARRIER
 MAP (@SUBJ>) TARGET N_Pron_Nom IF (*-1 CC BARRIER NPNH LINK -1 Nom) ;
 MAP (@SUBJ>) TARGET (Rel Nom) IF (*1 VFIN BARRIER S-BOUNDARY2) ;
 
-# Subject partitive mapping 
+# Subject partitive mapping
 MAP (@SUBJ>) TARGET NPar IF (NEGATE *-1 Nom BARRIER CLB) (NEGATE *1 Nom BARRIER CLB) (*1 REALCOPULAS BARRIER CLB);
-    
+
     # Mutta tällaisia tietosanakirjoja ei suomeksi ole.
     # Asukkaita Tromssassa on 60 000.
 
@@ -4436,7 +4436,7 @@ MAP (@SUBJ>) TARGET NECESSITIVE_SUBJS IF (1 V + Act + Sg3) (1 REAL_AUX) (2 V + P
 
 MAP (@SUBJ>) TARGET NECESSITIVE_SUBJS IF (1 V + Act + Sg3) (2 NES) ;
     # Minun on pakko mennä.
-    
+
 MAP (@SUBJ>) TARGET NECESSITIVE_SUBJS IF (1 NES) (2 InfA) ;
     # Minun pitää mennä.
 
@@ -4447,7 +4447,7 @@ MAP (@SUBJ>) TARGET NECESSITIVE_SUBJS IF (1 NES) (2 InfA) ;
 # Siellä sataa lunta.
 MAP (@<SUBJ) TARGET Par (*-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) (NEGATE 0 WORD LINK *-1 Pr BARRIER Pr) (NEGATE 0 WORD LINK 1 Par) (*-1 PART-SUBJ) ;
 
-# Ihmisiä tungeksi torilla. 
+# Ihmisiä tungeksi torilla.
 
 MAP (@<OBJ) TARGET Gen IF (*-1 Act BARRIER CLB) (NEGATE 0 WORD LINK 1 Gen) (NEGATE 0 WORD LINK *1 @<OBJ BARRIER CLB) (NEGATE 0 WORD LINK *1 Par BARRIER CLB) (NEGATE 0 WORD LINK *-1 REALCOPULAS BARRIER CLB) (NEGATE 0 WORD LINK 1 Po) (NEGATE 0 WORD LINK *-1 Neg BARRIER V);
 
@@ -4461,7 +4461,7 @@ MAP (@<OBJ) TARGET Gen IF (-1 Act) (NEGATE 0 WORD LINK *1 Po BARRIER Po) (NEGATE
     # Ettei minun äidin ystävä ole tullut.
 
 # Lounas syötiin
-MAP (@OBJ>) TARGET Nom (*1 Pass) (NEGATE 0 NES) ; 
+MAP (@OBJ>) TARGET Nom (*1 Pass) (NEGATE 0 NES) ;
     # Needs barriers
     # Removed NES.
 
@@ -4472,10 +4472,10 @@ MAP (@<SPRED) TARGET ("pakko") IF (-1 REAL_AUX) ;
 # Syötiin lounas
 MAP (@<OBJ) TARGET Nom IF (*-1 Pass) ;
 MAP (@<OBJ) TARGET Par IF (*-1 Neg) ; #) (NEGATE 0 WORD LINK *-1 Punct *-2 Neg) ;
-    # Needs barriers 
-    
+    # Needs barriers
 
-# Hän katsoi sitä ja otti sen pois. 
+
+# Hän katsoi sitä ja otti sen pois.
 
 # MAP (@<OBJ) TARGET Par IF (NEGATE 0 WORD LINK *-1 Pr BARRIER Pr) (NEGATE 0 WORD LINK 1 Par) (*-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) ;
 
@@ -4487,7 +4487,7 @@ MAP (@<OBJ) TARGET Par IF (*-1 V-NOT-COPULAS BARRIER S-BOUNDARY2) (NEGATE 0 WORD
 
 
     # Minä aion lukea kirjaa ennen näitä erikoisen tyhmiä uutisia.
-    
+
 
 # ??? Löytyi aika paljon materiaaleja ihan kaduilta.
 # OBJ marking
@@ -4509,7 +4509,7 @@ MAP (@OBJ>) TARGET Acc IF (*1 V BARRIER S-BOUNDARY2) ;
     # Numeral and numeral complement mappings
     # ---------------------------------------
 
-# Simple for now... 
+# Simple for now...
 MAP (@Num<) TARGET N IF (-1 NUMS) ;
 MAP (@Num<) TARGET N IF (-1 NUMS) ;
 
@@ -4523,12 +4523,12 @@ REMOVE ("ensimmäinen") + N IF (0 Num + $$ALLCASES)(1 $$ALLCASES);
 REMOVE N IF (0 Ensimmainen + $$ALLCASES)(1 A + $$ALLCASES);
 
 # Verb mappings
-# ------------- 
+# -------------
 
 # Mostly same as sme rule, but removed (0 ("orrut")); is it worth including copulas here? Finnish doesn't quite have quite the same here
 MAP (@+FMAINV) TARGET VFIN IF (NEGATE *0 VERB BARRIER S-BOUNDARY2 OR CC) ;
 
-#!! * **+FMAINV**  to the remaining finite verbs which are not AUX    
+#!! * **+FMAINV**  to the remaining finite verbs which are not AUX
 MAP:+FMAINV (@+FMAINV) TARGET VFIN-NOT-AUX (NOT 0 V + OBJ OR V + SUBJ OR V + @ADVL OR (V @>N) OR (V @N<))(NEGATE *0 VFIN-NOT-AUX OR @+FMAINV BARRIER S-BOUNDARY OR COMMA OR LEFT OR RIGHT) (NEGATE *-1 (V @>N) BARRIER NOT-A OR LEFT)
 	(NEGATE *-1 V - @>N BARRIER S-BOUNDARY OR COMMA OR LEFT)
 	(NEGATE *1 VFIN OR PrfPrc - @>N BARRIER S-BOUNDARY OR COMMA OR RIGHT)(NEGATE 0 InfA LINK -1 CC LINK *-1 InfA BARRIER REAL-V LINK -1 AUX) ;
@@ -4536,14 +4536,14 @@ MAP:+FMAINV (@+FMAINV) TARGET VFIN-NOT-AUX (NOT 0 V + OBJ OR V + SUBJ OR V + @AD
 	#$ Son lea oappáin náitalan.
 
 
-MAP (@+FAUXV) TARGET InfA-VERB IF (*1 InfA BARRIER V) ; 
-MAP (@+FAUXV) TARGET InfMa-VERB IF (*1 InfMa BARRIER V) ; 
+MAP (@+FAUXV) TARGET InfA-VERB IF (*1 InfA BARRIER V) ;
+MAP (@+FAUXV) TARGET InfMa-VERB IF (*1 InfMa BARRIER V) ;
     # Äidin vanha ystävä voisi kyllä yrittää.
     # Äidin vanha ystävä voisi yrittää.
     # Äidin vanha ystävä voisi kyllä tulla käymään ensi vuonna.
     #                  @+FAUXV      @-FMAINV @-FMAINV
 MAP (@+FAUXV) TARGET V IF (0 ("olla") + Ind) (*1 PrfPrc BARRIER V) ;
-MAP (@+FAUXV) TARGET V IF (0 COP) (1 PrfPrc) ; 	
+MAP (@+FAUXV) TARGET V IF (0 COP) (1 PrfPrc) ;
     # Minä olen tullut.
 
 MAP (@+FMAINV) TARGET VFIN IF (0 AUX-OR-MAIN) (NEGATE *1 InfV BARRIER S-BOUNDARY2) ;
@@ -4556,7 +4556,7 @@ MAP (@-FMAINV) TARGET VFIN IF (0 InfV) (NEGATE *1 PrfPrc OR InfMa BARRIER SV-BOU
 
 
 MAP (@-FAUXV) TARGET ConNeg (-1 Neg) ;
-MAP (@-FAUXV) TARGET ConNeg (-1 Neg LINK -1 Nom) ;  # (*1 NNom BARRIER NPNH LINK *-1 Neg LINK -1 Nom) ; 
+MAP (@-FAUXV) TARGET ConNeg (-1 Neg LINK -1 Nom) ;  # (*1 NNom BARRIER NPNH LINK *-1 Neg LINK -1 Nom) ;
 
 
 MAP (@+FAUXV) TARGET REAL_AUX IF (NEGATE 0 ConNeg) ;
@@ -4583,20 +4583,20 @@ MAP (@<SPRED) TARGET NNom IF (*-1 REALCOPULAS BARRIER CLB) ;
 
     # TODO: Spred on wrong thing, obj assigment in weird places:
     # Onko mikään kansa kuullut Jumalan äänen puhuvan tulen keskeltä.
-    
+
 
 # Adverbials
 # ----------
 
 # @ADVL - to do
 
-SET Adp+Poss = Po + ALL_PersON OR 
-               Pr + ALL_PersON OR 
+SET Adp+Poss = Po + ALL_PersON OR
+               Pr + ALL_PersON OR
                Adv + ALL_PersON;
 
 MAP (@ADVL) TARGET Adv ;
 MAP (@ADVL) TARGET Adp+Poss ;
-MAP (@ADVL) TARGET (Po) ; 
+MAP (@ADVL) TARGET (Po) ;
 
 
 
@@ -4610,7 +4610,7 @@ MAP (@Num<) TARGET NSgNom (-1 Num) ; # yksi kirja
 SELECT Num (1 (@Num<)) ; # make sure number is selected
 
 
-# Habitive mappings 
+# Habitive mappings
 # -----------------
 
 # I do not yet have the sanity to implement an animacy hierarchy ;) ;
@@ -4627,21 +4627,21 @@ MAP (@HAB) TARGET Ade IF (0 Pron + Pers) (1 REALCOPULAS) ;
 # Moved up, but here for reference
 # LIST PoCase =   Ela Abl Par Gen ;
 
-SET PRON_PO_CASE = NPron + PoCase ; 
+SET PRON_PO_CASE = NPron + PoCase ;
 SET PRON_PR_CASE = NPron + PrCase ;
 
 
    # Postposition Complements
    # ------------------------
-   
+
 MAP (@>P) TARGET PRON_PO_CASE IF (1 Po) ;
 
 
     # Preposition Complements
     # -----------------------
 
-MAP (@<P) TARGET PRON_PR_CASE IF (*-1 Pr BARRIER Pr) ; 
-MAP (@<P) TARGET PRON_PR_CASE IF (*-1 Pr BARRIER Pr) ; 
+MAP (@<P) TARGET PRON_PR_CASE IF (*-1 Pr BARRIER Pr) ;
+MAP (@<P) TARGET PRON_PR_CASE IF (*-1 Pr BARRIER Pr) ;
 
 # Ennen näitä erikoisen tyhmiä uutisia.
 # ^----------------------------^
@@ -4854,7 +4854,7 @@ MAP (@X) TARGET WORD ;
 #REMOVE (@X) ;
 
  #GENERIC Sg Nom FOR All OTHER InsTANCES
- 
+
 #h# =h ((N Sg Nom (@SUBJ @OBJ @PC @N>)) (@1 NIL) (@2 NI
 
 
@@ -4899,8 +4899,8 @@ SELECT NNom (0C N)(*0 VSg3 OR VPl3 BARRIER S-BOUNDARY OR QUO)(NEGATE *-1 NNom OR
 SELECT NPar (0C N)(*0 VSg3 OR VPl3 BARRIER S-BOUNDARY OR QUO)(NEGATE *-1 NNom OR NPar BARRIER S-BOUNDARY)(NEGATE *1 NNom OR NPar BARRIER S-BOUNDARY) ;
 SELECT NSgNom (*0 VSg3 + Act + Ind BARRIER S-BOUNDARY OR Punct)(NEGATE *-1 NSgNom BARRIER S-BOUNDARY)(NEGATE *1 NSgNom BARRIER S-BOUNDARY) ;
 SELECT NPlNom (*0 VPl3 + Act + Ind BARRIER S-BOUNDARY OR Punct)(NEGATE *-1 NSgNom OR NPlNom BARRIER S-BOUNDARY)(NEGATE *1 NSgNom OR NPlNom BARRIER S-BOUNDARY) ;
-REMOVE NPlNom (0 NSgNom)(-1C Sg + Gen)(1C Sg + Nom) ; 
-REMOVE Pron + Rel (NEGATE -1 COMMA) ; 
+REMOVE NPlNom (0 NSgNom)(-1C Sg + Gen)(1C Sg + Nom) ;
+REMOVE Pron + Rel (NEGATE -1 COMMA) ;
 
 SELECT PxSg3 (1 HÄN OR ("jokainen")) ;
 SELECT PxSg3 (-1 HÄN OR ("jokainen")) ;
@@ -4954,23 +4954,36 @@ SUBSTITUTE (Cmpnd @+FAUXV) (Cmpnd) (CS Cmpnd @+FAUXV) ; # ???
 # END
 
 
+LIST FOREIGN-STARTERS = "this" "that" "the" "den" "det" "de" "norsk" "norske" ;
+LIST FOREIGN = <foreign> <guess-foreign> ;
+LIST OOV = \? ;
+
+ADD:known-foreign (<foreign>) TARGET OOV (0 FOREIGN-STARTERS) ;
+ADD:known-foreign-cont (<guess-foreign>) TARGET OOV (-1C FOREIGN) ;
+ADD:foreign-oov-left (<guess-foreign>) TARGET OOV (-1 OOV) (-2 OOV)  ;
+ADD:foreign-oov-middle (<guess-foreign>) TARGET OOV (-1 OOV) (1 OOV)  ;
+ADD:foreign-in-quotes (<guess-foreign>) TARGET OOV (-1 QMARK) ;
+ADD:foreign-in-brackets (<guess-foreign>) TARGET OOV (-1 LEFT) ;
+
+REMOVE FOREIGN ; # just in case
+
 
 
 # careful remove: maybe still will be needed in next stages
-SUBSTITUTE POSS_SUFF (*) POSS_SUFF (-1 Pers + Gen OR ("oma")) ; 
+SUBSTITUTE POSS_SUFF (*) POSS_SUFF (-1 Pers + Gen OR ("oma")) ;
 
-SUBSTITUTE Qnt (*) Adv ; 
-SUBSTITUTE Interr (*) Adv ; 
-SUBSTITUTE Dem (*) Adv ; 
-SUBSTITUTE Rel (*) Adv ; 
-SUBSTITUTE Ins (*) Adv ; 
-SUBSTITUTE Ade (*) Adv ; 
-SUBSTITUTE Px3 (*) Adv ; 
-SUBSTITUTE Tempr (*) Adv ; 
-SUBSTITUTE Der_sti (*) Adv ; 
-SUBSTITUTE Foc_han (*) Adv ; 
-SUBSTITUTE Foc_kin (*) Adv ; 
-SUBSTITUTE Foc_kaan (*) Adv ; 
+SUBSTITUTE Qnt (*) Adv ;
+SUBSTITUTE Interr (*) Adv ;
+SUBSTITUTE Dem (*) Adv ;
+SUBSTITUTE Rel (*) Adv ;
+SUBSTITUTE Ins (*) Adv ;
+SUBSTITUTE Ade (*) Adv ;
+SUBSTITUTE Px3 (*) Adv ;
+SUBSTITUTE Tempr (*) Adv ;
+SUBSTITUTE Der_sti (*) Adv ;
+SUBSTITUTE Foc_han (*) Adv ;
+SUBSTITUTE Foc_kin (*) Adv ;
+SUBSTITUTE Foc_kaan (*) Adv ;
 
 #  END # For ordinary analysis: END of file here
       # For porting to MT: Comment out the previous line
@@ -4997,14 +5010,14 @@ SUBSTITUTE Adv ParInterr ("mitä") ; # est mida, seda
 SUBSTITUTE Adv ParDem ("<sitä>") + Adv (*-1 ("mitä") + Adv BARRIER S-BOUNDARY); # cc
 SUBSTITUTE Adv ParDem ("<sen>") + Pcle (*-1 ("mitä") + Adv BARRIER S-BOUNDARY); # cc
 
-SUBSTITUTE (Adp Po) (Po) (Adp Po) ; 
+SUBSTITUTE (Adp Po) (Po) (Adp Po) ;
 SUBSTITUTE ("väliltä" Po) ("välinen" N Sg Abl) ("väliltä" Po) ; # est vaheline, mis käändub
 SUBSTITUTE ("välistä" Po) ("välinen" N Sg Par) ("välistä" Po) ; # tõlke kääne võib olla erinev
 
-SUBSTITUTE A Pron ("millainen") ; # Rel Interr 
+SUBSTITUTE A Pron ("millainen") ; # Rel Interr
 
 
-# Disse kommenteres inn når analysen skal brukes i functions.cg3   
+# Disse kommenteres inn når analysen skal brukes i functions.cg3
 SUBSTITUTE (A) (A <fin>) WORD ;  #RemoveFromApertium
 SUBSTITUTE (N) (N <fin>) WORD ;  #RemoveFromApertium
 SUBSTITUTE (Adv) (Adv <fin>) WORD ;  #RemoveFromApertium
