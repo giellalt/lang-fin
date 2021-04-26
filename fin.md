@@ -629,9 +629,9 @@ with verbs if the verb is further derived into a noun again:
  |  @D.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
  |  @C.NeedNoun@ | (Dis)allow compounds with verbs unless nominalised
 
- |  @C.ErrOrth@		
- |  @D.ErrOrth.ON@		
- |  @P.ErrOrth.ON@		
+ |  @C.ErrOrth@
+ |  @D.ErrOrth.ON@
+ |  @P.ErrOrth.ON@
 
 
 For languages that allow compounding, the following flag diacritics are needed
