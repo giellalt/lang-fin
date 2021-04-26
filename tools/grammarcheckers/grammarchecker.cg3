@@ -563,6 +563,7 @@ SET NOT-NPMOD-ACC     = NOT-NPMOD - Acc OR ABBR ;
 SET NOT-NPMOD-ACC-ADV     = NOT-NPMOD - Acc - Adv OR ABBR ;
 
 SET NOT-NPMODADV    = WORD - PRE-NP-HEAD - Adv ;
+SET NOT-NPMODADVPCLE    = WORD - PRE-NP-HEAD - Adv - Pcle;
 SET NOT-NPMODADV-INDEF   = WORD - PRE-NP-HEAD - Adv - Indef ;
 
 
@@ -738,6 +739,42 @@ ADD:syn-number_congruence-subj-verb (&syn-number_congruence-subj-verb) TARGET (A
 
 
 COPY:syn-number_congruence-subj-verb (Pl3 &SUGGEST) EXCEPT Sg3 TARGET (V Act Sg3 &syn-number_congruence-subj-verb);
+
+
+#!!  #### regular congruence rules
+
+	 # Sg1 SUBJ
+    
+ADD:syn-number_congruence-subj-verb (&syn-number_congruence-subj-verb) TARGET (V Act) IF (*0 (Pron Pers Sg1 Nom) OR ("mikä" Pron Sg Ess) BARRIER NOT-NPMODADVPCLE - Ess - Ine - Ela - All - Abl - Ade - Ill - Com)(NEGATE 0 Sg1 OR Adv);
+	## Minä viime aikoina näimme koiran.
+	## Näimme viime aikoina minä koiran.
+
+	 # Sg2 SUBJ
+    
+ADD:syn-number_congruence-subj-verb (&syn-number_congruence-subj-verb) TARGET (V Act) IF (*0 (Pron Pers Sg2 Nom) OR ("se" Pron Sg Ess) BARRIER NOT-NPMODADVPCLE - Ess - Ine - Ela - All - Abl - Ade - Ill - Com)(NEGATE 0 Sg2 OR Adv);
+	## Sinä viime aikoina näimme koiran.
+
+	 # Sg3 SUBJ
+    
+ADD:syn-number_congruence-subj-verb (&syn-number_congruence-subj-verb) TARGET (V Act) IF (*0 (Pron Pers Sg3 Nom) OR (N Sg Nom) BARRIER NOT-NPMODADVPCLE - Ess - Ine - Ela - All - Abl - Ade - Ill - Com LINK NEGATE -1 CC LINK *-1 (N Nom) BARRIER NOT-NPMOD)(NEGATE 0 Sg3 OR Adv);
+	## Hän viime aikoina näimme koiran.
+	
+	 # Pl1 SUBJ
+    
+ADD:syn-number_congruence-subj-verb (&syn-number_congruence-subj-verb) TARGET (V Act) IF (*0 (Pron Pers Pl1 Nom) BARRIER NOT-NPMODADVPCLE - Ess - Ine - Ela - All - Abl - Ade - Ill - Com)(NEGATE 0 Pl1 OR Adv);
+	#$ Me viime aikoina näimme koiran.
+	## Me viime aikoina näitte koiran.
+
+	 # Pl2 SUBJ
+    
+ADD:syn-number_congruence-subj-verb (&syn-number_congruence-subj-verb) TARGET (V Act) IF (*0 (Pron Pers Pl2 Nom) BARRIER NOT-NPMODADVPCLE - Ess - Ine - Ela - All - Abl - Ade - Ill - Com)(NEGATE 0 Pl2 OR Adv);
+	## Te viime aikoina näimme koiran.
+
+	 # Pl3 SUBJ
+    
+ADD:syn-number_congruence-subj-verb (&syn-number_congruence-subj-verb) TARGET (V Act) IF (*0 (Pron Pers Pl3 Nom) OR (N Pl Nom) OR ("he") BARRIER NOT-NPMODADVPCLE - Ess - Ine - Ela - All - Abl - Ade - Ill - Com)(NEGATE 0 Pl3 OR Adv);
+	## He viime aikoina näimme koiran.
+
 
 
 #!! ### Negation verb rules
