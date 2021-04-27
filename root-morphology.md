@@ -42,7 +42,7 @@ Have a look at these:
  * `+Use/sub	            `: XXX check this tag!
  * `+s			            `: XXX check this tag!
 
- * **+CLBfinal**  Sentence final abbreviated expression ending in full stop, so that the full stop is ambiguous
+ * **+CLBfinal       **  Sentence final abbreviated expression ending in full stop, so that the full stop is ambiguous
 
 
 
@@ -56,7 +56,7 @@ Have a look at these:
  * `+A `: Adjective
  * `+ACR `: Acronym
  * `+ABBR `: Abbreviation
- * +Symbol = independent symbols in the text stream, like £, €, ©
+ * +Symbol  = independent symbols in the text stream, like £, €, ©
  * `+Acr `: Acronym
  * `+Num `: Numerals
  * `+Adv `: Adverb
@@ -537,7 +537,7 @@ in there have been carried over.
  * `+Use/Hyphen `: With hyphens
  * `+Use/NoHyphens `: With hyphens
 
- * **+Use/PMatch** means that the following is only used in the analyser feeding the disambiguator. This is missing.
+ * ** +U e/PMatch       ** means that the following is only used in the analyser feeding the disambiguator. This is missing.
 
  * `+Use/-PMatch	        `: 
 
@@ -601,7 +601,7 @@ have compound analyses, the compounds may also have usage tags. The
 compounding analyses concern also syntagmatic melting mishmash.
 +Use/Circ      Compound boundary
 
- * **+Cmp** - Dynamic compound. This tag should always be part
+ * ** +Cmp          ** - Dynamic compound. This tag should always be part
                 of a dynamic compound. It is important for
                 Apertium, and useful in other cases as well.
  * `+Cmp/Hyph		        `: 
@@ -625,34 +625,34 @@ soft boundaries by _.
 We have manually optimised the structure of our lexicon using following
 flag diacritics to restrict morhpological combinatorics - only allow compounds
 with verbs if the verb is further derived into a noun again:
- |  @P.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
- |  @D.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
- |  @C.NeedNoun@ | (Dis)allow compounds with verbs unless nominalised
+ |   @P.NeedNoun.ON@     | (Dis)allow compounds with verbs unless nominalised
+ |   @D.NeedNoun.ON@     | (Dis)allow compounds with verbs unless nominalised
+ |   @C.NeedNoun@        | (Dis)allow compounds with verbs unless nominalised
 
- |  @C.ErrOrth@
- |  @D.ErrOrth.ON@
- |  @P.ErrOrth.ON@
+ |   @C.ErrOrth@		
+ |   @D.ErrOrth.ON@		
+ |   @P.ErrOrth.ON@		
 
 
 For languages that allow compounding, the following flag diacritics are needed
 to control position-based compounding restrictions for nominals. Their use is
 handled automatically if combined with +CmpN/xxx tags. If not used, they will
 do no harm.
- |  @P.CmpFrst.FALSE@ | Require that words tagged as such only appear first
- |  @D.CmpPref.TRUE@ | Block such words from entering ENDLEX
- |  @P.CmpPref.FALSE@ | Block these words from making further compounds
- |  @D.CmpLast.TRUE@ | Block such words from entering R
- |  @D.CmpNone.TRUE@ | Combines with the next tag to prohibit compounding
- |  @U.CmpNone.FALSE@ | Combines with the prev tag to prohibit compounding
- |  @P.CmpOnly.TRUE@ | Sets a flag to indicate that the word has passed R
- |  @D.CmpOnly.FALSE@ | Disallow words coming directly from root.
+ |   @P.CmpFr t.FALSE@  | Require that words tagged as such only appear first
+ |   @D.CmpPref.TRUE@   | Block such words from entering ENDLEX
+ |   @P.CmpPref.FALSE@  | Block these words from making further compounds
+ |   @D.CmpLa t.TRUE@   | Block such words from entering R
+ |   @D.CmpNone.TRUE@   | Combines with the next tag to prohibit compounding
+ |   @U.CmpNone.FALSE@  | Combines with the prev tag to prohibit compounding
+ |   @P.CmpOnly.TRUE@   | Sets a flag to indicate that the word has passed R
+ |   @D.CmpOnly.FALSE@  | Disallow words coming directly from root.
 
 Use the following flag diacritics to control downcasing of derived proper
 nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
 these flags. There exists a ready-made regex that will do the actual down-casing
 given the proper use of these flags.
- |  @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
- |  @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
+ |   @U.Cap.Obl@         | Allowing downcasing of derived names: deatnulasj.
+ |   @U.Cap.Opt@         | Allowing downcasing of derived names: deatnulasj.
 
 
 The start of the dictionary `Root`
