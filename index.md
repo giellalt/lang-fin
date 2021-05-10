@@ -1,7 +1,7 @@
 # Finnish documentation
 
 [![Maturity: Experiment](https://img.shields.io/badge/Maturity-Experiment-black.svg)](https://giellalt.github.io/MaturityClassification.html)
-[![License](https://img.shields.io/github/license/giellalt/lang-fin)](https://raw.githubusercontent.com/giellalt/lang-fin/develop/LICENSE)
+[![License](https://img.shields.io/github/license/giellalt/lang-fin)](https://raw.githubusercontent.com/giellalt/lang-fin/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-fin)](https://github.com/giellalt/lang-fin/issues)
 [![Build status](https://github.com/giellalt/lang-fin/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-fin/actions)
 
