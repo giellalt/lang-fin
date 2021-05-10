@@ -14,10 +14,7 @@
 
 @SET_MAKE@
 
-# List all md files that should be created from source files in the
-# MD_PAGES variable. The filename pattern is as follows:
-#
-# dir/filename.lexc => filename-dir.md
+# The generated docs are automatically detected by the automake script
 
 # *.gt.* designates the tagset being used.
 # At the end of the makefile, there is support for automatic compilation of
@@ -405,38 +402,6 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-MD_PAGES = root-morphology.md  \
-          determiners-stems.md \
-          fin-abbreviations-stems.md \
-          abbreviations-affixes.md \
-          fin-acronyms-stems.md \
-          acronyms-affixes.md \
-          adjectives-stems.md \
-          adjectives-affixes.md \
-          adv-affixes.md \
-          adverbs-stems.md \
-          conjunctions-stems.md \
-          subjunctions-stems.md \
-          digits-affixes.md \
-          exceptions-stems.md \
-          interj-stems.md \
-          nouns-stems.md \
-          nouns-affixes.md \
-          numerals-affixes.md \
-          numerals-stems.md \
-          particles-stems.md \
-          pp-stems.md \
-          prefixes-stems.md \
-          pron-stems.md \
-          propernouns-stems.md \
-          punct-stems.md \
-          suffixes-stems.md \
-          symbols-affixes.md \
-          verbs-stems.md \
-          verbs-affixes.md \
-		  transcriptor-numbers-digit2text.md \
-		  phonology-morphology.md 
-
 
 # Variables:
 ALLINONE_MD_PAGE = $(srcdir)/$(GTLANG).md
@@ -960,9 +925,9 @@ $(INDEX): $(HEADER) $(LINKS)
 clean-local:
 	$(AM_V_at)-rm -rf $(builddir)/build
 	$(AM_V_at)-rm -rf $(srcdir)/build
-
-maintainerclean-local:
-	$(AM_V_at)-rm -rf $(ALLINONE_MD_PAGE)
+	$(AM_V_at)-rm -f $(doc_DATA)
+	$(AM_V_at)-rm -f *-src.md
+	$(AM_V_at)-rm -f *-tools.md
 
 # vim: set ft=automake:
 
