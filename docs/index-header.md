@@ -5,11 +5,11 @@
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-fin)](https://github.com/giellalt/lang-fin/issues)
 [![Build status](https://github.com/giellalt/lang-fin/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-fin/actions)
 
-This page documents the work on the **Finnish language model**. 
+This page documents the work on the [Finnish language model](http://github.com/giellalt/lang-fin). 
 
 # Project documentation
 
-* Add links to project specific documentation here as needed. Keep the documentation in the `docs/` directory.
+* (Add links to project specific documentation here as needed. Keep the documentation in the `docs/` directory.)
 
 # In-source documentation
 
