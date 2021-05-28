@@ -10,6 +10,7 @@
 * [digits-affixes-fst-src.md](digits-affixes-fst-src.md)
 * [nouns-affixes-fst-src.md](nouns-affixes-fst-src.md)
 * [symbols-affixes-fst-src.md](symbols-affixes-fst-src.md)
+* [phonology-fst-src.md](phonology-fst-src.md)
 * [verbs-stems-fst-src.md](verbs-stems-fst-src.md)
 * [propernouns-stems-fst-src.md](propernouns-stems-fst-src.md)
 * [pron-stems-fst-src.md](pron-stems-fst-src.md)

@@ -14839,6 +14839,19 @@ parts are nominals and inflect regularly.
 
 
 
+
+This file documents the [phonology.twolc file](http://github.com/giellalt/lang-fin/blob/main/src/fst/phonology.twolc) 
+
+
+
+
+
+
+
+
+
+ * "Force hyphen between vowels"   
+
  Verbs are the words that inflect in tense, mood, personal suffixes, and
  clitics, but verbs also have s.c. infinite inflection pattern which is
  basically nominal derivations. The dictionary entries of verbs are
