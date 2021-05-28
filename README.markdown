@@ -77,7 +77,7 @@ svn checkout https://github.com/giellalt/lang-fin.git/trunk lang-fin
 Building and installation
 -------------------------
 
-[INSTALL](https://github.com/giellalt/lang-fin/blob/develop/INSTALL)
+[INSTALL](https://github.com/giellalt/lang-fin/blob/main/INSTALL)
 describes the GNU build system in detail, but for most users it is the usual:
 
 ```sh
