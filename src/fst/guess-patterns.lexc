@@ -1,0 +1,300 @@
+! -*- mode: lexc; coding: utf-8 -*-
+
+!! # Guesser
+!!
+!! A rule-based morphological guesser is based on using the paradigms from the
+!! dictionary based analyser but replacing the roots with patterns. For Finnish
+!! we have quite neat paradigms with well-defined stem patterns: vowel harmony,
+!! stem vowels and some with specific syllable counts
+
+Multichar_Symbols
+!! ## Symbols used for guesser `@LEXNAME@`
+!!
+!! Guesser uses a subset of the morphological analyser's alphabet. For
+!! documentation c.f. [morphology root](root-fst-src.html).
+
++Dash
++Dial/Finland
++Dial/standard
++Gyr
++Pref-
++Pro
++TruncPrefix
++Use/N
++Use/sub
++s
++CLBfinal
++V
++N
++A
++ACR
++ABBR
++Symbol
++Acr
++Num
++Adv
++Pron
++Pcle
++Interj
++Cmt
++Prop
++Pers
++Dem
++Interr
++Rel
++Qu
++Qnt
++Refl
++Recipr
++Indef
++Sem/Human
++Sem/Geo
++Sem/Org
++Sem/Build
++Sem/Build-room
++Sem/Cat
++Sem/Date
++Sem/Domain
++Sem/Dummytag
++Sem/Event
++Sem/Fem
++Sem/Group_Hum
++Sem/Hum
++Sem/ID
++Sem/Mal
++Sem/Mat
++Sem/Measr
++Sem/Money
++Sem/Obj
++Sem/Obj-el
++Sem/Obj-ling
++Sem/Org_Prod-audio
++Sem/Org_Prod-vis
++Sem/Plc
++Sem/Prod-vis
++Sem/Route
++Sem/Rule
++Sem/State-sick
++Sem/Substnc
++Sem/Time-clock
++Sem/Tool-it
++Sem/Txt
++Sem/Veh
++Sem/Year
++Card
++Ord
++CC
++CS
++Adp
++Po
++Pr
++Arab
++Attr
++Coll
++Rom
++Pref
++Suff
++Punct
++Quote
++Sg
++Pl
++Nom
++Par
++Gen
++Ine
++Ela
++Ill
++Ade
++Abl
++All
++Ess
++Ins
++Abe
++Tra
++Com
++Lat
++Acc
++Prl
++Distr
++Tempr
++PxSg1
++PxSg2
++PxSg3
++PxPl1
++PxPl2
++PxPl3
++Px3
++Sg1
++Sg2
++Sg3
++Pl1
++Pl2
++Pl3
++Der/s
++Act
++Pss
++Prs
++Prt
++Ind
++Cond
++Pot
++Imprt
++Opt
++Eventv
++Sg1
++Sg2
++Sg3
++Pl1
++Pl2
++Pl3
++Pe4
++ConNeg
++Neg
++InfA
++InfE
++InfMa
++Der/minen
++Der/maisilla
++PrfPrc
++PrsPrc
++NegPrc
++AgPrc
++Comp
++Superl
++Foc/han
++Foc/kaan
++Foc/kin
++Foc/pa
++Foc/s
++Foc/ka
++Qst
++Der/sti
++Der/ja
++Der/inen
++Der/lainen
++Der/tar
++Der/llinen
++Der/ton
++Der/tse
++Der/vs
++Der/u
++Der/ttain
++Der/ttaa
++Der/tattaa
++Der/tatuttaa
++Der/uus
++Der/nti
++Err/Orth
++Err/Hyph
++Err/Lex
++Err/SpaceCmp
++Use/Marg
++Use/Rare
++Use/NG
++Use/Hyphen
++Use/NoHyphens
+ +Use/PMatch
++Use/-PMatch
++Use/-Spell
++Use/Arch
++Use/SpellNoSugg
++Hom1
++Hom2
++Hom3
++Hom4
++Hom5
++Hom6
++Hom7
++Hom8
++Hom9
++v1
++v2
++Dial
++Dial/Standard
++Dial/East
++Dial/West
++Dial/Southwest
++Dial/Häme
++Dial/Eteläpohjalaiset
++Dial/Keskipohjalaiset
++Dial/Peräpohjalaiset
++Dial/North
++Dial/Savo
++Dial/Southeast
++OLang/ENG
++OLang/eng
++OLang/FIN
++OLang/NNO
++OLang/NOB
++OLang/RUS
++OLang/SMA
++OLang/SME
++OLang/SWE
++OLang/UND
++Use/Circ
+ +Cmp
++Cmp/Hyph
++CmpNP/None
+##
+ »7
+ «7
+ #7
+ _7
+ %[%>%]
+ %[%<%]
+%{hyph%?%}
+%{MB%}
+%>
+ @P.NeedNoun.ON@
+ @D.NeedNoun.ON@
+ @C.NeedNoun@
+ @C.ErrOrth@
+ @D.ErrOrth.ON@
+ @P.ErrOrth.ON@
+ @P.CmpFrst.FALSE@
+ @D.CmpPref.TRUE@
+ @P.CmpPref.FALSE@
+ @D.CmpLast.TRUE@
+ @D.CmpNone.TRUE@
+ @U.CmpNone.FALSE@
+ @P.CmpOnly.TRUE@
+ @D.CmpOnly.FALSE@
+ @U.Cap.Obl@
+ @U.Cap.Opt@
+
+LEXICON Root
+
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* o > NOUN_TALO ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* u > NOUN_ASU ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* y > NOUN_KÄRRY ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* y > NOUN_KÄRRY ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* e > NOUN_NALLE ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* e > NOUN_NISSE ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* i:0 > NOUN_RUUVI ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* i:0 > NOUN_TYYLI ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* i:0 > NOUN_ONNI ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* i:0 > NOUN_KIVI ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* a:0 > NOUN_KIRJA ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* ä:0 > NOUN_HÖPÖTTÄJÄ ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* e a:0 > NOUN_SOKEA ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* e ä:0 > NOUN_LIPEÄ ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* m p:0 i:0 > NOUN_VANHEMPI ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* a a:0 > NOUN_VAPAA ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* o o:0 > NOUN_TIENOO ;
+! FIXME: ...
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* e y > NOUN_JOCKEY ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* o y > NOUN_COWBOY ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* a y > NOUN_GAY ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* [n | r] > NOUN_AHVEN ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* [n | r] > NOUN_SIEMEN ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* n:0 > NOUN_PUHELIN ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* n:0 > NOUN_ELIN ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* n:0 e:0 n:0 > NOUN_AAKKOSTAMINEN ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* n:0 e:0 n:0 > NOUN_KYLKIÄINEN ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* s:0 > NOUN_VAKUUTUS ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* s:0 > NOUN_RÄJÄYTYS ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* s:0 > NOUN_AAKKOSELLISUUS ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* s:0 > NOUN_KÖYHYYS ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* [b | c | d | f | g | h | j | k | l | m | n | r | s | t | v | x] > NOUN_PUNK ;
+< [a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | å | ä | ö ]* [b | c | d | f | g | h | j | k | l | m | n | r | s | t | v | x] > NOUN_ZEN ;
+

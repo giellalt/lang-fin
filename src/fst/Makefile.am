@@ -23,6 +23,9 @@ HFST_LEXC_LOCAL_FLAGS= --Werror
 # Set this to name of lexc file containing Multichar_Symbols and LEXICON Root
 GT_LEXC_ROOT=$(srcdir)/root.lexc
 
+# RB guesser test
+GT_GUESS_ROOT=$(srcdir)/guess-patterns.lexc
+
 # Set this to the names of all regular lexc source files:
 GT_LEXC_SRCS_L1_L2=\
 			 compounding.lexc \
@@ -128,6 +131,8 @@ generated_files/%.lexc: \
 	$(AM_V_at)$(MKDIR_P) generated_files
 	$(AM_V_GEN)cp -f $< $@
 
+
+
 ### END: Local processing: ###
 
 ####### Other targets: ###########
@@ -140,5 +145,13 @@ clean-local:
 
 include $(srcdir)/Makefile.modifications-phon.am
 include $(top_srcdir)/../giella-core/am-shared/src-morphology-dir-include.am
+
+# guesser
+
+guesser.tmp.lexc: $(GT_GUESS_ROOT) $(GT_LEXC_SRCS) $(GENERATED_LEXC_SRCS)
+	$(AM_V_GEN)cat $^ > $@
+
+guesser.hfst: guesser.tmp.lexc
+	hfst-lexc $(HFST_FORMAT) $< -o $@
 
 # vim: set ft=automake:
