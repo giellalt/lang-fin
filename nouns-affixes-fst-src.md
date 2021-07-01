@@ -4,23 +4,23 @@
 
 
 ## Noun stem variation and allomorph selection
- The nominal stems were classified according to what is the stem variation
- and what allomorphs they select. This section lists all the possible
- variations and all their allomorph selections. Each class description 
- gives the key forms that can be used when classifying new words, the 
- examples of inflection and negative examples for the most obvious missed
- allomorphs and differentiating factors. The example list should be at 
- least:
- singular nominative, singular essive, singular inessive, plural essive,
- plural elative, singular partitives, singular illatives, plural partitives
- plural GENITIVEs, plural illatives and the compound forms.
+The nominal stems were classified according to what is the stem variation
+and what allomorphs they select. This section lists all the possible
+variations and all their allomorph selections. Each class description 
+gives the key forms that can be used when classifying new words, the 
+examples of inflection and negative examples for the most obvious missed
+allomorphs and differentiating factors. The example list should be at 
+least:
+singular nominative, singular essive, singular inessive, plural essive,
+plural elative, singular partitives, singular illatives, plural partitives
+plural GENITIVEs, plural illatives and the compound forms.
 
 ### Noun stems without stem variation
- The most basic noun stem does not have any stem internal variation and
- uses few commonest allomorphs. The words in this class are either 
- bisyllabic or have one of common derivational suffixes: sto, ....
- The nouns in this class end in o, u, y or ö, which determines their 
- illative suffix and therefore exact classification:
+The most basic noun stem does not have any stem internal variation and
+uses few commonest allomorphs. The words in this class are either 
+bisyllabic or have one of common derivational suffixes: sto, ....
+The nouns in this class end in o, u, y or ö, which determines their 
+illative suffix and therefore exact classification:
 
 *Noun 1o examples:*
 * *talo:* `talo+N+Sg+Nom` (Eng. # house)
@@ -46,8 +46,8 @@
 * *taloin:* `talo+N+Use/Rare+Pl+Gen`
 * *talohon:* `talo+N+Err/Orth+Sg+Ill`
 
- The stems ending in u are also without variationm and the bisyllabic ones
- have the same simple allomorph pattern:
+The stems ending in u are also without variationm and the bisyllabic ones
+have the same simple allomorph pattern:
 
 *Noun 1u examples:*
 * *asu:* `asu+N+Sg+Nom` (Eng. # outfit)
@@ -102,7 +102,7 @@
 * *mömmöhön:* `mömmö+N+Err/Orth+Sg+Ill`
 
 ### Basic gradation cases
- The basic stems without variations other than consonant gradation.
+The basic stems without variations other than consonant gradation.
 
 *Nouns 1ko examples:*
 * *ukko:* `ukko+N+Sg+Nom` (Eng. # geezer)
@@ -245,9 +245,9 @@
 * *pönttöhön:* `pönttö+N+Err/Orth+Sg+Ill`
 
 
- Between two vowels, the weak grade of k is optionally an apostrophe
- instead. For k that is not optionally ’, for example when it is after a
- consonant other than s, the variation is k ~ 0 instead (e.g. NOUN_UKKO).
+Between two vowels, the weak grade of k is optionally an apostrophe
+instead. For k that is not optionally ’, for example when it is after a
+consonant other than s, the variation is k ~ 0 instead (e.g. NOUN_UKKO).
 
 *Nouns 1ko examples:*
 * *teko:* `teko+N+Sg+Nom` (Eng. # action)
@@ -290,10 +290,10 @@
 * *näköin:* `näkö+N+Use/Rare+Pl+Gen`
 * *näköhön:* `näkö+N+Err/Orth+Sg+Ill`
 
- Between three vowels where k is surrounded by same vowels the k becomes
- obligatorily ’. When the vowels are different, it becomes optionally
- ’ (as in NOUN_TEKO), and after consonant other than s it is k ~ 0 
- (as in NOUN_UKKO).
+Between three vowels where k is surrounded by same vowels the k becomes
+obligatorily ’. When the vowels are different, it becomes optionally
+’ (as in NOUN_TEKO), and after consonant other than s it is k ~ 0 
+(as in NOUN_UKKO).
 
 *Nouns 1ko examples:*
 * *ruoko:* `ruoko+N+Sg+Nom` (Eng. # straw)
@@ -313,9 +313,9 @@
 * *liukuin:* `liuku+N+Use/Rare+Pl+Gen`
 * *liukuhun:* `liuku+N+Err/Orth+Sg+Ill`
 
- There is a gap in paradigms in y and ö finals of k:’
+There is a gap in paradigms in y and ö finals of k:’
 
- Other gradations can be more easily caught from the preceding context.
+Other gradations can be more easily caught from the preceding context.
 
 *Nouns 1po examples:*
 * *hepo:* `hepo+N+Sg+Nom` (Eng. # horse)
@@ -477,7 +477,7 @@
 * *rumpuin:* `rumpu+N+Use/Rare+Pl+Gen`
 * *rumpuhun:* `rumpu+N+Err/Orth+Sg+Ill`
 
- There is a gap in paradigms in y finals with p:m variation
+There is a gap in paradigms in y finals with p:m variation
 
 
 *Nouns 1mpö examples:*
@@ -594,10 +594,10 @@
 * *siirtohon:* `siirto+N+Err/Orth+Sg+Ill`
 
 
- There is a gap that misses all other stem vowels of r:t variation except
- o
+There is a gap that misses all other stem vowels of r:t variation except
+o
 
- The k:v variation is unique to handful of words of form CUkU, such as
+The k:v variation is unique to handful of words of form CUkU, such as
 
 
 *Nouns 1cuku examples:*
@@ -626,9 +626,9 @@
 
 
 
- The trisyllabic and longer words with stem vowels o, u, y, ö
- have no stem variation either, but selection of suffix allomorphs for
- plural GENITIVEs and partitives is different:
+The trisyllabic and longer words with stem vowels o, u, y, ö
+have no stem variation either, but selection of suffix allomorphs for
+plural GENITIVEs and partitives is different:
 
 *Noun 2o examples:*
 * *ruipelo:* `ruipelo+N+Sg+Nom` (Eng. # squirt)
@@ -679,9 +679,9 @@
 * *jäätelöin:* `jäätelö+N+Use/Rare+Pl+Gen`
 * *jäätelöhön:* `jäätelö+N+Err/Orth+Sg+Ill`
 
- The words with stem vowel o, u, y, ö preceded by vowels still have no
- more stem  variation than other cases, but give yet another pattern of 
- allomorphs for plural partitives and GENITIVEs:
+The words with stem vowel o, u, y, ö preceded by vowels still have no
+more stem  variation than other cases, but give yet another pattern of 
+allomorphs for plural partitives and GENITIVEs:
 
 *Nouns 3o examples:*
 * *tuomio:* `tuomio+N+Sg+Nom` (Eng. # judgment)
@@ -691,8 +691,8 @@
 * *tuomioiden:* `tuomio+N+Pl+Gen`
 * *tuomioitten:* `tuomio+N+Pl+Gen`
 * ★*tuomiojen:* `tuomio+N+Pl+Gen` (is not standard language)
- There's plenty of imaginable non-standard allomorph forms after long
- vowels:
+There's plenty of imaginable non-standard allomorph forms after long
+vowels:
 
 *Nouns 3o non-standard examples:*
 * *tuomioa:* `tuomio+N+Use/Rare+Pl+Par`
@@ -715,9 +715,9 @@
 * *häiriöjä:* `häiriö+N+Err/Orth+Sg+Par`
 * *häiriöjen:* `häiriö+N+Err/Orth+Sg+Gen`
 
- Similar inflection exists in limited amounts in new loan words that are
- written as pronounced (thus taking no stem variation but still ending
- with long vowels with a syllable boundary):
+Similar inflection exists in limited amounts in new loan words that are
+written as pronounced (thus taking no stem variation but still ending
+with long vowels with a syllable boundary):
 
 *Nouns 3eta examples:*
 * *zombie:* `zombie+N+Sg+Nom` (Eng. # zombie)
@@ -733,7 +733,7 @@
 * *zombieja:* `zombie+N+Err/Orth+Sg+Par`
 * *zombiejen:* `zombie+N+Err/Orth+Sg+Gen`
 
- This class includes a set of new proper nouns that get nativised a bit:
+This class includes a set of new proper nouns that get nativised a bit:
 
 *Nouns 3etä examples:*
 * *Bernie:* `Bernie+N+Prop+Sg+Nom` (Eng. # Bernie)
@@ -750,10 +750,10 @@
 * *Berniejen:* `Bernie+N+Err/Orth+Sg+Gen`
 
 ### Optional gradation with illatives
- In some trisyllabic words ending with quantitative consonant gradation, 
- the illative form can attach to either strong or weak stem, even in 
- standard written Finnish. Otherwise words in this class behave like other
- trisyllabic stems.
+In some trisyllabic words ending with quantitative consonant gradation, 
+the illative form can attach to either strong or weak stem, even in 
+standard written Finnish. Otherwise words in this class behave like other
+trisyllabic stems.
 
 *Noun 4 kko examples:*
 * *lepakko:* `lepakko+N+Sg+Nom` (Eng. # bat)
@@ -775,9 +775,9 @@
 * *yksikköhön:* `yksikkö+N+Err/Orth+Sg+Ill`
 
 ### I final stems
- The basic variation of stem final i in nominative is that it becomes
- e in plural stems. In plural GENITIVE form, the stem vowel disappears
- making suffix allomorph -ien, instead of -jen.
+The basic variation of stem final i in nominative is that it becomes
+e in plural stems. In plural GENITIVE form, the stem vowel disappears
+making suffix allomorph -ien, instead of -jen.
 
 *Nouns 5 back examples:*
 * *ruuvi:* `ruuvi+N+Sg+Nom` (Eng. # screw)
@@ -863,7 +863,7 @@
 * *huveista:* `hupi+N+Pl+Ela`
 * *hupien:* `hupi+N+Pl+Gen`
 
- There is a gap in i final words for p:v variation and front harmony
+There is a gap in i final words for p:v variation and front harmony
 
 
 *Nouns 5 back t~d examples:*
@@ -897,7 +897,7 @@
 * *väylingeistä:* `väylinki+N+Pl+Ela`
 * *väylinkien:* `väylinki+N+Pl+Gen`
 
- There is a gap in i final paradigm with t:l variation and back vowels.
+There is a gap in i final paradigm with t:l variation and back vowels.
 
 
 *Nouns 5 front t~l examples:*
@@ -923,7 +923,7 @@
 * *vienneistä:* `vienti+N+Pl+Ela`
 * *vientien:* `vienti+N+Pl+Gen`
 
- New loan words ending in consonant may be inflected as i stem words
+New loan words ending in consonant may be inflected as i stem words
 
 *Nouns 5 back no i examples:*
 * *punk:* `punk+N+Sg+Nom` (Eng. # punk)
@@ -936,9 +936,9 @@
 * *zeneinä:* `zen+N+Pl+Ess`
 * *zenien:* `zen+N+Pl+Gen`
 
- The trisyllabic -i final stems work like their o, u, y. ö counterparts  ;
- they combine the e:i and e:0 variation to the additional allomorphs for
- plural partitive and GENITIVE:
+The trisyllabic -i final stems work like their o, u, y. ö counterparts  ;
+they combine the e:i and e:0 variation to the additional allomorphs for
+plural partitive and GENITIVE:
 
 
 *Nouns 6 back examples:*
@@ -977,8 +977,8 @@
 * *besserwissereitten:* `besserwisser+N+Pl+Gen`
 
 ### I-final nominatives with e stems
- Some of the words with i-final nominative forms have i:e variation for
- singular stem, and i:0 for whole plural stems:
+Some of the words with i-final nominative forms have i:e variation for
+singular stem, and i:0 for whole plural stems:
 
 
 *Noun 7 back examples:*
@@ -1109,9 +1109,9 @@
 * *järkien:* `järki+N+Pl+Gen`
 
 ### New e-final stems
- The new words with e stem work exactly like the bisyllabic o, u, y, and ö
- stems  ; no stem variation and same allomorph set. This variant can be
- recognised from singular illative then:
+The new words with e stem work exactly like the bisyllabic o, u, y, and ö
+stems  ; no stem variation and same allomorph set. This variant can be
+recognised from singular illative then:
 
 
 *Noun 8 back examples:*
@@ -1121,8 +1121,8 @@
 * *nalleja:* `nalle+N+Pl+Par`
 * *nallejen:* `nalle+N+Pl+Gen`
 * *nalleihin:* `nalle+N+Pl+Ill`
- Dictionary claims they also have slightly greater probability for archaic
- form of plural:
+Dictionary claims they also have slightly greater probability for archaic
+form of plural:
 * *nallein:* `nalle+N+Pl+Gen+Use/Rare`
 
 
@@ -1156,7 +1156,7 @@
 
 
 ### A-final stems
- The basic variation of a-final stems is a:o in plural forms:
+The basic variation of a-final stems is a:o in plural forms:
 
 
 *Noun 9 examples:*
@@ -1169,7 +1169,7 @@
 * *kirjoihin:* `kirja+N+Pl+Ill`
 
 
- Notably, the basic a:o paradigm does not support many ä:ö cases.
+Notably, the basic a:o paradigm does not support many ä:ö cases.
 
 
 *Noun 9 k~0 examples:*
@@ -1300,9 +1300,9 @@
 * *kertojen:* `kerta+N+Pl+Gen`
 * *kertoihin:* `kerta+N+Pl+Ill`
 
- Some -A stems do not have the a:o variation, exhibiting a:0 variation for
- plural stems instead. This class notably contains all the -jA suffixed
- deverbal nouns.
+Some -A stems do not have the a:o variation, exhibiting a:0 variation for
+plural stems instead. This class notably contains all the -jA suffixed
+deverbal nouns.
 
 
 *Noun 10 back examples:*
@@ -1491,7 +1491,7 @@
 * *kommissa:* `kompa+N+Pl+Ine`
 * *kompien:* `kompa+N+Pl+Gen`
 
- There is a gap for ä-final word with p:m variation
+There is a gap for ä-final word with p:m variation
 
 
 *Noun 10 back t~l examples:*
@@ -1539,7 +1539,7 @@
 
 
 
- There is a gap for k:j gradation in a-final stems.
+There is a gap for k:j gradation in a-final stems.
 
 
 *Noun 10 front k~j examples:*
@@ -1551,8 +1551,8 @@
 * *selkiin:* `selkä+N+Pl+Ill`
 
 
- Certain trisyllabic stems allow both variations of a:o and a:0 for plural
- forms.
+Certain trisyllabic stems allow both variations of a:o and a:0 for plural
+forms.
 
 *Noun 11 back examples:*
 * *probleema:* `probleema+N+Sg+Nom` (Eng. # problem)
@@ -1563,7 +1563,7 @@
 * *probleemoiden:* `probleema+N+Pl+Gen`
 * *probleemiin:* `probleema+N+Pl+Ill`
 * *probleemoihin:* `probleema+N+Pl+Ill`
- Also less commonly:
+Also less commonly:
 * *probleemain:* `probleema+N+Pl+Gen+Use/Rare`
 * *probleemojen:* `probleema+N+Use/Rare+Pl+Gen`
 * *probleemoja:* `probleema+N+Use/Rare+Pl+Par`
@@ -1578,7 +1578,7 @@
 * *käpälien:* `käpälä+N+Pl+Gen`
 * *käpäliin:* `käpälä+N+Pl+Ill`
 
- Some a stems with a:o variation have slightly different set of allomorphs
+Some a stems with a:o variation have slightly different set of allomorphs
 
 
 *Nouns 12 back examples:*
@@ -1596,10 +1596,10 @@
 * *häkkyröinä:* `häkkyrä+N+Pl+Ess`
 * *häkkyröitä:* `häkkyrä+N+Pl+Par`
 
- There is a possible class for further variation of a:o
- in the old dictionary dictionary that is worth re-evaluating.
+There is a possible class for further variation of a:o
+in the old dictionary dictionary that is worth re-evaluating.
 
- There’s one more allomorph pattern.
+There’s one more allomorph pattern.
 
 
 *Nouns 12++ front examples:*
@@ -1608,8 +1608,8 @@
 * *mörinänä:* `mörinä+N+Sg+Ess`
 * *mörinässä:* `mörinä+N+Sg+Ine`
 
- The trisyllabic a-final words with quantitative consonant gradation allow
- same illative variation as o, u, y, and ö finals described earlier.
+The trisyllabic a-final words with quantitative consonant gradation allow
+same illative variation as o, u, y, and ö finals described earlier.
 
 
 *Nouns 14 back examples:*
@@ -1641,8 +1641,8 @@
 * *pohattoihin:* `pohatta+N+Pl+Ill`
 * *pohatoihin:* `pohatta+N+Pl+Ill`
 
- The a-final words ending in long vowels with syllable boundary have a:0
- variation and more allomorphs for plyral GENITIVE or illative.
+The a-final words ending in long vowels with syllable boundary have a:0
+variation and more allomorphs for plyral GENITIVE or illative.
 
 
 *Nouns 15 ea examples:*
@@ -1663,9 +1663,9 @@
 * *lipeisiin:* `lipeä+N+Pl+Ill`
 
 ### Lexicalised comparatives
- Lexicalised comparatives have the same special inflection pattern as
- comparatives have: stem final i varies with a, and mp gradates into mm.
- There are  not many comparatives that lexicalise into nouns.
+Lexicalised comparatives have the same special inflection pattern as
+comparatives have: stem final i varies with a, and mp gradates into mm.
+There are  not many comparatives that lexicalise into nouns.
 
 
 *Nouns 16 examples:*
@@ -1676,11 +1676,11 @@
 * *vanhemmista:* `vanhempi+N+Pl+Ela`
 
 ### Long vowel stems
- The long vowel stems have shortening variation in plural inflection, and
- special singular illatives, partitives. 
+The long vowel stems have shortening variation in plural inflection, and
+special singular illatives, partitives. 
 
- Bisyllabic and longer stems with long vowels have -seen illative suffix.
- This class has some of the old -UU derivations.
+Bisyllabic and longer stems with long vowels have -seen illative suffix.
+This class has some of the old -UU derivations.
 
 *Nouns 17 a examples:*
 * *vapaa:* `vapaa+N+Sg+Nom` (Eng. # free)
@@ -1699,7 +1699,7 @@
 * *kerjuuta:* `kerjuu+N+Sg+Par`
 * *kerjuuseen:* `kerjuu+N+Sg+Ill`
 
- Monosyllabic long vowel stems have illative suffixes of form -hVn.
+Monosyllabic long vowel stems have illative suffixes of form -hVn.
 
 
 *Nouns 18 a examples:*
@@ -1756,10 +1756,10 @@
 * *kööhön:* `köö+N+Sg+Ill`
 
 ### Opening diphthong stems
- In old opening diphthong final words, the dipthong simplifies for plural
- forms by dropping the initial vowel. For new words of this class, no
- stem mutations happen and they are in above mentioned classes, (e.g.
- NOUN_ZOMBIE).
+In old opening diphthong final words, the dipthong simplifies for plural
+forms by dropping the initial vowel. For new words of this class, no
+stem mutations happen and they are in above mentioned classes, (e.g.
+NOUN_ZOMBIE).
 
 
 *Nouns 19 ie examples:*
@@ -1781,9 +1781,9 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 * *töitä:* `työ+N+Pl+Par`
 
 ### Newer loan words
- The loan words that end in long vowel, and have been modified to Finnish
- orthography, have combination of long vowel stem’s allomorphs for e.g
- illatives. Sometimes rules for these classes of words are vague.
+The loan words that end in long vowel, and have been modified to Finnish
+orthography, have combination of long vowel stem’s allomorphs for e.g
+illatives. Sometimes rules for these classes of words are vague.
 
 
 *Nouns 20 a examples:*
@@ -1827,7 +1827,7 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 * *bideisiin:* `bidee+N+Pl+Ill`
 * *bideihin:* `bidee+N+Pl+Ill`
 
- There’s a gap in -ii final loan stems.
+There’s a gap in -ii final loan stems.
 
 
 *Nouns 20 o examples:*
@@ -1881,11 +1881,11 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 * *miljöihin:* `miljöö+N+Pl+Ill`
 * *miljöisiin:* `miljöö+N+Pl+Ill`
 
- Some loan words don’t end in long vowel but work like they would. The
- official dictionary says these words should avoid plural GENITIVE itten
- but not iden, in reality they may be in absolutely free variation.
- In general the rules for loan words are vague and do not always seem to
- work.
+Some loan words don’t end in long vowel but work like they would. The
+official dictionary says these words should avoid plural GENITIVE itten
+but not iden, in reality they may be in absolutely free variation.
+In general the rules for loan words are vague and do not always seem to
+work.
 
 
 *Nouns 21 e back examples:*
@@ -1901,11 +1901,11 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 * *bébéhen:* `bébé+N+Sg+Ill`
 * *bébéseen:* `bébé+N+Sg+Ill`
 
- The rules are even more wonky when the vowel harmony does not follow the
- orthography, or the orthography leaves things open to interpretation.
- Only way to even begin to understand the norm is to look up
- [examples on RILF site](http://www.kotus.fi/index.phtml?i=634&s=2612#faq_634)
- (to me, some of the forms on that normative guide are just bizarre).
+The rules are even more wonky when the vowel harmony does not follow the
+orthography, or the orthography leaves things open to interpretation.
+Only way to even begin to understand the norm is to look up
+[examples on RILF site](http://www.kotus.fi/index.phtml?i=634&s=2612#faq_634)
+(to me, some of the forms on that normative guide are just bizarre).
 
 
 *Nouns 21 i back examples:*
@@ -1970,9 +1970,9 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 
 
 
- The loan words that end in consonant when written but vowel when 
- pronounced are inflected with an apostrophe ’. With half-vowels the
- rule is a bit shaky, but officially apostrophe is the only way.
+The loan words that end in consonant when written but vowel when 
+pronounced are inflected with an apostrophe ’. With half-vowels the
+rule is a bit shaky, but officially apostrophe is the only way.
 
 
 *Nouns 22 a examples:*
@@ -2011,12 +2011,12 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 * *monsieur’hön:* `monsieur+N+Sg+Ill`
 
 ### I-final stems (old e stems)
- Some i-final stems have i:e variation in singular forms, as they are
- originated from -e forms, only nominative has -i. They also have
- some consonant stem forms that are archaic for other classes of words.
- The difference between these classes are in the selection of singular
- partitives and plural GENITIVEs (but the boundaries of norm are not
- clear-cut, and most variants are found in the wild):
+Some i-final stems have i:e variation in singular forms, as they are
+originated from -e forms, only nominative has -i. They also have
+some consonant stem forms that are archaic for other classes of words.
+The difference between these classes are in the selection of singular
+partitives and plural GENITIVEs (but the boundaries of norm are not
+clear-cut, and most variants are found in the wild):
 
 
 *Nouns 23 examples:*
@@ -2050,9 +2050,9 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 * *hiirten:* `hiiri+N+Pl+Gen`
 * *hiirien:* `hiiri+N+Pl+Gen`
 
- It is noteworthy of the official dictionary classification, that classes
- with numbers 24 and 26 are identical. The distinction should probably not
- be retained in future versions.
+It is noteworthy of the official dictionary classification, that classes
+with numbers 24 and 26 are identical. The distinction should probably not
+be retained in future versions.
 
 
 *Nouns 26 back examples:*
@@ -2062,7 +2062,7 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 *Nouns 24 front examples:*
 * *mieli:* `mieli+N+Sg+Nom` (Eng. # mind)
 
- The -mi stems will rarely undego m:n variation for consonant stem forms.
+The -mi stems will rarely undego m:n variation for consonant stem forms.
 
 
 *Nouns 25 back examples:*
@@ -2080,10 +2080,10 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 * *liemien:* `liemi+N+Pl+Gen`
 * *lienten:* `liemi+N+Pl+Gen`
 
- The -si words that originate from old -te stems have the consonant
- gradation patterns left in their stems. The si is only in nominative stem
- and this class mainly concerns stems that are old enough to have undergone
- ti>si transformation. 
+The -si words that originate from old -te stems have the consonant
+gradation patterns left in their stems. The si is only in nominative stem
+and this class mainly concerns stems that are old enough to have undergone
+ti>si transformation. 
 
 
 *Nouns 27 back examples:*
@@ -2141,9 +2141,9 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 * *jälttä:* `jälsi+N+Sg+Par`
 * *jälsiin:* `jälsi+N+Pl+Ill`
 
- A few -psi, -ksi, -tsi stems have consonant simplification for
- consonant stems. Other variation with these stems is the selection of
- plural GENITIVE allomorphs.
+A few -psi, -ksi, -tsi stems have consonant simplification for
+consonant stems. Other variation with these stems is the selection of
+plural GENITIVE allomorphs.
 
 
 *Nouns 27 psi examples:*
@@ -2166,7 +2166,7 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 *Nouns 27 tsi front examples:*
 * *veitsi:* `veitsi+N+Sg+Nom` (Eng. # knife)
 
- The -ksi stem in haaksi includes k:h variation.
+The -ksi stem in haaksi includes k:h variation.
 
 
 *Nouns 27 ksi examples:*
@@ -2180,11 +2180,11 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 
 
 ### Consonant final nouns
- The consonant stems use inverted gradation if applicable, that is, the 
- nominatives have end in consonants and their gradating consonants are in
- weak form. 
- The singular forms of consonant final words have intervening e before
- suffixes. The basic consonant final words have no stem modifications.
+The consonant stems use inverted gradation if applicable, that is, the 
+nominatives have end in consonants and their gradating consonants are in
+weak form. 
+The singular forms of consonant final words have intervening e before
+suffixes. The basic consonant final words have no stem modifications.
 
 *Nouns 32 back examples:*
 * *ahven:* `ahven+N+Sg+Nom` (Eng. # berch)
@@ -2215,7 +2215,7 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 * *ien:* `ien+N+Sg+Nom` (Eng. # gum)
 * *ikenenä:* `ien+N+Sg+Ess`
 
- Some of the n-final stems have n:m variation.
+Some of the n-final stems have n:m variation.
 
 
 *Nouns 33 back examples:*
@@ -2320,7 +2320,7 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 
 
 ### -tOn suffixes
- The caritive suffix -ton inflects with A before the singular suffixes.
+The caritive suffix -ton inflects with A before the singular suffixes.
 
 
 *Nouns 34 ton examples:*
@@ -2333,7 +2333,7 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 * *nimettömänä:* `nimetön+N+Sg+Ess`
 
 ### Lexicalised superlatives
- The lexicalised superlatives have special inflection pattern.
+The lexicalised superlatives have special inflection pattern.
 
 
 *Nouns 35 back examples:*
@@ -2345,7 +2345,7 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 * *lähin:* `lähin+N+Sg+Nom` (Eng. # relative)
 * *lähimpänä:* `lähin+N+Sg+Ess`
 
- Vasen inflects almost like superlative:
+Vasen inflects almost like superlative:
 
 
 *Nouns 35 examples:*
@@ -2353,7 +2353,7 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 * *vasempana:* `vasen+N+Sg+Ess`
 
 ### -nen suffixed forms
- Number of derivations end in -nen, that has special alternation pattern.
+Number of derivations end in -nen, that has special alternation pattern.
 
 
 *Nouns 38 back examples:*
@@ -2366,10 +2366,10 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 * *kylkiäisenä:* `kylkiäinen+N+Sg+Ess`
 
 ### -s final words
- The s final words have some variation patterns that are determined 
- lexically.
+The s final words have some variation patterns that are determined 
+lexically.
 
- The basic variation is s:ks, with e before the singular suffixes.
+The basic variation is s:ks, with e before the singular suffixes.
 
 *Nouns 39 back examples:*
 * *vakuutus:* `vakuutus+N+Sg+Nom` (Eng. # insurance)
@@ -2380,8 +2380,8 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 * *räjäytys:* `räjäytys+N+Sg+Nom` (Eng. # explosion)
 * *räjäytyksenä:* `räjäytys+N+Sg+Ess`
 
- Some of the s final stems have additional s:t:d variation in singular
- stems. Most notably, the UUs derivations are in this class.
+Some of the s final stems have additional s:t:d variation in singular
+stems. Most notably, the UUs derivations are in this class.
 
 
 *Nouns 40 back examples:*
@@ -2396,7 +2396,7 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 * *köyhyytenä:* `köyhyys+N+Sg+Ess`
 * *köyhyydessä:* `köyhyys+N+Sg+Ine`
 
- Some s final words have special lengthening inflection.
+Some s final words have special lengthening inflection.
 
 
 *Nouns 41 as examples:*
@@ -2532,7 +2532,7 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 * *porras:* `porras+N+Sg+Nom` (Eng. # step)
 * *portaana:* `porras+N+Sg+Ess`
 
- The word mies has special s:h variation pattern.
+The word mies has special s:h variation pattern.
 
 
 *Nouns 42 examples:*
@@ -2542,9 +2542,9 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 
 
 ### t-final words
- The t-final words have t:0 variation in the stem, and the singular 
- suffixes are as usual joined with e. It is common to see non-standard
- forms of these words.
+The t-final words have t:0 variation in the stem, and the singular 
+suffixes are as usual joined with e. It is common to see non-standard
+forms of these words.
 
 
 
@@ -2565,14 +2565,14 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 * *impyenä:* `immyt+N+Sg+Ess`
 * *impyeen:* `immyt+N+Sg+Ill`
 
- Few t-final words have lengthening in singular stems
+Few t-final words have lengthening in singular stems
 
 
 *Nouns 44 examples:*
 * *kevät:* `kevät+N+Sg+Nom` (Eng. # spring)
 * *keväänä:* `kevät+N+Sg+Ess`
 
- Nominalised nut participles have special inflection just as well.
+Nominalised nut participles have special inflection just as well.
 
 
 *Nouns 47 back examples:*
@@ -2585,9 +2585,9 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 * *sivistyneenä:* `sivistynyt+N+Sg+Ess`
 
 ### Old e^ stems
- The e final words that have lost final consonant inflect like consonant
- final words, including the inverse consonant gradation. This class
- includes all deverbal -e suffixed nouns.
+The e final words that have lost final consonant inflect like consonant
+final words, including the inverse consonant gradation. This class
+includes all deverbal -e suffixed nouns.
 
 
 *Nouns 48 back examples:*
@@ -2705,11 +2705,11 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 * *pohkeena:* `pohje+N+Sg+Ess`
 
 ### Dual nominative paradigms
- A handful of words can use two completely distinct inflection patterns
- where a bit of overlapping inflection has been cut out. These words have
- two nominatives, and thus often two dictionary entries: one which is
- regular entry from the e^ class of words (like NOUN_ASTE), and one which
- is consonant final, and may have inverse gradation.
+A handful of words can use two completely distinct inflection patterns
+where a bit of overlapping inflection has been cut out. These words have
+two nominatives, and thus often two dictionary entries: one which is
+regular entry from the e^ class of words (like NOUN_ASTE), and one which
+is consonant final, and may have inverse gradation.
 
 
 *Nouns 49 ar examples:*
@@ -2804,12 +2804,12 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 * *autereena:* `auer+N+Sg+Ess`
 
 ### Exceptions to dictionary inflection
- There are few cases where dictionaries traditionally have never indicated
- correct inflection by classification. In computational implementation we
- need to assign some classes or exceptional paths to them, and they are
- described here.
+There are few cases where dictionaries traditionally have never indicated
+correct inflection by classification. In computational implementation we
+need to assign some classes or exceptional paths to them, and they are
+described here.
 
- Two words have exceptions in their vowel harmony patterns:
+Two words have exceptions in their vowel harmony patterns:
 
 *Nouns veri examples:*
 * *veri:* `veri+N+Sg+Nom` (Eng. # blood)
@@ -2829,8 +2829,8 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 * *uroksen:* `uros+N+Sg+Gen`
 * *uroon:* `uros+N+Sg+Gen`
 
- It is not noted anywhere that the common inflection pattern for veli is
- exceptional:
+It is not noted anywhere that the common inflection pattern for veli is
+exceptional:
 
 
 *Noun veli examples:*
@@ -2838,8 +2838,8 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 * *veljeä:* `veli+N+Sg+Par`
 * *veljen:* `veli+N+Sg+Gen`
 
- A few of ika-final nouns, but not all, have the shifting half vowel
- written as j in normative orthography.
+A few of ika-final nouns, but not all, have the shifting half vowel
+written as j in normative orthography.
 
 
 *Nouns aika examples:*
@@ -2852,17 +2852,17 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 * *pojassa:* `poika+N+Sg+Ine`
 
 ### Noun forms of numerals with special inflection
- The numerals are not really nouns in this morphology, for details see
- [numeral-stems], but some of their compounds are nouns, and the following
- classes are for those that have special stem or suffix patterns not
- available with other nouns.
- The numerals 1 and 2 are in paradigm that is currently left with one other
- noun, _haaksi_, so nominals with 2 go to that class but 1 gets a new class
- for being front vowelled. 3 Has its own paradigm, 4 is like koira, 5
- like hiisi and 6 like kausi.
- The numerals 7, 8, 9 have their own paradigm, which, other than the
- nominative having extra n at the end, is same as the tri-syllabic
- a, ä stems, similarly 10 is quite like sisar with the extra en in nominative.
+The numerals are not really nouns in this morphology, for details see
+[numeral-stems], but some of their compounds are nouns, and the following
+classes are for those that have special stem or suffix patterns not
+available with other nouns.
+The numerals 1 and 2 are in paradigm that is currently left with one other
+noun, _haaksi_, so nominals with 2 go to that class but 1 gets a new class
+for being front vowelled. 3 Has its own paradigm, 4 is like koira, 5
+like hiisi and 6 like kausi.
+The numerals 7, 8, 9 have their own paradigm, which, other than the
+nominative having extra n at the end, is same as the tri-syllabic
+a, ä stems, similarly 10 is quite like sisar with the extra en in nominative.
 
 
 *Nouns from numerals yksi examples:*
@@ -3026,16 +3026,16 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 
 
 ### Plurales tantum
- For some words, the singular forms are rare, odd, or even deemed
- ungrammatical, these words have separate classes for them. In Finnish
- words to commonly be in this class are events like häät (wedding),
- juhlat (party), etc. then all things that are semantically coupled,
- like clothes with two somethings (as with English): farkut (jeans),
- housut (pants). It is noteworthy, that sometimes dictionaries classify
- common words as plurale tantum for semantic reasons: joukot (troops)
- versus joukko (group). We don’t need that at this point.
- The compounds of plurale tantum words are made from singular forms:
- farkkukangas (jean fabric), hääjuhla (wedding party).
+For some words, the singular forms are rare, odd, or even deemed
+ungrammatical, these words have separate classes for them. In Finnish
+words to commonly be in this class are events like häät (wedding),
+juhlat (party), etc. then all things that are semantically coupled,
+like clothes with two somethings (as with English): farkut (jeans),
+housut (pants). It is noteworthy, that sometimes dictionaries classify
+common words as plurale tantum for semantic reasons: joukot (troops)
+versus joukko (group). We don’t need that at this point.
+The compounds of plurale tantum words are made from singular forms:
+farkkukangas (jean fabric), hääjuhla (wedding party).
 
 
 *Noun 1o plurt examples:*
@@ -3749,13 +3749,13 @@ THIS WAS MISSING 2015-08-23, REDIRECTING Jaska
 
 
 ## Adjective-initial Compounds with Agreeing Inflection
- The words in dictionary paradigm class ⁵¹ refer to old closed class of
- adjective initial compounds, which follow agreeing compound pattern same
- as numbers. The amount of these words is relatively small, so they have
- been spelled out here in full form rather than using more complex methods
- of agreeing compounding, 
- Further reading: [VISK § 420](http://scripta.kotus.fi/visk/sisalto.php?p=420)
- FIXME: some are still missing
+The words in dictionary paradigm class ⁵¹ refer to old closed class of
+adjective initial compounds, which follow agreeing compound pattern same
+as numbers. The amount of these words is relatively small, so they have
+been spelled out here in full form rather than using more complex methods
+of agreeing compounding, 
+Further reading: [VISK § 420](http://scripta.kotus.fi/visk/sisalto.php?p=420)
+FIXME: some are still missing
 
 
 *Old A+N compounds 51 examples:*
@@ -7843,3 +7843,5 @@ parts are nominals and inflect regularly.
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/affixes/nouns.lexc)</small>

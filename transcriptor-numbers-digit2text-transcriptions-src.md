@@ -272,3 +272,5 @@ Lexicon `LOPPU` is to implement potential case inflection with a colon.
 *Note:* accepting or rejecting case inflected digit strings without explicit
 suffix can be changed here.
 
+* * *
+<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-numbers-digit2text.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/transcriptions/transcriptor-numbers-digit2text.lexc)</small>

@@ -17,3 +17,5 @@ Further reading: [VISK § 816](http://scripta.kotus.fi/visk/sisalto.php?p=816))
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/conjunctions.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/conjunctions.lexc)</small>

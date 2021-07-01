@@ -49,3 +49,5 @@ so they are not inflected here, but listed in roots.
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/adv.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/affixes/adv.lexc)</small>

@@ -25,3 +25,5 @@ pronouns are used like determiners, and can be analysed as such.
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/determiners.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/determiners.lexc)</small>

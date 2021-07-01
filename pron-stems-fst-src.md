@@ -892,3 +892,5 @@ forms.
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/pron.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/pron.lexc)</small>

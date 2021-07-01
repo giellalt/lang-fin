@@ -460,3 +460,5 @@ The lines below this one are not from any referenced source
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/punct.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/punct.lexc)</small>

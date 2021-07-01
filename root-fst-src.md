@@ -602,8 +602,8 @@ compounding analyses concern also syntagmatic melting mishmash.
 +Use/Circ      Compound boundary
 
  * **+Cmp** - Dynamic compound. This tag should always be part
-                of a dynamic compound. It is important for
-                Apertium, and useful in other cases as well.
+           of a dynamic compound. It is important for
+           Apertium, and useful in other cases as well.
  * `+Cmp/Hyph		        `: 
  * `+CmpNP/None		        `: 
 
@@ -663,3 +663,5 @@ dictionaries, prefix or hyphenated suffix
 * *talo:* `talo+N+Sg+Nom` (Eng. # house)
 * *nopea:* `nopea+A+Sg+Nom` (Eng. # fast)
 * *kutoa:* `kutoa+V+Act+InfA+Sg+Lat` (Eng. # to knit)
+* * *
+<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/root.lexc)</small>

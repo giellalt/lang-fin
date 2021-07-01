@@ -8,32 +8,32 @@ VISK § 300
 
 
 ## Adjective stem variation and allomorph selection
- Adjective stems are formed like noun stems, with similar patterns. Adjectives
- have additionally the productive comparative derivations, which may have
- their own stems, particularly an e-stem for a-stem words. The examples in
- this chapter are the same set of cases as with nouns:
- singular nominative, singular essive, singular inessive, plural essive,
- plural elative, singular partitives, singular illatives, plural partitives
- plural genitives, plural illatives and the compound forms. And also the
- comparative derivations: comparative singular nominative and superlative
- singular nominative. Majority of adjeciteves are equivalent to
- corresponding noun classes, so some examples have been omitted.
+Adjective stems are formed like noun stems, with similar patterns. Adjectives
+have additionally the productive comparative derivations, which may have
+their own stems, particularly an e-stem for a-stem words. The examples in
+this chapter are the same set of cases as with nouns:
+singular nominative, singular essive, singular inessive, plural essive,
+plural elative, singular partitives, singular illatives, plural partitives
+plural genitives, plural illatives and the compound forms. And also the
+comparative derivations: comparative singular nominative and superlative
+singular nominative. Majority of adjeciteves are equivalent to
+corresponding noun classes, so some examples have been omitted.
 
 ### Bisyllabic / derivational adjective stems without stem variation
- The most basic adjective stems do not have any stem internal variation.
- They end in o, u, y or ö, and with some limited set of new words, e.
- This class has the fewest allomorphs. There are a number of productive
- adjective classes in this section, including all lexicalised nut 
- participle’s passives (-tu, -ty), moderative derivations (-hko, -hkö)
- and ...
- Examples follow in specific sub-classes.
+The most basic adjective stems do not have any stem internal variation.
+They end in o, u, y or ö, and with some limited set of new words, e.
+This class has the fewest allomorphs. There are a number of productive
+adjective classes in this section, including all lexicalised nut 
+participle’s passives (-tu, -ty), moderative derivations (-hko, -hkö)
+and ...
+Examples follow in specific sub-classes.
 
- The words in this class ending in o belong to `ADJ_TUMMAHKO`, the old
- dictionaries use class ¹. The stems should be entered in dictionary like:
- ```tummahko+A:tummahko A_TUMMAHKO  ;```
- This class includes back vowel moderative
- derivations. N.B. the comparative derivation of moderatives is semantically
- awkward, but morphologically plausible.
+The words in this class ending in o belong to `ADJ_TUMMAHKO`, the old
+dictionaries use class ¹. The stems should be entered in dictionary like:
+```tummahko+A:tummahko A_TUMMAHKO  ;```
+This class includes back vowel moderative
+derivations. N.B. the comparative derivation of moderatives is semantically
+awkward, but morphologically plausible.
 
 *Adjectives 1 o examples:*
 * *tummahko:* `tummahko+A+Sg+Nom` (Eng. # darkish)
@@ -56,11 +56,11 @@ VISK § 300
 * *tummahkompi:* `tummahko+A+Comp+Sg+Nom`
 * *tummahkoin:* `tummahko+A+Superl+Sg+Nom`
 
- The stems ending in u are in class `ADJ_VALKAISTU`, and in old dictionaries
- the class is ¹. These stems should be entered in dictionary like:
- ```valkaistu+A:valkaistu A_VALKAISTU  ;```
- Common part of this class is formed by nut participle 
- passive’s _back_ vowel versions after s stem verbs:
+The stems ending in u are in class `ADJ_VALKAISTU`, and in old dictionaries
+the class is ¹. These stems should be entered in dictionary like:
+```valkaistu+A:valkaistu A_VALKAISTU  ;```
+Common part of this class is formed by nut participle 
+passive’s _back_ vowel versions after s stem verbs:
 
 *Adjectives 1 u examples:*
 * *valkaistu:* `valkaistu+A+Sg+Nom` (Eng. # bleached)
@@ -76,9 +76,9 @@ VISK § 300
 * *valkaistumpi:* `valkaistu+A+Comp+Sg+Nom`
 * *valkaistuin:* `valkaistu+A+Superl+Sg+Nom`
 
- The stems ending in y are in class `ADJ_HÄPÄISTY`, and in old dictionaries
- the class is ¹. Common part of this class is formed by nut participle 
- passive’s _front_ vowel versions after s stem verbs:
+The stems ending in y are in class `ADJ_HÄPÄISTY`, and in old dictionaries
+the class is ¹. Common part of this class is formed by nut participle 
+passive’s _front_ vowel versions after s stem verbs:
 
 *Adjectives 1 y examples:*
 * *häpäisty:* `häpäisty+A+Sg+Nom` (Eng. # defiled)
@@ -94,9 +94,9 @@ VISK § 300
 * *häpäistympi:* `häpäisty+A+Comp+Sg+Nom`
 * *häpäistyin:* `häpäisty+A+Superl+Sg+Nom`
 
- The words in this class ending in ö belong to `ADJ_HÖLÖ`, the old
- dictionaries use class ¹. This class includes front vowel moderative
- derivations.
+The words in this class ending in ö belong to `ADJ_HÖLÖ`, the old
+dictionaries use class ¹. This class includes front vowel moderative
+derivations.
 
 *Adjectives 1 ö examples:*
 * *hölö:* `hölö+A+Sg+Nom` (Eng. # blabbermouth)
@@ -112,10 +112,10 @@ VISK § 300
 * *hölömpi:* `hölö+A+Comp+Sg+Nom`
 * *hölöin:* `hölö+A+Superl+Sg+Nom`
 
- The new words with e stem have same allomorph selection as old short
- unchanging bisyllabic u, y, o and ö stems, and no stem-internal variation.
- The classification for the back vowel variant of this class is
- `ADJ_TOOPE`, and old dictionaries used the class ⁸.
+The new words with e stem have same allomorph selection as old short
+unchanging bisyllabic u, y, o and ö stems, and no stem-internal variation.
+The classification for the back vowel variant of this class is
+`ADJ_TOOPE`, and old dictionaries used the class ⁸.
 
 *Adjectives 8 back examples:*
 * *toope:* `toope+A+Sg+Nom` (Eng. # doofus)
@@ -126,13 +126,13 @@ VISK § 300
 * *toopeihin:* `toope+A+Pl+Ill`
 * *toopempi:* `toope+A+Comp+Sg+Nom`
 * *toopein:* `toope+A+Superl+Sg+Nom`
- They also have slightly greater probability for archaic form of plural
- genitive:
+They also have slightly greater probability for archaic form of plural
+genitive:
 * *toopein:* `toope+A+Pl+Gen+Use/Rare`
 
 
- The front variation of unchanging e stems is class `@LEXNAME`, and in
- old dictionaries ⁸.
+The front variation of unchanging e stems is class `@LEXNAME`, and in
+old dictionaries ⁸.
 
 *Adjectives 8 front examples:*
 * *beige:* `beige+A+Sg+Nom` (Eng. # beige)
@@ -146,13 +146,13 @@ VISK § 300
 
 
 ### Trisyllabic and longer non-derived adjectuve stems
- The trisyllabic and longer words with stem vowels o, u, y and ö also
- have no stem variation either, but selection of suffix allomorphs for 
- plural genitives and partitives is wider than for bisyllabic and derived
- ones.
+The trisyllabic and longer words with stem vowels o, u, y and ö also
+have no stem variation either, but selection of suffix allomorphs for 
+plural genitives and partitives is wider than for bisyllabic and derived
+ones.
 
- The o final trisyllabic stems are in class `ADJ_KOHELO`, and the old
- dictionaries used ². 
+The o final trisyllabic stems are in class `ADJ_KOHELO`, and the old
+dictionaries used ². 
 
 *Adjectives 2 o examples:*
 * *tohelo:* `tohelo+A+Sg+Nom` (Eng. # clumsy)
@@ -164,7 +164,7 @@ VISK § 300
 * *tohelompi:* `tohelo+A+Comp+Sg+Nom`
 * *toheloin:* `tohelo+A+Superl+Sg+Nom`
 
- And the trisyllabic ö stem is classified `ADJ_LÖPERÖ`.
+And the trisyllabic ö stem is classified `ADJ_LÖPERÖ`.
 
 *Adjectives 2 ö examples:*
 * *löperö:* `löperö+A+Sg+Nom` (Eng. # sloppy)
@@ -175,12 +175,12 @@ VISK § 300
 * *löperöin:* `löperö+A+Superl+Sg+Nom`
 
 ### Unchanging long vowel stems
- The words with stem vowels o, u, y and ö preceded by vowels still have no
- stem variation, but use yet another pattern of allomorphs for
- singular and plural partitives and plural genitive
+The words with stem vowels o, u, y and ö preceded by vowels still have no
+stem variation, but use yet another pattern of allomorphs for
+singular and plural partitives and plural genitive
 
- The class for o final long vowel stems is `ADJ_AUTIO`, and old
- old dictionaries used ³. 
+The class for o final long vowel stems is `ADJ_AUTIO`, and old
+old dictionaries used ³. 
 
 *Adjectives 3 o examples:*
 * *autio:* `autio+A+Sg+Nom` (Eng. # deserted)
@@ -192,8 +192,8 @@ VISK § 300
 * *autiompi:* `autio+A+Comp+Sg+Nom`
 * *autioin:* `autio+A+Superl+Sg+Nom`
 
- The front voweled stems with ö after vowels go to class `ADJ_RIIVIÖ`,
- and used the old dictionary class ³.
+The front voweled stems with ö after vowels go to class `ADJ_RIIVIÖ`,
+and used the old dictionary class ³.
 
 *Adjectives 3 ö examples:*
 * *riiviö:* `riiviö+A+Sg+Nom` (Eng. # nasty)
@@ -203,17 +203,17 @@ VISK § 300
 * *riiviömpi:* `riiviö+A+Comp+Sg+Nom`
 * *riiviöin:* `riiviö+A+Superl+Sg+Nom`
 
- There are no examples of new loan word adjectives ending in long vowel
- Furthermore there are no examples of adjectives in other classes without
- stem variation yet. There are some examples of these in nouns if you need
- new classes at some point.
+There are no examples of new loan word adjectives ending in long vowel
+Furthermore there are no examples of adjectives in other classes without
+stem variation yet. There are some examples of these in nouns if you need
+new classes at some point.
 
- The abovementioned o, u, y and ö stems as well as new e stems can all
- form combinations with gradation feature as well. Not all combinations are
- yet found for adjectives, for full reference, read the noun classes.
+The abovementioned o, u, y and ö stems as well as new e stems can all
+form combinations with gradation feature as well. Not all combinations are
+yet found for adjectives, for full reference, read the noun classes.
 
- The quantitative k gradations with o bisyllabic o stem use class
- `ADJ_KOLKKO`, and old dictionaries use classes ¹⁻A and ¹⁻D.
+The quantitative k gradations with o bisyllabic o stem use class
+`ADJ_KOLKKO`, and old dictionaries use classes ¹⁻A and ¹⁻D.
 
 *Adjective gradations 1 k~0 o examples:*
 * *kolkko:* `kolkko+A+Sg+Nom` (Eng. # gloomy)
@@ -224,8 +224,8 @@ VISK § 300
 * *kolkoin:* `kolkko+A+Superl+Sg+Nom`
 
 
- The quantitative k gradations with u bisyllabic o stem use class
- `ADJ_VIRKKU`, and old dictionaries use classes ¹⁻A and ¹⁻D.
+The quantitative k gradations with u bisyllabic o stem use class
+`ADJ_VIRKKU`, and old dictionaries use classes ¹⁻A and ¹⁻D.
 
 *Adjective gradations 1 k~0 u examples:*
 * *virkku:* `virkku+A+Sg+Nom` (Eng. # ???)
@@ -236,8 +236,8 @@ VISK § 300
 * *virkuin:* `virkku+A+Superl+Sg+Nom`
 
 
- The quantitative k gradations with y bisyllabic o stem use class
- `ADJ_SÄIKKY`, and old dictionaries use classes ¹⁻A and ¹⁻D.
+The quantitative k gradations with y bisyllabic o stem use class
+`ADJ_SÄIKKY`, and old dictionaries use classes ¹⁻A and ¹⁻D.
 
 *Adjective gradations 1 k~0 y examples:*
 * *säikky:* `säikky+A+Sg+Nom` (Eng. # ???)
@@ -247,8 +247,8 @@ VISK § 300
 * *säikympi:* `säikky+A+Comp+Sg+Nom`
 * *säikyin:* `säikky+A+Superl+Sg+Nom`
 
- The quantitative k gradations with o bisyllabic ö stem use class
- `ADJ_KÖKKÖ`, and old dictionaries use classes ¹⁻A and ¹⁻D.
+The quantitative k gradations with o bisyllabic ö stem use class
+`ADJ_KÖKKÖ`, and old dictionaries use classes ¹⁻A and ¹⁻D.
 
 *Adjective gradations 1 k~0 ö examples:*
 * *kökkö:* `kökkö+A+Sg+Nom` (Eng. # ???)
@@ -258,10 +258,10 @@ VISK § 300
 * *kökömpi:* `kökkö+A+Comp+Sg+Nom`
 * *kököin:* `kökkö+A+Superl+Sg+Nom`
 
- there is no unvarying e final adjective with _k ~ 0_ gradation.
+there is no unvarying e final adjective with _k ~ 0_ gradation.
 
- The quantitative gradation of p before o is in class `ADJ_SUIPPO` and
- old dictionaries would use ¹⁻B.
+The quantitative gradation of p before o is in class `ADJ_SUIPPO` and
+old dictionaries would use ¹⁻B.
 
 *Adjective gradations 1 p~0 o examples:*
 * *suippo:* `suippo+A+Sg+Nom` (Eng. # ?)
@@ -272,10 +272,10 @@ VISK § 300
 * *suipoin:* `suippo+A+Superl+Sg+Nom`
 
 
- The quantitative gradation of p before u is in class `ADJ_IKÄLOPPU` and
- old dictionaries would use ¹⁻B.
- It is only a nominal compound based adjective that ends in u and has
- p ~ 0 gradation here:
+The quantitative gradation of p before u is in class `ADJ_IKÄLOPPU` and
+old dictionaries would use ¹⁻B.
+It is only a nominal compound based adjective that ends in u and has
+p ~ 0 gradation here:
 
 *Adjective gradations 1 p~0 u examples:*
 * *ikäloppu:* `ikäloppu+A+Sg+Nom` (Eng. # age-old)
@@ -286,10 +286,10 @@ VISK § 300
 * *ikälopuin:* `ikäloppu+A+Superl+Sg+Nom`
 
 
- and none of the adjectives end in y and quantitative p gradation.
+and none of the adjectives end in y and quantitative p gradation.
 
- The quantitative gradation of p before ö is in class `ADJ_LÖRPPÖ` and
- old dictionaries would use ¹⁻B.
+The quantitative gradation of p before ö is in class `ADJ_LÖRPPÖ` and
+old dictionaries would use ¹⁻B.
 
 *Adjective gradations 1 p~0 ö examples:*
 * *lörppö:* `lörppö+A+Sg+Nom` (Eng. # blabbermouth)
@@ -299,8 +299,8 @@ VISK § 300
 * *lörpömpi:* `lörppö+A+Comp+Sg+Nom`
 * *lörpöin:* `lörppö+A+Superl+Sg+Nom`
 
- The quantitative gradation of t before o is in class `ADJ_VELTTO`, 
- which was ¹⁻C in the dictionary.
+The quantitative gradation of t before o is in class `ADJ_VELTTO`, 
+which was ¹⁻C in the dictionary.
 
 *Adjective gradations 1 t~0 o examples:*
 * *veltto:* `veltto+A+Sg+Nom` (Eng. # lazy)
@@ -311,10 +311,10 @@ VISK § 300
 * *veltoin:* `veltto+A+Superl+Sg+Nom`
 
 
- The quantitative gradation of t before u is in class `ADJ_VIMMATTU`, 
- which was ¹⁻C in the dictionary. 
- The u stems with quantitative t gradation are commonest with nut participle
- passive derivation’s back form (-ttu).
+The quantitative gradation of t before u is in class `ADJ_VIMMATTU`, 
+which was ¹⁻C in the dictionary. 
+The u stems with quantitative t gradation are commonest with nut participle
+passive derivation’s back form (-ttu).
 
 *Adjective gradations 1 t~0 u examples:*
 * *vimmattu:* `vimmattu+A+Sg+Nom` (Eng. # wicked)
@@ -325,10 +325,10 @@ VISK § 300
 * *vimmatuin:* `vimmattu+A+Superl+Sg+Nom`
 
 
- The quantitative gradation of t before y is in class `ADJ_YLENNETTY`, 
- which was ¹⁻C in the dictionary. 
- The u stems with quantitative t gradation are commonest with nut participle
- passive derivation’s front (-tty).
+The quantitative gradation of t before y is in class `ADJ_YLENNETTY`, 
+which was ¹⁻C in the dictionary. 
+The u stems with quantitative t gradation are commonest with nut participle
+passive derivation’s front (-tty).
 
 *Adjective gradations 1 t~0 y examples:*
 * *ylennetty:* `ylennetty+A+Sg+Nom` (Eng. # promoted)
@@ -338,8 +338,8 @@ VISK § 300
 * *ylennetympi:* `ylennetty+A+Comp+Sg+Nom`
 * *ylennetyin:* `ylennetty+A+Superl+Sg+Nom`
 
- The quantitative gradation of t before y is in class `ADJ_KYYTTÖ`, 
- which was ¹⁻C in the dictionary. 
+The quantitative gradation of t before y is in class `ADJ_KYYTTÖ`, 
+which was ¹⁻C in the dictionary. 
 
 *Adjective gradations 1 t~0 ö examples:*
 * *kyyttö:* `kyyttö+A+Sg+Nom` (Eng. # ?????)
@@ -349,11 +349,11 @@ VISK § 300
 * *kyytömpi:* `kyyttö+A+Comp+Sg+Nom`
 * *kyytöin:* `kyyttö+A+Superl+Sg+Nom`
 
- The quantitave k gradation has a variant that allows use of apostrophe
- instead of nothing in the weak grade.
+The quantitave k gradation has a variant that allows use of apostrophe
+instead of nothing in the weak grade.
 
- The class for o final bisyllabic stems with optional ’ is `ADJ_LAKO`,
- this is a subset of dictionary class ¹⁻D. 
+The class for o final bisyllabic stems with optional ’ is `ADJ_LAKO`,
+this is a subset of dictionary class ¹⁻D. 
 
 *Adjective gradations 1 k~’~0 o examples:*
 * *lako:* `lako+A+Sg+Nom`
@@ -363,16 +363,16 @@ VISK § 300
 * *laoin:* `lako+A+Superl+Sg+Nom`
 
 
- There's no k to optional apostrophe with u.
- nor with y and k:
- nor ö with k:
- There's none with k gradating to always apostrophe either.
- For examples of these, see noun classes
+There's no k to optional apostrophe with u.
+nor with y and k:
+nor ö with k:
+There's none with k gradating to always apostrophe either.
+For examples of these, see noun classes
 
 
- The qualitative gradation of p between vowels in o stems goes to v,
- the class for this is `ADJ_KELPO`, the dictionary class for this is
- ¹⁻E.
+The qualitative gradation of p between vowels in o stems goes to v,
+the class for this is `ADJ_KELPO`, the dictionary class for this is
+¹⁻E.
 
 *Adjective gradations 1 p~v o examples:*
 * *kelpo:* `kelpo+A+Sg+Nom` (Eng. # proper)
@@ -383,12 +383,12 @@ VISK § 300
 * *kelvoin:* `kelpo+A+Superl+Sg+Nom`
 
 
- There are none ending in vowel + pu
- nor with y and p
- nor ö with p.
+There are none ending in vowel + pu
+nor with y and p
+nor ö with p.
 
- The gradation of t ~ d after o is in class `ADJ_MIETO`, the
- dictionary class for this is ¹⁻F.
+The gradation of t ~ d after o is in class `ADJ_MIETO`, the
+dictionary class for this is ¹⁻F.
 
 *Adjective gradations 1 t~d o examples:*
 * *mieto:* `mieto+A+Sg+Nom` (Eng. # mild)
@@ -399,10 +399,10 @@ VISK § 300
 * *miedoin:* `mieto+A+Superl+Sg+Nom`
 
 
- The gradation of t ~ d after u is in class `ADJ_VIIPALOITU`, the
- dictionary class for this is ¹⁻F.
- The commonest t ~ d variation in u stems comes from nut participle’s
- passive’s back form (-tu).
+The gradation of t ~ d after u is in class `ADJ_VIIPALOITU`, the
+dictionary class for this is ¹⁻F.
+The commonest t ~ d variation in u stems comes from nut participle’s
+passive’s back form (-tu).
 
 *Adjective gradations 1 t~d u examples:*
 * *viipaloitu:* `viipaloitu+A+Sg+Nom` (Eng. # sliced)
@@ -413,10 +413,10 @@ VISK § 300
 * *viipaloiduin:* `viipaloitu+A+Superl+Sg+Nom`
 
 
- The gradation of t ~ d after u is in class `ADJ_YKSILÖITY`, the
- dictionary class for this is ¹⁻F.
- The commonest t ~ d variation in u stems comes from nut participle’s
- passive’s front form (-ty).
+The gradation of t ~ d after u is in class `ADJ_YKSILÖITY`, the
+dictionary class for this is ¹⁻F.
+The commonest t ~ d variation in u stems comes from nut participle’s
+passive’s front form (-ty).
 
 *Adjective gradations 1 t~d y examples:*
 * *yksilöity:* `yksilöity+A+Sg+Nom` (Eng. # singled)
@@ -426,10 +426,10 @@ VISK § 300
 * *yksilöidympi:* `yksilöity+A+Comp+Sg+Nom`
 * *yksilöidyin:* `yksilöity+A+Superl+Sg+Nom`
 
- And there's none with t and ö
+And there's none with t and ö
 
- The adjectives with -nko stem belong to class `ADJ_LENKO`, and the
- dictionary class was ¹⁻G.
+The adjectives with -nko stem belong to class `ADJ_LENKO`, and the
+dictionary class was ¹⁻G.
 
 *Adjective gradations 1 k~g o examples:*
 * *lenko:* `lenko+A+Sg+Nom` (Eng. # crooked)
@@ -440,13 +440,13 @@ VISK § 300
 * *lengoin:* `lenko+A+Superl+Sg+Nom`
 
 
- There's no adjectives ending in nku
- nor with y and nk
- And ö with nk
- There are no gradating p's after m's in unchanging stems
- For all these, check the noun patterns.
- The quantitative gradation of t after l in o stems is in class 
- `ADJ_MELTO`, which corresponds to dictionary class ¹⁻I.
+There's no adjectives ending in nku
+nor with y and nk
+And ö with nk
+There are no gradating p's after m's in unchanging stems
+For all these, check the noun patterns.
+The quantitative gradation of t after l in o stems is in class 
+`ADJ_MELTO`, which corresponds to dictionary class ¹⁻I.
 
 *Adjective gradations 1 t~l o examples:*
 * *melto:* `melto+A+Sg+Nom` (Eng. # ?????)
@@ -457,9 +457,9 @@ VISK § 300
 * *melloin:* `melto+A+Superl+Sg+Nom`
 
 
- The quantitative gradation of t after l in o stems is in class 
- `ADJ_PARANNELTU`, which corresponds to dictionary class ¹⁻I.
- The common u stem after l is in nut participles passive (-tu):
+The quantitative gradation of t after l in o stems is in class 
+`ADJ_PARANNELTU`, which corresponds to dictionary class ¹⁻I.
+The common u stem after l is in nut participles passive (-tu):
 
 *Adjective gradations 1 t~l u examples:*
 * *paranneltu:* `paranneltu+A+Sg+Nom` (Eng. # embettered)
@@ -470,9 +470,9 @@ VISK § 300
 * *parannelluin:* `paranneltu+A+Superl+Sg+Nom`
 
 
- The quantitative gradation of t after l in o stems is in class 
- `ADJ_VÄHÄTELTY`, which corresponds to dictionary class ¹⁻I.
- As with y and t:
+The quantitative gradation of t after l in o stems is in class 
+`ADJ_VÄHÄTELTY`, which corresponds to dictionary class ¹⁻I.
+As with y and t:
 
 *Adjective gradations 1 t~l y examples:*
 * *vähätelty:* `vähätelty+A+Sg+Nom` (Eng. # belittled)
@@ -482,10 +482,10 @@ VISK § 300
 * *vähätellympi:* `vähätelty+A+Comp+Sg+Nom`
 * *vähätellyin:* `vähätelty+A+Superl+Sg+Nom`
 
- There's no adjective ending -ltö in our lexical database.
+There's no adjective ending -ltö in our lexical database.
 
- The quantitative gradation of t after n in o stems is in class 
- `ADJ_VENTO`, which corresponds to dictionary class ¹⁻J.
+The quantitative gradation of t after n in o stems is in class 
+`ADJ_VENTO`, which corresponds to dictionary class ¹⁻J.
 
 *Adjective gradations 1 t~n o examples:*
 * *vento:* `vento+A+Sg+Nom` (Eng. # ?)
@@ -495,9 +495,9 @@ VISK § 300
 * *vennompi:* `vento+A+Comp+Sg+Nom`
 * *vennoin:* `vento+A+Superl+Sg+Nom`
 
- The quantitative gradation of t after n in u stems is in class 
- `ADJ_PANTU`, which corresponds to dictionary class ¹⁻I.
- The common u stem after n is in nut participle’s passive’s back form (-tu):
+The quantitative gradation of t after n in u stems is in class 
+`ADJ_PANTU`, which corresponds to dictionary class ¹⁻I.
+The common u stem after n is in nut participle’s passive’s back form (-tu):
 
 *Adjective gradations 1 t~n u examples:*
 * *pantu:* `pantu+A+Sg+Nom` (Eng. # brewed)
@@ -507,10 +507,10 @@ VISK § 300
 * *pannumpi:* `pantu+A+Comp+Sg+Nom`
 * *pannuin:* `pantu+A+Superl+Sg+Nom`
 
- The quantitative gradation of t after n in y stems is in class 
- `ADJ_MENTY`, which corresponds to dictionary class ¹⁻I.
- The common u stem after n is in nut participle’s passive’s front form
- (-ty):
+The quantitative gradation of t after n in y stems is in class 
+`ADJ_MENTY`, which corresponds to dictionary class ¹⁻I.
+The common u stem after n is in nut participle’s passive’s front form
+(-ty):
 
 *Adjective gradations 1 t~n y examples:*
 * *menty:* `menty+A+Sg+Nom` (Eng. # belittled)
@@ -520,10 +520,10 @@ VISK § 300
 * *mennympi:* `menty+A+Comp+Sg+Nom`
 * *mennyin:* `menty+A+Superl+Sg+Nom`
 
- There are no adjectives ending in -ntö
+There are no adjectives ending in -ntö
 
- The quantitative gradation of t after r in o stems is in class
- `ADJ_MARTO`, which corresponds to dictionary class ¹⁻J.
+The quantitative gradation of t after r in o stems is in class
+`ADJ_MARTO`, which corresponds to dictionary class ¹⁻J.
 
 *Adjective gradations 1 t~r o examples:*
 * *marto:* `marto+A+Sg+Nom` (Eng. # ???)
@@ -534,9 +534,9 @@ VISK § 300
 * *marroin:* `marto+A+Superl+Sg+Nom`
 
 
- The quantitative gradation of t after r in u stems is in class
- `ADJ_PURTU`, which corresponds to dictionary class ¹⁻J.
- The common u stem after r is in nut participle’s passive’s back form (-tu):
+The quantitative gradation of t after r in u stems is in class
+`ADJ_PURTU`, which corresponds to dictionary class ¹⁻J.
+The common u stem after r is in nut participle’s passive’s back form (-tu):
 
 *Adjective gradations 1 t~r u examples:*
 * *purtu:* `purtu+A+Sg+Nom` (Eng. # bitten)
@@ -546,10 +546,10 @@ VISK § 300
 * *purrumpi:* `purtu+A+Comp+Sg+Nom`
 * *purruin:* `purtu+A+Superl+Sg+Nom`
 
- The quantitative gradation of t after r in y stems is in class
- `ADJ_PIERTY`, which corresponds to dictionary class ¹⁻J.
- The common u stem after r is in nut participle’s passive’s front fomr
- (-ty):
+The quantitative gradation of t after r in y stems is in class
+`ADJ_PIERTY`, which corresponds to dictionary class ¹⁻J.
+The common u stem after r is in nut participle’s passive’s front fomr
+(-ty):
 
 *Adjective gradations 1 t~r y examples:*
 * *pierty:* `pierty+A+Sg+Nom` (Eng. # befarted)
@@ -559,16 +559,16 @@ VISK § 300
 * *pierrympi:* `pierty+A+Comp+Sg+Nom`
 * *pierryin:* `pierty+A+Superl+Sg+Nom`
 
- There are no adjectives ending in -rtö. Just as well, the
- class for UkU : UvU- is limited to few nouns we know.
+There are no adjectives ending in -rtö. Just as well, the
+class for UkU : UvU- is limited to few nouns we know.
 
 ### The special illative alternation with k gradation, unaltering stems
- The trisyllabic words ending with gradating long k have plural illative
- in both strong and weak forms. 
+The trisyllabic words ending with gradating long k have plural illative
+in both strong and weak forms. 
 
 
- The class for trisyllabic -kko stems is `ADJ_HUPAKKO`, the corresponding
- dictionary class is ⁴⁻D. 
+The class for trisyllabic -kko stems is `ADJ_HUPAKKO`, the corresponding
+dictionary class is ⁴⁻D. 
 
 *Adjectives 4 o examples:*
 * *hupakko:* `hupakko+A+Sg+Nom` (Eng. # silly girl)
@@ -578,14 +578,14 @@ VISK § 300
 * *hupakoin:* `hupakko+A+Superl+Sg+Nom`
 
 ### Adjective stems with i:e variations
- The i stems of new i final words have i : e : 0 variation. These classes
- include new loans ending in consonant, which use -i to form inflectional
- stems.
- The i stems combined with gradation of will form five separate stem
- variants:
+The i stems of new i final words have i : e : 0 variation. These classes
+include new loans ending in consonant, which use -i to form inflectional
+stems.
+The i stems combined with gradation of will form five separate stem
+variants:
 
- The i finals with back vowel harmony go to class `ADJ_ABNORMI`, where
- old dictionary classification was ⁵.
+The i finals with back vowel harmony go to class `ADJ_ABNORMI`, where
+old dictionary classification was ⁵.
 
 *Adjectives 5 back examples:*
 * *abnormi:* `abnormi+A+Sg+Nom` (Eng. # abnorm)
@@ -594,8 +594,8 @@ VISK § 300
 * *abnormimpi:* `abnormi+A+Comp+Sg+Nom`
 * *abnormein:* `abnormi+A+Superl+Sg+Nom`
 
- The i finals with front vowel harmony go to class `ADJ_STYDI`, where
- old dictionary classification was ⁵.
+The i finals with front vowel harmony go to class `ADJ_STYDI`, where
+old dictionary classification was ⁵.
 
 *Adjectives 5 front examples:*
 * *stydi:* `stydi+A+Sg+Nom` (Eng. # stiff)
@@ -604,8 +604,8 @@ VISK § 300
 * *stydimpi:* `stydi+A+Comp+Sg+Nom`
 * *stydein:* `stydi+A+Superl+Sg+Nom`
 
- Stems with quantitative k gradation, i final and back harmony are in class 
- `ADJ_OPAAKKI` and dictionary class ⁵⁻A or ⁵⁻D.
+Stems with quantitative k gradation, i final and back harmony are in class 
+`ADJ_OPAAKKI` and dictionary class ⁵⁻A or ⁵⁻D.
 
 *Adjectives 5 k~0 back examples:*
 * *opaakki:* `opaakki+A+Sg+Nom` (Eng. # opaque)
@@ -616,8 +616,8 @@ VISK § 300
 * *opaakimpi:* `opaakki+A+Comp+Sg+Nom`
 * *opaakein:* `opaakki+A+Superl+Sg+Nom`
 
- Stems with quantitative k gradation, i final and front harmony are in class
- `ADJ_PINKKI` and dictionary class ⁵⁻A or ⁵⁻D.
+Stems with quantitative k gradation, i final and front harmony are in class
+`ADJ_PINKKI` and dictionary class ⁵⁻A or ⁵⁻D.
 
 *Adjectives 5 k~0 front examples:*
 * *pinkki:* `pinkki+A+Sg+Nom` (Eng. # pink)
@@ -628,10 +628,10 @@ VISK § 300
 * *pinkimpi:* `pinkki+A+Comp+Sg+Nom`
 * *pinkein:* `pinkki+A+Superl+Sg+Nom`
 
- There's no back vowel version of the bisyllabic gradating -ppi form.
+There's no back vowel version of the bisyllabic gradating -ppi form.
 
- Stems with quantitative p gradation, i final and front harmony are in class
- `ADJ_SIPPI` and dictionary class ⁵⁻B.
+Stems with quantitative p gradation, i final and front harmony are in class
+`ADJ_SIPPI` and dictionary class ⁵⁻B.
 
 *Adjectives 5 p~0 front examples:*
 * *sippi:* `sippi+A+Sg+Nom` (Eng. # bust)
@@ -642,8 +642,8 @@ VISK § 300
 * *sipimpi:* `sippi+A+Comp+Sg+Nom`
 * *sipein:* `sippi+A+Superl+Sg+Nom`
 
- Stems with quantitative t gradation, i final and back harmony are in class
- `ADJ_HURTTI` and dictionary class ⁵⁻C.
+Stems with quantitative t gradation, i final and back harmony are in class
+`ADJ_HURTTI` and dictionary class ⁵⁻C.
 
 *Adjectives 5 t~0 back examples:*
 * *hurtti:* `hurtti+A+Sg+Nom` (Eng. # grunchy)
@@ -654,8 +654,8 @@ VISK § 300
 * *hurtimpi:* `hurtti+A+Comp+Sg+Nom`
 * *hurtein:* `hurtti+A+Superl+Sg+Nom`
 
- Stems with quantitative t gradation, i final and front harmony are in class
- `ADJ_VÄÄRTTI` and dictionary class ⁵⁻C.
+Stems with quantitative t gradation, i final and front harmony are in class
+`ADJ_VÄÄRTTI` and dictionary class ⁵⁻C.
 
 *Adjectives 5 t~0 front examples:*
 * *väärtti:* `väärtti+A+Sg+Nom` (Eng. # worthy)
@@ -666,10 +666,10 @@ VISK § 300
 * *väärtimpi:* `väärtti+A+Comp+Sg+Nom`
 * *väärtein:* `väärtti+A+Superl+Sg+Nom`
 
- There are no bisyllabic adjectives ending in vowel and gradating -pi.
+There are no bisyllabic adjectives ending in vowel and gradating -pi.
 
- Stems with t ~ d gradation, i final and back harmony are in class
- `ADJ_TUHTI` and dictionary class ⁵⁻F.
+Stems with t ~ d gradation, i final and back harmony are in class
+`ADJ_TUHTI` and dictionary class ⁵⁻F.
 
 *Adjectives 5 t~d back examples:*
 * *tuhti:* `tuhti+A+Sg+Nom` (Eng. # stocky)
@@ -680,8 +680,8 @@ VISK § 300
 * *tuhdimpi:* `tuhti+A+Comp+Sg+Nom`
 * *tuhdein:* `tuhti+A+Superl+Sg+Nom`
 
- Stems with t ~ d gradation, i final and front harmony are in class
- `ADJ_REHTI` and dictionary class ⁵⁻F.
+Stems with t ~ d gradation, i final and front harmony are in class
+`ADJ_REHTI` and dictionary class ⁵⁻F.
 
 *Adjectives 5 t~d front examples:*
 * *rehti:* `rehti+A+Sg+Nom`
@@ -692,12 +692,12 @@ VISK § 300
 * *rehdimpi:* `rehti+A+Comp+Sg+Nom`
 * *rehdein:* `rehti+A+Superl+Sg+Nom`
 
- There are no adjectives with i stems with other gradations.
+There are no adjectives with i stems with other gradations.
 
 ### Trisyllabic and longer i stems
 
- The i stems with trisyllabic allomorph sets have class `ADJ_ABNORMAALI`, and
- dictionary class of ⁶.
+The i stems with trisyllabic allomorph sets have class `ADJ_ABNORMAALI`, and
+dictionary class of ⁶.
 
 *Adjectives 6 back examples:*
 * *abnormaali:* `abnormaali+A+Sg+Nom` (Eng. # abnormal)
@@ -706,8 +706,8 @@ VISK § 300
 * *abnormaalimpi:* `abnormaali+A+Comp+Sg+Nom`
 * *abnormaalein:* `abnormaali+A+Superl+Sg+Nom`
 
- The i stems with trisyllabic allomorph sets have class `ADJ_ÖYKKÄRI`, and
- dictionary class of ⁶.
+The i stems with trisyllabic allomorph sets have class `ADJ_ÖYKKÄRI`, and
+dictionary class of ⁶.
 
 *Adjectives 6 front examples:*
 * *öykkäri:* `öykkäri+A+Sg+Nom` (Eng. # chav)
@@ -717,19 +717,19 @@ VISK § 300
 * *öykkärein:* `öykkkäri+A+Superl+Sg+Nom`
 
 
- There are no adjectives acting like nouns where i-final nominatives have
- singular e stems.
+There are no adjectives acting like nouns where i-final nominatives have
+singular e stems.
 
 ### Bisyllabic A-stem adjectives
- The a stems differ from regular nouns in one more feature: some of them,
- but not all, have a:e variation before the comparative stem. The selection
- of this feature may be phonological, but it is complex, and often there
- is variation between speakers. The plural partitives and genitives are a
- good indicator of classificaion of a, ä final stems, as are the vowels
- of comparative and plural stems.
+The a stems differ from regular nouns in one more feature: some of them,
+but not all, have a:e variation before the comparative stem. The selection
+of this feature may be phonological, but it is complex, and often there
+is variation between speakers. The plural partitives and genitives are a
+good indicator of classificaion of a, ä final stems, as are the vowels
+of comparative and plural stems.
 
- Bisyllabic a stems with e comparative and j plurals are in class 
- `ADJ_AAVA`, and dictionary class ⁹.
+Bisyllabic a stems with e comparative and j plurals are in class 
+`ADJ_AAVA`, and dictionary class ⁹.
 
 *Adjectives 9 examples:*
 * *aava:* `aava+A+Sg+Nom` (Eng. # open (of fields, plains))
@@ -742,8 +742,8 @@ VISK § 300
 * *aavempi:* `aava+A+Comp+Sg+Nom`
 * *aavoin:* `aava+A+Superl+Sg+Nom`
 
- The ka stem with e comparative and j plurals is `ADJ_TARKKA`, and the 
- dictionary class is ⁹-A or ⁹⁻D.
+The ka stem with e comparative and j plurals is `ADJ_TARKKA`, and the 
+dictionary class is ⁹-A or ⁹⁻D.
 
 *Adjectives 9 k~0 examples:*
 * *tarkka:* `tarkka+A+Sg+Nom` (Eng. # pedantic)
@@ -767,10 +767,10 @@ VISK § 300
 
 
 
- No a final adjectives with quantitative p gradation.
+No a final adjectives with quantitative p gradation.
 
- The ta stem with j plurals is `ADJ_MATTA`, and the dictionary class
- is ⁹-C.
+The ta stem with j plurals is `ADJ_MATTA`, and the dictionary class
+is ⁹-C.
 
 *Adjectives 9 t~0 examples:*
 * *matta:* `matta+A+Sg+Nom` (Eng. # matta)
@@ -784,8 +784,8 @@ VISK § 300
 * *matoin:* `matta+A+Superl+Sg+Nom`
 
 
- The pa : va stem with e comparative and j plurals is `ADJ_HALPA`, and
- the dictionary class is ⁹⁻E.
+The pa : va stem with e comparative and j plurals is `ADJ_HALPA`, and
+the dictionary class is ⁹⁻E.
 
 *Adjectives 9 p~v examples:*
 * *halpa:* `halpa+A+Sg+Nom` (Eng. # cheap)
@@ -798,8 +798,8 @@ VISK § 300
 * *halvempi:* `halpa+A+Comp+Sg+Nom`
 * *halvoin:* `halpa+A+Superl+Sg+Nom`
 
- The ta : da stem with a comparative and j plurals is `ADJ_EHTA`, and
- the dictionary class is ⁹⁻F.
+The ta : da stem with a comparative and j plurals is `ADJ_EHTA`, and
+the dictionary class is ⁹⁻F.
 
 *Adjectives 9 t~d examples:*
 * *ehta:* `ehta+A+Sg+Nom` (Eng. # legit)
@@ -812,10 +812,10 @@ VISK § 300
 * *ehdampi:* `ehta+A+Comp+Sg+Nom`
 * *ehdoin:* `ehta+A+Superl+Sg+Nom`
 
- None with k:g gradation.
+None with k:g gradation.
 
- The pa : ma stem with e comparative and j plurals is `ADJ_RAMPA`, and
- the dictionary class is ⁹⁻H.
+The pa : ma stem with e comparative and j plurals is `ADJ_RAMPA`, and
+the dictionary class is ⁹⁻H.
 
 *Adjectives 9 p~m examples:*
 * *rampa:* `rampa+A+Sg+Nom` (Eng. # crippled)
@@ -828,10 +828,10 @@ VISK § 300
 * *rammempi:* `rampa+A+Comp+Sg+Nom`
 * *rammoin:* `rampa+A+Superl+Sg+Nom`
 
- No a stems with t:l gradations
+No a stems with t:l gradations
 
- The ta : na stem with a comparative and j plurals is `ADJ_VIHANTA`, and
- the dictionary class is ⁹⁻J.
+The ta : na stem with a comparative and j plurals is `ADJ_VIHANTA`, and
+the dictionary class is ⁹⁻J.
 
 *Adjectives 9 p~n examples:*
 * *vihanta:* `vihanta+A+Sg+Nom` (Eng. # blooming)
@@ -844,14 +844,14 @@ VISK § 300
 * *vihannampi:* `vihanta+A+Comp+Sg+Nom`
 * *vihannoin:* `vihanta+A+Superl+Sg+Nom`
 
- And finally, no a stems with t:r or t:l gradations.
+And finally, no a stems with t:r or t:l gradations.
 
 ### Some other trisyllabic a finals with a : 0 plurals
- Mostly regular a comparatives, no a : o variation and more syllables. 
- Common for va participles, and other derivations
+Mostly regular a comparatives, no a : o variation and more syllables. 
+Common for va participles, and other derivations
 
- The a : 0 stem is in class `ADJ_AALTOILEVA` and the old dictionary used ¹⁰
- as the paradigm class.
+The a : 0 stem is in class `ADJ_AALTOILEVA` and the old dictionary used ¹⁰
+as the paradigm class.
 
 *Adjectives 10 back examples:*
 * *aaltoileva:* `aaltoileva+A+Sg+Nom` (Eng. # wavy)
@@ -864,8 +864,8 @@ VISK § 300
 * *aaltoilevampi:* `aaltoileva+A+Comp+Sg+Nom`
 * *aaltoilevin:* `aaltoileva+A+Superl+Sg+Nom`
 
- The ä : 0 stem is in class `ADJ_TYÖLLISTETTÄVÄ` and the old dictionary used ¹⁰
- as the paradigm class.
+The ä : 0 stem is in class `ADJ_TYÖLLISTETTÄVÄ` and the old dictionary used ¹⁰
+as the paradigm class.
 
 *Adjectives 10 front examples:*
 * *työllistettävä:* `työllistettävä+A+Sg+Nom` (Eng. # employable)
@@ -878,8 +878,8 @@ VISK § 300
 * *työllistettävämpi:* `työllistettävä+A+Comp+Sg+Nom`
 * *työllistettävin:* `työllistettävä+A+Superl+Sg+Nom`
 
- For a:e comparatives in a:0 class use `ADJ_RUMA`. No dictionary
- classification or ~¹⁰, 
+For a:e comparatives in a:0 class use `ADJ_RUMA`. No dictionary
+classification or ~¹⁰, 
 
 *Adjectives 10 a:e comparative examples:*
 * *ruma:* `ruma+A+Sg+Nom` (Eng. # ugly)
@@ -892,8 +892,8 @@ VISK § 300
 * *rumempi:* `ruma+A+Comp+Sg+Nom`
 * *rumin:* `ruma+A+Superl+Sg+Nom`
 
- For ä:e comparatives in a:0 class use `ADJ_TYHMÄ`. No dictionary
- classification or ~¹⁰, 
+For ä:e comparatives in a:0 class use `ADJ_TYHMÄ`. No dictionary
+classification or ~¹⁰, 
 
 *Adjectives 10 ä:e comparative examples:*
 * *tyhmä:* `tyhmä+A+Sg+Nom` (Eng. # stupid)
@@ -976,8 +976,8 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 * *hömpissä:* `hömppä+A+Pl+Ine`
 * *hömppien:* `hömppä+A+Pl+Gen`
 
- The quantitative k and t gradations are not found for adjectives with this
- a stem.
+The quantitative k and t gradations are not found for adjectives with this
+a stem.
 
 
 *Adjectives 10 p~v a:e comparative examples:*
@@ -999,7 +999,7 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 * *käyvissä:* `käypä+A+Pl+Ine`
 * *käypien:* `käypä+A+Pl+Gen`
 
- The t:d is missing from this a stem.
+The t:d is missing from this a stem.
 
 
 *Adjectives 10 t~d ä:e comparative examples:*
@@ -1042,7 +1042,7 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 
 
 
- p:m is missing from this a, ä stems.
+p:m is missing from this a, ä stems.
 
 
 *Adjectives 10 t~l a:e comparative examples:*
@@ -1054,7 +1054,7 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 * *kullissa:* `kulta+A+Pl+Ine`
 * *kultien:* `kulta+A+Pl+Gen`
 
- T:l and t:n are missing from this a stem and t:l from ä stem.
+T:l and t:n are missing from this a stem and t:l from ä stem.
 
 
 *Adjectives 10 t~l ä:e comparative examples:*
@@ -1076,10 +1076,10 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 * *turrissa:* `turta+A+Pl+Ine`
 * *turtien:* `turta+A+Pl+Gen`
 
- K:j is missing.
+K:j is missing.
 
- Certain trisyllabic or longer a stems allow a lot of allomorphs and both
- a : o : 0 variations:
+Certain trisyllabic or longer a stems allow a lot of allomorphs and both
+a : o : 0 variations:
 
 *Adjectives 11 back examples:*
 * *hapera:* `hapera+A+Sg+Nom` (Eng. # brittle)
@@ -1090,7 +1090,7 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 * *haperoitten:* `hapera+A+Pl+Gen`
 * *haperiin:* `hapera+A+Pl+Ill`
 * *haperoihin:* `hapera+A+Pl+Ill`
- Also less commonly
+Also less commonly
 * *haperojen:* `hapera+A+Use/Rare+Pl+Gen`
 * *haperoja:* `hapera+A+Use/Rare+Pl+Par`
 * *haperain:* `hapera+A+Pl+Gen+Use/Rare`
@@ -1114,8 +1114,8 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 * *harmajoina:* `harmaja+A+Pl+Ess`
 * *harmajoita:* `harmaja+A+Pl+Par`
 
- Certain trisyllabic or longer a stems allow a lot of allomorphs and both
- a : o : 0 variations:
+Certain trisyllabic or longer a stems allow a lot of allomorphs and both
+a : o : 0 variations:
 
 *Adjectives 12++ examples:*
 * *latuska:* `latuska+A+Sg+Nom` (Eng. # flat)
@@ -1128,7 +1128,7 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 
 ### Special illative gradation in a stems
 
- The a : o stem variation combines with trisyllabic class of special illatives
+The a : o stem variation combines with trisyllabic class of special illatives
 
 *Adjectives 14 back examples:*
 * *hailakka:* `hailakka+A+Sg+Nom` (Eng. # pale)
@@ -1152,7 +1152,7 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 * *pohattoihin:* `pohatta+A+Pl+Ill`
 * *pohatoihin:* `pohatta+A+Pl+Ill`
 
- A-final words with long vowels and syllable boundary
+A-final words with long vowels and syllable boundary
 
 
 *Adjectives 15 oa examples:*
@@ -1182,9 +1182,9 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 * *järeisiin:* `järeä+A+Pl+Ill`
 
 ### Lexicalised comparatives
- Most of the lexicalised comparatives are adjectives that go to this class.
- The comparatives that are not lexicalised inflect exactly the same, though
- some versions of morphology may cut off long comparative chains.
+Most of the lexicalised comparatives are adjectives that go to this class.
+The comparatives that are not lexicalised inflect exactly the same, though
+some versions of morphology may cut off long comparative chains.
 
 
 *Adjectives 16 back examples:*
@@ -1208,7 +1208,7 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 *Adjectives 17 a examples:*
 * *vapaa:* `vapaa+A+Sg+Nom` (Eng. # free)
 
- There are no other bisyllabic long vowel stems in adjectives
+There are no other bisyllabic long vowel stems in adjectives
 
 
 *Adjectives 18 aa examples:*
@@ -1222,21 +1222,21 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 *Adjectives 18 ää examples:*
 * *syypää:* `syypää+A+Sg+Nom` (Eng. # guilty)
 
- There are no other monosyllabic long vowel stems for adjectives. For full
- listing of possibilities, see nouns.
+There are no other monosyllabic long vowel stems for adjectives. For full
+listing of possibilities, see nouns.
 
- Some loan words inflect irregularly, either more along the written form or
- the pronunciation. 
+Some loan words inflect irregularly, either more along the written form or
+the pronunciation. 
 
 *Adjectives 21 gay examples:*
 * *gay:* `gay+A+Sg+Nom` (Eng. # gay)
 
- There are not many direct adjective loans in general.
+There are not many direct adjective loans in general.
 
 ### Old e stems with i nominative
- Some of the old e stems have i nominative but e as stem vowel for singular
- forms. Most of these are not adjectives though, see full listing from the
- noun pages.
+Some of the old e stems have i nominative but e as stem vowel for singular
+forms. Most of these are not adjectives though, see full listing from the
+noun pages.
 
 
 *Adjectives 24~26 back examples:*
@@ -1257,13 +1257,13 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 *Adjectives 27 front examples:*
 * *täysi:* `täysi+A+Sg+Nom` (Eng. # full)
 
- There are no adjective examples of other gradation variants or consonant
- cluster simplifications in this class.
+There are no adjective examples of other gradation variants or consonant
+cluster simplifications in this class.
 
 ### Consonant-final stems
- The consonant stems use inverted gradation if applicable, that is, the 
- nominatives have end in consonants and their gradating consonants are in
- weak form. Most of these are rarer for adjectives than nouns.
+The consonant stems use inverted gradation if applicable, that is, the 
+nominatives have end in consonants and their gradating consonants are in
+weak form. Most of these are rarer for adjectives than nouns.
 
 
 
@@ -1271,19 +1271,19 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 *Adjectives 32 examples:*
 * *tyven:* `tyven+A+Sg+Nom` (Eng. # calm (of bodies of water))
 
- There are no back vowel variants or gradating words in the basic e
- conjoining pattern.
+There are no back vowel variants or gradating words in the basic e
+conjoining pattern.
 
 
 
 *Adjectives 33 examples:*
 * *avoin:* `avoin+A+Sg+Nom` (Eng. # open)
 
- There are no other examples of n:m final variation before conjoining e.
+There are no other examples of n:m final variation before conjoining e.
 
 ### Caritives
- The common case of n:m variation with conjoining a before singular stems is
- from caritive suffix -tOn, that forms adjectives productively. 
+The common case of n:m variation with conjoining a before singular stems is
+from caritive suffix -tOn, that forms adjectives productively. 
 
 
 
@@ -1298,8 +1298,8 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 *Adjectives 34 0~t front examples:*
 * *kyvytön:* `kyvytön+A+Sg+Nom` (Eng. # unskilled)
 
- This one word, hapan, also takes the same variation as normative variant.
- The expected e variant is not normative, but used.
+This one word, hapan, also takes the same variation as normative variant.
+The expected e variant is not normative, but used.
 
 
 *Adjectives 34 0~p back examples:*
@@ -1319,14 +1319,14 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 *Adjectives 35 front examples:*
 * *sisin:* `sisin+A+Sg+Nom` (Eng. # innermost)
 
- Vasen inflects almost like superlative
+Vasen inflects almost like superlative
 
 
 *Adjectives 36 examples:*
 * *vasen:* `vasen+A+Sg+Nom` (Eng. # left)
 
 ### nen suffixes
- Adjectives are commonly formed with nen derivatonns.
+Adjectives are commonly formed with nen derivatonns.
 
 
 *Adjectives 38 back examples:*
@@ -1340,7 +1340,7 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 
 ### s-final adjectives
 
- Most of the cases here are nouns from noun derivations.
+Most of the cases here are nouns from noun derivations.
 
 
 *Adjectives 39 examples:*
@@ -1387,7 +1387,7 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 *Adjectives 41 pas examples:*
 * *reipas:* `reipas+A+Sg+Nom`
 
- No adjectives end in -päs
+No adjectives end in -päs
 
 
 *Adjectives 41 tas examples:*
@@ -1397,13 +1397,13 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 *Adjectives 41 tis examples:*
 * *raitis:* `raitis+A+Sg+Nom` (Eng. # sober)
 
- Gaps.
+Gaps.
 
 
 *Adjectives 41 das examples:*
 * *hidas:* `hidas+A+Sg+Nom` (Eng. # slow)
 
- Gaps
+Gaps
 
 
 *Adjectives 41 ras examples:*
@@ -1420,7 +1420,7 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 * *ehyt:* `ehyt+A+Sg+Nom` (Eng. # unbroken)
 
 ### Lexicalised nut-participles
- Majority of lexicalised nut participles are adjectives.
+Majority of lexicalised nut participles are adjectives.
 
 
 *Adjectives 47 back examples:*
@@ -1450,11 +1450,11 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 *Adjectives 48 l~t back examples:*
 * *helle:* `helle+A+Sg+Nom` (Eng. # warm weather)
 
- Gapping almost all variants of gradations with e, as well as all dual
- nominative stems.
+Gapping almost all variants of gradations with e, as well as all dual
+nominative stems.
 
 ### Exceptional adjectives
- The ones that do not fit in the official classes shown in dictionaries.
+The ones that do not fit in the official classes shown in dictionaries.
 
 
 *Adjective pitkä examples:*
@@ -1480,8 +1480,8 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 
 
 ### Plurales tantum?
- Adjectives aren't typically plural words, but there are some in the
- dictionaries.
+Adjectives aren't typically plural words, but there are some in the
+dictionaries.
 
 
 *Adjective plurales examples:*
@@ -1972,3 +1972,5 @@ Adjectives can usually be derived into sti adverbs productively
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/affixes/adjectives.lexc)</small>

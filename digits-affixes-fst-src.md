@@ -480,3 +480,5 @@ The roman digit string ending in I, IV, V, VII, IX, X or
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/digits.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/affixes/digits.lexc)</small>

@@ -6,7 +6,7 @@ subset of particles, so they do not inflect at all.
 
 The adverbial conjunctions are:
 ellei, että, jahka, jollei, jos, joskin, jos kohta, jotta, koska, kun,
- kunhan, mikäli, vaikka, (kunnes). 
+kunhan, mikäli, vaikka, (kunnes). 
 Further reading: [VISK § 818](http://scripta.kotus.fi/visk/sisalto.php?p=818)
 
 *Adverbial conjunctions examples:*
@@ -26,3 +26,5 @@ Further reading: [VISK § 818](http://scripta.kotus.fi/visk/sisalto.php?p=818)
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/subjunctions.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/subjunctions.lexc)</small>

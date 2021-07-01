@@ -18,3 +18,5 @@ The nominal forms can be used as non-initial parts of typical compounds
 
 *Nominals examples:*
 * *talonjuttu:* `talo+N+Sg+Gen#juttu+N+Sg+Nom` (Eng. # house thing)
+* * *
+<small>This (part of) documentation was generated from [../src/fst/compounding.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/compounding.lexc)</small>

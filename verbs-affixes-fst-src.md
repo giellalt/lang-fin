@@ -16,18 +16,18 @@ tense in semantic sense.
 
 
 ## Verb stem variation
- Verbs have no allomorphic variation per se, except for some assimilation
- and variation of ð forms, but the stem variation is the same
- as in nouns. The examples for verb stems are given for each class:
- A infinitive's lative, e infinitive's inessive, indicative present 1st 
- singular, indicative present 3rd singular, indicative past 1st singular, 
- indicative past 3rd singular, conditional past 3rd singular, 
- imperative 2nd plural, potential 1st singular, present passive, 
- past passive, nut participle passive
+Verbs have no allomorphic variation per se, except for some assimilation
+and variation of ð forms, but the stem variation is the same
+as in nouns. The examples for verb stems are given for each class:
+A infinitive's lative, e infinitive's inessive, indicative present 1st 
+singular, indicative present 3rd singular, indicative past 1st singular, 
+indicative past 3rd singular, conditional past 3rd singular, 
+imperative 2nd plural, potential 1st singular, present passive, 
+past passive, nut participle passive
 
 ### Verb stems without stem variation
 
- The u stems have no stem variation:
+The u stems have no stem variation:
 
 *Verbs 52u examples:*
 * *kaunistua:* `kaunistua+V+Act+InfA+Sg+Lat` (Eng. # beautify)
@@ -44,7 +44,7 @@ tense in semantic sense.
 * *kaunistuttu:* `kaunistua+V+Pss+PrfPrc+Sg+Nom`
 * *kaunistuminen:* `kaunistua+V+Der/minen+Sg+Nom`
 
- The o stems have no stem variation:
+The o stems have no stem variation:
 
 *Verbs 52o examples:*
 * *punoa:* `punoa+V+Act+InfA+Sg+Lat` (Eng. # bundle?)
@@ -61,7 +61,7 @@ tense in semantic sense.
 * *punottu:* `punoa+V+Pss+PrfPrc+Sg+Nom`
 * *punominen:* `punoa+V+Der/minen+Sg+Nom`
 
- The ö stems have no stem variation:
+The ö stems have no stem variation:
 
 *Verbs 52ö examples:*
 * *säilöä:* `säilöä+V+Act+InfA+Sg+Lat` (Eng. # store)
@@ -78,7 +78,7 @@ tense in semantic sense.
 * *säilötty:* `säilöä+V+Pss+PrfPrc+Sg+Nom`
 * *säilöminen:* `säilöä+V+Der/minen+Sg+Nom`
 
- The y stems have no stem variation:
+The y stems have no stem variation:
 
 *Verbs 52y examples:*
 * *ällistyä:* `ällistyä+V+Act+InfA+Sg+Lat` (Eng. # amaze)
@@ -213,7 +213,7 @@ tense in semantic sense.
 * *pusertua:* `pusertua+V+Act+InfA+Sg+Lat` (Eng. # squeeze)
 
 ### Verbs with -a stems
- 
+
 
 
 *Verbs 53 back examples:*
@@ -252,7 +252,7 @@ tense in semantic sense.
 *Verbs 53 back t~r examples:*
 * *sortaa:* `sortaa+V+Act+InfA+Sg+Lat` (Eng. # crush)
 
- Some of the a stems have t:s in past stems by ti>si variation.
+Some of the a stems have t:s in past stems by ti>si variation.
 
 
 *Verbs 54 back examples:*
@@ -286,7 +286,7 @@ tense in semantic sense.
 *Verbs 54 front t~r examples:*
 * *näpertää:* `näpertää+V+Act+InfA+Sg+Lat` (Eng. # twiddle)
 
- In some cases t:s variation is optionally alongside the regular gradation:
+In some cases t:s variation is optionally alongside the regular gradation:
 
 
 
@@ -305,7 +305,7 @@ tense in semantic sense.
 *Verbs 55 front t~n examples:*
 * *entää:* `entää+V+Act+InfA+Sg+Lat`
 
- Other a stems undergo a:o variation
+Other a stems undergo a:o variation
 
 
 *Verbs 56 back examples:*
@@ -331,7 +331,7 @@ tense in semantic sense.
 *Verbs 56 back t~n examples:*
 * *kantaa:* `kantaa+V+Act+InfA+Sg+Lat` (Eng. # carry)
 
- In some of the a:o variations the t:s variant is also possible.
+In some of the a:o variations the t:s variant is also possible.
 
 
 *Verbs 57 back examples:*
@@ -379,13 +379,13 @@ tense in semantic sense.
 *Verbs 58 front k~j examples:*
 * *särkeä:* `särkeä+V+Act+InfA+Sg+Lat` (Eng. # break)
 
- Some of the e stems allow for optional t:s variation in past form.
+Some of the e stems allow for optional t:s variation in past form.
 
 
 *Verbs 59 examples:*
 * *tuntea:* `tuntea+V+Act+InfA+Sg+Lat` (Eng. # feel)
 
- The rare ht:ks kind of variation is also possible.
+The rare ht:ks kind of variation is also possible.
 
 
 *Verbs 60 examples:*
@@ -462,7 +462,7 @@ tense in semantic sense.
 * *hylkiä:* `hylkiä+V+Act+InfA+Sg+Lat` (Eng. # reject)
 
 ### Verbs with long vowel stem
- These verbs also have da variant of a infinitive forms.
+These verbs also have da variant of a infinitive forms.
 
 
 *Verbs 62 back examples:*
@@ -485,8 +485,8 @@ tense in semantic sense.
 * *jäädä:* `jäädä+V+Act+InfA+Sg+Lat` (Eng. # stay)
 
 ### Monosyllabic verbs with widening diphthong
- Widening diphthongs are simplified before past and conditional suffix i's
- by removal of first component. 
+Widening diphthongs are simplified before past and conditional suffix i's
+by removal of first component. 
 
 
 *Verbs 64 ie examples:*
@@ -500,8 +500,8 @@ tense in semantic sense.
 *Verbs 64 yö examples:*
 * *syödä:* `syödä+V+Act+InfA+Sg+Lat` (Eng. # eat)
 
- In past and conditional forms of käydä, the glide before suffix is marked
- even in normative orthography.
+In past and conditional forms of käydä, the glide before suffix is marked
+even in normative orthography.
 
 
 *Verbs 65 examples:*
@@ -509,7 +509,7 @@ tense in semantic sense.
 
 ### Verbs with consonant stems
 
- Verbs with momentane derivation are common consonant stems.
+Verbs with momentane derivation are common consonant stems.
 
 
 *Verbs 66 back examples:*
@@ -534,7 +534,7 @@ tense in semantic sense.
 * *rangaista:* `rangaista+V+Act+InfA+Sg+Lat` (Eng. # punish)
 
 ### Verbs with n, r, l, s stems
- Notably, the a infinitive forms d assimilates to preceding consonant.
+Notably, the a infinitive forms d assimilates to preceding consonant.
 
 
 *Verbs 67 back r examples:*
@@ -554,7 +554,7 @@ tense in semantic sense.
 *Verbs 67 front n examples:*
 * *mennä:* `mennä+V+Act+InfA+Sg+Lat` (Eng. # go)
 
- Frequentative derivations are most common source of l stemmed verbs.
+Frequentative derivations are most common source of l stemmed verbs.
 
 
 *Verbs 67 back l examples:*
@@ -625,7 +625,7 @@ tense in semantic sense.
 * *kiherrellä:* `kiherrellä+V+Act+InfA+Sg+Lat` (Eng. # giggle)
 
 ### tse stuff
- Some verbs have possible optional heteroclitic indicative stems:
+Some verbs have possible optional heteroclitic indicative stems:
 
 
 *Verbs 68 front examples:*
@@ -635,7 +635,7 @@ tense in semantic sense.
 *Verbs 68 back examples:*
 * *mellakoida:* `mellakoida+V+Act+InfA+Sg+Lat` (Eng. # riot)
 
- In these stems the tse formed stem is only one.
+In these stems the tse formed stem is only one.
 
 
 *Verbs 69 back examples:*
@@ -645,7 +645,7 @@ tense in semantic sense.
 *Verbs 69 front examples:*
 * *merkitä:* `merkitä+V+Act+InfA+Sg+Lat` (Eng. # mark)
 
- Few words have special consonant cluster simplification for ks forms.
+Few words have special consonant cluster simplification for ks forms.
 
 
 *Verbs 70 back examples:*
@@ -656,7 +656,7 @@ tense in semantic sense.
 * *piestä:* `piestä+V+Act+InfA+Sg+Lat` (Eng. # spank)
 
 
- nähdä has special h:k variation.
+nähdä has special h:k variation.
 
 
 *Verbs 71 examples:*
@@ -987,7 +987,7 @@ tense in semantic sense.
 * *tietää:* `tietää+V+Act+InfA+Sg+Lat` (Eng. # know)
 
 ### Verbs with defective paradigms
- For some verbs, the normative inflection does not allow full set of forms:
+For some verbs, the normative inflection does not allow full set of forms:
 
 
 *Verbs 77 back  examples:*
@@ -1006,11 +1006,11 @@ tense in semantic sense.
 * *ähkää:* `ähkää+V+Act+InfA+Sg+Lat` (Eng. # meh)
 
 ### Verbs with exceptional inflection patterns
- There is a handful of verbs that does not fit to the patterns of old
- dictionaries.
+There is a handful of verbs that does not fit to the patterns of old
+dictionaries.
 
- The verb olla has very peculiar and heteroclitic inflection with lot of
- common short forms in standard spoken Finnish:
+The verb olla has very peculiar and heteroclitic inflection with lot of
+common short forms in standard spoken Finnish:
 
 *Verb olla examples:*
 * *olla:* `olla+V+Act+InfA+Sg+Lat` (Eng. # be)
@@ -1763,3 +1763,5 @@ These derivations are treated as inflection in our system as well.
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/affixes/verbs.lexc)</small>

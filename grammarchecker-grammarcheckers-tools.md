@@ -1,5 +1,5 @@
 
-      F I N N I S H   G R A M M A R   C H E C K E R
+F I N N I S H   G R A M M A R   C H E C K E R
 
 
 
@@ -454,7 +454,7 @@ Grammarchecker rules begin here
 
 
 
- #### regular congruence rules
+#### regular congruence rules
 
 
 
@@ -497,3 +497,5 @@ Grammarchecker rules begin here
 
 ###  Spacing errors
 
+* * *
+<small>This (part of) documentation was generated from [../tools/grammarcheckers/grammarchecker.cg3](http://github.com/giellalt/lang-fin/blob/main/../tools/grammarcheckers/grammarchecker.cg3)</small>

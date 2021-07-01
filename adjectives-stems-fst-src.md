@@ -1,14 +1,14 @@
 # Adjective classification
- Adjectives are words that are inflected like nouns, with few additions. For
- adjectives, the comparative derivations are usually allowed and the
- possessive suffixes are unlikely. The syntactic adjectives that do not have
- comparative derivations are nouns, if they have nominal inflection, or
- particles, if they do not inflect. The examples you need to find the 
- correct classification are same as for nouns, with addition of comparative
- and superlative.
+Adjectives are words that are inflected like nouns, with few additions. For
+adjectives, the comparative derivations are usually allowed and the
+possessive suffixes are unlikely. The syntactic adjectives that do not have
+comparative derivations are nouns, if they have nominal inflection, or
+particles, if they do not inflect. The examples you need to find the 
+correct classification are same as for nouns, with addition of comparative
+and superlative.
 
- The classification of adjectives combines the stem changes, the final 
- allomorph selection and the harmony. See the list from:
+The classification of adjectives combines the stem changes, the final 
+allomorph selection and the harmony. See the list from:
 
 *Adjective examples examples:*
 * *aakkostettu:* `aakkostettu+A+Sg+Nom`
@@ -22,3 +22,5 @@
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/adjectives.lexc)</small>

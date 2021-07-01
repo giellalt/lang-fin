@@ -1,15 +1,15 @@
 # Acronym classification
- Acronyms are shortenings that inflect. They all have two inflection
- patterns, one read letter by letter, and one word-by-word. They are separate
- entries in this dictionary. For example OY will have singular illatives
- _OY:hyn_ and _OY:öön_ for _yyhyn_ and _yhtiöön_ resp., although latter is
- much rarer.
- A big majority of popular acronyms in everyday use comes from English, and
- the word-based inflection is virtually non-existent and would be very
- confusing so there's no high priority for adding that.
+Acronyms are shortenings that inflect. They all have two inflection
+patterns, one read letter by letter, and one word-by-word. They are separate
+entries in this dictionary. For example OY will have singular illatives
+_OY:hyn_ and _OY:öön_ for _yyhyn_ and _yhtiöön_ resp., although latter is
+much rarer.
+A big majority of popular acronyms in everyday use comes from English, and
+the word-based inflection is virtually non-existent and would be very
+confusing so there's no high priority for adding that.
 
- The first classification for acronyms should be along the final letter, then
- if the final word inflection is used, the class of that word.
+The first classification for acronyms should be along the final letter, then
+if the final word inflection is used, the class of that word.
 
 *Acronyms examples:*
 * *OY:hyn:* `OY+N+Sg+Ill`
@@ -302,3 +302,5 @@
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/fin-acronyms.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/fin-acronyms.lexc)</small>

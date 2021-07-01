@@ -6,50 +6,50 @@
 
 
 
- Numerals have been split in three sections, the compounding parts
- of cardinals and ordinals, and the non-compounding ones:
+Numerals have been split in three sections, the compounding parts
+of cardinals and ordinals, and the non-compounding ones:
 
 *Numeral examples:*
 * *kaksikymmentäkolmetuhatta:* `kaksi+Num+Card+Sg+Nom#kymmenen+Num+Card+Sg+Par#kolme+Num+Card+Sg+Nom#tuhat+Num+Card+Sg+Par` (Eng. # 23,000)
 * *kahdessadasneljäs:* `kahdes+Num+Ord+Sg+Nom#sadas+Num+Ord+Sg+Nom#neljäs+Num+Ord+Sg+Nom` (Eng. # 204rd)
 * *viitisenkymmentä:* `viitisen+Num#kymmentä` (Eng. # 50-ish)
 
- The compounding parts of cardinals are the number multiplier words.
+The compounding parts of cardinals are the number multiplier words.
 
 *cardinal examples:*
 * *yksi:* `yksi+Num+Card+Sg+Nom` (Eng. # one)
 * *viidelle:* `viisi+Num+Card+Sg+All` (Eng. # five)
 * *tuhatta:* `tuhat+Num+Card+Sg+Par` (Eng. # thousand)
 
- The suffixes only appear after cardinal multipliers
+The suffixes only appear after cardinal multipliers
 
 *Cardinal multiplicants examples:*
 * *viisikymmentä:* `viisi+Num+Card+Sg+Nom#kymmentä`
 * *neljäsataatuhatta:* `neljä+Num+Card+Sg+Nom#sata+Num+Card+Sg+Par#tuhatta`
 
- The compounding parts of ordinals are the number multiplier words.
+The compounding parts of ordinals are the number multiplier words.
 
 *Ordinal numerals examples:*
 * *neljäs:* `neljäs+A+Ord+Sg+Nom`
 * *viidennelle:* `viides+A+Ord+Sg+All`
 * *tuhannetta:* `tuhannes+A+Ord+Sg+Par`
 
- The suffixes only appear after cardinal multipliers
+The suffixes only appear after cardinal multipliers
 
 *Ordinal multiplicants examples:*
 * *viideskymmenes:* `viides+A+Ord+Sg+Nom#kymmenes`
 * *neljässadastuhannes:* `neljäs+A+Ord+Sg+Nom#sadas+A+Ord+Sg+Nom#tuhannes`
 
- There is a set of numbers or corresponding expressions that work like them,
- but are not basic cardinals or ordinals:
+There is a set of numbers or corresponding expressions that work like them,
+but are not basic cardinals or ordinals:
 
 *Numeral others examples:*
 * *viitisenkymmentä:* `viitisen+Num#kymmentä`
 * *puolikymmentä:* `puolikymmentä+Num+Sg+Nom`
 
 ## Numeral stem variation
- Numerals follow the same stem variation patterns as nouns, some of these
- being very rare to extinct for nouns. 
+Numerals follow the same stem variation patterns as nouns, some of these
+being very rare to extinct for nouns. 
 
 *Numerals 31 examples:*
 * *yksi:* `yksi+Num+Card+Sg+Nom`
@@ -19915,3 +19915,5 @@
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/numerals.lexc)</small>

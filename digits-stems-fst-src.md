@@ -100,3 +100,5 @@ Ones come alone
 * *VIII:* `VIII+Num+Ord+Sg+Nom`
 * *II:* `II+Num+Ord+Sg+Nom`
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/digits.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/digits.lexc)</small>
