@@ -3,7 +3,7 @@ The Finnish morphology and tools
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-fin)](https://github.com/giellalt/lang-fin/issues)
 [![Build Status](https://github.com/giellalt/lang-fin/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-fin/actions)
-[![License](https://img.shields.io/github/license/giellalt/lang-fin)](https://raw.githubusercontent.com/giellalt/lang-fin/main/LICENSE)
+[![License](https://img.shields.io/github/license/giellalt/lang-fin)](https://github.com/giellalt/lang-fin/blob/main/LICENSE)
 
 This repository contains finite state source files for the Finnish language,
 for building morphological analysers, proofing tools
