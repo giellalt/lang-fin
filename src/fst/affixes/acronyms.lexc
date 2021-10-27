@@ -29,9 +29,12 @@ LEXICON ACRO_ACCRA # ;
 LEXICON ACRONOUN_cons # ;
 LEXICON ACRO_BERN # ;
 LEXICON ACRO_NYSTØ # ;
-LEXICON DYN_ACRO_vow # ;
-LEXICON DYN_ACRO_cons # ;
+LEXICON DYN_ACRO_cons 
+ +Use/Circ+Use/SpellNoSugg: # ;    
 
+LEXICON DYN_ACRO_vow 
+ +Use/Circ+Use/SpellNoSugg: # ;    
+   
 ! old file
 LEXICON ACRO_BACK_CASES
 
