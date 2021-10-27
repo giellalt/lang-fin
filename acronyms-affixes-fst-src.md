@@ -338,5 +338,6 @@ c.f. [VISK § 169](http://scripta.kotus.fi/visk/sisallys.php?p=169)
 
 
 
+
 * * *
 <small>This (part of) documentation was generated from [../src/fst/affixes/acronyms.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/affixes/acronyms.lexc)</small>
