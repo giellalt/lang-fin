@@ -2050,672 +2050,6 @@ The nominal forms can be used as non-initial parts of typical compounds
 * *talonjuttu:* `talo+N+Sg+Gen#juttu+N+Sg+Nom` (Eng. # house thing)
 * * *
 <small>This (part of) documentation was generated from [../src/fst/compounding.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/compounding.lexc)</small>
-
-# Morphology
-The morphological division of Finnish words has three classes: verbal,
-nominal and others. The verbs are identified by personal, temporal,
-modal and infinite inflection. The nominals are identified by numeral and
-case inflection. The others are, apart from being the rest, identified by
-defective or missing inflection.
-
-## Symbols used for analysis `Multichar_Symbols`
-The Finnish morphological implementation uses analysis symbols mainly to
-encode morphological analyses, the rest are implemented else where. Some
-non-morphological analyses or classifications are retained for
-interoperability and historical reasons. There are further details and
-examples of this classification in other parts of this documents; this page
-merely summarises the codes used in this version of the system.
-### Parts-of-speech
-The main morphological division of words is merely: Verbs, Nominals,
-Rest.
-The syntactic and semantic subdivision is realised in POS tags.
-The nominals consist of nouns (substantiivi), adjectives, pro words
-and numerals. Verbs are non-divisible, but include infinitive and particple
-forms. The others are subdivided into adpositions, adverbs and particles.
-Further reading: [VISK s.v.
-sanaluokka|http://scripta.kotus.fi/visk/visk_termit.cgi?h_id=sCABBIDAI],
-[VISK § 438](http://scripta.kotus.fi/visk/sisallys.php?p=438).
-
-### Temporary list of added tags
-These tags were added as part of a tag unification, and should be
-put where they belong.
-
-Are there tags not declared in root.lexc or misspelled?
-Have a look at these:
- * `+Dash		            `: XXX check this tag!
- * `+Dial/Finland           `: XXX check this tag!
- * `+Dial/standard          `: XXX check this tag!
- * `+Gyr		            `: XXX check this tag!
- * `+Pref-		            `: XXX check this tag!
- * `+Pro		            `: XXX check this tag!
- * `+TruncPrefix            `: XXX check this tag!
- * `+Use/N		            `: XXX check this tag!
- * `+Use/sub	            `: XXX check this tag!
- * `+s			            `: XXX check this tag!
-
- * **+CLBfinal**  Sentence final abbreviated expression ending in full stop, so that the full stop is ambiguous
-
-
-
-
-
-### Parts of speech
-
-
- * `+V `: Verb
- * `+N `: Noun
- * `+A `: Adjective
- * `+ACR `: Acronym
- * `+ABBR `: Abbreviation
- * +Symbol = independent symbols in the text stream, like £, €, ©
- * `+Acr `: Acronym
- * `+Num `: Numerals
- * `+Adv `: Adverb
- * `+Pron `: Pronoun
- * `+Pcle  `: Particle, except:
- * `+Interj `: Interjection
-
-The part-of-speech analyses are typically the first:
-
-*Analysis examples examples:*
-* *kutoo:* `kutoa+V+Act+Ind+Prs+Sg3` (Eng. # knits)
-* *talo:* `talo+N+Sg+Nom` (Eng. # house)
-* *nopea:* `nopea+A+Sg+Nom` (Eng. # fast)
-* *yksi:* `yksi+Num+Card+Sg+Nom` (Eng. # one)
-* *nopeasti:* `nopeasti+Adv` (Eng. # fast)
-* *hän:* `hän+Pron+Pers+Sg+Nom` (Eng. # he)
-* *ahaa:* `ahaa+Pcle` (Eng. # ah)
-* *äh:* `äh+Interj` (Eng. # uh)
-
-### Nouns
-In nominal analyses, the proper nouns have additional subanalysis.
-Proper nouns are usually written with initial capitals–or more recently,
-totally arbitrary capitalisations, such as in brand names nVidia and ATi.
-Proper nouns do have full inflectional morphology exactly as other nouns, but
-work slightly differently in derivation and compounding. Some capitalised
-nouns may also lose capitalisation in derivation.
-[VISK § 98](http://scripta.kotus.fi/visk/sisallys.php?p=98)
-
-The code for proper nouns:
- * `+Prop `: Proper noun
-
-Proper noun tag follows noun analysis:
-* *Pekka:* `Pekka+N+Prop+Sg+Nom` (Eng. # Pekka)
-
-### Pronouns
-Pronominal analyses have some semantic classes.
-[VISK § 101](http://scripta.kotus.fi/visk/sisallys.php?p=101)–104.
-Codes for various semantic classes:
- * `+Pers  `: Personal
- * `+Dem `: Demonstrative
- * `+Interr `: Interrogative
- * `+Rel `: Relative
- * `+Qu `: Quantor
- * `+Qnt `: Quantor?????
- * `+Refl `: Reflexive
- * `+Recipr `: Reciprocal
- * `+Indef `: Indefinite
-
-Semantic tags follow pronoun analyses:
-* *minä:* `minä+Pron+Pers+Sg+Nom` (Eng. # I)
-* *tämä:* `tämä+Pron+Dem+Sg+Nom` (Eng. # this)
-* *kuka:* `kuka+Pron+Interr+Sg+Nom` (Eng. # who)
-* *joka:* `joka+Pron+Rel+Sg+Nom` (Eng. # which)
-* *kaikki:* `kaikki+Pron+Qu+Sg+Nom` (Eng. # every)
-* *itse:* `itse+Pron+Refl+Sg+Nom` (Eng. # self)
-* *toistaan:* `toinen+Pron+Recipr+Sg+Par+PxSg3` (Eng. # each other)
-* *joku:* `joku+Pron+Qu+Indef+Sg+Nom` (Eng. # someone)
-
- * `+Sem/Human `: Semantic class: Human
- * `+Sem/Geo `: Semantic class: Geographic
- * `+Sem/Org `: Semantic class: Organisation
-
- * `+Sem/Build		        `: 
- * `+Sem/Build-room	        `: 
- * `+Sem/Cat		        `: 
- * `+Sem/Date		        `: 
- * `+Sem/Domain		        `: 
- * `+Sem/Dummytag	        `: 
- * `+Sem/Event		        `: 
- * `+Sem/Fem		        `: 
- * `+Sem/Group_Hum	        `: 
- * `+Sem/Hum		        `: 
- * `+Sem/ID			        `: 
- * `+Sem/Mal		        `: 
- * `+Sem/Mat		        `: 
- * `+Sem/Measr		        `: 
- * `+Sem/Money		        `: 
- * `+Sem/Obj		        `: 
- * `+Sem/Obj-el		        `: 
- * `+Sem/Obj-ling	        `: 
- * `+Sem/Org_Prod-audio     `: 
- * `+Sem/Org_Prod-vis       `: 
- * `+Sem/Plc		        `: 
- * `+Sem/Prod-vis	        `: 
- * `+Sem/Route		        `: 
- * `+Sem/Rule		        `: 
- * `+Sem/State-sick	        `: 
- * `+Sem/Substnc	        `: 
- * `+Sem/Time-clock	        `: 
- * `+Sem/Tool-it	        `: 
- * `+Sem/Txt		        `: 
- * `+Sem/Veh		        `: 
- * `+Sem/Year		        `: 
-
-### Numerals
-In numeral analyses, there are multiple analyses.
-The numerals have semantic subcategories
-([VISK § 770](http://scripta.kotus.fi/visk/sisallys.php?p=770)).
-The classical ordinal  numbers  have been adjectivised in current
-descriptions ([VISK § 771](http://scripta.kotus.fi/visk/sisallys.php?p=771)),
-the  ordinal interpretation is still spelled out in subcategories. The
-numbers are often  written with digits or other specific notations.
-Numeral class tags:
- * `+Card  `: Cardinal
- * `+Ord `: Ordinals
-
-* *kolme:* `kolme+Num+Card+Sg+Nom` (Eng. # three)
-* *kolmas:* `kolmas+Num+Ord+Sg+Nom` (Eng. # third)
-
-### Particles
-The particles are subcategorised syntax-wise into conjunctions for all words,
-that govern subclauses
-([VISK § 812](http://scripta.kotus.fi/visk/sisallys.php?p=812)). The
-conjunctions are further divided, whether the subclause is coordinant or
-subordinant to the governing clause and few other syntactic types
-([VISK § 816](http://scripta.kotus.fi/visk/sisallys.php?p=816)). _N.B._ that
-the division to subordinating and coordinating conjucntions is motivated
-by other systems, including legacy systems, whereas the grammar presents
-also different  categorisations for conjunctions (including naming
-subordination adverbials).
-Conjunction syntax tags:
- * `+CC `: Coordinating
- * `+CS `: Adverbial
-
-The conjunction tags take place of part-of-speech tags for legacy reasons:
-* *ja:* `ja+CC`
-* *vaikka:* `vaikka+CS`
-
-### Adpositions
-In adposition anlayses, the syntactic tendencies are shown in sub-analyses;
-whether they appear typically before or after their heads
-[VISK § 687](http://scripta.kotus.fi/visk/sisallys.php?p=687).
-
-Adposition syntax tags:
- * `+Adp `: Adposition
- * `+Po `: Postposition
- * `+Pr `: Preposition
-
-Adpositions are tagged in POS position:
-* *läpi:* `läpi+Po`
-
-Tags for sub-POS
-
- * `+Arab			        `: 
- * `+Attr			        `: 
- * `+Coll			        `: 
- * `+Rom			        `: 
-
-
-### Bound root morphs
-The lexical items that appear as bound morphemes before head word are
-classified as prefixes ([VISK §
-172|http://scripta.kotus.fi/visk/sisallys.php?p=172]). Prefixes are rare and
-mostly of foreign  origin. The singular forms of plurale tantums are also
-potential prefixes.
-
- * `+Pref `: Prefixes
-
-Suffixes are typically word forms or derivations that only appear as
-bound morphs. Other than that Finnish does not really have proper suffixes.
-This means that suffixed words are in effect compounds of where the last
-word just doesn't appear as free morph.
- * `+Suff `: Suffixes
-
-### Symbols
-Symbols are not part of linguistic data per se so we classify them according
-to the needs of end user applications
-
- * `+Punct `: any punctuation
- * `+Quote `: quote marks
-
-The analyses for symbols are like POSes:
-* *.:* `.+Punct` (Eng. # .)
-
-### Nominal analyses
-The analyses of nominals show the inflection in number. Nominals inflect in
-number, to mark plurality of the word. The number for nouns is either
-singular or plural.
-Further reading: [VISK § 79](http://scripta.kotus.fi/visk/sisallys.php?p=79)
-Number tags:
- * `+Sg `: Singular
- * `+Pl `: Plural
-
-Number tags are next to POSes in nominal analyses, and in order of morphs:
-* *padassa:* `pata+N+Sg+Ine` (Eng. # pot)
-* *padoissa:* `pata+N+Pl+Ine`
-
-The analyses of nominals have case inflection marked.
-The nominals have case inflection
-([VISK § 81](http://scripta.kotus.fi/visk/sisallys.php?p=81))
-to mark syntactic roles
-(nominative, partitive, accusative-genitive) and semantics
-(others, partially even syntactic cases).
- * `+Nom `: (Mostly) Syntactic cases: Nominative
- * `+Par `: Partitive
- * `+Gen `: Genitive
- * `+Ine `: Inner Locative cases: Inessive
- * `+Ela `: Elative
- * `+Ill `: Illative
- * `+Ade `: Outer locative cases: Adessive
- * `+Abl `: Ablative
- * `+All `: Allative
- * `+Ess `: Others, semantic, marginal: Essive
- * `+Ins `: Instructive
- * `+Abe `: Abessive
- * `+Tra `: Translative
- * `+Com `: Comitative
-
-The case is next to number and last obligatory analysis in nominals:
-* *taloa:* `talo+N+Sg+Par`
-* *talon:* `talo+N+Sg+Gen`
-* *talossa:* `talo+N+Sg+Ine`
-* *talosta:* `talo+N+Sg+Ela`
-* *taloon:* `talo+N+Sg+Ill`
-* *talolla:* `talo+N+Sg+Ade`
-* *talolta:* `talo+N+Sg+Abl`
-* *talolle:* `talo+N+Sg+All`
-* *talona:* `talo+N+Sg+Ess`
-* *taloin:* `talo+N+Pl+Ins`
-* *talotta:* `talo+N+Sg+Abe`
-* *taloksi:* `talo+N+Sg+Tra`
-* *taloine:* `talo+N+Com`
-
-The analyses of a infinitive short form have lative ending; this is largely
-historical ([VISK § 120](http://scripta.kotus.fi/visk/sisallys.php?p=120)).
-Some adpositions might have same analysis in diachronic analyses.
-
- * `+Lat `: Lative case
-
-The analyses of certain nominals give explicit analysis for accusative case.
-The accusative case has distinctive marker in few pronouns and these are only
-cases that are analysed as accusatives.
-([VISK § 81](http://scripta.kotus.fi/visk/sisallys.php?p=81)).
-Other accusatives have the same case marking as genitive form, and only use
-that analysis in synchronic analyses.
-
- * `+Acc `: Explicit accusative analysis
-
-* *hänet:* `hän+Pron+Pers+Sg+Acc`
-
-Adverbs and adpositions may have some special analyses in diachronic
-analyses.
-Further reading: [VISK §
-371|http://scripta.kotus.fi/visk/sisallys.php?p=371] – 385
-
- * `+Prl `: Adverbial cases: Prolative
- * `+Distr `: Distributive
- * `+Tempr `: Temporal
-
-
-### Possessives
-The analyses of nominals include possessive if present.
-Posessive ending indicates ownership. The possessive can take six possible
-values from singular and plural, first, second and third person references,
-where third person form is always ambiguous over plurality.
-Further reading: [VISK § 95](http://scripta.kotus.fi/visk/sisallys.php?p=95)
- * `+PxSg1 `: Possessives: First singular (mine)
- * `+PxSg2 `: Second singular (yours)
- * `+PxSg3 `: Third singular (his)
- * `+PxPl1 `: First plural (ours)
- * `+PxPl2 `: Second plural (yours)
- * `+PxPl3 `: Third plural (theirs)
- * `+Px3 `: Third ambiguous (his/theirs)
-
- * `+Sg1 `: Verbs: First singular (I)
- * `+Sg2 `: Second singular (your
- * `+Sg3 `: Third singular (he)
- * `+Pl1 `: First plural (we)
- * `+Pl2 `: Second plural (you)
- * `+Pl3 `: Third plural (thy)
-
-* *taloni:* `talo+N+Sg+Nom+PxSg1`
-* *talosi:* `talo+N+Sg+Nom+PxSg2`
-* *talonsa:* `talo+N+Sg+Nom+PxSg3`
-* *talomme:* `talo+N+Sg+Nom+PxPl1`
-* *talonne:* `talo+N+Sg+Nom+PxPl2`
-
-### Compound forms
-In compound analyses, the derived compound form that is not a free morph
-is marked with special analysis.  Some words have forms only appearing in
-compounds.
-Further reading: [VISK § 406](http://scripta.kotus.fi/visk/sisallys.php?p=406)
-+Der/s   Compound form
-
-* *naisien:* `nainen+N+Der/s#ien+N+Sg+Nom` (Eng. # female gum)
-
-### Finite verbs
-All verb analyses contain voice marking. For finite verb forms active voice
-is tied to personal forms and passive voice to non-personal verb endings.
-The voice is also marked in the infinite verb forms.
-Further reading: [VISK § 110](http://scripta.kotus.fi/visk/sisallys.php?p=110)
- * `+Act `: Active voice
- * `+Pss `: Passive voice
-
-It is the first analysis of verb strings:
-* *kudot:* `kutoa+V+Act+Ind+Prs+Sg2`
-
-Finite verb form analyses have a reading for tense. The tense has two values.
-For moods other than indicative the tense is not distinctive in surface form,
-and therefore not marked in the analyses.
-The morphologically distinct forms in Finnish are only past and non-past
-tenses, while other are created syntactically and not marked in morphological
-analyses.
-Further reading: [VISK § 111](http://scripta.kotus.fi/visk/sisallys.php?p=111)
-– 112
- * `+Prs `: Non-past (present)
- * `+Prt `: Past (preterite)
-
-The tense is marked in indicative forms after mood:
-* *kudon:* `kutoa+V+Act+Ind+Prs+Sg1`
-* *kudoin:* `kutoa+V+Act+Ind+Prt+Sg1`
-
-Finite verb form analyses have a reading for mood. Mood has four central
-readings and few archaic and marginal. The mood is marked in analyses for
-all finite forms, even the unmarked indicative.
-Further reading: [VISK § 115](http://scripta.kotus.fi/visk/sisallys.php?p=115)
-– 118
- * `+Ind `: Common moods: Indicative
- * `+Cond `: Conditional
- * `+Pot `: Potential
- * `+Imprt `: Imperative
- * `+Opt `: Archaic moods: Optative
- * `+Eventv `: Eventive
-
-The mood is after voice in the analysis string and in morph order:
-* *kutonen:* `kutoa+V+Act+Pot+Sg1`
-
-Finite verb form analyses have a reading for person. Personal ending of verb
-defines the actors.  The person analysis has seven possible values,
-six for the singular and plural groups of first, second and third person
-forms, and one specifically for passive. The passive personal form is encoded
-as fourth person passive, which had been the common practice in past systems.
-Further reading: [VISK § 106](http://scripta.kotus.fi/visk/sisallys.php?p=106)
-– 107
- * `+Sg1 `: First singular
- * `+Sg2 `: Second singular
- * `+Sg3 `: Third singular
- * `+Pl1 `: First plural
- * `+Pl2 `: Second plural
- * `+Pl3 `: Third plural
-
-The person is the last required analysis for verbs, after the mood:
-* *kudon:* `kutoa+V+Act+Ind+Prs+Sg1`
-* *kudot:* `kutoa+V+Act+Ind+Prs+Sg2`
-* *kutoo:* `kutoa+V+Act+Ind+Prs+Sg3`
-* *kudomme:* `kutoa+V+Act+Ind+Prs+Pl1`
-* *kudotte:* `kutoa+V+Act+Ind+Prs+Pl2`
-* *kutovat:* `kutoa+V+Act+Ind+Prs+Pl3`
-
-### Negation and verbs
-The analyses of verb for the forms that require negation verb have a special
-analysis for it.
- * `+ConNeg `: Connegative form
-
-* *kudo:* `kutoa+V+Ind+Prs+ConNeg`
-
-The suitable negation verbs have sub-analysis that can be matched to negated
-forms on syntactic level.
- * `+Neg `: Negation verb
-
-* *ei:* `ei+V+Neg+Act+Sg3`
-
-### Infinite verb forms
-Infinitive verb forms have infinitive or nominal derivation analyses.
-In traditional grammars the infinitive forms were called I, II, III, IV and V
-infinitive, the modern grammar replaces the first three with A, E and MA
-respectively. The IV infinitive, which has *minen* suffix marker, has been
-re-analysed as derivational and this is reflected in |omorfi|. The V
-infinitive is also assumed to be mainly derivational, but included here for
-reference.
-Further reading: [VISK § 120](http://scripta.kotus.fi/visk/sisallys.php?p=120)
-– 121
-The infinitives have limited nominal inflection.
- * `+InfA `: A infinitive (first)
- * `+InfE `: E infinitive (second)
- * `+InfMa `: MA infinitive (third)
- * `+Der/minen `: minen derivation (fourth)
- * `+Der/maisilla `: maisilla derivation (fifth)
-
-Infinitive analysis comes after voice, followed by nominal analyses:
-* *kutoa:* `kutoa+V+Act+InfA+Sg+Lat`
-* *kutoessa:* `kutoa+V+Act+InfE+Sg+Ine`
-* *kutomatta:* `kutoa+V+Act+InfMa+Sg+Abe`
-* *kutominen:* `kutoa+V+Der/minen+Sg+Nom`
-* *kutomaisillani:* `kutoa+V+Act+Der/maisilla+PxSg1`
-
-### Participles
-Participial verb forms have participle readings. There are 4 participle
-forms. Like infinitives, participles in traditional grammars were named
-I and II where NUT and VA are used in modern grammars.  The agent and
-negation participle have sometimes been considered outside regular
-inflection, but in modern Finnish grammars are alongside other participles
-and so they are included in inflection in omorfi as well. In some grammars
-the NUT and VA participles have been called past and present participles
-respectively, drawing parallels from other languages. The modern grammar
-avoids them as misleading but this description uses them
-Further reading: [VISK § 122](http://scripta.kotus.fi/visk/sisallys.php?p=122)
- * `+PrfPrc `: NUT participle (first, perfect)
- * `+PrsPrc `: VA participle (second, present)
- * `+NegPrc `: Negation participle
- * `+AgPrc `: Agent partiicple
-
-Participle analyses are right after voice, followed by adjectival analyses:
-* *kutonut:* `kutoa+V+Act+PrfPrc+Sg+Nom`
-* *kutova:* `kutoa+V+Act+PrsPrc+Sg+Nom`
-* *kutomaton:* `kutoa+V+NegPrc+Sg+Nom`
-* *kutomani:* `kutoa+V+AgPrc+Sg+Nom+PxSg1`
-
-There are number of implementations that mix up MA infinitives and Agent
-participles, and they share part of the same forms but no semantics and very
-little of syntax.
-
-### Comparation
-Adjective and some adverbial analyses are marked for comparation. The
-non-marked forms are comparative and superlative. For adjectives, comparative
-suffixes precede the nominal inflection.
-c.f. [VISK § 300](http://scripta.kotus.fi/visk/sisallys.php?p=300)
- * `+Comp `: Comparative
- * `+Superl `: Superlative (was +Sup, now standardised)
-
-The comparison analysis occupies derivation spot, after POS:
-* *nopeampi:* `nopea+A+Comp+Sg+Nom`
-* *nopein:* `nopea+A+Sup+Sg+Nom`
-
-### Enclitic focus particles
-All word forms can have clitics which are analysed by their orthography.
-Clitics are suffixes which can attach almost anywhere in the ends of words,
-both verb forms and nominals. They also attach on end of other clitics,
-theoretically infinite chains. In practice it is usual to see at most three
-in one word form. Two clitics have limited use: -s only appears in few
-verb forms and combined to other clitics and -kA only appears with few
-adverbs and negation verb.
-[VISK § 126](http://scripta.kotus.fi/visk/sisallys.php?p=126) – 131
- * `+Foc/han `: -hAn; affirmative etc.
- * `+Foc/kaan `: -kAAn; "neither"
- * `+Foc/kin `: -kin; "also"
- * `+Foc/pa `: -pA; "indeed"
- * `+Foc/s `: -s; polite?
- * `+Foc/ka `: -kA; "nor"
- * `+Qst `: -kO: Question focus
-
-
-### Derivation
-The derivation is not a central feature of this morphology, it is mainly
-used to collect new roots for dictionaries. This is roughly in order of
-perceived productivity already:
- * `+Der/sti `: Common derivations: A→Adv (in A manner)
- * `+Der/ja `: V→N (doer of V)
- * `+Der/inen `: N→A (containing N)
- * `+Der/lainen `: N→A (style of N)
- * `+Der/tar `: N→N (feminine N)
- * `+Der/llinen `: N→N (consisting of N)
- * `+Der/ton `: N→A (without N)
- * `+Der/tse `: N→Adp (via N)
- * `+Der/vs `: A→N (quality of A)
- * `+Der/u `: V→N (act of V)
- * `+Der/ttain `: N→Adv (by amounts of N)
- * `+Der/ttaa `: V→V (make someone do V)
- * `+Der/tattaa `: V→V (make someone do V; "first indirection")
- * `+Der/tatuttaa `: V→V (make someone do V; "second indirection")
- * `+Der/uus `: A→N (A-ness)
- * `+Der/nti `: V→N (regular derivation from all but 2 -da/-dä V)
-
-### Usage
-The analyses of some words and word-forms indicate limitedness of usage.
-This includes common mispellings, archaic words and forms
-and otherwise rare words and forms. Especially, the forms that are in
-parentheses in lexical sources and word-forms that had the usage annotation
-in there have been carried over.
- * `+Err/Orth `: Sub-standard usage
- * `+Err/Hyph		        `: 
- * `+Err/Lex		        `: 
- * `+Err/SpaceCmp	        `: 
-
- * `+Use/Marg `: Marginal
- * `+Use/Rare  `: Rare
- * `+Use/NG   `: Do not generate
- * `+Use/Hyphen `: With hyphens
- * `+Use/NoHyphens `: With hyphens
-
- * **+Use/PMatch** means that the following is only used in the analyser feeding the disambiguator. This is missing.
-
- * `+Use/-PMatch	        `: 
-
- * `+Use/-Spell		        `: 
- * `+Use/Arch		        `: 
- * `+Use/SpellNoSugg        `: 
-
-Usage tags are pushed wherever appropriate:
-* *nallein:* `nalle+N+Pl+Gen+Use/Rare`
-
-###  Homonym tags
-
- * `+v1				        `: 
- * `+v2				        `: 
-
-
-### Dialects
-The informal language use contains different Finnish than the literary
-standard, this is marked as standard dialect (yleispuhekieli):
-common features include
-dropping final vowels, dropping final i components of unstressed diphtongs,
-few other shortenings.
-Other dialects are also sometimes analysed;
-the geographical division has three levels:
-East versus West,
-East containing Savo and South-East (North?)
-West containing North, perä, keski and eteläpohjalaiset, southwest and Häme
-The third level dialect division is traditionally by "town" borders, be
-cautious when adding these though; it's not the main target of this
-mrophology.
-
- * `+Dial `: any unclassified dialect
- * `+Dial/Standard `: standard spoken Finnish
- * `+Dial/East `: Eastern dialects
- * `+Dial/West `: Western dialects
- * `+Dial/Southwest `: South-western dialects
- * `+Dial/Häme `: Tavastian dialects
- * `+Dial/Eteläpohjalaiset `: South Osthrobotnian dialects
- * `+Dial/Keskipohjalaiset `: Middle Osthrobotnian dialects
- * `+Dial/Peräpohjalaiset `: North Osthrobotnian dialects
- * `+Dial/North `: North Finnish dialects
- * `+Dial/Savo `: Savonian dialects
- * `+Dial/Southeast `: South-eastern dialects
-
-
-### Tags for language of unassimilated name
- * `+OLang/ENG		        `: 
- * `+OLang/eng		        `: is a typo, FIX
- * `+OLang/FIN		        `: 
- * `+OLang/NNO		        `: 
- * `+OLang/NOB		        `: 
- * `+OLang/RUS		        `: 
- * `+OLang/SMA		        `: 
- * `+OLang/SME		        `: 
- * `+OLang/SWE		        `: 
- * `+OLang/UND		        `: 
-
-### Others
-The boundaries of compounds that are not lexicalised in the dictionary will
-have compound analyses, the compounds may also have usage tags. The
-compounding analyses concern also syntagmatic melting mishmash.
-+Use/Circ      Compound boundary
-
- * **+Cmp** - Dynamic compound. This tag should always be part
-           of a dynamic compound. It is important for
-           Apertium, and useful in other cases as well.
- * `+Cmp/Hyph		        `: 
- * `+CmpNP/None		        `: 
-
-The word and morpheme boundaries are used to limit the effective range of
-far-reaching rules, such as vowel harmony. The boundaries are marked by
-curly bracketed hashes or underscores. The word boundaries are marked by #,
-The lexical item boundaries by ##, the inflectional morpheme boundaries
-by >, the derivational morpheme boundaries by », and some etymological and
-soft boundaries by _.
- * `## `: Lexical boundary
-* `#` word boundary
-* `>` inflectional morph boundary
-* `»` derivational morph boundary
-* _ weak boundary
-
-
-
-## Flag diacritics
-We have manually optimised the structure of our lexicon using following
-flag diacritics to restrict morhpological combinatorics - only allow compounds
-with verbs if the verb is further derived into a noun again:
- |  @P.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
- |  @D.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
- |  @C.NeedNoun@ | (Dis)allow compounds with verbs unless nominalised
-
- |  @C.ErrOrth@
- |  @D.ErrOrth.ON@
- |  @P.ErrOrth.ON@
-
-
-For languages that allow compounding, the following flag diacritics are needed
-to control position-based compounding restrictions for nominals. Their use is
-handled automatically if combined with +CmpN/xxx tags. If not used, they will
-do no harm.
- |  @P.CmpFrst.FALSE@ | Require that words tagged as such only appear first
- |  @D.CmpPref.TRUE@ | Block such words from entering ENDLEX
- |  @P.CmpPref.FALSE@ | Block these words from making further compounds
- |  @D.CmpLast.TRUE@ | Block such words from entering R
- |  @D.CmpNone.TRUE@ | Combines with the next tag to prohibit compounding
- |  @U.CmpNone.FALSE@ | Combines with the prev tag to prohibit compounding
- |  @P.CmpOnly.TRUE@ | Sets a flag to indicate that the word has passed R
- |  @D.CmpOnly.FALSE@ | Disallow words coming directly from root.
-
-Use the following flag diacritics to control downcasing of derived proper
-nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
-these flags. There exists a ready-made regex that will do the actual down-casing
-given the proper use of these flags.
- |  @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
- |  @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
-
-
-The start of the dictionary `Root`
-The Finnish morphological description starts from any of the parts of speech
-dictionaries, prefix or hyphenated suffix
-
-*Parts-of-speech examples:*
-* *talo:* `talo+N+Sg+Nom` (Eng. # house)
-* *nopea:* `nopea+A+Sg+Nom` (Eng. # fast)
-* *kutoa:* `kutoa+V+Act+InfA+Sg+Lat` (Eng. # to knit)
-* * *
-<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/root.lexc)</small>
 This file documents the [phonology.twolc file](http://github.com/giellalt/lang-fin/blob/main/src/fst/phonology.twolc) 
 
 
@@ -2729,36 +2063,37 @@ This file documents the [phonology.twolc file](http://github.com/giellalt/lang-f
  * "Force hyphen between vowels"   
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/phonology.twolc)</small># Acronym inflection
-Acronyms are inflected using a colon, followed by the inflectional endings,
-which depend on either last letter of the word or inflection class of the
-last word of the abbreviation. The exception to the inflection scheme is the
-singular nominative, which appears without colon.
-Pronouncable abbreviations such as aids, hiv, kela, alko etc. are actually
-counted as regular words with regular inflection patterns.
-c.f. [VISK § 169](http://scripta.kotus.fi/visk/sisallys.php?p=169)
+<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/phonology.twolc)</small># Numeral inflection
+Numeral inflection is like nominal, except that numerals compound in all
+forms which requires great amount of care in the inflection patterns.
 
 
-## Acronyms ending in numbers inflect like the numbers are pronounced.
 
 
 
 
 
 
+ * **LEXICON ARABICCASES**  adds +Arab
 
+ * **LEXICON ARABICCASE**  adds +Arab
 
+ * **LEXICON ARABICCASE0**  adds +Arab
 
 
+ * **LEXICON DIGITCASES**  to distinguish between 0 and oblique
 
+ * **LEXICON DIGITCASE0**
 
 
+ * **LEXICON DIGITCASE**
 
 
 
 
 
 
+ * **LEXICON ROMNUMTAGOBL**
 
 
 
@@ -2767,94 +2102,209 @@ c.f. [VISK § 169](http://scripta.kotus.fi/visk/sisallys.php?p=169)
 
 
 
+# Original file
 
 
+*Numeral nominative back examples:*
+* *kaksi:* `kaksi+Num+Card+Sg+Nom` (Eng. # two)
 
 
+*Numeral nominative front examples:*
+* *yksi:* `yksi+Num+Card+Sg+Nom` (Eng. # one)
 
 
+*Numeral nominative plural back examples:*
+* *kahdet:* `kaksi+Num+Card+Pl+Nom`
 
 
+*Numeral nominative plural front examples:*
+* *yhdet:* `yksi+Num+Card+Pl+Nom`
 
 
+*Numeral weak singular back examples:*
+* *kahden:* `kaksi+Num+Card+Sg+Gen`
+* *kahdella:* `kaksi+Num+Card+Sg+Ade`
+* *kahdelta:* `kaksi+Num+Card+Sg+Abl`
+* *kahdelle:* `kaksi+Num+Card+Sg+All`
+* *kahdessa:* `kaksi+Num+Card+Sg+Ine`
+* *kahdesta:* `kaksi+Num+Card+Sg+Ela`
+* *kahdeksi:* `kaksi+Num+Card+Sg+Tra`
+* *kahdetta:* `kaksi+Num+Card+Sg+Abe`
 
 
+*Numeral weak singular front examples:*
+* *yhden:* `yksi+Num+Card+Sg+Gen`
+* *yhdellä:* `yksi+Num+Card+Sg+Ade`
+* *yhdeltä:* `yksi+Num+Card+Sg+Abl`
+* *yhdelle:* `yksi+Num+Card+Sg+All`
+* *yhdessä:* `yksi+Num+Card+Sg+Ine`
+* *yhdestä:* `yksi+Num+Card+Sg+Ela`
+* *yhdeksi:* `yksi+Num+Card+Sg+Tra`
+* *yhdettä:* `yksi+Num+Card+Sg+Abe`
 
 
+*Numeral strong singular back examples:*
+* *kahtena:* `kaksi+Num+Card+Sg+Ess`
 
 
+*Numeral strong singular front examples:*
+* *yhtenä:* `yksi+Num+Card+Sg+Ess`
 
 
+*Numeral weak plural back examples:*
+* *kaksilla:* `kaksi+Num+Card+Pl+Ade`
+* *kaksilta:* `kaksi+Num+Card+Pl+Abl`
+* *kaksille:* `kaksi+Num+Card+Pl+All`
+* *kaksissa:* `kaksi+Num+Card+Pl+Ine`
+* *kaksista:* `kaksi+Num+Card+Pl+Ela`
+* *kaksiksi:* `kaksi+Num+Card+Pl+Tra`
+* *kaksitta:* `kaksi+Num+Card+Pl+Abe`
 
 
+*Numeral weak plural front examples:*
+* *yksillä:* `yksi+Num+Card+Pl+Ade`
+* *yksiltä:* `yksi+Num+Card+Pl+Abl`
+* *yksille:* `yksi+Num+Card+Pl+All`
+* *yksissä:* `yksi+Num+Card+Pl+Ine`
+* *yksistä:* `yksi+Num+Card+Pl+Ela`
+* *yksiksi:* `yksi+Num+Card+Pl+Tra`
+* *yksittä:* `yksi+Num+Card+Pl+Abe`
 
 
+*Numeral weak plural back strong examples:*
+* *kaksina:* `kaksi+Num+Card+Pl+Ess`
+* *kaksine:* `kaksi+Num+Card+Com`
 
 
+*Numeral weak plural front strong examples:*
+* *yksinä:* `yksi+Num+Card+Pl+Ess`
+* *yksine:* `yksi+Num+Card+Com`
 
 
 
+*Numeral singular partitive a examples:*
+* *kahdeksaa:* `kahdeksan+Num+Card+Sg+Par` (Eng. # eight)
 
 
+*Numeral singular partitive ä examples:*
+* *neljää:* `neljä+Num+Card+Sg+Par` (Eng. # four)
 
 
+*Numeral singular partitive a poss aan examples:*
+* *kolmea:* `kolme+Num+Card+Sg+Par` (Eng. # three)
 
 
+*Numeral singular partitive ta examples:*
+* *kuutta:* `kuusi+Num+Card+Sg+Par` (Eng. # six)
 
 
+*Numeral singular partitive tä examples:*
+* *viittä:* `viisi+Num+Card+Sg+Par` (Eng. # five)
 
 
+*Numeral singular illative an examples:*
+* *kahdeksaan:* `kahdeksan+Num+Card+Sg+Ill`
 
 
+*Numeral singular illative en back examples:*
+* *kolmeen:* `kolme+Num+Card+Sg+Ill`
 
 
+*Numeral singular illative en front examples:*
+* *viiteen:* `viisi+Num+Card+Sg+Ill`
 
 
+*Numeral singular illative in back examples:*
+* *miljardiin:* `miljardi+Num+Card+Sg+Ill` (Eng. # billion)
 
 
+*Numeral singular illative än examples:*
+* *neljään:* `neljä+Num+Card+Sg+Ill`
 
 
+*Numeral plural partitive ia examples:*
+* *kaksia:* `kaksi+Num+Card+Pl+Par`
 
 
+*Numeral plural partitive iä examples:*
+* *neljiä:* `neljä+Num+Card+Pl+Par`
 
 
+*Numeral plural partitive ja examples:*
+* *miljardeja:* `miljardi+Num+Card+Pl+Par`
 
 
+*Numeral plural genitive ien back examples:*
+* *kaksien:* `kaksi+Num+Card+Pl+Gen` (Eng. NUM_BACK_CLIT_OPT)
 
 
+*Numeral plural genitive ien front examples:*
+* *yksien:* `yksi+Num+Card+Pl+Gen` (Eng. NUM_BACK_CLIT_OPT)
 
 
+*Numeral plural genitive jen back examples:*
+* *satojen:* `sata+Num+Card+Pl+Gen` (Eng. # hundred NUM_BACK_CLIT_OPT)
 
 
+*Numeral plural genitive ten back examples:*
+* *kuutten:* `kuusi+Num+Card+Pl+Gen` (Eng. NUM_BACK_CLIT_OPT)
 
 
+*Numeral plural genitive ten front examples:*
+* *viitten:* `viisi+Num+Card+Pl+Gen` (Eng. NUM_BACK_CLIT_OPT)
 
 
+*Numeral plural genitive in back examples:*
+* *yhdeksäin:* `yhdeksän+Num+Card+Pl+Gen+Use/Rare` (Eng. NUM_BACK_CLIT_OPT)
 
 
+*Numeral plural genitive in front examples:*
+* *neljäin:* `neljä+Num+Card+Pl+Gen+Use/Rare` (Eng. NUM_BACK_CLIT_OPT)
 
 
+*Numeral plural illaive ihin bavk examples:*
+* *miljardeihin:* `miljardi+Num+Card+Pl+Ill`
 
 
+*Numeral plural illaive iin back examples:*
+* *kaksiin:* `kaksi+Num+Card+Pl+Ill`
 
 
+*Numeral plural illaive iin front examples:*
+* *yksiin:* `yksi+Num+Card+Pl+Ill`
 
 
 
+*Numeral possessive back examples:*
+* *kahteni:* `kaksi+Num+Card+Sg+Nom+PxSg1`
 
 
+*Numeral possessive front examples:*
+* *yhteni:* `yksi+Num+Card+Sg+Nom+PxSg1`
 
 
+*Numeral possessive back aan examples:*
+* *kolmeaan:* `kolme+Num+Card+Sg+Par+PxSg3`
 
 
+*Numeral possessive back eenback examples:*
+* *kahdekseen:* `kaksi+Num+Card+Sg+Tra+PxSg3`
 
 
+*Numeral possessive back een front examples:*
+* *neljäkseen:* `neljä+Num+Card+Sg+Tra+PxSg3`
 
 
+*Numeral possessive back ään examples:*
+* *viittään:* `viisi+Num+Card+Sg+Par+PxSg3`
 
 
+*Numeral clitic back examples:*
+* *kaksihan:* `kaksi+Num+Card+Sg+Nom+Foc/han`
 
 
+*Numeral clitic front examples:*
+* *yksihän:* `yksi+Num+Card+Sg+Nom+Foc/han`
 
 
 
@@ -2872,154 +2322,1722 @@ c.f. [VISK § 169](http://scripta.kotus.fi/visk/sisallys.php?p=169)
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/numerals.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/affixes/numerals.lexc)</small># Verb inflection and derivation
 
+The verbs' conjugation includes voice (in Finnish grammars also verbal 
+genus),  tense/mood (tempus/modus), personal endings and negation marker
+The verbs also have productive derivations to defective nouns as
+infinitives, and to adjectives as participles, which are considered to be 
+part of inflection and thus included in most versions 
+([VISK § 105](http://scripta.kotus.fi/visk/sisalto.php?p?105)).
+The morphology of participles and historical 4th infinitive is further
+detailed in section Deverbal nouns'  morphology.
+The analysis strings of verb are not as systematic as nouns,
+as many categories collapse together in forms, e.g. the tense and mood
+are only distinct with indicative past and non-past, otherwise mood implies
+tense in semantic sense.
 
 
 
+## Verb stem variation
+Verbs have no allomorphic variation per se, except for some assimilation
+and variation of ð forms, but the stem variation is the same
+as in nouns. The examples for verb stems are given for each class:
+A infinitive's lative, e infinitive's inessive, indicative present 1st 
+singular, indicative present 3rd singular, indicative past 1st singular, 
+indicative past 3rd singular, conditional past 3rd singular, 
+imperative 2nd plural, potential 1st singular, present passive, 
+past passive, nut participle passive
 
+### Verb stems without stem variation
 
+The u stems have no stem variation:
 
+*Verbs 52u examples:*
+* *kaunistua:* `kaunistua+V+Act+InfA+Sg+Lat` (Eng. # beautify)
+* *kaunistuessa:* `kaunistua+V+Act+InfE+Sg+Ine`
+* *kaunistun:* `kaunistua+V+Act+Ind+Prs+Sg1`
+* *kaunistuu:* `kaunistua+V+Act+Ind+Prs+Sg3`
+* *kaunistuin:* `kaunistua+V+Act+Ind+Prt+Sg1`
+* *kaunistui:* `kaunistua+V+Act+Ind+Prt+Sg3`
+* *kaunistuisi:* `kaunistua+V+Act+Cond+Sg3`
+* *kaunistukaa:* `kaunistua+V+Act+Imprt+Pl2`
+* *kaunistunen:* `kaunistua+V+Act+Pot+Sg1`
+* *kaunistutaan:* `kaunistua+V+Pss+Ind+Prs+Pe4`
+* *kaunistuttiin:* `kaunistua+V+Pss+Ind+Prt+Pe4`
+* *kaunistuttu:* `kaunistua+V+Pss+PrfPrc+Sg+Nom`
+* *kaunistuminen:* `kaunistua+V+Der/minen+Sg+Nom`
 
+The o stems have no stem variation:
 
+*Verbs 52o examples:*
+* *punoa:* `punoa+V+Act+InfA+Sg+Lat` (Eng. # bundle?)
+* *punoessa:* `punoa+V+Act+InfE+Sg+Ine`
+* *punon:* `punoa+V+Act+Ind+Prs+Sg1`
+* *punoo:* `punoa+V+Act+Ind+Prs+Sg3`
+* *punoin:* `punoa+V+Act+Ind+Prt+Sg1`
+* *punoi:* `punoa+V+Act+Ind+Prt+Sg3`
+* *punoisi:* `punoa+V+Act+Cond+Sg3`
+* *punokaa:* `punoa+V+Act+Imprt+Pl2`
+* *punonen:* `punoa+V+Act+Pot+Sg1`
+* *punotaan:* `punoa+V+Pss+Ind+Prs+Pe4`
+* *punottiin:* `punoa+V+Pss+Ind+Prt+Pe4`
+* *punottu:* `punoa+V+Pss+PrfPrc+Sg+Nom`
+* *punominen:* `punoa+V+Der/minen+Sg+Nom`
 
+The ö stems have no stem variation:
 
+*Verbs 52ö examples:*
+* *säilöä:* `säilöä+V+Act+InfA+Sg+Lat` (Eng. # store)
+* *säilöessä:* `säilöä+V+Act+InfE+Sg+Ine`
+* *säilön:* `säilöä+V+Act+Ind+Prs+Sg1`
+* *säilöö:* `säilöä+V+Act+Ind+Prs+Sg3`
+* *säilöin:* `säilöä+V+Act+Ind+Prt+Sg1`
+* *säilöi:* `säilöä+V+Act+Ind+Prt+Sg3`
+* *säilöisi:* `säilöä+V+Act+Cond+Sg3`
+* *säilökää:* `säilöä+V+Act+Imprt+Pl2`
+* *säilönen:* `säilöä+V+Act+Pot+Sg1`
+* *säilötään:* `säilöä+V+Pss+Ind+Prs+Pe4`
+* *säilöttiin:* `säilöä+V+Pss+Ind+Prt+Pe4`
+* *säilötty:* `säilöä+V+Pss+PrfPrc+Sg+Nom`
+* *säilöminen:* `säilöä+V+Der/minen+Sg+Nom`
 
+The y stems have no stem variation:
 
+*Verbs 52y examples:*
+* *ällistyä:* `ällistyä+V+Act+InfA+Sg+Lat` (Eng. # amaze)
+* *ällistyessä:* `ällistyä+V+Act+InfE+Sg+Ine`
+* *ällistyn:* `ällistyä+V+Act+Ind+Prs+Sg1`
+* *ällistyy:* `ällistyä+V+Act+Ind+Prs+Sg3`
+* *ällistyin:* `ällistyä+V+Act+Ind+Prt+Sg1`
+* *ällistyi:* `ällistyä+V+Act+Ind+Prt+Sg3`
+* *ällistyisi:* `ällistyä+V+Act+Cond+Sg3`
+* *ällistykää:* `ällistyä+V+Act+Imprt+Pl2`
+* *ällistynen:* `ällistyä+V+Act+Pot+Sg1`
+* *ällistytään:* `ällistyä+V+Pss+Ind+Prs+Pe4`
+* *ällistyttiin:* `ällistyä+V+Pss+Ind+Prt+Pe4`
+* *ällistytty:* `ällistyä+V+Pss+PrfPrc+Sg+Nom`
 
+### Verb stems with only gradation
 
 
+*Verbs 52 k~0 o examples:*
+* *haukkoa:* `haukkoa+V+Act+InfA+Sg+Lat` (Eng. # gasp)
 
 
+*Verbs 52 k~0 u examples:*
+* *nuokkua:* `nuokkua+V+Act+InfA+Sg+Lat` (Eng. # sleep)
 
 
+*Verbs 52 k~0 y examples:*
+* *kärkkyä:* `kärkkyä+V+Act+InfA+Sg+Lat` (Eng. # steal a base)
 
 
+*Verbs 52 p~0 o examples:*
+* *harppoa:* `harppoa+V+Act+InfA+Sg+Lat` (Eng. # walk)
 
 
+*Verbs 52 p~0 u examples:*
+* *loppua:* `loppua+V+Act+InfA+Sg+Lat` (Eng. # end)
 
 
+*Verbs 52 p~0 y examples:*
+* *leppyä:* `leppyä+V+Act+InfA+Sg+Lat` (Eng. # settle)
 
 
+*Verbs 52 t~0 y examples:*
+* *kivettyä:* `kivettyä+V+Act+InfA+Sg+Lat` (Eng. # stone)
 
 
+*Verbs 52 t~0 o examples:*
+* *viittoa:* `viittoa+V+Act+InfA+Sg+Lat` (Eng. # sign)
 
 
+*Verbs 52 t~0 u examples:*
+* *hermottua:* `hermottua+V+Act+InfA+Sg+Lat` (Eng. # nerve)
 
 
+*Verbs 52 k~0’ y examples:*
+* *mäikyä:* `mäikyä+V+Act+InfA+Sg+Lat` (Eng. # bong)
 
 
+*Verbs 52 k~0’ o examples:*
+* *takoa:* `takoa+V+Act+InfA+Sg+Lat` (Eng. # hammer)
 
 
+*Verbs 52 k~0’ u examples:*
+* *maukua:* `maukua+V+Act+InfA+Sg+Lat` (Eng. # gong)
 
 
+*Verbs 52 p~v y examples:*
+* *elpyä:* `elpyä+V+Act+InfA+Sg+Lat` (Eng. # rescuscitate)
 
 
+*Verbs 52 p~v u examples:*
+* *hiipua:* `hiipua+V+Act+InfA+Sg+Lat` (Eng. # fizzle)
 
 
+*Verbs 52 p~v o examples:*
+* *silpoa:* `silpoa+V+Act+InfA+Sg+Lat` (Eng. # slash)
 
 
+*Verbs 52 t~d o examples:*
+* *kietoa:* `kietoa+V+Act+InfA+Sg+Lat` (Eng. # entangle)
 
 
+*Verbs 52 t~d y examples:*
+* *siliytyä:* `siliytyä+V+Act+InfA+Sg+Lat` (Eng. # iron)
 
 
+*Verbs 52 t~d u examples:*
+* *rohtua:* `rohtua+V+Act+InfA+Sg+Lat` (Eng. # scar)
 
 
+*Verbs 52 k~g u examples:*
+* *vinkua:* `vinkua+V+Act+InfA+Sg+Lat` (Eng. # squeal)
 
 
+*Verbs 52 k~g o examples:*
+* *penkoa:* `penkoa+V+Act+InfA+Sg+Lat` (Eng. # dig)
 
 
+*Verbs 52 p~m o examples:*
+* *tempoa:* `tempoa+V+Act+InfA+Sg+Lat` (Eng. # tuck)
 
 
+*Verbs 52 p~m u examples:*
+* *ampua:* `ampua+V+Act+InfA+Sg+Lat` (Eng. # shoot)
 
 
+*Verbs 52 t~l y examples:*
+* *mieltyä:* `mieltyä+V+Act+InfA+Sg+Lat` (Eng. # like)
 
 
+*Verbs 52 t~l u examples:*
+* *humaltua:* `humaltua+V+Act+InfA+Sg+Lat` (Eng. # intoxicate)
 
 
+*Verbs 52 t~n u examples:*
+* *vakaantua:* `vakaantua+V+Act+InfA+Sg+Lat` (Eng. # stabilise)
 
 
+*Verbs 52 t~n y examples:*
+* *tyhjentyä:* `tyhjentyä+V+Act+InfA+Sg+Lat` (Eng. # empty)
 
 
+*Verbs 52 t~r y examples:*
+* *pyörtyä:* `pyörtyä+V+Act+InfA+Sg+Lat` (Eng. # faint)
 
 
+*Verbs 52 t~r o examples:*
+* *vartoa:* `vartoa+V+Act+InfA+Sg+Lat` (Eng. # wait)
 
 
+*Verbs 52 t~r u examples:*
+* *pusertua:* `pusertua+V+Act+InfA+Sg+Lat` (Eng. # squeeze)
 
+### Verbs with -a stems
 
 
 
+*Verbs 53 back examples:*
+* *mutristaa:* `mutristaa+V+Act+InfA+Sg+Lat` (Eng. # ?)
 
 
+*Verbs 53 front examples:*
+* *kivistää:* `kivistää+V+Act+InfA+Sg+Lat` (Eng. # hurt)
 
 
+*Verbs 53 front t~0 examples:*
+* *räpsyttää:* `räpsyttää+V+Act+InfA+Sg+Lat` (Eng. # blink)
 
 
+*Verbs 53 back t~0 examples:*
+* *vieroittaa:* `vieroittaa+V+Act+InfA+Sg+Lat`
 
 
 
+*Verbs 53 back k~0 examples:*
+* *purkaa:* `purkaa+V+Act+InfA+Sg+Lat` (Eng. # tear)
 
 
+*Verbs 53 front t~d examples:*
+* *kärähtää:* `kärähtää+V+Act+InfA+Sg+Lat` (Eng. # fry)
 
 
+*Verbs 53 back t~d examples:*
+* *mojahtaa:* `mojahtaa+V+Act+InfA+Sg+Lat` (Eng. # smack)
 
 
+*Verbs 53 front t~n examples:*
+* *kyntää:* `kyntää+V+Act+InfA+Sg+Lat` (Eng. # plow)
 
 
+*Verbs 53 back t~r examples:*
+* *sortaa:* `sortaa+V+Act+InfA+Sg+Lat` (Eng. # crush)
 
+Some of the a stems have t:s in past stems by ti>si variation.
 
 
+*Verbs 54 back examples:*
+* *huutaa:* `huutaa+V+Act+InfA+Sg+Lat` (Eng. # yell)
 
 
+*Verbs 54 front examples:*
+* *pyytää:* `pyytää+V+Act+InfA+Sg+Lat` (Eng. # aks)
 
 
+*Verbs 54 back t~l examples:*
+* *sivaltaa:* `sivaltaa+V+Act+InfA+Sg+Lat` (Eng. # slash)
 
 
+*Verbs 54 front t~l examples:*
+* *viheltää:* `viheltää+V+Act+InfA+Sg+Lat` (Eng. # whistle)
 
 
+*Verbs 54 front t~n examples:*
+* *hiventää:* `hiventää+V+Act+InfA+Sg+Lat`
 
 
+*Verbs 54 back t~n examples:*
+* *huonontaa:* `huonontaa+V+Act+InfA+Sg+Lat` (Eng. # worsen)
 
 
+*Verbs 54 back t~r examples:*
+* *kuhertaa:* `kuhertaa+V+Act+InfA+Sg+Lat` (Eng. # snuggle)
 
 
+*Verbs 54 front t~r examples:*
+* *näpertää:* `näpertää+V+Act+InfA+Sg+Lat` (Eng. # twiddle)
 
+In some cases t:s variation is optionally alongside the regular gradation:
 
 
 
+*Verbs 55 front examples:*
+* *kiitää:* `kiitää+V+Act+InfA+Sg+Lat` (Eng. # rush)
 
 
+*Verbs 55 back examples:*
+* *joutaa:* `joutaa+V+Act+InfA+Sg+Lat`
 
 
+*Verbs 55 front t~l examples:*
+* *yltää:* `yltää+V+Act+InfA+Sg+Lat` (Eng. # reach)
 
 
+*Verbs 55 front t~n examples:*
+* *entää:* `entää+V+Act+InfA+Sg+Lat`
 
+Other a stems undergo a:o variation
 
 
+*Verbs 56 back examples:*
+* *kasvaa:* `kasvaa+V+Act+InfA+Sg+Lat` (Eng. # grow)
 
 
+*Verbs 56 back k~0 examples:*
+* *jakaa:* `jakaa+V+Act+InfA+Sg+Lat` (Eng. # share)
 
 
+*Verbs 56 back p~0 examples:*
+* *tappaa:* `tappaa+V+Act+InfA+Sg+Lat` (Eng. # kill)
 
 
+*Verbs 56 back t~0 examples:*
+* *auttaa:* `auttaa+V+Act+InfA+Sg+Lat` (Eng. # help)
 
 
+*Verbs 56 back t~d examples:*
+* *sataa:* `sataa+V+Act+InfA+Sg+Lat` (Eng. # rain)
 
 
+*Verbs 56 back t~n examples:*
+* *kantaa:* `kantaa+V+Act+InfA+Sg+Lat` (Eng. # carry)
 
+In some of the a:o variations the t:s variant is also possible.
 
 
+*Verbs 57 back examples:*
+* *kaataa:* `kaataa+V+Act+InfA+Sg+Lat` (Eng. # pour)
 
 
+*Verbs 57 back t~r examples:*
+* *saartaa:* `saartaa+V+Act+InfA+Sg+Lat` (Eng. # surround)
 
+### Verbs with e stems
 
 
+*Verbs 58 front examples:*
+* *kytkeä:* `kytkeä+V+Act+InfA+Sg+Lat` (Eng. # switch)
 
 
+*Verbs 58 back examples:*
+* *sotkea:* `sotkea+V+Act+InfA+Sg+Lat` (Eng. # mess)
 
 
+*Verbs 58 back k~0 examples:*
+* *pukea:* `pukea+V+Act+InfA+Sg+Lat` (Eng. # dress)
 
 
+*Verbs 58 front p~v examples:*
+* *rypeä:* `rypeä+V+Act+InfA+Sg+Lat` (Eng. # bathe)
 
+
+*Verbs 58 front t~d examples:*
+* *päteä:* `päteä+V+Act+InfA+Sg+Lat` (Eng. # nitpick)
+
+
+*Verbs 58 back t~d examples:*
+* *kutea:* `kutea+V+Act+InfA+Sg+Lat` (Eng. # breed)
+
+
+*Verbs 58 back k~g examples:*
+* *tunkea:* `tunkea+V+Act+InfA+Sg+Lat` (Eng. # push)
+
+
+*Verbs 58 back k~j examples:*
+* *polkea:* `polkea+V+Act+InfA+Sg+Lat` (Eng. # stomp)
+
+
+*Verbs 58 front k~j examples:*
+* *särkeä:* `särkeä+V+Act+InfA+Sg+Lat` (Eng. # break)
+
+Some of the e stems allow for optional t:s variation in past form.
+
+
+*Verbs 59 examples:*
+* *tuntea:* `tuntea+V+Act+InfA+Sg+Lat` (Eng. # feel)
+
+The rare ht:ks kind of variation is also possible.
+
+
+*Verbs 60 examples:*
+* *lähteä:* `lähteä+V+Act+InfA+Sg+Lat` (Eng. # go)
+
+### Verbs with i stems
+
+
+*Verbs 61 back examples:*
+* *kosia:* `kosia+V+Act+InfA+Sg+Lat` (Eng. # propose)
+
+
+*Verbs 61 front examples:*
+* *ryskiä:* `ryskiä+V+Act+InfA+Sg+Lat` (Eng. # crash)
+
+
+*Verbs 61 back k~0 examples:*
+* *kukkia:* `kukkia+V+Act+InfA+Sg+Lat` (Eng. # bloom)
+
+
+*Verbs 61 front k~0 examples:*
+* *sörkkiä:* `sörkkiä+V+Act+InfA+Sg+Lat` (Eng. # meddle)
+
+
+*Verbs 61 back p~0 examples:*
+* *kalppia:* `kalppia+V+Act+InfA+Sg+Lat`
+
+
+*Verbs 61 front p~0 examples:*
+* *hyppiä:* `hyppiä+V+Act+InfA+Sg+Lat` (Eng. # jump)
+
+
+*Verbs 61 back t~0 examples:*
+* *moittia:* `moittia+V+Act+InfA+Sg+Lat`
+
+
+*Verbs 61 front t~0 examples:*
+* *miettiä:* `miettiä+V+Act+InfA+Sg+Lat` (Eng. # ponder)
+
+
+*Verbs 61 front p~v examples:*
+* *riipiä:* `riipiä+V+Act+InfA+Sg+Lat` (Eng. # pull)
+
+
+*Verbs 61 back p~v examples:*
+* *raapia:* `raapia+V+Act+InfA+Sg+Lat` (Eng. # scratch)
+
+
+*Verbs 61 back t~d examples:*
+* *ahnehtia:* `ahnehtia+V+Act+InfA+Sg+Lat` (Eng. # greed)
+
+
+*Verbs 61 front t~d examples:*
+* *ehtiä:* `ehtiä+V+Act+InfA+Sg+Lat`
+
+
+*Verbs 61 front k~g examples:*
+* *mönkiä:* `mönkiä+V+Act+InfA+Sg+Lat` (Eng. # crawl)
+
+
+*Verbs 61 back k~g examples:*
+* *onkia:* `onkia+V+Act+InfA+Sg+Lat` (Eng. # fish)
+
+
+*Verbs 61 frontp~m examples:*
+* *tympiä:* `tympiä+V+Act+InfA+Sg+Lat` (Eng. # bore)
+
+
+*Verbs 61 back t~n examples:*
+* *kontia:* `kontia+V+Act+InfA+Sg+Lat` (Eng. # mole)
+
+
+*Verbs 61 back k~j examples:*
+* *hylkiä:* `hylkiä+V+Act+InfA+Sg+Lat` (Eng. # reject)
+
+### Verbs with long vowel stem
+These verbs also have da variant of a infinitive forms.
+
+
+*Verbs 62 back examples:*
+* *kopioida:* `kopioida+V+Act+InfA+Sg+Lat` (Eng. # copy)
+
+
+*Verbs 62 front examples:*
+* *öykkäröidä:* `öykkäröidä+V+Act+InfA+Sg+Lat` (Eng. # bully)
+
+
+*Verbs 63 a examples:*
+* *saada:* `saada+V+Act+InfA+Sg+Lat` (Eng. # get)
+
+
+*Verbs 63 y examples:*
+* *myydä:* `myydä+V+Act+InfA+Sg+Lat` (Eng. # sell)
+
+
+*Verbs 63 ä examples:*
+* *jäädä:* `jäädä+V+Act+InfA+Sg+Lat` (Eng. # stay)
+
+### Monosyllabic verbs with widening diphthong
+Widening diphthongs are simplified before past and conditional suffix i's
+by removal of first component. 
+
+
+*Verbs 64 ie examples:*
+* *viedä:* `viedä+V+Act+InfA+Sg+Lat` (Eng. # take)
+
+
+*Verbs 64 uo examples:*
+* *tuoda:* `tuoda+V+Act+InfA+Sg+Lat` (Eng. # bring)
+
+
+*Verbs 64 yö examples:*
+* *syödä:* `syödä+V+Act+InfA+Sg+Lat` (Eng. # eat)
+
+In past and conditional forms of käydä, the glide before suffix is marked
+even in normative orthography.
+
+
+*Verbs 65 examples:*
+* *käydä:* `käydä+V+Act+InfA+Sg+Lat` (Eng. # visit, go for)
+
+### Verbs with consonant stems
+
+Verbs with momentane derivation are common consonant stems.
+
+
+*Verbs 66 back examples:*
+* *marista:* `marista+V+Act+InfA+Sg+Lat` (Eng. # whine)
+
+
+*Verbs 66 front examples:*
+* *äristä:* `äristä+V+Act+InfA+Sg+Lat` (Eng. # arr)
+
+
+
+*Verbs 66 front v p examples:*
+* *häväistä:* `häväistä+V+Act+InfA+Sg+Lat` (Eng. # sacrilege)
+
+
+*Verbs 66 back v~p examples:*
+* *vavista:* `vavista+V+Act+InfA+Sg+Lat` (Eng. # shake)
+
+
+
+*Verbs 66 back k~g examples:*
+* *rangaista:* `rangaista+V+Act+InfA+Sg+Lat` (Eng. # punish)
+
+### Verbs with n, r, l, s stems
+Notably, the a infinitive forms d assimilates to preceding consonant.
+
+
+*Verbs 67 back r examples:*
+* *surra:* `surra+V+Act+InfA+Sg+Lat` (Eng. # meh)
+
+
+
+
+*Verbs 67 front r examples:*
+* *pierrä:* `pierrä+V+Act+InfA+Sg+Lat` (Eng. # fart)
+
+
+*Verbs 67 back n examples:*
+* *panna:* `panna+V+Act+InfA+Sg+Lat` (Eng. # put)
+
+
+*Verbs 67 front n examples:*
+* *mennä:* `mennä+V+Act+InfA+Sg+Lat` (Eng. # go)
+
+Frequentative derivations are most common source of l stemmed verbs.
+
+
+*Verbs 67 back l examples:*
+* *vastailla:* `vastailla+V+Act+InfA+Sg+Lat` (Eng. # answer)
+
+
+*Verbs 67 frot l examples:*
+* *äksyillä:* `äksyillä+V+Act+InfA+Sg+Lat`
+
+
+*Verbs 67 front l 0k examples:*
+* *leikellä:* `leikellä+V+Act+InfA+Sg+Lat` (Eng. # cut)
+
+
+*Verbs 67 back l 0k examples:*
+* *nakella:* `nakella+V+Act+InfA+Sg+Lat` (Eng. # throw)
+
+
+*Verbs 67 back l 0p examples:*
+* *tapella:* `tapella+V+Act+InfA+Sg+Lat` (Eng. # fight)
+
+
+*Verbs 67 front l 0p examples:*
+* *hypellä:* `hypellä+V+Act+InfA+Sg+Lat` (Eng. # jump)
+
+
+*Verbs 67 back l 0t examples:*
+* *sulatella:* `sulatella+V+Act+InfA+Sg+Lat` (Eng. # melt)
+
+
+*Verbs 67 front l 0t examples:*
+* *herätellä:* `herätellä+V+Act+InfA+Sg+Lat` (Eng. # wake)
+
+
+*Verbs 67 back l d~t examples:*
+* *tipahdella:* `tipahdella+V+Act+InfA+Sg+Lat` (Eng. # drop)
+
+
+*Verbs 67 front l d~t examples:*
+* *säpsähdellä:* `säpsähdellä+V+Act+InfA+Sg+Lat` (Eng. # wake)
+
+
+*Verbs 67 back l m~p examples:*
+* *ommella:* `ommella+V+Act+InfA+Sg+Lat` (Eng. # sow)
+
+
+*Verbs 67 back l l~t examples:*
+* *vaellella:* `vaellella+V+Act+InfA+Sg+Lat` (Eng. # wander)
+
+
+*Verbs 67 frpnt l l~t examples:*
+* *kiillellä:* `kiillellä+V+Act+InfA+Sg+Lat` (Eng. # sparkle)
+
+
+*Verbs 67 back l n~t examples:*
+* *komennella:* `komennella+V+Act+InfA+Sg+Lat` (Eng. # boss)
+
+
+*Verbs 67 front l n~t examples:*
+* *käännellä:* `käännellä+V+Act+InfA+Sg+Lat` (Eng. # turn)
+
+
+*Verbs 67 back l r~t examples:*
+* *nakerrella:* `nakerrella+V+Act+InfA+Sg+Lat` (Eng. # bite)
+
+
+*Verbs 67 front l r~t examples:*
+* *kiherrellä:* `kiherrellä+V+Act+InfA+Sg+Lat` (Eng. # giggle)
+
+### tse stuff
+Some verbs have possible optional heteroclitic indicative stems:
+
+
+*Verbs 68 front examples:*
+* *isännöidä:* `isännöidä+V+Act+InfA+Sg+Lat` (Eng. # host)
+
+
+*Verbs 68 back examples:*
+* *mellakoida:* `mellakoida+V+Act+InfA+Sg+Lat` (Eng. # riot)
+
+In these stems the tse formed stem is only one.
+
+
+*Verbs 69 back examples:*
+* *palkita:* `palkita+V+Act+InfA+Sg+Lat` (Eng. # reward)
+
+
+*Verbs 69 front examples:*
+* *merkitä:* `merkitä+V+Act+InfA+Sg+Lat` (Eng. # mark)
+
+Few words have special consonant cluster simplification for ks forms.
+
+
+*Verbs 70 back examples:*
+* *juosta:* `juosta+V+Act+InfA+Sg+Lat` (Eng. # run)
+
+
+*Verbs 70 front examples:*
+* *piestä:* `piestä+V+Act+InfA+Sg+Lat` (Eng. # spank)
+
+
+nähdä has special h:k variation.
+
+
+*Verbs 71 examples:*
+* *nähdä:* `nähdä+V+Act+InfA+Sg+Lat` (Eng. # see)
+
+### Verbs with -ne- stems
+
+
+*Verbs 72 back examples:*
+* *karheta:* `karheta+V+Act+InfA+Sg+Lat`
+
+
+*Verbs 72 rfont examples:*
+* *vähetä:* `vähetä+V+Act+InfA+Sg+Lat` (Eng. # lessen)
+
+
+*Verbs 72 back 0~k examples:*
+* *niuketa:* `niuketa+V+Act+InfA+Sg+Lat` (Eng. # tighten)
+
+
+*Verbs 72 front 0~k examples:*
+* *jyrketä:* `jyrketä+V+Act+InfA+Sg+Lat`
+
+
+*Verbs 72 back 0~p examples:*
+* *hapata:* `hapata+V+Act+InfA+Sg+Lat` (Eng. # ensour)
+
+
+*Verbs 72 front 0~p examples:*
+* *supeta:* `supeta+V+Act+InfA+Sg+Lat` (Eng. # tighten)
+
+
+*Verbs 72 front 0~p examples:*
+* *tylpetä:* `tylpetä+V+Act+InfA+Sg+Lat` (Eng. # dull)
+
+
+*Verbs 72 back 0~p o examples:*
+* *helpota:* `helpota+V+Act+InfA+Sg+Lat` (Eng. # ease)
+
+
+*Verbs 72 back 0~t examples:*
+* *loitota:* `loitota+V+Act+InfA+Sg+Lat` (Eng. # distance)
+
+
+*Verbs 72 back 0~k o examples:*
+* *ulota:* `ulota+V+Act+InfA+Sg+Lat` (Eng. # outen)
+
+
+*Verbs 72 back v~p examples:*
+* *kaveta:* `kaveta+V+Act+InfA+Sg+Lat` (Eng. # tighten)
+
+
+*Verbs 72 front d~t examples:*
+* *mädätä:* `mädätä+V+Act+InfA+Sg+Lat` (Eng. # rot)
+
+
+*Verbs 72 back d~t examples:*
+* *leudota:* `leudota+V+Act+InfA+Sg+Lat`
+
+
+*Verbs 72 front d~t e examples:*
+* *pidetä:* `pidetä+V+Act+InfA+Sg+Lat` (Eng. # lengthen)
+
+
+*Verbs 72 front m~p  examples:*
+* *lämmetä:* `lämmetä+V+Act+InfA+Sg+Lat` (Eng. # warm)
+
+
+*Verbs 72 front n~t examples:*
+* *kiinnetä:* `kiinnetä+V+Act+InfA+Sg+Lat` (Eng. # firm)
+
+
+*Verbs 72 back j~k examples:*
+* *juljeta:* `juljeta+V+Act+InfA+Sg+Lat` (Eng. # dare)
+
+### Vowel lengthening(?) stems
+
+
+*Verbs 73 back examples:*
+* *arvata:* `arvata+V+Act+InfA+Sg+Lat` (Eng. # guess)
+
+
+*Verbs 73 front examples:*
+* *ynnätä:* `ynnätä+V+Act+InfA+Sg+Lat` (Eng. # add)
+
+
+*Verbs 73 back 0~k examples:*
+* *morkata:* `morkata+V+Act+InfA+Sg+Lat` (Eng. # blame)
+
+
+*Verbs 73 front 0~k examples:*
+* *yökätä:* `yökätä+V+Act+InfA+Sg+Lat` (Eng. # yuck)
+
+
+*Verbs 73 back 0~p examples:*
+* *siepata:* `siepata+V+Act+InfA+Sg+Lat` (Eng. # kidnap)
+
+
+*Verbs 73 frot 0~p examples:*
+* *välpätä:* `välpätä+V+Act+InfA+Sg+Lat`
+
+
+*Verbs 73 back 0~t examples:*
+* *luntata:* `luntata+V+Act+InfA+Sg+Lat` (Eng. # cheat)
+
+
+*Verbs 73 front 0~t examples:*
+* *läntätä:* `läntätä+V+Act+InfA+Sg+Lat` (Eng. # splat)
+
+
+*Verbs 73 back v~p examples:*
+* *kaivata:* `kaivata+V+Act+InfA+Sg+Lat` (Eng. # long)
+
+
+*Verbs 73 front v~p examples:*
+* *levätä:* `levätä+V+Act+InfA+Sg+Lat` (Eng. # rest)
+
+
+*Verbs 73 back d~r examples:*
+* *jahdata:* `jahdata+V+Act+InfA+Sg+Lat` (Eng. # hunt)
+
+
+*Verbs 73 front d~t examples:*
+* *tähdätä:* `tähdätä+V+Act+InfA+Sg+Lat` (Eng. # aim)
+
+
+*Verbs 73 back g~k examples:*
+* *vongata:* `vongata+V+Act+InfA+Sg+Lat` (Eng. # beg)
+
+
+
+
+*Verbs 73 front g~k examples:*
+* *vängätä:* `vängätä+V+Act+InfA+Sg+Lat` (Eng. # argue)
+
+
+*Verbs 73 back m~p examples:*
+* *temmata:* `temmata+V+Act+InfA+Sg+Lat` (Eng. # pull)
+
+
+*Verbs 73 back l~t examples:*
+* *mullata:* `mullata+V+Act+InfA+Sg+Lat` (Eng. # dirt)
+
+
+*Verbs 73 back n~t examples:*
+* *suunnata:* `suunnata+V+Act+InfA+Sg+Lat` (Eng. # go)
+
+
+*Verbs 73 front n~t examples:*
+* *rynnätä:* `rynnätä+V+Act+InfA+Sg+Lat` (Eng. # rush)
+
+
+*Verbs 73 back r~t examples:*
+* *virrata:* `virrata+V+Act+InfA+Sg+Lat` (Eng. # stream)
+
+
+*Verbs 73 front j~k examples:*
+* *hyljätä:* `hyljätä+V+Act+InfA+Sg+Lat` (Eng. # abandon)
+
+
+*Verbs 73 back 0~g examples:*
+* *digata:* `digata+V+Act+InfA+Sg+Lat` (Eng. # dig)
+
+
+*Verbs 73 back 0~b examples:*
+* *lobata:* `lobata+V+Act+InfA+Sg+Lat` (Eng. # lobby)
+
+
+*Verbs 74 back  examples:*
+* *karhuta:* `karhuta+V+Act+InfA+Sg+Lat` (Eng. # tax)
+
+
+*Verbs 74 front  examples:*
+* *tähytä:* `tähytä+V+Act+InfA+Sg+Lat` (Eng. # periscope)
+
+
+*Verbs 74 back 0~k  examples:*
+* *kaikota:* `kaikota+V+Act+InfA+Sg+Lat` (Eng. # disappear)
+
+
+*Verbs 74 back 0~k e  examples:*
+* *poiketa:* `poiketa+V+Act+InfA+Sg+Lat`
+
+
+*Verbs 74 front 0~k e  examples:*
+* *keretä:* `keretä+V+Act+InfA+Sg+Lat`
+
+
+*Verbs 74 front   0~k u  examples:*
+* *koukuta:* `koukuta+V+Act+InfA+Sg+Lat` (Eng. # hook)
+
+
+*Verbs 74 back 0~p  examples:*
+* *pulputa:* `pulputa+V+Act+InfA+Sg+Lat` (Eng. # pulp)
+
+
+*Verbs 74 back 0~p o  examples:*
+* *upota:* `upota+V+Act+InfA+Sg+Lat` (Eng. # sink)
+
+
+*Verbs 74 back 0~to examples:*
+* *lotota:* `lotota+V+Act+InfA+Sg+Lat` (Eng. # lotto)
+
+
+*Verbs 74 back 0~tu examples:*
+* *luututa:* `luututa+V+Act+InfA+Sg+Lat` (Eng. # mop)
+
+
+*Verbs 74 back v~p  examples:*
+* *kivuta:* `kivuta+V+Act+InfA+Sg+Lat` (Eng. # climb)
+
+
+*Verbs 74 back v~pe examples:*
+* *korveta:* `korveta+V+Act+InfA+Sg+Lat`
+
+
+*Verbs 74 front v~pe examples:*
+* *kiivetä:* `kiivetä+V+Act+InfA+Sg+Lat` (Eng. # climb)
+
+
+*Verbs 74 back v~po examples:*
+* *kirvota:* `kirvota+V+Act+InfA+Sg+Lat` (Eng. # loose)
+
+
+*Verbs 74 back d~t  examples:*
+* *kadota:* `kadota+V+Act+InfA+Sg+Lat` (Eng. # disappear)
+
+
+*Verbs 74 back t~de examples:*
+* *todeta:* `todeta+V+Act+InfA+Sg+Lat` (Eng. # note)
+
+
+*Verbs 74 front t~de examples:*
+* *vyyhdetä:* `vyyhdetä+V+Act+InfA+Sg+Lat` (Eng. # entangle)
+
+
+*Verbs 74 back d~tu examples:*
+* *liiduta:* `liiduta+V+Act+InfA+Sg+Lat` (Eng. # chalk)
+
+
+*Verbs 74 back g~ke examples:*
+* *tungeta:* `tungeta+V+Act+InfA+Sg+Lat` (Eng. # push)
+
+
+*Verbs 74 back g~ko examples:*
+* *pingota:* `pingota+V+Act+InfA+Sg+Lat` (Eng. # ping)
+
+
+*Verbs 74 front g~ke  examples:*
+* *ängetä:* `ängetä+V+Act+InfA+Sg+Lat` (Eng. # push)
+
+
+*Verbs 74 back m~p  examples:*
+* *kummuta:* `kummuta+V+Act+InfA+Sg+Lat`
+
+
+*Verbs 74 back p~mu examples:*
+* *kammeta:* `kammeta+V+Act+InfA+Sg+Lat` (Eng. # lever)
+
+
+*Verbs 74 back p~mu examples:*
+* *sammota:* `sammota+V+Act+InfA+Sg+Lat`
+
+
+*Verbs 74 back t~no examples:*
+* *innota:* `innota+V+Act+InfA+Sg+Lat` (Eng. # eager)
+
+
+*Verbs 74 back t~to examples:*
+* *irrota:* `irrota+V+Act+InfA+Sg+Lat` (Eng. # tear)
+
+
+*Verbs 74 back j~ke examples:*
+* *haljeta:* `haljeta+V+Act+InfA+Sg+Lat` (Eng. # split)
+
+
+*Verbs 74 front j~k  examples:*
+* *iljetä:* `iljetä+V+Act+InfA+Sg+Lat` (Eng. # dare)
+
+
+*Verbs 75 front examples:*
+* *myrskytä:* `myrskytä+V+Act+InfA+Sg+Lat` (Eng. # storm)
+
+
+*Verbs 75 back examples:*
+* *lassota:* `lassota+V+Act+InfA+Sg+Lat` (Eng. # lasso)
+
+
+*Verbs 75 itä examples:*
+* *selvitä:* `selvitä+V+Act+InfA+Sg+Lat` (Eng. # manage)
+
+
+*Verbs 75 pytä examples:*
+* *ryöpytä:* `ryöpytä+V+Act+InfA+Sg+Lat` (Eng. # flood)
+
+
+*Verbs 75 tota examples:*
+* *peitota:* `peitota+V+Act+InfA+Sg+Lat` (Eng. # beat)
+
+
+*Verbs 75 itä examples:*
+* *keritä:* `keritä+V+Act+InfA+Sg+Lat`
+
+
+*Verbs 75 dota examples:*
+* *muodota:* `muodota+V+Act+InfA+Sg+Lat` (Eng. # form)
+
+
+*Verbs 75 mitä examples:*
+* *lämmitä:* `lämmitä+V+Act+InfA+Sg+Lat` (Eng. # heat)
+
+
+*Verbs 75 lota examples:*
+* *aallota:* `aallota+V+Act+InfA+Sg+Lat` (Eng. # wave)
+
+
+*Verbs 75 litä examples:*
+* *hellitä:* `hellitä+V+Act+InfA+Sg+Lat` (Eng. # loose)
+
+### Vowel stems with t:s variation
+
+
+*Verbs 76 back examples:*
+* *taitaa:* `taitaa+V+Act+InfA+Sg+Lat` (Eng. # can)
+
+
+*Verbs 76 front examples:*
+* *tietää:* `tietää+V+Act+InfA+Sg+Lat` (Eng. # know)
+
+### Verbs with defective paradigms
+For some verbs, the normative inflection does not allow full set of forms:
+
+
+*Verbs 77 back  examples:*
+* *vipajaa:* `vipajaa+V+Act+InfA+Sg+Lat` (Eng. # thump)
+
+
+*Verbs 77 front examples:*
+* *heläjää:* `heläjää+V+Act+InfA+Sg+Lat` (Eng. # chime)
+
+
+*Verbs 78 back examples:*
+* *raikaa:* `raikaa+V+Act+InfA+Sg+Lat` (Eng. # baum)
+
+
+*Verbs 78 front examples:*
+* *ähkää:* `ähkää+V+Act+InfA+Sg+Lat` (Eng. # meh)
+
+### Verbs with exceptional inflection patterns
+There is a handful of verbs that does not fit to the patterns of old
+dictionaries.
+
+The verb olla has very peculiar and heteroclitic inflection with lot of
+common short forms in standard spoken Finnish:
+
+*Verb olla examples:*
+* *olla:* `olla+V+Act+InfA+Sg+Lat` (Eng. # be)
+* *lienen:* `olla+V+Act+Pot+Sg1`
+* *lie:* `olla+V+Act+Pot+ConNeg`
+* *olija:* `olla+V+Der/ja+Sg+Nom`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Verb inflection proper
+
+
+### Present vowel stems
+
+* *kutoa:* `kutoa+V+Act+InfA+Sg+Lat` (Eng. # knit)
+* *kudon:* `kutoa+V+Act+Ind+Prs+Sg1`
+
+* *yltää:* `yltää+V+Act+InfA+Sg+Lat` (Eng. # reach)
+* *yllän:* `yltää+V+Act+Ind+Prs+Sg1`
+
+The strong form of present indicative endings in strong stems and ma 
+infinitive, and maisilla derivation (nee infinitive).
+
+*Verb strong present back examples:*
+* *kutovat:* `kutoa+V+Act+Ind+Prs+Pl3`
+* *kutomatta:* `kutoa+V+Act+InfMa+Sg+Abe`
+
+
+*Verb strong present front examples:*
+* *yltävät:* `yltää+V+Act+Ind+Prs+Pl3`
+* *yltämättä:* `yltää+V+Act+InfMa+Sg+Abe`
+
+### Verb 3rd singular forms
+The third singular form of present tense has few allomorphs according to
+preceding vowel context, either lengthening or zero after long vowel stem:
+
+
+*Verb 3rd singular a examples:*
+* *rakentaa:* `rakentaa+V+Act+Ind+Prs+Sg3` (Eng. # builds)
+
+
+*Verb 3rd singular e back examples:*
+* *tulee:* `tulla+V+Act+Ind+Prs+Sg3` (Eng. # comes)
+
+
+*Verb 3rd singular e front examples:*
+* *menee:* `mennä+V+Act+Ind+Prs+Sg3` (Eng. # goes)
+
+
+*Verb 3rd singular i back examples:*
+* *munii:* `munia+V+Act+Ind+Prs+Sg3` (Eng. # lays eggs)
+
+
+*Verb 3rd singular e front examples:*
+* *rämpii:* `rämpiä+V+Act+Ind+Prs+Sg3` (Eng. # hikes)
+
+
+*Verb 3rd singular o back examples:*
+* *kutoo:* `kutoa+V+Act+Ind+Prs+Sg3`
+
+
+*Verb 3rd singular u back examples:*
+* *viruu:* `virua+V+Act+Ind+Prs+Sg3` (Eng. # stretches)
+
+
+*Verb 3rd singular y examples:*
+* *kääntyy:* `kääntyä+V+Act+Ind+Prs+Sg3` (Eng. # turns)
+
+
+*Verb 3rd singular ö examples:*
+* *säilöö:* `säilöä+V+Act+Ind+Prs+Sg3` (Eng. # conserves)
+
+
+*Verb 3rd singular ä examples:*
+* *vääntää:* `vääntää+V+Act+Ind+Prs+Sg3` (Eng. # twist)
+
+### Past forms
+
+
+*Verb past back examples:*
+* *kudoin:* `kutoa+V+Act+Ind+Prt+Sg1`
+
+
+*Verb past front examples:*
+* *ylsin:* `yltää+V+Act+Ind+Prt+Sg1`
+
+
+*Verb past back strong examples:*
+* *kutoivat:* `kutoa+V+Act+Ind+Prt+Pl3`
+
+
+*Verb past front strong examples:*
+* *ylsivät:* `yltää+V+Act+Ind+Prt+Pl3`
+
+### Imperatives
+
+
+*Verb imperative back examples:*
+* *kutokaa:* `kutoa+V+Act+Imprt+Pl2`
+
+
+*Verb imperative front examples:*
+* *yltäkää:* `yltää+V+Act+Imprt+Pl2`
+
+### Conditionals
+
+
+*Verb conditional back examples:*
+* *kutoisin:* `kutoa+V+Act+Cond+Sg1`
+
+
+*Verb conditional front examples:*
+* *yltäisin:* `yltää+V+Act+Cond+Sg1`
+
+### Potentials
+
+
+*Verb potential n back examples:*
+* *kutonen:* `kutoa+V+Act+Pot+Sg1`
+
+
+*Verb potential n front examples:*
+* *yltänen:* `yltää+V+Act+Pot+Sg1`
+
+
+*Verb potential s back examples:*
+* *juossen:* `juosta+V+Act+Pot+Sg1` (Eng. # I might run)
+
+
+*Verb potential s front examples:*
+* *päässen:* `päästä+V+Act+Pot+Sg1` (Eng. # I might be able to)
+
+
+*Verb potential l back examples:*
+* *tullen:* `tulla+V+Act+Pot+Sg1`
+
+
+*Verb potential l front examples:*
+* *kävellen:* `kävellä+V+Act+Pot+Sg1` (Eng. # I might walk)
+
+
+*Verb potential r back examples:*
+* *surren:* `surra+V+Act+Pot+Sg1` (Eng. # I might be sad)
+
+
+*Verb potential r front examples:*
+* *pierren:* `pierrä+V+Act+Pot+Sg1` (Eng. # I might fart)
+
+## Passive forms
+The passive forms usually contain -ta-, -tä-, -da-, -dä-, element in them.
+The variation between the realisations is one key factor of determining the
+classification of the verb roots.
+
+
+*Verb passive back examples:*
+* *kudottiin:* `kutoa+V+Pss+Ind+Prt+Pe4`
+* *juostiin:* `juosta+V+Pss+Ind+Prt+Pe4`
+
+
+*Verb passive front examples:*
+* *nähtiin:* `nähdä+V+Pss+Ind+Prt+Pe4`
+
+
+The form of present passive assimilates leftwards, varying between
+-ta, -tä, -da, -dä, -la, -lä, -ra, -rä, -na, -nä.
+
+
+*Verb passive back t examples:*
+* *juostaan:* `juosta+V+Pss+Ind+Prs+Pe4`
+
+
+*Verb passive front t examples:*
+* *ylletään:* `yltää+V+Pss+Ind+Prs+Pe4`
+
+
+*Verb passive back d examples:*
+* *kopioidaan:* `kopioida+V+Pss+Ind+Prs+Pe4` (Eng. # copy-passive)
+
+
+*Verb passive front d examples:*
+* *nähdään:* `nähdä+V+Pss+Ind+Prs+Pe4`
+
+
+*Verb passive back l examples:*
+* *vuollaan:* `vuolla+V+Pss+Ind+Prs+Pe4` (Eng. # carve wood-passive)
+
+
+*Verb passive front l examples:*
+* *niellään:* `niellä+V+Pss+Ind+Prs+Pe4` (Eng. # swallow-passive)
+
+
+*Verb passive back r examples:*
+* *surraan:* `surra+V+Pss+Ind+Prs+Pe4` (Eng. # sorrow-passive)
+
+
+*Verb passive front r examples:*
+* *pierrään:* `pierrä+V+Pss+Ind+Prs+Pe4` (Eng. # fart-passive)
+
+
+*Verb passive back n examples:*
+* *pannaan:* `panna+V+Pss+Ind+Prs+Pe4` (Eng. # put-passive)
+
+
+*Verb passive front n examples:*
+* *mennään:* `mennä+V+Pss+Ind+Prs+Pe4`
+
+
+## Infinite verb forms
+
+
+*Verb a infinitive examples:*
+* *juoda:* `juoda+V+Act+InfA+Sg+Lat` (Eng. # drink)
+
+
+*Verb ä infinitive examples:*
+* *nähdä:* `nähdä+V+Act+InfA+Sg+Lat`
+
+
+*Verb E infinitive back examples:*
+* *kutoessa:* `kutoa+V+Act+InfE+Sg+Ine`
+
+
+*Verb E infinitive front examples:*
+* *yltäessä:* `yltää+V+Act+InfE+Sg+Ine`
+
+### Participles
+
+
+*Verb nut participle passive tu examples:*
+* *valkaistu:* `valkaista+V+Pss+PrfPrc+Sg+Nom` (Eng. # bleached)
+
+
+*Verb nut participle passive ty examples:*
+* *häpäisty:* `häpäistä+V+Pss+PrfPrc+Sg+Nom` (Eng. # sacrileged)
+
+
+*Verb nut participle passive tu~u examples:*
+* *huudettu:* `huutaa+V+Pss+PrfPrc+Sg+Nom` (Eng. # yelled)
+
+
+*Verb nut participle passive ty~y examples:*
+* *ylennetty:* `ylentää+V+Pss+PrfPrc+Sg+Nom` (Eng. # promoted)
+
+
+*Verb nut participle passive tu~du examples:*
+* *viipaloitu:* `viipaloida+V+Pss+PrfPrc+Sg+Nom` (Eng. # sliced)
+
+
+*Verb nut participle passive ty~dy examples:*
+* *yksilöity:* `yksilöidä+V+Pss+PrfPrc+Sg+Nom` (Eng. # singled out)
+
+
+*Verb nut participle passive tu~lu examples:*
+* *paranneltu:* `parannella+V+Pss+PrfPrc+Sg+Nom` (Eng. # embettered)
+
+
+*Verb nut participle passive ty~ly examples:*
+* *vähätelty:* `vähätellä+V+Pss+PrfPrc+Sg+Nom` (Eng. # belittled)
+
+
+*Verb nut participle passive tu~nu examples:*
+* *pantu:* `panna+V+Pss+PrfPrc+Sg+Nom` (Eng. # put)
+
+
+*Verb nut participle passive ty~ny examples:*
+* *menty:* `mennä+V+Pss+PrfPrc+Sg+Nom` (Eng. # went)
+
+
+*Verb nut participle passive tu~ru examples:*
+* *purtu:* `purra+V+Pss+PrfPrc+Sg+Nom` (Eng. # bitten)
+
+
+*Verb nut participle passive ty~ry examples:*
+* *pierty:* `pierrä+V+Pss+PrfPrc+Sg+Nom`
+
+### Possessives for infinite verb forms
+
+*Verb possessive front examples:*
+* *kutoakseni:* `kutoa+V+Act+InfA+Sg+Tra+PxSg1`
+* *kutoessasi:* `kutoa+V+Act+InfE+Sg+Ine+PxSg2`
+
+
+*Verb possessive back examples:*
+* *nähdäkseni:* `nähdä+V+Act+InfA+Sg+Tra+PxSg1`
+* *nähdessäsi:* `nähdä+V+Act+InfE+Sg+Ine+PxSg2`
+
+
+*Verb possessive back an examples:*
+* *kutomattaan:* `kutoa+V+Act+InfMa+Sg+Abe+PxSg3`
+
+
+*Verb possessive back en examples:*
+* *kutoakseen:* `kutoa+V+Act+InfA+Sg+Tra+PxPl3`
+
+
+*Verb possessive front en examples:*
+* *nähdäkseen:* `nähdä+V+Act+InfA+Sg+Tra+PxPl3`
+
+
+*Verb possessive back än examples:*
+* *näkemättään:* `nähdä+V+Act+InfMa+Sg+Abe+PxSg3`
+
+### Verb clitics
+
+
+*Verbs clitic back examples:*
+* *kudonhan:* `kutoa+V+Act+Ind+Prs+Sg1+Foc/han`
+* *kudotko:* `kutoa+V+Act+Ind+Prs+Sg2+Qst`
+
+
+*Verbs clitic front examples:*
+* *näenhän:* `nähdä+V+Act+Ind+Prs+Sg1+Foc/han`
+* *näetkö:* `nähdä+V+Act+Ind+Prs+Sg2+Qst`
+
+
+
+
+
+
+
+
+
+
+
+## Deverbal derivations
+Part of the deverbal derivation system in Finnish is so regular that it has
+been included as part of inflectional morphology in many traditional systems.
+These derivations are treated as inflection in our system as well.
+
+### -minen, "Fourth infinitive"
+
+
+
+### Participles
+
+
+*Verbs participle back examples:*
+* *kutomani:* `kutoa+V+AgPrc+Sg+Nom+PxSg1`
+* *kutomaton:* `kutoa+V+NegPrc+Sg+Nom`
+* *kutova:* `kutoa+V+Act+PrsPrc+Sg+Nom`
+
+
+*Verbs participle front examples:*
+* *näkemäni:* `nähdä+V+AgPrc+Sg+Nom+PxSg1`
+* *näkemätön:* `nähdä+V+NegPrc+Sg+Nom`
+* *näkevä:* `nähdä+V+Act+PrsPrc+Sg+Nom`
 
 
 
@@ -3071,7 +4089,7 @@ c.f. [VISK § 169](http://scripta.kotus.fi/visk/sisallys.php?p=169)
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/acronyms.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/affixes/acronyms.lexc)</small>Digit strings inflect with colons, lot like abbreviations.
+<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/affixes/verbs.lexc)</small>Digit strings inflect with colons, lot like abbreviations.
 
 The digit strings ending in digit 1 pronounced as number
 
@@ -11400,1721 +12418,297 @@ parts are nominals and inflect regularly.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/affixes/nouns.lexc)</small># Verb inflection and derivation
-
-The verbs' conjugation includes voice (in Finnish grammars also verbal 
-genus),  tense/mood (tempus/modus), personal endings and negation marker
-The verbs also have productive derivations to defective nouns as
-infinitives, and to adjectives as participles, which are considered to be 
-part of inflection and thus included in most versions 
-([VISK § 105](http://scripta.kotus.fi/visk/sisalto.php?p?105)).
-The morphology of participles and historical 4th infinitive is further
-detailed in section Deverbal nouns'  morphology.
-The analysis strings of verb are not as systematic as nouns,
-as many categories collapse together in forms, e.g. the tense and mood
-are only distinct with indicative past and non-past, otherwise mood implies
-tense in semantic sense.
-
-
-
-## Verb stem variation
-Verbs have no allomorphic variation per se, except for some assimilation
-and variation of ð forms, but the stem variation is the same
-as in nouns. The examples for verb stems are given for each class:
-A infinitive's lative, e infinitive's inessive, indicative present 1st 
-singular, indicative present 3rd singular, indicative past 1st singular, 
-indicative past 3rd singular, conditional past 3rd singular, 
-imperative 2nd plural, potential 1st singular, present passive, 
-past passive, nut participle passive
-
-### Verb stems without stem variation
-
-The u stems have no stem variation:
-
-*Verbs 52u examples:*
-* *kaunistua:* `kaunistua+V+Act+InfA+Sg+Lat` (Eng. # beautify)
-* *kaunistuessa:* `kaunistua+V+Act+InfE+Sg+Ine`
-* *kaunistun:* `kaunistua+V+Act+Ind+Prs+Sg1`
-* *kaunistuu:* `kaunistua+V+Act+Ind+Prs+Sg3`
-* *kaunistuin:* `kaunistua+V+Act+Ind+Prt+Sg1`
-* *kaunistui:* `kaunistua+V+Act+Ind+Prt+Sg3`
-* *kaunistuisi:* `kaunistua+V+Act+Cond+Sg3`
-* *kaunistukaa:* `kaunistua+V+Act+Imprt+Pl2`
-* *kaunistunen:* `kaunistua+V+Act+Pot+Sg1`
-* *kaunistutaan:* `kaunistua+V+Pss+Ind+Prs+Pe4`
-* *kaunistuttiin:* `kaunistua+V+Pss+Ind+Prt+Pe4`
-* *kaunistuttu:* `kaunistua+V+Pss+PrfPrc+Sg+Nom`
-* *kaunistuminen:* `kaunistua+V+Der/minen+Sg+Nom`
+<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/affixes/nouns.lexc)</small># Acronym inflection
+Acronyms are inflected using a colon, followed by the inflectional endings,
+which depend on either last letter of the word or inflection class of the
+last word of the abbreviation. The exception to the inflection scheme is the
+singular nominative, which appears without colon.
+Pronouncable abbreviations such as aids, hiv, kela, alko etc. are actually
+counted as regular words with regular inflection patterns.
+c.f. [VISK § 169](http://scripta.kotus.fi/visk/sisallys.php?p=169)
 
-The o stems have no stem variation:
 
-*Verbs 52o examples:*
-* *punoa:* `punoa+V+Act+InfA+Sg+Lat` (Eng. # bundle?)
-* *punoessa:* `punoa+V+Act+InfE+Sg+Ine`
-* *punon:* `punoa+V+Act+Ind+Prs+Sg1`
-* *punoo:* `punoa+V+Act+Ind+Prs+Sg3`
-* *punoin:* `punoa+V+Act+Ind+Prt+Sg1`
-* *punoi:* `punoa+V+Act+Ind+Prt+Sg3`
-* *punoisi:* `punoa+V+Act+Cond+Sg3`
-* *punokaa:* `punoa+V+Act+Imprt+Pl2`
-* *punonen:* `punoa+V+Act+Pot+Sg1`
-* *punotaan:* `punoa+V+Pss+Ind+Prs+Pe4`
-* *punottiin:* `punoa+V+Pss+Ind+Prt+Pe4`
-* *punottu:* `punoa+V+Pss+PrfPrc+Sg+Nom`
-* *punominen:* `punoa+V+Der/minen+Sg+Nom`
+## Acronyms ending in numbers inflect like the numbers are pronounced.
 
-The ö stems have no stem variation:
 
-*Verbs 52ö examples:*
-* *säilöä:* `säilöä+V+Act+InfA+Sg+Lat` (Eng. # store)
-* *säilöessä:* `säilöä+V+Act+InfE+Sg+Ine`
-* *säilön:* `säilöä+V+Act+Ind+Prs+Sg1`
-* *säilöö:* `säilöä+V+Act+Ind+Prs+Sg3`
-* *säilöin:* `säilöä+V+Act+Ind+Prt+Sg1`
-* *säilöi:* `säilöä+V+Act+Ind+Prt+Sg3`
-* *säilöisi:* `säilöä+V+Act+Cond+Sg3`
-* *säilökää:* `säilöä+V+Act+Imprt+Pl2`
-* *säilönen:* `säilöä+V+Act+Pot+Sg1`
-* *säilötään:* `säilöä+V+Pss+Ind+Prs+Pe4`
-* *säilöttiin:* `säilöä+V+Pss+Ind+Prt+Pe4`
-* *säilötty:* `säilöä+V+Pss+PrfPrc+Sg+Nom`
-* *säilöminen:* `säilöä+V+Der/minen+Sg+Nom`
 
-The y stems have no stem variation:
 
-*Verbs 52y examples:*
-* *ällistyä:* `ällistyä+V+Act+InfA+Sg+Lat` (Eng. # amaze)
-* *ällistyessä:* `ällistyä+V+Act+InfE+Sg+Ine`
-* *ällistyn:* `ällistyä+V+Act+Ind+Prs+Sg1`
-* *ällistyy:* `ällistyä+V+Act+Ind+Prs+Sg3`
-* *ällistyin:* `ällistyä+V+Act+Ind+Prt+Sg1`
-* *ällistyi:* `ällistyä+V+Act+Ind+Prt+Sg3`
-* *ällistyisi:* `ällistyä+V+Act+Cond+Sg3`
-* *ällistykää:* `ällistyä+V+Act+Imprt+Pl2`
-* *ällistynen:* `ällistyä+V+Act+Pot+Sg1`
-* *ällistytään:* `ällistyä+V+Pss+Ind+Prs+Pe4`
-* *ällistyttiin:* `ällistyä+V+Pss+Ind+Prt+Pe4`
-* *ällistytty:* `ällistyä+V+Pss+PrfPrc+Sg+Nom`
 
-### Verb stems with only gradation
 
 
-*Verbs 52 k~0 o examples:*
-* *haukkoa:* `haukkoa+V+Act+InfA+Sg+Lat` (Eng. # gasp)
 
 
-*Verbs 52 k~0 u examples:*
-* *nuokkua:* `nuokkua+V+Act+InfA+Sg+Lat` (Eng. # sleep)
 
 
-*Verbs 52 k~0 y examples:*
-* *kärkkyä:* `kärkkyä+V+Act+InfA+Sg+Lat` (Eng. # steal a base)
 
 
-*Verbs 52 p~0 o examples:*
-* *harppoa:* `harppoa+V+Act+InfA+Sg+Lat` (Eng. # walk)
 
 
-*Verbs 52 p~0 u examples:*
-* *loppua:* `loppua+V+Act+InfA+Sg+Lat` (Eng. # end)
 
 
-*Verbs 52 p~0 y examples:*
-* *leppyä:* `leppyä+V+Act+InfA+Sg+Lat` (Eng. # settle)
 
 
-*Verbs 52 t~0 y examples:*
-* *kivettyä:* `kivettyä+V+Act+InfA+Sg+Lat` (Eng. # stone)
 
 
-*Verbs 52 t~0 o examples:*
-* *viittoa:* `viittoa+V+Act+InfA+Sg+Lat` (Eng. # sign)
 
 
-*Verbs 52 t~0 u examples:*
-* *hermottua:* `hermottua+V+Act+InfA+Sg+Lat` (Eng. # nerve)
 
 
-*Verbs 52 k~0’ y examples:*
-* *mäikyä:* `mäikyä+V+Act+InfA+Sg+Lat` (Eng. # bong)
 
 
-*Verbs 52 k~0’ o examples:*
-* *takoa:* `takoa+V+Act+InfA+Sg+Lat` (Eng. # hammer)
 
 
-*Verbs 52 k~0’ u examples:*
-* *maukua:* `maukua+V+Act+InfA+Sg+Lat` (Eng. # gong)
 
 
-*Verbs 52 p~v y examples:*
-* *elpyä:* `elpyä+V+Act+InfA+Sg+Lat` (Eng. # rescuscitate)
 
 
-*Verbs 52 p~v u examples:*
-* *hiipua:* `hiipua+V+Act+InfA+Sg+Lat` (Eng. # fizzle)
 
 
-*Verbs 52 p~v o examples:*
-* *silpoa:* `silpoa+V+Act+InfA+Sg+Lat` (Eng. # slash)
 
 
-*Verbs 52 t~d o examples:*
-* *kietoa:* `kietoa+V+Act+InfA+Sg+Lat` (Eng. # entangle)
 
 
-*Verbs 52 t~d y examples:*
-* *siliytyä:* `siliytyä+V+Act+InfA+Sg+Lat` (Eng. # iron)
 
 
-*Verbs 52 t~d u examples:*
-* *rohtua:* `rohtua+V+Act+InfA+Sg+Lat` (Eng. # scar)
 
 
-*Verbs 52 k~g u examples:*
-* *vinkua:* `vinkua+V+Act+InfA+Sg+Lat` (Eng. # squeal)
 
 
-*Verbs 52 k~g o examples:*
-* *penkoa:* `penkoa+V+Act+InfA+Sg+Lat` (Eng. # dig)
 
 
-*Verbs 52 p~m o examples:*
-* *tempoa:* `tempoa+V+Act+InfA+Sg+Lat` (Eng. # tuck)
 
 
-*Verbs 52 p~m u examples:*
-* *ampua:* `ampua+V+Act+InfA+Sg+Lat` (Eng. # shoot)
 
 
-*Verbs 52 t~l y examples:*
-* *mieltyä:* `mieltyä+V+Act+InfA+Sg+Lat` (Eng. # like)
 
 
-*Verbs 52 t~l u examples:*
-* *humaltua:* `humaltua+V+Act+InfA+Sg+Lat` (Eng. # intoxicate)
 
 
-*Verbs 52 t~n u examples:*
-* *vakaantua:* `vakaantua+V+Act+InfA+Sg+Lat` (Eng. # stabilise)
 
 
-*Verbs 52 t~n y examples:*
-* *tyhjentyä:* `tyhjentyä+V+Act+InfA+Sg+Lat` (Eng. # empty)
 
 
-*Verbs 52 t~r y examples:*
-* *pyörtyä:* `pyörtyä+V+Act+InfA+Sg+Lat` (Eng. # faint)
 
 
-*Verbs 52 t~r o examples:*
-* *vartoa:* `vartoa+V+Act+InfA+Sg+Lat` (Eng. # wait)
 
 
-*Verbs 52 t~r u examples:*
-* *pusertua:* `pusertua+V+Act+InfA+Sg+Lat` (Eng. # squeeze)
 
-### Verbs with -a stems
 
 
 
-*Verbs 53 back examples:*
-* *mutristaa:* `mutristaa+V+Act+InfA+Sg+Lat` (Eng. # ?)
 
 
-*Verbs 53 front examples:*
-* *kivistää:* `kivistää+V+Act+InfA+Sg+Lat` (Eng. # hurt)
 
 
-*Verbs 53 front t~0 examples:*
-* *räpsyttää:* `räpsyttää+V+Act+InfA+Sg+Lat` (Eng. # blink)
 
 
-*Verbs 53 back t~0 examples:*
-* *vieroittaa:* `vieroittaa+V+Act+InfA+Sg+Lat`
 
 
 
-*Verbs 53 back k~0 examples:*
-* *purkaa:* `purkaa+V+Act+InfA+Sg+Lat` (Eng. # tear)
 
 
-*Verbs 53 front t~d examples:*
-* *kärähtää:* `kärähtää+V+Act+InfA+Sg+Lat` (Eng. # fry)
 
 
-*Verbs 53 back t~d examples:*
-* *mojahtaa:* `mojahtaa+V+Act+InfA+Sg+Lat` (Eng. # smack)
 
 
-*Verbs 53 front t~n examples:*
-* *kyntää:* `kyntää+V+Act+InfA+Sg+Lat` (Eng. # plow)
 
 
-*Verbs 53 back t~r examples:*
-* *sortaa:* `sortaa+V+Act+InfA+Sg+Lat` (Eng. # crush)
 
-Some of the a stems have t:s in past stems by ti>si variation.
 
 
-*Verbs 54 back examples:*
-* *huutaa:* `huutaa+V+Act+InfA+Sg+Lat` (Eng. # yell)
 
 
-*Verbs 54 front examples:*
-* *pyytää:* `pyytää+V+Act+InfA+Sg+Lat` (Eng. # aks)
 
 
-*Verbs 54 back t~l examples:*
-* *sivaltaa:* `sivaltaa+V+Act+InfA+Sg+Lat` (Eng. # slash)
 
 
-*Verbs 54 front t~l examples:*
-* *viheltää:* `viheltää+V+Act+InfA+Sg+Lat` (Eng. # whistle)
 
 
-*Verbs 54 front t~n examples:*
-* *hiventää:* `hiventää+V+Act+InfA+Sg+Lat`
 
 
-*Verbs 54 back t~n examples:*
-* *huonontaa:* `huonontaa+V+Act+InfA+Sg+Lat` (Eng. # worsen)
 
 
-*Verbs 54 back t~r examples:*
-* *kuhertaa:* `kuhertaa+V+Act+InfA+Sg+Lat` (Eng. # snuggle)
 
 
-*Verbs 54 front t~r examples:*
-* *näpertää:* `näpertää+V+Act+InfA+Sg+Lat` (Eng. # twiddle)
 
-In some cases t:s variation is optionally alongside the regular gradation:
 
 
 
-*Verbs 55 front examples:*
-* *kiitää:* `kiitää+V+Act+InfA+Sg+Lat` (Eng. # rush)
 
 
-*Verbs 55 back examples:*
-* *joutaa:* `joutaa+V+Act+InfA+Sg+Lat`
 
 
-*Verbs 55 front t~l examples:*
-* *yltää:* `yltää+V+Act+InfA+Sg+Lat` (Eng. # reach)
 
 
-*Verbs 55 front t~n examples:*
-* *entää:* `entää+V+Act+InfA+Sg+Lat`
 
-Other a stems undergo a:o variation
 
 
-*Verbs 56 back examples:*
-* *kasvaa:* `kasvaa+V+Act+InfA+Sg+Lat` (Eng. # grow)
 
 
-*Verbs 56 back k~0 examples:*
-* *jakaa:* `jakaa+V+Act+InfA+Sg+Lat` (Eng. # share)
 
 
-*Verbs 56 back p~0 examples:*
-* *tappaa:* `tappaa+V+Act+InfA+Sg+Lat` (Eng. # kill)
 
 
-*Verbs 56 back t~0 examples:*
-* *auttaa:* `auttaa+V+Act+InfA+Sg+Lat` (Eng. # help)
 
 
-*Verbs 56 back t~d examples:*
-* *sataa:* `sataa+V+Act+InfA+Sg+Lat` (Eng. # rain)
 
 
-*Verbs 56 back t~n examples:*
-* *kantaa:* `kantaa+V+Act+InfA+Sg+Lat` (Eng. # carry)
 
-In some of the a:o variations the t:s variant is also possible.
 
 
-*Verbs 57 back examples:*
-* *kaataa:* `kaataa+V+Act+InfA+Sg+Lat` (Eng. # pour)
 
 
-*Verbs 57 back t~r examples:*
-* *saartaa:* `saartaa+V+Act+InfA+Sg+Lat` (Eng. # surround)
 
-### Verbs with e stems
 
 
-*Verbs 58 front examples:*
-* *kytkeä:* `kytkeä+V+Act+InfA+Sg+Lat` (Eng. # switch)
 
 
-*Verbs 58 back examples:*
-* *sotkea:* `sotkea+V+Act+InfA+Sg+Lat` (Eng. # mess)
 
 
-*Verbs 58 back k~0 examples:*
-* *pukea:* `pukea+V+Act+InfA+Sg+Lat` (Eng. # dress)
 
 
-*Verbs 58 front p~v examples:*
-* *rypeä:* `rypeä+V+Act+InfA+Sg+Lat` (Eng. # bathe)
 
 
-*Verbs 58 front t~d examples:*
-* *päteä:* `päteä+V+Act+InfA+Sg+Lat` (Eng. # nitpick)
 
 
-*Verbs 58 back t~d examples:*
-* *kutea:* `kutea+V+Act+InfA+Sg+Lat` (Eng. # breed)
 
 
-*Verbs 58 back k~g examples:*
-* *tunkea:* `tunkea+V+Act+InfA+Sg+Lat` (Eng. # push)
 
 
-*Verbs 58 back k~j examples:*
-* *polkea:* `polkea+V+Act+InfA+Sg+Lat` (Eng. # stomp)
 
 
-*Verbs 58 front k~j examples:*
-* *särkeä:* `särkeä+V+Act+InfA+Sg+Lat` (Eng. # break)
 
-Some of the e stems allow for optional t:s variation in past form.
 
 
-*Verbs 59 examples:*
-* *tuntea:* `tuntea+V+Act+InfA+Sg+Lat` (Eng. # feel)
 
-The rare ht:ks kind of variation is also possible.
 
 
-*Verbs 60 examples:*
-* *lähteä:* `lähteä+V+Act+InfA+Sg+Lat` (Eng. # go)
 
-### Verbs with i stems
 
 
-*Verbs 61 back examples:*
-* *kosia:* `kosia+V+Act+InfA+Sg+Lat` (Eng. # propose)
 
 
-*Verbs 61 front examples:*
-* *ryskiä:* `ryskiä+V+Act+InfA+Sg+Lat` (Eng. # crash)
 
 
-*Verbs 61 back k~0 examples:*
-* *kukkia:* `kukkia+V+Act+InfA+Sg+Lat` (Eng. # bloom)
 
 
-*Verbs 61 front k~0 examples:*
-* *sörkkiä:* `sörkkiä+V+Act+InfA+Sg+Lat` (Eng. # meddle)
 
 
-*Verbs 61 back p~0 examples:*
-* *kalppia:* `kalppia+V+Act+InfA+Sg+Lat`
 
 
-*Verbs 61 front p~0 examples:*
-* *hyppiä:* `hyppiä+V+Act+InfA+Sg+Lat` (Eng. # jump)
 
 
-*Verbs 61 back t~0 examples:*
-* *moittia:* `moittia+V+Act+InfA+Sg+Lat`
 
 
-*Verbs 61 front t~0 examples:*
-* *miettiä:* `miettiä+V+Act+InfA+Sg+Lat` (Eng. # ponder)
 
 
-*Verbs 61 front p~v examples:*
-* *riipiä:* `riipiä+V+Act+InfA+Sg+Lat` (Eng. # pull)
 
 
-*Verbs 61 back p~v examples:*
-* *raapia:* `raapia+V+Act+InfA+Sg+Lat` (Eng. # scratch)
 
 
-*Verbs 61 back t~d examples:*
-* *ahnehtia:* `ahnehtia+V+Act+InfA+Sg+Lat` (Eng. # greed)
 
 
-*Verbs 61 front t~d examples:*
-* *ehtiä:* `ehtiä+V+Act+InfA+Sg+Lat`
 
 
-*Verbs 61 front k~g examples:*
-* *mönkiä:* `mönkiä+V+Act+InfA+Sg+Lat` (Eng. # crawl)
 
 
-*Verbs 61 back k~g examples:*
-* *onkia:* `onkia+V+Act+InfA+Sg+Lat` (Eng. # fish)
 
 
-*Verbs 61 frontp~m examples:*
-* *tympiä:* `tympiä+V+Act+InfA+Sg+Lat` (Eng. # bore)
 
 
-*Verbs 61 back t~n examples:*
-* *kontia:* `kontia+V+Act+InfA+Sg+Lat` (Eng. # mole)
 
 
-*Verbs 61 back k~j examples:*
-* *hylkiä:* `hylkiä+V+Act+InfA+Sg+Lat` (Eng. # reject)
 
-### Verbs with long vowel stem
-These verbs also have da variant of a infinitive forms.
 
 
-*Verbs 62 back examples:*
-* *kopioida:* `kopioida+V+Act+InfA+Sg+Lat` (Eng. # copy)
 
 
-*Verbs 62 front examples:*
-* *öykkäröidä:* `öykkäröidä+V+Act+InfA+Sg+Lat` (Eng. # bully)
 
 
-*Verbs 63 a examples:*
-* *saada:* `saada+V+Act+InfA+Sg+Lat` (Eng. # get)
 
 
-*Verbs 63 y examples:*
-* *myydä:* `myydä+V+Act+InfA+Sg+Lat` (Eng. # sell)
 
 
-*Verbs 63 ä examples:*
-* *jäädä:* `jäädä+V+Act+InfA+Sg+Lat` (Eng. # stay)
 
-### Monosyllabic verbs with widening diphthong
-Widening diphthongs are simplified before past and conditional suffix i's
-by removal of first component. 
 
 
-*Verbs 64 ie examples:*
-* *viedä:* `viedä+V+Act+InfA+Sg+Lat` (Eng. # take)
 
 
-*Verbs 64 uo examples:*
-* *tuoda:* `tuoda+V+Act+InfA+Sg+Lat` (Eng. # bring)
 
 
-*Verbs 64 yö examples:*
-* *syödä:* `syödä+V+Act+InfA+Sg+Lat` (Eng. # eat)
 
-In past and conditional forms of käydä, the glide before suffix is marked
-even in normative orthography.
 
 
-*Verbs 65 examples:*
-* *käydä:* `käydä+V+Act+InfA+Sg+Lat` (Eng. # visit, go for)
 
-### Verbs with consonant stems
 
-Verbs with momentane derivation are common consonant stems.
 
 
-*Verbs 66 back examples:*
-* *marista:* `marista+V+Act+InfA+Sg+Lat` (Eng. # whine)
 
 
-*Verbs 66 front examples:*
-* *äristä:* `äristä+V+Act+InfA+Sg+Lat` (Eng. # arr)
 
 
 
-*Verbs 66 front v p examples:*
-* *häväistä:* `häväistä+V+Act+InfA+Sg+Lat` (Eng. # sacrilege)
 
 
-*Verbs 66 back v~p examples:*
-* *vavista:* `vavista+V+Act+InfA+Sg+Lat` (Eng. # shake)
 
 
 
-*Verbs 66 back k~g examples:*
-* *rangaista:* `rangaista+V+Act+InfA+Sg+Lat` (Eng. # punish)
 
-### Verbs with n, r, l, s stems
-Notably, the a infinitive forms d assimilates to preceding consonant.
 
 
-*Verbs 67 back r examples:*
-* *surra:* `surra+V+Act+InfA+Sg+Lat` (Eng. # meh)
 
 
 
 
-*Verbs 67 front r examples:*
-* *pierrä:* `pierrä+V+Act+InfA+Sg+Lat` (Eng. # fart)
 
 
-*Verbs 67 back n examples:*
-* *panna:* `panna+V+Act+InfA+Sg+Lat` (Eng. # put)
 
 
-*Verbs 67 front n examples:*
-* *mennä:* `mennä+V+Act+InfA+Sg+Lat` (Eng. # go)
 
-Frequentative derivations are most common source of l stemmed verbs.
 
 
-*Verbs 67 back l examples:*
-* *vastailla:* `vastailla+V+Act+InfA+Sg+Lat` (Eng. # answer)
 
 
-*Verbs 67 frot l examples:*
-* *äksyillä:* `äksyillä+V+Act+InfA+Sg+Lat`
 
 
-*Verbs 67 front l 0k examples:*
-* *leikellä:* `leikellä+V+Act+InfA+Sg+Lat` (Eng. # cut)
 
 
-*Verbs 67 back l 0k examples:*
-* *nakella:* `nakella+V+Act+InfA+Sg+Lat` (Eng. # throw)
 
 
-*Verbs 67 back l 0p examples:*
-* *tapella:* `tapella+V+Act+InfA+Sg+Lat` (Eng. # fight)
 
 
-*Verbs 67 front l 0p examples:*
-* *hypellä:* `hypellä+V+Act+InfA+Sg+Lat` (Eng. # jump)
 
 
-*Verbs 67 back l 0t examples:*
-* *sulatella:* `sulatella+V+Act+InfA+Sg+Lat` (Eng. # melt)
 
 
-*Verbs 67 front l 0t examples:*
-* *herätellä:* `herätellä+V+Act+InfA+Sg+Lat` (Eng. # wake)
 
 
-*Verbs 67 back l d~t examples:*
-* *tipahdella:* `tipahdella+V+Act+InfA+Sg+Lat` (Eng. # drop)
 
 
-*Verbs 67 front l d~t examples:*
-* *säpsähdellä:* `säpsähdellä+V+Act+InfA+Sg+Lat` (Eng. # wake)
 
 
-*Verbs 67 back l m~p examples:*
-* *ommella:* `ommella+V+Act+InfA+Sg+Lat` (Eng. # sow)
 
 
-*Verbs 67 back l l~t examples:*
-* *vaellella:* `vaellella+V+Act+InfA+Sg+Lat` (Eng. # wander)
 
 
-*Verbs 67 frpnt l l~t examples:*
-* *kiillellä:* `kiillellä+V+Act+InfA+Sg+Lat` (Eng. # sparkle)
 
 
-*Verbs 67 back l n~t examples:*
-* *komennella:* `komennella+V+Act+InfA+Sg+Lat` (Eng. # boss)
 
 
-*Verbs 67 front l n~t examples:*
-* *käännellä:* `käännellä+V+Act+InfA+Sg+Lat` (Eng. # turn)
 
 
-*Verbs 67 back l r~t examples:*
-* *nakerrella:* `nakerrella+V+Act+InfA+Sg+Lat` (Eng. # bite)
 
 
-*Verbs 67 front l r~t examples:*
-* *kiherrellä:* `kiherrellä+V+Act+InfA+Sg+Lat` (Eng. # giggle)
 
-### tse stuff
-Some verbs have possible optional heteroclitic indicative stems:
 
 
-*Verbs 68 front examples:*
-* *isännöidä:* `isännöidä+V+Act+InfA+Sg+Lat` (Eng. # host)
 
 
-*Verbs 68 back examples:*
-* *mellakoida:* `mellakoida+V+Act+InfA+Sg+Lat` (Eng. # riot)
 
-In these stems the tse formed stem is only one.
 
 
-*Verbs 69 back examples:*
-* *palkita:* `palkita+V+Act+InfA+Sg+Lat` (Eng. # reward)
 
 
-*Verbs 69 front examples:*
-* *merkitä:* `merkitä+V+Act+InfA+Sg+Lat` (Eng. # mark)
-
-Few words have special consonant cluster simplification for ks forms.
-
-
-*Verbs 70 back examples:*
-* *juosta:* `juosta+V+Act+InfA+Sg+Lat` (Eng. # run)
-
-
-*Verbs 70 front examples:*
-* *piestä:* `piestä+V+Act+InfA+Sg+Lat` (Eng. # spank)
-
-
-nähdä has special h:k variation.
-
-
-*Verbs 71 examples:*
-* *nähdä:* `nähdä+V+Act+InfA+Sg+Lat` (Eng. # see)
-
-### Verbs with -ne- stems
-
-
-*Verbs 72 back examples:*
-* *karheta:* `karheta+V+Act+InfA+Sg+Lat`
-
-
-*Verbs 72 rfont examples:*
-* *vähetä:* `vähetä+V+Act+InfA+Sg+Lat` (Eng. # lessen)
-
-
-*Verbs 72 back 0~k examples:*
-* *niuketa:* `niuketa+V+Act+InfA+Sg+Lat` (Eng. # tighten)
-
-
-*Verbs 72 front 0~k examples:*
-* *jyrketä:* `jyrketä+V+Act+InfA+Sg+Lat`
-
-
-*Verbs 72 back 0~p examples:*
-* *hapata:* `hapata+V+Act+InfA+Sg+Lat` (Eng. # ensour)
-
-
-*Verbs 72 front 0~p examples:*
-* *supeta:* `supeta+V+Act+InfA+Sg+Lat` (Eng. # tighten)
-
-
-*Verbs 72 front 0~p examples:*
-* *tylpetä:* `tylpetä+V+Act+InfA+Sg+Lat` (Eng. # dull)
-
-
-*Verbs 72 back 0~p o examples:*
-* *helpota:* `helpota+V+Act+InfA+Sg+Lat` (Eng. # ease)
-
-
-*Verbs 72 back 0~t examples:*
-* *loitota:* `loitota+V+Act+InfA+Sg+Lat` (Eng. # distance)
-
-
-*Verbs 72 back 0~k o examples:*
-* *ulota:* `ulota+V+Act+InfA+Sg+Lat` (Eng. # outen)
-
-
-*Verbs 72 back v~p examples:*
-* *kaveta:* `kaveta+V+Act+InfA+Sg+Lat` (Eng. # tighten)
-
-
-*Verbs 72 front d~t examples:*
-* *mädätä:* `mädätä+V+Act+InfA+Sg+Lat` (Eng. # rot)
-
-
-*Verbs 72 back d~t examples:*
-* *leudota:* `leudota+V+Act+InfA+Sg+Lat`
-
-
-*Verbs 72 front d~t e examples:*
-* *pidetä:* `pidetä+V+Act+InfA+Sg+Lat` (Eng. # lengthen)
-
-
-*Verbs 72 front m~p  examples:*
-* *lämmetä:* `lämmetä+V+Act+InfA+Sg+Lat` (Eng. # warm)
-
-
-*Verbs 72 front n~t examples:*
-* *kiinnetä:* `kiinnetä+V+Act+InfA+Sg+Lat` (Eng. # firm)
-
-
-*Verbs 72 back j~k examples:*
-* *juljeta:* `juljeta+V+Act+InfA+Sg+Lat` (Eng. # dare)
-
-### Vowel lengthening(?) stems
-
-
-*Verbs 73 back examples:*
-* *arvata:* `arvata+V+Act+InfA+Sg+Lat` (Eng. # guess)
-
-
-*Verbs 73 front examples:*
-* *ynnätä:* `ynnätä+V+Act+InfA+Sg+Lat` (Eng. # add)
-
-
-*Verbs 73 back 0~k examples:*
-* *morkata:* `morkata+V+Act+InfA+Sg+Lat` (Eng. # blame)
-
-
-*Verbs 73 front 0~k examples:*
-* *yökätä:* `yökätä+V+Act+InfA+Sg+Lat` (Eng. # yuck)
-
-
-*Verbs 73 back 0~p examples:*
-* *siepata:* `siepata+V+Act+InfA+Sg+Lat` (Eng. # kidnap)
-
-
-*Verbs 73 frot 0~p examples:*
-* *välpätä:* `välpätä+V+Act+InfA+Sg+Lat`
-
-
-*Verbs 73 back 0~t examples:*
-* *luntata:* `luntata+V+Act+InfA+Sg+Lat` (Eng. # cheat)
-
-
-*Verbs 73 front 0~t examples:*
-* *läntätä:* `läntätä+V+Act+InfA+Sg+Lat` (Eng. # splat)
-
-
-*Verbs 73 back v~p examples:*
-* *kaivata:* `kaivata+V+Act+InfA+Sg+Lat` (Eng. # long)
-
-
-*Verbs 73 front v~p examples:*
-* *levätä:* `levätä+V+Act+InfA+Sg+Lat` (Eng. # rest)
-
-
-*Verbs 73 back d~r examples:*
-* *jahdata:* `jahdata+V+Act+InfA+Sg+Lat` (Eng. # hunt)
-
-
-*Verbs 73 front d~t examples:*
-* *tähdätä:* `tähdätä+V+Act+InfA+Sg+Lat` (Eng. # aim)
-
-
-*Verbs 73 back g~k examples:*
-* *vongata:* `vongata+V+Act+InfA+Sg+Lat` (Eng. # beg)
-
-
-
-
-*Verbs 73 front g~k examples:*
-* *vängätä:* `vängätä+V+Act+InfA+Sg+Lat` (Eng. # argue)
-
-
-*Verbs 73 back m~p examples:*
-* *temmata:* `temmata+V+Act+InfA+Sg+Lat` (Eng. # pull)
-
-
-*Verbs 73 back l~t examples:*
-* *mullata:* `mullata+V+Act+InfA+Sg+Lat` (Eng. # dirt)
-
-
-*Verbs 73 back n~t examples:*
-* *suunnata:* `suunnata+V+Act+InfA+Sg+Lat` (Eng. # go)
-
-
-*Verbs 73 front n~t examples:*
-* *rynnätä:* `rynnätä+V+Act+InfA+Sg+Lat` (Eng. # rush)
-
-
-*Verbs 73 back r~t examples:*
-* *virrata:* `virrata+V+Act+InfA+Sg+Lat` (Eng. # stream)
-
-
-*Verbs 73 front j~k examples:*
-* *hyljätä:* `hyljätä+V+Act+InfA+Sg+Lat` (Eng. # abandon)
-
-
-*Verbs 73 back 0~g examples:*
-* *digata:* `digata+V+Act+InfA+Sg+Lat` (Eng. # dig)
-
-
-*Verbs 73 back 0~b examples:*
-* *lobata:* `lobata+V+Act+InfA+Sg+Lat` (Eng. # lobby)
-
-
-*Verbs 74 back  examples:*
-* *karhuta:* `karhuta+V+Act+InfA+Sg+Lat` (Eng. # tax)
-
-
-*Verbs 74 front  examples:*
-* *tähytä:* `tähytä+V+Act+InfA+Sg+Lat` (Eng. # periscope)
-
-
-*Verbs 74 back 0~k  examples:*
-* *kaikota:* `kaikota+V+Act+InfA+Sg+Lat` (Eng. # disappear)
-
-
-*Verbs 74 back 0~k e  examples:*
-* *poiketa:* `poiketa+V+Act+InfA+Sg+Lat`
-
-
-*Verbs 74 front 0~k e  examples:*
-* *keretä:* `keretä+V+Act+InfA+Sg+Lat`
-
-
-*Verbs 74 front   0~k u  examples:*
-* *koukuta:* `koukuta+V+Act+InfA+Sg+Lat` (Eng. # hook)
-
-
-*Verbs 74 back 0~p  examples:*
-* *pulputa:* `pulputa+V+Act+InfA+Sg+Lat` (Eng. # pulp)
-
-
-*Verbs 74 back 0~p o  examples:*
-* *upota:* `upota+V+Act+InfA+Sg+Lat` (Eng. # sink)
-
-
-*Verbs 74 back 0~to examples:*
-* *lotota:* `lotota+V+Act+InfA+Sg+Lat` (Eng. # lotto)
-
-
-*Verbs 74 back 0~tu examples:*
-* *luututa:* `luututa+V+Act+InfA+Sg+Lat` (Eng. # mop)
-
-
-*Verbs 74 back v~p  examples:*
-* *kivuta:* `kivuta+V+Act+InfA+Sg+Lat` (Eng. # climb)
-
-
-*Verbs 74 back v~pe examples:*
-* *korveta:* `korveta+V+Act+InfA+Sg+Lat`
-
-
-*Verbs 74 front v~pe examples:*
-* *kiivetä:* `kiivetä+V+Act+InfA+Sg+Lat` (Eng. # climb)
-
-
-*Verbs 74 back v~po examples:*
-* *kirvota:* `kirvota+V+Act+InfA+Sg+Lat` (Eng. # loose)
-
-
-*Verbs 74 back d~t  examples:*
-* *kadota:* `kadota+V+Act+InfA+Sg+Lat` (Eng. # disappear)
-
-
-*Verbs 74 back t~de examples:*
-* *todeta:* `todeta+V+Act+InfA+Sg+Lat` (Eng. # note)
-
-
-*Verbs 74 front t~de examples:*
-* *vyyhdetä:* `vyyhdetä+V+Act+InfA+Sg+Lat` (Eng. # entangle)
-
-
-*Verbs 74 back d~tu examples:*
-* *liiduta:* `liiduta+V+Act+InfA+Sg+Lat` (Eng. # chalk)
-
-
-*Verbs 74 back g~ke examples:*
-* *tungeta:* `tungeta+V+Act+InfA+Sg+Lat` (Eng. # push)
-
-
-*Verbs 74 back g~ko examples:*
-* *pingota:* `pingota+V+Act+InfA+Sg+Lat` (Eng. # ping)
-
-
-*Verbs 74 front g~ke  examples:*
-* *ängetä:* `ängetä+V+Act+InfA+Sg+Lat` (Eng. # push)
-
-
-*Verbs 74 back m~p  examples:*
-* *kummuta:* `kummuta+V+Act+InfA+Sg+Lat`
-
-
-*Verbs 74 back p~mu examples:*
-* *kammeta:* `kammeta+V+Act+InfA+Sg+Lat` (Eng. # lever)
-
-
-*Verbs 74 back p~mu examples:*
-* *sammota:* `sammota+V+Act+InfA+Sg+Lat`
-
-
-*Verbs 74 back t~no examples:*
-* *innota:* `innota+V+Act+InfA+Sg+Lat` (Eng. # eager)
-
-
-*Verbs 74 back t~to examples:*
-* *irrota:* `irrota+V+Act+InfA+Sg+Lat` (Eng. # tear)
-
-
-*Verbs 74 back j~ke examples:*
-* *haljeta:* `haljeta+V+Act+InfA+Sg+Lat` (Eng. # split)
-
-
-*Verbs 74 front j~k  examples:*
-* *iljetä:* `iljetä+V+Act+InfA+Sg+Lat` (Eng. # dare)
-
-
-*Verbs 75 front examples:*
-* *myrskytä:* `myrskytä+V+Act+InfA+Sg+Lat` (Eng. # storm)
-
-
-*Verbs 75 back examples:*
-* *lassota:* `lassota+V+Act+InfA+Sg+Lat` (Eng. # lasso)
-
-
-*Verbs 75 itä examples:*
-* *selvitä:* `selvitä+V+Act+InfA+Sg+Lat` (Eng. # manage)
-
-
-*Verbs 75 pytä examples:*
-* *ryöpytä:* `ryöpytä+V+Act+InfA+Sg+Lat` (Eng. # flood)
-
-
-*Verbs 75 tota examples:*
-* *peitota:* `peitota+V+Act+InfA+Sg+Lat` (Eng. # beat)
-
-
-*Verbs 75 itä examples:*
-* *keritä:* `keritä+V+Act+InfA+Sg+Lat`
-
-
-*Verbs 75 dota examples:*
-* *muodota:* `muodota+V+Act+InfA+Sg+Lat` (Eng. # form)
-
-
-*Verbs 75 mitä examples:*
-* *lämmitä:* `lämmitä+V+Act+InfA+Sg+Lat` (Eng. # heat)
-
-
-*Verbs 75 lota examples:*
-* *aallota:* `aallota+V+Act+InfA+Sg+Lat` (Eng. # wave)
-
-
-*Verbs 75 litä examples:*
-* *hellitä:* `hellitä+V+Act+InfA+Sg+Lat` (Eng. # loose)
-
-### Vowel stems with t:s variation
-
-
-*Verbs 76 back examples:*
-* *taitaa:* `taitaa+V+Act+InfA+Sg+Lat` (Eng. # can)
-
-
-*Verbs 76 front examples:*
-* *tietää:* `tietää+V+Act+InfA+Sg+Lat` (Eng. # know)
-
-### Verbs with defective paradigms
-For some verbs, the normative inflection does not allow full set of forms:
-
-
-*Verbs 77 back  examples:*
-* *vipajaa:* `vipajaa+V+Act+InfA+Sg+Lat` (Eng. # thump)
-
-
-*Verbs 77 front examples:*
-* *heläjää:* `heläjää+V+Act+InfA+Sg+Lat` (Eng. # chime)
-
-
-*Verbs 78 back examples:*
-* *raikaa:* `raikaa+V+Act+InfA+Sg+Lat` (Eng. # baum)
-
-
-*Verbs 78 front examples:*
-* *ähkää:* `ähkää+V+Act+InfA+Sg+Lat` (Eng. # meh)
-
-### Verbs with exceptional inflection patterns
-There is a handful of verbs that does not fit to the patterns of old
-dictionaries.
-
-The verb olla has very peculiar and heteroclitic inflection with lot of
-common short forms in standard spoken Finnish:
-
-*Verb olla examples:*
-* *olla:* `olla+V+Act+InfA+Sg+Lat` (Eng. # be)
-* *lienen:* `olla+V+Act+Pot+Sg1`
-* *lie:* `olla+V+Act+Pot+ConNeg`
-* *olija:* `olla+V+Der/ja+Sg+Nom`
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Verb inflection proper
-
-
-### Present vowel stems
-
-* *kutoa:* `kutoa+V+Act+InfA+Sg+Lat` (Eng. # knit)
-* *kudon:* `kutoa+V+Act+Ind+Prs+Sg1`
-
-* *yltää:* `yltää+V+Act+InfA+Sg+Lat` (Eng. # reach)
-* *yllän:* `yltää+V+Act+Ind+Prs+Sg1`
-
-The strong form of present indicative endings in strong stems and ma 
-infinitive, and maisilla derivation (nee infinitive).
-
-*Verb strong present back examples:*
-* *kutovat:* `kutoa+V+Act+Ind+Prs+Pl3`
-* *kutomatta:* `kutoa+V+Act+InfMa+Sg+Abe`
-
-
-*Verb strong present front examples:*
-* *yltävät:* `yltää+V+Act+Ind+Prs+Pl3`
-* *yltämättä:* `yltää+V+Act+InfMa+Sg+Abe`
-
-### Verb 3rd singular forms
-The third singular form of present tense has few allomorphs according to
-preceding vowel context, either lengthening or zero after long vowel stem:
-
-
-*Verb 3rd singular a examples:*
-* *rakentaa:* `rakentaa+V+Act+Ind+Prs+Sg3` (Eng. # builds)
-
-
-*Verb 3rd singular e back examples:*
-* *tulee:* `tulla+V+Act+Ind+Prs+Sg3` (Eng. # comes)
-
-
-*Verb 3rd singular e front examples:*
-* *menee:* `mennä+V+Act+Ind+Prs+Sg3` (Eng. # goes)
-
-
-*Verb 3rd singular i back examples:*
-* *munii:* `munia+V+Act+Ind+Prs+Sg3` (Eng. # lays eggs)
-
-
-*Verb 3rd singular e front examples:*
-* *rämpii:* `rämpiä+V+Act+Ind+Prs+Sg3` (Eng. # hikes)
-
-
-*Verb 3rd singular o back examples:*
-* *kutoo:* `kutoa+V+Act+Ind+Prs+Sg3`
-
-
-*Verb 3rd singular u back examples:*
-* *viruu:* `virua+V+Act+Ind+Prs+Sg3` (Eng. # stretches)
-
-
-*Verb 3rd singular y examples:*
-* *kääntyy:* `kääntyä+V+Act+Ind+Prs+Sg3` (Eng. # turns)
-
-
-*Verb 3rd singular ö examples:*
-* *säilöö:* `säilöä+V+Act+Ind+Prs+Sg3` (Eng. # conserves)
-
-
-*Verb 3rd singular ä examples:*
-* *vääntää:* `vääntää+V+Act+Ind+Prs+Sg3` (Eng. # twist)
-
-### Past forms
-
-
-*Verb past back examples:*
-* *kudoin:* `kutoa+V+Act+Ind+Prt+Sg1`
-
-
-*Verb past front examples:*
-* *ylsin:* `yltää+V+Act+Ind+Prt+Sg1`
-
-
-*Verb past back strong examples:*
-* *kutoivat:* `kutoa+V+Act+Ind+Prt+Pl3`
-
-
-*Verb past front strong examples:*
-* *ylsivät:* `yltää+V+Act+Ind+Prt+Pl3`
-
-### Imperatives
-
-
-*Verb imperative back examples:*
-* *kutokaa:* `kutoa+V+Act+Imprt+Pl2`
-
-
-*Verb imperative front examples:*
-* *yltäkää:* `yltää+V+Act+Imprt+Pl2`
-
-### Conditionals
-
-
-*Verb conditional back examples:*
-* *kutoisin:* `kutoa+V+Act+Cond+Sg1`
-
-
-*Verb conditional front examples:*
-* *yltäisin:* `yltää+V+Act+Cond+Sg1`
-
-### Potentials
-
-
-*Verb potential n back examples:*
-* *kutonen:* `kutoa+V+Act+Pot+Sg1`
-
-
-*Verb potential n front examples:*
-* *yltänen:* `yltää+V+Act+Pot+Sg1`
-
-
-*Verb potential s back examples:*
-* *juossen:* `juosta+V+Act+Pot+Sg1` (Eng. # I might run)
-
-
-*Verb potential s front examples:*
-* *päässen:* `päästä+V+Act+Pot+Sg1` (Eng. # I might be able to)
-
-
-*Verb potential l back examples:*
-* *tullen:* `tulla+V+Act+Pot+Sg1`
-
-
-*Verb potential l front examples:*
-* *kävellen:* `kävellä+V+Act+Pot+Sg1` (Eng. # I might walk)
-
-
-*Verb potential r back examples:*
-* *surren:* `surra+V+Act+Pot+Sg1` (Eng. # I might be sad)
-
-
-*Verb potential r front examples:*
-* *pierren:* `pierrä+V+Act+Pot+Sg1` (Eng. # I might fart)
-
-## Passive forms
-The passive forms usually contain -ta-, -tä-, -da-, -dä-, element in them.
-The variation between the realisations is one key factor of determining the
-classification of the verb roots.
-
-
-*Verb passive back examples:*
-* *kudottiin:* `kutoa+V+Pss+Ind+Prt+Pe4`
-* *juostiin:* `juosta+V+Pss+Ind+Prt+Pe4`
-
-
-*Verb passive front examples:*
-* *nähtiin:* `nähdä+V+Pss+Ind+Prt+Pe4`
-
-
-The form of present passive assimilates leftwards, varying between
--ta, -tä, -da, -dä, -la, -lä, -ra, -rä, -na, -nä.
-
-
-*Verb passive back t examples:*
-* *juostaan:* `juosta+V+Pss+Ind+Prs+Pe4`
-
-
-*Verb passive front t examples:*
-* *ylletään:* `yltää+V+Pss+Ind+Prs+Pe4`
-
-
-*Verb passive back d examples:*
-* *kopioidaan:* `kopioida+V+Pss+Ind+Prs+Pe4` (Eng. # copy-passive)
-
-
-*Verb passive front d examples:*
-* *nähdään:* `nähdä+V+Pss+Ind+Prs+Pe4`
-
-
-*Verb passive back l examples:*
-* *vuollaan:* `vuolla+V+Pss+Ind+Prs+Pe4` (Eng. # carve wood-passive)
-
-
-*Verb passive front l examples:*
-* *niellään:* `niellä+V+Pss+Ind+Prs+Pe4` (Eng. # swallow-passive)
-
-
-*Verb passive back r examples:*
-* *surraan:* `surra+V+Pss+Ind+Prs+Pe4` (Eng. # sorrow-passive)
-
-
-*Verb passive front r examples:*
-* *pierrään:* `pierrä+V+Pss+Ind+Prs+Pe4` (Eng. # fart-passive)
-
-
-*Verb passive back n examples:*
-* *pannaan:* `panna+V+Pss+Ind+Prs+Pe4` (Eng. # put-passive)
-
-
-*Verb passive front n examples:*
-* *mennään:* `mennä+V+Pss+Ind+Prs+Pe4`
-
-
-## Infinite verb forms
-
-
-*Verb a infinitive examples:*
-* *juoda:* `juoda+V+Act+InfA+Sg+Lat` (Eng. # drink)
-
-
-*Verb ä infinitive examples:*
-* *nähdä:* `nähdä+V+Act+InfA+Sg+Lat`
-
-
-*Verb E infinitive back examples:*
-* *kutoessa:* `kutoa+V+Act+InfE+Sg+Ine`
-
-
-*Verb E infinitive front examples:*
-* *yltäessä:* `yltää+V+Act+InfE+Sg+Ine`
-
-### Participles
-
-
-*Verb nut participle passive tu examples:*
-* *valkaistu:* `valkaista+V+Pss+PrfPrc+Sg+Nom` (Eng. # bleached)
-
-
-*Verb nut participle passive ty examples:*
-* *häpäisty:* `häpäistä+V+Pss+PrfPrc+Sg+Nom` (Eng. # sacrileged)
-
-
-*Verb nut participle passive tu~u examples:*
-* *huudettu:* `huutaa+V+Pss+PrfPrc+Sg+Nom` (Eng. # yelled)
-
-
-*Verb nut participle passive ty~y examples:*
-* *ylennetty:* `ylentää+V+Pss+PrfPrc+Sg+Nom` (Eng. # promoted)
-
-
-*Verb nut participle passive tu~du examples:*
-* *viipaloitu:* `viipaloida+V+Pss+PrfPrc+Sg+Nom` (Eng. # sliced)
-
-
-*Verb nut participle passive ty~dy examples:*
-* *yksilöity:* `yksilöidä+V+Pss+PrfPrc+Sg+Nom` (Eng. # singled out)
-
-
-*Verb nut participle passive tu~lu examples:*
-* *paranneltu:* `parannella+V+Pss+PrfPrc+Sg+Nom` (Eng. # embettered)
-
-
-*Verb nut participle passive ty~ly examples:*
-* *vähätelty:* `vähätellä+V+Pss+PrfPrc+Sg+Nom` (Eng. # belittled)
-
-
-*Verb nut participle passive tu~nu examples:*
-* *pantu:* `panna+V+Pss+PrfPrc+Sg+Nom` (Eng. # put)
-
-
-*Verb nut participle passive ty~ny examples:*
-* *menty:* `mennä+V+Pss+PrfPrc+Sg+Nom` (Eng. # went)
-
-
-*Verb nut participle passive tu~ru examples:*
-* *purtu:* `purra+V+Pss+PrfPrc+Sg+Nom` (Eng. # bitten)
-
-
-*Verb nut participle passive ty~ry examples:*
-* *pierty:* `pierrä+V+Pss+PrfPrc+Sg+Nom`
-
-### Possessives for infinite verb forms
-
-*Verb possessive front examples:*
-* *kutoakseni:* `kutoa+V+Act+InfA+Sg+Tra+PxSg1`
-* *kutoessasi:* `kutoa+V+Act+InfE+Sg+Ine+PxSg2`
-
-
-*Verb possessive back examples:*
-* *nähdäkseni:* `nähdä+V+Act+InfA+Sg+Tra+PxSg1`
-* *nähdessäsi:* `nähdä+V+Act+InfE+Sg+Ine+PxSg2`
-
-
-*Verb possessive back an examples:*
-* *kutomattaan:* `kutoa+V+Act+InfMa+Sg+Abe+PxSg3`
-
-
-*Verb possessive back en examples:*
-* *kutoakseen:* `kutoa+V+Act+InfA+Sg+Tra+PxPl3`
-
-
-*Verb possessive front en examples:*
-* *nähdäkseen:* `nähdä+V+Act+InfA+Sg+Tra+PxPl3`
-
-
-*Verb possessive back än examples:*
-* *näkemättään:* `nähdä+V+Act+InfMa+Sg+Abe+PxSg3`
-
-### Verb clitics
-
-
-*Verbs clitic back examples:*
-* *kudonhan:* `kutoa+V+Act+Ind+Prs+Sg1+Foc/han`
-* *kudotko:* `kutoa+V+Act+Ind+Prs+Sg2+Qst`
-
-
-*Verbs clitic front examples:*
-* *näenhän:* `nähdä+V+Act+Ind+Prs+Sg1+Foc/han`
-* *näetkö:* `nähdä+V+Act+Ind+Prs+Sg2+Qst`
-
-
-
-
-
-
-
-
-
-
-
-## Deverbal derivations
-Part of the deverbal derivation system in Finnish is so regular that it has
-been included as part of inflectional morphology in many traditional systems.
-These derivations are treated as inflection in our system as well.
-
-### -minen, "Fourth infinitive"
-
-
-
-### Participles
-
-
-*Verbs participle back examples:*
-* *kutomani:* `kutoa+V+AgPrc+Sg+Nom+PxSg1`
-* *kutomaton:* `kutoa+V+NegPrc+Sg+Nom`
-* *kutova:* `kutoa+V+Act+PrsPrc+Sg+Nom`
-
-
-*Verbs participle front examples:*
-* *näkemäni:* `nähdä+V+AgPrc+Sg+Nom+PxSg1`
-* *näkemätön:* `nähdä+V+NegPrc+Sg+Nom`
-* *näkevä:* `nähdä+V+Act+PrsPrc+Sg+Nom`
 
 
 
@@ -13166,7 +12760,7 @@ These derivations are treated as inflection in our system as well.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/affixes/verbs.lexc)</small>
+<small>This (part of) documentation was generated from [../src/fst/affixes/acronyms.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/affixes/acronyms.lexc)</small>
 # Continuation lexicons for Finnish abbreviations
 
 ## Lexica for adding tags and periods
@@ -13237,319 +12831,15 @@ These derivations are treated as inflection in our system as well.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/abbreviations.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/affixes/abbreviations.lexc)</small># Adverb inflection
-Most adverbs are morphologically either sti-derivations of adjectives or
-some specific form of an existing or archaic noun, and they have limited
-inflection in form of possessives and clitics carried over. According to
-modern dictionaries different forms of same root are separate adverbs,
-so they are not inflected here, but listed in roots.
-
-
-*Adverb possessive back examples:*
-* *takanani:* `takana+Adv+PxSg1` (Eng. # behind me)
-
-
-*Adverb possessive front examples:*
-* *edessäni:* `edessä+Adv+PxSg1` (Eng. # in front of me)
-
-
-*Adverb possessive back an examples:*
-* *takanaan:* `takana+Adv+PxSg3`
-
-
-*Adverb possessive back en examples:*
-* *jalkeilleen:* `jalkeille+Adv+PxSg3` (Eng. # he awakened)
-
-
-*Adverb possessive front en examples:*
-* *keskelleen:* `keskelle+Adv+PxPl3` (Eng. # amidst them)
-
-
-*Adverb possessive front än examples:*
-* *edessään:* `edessä+Adv+PxSg3`
-
-
-*Adverb clitic back examples:*
-* *nopeastihan:* `nopeasti+Adv+Foc/han` (Eng. # fast)
-
-
-*Adverb clitic front examples:*
-* *tyhmästihän:* `tyhmästi+Adv+Foc/han` (Eng. # stupidly)
-
-
-
-
-
-
-
-
+<small>This (part of) documentation was generated from [../src/fst/affixes/abbreviations.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/affixes/abbreviations.lexc)</small>
+# Symbol affixes
 
 
 
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/adv.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/affixes/adv.lexc)</small># Numeral inflection
-Numeral inflection is like nominal, except that numerals compound in all
-forms which requires great amount of care in the inflection patterns.
-
-
-
-
-
-
-
-
- * **LEXICON ARABICCASES**  adds +Arab
-
- * **LEXICON ARABICCASE**  adds +Arab
-
- * **LEXICON ARABICCASE0**  adds +Arab
-
-
- * **LEXICON DIGITCASES**  to distinguish between 0 and oblique
-
- * **LEXICON DIGITCASE0**
-
-
- * **LEXICON DIGITCASE**
-
-
-
-
-
-
- * **LEXICON ROMNUMTAGOBL**
-
-
-
-
-
-
-
-
-# Original file
-
-
-*Numeral nominative back examples:*
-* *kaksi:* `kaksi+Num+Card+Sg+Nom` (Eng. # two)
-
-
-*Numeral nominative front examples:*
-* *yksi:* `yksi+Num+Card+Sg+Nom` (Eng. # one)
-
-
-*Numeral nominative plural back examples:*
-* *kahdet:* `kaksi+Num+Card+Pl+Nom`
-
-
-*Numeral nominative plural front examples:*
-* *yhdet:* `yksi+Num+Card+Pl+Nom`
-
-
-*Numeral weak singular back examples:*
-* *kahden:* `kaksi+Num+Card+Sg+Gen`
-* *kahdella:* `kaksi+Num+Card+Sg+Ade`
-* *kahdelta:* `kaksi+Num+Card+Sg+Abl`
-* *kahdelle:* `kaksi+Num+Card+Sg+All`
-* *kahdessa:* `kaksi+Num+Card+Sg+Ine`
-* *kahdesta:* `kaksi+Num+Card+Sg+Ela`
-* *kahdeksi:* `kaksi+Num+Card+Sg+Tra`
-* *kahdetta:* `kaksi+Num+Card+Sg+Abe`
-
-
-*Numeral weak singular front examples:*
-* *yhden:* `yksi+Num+Card+Sg+Gen`
-* *yhdellä:* `yksi+Num+Card+Sg+Ade`
-* *yhdeltä:* `yksi+Num+Card+Sg+Abl`
-* *yhdelle:* `yksi+Num+Card+Sg+All`
-* *yhdessä:* `yksi+Num+Card+Sg+Ine`
-* *yhdestä:* `yksi+Num+Card+Sg+Ela`
-* *yhdeksi:* `yksi+Num+Card+Sg+Tra`
-* *yhdettä:* `yksi+Num+Card+Sg+Abe`
-
-
-*Numeral strong singular back examples:*
-* *kahtena:* `kaksi+Num+Card+Sg+Ess`
-
-
-*Numeral strong singular front examples:*
-* *yhtenä:* `yksi+Num+Card+Sg+Ess`
-
-
-*Numeral weak plural back examples:*
-* *kaksilla:* `kaksi+Num+Card+Pl+Ade`
-* *kaksilta:* `kaksi+Num+Card+Pl+Abl`
-* *kaksille:* `kaksi+Num+Card+Pl+All`
-* *kaksissa:* `kaksi+Num+Card+Pl+Ine`
-* *kaksista:* `kaksi+Num+Card+Pl+Ela`
-* *kaksiksi:* `kaksi+Num+Card+Pl+Tra`
-* *kaksitta:* `kaksi+Num+Card+Pl+Abe`
-
-
-*Numeral weak plural front examples:*
-* *yksillä:* `yksi+Num+Card+Pl+Ade`
-* *yksiltä:* `yksi+Num+Card+Pl+Abl`
-* *yksille:* `yksi+Num+Card+Pl+All`
-* *yksissä:* `yksi+Num+Card+Pl+Ine`
-* *yksistä:* `yksi+Num+Card+Pl+Ela`
-* *yksiksi:* `yksi+Num+Card+Pl+Tra`
-* *yksittä:* `yksi+Num+Card+Pl+Abe`
-
-
-*Numeral weak plural back strong examples:*
-* *kaksina:* `kaksi+Num+Card+Pl+Ess`
-* *kaksine:* `kaksi+Num+Card+Com`
-
-
-*Numeral weak plural front strong examples:*
-* *yksinä:* `yksi+Num+Card+Pl+Ess`
-* *yksine:* `yksi+Num+Card+Com`
-
-
-
-*Numeral singular partitive a examples:*
-* *kahdeksaa:* `kahdeksan+Num+Card+Sg+Par` (Eng. # eight)
-
-
-*Numeral singular partitive ä examples:*
-* *neljää:* `neljä+Num+Card+Sg+Par` (Eng. # four)
-
-
-*Numeral singular partitive a poss aan examples:*
-* *kolmea:* `kolme+Num+Card+Sg+Par` (Eng. # three)
-
-
-*Numeral singular partitive ta examples:*
-* *kuutta:* `kuusi+Num+Card+Sg+Par` (Eng. # six)
-
-
-*Numeral singular partitive tä examples:*
-* *viittä:* `viisi+Num+Card+Sg+Par` (Eng. # five)
-
-
-*Numeral singular illative an examples:*
-* *kahdeksaan:* `kahdeksan+Num+Card+Sg+Ill`
-
-
-*Numeral singular illative en back examples:*
-* *kolmeen:* `kolme+Num+Card+Sg+Ill`
-
-
-*Numeral singular illative en front examples:*
-* *viiteen:* `viisi+Num+Card+Sg+Ill`
-
-
-*Numeral singular illative in back examples:*
-* *miljardiin:* `miljardi+Num+Card+Sg+Ill` (Eng. # billion)
-
-
-*Numeral singular illative än examples:*
-* *neljään:* `neljä+Num+Card+Sg+Ill`
-
-
-*Numeral plural partitive ia examples:*
-* *kaksia:* `kaksi+Num+Card+Pl+Par`
-
-
-*Numeral plural partitive iä examples:*
-* *neljiä:* `neljä+Num+Card+Pl+Par`
-
-
-*Numeral plural partitive ja examples:*
-* *miljardeja:* `miljardi+Num+Card+Pl+Par`
-
-
-*Numeral plural genitive ien back examples:*
-* *kaksien:* `kaksi+Num+Card+Pl+Gen` (Eng. NUM_BACK_CLIT_OPT)
-
-
-*Numeral plural genitive ien front examples:*
-* *yksien:* `yksi+Num+Card+Pl+Gen` (Eng. NUM_BACK_CLIT_OPT)
-
-
-*Numeral plural genitive jen back examples:*
-* *satojen:* `sata+Num+Card+Pl+Gen` (Eng. # hundred NUM_BACK_CLIT_OPT)
-
-
-*Numeral plural genitive ten back examples:*
-* *kuutten:* `kuusi+Num+Card+Pl+Gen` (Eng. NUM_BACK_CLIT_OPT)
-
-
-*Numeral plural genitive ten front examples:*
-* *viitten:* `viisi+Num+Card+Pl+Gen` (Eng. NUM_BACK_CLIT_OPT)
-
-
-*Numeral plural genitive in back examples:*
-* *yhdeksäin:* `yhdeksän+Num+Card+Pl+Gen+Use/Rare` (Eng. NUM_BACK_CLIT_OPT)
-
-
-*Numeral plural genitive in front examples:*
-* *neljäin:* `neljä+Num+Card+Pl+Gen+Use/Rare` (Eng. NUM_BACK_CLIT_OPT)
-
-
-*Numeral plural illaive ihin bavk examples:*
-* *miljardeihin:* `miljardi+Num+Card+Pl+Ill`
-
-
-*Numeral plural illaive iin back examples:*
-* *kaksiin:* `kaksi+Num+Card+Pl+Ill`
-
-
-*Numeral plural illaive iin front examples:*
-* *yksiin:* `yksi+Num+Card+Pl+Ill`
-
-
-
-*Numeral possessive back examples:*
-* *kahteni:* `kaksi+Num+Card+Sg+Nom+PxSg1`
-
-
-*Numeral possessive front examples:*
-* *yhteni:* `yksi+Num+Card+Sg+Nom+PxSg1`
-
-
-*Numeral possessive back aan examples:*
-* *kolmeaan:* `kolme+Num+Card+Sg+Par+PxSg3`
-
-
-*Numeral possessive back eenback examples:*
-* *kahdekseen:* `kaksi+Num+Card+Sg+Tra+PxSg3`
-
-
-*Numeral possessive back een front examples:*
-* *neljäkseen:* `neljä+Num+Card+Sg+Tra+PxSg3`
-
-
-*Numeral possessive back ään examples:*
-* *viittään:* `viisi+Num+Card+Sg+Par+PxSg3`
-
-
-*Numeral clitic back examples:*
-* *kaksihan:* `kaksi+Num+Card+Sg+Nom+Foc/han`
-
-
-*Numeral clitic front examples:*
-* *yksihän:* `yksi+Num+Card+Sg+Nom+Foc/han`
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/numerals.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/affixes/numerals.lexc)</small># Adjective inflection
+<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/affixes/symbols.lexc)</small># Adjective inflection
 The adjectives are inflected like regular nouns. The only morphological
 difference in adjectives compared to other nouns is higher likelihood of
 comparative derivations–they are fully productive. For adjectives that do
@@ -15524,40 +14814,75 @@ Adjectives can usually be derived into sti adverbs productively
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/affixes/adjectives.lexc)</small>
-# Symbol affixes
+<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/affixes/adjectives.lexc)</small># Adverb inflection
+Most adverbs are morphologically either sti-derivations of adjectives or
+some specific form of an existing or archaic noun, and they have limited
+inflection in form of possessives and clitics carried over. According to
+modern dictionaries different forms of same root are separate adverbs,
+so they are not inflected here, but listed in roots.
+
+
+*Adverb possessive back examples:*
+* *takanani:* `takana+Adv+PxSg1` (Eng. # behind me)
+
+
+*Adverb possessive front examples:*
+* *edessäni:* `edessä+Adv+PxSg1` (Eng. # in front of me)
+
+
+*Adverb possessive back an examples:*
+* *takanaan:* `takana+Adv+PxSg3`
+
+
+*Adverb possessive back en examples:*
+* *jalkeilleen:* `jalkeille+Adv+PxSg3` (Eng. # he awakened)
+
+
+*Adverb possessive front en examples:*
+* *keskelleen:* `keskelle+Adv+PxPl3` (Eng. # amidst them)
+
+
+*Adverb possessive front än examples:*
+* *edessään:* `edessä+Adv+PxSg3`
+
+
+*Adverb clitic back examples:*
+* *nopeastihan:* `nopeasti+Adv+Foc/han` (Eng. # fast)
+
+
+*Adverb clitic front examples:*
+* *tyhmästihän:* `tyhmästi+Adv+Foc/han` (Eng. # stupidly)
+
+
+
+
+
+
+
+
 
 
 
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/affixes/symbols.lexc)</small>
-# Guesser
-A rule-based morphological guesser is based on using the paradigms from the
-dictionary based analyser but replacing the roots with patterns. For Finnish
-we have quite neat paradigms with well-defined stem patterns: vowel harmony,
-stem vowels and some with specific syllable counts
+<small>This (part of) documentation was generated from [../src/fst/affixes/adv.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/affixes/adv.lexc)</small># Interjections
+Interjections are mainly parts of spoken language that are minimal turns
+in dialogue, curses, onomatopoeia and such. Interjections are a subset
+of particles, and do not inflect. They are quite productive kind of, though
+limited in form  ; they stem from arbitrary combinations of characters to
 
-## Symbols used for guesser `Multichar_Symbols`
-Guesser uses a subset of the morphological analyser's alphabet. For
-documentation c.f. [morphology root](root-fst-src.html).
 
+Only add new interjections that are found from corpora.
+
+*Interjections examples:*
+* *aah:* `aah+Interj`
+* *äh:* `äh+Interj`
 
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/guess-patterns.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/guess-patterns.lexc)</small># Prefixes
-Prefixes are bound morphs that can appear in beginning of the compounds,
-mostly forms of nominals. Finnish does not have almost any real prefix 
-morphemes.
-
-
-*Prefixes examples:*
-* *alabanaani:* `ala+N+Pref#banaani+N+Sg+Nom` (Eng. # lower banana)
-* *erikoistyyppi:* `erikois+N+Pref#tyyppi+N+Sg+Nom` (Eng. # special guy)
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/prefixes.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/prefixes.lexc)</small>
+<small>This (part of) documentation was generated from [../src/fst/stems/interj.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/interj.lexc)</small>
 # Continuation lexicons for Finnish abbreviations
 
 Abbreviations are shortened forms that do not inflect. They have whatever
@@ -15587,90 +14912,522 @@ Some ar less classified
  * `jtak+N:jtak   ab-nodot-noun-itrab   ; `+N: jotakin (to)
  * `k%:lo+N:k%:lo   ab-dot-noun-trnumab   ; `+N: kello
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/fin-abbreviations.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/fin-abbreviations.lexc)</small># Other symbols
-Punctuation characters detailed here are the characters that appear commonly
-in Finnish texts, but are not part of words or linguistic content. The
-punctuations control clause and sentence level annotations, and range
-from full stops and commas to brackets. While punctuation symbols might
-have limited use as inflecting units, the ones described here refer to
-punctuation symbols as used in their primary purpose, in isolation. The
-part of language norms controlling punctuation are from orthography and
-the references of punctuation in good language use are not from the grammar
-but issues of Kielikello journal on good Finnish language use. The most
-current issue on punctuation was [Kielikello 
-2/2006|http://arkisto.kielikello.fi/index.php?mid=2&pid=12&maid=110] (N.B.
-you may need to buy subscription or route through university servers).
+<small>This (part of) documentation was generated from [../src/fst/stems/fin-abbreviations.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/fin-abbreviations.lexc)</small># Pronouns
+Pronouns are a closed special sub class of nouns. Morphologically pronouns
+have often defective, heteroclitic or otherwise irregular inflectional
+patterns, and certain pronouns have an morphophonologically distinct
+accusative case, extinct from other noun classes 
+Further reading: [VISK §§ 
+100|http://scripta.kotus.fi/visk/sisalto.php?p=100] – 104, Semantics ...
+[VISK § 7XX](http://scripta.kotus.fi/visk/sisalto.php?p=7XX)
+
+Pronouns are subdivided into categories by semantic and syntactic means.
+Semantic categories delimit the type of referents (humane, sentient,
+object), qualification and quantification. (interrogative, quantor).
+Morphosyntactically distinct is class of proadjectives, that inflect and
+act like adjectives.
+There are six personal pronouns for the six deictic references used; first,
+second and third singular and plural. The personal pronouns have separate
+accusative cases marked by t suffix. The pronouns in standard literary
+Finnish are *minä* (I), *sinä* (you), *hän* (he), *me* (we), *te* (you),
+*he* (they). 
+Further reading: [VISK § 100](http://scripta.kotus.fi/visk/sisalto.php?p=100)
+
+*Personal pronouns examples:*
+* *minä:* `minä+Pron+Pers+Sg+Nom` (Eng. # me)
+* *sinut:* `sinä+Pron+Pers+Sg+Acc`
+* *heille:* `he+Pron+Pers+Pl+All`
 
 
-The primary punctuation marks are sentence final punctuation, they mark
-the end of a sentence. The most typical of these is full stop symbol, which
-ends neutral sentences. The exclamation mark and question mark end
-exclamative and questioning sentences respectively. An elliptic or unfinished
-sentence is ended with three successive full stops. In sloppy writing style
-it is common to use two, four or more full stops to mark an elliptic
-sentence. The Unicode compatibility character ellipsis has never been used
-for Finnish language and must not be used. Same applies for other
-combinations of sentence ending punctuation marks, the most common of these
-have separate analyses.
+The personal pronouns are among the most dialectally varied words of the
+Finnish language. The pronouns forms are one of the factors separating
+eastern dialects from the western ones. The personal pronouns of eastern
+dialects are *mie*, *sie*, (*hää*, *hiä*), *myö*, *työ*, *hyö* resp.;
+The third singular being rare in modern use. |citation-needed|
 
-*Punctuation and symbols examples:*
-* *.:* `.+Punct` (Eng. # full stop)
+In the western dialects the pronouns are *mää*, *sää* for first and second
+singular, and more variedly *meitti*, *teitti*, *heitti* for plurals.
 
-The clause level punctuation marks are used in clause boundaries. The most
-typical of these is comma. The colon and semicolon are too. The clause
-boundaries do not have separate semantics needed in applications so they only
-have analyses for clause boundaries.
+In standard spoken Finnish, and in many cases even in written form, the
+words *mä* and *sä* are more common and preferred to longer minä and sinä
+for first and second singular respectively. In practice the distinction is
+much like between Estonian corresponding pronouns, but official norm still
+recommends only the long forms.
+For third singular the nominative form is *hän* as in standard written 
+language, however the inflection is without intervening *-ne-* part.
+In old literary Finnish and poetic language the forms *ma* and *sa* are
+still used.
+
+There are six demonstrative pronouns for six non-personal references. In
+standard written Finnish these are *tämä* (this), *tuo* (that), *se* (it),
+*nämä* (these), *nuo* (those), *ne* (those).
+
+Further reading: [VISK § 101](http://scripta.kotus.fi/visk/sisalto.php?p=101)
+
+*Demonstrative pronouns examples:*
+* *tämä:* `tämä+Pron+Dem+Sg+Nom`
+* *tuolle:* `tuo+Pron+Dem+Sg+All`
+
+In standard spoken Finnish the demonstrative pronouns are commonly
+*tää*, *toi*, *nää*, *noi* instead of *tämä*, *tuo*, *nämä*, *nuo*.
+
+Interrogative pronouns are used in question clauses. The basic
+interrogatives in standard written Finnish are *kuka* (who), *mikä* (what),
+*kumpi* (which); *millainen* (what kind of), *kuinka* (how),
+*miksi* (what for). 
+Further reading: [VISK §734](http://scripta.kotus.fi/visk/sisalto.php?p=734)
+
+*Interrogative pronouns examples:*
+* *kuka:* `kuka+Pron+Interr+Sg+Nom` (Eng. # who)
+* *ketä:* `kuka+Pron+Interr+Sg+Par`
+* *kenet:* `kuka+Pron+Interr+Sg+Acc`
+
+The stem of *kuka* is shortened by from *kene* to *ke* in spoken language.
+
+Few forms of *kuka* based on *ken* stem and *ku* stem have become archaic.
+Fuhrer reading: [VISK §102](http://scripta.kotus.fi/visk/sisalto.php?p=102)
+Also the short form of *mi* is archaic and limited to poetic
+use. |citation-needed|
+
+Relative pronouns are *kuka*, *joka* and *mikä* (which, whose). VISK §735|
+They are morphologically indistinct from corresponding interrogative
+pronouns.
+
+*Relative pronouns examples:*
+* *kuka:* `kuka+Pron+Rel+Sg+Nom`
 
 
-The brackets are used to offset portions of text in opening and closing
-pairs. The most common pair is round brackets. Others used in Finnish are
-square, curly and angle brackets, in somewhat decreasing order of commonness.
-The angle brackets are commonly replaced by lower than symbol for opening and
-greater than symbol for closing bracket.
-The bracketed question mark is used to indicate uncertainty and bracketed
-exclamation mark to indicate surprise, both of these annotations are used
-within sentence as other bracketed constructions.
 
-The quotation marks are used to offset quotations. The typical ones in
-Finnish are the 9-shaped double quotation marks and apostrophes. Angle
-quotation marks can also be used, primarily in books and newspapers.
-It is possible to replace curly quotation marks with neutral typewriter
-ones where technology limits. It is also common to see foreign quotation
-marks or accent marks in place of quotation marks in sloppy writing style.
 
-There are two different dashes in Finnish. The hyphen is used for mainly
-word internally and won't appear as itself. The dash is used to offset
-some sentences or mark elision. The dash symbol can be either of unicode
-dash symbols or replaced with dash offset by spaces. In sloppy writing,
-two hyphens are often used in place of dashes.
+Quantor pronouns correspond to existential and universal quantifiers and
+their negations. The generic quantors are *joku* (someone),
+*jokin* (something), *jokainen* (everyone), *kaikki* (everything),
+*kukin* (each one), *kukaan* (no one), *mikään* (nothing), *jokunen*,
+*muutama*, *harva* (a few), *moni* (many) and *useampi* (more). The
+dual quantors, quantifying over set of two objects are *jompikumpi* (either
+or), *kumpikin*, *molemmat* (both), *kumpikaan* (neither). 
+[VISK §740](http://scripta.kotus.fi/visk/sisalto.php?p=740)
+The quantor pronouns subsume the class of indefinite pronouns used in
+older grammar defintions. 
+[VISK §742](http://scripta.kotus.fi/visk/sisalto.php?p=742)
+The indefinite quantifiers are classified as
+indefinite quantors for the sake of compatibility. This covers *joku*,
+*jokin*, *jompikumpi*, as well as specific
+*eräs*, *muuan* (some), *yksi* (one).  
+Further reading [VISK §746](http://scripta.kotus.fi/visk/sisalto.php?p=746)
+– 749.
 
-The space is used to separate words. For most applications the space has
-separate meaning so it rarely gets used as a symbol in applications of
+*Quantor pronouns examples:*
+* *joku:* `joku+Pron+Qu+Indef+Sg+Nom`
+* *jotkut:* `joku+Pron+Qu+Indef+Pl+Nom`
 
-Less used symbols that appear in the Finnish texts; these do not have 
-special analyses. A slash can be used as a replacement of the meaning 'or',
-as a division slash or as a separator of verses in poem. 
-Backslash is used only in computer systems.
-Underscore is used only in computer systems.
-The pipe is used in dictionaries as morhpeme boundary, and computer systems.
-At sign is used only in computer systems.
-An ampersand can be used as a replacement of the meaning 'and'.
-Percent symbol is used after numeric expressions meaning 0.01 multiplier.
-Permille symbol is used after numeric expressions meaning 0.001 multiplier.
-§ sign is used for numbering sections etc.
-Degree sign is used with measurements. The second and minute signs can be
-used in conjunction with degree sign.
-The plus sign, specific minus sign and plus-minus signs are used in
-numeric expressions. The multiplication sign is used in numeric expressions.
-The equals sign is used in formulae. The asterisk is used as a marker
-for ungrammatical constructions and computer and other expressions.
-Registered and trademark symbols are rarely used. Copyright symbol is
-rarely used. Hash sign is used in phones and computer systems.
-The doubled § sign has been used as chapter range sign. The pilcrow
-sign can be used to mark chapters.
-The currency signs for euro, dollar, pound sterling, cent and yen can be
-used. I don't think anyone uses the currency sign ¤ ever.
-The lines below this one are not from any referenced source
+
+
+
+Reflexive pronoun is the word *itse* refering to self, usually but not
+always coupled with possessive suffix to denote the referent. 
+Further reading: [VISK §729](http://scripta.kotus.fi/visk/sisalto.php?p=729)
+
+*Reflexive pronouns examples:*
+* *itse:* `itse+Pron+Refl+Sg+Nom`
+
+Reciprocal pronoun is *toinen* refering to each other. It uses possessive
+suffix to delimit the reciprocal group. 
+Further reading: [VISK §732](http://scripta.kotus.fi/visk/sisalto.php?p=732)
+
+*Reciprocal pronouns examples:*
+* *toisiamme:* `toinen+Pron+Recipr+Pl+Par+PxPl1`
+
+Proadjectives are pronouns that act in place of adjectives syntactically.
+They are formed by compounds (or derivations) of pronoun and *lainen* or
+*moinen* (such as). 
+Further reading: [VISK §715](http://scripta.kotus.fi/visk/sisalto.php?p=715)
+
+*Proadjectives examples:*
+* *jollainen:* `jollainen+A+Rel+Sg+Nom`
+
+Proadverbs are the pronouns that have lexicalised into adverbs by their
+syntax and semantics. 
+Further reading: [VISK §715](http://scripta.kotus.fi/visk/sisalto.php?p=715)
+
+*Proadverbs examples:*
+* *missä:* `missä+Adv+Interr+Ine`
+
+forms of *jompi* may not exist as free morphs. The marginal forms of
+*monias* are extinct. Oddly enough, the semireduplicative intensifier
+monituinen is nowhere to be found in VISK either.
+
+Marginally in the pro word category are nouns, adjectives and adverbs
+refering to equivalence in comparative context since they are
+also otherwise lacking meaning like other pro words. This
+fgroup includes words *sama* (same), *eri* (different), *muu* (other),
+*toinen* (another), and their derivations. 
+Further reading: [VISK §766](http://scripta.kotus.fi/visk/sisalto.php?p=766)
+
+In spoken language the supposedly non-inflecting *eri* has common inflected
+forms.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -16050,23 +15807,7 @@ The lines below this one are not from any referenced source
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/punct.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/punct.lexc)</small># Interjections
-Interjections are mainly parts of spoken language that are minimal turns
-in dialogue, curses, onomatopoeia and such. Interjections are a subset
-of particles, and do not inflect. They are quite productive kind of, though
-limited in form  ; they stem from arbitrary combinations of characters to
-
-
-Only add new interjections that are found from corpora.
-
-*Interjections examples:*
-* *aah:* `aah+Interj`
-* *äh:* `äh+Interj`
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/interj.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/interj.lexc)</small># Particles
+<small>This (part of) documentation was generated from [../src/fst/stems/pron.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/pron.lexc)</small># Particles
 The particles are all words that do not inflect at all. For compatibility
 reasons subsets of particles have been set off to classes like conjunctions,
 adverbs, adpositions, and interjections. The ones that are *not* in those classes are left here as
@@ -16158,8228 +15899,7 @@ Examples:
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/particles.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/particles.lexc)</small>Exceptions are quite strange word-forms. the ones that do not fit anywhere 
-else. This file contains all enumerated word forms that cannot reasonably be
-created from lexical data by regular inflection. Usually there should be next
-to none exceptions, it's always better to have a paradigm that covers only
-one or few words than an exception since these will not work nicely with e.g.
-compounding scheme or possibly many end applications.
-
-
-negation verb has partial inflection:
-
-* examples:*
-* *en:* `ei+V+Neg+Act+Sg1`
-* *älkää:* `ei+V+Neg+Act+Imprt+Pl2`
-* *älkööt:* `ei+V+Neg+Act+Imprt+Pl3`
-
-Some verbs only have few word-forms left:
-* *kutiaa:*
-* *taita:*
-* *paratkoon:*
-* *eläköön:*
-
-
-The noun ruoka has irregular forms:
-* *ruuassa:*
-* *ruuilla:*
-
-The adjective hyvä has heteroclitic comparative derivations too:
-* *parempi:*
-* *paremmissa:*
-* *paras:*
-* *parhaat:*
-
-Some of the nouns have archaic consonat stem forms left:
-* *vuonna:*
-* *sydännä:*
-* *jumalten:*
-* *sankarten:*
-
-few verbs have shortened forms in standard spoken Finnish
-* *meen:*
-* *tuut:*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/exceptions.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/exceptions.lexc)</small># Suffixes
-Suffixes are bound morphs that come after nominals in compounds. Finnish 
-doesn't quite have real suffixes, these are mostly compound parts.
-
-Examples:
-
-*Suffixes examples:*
-* *banaaniaaltoinen:* `banaani+N+Sg+Nom#aaltoinen+A+Sg+Nom` (Eng. # banana waveful)
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/suffixes.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/suffixes.lexc)</small># Digits and such expressions
-Digit-strings are used in place of numerals. They inflect with colon, like
-acronyms, and compound with hyphen only.
-
-Digits are constructed as several cyclic structures: integers, decimals or
-roman numerals.
-Zero alone works quite differently:
-
-*Digit zero examples:*
-* *0:* `0+Num+Sg+Nom`
-
-
-
-
-*int digit loop examples:*
-* *13:* `13+Num+Card+Sg+Nom`
-* *100:* `100+Num+Card+Sg+Nom`
-* *0000005550000000:* `0000005550000000+Num+Card+Sg+Nom`
-
-
- **LEXICON ARABICLOOP_pirinen ** essentially allows any number-sign combination, but is like the other lgs
-
-
-**LEXICON ARABICLOOP_pirinen ** is for entries not looping back 
-
-The digit strings that end in 10 to 12 + 6n 0's are inflected alike:
-
-*int digit milliard loop examples:*
-* *1000000000:* `1000000000+Num+Card+Sg+Nom`
-* *300000000000:* `300000000000+Num+Card+Sg+Nom`
-* *123456000000000000000000:* `123456000000000000000000+Num+Card+Sg+Nom`
-
-The digit strings that end in 6 to 9 + 6n 0's are inflected alike:
-
-*int digit million loop examples:*
-* *1000000:* `1000000+Num+Card+Sg+Nom`
-* *300000000:* `300000000+Num+Card+Sg+Nom`
-* *123456000000000000000:* `123456000000000000000+Num+Card+Sg+Nom`
-
-Decimal digit strings start with any number of digits 0 to 9, followed
-by decimal separator comma. The decimal dot may be allowed as substandard
-variant.
-
-*decimal digit loop examples:*
-* *1,0:* `1,0+Num+Sg+Nom`
-* *314,1:* `314,1+Num+Sg+Nom`
-
-
-The decimal digit strings end in any number of digits 0 to 9, inflected
-along the last part.
-
-*decimal digit loop more examples:*
-* *3,141:* `3,141+Num+Sg+Nom`
-* *123,345:* `123,345+Num+Sg+Nom`
-
-The decimal digit strings with dot may be allowed as sub-standard option
-with respective analysis.
-
-# Roman numerals with inflection
-Roman numerals are composed the symbols M, D, C, L, X, V, I in ascending
-scale and some combinations, they denote ordinal numbers and inflect like
-ones.
-
-## Main lexicon for roman digits
-This lexicon divides into four groups
-
-*roman numeral examples:*
-* *MM:* `MM+Num+Ord+Sg+Nom`
-* *MCXI:* `MCXI+Num+Ord+Sg+Nom`
-* *CMXCIX:* `CMXCIX+Num+Ord+Sg+Nom`
-
-## Roman numerals according to digital class, one by one
-### Roman thousands
-Thousands can be followed by any of other parts
-
-*roman numeral thousand examples:*
-* *MII:* `MII+Num+Ord+Sg+Nom`
-* *MCCCXXII:* `MCCCXXII+Num+Ord+Sg+Nom`
-
-
-### Roman hundreds
-Hundreds can be followed by anything but thousands:
-
-*roman numeral hundred examples:*
-* *CXXI:* `CXXI+Num+Ord+Sg+Nom`
-* *DXXIV:* `DXXIV+Num+Ord+Sg+Nom`
-
-### Roman tens
-Tens can be followed by ones:
-
-*roman numeral ten examples:*
-* *XIX:* `XIX+Num+Ord+Sg+Nom`
-* *XXVII:* `XXVII+Num+Ord+Sg+Nom`
-
-### Roman ones
-Ones come alone
-
-*roman numerals one to nine examples:*
-* *IX:* `IX+Num+Ord+Sg+Nom`
-* *VIII:* `VIII+Num+Ord+Sg+Nom`
-* *II:* `II+Num+Ord+Sg+Nom`
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/digits.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/digits.lexc)</small># Nouns and their classification
-Noun is the part-of-speech for words which require declination in number
-and case. Additionally nouns may have optional possessive suffixes and
-clitics combined freely at the end. While some of the nouns may exhibit 
-limited comparative derivations, generally words that can undergo
-comparation must be  classified into adjectives. The proper nouns that
-are written in initial  capital letters except when derived are handled
-separately under proper nouns, but the classification is the same.
-
-The nominals are classified by combination of the stem variations, suffix
-allomorphs and the vowel harmony. The nouns have number, case, possessive
-and clitic suffixes:
-
-*Noun examples:*
-* *talo:* `talo+N+Sg+Nom` (Eng. # house)
-* *taloa:* `talo+N+Sg+Par`
-* *taloissa:* `talo+N+Pl+Ine`
-* *talostani:* `talo+N+Sg+Ela+PxSg1`
-* *talollako:* `talo+N+Sg+Ade+Qst`
-* *taloiltammepa:* `talo+N+Pl+Abl+PxPl1+Foc/pa`
-The classification is based on suffix allomorphs, harmony, and the stem
-variation:
-* *taloja:* `talo+N+Pl+Par`
-* *sälöjä:* `sälö+N+Pl+Par` (Eng. # splinter)
-* *valtioita:* `valtio+N+Pl+Par` (Eng. # state)
-* *lepakot:* `lepakko+N+Pl+Nom` (Eng. # bat)
-* *padoissa:* `pato+N+Pl+Ine` (Eng. # dam)
-The minimal set to determine which paradigm or class noun belongs to is to
-check how it inflects in singulars of nominative,
-essive and inessive, plurals of essive, elative, partitive, illative, and
-GENITIVE. Find out stems and suffixes and match.
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/nouns.lexc)</small>Verbs are the words that inflect in tense, mood, personal suffixes, and
-clitics, but verbs also have s.c. infinite inflection pattern which is
-basically nominal derivations. The dictionary entries of verbs are
-A-infinitive forms, there are no verbs in dictionary that do not end in
-a or ä. Verbs are very distinct from other classes, their classification
-is not difficult.
-The key to find unique class for a verb is to pick stems and suffixes from:
-indicative non-past 1st singular and 3rd singular, indicative past 1st 
-singular, ...
-
-
-The auxiliary verbs require infinintive verbal phrase objects.
-Infinitives usually: *aion tappaa*, *joudun kuolemaan*
-
-
-The verbs are classified along the stem mutations suffix assimilation,
-and harmony:
-
-*Verb examples:*
-* *kutoo:* `kutoa+V+Act+Ind+Prs+Sg3` (Eng. # knit)
-* *kudotaan:* `kutoa+V+Pss+Ind+Prs+Pe4`
-* *tietää:* `tietää+V+Act+Ind+Prs+Sg3` (Eng. # know)
-* *tiesit:* `tietää+V+Act+Ind+Prt+Sg2`
-* *nähnyt:* `nähdä+V+Act+PrfPrc+Sg+Nom` (Eng. # see)
-* *juossut:* `juosta+V+Act+PrfPrc+Sg+Nom` (Eng. # run)
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/verbs.lexc)</small>## Determiners
-Finnish don’t traditionally have determiners. Some claim that few
-pronouns are used like determiners, and can be analysed as such.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/determiners.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/determiners.lexc)</small># Proper nouns
-Proper nouns are morphologically indistinct subset of nouns. They have
-some orthographical differences, required capitalisations and compounding
-with hyphens. The derivations may lowercase. They may be classified 
-semantically to match other giellatekno things in the future.
-
-
-*Proper nouns examples:*
-* *Kalle:* `Kalle+N+Prop+Sg+Nom`
-* *Joensuu:* `Joensuu+N+Prop+Sg+Nom`
-
-
-details see [noun-stems.html].
-The proper nouns are classified and inflected along noun patterns, for 
-
-
-
-Many of Proper nouns inflect like nouns... however, compound differently
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*Nouns 20 ä examples:*
-* *Hyvinkää:* `Hyvinkää+N+Prop+Sg+Nom` (Eng. # Hyvinkää)
-* *Hyvinkäätä:* `Hyvinkää+N+Prop+Sg+Par`
-* *Hyvinkäähän:* `Hyvinkää+N+Prop+Sg+Ill`
-* *Hyvinkääseen:* `Hyvinkää+N+Prop+Sg+Ill`
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/propernouns.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/propernouns.lexc)</small># Adverb classification
+<small>This (part of) documentation was generated from [../src/fst/stems/particles.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/particles.lexc)</small># Adverb classification
 Adverbs are a heterogenous mass of words with defective inflectional,
 usually sourced from various forms of nominals. It would be possible to
 classify adverbs along etymology and semantics, but we do not yet use such
@@ -24441,353 +15961,9 @@ and clitics they take or require:
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adverbs.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/adverbs.lexc)</small># Adverbial conjunctions
-The adverbial conjunctions join two unequal clauses or phrases together.
-The traditional term for this is sub-ordinating conjunction, it is assumed
-here for compatibility with other languages. Adverbial conjunctions are a
-subset of particles, so they do not inflect at all.
-
-The adverbial conjunctions are:
-ellei, että, jahka, jollei, jos, joskin, jos kohta, jotta, koska, kun,
-kunhan, mikäli, vaikka, (kunnes). 
-Further reading: [VISK § 818](http://scripta.kotus.fi/visk/sisalto.php?p=818)
-
-*Adverbial conjunctions examples:*
-* *että:* `että+CS`
-* *jotta:* `jotta+CS`
-* *koska:* `koska+CS`
-* *kun:* `kun+CS`
-* *jos:* `jos+CS`
-* *vaikka:* `vaikka+CS`
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/subjunctions.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/subjunctions.lexc)</small># Adpositions
-Adpositions are morphologically nominals that have defective inflection
-patterns. Some of them come from forms of nominals that are no longer
-used. The adpositions are classified along whether they take possessives
-clitics, or not. They also have slight syntactic and semantic differences,
-the syntactic differences are coded in the analyses to be compatible with
-other languages, but for most intents and purposes all adpositions can
-appear in both syntactic positions, after and before the head word.
-
-Examples:
-
-*Adpositions examples:*
-* *alta:* `alta+Po`
-* *alleen:* `alle+Po+PxSg3`
-* *irti:* `irti+Pr`
-* *irtikö:* `irti+Pr+Qst`
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/pp.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/pp.lexc)</small>Coordinating conjunctions
-Coordinating conjunctions combine equal clauses and phrases. As subset of
-particles, they do not inflect. The classification is solely syntactic and
-semantic, but it is used in this system for compatibility with other stuff.
-
-The coordinating conjunctions are: eli(kkä), ja, joko – tai, kuin – myös,
-‑kä, mutta, niin – kuin ‑kin/ myös, sekä, sekä – että, sun; tai, vaan, vai,
-ynnä, (saati), (sillä)
-Further reading: [VISK § 816](http://scripta.kotus.fi/visk/sisalto.php?p=816))
-
-*Coordinating conjunctions examples:*
-* *eikä:* `eikä+CC`
-* *ja:* `ja+CC`
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/conjunctions.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/conjunctions.lexc)</small># Acronym classification
-Acronyms are shortenings that inflect. They all have two inflection
-patterns, one read letter by letter, and one word-by-word. They are separate
-entries in this dictionary. For example OY will have singular illatives
-_OY:hyn_ and _OY:öön_ for _yyhyn_ and _yhtiöön_ resp., although latter is
-much rarer.
-A big majority of popular acronyms in everyday use comes from English, and
-the word-based inflection is virtually non-existent and would be very
-confusing so there's no high priority for adding that.
-
-The first classification for acronyms should be along the final letter, then
-if the final word inflection is used, the class of that word.
-
-*Acronyms examples:*
-* *OY:hyn:* `OY+N+Sg+Ill`
-* *OY:öön* `OY+N+Sg+Ill`
-
-
- * `ADSL+N:ADSL  ACRO_ÄKS  ; ` Asymmetric Digital Subscriber Line
- * `AKT+N:AKT  ACRO_EE  ;    `
- * `API+N:API  ACRO_II  ;    ` Application Programming Interface
- * `atk+N:atk  ACRO_OO  ;    ` automaattinen tekstinkäsittely
- * `BBC+N:BBC  ACRO_EE  ;    ` British Broadcasting Company
- * `BKT+N:BKT  ACRO_EE  ;    ` Brutto-Kansan-Tuote
- * `BMW+N:BMW  ACRO_EE  ;    ` Bayerische Motor W
- * `BSE+N:BSE  ACRO_EE  ;    ` 
- * `cd+N:cd  ACRO_EE  ;      ` compact disc
- * `CD+N:CD  ACRO_ÄKS  ;     ` Compact Disc
- * `CD-R+N:CD-R  ACRO_ÄKS  ; ` Compact Disc Read-Only
- * `CD-RW+N:CD-RW  ACRO_EE  ;` Compact Disc Read-Write
- * `CIA+N:CIA  ACRO_AA  ;    ` Central Intelligence Agency
- * `DDR+N:DDR  ACRO_ÄKS  ;   ` Deutsches Democratische Republic
- * `DE+N:DE  ACRO_EE  ;      ` 
- * `DFI+N:DFI  ACRO_II  ;    `
- * `DJ+N:DJ  ACRO_II  ;   ` Disc Jockey
- * `dna+N:dna  ACRO_AA  ;    ` deoxyribonucleic acid
- * `DNA+N:DNA  ACRO_AA  ;    ` Deoxyribo-Nucleic Acid
- * `DPI+N:DPI  ACRO_II  ;    ` Dots Per Inch
- * `DVD+N:DVD  ACRO_ÄKS  ;   ` Digital Versatile Disc
- * `EEC+N:EEC  ACRO_EE  ;    ` European Economy Council
- * `EKP+N:EKP  ACRO_EE  ;    ` Euroopan Keskus-Pankki
- * `EMU+N:EMU  ACRO_UU  ;    ` European Monetary Union
- * `ETY+N:ETY  ACRO_YY  ;    ` Euroopan Turvallisuus-Yhteisö
- * `EU+N:EU  ACRO_UU  ;      ` Euroopan Unioni
- * `EY+N:EY  ACRO_YY  ;      ` Euroopan Yhteisö
- * `FBI+N:FBI  ACRO_II  ;     ` Federal Bureau of Investigation
- * `FIFA+N:FIFA  ACRO_AA  ;  ` Football
- * `FTP+N:FTP  ACRO_EE  ;    ` File Transfer Protocol
- * `GM+N:GM  ACRO_ÄKS  ;     ` General Motors
- * `GPRS+N:GPRS  ACRO_ÄKS  ; ` 
- * `HIFK+N:HIFK  ACRO_OO  ;  ` Helsingfors 
- * `HIV+N:HIV  ACRO_EE  ;    ` ... Immunodeficiency Virus
- * `HJK+N:HJK  ACRO_OO  ;    ` Helsingin Jalkapallo-Klubi
- * `HKL+N:HKL  ACRO_ÄKS  ;   ` Helsingin Kaupungin Liikenne
- * `HK+N:HK  ACRO_OO  ;      ` 
- * `HS+N:HS  ACRO_ÄKS  ;     ` Helsingin Sanomat
- * `HTML+N:HTML  ACRO_ÄKS  ; ` Hyper-Text Markup Language
- * `HTTP+N:HTTP  ACRO_EE  ;  ` Hyper-Text Transfer Protocol
- * `IBM+N:IBM  ACRO_ÄKS  ;   ` International Business Machines
- * `internet-tv+N:internet-tv  ACRO_EE  ; ` Tele-Visio
- * `IP+N:IP  ACRO_EE  ;    ` Internet Protocol
- * `IRC+N:IRC  ACRO_EE  ;  ` Internet Relay Chat
- * `ISBN+N:ISBN  ACRO_ÄKS  ;   ` International Serial Book Number
- * `IT+N:IT  ACRO_EE  ;    ` Informaatio-Teknologia
- * `KHO+N:KHO  ACRO_OO  ; ` Korkein Hovi-Oikeus
- * `KOP+N:KOP  ACRO_EE  ;  ` Kansallis-Osake-Pankki
- * `lehtiö-pc+N:lehtiö-pc  ACRO_EE  ; ` Personal Computer
- * `media-pc+N:media-pc  ACRO_EE  ; ` Personal Computer
- * `MTV3+N:MTV3  ACRO_KOLME  ; ` Mainos-Tele-Visio
- * `MTV+N:MTV  ACRO_EE  ;    ` Music TeleVision
- * `NASA+N:NASA  ACRO_AA  ;    ` National Air and Space A
- * `NATO+N:NATO  ACRO_OO  ;    ` North-Atlantic T Organisation
- * `NBA+N:NBA  ACRO_AA  ;    ` National Basketball Association
- * `netti-tv+N:netti-tv  ACRO_EE  ; ` Tele-visio
- * `NHL+N:NHL  ACRO_ÄKS  ; ` National Hockey League
- * `NL+N:NL  ACRO_ÄKS  ;   ` Neuvosto-Liitto
- * `NPC+N:NPC  ACRO_EE  ;  ` Non-Player Character
- * `OK+N:OK  ACRO_OO  ;    ` not pronounced in words
- * `oyj+N:oyj  ACRO_II  ;  ` Julkinen Osake-Yhtiö (!)
- * `oy+N:oy  ACRO_YY  ;    ` Osake-Yhtiö
- * `OY+N:OY  ACRO_YY  ;    ` Osake-Yhtiö
- * `paneeli-pc+N:paneeli-pc  ACRO_EE  ;    ` Personal Computer
- * `PDF+N:PDF  ACRO_ÄKS  ; ` Portable Document Format
- * `pH+N:pH  ACRO_OO  ;    ` per Hydrogen
- * `pien-pc+N:pien-pc  ACRO_EE  ;  ` Personal Computer
- * `pinta-WWW+N:pinta-WWW  ACRO_EE  ;  ` World Wide Web
- * `PPI+N:PPI  ACRO_II  ;  ` Points Per Inch
- * `PR+N:PR  ACRO_ÄKS  ;   ` Public Relations
- * `RNA+N:RNA  ACRO_AA  ;   ` Ribonucleic Acid
- * `RSS+N:RSS  ACRO_ÄKS  ; ` R
- * `SAK+N:SAK  ACRO_OO  ;  ` Suomen Ammattiliittojen Keskusjärjestö
- * `SDP+N:SDP  ACRO_EE  ;  ` Sosiali-Demokraattinen Puolue 
- * `SGML+N:SGML  ACRO_ÄKS  ;   ` Standardised General Markup Language
- * `SKDL+N:SKDL  ACRO_ÄKS  ; ` Suomen Kristillis-Demokraattien Liitto
- * `Skp+N:Skp  ACRO_EE  ; ` Suomen keskuspankki
- * `SOK+N:SOK  ACRO_OO  ;  ` Suomen Osuus-Kauppa
- * `SPR+N:SPR  ACRO_ÄKS  ; ` Suomen Punainen Risti
- * `SQL+N:SQL  ACRO_ÄKS  ; ` Structured Query Language
- * `STT+N:STT  ACRO_EE  ;  ` Suomen Tieto-Toimisto
- * `SUL+N:SUL  ACRO_ÄKS  ; ` Suomen Urheilu-Liitto
- * `TCP/IP+N:TCP/IP  ACRO_EE  ; ` Transmission Control Protocol / Internet Protocol
- * `TCP+N:TCP  ACRO_EE  ;  ` Transmission Control Protocol
- * `TI+N:TI  ACRO_II  ;    ` Texas Instruments
- * `TM+N:TM  ACRO_ÄKS  ;   ` Tekniikan Maailma
- * `TPS+N:TPS  ACRO_ÄKS  ; ` Turun Pallo-Seura
- * `TS+N:TS  ACRO_ÄKS  ;   ` Turun Sanomat
- * `tv+N:tv  ACRO_EE  ;    ` tele-visio
- * `URL+N:URL  ACRO_ÄKS  ; ` Uniform Resource Locator
- * `USA+N:USA  ACRO_AA  ;  ` United States of America
- * `VIP+N:VIP  ACRO_EE  ;  ` Very Important Person
- * `VR+N:VR  ACRO_ÄKS  ;   ` Valtion Rautatiet
- * `VTT+N:VTT  ACRO_EE  ;  ` 
- * `VW+N:VW  ACRO_EE  ;    ` Volks Wagen
- * `WAP+N:WAP  ACRO_EE  ;  ` Wireless Application Protocol
- * `WC+N:WC  ACRO_EE  ;    ` Water Closet
- * `WHO+N:WHO  ACRO_OO  ;  ` World Health Organisation
- * `WSOY+N:WSOY  ACRO_YY  ;   ` Werner-Söderström Osake-Yhtiö
- * `WTO+N:WTO  ACRO_OO  ;  ` World Trade Organisation
- * `WWF+N:WWF  ACRO_ÄKS  ; ` World Wildlife Foundation
- * `www+N:www  ACRO_EE  ;  ` world wide web
- * `WWW+N:WWW  ACRO_EE  ;  ` World Wide Web
- * `XML+N:XML  ACRO_ÄKS  ; ` Extensible Markup Language
- * `Y2K+N:Y2K  ACRO_OO  ;  ` not spelled out
- * `YK+N:YK  ACRO_OO  ;    ` Yhdistyneet Kansakunnat
- * `YMP+N:YMP  ACRO_EE  ;  ` 
- * `YT+N:YT  ACRO_EE  ;    ` Yhteistyö?
- * `ÄO+N:ÄO  ACRO_OO  ;    ` Älykkyysosamäärä
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<small>This (part of) documentation was generated from [../src/fst/stems/adverbs.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/adverbs.lexc)</small>## Determiners
+Finnish don’t traditionally have determiners. Some claim that few
+pronouns are used like determiners, and can be analysed as such.
 
 
 
@@ -24813,7 +15989,7 @@ if the final word inflection is used, the class of that word.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/fin-acronyms.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/fin-acronyms.lexc)</small># Finnish Numerals
+<small>This (part of) documentation was generated from [../src/fst/stems/determiners.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/determiners.lexc)</small># Finnish Numerals
 
 
 
@@ -44731,7 +35907,8446 @@ being very rare to extinct for nouns.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/numerals.lexc)</small># Adjective classification
+<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/numerals.lexc)</small>Verbs are the words that inflect in tense, mood, personal suffixes, and
+clitics, but verbs also have s.c. infinite inflection pattern which is
+basically nominal derivations. The dictionary entries of verbs are
+A-infinitive forms, there are no verbs in dictionary that do not end in
+a or ä. Verbs are very distinct from other classes, their classification
+is not difficult.
+The key to find unique class for a verb is to pick stems and suffixes from:
+indicative non-past 1st singular and 3rd singular, indicative past 1st 
+singular, ...
+
+
+The auxiliary verbs require infinintive verbal phrase objects.
+Infinitives usually: *aion tappaa*, *joudun kuolemaan*
+
+
+The verbs are classified along the stem mutations suffix assimilation,
+and harmony:
+
+*Verb examples:*
+* *kutoo:* `kutoa+V+Act+Ind+Prs+Sg3` (Eng. # knit)
+* *kudotaan:* `kutoa+V+Pss+Ind+Prs+Pe4`
+* *tietää:* `tietää+V+Act+Ind+Prs+Sg3` (Eng. # know)
+* *tiesit:* `tietää+V+Act+Ind+Prt+Sg2`
+* *nähnyt:* `nähdä+V+Act+PrfPrc+Sg+Nom` (Eng. # see)
+* *juossut:* `juosta+V+Act+PrfPrc+Sg+Nom` (Eng. # run)
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/verbs.lexc)</small># Adverbial conjunctions
+The adverbial conjunctions join two unequal clauses or phrases together.
+The traditional term for this is sub-ordinating conjunction, it is assumed
+here for compatibility with other languages. Adverbial conjunctions are a
+subset of particles, so they do not inflect at all.
+
+The adverbial conjunctions are:
+ellei, että, jahka, jollei, jos, joskin, jos kohta, jotta, koska, kun,
+kunhan, mikäli, vaikka, (kunnes). 
+Further reading: [VISK § 818](http://scripta.kotus.fi/visk/sisalto.php?p=818)
+
+*Adverbial conjunctions examples:*
+* *että:* `että+CS`
+* *jotta:* `jotta+CS`
+* *koska:* `koska+CS`
+* *kun:* `kun+CS`
+* *jos:* `jos+CS`
+* *vaikka:* `vaikka+CS`
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/subjunctions.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/subjunctions.lexc)</small>Coordinating conjunctions
+Coordinating conjunctions combine equal clauses and phrases. As subset of
+particles, they do not inflect. The classification is solely syntactic and
+semantic, but it is used in this system for compatibility with other stuff.
+
+The coordinating conjunctions are: eli(kkä), ja, joko – tai, kuin – myös,
+‑kä, mutta, niin – kuin ‑kin/ myös, sekä, sekä – että, sun; tai, vaan, vai,
+ynnä, (saati), (sillä)
+Further reading: [VISK § 816](http://scripta.kotus.fi/visk/sisalto.php?p=816))
+
+*Coordinating conjunctions examples:*
+* *eikä:* `eikä+CC`
+* *ja:* `ja+CC`
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/conjunctions.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/conjunctions.lexc)</small># Prefixes
+Prefixes are bound morphs that can appear in beginning of the compounds,
+mostly forms of nominals. Finnish does not have almost any real prefix 
+morphemes.
+
+
+*Prefixes examples:*
+* *alabanaani:* `ala+N+Pref#banaani+N+Sg+Nom` (Eng. # lower banana)
+* *erikoistyyppi:* `erikois+N+Pref#tyyppi+N+Sg+Nom` (Eng. # special guy)
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/prefixes.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/prefixes.lexc)</small># Adpositions
+Adpositions are morphologically nominals that have defective inflection
+patterns. Some of them come from forms of nominals that are no longer
+used. The adpositions are classified along whether they take possessives
+clitics, or not. They also have slight syntactic and semantic differences,
+the syntactic differences are coded in the analyses to be compatible with
+other languages, but for most intents and purposes all adpositions can
+appear in both syntactic positions, after and before the head word.
+
+Examples:
+
+*Adpositions examples:*
+* *alta:* `alta+Po`
+* *alleen:* `alle+Po+PxSg3`
+* *irti:* `irti+Pr`
+* *irtikö:* `irti+Pr+Qst`
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/pp.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/pp.lexc)</small># Proper nouns
+Proper nouns are morphologically indistinct subset of nouns. They have
+some orthographical differences, required capitalisations and compounding
+with hyphens. The derivations may lowercase. They may be classified 
+semantically to match other giellatekno things in the future.
+
+
+*Proper nouns examples:*
+* *Kalle:* `Kalle+N+Prop+Sg+Nom`
+* *Joensuu:* `Joensuu+N+Prop+Sg+Nom`
+
+
+details see [noun-stems.html].
+The proper nouns are classified and inflected along noun patterns, for 
+
+
+
+Many of Proper nouns inflect like nouns... however, compound differently
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*Nouns 20 ä examples:*
+* *Hyvinkää:* `Hyvinkää+N+Prop+Sg+Nom` (Eng. # Hyvinkää)
+* *Hyvinkäätä:* `Hyvinkää+N+Prop+Sg+Par`
+* *Hyvinkäähän:* `Hyvinkää+N+Prop+Sg+Ill`
+* *Hyvinkääseen:* `Hyvinkää+N+Prop+Sg+Ill`
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/propernouns.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/propernouns.lexc)</small># Digits and such expressions
+Digit-strings are used in place of numerals. They inflect with colon, like
+acronyms, and compound with hyphen only.
+
+Digits are constructed as several cyclic structures: integers, decimals or
+roman numerals.
+Zero alone works quite differently:
+
+*Digit zero examples:*
+* *0:* `0+Num+Sg+Nom`
+
+
+
+
+*int digit loop examples:*
+* *13:* `13+Num+Card+Sg+Nom`
+* *100:* `100+Num+Card+Sg+Nom`
+* *0000005550000000:* `0000005550000000+Num+Card+Sg+Nom`
+
+
+ **LEXICON ARABICLOOP_pirinen ** essentially allows any number-sign combination, but is like the other lgs
+
+
+**LEXICON ARABICLOOP_pirinen ** is for entries not looping back 
+
+The digit strings that end in 10 to 12 + 6n 0's are inflected alike:
+
+*int digit milliard loop examples:*
+* *1000000000:* `1000000000+Num+Card+Sg+Nom`
+* *300000000000:* `300000000000+Num+Card+Sg+Nom`
+* *123456000000000000000000:* `123456000000000000000000+Num+Card+Sg+Nom`
+
+The digit strings that end in 6 to 9 + 6n 0's are inflected alike:
+
+*int digit million loop examples:*
+* *1000000:* `1000000+Num+Card+Sg+Nom`
+* *300000000:* `300000000+Num+Card+Sg+Nom`
+* *123456000000000000000:* `123456000000000000000+Num+Card+Sg+Nom`
+
+Decimal digit strings start with any number of digits 0 to 9, followed
+by decimal separator comma. The decimal dot may be allowed as substandard
+variant.
+
+*decimal digit loop examples:*
+* *1,0:* `1,0+Num+Sg+Nom`
+* *314,1:* `314,1+Num+Sg+Nom`
+
+
+The decimal digit strings end in any number of digits 0 to 9, inflected
+along the last part.
+
+*decimal digit loop more examples:*
+* *3,141:* `3,141+Num+Sg+Nom`
+* *123,345:* `123,345+Num+Sg+Nom`
+
+The decimal digit strings with dot may be allowed as sub-standard option
+with respective analysis.
+
+# Roman numerals with inflection
+Roman numerals are composed the symbols M, D, C, L, X, V, I in ascending
+scale and some combinations, they denote ordinal numbers and inflect like
+ones.
+
+## Main lexicon for roman digits
+This lexicon divides into four groups
+
+*roman numeral examples:*
+* *MM:* `MM+Num+Ord+Sg+Nom`
+* *MCXI:* `MCXI+Num+Ord+Sg+Nom`
+* *CMXCIX:* `CMXCIX+Num+Ord+Sg+Nom`
+
+## Roman numerals according to digital class, one by one
+### Roman thousands
+Thousands can be followed by any of other parts
+
+*roman numeral thousand examples:*
+* *MII:* `MII+Num+Ord+Sg+Nom`
+* *MCCCXXII:* `MCCCXXII+Num+Ord+Sg+Nom`
+
+
+### Roman hundreds
+Hundreds can be followed by anything but thousands:
+
+*roman numeral hundred examples:*
+* *CXXI:* `CXXI+Num+Ord+Sg+Nom`
+* *DXXIV:* `DXXIV+Num+Ord+Sg+Nom`
+
+### Roman tens
+Tens can be followed by ones:
+
+*roman numeral ten examples:*
+* *XIX:* `XIX+Num+Ord+Sg+Nom`
+* *XXVII:* `XXVII+Num+Ord+Sg+Nom`
+
+### Roman ones
+Ones come alone
+
+*roman numerals one to nine examples:*
+* *IX:* `IX+Num+Ord+Sg+Nom`
+* *VIII:* `VIII+Num+Ord+Sg+Nom`
+* *II:* `II+Num+Ord+Sg+Nom`
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/digits.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/digits.lexc)</small># Nouns and their classification
+Noun is the part-of-speech for words which require declination in number
+and case. Additionally nouns may have optional possessive suffixes and
+clitics combined freely at the end. While some of the nouns may exhibit 
+limited comparative derivations, generally words that can undergo
+comparation must be  classified into adjectives. The proper nouns that
+are written in initial  capital letters except when derived are handled
+separately under proper nouns, but the classification is the same.
+
+The nominals are classified by combination of the stem variations, suffix
+allomorphs and the vowel harmony. The nouns have number, case, possessive
+and clitic suffixes:
+
+*Noun examples:*
+* *talo:* `talo+N+Sg+Nom` (Eng. # house)
+* *taloa:* `talo+N+Sg+Par`
+* *taloissa:* `talo+N+Pl+Ine`
+* *talostani:* `talo+N+Sg+Ela+PxSg1`
+* *talollako:* `talo+N+Sg+Ade+Qst`
+* *taloiltammepa:* `talo+N+Pl+Abl+PxPl1+Foc/pa`
+The classification is based on suffix allomorphs, harmony, and the stem
+variation:
+* *taloja:* `talo+N+Pl+Par`
+* *sälöjä:* `sälö+N+Pl+Par` (Eng. # splinter)
+* *valtioita:* `valtio+N+Pl+Par` (Eng. # state)
+* *lepakot:* `lepakko+N+Pl+Nom` (Eng. # bat)
+* *padoissa:* `pato+N+Pl+Ine` (Eng. # dam)
+The minimal set to determine which paradigm or class noun belongs to is to
+check how it inflects in singulars of nominative,
+essive and inessive, plurals of essive, elative, partitive, illative, and
+GENITIVE. Find out stems and suffixes and match.
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/nouns.lexc)</small># Suffixes
+Suffixes are bound morphs that come after nominals in compounds. Finnish 
+doesn't quite have real suffixes, these are mostly compound parts.
+
+Examples:
+
+*Suffixes examples:*
+* *banaaniaaltoinen:* `banaani+N+Sg+Nom#aaltoinen+A+Sg+Nom` (Eng. # banana waveful)
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/suffixes.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/suffixes.lexc)</small># Acronym classification
+Acronyms are shortenings that inflect. They all have two inflection
+patterns, one read letter by letter, and one word-by-word. They are separate
+entries in this dictionary. For example OY will have singular illatives
+_OY:hyn_ and _OY:öön_ for _yyhyn_ and _yhtiöön_ resp., although latter is
+much rarer.
+A big majority of popular acronyms in everyday use comes from English, and
+the word-based inflection is virtually non-existent and would be very
+confusing so there's no high priority for adding that.
+
+The first classification for acronyms should be along the final letter, then
+if the final word inflection is used, the class of that word.
+
+*Acronyms examples:*
+* *OY:hyn:* `OY+N+Sg+Ill`
+* *OY:öön* `OY+N+Sg+Ill`
+
+
+ * `ADSL+N:ADSL  ACRO_ÄKS  ; ` Asymmetric Digital Subscriber Line
+ * `AKT+N:AKT  ACRO_EE  ;    `
+ * `API+N:API  ACRO_II  ;    ` Application Programming Interface
+ * `atk+N:atk  ACRO_OO  ;    ` automaattinen tekstinkäsittely
+ * `BBC+N:BBC  ACRO_EE  ;    ` British Broadcasting Company
+ * `BKT+N:BKT  ACRO_EE  ;    ` Brutto-Kansan-Tuote
+ * `BMW+N:BMW  ACRO_EE  ;    ` Bayerische Motor W
+ * `BSE+N:BSE  ACRO_EE  ;    ` 
+ * `cd+N:cd  ACRO_EE  ;      ` compact disc
+ * `CD+N:CD  ACRO_ÄKS  ;     ` Compact Disc
+ * `CD-R+N:CD-R  ACRO_ÄKS  ; ` Compact Disc Read-Only
+ * `CD-RW+N:CD-RW  ACRO_EE  ;` Compact Disc Read-Write
+ * `CIA+N:CIA  ACRO_AA  ;    ` Central Intelligence Agency
+ * `DDR+N:DDR  ACRO_ÄKS  ;   ` Deutsches Democratische Republic
+ * `DE+N:DE  ACRO_EE  ;      ` 
+ * `DFI+N:DFI  ACRO_II  ;    `
+ * `DJ+N:DJ  ACRO_II  ;   ` Disc Jockey
+ * `dna+N:dna  ACRO_AA  ;    ` deoxyribonucleic acid
+ * `DNA+N:DNA  ACRO_AA  ;    ` Deoxyribo-Nucleic Acid
+ * `DPI+N:DPI  ACRO_II  ;    ` Dots Per Inch
+ * `DVD+N:DVD  ACRO_ÄKS  ;   ` Digital Versatile Disc
+ * `EEC+N:EEC  ACRO_EE  ;    ` European Economy Council
+ * `EKP+N:EKP  ACRO_EE  ;    ` Euroopan Keskus-Pankki
+ * `EMU+N:EMU  ACRO_UU  ;    ` European Monetary Union
+ * `ETY+N:ETY  ACRO_YY  ;    ` Euroopan Turvallisuus-Yhteisö
+ * `EU+N:EU  ACRO_UU  ;      ` Euroopan Unioni
+ * `EY+N:EY  ACRO_YY  ;      ` Euroopan Yhteisö
+ * `FBI+N:FBI  ACRO_II  ;     ` Federal Bureau of Investigation
+ * `FIFA+N:FIFA  ACRO_AA  ;  ` Football
+ * `FTP+N:FTP  ACRO_EE  ;    ` File Transfer Protocol
+ * `GM+N:GM  ACRO_ÄKS  ;     ` General Motors
+ * `GPRS+N:GPRS  ACRO_ÄKS  ; ` 
+ * `HIFK+N:HIFK  ACRO_OO  ;  ` Helsingfors 
+ * `HIV+N:HIV  ACRO_EE  ;    ` ... Immunodeficiency Virus
+ * `HJK+N:HJK  ACRO_OO  ;    ` Helsingin Jalkapallo-Klubi
+ * `HKL+N:HKL  ACRO_ÄKS  ;   ` Helsingin Kaupungin Liikenne
+ * `HK+N:HK  ACRO_OO  ;      ` 
+ * `HS+N:HS  ACRO_ÄKS  ;     ` Helsingin Sanomat
+ * `HTML+N:HTML  ACRO_ÄKS  ; ` Hyper-Text Markup Language
+ * `HTTP+N:HTTP  ACRO_EE  ;  ` Hyper-Text Transfer Protocol
+ * `IBM+N:IBM  ACRO_ÄKS  ;   ` International Business Machines
+ * `internet-tv+N:internet-tv  ACRO_EE  ; ` Tele-Visio
+ * `IP+N:IP  ACRO_EE  ;    ` Internet Protocol
+ * `IRC+N:IRC  ACRO_EE  ;  ` Internet Relay Chat
+ * `ISBN+N:ISBN  ACRO_ÄKS  ;   ` International Serial Book Number
+ * `IT+N:IT  ACRO_EE  ;    ` Informaatio-Teknologia
+ * `KHO+N:KHO  ACRO_OO  ; ` Korkein Hovi-Oikeus
+ * `KOP+N:KOP  ACRO_EE  ;  ` Kansallis-Osake-Pankki
+ * `lehtiö-pc+N:lehtiö-pc  ACRO_EE  ; ` Personal Computer
+ * `media-pc+N:media-pc  ACRO_EE  ; ` Personal Computer
+ * `MTV3+N:MTV3  ACRO_KOLME  ; ` Mainos-Tele-Visio
+ * `MTV+N:MTV  ACRO_EE  ;    ` Music TeleVision
+ * `NASA+N:NASA  ACRO_AA  ;    ` National Air and Space A
+ * `NATO+N:NATO  ACRO_OO  ;    ` North-Atlantic T Organisation
+ * `NBA+N:NBA  ACRO_AA  ;    ` National Basketball Association
+ * `netti-tv+N:netti-tv  ACRO_EE  ; ` Tele-visio
+ * `NHL+N:NHL  ACRO_ÄKS  ; ` National Hockey League
+ * `NL+N:NL  ACRO_ÄKS  ;   ` Neuvosto-Liitto
+ * `NPC+N:NPC  ACRO_EE  ;  ` Non-Player Character
+ * `OK+N:OK  ACRO_OO  ;    ` not pronounced in words
+ * `oyj+N:oyj  ACRO_II  ;  ` Julkinen Osake-Yhtiö (!)
+ * `oy+N:oy  ACRO_YY  ;    ` Osake-Yhtiö
+ * `OY+N:OY  ACRO_YY  ;    ` Osake-Yhtiö
+ * `paneeli-pc+N:paneeli-pc  ACRO_EE  ;    ` Personal Computer
+ * `PDF+N:PDF  ACRO_ÄKS  ; ` Portable Document Format
+ * `pH+N:pH  ACRO_OO  ;    ` per Hydrogen
+ * `pien-pc+N:pien-pc  ACRO_EE  ;  ` Personal Computer
+ * `pinta-WWW+N:pinta-WWW  ACRO_EE  ;  ` World Wide Web
+ * `PPI+N:PPI  ACRO_II  ;  ` Points Per Inch
+ * `PR+N:PR  ACRO_ÄKS  ;   ` Public Relations
+ * `RNA+N:RNA  ACRO_AA  ;   ` Ribonucleic Acid
+ * `RSS+N:RSS  ACRO_ÄKS  ; ` R
+ * `SAK+N:SAK  ACRO_OO  ;  ` Suomen Ammattiliittojen Keskusjärjestö
+ * `SDP+N:SDP  ACRO_EE  ;  ` Sosiali-Demokraattinen Puolue 
+ * `SGML+N:SGML  ACRO_ÄKS  ;   ` Standardised General Markup Language
+ * `SKDL+N:SKDL  ACRO_ÄKS  ; ` Suomen Kristillis-Demokraattien Liitto
+ * `Skp+N:Skp  ACRO_EE  ; ` Suomen keskuspankki
+ * `SOK+N:SOK  ACRO_OO  ;  ` Suomen Osuus-Kauppa
+ * `SPR+N:SPR  ACRO_ÄKS  ; ` Suomen Punainen Risti
+ * `SQL+N:SQL  ACRO_ÄKS  ; ` Structured Query Language
+ * `STT+N:STT  ACRO_EE  ;  ` Suomen Tieto-Toimisto
+ * `SUL+N:SUL  ACRO_ÄKS  ; ` Suomen Urheilu-Liitto
+ * `TCP/IP+N:TCP/IP  ACRO_EE  ; ` Transmission Control Protocol / Internet Protocol
+ * `TCP+N:TCP  ACRO_EE  ;  ` Transmission Control Protocol
+ * `TI+N:TI  ACRO_II  ;    ` Texas Instruments
+ * `TM+N:TM  ACRO_ÄKS  ;   ` Tekniikan Maailma
+ * `TPS+N:TPS  ACRO_ÄKS  ; ` Turun Pallo-Seura
+ * `TS+N:TS  ACRO_ÄKS  ;   ` Turun Sanomat
+ * `tv+N:tv  ACRO_EE  ;    ` tele-visio
+ * `URL+N:URL  ACRO_ÄKS  ; ` Uniform Resource Locator
+ * `USA+N:USA  ACRO_AA  ;  ` United States of America
+ * `VIP+N:VIP  ACRO_EE  ;  ` Very Important Person
+ * `VR+N:VR  ACRO_ÄKS  ;   ` Valtion Rautatiet
+ * `VTT+N:VTT  ACRO_EE  ;  ` 
+ * `VW+N:VW  ACRO_EE  ;    ` Volks Wagen
+ * `WAP+N:WAP  ACRO_EE  ;  ` Wireless Application Protocol
+ * `WC+N:WC  ACRO_EE  ;    ` Water Closet
+ * `WHO+N:WHO  ACRO_OO  ;  ` World Health Organisation
+ * `WSOY+N:WSOY  ACRO_YY  ;   ` Werner-Söderström Osake-Yhtiö
+ * `WTO+N:WTO  ACRO_OO  ;  ` World Trade Organisation
+ * `WWF+N:WWF  ACRO_ÄKS  ; ` World Wildlife Foundation
+ * `www+N:www  ACRO_EE  ;  ` world wide web
+ * `WWW+N:WWW  ACRO_EE  ;  ` World Wide Web
+ * `XML+N:XML  ACRO_ÄKS  ; ` Extensible Markup Language
+ * `Y2K+N:Y2K  ACRO_OO  ;  ` not spelled out
+ * `YK+N:YK  ACRO_OO  ;    ` Yhdistyneet Kansakunnat
+ * `YMP+N:YMP  ACRO_EE  ;  ` 
+ * `YT+N:YT  ACRO_EE  ;    ` Yhteistyö?
+ * `ÄO+N:ÄO  ACRO_OO  ;    ` Älykkyysosamäärä
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/fin-acronyms.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/fin-acronyms.lexc)</small># Adjective classification
 Adjectives are words that are inflected like nouns, with few additions. For
 adjectives, the comparative derivations are usually allowed and the
 possessive suffixes are unlikely. The syntactic adjectives that do not have
@@ -44756,160 +44371,62 @@ allomorph selection and the harmony. See the list from:
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/adjectives.lexc)</small># Pronouns
-Pronouns are a closed special sub class of nouns. Morphologically pronouns
-have often defective, heteroclitic or otherwise irregular inflectional
-patterns, and certain pronouns have an morphophonologically distinct
-accusative case, extinct from other noun classes 
-Further reading: [VISK §§ 
-100|http://scripta.kotus.fi/visk/sisalto.php?p=100] – 104, Semantics ...
-[VISK § 7XX](http://scripta.kotus.fi/visk/sisalto.php?p=7XX)
-
-Pronouns are subdivided into categories by semantic and syntactic means.
-Semantic categories delimit the type of referents (humane, sentient,
-object), qualification and quantification. (interrogative, quantor).
-Morphosyntactically distinct is class of proadjectives, that inflect and
-act like adjectives.
-There are six personal pronouns for the six deictic references used; first,
-second and third singular and plural. The personal pronouns have separate
-accusative cases marked by t suffix. The pronouns in standard literary
-Finnish are *minä* (I), *sinä* (you), *hän* (he), *me* (we), *te* (you),
-*he* (they). 
-Further reading: [VISK § 100](http://scripta.kotus.fi/visk/sisalto.php?p=100)
-
-*Personal pronouns examples:*
-* *minä:* `minä+Pron+Pers+Sg+Nom` (Eng. # me)
-* *sinut:* `sinä+Pron+Pers+Sg+Acc`
-* *heille:* `he+Pron+Pers+Pl+All`
-
-
-The personal pronouns are among the most dialectally varied words of the
-Finnish language. The pronouns forms are one of the factors separating
-eastern dialects from the western ones. The personal pronouns of eastern
-dialects are *mie*, *sie*, (*hää*, *hiä*), *myö*, *työ*, *hyö* resp.;
-The third singular being rare in modern use. |citation-needed|
-
-In the western dialects the pronouns are *mää*, *sää* for first and second
-singular, and more variedly *meitti*, *teitti*, *heitti* for plurals.
-
-In standard spoken Finnish, and in many cases even in written form, the
-words *mä* and *sä* are more common and preferred to longer minä and sinä
-for first and second singular respectively. In practice the distinction is
-much like between Estonian corresponding pronouns, but official norm still
-recommends only the long forms.
-For third singular the nominative form is *hän* as in standard written 
-language, however the inflection is without intervening *-ne-* part.
-In old literary Finnish and poetic language the forms *ma* and *sa* are
-still used.
-
-There are six demonstrative pronouns for six non-personal references. In
-standard written Finnish these are *tämä* (this), *tuo* (that), *se* (it),
-*nämä* (these), *nuo* (those), *ne* (those).
-
-Further reading: [VISK § 101](http://scripta.kotus.fi/visk/sisalto.php?p=101)
-
-*Demonstrative pronouns examples:*
-* *tämä:* `tämä+Pron+Dem+Sg+Nom`
-* *tuolle:* `tuo+Pron+Dem+Sg+All`
-
-In standard spoken Finnish the demonstrative pronouns are commonly
-*tää*, *toi*, *nää*, *noi* instead of *tämä*, *tuo*, *nämä*, *nuo*.
-
-Interrogative pronouns are used in question clauses. The basic
-interrogatives in standard written Finnish are *kuka* (who), *mikä* (what),
-*kumpi* (which); *millainen* (what kind of), *kuinka* (how),
-*miksi* (what for). 
-Further reading: [VISK §734](http://scripta.kotus.fi/visk/sisalto.php?p=734)
+<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/adjectives.lexc)</small>Exceptions are quite strange word-forms. the ones that do not fit anywhere 
+else. This file contains all enumerated word forms that cannot reasonably be
+created from lexical data by regular inflection. Usually there should be next
+to none exceptions, it's always better to have a paradigm that covers only
+one or few words than an exception since these will not work nicely with e.g.
+compounding scheme or possibly many end applications.
 
-*Interrogative pronouns examples:*
-* *kuka:* `kuka+Pron+Interr+Sg+Nom` (Eng. # who)
-* *ketä:* `kuka+Pron+Interr+Sg+Par`
-* *kenet:* `kuka+Pron+Interr+Sg+Acc`
 
-The stem of *kuka* is shortened by from *kene* to *ke* in spoken language.
+negation verb has partial inflection:
 
-Few forms of *kuka* based on *ken* stem and *ku* stem have become archaic.
-Fuhrer reading: [VISK §102](http://scripta.kotus.fi/visk/sisalto.php?p=102)
-Also the short form of *mi* is archaic and limited to poetic
-use. |citation-needed|
+* examples:*
+* *en:* `ei+V+Neg+Act+Sg1`
+* *älkää:* `ei+V+Neg+Act+Imprt+Pl2`
+* *älkööt:* `ei+V+Neg+Act+Imprt+Pl3`
 
-Relative pronouns are *kuka*, *joka* and *mikä* (which, whose). VISK §735|
-They are morphologically indistinct from corresponding interrogative
-pronouns.
+Some verbs only have few word-forms left:
+* *kutiaa:*
+* *taita:*
+* *paratkoon:*
+* *eläköön:*
 
-*Relative pronouns examples:*
-* *kuka:* `kuka+Pron+Rel+Sg+Nom`
 
+The noun ruoka has irregular forms:
+* *ruuassa:*
+* *ruuilla:*
 
+The adjective hyvä has heteroclitic comparative derivations too:
+* *parempi:*
+* *paremmissa:*
+* *paras:*
+* *parhaat:*
 
+Some of the nouns have archaic consonat stem forms left:
+* *vuonna:*
+* *sydännä:*
+* *jumalten:*
+* *sankarten:*
 
-Quantor pronouns correspond to existential and universal quantifiers and
-their negations. The generic quantors are *joku* (someone),
-*jokin* (something), *jokainen* (everyone), *kaikki* (everything),
-*kukin* (each one), *kukaan* (no one), *mikään* (nothing), *jokunen*,
-*muutama*, *harva* (a few), *moni* (many) and *useampi* (more). The
-dual quantors, quantifying over set of two objects are *jompikumpi* (either
-or), *kumpikin*, *molemmat* (both), *kumpikaan* (neither). 
-[VISK §740](http://scripta.kotus.fi/visk/sisalto.php?p=740)
-The quantor pronouns subsume the class of indefinite pronouns used in
-older grammar defintions. 
-[VISK §742](http://scripta.kotus.fi/visk/sisalto.php?p=742)
-The indefinite quantifiers are classified as
-indefinite quantors for the sake of compatibility. This covers *joku*,
-*jokin*, *jompikumpi*, as well as specific
-*eräs*, *muuan* (some), *yksi* (one).  
-Further reading [VISK §746](http://scripta.kotus.fi/visk/sisalto.php?p=746)
-– 749.
+few verbs have shortened forms in standard spoken Finnish
+* *meen:*
+* *tuut:*
 
-*Quantor pronouns examples:*
-* *joku:* `joku+Pron+Qu+Indef+Sg+Nom`
-* *jotkut:* `joku+Pron+Qu+Indef+Pl+Nom`
 
 
 
 
-Reflexive pronoun is the word *itse* refering to self, usually but not
-always coupled with possessive suffix to denote the referent. 
-Further reading: [VISK §729](http://scripta.kotus.fi/visk/sisalto.php?p=729)
 
-*Reflexive pronouns examples:*
-* *itse:* `itse+Pron+Refl+Sg+Nom`
 
-Reciprocal pronoun is *toinen* refering to each other. It uses possessive
-suffix to delimit the reciprocal group. 
-Further reading: [VISK §732](http://scripta.kotus.fi/visk/sisalto.php?p=732)
 
-*Reciprocal pronouns examples:*
-* *toisiamme:* `toinen+Pron+Recipr+Pl+Par+PxPl1`
 
-Proadjectives are pronouns that act in place of adjectives syntactically.
-They are formed by compounds (or derivations) of pronoun and *lainen* or
-*moinen* (such as). 
-Further reading: [VISK §715](http://scripta.kotus.fi/visk/sisalto.php?p=715)
 
-*Proadjectives examples:*
-* *jollainen:* `jollainen+A+Rel+Sg+Nom`
 
-Proadverbs are the pronouns that have lexicalised into adverbs by their
-syntax and semantics. 
-Further reading: [VISK §715](http://scripta.kotus.fi/visk/sisalto.php?p=715)
 
-*Proadverbs examples:*
-* *missä:* `missä+Adv+Interr+Ine`
 
-forms of *jompi* may not exist as free morphs. The marginal forms of
-*monias* are extinct. Oddly enough, the semireduplicative intensifier
-monituinen is nowhere to be found in VISK either.
 
-Marginally in the pro word category are nouns, adjectives and adverbs
-refering to equivalence in comparative context since they are
-also otherwise lacking meaning like other pro words. This
-fgroup includes words *sama* (same), *eri* (different), *muu* (other),
-*toinen* (another), and their derivations. 
-Further reading: [VISK §766](http://scripta.kotus.fi/visk/sisalto.php?p=766)
 
-In spoken language the supposedly non-inflecting *eri* has common inflected
-forms.
 
 
 
@@ -44989,289 +44506,91 @@ forms.
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/exceptions.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/exceptions.lexc)</small># Other symbols
+Punctuation characters detailed here are the characters that appear commonly
+in Finnish texts, but are not part of words or linguistic content. The
+punctuations control clause and sentence level annotations, and range
+from full stops and commas to brackets. While punctuation symbols might
+have limited use as inflecting units, the ones described here refer to
+punctuation symbols as used in their primary purpose, in isolation. The
+part of language norms controlling punctuation are from orthography and
+the references of punctuation in good language use are not from the grammar
+but issues of Kielikello journal on good Finnish language use. The most
+current issue on punctuation was [Kielikello 
+2/2006|http://arkisto.kielikello.fi/index.php?mid=2&pid=12&maid=110] (N.B.
+you may need to buy subscription or route through university servers).
 
 
+The primary punctuation marks are sentence final punctuation, they mark
+the end of a sentence. The most typical of these is full stop symbol, which
+ends neutral sentences. The exclamation mark and question mark end
+exclamative and questioning sentences respectively. An elliptic or unfinished
+sentence is ended with three successive full stops. In sloppy writing style
+it is common to use two, four or more full stops to mark an elliptic
+sentence. The Unicode compatibility character ellipsis has never been used
+for Finnish language and must not be used. Same applies for other
+combinations of sentence ending punctuation marks, the most common of these
+have separate analyses.
 
+*Punctuation and symbols examples:*
+* *.:* `.+Punct` (Eng. # full stop)
 
+The clause level punctuation marks are used in clause boundaries. The most
+typical of these is comma. The colon and semicolon are too. The clause
+boundaries do not have separate semantics needed in applications so they only
+have analyses for clause boundaries.
 
 
+The brackets are used to offset portions of text in opening and closing
+pairs. The most common pair is round brackets. Others used in Finnish are
+square, curly and angle brackets, in somewhat decreasing order of commonness.
+The angle brackets are commonly replaced by lower than symbol for opening and
+greater than symbol for closing bracket.
+The bracketed question mark is used to indicate uncertainty and bracketed
+exclamation mark to indicate surprise, both of these annotations are used
+within sentence as other bracketed constructions.
 
+The quotation marks are used to offset quotations. The typical ones in
+Finnish are the 9-shaped double quotation marks and apostrophes. Angle
+quotation marks can also be used, primarily in books and newspapers.
+It is possible to replace curly quotation marks with neutral typewriter
+ones where technology limits. It is also common to see foreign quotation
+marks or accent marks in place of quotation marks in sloppy writing style.
 
+There are two different dashes in Finnish. The hyphen is used for mainly
+word internally and won't appear as itself. The dash is used to offset
+some sentences or mark elision. The dash symbol can be either of unicode
+dash symbols or replaced with dash offset by spaces. In sloppy writing,
+two hyphens are often used in place of dashes.
 
+The space is used to separate words. For most applications the space has
+separate meaning so it rarely gets used as a symbol in applications of
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Less used symbols that appear in the Finnish texts; these do not have 
+special analyses. A slash can be used as a replacement of the meaning 'or',
+as a division slash or as a separator of verses in poem. 
+Backslash is used only in computer systems.
+Underscore is used only in computer systems.
+The pipe is used in dictionaries as morhpeme boundary, and computer systems.
+At sign is used only in computer systems.
+An ampersand can be used as a replacement of the meaning 'and'.
+Percent symbol is used after numeric expressions meaning 0.01 multiplier.
+Permille symbol is used after numeric expressions meaning 0.001 multiplier.
+§ sign is used for numbering sections etc.
+Degree sign is used with measurements. The second and minute signs can be
+used in conjunction with degree sign.
+The plus sign, specific minus sign and plus-minus signs are used in
+numeric expressions. The multiplication sign is used in numeric expressions.
+The equals sign is used in formulae. The asterisk is used as a marker
+for ungrammatical constructions and computer and other expressions.
+Registered and trademark symbols are rarely used. Copyright symbol is
+rarely used. Hash sign is used in phones and computer systems.
+The doubled § sign has been used as chapter range sign. The pilcrow
+sign can be used to mark chapters.
+The currency signs for euro, dollar, pound sterling, cent and yen can be
+used. I don't think anyone uses the currency sign ¤ ever.
+The lines below this one are not from any referenced source
 
 
 
@@ -45651,7 +44970,688 @@ forms.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/pron.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/pron.lexc)</small>## Number transcriptions
+<small>This (part of) documentation was generated from [../src/fst/stems/punct.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/punct.lexc)</small>
+
+# Morphology
+The morphological division of Finnish words has three classes: verbal,
+nominal and others. The verbs are identified by personal, temporal,
+modal and infinite inflection. The nominals are identified by numeral and
+case inflection. The others are, apart from being the rest, identified by
+defective or missing inflection.
+
+## Symbols used for analysis `Multichar_Symbols`
+The Finnish morphological implementation uses analysis symbols mainly to
+encode morphological analyses, the rest are implemented else where. Some
+non-morphological analyses or classifications are retained for
+interoperability and historical reasons. There are further details and
+examples of this classification in other parts of this documents; this page
+merely summarises the codes used in this version of the system.
+### Parts-of-speech
+The main morphological division of words is merely: Verbs, Nominals,
+Rest.
+The syntactic and semantic subdivision is realised in POS tags.
+The nominals consist of nouns (substantiivi), adjectives, pro words
+and numerals. Verbs are non-divisible, but include infinitive and particple
+forms. The others are subdivided into adpositions, adverbs and particles.
+Further reading: [VISK s.v.
+sanaluokka|http://scripta.kotus.fi/visk/visk_termit.cgi?h_id=sCABBIDAI],
+[VISK § 438](http://scripta.kotus.fi/visk/sisallys.php?p=438).
+
+### Temporary list of added tags
+These tags were added as part of a tag unification, and should be
+put where they belong.
+
+Are there tags not declared in root.lexc or misspelled?
+Have a look at these:
+ * `+Dash		            `: XXX check this tag!
+ * `+Dial/Finland           `: XXX check this tag!
+ * `+Dial/standard          `: XXX check this tag!
+ * `+Gyr		            `: XXX check this tag!
+ * `+Pref-		            `: XXX check this tag!
+ * `+Pro		            `: XXX check this tag!
+ * `+TruncPrefix            `: XXX check this tag!
+ * `+Use/N		            `: XXX check this tag!
+ * `+Use/sub	            `: XXX check this tag!
+ * `+s			            `: XXX check this tag!
+
+ * **+CLBfinal**  Sentence final abbreviated expression ending in full stop, so that the full stop is ambiguous
+
+
+
+
+
+### Parts of speech
+
+
+ * `+V `: Verb
+ * `+N `: Noun
+ * `+A `: Adjective
+ * `+ACR `: Acronym
+ * `+ABBR `: Abbreviation
+ * +Symbol = independent symbols in the text stream, like £, €, ©
+ * `+Acr `: Acronym
+ * `+Num `: Numerals
+ * `+Adv `: Adverb
+ * `+Pron `: Pronoun
+ * `+Pcle  `: Particle, except:
+ * `+Interj `: Interjection
+
+The part-of-speech analyses are typically the first:
+
+*Analysis examples examples:*
+* *kutoo:* `kutoa+V+Act+Ind+Prs+Sg3` (Eng. # knits)
+* *talo:* `talo+N+Sg+Nom` (Eng. # house)
+* *nopea:* `nopea+A+Sg+Nom` (Eng. # fast)
+* *yksi:* `yksi+Num+Card+Sg+Nom` (Eng. # one)
+* *nopeasti:* `nopeasti+Adv` (Eng. # fast)
+* *hän:* `hän+Pron+Pers+Sg+Nom` (Eng. # he)
+* *ahaa:* `ahaa+Pcle` (Eng. # ah)
+* *äh:* `äh+Interj` (Eng. # uh)
+
+### Nouns
+In nominal analyses, the proper nouns have additional subanalysis.
+Proper nouns are usually written with initial capitals–or more recently,
+totally arbitrary capitalisations, such as in brand names nVidia and ATi.
+Proper nouns do have full inflectional morphology exactly as other nouns, but
+work slightly differently in derivation and compounding. Some capitalised
+nouns may also lose capitalisation in derivation.
+[VISK § 98](http://scripta.kotus.fi/visk/sisallys.php?p=98)
+
+The code for proper nouns:
+ * `+Prop `: Proper noun
+
+Proper noun tag follows noun analysis:
+* *Pekka:* `Pekka+N+Prop+Sg+Nom` (Eng. # Pekka)
+
+### Pronouns
+Pronominal analyses have some semantic classes.
+[VISK § 101](http://scripta.kotus.fi/visk/sisallys.php?p=101)–104.
+Codes for various semantic classes:
+ * `+Pers  `: Personal
+ * `+Dem `: Demonstrative
+ * `+Interr `: Interrogative
+ * `+Rel `: Relative
+ * `+Qu `: Quantor
+ * `+Qnt `: Quantor?????
+ * `+Refl `: Reflexive
+ * `+Recipr `: Reciprocal
+ * `+Indef `: Indefinite
+
+Semantic tags follow pronoun analyses:
+* *minä:* `minä+Pron+Pers+Sg+Nom` (Eng. # I)
+* *tämä:* `tämä+Pron+Dem+Sg+Nom` (Eng. # this)
+* *kuka:* `kuka+Pron+Interr+Sg+Nom` (Eng. # who)
+* *joka:* `joka+Pron+Rel+Sg+Nom` (Eng. # which)
+* *kaikki:* `kaikki+Pron+Qu+Sg+Nom` (Eng. # every)
+* *itse:* `itse+Pron+Refl+Sg+Nom` (Eng. # self)
+* *toistaan:* `toinen+Pron+Recipr+Sg+Par+PxSg3` (Eng. # each other)
+* *joku:* `joku+Pron+Qu+Indef+Sg+Nom` (Eng. # someone)
+
+ * `+Sem/Human `: Semantic class: Human
+ * `+Sem/Geo `: Semantic class: Geographic
+ * `+Sem/Org `: Semantic class: Organisation
+
+ * `+Sem/Build		        `: 
+ * `+Sem/Build-room	        `: 
+ * `+Sem/Cat		        `: 
+ * `+Sem/Date		        `: 
+ * `+Sem/Domain		        `: 
+ * `+Sem/Dummytag	        `: 
+ * `+Sem/Event		        `: 
+ * `+Sem/Fem		        `: 
+ * `+Sem/Group_Hum	        `: 
+ * `+Sem/Hum		        `: 
+ * `+Sem/ID			        `: 
+ * `+Sem/Mal		        `: 
+ * `+Sem/Mat		        `: 
+ * `+Sem/Measr		        `: 
+ * `+Sem/Money		        `: 
+ * `+Sem/Obj		        `: 
+ * `+Sem/Obj-el		        `: 
+ * `+Sem/Obj-ling	        `: 
+ * `+Sem/Org_Prod-audio     `: 
+ * `+Sem/Org_Prod-vis       `: 
+ * `+Sem/Plc		        `: 
+ * `+Sem/Prod-vis	        `: 
+ * `+Sem/Route		        `: 
+ * `+Sem/Rule		        `: 
+ * `+Sem/State-sick	        `: 
+ * `+Sem/Substnc	        `: 
+ * `+Sem/Time-clock	        `: 
+ * `+Sem/Tool-it	        `: 
+ * `+Sem/Txt		        `: 
+ * `+Sem/Veh		        `: 
+ * `+Sem/Year		        `: 
+
+### Numerals
+In numeral analyses, there are multiple analyses.
+The numerals have semantic subcategories
+([VISK § 770](http://scripta.kotus.fi/visk/sisallys.php?p=770)).
+The classical ordinal  numbers  have been adjectivised in current
+descriptions ([VISK § 771](http://scripta.kotus.fi/visk/sisallys.php?p=771)),
+the  ordinal interpretation is still spelled out in subcategories. The
+numbers are often  written with digits or other specific notations.
+Numeral class tags:
+ * `+Card  `: Cardinal
+ * `+Ord `: Ordinals
+
+* *kolme:* `kolme+Num+Card+Sg+Nom` (Eng. # three)
+* *kolmas:* `kolmas+Num+Ord+Sg+Nom` (Eng. # third)
+
+### Particles
+The particles are subcategorised syntax-wise into conjunctions for all words,
+that govern subclauses
+([VISK § 812](http://scripta.kotus.fi/visk/sisallys.php?p=812)). The
+conjunctions are further divided, whether the subclause is coordinant or
+subordinant to the governing clause and few other syntactic types
+([VISK § 816](http://scripta.kotus.fi/visk/sisallys.php?p=816)). _N.B._ that
+the division to subordinating and coordinating conjucntions is motivated
+by other systems, including legacy systems, whereas the grammar presents
+also different  categorisations for conjunctions (including naming
+subordination adverbials).
+Conjunction syntax tags:
+ * `+CC `: Coordinating
+ * `+CS `: Adverbial
+
+The conjunction tags take place of part-of-speech tags for legacy reasons:
+* *ja:* `ja+CC`
+* *vaikka:* `vaikka+CS`
+
+### Adpositions
+In adposition anlayses, the syntactic tendencies are shown in sub-analyses;
+whether they appear typically before or after their heads
+[VISK § 687](http://scripta.kotus.fi/visk/sisallys.php?p=687).
+
+Adposition syntax tags:
+ * `+Adp `: Adposition
+ * `+Po `: Postposition
+ * `+Pr `: Preposition
+
+Adpositions are tagged in POS position:
+* *läpi:* `läpi+Po`
+
+Tags for sub-POS
+
+ * `+Arab			        `: 
+ * `+Attr			        `: 
+ * `+Coll			        `: 
+ * `+Rom			        `: 
+
+
+### Bound root morphs
+The lexical items that appear as bound morphemes before head word are
+classified as prefixes ([VISK §
+172|http://scripta.kotus.fi/visk/sisallys.php?p=172]). Prefixes are rare and
+mostly of foreign  origin. The singular forms of plurale tantums are also
+potential prefixes.
+
+ * `+Pref `: Prefixes
+
+Suffixes are typically word forms or derivations that only appear as
+bound morphs. Other than that Finnish does not really have proper suffixes.
+This means that suffixed words are in effect compounds of where the last
+word just doesn't appear as free morph.
+ * `+Suff `: Suffixes
+
+### Symbols
+Symbols are not part of linguistic data per se so we classify them according
+to the needs of end user applications
+
+ * `+Punct `: any punctuation
+ * `+Quote `: quote marks
+
+The analyses for symbols are like POSes:
+* *.:* `.+Punct` (Eng. # .)
+
+### Nominal analyses
+The analyses of nominals show the inflection in number. Nominals inflect in
+number, to mark plurality of the word. The number for nouns is either
+singular or plural.
+Further reading: [VISK § 79](http://scripta.kotus.fi/visk/sisallys.php?p=79)
+Number tags:
+ * `+Sg `: Singular
+ * `+Pl `: Plural
+
+Number tags are next to POSes in nominal analyses, and in order of morphs:
+* *padassa:* `pata+N+Sg+Ine` (Eng. # pot)
+* *padoissa:* `pata+N+Pl+Ine`
+
+The analyses of nominals have case inflection marked.
+The nominals have case inflection
+([VISK § 81](http://scripta.kotus.fi/visk/sisallys.php?p=81))
+to mark syntactic roles
+(nominative, partitive, accusative-genitive) and semantics
+(others, partially even syntactic cases).
+ * `+Nom `: (Mostly) Syntactic cases: Nominative
+ * `+Par `: Partitive
+ * `+Gen `: Genitive
+ * `+Ine `: Inner Locative cases: Inessive
+ * `+Ela `: Elative
+ * `+Ill `: Illative
+ * `+Ade `: Outer locative cases: Adessive
+ * `+Abl `: Ablative
+ * `+All `: Allative
+ * `+Ess `: Others, semantic, marginal: Essive
+ * `+Ins `: Instructive
+ * `+Abe `: Abessive
+ * `+Tra `: Translative
+ * `+Com `: Comitative
+
+The case is next to number and last obligatory analysis in nominals:
+* *taloa:* `talo+N+Sg+Par`
+* *talon:* `talo+N+Sg+Gen`
+* *talossa:* `talo+N+Sg+Ine`
+* *talosta:* `talo+N+Sg+Ela`
+* *taloon:* `talo+N+Sg+Ill`
+* *talolla:* `talo+N+Sg+Ade`
+* *talolta:* `talo+N+Sg+Abl`
+* *talolle:* `talo+N+Sg+All`
+* *talona:* `talo+N+Sg+Ess`
+* *taloin:* `talo+N+Pl+Ins`
+* *talotta:* `talo+N+Sg+Abe`
+* *taloksi:* `talo+N+Sg+Tra`
+* *taloine:* `talo+N+Com`
+
+The analyses of a infinitive short form have lative ending; this is largely
+historical ([VISK § 120](http://scripta.kotus.fi/visk/sisallys.php?p=120)).
+Some adpositions might have same analysis in diachronic analyses.
+
+ * `+Lat `: Lative case
+
+The analyses of certain nominals give explicit analysis for accusative case.
+The accusative case has distinctive marker in few pronouns and these are only
+cases that are analysed as accusatives.
+([VISK § 81](http://scripta.kotus.fi/visk/sisallys.php?p=81)).
+Other accusatives have the same case marking as genitive form, and only use
+that analysis in synchronic analyses.
+
+ * `+Acc `: Explicit accusative analysis
+
+* *hänet:* `hän+Pron+Pers+Sg+Acc`
+
+Adverbs and adpositions may have some special analyses in diachronic
+analyses.
+Further reading: [VISK §
+371|http://scripta.kotus.fi/visk/sisallys.php?p=371] – 385
+
+ * `+Prl `: Adverbial cases: Prolative
+ * `+Distr `: Distributive
+ * `+Tempr `: Temporal
+
+
+### Possessives
+The analyses of nominals include possessive if present.
+Posessive ending indicates ownership. The possessive can take six possible
+values from singular and plural, first, second and third person references,
+where third person form is always ambiguous over plurality.
+Further reading: [VISK § 95](http://scripta.kotus.fi/visk/sisallys.php?p=95)
+ * `+PxSg1 `: Possessives: First singular (mine)
+ * `+PxSg2 `: Second singular (yours)
+ * `+PxSg3 `: Third singular (his)
+ * `+PxPl1 `: First plural (ours)
+ * `+PxPl2 `: Second plural (yours)
+ * `+PxPl3 `: Third plural (theirs)
+ * `+Px3 `: Third ambiguous (his/theirs)
+
+ * `+Sg1 `: Verbs: First singular (I)
+ * `+Sg2 `: Second singular (your
+ * `+Sg3 `: Third singular (he)
+ * `+Pl1 `: First plural (we)
+ * `+Pl2 `: Second plural (you)
+ * `+Pl3 `: Third plural (thy)
+
+* *taloni:* `talo+N+Sg+Nom+PxSg1`
+* *talosi:* `talo+N+Sg+Nom+PxSg2`
+* *talonsa:* `talo+N+Sg+Nom+PxSg3`
+* *talomme:* `talo+N+Sg+Nom+PxPl1`
+* *talonne:* `talo+N+Sg+Nom+PxPl2`
+
+### Compound forms
+In compound analyses, the derived compound form that is not a free morph
+is marked with special analysis.  Some words have forms only appearing in
+compounds.
+Further reading: [VISK § 406](http://scripta.kotus.fi/visk/sisallys.php?p=406)
++Der/s   Compound form
+
+* *naisien:* `nainen+N+Der/s#ien+N+Sg+Nom` (Eng. # female gum)
+
+### Finite verbs
+All verb analyses contain voice marking. For finite verb forms active voice
+is tied to personal forms and passive voice to non-personal verb endings.
+The voice is also marked in the infinite verb forms.
+Further reading: [VISK § 110](http://scripta.kotus.fi/visk/sisallys.php?p=110)
+ * `+Act `: Active voice
+ * `+Pss `: Passive voice
+
+It is the first analysis of verb strings:
+* *kudot:* `kutoa+V+Act+Ind+Prs+Sg2`
+
+Finite verb form analyses have a reading for tense. The tense has two values.
+For moods other than indicative the tense is not distinctive in surface form,
+and therefore not marked in the analyses.
+The morphologically distinct forms in Finnish are only past and non-past
+tenses, while other are created syntactically and not marked in morphological
+analyses.
+Further reading: [VISK § 111](http://scripta.kotus.fi/visk/sisallys.php?p=111)
+– 112
+ * `+Prs `: Non-past (present)
+ * `+Prt `: Past (preterite)
+
+The tense is marked in indicative forms after mood:
+* *kudon:* `kutoa+V+Act+Ind+Prs+Sg1`
+* *kudoin:* `kutoa+V+Act+Ind+Prt+Sg1`
+
+Finite verb form analyses have a reading for mood. Mood has four central
+readings and few archaic and marginal. The mood is marked in analyses for
+all finite forms, even the unmarked indicative.
+Further reading: [VISK § 115](http://scripta.kotus.fi/visk/sisallys.php?p=115)
+– 118
+ * `+Ind `: Common moods: Indicative
+ * `+Cond `: Conditional
+ * `+Pot `: Potential
+ * `+Imprt `: Imperative
+ * `+Opt `: Archaic moods: Optative
+ * `+Eventv `: Eventive
+
+The mood is after voice in the analysis string and in morph order:
+* *kutonen:* `kutoa+V+Act+Pot+Sg1`
+
+Finite verb form analyses have a reading for person. Personal ending of verb
+defines the actors.  The person analysis has seven possible values,
+six for the singular and plural groups of first, second and third person
+forms, and one specifically for passive. The passive personal form is encoded
+as fourth person passive, which had been the common practice in past systems.
+Further reading: [VISK § 106](http://scripta.kotus.fi/visk/sisallys.php?p=106)
+– 107
+ * `+Sg1 `: First singular
+ * `+Sg2 `: Second singular
+ * `+Sg3 `: Third singular
+ * `+Pl1 `: First plural
+ * `+Pl2 `: Second plural
+ * `+Pl3 `: Third plural
+
+The person is the last required analysis for verbs, after the mood:
+* *kudon:* `kutoa+V+Act+Ind+Prs+Sg1`
+* *kudot:* `kutoa+V+Act+Ind+Prs+Sg2`
+* *kutoo:* `kutoa+V+Act+Ind+Prs+Sg3`
+* *kudomme:* `kutoa+V+Act+Ind+Prs+Pl1`
+* *kudotte:* `kutoa+V+Act+Ind+Prs+Pl2`
+* *kutovat:* `kutoa+V+Act+Ind+Prs+Pl3`
+
+### Negation and verbs
+The analyses of verb for the forms that require negation verb have a special
+analysis for it.
+ * `+ConNeg `: Connegative form
+
+* *kudo:* `kutoa+V+Ind+Prs+ConNeg`
+
+The suitable negation verbs have sub-analysis that can be matched to negated
+forms on syntactic level.
+ * `+Neg `: Negation verb
+
+* *ei:* `ei+V+Neg+Act+Sg3`
+
+### Infinite verb forms
+Infinitive verb forms have infinitive or nominal derivation analyses.
+In traditional grammars the infinitive forms were called I, II, III, IV and V
+infinitive, the modern grammar replaces the first three with A, E and MA
+respectively. The IV infinitive, which has *minen* suffix marker, has been
+re-analysed as derivational and this is reflected in |omorfi|. The V
+infinitive is also assumed to be mainly derivational, but included here for
+reference.
+Further reading: [VISK § 120](http://scripta.kotus.fi/visk/sisallys.php?p=120)
+– 121
+The infinitives have limited nominal inflection.
+ * `+InfA `: A infinitive (first)
+ * `+InfE `: E infinitive (second)
+ * `+InfMa `: MA infinitive (third)
+ * `+Der/minen `: minen derivation (fourth)
+ * `+Der/maisilla `: maisilla derivation (fifth)
+
+Infinitive analysis comes after voice, followed by nominal analyses:
+* *kutoa:* `kutoa+V+Act+InfA+Sg+Lat`
+* *kutoessa:* `kutoa+V+Act+InfE+Sg+Ine`
+* *kutomatta:* `kutoa+V+Act+InfMa+Sg+Abe`
+* *kutominen:* `kutoa+V+Der/minen+Sg+Nom`
+* *kutomaisillani:* `kutoa+V+Act+Der/maisilla+PxSg1`
+
+### Participles
+Participial verb forms have participle readings. There are 4 participle
+forms. Like infinitives, participles in traditional grammars were named
+I and II where NUT and VA are used in modern grammars.  The agent and
+negation participle have sometimes been considered outside regular
+inflection, but in modern Finnish grammars are alongside other participles
+and so they are included in inflection in omorfi as well. In some grammars
+the NUT and VA participles have been called past and present participles
+respectively, drawing parallels from other languages. The modern grammar
+avoids them as misleading but this description uses them
+Further reading: [VISK § 122](http://scripta.kotus.fi/visk/sisallys.php?p=122)
+ * `+PrfPrc `: NUT participle (first, perfect)
+ * `+PrsPrc `: VA participle (second, present)
+ * `+NegPrc `: Negation participle
+ * `+AgPrc `: Agent partiicple
+
+Participle analyses are right after voice, followed by adjectival analyses:
+* *kutonut:* `kutoa+V+Act+PrfPrc+Sg+Nom`
+* *kutova:* `kutoa+V+Act+PrsPrc+Sg+Nom`
+* *kutomaton:* `kutoa+V+NegPrc+Sg+Nom`
+* *kutomani:* `kutoa+V+AgPrc+Sg+Nom+PxSg1`
+
+There are number of implementations that mix up MA infinitives and Agent
+participles, and they share part of the same forms but no semantics and very
+little of syntax.
+
+### Comparation
+Adjective and some adverbial analyses are marked for comparation. The
+non-marked forms are comparative and superlative. For adjectives, comparative
+suffixes precede the nominal inflection.
+c.f. [VISK § 300](http://scripta.kotus.fi/visk/sisallys.php?p=300)
+ * `+Comp `: Comparative
+ * `+Superl `: Superlative (was +Sup, now standardised)
+
+The comparison analysis occupies derivation spot, after POS:
+* *nopeampi:* `nopea+A+Comp+Sg+Nom`
+* *nopein:* `nopea+A+Sup+Sg+Nom`
+
+### Enclitic focus particles
+All word forms can have clitics which are analysed by their orthography.
+Clitics are suffixes which can attach almost anywhere in the ends of words,
+both verb forms and nominals. They also attach on end of other clitics,
+theoretically infinite chains. In practice it is usual to see at most three
+in one word form. Two clitics have limited use: -s only appears in few
+verb forms and combined to other clitics and -kA only appears with few
+adverbs and negation verb.
+[VISK § 126](http://scripta.kotus.fi/visk/sisallys.php?p=126) – 131
+ * `+Foc/han `: -hAn; affirmative etc.
+ * `+Foc/kaan `: -kAAn; "neither"
+ * `+Foc/kin `: -kin; "also"
+ * `+Foc/pa `: -pA; "indeed"
+ * `+Foc/s `: -s; polite?
+ * `+Foc/ka `: -kA; "nor"
+ * `+Qst `: -kO: Question focus
+
+
+### Derivation
+The derivation is not a central feature of this morphology, it is mainly
+used to collect new roots for dictionaries. This is roughly in order of
+perceived productivity already:
+ * `+Der/sti `: Common derivations: A→Adv (in A manner)
+ * `+Der/ja `: V→N (doer of V)
+ * `+Der/inen `: N→A (containing N)
+ * `+Der/lainen `: N→A (style of N)
+ * `+Der/tar `: N→N (feminine N)
+ * `+Der/llinen `: N→N (consisting of N)
+ * `+Der/ton `: N→A (without N)
+ * `+Der/tse `: N→Adp (via N)
+ * `+Der/vs `: A→N (quality of A)
+ * `+Der/u `: V→N (act of V)
+ * `+Der/ttain `: N→Adv (by amounts of N)
+ * `+Der/ttaa `: V→V (make someone do V)
+ * `+Der/tattaa `: V→V (make someone do V; "first indirection")
+ * `+Der/tatuttaa `: V→V (make someone do V; "second indirection")
+ * `+Der/uus `: A→N (A-ness)
+ * `+Der/nti `: V→N (regular derivation from all but 2 -da/-dä V)
+
+### Usage
+The analyses of some words and word-forms indicate limitedness of usage.
+This includes common mispellings, archaic words and forms
+and otherwise rare words and forms. Especially, the forms that are in
+parentheses in lexical sources and word-forms that had the usage annotation
+in there have been carried over.
+ * `+Err/Orth `: Sub-standard usage
+ * `+Err/Hyph		        `: 
+ * `+Err/Lex		        `: 
+ * `+Err/SpaceCmp	        `: 
+
+ * `+Use/Marg `: Marginal
+ * `+Use/Rare  `: Rare
+ * `+Use/NG   `: Do not generate
+ * `+Use/Hyphen `: With hyphens
+ * `+Use/NoHyphens `: With hyphens
+
+ * **+Use/PMatch** means that the following is only used in the analyser feeding the disambiguator. This is missing.
+
+ * `+Use/-PMatch	        `: 
+
+ * `+Use/-Spell		        `: 
+ * `+Use/Arch		        `: 
+ * `+Use/SpellNoSugg        `: 
+
+Usage tags are pushed wherever appropriate:
+* *nallein:* `nalle+N+Pl+Gen+Use/Rare`
+
+###  Homonym tags
+
+ * `+v1				        `: 
+ * `+v2				        `: 
+
+
+### Dialects
+The informal language use contains different Finnish than the literary
+standard, this is marked as standard dialect (yleispuhekieli):
+common features include
+dropping final vowels, dropping final i components of unstressed diphtongs,
+few other shortenings.
+Other dialects are also sometimes analysed;
+the geographical division has three levels:
+East versus West,
+East containing Savo and South-East (North?)
+West containing North, perä, keski and eteläpohjalaiset, southwest and Häme
+The third level dialect division is traditionally by "town" borders, be
+cautious when adding these though; it's not the main target of this
+mrophology.
+
+ * `+Dial `: any unclassified dialect
+ * `+Dial/Standard `: standard spoken Finnish
+ * `+Dial/East `: Eastern dialects
+ * `+Dial/West `: Western dialects
+ * `+Dial/Southwest `: South-western dialects
+ * `+Dial/Häme `: Tavastian dialects
+ * `+Dial/Eteläpohjalaiset `: South Osthrobotnian dialects
+ * `+Dial/Keskipohjalaiset `: Middle Osthrobotnian dialects
+ * `+Dial/Peräpohjalaiset `: North Osthrobotnian dialects
+ * `+Dial/North `: North Finnish dialects
+ * `+Dial/Savo `: Savonian dialects
+ * `+Dial/Southeast `: South-eastern dialects
+
+
+### Tags for language of unassimilated name
+ * `+OLang/ENG		        `: 
+ * `+OLang/eng		        `: is a typo, FIX
+ * `+OLang/FIN		        `: 
+ * `+OLang/NNO		        `: 
+ * `+OLang/NOB		        `: 
+ * `+OLang/RUS		        `: 
+ * `+OLang/SMA		        `: 
+ * `+OLang/SME		        `: 
+ * `+OLang/SWE		        `: 
+ * `+OLang/UND		        `: 
+
+### Others
+The boundaries of compounds that are not lexicalised in the dictionary will
+have compound analyses, the compounds may also have usage tags. The
+compounding analyses concern also syntagmatic melting mishmash.
++Use/Circ      Compound boundary
+
+ * **+Cmp** - Dynamic compound. This tag should always be part
+           of a dynamic compound. It is important for
+           Apertium, and useful in other cases as well.
+ * `+Cmp/Hyph		        `: 
+ * `+CmpNP/None		        `: 
+
+The word and morpheme boundaries are used to limit the effective range of
+far-reaching rules, such as vowel harmony. The boundaries are marked by
+curly bracketed hashes or underscores. The word boundaries are marked by #,
+The lexical item boundaries by ##, the inflectional morpheme boundaries
+by >, the derivational morpheme boundaries by », and some etymological and
+soft boundaries by _.
+ * `## `: Lexical boundary
+* `#` word boundary
+* `>` inflectional morph boundary
+* `»` derivational morph boundary
+* _ weak boundary
+
+
+
+## Flag diacritics
+We have manually optimised the structure of our lexicon using following
+flag diacritics to restrict morhpological combinatorics - only allow compounds
+with verbs if the verb is further derived into a noun again:
+ |  @P.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
+ |  @D.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
+ |  @C.NeedNoun@ | (Dis)allow compounds with verbs unless nominalised
+
+ |  @C.ErrOrth@
+ |  @D.ErrOrth.ON@
+ |  @P.ErrOrth.ON@
+
+
+For languages that allow compounding, the following flag diacritics are needed
+to control position-based compounding restrictions for nominals. Their use is
+handled automatically if combined with +CmpN/xxx tags. If not used, they will
+do no harm.
+ |  @P.CmpFrst.FALSE@ | Require that words tagged as such only appear first
+ |  @D.CmpPref.TRUE@ | Block such words from entering ENDLEX
+ |  @P.CmpPref.FALSE@ | Block these words from making further compounds
+ |  @D.CmpLast.TRUE@ | Block such words from entering R
+ |  @D.CmpNone.TRUE@ | Combines with the next tag to prohibit compounding
+ |  @U.CmpNone.FALSE@ | Combines with the prev tag to prohibit compounding
+ |  @P.CmpOnly.TRUE@ | Sets a flag to indicate that the word has passed R
+ |  @D.CmpOnly.FALSE@ | Disallow words coming directly from root.
+
+Use the following flag diacritics to control downcasing of derived proper
+nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
+these flags. There exists a ready-made regex that will do the actual down-casing
+given the proper use of these flags.
+ |  @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
+ |  @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
+
+
+The start of the dictionary `Root`
+The Finnish morphological description starts from any of the parts of speech
+dictionaries, prefix or hyphenated suffix
+
+*Parts-of-speech examples:*
+* *talo:* `talo+N+Sg+Nom` (Eng. # house)
+* *nopea:* `nopea+A+Sg+Nom` (Eng. # fast)
+* *kutoa:* `kutoa+V+Act+InfA+Sg+Lat` (Eng. # to knit)
+* * *
+<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/root.lexc)</small>
+# Guesser
+A rule-based morphological guesser is based on using the paradigms from the
+dictionary based analyser but replacing the roots with patterns. For Finnish
+we have quite neat paradigms with well-defined stem patterns: vowel harmony,
+stem vowels and some with specific syllable counts
+
+## Symbols used for guesser `Multichar_Symbols`
+Guesser uses a subset of the morphological analyser's alphabet. For
+documentation c.f. [morphology root](root-fst-src.html).
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/guess-patterns.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/guess-patterns.lexc)</small>## Number transcriptions
 Transcribing numbers to words in Finnish is not completely trivial, one
 reason is that numbers in Finnish are written as compounds, regardless of
 length:
