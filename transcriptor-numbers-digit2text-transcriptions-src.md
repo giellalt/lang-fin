@@ -15,8 +15,8 @@ without marking and it is preferred grammatical form in good writing.
 Flag diacritics in number transcribing are used to control case agreement:
 in Finnish numeral compounds all words agree in case except in nominative
 singular where 10's exponential multipliers are in singular partitive.
- * `@U.CASE.SGNOM@ ` for singular nominative agreement
- * `@U.CASE.SGALL@ ` for singular allative agreement
+* `@U.CASE.SGNOM@ ` for singular nominative agreement
+* `@U.CASE.SGALL@ ` for singular allative agreement
 
 
 ### Morphotactics of digit strings

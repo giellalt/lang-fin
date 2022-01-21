@@ -9,26 +9,26 @@ forms which requires great amount of care in the inflection patterns.
 
 
 
- * **LEXICON ARABICCASES**  adds +Arab
+* **LEXICON ARABICCASES**  adds +Arab
 
- * **LEXICON ARABICCASE**  adds +Arab
+* **LEXICON ARABICCASE**  adds +Arab
 
- * **LEXICON ARABICCASE0**  adds +Arab
-
-
- * **LEXICON DIGITCASES**  to distinguish between 0 and oblique
-
- * **LEXICON DIGITCASE0**
+* **LEXICON ARABICCASE0**  adds +Arab
 
 
- * **LEXICON DIGITCASE**
+* **LEXICON DIGITCASES**  to distinguish between 0 and oblique
+
+* **LEXICON DIGITCASE0**
 
 
+* **LEXICON DIGITCASE**
 
 
 
 
- * **LEXICON ROMNUMTAGOBL**
+
+
+* **LEXICON ROMNUMTAGOBL**
 
 
 

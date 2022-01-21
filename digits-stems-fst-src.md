@@ -18,7 +18,7 @@ Zero alone works quite differently:
 * *0000005550000000:* `0000005550000000+Num+Card+Sg+Nom`
 
 
- **LEXICON ARABICLOOP_pirinen ** essentially allows any number-sign combination, but is like the other lgs
+**LEXICON ARABICLOOP_pirinen ** essentially allows any number-sign combination, but is like the other lgs
 
 
 **LEXICON ARABICLOOP_pirinen ** is for entries not looping back 
