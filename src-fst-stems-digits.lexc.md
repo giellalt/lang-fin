@@ -9,17 +9,12 @@ Zero alone works quite differently:
 *Digit zero examples:*
 * *0:* `0+Num+Sg+Nom`
 
-
-
-
 *int digit loop examples:*
 * *13:* `13+Num+Card+Sg+Nom`
 * *100:* `100+Num+Card+Sg+Nom`
 * *0000005550000000:* `0000005550000000+Num+Card+Sg+Nom`
 
-
 **LEXICON ARABICLOOP_pirinen ** essentially allows any number-sign combination, but is like the other lgs
-
 
 **LEXICON ARABICLOOP_pirinen ** is for entries not looping back 
 
@@ -44,7 +39,6 @@ variant.
 *decimal digit loop examples:*
 * *1,0:* `1,0+Num+Sg+Nom`
 * *314,1:* `314,1+Num+Sg+Nom`
-
 
 The decimal digit strings end in any number of digits 0 to 9, inflected
 along the last part.
@@ -77,7 +71,6 @@ Thousands can be followed by any of other parts
 * *MII:* `MII+Num+Ord+Sg+Nom`
 * *MCCCXXII:* `MCCCXXII+Num+Ord+Sg+Nom`
 
-
 ### Roman hundreds
 Hundreds can be followed by anything but thousands:
 
@@ -101,4 +94,8 @@ Ones come alone
 * *II:* `II+Num+Ord+Sg+Nom`
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/digits.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/digits.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/digits.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/digits.lexc)</small>
+
+---
+

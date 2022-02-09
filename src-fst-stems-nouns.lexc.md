@@ -30,12 +30,9 @@ check how it inflects in singulars of nominative,
 essive and inessive, plurals of essive, elative, partitive, illative, and
 GENITIVE. Find out stems and suffixes and match.
 
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/nouns.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/nouns.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/nouns.lexc)</small>
+
+---
+

@@ -7,8 +7,6 @@
 
 ### Continuation lexicons for abbrs both with and witout final period
 
-
-
 * **LEXICON ab-noun   **
 
 * **LEXICON ab-adj   **
@@ -39,17 +37,11 @@
 
 * **LEXICON ab-dot-cc   **
 
-
-
-
-
 * **LEXICON ab-dot-verb   **
 
 * **LEXICON ab-nodot-verb   **
 
-
 * **LEXICON ab-dot-IVprfprc   **
-
 
 * **LEXICON nodot-attrnomaccgen-infl   **
 
@@ -57,16 +49,17 @@
 
 * **LEXICON nodot-nomaccgen-infl   **
 
-
 * **LEXICON dot-attrnomaccgen-infl   **
 
 * **LEXICON dot-attr   **
 
 * **LEXICON dot-nomaccgen-infl   **
 
-
 * **LEXICON DOT   ** - Adds the dot to dotted abbreviations.
 
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/abbreviations.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/affixes/abbreviations.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/affixes/abbreviations.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/affixes/abbreviations.lexc)</small>
+
+---
+

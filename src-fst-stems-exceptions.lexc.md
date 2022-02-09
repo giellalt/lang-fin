@@ -5,7 +5,6 @@ to none exceptions, it's always better to have a paradigm that covers only
 one or few words than an exception since these will not work nicely with e.g.
 compounding scheme or possibly many end applications.
 
-
 negation verb has partial inflection:
 
 * examples:*
@@ -18,7 +17,6 @@ Some verbs only have few word-forms left:
 * *taita:*
 * *paratkoon:*
 * *eläköön:*
-
 
 The noun ruoka has irregular forms:
 * *ruuassa:*
@@ -40,98 +38,9 @@ few verbs have shortened forms in standard spoken Finnish
 * *meen:*
 * *tuut:*
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/exceptions.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/exceptions.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/exceptions.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/exceptions.lexc)</small>
+
+---
+

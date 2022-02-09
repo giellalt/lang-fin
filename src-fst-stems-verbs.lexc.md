@@ -8,10 +8,8 @@ The key to find unique class for a verb is to pick stems and suffixes from:
 indicative non-past 1st singular and 3rd singular, indicative past 1st 
 singular, ...
 
-
 The auxiliary verbs require infinintive verbal phrase objects.
 Infinitives usually: *aion tappaa*, *joudun kuolemaan*
-
 
 The verbs are classified along the stem mutations suffix assimilation,
 and harmony:
@@ -24,11 +22,9 @@ and harmony:
 * *nähnyt:* `nähdä+V+Act+PrfPrc+Sg+Nom` (Eng. # see)
 * *juossut:* `juosta+V+Act+PrfPrc+Sg+Nom` (Eng. # run)
 
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/verbs.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/verbs.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/verbs.lexc)</small>
+
+---
+

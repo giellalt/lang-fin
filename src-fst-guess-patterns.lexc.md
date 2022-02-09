@@ -9,8 +9,9 @@ stem vowels and some with specific syllable counts
 Guesser uses a subset of the morphological analyser's alphabet. For
 documentation c.f. [morphology root](root-fst-src.html).
 
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/guess-patterns.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/guess-patterns.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/guess-patterns.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/guess-patterns.lexc)</small>
+
+---
+

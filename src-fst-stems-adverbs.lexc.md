@@ -16,48 +16,9 @@ and clitics they take or require:
 * *ajassa:* `ajassa+Adv`
 * *ajassako:* `ajassa+Adv+Qst`
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adverbs.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/adverbs.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/adverbs.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/adverbs.lexc)</small>
+
+---
+

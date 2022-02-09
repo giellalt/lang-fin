@@ -44,12 +44,7 @@ Have a look at these:
 
 * **+CLBfinal**  Sentence final abbreviated expression ending in full stop, so that the full stop is ambiguous
 
-
-
-
-
 ### Parts of speech
-
 
 * `+V `: Verb
 * `+N `: Noun
@@ -205,7 +200,6 @@ Tags for sub-POS
 * `+Coll			        `: 
 * `+Rom			        `: 
 
-
 ### Bound root morphs
 The lexical items that appear as bound morphemes before head word are
 classified as prefixes ([VISK §
@@ -305,7 +299,6 @@ Further reading: [VISK §
 * `+Prl `: Adverbial cases: Prolative
 * `+Distr `: Distributive
 * `+Tempr `: Temporal
-
 
 ### Possessives
 The analyses of nominals include possessive if present.
@@ -498,7 +491,6 @@ adverbs and negation verb.
 * `+Foc/ka `: -kA; "nor"
 * `+Qst `: -kO: Question focus
 
-
 ### Derivation
 The derivation is not a central feature of this morphology, it is mainly
 used to collect new roots for dictionaries. This is roughly in order of
@@ -553,7 +545,6 @@ Usage tags are pushed wherever appropriate:
 * `+v1				        `: 
 * `+v2				        `: 
 
-
 ### Dialects
 The informal language use contains different Finnish than the literary
 standard, this is marked as standard dialect (yleispuhekieli):
@@ -581,7 +572,6 @@ mrophology.
 * `+Dial/North `: North Finnish dialects
 * `+Dial/Savo `: Savonian dialects
 * `+Dial/Southeast `: South-eastern dialects
-
 
 ### Tags for language of unassimilated name
 * `+OLang/ENG		        `: 
@@ -619,8 +609,6 @@ soft boundaries by _.
 * `»` derivational morph boundary
 * _ weak boundary
 
-
-
 ## Flag diacritics
 We have manually optimised the structure of our lexicon using following
 flag diacritics to restrict morhpological combinatorics - only allow compounds
@@ -632,7 +620,6 @@ with verbs if the verb is further derived into a noun again:
 |  @C.ErrOrth@
 |  @D.ErrOrth.ON@
 |  @P.ErrOrth.ON@
-
 
 For languages that allow compounding, the following flag diacritics are needed
 to control position-based compounding restrictions for nominals. Their use is
@@ -654,7 +641,6 @@ given the proper use of these flags.
 |  @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
 |  @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
 
-
 The start of the dictionary `Root`
 The Finnish morphological description starts from any of the parts of speech
 dictionaries, prefix or hyphenated suffix
@@ -663,5 +649,10 @@ dictionaries, prefix or hyphenated suffix
 * *talo:* `talo+N+Sg+Nom` (Eng. # house)
 * *nopea:* `nopea+A+Sg+Nom` (Eng. # fast)
 * *kutoa:* `kutoa+V+Act+InfA+Sg+Lat` (Eng. # to knit)
+
 * * *
-<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/root.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/root.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/root.lexc)</small>
+
+---
+

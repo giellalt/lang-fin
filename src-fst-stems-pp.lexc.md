@@ -16,4 +16,8 @@ Examples:
 * *irtikö:* `irti+Pr+Qst`
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/pp.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/pp.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/pp.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/pp.lexc)</small>
+
+---
+

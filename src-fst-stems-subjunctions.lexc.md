@@ -17,14 +17,9 @@ Further reading: [VISK § 818](http://scripta.kotus.fi/visk/sisalto.php?p=818)
 * *jos:* `jos+CS`
 * *vaikka:* `vaikka+CS`
 
-
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/subjunctions.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/subjunctions.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/subjunctions.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/subjunctions.lexc)</small>
+
+---
+

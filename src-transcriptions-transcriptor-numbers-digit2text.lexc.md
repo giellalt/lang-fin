@@ -18,7 +18,6 @@ singular where 10's exponential multipliers are in singular partitive.
 * `@U.CASE.SGNOM@ ` for singular nominative agreement
 * `@U.CASE.SGALL@ ` for singular allative agreement
 
-
 ### Morphotactics of digit strings
 The morphotactics related to numbers and their transcriptions is that we
 need to know the whole digit string to know how the length of whole digit
@@ -61,7 +60,6 @@ this is to implement *sata*...miljardia...
 *hundred milliards examples:*
 * *1000000000:* `satamiljardia`
 
-
 Lexicon `TEENSMRD` is for numbers with 11 000 000 000–19 000 000 000
 this is to implement ...N*toista*...miljardia...
 
@@ -70,7 +68,6 @@ this is to implement ...*N*toista...miljardia...
 
 *teen milliards examples:*
 * *1200000000:* `kaksitoistailjardia`
-
 
 Lexicon `TENSMRD` is for numbers with 20 000 000 000–90 000 000 000
 this is to implement ...*N*kymmentä...miljardia...
@@ -96,9 +93,7 @@ this is to implement ...N*miljardia*...
 *milliards examples:*
 * *2000000000:* `kaksimiljardia`
 
-
 Lexicon `OVERMILLIONS` is for the millions *part* of numbers greater than 1 milliard
-
 
 Lexicon `HUNDREDSM` contains numbers 2-9 that need to be followed by exactly
 8 digits: 200 000 000–999 999 999
@@ -113,7 +108,6 @@ this is to implement N*sataa*...miljoonaa...
 Lexicon `HUNDREDM` is for numbers in range: 100 000 000–199 000 000
 this is to implement *sata*...miljoonaa...
 
-
 Lexicon `TEENSM` is for numbers with 11 000 000–19 000 000
 this is to implement ...N*toista*...miljoonaa...
 
@@ -122,7 +116,6 @@ this is to implement ...*N*toista...miljoonaa...
 
 *Teen millions examples:*
 * *1200000:* `kaksitoistamiljoonaa`
-
 
 Lexicon `TENSM` is for numbers with 20 000 000–90 000 000
 this is to implement ...*N*kymmentä...miljoonaa...
@@ -148,7 +141,6 @@ this is to implement ...N*miljoonaa*...
 *Millions examples:*
 * *200000:* `kaksisataamiljoonaa`
 
-
 Lexicon `UNDERMILLION` is for numbers with 100 000–900 000 after milliards
 
 Lexicon `OVERTHOUSANDS` is for the thousands *part* of numbers greater than 1 million
@@ -169,17 +161,14 @@ this is to implement *sata*...tuhatta...
 Lexicon `TEENST` is for numbers with 11 000–19 000
 this is to implement ...N*toista*...tuhatta...
 
-
 Lexicon `TEENT` is for numbers with 11 000–19 000
 this is to implement ...*N*toista...tuhatta...
 
 *Teens of thousands examples:*
 * *12000:* `kaksitoistatuhatta`
 
-
 Lexicon `TENST` is for numbers with 20 000–90 000
 this is to implement ...*N*kymmentä...tuhatta...
-
 
 Lexicon `TENT` is for numbers with 10 000 000–10 999 999
 this is to implement ...*kymmenen*tuhatta...
@@ -204,7 +193,6 @@ this is to implement ...N*tuhatta*...
 * *3456:* `kolmetuhattaneljäsataaviisikymmentäkuusi`
 
 Lexicon `THOUSAND` is for the ones-tens-hundreds of numbers greater than thousand
-
 
 Lexicon `UNDERTHOUSAND` is for numbers with 100–900 after thousands
 
@@ -231,8 +219,6 @@ this is to implement ...*N*toista
 * *11:* `yksitoista`
 * *12:* `kaksitoista`
 * *13:* `kolmetoista`
-
-
 
 Lexicon `TENS` is for numbers with 20–90
 this is to implement ...*N*kymmentä...
@@ -264,7 +250,6 @@ nolla
 *Zero examples:*
 * *0:* `nolla`
 
-
 Lexicon `LOPPU` is to implement potential case inflection with a colon.
 
 *Digits with explicit cases examples:*
@@ -273,4 +258,8 @@ Lexicon `LOPPU` is to implement potential case inflection with a colon.
 suffix can be changed here.
 
 * * *
-<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-numbers-digit2text.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-numbers-digit2text.lexc](https://github.com/giellalt/lang-fin/blob/main/src/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
+
+---
+

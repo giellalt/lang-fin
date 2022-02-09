@@ -7,6 +7,9 @@ Examples:
 *Suffixes examples:*
 * *banaaniaaltoinen:* `banaani+N+Sg+Nom#aaltoinen+A+Sg+Nom` (Eng. # banana waveful)
 
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/suffixes.lexc](http://github.com/giellalt/lang-fin/blob/main/../src/fst/stems/suffixes.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/suffixes.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/suffixes.lexc)</small>
+
+---
+

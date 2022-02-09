@@ -5,71 +5,13 @@ Sámi language technology project 2003-2018, University of Tromsø #
 
 This file adds syntactic functions. It is common for all the Saami
 
-
-
-
-
-
-
-
-
-
-
-
-
 LEFT RIGHT because of apertium
-
-
 
 * Sets for POS sub-categories
 
-
-
-
-
 * Sets for Semantic tags
 
-
-
-
-
-
-
-
-
 * Sets for Morphosyntactic properties
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Syntactic tags
 
@@ -174,139 +116,17 @@ LEFT RIGHT because of apertium
 * @CMPND
 * @X : The function is unknown, e.g. because of that the word is unknown
 
-
-
-
-
-
-
-
-
-
-
 ## Tag sets
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * Sets for verbs
-
 
 - V is all readings with a V tag in them, REAL-V should
 be the ones without an N tag following the V.
 The REAL-V set thus awaits a fix to the preprocess V ... N bug.
 
-
-
 * The set COPULAS is for predicative constructions
 
-
-
-
-
-
-
 * NP sets defined according to their morphosyntactic features
-
-
-
-
-
-
 
 * The PRE-NP-HEAD family of sets
 
@@ -314,98 +134,30 @@ These sets model noun phrases (NPs). The idea is to first define whatever can
 occur in front of the head of the NP, and thereafter negate that with the
 expression **WORD - premodifiers**.
 
-
-
-
-
-
-
-
-
-
-
-
 The set **NOT-NPMOD** is used to find barriers between NPs.
 Typical usage: ... (*1 N BARRIER NPT-NPMOD) ...
 meaning: Scan to the first noun, ignoring anything that can be
 part of the noun phrase of that noun (i.e., "scan to the next NP head")
 
-
-
-
-
-
 * Miscellaneous sets
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * Border sets and their complements
 
-
-
-
-
-
-
-
-
-
-
 ADLVCASE
-
-
-
 
 * Syntactic sets
 
-
-
-
-
 These were the set types.
-
-
-
-
 
 ## Numeral outside the sentence
 
-
-
-
 ## HABITIVE MAPPING
-
-
-
-
-
 
 * **hab1** hab aux leat
 
 * __hab_numo1__ hab copula comma comma N+Nom
 
 * __hab_numo2__ copula nu mo/go hab
-
 
 * **leahab** copula nu mo/go hab
 
@@ -419,12 +171,7 @@ These were the set types.
 
 * **hab3** (<hab> @ADVL>) for hab-actor and hab-case; if leat to the right, and Nom to the right of leat. Lots of restrictions.
 
-
-
-
-
 * __hab_main__ (<hab> @ADVL>) for hab-actor and hab-case; if leat to the right, and Nom to the right of leat. Lots of restrictions.
-
 
 * **habInf** hab lea inf
 
@@ -433,8 +180,6 @@ These were the set types.
 * **habAdvl** Ii han ovttasge du sogas leat dat namma.
 
 * **hab4** hab cc hab leat
-
-
 
 * **hab6** lea go hab -- leago hab
 
@@ -450,7 +195,6 @@ These were the set types.
 * **habDain** (<hab> @ADVL>) for (Pron Dem Pl Loc) if leat followed by Nom to the right
 * **habDain2** 
 
-
 * **habRel** # before relative clause
 
 * **habEllipse** Buot gánddain lea dreassa, nieiddain fas gákti.
@@ -459,39 +203,11 @@ These were the set types.
 
 * **habGenQst** (<hab> @<ADVL) hab for Gen; in a question sentence. Gen is located sentence initially and SUBJ is found to the right. To the right of SUBJ is copulas
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * **n<titel1** (@N<) for ("jr") or ("sr"); if first one to the left is Prop
-
-
 
 * **n<titel2** (@N<) for INITIAL; if first one to the left is a noun, or if to the left of you is a single letter which is part of a noun conjunction *bustávas e ja f gáibiduvvo*
 
-
 * **n<:com** (@N<) for (Sg Com); if first one to the left is Coll
-
-
-
-
-
-
-
-
-
 
 * **>nAttr** (@>N) for Attr; if there is a noun to your right
 
@@ -499,43 +215,21 @@ These were the set types.
 
 * **n>Indef** (Pron Indef Com); if eará is to the right
 
-
 * **>nNum** (@>N) for numerals if; there is a noun to your right. You are not allowed to be (Sg Nom), (Sg Acc) or (Sem/Date)
-
-
-
 
 * **noun>n** (@>N) for Gen; if there is a noun to your right. Restrictions: Not if you are: a time related word. Not if you are OKTA with Pl Loc to your right. Not if CC is to your right followed by another Gen and then Po. Not if you are HUMAN and to your right is Actio Nom folloed by a noun.
 
-
-
-
-
-
-
-
-
-
 * **>nTime** (@>N) for Gen TIME-N; if timenoun to your right. Restrictions: Not if you are a OKTA Nom with Pl Loc to your right. Not if CC followed by Gen, followed by Po to your right. Not if COMMA to your right
-
-
-
 
 * **>ntittel** (@>N) for (Sg Nom TIME-N) or (Nom Der/NomAg); if to your right is Sem/Mal, Sem/Fem, Sem/Sur
 
 * **>nplc** (@>N) for (Sg Nom Prop Sem/Plc), if to your right is Sem/Plc
 
-
 * **>nALU** (@>N) for Sg Acc numerals; when a measure-noun to the right
-
-
 
 * **>NTime** (@>N) for Gen; if you are TIME-N with BOC to your left, and PREGEN to your right
 
-
-
 * **n<:Refl** (@N<) for (Refl Nom); if to the left is (N Nom), or if first one to the left is a finite mainverb with a (N Nom) to the left
-
 
 * **>pron1** (@>Pron) for GRADE-ADV, DUSSE, BUOT if; first one to the right is Pron
 
@@ -553,77 +247,17 @@ These were the set types.
 
 * **adv>advl** (@>ADVL) 
 
-
-
-
-
-
 * **BOSvoc** (@VOC) for HUMAN Nom; if sentence initial. To the right is comma. No nom-cased HUMAN followed by comma or CC is allowed to the right. There should not be a relative clause to the right, because then you are likely to be SUBJ
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * **voc** (@VOC) for Nom HUMAN; if comma to the left and an second person verb or pronoun to the left. To the right is the end of the sentence
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * **Particle<subj** (@PCLE)
-
 
 * **spred<obj** (@SPRED<OBJ) for Acc; the object of an SPRPED. Not to be mistaken with OPRED. If SPRED is to the left, and copulas is to the left of it. Nom or Hab are found sentence initially.
 
-
-
 * **Hab<subj** (<ext> @<SUBJ) for Nom; if copulas, goallut or jápmit is FMAINV and habitive or human Loc is found to the left. OR: if Ill or @Pron< followed by HAB are found to the left.
 
-
-
 * **Hab<subj** (<ext> @<SUBJ) with relative clause in between
-
 
 * **Hab>Advlcase<subj** (<ext> @<SUBJ) for Nom; it allows adverbials with Ill/Loc/Com/Ess to be found inbetween HAB and <ext>.
 
@@ -633,19 +267,15 @@ These were the set types.
 
 * **<extSubj** (<ext> @<SUBJ) for sma Nom; if some kind of adverb to the left, N Loc, time related word or Po to the left of it. 
 
-
 * **<extSubjA** (<ext> @<SUBJ) for A - TEST WITHOUT THIS ONE
 
 * **<extSubj** (<ext> @<SUBJ) for Nom; if leat to the left and sentenceboundary
-
-
 
 * **<extSubj** (<ext> @<SUBJ) for Nom, but not for Pers. To the left boahtit or heaŋgát as MAINV, and futher to the left is some kind of place related word, or time related word
 
 * **loc<extSubj** (<ext> @<SUBJ) for Nom
 
 * **<spred** (@<SPRED) for Nom; if Nom to the left, copulas to the left of Nom, and a time related word to the left of it.
-
 
 * **<extQst1** (<ext> @<SUBJ) for Nom; in an existential sentence. To your left is hab, some kind of place or time-word or Po. This is a Qst-sentence so the qst-pcle is attached to leat or following leat
 
@@ -655,17 +285,9 @@ These were the set types.
 
 * **extQst3>** (<ext> @SUBJ>) for Nom; if habitive first one to the left, followed by copulas.
 
-
 * **<extsubjcoor** (<ext> @<SUBJ) for Nom. Coordination
 
 * Sem/Year
-
-
-
-
-
-
-
 
 * **<spredQst** (@<SPRED) for Nom; in a typically question sentence; You are not allowed to be Pers or human. The special part is that Nom is not allowed to your right
 
@@ -703,38 +325,20 @@ These were the set types.
 
 * **spredšaddat>** (@SPRED>)
 
-
 * **r492>** (@SPRED>) for Interr Gen; consisting only of negations. You are not allowed to be MII. You are not allowed to have an adjective or noun to yor right. You are not allowed to have a verb to your right; the exception beeing an aux.
 
-
-
 * **AdjSpredSg>** (@SPRED>) for A Sg Nom; if copulas to the right, but not if A or @<SPRED are found to the right of copulas
-
-
-
-
 
 * **Spred>SubjInf** (@SPRED>) for Nom; if copulas to the right, and the subject of copulas is an Inf to the right
 
 * **spredCoord** (@<SPRED) coordination for Nom; only if there already is a SPRED to the left of CNP. Not if there is some kind of comparison involved.
 
-
-
-
-
-
-
-
-
 * **subj>Sgnr1** (@SUBJ>) for Nom Sg, including Indef Nom if; VFIN + Sg3 or Pl3 to the right (VFIN not allowed to the left)
-
-
 
 * **subj>Du** (@SUBJ>) for dual nominatives, including Coll Nom. VFIN + Du3 to the right.
 * **subj>Pl** (@SUBJ>) for plural nominatives, including Coll and Sem/Group. VFIN + Pl3 to the right.
 
 * **subj>Pl** (@SUBJ>) for plural nominatives
-
 
 * **subj>Sg** (@SUBJ>) for Nom Sg; if VFIN + Sg3 to the right.
 
@@ -746,119 +350,27 @@ These were the set types.
 
 * **copPl3<subj** (@<SUBJ) for Nom Pl; you don't to be a noun, only Nom Pl. To the left is copulas and first one to the right is @<SPRED
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * **-fsubj>** (@-FSUBJ>) for HUMAN Gen; in a NP-clause. To your right is Actio Nom followed by a noun
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * **f<advl** (@-F<ADVL) for infinite adverbials
 
-
-
-
-
 * **f<advl** (@-F<ADVL) for infinite adverbials
-
-
-
-
-
-
-
-
 
 * **s-boundary=advl>** (@ADVL>) for ADVL that resemble s-boundaries. Mainverb to the right.
 
-
-
-
-
 * **diibmuadvl>** (@ADVL>) for (diibmu Nom) if first one to the right is Num
 
-
 * **-fsubj** (@-FSUBJ>) for HUMAN Acc after DADJAT verbs
-
-
 
 * **-fobj>** (@-FOBJ>) for Acc if front of abessive, gerundium, actio locative, perfectum participle or infinitive. First one to the right not allowed to be Acc though
 
 * **-fobj>** (@-FOBJ>) for Acc if human with ADVL-case to the left and transitive infinitive OBJ to the right. First one to the right not allowed to be Acc though
 
-
-
-
-
-
-
-
-
-
-
-
 * **advl>mainV** (@ADVL>) if; finite mainverb not found to the left, but the finite mainverb is found to the right.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * **V<advl** (@<ADVL) if; finite mainverb found to the left. Not if a comma is found immediately to the left and a finite mainverb is located somewhere to the right of this comma.
 
-
-
-
-
 * **advl>v** (@ADVL>) if; you are ADVL, time-noun or Sem/Route and there is a finite verb to the right in the clause, or if to your right is: de followed by a finite verb. OR: if you are a time-nound and to your right is: go or sentenceboundary followed by a finite verb
-
-
 
 * **<advlPoPr** (@<ADVL) for Po or Pr; if mainverb to the left.
 * **advlPoPr>** (@<ADVL) for Po or Pr; if mainverb to the right.
@@ -869,39 +381,25 @@ These were the set types.
 
 * **<advlEOS** (@<ADVL) for Po or Pr or Loc; if you are found at the very end of a sentence. A mainverb is needed to the left though.
 
-
 * **<advlGen** (@<ADVL) for (N Gen) if mainverb to the left and no noun to the right
-
 
 * **<opredgohcodit** (@<OPRED) for Ess
 
-
 * **advlEss>** (@<ADVL) for weather and time Ess, if FMAINV to the left.
 
-
-
-
 * **comma<advlEOS** (@<ADVL) for Adv if; mainverb is to the left. Comma to the left and mainverb to the right in the same clause is not allowed
-
 
 * **advl>inbetween** (@ADVL>) for Adv; if inbetween two sentenceboundaries where no mainverb is present.
 
 * **comma<advlEOS** (@<ADVL) for Adv if; comma found to the left and the finite mainverb to the left of comma. To the right is the end of the sentence.
 
-
-
 * **BOSadvl>** (@ADVL>) if; you are N Loc or N Ill and found sentence initially and there is a main verb somewhere to the right. No barrier for the mainverb; based on the thought that first one to your right is probably a sentenceboundary.
 
 * **cleanupILL<advl** (@<ADVL) for N Ill if; there are no boundarysymbols to your left, if you arent already @N< OR @APP-N<, and no mainverb is to yor left.
 
-
-
 * **cleanupPo** (@ADVL) for Po: This rule tags all Po:s as ADVL if they haven't gotten a tag somewhere along the way.
 
 * **cleanupPr** (@ADVL) for Po: This rule tags all Pr:s as ADVL if they haven't gotten a tag somewhere along the way.
-
-
-
 
 * **-fsubj>asAcc** (@-FSUBJ>) for HUMAN Acc; if there is a verb @-F<OBJ to your left
 
@@ -915,20 +413,11 @@ These were the set types.
 
 * **f<subj** (@-F<SUBJ) for Nom if; (V @-F<OBJ) to the left.
 
-
-
-
-
-
-
 * **<opredAAcc** (@<OPRED) for A Acc; if an other accusative to the left, and a transtive verb to the left of it. OR: if a transitive verb to the left, and an accusative to the left of it.
 
 * **TV<obj** (@<OBJ) for Acc; if there is a transitive mainverb to the left in the clause. Not for Rel. Not if you are a numeral followed by a measure-noun
 
-
-
 ### sma object
-
 
 * **<advlMeasr** (@<ADVL) for (Num Acc); if finite IV-mainverb to the left, measure-noun to the right
 
@@ -938,18 +427,11 @@ These were the set types.
 
 * **advlMeasr>** (@ADVL>) for Num Acc;
 
-
 * **Obj>** (@OBJ>) for Acc; if there is a finite mainverb to the right in the clause. A really simple rule with no other restrictions..
 
 * **s-boun<obj** (@<OBJ) for Acc; if sentenceboundary to your left and a transitive mainverb to the left futher to the left
 
 * **<objIV** (@<OBJ) for Acc; if there is an intransitive mainverb in the clause. Not for Rel or Num. Not if you are a numeral followed by a measure-noun
-
-
-
-
-
-
 
 * **<advlEss** (@<ADVL) for ESS-ADVL if; FMAINV to the left
 
@@ -963,65 +445,30 @@ These were the set types.
 
 * **onlyV<opred2** (@<OPRED) for (N Ess) if;
 
-
-
-
-
-
-
-
-
-
-
 ## SUBJ MAPPING - leftovers
 
 * **subj>ifV** (@SUBJ>) for NP-HEAD-NOM, DUPRON or (Num Nom) if; a finite mainverb is found to the right. This is a cleanup rule for subjects
 
 * **hnoun>ifV** (@SUBJ>) for NP-HEAD-NOM, DUPRON if. The counterpart of subj>ifV. You are HNOUN if there is a finite verb to your right, but NOT if there is a finite verb after a relative clause
 
-
 ## OBJ MAPPING - leftovers
 
 ## <logo> MAPPING for MT - experimental
 
-
 ## HNOUN MAPPING
-
-
-
-
-
-
-
-
 
 * **@<ADVLcoor** (@<ADVL) for ADVLCASEAdv if @CNP to the left and ADVL to the left of it
 
-
-
-
 ###  **missingX** adds @X to all missings
 
-
-
-
-
 ###  **therestX** adds @X to all what is left, often errouneus disambiguated forms
-
-
-
-
-
 
 ## For Apertium:
 The analysis give double analysis because of optional semtags. We go for the one with semtag.
 
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/cg3/functions.cg3](http://github.com/giellalt/lang-fin/blob/main/../src/cg3/functions.cg3)</small>
+
+<small>This (part of) documentation was generated from [src/cg3/functions.cg3](https://github.com/giellalt/lang-fin/blob/main/src/cg3/functions.cg3)</small>
+
+---
+
