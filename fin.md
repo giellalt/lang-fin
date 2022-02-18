@@ -13,12 +13,7 @@ Idiomatic cases
 * **REMOVE X** removes X whenever there is any other tag.
 
 * * *
-
 <small>This (part of) documentation was generated from [src/cg3/disambiguator.cg3](https://github.com/giellalt/lang-fin/blob/main/src/cg3/disambiguator.cg3)</small>
-
----
-
-
 S Y N T A C T I C   F U N C T I O N S   F O R   S Á M I
 
 Sámi language technology project 2003-2018, University of Tromsø #
@@ -487,1158 +482,1847 @@ These were the set types.
 The analysis give double analysis because of optional semtags. We go for the one with semtag.
 
 * * *
-
 <small>This (part of) documentation was generated from [src/cg3/functions.cg3](https://github.com/giellalt/lang-fin/blob/main/src/cg3/functions.cg3)</small>
-
----
-
-
-
-# Prefixing and compounding
-
-Prefixes are not put here so far
-
-## The circular lexicon
-
-* examples:*
-* *talojuttu:* `talo+N+Sg+Nom#juttu+N+Sg+Nom`
-
-The compound part sub-set `NOMINAL`
-The nominal forms can be used as non-initial parts of typical compounds
-
-*Nominals examples:*
-* *talonjuttu:* `talo+N+Sg+Gen#juttu+N+Sg+Nom` (Eng. # house thing)
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/compounding.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/compounding.lexc)</small>
-
----
-
-
-This file documents the [phonology.twolc file](http://github.com/giellalt/lang-fin/blob/main/src/fst/phonology.twolc) 
-
-* "Force hyphen between vowels"   
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/phonology.twolc](https://github.com/giellalt/lang-fin/blob/main/src/fst/phonology.twolc)</small>
-
----
-
-# Nouns and their classification
-Noun is the part-of-speech for words which require declination in number
-and case. Additionally nouns may have optional possessive suffixes and
-clitics combined freely at the end. While some of the nouns may exhibit 
-limited comparative derivations, generally words that can undergo
-comparation must be  classified into adjectives. The proper nouns that
-are written in initial  capital letters except when derived are handled
-separately under proper nouns, but the classification is the same.
-
-The nominals are classified by combination of the stem variations, suffix
-allomorphs and the vowel harmony. The nouns have number, case, possessive
-and clitic suffixes:
-
-*Noun examples:*
-* *talo:* `talo+N+Sg+Nom` (Eng. # house)
-* *taloa:* `talo+N+Sg+Par`
-* *taloissa:* `talo+N+Pl+Ine`
-* *talostani:* `talo+N+Sg+Ela+PxSg1`
-* *talollako:* `talo+N+Sg+Ade+Qst`
-* *taloiltammepa:* `talo+N+Pl+Abl+PxPl1+Foc/pa`
-The classification is based on suffix allomorphs, harmony, and the stem
-variation:
-* *taloja:* `talo+N+Pl+Par`
-* *sälöjä:* `sälö+N+Pl+Par` (Eng. # splinter)
-* *valtioita:* `valtio+N+Pl+Par` (Eng. # state)
-* *lepakot:* `lepakko+N+Pl+Nom` (Eng. # bat)
-* *padoissa:* `pato+N+Pl+Ine` (Eng. # dam)
-The minimal set to determine which paradigm or class noun belongs to is to
-check how it inflects in singulars of nominative,
-essive and inessive, plurals of essive, elative, partitive, illative, and
-GENITIVE. Find out stems and suffixes and match.
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/stems/nouns.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/nouns.lexc)</small>
-
----
-
-# Digits and such expressions
-Digit-strings are used in place of numerals. They inflect with colon, like
-acronyms, and compound with hyphen only.
-
-Digits are constructed as several cyclic structures: integers, decimals or
-roman numerals.
-Zero alone works quite differently:
-
-*Digit zero examples:*
-* *0:* `0+Num+Sg+Nom`
-
-*int digit loop examples:*
-* *13:* `13+Num+Card+Sg+Nom`
-* *100:* `100+Num+Card+Sg+Nom`
-* *0000005550000000:* `0000005550000000+Num+Card+Sg+Nom`
-
-**LEXICON ARABICLOOP_pirinen ** essentially allows any number-sign combination, but is like the other lgs
-
-**LEXICON ARABICLOOP_pirinen ** is for entries not looping back 
-
-The digit strings that end in 10 to 12 + 6n 0's are inflected alike:
-
-*int digit milliard loop examples:*
-* *1000000000:* `1000000000+Num+Card+Sg+Nom`
-* *300000000000:* `300000000000+Num+Card+Sg+Nom`
-* *123456000000000000000000:* `123456000000000000000000+Num+Card+Sg+Nom`
-
-The digit strings that end in 6 to 9 + 6n 0's are inflected alike:
-
-*int digit million loop examples:*
-* *1000000:* `1000000+Num+Card+Sg+Nom`
-* *300000000:* `300000000+Num+Card+Sg+Nom`
-* *123456000000000000000:* `123456000000000000000+Num+Card+Sg+Nom`
-
-Decimal digit strings start with any number of digits 0 to 9, followed
-by decimal separator comma. The decimal dot may be allowed as substandard
-variant.
-
-*decimal digit loop examples:*
-* *1,0:* `1,0+Num+Sg+Nom`
-* *314,1:* `314,1+Num+Sg+Nom`
-
-The decimal digit strings end in any number of digits 0 to 9, inflected
-along the last part.
-
-*decimal digit loop more examples:*
-* *3,141:* `3,141+Num+Sg+Nom`
-* *123,345:* `123,345+Num+Sg+Nom`
-
-The decimal digit strings with dot may be allowed as sub-standard option
-with respective analysis.
-
-# Roman numerals with inflection
-Roman numerals are composed the symbols M, D, C, L, X, V, I in ascending
-scale and some combinations, they denote ordinal numbers and inflect like
-ones.
-
-## Main lexicon for roman digits
-This lexicon divides into four groups
-
-*roman numeral examples:*
-* *MM:* `MM+Num+Ord+Sg+Nom`
-* *MCXI:* `MCXI+Num+Ord+Sg+Nom`
-* *CMXCIX:* `CMXCIX+Num+Ord+Sg+Nom`
-
-## Roman numerals according to digital class, one by one
-### Roman thousands
-Thousands can be followed by any of other parts
-
-*roman numeral thousand examples:*
-* *MII:* `MII+Num+Ord+Sg+Nom`
-* *MCCCXXII:* `MCCCXXII+Num+Ord+Sg+Nom`
-
-### Roman hundreds
-Hundreds can be followed by anything but thousands:
-
-*roman numeral hundred examples:*
-* *CXXI:* `CXXI+Num+Ord+Sg+Nom`
-* *DXXIV:* `DXXIV+Num+Ord+Sg+Nom`
-
-### Roman tens
-Tens can be followed by ones:
-
-*roman numeral ten examples:*
-* *XIX:* `XIX+Num+Ord+Sg+Nom`
-* *XXVII:* `XXVII+Num+Ord+Sg+Nom`
-
-### Roman ones
-Ones come alone
-
-*roman numerals one to nine examples:*
-* *IX:* `IX+Num+Ord+Sg+Nom`
-* *VIII:* `VIII+Num+Ord+Sg+Nom`
-* *II:* `II+Num+Ord+Sg+Nom`
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/stems/digits.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/digits.lexc)</small>
-
----
-
-# Interjections
-Interjections are mainly parts of spoken language that are minimal turns
-in dialogue, curses, onomatopoeia and such. Interjections are a subset
-of particles, and do not inflect. They are quite productive kind of, though
-limited in form  ; they stem from arbitrary combinations of characters to
-
-Only add new interjections that are found from corpora.
-
-*Interjections examples:*
-* *aah:* `aah+Interj`
-* *äh:* `äh+Interj`
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/stems/interj.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/interj.lexc)</small>
-
----
-
-# Other symbols
-Punctuation characters detailed here are the characters that appear commonly
-in Finnish texts, but are not part of words or linguistic content. The
-punctuations control clause and sentence level annotations, and range
-from full stops and commas to brackets. While punctuation symbols might
-have limited use as inflecting units, the ones described here refer to
-punctuation symbols as used in their primary purpose, in isolation. The
-part of language norms controlling punctuation are from orthography and
-the references of punctuation in good language use are not from the grammar
-but issues of Kielikello journal on good Finnish language use. The most
-current issue on punctuation was [Kielikello 
-2/2006|http://arkisto.kielikello.fi/index.php?mid=2&pid=12&maid=110] (N.B.
-you may need to buy subscription or route through university servers).
-
-The primary punctuation marks are sentence final punctuation, they mark
-the end of a sentence. The most typical of these is full stop symbol, which
-ends neutral sentences. The exclamation mark and question mark end
-exclamative and questioning sentences respectively. An elliptic or unfinished
-sentence is ended with three successive full stops. In sloppy writing style
-it is common to use two, four or more full stops to mark an elliptic
-sentence. The Unicode compatibility character ellipsis has never been used
-for Finnish language and must not be used. Same applies for other
-combinations of sentence ending punctuation marks, the most common of these
-have separate analyses.
-
-*Punctuation and symbols examples:*
-* *.:* `.+Punct` (Eng. # full stop)
-
-The clause level punctuation marks are used in clause boundaries. The most
-typical of these is comma. The colon and semicolon are too. The clause
-boundaries do not have separate semantics needed in applications so they only
-have analyses for clause boundaries.
-
-The brackets are used to offset portions of text in opening and closing
-pairs. The most common pair is round brackets. Others used in Finnish are
-square, curly and angle brackets, in somewhat decreasing order of commonness.
-The angle brackets are commonly replaced by lower than symbol for opening and
-greater than symbol for closing bracket.
-The bracketed question mark is used to indicate uncertainty and bracketed
-exclamation mark to indicate surprise, both of these annotations are used
-within sentence as other bracketed constructions.
-
-The quotation marks are used to offset quotations. The typical ones in
-Finnish are the 9-shaped double quotation marks and apostrophes. Angle
-quotation marks can also be used, primarily in books and newspapers.
-It is possible to replace curly quotation marks with neutral typewriter
-ones where technology limits. It is also common to see foreign quotation
-marks or accent marks in place of quotation marks in sloppy writing style.
-
-There are two different dashes in Finnish. The hyphen is used for mainly
-word internally and won't appear as itself. The dash is used to offset
-some sentences or mark elision. The dash symbol can be either of unicode
-dash symbols or replaced with dash offset by spaces. In sloppy writing,
-two hyphens are often used in place of dashes.
-
-The space is used to separate words. For most applications the space has
-separate meaning so it rarely gets used as a symbol in applications of
-
-Less used symbols that appear in the Finnish texts; these do not have 
-special analyses. A slash can be used as a replacement of the meaning 'or',
-as a division slash or as a separator of verses in poem. 
-Backslash is used only in computer systems.
-Underscore is used only in computer systems.
-The pipe is used in dictionaries as morhpeme boundary, and computer systems.
-At sign is used only in computer systems.
-An ampersand can be used as a replacement of the meaning 'and'.
-Percent symbol is used after numeric expressions meaning 0.01 multiplier.
-Permille symbol is used after numeric expressions meaning 0.001 multiplier.
-§ sign is used for numbering sections etc.
-Degree sign is used with measurements. The second and minute signs can be
-used in conjunction with degree sign.
-The plus sign, specific minus sign and plus-minus signs are used in
-numeric expressions. The multiplication sign is used in numeric expressions.
-The equals sign is used in formulae. The asterisk is used as a marker
-for ungrammatical constructions and computer and other expressions.
-Registered and trademark symbols are rarely used. Copyright symbol is
-rarely used. Hash sign is used in phones and computer systems.
-The doubled § sign has been used as chapter range sign. The pilcrow
-sign can be used to mark chapters.
-The currency signs for euro, dollar, pound sterling, cent and yen can be
-used. I don't think anyone uses the currency sign ¤ ever.
-The lines below this one are not from any referenced source
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/stems/punct.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/punct.lexc)</small>
-
----
-
-# Suffixes
-Suffixes are bound morphs that come after nominals in compounds. Finnish 
-doesn't quite have real suffixes, these are mostly compound parts.
-
-Examples:
-
-*Suffixes examples:*
-* *banaaniaaltoinen:* `banaani+N+Sg+Nom#aaltoinen+A+Sg+Nom` (Eng. # banana waveful)
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/stems/suffixes.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/suffixes.lexc)</small>
-
----
-
-# Particles
-The particles are all words that do not inflect at all. For compatibility
-reasons subsets of particles have been set off to classes like conjunctions,
-adverbs, adpositions, and interjections. The ones that are *not* in those classes are left here as
-particles.
-
-Examples:
-
-*Particles examples:*
-* *ahaa:* `ahaa+Pcle`
-* *edes:* `edes+Pcle`
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/stems/particles.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/particles.lexc)</small>
-
----
-
-# Adverb classification
-Adverbs are a heterogenous mass of words with defective inflectional,
-usually sourced from various forms of nominals. It would be possible to
-classify adverbs along etymology and semantics, but we do not yet use such
-classification. Only the morphology is recorded in the continuation classes
-and analyses.
-
-The classification of the adverbs in morphology goes along the possessives
-and clitics they take or require:
-
-*Adverbs examples:*
-* *aakkosellisesti:* `aakkosellisesti+Adv`
-* *aakkosellisestikin:* `aakkosellisesti+Adv+Foc/kin`
-* *mukaani:* `mukaan+Adv+PxSg1`
-* *mukaamme:* `mukaan+Adv+PxPl1`
-* *ajassa:* `ajassa+Adv`
-* *ajassako:* `ajassa+Adv+Qst`
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/stems/adverbs.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/adverbs.lexc)</small>
-
----
-
-## Determiners
-Finnish don’t traditionally have determiners. Some claim that few
-pronouns are used like determiners, and can be analysed as such.
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/stems/determiners.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/determiners.lexc)</small>
-
----
-
-# Acronym classification
-Acronyms are shortenings that inflect. They all have two inflection
-patterns, one read letter by letter, and one word-by-word. They are separate
-entries in this dictionary. For example OY will have singular illatives
-_OY:hyn_ and _OY:öön_ for _yyhyn_ and _yhtiöön_ resp., although latter is
-much rarer.
-A big majority of popular acronyms in everyday use comes from English, and
-the word-based inflection is virtually non-existent and would be very
-confusing so there's no high priority for adding that.
-
-The first classification for acronyms should be along the final letter, then
-if the final word inflection is used, the class of that word.
-
-*Acronyms examples:*
-* *OY:hyn:* `OY+N+Sg+Ill`
-* *OY:öön* `OY+N+Sg+Ill`
-
-* `ADSL+N:ADSL  ACRO_ÄKS  ; ` Asymmetric Digital Subscriber Line
-* `AKT+N:AKT  ACRO_EE  ;    `
-* `API+N:API  ACRO_II  ;    ` Application Programming Interface
-* `atk+N:atk  ACRO_OO  ;    ` automaattinen tekstinkäsittely
-* `BBC+N:BBC  ACRO_EE  ;    ` British Broadcasting Company
-* `BKT+N:BKT  ACRO_EE  ;    ` Brutto-Kansan-Tuote
-* `BMW+N:BMW  ACRO_EE  ;    ` Bayerische Motor W
-* `BSE+N:BSE  ACRO_EE  ;    ` 
-* `cd+N:cd  ACRO_EE  ;      ` compact disc
-* `CD+N:CD  ACRO_ÄKS  ;     ` Compact Disc
-* `CD-R+N:CD-R  ACRO_ÄKS  ; ` Compact Disc Read-Only
-* `CD-RW+N:CD-RW  ACRO_EE  ;` Compact Disc Read-Write
-* `CIA+N:CIA  ACRO_AA  ;    ` Central Intelligence Agency
-* `DDR+N:DDR  ACRO_ÄKS  ;   ` Deutsches Democratische Republic
-* `DE+N:DE  ACRO_EE  ;      ` 
-* `DFI+N:DFI  ACRO_II  ;    `
-* `DJ+N:DJ  ACRO_II  ;   ` Disc Jockey
-* `dna+N:dna  ACRO_AA  ;    ` deoxyribonucleic acid
-* `DNA+N:DNA  ACRO_AA  ;    ` Deoxyribo-Nucleic Acid
-* `DPI+N:DPI  ACRO_II  ;    ` Dots Per Inch
-* `DVD+N:DVD  ACRO_ÄKS  ;   ` Digital Versatile Disc
-* `EEC+N:EEC  ACRO_EE  ;    ` European Economy Council
-* `EKP+N:EKP  ACRO_EE  ;    ` Euroopan Keskus-Pankki
-* `EMU+N:EMU  ACRO_UU  ;    ` European Monetary Union
-* `ETY+N:ETY  ACRO_YY  ;    ` Euroopan Turvallisuus-Yhteisö
-* `EU+N:EU  ACRO_UU  ;      ` Euroopan Unioni
-* `EY+N:EY  ACRO_YY  ;      ` Euroopan Yhteisö
-* `FBI+N:FBI  ACRO_II  ;     ` Federal Bureau of Investigation
-* `FIFA+N:FIFA  ACRO_AA  ;  ` Football
-* `FTP+N:FTP  ACRO_EE  ;    ` File Transfer Protocol
-* `GM+N:GM  ACRO_ÄKS  ;     ` General Motors
-* `GPRS+N:GPRS  ACRO_ÄKS  ; ` 
-* `HIFK+N:HIFK  ACRO_OO  ;  ` Helsingfors 
-* `HIV+N:HIV  ACRO_EE  ;    ` ... Immunodeficiency Virus
-* `HJK+N:HJK  ACRO_OO  ;    ` Helsingin Jalkapallo-Klubi
-* `HKL+N:HKL  ACRO_ÄKS  ;   ` Helsingin Kaupungin Liikenne
-* `HK+N:HK  ACRO_OO  ;      ` 
-* `HS+N:HS  ACRO_ÄKS  ;     ` Helsingin Sanomat
-* `HTML+N:HTML  ACRO_ÄKS  ; ` Hyper-Text Markup Language
-* `HTTP+N:HTTP  ACRO_EE  ;  ` Hyper-Text Transfer Protocol
-* `IBM+N:IBM  ACRO_ÄKS  ;   ` International Business Machines
-* `internet-tv+N:internet-tv  ACRO_EE  ; ` Tele-Visio
-* `IP+N:IP  ACRO_EE  ;    ` Internet Protocol
-* `IRC+N:IRC  ACRO_EE  ;  ` Internet Relay Chat
-* `ISBN+N:ISBN  ACRO_ÄKS  ;   ` International Serial Book Number
-* `IT+N:IT  ACRO_EE  ;    ` Informaatio-Teknologia
-* `KHO+N:KHO  ACRO_OO  ; ` Korkein Hovi-Oikeus
-* `KOP+N:KOP  ACRO_EE  ;  ` Kansallis-Osake-Pankki
-* `lehtiö-pc+N:lehtiö-pc  ACRO_EE  ; ` Personal Computer
-* `media-pc+N:media-pc  ACRO_EE  ; ` Personal Computer
-* `MTV3+N:MTV3  ACRO_KOLME  ; ` Mainos-Tele-Visio
-* `MTV+N:MTV  ACRO_EE  ;    ` Music TeleVision
-* `NASA+N:NASA  ACRO_AA  ;    ` National Air and Space A
-* `NATO+N:NATO  ACRO_OO  ;    ` North-Atlantic T Organisation
-* `NBA+N:NBA  ACRO_AA  ;    ` National Basketball Association
-* `netti-tv+N:netti-tv  ACRO_EE  ; ` Tele-visio
-* `NHL+N:NHL  ACRO_ÄKS  ; ` National Hockey League
-* `NL+N:NL  ACRO_ÄKS  ;   ` Neuvosto-Liitto
-* `NPC+N:NPC  ACRO_EE  ;  ` Non-Player Character
-* `OK+N:OK  ACRO_OO  ;    ` not pronounced in words
-* `oyj+N:oyj  ACRO_II  ;  ` Julkinen Osake-Yhtiö (!)
-* `oy+N:oy  ACRO_YY  ;    ` Osake-Yhtiö
-* `OY+N:OY  ACRO_YY  ;    ` Osake-Yhtiö
-* `paneeli-pc+N:paneeli-pc  ACRO_EE  ;    ` Personal Computer
-* `PDF+N:PDF  ACRO_ÄKS  ; ` Portable Document Format
-* `pH+N:pH  ACRO_OO  ;    ` per Hydrogen
-* `pien-pc+N:pien-pc  ACRO_EE  ;  ` Personal Computer
-* `pinta-WWW+N:pinta-WWW  ACRO_EE  ;  ` World Wide Web
-* `PPI+N:PPI  ACRO_II  ;  ` Points Per Inch
-* `PR+N:PR  ACRO_ÄKS  ;   ` Public Relations
-* `RNA+N:RNA  ACRO_AA  ;   ` Ribonucleic Acid
-* `RSS+N:RSS  ACRO_ÄKS  ; ` R
-* `SAK+N:SAK  ACRO_OO  ;  ` Suomen Ammattiliittojen Keskusjärjestö
-* `SDP+N:SDP  ACRO_EE  ;  ` Sosiali-Demokraattinen Puolue 
-* `SGML+N:SGML  ACRO_ÄKS  ;   ` Standardised General Markup Language
-* `SKDL+N:SKDL  ACRO_ÄKS  ; ` Suomen Kristillis-Demokraattien Liitto
-* `Skp+N:Skp  ACRO_EE  ; ` Suomen keskuspankki
-* `SOK+N:SOK  ACRO_OO  ;  ` Suomen Osuus-Kauppa
-* `SPR+N:SPR  ACRO_ÄKS  ; ` Suomen Punainen Risti
-* `SQL+N:SQL  ACRO_ÄKS  ; ` Structured Query Language
-* `STT+N:STT  ACRO_EE  ;  ` Suomen Tieto-Toimisto
-* `SUL+N:SUL  ACRO_ÄKS  ; ` Suomen Urheilu-Liitto
-* `TCP/IP+N:TCP/IP  ACRO_EE  ; ` Transmission Control Protocol / Internet Protocol
-* `TCP+N:TCP  ACRO_EE  ;  ` Transmission Control Protocol
-* `TI+N:TI  ACRO_II  ;    ` Texas Instruments
-* `TM+N:TM  ACRO_ÄKS  ;   ` Tekniikan Maailma
-* `TPS+N:TPS  ACRO_ÄKS  ; ` Turun Pallo-Seura
-* `TS+N:TS  ACRO_ÄKS  ;   ` Turun Sanomat
-* `tv+N:tv  ACRO_EE  ;    ` tele-visio
-* `URL+N:URL  ACRO_ÄKS  ; ` Uniform Resource Locator
-* `USA+N:USA  ACRO_AA  ;  ` United States of America
-* `VIP+N:VIP  ACRO_EE  ;  ` Very Important Person
-* `VR+N:VR  ACRO_ÄKS  ;   ` Valtion Rautatiet
-* `VTT+N:VTT  ACRO_EE  ;  ` 
-* `VW+N:VW  ACRO_EE  ;    ` Volks Wagen
-* `WAP+N:WAP  ACRO_EE  ;  ` Wireless Application Protocol
-* `WC+N:WC  ACRO_EE  ;    ` Water Closet
-* `WHO+N:WHO  ACRO_OO  ;  ` World Health Organisation
-* `WSOY+N:WSOY  ACRO_YY  ;   ` Werner-Söderström Osake-Yhtiö
-* `WTO+N:WTO  ACRO_OO  ;  ` World Trade Organisation
-* `WWF+N:WWF  ACRO_ÄKS  ; ` World Wildlife Foundation
-* `www+N:www  ACRO_EE  ;  ` world wide web
-* `WWW+N:WWW  ACRO_EE  ;  ` World Wide Web
-* `XML+N:XML  ACRO_ÄKS  ; ` Extensible Markup Language
-* `Y2K+N:Y2K  ACRO_OO  ;  ` not spelled out
-* `YK+N:YK  ACRO_OO  ;    ` Yhdistyneet Kansakunnat
-* `YMP+N:YMP  ACRO_EE  ;  ` 
-* `YT+N:YT  ACRO_EE  ;    ` Yhteistyö?
-* `ÄO+N:ÄO  ACRO_OO  ;    ` Älykkyysosamäärä
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/stems/fin-acronyms.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/fin-acronyms.lexc)</small>
-
----
-
-# Adverbial conjunctions
-The adverbial conjunctions join two unequal clauses or phrases together.
-The traditional term for this is sub-ordinating conjunction, it is assumed
-here for compatibility with other languages. Adverbial conjunctions are a
-subset of particles, so they do not inflect at all.
-
-The adverbial conjunctions are:
-ellei, että, jahka, jollei, jos, joskin, jos kohta, jotta, koska, kun,
-kunhan, mikäli, vaikka, (kunnes). 
-Further reading: [VISK § 818](http://scripta.kotus.fi/visk/sisalto.php?p=818)
-
-*Adverbial conjunctions examples:*
-* *että:* `että+CS`
-* *jotta:* `jotta+CS`
-* *koska:* `koska+CS`
-* *kun:* `kun+CS`
-* *jos:* `jos+CS`
-* *vaikka:* `vaikka+CS`
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/stems/subjunctions.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/subjunctions.lexc)</small>
-
----
-
-# Pronouns
-Pronouns are a closed special sub class of nouns. Morphologically pronouns
-have often defective, heteroclitic or otherwise irregular inflectional
-patterns, and certain pronouns have an morphophonologically distinct
-accusative case, extinct from other noun classes 
-Further reading: [VISK §§ 
-100|http://scripta.kotus.fi/visk/sisalto.php?p=100] – 104, Semantics ...
-[VISK § 7XX](http://scripta.kotus.fi/visk/sisalto.php?p=7XX)
-
-Pronouns are subdivided into categories by semantic and syntactic means.
-Semantic categories delimit the type of referents (humane, sentient,
-object), qualification and quantification. (interrogative, quantor).
-Morphosyntactically distinct is class of proadjectives, that inflect and
-act like adjectives.
-There are six personal pronouns for the six deictic references used; first,
-second and third singular and plural. The personal pronouns have separate
-accusative cases marked by t suffix. The pronouns in standard literary
-Finnish are *minä* (I), *sinä* (you), *hän* (he), *me* (we), *te* (you),
-*he* (they). 
-Further reading: [VISK § 100](http://scripta.kotus.fi/visk/sisalto.php?p=100)
-
-*Personal pronouns examples:*
-* *minä:* `minä+Pron+Pers+Sg+Nom` (Eng. # me)
-* *sinut:* `sinä+Pron+Pers+Sg+Acc`
-* *heille:* `he+Pron+Pers+Pl+All`
-
-The personal pronouns are among the most dialectally varied words of the
-Finnish language. The pronouns forms are one of the factors separating
-eastern dialects from the western ones. The personal pronouns of eastern
-dialects are *mie*, *sie*, (*hää*, *hiä*), *myö*, *työ*, *hyö* resp.;
-The third singular being rare in modern use. |citation-needed|
-
-In the western dialects the pronouns are *mää*, *sää* for first and second
-singular, and more variedly *meitti*, *teitti*, *heitti* for plurals.
-
-In standard spoken Finnish, and in many cases even in written form, the
-words *mä* and *sä* are more common and preferred to longer minä and sinä
-for first and second singular respectively. In practice the distinction is
-much like between Estonian corresponding pronouns, but official norm still
-recommends only the long forms.
-For third singular the nominative form is *hän* as in standard written 
-language, however the inflection is without intervening *-ne-* part.
-In old literary Finnish and poetic language the forms *ma* and *sa* are
-still used.
-
-There are six demonstrative pronouns for six non-personal references. In
-standard written Finnish these are *tämä* (this), *tuo* (that), *se* (it),
-*nämä* (these), *nuo* (those), *ne* (those).
-
-Further reading: [VISK § 101](http://scripta.kotus.fi/visk/sisalto.php?p=101)
-
-*Demonstrative pronouns examples:*
-* *tämä:* `tämä+Pron+Dem+Sg+Nom`
-* *tuolle:* `tuo+Pron+Dem+Sg+All`
-
-In standard spoken Finnish the demonstrative pronouns are commonly
-*tää*, *toi*, *nää*, *noi* instead of *tämä*, *tuo*, *nämä*, *nuo*.
-
-Interrogative pronouns are used in question clauses. The basic
-interrogatives in standard written Finnish are *kuka* (who), *mikä* (what),
-*kumpi* (which); *millainen* (what kind of), *kuinka* (how),
-*miksi* (what for). 
-Further reading: [VISK §734](http://scripta.kotus.fi/visk/sisalto.php?p=734)
-
-*Interrogative pronouns examples:*
-* *kuka:* `kuka+Pron+Interr+Sg+Nom` (Eng. # who)
-* *ketä:* `kuka+Pron+Interr+Sg+Par`
-* *kenet:* `kuka+Pron+Interr+Sg+Acc`
-
-The stem of *kuka* is shortened by from *kene* to *ke* in spoken language.
-
-Few forms of *kuka* based on *ken* stem and *ku* stem have become archaic.
-Fuhrer reading: [VISK §102](http://scripta.kotus.fi/visk/sisalto.php?p=102)
-Also the short form of *mi* is archaic and limited to poetic
-use. |citation-needed|
-
-Relative pronouns are *kuka*, *joka* and *mikä* (which, whose). VISK §735|
-They are morphologically indistinct from corresponding interrogative
-pronouns.
-
-*Relative pronouns examples:*
-* *kuka:* `kuka+Pron+Rel+Sg+Nom`
-
-Quantor pronouns correspond to existential and universal quantifiers and
-their negations. The generic quantors are *joku* (someone),
-*jokin* (something), *jokainen* (everyone), *kaikki* (everything),
-*kukin* (each one), *kukaan* (no one), *mikään* (nothing), *jokunen*,
-*muutama*, *harva* (a few), *moni* (many) and *useampi* (more). The
-dual quantors, quantifying over set of two objects are *jompikumpi* (either
-or), *kumpikin*, *molemmat* (both), *kumpikaan* (neither). 
-[VISK §740](http://scripta.kotus.fi/visk/sisalto.php?p=740)
-The quantor pronouns subsume the class of indefinite pronouns used in
-older grammar defintions. 
-[VISK §742](http://scripta.kotus.fi/visk/sisalto.php?p=742)
-The indefinite quantifiers are classified as
-indefinite quantors for the sake of compatibility. This covers *joku*,
-*jokin*, *jompikumpi*, as well as specific
-*eräs*, *muuan* (some), *yksi* (one).  
-Further reading [VISK §746](http://scripta.kotus.fi/visk/sisalto.php?p=746)
-– 749.
-
-*Quantor pronouns examples:*
-* *joku:* `joku+Pron+Qu+Indef+Sg+Nom`
-* *jotkut:* `joku+Pron+Qu+Indef+Pl+Nom`
-
-Reflexive pronoun is the word *itse* refering to self, usually but not
-always coupled with possessive suffix to denote the referent. 
-Further reading: [VISK §729](http://scripta.kotus.fi/visk/sisalto.php?p=729)
-
-*Reflexive pronouns examples:*
-* *itse:* `itse+Pron+Refl+Sg+Nom`
-
-Reciprocal pronoun is *toinen* refering to each other. It uses possessive
-suffix to delimit the reciprocal group. 
-Further reading: [VISK §732](http://scripta.kotus.fi/visk/sisalto.php?p=732)
-
-*Reciprocal pronouns examples:*
-* *toisiamme:* `toinen+Pron+Recipr+Pl+Par+PxPl1`
-
-Proadjectives are pronouns that act in place of adjectives syntactically.
-They are formed by compounds (or derivations) of pronoun and *lainen* or
-*moinen* (such as). 
-Further reading: [VISK §715](http://scripta.kotus.fi/visk/sisalto.php?p=715)
-
-*Proadjectives examples:*
-* *jollainen:* `jollainen+A+Rel+Sg+Nom`
-
-Proadverbs are the pronouns that have lexicalised into adverbs by their
-syntax and semantics. 
-Further reading: [VISK §715](http://scripta.kotus.fi/visk/sisalto.php?p=715)
-
-*Proadverbs examples:*
-* *missä:* `missä+Adv+Interr+Ine`
-
-forms of *jompi* may not exist as free morphs. The marginal forms of
-*monias* are extinct. Oddly enough, the semireduplicative intensifier
-monituinen is nowhere to be found in VISK either.
-
-Marginally in the pro word category are nouns, adjectives and adverbs
-refering to equivalence in comparative context since they are
-also otherwise lacking meaning like other pro words. This
-fgroup includes words *sama* (same), *eri* (different), *muu* (other),
-*toinen* (another), and their derivations. 
-Further reading: [VISK §766](http://scripta.kotus.fi/visk/sisalto.php?p=766)
-
-In spoken language the supposedly non-inflecting *eri* has common inflected
-forms.
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/stems/pron.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/pron.lexc)</small>
-
----
-
-Exceptions are quite strange word-forms. the ones that do not fit anywhere 
-else. This file contains all enumerated word forms that cannot reasonably be
-created from lexical data by regular inflection. Usually there should be next
-to none exceptions, it's always better to have a paradigm that covers only
-one or few words than an exception since these will not work nicely with e.g.
-compounding scheme or possibly many end applications.
-
-negation verb has partial inflection:
-
-* examples:*
-* *en:* `ei+V+Neg+Act+Sg1`
-* *älkää:* `ei+V+Neg+Act+Imprt+Pl2`
-* *älkööt:* `ei+V+Neg+Act+Imprt+Pl3`
-
-Some verbs only have few word-forms left:
-* *kutiaa:*
-* *taita:*
-* *paratkoon:*
-* *eläköön:*
-
-The noun ruoka has irregular forms:
-* *ruuassa:*
-* *ruuilla:*
-
-The adjective hyvä has heteroclitic comparative derivations too:
-* *parempi:*
-* *paremmissa:*
-* *paras:*
-* *parhaat:*
-
-Some of the nouns have archaic consonat stem forms left:
-* *vuonna:*
-* *sydännä:*
-* *jumalten:*
-* *sankarten:*
-
-few verbs have shortened forms in standard spoken Finnish
-* *meen:*
-* *tuut:*
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/stems/exceptions.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/exceptions.lexc)</small>
-
----
-
-# Finnish Numerals
-
-Numerals have been split in three sections, the compounding parts
-of cardinals and ordinals, and the non-compounding ones:
-
-*Numeral examples:*
-* *kaksikymmentäkolmetuhatta:* `kaksi+Num+Card+Sg+Nom#kymmenen+Num+Card+Sg+Par#kolme+Num+Card+Sg+Nom#tuhat+Num+Card+Sg+Par` (Eng. # 23,000)
-* *kahdessadasneljäs:* `kahdes+Num+Ord+Sg+Nom#sadas+Num+Ord+Sg+Nom#neljäs+Num+Ord+Sg+Nom` (Eng. # 204rd)
-* *viitisenkymmentä:* `viitisen+Num#kymmentä` (Eng. # 50-ish)
-
-The compounding parts of cardinals are the number multiplier words.
-
-*cardinal examples:*
-* *yksi:* `yksi+Num+Card+Sg+Nom` (Eng. # one)
-* *viidelle:* `viisi+Num+Card+Sg+All` (Eng. # five)
-* *tuhatta:* `tuhat+Num+Card+Sg+Par` (Eng. # thousand)
-
-The suffixes only appear after cardinal multipliers
-
-*Cardinal multiplicants examples:*
-* *viisikymmentä:* `viisi+Num+Card+Sg+Nom#kymmentä`
-* *neljäsataatuhatta:* `neljä+Num+Card+Sg+Nom#sata+Num+Card+Sg+Par#tuhatta`
-
-The compounding parts of ordinals are the number multiplier words.
-
-*Ordinal numerals examples:*
-* *neljäs:* `neljäs+A+Ord+Sg+Nom`
-* *viidennelle:* `viides+A+Ord+Sg+All`
-* *tuhannetta:* `tuhannes+A+Ord+Sg+Par`
-
-The suffixes only appear after cardinal multipliers
-
-*Ordinal multiplicants examples:*
-* *viideskymmenes:* `viides+A+Ord+Sg+Nom#kymmenes`
-* *neljässadastuhannes:* `neljäs+A+Ord+Sg+Nom#sadas+A+Ord+Sg+Nom#tuhannes`
-
-There is a set of numbers or corresponding expressions that work like them,
-but are not basic cardinals or ordinals:
-
-*Numeral others examples:*
-* *viitisenkymmentä:* `viitisen+Num#kymmentä`
-* *puolikymmentä:* `puolikymmentä+Num+Sg+Nom`
-
-## Numeral stem variation
-Numerals follow the same stem variation patterns as nouns, some of these
-being very rare to extinct for nouns. 
-
-*Numerals 31 examples:*
-* *yksi:* `yksi+Num+Card+Sg+Nom`
-* *yhteen:* `yksi+Num+Card+Sg+Ill`
-* *yhtenä:* `yksi+Num+Card+Sg+Ess`
-* *yhdessä:* `yksi+Num+Card+Sg+Ine`
-* *yhtä:* `yksi+Num+Card+Sg+Par`
-* *yksiä:* `yksi+Num+Card+Pl+Par`
-* *yksien:* `yksi+Num+Card+Pl+Gen`
-* *yksiin:* `yksi+Num+Card+Pl+Ill`
-* *yksinä:* `yksi+Num+Card+Pl+Ess`
-* *yksissä:* `yksi+Num+Card+Pl+Ine`
-
-*Numerals 31 back§ examples:*
-* *kaksi:* `kaksi+Num+Card+Sg+Nom`
-* *kahteen:* `kaksi+Num+Card+Sg+Ill`
-* *kahtena:* `kaksi+Num+Card+Sg+Ess`
-* *kahdessa:* `kaksi+Num+Card+Sg+Ine`
-* *kahta:* `kaksi+Num+Card+Sg+Par`
-* *kaksia:* `kaksi+Num+Card+Pl+Par`
-* *kaksien:* `kaksi+Num+Card+Pl+Gen`
-* *kaksiin:* `kaksi+Num+Card+Pl+Ill`
-* *kaksina:* `kaksi+Num+Card+Pl+Ess`
-* *kaksissa:* `kaksi+Num+Card+Pl+Ine`
-
-*Numerals 8~5 examples:*
-* *kolme:* `kolme+Num+Card+Sg+Nom`
-* *kolmeen:* `kolme+Num+Card+Sg+Ill`
-* *kolmena:* `kolme+Num+Card+Sg+Ess`
-* *kolmessa:* `kolme+Num+Card+Sg+Ine`
-* *kolmea:* `kolme+Num+Card+Sg+Par`
-* *kolmia:* `kolme+Num+Card+Pl+Par`
-* *kolmien:* `kolme+Num+Card+Pl+Gen`
-* *kolmiin:* `kolme+Num+Card+Pl+Ill`
-* *kolmina:* `kolme+Num+Card+Pl+Ess`
-* *kolmissa:* `kolme+Num+Card+Pl+Ine`
-
-*Numerals 10 examples:*
-* *neljä:* `neljä+Num+Card+Sg+Nom`
-* *neljää:* `neljä+Num+Card+Sg+Par`
-* *neljään:* `neljä+Num+Card+Sg+Ill`
-* *neljänä:* `neljä+Num+Card+Sg+Ess`
-* *neljässä:* `neljä+Num+Card+Sg+Ine`
-* *neljiä:* `neljä+Num+Card+Pl+Par`
-* *neljien:* `neljä+Num+Card+Pl+Gen`
-* *neljiin:* `neljä+Num+Card+Pl+Ill`
-* *neljinä:* `neljä+Num+Card+Pl+Ess`
-* *neljissä:* `neljä+Num+Card+Pl+Ine`
-* *neljäin:* `neljä+Num+Card+Pl+Gen+Use/Rare`
-
-*Numerals 27 front examples:*
-* *viisi:* `viisi+Num+Card+Sg+Nom`
-* *viiteen:* `viisi+Num+Card+Sg+Ill`
-* *viitenä:* `viisi+Num+Card+Sg+Ess`
-* *viidessä:* `viisi+Num+Card+Sg+Ine`
-* *viisinä:* `viisi+Num+Card+Pl+Ess`
-* *viisissä:* `viisi+Num+Card+Pl+Ine`
-* *viittä:* `viisi+Num+Card+Sg+Par`
-* *viitten:* `viisi+Num+Card+Pl+Gen`
-* *viisiä:* `viisi+Num+Card+Pl+Par`
-* *viisien:* `viisi+Num+Card+Pl+Gen`
-* *viisiin:* `viisi+Num+Card+Pl+Ill`
-
-*Numerals 27 back examples:*
-* *kuusi:* `kuusi+Num+Card+Sg+Nom`
-* *kuutena:* `kuusi+Num+Card+Sg+Ess`
-* *kuudessa:* `kuusi+Num+Card+Sg+Ine`
-* *kuusina:* `kuusi+Num+Card+Pl+Ess`
-* *kuusissa:* `kuusi+Num+Card+Pl+Ine`
-* *kuutta:* `kuusi+Num+Card+Sg+Par`
-* *kuutten:* `kuusi+Num+Card+Pl+Gen`
-* *kuusia:* `kuusi+Num+Card+Pl+Par`
-* *kuusien:* `kuusi+Num+Card+Pl+Gen`
-* *kuusiin:* `kuusi+Num+Card+Pl+Ill`
-
-*Numerals 10n examples:*
-* *kahdeksan:* `kahdeksan+Num+Card+Sg+Nom`
-* *kahdeksaa:* `kahdeksan+Num+Card+Sg+Par`
-* *kahdeksaan:* `kahdeksan+Num+Card+Sg+Ill`
-* *kahdeksassa:* `kahdeksan+Num+Card+Sg+Ine`
-* *kahdeksana:* `kahdeksan+Num+Card+Sg+Ess`
-* *kahdeksia:* `kahdeksan+Num+Card+Pl+Par`
-* *kahdeksien:* `kahdeksan+Num+Card+Pl+Gen`
-* *kahdeksiin:* `kahdeksan+Num+Card+Pl+Ill`
-* *kahdeksissa:* `kahdeksan+Num+Card+Pl+Ine`
-* *kahdeksina:* `kahdeksan+Num+Card+Pl+Ess`
-* *kahdeksain:* `kahdeksan+Num+Card+Pl+Gen+Use/Rare`
-
-*Numerals 10n front examples:*
-* *yhdeksän:* `yhdeksän+Num+Card+Sg+Nom`
-* *yhdeksää:* `yhdeksän+Num+Card+Sg+Par`
-* *yhdeksään:* `yhdeksän+Num+Card+Sg+Ill`
-* *yhdeksässä:* `yhdeksän+Num+Card+Sg+Ine`
-* *yhdeksänä:* `yhdeksän+Num+Card+Sg+Ess`
-* *yhdeksiä:* `yhdeksän+Num+Card+Pl+Par`
-* *yhdeksien:* `yhdeksän+Num+Card+Pl+Gen`
-* *yhdeksissä:* `yhdeksän+Num+Card+Pl+Ine`
-* *yhdeksinä:* `yhdeksän+Num+Card+Pl+Ess`
-* *yhdeksäin:* `yhdeksän+Num+Card+Pl+Gen+Use/Rare`
-
-*Numerals 32 examples:*
-* *kymmenen:* `kymmenen+Num+Card+Sg+Nom`
-* *kymmeneen:* `kymmenen+Num+Card+Sg+Ill`
-* *kymmenenä:* `kymmenen+Num+Card+Sg+Ess`
-* *kymmenessä:* `kymmenen+Num+Card+Sg+Ine`
-* *kymmentä:* `kymmenen+Num+Card+Sg+Par`
-* *kymmenten:* `kymmenen+Num+Card+Pl+Gen`
-* *kymmenien:* `kymmenen+Num+Card+Pl+Gen`
-* *kymmeniin:* `kymmenen+Num+Card+Pl+Ill`
-* *kymmenissä:* `kymmenen+Num+Card+Pl+Ine`
-* *kymmeninä:* `kymmenen+Num+Card+Pl+Ess`
-
-*Numerals 9 examples:*
-* *sata:* `sata+Num+Card+Sg+Nom`
-* *satana:* `sata+Num+Card+Sg+Ess`
-* *sadassa:* `sata+Num+Card+Sg+Ine`
-* *sataan:* `sata+Num+Card+Sg+Ill`
-* *sataa:* `sata+Num+Card+Sg+Par`
-* *satojen:* `sata+Num+Card+Pl+Gen`
-* *satoihin:* `sata+Num+Card+Pl+Ill`
-* *sadoissa:* `sata+Num+Card+Pl+Ine`
-* *satoina:* `sata+Num+Card+Pl+Ess`
-
-*Numerals 46 examples:*
-* *tuhat:* `tuhat+Num+Card+Sg+Nom`
-* *tuhanteen:* `tuhat+Num+Card+Sg+Ill`
-* *tuhantena:* `tuhat+Num+Card+Sg+Ess`
-* *tuhannessa:* `tuhat+Num+Card+Sg+Ine`
-* *tuhansien:* `tuhat+Num+Card+Pl+Gen`
-* *tuhatta:* `tuhat+Num+Card+Sg+Par`
-* *tuhansia:* `tuhat+Num+Card+Pl+Par`
-* *tuhansien:* `tuhat+Num+Card+Pl+Gen`
-* *tuhansiin:* `tuhat+Num+Card+Pl+Ill`
-* *tuhansina:* `tuhat+Num+Card+Pl+Ess`
-* *tuhansissa:* `tuhat+Num+Card+Pl+Ine`
-
-*Numerals 10 examples:*
-* *miljoona:* `miljoona+Num+Card+Sg+Nom`
-* *miljoonana:* `miljoona+Num+Card+Sg+Ess`
-* *miljoonassa:* `miljoona+Num+Card+Sg+Ine`
-* *miljoonaa:* `miljoona+Num+Card+Sg+Par`
-* *miljoonaan:* `miljoona+Num+Card+Sg+Ill`
-* *miljoonia:* `miljoona+Num+Card+Pl+Par`
-* *miljoonien:* `miljoona+Num+Card+Pl+Gen`
-* *miljooniin:* `miljoona+Num+Card+Pl+Ill`
-* *miljoonissa:* `miljoona+Num+Card+Pl+Ine`
-* *miljoonina:* `miljoona+Num+Card+Pl+Ess`
-
-*Numerals 5 examples:*
-* *miljardi:* `miljardi+Num+Card+Sg+Nom`
-* *miljardina:* `miljardi+Num+Card+Sg+Ess`
-* *miljardissa:* `miljardi+Num+Card+Sg+Ine`
-* *miljardeina:* `miljardi+Num+Card+Pl+Ess`
-* *miljardeissa:* `miljardi+Num+Card+Pl+Ine`
-* *miljardia:* `miljardi+Num+Card+Sg+Par`
-* *miljardiin:* `miljardi+Num+Card+Sg+Ill`
-* *miljardeja:* `miljardi+Num+Card+Pl+Par`
-* *miljardien:* `miljardi+Num+Card+Pl+Gen`
-* *miljardeihin:* `miljardi+Num+Card+Pl+Ill`
-
-*Numerals 5 more examples:*
-* *Googol:* `Googol+Num+Card+Sg+Nom`
-
-*Numerals 5 moremore examples:*
-* *pari:* `pari+Num+Card+Sg+Nom`
-* *parina:* `pari+Num+Card+Sg+Ess`
-* *parissa:* `pari+Num+Card+Sg+Ine`
-* *pareissa:* `pari+Num+Card+Pl+Ine`
-* *pareina:* `pari+Num+Card+Pl+Ess`
-* *paria:* `pari+Num+Card+Sg+Par`
-* *pareja:* `pari+Num+Card+Pl+Par`
-* *parien:* `pari+Num+Card+Pl+Gen`
-* *pareihin:* `pari+Num+Card+Pl+Ill`
-* *pariin:* `pari+Num+Card+Sg+Ill`
-
-*Numerals 38 examples:*
-* *ensimmäinen:* `ensimmäinen+A+Ord+Sg+Nom`
-* *ensimmäisenä:* `ensimmäinen+A+Ord+Sg+Ess`
-* *ensimmäisessä:* `ensimmäinen+A+Ord+Sg+Ine`
-* *ensimmäistä:* `ensimmäinen+A+Ord+Sg+Par`
-* *ensimmäisten:* `ensimmäinen+A+Ord+Pl+Gen`
-* *ensimmäisiä:* `ensimmäinen+A+Ord+Pl+Par`
-* *ensimmäisiin:* `ensimmäinen+A+Ord+Pl+Ill`
-* *ensimmäisinä:* `ensimmäinen+A+Ord+Pl+Ess`
-* *ensimmäisissä:* `ensimmäinen+A+Ord+Pl+Ine`
-
-*Numerals 38 back examples:*
-* *toinen:* `toinen+A+Ord+Sg+Nom`
-* *toiseen:* `toinen+A+Ord+Sg+Ill`
-* *toista:* `toinen+A+Ord+Sg+Par`
-* *toisten:* `toinen+A+Ord+Pl+Gen`
-* *toisien:* `toinen+A+Ord+Pl+Gen`
-* *toisia:* `toinen+A+Ord+Pl+Par`
-* *toisiin:* `toinen+A+Ord+Pl+Ill`
-* *toisena:* `toinen+A+Ord+Sg+Ess`
-* *toisessa:* `toinen+A+Ord+Sg+Ine`
-* *toisissa:* `toinen+A+Ord+Pl+Ine`
-* *toisina:* `toinen+A+Ord+Pl+Ess`
-
-*Numerals 45 examples:*
-* *kolmas:* `kolmas+A+Ord+Sg+Nom`
-* *kolmantena:* `kolmas+A+Ord+Sg+Ess`
-* *kolmannessa:* `kolmas+A+Ord+Sg+Ine`
-* *kolmanteen:* `kolmas+A+Ord+Sg+Ill`
-* *kolmatta:* `kolmas+A+Ord+Sg+Par`
-* *kolmansia:* `kolmas+A+Ord+Pl+Par`
-* *kolmansien:* `kolmas+A+Ord+Pl+Gen`
-* *kolmansissa:* `kolmas+A+Ord+Pl+Ine`
-* *kolmansina:* `kolmas+A+Ord+Pl+Ess`
-
-*Numerals 45 fron examples:*
-* *neljäs:* `neljäs+A+Ord+Sg+Nom`
-* *neljänteen:* `neljäs+A+Ord+Sg+Ill`
-* *neljäntenä:* `neljäs+A+Ord+Sg+Ess`
-* *neljännessä:* `neljäs+A+Ord+Sg+Ine`
-* *neljättä:* `neljäs+A+Ord+Sg+Par`
-* *neljänsiä:* `neljäs+A+Ord+Pl+Par`
-* *neljänsien:* `neljäs+A+Ord+Pl+Gen`
-* *neljänsiin:* `neljäs+A+Ord+Pl+Ill`
-* *neljänsissä:* `neljäs+A+Ord+Pl+Ine`
-* *neljänsinä:* `neljäs+A+Ord+Pl+Ess`
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/stems/numerals.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/numerals.lexc)</small>
-
----
-
-# Adpositions
-Adpositions are morphologically nominals that have defective inflection
-patterns. Some of them come from forms of nominals that are no longer
-used. The adpositions are classified along whether they take possessives
-clitics, or not. They also have slight syntactic and semantic differences,
-the syntactic differences are coded in the analyses to be compatible with
-other languages, but for most intents and purposes all adpositions can
-appear in both syntactic positions, after and before the head word.
-
-Examples:
-
-*Adpositions examples:*
-* *alta:* `alta+Po`
-* *alleen:* `alle+Po+PxSg3`
-* *irti:* `irti+Pr`
-* *irtikö:* `irti+Pr+Qst`
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/stems/pp.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/pp.lexc)</small>
-
----
-
-
 # Continuation lexicons for Finnish abbreviations
 
-Abbreviations are shortened forms that do not inflect. They have whatever
-classification they would have if they were read out, mostly that of nouns.
-Lot of abbreviations end in a full stop, which may complicate analysis and
-tokenisation in real-world applications
+## Lexica for adding tags and periods
 
-*Abbreviations examples:*
-* *eaa.:* `eaa.+N`
-* *esim.:* `esim.+N`
-* ★*esim:* `esim+N` (is not standard language)
-Some ar less classified
-* *ab:* `ab+ABBR`
+## The sublexica
 
-* `KalPa+N:KalPa  ab-nodot-noun-itrab  ; `+N: Kalmiston pallo
-* `MyPa+N:MyPa   ab-nodot-noun-itrab   ; `+N: Myllykosken Pallo
-* `RoPS+N:RoPS   ab-nodot-noun-itrab  ; `+N: Rovaniemen palloseura
-* `jssk+N:jssk   ab-nodot-noun-itrab   ; `+N: jossakin (somewhere)
-* `jstk+N:jstk   ab-nodot-noun-itrab  ; `+N: jostakin (from)
-* `jtak+N:jtak   ab-nodot-noun-itrab   ; `+N: jotakin (to)
-* `k%:lo+N:k%:lo   ab-dot-noun-trnumab   ; `+N: kello
+### Continuation lexicons for abbrs both with and witout final period
+
+* **LEXICON ab-noun   **
+
+* **LEXICON ab-adj   **
+
+* **LEXICON ab-adv   **
+
+* **LEXICON ab-num   **
+
+### Lexicons without final period
+
+* **LEXICON ab-nodot-noun   **  The bulk
+
+* **LEXICON ab-nodot-adj   **
+
+* **LEXICON ab-nodot-adv   **
+
+* **LEXICON ab-nodot-num   **
+
+### Lexicons with final period
+
+* **LEXICON ab-dot-noun   **  This is the lexicon for abbrs that must have a period.
+
+* **LEXICON ab-dot-adj   **  This is the lexicon for abbrs that must have a period.
+
+* **LEXICON ab-dot-adv   **  This is the lexicon for abbrs that must have a period.
+
+* **LEXICON ab-dot-num   **  This is the lexicon for abbrs that must have a period.
+
+* **LEXICON ab-dot-cc   **
+
+* **LEXICON ab-dot-verb   **
+
+* **LEXICON ab-nodot-verb   **
+
+* **LEXICON ab-dot-IVprfprc   **
+
+* **LEXICON nodot-attrnomaccgen-infl   **
+
+* **LEXICON nodot-attr-infl   **
+
+* **LEXICON nodot-nomaccgen-infl   **
+
+* **LEXICON dot-attrnomaccgen-infl   **
+
+* **LEXICON dot-attr   **
+
+* **LEXICON dot-nomaccgen-infl   **
+
+* **LEXICON DOT   ** - Adds the dot to dotted abbreviations.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/fin-abbreviations.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/fin-abbreviations.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/affixes/abbreviations.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/affixes/abbreviations.lexc)</small>
 
 ---
 
-# Proper nouns
-Proper nouns are morphologically indistinct subset of nouns. They have
-some orthographical differences, required capitalisations and compounding
-with hyphens. The derivations may lowercase. They may be classified 
-semantically to match other giellatekno things in the future.
+# Acronym inflection
+Acronyms are inflected using a colon, followed by the inflectional endings,
+which depend on either last letter of the word or inflection class of the
+last word of the abbreviation. The exception to the inflection scheme is the
+singular nominative, which appears without colon.
+Pronouncable abbreviations such as aids, hiv, kela, alko etc. are actually
+counted as regular words with regular inflection patterns.
+c.f. [VISK § 169](http://scripta.kotus.fi/visk/sisallys.php?p=169)
 
-*Proper nouns examples:*
-* *Kalle:* `Kalle+N+Prop+Sg+Nom`
-* *Joensuu:* `Joensuu+N+Prop+Sg+Nom`
-
-details see [noun-stems.html].
-The proper nouns are classified and inflected along noun patterns, for 
-
-Many of Proper nouns inflect like nouns... however, compound differently
-
-*Nouns 20 ä examples:*
-* *Hyvinkää:* `Hyvinkää+N+Prop+Sg+Nom` (Eng. # Hyvinkää)
-* *Hyvinkäätä:* `Hyvinkää+N+Prop+Sg+Par`
-* *Hyvinkäähän:* `Hyvinkää+N+Prop+Sg+Ill`
-* *Hyvinkääseen:* `Hyvinkää+N+Prop+Sg+Ill`
+## Acronyms ending in numbers inflect like the numbers are pronounced.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/propernouns.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/propernouns.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/affixes/acronyms.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/affixes/acronyms.lexc)</small>
 
 ---
 
-# Adjective classification
-Adjectives are words that are inflected like nouns, with few additions. For
-adjectives, the comparative derivations are usually allowed and the
-possessive suffixes are unlikely. The syntactic adjectives that do not have
-comparative derivations are nouns, if they have nominal inflection, or
-particles, if they do not inflect. The examples you need to find the 
-correct classification are same as for nouns, with addition of comparative
-and superlative.
+# Adjective inflection
+The adjectives are inflected like regular nouns. The only morphological
+difference in adjectives compared to other nouns is higher likelihood of
+comparative derivations–they are fully productive. For adjectives that do
+not compare, use qualifiers classification instead.
+VISK § 300
 
-The classification of adjectives combines the stem changes, the final 
-allomorph selection and the harmony. See the list from:
+## Adjective stem variation and allomorph selection
+Adjective stems are formed like noun stems, with similar patterns. Adjectives
+have additionally the productive comparative derivations, which may have
+their own stems, particularly an e-stem for a-stem words. The examples in
+this chapter are the same set of cases as with nouns:
+singular nominative, singular essive, singular inessive, plural essive,
+plural elative, singular partitives, singular illatives, plural partitives
+plural genitives, plural illatives and the compound forms. And also the
+comparative derivations: comparative singular nominative and superlative
+singular nominative. Majority of adjeciteves are equivalent to
+corresponding noun classes, so some examples have been omitted.
 
-*Adjective examples examples:*
-* *aakkostettu:* `aakkostettu+A+Sg+Nom`
-* *aakkostettuja:* `aakkostettu+A+Pl+Par`
-* *aakkostetut:* `aakkostettu+A+Pl+Nom`
-* *aakkostetumpi:* `aakkostettu+A+Comp+Sg+Nom`
-* *aakkostetumpina:* `aakkostettu+A+Comp+Pl+Ess`
-* *aakkostetuin:* `aakkostettu+A+Superl+Sg+Nom`
-* *aakkostetuimmat:* `aakkostettu+A+Superl+Pl+Nom`
+### Bisyllabic / derivational adjective stems without stem variation
+The most basic adjective stems do not have any stem internal variation.
+They end in o, u, y or ö, and with some limited set of new words, e.
+This class has the fewest allomorphs. There are a number of productive
+adjective classes in this section, including all lexicalised nut 
+participle’s passives (-tu, -ty), moderative derivations (-hko, -hkö)
+and ...
+Examples follow in specific sub-classes.
+
+The words in this class ending in o belong to `ADJ_TUMMAHKO`, the old
+dictionaries use class ¹. The stems should be entered in dictionary like:
+```tummahko+A:tummahko A_TUMMAHKO  ;```
+This class includes back vowel moderative
+derivations. N.B. the comparative derivation of moderatives is semantically
+awkward, but morphologically plausible.
+
+*Adjectives 1 o examples:*
+* *tummahko:* `tummahko+A+Sg+Nom` (Eng. # darkish)
+* *tummahkona:* `tummahko+A+Sg+Ess`
+* *tummahkossa:* `tummahko+A+Sg+Ine`
+* *tummahkoina:* `tummahko+A+Pl+Ess`
+* *tummahkoissa:* `tummahko+A+Pl+Ine`
+* *tummahkoa:* `tummahko+A+Sg+Par`
+* ★*tummahkota:* `tummahko+A+Sg+Par` (is not standard language)
+* *tummahkoon:* `tummahko+A+Sg+Ill`
+* ★*tummahkohon:* `tummahko+A+Sg+Ill` (is not standard language)
+* ★*tummahkoseen:* `tummahko+A+Sg+Ill` (is not standard language)
+* *tummahkoja:* `tummahko+A+Pl+Par`
+* ★*tummahkoita:* `tummahko+A+Pl+Par` (is not standard language)
+* *tummahkojen:* `tummahko+A+Pl+Gen`
+* ★*tummahkoiden:* `tummahko+A+Pl+Gen` (is not standard language)
+* ★*tummahkoitten:* `tummahko+A+Pl+Gen` (is not standard language)
+* *tummahkoihin:* `tummahko+A+Pl+Ill`
+* ★*tummahkoisiin:* `tummahko+A+Pl+Ill` (is not standard language)
+* *tummahkompi:* `tummahko+A+Comp+Sg+Nom`
+* *tummahkoin:* `tummahko+A+Superl+Sg+Nom`
+
+The stems ending in u are in class `ADJ_VALKAISTU`, and in old dictionaries
+the class is ¹. These stems should be entered in dictionary like:
+```valkaistu+A:valkaistu A_VALKAISTU  ;```
+Common part of this class is formed by nut participle 
+passive’s _back_ vowel versions after s stem verbs:
+
+*Adjectives 1 u examples:*
+* *valkaistu:* `valkaistu+A+Sg+Nom` (Eng. # bleached)
+* *valkaistua:* `valkaistu+A+Sg+Par`
+* *valkaistuun:* `valkaistu+A+Sg+Ill`
+* *valkaistuna:* `valkaistu+A+Sg+Ess`
+* *valkaistussa:* `valkaistu+A+Sg+Ine`
+* *valkaistuja:* `valkaistu+A+Pl+Par`
+* *valkaistujen:* `valkaistu+A+Pl+Gen`
+* *valkaistuihin:* `valkaistu+A+Pl+Ill`
+* *valkaistuina:* `valkaistu+A+Pl+Ess`
+* *valkaistuissa:* `valkaistu+A+Pl+Ine`
+* *valkaistumpi:* `valkaistu+A+Comp+Sg+Nom`
+* *valkaistuin:* `valkaistu+A+Superl+Sg+Nom`
+
+The stems ending in y are in class `ADJ_HÄPÄISTY`, and in old dictionaries
+the class is ¹. Common part of this class is formed by nut participle 
+passive’s _front_ vowel versions after s stem verbs:
+
+*Adjectives 1 y examples:*
+* *häpäisty:* `häpäisty+A+Sg+Nom` (Eng. # defiled)
+* *häpäistyä:* `häpäisty+A+Sg+Par`
+* *häpäistyyn:* `häpäisty+A+Sg+Ill`
+* *häpäistynä:* `häpäisty+A+Sg+Ess`
+* *häpäistyssä:* `häpäisty+A+Sg+Ine`
+* *häpäistyjä:* `häpäisty+A+Pl+Par`
+* *häpäistyjen:* `häpäisty+A+Pl+Gen`
+* *häpäistyihin:* `häpäisty+A+Pl+Ill`
+* *häpäistyinä:* `häpäisty+A+Pl+Ess`
+* *häpäistyissä:* `häpäisty+A+Pl+Ine`
+* *häpäistympi:* `häpäisty+A+Comp+Sg+Nom`
+* *häpäistyin:* `häpäisty+A+Superl+Sg+Nom`
+
+The words in this class ending in ö belong to `ADJ_HÖLÖ`, the old
+dictionaries use class ¹. This class includes front vowel moderative
+derivations.
+
+*Adjectives 1 ö examples:*
+* *hölö:* `hölö+A+Sg+Nom` (Eng. # blabbermouth)
+* *hölöä:* `hölö+A+Sg+Par`
+* *hölöön:* `hölö+A+Sg+Ill`
+* *hölönä:* `hölö+A+Sg+Ess`
+* *hölössä:* `hölö+A+Sg+Ine`
+* *hölöjä:* `hölö+A+Pl+Par`
+* *hölöjen:* `hölö+A+Pl+Gen`
+* *hölöihin:* `hölö+A+Pl+Ill`
+* *hölöinä:* `hölö+A+Pl+Ess`
+* *hölöissä:* `hölö+A+Pl+Ine`
+* *hölömpi:* `hölö+A+Comp+Sg+Nom`
+* *hölöin:* `hölö+A+Superl+Sg+Nom`
+
+The new words with e stem have same allomorph selection as old short
+unchanging bisyllabic u, y, o and ö stems, and no stem-internal variation.
+The classification for the back vowel variant of this class is
+`ADJ_TOOPE`, and old dictionaries used the class ⁸.
+
+*Adjectives 8 back examples:*
+* *toope:* `toope+A+Sg+Nom` (Eng. # doofus)
+* *toopea:* `toope+A+Sg+Par`
+* *toopeen:* `toope+A+Sg+Ill`
+* *toopeja:* `toope+A+Pl+Par`
+* *toopejen:* `toope+A+Pl+Gen`
+* *toopeihin:* `toope+A+Pl+Ill`
+* *toopempi:* `toope+A+Comp+Sg+Nom`
+* *toopein:* `toope+A+Superl+Sg+Nom`
+They also have slightly greater probability for archaic form of plural
+genitive:
+* *toopein:* `toope+A+Pl+Gen+Use/Rare`
+
+The front variation of unchanging e stems is class `@LEXNAME`, and in
+old dictionaries ⁸.
+
+*Adjectives 8 front examples:*
+* *beige:* `beige+A+Sg+Nom` (Eng. # beige)
+* *beigeä:* `beige+A+Sg+Par`
+* *beigeen:* `beige+A+Sg+Ill`
+* *beigejä:* `beige+A+Pl+Par`
+* *beigejen:* `beige+A+Pl+Gen`
+* *beigeihin:* `beige+A+Pl+Ill`
+* *beigempi:* `beige+A+Comp+Sg+Nom`
+* *beigein:* `beige+A+Superl+Sg+Nom`
+
+### Trisyllabic and longer non-derived adjectuve stems
+The trisyllabic and longer words with stem vowels o, u, y and ö also
+have no stem variation either, but selection of suffix allomorphs for 
+plural genitives and partitives is wider than for bisyllabic and derived
+ones.
+
+The o final trisyllabic stems are in class `ADJ_KOHELO`, and the old
+dictionaries used ². 
+
+*Adjectives 2 o examples:*
+* *tohelo:* `tohelo+A+Sg+Nom` (Eng. # clumsy)
+* *toheloita:* `tohelo+A+Pl+Par`
+* *toheloja:* `tohelo+A+Pl+Par`
+* *tohelojen:* `tohelo+A+Pl+Gen`
+* *toheloiden:* `tohelo+A+Pl+Gen`
+* *toheloitten:* `tohelo+A+Pl+Gen`
+* *tohelompi:* `tohelo+A+Comp+Sg+Nom`
+* *toheloin:* `tohelo+A+Superl+Sg+Nom`
+
+And the trisyllabic ö stem is classified `ADJ_LÖPERÖ`.
+
+*Adjectives 2 ö examples:*
+* *löperö:* `löperö+A+Sg+Nom` (Eng. # sloppy)
+* *löperöjen:* `löperö+A+Pl+Gen`
+* *löperöiden:* `löperö+A+Pl+Gen`
+* *löperöitten:* `löperö+A+Pl+Gen`
+* *löperömpi:* `löperö+A+Comp+Sg+Nom`
+* *löperöin:* `löperö+A+Superl+Sg+Nom`
+
+### Unchanging long vowel stems
+The words with stem vowels o, u, y and ö preceded by vowels still have no
+stem variation, but use yet another pattern of allomorphs for
+singular and plural partitives and plural genitive
+
+The class for o final long vowel stems is `ADJ_AUTIO`, and old
+old dictionaries used ³. 
+
+*Adjectives 3 o examples:*
+* *autio:* `autio+A+Sg+Nom` (Eng. # deserted)
+* *autiota:* `autio+A+Sg+Par`
+* ★*autioa:* `autio+A+Sg+Par` (is not standard language)
+* *autioita:* `autio+A+Pl+Par`
+* *autioiden:* `autio+A+Pl+Gen`
+* *autioitten:* `autio+A+Pl+Gen`
+* *autiompi:* `autio+A+Comp+Sg+Nom`
+* *autioin:* `autio+A+Superl+Sg+Nom`
+
+The front voweled stems with ö after vowels go to class `ADJ_RIIVIÖ`,
+and used the old dictionary class ³.
+
+*Adjectives 3 ö examples:*
+* *riiviö:* `riiviö+A+Sg+Nom` (Eng. # nasty)
+* *riiviötä:* `riiviö+A+Sg+Par`
+* *riiviöiden:* `riiviö+A+Pl+Gen`
+* *riiviöitten:* `riiviö+A+Pl+Gen`
+* *riiviömpi:* `riiviö+A+Comp+Sg+Nom`
+* *riiviöin:* `riiviö+A+Superl+Sg+Nom`
+
+There are no examples of new loan word adjectives ending in long vowel
+Furthermore there are no examples of adjectives in other classes without
+stem variation yet. There are some examples of these in nouns if you need
+new classes at some point.
+
+The abovementioned o, u, y and ö stems as well as new e stems can all
+form combinations with gradation feature as well. Not all combinations are
+yet found for adjectives, for full reference, read the noun classes.
+
+The quantitative k gradations with o bisyllabic o stem use class
+`ADJ_KOLKKO`, and old dictionaries use classes ¹⁻A and ¹⁻D.
+
+*Adjective gradations 1 k~0 o examples:*
+* *kolkko:* `kolkko+A+Sg+Nom` (Eng. # gloomy)
+* *kolkossa:* `kolkko+A+Sg+Ine`
+* *kolkoista:* `kolkko+A+Pl+Ela`
+* *kolkkoihin:* `kolkko+A+Pl+Ill`
+* *kolkompi:* `kolkko+A+Comp+Sg+Nom`
+* *kolkoin:* `kolkko+A+Superl+Sg+Nom`
+
+The quantitative k gradations with u bisyllabic o stem use class
+`ADJ_VIRKKU`, and old dictionaries use classes ¹⁻A and ¹⁻D.
+
+*Adjective gradations 1 k~0 u examples:*
+* *virkku:* `virkku+A+Sg+Nom` (Eng. # ???)
+* *virkussa:* `virkku+A+Sg+Ine`
+* *virkuista:* `virkku+A+Pl+Ela`
+* *virkkuihin:* `virkku+A+Pl+Ill`
+* *virkumpi:* `virkku+A+Comp+Sg+Nom`
+* *virkuin:* `virkku+A+Superl+Sg+Nom`
+
+The quantitative k gradations with y bisyllabic o stem use class
+`ADJ_SÄIKKY`, and old dictionaries use classes ¹⁻A and ¹⁻D.
+
+*Adjective gradations 1 k~0 y examples:*
+* *säikky:* `säikky+A+Sg+Nom` (Eng. # ???)
+* *säikyssä:* `säikky+A+Sg+Ine`
+* *säikyistä:* `säikky+A+Pl+Ela`
+* *säikkyihin:* `säikky+A+Pl+Ill`
+* *säikympi:* `säikky+A+Comp+Sg+Nom`
+* *säikyin:* `säikky+A+Superl+Sg+Nom`
+
+The quantitative k gradations with o bisyllabic ö stem use class
+`ADJ_KÖKKÖ`, and old dictionaries use classes ¹⁻A and ¹⁻D.
+
+*Adjective gradations 1 k~0 ö examples:*
+* *kökkö:* `kökkö+A+Sg+Nom` (Eng. # ???)
+* *kökössä:* `kökkö+A+Sg+Ine`
+* *kököistä:* `kökkö+A+Pl+Ela`
+* *kökköihin:* `kökkö+A+Pl+Ill`
+* *kökömpi:* `kökkö+A+Comp+Sg+Nom`
+* *kököin:* `kökkö+A+Superl+Sg+Nom`
+
+there is no unvarying e final adjective with _k ~ 0_ gradation.
+
+The quantitative gradation of p before o is in class `ADJ_SUIPPO` and
+old dictionaries would use ¹⁻B.
+
+*Adjective gradations 1 p~0 o examples:*
+* *suippo:* `suippo+A+Sg+Nom` (Eng. # ?)
+* *suipossa:* `suippo+A+Sg+Ine`
+* *suipoista:* `suippo+A+Pl+Ela`
+* *suippoihin:* `suippo+A+Pl+Ill`
+* *suipompi:* `suippo+A+Comp+Sg+Nom`
+* *suipoin:* `suippo+A+Superl+Sg+Nom`
+
+The quantitative gradation of p before u is in class `ADJ_IKÄLOPPU` and
+old dictionaries would use ¹⁻B.
+It is only a nominal compound based adjective that ends in u and has
+p ~ 0 gradation here:
+
+*Adjective gradations 1 p~0 u examples:*
+* *ikäloppu:* `ikäloppu+A+Sg+Nom` (Eng. # age-old)
+* *ikälopussa:* `ikäloppu+A+Sg+Ine`
+* *ikälopuista:* `ikäloppu+A+Pl+Ela`
+* *ikäloppuihin:* `ikäloppu+A+Pl+Ill`
+* *ikälopumpi:* `ikäloppu+A+Comp+Sg+Nom`
+* *ikälopuin:* `ikäloppu+A+Superl+Sg+Nom`
+
+and none of the adjectives end in y and quantitative p gradation.
+
+The quantitative gradation of p before ö is in class `ADJ_LÖRPPÖ` and
+old dictionaries would use ¹⁻B.
+
+*Adjective gradations 1 p~0 ö examples:*
+* *lörppö:* `lörppö+A+Sg+Nom` (Eng. # blabbermouth)
+* *lörpössä:* `lörppö+A+Sg+Ine`
+* *lörpöistä:* `lörppö+A+Pl+Ela`
+* *lörppöihin:* `lörppö+A+Pl+Ill`
+* *lörpömpi:* `lörppö+A+Comp+Sg+Nom`
+* *lörpöin:* `lörppö+A+Superl+Sg+Nom`
+
+The quantitative gradation of t before o is in class `ADJ_VELTTO`, 
+which was ¹⁻C in the dictionary.
+
+*Adjective gradations 1 t~0 o examples:*
+* *veltto:* `veltto+A+Sg+Nom` (Eng. # lazy)
+* *veltossa:* `veltto+A+Sg+Ine`
+* *veltoista:* `veltto+A+Pl+Ela`
+* *velttoihin:* `veltto+A+Pl+Ill`
+* *veltompi:* `veltto+A+Comp+Sg+Nom`
+* *veltoin:* `veltto+A+Superl+Sg+Nom`
+
+The quantitative gradation of t before u is in class `ADJ_VIMMATTU`, 
+which was ¹⁻C in the dictionary. 
+The u stems with quantitative t gradation are commonest with nut participle
+passive derivation’s back form (-ttu).
+
+*Adjective gradations 1 t~0 u examples:*
+* *vimmattu:* `vimmattu+A+Sg+Nom` (Eng. # wicked)
+* *vimmatussa:* `vimmattu+A+Sg+Ine`
+* *vimmatuista:* `vimmattu+A+Pl+Ela`
+* *vimmattuihin:* `vimmattu+A+Pl+Ill`
+* *vimmatumpi:* `vimmattu+A+Comp+Sg+Nom`
+* *vimmatuin:* `vimmattu+A+Superl+Sg+Nom`
+
+The quantitative gradation of t before y is in class `ADJ_YLENNETTY`, 
+which was ¹⁻C in the dictionary. 
+The u stems with quantitative t gradation are commonest with nut participle
+passive derivation’s front (-tty).
+
+*Adjective gradations 1 t~0 y examples:*
+* *ylennetty:* `ylennetty+A+Sg+Nom` (Eng. # promoted)
+* *ylennetyssä:* `ylennetty+A+Sg+Ine`
+* *ylennetyistä:* `ylennetty+A+Pl+Ela`
+* *ylennettyihin:* `ylennetty+A+Pl+Ill`
+* *ylennetympi:* `ylennetty+A+Comp+Sg+Nom`
+* *ylennetyin:* `ylennetty+A+Superl+Sg+Nom`
+
+The quantitative gradation of t before y is in class `ADJ_KYYTTÖ`, 
+which was ¹⁻C in the dictionary. 
+
+*Adjective gradations 1 t~0 ö examples:*
+* *kyyttö:* `kyyttö+A+Sg+Nom` (Eng. # ?????)
+* *kyytössä:* `kyyttö+A+Sg+Ine`
+* *kyytöistä:* `kyyttö+A+Pl+Ela`
+* *kyyttöihin:* `kyyttö+A+Pl+Ill`
+* *kyytömpi:* `kyyttö+A+Comp+Sg+Nom`
+* *kyytöin:* `kyyttö+A+Superl+Sg+Nom`
+
+The quantitave k gradation has a variant that allows use of apostrophe
+instead of nothing in the weak grade.
+
+The class for o final bisyllabic stems with optional ’ is `ADJ_LAKO`,
+this is a subset of dictionary class ¹⁻D. 
+
+*Adjective gradations 1 k~’~0 o examples:*
+* *lako:* `lako+A+Sg+Nom`
+* *laossa:* `lako+A+Sg+Ine`
+* *la’ossa:* `lako+A+Sg+Ine`
+* *laompi:* `lako+A+Comp+Sg+Nom`
+* *laoin:* `lako+A+Superl+Sg+Nom`
+
+There's no k to optional apostrophe with u.
+nor with y and k:
+nor ö with k:
+There's none with k gradating to always apostrophe either.
+For examples of these, see noun classes
+
+The qualitative gradation of p between vowels in o stems goes to v,
+the class for this is `ADJ_KELPO`, the dictionary class for this is
+¹⁻E.
+
+*Adjective gradations 1 p~v o examples:*
+* *kelpo:* `kelpo+A+Sg+Nom` (Eng. # proper)
+* *kelvossa:* `kelpo+A+Sg+Ine`
+* *kelpoina:* `kelpo+A+Pl+Ess`
+* *kelvoista:* `kelpo+A+Pl+Ela`
+* *kelvompi:* `kelpo+A+Comp+Sg+Nom`
+* *kelvoin:* `kelpo+A+Superl+Sg+Nom`
+
+There are none ending in vowel + pu
+nor with y and p
+nor ö with p.
+
+The gradation of t ~ d after o is in class `ADJ_MIETO`, the
+dictionary class for this is ¹⁻F.
+
+*Adjective gradations 1 t~d o examples:*
+* *mieto:* `mieto+A+Sg+Nom` (Eng. # mild)
+* *miedossa:* `mieto+A+Sg+Ine`
+* *mietoihin:* `mieto+A+Pl+Ill`
+* *miedoista:* `mieto+A+Pl+Ela`
+* *miedompi:* `mieto+A+Comp+Sg+Nom`
+* *miedoin:* `mieto+A+Superl+Sg+Nom`
+
+The gradation of t ~ d after u is in class `ADJ_VIIPALOITU`, the
+dictionary class for this is ¹⁻F.
+The commonest t ~ d variation in u stems comes from nut participle’s
+passive’s back form (-tu).
+
+*Adjective gradations 1 t~d u examples:*
+* *viipaloitu:* `viipaloitu+A+Sg+Nom` (Eng. # sliced)
+* *viipaloidussa:* `viipaloitu+A+Sg+Ine`
+* *viipaloituihin:* `viipaloitu+A+Pl+Ill`
+* *viipaloiduista:* `viipaloitu+A+Pl+Ela`
+* *viipaloidumpi:* `viipaloitu+A+Comp+Sg+Nom`
+* *viipaloiduin:* `viipaloitu+A+Superl+Sg+Nom`
+
+The gradation of t ~ d after u is in class `ADJ_YKSILÖITY`, the
+dictionary class for this is ¹⁻F.
+The commonest t ~ d variation in u stems comes from nut participle’s
+passive’s front form (-ty).
+
+*Adjective gradations 1 t~d y examples:*
+* *yksilöity:* `yksilöity+A+Sg+Nom` (Eng. # singled)
+* *yksilöidyssä:* `yksilöity+A+Sg+Ine`
+* *yksilöityihin:* `yksilöity+A+Pl+Ill`
+* *yksilöidyistä:* `yksilöity+A+Pl+Ela`
+* *yksilöidympi:* `yksilöity+A+Comp+Sg+Nom`
+* *yksilöidyin:* `yksilöity+A+Superl+Sg+Nom`
+
+And there's none with t and ö
+
+The adjectives with -nko stem belong to class `ADJ_LENKO`, and the
+dictionary class was ¹⁻G.
+
+*Adjective gradations 1 k~g o examples:*
+* *lenko:* `lenko+A+Sg+Nom` (Eng. # crooked)
+* *lengossa:* `lenko+A+Sg+Ine`
+* *lengoista:* `lenko+A+Pl+Ela`
+* *lenkoihin:* `lenko+A+Pl+Ill`
+* *lengompi:* `lenko+A+Comp+Sg+Nom`
+* *lengoin:* `lenko+A+Superl+Sg+Nom`
+
+There's no adjectives ending in nku
+nor with y and nk
+And ö with nk
+There are no gradating p's after m's in unchanging stems
+For all these, check the noun patterns.
+The quantitative gradation of t after l in o stems is in class 
+`ADJ_MELTO`, which corresponds to dictionary class ¹⁻I.
+
+*Adjective gradations 1 t~l o examples:*
+* *melto:* `melto+A+Sg+Nom` (Eng. # ?????)
+* *mellossa:* `melto+A+Sg+Ine`
+* *meltoihin:* `melto+A+Pl+Ill`
+* *melloista:* `melto+A+Pl+Ela`
+* *mellompi:* `melto+A+Comp+Sg+Nom`
+* *melloin:* `melto+A+Superl+Sg+Nom`
+
+The quantitative gradation of t after l in o stems is in class 
+`ADJ_PARANNELTU`, which corresponds to dictionary class ¹⁻I.
+The common u stem after l is in nut participles passive (-tu):
+
+*Adjective gradations 1 t~l u examples:*
+* *paranneltu:* `paranneltu+A+Sg+Nom` (Eng. # embettered)
+* *parannellussa:* `paranneltu+A+Sg+Ine`
+* *paranneltuihin:* `paranneltu+A+Pl+Ill`
+* *parannelluista:* `paranneltu+A+Pl+Ela`
+* *parannellumpi:* `paranneltu+A+Comp+Sg+Nom`
+* *parannelluin:* `paranneltu+A+Superl+Sg+Nom`
+
+The quantitative gradation of t after l in o stems is in class 
+`ADJ_VÄHÄTELTY`, which corresponds to dictionary class ¹⁻I.
+As with y and t:
+
+*Adjective gradations 1 t~l y examples:*
+* *vähätelty:* `vähätelty+A+Sg+Nom` (Eng. # belittled)
+* *vähätellyssä:* `vähätelty+A+Sg+Ine`
+* *vähäteltyihin:* `vähätelty+A+Pl+Ill`
+* *vähätellyistä:* `vähätelty+A+Pl+Ela`
+* *vähätellympi:* `vähätelty+A+Comp+Sg+Nom`
+* *vähätellyin:* `vähätelty+A+Superl+Sg+Nom`
+
+There's no adjective ending -ltö in our lexical database.
+
+The quantitative gradation of t after n in o stems is in class 
+`ADJ_VENTO`, which corresponds to dictionary class ¹⁻J.
+
+*Adjective gradations 1 t~n o examples:*
+* *vento:* `vento+A+Sg+Nom` (Eng. # ?)
+* *vennossa:* `vento+A+Sg+Ine`
+* *ventoihin:* `vento+A+Pl+Ill`
+* *vennoista:* `vento+A+Pl+Ela`
+* *vennompi:* `vento+A+Comp+Sg+Nom`
+* *vennoin:* `vento+A+Superl+Sg+Nom`
+
+The quantitative gradation of t after n in u stems is in class 
+`ADJ_PANTU`, which corresponds to dictionary class ¹⁻I.
+The common u stem after n is in nut participle’s passive’s back form (-tu):
+
+*Adjective gradations 1 t~n u examples:*
+* *pantu:* `pantu+A+Sg+Nom` (Eng. # brewed)
+* *pannussa:* `pantu+A+Sg+Ine`
+* *pantuihin:* `pantu+A+Pl+Ill`
+* *pannuista:* `pantu+A+Pl+Ela`
+* *pannumpi:* `pantu+A+Comp+Sg+Nom`
+* *pannuin:* `pantu+A+Superl+Sg+Nom`
+
+The quantitative gradation of t after n in y stems is in class 
+`ADJ_MENTY`, which corresponds to dictionary class ¹⁻I.
+The common u stem after n is in nut participle’s passive’s front form
+(-ty):
+
+*Adjective gradations 1 t~n y examples:*
+* *menty:* `menty+A+Sg+Nom` (Eng. # belittled)
+* *mennyssä:* `menty+A+Sg+Ine`
+* *mentyihin:* `menty+A+Pl+Ill`
+* *mennyistä:* `menty+A+Pl+Ela`
+* *mennympi:* `menty+A+Comp+Sg+Nom`
+* *mennyin:* `menty+A+Superl+Sg+Nom`
+
+There are no adjectives ending in -ntö
+
+The quantitative gradation of t after r in o stems is in class
+`ADJ_MARTO`, which corresponds to dictionary class ¹⁻J.
+
+*Adjective gradations 1 t~r o examples:*
+* *marto:* `marto+A+Sg+Nom` (Eng. # ???)
+* *marrossa:* `marto+A+Sg+Ine`
+* *martoihin:* `marto+A+Pl+Ill`
+* *marroista:* `marto+A+Pl+Ela`
+* *marrompi:* `marto+A+Comp+Sg+Nom`
+* *marroin:* `marto+A+Superl+Sg+Nom`
+
+The quantitative gradation of t after r in u stems is in class
+`ADJ_PURTU`, which corresponds to dictionary class ¹⁻J.
+The common u stem after r is in nut participle’s passive’s back form (-tu):
+
+*Adjective gradations 1 t~r u examples:*
+* *purtu:* `purtu+A+Sg+Nom` (Eng. # bitten)
+* *purrussa:* `purtu+A+Sg+Ine`
+* *purtuihin:* `purtu+A+Pl+Ill`
+* *purruista:* `purtu+A+Pl+Ela`
+* *purrumpi:* `purtu+A+Comp+Sg+Nom`
+* *purruin:* `purtu+A+Superl+Sg+Nom`
+
+The quantitative gradation of t after r in y stems is in class
+`ADJ_PIERTY`, which corresponds to dictionary class ¹⁻J.
+The common u stem after r is in nut participle’s passive’s front fomr
+(-ty):
+
+*Adjective gradations 1 t~r y examples:*
+* *pierty:* `pierty+A+Sg+Nom` (Eng. # befarted)
+* *pierryssä:* `pierty+A+Sg+Ine`
+* *piertyihin:* `pierty+A+Pl+Ill`
+* *pierryistä:* `pierty+A+Pl+Ela`
+* *pierrympi:* `pierty+A+Comp+Sg+Nom`
+* *pierryin:* `pierty+A+Superl+Sg+Nom`
+
+There are no adjectives ending in -rtö. Just as well, the
+class for UkU : UvU- is limited to few nouns we know.
+
+### The special illative alternation with k gradation, unaltering stems
+The trisyllabic words ending with gradating long k have plural illative
+in both strong and weak forms. 
+
+The class for trisyllabic -kko stems is `ADJ_HUPAKKO`, the corresponding
+dictionary class is ⁴⁻D. 
+
+*Adjectives 4 o examples:*
+* *hupakko:* `hupakko+A+Sg+Nom` (Eng. # silly girl)
+* *hupakoihin:* `hupakko+A+Pl+Ill`
+* *hupakkoihin:* `hupakko+A+Pl+Ill`
+* *hupakompi:* `hupakko+A+Comp+Sg+Nom`
+* *hupakoin:* `hupakko+A+Superl+Sg+Nom`
+
+### Adjective stems with i:e variations
+The i stems of new i final words have i : e : 0 variation. These classes
+include new loans ending in consonant, which use -i to form inflectional
+stems.
+The i stems combined with gradation of will form five separate stem
+variants:
+
+The i finals with back vowel harmony go to class `ADJ_ABNORMI`, where
+old dictionary classification was ⁵.
+
+*Adjectives 5 back examples:*
+* *abnormi:* `abnormi+A+Sg+Nom` (Eng. # abnorm)
+* *abnormeina:* `abnormi+A+Pl+Ess`
+* *abnormien:* `abnormi+A+Pl+Gen`
+* *abnormimpi:* `abnormi+A+Comp+Sg+Nom`
+* *abnormein:* `abnormi+A+Superl+Sg+Nom`
+
+The i finals with front vowel harmony go to class `ADJ_STYDI`, where
+old dictionary classification was ⁵.
+
+*Adjectives 5 front examples:*
+* *stydi:* `stydi+A+Sg+Nom` (Eng. # stiff)
+* *stydeinä:* `stydi+A+Pl+Ess`
+* *stydien:* `stydi+A+Pl+Gen`
+* *stydimpi:* `stydi+A+Comp+Sg+Nom`
+* *stydein:* `stydi+A+Superl+Sg+Nom`
+
+Stems with quantitative k gradation, i final and back harmony are in class 
+`ADJ_OPAAKKI` and dictionary class ⁵⁻A or ⁵⁻D.
+
+*Adjectives 5 k~0 back examples:*
+* *opaakki:* `opaakki+A+Sg+Nom` (Eng. # opaque)
+* *opaakissa:* `opaakki+A+Sg+Ine`
+* *opaakkeina:* `opaakki+A+Pl+Ess`
+* *opaakeista:* `opaakki+A+Pl+Ela`
+* *opaakkien:* `opaakki+A+Pl+Gen`
+* *opaakimpi:* `opaakki+A+Comp+Sg+Nom`
+* *opaakein:* `opaakki+A+Superl+Sg+Nom`
+
+Stems with quantitative k gradation, i final and front harmony are in class
+`ADJ_PINKKI` and dictionary class ⁵⁻A or ⁵⁻D.
+
+*Adjectives 5 k~0 front examples:*
+* *pinkki:* `pinkki+A+Sg+Nom` (Eng. # pink)
+* *pinkissä:* `pinkki+A+Sg+Ine`
+* *pinkkeinä:* `pinkki+A+Pl+Ess`
+* *pinkeistä:* `pinkki+A+Pl+Ela`
+* *pinkkien:* `pinkki+A+Pl+Gen`
+* *pinkimpi:* `pinkki+A+Comp+Sg+Nom`
+* *pinkein:* `pinkki+A+Superl+Sg+Nom`
+
+There's no back vowel version of the bisyllabic gradating -ppi form.
+
+Stems with quantitative p gradation, i final and front harmony are in class
+`ADJ_SIPPI` and dictionary class ⁵⁻B.
+
+*Adjectives 5 p~0 front examples:*
+* *sippi:* `sippi+A+Sg+Nom` (Eng. # bust)
+* *sipissä:* `sippi+A+Sg+Ine`
+* *sippeinä:* `sippi+A+Pl+Ess`
+* *sipeistä:* `sippi+A+Pl+Ela`
+* *sippien:* `sippi+A+Pl+Gen`
+* *sipimpi:* `sippi+A+Comp+Sg+Nom`
+* *sipein:* `sippi+A+Superl+Sg+Nom`
+
+Stems with quantitative t gradation, i final and back harmony are in class
+`ADJ_HURTTI` and dictionary class ⁵⁻C.
+
+*Adjectives 5 t~0 back examples:*
+* *hurtti:* `hurtti+A+Sg+Nom` (Eng. # grunchy)
+* *hurtissa:* `hurtti+A+Sg+Ine`
+* *hurtteina:* `hurtti+A+Pl+Ess`
+* *hurteista:* `hurtti+A+Pl+Ela`
+* *hurttien:* `hurtti+A+Pl+Gen`
+* *hurtimpi:* `hurtti+A+Comp+Sg+Nom`
+* *hurtein:* `hurtti+A+Superl+Sg+Nom`
+
+Stems with quantitative t gradation, i final and front harmony are in class
+`ADJ_VÄÄRTTI` and dictionary class ⁵⁻C.
+
+*Adjectives 5 t~0 front examples:*
+* *väärtti:* `väärtti+A+Sg+Nom` (Eng. # worthy)
+* *väärtissä:* `väärtti+A+Sg+Ine`
+* *väärtteinä:* `väärtti+A+Pl+Ess`
+* *väärteistä:* `väärtti+A+Pl+Ela`
+* *väärttien:* `väärtti+A+Pl+Gen`
+* *väärtimpi:* `väärtti+A+Comp+Sg+Nom`
+* *väärtein:* `väärtti+A+Superl+Sg+Nom`
+
+There are no bisyllabic adjectives ending in vowel and gradating -pi.
+
+Stems with t ~ d gradation, i final and back harmony are in class
+`ADJ_TUHTI` and dictionary class ⁵⁻F.
+
+*Adjectives 5 t~d back examples:*
+* *tuhti:* `tuhti+A+Sg+Nom` (Eng. # stocky)
+* *tuhdissa:* `tuhti+A+Sg+Ine`
+* *tuhteina:* `tuhti+A+Pl+Ess`
+* *tuhdeista:* `tuhti+A+Pl+Ela`
+* *tuhtien:* `tuhti+A+Pl+Gen`
+* *tuhdimpi:* `tuhti+A+Comp+Sg+Nom`
+* *tuhdein:* `tuhti+A+Superl+Sg+Nom`
+
+Stems with t ~ d gradation, i final and front harmony are in class
+`ADJ_REHTI` and dictionary class ⁵⁻F.
+
+*Adjectives 5 t~d front examples:*
+* *rehti:* `rehti+A+Sg+Nom`
+* *rehdissä:* `rehti+A+Sg+Ine`
+* *rehteinä:* `rehti+A+Pl+Ess`
+* *rehdeistä:* `rehti+A+Pl+Ela`
+* *rehtien:* `rehti+A+Pl+Gen`
+* *rehdimpi:* `rehti+A+Comp+Sg+Nom`
+* *rehdein:* `rehti+A+Superl+Sg+Nom`
+
+There are no adjectives with i stems with other gradations.
+
+### Trisyllabic and longer i stems
+
+The i stems with trisyllabic allomorph sets have class `ADJ_ABNORMAALI`, and
+dictionary class of ⁶.
+
+*Adjectives 6 back examples:*
+* *abnormaali:* `abnormaali+A+Sg+Nom` (Eng. # abnormal)
+* *abnormaaleja:* `abnormaali+A+Pl+Par`
+* *abnormaaleiden:* `abnormaali+A+Pl+Gen`
+* *abnormaalimpi:* `abnormaali+A+Comp+Sg+Nom`
+* *abnormaalein:* `abnormaali+A+Superl+Sg+Nom`
+
+The i stems with trisyllabic allomorph sets have class `ADJ_ÖYKKÄRI`, and
+dictionary class of ⁶.
+
+*Adjectives 6 front examples:*
+* *öykkäri:* `öykkäri+A+Sg+Nom` (Eng. # chav)
+* *öykkärejä:* `öykkäri+A+Pl+Par`
+* *öykkäreiden:* `öykkäri+A+Pl+Gen`
+* *öykkärimpi:* `öykkäri+A+Comp+Sg+Nom`
+* *öykkärein:* `öykkkäri+A+Superl+Sg+Nom`
+
+There are no adjectives acting like nouns where i-final nominatives have
+singular e stems.
+
+### Bisyllabic A-stem adjectives
+The a stems differ from regular nouns in one more feature: some of them,
+but not all, have a:e variation before the comparative stem. The selection
+of this feature may be phonological, but it is complex, and often there
+is variation between speakers. The plural partitives and genitives are a
+good indicator of classificaion of a, ä final stems, as are the vowels
+of comparative and plural stems.
+
+Bisyllabic a stems with e comparative and j plurals are in class 
+`ADJ_AAVA`, and dictionary class ⁹.
+
+*Adjectives 9 examples:*
+* *aava:* `aava+A+Sg+Nom` (Eng. # open (of fields, plains))
+* *aavaa:* `aava+A+Sg+Par`
+* *aavana:* `aava+A+Sg+Ess`
+* *aavassa:* `aava+A+Sg+Ine`
+* *aavoina:* `aava+A+Pl+Ess`
+* *aavojen:* `aava+A+Pl+Gen`
+* *aavoihin:* `aava+A+Pl+Ill`
+* *aavempi:* `aava+A+Comp+Sg+Nom`
+* *aavoin:* `aava+A+Superl+Sg+Nom`
+
+The ka stem with e comparative and j plurals is `ADJ_TARKKA`, and the 
+dictionary class is ⁹-A or ⁹⁻D.
+
+*Adjectives 9 k~0 examples:*
+* *tarkka:* `tarkka+A+Sg+Nom` (Eng. # pedantic)
+* *tarkkaa:* `tarkka+A+Sg+Par`
+* *tarkkana:* `tarkka+A+Sg+Ess`
+* *tarkassa:* `tarkka+A+Sg+Ine`
+* *tarkkoina:* `tarkka+A+Pl+Ess`
+* *tarkkojen:* `tarkka+A+Pl+Gen`
+* *tarkkoihin:* `tarkka+A+Pl+Ill`
+* *tarkempi:* `tarkka+A+Comp+Sg+Nom`
+* *tarkoin:* `tarkka+Superl+Sg+Nom`
+
+No a final adjectives with quantitative p gradation.
+
+The ta stem with j plurals is `ADJ_MATTA`, and the dictionary class
+is ⁹-C.
+
+*Adjectives 9 t~0 examples:*
+* *matta:* `matta+A+Sg+Nom` (Eng. # matta)
+* *mattaa:* `matta+A+Sg+Par`
+* *mattana:* `matta+A+Sg+Ess`
+* *matassa:* `matta+A+Sg+Ine`
+* *mattoina:* `matta+A+Pl+Ess`
+* *mattojen:* `matta+A+Pl+Gen`
+* *mattoihin:* `matta+A+Pl+Ill`
+* *matempi:* `matta+A+Comp+Sg+Nom`
+* *matoin:* `matta+A+Superl+Sg+Nom`
+
+The pa : va stem with e comparative and j plurals is `ADJ_HALPA`, and
+the dictionary class is ⁹⁻E.
+
+*Adjectives 9 p~v examples:*
+* *halpa:* `halpa+A+Sg+Nom` (Eng. # cheap)
+* *halpaa:* `halpa+A+Sg+Par`
+* *halpana:* `halpa+A+Sg+Ess`
+* *halvassa:* `halpa+A+Sg+Ine`
+* *halpoina:* `halpa+A+Pl+Ess`
+* *halpojen:* `halpa+A+Pl+Gen`
+* *halpoihin:* `halpa+A+Pl+Ill`
+* *halvempi:* `halpa+A+Comp+Sg+Nom`
+* *halvoin:* `halpa+A+Superl+Sg+Nom`
+
+The ta : da stem with a comparative and j plurals is `ADJ_EHTA`, and
+the dictionary class is ⁹⁻F.
+
+*Adjectives 9 t~d examples:*
+* *ehta:* `ehta+A+Sg+Nom` (Eng. # legit)
+* *ehtaa:* `ehta+A+Sg+Par`
+* *ehtana:* `ehta+A+Sg+Ess`
+* *ehdassa:* `ehta+A+Sg+Ine`
+* *ehtoina:* `ehta+A+Pl+Ess`
+* *ehtojen:* `ehta+A+Pl+Gen`
+* *ehtoihin:* `ehta+A+Pl+Ill`
+* *ehdampi:* `ehta+A+Comp+Sg+Nom`
+* *ehdoin:* `ehta+A+Superl+Sg+Nom`
+
+None with k:g gradation.
+
+The pa : ma stem with e comparative and j plurals is `ADJ_RAMPA`, and
+the dictionary class is ⁹⁻H.
+
+*Adjectives 9 p~m examples:*
+* *rampa:* `rampa+A+Sg+Nom` (Eng. # crippled)
+* *rampaa:* `rampa+A+Sg+Par`
+* *rampana:* `rampa+A+Sg+Ess`
+* *rammassa:* `rampa+A+Sg+Ine`
+* *rampoina:* `rampa+A+Pl+Ess`
+* *rampojen:* `rampa+A+Pl+Gen`
+* *rampoihin:* `rampa+A+Pl+Ill`
+* *rammempi:* `rampa+A+Comp+Sg+Nom`
+* *rammoin:* `rampa+A+Superl+Sg+Nom`
+
+No a stems with t:l gradations
+
+The ta : na stem with a comparative and j plurals is `ADJ_VIHANTA`, and
+the dictionary class is ⁹⁻J.
+
+*Adjectives 9 p~n examples:*
+* *vihanta:* `vihanta+A+Sg+Nom` (Eng. # blooming)
+* *vihantaa:* `vihanta+A+Sg+Par`
+* *vihantana:* `vihanta+A+Sg+Ess`
+* *vihannassa:* `vihanta+A+Sg+Ine`
+* *vihantoina:* `vihanta+A+Pl+Ess`
+* *vihantojen:* `vihanta+A+Pl+Gen`
+* *vihantoihin:* `vihanta+A+Pl+Ill`
+* *vihannampi:* `vihanta+A+Comp+Sg+Nom`
+* *vihannoin:* `vihanta+A+Superl+Sg+Nom`
+
+And finally, no a stems with t:r or t:l gradations.
+
+### Some other trisyllabic a finals with a : 0 plurals
+Mostly regular a comparatives, no a : o variation and more syllables. 
+Common for va participles, and other derivations
+
+The a : 0 stem is in class `ADJ_AALTOILEVA` and the old dictionary used ¹⁰
+as the paradigm class.
+
+*Adjectives 10 back examples:*
+* *aaltoileva:* `aaltoileva+A+Sg+Nom` (Eng. # wavy)
+* *aaltoilevaa:* `aaltoileva+A+Sg+Par`
+* *aaltoilevana:* `aaltoileva+A+Sg+Ess`
+* *aaltoilevassa:* `aaltoileva+A+Sg+Ine`
+* *aaltoilevina:* `aaltoileva+A+Pl+Ess`
+* *aaltoilevien:* `aaltoileva+A+Pl+Gen`
+* *aaltoileviin:* `aaltoileva+A+Pl+Ill`
+* *aaltoilevampi:* `aaltoileva+A+Comp+Sg+Nom`
+* *aaltoilevin:* `aaltoileva+A+Superl+Sg+Nom`
+
+The ä : 0 stem is in class `ADJ_TYÖLLISTETTÄVÄ` and the old dictionary used ¹⁰
+as the paradigm class.
+
+*Adjectives 10 front examples:*
+* *työllistettävä:* `työllistettävä+A+Sg+Nom` (Eng. # employable)
+* *työllistettävää:* `työllistettävä+A+Sg+Par`
+* *työllistettävänä:* `työllistettävä+A+Sg+Ess`
+* *työllistettävässä:* `työllistettävä+A+Sg+Ine`
+* *työllistettävinä:* `työllistettävä+A+Pl+Ess`
+* *työllistettävien:* `työllistettävä+A+Pl+Gen`
+* *työllistettäviin:* `työllistettävä+A+Pl+Ill`
+* *työllistettävämpi:* `työllistettävä+A+Comp+Sg+Nom`
+* *työllistettävin:* `työllistettävä+A+Superl+Sg+Nom`
+
+For a:e comparatives in a:0 class use `ADJ_RUMA`. No dictionary
+classification or ~¹⁰, 
+
+*Adjectives 10 a:e comparative examples:*
+* *ruma:* `ruma+A+Sg+Nom` (Eng. # ugly)
+* *rumaa:* `ruma+A+Sg+Par`
+* *rumana:* `ruma+A+Sg+Ess`
+* *rumassa:* `ruma+A+Sg+Ine`
+* *rumina:* `ruma+A+Pl+Ess`
+* *rumien:* `ruma+A+Pl+Gen`
+* *rumiin:* `ruma+A+Pl+Ill`
+* *rumempi:* `ruma+A+Comp+Sg+Nom`
+* *rumin:* `ruma+A+Superl+Sg+Nom`
+
+For ä:e comparatives in a:0 class use `ADJ_TYHMÄ`. No dictionary
+classification or ~¹⁰, 
+
+*Adjectives 10 ä:e comparative examples:*
+* *tyhmä:* `tyhmä+A+Sg+Nom` (Eng. # stupid)
+* *tyhmää:* `tyhmä+A+Sg+Par`
+* *tyhmänä:* `tyhmä+A+Sg+Ess`
+* *tyhmässä:* `tyhmä+A+Sg+Ine`
+* *tyhminä:* `tyhmä+A+Pl+Ess`
+* *tyhmien:* `tyhmä+A+Pl+Gen`
+* *tyhmiin:* `tyhmä+A+Pl+Ill`
+* *tyhmempi:* `tyhmä+A+Comp+Sg+Nom`
+* *tyhmin:* `tyhmä+A+Superl+Sg+Nom`
+
+THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
+0:  >> 0:0 SO TOMMI FINDS THEM
+
+THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
+0:  >> 0:0 SO TOMMI FINDS THEM
+
+*Adjectives 10 k~0 a:e comparative examples:*
+* *hoikka:* `hoikka+A+Sg+Nom` (Eng. # slim)
+* *hoikkaa:* `hoikka+A+Sg+Par`
+* *hoikkana:* `hoikka+A+Sg+Ess`
+* *hoikassa:* `hoikka+A+Sg+Ine`
+* *hoikkina:* `hoikka+A+Pl+Ess`
+* *hoikissa:* `hoikka+A+Pl+Ine`
+* *hoikkien:* `hoikka+A+Pl+Gen`
+
+*Adjectives 10 k~0 ä:e comparative examples:*
+* *mykkä:* `mykkä+A+Sg+Nom` (Eng. # mute)
+* *mykkää:* `mykkä+A+Sg+Par`
+* *mykkänä:* `mykkä+A+Sg+Ess`
+* *mykässä:* `mykkä+A+Sg+Ine`
+* *mykkinä:* `mykkä+A+Pl+Ess`
+* *mykissä:* `mykkä+A+Pl+Ine`
+* *mykkien:* `mykkä+A+Pl+Gen`
+
+*Adjectives 10 p~0 a:e comparative examples:*
+* *poppa:* `poppa+A+Sg+Nom` (Eng. # hocus-pocus)
+* *poppaa:* `poppa+A+Sg+Par`
+* *poppana:* `poppa+A+Sg+Ess`
+* *popassa:* `poppa+A+Sg+Ine`
+* *poppina:* `poppa+A+Pl+Ess`
+* *popissa:* `poppa+A+Pl+Ine`
+* *poppien:* `poppa+A+Pl+Gen`
+
+*Adjectives 10 p~0 ä:e comparative examples:*
+* *hömppä:* `hömppä+A+Sg+Nom` (Eng. # bogus)
+* *hömppää:* `hömppä+A+Sg+Par`
+* *hömppänä:* `hömppä+A+Sg+Ess`
+* *hömpässä:* `hömppä+A+Sg+Ine`
+* *hömppinä:* `hömppä+A+Pl+Ess`
+* *hömpissä:* `hömppä+A+Pl+Ine`
+* *hömppien:* `hömppä+A+Pl+Gen`
+
+The quantitative k and t gradations are not found for adjectives with this
+a stem.
+
+*Adjectives 10 p~v a:e comparative examples:*
+* *voipa:* `voipa+A+Sg+Nom` (Eng. # capable)
+* *voipaa:* `voipa+A+Sg+Par`
+* *voipana:* `voipa+A+Sg+Ess`
+* *voivassa:* `voipa+A+Sg+Ine`
+* *voipina:* `voipa+A+Pl+Ess`
+* *voivissa:* `voipa+A+Pl+Ine`
+* *voipien:* `voipa+A+Pl+Gen`
+
+*Adjectives 10 p~v ä:e comparative examples:*
+* *käypä:* `käypä+A+Sg+Nom` (Eng. # "good enough")
+* *käypää:* `käypä+A+Sg+Par`
+* *käypänä:* `käypä+A+Sg+Ess`
+* *käyvässä:* `käypä+A+Sg+Ine`
+* *käypinä:* `käypä+A+Pl+Ess`
+* *käyvissä:* `käypä+A+Pl+Ine`
+* *käypien:* `käypä+A+Pl+Gen`
+
+The t:d is missing from this a stem.
+
+*Adjectives 10 t~d ä:e comparative examples:*
+* *mätä:* `mätä+A+Sg+Nom` (Eng. # rotten)
+* *mätää:* `mätä+A+Sg+Par`
+* *mätänä:* `mätä+A+Sg+Ess`
+* *mädässä:* `mätä+A+Sg+Ine`
+* *mätinä:* `mätä+A+Pl+Ess`
+* *mädissä:* `mätä+A+Pl+Ine`
+* *mätien:* `mätä+A+Pl+Gen`
+
+*Adjectives 10 k~g a:e comparative examples:*
+* *sanka:* `sanka+A+Sg+Nom` (Eng. # ???)
+* *sankaa:* `sanka+A+Sg+Par`
+* *sankana:* `sanka+A+Sg+Ess`
+* *sangassa:* `sanka+A+Sg+Ine`
+* *sankina:* `sanka+A+Pl+Ess`
+* *sangissa:* `sanka+A+Pl+Ine`
+* *sankien:* `sanka+A+Pl+Gen`
+
+*Adjectives 10 k~g ä:e comparative examples:*
+* *vänkä:* `vänkä+A+Sg+Nom` (Eng. # goofy)
+* *vänkää:* `vänkä+A+Sg+Par`
+* *vänkänä:* `vänkä+A+Sg+Ess`
+* *vängässä:* `vänkä+A+Sg+Ine`
+* *vängissä:* `vänkä+A+Pl+Ine`
+* *vänkiin:* `vänkä+A+Pl+Ill`
+
+p:m is missing from this a, ä stems.
+
+*Adjectives 10 t~l a:e comparative examples:*
+* *kulta:* `kulta+A+Sg+Nom` (Eng. # dear)
+* *kultaa:* `kulta+A+Sg+Par`
+* *kultana:* `kulta+A+Sg+Ess`
+* *kullassa:* `kulta+A+Sg+Ine`
+* *kultina:* `kulta+A+Pl+Ess`
+* *kullissa:* `kulta+A+Pl+Ine`
+* *kultien:* `kulta+A+Pl+Gen`
+
+T:l and t:n are missing from this a stem and t:l from ä stem.
+
+*Adjectives 10 t~l ä:e comparative examples:*
+* *lyhyenläntä:* `lyhyenläntä+A+Sg+Nom` (Eng. # shorty)
+* *lyhyenläntää:* `lyhyenläntä+A+Sg+Par`
+* *lyhyenläntänä:* `lyhyenläntä+A+Sg+Ess`
+* *lyhyenlännässä:* `lyhyenläntä+A+Sg+Ine`
+* *lyhyenläntinä:* `lyhyenläntä+A+Pl+Ess`
+* *lyhyenlännissä:* `lyhyenläntä+A+Pl+Ine`
+* *lyhyenläntien:* `lyhyenläntä+A+Pl+Gen`
+
+*Adjectives 10 t~r a:e comparative examples:*
+* *turta:* `turta+A+Sg+Nom` (Eng. # numb)
+* *turtaa:* `turta+A+Sg+Par`
+* *turtana:* `turta+A+Sg+Ess`
+* *turrassa:* `turta+A+Sg+Ine`
+* *turtina:* `turta+A+Pl+Ess`
+* *turrissa:* `turta+A+Pl+Ine`
+* *turtien:* `turta+A+Pl+Gen`
+
+K:j is missing.
+
+Certain trisyllabic or longer a stems allow a lot of allomorphs and both
+a : o : 0 variations:
+
+*Adjectives 11 back examples:*
+* *hapera:* `hapera+A+Sg+Nom` (Eng. # brittle)
+* *haperia:* `hapera+A+Pl+Par`
+* *haperoita:* `hapera+A+Pl+Par`
+* *haperien:* `hapera+A+Pl+Gen`
+* *haperoiden:* `hapera+A+Pl+Gen`
+* *haperoitten:* `hapera+A+Pl+Gen`
+* *haperiin:* `hapera+A+Pl+Ill`
+* *haperoihin:* `hapera+A+Pl+Ill`
+Also less commonly
+* *haperojen:* `hapera+A+Use/Rare+Pl+Gen`
+* *haperoja:* `hapera+A+Use/Rare+Pl+Par`
+* *haperain:* `hapera+A+Pl+Gen+Use/Rare`
+
+*Adjectives 11 front examples:*
+* *höppänä:* `höppänä+A+Sg+Nom` (Eng. # senile)
+* *höppänää:* `höppänä+A+Sg+Par`
+* *höppänänä:* `höppänä+A+Sg+Ess`
+* *höppänässä:* `höppänä+A+Sg+Ine`
+* *höppäninä:* `höppänä+A+Pl+Ess`
+* *höppänien:* `höppänä+A+Pl+Gen`
+* *höppäniin:* `höppänä+A+Pl+Ill`
+
+*Adjectives 12 examples:*
+* *harmaja:* `harmaja+A+Sg+Nom` (Eng. # ?)
+* *harmajaa:* `harmaja+A+Sg+Par`
+* *harmajana:* `harmaja+A+Sg+Ess`
+* *harmajoina:* `harmaja+A+Pl+Ess`
+* *harmajoita:* `harmaja+A+Pl+Par`
+
+Certain trisyllabic or longer a stems allow a lot of allomorphs and both
+a : o : 0 variations:
+
+*Adjectives 12++ examples:*
+* *latuska:* `latuska+A+Sg+Nom` (Eng. # flat)
+* *latuskoita:* `latuska+A+Pl+Par`
+* *latuskoja:* `latuska+A+Pl+Par`
+* *latuskoiden:* `latuska+A+Pl+Gen`
+* *latuskoitten:* `latuska+A+Pl+Gen`
+* *latuskojen:* `latuska+A+Pl+Gen`
+* *latuskoihin:* `latuska+A+Pl+Ill`
+
+### Special illative gradation in a stems
+
+The a : o stem variation combines with trisyllabic class of special illatives
+
+*Adjectives 14 back examples:*
+* *hailakka:* `hailakka+A+Sg+Nom` (Eng. # pale)
+* *hailakkoina:* `hailakka+A+Pl+Ess`
+* *hailakoissa:* `hailakka+A+Pl+Ine`
+* *hailakkoihin:* `hailakka+A+Pl+Ill`
+* *hailakoihin:* `hailakka+A+Pl+Ill`
+
+*Adjectives 14 front examples:*
+* *räväkkä:* `räväkkä+A+Sg+Nom` (Eng. # flamboyant)
+* *räväköihin:* `räväkkä+A+Pl+Ill`
+* *räväkköihin:* `räväkkä+A+Pl+Ill`
+
+*Adjectives 15 t~0 back examples:*
+* *pohatta:* `pohatta+A+Sg+Nom` (Eng. # fat-cat)
+* *pohattoina:* `pohatta+A+Pl+Ess`
+* *pohatoissa:* `pohatta+A+Pl+Ine`
+* *pohattoihin:* `pohatta+A+Pl+Ill`
+* *pohatoihin:* `pohatta+A+Pl+Ill`
+
+A-final words with long vowels and syllable boundary
+
+*Adjectives 15 oa examples:*
+* *ainoa:* `ainoa+A+Sg+Nom` (Eng. # singleton)
+* *ainoana:* `ainoa+A+Sg+Ess`
+* *ainoina:* `ainoa+A+Pl+Ess`
+* *ainoissa:* `ainoa+A+Pl+Ine`
+* *ainoihin:* `ainoa+A+Pl+Ill`
+* *ainoisiin:* `ainoa+A+Pl+Ill`
+
+*Adjectives 15 ea examples:*
+* *korkea:* `korkea+A+Sg+Nom` (Eng. # high)
+* *korkeana:* `korkea+A+Sg+Ess`
+* *korkeina:* `korkea+A+Pl+Ess`
+* *korkeissa:* `korkea+A+Pl+Ine`
+* *korkeihin:* `korkea+A+Pl+Ill`
+* *korkeisiin:* `korkea+A+Pl+Ill`
+
+*Adjectives 15 eä examples:*
+* *järeä:* `järeä+A+Sg+Nom` (Eng. # rough)
+* *järeänä:* `järeä+A+Sg+Ess`
+* *järeinä:* `järeä+A+Pl+Ess`
+* *järeissä:* `järeä+A+Pl+Ine`
+* *järeihin:* `järeä+A+Pl+Ill`
+* *järeisiin:* `järeä+A+Pl+Ill`
+
+### Lexicalised comparatives
+Most of the lexicalised comparatives are adjectives that go to this class.
+The comparatives that are not lexicalised inflect exactly the same, though
+some versions of morphology may cut off long comparative chains.
+
+*Adjectives 16 back examples:*
+* *aiempi:* `aiempi+A+Sg+Nom` (Eng. # earlier)
+* *aiempana:* `aiempi+A+Sg+Ess`
+* *aiemmassa:* `aiempi+A+Sg+Ine`
+* *aiempina:* `aiempi+A+Pl+Ess`
+* *aiemmista:* `aiempi+A+Pl+Ela`
+
+*Adjectives 16 front examples:*
+* *lähempi:* `lähempi+A+Sg+Nom` (Eng. # closer)
+* *lähempänä:* `lähempi+A+Sg+Ess`
+* *lähemmässä:* `lähempi+A+Sg+Ine`
+* *lähempinä:* `lähempi+A+Pl+Ess`
+* *lähemmistä:* `lähempi+A+Pl+Ela`
+
+### Long vowel stems
+
+*Adjectives 17 a examples:*
+* *vapaa:* `vapaa+A+Sg+Nom` (Eng. # free)
+
+There are no other bisyllabic long vowel stems in adjectives
+
+*Adjectives 18 aa examples:*
+* *peeaa:* `peeaa+A+Sg+Nom` (Eng. # bust)
+
+*Adjectives 18 uu examples:*
+* *muu:* `muu+A+Sg+Nom` (Eng. # other)
+
+*Adjectives 18 ää examples:*
+* *syypää:* `syypää+A+Sg+Nom` (Eng. # guilty)
+
+There are no other monosyllabic long vowel stems for adjectives. For full
+listing of possibilities, see nouns.
+
+Some loan words inflect irregularly, either more along the written form or
+the pronunciation. 
+
+*Adjectives 21 gay examples:*
+* *gay:* `gay+A+Sg+Nom` (Eng. # gay)
+
+There are not many direct adjective loans in general.
+
+### Old e stems with i nominative
+Some of the old e stems have i nominative but e as stem vowel for singular
+forms. Most of these are not adjectives though, see full listing from the
+noun pages.
+
+*Adjectives 24~26 back examples:*
+* *suuri:* `suuri+A+Sg+Nom` (Eng. # big)
+THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
+0:  >> 0:0 SO TOMMI FINDS THEM
+
+*Adjectives 24~26 front examples:*
+* *pieni:* `pieni+A+Sg+Nom` (Eng. # small)
+
+*Adjectives 27 back examples:*
+* *uusi:* `uusi+A+Sg+Nom` (Eng. # new)
+
+*Adjectives 27 front examples:*
+* *täysi:* `täysi+A+Sg+Nom` (Eng. # full)
+
+There are no adjective examples of other gradation variants or consonant
+cluster simplifications in this class.
+
+### Consonant-final stems
+The consonant stems use inverted gradation if applicable, that is, the 
+nominatives have end in consonants and their gradating consonants are in
+weak form. Most of these are rarer for adjectives than nouns.
+
+*Adjectives 32 examples:*
+* *tyven:* `tyven+A+Sg+Nom` (Eng. # calm (of bodies of water))
+
+There are no back vowel variants or gradating words in the basic e
+conjoining pattern.
+
+*Adjectives 33 examples:*
+* *avoin:* `avoin+A+Sg+Nom` (Eng. # open)
+
+There are no other examples of n:m final variation before conjoining e.
+
+### Caritives
+The common case of n:m variation with conjoining a before singular stems is
+from caritive suffix -tOn, that forms adjectives productively. 
+
+*Adjectives 34 back examples:*
+* *alaston:* `alaston+A+Sg+Nom` (Eng. # naked)
+
+*Adjectives 34 0~t back examples:*
+* *viaton:* `viaton+A+Sg+Nom` (Eng. # innocent)
+
+*Adjectives 34 0~t front examples:*
+* *kyvytön:* `kyvytön+A+Sg+Nom` (Eng. # unskilled)
+
+This one word, hapan, also takes the same variation as normative variant.
+The expected e variant is not normative, but used.
+
+*Adjectives 34 0~p back examples:*
+* *hapan:* `hapan+A+Sg+Nom` (Eng. # sour)
+
+*Adjectives 34 m~p front examples:*
+* *lämmin:* `lämmin+A+Sg+Nom` (Eng. # warm)
+
+### Lexicalised superlatives
+
+*Adjectives 35 back examples:*
+* *uloin:* `uloin+A+Sg+Nom` (Eng. # outermost)
+
+*Adjectives 35 front examples:*
+* *sisin:* `sisin+A+Sg+Nom` (Eng. # innermost)
+
+Vasen inflects almost like superlative
+
+*Adjectives 36 examples:*
+* *vasen:* `vasen+A+Sg+Nom` (Eng. # left)
+
+### nen suffixes
+Adjectives are commonly formed with nen derivatonns.
+
+*Adjectives 38 back examples:*
+* *aakkosellinen:* `aakkosellinen+A+Sg+Nom` (Eng. # alphabetic)
+
+*Adjectives 38 front examples:*
+* *kylmäjärkinen:* `kylmäjärkinen+A+Sg+Nom` (Eng. # levelminded)
+
+### s-final adjectives
+
+Most of the cases here are nouns from noun derivations.
+
+*Adjectives 39 examples:*
+* *symppis:* `symppis+A+Sg+Nom` (Eng. # sympathetic)
+
+*Adjectives 40 examples:*
+* *lähteisyys:* `lähteisyys+A+Sg+Nom` (Eng. # sourceful)
+
+*Adjectives 41 as examples:*
+* *autuas:* `autuas+A+Sg+Nom` (Eng. # ignorant)
+
+*Adjectives 41 is examples:*
+* *valmis:* `valmis+A+Sg+Nom` (Eng. # ready)
+
+*Adjectives 41 äs examples:*
+* *työläs:* `työläs+A+Sg+Nom` (Eng. # studious)
+
+*Adjectives 41 kas examples:*
+* *voimakas:* `voimakas+A+Sg+Nom` (Eng. # powerfui)
+
+*Adjectives 41 käs examples:*
+* *tyylikäs:* `tyylikäs+A+Sg+Nom` (Eng. # stylish)
+
+*Adjectives 41 pas examples:*
+* *reipas:* `reipas+A+Sg+Nom`
+
+No adjectives end in -päs
+
+*Adjectives 41 tas examples:*
+* *rietas:* `rietas+A+Sg+Nom` (Eng. # lewd)
+
+*Adjectives 41 tis examples:*
+* *raitis:* `raitis+A+Sg+Nom` (Eng. # sober)
+
+Gaps.
+
+*Adjectives 41 das examples:*
+* *hidas:* `hidas+A+Sg+Nom` (Eng. # slow)
+
+Gaps
+
+*Adjectives 41 ras examples:*
+* *harras:* `harras+A+Sg+Nom` (Eng. # humble)
+
+### t-finals
+
+*Adjectives 43 back examples:*
+* *ohut:* `ohut+A+Sg+Nom` (Eng. # thin)
+
+*Adjectives 43 front examples:*
+* *ehyt:* `ehyt+A+Sg+Nom` (Eng. # unbroken)
+
+### Lexicalised nut-participles
+Majority of lexicalised nut participles are adjectives.
+
+*Adjectives 47 back examples:*
+* *kulunut:* `kulunut+A+Sg+Nom` (Eng. # used)
+
+*Adjectives 47 front examples:*
+* *ällistynyt:* `ällistynyt+A+Sg+Nom` (Eng. # amazed)
+
+### Old -e^ final stems
+
+*Adjectives 48 back examples:*
+* *ahne:* `ahne+A+Sg+Nom` (Eng. # greedy)
+
+*Adjectives 48 front examples:*
+* *terve:* `terve+A+Sg+Nom` (Eng. # healthy)
+
+*Adjectives 48 d~t back examples:*
+* *kade:* `kade+A+Sg+Nom` (Eng. # jealous)
+
+*Adjectives 48 l~t back examples:*
+* *helle:* `helle+A+Sg+Nom` (Eng. # warm weather)
+
+Gapping almost all variants of gradations with e, as well as all dual
+nominative stems.
+
+### Exceptional adjectives
+The ones that do not fit in the official classes shown in dictionaries.
+
+*Adjective pitkä examples:*
+* *pitkä:* `pitkä+A+Sg+Nom`
+* *pidempi:* `pitkä+A+Comp+Sg+Nom`
+* *pisin:* `pitkä+A+Superl+Sg+Nom`
+
+THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
+0:  >> 0:0 SO TOMMI FINDS THEM
+
+THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
+0:  >> 0:0 SO TOMMI FINDS THEM
+
+### Plurales tantum?
+Adjectives aren't typically plural words, but there are some in the
+dictionaries.
+
+*Adjective plurales examples:*
+* *leuattomat:* `leuattomat+A+Pl+Nom` (Eng. # ?)
+
+## Adjective inflection proper
+
+The superlative derivation is formed by in suffix, which creates a new
+adjective baseform. This baseform is handled separately to avoid double
+superlatives.
+
+*Adjective superlative front examples:*
+* *rumin:* `ruma+A+Superl+Sg+Nom` (Eng. # ugliest)
+
+*Adjective superlative back examples:*
+* *tyhmin:* `tyhmä+A+Superl+Sg+Nom` (Eng. # stupidest)
+
+The comparative derivation is formed by mpi suffix, which creates a new
+adjective baseform. This adjective is handled separately
+to avoid double comparative forms.
+
+*Adjective comparative front examples:*
+* *rumempi:* `ruma+A+Comp+Sg+Nom`
+
+*Adjective comparative back examples:*
+* *tyhmempi:* `tyhmä+A+Comp+Sg+Nom`
+
+This inflectional part attached to adjective comparative stems to avoid
+circularity in comparative derivations:
+
+*Adjective comparative inflection back examples:*
+* *nopeampi:* `nopea+A+Comp+Sg+Nom` (Eng. # faster)
+* ★*nopeammampi:* `nopea+A+Comp+Comp+Sg+Nom` (is not standard language)
+* ★*nopeammammampi:* `nopea+A+Comp+Comp+Comp+Sg+Nom` (is not standard language)
+
+*Adjective comparative inflection front examples:*
+* *tyhmempänä:* `tyhmä+A+Comp+Sg+Ess`
+* ★*tyhmemmämpi:* `tyhmä+A+Comp+Comp+Sg+Nom` (is not standard language)
+
+This inflectional part is attached to adjective superlative stems to avoid
+circularity in superlative  derivations:
+
+*Adjective superlative inflection back examples:*
+* *nopein:* `nopea+A+Superl+Sg+Nom`
+* ★*nopeimmimpia:* `nopea+A+Superl+Superl+Sg+Par` (is not standard language)
+* ★*nopeimmimmin:* `nopea+A+Superl+Superl+Superl+Sg+Nom` (is not standard language)
+
+*Adjective superlative inflection front examples:*
+* *tyhmin:* `tyhmä+A+Superl+Sg+Nom`
+* ★*tyhmimmimpiä:* `tyhmä+A+Superl+Superl+Sg+Par` (is not standard language)
+
+## Regular adjective inflection
+The adjective inflection apart from the comparative and superlative
+derivations is same as with nouns. I will only show examples here.
+
+*Adjective nominative back examples:*
+* *rumapa:* `ruma+A+Sg+Nom+Foc/pa`
+
+*Adjective nominative front examples:*
+* *tyhmäpä:* `tyhmä+A+Sg+Nom+Foc/pa`
+
+*Adjective pl tant back examples:*
+* *rumat:* `ruma+A+Pl+Nom`
+
+*Adjective pl tant front examples:*
+* *tyhmät:* `tyhmä+A+Pl+Nom`
+
+*Adjective regular singular back examples:*
+* *ruman:* `ruma+A+Sg+Gen`
+* *rumatta:* `ruma+A+Sg+Abe`
+
+*Adjective regular singular front examples:*
+* *tyhmän:* `tyhmä+A+Sg+Gen`
+* *tyhmättä:* `tyhmä+A+Sg+Abe`
+
+*Adjective regular singular back strongs examples:*
+* *rumana:* `ruma+A+Sg+Ess`
+* *rumani:* `ruma+A+Sg+Nom+PxSg1`
+
+*Adjective regular singular front strongs examples:*
+* *tyhmänä:* `tyhmä+A+Sg+Ess`
+* *tyhmäni:* `tyhmä+A+Sg+Nom+PxSg1`
+
+*Adjective regular plural back examples:*
+* *heikoitta:* `heikko+A+Pl+Abe`
+* *heikoilta:* `heikko+A+Pl+Abl`
+
+*Adjective regular plural front examples:*
+* *jäykittä:* `jäykkä+A+Pl+Abe`
+* *jäykiltä:* `jäykkä+A+Pl+Abl`
+
+*Adjective regular plural back strong examples:*
+* *jäykkinä:* `jäykkä+A+Pl+Ess`
+* *jäykkine:* `jäykkä+A+Cmt`
+
+*Adjective regular plural front strong examples:*
+* *heikkoina:* `heikko+A+Pl+Ess`
+* *heikkoine:* `heikko+A+Cmt`
+
+*Adjective singular partitive a examples:*
+* *tarkkaa:* `tarkka+A+Sg+Par`
+* *tarkkaansa:* `tarkka+A+Sg+Par+PxSg3`
+
+*Adjective singular partitive ä examples:*
+* *tyhmää:* `tyhmä+A+Sg+Par`
+* *tyhmäänsä:* `tyhmä+A+Sg+Par+PxSg3`
+
+*Adjective singular partitive a poss aan examples:*
+* *jaloa:* `jalo+A+Sg+Par`
+* *jaloaan:* `jalo+A+Sg+Par+PxSg3`
+
+*Adjective singular partitive ä poss ään examples:*
+* *hölöä:* `hölö+A+Sg+Par`
+* *hölöään:* `hölö+A+Sg+Par+PxSg3`
+
+*Adjective singular partitive ta examples:*
+* *vapaata:* `vapaa+A+Sg+Par`
+
+*Adjective singular partitive tä examples:*
+* *pientä:* `pieni+A+Sg+Par`
+
+*Adjective singular illative han examples:*
+* *peeaahan:* `peeaa+A+Sg+Ill`
+
+*Adjective singular illative hin examples:*
+* *gayhin:* `gay+A+Sg+Ill`
+
+*Adjective singular illative hun examples:*
+* *muuhun:* `muu+A+Sg+Ill`
+
+*Adjective singular illative hyn examples:*
+* *gayhynpä:* `gay+A+Sg+Ill+Foc/pa`
+
+*Adjective singular illative hän examples:*
+* *syypäähän:* `syypää+A+Sg+Ill`
+
+*Adjective singular illative seen back examples:*
+* *vapaaseen:* `vapaa+A+Sg+Ill`
+
+*Adjective singular illative seen front examples:*
+* *työlääseen:* `työläs+A+Sg+Ill`
+
+*Adjective singular illative an examples:*
+* *rumaan:* `ruma+A+Sg+Ill`
+
+*Adjective singular illative en back examples:*
+* *suureen:* `suuri+A+Sg+Ill`
+
+*Adjective singular illative en front examples:*
+* *pieneen:* `pieni+A+Sg+Ill`
+
+*Adjective singular illative in back examples:*
+* *tuhtiin:* `tuhti+A+Sg+Ill`
+
+*Adjective singular illative in front examples:*
+* *rehtiin:* `rehti+A+Sg+Ill`
+
+*Adjective singular illative on examples:*
+* *huonoon:* `huono+A+Sg+Ill`
+
+*Adjective singular illative un examples:*
+* *fiksuun:* `fiksu+A+Sg+Ill`
+
+*Adjective singular illative yn examples:*
+* *häijyyn:* `häijy+A+Sg+Ill`
+
+*Adjective singular illative än examples:*
+* *tyhmään:* `tyhmä+A+Sg+Ill`
+
+*Adjective singular illative ön examples:*
+* *hölmöön:* `hölmö+A+Sg+Ill`
+
+*Adjective plural partitive ia examples:*
+* *rumia:* `ruma+A+Pl+Par`
+
+*Adjective plural partitive iä examples:*
+* *tyhmiä:* `tyhmä+A+Pl+Par`
+
+*Adjective plural partitive ita examples:*
+* *korkeita:* `korkea+A+Pl+Par`
+
+*Adjective plural partitive itä examples:*
+* *järeitä:* `järeä+A+Pl+Par`
+
+*Adjective plural partitive ja examples:*
+* *vahvoja:* `vahva+A+Pl+Par`
+
+*Adjective plural partitive jä examples:*
+* *hölmöjä:* `hölmö+A+Pl+Par`
+
+*Adjective plural genitive iden back examples:*
+* *tanakoiden:* `tanakka+A+Pl+Gen`
+
+*Adjective plural genitive iden front examples:*
+* *räväköiden:* `räväkkä+A+Pl+Gen`
+
+*Adjective plural genitive ien back examples:*
+* *rumien:* `ruma+A+Pl+Gen`
+
+*Adjective plural genitive ien front examples:*
+* *tyhmien:* `tyhmä+A+Pl+Gen`
+
+*Adjective plural genitive itten back examples:*
+* *nopeitten:* `nopea+A+Pl+Gen`
+
+*Adjective plural genitive itten front examples:*
+* *järeitten:* `järeä+A+Pl+Gen`
+
+*Adjective plural genitive jen back examples:*
+* *vahvojen:* `vahva+A+Pl+Gen`
+
+*Adjective plural genitive jen front examples:*
+* *hölmöjen:* `hölmö+A+Pl+Gen`
+
+*Adjective plural genitive ten back examples:*
+* *suurten:* `suuri+A+Pl+Gen`
+
+*Adjective plural genitive ten front examples:*
+* *pienten:* `pieni+A+Pl+Gen`
+
+*Adjective plural genitive in back examples:*
+* *rumain:* `ruma+A+Pl+Gen+Use/Rare`
+
+*Adjective plural genitive in front examples:*
+* *tyhmäin:* `tyhmä+A+Pl+Gen+Use/Rare`
+
+*Adjective plural illative ihin bacl examples:*
+* *pahoihin:* `paha+A+Pl+Ill`
+
+*Adjective plural illative ihin front examples:*
+* *hölmöihin:* `hölmö+A+Pl+Ill`
+
+*Adjective plural illative iin back examples:*
+* *punaisiin:* `punainen+A+Pl+Ill`
+
+*Adjective plural illative iin front examples:*
+* *sinisiin:* `sininen+A+Pl+Ill`
+
+*Adjective plural illative isiin back examples:*
+* *korkeisiin:* `korkea+A+Pl+Ill`
+
+*Adjective plural illative isiin front examples:*
+* *järeisiin:* `järeä+A+Pl+Ill`
+
+*Adjective possessive back examples:*
+* *tyhmäni:* `tyhmä+A+Sg+Nom+PxSg1`
+
+*Adjective possessive front examples:*
+* *rumani:* `ruma+A+Sg+Nom+PxSg1`
+
+*Adjective possessive an examples:*
+* *kieroaan:* `kiero+A+Sg+Par+PxSg3`
+
+*Adjective possessive en back examples:*
+* *rumalleen:* `ruma+A+Sg+All+PxSg3`
+
+*Adjective possessive en front examples:*
+* *tyhmälleen:* `tyhmä+A+Sg+All+PxSg3`
+
+*Adjective possessive än examples:*
+* *hölmöään:* `hölmö+A+Sg+Par+PxSg3`
+
+*Adjective clitic back examples:*
+* *rumahan:* `ruma+A+Sg+Nom+Foc/han`
+
+*Adjective clitic front examples:*
+* *tyhmähän:* `tyhmä+A+Sg+Nom+Foc/han`
+
+Adjectives can usually be derived into sti adverbs productively
+
+*Deadjectival adverb derivations sti examples:*
+* *nopeasti* `nopea+A+Der/sti` (Eng. # fastly)
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/adjectives.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/adjectives.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/affixes/adjectives.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/affixes/adjectives.lexc)</small>
 
 ---
 
-# Prefixes
-Prefixes are bound morphs that can appear in beginning of the compounds,
-mostly forms of nominals. Finnish does not have almost any real prefix 
-morphemes.
+# Adverb inflection
+Most adverbs are morphologically either sti-derivations of adjectives or
+some specific form of an existing or archaic noun, and they have limited
+inflection in form of possessives and clitics carried over. According to
+modern dictionaries different forms of same root are separate adverbs,
+so they are not inflected here, but listed in roots.
 
-*Prefixes examples:*
-* *alabanaani:* `ala+N+Pref#banaani+N+Sg+Nom` (Eng. # lower banana)
-* *erikoistyyppi:* `erikois+N+Pref#tyyppi+N+Sg+Nom` (Eng. # special guy)
+*Adverb possessive back examples:*
+* *takanani:* `takana+Adv+PxSg1` (Eng. # behind me)
+
+*Adverb possessive front examples:*
+* *edessäni:* `edessä+Adv+PxSg1` (Eng. # in front of me)
+
+*Adverb possessive back an examples:*
+* *takanaan:* `takana+Adv+PxSg3`
+
+*Adverb possessive back en examples:*
+* *jalkeilleen:* `jalkeille+Adv+PxSg3` (Eng. # he awakened)
+
+*Adverb possessive front en examples:*
+* *keskelleen:* `keskelle+Adv+PxPl3` (Eng. # amidst them)
+
+*Adverb possessive front än examples:*
+* *edessään:* `edessä+Adv+PxSg3`
+
+*Adverb clitic back examples:*
+* *nopeastihan:* `nopeasti+Adv+Foc/han` (Eng. # fast)
+
+*Adverb clitic front examples:*
+* *tyhmästihän:* `tyhmästi+Adv+Foc/han` (Eng. # stupidly)
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/prefixes.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/prefixes.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/affixes/adv.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/affixes/adv.lexc)</small>
 
 ---
 
-Verbs are the words that inflect in tense, mood, personal suffixes, and
-clitics, but verbs also have s.c. infinite inflection pattern which is
-basically nominal derivations. The dictionary entries of verbs are
-A-infinitive forms, there are no verbs in dictionary that do not end in
-a or ä. Verbs are very distinct from other classes, their classification
-is not difficult.
-The key to find unique class for a verb is to pick stems and suffixes from:
-indicative non-past 1st singular and 3rd singular, indicative past 1st 
-singular, ...
+Digit strings inflect with colons, lot like abbreviations.
 
-The auxiliary verbs require infinintive verbal phrase objects.
-Infinitives usually: *aion tappaa*, *joudun kuolemaan*
+The digit strings ending in digit 1 pronounced as number
 
-The verbs are classified along the stem mutations suffix assimilation,
-and harmony:
+* examples:*
+* *1:* `1+Num+Card+Sg+Nom`
+* *1:t:* `1+Num+Card+Pl+Nom`
+* *1:ssä:* `1+Num+Card+Sg+Ine`
 
-*Verb examples:*
-* *kutoo:* `kutoa+V+Act+Ind+Prs+Sg3` (Eng. # knit)
-* *kudotaan:* `kutoa+V+Pss+Ind+Prs+Pe4`
-* *tietää:* `tietää+V+Act+Ind+Prs+Sg3` (Eng. # know)
-* *tiesit:* `tietää+V+Act+Ind+Prt+Sg2`
-* *nähnyt:* `nähdä+V+Act+PrfPrc+Sg+Nom` (Eng. # see)
-* *juossut:* `juosta+V+Act+PrfPrc+Sg+Nom` (Eng. # run)
+The digit strings ending in digit 2 pronounced as number
+* *2:*
+* *2:t:*
+* *2:ssa:*
+
+The digit strings ending in digit 3 pronounced as number
+* *3:*
+* *3:t:*
+* *3:ssa:*
+
+The digit strings ending in digit 4 pronounced as number
+* *4:*
+* *4:t:*
+* *4:ssä:*
+
+The digit strings ending in digit 5 pronounced as number
+* *5:*
+* *5:t:*
+* *5:ssä:*
+
+The digit strings ending in digit 6 pronounced as number
+* *6:*
+* *6:t:*
+* *6:ss:*
+
+The digit strings ending in digit 7 pronounced as number
+* *7:*
+* *7:t:*
+* *7:ssä:*
+
+The digit strings ending in digit 8 pronounced as number
+* *8:*
+* *8:t:*
+* *8:ssa:*
+
+The digit strings ending in digit 9 pronounced as number
+* *9:*
+* *9:t:*
+* *9:ssä:*
+
+The digit strings ending in digit 0 pronounced as number
+* *0:*
+* *0:t:*
+* *0:aa:*
+
+The digit string ending in 0 pronounced as tens
+* *10:*
+* *10:t:*
+* *10:tä:*
+
+The digit string ending in 00 pronounced as hundreds
+* *100:*
+* *100:t:*
+* *100:aa:*
+
+The digit string ending in 000 pronounced as thousands
+* *1000:*
+* *1000:t:*
+* *1000:ta:*
+
+The digit string ending in 0's pronounced as millions
+* *1000000:*
+* *1000000:t:*
+* *1000000:aa:*
+
+The digit string ending in 0's pronounced as milliards
+* *1000000000:*
+* *1000000000:t:*
+* *1000000000:a:*
+
+The digit string ending in 1. pronounced as first
+* *1.:*
+* *1:nen:*
+* *1:stä:*
+
+The digit string ending in 2. pronounced as second
+* *2.:*
+* *2:nen:*
+* *2:sta:*
+
+The digit string ending in 3, 6, 8, 00 or 2 pronounced as ordinal
+* *3.:*
+* *3:s:*
+* *3:tta:*
+
+The digit string ending in 4, 5, 7, 9, 0, or 1. pronounced as ordinal
+* *4.:*
+* *4:s:*
+* *4:ttä:*
+
+The roman digit string ending in II, III, VI, VIII, C, L or M
+* *II:*
+* *II:ta:*
+
+The roman digit string ending in I, IV, V, VII, IX, X or 
+* *I:*
+* *I:tä:*
+
+* *1:nsä:*
+
+* *2:nsa:*
+
+* *3:aan:*
+
+* *2:kseen:*
+
+* *1:kseen:*
+
+* *5:ttään:*
+
+* *2:han:*
+
+* *4:hän:*
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/verbs.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/verbs.lexc)</small>
-
----
-
-Coordinating conjunctions
-Coordinating conjunctions combine equal clauses and phrases. As subset of
-particles, they do not inflect. The classification is solely syntactic and
-semantic, but it is used in this system for compatibility with other stuff.
-
-The coordinating conjunctions are: eli(kkä), ja, joko – tai, kuin – myös,
-‑kä, mutta, niin – kuin ‑kin/ myös, sekä, sekä – että, sun; tai, vaan, vai,
-ynnä, (saati), (sillä)
-Further reading: [VISK § 816](http://scripta.kotus.fi/visk/sisalto.php?p=816))
-
-*Coordinating conjunctions examples:*
-* *eikä:* `eikä+CC`
-* *ja:* `ja+CC`
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/stems/conjunctions.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/conjunctions.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/affixes/digits.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/affixes/digits.lexc)</small>
 
 ---
 
@@ -5013,189 +5697,6 @@ parts are nominals and inflect regularly.
 
 ---
 
-Digit strings inflect with colons, lot like abbreviations.
-
-The digit strings ending in digit 1 pronounced as number
-
-* examples:*
-* *1:* `1+Num+Card+Sg+Nom`
-* *1:t:* `1+Num+Card+Pl+Nom`
-* *1:ssä:* `1+Num+Card+Sg+Ine`
-
-The digit strings ending in digit 2 pronounced as number
-* *2:*
-* *2:t:*
-* *2:ssa:*
-
-The digit strings ending in digit 3 pronounced as number
-* *3:*
-* *3:t:*
-* *3:ssa:*
-
-The digit strings ending in digit 4 pronounced as number
-* *4:*
-* *4:t:*
-* *4:ssä:*
-
-The digit strings ending in digit 5 pronounced as number
-* *5:*
-* *5:t:*
-* *5:ssä:*
-
-The digit strings ending in digit 6 pronounced as number
-* *6:*
-* *6:t:*
-* *6:ss:*
-
-The digit strings ending in digit 7 pronounced as number
-* *7:*
-* *7:t:*
-* *7:ssä:*
-
-The digit strings ending in digit 8 pronounced as number
-* *8:*
-* *8:t:*
-* *8:ssa:*
-
-The digit strings ending in digit 9 pronounced as number
-* *9:*
-* *9:t:*
-* *9:ssä:*
-
-The digit strings ending in digit 0 pronounced as number
-* *0:*
-* *0:t:*
-* *0:aa:*
-
-The digit string ending in 0 pronounced as tens
-* *10:*
-* *10:t:*
-* *10:tä:*
-
-The digit string ending in 00 pronounced as hundreds
-* *100:*
-* *100:t:*
-* *100:aa:*
-
-The digit string ending in 000 pronounced as thousands
-* *1000:*
-* *1000:t:*
-* *1000:ta:*
-
-The digit string ending in 0's pronounced as millions
-* *1000000:*
-* *1000000:t:*
-* *1000000:aa:*
-
-The digit string ending in 0's pronounced as milliards
-* *1000000000:*
-* *1000000000:t:*
-* *1000000000:a:*
-
-The digit string ending in 1. pronounced as first
-* *1.:*
-* *1:nen:*
-* *1:stä:*
-
-The digit string ending in 2. pronounced as second
-* *2.:*
-* *2:nen:*
-* *2:sta:*
-
-The digit string ending in 3, 6, 8, 00 or 2 pronounced as ordinal
-* *3.:*
-* *3:s:*
-* *3:tta:*
-
-The digit string ending in 4, 5, 7, 9, 0, or 1. pronounced as ordinal
-* *4.:*
-* *4:s:*
-* *4:ttä:*
-
-The roman digit string ending in II, III, VI, VIII, C, L or M
-* *II:*
-* *II:ta:*
-
-The roman digit string ending in I, IV, V, VII, IX, X or 
-* *I:*
-* *I:tä:*
-
-* *1:nsä:*
-
-* *2:nsa:*
-
-* *3:aan:*
-
-* *2:kseen:*
-
-* *1:kseen:*
-
-* *5:ttään:*
-
-* *2:han:*
-
-* *4:hän:*
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/affixes/digits.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/affixes/digits.lexc)</small>
-
----
-
-# Adverb inflection
-Most adverbs are morphologically either sti-derivations of adjectives or
-some specific form of an existing or archaic noun, and they have limited
-inflection in form of possessives and clitics carried over. According to
-modern dictionaries different forms of same root are separate adverbs,
-so they are not inflected here, but listed in roots.
-
-*Adverb possessive back examples:*
-* *takanani:* `takana+Adv+PxSg1` (Eng. # behind me)
-
-*Adverb possessive front examples:*
-* *edessäni:* `edessä+Adv+PxSg1` (Eng. # in front of me)
-
-*Adverb possessive back an examples:*
-* *takanaan:* `takana+Adv+PxSg3`
-
-*Adverb possessive back en examples:*
-* *jalkeilleen:* `jalkeille+Adv+PxSg3` (Eng. # he awakened)
-
-*Adverb possessive front en examples:*
-* *keskelleen:* `keskelle+Adv+PxPl3` (Eng. # amidst them)
-
-*Adverb possessive front än examples:*
-* *edessään:* `edessä+Adv+PxSg3`
-
-*Adverb clitic back examples:*
-* *nopeastihan:* `nopeasti+Adv+Foc/han` (Eng. # fast)
-
-*Adverb clitic front examples:*
-* *tyhmästihän:* `tyhmästi+Adv+Foc/han` (Eng. # stupidly)
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/affixes/adv.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/affixes/adv.lexc)</small>
-
----
-
-# Acronym inflection
-Acronyms are inflected using a colon, followed by the inflectional endings,
-which depend on either last letter of the word or inflection class of the
-last word of the abbreviation. The exception to the inflection scheme is the
-singular nominative, which appears without colon.
-Pronouncable abbreviations such as aids, hiv, kela, alko etc. are actually
-counted as regular words with regular inflection patterns.
-c.f. [VISK § 169](http://scripta.kotus.fi/visk/sisallys.php?p=169)
-
-## Acronyms ending in numbers inflect like the numbers are pronounced.
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/affixes/acronyms.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/affixes/acronyms.lexc)</small>
-
----
-
 # Numeral inflection
 Numeral inflection is like nominal, except that numerals compound in all
 forms which requires great amount of care in the inflection patterns.
@@ -5379,1599 +5880,12 @@ forms which requires great amount of care in the inflection patterns.
 
 ---
 
-# Adjective inflection
-The adjectives are inflected like regular nouns. The only morphological
-difference in adjectives compared to other nouns is higher likelihood of
-comparative derivations–they are fully productive. For adjectives that do
-not compare, use qualifiers classification instead.
-VISK § 300
 
-## Adjective stem variation and allomorph selection
-Adjective stems are formed like noun stems, with similar patterns. Adjectives
-have additionally the productive comparative derivations, which may have
-their own stems, particularly an e-stem for a-stem words. The examples in
-this chapter are the same set of cases as with nouns:
-singular nominative, singular essive, singular inessive, plural essive,
-plural elative, singular partitives, singular illatives, plural partitives
-plural genitives, plural illatives and the compound forms. And also the
-comparative derivations: comparative singular nominative and superlative
-singular nominative. Majority of adjeciteves are equivalent to
-corresponding noun classes, so some examples have been omitted.
-
-### Bisyllabic / derivational adjective stems without stem variation
-The most basic adjective stems do not have any stem internal variation.
-They end in o, u, y or ö, and with some limited set of new words, e.
-This class has the fewest allomorphs. There are a number of productive
-adjective classes in this section, including all lexicalised nut 
-participle’s passives (-tu, -ty), moderative derivations (-hko, -hkö)
-and ...
-Examples follow in specific sub-classes.
-
-The words in this class ending in o belong to `ADJ_TUMMAHKO`, the old
-dictionaries use class ¹. The stems should be entered in dictionary like:
-```tummahko+A:tummahko A_TUMMAHKO  ;```
-This class includes back vowel moderative
-derivations. N.B. the comparative derivation of moderatives is semantically
-awkward, but morphologically plausible.
-
-*Adjectives 1 o examples:*
-* *tummahko:* `tummahko+A+Sg+Nom` (Eng. # darkish)
-* *tummahkona:* `tummahko+A+Sg+Ess`
-* *tummahkossa:* `tummahko+A+Sg+Ine`
-* *tummahkoina:* `tummahko+A+Pl+Ess`
-* *tummahkoissa:* `tummahko+A+Pl+Ine`
-* *tummahkoa:* `tummahko+A+Sg+Par`
-* ★*tummahkota:* `tummahko+A+Sg+Par` (is not standard language)
-* *tummahkoon:* `tummahko+A+Sg+Ill`
-* ★*tummahkohon:* `tummahko+A+Sg+Ill` (is not standard language)
-* ★*tummahkoseen:* `tummahko+A+Sg+Ill` (is not standard language)
-* *tummahkoja:* `tummahko+A+Pl+Par`
-* ★*tummahkoita:* `tummahko+A+Pl+Par` (is not standard language)
-* *tummahkojen:* `tummahko+A+Pl+Gen`
-* ★*tummahkoiden:* `tummahko+A+Pl+Gen` (is not standard language)
-* ★*tummahkoitten:* `tummahko+A+Pl+Gen` (is not standard language)
-* *tummahkoihin:* `tummahko+A+Pl+Ill`
-* ★*tummahkoisiin:* `tummahko+A+Pl+Ill` (is not standard language)
-* *tummahkompi:* `tummahko+A+Comp+Sg+Nom`
-* *tummahkoin:* `tummahko+A+Superl+Sg+Nom`
-
-The stems ending in u are in class `ADJ_VALKAISTU`, and in old dictionaries
-the class is ¹. These stems should be entered in dictionary like:
-```valkaistu+A:valkaistu A_VALKAISTU  ;```
-Common part of this class is formed by nut participle 
-passive’s _back_ vowel versions after s stem verbs:
-
-*Adjectives 1 u examples:*
-* *valkaistu:* `valkaistu+A+Sg+Nom` (Eng. # bleached)
-* *valkaistua:* `valkaistu+A+Sg+Par`
-* *valkaistuun:* `valkaistu+A+Sg+Ill`
-* *valkaistuna:* `valkaistu+A+Sg+Ess`
-* *valkaistussa:* `valkaistu+A+Sg+Ine`
-* *valkaistuja:* `valkaistu+A+Pl+Par`
-* *valkaistujen:* `valkaistu+A+Pl+Gen`
-* *valkaistuihin:* `valkaistu+A+Pl+Ill`
-* *valkaistuina:* `valkaistu+A+Pl+Ess`
-* *valkaistuissa:* `valkaistu+A+Pl+Ine`
-* *valkaistumpi:* `valkaistu+A+Comp+Sg+Nom`
-* *valkaistuin:* `valkaistu+A+Superl+Sg+Nom`
-
-The stems ending in y are in class `ADJ_HÄPÄISTY`, and in old dictionaries
-the class is ¹. Common part of this class is formed by nut participle 
-passive’s _front_ vowel versions after s stem verbs:
-
-*Adjectives 1 y examples:*
-* *häpäisty:* `häpäisty+A+Sg+Nom` (Eng. # defiled)
-* *häpäistyä:* `häpäisty+A+Sg+Par`
-* *häpäistyyn:* `häpäisty+A+Sg+Ill`
-* *häpäistynä:* `häpäisty+A+Sg+Ess`
-* *häpäistyssä:* `häpäisty+A+Sg+Ine`
-* *häpäistyjä:* `häpäisty+A+Pl+Par`
-* *häpäistyjen:* `häpäisty+A+Pl+Gen`
-* *häpäistyihin:* `häpäisty+A+Pl+Ill`
-* *häpäistyinä:* `häpäisty+A+Pl+Ess`
-* *häpäistyissä:* `häpäisty+A+Pl+Ine`
-* *häpäistympi:* `häpäisty+A+Comp+Sg+Nom`
-* *häpäistyin:* `häpäisty+A+Superl+Sg+Nom`
-
-The words in this class ending in ö belong to `ADJ_HÖLÖ`, the old
-dictionaries use class ¹. This class includes front vowel moderative
-derivations.
-
-*Adjectives 1 ö examples:*
-* *hölö:* `hölö+A+Sg+Nom` (Eng. # blabbermouth)
-* *hölöä:* `hölö+A+Sg+Par`
-* *hölöön:* `hölö+A+Sg+Ill`
-* *hölönä:* `hölö+A+Sg+Ess`
-* *hölössä:* `hölö+A+Sg+Ine`
-* *hölöjä:* `hölö+A+Pl+Par`
-* *hölöjen:* `hölö+A+Pl+Gen`
-* *hölöihin:* `hölö+A+Pl+Ill`
-* *hölöinä:* `hölö+A+Pl+Ess`
-* *hölöissä:* `hölö+A+Pl+Ine`
-* *hölömpi:* `hölö+A+Comp+Sg+Nom`
-* *hölöin:* `hölö+A+Superl+Sg+Nom`
-
-The new words with e stem have same allomorph selection as old short
-unchanging bisyllabic u, y, o and ö stems, and no stem-internal variation.
-The classification for the back vowel variant of this class is
-`ADJ_TOOPE`, and old dictionaries used the class ⁸.
-
-*Adjectives 8 back examples:*
-* *toope:* `toope+A+Sg+Nom` (Eng. # doofus)
-* *toopea:* `toope+A+Sg+Par`
-* *toopeen:* `toope+A+Sg+Ill`
-* *toopeja:* `toope+A+Pl+Par`
-* *toopejen:* `toope+A+Pl+Gen`
-* *toopeihin:* `toope+A+Pl+Ill`
-* *toopempi:* `toope+A+Comp+Sg+Nom`
-* *toopein:* `toope+A+Superl+Sg+Nom`
-They also have slightly greater probability for archaic form of plural
-genitive:
-* *toopein:* `toope+A+Pl+Gen+Use/Rare`
-
-The front variation of unchanging e stems is class `@LEXNAME`, and in
-old dictionaries ⁸.
-
-*Adjectives 8 front examples:*
-* *beige:* `beige+A+Sg+Nom` (Eng. # beige)
-* *beigeä:* `beige+A+Sg+Par`
-* *beigeen:* `beige+A+Sg+Ill`
-* *beigejä:* `beige+A+Pl+Par`
-* *beigejen:* `beige+A+Pl+Gen`
-* *beigeihin:* `beige+A+Pl+Ill`
-* *beigempi:* `beige+A+Comp+Sg+Nom`
-* *beigein:* `beige+A+Superl+Sg+Nom`
-
-### Trisyllabic and longer non-derived adjectuve stems
-The trisyllabic and longer words with stem vowels o, u, y and ö also
-have no stem variation either, but selection of suffix allomorphs for 
-plural genitives and partitives is wider than for bisyllabic and derived
-ones.
-
-The o final trisyllabic stems are in class `ADJ_KOHELO`, and the old
-dictionaries used ². 
-
-*Adjectives 2 o examples:*
-* *tohelo:* `tohelo+A+Sg+Nom` (Eng. # clumsy)
-* *toheloita:* `tohelo+A+Pl+Par`
-* *toheloja:* `tohelo+A+Pl+Par`
-* *tohelojen:* `tohelo+A+Pl+Gen`
-* *toheloiden:* `tohelo+A+Pl+Gen`
-* *toheloitten:* `tohelo+A+Pl+Gen`
-* *tohelompi:* `tohelo+A+Comp+Sg+Nom`
-* *toheloin:* `tohelo+A+Superl+Sg+Nom`
-
-And the trisyllabic ö stem is classified `ADJ_LÖPERÖ`.
-
-*Adjectives 2 ö examples:*
-* *löperö:* `löperö+A+Sg+Nom` (Eng. # sloppy)
-* *löperöjen:* `löperö+A+Pl+Gen`
-* *löperöiden:* `löperö+A+Pl+Gen`
-* *löperöitten:* `löperö+A+Pl+Gen`
-* *löperömpi:* `löperö+A+Comp+Sg+Nom`
-* *löperöin:* `löperö+A+Superl+Sg+Nom`
-
-### Unchanging long vowel stems
-The words with stem vowels o, u, y and ö preceded by vowels still have no
-stem variation, but use yet another pattern of allomorphs for
-singular and plural partitives and plural genitive
-
-The class for o final long vowel stems is `ADJ_AUTIO`, and old
-old dictionaries used ³. 
-
-*Adjectives 3 o examples:*
-* *autio:* `autio+A+Sg+Nom` (Eng. # deserted)
-* *autiota:* `autio+A+Sg+Par`
-* ★*autioa:* `autio+A+Sg+Par` (is not standard language)
-* *autioita:* `autio+A+Pl+Par`
-* *autioiden:* `autio+A+Pl+Gen`
-* *autioitten:* `autio+A+Pl+Gen`
-* *autiompi:* `autio+A+Comp+Sg+Nom`
-* *autioin:* `autio+A+Superl+Sg+Nom`
-
-The front voweled stems with ö after vowels go to class `ADJ_RIIVIÖ`,
-and used the old dictionary class ³.
-
-*Adjectives 3 ö examples:*
-* *riiviö:* `riiviö+A+Sg+Nom` (Eng. # nasty)
-* *riiviötä:* `riiviö+A+Sg+Par`
-* *riiviöiden:* `riiviö+A+Pl+Gen`
-* *riiviöitten:* `riiviö+A+Pl+Gen`
-* *riiviömpi:* `riiviö+A+Comp+Sg+Nom`
-* *riiviöin:* `riiviö+A+Superl+Sg+Nom`
-
-There are no examples of new loan word adjectives ending in long vowel
-Furthermore there are no examples of adjectives in other classes without
-stem variation yet. There are some examples of these in nouns if you need
-new classes at some point.
-
-The abovementioned o, u, y and ö stems as well as new e stems can all
-form combinations with gradation feature as well. Not all combinations are
-yet found for adjectives, for full reference, read the noun classes.
-
-The quantitative k gradations with o bisyllabic o stem use class
-`ADJ_KOLKKO`, and old dictionaries use classes ¹⁻A and ¹⁻D.
-
-*Adjective gradations 1 k~0 o examples:*
-* *kolkko:* `kolkko+A+Sg+Nom` (Eng. # gloomy)
-* *kolkossa:* `kolkko+A+Sg+Ine`
-* *kolkoista:* `kolkko+A+Pl+Ela`
-* *kolkkoihin:* `kolkko+A+Pl+Ill`
-* *kolkompi:* `kolkko+A+Comp+Sg+Nom`
-* *kolkoin:* `kolkko+A+Superl+Sg+Nom`
-
-The quantitative k gradations with u bisyllabic o stem use class
-`ADJ_VIRKKU`, and old dictionaries use classes ¹⁻A and ¹⁻D.
-
-*Adjective gradations 1 k~0 u examples:*
-* *virkku:* `virkku+A+Sg+Nom` (Eng. # ???)
-* *virkussa:* `virkku+A+Sg+Ine`
-* *virkuista:* `virkku+A+Pl+Ela`
-* *virkkuihin:* `virkku+A+Pl+Ill`
-* *virkumpi:* `virkku+A+Comp+Sg+Nom`
-* *virkuin:* `virkku+A+Superl+Sg+Nom`
-
-The quantitative k gradations with y bisyllabic o stem use class
-`ADJ_SÄIKKY`, and old dictionaries use classes ¹⁻A and ¹⁻D.
-
-*Adjective gradations 1 k~0 y examples:*
-* *säikky:* `säikky+A+Sg+Nom` (Eng. # ???)
-* *säikyssä:* `säikky+A+Sg+Ine`
-* *säikyistä:* `säikky+A+Pl+Ela`
-* *säikkyihin:* `säikky+A+Pl+Ill`
-* *säikympi:* `säikky+A+Comp+Sg+Nom`
-* *säikyin:* `säikky+A+Superl+Sg+Nom`
-
-The quantitative k gradations with o bisyllabic ö stem use class
-`ADJ_KÖKKÖ`, and old dictionaries use classes ¹⁻A and ¹⁻D.
-
-*Adjective gradations 1 k~0 ö examples:*
-* *kökkö:* `kökkö+A+Sg+Nom` (Eng. # ???)
-* *kökössä:* `kökkö+A+Sg+Ine`
-* *kököistä:* `kökkö+A+Pl+Ela`
-* *kökköihin:* `kökkö+A+Pl+Ill`
-* *kökömpi:* `kökkö+A+Comp+Sg+Nom`
-* *kököin:* `kökkö+A+Superl+Sg+Nom`
-
-there is no unvarying e final adjective with _k ~ 0_ gradation.
-
-The quantitative gradation of p before o is in class `ADJ_SUIPPO` and
-old dictionaries would use ¹⁻B.
-
-*Adjective gradations 1 p~0 o examples:*
-* *suippo:* `suippo+A+Sg+Nom` (Eng. # ?)
-* *suipossa:* `suippo+A+Sg+Ine`
-* *suipoista:* `suippo+A+Pl+Ela`
-* *suippoihin:* `suippo+A+Pl+Ill`
-* *suipompi:* `suippo+A+Comp+Sg+Nom`
-* *suipoin:* `suippo+A+Superl+Sg+Nom`
-
-The quantitative gradation of p before u is in class `ADJ_IKÄLOPPU` and
-old dictionaries would use ¹⁻B.
-It is only a nominal compound based adjective that ends in u and has
-p ~ 0 gradation here:
-
-*Adjective gradations 1 p~0 u examples:*
-* *ikäloppu:* `ikäloppu+A+Sg+Nom` (Eng. # age-old)
-* *ikälopussa:* `ikäloppu+A+Sg+Ine`
-* *ikälopuista:* `ikäloppu+A+Pl+Ela`
-* *ikäloppuihin:* `ikäloppu+A+Pl+Ill`
-* *ikälopumpi:* `ikäloppu+A+Comp+Sg+Nom`
-* *ikälopuin:* `ikäloppu+A+Superl+Sg+Nom`
-
-and none of the adjectives end in y and quantitative p gradation.
-
-The quantitative gradation of p before ö is in class `ADJ_LÖRPPÖ` and
-old dictionaries would use ¹⁻B.
-
-*Adjective gradations 1 p~0 ö examples:*
-* *lörppö:* `lörppö+A+Sg+Nom` (Eng. # blabbermouth)
-* *lörpössä:* `lörppö+A+Sg+Ine`
-* *lörpöistä:* `lörppö+A+Pl+Ela`
-* *lörppöihin:* `lörppö+A+Pl+Ill`
-* *lörpömpi:* `lörppö+A+Comp+Sg+Nom`
-* *lörpöin:* `lörppö+A+Superl+Sg+Nom`
-
-The quantitative gradation of t before o is in class `ADJ_VELTTO`, 
-which was ¹⁻C in the dictionary.
-
-*Adjective gradations 1 t~0 o examples:*
-* *veltto:* `veltto+A+Sg+Nom` (Eng. # lazy)
-* *veltossa:* `veltto+A+Sg+Ine`
-* *veltoista:* `veltto+A+Pl+Ela`
-* *velttoihin:* `veltto+A+Pl+Ill`
-* *veltompi:* `veltto+A+Comp+Sg+Nom`
-* *veltoin:* `veltto+A+Superl+Sg+Nom`
-
-The quantitative gradation of t before u is in class `ADJ_VIMMATTU`, 
-which was ¹⁻C in the dictionary. 
-The u stems with quantitative t gradation are commonest with nut participle
-passive derivation’s back form (-ttu).
-
-*Adjective gradations 1 t~0 u examples:*
-* *vimmattu:* `vimmattu+A+Sg+Nom` (Eng. # wicked)
-* *vimmatussa:* `vimmattu+A+Sg+Ine`
-* *vimmatuista:* `vimmattu+A+Pl+Ela`
-* *vimmattuihin:* `vimmattu+A+Pl+Ill`
-* *vimmatumpi:* `vimmattu+A+Comp+Sg+Nom`
-* *vimmatuin:* `vimmattu+A+Superl+Sg+Nom`
-
-The quantitative gradation of t before y is in class `ADJ_YLENNETTY`, 
-which was ¹⁻C in the dictionary. 
-The u stems with quantitative t gradation are commonest with nut participle
-passive derivation’s front (-tty).
-
-*Adjective gradations 1 t~0 y examples:*
-* *ylennetty:* `ylennetty+A+Sg+Nom` (Eng. # promoted)
-* *ylennetyssä:* `ylennetty+A+Sg+Ine`
-* *ylennetyistä:* `ylennetty+A+Pl+Ela`
-* *ylennettyihin:* `ylennetty+A+Pl+Ill`
-* *ylennetympi:* `ylennetty+A+Comp+Sg+Nom`
-* *ylennetyin:* `ylennetty+A+Superl+Sg+Nom`
-
-The quantitative gradation of t before y is in class `ADJ_KYYTTÖ`, 
-which was ¹⁻C in the dictionary. 
-
-*Adjective gradations 1 t~0 ö examples:*
-* *kyyttö:* `kyyttö+A+Sg+Nom` (Eng. # ?????)
-* *kyytössä:* `kyyttö+A+Sg+Ine`
-* *kyytöistä:* `kyyttö+A+Pl+Ela`
-* *kyyttöihin:* `kyyttö+A+Pl+Ill`
-* *kyytömpi:* `kyyttö+A+Comp+Sg+Nom`
-* *kyytöin:* `kyyttö+A+Superl+Sg+Nom`
-
-The quantitave k gradation has a variant that allows use of apostrophe
-instead of nothing in the weak grade.
-
-The class for o final bisyllabic stems with optional ’ is `ADJ_LAKO`,
-this is a subset of dictionary class ¹⁻D. 
-
-*Adjective gradations 1 k~’~0 o examples:*
-* *lako:* `lako+A+Sg+Nom`
-* *laossa:* `lako+A+Sg+Ine`
-* *la’ossa:* `lako+A+Sg+Ine`
-* *laompi:* `lako+A+Comp+Sg+Nom`
-* *laoin:* `lako+A+Superl+Sg+Nom`
-
-There's no k to optional apostrophe with u.
-nor with y and k:
-nor ö with k:
-There's none with k gradating to always apostrophe either.
-For examples of these, see noun classes
-
-The qualitative gradation of p between vowels in o stems goes to v,
-the class for this is `ADJ_KELPO`, the dictionary class for this is
-¹⁻E.
-
-*Adjective gradations 1 p~v o examples:*
-* *kelpo:* `kelpo+A+Sg+Nom` (Eng. # proper)
-* *kelvossa:* `kelpo+A+Sg+Ine`
-* *kelpoina:* `kelpo+A+Pl+Ess`
-* *kelvoista:* `kelpo+A+Pl+Ela`
-* *kelvompi:* `kelpo+A+Comp+Sg+Nom`
-* *kelvoin:* `kelpo+A+Superl+Sg+Nom`
-
-There are none ending in vowel + pu
-nor with y and p
-nor ö with p.
-
-The gradation of t ~ d after o is in class `ADJ_MIETO`, the
-dictionary class for this is ¹⁻F.
-
-*Adjective gradations 1 t~d o examples:*
-* *mieto:* `mieto+A+Sg+Nom` (Eng. # mild)
-* *miedossa:* `mieto+A+Sg+Ine`
-* *mietoihin:* `mieto+A+Pl+Ill`
-* *miedoista:* `mieto+A+Pl+Ela`
-* *miedompi:* `mieto+A+Comp+Sg+Nom`
-* *miedoin:* `mieto+A+Superl+Sg+Nom`
-
-The gradation of t ~ d after u is in class `ADJ_VIIPALOITU`, the
-dictionary class for this is ¹⁻F.
-The commonest t ~ d variation in u stems comes from nut participle’s
-passive’s back form (-tu).
-
-*Adjective gradations 1 t~d u examples:*
-* *viipaloitu:* `viipaloitu+A+Sg+Nom` (Eng. # sliced)
-* *viipaloidussa:* `viipaloitu+A+Sg+Ine`
-* *viipaloituihin:* `viipaloitu+A+Pl+Ill`
-* *viipaloiduista:* `viipaloitu+A+Pl+Ela`
-* *viipaloidumpi:* `viipaloitu+A+Comp+Sg+Nom`
-* *viipaloiduin:* `viipaloitu+A+Superl+Sg+Nom`
-
-The gradation of t ~ d after u is in class `ADJ_YKSILÖITY`, the
-dictionary class for this is ¹⁻F.
-The commonest t ~ d variation in u stems comes from nut participle’s
-passive’s front form (-ty).
-
-*Adjective gradations 1 t~d y examples:*
-* *yksilöity:* `yksilöity+A+Sg+Nom` (Eng. # singled)
-* *yksilöidyssä:* `yksilöity+A+Sg+Ine`
-* *yksilöityihin:* `yksilöity+A+Pl+Ill`
-* *yksilöidyistä:* `yksilöity+A+Pl+Ela`
-* *yksilöidympi:* `yksilöity+A+Comp+Sg+Nom`
-* *yksilöidyin:* `yksilöity+A+Superl+Sg+Nom`
-
-And there's none with t and ö
-
-The adjectives with -nko stem belong to class `ADJ_LENKO`, and the
-dictionary class was ¹⁻G.
-
-*Adjective gradations 1 k~g o examples:*
-* *lenko:* `lenko+A+Sg+Nom` (Eng. # crooked)
-* *lengossa:* `lenko+A+Sg+Ine`
-* *lengoista:* `lenko+A+Pl+Ela`
-* *lenkoihin:* `lenko+A+Pl+Ill`
-* *lengompi:* `lenko+A+Comp+Sg+Nom`
-* *lengoin:* `lenko+A+Superl+Sg+Nom`
-
-There's no adjectives ending in nku
-nor with y and nk
-And ö with nk
-There are no gradating p's after m's in unchanging stems
-For all these, check the noun patterns.
-The quantitative gradation of t after l in o stems is in class 
-`ADJ_MELTO`, which corresponds to dictionary class ¹⁻I.
-
-*Adjective gradations 1 t~l o examples:*
-* *melto:* `melto+A+Sg+Nom` (Eng. # ?????)
-* *mellossa:* `melto+A+Sg+Ine`
-* *meltoihin:* `melto+A+Pl+Ill`
-* *melloista:* `melto+A+Pl+Ela`
-* *mellompi:* `melto+A+Comp+Sg+Nom`
-* *melloin:* `melto+A+Superl+Sg+Nom`
-
-The quantitative gradation of t after l in o stems is in class 
-`ADJ_PARANNELTU`, which corresponds to dictionary class ¹⁻I.
-The common u stem after l is in nut participles passive (-tu):
-
-*Adjective gradations 1 t~l u examples:*
-* *paranneltu:* `paranneltu+A+Sg+Nom` (Eng. # embettered)
-* *parannellussa:* `paranneltu+A+Sg+Ine`
-* *paranneltuihin:* `paranneltu+A+Pl+Ill`
-* *parannelluista:* `paranneltu+A+Pl+Ela`
-* *parannellumpi:* `paranneltu+A+Comp+Sg+Nom`
-* *parannelluin:* `paranneltu+A+Superl+Sg+Nom`
-
-The quantitative gradation of t after l in o stems is in class 
-`ADJ_VÄHÄTELTY`, which corresponds to dictionary class ¹⁻I.
-As with y and t:
-
-*Adjective gradations 1 t~l y examples:*
-* *vähätelty:* `vähätelty+A+Sg+Nom` (Eng. # belittled)
-* *vähätellyssä:* `vähätelty+A+Sg+Ine`
-* *vähäteltyihin:* `vähätelty+A+Pl+Ill`
-* *vähätellyistä:* `vähätelty+A+Pl+Ela`
-* *vähätellympi:* `vähätelty+A+Comp+Sg+Nom`
-* *vähätellyin:* `vähätelty+A+Superl+Sg+Nom`
-
-There's no adjective ending -ltö in our lexical database.
-
-The quantitative gradation of t after n in o stems is in class 
-`ADJ_VENTO`, which corresponds to dictionary class ¹⁻J.
-
-*Adjective gradations 1 t~n o examples:*
-* *vento:* `vento+A+Sg+Nom` (Eng. # ?)
-* *vennossa:* `vento+A+Sg+Ine`
-* *ventoihin:* `vento+A+Pl+Ill`
-* *vennoista:* `vento+A+Pl+Ela`
-* *vennompi:* `vento+A+Comp+Sg+Nom`
-* *vennoin:* `vento+A+Superl+Sg+Nom`
-
-The quantitative gradation of t after n in u stems is in class 
-`ADJ_PANTU`, which corresponds to dictionary class ¹⁻I.
-The common u stem after n is in nut participle’s passive’s back form (-tu):
-
-*Adjective gradations 1 t~n u examples:*
-* *pantu:* `pantu+A+Sg+Nom` (Eng. # brewed)
-* *pannussa:* `pantu+A+Sg+Ine`
-* *pantuihin:* `pantu+A+Pl+Ill`
-* *pannuista:* `pantu+A+Pl+Ela`
-* *pannumpi:* `pantu+A+Comp+Sg+Nom`
-* *pannuin:* `pantu+A+Superl+Sg+Nom`
-
-The quantitative gradation of t after n in y stems is in class 
-`ADJ_MENTY`, which corresponds to dictionary class ¹⁻I.
-The common u stem after n is in nut participle’s passive’s front form
-(-ty):
-
-*Adjective gradations 1 t~n y examples:*
-* *menty:* `menty+A+Sg+Nom` (Eng. # belittled)
-* *mennyssä:* `menty+A+Sg+Ine`
-* *mentyihin:* `menty+A+Pl+Ill`
-* *mennyistä:* `menty+A+Pl+Ela`
-* *mennympi:* `menty+A+Comp+Sg+Nom`
-* *mennyin:* `menty+A+Superl+Sg+Nom`
-
-There are no adjectives ending in -ntö
-
-The quantitative gradation of t after r in o stems is in class
-`ADJ_MARTO`, which corresponds to dictionary class ¹⁻J.
-
-*Adjective gradations 1 t~r o examples:*
-* *marto:* `marto+A+Sg+Nom` (Eng. # ???)
-* *marrossa:* `marto+A+Sg+Ine`
-* *martoihin:* `marto+A+Pl+Ill`
-* *marroista:* `marto+A+Pl+Ela`
-* *marrompi:* `marto+A+Comp+Sg+Nom`
-* *marroin:* `marto+A+Superl+Sg+Nom`
-
-The quantitative gradation of t after r in u stems is in class
-`ADJ_PURTU`, which corresponds to dictionary class ¹⁻J.
-The common u stem after r is in nut participle’s passive’s back form (-tu):
-
-*Adjective gradations 1 t~r u examples:*
-* *purtu:* `purtu+A+Sg+Nom` (Eng. # bitten)
-* *purrussa:* `purtu+A+Sg+Ine`
-* *purtuihin:* `purtu+A+Pl+Ill`
-* *purruista:* `purtu+A+Pl+Ela`
-* *purrumpi:* `purtu+A+Comp+Sg+Nom`
-* *purruin:* `purtu+A+Superl+Sg+Nom`
-
-The quantitative gradation of t after r in y stems is in class
-`ADJ_PIERTY`, which corresponds to dictionary class ¹⁻J.
-The common u stem after r is in nut participle’s passive’s front fomr
-(-ty):
-
-*Adjective gradations 1 t~r y examples:*
-* *pierty:* `pierty+A+Sg+Nom` (Eng. # befarted)
-* *pierryssä:* `pierty+A+Sg+Ine`
-* *piertyihin:* `pierty+A+Pl+Ill`
-* *pierryistä:* `pierty+A+Pl+Ela`
-* *pierrympi:* `pierty+A+Comp+Sg+Nom`
-* *pierryin:* `pierty+A+Superl+Sg+Nom`
-
-There are no adjectives ending in -rtö. Just as well, the
-class for UkU : UvU- is limited to few nouns we know.
-
-### The special illative alternation with k gradation, unaltering stems
-The trisyllabic words ending with gradating long k have plural illative
-in both strong and weak forms. 
-
-The class for trisyllabic -kko stems is `ADJ_HUPAKKO`, the corresponding
-dictionary class is ⁴⁻D. 
-
-*Adjectives 4 o examples:*
-* *hupakko:* `hupakko+A+Sg+Nom` (Eng. # silly girl)
-* *hupakoihin:* `hupakko+A+Pl+Ill`
-* *hupakkoihin:* `hupakko+A+Pl+Ill`
-* *hupakompi:* `hupakko+A+Comp+Sg+Nom`
-* *hupakoin:* `hupakko+A+Superl+Sg+Nom`
-
-### Adjective stems with i:e variations
-The i stems of new i final words have i : e : 0 variation. These classes
-include new loans ending in consonant, which use -i to form inflectional
-stems.
-The i stems combined with gradation of will form five separate stem
-variants:
-
-The i finals with back vowel harmony go to class `ADJ_ABNORMI`, where
-old dictionary classification was ⁵.
-
-*Adjectives 5 back examples:*
-* *abnormi:* `abnormi+A+Sg+Nom` (Eng. # abnorm)
-* *abnormeina:* `abnormi+A+Pl+Ess`
-* *abnormien:* `abnormi+A+Pl+Gen`
-* *abnormimpi:* `abnormi+A+Comp+Sg+Nom`
-* *abnormein:* `abnormi+A+Superl+Sg+Nom`
-
-The i finals with front vowel harmony go to class `ADJ_STYDI`, where
-old dictionary classification was ⁵.
-
-*Adjectives 5 front examples:*
-* *stydi:* `stydi+A+Sg+Nom` (Eng. # stiff)
-* *stydeinä:* `stydi+A+Pl+Ess`
-* *stydien:* `stydi+A+Pl+Gen`
-* *stydimpi:* `stydi+A+Comp+Sg+Nom`
-* *stydein:* `stydi+A+Superl+Sg+Nom`
-
-Stems with quantitative k gradation, i final and back harmony are in class 
-`ADJ_OPAAKKI` and dictionary class ⁵⁻A or ⁵⁻D.
-
-*Adjectives 5 k~0 back examples:*
-* *opaakki:* `opaakki+A+Sg+Nom` (Eng. # opaque)
-* *opaakissa:* `opaakki+A+Sg+Ine`
-* *opaakkeina:* `opaakki+A+Pl+Ess`
-* *opaakeista:* `opaakki+A+Pl+Ela`
-* *opaakkien:* `opaakki+A+Pl+Gen`
-* *opaakimpi:* `opaakki+A+Comp+Sg+Nom`
-* *opaakein:* `opaakki+A+Superl+Sg+Nom`
-
-Stems with quantitative k gradation, i final and front harmony are in class
-`ADJ_PINKKI` and dictionary class ⁵⁻A or ⁵⁻D.
-
-*Adjectives 5 k~0 front examples:*
-* *pinkki:* `pinkki+A+Sg+Nom` (Eng. # pink)
-* *pinkissä:* `pinkki+A+Sg+Ine`
-* *pinkkeinä:* `pinkki+A+Pl+Ess`
-* *pinkeistä:* `pinkki+A+Pl+Ela`
-* *pinkkien:* `pinkki+A+Pl+Gen`
-* *pinkimpi:* `pinkki+A+Comp+Sg+Nom`
-* *pinkein:* `pinkki+A+Superl+Sg+Nom`
-
-There's no back vowel version of the bisyllabic gradating -ppi form.
-
-Stems with quantitative p gradation, i final and front harmony are in class
-`ADJ_SIPPI` and dictionary class ⁵⁻B.
-
-*Adjectives 5 p~0 front examples:*
-* *sippi:* `sippi+A+Sg+Nom` (Eng. # bust)
-* *sipissä:* `sippi+A+Sg+Ine`
-* *sippeinä:* `sippi+A+Pl+Ess`
-* *sipeistä:* `sippi+A+Pl+Ela`
-* *sippien:* `sippi+A+Pl+Gen`
-* *sipimpi:* `sippi+A+Comp+Sg+Nom`
-* *sipein:* `sippi+A+Superl+Sg+Nom`
-
-Stems with quantitative t gradation, i final and back harmony are in class
-`ADJ_HURTTI` and dictionary class ⁵⁻C.
-
-*Adjectives 5 t~0 back examples:*
-* *hurtti:* `hurtti+A+Sg+Nom` (Eng. # grunchy)
-* *hurtissa:* `hurtti+A+Sg+Ine`
-* *hurtteina:* `hurtti+A+Pl+Ess`
-* *hurteista:* `hurtti+A+Pl+Ela`
-* *hurttien:* `hurtti+A+Pl+Gen`
-* *hurtimpi:* `hurtti+A+Comp+Sg+Nom`
-* *hurtein:* `hurtti+A+Superl+Sg+Nom`
-
-Stems with quantitative t gradation, i final and front harmony are in class
-`ADJ_VÄÄRTTI` and dictionary class ⁵⁻C.
-
-*Adjectives 5 t~0 front examples:*
-* *väärtti:* `väärtti+A+Sg+Nom` (Eng. # worthy)
-* *väärtissä:* `väärtti+A+Sg+Ine`
-* *väärtteinä:* `väärtti+A+Pl+Ess`
-* *väärteistä:* `väärtti+A+Pl+Ela`
-* *väärttien:* `väärtti+A+Pl+Gen`
-* *väärtimpi:* `väärtti+A+Comp+Sg+Nom`
-* *väärtein:* `väärtti+A+Superl+Sg+Nom`
-
-There are no bisyllabic adjectives ending in vowel and gradating -pi.
-
-Stems with t ~ d gradation, i final and back harmony are in class
-`ADJ_TUHTI` and dictionary class ⁵⁻F.
-
-*Adjectives 5 t~d back examples:*
-* *tuhti:* `tuhti+A+Sg+Nom` (Eng. # stocky)
-* *tuhdissa:* `tuhti+A+Sg+Ine`
-* *tuhteina:* `tuhti+A+Pl+Ess`
-* *tuhdeista:* `tuhti+A+Pl+Ela`
-* *tuhtien:* `tuhti+A+Pl+Gen`
-* *tuhdimpi:* `tuhti+A+Comp+Sg+Nom`
-* *tuhdein:* `tuhti+A+Superl+Sg+Nom`
-
-Stems with t ~ d gradation, i final and front harmony are in class
-`ADJ_REHTI` and dictionary class ⁵⁻F.
-
-*Adjectives 5 t~d front examples:*
-* *rehti:* `rehti+A+Sg+Nom`
-* *rehdissä:* `rehti+A+Sg+Ine`
-* *rehteinä:* `rehti+A+Pl+Ess`
-* *rehdeistä:* `rehti+A+Pl+Ela`
-* *rehtien:* `rehti+A+Pl+Gen`
-* *rehdimpi:* `rehti+A+Comp+Sg+Nom`
-* *rehdein:* `rehti+A+Superl+Sg+Nom`
-
-There are no adjectives with i stems with other gradations.
-
-### Trisyllabic and longer i stems
-
-The i stems with trisyllabic allomorph sets have class `ADJ_ABNORMAALI`, and
-dictionary class of ⁶.
-
-*Adjectives 6 back examples:*
-* *abnormaali:* `abnormaali+A+Sg+Nom` (Eng. # abnormal)
-* *abnormaaleja:* `abnormaali+A+Pl+Par`
-* *abnormaaleiden:* `abnormaali+A+Pl+Gen`
-* *abnormaalimpi:* `abnormaali+A+Comp+Sg+Nom`
-* *abnormaalein:* `abnormaali+A+Superl+Sg+Nom`
-
-The i stems with trisyllabic allomorph sets have class `ADJ_ÖYKKÄRI`, and
-dictionary class of ⁶.
-
-*Adjectives 6 front examples:*
-* *öykkäri:* `öykkäri+A+Sg+Nom` (Eng. # chav)
-* *öykkärejä:* `öykkäri+A+Pl+Par`
-* *öykkäreiden:* `öykkäri+A+Pl+Gen`
-* *öykkärimpi:* `öykkäri+A+Comp+Sg+Nom`
-* *öykkärein:* `öykkkäri+A+Superl+Sg+Nom`
-
-There are no adjectives acting like nouns where i-final nominatives have
-singular e stems.
-
-### Bisyllabic A-stem adjectives
-The a stems differ from regular nouns in one more feature: some of them,
-but not all, have a:e variation before the comparative stem. The selection
-of this feature may be phonological, but it is complex, and often there
-is variation between speakers. The plural partitives and genitives are a
-good indicator of classificaion of a, ä final stems, as are the vowels
-of comparative and plural stems.
-
-Bisyllabic a stems with e comparative and j plurals are in class 
-`ADJ_AAVA`, and dictionary class ⁹.
-
-*Adjectives 9 examples:*
-* *aava:* `aava+A+Sg+Nom` (Eng. # open (of fields, plains))
-* *aavaa:* `aava+A+Sg+Par`
-* *aavana:* `aava+A+Sg+Ess`
-* *aavassa:* `aava+A+Sg+Ine`
-* *aavoina:* `aava+A+Pl+Ess`
-* *aavojen:* `aava+A+Pl+Gen`
-* *aavoihin:* `aava+A+Pl+Ill`
-* *aavempi:* `aava+A+Comp+Sg+Nom`
-* *aavoin:* `aava+A+Superl+Sg+Nom`
-
-The ka stem with e comparative and j plurals is `ADJ_TARKKA`, and the 
-dictionary class is ⁹-A or ⁹⁻D.
-
-*Adjectives 9 k~0 examples:*
-* *tarkka:* `tarkka+A+Sg+Nom` (Eng. # pedantic)
-* *tarkkaa:* `tarkka+A+Sg+Par`
-* *tarkkana:* `tarkka+A+Sg+Ess`
-* *tarkassa:* `tarkka+A+Sg+Ine`
-* *tarkkoina:* `tarkka+A+Pl+Ess`
-* *tarkkojen:* `tarkka+A+Pl+Gen`
-* *tarkkoihin:* `tarkka+A+Pl+Ill`
-* *tarkempi:* `tarkka+A+Comp+Sg+Nom`
-* *tarkoin:* `tarkka+Superl+Sg+Nom`
-
-No a final adjectives with quantitative p gradation.
-
-The ta stem with j plurals is `ADJ_MATTA`, and the dictionary class
-is ⁹-C.
-
-*Adjectives 9 t~0 examples:*
-* *matta:* `matta+A+Sg+Nom` (Eng. # matta)
-* *mattaa:* `matta+A+Sg+Par`
-* *mattana:* `matta+A+Sg+Ess`
-* *matassa:* `matta+A+Sg+Ine`
-* *mattoina:* `matta+A+Pl+Ess`
-* *mattojen:* `matta+A+Pl+Gen`
-* *mattoihin:* `matta+A+Pl+Ill`
-* *matempi:* `matta+A+Comp+Sg+Nom`
-* *matoin:* `matta+A+Superl+Sg+Nom`
-
-The pa : va stem with e comparative and j plurals is `ADJ_HALPA`, and
-the dictionary class is ⁹⁻E.
-
-*Adjectives 9 p~v examples:*
-* *halpa:* `halpa+A+Sg+Nom` (Eng. # cheap)
-* *halpaa:* `halpa+A+Sg+Par`
-* *halpana:* `halpa+A+Sg+Ess`
-* *halvassa:* `halpa+A+Sg+Ine`
-* *halpoina:* `halpa+A+Pl+Ess`
-* *halpojen:* `halpa+A+Pl+Gen`
-* *halpoihin:* `halpa+A+Pl+Ill`
-* *halvempi:* `halpa+A+Comp+Sg+Nom`
-* *halvoin:* `halpa+A+Superl+Sg+Nom`
-
-The ta : da stem with a comparative and j plurals is `ADJ_EHTA`, and
-the dictionary class is ⁹⁻F.
-
-*Adjectives 9 t~d examples:*
-* *ehta:* `ehta+A+Sg+Nom` (Eng. # legit)
-* *ehtaa:* `ehta+A+Sg+Par`
-* *ehtana:* `ehta+A+Sg+Ess`
-* *ehdassa:* `ehta+A+Sg+Ine`
-* *ehtoina:* `ehta+A+Pl+Ess`
-* *ehtojen:* `ehta+A+Pl+Gen`
-* *ehtoihin:* `ehta+A+Pl+Ill`
-* *ehdampi:* `ehta+A+Comp+Sg+Nom`
-* *ehdoin:* `ehta+A+Superl+Sg+Nom`
-
-None with k:g gradation.
-
-The pa : ma stem with e comparative and j plurals is `ADJ_RAMPA`, and
-the dictionary class is ⁹⁻H.
-
-*Adjectives 9 p~m examples:*
-* *rampa:* `rampa+A+Sg+Nom` (Eng. # crippled)
-* *rampaa:* `rampa+A+Sg+Par`
-* *rampana:* `rampa+A+Sg+Ess`
-* *rammassa:* `rampa+A+Sg+Ine`
-* *rampoina:* `rampa+A+Pl+Ess`
-* *rampojen:* `rampa+A+Pl+Gen`
-* *rampoihin:* `rampa+A+Pl+Ill`
-* *rammempi:* `rampa+A+Comp+Sg+Nom`
-* *rammoin:* `rampa+A+Superl+Sg+Nom`
-
-No a stems with t:l gradations
-
-The ta : na stem with a comparative and j plurals is `ADJ_VIHANTA`, and
-the dictionary class is ⁹⁻J.
-
-*Adjectives 9 p~n examples:*
-* *vihanta:* `vihanta+A+Sg+Nom` (Eng. # blooming)
-* *vihantaa:* `vihanta+A+Sg+Par`
-* *vihantana:* `vihanta+A+Sg+Ess`
-* *vihannassa:* `vihanta+A+Sg+Ine`
-* *vihantoina:* `vihanta+A+Pl+Ess`
-* *vihantojen:* `vihanta+A+Pl+Gen`
-* *vihantoihin:* `vihanta+A+Pl+Ill`
-* *vihannampi:* `vihanta+A+Comp+Sg+Nom`
-* *vihannoin:* `vihanta+A+Superl+Sg+Nom`
-
-And finally, no a stems with t:r or t:l gradations.
-
-### Some other trisyllabic a finals with a : 0 plurals
-Mostly regular a comparatives, no a : o variation and more syllables. 
-Common for va participles, and other derivations
-
-The a : 0 stem is in class `ADJ_AALTOILEVA` and the old dictionary used ¹⁰
-as the paradigm class.
-
-*Adjectives 10 back examples:*
-* *aaltoileva:* `aaltoileva+A+Sg+Nom` (Eng. # wavy)
-* *aaltoilevaa:* `aaltoileva+A+Sg+Par`
-* *aaltoilevana:* `aaltoileva+A+Sg+Ess`
-* *aaltoilevassa:* `aaltoileva+A+Sg+Ine`
-* *aaltoilevina:* `aaltoileva+A+Pl+Ess`
-* *aaltoilevien:* `aaltoileva+A+Pl+Gen`
-* *aaltoileviin:* `aaltoileva+A+Pl+Ill`
-* *aaltoilevampi:* `aaltoileva+A+Comp+Sg+Nom`
-* *aaltoilevin:* `aaltoileva+A+Superl+Sg+Nom`
-
-The ä : 0 stem is in class `ADJ_TYÖLLISTETTÄVÄ` and the old dictionary used ¹⁰
-as the paradigm class.
-
-*Adjectives 10 front examples:*
-* *työllistettävä:* `työllistettävä+A+Sg+Nom` (Eng. # employable)
-* *työllistettävää:* `työllistettävä+A+Sg+Par`
-* *työllistettävänä:* `työllistettävä+A+Sg+Ess`
-* *työllistettävässä:* `työllistettävä+A+Sg+Ine`
-* *työllistettävinä:* `työllistettävä+A+Pl+Ess`
-* *työllistettävien:* `työllistettävä+A+Pl+Gen`
-* *työllistettäviin:* `työllistettävä+A+Pl+Ill`
-* *työllistettävämpi:* `työllistettävä+A+Comp+Sg+Nom`
-* *työllistettävin:* `työllistettävä+A+Superl+Sg+Nom`
-
-For a:e comparatives in a:0 class use `ADJ_RUMA`. No dictionary
-classification or ~¹⁰, 
-
-*Adjectives 10 a:e comparative examples:*
-* *ruma:* `ruma+A+Sg+Nom` (Eng. # ugly)
-* *rumaa:* `ruma+A+Sg+Par`
-* *rumana:* `ruma+A+Sg+Ess`
-* *rumassa:* `ruma+A+Sg+Ine`
-* *rumina:* `ruma+A+Pl+Ess`
-* *rumien:* `ruma+A+Pl+Gen`
-* *rumiin:* `ruma+A+Pl+Ill`
-* *rumempi:* `ruma+A+Comp+Sg+Nom`
-* *rumin:* `ruma+A+Superl+Sg+Nom`
-
-For ä:e comparatives in a:0 class use `ADJ_TYHMÄ`. No dictionary
-classification or ~¹⁰, 
-
-*Adjectives 10 ä:e comparative examples:*
-* *tyhmä:* `tyhmä+A+Sg+Nom` (Eng. # stupid)
-* *tyhmää:* `tyhmä+A+Sg+Par`
-* *tyhmänä:* `tyhmä+A+Sg+Ess`
-* *tyhmässä:* `tyhmä+A+Sg+Ine`
-* *tyhminä:* `tyhmä+A+Pl+Ess`
-* *tyhmien:* `tyhmä+A+Pl+Gen`
-* *tyhmiin:* `tyhmä+A+Pl+Ill`
-* *tyhmempi:* `tyhmä+A+Comp+Sg+Nom`
-* *tyhmin:* `tyhmä+A+Superl+Sg+Nom`
-
-THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
-0:  >> 0:0 SO TOMMI FINDS THEM
-
-THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
-0:  >> 0:0 SO TOMMI FINDS THEM
-
-*Adjectives 10 k~0 a:e comparative examples:*
-* *hoikka:* `hoikka+A+Sg+Nom` (Eng. # slim)
-* *hoikkaa:* `hoikka+A+Sg+Par`
-* *hoikkana:* `hoikka+A+Sg+Ess`
-* *hoikassa:* `hoikka+A+Sg+Ine`
-* *hoikkina:* `hoikka+A+Pl+Ess`
-* *hoikissa:* `hoikka+A+Pl+Ine`
-* *hoikkien:* `hoikka+A+Pl+Gen`
-
-*Adjectives 10 k~0 ä:e comparative examples:*
-* *mykkä:* `mykkä+A+Sg+Nom` (Eng. # mute)
-* *mykkää:* `mykkä+A+Sg+Par`
-* *mykkänä:* `mykkä+A+Sg+Ess`
-* *mykässä:* `mykkä+A+Sg+Ine`
-* *mykkinä:* `mykkä+A+Pl+Ess`
-* *mykissä:* `mykkä+A+Pl+Ine`
-* *mykkien:* `mykkä+A+Pl+Gen`
-
-*Adjectives 10 p~0 a:e comparative examples:*
-* *poppa:* `poppa+A+Sg+Nom` (Eng. # hocus-pocus)
-* *poppaa:* `poppa+A+Sg+Par`
-* *poppana:* `poppa+A+Sg+Ess`
-* *popassa:* `poppa+A+Sg+Ine`
-* *poppina:* `poppa+A+Pl+Ess`
-* *popissa:* `poppa+A+Pl+Ine`
-* *poppien:* `poppa+A+Pl+Gen`
-
-*Adjectives 10 p~0 ä:e comparative examples:*
-* *hömppä:* `hömppä+A+Sg+Nom` (Eng. # bogus)
-* *hömppää:* `hömppä+A+Sg+Par`
-* *hömppänä:* `hömppä+A+Sg+Ess`
-* *hömpässä:* `hömppä+A+Sg+Ine`
-* *hömppinä:* `hömppä+A+Pl+Ess`
-* *hömpissä:* `hömppä+A+Pl+Ine`
-* *hömppien:* `hömppä+A+Pl+Gen`
-
-The quantitative k and t gradations are not found for adjectives with this
-a stem.
-
-*Adjectives 10 p~v a:e comparative examples:*
-* *voipa:* `voipa+A+Sg+Nom` (Eng. # capable)
-* *voipaa:* `voipa+A+Sg+Par`
-* *voipana:* `voipa+A+Sg+Ess`
-* *voivassa:* `voipa+A+Sg+Ine`
-* *voipina:* `voipa+A+Pl+Ess`
-* *voivissa:* `voipa+A+Pl+Ine`
-* *voipien:* `voipa+A+Pl+Gen`
-
-*Adjectives 10 p~v ä:e comparative examples:*
-* *käypä:* `käypä+A+Sg+Nom` (Eng. # "good enough")
-* *käypää:* `käypä+A+Sg+Par`
-* *käypänä:* `käypä+A+Sg+Ess`
-* *käyvässä:* `käypä+A+Sg+Ine`
-* *käypinä:* `käypä+A+Pl+Ess`
-* *käyvissä:* `käypä+A+Pl+Ine`
-* *käypien:* `käypä+A+Pl+Gen`
-
-The t:d is missing from this a stem.
-
-*Adjectives 10 t~d ä:e comparative examples:*
-* *mätä:* `mätä+A+Sg+Nom` (Eng. # rotten)
-* *mätää:* `mätä+A+Sg+Par`
-* *mätänä:* `mätä+A+Sg+Ess`
-* *mädässä:* `mätä+A+Sg+Ine`
-* *mätinä:* `mätä+A+Pl+Ess`
-* *mädissä:* `mätä+A+Pl+Ine`
-* *mätien:* `mätä+A+Pl+Gen`
-
-*Adjectives 10 k~g a:e comparative examples:*
-* *sanka:* `sanka+A+Sg+Nom` (Eng. # ???)
-* *sankaa:* `sanka+A+Sg+Par`
-* *sankana:* `sanka+A+Sg+Ess`
-* *sangassa:* `sanka+A+Sg+Ine`
-* *sankina:* `sanka+A+Pl+Ess`
-* *sangissa:* `sanka+A+Pl+Ine`
-* *sankien:* `sanka+A+Pl+Gen`
-
-*Adjectives 10 k~g ä:e comparative examples:*
-* *vänkä:* `vänkä+A+Sg+Nom` (Eng. # goofy)
-* *vänkää:* `vänkä+A+Sg+Par`
-* *vänkänä:* `vänkä+A+Sg+Ess`
-* *vängässä:* `vänkä+A+Sg+Ine`
-* *vängissä:* `vänkä+A+Pl+Ine`
-* *vänkiin:* `vänkä+A+Pl+Ill`
-
-p:m is missing from this a, ä stems.
-
-*Adjectives 10 t~l a:e comparative examples:*
-* *kulta:* `kulta+A+Sg+Nom` (Eng. # dear)
-* *kultaa:* `kulta+A+Sg+Par`
-* *kultana:* `kulta+A+Sg+Ess`
-* *kullassa:* `kulta+A+Sg+Ine`
-* *kultina:* `kulta+A+Pl+Ess`
-* *kullissa:* `kulta+A+Pl+Ine`
-* *kultien:* `kulta+A+Pl+Gen`
-
-T:l and t:n are missing from this a stem and t:l from ä stem.
-
-*Adjectives 10 t~l ä:e comparative examples:*
-* *lyhyenläntä:* `lyhyenläntä+A+Sg+Nom` (Eng. # shorty)
-* *lyhyenläntää:* `lyhyenläntä+A+Sg+Par`
-* *lyhyenläntänä:* `lyhyenläntä+A+Sg+Ess`
-* *lyhyenlännässä:* `lyhyenläntä+A+Sg+Ine`
-* *lyhyenläntinä:* `lyhyenläntä+A+Pl+Ess`
-* *lyhyenlännissä:* `lyhyenläntä+A+Pl+Ine`
-* *lyhyenläntien:* `lyhyenläntä+A+Pl+Gen`
-
-*Adjectives 10 t~r a:e comparative examples:*
-* *turta:* `turta+A+Sg+Nom` (Eng. # numb)
-* *turtaa:* `turta+A+Sg+Par`
-* *turtana:* `turta+A+Sg+Ess`
-* *turrassa:* `turta+A+Sg+Ine`
-* *turtina:* `turta+A+Pl+Ess`
-* *turrissa:* `turta+A+Pl+Ine`
-* *turtien:* `turta+A+Pl+Gen`
-
-K:j is missing.
-
-Certain trisyllabic or longer a stems allow a lot of allomorphs and both
-a : o : 0 variations:
-
-*Adjectives 11 back examples:*
-* *hapera:* `hapera+A+Sg+Nom` (Eng. # brittle)
-* *haperia:* `hapera+A+Pl+Par`
-* *haperoita:* `hapera+A+Pl+Par`
-* *haperien:* `hapera+A+Pl+Gen`
-* *haperoiden:* `hapera+A+Pl+Gen`
-* *haperoitten:* `hapera+A+Pl+Gen`
-* *haperiin:* `hapera+A+Pl+Ill`
-* *haperoihin:* `hapera+A+Pl+Ill`
-Also less commonly
-* *haperojen:* `hapera+A+Use/Rare+Pl+Gen`
-* *haperoja:* `hapera+A+Use/Rare+Pl+Par`
-* *haperain:* `hapera+A+Pl+Gen+Use/Rare`
-
-*Adjectives 11 front examples:*
-* *höppänä:* `höppänä+A+Sg+Nom` (Eng. # senile)
-* *höppänää:* `höppänä+A+Sg+Par`
-* *höppänänä:* `höppänä+A+Sg+Ess`
-* *höppänässä:* `höppänä+A+Sg+Ine`
-* *höppäninä:* `höppänä+A+Pl+Ess`
-* *höppänien:* `höppänä+A+Pl+Gen`
-* *höppäniin:* `höppänä+A+Pl+Ill`
-
-*Adjectives 12 examples:*
-* *harmaja:* `harmaja+A+Sg+Nom` (Eng. # ?)
-* *harmajaa:* `harmaja+A+Sg+Par`
-* *harmajana:* `harmaja+A+Sg+Ess`
-* *harmajoina:* `harmaja+A+Pl+Ess`
-* *harmajoita:* `harmaja+A+Pl+Par`
-
-Certain trisyllabic or longer a stems allow a lot of allomorphs and both
-a : o : 0 variations:
-
-*Adjectives 12++ examples:*
-* *latuska:* `latuska+A+Sg+Nom` (Eng. # flat)
-* *latuskoita:* `latuska+A+Pl+Par`
-* *latuskoja:* `latuska+A+Pl+Par`
-* *latuskoiden:* `latuska+A+Pl+Gen`
-* *latuskoitten:* `latuska+A+Pl+Gen`
-* *latuskojen:* `latuska+A+Pl+Gen`
-* *latuskoihin:* `latuska+A+Pl+Ill`
-
-### Special illative gradation in a stems
-
-The a : o stem variation combines with trisyllabic class of special illatives
-
-*Adjectives 14 back examples:*
-* *hailakka:* `hailakka+A+Sg+Nom` (Eng. # pale)
-* *hailakkoina:* `hailakka+A+Pl+Ess`
-* *hailakoissa:* `hailakka+A+Pl+Ine`
-* *hailakkoihin:* `hailakka+A+Pl+Ill`
-* *hailakoihin:* `hailakka+A+Pl+Ill`
-
-*Adjectives 14 front examples:*
-* *räväkkä:* `räväkkä+A+Sg+Nom` (Eng. # flamboyant)
-* *räväköihin:* `räväkkä+A+Pl+Ill`
-* *räväkköihin:* `räväkkä+A+Pl+Ill`
-
-*Adjectives 15 t~0 back examples:*
-* *pohatta:* `pohatta+A+Sg+Nom` (Eng. # fat-cat)
-* *pohattoina:* `pohatta+A+Pl+Ess`
-* *pohatoissa:* `pohatta+A+Pl+Ine`
-* *pohattoihin:* `pohatta+A+Pl+Ill`
-* *pohatoihin:* `pohatta+A+Pl+Ill`
-
-A-final words with long vowels and syllable boundary
-
-*Adjectives 15 oa examples:*
-* *ainoa:* `ainoa+A+Sg+Nom` (Eng. # singleton)
-* *ainoana:* `ainoa+A+Sg+Ess`
-* *ainoina:* `ainoa+A+Pl+Ess`
-* *ainoissa:* `ainoa+A+Pl+Ine`
-* *ainoihin:* `ainoa+A+Pl+Ill`
-* *ainoisiin:* `ainoa+A+Pl+Ill`
-
-*Adjectives 15 ea examples:*
-* *korkea:* `korkea+A+Sg+Nom` (Eng. # high)
-* *korkeana:* `korkea+A+Sg+Ess`
-* *korkeina:* `korkea+A+Pl+Ess`
-* *korkeissa:* `korkea+A+Pl+Ine`
-* *korkeihin:* `korkea+A+Pl+Ill`
-* *korkeisiin:* `korkea+A+Pl+Ill`
-
-*Adjectives 15 eä examples:*
-* *järeä:* `järeä+A+Sg+Nom` (Eng. # rough)
-* *järeänä:* `järeä+A+Sg+Ess`
-* *järeinä:* `järeä+A+Pl+Ess`
-* *järeissä:* `järeä+A+Pl+Ine`
-* *järeihin:* `järeä+A+Pl+Ill`
-* *järeisiin:* `järeä+A+Pl+Ill`
-
-### Lexicalised comparatives
-Most of the lexicalised comparatives are adjectives that go to this class.
-The comparatives that are not lexicalised inflect exactly the same, though
-some versions of morphology may cut off long comparative chains.
-
-*Adjectives 16 back examples:*
-* *aiempi:* `aiempi+A+Sg+Nom` (Eng. # earlier)
-* *aiempana:* `aiempi+A+Sg+Ess`
-* *aiemmassa:* `aiempi+A+Sg+Ine`
-* *aiempina:* `aiempi+A+Pl+Ess`
-* *aiemmista:* `aiempi+A+Pl+Ela`
-
-*Adjectives 16 front examples:*
-* *lähempi:* `lähempi+A+Sg+Nom` (Eng. # closer)
-* *lähempänä:* `lähempi+A+Sg+Ess`
-* *lähemmässä:* `lähempi+A+Sg+Ine`
-* *lähempinä:* `lähempi+A+Pl+Ess`
-* *lähemmistä:* `lähempi+A+Pl+Ela`
-
-### Long vowel stems
-
-*Adjectives 17 a examples:*
-* *vapaa:* `vapaa+A+Sg+Nom` (Eng. # free)
-
-There are no other bisyllabic long vowel stems in adjectives
-
-*Adjectives 18 aa examples:*
-* *peeaa:* `peeaa+A+Sg+Nom` (Eng. # bust)
-
-*Adjectives 18 uu examples:*
-* *muu:* `muu+A+Sg+Nom` (Eng. # other)
-
-*Adjectives 18 ää examples:*
-* *syypää:* `syypää+A+Sg+Nom` (Eng. # guilty)
-
-There are no other monosyllabic long vowel stems for adjectives. For full
-listing of possibilities, see nouns.
-
-Some loan words inflect irregularly, either more along the written form or
-the pronunciation. 
-
-*Adjectives 21 gay examples:*
-* *gay:* `gay+A+Sg+Nom` (Eng. # gay)
-
-There are not many direct adjective loans in general.
-
-### Old e stems with i nominative
-Some of the old e stems have i nominative but e as stem vowel for singular
-forms. Most of these are not adjectives though, see full listing from the
-noun pages.
-
-*Adjectives 24~26 back examples:*
-* *suuri:* `suuri+A+Sg+Nom` (Eng. # big)
-THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
-0:  >> 0:0 SO TOMMI FINDS THEM
-
-*Adjectives 24~26 front examples:*
-* *pieni:* `pieni+A+Sg+Nom` (Eng. # small)
-
-*Adjectives 27 back examples:*
-* *uusi:* `uusi+A+Sg+Nom` (Eng. # new)
-
-*Adjectives 27 front examples:*
-* *täysi:* `täysi+A+Sg+Nom` (Eng. # full)
-
-There are no adjective examples of other gradation variants or consonant
-cluster simplifications in this class.
-
-### Consonant-final stems
-The consonant stems use inverted gradation if applicable, that is, the 
-nominatives have end in consonants and their gradating consonants are in
-weak form. Most of these are rarer for adjectives than nouns.
-
-*Adjectives 32 examples:*
-* *tyven:* `tyven+A+Sg+Nom` (Eng. # calm (of bodies of water))
-
-There are no back vowel variants or gradating words in the basic e
-conjoining pattern.
-
-*Adjectives 33 examples:*
-* *avoin:* `avoin+A+Sg+Nom` (Eng. # open)
-
-There are no other examples of n:m final variation before conjoining e.
-
-### Caritives
-The common case of n:m variation with conjoining a before singular stems is
-from caritive suffix -tOn, that forms adjectives productively. 
-
-*Adjectives 34 back examples:*
-* *alaston:* `alaston+A+Sg+Nom` (Eng. # naked)
-
-*Adjectives 34 0~t back examples:*
-* *viaton:* `viaton+A+Sg+Nom` (Eng. # innocent)
-
-*Adjectives 34 0~t front examples:*
-* *kyvytön:* `kyvytön+A+Sg+Nom` (Eng. # unskilled)
-
-This one word, hapan, also takes the same variation as normative variant.
-The expected e variant is not normative, but used.
-
-*Adjectives 34 0~p back examples:*
-* *hapan:* `hapan+A+Sg+Nom` (Eng. # sour)
-
-*Adjectives 34 m~p front examples:*
-* *lämmin:* `lämmin+A+Sg+Nom` (Eng. # warm)
-
-### Lexicalised superlatives
-
-*Adjectives 35 back examples:*
-* *uloin:* `uloin+A+Sg+Nom` (Eng. # outermost)
-
-*Adjectives 35 front examples:*
-* *sisin:* `sisin+A+Sg+Nom` (Eng. # innermost)
-
-Vasen inflects almost like superlative
-
-*Adjectives 36 examples:*
-* *vasen:* `vasen+A+Sg+Nom` (Eng. # left)
-
-### nen suffixes
-Adjectives are commonly formed with nen derivatonns.
-
-*Adjectives 38 back examples:*
-* *aakkosellinen:* `aakkosellinen+A+Sg+Nom` (Eng. # alphabetic)
-
-*Adjectives 38 front examples:*
-* *kylmäjärkinen:* `kylmäjärkinen+A+Sg+Nom` (Eng. # levelminded)
-
-### s-final adjectives
-
-Most of the cases here are nouns from noun derivations.
-
-*Adjectives 39 examples:*
-* *symppis:* `symppis+A+Sg+Nom` (Eng. # sympathetic)
-
-*Adjectives 40 examples:*
-* *lähteisyys:* `lähteisyys+A+Sg+Nom` (Eng. # sourceful)
-
-*Adjectives 41 as examples:*
-* *autuas:* `autuas+A+Sg+Nom` (Eng. # ignorant)
-
-*Adjectives 41 is examples:*
-* *valmis:* `valmis+A+Sg+Nom` (Eng. # ready)
-
-*Adjectives 41 äs examples:*
-* *työläs:* `työläs+A+Sg+Nom` (Eng. # studious)
-
-*Adjectives 41 kas examples:*
-* *voimakas:* `voimakas+A+Sg+Nom` (Eng. # powerfui)
-
-*Adjectives 41 käs examples:*
-* *tyylikäs:* `tyylikäs+A+Sg+Nom` (Eng. # stylish)
-
-*Adjectives 41 pas examples:*
-* *reipas:* `reipas+A+Sg+Nom`
-
-No adjectives end in -päs
-
-*Adjectives 41 tas examples:*
-* *rietas:* `rietas+A+Sg+Nom` (Eng. # lewd)
-
-*Adjectives 41 tis examples:*
-* *raitis:* `raitis+A+Sg+Nom` (Eng. # sober)
-
-Gaps.
-
-*Adjectives 41 das examples:*
-* *hidas:* `hidas+A+Sg+Nom` (Eng. # slow)
-
-Gaps
-
-*Adjectives 41 ras examples:*
-* *harras:* `harras+A+Sg+Nom` (Eng. # humble)
-
-### t-finals
-
-*Adjectives 43 back examples:*
-* *ohut:* `ohut+A+Sg+Nom` (Eng. # thin)
-
-*Adjectives 43 front examples:*
-* *ehyt:* `ehyt+A+Sg+Nom` (Eng. # unbroken)
-
-### Lexicalised nut-participles
-Majority of lexicalised nut participles are adjectives.
-
-*Adjectives 47 back examples:*
-* *kulunut:* `kulunut+A+Sg+Nom` (Eng. # used)
-
-*Adjectives 47 front examples:*
-* *ällistynyt:* `ällistynyt+A+Sg+Nom` (Eng. # amazed)
-
-### Old -e^ final stems
-
-*Adjectives 48 back examples:*
-* *ahne:* `ahne+A+Sg+Nom` (Eng. # greedy)
-
-*Adjectives 48 front examples:*
-* *terve:* `terve+A+Sg+Nom` (Eng. # healthy)
-
-*Adjectives 48 d~t back examples:*
-* *kade:* `kade+A+Sg+Nom` (Eng. # jealous)
-
-*Adjectives 48 l~t back examples:*
-* *helle:* `helle+A+Sg+Nom` (Eng. # warm weather)
-
-Gapping almost all variants of gradations with e, as well as all dual
-nominative stems.
-
-### Exceptional adjectives
-The ones that do not fit in the official classes shown in dictionaries.
-
-*Adjective pitkä examples:*
-* *pitkä:* `pitkä+A+Sg+Nom`
-* *pidempi:* `pitkä+A+Comp+Sg+Nom`
-* *pisin:* `pitkä+A+Superl+Sg+Nom`
-
-THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
-0:  >> 0:0 SO TOMMI FINDS THEM
-
-THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
-0:  >> 0:0 SO TOMMI FINDS THEM
-
-### Plurales tantum?
-Adjectives aren't typically plural words, but there are some in the
-dictionaries.
-
-*Adjective plurales examples:*
-* *leuattomat:* `leuattomat+A+Pl+Nom` (Eng. # ?)
-
-## Adjective inflection proper
-
-The superlative derivation is formed by in suffix, which creates a new
-adjective baseform. This baseform is handled separately to avoid double
-superlatives.
-
-*Adjective superlative front examples:*
-* *rumin:* `ruma+A+Superl+Sg+Nom` (Eng. # ugliest)
-
-*Adjective superlative back examples:*
-* *tyhmin:* `tyhmä+A+Superl+Sg+Nom` (Eng. # stupidest)
-
-The comparative derivation is formed by mpi suffix, which creates a new
-adjective baseform. This adjective is handled separately
-to avoid double comparative forms.
-
-*Adjective comparative front examples:*
-* *rumempi:* `ruma+A+Comp+Sg+Nom`
-
-*Adjective comparative back examples:*
-* *tyhmempi:* `tyhmä+A+Comp+Sg+Nom`
-
-This inflectional part attached to adjective comparative stems to avoid
-circularity in comparative derivations:
-
-*Adjective comparative inflection back examples:*
-* *nopeampi:* `nopea+A+Comp+Sg+Nom` (Eng. # faster)
-* ★*nopeammampi:* `nopea+A+Comp+Comp+Sg+Nom` (is not standard language)
-* ★*nopeammammampi:* `nopea+A+Comp+Comp+Comp+Sg+Nom` (is not standard language)
-
-*Adjective comparative inflection front examples:*
-* *tyhmempänä:* `tyhmä+A+Comp+Sg+Ess`
-* ★*tyhmemmämpi:* `tyhmä+A+Comp+Comp+Sg+Nom` (is not standard language)
-
-This inflectional part is attached to adjective superlative stems to avoid
-circularity in superlative  derivations:
-
-*Adjective superlative inflection back examples:*
-* *nopein:* `nopea+A+Superl+Sg+Nom`
-* ★*nopeimmimpia:* `nopea+A+Superl+Superl+Sg+Par` (is not standard language)
-* ★*nopeimmimmin:* `nopea+A+Superl+Superl+Superl+Sg+Nom` (is not standard language)
-
-*Adjective superlative inflection front examples:*
-* *tyhmin:* `tyhmä+A+Superl+Sg+Nom`
-* ★*tyhmimmimpiä:* `tyhmä+A+Superl+Superl+Sg+Par` (is not standard language)
-
-## Regular adjective inflection
-The adjective inflection apart from the comparative and superlative
-derivations is same as with nouns. I will only show examples here.
-
-*Adjective nominative back examples:*
-* *rumapa:* `ruma+A+Sg+Nom+Foc/pa`
-
-*Adjective nominative front examples:*
-* *tyhmäpä:* `tyhmä+A+Sg+Nom+Foc/pa`
-
-*Adjective pl tant back examples:*
-* *rumat:* `ruma+A+Pl+Nom`
-
-*Adjective pl tant front examples:*
-* *tyhmät:* `tyhmä+A+Pl+Nom`
-
-*Adjective regular singular back examples:*
-* *ruman:* `ruma+A+Sg+Gen`
-* *rumatta:* `ruma+A+Sg+Abe`
-
-*Adjective regular singular front examples:*
-* *tyhmän:* `tyhmä+A+Sg+Gen`
-* *tyhmättä:* `tyhmä+A+Sg+Abe`
-
-*Adjective regular singular back strongs examples:*
-* *rumana:* `ruma+A+Sg+Ess`
-* *rumani:* `ruma+A+Sg+Nom+PxSg1`
-
-*Adjective regular singular front strongs examples:*
-* *tyhmänä:* `tyhmä+A+Sg+Ess`
-* *tyhmäni:* `tyhmä+A+Sg+Nom+PxSg1`
-
-*Adjective regular plural back examples:*
-* *heikoitta:* `heikko+A+Pl+Abe`
-* *heikoilta:* `heikko+A+Pl+Abl`
-
-*Adjective regular plural front examples:*
-* *jäykittä:* `jäykkä+A+Pl+Abe`
-* *jäykiltä:* `jäykkä+A+Pl+Abl`
-
-*Adjective regular plural back strong examples:*
-* *jäykkinä:* `jäykkä+A+Pl+Ess`
-* *jäykkine:* `jäykkä+A+Cmt`
-
-*Adjective regular plural front strong examples:*
-* *heikkoina:* `heikko+A+Pl+Ess`
-* *heikkoine:* `heikko+A+Cmt`
-
-*Adjective singular partitive a examples:*
-* *tarkkaa:* `tarkka+A+Sg+Par`
-* *tarkkaansa:* `tarkka+A+Sg+Par+PxSg3`
-
-*Adjective singular partitive ä examples:*
-* *tyhmää:* `tyhmä+A+Sg+Par`
-* *tyhmäänsä:* `tyhmä+A+Sg+Par+PxSg3`
-
-*Adjective singular partitive a poss aan examples:*
-* *jaloa:* `jalo+A+Sg+Par`
-* *jaloaan:* `jalo+A+Sg+Par+PxSg3`
-
-*Adjective singular partitive ä poss ään examples:*
-* *hölöä:* `hölö+A+Sg+Par`
-* *hölöään:* `hölö+A+Sg+Par+PxSg3`
-
-*Adjective singular partitive ta examples:*
-* *vapaata:* `vapaa+A+Sg+Par`
-
-*Adjective singular partitive tä examples:*
-* *pientä:* `pieni+A+Sg+Par`
-
-*Adjective singular illative han examples:*
-* *peeaahan:* `peeaa+A+Sg+Ill`
-
-*Adjective singular illative hin examples:*
-* *gayhin:* `gay+A+Sg+Ill`
-
-*Adjective singular illative hun examples:*
-* *muuhun:* `muu+A+Sg+Ill`
-
-*Adjective singular illative hyn examples:*
-* *gayhynpä:* `gay+A+Sg+Ill+Foc/pa`
-
-*Adjective singular illative hän examples:*
-* *syypäähän:* `syypää+A+Sg+Ill`
-
-*Adjective singular illative seen back examples:*
-* *vapaaseen:* `vapaa+A+Sg+Ill`
-
-*Adjective singular illative seen front examples:*
-* *työlääseen:* `työläs+A+Sg+Ill`
-
-*Adjective singular illative an examples:*
-* *rumaan:* `ruma+A+Sg+Ill`
-
-*Adjective singular illative en back examples:*
-* *suureen:* `suuri+A+Sg+Ill`
-
-*Adjective singular illative en front examples:*
-* *pieneen:* `pieni+A+Sg+Ill`
-
-*Adjective singular illative in back examples:*
-* *tuhtiin:* `tuhti+A+Sg+Ill`
-
-*Adjective singular illative in front examples:*
-* *rehtiin:* `rehti+A+Sg+Ill`
-
-*Adjective singular illative on examples:*
-* *huonoon:* `huono+A+Sg+Ill`
-
-*Adjective singular illative un examples:*
-* *fiksuun:* `fiksu+A+Sg+Ill`
-
-*Adjective singular illative yn examples:*
-* *häijyyn:* `häijy+A+Sg+Ill`
-
-*Adjective singular illative än examples:*
-* *tyhmään:* `tyhmä+A+Sg+Ill`
-
-*Adjective singular illative ön examples:*
-* *hölmöön:* `hölmö+A+Sg+Ill`
-
-*Adjective plural partitive ia examples:*
-* *rumia:* `ruma+A+Pl+Par`
-
-*Adjective plural partitive iä examples:*
-* *tyhmiä:* `tyhmä+A+Pl+Par`
-
-*Adjective plural partitive ita examples:*
-* *korkeita:* `korkea+A+Pl+Par`
-
-*Adjective plural partitive itä examples:*
-* *järeitä:* `järeä+A+Pl+Par`
-
-*Adjective plural partitive ja examples:*
-* *vahvoja:* `vahva+A+Pl+Par`
-
-*Adjective plural partitive jä examples:*
-* *hölmöjä:* `hölmö+A+Pl+Par`
-
-*Adjective plural genitive iden back examples:*
-* *tanakoiden:* `tanakka+A+Pl+Gen`
-
-*Adjective plural genitive iden front examples:*
-* *räväköiden:* `räväkkä+A+Pl+Gen`
-
-*Adjective plural genitive ien back examples:*
-* *rumien:* `ruma+A+Pl+Gen`
-
-*Adjective plural genitive ien front examples:*
-* *tyhmien:* `tyhmä+A+Pl+Gen`
-
-*Adjective plural genitive itten back examples:*
-* *nopeitten:* `nopea+A+Pl+Gen`
-
-*Adjective plural genitive itten front examples:*
-* *järeitten:* `järeä+A+Pl+Gen`
-
-*Adjective plural genitive jen back examples:*
-* *vahvojen:* `vahva+A+Pl+Gen`
-
-*Adjective plural genitive jen front examples:*
-* *hölmöjen:* `hölmö+A+Pl+Gen`
-
-*Adjective plural genitive ten back examples:*
-* *suurten:* `suuri+A+Pl+Gen`
-
-*Adjective plural genitive ten front examples:*
-* *pienten:* `pieni+A+Pl+Gen`
-
-*Adjective plural genitive in back examples:*
-* *rumain:* `ruma+A+Pl+Gen+Use/Rare`
-
-*Adjective plural genitive in front examples:*
-* *tyhmäin:* `tyhmä+A+Pl+Gen+Use/Rare`
-
-*Adjective plural illative ihin bacl examples:*
-* *pahoihin:* `paha+A+Pl+Ill`
-
-*Adjective plural illative ihin front examples:*
-* *hölmöihin:* `hölmö+A+Pl+Ill`
-
-*Adjective plural illative iin back examples:*
-* *punaisiin:* `punainen+A+Pl+Ill`
-
-*Adjective plural illative iin front examples:*
-* *sinisiin:* `sininen+A+Pl+Ill`
-
-*Adjective plural illative isiin back examples:*
-* *korkeisiin:* `korkea+A+Pl+Ill`
-
-*Adjective plural illative isiin front examples:*
-* *järeisiin:* `järeä+A+Pl+Ill`
-
-*Adjective possessive back examples:*
-* *tyhmäni:* `tyhmä+A+Sg+Nom+PxSg1`
-
-*Adjective possessive front examples:*
-* *rumani:* `ruma+A+Sg+Nom+PxSg1`
-
-*Adjective possessive an examples:*
-* *kieroaan:* `kiero+A+Sg+Par+PxSg3`
-
-*Adjective possessive en back examples:*
-* *rumalleen:* `ruma+A+Sg+All+PxSg3`
-
-*Adjective possessive en front examples:*
-* *tyhmälleen:* `tyhmä+A+Sg+All+PxSg3`
-
-*Adjective possessive än examples:*
-* *hölmöään:* `hölmö+A+Sg+Par+PxSg3`
-
-*Adjective clitic back examples:*
-* *rumahan:* `ruma+A+Sg+Nom+Foc/han`
-
-*Adjective clitic front examples:*
-* *tyhmähän:* `tyhmä+A+Sg+Nom+Foc/han`
-
-Adjectives can usually be derived into sti adverbs productively
-
-*Deadjectival adverb derivations sti examples:*
-* *nopeasti* `nopea+A+Der/sti` (Eng. # fastly)
+# Symbol affixes
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/adjectives.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/affixes/adjectives.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/affixes/symbols.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/affixes/symbols.lexc)</small>
 
 ---
 
@@ -8038,76 +6952,53 @@ These derivations are treated as inflection in our system as well.
 ---
 
 
-# Symbol affixes
+
+# Prefixing and compounding
+
+Prefixes are not put here so far
+
+## The circular lexicon
+
+* examples:*
+* *talojuttu:* `talo+N+Sg+Nom#juttu+N+Sg+Nom`
+
+The compound part sub-set `NOMINAL`
+The nominal forms can be used as non-initial parts of typical compounds
+
+*Nominals examples:*
+* *talonjuttu:* `talo+N+Sg+Gen#juttu+N+Sg+Nom` (Eng. # house thing)
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/symbols.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/affixes/symbols.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/compounding.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/compounding.lexc)</small>
 
 ---
 
 
-# Continuation lexicons for Finnish abbreviations
+# Guesser
+A rule-based morphological guesser is based on using the paradigms from the
+dictionary based analyser but replacing the roots with patterns. For Finnish
+we have quite neat paradigms with well-defined stem patterns: vowel harmony,
+stem vowels and some with specific syllable counts
 
-## Lexica for adding tags and periods
-
-## The sublexica
-
-### Continuation lexicons for abbrs both with and witout final period
-
-* **LEXICON ab-noun   **
-
-* **LEXICON ab-adj   **
-
-* **LEXICON ab-adv   **
-
-* **LEXICON ab-num   **
-
-### Lexicons without final period
-
-* **LEXICON ab-nodot-noun   **  The bulk
-
-* **LEXICON ab-nodot-adj   **
-
-* **LEXICON ab-nodot-adv   **
-
-* **LEXICON ab-nodot-num   **
-
-### Lexicons with final period
-
-* **LEXICON ab-dot-noun   **  This is the lexicon for abbrs that must have a period.
-
-* **LEXICON ab-dot-adj   **  This is the lexicon for abbrs that must have a period.
-
-* **LEXICON ab-dot-adv   **  This is the lexicon for abbrs that must have a period.
-
-* **LEXICON ab-dot-num   **  This is the lexicon for abbrs that must have a period.
-
-* **LEXICON ab-dot-cc   **
-
-* **LEXICON ab-dot-verb   **
-
-* **LEXICON ab-nodot-verb   **
-
-* **LEXICON ab-dot-IVprfprc   **
-
-* **LEXICON nodot-attrnomaccgen-infl   **
-
-* **LEXICON nodot-attr-infl   **
-
-* **LEXICON nodot-nomaccgen-infl   **
-
-* **LEXICON dot-attrnomaccgen-infl   **
-
-* **LEXICON dot-attr   **
-
-* **LEXICON dot-nomaccgen-infl   **
-
-* **LEXICON DOT   ** - Adds the dot to dotted abbreviations.
+## Symbols used for guesser `Multichar_Symbols`
+Guesser uses a subset of the morphological analyser's alphabet. For
+documentation c.f. [morphology root](root-fst-src.html).
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/abbreviations.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/affixes/abbreviations.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/guess-patterns.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/guess-patterns.lexc)</small>
+
+---
+
+
+This file documents the [phonology.twolc file](http://github.com/giellalt/lang-fin/blob/main/src/fst/phonology.twolc) 
+
+* "Force hyphen between vowels"   
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/phonology.twolc](https://github.com/giellalt/lang-fin/blob/main/src/fst/phonology.twolc)</small>
 
 ---
 
@@ -8769,20 +7660,1119 @@ dictionaries, prefix or hyphenated suffix
 
 ---
 
+# Adjective classification
+Adjectives are words that are inflected like nouns, with few additions. For
+adjectives, the comparative derivations are usually allowed and the
+possessive suffixes are unlikely. The syntactic adjectives that do not have
+comparative derivations are nouns, if they have nominal inflection, or
+particles, if they do not inflect. The examples you need to find the 
+correct classification are same as for nouns, with addition of comparative
+and superlative.
 
-# Guesser
-A rule-based morphological guesser is based on using the paradigms from the
-dictionary based analyser but replacing the roots with patterns. For Finnish
-we have quite neat paradigms with well-defined stem patterns: vowel harmony,
-stem vowels and some with specific syllable counts
+The classification of adjectives combines the stem changes, the final 
+allomorph selection and the harmony. See the list from:
 
-## Symbols used for guesser `Multichar_Symbols`
-Guesser uses a subset of the morphological analyser's alphabet. For
-documentation c.f. [morphology root](root-fst-src.html).
+*Adjective examples examples:*
+* *aakkostettu:* `aakkostettu+A+Sg+Nom`
+* *aakkostettuja:* `aakkostettu+A+Pl+Par`
+* *aakkostetut:* `aakkostettu+A+Pl+Nom`
+* *aakkostetumpi:* `aakkostettu+A+Comp+Sg+Nom`
+* *aakkostetumpina:* `aakkostettu+A+Comp+Pl+Ess`
+* *aakkostetuin:* `aakkostettu+A+Superl+Sg+Nom`
+* *aakkostetuimmat:* `aakkostettu+A+Superl+Pl+Nom`
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/guess-patterns.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/guess-patterns.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/stems/adjectives.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/adjectives.lexc)</small>
+
+---
+
+# Adverb classification
+Adverbs are a heterogenous mass of words with defective inflectional,
+usually sourced from various forms of nominals. It would be possible to
+classify adverbs along etymology and semantics, but we do not yet use such
+classification. Only the morphology is recorded in the continuation classes
+and analyses.
+
+The classification of the adverbs in morphology goes along the possessives
+and clitics they take or require:
+
+*Adverbs examples:*
+* *aakkosellisesti:* `aakkosellisesti+Adv`
+* *aakkosellisestikin:* `aakkosellisesti+Adv+Foc/kin`
+* *mukaani:* `mukaan+Adv+PxSg1`
+* *mukaamme:* `mukaan+Adv+PxPl1`
+* *ajassa:* `ajassa+Adv`
+* *ajassako:* `ajassa+Adv+Qst`
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/stems/adverbs.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/adverbs.lexc)</small>
+
+---
+
+Coordinating conjunctions
+Coordinating conjunctions combine equal clauses and phrases. As subset of
+particles, they do not inflect. The classification is solely syntactic and
+semantic, but it is used in this system for compatibility with other stuff.
+
+The coordinating conjunctions are: eli(kkä), ja, joko – tai, kuin – myös,
+‑kä, mutta, niin – kuin ‑kin/ myös, sekä, sekä – että, sun; tai, vaan, vai,
+ynnä, (saati), (sillä)
+Further reading: [VISK § 816](http://scripta.kotus.fi/visk/sisalto.php?p=816))
+
+*Coordinating conjunctions examples:*
+* *eikä:* `eikä+CC`
+* *ja:* `ja+CC`
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/stems/conjunctions.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/conjunctions.lexc)</small>
+
+---
+
+## Determiners
+Finnish don’t traditionally have determiners. Some claim that few
+pronouns are used like determiners, and can be analysed as such.
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/stems/determiners.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/determiners.lexc)</small>
+
+---
+
+# Digits and such expressions
+Digit-strings are used in place of numerals. They inflect with colon, like
+acronyms, and compound with hyphen only.
+
+Digits are constructed as several cyclic structures: integers, decimals or
+roman numerals.
+Zero alone works quite differently:
+
+*Digit zero examples:*
+* *0:* `0+Num+Sg+Nom`
+
+*int digit loop examples:*
+* *13:* `13+Num+Card+Sg+Nom`
+* *100:* `100+Num+Card+Sg+Nom`
+* *0000005550000000:* `0000005550000000+Num+Card+Sg+Nom`
+
+**LEXICON ARABICLOOP_pirinen ** essentially allows any number-sign combination, but is like the other lgs
+
+**LEXICON ARABICLOOP_pirinen ** is for entries not looping back 
+
+The digit strings that end in 10 to 12 + 6n 0's are inflected alike:
+
+*int digit milliard loop examples:*
+* *1000000000:* `1000000000+Num+Card+Sg+Nom`
+* *300000000000:* `300000000000+Num+Card+Sg+Nom`
+* *123456000000000000000000:* `123456000000000000000000+Num+Card+Sg+Nom`
+
+The digit strings that end in 6 to 9 + 6n 0's are inflected alike:
+
+*int digit million loop examples:*
+* *1000000:* `1000000+Num+Card+Sg+Nom`
+* *300000000:* `300000000+Num+Card+Sg+Nom`
+* *123456000000000000000:* `123456000000000000000+Num+Card+Sg+Nom`
+
+Decimal digit strings start with any number of digits 0 to 9, followed
+by decimal separator comma. The decimal dot may be allowed as substandard
+variant.
+
+*decimal digit loop examples:*
+* *1,0:* `1,0+Num+Sg+Nom`
+* *314,1:* `314,1+Num+Sg+Nom`
+
+The decimal digit strings end in any number of digits 0 to 9, inflected
+along the last part.
+
+*decimal digit loop more examples:*
+* *3,141:* `3,141+Num+Sg+Nom`
+* *123,345:* `123,345+Num+Sg+Nom`
+
+The decimal digit strings with dot may be allowed as sub-standard option
+with respective analysis.
+
+# Roman numerals with inflection
+Roman numerals are composed the symbols M, D, C, L, X, V, I in ascending
+scale and some combinations, they denote ordinal numbers and inflect like
+ones.
+
+## Main lexicon for roman digits
+This lexicon divides into four groups
+
+*roman numeral examples:*
+* *MM:* `MM+Num+Ord+Sg+Nom`
+* *MCXI:* `MCXI+Num+Ord+Sg+Nom`
+* *CMXCIX:* `CMXCIX+Num+Ord+Sg+Nom`
+
+## Roman numerals according to digital class, one by one
+### Roman thousands
+Thousands can be followed by any of other parts
+
+*roman numeral thousand examples:*
+* *MII:* `MII+Num+Ord+Sg+Nom`
+* *MCCCXXII:* `MCCCXXII+Num+Ord+Sg+Nom`
+
+### Roman hundreds
+Hundreds can be followed by anything but thousands:
+
+*roman numeral hundred examples:*
+* *CXXI:* `CXXI+Num+Ord+Sg+Nom`
+* *DXXIV:* `DXXIV+Num+Ord+Sg+Nom`
+
+### Roman tens
+Tens can be followed by ones:
+
+*roman numeral ten examples:*
+* *XIX:* `XIX+Num+Ord+Sg+Nom`
+* *XXVII:* `XXVII+Num+Ord+Sg+Nom`
+
+### Roman ones
+Ones come alone
+
+*roman numerals one to nine examples:*
+* *IX:* `IX+Num+Ord+Sg+Nom`
+* *VIII:* `VIII+Num+Ord+Sg+Nom`
+* *II:* `II+Num+Ord+Sg+Nom`
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/stems/digits.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/digits.lexc)</small>
+
+---
+
+Exceptions are quite strange word-forms. the ones that do not fit anywhere 
+else. This file contains all enumerated word forms that cannot reasonably be
+created from lexical data by regular inflection. Usually there should be next
+to none exceptions, it's always better to have a paradigm that covers only
+one or few words than an exception since these will not work nicely with e.g.
+compounding scheme or possibly many end applications.
+
+negation verb has partial inflection:
+
+* examples:*
+* *en:* `ei+V+Neg+Act+Sg1`
+* *älkää:* `ei+V+Neg+Act+Imprt+Pl2`
+* *älkööt:* `ei+V+Neg+Act+Imprt+Pl3`
+
+Some verbs only have few word-forms left:
+* *kutiaa:*
+* *taita:*
+* *paratkoon:*
+* *eläköön:*
+
+The noun ruoka has irregular forms:
+* *ruuassa:*
+* *ruuilla:*
+
+The adjective hyvä has heteroclitic comparative derivations too:
+* *parempi:*
+* *paremmissa:*
+* *paras:*
+* *parhaat:*
+
+Some of the nouns have archaic consonat stem forms left:
+* *vuonna:*
+* *sydännä:*
+* *jumalten:*
+* *sankarten:*
+
+few verbs have shortened forms in standard spoken Finnish
+* *meen:*
+* *tuut:*
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/stems/exceptions.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/exceptions.lexc)</small>
+
+---
+
+
+# Continuation lexicons for Finnish abbreviations
+
+Abbreviations are shortened forms that do not inflect. They have whatever
+classification they would have if they were read out, mostly that of nouns.
+Lot of abbreviations end in a full stop, which may complicate analysis and
+tokenisation in real-world applications
+
+*Abbreviations examples:*
+* *eaa.:* `eaa.+N`
+* *esim.:* `esim.+N`
+* ★*esim:* `esim+N` (is not standard language)
+Some ar less classified
+* *ab:* `ab+ABBR`
+
+* `KalPa+N:KalPa  ab-nodot-noun-itrab  ; `+N: Kalmiston pallo
+* `MyPa+N:MyPa   ab-nodot-noun-itrab   ; `+N: Myllykosken Pallo
+* `RoPS+N:RoPS   ab-nodot-noun-itrab  ; `+N: Rovaniemen palloseura
+* `jssk+N:jssk   ab-nodot-noun-itrab   ; `+N: jossakin (somewhere)
+* `jstk+N:jstk   ab-nodot-noun-itrab  ; `+N: jostakin (from)
+* `jtak+N:jtak   ab-nodot-noun-itrab   ; `+N: jotakin (to)
+* `k%:lo+N:k%:lo   ab-dot-noun-trnumab   ; `+N: kello
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/stems/fin-abbreviations.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/fin-abbreviations.lexc)</small>
+
+---
+
+# Acronym classification
+Acronyms are shortenings that inflect. They all have two inflection
+patterns, one read letter by letter, and one word-by-word. They are separate
+entries in this dictionary. For example OY will have singular illatives
+_OY:hyn_ and _OY:öön_ for _yyhyn_ and _yhtiöön_ resp., although latter is
+much rarer.
+A big majority of popular acronyms in everyday use comes from English, and
+the word-based inflection is virtually non-existent and would be very
+confusing so there's no high priority for adding that.
+
+The first classification for acronyms should be along the final letter, then
+if the final word inflection is used, the class of that word.
+
+*Acronyms examples:*
+* *OY:hyn:* `OY+N+Sg+Ill`
+* *OY:öön* `OY+N+Sg+Ill`
+
+* `ADSL+N:ADSL  ACRO_ÄKS  ; ` Asymmetric Digital Subscriber Line
+* `AKT+N:AKT  ACRO_EE  ;    `
+* `API+N:API  ACRO_II  ;    ` Application Programming Interface
+* `atk+N:atk  ACRO_OO  ;    ` automaattinen tekstinkäsittely
+* `BBC+N:BBC  ACRO_EE  ;    ` British Broadcasting Company
+* `BKT+N:BKT  ACRO_EE  ;    ` Brutto-Kansan-Tuote
+* `BMW+N:BMW  ACRO_EE  ;    ` Bayerische Motor W
+* `BSE+N:BSE  ACRO_EE  ;    ` 
+* `cd+N:cd  ACRO_EE  ;      ` compact disc
+* `CD+N:CD  ACRO_ÄKS  ;     ` Compact Disc
+* `CD-R+N:CD-R  ACRO_ÄKS  ; ` Compact Disc Read-Only
+* `CD-RW+N:CD-RW  ACRO_EE  ;` Compact Disc Read-Write
+* `CIA+N:CIA  ACRO_AA  ;    ` Central Intelligence Agency
+* `DDR+N:DDR  ACRO_ÄKS  ;   ` Deutsches Democratische Republic
+* `DE+N:DE  ACRO_EE  ;      ` 
+* `DFI+N:DFI  ACRO_II  ;    `
+* `DJ+N:DJ  ACRO_II  ;   ` Disc Jockey
+* `dna+N:dna  ACRO_AA  ;    ` deoxyribonucleic acid
+* `DNA+N:DNA  ACRO_AA  ;    ` Deoxyribo-Nucleic Acid
+* `DPI+N:DPI  ACRO_II  ;    ` Dots Per Inch
+* `DVD+N:DVD  ACRO_ÄKS  ;   ` Digital Versatile Disc
+* `EEC+N:EEC  ACRO_EE  ;    ` European Economy Council
+* `EKP+N:EKP  ACRO_EE  ;    ` Euroopan Keskus-Pankki
+* `EMU+N:EMU  ACRO_UU  ;    ` European Monetary Union
+* `ETY+N:ETY  ACRO_YY  ;    ` Euroopan Turvallisuus-Yhteisö
+* `EU+N:EU  ACRO_UU  ;      ` Euroopan Unioni
+* `EY+N:EY  ACRO_YY  ;      ` Euroopan Yhteisö
+* `FBI+N:FBI  ACRO_II  ;     ` Federal Bureau of Investigation
+* `FIFA+N:FIFA  ACRO_AA  ;  ` Football
+* `FTP+N:FTP  ACRO_EE  ;    ` File Transfer Protocol
+* `GM+N:GM  ACRO_ÄKS  ;     ` General Motors
+* `GPRS+N:GPRS  ACRO_ÄKS  ; ` 
+* `HIFK+N:HIFK  ACRO_OO  ;  ` Helsingfors 
+* `HIV+N:HIV  ACRO_EE  ;    ` ... Immunodeficiency Virus
+* `HJK+N:HJK  ACRO_OO  ;    ` Helsingin Jalkapallo-Klubi
+* `HKL+N:HKL  ACRO_ÄKS  ;   ` Helsingin Kaupungin Liikenne
+* `HK+N:HK  ACRO_OO  ;      ` 
+* `HS+N:HS  ACRO_ÄKS  ;     ` Helsingin Sanomat
+* `HTML+N:HTML  ACRO_ÄKS  ; ` Hyper-Text Markup Language
+* `HTTP+N:HTTP  ACRO_EE  ;  ` Hyper-Text Transfer Protocol
+* `IBM+N:IBM  ACRO_ÄKS  ;   ` International Business Machines
+* `internet-tv+N:internet-tv  ACRO_EE  ; ` Tele-Visio
+* `IP+N:IP  ACRO_EE  ;    ` Internet Protocol
+* `IRC+N:IRC  ACRO_EE  ;  ` Internet Relay Chat
+* `ISBN+N:ISBN  ACRO_ÄKS  ;   ` International Serial Book Number
+* `IT+N:IT  ACRO_EE  ;    ` Informaatio-Teknologia
+* `KHO+N:KHO  ACRO_OO  ; ` Korkein Hovi-Oikeus
+* `KOP+N:KOP  ACRO_EE  ;  ` Kansallis-Osake-Pankki
+* `lehtiö-pc+N:lehtiö-pc  ACRO_EE  ; ` Personal Computer
+* `media-pc+N:media-pc  ACRO_EE  ; ` Personal Computer
+* `MTV3+N:MTV3  ACRO_KOLME  ; ` Mainos-Tele-Visio
+* `MTV+N:MTV  ACRO_EE  ;    ` Music TeleVision
+* `NASA+N:NASA  ACRO_AA  ;    ` National Air and Space A
+* `NATO+N:NATO  ACRO_OO  ;    ` North-Atlantic T Organisation
+* `NBA+N:NBA  ACRO_AA  ;    ` National Basketball Association
+* `netti-tv+N:netti-tv  ACRO_EE  ; ` Tele-visio
+* `NHL+N:NHL  ACRO_ÄKS  ; ` National Hockey League
+* `NL+N:NL  ACRO_ÄKS  ;   ` Neuvosto-Liitto
+* `NPC+N:NPC  ACRO_EE  ;  ` Non-Player Character
+* `OK+N:OK  ACRO_OO  ;    ` not pronounced in words
+* `oyj+N:oyj  ACRO_II  ;  ` Julkinen Osake-Yhtiö (!)
+* `oy+N:oy  ACRO_YY  ;    ` Osake-Yhtiö
+* `OY+N:OY  ACRO_YY  ;    ` Osake-Yhtiö
+* `paneeli-pc+N:paneeli-pc  ACRO_EE  ;    ` Personal Computer
+* `PDF+N:PDF  ACRO_ÄKS  ; ` Portable Document Format
+* `pH+N:pH  ACRO_OO  ;    ` per Hydrogen
+* `pien-pc+N:pien-pc  ACRO_EE  ;  ` Personal Computer
+* `pinta-WWW+N:pinta-WWW  ACRO_EE  ;  ` World Wide Web
+* `PPI+N:PPI  ACRO_II  ;  ` Points Per Inch
+* `PR+N:PR  ACRO_ÄKS  ;   ` Public Relations
+* `RNA+N:RNA  ACRO_AA  ;   ` Ribonucleic Acid
+* `RSS+N:RSS  ACRO_ÄKS  ; ` R
+* `SAK+N:SAK  ACRO_OO  ;  ` Suomen Ammattiliittojen Keskusjärjestö
+* `SDP+N:SDP  ACRO_EE  ;  ` Sosiali-Demokraattinen Puolue 
+* `SGML+N:SGML  ACRO_ÄKS  ;   ` Standardised General Markup Language
+* `SKDL+N:SKDL  ACRO_ÄKS  ; ` Suomen Kristillis-Demokraattien Liitto
+* `Skp+N:Skp  ACRO_EE  ; ` Suomen keskuspankki
+* `SOK+N:SOK  ACRO_OO  ;  ` Suomen Osuus-Kauppa
+* `SPR+N:SPR  ACRO_ÄKS  ; ` Suomen Punainen Risti
+* `SQL+N:SQL  ACRO_ÄKS  ; ` Structured Query Language
+* `STT+N:STT  ACRO_EE  ;  ` Suomen Tieto-Toimisto
+* `SUL+N:SUL  ACRO_ÄKS  ; ` Suomen Urheilu-Liitto
+* `TCP/IP+N:TCP/IP  ACRO_EE  ; ` Transmission Control Protocol / Internet Protocol
+* `TCP+N:TCP  ACRO_EE  ;  ` Transmission Control Protocol
+* `TI+N:TI  ACRO_II  ;    ` Texas Instruments
+* `TM+N:TM  ACRO_ÄKS  ;   ` Tekniikan Maailma
+* `TPS+N:TPS  ACRO_ÄKS  ; ` Turun Pallo-Seura
+* `TS+N:TS  ACRO_ÄKS  ;   ` Turun Sanomat
+* `tv+N:tv  ACRO_EE  ;    ` tele-visio
+* `URL+N:URL  ACRO_ÄKS  ; ` Uniform Resource Locator
+* `USA+N:USA  ACRO_AA  ;  ` United States of America
+* `VIP+N:VIP  ACRO_EE  ;  ` Very Important Person
+* `VR+N:VR  ACRO_ÄKS  ;   ` Valtion Rautatiet
+* `VTT+N:VTT  ACRO_EE  ;  ` 
+* `VW+N:VW  ACRO_EE  ;    ` Volks Wagen
+* `WAP+N:WAP  ACRO_EE  ;  ` Wireless Application Protocol
+* `WC+N:WC  ACRO_EE  ;    ` Water Closet
+* `WHO+N:WHO  ACRO_OO  ;  ` World Health Organisation
+* `WSOY+N:WSOY  ACRO_YY  ;   ` Werner-Söderström Osake-Yhtiö
+* `WTO+N:WTO  ACRO_OO  ;  ` World Trade Organisation
+* `WWF+N:WWF  ACRO_ÄKS  ; ` World Wildlife Foundation
+* `www+N:www  ACRO_EE  ;  ` world wide web
+* `WWW+N:WWW  ACRO_EE  ;  ` World Wide Web
+* `XML+N:XML  ACRO_ÄKS  ; ` Extensible Markup Language
+* `Y2K+N:Y2K  ACRO_OO  ;  ` not spelled out
+* `YK+N:YK  ACRO_OO  ;    ` Yhdistyneet Kansakunnat
+* `YMP+N:YMP  ACRO_EE  ;  ` 
+* `YT+N:YT  ACRO_EE  ;    ` Yhteistyö?
+* `ÄO+N:ÄO  ACRO_OO  ;    ` Älykkyysosamäärä
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/stems/fin-acronyms.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/fin-acronyms.lexc)</small>
+
+---
+
+# Interjections
+Interjections are mainly parts of spoken language that are minimal turns
+in dialogue, curses, onomatopoeia and such. Interjections are a subset
+of particles, and do not inflect. They are quite productive kind of, though
+limited in form  ; they stem from arbitrary combinations of characters to
+
+Only add new interjections that are found from corpora.
+
+*Interjections examples:*
+* *aah:* `aah+Interj`
+* *äh:* `äh+Interj`
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/stems/interj.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/interj.lexc)</small>
+
+---
+
+# Nouns and their classification
+Noun is the part-of-speech for words which require declination in number
+and case. Additionally nouns may have optional possessive suffixes and
+clitics combined freely at the end. While some of the nouns may exhibit 
+limited comparative derivations, generally words that can undergo
+comparation must be  classified into adjectives. The proper nouns that
+are written in initial  capital letters except when derived are handled
+separately under proper nouns, but the classification is the same.
+
+The nominals are classified by combination of the stem variations, suffix
+allomorphs and the vowel harmony. The nouns have number, case, possessive
+and clitic suffixes:
+
+*Noun examples:*
+* *talo:* `talo+N+Sg+Nom` (Eng. # house)
+* *taloa:* `talo+N+Sg+Par`
+* *taloissa:* `talo+N+Pl+Ine`
+* *talostani:* `talo+N+Sg+Ela+PxSg1`
+* *talollako:* `talo+N+Sg+Ade+Qst`
+* *taloiltammepa:* `talo+N+Pl+Abl+PxPl1+Foc/pa`
+The classification is based on suffix allomorphs, harmony, and the stem
+variation:
+* *taloja:* `talo+N+Pl+Par`
+* *sälöjä:* `sälö+N+Pl+Par` (Eng. # splinter)
+* *valtioita:* `valtio+N+Pl+Par` (Eng. # state)
+* *lepakot:* `lepakko+N+Pl+Nom` (Eng. # bat)
+* *padoissa:* `pato+N+Pl+Ine` (Eng. # dam)
+The minimal set to determine which paradigm or class noun belongs to is to
+check how it inflects in singulars of nominative,
+essive and inessive, plurals of essive, elative, partitive, illative, and
+GENITIVE. Find out stems and suffixes and match.
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/stems/nouns.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/nouns.lexc)</small>
+
+---
+
+# Finnish Numerals
+
+Numerals have been split in three sections, the compounding parts
+of cardinals and ordinals, and the non-compounding ones:
+
+*Numeral examples:*
+* *kaksikymmentäkolmetuhatta:* `kaksi+Num+Card+Sg+Nom#kymmenen+Num+Card+Sg+Par#kolme+Num+Card+Sg+Nom#tuhat+Num+Card+Sg+Par` (Eng. # 23,000)
+* *kahdessadasneljäs:* `kahdes+Num+Ord+Sg+Nom#sadas+Num+Ord+Sg+Nom#neljäs+Num+Ord+Sg+Nom` (Eng. # 204rd)
+* *viitisenkymmentä:* `viitisen+Num#kymmentä` (Eng. # 50-ish)
+
+The compounding parts of cardinals are the number multiplier words.
+
+*cardinal examples:*
+* *yksi:* `yksi+Num+Card+Sg+Nom` (Eng. # one)
+* *viidelle:* `viisi+Num+Card+Sg+All` (Eng. # five)
+* *tuhatta:* `tuhat+Num+Card+Sg+Par` (Eng. # thousand)
+
+The suffixes only appear after cardinal multipliers
+
+*Cardinal multiplicants examples:*
+* *viisikymmentä:* `viisi+Num+Card+Sg+Nom#kymmentä`
+* *neljäsataatuhatta:* `neljä+Num+Card+Sg+Nom#sata+Num+Card+Sg+Par#tuhatta`
+
+The compounding parts of ordinals are the number multiplier words.
+
+*Ordinal numerals examples:*
+* *neljäs:* `neljäs+A+Ord+Sg+Nom`
+* *viidennelle:* `viides+A+Ord+Sg+All`
+* *tuhannetta:* `tuhannes+A+Ord+Sg+Par`
+
+The suffixes only appear after cardinal multipliers
+
+*Ordinal multiplicants examples:*
+* *viideskymmenes:* `viides+A+Ord+Sg+Nom#kymmenes`
+* *neljässadastuhannes:* `neljäs+A+Ord+Sg+Nom#sadas+A+Ord+Sg+Nom#tuhannes`
+
+There is a set of numbers or corresponding expressions that work like them,
+but are not basic cardinals or ordinals:
+
+*Numeral others examples:*
+* *viitisenkymmentä:* `viitisen+Num#kymmentä`
+* *puolikymmentä:* `puolikymmentä+Num+Sg+Nom`
+
+## Numeral stem variation
+Numerals follow the same stem variation patterns as nouns, some of these
+being very rare to extinct for nouns. 
+
+*Numerals 31 examples:*
+* *yksi:* `yksi+Num+Card+Sg+Nom`
+* *yhteen:* `yksi+Num+Card+Sg+Ill`
+* *yhtenä:* `yksi+Num+Card+Sg+Ess`
+* *yhdessä:* `yksi+Num+Card+Sg+Ine`
+* *yhtä:* `yksi+Num+Card+Sg+Par`
+* *yksiä:* `yksi+Num+Card+Pl+Par`
+* *yksien:* `yksi+Num+Card+Pl+Gen`
+* *yksiin:* `yksi+Num+Card+Pl+Ill`
+* *yksinä:* `yksi+Num+Card+Pl+Ess`
+* *yksissä:* `yksi+Num+Card+Pl+Ine`
+
+*Numerals 31 back§ examples:*
+* *kaksi:* `kaksi+Num+Card+Sg+Nom`
+* *kahteen:* `kaksi+Num+Card+Sg+Ill`
+* *kahtena:* `kaksi+Num+Card+Sg+Ess`
+* *kahdessa:* `kaksi+Num+Card+Sg+Ine`
+* *kahta:* `kaksi+Num+Card+Sg+Par`
+* *kaksia:* `kaksi+Num+Card+Pl+Par`
+* *kaksien:* `kaksi+Num+Card+Pl+Gen`
+* *kaksiin:* `kaksi+Num+Card+Pl+Ill`
+* *kaksina:* `kaksi+Num+Card+Pl+Ess`
+* *kaksissa:* `kaksi+Num+Card+Pl+Ine`
+
+*Numerals 8~5 examples:*
+* *kolme:* `kolme+Num+Card+Sg+Nom`
+* *kolmeen:* `kolme+Num+Card+Sg+Ill`
+* *kolmena:* `kolme+Num+Card+Sg+Ess`
+* *kolmessa:* `kolme+Num+Card+Sg+Ine`
+* *kolmea:* `kolme+Num+Card+Sg+Par`
+* *kolmia:* `kolme+Num+Card+Pl+Par`
+* *kolmien:* `kolme+Num+Card+Pl+Gen`
+* *kolmiin:* `kolme+Num+Card+Pl+Ill`
+* *kolmina:* `kolme+Num+Card+Pl+Ess`
+* *kolmissa:* `kolme+Num+Card+Pl+Ine`
+
+*Numerals 10 examples:*
+* *neljä:* `neljä+Num+Card+Sg+Nom`
+* *neljää:* `neljä+Num+Card+Sg+Par`
+* *neljään:* `neljä+Num+Card+Sg+Ill`
+* *neljänä:* `neljä+Num+Card+Sg+Ess`
+* *neljässä:* `neljä+Num+Card+Sg+Ine`
+* *neljiä:* `neljä+Num+Card+Pl+Par`
+* *neljien:* `neljä+Num+Card+Pl+Gen`
+* *neljiin:* `neljä+Num+Card+Pl+Ill`
+* *neljinä:* `neljä+Num+Card+Pl+Ess`
+* *neljissä:* `neljä+Num+Card+Pl+Ine`
+* *neljäin:* `neljä+Num+Card+Pl+Gen+Use/Rare`
+
+*Numerals 27 front examples:*
+* *viisi:* `viisi+Num+Card+Sg+Nom`
+* *viiteen:* `viisi+Num+Card+Sg+Ill`
+* *viitenä:* `viisi+Num+Card+Sg+Ess`
+* *viidessä:* `viisi+Num+Card+Sg+Ine`
+* *viisinä:* `viisi+Num+Card+Pl+Ess`
+* *viisissä:* `viisi+Num+Card+Pl+Ine`
+* *viittä:* `viisi+Num+Card+Sg+Par`
+* *viitten:* `viisi+Num+Card+Pl+Gen`
+* *viisiä:* `viisi+Num+Card+Pl+Par`
+* *viisien:* `viisi+Num+Card+Pl+Gen`
+* *viisiin:* `viisi+Num+Card+Pl+Ill`
+
+*Numerals 27 back examples:*
+* *kuusi:* `kuusi+Num+Card+Sg+Nom`
+* *kuutena:* `kuusi+Num+Card+Sg+Ess`
+* *kuudessa:* `kuusi+Num+Card+Sg+Ine`
+* *kuusina:* `kuusi+Num+Card+Pl+Ess`
+* *kuusissa:* `kuusi+Num+Card+Pl+Ine`
+* *kuutta:* `kuusi+Num+Card+Sg+Par`
+* *kuutten:* `kuusi+Num+Card+Pl+Gen`
+* *kuusia:* `kuusi+Num+Card+Pl+Par`
+* *kuusien:* `kuusi+Num+Card+Pl+Gen`
+* *kuusiin:* `kuusi+Num+Card+Pl+Ill`
+
+*Numerals 10n examples:*
+* *kahdeksan:* `kahdeksan+Num+Card+Sg+Nom`
+* *kahdeksaa:* `kahdeksan+Num+Card+Sg+Par`
+* *kahdeksaan:* `kahdeksan+Num+Card+Sg+Ill`
+* *kahdeksassa:* `kahdeksan+Num+Card+Sg+Ine`
+* *kahdeksana:* `kahdeksan+Num+Card+Sg+Ess`
+* *kahdeksia:* `kahdeksan+Num+Card+Pl+Par`
+* *kahdeksien:* `kahdeksan+Num+Card+Pl+Gen`
+* *kahdeksiin:* `kahdeksan+Num+Card+Pl+Ill`
+* *kahdeksissa:* `kahdeksan+Num+Card+Pl+Ine`
+* *kahdeksina:* `kahdeksan+Num+Card+Pl+Ess`
+* *kahdeksain:* `kahdeksan+Num+Card+Pl+Gen+Use/Rare`
+
+*Numerals 10n front examples:*
+* *yhdeksän:* `yhdeksän+Num+Card+Sg+Nom`
+* *yhdeksää:* `yhdeksän+Num+Card+Sg+Par`
+* *yhdeksään:* `yhdeksän+Num+Card+Sg+Ill`
+* *yhdeksässä:* `yhdeksän+Num+Card+Sg+Ine`
+* *yhdeksänä:* `yhdeksän+Num+Card+Sg+Ess`
+* *yhdeksiä:* `yhdeksän+Num+Card+Pl+Par`
+* *yhdeksien:* `yhdeksän+Num+Card+Pl+Gen`
+* *yhdeksissä:* `yhdeksän+Num+Card+Pl+Ine`
+* *yhdeksinä:* `yhdeksän+Num+Card+Pl+Ess`
+* *yhdeksäin:* `yhdeksän+Num+Card+Pl+Gen+Use/Rare`
+
+*Numerals 32 examples:*
+* *kymmenen:* `kymmenen+Num+Card+Sg+Nom`
+* *kymmeneen:* `kymmenen+Num+Card+Sg+Ill`
+* *kymmenenä:* `kymmenen+Num+Card+Sg+Ess`
+* *kymmenessä:* `kymmenen+Num+Card+Sg+Ine`
+* *kymmentä:* `kymmenen+Num+Card+Sg+Par`
+* *kymmenten:* `kymmenen+Num+Card+Pl+Gen`
+* *kymmenien:* `kymmenen+Num+Card+Pl+Gen`
+* *kymmeniin:* `kymmenen+Num+Card+Pl+Ill`
+* *kymmenissä:* `kymmenen+Num+Card+Pl+Ine`
+* *kymmeninä:* `kymmenen+Num+Card+Pl+Ess`
+
+*Numerals 9 examples:*
+* *sata:* `sata+Num+Card+Sg+Nom`
+* *satana:* `sata+Num+Card+Sg+Ess`
+* *sadassa:* `sata+Num+Card+Sg+Ine`
+* *sataan:* `sata+Num+Card+Sg+Ill`
+* *sataa:* `sata+Num+Card+Sg+Par`
+* *satojen:* `sata+Num+Card+Pl+Gen`
+* *satoihin:* `sata+Num+Card+Pl+Ill`
+* *sadoissa:* `sata+Num+Card+Pl+Ine`
+* *satoina:* `sata+Num+Card+Pl+Ess`
+
+*Numerals 46 examples:*
+* *tuhat:* `tuhat+Num+Card+Sg+Nom`
+* *tuhanteen:* `tuhat+Num+Card+Sg+Ill`
+* *tuhantena:* `tuhat+Num+Card+Sg+Ess`
+* *tuhannessa:* `tuhat+Num+Card+Sg+Ine`
+* *tuhansien:* `tuhat+Num+Card+Pl+Gen`
+* *tuhatta:* `tuhat+Num+Card+Sg+Par`
+* *tuhansia:* `tuhat+Num+Card+Pl+Par`
+* *tuhansien:* `tuhat+Num+Card+Pl+Gen`
+* *tuhansiin:* `tuhat+Num+Card+Pl+Ill`
+* *tuhansina:* `tuhat+Num+Card+Pl+Ess`
+* *tuhansissa:* `tuhat+Num+Card+Pl+Ine`
+
+*Numerals 10 examples:*
+* *miljoona:* `miljoona+Num+Card+Sg+Nom`
+* *miljoonana:* `miljoona+Num+Card+Sg+Ess`
+* *miljoonassa:* `miljoona+Num+Card+Sg+Ine`
+* *miljoonaa:* `miljoona+Num+Card+Sg+Par`
+* *miljoonaan:* `miljoona+Num+Card+Sg+Ill`
+* *miljoonia:* `miljoona+Num+Card+Pl+Par`
+* *miljoonien:* `miljoona+Num+Card+Pl+Gen`
+* *miljooniin:* `miljoona+Num+Card+Pl+Ill`
+* *miljoonissa:* `miljoona+Num+Card+Pl+Ine`
+* *miljoonina:* `miljoona+Num+Card+Pl+Ess`
+
+*Numerals 5 examples:*
+* *miljardi:* `miljardi+Num+Card+Sg+Nom`
+* *miljardina:* `miljardi+Num+Card+Sg+Ess`
+* *miljardissa:* `miljardi+Num+Card+Sg+Ine`
+* *miljardeina:* `miljardi+Num+Card+Pl+Ess`
+* *miljardeissa:* `miljardi+Num+Card+Pl+Ine`
+* *miljardia:* `miljardi+Num+Card+Sg+Par`
+* *miljardiin:* `miljardi+Num+Card+Sg+Ill`
+* *miljardeja:* `miljardi+Num+Card+Pl+Par`
+* *miljardien:* `miljardi+Num+Card+Pl+Gen`
+* *miljardeihin:* `miljardi+Num+Card+Pl+Ill`
+
+*Numerals 5 more examples:*
+* *Googol:* `Googol+Num+Card+Sg+Nom`
+
+*Numerals 5 moremore examples:*
+* *pari:* `pari+Num+Card+Sg+Nom`
+* *parina:* `pari+Num+Card+Sg+Ess`
+* *parissa:* `pari+Num+Card+Sg+Ine`
+* *pareissa:* `pari+Num+Card+Pl+Ine`
+* *pareina:* `pari+Num+Card+Pl+Ess`
+* *paria:* `pari+Num+Card+Sg+Par`
+* *pareja:* `pari+Num+Card+Pl+Par`
+* *parien:* `pari+Num+Card+Pl+Gen`
+* *pareihin:* `pari+Num+Card+Pl+Ill`
+* *pariin:* `pari+Num+Card+Sg+Ill`
+
+*Numerals 38 examples:*
+* *ensimmäinen:* `ensimmäinen+A+Ord+Sg+Nom`
+* *ensimmäisenä:* `ensimmäinen+A+Ord+Sg+Ess`
+* *ensimmäisessä:* `ensimmäinen+A+Ord+Sg+Ine`
+* *ensimmäistä:* `ensimmäinen+A+Ord+Sg+Par`
+* *ensimmäisten:* `ensimmäinen+A+Ord+Pl+Gen`
+* *ensimmäisiä:* `ensimmäinen+A+Ord+Pl+Par`
+* *ensimmäisiin:* `ensimmäinen+A+Ord+Pl+Ill`
+* *ensimmäisinä:* `ensimmäinen+A+Ord+Pl+Ess`
+* *ensimmäisissä:* `ensimmäinen+A+Ord+Pl+Ine`
+
+*Numerals 38 back examples:*
+* *toinen:* `toinen+A+Ord+Sg+Nom`
+* *toiseen:* `toinen+A+Ord+Sg+Ill`
+* *toista:* `toinen+A+Ord+Sg+Par`
+* *toisten:* `toinen+A+Ord+Pl+Gen`
+* *toisien:* `toinen+A+Ord+Pl+Gen`
+* *toisia:* `toinen+A+Ord+Pl+Par`
+* *toisiin:* `toinen+A+Ord+Pl+Ill`
+* *toisena:* `toinen+A+Ord+Sg+Ess`
+* *toisessa:* `toinen+A+Ord+Sg+Ine`
+* *toisissa:* `toinen+A+Ord+Pl+Ine`
+* *toisina:* `toinen+A+Ord+Pl+Ess`
+
+*Numerals 45 examples:*
+* *kolmas:* `kolmas+A+Ord+Sg+Nom`
+* *kolmantena:* `kolmas+A+Ord+Sg+Ess`
+* *kolmannessa:* `kolmas+A+Ord+Sg+Ine`
+* *kolmanteen:* `kolmas+A+Ord+Sg+Ill`
+* *kolmatta:* `kolmas+A+Ord+Sg+Par`
+* *kolmansia:* `kolmas+A+Ord+Pl+Par`
+* *kolmansien:* `kolmas+A+Ord+Pl+Gen`
+* *kolmansissa:* `kolmas+A+Ord+Pl+Ine`
+* *kolmansina:* `kolmas+A+Ord+Pl+Ess`
+
+*Numerals 45 fron examples:*
+* *neljäs:* `neljäs+A+Ord+Sg+Nom`
+* *neljänteen:* `neljäs+A+Ord+Sg+Ill`
+* *neljäntenä:* `neljäs+A+Ord+Sg+Ess`
+* *neljännessä:* `neljäs+A+Ord+Sg+Ine`
+* *neljättä:* `neljäs+A+Ord+Sg+Par`
+* *neljänsiä:* `neljäs+A+Ord+Pl+Par`
+* *neljänsien:* `neljäs+A+Ord+Pl+Gen`
+* *neljänsiin:* `neljäs+A+Ord+Pl+Ill`
+* *neljänsissä:* `neljäs+A+Ord+Pl+Ine`
+* *neljänsinä:* `neljäs+A+Ord+Pl+Ess`
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/stems/numerals.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/numerals.lexc)</small>
+
+---
+
+# Particles
+The particles are all words that do not inflect at all. For compatibility
+reasons subsets of particles have been set off to classes like conjunctions,
+adverbs, adpositions, and interjections. The ones that are *not* in those classes are left here as
+particles.
+
+Examples:
+
+*Particles examples:*
+* *ahaa:* `ahaa+Pcle`
+* *edes:* `edes+Pcle`
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/stems/particles.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/particles.lexc)</small>
+
+---
+
+# Adpositions
+Adpositions are morphologically nominals that have defective inflection
+patterns. Some of them come from forms of nominals that are no longer
+used. The adpositions are classified along whether they take possessives
+clitics, or not. They also have slight syntactic and semantic differences,
+the syntactic differences are coded in the analyses to be compatible with
+other languages, but for most intents and purposes all adpositions can
+appear in both syntactic positions, after and before the head word.
+
+Examples:
+
+*Adpositions examples:*
+* *alta:* `alta+Po`
+* *alleen:* `alle+Po+PxSg3`
+* *irti:* `irti+Pr`
+* *irtikö:* `irti+Pr+Qst`
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/stems/pp.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/pp.lexc)</small>
+
+---
+
+# Prefixes
+Prefixes are bound morphs that can appear in beginning of the compounds,
+mostly forms of nominals. Finnish does not have almost any real prefix 
+morphemes.
+
+*Prefixes examples:*
+* *alabanaani:* `ala+N+Pref#banaani+N+Sg+Nom` (Eng. # lower banana)
+* *erikoistyyppi:* `erikois+N+Pref#tyyppi+N+Sg+Nom` (Eng. # special guy)
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/stems/prefixes.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/prefixes.lexc)</small>
+
+---
+
+# Pronouns
+Pronouns are a closed special sub class of nouns. Morphologically pronouns
+have often defective, heteroclitic or otherwise irregular inflectional
+patterns, and certain pronouns have an morphophonologically distinct
+accusative case, extinct from other noun classes 
+Further reading: [VISK §§ 
+100|http://scripta.kotus.fi/visk/sisalto.php?p=100] – 104, Semantics ...
+[VISK § 7XX](http://scripta.kotus.fi/visk/sisalto.php?p=7XX)
+
+Pronouns are subdivided into categories by semantic and syntactic means.
+Semantic categories delimit the type of referents (humane, sentient,
+object), qualification and quantification. (interrogative, quantor).
+Morphosyntactically distinct is class of proadjectives, that inflect and
+act like adjectives.
+There are six personal pronouns for the six deictic references used; first,
+second and third singular and plural. The personal pronouns have separate
+accusative cases marked by t suffix. The pronouns in standard literary
+Finnish are *minä* (I), *sinä* (you), *hän* (he), *me* (we), *te* (you),
+*he* (they). 
+Further reading: [VISK § 100](http://scripta.kotus.fi/visk/sisalto.php?p=100)
+
+*Personal pronouns examples:*
+* *minä:* `minä+Pron+Pers+Sg+Nom` (Eng. # me)
+* *sinut:* `sinä+Pron+Pers+Sg+Acc`
+* *heille:* `he+Pron+Pers+Pl+All`
+
+The personal pronouns are among the most dialectally varied words of the
+Finnish language. The pronouns forms are one of the factors separating
+eastern dialects from the western ones. The personal pronouns of eastern
+dialects are *mie*, *sie*, (*hää*, *hiä*), *myö*, *työ*, *hyö* resp.;
+The third singular being rare in modern use. |citation-needed|
+
+In the western dialects the pronouns are *mää*, *sää* for first and second
+singular, and more variedly *meitti*, *teitti*, *heitti* for plurals.
+
+In standard spoken Finnish, and in many cases even in written form, the
+words *mä* and *sä* are more common and preferred to longer minä and sinä
+for first and second singular respectively. In practice the distinction is
+much like between Estonian corresponding pronouns, but official norm still
+recommends only the long forms.
+For third singular the nominative form is *hän* as in standard written 
+language, however the inflection is without intervening *-ne-* part.
+In old literary Finnish and poetic language the forms *ma* and *sa* are
+still used.
+
+There are six demonstrative pronouns for six non-personal references. In
+standard written Finnish these are *tämä* (this), *tuo* (that), *se* (it),
+*nämä* (these), *nuo* (those), *ne* (those).
+
+Further reading: [VISK § 101](http://scripta.kotus.fi/visk/sisalto.php?p=101)
+
+*Demonstrative pronouns examples:*
+* *tämä:* `tämä+Pron+Dem+Sg+Nom`
+* *tuolle:* `tuo+Pron+Dem+Sg+All`
+
+In standard spoken Finnish the demonstrative pronouns are commonly
+*tää*, *toi*, *nää*, *noi* instead of *tämä*, *tuo*, *nämä*, *nuo*.
+
+Interrogative pronouns are used in question clauses. The basic
+interrogatives in standard written Finnish are *kuka* (who), *mikä* (what),
+*kumpi* (which); *millainen* (what kind of), *kuinka* (how),
+*miksi* (what for). 
+Further reading: [VISK §734](http://scripta.kotus.fi/visk/sisalto.php?p=734)
+
+*Interrogative pronouns examples:*
+* *kuka:* `kuka+Pron+Interr+Sg+Nom` (Eng. # who)
+* *ketä:* `kuka+Pron+Interr+Sg+Par`
+* *kenet:* `kuka+Pron+Interr+Sg+Acc`
+
+The stem of *kuka* is shortened by from *kene* to *ke* in spoken language.
+
+Few forms of *kuka* based on *ken* stem and *ku* stem have become archaic.
+Fuhrer reading: [VISK §102](http://scripta.kotus.fi/visk/sisalto.php?p=102)
+Also the short form of *mi* is archaic and limited to poetic
+use. |citation-needed|
+
+Relative pronouns are *kuka*, *joka* and *mikä* (which, whose). VISK §735|
+They are morphologically indistinct from corresponding interrogative
+pronouns.
+
+*Relative pronouns examples:*
+* *kuka:* `kuka+Pron+Rel+Sg+Nom`
+
+Quantor pronouns correspond to existential and universal quantifiers and
+their negations. The generic quantors are *joku* (someone),
+*jokin* (something), *jokainen* (everyone), *kaikki* (everything),
+*kukin* (each one), *kukaan* (no one), *mikään* (nothing), *jokunen*,
+*muutama*, *harva* (a few), *moni* (many) and *useampi* (more). The
+dual quantors, quantifying over set of two objects are *jompikumpi* (either
+or), *kumpikin*, *molemmat* (both), *kumpikaan* (neither). 
+[VISK §740](http://scripta.kotus.fi/visk/sisalto.php?p=740)
+The quantor pronouns subsume the class of indefinite pronouns used in
+older grammar defintions. 
+[VISK §742](http://scripta.kotus.fi/visk/sisalto.php?p=742)
+The indefinite quantifiers are classified as
+indefinite quantors for the sake of compatibility. This covers *joku*,
+*jokin*, *jompikumpi*, as well as specific
+*eräs*, *muuan* (some), *yksi* (one).  
+Further reading [VISK §746](http://scripta.kotus.fi/visk/sisalto.php?p=746)
+– 749.
+
+*Quantor pronouns examples:*
+* *joku:* `joku+Pron+Qu+Indef+Sg+Nom`
+* *jotkut:* `joku+Pron+Qu+Indef+Pl+Nom`
+
+Reflexive pronoun is the word *itse* refering to self, usually but not
+always coupled with possessive suffix to denote the referent. 
+Further reading: [VISK §729](http://scripta.kotus.fi/visk/sisalto.php?p=729)
+
+*Reflexive pronouns examples:*
+* *itse:* `itse+Pron+Refl+Sg+Nom`
+
+Reciprocal pronoun is *toinen* refering to each other. It uses possessive
+suffix to delimit the reciprocal group. 
+Further reading: [VISK §732](http://scripta.kotus.fi/visk/sisalto.php?p=732)
+
+*Reciprocal pronouns examples:*
+* *toisiamme:* `toinen+Pron+Recipr+Pl+Par+PxPl1`
+
+Proadjectives are pronouns that act in place of adjectives syntactically.
+They are formed by compounds (or derivations) of pronoun and *lainen* or
+*moinen* (such as). 
+Further reading: [VISK §715](http://scripta.kotus.fi/visk/sisalto.php?p=715)
+
+*Proadjectives examples:*
+* *jollainen:* `jollainen+A+Rel+Sg+Nom`
+
+Proadverbs are the pronouns that have lexicalised into adverbs by their
+syntax and semantics. 
+Further reading: [VISK §715](http://scripta.kotus.fi/visk/sisalto.php?p=715)
+
+*Proadverbs examples:*
+* *missä:* `missä+Adv+Interr+Ine`
+
+forms of *jompi* may not exist as free morphs. The marginal forms of
+*monias* are extinct. Oddly enough, the semireduplicative intensifier
+monituinen is nowhere to be found in VISK either.
+
+Marginally in the pro word category are nouns, adjectives and adverbs
+refering to equivalence in comparative context since they are
+also otherwise lacking meaning like other pro words. This
+fgroup includes words *sama* (same), *eri* (different), *muu* (other),
+*toinen* (another), and their derivations. 
+Further reading: [VISK §766](http://scripta.kotus.fi/visk/sisalto.php?p=766)
+
+In spoken language the supposedly non-inflecting *eri* has common inflected
+forms.
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/stems/pron.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/pron.lexc)</small>
+
+---
+
+# Proper nouns
+Proper nouns are morphologically indistinct subset of nouns. They have
+some orthographical differences, required capitalisations and compounding
+with hyphens. The derivations may lowercase. They may be classified 
+semantically to match other giellatekno things in the future.
+
+*Proper nouns examples:*
+* *Kalle:* `Kalle+N+Prop+Sg+Nom`
+* *Joensuu:* `Joensuu+N+Prop+Sg+Nom`
+
+details see [noun-stems.html].
+The proper nouns are classified and inflected along noun patterns, for 
+
+Many of Proper nouns inflect like nouns... however, compound differently
+
+*Nouns 20 ä examples:*
+* *Hyvinkää:* `Hyvinkää+N+Prop+Sg+Nom` (Eng. # Hyvinkää)
+* *Hyvinkäätä:* `Hyvinkää+N+Prop+Sg+Par`
+* *Hyvinkäähän:* `Hyvinkää+N+Prop+Sg+Ill`
+* *Hyvinkääseen:* `Hyvinkää+N+Prop+Sg+Ill`
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/stems/propernouns.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/propernouns.lexc)</small>
+
+---
+
+# Other symbols
+Punctuation characters detailed here are the characters that appear commonly
+in Finnish texts, but are not part of words or linguistic content. The
+punctuations control clause and sentence level annotations, and range
+from full stops and commas to brackets. While punctuation symbols might
+have limited use as inflecting units, the ones described here refer to
+punctuation symbols as used in their primary purpose, in isolation. The
+part of language norms controlling punctuation are from orthography and
+the references of punctuation in good language use are not from the grammar
+but issues of Kielikello journal on good Finnish language use. The most
+current issue on punctuation was [Kielikello 
+2/2006|http://arkisto.kielikello.fi/index.php?mid=2&pid=12&maid=110] (N.B.
+you may need to buy subscription or route through university servers).
+
+The primary punctuation marks are sentence final punctuation, they mark
+the end of a sentence. The most typical of these is full stop symbol, which
+ends neutral sentences. The exclamation mark and question mark end
+exclamative and questioning sentences respectively. An elliptic or unfinished
+sentence is ended with three successive full stops. In sloppy writing style
+it is common to use two, four or more full stops to mark an elliptic
+sentence. The Unicode compatibility character ellipsis has never been used
+for Finnish language and must not be used. Same applies for other
+combinations of sentence ending punctuation marks, the most common of these
+have separate analyses.
+
+*Punctuation and symbols examples:*
+* *.:* `.+Punct` (Eng. # full stop)
+
+The clause level punctuation marks are used in clause boundaries. The most
+typical of these is comma. The colon and semicolon are too. The clause
+boundaries do not have separate semantics needed in applications so they only
+have analyses for clause boundaries.
+
+The brackets are used to offset portions of text in opening and closing
+pairs. The most common pair is round brackets. Others used in Finnish are
+square, curly and angle brackets, in somewhat decreasing order of commonness.
+The angle brackets are commonly replaced by lower than symbol for opening and
+greater than symbol for closing bracket.
+The bracketed question mark is used to indicate uncertainty and bracketed
+exclamation mark to indicate surprise, both of these annotations are used
+within sentence as other bracketed constructions.
+
+The quotation marks are used to offset quotations. The typical ones in
+Finnish are the 9-shaped double quotation marks and apostrophes. Angle
+quotation marks can also be used, primarily in books and newspapers.
+It is possible to replace curly quotation marks with neutral typewriter
+ones where technology limits. It is also common to see foreign quotation
+marks or accent marks in place of quotation marks in sloppy writing style.
+
+There are two different dashes in Finnish. The hyphen is used for mainly
+word internally and won't appear as itself. The dash is used to offset
+some sentences or mark elision. The dash symbol can be either of unicode
+dash symbols or replaced with dash offset by spaces. In sloppy writing,
+two hyphens are often used in place of dashes.
+
+The space is used to separate words. For most applications the space has
+separate meaning so it rarely gets used as a symbol in applications of
+
+Less used symbols that appear in the Finnish texts; these do not have 
+special analyses. A slash can be used as a replacement of the meaning 'or',
+as a division slash or as a separator of verses in poem. 
+Backslash is used only in computer systems.
+Underscore is used only in computer systems.
+The pipe is used in dictionaries as morhpeme boundary, and computer systems.
+At sign is used only in computer systems.
+An ampersand can be used as a replacement of the meaning 'and'.
+Percent symbol is used after numeric expressions meaning 0.01 multiplier.
+Permille symbol is used after numeric expressions meaning 0.001 multiplier.
+§ sign is used for numbering sections etc.
+Degree sign is used with measurements. The second and minute signs can be
+used in conjunction with degree sign.
+The plus sign, specific minus sign and plus-minus signs are used in
+numeric expressions. The multiplication sign is used in numeric expressions.
+The equals sign is used in formulae. The asterisk is used as a marker
+for ungrammatical constructions and computer and other expressions.
+Registered and trademark symbols are rarely used. Copyright symbol is
+rarely used. Hash sign is used in phones and computer systems.
+The doubled § sign has been used as chapter range sign. The pilcrow
+sign can be used to mark chapters.
+The currency signs for euro, dollar, pound sterling, cent and yen can be
+used. I don't think anyone uses the currency sign ¤ ever.
+The lines below this one are not from any referenced source
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/stems/punct.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/punct.lexc)</small>
+
+---
+
+# Adverbial conjunctions
+The adverbial conjunctions join two unequal clauses or phrases together.
+The traditional term for this is sub-ordinating conjunction, it is assumed
+here for compatibility with other languages. Adverbial conjunctions are a
+subset of particles, so they do not inflect at all.
+
+The adverbial conjunctions are:
+ellei, että, jahka, jollei, jos, joskin, jos kohta, jotta, koska, kun,
+kunhan, mikäli, vaikka, (kunnes). 
+Further reading: [VISK § 818](http://scripta.kotus.fi/visk/sisalto.php?p=818)
+
+*Adverbial conjunctions examples:*
+* *että:* `että+CS`
+* *jotta:* `jotta+CS`
+* *koska:* `koska+CS`
+* *kun:* `kun+CS`
+* *jos:* `jos+CS`
+* *vaikka:* `vaikka+CS`
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/stems/subjunctions.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/subjunctions.lexc)</small>
+
+---
+
+# Suffixes
+Suffixes are bound morphs that come after nominals in compounds. Finnish 
+doesn't quite have real suffixes, these are mostly compound parts.
+
+Examples:
+
+*Suffixes examples:*
+* *banaaniaaltoinen:* `banaani+N+Sg+Nom#aaltoinen+A+Sg+Nom` (Eng. # banana waveful)
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/stems/suffixes.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/suffixes.lexc)</small>
+
+---
+
+Verbs are the words that inflect in tense, mood, personal suffixes, and
+clitics, but verbs also have s.c. infinite inflection pattern which is
+basically nominal derivations. The dictionary entries of verbs are
+A-infinitive forms, there are no verbs in dictionary that do not end in
+a or ä. Verbs are very distinct from other classes, their classification
+is not difficult.
+The key to find unique class for a verb is to pick stems and suffixes from:
+indicative non-past 1st singular and 3rd singular, indicative past 1st 
+singular, ...
+
+The auxiliary verbs require infinintive verbal phrase objects.
+Infinitives usually: *aion tappaa*, *joudun kuolemaan*
+
+The verbs are classified along the stem mutations suffix assimilation,
+and harmony:
+
+*Verb examples:*
+* *kutoo:* `kutoa+V+Act+Ind+Prs+Sg3` (Eng. # knit)
+* *kudotaan:* `kutoa+V+Pss+Ind+Prs+Pe4`
+* *tietää:* `tietää+V+Act+Ind+Prs+Sg3` (Eng. # know)
+* *tiesit:* `tietää+V+Act+Ind+Prt+Sg2`
+* *nähnyt:* `nähdä+V+Act+PrfPrc+Sg+Nom` (Eng. # see)
+* *juossut:* `juosta+V+Act+PrfPrc+Sg+Nom` (Eng. # run)
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/stems/verbs.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/verbs.lexc)</small>
 
 ---
 
@@ -9089,7 +9079,6 @@ CLB
 LEFT
 RIGHT
 WEB
-QMARK
 PPUNCT
 PUNCT
 
@@ -9201,9 +9190,6 @@ Sem/Txt
 
 HUMAN
 
-HAB-ACTOR
-HAB-ACTOR-NOT-HUMAN
-
 PROP-ATTR
 PROP-SUR
 
@@ -9292,8 +9278,6 @@ INITIAL
 ### Sets for word or not
 
 WORD
-REAL-WORD
-REAL-WORD-NOT-ABBR
 NOT-COMMA
 
 ### Case sets
@@ -9376,75 +9360,7 @@ Grammarchecker rules begin here
 ###  Spacing errors
 
 * * *
-
-<small>This (part of) documentation was generated from [tools/grammarcheckers/grammarchecker.cg3](https://github.com/giellalt/lang-fin/blob/main/tools/grammarcheckers/grammarchecker.cg3)</small>
-
----
-
-# Grammar checker tokenisation for fin
-
-Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
-Then just:
-```
-$ make
-$ echo "ja, ja" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
-```
-
-More usage examples:
-```
-$ echo "Juos gorreválggain lea (dárbbašlaš) deavdit gáibádusa boasttu olmmoš, man mielde lahtuid." | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
-$ echo "(gáfe) 'ja' ja 3. ja? ц jaja ukjend \"ukjend\"" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
-$ echo "márffibiillagáffe" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
-```
-
-Pmatch documentation:
-<https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch>
-
-Characters which have analyses in the lexicon, but can appear without spaces
-before/after, that is, with no context conditions, and adjacent to words:
-* Punct contains ASCII punctuation marks
-* The symbol after m-dash is soft-hyphen `U+00AD`
-* The symbol following {•} is byte-order-mark / zero-width no-break space
-`U+FEFF`.
-
-Whitespace contains ASCII white space and
-the List contains some unicode white space characters
-* En Quad U+2000 to Zero-Width Joiner U+200d'
-* Narrow No-Break Space U+202F
-* Medium Mathematical Space U+205F
-* Word joiner U+2060
-
-Apart from what's in our morphology, there are
-1) unknown word-like forms, and
-2) unmatched strings
-We want to give 1) a match, but let 2) be treated specially by hfst-tokenise -a
-* select extended latin symbols
-* select symbols
-* various symbols from Private area (probably Microsoft),
-so far:
-* U+F0B7 for "x in box"
-
-TODO: Could use something like this, but built-in's don't include šžđčŋ:
-
-Simply give an empty reading when something is unknown:
-hfst-tokenise --giella-cg will treat such empty analyses as unknowns, and
-remove empty analyses from other readings. Empty readings are also
-legal in CG, they get a default baseform equal to the wordform, but
-no tag to check, so it's safer to let hfst-tokenise handle them.
-
-Finally we mark as a token any sequence making up a:
-* known word in context
-* unknown (OOV) token in context
-* sequence of word and punctuation
-* URL in context
-
-* * *
-
-<small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript](https://github.com/giellalt/lang-fin/blob/main/tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript)</small>
-
----
-
-# Tokeniser for fin
+<small>This (part of) documentation was generated from [tools/grammarcheckers/grammarchecker.cg3](https://github.com/giellalt/lang-fin/blob/main/tools/grammarcheckers/grammarchecker.cg3)</small># Tokeniser for fin
 
 Usage:
 ```
@@ -9456,7 +9372,7 @@ $ echo "márffibiillagáffe" | hfst-tokenise --giella-cg tokeniser-disamb-gt-des
 ```
 
 Pmatch documentation:
-<https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch>
+<https://github.com/hfst/hfst/wiki/HfstPmatch>
 
 Characters which have analyses in the lexicon, but can appear without spaces
 before/after, that is, with no context conditions, and adjacent to words:
@@ -9504,6 +9420,69 @@ Finally we mark as a token any sequence making up a:
 * * *
 
 <small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-disamb-gt-desc.pmscript](https://github.com/giellalt/lang-fin/blob/main/tools/tokenisers/tokeniser-disamb-gt-desc.pmscript)</small>
+
+---
+
+# Grammar checker tokenisation for fin
+
+Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
+Then just:
+```
+$ make
+$ echo "ja, ja" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+```
+
+More usage examples:
+```
+$ echo "Juos gorreválggain lea (dárbbašlaš) deavdit gáibádusa boasttu olmmoš, man mielde lahtuid." | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+$ echo "(gáfe) 'ja' ja 3. ja? ц jaja ukjend \"ukjend\"" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+$ echo "márffibiillagáffe" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+```
+
+Pmatch documentation:
+<https://github.com/hfst/hfst/wiki/HfstPmatch>
+
+Characters which have analyses in the lexicon, but can appear without spaces
+before/after, that is, with no context conditions, and adjacent to words:
+* Punct contains ASCII punctuation marks
+* The symbol after m-dash is soft-hyphen `U+00AD`
+* The symbol following {•} is byte-order-mark / zero-width no-break space
+`U+FEFF`.
+
+Whitespace contains ASCII white space and
+the List contains some unicode white space characters
+* En Quad U+2000 to Zero-Width Joiner U+200d'
+* Narrow No-Break Space U+202F
+* Medium Mathematical Space U+205F
+* Word joiner U+2060
+
+Apart from what's in our morphology, there are
+1) unknown word-like forms, and
+2) unmatched strings
+We want to give 1) a match, but let 2) be treated specially by hfst-tokenise -a
+* select extended latin symbols
+* select symbols
+* various symbols from Private area (probably Microsoft),
+so far:
+* U+F0B7 for "x in box"
+
+TODO: Could use something like this, but built-in's don't include šžđčŋ:
+
+Simply give an empty reading when something is unknown:
+hfst-tokenise --giella-cg will treat such empty analyses as unknowns, and
+remove empty analyses from other readings. Empty readings are also
+legal in CG, they get a default baseform equal to the wordform, but
+no tag to check, so it's safer to let hfst-tokenise handle them.
+
+Finally we mark as a token any sequence making up a:
+* known word in context
+* unknown (OOV) token in context
+* sequence of word and punctuation
+* URL in context
+
+* * *
+
+<small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript](https://github.com/giellalt/lang-fin/blob/main/tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript)</small>
 
 ---
 

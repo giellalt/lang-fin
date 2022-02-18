@@ -9,8 +9,4 @@ Idiomatic cases
 * **REMOVE X** removes X whenever there is any other tag.
 
 * * *
-
 <small>This (part of) documentation was generated from [src/cg3/disambiguator.cg3](https://github.com/giellalt/lang-fin/blob/main/src/cg3/disambiguator.cg3)</small>
-
----
-
