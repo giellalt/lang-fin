@@ -2,7 +2,7 @@ The Finnish morphology and tools
 ==========================================
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-fin)](https://github.com/giellalt/lang-fin/issues)
-[![Build Status](https://github.com/giellalt/lang-fin/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-fin/actions)
+[![Build Status](https://divvun-tc.thetc.se/api/github/v1/repository/giellalt/lang-fin/main/badge.svg)](https://github.com/giellalt/lang-fin/actions)
 [![License](https://img.shields.io/github/license/giellalt/lang-fin)](https://github.com/giellalt/lang-fin/blob/main/LICENSE)
 
 This repository contains finite state source files for the Finnish language,
