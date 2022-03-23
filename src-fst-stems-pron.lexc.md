@@ -19,7 +19,7 @@ Finnish are *minä* (I), *sinä* (you), *hän* (he), *me* (we), *te* (you),
 *he* (they). 
 Further reading: [VISK § 100](http://scripta.kotus.fi/visk/sisalto.php?p=100)
 
-*Personal pronouns examples:*
+* Personal pronouns examples:*
 * *minä:* `minä+Pron+Pers+Sg+Nom` (Eng. # me)
 * *sinut:* `sinä+Pron+Pers+Sg+Acc`
 * *heille:* `he+Pron+Pers+Pl+All`
@@ -49,7 +49,7 @@ standard written Finnish these are *tämä* (this), *tuo* (that), *se* (it),
 
 Further reading: [VISK § 101](http://scripta.kotus.fi/visk/sisalto.php?p=101)
 
-*Demonstrative pronouns examples:*
+* Demonstrative pronouns examples:*
 * *tämä:* `tämä+Pron+Dem+Sg+Nom`
 * *tuolle:* `tuo+Pron+Dem+Sg+All`
 
@@ -62,7 +62,7 @@ interrogatives in standard written Finnish are *kuka* (who), *mikä* (what),
 *miksi* (what for). 
 Further reading: [VISK §734](http://scripta.kotus.fi/visk/sisalto.php?p=734)
 
-*Interrogative pronouns examples:*
+* Interrogative pronouns examples:*
 * *kuka:* `kuka+Pron+Interr+Sg+Nom` (Eng. # who)
 * *ketä:* `kuka+Pron+Interr+Sg+Par`
 * *kenet:* `kuka+Pron+Interr+Sg+Acc`
@@ -78,7 +78,7 @@ Relative pronouns are *kuka*, *joka* and *mikä* (which, whose). VISK §735|
 They are morphologically indistinct from corresponding interrogative
 pronouns.
 
-*Relative pronouns examples:*
+* Relative pronouns examples:*
 * *kuka:* `kuka+Pron+Rel+Sg+Nom`
 
 Quantor pronouns correspond to existential and universal quantifiers and
@@ -99,7 +99,7 @@ indefinite quantors for the sake of compatibility. This covers *joku*,
 Further reading [VISK §746](http://scripta.kotus.fi/visk/sisalto.php?p=746)
 – 749.
 
-*Quantor pronouns examples:*
+* Quantor pronouns examples:*
 * *joku:* `joku+Pron+Qu+Indef+Sg+Nom`
 * *jotkut:* `joku+Pron+Qu+Indef+Pl+Nom`
 
@@ -107,14 +107,14 @@ Reflexive pronoun is the word *itse* refering to self, usually but not
 always coupled with possessive suffix to denote the referent. 
 Further reading: [VISK §729](http://scripta.kotus.fi/visk/sisalto.php?p=729)
 
-*Reflexive pronouns examples:*
+* Reflexive pronouns examples:*
 * *itse:* `itse+Pron+Refl+Sg+Nom`
 
 Reciprocal pronoun is *toinen* refering to each other. It uses possessive
 suffix to delimit the reciprocal group. 
 Further reading: [VISK §732](http://scripta.kotus.fi/visk/sisalto.php?p=732)
 
-*Reciprocal pronouns examples:*
+* Reciprocal pronouns examples:*
 * *toisiamme:* `toinen+Pron+Recipr+Pl+Par+PxPl1`
 
 Proadjectives are pronouns that act in place of adjectives syntactically.
@@ -122,14 +122,14 @@ They are formed by compounds (or derivations) of pronoun and *lainen* or
 *moinen* (such as). 
 Further reading: [VISK §715](http://scripta.kotus.fi/visk/sisalto.php?p=715)
 
-*Proadjectives examples:*
+* Proadjectives examples:*
 * *jollainen:* `jollainen+A+Rel+Sg+Nom`
 
 Proadverbs are the pronouns that have lexicalised into adverbs by their
 syntax and semantics. 
 Further reading: [VISK §715](http://scripta.kotus.fi/visk/sisalto.php?p=715)
 
-*Proadverbs examples:*
+* Proadverbs examples:*
 * *missä:* `missä+Adv+Interr+Ine`
 
 forms of *jompi* may not exist as free morphs. The marginal forms of

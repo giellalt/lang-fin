@@ -33,7 +33,7 @@ This class includes back vowel moderative
 derivations. N.B. the comparative derivation of moderatives is semantically
 awkward, but morphologically plausible.
 
-*Adjectives 1 o examples:*
+* Adjectives 1 o examples:*
 * *tummahko:* `tummahko+A+Sg+Nom` (Eng. # darkish)
 * *tummahkona:* `tummahko+A+Sg+Ess`
 * *tummahkossa:* `tummahko+A+Sg+Ine`
@@ -60,7 +60,7 @@ the class is ¹. These stems should be entered in dictionary like:
 Common part of this class is formed by nut participle 
 passive’s _back_ vowel versions after s stem verbs:
 
-*Adjectives 1 u examples:*
+* Adjectives 1 u examples:*
 * *valkaistu:* `valkaistu+A+Sg+Nom` (Eng. # bleached)
 * *valkaistua:* `valkaistu+A+Sg+Par`
 * *valkaistuun:* `valkaistu+A+Sg+Ill`
@@ -78,7 +78,7 @@ The stems ending in y are in class `ADJ_HÄPÄISTY`, and in old dictionaries
 the class is ¹. Common part of this class is formed by nut participle 
 passive’s _front_ vowel versions after s stem verbs:
 
-*Adjectives 1 y examples:*
+* Adjectives 1 y examples:*
 * *häpäisty:* `häpäisty+A+Sg+Nom` (Eng. # defiled)
 * *häpäistyä:* `häpäisty+A+Sg+Par`
 * *häpäistyyn:* `häpäisty+A+Sg+Ill`
@@ -96,7 +96,7 @@ The words in this class ending in ö belong to `ADJ_HÖLÖ`, the old
 dictionaries use class ¹. This class includes front vowel moderative
 derivations.
 
-*Adjectives 1 ö examples:*
+* Adjectives 1 ö examples:*
 * *hölö:* `hölö+A+Sg+Nom` (Eng. # blabbermouth)
 * *hölöä:* `hölö+A+Sg+Par`
 * *hölöön:* `hölö+A+Sg+Ill`
@@ -115,7 +115,7 @@ unchanging bisyllabic u, y, o and ö stems, and no stem-internal variation.
 The classification for the back vowel variant of this class is
 `ADJ_TOOPE`, and old dictionaries used the class ⁸.
 
-*Adjectives 8 back examples:*
+* Adjectives 8 back examples:*
 * *toope:* `toope+A+Sg+Nom` (Eng. # doofus)
 * *toopea:* `toope+A+Sg+Par`
 * *toopeen:* `toope+A+Sg+Ill`
@@ -131,7 +131,7 @@ genitive:
 The front variation of unchanging e stems is class `@LEXNAME`, and in
 old dictionaries ⁸.
 
-*Adjectives 8 front examples:*
+* Adjectives 8 front examples:*
 * *beige:* `beige+A+Sg+Nom` (Eng. # beige)
 * *beigeä:* `beige+A+Sg+Par`
 * *beigeen:* `beige+A+Sg+Ill`
@@ -150,7 +150,7 @@ ones.
 The o final trisyllabic stems are in class `ADJ_KOHELO`, and the old
 dictionaries used ². 
 
-*Adjectives 2 o examples:*
+* Adjectives 2 o examples:*
 * *tohelo:* `tohelo+A+Sg+Nom` (Eng. # clumsy)
 * *toheloita:* `tohelo+A+Pl+Par`
 * *toheloja:* `tohelo+A+Pl+Par`
@@ -162,7 +162,7 @@ dictionaries used ².
 
 And the trisyllabic ö stem is classified `ADJ_LÖPERÖ`.
 
-*Adjectives 2 ö examples:*
+* Adjectives 2 ö examples:*
 * *löperö:* `löperö+A+Sg+Nom` (Eng. # sloppy)
 * *löperöjen:* `löperö+A+Pl+Gen`
 * *löperöiden:* `löperö+A+Pl+Gen`
@@ -178,7 +178,7 @@ singular and plural partitives and plural genitive
 The class for o final long vowel stems is `ADJ_AUTIO`, and old
 old dictionaries used ³. 
 
-*Adjectives 3 o examples:*
+* Adjectives 3 o examples:*
 * *autio:* `autio+A+Sg+Nom` (Eng. # deserted)
 * *autiota:* `autio+A+Sg+Par`
 * ★*autioa:* `autio+A+Sg+Par` (is not standard language)
@@ -191,7 +191,7 @@ old dictionaries used ³.
 The front voweled stems with ö after vowels go to class `ADJ_RIIVIÖ`,
 and used the old dictionary class ³.
 
-*Adjectives 3 ö examples:*
+* Adjectives 3 ö examples:*
 * *riiviö:* `riiviö+A+Sg+Nom` (Eng. # nasty)
 * *riiviötä:* `riiviö+A+Sg+Par`
 * *riiviöiden:* `riiviö+A+Pl+Gen`
@@ -211,7 +211,7 @@ yet found for adjectives, for full reference, read the noun classes.
 The quantitative k gradations with o bisyllabic o stem use class
 `ADJ_KOLKKO`, and old dictionaries use classes ¹⁻A and ¹⁻D.
 
-*Adjective gradations 1 k~0 o examples:*
+* Adjective gradations 1 k~0 o examples:*
 * *kolkko:* `kolkko+A+Sg+Nom` (Eng. # gloomy)
 * *kolkossa:* `kolkko+A+Sg+Ine`
 * *kolkoista:* `kolkko+A+Pl+Ela`
@@ -222,7 +222,7 @@ The quantitative k gradations with o bisyllabic o stem use class
 The quantitative k gradations with u bisyllabic o stem use class
 `ADJ_VIRKKU`, and old dictionaries use classes ¹⁻A and ¹⁻D.
 
-*Adjective gradations 1 k~0 u examples:*
+* Adjective gradations 1 k~0 u examples:*
 * *virkku:* `virkku+A+Sg+Nom` (Eng. # ???)
 * *virkussa:* `virkku+A+Sg+Ine`
 * *virkuista:* `virkku+A+Pl+Ela`
@@ -233,7 +233,7 @@ The quantitative k gradations with u bisyllabic o stem use class
 The quantitative k gradations with y bisyllabic o stem use class
 `ADJ_SÄIKKY`, and old dictionaries use classes ¹⁻A and ¹⁻D.
 
-*Adjective gradations 1 k~0 y examples:*
+* Adjective gradations 1 k~0 y examples:*
 * *säikky:* `säikky+A+Sg+Nom` (Eng. # ???)
 * *säikyssä:* `säikky+A+Sg+Ine`
 * *säikyistä:* `säikky+A+Pl+Ela`
@@ -244,7 +244,7 @@ The quantitative k gradations with y bisyllabic o stem use class
 The quantitative k gradations with o bisyllabic ö stem use class
 `ADJ_KÖKKÖ`, and old dictionaries use classes ¹⁻A and ¹⁻D.
 
-*Adjective gradations 1 k~0 ö examples:*
+* Adjective gradations 1 k~0 ö examples:*
 * *kökkö:* `kökkö+A+Sg+Nom` (Eng. # ???)
 * *kökössä:* `kökkö+A+Sg+Ine`
 * *kököistä:* `kökkö+A+Pl+Ela`
@@ -257,7 +257,7 @@ there is no unvarying e final adjective with _k ~ 0_ gradation.
 The quantitative gradation of p before o is in class `ADJ_SUIPPO` and
 old dictionaries would use ¹⁻B.
 
-*Adjective gradations 1 p~0 o examples:*
+* Adjective gradations 1 p~0 o examples:*
 * *suippo:* `suippo+A+Sg+Nom` (Eng. # ?)
 * *suipossa:* `suippo+A+Sg+Ine`
 * *suipoista:* `suippo+A+Pl+Ela`
@@ -270,7 +270,7 @@ old dictionaries would use ¹⁻B.
 It is only a nominal compound based adjective that ends in u and has
 p ~ 0 gradation here:
 
-*Adjective gradations 1 p~0 u examples:*
+* Adjective gradations 1 p~0 u examples:*
 * *ikäloppu:* `ikäloppu+A+Sg+Nom` (Eng. # age-old)
 * *ikälopussa:* `ikäloppu+A+Sg+Ine`
 * *ikälopuista:* `ikäloppu+A+Pl+Ela`
@@ -283,7 +283,7 @@ and none of the adjectives end in y and quantitative p gradation.
 The quantitative gradation of p before ö is in class `ADJ_LÖRPPÖ` and
 old dictionaries would use ¹⁻B.
 
-*Adjective gradations 1 p~0 ö examples:*
+* Adjective gradations 1 p~0 ö examples:*
 * *lörppö:* `lörppö+A+Sg+Nom` (Eng. # blabbermouth)
 * *lörpössä:* `lörppö+A+Sg+Ine`
 * *lörpöistä:* `lörppö+A+Pl+Ela`
@@ -294,7 +294,7 @@ old dictionaries would use ¹⁻B.
 The quantitative gradation of t before o is in class `ADJ_VELTTO`, 
 which was ¹⁻C in the dictionary.
 
-*Adjective gradations 1 t~0 o examples:*
+* Adjective gradations 1 t~0 o examples:*
 * *veltto:* `veltto+A+Sg+Nom` (Eng. # lazy)
 * *veltossa:* `veltto+A+Sg+Ine`
 * *veltoista:* `veltto+A+Pl+Ela`
@@ -307,7 +307,7 @@ which was ¹⁻C in the dictionary.
 The u stems with quantitative t gradation are commonest with nut participle
 passive derivation’s back form (-ttu).
 
-*Adjective gradations 1 t~0 u examples:*
+* Adjective gradations 1 t~0 u examples:*
 * *vimmattu:* `vimmattu+A+Sg+Nom` (Eng. # wicked)
 * *vimmatussa:* `vimmattu+A+Sg+Ine`
 * *vimmatuista:* `vimmattu+A+Pl+Ela`
@@ -320,7 +320,7 @@ which was ¹⁻C in the dictionary.
 The u stems with quantitative t gradation are commonest with nut participle
 passive derivation’s front (-tty).
 
-*Adjective gradations 1 t~0 y examples:*
+* Adjective gradations 1 t~0 y examples:*
 * *ylennetty:* `ylennetty+A+Sg+Nom` (Eng. # promoted)
 * *ylennetyssä:* `ylennetty+A+Sg+Ine`
 * *ylennetyistä:* `ylennetty+A+Pl+Ela`
@@ -331,7 +331,7 @@ passive derivation’s front (-tty).
 The quantitative gradation of t before y is in class `ADJ_KYYTTÖ`, 
 which was ¹⁻C in the dictionary. 
 
-*Adjective gradations 1 t~0 ö examples:*
+* Adjective gradations 1 t~0 ö examples:*
 * *kyyttö:* `kyyttö+A+Sg+Nom` (Eng. # ?????)
 * *kyytössä:* `kyyttö+A+Sg+Ine`
 * *kyytöistä:* `kyyttö+A+Pl+Ela`
@@ -345,7 +345,7 @@ instead of nothing in the weak grade.
 The class for o final bisyllabic stems with optional ’ is `ADJ_LAKO`,
 this is a subset of dictionary class ¹⁻D. 
 
-*Adjective gradations 1 k~’~0 o examples:*
+* Adjective gradations 1 k~’~0 o examples:*
 * *lako:* `lako+A+Sg+Nom`
 * *laossa:* `lako+A+Sg+Ine`
 * *la’ossa:* `lako+A+Sg+Ine`
@@ -362,7 +362,7 @@ The qualitative gradation of p between vowels in o stems goes to v,
 the class for this is `ADJ_KELPO`, the dictionary class for this is
 ¹⁻E.
 
-*Adjective gradations 1 p~v o examples:*
+* Adjective gradations 1 p~v o examples:*
 * *kelpo:* `kelpo+A+Sg+Nom` (Eng. # proper)
 * *kelvossa:* `kelpo+A+Sg+Ine`
 * *kelpoina:* `kelpo+A+Pl+Ess`
@@ -377,7 +377,7 @@ nor ö with p.
 The gradation of t ~ d after o is in class `ADJ_MIETO`, the
 dictionary class for this is ¹⁻F.
 
-*Adjective gradations 1 t~d o examples:*
+* Adjective gradations 1 t~d o examples:*
 * *mieto:* `mieto+A+Sg+Nom` (Eng. # mild)
 * *miedossa:* `mieto+A+Sg+Ine`
 * *mietoihin:* `mieto+A+Pl+Ill`
@@ -390,7 +390,7 @@ dictionary class for this is ¹⁻F.
 The commonest t ~ d variation in u stems comes from nut participle’s
 passive’s back form (-tu).
 
-*Adjective gradations 1 t~d u examples:*
+* Adjective gradations 1 t~d u examples:*
 * *viipaloitu:* `viipaloitu+A+Sg+Nom` (Eng. # sliced)
 * *viipaloidussa:* `viipaloitu+A+Sg+Ine`
 * *viipaloituihin:* `viipaloitu+A+Pl+Ill`
@@ -403,7 +403,7 @@ dictionary class for this is ¹⁻F.
 The commonest t ~ d variation in u stems comes from nut participle’s
 passive’s front form (-ty).
 
-*Adjective gradations 1 t~d y examples:*
+* Adjective gradations 1 t~d y examples:*
 * *yksilöity:* `yksilöity+A+Sg+Nom` (Eng. # singled)
 * *yksilöidyssä:* `yksilöity+A+Sg+Ine`
 * *yksilöityihin:* `yksilöity+A+Pl+Ill`
@@ -416,7 +416,7 @@ And there's none with t and ö
 The adjectives with -nko stem belong to class `ADJ_LENKO`, and the
 dictionary class was ¹⁻G.
 
-*Adjective gradations 1 k~g o examples:*
+* Adjective gradations 1 k~g o examples:*
 * *lenko:* `lenko+A+Sg+Nom` (Eng. # crooked)
 * *lengossa:* `lenko+A+Sg+Ine`
 * *lengoista:* `lenko+A+Pl+Ela`
@@ -432,7 +432,7 @@ For all these, check the noun patterns.
 The quantitative gradation of t after l in o stems is in class 
 `ADJ_MELTO`, which corresponds to dictionary class ¹⁻I.
 
-*Adjective gradations 1 t~l o examples:*
+* Adjective gradations 1 t~l o examples:*
 * *melto:* `melto+A+Sg+Nom` (Eng. # ?????)
 * *mellossa:* `melto+A+Sg+Ine`
 * *meltoihin:* `melto+A+Pl+Ill`
@@ -444,7 +444,7 @@ The quantitative gradation of t after l in o stems is in class
 `ADJ_PARANNELTU`, which corresponds to dictionary class ¹⁻I.
 The common u stem after l is in nut participles passive (-tu):
 
-*Adjective gradations 1 t~l u examples:*
+* Adjective gradations 1 t~l u examples:*
 * *paranneltu:* `paranneltu+A+Sg+Nom` (Eng. # embettered)
 * *parannellussa:* `paranneltu+A+Sg+Ine`
 * *paranneltuihin:* `paranneltu+A+Pl+Ill`
@@ -456,7 +456,7 @@ The quantitative gradation of t after l in o stems is in class
 `ADJ_VÄHÄTELTY`, which corresponds to dictionary class ¹⁻I.
 As with y and t:
 
-*Adjective gradations 1 t~l y examples:*
+* Adjective gradations 1 t~l y examples:*
 * *vähätelty:* `vähätelty+A+Sg+Nom` (Eng. # belittled)
 * *vähätellyssä:* `vähätelty+A+Sg+Ine`
 * *vähäteltyihin:* `vähätelty+A+Pl+Ill`
@@ -469,7 +469,7 @@ There's no adjective ending -ltö in our lexical database.
 The quantitative gradation of t after n in o stems is in class 
 `ADJ_VENTO`, which corresponds to dictionary class ¹⁻J.
 
-*Adjective gradations 1 t~n o examples:*
+* Adjective gradations 1 t~n o examples:*
 * *vento:* `vento+A+Sg+Nom` (Eng. # ?)
 * *vennossa:* `vento+A+Sg+Ine`
 * *ventoihin:* `vento+A+Pl+Ill`
@@ -481,7 +481,7 @@ The quantitative gradation of t after n in u stems is in class
 `ADJ_PANTU`, which corresponds to dictionary class ¹⁻I.
 The common u stem after n is in nut participle’s passive’s back form (-tu):
 
-*Adjective gradations 1 t~n u examples:*
+* Adjective gradations 1 t~n u examples:*
 * *pantu:* `pantu+A+Sg+Nom` (Eng. # brewed)
 * *pannussa:* `pantu+A+Sg+Ine`
 * *pantuihin:* `pantu+A+Pl+Ill`
@@ -494,7 +494,7 @@ The quantitative gradation of t after n in y stems is in class
 The common u stem after n is in nut participle’s passive’s front form
 (-ty):
 
-*Adjective gradations 1 t~n y examples:*
+* Adjective gradations 1 t~n y examples:*
 * *menty:* `menty+A+Sg+Nom` (Eng. # belittled)
 * *mennyssä:* `menty+A+Sg+Ine`
 * *mentyihin:* `menty+A+Pl+Ill`
@@ -507,7 +507,7 @@ There are no adjectives ending in -ntö
 The quantitative gradation of t after r in o stems is in class
 `ADJ_MARTO`, which corresponds to dictionary class ¹⁻J.
 
-*Adjective gradations 1 t~r o examples:*
+* Adjective gradations 1 t~r o examples:*
 * *marto:* `marto+A+Sg+Nom` (Eng. # ???)
 * *marrossa:* `marto+A+Sg+Ine`
 * *martoihin:* `marto+A+Pl+Ill`
@@ -519,7 +519,7 @@ The quantitative gradation of t after r in u stems is in class
 `ADJ_PURTU`, which corresponds to dictionary class ¹⁻J.
 The common u stem after r is in nut participle’s passive’s back form (-tu):
 
-*Adjective gradations 1 t~r u examples:*
+* Adjective gradations 1 t~r u examples:*
 * *purtu:* `purtu+A+Sg+Nom` (Eng. # bitten)
 * *purrussa:* `purtu+A+Sg+Ine`
 * *purtuihin:* `purtu+A+Pl+Ill`
@@ -532,7 +532,7 @@ The quantitative gradation of t after r in y stems is in class
 The common u stem after r is in nut participle’s passive’s front fomr
 (-ty):
 
-*Adjective gradations 1 t~r y examples:*
+* Adjective gradations 1 t~r y examples:*
 * *pierty:* `pierty+A+Sg+Nom` (Eng. # befarted)
 * *pierryssä:* `pierty+A+Sg+Ine`
 * *piertyihin:* `pierty+A+Pl+Ill`
@@ -550,7 +550,7 @@ in both strong and weak forms.
 The class for trisyllabic -kko stems is `ADJ_HUPAKKO`, the corresponding
 dictionary class is ⁴⁻D. 
 
-*Adjectives 4 o examples:*
+* Adjectives 4 o examples:*
 * *hupakko:* `hupakko+A+Sg+Nom` (Eng. # silly girl)
 * *hupakoihin:* `hupakko+A+Pl+Ill`
 * *hupakkoihin:* `hupakko+A+Pl+Ill`
@@ -567,7 +567,7 @@ variants:
 The i finals with back vowel harmony go to class `ADJ_ABNORMI`, where
 old dictionary classification was ⁵.
 
-*Adjectives 5 back examples:*
+* Adjectives 5 back examples:*
 * *abnormi:* `abnormi+A+Sg+Nom` (Eng. # abnorm)
 * *abnormeina:* `abnormi+A+Pl+Ess`
 * *abnormien:* `abnormi+A+Pl+Gen`
@@ -577,7 +577,7 @@ old dictionary classification was ⁵.
 The i finals with front vowel harmony go to class `ADJ_STYDI`, where
 old dictionary classification was ⁵.
 
-*Adjectives 5 front examples:*
+* Adjectives 5 front examples:*
 * *stydi:* `stydi+A+Sg+Nom` (Eng. # stiff)
 * *stydeinä:* `stydi+A+Pl+Ess`
 * *stydien:* `stydi+A+Pl+Gen`
@@ -587,7 +587,7 @@ old dictionary classification was ⁵.
 Stems with quantitative k gradation, i final and back harmony are in class 
 `ADJ_OPAAKKI` and dictionary class ⁵⁻A or ⁵⁻D.
 
-*Adjectives 5 k~0 back examples:*
+* Adjectives 5 k~0 back examples:*
 * *opaakki:* `opaakki+A+Sg+Nom` (Eng. # opaque)
 * *opaakissa:* `opaakki+A+Sg+Ine`
 * *opaakkeina:* `opaakki+A+Pl+Ess`
@@ -599,7 +599,7 @@ Stems with quantitative k gradation, i final and back harmony are in class
 Stems with quantitative k gradation, i final and front harmony are in class
 `ADJ_PINKKI` and dictionary class ⁵⁻A or ⁵⁻D.
 
-*Adjectives 5 k~0 front examples:*
+* Adjectives 5 k~0 front examples:*
 * *pinkki:* `pinkki+A+Sg+Nom` (Eng. # pink)
 * *pinkissä:* `pinkki+A+Sg+Ine`
 * *pinkkeinä:* `pinkki+A+Pl+Ess`
@@ -613,7 +613,7 @@ There's no back vowel version of the bisyllabic gradating -ppi form.
 Stems with quantitative p gradation, i final and front harmony are in class
 `ADJ_SIPPI` and dictionary class ⁵⁻B.
 
-*Adjectives 5 p~0 front examples:*
+* Adjectives 5 p~0 front examples:*
 * *sippi:* `sippi+A+Sg+Nom` (Eng. # bust)
 * *sipissä:* `sippi+A+Sg+Ine`
 * *sippeinä:* `sippi+A+Pl+Ess`
@@ -625,7 +625,7 @@ Stems with quantitative p gradation, i final and front harmony are in class
 Stems with quantitative t gradation, i final and back harmony are in class
 `ADJ_HURTTI` and dictionary class ⁵⁻C.
 
-*Adjectives 5 t~0 back examples:*
+* Adjectives 5 t~0 back examples:*
 * *hurtti:* `hurtti+A+Sg+Nom` (Eng. # grunchy)
 * *hurtissa:* `hurtti+A+Sg+Ine`
 * *hurtteina:* `hurtti+A+Pl+Ess`
@@ -637,7 +637,7 @@ Stems with quantitative t gradation, i final and back harmony are in class
 Stems with quantitative t gradation, i final and front harmony are in class
 `ADJ_VÄÄRTTI` and dictionary class ⁵⁻C.
 
-*Adjectives 5 t~0 front examples:*
+* Adjectives 5 t~0 front examples:*
 * *väärtti:* `väärtti+A+Sg+Nom` (Eng. # worthy)
 * *väärtissä:* `väärtti+A+Sg+Ine`
 * *väärtteinä:* `väärtti+A+Pl+Ess`
@@ -651,7 +651,7 @@ There are no bisyllabic adjectives ending in vowel and gradating -pi.
 Stems with t ~ d gradation, i final and back harmony are in class
 `ADJ_TUHTI` and dictionary class ⁵⁻F.
 
-*Adjectives 5 t~d back examples:*
+* Adjectives 5 t~d back examples:*
 * *tuhti:* `tuhti+A+Sg+Nom` (Eng. # stocky)
 * *tuhdissa:* `tuhti+A+Sg+Ine`
 * *tuhteina:* `tuhti+A+Pl+Ess`
@@ -663,7 +663,7 @@ Stems with t ~ d gradation, i final and back harmony are in class
 Stems with t ~ d gradation, i final and front harmony are in class
 `ADJ_REHTI` and dictionary class ⁵⁻F.
 
-*Adjectives 5 t~d front examples:*
+* Adjectives 5 t~d front examples:*
 * *rehti:* `rehti+A+Sg+Nom`
 * *rehdissä:* `rehti+A+Sg+Ine`
 * *rehteinä:* `rehti+A+Pl+Ess`
@@ -679,7 +679,7 @@ There are no adjectives with i stems with other gradations.
 The i stems with trisyllabic allomorph sets have class `ADJ_ABNORMAALI`, and
 dictionary class of ⁶.
 
-*Adjectives 6 back examples:*
+* Adjectives 6 back examples:*
 * *abnormaali:* `abnormaali+A+Sg+Nom` (Eng. # abnormal)
 * *abnormaaleja:* `abnormaali+A+Pl+Par`
 * *abnormaaleiden:* `abnormaali+A+Pl+Gen`
@@ -689,7 +689,7 @@ dictionary class of ⁶.
 The i stems with trisyllabic allomorph sets have class `ADJ_ÖYKKÄRI`, and
 dictionary class of ⁶.
 
-*Adjectives 6 front examples:*
+* Adjectives 6 front examples:*
 * *öykkäri:* `öykkäri+A+Sg+Nom` (Eng. # chav)
 * *öykkärejä:* `öykkäri+A+Pl+Par`
 * *öykkäreiden:* `öykkäri+A+Pl+Gen`
@@ -710,7 +710,7 @@ of comparative and plural stems.
 Bisyllabic a stems with e comparative and j plurals are in class 
 `ADJ_AAVA`, and dictionary class ⁹.
 
-*Adjectives 9 examples:*
+* Adjectives 9 examples:*
 * *aava:* `aava+A+Sg+Nom` (Eng. # open (of fields, plains))
 * *aavaa:* `aava+A+Sg+Par`
 * *aavana:* `aava+A+Sg+Ess`
@@ -724,7 +724,7 @@ Bisyllabic a stems with e comparative and j plurals are in class
 The ka stem with e comparative and j plurals is `ADJ_TARKKA`, and the 
 dictionary class is ⁹-A or ⁹⁻D.
 
-*Adjectives 9 k~0 examples:*
+* Adjectives 9 k~0 examples:*
 * *tarkka:* `tarkka+A+Sg+Nom` (Eng. # pedantic)
 * *tarkkaa:* `tarkka+A+Sg+Par`
 * *tarkkana:* `tarkka+A+Sg+Ess`
@@ -740,7 +740,7 @@ No a final adjectives with quantitative p gradation.
 The ta stem with j plurals is `ADJ_MATTA`, and the dictionary class
 is ⁹-C.
 
-*Adjectives 9 t~0 examples:*
+* Adjectives 9 t~0 examples:*
 * *matta:* `matta+A+Sg+Nom` (Eng. # matta)
 * *mattaa:* `matta+A+Sg+Par`
 * *mattana:* `matta+A+Sg+Ess`
@@ -754,7 +754,7 @@ is ⁹-C.
 The pa : va stem with e comparative and j plurals is `ADJ_HALPA`, and
 the dictionary class is ⁹⁻E.
 
-*Adjectives 9 p~v examples:*
+* Adjectives 9 p~v examples:*
 * *halpa:* `halpa+A+Sg+Nom` (Eng. # cheap)
 * *halpaa:* `halpa+A+Sg+Par`
 * *halpana:* `halpa+A+Sg+Ess`
@@ -768,7 +768,7 @@ the dictionary class is ⁹⁻E.
 The ta : da stem with a comparative and j plurals is `ADJ_EHTA`, and
 the dictionary class is ⁹⁻F.
 
-*Adjectives 9 t~d examples:*
+* Adjectives 9 t~d examples:*
 * *ehta:* `ehta+A+Sg+Nom` (Eng. # legit)
 * *ehtaa:* `ehta+A+Sg+Par`
 * *ehtana:* `ehta+A+Sg+Ess`
@@ -784,7 +784,7 @@ None with k:g gradation.
 The pa : ma stem with e comparative and j plurals is `ADJ_RAMPA`, and
 the dictionary class is ⁹⁻H.
 
-*Adjectives 9 p~m examples:*
+* Adjectives 9 p~m examples:*
 * *rampa:* `rampa+A+Sg+Nom` (Eng. # crippled)
 * *rampaa:* `rampa+A+Sg+Par`
 * *rampana:* `rampa+A+Sg+Ess`
@@ -800,7 +800,7 @@ No a stems with t:l gradations
 The ta : na stem with a comparative and j plurals is `ADJ_VIHANTA`, and
 the dictionary class is ⁹⁻J.
 
-*Adjectives 9 p~n examples:*
+* Adjectives 9 p~n examples:*
 * *vihanta:* `vihanta+A+Sg+Nom` (Eng. # blooming)
 * *vihantaa:* `vihanta+A+Sg+Par`
 * *vihantana:* `vihanta+A+Sg+Ess`
@@ -820,7 +820,7 @@ Common for va participles, and other derivations
 The a : 0 stem is in class `ADJ_AALTOILEVA` and the old dictionary used ¹⁰
 as the paradigm class.
 
-*Adjectives 10 back examples:*
+* Adjectives 10 back examples:*
 * *aaltoileva:* `aaltoileva+A+Sg+Nom` (Eng. # wavy)
 * *aaltoilevaa:* `aaltoileva+A+Sg+Par`
 * *aaltoilevana:* `aaltoileva+A+Sg+Ess`
@@ -834,7 +834,7 @@ as the paradigm class.
 The ä : 0 stem is in class `ADJ_TYÖLLISTETTÄVÄ` and the old dictionary used ¹⁰
 as the paradigm class.
 
-*Adjectives 10 front examples:*
+* Adjectives 10 front examples:*
 * *työllistettävä:* `työllistettävä+A+Sg+Nom` (Eng. # employable)
 * *työllistettävää:* `työllistettävä+A+Sg+Par`
 * *työllistettävänä:* `työllistettävä+A+Sg+Ess`
@@ -848,7 +848,7 @@ as the paradigm class.
 For a:e comparatives in a:0 class use `ADJ_RUMA`. No dictionary
 classification or ~¹⁰, 
 
-*Adjectives 10 a:e comparative examples:*
+* Adjectives 10 a:e comparative examples:*
 * *ruma:* `ruma+A+Sg+Nom` (Eng. # ugly)
 * *rumaa:* `ruma+A+Sg+Par`
 * *rumana:* `ruma+A+Sg+Ess`
@@ -862,7 +862,7 @@ classification or ~¹⁰,
 For ä:e comparatives in a:0 class use `ADJ_TYHMÄ`. No dictionary
 classification or ~¹⁰, 
 
-*Adjectives 10 ä:e comparative examples:*
+* Adjectives 10 ä:e comparative examples:*
 * *tyhmä:* `tyhmä+A+Sg+Nom` (Eng. # stupid)
 * *tyhmää:* `tyhmä+A+Sg+Par`
 * *tyhmänä:* `tyhmä+A+Sg+Ess`
@@ -879,7 +879,7 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 0:  >> 0:0 SO TOMMI FINDS THEM
 
-*Adjectives 10 k~0 a:e comparative examples:*
+* Adjectives 10 k~0 a:e comparative examples:*
 * *hoikka:* `hoikka+A+Sg+Nom` (Eng. # slim)
 * *hoikkaa:* `hoikka+A+Sg+Par`
 * *hoikkana:* `hoikka+A+Sg+Ess`
@@ -888,7 +888,7 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 * *hoikissa:* `hoikka+A+Pl+Ine`
 * *hoikkien:* `hoikka+A+Pl+Gen`
 
-*Adjectives 10 k~0 ä:e comparative examples:*
+* Adjectives 10 k~0 ä:e comparative examples:*
 * *mykkä:* `mykkä+A+Sg+Nom` (Eng. # mute)
 * *mykkää:* `mykkä+A+Sg+Par`
 * *mykkänä:* `mykkä+A+Sg+Ess`
@@ -897,7 +897,7 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 * *mykissä:* `mykkä+A+Pl+Ine`
 * *mykkien:* `mykkä+A+Pl+Gen`
 
-*Adjectives 10 p~0 a:e comparative examples:*
+* Adjectives 10 p~0 a:e comparative examples:*
 * *poppa:* `poppa+A+Sg+Nom` (Eng. # hocus-pocus)
 * *poppaa:* `poppa+A+Sg+Par`
 * *poppana:* `poppa+A+Sg+Ess`
@@ -906,7 +906,7 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 * *popissa:* `poppa+A+Pl+Ine`
 * *poppien:* `poppa+A+Pl+Gen`
 
-*Adjectives 10 p~0 ä:e comparative examples:*
+* Adjectives 10 p~0 ä:e comparative examples:*
 * *hömppä:* `hömppä+A+Sg+Nom` (Eng. # bogus)
 * *hömppää:* `hömppä+A+Sg+Par`
 * *hömppänä:* `hömppä+A+Sg+Ess`
@@ -918,7 +918,7 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 The quantitative k and t gradations are not found for adjectives with this
 a stem.
 
-*Adjectives 10 p~v a:e comparative examples:*
+* Adjectives 10 p~v a:e comparative examples:*
 * *voipa:* `voipa+A+Sg+Nom` (Eng. # capable)
 * *voipaa:* `voipa+A+Sg+Par`
 * *voipana:* `voipa+A+Sg+Ess`
@@ -927,7 +927,7 @@ a stem.
 * *voivissa:* `voipa+A+Pl+Ine`
 * *voipien:* `voipa+A+Pl+Gen`
 
-*Adjectives 10 p~v ä:e comparative examples:*
+* Adjectives 10 p~v ä:e comparative examples:*
 * *käypä:* `käypä+A+Sg+Nom` (Eng. # "good enough")
 * *käypää:* `käypä+A+Sg+Par`
 * *käypänä:* `käypä+A+Sg+Ess`
@@ -938,7 +938,7 @@ a stem.
 
 The t:d is missing from this a stem.
 
-*Adjectives 10 t~d ä:e comparative examples:*
+* Adjectives 10 t~d ä:e comparative examples:*
 * *mätä:* `mätä+A+Sg+Nom` (Eng. # rotten)
 * *mätää:* `mätä+A+Sg+Par`
 * *mätänä:* `mätä+A+Sg+Ess`
@@ -947,7 +947,7 @@ The t:d is missing from this a stem.
 * *mädissä:* `mätä+A+Pl+Ine`
 * *mätien:* `mätä+A+Pl+Gen`
 
-*Adjectives 10 k~g a:e comparative examples:*
+* Adjectives 10 k~g a:e comparative examples:*
 * *sanka:* `sanka+A+Sg+Nom` (Eng. # ???)
 * *sankaa:* `sanka+A+Sg+Par`
 * *sankana:* `sanka+A+Sg+Ess`
@@ -956,7 +956,7 @@ The t:d is missing from this a stem.
 * *sangissa:* `sanka+A+Pl+Ine`
 * *sankien:* `sanka+A+Pl+Gen`
 
-*Adjectives 10 k~g ä:e comparative examples:*
+* Adjectives 10 k~g ä:e comparative examples:*
 * *vänkä:* `vänkä+A+Sg+Nom` (Eng. # goofy)
 * *vänkää:* `vänkä+A+Sg+Par`
 * *vänkänä:* `vänkä+A+Sg+Ess`
@@ -966,7 +966,7 @@ The t:d is missing from this a stem.
 
 p:m is missing from this a, ä stems.
 
-*Adjectives 10 t~l a:e comparative examples:*
+* Adjectives 10 t~l a:e comparative examples:*
 * *kulta:* `kulta+A+Sg+Nom` (Eng. # dear)
 * *kultaa:* `kulta+A+Sg+Par`
 * *kultana:* `kulta+A+Sg+Ess`
@@ -977,7 +977,7 @@ p:m is missing from this a, ä stems.
 
 T:l and t:n are missing from this a stem and t:l from ä stem.
 
-*Adjectives 10 t~l ä:e comparative examples:*
+* Adjectives 10 t~l ä:e comparative examples:*
 * *lyhyenläntä:* `lyhyenläntä+A+Sg+Nom` (Eng. # shorty)
 * *lyhyenläntää:* `lyhyenläntä+A+Sg+Par`
 * *lyhyenläntänä:* `lyhyenläntä+A+Sg+Ess`
@@ -986,7 +986,7 @@ T:l and t:n are missing from this a stem and t:l from ä stem.
 * *lyhyenlännissä:* `lyhyenläntä+A+Pl+Ine`
 * *lyhyenläntien:* `lyhyenläntä+A+Pl+Gen`
 
-*Adjectives 10 t~r a:e comparative examples:*
+* Adjectives 10 t~r a:e comparative examples:*
 * *turta:* `turta+A+Sg+Nom` (Eng. # numb)
 * *turtaa:* `turta+A+Sg+Par`
 * *turtana:* `turta+A+Sg+Ess`
@@ -1000,7 +1000,7 @@ K:j is missing.
 Certain trisyllabic or longer a stems allow a lot of allomorphs and both
 a : o : 0 variations:
 
-*Adjectives 11 back examples:*
+* Adjectives 11 back examples:*
 * *hapera:* `hapera+A+Sg+Nom` (Eng. # brittle)
 * *haperia:* `hapera+A+Pl+Par`
 * *haperoita:* `hapera+A+Pl+Par`
@@ -1014,7 +1014,7 @@ Also less commonly
 * *haperoja:* `hapera+A+Use/Rare+Pl+Par`
 * *haperain:* `hapera+A+Pl+Gen+Use/Rare`
 
-*Adjectives 11 front examples:*
+* Adjectives 11 front examples:*
 * *höppänä:* `höppänä+A+Sg+Nom` (Eng. # senile)
 * *höppänää:* `höppänä+A+Sg+Par`
 * *höppänänä:* `höppänä+A+Sg+Ess`
@@ -1023,7 +1023,7 @@ Also less commonly
 * *höppänien:* `höppänä+A+Pl+Gen`
 * *höppäniin:* `höppänä+A+Pl+Ill`
 
-*Adjectives 12 examples:*
+* Adjectives 12 examples:*
 * *harmaja:* `harmaja+A+Sg+Nom` (Eng. # ?)
 * *harmajaa:* `harmaja+A+Sg+Par`
 * *harmajana:* `harmaja+A+Sg+Ess`
@@ -1033,7 +1033,7 @@ Also less commonly
 Certain trisyllabic or longer a stems allow a lot of allomorphs and both
 a : o : 0 variations:
 
-*Adjectives 12++ examples:*
+* Adjectives 12++ examples:*
 * *latuska:* `latuska+A+Sg+Nom` (Eng. # flat)
 * *latuskoita:* `latuska+A+Pl+Par`
 * *latuskoja:* `latuska+A+Pl+Par`
@@ -1046,19 +1046,19 @@ a : o : 0 variations:
 
 The a : o stem variation combines with trisyllabic class of special illatives
 
-*Adjectives 14 back examples:*
+* Adjectives 14 back examples:*
 * *hailakka:* `hailakka+A+Sg+Nom` (Eng. # pale)
 * *hailakkoina:* `hailakka+A+Pl+Ess`
 * *hailakoissa:* `hailakka+A+Pl+Ine`
 * *hailakkoihin:* `hailakka+A+Pl+Ill`
 * *hailakoihin:* `hailakka+A+Pl+Ill`
 
-*Adjectives 14 front examples:*
+* Adjectives 14 front examples:*
 * *räväkkä:* `räväkkä+A+Sg+Nom` (Eng. # flamboyant)
 * *räväköihin:* `räväkkä+A+Pl+Ill`
 * *räväkköihin:* `räväkkä+A+Pl+Ill`
 
-*Adjectives 15 t~0 back examples:*
+* Adjectives 15 t~0 back examples:*
 * *pohatta:* `pohatta+A+Sg+Nom` (Eng. # fat-cat)
 * *pohattoina:* `pohatta+A+Pl+Ess`
 * *pohatoissa:* `pohatta+A+Pl+Ine`
@@ -1067,7 +1067,7 @@ The a : o stem variation combines with trisyllabic class of special illatives
 
 A-final words with long vowels and syllable boundary
 
-*Adjectives 15 oa examples:*
+* Adjectives 15 oa examples:*
 * *ainoa:* `ainoa+A+Sg+Nom` (Eng. # singleton)
 * *ainoana:* `ainoa+A+Sg+Ess`
 * *ainoina:* `ainoa+A+Pl+Ess`
@@ -1075,7 +1075,7 @@ A-final words with long vowels and syllable boundary
 * *ainoihin:* `ainoa+A+Pl+Ill`
 * *ainoisiin:* `ainoa+A+Pl+Ill`
 
-*Adjectives 15 ea examples:*
+* Adjectives 15 ea examples:*
 * *korkea:* `korkea+A+Sg+Nom` (Eng. # high)
 * *korkeana:* `korkea+A+Sg+Ess`
 * *korkeina:* `korkea+A+Pl+Ess`
@@ -1083,7 +1083,7 @@ A-final words with long vowels and syllable boundary
 * *korkeihin:* `korkea+A+Pl+Ill`
 * *korkeisiin:* `korkea+A+Pl+Ill`
 
-*Adjectives 15 eä examples:*
+* Adjectives 15 eä examples:*
 * *järeä:* `järeä+A+Sg+Nom` (Eng. # rough)
 * *järeänä:* `järeä+A+Sg+Ess`
 * *järeinä:* `järeä+A+Pl+Ess`
@@ -1096,14 +1096,14 @@ Most of the lexicalised comparatives are adjectives that go to this class.
 The comparatives that are not lexicalised inflect exactly the same, though
 some versions of morphology may cut off long comparative chains.
 
-*Adjectives 16 back examples:*
+* Adjectives 16 back examples:*
 * *aiempi:* `aiempi+A+Sg+Nom` (Eng. # earlier)
 * *aiempana:* `aiempi+A+Sg+Ess`
 * *aiemmassa:* `aiempi+A+Sg+Ine`
 * *aiempina:* `aiempi+A+Pl+Ess`
 * *aiemmista:* `aiempi+A+Pl+Ela`
 
-*Adjectives 16 front examples:*
+* Adjectives 16 front examples:*
 * *lähempi:* `lähempi+A+Sg+Nom` (Eng. # closer)
 * *lähempänä:* `lähempi+A+Sg+Ess`
 * *lähemmässä:* `lähempi+A+Sg+Ine`
@@ -1112,18 +1112,18 @@ some versions of morphology may cut off long comparative chains.
 
 ### Long vowel stems
 
-*Adjectives 17 a examples:*
+* Adjectives 17 a examples:*
 * *vapaa:* `vapaa+A+Sg+Nom` (Eng. # free)
 
 There are no other bisyllabic long vowel stems in adjectives
 
-*Adjectives 18 aa examples:*
+* Adjectives 18 aa examples:*
 * *peeaa:* `peeaa+A+Sg+Nom` (Eng. # bust)
 
-*Adjectives 18 uu examples:*
+* Adjectives 18 uu examples:*
 * *muu:* `muu+A+Sg+Nom` (Eng. # other)
 
-*Adjectives 18 ää examples:*
+* Adjectives 18 ää examples:*
 * *syypää:* `syypää+A+Sg+Nom` (Eng. # guilty)
 
 There are no other monosyllabic long vowel stems for adjectives. For full
@@ -1132,7 +1132,7 @@ listing of possibilities, see nouns.
 Some loan words inflect irregularly, either more along the written form or
 the pronunciation. 
 
-*Adjectives 21 gay examples:*
+* Adjectives 21 gay examples:*
 * *gay:* `gay+A+Sg+Nom` (Eng. # gay)
 
 There are not many direct adjective loans in general.
@@ -1142,18 +1142,18 @@ Some of the old e stems have i nominative but e as stem vowel for singular
 forms. Most of these are not adjectives though, see full listing from the
 noun pages.
 
-*Adjectives 24~26 back examples:*
+* Adjectives 24~26 back examples:*
 * *suuri:* `suuri+A+Sg+Nom` (Eng. # big)
 THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 0:  >> 0:0 SO TOMMI FINDS THEM
 
-*Adjectives 24~26 front examples:*
+* Adjectives 24~26 front examples:*
 * *pieni:* `pieni+A+Sg+Nom` (Eng. # small)
 
-*Adjectives 27 back examples:*
+* Adjectives 27 back examples:*
 * *uusi:* `uusi+A+Sg+Nom` (Eng. # new)
 
-*Adjectives 27 front examples:*
+* Adjectives 27 front examples:*
 * *täysi:* `täysi+A+Sg+Nom` (Eng. # full)
 
 There are no adjective examples of other gradation variants or consonant
@@ -1164,13 +1164,13 @@ The consonant stems use inverted gradation if applicable, that is, the
 nominatives have end in consonants and their gradating consonants are in
 weak form. Most of these are rarer for adjectives than nouns.
 
-*Adjectives 32 examples:*
+* Adjectives 32 examples:*
 * *tyven:* `tyven+A+Sg+Nom` (Eng. # calm (of bodies of water))
 
 There are no back vowel variants or gradating words in the basic e
 conjoining pattern.
 
-*Adjectives 33 examples:*
+* Adjectives 33 examples:*
 * *avoin:* `avoin+A+Sg+Nom` (Eng. # open)
 
 There are no other examples of n:m final variation before conjoining e.
@@ -1179,121 +1179,121 @@ There are no other examples of n:m final variation before conjoining e.
 The common case of n:m variation with conjoining a before singular stems is
 from caritive suffix -tOn, that forms adjectives productively. 
 
-*Adjectives 34 back examples:*
+* Adjectives 34 back examples:*
 * *alaston:* `alaston+A+Sg+Nom` (Eng. # naked)
 
-*Adjectives 34 0~t back examples:*
+* Adjectives 34 0~t back examples:*
 * *viaton:* `viaton+A+Sg+Nom` (Eng. # innocent)
 
-*Adjectives 34 0~t front examples:*
+* Adjectives 34 0~t front examples:*
 * *kyvytön:* `kyvytön+A+Sg+Nom` (Eng. # unskilled)
 
 This one word, hapan, also takes the same variation as normative variant.
 The expected e variant is not normative, but used.
 
-*Adjectives 34 0~p back examples:*
+* Adjectives 34 0~p back examples:*
 * *hapan:* `hapan+A+Sg+Nom` (Eng. # sour)
 
-*Adjectives 34 m~p front examples:*
+* Adjectives 34 m~p front examples:*
 * *lämmin:* `lämmin+A+Sg+Nom` (Eng. # warm)
 
 ### Lexicalised superlatives
 
-*Adjectives 35 back examples:*
+* Adjectives 35 back examples:*
 * *uloin:* `uloin+A+Sg+Nom` (Eng. # outermost)
 
-*Adjectives 35 front examples:*
+* Adjectives 35 front examples:*
 * *sisin:* `sisin+A+Sg+Nom` (Eng. # innermost)
 
 Vasen inflects almost like superlative
 
-*Adjectives 36 examples:*
+* Adjectives 36 examples:*
 * *vasen:* `vasen+A+Sg+Nom` (Eng. # left)
 
 ### nen suffixes
 Adjectives are commonly formed with nen derivatonns.
 
-*Adjectives 38 back examples:*
+* Adjectives 38 back examples:*
 * *aakkosellinen:* `aakkosellinen+A+Sg+Nom` (Eng. # alphabetic)
 
-*Adjectives 38 front examples:*
+* Adjectives 38 front examples:*
 * *kylmäjärkinen:* `kylmäjärkinen+A+Sg+Nom` (Eng. # levelminded)
 
 ### s-final adjectives
 
 Most of the cases here are nouns from noun derivations.
 
-*Adjectives 39 examples:*
+* Adjectives 39 examples:*
 * *symppis:* `symppis+A+Sg+Nom` (Eng. # sympathetic)
 
-*Adjectives 40 examples:*
+* Adjectives 40 examples:*
 * *lähteisyys:* `lähteisyys+A+Sg+Nom` (Eng. # sourceful)
 
-*Adjectives 41 as examples:*
+* Adjectives 41 as examples:*
 * *autuas:* `autuas+A+Sg+Nom` (Eng. # ignorant)
 
-*Adjectives 41 is examples:*
+* Adjectives 41 is examples:*
 * *valmis:* `valmis+A+Sg+Nom` (Eng. # ready)
 
-*Adjectives 41 äs examples:*
+* Adjectives 41 äs examples:*
 * *työläs:* `työläs+A+Sg+Nom` (Eng. # studious)
 
-*Adjectives 41 kas examples:*
+* Adjectives 41 kas examples:*
 * *voimakas:* `voimakas+A+Sg+Nom` (Eng. # powerfui)
 
-*Adjectives 41 käs examples:*
+* Adjectives 41 käs examples:*
 * *tyylikäs:* `tyylikäs+A+Sg+Nom` (Eng. # stylish)
 
-*Adjectives 41 pas examples:*
+* Adjectives 41 pas examples:*
 * *reipas:* `reipas+A+Sg+Nom`
 
 No adjectives end in -päs
 
-*Adjectives 41 tas examples:*
+* Adjectives 41 tas examples:*
 * *rietas:* `rietas+A+Sg+Nom` (Eng. # lewd)
 
-*Adjectives 41 tis examples:*
+* Adjectives 41 tis examples:*
 * *raitis:* `raitis+A+Sg+Nom` (Eng. # sober)
 
 Gaps.
 
-*Adjectives 41 das examples:*
+* Adjectives 41 das examples:*
 * *hidas:* `hidas+A+Sg+Nom` (Eng. # slow)
 
 Gaps
 
-*Adjectives 41 ras examples:*
+* Adjectives 41 ras examples:*
 * *harras:* `harras+A+Sg+Nom` (Eng. # humble)
 
 ### t-finals
 
-*Adjectives 43 back examples:*
+* Adjectives 43 back examples:*
 * *ohut:* `ohut+A+Sg+Nom` (Eng. # thin)
 
-*Adjectives 43 front examples:*
+* Adjectives 43 front examples:*
 * *ehyt:* `ehyt+A+Sg+Nom` (Eng. # unbroken)
 
 ### Lexicalised nut-participles
 Majority of lexicalised nut participles are adjectives.
 
-*Adjectives 47 back examples:*
+* Adjectives 47 back examples:*
 * *kulunut:* `kulunut+A+Sg+Nom` (Eng. # used)
 
-*Adjectives 47 front examples:*
+* Adjectives 47 front examples:*
 * *ällistynyt:* `ällistynyt+A+Sg+Nom` (Eng. # amazed)
 
 ### Old -e^ final stems
 
-*Adjectives 48 back examples:*
+* Adjectives 48 back examples:*
 * *ahne:* `ahne+A+Sg+Nom` (Eng. # greedy)
 
-*Adjectives 48 front examples:*
+* Adjectives 48 front examples:*
 * *terve:* `terve+A+Sg+Nom` (Eng. # healthy)
 
-*Adjectives 48 d~t back examples:*
+* Adjectives 48 d~t back examples:*
 * *kade:* `kade+A+Sg+Nom` (Eng. # jealous)
 
-*Adjectives 48 l~t back examples:*
+* Adjectives 48 l~t back examples:*
 * *helle:* `helle+A+Sg+Nom` (Eng. # warm weather)
 
 Gapping almost all variants of gradations with e, as well as all dual
@@ -1302,7 +1302,7 @@ nominative stems.
 ### Exceptional adjectives
 The ones that do not fit in the official classes shown in dictionaries.
 
-*Adjective pitkä examples:*
+* Adjective pitkä examples:*
 * *pitkä:* `pitkä+A+Sg+Nom`
 * *pidempi:* `pitkä+A+Comp+Sg+Nom`
 * *pisin:* `pitkä+A+Superl+Sg+Nom`
@@ -1317,7 +1317,7 @@ THE EPSILON-to-ZILCH SEEMS TO INTERFER WITH COMPILATION 2015-08-23, Jaska
 Adjectives aren't typically plural words, but there are some in the
 dictionaries.
 
-*Adjective plurales examples:*
+* Adjective plurales examples:*
 * *leuattomat:* `leuattomat+A+Pl+Nom` (Eng. # ?)
 
 ## Adjective inflection proper
@@ -1326,43 +1326,43 @@ The superlative derivation is formed by in suffix, which creates a new
 adjective baseform. This baseform is handled separately to avoid double
 superlatives.
 
-*Adjective superlative front examples:*
+* Adjective superlative front examples:*
 * *rumin:* `ruma+A+Superl+Sg+Nom` (Eng. # ugliest)
 
-*Adjective superlative back examples:*
+* Adjective superlative back examples:*
 * *tyhmin:* `tyhmä+A+Superl+Sg+Nom` (Eng. # stupidest)
 
 The comparative derivation is formed by mpi suffix, which creates a new
 adjective baseform. This adjective is handled separately
 to avoid double comparative forms.
 
-*Adjective comparative front examples:*
+* Adjective comparative front examples:*
 * *rumempi:* `ruma+A+Comp+Sg+Nom`
 
-*Adjective comparative back examples:*
+* Adjective comparative back examples:*
 * *tyhmempi:* `tyhmä+A+Comp+Sg+Nom`
 
 This inflectional part attached to adjective comparative stems to avoid
 circularity in comparative derivations:
 
-*Adjective comparative inflection back examples:*
+* Adjective comparative inflection back examples:*
 * *nopeampi:* `nopea+A+Comp+Sg+Nom` (Eng. # faster)
 * ★*nopeammampi:* `nopea+A+Comp+Comp+Sg+Nom` (is not standard language)
 * ★*nopeammammampi:* `nopea+A+Comp+Comp+Comp+Sg+Nom` (is not standard language)
 
-*Adjective comparative inflection front examples:*
+* Adjective comparative inflection front examples:*
 * *tyhmempänä:* `tyhmä+A+Comp+Sg+Ess`
 * ★*tyhmemmämpi:* `tyhmä+A+Comp+Comp+Sg+Nom` (is not standard language)
 
 This inflectional part is attached to adjective superlative stems to avoid
 circularity in superlative  derivations:
 
-*Adjective superlative inflection back examples:*
+* Adjective superlative inflection back examples:*
 * *nopein:* `nopea+A+Superl+Sg+Nom`
 * ★*nopeimmimpia:* `nopea+A+Superl+Superl+Sg+Par` (is not standard language)
 * ★*nopeimmimmin:* `nopea+A+Superl+Superl+Superl+Sg+Nom` (is not standard language)
 
-*Adjective superlative inflection front examples:*
+* Adjective superlative inflection front examples:*
 * *tyhmin:* `tyhmä+A+Superl+Sg+Nom`
 * ★*tyhmimmimpiä:* `tyhmä+A+Superl+Superl+Sg+Par` (is not standard language)
 
@@ -1370,222 +1370,222 @@ circularity in superlative  derivations:
 The adjective inflection apart from the comparative and superlative
 derivations is same as with nouns. I will only show examples here.
 
-*Adjective nominative back examples:*
+* Adjective nominative back examples:*
 * *rumapa:* `ruma+A+Sg+Nom+Foc/pa`
 
-*Adjective nominative front examples:*
+* Adjective nominative front examples:*
 * *tyhmäpä:* `tyhmä+A+Sg+Nom+Foc/pa`
 
-*Adjective pl tant back examples:*
+* Adjective pl tant back examples:*
 * *rumat:* `ruma+A+Pl+Nom`
 
-*Adjective pl tant front examples:*
+* Adjective pl tant front examples:*
 * *tyhmät:* `tyhmä+A+Pl+Nom`
 
-*Adjective regular singular back examples:*
+* Adjective regular singular back examples:*
 * *ruman:* `ruma+A+Sg+Gen`
 * *rumatta:* `ruma+A+Sg+Abe`
 
-*Adjective regular singular front examples:*
+* Adjective regular singular front examples:*
 * *tyhmän:* `tyhmä+A+Sg+Gen`
 * *tyhmättä:* `tyhmä+A+Sg+Abe`
 
-*Adjective regular singular back strongs examples:*
+* Adjective regular singular back strongs examples:*
 * *rumana:* `ruma+A+Sg+Ess`
 * *rumani:* `ruma+A+Sg+Nom+PxSg1`
 
-*Adjective regular singular front strongs examples:*
+* Adjective regular singular front strongs examples:*
 * *tyhmänä:* `tyhmä+A+Sg+Ess`
 * *tyhmäni:* `tyhmä+A+Sg+Nom+PxSg1`
 
-*Adjective regular plural back examples:*
+* Adjective regular plural back examples:*
 * *heikoitta:* `heikko+A+Pl+Abe`
 * *heikoilta:* `heikko+A+Pl+Abl`
 
-*Adjective regular plural front examples:*
+* Adjective regular plural front examples:*
 * *jäykittä:* `jäykkä+A+Pl+Abe`
 * *jäykiltä:* `jäykkä+A+Pl+Abl`
 
-*Adjective regular plural back strong examples:*
+* Adjective regular plural back strong examples:*
 * *jäykkinä:* `jäykkä+A+Pl+Ess`
 * *jäykkine:* `jäykkä+A+Cmt`
 
-*Adjective regular plural front strong examples:*
+* Adjective regular plural front strong examples:*
 * *heikkoina:* `heikko+A+Pl+Ess`
 * *heikkoine:* `heikko+A+Cmt`
 
-*Adjective singular partitive a examples:*
+* Adjective singular partitive a examples:*
 * *tarkkaa:* `tarkka+A+Sg+Par`
 * *tarkkaansa:* `tarkka+A+Sg+Par+PxSg3`
 
-*Adjective singular partitive ä examples:*
+* Adjective singular partitive ä examples:*
 * *tyhmää:* `tyhmä+A+Sg+Par`
 * *tyhmäänsä:* `tyhmä+A+Sg+Par+PxSg3`
 
-*Adjective singular partitive a poss aan examples:*
+* Adjective singular partitive a poss aan examples:*
 * *jaloa:* `jalo+A+Sg+Par`
 * *jaloaan:* `jalo+A+Sg+Par+PxSg3`
 
-*Adjective singular partitive ä poss ään examples:*
+* Adjective singular partitive ä poss ään examples:*
 * *hölöä:* `hölö+A+Sg+Par`
 * *hölöään:* `hölö+A+Sg+Par+PxSg3`
 
-*Adjective singular partitive ta examples:*
+* Adjective singular partitive ta examples:*
 * *vapaata:* `vapaa+A+Sg+Par`
 
-*Adjective singular partitive tä examples:*
+* Adjective singular partitive tä examples:*
 * *pientä:* `pieni+A+Sg+Par`
 
-*Adjective singular illative han examples:*
+* Adjective singular illative han examples:*
 * *peeaahan:* `peeaa+A+Sg+Ill`
 
-*Adjective singular illative hin examples:*
+* Adjective singular illative hin examples:*
 * *gayhin:* `gay+A+Sg+Ill`
 
-*Adjective singular illative hun examples:*
+* Adjective singular illative hun examples:*
 * *muuhun:* `muu+A+Sg+Ill`
 
-*Adjective singular illative hyn examples:*
+* Adjective singular illative hyn examples:*
 * *gayhynpä:* `gay+A+Sg+Ill+Foc/pa`
 
-*Adjective singular illative hän examples:*
+* Adjective singular illative hän examples:*
 * *syypäähän:* `syypää+A+Sg+Ill`
 
-*Adjective singular illative seen back examples:*
+* Adjective singular illative seen back examples:*
 * *vapaaseen:* `vapaa+A+Sg+Ill`
 
-*Adjective singular illative seen front examples:*
+* Adjective singular illative seen front examples:*
 * *työlääseen:* `työläs+A+Sg+Ill`
 
-*Adjective singular illative an examples:*
+* Adjective singular illative an examples:*
 * *rumaan:* `ruma+A+Sg+Ill`
 
-*Adjective singular illative en back examples:*
+* Adjective singular illative en back examples:*
 * *suureen:* `suuri+A+Sg+Ill`
 
-*Adjective singular illative en front examples:*
+* Adjective singular illative en front examples:*
 * *pieneen:* `pieni+A+Sg+Ill`
 
-*Adjective singular illative in back examples:*
+* Adjective singular illative in back examples:*
 * *tuhtiin:* `tuhti+A+Sg+Ill`
 
-*Adjective singular illative in front examples:*
+* Adjective singular illative in front examples:*
 * *rehtiin:* `rehti+A+Sg+Ill`
 
-*Adjective singular illative on examples:*
+* Adjective singular illative on examples:*
 * *huonoon:* `huono+A+Sg+Ill`
 
-*Adjective singular illative un examples:*
+* Adjective singular illative un examples:*
 * *fiksuun:* `fiksu+A+Sg+Ill`
 
-*Adjective singular illative yn examples:*
+* Adjective singular illative yn examples:*
 * *häijyyn:* `häijy+A+Sg+Ill`
 
-*Adjective singular illative än examples:*
+* Adjective singular illative än examples:*
 * *tyhmään:* `tyhmä+A+Sg+Ill`
 
-*Adjective singular illative ön examples:*
+* Adjective singular illative ön examples:*
 * *hölmöön:* `hölmö+A+Sg+Ill`
 
-*Adjective plural partitive ia examples:*
+* Adjective plural partitive ia examples:*
 * *rumia:* `ruma+A+Pl+Par`
 
-*Adjective plural partitive iä examples:*
+* Adjective plural partitive iä examples:*
 * *tyhmiä:* `tyhmä+A+Pl+Par`
 
-*Adjective plural partitive ita examples:*
+* Adjective plural partitive ita examples:*
 * *korkeita:* `korkea+A+Pl+Par`
 
-*Adjective plural partitive itä examples:*
+* Adjective plural partitive itä examples:*
 * *järeitä:* `järeä+A+Pl+Par`
 
-*Adjective plural partitive ja examples:*
+* Adjective plural partitive ja examples:*
 * *vahvoja:* `vahva+A+Pl+Par`
 
-*Adjective plural partitive jä examples:*
+* Adjective plural partitive jä examples:*
 * *hölmöjä:* `hölmö+A+Pl+Par`
 
-*Adjective plural genitive iden back examples:*
+* Adjective plural genitive iden back examples:*
 * *tanakoiden:* `tanakka+A+Pl+Gen`
 
-*Adjective plural genitive iden front examples:*
+* Adjective plural genitive iden front examples:*
 * *räväköiden:* `räväkkä+A+Pl+Gen`
 
-*Adjective plural genitive ien back examples:*
+* Adjective plural genitive ien back examples:*
 * *rumien:* `ruma+A+Pl+Gen`
 
-*Adjective plural genitive ien front examples:*
+* Adjective plural genitive ien front examples:*
 * *tyhmien:* `tyhmä+A+Pl+Gen`
 
-*Adjective plural genitive itten back examples:*
+* Adjective plural genitive itten back examples:*
 * *nopeitten:* `nopea+A+Pl+Gen`
 
-*Adjective plural genitive itten front examples:*
+* Adjective plural genitive itten front examples:*
 * *järeitten:* `järeä+A+Pl+Gen`
 
-*Adjective plural genitive jen back examples:*
+* Adjective plural genitive jen back examples:*
 * *vahvojen:* `vahva+A+Pl+Gen`
 
-*Adjective plural genitive jen front examples:*
+* Adjective plural genitive jen front examples:*
 * *hölmöjen:* `hölmö+A+Pl+Gen`
 
-*Adjective plural genitive ten back examples:*
+* Adjective plural genitive ten back examples:*
 * *suurten:* `suuri+A+Pl+Gen`
 
-*Adjective plural genitive ten front examples:*
+* Adjective plural genitive ten front examples:*
 * *pienten:* `pieni+A+Pl+Gen`
 
-*Adjective plural genitive in back examples:*
+* Adjective plural genitive in back examples:*
 * *rumain:* `ruma+A+Pl+Gen+Use/Rare`
 
-*Adjective plural genitive in front examples:*
+* Adjective plural genitive in front examples:*
 * *tyhmäin:* `tyhmä+A+Pl+Gen+Use/Rare`
 
-*Adjective plural illative ihin bacl examples:*
+* Adjective plural illative ihin bacl examples:*
 * *pahoihin:* `paha+A+Pl+Ill`
 
-*Adjective plural illative ihin front examples:*
+* Adjective plural illative ihin front examples:*
 * *hölmöihin:* `hölmö+A+Pl+Ill`
 
-*Adjective plural illative iin back examples:*
+* Adjective plural illative iin back examples:*
 * *punaisiin:* `punainen+A+Pl+Ill`
 
-*Adjective plural illative iin front examples:*
+* Adjective plural illative iin front examples:*
 * *sinisiin:* `sininen+A+Pl+Ill`
 
-*Adjective plural illative isiin back examples:*
+* Adjective plural illative isiin back examples:*
 * *korkeisiin:* `korkea+A+Pl+Ill`
 
-*Adjective plural illative isiin front examples:*
+* Adjective plural illative isiin front examples:*
 * *järeisiin:* `järeä+A+Pl+Ill`
 
-*Adjective possessive back examples:*
+* Adjective possessive back examples:*
 * *tyhmäni:* `tyhmä+A+Sg+Nom+PxSg1`
 
-*Adjective possessive front examples:*
+* Adjective possessive front examples:*
 * *rumani:* `ruma+A+Sg+Nom+PxSg1`
 
-*Adjective possessive an examples:*
+* Adjective possessive an examples:*
 * *kieroaan:* `kiero+A+Sg+Par+PxSg3`
 
-*Adjective possessive en back examples:*
+* Adjective possessive en back examples:*
 * *rumalleen:* `ruma+A+Sg+All+PxSg3`
 
-*Adjective possessive en front examples:*
+* Adjective possessive en front examples:*
 * *tyhmälleen:* `tyhmä+A+Sg+All+PxSg3`
 
-*Adjective possessive än examples:*
+* Adjective possessive än examples:*
 * *hölmöään:* `hölmö+A+Sg+Par+PxSg3`
 
-*Adjective clitic back examples:*
+* Adjective clitic back examples:*
 * *rumahan:* `ruma+A+Sg+Nom+Foc/han`
 
-*Adjective clitic front examples:*
+* Adjective clitic front examples:*
 * *tyhmähän:* `tyhmä+A+Sg+Nom+Foc/han`
 
 Adjectives can usually be derived into sti adverbs productively
 
-*Deadjectival adverb derivations sti examples:*
+* Deadjectival adverb derivations sti examples:*
 * *nopeasti* `nopea+A+Der/sti` (Eng. # fastly)
 
 * * *

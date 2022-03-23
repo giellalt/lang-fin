@@ -6,10 +6,10 @@ Digits are constructed as several cyclic structures: integers, decimals or
 roman numerals.
 Zero alone works quite differently:
 
-*Digit zero examples:*
+* Digit zero examples:*
 * *0:* `0+Num+Sg+Nom`
 
-*int digit loop examples:*
+* int digit loop examples:*
 * *13:* `13+Num+Card+Sg+Nom`
 * *100:* `100+Num+Card+Sg+Nom`
 * *0000005550000000:* `0000005550000000+Num+Card+Sg+Nom`
@@ -20,14 +20,14 @@ Zero alone works quite differently:
 
 The digit strings that end in 10 to 12 + 6n 0's are inflected alike:
 
-*int digit milliard loop examples:*
+* int digit milliard loop examples:*
 * *1000000000:* `1000000000+Num+Card+Sg+Nom`
 * *300000000000:* `300000000000+Num+Card+Sg+Nom`
 * *123456000000000000000000:* `123456000000000000000000+Num+Card+Sg+Nom`
 
 The digit strings that end in 6 to 9 + 6n 0's are inflected alike:
 
-*int digit million loop examples:*
+* int digit million loop examples:*
 * *1000000:* `1000000+Num+Card+Sg+Nom`
 * *300000000:* `300000000+Num+Card+Sg+Nom`
 * *123456000000000000000:* `123456000000000000000+Num+Card+Sg+Nom`
@@ -36,14 +36,14 @@ Decimal digit strings start with any number of digits 0 to 9, followed
 by decimal separator comma. The decimal dot may be allowed as substandard
 variant.
 
-*decimal digit loop examples:*
+* decimal digit loop examples:*
 * *1,0:* `1,0+Num+Sg+Nom`
 * *314,1:* `314,1+Num+Sg+Nom`
 
 The decimal digit strings end in any number of digits 0 to 9, inflected
 along the last part.
 
-*decimal digit loop more examples:*
+* decimal digit loop more examples:*
 * *3,141:* `3,141+Num+Sg+Nom`
 * *123,345:* `123,345+Num+Sg+Nom`
 
@@ -58,7 +58,7 @@ ones.
 ## Main lexicon for roman digits
 This lexicon divides into four groups
 
-*roman numeral examples:*
+* roman numeral examples:*
 * *MM:* `MM+Num+Ord+Sg+Nom`
 * *MCXI:* `MCXI+Num+Ord+Sg+Nom`
 * *CMXCIX:* `CMXCIX+Num+Ord+Sg+Nom`
@@ -67,28 +67,28 @@ This lexicon divides into four groups
 ### Roman thousands
 Thousands can be followed by any of other parts
 
-*roman numeral thousand examples:*
+* roman numeral thousand examples:*
 * *MII:* `MII+Num+Ord+Sg+Nom`
 * *MCCCXXII:* `MCCCXXII+Num+Ord+Sg+Nom`
 
 ### Roman hundreds
 Hundreds can be followed by anything but thousands:
 
-*roman numeral hundred examples:*
+* roman numeral hundred examples:*
 * *CXXI:* `CXXI+Num+Ord+Sg+Nom`
 * *DXXIV:* `DXXIV+Num+Ord+Sg+Nom`
 
 ### Roman tens
 Tens can be followed by ones:
 
-*roman numeral ten examples:*
+* roman numeral ten examples:*
 * *XIX:* `XIX+Num+Ord+Sg+Nom`
 * *XXVII:* `XXVII+Num+Ord+Sg+Nom`
 
 ### Roman ones
 Ones come alone
 
-*roman numerals one to nine examples:*
+* roman numerals one to nine examples:*
 * *IX:* `IX+Num+Ord+Sg+Nom`
 * *VIII:* `VIII+Num+Ord+Sg+Nom`
 * *II:* `II+Num+Ord+Sg+Nom`

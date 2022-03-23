@@ -8,7 +8,7 @@ and analyses.
 The classification of the adverbs in morphology goes along the possessives
 and clitics they take or require:
 
-*Adverbs examples:*
+* Adverbs examples:*
 * *aakkosellisesti:* `aakkosellisesti+Adv`
 * *aakkosellisestikin:* `aakkosellisesti+Adv+Foc/kin`
 * *mukaani:* `mukaan+Adv+PxSg1`

@@ -6,7 +6,7 @@ limited in form  ; they stem from arbitrary combinations of characters to
 
 Only add new interjections that are found from corpora.
 
-*Interjections examples:*
+* Interjections examples:*
 * *aah:* `aah+Interj`
 * *äh:* `äh+Interj`
 

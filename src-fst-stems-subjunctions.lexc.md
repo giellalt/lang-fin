@@ -9,7 +9,7 @@ ellei, että, jahka, jollei, jos, joskin, jos kohta, jotta, koska, kun,
 kunhan, mikäli, vaikka, (kunnes). 
 Further reading: [VISK § 818](http://scripta.kotus.fi/visk/sisalto.php?p=818)
 
-*Adverbial conjunctions examples:*
+* Adverbial conjunctions examples:*
 * *että:* `että+CS`
 * *jotta:* `jotta+CS`
 * *koska:* `koska+CS`

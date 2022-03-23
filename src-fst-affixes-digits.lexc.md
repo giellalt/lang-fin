@@ -2,7 +2,7 @@ Digit strings inflect with colons, lot like abbreviations.
 
 The digit strings ending in digit 1 pronounced as number
 
-* examples:*
+*  examples:*
 * *1:* `1+Num+Card+Sg+Nom`
 * *1:t:* `1+Num+Card+Pl+Nom`
 * *1:ssä:* `1+Num+Card+Sg+Ine`

@@ -6,7 +6,7 @@ particles.
 
 Examples:
 
-*Particles examples:*
+* Particles examples:*
 * *ahaa:* `ahaa+Pcle`
 * *edes:* `edes+Pcle`
 

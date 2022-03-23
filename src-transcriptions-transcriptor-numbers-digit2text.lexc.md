@@ -35,7 +35,7 @@ over numbers 11–19 where the second digit comes before first.
 The rest of this documentation describes the morphotactic implementation
 by the lexicon structure in descending order of magnitude with examples.
 
-*Digits of all magnitudes examples:*
+* Digits of all magnitudes examples:*
 * *1:* `yksi`
 * *21:* `kaksikymmentäyksi`
 * *321:* `kolmesataakaksikymmentäyksi`
@@ -51,13 +51,13 @@ this is to implement *N*sataa...miljardia...
 Lexicon `CUODIMRD` contains numbers 2-9 that need to be followed by exactly
 this is to implement N*sataa*...miljardia...
 
-*hundreds of milliards examples:*
+* hundreds of milliards examples:*
 * *20000000000:* `kaksisataamiljardia`
 
 Lexicon `HUNDREDMRD` is for numbers in range: 100 000 000 000–199 000 000 000
 this is to implement *sata*...miljardia...
 
-*hundred milliards examples:*
+* hundred milliards examples:*
 * *1000000000:* `satamiljardia`
 
 Lexicon `TEENSMRD` is for numbers with 11 000 000 000–19 000 000 000
@@ -66,7 +66,7 @@ this is to implement ...N*toista*...miljardia...
 Lexicon `TEENMRD` is for numbers with 11 000 000 000–19 000 000 000
 this is to implement ...*N*toista...miljardia...
 
-*teen milliards examples:*
+* teen milliards examples:*
 * *1200000000:* `kaksitoistailjardia`
 
 Lexicon `TENSMRD` is for numbers with 20 000 000 000–90 000 000 000
@@ -75,13 +75,13 @@ this is to implement ...*N*kymmentä...miljardia...
 Lexicon `TENMRD` is for numbers with 10 000 000 000–10 999 999 999
 this is to implement ...*kymmenen*miljardia...
 
-*ten milliards examples:*
+* ten milliards examples:*
 * *1000000000:* `kymmenenmiljardia`
 
 Lexicon `LÅGEVMRD` is for numbers with 20 000 000 000–90 000 000 000
 this is to implement ...N*kymmentä*...miljardia...
 
-*tens of milliards examples:*
+* tens of milliards examples:*
 * *20000000000:* `kaksikymmentämiljardia`
 
 Lexicon `ONESMRD` is for numbers with 1 000 000 000–9 000 000 000
@@ -90,7 +90,7 @@ this is to implement ...*N*miljardia...
 Lexicon `MILJARD` is for numbers with 1 000 000 000–9 000 000 000
 this is to implement ...N*miljardia*...
 
-*milliards examples:*
+* milliards examples:*
 * *2000000000:* `kaksimiljardia`
 
 Lexicon `OVERMILLIONS` is for the millions *part* of numbers greater than 1 milliard
@@ -102,7 +102,7 @@ this is to implement *N*sataa...miljoonaa...
 Lexicon `CUODIM` contains numbers 2-9 that need to be followed by exactly
 this is to implement N*sataa*...miljoonaa...
 
-*Hundreds of millions examples:*
+* Hundreds of millions examples:*
 * *200000000:* `kaksisataamiljoonaa`
 
 Lexicon `HUNDREDM` is for numbers in range: 100 000 000–199 000 000
@@ -114,7 +114,7 @@ this is to implement ...N*toista*...miljoonaa...
 Lexicon `TEENM` is for numbers with 11 000 000–19 000 000
 this is to implement ...*N*toista...miljoonaa...
 
-*Teen millions examples:*
+* Teen millions examples:*
 * *1200000:* `kaksitoistamiljoonaa`
 
 Lexicon `TENSM` is for numbers with 20 000 000–90 000 000
@@ -123,13 +123,13 @@ this is to implement ...*N*kymmentä...miljoonaa...
 Lexicon `TENM` is for numbers with 10 000 000–10 999 999
 this is to implement ...*kymmenen*miljoonaa...
 
-*Ten millions examples:*
+* Ten millions examples:*
 * *2000000:* `kymmenenmiljoonaa`
 
 Lexicon `LÅGEVM` is for numbers with 20 000 000–90 000 000
 this is to implement ...N*kymmentä*...miljoonaa..
 
-*Tens of millions examples:*
+* Tens of millions examples:*
 * *2000000:* `kaksikymmentämiljoonaa`
 
 Lexicon `ONESM` is for numbers with 1 000 000–9 000 000
@@ -138,7 +138,7 @@ this is to implement ...*N*miljoonaa...
 Lexicon `MILJON` is for numbers with 1 000 000–9 000 000
 this is to implement ...N*miljoonaa*...
 
-*Millions examples:*
+* Millions examples:*
 * *200000:* `kaksisataamiljoonaa`
 
 Lexicon `UNDERMILLION` is for numbers with 100 000–900 000 after milliards
@@ -152,7 +152,7 @@ this is to implement *N*sataa...tuhatta...
 Lexicon `CUODIT` contains numbers 2-9 that need to be followed by exactly
 this is to implement N*sataa*...tuhatta...
 
-*Hundreds of thousands examples:*
+* Hundreds of thousands examples:*
 * *20000:* `kaksisataatuhatta`
 
 Lexicon `HUNDREDT` is for numbers in range: 100 000–199 000
@@ -164,7 +164,7 @@ this is to implement ...N*toista*...tuhatta...
 Lexicon `TEENT` is for numbers with 11 000–19 000
 this is to implement ...*N*toista...tuhatta...
 
-*Teens of thousands examples:*
+* Teens of thousands examples:*
 * *12000:* `kaksitoistatuhatta`
 
 Lexicon `TENST` is for numbers with 20 000–90 000
@@ -173,13 +173,13 @@ this is to implement ...*N*kymmentä...tuhatta...
 Lexicon `TENT` is for numbers with 10 000 000–10 999 999
 this is to implement ...*kymmenen*tuhatta...
 
-*Ten thousands examples:*
+* Ten thousands examples:*
 * *10000:* `kymmenentuhatta`
 
 Lexicon `LÅGEVT` is for numbers with 20 000–90 000
 this is to implement ...N*kymmentä*...tuhatta..
 
-*Tens of thousands examples:*
+* Tens of thousands examples:*
 * *20000:* `kaksikymmentätuhatta`
 
 Lexicon `ONEST` is for numbers with 1 000–9 000
@@ -188,7 +188,7 @@ this is to implement ...*N*tuhatta...
 Lexicon `THOUSANDS` is for numbers with 1 000–9 000
 this is to implement ...N*tuhatta*...
 
-*Thousands examples:*
+* Thousands examples:*
 * *2000:* `kaksituhatta`
 * *3456:* `kolmetuhattaneljäsataaviisikymmentäkuusi`
 
@@ -203,7 +203,7 @@ this is to implement *N*sataa...
 Lexicon `CUODI` contains numbers 2-9 that need to be followed by exactly
 this is to implement N*sataa*...
 
-*Hundreds examples:*
+* Hundreds examples:*
 * *200:* `kaksisataa`
 * *345:* `kolmesataaneljäkymmentäviisi`
 
@@ -215,7 +215,7 @@ this is to implement ...N*toista*
 Lexicon `TEEN` is for numbers with 11–19
 this is to implement ...*N*toista
 
-*Teens examples:*
+* Teens examples:*
 * *11:* `yksitoista`
 * *12:* `kaksitoista`
 * *13:* `kolmetoista`
@@ -226,20 +226,20 @@ this is to implement ...*N*kymmentä...
 Lexicon `LÅGEV` is for numbers with 20–90
 this is to implement ...N*kymmentä*...
 
-*Tens examples:*
+* Tens examples:*
 * *20:* `kaksikymmentä`
 * *34:* `kolmekymmentäneljä`
 
 Lexicon `JUSTTEN` is for number 10
 this is to implement ...*kymmenen*
 
-*Ten examples:*
+* Ten examples:*
 * *10:* `kymmenen`
 
 Lexicon `ONES` is for numbers with 1–9
 this is to implement yksi, kaksi, kolme..., yhdeksän
 
-*Ones examples:*
+* Ones examples:*
 * *1:* `yksi`
 * *2:* `kaksi`
 * *3:* `kolme`
@@ -247,12 +247,12 @@ this is to implement yksi, kaksi, kolme..., yhdeksän
 Lexicon `ZERO` is for number 0
 nolla
 
-*Zero examples:*
+* Zero examples:*
 * *0:* `nolla`
 
 Lexicon `LOPPU` is to implement potential case inflection with a colon.
 
-*Digits with explicit cases examples:*
+* Digits with explicit cases examples:*
 * *1\:lle:* `yhdelle`
 *Note:* accepting or rejecting case inflected digit strings without explicit
 suffix can be changed here.

@@ -14,7 +14,7 @@ Infinitives usually: *aion tappaa*, *joudun kuolemaan*
 The verbs are classified along the stem mutations suffix assimilation,
 and harmony:
 
-*Verb examples:*
+* Verb examples:*
 * *kutoo:* `kutoa+V+Act+Ind+Prs+Sg3` (Eng. # knit)
 * *kudotaan:* `kutoa+V+Pss+Ind+Prs+Pe4`
 * *tietää:* `tietää+V+Act+Ind+Prs+Sg3` (Eng. # know)

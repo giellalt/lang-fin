@@ -11,7 +11,7 @@ The nominals are classified by combination of the stem variations, suffix
 allomorphs and the vowel harmony. The nouns have number, case, possessive
 and clitic suffixes:
 
-*Noun examples:*
+* Noun examples:*
 * *talo:* `talo+N+Sg+Nom` (Eng. # house)
 * *taloa:* `talo+N+Sg+Par`
 * *taloissa:* `talo+N+Pl+Ine`

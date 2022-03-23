@@ -9,7 +9,7 @@ appear in both syntactic positions, after and before the head word.
 
 Examples:
 
-*Adpositions examples:*
+* Adpositions examples:*
 * *alta:* `alta+Po`
 * *alleen:* `alle+Po+PxSg3`
 * *irti:* `irti+Pr`

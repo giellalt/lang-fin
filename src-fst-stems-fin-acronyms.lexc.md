@@ -11,7 +11,7 @@ confusing so there's no high priority for adding that.
 The first classification for acronyms should be along the final letter, then
 if the final word inflection is used, the class of that word.
 
-*Acronyms examples:*
+* Acronyms examples:*
 * *OY:hyn:* `OY+N+Sg+Ill`
 * *OY:öön* `OY+N+Sg+Ill`
 

@@ -4,7 +4,7 @@ some orthographical differences, required capitalisations and compounding
 with hyphens. The derivations may lowercase. They may be classified 
 semantically to match other giellatekno things in the future.
 
-*Proper nouns examples:*
+* Proper nouns examples:*
 * *Kalle:* `Kalle+N+Prop+Sg+Nom`
 * *Joensuu:* `Joensuu+N+Prop+Sg+Nom`
 
@@ -13,7 +13,7 @@ The proper nouns are classified and inflected along noun patterns, for
 
 Many of Proper nouns inflect like nouns... however, compound differently
 
-*Nouns 20 ä examples:*
+* Nouns 20 ä examples:*
 * *Hyvinkää:* `Hyvinkää+N+Prop+Sg+Nom` (Eng. # Hyvinkää)
 * *Hyvinkäätä:* `Hyvinkää+N+Prop+Sg+Par`
 * *Hyvinkäähän:* `Hyvinkää+N+Prop+Sg+Ill`

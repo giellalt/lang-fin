@@ -4,7 +4,7 @@ doesn't quite have real suffixes, these are mostly compound parts.
 
 Examples:
 
-*Suffixes examples:*
+* Suffixes examples:*
 * *banaaniaaltoinen:* `banaani+N+Sg+Nom#aaltoinen+A+Sg+Nom` (Eng. # banana waveful)
 
 * * *

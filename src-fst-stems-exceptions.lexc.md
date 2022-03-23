@@ -7,7 +7,7 @@ compounding scheme or possibly many end applications.
 
 negation verb has partial inflection:
 
-* examples:*
+*  examples:*
 * *en:* `ei+V+Neg+Act+Sg1`
 * *älkää:* `ei+V+Neg+Act+Imprt+Pl2`
 * *älkööt:* `ei+V+Neg+Act+Imprt+Pl3`

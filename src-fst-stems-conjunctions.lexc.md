@@ -8,7 +8,7 @@ The coordinating conjunctions are: eli(kkä), ja, joko – tai, kuin – myös,
 ynnä, (saati), (sillä)
 Further reading: [VISK § 816](http://scripta.kotus.fi/visk/sisalto.php?p=816))
 
-*Coordinating conjunctions examples:*
+* Coordinating conjunctions examples:*
 * *eikä:* `eikä+CC`
 * *ja:* `ja+CC`
 

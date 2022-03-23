@@ -23,7 +23,7 @@ for Finnish language and must not be used. Same applies for other
 combinations of sentence ending punctuation marks, the most common of these
 have separate analyses.
 
-*Punctuation and symbols examples:*
+* Punctuation and symbols examples:*
 * *.:* `.+Punct` (Eng. # full stop)
 
 The clause level punctuation marks are used in clause boundaries. The most

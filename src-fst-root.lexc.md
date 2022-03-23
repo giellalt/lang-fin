@@ -61,7 +61,7 @@ Have a look at these:
 
 The part-of-speech analyses are typically the first:
 
-*Analysis examples examples:*
+* Analysis examples examples:*
 * *kutoo:* `kutoa+V+Act+Ind+Prs+Sg3` (Eng. # knits)
 * *talo:* `talo+N+Sg+Nom` (Eng. # house)
 * *nopea:* `nopea+A+Sg+Nom` (Eng. # fast)
@@ -523,7 +523,7 @@ in there have been carried over.
 * `+Err/Lex		        `:
 * `+Err/SpaceCmp	        `:
 
-* `+Use/Marg `: Marginal
+* `+Use/Marg`: Marginal
 * `+Use/Rare  `: Rare
 * `+Use/NG   `: Do not generate
 * `+Use/Hyphen `: With hyphens
@@ -644,7 +644,7 @@ The start of the dictionary `Root`
 The Finnish morphological description starts from any of the parts of speech
 dictionaries, prefix or hyphenated suffix
 
-*Parts-of-speech examples:*
+* Parts-of-speech examples:*
 * *talo:* `talo+N+Sg+Nom` (Eng. # house)
 * *nopea:* `nopea+A+Sg+Nom` (Eng. # fast)
 * *kutoa:* `kutoa+V+Act+InfA+Sg+Lat` (Eng. # to knit)

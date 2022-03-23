@@ -6,7 +6,7 @@ classification they would have if they were read out, mostly that of nouns.
 Lot of abbreviations end in a full stop, which may complicate analysis and
 tokenisation in real-world applications
 
-*Abbreviations examples:*
+* Abbreviations examples:*
 * *eaa.:* `eaa.+N`
 * *esim.:* `esim.+N`
 * ★*esim:* `esim+N` (is not standard language)

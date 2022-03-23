@@ -10,7 +10,7 @@ and superlative.
 The classification of adjectives combines the stem changes, the final 
 allomorph selection and the harmony. See the list from:
 
-*Adjective examples examples:*
+* Adjective examples examples:*
 * *aakkostettu:* `aakkostettu+A+Sg+Nom`
 * *aakkostettuja:* `aakkostettu+A+Pl+Par`
 * *aakkostetut:* `aakkostettu+A+Pl+Nom`
