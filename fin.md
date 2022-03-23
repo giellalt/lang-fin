@@ -7118,37 +7118,37 @@ Semantic tags follow pronoun analyses:
 * `+Sem/Geo `: Semantic class: Geographic
 * `+Sem/Org `: Semantic class: Organisation
 
-* `+Sem/Build		        `: 
-* `+Sem/Build-room	        `: 
-* `+Sem/Cat		        `: 
-* `+Sem/Date		        `: 
-* `+Sem/Domain		        `: 
-* `+Sem/Dummytag	        `: 
-* `+Sem/Event		        `: 
-* `+Sem/Fem		        `: 
-* `+Sem/Group_Hum	        `: 
-* `+Sem/Hum		        `: 
-* `+Sem/ID			        `: 
-* `+Sem/Mal		        `: 
-* `+Sem/Mat		        `: 
-* `+Sem/Measr		        `: 
-* `+Sem/Money		        `: 
-* `+Sem/Obj		        `: 
-* `+Sem/Obj-el		        `: 
-* `+Sem/Obj-ling	        `: 
-* `+Sem/Org_Prod-audio     `: 
-* `+Sem/Org_Prod-vis       `: 
-* `+Sem/Plc		        `: 
-* `+Sem/Prod-vis	        `: 
-* `+Sem/Route		        `: 
-* `+Sem/Rule		        `: 
-* `+Sem/State-sick	        `: 
-* `+Sem/Substnc	        `: 
-* `+Sem/Time-clock	        `: 
-* `+Sem/Tool-it	        `: 
-* `+Sem/Txt		        `: 
-* `+Sem/Veh		        `: 
-* `+Sem/Year		        `: 
+* `+Sem/Build		        `:
+* `+Sem/Build-room	        `:
+* `+Sem/Cat		        `:
+* `+Sem/Date		        `:
+* `+Sem/Domain		        `:
+* `+Sem/Dummytag	        `:
+* `+Sem/Event		        `:
+* `+Sem/Fem		        `:
+* `+Sem/Group_Hum	        `:
+* `+Sem/Hum		        `:
+* `+Sem/ID			        `:
+* `+Sem/Mal		        `:
+* `+Sem/Mat		        `:
+* `+Sem/Measr		        `:
+* `+Sem/Money		        `:
+* `+Sem/Obj		        `:
+* `+Sem/Obj-el		        `:
+* `+Sem/Obj-ling	        `:
+* `+Sem/Org_Prod-audio     `:
+* `+Sem/Org_Prod-vis       `:
+* `+Sem/Plc		        `:
+* `+Sem/Prod-vis	        `:
+* `+Sem/Route		        `:
+* `+Sem/Rule		        `:
+* `+Sem/State-sick	        `:
+* `+Sem/Substnc	        `:
+* `+Sem/Time-clock	        `:
+* `+Sem/Tool-it	        `:
+* `+Sem/Txt		        `:
+* `+Sem/Veh		        `:
+* `+Sem/Year		        `:
 
 ### Numerals
 In numeral analyses, there are multiple analyses.
@@ -7199,10 +7199,10 @@ Adpositions are tagged in POS position:
 
 Tags for sub-POS
 
-* `+Arab			        `: 
-* `+Attr			        `: 
-* `+Coll			        `: 
-* `+Rom			        `: 
+* `+Arab			        `:
+* `+Attr			        `:
+* `+Coll			        `:
+* `+Rom			        `:
 
 ### Bound root morphs
 The lexical items that appear as bound morphemes before head word are
@@ -7336,7 +7336,7 @@ In compound analyses, the derived compound form that is not a free morph
 is marked with special analysis.  Some words have forms only appearing in
 compounds.
 Further reading: [VISK § 406](http://scripta.kotus.fi/visk/sisallys.php?p=406)
-+Der/s  Compound form
+Compound form
 
 * *naisien:* `nainen+N+Der/s#ien+N+Sg+Nom` (Eng. # female gum)
 
@@ -7523,9 +7523,9 @@ and otherwise rare words and forms. Especially, the forms that are in
 parentheses in lexical sources and word-forms that had the usage annotation
 in there have been carried over.
 * `+Err/Orth `: Sub-standard usage
-* `+Err/Hyph		        `: 
-* `+Err/Lex		        `: 
-* `+Err/SpaceCmp	        `: 
+* `+Err/Hyph		        `:
+* `+Err/Lex		        `:
+* `+Err/SpaceCmp	        `:
 
 * `+Use/Marg `: Marginal
 * `+Use/Rare  `: Rare
@@ -7535,19 +7535,19 @@ in there have been carried over.
 
 * **+Use/PMatch** means that the following is only used in the analyser feeding the disambiguator. This is missing.
 
-* `+Use/-PMatch	        `: 
+* `+Use/-PMatch	        `:
 
-* `+Use/-Spell		        `: 
-* `+Use/Arch		        `: 
-* `+Use/SpellNoSugg        `: 
+* `+Use/-Spell		        `:
+* `+Use/Arch		        `:
+* `+Use/SpellNoSugg        `:
 
 Usage tags are pushed wherever appropriate:
 * *nallein:* `nalle+N+Pl+Gen+Use/Rare`
 
 ###  Homonym tags
 
-* `+v1				        `: 
-* `+v2				        `: 
+* `+v1				        `:
+* `+v2				        `:
 
 ### Dialects
 The informal language use contains different Finnish than the literary
@@ -7578,28 +7578,28 @@ mrophology.
 * `+Dial/Southeast `: South-eastern dialects
 
 ### Tags for language of unassimilated name
-* `+OLang/ENG		        `: 
+* `+OLang/ENG		        `:
 * `+OLang/eng		        `: is a typo, FIX
-* `+OLang/FIN		        `: 
-* `+OLang/NNO		        `: 
-* `+OLang/NOB		        `: 
-* `+OLang/RUS		        `: 
-* `+OLang/SMA		        `: 
-* `+OLang/SME		        `: 
-* `+OLang/SWE		        `: 
-* `+OLang/UND		        `: 
+* `+OLang/FIN		        `:
+* `+OLang/NNO		        `:
+* `+OLang/NOB		        `:
+* `+OLang/RUS		        `:
+* `+OLang/SMA		        `:
+* `+OLang/SME		        `:
+* `+OLang/SWE		        `:
+* `+OLang/UND		        `:
 
 ### Others
 The boundaries of compounds that are not lexicalised in the dictionary will
 have compound analyses, the compounds may also have usage tags. The
 compounding analyses concern also syntagmatic melting mishmash.
-+Use/Circ     Compound boundary
+Compound boundary
 
 * **+Cmp** - Dynamic compound. This tag should always be part
            of a dynamic compound. It is important for
            Apertium, and useful in other cases as well.
-* `+Cmp/Hyph		        `: 
-* `+CmpNP/None		        `: 
+* `+Cmp/Hyph		        `:
+* `+CmpNP/None		        `:
 
 The word and morpheme boundaries are used to limit the effective range of
 far-reaching rules, such as vowel harmony. The boundaries are marked by
@@ -7637,7 +7637,6 @@ do no harm.
 |  @U.CmpNone.FALSE@ | Combines with the prev tag to prohibit compounding
 |  @P.CmpOnly.TRUE@ | Sets a flag to indicate that the word has passed R
 |  @D.CmpOnly.FALSE@ | Disallow words coming directly from root.
-
 Use the following flag diacritics to control downcasing of derived proper
 nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
 these flags. There exists a ready-made regex that will do the actual down-casing
@@ -7653,6 +7652,7 @@ dictionaries, prefix or hyphenated suffix
 * *talo:* `talo+N+Sg+Nom` (Eng. # house)
 * *nopea:* `nopea+A+Sg+Nom` (Eng. # fast)
 * *kutoa:* `kutoa+V+Act+InfA+Sg+Lat` (Eng. # to knit)
+0 test NOUN
 
 * * *
 
@@ -8071,7 +8071,7 @@ Only add new interjections that are found from corpora.
 # Nouns and their classification
 Noun is the part-of-speech for words which require declination in number
 and case. Additionally nouns may have optional possessive suffixes and
-clitics combined freely at the end. While some of the nouns may exhibit 
+clitics combined freely at the end. While some of the nouns may exhibit
 limited comparative derivations, generally words that can undergo
 comparation must be  classified into adjectives. The proper nouns that
 are written in initial  capital letters except when derived are handled
@@ -8099,6 +8099,8 @@ The minimal set to determine which paradigm or class noun belongs to is to
 check how it inflects in singulars of nominative,
 essive and inessive, plurals of essive, elative, partitive, illative, and
 GENITIVE. Find out stems and suffixes and match.
+
+naan+N:naan is an Indian bread with `NOUN_PUNK` paradigm
 
 * * *
 

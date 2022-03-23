@@ -1,7 +1,7 @@
 # Nouns and their classification
 Noun is the part-of-speech for words which require declination in number
 and case. Additionally nouns may have optional possessive suffixes and
-clitics combined freely at the end. While some of the nouns may exhibit 
+clitics combined freely at the end. While some of the nouns may exhibit
 limited comparative derivations, generally words that can undergo
 comparation must be  classified into adjectives. The proper nouns that
 are written in initial  capital letters except when derived are handled
@@ -29,6 +29,8 @@ The minimal set to determine which paradigm or class noun belongs to is to
 check how it inflects in singulars of nominative,
 essive and inessive, plurals of essive, elative, partitive, illative, and
 GENITIVE. Find out stems and suffixes and match.
+
+naan+N:naan is an Indian bread with `NOUN_PUNK` paradigm
 
 * * *
 
