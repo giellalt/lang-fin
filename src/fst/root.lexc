@@ -1,6 +1,6 @@
 ! -*- mode: lexc; coding: utf-8 -*-
 
-! This semi-automatically generated lexc data is merged from 
+! This semi-automatically generated lexc data is merged from
 ! omorfi database. Last merge: 2015-07-18
 ! Copyright (c) 2015 Omorfi contributors
 
@@ -133,37 +133,37 @@ Multichar_Symbols
 +Sem/Geo !!= * `@CODE@`: Semantic class: Geographic
 +Sem/Org !!= * `@CODE@`: Semantic class: Organisation
 
-+Sem/Build		        !!= * `@CODE@`: 
-+Sem/Build-room	        !!= * `@CODE@`: 
-+Sem/Cat		        !!= * `@CODE@`: 
-+Sem/Date		        !!= * `@CODE@`: 
-+Sem/Domain		        !!= * `@CODE@`: 
-+Sem/Dummytag	        !!= * `@CODE@`: 
-+Sem/Event		        !!= * `@CODE@`: 
-+Sem/Fem		        !!= * `@CODE@`: 
-+Sem/Group_Hum	        !!= * `@CODE@`: 
-+Sem/Hum		        !!= * `@CODE@`: 
-+Sem/ID			        !!= * `@CODE@`: 
-+Sem/Mal		        !!= * `@CODE@`: 
-+Sem/Mat		        !!= * `@CODE@`: 
-+Sem/Measr		        !!= * `@CODE@`: 
-+Sem/Money		        !!= * `@CODE@`: 
-+Sem/Obj		        !!= * `@CODE@`: 
-+Sem/Obj-el		        !!= * `@CODE@`: 
-+Sem/Obj-ling	        !!= * `@CODE@`: 
-+Sem/Org_Prod-audio     !!= * `@CODE@`: 
-+Sem/Org_Prod-vis       !!= * `@CODE@`: 
-+Sem/Plc		        !!= * `@CODE@`: 
-+Sem/Prod-vis	        !!= * `@CODE@`: 
-+Sem/Route		        !!= * `@CODE@`: 
-+Sem/Rule		        !!= * `@CODE@`: 
-+Sem/State-sick	        !!= * `@CODE@`: 
-+Sem/Substnc	        !!= * `@CODE@`: 
-+Sem/Time-clock	        !!= * `@CODE@`: 
-+Sem/Tool-it	        !!= * `@CODE@`: 
-+Sem/Txt		        !!= * `@CODE@`: 
-+Sem/Veh		        !!= * `@CODE@`: 
-+Sem/Year		        !!= * `@CODE@`: 
++Sem/Build		        !!= * `@CODE@`:
++Sem/Build-room	        !!= * `@CODE@`:
++Sem/Cat		        !!= * `@CODE@`:
++Sem/Date		        !!= * `@CODE@`:
++Sem/Domain		        !!= * `@CODE@`:
++Sem/Dummytag	        !!= * `@CODE@`:
++Sem/Event		        !!= * `@CODE@`:
++Sem/Fem		        !!= * `@CODE@`:
++Sem/Group_Hum	        !!= * `@CODE@`:
++Sem/Hum		        !!= * `@CODE@`:
++Sem/ID			        !!= * `@CODE@`:
++Sem/Mal		        !!= * `@CODE@`:
++Sem/Mat		        !!= * `@CODE@`:
++Sem/Measr		        !!= * `@CODE@`:
++Sem/Money		        !!= * `@CODE@`:
++Sem/Obj		        !!= * `@CODE@`:
++Sem/Obj-el		        !!= * `@CODE@`:
++Sem/Obj-ling	        !!= * `@CODE@`:
++Sem/Org_Prod-audio     !!= * `@CODE@`:
++Sem/Org_Prod-vis       !!= * `@CODE@`:
++Sem/Plc		        !!= * `@CODE@`:
++Sem/Prod-vis	        !!= * `@CODE@`:
++Sem/Route		        !!= * `@CODE@`:
++Sem/Rule		        !!= * `@CODE@`:
++Sem/State-sick	        !!= * `@CODE@`:
++Sem/Substnc	        !!= * `@CODE@`:
++Sem/Time-clock	        !!= * `@CODE@`:
++Sem/Tool-it	        !!= * `@CODE@`:
++Sem/Txt		        !!= * `@CODE@`:
++Sem/Veh		        !!= * `@CODE@`:
++Sem/Year		        !!= * `@CODE@`:
 
 !! ### Numerals
 !! In numeral analyses, there are multiple analyses.
@@ -216,10 +216,10 @@ Multichar_Symbols
 
 !! Tags for sub-POS
 
-+Arab			        !!= * `@CODE@`: 
-+Attr			        !!= * `@CODE@`: 
-+Coll			        !!= * `@CODE@`: 
-+Rom			        !!= * `@CODE@`: 
++Arab			        !!= * `@CODE@`:
++Attr			        !!= * `@CODE@`:
++Coll			        !!= * `@CODE@`:
++Rom			        !!= * `@CODE@`:
 
 
 !! ### Bound root morphs
@@ -561,9 +561,9 @@ Multichar_Symbols
 !! parentheses in lexical sources and word-forms that had the usage annotation
 !! in there have been carried over.
 +Err/Orth !!= * `@CODE@`: Sub-standard usage
-+Err/Hyph		        !!= * `@CODE@`: 
-+Err/Lex		        !!= * `@CODE@`: 
-+Err/SpaceCmp	        !!= * `@CODE@`: 
++Err/Hyph		        !!= * `@CODE@`:
++Err/Lex		        !!= * `@CODE@`:
++Err/SpaceCmp	        !!= * `@CODE@`:
 
 +Use/Marg !!= * `@CODE@`: Marginal
 +Use/Rare  !!= * `@CODE@`: Rare
@@ -573,11 +573,11 @@ Multichar_Symbols
 
  +Use/PMatch       !!≈ * **@CODE@** means that the following is only used in the analyser feeding the disambiguator. This is missing.
 
-+Use/-PMatch	        !!= * `@CODE@`: 
++Use/-PMatch	        !!= * `@CODE@`:
 
-+Use/-Spell		        !!= * `@CODE@`: 
-+Use/Arch		        !!= * `@CODE@`: 
-+Use/SpellNoSugg        !!= * `@CODE@`: 
++Use/-Spell		        !!= * `@CODE@`:
++Use/Arch		        !!= * `@CODE@`:
++Use/SpellNoSugg        !!= * `@CODE@`:
 
 !! Usage tags are pushed wherever appropriate:
 !!€ nallein: nalle+N+Pl+Gen+Use/Rare
@@ -593,8 +593,8 @@ Multichar_Symbols
 +Hom8
 +Hom9
 
-+v1				        !!= * `@CODE@`: 
-+v2				        !!= * `@CODE@`: 
++v1				        !!= * `@CODE@`:
++v2				        !!= * `@CODE@`:
 
 
 !! ### Dialects
@@ -630,16 +630,16 @@ Multichar_Symbols
 
 
 !! ### Tags for language of unassimilated name
-+OLang/ENG		        !!= * `@CODE@`: 
++OLang/ENG		        !!= * `@CODE@`:
 +OLang/eng		        !!= * `@CODE@`: is a typo, FIX
-+OLang/FIN		        !!= * `@CODE@`: 
-+OLang/NNO		        !!= * `@CODE@`: 
-+OLang/NOB		        !!= * `@CODE@`: 
-+OLang/RUS		        !!= * `@CODE@`: 
-+OLang/SMA		        !!= * `@CODE@`: 
-+OLang/SME		        !!= * `@CODE@`: 
-+OLang/SWE		        !!= * `@CODE@`: 
-+OLang/UND		        !!= * `@CODE@`: 
++OLang/FIN		        !!= * `@CODE@`:
++OLang/NNO		        !!= * `@CODE@`:
++OLang/NOB		        !!= * `@CODE@`:
++OLang/RUS		        !!= * `@CODE@`:
++OLang/SMA		        !!= * `@CODE@`:
++OLang/SME		        !!= * `@CODE@`:
++OLang/SWE		        !!= * `@CODE@`:
++OLang/UND		        !!= * `@CODE@`:
 
 !! ### Others
 !! The boundaries of compounds that are not lexicalised in the dictionary will
@@ -650,8 +650,8 @@ Multichar_Symbols
  +Cmp          !!≈ * **@CODE@** - Dynamic compound. This tag should always be part
                !!                 of a dynamic compound. It is important for
                !!                 Apertium, and useful in other cases as well.
-+Cmp/Hyph		        !!= * `@CODE@`: 
-+CmpNP/None		        !!= * `@CODE@`: 
++Cmp/Hyph		        !!= * `@CODE@`:
++CmpNP/None		        !!= * `@CODE@`:
 
 !! The word and morpheme boundaries are used to limit the effective range of
 !! far-reaching rules, such as vowel harmony. The boundaries are marked by
@@ -683,12 +683,12 @@ Multichar_Symbols
  @P.NeedNoun.ON@    !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
  @D.NeedNoun.ON@    !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
  @C.NeedNoun@       !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
- 
+
  @C.ErrOrth@		!!≈ |  @CODE@
  @D.ErrOrth.ON@		!!≈ |  @CODE@
  @P.ErrOrth.ON@		!!≈ |  @CODE@
 
-!! 
+!!
 !! For languages that allow compounding, the following flag diacritics are needed
 !! to control position-based compounding restrictions for nominals. Their use is
 !! handled automatically if combined with +CmpN/xxx tags. If not used, they will
@@ -701,7 +701,7 @@ Multichar_Symbols
  @U.CmpNone.FALSE@ !!≈ |  @CODE@ | Combines with the prev tag to prohibit compounding
  @P.CmpOnly.TRUE@  !!≈ |  @CODE@ | Sets a flag to indicate that the word has passed R
  @D.CmpOnly.FALSE@ !!≈ |  @CODE@ | Disallow words coming directly from root.
-!! 
+!!
 !! Use the following flag diacritics to control downcasing of derived proper
 !! nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
 !! these flags. There exists a ready-made regex that will do the actual down-casing
@@ -709,7 +709,7 @@ Multichar_Symbols
  @U.Cap.Obl@        !!≈ |  @CODE@ | Allowing downcasing of derived names: deatnulasj.
  @U.Cap.Opt@        !!≈ |  @CODE@ | Allowing downcasing of derived names: deatnulasj.
 
-% 
+%
 
 ! The root lexicon is unique entry point of this morphological description.
 ! This lexicon must not be used elsewhere; it contains only the markers for
@@ -722,11 +722,11 @@ LEXICON Root
 !!€ talo: talo+N+Sg+Nom # house
 !!€ nopea: nopea+A+Sg+Nom # fast
 !!€ kutoa: kutoa+V+Act+InfA+Sg+Lat # to knit
-0   NOUN ;
+0   NOUN ;  !! @LEMMA@ test @CONTLEX@
 0   ADJECTIVE ;
 0   VERB    ;
 0   NumberRoot ; ! The main lexicon
-0   NUMERAL ;  ! 
+0   NUMERAL ;  !
 0   DIGITS ;
 0   ACRONYM ;
 0   PRONOUN    ;
