@@ -565,7 +565,7 @@ Multichar_Symbols
 +Err/Lex		        !!= * `@CODE@`:
 +Err/SpaceCmp	        !!= * `@CODE@`:
 
-+Use/Marg !!= * `@CODE@`: Marginal
++Use/Marg !!≈ * `@CODE@`: Marginal
 +Use/Rare  !!= * `@CODE@`: Rare
 +Use/NG   !!= * `@CODE@`: Do not generate
 +Use/Hyphen !!= * `@CODE@`: With hyphens
@@ -722,7 +722,7 @@ LEXICON Root
 !!€ talo: talo+N+Sg+Nom # house
 !!€ nopea: nopea+A+Sg+Nom # fast
 !!€ kutoa: kutoa+V+Act+InfA+Sg+Lat # to knit
-0   NOUN ;  !! @LEMMA@ test @CONTLEX@
+0   NOUN ;  !!≈ @LEMMA@ test @CONTLEX@
 0   ADJECTIVE ;
 0   VERB    ;
 0   NumberRoot ; ! The main lexicon
