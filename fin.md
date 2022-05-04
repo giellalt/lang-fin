@@ -8100,7 +8100,7 @@ check how it inflects in singulars of nominative,
 essive and inessive, plurals of essive, elative, partitive, illative, and
 GENITIVE. Find out stems and suffixes and match.
 
-naan+N:naan is an Indian bread with `NOUN_PUNK` paradigm
+naan:naan is an Indian bread with `NOUN_PUNK` paradigm
 
 * * *
 
