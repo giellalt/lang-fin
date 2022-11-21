@@ -74,7 +74,10 @@ Multichar_Symbols
 +Pron !!= * `@CODE@`: Pronoun
 +Pcle  !!= * `@CODE@`: Particle, except:
 +Interj !!= * `@CODE@`: Interjection
-+Cmt
++Cmt !!= * `@CODE@`: hmm, what is this?
+
++IV !!= * `@CODE@`: Intransitive verb
++TV  !!= * `@CODE@`: Transitive verb
 
 !! The part-of-speech analyses are typically the first:
 !!€gt-norm: Analysis examples
@@ -641,6 +644,48 @@ Multichar_Symbols
 +OLang/SWE		        !!= * `@CODE@`:
 +OLang/UND		        !!= * `@CODE@`:
 
+
+!! ### Compounding tags
+
+!! The tags are of the following form:
+!! * **+CmpNP/xxx** - Normative (N), Position (P), ie the tag describes what
+!!                    position the tagged word can be in in a compound
+!! * **+CmpN/xxx**  - Normative (N) **form** ie the tag describes what
+!!                    form the tagged word should use when making compounds
+!! * **+Cmp/xxx**   - Descriptive compounding tags, ie tags that *describes*
+!!                    what form a word actually is using in a compound
+
+!! This entry / word should be in the following position(s):
+
++CmpNP/All       !!≈ * **@CODE@** - ... in all positions, **default**, this tag does not have to be written
++CmpNP/First     !!≈ * **@CODE@** - ... only be first part in a compound or alone
++CmpNP/Pref      !!≈ * **@CODE@** - ... only **first** part in a compound, NEVER alone
++CmpNP/Last      !!≈ * **@CODE@** - ... only be last part in a compound or alone
++CmpNP/Suff      !!≈ * **@CODE@** - ... only **last** part in a compound, NEVER alone
++CmpNP/None      !!≈ * **@CODE@** - ... does not take part in compounds
++CmpNP/Only      !!≈ * **@CODE@** - ... only be part of a compound, i.e. can never
+                 !!                     be used alone, but can appear in any position
+
+!!
+!! If unmarked, any position goes.
+
+!! The tagged part of the compound should make a compound using:
+
++CmpN/SgN      !!≈ * **@CODE@** Singular Nominative
++CmpN/SgG      !!≈ * **@CODE@** Singular Genitive
++CmpN/PlG      !!≈ * **@CODE@** Plural Genitive
++CmpN/PlN      !!≈ * **@CODE@** Plural Nominative, propers!
+
+!! Unmarked = Default, ie `+CmpN/SgN` for SME.
+
+!! The second part of the compound may require that the previous (left part) is:
+
++CmpN/SgNomLeft  !!≈ * **@CODE@** Singular Nominative
++CmpN/SgGenLeft  !!≈ * **@CODE@** Singular Genitive
++CmpN/PlGenLeft  !!≈ * **@CODE@** Plural Genitive
+
+
+
 !! ### Others
 !! The boundaries of compounds that are not lexicalised in the dictionary will
 !! have compound analyses, the compounds may also have usage tags. The
@@ -652,6 +697,11 @@ Multichar_Symbols
                !!                 Apertium, and useful in other cases as well.
 +Cmp/Hyph		        !!= * `@CODE@`:
 +CmpNP/None		        !!= * `@CODE@`:
+
+
+
+
+
 
 !! The word and morpheme boundaries are used to limit the effective range of
 !! far-reaching rules, such as vowel harmony. The boundaries are marked by
