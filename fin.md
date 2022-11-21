@@ -7062,6 +7062,10 @@ Have a look at these:
 * `+Pron `: Pronoun
 * `+Pcle  `: Particle, except:
 * `+Interj `: Interjection
+* `+Cmt `: hmm, what is this?
+
+* `+IV `: Intransitive verb
+* `+TV  `: Transitive verb
 
 The part-of-speech analyses are typically the first:
 
@@ -7588,6 +7592,44 @@ mrophology.
 * `+OLang/SME		        `:
 * `+OLang/SWE		        `:
 * `+OLang/UND		        `:
+
+### Compounding tags
+
+The tags are of the following form:
+* **+CmpNP/xxx** - Normative (N), Position (P), ie the tag describes what
+position the tagged word can be in in a compound
+* **+CmpN/xxx**  - Normative (N) **form** ie the tag describes what
+form the tagged word should use when making compounds
+* **+Cmp/xxx**   - Descriptive compounding tags, ie tags that *describes*
+what form a word actually is using in a compound
+
+This entry / word should be in the following position(s):
+
+* **+CmpNP/All** - ... in all positions, **default**, this tag does not have to be written
+* **+CmpNP/First** - ... only be first part in a compound or alone
+* **+CmpNP/Pref** - ... only **first** part in a compound, NEVER alone
+* **+CmpNP/Last** - ... only be last part in a compound or alone
+* **+CmpNP/Suff** - ... only **last** part in a compound, NEVER alone
+* **+CmpNP/None** - ... does not take part in compounds
+* **+CmpNP/Only** - ... only be part of a compound, i.e. can never
+be used alone, but can appear in any position
+
+If unmarked, any position goes.
+
+The tagged part of the compound should make a compound using:
+
+* **+CmpN/SgN** Singular Nominative
+* **+CmpN/SgG** Singular Genitive
+* **+CmpN/PlG** Plural Genitive
+* **+CmpN/PlN** Plural Nominative, propers!
+
+Unmarked = Default, ie `+CmpN/SgN` for SME.
+
+The second part of the compound may require that the previous (left part) is:
+
+* **+CmpN/SgNomLeft** Singular Nominative
+* **+CmpN/SgGenLeft** Singular Genitive
+* **+CmpN/PlGenLeft** Plural Genitive
 
 ### Others
 The boundaries of compounds that are not lexicalised in the dictionary will
