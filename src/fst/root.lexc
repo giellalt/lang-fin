@@ -685,18 +685,32 @@ Multichar_Symbols
 +CmpN/PlGenLeft  !!≈ * **@CODE@** Plural Genitive
 
 
+!! ### These tags describe the parts of the compound.
+
+!! The prefix (before "/") is **Cmp**.
+
++Cmp/Hyph   !!≈ * **@CODE@** compounds where first part ends in -
++Cmp/SgNom  !!≈ * **@CODE@** compounds where first part is Sg Nom
++Cmp/PlNom  !!≈ * **@CODE@** compounds where first part is Pl Nom
++Cmp/Attr   !!≈ * **@CODE@** compounds where first part is Attr
++Cmp/SgGen  !!≈ * **@CODE@** compounds where first part is Sg Gen
++Cmp/PlGen  !!≈ * **@CODE@** compounds where first part is Pl Gen
++Cmp/SplitR !!≈ * **@CODE@** compounds where first part is a split compound hmm
++Cmp/Sh     !!≈ * **@CODE@** compounds where first part is a short form
++Cmp           !!≈ * **@CODE@** - Dynamic compound. This tag should always be part
+               !!                 of a dynamic compound. It is important for
+               !!                 Apertium, and useful in other cases as well.
 
 !! ### Others
 !! The boundaries of compounds that are not lexicalised in the dictionary will
 !! have compound analyses, the compounds may also have usage tags. The
 !! compounding analyses concern also syntagmatic melting mishmash.
+
+
+
+
 +Use/Circ    !!= Compound boundary
 
- +Cmp          !!≈ * **@CODE@** - Dynamic compound. This tag should always be part
-               !!                 of a dynamic compound. It is important for
-               !!                 Apertium, and useful in other cases as well.
-+Cmp/Hyph		        !!= * `@CODE@`:
-+CmpNP/None		        !!= * `@CODE@`:
 
 
 

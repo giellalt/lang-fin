@@ -23,13 +23,13 @@
 LEXICON NOUN_COMPOUND
 !!€gt-norm:
 !!€ talojuttu: talo+N+Sg+Nom#juttu+N+Sg+Nom
-     +Use/Circ+Use/NoHyphens:0  NOMINAL ;
- +Use/Circ+Use/Hyphen+Use/NG:0# NOMINAL ;
-                   +Use/Circ:   NOMINAL ;
-                                 RHyph ;
+     +Use/Circ+Use/NoHyphens:# NOMINAL ;
+ +Use/Circ+Use/Hyphen+Use/NG:# NOMINAL ;
+                   +Use/Circ:# NOMINAL ;
+                               RHyph ;
 
 LEXICON RNum
-NOMINAL ;
+:# NOMINAL ;
 
 LEXICON RHyph
                    +Use/Circ:-  NOMINAL ;
