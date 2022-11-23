@@ -627,17 +627,28 @@ The second part of the compound may require that the previous (left part) is:
 * **+CmpN/SgGenLeft** Singular Genitive
 * **+CmpN/PlGenLeft** Plural Genitive
 
+### These tags describe the parts of the compound.
+
+The prefix (before "/") is **Cmp**.
+
+* **+Cmp/Hyph** compounds where first part ends in -
+* **+Cmp/SgNom** compounds where first part is Sg Nom
+* **+Cmp/PlNom** compounds where first part is Pl Nom
+* **+Cmp/Attr** compounds where first part is Attr
+* **+Cmp/SgGen** compounds where first part is Sg Gen
+* **+Cmp/PlGen** compounds where first part is Pl Gen
+* **+Cmp/SplitR** compounds where first part is a split compound hmm
+* **+Cmp/Sh** compounds where first part is a short form
+* **+Cmp** - Dynamic compound. This tag should always be part
+           of a dynamic compound. It is important for
+           Apertium, and useful in other cases as well.
+
 ### Others
 The boundaries of compounds that are not lexicalised in the dictionary will
 have compound analyses, the compounds may also have usage tags. The
 compounding analyses concern also syntagmatic melting mishmash.
-Compound boundary
 
-* **+Cmp** - Dynamic compound. This tag should always be part
-           of a dynamic compound. It is important for
-           Apertium, and useful in other cases as well.
-* `+Cmp/Hyph		        `:
-* `+CmpNP/None		        `:
+Compound boundary
 
 The word and morpheme boundaries are used to limit the effective range of
 far-reaching rules, such as vowel harmony. The boundaries are marked by
