@@ -4847,11 +4847,13 @@ SECTION
 #!! * **X** maps X everywhere
 MAP (@X) TARGET WORD ;
 
-#SUBSTITUTE (@X) (*) TARGET WORD ;
 
 #!! * **REMOVE X** removes X whenever there is any other tag.
 # Commented out, may be useful at a later stage, but at the moment may hide ambiguities - 19.01.2015 -FMT+KM
-#REMOVE (@X) ;
+# Commented in again as part of compound degugging - 21.11.2022 -TT
+REMOVE (@X) ;
+
+SUBSTITUTE (@X) (*) TARGET WORD ;
 
  #GENERIC Sg Nom FOR All OTHER InsTANCES
 
