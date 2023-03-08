@@ -13,7 +13,7 @@ REGEX_SRCS=modify-tags.regex
 
 # cleaning
 clean-local:
-	-rm -f *.hfst *tags.txt
+	-rm -f *.hfst *.relabel *tags.txt
 
 ##########################################
 # General build rules included from here:#
