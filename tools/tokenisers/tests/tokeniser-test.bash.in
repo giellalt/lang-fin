@@ -12,7 +12,7 @@ fi
 hfst-tokenise ../tokeniser-disamb-gt-desc.pmhfst \
     < "$srcdir"/tokeniser-test.strings > tokeniser-test.output
 
-if ! diff tokeniser-test.output "$srcdir"/tokeniser-test.expected ; then
+if ! diff -u tokeniser-test.output "$srcdir"/tokeniser-test.expected ; then
     echo tokenisation failed to live up to the standards
     exit 1
 fi
