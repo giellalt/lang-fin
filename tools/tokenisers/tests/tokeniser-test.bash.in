@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if ! test -f ../tokeniser-disamb-gt-desc.pmhfst ; then
+    echo missing ../tokeniser-disamb-gt-desc.pmhfst assuming disabled
+    exit 77
+fi
+if test -z "$srcdir" ; then
+    echo call this from make check or set srcdir=.
+    exit 1
+fi
+
+hfst-tokenise ../tokeniser-disamb-gt-desc.pmhfst \
+    < "$srcdir"/tokeniser-test.strings > tokeniser-test.output
+
+if ! diff tokeniser-test.output "$srcdir"/tokeniser-test.expected ; then
+    echo tokenisation failed to live up to the standards
+    exit 1
+fi

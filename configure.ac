@@ -202,6 +202,9 @@ gt_CONFIG_FILES
 ##### BEGIN: Add language-specific list of files to ######
 ########## be processed by autoconf below here: ##########
 
+AC_CONFIG_FILES([tools/tokenisers/tests/tokeniser-test.bash], 
+                [chmod +x tools/tokenisers/tests/tokeniser-test.bash])
+
 ############ END: Language-specific scripts. #############
 
 # This must be near the end of all configure.ac files:
