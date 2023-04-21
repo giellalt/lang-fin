@@ -763,7 +763,7 @@ the dictionary class is ⁹⁻E.
 * *halpojen:* `halpa+A+Pl+Gen`
 * *halpoihin:* `halpa+A+Pl+Ill`
 * *halvempi:* `halpa+A+Comp+Sg+Nom`
-* *halvoin:* `halpa+A+Superl+Sg+Nom`
+* *halvin:* `halpa+A+Superl+Sg+Nom`
 
 The ta : da stem with a comparative and j plurals is `ADJ_EHTA`, and
 the dictionary class is ⁹⁻F.

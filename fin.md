@@ -1329,7 +1329,7 @@ the dictionary class is ⁹⁻E.
 * *halpojen:* `halpa+A+Pl+Gen`
 * *halpoihin:* `halpa+A+Pl+Ill`
 * *halvempi:* `halpa+A+Comp+Sg+Nom`
-* *halvoin:* `halpa+A+Superl+Sg+Nom`
+* *halvin:* `halpa+A+Superl+Sg+Nom`
 
 The ta : da stem with a comparative and j plurals is `ADJ_EHTA`, and
 the dictionary class is ⁹⁻F.
@@ -7530,10 +7530,12 @@ in there have been carried over.
 * `+Err/Hyph		        `:
 * `+Err/Lex		        `:
 * `+Err/SpaceCmp	        `:
+* `+Err/MissingSpace	        `:
 
 * `+Use/Marg`: Marginal
 * `+Use/Rare  `: Rare
 * `+Use/NG   `: Do not generate
+* `+Use/GC   `: Do not generate
 * `+Use/Hyphen `: With hyphens
 * `+Use/NoHyphens `: With hyphens
 
@@ -7544,6 +7546,7 @@ in there have been carried over.
 * `+Use/-Spell		        `:
 * `+Use/Arch		        `:
 * `+Use/SpellNoSugg        `:
+* `+Use/Circ		        `:
 
 Usage tags are pushed wherever appropriate:
 * *nallein:* `nalle+N+Pl+Gen+Use/Rare`

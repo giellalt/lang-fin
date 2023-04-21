@@ -526,10 +526,12 @@ in there have been carried over.
 * `+Err/Hyph		        `:
 * `+Err/Lex		        `:
 * `+Err/SpaceCmp	        `:
+* `+Err/MissingSpace	        `:
 
 * `+Use/Marg`: Marginal
 * `+Use/Rare  `: Rare
 * `+Use/NG   `: Do not generate
+* `+Use/GC   `: Do not generate
 * `+Use/Hyphen `: With hyphens
 * `+Use/NoHyphens `: With hyphens
 
@@ -540,6 +542,7 @@ in there have been carried over.
 * `+Use/-Spell		        `:
 * `+Use/Arch		        `:
 * `+Use/SpellNoSugg        `:
+* `+Use/Circ		        `:
 
 Usage tags are pushed wherever appropriate:
 * *nallein:* `nalle+N+Pl+Gen+Use/Rare`
