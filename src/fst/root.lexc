@@ -567,10 +567,12 @@ Multichar_Symbols
 +Err/Hyph		        !!= * `@CODE@`:
 +Err/Lex		        !!= * `@CODE@`:
 +Err/SpaceCmp	        !!= * `@CODE@`:
++Err/MissingSpace	        !!= * `@CODE@`:
 
 +Use/Marg !!≈ * `@CODE@`: Marginal
 +Use/Rare  !!= * `@CODE@`: Rare
 +Use/NG   !!= * `@CODE@`: Do not generate
++Use/GC   !!= * `@CODE@`: Do not generate
 +Use/Hyphen !!= * `@CODE@`: With hyphens
 +Use/NoHyphens !!= * `@CODE@`: With hyphens
 
@@ -581,6 +583,7 @@ Multichar_Symbols
 +Use/-Spell		        !!= * `@CODE@`:
 +Use/Arch		        !!= * `@CODE@`:
 +Use/SpellNoSugg        !!= * `@CODE@`:
++Use/Circ		        !!= * `@CODE@`:
 
 !! Usage tags are pushed wherever appropriate:
 !!€ nallein: nalle+N+Pl+Gen+Use/Rare
