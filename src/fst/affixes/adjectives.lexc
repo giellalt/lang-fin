@@ -3941,8 +3941,8 @@ LEXICON ADJ_COMPOUND_NOUN_SUFF
 
 +TruncPrefix:-  # ;
 
-#:{hyph?}  NOUN ;
-#:{hyph?}  SUFFIX ;
++Cmp#:{hyph?}  NOUN ;
++Cmp#:{hyph?}  SUFFIX ;
 
 LEXICON ADJ_COMPOUND_0
 
@@ -3952,7 +3952,7 @@ LEXICON ADJ_COMPOUND
 
 +TruncPrefix:-  # ;
 
-#:{hyph?}  SUFFIX ;
++Cmp#:{hyph?}  SUFFIX ;
 
 LEXICON ADJ_BACK_COMPARATIVE_ARCHAIC
 

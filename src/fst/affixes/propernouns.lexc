@@ -447,38 +447,37 @@ LEXICON PROPN_FRONT_POSS_EN_CLIT_OBL
 !
 ! compounding
 LEXICON PROPN_COMPOUND_0
-0   PROPN_COMPOUND ;
-+Cmp:   PROPN_COMPOUND ;
+0:   PROPN_COMPOUND ;
 
 LEXICON PROPN_COMPOUND_N
-0n:%>n               PROPN_COMPOUND    ;
+0:%>n               PROPN_COMPOUND    ;
 
 LEXICON PROPN_COMPOUND_IEN
-0ien:%>i%>en                 PROPN_COMPOUND  ;
+0:%>i%>en                 PROPN_COMPOUND  ;
 
 LEXICON PROPN_COMPOUND_IDEN
-0iden:%>i%>den                 PROPN_COMPOUND  ;
+0:%>i%>den                 PROPN_COMPOUND  ;
 
 LEXICON PROPN_COMPOUND_IN
-0in:%>i%>n                 PROPN_COMPOUND     ;
+0:%>i%>n                 PROPN_COMPOUND     ;
 
 LEXICON PROPN_COMPOUND_ITTEN
-0itten:%>i%>tten               PROPN_COMPOUND     ;
+0:%>i%>tten               PROPN_COMPOUND     ;
 
 LEXICON PROPN_COMPOUND_JEN
-0jen:%>j%>en                 PROPN_COMPOUND     ;
+0:%>j%>en                 PROPN_COMPOUND     ;
 
 LEXICON PROPN_COMPOUND_TEN
-0ten:%>ten                 PROPN_COMPOUND     ;
+0:%>ten                 PROPN_COMPOUND     ;
 
 LEXICON PROPN_COMPOUND_S
 
-+Cmp:»s	PROPN_COMPOUND ;
+0:»s	PROPN_COMPOUND ;
 
 
 
 LEXICON PROPN_COMPOUND
-+Use/Circ#:0#     NOUN   ;
++Cmp+Use/Circ#:0#     NOUN   ;
 !+Use/Circ#:0#     DeverbalNouns   ;
 
 LEXICON PROPN_BACK_PLNOM_ARCHAIC_CLIT
