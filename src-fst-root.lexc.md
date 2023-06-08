@@ -337,6 +337,7 @@ is marked with special analysis.  Some words have forms only appearing in
 compounds.
 Further reading: [VISK § 406](http://scripta.kotus.fi/visk/sisallys.php?p=406)
 Compound form
+Compound marker
 
 * *naisien:* `nainen+N+Der/s#ien+N+Sg+Nom` (Eng. # female gum)
 
