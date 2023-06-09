@@ -1,8 +1,8 @@
 build:
   analysers: true
   spellers: true
-  grammar-checkers: false
+  grammar-checkers: true
 check:
-  analysers: false
-  spellers: false
-  grammar-checkers: false
+  analysers: true
+  spellers: true
+  grammar-checkers: true
