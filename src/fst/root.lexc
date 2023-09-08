@@ -577,8 +577,9 @@ Multichar_Symbols
 +Use/NoHyphens !!= * `@CODE@`: With hyphens
 
  +Use/PMatch       !!≈ * **@CODE@** means that the following is only used in the analyser feeding the disambiguator. This is missing.
-
 +Use/-PMatch	        !!= * `@CODE@`:
+ +Use/TTS          !!≈ * **@CODE@** – **only** retained in the HFST Text-To-Speech disambiguation tokeniser
+ +Use/-TTS         !!≈ * **@CODE@** – **never** retained in the HFST Text-To-Speech disambiguation tokeniser
 
 +Use/-Spell		        !!= * `@CODE@`:
 +Use/Arch		        !!= * `@CODE@`:
