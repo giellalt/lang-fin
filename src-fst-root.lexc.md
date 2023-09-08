@@ -536,8 +536,9 @@ in there have been carried over.
 * `+Use/NoHyphens `: With hyphens
 
 * **+Use/PMatch** means that the following is only used in the analyser feeding the disambiguator. This is missing.
-
 * `+Use/-PMatch	        `:
+* **+Use/TTS** – **only** retained in the HFST Text-To-Speech disambiguation tokeniser
+* **+Use/-TTS** – **never** retained in the HFST Text-To-Speech disambiguation tokeniser
 
 * `+Use/-Spell		        `:
 * `+Use/Arch		        `:
