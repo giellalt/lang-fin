@@ -1,0 +1,127 @@
+! an experiment...
+! inverted analyser to compose to get surface to emoji mapping
+! ideally automatic from CLDR data
+
+! E.g. talo:talo+N+Sg+Nom .o. talo+N+Sg+Nom:🏠
+!      talot:talo+N+Pl+Nom .o. talo+N+Pl+Nom:🏠🏠
+!      taloon:talo+N+Sg+Ill .o. talo+N+Sg+Ill:🏠⬅
+! or:
+!      talot:talo+N+Pl+Nom .o. talo+N+Pl+Nom:🏠%:t
+! maybe after asking from language councils
+
+Multichar_Symbols
+
++N 
++Sg 
++Pl
++Nom
++Acc
++Gen
++Par
++Ine
++Ela
++Ill
++Ade
++Abl
++All
++Com
++Abe
++Ins
++A
++Px1Sg
++Px2Sg
++Px3
++Px1Pl
++Px2Pl
++Qst
++Foc/han
++Foc/ko
++Foc/pa
++Foc/s
++Foc/ka
++Foc/kaan
++Foc/kin
+
+LEXICON Root
+
+talo+N+Sg:🏠        Cases ;
+talo+N+Pl:🏠🏠      Cases ;
+kissa+N+Sg:🐈       Cases ;
+kissa+N+Pl:🐈🐈     Cases ;
+koira+N+Sg:🐕       Cases ;
+koira+N+Pl:🐕🐕     Cases ;
+puutarha+N+Sg:🏡    Cases ;
+puutarha+N+Pl:🏡🏡  Cases ;
+kylmä+A+Sg:🧊       Cases ;
+poika+N+Sg:👦       Cases ;
+poika+N+Pl:👦👦     Cases ;
+tyttö+N+Sg:👧       Cases ;
+tyttö+N+Pl:👧👧     Cases ;
+ikkuna+N+Sg:🪟      Cases ;
+ikkuna+N+Pl:🪟🪟    Cases ;
+puu+N+Sg:🌲         Cases ;
+puu+N+Pl:🌲🌲       Cases ;
+käsi+N+Sg:🖐        Cases ;
+käsi+N+Pl:🖐🖐      Cases ;
+silmä+N+Sg:👁       Cases ;
+silmä+N+Pl:👁👁     Cases ;
+ihminen+N+Sg:🧍     Cases ;
+ihminen+N+Pl:🧍🧍   Cases ;
+tuoli+N+Sg:🪑       Cases ;
+tuoli+N+Pl:🪑🪑     Cases ;
+ääni+N+Sg:🔉        Cases ;
+ääni+N+Pl:🔉🔉      Cases ;
+lintu+N+Sg:🐦       Cases ;
+lintu+N+Pl:🐦🐦     Cases ;
+eläin+N+Sg:🦍       Cases ;
+eläin+N+Pl:🦍🦍     Cases ;
+pää+N+Sg:🗣         Cases ;
+pää+N+Pl:🗣🗣       Cases ;
+vesi+N+Sg:💧        Cases ;
+vesi+N+Pl:💧💧      Cases ;
+
+LEXICON Cases
+
++Gen:n      Poss/Opt ;
++Par:a      Poss/Opt ;
++Ine:ssa    Poss/Opt ;
++Ela:→      Poss/Opt ;
++Ill:←      Poss/Opt ;
++Ade:lla    Poss/Opt ;
++Abl:⇒      Poss/Opt ;
++All:⇐      Poss/Opt ;
++Ess:na     Poss/Opt ;
++Tra:ksi    Poss/Opt ;
++Abe:tta    Poss/Opt ;
+
+LEXICON Poss/Opt
+
+0:0         #   ;
++PxSg1:ni   Clits/Opt ;
++PxSg2:si   Clits/Opt ;
++Px3:nsa    Clits/Opt ;
++PxPl1:mme  Clits/Opt ;
++PxPl2:nne  Clits/Opt ;
+
+LEXICON Clits/Opt
+
+0:0             Clits/Opt+1   ;
++Foc/han:han    Clits/Opt+1   ;
++Foc/kaan:kaan  Clits/Opt+1   ;
++Foc/pa:pa      Clits/Opt+1   ;
++Foc/kin:kin    Clits/Opt+1   ;
++Foc/han:han    Clits/Opt+1   ;
++Foc/s:s        Clits/Opt+1   ;
++Qst:❓         Clits/Opt+1   ;
+
+LEXICON Clits/Opt+1
+
+0:0             #   ;
++Foc/han:han    #   ;
++Foc/kaan:kaan  #   ;
++Foc/pa:pa      #   ;
++Foc/kin:kin    #   ;
++Foc/han:han    #   ;
++Foc/s:s        #   ;
++Qst:❓         #   ;
+

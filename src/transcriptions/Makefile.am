@@ -27,9 +27,13 @@ GT_TRANSCRIPTIONS_SRCS=\
 #! @param GT_ABBREV_SRCS required, for abbreviation expansions
 GT_ABBREV_SRCS=transcriptor-abbrevs2text.lexc
 
+GT_EMOJI_SRCS=transcriptor-lemma2emoji.lexc \
+			  transcriptor-text2emoji.lexc
+
 GT_TRANSCRIPTIONS_REGEX_SRCS=
 
-GT_CUSTOM_TARGETS=
+GT_CUSTOM_TARGETS=transcriptor-lemma2emoji.compose.hfst \
+				  transcriptor-text2emoji.lookup.hfst
 
 ### BEGIN: Custom build rules: ###
 
