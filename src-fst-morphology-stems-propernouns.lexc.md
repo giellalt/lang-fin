@@ -1,0 +1,27 @@
+# Proper nouns
+Proper nouns are morphologically indistinct subset of nouns. They have
+some orthographical differences, required capitalisations and compounding
+with hyphens. The derivations may lowercase. They may be classified 
+semantically to match other giellatekno things in the future.
+
+* Proper nouns examples:*
+* *Kalle:* `Kalle+N+Prop+Sg+Nom`
+* *Joensuu:* `Joensuu+N+Prop+Sg+Nom`
+
+details see [noun-stems.html].
+The proper nouns are classified and inflected along noun patterns, for 
+
+Many of Proper nouns inflect like nouns... however, compound differently
+
+* Nouns 20 ä examples:*
+* *Hyvinkää:* `Hyvinkää+N+Prop+Sg+Nom` (Eng. # Hyvinkää)
+* *Hyvinkäätä:* `Hyvinkää+N+Prop+Sg+Par`
+* *Hyvinkäähän:* `Hyvinkää+N+Prop+Sg+Ill`
+* *Hyvinkääseen:* `Hyvinkää+N+Prop+Sg+Ill`
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/propernouns.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/propernouns.lexc)</small>
+
+---
+

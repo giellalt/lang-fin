@@ -483,6 +483,23 @@ The analysis give double analysis because of optional semtags. We go for the one
 
 * * *
 <small>This (part of) documentation was generated from [src/cg3/functions.cg3](https://github.com/giellalt/lang-fin/blob/main/src/cg3/functions.cg3)</small>
+# Guesser
+A rule-based morphological guesser is based on using the paradigms from the
+dictionary based analyser but replacing the roots with patterns. For Finnish
+we have quite neat paradigms with well-defined stem patterns: vowel harmony,
+stem vowels and some with specific syllable counts
+
+## Symbols used for guesser `Multichar_Symbols`
+Guesser uses a subset of the morphological analyser's alphabet. For
+documentation c.f. [morphology root](root-fst-src.html).
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/guess-patterns.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/guess-patterns.lexc)</small>
+
+---
+
+
 # Continuation lexicons for Finnish abbreviations
 
 ## Lexica for adding tags and periods
@@ -543,7 +560,7 @@ The analysis give double analysis because of optional semtags. We go for the one
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/abbreviations.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/affixes/abbreviations.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/abbreviations.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/affixes/abbreviations.lexc)</small>
 
 ---
 
@@ -560,7 +577,7 @@ c.f. [VISK § 169](http://scripta.kotus.fi/visk/sisallys.php?p=169)
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/acronyms.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/affixes/acronyms.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/acronyms.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/affixes/acronyms.lexc)</small>
 
 ---
 
@@ -2156,7 +2173,7 @@ Adjectives can usually be derived into sti adverbs productively
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/adjectives.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/affixes/adjectives.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/adjectives.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/affixes/adjectives.lexc)</small>
 
 ---
 
@@ -2193,7 +2210,7 @@ so they are not inflected here, but listed in roots.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/adv.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/affixes/adv.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/adv.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/affixes/adv.lexc)</small>
 
 ---
 
@@ -2322,7 +2339,7 @@ The roman digit string ending in I, IV, V, VII, IX, X or
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/digits.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/affixes/digits.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/digits.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/affixes/digits.lexc)</small>
 
 ---
 
@@ -5693,7 +5710,7 @@ parts are nominals and inflect regularly.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/nouns.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/affixes/nouns.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/nouns.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/affixes/nouns.lexc)</small>
 
 ---
 
@@ -5876,7 +5893,7 @@ forms which requires great amount of care in the inflection patterns.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/numerals.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/affixes/numerals.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/numerals.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/affixes/numerals.lexc)</small>
 
 ---
 
@@ -5885,7 +5902,7 @@ forms which requires great amount of care in the inflection patterns.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/symbols.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/affixes/symbols.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/symbols.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/affixes/symbols.lexc)</small>
 
 ---
 
@@ -6947,7 +6964,7 @@ These derivations are treated as inflection in our system as well.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/verbs.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/affixes/verbs.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/verbs.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/affixes/verbs.lexc)</small>
 
 ---
 
@@ -6970,24 +6987,7 @@ The nominal forms can be used as non-initial parts of typical compounds
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/compounding.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/compounding.lexc)</small>
-
----
-
-
-# Guesser
-A rule-based morphological guesser is based on using the paradigms from the
-dictionary based analyser but replacing the roots with patterns. For Finnish
-we have quite neat paradigms with well-defined stem patterns: vowel harmony,
-stem vowels and some with specific syllable counts
-
-## Symbols used for guesser `Multichar_Symbols`
-Guesser uses a subset of the morphological analyser's alphabet. For
-documentation c.f. [morphology root](root-fst-src.html).
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/guess-patterns.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/guess-patterns.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/compounding.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/compounding.lexc)</small>
 
 ---
 
@@ -6998,7 +6998,7 @@ This file documents the [phonology.twolc file](http://github.com/giellalt/lang-f
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/phonology.twolc](https://github.com/giellalt/lang-fin/blob/main/src/fst/phonology.twolc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/phonology.twolc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/phonology.twolc)</small>
 
 ---
 
@@ -7713,7 +7713,7 @@ dictionaries, prefix or hyphenated suffix
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/root.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/root.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/root.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/root.lexc)</small>
 
 ---
 
@@ -7740,7 +7740,7 @@ allomorph selection and the harmony. See the list from:
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/adjectives.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/adjectives.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/adjectives.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/adjectives.lexc)</small>
 
 ---
 
@@ -7764,7 +7764,7 @@ and clitics they take or require:
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/adverbs.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/adverbs.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/adverbs.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/adverbs.lexc)</small>
 
 ---
 
@@ -7784,7 +7784,7 @@ Further reading: [VISK § 816](http://scripta.kotus.fi/visk/sisalto.php?p=816))
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/conjunctions.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/conjunctions.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/conjunctions.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/conjunctions.lexc)</small>
 
 ---
 
@@ -7794,7 +7794,7 @@ pronouns are used like determiners, and can be analysed as such.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/determiners.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/determiners.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/determiners.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/determiners.lexc)</small>
 
 ---
 
@@ -7895,7 +7895,7 @@ Ones come alone
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/digits.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/digits.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/digits.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/digits.lexc)</small>
 
 ---
 
@@ -7941,7 +7941,7 @@ few verbs have shortened forms in standard spoken Finnish
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/exceptions.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/exceptions.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/exceptions.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/exceptions.lexc)</small>
 
 ---
 
@@ -7970,7 +7970,7 @@ Some ar less classified
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/fin-abbreviations.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/fin-abbreviations.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/fin-abbreviations.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/fin-abbreviations.lexc)</small>
 
 ---
 
@@ -8103,7 +8103,7 @@ if the final word inflection is used, the class of that word.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/fin-acronyms.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/fin-acronyms.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/fin-acronyms.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/fin-acronyms.lexc)</small>
 
 ---
 
@@ -8121,7 +8121,7 @@ Only add new interjections that are found from corpora.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/interj.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/interj.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/interj.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/interj.lexc)</small>
 
 ---
 
@@ -8161,7 +8161,7 @@ naan+N:naan also naan is an Indian bread with `NOUN_PUNK` paradigm
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/nouns.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/nouns.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/nouns.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/nouns.lexc)</small>
 
 ---
 
@@ -8435,7 +8435,7 @@ being very rare to extinct for nouns.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/numerals.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/numerals.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/numerals.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/numerals.lexc)</small>
 
 ---
 
@@ -8453,7 +8453,7 @@ Examples:
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/particles.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/particles.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/particles.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/particles.lexc)</small>
 
 ---
 
@@ -8476,7 +8476,7 @@ Examples:
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/pp.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/pp.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/pp.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/pp.lexc)</small>
 
 ---
 
@@ -8491,7 +8491,7 @@ morphemes.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/prefixes.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/prefixes.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/prefixes.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/prefixes.lexc)</small>
 
 ---
 
@@ -8645,7 +8645,7 @@ forms.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/pron.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/pron.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/pron.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/pron.lexc)</small>
 
 ---
 
@@ -8672,7 +8672,7 @@ Many of Proper nouns inflect like nouns... however, compound differently
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/propernouns.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/propernouns.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/propernouns.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/propernouns.lexc)</small>
 
 ---
 
@@ -8761,7 +8761,7 @@ The lines below this one are not from any referenced source
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/punct.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/punct.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/punct.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/punct.lexc)</small>
 
 ---
 
@@ -8786,7 +8786,7 @@ Further reading: [VISK § 818](http://scripta.kotus.fi/visk/sisalto.php?p=818)
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/subjunctions.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/subjunctions.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/subjunctions.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/subjunctions.lexc)</small>
 
 ---
 
@@ -8801,7 +8801,7 @@ Examples:
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/suffixes.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/suffixes.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/suffixes.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/suffixes.lexc)</small>
 
 ---
 
@@ -8831,7 +8831,7 @@ and harmony:
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/verbs.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/stems/verbs.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/verbs.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/verbs.lexc)</small>
 
 ---
 
@@ -9096,7 +9096,7 @@ suffix can be changed here.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-numbers-digit2text.lexc](https://github.com/giellalt/lang-fin/blob/main/src/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-numbers-digit2text.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
 
 ---
 
