@@ -1,4 +1,4 @@
-for f in src/morphology/**/*.lexc ; do
+for f in src/fst/morphology/**/*.lexc ; do
     sed -i -e 's/\[POS=NOUN\]/+N/' $f
     sed -i -e 's/\[POS=ADJECTIVE\]/+A/' $f
     sed -i -e 's/\[POS=ADVERB\]/+Adv/' $f
