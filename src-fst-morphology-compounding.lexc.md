@@ -18,6 +18,3 @@ The nominal forms can be used as non-initial parts of typical compounds
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/morphology/compounding.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/compounding.lexc)</small>
-
----
-

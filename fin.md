@@ -1,6 +1,10 @@
-# Finnish description 
+# Finnish language model documentation
 
-All documents in one file
+All doc-comment documentation in one large file.
+
+---
+
+# src-cg3-disambiguator.cg3.md 
 
 
 
@@ -13,7 +17,14 @@ Idiomatic cases
 * **REMOVE X** removes X whenever there is any other tag.
 
 * * *
+
 <small>This (part of) documentation was generated from [src/cg3/disambiguator.cg3](https://github.com/giellalt/lang-fin/blob/main/src/cg3/disambiguator.cg3)</small>
+
+---
+
+# src-cg3-functions.cg3.md 
+
+
 S Y N T A C T I C   F U N C T I O N S   F O R   S Á M I
 
 Sámi language technology project 2003-2018, University of Tromsø #
@@ -482,7 +493,14 @@ These were the set types.
 The analysis give double analysis because of optional semtags. We go for the one with semtag.
 
 * * *
+
 <small>This (part of) documentation was generated from [src/cg3/functions.cg3](https://github.com/giellalt/lang-fin/blob/main/src/cg3/functions.cg3)</small>
+
+---
+
+# src-fst-guess-patterns.lexc.md 
+
+
 # Guesser
 A rule-based morphological guesser is based on using the paradigms from the
 dictionary based analyser but replacing the roots with patterns. For Finnish
@@ -498,6 +516,8 @@ documentation c.f. [morphology root](root-fst-src.html).
 <small>This (part of) documentation was generated from [src/fst/guess-patterns.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/guess-patterns.lexc)</small>
 
 ---
+
+# src-fst-morphology-affixes-abbreviations.lexc.md 
 
 
 # Continuation lexicons for Finnish abbreviations
@@ -564,6 +584,8 @@ documentation c.f. [morphology root](root-fst-src.html).
 
 ---
 
+# src-fst-morphology-affixes-acronyms.lexc.md 
+
 # Acronym inflection
 Acronyms are inflected using a colon, followed by the inflectional endings,
 which depend on either last letter of the word or inflection class of the
@@ -580,6 +602,8 @@ c.f. [VISK § 169](http://scripta.kotus.fi/visk/sisallys.php?p=169)
 <small>This (part of) documentation was generated from [src/fst/morphology/affixes/acronyms.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/affixes/acronyms.lexc)</small>
 
 ---
+
+# src-fst-morphology-affixes-adjectives.lexc.md 
 
 # Adjective inflection
 The adjectives are inflected like regular nouns. The only morphological
@@ -2177,6 +2201,8 @@ Adjectives can usually be derived into sti adverbs productively
 
 ---
 
+# src-fst-morphology-affixes-adv.lexc.md 
+
 # Adverb inflection
 Most adverbs are morphologically either sti-derivations of adjectives or
 some specific form of an existing or archaic noun, and they have limited
@@ -2213,6 +2239,8 @@ so they are not inflected here, but listed in roots.
 <small>This (part of) documentation was generated from [src/fst/morphology/affixes/adv.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/affixes/adv.lexc)</small>
 
 ---
+
+# src-fst-morphology-affixes-digits.lexc.md 
 
 Digit strings inflect with colons, lot like abbreviations.
 
@@ -2342,6 +2370,8 @@ The roman digit string ending in I, IV, V, VII, IX, X or
 <small>This (part of) documentation was generated from [src/fst/morphology/affixes/digits.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/affixes/digits.lexc)</small>
 
 ---
+
+# src-fst-morphology-affixes-nouns.lexc.md 
 
 # Noun inflection and derivation
 
@@ -5714,6 +5744,8 @@ parts are nominals and inflect regularly.
 
 ---
 
+# src-fst-morphology-affixes-numerals.lexc.md 
+
 # Numeral inflection
 Numeral inflection is like nominal, except that numerals compound in all
 forms which requires great amount of care in the inflection patterns.
@@ -5897,6 +5929,8 @@ forms which requires great amount of care in the inflection patterns.
 
 ---
 
+# src-fst-morphology-affixes-symbols.lexc.md 
+
 
 # Symbol affixes
 
@@ -5905,6 +5939,8 @@ forms which requires great amount of care in the inflection patterns.
 <small>This (part of) documentation was generated from [src/fst/morphology/affixes/symbols.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/affixes/symbols.lexc)</small>
 
 ---
+
+# src-fst-morphology-affixes-verbs.lexc.md 
 
 # Verb inflection and derivation
 
@@ -6968,6 +7004,8 @@ These derivations are treated as inflection in our system as well.
 
 ---
 
+# src-fst-morphology-compounding.lexc.md 
+
 
 
 # Prefixing and compounding
@@ -6991,6 +7029,8 @@ The nominal forms can be used as non-initial parts of typical compounds
 
 ---
 
+# src-fst-morphology-phonology.twolc.md 
+
 
 This file documents the [phonology.twolc file](http://github.com/giellalt/lang-fin/blob/main/src/fst/phonology.twolc) 
 
@@ -7001,6 +7041,8 @@ This file documents the [phonology.twolc file](http://github.com/giellalt/lang-f
 <small>This (part of) documentation was generated from [src/fst/morphology/phonology.twolc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/phonology.twolc)</small>
 
 ---
+
+# src-fst-morphology-root.lexc.md 
 
 
 
@@ -7717,6 +7759,8 @@ dictionaries, prefix or hyphenated suffix
 
 ---
 
+# src-fst-morphology-stems-adjectives.lexc.md 
+
 # Adjective classification
 Adjectives are words that are inflected like nouns, with few additions. For
 adjectives, the comparative derivations are usually allowed and the
@@ -7744,6 +7788,8 @@ allomorph selection and the harmony. See the list from:
 
 ---
 
+# src-fst-morphology-stems-adverbs.lexc.md 
+
 # Adverb classification
 Adverbs are a heterogenous mass of words with defective inflectional,
 usually sourced from various forms of nominals. It would be possible to
@@ -7768,6 +7814,8 @@ and clitics they take or require:
 
 ---
 
+# src-fst-morphology-stems-conjunctions.lexc.md 
+
 Coordinating conjunctions
 Coordinating conjunctions combine equal clauses and phrases. As subset of
 particles, they do not inflect. The classification is solely syntactic and
@@ -7788,6 +7836,8 @@ Further reading: [VISK § 816](http://scripta.kotus.fi/visk/sisalto.php?p=816))
 
 ---
 
+# src-fst-morphology-stems-determiners.lexc.md 
+
 ## Determiners
 Finnish don’t traditionally have determiners. Some claim that few
 pronouns are used like determiners, and can be analysed as such.
@@ -7797,6 +7847,8 @@ pronouns are used like determiners, and can be analysed as such.
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/determiners.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/determiners.lexc)</small>
 
 ---
+
+# src-fst-morphology-stems-digits.lexc.md 
 
 # Digits and such expressions
 Digit-strings are used in place of numerals. They inflect with colon, like
@@ -7899,6 +7951,8 @@ Ones come alone
 
 ---
 
+# src-fst-morphology-stems-exceptions.lexc.md 
+
 Exceptions are quite strange word-forms. the ones that do not fit anywhere 
 else. This file contains all enumerated word forms that cannot reasonably be
 created from lexical data by regular inflection. Usually there should be next
@@ -7945,6 +7999,8 @@ few verbs have shortened forms in standard spoken Finnish
 
 ---
 
+# src-fst-morphology-stems-fin-abbreviations.lexc.md 
+
 
 # Continuation lexicons for Finnish abbreviations
 
@@ -7973,6 +8029,8 @@ Some ar less classified
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/fin-abbreviations.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/fin-abbreviations.lexc)</small>
 
 ---
+
+# src-fst-morphology-stems-fin-acronyms.lexc.md 
 
 # Acronym classification
 Acronyms are shortenings that inflect. They all have two inflection
@@ -8107,6 +8165,8 @@ if the final word inflection is used, the class of that word.
 
 ---
 
+# src-fst-morphology-stems-interj.lexc.md 
+
 # Interjections
 Interjections are mainly parts of spoken language that are minimal turns
 in dialogue, curses, onomatopoeia and such. Interjections are a subset
@@ -8124,6 +8184,8 @@ Only add new interjections that are found from corpora.
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/interj.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/interj.lexc)</small>
 
 ---
+
+# src-fst-morphology-stems-nouns.lexc.md 
 
 # Nouns and their classification
 Noun is the part-of-speech for words which require declination in number
@@ -8164,6 +8226,8 @@ naan+N:naan also naan is an Indian bread with `NOUN_PUNK` paradigm
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/nouns.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/nouns.lexc)</small>
 
 ---
+
+# src-fst-morphology-stems-numerals.lexc.md 
 
 # Finnish Numerals
 
@@ -8439,6 +8503,8 @@ being very rare to extinct for nouns.
 
 ---
 
+# src-fst-morphology-stems-particles.lexc.md 
+
 # Particles
 The particles are all words that do not inflect at all. For compatibility
 reasons subsets of particles have been set off to classes like conjunctions,
@@ -8456,6 +8522,8 @@ Examples:
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/particles.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/particles.lexc)</small>
 
 ---
+
+# src-fst-morphology-stems-pp.lexc.md 
 
 # Adpositions
 Adpositions are morphologically nominals that have defective inflection
@@ -8480,6 +8548,8 @@ Examples:
 
 ---
 
+# src-fst-morphology-stems-prefixes.lexc.md 
+
 # Prefixes
 Prefixes are bound morphs that can appear in beginning of the compounds,
 mostly forms of nominals. Finnish does not have almost any real prefix 
@@ -8494,6 +8564,8 @@ morphemes.
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/prefixes.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/prefixes.lexc)</small>
 
 ---
+
+# src-fst-morphology-stems-pron.lexc.md 
 
 # Pronouns
 Pronouns are a closed special sub class of nouns. Morphologically pronouns
@@ -8649,6 +8721,8 @@ forms.
 
 ---
 
+# src-fst-morphology-stems-propernouns.lexc.md 
+
 # Proper nouns
 Proper nouns are morphologically indistinct subset of nouns. They have
 some orthographical differences, required capitalisations and compounding
@@ -8675,6 +8749,8 @@ Many of Proper nouns inflect like nouns... however, compound differently
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/propernouns.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/propernouns.lexc)</small>
 
 ---
+
+# src-fst-morphology-stems-punct.lexc.md 
 
 # Other symbols
 Punctuation characters detailed here are the characters that appear commonly
@@ -8765,6 +8841,8 @@ The lines below this one are not from any referenced source
 
 ---
 
+# src-fst-morphology-stems-subjunctions.lexc.md 
+
 # Adverbial conjunctions
 The adverbial conjunctions join two unequal clauses or phrases together.
 The traditional term for this is sub-ordinating conjunction, it is assumed
@@ -8790,6 +8868,8 @@ Further reading: [VISK § 818](http://scripta.kotus.fi/visk/sisalto.php?p=818)
 
 ---
 
+# src-fst-morphology-stems-suffixes.lexc.md 
+
 # Suffixes
 Suffixes are bound morphs that come after nominals in compounds. Finnish 
 doesn't quite have real suffixes, these are mostly compound parts.
@@ -8804,6 +8884,8 @@ Examples:
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/suffixes.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/suffixes.lexc)</small>
 
 ---
+
+# src-fst-morphology-stems-verbs.lexc.md 
 
 Verbs are the words that inflect in tense, mood, personal suffixes, and
 clitics, but verbs also have s.c. infinite inflection pattern which is
@@ -8834,6 +8916,8 @@ and harmony:
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/verbs.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/verbs.lexc)</small>
 
 ---
+
+# src-fst-transcriptions-transcriptor-numbers-digit2text.lexc.md 
 
 ## Number transcriptions
 Transcribing numbers to words in Finnish is not completely trivial, one
@@ -9099,6 +9183,8 @@ suffix can be changed here.
 <small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-numbers-digit2text.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
 
 ---
+
+# tools-grammarcheckers-grammarchecker.cg3.md 
 
 
 F I N N I S H   G R A M M A R   C H E C K E R
@@ -9419,7 +9505,14 @@ Grammarchecker rules begin here
 ###  Spacing errors
 
 * * *
-<small>This (part of) documentation was generated from [tools/grammarcheckers/grammarchecker.cg3](https://github.com/giellalt/lang-fin/blob/main/tools/grammarcheckers/grammarchecker.cg3)</small># Tokeniser for fin
+
+<small>This (part of) documentation was generated from [tools/grammarcheckers/grammarchecker.cg3](https://github.com/giellalt/lang-fin/blob/main/tools/grammarcheckers/grammarchecker.cg3)</small>
+
+---
+
+# tools-tokenisers-tokeniser-disamb-gt-desc.pmscript.md 
+
+# Tokeniser for fin
 
 Usage:
 ```
@@ -9481,6 +9574,8 @@ Finally we mark as a token any sequence making up a:
 <small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-disamb-gt-desc.pmscript](https://github.com/giellalt/lang-fin/blob/main/tools/tokenisers/tokeniser-disamb-gt-desc.pmscript)</small>
 
 ---
+
+# tools-tokenisers-tokeniser-gramcheck-gt-desc.pmscript.md 
 
 # Grammar checker tokenisation for fin
 
@@ -9545,6 +9640,8 @@ Finally we mark as a token any sequence making up a:
 
 ---
 
+# tools-tokenisers-tokeniser-tts-cggt-desc.pmscript.md 
+
 # TTS tokenisation for smj
 
 Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
@@ -9606,6 +9703,3 @@ Needs hfst-tokenise to output things differently depending on the tag they get
 * * *
 
 <small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-tts-cggt-desc.pmscript](https://github.com/giellalt/lang-fin/blob/main/tools/tokenisers/tokeniser-tts-cggt-desc.pmscript)</small>
-
----
-

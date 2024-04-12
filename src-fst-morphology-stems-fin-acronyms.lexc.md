@@ -128,6 +128,3 @@ if the final word inflection is used, the class of that word.
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/fin-acronyms.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/fin-acronyms.lexc)</small>
-
----
-

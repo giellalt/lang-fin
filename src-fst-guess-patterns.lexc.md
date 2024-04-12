@@ -12,6 +12,3 @@ documentation c.f. [morphology root](root-fst-src.html).
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/guess-patterns.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/guess-patterns.lexc)</small>
-
----
-

@@ -13,6 +13,3 @@ Only add new interjections that are found from corpora.
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/interj.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/interj.lexc)</small>
-
----
-

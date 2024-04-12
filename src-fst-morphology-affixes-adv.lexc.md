@@ -32,6 +32,3 @@ so they are not inflected here, but listed in roots.
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/morphology/affixes/adv.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/affixes/adv.lexc)</small>
-
----
-

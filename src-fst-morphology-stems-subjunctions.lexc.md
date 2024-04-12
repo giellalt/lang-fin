@@ -20,6 +20,3 @@ Further reading: [VISK § 818](http://scripta.kotus.fi/visk/sisalto.php?p=818)
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/subjunctions.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/stems/subjunctions.lexc)</small>
-
----
-

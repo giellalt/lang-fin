@@ -1057,6 +1057,3 @@ These derivations are treated as inflection in our system as well.
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/morphology/affixes/verbs.lexc](https://github.com/giellalt/lang-fin/blob/main/src/fst/morphology/affixes/verbs.lexc)</small>
-
----
-
