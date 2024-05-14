@@ -125,6 +125,7 @@ Semantic tags follow pronoun analyses:
 * `+Sem/Domain		        `:
 * `+Sem/Dummytag	        `:
 * `+Sem/Event		        `:
+* `+Sem/Edu			`:
 * `+Sem/Fem		        `:
 * `+Sem/Group_Hum	        `:
 * `+Sem/Hum		        `:
@@ -691,7 +692,7 @@ do no harm.
 |  @P.CmpOnly.TRUE@ | Sets a flag to indicate that the word has passed R
 |  @D.CmpOnly.FALSE@ | Disallow words coming directly from root.
 Use the following flag diacritics to control downcasing of derived proper
-nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
+nouns (e.g. Finnish Pariisi -> pariisilainen). See, e.g., North Sámi for how to use
 these flags. There exists a ready-made regex that will do the actual down-casing
 given the proper use of these flags.
 |  @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
