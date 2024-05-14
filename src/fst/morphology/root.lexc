@@ -143,6 +143,7 @@ Multichar_Symbols
 +Sem/Domain		        !!= * `@CODE@`:
 +Sem/Dummytag	        !!= * `@CODE@`:
 +Sem/Event		        !!= * `@CODE@`:
++Sem/Edu			!!= * `@CODE@`:
 +Sem/Fem		        !!= * `@CODE@`:
 +Sem/Group_Hum	        !!= * `@CODE@`:
 +Sem/Hum		        !!= * `@CODE@`:
@@ -771,7 +772,7 @@ Multichar_Symbols
  @D.CmpOnly.FALSE@ !!≈ |  @CODE@ | Disallow words coming directly from root.
 !!
 !! Use the following flag diacritics to control downcasing of derived proper
-!! nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
+!! nouns (e.g. Finnish Pariisi -> pariisilainen). See, e.g., North Sámi for how to use
 !! these flags. There exists a ready-made regex that will do the actual down-casing
 !! given the proper use of these flags.
  @U.Cap.Obl@        !!≈ |  @CODE@ | Allowing downcasing of derived names: deatnulasj.
