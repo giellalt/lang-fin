@@ -718,7 +718,24 @@ Multichar_Symbols
 
 
 
-
+! some definitions that were missing
++Use/TTS
++Gram/IAbbr
++Gram/NumNoAbbr
++Gram/TAbbr
++Gram/TNumAbbr
++MWE
++Sem/Amount
++Sem/Curr
++Sem/Domain_Hum
++Sem/Edu_Hum
++Sem/Food-med
++Sem/Lang
++Sem/Part
++Sem/Sign
++Sem/State
++Sem/Sur
++Sem/Time
 
 
 
@@ -778,6 +795,8 @@ Multichar_Symbols
  @U.Cap.Obl@        !!≈ |  @CODE@ | Allowing downcasing of derived names: deatnulasj.
  @U.Cap.Opt@        !!≈ |  @CODE@ | Allowing downcasing of derived names: deatnulasj.
 
+! also missing so far
+@P.Pmatch.Loc@
 
 
 ! The root lexicon is unique entry point of this morphological description.
