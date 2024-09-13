@@ -3,4 +3,9 @@ Config:
   Spec: ../pipespec.xml
   Variants: [fingram-dev]
 
-Tests:  # korp: 
+Tests:  # korp: Pron+Gen N+not POSS
+  - "Enemmän se minunkin {oikeuksia}${oikeuksiani} ajaisi, kuin joku Lepomäki."
+  - "Meidän {perheen}${perheemme} yöpymisestä on sitä paitsi vähän aikaa, noin 30 vuotta."
+  - "Mun {mieleen}${mieleeni} jäit mies :-)"
+  - "Kaikin keinoin yritän saada kohdettani nauramaan ja viihtymään mun {seurassa}${seurassani}."
+  - "Oletetaan, että vihainen sotilaskenraali menee Venäjälle ja sanoo venäläiselle virkaveljelleen: Olemme erittäin vihaisia, että teidän {lentokoneet}${lentokoneenne} lentelee Itämeren yllä, sitä emme salli."
