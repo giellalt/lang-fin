@@ -56,6 +56,26 @@ jobs:
           cd lang && ls -l docs/mermaid-svgs
       # Mermaid processing ends here
 
+      - name: get frequency list
+        uses: actions/download-artifact@v4
+        with:
+          name: corpus-fin.latest.freqs
+          repository: corpus-fin
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          path: corpusdata/
+
+      - name: use frequency list
+        run: |
+          mkdir stats/
+          python ${{ github.workspace }}/giella-core/scripts/freq-evals.py \
+          -a src/fst/analyser-gt-desc.hfstol -m stats/corpus-fin.missing \
+          -i ${{ github.workspace }}/corpusdata/corpus-fin.freqs
+          head stats/corpus-fin.missing
+      - name: upload missing list
+        uses: action/upload-artifact@v4c
+        with: 
+          name: corpus-fin.missing
+          path: stats/corpus-fin.missing
       - name: deploy gh pages
         uses: peaceiris/actions-gh-pages@v4
         with:
