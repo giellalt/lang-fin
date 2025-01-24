@@ -72,7 +72,7 @@ jobs:
           -i ${{ github.workspace }}/corpusdata/corpus-fin.freqs
           head stats/corpus-fin.missing
       - name: upload missing list
-        uses: action/upload-artifact@v4c
+        uses: action/upload-artifact@v4
         with: 
           name: corpus-fin.missing
           path: stats/corpus-fin.missing
