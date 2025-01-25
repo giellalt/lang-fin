@@ -57,13 +57,12 @@ jobs:
       # Mermaid processing ends here
 
       - name: get frequency list
-        uses: actions/download-artifact@v4
+        uses: dawwid6/download-workflow-artifact@v8
         with:
           name: corpus-fin.latest.freqs
           repository: giellalt/corpus-fin
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          path: corpusdata/
-          run-id: 4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
 
       - name: use frequency list
         run: |
