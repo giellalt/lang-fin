@@ -61,7 +61,7 @@ jobs:
         with:
           name: corpus-fin.latest.freqs
           repository: corpus-fin
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           path: corpusdata/
 
       - name: use frequency list
