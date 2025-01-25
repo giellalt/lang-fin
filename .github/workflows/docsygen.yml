@@ -60,7 +60,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: corpus-fin.latest.freqs
-          repository: corpus-fin
+          repository: giellalt/corpus-fin
           github-token: ${{ secrets.GITHUB_TOKEN }}
           path: corpusdata/
 
