@@ -63,6 +63,7 @@ jobs:
           repository: giellalt/corpus-fin
           github-token: ${{ secrets.GITHUB_TOKEN }}
           path: corpusdata/
+          run-id: 4
 
       - name: use frequency list
         run: |
