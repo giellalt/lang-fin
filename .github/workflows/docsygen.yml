@@ -68,7 +68,7 @@ jobs:
         run: |
           sudo apt-get install python3-hfst
           mkdir stats/
-          ls -lR ${{ github.workspace }}/src/fst
+          ls -lR ${{ github.workspace }}
           python ${{ github.workspace }}/giella-core/scripts/freq-evals.py \
           -a ${{ github.workspace }}/src/fst/analyser-gt-desc.hfstol \
           -m stats/corpus-fin.missing \
