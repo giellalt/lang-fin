@@ -59,7 +59,7 @@ jobs:
       - name: get frequency list
         uses: dawidd6/action-download-artifact@v8
         with:
-          name: corpus-fin.latest.freqs
+          name: Stats
           repo: giellalt/corpus-fin
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
