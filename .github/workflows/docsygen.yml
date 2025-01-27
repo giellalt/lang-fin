@@ -57,7 +57,7 @@ jobs:
       # Mermaid processing ends here
 
       - name: get frequency list
-        uses: dawwid6/download-workflow-artifact@v8
+        uses: dawidd6/download-workflow-artifact@v8
         with:
           name: corpus-fin.latest.freqs
           repository: giellalt/corpus-fin
