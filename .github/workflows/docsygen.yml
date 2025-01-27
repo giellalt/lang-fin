@@ -70,7 +70,9 @@ jobs:
           mkdir stats/
           python ${{ github.workspace }}/giella-core/scripts/freq-evals.py \
           -a src/fst/analyser-gt-desc.hfstol -m stats/corpus-fin.missing \
-          -i ${{ github.workspace }}/corpusdata/corpus-fin.freqs
+          -i ${{ github.workspace }}/corpus-fin.latest.freqs/corpus-fin.freqs \
+          -n stats/corpus-fin.sus -o stats/corpus-fin.log \
+          -X stats/corpus-fin.stats
           head stats/corpus-fin.missing
       - name: upload missing list
         uses: actions/upload-artifact@v4
