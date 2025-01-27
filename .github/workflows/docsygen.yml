@@ -62,6 +62,7 @@ jobs:
           repo: giellalt/corpus-fin
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
+          workflow_search: true
 
       - name: use frequency list
         run: |
