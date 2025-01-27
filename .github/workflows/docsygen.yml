@@ -28,6 +28,7 @@ jobs:
         with:
           spellers: false
           fst: hfst
+          analysers: true
 
       # Mermaid processing starts here:
       - name: get list of files
@@ -41,7 +42,7 @@ jobs:
 
       # The actual Mermaid compilation
       - name: compile mermaid
-        uses: divvun/compile-mermaid-markdown-action@main
+        use: divvun/compile-mermaid-markdown-action@main
         with:
           files: ${{ steps.getfile.outputs.files }}
           output: 'lang/docs/mermaid-svgs'
@@ -68,9 +69,8 @@ jobs:
         run: |
           sudo apt-get install python3-hfst
           mkdir stats/
-          ls -lR ${{ github.workspace }}
           python ${{ github.workspace }}/giella-core/scripts/freq-evals.py \
-          -a ${{ github.workspace }}/src/fst/analyser-gt-desc.hfstol \
+          -a ${{ github.workspace }}/lang/build/src/fst/analyser-gt-desc.hfstol \
           -m stats/corpus-fin.missing \
           -i ${{ github.workspace }}/corpus-fin.latest.freqs/corpus-fin.freqs \
           -n stats/corpus-fin.sus -o stats/corpus-fin.log \
