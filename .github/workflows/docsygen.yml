@@ -74,11 +74,11 @@ jobs:
           -m stats/corpus-fin.missing \
           -i ${{ github.workspace }}/corpus-fin.latest.freqs/corpus-fin.freqs \
           -n stats/corpus-fin.sus -o stats/corpus-fin.log \
-          -X stats/corpus-fin.stats
+          -X stats/corpus-fin.stats -t 90
           head stats/corpus-fin.missing
       - name: upload missing list
         uses: actions/upload-artifact@v4
-        with: 
+        with:
           name: corpus-fin.missing
           path: stats/corpus-fin.missing
       - name: deploy gh pages
