@@ -42,7 +42,7 @@ jobs:
 
       # The actual Mermaid compilation
       - name: compile mermaid
-        use: divvun/compile-mermaid-markdown-action@main
+        uses: divvun/compile-mermaid-markdown-action@main
         with:
           files: ${{ steps.getfile.outputs.files }}
           output: 'lang/docs/mermaid-svgs'
