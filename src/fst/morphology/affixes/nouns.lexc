@@ -7466,6 +7466,40 @@ LEXICON NOUN_MANNER
 +Use/NG:tere  NOUN_COMPOUND_IDEN  ;
 +Use/NG:tere  NOUN_COMPOUND_ITTEN  ;
 
+LEXICON NOUN_AUDER
+!!€gt-norm:  Nouns 49 der
+!!€  auder: auder+N+Sg+Nom # haze
+!!€  autere: auder+N+Sg+Nom
+!!€  auterena: auder+N+Sg+Ess
+!!€  autereena: auder+N+Sg+Ess
+0:der  NOUN_BACK_NOMINATIVE  ;
++Use/NG:tere  NOUN_BACK_NOMINATIVE  ;
+0:tere  NOUN_BACK_SINGULARS  ;
++Use/NG:teree  NOUN_BACK_SINGULARS  ;
+0:ter  NOUN_BACK_PLURALS  ;
++Use/NG:tere  NOUN_BACK_PLURALS  ;
+0:der  NOUN_BACK_PARTITIVE_TA  ;
+0:tere  NOUN_BACK_ILLATIVE_EN  ;
++Use/NG:teree  NOUN_BACK_ILLATIVE_SEEN  ;
+0:ter  NOUN_BACK_PARTITIVE_IA  ;
++Use/NG:tere  NOUN_BACK_PARTITIVE_ITA  ;
+0:der  NOUN_BACK_GENITIVE_TEN  ;
++Use/NG:ter  NOUN_BACK_GENITIVE_IEN  ;
++Use/NG:tere  NOUN_BACK_GENITIVE_IDEN  ;
++Use/NG:tere  NOUN_BACK_GENITIVE_ITTEN  ;
+0:ter  NOUN_BACK_ILLATIVE_IIN  ;
++Use/NG:tere  NOUN_BACK_ILLATIVE_ISIIN  ;
++Use/NG:tere  NOUN_BACK_ILLATIVE_IHIN  ;
+0:der  NOUN_COMPOUND_0  ;
++Use/NG:tere  NOUN_COMPOUND_0  ;
+0:tere  NOUN_COMPOUND_N  ;
++Use/NG:teree  NOUN_COMPOUND_N  ;
+0:der  NOUN_COMPOUND_TEN  ;
++Use/NG:ter  NOUN_COMPOUND_IEN  ;
++Use/NG:tere  NOUN_COMPOUND_IDEN  ;
++Use/NG:tere  NOUN_COMPOUND_ITTEN  ;
+
+
 LEXICON NOUN_PIENNAR
 !!€gt-norm:  Nouns 49 nar
 !!€  piennar: piennar+N+Sg+Nom # curb
