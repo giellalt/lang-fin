@@ -9208,7 +9208,7 @@ LEXICON NOUN_PUUT
 !!€gt-norm:  Noun xx puu t plurt
 !!€  puut: puut+N+Pl+Nom # trees
 !!$  puu: puut+N+Sg+Nom
-0  NOUN_BACK_PLNOM_CLIT  ;
+0:u  NOUN_BACK_PLNOM_CLIT  ;
 0  NOUN_BACK_PLURALS  ;
 0  NOUN_BACK_PARTITIVE_ITA  ;
 0  NOUN_BACK_GENITIVE_IDEN  ;
@@ -9305,6 +9305,20 @@ LEXICON NOUN_VUODET
 +Use/NG:de  NOUN_COMPOUND_N  ;
 0:s  NOUN_COMPOUND_IEN  ;
 +Use/NG:t  NOUN_COMPOUND_TEN  ;
+
+LEXICON NOUN_LEHDET
+!!€gt-norm:  Noun 7 det plurt
+!!€  lehdet: lehdet+N+Pl+Nom # leaves
+!!$  lehti:  lehdet+N+Sg+Nom
+0:de  NOUN_FRONT_PLNOM_CLIT  ;
+0:t  NOUN_FRONT_PLURALS  ;
+0:t  NOUN_FRONT_PARTITIVE_IÄ  ;
+0:t  NOUN_FRONT_GENITIVE_IEN  ;
++Use/NG:t  NOUN_FRONT_GENITIVE_TEN  ;
+0:t  NOUN_FRONT_ILLATIVE_IIN  ;
+0:ti  NOUN_COMPOUND_0  ;
++Use/NG:de  NOUN_COMPOUND_N  ;
+0:t  NOUN_COMPOUND_IEN  ;
 
 LEXICON NOUN_TOIMET
 !!€gt-norm:  Noun 25 t plurt
@@ -9534,6 +9548,38 @@ LEXICON NOUN_RATTAAT
 0:taa  NOUN_COMPOUND_N  ;
 0:ta  NOUN_COMPOUND_IDEN  ;
 +Use/NG:ta  NOUN_COMPOUND_ITTEN  ;
+
+LEXICON NOUN_SAAPPAAT
+!!€gt-norm:  Noun  paat plurt
+!!€  saappaat: saappaat+N+Pl+Nom
+!!$  saapas: saappaat+N+Sg+Nom
+0:paa  NOUN_BACK_PLNOM_CLIT  ;
+0:pa  NOUN_BACK_PLURALS  ;
+0:pa  NOUN_BACK_PARTITIVE_ITA  ;
+0:pa  NOUN_BACK_GENITIVE_IDEN  ;
++Use/NG:pa  NOUN_BACK_GENITIVE_ITTEN  ;
+0:pa  NOUN_BACK_ILLATIVE_ISIIN  ;
++Use/NG:pa  NOUN_BACK_ILLATIVE_IHIN  ;
+0:as  NOUN_COMPOUND_0  ;
+0:paa  NOUN_COMPOUND_N  ;
+0:pa  NOUN_COMPOUND_IDEN  ;
++Use/NG:pa  NOUN_COMPOUND_ITTEN  ;
+
+LEXICON NOUN_HAMPAAT
+!!€gt-norm:  Noun  mpaat plurt
+!!€  hampaat: hampaat+N+Pl+Nom
+!!$  hammas: hampaat+N+Sg+Nom
+0:paa  NOUN_BACK_PLNOM_CLIT  ;
+0:pa  NOUN_BACK_PLURALS  ;
+0:pa  NOUN_BACK_PARTITIVE_ITA  ;
+0:pa  NOUN_BACK_GENITIVE_IDEN  ;
++Use/NG:pa  NOUN_BACK_GENITIVE_ITTEN  ;
+0:pa  NOUN_BACK_ILLATIVE_ISIIN  ;
++Use/NG:pa  NOUN_BACK_ILLATIVE_IHIN  ;
+0:mas  NOUN_COMPOUND_0  ;
+0:paa  NOUN_COMPOUND_N  ;
+0:pa  NOUN_COMPOUND_IDEN  ;
++Use/NG:pa  NOUN_COMPOUND_ITTEN  ;
 
 LEXICON NOUN_RENKAAT
 !!€gt-norm:  Noun  gaat plurt
