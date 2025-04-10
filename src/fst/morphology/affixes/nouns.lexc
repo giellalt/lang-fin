@@ -8649,6 +8649,7 @@ LEXICON NOUN_SUKAT
 !!€gt-norm:  Noun xxx a front k0 plurt
 !!€  sukat: sukat+N+Pl+Nom # socks
 !!$  sukka: sukat+N+Sg+Nom
+0:a  NOUN_BACK_PLNOM_CLIT ;
 0:k  NOUN_BACK_STRONG_PLURALS  ;
 0  NOUN_BACK_WEAK_PLURALS  ;
 0:k  NOUN_BACK_PARTITIVE_IA  ;
@@ -8659,6 +8660,38 @@ LEXICON NOUN_SUKAT
 0:a  NOUN_COMPOUND_N  ;
 0:k  NOUN_COMPOUND_IEN  ;
 0:ka  NOUN_COMPOUND_IN  ;
+
+LEXICON NOUN_KIRJAT
+!!€gt-norm:  Noun 9 plurt
+!!€  kirjat: kirjat+N+Pl+Nom # books
+!!€  kirja:  kirjat+N+Sg+Nom
+0:a  NOUN_BACK_PLNOM_CLIT  ;
+0:o  NOUN_BACK_PLURALS  ;
+0:o  NOUN_BACK_PARTITIVE_JA  ;
+0:o  NOUN_BACK_GENITIVE_JEN  ;
++Use/NG:a  NOUN_BACK_GENITIVE_IN  ;
+0:o  NOUN_BACK_ILLATIVE_IHIN  ;
+0:a  NOUN_COMPOUND_0  ;
+0:a  NOUN_COMPOUND_N  ;
+0:o  NOUN_COMPOUND_JEN  ;
++Use/NG:a  NOUN_COMPOUND_IN  ;
+
+LEXICON NOUN_JALAT
+!!€gt-norm:  Noun 9 k~’~0 plurt
+!!€  jalat: jalat+N+Pl+Nom # feet
+!!€  jalka: jalat+N+Sg+Nom
+0:a  NOUN_BACK_PLNOM_CLIT  ;
+0:ko  NOUN_BACK_STRONG_PLURALS  ;
+0:o  NOUN_BACK_WEAK_PLURALS  ;
++Use/NG:’o  NOUN_BACK_WEAK_PLURALS  ;
+0:ko  NOUN_BACK_PARTITIVE_JA  ;
+0:ko  NOUN_BACK_GENITIVE_JEN  ;
++Use/NG:ka  NOUN_BACK_GENITIVE_IN  ;
+0:ko  NOUN_BACK_ILLATIVE_IHIN  ;
+0:ka  NOUN_COMPOUND_0  ;
++Use/NG:’a  NOUN_COMPOUND_N  ;
+0:ko  NOUN_COMPOUND_JEN  ;
++Use/NG:ka  NOUN_COMPOUND_IN  ;
 
 LEXICON NOUN_KENGÄT
 !!€gt-norm:  Noun xxx a front kg plurt
@@ -8675,6 +8708,21 @@ LEXICON NOUN_KENGÄT
 0:gä  NOUN_COMPOUND_N  ;
 0:k  NOUN_COMPOUND_IEN  ;
 0:kä  NOUN_COMPOUND_IN  ;
+
+LEXICON NOUN_PYHÄT
+!!€gt-norm:  Noun 10 front plurt
+!!€  pyhät: pyhät+N+Pl+Nom # celebration
+!!€  pyhä: pyhät+N+Sg+Nom
+0:ä  NOUN_FRONT_PLNOM_CLIT  ;
+0  NOUN_FRONT_PLURALS  ;
+0  NOUN_FRONT_PARTITIVE_IÄ  ;
+0  NOUN_FRONT_GENITIVE_IEN  ;
++Use/NG:ä  NOUN_FRONT_GENITIVE_IN  ;
+0  NOUN_FRONT_ILLATIVE_IIN  ;
+0:ä  NOUN_COMPOUND_0  ;
+0:ä  NOUN_COMPOUND_N  ;
+0  NOUN_COMPOUND_IEN  ;
++Use/NG:ä  NOUN_COMPOUND_IN  ;
 
 LEXICON NOUN_RAVET
 !!€gt-norm:  Noun 8 plurt
@@ -9160,7 +9208,7 @@ LEXICON NOUN_VANHEMMAT
 !!€gt-norm:  Noun xxx matt plurt
 !!€  vanhemmat: vanhemmat+N+Pl+Nom # parents
 !!$  vanhempi: vanhemmat+N+Sg+Nom
-0:mma  NOUN_BACK_PLNOM_CLIT  ;
+0:ma  NOUN_BACK_PLNOM_CLIT  ;
 0:p  NOUN_BACK_STRONG_PLURALS  ;
 0:m  NOUN_BACK_WEAK_PLURALS  ;
 0:p  NOUN_BACK_PARTITIVE_IA  ;
@@ -9187,6 +9235,7 @@ LEXICON NOUN_ITÄMAAT
 0:a  NOUN_COMPOUND_N  ;
 0  NOUN_COMPOUND_IDEN  ;
 +Use/NG:0  NOUN_COMPOUND_ITTEN  ;
+
 LEXICON NOUN_HARMAAT
 
 :a  NOUN_BACK_PLNOM_CLIT  ;
@@ -9275,6 +9324,21 @@ LEXICON NOUN_RIPSET
 0:i  NOUN_COMPOUND_0  ;
 0:e  NOUN_COMPOUND_N  ;
 0  NOUN_COMPOUND_IEN  ;
+
+LEXICON NOUN_UNET
+!!€gt-norm:  Noun 24 unet plurt
+!!€  unet: unet+N+Pl+Nom # dreams, sleep
+!!$  uni:  unet+N+Sg+Nom  
+0:e  NOUN_BACK_PLNOM_CLIT  ;
+0  NOUN_BACK_PLURALS  ;
+0  NOUN_BACK_PARTITIVE_IA  ;
+0  NOUN_BACK_GENITIVE_IEN  ;
++Use/NG:0  NOUN_BACK_GENITIVE_TEN  ;
+0  NOUN_BACK_ILLATIVE_IIN  ;
+0:i  NOUN_COMPOUND_0  ;
+0:e  NOUN_COMPOUND_N  ;
+0  NOUN_COMPOUND_IEN  ;
+
 
 LEXICON NOUN_KANNET
 !!€gt-norm:  Noun xxx nnet plurt
