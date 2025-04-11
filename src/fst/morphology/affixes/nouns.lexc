@@ -8437,6 +8437,21 @@ LEXICON NOUN_FARKUT
 0:u  NOUN_COMPOUND_N  ;
 0:ku  NOUN_COMPOUND_JEN  ;
 
+LEXICON NOUN_LINNUT
+!!€gt-norm:  Nouns 1ntu plurt
+!!€  linnut: linnut+N+Pl+Nom # birds
+!!$  lintu:  linnut+N+Sg+Nom
+0:tu  NOUN_BACK_STRONG_PLURALS  ;
+0:nu  NOUN_BACK_WEAK_PLURALS  ;
+0:tu  NOUN_BACK_PARTITIVE_JA  ;
+0:tu  NOUN_BACK_GENITIVE_JEN  ;
+0:tu  NOUN_BACK_ILLATIVE_IHIN  ;
+0:tu  NOUN_COMPOUND_0  ;
+0:nu  NOUN_COMPOUND_N  ;
+0:tu  NOUN_COMPOUND_JEN  ;
+!!€gt-desc:  Nouns 1ntu non-standard
+!!€  lintuin: lintu+N+Use/Rare+Pl+Gen
++Use/Rare:tu  NOUN_BACK_GENITIVE_IN  ; ! in NS parenthesised
 
 LEXICON NOUN_TIEDOT
 !!€gt-norm:  Noun 1dot plurt
@@ -8646,7 +8661,7 @@ LEXICON NOUN_TUNNIT
 0:t  NOUN_COMPOUND_IEN  ;
 
 LEXICON NOUN_SUKAT
-!!€gt-norm:  Noun xxx a front k0 plurt
+!!€gt-norm:  Noun 10 a front k0 plurt
 !!€  sukat: sukat+N+Pl+Nom # socks
 !!$  sukka: sukat+N+Sg+Nom
 0:a  NOUN_BACK_PLNOM_CLIT ;
@@ -8724,6 +8739,21 @@ LEXICON NOUN_PYHÄT
 0  NOUN_COMPOUND_IEN  ;
 +Use/NG:ä  NOUN_COMPOUND_IN  ;
 
+LEXICON NOUN_SOITTAJAT
+!!€gt-norm:  Noun 10 back plurt
+!!€  soittajat: soittajat+N+Pl+Nom
+!!€  soittaja:  soittajat+N+Sg+Nom
+0:a  NOUN_BACK_PLNOM_CLIT  ;
+0  NOUN_BACK_PLURALS  ;
+0  NOUN_BACK_PARTITIVE_IA  ;
+0  NOUN_BACK_GENITIVE_IEN  ;
++Use/NG:a  NOUN_BACK_GENITIVE_IN  ;
+0  NOUN_BACK_ILLATIVE_IIN  ;
+0:a  NOUN_COMPOUND_0  ;
+0:a  NOUN_COMPOUND_N  ;
+0  NOUN_COMPOUND_IEN  ;
++Use/NG:a  NOUN_COMPOUND_IN  ;
+
 LEXICON NOUN_RAVET
 !!€gt-norm:  Noun 8 plurt
 !!€  ravet: ravet+N+Pl+Nom # rave
@@ -8753,8 +8783,25 @@ LEXICON NOUN_BÄNET
   NOUN_COMPOUND_N  ;
 +Use/NG:0  NOUN_COMPOUND_JEN  ;
 
+LEXICON NOUN_KITARAT
+!!€gt-norm:  Noun 13 a back plurt
+!!€  kitarat: kitarat+N+Pl+Nom # guitars
+!!$  kitara:  kitarat+N+Sg+Nom
+0:a  NOUN_BACK_PLNOM_CLIT  ;
+0:o  NOUN_BACK_PLURALS  ;
+0:o  NOUN_BACK_PARTITIVE_ITA  ;
+0:o  NOUN_BACK_PARTITIVE_JA ;
+0:o  NOUN_BACK_GENITIVE_IDEN  ;
++Use/NG:o  NOUN_BACK_GENITIVE_ITTEN  ;
++Use/NG:o  NOUN_BACK_GENITIVE_JEN ;
+0:o  NOUN_BACK_ILLATIVE_IHIN  ;
+0:a  NOUN_COMPOUND_0  ;
+0:a  NOUN_COMPOUND_N  ;
+0:o  NOUN_COMPOUND_IDEN  ;
++Use/NG:o  NOUN_COMPOUND_ITTEN  ;
+
 LEXICON NOUN_MARKKINAT
-!!€gt-norm:  Noun xxx a front plurt
+!!€gt-norm:  Noun 12 a front plurt
 !!€  markkinat: markkinat+N+Pl+Nom # market
 !!$  markkina: markkinat+N+Sg+Nom
 0:a  NOUN_BACK_PLNOM_CLIT  ;
@@ -8771,7 +8818,7 @@ LEXICON NOUN_MARKKINAT
 +Use/NG:a  NOUN_COMPOUND_IN  ;
 
 LEXICON NOUN_HIPAT
-!!€gt-norm:  Noun xxx a front pp plurt
+!!€gt-norm:  Noun 9 a front pp plurt
 !!€  hipat: hipat+N+Pl+Nom # party
 !!$  hippa: hipat+N+Sg+Nom
 0:po  NOUN_BACK_STRONG_PLURALS  ;
@@ -8786,7 +8833,7 @@ LEXICON NOUN_HIPAT
 +Use/NG:pa  NOUN_COMPOUND_IN  ;
 
 LEXICON NOUN_KUOPAT
-!!€gt-norm:  Noun xxx a back p plurt
+!!€gt-norm:  Noun 10 a back p plurt
 !!€  kuopat: kuopat+N+Pl+Nom holes ?
 !!$  kuoppa: kuopat+N+Sg+Nom
 0:pa  NOUN_BACK_PLNOM_CLIT  ;
@@ -8802,7 +8849,7 @@ LEXICON NOUN_KUOPAT
 0:pa  NOUN_COMPOUND_IN  ;
 
 LEXICON NOUN_RAUDAT
-!!€gt-norm:  Noun xxx dat plurt
+!!€gt-norm:  Noun 9 dat plurt
 !!€  raudat: raudat+N+Pl+Nom # irons
 !!$  rauta: raudat+Sg+Nom
 0:da  NOUN_BACK_PLNOM_CLIT  ;
@@ -8818,7 +8865,7 @@ LEXICON NOUN_RAUDAT
 +Use/NG:ta  NOUN_COMPOUND_IN  ;
 
 LEXICON NOUN_TAVAT
-!!€gt-norm:  Noun xxx vat plurt
+!!€gt-norm:  Noun 9 vat plurt
 !!€  tavat: tavat+N+Pl+Nom # manners
 !!$  tapa: tavat+N+Sg+Nom
 0:va  NOUN_BACK_PLNOM_CLIT  ;
@@ -8834,7 +8881,7 @@ LEXICON NOUN_TAVAT
 +Use/NG:pa  NOUN_COMPOUND_IN  ;
 
 LEXICON NOUN_VALLAT
-!!€gt-norm:  Noun xxx lat plurt
+!!€gt-norm:  Noun 9 lat plurt
 !!$  vallat: vallat+N+Pl+Nom # states
 !!€  valta: vallat+N+Sg+Nom
 0:la  NOUN_BACK_PLNOM_CLIT  ;
@@ -8850,7 +8897,7 @@ LEXICON NOUN_VALLAT
 +Use/NG:ta  NOUN_COMPOUND_IN  ;
 
 LEXICON NOUN_VARAT
-!!€gt-norm:  Noun xxx rrt plurt
+!!€gt-norm:  Noun 9 rrt plurt
 !!€  varat: varat+N+Pl+Nom # budget
 !!$  vara: varat+N+Sg+Nom
 0:a  NOUN_BACK_PLNOM_CLIT  ;
@@ -8865,7 +8912,7 @@ LEXICON NOUN_VARAT
 +Use/NG:a  NOUN_COMPOUND_IN  ;
 
 LEXICON NOUN_JUHLAT
-!!€gt-norm:  Noun xxx t plurt
+!!€gt-norm:  Noun 10 t plurt
 !!€  juhlat: juhlat+N+Pl+Nom # party
 !!$  juhla: juhlat+N+Sg+Nom
 0:a  NOUN_BACK_PLNOM_CLIT  ;
@@ -8880,7 +8927,7 @@ LEXICON NOUN_JUHLAT
 +Use/NG:a  NOUN_COMPOUND_IN  ;
 
 LEXICON NOUN_KIHARAT
-!!€gt-norm:  Noun xxxihi t plurt
+!!€gt-norm:  Noun 11 ihi t plurt
 !!€  kiharat: kiharat+N+Pl+Nom # curls
 !!$  kihara: kiharat+N+Sg+Nom
 0:a  NOUN_BACK_PLNOM_CLIT  ;
@@ -8928,7 +8975,7 @@ LEXICON NOUN_KÄRÄJÄT_FORMS
 +Use/NG:ä  NOUN_COMPOUND_IN  ;
 
 LEXICON NOUN_PAIKAT
-!!€gt-norm:  Noun xxx kAt plurt
+!!€gt-norm:  Noun 9 kAt plurt
 !!€  paikat: paikat+N+Pl+Nom body parts
 !!$  paikka: paikat+N+Sg+Nom
 0:ka  NOUN_BACK_PLNOM_CLIT  ;
@@ -9157,7 +9204,7 @@ LEXICON NOUN_LIIVIT
 0  NOUN_COMPOUND_IEN  ;
 
 LEXICON NOUN_HOPEAT
-!!€gt-norm:  Noun xxx eat plurt
+!!€gt-norm:  Noun 15 eat plurt
 !!€  hopeat: hopeat+N+Pl+Nom cutlery (silvers)
 !!$  hopea: hopeat+N+Sg+Nom
 0  NOUN_BACK_PLNOM_CLIT  ;
@@ -9205,7 +9252,7 @@ LEXICON NOUN_TYÖT
 +Use/NG:ö  NOUN_COMPOUND_ITTEN  ;
 
 LEXICON NOUN_VANHEMMAT
-!!€gt-norm:  Noun xxx matt plurt
+!!€gt-norm:  Noun 16 matt plurt
 !!€  vanhemmat: vanhemmat+N+Pl+Nom # parents
 !!$  vanhempi: vanhemmat+N+Sg+Nom
 0:ma  NOUN_BACK_PLNOM_CLIT  ;
@@ -9222,7 +9269,7 @@ LEXICON NOUN_VANHEMMAT
 +Use/NG:pa  NOUN_COMPOUND_IN  ;
 
 LEXICON NOUN_ITÄMAAT
-!!€gt-norm:  Noun xxx maat plurt
+!!€gt-norm:  Noun 18 maat plurt
 !!€  itämaat: itämaat+N+Pl+Nom near east
 !!$  itämaa: itämaat+N+Sg+Nom
 0:a  NOUN_BACK_PLNOM_CLIT  ;
@@ -9237,7 +9284,7 @@ LEXICON NOUN_ITÄMAAT
 +Use/NG:0  NOUN_COMPOUND_ITTEN  ;
 
 LEXICON NOUN_HARMAAT
-
+!!€gt-norm:  Noun 17 aat plurt
 :a  NOUN_BACK_PLNOM_CLIT  ;
 :a  NOUN_BACK_PLNOM_POSS  ;
 :a  NOUN_COMPOUND_0  ;
@@ -9335,6 +9382,20 @@ LEXICON NOUN_UNET
 0  NOUN_BACK_GENITIVE_IEN  ;
 +Use/NG:0  NOUN_BACK_GENITIVE_TEN  ;
 0  NOUN_BACK_ILLATIVE_IIN  ;
+0:i  NOUN_COMPOUND_0  ;
+0:e  NOUN_COMPOUND_N  ;
+0  NOUN_COMPOUND_IEN  ;
+
+LEXICON NOUN_SIENET
+!!€gt-norm:  Noun 26 sienet plurt
+!!€  sienet: sienet+N+Pl+Nom # mushrooms
+!!$  sieni:  sienet+N+Sg+Nom  
+0:e  NOUN_FRONT_PLNOM_CLIT  ;
+0  NOUN_FRONT_PLURALS  ;
+0  NOUN_FRONT_PARTITIVE_IA  ;
+0  NOUN_FRONT_GENITIVE_IEN  ;
++Use/NG:0  NOUN_FRONT_GENITIVE_TEN  ;
+0  NOUN_FRONT_ILLATIVE_IIN  ;
 0:i  NOUN_COMPOUND_0  ;
 0:e  NOUN_COMPOUND_N  ;
 0  NOUN_COMPOUND_IEN  ;
@@ -9567,7 +9628,7 @@ LEXICON NOUN_VIHKIÄISET
 +Use/NG:s  NOUN_COMPOUND_TEN  ;
 
 LEXICON NOUN_VALJAAT
-!!€gt-norm:  Noun  jaat plurt
+!!€gt-norm:  Noun 41 jaat plurt
 !!€  valjaat: valjaat+N+Pl+Nom # strap
 !!$  valjas: valjaat+N+Sg+Nom
 0  NOUN_BACK_PLURALS  ;
@@ -9582,7 +9643,7 @@ LEXICON NOUN_VALJAAT
 +Use/NG:0  NOUN_COMPOUND_ITTEN  ;
 
 LEXICON NOUN_TIKKAAT
-!!€gt-norm:  Noun  kaat plurt
+!!€gt-norm:  Noun 41 kaat plurt
 !!€  tikkaat: tikkaat+N+Pl+Nom # ladders
 !!$  tikas: tikkaat+N+Sg+Nom
 0:kaa  NOUN_BACK_PLNOM_CLIT  ;
@@ -9614,7 +9675,7 @@ LEXICON NOUN_RATTAAT
 +Use/NG:ta  NOUN_COMPOUND_ITTEN  ;
 
 LEXICON NOUN_SAAPPAAT
-!!€gt-norm:  Noun  paat plurt
+!!€gt-norm:  Noun 41 paat plurt
 !!€  saappaat: saappaat+N+Pl+Nom
 !!$  saapas: saappaat+N+Sg+Nom
 0:paa  NOUN_BACK_PLNOM_CLIT  ;
@@ -9630,7 +9691,7 @@ LEXICON NOUN_SAAPPAAT
 +Use/NG:pa  NOUN_COMPOUND_ITTEN  ;
 
 LEXICON NOUN_HAMPAAT
-!!€gt-norm:  Noun  mpaat plurt
+!!€gt-norm:  Noun 41 mpaat plurt
 !!€  hampaat: hampaat+N+Pl+Nom
 !!$  hammas: hampaat+N+Sg+Nom
 0:paa  NOUN_BACK_PLNOM_CLIT  ;
@@ -9646,7 +9707,7 @@ LEXICON NOUN_HAMPAAT
 +Use/NG:pa  NOUN_COMPOUND_ITTEN  ;
 
 LEXICON NOUN_RENKAAT
-!!€gt-norm:  Noun  gaat plurt
+!!€gt-norm:  Noun 41 kaat plurt
 !!€  renkaat: renkaat+N+Pl+Nom # tires
 !!$  rengas: renkaat+N+Sg+Nom
 0:kaa  NOUN_BACK_PLNOM_CLIT  ;
@@ -9662,7 +9723,7 @@ LEXICON NOUN_RENKAAT
 +Use/NG:ka  NOUN_COMPOUND_ITTEN  ;
 
 LEXICON NOUN_RYNTÄÄT
-!!€gt-norm:  Noun  ntääaat plurt
+!!€gt-norm:  Noun 41 ntääaat plurt
 !!€  ryntäät: ryntäät+N+Pl+Nom # breasts
 !!$  rynnäs: ryntäät+N+Sg+Nom
 0:tää  NOUN_FRONT_PLNOM_CLIT  ;
@@ -9733,7 +9794,7 @@ LEXICON NOUN_RYNTTYYT
 +Use/NG:ty  NOUN_COMPOUND_ITTEN  ;
 
 LEXICON NOUN_MALTAAT
-!!€gt-norm:  Noun  ltaat plurt
+!!€gt-norm:  Noun 41 ltaat plurt
 !!€  maltaat: maltaat+N+Pl+Nom # hops
 !!$  mallas: maltaat+N+Sg+Nom
 0:taa  NOUN_BACK_PLNOM_CLIT  ;
@@ -9749,7 +9810,7 @@ LEXICON NOUN_MALTAAT
 +Use/NG:ta  NOUN_COMPOUND_ITTEN  ;
 
 LEXICON NOUN_PORTAAT
-!!€gt-norm:  Noun  rtaat plurt
+!!€gt-norm:  Noun 41 rtaat plurt
 !!€  portaat: portaat+N+Pl+Nom # stairs
 !!$  porras: portaat+N+Sg+Nom
 0:taa  NOUN_BACK_PLNOM_CLIT  ;
@@ -10000,9 +10061,30 @@ LEXICON NOUN_HIUTALEET
 0:e  NOUN_BACK_ILLATIVE_ISIIN  ;
 0:e  NOUN_BACK_ILLATIVE_IHIN  ;
 0  NOUN_COMPOUND_0  ;
-0:e  NOUN_COMPOUND_0  ;
 0:e  NOUN_COMPOUND_N  ;
-0:ee  NOUN_COMPOUND_N  ;
+0  NOUN_COMPOUND_TEN  ;
+0  NOUN_COMPOUND_IEN  ;
+0:e  NOUN_COMPOUND_IDEN  ;
+0:e  NOUN_COMPOUND_ITTEN  ;
+
+LEXICON NOUN_VÄLINEET
+!!€gt-norm:  Noun  eet plurt
+!!€  välineet: välineet+N+Pl+Nom # tools
+!!$  väline:   välineet+N+Sg+Nom
+0:e  NOUN_FRONT_PLNOM_CLIT  ;
+0  NOUN_FRONT_PLURALS  ;
+0:e  NOUN_FRONT_PLURALS  ;
+0  NOUN_FRONT_PARTITIVE_IA  ;
+0:e  NOUN_FRONT_PARTITIVE_ITA  ;
++Use/NG:0  NOUN_FRONT_GENITIVE_TEN  ;
++Use/NG:0  NOUN_FRONT_GENITIVE_IEN  ;
+0:e  NOUN_FRONT_GENITIVE_IDEN  ;
++Use/NG:e  NOUN_FRONT_GENITIVE_ITTEN  ;
+0  NOUN_FRONT_ILLATIVE_IIN  ;
+0:e  NOUN_FRONT_ILLATIVE_ISIIN  ;
+0:e  NOUN_FRONT_ILLATIVE_IHIN  ;
+0  NOUN_COMPOUND_0  ;
+0:e  NOUN_COMPOUND_N  ;
 0  NOUN_COMPOUND_TEN  ;
 0  NOUN_COMPOUND_IEN  ;
 0:e  NOUN_COMPOUND_IDEN  ;
@@ -10041,7 +10123,7 @@ LEXICON NOUN_PERKEET
 0:ke  NOUN_COMPOUND_ITTEN  ;
 
 LEXICON NOUN_POJAT
-!!€gt-norm:  Noun pojat plurt
+!!€gt-norm:  Noun 10 pojat plurt
 !!€  pojat: pojat+N+Pl+Nom # boys
 !!$  poika: pojat+N+Sg+Nom
 0:ja  NOUN_BACK_PLNOM_CLIT  ;
@@ -10149,7 +10231,7 @@ LEXICON NOUN_ROHTIMET
 :tim  NOUN_COMPOUND_IEN  ;
 
 LEXICON NOUN_ROTAT
-
+!!€gt-norm:  Noun 9 t~0 plurt
 :a  NOUN_BACK_PLNOM_CLIT  ;
 :a  NOUN_COMPOUND_N  ;
 
@@ -10383,7 +10465,7 @@ mp:mp  NOUN_COMPOUND_IEN ;
 :n  NOUN_BACK_PARTITIVE_TA ;
 
 LEXICON NOUN_LUHDAT
-
+!!€gt-norm:  Noun 10 t~d plurt
 :da  NOUN_BACK_PLNOM_CLIT ;
 da:da  NOUN_COMPOUND_N ;
 
@@ -10550,7 +10632,7 @@ LEXICON NOUN_PÖLLÖT
 
 
 LEXICON NOUN_RANGAT
-
+!!€gt-norm:  Noun 9 k~g plurt
 :ga  NOUN_BACK_PLNOM_CLIT ;
 ga:ga  NOUN_COMPOUND_N ;
 
@@ -10570,7 +10652,7 @@ ko:ko  NOUN_COMPOUND_JEN ;
 
 
 LEXICON NOUN_RIUTAT
-
+!!€gt-norm:  Noun 9 t~0 plurt
 :a  NOUN_BACK_PLNOM_CLIT ;
 a:a  NOUN_COMPOUND_N ;
 
@@ -10622,6 +10704,21 @@ LEXICON NOUN_RÄMIÄT
 :ö  NOUN_FRONT_ILLATIVE_IHIN ;
 ö:ö  NOUN_COMPOUND_IDEN ;
 ö+Use/NG:ö  NOUN_COMPOUND_ITTEN ;
+
+LEXICON NOUN_HÄKKYRÄT
+!!€gt-norm:  Nouns 12 front plurt
+0:ö  NOUN_FRONT_PLURALS  ;
+0:ö  NOUN_FRONT_PARTITIVE_ITÄ  ;
+0:ö  NOUN_FRONT_GENITIVE_IDEN  ;
++Use/NG:ö  NOUN_FRONT_GENITIVE_ITTEN  ;
++Use/NG:ä  NOUN_FRONT_GENITIVE_IN  ;
+0  NOUN_FRONT_ILLATIVE_IIN  ;
+0:ö  NOUN_FRONT_ILLATIVE_IHIN  ;
+0:ä  NOUN_COMPOUND_0  ;
+0:ä  NOUN_COMPOUND_N  ;
+0:ö  NOUN_COMPOUND_IDEN  ;
++Use/NG:ö  NOUN_COMPOUND_ITTEN  ;
++Use/NG:ä  NOUN_COMPOUND_IN  ;
 
 
 
