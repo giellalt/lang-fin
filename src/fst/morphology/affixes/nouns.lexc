@@ -8441,6 +8441,7 @@ LEXICON NOUN_LINNUT
 !!€gt-norm:  Nouns 1ntu plurt
 !!€  linnut: linnut+N+Pl+Nom # birds
 !!$  lintu:  linnut+N+Sg+Nom
+0:nu  NOUN_BACK_PLNOM_CLIT  ;
 0:tu  NOUN_BACK_STRONG_PLURALS  ;
 0:nu  NOUN_BACK_WEAK_PLURALS  ;
 0:tu  NOUN_BACK_PARTITIVE_JA  ;
@@ -8836,9 +8837,9 @@ LEXICON NOUN_KUOPAT
 !!€gt-norm:  Noun 10 a back p plurt
 !!€  kuopat: kuopat+N+Pl+Nom holes ?
 !!$  kuoppa: kuopat+N+Sg+Nom
-0:pa  NOUN_BACK_PLNOM_CLIT  ;
+0:a  NOUN_BACK_PLNOM_CLIT  ;
 0:p  NOUN_BACK_STRONG_PLURALS  ;
-0  NOUN_BACK_WEAK_PLURALS  ;
+0    NOUN_BACK_WEAK_PLURALS  ;
 0:p  NOUN_BACK_PARTITIVE_IA  ;
 0:p  NOUN_BACK_GENITIVE_IEN  ;
 +Use/NG:pa  NOUN_BACK_GENITIVE_IN  ;
@@ -9000,9 +9001,9 @@ LEXICON NOUN_SILAKAT
 !!€gt-norm:  Noun 14 kat plurt
 !!€  silakat: silakat+N+Pl+Nom kinds of a fish
 !!$  silakka: silakat+N+Sg+Nom
-0:ka  NOUN_BACK_PLNOM_CLIT  ;
+0:a   NOUN_BACK_PLNOM_CLIT  ;
 0:ko  NOUN_BACK_STRONG_PLURALS  ;
-0:o  NOUN_BACK_WEAK_PLURALS  ;
+0:o   NOUN_BACK_WEAK_PLURALS  ;
 0:ko  NOUN_BACK_PARTITIVE_ITA  ;
 0:ko  NOUN_BACK_PARTITIVE_JA  ;
 0:ko  NOUN_BACK_GENITIVE_IDEN  ;
@@ -10707,6 +10708,7 @@ LEXICON NOUN_RÄMIÄT
 
 LEXICON NOUN_HÄKKYRÄT
 !!€gt-norm:  Nouns 12 front plurt
+0:ä  NOUN_FRONT_PLNOM_CLIT ;
 0:ö  NOUN_FRONT_PLURALS  ;
 0:ö  NOUN_FRONT_PARTITIVE_ITÄ  ;
 0:ö  NOUN_FRONT_GENITIVE_IDEN  ;
