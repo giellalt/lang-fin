@@ -8496,6 +8496,20 @@ LEXICON NOUN_PIDOT
 0:do  NOUN_COMPOUND_N  ;
 0:to  NOUN_COMPOUND_JEN  ;
 
+LEXICON NOUN_POLTOT
+!!€gt-norm:  Noun 1ot plurt
+!!€  poltot: poltot+N+Pl+Nom
+!!$  poltto: poltot+N+Sg+Nom
+0:o   NOUN_BACK_PLNOM_CLIT  ;
+0:to  NOUN_BACK_STRONG_PLURALS  ;
+0:o   NOUN_BACK_WEAK_PLURALS  ;
+0:to  NOUN_BACK_PARTITIVE_JA  ;
+0:to  NOUN_BACK_GENITIVE_JEN  ;
+0:to  NOUN_BACK_ILLATIVE_IHIN  ;
+0:to  NOUN_COMPOUND_0  ;
+0:o   NOUN_COMPOUND_N  ;
+0:to  NOUN_COMPOUND_JEN  ;
+
 LEXICON NOUN_RAVUT
 !!€gt-norm:  Noun 1vut plurt
 !!€  ravut: ravut+N+Pl+Nom crabs ??
@@ -8879,6 +8893,22 @@ LEXICON NOUN_TAVAT
 0:pa  NOUN_COMPOUND_0  ;
 0:va  NOUN_COMPOUND_N  ;
 0:po  NOUN_COMPOUND_JEN  ;
++Use/NG:pa  NOUN_COMPOUND_IN  ;
+
+LEXICON NOUN_LUVAT
+!!€gt-norm:  Noun 10 vat plurt
+!!€  luvat: lubvat+N+Pl+Nom # manners
+!!$  lupa:  luvat+N+Sg+Nom
+0:va  NOUN_BACK_PLNOM_CLIT  ;
+0:p   NOUN_BACK_STRONG_PLURALS  ;
+0:v   NOUN_BACK_WEAK_PLURALS  ;
+0:p   NOUN_BACK_PARTITIVE_IA  ;
+0:p   NOUN_BACK_GENITIVE_IEN  ;
++Use/NG:pa  NOUN_BACK_GENITIVE_IN  ;
+0:p   NOUN_BACK_ILLATIVE_IIN  ;
+0:pa  NOUN_COMPOUND_0  ;
+0:va  NOUN_COMPOUND_N  ;
+0:p   NOUN_COMPOUND_JEN  ;
 +Use/NG:pa  NOUN_COMPOUND_IN  ;
 
 LEXICON NOUN_VALLAT
