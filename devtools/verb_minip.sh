@@ -15,7 +15,7 @@ L_FILE="in.txt"
 cut -d '!' -f1 src/fst/morphology/stems/verbs.lexc | egrep $PATTERN | sed 's/% /%/g' | tr ' +' ':' | cut -d ':' -f1 | sed 's/%/% /g' | tr -d '%'>$L_FILE
 
 
-P_FILE="test/data/testverbparadigm.txt"
+P_FILE="src/fst/morphology/test/testverbparadigm.txt"
 
 for lemma in $(cat $L_FILE);
 do

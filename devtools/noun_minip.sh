@@ -20,7 +20,7 @@ L_FILE="in.txt"
 cut -d '!' -f1 src/fst/morphology/stems/nouns.lexc | egrep $PATTERN | sed 's/% /%/g' | tr ' +' ':' | cut -d ':' -f1 | sed 's/%/% /g' | tr -d '%'>$L_FILE
 
 
-P_FILE="test/data/testnounpradigm.txt"
+P_FILE="src/fst/morphology/test/testnounpradigm.txt"
 
 for lemma in $(cat $L_FILE);
 do
