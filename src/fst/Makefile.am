@@ -68,6 +68,64 @@ endif # CAN_FOMA
 #################################################
 #### Add language-specific build rules here: ####
 
+# And also for the normative analyser (foma and hfst):
+.generated/analyser-gt-norm.%: .generated/analyser-gt-norm.tmp.%                \
+					filters/convert_to_flags-CmpNP-tags.% \
+					filters/split-CmpNP-tags.%
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+			    @\"filters/convert_to_flags-CmpNP-tags.$*\" \
+			.o. @\"filters/split-CmpNP-tags.$*\"            \
+			.o. @\"$<\"                                     \
+			;\n\
+		 twosided flag-diacritics\n\
+		 $(INVERT_HFST)\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+
+# The HFST Grammar Checker analyser (keep the Err/SpaceCmp strings):
+.generated/analyser-gramcheck-gt-desc.hfst: .generated/analyser-gramcheck-gt-desc.tmp.hfst \
+				filters/rename-POS_before_Der-tags.hfst      \
+				filters/convert_to_flags-CmpNP-tags.hfst
+	$(AM_V_HXFST)$(PRINTF) "\
+	set encode-weights ON\n\
+	read regex \
+		    @\"filters/convert_to_flags-CmpNP-tags.hfst\"     \
+		.o. @\"filters/split-CmpNP-tags.hfst\"                \
+		;\n\
+	twosided flag-diacritics\n\
+	invert net\n\
+	save stack $@\n\
+	quit\n" | $(HFST_XFST) -p $(MORE_VERBOSITY)
+
+# We need to add processing of language-specific tags in the analyser:
+.generated/analyser-dict-gt-desc.%: .generated/analyser-dict-gt-desc.tmp.% \
+					filters/convert_to_flags-CmpNP-tags.%     \
+					filters/split-CmpNP-tags.%
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+			    @\"filters/convert_to_flags-CmpNP-tags.$*\"     \
+			.o. @\"filters/split-CmpNP-tags.$*\"                \
+			.o. @\"$<\"                                         \
+			;\n\
+		 twosided flag-diacritics\n\
+		 $(INVERT_HFST)\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+
+# We need to add processing of language-specific tags in the analyser:
+.generated/analyser-dict-gt-desc-mobile.%: .generated/analyser-dict-gt-desc-mobile.tmp.% \
+					filters/convert_to_flags-CmpNP-tags.%     \
+					filters/split-CmpNP-tags.%
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+			    @\"filters/convert_to_flags-CmpNP-tags.$*\"     \
+			.o. @\"filters/split-CmpNP-tags.$*\"                \
+			.o. @\"$<\"                                         \
+			;\n\
+		 twosided flag-diacritics\n\
+		 $(INVERT_HFST)\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+
+
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
 ##################################################################

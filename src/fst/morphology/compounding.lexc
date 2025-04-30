@@ -23,17 +23,21 @@
 LEXICON NOUN_COMPOUND
 !!€gt-norm:
 !!€ talojuttu: talo+N+Sg+Nom#juttu+N+Sg+Nom
-     +Use/Circ+Use/NoHyphens:# NOMINAL ;
- +Use/Circ+Use/Hyphen+Use/NG:# NOMINAL ;
-                   +Use/Circ:# NOMINAL ;
+     +Use/Circ+Use/NoHyphens:# R_NOMINAL ;
+ +Use/Circ+Use/Hyphen+Use/NG:# R_NOMINAL ;
+                   +Use/Circ:# R_NOMINAL ;
                                RHyph ;
 
 LEXICON RNum
-:# NOMINAL ;
+:# R_NOMINAL ;
 
 LEXICON RHyph
-                   +Use/Circ:-  NOMINAL ;
+                   +Use/Circ:-  R_NOMINAL ;
                    - # ;
+
+LEXICON R_NOMINAL
+@P.CmpFrst.FALSE@@P.CmpPref.FALSE@@D.CmpLast.TRUE@@D.CmpNone.TRUE@@U.CmpNone.FALSE@@P.CmpOnly.TRUE@ NOMINAL ;
+
 
 LEXICON NOMINAL
 !! The compound part sub-set `@LEXNAME@`
