@@ -49,7 +49,6 @@ GT_LEXC_SRCS_L1_L2=\
 			stems/pp.lexc \
 			stems/pron.lexc \
 			stems/propernouns.lexc \
-			stems/prefixes.lexc \
 			stems/punct.lexc \
 			stems/suffixes.lexc \
 			stems/verbs.lexc \
@@ -64,6 +63,7 @@ GT_LEXC_SRCS_L1_L2=\
 			affixes/pp.lexc \
 			affixes/particles.lexc \
 			affixes/prefix.lexc \
+			affixes/prefixes.lexc \
 			affixes/pron.lexc \
 			affixes/propernouns.lexc \
 			affixes/symbols.lexc     \
