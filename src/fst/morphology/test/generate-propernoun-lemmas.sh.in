@@ -8,7 +8,7 @@ generator_file=@abs_builddir@/../../generator-gt-norm
 analyser_file=@abs_builddir@/../../analyser-gt-norm
 tags="+N+Prop+Sg+Nom"
 # advanced settings (leave empty or write full args)
-xtags=
+xtags="-t +N+Prop+Pl+Nom"
 inclusions=
 exclusions=
 
