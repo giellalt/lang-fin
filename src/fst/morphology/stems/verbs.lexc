@@ -39,7 +39,7 @@ LEXICON VERB
 
 
 
-
+kirjallistaa+V:kirjallist  VERB_MUTRISTAA  ;
 aakkostaa+V:aakkost  VERB_MUTRISTAA  ;
 aallota+V:aal  VERB_AALLOTA  ;
 aallottaa+V:aallot  VERB_VIEROITTAA  ;
@@ -135,6 +135,7 @@ ajantasaistaa+V:ajantasaist  VERB_MUTRISTAA  ;
 ajastaa+V:ajast  VERB_MUTRISTAA  ;
 ajatella+V:ajat  VERB_SULATELLA  ;
 ajattaa+V:ajat  VERB_VIEROITTAA  ;
+hakattaa+V:hakat  VERB_VIEROITTAA  ;
 ajatteluttaa+V:ajattelut  VERB_VIEROITTAA  ;
 ajautua+V:ajau  VERB_ROHTUA  ;
 ajelehtia+V:ajeleh  VERB_AHNEHTIA  ;
@@ -830,6 +831,7 @@ faktoroida+V:faktoro  VERB_KOPIOIDA  ;
 falsifioida+V:falsifio  VERB_KOPIOIDA  ;
 falskata+V:falska  VERB_ARVATA  ;
 fanittaa+V:fanit  VERB_VIEROITTAA  ;
+punnittaa+V:punnit  VERB_VIEROITTAA  ;
 fantisoida+V:fantiso  VERB_KOPIOIDA  ;
 fasetoida+V:faseto  VERB_KOPIOIDA  ;
 feidata+V:feida  VERB_ARVATA  ;
@@ -10607,6 +10609,7 @@ uistella+V:uistel  VERB_ETUILLA  ;
 uistella+V:uistel  VERB_VASTAILLA  ;
 uitella+V:uit  VERB_SULATELLA  ;
 uittaa+V:uit  VERB_VIEROITTAA  ;
+suittaa+V:suit  VERB_VIEROITTAA  ;
 ujeltaa+V:ujel  VERB_SIVALTAA  ;
 ujoilla+V:ujoil  VERB_VASTAILLA  ;
 ujoilla+V:ujo  VERB_ARVAILLA  ;
@@ -10639,6 +10642,7 @@ ulostaa+V:ulost  VERB_MUTRISTAA  ;
 ulostuttaa+V:ulostut  VERB_VIEROITTAA  ;
 ulota+V:ul  VERB_ULOTA  ;
 ulottaa+V:ulot  VERB_VIEROITTAA  ;
+neulottaa+V:neulot  VERB_VIEROITTAA  ;
 ulottautua+V:ulottau  VERB_ROHTUA  ;
 ulottua+V:ulot  VERB_HERMOTTUA  ;
 ulvahdella+V:ulvah  VERB_TIPAHDELLA  ;
@@ -11417,6 +11421,7 @@ viuhottaa+V:viuhot  VERB_VIEROITTAA  ;
 viuhtoa+V:viuh  VERB_KIETOA  ;
 viuhua+V:viuhu  VERB_KAUNISTUA  ;
 viuhuttaa+V:viuhut  VERB_VIEROITTAA  ;
+puistahuttaa+V:puistahut  VERB_VIEROITTAA  ;
 vivahtaa+V:vivah  VERB_MOJAHTAA  ;
 vivuta+V:vi  VERB_KIVUTA  ;
 vohkia+V:vohk  VERB_KOSIA  ;
@@ -11975,3 +11980,38 @@ irtoilla+V:irto VERB_ARVAILLA ; ! verbs.lexc VERB Inputfile: $GTLANGS/lang-fin/m
 kahvistella+V:kahvistel VERB_ETUILLA ; ! verbs.lexc VERB Inputfile: $GTLANGS/lang-fin/misc/vkand
 
 uppoilla+V:uppo VERB_ARVAILLA ; ! verbs.lexc VERB Inputfile: $GTLANGS/lang-fin/misc/vkand
+
+
+!arkiinnuttaa
+!palkia
+!hirtellä
+!pulautella
+!lekutella
+!ruttailla
+!laukeilla
+!sälöillä
+!katoilla
+!siivoilla
+!kärttyillä
+!raajoa
+!taajoa
+!keloa
+!kiimoa
+!solmeta
+!kallita
+!kolota
+!vuolaista
+!kärtytä
+!arkua
+!araksua
+!kompostoitua
+!paritua
+!dementointua
+!jauhoontua
+!vuottua
+!nivottua
+!tukkiutua
+!nälkyä
+!pitkäksyä
+!höperöityä
+!piimittyä
