@@ -20,7 +20,7 @@
 
 !! ## The circular lexicon
 
-LEXICON NOUN_COMPOUND
+LEXICON NOUN_COMPOUND ! all nom and gen etc. nouns from fst
 !!€gt-norm:
 !!€ talojuttu: talo+N+Sg+Nom#juttu+N+Sg+Nom
      +Use/Circ+Use/NoHyphens:# R_NOMINAL ;
@@ -28,7 +28,7 @@ LEXICON NOUN_COMPOUND
                    +Use/Circ:# R_NOMINAL ;
                                RHyph ;
 
-LEXICON RNum
+LEXICON RNum ! From the numerals or something
 :# R_NOMINAL ;
 
 LEXICON RHyph
