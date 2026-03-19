@@ -28,7 +28,6 @@ jobs:
         with:
           spellers: false
           fst: hfst
-          analysers: true
 
       # Mermaid processing starts here:
       - name: get list of files
