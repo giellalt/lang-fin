@@ -57,30 +57,6 @@ jobs:
           cd lang && ls -l docs/mermaid-svgs
       # Mermaid processing ends here
 
-      - name: get frequency list
-        uses: dawidd6/action-download-artifact@v8
-        with:
-          repo: giellalt/corpus-fin
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
-          workflow_search: true
-
-      - name: use frequency list
-        run: |
-          sudo apt-get install python3-hfst
-          mkdir stats/
-          python ${{ github.workspace }}/giella-core/scripts/freq-evals.py \
-          -a ${{ github.workspace }}/lang/build/src/fst/analyser-gt-desc.hfstol \
-          -m stats/corpus-fin.missing \
-          -i ${{ github.workspace }}/corpus-fin.latest.freqs/corpus-fin.freqs \
-          -n stats/corpus-fin.sus -o stats/corpus-fin.log \
-          -X stats/corpus-fin.stats -t 90
-          head stats/corpus-fin.missing
-      - name: upload missing list
-        uses: actions/upload-artifact@v4
-        with:
-          name: corpus-fin.missing
-          path: stats/corpus-fin.missing
       - name: deploy gh pages
         uses: peaceiris/actions-gh-pages@v4
         with:
