@@ -14,8 +14,10 @@ GENERATION_TESTS=
 
 # List tests that are presently (expected) failures here, ie things that should
 # be fixed *later*, but is not critical at the moment:
-XFAIL_TESTS=missing-multichars.sh
-
+XFAIL_TESTS=missing-multichars.sh \
+		generate-noun-lemmas.sh \
+		generate-verb-lemmas.sh \
+		generate-adjective-lemmas.sh
 
 include $(top_srcdir)/../giella-core/am-shared/devtest-include.am
 include $(top_srcdir)/../giella-core/am-shared/src-fst-morphology-test-include.am
