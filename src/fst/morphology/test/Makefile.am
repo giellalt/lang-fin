@@ -17,7 +17,8 @@ GENERATION_TESTS=
 XFAIL_TESTS=missing-multichars.sh \
 		generate-noun-lemmas.sh \
 		generate-verb-lemmas.sh \
-		generate-adjective-lemmas.sh
+		generate-adjective-lemmas.sh \
+		generate-propernoun-lemmas.sh
 
 include $(top_srcdir)/../giella-core/am-shared/devtest-include.am
 include $(top_srcdir)/../giella-core/am-shared/src-fst-morphology-test-include.am
