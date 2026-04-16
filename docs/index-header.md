@@ -5,9 +5,9 @@
 {% include_relative language-map.md %}
 
 <div class="badges" markdown="1">
-[![Maturity](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-fin%2Fgh-pages%2Fbadgedata%2Ffst-maturity.json)](https://giellalt.github.io/MaturityClassification.html) <br/>
-![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-fin%2Fgh-pages%2Fbadgedata%2Ffst-lemmacount.json) <br/>
-[![Speller suggestion quality](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-fin%2Fgh-pages%2Fbadgedata%2Fspeller-suggestions.json)](typosreport/) <br/>
+[![Maturity](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-fin%2Fmain%2Fdocs%2Fbadgedata%2Ffst-maturity.json)](https://giellalt.github.io/MaturityClassification.html) <br/>
+![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-fin%2Fmain%2Fdocs%2Fbadgedata%2Ffst-lemmacount.json) <br/>
+[![Speller suggestion quality](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-fin%2Fmain%2Fdocs%2Fbadgedata%2Fspeller-suggestions.json)](typosreport/) <br/>
 [![License](https://img.shields.io/github/license/giellalt/lang-fin)](https://github.com/giellalt/lang-fin/blob/main/LICENSE) <br/>
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-fin)](https://github.com/giellalt/lang-fin/issues) <br/>
 [![Build Status](https://builds.giellalt.org/api/badge/lang-fin?label=CI)](https://builds.giellalt.org/pipelines/lang-fin/builds/latest) <br/>
