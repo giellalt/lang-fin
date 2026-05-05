@@ -22,6 +22,9 @@ Multichar_Symbols
 !! examples of this classification in other parts of this documents; this page
 !! merely summarises the codes used in this version of the system.
 !!
+
+ÿ́   !!= * `@CODE@`: from the Proper Noun Taÿ́getos
+
 !! ### Parts-of-speech
 !!
 !! The main morphological division of words is merely: Verbs, Nominals,
@@ -737,7 +740,7 @@ Multichar_Symbols
 +Sem/State
 +Sem/Sur
 +Sem/Time
-
++CLB
 
 
 !! The word and morpheme boundaries are used to limit the effective range of
@@ -798,19 +801,31 @@ Multichar_Symbols
 
 ! also missing so far
 @P.Pmatch.Loc@
+@P.Pmatch.Backtrack@
+@R.ErrOrth.ON@
 
 !! | Flag diacritic | Explanation
 !! | :------------- |:-----------
 @U.number.one@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
+@P.number.one@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
 @U.number.two@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
+@P.number.two@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
 @U.number.three@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
+@P.number.three@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
 @U.number.four@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
+@P.number.four@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
 @U.number.five@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
+@P.number.five@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
 @U.number.six@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
+@P.number.six@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
 @U.number.seven@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
+@P.number.seven@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
 @U.number.eight@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
+@P.number.eight@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
 @U.number.nine@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
+@P.number.nine@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
 @U.number.zero@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
+@P.number.ten@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
 
 ! The root lexicon is unique entry point of this morphological description.
 ! This lexicon must not be used elsewhere; it contains only the markers for
