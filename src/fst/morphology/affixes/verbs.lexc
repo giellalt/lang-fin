@@ -43,7 +43,7 @@ LEXICON VERB_KAUNISTUA
 !!€  kaunistutaan: kaunistua+V+Pss+Ind+Prs+Pe4
 !!€  kaunistuttiin: kaunistua+V+Pss+Ind+Prt+Pe4
 !!€  kaunistuttu: kaunistua+V+Pss+PrfPrc+Sg+Nom
-!!€  kaunistuminen: kaunistua+V+Der/minen+Sg+Nom
+!!€  kaunistuminen: kaunistua+V+Der/minen+N+Sg+Nom
 0  VERB_BACK_AINF  ;
 0  VERB_BACK_EINF  ;
 0  VERB_BACK_WEAK_PRESENT  ;
@@ -74,7 +74,7 @@ LEXICON VERB_PUNOA
 !!€  punotaan: punoa+V+Pss+Ind+Prs+Pe4
 !!€  punottiin: punoa+V+Pss+Ind+Prt+Pe4
 !!€  punottu: punoa+V+Pss+PrfPrc+Sg+Nom
-!!€  punominen: punoa+V+Der/minen+Sg+Nom
+!!€  punominen: punoa+V+Der/minen+N+Sg+Nom
 0  VERB_BACK_AINF  ;
 0  VERB_BACK_EINF  ;
 0  VERB_BACK_WEAK_PRESENT  ;
@@ -105,7 +105,7 @@ LEXICON VERB_SÄILÖÄ
 !!€  säilötään: säilöä+V+Pss+Ind+Prs+Pe4
 !!€  säilöttiin: säilöä+V+Pss+Ind+Prt+Pe4
 !!€  säilötty: säilöä+V+Pss+PrfPrc+Sg+Nom
-!!€  säilöminen: säilöä+V+Der/minen+Sg+Nom
+!!€  säilöminen: säilöä+V+Der/minen+N+Sg+Nom
 0  VERB_FRONT_AINF  ;
 0  VERB_FRONT_EINF  ;
 0  VERB_FRONT_WEAK_PRESENT  ;
@@ -4033,7 +4033,7 @@ LEXICON VERB_OLLA
 !!€  olla: olla+V+Act+InfA+Sg+Lat # be
 !!€  lienen: olla+V+Act+Pot+Sg1
 !!€  lie: olla+V+Act+Pot+ConNeg
-!!€  olija: olla+V+Der/ja+Sg+Nom
+!!€  olija: olla+V+Der/ja+N+Sg+Nom
 0:oll  VERB_BACK_AINF  ;
 0:oll  VERB_BACK_EINF  ;
 0:ole  VERB_BACK_WEAK_PRESENT  ;
@@ -4082,10 +4082,10 @@ LEXICON VERB_OLLA
 +Pss+PrfPrc:ol  ADJ_PARANNELTU  ;
 !+Act+AgPrc:olem  ADJ_AALTOILEVA  ;
 +Act+NegPrc:olemat  ADJ_VIATON  ;
-+Act+PrsPrc+Der/inen:olevai  ADJ_AAKKOSELLINEN  ;
++Act+PrsPrc+Der/inen+A:olevai  ADJ_AAKKOSELLINEN  ;
 +Act+PrsPrc:olev  ADJ_AALTOILEVA  ;
-+Der/minen:olemi  NOUN_AAKKOSTAMINEN  ;
-+Der/ja:olij  NOUN_SOITTAJA  ;
++Der/minen+N:olemi  NOUN_AAKKOSTAMINEN  ;
++Der/ja+N:olij  NOUN_SOITTAJA  ;
 +Act+PrfPrc:oll  ADJ_KULUNUT  ;
 +Act+Pot+Sg1:lienen  VERB_FRONT_CLIT_OPT  ;
 +Act+Pot+Sg2:lienet  VERB_FRONT_CLIT_OPT  ;
@@ -4639,7 +4639,7 @@ LEXICON AUX_MAHTAA
 
 LEXICON AUX_OLLA
 
-+Der/ja:olij	NOUN_MAKKARA ;
++Der/ja+N:olij	NOUN_MAKKARA ;
 
 +N:olemi	NOUN_AAKKOSTAMINEN ;
 
@@ -5631,12 +5631,12 @@ LEXICON VERB_FRONT_POSS_AN_OPT
 
 !LEXICON VERB_BACK_DERIV_MINEN
 !€gt-norm: Verbs minen derivations
-!€ aakkostaminen aakkostaa+V+Der/minen+Sg+Nom
-!+Der/minen:mi  NOUN_AAKKOSTAMINEN   ;
+!€ aakkostaminen aakkostaa+V+N+Der/minen+Sg+Nom
+!+Der/minen+N:mi  NOUN_AAKKOSTAMINEN   ;
 
 !LEXICON VERB_FRONT_DERIV_MINEN
 !€ näkeminen nähdä+V+Der/minen+Sg+Nom
-!+Der/minen:mi  NOUN_KYLKIÄINEN   ;
+!+Der/minen+N:mi  NOUN_KYLKIÄINEN   ;
 
 !! ### Participles
 
@@ -5648,8 +5648,8 @@ LEXICON VERB_BACK_DERIV_PCPS
 +AgPrc:m       ADJ_AALTOILEVA        ;
 +NegPrc:mat     ADJ_VIATON      ;
 +Act+PrsPrc:v       ADJ_AALTOILEVA      ;
-+Der/minen:mi      NOUN_AAKKOSTAMINEN        ;
-+Act+PrsPrc+Der/inen:vai     NOUN_AAKKOSTAMINEN  ;
++Der/minen+N:mi      NOUN_AAKKOSTAMINEN        ;
++Act+PrsPrc+Der/inen+N:vai     NOUN_AAKKOSTAMINEN  ;
 
 LEXICON VERB_FRONT_DERIV_PCPS
 !!€gt-norm: Verbs participle front
@@ -5659,8 +5659,8 @@ LEXICON VERB_FRONT_DERIV_PCPS
 +AgPrc:m       ADJ_TYÖLLISTETTÄVÄ        ;
 +NegPrc:mät     ADJ_KYVYTÖN       ;
 +Act+PrsPrc:v       ADJ_TYÖLLISTETTÄVÄ       ;
-+Der/minen:mi      NOUN_KYLKIÄINEN        ;
-+Act+PrsPrc+Der/inen:väi     NOUN_KYLKIÄINEN  ;
++Der/minen+N:mi      NOUN_KYLKIÄINEN        ;
++Act+PrsPrc+Der/inen+N:väi     NOUN_KYLKIÄINEN  ;
 
 
 LEXICON VERB_BACK_OPTATIVE_0_ARCHAIC
