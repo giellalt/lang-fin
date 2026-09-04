@@ -1,0 +1,7770 @@
+{
+  "metadata": {
+    "info": {
+      "locale": "fi",
+      "title": [
+        {
+          "lang": null,
+          "$value": "Finnish spellchecker"
+        }
+      ],
+      "description": "A spellchecker for Finnish, made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway.",
+      "producer": "Giellatekno/Divvun/UiT contributors"
+    },
+    "acceptor": {
+      "type": "general",
+      "id": "acceptor.default.hfst",
+      "title": [
+        {
+          "lang": null,
+          "$value": "Finnish speller lexicon"
+        }
+      ],
+      "description": "Finnish speller lexicon compiled with HFST.",
+      "continuation": null
+    },
+    "errmodel": {
+      "id": "errmodel.default.hfst",
+      "title": [
+        {
+          "lang": null,
+          "$value": "Finnish error model"
+        }
+      ],
+      "description": "Error model for Finnish."
+    }
+  },
+  "config": {
+    "n-best": 10,
+    "max-weight": 10000.0,
+    "beam": null,
+    "reweight": {
+      "start-penalty": 10.0,
+      "end-penalty": 10.0,
+      "mid-penalty": 5.0
+    },
+    "node-pool-size": 128,
+    "recase": true,
+    "completion-marker": null
+  },
+  "summary": {
+    "total_words": 153,
+    "first_position": 89,
+    "top_five": 120,
+    "any_position": 131,
+    "no_suggestions": 2,
+    "only_wrong": 13,
+    "false_accept": 0,
+    "true_positive": 146,
+    "false_negative": 7,
+    "true_negative": 0,
+    "slowest_lookup": {
+      "secs": 0,
+      "subsec_nanos": 84408636
+    },
+    "fastest_lookup": {
+      "secs": 0,
+      "subsec_nanos": 17700
+    },
+    "average_time": {
+      "secs": 0,
+      "subsec_nanos": 18313496
+    },
+    "average_time_95pc": {
+      "secs": 0,
+      "subsec_nanos": 16536146
+    },
+    "average_position_of_correct": 1.9770992,
+    "average_suggestions_for_correct": 9.916031
+  },
+  "results": [
+    {
+      "input": "huumeitä",
+      "expected": "huumeita",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "huuheitä",
+          "weight": 25.0
+        },
+        {
+          "value": "huumoitä",
+          "weight": 25.0
+        },
+        {
+          "value": "huumeita",
+          "weight": 29.50981
+        },
+        {
+          "value": "huumeet",
+          "weight": 44.50981
+        },
+        {
+          "value": "huumeilta",
+          "weight": 44.50981
+        },
+        {
+          "value": "ahuuheitä",
+          "weight": 45.0
+        },
+        {
+          "value": "ahuumoitä",
+          "weight": 45.0
+        },
+        {
+          "value": "buumaitä",
+          "weight": 45.0
+        },
+        {
+          "value": "buumeetä",
+          "weight": 45.0
+        },
+        {
+          "value": "-huumeita",
+          "weight": 50.0
+        }
+      ],
+      "position": 2,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 17177108
+      },
+      "false_accept": false
+    },
+    {
+      "input": "itseki",
+      "expected": "itsekin",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "itseksi",
+          "weight": 25.0
+        },
+        {
+          "value": "itsesi",
+          "weight": 26.304214
+        },
+        {
+          "value": "itseni",
+          "weight": 26.62386
+        },
+        {
+          "value": "itsekin",
+          "weight": 27.99636
+        },
+        {
+          "value": "itsekö",
+          "weight": 30.0
+        },
+        {
+          "value": "itki",
+          "weight": 39.223064
+        },
+        {
+          "value": "iski",
+          "weight": 39.509808
+        },
+        {
+          "value": "itse",
+          "weight": 40.562508
+        },
+        {
+          "value": "teki",
+          "weight": 41.708733
+        },
+        {
+          "value": "itseä",
+          "weight": 44.019615
+        }
+      ],
+      "position": 3,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 7021627
+      },
+      "false_accept": false
+    },
+    {
+      "input": "jähtyy",
+      "expected": "jäähtyy",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "jäätyy",
+          "weight": 24.223064
+        },
+        {
+          "value": "jäähtyy",
+          "weight": 25.0
+        },
+        {
+          "value": "jääty",
+          "weight": 39.509808
+        },
+        {
+          "value": "täytyy",
+          "weight": 41.7362
+        },
+        {
+          "value": "ryhtyy",
+          "weight": 42.723618
+        },
+        {
+          "value": "nähty",
+          "weight": 43.133667
+        },
+        {
+          "value": "yhtyy",
+          "weight": 43.133667
+        },
+        {
+          "value": "päätyy",
+          "weight": 43.44613
+        },
+        {
+          "value": "ehtyy",
+          "weight": 45.0
+        },
+        {
+          "value": "nähtyä",
+          "weight": 49.509808
+        }
+      ],
+      "position": 1,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 6058546
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kesälllä",
+      "expected": "kesällä",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "kesällä",
+          "weight": 21.58543
+        },
+        {
+          "value": "keväällä",
+          "weight": 36.428757
+        },
+        {
+          "value": "keskellä",
+          "weight": 36.76478
+        },
+        {
+          "value": "keräillä",
+          "weight": 39.019615
+        },
+        {
+          "value": "kesälle",
+          "weight": 39.50981
+        },
+        {
+          "value": "kesältä",
+          "weight": 39.50981
+        },
+        {
+          "value": "k-säillä",
+          "weight": 40.0
+        },
+        {
+          "value": "k-sälillä",
+          "weight": 40.0
+        },
+        {
+          "value": "k-sälliä",
+          "weight": 40.0
+        },
+        {
+          "value": "-kesällä",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 18171167
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kiinostaa",
+      "expected": "kiinnostaa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "kiinnostaa",
+          "weight": 23.242682
+        },
+        {
+          "value": "kinostaa",
+          "weight": 25.0
+        },
+        {
+          "value": "kunnostaa",
+          "weight": 37.695885
+        },
+        {
+          "value": "kiinnostava",
+          "weight": 38.186077
+        },
+        {
+          "value": "kiitosta",
+          "weight": 38.304214
+        },
+        {
+          "value": "kiistaa",
+          "weight": 38.861813
+        },
+        {
+          "value": "kiinnosta",
+          "weight": 39.01962
+        },
+        {
+          "value": "kiihottaa",
+          "weight": 39.509808
+        },
+        {
+          "value": "innostaa",
+          "weight": 42.723618
+        },
+        {
+          "value": "painostaa",
+          "weight": 43.732872
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 10389008
+      },
+      "false_accept": false
+    },
+    {
+      "input": "konaisuudessaan",
+      "expected": "kokonaisuudessaan",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "k-naisuudessaan",
+          "weight": 28.0
+        },
+        {
+          "value": "kkonaisuudessaan",
+          "weight": 30.0
+        },
+        {
+          "value": "klonaisuudessaan",
+          "weight": 30.0
+        },
+        {
+          "value": "koenaisuudessaan",
+          "weight": 30.0
+        },
+        {
+          "value": "koinaisuudessaan",
+          "weight": 30.0
+        },
+        {
+          "value": "komnaisuudessaan",
+          "weight": 30.0
+        },
+        {
+          "value": "fonaisuudessaan",
+          "weight": 35.0
+        },
+        {
+          "value": "kokonaisuudessaan",
+          "weight": 36.620216
+        },
+        {
+          "value": "k-naisuudessahan",
+          "weight": 40.0
+        },
+        {
+          "value": "fonaisuudessahan",
+          "weight": 47.0
+        }
+      ],
+      "position": 7,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 41886254
+      },
+      "false_accept": false
+    },
+    {
+      "input": "konaisuutena",
+      "expected": "kokonaisuutena",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "k-naisuutena",
+          "weight": 25.0
+        },
+        {
+          "value": "kkonaisuutena",
+          "weight": 27.0
+        },
+        {
+          "value": "klonaisuutena",
+          "weight": 27.0
+        },
+        {
+          "value": "koenaisuutena",
+          "weight": 27.0
+        },
+        {
+          "value": "koinaisuutena",
+          "weight": 27.0
+        },
+        {
+          "value": "komnaisuutena",
+          "weight": 27.0
+        },
+        {
+          "value": "fonaisuutena",
+          "weight": 32.0
+        },
+        {
+          "value": "kokonaisuutena",
+          "weight": 37.409138
+        },
+        {
+          "value": "omaisuutena",
+          "weight": 44.509808
+        },
+        {
+          "value": "--naisuutena",
+          "weight": 45.0
+        }
+      ],
+      "position": 7,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 53416180
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kopioinnut",
+      "expected": "kopioinut",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "kopioinnit",
+          "weight": 25.0
+        },
+        {
+          "value": "kopioinut",
+          "weight": 25.0
+        },
+        {
+          "value": "kopioinnot",
+          "weight": 27.0
+        },
+        {
+          "value": "kopioinput",
+          "weight": 27.0
+        },
+        {
+          "value": "kopiolinnut",
+          "weight": 27.0
+        },
+        {
+          "value": "kop-linnut",
+          "weight": 40.0
+        },
+        {
+          "value": "kop-soinnut",
+          "weight": 40.0
+        },
+        {
+          "value": "kopioidut",
+          "weight": 40.0
+        },
+        {
+          "value": "kopioineet",
+          "weight": 40.0
+        },
+        {
+          "value": "-kopioinnit",
+          "weight": 45.0
+        }
+      ],
+      "position": 1,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 18581157
+      },
+      "false_accept": false
+    },
+    {
+      "input": "labyrintista",
+      "expected": "labyrintistä",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 30273
+      },
+      "false_accept": true
+    },
+    {
+      "input": "loukkantui",
+      "expected": "loukkaantui",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "loukkaantui",
+          "weight": 25.0
+        },
+        {
+          "value": "loukkautui",
+          "weight": 25.0
+        },
+        {
+          "value": "lokaantui",
+          "weight": 40.0
+        },
+        {
+          "value": "loskaantui",
+          "weight": 40.0
+        },
+        {
+          "value": "lookkantri",
+          "weight": 42.0
+        },
+        {
+          "value": "lookkantti",
+          "weight": 42.0
+        },
+        {
+          "value": "loukkaantua",
+          "weight": 45.0
+        },
+        {
+          "value": "loukkaantuu",
+          "weight": 45.0
+        },
+        {
+          "value": "loukkautua",
+          "weight": 45.0
+        },
+        {
+          "value": "loukkautuu",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 21295658
+      },
+      "false_accept": false
+    },
+    {
+      "input": "maahamuuttajien",
+      "expected": "maahanmuuttajien",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "maahanmuuttajien",
+          "weight": 22.42751
+        },
+        {
+          "value": "mahamuuttajien",
+          "weight": 27.0
+        },
+        {
+          "value": "maahanmuuttajiin",
+          "weight": 39.019615
+        },
+        {
+          "value": "maahanmuuttajin",
+          "weight": 40.0
+        },
+        {
+          "value": "maassamuuttajien",
+          "weight": 40.0
+        },
+        {
+          "value": "maastamuuttajien",
+          "weight": 40.0
+        },
+        {
+          "value": "-maahanmuuttajien",
+          "weight": 45.0
+        },
+        {
+          "value": "maahanmuuttajien-",
+          "weight": 45.0
+        },
+        {
+          "value": "-aapamuuttajien",
+          "weight": 47.0
+        },
+        {
+          "value": "-aasamuuttajien",
+          "weight": 47.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 47580781
+      },
+      "false_accept": false
+    },
+    {
+      "input": "menestykkäästi",
+      "expected": "menestyksekkäästi",
+      "distance": 3,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 16591152
+      },
+      "false_accept": false
+    },
+    {
+      "input": "muillekkin",
+      "expected": "muillekin",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "muillekin",
+          "weight": 23.186077
+        },
+        {
+          "value": "muillekokin",
+          "weight": 25.0
+        },
+        {
+          "value": "muillakin",
+          "weight": 37.846924
+        },
+        {
+          "value": "meillekin",
+          "weight": 39.019615
+        },
+        {
+          "value": "muullekin",
+          "weight": 39.223064
+        },
+        {
+          "value": "muillekaan",
+          "weight": 39.50981
+        },
+        {
+          "value": "emuillekin",
+          "weight": 45.0
+        },
+        {
+          "value": "emuillekokin",
+          "weight": 45.0
+        },
+        {
+          "value": "imuillekin",
+          "weight": 45.0
+        },
+        {
+          "value": "imuillekokin",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 29546567
+      },
+      "false_accept": false
+    },
+    {
+      "input": "museoa",
+      "expected": "museota",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 17700
+      },
+      "false_accept": true
+    },
+    {
+      "input": "näytteljä",
+      "expected": "näyttelijä",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "näyttelijä",
+          "weight": 23.133665
+        },
+        {
+          "value": "näyttelyä",
+          "weight": 23.24268
+        },
+        {
+          "value": "näyttelyjä",
+          "weight": 25.0
+        },
+        {
+          "value": "näytelmä",
+          "weight": 38.37162
+        },
+        {
+          "value": "näytteitä",
+          "weight": 38.86181
+        },
+        {
+          "value": "näytellä",
+          "weight": 39.019615
+        },
+        {
+          "value": "näyttely",
+          "weight": 42.140762
+        },
+        {
+          "value": "näyttelyn",
+          "weight": 42.54904
+        },
+        {
+          "value": "näyttelyt",
+          "weight": 43.304214
+        },
+        {
+          "value": "näyttely-",
+          "weight": 43.732872
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 7496317
+      },
+      "false_accept": false
+    },
+    {
+      "input": "oikelta",
+      "expected": "oikealta",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "oikeuta",
+          "weight": 23.62386
+        },
+        {
+          "value": "oikeita",
+          "weight": 23.732872
+        },
+        {
+          "value": "oikealta",
+          "weight": 23.732874
+        },
+        {
+          "value": "o-kelta",
+          "weight": 25.0
+        },
+        {
+          "value": "oikeelta",
+          "weight": 25.0
+        },
+        {
+          "value": "oikeeta",
+          "weight": 25.0
+        },
+        {
+          "value": "oikeilta",
+          "weight": 25.0
+        },
+        {
+          "value": "oikulta",
+          "weight": 25.0
+        },
+        {
+          "value": "3ikelta",
+          "weight": 32.0
+        },
+        {
+          "value": "bikelta",
+          "weight": 32.0
+        }
+      ],
+      "position": 2,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 30662419
+      },
+      "false_accept": false
+    },
+    {
+      "input": "osaanottajia",
+      "expected": "osanottajia",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "osanottajia",
+          "weight": 24.50981
+        },
+        {
+          "value": "okaanottajia",
+          "weight": 27.0
+        },
+        {
+          "value": "olaanottajia",
+          "weight": 27.0
+        },
+        {
+          "value": "oraanottajia",
+          "weight": 27.0
+        },
+        {
+          "value": "osainottajia",
+          "weight": 27.0
+        },
+        {
+          "value": "oscanottajia",
+          "weight": 27.0
+        },
+        {
+          "value": "osmanottajia",
+          "weight": 27.0
+        },
+        {
+          "value": "osanottajaa",
+          "weight": 38.732872
+        },
+        {
+          "value": "-osanottajia",
+          "weight": 45.0
+        },
+        {
+          "value": "-saunottajia",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 18881352
+      },
+      "false_accept": false
+    },
+    {
+      "input": "psykoanalyyttista",
+      "expected": "psykoanalyyttistä",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 32919
+      },
+      "false_accept": true
+    },
+    {
+      "input": "puolessä",
+      "expected": "puolessa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "puolessa",
+          "weight": 26.901043
+        },
+        {
+          "value": "pielessä",
+          "weight": 39.50981
+        },
+        {
+          "value": "pellessä",
+          "weight": 40.0
+        },
+        {
+          "value": "piilessä",
+          "weight": 40.0
+        },
+        {
+          "value": "pmol:ssä",
+          "weight": 40.0
+        },
+        {
+          "value": "puolesta",
+          "weight": 41.308178
+        },
+        {
+          "value": "puoleksi",
+          "weight": 44.223064
+        },
+        {
+          "value": "-puolessa",
+          "weight": 50.0
+        },
+        {
+          "value": "huolessa",
+          "weight": 50.0
+        },
+        {
+          "value": "nuolessa",
+          "weight": 50.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 15502511
+      },
+      "false_accept": false
+    },
+    {
+      "input": "puollusta",
+      "expected": "puolusta",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "puolusta",
+          "weight": 24.50981
+        },
+        {
+          "value": "puolausta",
+          "weight": 25.0
+        },
+        {
+          "value": "puollosta",
+          "weight": 25.0
+        },
+        {
+          "value": "puoliusta",
+          "weight": 27.0
+        },
+        {
+          "value": "kuollusta",
+          "weight": 30.0
+        },
+        {
+          "value": "nuollusta",
+          "weight": 30.0
+        },
+        {
+          "value": "vuollusta",
+          "weight": 30.0
+        },
+        {
+          "value": "puolesta",
+          "weight": 36.308178
+        },
+        {
+          "value": "puolustaa",
+          "weight": 38.304214
+        },
+        {
+          "value": "huollosta",
+          "weight": 43.242683
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 8110848
+      },
+      "false_accept": false
+    },
+    {
+      "input": "pääseestä",
+      "expected": "päässeestä",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "päässeestä",
+          "weight": 25.0
+        },
+        {
+          "value": "pääreestä",
+          "weight": 27.0
+        },
+        {
+          "value": "pääsemistä",
+          "weight": 39.223064
+        },
+        {
+          "value": "päästessä",
+          "weight": 39.223064
+        },
+        {
+          "value": "päästetä",
+          "weight": 39.509808
+        },
+        {
+          "value": "pääsystä",
+          "weight": 39.50981
+        },
+        {
+          "value": "jääneestä",
+          "weight": 44.509808
+        },
+        {
+          "value": "bääjeestä",
+          "weight": 45.0
+        },
+        {
+          "value": "bääseistä",
+          "weight": 45.0
+        },
+        {
+          "value": "jääteestä",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 13371344
+      },
+      "false_accept": false
+    },
+    {
+      "input": "radioaktiivusuuden",
+      "expected": "radioaktiivisuuden",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "radioaktiivisuuden",
+          "weight": 25.0
+        },
+        {
+          "value": "-radioaktiivisuuden",
+          "weight": 45.0
+        },
+        {
+          "value": "radioaktiivisuuden-",
+          "weight": 45.0
+        },
+        {
+          "value": "radioaktiivisuudet",
+          "weight": 45.0
+        },
+        {
+          "value": "0radioaktiivisuuden",
+          "weight": 47.0
+        },
+        {
+          "value": "1radioaktiivisuuden",
+          "weight": 47.0
+        },
+        {
+          "value": "2radioaktiivisuuden",
+          "weight": 47.0
+        },
+        {
+          "value": "3radioaktiivisuuden",
+          "weight": 47.0
+        },
+        {
+          "value": "4radioaktiivisuuden",
+          "weight": 47.0
+        },
+        {
+          "value": "5radioaktiivisuuden",
+          "weight": 47.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 36062534
+      },
+      "false_accept": false
+    },
+    {
+      "input": "radioliikienteestä",
+      "expected": "radioliikenteestä",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "radioliikenteestä",
+          "weight": 25.0
+        },
+        {
+          "value": "radioliikaenteestä",
+          "weight": 29.0
+        },
+        {
+          "value": "radioliivienteestä",
+          "weight": 29.0
+        },
+        {
+          "value": "radiolikienteestä",
+          "weight": 29.0
+        },
+        {
+          "value": "radioliikenteeltä",
+          "weight": 40.0
+        },
+        {
+          "value": "radioliikenteessä",
+          "weight": 40.0
+        },
+        {
+          "value": "radioliikenteettä",
+          "weight": 40.0
+        },
+        {
+          "value": "radioliikenteistä",
+          "weight": 40.0
+        },
+        {
+          "value": "-radioliikenteestä",
+          "weight": 45.0
+        },
+        {
+          "value": "0radioliikenteestä",
+          "weight": 47.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 33972124
+      },
+      "false_accept": false
+    },
+    {
+      "input": "rakennetu",
+      "expected": "rakennettu",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "rakennettu",
+          "weight": 21.675835
+        },
+        {
+          "value": "rakenneltu",
+          "weight": 25.0
+        },
+        {
+          "value": "rakenneta",
+          "weight": 27.881428
+        },
+        {
+          "value": "rakennetun",
+          "weight": 28.186075
+        },
+        {
+          "value": "rakennetut",
+          "weight": 28.529425
+        },
+        {
+          "value": "rakennetta",
+          "weight": 37.99636
+        },
+        {
+          "value": "raaennettu",
+          "weight": 40.0
+        },
+        {
+          "value": "rakenne",
+          "weight": 42.95594
+        },
+        {
+          "value": "rakennettua",
+          "weight": 44.50981
+        },
+        {
+          "value": "raaenneta",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 18748127
+      },
+      "false_accept": false
+    },
+    {
+      "input": "rakuunakykmentin",
+      "expected": "rakuunarykmentti",
+      "distance": 3,
+      "suggestions": [
+        {
+          "value": "rakuunarykmentin",
+          "weight": 25.0
+        },
+        {
+          "value": "rakuunarykmentein",
+          "weight": 40.0
+        },
+        {
+          "value": "-rakuunarykmentin",
+          "weight": 45.0
+        },
+        {
+          "value": "rakuunarykmentin-",
+          "weight": 45.0
+        },
+        {
+          "value": "rakuunarykmentit",
+          "weight": 45.0
+        },
+        {
+          "value": "0rakuunarykmentin",
+          "weight": 47.0
+        },
+        {
+          "value": "1rakuunarykmentin",
+          "weight": 47.0
+        },
+        {
+          "value": "2rakuunarykmentin",
+          "weight": 47.0
+        },
+        {
+          "value": "3rakuunarykmentin",
+          "weight": 47.0
+        },
+        {
+          "value": "4rakuunarykmentin",
+          "weight": 47.0
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 34734025
+      },
+      "false_accept": false
+    },
+    {
+      "input": "rannolla",
+      "expected": "rrannoilla",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "rannalla",
+          "weight": 21.84172
+        },
+        {
+          "value": "rannoilla",
+          "weight": 22.72362
+        },
+        {
+          "value": "rennolla",
+          "weight": 24.509808
+        },
+        {
+          "value": "r-annolla",
+          "weight": 25.0
+        },
+        {
+          "value": "rangolla",
+          "weight": 25.0
+        },
+        {
+          "value": "-annolla",
+          "weight": 30.0
+        },
+        {
+          "value": "annolla",
+          "weight": 30.0
+        },
+        {
+          "value": "erannolla",
+          "weight": 30.0
+        },
+        {
+          "value": "kannolla",
+          "weight": 30.0
+        },
+        {
+          "value": "mannolla",
+          "weight": 30.0
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 5521453
+      },
+      "false_accept": false
+    },
+    {
+      "input": "rautietieverkon",
+      "expected": "rautatieverkon",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "rautiotieverkon",
+          "weight": 27.0
+        },
+        {
+          "value": "rautatieverkon",
+          "weight": 40.0
+        },
+        {
+          "value": "-rautiotieverkon",
+          "weight": 47.0
+        },
+        {
+          "value": "a-tietieverkon",
+          "weight": 47.0
+        },
+        {
+          "value": "fa-tietieverkon",
+          "weight": 47.0
+        },
+        {
+          "value": "ha-tietieverkon",
+          "weight": 47.0
+        },
+        {
+          "value": "ka-tietieverkon",
+          "weight": 47.0
+        },
+        {
+          "value": "kautiotieverkon",
+          "weight": 47.0
+        },
+        {
+          "value": "la-tietieverkon",
+          "weight": 47.0
+        },
+        {
+          "value": "ma-tietieverkon",
+          "weight": 47.0
+        }
+      ],
+      "position": 1,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 21700666
+      },
+      "false_accept": false
+    },
+    {
+      "input": "rekistöröineet",
+      "expected": "rekisteröineet",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "rekisteröineet",
+          "weight": 25.0
+        },
+        {
+          "value": "rekisteröinet",
+          "weight": 40.0
+        },
+        {
+          "value": "reki-töröaineet",
+          "weight": 44.0
+        },
+        {
+          "value": "reki-töröeineet",
+          "weight": 44.0
+        },
+        {
+          "value": "rekintöröaineet",
+          "weight": 44.0
+        },
+        {
+          "value": "rekintöröeineet",
+          "weight": 44.0
+        },
+        {
+          "value": "rekitöröaineet",
+          "weight": 44.0
+        },
+        {
+          "value": "rekitöröeineet",
+          "weight": 44.0
+        },
+        {
+          "value": "rekisteröinee",
+          "weight": 45.0
+        },
+        {
+          "value": "rekisteröineen",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 24963787
+      },
+      "false_accept": false
+    },
+    {
+      "input": "repertuaarit",
+      "expected": "repertoaarit",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "repertoaarit",
+          "weight": 25.0
+        },
+        {
+          "value": "re-estuaarit",
+          "weight": 40.0
+        },
+        {
+          "value": "-repertoaarit",
+          "weight": 45.0
+        },
+        {
+          "value": "repertoaari",
+          "weight": 45.0
+        },
+        {
+          "value": "repertoaari-",
+          "weight": 45.0
+        },
+        {
+          "value": "repertoaaria",
+          "weight": 45.0
+        },
+        {
+          "value": "repertoaarin",
+          "weight": 45.0
+        },
+        {
+          "value": "repertoaarit-",
+          "weight": 45.0
+        },
+        {
+          "value": "0repertoaarit",
+          "weight": 47.0
+        },
+        {
+          "value": "1repertoaarit",
+          "weight": 47.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 15658775
+      },
+      "false_accept": false
+    },
+    {
+      "input": "rittävästi",
+      "expected": "riittävästi",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "riittävästi",
+          "weight": 21.54156
+        },
+        {
+          "value": "tiettävästi",
+          "weight": 43.44613
+        },
+        {
+          "value": "riittävästä",
+          "weight": 43.732872
+        },
+        {
+          "value": "vietävästi",
+          "weight": 44.509808
+        },
+        {
+          "value": "eriyttävästi",
+          "weight": 45.0
+        },
+        {
+          "value": "ryittävästä",
+          "weight": 45.0
+        },
+        {
+          "value": "räittävästä",
+          "weight": 45.0
+        },
+        {
+          "value": "tietävästi",
+          "weight": 45.0
+        },
+        {
+          "value": "eittävästä",
+          "weight": 50.0
+        },
+        {
+          "value": "erittävästä",
+          "weight": 50.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 19412276
+      },
+      "false_accept": false
+    },
+    {
+      "input": "rythyvät",
+      "expected": "ryhtyvät",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ry-hyvät",
+          "weight": 25.0
+        },
+        {
+          "value": "rytkyvät",
+          "weight": 25.0
+        },
+        {
+          "value": "rytihyvät",
+          "weight": 27.0
+        },
+        {
+          "value": "rytyhyvät",
+          "weight": 27.0
+        },
+        {
+          "value": "rytöhyvät",
+          "weight": 27.0
+        },
+        {
+          "value": "ryhtyvät",
+          "weight": 33.186073
+        },
+        {
+          "value": "ay-hyvät",
+          "weight": 45.0
+        },
+        {
+          "value": "hytkyvät",
+          "weight": 45.0
+        },
+        {
+          "value": "ky-hyvät",
+          "weight": 45.0
+        },
+        {
+          "value": "ly-hyvät",
+          "weight": 45.0
+        }
+      ],
+      "position": 5,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 11283844
+      },
+      "false_accept": false
+    },
+    {
+      "input": "röntgem",
+      "expected": "röntgen",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "röntgen",
+          "weight": 30.0
+        },
+        {
+          "value": "röntgen-",
+          "weight": 45.0
+        },
+        {
+          "value": "-röntgen",
+          "weight": 50.0
+        },
+        {
+          "value": "0röntgen",
+          "weight": 52.0
+        },
+        {
+          "value": "1röntgen",
+          "weight": 52.0
+        },
+        {
+          "value": "2röntgen",
+          "weight": 52.0
+        },
+        {
+          "value": "3röntgen",
+          "weight": 52.0
+        },
+        {
+          "value": "4röntgen",
+          "weight": 52.0
+        },
+        {
+          "value": "5röntgen",
+          "weight": 52.0
+        },
+        {
+          "value": "6röntgen",
+          "weight": 52.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 9264132
+      },
+      "false_accept": false
+    },
+    {
+      "input": "saanaat",
+      "expected": "saaneet",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "saarnaat",
+          "weight": 25.0
+        },
+        {
+          "value": "jaanaat",
+          "weight": 30.0
+        },
+        {
+          "value": "laanaat",
+          "weight": 30.0
+        },
+        {
+          "value": "saanut",
+          "weight": 35.956932
+        },
+        {
+          "value": "saavat",
+          "weight": 36.051365
+        },
+        {
+          "value": "saaneet",
+          "weight": 36.48047
+        },
+        {
+          "value": "sanat",
+          "weight": 37.307938
+        },
+        {
+          "value": "saadaan",
+          "weight": 41.419746
+        },
+        {
+          "value": "sanaa",
+          "weight": 42.069984
+        },
+        {
+          "value": "saamaan",
+          "weight": 42.340088
+        }
+      ],
+      "position": 5,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 16731628
+      },
+      "false_accept": false
+    },
+    {
+      "input": "saksalaisila",
+      "expected": "saksalaisilla",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "saksalaisia",
+          "weight": 25.0
+        },
+        {
+          "value": "saksalaisilla",
+          "weight": 25.0
+        },
+        {
+          "value": "saksalaisilta",
+          "weight": 25.0
+        },
+        {
+          "value": "saksalaisina",
+          "weight": 25.0
+        },
+        {
+          "value": "saksalaishila",
+          "weight": 27.0
+        },
+        {
+          "value": "saksalaisilma",
+          "weight": 27.0
+        },
+        {
+          "value": "saksalaislila",
+          "weight": 27.0
+        },
+        {
+          "value": "saksalaisnila",
+          "weight": 27.0
+        },
+        {
+          "value": "saksalaispila",
+          "weight": 27.0
+        },
+        {
+          "value": "saksalaissila",
+          "weight": 27.0
+        }
+      ],
+      "position": 1,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 20123259
+      },
+      "false_accept": false
+    },
+    {
+      "input": "samallaisena",
+      "expected": "samanlaisena",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "samanlaisena",
+          "weight": 23.62386
+        },
+        {
+          "value": "samaalaisena",
+          "weight": 27.0
+        },
+        {
+          "value": "samanlaisina",
+          "weight": 39.50981
+        },
+        {
+          "value": "s-hallaisena",
+          "weight": 40.0
+        },
+        {
+          "value": "s-maalaisena",
+          "weight": 40.0
+        },
+        {
+          "value": "s-mahlaisena",
+          "weight": 40.0
+        },
+        {
+          "value": "s-malilaisena",
+          "weight": 40.0
+        },
+        {
+          "value": "s-mallisena",
+          "weight": 40.0
+        },
+        {
+          "value": "samanlaisen",
+          "weight": 43.86181
+        },
+        {
+          "value": "lamalaisena",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 17123313
+      },
+      "false_accept": false
+    },
+    {
+      "input": "samankalaisuuksia",
+      "expected": "samankaltaisuuksia",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "samankaltaisuuksia",
+          "weight": 24.223066
+        },
+        {
+          "value": "saamankalaisuuksia",
+          "weight": 27.0
+        },
+        {
+          "value": "sadankalaisuuksia",
+          "weight": 27.0
+        },
+        {
+          "value": "sahankalaisuuksia",
+          "weight": 27.0
+        },
+        {
+          "value": "sakankalaisuuksia",
+          "weight": 27.0
+        },
+        {
+          "value": "hamankalaisuuksia",
+          "weight": 32.0
+        },
+        {
+          "value": "jamankalaisuuksia",
+          "weight": 32.0
+        },
+        {
+          "value": "kamankalaisuuksia",
+          "weight": 32.0
+        },
+        {
+          "value": "lamankalaisuuksia",
+          "weight": 32.0
+        },
+        {
+          "value": "namankalaisuuksia",
+          "weight": 32.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 30440431
+      },
+      "false_accept": false
+    },
+    {
+      "input": "sentäään",
+      "expected": "sentään",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "sentään",
+          "weight": 24.223064
+        },
+        {
+          "value": "senkään",
+          "weight": 39.509804
+        },
+        {
+          "value": "kenttään",
+          "weight": 43.86181
+        },
+        {
+          "value": "lentämään",
+          "weight": 44.509808
+        },
+        {
+          "value": "lentäjän",
+          "weight": 44.50981
+        },
+        {
+          "value": "entämän",
+          "weight": 45.0
+        },
+        {
+          "value": "entämään",
+          "weight": 45.0
+        },
+        {
+          "value": "entävän",
+          "weight": 45.0
+        },
+        {
+          "value": "entävään",
+          "weight": 45.0
+        },
+        {
+          "value": "entäähän",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 13481003
+      },
+      "false_accept": false
+    },
+    {
+      "input": "setäsä",
+      "expected": "setänsä",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "setänä",
+          "weight": 25.0
+        },
+        {
+          "value": "setäpä",
+          "weight": 25.0
+        },
+        {
+          "value": "setää",
+          "weight": 25.0
+        },
+        {
+          "value": "setänsä",
+          "weight": 27.223064
+        },
+        {
+          "value": "setäsi",
+          "weight": 33.0
+        },
+        {
+          "value": "vetää",
+          "weight": 42.814022
+        },
+        {
+          "value": "metsä",
+          "weight": 43.03923
+        },
+        {
+          "value": "vetämä",
+          "weight": 43.529423
+        },
+        {
+          "value": "vetäjä",
+          "weight": 43.732872
+        },
+        {
+          "value": "setä",
+          "weight": 44.019615
+        }
+      ],
+      "position": 3,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 12714172
+      },
+      "false_accept": false
+    },
+    {
+      "input": "siirettäviä",
+      "expected": "siirrettäviä",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "siirrettäviä",
+          "weight": 24.509808
+        },
+        {
+          "value": "sierettäviä",
+          "weight": 25.0
+        },
+        {
+          "value": "siitettäviä",
+          "weight": 25.0
+        },
+        {
+          "value": "siirrettävä",
+          "weight": 38.03923
+        },
+        {
+          "value": "hiilettäviä",
+          "weight": 45.0
+        },
+        {
+          "value": "kiidettäviä",
+          "weight": 45.0
+        },
+        {
+          "value": "kiirehtäviä",
+          "weight": 45.0
+        },
+        {
+          "value": "kiirittäviä",
+          "weight": 45.0
+        },
+        {
+          "value": "kiitettäviä",
+          "weight": 45.0
+        },
+        {
+          "value": "kiivettäviä",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 30494154
+      },
+      "false_accept": false
+    },
+    {
+      "input": "sinfoniorkesteria",
+      "expected": "sinfoniaorkesteria",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "sinfoniaorkesteria",
+          "weight": 25.0
+        },
+        {
+          "value": "sifoniorkesteria",
+          "weight": 27.0
+        },
+        {
+          "value": "sanfoniorkesteria",
+          "weight": 29.0
+        },
+        {
+          "value": "seinfoniorkesteria",
+          "weight": 29.0
+        },
+        {
+          "value": "sinifoniorkesteria",
+          "weight": 29.0
+        },
+        {
+          "value": "sirfoniorkesteria",
+          "weight": 29.0
+        },
+        {
+          "value": "3infoniorkesteria",
+          "weight": 34.0
+        },
+        {
+          "value": "isinfoniorkesteria",
+          "weight": 34.0
+        },
+        {
+          "value": "jinfoniorkesteria",
+          "weight": 34.0
+        },
+        {
+          "value": "minfoniorkesteria",
+          "weight": 34.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 17423990
+      },
+      "false_accept": false
+    },
+    {
+      "input": "sirrettiin",
+      "expected": "siirrettiin",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "siirrettiin",
+          "weight": 22.782587
+        },
+        {
+          "value": "sorrettiin",
+          "weight": 25.0
+        },
+        {
+          "value": "sirfrettiin",
+          "weight": 27.0
+        },
+        {
+          "value": "sirjettiin",
+          "weight": 27.0
+        },
+        {
+          "value": "sirlettiin",
+          "weight": 27.0
+        },
+        {
+          "value": "sirnettiin",
+          "weight": 27.0
+        },
+        {
+          "value": "sirrattiin",
+          "weight": 27.0
+        },
+        {
+          "value": "sirreittiin",
+          "weight": 27.0
+        },
+        {
+          "value": "sirretiin",
+          "weight": 27.0
+        },
+        {
+          "value": "sirretkiin",
+          "weight": 27.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 8294930
+      },
+      "false_accept": false
+    },
+    {
+      "input": "sisäiliä",
+      "expected": "sisällä",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "sisäisiä",
+          "weight": 23.304214
+        },
+        {
+          "value": "s-säiliä",
+          "weight": 25.0
+        },
+        {
+          "value": "seisäiliä",
+          "weight": 27.0
+        },
+        {
+          "value": "sirsäiliä",
+          "weight": 27.0
+        },
+        {
+          "value": "3isäiliä",
+          "weight": 32.0
+        },
+        {
+          "value": "bisäiliä",
+          "weight": 32.0
+        },
+        {
+          "value": "disäiliä",
+          "weight": 32.0
+        },
+        {
+          "value": "eisäiliä",
+          "weight": 32.0
+        },
+        {
+          "value": "esisäiliä",
+          "weight": 32.0
+        },
+        {
+          "value": "isisäiliä",
+          "weight": 32.0
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 20799344
+      },
+      "false_accept": false
+    },
+    {
+      "input": "sitäkää",
+      "expected": "sitäkään",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "sietäkää",
+          "weight": 25.0
+        },
+        {
+          "value": "itäkää",
+          "weight": 30.0
+        },
+        {
+          "value": "pitäkää",
+          "weight": 30.0
+        },
+        {
+          "value": "sitäkään",
+          "weight": 30.0
+        },
+        {
+          "value": "säkää",
+          "weight": 39.223064
+        },
+        {
+          "value": "pitkää",
+          "weight": 43.039234
+        },
+        {
+          "value": "siitäkään",
+          "weight": 43.86181
+        },
+        {
+          "value": "sitäkin",
+          "weight": 43.86181
+        },
+        {
+          "value": "pitäjää",
+          "weight": 44.509808
+        },
+        {
+          "value": "siltäkään",
+          "weight": 44.509808
+        }
+      ],
+      "position": 3,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 9333015
+      },
+      "false_accept": false
+    },
+    {
+      "input": "sivistyneisin",
+      "expected": "sivistyneisiin",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "sivistynehisin",
+          "weight": 25.0
+        },
+        {
+          "value": "sivistyneihin",
+          "weight": 25.0
+        },
+        {
+          "value": "sivistyneisiin",
+          "weight": 25.0
+        },
+        {
+          "value": "sievistynehisin",
+          "weight": 40.0
+        },
+        {
+          "value": "sievistyneihin",
+          "weight": 40.0
+        },
+        {
+          "value": "sievistyneisiin",
+          "weight": 40.0
+        },
+        {
+          "value": "sinistynehisin",
+          "weight": 40.0
+        },
+        {
+          "value": "-sivistynehisin",
+          "weight": 45.0
+        },
+        {
+          "value": "-sivistyneihin",
+          "weight": 45.0
+        },
+        {
+          "value": "-sivistyneisiin",
+          "weight": 45.0
+        }
+      ],
+      "position": 2,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 15675422
+      },
+      "false_accept": false
+    },
+    {
+      "input": "sivuummalle",
+      "expected": "sivummalle",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 27771
+      },
+      "false_accept": true
+    },
+    {
+      "input": "soitettaminen",
+      "expected": "soittaminen",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "soiteottaminen",
+          "weight": 27.0
+        },
+        {
+          "value": "soitettavien",
+          "weight": 40.0
+        },
+        {
+          "value": "soitintaminen",
+          "weight": 40.0
+        },
+        {
+          "value": "soittaminen",
+          "weight": 40.0
+        },
+        {
+          "value": "soitettavine",
+          "weight": 45.0
+        },
+        {
+          "value": "toitottaminen",
+          "weight": 45.0
+        },
+        {
+          "value": "-soiteottaminen",
+          "weight": 47.0
+        },
+        {
+          "value": "koiteottaminen",
+          "weight": 47.0
+        },
+        {
+          "value": "moiteottaminen",
+          "weight": 47.0
+        },
+        {
+          "value": "osoiteottaminen",
+          "weight": 47.0
+        }
+      ],
+      "position": 3,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 28303063
+      },
+      "false_accept": false
+    },
+    {
+      "input": "solmiota",
+      "expected": "solmioita",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 23308
+      },
+      "false_accept": true
+    },
+    {
+      "input": "sotiii",
+      "expected": "sotii",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "sotii",
+          "weight": 24.509808
+        },
+        {
+          "value": "soriii",
+          "weight": 25.0
+        },
+        {
+          "value": "sotiisi",
+          "weight": 25.0
+        },
+        {
+          "value": "sotisi",
+          "weight": 25.0
+        },
+        {
+          "value": "sotiini",
+          "weight": 28.0
+        },
+        {
+          "value": "sotiin",
+          "weight": 30.0
+        },
+        {
+          "value": "sopii",
+          "weight": 37.092804
+        },
+        {
+          "value": "sopisi",
+          "weight": 38.623856
+        },
+        {
+          "value": "sotien",
+          "weight": 42.955936
+        },
+        {
+          "value": "kotiin",
+          "weight": 47.391235
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 9195597
+      },
+      "false_accept": false
+    },
+    {
+      "input": "suhteelisen",
+      "expected": "suhteellisen",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "suhteellisen",
+          "weight": 22.140766
+        },
+        {
+          "value": "suhteellinen",
+          "weight": 38.37162
+        },
+        {
+          "value": "suhteelliseen",
+          "weight": 40.0
+        },
+        {
+          "value": "suhteellisien",
+          "weight": 40.0
+        },
+        {
+          "value": "suhteellisin",
+          "weight": 40.0
+        },
+        {
+          "value": "suhteellisten",
+          "weight": 40.0
+        },
+        {
+          "value": "suhteisen",
+          "weight": 40.0
+        },
+        {
+          "value": "suhdealisen",
+          "weight": 42.0
+        },
+        {
+          "value": "suhteellisena",
+          "weight": 45.0
+        },
+        {
+          "value": "suhteelliset",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 15531311
+      },
+      "false_accept": false
+    },
+    {
+      "input": "sukelluveneen",
+      "expected": "sukellusveneen",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "sukellusveneen",
+          "weight": 25.0
+        },
+        {
+          "value": "sukellusvenein",
+          "weight": 40.0
+        },
+        {
+          "value": "-sukellusveneen",
+          "weight": 45.0
+        },
+        {
+          "value": "sukellusveneen-",
+          "weight": 45.0
+        },
+        {
+          "value": "sukellusveneenä",
+          "weight": 45.0
+        },
+        {
+          "value": "sukellusveneet",
+          "weight": 45.0
+        },
+        {
+          "value": "0sukellusveneen",
+          "weight": 47.0
+        },
+        {
+          "value": "1sukellusveneen",
+          "weight": 47.0
+        },
+        {
+          "value": "2sukellusveneen",
+          "weight": 47.0
+        },
+        {
+          "value": "3sukellusveneen",
+          "weight": 47.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 18667104
+      },
+      "false_accept": false
+    },
+    {
+      "input": "suuniteltu",
+      "expected": "suunnitteltu",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "suunniteltu",
+          "weight": 22.219423
+        },
+        {
+          "value": "suositeltu",
+          "weight": 38.529427
+        },
+        {
+          "value": "saunoteltu",
+          "weight": 40.0
+        },
+        {
+          "value": "suoriteltu",
+          "weight": 40.0
+        },
+        {
+          "value": "suukoteltu",
+          "weight": 40.0
+        },
+        {
+          "value": "suunielu",
+          "weight": 40.0
+        },
+        {
+          "value": "suunniteltua",
+          "weight": 43.623856
+        },
+        {
+          "value": "juoniteltu",
+          "weight": 45.0
+        },
+        {
+          "value": "tuuditeltu",
+          "weight": 45.0
+        },
+        {
+          "value": "suunimeltä",
+          "weight": 47.0
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 32379328
+      },
+      "false_accept": false
+    },
+    {
+      "input": "suunittelusta",
+      "expected": "suunnittelusta",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "suunnittelusta",
+          "weight": 22.277187
+        },
+        {
+          "value": "suunottelusta",
+          "weight": 27.0
+        },
+        {
+          "value": "suunnittelussa",
+          "weight": 36.43788
+        },
+        {
+          "value": "s-uhittelusta",
+          "weight": 40.0
+        },
+        {
+          "value": "suunielusta",
+          "weight": 40.0
+        },
+        {
+          "value": "suunnitteluista",
+          "weight": 40.0
+        },
+        {
+          "value": "suunnitteluita",
+          "weight": 40.0
+        },
+        {
+          "value": "suunnittelulta",
+          "weight": 40.0
+        },
+        {
+          "value": "-suunnittelusta",
+          "weight": 45.0
+        },
+        {
+          "value": "juonittelusta",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 23868752
+      },
+      "false_accept": false
+    },
+    {
+      "input": "suunnitelun",
+      "expected": "suunnittelun",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "suunnittelun",
+          "weight": 21.695389
+        },
+        {
+          "value": "suunnitellun",
+          "weight": 23.623857
+        },
+        {
+          "value": "suunnielun",
+          "weight": 27.0
+        },
+        {
+          "value": "suunnitealun",
+          "weight": 27.0
+        },
+        {
+          "value": "suunnitelman",
+          "weight": 35.706795
+        },
+        {
+          "value": "suunnitteluun",
+          "weight": 37.02645
+        },
+        {
+          "value": "suunnitelma",
+          "weight": 41.6143
+        },
+        {
+          "value": "suunnittelua",
+          "weight": 41.79456
+        },
+        {
+          "value": "suunnittelu",
+          "weight": 41.802204
+        },
+        {
+          "value": "suunniteltu",
+          "weight": 42.219425
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 11077995
+      },
+      "false_accept": false
+    },
+    {
+      "input": "suuttimmet",
+      "expected": "suuttimet",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "suuttimet",
+          "weight": 25.0
+        },
+        {
+          "value": "suuteimmet",
+          "weight": 27.0
+        },
+        {
+          "value": "sumuttimet",
+          "weight": 40.0
+        },
+        {
+          "value": "suuntimet",
+          "weight": 40.0
+        },
+        {
+          "value": "-suuttimet",
+          "weight": 45.0
+        },
+        {
+          "value": "suuttimeen",
+          "weight": 45.0
+        },
+        {
+          "value": "suuttimen",
+          "weight": 45.0
+        },
+        {
+          "value": "suuttimet-",
+          "weight": 45.0
+        },
+        {
+          "value": "suuttimien",
+          "weight": 45.0
+        },
+        {
+          "value": "suutuimme",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 19007127
+      },
+      "false_accept": false
+    },
+    {
+      "input": "säilytytetään",
+      "expected": "säilytetään",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "säilytyttään",
+          "weight": 28.0
+        },
+        {
+          "value": "säilytetään",
+          "weight": 37.0928
+        },
+        {
+          "value": "silitytetään",
+          "weight": 40.0
+        },
+        {
+          "value": "säilyttekään",
+          "weight": 40.0
+        },
+        {
+          "value": "säilytytkään",
+          "weight": 40.0
+        },
+        {
+          "value": "säilytyttähän",
+          "weight": 40.0
+        },
+        {
+          "value": "säilytesetään",
+          "weight": 42.0
+        },
+        {
+          "value": "säilytetenään",
+          "weight": 42.0
+        },
+        {
+          "value": "säilyteterään",
+          "weight": 42.0
+        },
+        {
+          "value": "säilytynevään",
+          "weight": 42.0
+        }
+      ],
+      "position": 1,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 16180652
+      },
+      "false_accept": false
+    },
+    {
+      "input": "taloudellisuudensa",
+      "expected": "taloudellisuutensa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "taloudellisuudenpa",
+          "weight": 25.0
+        },
+        {
+          "value": "taloudellisuudessa",
+          "weight": 25.0
+        },
+        {
+          "value": "taloudellisuutensa",
+          "weight": 28.0
+        },
+        {
+          "value": "taloudellisuudella",
+          "weight": 40.0
+        },
+        {
+          "value": "taloudellisuudelta",
+          "weight": 40.0
+        },
+        {
+          "value": "-taloudellisuudenpa",
+          "weight": 45.0
+        },
+        {
+          "value": "-taloudellisuudessa",
+          "weight": 45.0
+        },
+        {
+          "value": "taloudellisuudeksi",
+          "weight": 45.0
+        },
+        {
+          "value": "taloudellisuuden",
+          "weight": 45.0
+        },
+        {
+          "value": "taloudellisuuden-",
+          "weight": 45.0
+        }
+      ],
+      "position": 2,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 19091728
+      },
+      "false_accept": false
+    },
+    {
+      "input": "talouspolitiikaa",
+      "expected": "talouspolitiikkaa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "talouspolitiikkaa",
+          "weight": 25.0
+        },
+        {
+          "value": "talouspoliliikaa",
+          "weight": 29.0
+        },
+        {
+          "value": "talouspolipiikaa",
+          "weight": 29.0
+        },
+        {
+          "value": "talouspolisiikaa",
+          "weight": 29.0
+        },
+        {
+          "value": "talouspolitaikaa",
+          "weight": 29.0
+        },
+        {
+          "value": "talouspolitiimaa",
+          "weight": 29.0
+        },
+        {
+          "value": "talouspolitiikan",
+          "weight": 29.509808
+        },
+        {
+          "value": "talouspolitiika-",
+          "weight": 30.0
+        },
+        {
+          "value": "talouspolitiikat",
+          "weight": 30.0
+        },
+        {
+          "value": "talouspolitiikka",
+          "weight": 30.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 17072598
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tapahtu",
+      "expected": "tapahdu",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "tapahtuu",
+          "weight": 21.428757
+        },
+        {
+          "value": "tapahdu",
+          "weight": 23.24268
+        },
+        {
+          "value": "tapahtua",
+          "weight": 26.833641
+        },
+        {
+          "value": "tapahetu",
+          "weight": 27.0
+        },
+        {
+          "value": "tapahitu",
+          "weight": 27.0
+        },
+        {
+          "value": "tapahutu",
+          "weight": 27.0
+        },
+        {
+          "value": "tapahtui",
+          "weight": 27.643475
+        },
+        {
+          "value": "tavattu",
+          "weight": 38.133667
+        },
+        {
+          "value": "tapahtuma",
+          "weight": 41.8499
+        },
+        {
+          "value": "tapahtuva",
+          "weight": 42.695885
+        }
+      ],
+      "position": 1,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 11071146
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tapahtu",
+      "expected": "tapahtui",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "tapahtuu",
+          "weight": 21.428757
+        },
+        {
+          "value": "tapahdu",
+          "weight": 23.24268
+        },
+        {
+          "value": "tapahtua",
+          "weight": 26.833641
+        },
+        {
+          "value": "tapahetu",
+          "weight": 27.0
+        },
+        {
+          "value": "tapahitu",
+          "weight": 27.0
+        },
+        {
+          "value": "tapahutu",
+          "weight": 27.0
+        },
+        {
+          "value": "tapahtui",
+          "weight": 27.643475
+        },
+        {
+          "value": "tavattu",
+          "weight": 38.133667
+        },
+        {
+          "value": "tapahtuma",
+          "weight": 41.8499
+        },
+        {
+          "value": "tapahtuva",
+          "weight": 42.695885
+        }
+      ],
+      "position": 6,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 11948262
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tapahtu",
+      "expected": "tapahtuu",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "tapahtuu",
+          "weight": 21.428757
+        },
+        {
+          "value": "tapahdu",
+          "weight": 23.24268
+        },
+        {
+          "value": "tapahtua",
+          "weight": 26.833641
+        },
+        {
+          "value": "tapahetu",
+          "weight": 27.0
+        },
+        {
+          "value": "tapahitu",
+          "weight": 27.0
+        },
+        {
+          "value": "tapahutu",
+          "weight": 27.0
+        },
+        {
+          "value": "tapahtui",
+          "weight": 27.643475
+        },
+        {
+          "value": "tavattu",
+          "weight": 38.133667
+        },
+        {
+          "value": "tapahtuma",
+          "weight": 41.8499
+        },
+        {
+          "value": "tapahtuva",
+          "weight": 42.695885
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 12668147
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tapauksana",
+      "expected": "tapauksena",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "tapauksena",
+          "weight": 25.0
+        },
+        {
+          "value": "tapauksina",
+          "weight": 25.0
+        },
+        {
+          "value": "tapajuksana",
+          "weight": 27.0
+        },
+        {
+          "value": "tapakuksana",
+          "weight": 27.0
+        },
+        {
+          "value": "tapaoksana",
+          "weight": 27.0
+        },
+        {
+          "value": "tapaussana",
+          "weight": 27.0
+        },
+        {
+          "value": "tapauksia",
+          "weight": 38.529427
+        },
+        {
+          "value": "tapauksen",
+          "weight": 43.37162
+        },
+        {
+          "value": "-tapauksena",
+          "weight": 45.0
+        },
+        {
+          "value": "-tapauksina",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 19511777
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tarvenpolton",
+      "expected": "tervanpolton",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "t-arvenpolton",
+          "weight": 27.0
+        },
+        {
+          "value": "talvenpolton",
+          "weight": 27.0
+        },
+        {
+          "value": "tarve-polton",
+          "weight": 27.0
+        },
+        {
+          "value": "tarvepolton",
+          "weight": 27.0
+        },
+        {
+          "value": "torvenpolton",
+          "weight": 27.0
+        },
+        {
+          "value": "-arvenpolton",
+          "weight": 32.0
+        },
+        {
+          "value": "arvenpolton",
+          "weight": 32.0
+        },
+        {
+          "value": "parvenpolton",
+          "weight": 32.0
+        },
+        {
+          "value": "sarvenpolton",
+          "weight": 32.0
+        },
+        {
+          "value": "0arvenpolton",
+          "weight": 34.0
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 8818243
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tasaläpöinen",
+      "expected": "tasalämpöinen",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "tasalämpöinen",
+          "weight": 25.0
+        },
+        {
+          "value": "tasalämpöisen",
+          "weight": 40.0
+        },
+        {
+          "value": "-tasalämpöinen",
+          "weight": 45.0
+        },
+        {
+          "value": "tasalämpöinen-",
+          "weight": 45.0
+        },
+        {
+          "value": "0tasalämpöinen",
+          "weight": 47.0
+        },
+        {
+          "value": "1tasalämpöinen",
+          "weight": 47.0
+        },
+        {
+          "value": "2tasalämpöinen",
+          "weight": 47.0
+        },
+        {
+          "value": "3tasalämpöinen",
+          "weight": 47.0
+        },
+        {
+          "value": "4tasalämpöinen",
+          "weight": 47.0
+        },
+        {
+          "value": "5tasalämpöinen",
+          "weight": 47.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 24695622
+      },
+      "false_accept": false
+    },
+    {
+      "input": "teinikäisten",
+      "expected": "teini-ikäisten",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "t-elinikäisten",
+          "weight": 40.0
+        },
+        {
+          "value": "teini-ikäisten",
+          "weight": 40.0
+        },
+        {
+          "value": "ti-ikäisten",
+          "weight": 40.0
+        },
+        {
+          "value": "tainikäysten",
+          "weight": 42.0
+        },
+        {
+          "value": "teenikäysten",
+          "weight": 42.0
+        },
+        {
+          "value": "tefinikäysten",
+          "weight": 42.0
+        },
+        {
+          "value": "elinikäisten",
+          "weight": 45.0
+        },
+        {
+          "value": "beinikäysten",
+          "weight": 47.0
+        },
+        {
+          "value": "leinikäysten",
+          "weight": 47.0
+        },
+        {
+          "value": "seinikäysten",
+          "weight": 47.0
+        }
+      ],
+      "position": 1,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 29908056
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tekellettä",
+      "expected": "tekelettä",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "tekeleettä",
+          "weight": 25.0
+        },
+        {
+          "value": "tekelettä",
+          "weight": 25.0
+        },
+        {
+          "value": "t-hellettä",
+          "weight": 40.0
+        },
+        {
+          "value": "t-kpellettä",
+          "weight": 40.0
+        },
+        {
+          "value": "t-pellettä",
+          "weight": 40.0
+        },
+        {
+          "value": "tekeleeltä",
+          "weight": 40.0
+        },
+        {
+          "value": "tekeleestä",
+          "weight": 40.0
+        },
+        {
+          "value": "tekeleetpä",
+          "weight": 40.0
+        },
+        {
+          "value": "-tekeleettä",
+          "weight": 45.0
+        },
+        {
+          "value": "-tekelettä",
+          "weight": 45.0
+        }
+      ],
+      "position": 1,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 27223301
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tekinjänoikeuslain",
+      "expected": "tekijänoikeuslain",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "tekijänoikeuslain",
+          "weight": 25.0
+        },
+        {
+          "value": "tekijänoikeuslaein",
+          "weight": 40.0
+        },
+        {
+          "value": "-tekijänoikeuslain",
+          "weight": 45.0
+        },
+        {
+          "value": "tekijänoikeuslain-",
+          "weight": 45.0
+        },
+        {
+          "value": "tekijänoikeuslait",
+          "weight": 45.0
+        },
+        {
+          "value": "0tekijänoikeuslain",
+          "weight": 47.0
+        },
+        {
+          "value": "1tekijänoikeuslain",
+          "weight": 47.0
+        },
+        {
+          "value": "2tekijänoikeuslain",
+          "weight": 47.0
+        },
+        {
+          "value": "3tekijänoikeuslain",
+          "weight": 47.0
+        },
+        {
+          "value": "4tekijänoikeuslain",
+          "weight": 47.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 23019003
+      },
+      "false_accept": false
+    },
+    {
+      "input": "teknologiaministerön",
+      "expected": "teknologiaministeriön",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "teknologiaministerin",
+          "weight": 27.0
+        },
+        {
+          "value": "teknologiaministeriön",
+          "weight": 27.0
+        },
+        {
+          "value": "teknologi-ministerin",
+          "weight": 42.0
+        },
+        {
+          "value": "teknologi-ministeriön",
+          "weight": 42.0
+        },
+        {
+          "value": "teknologia-ministerin",
+          "weight": 42.0
+        },
+        {
+          "value": "teknologia-ministeriön",
+          "weight": 42.0
+        },
+        {
+          "value": "teknologiaministerein",
+          "weight": 42.0
+        },
+        {
+          "value": "-teknologiaministerin",
+          "weight": 47.0
+        },
+        {
+          "value": "-teknologiaministeriön",
+          "weight": 47.0
+        },
+        {
+          "value": "teknologiaministeri",
+          "weight": 47.0
+        }
+      ],
+      "position": 1,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 84408636
+      },
+      "false_accept": false
+    },
+    {
+      "input": "televiosiota",
+      "expected": "televisiota",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "televisiota",
+          "weight": 24.509811
+        },
+        {
+          "value": "televisiosta",
+          "weight": 39.50981
+        },
+        {
+          "value": "televisioa",
+          "weight": 40.0
+        },
+        {
+          "value": "televisioita",
+          "weight": 40.0
+        },
+        {
+          "value": "televisiolta",
+          "weight": 40.0
+        },
+        {
+          "value": "televisiona",
+          "weight": 40.0
+        },
+        {
+          "value": "televisiopa",
+          "weight": 40.0
+        },
+        {
+          "value": "-televisiota",
+          "weight": 44.50981
+        },
+        {
+          "value": "televisiot",
+          "weight": 45.0
+        },
+        {
+          "value": "televisiot-",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 21732468
+      },
+      "false_accept": false
+    },
+    {
+      "input": "temppeleita",
+      "expected": "temppeleitä",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "tomppeleita",
+          "weight": 25.0
+        },
+        {
+          "value": "temppeleitä",
+          "weight": 29.50981
+        },
+        {
+          "value": "t-amppeleita",
+          "weight": 40.0
+        },
+        {
+          "value": "-amppeleita",
+          "weight": 45.0
+        },
+        {
+          "value": "-tomppeleita",
+          "weight": 45.0
+        },
+        {
+          "value": "amppeleita",
+          "weight": 45.0
+        },
+        {
+          "value": "homppeleita",
+          "weight": 45.0
+        },
+        {
+          "value": "temppeleiltä",
+          "weight": 45.0
+        },
+        {
+          "value": "temppelein",
+          "weight": 45.0
+        },
+        {
+          "value": "-temppeleitä",
+          "weight": 50.0
+        }
+      ],
+      "position": 1,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 11003385
+      },
+      "false_accept": false
+    },
+    {
+      "input": "teokseta",
+      "expected": "teoksesta",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "teoksesta",
+          "weight": 23.86181
+        },
+        {
+          "value": "teokselta",
+          "weight": 25.0
+        },
+        {
+          "value": "teoksena",
+          "weight": 25.0
+        },
+        {
+          "value": "teoksetpa",
+          "weight": 25.0
+        },
+        {
+          "value": "teoksetta",
+          "weight": 25.0
+        },
+        {
+          "value": "teokset",
+          "weight": 27.99636
+        },
+        {
+          "value": "teokset-",
+          "weight": 30.0
+        },
+        {
+          "value": "teoksia",
+          "weight": 38.133667
+        },
+        {
+          "value": "teoksessa",
+          "weight": 38.37162
+        },
+        {
+          "value": "teoksen",
+          "weight": 43.304214
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 8336895
+      },
+      "false_accept": false
+    },
+    {
+      "input": "teollisuualue",
+      "expected": "teollisuusalue",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "teollisuusalue",
+          "weight": 25.0
+        },
+        {
+          "value": "trollisuualue",
+          "weight": 27.0
+        },
+        {
+          "value": "-teollisuusalue",
+          "weight": 45.0
+        },
+        {
+          "value": "teollisuusalue-",
+          "weight": 45.0
+        },
+        {
+          "value": "-hollisuualue",
+          "weight": 47.0
+        },
+        {
+          "value": "-kollisuualue",
+          "weight": 47.0
+        },
+        {
+          "value": "-mollisuualue",
+          "weight": 47.0
+        },
+        {
+          "value": "-trollisuualue",
+          "weight": 47.0
+        },
+        {
+          "value": "0teollisuusalue",
+          "weight": 47.0
+        },
+        {
+          "value": "1teollisuusalue",
+          "weight": 47.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 18090894
+      },
+      "false_accept": false
+    },
+    {
+      "input": "terasssit",
+      "expected": "terassit",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "terassit",
+          "weight": 25.0
+        },
+        {
+          "value": "teraossit",
+          "weight": 27.0
+        },
+        {
+          "value": "terasissit",
+          "weight": 27.0
+        },
+        {
+          "value": "t-rassit",
+          "weight": 40.0
+        },
+        {
+          "value": "-terassit",
+          "weight": 45.0
+        },
+        {
+          "value": "terassein",
+          "weight": 45.0
+        },
+        {
+          "value": "terassi",
+          "weight": 45.0
+        },
+        {
+          "value": "terassi-",
+          "weight": 45.0
+        },
+        {
+          "value": "terassia",
+          "weight": 45.0
+        },
+        {
+          "value": "terassiin",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 18692986
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tervellisemmän",
+      "expected": "terveellisemmän",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "terveellisemmän",
+          "weight": 25.0
+        },
+        {
+          "value": "teriöllisemmän",
+          "weight": 40.0
+        },
+        {
+          "value": "terveellisemmin",
+          "weight": 40.0
+        },
+        {
+          "value": "terveellisimmän",
+          "weight": 40.0
+        },
+        {
+          "value": "teevellisemman",
+          "weight": 44.0
+        },
+        {
+          "value": "tefvellisemman",
+          "weight": 44.0
+        },
+        {
+          "value": "merellisemmän",
+          "weight": 45.0
+        },
+        {
+          "value": "terveellisemmät",
+          "weight": 45.0
+        },
+        {
+          "value": "dervellisemman",
+          "weight": 49.0
+        },
+        {
+          "value": "pervellisemman",
+          "weight": 49.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 27120410
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tiedoitti",
+      "expected": "tiedotti",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "tiedotti",
+          "weight": 23.861809
+        },
+        {
+          "value": "tiedeitti",
+          "weight": 27.0
+        },
+        {
+          "value": "tiedoitta",
+          "weight": 30.0
+        },
+        {
+          "value": "tiedoista",
+          "weight": 43.186073
+        },
+        {
+          "value": "aidoitti",
+          "weight": 45.0
+        },
+        {
+          "value": "hiekoitti",
+          "weight": 45.0
+        },
+        {
+          "value": "-tiedoitta",
+          "weight": 50.0
+        },
+        {
+          "value": "hiedoitta",
+          "weight": 50.0
+        },
+        {
+          "value": "kiedoitte",
+          "weight": 50.0
+        },
+        {
+          "value": "liedoitta",
+          "weight": 50.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 16780373
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tietokonejärjestemien",
+      "expected": "tietokonejärjestelmien",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "tietokonejärjestelmien",
+          "weight": 25.0
+        },
+        {
+          "value": "tietokonejärjestelmiin",
+          "weight": 40.0
+        },
+        {
+          "value": "tietokonejärjestelmin",
+          "weight": 40.0
+        },
+        {
+          "value": "-tietokonejärjestelmien",
+          "weight": 45.0
+        },
+        {
+          "value": "tietokonejärjestelmien-",
+          "weight": 45.0
+        },
+        {
+          "value": "0tietokonejärjestelmien",
+          "weight": 47.0
+        },
+        {
+          "value": "1tietokonejärjestelmien",
+          "weight": 47.0
+        },
+        {
+          "value": "2tietokonejärjestelmien",
+          "weight": 47.0
+        },
+        {
+          "value": "3tietokonejärjestelmien",
+          "weight": 47.0
+        },
+        {
+          "value": "4tietokonejärjestelmien",
+          "weight": 47.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 42183220
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tietäs",
+      "expected": "tietäisi",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "tiepäs",
+          "weight": 25.0
+        },
+        {
+          "value": "tietpäs",
+          "weight": 25.0
+        },
+        {
+          "value": "tietää",
+          "weight": 26.772106
+        },
+        {
+          "value": "tietä",
+          "weight": 27.9177
+        },
+        {
+          "value": "tietäsi",
+          "weight": 33.0
+        },
+        {
+          "value": "tietoa",
+          "weight": 40.492805
+        },
+        {
+          "value": "tieto",
+          "weight": 41.393387
+        },
+        {
+          "value": "tietyn",
+          "weight": 42.307938
+        },
+        {
+          "value": "tiedä",
+          "weight": 42.44637
+        },
+        {
+          "value": "tietyt",
+          "weight": 42.571495
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 10217239
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tiiviksi",
+      "expected": "tiiviiksi",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "tiiviiksi",
+          "weight": 24.509808
+        },
+        {
+          "value": "tiikiksi",
+          "weight": 25.0
+        },
+        {
+          "value": "tiiliksi",
+          "weight": 25.0
+        },
+        {
+          "value": "tiimiksi",
+          "weight": 25.0
+        },
+        {
+          "value": "tiiviöksi",
+          "weight": 25.0
+        },
+        {
+          "value": "tiviksi",
+          "weight": 25.0
+        },
+        {
+          "value": "tiiniksi",
+          "weight": 27.0
+        },
+        {
+          "value": "kiiviksi",
+          "weight": 30.0
+        },
+        {
+          "value": "liiviksi",
+          "weight": 30.0
+        },
+        {
+          "value": "siiviksi",
+          "weight": 30.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 9930031
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tilanteensta",
+      "expected": "tilanteesta",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "tilanteesta",
+          "weight": 21.695389
+        },
+        {
+          "value": "tilanteensata",
+          "weight": 27.0
+        },
+        {
+          "value": "tilanteensota",
+          "weight": 27.0
+        },
+        {
+          "value": "tilanteenusta",
+          "weight": 27.0
+        },
+        {
+          "value": "tilanteensa",
+          "weight": 27.223064
+        },
+        {
+          "value": "tilanteessa",
+          "weight": 36.7155
+        },
+        {
+          "value": "tilanteista",
+          "weight": 39.019615
+        },
+        {
+          "value": "tilanteena",
+          "weight": 39.50981
+        },
+        {
+          "value": "t-lanteesta",
+          "weight": 40.0
+        },
+        {
+          "value": "-tilanteesta",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 22632456
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tipahdakkaan",
+      "expected": "tiphadakaan",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "tipahdakaan",
+          "weight": 25.0
+        },
+        {
+          "value": "tipahdakokaan",
+          "weight": 25.0
+        },
+        {
+          "value": "tipahdankaan",
+          "weight": 25.0
+        },
+        {
+          "value": "tipahdatkaan",
+          "weight": 25.0
+        },
+        {
+          "value": "t-pahakkaan",
+          "weight": 40.0
+        },
+        {
+          "value": "t-pahdankaan",
+          "weight": 40.0
+        },
+        {
+          "value": "t-pahdatkaan",
+          "weight": 40.0
+        },
+        {
+          "value": "ti-ahdaskaan",
+          "weight": 40.0
+        },
+        {
+          "value": "ti-pahakkaan",
+          "weight": 40.0
+        },
+        {
+          "value": "ti-pahdankaan",
+          "weight": 40.0
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 15242510
+      },
+      "false_accept": false
+    },
+    {
+      "input": "toimimen",
+      "expected": "toimiminen",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "toimien",
+          "weight": 22.695885
+        },
+        {
+          "value": "toimiman",
+          "weight": 25.0
+        },
+        {
+          "value": "toimimien",
+          "weight": 25.0
+        },
+        {
+          "value": "toimimin",
+          "weight": 25.0
+        },
+        {
+          "value": "toiminen",
+          "weight": 25.0
+        },
+        {
+          "value": "toimisen",
+          "weight": 25.0
+        },
+        {
+          "value": "toimimäen",
+          "weight": 27.0
+        },
+        {
+          "value": "toimimeno",
+          "weight": 32.0
+        },
+        {
+          "value": "toimimenu",
+          "weight": 32.0
+        },
+        {
+          "value": "toimiin",
+          "weight": 36.956177
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 9262390
+      },
+      "false_accept": false
+    },
+    {
+      "input": "toiminalla",
+      "expected": "toiminnalla",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "toimimalla",
+          "weight": 23.186075
+        },
+        {
+          "value": "toiminnalla",
+          "weight": 23.24268
+        },
+        {
+          "value": "toimijalla",
+          "weight": 24.019617
+        },
+        {
+          "value": "toimivalla",
+          "weight": 25.0
+        },
+        {
+          "value": "toimihalla",
+          "weight": 27.0
+        },
+        {
+          "value": "toimikalla",
+          "weight": 27.0
+        },
+        {
+          "value": "toiminabla",
+          "weight": 27.0
+        },
+        {
+          "value": "toiminallea",
+          "weight": 27.0
+        },
+        {
+          "value": "toiminalle",
+          "weight": 32.0
+        },
+        {
+          "value": "toiminalli",
+          "weight": 32.0
+        }
+      ],
+      "position": 1,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 11992169
+      },
+      "false_accept": false
+    },
+    {
+      "input": "totetutetun",
+      "expected": "toteutetun",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "toteutetun",
+          "weight": 23.732872
+        },
+        {
+          "value": "t-totutetun",
+          "weight": 40.0
+        },
+        {
+          "value": "toteutetuin",
+          "weight": 40.0
+        },
+        {
+          "value": "totutetun",
+          "weight": 40.0
+        },
+        {
+          "value": "t-tetutelun",
+          "weight": 42.0
+        },
+        {
+          "value": "toteutetut",
+          "weight": 43.732872
+        },
+        {
+          "value": "tetetuhetun",
+          "weight": 44.0
+        },
+        {
+          "value": "tetetuketun",
+          "weight": 44.0
+        },
+        {
+          "value": "tetetuletun",
+          "weight": 44.0
+        },
+        {
+          "value": "otatutetun",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 20404039
+      },
+      "false_accept": false
+    },
+    {
+      "input": "totusti",
+      "expected": "totutusti",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "totutti",
+          "weight": 25.0
+        },
+        {
+          "value": "tutusti",
+          "weight": 25.0
+        },
+        {
+          "value": "totesi",
+          "weight": 36.505287
+        },
+        {
+          "value": "tutustui",
+          "weight": 37.814026
+        },
+        {
+          "value": "toteutti",
+          "weight": 38.133667
+        },
+        {
+          "value": "toisti",
+          "weight": 38.732872
+        },
+        {
+          "value": "totuttu",
+          "weight": 43.86181
+        },
+        {
+          "value": "tutusta",
+          "weight": 44.223064
+        },
+        {
+          "value": "tutustu",
+          "weight": 44.50981
+        },
+        {
+          "value": "-otusta",
+          "weight": 50.0
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 16426009
+      },
+      "false_accept": false
+    },
+    {
+      "input": "trooppissa",
+      "expected": "trooppisissa",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "troopeissa",
+          "weight": 25.0
+        },
+        {
+          "value": "troopissa",
+          "weight": 25.0
+        },
+        {
+          "value": "trooppisia",
+          "weight": 25.0
+        },
+        {
+          "value": "trooppisna",
+          "weight": 25.0
+        },
+        {
+          "value": "trooppista",
+          "weight": 25.0
+        },
+        {
+          "value": "trooppiassa",
+          "weight": 27.0
+        },
+        {
+          "value": "trooppiussa",
+          "weight": 27.0
+        },
+        {
+          "value": "trooppinsa",
+          "weight": 28.0
+        },
+        {
+          "value": "-troopeissa",
+          "weight": 45.0
+        },
+        {
+          "value": "-troopissa",
+          "weight": 45.0
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 11945237
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tuhoisvat",
+      "expected": "tuhosivat",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "tuhoisat",
+          "weight": 24.019617
+        },
+        {
+          "value": "tuhoiivat",
+          "weight": 27.0
+        },
+        {
+          "value": "tuhoinvat",
+          "weight": 27.0
+        },
+        {
+          "value": "tuhousvat",
+          "weight": 27.0
+        },
+        {
+          "value": "tuhovisvat",
+          "weight": 27.0
+        },
+        {
+          "value": "tuhoavat",
+          "weight": 39.223064
+        },
+        {
+          "value": "tuhoisa",
+          "weight": 44.019615
+        },
+        {
+          "value": "tuhoisaa",
+          "weight": 44.019615
+        },
+        {
+          "value": "tuhoisia",
+          "weight": 44.50981
+        },
+        {
+          "value": "tuhoista",
+          "weight": 49.223064
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 24876999
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tuhoitui",
+      "expected": "tuhoutui",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "tuhoutui",
+          "weight": 24.019617
+        },
+        {
+          "value": "tehostui",
+          "weight": 39.50981
+        },
+        {
+          "value": "tuhottu",
+          "weight": 43.62386
+        },
+        {
+          "value": "tuhoutuu",
+          "weight": 44.223064
+        },
+        {
+          "value": "hoitui",
+          "weight": 44.509808
+        },
+        {
+          "value": "tuhotun",
+          "weight": 44.50981
+        },
+        {
+          "value": "tuhoutua",
+          "weight": 44.50981
+        },
+        {
+          "value": "auhoihui",
+          "weight": 45.0
+        },
+        {
+          "value": "huhoihui",
+          "weight": 45.0
+        },
+        {
+          "value": "puhoihui",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 16175647
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tulloinen",
+      "expected": "tuolloinen",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "tullointen",
+          "weight": 25.0
+        },
+        {
+          "value": "tuloinen",
+          "weight": 25.0
+        },
+        {
+          "value": "tuolloinen",
+          "weight": 25.0
+        },
+        {
+          "value": "tuleloinen",
+          "weight": 27.0
+        },
+        {
+          "value": "tuliloinen",
+          "weight": 27.0
+        },
+        {
+          "value": "tuloloinen",
+          "weight": 27.0
+        },
+        {
+          "value": "tululoinen",
+          "weight": 27.0
+        },
+        {
+          "value": "tulloinean",
+          "weight": 28.0
+        },
+        {
+          "value": "kulloinen",
+          "weight": 30.0
+        },
+        {
+          "value": "tulloine",
+          "weight": 30.0
+        }
+      ],
+      "position": 2,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 20864259
+      },
+      "false_accept": false
+    },
+    {
+      "input": "-tunnuksten",
+      "expected": "-tunnusten",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "-tunnukseen",
+          "weight": 25.0
+        },
+        {
+          "value": "-tunnuksen",
+          "weight": 25.0
+        },
+        {
+          "value": "-tunnuksien",
+          "weight": 25.0
+        },
+        {
+          "value": "-tunnusten",
+          "weight": 25.0
+        },
+        {
+          "value": "--tunnukseen",
+          "weight": 40.0
+        },
+        {
+          "value": "--tunnuksen",
+          "weight": 40.0
+        },
+        {
+          "value": "--tunnuksien",
+          "weight": 40.0
+        },
+        {
+          "value": "--tunnusten",
+          "weight": 40.0
+        },
+        {
+          "value": "-punnukseen",
+          "weight": 40.0
+        },
+        {
+          "value": "Tunnusten",
+          "weight": 44.01962
+        }
+      ],
+      "position": 3,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 58475154
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tunteekkaampi",
+      "expected": "tunteikkaampi",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "tunteikkaampi",
+          "weight": 25.0
+        },
+        {
+          "value": "tunteenkaappi",
+          "weight": 42.0
+        },
+        {
+          "value": "tunteenkampi",
+          "weight": 42.0
+        },
+        {
+          "value": "tunteikkaampia",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 19032049
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tuominsa",
+      "expected": "tuomionsa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "tuomina",
+          "weight": 25.0
+        },
+        {
+          "value": "tuominpa",
+          "weight": 25.0
+        },
+        {
+          "value": "tuominta",
+          "weight": 25.0
+        },
+        {
+          "value": "tuomissa",
+          "weight": 25.0
+        },
+        {
+          "value": "tuomiansa",
+          "weight": 27.0
+        },
+        {
+          "value": "tuomansa",
+          "weight": 27.509811
+        },
+        {
+          "value": "tuomionsa",
+          "weight": 27.509811
+        },
+        {
+          "value": "tuolinsa",
+          "weight": 28.0
+        },
+        {
+          "value": "puominsa",
+          "weight": 33.0
+        },
+        {
+          "value": "suominsa",
+          "weight": 33.0
+        }
+      ],
+      "position": 6,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 10249408
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tutukmuksissaansa",
+      "expected": "tutkimuksissansa",
+      "distance": 3,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 18461924
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tyhjijä",
+      "expected": "tyhjiä",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "tyhjiä",
+          "weight": 23.62386
+        },
+        {
+          "value": "tyhjinä",
+          "weight": 25.0
+        },
+        {
+          "value": "tyhjiöä",
+          "weight": 25.0
+        },
+        {
+          "value": "tyhjöjä",
+          "weight": 25.0
+        },
+        {
+          "value": "tyhjä",
+          "weight": 38.44613
+        },
+        {
+          "value": "tyhjänä",
+          "weight": 39.509808
+        },
+        {
+          "value": "tyhjää",
+          "weight": 43.44613
+        },
+        {
+          "value": "tyhjien",
+          "weight": 44.019615
+        },
+        {
+          "value": "tyhjiö",
+          "weight": 44.50981
+        },
+        {
+          "value": "-tyhjiöä",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 9132306
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tyypillsesti",
+      "expected": "tyypilisesti",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "tyypillisesti",
+          "weight": 23.861813
+        },
+        {
+          "value": "tyylillisesti",
+          "weight": 40.0
+        },
+        {
+          "value": "tyypinlesti",
+          "weight": 42.0
+        },
+        {
+          "value": "tyypillesi",
+          "weight": 43.0
+        },
+        {
+          "value": "tyypillisesi",
+          "weight": 43.0
+        },
+        {
+          "value": "tyypillisestä",
+          "weight": 45.0
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 13429301
+      },
+      "false_accept": false
+    },
+    {
+      "input": "työskentevistä",
+      "expected": "työskentelevistä",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "työskentelevistä",
+          "weight": 39.223064
+        },
+        {
+          "value": "työskentelystä",
+          "weight": 39.223064
+        },
+        {
+          "value": "työskentelyistä",
+          "weight": 40.0
+        },
+        {
+          "value": "työsenteistä",
+          "weight": 42.0
+        },
+        {
+          "value": "työskeeteistä",
+          "weight": 42.0
+        },
+        {
+          "value": "työskeiteistä",
+          "weight": 42.0
+        },
+        {
+          "value": "työstenteistä",
+          "weight": 42.0
+        },
+        {
+          "value": "työsakenhevistä",
+          "weight": 44.0
+        },
+        {
+          "value": "työsakenlevistä",
+          "weight": 44.0
+        },
+        {
+          "value": "työsakentelistä",
+          "weight": 44.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 17059707
+      },
+      "false_accept": false
+    },
+    {
+      "input": "työsssään",
+      "expected": "työssään",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "työssään",
+          "weight": 25.219425
+        },
+        {
+          "value": "työässään",
+          "weight": 27.0
+        },
+        {
+          "value": "ty-ässään",
+          "weight": 40.0
+        },
+        {
+          "value": "ty:issään",
+          "weight": 40.0
+        },
+        {
+          "value": "ty:ssään",
+          "weight": 40.0
+        },
+        {
+          "value": "tyssään",
+          "weight": 40.0
+        },
+        {
+          "value": "työssähän",
+          "weight": 40.0
+        },
+        {
+          "value": "työssäkään",
+          "weight": 40.0
+        },
+        {
+          "value": "työstään",
+          "weight": 40.9177
+        },
+        {
+          "value": "-työässään",
+          "weight": 47.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 28645757
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tälläsiä",
+      "expected": "tällaisia",
+      "distance": 3,
+      "suggestions": [
+        {
+          "value": "tälläisiä",
+          "weight": 25.0
+        },
+        {
+          "value": "tälläsipä",
+          "weight": 25.0
+        },
+        {
+          "value": "täiläsiä",
+          "weight": 27.0
+        },
+        {
+          "value": "tälläsi",
+          "weight": 30.0
+        },
+        {
+          "value": "tälläsin",
+          "weight": 30.0
+        },
+        {
+          "value": "tälläsit",
+          "weight": 30.0
+        },
+        {
+          "value": "tälläkin",
+          "weight": 44.50981
+        },
+        {
+          "value": "-ällässä",
+          "weight": 45.0
+        },
+        {
+          "value": "-ällästä",
+          "weight": 45.0
+        },
+        {
+          "value": "lälläriä",
+          "weight": 45.0
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 25771474
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tällästen",
+      "expected": "tällaisten",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "tälläisten",
+          "weight": 25.0
+        },
+        {
+          "value": "tälläten",
+          "weight": 25.0
+        },
+        {
+          "value": "tällaisten",
+          "weight": 37.669193
+        },
+        {
+          "value": "tälläiseen",
+          "weight": 39.50981
+        },
+        {
+          "value": "mälläten",
+          "weight": 45.0
+        },
+        {
+          "value": "pälästen",
+          "weight": 45.0
+        },
+        {
+          "value": "rällästin",
+          "weight": 45.0
+        },
+        {
+          "value": "rällästäen",
+          "weight": 45.0
+        },
+        {
+          "value": "rällästän",
+          "weight": 45.0
+        },
+        {
+          "value": "rälläten",
+          "weight": 45.0
+        }
+      ],
+      "position": 2,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 23802384
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tämmönenkin",
+      "expected": "tämmöinenkin",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "tämmöinenkin",
+          "weight": 25.0
+        },
+        {
+          "value": "tamminenkin",
+          "weight": 40.0
+        },
+        {
+          "value": "tommonenkin",
+          "weight": 40.0
+        },
+        {
+          "value": "tummenenkin",
+          "weight": 40.0
+        },
+        {
+          "value": "tummunenkin",
+          "weight": 40.0
+        },
+        {
+          "value": "tympönenkin",
+          "weight": 40.0
+        },
+        {
+          "value": "tähtönenkin",
+          "weight": 40.0
+        },
+        {
+          "value": "tämmöisenkin",
+          "weight": 40.0
+        },
+        {
+          "value": "tätönenkin",
+          "weight": 40.0
+        },
+        {
+          "value": "kämmenenkin",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 7715260
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tämmönenki",
+      "expected": "tämmöinenkin",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "tämmöinenkin",
+          "weight": 45.0
+        },
+        {
+          "value": "tämmöinenkö",
+          "weight": 45.0
+        },
+        {
+          "value": "lämmönhenki",
+          "weight": 47.0
+        },
+        {
+          "value": "lämmönonki",
+          "weight": 47.0
+        },
+        {
+          "value": "lämmönrenki",
+          "weight": 47.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 9647624
+      },
+      "false_accept": false
+    },
+    {
+      "input": "uhreilijat",
+      "expected": "urheilijat",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "urheilijat",
+          "weight": 35.0
+        },
+        {
+          "value": "uhrialijat",
+          "weight": 42.0
+        },
+        {
+          "value": "uhrileijat",
+          "weight": 42.0
+        },
+        {
+          "value": "uhriliat",
+          "weight": 42.0
+        },
+        {
+          "value": "uhrilieat",
+          "weight": 42.0
+        },
+        {
+          "value": "uhrilihat",
+          "weight": 42.0
+        },
+        {
+          "value": "uhriliiat",
+          "weight": 42.0
+        },
+        {
+          "value": "uhrilikat",
+          "weight": 42.0
+        },
+        {
+          "value": "uhrililat",
+          "weight": 42.0
+        },
+        {
+          "value": "koreilijat",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 16058949
+      },
+      "false_accept": false
+    },
+    {
+      "input": "uhrijuhalaa",
+      "expected": "uhrijuhlaa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "uhrijuhlaa",
+          "weight": 25.0
+        },
+        {
+          "value": "uhrijumalaa",
+          "weight": 27.0
+        },
+        {
+          "value": "uhrijuhla",
+          "weight": 40.0
+        },
+        {
+          "value": "uhrijuhlalta",
+          "weight": 40.0
+        },
+        {
+          "value": "uhrijuhlana",
+          "weight": 40.0
+        },
+        {
+          "value": "-uhrijuhlaa",
+          "weight": 45.0
+        },
+        {
+          "value": "uhrijuhla-",
+          "weight": 45.0
+        },
+        {
+          "value": "uhrijuhlaan",
+          "weight": 45.0
+        },
+        {
+          "value": "uhrijuhlalla",
+          "weight": 45.0
+        },
+        {
+          "value": "uhrijuhlan",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 11611362
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ulkomalaisille",
+      "expected": "ulkomaalaisille",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ulkomaalaisille",
+          "weight": 24.50981
+        },
+        {
+          "value": "u-komalaisille",
+          "weight": 27.0
+        },
+        {
+          "value": "ulko-alaisille",
+          "weight": 27.0
+        },
+        {
+          "value": "ulkoalaisille",
+          "weight": 27.0
+        },
+        {
+          "value": "ulkomalaijille",
+          "weight": 27.0
+        },
+        {
+          "value": "ulkomaolaisille",
+          "weight": 27.0
+        },
+        {
+          "value": "ulkomalaismille",
+          "weight": 29.0
+        },
+        {
+          "value": "ulkomalalisille",
+          "weight": 29.0
+        },
+        {
+          "value": "ulkomalanisille",
+          "weight": 29.0
+        },
+        {
+          "value": "ulkomalapisille",
+          "weight": 29.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 22680110
+      },
+      "false_accept": false
+    },
+    {
+      "input": "uskonnolllista",
+      "expected": "uskonnollista",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "uskonnollista",
+          "weight": 23.732874
+        },
+        {
+          "value": "uskonnollalista",
+          "weight": 29.0
+        },
+        {
+          "value": "uskonrolllista",
+          "weight": 29.0
+        },
+        {
+          "value": "uskonnollisia",
+          "weight": 38.732876
+        },
+        {
+          "value": "uskonnollisista",
+          "weight": 39.50981
+        },
+        {
+          "value": "uskonnollisna",
+          "weight": 40.0
+        },
+        {
+          "value": "uiskonnollista",
+          "weight": 42.0
+        },
+        {
+          "value": "ukonnollista",
+          "weight": 42.0
+        },
+        {
+          "value": "-uskonnollista",
+          "weight": 47.0
+        },
+        {
+          "value": "ruskonnollista",
+          "weight": 47.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 25529399
+      },
+      "false_accept": false
+    },
+    {
+      "input": "uudestan",
+      "expected": "uudestaan",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "uudestaan",
+          "weight": 22.846922
+        },
+        {
+          "value": "uudistan",
+          "weight": 25.0
+        },
+        {
+          "value": "uudesta",
+          "weight": 27.465746
+        },
+        {
+          "value": "uudestani",
+          "weight": 33.0
+        },
+        {
+          "value": "uudessa",
+          "weight": 41.531006
+        },
+        {
+          "value": "uudistaa",
+          "weight": 42.465748
+        },
+        {
+          "value": "uudista",
+          "weight": 43.861813
+        },
+        {
+          "value": "uudistat",
+          "weight": 43.861813
+        },
+        {
+          "value": "uudelta",
+          "weight": 44.223064
+        },
+        {
+          "value": "kuudesta",
+          "weight": 49.223064
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 10159269
+      },
+      "false_accept": false
+    },
+    {
+      "input": "uutuksia",
+      "expected": "uutuuksia",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "uutuuksia",
+          "weight": 24.509808
+        },
+        {
+          "value": "ujutuksia",
+          "weight": 25.0
+        },
+        {
+          "value": "usutuksia",
+          "weight": 25.0
+        },
+        {
+          "value": "uutoksia",
+          "weight": 25.0
+        },
+        {
+          "value": "uutuksipa",
+          "weight": 25.0
+        },
+        {
+          "value": "uuteuksia",
+          "weight": 27.0
+        },
+        {
+          "value": "uutuksi",
+          "weight": 30.0
+        },
+        {
+          "value": "uutuksi-",
+          "weight": 30.0
+        },
+        {
+          "value": "futuksia",
+          "weight": 32.0
+        },
+        {
+          "value": "muutoksia",
+          "weight": 41.064785
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 10609308
+      },
+      "false_accept": false
+    },
+    {
+      "input": "vaaarojen",
+      "expected": "vaarojen",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "vaarojen",
+          "weight": 23.529425
+        },
+        {
+          "value": "vasarojen",
+          "weight": 25.0
+        },
+        {
+          "value": "vanarojen",
+          "weight": 27.0
+        },
+        {
+          "value": "varojen",
+          "weight": 37.9177
+        },
+        {
+          "value": "-aatrojen",
+          "weight": 45.0
+        },
+        {
+          "value": "-haarojen",
+          "weight": 45.0
+        },
+        {
+          "value": "-kaarojen",
+          "weight": 45.0
+        },
+        {
+          "value": "-naarojen",
+          "weight": 45.0
+        },
+        {
+          "value": "-taarojen",
+          "weight": 45.0
+        },
+        {
+          "value": "-vaarojen",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 16068301
+      },
+      "false_accept": false
+    },
+    {
+      "input": "vaihoihin",
+      "expected": "vainoihin",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "vanhoihin",
+          "weight": 23.242682
+        },
+        {
+          "value": "v-ihoihin",
+          "weight": 25.0
+        },
+        {
+          "value": "vahoihin",
+          "weight": 25.0
+        },
+        {
+          "value": "vaiheihin",
+          "weight": 25.0
+        },
+        {
+          "value": "vaihtoihin",
+          "weight": 25.0
+        },
+        {
+          "value": "vaimoihin",
+          "weight": 25.0
+        },
+        {
+          "value": "vainoihin",
+          "weight": 25.0
+        },
+        {
+          "value": "vaivoihin",
+          "weight": 25.0
+        },
+        {
+          "value": "kaihoihin",
+          "weight": 30.0
+        },
+        {
+          "value": "laihoihin",
+          "weight": 30.0
+        }
+      ],
+      "position": 6,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 10794761
+      },
+      "false_accept": false
+    },
+    {
+      "input": "vakavati",
+      "expected": "vakavasti",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 31066
+      },
+      "false_accept": true
+    },
+    {
+      "input": "valitisti",
+      "expected": "valitsi",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "valitsi",
+          "weight": 37.782585
+        },
+        {
+          "value": "valmisti",
+          "weight": 38.44613
+        },
+        {
+          "value": "valitti",
+          "weight": 38.861813
+        },
+        {
+          "value": "valitusta",
+          "weight": 44.019615
+        },
+        {
+          "value": "valituista",
+          "weight": 44.509808
+        },
+        {
+          "value": "-altisti",
+          "weight": 45.0
+        },
+        {
+          "value": "-elitisti",
+          "weight": 45.0
+        },
+        {
+          "value": "altisti",
+          "weight": 45.0
+        },
+        {
+          "value": "elitisti",
+          "weight": 45.0
+        },
+        {
+          "value": "laitisti",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 23544583
+      },
+      "false_accept": false
+    },
+    {
+      "input": "vallattuan",
+      "expected": "vallattua",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "vallattuhan",
+          "weight": 25.0
+        },
+        {
+          "value": "vallattuun",
+          "weight": 25.0
+        },
+        {
+          "value": "vallattaan",
+          "weight": 28.0
+        },
+        {
+          "value": "vallattuaan",
+          "weight": 28.0
+        },
+        {
+          "value": "vallattua",
+          "weight": 30.0
+        },
+        {
+          "value": "vallattuani",
+          "weight": 33.0
+        },
+        {
+          "value": "vallattu",
+          "weight": 44.50981
+        },
+        {
+          "value": "mallattuhan",
+          "weight": 45.0
+        },
+        {
+          "value": "mallattuun",
+          "weight": 45.0
+        },
+        {
+          "value": "mallattua",
+          "weight": 50.0
+        }
+      ],
+      "position": 4,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 37435938
+      },
+      "false_accept": false
+    },
+    {
+      "input": "valtionhoitaajaksi",
+      "expected": "valtionhoitajaksi",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "valtionhoitajaksi",
+          "weight": 25.0
+        },
+        {
+          "value": "valtionhoivaajaksi",
+          "weight": 27.0
+        },
+        {
+          "value": "valtionhoitoajaksi",
+          "weight": 29.0
+        },
+        {
+          "value": "valtionhoitajiksi",
+          "weight": 40.0
+        },
+        {
+          "value": "-valtionhoitajaksi",
+          "weight": 45.0
+        },
+        {
+          "value": "valtionhoitajaksi-",
+          "weight": 45.0
+        },
+        {
+          "value": "-valtionhoivaajaksi",
+          "weight": 47.0
+        },
+        {
+          "value": "0valtionhoitajaksi",
+          "weight": 47.0
+        },
+        {
+          "value": "1valtionhoitajaksi",
+          "weight": 47.0
+        },
+        {
+          "value": "2valtionhoitajaksi",
+          "weight": 47.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 57934695
+      },
+      "false_accept": false
+    },
+    {
+      "input": "varastonti",
+      "expected": "varastointi",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "varastointi",
+          "weight": 24.509808
+        },
+        {
+          "value": "varastoanti",
+          "weight": 27.0
+        },
+        {
+          "value": "varastoniti",
+          "weight": 27.0
+        },
+        {
+          "value": "varastonni",
+          "weight": 27.0
+        },
+        {
+          "value": "varastontti",
+          "weight": 27.0
+        },
+        {
+          "value": "varastoti",
+          "weight": 27.0
+        },
+        {
+          "value": "varastunti",
+          "weight": 27.0
+        },
+        {
+          "value": "varastuonti",
+          "weight": 27.0
+        },
+        {
+          "value": "varastontin",
+          "weight": 32.0
+        },
+        {
+          "value": "varastontit",
+          "weight": 32.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 20085214
+      },
+      "false_accept": false
+    },
+    {
+      "input": "varastunut",
+      "expected": "varastanut",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "varautunut",
+          "weight": 24.019615
+        },
+        {
+          "value": "varastanut",
+          "weight": 25.0
+        },
+        {
+          "value": "vaurastunut",
+          "weight": 25.0
+        },
+        {
+          "value": "varastenut",
+          "weight": 27.0
+        },
+        {
+          "value": "varastukut",
+          "weight": 27.0
+        },
+        {
+          "value": "varastulut",
+          "weight": 27.0
+        },
+        {
+          "value": "varastungut",
+          "weight": 27.0
+        },
+        {
+          "value": "varastunnut",
+          "weight": 27.0
+        },
+        {
+          "value": "varasturut",
+          "weight": 27.0
+        },
+        {
+          "value": "varastutut",
+          "weight": 27.0
+        }
+      ],
+      "position": 1,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 17330306
+      },
+      "false_accept": false
+    },
+    {
+      "input": "varmasit",
+      "expected": "varmasti",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "varasit",
+          "weight": 25.0
+        },
+        {
+          "value": "vaimasit",
+          "weight": 27.0
+        },
+        {
+          "value": "vanmasit",
+          "weight": 27.0
+        },
+        {
+          "value": "varamasit",
+          "weight": 27.0
+        },
+        {
+          "value": "varimasit",
+          "weight": 27.0
+        },
+        {
+          "value": "vavmasit",
+          "weight": 27.0
+        },
+        {
+          "value": "barmasit",
+          "weight": 32.0
+        },
+        {
+          "value": "parmasit",
+          "weight": 32.0
+        },
+        {
+          "value": "varmasi",
+          "weight": 33.0
+        },
+        {
+          "value": "varmasti",
+          "weight": 41.975555
+        }
+      ],
+      "position": 9,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 12877017
+      },
+      "false_accept": false
+    },
+    {
+      "input": "vartia",
+      "expected": "vartija",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "vaatia",
+          "weight": 22.179003
+        },
+        {
+          "value": "vartta",
+          "weight": 23.186075
+        },
+        {
+          "value": "varta",
+          "weight": 24.509808
+        },
+        {
+          "value": "varsia",
+          "weight": 24.50981
+        },
+        {
+          "value": "vahtia",
+          "weight": 25.0
+        },
+        {
+          "value": "varia",
+          "weight": 25.0
+        },
+        {
+          "value": "vartija",
+          "weight": 25.0
+        },
+        {
+          "value": "hartia",
+          "weight": 30.0
+        },
+        {
+          "value": "partia",
+          "weight": 30.0
+        },
+        {
+          "value": "vartin",
+          "weight": 30.0
+        }
+      ],
+      "position": 6,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 19245304
+      },
+      "false_accept": false
+    },
+    {
+      "input": "vasemalla",
+      "expected": "vasemmalla",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "vasemmalla",
+          "weight": 23.529425
+        },
+        {
+          "value": "v-asemalla",
+          "weight": 25.0
+        },
+        {
+          "value": "vasamalla",
+          "weight": 25.0
+        },
+        {
+          "value": "vasomalla",
+          "weight": 25.0
+        },
+        {
+          "value": "asemalla",
+          "weight": 29.50981
+        },
+        {
+          "value": "-asemalla",
+          "weight": 30.0
+        },
+        {
+          "value": "0asemalla",
+          "weight": 32.0
+        },
+        {
+          "value": "1asemalla",
+          "weight": 32.0
+        },
+        {
+          "value": "2asemalla",
+          "weight": 32.0
+        },
+        {
+          "value": "3asemalla",
+          "weight": 32.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 11120287
+      },
+      "false_accept": false
+    },
+    {
+      "input": "vasemmlla",
+      "expected": "vasemmalla",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "vasemmalla",
+          "weight": 23.529425
+        },
+        {
+          "value": "vasemmilla",
+          "weight": 25.0
+        },
+        {
+          "value": "vasemmalta",
+          "weight": 38.084873
+        },
+        {
+          "value": "vasemmalle",
+          "weight": 44.223064
+        },
+        {
+          "value": "asemalla",
+          "weight": 44.50981
+        },
+        {
+          "value": "-asemalla",
+          "weight": 45.0
+        },
+        {
+          "value": "-asemilla",
+          "weight": 45.0
+        },
+        {
+          "value": "-asemolla",
+          "weight": 45.0
+        },
+        {
+          "value": "-vasemmalla",
+          "weight": 45.0
+        },
+        {
+          "value": "-vasemmilla",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 33629711
+      },
+      "false_accept": false
+    },
+    {
+      "input": "vasttaan",
+      "expected": "vastaan",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "vastaan",
+          "weight": 21.188864
+        },
+        {
+          "value": "vastataan",
+          "weight": 23.446129
+        },
+        {
+          "value": "vasotaan",
+          "weight": 25.0
+        },
+        {
+          "value": "vastotaan",
+          "weight": 25.0
+        },
+        {
+          "value": "vasataan",
+          "weight": 27.0
+        },
+        {
+          "value": "vastetaan",
+          "weight": 27.0
+        },
+        {
+          "value": "vasutaan",
+          "weight": 27.0
+        },
+        {
+          "value": "vaittaan",
+          "weight": 28.0
+        },
+        {
+          "value": "vaottaan",
+          "weight": 28.0
+        },
+        {
+          "value": "varttaan",
+          "weight": 28.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 24348140
+      },
+      "false_accept": false
+    },
+    {
+      "input": "vastullaan",
+      "expected": "vastuullaan",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "vastuullaan",
+          "weight": 27.223064
+        },
+        {
+          "value": "vaatullaan",
+          "weight": 28.0
+        },
+        {
+          "value": "vantullaan",
+          "weight": 28.0
+        },
+        {
+          "value": "vasotullaan",
+          "weight": 28.0
+        },
+        {
+          "value": "vastallaan",
+          "weight": 28.0
+        },
+        {
+          "value": "vastuillaan",
+          "weight": 28.0
+        },
+        {
+          "value": "vasullaan",
+          "weight": 28.0
+        },
+        {
+          "value": "vatullaan",
+          "weight": 28.0
+        },
+        {
+          "value": "lastullaan",
+          "weight": 33.0
+        },
+        {
+          "value": "astellaan",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 17176486
+      },
+      "false_accept": false
+    },
+    {
+      "input": "vedetiin",
+      "expected": "vedettiin",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "vedettiin",
+          "weight": 23.623857
+        },
+        {
+          "value": "vedeltiin",
+          "weight": 25.0
+        },
+        {
+          "value": "vedetkin",
+          "weight": 25.0
+        },
+        {
+          "value": "vedetyin",
+          "weight": 25.0
+        },
+        {
+          "value": "vietiin",
+          "weight": 38.37162
+        },
+        {
+          "value": "vedetään",
+          "weight": 38.732872
+        },
+        {
+          "value": "vedottiin",
+          "weight": 39.509808
+        },
+        {
+          "value": "-vedetkin",
+          "weight": 45.0
+        },
+        {
+          "value": "debetiin",
+          "weight": 45.0
+        },
+        {
+          "value": "edetmiin",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 11579516
+      },
+      "false_accept": false
+    },
+    {
+      "input": "veneeellään",
+      "expected": "veneellään",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "veneellään",
+          "weight": 28.0
+        },
+        {
+          "value": "venheellään",
+          "weight": 28.0
+        },
+        {
+          "value": "venereellään",
+          "weight": 30.0
+        },
+        {
+          "value": "veneellähän",
+          "weight": 40.0
+        },
+        {
+          "value": "veneillään",
+          "weight": 40.0
+        },
+        {
+          "value": "venheellähän",
+          "weight": 40.0
+        },
+        {
+          "value": "venytellään",
+          "weight": 40.0
+        },
+        {
+          "value": "vene-ällään",
+          "weight": 42.0
+        },
+        {
+          "value": "veneenällään",
+          "weight": 42.0
+        },
+        {
+          "value": "menetellään",
+          "weight": 44.223064
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 16417079
+      },
+      "false_accept": false
+    },
+    {
+      "input": "verkkojänite",
+      "expected": "verkkojännite",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "verkkojännite",
+          "weight": 25.0
+        },
+        {
+          "value": "verkkoäänite",
+          "weight": 27.0
+        },
+        {
+          "value": "-verkkojännite",
+          "weight": 45.0
+        },
+        {
+          "value": "verkkojännite-",
+          "weight": 45.0
+        },
+        {
+          "value": "-verkkoäänite",
+          "weight": 47.0
+        },
+        {
+          "value": "0verkkojännite",
+          "weight": 47.0
+        },
+        {
+          "value": "1verkkojännite",
+          "weight": 47.0
+        },
+        {
+          "value": "2verkkojännite",
+          "weight": 47.0
+        },
+        {
+          "value": "3verkkojännite",
+          "weight": 47.0
+        },
+        {
+          "value": "4verkkojännite",
+          "weight": 47.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 27490206
+      },
+      "false_accept": false
+    },
+    {
+      "input": "vhteiskoulua",
+      "expected": "yhteiskoulua",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "yhteiskoulua",
+          "weight": 29.50981
+        },
+        {
+          "value": "v-yhteiskoulua",
+          "weight": 40.0
+        },
+        {
+          "value": "-yhteiskoulua",
+          "weight": 45.0
+        },
+        {
+          "value": "yhteiskouluja",
+          "weight": 45.0
+        },
+        {
+          "value": "yhteiskouluna",
+          "weight": 45.0
+        },
+        {
+          "value": "yhteiskoulupa",
+          "weight": 45.0
+        },
+        {
+          "value": "yhteiskoulu",
+          "weight": 50.0
+        },
+        {
+          "value": "yhteiskoulu-",
+          "weight": 50.0
+        },
+        {
+          "value": "yhteiskoulun",
+          "weight": 50.0
+        },
+        {
+          "value": "yhteiskoulut",
+          "weight": 50.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 10044848
+      },
+      "false_accept": false
+    },
+    {
+      "input": "viimesellä",
+      "expected": "viimeisellä",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "viimeisellä",
+          "weight": 23.732874
+        },
+        {
+          "value": "viimeisillä",
+          "weight": 39.019615
+        },
+        {
+          "value": "viiveellä",
+          "weight": 39.019615
+        },
+        {
+          "value": "viimeiseltä",
+          "weight": 39.50981
+        },
+        {
+          "value": "viemisellä",
+          "weight": 40.0
+        },
+        {
+          "value": "viiksellä",
+          "weight": 40.0
+        },
+        {
+          "value": "viileskellä",
+          "weight": 40.0
+        },
+        {
+          "value": "viimeiselle",
+          "weight": 44.223064
+        },
+        {
+          "value": "miimisellä",
+          "weight": 45.0
+        },
+        {
+          "value": "siimeksellä",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 13235769
+      },
+      "false_accept": false
+    },
+    {
+      "input": "viittavissa",
+      "expected": "viittaavissa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "viittaavissa",
+          "weight": 24.50981
+        },
+        {
+          "value": "viittuvissa",
+          "weight": 25.0
+        },
+        {
+          "value": "vioittavissa",
+          "weight": 25.0
+        },
+        {
+          "value": "viottavissa",
+          "weight": 25.0
+        },
+        {
+          "value": "voittavissa",
+          "weight": 25.0
+        },
+        {
+          "value": "viitatavissa",
+          "weight": 27.0
+        },
+        {
+          "value": "viitetavissa",
+          "weight": 27.0
+        },
+        {
+          "value": "viittahissa",
+          "weight": 27.0
+        },
+        {
+          "value": "viittakissa",
+          "weight": 27.0
+        },
+        {
+          "value": "viittapissa",
+          "weight": 27.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 10957771
+      },
+      "false_accept": false
+    },
+    {
+      "input": "viljeijöiden",
+      "expected": "viljelijöiden",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "viljelijöiden",
+          "weight": 24.019615
+        },
+        {
+          "value": "-viljelijöiden",
+          "weight": 45.0
+        },
+        {
+          "value": "viljelijöiden-",
+          "weight": 45.0
+        },
+        {
+          "value": "0viljelijöiden",
+          "weight": 47.0
+        },
+        {
+          "value": "1viljelijöiden",
+          "weight": 47.0
+        },
+        {
+          "value": "2viljelijöiden",
+          "weight": 47.0
+        },
+        {
+          "value": "3viljelijöiden",
+          "weight": 47.0
+        },
+        {
+          "value": "4viljelijöiden",
+          "weight": 47.0
+        },
+        {
+          "value": "5viljelijöiden",
+          "weight": 47.0
+        },
+        {
+          "value": "6viljelijöiden",
+          "weight": 47.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 14244850
+      },
+      "false_accept": false
+    },
+    {
+      "input": "villintyneinä",
+      "expected": "villiintyneinä",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "villiintyneinä",
+          "weight": 25.0
+        },
+        {
+          "value": "villiytyneinä",
+          "weight": 25.0
+        },
+        {
+          "value": "villintynkinä",
+          "weight": 27.0
+        },
+        {
+          "value": "villintyrneinä",
+          "weight": 27.0
+        },
+        {
+          "value": "viilentyneinä",
+          "weight": 40.0
+        },
+        {
+          "value": "villiintyneenä",
+          "weight": 40.0
+        },
+        {
+          "value": "villiintyneinpä",
+          "weight": 40.0
+        },
+        {
+          "value": "villiintyneintä",
+          "weight": 40.0
+        },
+        {
+          "value": "villiintynein",
+          "weight": 45.0
+        },
+        {
+          "value": "villiintyneine",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 16612981
+      },
+      "false_accept": false
+    },
+    {
+      "input": "viottua",
+      "expected": "vioittua",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 22384
+      },
+      "false_accept": true
+    },
+    {
+      "input": "virheät",
+      "expected": "vihreät",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "virheet",
+          "weight": 24.019617
+        },
+        {
+          "value": "vireät",
+          "weight": 25.0
+        },
+        {
+          "value": "virhet",
+          "weight": 25.0
+        },
+        {
+          "value": "virkeät",
+          "weight": 25.0
+        },
+        {
+          "value": "virheä",
+          "weight": 30.0
+        },
+        {
+          "value": "vihreät",
+          "weight": 34.509808
+        },
+        {
+          "value": "virheitä",
+          "weight": 42.881424
+        },
+        {
+          "value": "virhe",
+          "weight": 43.623856
+        },
+        {
+          "value": "virheen",
+          "weight": 43.86181
+        },
+        {
+          "value": "virhettä",
+          "weight": 44.223064
+        }
+      ],
+      "position": 5,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 8464425
+      },
+      "false_accept": false
+    },
+    {
+      "input": "virraneet",
+      "expected": "virranneet",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "virranneet",
+          "weight": 24.509808
+        },
+        {
+          "value": "virrannet",
+          "weight": 25.0
+        },
+        {
+          "value": "virranreet",
+          "weight": 27.0
+        },
+        {
+          "value": "virraneeta",
+          "weight": 32.0
+        },
+        {
+          "value": "virrannut",
+          "weight": 39.509808
+        },
+        {
+          "value": "verranneet",
+          "weight": 40.0
+        },
+        {
+          "value": "verrannet",
+          "weight": 40.0
+        },
+        {
+          "value": "vierineet",
+          "weight": 40.0
+        },
+        {
+          "value": "vieroneet",
+          "weight": 40.0
+        },
+        {
+          "value": "viiranneet",
+          "weight": 40.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 16359656
+      },
+      "false_accept": false
+    },
+    {
+      "input": "vittauksia",
+      "expected": "viittauksia",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "viittauksia",
+          "weight": 23.732872
+        },
+        {
+          "value": "virtauksia",
+          "weight": 24.223064
+        },
+        {
+          "value": "vitsauksia",
+          "weight": 25.0
+        },
+        {
+          "value": "vihtauksia",
+          "weight": 27.0
+        },
+        {
+          "value": "viitauksia",
+          "weight": 27.0
+        },
+        {
+          "value": "viptauksia",
+          "weight": 27.0
+        },
+        {
+          "value": "mittauksia",
+          "weight": 28.86181
+        },
+        {
+          "value": "kittauksia",
+          "weight": 30.0
+        },
+        {
+          "value": "aittauksia",
+          "weight": 32.0
+        },
+        {
+          "value": "bittauksia",
+          "weight": 32.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 9682060
+      },
+      "false_accept": false
+    },
+    {
+      "input": "voimistelia",
+      "expected": "voimistelija",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "voimistelija",
+          "weight": 25.0
+        },
+        {
+          "value": "voimistelipa",
+          "weight": 25.0
+        },
+        {
+          "value": "voimistella",
+          "weight": 25.0
+        },
+        {
+          "value": "voimistelua",
+          "weight": 25.0
+        },
+        {
+          "value": "voimistalia",
+          "weight": 27.0
+        },
+        {
+          "value": "voimistela",
+          "weight": 27.0
+        },
+        {
+          "value": "voimistelaa",
+          "weight": 27.0
+        },
+        {
+          "value": "voimisteli",
+          "weight": 30.0
+        },
+        {
+          "value": "voimistelin",
+          "weight": 30.0
+        },
+        {
+          "value": "voimistelit",
+          "weight": 30.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 12303273
+      },
+      "false_accept": false
+    },
+    {
+      "input": "voittot",
+      "expected": "voitot",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "voitot",
+          "weight": 24.223064
+        },
+        {
+          "value": "voiotot",
+          "weight": 27.0
+        },
+        {
+          "value": "voiteot",
+          "weight": 27.0
+        },
+        {
+          "value": "voitotot",
+          "weight": 27.0
+        },
+        {
+          "value": "voitstot",
+          "weight": 27.0
+        },
+        {
+          "value": "voitto",
+          "weight": 28.86181
+        },
+        {
+          "value": "voittoa",
+          "weight": 28.86181
+        },
+        {
+          "value": "voitto-",
+          "weight": 30.0
+        },
+        {
+          "value": "voitti",
+          "weight": 42.571495
+        },
+        {
+          "value": "voitte",
+          "weight": 43.37162
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 11620575
+      },
+      "false_accept": false
+    },
+    {
+      "input": "vähentämisekis",
+      "expected": "vähentämiseksi",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "vähentäminekös",
+          "weight": 40.0
+        },
+        {
+          "value": "vähentämisenkös",
+          "weight": 40.0
+        },
+        {
+          "value": "vähentämisetkös",
+          "weight": 40.0
+        },
+        {
+          "value": "vähentämiseksi",
+          "weight": 43.37162
+        },
+        {
+          "value": "vähentäminekin",
+          "weight": 45.0
+        },
+        {
+          "value": "vähentämiseksi-",
+          "weight": 45.0
+        },
+        {
+          "value": "vähentämisenkin",
+          "weight": 45.0
+        },
+        {
+          "value": "vähentämisetkin",
+          "weight": 45.0
+        },
+        {
+          "value": "vähentämis-kisa",
+          "weight": 47.0
+        },
+        {
+          "value": "vähentämis-kisu",
+          "weight": 47.0
+        }
+      ],
+      "position": 3,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 20319478
+      },
+      "false_accept": false
+    },
+    {
+      "input": "vättämään",
+      "expected": "välttämään",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "välttämään",
+          "weight": 23.242682
+        },
+        {
+          "value": "väittämään",
+          "weight": 25.0
+        },
+        {
+          "value": "jättämään",
+          "weight": 28.529425
+        },
+        {
+          "value": "mättämään",
+          "weight": 30.0
+        },
+        {
+          "value": "viettämään",
+          "weight": 38.133667
+        },
+        {
+          "value": "vetämään",
+          "weight": 38.529423
+        },
+        {
+          "value": "käyttämään",
+          "weight": 41.86654
+        },
+        {
+          "value": "päättämään",
+          "weight": 43.304214
+        },
+        {
+          "value": "täyttämään",
+          "weight": 43.44613
+        },
+        {
+          "value": "näyttämään",
+          "weight": 43.529427
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 7380379
+      },
+      "false_accept": false
+    },
+    {
+      "input": "yhdesta",
+      "expected": "yhdestä",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "yhdesata",
+          "weight": 27.0
+        },
+        {
+          "value": "yhdesota",
+          "weight": 27.0
+        },
+        {
+          "value": "yhdeusta",
+          "weight": 27.0
+        },
+        {
+          "value": "yhdestä",
+          "weight": 28.304216
+        },
+        {
+          "value": "ohdesta",
+          "weight": 30.0
+        },
+        {
+          "value": "yhdesti",
+          "weight": 30.0
+        },
+        {
+          "value": "yhdessä",
+          "weight": 40.431572
+        },
+        {
+          "value": "kahdesta",
+          "weight": 42.42751
+        },
+        {
+          "value": "uudesta",
+          "weight": 42.465744
+        },
+        {
+          "value": "todesta",
+          "weight": 44.019615
+        }
+      ],
+      "position": 3,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 9266775
+      },
+      "false_accept": false
+    },
+    {
+      "input": "yhdistetstä",
+      "expected": "yhdisteistä",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "yhdisteistä",
+          "weight": 24.223066
+        },
+        {
+          "value": "yhdisteestä",
+          "weight": 25.0
+        },
+        {
+          "value": "yhdistettä",
+          "weight": 25.0
+        },
+        {
+          "value": "yhdistetystä",
+          "weight": 25.0
+        },
+        {
+          "value": "yhdistetsto",
+          "weight": 32.0
+        },
+        {
+          "value": "yhdisteitä",
+          "weight": 38.62386
+        },
+        {
+          "value": "yhdistystä",
+          "weight": 39.22307
+        },
+        {
+          "value": "yhdistettyä",
+          "weight": 39.50981
+        },
+        {
+          "value": "yhdistetty",
+          "weight": 43.529427
+        },
+        {
+          "value": "-yhdisteestä",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 10847277
+      },
+      "false_accept": false
+    },
+    {
+      "input": "yhteiskunnalista",
+      "expected": "yhteiskunnallista",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "yhteiskunnallista",
+          "weight": 22.955938
+        },
+        {
+          "value": "yhteiskunnahista",
+          "weight": 27.0
+        },
+        {
+          "value": "yhteiskunnaista",
+          "weight": 27.0
+        },
+        {
+          "value": "yhteiskunnanlista",
+          "weight": 27.0
+        },
+        {
+          "value": "yhteiskunnarista",
+          "weight": 27.0
+        },
+        {
+          "value": "yhteiskuntalista",
+          "weight": 27.0
+        },
+        {
+          "value": "yhteiskannalista",
+          "weight": 29.0
+        },
+        {
+          "value": "yhteiskonnalista",
+          "weight": 29.0
+        },
+        {
+          "value": "yhteiskunalista",
+          "weight": 29.0
+        },
+        {
+          "value": "yhteiskunanalista",
+          "weight": 29.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 11531205
+      },
+      "false_accept": false
+    },
+    {
+      "input": "yhteyeseen",
+      "expected": "yhtyeeseen",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "yhteeseen",
+          "weight": 25.0
+        },
+        {
+          "value": "yhtyeeseen",
+          "weight": 35.0
+        },
+        {
+          "value": "yhteyteen",
+          "weight": 36.90994
+        },
+        {
+          "value": "yhteiseen",
+          "weight": 37.465744
+        },
+        {
+          "value": "yhteyksien",
+          "weight": 38.304214
+        },
+        {
+          "value": "-yhteeseen",
+          "weight": 45.0
+        },
+        {
+          "value": "ahteeseen",
+          "weight": 45.0
+        },
+        {
+          "value": "lyhteeseen",
+          "weight": 45.0
+        },
+        {
+          "value": "yhteeseen-",
+          "weight": 45.0
+        },
+        {
+          "value": "0yhteeseen",
+          "weight": 47.0
+        }
+      ],
+      "position": 1,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 25367942
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ykdeksän",
+      "expected": "yhdeksän",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "yhdeksän",
+          "weight": 22.391233
+        },
+        {
+          "value": "ykieksän",
+          "weight": 27.0
+        },
+        {
+          "value": "yhdeksään",
+          "weight": 39.509808
+        },
+        {
+          "value": "yhdeksää",
+          "weight": 44.019615
+        },
+        {
+          "value": "yhdeksäs",
+          "weight": 44.509808
+        },
+        {
+          "value": "k-eksän",
+          "weight": 45.0
+        },
+        {
+          "value": "mk-eksän",
+          "weight": 45.0
+        },
+        {
+          "value": "ok-eksän",
+          "weight": 45.0
+        },
+        {
+          "value": "vk-eksän",
+          "weight": 45.0
+        },
+        {
+          "value": "kk-eksän",
+          "weight": 50.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 9230604
+      },
+      "false_accept": false
+    },
+    {
+      "input": "yksityisksi",
+      "expected": "yksityiseksi",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "yksityiseksi",
+          "weight": 25.0
+        },
+        {
+          "value": "yksityisiksi",
+          "weight": 25.0
+        },
+        {
+          "value": "yksityisesi",
+          "weight": 28.0
+        },
+        {
+          "value": "yksityisesti",
+          "weight": 38.623856
+        },
+        {
+          "value": "yksitoiseksi",
+          "weight": 40.0
+        },
+        {
+          "value": "yksitoisiksi",
+          "weight": 40.0
+        },
+        {
+          "value": "yksityiskoti",
+          "weight": 40.0
+        },
+        {
+          "value": "yksityisti",
+          "weight": 40.0
+        },
+        {
+          "value": "yksityistyi",
+          "weight": 40.0
+        },
+        {
+          "value": "yksityisasia",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 34659363
+      },
+      "false_accept": false
+    },
+    {
+      "input": "yksityskohtia",
+      "expected": "yksityiskohtia",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "yksityiskohtia",
+          "weight": 23.44613
+        },
+        {
+          "value": "yksityiskohta",
+          "weight": 39.50981
+        },
+        {
+          "value": "yksityiskohtaa",
+          "weight": 40.0
+        },
+        {
+          "value": "yksityiskohtina",
+          "weight": 40.0
+        },
+        {
+          "value": "yksityiskotia",
+          "weight": 40.0
+        },
+        {
+          "value": "-yksityiskohtia",
+          "weight": 45.0
+        },
+        {
+          "value": "-esityskohtia",
+          "weight": 47.0
+        },
+        {
+          "value": "-käsityskohtia",
+          "weight": 47.0
+        },
+        {
+          "value": "0yksityiskohtia",
+          "weight": 47.0
+        },
+        {
+          "value": "1yksityiskohtia",
+          "weight": 47.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 43688848
+      },
+      "false_accept": false
+    },
+    {
+      "input": "yllpitäjältä",
+      "expected": "ylläpitäjältä",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ylläpitäjältä",
+          "weight": 25.0
+        },
+        {
+          "value": "ylepitäjältä",
+          "weight": 27.0
+        },
+        {
+          "value": "ylipitäjältä",
+          "weight": 27.0
+        },
+        {
+          "value": "yläpitäjältä",
+          "weight": 27.0
+        },
+        {
+          "value": "ylläpitäjästä",
+          "weight": 39.509808
+        },
+        {
+          "value": "-ylläpitäjältä",
+          "weight": 45.0
+        },
+        {
+          "value": "cl-pitäjältä",
+          "weight": 45.0
+        },
+        {
+          "value": "dl-pitäjältä",
+          "weight": 45.0
+        },
+        {
+          "value": "fl-pitäjältä",
+          "weight": 45.0
+        },
+        {
+          "value": "hl-pitäjältä",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 8981436
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ympäröille",
+      "expected": "ympäröiville",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "ympärille",
+          "weight": 22.814024
+        },
+        {
+          "value": "ympyröille",
+          "weight": 25.0
+        },
+        {
+          "value": "ympäröiville",
+          "weight": 39.223064
+        },
+        {
+          "value": "ympäröivälle",
+          "weight": 39.223064
+        },
+        {
+          "value": "y-päreille",
+          "weight": 40.0
+        },
+        {
+          "value": "y-pärrille",
+          "weight": 40.0
+        },
+        {
+          "value": "y-säröille",
+          "weight": 40.0
+        },
+        {
+          "value": "ympärillä",
+          "weight": 42.50617
+        },
+        {
+          "value": "-ympyröille",
+          "weight": 45.0
+        },
+        {
+          "value": "-äpäröille",
+          "weight": 45.0
+        }
+      ],
+      "position": 2,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 7378042
+      },
+      "false_accept": false
+    },
+    {
+      "input": "yrittiaineita",
+      "expected": "yrttiaineita",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "yrttiaineita",
+          "weight": 27.0
+        },
+        {
+          "value": "brittiaineita",
+          "weight": 32.0
+        },
+        {
+          "value": "-bittiaineita",
+          "weight": 47.0
+        },
+        {
+          "value": "-brittiaineita",
+          "weight": 47.0
+        },
+        {
+          "value": "-hittiaineita",
+          "weight": 47.0
+        },
+        {
+          "value": "-kittiaineita",
+          "weight": 47.0
+        },
+        {
+          "value": "-raittiaineita",
+          "weight": 47.0
+        },
+        {
+          "value": "-rattiaineita",
+          "weight": 47.0
+        },
+        {
+          "value": "-reittiaineita",
+          "weight": 47.0
+        },
+        {
+          "value": "-riittiaineita",
+          "weight": 47.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 13568827
+      },
+      "false_accept": false
+    },
+    {
+      "input": "yrittään",
+      "expected": "yritetään",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "yritetään",
+          "weight": 22.917702
+        },
+        {
+          "value": "yrittäjän",
+          "weight": 23.732872
+        },
+        {
+          "value": "y:ittään",
+          "weight": 25.0
+        },
+        {
+          "value": "yrittäen",
+          "weight": 25.0
+        },
+        {
+          "value": "yrittämän",
+          "weight": 25.0
+        },
+        {
+          "value": "yrittävän",
+          "weight": 25.0
+        },
+        {
+          "value": "yrittää",
+          "weight": 27.594683
+        },
+        {
+          "value": "erittään",
+          "weight": 33.0
+        },
+        {
+          "value": "jyrittään",
+          "weight": 33.0
+        },
+        {
+          "value": "trittään",
+          "weight": 33.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 6052854
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ytheydessä",
+      "expected": "yhteydessä",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "yhteydessä",
+          "weight": 30.292381
+        },
+        {
+          "value": "y-eheydessä",
+          "weight": 40.0
+        },
+        {
+          "value": "y-heidessä",
+          "weight": 40.0
+        },
+        {
+          "value": "y-tiheydessä",
+          "weight": 40.0
+        },
+        {
+          "value": "-eheydessä",
+          "weight": 45.0
+        },
+        {
+          "value": "-tiheydessä",
+          "weight": 45.0
+        },
+        {
+          "value": "eheydessä",
+          "weight": 45.0
+        },
+        {
+          "value": "itseydessä",
+          "weight": 45.0
+        },
+        {
+          "value": "käheydessä",
+          "weight": 45.0
+        },
+        {
+          "value": "tiheydessä",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 8095219
+      },
+      "false_accept": false
+    },
+    {
+      "input": "äitiäään",
+      "expected": "äitiään",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "äitikään",
+          "weight": 25.0
+        },
+        {
+          "value": "äitiähän",
+          "weight": 25.0
+        },
+        {
+          "value": "äitiäkään",
+          "weight": 25.0
+        },
+        {
+          "value": "äitihään",
+          "weight": 27.0
+        },
+        {
+          "value": "äitirään",
+          "weight": 27.0
+        },
+        {
+          "value": "äitisään",
+          "weight": 27.0
+        },
+        {
+          "value": "äitivään",
+          "weight": 27.0
+        },
+        {
+          "value": "äitinään",
+          "weight": 28.0
+        },
+        {
+          "value": "äitiään",
+          "weight": 28.0
+        },
+        {
+          "value": "-itiähän",
+          "weight": 45.0
+        }
+      ],
+      "position": 8,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 14357396
+      },
+      "false_accept": false
+    },
+    {
+      "input": "äänetyksiä",
+      "expected": "äänestyksiä",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "äänityksiä",
+          "weight": 24.509811
+        },
+        {
+          "value": "äänestyksiä",
+          "weight": 25.0
+        },
+        {
+          "value": "ääneksiä",
+          "weight": 40.0
+        },
+        {
+          "value": "menetyksiä",
+          "weight": 43.732872
+        },
+        {
+          "value": "-äänestyksiä",
+          "weight": 45.0
+        },
+        {
+          "value": "-äänityksiä",
+          "weight": 45.0
+        },
+        {
+          "value": "läänityksiä",
+          "weight": 45.0
+        },
+        {
+          "value": "äänestyksin",
+          "weight": 45.0
+        },
+        {
+          "value": "lähetyksiä",
+          "weight": 48.86181
+        },
+        {
+          "value": "sädetyksiä",
+          "weight": 50.0
+        }
+      ],
+      "position": 1,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 10640736
+      },
+      "false_accept": false
+    },
+    {
+      "input": "äänioikeuttuja",
+      "expected": "äänioikeutettuja",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "äänioikeuttaja",
+          "weight": 27.0
+        },
+        {
+          "value": "äänioikeutettuja",
+          "weight": 38.242683
+        },
+        {
+          "value": "äänioikeutta",
+          "weight": 38.62386
+        },
+        {
+          "value": "äänioikeuttapa",
+          "weight": 40.0
+        },
+        {
+          "value": "ääni-oikeuttaja",
+          "weight": 42.0
+        },
+        {
+          "value": "äänioikeuskuja",
+          "weight": 42.0
+        },
+        {
+          "value": "äänioikeustoja",
+          "weight": 42.0
+        },
+        {
+          "value": "äänioikeustuija",
+          "weight": 42.0
+        },
+        {
+          "value": "-äänioikeuttaja",
+          "weight": 47.0
+        },
+        {
+          "value": "läänioikeuttaja",
+          "weight": 47.0
+        }
+      ],
+      "position": 1,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 19675584
+      },
+      "false_accept": false
+    },
+    {
+      "input": "öljynporaulautalta",
+      "expected": "öljynporauslautalta",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "öljynporauslautalta",
+          "weight": 25.0
+        },
+        {
+          "value": "öljynpora-lautalta",
+          "weight": 29.0
+        },
+        {
+          "value": "öljynporalautalta",
+          "weight": 29.0
+        },
+        {
+          "value": "öljynporanlautalta",
+          "weight": 29.0
+        },
+        {
+          "value": "öljynporulautalta",
+          "weight": 29.0
+        },
+        {
+          "value": "öljynporauslautalla",
+          "weight": 40.0
+        },
+        {
+          "value": "öljynporauslautasta",
+          "weight": 40.0
+        },
+        {
+          "value": "öljynporauslautatta",
+          "weight": 40.0
+        },
+        {
+          "value": "-öljynporauslautalta",
+          "weight": 45.0
+        },
+        {
+          "value": "0öljynporauslautalta",
+          "weight": 47.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 20683016
+      },
+      "false_accept": false
+    },
+    {
+      "input": "örkkiarmeijoja",
+      "expected": "örkkiarmeijoita",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "örkkiarmeija",
+          "weight": 42.0
+        },
+        {
+          "value": "örkkiarmeijana",
+          "weight": 42.0
+        },
+        {
+          "value": "örkkiarmeijapa",
+          "weight": 42.0
+        },
+        {
+          "value": "örkkiarmeijoina",
+          "weight": 42.0
+        },
+        {
+          "value": "örkkiarmeijoita",
+          "weight": 42.0
+        },
+        {
+          "value": "örkkidreijoja",
+          "weight": 42.0
+        },
+        {
+          "value": "örkkiakmesijoja",
+          "weight": 44.0
+        },
+        {
+          "value": "örkkiammesijoja",
+          "weight": 44.0
+        },
+        {
+          "value": "örkkiarmeijaa",
+          "weight": 47.0
+        },
+        {
+          "value": "örkkiarmeijoin",
+          "weight": 47.0
+        }
+      ],
+      "position": 4,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 17610863
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kilipoliittinen",
+      "expected": "kielipoliittinen",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "kielipoliittinen",
+          "weight": 24.019617
+        },
+        {
+          "value": "kielipoliittisen",
+          "weight": 39.223064
+        },
+        {
+          "value": "kpl-poliittinen",
+          "weight": 40.0
+        },
+        {
+          "value": "kilieoliittien",
+          "weight": 42.0
+        },
+        {
+          "value": "kilipeliittien",
+          "weight": 42.0
+        },
+        {
+          "value": "kilieoliittineon",
+          "weight": 44.0
+        },
+        {
+          "value": "kilieoliittinoen",
+          "weight": 44.0
+        },
+        {
+          "value": "kilieoliittinenu",
+          "weight": 49.0
+        },
+        {
+          "value": "kilieoliittinenä",
+          "weight": 49.0
+        },
+        {
+          "value": "kilipeliittinenu",
+          "weight": 49.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 40515745
+      },
+      "false_accept": false
+    }
+  ],
+  "start_timestamp": {
+    "secs": 1788549778,
+    "subsec_nanos": 49132032
+  },
+  "total_time": {
+    "secs": 0,
+    "subsec_nanos": 140283521
+  }
+}
