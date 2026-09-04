@@ -40,7 +40,6 @@ GT_LEXC_SRCS_L1_L2=\
 			stems/adverbs.lexc \
 			stems/conjunctions.lexc \
 			stems/subjunctions.lexc \
-			stems/determiners.lexc \
 			stems/digits.lexc \
 			stems/interj.lexc \
 			stems/nouns.lexc \
