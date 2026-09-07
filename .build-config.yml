@@ -5,8 +5,8 @@ build:
   tts-textproc: false
   hyphenators: false
 check:
-  analysers: false
-  spellers: false
+  analysers: true
+  spellers: true
   grammar-checkers: false
   tts-textproc: false
   hyphenators: false
