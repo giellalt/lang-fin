@@ -82,17 +82,11 @@ linux](https://wiki.apertium.org/wiki/Installation_of_grammar_libraries)
 
 Further details and dependencies are described on the GiellaLT [Getting Started](https://giellalt.uit.no/infra/GettingStarted.html) pages.
 
-Downloading
------------
+Downloading the source code
+---------------------------
 
-Using Git:
 ```
 git clone https://github.com/giellalt/lang-fin
-```
-
-Using Subversion:
-```
-svn checkout https://github.com/giellalt/lang-fin.git/trunk lang-fin
 ```
 
 Building and installation
