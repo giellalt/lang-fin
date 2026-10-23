@@ -125651,7 +125651,7 @@ rästikanto+N:rästi#kan  NOUN_TUNTO  ;
 rästikanto+N:rästikan  NOUN_TUNTO  ;
 rästimaksu+N:rästi#maksu  NOUN_ASU  ;
 rästimaksu+N:rästimaksu  NOUN_ASU  ;
-rasti+N:rast  NOUN_RUUVI  ;
+rasti+N+CmpNP/First:rast  NOUN_RUUVI  ; ! problematic as last part of compounds as it coincides with adverbs in -sti, like ankarasti
 rästi+N:räst  NOUN_TYYLI  ;
 rästiottelu+N:rästi#ottelu  NOUN_SEIKKAILU  ;
 rästiottelu+N:rästiottelu  NOUN_SEIKKAILU  ;
@@ -173453,7 +173453,7 @@ vastinpari+N:vastin#par  NOUN_RUUVI  ;
 vastinpari+N:vastinpar  NOUN_RUUVI  ;
 vastinpiste+N:vastin#piste  NOUN_PISTE  ;
 vastinpiste+N:vastinpiste  NOUN_PISTE  ;
-västi+N:väst  NOUN_TYYLI  ;
+västi+N+CmpNP/First:väst  NOUN_TYYLI  ; ! problematic as last part of compounds as it coincides with adverbs in -sti, like terävästi
 vastoinkäyminen+N:vastoinkäymi  NOUN_AAKKOSTAMINEN  ;
 vastoinkäyminen+N:vastoinkäymi  NOUN_KYLKIÄINEN  ;
 vastuksellisuus+N:vastuksellisuu  NOUN_AAKKOSELLISUUS  ;
