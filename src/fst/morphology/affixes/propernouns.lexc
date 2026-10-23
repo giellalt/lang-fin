@@ -475,10 +475,12 @@ LEXICON PROPN_COMPOUND_S
 0:»s	PROPN_COMPOUND ;
 
 
-
 LEXICON PROPN_COMPOUND
-+Cmp+Use/Circ#:0#     NOUN   ;
++Cmp+Use/Circ#:0#     R_PROP   ;
 !+Use/Circ#:0#     DeverbalNouns   ;
+
+LEXICON R_PROP
+@P.CmpFrst.FALSE@@P.CmpPref.FALSE@@D.CmpLast.TRUE@@D.CmpNone.TRUE@@U.CmpNone.FALSE@@P.CmpOnly.TRUE@ NOUN_Cmp ;
 
 LEXICON PROPN_BACK_PLNOM_ARCHAIC_CLIT
 
