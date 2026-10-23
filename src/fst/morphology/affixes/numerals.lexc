@@ -518,7 +518,7 @@ LEXICON NUM_FRONT_POSS_EN_OBL
 0   NUM_FRONT_POSS_EN   ;
 
 LEXICON NUM_COMPOUND
-+Use/Circ#:0#   NUM   ;
-+Use/Circ#:0#   NUM_ORD_SUFFIX  ;
-+Use/Circ#:0#   NUM_CARD_SUFFIX ;
-#:        R_NOMINAL  ;
++Use/Circ+Cmp#:0#   NUM   ;
++Use/Circ+Cmp#:0#   NUM_ORD_SUFFIX  ;
++Use/Circ+Cmp#:0#   NUM_CARD_SUFFIX ;
+              :     R_NOMINAL  ;
