@@ -125,6 +125,17 @@ endif # CAN_FOMA
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
 
+# # We need to add processing of language-specific tags in the analyser:
+generator-dict-gt-norm.%: generator-dict-gt-norm.tmp.% \
+						  filters/remove-usage_except_NGminip-tags.%
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+				@\"filters/remove-usage_except_NGminip-tags.$*\"  \
+			.o. @\"$<\"                                 \
+			;\n\
+		 $(INVERT_XFST)$(INVERT_FOMA)\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+
 
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
